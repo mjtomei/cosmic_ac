@@ -25,9 +25,9 @@ html_body = markdown.markdown(
 m = re.search(r'<h2>1\.', html_body)
 front, body = (html_body[:m.start()], html_body[m.start():]) if m else ("", html_body)
 
-# --- wrap figures: dense -> full width (span both columns); sparse (fig 3) -> single column ---
+# --- wrap figures: dense -> full width (span both columns); compact (figs 2,3,4) -> single column ---
 def fig_class(src_):
-    return 'onecol' if src_.endswith(('figure-3.png', 'figure-4.png')) else 'fullwidth'
+    return 'onecol' if src_.endswith(('figure-2.png', 'figure-3.png', 'figure-4.png')) else 'fullwidth'
 
 def fig_repl(mm):
     s, cap = mm.group(1), mm.group(2)
@@ -66,7 +66,7 @@ hr { border: none; border-top: 0.6pt solid #d6dce2; margin: 7px 0; }
 .paper h2 { font-size: 11pt; margin: 11px 0 5px 0; padding-bottom: 2px; border-bottom: 1.6px solid #15324f;
             break-after: avoid; }
 .paper h3 { font-size: 9.8pt; color: #294a6b; margin: 9px 0 4px 0; break-after: avoid; }
-p { margin: 0 0 6px 0; text-align: justify; }
+p { margin: 0 0 6px 0; text-align: justify; orphans: 2; widows: 2; }
 strong { color: #0e2334; font-weight: 700; }
 ul,ol { margin: 0 0 6px 0; padding-left: 15px; }
 li { margin: 0 0 3px 0; text-align: justify; }
@@ -74,6 +74,8 @@ em { font-style: italic; }
 figure { margin: 6px 0 8px 0; break-inside: avoid; }
 .fig.fullwidth, .tbl.fullwidth { column-span: all; margin: 7px 0 9px 0; }
 .fig.onecol, .tbl.onecol { break-inside: avoid; margin: 6px 0 8px 0; }
+.tbl { break-inside: avoid; }
+.tbl table { break-inside: avoid; }
 .fig { text-align: center; }
 .fig img { height: auto; }
 .fig.onecol img { width: 100%; max-height: 82mm; }
