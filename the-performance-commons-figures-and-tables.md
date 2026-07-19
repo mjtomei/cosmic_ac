@@ -62,7 +62,7 @@ Omerta (pool idle compute), the project-manager coordination layer (work on the 
 | Figure 5 | §11 | where the optimum lands as the commons matures |
 | Figure 6 | §11 | and it is already underway |
 | — | §12 | honest limits (prose only) |
-| — | §13 / Conclusion | the program, distilled; build collaboration-native hardware (prose only) |
+| — | Conclusion | build collaboration-native hardware (prose only) |
 | Table A1 | Appendix A | the program in detail, honestly |
 
 ### The "needs a bigger project" items (flagged for honesty)

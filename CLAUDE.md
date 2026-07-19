@@ -59,10 +59,12 @@ old commons-wins list, folded to prose)**, **F4 (Tiny Tapeout participation thro
 Efabless shutdown — the only fully-measured figure; build/fig_tapeout.py)**, ML-on-EDA ·
 9. ML multiplies (velocity, fork) · 10. Aggregation point.
 **Implication:** 11. Design — **F5 (phase), F6 (adoption)**, programmer inversion ·
-12. Honest limits · 13. The program, distilled (falsifiable experiment summary).
-**Appendix A: The program in detail** — **Table A1** + full experimental protocols
-(everything specific to our own work lives here per Matthew's rule; main text keeps the
-higher-level points).
+12. Honest limits · Conclusion.
+**Appendix A: The program in detail** — the program intro + breadth-bet + velocity
+measurement + Omerta status + **Table A1** + full experimental protocols.
+**RULE (Matthew, strict): main text = argument + existing published work ONLY; anything
+we are planning, proposing, or building ourselves lives in Appendix A** (pointers in
+main are fine; citations of his existing public companion papers are fine).
 
 Figure files: figure.png=F1, figure-2/3=F2/F3, figure-tapeout=F4, figure-4=F5,
 figure-5=F6 (file names no longer match figure numbers for F5/F6 — captions are
