@@ -190,8 +190,6 @@ The distance between the performance we get and the performance the silicon allo
 
 ## Appendix A: The program in detail
 
-The main text keeps the argument; this appendix reports the author's own efforts behind it — their measured state, and the experimental protocols in full.
-
 The two questions are not rhetorical; each has a concrete effort behind it, and honesty about their state is part of the case. Omerta attacks Q2 from the supply side, pooling idle compute; a human-and-machine coordination layer built on top of it attacks Q2 from the work side, and supplies the velocity measurement of §9; the *coherence* work develops the inoculation thesis and the practical protocol for working with machine intelligence as a peer rather than a tool; and the reconfigurable demonstrator below attacks Q1 directly. Table A1 reports each effort's progress and open items, stated plainly; the experimental protocols follow.
 
 The breadth is itself part of the bet. One author directing a fleet is carrying four efforts at once — a distributed-compute substrate, the tooling to coordinate human and machine work, the cognition of working well with machine intelligence, and a hardware experiment — a span that a decade ago was a lab's worth of work. That it now falls to one person is the §9 multiplier seen from the inside: evidence the reach is real, not that the work is done.
