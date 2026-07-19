@@ -92,6 +92,14 @@ authoritative). All § cross-refs renumbered by script; grep "§" after any stru
   (ELM, FunSearch, AlphaEvolve, TRM, DSO.ai/Cerebrus, ORFS-agent, Wood & Hill, Knuth,
   H&P CACM 2019, etc.). **AlphaChip is cited "deployed but contested" via Cheng/Kahng
   ISPD 2023 — never cite Markov's CACM version (active ACM do-not-cite notice).**
+- **Published-anchor pass (2026-07, all web-verified)**: Leiserson et al. Science 2020
+  (60,000× matmul; §1 + §4 related-work para); Thompson-Spanuth, Hess-Ostrom, Fursin-Temam,
+  Lerner-Tirole (§4/§8 positioning — NOTE: prior-art search found the paper's synthesis
+  novel); DiLoCo scaling laws (Charles 2025), INTELLECT-1, Consilience-40B, Covenant-72B
+  + three honest flags incl. INTELLECT-3-centralized (§7); Wu NSDI'24 spot economics (§7);
+  productivity trio Peng/Cui-MgmtSci-2026/METR + Feb-2026 METR walkback + fleet-gap-
+  still-holds (§9); Groq/SambaNova/Cerebras dataflow cites (§11); Dreslinski/ISSCC-2012
+  near-threshold (§5). Ouchi/Holmström-Milgrom/Kuran now VERIFIED (no unverified cites remain).
 - **Open-silicon trend** (§7, verified 2026-07): Tiny Tapeout 152→547 designs/shuttle,
   $150–300 entry vs €4–6k academic MPW, Efabless death→commons-reroute (Mar 2025),
   QTcore-C1 (Pearce 2023), 18-high-schoolers/90-min LLM datapoint (Krupp, Venn & Wehn 2026).
