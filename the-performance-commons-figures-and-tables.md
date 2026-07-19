@@ -36,6 +36,10 @@ A phase diagram over commons-maturity-over-time × workload-diversity; the recon
 A decade of reconfigurable entry into the datacenter — Catapult, Intel–Altera $16.7B, AWS F1, AMD–Xilinx $49B, the AI-accelerator wave — with a projected inflection as the programmability gap closes.
 *Beat: the migration is measurable and already expensive; machine intelligence is the accelerant.* — **real milestones + acquisition values**; share curve illustrative, post-2025 a projection.
 
+**Table 4 — The program: four efforts, two questions, honest state.**  (§12)
+Omerta (pool idle compute), the project-manager coordination layer (work on the pool), coherence (the inoculation thesis), and the reconfigurable demonstrator (the Q1 experiment) — latest progress and open items for each, stated plainly.
+*Beat: the questions are under active attack, and the breadth of the program is itself evidence of the §8 multiplier.* — **status report, self-reported**; states verified against the repos at the time of writing.
+
 ---
 
 ### How the sequence maps to the prose
@@ -51,7 +55,9 @@ A decade of reconfigurable entry into the datacenter — Catapult, Intel–Alter
 | — | §8–§9 | (AI multiplies the commons; the vendor is the aggregation point — prose only) |
 | Figure 4 | §10 | where the optimum lands as the commons matures |
 | Figure 5 | §10 | and it is already underway |
-| — | §11 / Conclusion | honest limits; build collaboration-native hardware (prose only) |
+| — | §11 | honest limits (prose only) |
+| Table 4 | §12 | the program: where the bet stands, honestly |
+| — | Conclusion | build collaboration-native hardware (prose only) |
 
 ### The "needs a bigger project" items (flagged for honesty)
 
