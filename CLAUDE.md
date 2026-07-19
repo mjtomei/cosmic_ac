@@ -42,25 +42,27 @@ column gaps, and figure placement; layout is tuned to the current text and prose
 shift pagination. Figure 2's markdown block deliberately sits after the demand paragraph
 (not at its reference) so pages 2–3 pack; that was the fix for the old page-2 whitespace.
 
-## Paper structure (§1–12 + Conclusion)
+## Paper structure (§1–14 + Conclusion; reorganized 2026-07 into five movements)
 
-1. The gap is real, and it is not physics — **Table 1**
-2. General-purpose vs. custom is an effort artifact — **Figure 1**
-3. Distributed computing, one level up — **Figures 2 & 3**, Omerta
-4. Near-oracular performance is a privilege
-5. The privilege is a collective-action problem *(herding paragraph pending — see open items)*
-6. The same logic explains the absence of better ASICs — **Table 2**
-7. Open source already solved this — **Table 3**, plus: ML-on-open-EDA moat paragraph,
-   open-silicon participation/effort-collapse data, Efabless natural experiment
-8. Machine intelligence multiplies the commons — velocity anchor (headline-with-asterisk),
-   consensus-amplifier vs. coherence-subsidy fork
-9. The aggregation point already exists
-10. Design hardware for that future — **Figures 4 & 5**, commodity/programmer-inversion
-    paragraph (Itanium/Knuth; Wood & Hill; NOW; Bell's Law — all verified citations)
-11. Honest limits — incl. partial-inoculation/monoculture and relocated-incentive bullets
-12. **The program: where this stands** — **Table 4** (four efforts × progress/open items),
-    breadth-is-part-of-the-bet, "A first experiment" (committed, first-person),
-    "The flow itself is a target" (automated tool-dev flow, fair comparisons)
+**The bet:** 1. Three defections frame the bet (M1 / R1 / Etched LVI; the entry-fee
+prediction: "it will not take a billion dollars to reproduce these results for long";
+the thought-range line). Abstract also carries the triple + prediction.
+**The diagnosis:** 2. The gap is real, not physics — **T1** · 3. Effort artifact — **F1**
+· 4. Privilege · 5. Collective-action problem (non-rival core) · 6. **The herd is what
+the failure looks like today** (mechanism/copying, defector detail, systemic-timidity
+"the encoding is changing", embargo experiment, executive wanting-data,
+subjugation-as-proxy, information-flow/legibility prediction, which-thoughts-are-allowed
+capstone).
+**The scope:** 7. Absence of better ASICs — **T2** · 8. Distributed computing, one level
+up — **F2, F3**, Omerta (MOVED here from position 3; "one level down/up" symmetry).
+**The cure:** 9. Open source solved it — **T3**, ML-on-EDA moat, participation/effort
+collapse, Efabless experiment · 10. ML multiplies the commons (velocity anchor,
+consensus/subsidy fork) · 11. Aggregation point.
+**The implication:** 12. Design hardware for that future — **F4, F5**, programmer
+inversion · 13. Honest limits · 14. The program — **T4**, experiments, flow-as-target.
+
+Figure/table numbering survived the move (relative order preserved). All §
+cross-references were renumbered by script; if editing structure again, grep for "§".
 
 ## Key incorporated sources (verified)
 
@@ -102,18 +104,16 @@ shift pagination. Figure 2's markdown block deliberately sits after the demand p
 
 ## Open items
 
-1. **Herding/§5 paragraph — in flight.** Approved for inclusion. Mechanism (Matthew's
-   correction): teams **copy** each other and **suppress internal novelty** because
-   career risk is individual even when marginal cost is trivial. Echo his published
-   coherence language (see memory: herd-mentality-monoculture-point). Kimi **K3**
-   (July 16, 2026: 2.8T open-weight, top-3 on Artificial Analysis evals, #1 blind
-   Frontend Code arena ahead of Fable 5) is the embargo-era anchor; DeepSeek R1
-   engineering-under-constraint + monoculture scholarship (Kleinberg-Raghavan,
-   Bommasani, Scharfstein-Stein) were being verified by an agent when this was written.
-2. **Regenerate `the-performance-commons-figures-and-tables.pdf`** from its updated md
-   (no build script exists for it — simple markdown+weasyprint render).
-3. **Memory idea-cluster not yet in the paper**: CXL/hardware-managed locality,
-   distributed logical-machine telos, standards-coordinate-interface-not-competence,
-   naming the depth-bet explicitly. See `MEMORY.md` in the project memory directory.
-4. Table 4's pm and coherence rows were **not** re-verified with the git-recency rigor
+1. **Memory idea-cluster not yet in the paper**: CXL/hardware-managed locality,
+   distributed logical-machine telos, standards-coordinate-interface-not-competence.
+   (Depth/competence bet now named in §6; herding fully inserted §1/§6 — see memory:
+   herd-mentality-monoculture-point for the full anchor set and framing rules,
+   incl. NEVER citing Markov's CACM AlphaChip critique and K3-weights-not-yet-published.)
+2. **Regenerate `the-performance-commons-figures-and-tables.pdf`** whenever its md
+   changes (no build script — simple markdown+weasyprint inline render; see git history
+   for the CSS used).
+3. Table 4's pm and coherence rows were **not** re-verified with the git-recency rigor
    applied to Omerta; worth a pass if those claims become load-bearing.
+4. Canonical-tier citations placed from model knowledge without agent verification
+   (flagged to Matthew): Ouchi 1979, Holmström-Milgrom 1991, Kuran 1995. Verify if they
+   become load-bearing.
