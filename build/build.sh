@@ -4,7 +4,7 @@
 set -e
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
-for s in fig1_effort fig2_coordination fig3_demand fig4_phase fig5_trend; do
+for s in fig1_effort fig2_coordination fig3_demand fig4_phase fig5_trend fig_tapeout; do
   echo "  [fig] $s"; python3 "build/$s.py"
 done
 echo "  [pdf] render_twocol"

@@ -42,27 +42,31 @@ column gaps, and figure placement; layout is tuned to the current text and prose
 shift pagination. Figure 2's markdown block deliberately sits after the demand paragraph
 (not at its reference) so pages 2–3 pack; that was the fix for the old page-2 whitespace.
 
-## Paper structure (§1–14 + Conclusion; reorganized 2026-07 into five movements)
+## Paper structure (§1–13 + Conclusion + Appendix A; five movements, settled 2026-07)
 
-**The bet:** 1. Three defections frame the bet (M1 / R1 / Etched LVI; the entry-fee
-prediction: "it will not take a billion dollars to reproduce these results for long";
-the thought-range line). Abstract also carries the triple + prediction.
-**The diagnosis:** 2. The gap is real, not physics — **T1** · 3. Effort artifact — **F1**
-· 4. Privilege · 5. Collective-action problem (non-rival core) · 6. **The herd is what
-the failure looks like today** (mechanism/copying, defector detail, systemic-timidity
-"the encoding is changing", embargo experiment, executive wanting-data,
-subjugation-as-proxy, information-flow/legibility prediction, which-thoughts-are-allowed
-capstone).
-**The scope:** 7. Absence of better ASICs — **T2** · 8. Distributed computing, one level
-up — **F2, F3**, Omerta (MOVED here from position 3; "one level down/up" symmetry).
-**The cure:** 9. Open source solved it — **T3**, ML-on-EDA moat, participation/effort
-collapse, Efabless experiment · 10. ML multiplies the commons (velocity anchor,
-consensus/subsidy fork) · 11. Aggregation point.
-**The implication:** 12. Design hardware for that future — **F4, F5**, programmer
-inversion · 13. Honest limits · 14. The program — **T4**, experiments, flow-as-target.
+The defections (M1 / R1 / Etched LVI) + the entry-fee prediction live as ONE closing
+sentence of the **abstract** (Matthew: examples of what's made possible belong at the
+end, not as a cold-open section) and in full inside §5's defector paragraphs.
+**Diagnosis:** 1. Gap is real, not physics — **T1** · 2. Effort artifact — **F1** ·
+3. Privilege · 4. Collective-action problem · 5. **The herd** (mechanism/copying,
+defectors + entry-fee prediction, systemic-timidity "the encoding is changing", embargo
+experiment, executive wanting-data, subjugation-as-proxy, legibility prediction,
+which-thoughts-are-allowed capstone).
+**Scope:** 6. Absence of better ASICs — **T2** · 7. Distributed computing, one level up
+— **F2, F3**, Omerta (pointer to Appendix A).
+**Cure:** 8. Open source solved it — **T3 (entry cost of first silicon — replaced the
+old commons-wins list, folded to prose)**, **F4 (Tiny Tapeout participation through the
+Efabless shutdown — the only fully-measured figure; build/fig_tapeout.py)**, ML-on-EDA ·
+9. ML multiplies (velocity, fork) · 10. Aggregation point.
+**Implication:** 11. Design — **F5 (phase), F6 (adoption)**, programmer inversion ·
+12. Honest limits · 13. The program, distilled (falsifiable experiment summary).
+**Appendix A: The program in detail** — **Table A1** + full experimental protocols
+(everything specific to our own work lives here per Matthew's rule; main text keeps the
+higher-level points).
 
-Figure/table numbering survived the move (relative order preserved). All §
-cross-references were renumbered by script; if editing structure again, grep for "§".
+Figure files: figure.png=F1, figure-2/3=F2/F3, figure-tapeout=F4, figure-4=F5,
+figure-5=F6 (file names no longer match figure numbers for F5/F6 — captions are
+authoritative). All § cross-refs renumbered by script; grep "§" after any structure edit.
 
 ## Key incorporated sources (verified)
 
