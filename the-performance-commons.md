@@ -227,7 +227,7 @@ The financing instrument of §11 implies the roadmap. Phase one: build the netwo
 
 Phase two: with the thesis proven and the actuarial data in hand, open the financial-services side — devices given away or financed at zero interest, every unit of compute bought from them reducing the owner's monthly payment, down through zero into profit-sharing.
 
-Phase three is §11's endgame: hardware built for this from birth. Each phase de-risks the next, and none needs a gatekeeper's approval to start.
+Phase three is §11's endgame — hardware built for this from birth — and the paper's hardware bets ride the network that precedes them. By then the network itself is the incumbent advantage for building hardware at all: design compute — the simulator sweeps, EDA runs, and verification that dominate NRE — comes from the fleet at below-market cost; the commons' own flow is the compiler target; and the first market is captive, because every new device ships as a provider, with the network's workload as guaranteed demand and the phase-two instrument as its financing. That closes exactly the gap that kills Mozart-class bets — no software, no business case — with the network supplying both. Each phase de-risks the next, and none needs a gatekeeper's approval to start.
 
 | Effort | Question it attacks | Latest progress | Open items |
 |---|---|---|---|
