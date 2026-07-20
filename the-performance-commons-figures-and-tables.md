@@ -1,12 +1,12 @@
 # The Performance Commons — List of Figures and Tables
 
-*Read top to bottom, the visuals carry the paper's argument on their own: **magnitude → mechanism → the same failure everywhere → the same problem, distributed → proof → destination → already underway → the program.** Each entry notes the beat it carries and whether it rests on measured data or is an argued/conceptual construct. (The paper's opening — the three defections and the entry-fee prediction — and its diagnosis of the herd are prose-only: the abstract's closing defections and §3–§5.)*
+*Read top to bottom, the visuals carry the paper's argument on their own: **magnitude → mechanism → the same failure everywhere → the same problem, distributed → proof → destination → already underway → the program.** Each entry notes the beat it carries and whether it rests on measured data or is an argued/conceptual construct. (The defections, the entry-fee prediction, and the diagnosis of the herd are prose-only: §3–§5.)*
 
 ---
 
 **Table 1 — The efficiency gap, quantified.**  (§1)
 The measured cost of generality: ASIC 1×, CGRA ~2.8× area, FPGA ~20–35× area / ~10–14× power, CPU ~100–500× energy.
-*Beat: the gap to ASIC-level performance is real and large.* — **quantitative, sourced** (Hameed; Kuon & Rose; Prabhakar).
+*Beat: the gap is real — most code sits far below its own architecture's frontier; these ratios are the separate physical floor.* — **quantitative, sourced** (Hameed; Kuon & Rose; Prabhakar).
 
 **Figure 1 — The general-purpose vs. custom trade-off is mostly an effort artifact.**  (§2)
 The effort gap, concentrated on reconfigurable substrates; close it and a CGRA sits within ~2.8× of an ASIC with full flexibility.

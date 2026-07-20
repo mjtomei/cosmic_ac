@@ -42,12 +42,19 @@ column gaps, and figure placement; layout is tuned to the current text and prose
 shift pagination. Figure 2's markdown block deliberately sits after the demand paragraph
 (not at its reference) so pages 2–3 pack; that was the fix for the old page-2 whitespace.
 
-## Paper structure (§1–13 + Conclusion + Appendix A; five movements, settled 2026-07)
+## Paper structure (§1–12 + Conclusion + Appendix A; five movements, settled 2026-07)
 
-The defections (M1 / R1 / Etched LVI) + the entry-fee prediction live as ONE closing
-sentence of the **abstract** (Matthew: examples of what's made possible belong at the
-end, not as a cold-open section) and in full inside §5's defector paragraphs.
-**Diagnosis:** 1. Gap is real, not physics — **T1** · 2. Effort artifact — **F1** ·
+The defections (M1 / R1 / Etched LVI) + the entry-fee prediction live in §5's defector
+paragraphs, previewed briefly in §1's dominated-frontier paragraph. They are NOT in the
+abstract (a closing sentence was tried there and removed — Matthew: didn't fit) and NOT
+a cold-open section (also tried and dissolved).
+**Diagnosis:** 1. Gap is real, not physics — **T1** (§1 rewritten 2026-07: opens by
+splitting "programmability" into constant-effort vs realizable-frontier (roofline, CACM
+2009), evidences the realization gap on FIXED silicon (Leiserson 60,000×; Satish
+ninja-gap 24×, ISCA 2012 — both verified), then dominated-frontier proofs (M1/LVI), and
+only then the cross-arch ratios as the separate intrinsic floor — fixing the old
+non-sequitur; abstract's defection sentences REMOVED, defections live in §5 only) ·
+2. Effort artifact — **F1** (§2 now says "§1's realization gap") ·
 3. Privilege · 4. Collective-action problem · 5. **The herd** (mechanism/copying,
 defectors + entry-fee prediction, systemic-timidity "the encoding is changing", embargo
 experiment, executive wanting-data, subjugation-as-proxy, legibility prediction,
