@@ -118,6 +118,17 @@ authoritative. Subsections render as h3. All § cross-refs renumbered by script;
   $150–300 entry vs €4–6k academic MPW, Efabless death→commons-reroute (Mar 2025),
   QTcore-C1 (Pearce 2023), 18-high-schoolers/90-min LLM datapoint (Krupp, Venn & Wehn 2026).
 
+- **Citation-faithfulness audit (2026-07, 50-agent Opus workflow, all 129 references)**:
+  every inline claim checked against its fetched source, mismatches adversarially
+  verified. Six fixes applied: BOINC 1M→200K numbers are tracker counts NOT in
+  Anderson 2020 (which reports ~700K; quote is "likely inherent"); Bernstein novelty
+  cut is ~50% not ~40%; DeepSeek FP8/MLA/PTX engineering lives in the V3 tech report
+  (R1 Nature paper is the RL story — cite both); Ericsson 2025 smartphone subs ~7.3B
+  not 7.5B; Game Ready profiles are NVIDIA-engineered per title, not population-
+  aggregated (Android Cloud Profiles carry the aggregation point); Walter CGRA
+  failures concentrate on complex loops, not simple kernels. The ~24%-more-PRs claim
+  now has its primary source: Murphy-Hill, Butler & Savelieva, arXiv:2607.01418.
+
 ## How Matthew works (conventions)
 
 - **Preserve his wording verbatim**; fix only obvious typos and flag them.
