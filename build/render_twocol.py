@@ -37,6 +37,18 @@ def fig_repl(mm):
 body = re.sub(r'<p>\s*<img\b[^>]*\bsrc="([^"]+)"[^>]*?/?>\s*</p>\s*<p>\s*<em>(.*?)</em>\s*</p>',
               fig_repl, body, flags=re.DOTALL)
 
+# --- pair Figures 3+4 (files figure-2/figure-3) side by side in one full-width block ---
+def twin_repl(mm):
+    return ('<figure class="fig fullwidth twin">'
+            f'<div class="half"><img src="{mm.group(1)}" /><figcaption>{mm.group(2)}</figcaption></div>'
+            f'<div class="half"><img src="{mm.group(3)}" /><figcaption>{mm.group(4)}</figcaption></div>'
+            '</figure>')
+body = re.sub(r'<figure class="fig onecol"><img src="([^"]*figure-2\.png)" />'
+              r'<figcaption>(.*?)</figcaption></figure>\s*'
+              r'<figure class="fig onecol"><img src="([^"]*figure-3\.png)" />'
+              r'<figcaption>(.*?)</figcaption></figure>',
+              twin_repl, body, flags=re.DOTALL)
+
 # --- wrap tables: table 1 -> single column; tables 2,3 -> full width ---
 _tbl_n = [0]
 def tbl_repl(mm):
@@ -83,6 +95,11 @@ figure { margin: 6px 0 8px 0; break-inside: avoid; }
 .fig.onecol img { width: 100%; max-height: 82mm; }
 .fig.fullwidth img { display: inline-block; max-width: 146mm; max-height: 92mm; }
 .fig.fullwidth figcaption { display: block; max-width: 146mm; margin: 3px auto 0 auto; }
+.fig.twin { text-align: center; }
+.fig.twin .half { display: inline-block; width: 48.6%; vertical-align: top; margin: 0 0.3%; }
+.fig.twin .half img { width: 100%; max-width: none; max-height: 80mm; }
+.fig.twin .half figcaption { max-width: none; margin: 2px 0 0 0; text-align: left; }
+.appendixwrap { page-break-before: always; }
 figcaption, .cap { font-size: 7.7pt; font-style: italic; color: #33424f; line-height: 1.24; margin-top: 3px;
                    text-align: left; }
 table { width: 100%; border-collapse: collapse; font-family: 'DejaVu Sans','Liberation Sans',sans-serif;
@@ -99,17 +116,25 @@ front_html = f'<div class="frontmatter">{front}</div>' if front else ''
 # Split the body at full-width elements: WeasyPrint's column-span is buggy (silently
 # drops the rest of the document when a spanner lands on certain page geometries), so
 # emit alternating two-column chunks and top-level full-width blocks instead.
-_parts = re.split(r'(<figure class="fig fullwidth">.*?</figure>|<div class="tbl fullwidth">.*?</div>\s*</div>)',
-                  body, flags=re.DOTALL)
-_out = []
-for _i, _part in enumerate(_parts):
-    if not _part.strip():
-        continue
-    if _i % 2 == 1:  # a full-width element
-        _out.append(f'<div class="fullblock">{_part}</div>')
-    else:
-        _out.append(f'<div class="paper">{_part}</div>')
-body_html = ''.join(_out)
+def chunk(seg):
+    parts = re.split(r'(<figure class="fig fullwidth[^"]*">.*?</figure>|<div class="tbl fullwidth">.*?</div>\s*</div>)',
+                     seg, flags=re.DOTALL)
+    out = []
+    for i, part in enumerate(parts):
+        if not part.strip():
+            continue
+        if i % 2 == 1:  # a full-width element
+            out.append(f'<div class="fullblock">{part}</div>')
+        else:
+            out.append(f'<div class="paper">{part}</div>')
+    return ''.join(out)
+
+# Appendix starts on a fresh page
+_apx = re.search(r'<h2>Appendix', body)
+if _apx:
+    body_html = chunk(body[:_apx.start()]) + '<div class="appendixwrap">' + chunk(body[_apx.start():]) + '</div>'
+else:
+    body_html = chunk(body)
 
 doc = (f'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
        f'<style>{CSS}</style></head><body>{front_html}{body_html}</body></html>')
