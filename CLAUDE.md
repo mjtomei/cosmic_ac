@@ -34,7 +34,13 @@ The stale single-column `the-performance-commons.pdf` was deleted (recoverable v
 
     bash build/build.sh        # regenerates all 5 figures + the 2-col PDF
 
-Deps (installed): `matplotlib markdown weasyprint`. `render_twocol.py` sets per-figure
+Deps (installed): `matplotlib markdown weasyprint`. **CRITICAL renderer note (2026-07):**
+WeasyPrint's `column-span: all` is buggy — under certain page geometries it silently
+drops the entire rest of the document (we hit 14pp→2pp). render_twocol.py therefore
+splits the body at full-width figures/tables into alternating `.paper` two-column
+chunks and top-level `.fullblock` elements; NEVER reintroduce column-span. Full-width
+figure markdown blocks are floated to section ends (Fig 1 after §2's last paragraph,
+Fig 2 after §7's demand paragraph) so the preceding chunk packs. `render_twocol.py` sets per-figure
 layout in `fig_class()`: **figures 2, 3, 4 single-column; 1, 5 full-width**. Tables never
 split across pages (`break-inside: avoid`). **QA convention: after every rebuild,
 rasterize every page (`pdftoppm -png -r 80`) and view them** — check for table splits,

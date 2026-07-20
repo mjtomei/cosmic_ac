@@ -72,7 +72,8 @@ ul,ol { margin: 0 0 6px 0; padding-left: 15px; }
 li { margin: 0 0 3px 0; text-align: justify; }
 em { font-style: italic; }
 figure { margin: 6px 0 8px 0; break-inside: avoid; }
-.fig.fullwidth, .tbl.fullwidth { column-span: all; margin: 7px 0 9px 0; }
+.fullblock { margin: 7px 0 9px 0; }
+.fig.fullwidth, .tbl.fullwidth { margin: 0; }
 .fig.onecol, .tbl.onecol { break-inside: avoid; margin: 6px 0 8px 0; }
 .tbl { break-inside: avoid; }
 .tbl table { break-inside: avoid; }
@@ -93,8 +94,24 @@ tbody td:first-child { font-weight: 600; color: #15324f; }
 """
 
 front_html = f'<div class="frontmatter">{front}</div>' if front else ''
+
+# Split the body at full-width elements: WeasyPrint's column-span is buggy (silently
+# drops the rest of the document when a spanner lands on certain page geometries), so
+# emit alternating two-column chunks and top-level full-width blocks instead.
+_parts = re.split(r'(<figure class="fig fullwidth">.*?</figure>|<div class="tbl fullwidth">.*?</div>\s*</div>)',
+                  body, flags=re.DOTALL)
+_out = []
+for _i, _part in enumerate(_parts):
+    if not _part.strip():
+        continue
+    if _i % 2 == 1:  # a full-width element
+        _out.append(f'<div class="fullblock">{_part}</div>')
+    else:
+        _out.append(f'<div class="paper">{_part}</div>')
+body_html = ''.join(_out)
+
 doc = (f'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
-       f'<style>{CSS}</style></head><body>{front_html}<div class="paper">{body}</div></body></html>')
+       f'<style>{CSS}</style></head><body>{front_html}{body_html}</body></html>')
 
 HTML(string=doc, base_url=str(pathlib.Path(inp).resolve().parent)).write_pdf(out)
 print("wrote", out)
