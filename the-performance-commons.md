@@ -100,7 +100,7 @@ Underneath all of it is the question of which thoughts are allowed to be thought
 
 ## 3. The same logic explains the absence of better ASICs
 
-One level down, ASIC *design and optimization* knowledge — mapping heuristics, verified IP blocks, the place-and-route and microarchitectural tricks that separate a good datapath from a mediocre one — is equally non-rival and equally hoarded. EDA vendors are a partial, proprietary aggregation point; the rest is re-derived bespoke per chip and locked inside firms. So the field produces fewer and worse ASICs than it collectively could, for the same reason: the design effort is not pooled. The size of the unpooled effort is public — leading-edge design NRE runs from ~$50M at 28 nm to ~$540M at 5 nm and $0.5–1.5B at 3 nm (IBS, via SemiEngineering, 2018), dominated by exactly the verification and software engineering that is re-derived per chip.
+One level down, ASIC *design and optimization* knowledge — mapping heuristics, verified IP blocks, the place-and-route and microarchitectural tricks that separate a good datapath from a mediocre one — is equally non-rival and equally hoarded. EDA vendors are a partial, proprietary aggregation point; the rest is re-derived bespoke per chip and locked inside firms. So the field produces fewer and worse ASICs than it collectively could, for the same reason: the design effort is not pooled. The size of the unpooled effort is public — leading-edge design NRE runs from ~$50M at 28 nm to ~$440M at 5 nm and $650M–1.5B at 3 nm (IBS, via SemiEngineering, 2018), dominated by exactly the verification and software engineering that is re-derived per chip.
 
 This is the aggressive claim, so state the caveat plainly: fab economics and the genuine bespokeness of different computations are also real costs, and pooling cannot erase them. The claim is *not* that the collective-action problem is the only barrier — it is that the **pooling-addressable fraction** of the gap is large and currently wasted.
 
@@ -128,7 +128,7 @@ Since then the record has moved from demonstration to production. Google's own s
 
 What makes solving it worth the effort is the demand side: cheap, unreliable compute is only valuable if something will consume it, and machine intelligence consumes without bound. Human compute demand is finite — businesses have finite workloads, people have finite needs, and in equilibrium price competition retires high-cost suppliers. Machine demand is not finite, because there is always a next-best task: a machine that cannot profitably run a $50/hr job can still create value on a $5/hr job, and below that on speculative search, precomputation, and self-improvement, down to arbitrarily low value. Humans run out of ideas; machines run out of compute. This turns the market permanently *undersupplied*, which is precisely the condition under which cheap, unreliable home compute — roughly **6× cheaper than a datacenter** (~$0.08 vs ~$0.50 per hour, since the hardware and power are already sunk) — creates genuine value instead of being undercut (Figure 4). The direction of that discount is already market fact: interruptible capacity trades 60–90% below on-demand, with realized savings of 27–84% on real workloads (Wu et al., NSDI 2024).
 
-And the crunch has arrived to sharpen the point. AI demand now consumes an estimated 70% of the world's memory output; conventional DRAM contract prices rose 58–63% in a single quarter of 2026 and DDR5 more than doubled year over year (TrendForce; Counterpoint, 2026); PC makers are passing through 20%+ price increases, Apple repriced its entire hardware line mid-2026, and the memory manufacturers themselves warn the shortage runs into 2027 and beyond. Every part of that raises the replacement cost of a FLOP — and with it the value of the FLOPs already bought, powered, and sitting idle. The idle fleet was always the cheap supply; the crunch is making it the strategic one.
+And the crunch has arrived to sharpen the point. AI demand now consumes an estimated 70% of the world's memory output; conventional DRAM contract prices rose 58–63% in a single quarter of 2026 and DDR5 roughly doubled year over year (TrendForce; Counterpoint, 2026); PC makers are passing through 20%+ price increases, Apple repriced its entire hardware line mid-2026, and the memory manufacturers themselves warn the shortage runs into 2027 and beyond. Every part of that raises the replacement cost of a FLOP — and with it the value of the FLOPs already bought, powered, and sitting idle. The idle fleet was always the cheap supply; the crunch is making it the strategic one.
 
 ![Distributed computing is a collective-action problem, not a hardware limit](the-performance-commons-figure-2.png)
 
@@ -160,13 +160,13 @@ The hardware commons is now measurable at the participation level, and the entry
 
 | Route to first silicon | Entry cost | What you get |
 |---|---|---|
-| Full mask set, 130 nm | >$500k at introduction, <$80k mature | masks alone — plus a funded team and commercial EDA |
+| Full mask set, 130 nm | >$500k at introduction, ~$120k mature | masks alone — plus a funded team and commercial EDA |
 | Academic MPW block (Europractice, 2021 list) | €2,000–5,900 minimum | unpackaged dies; academic tool licenses; a supervised team |
 | chipIgnite shuttle slot | ~$10,000 | packaged parts on the open sky130 flow |
 | Tiny Tapeout tile (2022–) | **$150–300** | a fabricated, packaged chip with demo board; fully open flow; one person, days to weeks |
 | Tiny Tapeout + LLM agent (2026) | same | eighteen high-schoolers with no experience → eight verified tapeout-ready designs in ninety minutes |
 
-*Table 3. The entry cost of first silicon. Mask-set and MPW anchors from AnySilicon and the Europractice mini@sic 2021 price list; the chipIgnite comparison from Tiny Tapeout's own IEEE paper; the LLM-agent result from Krupp, Venn & Wehn (2026). Honest flags: subsidies prop up the lowest tiers, and a shuttle tile is a few thousand gates, not a commercial ASIC.*
+*Table 3. The entry cost of first silicon. Mask-set anchors from New Electronics ("Democratising chip design") and AnySilicon's mask-cost data; MPW from the Europractice mini@sic 2021 price list; the chipIgnite comparison from Tiny Tapeout's own IEEE paper; the LLM-agent result from Krupp, Venn & Wehn (2026). Honest flags: subsidies prop up the lowest tiers, and a shuttle tile is a few thousand gates, not a commercial ASIC.*
 
 The selection argument was even tested live (Figure 5). In March 2025 the ecosystem's central commercial platform, Efabless, failed to raise and shut down abruptly, stranding some five hundred designs mid-flow — precisely the single point of strategic death that ends a proprietary toolchain. The commons rerouted within months: successor firms restored the open-PDK path, the community forked the flow (OpenLane to LibreLane), the shuttle program spread onto two more foundries, and throughput in the following twelve months exceeded any prior year. A company died; the commons persisted and forked, exactly as the fitness argument predicts.
 
@@ -334,6 +334,7 @@ The distance between the performance we get and the performance the silicon allo
 - Microsoft (2025). Windows 11 and Windows 10 end-of-support installed-base figures. *Windows Experience Blog*. blogs.windows.com
 - Mirhoseini, A., Goldie, A., et al. (2021). A Graph Placement Methodology for Fast Chip Design. *Nature, 594*.
 - Natural Resources Defense Council & Anthesis (2014). Data Center Efficiency Assessment. *NRDC Issue Paper IP:14-08-a*. nrdc.org
+- New Electronics (2019). Democratising chip design. newelectronics.co.uk
 - Nous Research (2025). Democratizing AI: The Psyche Network Architecture. nousresearch.com
 - Novikov, A., et al. (2025). AlphaEvolve: A Coding Agent for Scientific and Algorithmic Discovery. arXiv:2506.13131
 - Nowatzki, T., Gangadhar, V., Sankaralingam, K., & Wright, G. (2016). Pushing the Limits of Accelerator Efficiency While Retaining Programmability. *HPCA 2016*; Top Picks version: Domain Specialization Is Generally Unnecessary for Accelerators. *IEEE Micro, 37(3), 2017*.
