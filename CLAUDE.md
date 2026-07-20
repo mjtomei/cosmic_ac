@@ -39,8 +39,8 @@ WeasyPrint's `column-span: all` is buggy — under certain page geometries it si
 drops the entire rest of the document (we hit 14pp→2pp). render_twocol.py therefore
 splits the body at full-width figures/tables into alternating `.paper` two-column
 chunks and top-level `.fullblock` elements; NEVER reintroduce column-span. Full-width
-figure markdown blocks are floated to section ends (Fig 1 after §2's last paragraph,
-Fig 2 after §7's demand paragraph) so the preceding chunk packs. `render_twocol.py` sets per-figure
+figure markdown blocks are floated to section ends (Fig 1 after §1.2's last paragraph,
+F3's block after §4's demand paragraph) so the preceding chunk packs. `render_twocol.py` sets per-figure
 layout in `fig_class()`: **figures 2, 3, 4 single-column; 1, 5 full-width**. Tables never
 split across pages (`break-inside: avoid`). **QA convention: after every rebuild,
 rasterize every page (`pdftoppm -png -r 80`) and view them** — check for table splits,
@@ -48,29 +48,33 @@ column gaps, and figure placement; layout is tuned to the current text and prose
 shift pagination. Figure 2's markdown block deliberately sits after the demand paragraph
 (not at its reference) so pages 2–3 pack; that was the fix for the old page-2 whitespace.
 
-## Paper structure (§1–11 + Conclusion + Appendix A; merged/subsectioned 2026-07)
+## Paper structure (§1–9 + Conclusion + Appendix A; §§2–4 combined 2026-07 per Matthew)
 
 §1 opens with the SPINE SENTENCE (economics of specialization) + the whole-paper
 MOVEMENT MAP + §1's own subsection map (per Matthew, after ChatGPT review feedback:
 hierarchy made visible; declined that review's §1/§2 merge-flattening and 30-40% herd
-cut — instead merged 1+2 as SUBSECTIONS and subsectioned the herd).
+cut — instead merged 1+2 as SUBSECTIONS and subsectioned the herd; then combined old
+§§2–4 into one §2 with sub-subsections, old-§2 privilege text as its intro).
 **Diagnosis:** 1. The gap is effort, not physics — 1.1 The gap, measured (**T1**;
 programmability split, ninja gap, dominated frontier, GPU row + Dally bound) ·
 1.2 Effort artifact (**F1** now incl. GPU point; fabric tax; LSSD/DSAGEN/OverGen;
-accelerator wall; Walter toolchains) · 2. Privilege (+ diagnosis signpost) ·
-3. **Continuous optimization is an under-provided public good** (RETITLED 2026-07 —
-the claim elevated to subtitle/abstract/spine/§3-title + ceremony paragraph per Matthew;
-satisficing/missing markets; positioning para) ·
-4. **The herd** — 4.1 Copying, and the returns to defecting (mechanism, M1/R1/Etched,
-entry-fee prediction) · 4.2 What actually binds it (competence/encoding, embargo +
-**F2 (embargo natural experiment — measured)**, wanting, subjugation) · 4.3 What
+accelerator wall; Walter toolchains) ·
+2. **Continuous optimization is an under-provided public good** (the central claim as
+section title; intro = privilege/who-pays + signpost) — 2.1 The textbook failure
+(satisficing/missing markets; positioning para; ceremony paragraph) ·
+2.2 **The herd** — 2.2.1 Copying, and the returns to defecting (mechanism, M1/R1/Etched,
+entry-fee prediction) · 2.2.2 What actually binds it (competence/encoding, embargo +
+**F2 (embargo natural experiment — measured)**, wanting, subjugation) · 2.2.3 What
 unbinds it (legibility, best-story, thoughts-allowed).
-**Scope:** 5. ASICs — **T2** · 6. Distributed — **F3, F4**.
-**Cure:** 7. Open source — **T3, F5**, EDA/AHA, Efabless · 8. ML multiplies ·
-9. Aggregation point.
-**Implication:** 10. Design — **F6 (phase), F7 (adoption + Mozart/ML markers)**,
-inversion, financing · 11. Honest limits (incl. best-opposing-case bullet) · Conclusion.
+**Scope:** 3. ASICs — **T2** · 4. Distributed — **F3, F4**.
+**Cure:** 5. Open source — **T3, F5**, EDA/AHA, Efabless · 6. ML multiplies (+ RSI
+break-off strong form) · 7. Aggregation point (+ commoditize-the-layer).
+**Implication:** 8. Design — **F6 (phase), F7 (adoption + Mozart/ML markers)**,
+inversion, financing · 9. Honest limits (incl. best-opposing-case bullet) · Conclusion.
 **Appendix A** — program, roadmap (phases 1 / 1.5-seeding / 2 / 3), **A1, A2**.
+Sub-subsections render as italic h4 (added to render_twocol.py CSS 2026-07).
+NOTE: § numbers in the source-ledger notes below may predate the renumberings;
+this structure map and the paper itself are authoritative.
 
 Figure files: figure.png=F1, figure-embargo=F2, figure-2/3=F3/F4, figure-tapeout=F5,
 figure-4=F6, figure-5=F7. File names do NOT match figure numbers — captions are

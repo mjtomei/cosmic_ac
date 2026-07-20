@@ -66,6 +66,7 @@ hr { border: none; border-top: 0.6pt solid #d6dce2; margin: 7px 0; }
 .paper h2 { font-size: 11pt; margin: 11px 0 5px 0; padding-bottom: 2px; border-bottom: 1.6px solid #15324f;
             break-after: avoid; }
 .paper h3 { font-size: 9.8pt; color: #294a6b; margin: 9px 0 4px 0; break-after: avoid; }
+.paper h4 { font-size: 9.4pt; color: #3a5876; font-style: italic; margin: 8px 0 3px 0; break-after: avoid; }
 p { margin: 0 0 6px 0; text-align: justify; orphans: 2; widows: 2; }
 strong { color: #0e2334; font-weight: 700; }
 ul,ol { margin: 0 0 6px 0; padding-left: 15px; }
