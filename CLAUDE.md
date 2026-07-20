@@ -58,7 +58,9 @@ cut — instead merged 1+2 as SUBSECTIONS and subsectioned the herd).
 programmability split, ninja gap, dominated frontier, GPU row + Dally bound) ·
 1.2 Effort artifact (**F1** now incl. GPU point; fabric tax; LSSD/DSAGEN/OverGen;
 accelerator wall; Walter toolchains) · 2. Privilege (+ diagnosis signpost) ·
-3. Collective-action problem (satisficing/missing markets; positioning para) ·
+3. **Continuous optimization is an under-provided public good** (RETITLED 2026-07 —
+the claim elevated to subtitle/abstract/spine/§3-title + ceremony paragraph per Matthew;
+satisficing/missing markets; positioning para) ·
 4. **The herd** — 4.1 Copying, and the returns to defecting (mechanism, M1/R1/Etched,
 entry-fee prediction) · 4.2 What actually binds it (competence/encoding, embargo +
 **F2 (embargo natural experiment — measured)**, wanting, subjugation) · 4.3 What

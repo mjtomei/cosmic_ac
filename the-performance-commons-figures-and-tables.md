@@ -60,7 +60,7 @@ macOS CI and inference prices, mid-2026: GitHub macOS runner $3.72/hr (10× Linu
 |---|---|---|
 | Table 1 | §1.1 | the gap is real and large |
 | Figure 1 | §1.2 | the gap is effort, not physics (Q1: hardware) |
-| — | §2–§3 | privilege → collective action (prose only) |
+| — | §2–§3 | privilege → the central claim: continuous optimization is an under-provided public good (prose only) |
 | Figure 2 | §4 | the embargo natural experiment: chips restricted, parity anyway |
 | Table 2 | §5 | the same failure is everywhere in the stack |
 | Figure 3 | §6 | distributed computing is the same problem — the wasted supply (Q2: software) |
