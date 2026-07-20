@@ -48,49 +48,32 @@ column gaps, and figure placement; layout is tuned to the current text and prose
 shift pagination. Figure 2's markdown block deliberately sits after the demand paragraph
 (not at its reference) so pages 2–3 pack; that was the fix for the old page-2 whitespace.
 
-## Paper structure (§1–12 + Conclusion + Appendix A; five movements, settled 2026-07)
+## Paper structure (§1–11 + Conclusion + Appendix A; merged/subsectioned 2026-07)
 
-The defections (M1 / R1 / Etched LVI) + the entry-fee prediction live in §5's defector
-paragraphs, previewed briefly in §1's dominated-frontier paragraph. They are NOT in the
-abstract (a closing sentence was tried there and removed — Matthew: didn't fit) and NOT
-a cold-open section (also tried and dissolved).
-**Diagnosis:** 1. Gap is real, not physics — **T1** (§1 rewritten 2026-07: opens by
-splitting "programmability" into constant-effort vs realizable-frontier (roofline, CACM
-2009), evidences the realization gap on FIXED silicon (Leiserson 60,000×; Satish
-ninja-gap 24×, ISCA 2012 — both verified), then dominated-frontier proofs (M1/LVI), and
-only then the cross-arch ratios as the separate intrinsic floor — fixing the old
-non-sequitur; abstract's defection sentences REMOVED, defections live in §5 only) ·
-2. Effort artifact — **F1** (§2 now says "§1's realization gap") ·
-3. Privilege · 4. Collective-action problem (+ satisficing/missing-markets paragraph:
-good-enough as distribution failure; Akerlof/Coase/Arrow; market-creation as recursed
-collective-action problem; ML creates missing markets — added 2026-07) · 5. **The herd** (mechanism/copying,
-defectors + entry-fee prediction, systemic-timidity "the encoding is changing", embargo
-experiment, executive wanting-data, subjugation-as-proxy, legibility prediction,
-which-thoughts-are-allowed capstone).
-**Scope:** 6. Absence of better ASICs — **T2** · 7. Distributed computing, one level up
-— **F2, F3**, Omerta (pointer to Appendix A).
-**Cure:** 8. Open source solved it — **T3 (entry cost of first silicon — replaced the
-old commons-wins list, folded to prose)**, **F4 (Tiny Tapeout participation through the
-Efabless shutdown — the only fully-measured figure; build/fig_tapeout.py)**, ML-on-EDA ·
-9. ML multiplies (velocity, fork) · 10. Aggregation point.
-**Implication:** 11. Design — **F5 (phase), F6 (adoption)**, programmer inversion,
-hardware-sells-its-own-free-time paragraph (architectural sharing below the OS;
-gatekeepers/social-integration barrier; 0%-loan with sharing-variable, even NEGATIVE
-(profit-sharing → farm-building) payments — Matthew: flat discount too weak for ~30%
-utilization, consumers less risk-averse than gatekeepers; solar/handset precedent;
-builder as lender+underwriter —
-added 2026-07; appendix notes it as Omerta's best version) ·
-12. Honest limits · Conclusion.
-**Appendix A: The program in detail** — the program intro + breadth-bet + velocity
-measurement + Omerta status + **Table A1** + full experimental protocols.
-**RULE (Matthew, strict): main text = argument + existing published work ONLY; anything
-we are planning, proposing, or building ourselves lives in Appendix A** (pointers in
-main are fine; citations of his existing public companion papers are fine).
+§1 opens with the SPINE SENTENCE (economics of specialization) + the whole-paper
+MOVEMENT MAP + §1's own subsection map (per Matthew, after ChatGPT review feedback:
+hierarchy made visible; declined that review's §1/§2 merge-flattening and 30-40% herd
+cut — instead merged 1+2 as SUBSECTIONS and subsectioned the herd).
+**Diagnosis:** 1. The gap is effort, not physics — 1.1 The gap, measured (**T1**;
+programmability split, ninja gap, dominated frontier, GPU row + Dally bound) ·
+1.2 Effort artifact (**F1** now incl. GPU point; fabric tax; LSSD/DSAGEN/OverGen;
+accelerator wall; Walter toolchains) · 2. Privilege (+ diagnosis signpost) ·
+3. Collective-action problem (satisficing/missing markets; positioning para) ·
+4. **The herd** — 4.1 Copying, and the returns to defecting (mechanism, M1/R1/Etched,
+entry-fee prediction) · 4.2 What actually binds it (competence/encoding, embargo +
+**F2 (embargo natural experiment — measured)**, wanting, subjugation) · 4.3 What
+unbinds it (legibility, best-story, thoughts-allowed).
+**Scope:** 5. ASICs — **T2** · 6. Distributed — **F3, F4**.
+**Cure:** 7. Open source — **T3, F5**, EDA/AHA, Efabless · 8. ML multiplies ·
+9. Aggregation point.
+**Implication:** 10. Design — **F6 (phase), F7 (adoption + Mozart/ML markers)**,
+inversion, financing · 11. Honest limits (incl. best-opposing-case bullet) · Conclusion.
+**Appendix A** — program, roadmap (phases 1 / 1.5-seeding / 2 / 3), **A1, A2**.
 
-Figure files: figure.png=F1 (now with GPU point + Dally note), figure-embargo=F2
-(NEW: embargo natural experiment, §5), figure-2/3=F3/F4, figure-tapeout=F5,
-figure-4=F6, figure-5=F7 (with Mozart milestone + ML-mapping note). File names do NOT
-match figure numbers — captions are authoritative. All § cross-refs renumbered by script; grep "§" after any structure edit.
+Figure files: figure.png=F1, figure-embargo=F2, figure-2/3=F3/F4, figure-tapeout=F5,
+figure-4=F6, figure-5=F7. File names do NOT match figure numbers — captions are
+authoritative. Subsections render as h3. All § cross-refs renumbered by script; grep
+"§" after any structure edit.
 
 ## Key incorporated sources (verified)
 
