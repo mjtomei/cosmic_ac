@@ -5,7 +5,7 @@
 ---
 
 **Table 1 — The efficiency gap, quantified.**  (§1)
-The measured cost of generality: ASIC 1×, CGRA ~2.8× area, FPGA ~20–35× area / ~10–14× power, CPU ~100–500× energy.
+The measured cost of generality: ASIC 1×, CGRA ~2.8× area, FPGA ~20–35× area / ~10–14× power, GPU ~3–15× energy on regular kernels (TPU ~30× perf/W over its contemporary GPU), CPU ~100–500× energy.
 *Beat: the gap is real — most code sits far below its own architecture's frontier; these ratios are the separate physical floor.* — **quantitative, sourced** (Hameed; Kuon & Rose; Prabhakar).
 
 **Figure 1 — The general-purpose vs. custom trade-off is mostly an effort artifact.**  (§2)
