@@ -145,5 +145,5 @@ authoritative). All § cross-refs renumbered by script; grep "§" after any stru
    applied to Omerta; worth a pass if those claims become load-bearing.
 4. Canonical-tier citations placed from model knowledge without agent verification
    (flagged to Matthew): Thiel & Masters 2014, and §4's missing-markets quartet —
-   Simon 1956, Akerlof 1970, Coase 1937, Arrow 1969; §11's Klein-seL4 SOSP 2009 and Grossman 1981 (warranties). (Ouchi/Holmström-Milgrom/Kuran
+   Simon 1956, Akerlof 1970, Coase 1937, Arrow 1969, Samuelson 1954, Olson 1965; §11's Klein-seL4 SOSP 2009 and Grossman 1981 (warranties). The structure-review data pass (Dally CACM 2020 13-23% bound, KernelBench, Game Ready/Baseline-Profiles, Oliker 4-14%, Koomey-Taylor 2015, Ericsson/Microsoft/LiteGreen, IBS NRE, Anderson BOINC 2020, LBNL 59%-2012) is all web-verified. (Ouchi/Holmström-Milgrom/Kuran
    were later verified.) Verify if they become load-bearing.
