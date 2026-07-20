@@ -137,6 +137,10 @@ authoritative. Subsections render as h3. All § cross-refs renumbered by script;
    applied to Omerta; worth a pass if those claims become load-bearing.
 4. Canonical-tier citations placed from model knowledge without agent verification
    (flagged to Matthew): Thiel & Masters 2014, and §4's missing-markets quartet —
-   Simon 1956, Akerlof 1970, Coase 1937, Arrow 1969, Samuelson 1954, Olson 1965,
-   Good 1965 (intelligence explosion) and Korinek-Stiglitz 2019 (§8 break-off argument); §11's Klein-seL4 SOSP 2009 and Grossman 1981 (warranties). The structure-review data pass (Dally CACM 2020 13-23% bound, KernelBench, Game Ready/Baseline-Profiles, Oliker 4-14%, Koomey-Taylor 2015, Ericsson/Microsoft/LiteGreen, IBS NRE, Anderson BOINC 2020, LBNL 59%-2012) is all web-verified. Citation-graph pass around the Sankaralingam line (2026-07, all verified): LSSD/TopPicks, DSAGEN, OverGen 0.55x, Lottarini Master-of-None, Dark Silicon arc, Walter CGRA-toolchain fragmentation 2025, Accelerator Wall (307x-vs-1.7x), Mozart ISCA-2022 lessons quotes + MapZero ISCA-2023, AHA Amber/Onyx, Dally/Jouppi named as S12's best counter. (Ouchi/Holmström-Milgrom/Kuran
+   Simon 1956, Akerlof 1970, Coase 1937, Arrow 1969, Samuelson 1954, Olson 1965;
+   (§8's RSI set is now WEB-VERIFIED 2026-07: Good 1965 Advances-in-Computers-v6 + quote,
+   Korinek-Stiglitz NBER 2017, Korinek-Suh NBER 2024, AlphaEvolve 23%-Gemini-kernel,
+   STOP COLM 2024, Darwin Gödel Machine 20→50%-preprint-flagged, and all three lab
+   frameworks gating on self-improvement: OpenAI PF v2, Anthropic RSP AI-R&D-5,
+   DeepMind FSF ML-R&D); §11's Klein-seL4 SOSP 2009 and Grossman 1981 (warranties). The structure-review data pass (Dally CACM 2020 13-23% bound, KernelBench, Game Ready/Baseline-Profiles, Oliker 4-14%, Koomey-Taylor 2015, Ericsson/Microsoft/LiteGreen, IBS NRE, Anderson BOINC 2020, LBNL 59%-2012) is all web-verified. Citation-graph pass around the Sankaralingam line (2026-07, all verified): LSSD/TopPicks, DSAGEN, OverGen 0.55x, Lottarini Master-of-None, Dark Silicon arc, Walter CGRA-toolchain fragmentation 2025, Accelerator Wall (307x-vs-1.7x), Mozart ISCA-2022 lessons quotes + MapZero ISCA-2023, AHA Amber/Onyx, Dally/Jouppi named as S12's best counter. (Ouchi/Holmström-Milgrom/Kuran
    were later verified.) Verify if they become load-bearing.
