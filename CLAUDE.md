@@ -55,7 +55,9 @@ ninja-gap 24×, ISCA 2012 — both verified), then dominated-frontier proofs (M1
 only then the cross-arch ratios as the separate intrinsic floor — fixing the old
 non-sequitur; abstract's defection sentences REMOVED, defections live in §5 only) ·
 2. Effort artifact — **F1** (§2 now says "§1's realization gap") ·
-3. Privilege · 4. Collective-action problem · 5. **The herd** (mechanism/copying,
+3. Privilege · 4. Collective-action problem (+ satisficing/missing-markets paragraph:
+good-enough as distribution failure; Akerlof/Coase/Arrow; market-creation as recursed
+collective-action problem; ML creates missing markets — added 2026-07) · 5. **The herd** (mechanism/copying,
 defectors + entry-fee prediction, systemic-timidity "the encoding is changing", embargo
 experiment, executive wanting-data, subjugation-as-proxy, legibility prediction,
 which-thoughts-are-allowed capstone).
@@ -136,5 +138,6 @@ authoritative). All § cross-refs renumbered by script; grep "§" after any stru
 3. Table 4's pm and coherence rows were **not** re-verified with the git-recency rigor
    applied to Omerta; worth a pass if those claims become load-bearing.
 4. Canonical-tier citations placed from model knowledge without agent verification
-   (flagged to Matthew): Ouchi 1979, Holmström-Milgrom 1991, Kuran 1995. Verify if they
-   become load-bearing.
+   (flagged to Matthew): Thiel & Masters 2014, and §4's missing-markets quartet —
+   Simon 1956, Akerlof 1970, Coase 1937, Arrow 1969. (Ouchi/Holmström-Milgrom/Kuran
+   were later verified.) Verify if they become load-bearing.
