@@ -87,9 +87,10 @@ measurement + Omerta status + **Table A1** + full experimental protocols.
 we are planning, proposing, or building ourselves lives in Appendix A** (pointers in
 main are fine; citations of his existing public companion papers are fine).
 
-Figure files: figure.png=F1, figure-2/3=F2/F3, figure-tapeout=F4, figure-4=F5,
-figure-5=F6 (file names no longer match figure numbers for F5/F6 — captions are
-authoritative). All § cross-refs renumbered by script; grep "§" after any structure edit.
+Figure files: figure.png=F1 (now with GPU point + Dally note), figure-embargo=F2
+(NEW: embargo natural experiment, §5), figure-2/3=F3/F4, figure-tapeout=F5,
+figure-4=F6, figure-5=F7 (with Mozart milestone + ML-mapping note). File names do NOT
+match figure numbers — captions are authoritative. All § cross-refs renumbered by script; grep "§" after any structure edit.
 
 ## Key incorporated sources (verified)
 

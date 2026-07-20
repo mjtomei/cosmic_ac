@@ -5,11 +5,11 @@ import matplotlib.pyplot as plt
 
 NAVY = "#15324f"; GREY = "#9aa7b4"; SLATE = "#5f7081"; FILL = "#2a4a6b"
 
-labels = ["ASIC\n(fully custom)", "CGRA", "FPGA", "CPU\n(fully general)"]
-x = [1, 2, 3, 4]
+labels = ["ASIC\n(fully custom)", "CGRA", "FPGA", "GPU\n(SIMT)", "CPU\n(fully general)"]
+x = [1, 2, 3, 4, 5]
 
-realizable = [1.0, 2.8, 25.0, 200.0]
-achieved   = [1.0, 11.0, 80.0, 260.0]
+realizable = [1.0, 2.8, 25.0, 8.0, 200.0]
+achieved   = [1.0, 11.0, 80.0, 55.0, 260.0]
 
 fig, ax = plt.subplots(figsize=(8.4, 5.1))
 
@@ -22,7 +22,7 @@ ax.plot(x, realizable, "-o", color=NAVY, lw=2.6, ms=8, zorder=3,
 
 ax.set_yscale("log")
 ax.set_ylim(0.78, 430)
-ax.set_xlim(0.55, 4.45)
+ax.set_xlim(0.55, 5.45)
 ax.set_xticks(x); ax.set_xticklabels(labels, fontsize=9.5)
 ax.set_yticks([1, 10, 100]); ax.set_yticklabels([u"1\u00d7 (ASIC)", u"10\u00d7", u"100\u00d7"], fontsize=9)
 ax.set_ylabel("Energy per operation relative to an ASIC\n(lower is better, log scale)", fontsize=10)
@@ -39,10 +39,13 @@ ax.annotate("Realizable frontier = intrinsic physical fabric tax -\nthe irreduci
 ax.annotate(u"gap \u2248 0 here:\nnothing to program\n(but fixed forever)",
             xy=(1, 1.0), xytext=(0.6, 1.75), fontsize=8, color=SLATE)
 ax.annotate("at the general-purpose end the\nresidual gap is architectural,\nnot a matter of effort",
-            xy=(4, 235), xytext=(2.92, 90), fontsize=8, color=SLATE,
+            xy=(5, 235), xytext=(3.72, 100), fontsize=8, color=SLATE,
             arrowprops=dict(arrowstyle="->", color=SLATE, lw=1.0))
 
 ax.grid(True, which="both", axis="y", ls=":", color="#dde2e8", zorder=0)
+ax.annotate(u"~3\u201315\u00d7 on regular kernels;\n~1.2\u00d7 on tensor-core matmul (Dally '20)",
+            xy=(4.02, 8.6), xytext=(3.85, 20), fontsize=7.4, color=SLATE,
+            arrowprops=dict(arrowstyle="->", color=SLATE, lw=1.0))
 ax.legend(fontsize=8.2, loc="lower right", framealpha=0.96, edgecolor="#d6dce2")
 for s in ["top", "right"]:
     ax.spines[s].set_visible(False)

@@ -25,15 +25,16 @@ mk = [(2014, 7,  "Microsoft Catapult:\nFPGAs in Azure servers",            2012.
       (2015, 9,  "Intel buys Altera\n$16.7B",                              2016.3, 27),
       (2016, 12, "AWS F1:\nFPGAs in the cloud",                           2018.6, 18),
       (2022, 24, "AMD buys Xilinx  $49B\n(largest semiconductor deal ever)", 2020.4, 41),
-      (2024, 29, "AI-accelerator wave:\nlargely dataflow / reconfigurable", 2026.0, 14)]
+      (2024, 29, "AI-accelerator wave:\nlargely dataflow / reconfigurable", 2026.0, 14),
+      (2020, 18, "SimpleMachines Mozart:\ncomposable dataflow taped out,\nwound down pre-commons", 2015.5, 5)]
 for yr, yv, txt, tx, ty in mk:
     ax.scatter([yr], [yv], s=46, color=NAVY, zorder=4, edgecolor="white", lw=1)
     ax.annotate(txt, xy=(yr, yv), xytext=(tx, ty),
                 fontsize=7.8, color="#22323f", ha="center", va="center",
                 arrowprops=dict(arrowstyle="-", color=SLATE, lw=0.8))
 
-ax.annotate("shared commons + machine intelligence\nclose the programmability gap",
-            xy=(2029, 55), xytext=(2026.0, 74), fontsize=8.4, color=NAVY,
+ax.annotate("shared commons + machine intelligence\nclose the programmability gap\n(already landing: MapZero '23,\nLLM EDA agents '25\u201326)",
+            xy=(2029, 55), xytext=(2026.0, 74), fontsize=8.0, color=NAVY,
             arrowprops=dict(arrowstyle="->", color=NAVY, lw=1.2))
 
 ax.set_xlim(2011.5, 2035.5); ax.set_ylim(0, 100)
