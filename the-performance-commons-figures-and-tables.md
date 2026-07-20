@@ -44,6 +44,10 @@ A decade of reconfigurable entry into the datacenter — Catapult, Intel–Alter
 Omerta (pool idle compute), the project-manager coordination layer (work on the pool), coherence (the inoculation thesis), and the reconfigurable demonstrator (the Q1 experiment) — latest progress and open items for each, stated plainly.
 *Beat: the questions are under active attack, and the breadth of the program is itself evidence of the §9 multiplier.* — **status report, self-reported**; states verified against the repos at the time of writing.
 
+**Table A2 — The wedge economics.**  (Appendix A)
+macOS CI and inference prices, mid-2026: GitHub macOS runner $3.72/hr (10× Linux) and EC2 Mac $0.65/hr (24-hr minimum) vs ~$0.006/hr idle-Mac electricity; 70B unified-memory inference ~$0.60/Mtoken vs $0.40 cheapest API and ~$0.06 batched-4090 small models.
+*Beat: the Apple wedge prices where licensing and unified memory are the moat.* — **quantitative** (vendor price lists, published benchmarks); spot rates fluctuate.
+
 ---
 
 ### How the sequence maps to the prose
@@ -64,6 +68,7 @@ Omerta (pool idle compute), the project-manager coordination layer (work on the 
 | — | §12 | honest limits (prose only) |
 | — | Conclusion | build collaboration-native hardware (prose only) |
 | Table A1 | Appendix A | the program in detail, honestly |
+| Table A2 | Appendix A | the wedge economics, priced |
 
 ### The "needs a bigger project" items (flagged for honesty)
 
