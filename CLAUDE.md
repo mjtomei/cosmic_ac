@@ -67,7 +67,10 @@ which-thoughts-are-allowed capstone).
 old commons-wins list, folded to prose)**, **F4 (Tiny Tapeout participation through the
 Efabless shutdown — the only fully-measured figure; build/fig_tapeout.py)**, ML-on-EDA ·
 9. ML multiplies (velocity, fork) · 10. Aggregation point.
-**Implication:** 11. Design — **F5 (phase), F6 (adoption)**, programmer inversion ·
+**Implication:** 11. Design — **F5 (phase), F6 (adoption)**, programmer inversion,
+hardware-sells-its-own-free-time paragraph (architectural sharing below the OS;
+gatekeepers/social-integration barrier; salesman sentence; builder-as-underwriter —
+added 2026-07; appendix notes it as Omerta's best version) ·
 12. Honest limits · Conclusion.
 **Appendix A: The program in detail** — the program intro + breadth-bet + velocity
 measurement + Omerta status + **Table A1** + full experimental protocols.
@@ -139,5 +142,5 @@ authoritative). All § cross-refs renumbered by script; grep "§" after any stru
    applied to Omerta; worth a pass if those claims become load-bearing.
 4. Canonical-tier citations placed from model knowledge without agent verification
    (flagged to Matthew): Thiel & Masters 2014, and §4's missing-markets quartet —
-   Simon 1956, Akerlof 1970, Coase 1937, Arrow 1969. (Ouchi/Holmström-Milgrom/Kuran
+   Simon 1956, Akerlof 1970, Coase 1937, Arrow 1969; §11's Klein-seL4 SOSP 2009 and Grossman 1981 (warranties). (Ouchi/Holmström-Milgrom/Kuran
    were later verified.) Verify if they become load-bearing.
