@@ -2,8 +2,6 @@
 
 ### Continuous optimization is an under-provided public good — and machine intelligence is about to provision it
 
-*A position paper. §1's quantitative architecture anchors are drawn from the companion technical comparison, "Dataflow vs. an Optimal Heterogeneous Architecture"; a companion "List of Figures and Tables" carries the argument through its visuals alone.*
-
 ---
 
 ## Abstract

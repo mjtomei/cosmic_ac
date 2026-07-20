@@ -73,9 +73,8 @@ h1,h2,h3 { font-family: 'Liberation Sans','DejaVu Sans',sans-serif; color: #1532
 .frontmatter { margin-bottom: 4mm; }
 .frontmatter h1 { font-size: 20pt; margin: 0 0 1px 0; letter-spacing: -0.2px; }
 .frontmatter h3 { font-weight: normal; font-size: 11.5pt; color: #5a6b7b; margin: 0 0 5px 0; }
-.frontmatter > p { font-size: 8.4pt; color: #5f7081; font-style: italic; margin: 0 0 7px 0; }
+.frontmatter > p { font-size: 9.4pt; color: #1b1b1b; margin: 0 0 7px 0; text-align: justify; }
 .frontmatter h2 { font-size: 11pt; margin: 8px 0 4px 0; padding-bottom: 2px; border-bottom: 1.6px solid #15324f; }
-.frontmatter > p:not(:first-of-type) { font-style: normal; font-size: 9.4pt; color: #1b1b1b; text-align: justify; }
 hr { border: none; border-top: 0.6pt solid #d6dce2; margin: 7px 0; }
 .paper { column-count: 2; column-gap: 6.5mm; column-fill: balance; }
 .paper h2 { font-size: 11pt; margin: 11px 0 5px 0; padding-bottom: 2px; border-bottom: 1.6px solid #15324f;
