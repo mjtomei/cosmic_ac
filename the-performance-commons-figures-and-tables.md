@@ -28,19 +28,19 @@ The coordination gap by looseness of coupling; naive methods waste almost all of
 The value of the marginal compute-hour against cumulative demand: human demand saturates, machine demand extends toward arbitrarily low value — past datacenter economics (~$0.50/hr) into the range only cheap idle compute (~$0.08/hr, ~6× cheaper) can serve.
 *Beat: why solving it is worth the effort — unbounded machine demand makes the otherwise-wasted resource valuable.* — **conceptual**; the cost anchors are from Omerta's reliability-market simulation, the task-value ladder from its economic analysis.
 
-**Table 3 — The entry cost of first silicon.**  (§5)
+**Table 3 — The entry cost of first silicon.**  (§5.3)
 Full mask set (>$500k) → academic MPW block (€2,000–5,900) → chipIgnite (~$10k) → Tiny Tapeout ($150–300, packaged, open flow, solo) → the same with an LLM agent (eighteen high-schoolers, ninety minutes).
 *Beat: the commons has already collapsed the entry cost of hardware specialization by orders of magnitude.* — **quantitative, sourced** (AnySilicon; Europractice 2021 list; Tiny Tapeout's IEEE paper; Krupp, Venn & Wehn 2026); subsidies prop the lowest tiers.
 
-**Figure 5 — Participation through the platform's death.**  (§5)
+**Figure 5 — Participation through the platform's death.**  (§5.3)
 Designs per Tiny Tapeout shuttle, 2022 → mid-2026, colored by foundry, with the March 2025 Efabless shutdown marked; the next shuttle was the largest ever and the following year out-produced any prior one.
 *Beat: the fitness argument's natural experiment, measured — no single point of strategic death.* — **quantitative** (tinytapeout.com); demand per run is spiky and partly subsidy-driven.
 
-**Figure 6 — Where the optimum lands as the commons matures.**  (§8)
+**Figure 6 — Where the optimum lands as the commons matures.**  (§8.3)
 A phase diagram over commons-maturity-over-time × workload-diversity; the reconfigurable-optimal region sweeps into territory that today defaults to general-purpose silicon.
 *Beat: over time the optimum for real workloads migrates into reconfigurable silicon — not fixed ASICs.* — **conceptual**; the boundary is exactly what a bigger whole-system characterization (Appendix A's experiment) would pin down.
 
-**Figure 7 — Reconfigurable hardware is already moving in; the commons is the inflection.**  (§8)
+**Figure 7 — Reconfigurable hardware is already moving in; the commons is the inflection.**  (§8.3)
 A decade of reconfigurable entry into the datacenter — Catapult, Intel–Altera $16.7B, AWS F1, AMD–Xilinx $49B, the AI-accelerator wave — with a projected inflection as the programmability gap closes.
 *Beat: the migration is measurable and already expensive; machine intelligence is the accelerant.* — **real milestones + acquisition values**; share curve illustrative, post-2025 a projection.
 
@@ -65,11 +65,11 @@ macOS CI and inference prices, mid-2026: GitHub macOS runner $3.72/hr (10× Linu
 | Table 2 | §3 | the same failure is everywhere in the stack |
 | Figure 3 | §4 | distributed computing is the same problem — the wasted supply (Q2: software) |
 | Figure 4 | §4 | unbounded machine demand makes the idle resource valuable |
-| Table 3 | §5 | the entry cost of first silicon has collapsed |
-| Figure 5 | §5 | the commons survives its platform's death, measured |
+| Table 3 | §5.3 | the entry cost of first silicon has collapsed |
+| Figure 5 | §5.3 | the commons survives its platform's death, measured |
 | — | §6–§7 | (AI multiplies the commons; the vendor is the aggregation point — prose only) |
-| Figure 6 | §8 | where the optimum lands as the commons matures |
-| Figure 7 | §8 | and it is already underway |
+| Figure 6 | §8.3 | where the optimum lands as the commons matures |
+| Figure 7 | §8.3 | and it is already underway |
 | — | §9 | honest limits (prose only) |
 | — | Conclusion | build collaboration-native hardware (prose only) |
 | Table A1 | Appendix A | the program in detail, honestly |

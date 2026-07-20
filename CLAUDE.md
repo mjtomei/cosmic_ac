@@ -67,10 +67,13 @@ entry-fee prediction) · 2.2.2 What actually binds it (competence/encoding, emba
 **F2 (embargo natural experiment — measured)**, wanting, subjugation) · 2.2.3 What
 unbinds it (legibility, best-story, thoughts-allowed).
 **Scope:** 3. ASICs — **T2** · 4. Distributed — **F3, F4**.
-**Cure:** 5. Open source — **T3, F5**, EDA/AHA, Efabless · 6. ML multiplies (+ RSI
+**Cure:** 5. Open source — 5.1 precedent/fitness · 5.2 ML-breaches-EDA/AHA ·
+5.3 silicon commons measured (**T3, F5**, Efabless) · 6. ML multiplies (+ RSI
 break-off strong form) · 7. Aggregation point (+ commoditize-the-layer).
-**Implication:** 8. Design — **F6 (phase), F7 (adoption + Mozart/ML markers)**,
-inversion, financing · 9. Honest limits (incl. best-opposing-case bullet) · Conclusion.
+**Implication:** 8. Design — 8.1 reconfigurability trade (+ Itanium inversion) ·
+8.2 federation loop + financing/underwriter · 8.3 optimum lands (**F6 (phase,
+inline at its reference — fixes a p12 column gap), F7 (adoption + Mozart/ML
+markers)**) · 9. Honest limits (incl. best-opposing-case bullet) · Conclusion.
 **Appendix A** — program, roadmap (phases 1 / 1.5-seeding / 2 / 3), **A1, A2**.
 Sub-subsections render as italic h4 (added to render_twocol.py CSS 2026-07).
 NOTE: § numbers in the source-ledger notes below may predate the renumberings;
