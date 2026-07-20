@@ -94,7 +94,7 @@ There is a subtler casualty of the competence deficit. A leader who cannot evalu
 
 They get away with it because the information does not flow. The counterfactual product, the delayed project, the value knowingly traded away are invisible to the boards and shareholders to whom the duty is owed; conduct that sits poorly beside fiduciary obligation survives on opacity, because quarterly numbers are legible and forgone alternatives are not. That asymmetry is ending on the same schedule as the rest of this paper's argument: machine intelligence reads what an organization actually did — its filings, its records, its code, increasingly its decision history — and surfaces what leadership optimized for, as the author's companion work on open organizations argues in full. Herding was always a wager that no one could see the counterfactual. The prediction is that the wager stops paying: the same intelligence that is inoculated against the coordination failure also makes it legible.
 
-One market consequence is already visible at the top of the stack. Hardware incumbents hold their claim on the world's limited production capacity — the leading-edge wafers, packaging, and memory everyone else queues for — on a perception of technical expertise: scarce capacity flows to the firms believed uniquely able to convert it into value. Ambient competence dissolves exactly that belief, and the test becomes more stringent: not whether a firm can execute, which stops discriminating once everyone can, but whether it has the best story — Thiel's old criterion, that most of a company's value lies a decade out and what is priced is the account of why it will still be differentiated then (Thiel & Masters, Zero to One, 2014). Thiel has since made the mechanism explicit — AI looks "much worse for the math people than the word people" (Conversations with Tyler, 2024) — and the market is already pricing it: job postings for "storytellers" doubled in a year (LinkedIn, 2026). A story that survives ambient competence has to admit that technical capability is no longer the bottleneck and argue from what is still scarce: density of talent, and of genuinely wanted ideas — the argument Apple made in its best years. And the story can no longer merely be told; now that the work is legible, it has to survive reading.
+One market consequence is already visible at the top of the stack. Hardware incumbents hold their claim on the world's limited production capacity — the leading-edge wafers, packaging, and memory everyone else queues for — on a perception of technical expertise: scarce capacity flows to the firms believed uniquely able to convert it into value. Ambient competence dissolves exactly that belief, and the test becomes more stringent: not whether a firm can execute, which stops discriminating once everyone can, but whether it has the best story — Thiel's old criterion, that most of a company's value lies a decade out and what is priced is the account of why it will still be differentiated then (Thiel & Masters, Zero to One, 2014). Thiel has since made the mechanism explicit — AI looks "much worse for the math people than the word people" (Conversations with Tyler, 2024) — and the market is already pricing it: job postings for "storytellers" doubled in a year (LinkedIn data via WSJ, 2025). A story that survives ambient competence has to admit that technical capability is no longer the bottleneck and argue from what is still scarce: density of talent, and of genuinely wanted ideas — the argument Apple made in its best years. And the story can no longer merely be told; now that the work is legible, it has to survive reading.
 
 Underneath all of it is the question of which thoughts are allowed to be thought. A herd's encoding does not merely price deviation; it defines what a serious person may work on, and preference falsification keeps the range narrow even in private (Kuran, *Private Truths, Public Lies*, 1995). What machine intelligence changes first is not the organization but the individual: one person with a competent collaborator no longer needs the hierarchy's permission — or its competence — to think a thought through to a working artifact. That is an increase in independence, and independence is the input this whole system has been starving for. Whether machine intelligence amplifies consensus instead is the fork §6 and §9 hold open.
 
@@ -156,7 +156,7 @@ That last moat is where machine intelligence changes the arithmetic first. A mod
 
 ### 5.3 The silicon commons, measured
 
-The hardware commons is now measurable at the participation level, and the entry cost has collapsed (Table 3): what once required a six-figure mask set, or thousands of euros for an unpackaged block on an academic shuttle plus commercial licenses and a supervised team, is now **$150–300** for a fabricated, packaged chip through the fully open flow — and participation followed the price down, to over two thousand designs and concurrent runs on three foundries by 2026 (Figure 5). Nor is the output toy-only: demoscene chips of a few thousand cells worked on first silicon; one former ARM engineer shipped five solo tapeouts in twelve months, one of them designed in ten working days; a Linux-capable RISC-V SoC with a full MMU is essentially one person's work; and at the ceiling, OpenTitan ships in production Chromebooks as a commercial, open-source root of trust. Machine intelligence is already inside this loop: a microcontroller whose Verilog was written entirely by GPT-4 was fabricated and demonstrated working (Pearce et al., 2023), and by 2026 Tiny Tapeout's own onboarding embeds an LLM agent that took eighteen high-schoolers with no chip-design experience to eight functional, verified tapeout-ready designs in a ninety-minute session (Krupp, Venn & Wehn, 2026). Two flags on this data: showcases self-select successes, and first-silicon failure rates go unpublished — even failure data is hoarded — and a shuttle tile is thousands of gates, not a commercial ASIC. The collapse is in the *entry cost of specialization* — which is exactly the axis §1 says the whole gap lives on.
+The hardware commons is now measurable at the participation level, and the entry cost has collapsed (Table 3): what once required a six-figure mask set, or thousands of euros for an unpackaged block on an academic shuttle plus commercial licenses and a supervised team, is now **$150–300** for a fabricated, packaged chip through the fully open flow — and participation followed the price down, to over two thousand designs and concurrent runs on three foundries by 2026 (Figure 5). Nor is the output toy-only: demoscene chips of a few thousand cells worked on first silicon; one former ARM engineer shipped five solo tapeouts in twelve months, one of them designed in ten working days; a Linux-capable RISC-V SoC with a full MMU is essentially one person's work; and at the ceiling, OpenTitan ships in production Chromebooks as a commercial, open-source root of trust. Machine intelligence is already inside this loop: a microcontroller whose Verilog was written entirely by GPT-4 was fabricated and demonstrated working (Blocklove et al., MLCAD 2023), and by 2026 Tiny Tapeout's own onboarding embeds an LLM agent that took eighteen high-schoolers with no chip-design experience to eight functional, verified tapeout-ready designs in a ninety-minute session (Krupp, Venn & Wehn, 2026). Two flags on this data: showcases self-select successes, and first-silicon failure rates go unpublished — even failure data is hoarded — and a shuttle tile is thousands of gates, not a commercial ASIC. The collapse is in the *entry cost of specialization* — which is exactly the axis §1 says the whole gap lives on.
 
 | Route to first silicon | Entry cost | What you get |
 |---|---|---|
@@ -243,6 +243,137 @@ The second shows this is not merely a projection from first principles. Reconfig
 ## Conclusion
 
 The distance between the performance we get and the performance the silicon allows — §1's realization gap — is, to first order, a coordination failure, not a physics one. We solved the same failure once already, at the compiler layer, with an open optimization commons that formed on its own and now hands near-expert performance to everyone for free. Machine intelligence will make that commons far more powerful — but only collaboration turns capability into *universal* performance rather than a widening gap between the few and the rest. The strategic move is therefore not to build faster rigid chips for a world of isolated optimizers, but to build **collaboration-native hardware** for the world that is arriving: reconfigurable rather than merely programmable, instrumented for contract-conditional optimization, able to contribute to a distributed optimization loop running on consumer hardware, and governed as an open commons rather than a private moat. The commons is coming for hardware the way it came for software. We should design the hardware to meet it.
+
+## References
+
+- Abts, D., et al. (2020). Think Fast: A Tensor Streaming Processor (TSP) for Accelerating Deep Learning Workloads. *ISCA 2020*.
+- Aghion, P., Van Reenen, J., & Zingales, L. (2013). Innovation and Institutional Ownership. *American Economic Review, 103(1)*.
+- Akerlof, G. A. (1970). The Market for "Lemons": Quality Uncertainty and the Market Mechanism. *Quarterly Journal of Economics, 84(3)*.
+- Anderson, D. P. (2020). BOINC: A Platform for Volunteer Computing. *Journal of Grid Computing, 18*.
+- Anderson, T. E., Culler, D. E., & Patterson, D. A. (1995). A Case for NOW (Networks of Workstations). *IEEE Micro, 15(1)*.
+- AnySilicon (n.d.). Semiconductor Wafer Mask Costs. anysilicon.com
+- Anthropic (2026). Responsible Scaling Policy. anthropic.com/responsible-scaling-policy
+- Apple Inc. (2020–2022). Form 10-K Annual Reports, FY2020–FY2022. sec.gov
+- Arrow, K. J. (1969). The Organization of Economic Activity: Issues Pertinent to the Choice of Market versus Nonmarket Allocation. In *The Analysis and Evaluation of Public Expenditure: The PPB System*, U.S. Joint Economic Committee.
+- Artificial Analysis (2026). Artificial Analysis Intelligence Index. artificialanalysis.ai
+- Barbose, G., & Darghouth, N. (2019). Tracking the Sun: Pricing and Design Trends for Distributed Photovoltaic Systems in the United States. *Lawrence Berkeley National Laboratory*.
+- Becker, D. J., Sterling, T., Savarese, D., Dorband, J. E., Ranawake, U. A., & Packer, C. V. (1995). BEOWULF: A Parallel Workstation for Scientific Computation. *ICPP 1995*.
+- Becker, J., Rush, N., Barnes, E., & Rein, D. (2025). Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity. *METR*. arXiv:2507.09089
+- Bell, G. (2008). Bell's Law for the Birth and Death of Computer Classes. *Communications of the ACM, 51(1)*.
+- Bernstein, S. (2015). Does Going Public Affect Innovation? *Journal of Finance, 70(4)*.
+- Bertrand, M., & Mullainathan, S. (2003). Enjoying the Quiet Life? Corporate Governance and Managerial Preferences. *Journal of Political Economy, 111(5)*.
+- Blocklove, J., Garg, S., Karri, R., & Pearce, H. (2023). Chip-Chat: Challenges and Opportunities in Conversational Hardware Design. *MLCAD 2023*.
+- Borzunov, A., et al. (2023). Petals: Collaborative Inference and Fine-tuning of Large Models. *ACL 2023 System Demonstrations*. arXiv:2209.01188
+- Brooks, E. (1990). "Attack of the Killer Micros" (talk). *Supercomputing '90*.
+- Cadence (2021). Cadence Cerebrus Intelligent Chip Explorer launch. cadence.com
+- Carsello, A., et al. (2022). Amber: A 367 GOPS, 538 GOPS/W 16nm SoC with a Coarse-Grained Reconfigurable Array for Flexible Acceleration of Dense Linear Algebra. *IEEE Symposium on VLSI Technology and Circuits 2022*.
+- Charles, Z., et al. (2025). Communication-Efficient Language Model Training Scales Reliably and Robustly: Scaling Laws for DiLoCo. arXiv:2503.09799
+- Cheng, C.-K., Kahng, A. B., Kim, S., et al. (2023). Assessment of Reinforcement Learning for Macro Placement. *ISPD 2023*.
+- Chung, E. S., Milder, P. A., Hoe, J. C., & Mai, K. (2010). Single-Chip Heterogeneous Computing: Does the Future Include Custom Logic, FPGAs, and GPGPUs? *MICRO-43, 2010*.
+- Coase, R. H. (1937). The Nature of the Firm. *Economica, 4(16)*.
+- Conversations with Tyler (2024). Peter Thiel on Political Theology (Ep. 210). conversationswithtyler.com
+- Counterpoint Research (2026). Memory Price Tracker. counterpointresearch.com
+- Cui, Z. K., Demirer, M., Jaffe, S., Musolff, L., Peng, S., & Salz, T. (2026). The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers. *Management Science*.
+- Dally, W. J., Turakhia, Y., & Han, S. (2020). Domain-Specific Hardware Accelerators. *Communications of the ACM, 63(7)*.
+- Das, T., Padala, P., Padmanabhan, V. N., Ramjee, R., & Shin, K. G. (2010). LiteGreen: Saving Energy in Networked Desktops Using Virtualization. *USENIX ATC 2010*.
+- DeepSeek-AI (2025). DeepSeek-R1 Incentivizes Reasoning in LLMs through Reinforcement Learning. *Nature, 645*. arXiv:2501.12948
+- Douillard, A., et al. (2023). DiLoCo: Distributed Low-Communication Training of Language Models. arXiv:2311.08105
+- Dreslinski, R. G., Wieckowski, M., Blaauw, D., Sylvester, D., & Mudge, T. (2010). Near-Threshold Computing: Reclaiming Moore's Law Through Energy Efficient Integrated Circuits. *Proceedings of the IEEE, 98(2)*.
+- Erdil, E. (2024). What Did US Export Controls Mean for China's AI Capabilities? *Epoch AI, Gradient Updates*. epoch.ai
+- Ericsson (2025). Ericsson Mobility Report, November 2025. ericsson.com
+- Esmaeilzadeh, H., Blem, E., St. Amant, R., Sankaralingam, K., & Burger, D. (2011). Dark Silicon and the End of Multicore Scaling. *ISCA 2011*.
+- Etched (2026). Sohu product announcement and low-voltage-inference claims. etched.com
+- EUROPRACTICE (2021). 2021 Pricelist for mini@sic EUROPRACTICE MPW Runs. europractice-ic.com
+- Frumusanu, A. (2020). The 2020 Mac Mini Unleashed: Putting Apple Silicon M1 To The Test. *AnandTech*. anandtech.com
+- Fuchs, A., & Wentzlaff, D. (2019). The Accelerator Wall: Limits of Chip Specialization. *HPCA 2019*.
+- Fursin, G., & Temam, O. (2010). Collective Optimization: A Practical Collaborative Approach. *ACM Transactions on Architecture and Code Optimization, 7(4)*.
+- Ghose, A., Kahng, A. B., Kundu, S., & Wang, Z. (2025). ORFS-agent: Tool-Using Agents for Chip Design Optimization. *MLCAD 2025*. arXiv:2506.08332
+- Ghose, A., Jang, J., Kahng, A. B., & Lee, J. (2026). Automated QoR Improvement in OpenROAD with Coding Agents. arXiv:2601.06268
+- Good, I. J. (1965). Speculations Concerning the First Ultraintelligent Machine. *Advances in Computers, vol. 6*.
+- Google (n.d.). Baseline Profiles Overview. *Android Developers*. developer.android.com
+- Google DeepMind (2025). Frontier Safety Framework, v3.0. deepmind.google
+- Gormley, T. A., & Matsa, D. A. (2016). Playing It Safe? Managerial Preferences, Risk, and Agency Conflicts. *Journal of Financial Economics, 122(3)*.
+- Graham, J. R., Harvey, C. R., & Rajgopal, S. (2005). The Economic Implications of Corporate Financial Reporting. *Journal of Accounting and Economics, 40(1–3)*.
+- Grossman, S. J. (1981). The Informational Role of Warranties and Private Disclosure about Product Quality. *Journal of Law and Economics, 24(3)*.
+- Hameed, R., Qadeer, W., Wachs, M., Azizi, O., Solomatnikov, A., Lee, B. C., Richardson, S., Kozyrakis, C., & Horowitz, M. (2010). Understanding Sources of Inefficiency in General-Purpose Chips. *ISCA 2010*.
+- Hennessy, J. L., & Patterson, D. A. (2019). A New Golden Age for Computer Architecture. *Communications of the ACM, 62(2)*.
+- Hess, C., & Ostrom, E. (Eds.) (2007). Understanding Knowledge as a Commons: From Theory to Practice. *MIT Press*.
+- Hoffmann, M., Nagle, F., & Zhou, Y. (2024). The Value of Open Source Software. *Harvard Business School Working Paper 24-038*.
+- Holmström, B. (1989). Agency Costs and Innovation. *Journal of Economic Behavior & Organization, 12(3)*.
+- Holmström, B., & Milgrom, P. (1991). Multitask Principal–Agent Analyses: Incentive Contracts, Asset Ownership, and Job Design. *Journal of Law, Economics, & Organization, 7*.
+- Hooker, S. (2021). The Hardware Lottery. *Communications of the ACM, 64(12)*.
+- Jaghouar, S., et al. (2024). INTELLECT-1 Technical Report. arXiv:2412.01152
+- Jaghouar, S., et al. (2024). OpenDiLoCo: An Open-Source Framework for Globally Distributed Low-Communication Training. arXiv:2407.07852
+- Jain, S., et al. (2012). A 280mV-to-1.2V Wide-Operating-Range IA-32 Processor in 32nm CMOS. *ISSCC 2012*.
+- Jiang, L., et al. (2025). Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond). *NeurIPS 2025*. arXiv:2510.22954
+- Jolicoeur-Martineau, A. (2025). Less is More: Recursive Reasoning with Tiny Networks. arXiv:2510.04871
+- Jouppi, N. P., et al. (2017). In-Datacenter Performance Analysis of a Tensor Processing Unit. *ISCA 2017*.
+- Jouppi, N. P., et al. (2021). Ten Lessons From Three Generations Shaped Google's TPUv4i. *ISCA 2021*.
+- Kim, E., Garg, A., Peng, K., Garg, N., & Kleinberg, J. (2025). Correlated Errors in Large Language Models. *ICML 2025*. arXiv:2506.07962
+- Klein, G., et al. (2009). seL4: Formal Verification of an OS Kernel. *SOSP 2009*.
+- Kleinberg, J., & Raghavan, M. (2021). Algorithmic Monoculture and Social Welfare. *PNAS, 118(22)*.
+- Knuth, D. E. (2008). Interview with Donald Knuth (by Andrew Binstock). *InformIT*.
+- Kong, X., et al. (2023). MapZero: Mapping for Coarse-Grained Reconfigurable Architectures with Reinforcement Learning and Monte-Carlo Tree Search. *ISCA 2023*.
+- Koomey, J., & Taylor, J. (2015). New Data Supports Finding That 30 Percent of Servers Are "Comatose". *Anthesis Group*.
+- Korinek, A., & Stiglitz, J. E. (2017). Artificial Intelligence and Its Implications for Income Distribution and Unemployment. *NBER Working Paper 24174*.
+- Korinek, A., & Suh, D. (2024). Scenarios for the Transition to AGI. *NBER Working Paper 32255*.
+- Koul, K., et al. (2024). Onyx: A 12nm 756 GOPS/W Coarse-Grained Reconfigurable Array for Accelerating Dense and Sparse Applications. *IEEE Symposium on VLSI Technology and Circuits 2024*.
+- Krupp, L., Venn, M., & Wehn, N. (2026). From RTL to Prompt Coding: Empowering the Next Generation of Chip Designers through LLMs. arXiv:2601.13815
+- Kuon, I., & Rose, J. (2007). Measuring the Gap Between FPGAs and ASICs. *IEEE Transactions on Computer-Aided Design, 26(2)*.
+- Kuran, T. (1995). Private Truths, Public Lies: The Social Consequences of Preference Falsification. *Harvard University Press*.
+- Lam, M. S., & Wilson, R. P. (1992). Limits of Control Flow on Parallelism. *ISCA 1992*.
+- Lapedus, M. (2018). Big Trouble At 3nm. *Semiconductor Engineering*. semiengineering.com
+- Lehman, J., et al. (2022). Evolution through Large Models. arXiv:2206.08896
+- Leiserson, C. E., Thompson, N. C., Emer, J. S., Kuszmaul, B. C., Lampson, B. W., Sanchez, D., & Schardl, T. B. (2020). There's Plenty of Room at the Top: What Will Drive Computer Performance After Moore's Law? *Science, 368(6495)*.
+- Lerner, J., & Tirole, J. (2002). Some Simple Economics of Open Source. *Journal of Industrial Economics, 50(2)*.
+- Lidin, J., et al. (2026). Covenant-72B: Pre-Training a 72B LLM with Trustless Peers Over-the-Internet. arXiv:2603.08163
+- Lie, S. (2023). Cerebras Architecture Deep Dive: First Look Inside the Hardware/Software Co-Design for Deep Learning. *IEEE Micro, 43(3)*.
+- LinkedIn (2025). Job-postings data on "storyteller" roles, as reported in *The Wall Street Journal*, December 2025. wsj.com
+- Liu, S., et al. (2022). OverGen: Improving FPGA Usability through Domain-Specific Overlay Generation. *MICRO 2022*.
+- LMArena (2024–2026). Chatbot Arena LLM Leaderboard. lmarena.ai
+- Microsoft (2025). Windows 11 and Windows 10 end-of-support installed-base figures. *Windows Experience Blog*. blogs.windows.com
+- Mirhoseini, A., Goldie, A., et al. (2021). A Graph Placement Methodology for Fast Chip Design. *Nature, 594*.
+- Natural Resources Defense Council & Anthesis (2014). Data Center Efficiency Assessment. *NRDC Issue Paper IP:14-08-a*. nrdc.org
+- Nous Research (2025). Democratizing AI: The Psyche Network Architecture. nousresearch.com
+- Novikov, A., et al. (2025). AlphaEvolve: A Coding Agent for Scientific and Algorithmic Discovery. arXiv:2506.13131
+- Nowatzki, T., Gangadhar, V., Sankaralingam, K., & Wright, G. (2016). Pushing the Limits of Accelerator Efficiency While Retaining Programmability. *HPCA 2016*; Top Picks version: Domain Specialization Is Generally Unnecessary for Accelerators. *IEEE Micro, 37(3), 2017*.
+- NVIDIA (n.d.). GeForce Game Ready Drivers. nvidia.com
+- Oliker, L., et al. (2004). Scientific Computations on Modern Parallel Vector Systems. *SC 2004*.
+- Olson, M. (1965). The Logic of Collective Action: Public Goods and the Theory of Groups. *Harvard University Press*.
+- OpenAI (2025). Preparedness Framework, Version 2. openai.com
+- Ouchi, W. G. (1979). A Conceptual Framework for the Design of Organizational Control Mechanisms. *Management Science, 25(9)*.
+- Ouyang, A., et al. (2025). KernelBench: Can LLMs Write Efficient GPU Kernels? *ICML 2025*. arXiv:2502.10517
+- Peng, S., Kalliamvakou, E., Cihon, P., & Demirer, M. (2023). The Impact of AI on Developer Productivity: Evidence from GitHub Copilot. arXiv:2302.06590
+- Prabhakar, R., Zhang, Y., Koeplinger, D., Feldman, M., Zhao, T., Hadjis, S., Pedram, A., Kozyrakis, C., & Olukotun, K. (2017). Plasticine: A Reconfigurable Architecture for Parallel Patterns. *ISCA 2017*.
+- Prabhakar, R., et al. (2024). SambaNova SN40L: Scaling the AI Memory Wall with Dataflow and Composition of Experts. *MICRO 2024*.
+- Qi, J., et al. (2025). DiLoCoX: A Low-Communication Large-Scale Training Framework for Decentralized Cluster. arXiv:2506.21263
+- Romera-Paredes, B., et al. (2024). Mathematical Discoveries from Program Search with Large Language Models (FunSearch). *Nature, 625*.
+- Ryabinin, M., & Gusev, A. (2020). Towards Crowdsourced Training of Large Neural Networks Using Decentralized Mixture-of-Experts (Hivemind). *NeurIPS 2020*.
+- Samuelson, P. A. (1954). The Pure Theory of Public Expenditure. *Review of Economics and Statistics, 36(4)*.
+- Sankaralingam, K., et al. (2022). The Mozart Reuse Exposed Dataflow Processor for AI and Beyond. *ISCA 2022*.
+- Satish, N., Kim, C., Chhugani, J., Saito, H., Krishnaiyer, R., Smelyanskiy, M., Girkar, M., & Dubey, P. (2012). Can Traditional Programming Bridge the Ninja Performance Gap for Parallel Computing Applications? *ISCA 2012*.
+- Scharfstein, D. S., & Stein, J. C. (1990). Herd Behavior and Investment. *American Economic Review, 80(3)*.
+- Simon, H. A. (1956). Rational Choice and the Structure of the Environment. *Psychological Review, 63(2)*.
+- Stanford Institute for Human-Centered AI (2025, 2026). Artificial Intelligence Index Reports 2025 and 2026. hai.stanford.edu
+- Sullivan, J. (2022). Remarks at the Special Competitive Studies Project Global Emerging Technologies Summit, September 16, 2022. *The White House*.
+- Synopsys (2020). DSO.ai launch: Synopsys Advances State-of-the-Art in Electronic Design with Revolutionary Artificial Intelligence Technology. news.synopsys.com
+- Terry, S. J. (2023). The Macro Impact of Short-Termism. *Econometrica, 91(5)*.
+- Thiel, P., & Masters, B. (2014). Zero to One: Notes on Startups, or How to Build the Future. *Crown Business*.
+- Thompson, N. C., & Spanuth, S. (2021). The Decline of Computers as a General Purpose Technology. *Communications of the ACM, 64(3)*.
+- Tiny Tapeout (2022–2026). Shuttle history and design counts. tinytapeout.com
+- Tomei, M. (2026). Coherence. Companion work. github.com/mjtomei/coherence
+- Tomei, M. (2026). Dataflow vs. an Optimal Heterogeneous Architecture. Companion technical report to this paper.
+- Tomei, M. (2026). Open-organizations companion work. github.com/mjtomei/project_manager
+- TrendForce (2026). AI Server Demand to Drive Memory Contract Price Increases in 2Q26. trendforce.com
+- Venn, M. (2024). Tiny Tapeout: A Shared Silicon Tapeout Platform Accessible to Everyone. *IEEE Solid-State Circuits Magazine, 16(2)*.
+- Wall, D. W. (1991). Limits of Instruction-Level Parallelism. *ASPLOS 1991*.
+- Walter, D., et al. (2025). Evaluation of CGRA Toolchains. arXiv:2502.19114
+- Weng, J., et al. (2020). DSAGEN: Synthesizing Programmable Spatial Accelerators. *ISCA 2020*.
+- Williams, S., Waterman, A., & Patterson, D. (2009). Roofline: An Insightful Visual Performance Model for Multicore Architectures. *Communications of the ACM, 52(4)*.
+- Wood, D. A., & Hill, M. D. (1995). Cost-Effective Parallel Computing. *IEEE Computer, 28(2)*.
+- Wu, Z., Chiang, W.-L., Mao, Z., Yang, Z., Friedman, E., Shenker, S., & Stoica, I. (2024). Can't Be Late: Optimizing Spot Instance Savings under Deadlines. *NSDI 2024*.
+- Zelikman, E., et al. (2024). Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation. *COLM 2024*. arXiv:2310.02304
+- Zhang, J., et al. (2025). Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents. arXiv:2505.22954
 
 ## Appendix A: The program in detail
 

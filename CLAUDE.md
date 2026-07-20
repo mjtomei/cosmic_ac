@@ -125,7 +125,9 @@ authoritative. Subsections render as h3. All § cross-refs renumbered by script;
   self-congratulation or flourish. Keep substantive honest caveats, framed as frontiers.
   Anecdotes/sparsely-supported trends are OK to include *with light honest flags*.
 - **Verify web facts by search before they enter the paper**; attribute by author/venue
-  inline (no bibliography). Figures/PDF: QA by rasterizing and viewing.
+  inline. A full References section now exists before Appendix A (agent-compiled
+  2026-07; entries styled via ul.refs in render_twocol.py; keep it in sync when
+  citations change). Figures/PDF: QA by rasterizing and viewing.
 - Figure captions are reader-facing. Conceptual/illustrative figures say so, with real
   anchors named. Minimize whitespace; pack figures tight.
 - Wants real quantitative data and honest pushback over agreement.

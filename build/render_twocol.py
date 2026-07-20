@@ -21,6 +21,9 @@ html_body = markdown.markdown(
     extension_configs={"smarty": {"smart_dashes": False, "smart_quotes": False,
                                   "smart_angled_quotes": False, "smart_ellipses": False}})
 
+# references list: compact hanging-indent style
+html_body = re.sub(r'(<h2>References</h2>\s*)<ul>', r'\1<ul class="refs">', html_body)
+
 # --- split front matter (title..abstract) from the two-column body (section 1 onward) ---
 m = re.search(r'<h2>1\.', html_body)
 front, body = (html_body[:m.start()], html_body[m.start():]) if m else ("", html_body)
@@ -100,6 +103,9 @@ figure { margin: 6px 0 8px 0; break-inside: avoid; }
 .fig.twin .half img { width: 100%; max-width: none; max-height: 80mm; }
 .fig.twin .half figcaption { max-width: none; margin: 2px 0 0 0; text-align: left; }
 .appendixwrap { page-break-before: always; }
+ul.refs { list-style: none; padding-left: 0; margin: 0; }
+ul.refs li { font-size: 7.2pt; line-height: 1.18; margin: 0 0 2px 0; text-align: left;
+             padding-left: 9px; text-indent: -9px; }
 figcaption, .cap { font-size: 7.7pt; font-style: italic; color: #33424f; line-height: 1.24; margin-top: 3px;
                    text-align: left; }
 table { width: 100%; border-collapse: collapse; font-family: 'DejaVu Sans','Liberation Sans',sans-serif;
