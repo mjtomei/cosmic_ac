@@ -69,7 +69,10 @@ Efabless shutdown — the only fully-measured figure; build/fig_tapeout.py)**, M
 9. ML multiplies (velocity, fork) · 10. Aggregation point.
 **Implication:** 11. Design — **F5 (phase), F6 (adoption)**, programmer inversion,
 hardware-sells-its-own-free-time paragraph (architectural sharing below the OS;
-gatekeepers/social-integration barrier; salesman sentence; builder-as-underwriter —
+gatekeepers/social-integration barrier; 0%-loan with sharing-variable, even NEGATIVE
+(profit-sharing → farm-building) payments — Matthew: flat discount too weak for ~30%
+utilization, consumers less risk-averse than gatekeepers; solar/handset precedent;
+builder as lender+underwriter —
 added 2026-07; appendix notes it as Omerta's best version) ·
 12. Honest limits · Conclusion.
 **Appendix A: The program in detail** — the program intro + breadth-bet + velocity
