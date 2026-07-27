@@ -39,8 +39,9 @@ WeasyPrint's `column-span: all` is buggy — under certain page geometries it si
 drops the entire rest of the document (we hit 14pp→2pp). render_twocol.py therefore
 splits the body at full-width figures/tables into alternating `.paper` two-column
 chunks and top-level `.fullblock` elements; NEVER reintroduce column-span. Full-width
-figure markdown blocks are floated to section ends (Fig 1 after §1.2's last paragraph,
-F3's block after §4's demand paragraph) so the preceding chunk packs. `render_twocol.py` sets per-figure
+figure markdown blocks are floated so the preceding chunk packs (Fig 1 now sits BEFORE
+§1.2's last paragraph — moved 2026-07-27 to fill a p3 gap; F3+F4 render as one twin
+block after §4's demand paragraph). `render_twocol.py` sets per-figure
 layout in `fig_class()`: **figures 2, 3, 4 single-column; 1, 5 full-width**. Tables never
 split across pages (`break-inside: avoid`). **QA convention: after every rebuild,
 rasterize every page (`pdftoppm -png -r 80`) and view them** — check for table splits,
@@ -128,6 +129,32 @@ authoritative. Subsections render as h3. All § cross-refs renumbered by script;
   aggregated (Android Cloud Profiles carry the aggregation point); Walter CGRA
   failures concentrate on complex loops, not simple kernels. The ~24%-more-PRs claim
   now has its primary source: Murphy-Hill, Butler & Savelieva, arXiv:2607.01418.
+
+- **Review-response pass (2026-07-27, from Matthew's reviews.txt)**: §1 intro rewritten
+  (natural journey, distributed/utilization set up from the start, thoughts-allowed
+  moved to intro); NO FORWARD §-REFERENCES convention adopted paper-wide; Table 1
+  reworked to multi-source RANGES with GPU split pre/post-tensor-core (TPU v1
+  corrected to 14–16× total / 25–29× incremental), ASIC-denominator-soft row,
+  Landauer floor (~10⁵× — Landauer 1961, Frank IEEE Spectrum 2017); Plasticine 2.8×
+  demoted to "2.8× base / 3.9–42.8× cumulative" (its own paper's numbers); dark
+  silicon cut per Matthew ("not a real thing because of voltage scaling"); §2.1
+  rebuilt ON the software-economics literature (Johnson 2002, Bessen 2006, von
+  Hippel–von Krogh 2003, Varian 2004 best-shot, Dongarra & Walker 1995, Chetlur
+  cuDNN 2014, Eghbal 2016, Woodside 2007 — all web-verified) instead of claiming
+  novelty; design-reuse-as-convention grounded (Naur 1985, Henderson-Clark 1990,
+  DiMaggio-Powell 1983, David 1985, Arthur 1989); M1 rearchitecting carried by
+  Frumusanu deep-dive + Dougall Johnson + Handley (AnandTech retired — archive
+  note in refs); accelerator wall moved to §5.3 to meet open-silicon data + TSMC
+  capex-intensity point (53%→32-33%, Lyons Chipstrat 2026, agent-verified);
+  federation claim scoped (embarrassingly-parallel work federates trivially —
+  BOINC/Lambda; DiLoCo matters for tightly-coupled); GPU-utilization claim
+  hedged with MFU record (38–56% well-tuned, PaLM/Llama-3); zero-sum hardware
+  asymmetry added to §3. **analysis/ dir convention: every novel number gets a
+  CSV with computations + sources + assumptions** (cost_model.py: stranded
+  compute profitable at any utilization; hw-included needs ≥~30% util at
+  spot-like discounts). reviews.txt also contains the WIDER-SCOPE outline
+  ("Towards the Cosmic AC" / compute-commons reframe) — Matthew wants to work
+  that outline TOGETHER, not autonomously; focused fixes were the precondition.
 
 ## How Matthew works (conventions)
 

@@ -5,11 +5,11 @@
 ---
 
 **Table 1 — The efficiency gap, quantified.**  (§1)
-The measured cost of generality: ASIC 1×, CGRA ~2.8× area, FPGA ~20–35× area / ~10–14× power, GPU ~3–15× energy on regular kernels (TPU ~30× perf/W over its contemporary GPU), CPU ~100–500× energy.
-*Beat: the gap is real — most code sits far below its own architecture's frontier; these ratios are the separate physical floor.* — **quantitative, sourced** (Hameed; Kuon & Rose; Prabhakar).
+The measured cost of generality, as ranges across sources: ASIC 1× (itself soft — near-threshold leaves ~10× energy on the table), CGRA ~2–3× energy / ~3–10× area (estimated), FPGA ~9–35× area / ~7–14× power, GPU split pre- vs tensor-core era (3–14× energy → ≤13–23% on matmul), CPU ~50–1000× by use, all ~10⁵× over the Landauer floor.
+*Beat: the gap is real — most code sits far below its own architecture's frontier; these ratios are the separate physical floor.* — **quantitative, sourced** (Hameed; Chung; Horowitz; Kuon & Rose; Boutros; Prabhakar; Nowatzki; Qadeer; Dally; Jouppi; Landauer/Frank).
 
 **Figure 1 — The general-purpose vs. custom trade-off is mostly an effort artifact.**  (§1.2)
-The effort gap, concentrated on reconfigurable substrates; close it and a CGRA sits within ~2.8× of an ASIC with full flexibility.
+The effort gap, concentrated on reconfigurable substrates; close it and a CGRA sits within ~2–3× of an ASIC (estimated) with full flexibility.
 *Beat: that gap is effort, not physics — the hardware question (Q1).* — **anchored endpoints**; finite-effort curve illustrative.
 
 **Figure 2 — The embargo natural experiment, drawn.**  (§2.2)

@@ -1,0 +1,6 @@
+point,value,type,source
+Datacenter cost anchor,~$0.50/hr,simulation,"Omerta reliability-market simulation, omerta_protocol plans/economic-analysis/ECONOMIC_ANALYSIS.md"
+Idle-home marginal cost anchor,~$0.08/hr,simulation,"Same source; hardware and power treated as sunk (case A of cost_model.py; the hardware-included case is case B)"
+Interruptible discount vs on-demand,60-90% below,measured,"Wu et al., NSDI 2024 (Can't Be Late); realized savings 27-84% on real workloads"
+Task-value ladder (points on the demand curve),illustrative,assumption,"Omerta economic-analysis task ladder; ordering is the argument (there is always a next-best task), positions are not measured"
+Demand curve shape,illustrative,assumption,"The curve is conceptual; only the cost anchors and the spot-discount band are sourced"

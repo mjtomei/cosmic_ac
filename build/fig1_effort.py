@@ -30,13 +30,13 @@ ax.set_xlabel(u"Generality  \u2192", fontsize=10.5)
 ax.set_title("The general-purpose vs. custom trade-off is mostly an effort artifact",
              fontsize=12.5, color=NAVY, fontweight="bold", pad=12)
 
-ax.annotate(u"Unlimited effort \u2192 within ~2.8\u00d7 of an ASIC,\nwith full flexibility",
+ax.annotate(u"Unlimited effort \u2192 within ~2\u20133\u00d7 of an ASIC,\nwith full flexibility (estimated)",
             xy=(2, 2.8), xytext=(2.18, 6.6), fontsize=8.8, color=NAVY,
             arrowprops=dict(arrowstyle="->", color=NAVY, lw=1.3))
 ax.annotate("Realizable frontier = intrinsic physical fabric tax -\nthe irreducible floor; effort removes everything above it",
             xy=(3, 25), xytext=(1.12, 155), fontsize=8.5, color=NAVY,
             arrowprops=dict(arrowstyle="->", color=NAVY, lw=1.1))
-ax.annotate(u"gap \u2248 0 here:\nnothing to program\n(but fixed forever)",
+ax.annotate("gap smallest here:\nlittle left to program\n(but fixed forever)",
             xy=(1, 1.0), xytext=(0.6, 1.75), fontsize=8, color=SLATE)
 ax.annotate("at the general-purpose end the\nresidual gap is architectural,\nnot a matter of effort",
             xy=(5, 235), xytext=(3.72, 100), fontsize=8, color=SLATE,

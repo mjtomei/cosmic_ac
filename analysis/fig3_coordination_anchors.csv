@@ -1,0 +1,7 @@
+point,value,type,source
+OpenDiLoCo utilization across two continents,90-95%,measured,"Jaghouar et al. 2024, arXiv:2407.07852 (OpenDiLoCo)"
+DiLoCo communication reduction vs synchronous,~500x less,measured,"Douillard et al. 2023, arXiv:2311.08105 (DiLoCo)"
+INTELLECT-1 utilization (three continents; 30 contributors),83%,measured,"Jaghouar et al. 2024, arXiv:2412.01152 (INTELLECT-1)"
+INTELLECT-1 communication reduction,~400x less,measured,"Jaghouar et al. 2024, arXiv:2412.01152"
+Naive synchronous utilization at consumer-federation coupling,near zero,assumption,"Illustrative: synchronous data-parallel training is communication-bound at consumer link bandwidth/latency; not a measurement. Scoped in text to tightly-coupled workloads - embarrassingly parallel work federates trivially (BOINC; AWS Lambda)."
+Curve shape between anchor points,interpolated,assumption,"Figure 3's curves are illustrative interpolations between the anchors above; only the anchors are measured."
