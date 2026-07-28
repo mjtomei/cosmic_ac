@@ -160,6 +160,13 @@ authoritative. Subsections render as h3. All § cross-refs renumbered by script;
 
 ## How Matthew works (conventions)
 
+- **Build on published work; do not argue novelty** (Matthew, 2026-07-28: "we
+  aren't publishing economists, more published work is better for us"). Start
+  from the existing literature, extend its models, credit prior authors for
+  getting there first. State an absence at most once, quietly, and never let an
+  argument's weight rest on it. This supersedes any earlier "the synthesis is
+  novel" framing (already applied to §2.1 and to the outline's Hayek-criterion
+  section).
 - **Preserve his wording verbatim**; fix only obvious typos and flag them.
 - **Voice: confident and plain.** No defensive hedging or preemptive apology; no
   self-congratulation or flourish. Keep substantive honest caveats, framed as frontiers.

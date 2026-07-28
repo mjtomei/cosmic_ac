@@ -321,6 +321,18 @@ no planner could?" into four measurable requirements:
      was never one-shot solution but perpetual adaptation; the criterion is a
      latency race, not a puzzle).
 
+  **Framing decided (Matthew, 2026-07-28): build on the literature, do not claim
+  novelty.** "Given that we aren't publishing economists, more published work is
+  better for us." So the criterion is presented as an ASSEMBLY of established
+  results — its authority comes from the components being individually settled,
+  not from the assembly being new. Say what each published literature already
+  establishes, then put them side by side. Mention once, quietly, that the
+  four-way assembly does not appear to exist; never lean on it. Brynjolfsson &
+  Hitzig 2025 becomes the anchor we EXTEND (same premise, we add the
+  decomposition), not a foil we beat; Gmeiner & Harper 2024 gets credit for
+  naming the same four concerns first, qualitatively; Boettke-Candela and
+  Lambert-Fegley are the objections we answer inside the section.
+
   **Literature verified (2026-07-28, agent report; full detail in the reading
   directory's README):** the four components map one-to-one onto mature
   quantitative literatures — bandwidth ← Mount-Reiter 1974 / Jordan 1982 /
@@ -329,18 +341,21 @@ no planner could?" into four measurable requirements:
   Papadimitriou; Chen-Deng-Teng; market hardness) vs. Eisenberg-Gale convex
   tractability; elicitation ← Hurwicz 1972 incentive compatibility + Fadel-Segal
   2009 (the communication cost of selfishness — the only quantitative pairwise
-  combination in print); drift ← **unclaimed by anyone**, despite being Hayek
-  1945's actual point ("economic problems arise always and only in consequence
-  of change"). NO prior work assembles the four; nearest neighbors to position
-  against: Brynjolfsson & Hitzig, "AI's Use of Knowledge in Society" (NBER
-  2025 — same premise and near-same title, GHM property-rights apparatus, no
-  criterion, no engagement with the mechanism-design line) and Gmeiner & Harper
-  (AI & Society 2024 — same four concerns, entirely qualitative). Cite the
-  negative case honestly: Lambert & Fegley (JEBO 2023), Boettke & Candela (JEBO
-  2023 — computation cannot substitute for competitive *discovery*, the
-  Hayek-1968 objection, which the criterion must answer or scope around). Also
-  free to claim: nobody has framed datacenter schedulers as planned economies
-  (Borg/DRF/Decima are the anchors; Phillips-Rozworski stop at the firm).
+  combination in print); drift ← the thinnest leg in this
+  debate, despite being Hayek 1945's actual point ("economic problems arise
+  always and only in consequence of change") — a citation sweep is out testing
+  whether dynamic mechanism design (Pavan-Segal-Toikka, Econometrica 2014;
+  Bergemann-Välimäki, JEL 2019) and the online/non-stationary optimization
+  literature already cover it; if they do, we adopt their formalism rather than
+  invent one. Anchors to build on: Brynjolfsson & Hitzig (NBER 2025 — same
+  premise, near-same title; we extend it with the decomposition and the
+  mechanism-design apparatus it does not engage) and Gmeiner & Harper (AI &
+  Society 2024 — credit for naming the same four concerns qualitatively; we
+  quantify them). Objections answered in-section: Lambert & Fegley (JEBO 2023),
+  Boettke & Candela (JEBO 2023 — computation cannot substitute for competitive
+  *discovery*, the Hayek-1968 objection). Scheduler-as-planned-economy: the
+  sweep is checking for prior framings; if one exists we cite it, if not we
+  state the framing plainly without advertising it as new.
   Version-number traps recorded: AI Economist is 12% in Science Advances (16%
   only on arXiv); Mises 1920 pages are 86–121; Chen-Deng FOCS is pp. 261–272.
 
