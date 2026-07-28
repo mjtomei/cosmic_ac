@@ -271,7 +271,17 @@ authority to interested parties that are *less personally vulnerable*, yielding
 more mutually agreeable outcomes for everyone outside. This opens direct
 negotiation with forces no single individual represents today — a possible
 realization of the communist and similar ideals that needs no mass force and no
-central authority, because the engagement is positive-sum. And it offloads the
+central authority, because the engagement is positive-sum. **Calibration decided
+(Matthew, 2026-07-28): name the ideals, and pitch the claim at possibility, not
+arrival.** The historical failures were not failures of the goal but of the
+intelligence available to coordinate it — the calculation debate's point was that
+no planner could hold the knowledge (Hayek 1945; Mises 1920 — VERIFY handles), and
+that constraint is exactly the variable now moving. The statement the paper makes:
+**with greater intelligence, arrangements that approach the utopian become
+possible; the only question is when.** Whether-to-when is the calibration — the
+same shape as the rest of the paper's bets (possibility argued from mechanism,
+timing left honestly open), and it converts the century's strongest
+counterargument (the knowledge problem) into the claim's own support. And it offloads the
 human need for theory of mind: dissimilar parties — by mental ability, environment,
 or interest — negotiate through the artifact, freeing conscious attention.
 **Negotiation becomes an engineering artifact: the next step in the paper's own
@@ -390,7 +400,10 @@ food/housing waste numbers · TSMC customer-leverage practices (chipstrat, alrea
 verified for capex) · consciousness-as-negotiating-executive anchor for V.5
 (global-workspace / society-of-mind class — optional) · generative-agent
 negotiation/society simulation literature (related work for the V.5 simulation
-question).
+question) · the calculation debate for V.5's utopian-possibility calibration:
+Hayek "The Use of Knowledge in Society" (AER 1945) + Mises 1920 (canonical —
+verify exact handles before use; the paper's move is that the knowledge problem
+names the constraint machine intelligence relaxes).
 
 RESOLVED by the capital-cycle report (2026-07-28, uploaded by Matthew — the content
 of the claude.ai share link, open question 4): dotcom/telecom
@@ -417,9 +430,10 @@ report itself.
    assets-rents-socialized-buildout.pdf and digested into IV.3.
 5. V.4's food/housing/waste citation — do you have specific numbers in mind, or
    should I hunt the standard ones (USDA ~30-40% food waste etc.)?
-6. V.5's "communist and similar ideals" phrasing: keep the name (it is the honest
-   word, and the force/central-authority disclaimers do the work), or name the
-   ideal (universal representation) and let the reader supply the label? The
-   indirection principle bears on this harder than anywhere else in the paper.
+6. ~~V.5's "communist and similar ideals" phrasing~~ RESOLVED (2026-07-28): keep
+   the name, calibrated to possibility-not-arrival — "with greater intelligence,
+   things that approach utopianism become possible; the only question is when."
+   The knowledge-problem literature (Hayek/Mises) becomes the claim's support:
+   the binding constraint was always intelligence, and that is the moving variable.
 7. The simulation demonstration (V.5's embedded question): does it join Appendix
    A as a committed fifth effort, or stay a stated open question in the text?
