@@ -381,7 +381,7 @@ no planner could?" into four measurable requirements:
        **nonstationarity measure** of the input. Computation×drift, with the
        exact quantity our criterion needs.
      • **Rate limits on the market itself** — Papadimitriou & Yannakakis,
-       "An impossibility theorem for price-adjustment mechanisms" (PNAS 2010):
+       "An impossibility theorem for price-adjustment mechanisms" (PNAS 107(5), 2010):
        no discrete-time price adjustment observing only prices and excess
        demands reaches ε-clearing in time polynomial in goods and 1/ε.
      Consequence for the text: **never write that drift is unformalized.** Write
