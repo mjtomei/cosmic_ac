@@ -281,7 +281,44 @@ that constraint is exactly the variable now moving. The statement the paper make
 possible; the only question is when.** Whether-to-when is the calibration — the
 same shape as the rest of the paper's bets (possibility argued from mechanism,
 timing left honestly open), and it converts the century's strongest
-counterargument (the knowledge problem) into the claim's own support. And it offloads the
+counterargument (the knowledge problem) into the claim's own support.
+
+**Candidate novel analysis: the Hayek criterion, stated formally (Matthew,
+2026-07-28 — "maybe we can do some modeling of that problem too").** The
+calculation debate has formal descendants (mechanism-design/communication-
+complexity and equilibrium-computation literatures — research agent out), which
+lets the paper decompose "what would an intelligence need, to do what Hayek said
+no planner could?" into four measurable requirements:
+
+  1. **Aggregation bandwidth** — observe or infer the dispersed "particular
+     circumstances of time and place" at fidelity ≥ what the price system
+     transmits (the communication-complexity literature gives the market's
+     message-size lower bounds as the benchmark);
+  2. **Computation** — solve or approximate the allocation within the tractable
+     class (general equilibria are hard; convex/structured economies are not —
+     the criterion is scoping, not brute force);
+  3. **Elicitation** — get truthful state, by incentive-compatible mechanism or
+     by inference from behavior without asking (this is the paper's LEGIBILITY
+     thread arriving from the other direction);
+  4. **Tracking** — re-solve faster than the economy drifts (Hayek's real point
+     was never one-shot solution but perpetual adaptation; the criterion is a
+     latency race, not a puzzle).
+
+  Two paper-native observations make this section interesting rather than
+  hand-wavy: (a) **the tacit premise is eroding** — Hayek's unarticulated
+  knowledge is being transcribed (the second harvest: humanity wrote itself into
+  text, logs, and prices that a machine reads natively), so requirement 1 falls
+  over time for structural reasons the paper already documents; (b) **the world
+  computer's own scheduler is the first economy born past the criterion** —
+  compute allocation has machine-legible state, measurable preferences, convex
+  structure, and native telemetry, so the socially-aware scheduler (IV.4) is the
+  tractable special case where planning-by-intelligence works FIRST, and the
+  general claim inherits a concrete existence proof. Modeling deliverable per the
+  analysis/ convention: a toy drifting economy comparing market tatonnement
+  against a learned allocator as observation bandwidth and re-solve latency vary
+  — locating the criterion boundary empirically. **This plausibly MERGES with
+  V.5's negotiation-simulation question into one program item (open question 7):
+  one simulation harness, two predictions.** And it offloads the
 human need for theory of mind: dissimilar parties — by mental ability, environment,
 or interest — negotiate through the artifact, freeing conscious attention.
 **Negotiation becomes an engineering artifact: the next step in the paper's own
@@ -456,3 +493,6 @@ report itself.
    the binding constraint was always intelligence, and that is the moving variable.
 7. The simulation demonstration (V.5's embedded question): does it join Appendix
    A as a committed fifth effort, or stay a stated open question in the text?
+   Note 2026-07-28: the Hayek-criterion toy model (V.5) and the negotiation sim
+   are plausibly ONE harness — a drifting multi-agent economy with a learned
+   allocator/negotiator — which strengthens the case for committing to it.
