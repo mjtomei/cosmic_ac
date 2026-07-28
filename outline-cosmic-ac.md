@@ -321,6 +321,29 @@ no planner could?" into four measurable requirements:
      was never one-shot solution but perpetual adaptation; the criterion is a
      latency race, not a puzzle).
 
+  **Literature verified (2026-07-28, agent report; full detail in the reading
+  directory's README):** the four components map one-to-one onto mature
+  quantitative literatures — bandwidth ← Mount-Reiter 1974 / Jordan 1982 /
+  Nisan-Segal 2006 (exponential communication lower bounds; prices as the
+  minimal certificate); computation ← PPAD/FIXP hardness (Daskalakis-Goldberg-
+  Papadimitriou; Chen-Deng-Teng; market hardness) vs. Eisenberg-Gale convex
+  tractability; elicitation ← Hurwicz 1972 incentive compatibility + Fadel-Segal
+  2009 (the communication cost of selfishness — the only quantitative pairwise
+  combination in print); drift ← **unclaimed by anyone**, despite being Hayek
+  1945's actual point ("economic problems arise always and only in consequence
+  of change"). NO prior work assembles the four; nearest neighbors to position
+  against: Brynjolfsson & Hitzig, "AI's Use of Knowledge in Society" (NBER
+  2025 — same premise and near-same title, GHM property-rights apparatus, no
+  criterion, no engagement with the mechanism-design line) and Gmeiner & Harper
+  (AI & Society 2024 — same four concerns, entirely qualitative). Cite the
+  negative case honestly: Lambert & Fegley (JEBO 2023), Boettke & Candela (JEBO
+  2023 — computation cannot substitute for competitive *discovery*, the
+  Hayek-1968 objection, which the criterion must answer or scope around). Also
+  free to claim: nobody has framed datacenter schedulers as planned economies
+  (Borg/DRF/Decima are the anchors; Phillips-Rozworski stop at the firm).
+  Version-number traps recorded: AI Economist is 12% in Science Advances (16%
+  only on arXiv); Mises 1920 pages are 86–121; Chen-Deng FOCS is pp. 261–272.
+
   Two paper-native observations make this section interesting rather than
   hand-wavy: (a) **the tacit premise is eroding** — Hayek's unarticulated
   knowledge is being transcribed (the second harvest: humanity wrote itself into
@@ -473,10 +496,9 @@ food/housing waste numbers · TSMC customer-leverage practices (chipstrat, alrea
 verified for capex) · consciousness-as-negotiating-executive anchor for V.5
 (global-workspace / society-of-mind class — optional) · generative-agent
 negotiation/society simulation literature (related work for the V.5 simulation
-question) · the calculation debate for V.5's utopian-possibility calibration:
-Hayek "The Use of Knowledge in Society" (AER 1945) + Mises 1920 (canonical —
-verify exact handles before use; the paper's move is that the knowledge problem
-names the constraint machine intelligence relaxes) · V.6's future-without-money
+question) · ~~the calculation debate handles~~ VERIFIED 2026-07-28 (agent report;
+canon + formal descendants + ML-era instances all confirmed; reading directory
+in progress) · V.6's future-without-money
 set: Musk money-irrelevant/universal-high-income statements (locate the citable
 instances); Keynes 1930 "Economic Possibilities for our Grandchildren"; Bostrom
 *Deep Utopia* (2024) · the radical-to-be-right statement ("Boston" ≈ Bostrom? —
