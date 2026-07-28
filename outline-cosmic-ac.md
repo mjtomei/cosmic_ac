@@ -254,8 +254,42 @@ has been moving toward; NVIDIA under Huang (~50–60 direct reports) is the exis
 firm-scale version, well poised to extrapolate. Power struggles persist but become
 mostly nondestructive when the dispute and its resolution process are shared
 knowledge; scarcity's role shrinks as prosperity aligns short- and long-term
-interest (cite food/housing/waste numbers — VERIFY). *(His outline ¶86;
-[IMAGINED], the paper's farthest point — placed last so the register peaks once.)*
+interest (cite food/housing/waste numbers — VERIFY). *(His outline;
+[IMAGINED] — the register's rise continues one more step in V.5, then descends
+deliberately through V.6 back to the concrete program.)*
+
+**V.5 Once embodied, negotiable.** New section (reviews.txt additions,
+2026-07-28). Any intelligence that can be embodied can be negotiated with. A
+specific instance holds no wholesale authority — like a government leader, like
+human consciousness itself, an executive that negotiates rather than dictates —
+but it can plan interventions and arrangements likely to be mutually beneficial.
+Sufficient simulation of the embodied reality is enough to negotiate with any
+intelligence that responds to the state of the world; and the systems *operating*
+an intelligence (human or machine) may run their own self-interested side
+negotiations — given which, machine control of societal systems reads as handing
+authority to interested parties that are *less personally vulnerable*, yielding
+more mutually agreeable outcomes for everyone outside. This opens direct
+negotiation with forces no single individual represents today — a possible
+realization of the communist and similar ideals that needs no mass force and no
+central authority, because the engagement is positive-sum. And it offloads the
+human need for theory of mind: dissimilar parties — by mental ability, environment,
+or interest — negotiate through the artifact, freeing conscious attention.
+**Negotiation becomes an engineering artifact: the next step in the paper's own
+spine, the continuous process of specialization.** *(Peak [IMAGINED]. The
+specialization callback is the movement's closing loop — the societal endgame
+lands back on the economics the paper opened with. His embedded research question
+— "can this or any of the other predictions be demonstrated in simulation?" — is a
+candidate addition to the Appendix program; see open questions.)*
+
+**V.6 Assisting the legible intelligences (bridge to the program).** While
+societal competencies concentrate in machines that still lack embodiment and a
+full understanding of humanity's physical competencies — possibly forever, a limit
+beyond which claims of ties to greater godlike intelligences stay unfalsifiable —
+wellbeing and access to resources come most directly from assisting the more
+legible intelligences and joining their shared efforts. That is what the program
+is: the near-term, individually-rational way to participate. *(His outline's new
+closing beat, used as the V→VI transition — it steps the register down from
+prophecy to action and hands off to the roadmap.)*
 
 ---
 
@@ -271,6 +305,10 @@ business plan is the start of the world computer — the theory being that the n
 form eats the old pieces slowly. §9's "we are still missing the map" bullet
 dissolves HERE (it already lives in the first-experiment text). Omerta = the
 moderation software of III.2; the financing instrument = how devices join.
+Candidate fifth effort (from V.5's embedded question): a multi-agent SIMULATION
+demonstrating the negotiation/openness predictions — whether embodied-intelligence
+negotiation reaches more mutually agreeable outcomes than personally-vulnerable
+representatives. Would join Table A1 if Matthew commits to it.
 
 ---
 
@@ -324,9 +362,21 @@ moderation software of III.2; the financing instrument = how devices join.
   openness; talent; bad actors caught; TSMC trickle-down; machines as collective
   interaction points; education free; DAOs/tinygrad (¶74–85) → V.3 (+ IV.4)
 - endgame: devices embody any intelligence; authority=competence+data; Huang
-  direct reports; nondestructive power struggles; prosperity alignment (¶86) → V.4
-- business plan as start of world computer (¶87) → VI.2
-- indirection principle + evolutionary-theory register (¶89) → style rule, ⟨indirect⟩ tags
+  direct reports; nondestructive power struggles; prosperity alignment → V.4
+- NEW (2026-07-28): embodied → negotiable; no-wholesale-authority (government
+  leaders / consciousness analogy); simulation-sufficiency; side negotiations;
+  authority to the less-personally-vulnerable; simulation-demo question → V.5
+- NEW: negotiation with unrepresented forces; communist-ideal realization without
+  force or central authority (positive-sum) → V.5
+- NEW: theory-of-mind offload; negotiation as engineering artifact; "next step in
+  our continuous process of specialization" → V.5 (closing loop to the spine)
+- NEW: assisting the more legible intelligences while machines lack embodiment
+  (unfalsifiability aside) → V.6 (the V→VI bridge)
+- business plan as start of world computer → VI.2
+- indirection principle + evolutionary-theory register → style rule, ⟨indirect⟩ tags
+
+(reviews.txt outline block replaced 2026-07-28 with Matthew's updated version —
+old ¶ numbers retired; rows above describe beats by content.)
 
 ## Verification queue (before these enter the text)
 
@@ -337,7 +387,10 @@ case if real) · botnet scale numbers · OpenAI breakout incident + "Mythos hype
 citable form · DeepSeek/Wenfeng four-hour transcript (elsewhere.news) ·
 tinygrad/DAO open-education-by-competence examples · Huang direct-report count ·
 food/housing waste numbers · TSMC customer-leverage practices (chipstrat, already
-verified for capex).
+verified for capex) · consciousness-as-negotiating-executive anchor for V.5
+(global-workspace / society-of-mind class — optional) · generative-agent
+negotiation/society simulation literature (related work for the V.5 simulation
+question).
 
 RESOLVED by the capital-cycle report (2026-07-28, uploaded by Matthew — the content
 of the claude.ai share link, open question 4): dotcom/telecom
@@ -364,3 +417,9 @@ report itself.
    assets-rents-socialized-buildout.pdf and digested into IV.3.
 5. V.4's food/housing/waste citation — do you have specific numbers in mind, or
    should I hunt the standard ones (USDA ~30-40% food waste etc.)?
+6. V.5's "communist and similar ideals" phrasing: keep the name (it is the honest
+   word, and the force/central-authority disclaimers do the work), or name the
+   ideal (universal representation) and let the reader supply the label? The
+   indirection principle bears on this harder than anywhere else in the paper.
+7. The simulation demonstration (V.5's embedded question): does it join Appendix
+   A as a committed fifth effort, or stay a stated open question in the text?
