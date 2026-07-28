@@ -145,6 +145,23 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
   partial automation of a fifth to a third of world labor, ~30% capture, durable
   moats. IT's GDP share needed forty years to reach 5% and then held flat for two
   decades; 2026 is the first decisive break above the band.
+- **Three readings of the same arithmetic (added 2026-07-28 — Matthew's
+  foreshadow).** The report's decay row says the pricing requires durable moats
+  because no plausible GDP share otherwise closes the gap. That leaves three
+  interpretations, in ascending register: (a) it is a bubble, and the crash
+  socializes the buildout the telecom way — the bequest is open weights [REAL,
+  the precedent]; (b) the moats hold, and the rents are captured out of
+  substituted labor — the reading the market claims to be making [MIXED]; or
+  (c) **the bubble is the down payment on a post-scarcity society** — the
+  arithmetic fails in money because it is pricing, badly, in money, the regime
+  in which money's own role shrinks; the impossible revenue requirement is what
+  that limit looks like from inside the old unit of account [IMAGINED,
+  foreshadowed here in one sentence and resolved at the paper's end]. Note the
+  alignment with IV.2's recursion branches: private capture → break-off;
+  crash → crash-hedged endowment; completion → the commons as the economy.
+  No section number in the text — the foreshadow is a journey beat ("a third
+  reading this paper earns the right to make at its end"), per the
+  no-mechanical-forward-refs convention.
 - **The precedent says the private and social outcomes diverge completely.** Telecom
   1996–2002: $1.5–2T raised; demand forecasts off by an order of magnitude
   (Odlyzko); $2T of equity erased, $1T of debt; sector ROIC 5–8% against 7–9% cost
@@ -334,7 +351,10 @@ full understanding of humanity's physical competencies — possibly forever, a l
 beyond which claims of ties to greater godlike intelligences stay unfalsifiable —
 wellbeing and access to resources come most directly from assisting the more
 legible intelligences and joining their shared efforts. **This is one vision of a
-future without money in which human purpose remains** — a future others have
+future without money in which human purpose remains** — and it is where IV.3's
+third reading of the capital cycle lands: the bubble as down payment on
+post-scarcity, the foreshadow planted in the accounting now resolved in the
+vision — a future others have
 predicted from the outside (Musk's money-becomes-irrelevant / universal-high-income
 statements — VERIFY exact quotes; Keynes 1930 "Economic Possibilities for our
 Grandchildren" as the canonical purpose-beyond-scarcity essay; Bostrom's *Deep
@@ -432,6 +452,9 @@ representatives. Would join Table A1 if Matthew commits to it.
   our continuous process of specialization" → V.5 (closing loop to the spine)
 - NEW: assisting the more legible intelligences while machines lack embodiment
   (unfalsifiability aside) → V.6 (the V→VI bridge)
+- NEW (2026-07-28, chat): third reading of the capital-cycle arithmetic — bubble
+  as down payment on post-scarcity — planted as a one-sentence foreshadow in
+  IV.3, resolved in V.6 → IV.3 + V.6
 - business plan as start of world computer → VI.2
 - indirection principle + evolutionary-theory register → style rule, ⟨indirect⟩ tags
 
