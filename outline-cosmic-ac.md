@@ -333,31 +333,97 @@ no planner could?" into four measurable requirements:
   naming the same four concerns first, qualitatively; Boettke-Candela and
   Lambert-Fegley are the objections we answer inside the section.
 
-  **Literature verified (2026-07-28, agent report; full detail in the reading
-  directory's README):** the four components map one-to-one onto mature
-  quantitative literatures — bandwidth ← Mount-Reiter 1974 / Jordan 1982 /
-  Nisan-Segal 2006 (exponential communication lower bounds; prices as the
-  minimal certificate); computation ← PPAD/FIXP hardness (Daskalakis-Goldberg-
-  Papadimitriou; Chen-Deng-Teng; market hardness) vs. Eisenberg-Gale convex
-  tractability; elicitation ← Hurwicz 1972 incentive compatibility + Fadel-Segal
-  2009 (the communication cost of selfishness — the only quantitative pairwise
-  combination in print); drift ← the thinnest leg in this
-  debate, despite being Hayek 1945's actual point ("economic problems arise
-  always and only in consequence of change") — a citation sweep is out testing
-  whether dynamic mechanism design (Pavan-Segal-Toikka, Econometrica 2014;
-  Bergemann-Välimäki, JEL 2019) and the online/non-stationary optimization
-  literature already cover it; if they do, we adopt their formalism rather than
-  invent one. Anchors to build on: Brynjolfsson & Hitzig (NBER 2025 — same
-  premise, near-same title; we extend it with the decomposition and the
-  mechanism-design apparatus it does not engage) and Gmeiner & Harper (AI &
-  Society 2024 — credit for naming the same four concerns qualitatively; we
-  quantify them). Objections answered in-section: Lambert & Fegley (JEBO 2023),
-  Boettke & Candela (JEBO 2023 — computation cannot substitute for competitive
-  *discovery*, the Hayek-1968 objection). Scheduler-as-planned-economy: the
-  sweep is checking for prior framings; if one exists we cite it, if not we
-  state the framing plainly without advertising it as new.
-  Version-number traps recorded: AI Economist is 12% in Science Advances (16%
-  only on arXiv); Mises 1920 pages are 86–121; Chen-Deng FOCS is pp. 261–272.
+  **Literature mapped (2026-07-28: verification pass + 65-agent citation-graph
+  sweep over Semantic Scholar/OpenAlex; raw results in the reading directory's
+  `00-CITATION-SWEEP.json`).** The components are not gaps to be filled — each
+  has published machinery to build on, and the honest framing is that FIVE
+  DISJOINT COMMUNITIES have built the pieces without citing one another:
+  economics of organization, mechanism design, algorithmic game theory, online
+  optimization, and systems scheduling.
+
+  1. **BANDWIDTH.** Mount & Reiter (1974) and Jordan (1982) — the price
+     mechanism is the minimal message space, uniquely. Nisan & Segal (JET 2006)
+     — exponential communication lower bounds for combinatorial allocation.
+     Roughgarden & Talgam-Cohen, "Why Prices Need Algorithms" (EC 2015) —
+     the existence of a succinct price system is contingent on computational
+     tractability (this is a bandwidth×computation pairing). Also: "Economic
+     efficiency requires interaction" (STOC 2014 / GEB 2019); "Coordination
+     Complexity" (ITCS 2016); Mechanism Design with Communication Constraints
+     (JPE 2014).
+  2. **COMPUTATION.** PPAD/FIXP hardness (Papadimitriou 1994; DGP; Chen-Deng-
+     Teng) against Eisenberg-Gale convex tractability (Devanur et al.);
+     tâtonnement's reach (Cheung-Cole-Devanur, "Tatonnement beyond gross
+     substitutes," GEB 2020). Mount & Reiter's own monograph, *Computation and
+     Complexity in Economic Behavior and Organization* (CUP 2002), derives an
+     explicit communication-vs-computation trade-off — the same two authors who
+     gave us the bandwidth benchmark already did this pair.
+  3. **ELICITATION.** Hurwicz's incentive compatibility; Fadel & Segal (JET
+     2009) on the communication cost of selfishness; "Exponential communication
+     separations between notions of selfishness" (STOC 2021); and the
+     ML-native line — differentiable economics (JACM 2024; CACM 2025), deep
+     mechanism design (PNAS 2025).
+  4. **DRIFT — the leg we thought was empty, and is not.** Four separate
+     formalizations exist, none connected to the calculation debate:
+     • **Radner & Van Zandt's real-time decentralized information processing**
+       (Radner, Econometrica 1993; Van Zandt, RES 1999; Van Zandt & Radner,
+       Economic Theory 2001) — organizations as finite-capacity processors where
+       aggregation *takes time*, so scale forces decisions onto staler data; the
+       "aggregation delay effect" bounds the optimal size of centralized
+       decision-making. This is computation×drift, proved, for the firm.
+     • **Dynamic mechanism design** — Athey & Segal, "An Efficient Dynamic
+       Mechanism" (Econometrica 2013); Pavan, Segal & Toikka (Econometrica
+       2014); Bergemann & Välimäki (JEL 2019). Private information *evolves*;
+       period-by-period truthful reporting sustained. That is elicitation×drift.
+     • **Online market equilibrium** — Liao, Gao & Kroer, "Nonstationary Dual
+       Averaging and Online Fair Allocation" (NeurIPS 2022), with the stationary
+       predecessor PACE (Gao, Peysakhovich & Kroer, ICML 2021): mean-square
+       error in *tracking* a Fisher-market equilibrium bounded by an explicit
+       **nonstationarity measure** of the input. Computation×drift, with the
+       exact quantity our criterion needs.
+     • **Rate limits on the market itself** — Papadimitriou & Yannakakis,
+       "An impossibility theorem for price-adjustment mechanisms" (PNAS 2010):
+       no discrete-time price adjustment observing only prices and excess
+       demands reaches ε-clearing in time polynomial in goods and 1/ε.
+     Consequence for the text: **never write that drift is unformalized.** Write
+     that it has been formalized four times, in four literatures, none of which
+     is talking to the calculation debate — and that importing them is the work.
+  5. **Three-component prior art, from the other side.** Cockshott & Cottrell's
+     "Information and Economics: A Critique of Hayek" (RPE 16, 1997 — already in
+     the reading directory) quantitatively combines bandwidth (an explicit
+     bit-cost model, 4nm(b+2) bits per market iteration vs 2nm for the plan;
+     distance from equilibrium as algorithmic information), computation (a
+     per-iteration contraction factor, convergence linear in information space),
+     and drift (§7's "argument from dynamics": the market as a slow analog
+     processor whose cycle time is bounded by the rate of physical adjustment).
+     It reaches the opposite conclusion to the Austrians and predates the AI
+     framing; it deserves the citation and the credit.
+
+  **What the paper contributes, stated without novelty language:** the components
+  live in disjoint literatures that do not cite each other; the assembly puts
+  them in one frame and points them at a question none of them asks — what would
+  an *intelligence* need, and what is already true of the one being built. The
+  known pairwise combinations (bandwidth×elicitation, bandwidth×computation,
+  computation×drift, elicitation×drift) are evidence FOR the frame, not against
+  it: five communities keep arriving at two-way versions of the same problem.
+
+  **Anchors to build on rather than beat:** Brynjolfsson & Hitzig (NBER 2025);
+  Gmeiner & Harper (AI & Society 2024, credited for naming the four concerns
+  first). **Live competition to read and engage:** "Hayek Displaced: Can AI Solve
+  the Socialist Calculation Problem?" (SSRN 2026, not peer-reviewed) and
+  "Markets, agency, and trust: AI agents and the knowledge problem" (Review of
+  Austrian Economics 2026) — someone is asking our question in print now.
+  **Objections answered in-section:** Boettke & Candela (JEBO 2023), Lambert &
+  Fegley (JEBO 2023), and the Hayek-1968 discovery argument behind them.
+
+  **Scheduler-as-planned-economy is NOT free to claim.** The systems literature
+  got there: Karma (OSDI 2023) proves max-min fairness keeps Pareto efficiency,
+  strategy-proofness and fairness only under *static* demand and builds a
+  credit mechanism for time-varying demand — elicitation×drift, in production;
+  Shockwave pairs computation×drift; "No Agent Left Behind" (JAIR 2014) does
+  dynamic fair division; "Markets are dead, long live markets" (SIGecom
+  Exchanges 2005) is the market-based-scheduling retrospective. Cite them as
+  the systems-side precedent the criterion generalizes — the world computer's
+  scheduler is then not a bold new framing but the case where this already works.
 
   Two paper-native observations make this section interesting rather than
   hand-wavy: (a) **the tacit premise is eroding** — Hayek's unarticulated
