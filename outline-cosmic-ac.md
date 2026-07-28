@@ -296,10 +296,23 @@ societal competencies concentrate in machines that still lack embodiment and a
 full understanding of humanity's physical competencies — possibly forever, a limit
 beyond which claims of ties to greater godlike intelligences stay unfalsifiable —
 wellbeing and access to resources come most directly from assisting the more
-legible intelligences and joining their shared efforts. That is what the program
-is: the near-term, individually-rational way to participate. *(His outline's new
-closing beat, used as the V→VI transition — it steps the register down from
-prophecy to action and hands off to the roadmap.)*
+legible intelligences and joining their shared efforts. **This is one vision of a
+future without money in which human purpose remains** — a future others have
+predicted from the outside (Musk's money-becomes-irrelevant / universal-high-income
+statements — VERIFY exact quotes; Keynes 1930 "Economic Possibilities for our
+Grandchildren" as the canonical purpose-beyond-scarcity essay; Bostrom's *Deep
+Utopia* 2024 as the book-length treatment of meaning in a solved world). And the
+register defense belongs here too: given superintelligence, a prediction has to be
+radical to be right (Bostrom — VERIFY the exact statement/source), and the time
+past the singularity is necessarily unpredictable (Vinge 1993's "opaque wall
+across the future" — VERIFY) — which is precisely why the paper's calibration is
+possibility-not-arrival: past the threshold, only the direction survives
+prediction, and mundane forecasts are the ones guaranteed wrong. That is what the
+program is: the near-term, individually-rational way to participate. *(His
+outline's closing beat, extended 2026-07-28 — used as the V→VI transition; it
+steps the register down from prophecy to action and hands off to the roadmap,
+now with the epistemic justification for the prophecy register stated inside the
+paper rather than left implicit.)*
 
 ---
 
@@ -403,7 +416,13 @@ negotiation/society simulation literature (related work for the V.5 simulation
 question) · the calculation debate for V.5's utopian-possibility calibration:
 Hayek "The Use of Knowledge in Society" (AER 1945) + Mises 1920 (canonical —
 verify exact handles before use; the paper's move is that the knowledge problem
-names the constraint machine intelligence relaxes).
+names the constraint machine intelligence relaxes) · V.6's future-without-money
+set: Musk money-irrelevant/universal-high-income statements (locate the citable
+instances); Keynes 1930 "Economic Possibilities for our Grandchildren"; Bostrom
+*Deep Utopia* (2024) · the radical-to-be-right statement ("Boston" ≈ Bostrom? —
+locate the actual quote and source, possibly Deep Utopia or interviews) · Vinge
+1993 "The Coming Technological Singularity" for past-the-singularity
+unpredictability (the "opaque wall" passage — verify wording).
 
 RESOLVED by the capital-cycle report (2026-07-28, uploaded by Matthew — the content
 of the claude.ai share link, open question 4): dotcom/telecom
