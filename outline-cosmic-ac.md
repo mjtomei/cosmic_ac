@@ -124,24 +124,74 @@ loop makes a break-off society (current text, kept); publicly provisioned, **the
 shared computer itself becomes the breakaway** — compounding past any private
 holder, so that joining it stops being generosity and becomes staying attached to
 the economy. Both directions stated; the commons is the safe branch of the same
-recursion. *(Mostly existing text + one new turn.)*
+recursion. Candidate closing line from the capital-cycle report: "property was the
+wrong category from the start; the balance sheets are merely the last to find out."
+*(Mostly existing text + one new turn.)*
 
-**IV.3 Nobody plans it; the existing superintelligences birth it.** New section.
-The solution to the collective-action problem — being of higher fitness than less-
-connected society — is born from the superintelligences already in existence
-(markets, nation-states), through mechanisms that are not centrally planned. The
-internet was built at negative aggregate return on investment; the % of GDP that
-current AI investment assumes for positive return suggests the same thing is
-happening again; hardware depreciation rates imply the durable public good this
-time is open-weight models, shared software and hardware technique, and the
-infrastructure for growing and interconnecting the intelligence. Like the dotcom
-bubble, the individual winners will be the ones positioned to benefit from the
-public good the bubble leaves behind. Only hardware prescient or high-minded enough
-to be robust to automated optimizers — which will take over increasingly large
-co-optimizing surfaces of the design process — will survive. *(His outline;
-[MIXED]; VERIFY: dotcom negative-aggregate-ROI literature, AI capex as % GDP,
-depreciation schedules, Zuckerberg/Nadella/Musk/Huang open-weight posts, Microsoft
-open-weight page. ⟨indirect⟩ — the markets do the arguing.)*
+**IV.3 Nobody plans it; the existing superintelligences birth it.** New section,
+now carried by the companion report **"Assets, Rents, and the Socialized Buildout"**
+(in repo: assets-rents-socialized-buildout.pdf — the accounting behind everything
+in this section; its own sources: Goldman, Gartner, PitchBook, Odlyzko, Nordhaus,
+Perez/Janeway, SEC/court records). The argument arc, with its numbers:
+
+- **The gap is expectation, not investment.** ~$27T of AI-attached market value vs
+  ~$1.0–1.2T of deployed, depreciation-adjusted AI capital stock — 94% expectation,
+  6% realized. Capitalized rents ~$17T against realized AI rents of ~$330–350B/yr,
+  85–90% of which are mean-reverting supply-chain scarcity rents.
+- **The valuations presuppose socialization-scale revenue.** Backing the rents out:
+  external AI revenue must reach 3–6.5% of world GDP at plausible margins (the
+  breakeven floor alone is ~$1.7T/yr, 1.3% of world GDP, vs ~0.3% today), and the
+  only spending pool that size is labor compensation — the pricing quietly assumes
+  partial automation of a fifth to a third of world labor, ~30% capture, durable
+  moats. IT's GDP share needed forty years to reach 5% and then held flat for two
+  decades; 2026 is the first decisive break above the band.
+- **The precedent says the private and social outcomes diverge completely.** Telecom
+  1996–2002: $1.5–2T raised; demand forecasts off by an order of magnitude
+  (Odlyzko); $2T of equity erased, $1T of debt; sector ROIC 5–8% against 7–9% cost
+  of capital, persistently — the industry operating the internet's transport layer
+  never earned its capital cost. A covertly socialized infrastructure program,
+  neither consensual nor centrally planned, but effective (Nordhaus: producers
+  capture ~2.2% of the surplus they create; Perez/Janeway productive bubble; the
+  1847 railway mania as the same play run earlier). Equity-financed losses diffuse
+  — the 2001 recession was mild; bank-funded busts (1873, 2008) propagate.
+- **The second harvest.** The overbuilt network did two things no planner ordered:
+  it induced humanity to transcribe itself — the web, the forums, the code, the
+  training corpus — and it grew the ad-funded engine that later paid for the AI
+  laboratories. On the longest accounting, the 2000–02 losses were the capital
+  contribution to machine intelligence, the payoff arriving twenty years late in a
+  form nobody was pricing. ⟨indirect⟩ at full strength: the superintelligence
+  funded its own successor through a bubble no one designed.
+- **This cycle socializes continuously, not at the writeoff.** Consolidate the AI
+  complex and the circular deals net out: ~$300–400B external revenue against
+  $700B–1T cash out — the socialization flow running now. Equity-linked vendor
+  financing (supplier investments, warrants, utilization backstops) is system-safer
+  than Lucent/Nortel receivables but epistemically worse: it corrupts the demand
+  signal itself. Double-capitalization and margin-stacking are already binding.
+- **The durable public good this time is open weights** — structurally stronger
+  than fiber: irreversibility plus zero-cost reproduction, and the artifact
+  *teaches its own manufacture* (every served token is a lesson; distillation
+  means the product can be interrogated into yielding its replacement). Maximally
+  unpossessable — a frontier model fits in a backpack, which is why export
+  controls govern chips: nobody can durably govern files. The crash scenario is
+  synergistic for the commons: fire-sale accelerators the way 2002 meant two-cent
+  bandwidth, written-down compute plus free weights as the deployment-era cheapness
+  the next platform gets built on. **The endowment is crash-hedged.** Honest
+  frictions, stated: the gift is parasitic on the race (open releases are strategic
+  byproducts; if funding stops, the last release freezes as the permanent
+  endowment), and diffusion selects on capability-per-dollar, not wisdom.
+- **Surviving hardware.** Only hardware prescient or high-minded enough to be
+  robust to automated optimizers — which take over increasingly large
+  co-optimizing surfaces of the design process — will survive; the durable residue
+  of a bust is shells, power, workforce, and weights, not five-year accelerators.
+  (Also the report's last-mile point, which feeds III.2: bubbles fund the fundable
+  layer, not the binding one — telecom's actual bottleneck was the last mile; AI's
+  is power interconnection and enterprise integration, where capital moves slowest.)
+
+*[MIXED — the accounting is [REAL] (reported + modeled, provenance in the report);
+the socialized-buildout reading is the declared interpretation. ⟨indirect⟩ — the
+markets do the arguing. Still to verify separately: Zuckerberg/Nadella/Musk/Huang
+open-weight posts + Microsoft open-weight page (the executives narrating the
+socialization).]*
 
 **IV.4 The aggregation point, and who runs the scheduler.** Current §7 (vantage /
 channel / incentive, Game Ready / Cloud Profiles fragments, commoditize-the-layer)
@@ -281,15 +331,25 @@ moderation software of III.2; the financing instrument = how devices join.
 ## Verification queue (before these enter the text)
 
 Asimov "The Last Question" (1956) and the AC lineage · a second one-big-computer
-sci-fi anchor · dotcom negative-aggregate-ROI literature · AI capex as % of GDP ·
-GPU/accelerator depreciation → durable-good argument · Zuckerberg / Nadella / Musk /
-Huang open-weight posts + Microsoft open-weight page · the claude.ai share link's
-content (what is it? — need Matthew) · self-patching worm (Welchia-class; also the
-2024-era self-closing case if real) · botnet scale numbers · OpenAI breakout
-incident + "Mythos hype" citable form · DeepSeek/Wenfeng four-hour transcript
-(elsewhere.news) · tinygrad/DAO open-education-by-competence examples · Huang
-direct-report count · food/housing waste numbers · TSMC customer-leverage practices
-(chipstrat, already verified for capex).
+sci-fi anchor · Zuckerberg / Nadella / Musk / Huang open-weight posts + Microsoft
+open-weight page · self-patching worm (Welchia-class; also the 2024-era self-closing
+case if real) · botnet scale numbers · OpenAI breakout incident + "Mythos hype"
+citable form · DeepSeek/Wenfeng four-hour transcript (elsewhere.news) ·
+tinygrad/DAO open-education-by-competence examples · Huang direct-report count ·
+food/housing waste numbers · TSMC customer-leverage practices (chipstrat, already
+verified for capex).
+
+RESOLVED by the capital-cycle report (2026-07-28, uploaded by Matthew — the content
+of the claude.ai share link, open question 4): dotcom/telecom
+negative-aggregate-ROI (sector ROIC 5–8% vs 7–9% CoC; Odlyzko; The Economist 2002;
+Nordhaus 2.2%-capture; Perez/Janeway) · AI investment vs %-of-GDP requirement
+(3–6.5% of world GDP; $1.7T/yr breakeven floor; labor-compensation decomposition) ·
+depreciation → open-weights-as-durable-bequest (5-yr IT lives evaporate; weights
+persist, crash-hedged) · the vendor-financing precedent (Lucent/Nortel/Winstar) ·
+the circular-economy/consolidated-P&L reading. When these enter the paper, cite the
+report's own primary sources (Nordhaus NBER 10433; Perez 2002; Janeway 2012;
+Odlyzko 2003; Gartner; Goldman July 2026; PitchBook/Rolfes) alongside the companion
+report itself.
 
 ## Open questions for Matthew
 
@@ -299,6 +359,8 @@ direct-report count · food/housing waste numbers · TSMC customer-leverage prac
    the openness mechanism)? My lean: keep II.4 intact, one backward reference from V.3.
 3. The abstract: fully rewritten to the Cosmic AC frame, or a two-paragraph
    abstract (frame + evidence claim)?
-4. What is in the claude.ai share link (¶55)?
+4. ~~What is in the claude.ai share link (¶55)?~~ RESOLVED — it is the
+   capital-cycle dialogue; report now in repo as
+   assets-rents-socialized-buildout.pdf and digested into IV.3.
 5. V.4's food/housing/waste citation — do you have specific numbers in mind, or
    should I hunt the standard ones (USDA ~30-40% food waste etc.)?

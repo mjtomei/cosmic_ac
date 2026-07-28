@@ -24,6 +24,8 @@ soft-core validation second).
 | `the-performance-commons-figure*.png` | Figures 1–5. Fig 2 is the compact single-column version (direct labels, no legend box). |
 | `the-performance-commons-figures-and-tables.md` / `.pdf` | Companion "List of Figures and Tables." Keep in sync (md updated for T4; pdf regenerate pending). |
 | `dataflow-vs-heterogeneous-architecture.md` / `.pdf` | Companion technical report behind §2 / Figure 1. |
+| `assets-rents-socialized-buildout.pdf` | Companion report (Claude dialogue w/ Matthew, 2026-07-27): AI capital cycle — $27T attach vs ~$1.2T stock, rent/revenue requirements, telecom precedent, open-weights-as-bequest. Feeds Cosmic AC outline IV.3. |
+| `outline-cosmic-ac.md` | Working outline for the widened compute-commons paper (v1 + capital-cycle integration). Matthew iterating on structure/subtitle with ChatGPT in parallel. |
 | `performance-commons-handoff.zip` | Original handoff archive (historical; already extracted). |
 | `build/` | Figure + PDF pipeline (`bash build/build.sh`). |
 
