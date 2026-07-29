@@ -26,6 +26,7 @@ soft-core validation second).
 | `dataflow-vs-heterogeneous-architecture.md` / `.pdf` | Companion technical report behind §2 / Figure 1. |
 | `assets-rents-socialized-buildout.pdf` | Companion report (Claude dialogue w/ Matthew, 2026-07-27): AI capital cycle — $27T attach vs ~$1.2T stock, rent/revenue requirements, telecom precedent, open-weights-as-bequest. Feeds Cosmic AC outline IV.3. |
 | `outline-cosmic-ac.md` | Working outline for the widened compute-commons paper (v1 + capital-cycle integration). Matthew iterating on structure/subtitle with ChatGPT in parallel. |
+| `studies-and-work-log.md` | **Study register + dated work log** (S1–S14: done, committed, candidate) — start here for "what have we actually run, and what's next." |
 | `performance-commons-handoff.zip` | Original handoff archive (historical; already extracted). |
 | `build/` | Figure + PDF pipeline (`bash build/build.sh`). |
 
