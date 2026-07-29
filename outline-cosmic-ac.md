@@ -253,7 +253,21 @@ prey of openness — sharing becomes financially productive and therefore obliga
 machines that embody the will, knowledge, and interests of a collective more fully
 than any available human become the preferred point of interaction with those
 collectives — authority by fitness, not bequest, like the existing
-superintelligences; education becomes free to anyone judged competent and motivated
+superintelligences. **The office is a socket (Matthew, 2026-07-29).** What plugs
+into a figurehead's office has always been variable — the staffer, the
+speechwriter, the party line — so a machine intelligence in that slot is a
+substitution the system already performs and does not find strange. Empirical
+hook: a Canadian politician, Bill Oliver, appeared to read an AI prompt aloud
+during a legislative assembly sitting (news.com.au, 23 July 2026;
+youtu.be/wlYa8NV5k-U). Register note — this is *evidence the substitution is
+already underway covertly* (I.3's thesis), not a prediction, and it plays as
+comic rather than alarming, which is what the ⟨indirect⟩ rule wants.
+**VERIFY BEFORE USE:** the outlet hedges with "appears to"; provincial
+legislatures publish verbatim Hansard, so cite the primary record rather than
+the clip; lead with stronger institutional anchors (Porto Alegre's AI-drafted
+municipal ordinance, 2023; documented legislator LLM use for floor speeches) and
+keep the clip as colour. If Hansard does not support it, drop the anecdote — the
+argument does not depend on it. Continuing: education becomes free to anyone judged competent and motivated
 (DAOs, tinygrad — machine management solves the competence-coherence problem of
 noisy contributions; models already serve this role where intentions are clean and
 data is available). *(His outline; [IMAGINED] with real anchors — VERIFY Wenfeng
