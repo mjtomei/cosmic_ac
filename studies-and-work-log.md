@@ -235,24 +235,74 @@ volume the free tier (2,000 words/day) or one month of Professional ($65) is
 sufficient; the four- and five-figure corpus-sweep estimates below are no longer
 the plan, and are kept only to show what the naive approach would have cost.
 
-**Sampling strategy — decided 2026-07-29 (Matthew): run the full corpora
-locally first, then confirm hits with the Pangram API.** Correct call, and the
-reason is in Liang's own numbers: Tiers 1–3 are cheap enough that sampling buys
-nothing at the discovery stage, and their estimator's `1/√n` error bound means
-throwing away data directly widens the confidence interval on α. Sample only
-where cost is real.
+**Estimator — redesigned 2026-07-29 on Matthew's reframing.** He proposed
+treating the question as *"what is the probability that a given piece of text is
+flagged AI by Pangram?"* rather than fitting Liang's token-mixture model. That is
+a better fit here, and it is standard survey sampling rather than a bespoke
+likelihood.
 
-Matthew's adaptive idea — *small random sample, then expand into the same
-speaker or the same session* — is the right design for exactly two places:
-1. **The paid tier.** Pangram confirmation on segments the free tiers flag, then
-   expanding into that speaker's other speeches and that sitting's neighbours.
-   This is sequential sampling where each observation costs money, so it is the
-   textbook case for it.
-2. **Localisation, not estimation.** α is a corpus-level number; it cannot say
-   *who*. Expanding around a hit is how a corpus-level signal becomes a
-   speaker-level or session-level claim — and per-speaker sub-corpora are also
-   where the `1/√n` bound bites hardest, so the expansion is what makes those
-   estimates stable enough to report at all.
+*How Liang models the text, for the record (it is simpler than it sounds):* a
+document is a **set** of adjectives, not a bag of counts (deliberately — unique
+tokens grow sublinearly with length, so longer documents are not crushed;
+they cite the coupon-collector intuition). Per-token occurrence rates are just
+`p̂(t) = #documents containing t / #documents`, and the document likelihood is
+**independent Bernoulli across the vocabulary**:
+`P(x) = Π_{t∈x} p̂(t) · Π_{t∉x} (1 − p̂(t))`, and likewise `Q`. So it is naive
+Bayes over adjective presence, with sentences as the unit. The independence
+assumption is doing a lot of work, and the adjective vocabulary was tuned on peer
+reviews — two reasons not to copy it wholesale into legislative register.
+
+*Our estimator instead.* For a randomly drawn segment let `F = 1` if Pangram
+flags it, and let `π = P(F = 1)` in some stratum. Then:
+
+1. **`π̂ = k/n` is a binomial proportion.** Precision is exactly known — with
+   n = 1,000 and a true rate near 5%, the 95% interval is about [3.8%, 6.5%];
+   n = 2,000 gives [4.1%, 6.0%]. No modelling assumptions at all.
+2. **`π` is instrument-dependent, so correct it.** What we want is the true rate
+   `τ`, related by `π = τ·Se + (1−τ)·(1−Sp)` for detector sensitivity `Se` and
+   specificity `Sp`. Inverting gives the **Rogan–Gladen prevalence estimator**,
+   `τ̂ = (π̂ + Sp − 1)/(Se + Sp − 1)` — standard epidemiology for screening with
+   an imperfect test (Rogan & Gladen, *Am. J. Epidemiology*, 1978 — **verify the
+   handle before citing**).
+3. **Both nuisance parameters are measurable in-domain, cheaply.** The pre-2022
+   control *is* the estimate of `1 − Sp`, the false-positive rate on exactly this
+   register — so the negative control stops being a sanity check and becomes a
+   parameter. `Se` comes from generating known-AI legislative speech (Liang's `Q`
+   trick: prompt with the real bill text and speaking role) and scoring it.
+   Nothing here needs the vendor's published accuracy claims.
+4. **Watch the correction's leverage.** Variance is amplified by
+   `1/(Se + Sp − 1)`: about 1.06× at Se .95/Sp .99, 1.25× at Se .85/Sp .95. And
+   when `π̂ < 1 − Sp` the point estimate goes negative — truncate at zero and
+   report the interval, never the truncated point alone. At Se .90/Sp .97 a 3%
+   flag rate corrects to ≈0%, which is the honest and important answer: at low
+   true prevalence, a detector this good still cannot distinguish signal from its
+   own error floor.
+
+**Two-phase design — this is where Matthew's expand-from-samples idea becomes
+principled.** Phase 1: run the free local detectors (Binoculars et al.) over the
+*entire* corpus, giving every segment an auxiliary score. Phase 2: draw a
+stratified sample on that score × year × chamber and pay for Pangram only there.
+This is textbook two-phase sampling for stratification, and it has a property
+worth stating plainly: **the free detector does not need to be accurate — only
+correlated with the truth — to cut the variance of the paid estimate.** Its
+errors bias nothing, because stratum weights are known exactly from the full
+corpus. Expanding into a flagged speaker's other speeches is then the same
+mechanism applied at the speaker level, which is also the only way to get
+per-speaker estimates stable enough to report.
+
+*Also handle:* segments within a speech or sitting are correlated, so use
+cluster-robust variance (or the design effect `1 + (m−1)ρ`) rather than treating
+segments as independent. Sample whole speeches as clusters.
+
+*Cost at this design:* 2,000 segments of ~150 words is 300k words ≈ **$120** at
+the bulk API rate, and **fits inside a single $65 Professional month**. Even
+5,000 segments of 300 words (1.5M words) fits that month's allowance. The
+corpus-sweep pricing below is now purely historical.
+
+*Keep Liang as a free cross-check (Tier 2b).* Its estimator needs no Pangram at
+all, so agreement between two methods with unrelated failure modes — a
+token-mixture model and a corrected detector sample — is worth more than either
+alone.
 
 *Status:* not started. Remaining decisions: whether to write the estimator or
 adapt the authors' released code, and which model to use for the `Q` corpus
