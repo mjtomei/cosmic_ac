@@ -401,6 +401,30 @@ no planner could?" into four measurable requirements:
      Consequence for the text: **never write that drift is unformalized.** Write
      that it has been formalized four times, in four literatures, none of which
      is talking to the calculation debate — and that importing them is the work.
+
+     **Matthew's argument (2026-07-29): drift is the leg most likely to retire
+     itself, and that is a result, not a weakness.** Drift is a race between
+     re-solve time and rate of change. Re-solve time falls with hardware and
+     with everything else this paper documents; the rate of change is bounded
+     below by physical adjustment — Cockshott & Cottrell's point that the
+     market is a slow analog processor whose cycle time is set by how fast real
+     goods move. One side of that race improves exponentially and the other
+     does not. So from whatever point the intelligence exists to satisfy the
+     other three requirements, it is at most a few decades at current rates
+     before the computation is instant and in everyone's pocket. Two things
+     make this stronger than it first looks: (a) it unifies the section with
+     the paper's own thesis — the orders of magnitude §1 says are unrealized
+     are exactly what buys the latency; and (b) Papadimitriou & Yannakakis's
+     impossibility binds mechanisms that observe *only prices and excess
+     demands*, so it does not bind an intelligence with direct access to state
+     — the hardest-looking result on this leg is aimed at the market, not at
+     us. **Honest counter to state in the same breath:** the rate of change is
+     not exogenous. If everyone holds instant compute, the economy itself
+     speeds up — more actors revising more often — so the race may be closer
+     than the hardware curve alone suggests. That endogeneity is unformalized
+     by anyone and is the honest frontier of this leg; it is also the strongest
+     available reason the criterion is worth writing down rather than waved
+     away.
   5. **Three-component prior art, from the other side.** Cockshott & Cottrell's
      "Information and Economics: A Critique of Hayek" (RPE 16, 1997 — already in
      the reading directory) quantitatively combines bandwidth (an explicit
