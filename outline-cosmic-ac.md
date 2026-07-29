@@ -392,6 +392,19 @@ no planner could?" into four measurable requirements:
      was never one-shot solution but perpetual adaptation; the criterion is a
      latency race, not a puzzle).
 
+  **The opening move (verified against the scan, 2026-07-29): Samuelson already
+  conceded the machine.** §3 of the 1954 paper — titled "Impossibility of
+  decentralized spontaneous solution" — reads: "…the involved optimizing
+  equations that an omniscient calculating machine could theoretically solve if
+  fed the postulated functions. **No such machine now exists.**" And the same
+  page supplies two of the four legs: "if fed the postulated functions" is
+  bandwidth, and "it is in the selfish interest of each person to give false
+  signals" is elicitation — stated "in terms of communication theory," in 1954.
+  Hayek 1945 holds the other half (bandwidth-as-prices, and change). So the
+  criterion section opens as a seventy-year status report on Samuelson's
+  sentence, written by the two founding papers of the two clusters from opposite
+  politics. Notes: reading directory, `notes/samuelson-1954.md`.
+
   **Framing decided (Matthew, 2026-07-28): build on the literature, do not claim
   novelty.** "Given that we aren't publishing economists, more published work is
   better for us." So the criterion is presented as an ASSEMBLY of established
@@ -482,6 +495,23 @@ no planner could?" into four measurable requirements:
      by anyone and is the honest frontier of this leg; it is also the strongest
      available reason the criterion is worth writing down rather than waved
      away.
+
+  **Scope decision needed — the axiological gap (three sources converge,
+  2026-07-29).** Rey's "axiological layer" (who specifies the objective),
+  Gmeiner-Harper's conclusion (socialism becomes "a public choice issue, not an
+  economic calculation issue"), and Matthew's Samuelson notes (allocations
+  reshape the utility functions being optimized — meta-goods move the Pareto
+  frontier, and Pareto criteria are ill-defined under endogenous preferences:
+  von Weizsäcker 1971, Bowles 1998) all point at the same gap from three
+  directions. Proposed resolution: the criterion explicitly TAKES PREFERENCES AS
+  GIVEN and says so — its four legs answer Hayek's question, not the objective-
+  specification question, which is a real and different problem. The paper then
+  handles preference endogeneity where it natively lives: V.3/V.5's engineered-
+  utility-function thread (religion and morality as humanity's prior deliberate
+  preference engineering — Matthew's note), with the platform exploitation of
+  realized preferences as the covert present (I.3) and the fork — engineered
+  toward mutual valuation vs. captured by whoever holds the allocator — as the
+  live stake. This also honestly cabins what the criterion can promise.
   5. **Three-component prior art, from the other side.** Cockshott & Cottrell's
      "Information and Economics: A Critique of Hayek" (RPE 16, 1997 — already in
      the reading directory) quantitatively combines bandwidth (an explicit
