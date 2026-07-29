@@ -398,6 +398,7 @@ lab machines.
 | 2026-07-29 | Bill Oliver clip investigated | Canadian not Australian; transcript pulled; Hansard not yet published |
 | 2026-07-29 | **S10** designed and costed | ~$321/session at bulk API; $65 entry via Professional plan |
 | 2026-07-29 | **S10 pilot executed** — full pipeline on NB corpus + 2019 control; Falcon-pair Binoculars over 1.21M tokens; Qwen3-1.7B pair; Tier-1 regex | 509 tok/s e2e (GPU clock-capped 513/3003 MHz — see PILOT.md); 0 Tier-1 hits in 993k words; 2025–26 flag rates sit BELOW the 2019 false-positive floor → τ̂=0, rough bound ≤~0.5%; era drift in score distribution = the design finding |
+| 2026-07-29 | **S10 detector trials** (PILOT.md addendum) — Qwen3-8B third pair; synthetic Se corpus (Mistral-7B-Instruct, 40 speeches); 3 classifiers (HC3-RoBERTa, RADAR, GPT-2-era); Burrows-Delta authorship; Pangram batch built | **Falcon pair Se=1.0/0.975 at calibrated 5%/1% FPR — bigger ≠ better** (Qwen3-8B 0.825/0.25; classifiers ≤0.675); 6 detectors, none lifts 2025–26 above its floor → bound ≤~0.4% at measured Se; authorship attribution 54.5% vs 2.3% chance, Austin cross-era anomaly; `pangram_batch.jsonl` 265 segs/52.6k words ready |
 
 ---
 

@@ -1,0 +1,754 @@
+test,true,pred,delta,kind
+Hon. C. Chiasson#c0,Hon. C. Chiasson,Hon. Ms. Thériault,0.7254,loo-2025
+Hon. C. Chiasson#c1,Hon. C. Chiasson,Mr. Hogan,0.8609,loo-2025
+Hon. C. Chiasson#c2,Hon. C. Chiasson,Hon. C. Chiasson,0.72,loo-2025
+Hon. C. Johnson#c0,Hon. C. Johnson,Hon. C. Johnson,0.7163,loo-2025
+Hon. C. Johnson#c1,Hon. C. Johnson,Hon. C. Johnson,0.5779,loo-2025
+Hon. C. Johnson#c2,Hon. C. Johnson,Hon. C. Johnson,0.6417,loo-2025
+Hon. C. Johnson#c3,Hon. C. Johnson,Hon. C. Johnson,0.7164,loo-2025
+Hon. C. Johnson#c4,Hon. C. Johnson,Hon. C. Johnson,0.7673,loo-2025
+Hon. C. Johnson#c5,Hon. C. Johnson,Hon. C. Johnson,0.6356,loo-2025
+Hon. C. Johnson#c6,Hon. C. Johnson,Mr. Russell,0.5908,loo-2025
+Hon. C. Johnson#c7,Hon. C. Johnson,Hon. Ms. Boudreau,0.6526,loo-2025
+Hon. Mr. Dornan#c0,Hon. Mr. Dornan,Hon. Mr. Dornan,0.6273,loo-2025
+Hon. Mr. Dornan#c1,Hon. Mr. Dornan,Hon. Mr. Dornan,0.6602,loo-2025
+Hon. Mr. Dornan#c2,Hon. Mr. Dornan,Hon. Mr. Dornan,0.5731,loo-2025
+Hon. Mr. Dornan#c3,Hon. Mr. Dornan,Hon. Mr. Dornan,0.6653,loo-2025
+Hon. Mr. Dornan#c4,Hon. Mr. Dornan,Hon. Mr. Dornan,0.6913,loo-2025
+Hon. Mr. Dornan#c5,Hon. Mr. Dornan,Hon. Mr. Dornan,0.579,loo-2025
+Hon. Mr. Dornan#c6,Hon. Mr. Dornan,Hon. Mr. Dornan,0.6126,loo-2025
+Hon. Mr. Dornan#c7,Hon. Mr. Dornan,Hon. Ms. Miles,0.6933,loo-2025
+Hon. Mr. Dornan#c8,Hon. Mr. Dornan,Hon. Mr. Dornan,0.6558,loo-2025
+Hon. Mr. Dornan#c9,Hon. Mr. Dornan,Hon. Mr. Dornan,0.6529,loo-2025
+Hon. Mr. Dornan#c10,Hon. Mr. Dornan,Hon. Ms. Boudreau,0.6982,loo-2025
+Hon. Mr. Dornan#c11,Hon. Mr. Dornan,Mr. Russell,0.7482,loo-2025
+Hon. Mr. Dornan#c12,Hon. Mr. Dornan,Hon. Mr. Dornan,0.7427,loo-2025
+Hon. Mr. Dornan#c13,Hon. Mr. Dornan,Hon. Mr. Dornan,0.7488,loo-2025
+Hon. Mr. Dornan#c14,Hon. Mr. Dornan,Hon. Mr. McKee,0.7377,loo-2025
+Hon. Mr. Dornan#c15,Hon. Mr. Dornan,Hon. Mr. Dornan,0.6197,loo-2025
+Hon. Mr. Dornan#c16,Hon. Mr. Dornan,Hon. Mr. Dornan,0.7651,loo-2025
+Hon. Mr. Dornan#c17,Hon. Mr. Dornan,Hon. Mr. Dornan,0.5526,loo-2025
+Hon. Mr. Dornan#c18,Hon. Mr. Dornan,Hon. Mr. Dornan,0.6123,loo-2025
+Hon. Mr. Dornan#c19,Hon. Mr. Dornan,Hon. Mr. Dornan,0.6286,loo-2025
+Hon. Mr. D’Amours#c0,Hon. Mr. D’Amours,Hon. Ms. Thériault,0.6779,loo-2025
+Hon. Mr. D’Amours#c1,Hon. Mr. D’Amours,Hon. Mr. D’Amours,0.62,loo-2025
+Hon. Mr. D’Amours#c2,Hon. Mr. D’Amours,Hon. Mr. D’Amours,0.613,loo-2025
+Hon. Mr. D’Amours#c3,Hon. Mr. D’Amours,Hon. Mr. D’Amours,0.685,loo-2025
+Hon. Mr. D’Amours#c4,Hon. Mr. D’Amours,Hon. Mr. D’Amours,0.5822,loo-2025
+Hon. Mr. D’Amours#c5,Hon. Mr. D’Amours,Mr. Johnston,0.763,loo-2025
+Hon. Mr. Finnigan#c0,Hon. Mr. Finnigan,Mr. Russell,0.6412,loo-2025
+Hon. Mr. Finnigan#c1,Hon. Mr. Finnigan,Hon. Mr. Finnigan,0.7141,loo-2025
+Hon. Mr. Finnigan#c2,Hon. Mr. Finnigan,Hon. Mr. Finnigan,0.7466,loo-2025
+Hon. Mr. Finnigan#c3,Hon. Mr. Finnigan,Hon. Mr. Finnigan,0.7005,loo-2025
+Hon. Mr. Finnigan#c4,Hon. Mr. Finnigan,Mr. Ames,0.6997,loo-2025
+Hon. Mr. Gauvin#c0,Hon. Mr. Gauvin,Hon. Mr. Gauvin,0.775,loo-2025
+Hon. Mr. Gauvin#c1,Hon. Mr. Gauvin,Hon. Mr. Gauvin,0.707,loo-2025
+Hon. Mr. Gauvin#c2,Hon. Mr. Gauvin,Hon. Mr. Gauvin,0.6833,loo-2025
+Hon. Mr. Gauvin#c3,Hon. Mr. Gauvin,Hon. Mr. Gauvin,0.7261,loo-2025
+Hon. Mr. Gauvin#c4,Hon. Mr. Gauvin,Hon. Mr. Gauvin,0.6621,loo-2025
+Hon. Mr. Gauvin#c5,Hon. Mr. Gauvin,Hon. Mr. Gauvin,0.69,loo-2025
+Hon. Mr. Herron#c0,Hon. Mr. Herron,Hon. Ms. Boudreau,0.6369,loo-2025
+Hon. Mr. Herron#c1,Hon. Mr. Herron,Hon. Mr. Herron,0.5442,loo-2025
+Hon. Mr. Herron#c2,Hon. Mr. Herron,Hon. Mr. Herron,0.652,loo-2025
+Hon. Mr. Herron#c3,Hon. Mr. Herron,Hon. Mr. Herron,0.5928,loo-2025
+Hon. Mr. Herron#c4,Hon. Mr. Herron,Hon. Mr. Herron,0.7007,loo-2025
+Hon. Mr. Herron#c5,Hon. Mr. Herron,Hon. Mr. Herron,0.6637,loo-2025
+Hon. Mr. Herron#c6,Hon. Mr. Herron,Hon. Mr. Herron,0.6142,loo-2025
+Hon. Mr. Herron#c7,Hon. Mr. Herron,Hon. Mr. Herron,0.6758,loo-2025
+Hon. Mr. Herron#c8,Hon. Mr. Herron,Hon. Mr. Herron,0.6847,loo-2025
+Hon. Mr. Herron#c9,Hon. Mr. Herron,Hon. Ms. Boudreau,0.6058,loo-2025
+Hon. Mr. Herron#c10,Hon. Mr. Herron,Ms. Bockus,0.5844,loo-2025
+Hon. Mr. Hickey#c0,Hon. Mr. Hickey,Hon. Mr. Hickey,0.6761,loo-2025
+Hon. Mr. Hickey#c1,Hon. Mr. Hickey,Hon. Mr. Hickey,0.6708,loo-2025
+Hon. Mr. Hickey#c2,Hon. Mr. Hickey,Hon. Mr. Hickey,0.7411,loo-2025
+Hon. Mr. Hickey#c3,Hon. Mr. Hickey,Hon. Mr. Hickey,0.7916,loo-2025
+Hon. Mr. Hickey#c4,Hon. Mr. Hickey,Hon. Mr. Hickey,0.6335,loo-2025
+Hon. Mr. Hickey#c5,Hon. Mr. Hickey,Hon. Mr. Hickey,0.7329,loo-2025
+Hon. Mr. Hickey#c6,Hon. Mr. Hickey,Hon. Mr. Hickey,0.8221,loo-2025
+Hon. Mr. Hickey#c7,Hon. Mr. Hickey,Hon. Mr. Hickey,0.6837,loo-2025
+Hon. Mr. Hickey#c8,Hon. Mr. Hickey,Hon. Mr. Hickey,0.7099,loo-2025
+Hon. Mr. Hickey#c9,Hon. Mr. Hickey,Hon. Mr. Hickey,0.7567,loo-2025
+Hon. Mr. Hickey#c10,Hon. Mr. Hickey,Hon. Ms. Holt,0.7547,loo-2025
+Hon. Mr. Hickey#c11,Hon. Mr. Hickey,Hon. Mr. Legacy,0.7327,loo-2025
+Hon. Mr. Hickey#c12,Hon. Mr. Hickey,Hon. Mr. Hickey,0.7658,loo-2025
+Hon. Mr. Hickey#c13,Hon. Mr. Hickey,Hon. Mr. Hickey,0.7198,loo-2025
+Hon. Mr. Hickey#c14,Hon. Mr. Hickey,Hon. Mr. Hickey,0.7544,loo-2025
+Hon. Mr. Kennedy#c0,Hon. Mr. Kennedy,Hon. Ms. Holt,0.7371,loo-2025
+Hon. Mr. Kennedy#c1,Hon. Mr. Kennedy,Mr. Oliver,0.6785,loo-2025
+Hon. Mr. Kennedy#c2,Hon. Mr. Kennedy,Mr. Doucet,0.6338,loo-2025
+Hon. Mr. Kennedy#c3,Hon. Mr. Kennedy,Ms. Scott-Wallace,0.8337,loo-2025
+Hon. Mr. LePage#c0,Hon. Mr. LePage,Hon. Mr. LePage,0.6607,loo-2025
+Hon. Mr. LePage#c1,Hon. Mr. LePage,Hon. Mr. LePage,0.6471,loo-2025
+Hon. Mr. LePage#c2,Hon. Mr. LePage,Mr. Johnston,0.6122,loo-2025
+Hon. Mr. Legacy#c0,Hon. Mr. Legacy,Ms. Bockus,0.6868,loo-2025
+Hon. Mr. Legacy#c1,Hon. Mr. Legacy,Ms. M. Johnson,0.7613,loo-2025
+Hon. Mr. Legacy#c2,Hon. Mr. Legacy,Hon. Ms. Thériault,0.6782,loo-2025
+Hon. Mr. Legacy#c3,Hon. Mr. Legacy,Hon. Mr. Legacy,0.6,loo-2025
+Hon. Mr. Legacy#c4,Hon. Mr. Legacy,Mr. Austin,0.7652,loo-2025
+Hon. Mr. Legacy#c5,Hon. Mr. Legacy,Mr. Hogan,0.7379,loo-2025
+Hon. Mr. Legacy#c6,Hon. Mr. Legacy,Hon. Mr. Legacy,0.6505,loo-2025
+Hon. Mr. Legacy#c7,Hon. Mr. Legacy,Hon. Mr. Legacy,0.5852,loo-2025
+Hon. Mr. Legacy#c8,Hon. Mr. Legacy,Hon. Mr. Randall,0.7742,loo-2025
+Hon. Mr. Legacy#c9,Hon. Mr. Legacy,Hon. Ms. Holt,0.6356,loo-2025
+Hon. Mr. Legacy#c10,Hon. Mr. Legacy,Hon. Mr. Legacy,0.6572,loo-2025
+Hon. Mr. Legacy#c11,Hon. Mr. Legacy,Hon. Mr. Legacy,0.8215,loo-2025
+Hon. Mr. Legacy#c12,Hon. Mr. Legacy,Hon. Mr. Legacy,0.721,loo-2025
+Hon. Mr. Legacy#c13,Hon. Mr. Legacy,Ms. M. Johnson,0.6921,loo-2025
+Hon. Mr. Legacy#c14,Hon. Mr. Legacy,Mr. Hogan,0.801,loo-2025
+Hon. Mr. Legacy#c15,Hon. Mr. Legacy,Mr. Johnston,0.6019,loo-2025
+Hon. Mr. Legacy#c16,Hon. Mr. Legacy,Hon. Mr. Herron,0.6278,loo-2025
+Hon. Mr. Legacy#c17,Hon. Mr. Legacy,Ms. Vautour,0.6529,loo-2025
+Hon. Mr. Legacy#c18,Hon. Mr. Legacy,Hon. Mr. Legacy,0.5893,loo-2025
+Hon. Mr. McKee#c0,Hon. Mr. McKee,Hon. Mr. Dornan,0.6085,loo-2025
+Hon. Mr. McKee#c1,Hon. Mr. McKee,Hon. Mr. McKee,0.613,loo-2025
+Hon. Mr. McKee#c2,Hon. Mr. McKee,Hon. Mr. McKee,0.6899,loo-2025
+Hon. Mr. McKee#c3,Hon. Mr. McKee,Hon. Mr. McKee,0.5567,loo-2025
+Hon. Mr. McKee#c4,Hon. Mr. McKee,Hon. Mr. McKee,0.6679,loo-2025
+Hon. Mr. McKee#c5,Hon. Mr. McKee,Hon. Mr. McKee,0.7644,loo-2025
+Hon. Mr. McKee#c6,Hon. Mr. McKee,Hon. Mr. Randall,0.6845,loo-2025
+Hon. Mr. McKee#c7,Hon. Mr. McKee,Hon. Mr. McKee,0.6622,loo-2025
+Hon. Mr. McKee#c8,Hon. Mr. McKee,Hon. Mr. McKee,0.5968,loo-2025
+Hon. Mr. McKee#c9,Hon. Mr. McKee,Hon. Mr. D’Amours,0.7158,loo-2025
+Hon. Mr. McKee#c10,Hon. Mr. McKee,Hon. Mr. McKee,0.6243,loo-2025
+Hon. Mr. McKee#c11,Hon. Mr. McKee,Hon. Mr. McKee,0.5609,loo-2025
+Hon. Mr. McKee#c12,Hon. Mr. McKee,Hon. Mr. McKee,0.6224,loo-2025
+Hon. Mr. McKee#c13,Hon. Mr. McKee,Hon. Mr. McKee,0.6366,loo-2025
+Hon. Mr. McKee#c14,Hon. Mr. McKee,Hon. Mr. McKee,0.6232,loo-2025
+Hon. Mr. McKee#c15,Hon. Mr. McKee,Hon. Mr. McKee,0.7952,loo-2025
+Hon. Mr. Randall#c0,Hon. Mr. Randall,Hon. Mr. Randall,0.6758,loo-2025
+Hon. Mr. Randall#c1,Hon. Mr. Randall,Hon. Mr. Randall,0.645,loo-2025
+Hon. Mr. Randall#c2,Hon. Mr. Randall,Ms. M. Wilson,0.6778,loo-2025
+Hon. Mr. Randall#c3,Hon. Mr. Randall,Hon. Mr. Randall,0.6696,loo-2025
+Hon. Mr. Randall#c4,Hon. Mr. Randall,Hon. Mr. Randall,0.6304,loo-2025
+Hon. Mr. Randall#c5,Hon. Mr. Randall,Hon. Mr. D’Amours,0.5803,loo-2025
+Hon. Mr. Randall#c6,Hon. Mr. Randall,Hon. Mr. Randall,0.6194,loo-2025
+Hon. Ms. Boudreau#c0,Hon. Ms. Boudreau,Hon. Ms. Boudreau,0.5962,loo-2025
+Hon. Ms. Boudreau#c1,Hon. Ms. Boudreau,Mr. J. LeBlanc,0.6266,loo-2025
+Hon. Ms. Boudreau#c2,Hon. Ms. Boudreau,Hon. Ms. Boudreau,0.5513,loo-2025
+Hon. Ms. Boudreau#c3,Hon. Ms. Boudreau,Hon. Ms. Boudreau,0.6588,loo-2025
+Hon. Ms. Boudreau#c4,Hon. Ms. Boudreau,Hon. Ms. Boudreau,0.5498,loo-2025
+Hon. Ms. Boudreau#c5,Hon. Ms. Boudreau,Hon. Ms. Boudreau,0.5319,loo-2025
+Hon. Ms. Holt#c0,Hon. Ms. Holt,Hon. Ms. Holt,0.8825,loo-2025
+Hon. Ms. Holt#c1,Hon. Ms. Holt,Hon. Ms. Holt,0.6781,loo-2025
+Hon. Ms. Holt#c2,Hon. Ms. Holt,Hon. Ms. Holt,0.6992,loo-2025
+Hon. Ms. Holt#c3,Hon. Ms. Holt,Hon. Ms. Holt,0.5894,loo-2025
+Hon. Ms. Holt#c4,Hon. Ms. Holt,Hon. Ms. Holt,0.6829,loo-2025
+Hon. Ms. Holt#c5,Hon. Ms. Holt,Hon. Mr. Hickey,0.6861,loo-2025
+Hon. Ms. Holt#c6,Hon. Ms. Holt,Hon. Ms. Holt,0.7986,loo-2025
+Hon. Ms. Holt#c7,Hon. Ms. Holt,Hon. Ms. Holt,0.6675,loo-2025
+Hon. Ms. Holt#c8,Hon. Ms. Holt,Hon. Ms. Holt,0.7513,loo-2025
+Hon. Ms. Holt#c9,Hon. Ms. Holt,Hon. Ms. Holt,0.6542,loo-2025
+Hon. Ms. Holt#c10,Hon. Ms. Holt,Hon. Ms. Holt,0.7251,loo-2025
+Hon. Ms. Holt#c11,Hon. Ms. Holt,Mr. Johnston,0.6155,loo-2025
+Hon. Ms. Holt#c12,Hon. Ms. Holt,Mr. Doucet,0.6397,loo-2025
+Hon. Ms. Holt#c13,Hon. Ms. Holt,Hon. Ms. Holt,0.6289,loo-2025
+Hon. Ms. Holt#c14,Hon. Ms. Holt,Hon. Mr. McKee,0.7267,loo-2025
+Hon. Ms. Holt#c15,Hon. Ms. Holt,Mr. Johnston,0.6452,loo-2025
+Hon. Ms. Holt#c16,Hon. Ms. Holt,Mr. M. LeBlanc,0.6878,loo-2025
+Hon. Ms. Holt#c17,Hon. Ms. Holt,Hon. Mr. Legacy,0.8456,loo-2025
+Hon. Ms. Holt#c18,Hon. Ms. Holt,Hon. Ms. Holt,0.6179,loo-2025
+Hon. Ms. Holt#c19,Hon. Ms. Holt,Hon. Ms. Holt,0.6968,loo-2025
+Hon. Ms. Holt#c20,Hon. Ms. Holt,Hon. Mr. Dornan,0.7106,loo-2025
+Hon. Ms. Holt#c21,Hon. Ms. Holt,Hon. Ms. Holt,0.6587,loo-2025
+Hon. Ms. Holt#c22,Hon. Ms. Holt,Hon. Ms. Holt,0.7261,loo-2025
+Hon. Ms. Holt#c23,Hon. Ms. Holt,Hon. Ms. Holt,0.7005,loo-2025
+Hon. Ms. Holt#c24,Hon. Ms. Holt,Hon. Ms. Holt,0.6378,loo-2025
+Hon. Ms. Holt#c25,Hon. Ms. Holt,Hon. Ms. Holt,0.6634,loo-2025
+Hon. Ms. Holt#c26,Hon. Ms. Holt,Hon. Ms. Holt,0.677,loo-2025
+Hon. Ms. Holt#c27,Hon. Ms. Holt,Hon. Ms. Holt,0.7886,loo-2025
+Hon. Ms. Holt#c28,Hon. Ms. Holt,Hon. Ms. Holt,0.6559,loo-2025
+Hon. Ms. Holt#c29,Hon. Ms. Holt,Hon. Ms. Holt,0.7368,loo-2025
+Hon. Ms. Holt#c30,Hon. Ms. Holt,Hon. Ms. Holt,0.7188,loo-2025
+Hon. Ms. Holt#c31,Hon. Ms. Holt,Hon. Ms. Boudreau,0.6675,loo-2025
+Hon. Ms. Holt#c32,Hon. Ms. Holt,Hon. Ms. Holt,0.7044,loo-2025
+Hon. Ms. Miles#c0,Hon. Ms. Miles,Hon. Mr. Dornan,0.6396,loo-2025
+Hon. Ms. Miles#c1,Hon. Ms. Miles,Hon. Mr. McKee,0.6299,loo-2025
+Hon. Ms. Miles#c2,Hon. Ms. Miles,Hon. Ms. Miles,0.6449,loo-2025
+Hon. Ms. Miles#c3,Hon. Ms. Miles,Mr. Russell,0.7509,loo-2025
+Hon. Ms. Miles#c4,Hon. Ms. Miles,Hon. Ms. Miles,0.8191,loo-2025
+Hon. Ms. Miles#c5,Hon. Ms. Miles,Mr. Russell,0.6849,loo-2025
+Hon. Ms. Miles#c6,Hon. Ms. Miles,Hon. Mr. McKee,0.7423,loo-2025
+Hon. Ms. Miles#c7,Hon. Ms. Miles,Ms. Vautour,0.6517,loo-2025
+Hon. Ms. Miles#c8,Hon. Ms. Miles,Hon. C. Johnson,0.7321,loo-2025
+Hon. Ms. Thériault#c0,Hon. Ms. Thériault,Hon. Ms. Thériault,0.5148,loo-2025
+Hon. Ms. Thériault#c1,Hon. Ms. Thériault,Hon. Ms. Thériault,0.6205,loo-2025
+Hon. Ms. Thériault#c2,Hon. Ms. Thériault,Hon. Ms. Boudreau,0.5626,loo-2025
+Hon. Ms. Thériault#c3,Hon. Ms. Thériault,Hon. Ms. Thériault,0.5841,loo-2025
+Mr. Ames#c0,Mr. Ames,Mr. Cullins,0.7474,loo-2025
+Mr. Ames#c1,Mr. Ames,Mr. Ames,0.6139,loo-2025
+Mr. Ames#c2,Mr. Ames,Mr. Coon,0.5192,loo-2025
+Mr. Ames#c3,Mr. Ames,Ms. Bockus,0.6108,loo-2025
+Mr. Ames#c4,Mr. Ames,Mr. Coon,0.656,loo-2025
+Mr. Ames#c5,Mr. Ames,Mr. Russell,0.6567,loo-2025
+Mr. Ames#c6,Mr. Ames,Ms. Bockus,0.5646,loo-2025
+Mr. Ames#c7,Mr. Ames,Ms. Bockus,0.6386,loo-2025
+Mr. Ames#c8,Mr. Ames,Mr. Ames,0.697,loo-2025
+Mr. Ames#c9,Mr. Ames,Mr. Monahan,0.6859,loo-2025
+Mr. Austin#c0,Mr. Austin,Mr. Savoie,0.6448,loo-2025
+Mr. Austin#c1,Mr. Austin,Mr. Austin,0.6897,loo-2025
+Mr. Austin#c2,Mr. Austin,Mr. Austin,0.7092,loo-2025
+Mr. Austin#c3,Mr. Austin,Mr. Ames,0.6383,loo-2025
+Mr. Austin#c4,Mr. Austin,Mr. Austin,0.6531,loo-2025
+Mr. Austin#c5,Mr. Austin,Mr. Austin,0.7201,loo-2025
+Mr. Austin#c6,Mr. Austin,Mr. Austin,0.7168,loo-2025
+Mr. Austin#c7,Mr. Austin,Mr. Austin,0.6472,loo-2025
+Mr. Austin#c8,Mr. Austin,Mr. Austin,0.6225,loo-2025
+Mr. Austin#c9,Mr. Austin,Mr. Savoie,0.6184,loo-2025
+Mr. Austin#c10,Mr. Austin,Mr. Austin,0.6937,loo-2025
+Mr. Austin#c11,Mr. Austin,Mr. Austin,0.6962,loo-2025
+Mr. Austin#c12,Mr. Austin,Mr. Austin,0.7313,loo-2025
+Mr. Austin#c13,Mr. Austin,Mr. Austin,0.7541,loo-2025
+Mr. Austin#c14,Mr. Austin,Mr. Austin,0.7661,loo-2025
+Mr. Austin#c15,Mr. Austin,Mr. Austin,0.7931,loo-2025
+Mr. Austin#c16,Mr. Austin,Mr. Austin,0.7645,loo-2025
+Mr. Austin#c17,Mr. Austin,Mr. Austin,0.6257,loo-2025
+Mr. Austin#c18,Mr. Austin,Mr. Austin,0.7123,loo-2025
+Mr. Austin#c19,Mr. Austin,Mr. Austin,0.6221,loo-2025
+Mr. Austin#c20,Mr. Austin,Mr. Coon,0.6656,loo-2025
+Mr. Austin#c21,Mr. Austin,Mr. Austin,0.6374,loo-2025
+Mr. Austin#c22,Mr. Austin,Mr. Austin,0.7268,loo-2025
+Mr. Austin#c23,Mr. Austin,Mr. Austin,0.7357,loo-2025
+Mr. Austin#c24,Mr. Austin,Mr. Austin,0.6668,loo-2025
+Mr. Austin#c25,Mr. Austin,Mr. Austin,0.8475,loo-2025
+Mr. Austin#c26,Mr. Austin,Mr. Austin,0.8101,loo-2025
+Mr. Austin#c27,Mr. Austin,Mr. Austin,0.7599,loo-2025
+Mr. Austin#c28,Mr. Austin,Mr. Austin,0.6621,loo-2025
+Mr. Austin#c29,Mr. Austin,Ms. M. Wilson,0.6595,loo-2025
+Mr. Austin#c30,Mr. Austin,Mr. Monahan,0.7166,loo-2025
+Mr. Austin#c31,Mr. Austin,Mr. Coon,0.6904,loo-2025
+Mr. Austin#c32,Mr. Austin,Mr. Austin,0.707,loo-2025
+Mr. Austin#c33,Mr. Austin,Mr. Austin,0.6974,loo-2025
+Mr. Austin#c34,Mr. Austin,Mr. Austin,0.7617,loo-2025
+Mr. Austin#c35,Mr. Austin,Mr. Austin,0.6544,loo-2025
+Mr. Austin#c36,Mr. Austin,Ms. Bockus,0.6392,loo-2025
+Mr. Austin#c37,Mr. Austin,Mr. Austin,0.7136,loo-2025
+Mr. Austin#c38,Mr. Austin,Mr. Austin,0.7907,loo-2025
+Mr. Bourque#c0,Mr. Bourque,Mr. Bourque,0.6191,loo-2025
+Mr. Bourque#c1,Mr. Bourque,Mr. Bourque,0.8219,loo-2025
+Mr. Bourque#c2,Mr. Bourque,Mr. Bourque,0.7667,loo-2025
+Mr. Bourque#c3,Mr. Bourque,Mr. Bourque,0.6897,loo-2025
+Mr. Bourque#c4,Mr. Bourque,Mr. Bourque,0.6695,loo-2025
+Mr. Bourque#c5,Mr. Bourque,Mr. Bourque,0.7888,loo-2025
+Mr. Bourque#c6,Mr. Bourque,Hon. Ms. Holt,0.6979,loo-2025
+Mr. Bourque#c7,Mr. Bourque,Mr. Johnston,0.608,loo-2025
+Mr. Bourque#c8,Mr. Bourque,Mr. Bourque,0.7016,loo-2025
+Mr. Bourque#c9,Mr. Bourque,Mr. Bourque,0.6808,loo-2025
+Mr. Bourque#c10,Mr. Bourque,Mr. Bourque,0.6734,loo-2025
+Mr. Bourque#c11,Mr. Bourque,Mr. Johnston,0.7242,loo-2025
+Mr. Bourque#c12,Mr. Bourque,Mr. Bourque,0.6833,loo-2025
+Mr. Coon#c0,Mr. Coon,Mr. Coon,0.6976,loo-2025
+Mr. Coon#c1,Mr. Coon,Mr. Coon,0.6817,loo-2025
+Mr. Coon#c2,Mr. Coon,Mr. Coon,0.8515,loo-2025
+Mr. Coon#c3,Mr. Coon,Mr. Coon,0.6088,loo-2025
+Mr. Coon#c4,Mr. Coon,Mr. Cullins,0.6557,loo-2025
+Mr. Coon#c5,Mr. Coon,Mr. Coon,0.6291,loo-2025
+Mr. Coon#c6,Mr. Coon,Mr. Coon,0.7245,loo-2025
+Mr. Coon#c7,Mr. Coon,Mr. Austin,0.684,loo-2025
+Mr. Coon#c8,Mr. Coon,Mr. Coon,0.6327,loo-2025
+Mr. Coon#c9,Mr. Coon,Mr. Weir,0.7535,loo-2025
+Mr. Coon#c10,Mr. Coon,Ms. M. Johnson,0.6514,loo-2025
+Mr. Coon#c11,Mr. Coon,Mr. Coon,0.7088,loo-2025
+Mr. Coon#c12,Mr. Coon,Mr. Coon,0.551,loo-2025
+Mr. Coon#c13,Mr. Coon,Mr. Coon,0.687,loo-2025
+Mr. Coon#c14,Mr. Coon,Mr. Coon,0.574,loo-2025
+Mr. Coon#c15,Mr. Coon,Mr. Austin,0.7461,loo-2025
+Mr. Coon#c16,Mr. Coon,Mr. Weir,0.7918,loo-2025
+Mr. Coon#c17,Mr. Coon,Mr. Oliver,0.6034,loo-2025
+Mr. Coon#c18,Mr. Coon,Mr. Doucet,0.6765,loo-2025
+Mr. Coon#c19,Mr. Coon,Mr. Coon,0.6093,loo-2025
+Mr. Coon#c20,Mr. Coon,Mr. Coon,0.5565,loo-2025
+Mr. Coon#c21,Mr. Coon,Hon. Mr. Legacy,0.7054,loo-2025
+Mr. Coon#c22,Mr. Coon,Mr. Coon,0.6279,loo-2025
+Mr. Coon#c23,Mr. Coon,Mr. Coon,0.5701,loo-2025
+Mr. Coon#c24,Mr. Coon,Mr. Coon,0.5782,loo-2025
+Mr. Coon#c25,Mr. Coon,Mr. Coon,0.6533,loo-2025
+Mr. Coon#c26,Mr. Coon,Mr. Coon,0.5917,loo-2025
+Mr. Coon#c27,Mr. Coon,Mr. Coon,0.5286,loo-2025
+Mr. Coon#c28,Mr. Coon,Mr. Coon,0.6899,loo-2025
+Mr. Coon#c29,Mr. Coon,Mr. Coon,0.6397,loo-2025
+Mr. Coon#c30,Mr. Coon,Mr. Johnston,0.6257,loo-2025
+Mr. Coon#c31,Mr. Coon,Ms. Bockus,0.5822,loo-2025
+Mr. Coon#c32,Mr. Coon,Mr. Coon,0.5911,loo-2025
+Mr. Coon#c33,Mr. Coon,Mr. Coon,0.6696,loo-2025
+Mr. Coon#c34,Mr. Coon,Mr. Russell,0.6945,loo-2025
+Mr. Coon#c35,Mr. Coon,Ms. Bockus,0.6369,loo-2025
+Mr. Coon#c36,Mr. Coon,Mr. Coon,0.6506,loo-2025
+Mr. Coon#c37,Mr. Coon,Mr. Coon,0.5983,loo-2025
+Mr. Coon#c38,Mr. Coon,Mr. Johnston,0.7149,loo-2025
+Mr. Coon#c39,Mr. Coon,Mr. Coon,0.6089,loo-2025
+Mr. Coon#c40,Mr. Coon,Mr. Coon,0.5704,loo-2025
+Mr. Coon#c41,Mr. Coon,Mr. Coon,0.5781,loo-2025
+Mr. Coon#c42,Mr. Coon,Ms. Bockus,0.6369,loo-2025
+Mr. Coon#c43,Mr. Coon,Mr. Coon,0.6389,loo-2025
+Mr. Coon#c44,Mr. Coon,Mr. Cullins,0.534,loo-2025
+Mr. Coon#c45,Mr. Coon,Ms. M. Wilson,0.6402,loo-2025
+Mr. Coon#c46,Mr. Coon,Mr. Ames,0.6407,loo-2025
+Mr. Coon#c47,Mr. Coon,Mr. M. LeBlanc,0.7472,loo-2025
+Mr. Coon#c48,Mr. Coon,Mr. Cullins,0.5934,loo-2025
+Mr. Coon#c49,Mr. Coon,Mr. Coon,0.6431,loo-2025
+Mr. Coon#c50,Mr. Coon,Ms. Mitton,0.5748,loo-2025
+Mr. Coon#c51,Mr. Coon,Mr. Coon,0.6844,loo-2025
+Mr. Coon#c52,Mr. Coon,Mr. Bourque,0.6546,loo-2025
+Mr. Coon#c53,Mr. Coon,Mr. Austin,0.7819,loo-2025
+Mr. Coon#c54,Mr. Coon,Mr. Coon,0.6752,loo-2025
+Mr. Coon#c55,Mr. Coon,Mr. Coon,0.6605,loo-2025
+Mr. Coon#c56,Mr. Coon,Mr. Coon,0.7233,loo-2025
+Mr. Coon#c57,Mr. Coon,Mr. Hogan,0.6762,loo-2025
+Mr. Cullins#c0,Mr. Cullins,Mr. Cullins,0.6414,loo-2025
+Mr. Cullins#c1,Mr. Cullins,Mr. Russell,0.7829,loo-2025
+Mr. Cullins#c2,Mr. Cullins,Mr. Johnston,0.6403,loo-2025
+Mr. Cullins#c3,Mr. Cullins,Mr. Ames,0.6616,loo-2025
+Mr. Cullins#c4,Mr. Cullins,Mr. Cullins,0.6809,loo-2025
+Mr. Cullins#c5,Mr. Cullins,Ms. Bockus,0.6222,loo-2025
+Mr. Cullins#c6,Mr. Cullins,Mr. Monahan,0.5771,loo-2025
+Mr. Cullins#c7,Mr. Cullins,Mr. Monahan,0.6261,loo-2025
+Mr. Cullins#c8,Mr. Cullins,Mr. Monahan,0.6516,loo-2025
+Mr. Doucet#c0,Mr. Doucet,Mr. Doucet,0.6966,loo-2025
+Mr. Doucet#c1,Mr. Doucet,Mr. Bourque,0.6415,loo-2025
+Mr. Doucet#c2,Mr. Doucet,Mr. Doucet,0.5609,loo-2025
+Mr. Doucet#c3,Mr. Doucet,Mr. Doucet,0.6815,loo-2025
+Mr. Doucet#c4,Mr. Doucet,Mr. Doucet,0.6486,loo-2025
+Mr. Doucet#c5,Mr. Doucet,Ms. Bockus,0.662,loo-2025
+Mr. Doucet#c6,Mr. Doucet,Mr. Russell,0.5636,loo-2025
+Mr. Doucet#c7,Mr. Doucet,Mr. Doucet,0.5841,loo-2025
+Mr. Doucet#c8,Mr. Doucet,Mr. J. LeBlanc,0.7483,loo-2025
+Mr. Doucet#c9,Mr. Doucet,Mr. Doucet,0.6294,loo-2025
+Mr. Doucet#c10,Mr. Doucet,Ms. Vautour,0.6103,loo-2025
+Mr. Doucet#c11,Mr. Doucet,Mr. Doucet,0.6262,loo-2025
+Mr. Doucet#c12,Mr. Doucet,Ms. M. Wilson,0.7522,loo-2025
+Mr. Hogan#c0,Mr. Hogan,Mr. Hogan,0.7423,loo-2025
+Mr. Hogan#c1,Mr. Hogan,Mr. Hogan,0.7432,loo-2025
+Mr. Hogan#c2,Mr. Hogan,Mr. Weir,0.7936,loo-2025
+Mr. Hogan#c3,Mr. Hogan,Mr. Hogan,0.6068,loo-2025
+Mr. Hogan#c4,Mr. Hogan,Mr. Hogan,0.6886,loo-2025
+Mr. Hogan#c5,Mr. Hogan,Mr. Hogan,0.7532,loo-2025
+Mr. Hogan#c6,Mr. Hogan,Mr. Hogan,0.7445,loo-2025
+Mr. Hogan#c7,Mr. Hogan,Ms. Scott-Wallace,0.6749,loo-2025
+Mr. Hogan#c8,Mr. Hogan,Mr. Hogan,0.6621,loo-2025
+Mr. Hogan#c9,Mr. Hogan,Mr. Hogan,0.6604,loo-2025
+Mr. Hogan#c10,Mr. Hogan,Mr. Hogan,0.7965,loo-2025
+Mr. Hogan#c11,Mr. Hogan,Ms. M. Johnson,0.6913,loo-2025
+Mr. Hogan#c12,Mr. Hogan,Mr. Hogan,0.6975,loo-2025
+Mr. Hogan#c13,Mr. Hogan,Mr. Hogan,0.6867,loo-2025
+Mr. Hogan#c14,Mr. Hogan,Mr. Hogan,0.7699,loo-2025
+Mr. Hogan#c15,Mr. Hogan,Mr. Hogan,0.7153,loo-2025
+Mr. Hogan#c16,Mr. Hogan,Mr. Coon,0.6638,loo-2025
+Mr. Hogan#c17,Mr. Hogan,Mr. Hogan,0.6608,loo-2025
+Mr. Hogan#c18,Mr. Hogan,Mr. Austin,0.7524,loo-2025
+Mr. Hogan#c19,Mr. Hogan,Ms. Mitton,0.6494,loo-2025
+Mr. Hogan#c20,Mr. Hogan,Mr. Coon,0.6019,loo-2025
+Mr. Hogan#c21,Mr. Hogan,Mr. Hogan,0.7495,loo-2025
+Mr. Hogan#c22,Mr. Hogan,Mr. Hogan,0.7009,loo-2025
+Mr. Hogan#c23,Mr. Hogan,Mr. Hogan,0.8032,loo-2025
+Mr. Hogan#c24,Mr. Hogan,Mr. Hogan,0.7221,loo-2025
+Mr. Hogan#c25,Mr. Hogan,Ms. Bockus,0.693,loo-2025
+Mr. Hogan#c26,Mr. Hogan,Mr. Hogan,0.6275,loo-2025
+Mr. Hogan#c27,Mr. Hogan,Mr. Hogan,0.7765,loo-2025
+Mr. Hogan#c28,Mr. Hogan,Mr. Hogan,1.0076,loo-2025
+Mr. Hogan#c29,Mr. Hogan,Mr. Hogan,0.7012,loo-2025
+Mr. Hogan#c30,Mr. Hogan,Mr. Hogan,0.6626,loo-2025
+Mr. Hogan#c31,Mr. Hogan,Mr. Lee,0.7535,loo-2025
+Mr. Hogan#c32,Mr. Hogan,Mr. Hogan,0.6599,loo-2025
+Mr. Hogan#c33,Mr. Hogan,Mr. Hogan,0.6837,loo-2025
+Mr. Hogan#c34,Mr. Hogan,Mr. Hogan,0.7087,loo-2025
+Mr. J. LeBlanc#c0,Mr. J. LeBlanc,Mr. J. LeBlanc,0.6871,loo-2025
+Mr. J. LeBlanc#c1,Mr. J. LeBlanc,Mr. Bourque,0.8128,loo-2025
+Mr. J. LeBlanc#c2,Mr. J. LeBlanc,Mr. Robichaud,0.7468,loo-2025
+Mr. J. LeBlanc#c3,Mr. J. LeBlanc,Mr. J. LeBlanc,0.6726,loo-2025
+Mr. J. LeBlanc#c4,Mr. J. LeBlanc,Mr. J. LeBlanc,0.6159,loo-2025
+Mr. J. LeBlanc#c5,Mr. J. LeBlanc,Hon. Mr. Randall,0.6457,loo-2025
+Mr. J. LeBlanc#c6,Mr. J. LeBlanc,Hon. Mr. Randall,0.6455,loo-2025
+Mr. J. LeBlanc#c7,Mr. J. LeBlanc,Ms. Bockus,0.6819,loo-2025
+Mr. J. LeBlanc#c8,Mr. J. LeBlanc,Hon. Mr. D’Amours,0.6049,loo-2025
+Mr. J. LeBlanc#c9,Mr. J. LeBlanc,Ms. Vautour,0.5916,loo-2025
+Mr. J. LeBlanc#c10,Mr. J. LeBlanc,Mr. Monahan,0.722,loo-2025
+Mr. Johnston#c0,Mr. Johnston,Mr. Russell,0.655,loo-2025
+Mr. Johnston#c1,Mr. Johnston,Mr. Doucet,0.5738,loo-2025
+Mr. Johnston#c2,Mr. Johnston,Mr. Johnston,0.5558,loo-2025
+Mr. Johnston#c3,Mr. Johnston,Mr. Johnston,0.7208,loo-2025
+Mr. Johnston#c4,Mr. Johnston,Ms. M. Johnson,0.6035,loo-2025
+Mr. Johnston#c5,Mr. Johnston,Mr. Russell,0.622,loo-2025
+Mr. Lee#c0,Mr. Lee,Mr. Lee,0.6663,loo-2025
+Mr. Lee#c1,Mr. Lee,Mr. Lee,0.6153,loo-2025
+Mr. Lee#c2,Mr. Lee,Mr. Hogan,0.7076,loo-2025
+Mr. Lee#c3,Mr. Lee,Mr. Lee,0.6809,loo-2025
+Mr. Lee#c4,Mr. Lee,Mr. Lee,0.6672,loo-2025
+Mr. Lee#c5,Mr. Lee,Mr. Lee,0.6636,loo-2025
+Mr. Lee#c6,Mr. Lee,Mr. Lee,0.8634,loo-2025
+Mr. Lee#c7,Mr. Lee,Mr. Lee,0.6201,loo-2025
+Mr. Lee#c8,Mr. Lee,Mr. Lee,0.7039,loo-2025
+Mr. Lee#c9,Mr. Lee,Mr. Lee,0.5939,loo-2025
+Mr. Lee#c10,Mr. Lee,Hon. Mr. McKee,0.7182,loo-2025
+Mr. Lee#c11,Mr. Lee,Mr. Lee,0.6621,loo-2025
+Mr. Lee#c12,Mr. Lee,Mr. Lee,0.6615,loo-2025
+Mr. Lee#c13,Mr. Lee,Ms. Bockus,0.6245,loo-2025
+Mr. Lee#c14,Mr. Lee,Mr. Ames,0.6586,loo-2025
+Mr. Lee#c15,Mr. Lee,Ms. Bockus,0.6969,loo-2025
+Mr. Lee#c16,Mr. Lee,Ms. Vautour,0.6678,loo-2025
+Mr. Lee#c17,Mr. Lee,Mr. J. LeBlanc,0.7163,loo-2025
+Mr. Lee#c18,Mr. Lee,Mr. Monahan,0.7458,loo-2025
+Mr. Lee#c19,Mr. Lee,Mr. Lee,0.6799,loo-2025
+Mr. M. LeBlanc#c0,Mr. M. LeBlanc,Mr. Doucet,0.6838,loo-2025
+Mr. M. LeBlanc#c1,Mr. M. LeBlanc,Mr. Monahan,0.9351,loo-2025
+Mr. M. LeBlanc#c2,Mr. M. LeBlanc,Mr. M. LeBlanc,0.6835,loo-2025
+Mr. M. LeBlanc#c3,Mr. M. LeBlanc,Hon. Mr. Legacy,0.7381,loo-2025
+Mr. M. LeBlanc#c4,Mr. M. LeBlanc,Mr. Monahan,0.7562,loo-2025
+Mr. M. LeBlanc#c5,Mr. M. LeBlanc,Mr. Lee,0.7154,loo-2025
+Mr. M. LeBlanc#c6,Mr. M. LeBlanc,Mr. M. LeBlanc,0.5525,loo-2025
+Mr. M. LeBlanc#c7,Mr. M. LeBlanc,Mr. Ames,0.7356,loo-2025
+Mr. M. LeBlanc#c8,Mr. M. LeBlanc,Mr. Ames,0.5819,loo-2025
+Mr. M. LeBlanc#c9,Mr. M. LeBlanc,Mr. Russell,0.7591,loo-2025
+Mr. M. LeBlanc#c10,Mr. M. LeBlanc,Mr. M. LeBlanc,0.6764,loo-2025
+Mr. M. LeBlanc#c11,Mr. M. LeBlanc,Mr. Monahan,0.7197,loo-2025
+Mr. M. LeBlanc#c12,Mr. M. LeBlanc,Mr. M. LeBlanc,0.9457,loo-2025
+Mr. M. LeBlanc#c13,Mr. M. LeBlanc,Mr. M. LeBlanc,0.6758,loo-2025
+Mr. M. LeBlanc#c14,Mr. M. LeBlanc,Mr. M. LeBlanc,0.6217,loo-2025
+Mr. M. LeBlanc#c15,Mr. M. LeBlanc,Mr. Ames,0.6644,loo-2025
+Mr. M. LeBlanc#c16,Mr. M. LeBlanc,Hon. Mr. McKee,0.6714,loo-2025
+Mr. M. LeBlanc#c17,Mr. M. LeBlanc,Hon. Mr. McKee,0.7405,loo-2025
+Mr. M. LeBlanc#c18,Mr. M. LeBlanc,Hon. Mr. Herron,0.7025,loo-2025
+Mr. M. LeBlanc#c19,Mr. M. LeBlanc,Ms. Bockus,0.8529,loo-2025
+Mr. M. LeBlanc#c20,Mr. M. LeBlanc,Mr. Coon,0.6396,loo-2025
+Mr. M. LeBlanc#c21,Mr. M. LeBlanc,Hon. Mr. Hickey,0.7647,loo-2025
+Mr. M. LeBlanc#c22,Mr. M. LeBlanc,Hon. Mr. McKee,0.7184,loo-2025
+Mr. M. LeBlanc#c23,Mr. M. LeBlanc,Mr. M. LeBlanc,0.6251,loo-2025
+Mr. M. LeBlanc#c24,Mr. M. LeBlanc,Ms. M. Wilson,0.794,loo-2025
+Mr. M. LeBlanc#c25,Mr. M. LeBlanc,Mr. M. LeBlanc,0.6811,loo-2025
+Mr. M. LeBlanc#c26,Mr. M. LeBlanc,Mr. Doucet,0.6167,loo-2025
+Mr. M. LeBlanc#c27,Mr. M. LeBlanc,Mr. Monahan,0.6672,loo-2025
+Mr. M. LeBlanc#c28,Mr. M. LeBlanc,Mr. Monahan,0.7146,loo-2025
+Mr. M. LeBlanc#c29,Mr. M. LeBlanc,Mr. Monahan,0.6511,loo-2025
+Mr. M. LeBlanc#c30,Mr. M. LeBlanc,Mr. Monahan,0.6904,loo-2025
+Mr. M. LeBlanc#c31,Mr. M. LeBlanc,Mr. Monahan,0.6966,loo-2025
+Mr. M. LeBlanc#c32,Mr. M. LeBlanc,Mr. Monahan,0.6235,loo-2025
+Mr. M. LeBlanc#c33,Mr. M. LeBlanc,Mr. Monahan,0.7021,loo-2025
+Mr. M. LeBlanc#c34,Mr. M. LeBlanc,Mr. Monahan,0.6937,loo-2025
+Mr. M. LeBlanc#c35,Mr. M. LeBlanc,Mr. Monahan,0.6485,loo-2025
+Mr. M. LeBlanc#c36,Mr. M. LeBlanc,Ms. Mitton,0.6586,loo-2025
+Mr. M. LeBlanc#c37,Mr. M. LeBlanc,Ms. M. Wilson,0.6653,loo-2025
+Mr. M. LeBlanc#c38,Mr. M. LeBlanc,Hon. Ms. Holt,0.7026,loo-2025
+Mr. M. LeBlanc#c39,Mr. M. LeBlanc,Hon. Mr. McKee,0.7629,loo-2025
+Mr. M. LeBlanc#c40,Mr. M. LeBlanc,Hon. Mr. Legacy,0.6987,loo-2025
+Mr. M. LeBlanc#c41,Mr. M. LeBlanc,Ms. M. Wilson,0.687,loo-2025
+Mr. M. LeBlanc#c42,Mr. M. LeBlanc,Mr. Cullins,0.6781,loo-2025
+Mr. M. LeBlanc#c43,Mr. M. LeBlanc,Mr. Ames,0.7152,loo-2025
+Mr. M. LeBlanc#c44,Mr. M. LeBlanc,Ms. Bockus,0.6486,loo-2025
+Mr. M. LeBlanc#c45,Mr. M. LeBlanc,Ms. M. Wilson,0.7223,loo-2025
+Mr. M. LeBlanc#c46,Mr. M. LeBlanc,Ms. M. Johnson,0.6747,loo-2025
+Mr. M. LeBlanc#c47,Mr. M. LeBlanc,Mr. Monahan,0.9775,loo-2025
+Mr. M. LeBlanc#c48,Mr. M. LeBlanc,Ms. M. Wilson,0.6333,loo-2025
+Mr. Monahan#c0,Mr. Monahan,Mr. Russell,0.6076,loo-2025
+Mr. Monahan#c1,Mr. Monahan,Ms. M. Wilson,0.7656,loo-2025
+Mr. Monahan#c2,Mr. Monahan,Mr. Monahan,0.695,loo-2025
+Mr. Monahan#c3,Mr. Monahan,Hon. Mr. Legacy,0.659,loo-2025
+Mr. Monahan#c4,Mr. Monahan,Mr. Monahan,0.5511,loo-2025
+Mr. Monahan#c5,Mr. Monahan,Mr. Monahan,0.6805,loo-2025
+Mr. Monahan#c6,Mr. Monahan,Mr. Monahan,0.6228,loo-2025
+Mr. Monahan#c7,Mr. Monahan,Mr. Monahan,0.6793,loo-2025
+Mr. Monahan#c8,Mr. Monahan,Mr. Monahan,0.5753,loo-2025
+Mr. Monahan#c9,Mr. Monahan,Mr. Monahan,0.5659,loo-2025
+Mr. Monahan#c10,Mr. Monahan,Mr. Monahan,0.6189,loo-2025
+Mr. Monahan#c11,Mr. Monahan,Mr. Monahan,0.6436,loo-2025
+Mr. Monahan#c12,Mr. Monahan,Mr. Cullins,0.647,loo-2025
+Mr. Monahan#c13,Mr. Monahan,Mr. Monahan,0.6743,loo-2025
+Mr. Monahan#c14,Mr. Monahan,Mr. Monahan,0.6205,loo-2025
+Mr. Monahan#c15,Mr. Monahan,Mr. Monahan,0.6039,loo-2025
+Mr. Monahan#c16,Mr. Monahan,Mr. Monahan,0.6423,loo-2025
+Mr. Monahan#c17,Mr. Monahan,Mr. Monahan,0.6359,loo-2025
+Mr. Monahan#c18,Mr. Monahan,Hon. Mr. Legacy,0.6519,loo-2025
+Mr. Monahan#c19,Mr. Monahan,Ms. Bockus,0.5819,loo-2025
+Mr. Monahan#c20,Mr. Monahan,Mr. Monahan,0.6734,loo-2025
+Mr. Monahan#c21,Mr. Monahan,Ms. M. Wilson,0.6315,loo-2025
+Mr. Monahan#c22,Mr. Monahan,Ms. M. Wilson,0.6815,loo-2025
+Mr. Monahan#c23,Mr. Monahan,Mr. Monahan,0.6556,loo-2025
+Mr. Monahan#c24,Mr. Monahan,Mr. Monahan,0.6401,loo-2025
+Mr. Monahan#c25,Mr. Monahan,Mr. Weir,0.714,loo-2025
+Mr. Monahan#c26,Mr. Monahan,Ms. Mitton,0.6454,loo-2025
+Mr. Oliver#c0,Mr. Oliver,Mr. Coon,0.6173,loo-2025
+Mr. Oliver#c1,Mr. Oliver,Ms. M. Johnson,0.5633,loo-2025
+Mr. Oliver#c2,Mr. Oliver,Ms. M. Wilson,0.6428,loo-2025
+Mr. Oliver#c3,Mr. Oliver,Mr. Coon,0.7711,loo-2025
+Mr. Oliver#c4,Mr. Oliver,Ms. M. Johnson,0.6779,loo-2025
+Mr. Oliver#c5,Mr. Oliver,Ms. M. Johnson,0.6507,loo-2025
+Mr. Oliver#c6,Mr. Oliver,Ms. Scott-Wallace,0.6919,loo-2025
+Mr. Oliver#c7,Mr. Oliver,Mr. Coon,0.6237,loo-2025
+Mr. Robichaud#c0,Mr. Robichaud,Mr. Russell,0.5988,loo-2025
+Mr. Robichaud#c1,Mr. Robichaud,Mr. Robichaud,0.6955,loo-2025
+Mr. Robichaud#c2,Mr. Robichaud,Mr. Robichaud,0.6956,loo-2025
+Mr. Robichaud#c3,Mr. Robichaud,Mr. Robichaud,0.8462,loo-2025
+Mr. Robichaud#c4,Mr. Robichaud,Mr. Robichaud,0.6223,loo-2025
+Mr. Robichaud#c5,Mr. Robichaud,Mr. Robichaud,0.7087,loo-2025
+Mr. Robichaud#c6,Mr. Robichaud,Mr. Bourque,0.7726,loo-2025
+Mr. Robichaud#c7,Mr. Robichaud,Hon. Mr. Gauvin,0.6615,loo-2025
+Mr. Russell#c0,Mr. Russell,Ms. Bockus,0.6501,loo-2025
+Mr. Russell#c1,Mr. Russell,Mr. Russell,0.6904,loo-2025
+Mr. Russell#c2,Mr. Russell,Mr. Johnston,0.6169,loo-2025
+Mr. Russell#c3,Mr. Russell,Ms. M. Johnson,0.7629,loo-2025
+Mr. Russell#c4,Mr. Russell,Mr. Russell,0.5833,loo-2025
+Mr. Russell#c5,Mr. Russell,Mr. Russell,0.5939,loo-2025
+Mr. Russell#c6,Mr. Russell,Ms. Bockus,0.5639,loo-2025
+Mr. Russell#c7,Mr. Russell,Mr. Johnston,0.6062,loo-2025
+Mr. Russell#c8,Mr. Russell,Mr. Russell,0.6584,loo-2025
+Mr. Savoie#c0,Mr. Savoie,Mr. Savoie,0.7904,loo-2025
+Mr. Savoie#c1,Mr. Savoie,Mr. Savoie,0.7242,loo-2025
+Mr. Savoie#c2,Mr. Savoie,Mr. Savoie,0.7434,loo-2025
+Mr. Savoie#c3,Mr. Savoie,Mr. Savoie,0.7299,loo-2025
+Mr. Savoie#c4,Mr. Savoie,Mr. Austin,0.7244,loo-2025
+Mr. Savoie#c5,Mr. Savoie,Mr. Savoie,0.7313,loo-2025
+Mr. Savoie#c6,Mr. Savoie,Mr. Savoie,0.6916,loo-2025
+Mr. Savoie#c7,Mr. Savoie,Mr. Savoie,0.6612,loo-2025
+Mr. Savoie#c8,Mr. Savoie,Mr. Savoie,0.6293,loo-2025
+Mr. Savoie#c9,Mr. Savoie,Mr. Savoie,0.5967,loo-2025
+Mr. Savoie#c10,Mr. Savoie,Mr. Savoie,0.6899,loo-2025
+Mr. Savoie#c11,Mr. Savoie,Mr. Savoie,0.709,loo-2025
+Mr. Savoie#c12,Mr. Savoie,Mr. Savoie,0.7652,loo-2025
+Mr. Savoie#c13,Mr. Savoie,Mr. Savoie,0.5915,loo-2025
+Mr. Savoie#c14,Mr. Savoie,Ms. Scott-Wallace,0.8155,loo-2025
+Mr. Savoie#c15,Mr. Savoie,Ms. Mitton,0.7907,loo-2025
+Mr. Savoie#c16,Mr. Savoie,Mr. Savoie,0.7552,loo-2025
+Mr. Savoie#c17,Mr. Savoie,Mr. Savoie,0.6715,loo-2025
+Mr. Savoie#c18,Mr. Savoie,Mr. Savoie,0.65,loo-2025
+Mr. Savoie#c19,Mr. Savoie,Mr. Savoie,0.871,loo-2025
+Mr. Savoie#c20,Mr. Savoie,Mr. Savoie,0.7523,loo-2025
+Mr. Savoie#c21,Mr. Savoie,Mr. Savoie,0.6873,loo-2025
+Mr. Savoie#c22,Mr. Savoie,Mr. Savoie,0.6652,loo-2025
+Mr. Savoie#c23,Mr. Savoie,Mr. Savoie,0.6787,loo-2025
+Mr. Savoie#c24,Mr. Savoie,Ms. Scott-Wallace,0.7167,loo-2025
+Mr. Savoie#c25,Mr. Savoie,Mr. Savoie,0.7046,loo-2025
+Mr. Savoie#c26,Mr. Savoie,Mr. Savoie,0.7291,loo-2025
+Mr. Savoie#c27,Mr. Savoie,Mr. Savoie,0.7257,loo-2025
+Mr. Savoie#c28,Mr. Savoie,Mr. Austin,0.878,loo-2025
+Mr. Savoie#c29,Mr. Savoie,Mr. Savoie,0.7228,loo-2025
+Mr. Savoie#c30,Mr. Savoie,Mr. Austin,0.8163,loo-2025
+Mr. Savoie#c31,Mr. Savoie,Mr. Austin,0.8412,loo-2025
+Mr. Savoie#c32,Mr. Savoie,Mr. Savoie,0.8007,loo-2025
+Mr. Savoie#c33,Mr. Savoie,Mr. Savoie,0.7482,loo-2025
+Mr. Savoie#c34,Mr. Savoie,Hon. Ms. Boudreau,0.9054,loo-2025
+Mr. Savoie#c35,Mr. Savoie,Mr. Savoie,0.6626,loo-2025
+Mr. Savoie#c36,Mr. Savoie,Mr. Savoie,0.8043,loo-2025
+Mr. Savoie#c37,Mr. Savoie,Mr. Savoie,0.7068,loo-2025
+Mr. Savoie#c38,Mr. Savoie,Mr. Austin,0.8461,loo-2025
+Mr. Savoie#c39,Mr. Savoie,Mr. Hogan,0.7138,loo-2025
+Mr. Savoie#c40,Mr. Savoie,Mr. Austin,0.7406,loo-2025
+Mr. Savoie#c41,Mr. Savoie,Mr. Savoie,0.6319,loo-2025
+Mr. Savoie#c42,Mr. Savoie,Mr. Ames,0.72,loo-2025
+Mr. Savoie#c43,Mr. Savoie,Mr. Savoie,0.8083,loo-2025
+Mr. Savoie#c44,Mr. Savoie,Mr. Savoie,0.7026,loo-2025
+Mr. Savoie#c45,Mr. Savoie,Mr. Austin,0.8638,loo-2025
+Mr. Savoie#c46,Mr. Savoie,Mr. Savoie,0.7186,loo-2025
+Mr. Savoie#c47,Mr. Savoie,Mr. Savoie,0.7106,loo-2025
+Mr. Savoie#c48,Mr. Savoie,Mr. Savoie,0.6886,loo-2025
+Mr. Savoie#c49,Mr. Savoie,Mr. Monahan,0.8084,loo-2025
+Mr. Savoie#c50,Mr. Savoie,Mr. Savoie,0.6301,loo-2025
+Mr. Savoie#c51,Mr. Savoie,Mr. Hogan,0.6885,loo-2025
+Mr. Savoie#c52,Mr. Savoie,Mr. Austin,0.7122,loo-2025
+Mr. Savoie#c53,Mr. Savoie,Mr. Savoie,0.849,loo-2025
+Mr. Savoie#c54,Mr. Savoie,Mr. Monahan,0.6484,loo-2025
+Mr. Savoie#c55,Mr. Savoie,Mr. Savoie,0.6906,loo-2025
+Mr. Savoie#c56,Mr. Savoie,Mr. Savoie,0.7806,loo-2025
+Mr. Weir#c0,Mr. Weir,Ms. Bockus,0.7027,loo-2025
+Mr. Weir#c1,Mr. Weir,Mr. Weir,0.7226,loo-2025
+Mr. Weir#c2,Mr. Weir,Mr. Weir,0.7786,loo-2025
+Mr. Weir#c3,Mr. Weir,Mr. Weir,0.7754,loo-2025
+Mr. Weir#c4,Mr. Weir,Mr. Austin,0.8023,loo-2025
+Mr. Weir#c5,Mr. Weir,Mr. Lee,0.7028,loo-2025
+Mr. Weir#c6,Mr. Weir,Mr. Coon,0.6619,loo-2025
+Mr. Weir#c7,Mr. Weir,Mr. Weir,0.6966,loo-2025
+Mr. Weir#c8,Mr. Weir,Mr. Weir,0.7941,loo-2025
+Mr. Weir#c9,Mr. Weir,Mr. Weir,0.7416,loo-2025
+Mr. Weir#c10,Mr. Weir,Mr. Weir,0.7764,loo-2025
+Mr. Weir#c11,Mr. Weir,Mr. Weir,0.6802,loo-2025
+Mr. Weir#c12,Mr. Weir,Mr. Ames,0.6411,loo-2025
+Mr. Weir#c13,Mr. Weir,Mr. Coon,0.5922,loo-2025
+Mr. Weir#c14,Mr. Weir,Mr. Weir,0.7817,loo-2025
+Mr. Weir#c15,Mr. Weir,Mr. Monahan,0.658,loo-2025
+Mr. Weir#c16,Mr. Weir,Mr. Weir,0.7481,loo-2025
+Mr. Weir#c17,Mr. Weir,Mr. Cullins,0.6747,loo-2025
+Mr. Weir#c18,Mr. Weir,Mr. Weir,0.7769,loo-2025
+Mr. Weir#c19,Mr. Weir,Mr. Weir,0.7793,loo-2025
+Mr. Weir#c20,Mr. Weir,Mr. Weir,0.7819,loo-2025
+Mr. Weir#c21,Mr. Weir,Mr. Weir,0.7507,loo-2025
+Mr. Weir#c22,Mr. Weir,Mr. Weir,0.735,loo-2025
+Mr. Weir#c23,Mr. Weir,Mr. Weir,0.725,loo-2025
+Ms. Bockus#c0,Ms. Bockus,Mr. Johnston,0.6169,loo-2025
+Ms. Bockus#c1,Ms. Bockus,Ms. Bockus,0.5668,loo-2025
+Ms. Bockus#c2,Ms. Bockus,Mr. Monahan,0.6711,loo-2025
+Ms. Bockus#c3,Ms. Bockus,Hon. Mr. D’Amours,0.6625,loo-2025
+Ms. Bockus#c4,Ms. Bockus,Mr. Russell,0.6134,loo-2025
+Ms. Bockus#c5,Ms. Bockus,Ms. Bockus,0.7016,loo-2025
+Ms. Bockus#c6,Ms. Bockus,Ms. Bockus,0.5883,loo-2025
+Ms. Bockus#c7,Ms. Bockus,Mr. Cullins,0.6355,loo-2025
+Ms. Conroy#c0,Ms. Conroy,Mr. J. LeBlanc,0.6939,loo-2025
+Ms. Conroy#c1,Ms. Conroy,Ms. Scott-Wallace,0.8184,loo-2025
+Ms. Conroy#c2,Ms. Conroy,Ms. Conroy,0.6874,loo-2025
+Ms. Conroy#c3,Ms. Conroy,Ms. Conroy,0.7167,loo-2025
+Ms. Conroy#c4,Ms. Conroy,Ms. Conroy,0.8211,loo-2025
+Ms. Conroy#c5,Ms. Conroy,Ms. Conroy,0.7693,loo-2025
+Ms. Conroy#c6,Ms. Conroy,Ms. Bockus,0.6771,loo-2025
+Ms. Conroy#c7,Ms. Conroy,Mr. Coon,0.6602,loo-2025
+Ms. Conroy#c8,Ms. Conroy,Ms. Conroy,0.8659,loo-2025
+Ms. Conroy#c9,Ms. Conroy,Ms. M. Wilson,0.6349,loo-2025
+Ms. Conroy#c10,Ms. Conroy,Ms. Conroy,0.7699,loo-2025
+Ms. Conroy#c11,Ms. Conroy,Mr. Oliver,0.6295,loo-2025
+Ms. Conroy#c12,Ms. Conroy,Ms. Bockus,0.6071,loo-2025
+Ms. Conroy#c13,Ms. Conroy,Ms. Conroy,0.7427,loo-2025
+Ms. Conroy#c14,Ms. Conroy,Hon. Mr. Legacy,0.8063,loo-2025
+Ms. Conroy#c15,Ms. Conroy,Mr. M. LeBlanc,0.6752,loo-2025
+Ms. Conroy#c16,Ms. Conroy,Ms. Conroy,0.6422,loo-2025
+Ms. Conroy#c17,Ms. Conroy,Ms. Conroy,0.6677,loo-2025
+Ms. Conroy#c18,Ms. Conroy,Ms. Scott-Wallace,0.6301,loo-2025
+Ms. M. Johnson#c0,Ms. M. Johnson,Mr. Doucet,0.6517,loo-2025
+Ms. M. Johnson#c1,Ms. M. Johnson,Ms. Mitton,0.6774,loo-2025
+Ms. M. Johnson#c2,Ms. M. Johnson,Mr. Monahan,0.5852,loo-2025
+Ms. M. Johnson#c3,Ms. M. Johnson,Ms. M. Johnson,0.6602,loo-2025
+Ms. M. Johnson#c4,Ms. M. Johnson,Ms. M. Johnson,0.6603,loo-2025
+Ms. M. Johnson#c5,Ms. M. Johnson,Ms. M. Johnson,0.6403,loo-2025
+Ms. M. Johnson#c6,Ms. M. Johnson,Mr. Russell,0.5714,loo-2025
+Ms. M. Johnson#c7,Ms. M. Johnson,Mr. Johnston,0.6303,loo-2025
+Ms. M. Johnson#c8,Ms. M. Johnson,Ms. Scott-Wallace,0.6702,loo-2025
+Ms. M. Johnson#c9,Ms. M. Johnson,Ms. M. Johnson,0.6878,loo-2025
+Ms. M. Johnson#c10,Ms. M. Johnson,Ms. M. Johnson,0.6975,loo-2025
+Ms. M. Johnson#c11,Ms. M. Johnson,Mr. Oliver,0.6338,loo-2025
+Ms. M. Johnson#c12,Ms. M. Johnson,Ms. M. Johnson,0.6353,loo-2025
+Ms. M. Johnson#c13,Ms. M. Johnson,Ms. M. Johnson,0.6643,loo-2025
+Ms. M. Johnson#c14,Ms. M. Johnson,Mr. Russell,0.663,loo-2025
+Ms. M. Johnson#c15,Ms. M. Johnson,Ms. M. Johnson,0.6736,loo-2025
+Ms. M. Johnson#c16,Ms. M. Johnson,Ms. M. Johnson,0.6811,loo-2025
+Ms. M. Johnson#c17,Ms. M. Johnson,Hon. Mr. Legacy,0.6376,loo-2025
+Ms. M. Johnson#c18,Ms. M. Johnson,Ms. M. Johnson,0.6929,loo-2025
+Ms. M. Johnson#c19,Ms. M. Johnson,Mr. M. LeBlanc,0.8116,loo-2025
+Ms. M. Johnson#c20,Ms. M. Johnson,Mr. Johnston,0.618,loo-2025
+Ms. M. Johnson#c21,Ms. M. Johnson,Ms. M. Johnson,0.6443,loo-2025
+Ms. M. Johnson#c22,Ms. M. Johnson,Ms. Wilcott,0.6127,loo-2025
+Ms. M. Johnson#c23,Ms. M. Johnson,Ms. Bockus,0.6617,loo-2025
+Ms. M. Johnson#c24,Ms. M. Johnson,Mr. Russell,0.606,loo-2025
+Ms. M. Johnson#c25,Ms. M. Johnson,Mr. Monahan,0.6176,loo-2025
+Ms. M. Johnson#c26,Ms. M. Johnson,Mr. Cullins,0.567,loo-2025
+Ms. M. Johnson#c27,Ms. M. Johnson,Mr. M. LeBlanc,0.7209,loo-2025
+Ms. M. Wilson#c0,Ms. M. Wilson,Ms. Bockus,0.5377,loo-2025
+Ms. M. Wilson#c1,Ms. M. Wilson,Mr. Monahan,0.6227,loo-2025
+Ms. M. Wilson#c2,Ms. M. Wilson,Mr. Monahan,0.6458,loo-2025
+Ms. M. Wilson#c3,Ms. M. Wilson,Mr. Monahan,0.6183,loo-2025
+Ms. M. Wilson#c4,Ms. M. Wilson,Mr. Monahan,0.676,loo-2025
+Ms. M. Wilson#c5,Ms. M. Wilson,Mr. Russell,0.6904,loo-2025
+Ms. M. Wilson#c6,Ms. M. Wilson,Mr. Bourque,0.709,loo-2025
+Ms. M. Wilson#c7,Ms. M. Wilson,Mr. Monahan,0.622,loo-2025
+Ms. M. Wilson#c8,Ms. M. Wilson,Ms. M. Wilson,0.6352,loo-2025
+Ms. M. Wilson#c9,Ms. M. Wilson,Ms. Bockus,0.6289,loo-2025
+Ms. M. Wilson#c10,Ms. M. Wilson,Mr. Ames,0.5784,loo-2025
+Ms. M. Wilson#c11,Ms. M. Wilson,Mr. Russell,0.6172,loo-2025
+Ms. M. Wilson#c12,Ms. M. Wilson,Mr. Monahan,0.6524,loo-2025
+Ms. M. Wilson#c13,Ms. M. Wilson,Mr. Monahan,0.6571,loo-2025
+Ms. M. Wilson#c14,Ms. M. Wilson,Ms. M. Wilson,0.7696,loo-2025
+Ms. M. Wilson#c15,Ms. M. Wilson,Mr. Monahan,0.7679,loo-2025
+Ms. M. Wilson#c16,Ms. M. Wilson,Mr. Johnston,0.682,loo-2025
+Ms. M. Wilson#c17,Ms. M. Wilson,Ms. M. Wilson,0.703,loo-2025
+Ms. M. Wilson#c18,Ms. M. Wilson,Ms. M. Wilson,0.6883,loo-2025
+Ms. M. Wilson#c19,Ms. M. Wilson,Ms. M. Wilson,0.6548,loo-2025
+Ms. Mitton#c0,Ms. Mitton,Ms. Mitton,0.5517,loo-2025
+Ms. Mitton#c1,Ms. Mitton,Ms. Mitton,0.5814,loo-2025
+Ms. Mitton#c2,Ms. Mitton,Ms. Mitton,0.6707,loo-2025
+Ms. Mitton#c3,Ms. Mitton,Ms. Bockus,0.7213,loo-2025
+Ms. Mitton#c4,Ms. Mitton,Ms. Bockus,0.5605,loo-2025
+Ms. Mitton#c5,Ms. Mitton,Ms. Mitton,0.714,loo-2025
+Ms. Mitton#c6,Ms. Mitton,Ms. Mitton,0.7921,loo-2025
+Ms. Mitton#c7,Ms. Mitton,Mr. Austin,0.7702,loo-2025
+Ms. Mitton#c8,Ms. Mitton,Ms. Mitton,0.6844,loo-2025
+Ms. Mitton#c9,Ms. Mitton,Mr. Weir,0.8271,loo-2025
+Ms. Mitton#c10,Ms. Mitton,Mr. Johnston,0.6127,loo-2025
+Ms. Mitton#c11,Ms. Mitton,Ms. Mitton,0.6787,loo-2025
+Ms. Mitton#c12,Ms. Mitton,Ms. Mitton,0.5163,loo-2025
+Ms. Mitton#c13,Ms. Mitton,Hon. Mr. D’Amours,0.6757,loo-2025
+Ms. Mitton#c14,Ms. Mitton,Ms. Mitton,0.618,loo-2025
+Ms. Mitton#c15,Ms. Mitton,Mr. Johnston,0.6308,loo-2025
+Ms. Mitton#c16,Ms. Mitton,Ms. Bockus,0.7559,loo-2025
+Ms. Mitton#c17,Ms. Mitton,Mr. Coon,0.5892,loo-2025
+Ms. Mitton#c18,Ms. Mitton,Ms. Mitton,0.6372,loo-2025
+Ms. Mitton#c19,Ms. Mitton,Ms. Mitton,0.8831,loo-2025
+Ms. Mitton#c20,Ms. Mitton,Ms. Mitton,0.6307,loo-2025
+Ms. Mitton#c21,Ms. Mitton,Ms. Mitton,0.6175,loo-2025
+Ms. Mitton#c22,Ms. Mitton,Ms. Mitton,0.806,loo-2025
+Ms. Mitton#c23,Ms. Mitton,Mr. Coon,0.5753,loo-2025
+Ms. Mitton#c24,Ms. Mitton,Ms. Mitton,0.6554,loo-2025
+Ms. Mitton#c25,Ms. Mitton,Ms. Mitton,0.5873,loo-2025
+Ms. Mitton#c26,Ms. Mitton,Mr. Ames,0.6739,loo-2025
+Ms. Mitton#c27,Ms. Mitton,Ms. Mitton,0.7132,loo-2025
+Ms. Mitton#c28,Ms. Mitton,Mr. Weir,0.7657,loo-2025
+Ms. Mitton#c29,Ms. Mitton,Mr. Weir,0.7203,loo-2025
+Ms. Mitton#c30,Ms. Mitton,Mr. Oliver,0.7043,loo-2025
+Ms. Mitton#c31,Ms. Mitton,Hon. Ms. Thériault,0.5587,loo-2025
+Ms. Mitton#c32,Ms. Mitton,Mr. J. LeBlanc,0.5851,loo-2025
+Ms. Mitton#c33,Ms. Mitton,Ms. Mitton,0.6856,loo-2025
+Ms. Mitton#c34,Ms. Mitton,Hon. Mr. Randall,0.7221,loo-2025
+Ms. Mitton#c35,Ms. Mitton,Ms. Mitton,0.8301,loo-2025
+Ms. Mitton#c36,Ms. Mitton,Mr. Weir,0.8043,loo-2025
+Ms. Mitton#c37,Ms. Mitton,Ms. Mitton,0.6827,loo-2025
+Ms. Mitton#c38,Ms. Mitton,Ms. Mitton,0.7691,loo-2025
+Ms. Mitton#c39,Ms. Mitton,Ms. Mitton,0.6119,loo-2025
+Ms. Mitton#c40,Ms. Mitton,Ms. Mitton,0.693,loo-2025
+Ms. Mitton#c41,Ms. Mitton,Ms. Mitton,0.6318,loo-2025
+Ms. Mitton#c42,Ms. Mitton,Mr. Coon,0.635,loo-2025
+Ms. Mitton#c43,Ms. Mitton,Mr. Russell,0.5736,loo-2025
+Ms. Mitton#c44,Ms. Mitton,Hon. Mr. D’Amours,0.5585,loo-2025
+Ms. Mitton#c45,Ms. Mitton,Ms. Bockus,0.6795,loo-2025
+Ms. Mitton#c46,Ms. Mitton,Ms. Mitton,0.5888,loo-2025
+Ms. Mitton#c47,Ms. Mitton,Mr. Lee,0.6514,loo-2025
+Ms. Mitton#c48,Ms. Mitton,Ms. Mitton,0.6516,loo-2025
+Ms. Mitton#c49,Ms. Mitton,Ms. Mitton,0.5683,loo-2025
+Ms. S. Wilson#c0,Ms. S. Wilson,Mr. Ames,0.6542,loo-2025
+Ms. S. Wilson#c1,Ms. S. Wilson,Ms. M. Johnson,0.7513,loo-2025
+Ms. S. Wilson#c2,Ms. S. Wilson,Ms. S. Wilson,0.7148,loo-2025
+Ms. S. Wilson#c3,Ms. S. Wilson,Mr. Austin,0.6986,loo-2025
+Ms. S. Wilson#c4,Ms. S. Wilson,Mr. Weir,0.8442,loo-2025
+Ms. S. Wilson#c5,Ms. S. Wilson,Mr. Austin,0.661,loo-2025
+Ms. S. Wilson#c6,Ms. S. Wilson,Mr. Cullins,0.6003,loo-2025
+Ms. S. Wilson#c7,Ms. S. Wilson,Mr. Russell,0.6685,loo-2025
+Ms. S. Wilson#c8,Ms. S. Wilson,Ms. Conroy,0.7308,loo-2025
+Ms. S. Wilson#c9,Ms. S. Wilson,Mr. Monahan,0.6404,loo-2025
+Ms. Scott-Wallace#c0,Ms. Scott-Wallace,Ms. Scott-Wallace,0.63,loo-2025
+Ms. Scott-Wallace#c1,Ms. Scott-Wallace,Mr. Russell,0.679,loo-2025
+Ms. Scott-Wallace#c2,Ms. Scott-Wallace,Ms. Scott-Wallace,0.6819,loo-2025
+Ms. Scott-Wallace#c3,Ms. Scott-Wallace,Mr. Coon,0.7361,loo-2025
+Ms. Scott-Wallace#c4,Ms. Scott-Wallace,Ms. M. Johnson,0.6909,loo-2025
+Ms. Scott-Wallace#c5,Ms. Scott-Wallace,Ms. Conroy,0.7023,loo-2025
+Ms. Scott-Wallace#c6,Ms. Scott-Wallace,Ms. Scott-Wallace,0.5959,loo-2025
+Ms. Scott-Wallace#c7,Ms. Scott-Wallace,Ms. Mitton,0.7057,loo-2025
+Ms. Scott-Wallace#c8,Ms. Scott-Wallace,Mr. Lee,0.5804,loo-2025
+Ms. Scott-Wallace#c9,Ms. Scott-Wallace,Mr. Hogan,0.7423,loo-2025
+Ms. Scott-Wallace#c10,Ms. Scott-Wallace,Mr. Bourque,0.7101,loo-2025
+Ms. Scott-Wallace#c11,Ms. Scott-Wallace,Mr. Hogan,0.7298,loo-2025
+Ms. Scott-Wallace#c12,Ms. Scott-Wallace,Mr. Weir,0.6292,loo-2025
+Ms. Scott-Wallace#c13,Ms. Scott-Wallace,Mr. Austin,0.7052,loo-2025
+Ms. Scott-Wallace#c14,Ms. Scott-Wallace,Mr. Ames,0.647,loo-2025
+Ms. Scott-Wallace#c15,Ms. Scott-Wallace,Ms. Scott-Wallace,0.6579,loo-2025
+Ms. Scott-Wallace#c16,Ms. Scott-Wallace,Ms. M. Wilson,0.6976,loo-2025
+Ms. Scott-Wallace#c17,Ms. Scott-Wallace,Ms. M. Johnson,0.6357,loo-2025
+Ms. Scott-Wallace#c18,Ms. Scott-Wallace,Ms. M. Wilson,0.7615,loo-2025
+Ms. Scott-Wallace#c19,Ms. Scott-Wallace,Mr. Lee,0.7473,loo-2025
+Ms. Vautour#c0,Ms. Vautour,Mr. Johnston,0.5882,loo-2025
+Ms. Vautour#c1,Ms. Vautour,Ms. Vautour,0.5692,loo-2025
+Ms. Vautour#c2,Ms. Vautour,Ms. Vautour,0.5128,loo-2025
+Ms. Vautour#c3,Ms. Vautour,Ms. Vautour,0.6374,loo-2025
+Ms. Vautour#c4,Ms. Vautour,Hon. Ms. Thériault,0.6654,loo-2025
+Ms. Vautour#c5,Ms. Vautour,Hon. C. Johnson,0.8018,loo-2025
+Ms. Vautour#c6,Ms. Vautour,Mr. Doucet,0.7381,loo-2025
+Ms. Vautour#c7,Ms. Vautour,Ms. Wilcott,0.6032,loo-2025
+Ms. Vautour#c8,Ms. Vautour,Ms. Vautour,0.5925,loo-2025
+Ms. Vautour#c9,Ms. Vautour,Mr. Monahan,0.6818,loo-2025
+Ms. Wilcott#c0,Ms. Wilcott,Mr. Johnston,0.6738,loo-2025
+Ms. Wilcott#c1,Ms. Wilcott,Ms. Wilcott,0.6823,loo-2025
+Ms. Wilcott#c2,Ms. Wilcott,Ms. Wilcott,0.6654,loo-2025
+Ms. Wilcott#c3,Ms. Wilcott,Mr. Oliver,0.6545,loo-2025
+Ms. Wilcott#c4,Ms. Wilcott,Ms. Wilcott,0.601,loo-2025
+Ms. Wilcott#c5,Ms. Wilcott,Mr. Johnston,0.6131,loo-2025
+Ms. Wilcott#c6,Ms. Wilcott,Mr. Russell,0.5825,loo-2025
+Ms. Wilcott#c7,Ms. Wilcott,Ms. Wilcott,0.6324,loo-2025
+Ms. Wilcott#c8,Ms. Wilcott,Ms. Wilcott,0.8119,loo-2025
+Ms. Wilcott#c9,Ms. Wilcott,Ms. Wilcott,0.7491,loo-2025
+Ms. Wilcott#c10,Ms. Wilcott,Ms. Wilcott,0.7653,loo-2025
+Ms. Wilcott#c11,Ms. Wilcott,Hon. Mr. Dornan,0.626,loo-2025
+Ms. Wilcott#c12,Ms. Wilcott,Ms. M. Wilson,0.6539,loo-2025
+Mr. Austin#xera,Mr. Austin,rank34,0.8414,cross-era
+Mr. Coon#xera,Mr. Coon,Mr. Coon,0.7263,cross-era
+Ms. Mitton#xera,Ms. Mitton,Ms. Mitton,0.7264,cross-era
+# Burrows Delta MFW=150 chunk=1000w min=3 chunks; chairs excluded; profiles from 2025-26

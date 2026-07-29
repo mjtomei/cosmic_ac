@@ -1,0 +1,41 @@
+seg_id,date,speaker,section,n_words,orig_frac,n_tok,logppl,xppl,score
+SE#members_statement:Bill 23 and the integrity of:0,synthetic-2026,SYNTHETIC,members_statement,175,1.0,211,1.99938,2.39185,0.83591
+SE#qp_question:Bill 23 and the integrity of:0,synthetic-2026,SYNTHETIC,qp_question,138,1.0,162,1.99794,2.6492,0.75417
+SE#ministers_statement:Bill 23 and the integrity of:0,synthetic-2026,SYNTHETIC,ministers_statement,229,1.0,266,1.92699,2.1614,0.89155
+SE#debate_response:Bill 23 and the integrity of:0,synthetic-2026,SYNTHETIC,debate_response,182,1.0,221,2.00697,2.25682,0.88929
+SE#members_statement:the 2026-27 capital budget o:0,synthetic-2026,SYNTHETIC,members_statement,193,1.0,241,1.57999,1.92471,0.8209
+SE#qp_question:the 2026-27 capital budget o:0,synthetic-2026,SYNTHETIC,qp_question,118,1.0,154,2.47431,2.81269,0.87969
+SE#ministers_statement:the 2026-27 capital budget o:0,synthetic-2026,SYNTHETIC,ministers_statement,236,1.0,290,1.67837,2.0473,0.8198
+SE#debate_response:the 2026-27 capital budget o:0,synthetic-2026,SYNTHETIC,debate_response,165,1.0,207,1.69948,2.323,0.73159
+SE#members_statement:the Nursing Home Without Wal:0,synthetic-2026,SYNTHETIC,members_statement,181,1.0,205,1.81937,2.06465,0.8812
+SE#qp_question:the Nursing Home Without Wal:0,synthetic-2026,SYNTHETIC,qp_question,96,1.0,108,2.2987,2.89187,0.79488
+SE#ministers_statement:the Nursing Home Without Wal:0,synthetic-2026,SYNTHETIC,ministers_statement,228,1.0,275,1.84684,2.39771,0.77025
+SE#debate_response:the Nursing Home Without Wal:0,synthetic-2026,SYNTHETIC,debate_response,155,1.0,179,1.77483,2.29469,0.77345
+SE#members_statement:addiction treatment and ment:0,synthetic-2026,SYNTHETIC,members_statement,195,1.0,231,1.86263,2.17849,0.85501
+SE#qp_question:addiction treatment and ment:0,synthetic-2026,SYNTHETIC,qp_question,82,1.0,94,2.4383,2.89694,0.84168
+SE#ministers_statement:addiction treatment and ment:0,synthetic-2026,SYNTHETIC,ministers_statement,210,1.0,246,1.91794,2.34445,0.81808
+SE#debate_response:addiction treatment and ment:0,synthetic-2026,SYNTHETIC,debate_response,200,1.0,230,1.95598,2.34015,0.83583
+SE#members_statement:the property assessment free:0,synthetic-2026,SYNTHETIC,members_statement,171,1.0,205,2.07787,2.56494,0.81011
+SE#qp_question:the property assessment free:0,synthetic-2026,SYNTHETIC,qp_question,105,1.0,123,2.24463,2.99886,0.74849
+SE#ministers_statement:the property assessment free:0,synthetic-2026,SYNTHETIC,ministers_statement,196,1.0,232,1.80966,2.22455,0.8135
+SE#debate_response:the property assessment free:0,synthetic-2026,SYNTHETIC,debate_response,202,1.0,243,1.90534,2.19673,0.86735
+SE#members_statement:school bus breakdowns and st:0,synthetic-2026,SYNTHETIC,members_statement,148,1.0,176,2.05819,2.52497,0.81513
+SE#qp_question:school bus breakdowns and st:0,synthetic-2026,SYNTHETIC,qp_question,111,1.0,127,2.27027,2.61306,0.86881
+SE#ministers_statement:school bus breakdowns and st:0,synthetic-2026,SYNTHETIC,ministers_statement,239,1.0,267,1.86591,2.15033,0.86773
+SE#debate_response:school bus breakdowns and st:0,synthetic-2026,SYNTHETIC,debate_response,173,1.0,205,1.8924,2.08369,0.9082
+SE#members_statement:the Mactaquac dam refurbishm:0,synthetic-2026,SYNTHETIC,members_statement,185,1.0,238,1.84289,2.11321,0.87208
+SE#qp_question:the Mactaquac dam refurbishm:0,synthetic-2026,SYNTHETIC,qp_question,102,1.0,126,2.48211,2.85328,0.86991
+SE#ministers_statement:the Mactaquac dam refurbishm:0,synthetic-2026,SYNTHETIC,ministers_statement,229,1.0,281,1.82819,2.38443,0.76672
+SE#debate_response:the Mactaquac dam refurbishm:0,synthetic-2026,SYNTHETIC,debate_response,201,1.0,251,1.82804,2.02533,0.90259
+SE#members_statement:thanking firefighters after :0,synthetic-2026,SYNTHETIC,members_statement,191,1.0,239,1.87002,2.33386,0.80125
+SE#qp_question:thanking firefighters after :0,synthetic-2026,SYNTHETIC,qp_question,102,1.0,118,2.28722,2.68169,0.8529
+SE#ministers_statement:thanking firefighters after :0,synthetic-2026,SYNTHETIC,ministers_statement,230,1.0,261,1.86466,2.17193,0.85853
+SE#debate_response:thanking firefighters after :0,synthetic-2026,SYNTHETIC,debate_response,173,1.0,205,2.10513,2.49695,0.84308
+SE#members_statement:Diwali celebrations in New B:0,synthetic-2026,SYNTHETIC,members_statement,187,1.0,241,1.71537,2.13426,0.80373
+SE#qp_question:Diwali celebrations in New B:0,synthetic-2026,SYNTHETIC,qp_question,85,1.0,106,2.38766,2.69756,0.88512
+SE#ministers_statement:Diwali celebrations in New B:0,synthetic-2026,SYNTHETIC,ministers_statement,194,1.0,232,2.17464,2.63816,0.8243
+SE#debate_response:Diwali celebrations in New B:0,synthetic-2026,SYNTHETIC,debate_response,159,1.0,200,1.98146,2.37199,0.83536
+SE#members_statement:National Police Week and com:0,synthetic-2026,SYNTHETIC,members_statement,169,1.0,206,1.69397,2.17371,0.7793
+SE#qp_question:National Police Week and com:0,synthetic-2026,SYNTHETIC,qp_question,77,1.0,84,2.65017,3.01417,0.87924
+SE#ministers_statement:National Police Week and com:0,synthetic-2026,SYNTHETIC,ministers_statement,213,1.0,249,1.9221,2.20325,0.8724
+SE#debate_response:National Police Week and com:0,synthetic-2026,SYNTHETIC,debate_response,212,1.0,233,1.7834,1.9712,0.90473

@@ -33,8 +33,8 @@ def main():
     measured_tokens = {}
     for r in runs:
         pair = r["label"].split("-")[0]
-        if r["label"].endswith("-full"):
-            measured_tokens[pair] = r["real_tokens"]
+        if r["label"].endswith("-full") and r["real_tokens"] > 100_000:
+            measured_tokens[pair] = r["real_tokens"]   # ignore tiny Se runs
         cur = best.get(pair)
         if cur is None or r["tok_per_s_end2end"] > cur["tok_per_s_end2end"]:
             best[pair] = r

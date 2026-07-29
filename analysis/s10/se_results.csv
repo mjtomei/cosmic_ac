@@ -1,0 +1,8 @@
+pair,calib_fpr,threshold,se_n,caught,Se
+falcon,0.05,0.8973,40,40,1.0
+falcon,0.01,0.8513,40,39,0.975
+qwen1.7,0.05,0.8682,40,27,0.675
+qwen1.7,0.01,0.8088,40,10,0.25
+qwen8,0.05,0.8677,40,33,0.825
+qwen8,0.01,0.7897,40,10,0.25
+# Se = fraction of Mistral-7B-Instruct synthetic legislative speech scored below the detector's 2019-control-calibrated threshold; pilot mechanism check, NOT the study Se (generator-vintage caveat in gen_se_corpus.py)

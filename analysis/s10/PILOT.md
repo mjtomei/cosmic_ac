@@ -209,3 +209,71 @@ Throughput answer for the plan: on this box today, **free local scoring of
 everything we can download is feasible but overnight-scale per legislature-
 year with a 7B pair, and comfortable with a 1.7B pair** — and 5.9× better
 if the clock cap is lifted. The two-phase design stands.
+
+---
+
+# Addendum (2026-07-29, later): detector trials, in-domain Se, authorship
+
+## In-domain Se (pilot grade) — and the "bigger models?" answer
+
+40 synthetic legislative speeches (Mistral-7B-Instruct-v0.3, prompted with
+real 2025–26 NB business + speaking roles; family-neutral to all detector
+pairs; `gen_se_corpus.py`, vintage caveat there). Se at thresholds
+calibrated on the 2019 control (`se_results.csv`):
+
+| detector | Se @5% FPR | Se @1% FPR | synthetic median (ctl median) |
+|---|---|---|---|
+| **Falcon-7B pair** | **1.000** | **0.975** | 0.691 (0.986) |
+| Qwen3-8B pair | 0.825 | 0.250 | 0.823 (0.995) |
+| Qwen3-1.7B pair | 0.675 | 0.250 | 0.842 (0.972) |
+| HC3-RoBERTa (classifier) | 0.675 | 0.150 | 0.998 (0.028) |
+| RADAR (classifier) | 0.200 | 0.025 | 0.983 (0.091) |
+| GPT-2-era detector (classifier) | 0.350 | 0.075 | 0.232 (0.001) |
+
+**Bigger ≠ better.** Within the Qwen family, 8B beats 1.7B at the loose
+threshold only; both collapse at the strict one. The 2023-vintage Falcon
+pair dominates the same-size 2025-vintage Qwen3-8B outright — consistent
+with Mireshghallah et al. (EACL 2024): smaller/older scoring models detect
+better, plausibly because assistant-register prose saturates newer models'
+training data and stops looking anomalous. Se here is against ONE 2024
+7B generator; frontier-generator Se is still unmeasured (Pangram stratum D
++ a future API-generated reference).
+
+**Consequence for the null:** the sweep instrument (Falcon pair) has
+Se ≈ 0.97–1.0 on this generator class while the 2025–26 corpus flags BELOW
+its false-positive floor. Rogan–Gladen with measured Se 0.975: upper bound
+≈ **0.3–0.4%** unedited Mistral-class AI text. The null is not detector
+blindness — for that class. Edited/paraphrased AI remains undetectable by
+design (all zero-shot detectors are paraphrase-fragile).
+
+## Six-detector consensus
+
+3-way Binoculars consensus (control-calibrated): errors stay ~100×
+correlated vs independence; 2025–26 all-agree 0.90% vs control floor 1.54%
+(at 5% calib) — consensus shrinks lists but never separates the eras
+(`consensus.csv`). Classifiers agree: all three flag 2025–26 at/below
+their calibrated floors. **Eight statistics** (3 Binoculars, Fast-DetectGPT,
+LRR, 3 classifiers) once `scores_multistat.csv` lands; none shows an
+elevation so far.
+
+## Authorship (Burrows' Delta, `authorship_delta.py`)
+
+- Closed-set attribution: **54.5% over 43 speakers (chance 2.3%)** on
+  1,000-word chunks — authorship signal robustly survives Hansard editing.
+- Cross-era self-match (3 speakers in both 2019 and 2025–26): Coon and
+  Mitton rank 1 to their own six-years-later profiles; **Austin ranks
+  34/43** — a live changepoint specimen (he also changed party/role between
+  eras: confound and use-case in one). Design note: spontaneous crosstalk
+  should track the *speaker* while prepared text tracks the *office* —
+  splitting those is the validation lever, and documented staff changes
+  (GNB directory snapshots via Wayback, Public Accounts salary lists,
+  news-reported chief-of-staff moves; reconstructible for ministers'
+  offices, mostly not for backbenchers) are candidate ground truth.
+
+## Pangram batch (ready to submit)
+
+`pangram_batch.jsonl`: **265 segments, 52,577 words** — A: 45 consensus
+hits (2025–26 + control), B: 120 decile-stratified 2025–26, C: 60 control
+(Pangram's in-domain FPR), D: 40 synthetic (Pangram's in-domain Se). Fits
+a single $65 Professional month with ~1.44M words to spare (enough to
+sweep the full original-EN corpus afterward), or a month of free tier.
