@@ -81,7 +81,64 @@ claim, missing markets, moral-obligation extension).
 **II.4 The herd.** Current §2.2 whole: copying and the returns to defecting
 (M1 / R1 / Etched), what binds it (competence, reuse-as-convention literature,
 subjugation proxy, wanting-deficit, embargo natural experiment + Figure 2), what
-unbinds it (legibility, best-story). The DeepSeek/Wenfeng transcript can anchor the
+unbinds it (legibility, best-story).
+
+  **Candidate additions — "doing the impossible" (Matthew, 2026-07-29;
+  handles verified 2026-07-29 unless flagged).** The existing defector trio is
+  all computing hardware. Widening the scope admits examples that sharpen the
+  *mechanism* rather than repeat the setting. Ranked by fit:
+
+  1. **Karikó and mRNA — the career-risk mechanism with a name attached.**
+     §2.2.1 argues the champion of a novel direction bears its risk personally
+     even when trying it costs almost nothing. Karikó is that sentence embodied:
+     decades on an unfashionable direction, then the work that made the vaccines
+     possible. VERIFIED: Karikó, Buckstein, Ni & Weissman, "Suppression of RNA
+     Recognition by Toll-like Receptors: The Impact of Nucleoside Modification
+     and the Evolutionary Origin of RNA," *Immunity* 23:165–175 (Aug 2005); and
+     the Nobel Prize in Physiology or Medicine 2023 to Karikó and Weissman "for
+     their discoveries concerning nucleoside base modifications that enabled the
+     development of effective mRNA vaccines against COVID-19."
+     **UNVERIFIED and load-bearing:** the demotion/defunding narrative. It is
+     widely reported but must be sourced to something primary — a Penn record or
+     a named interview — before the paper leans on it. If it cannot be sourced
+     cleanly, the example still works on the published record alone, just less
+     sharply. Value: shows the mechanism is not a quirk of computing.
+
+  2. **Deep learning's own winter — self-implicating, and therefore strongest.**
+     Our field spent two decades treating neural networks as a dead end while a
+     few people continued; a paper arguing that the computing herd suppresses
+     variance is more credible for admitting its most recent famous failure was
+     about the technology it is now betting on. Ties directly to Hooker's
+     hardware lottery, already cited (VERIFIED: *CACM* 64, 2021). Citable
+     artifacts: LeCun, Bengio & Hinton, "Deep learning," *Nature* (May 2015);
+     and the Turing Lecture, Bengio, LeCun & Hinton, "Deep Learning for AI,"
+     *CACM* (2021) — both VERIFIED.
+
+  3. **Reusable rockets — but only in the compute-enabled framing.** The stock
+     "SpaceX did the impossible" version is a cliché and the wrong mechanism; it
+     also strains the entry-fee-is-temporary claim, since it took a fortune and
+     an unusually unconstrained founder. The version worth having: an outcome
+     the field had priced as uneconomic became reachable when an optimization
+     problem became cheap to solve — which is this paper's thesis one level out.
+     VERIFIED: Açıkmeşe & Ploen, "Convex Programming Approach to Powered Descent
+     Guidance for Mars Landing," *Journal of Guidance, Control, and Dynamics*
+     30(5):1353–1366 (Sept 2007).
+     **CORRECTION to my own earlier claim:** I said Ariane 6 was designed
+     expendable *after* Falcon 9 was landing. That is likely wrong — ESA
+     committed to Ariane 6 in late 2014 and the first successful Falcon 9
+     booster recovery was December 2015. Do not use that framing; if the
+     incumbent-incentive point is wanted, source the cost-plus contracting
+     argument directly instead. **Also unverified:** that the JPL convex-guidance
+     line actually fed SpaceX's landing algorithms (the usual link is Lars
+     Blackmore moving from JPL to SpaceX) — widely asserted, not checked here.
+     Placement: if used, this may belong in the widened material rather than
+     II.4, since it is a non-computing example doing computing's argument.
+
+  4. **AlphaFold — optional, and for a different beat.** A problem declared
+     intractable for decades, retired by shared computational intelligence, then
+     published openly. Serves IV.1/IV.2's commons argument rather than the
+     defector argument. Skip unless that section needs another anchor; it is not
+     short of evidence. The DeepSeek/Wenfeng transcript can anchor the
 defector-openness link here or in IV.3 (his stated push toward AGI-as-shared-goal).
 
 ---
@@ -611,7 +668,10 @@ open-weight page · self-patching worm (Welchia-class; also the 2024-era self-cl
 case if real) · botnet scale numbers · OpenAI breakout incident + "Mythos hype"
 citable form · DeepSeek/Wenfeng four-hour transcript (elsewhere.news) ·
 tinygrad/DAO open-education-by-competence examples · Huang direct-report count ·
-food/housing waste numbers · the Bill Oliver AI-prompt-in-assembly incident
+food/housing waste numbers · the Karikó demotion/defunding narrative (needs a
+primary source, not press retellings) · whether JPL's convex-guidance line fed
+SpaceX's landing algorithms (the Blackmore JPL→SpaceX link) · the cost-plus
+incentive argument for launch incumbents, if that framing is used · the Bill Oliver AI-prompt-in-assembly incident
 (Canadian politician, news.com.au 23 Jul 2026 — find the Hansard record; the
 outlet says "appears to") + stronger institutional anchors for the
 figurehead-as-socket beat (Porto Alegre's AI-drafted ordinance 2023; documented
