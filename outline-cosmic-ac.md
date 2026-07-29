@@ -573,7 +573,11 @@ open-weight page · self-patching worm (Welchia-class; also the 2024-era self-cl
 case if real) · botnet scale numbers · OpenAI breakout incident + "Mythos hype"
 citable form · DeepSeek/Wenfeng four-hour transcript (elsewhere.news) ·
 tinygrad/DAO open-education-by-competence examples · Huang direct-report count ·
-food/housing waste numbers · TSMC customer-leverage practices (chipstrat, already
+food/housing waste numbers · the Bill Oliver AI-prompt-in-assembly incident
+(Canadian politician, news.com.au 23 Jul 2026 — find the Hansard record; the
+outlet says "appears to") + stronger institutional anchors for the
+figurehead-as-socket beat (Porto Alegre's AI-drafted ordinance 2023; documented
+legislator LLM use for floor speeches) · TSMC customer-leverage practices (chipstrat, already
 verified for capex) · consciousness-as-negotiating-executive anchor for V.5
 (global-workspace / society-of-mind class — optional) · generative-agent
 negotiation/society simulation literature (related work for the V.5 simulation
