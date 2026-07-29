@@ -156,8 +156,63 @@ subscription-paced study over a year costs ~$780 and covers ~18M words, which is
 a serious corpus. *Recommended entry point: one month of Professional, NB corpus
 plus a pre-2022 control, ≈$65.*
 
-*Status:* not started. Blocking questions — which detector(s), and whether to
-pace it on a subscription rather than the API.
+*Instrumentation — revised 2026-07-29 after Matthew asked about cheaper and
+local options. The paid detector turns out to be the wrong primary instrument.*
+
+**Tier 1 — prompt-leakage regex (free, hard lower bound).** Not "common LLM
+phrases" in the stylistic sense (delve, tapestry, "it is important to note"),
+which have real and drifting human base rates. The strong version searches for
+**meta-discourse addressed to a requester rather than an audience** — text that
+can only appear if model output was pasted without editing. The Bill Oliver line
+is the type specimen: an offer to produce a revised version, read aloud in the
+chamber. Categories: assistant framing ("Here's a…", "Certainly, here is…",
+"I hope this helps", "Let me know if you'd like…"); instruction echoes ("in a
+professional tone", "as requested", "a more natural flowing version");
+self-identification ("as an AI language model"); unfilled placeholders
+("[INSERT NAME]", "[Your Name]"); and markdown artifacts surviving into a
+spoken or printed record. Every hit is individually verifiable and quotable, so
+this yields a defensible **floor**, not an estimate — the rate will be small,
+and the trend plus the specimens are the story.
+
+**Tier 2 — distributional estimation (free, the headline number).** The method
+this study should actually be built on: **Liang, Izzo, Zhang et al.,
+"Monitoring AI-Modified Content at Scale" (arXiv:2403.07183)** estimates the
+*fraction* of a corpus substantially modified by an LLM using maximum-likelihood
+over word-frequency distributions, calibrated with human-written and
+AI-generated reference texts. It works at corpus level, so it never needs
+per-document accuracy — which is exactly the weakness of every per-document
+detector on this register. Applied here: pre-2022 Hansard is the human
+reference; model-drafted speeches on the same bills are the AI reference; the
+estimate runs per month or per session and becomes the figure. This is Matthew's
+lexical-filter intuition formalized, and strictly better than a hand-picked
+list, because it uses the whole distribution and cannot be accused of
+cherry-picking. **Cost: zero.**
+
+**Tier 3 — local zero-shot detectors (free, validation).** The machine has an
+NVIDIA GB10 and 119 GB of RAM, so per-document scoring is a compute question,
+not a budget one. Candidates, all verified to exist:
+- **Binoculars** (Hans, Schwarzschild, Cherepanova et al., arXiv:2401.12070) —
+  zero-shot, contrasts two closely related models, no training required. First
+  choice.
+- **Fast-DetectGPT** (Bao, Zhao, Teng et al., arXiv:2310.05130) — conditional
+  probability curvature; the cheap successor to DetectGPT.
+- **Ghostbuster** (Verma, Fleisig, Tomlin et al., arXiv:2305.15047) — features
+  from weaker models, no token-probability access needed for the target model.
+Use these to score the segments Tiers 1–2 surface, not to sweep the corpus
+blind. **Caveat to state in any writeup:** these were validated on essays and
+news, mostly against 2023–24 models; legislative oratory is a different register
+and 2026 models are harder to detect, so treat their absolute rates as
+uncalibrated for this domain.
+
+**Tier 4 — Pangram on a sample (paid, cross-check).** Demoted from the primary
+instrument to an independent second opinion on a few hundred segments. At that
+volume the free tier (2,000 words/day) or one month of Professional ($65) is
+sufficient; the four- and five-figure corpus-sweep estimates below are no longer
+the plan, and are kept only to show what the naive approach would have cost.
+
+*Status:* not started. Blocking questions — none on cost any more. The remaining
+decisions are which reference corpus to use for the Tier-2 AI side, and whether
+to write the estimator or adapt the authors' released code.
 
 ### S11. Hayek-criterion toy model — **CANDIDATE**
 *Question:* where is the boundary at which an allocator beats a market, as a
@@ -224,8 +279,10 @@ lab machines.
 
 ## Priorities, as I see them
 
-1. **S10 at the $65 entry point.** Cheapest study on the list by an order of
-   magnitude, produces an original figure, and the corpus is already downloaded.
+1. **S10, now essentially free.** Tiers 1–3 cost nothing but compute, the corpus
+   is already downloaded, and the method has a published anchor (Liang et al.).
+   It produces an original figure and is the only study here that could stand
+   alone as a short paper.
    The negative control is non-negotiable.
 2. **S8**, because it is the paper's own committed first experiment and the only
    thing that converts §1.2's central inference into a measurement.
