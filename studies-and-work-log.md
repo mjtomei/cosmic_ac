@@ -299,10 +299,14 @@ the bulk API rate, and **fits inside a single $65 Professional month**. Even
 5,000 segments of 300 words (1.5M words) fits that month's allowance. The
 corpus-sweep pricing below is now purely historical.
 
-*Keep Liang as a free cross-check (Tier 2b).* Its estimator needs no Pangram at
-all, so agreement between two methods with unrelated failure modes — a
-token-mixture model and a corrected detector sample — is worth more than either
-alone.
+*Liang is out of the plan (decided 2026-07-29), kept as a reference only.* Its
+mixture estimator is a good paper and the source of the `Q`-by-prompting trick we
+still use, but running two estimators means defending two sets of assumptions,
+and the corrected-sample design above is both simpler and better matched to the
+instrument we actually trust.
+
+*Session plan:* `plans/S10-legislative-ai-detection.md` — self-contained
+starting point (detector survey, NB pilot, corpus search, throughput/batching).
 
 *Status:* not started. Remaining decisions: whether to write the estimator or
 adapt the authors' released code, and which model to use for the `Q` corpus
