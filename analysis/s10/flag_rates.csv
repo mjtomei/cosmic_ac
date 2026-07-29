@@ -1,0 +1,4 @@
+threshold,ctl_2019_flag,ctl_rate,ctl_wilson95,new_2025_flag,new_rate,new_wilson95,tau_hat_Se0.95,tau_upper_Se0.95,tau_hat_Se0.85,tau_upper_Se0.85,tau_hat_Se0.7,tau_upper_Se0.7
+accuracy,33/585,0.0564,"[0.0404,0.0782]",114/3998,0.0285,"[0.0238,0.0341]",0.0,0.0,0.0,0.0,0.0,0.0
+low-fpr,6/585,0.0103,"[0.0047,0.0222]",21/3998,0.0053,"[0.0034,0.0080]",0.0,0.0035,0.0,0.0039,0.0,0.0048
+# Sp from 2019 control (era-stability assumption is questionable -- see PILOT.md); Se hypothetical, no in-domain measurement yet; tau_upper = (pi_wilson_hi - fpfloor_wilson_lo)/(Se - fpfloor_wilson_lo), truncated at 0

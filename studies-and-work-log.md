@@ -308,10 +308,34 @@ instrument we actually trust.
 *Session plan:* `plans/S10-legislative-ai-detection.md` — self-contained
 starting point (detector survey, NB pilot, corpus search, throughput/batching).
 
-*Status:* not started. Remaining decisions: whether to write the estimator or
-adapt the authors' released code, and which model to use for the `Q` corpus
-(ideally one plausibly in use by legislative staff in the period studied — a
-2026 frontier model's fingerprint is not a 2023 one's).
+*Pilot (2026-07-29, `analysis/s10/` + PILOT.md there):* full pipeline ran on
+all 38 sittings plus a 6-sitting 2019 control. Three results. (1) Throughput:
+Falcon-pair Binoculars scores the whole corpus+control (1.21M tokens) in
+40 min on the GB10 — 509 tok/s end-to-end, and the GPU was discovered
+clock-capped at 513/3003 MHz (fix needs root), so that is a floor with ~5.9×
+headroom; Qwen3-1.7B pair runs ~2–3× faster. A 260M-token multi-legislature
+sweep is overnight-to-days scale — the two-phase design stands. (2) Substance:
+2025–26 raw flag rates sit BELOW the 2019 pre-ChatGPT false-positive floor
+(2.85% vs 5.64% acc-threshold; 0.53% vs 1.03% low-FPR), so Rogan–Gladen gives
+τ̂ = 0 with a rough upper bound ≤~0.5%; Tier-1 leakage regex: 0 hits in 993k
+words (edited-record caveat). No detectable machine share via this
+instrument — a null that is partly about the instrument (2023-era detector,
+2026 text; Se unmeasured). (3) Design finding: the score distribution DRIFTS
+between eras (2019 reads more AI-like than 2025–26), and the drift
+REPLICATES across architectures (Falcon-7B and Qwen3-1.7B pairs, ρ≈0.73
+agreement) — a property of the record, not the detector — so Sp/threshold
+transport across eras is invalid — Se/Sp must be measured per era, add
+within-era human anchors (spontaneous crosstalk), keep Pangram as the
+second instrument. Bonus discovery: NB's two-column record puts language-as-
+spoken in the left column, so speaker-authored English (709k words) separates
+cleanly from translator-authored English — validated per speaker.
+
+*Status:* pilot done; corpus + control archived with the pipeline in
+`analysis/s10/`. Next: in-domain per-era `Se` corpus (highest value), the
+detector survey (Task 1), prepared-vs-spontaneous labels, Pangram stratified
+sample, Hansard Office request for the Bill Oliver sitting. Remaining
+decisions unchanged: estimator code, and which model generates `Q`
+(plausible-vintage, not necessarily 2026-frontier).
 
 ### S11. Hayek-criterion toy model — **CANDIDATE**
 *Question:* where is the boundary at which an allocator beats a market, as a
@@ -373,6 +397,7 @@ lab machines.
 | 2026-07-29 | **S5** round 2 (23 papers) + merge | All 74 on one scale; 5 round-1 re-tierings |
 | 2026-07-29 | Bill Oliver clip investigated | Canadian not Australian; transcript pulled; Hansard not yet published |
 | 2026-07-29 | **S10** designed and costed | ~$321/session at bulk API; $65 entry via Professional plan |
+| 2026-07-29 | **S10 pilot executed** — full pipeline on NB corpus + 2019 control; Falcon-pair Binoculars over 1.21M tokens; Qwen3-1.7B pair; Tier-1 regex | 509 tok/s e2e (GPU clock-capped 513/3003 MHz — see PILOT.md); 0 Tier-1 hits in 993k words; 2025–26 flag rates sit BELOW the 2019 false-positive floor → τ̂=0, rough bound ≤~0.5%; era drift in score distribution = the design finding |
 
 ---
 

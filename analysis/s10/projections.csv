@@ -1,0 +1,12 @@
+pair,corpus,tokens_millions,measured_tok_per_s_capped,hours_at_capped_clocks,hours_at_unlocked_est,source_label,budget
+falcon,NB 61st/2 EN corpus (this pilot),1.21,508.6,0.66,0.11,falcon-full,16384
+falcon,"NB full legislature, ~4 sessions",4.32,508.6,2.36,0.4,falcon-full,16384
+falcon,"Large province, 1 yr (~8M words)",10.8,508.6,5.9,1.01,falcon-full,16384
+falcon,"Canadian Parliament, 1 yr (~40M words)",54.0,508.6,29.49,5.04,falcon-full,16384
+falcon,10 legislatures x 5 yrs (~200M words),270.0,508.6,147.46,25.19,falcon-full,16384
+qwen1.7,NB 61st/2 EN corpus (this pilot),1.2,1346.5,0.25,0.04,qwen1.7-full,32768
+qwen1.7,"NB full legislature, ~4 sessions",4.32,1346.5,0.89,0.15,qwen1.7-full,32768
+qwen1.7,"Large province, 1 yr (~8M words)",10.8,1346.5,2.23,0.38,qwen1.7-full,32768
+qwen1.7,"Canadian Parliament, 1 yr (~40M words)",54.0,1346.5,11.14,1.9,qwen1.7-full,32768
+qwen1.7,10 legislatures x 5 yrs (~200M words),270.0,1346.5,55.7,9.52,qwen1.7-full,32768
+# assumptions: 1.35 tok/word (English, Falcon-scale vocab); end-to-end rate incl. tokenize+batch+score-math; unlocked_est = capped / 5.85 (clock ratio 3003/513), estimate NOT a measurement; model-load overhead (~4 min/job) excluded

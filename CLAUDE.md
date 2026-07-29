@@ -28,6 +28,7 @@ soft-core validation second).
 | `outline-cosmic-ac.md` | Working outline for the widened compute-commons paper (v1 + capital-cycle integration). Matthew iterating on structure/subtitle with ChatGPT in parallel. |
 | `studies-and-work-log.md` | **Study register + dated work log** (S1–S14: done, committed, candidate) — start here for "what have we actually run, and what's next." |
 | `plans/` | Per-study session plans. `S10-legislative-ai-detection.md` is self-contained — a fresh session can execute from it. |
+| `analysis/s10/` | **S10 pilot (2026-07-29)**: Hansard extraction+scoring pipeline, throughput benchmarks, scores, `PILOT.md` memo. GB10 env gotchas (torch cu130, JIT cache, clock cap) documented there. |
 | `performance-commons-handoff.zip` | Original handoff archive (historical; already extracted). |
 | `build/` | Figure + PDF pipeline (`bash build/build.sh`). |
 

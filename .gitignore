@@ -2,3 +2,10 @@
 .DS_Store
 .*.swp
 .*.swo
+analysis/s10/pdfs/
+analysis/s10/pdfs_control/
+analysis/s10/paragraphs*.jsonl
+analysis/s10/segments.jsonl
+analysis/s10/segments_control.jsonl
+analysis/s10/*.log
+analysis/s10/tier1_hits.jsonl
