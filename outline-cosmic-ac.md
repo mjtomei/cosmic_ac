@@ -420,7 +420,16 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
        diversity theorem (*PNAS* 101, 2004 — VERIFIED: diverse groups outperform
        groups of the ablest), which doubles as the formal backing for the
        plurality-of-auditors guard.
-    **The classical statement is still Lippmann-Dewey:** Lippmann (*Public
+    **The classical statement is still Lippmann-Dewey — and it INTROS the idea
+    (Matthew, 2026-07-30: open with this reference).** Drafting note: the
+    current-democracies passage should lead with the debate, not arrive at it —
+    Lippmann first (the counsel gap diagnosed, expert management concluded),
+    Dewey's reply as the thesis statement (improve the means of inquiry, not
+    shrink the demos), then the century of evidence that neither side could
+    close the argument with the technology available. The rest of the chain
+    (Downs's economics, the republic as accommodation, Gilens-Page as gauge,
+    the discharge) then reads as the history of Dewey's unanswered
+    prescription. Original framing follows: Lippmann (*Public
     Opinion* 1922, *The Phantom Public* 1925) diagnosed the counsel gap and
     concluded expert management; Dewey (*The Public and Its Problems*, 1927)
     replied that the cure is improving the means of inquiry and communication,
