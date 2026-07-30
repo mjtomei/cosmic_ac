@@ -310,7 +310,43 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
   the principal's decisions and environment for accumulating Arrow-clause
   pressure and notifies on pressing concerns, communicated through historical
   analogy with sources attached and, ideally, novel quantitative analysis.
-  Precedents, classical to quantitative:
+  **Humans already staff this office (Matthew, 2026-07-30): people have always
+  served as the intelligence instantiating the higher power, and the examples
+  grade from crude to dignified to covert.** Channeling and mediumship are the
+  crude explicit form — the claim of instantiating an intelligence beyond the
+  individual, with the function right (making the illegible legible to the
+  living) and the verification absent. The dignified institutional forms:
+  - **the prophetic office** — Nathan to David, Jeremiah to Jerusalem: the
+    voice of accumulated covenant-pressure addressed directly to kings, with
+    the warnings framed exactly as historical analogy ("remember what happened
+    to Shiloh"). Heschel's *The Prophets* (1962) as the study of the role.
+  - **the oracle and the augurs** — Delphi and the Roman colleges as
+    *institutionalized* consultation before state action; whatever the
+    metaphysics, they functioned as standing structural-risk review with veto
+    power.
+  - **the Mandate of Heaven + the Censorate** — the strongest precedent pair:
+    Chinese doctrine made legitimacy explicitly conditional on performance,
+    with omens and disasters as the legible signals of accumulating pressure
+    (the Arrow clause institutionalized as state theology), and the imperial
+    **Censorate** staffed officials whose duty was remonstrance against the
+    emperor — the bureaucratized four-horsemen prompt, at personal risk
+    (Hucker's Censorate scholarship — VERIFY handle).
+  - **modern, quantitative, running now:** the **IPCC** is an institutionalized
+    instantiation of one horseman — a standing body channeling an impersonal
+    force to every government, with novel quantitative analysis and historical
+    analogy, notifying of pressing concerns; the **Doomsday Clock** is the same
+    for another, compressed to a single legible dial; financial-stability
+    reports (BIS/FSOC) for a third. The four-horsemen prompt generalizes and
+    personalizes an office that already exists piecemeal at the civilizational
+    scale.
+  - **covert forms:** the éminence grise, the confessor, the elder statesman —
+    structural warning delivered inside the socket without naming the force.
+  **Failure modes, also documented in the record:** Cassandra (correct alarm,
+  no belief — legibility failure); Croesus at Delphi (ambiguity misread —
+  interface failure); and Ahab's four hundred court prophets against Micaiah
+  (1 Kings 22 — VERIFY) — the capture failure, prophets saying what power
+  wants, which is the monoculture-of-auditors risk with a three-thousand-year
+  pedigree. Precedents, classical to quantitative:
   - the **memento mori at the Roman triumph** — the attendant voice reminding
     power of its mortality at its proudest moment; the register-perfect
     classical anchor (sourced mainly via Tertullian; historicity debated —
