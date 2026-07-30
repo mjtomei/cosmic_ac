@@ -365,6 +365,25 @@ personal exposure to loss; measure joint outcome quality and dispute persistence
 with a learned allocator/negotiator — which is the main argument for committing
 to either.
 
+### S15. The four-horsemen prompt — **CANDIDATE, buildable now**
+*Origin:* the Arrow-clause thread (outline IV.3): the only way to avoid the four
+horsemen is to negotiate with them; the audit is distributed instantiation.
+*Artifact:* a standing background agent for anyone holding significant power —
+monitors decisions/environment for accumulating structural pressure, notifies
+with historical analogies (sources attached) and quantitative signals.
+*Quantitative base:* instability forecasting works — Goldstone et al., AJPS 54
+(2010), the PITF model (verified); ACLED-class event data.
+*Validation:* backtest against documented historical decision environments
+(pre-1789 fiscal records, pre-2008 risk memos): does it surface the pressure
+before the discharge? Precision matters as much as recall — an alarm that
+always fires is a jester nobody hears.
+*Honest flags:* the memento-mori framing's classical sourcing is debated
+(Tertullian; verify before use); a monoculture of auditors is the residual risk
+— plurality of instantiations is the guard.
+*Cost:* prompt + tooling ≈ free; backtest is archival work.
+*Note:* cheapest item on this list after S10's regex tier, and the only one
+that is itself an artifact of the paper's societal argument.
+
 ### S13. Whole-system workload characterization — **NAMED PREREQUISITE**
 *Question:* across the real consumer workload mix, what are achieved vs maximum
 parallelism, dataflow locality, phase behaviour, and input statistics?

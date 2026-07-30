@@ -297,12 +297,47 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
      affirmative resolution: preferences-as-given for the machinery,
      lineage-welfare for the objective. Update the scope block's language when
      drafting to point here.
-  **Honest tension to carry:** "uncover and correct" has a paternalism edge —
-  who verifies the lineage ledger? The guard is already in V.5's design:
-  correction is *negotiated*, not imposed (the instance holds no wholesale
-  authority), and legibility is symmetric — the corrector is as readable as the
-  corrected. State this in the same breath or the passage reads as the thing
-  it is arguing against. Triple use:
+  **The audit question, answered (Matthew, 2026-07-30): the distributed
+  individuals instantiating and realizing the will of those forces audit it.**
+  No central corrector: the horsemen become one of the intelligences anyone can
+  instantiate (V.4's every-device-any-intelligence), so the ledger is audited by
+  plurality — the same structural answer the paper gives to monoculture
+  everywhere else. The paternalism tension dissolves because the corrective
+  voice is not an office but a commons.
+
+  **The practical artifact — the four-horsemen prompt.** A standing background
+  process that anyone holding significant power runs at all times: it monitors
+  the principal's decisions and environment for accumulating Arrow-clause
+  pressure and notifies on pressing concerns, communicated through historical
+  analogy with sources attached and, ideally, novel quantitative analysis.
+  Precedents, classical to quantitative:
+  - the **memento mori at the Roman triumph** — the attendant voice reminding
+    power of its mortality at its proudest moment; the register-perfect
+    classical anchor (sourced mainly via Tertullian; historicity debated —
+    VERIFY and flag before use). The confessor to kings and the licensed jester
+    are the same function institutionalized.
+  - modern structural versions: the independent risk function, the inspector
+    general, the red team — all channels for unwelcome structural truth to
+    reach power, all corruptible by capture, which the distributed form
+    resists.
+  - the quantitative base EXISTS: conflict/instability forecasting is a working
+    literature — Goldstone et al., "A Global Model for Forecasting Political
+    Instability," *AJPS* 54 (2010), doi:10.1111/j.1540-5907.2009.00426.x
+    (VERIFIED; the PITF line), plus ACLED-class event data. The prompt is
+    personal-scale PITF fused with memento mori: "remember the ledger," with
+    numbers.
+  **This is buildable now** — a system prompt + data feeds + scheduled analysis
+  on current tooling — and it has a natural validation study: **backtest it**.
+  Run the prompt against documented historical decision environments (pre-1789
+  French fiscal records; pre-2008 risk memos) and score whether it surfaces the
+  pressure before the discharge. Registered as candidate study S15.
+
+  **Honest tension, now narrowed:** with distributed audit, the residual risk is
+  not paternalism but homogenization — if everyone's horsemen prompt descends
+  from the same model, the corrective voice is a monoculture too (§9's
+  correlated-failure limit applies to the auditor itself). The guard is the
+  paper's usual one: plurality of instantiations, and the prompt's own outputs
+  legible and contestable. State this where the artifact is introduced. Triple use:
   (a) here, as the section's epigraph-grade anchor; (b) the cure movement
   generally — open source as the collective action the market's pressure
   produced; (c) the norms clause feeds I.2/V.3's engineered-preferences thread:
