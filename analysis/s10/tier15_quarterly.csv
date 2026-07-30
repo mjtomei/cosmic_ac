@@ -1,0 +1,10 @@
+quarter,words,hits,per100k,ci95_half
+2022Q1,200663,29,14.45,5.26
+2022Q2,407010,61,14.99,3.76
+2022Q4,820163,92,11.22,2.29
+2023Q1,229859,22,9.57,4.0
+2023Q2,463812,72,15.52,3.59
+2023Q4,731880,168,22.95,3.47
+2024Q1,194969,36,18.46,6.03
+2024Q2,352874,130,36.84,6.33
+# 33-pattern up-family; NB legislature does not sit Q3; takeoff observed 2023Q4, ~3 quarters after ChatGPT launch
