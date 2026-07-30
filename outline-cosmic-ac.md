@@ -370,42 +370,63 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
     low and FOR it when competence is high, so democratizing counsel is
     precisely the intervention that flips the theorem's sign. Democracy was
     never wrong; it was early.
-    **The current-democracies argument (Matthew, 2026-07-30): power was
-    democratized before the guidance, and the inversion is the rot.** The
-    franchise arrived without the counsel; corporations meanwhile
-    professionalized theirs, so the counsel asymmetry GREW under formal
-    political equality. The measured centerpiece: **Gilens & Page,
-    "Testing Theories of American Politics" (*Perspectives on Politics*
-    12(3), 2014, doi:10.1017/s1537592714001595 — VERIFIED)** — across 1,779
-    policy cases, average citizens' preferences show near-zero independent
-    influence on outcomes while economic elites' and organized interests'
-    preferences predict them: democratized power, null effective influence,
-    quantified. The rot's corporate face is already documented in the paper —
-    the wanting-deficit battery (Graham-Harvey-Rajgopal, Bertrand-Mullainathan,
-    Gormley-Matsa, Terry, Bernstein) IS antisocial optimization measured at the
-    executive level; add the trust series (Pew's long decline in trust in
-    government; Gallup institutional confidence) and markup/concentration data
-    (De Loecker-Eeckhout-Unger — VERIFY handles) as the citizen-facing gauge.
-    **And the discharge is beginning to run retail:** the UnitedHealthcare CEO
-    killing (December 2024) — where the datapoint is NOT the act but the
-    reaction: polling found strikingly broad sympathy, concentrated in the
-    young (Emerson College poll, Dec 2024 — VERIFY the exact figures), which
-    is the Arrow-clause pressure gauge reading high in public. Register
-    discipline when drafting: the event is treated strictly as measurement —
-    accumulated pressure discharging at the retail scale precisely because no
-    legitimate channel was carrying it — which is exactly what the
-    four-horsemen prompt exists to surface earlier and route better; any
-    reading of endorsement must be structurally impossible in the prose.
-    **The classical statement of the whole argument is the Lippmann-Dewey
-    debate:** Lippmann (*Public Opinion*, 1922; *The Phantom Public*, 1925)
-    diagnosed the counsel gap — citizens cannot possibly hold the competence
-    self-government assumes — and concluded expert management; Dewey (*The
-    Public and Its Problems*, 1927) replied that the cure is not shrinking the
-    demos but improving the means of inquiry and communication. Machine
-    intelligence is Dewey's answer, a century late. (VERIFY editions; both
-    canonical.) Sequence closed: Lippmann diagnosed, Dewey prescribed,
-    democratized counsel delivers, and Gilens-Page measured the cost of the
-    century in between.
+    **The current-democracies argument (Matthew, 2026-07-30, corrected same day):
+    power was distributed before the counsel — and the republic is the shape of
+    that gap.** The chain, each link with its literature:
+    1. *Distribution was forced.* The highest powers — the structural pressures,
+       not benevolence — forced power to be distributed beyond its natural
+       concentration: Acemoglu-Robinson's franchise-under-threat (verified,
+       above); North & Weingast 1989 — the Glorious Revolution as the crown
+       forced into credible power-sharing for credit (*J. Economic History*
+       49(4) — VERIFY original handle; Crossref surfaces only reprints); Tilly's
+       war-bargains. 
+    2. *But counsel stayed scarce, and the accommodation was the republic.*
+       Representation IS counsel-delegation: Madison's Federalist 10 — refine
+       and enlarge the public views by passing them through a chosen body
+       (VERIFY wording) — is an explicit counsel-scarcity argument for the
+       republican form; Manin (*Principles of Representative Government*, 1997)
+       shows elections were understood as aristocratic selection; Schumpeter
+       (1942) formalized democracy-as-elite-competition. We did not get
+       democracy; we got the institutional form of "power distributed, counsel
+       concentrated."
+    3. *The mechanism that keeps citizen counsel scarce is Downs's rational
+       ignorance* (*An Economic Theory of Democracy*, 1957): the expected value
+       of one informed vote ≈ 0, so acquiring political information is
+       individually irrational — **political information is an under-provided
+       public good.** THIS IS THE UNIFICATION: the paper's central claim,
+       operating in the political domain, named by Downs seventy years ago.
+       Modern layers: Caplan's rational irrationality (2007); Achen & Bartels,
+       *Democracy for Realists* (2016) — the folk theory fails empirically.
+    4. *Under that equilibrium, influence re-concentrates.* Gilens & Page 2014
+       (verified, doi:10.1017/s1537592714001595) is the SYMPTOM measured —
+       near-zero citizen influence across 1,779 policy cases — not the
+       mechanism; position it as the gauge of how far the drift has run.
+    5. *The rot and its discharge.* The corporate face is the paper's
+       wanting-deficit battery (agreed 2026-07-30 — Graham-Harvey-Rajgopal,
+       Bertrand-Mullainathan, Gormley-Matsa, Terry, Bernstein ARE antisocial
+       optimization measured); trust series + markup data queued; and the
+       UnitedHealthcare CEO killing (Dec 2024) with the datapoint in the
+       REACTION — broad, young-skewed sympathy (Emerson figures — VERIFY) — as
+       the Arrow-clause gauge reading high: pressure without a legitimate
+       channel, discharging retail. Register discipline: the event strictly as
+       measurement; endorsement structurally impossible in the prose.
+    6. *Machine counsel flips Downs's calculus.* When the cost of being
+       genuinely informed falls toward zero, rational ignorance stops being
+       rational — the under-provided public good gets provisioned, by the same
+       economics as the rest of the paper. What that enables has a name and an
+       ally in political theory: Landemore's epistemic/open democracy
+       (*Democratic Reason* 2013; *Open Democracy* 2020), with the mathematics
+       already in hand — Condorcet's sign-flip (above) plus Hong & Page's
+       diversity theorem (*PNAS* 101, 2004 — VERIFIED: diverse groups outperform
+       groups of the ablest), which doubles as the formal backing for the
+       plurality-of-auditors guard.
+    **The classical statement is still Lippmann-Dewey:** Lippmann (*Public
+    Opinion* 1922, *The Phantom Public* 1925) diagnosed the counsel gap and
+    concluded expert management; Dewey (*The Public and Its Problems*, 1927)
+    replied that the cure is improving the means of inquiry and communication,
+    not shrinking the demos. Machine intelligence is Dewey's answer, a century
+    late — with Downs supplying the economics of why the gap persisted and
+    Gilens-Page the measurement of what it cost.
   - *Meritocracy.* The modern critiques (Young's original satirical coinage,
     1958; Markovits, *The Meritocracy Trap*; Sandel, *The Tyranny of Merit*)
     converge on one finding: what passes for merit is largely inherited
