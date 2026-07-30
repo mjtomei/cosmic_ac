@@ -236,7 +236,29 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
   imagined and declared nonexistent. IV.3's bubble accounting and V.5's
   criterion are the two halves of one mechanism, assembled from the two
   founding papers of cluster A; state the pair explicitly when drafting both
-  sections so the reader sees the arc close. Triple use:
+  sections so the reader sees the arc close. **The dynamic corollary — "the
+  Arrow clause" (Matthew's term, 2026-07-30):** the pressure does not dissipate
+  if the benign departures are blocked; it accumulates and discharges through
+  the cheapest available channel, and the historical tail of that distribution
+  is violent. Anchors: Scheidel, *The Great Leveler* (Princeton UP 2017) — across
+  recorded history, major compressions of inequality came almost entirely from
+  the "Four Horsemen" (mass-mobilization war, transformative revolution, state
+  collapse, plague); and Acemoglu & Robinson, "Why Did the West Extend the
+  Franchise?" (*QJE* 115(4):1167–1199, 2000, doi:10.1162/003355300555042 —
+  VERIFIED): elites extend the franchise precisely under threat of revolution —
+  democratization as the *peaceful* discharge of the same pressure. Three uses:
+  (a) it resolves the two-horizon tension on personalized pricing — incumbent
+  resistance is rational short-run and against reason long-run, because
+  sustained extraction without legitimacy selects the violent discharge channel;
+  (b) it re-reads IV.3's productive bubble as a *benign, self-assessed
+  discharge* — the investor class socializes its own capital through the crash
+  instead of having it expropriated, Scheidel's leveling without the horsemen;
+  (c) it gives the commons argument its self-interest form addressed to the
+  surplus holders: the fair split is not charity but the cheapest long-run
+  discharge of Arrow pressure available to them — which is I.3's covert→overt
+  move and V.4's nondestructive-power-struggles endgame stated as political
+  economy. (Turchin's structural-demographic work is the quantitative version
+  of the buildup story; contested — cite only with a flag, if at all.) Triple use:
   (a) here, as the section's epigraph-grade anchor; (b) the cure movement
   generally — open source as the collective action the market's pressure
   produced; (c) the norms clause feeds I.2/V.3's engineered-preferences thread:
