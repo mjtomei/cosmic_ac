@@ -356,6 +356,37 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
   and that ambient competence dissolves them — this is the same mechanism one
   level up, applied to the oldest incumbency of all. Candidate spine sentence
   for the widened paper's political story.
+  **What it enables (Matthew, 2026-07-30): actual democracy, and a truer
+  meritocracy — the scales refined until only physical genetic reality and
+  virtue are weighed.** Two claims, each with a clean anchor:
+  - *Democracy.* The oldest argument against democracy is citizen
+    incompetence — Plato's ship of state, running continuously through to
+    modern epistocracy arguments (Brennan, *Against Democracy*, 2016). Democratized
+    counsel answers it directly rather than rhetorically: if every citizen
+    holds court-grade counsel, the competence objection collapses. The formal
+    version is **Condorcet's jury theorem (1785 — VERIFY handle)**: majority
+    judgment converges on correctness only when individual competence exceeds
+    chance — the theorem is an argument against democracy when competence is
+    low and FOR it when competence is high, so democratizing counsel is
+    precisely the intervention that flips the theorem's sign. Democracy was
+    never wrong; it was early.
+  - *Meritocracy.* The modern critiques (Young's original satirical coinage,
+    1958; Markovits, *The Meritocracy Trap*; Sandel, *The Tyranny of Merit*)
+    converge on one finding: what passes for merit is largely inherited
+    advantage laundered through credentials and access — including, centrally,
+    access to counsel. Equalize the counsel and the laundering stops; the
+    scales then weigh only what is actually there — embodied capacity and
+    virtue. This completes §2.2.2's subjugation-proxy argument at societal
+    scale: when the work is legible and the counsel is universal, credential,
+    class, and compliance all lose their role as measures of worth.
+  - *The honest boundary:* Rawls's natural-lottery objection (1971) sits
+    exactly on the line Matthew draws — the genetic endowment on the refined
+    scale is itself unearned. Two answers available, both already in the
+    paper's machinery: virtue remains the differentiator anyone can exercise
+    (and the lineage criterion prices it); and V.4's prosperity-alignment
+    blunts the stakes — when access to resources no longer rides on relative
+    standing, the residual endowment differences stop being fate. State this
+    rather than hiding it; it is where a hostile reader will push.
   **The historical rhyme, with its warning:** the last time the interface to
   the highest power was democratized — vernacular scripture plus printing, the
   priesthood of all believers — the intermediary hierarchy's de facto royalty
