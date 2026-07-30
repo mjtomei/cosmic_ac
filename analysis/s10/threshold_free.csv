@@ -1,12 +1,15 @@
 test,value
-mean_logratio_full407,+0.4560
-placebo_median,-0.0557
-placebo_p99,+0.0331
-empirical_p,<0.001 (0/1000)
-robustness_thr1,p=0.007
-robustness_thr2,p=0.008
-robustness_thr5,p=0.000
-robustness_thr10,p=0.002
-robustness_thr20,p=0.000
-robustness_thr50,p=0.000
-# equal-word-weight mean log fold-change, alpha=0.5 pseudo-hits; full Kobak 407 style list; see replication_protocol.md
+PRIMARY_mean_logratio_full407_completecorpus,+0.3791
+placebo_median,-0.1759
+placebo_p99,-0.0780
+placebo_max_100k,+0.0130
+empirical_p,<1e-5 (0/100000)
+SECONDARY_rare_pooled_ratio,1.592
+SECONDARY_rare_pooled_p,0.00037 (37/100000)
+ITS_preslope,-0.0117/yr
+ITS_postbreak_slope_change,+0.2245/yr
+ITS_placebo_p,0.007
+mann_kendall_yearly_p,0.0143
+prediction_test_spearman,+0.548
+prediction_test_p,<1e-4
+# complete corpus incl 61/1: pre 4,377,309 / post 2,450,195 words; 100k placebo draws; see PILOT.md battery + replication_protocol.md

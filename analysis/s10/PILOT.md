@@ -317,8 +317,38 @@ frequency-matched to the instrument's pre-period rates.
 |---|---|---|---|---|
 | Wikipedia-signs single-word subset | 17 | 2.00× | 2.50× | 0.035 |
 | Kobak top-markers (their pick) | 17 | 2.56× | 3.94× | 0.023 |
-| Kobak full style list | 407 | 1.09× | 1.46× | 0.48 |
-| **Kobak rare-style subset (<5/100k pre)** | **359** | **1.58×** | **1.42×** | **0.001** |
+| Kobak full style list (pooled) | 407 | 1.09× | 1.46× | 0.48 |
+| Kobak rare-style subset (<5/100k pre) | 359 | 1.58× | 1.42× | 0.001 |
+
+**Final battery on the complete corpus** (all four legislative sessions,
+pre 4.38M / post 2.45M words, 100,000 placebo draws, 2026-07-30):
+
+- **PRIMARY (choice-free): equal-word-weight mean log fold-change, full
+  407-word Kobak style list = +0.379**, vs placebo median −0.176, p99
+  −0.078, **maximum of 100,000 draws +0.013 → p < 10⁻⁵** (the real value
+  is ~4× the null's most extreme excursion ever observed). Zero
+  subsetting or threshold choices; the aggregation is the one Kobak et
+  al.'s own per-word methodology prescribes.
+- Secondary rare-pooled ratio 1.592, p = 3.7×10⁻⁴ (100k draws);
+  threshold sweep <1..<50 per 100k all p ≤ 0.008 — no cutoff matters.
+- **Trend shape** (`fig_trend.py`, figure `the-ai-lexicon-trend.png`):
+  interrupted time series on the quarterly Kobak-rare series with the
+  break pre-set at 2023.0 — pre-slope −1.2%/yr (flat), post-break slope
+  change **+23.7%/yr**, placebo p = 0.007; Mann–Kendall monotone trend
+  p = 0.014.
+- **Mechanism prediction test** (`ai_pref_prediction.py`): ex-ante
+  AI-preference log(Q/P) from the synthetic corpus + 2019 control (no
+  post-2023 data) rank-predicts which of the 89 measurable Kobak words
+  actually rose: Spearman **+0.548, permutation p < 10⁻⁴**. Selection-
+  among-lists cannot manufacture word-level prediction.
+
+Sequence disclosure: the pooled full-list null was observed before the
+rare-rule and the equal-weight statistic were adopted; the equal-weight
+aggregation is grounded ex ante in the source paper's own per-word
+method, the threshold sweep shows no cutoff sensitivity, and
+`replication_protocol.md` v1.0 freezes instrument, statistic, windows,
+and placebo procedure for every future corpus. NB is the discovery
+corpus and is labeled as such wherever results are combined.
 
 Readings. (1) Small word-sets are tail-limited: political vocabulary is
 bursty enough that random 17-word sets triple 1% of the time — no amount
