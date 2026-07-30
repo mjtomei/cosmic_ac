@@ -1,0 +1,82 @@
+# Speech/argumentation quality vs AI status — methodology design
+
+**Goal:** compare the *quality* of AI-flagged vs human legislative speech
+(Pangram verdicts as ground truth) without the comparison collapsing into
+re-detecting AI style. Version 1, 2026-07-30.
+
+## The two traps, designed against
+
+1. **Circularity.** Most "quality" surface metrics (lexical diversity,
+   sentence rhythm, formality) are exactly the features detectors and
+   lexicons use. Any difference found on them is *style*, not quality.
+   Every measure below carries a circularity grade: **[C-low]** (measure
+   is about propositional content, not diction), **[C-med]**, **[C-high]**
+   (style-adjacent — descriptive only, never a quality claim). For the
+   LLM judge, we additionally *measure* the leak: the judge separately
+   guesses "was this AI-assisted?", and quality scores are compared
+   with that guess controlled (if judged-quality differences vanish
+   conditional on the judge's AI-guess, the judge was smelling style).
+2. **Genre confound.** AI-flagged segments concentrate in prepared
+   ceremonial/statement genres; spontaneous crosstalk is nearly all
+   human. Naive comparison measures genre, not AI. Design: compare
+   **within selection-matched pools** — the Pangram-scored candidate
+   strata contain both AI-verdict and Human-verdict segments that passed
+   the *same* selection filters; primary comparisons are within-stratum,
+   within a 100–360-word band, original-English, non-chair speakers.
+   The unbiased-but-small B-sample comparison (10 AI vs 110 human) and
+   the 2019 control anchor are reported alongside. Full genre labels
+   (prepared vs spontaneous) remain an S10 open item; until then this is
+   a pilot with the confound stated, not solved.
+
+## Tier Q1 — computable, model-free (`quality_lexical.py`)
+
+| measure | what it proxies | circularity |
+|---|---|---|
+| numerals + currency + percent per 100w | concrete evidence density | C-low |
+| mid-sentence capitalized tokens per 100w | named entities (people, places, programs) | C-low |
+| NB place/riding lexicon hits per 100w | constituency grounding — is it about the actual place | C-low |
+| first-person-singular rate | personal witness vs generic voice | C-med |
+| repeated-bigram share within segment | boilerplate / padding | C-med |
+| argument connectives (because/therefore/however/but) per 100w | explicit reasoning moves | C-med |
+| mean sentence length, Flesch | descriptive only | C-high |
+
+## Tier Q2 — LLM-judged DQI-lite (`quality_judge.py`, pilot)
+
+Anchor: the Discourse Quality Index (Steenbergen, Bächtiger, Spörndli &
+Steiner 2003), the standard deliberation-quality instrument for
+parliamentary debate; LLM automation of DQI recently validated at
+human-comparable reliability (JPIPE 2025 prompt-engineering framework;
+DelibAnalysis for Canadian territorial legislatures). Rubric per segment
+(blinded, shuffled order, no metadata shown):
+
+- justification level 0–3 (DQI: none → qualified justification with
+  reasons and linkage)
+- common-good orientation 0–2
+- respect toward other positions 0–2 (where applicable)
+- constructiveness 0–2 (proposals vs pure positioning)
+- evidence specificity 0–3 (checkable facts, named sources, quantities)
+- **judge probe:** P(this text was AI-assisted) 0–100 — used ONLY to
+  measure and control judge-side circularity, never as a detector
+
+Judge: local Qwen3-8B for the pilot (validity caveat: an 8B judge is a
+screening instrument; the paper-grade run uses a frontier judge with
+25–50 in-context examples per the JPIPE recipe, plus a human-coded
+reliability subsample). Two passes with shuffled order; report
+intra-judge agreement.
+
+## Tier Q3 — behavioral/uptake (designed, not yet run)
+
+- Chamber reaction: interjections and recorded reactions following the
+  speech (Hansard marks them) per speech. C-low but engagement ≠ quality.
+- Uptake: does the next speaker engage the content (lexical overlap of
+  response beyond baseline)? Discursive influence.
+- QP responsiveness: for question–answer pairs, judged answer-to-question
+  relevance — the genre where quality is least confounded by preparation.
+
+## Comparison sets
+
+1. Primary: candidate-strata AI/Mixed (n≈90) vs candidate-strata Human
+   (n≈150), within-stratum weights, 100–360w, orig_frac ≥ 0.5.
+2. Unbiased check: B-sample AI (10) vs B-sample Human (110).
+3. Anchor: 2019 control (60) — the pre-AI baseline for every metric.
+Cluster bootstrap by speech for all CIs; report effect sizes, not just p.

@@ -1,0 +1,7 @@
+group,n,numerals,midcap_ne,nb_places,first_person,rep_bigram,connectives,sent_len,flesch
+cand_ai,53,0.716,6.512,0.79,0.619,0.073,0.368,18.568,35.532
+cand_human,63,1.069,7.2,0.955,2.168,0.093,0.52,16.821,49.292
+B_ai,8,0.629,6.663,0.858,0.446,0.059,0.415,16.767,26.611
+B_human,82,1.077,7.815,0.776,1.789,0.076,0.475,16.18,50.879
+ctl2019,35,1.025,5.91,0.718,1.666,0.087,0.62,16.307,55.773
+# groups per quality_methods.md; 100-360w, orig>=0.5, non-chair; candidate strata are selection-matched (both verdicts passed identical filters); B = unbiased sample; sent_len/flesch descriptive only (C-high circularity)
