@@ -1154,7 +1154,7 @@ incentive argument for launch incumbents, if that framing is used · the GSS
 church-attendance numbers vs the survey / The Social Leap (graphic is
 secondary) · Hamilton 1964 inclusive-fitness handle · Burke 1790 the
 living/dead/unborn contract passage (exact wording, edition) · the 1998/2005
-student-loan nondischargeability dates · KKT 1986 AER 76(4) original handle · the Bill Oliver AI-prompt-in-assembly incident
+student-loan nondischargeability dates · ~~KKT 1986 AER original~~ CONFIRMED 76(4):728–741 Sept 1986 from the typeset scan (no DOI exists) · the Bill Oliver AI-prompt-in-assembly incident
 (Canadian politician, news.com.au 23 Jul 2026 — find the Hansard record; the
 outlet says "appears to") + stronger institutional anchors for the
 figurehead-as-socket beat (Porto Alegre's AI-drafted ordinance 2023; documented
