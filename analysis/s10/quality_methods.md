@@ -80,3 +80,20 @@ intra-judge agreement.
 2. Unbiased check: B-sample AI (10) vs B-sample Human (110).
 3. Anchor: 2019 control (60) — the pre-AI baseline for every metric.
 Cluster bootstrap by speech for all CIs; report effect sizes, not just p.
+
+## Pilot results (2026-07-30)
+
+Q1: AI-flagged speech has **~3× less first-person singular** (CI-separated,
+replicates in the unbiased sample), directionally fewer numerals (−33%)
+and named entities, longer sentences, lower Flesch. Q2 (blinded Qwen3-8B
+DQI-lite, 241 segments): **no meaningful judged-quality gap** — AI a hair
+higher on justification/structure (2.47 vs 2.33), a hair lower on
+evidence (1.53 vs 1.60); the ai_guess probe returned ~10 for every group
+(no circularity leak, and no detection ability — expected at 8B).
+Synthesis: **AI raises the floor of argumentative form while thinning the
+content anchors** — formally competent, experientially hollow. Pronoun
+corollary (Pennebaker/Kacewicz status work; Newman deception work): low
+"I" classically reads as status or distance; here it is authorship
+displacement — the drafting voice has no experience to reference. Any
+pronoun-based psychological inference on post-2023 institutional text
+silently breaks; the remaining "I rise today" is a simulated first person.

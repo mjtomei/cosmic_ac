@@ -1,0 +1,7 @@
+group,n,justification,common_good,respect,constructiveness,evidence,ai_guess
+cand_ai,53,2.472,1.604,1.887,1.226,1.528,10.189
+cand_human,63,2.333,1.476,1.81,1.175,1.603,10.0
+B_ai,8,2.875,2.0,2.0,1.375,2.125,10.0
+B_human,82,2.354,1.305,1.537,0.988,1.72,10.183
+ctl2019,35,2.429,1.429,1.714,1.2,1.629,10.286
+# Qwen3-8B blinded DQI-lite pilot (screening grade); ai_guess probe non-discriminative (~10 everywhere) => no leak, no detection; paper-grade = frontier judge + ICL + human subsample
