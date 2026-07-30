@@ -543,7 +543,32 @@ no planner could?" into four measurable requirements:
   the graphic.** Confounds to state if used: selection into attendance, and
   community-vs-doctrine as the active ingredient (von Hippel's own gloss credits
   connection). Do not conflate William von Hippel (behavioral scientist) with
-  Eric von Hippel (innovation economist, already in the references), with the platform exploitation of
+  Eric von Hippel (innovation economist, already in the references).
+  **Second datapoint — surveillance pricing (Matthew, 2026-07-30):** per-user
+  pricing in consumer apps is per-individual utility-function estimation,
+  deployed at scale — direct evidence that utility functions are variable,
+  computationally realizable, and already being realized; and that corporations
+  run the extractive implementation (the price lands at the top of your
+  estimated willingness to pay). Verified handles: the FTC's term is
+  **"surveillance pricing"** — its 6(b) study reported "a wide range of
+  personal data used to set individualized consumer prices" (FTC press release,
+  Jan 2025); the academic anchor is Dubé & Misra, "Personalized Pricing and
+  Consumer Welfare," *JPE* 2023 (doi:10.1086/720793; NBER WP 23775, 2017), an
+  ML-personalized-pricing field experiment; background: Acquisti, Taylor &
+  Wagman, "The Economics of Privacy," *JEL* 54 (2016). **The textbook wrinkle
+  that sharpens the more-optimal/not-globally-optimal framing:** first-degree
+  price discrimination is *allocatively efficient* in the static textbook — no
+  deadweight loss; the machinery genuinely is "more optimal." The fear is
+  correct on two other axes: (a) distribution — efficiency achieved by handing
+  all surplus to the estimator's owner; (b) dynamics — priced-on-your-behavior
+  consumers distort and mask (VPNs, incognito shopping, strategic hesitation),
+  which is Samuelson's false-signals problem recursing into everyday commerce
+  and destroying the very information the system runs on. That second axis is
+  the elicitation leg, live in production. Honest complication to verify before
+  use: Dubé-Misra reportedly found a majority of consumers paid *less* under
+  personalized pricing than uniform pricing (approximate, from memory — check
+  the paper, which is worth adding to the collection). The fair-split version
+  of the same machinery is exactly V.3/V.5's claim., with the platform exploitation of
   realized preferences as the covert present (I.3) and the fork — engineered
   toward mutual valuation vs. captured by whoever holds the allocator — as the
   live stake. This also honestly cabins what the criterion can promise.
