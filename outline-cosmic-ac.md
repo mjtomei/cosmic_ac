@@ -613,7 +613,30 @@ no planner could?" into four measurable requirements:
   university financial aid.** Tuition minus need-based aid IS per-user pricing
   on surveilled ability to pay (the FAFSA is the surveillance), run at scale
   for decades with a moral halo — same machinery, accepted, because the
-  estimator is trusted and the surplus is framed as redistributed. So the
+  estimator is trusted and the surplus is framed as redistributed.
+  **Matthew's sharpening (2026-07-30): the baseline was inflated first.**
+  Federal student loans are effectively undischargeable in bankruptcy (federal
+  loans since 1998 absent undue hardship; extended to private loans by BAPCPA
+  2005 — VERIFY the legal dates), which removed the default-risk constraint on
+  lending and let sticker prices rise irrationally; need-based aid then
+  personalizes *down from the inflated baseline*. Empirics: tuition passthrough
+  of expanded federal credit is measured — Lucca, Nadauld & Shen, "Credit
+  Supply and the Rise in College Tuition" (*Review of Financial Studies*, 2018,
+  doi:10.1093/rfs/hhy069 — VERIFIED; the ~60-cents-per-subsidized-loan-dollar
+  figure needs checking against the published version); Cellini & Goldin
+  (*AEJ: Economic Policy* 6(4), 2014 — VERIFIED) show for-profit colleges
+  capturing aid via price; the conjecture is Bennett's (1987 NYT op-ed, "Our
+  Greedy Colleges" — flag as op-ed). Three consequences: (a) the example is
+  richer than "trusted estimator, accepted" — it shows **legitimacy can be
+  manufactured**: the halo persists while the baseline extraction runs
+  underneath, which is a warning the fair-split version must answer with
+  substance, not framing; (b) it is an Arrow-clause instance in miniature —
+  the no-default credit distortion built the pressure, and the student-debt
+  forgiveness movement is the discharge, visibly underway; (c) it hands the
+  paper a clean causal story of how a personalized-pricing system corrupts:
+  not through the pricing layer but through a credit rule two layers down —
+  the kind of load-bearing-interaction the herd section already describes in
+  hardware. So the
   variable that flips acceptance is not the mechanism but the governance of the
   estimator and the destination of the surplus — which is the paper's
   aggregation-point/moat-vs-commons argument arriving in the pricing layer, and
