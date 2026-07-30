@@ -258,7 +258,51 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
   discharge of Arrow pressure available to them — which is I.3's covert→overt
   move and V.4's nondestructive-power-struggles endgame stated as political
   economy. (Turchin's structural-demographic work is the quantitative version
-  of the buildup story; contested — cite only with a flag, if at all.) Triple use:
+  of the buildup story; contested — cite only with a flag, if at all.)
+
+  **The normative core (Matthew, 2026-07-30): the only way to avoid the four
+  horsemen is to negotiate with them.** This is V.5's negotiation-with-
+  unrepresented-forces applied to the Arrow clause itself: nobody represents
+  "revolution" or "collapse" — they are emergent, superintelligence-scale
+  processes — but they can be modeled, embodied, and therefore negotiated with,
+  and the negotiation's output is the peaceful discharge schedule. The
+  historical precedent is already in hand: Acemoglu-Robinson's franchise
+  extension IS elites crudely negotiating with revolution — threat-perception
+  as the primitive form of the negotiation machine intelligence makes explicit.
+  Three components:
+  1. **Implicit motivation, uncovered.** No individual need be consciously
+     motivated the way the structural account describes — the herd section
+     already establishes motivation encoded in social mechanisms with no
+     individual owner. Machine intelligence extends the legibility thread
+     (2.2.3) from firms to civilizational pressures: surface the implicit
+     objective so it can be corrected deliberately rather than discharged
+     violently.
+  2. **The lineage welfare criterion.** Correction toward what standard? Not
+     present individual preferences (the axiological gap) but the welfare of
+     each person's **genetic, social, and intellectual lineages** — a standard
+     more stable than moment-to-moment utility, under which even those who
+     "irrationally feel they are made better off by selfishness" are shown a
+     ledger on which they are actually worse off. Anchors to verify: Hamilton
+     1964 (inclusive fitness — the genetic lineage's own accounting); Burke
+     1790 (the contract "between those who are living, those who are dead, and
+     those who are to be born" — the canonical trans-generational welfare
+     statement, from the conservative side, which matters for register);
+     cultural-evolution lineage welfare (Henrich; Boyd-Richerson). The
+     extreme-form bullet (all past and future versions negotiated
+     simultaneously) is this criterion taken to its limit — the lineage
+     standard IS negotiating with your own past and future versions.
+  3. **The axiological gap, answered rather than only scoped.** The scope
+     decision (criterion takes preferences as given) stands for V.5's formal
+     section — but the wider paper now PROPOSES the lineage standard as the
+     affirmative resolution: preferences-as-given for the machinery,
+     lineage-welfare for the objective. Update the scope block's language when
+     drafting to point here.
+  **Honest tension to carry:** "uncover and correct" has a paternalism edge —
+  who verifies the lineage ledger? The guard is already in V.5's design:
+  correction is *negotiated*, not imposed (the instance holds no wholesale
+  authority), and legibility is symmetric — the corrector is as readable as the
+  corrected. State this in the same breath or the passage reads as the thing
+  it is arguing against. Triple use:
   (a) here, as the section's epigraph-grade anchor; (b) the cure movement
   generally — open source as the collective action the market's pressure
   produced; (c) the norms clause feeds I.2/V.3's engineered-preferences thread:
@@ -844,7 +888,11 @@ tinygrad/DAO open-education-by-competence examples · Huang direct-report count 
 food/housing waste numbers · the Karikó demotion/defunding narrative (needs a
 primary source, not press retellings) · whether JPL's convex-guidance line fed
 SpaceX's landing algorithms (the Blackmore JPL→SpaceX link) · the cost-plus
-incentive argument for launch incumbents, if that framing is used · the Bill Oliver AI-prompt-in-assembly incident
+incentive argument for launch incumbents, if that framing is used · the GSS
+church-attendance numbers vs the survey / The Social Leap (graphic is
+secondary) · Hamilton 1964 inclusive-fitness handle · Burke 1790 the
+living/dead/unborn contract passage (exact wording, edition) · the 1998/2005
+student-loan nondischargeability dates · KKT 1986 AER 76(4) original handle · the Bill Oliver AI-prompt-in-assembly incident
 (Canadian politician, news.com.au 23 Jul 2026 — find the Hansard record; the
 outlet says "appears to") + stronger institutional anchors for the
 figurehead-as-socket beat (Porto Alegre's AI-drafted ordinance 2023; documented
