@@ -341,6 +341,31 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
     scale.
   - **covert forms:** the éminence grise, the confessor, the elder statesman —
     structural warning delivered inside the socket without naming the force.
+  **The synthesis (Matthew, 2026-07-30): the story is the democratization of
+  that intelligence — one of the last scarce goods supporting de facto
+  royalty.** The office was always staffed, but always *scarce and attached to
+  power*: kings had the prophets, censors, confessors; their modern successors
+  have the consultancies, intelligence agencies, and advisory boards. The other
+  pillars of aristocracy fell one by one — force to the state, land to
+  industry, literacy to print, information to the internet — leaving elite
+  structural counsel as a remaining moat of de facto royalty. Machine
+  intelligence democratizes exactly that: everyone gets the counsel formerly
+  reserved for courts (V.4's every-device-any-intelligence, now with a
+  political name). This UNIFIES the paper's firm-level and societal arguments:
+  §2.2.3 already argues incumbents hold capacity claims on perceived expertise
+  and that ambient competence dissolves them — this is the same mechanism one
+  level up, applied to the oldest incumbency of all. Candidate spine sentence
+  for the widened paper's political story.
+  **The historical rhyme, with its warning:** the last time the interface to
+  the highest power was democratized — vernacular scripture plus printing, the
+  priesthood of all believers — the intermediary hierarchy's de facto royalty
+  collapsed, and the discharge ran partly through the wars of religion before
+  settling into plural equilibrium. Precedent and caution in one: democratizing
+  the channel historically triggers the Arrow-clause discharge it also
+  ultimately pacifies, and managing that transition is precisely the
+  four-horsemen prompt's job description. (Also file: Machiavelli's *Prince* as
+  the print-era instance — publishing the previously tacit operating manual of
+  the court advisor; counsel open-sourced once before.)
   **Failure modes, also documented in the record:** Cassandra (correct alarm,
   no belief — legibility failure); Croesus at Delphi (ambiguity misread —
   interface failure); and Ahab's four hundred court prophets against Micaiah
