@@ -420,6 +420,53 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
        diversity theorem (*PNAS* 101, 2004 — VERIFIED: diverse groups outperform
        groups of the ablest), which doubles as the formal backing for the
        plurality-of-auditors guard.
+    **Counsel-sweep results (2026-07-30, 71-agent citation graph; raw in the
+    reading directory's 00-CITATION-SWEEP.json). Five things it settled:**
+    - *The Downs-flip is clean space.* Four independent seeds confirm nobody
+      has argued that machine counsel collapses the information cost that makes
+      rational ignorance rational. Note it once, quietly, per the no-novelty
+      stance — and the PITF seed adds corroboration: instability forecasting
+      skill EXISTS but has only ever been delivered to states and militaries —
+      elite counsel that stayed elite, exactly as the last-scarce-good framing
+      predicts.
+    - *The existence proofs exist.* Habermas Machine (Tessler et al., Science
+      2024, doi:10.1126/science.adq2852; flagged independently by four seeds):
+      an LLM mediator N≈5,700 participants preferred to human mediators,
+      replicated in a representative UK assembly. Costello-Pennycook-Rand
+      (Science 2024): AI dialogue durably reduces conspiracy beliefs — the
+      mechanism answer to "information doesn't move behavior." Fishkin et al.
+      2025 (Perspectives on Politics): automated deliberative polling at ~1,000
+      participants with measurable depolarization and one-year downstream
+      voting effects. Špecián, "Machine Advisors" (Social Epistemology 2024):
+      the nearest published instantiation of the standing-advisor role — cite
+      as the lineage's current rung, borrow his adversarial-debate safeguards
+      for S15.
+    - *The S15 design-contrast, from the Habermas Machine's own finding:* a
+      common-ground mediator optimizes for majority endorsement — precisely the
+      failure mode a structural-risk advisor must NOT inherit, since its job is
+      amplifying minority tail-risk warnings against majority comfort. Cite it
+      twice: existence proof, then contrast.
+    - *Two anchors need softening.* Scheidel: Alfani's counterweight (As Gods
+      Among Men, 2023; PNAS 2025 assessment) — the violence-only leveling
+      thesis does NOT hold absolutely; phrase as "almost entirely" with the
+      peaceful exceptions named. Acemoglu-Robinson: Ansell & Samuels'
+      elite-competition alternative (CUP 2014) contests the redistributivist
+      reading — cite the franchise-under-threat mechanism as one documented
+      channel, not the consensus. Gilens-Page contest confirmed (Enns 2015,
+      Branham-Soroka-Wlezien 2017): keep it as gauge-with-caveat. Caplan
+      concession drafted by the sweep: cheap counsel answers Downs, not Caplan
+      — but the four-horsemen prompt targets DECISIVE decision-makers, exactly
+      where rational irrationality is weakest.
+    - *Two landmark gifts.* Hirschman's Exit, Voice, and Loyalty (1970, ~5,100
+      cites) is the discharge-channel taxonomy ready-made — the Arrow clause
+      discharges through voice, exit, or violence, and the artifact's job is
+      keeping voice viable; Zaller (Nature and Origins of Mass Opinion, 1992)
+      is the canonical statement that elite discourse shapes mass opinion —
+      counsel concentration IS opinion formation, measured.
+    - *Condorcet under correlation, formalized:* Estlund 1994 (Theory and
+      Decision) and Dietrich & Spiekermann (Mind 2013) — what survives
+      dependence among voters; the quantitative form of the plurality guard.
+
     **The classical statement is still Lippmann-Dewey — and it INTROS the idea
     (Matthew, 2026-07-30: open with this reference).** Drafting note: the
     current-democracies passage should lead with the debate, not arrive at it —
