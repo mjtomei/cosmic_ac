@@ -46,9 +46,14 @@ def batch_stats(q_model, p_model, ids_list, pad_id):
     p_logits = p_model(input_ids=input_ids, attention_mask=attn).logits
 
     rows_per_chunk = max(1, CHUNK_TOKENS // L)
-    out = torch.empty((B, 3), dtype=torch.float64)
+    out = torch.empty((B, 4), dtype=torch.float64)
     for r0 in range(0, B, rows_per_chunk):
         r1 = min(B, r0 + rows_per_chunk)
+        # Binoculars x-entropy (unshifted, pad-masked, as the reference)
+        xe = -(F.softmax(q_logits[r0:r1].float(), -1) *
+               F.log_softmax(p_logits[r0:r1].float(), -1)).sum(-1)
+        pm = (input_ids[r0:r1] != pad_id).float()
+        xppl = (xe * pm).sum(1) / pm.sum(1).clamp(min=1)
         lp = F.log_softmax(p_logits[r0:r1, :-1].float(), -1)
         q = F.softmax(q_logits[r0:r1, :-1].float(), -1)
         labels = input_ids[r0:r1, 1:]
@@ -70,6 +75,7 @@ def batch_stats(q_model, p_model, ids_list, pad_id):
         out[r0:r1, 0] = logppl.double().cpu()
         out[r0:r1, 1] = d.double().cpu()
         out[r0:r1, 2] = lrr.double().cpu()
+        out[r0:r1, 3] = (logppl / xppl).double().cpu()   # binoculars score
     ntok = attn.sum().item()
     return out, ntok
 
@@ -118,12 +124,12 @@ def main():
     with open(out_csv, "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["seg_id", "date", "speaker", "n_words", "orig_frac",
-                    "n_tok", "logppl", "fastdetect_d", "lrr"])
+                    "n_tok", "logppl", "fastdetect_d", "lrr", "binoc"])
         for i, s in enumerate(segs):
-            lp, d, lrr = results[i]
+            lp, d, lrr, binoc = results[i]
             w.writerow([s["seg_id"], s["date"], s["speaker"], s["n_words"],
                         s["orig_frac"], len(enc[i]), round(lp, 5),
-                        round(d, 5), round(lrr, 5)])
+                        round(d, 5), round(lrr, 5), round(binoc, 5)])
     print(f"wrote {out_csv} in {time.perf_counter()-t0:.0f}s", flush=True)
 
 

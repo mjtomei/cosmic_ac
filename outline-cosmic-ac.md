@@ -370,6 +370,42 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
     low and FOR it when competence is high, so democratizing counsel is
     precisely the intervention that flips the theorem's sign. Democracy was
     never wrong; it was early.
+    **The current-democracies argument (Matthew, 2026-07-30): power was
+    democratized before the guidance, and the inversion is the rot.** The
+    franchise arrived without the counsel; corporations meanwhile
+    professionalized theirs, so the counsel asymmetry GREW under formal
+    political equality. The measured centerpiece: **Gilens & Page,
+    "Testing Theories of American Politics" (*Perspectives on Politics*
+    12(3), 2014, doi:10.1017/s1537592714001595 — VERIFIED)** — across 1,779
+    policy cases, average citizens' preferences show near-zero independent
+    influence on outcomes while economic elites' and organized interests'
+    preferences predict them: democratized power, null effective influence,
+    quantified. The rot's corporate face is already documented in the paper —
+    the wanting-deficit battery (Graham-Harvey-Rajgopal, Bertrand-Mullainathan,
+    Gormley-Matsa, Terry, Bernstein) IS antisocial optimization measured at the
+    executive level; add the trust series (Pew's long decline in trust in
+    government; Gallup institutional confidence) and markup/concentration data
+    (De Loecker-Eeckhout-Unger — VERIFY handles) as the citizen-facing gauge.
+    **And the discharge is beginning to run retail:** the UnitedHealthcare CEO
+    killing (December 2024) — where the datapoint is NOT the act but the
+    reaction: polling found strikingly broad sympathy, concentrated in the
+    young (Emerson College poll, Dec 2024 — VERIFY the exact figures), which
+    is the Arrow-clause pressure gauge reading high in public. Register
+    discipline when drafting: the event is treated strictly as measurement —
+    accumulated pressure discharging at the retail scale precisely because no
+    legitimate channel was carrying it — which is exactly what the
+    four-horsemen prompt exists to surface earlier and route better; any
+    reading of endorsement must be structurally impossible in the prose.
+    **The classical statement of the whole argument is the Lippmann-Dewey
+    debate:** Lippmann (*Public Opinion*, 1922; *The Phantom Public*, 1925)
+    diagnosed the counsel gap — citizens cannot possibly hold the competence
+    self-government assumes — and concluded expert management; Dewey (*The
+    Public and Its Problems*, 1927) replied that the cure is not shrinking the
+    demos but improving the means of inquiry and communication. Machine
+    intelligence is Dewey's answer, a century late. (VERIFY editions; both
+    canonical.) Sequence closed: Lippmann diagnosed, Dewey prescribed,
+    democratized counsel delivers, and Gilens-Page measured the cost of the
+    century in between.
   - *Meritocracy.* The modern critiques (Young's original satirical coinage,
     1958; Markovits, *The Meritocracy Trap*; Sandel, *The Tyranny of Merit*)
     converge on one finding: what passes for merit is largely inherited
