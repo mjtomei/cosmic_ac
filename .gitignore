@@ -9,3 +9,5 @@ analysis/s10/segments.jsonl
 analysis/s10/segments_control.jsonl
 analysis/s10/*.log
 analysis/s10/tier1_hits.jsonl
+analysis/s10/segments_60th.jsonl
+analysis/s10/pdfs_60th/

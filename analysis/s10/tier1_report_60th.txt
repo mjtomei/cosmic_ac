@@ -1,0 +1,10 @@
+# scanned 26275 segments, 5,070,176 words from 1 file(s); 2 hits
+
+[assistant-framing] 2021-03-25 | Mr. Speaker | 2021-03-25#t1916w0 (segments_60th.jsonl)
+  match: 'Would you like me to'
+  ...Do we have any other speakers? Would you like me to read the motion again so that we know what we are voting on? ( Mr. Speaker, having read the motion, put the q...
+
+[assistant-framing] 2022-03-31 |  | 2022-03-31#t6442w6 (segments_60th.jsonl)
+  match: 'Would you like me to'
+  ...it if a Liberal government had done it, but, listen, Mr. Speaker, we are still lucky that it was done. Would you like me to stop now? Do you want me to stop now?...
+
