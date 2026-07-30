@@ -369,7 +369,41 @@ and Savoie declines. (5) Cross-legislature replication with these frozen
 instruments remains the endgame (Fisher combination across chambers);
 NB is the discovery set.
 
-## Side study registered
+## Pangram adjudication (2026-07-30, 438 segments, ~87k words, ~$44-equiv of included quota)
+
+**Calibration, measured in-domain: Se = 40/40 on the synthetic corpus,
+Sp = 60/60 on the 2019 control.** Zero errors on both reference sets
+(rule-of-three 95% upper bound on FPR ≈ 4.9%).
+
+**Prevalence (stratum B, 120 random 2025–26 segments, 12 per
+falcon-score decile): 10 flagged (9 AI + 1 Mixed) → τ̂ = 8.3%** of
+recent original-English NB speech segments; Wilson 95% [4.6%, 14.6%];
+taking Sp at its own Wilson lower bound pushes the floor to ~3.6%. The
+hits are spread almost uniformly across the local-detector deciles —
+1/12 in nine of ten deciles including the most human-scoring — i.e.
+**the AI text Pangram catches is invisible to the zero-shot detectors**,
+which retro-explains every earlier null and the scissors pattern: the
+phase-1 stratifier turned out uncorrelated with truth for this class,
+so the earlier Binoculars-based ≤0.5% bound applies only to
+unedited-Mistral-class text, not to AI use overall.
+
+**Adjudication: 68 of 218 candidates confirmed AI/Mixed (31%),** most at
+fraction_ai = 1.00. Stratum yields: A8 transition 60% AI (+10% Mixed) —
+**the McKee May-2023 cluster confirmed nearly wholesale, plus Ms. Holt
+(then opposition leader) 2023-11-30**; A6 lexicon-dense 40%; A2
+FastDetect-tail 37%; A consensus 35%; A7 speech-LLR 33%. Every
+origin-story specimen confirmed at fai = 1.00: Ms. Sodhi's Diwali
+statement, **Mr. Oliver's "Imagine a loving family…" (Nov 2025 — the
+study's origin member, confirmed on a different speech than the clip
+that started S10)**, the Premier's condolence statement, multiple
+ministers' statements.
+
+Honest limits: Se = 1.0 is measured against *unedited* Mistral-class
+synthetic text; Pangram's sensitivity to lightly-edited AI is not
+measured here, so 8.3% is the **Pangram-detectable share** and a lower
+bound on AI-influenced text. Segment-level ≠ word-level share.
+Mixed (fraction_ai_assisted > 0, fraction_ai = 0) counted as flagged
+(1 of the 10 B-hits). Full responses in `pangram_results.jsonl`.
 
 Staff-change detection via authorship drift is now **S15** in
 `studies-and-work-log.md` (spun out 2026-07-29): documented ministerial
