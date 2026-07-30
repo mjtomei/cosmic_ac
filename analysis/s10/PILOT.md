@@ -55,11 +55,24 @@ remain open.
    a hang). **Fix (no root):** `CUDA_CACHE_MAXSIZE=17179869184` +
    `CUDA_CACHE_PATH=~/.nv/ComputeCache_s121`. First run pays JIT once.
 3. **GPU clock-capped at 513 of 3,003 MHz** in P0 under sustained load
-   (~13–15 W, 96% util, no throttle reason; `nvidia-smi -lgc` denied
-   non-root). Sustained bf16 matmul: **23.6 TFLOPS** ≈ est. max-clock rate ÷
-   (3003/513). All numbers here are a **floor for this box as configured**;
-   ~5.9× headroom. To try (root): `sudo nvidia-smi -lgc 3003,3003`
-   (reset `-rgc`); check DGX OS/firmware updates for GB10 clock behavior.
+   (~13–15 W, 96% util, no throttle reason). Sustained bf16 matmul:
+   **23.6 TFLOPS** ≈ est. max-clock rate ÷ (3003/513). All numbers here
+   are a **floor for this box as configured**; ~5.9× headroom.
+   **DIAGNOSED 2026-07-30:** known DGX Spark issue — a stuck USB-C Power
+   Delivery negotiation silently limits platform power below the
+   throttle-reporting threshold (NVIDIA forum thread 361296,
+   "Investigating 513MHz cap for GPU"). Fits every measurement:
+   `sudo nvidia-smi -lgc 3003,3003` is accepted but inert
+   (`SUPPORTED_CLOCKS: N/A` — nvidia-smi's clock-control surface is
+   non-functional on GB10), Grace cores still boost to 2.8–3.9 GHz,
+   throttle bitmask 0x0. **Fix: cold power cycle — shutdown, unplug the
+   cord a few minutes, plug back in.** Driver updates alone did not fix
+   forum cases (this box's 580.159.03 is newer than the thread's).
+   Detect any time: `bash analysis/s10/gpu_unlock.sh bench` (15 s, no
+   root) — capped ≈ 513 MHz / ~24 TFLOPS mid-run; healthy ≈ 2+ GHz /
+   ~80–140 TFLOPS. Recurrences reported after suspends/long idle; after a
+   good power cycle, re-run the Falcon sweep and refresh
+   `projections.csv` with measured (not ÷5.85-estimated) rates.
 
 ## Corpus + pipeline
 
