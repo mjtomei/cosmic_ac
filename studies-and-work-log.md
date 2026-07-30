@@ -371,6 +371,40 @@ parallelism, dataflow locality, phase behaviour, and input statistics?
 *Status:* named in the paper's limits as the missing map and the prerequisite for
 pinning Figure 6's boundary. Larger than S8; S8 is its first slice.
 
+### S14½ / S15. Staff-change detection via authorship drift — **CANDIDATE (side study, spun out of S10, 2026-07-29)**
+*Question:* can stylometric changepoints in a member's **prepared** speech
+detect documented staff turnover, using the member's **spontaneous**
+crosstalk as the within-speaker control?
+
+*Why:* it validates S10's authorship arm against ground truth that has
+nothing to do with AI — and any AI-substitution claim made via style drift
+must first rule out (or measure the signature of) ordinary staff change.
+Standalone interest too: prepared text tracks the *office*, spontaneous
+text tracks the *member* — V.3's "office is a socket," measured.
+
+*Ground truth availability (assessed 2026-07-29):* ministers' and premier's
+offices are reconstructible — GNB online directory lists ministers' office
+staff (Wayback Machine gives dated snapshots), Public Accounts name-level
+salary disclosures give annual diffs, chief-of-staff/comms moves get
+reported by CBC NB. Backbench MLA staffing is mostly not public. Election
+turnovers (the Oct 2024 government change) supply bulk known changepoints.
+
+*Method sketch:* per-member monthly stylometric profiles, prepared vs
+spontaneous streams scored separately (Burrows' Delta now; LUAR-class
+embeddings as upgrade); changepoint statistic (e.g., CUSUM on
+self-distance); power analysis first — members' statements are ~150 words,
+so months aggregate into single points.
+
+*Pilot evidence already in hand (`analysis/s10/authorship_delta.csv`):*
+closed-set attribution 54.5% over 43 speakers (chance 2.3%) — signal
+survives Hansard editing; Coon/Mitton rank 1 against their own profiles
+across six years; **Austin ranks 34/43** (party + office change bundled —
+first case study, confound and use-case in one).
+
+*Needs:* the 60th-Legislature pull (2020–24) so more members span eras;
+the staff-timeline scrape; prepared/spontaneous labels (S10's noisy
+section tracker, upgraded).
+
 ### S14. Omerta utilization measurement — **FUTURE, phase 1.5**
 *Question:* what utilization, demand and reliability distributions do donated
 consumer devices actually show?
@@ -398,6 +432,7 @@ lab machines.
 | 2026-07-29 | Bill Oliver clip investigated | Canadian not Australian; transcript pulled; Hansard not yet published |
 | 2026-07-29 | **S10** designed and costed | ~$321/session at bulk API; $65 entry via Professional plan |
 | 2026-07-29 | **S10 pilot executed** — full pipeline on NB corpus + 2019 control; Falcon-pair Binoculars over 1.21M tokens; Qwen3-1.7B pair; Tier-1 regex | 509 tok/s e2e (GPU clock-capped 513/3003 MHz — see PILOT.md); 0 Tier-1 hits in 993k words; 2025–26 flag rates sit BELOW the 2019 false-positive floor → τ̂=0, rough bound ≤~0.5%; era drift in score distribution = the design finding |
+| 2026-07-29 | **S10** Fast-DetectGPT+LRR done; synthetic-leak bug caught+corrected; Tier-1.5 Wikipedia-signs lexicon; **S15 registered** | FD Se=0.975 both thresholds, corpus below floors (8 statistics, 0 elevations); Oliver specimen in FD tail; **AI-lexicon aggregate 3.31× (CI-separated)** — trend-shape test needs 60th-Leg pull |
 | 2026-07-29 | **S10 detector trials** (PILOT.md addendum) — Qwen3-8B third pair; synthetic Se corpus (Mistral-7B-Instruct, 40 speeches); 3 classifiers (HC3-RoBERTa, RADAR, GPT-2-era); Burrows-Delta authorship; Pangram batch built | **Falcon pair Se=1.0/0.975 at calibrated 5%/1% FPR — bigger ≠ better** (Qwen3-8B 0.825/0.25; classifiers ≤0.675); 6 detectors, none lifts 2025–26 above its floor → bound ≤~0.4% at measured Se; authorship attribution 54.5% vs 2.3% chance, Austin cross-era anomaly; `pangram_batch.jsonl` 265 segs/52.6k words ready |
 
 ---
@@ -417,6 +452,7 @@ lab machines.
 
 ## Open decisions
 
-- S10: which detector, and subscription vs API pacing?
+- S10: which detector, and subscription vs API pacing? (pilot answer: Falcon pair + Fast-DetectGPT sweep, Pangram adjudicates; batch ready)
+- S15: Delta vs LUAR embeddings; staff-timeline sourcing depth (directory Wayback vs Public Accounts only)
 - S11/S12: commit as a fifth Appendix A effort, or leave as stated open questions?
 - S9: Intel desktop for PIN-based tracing, or stay on the current machine?

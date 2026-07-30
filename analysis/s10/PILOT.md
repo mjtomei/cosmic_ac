@@ -246,15 +246,60 @@ its false-positive floor. Rogan–Gladen with measured Se 0.975: upper bound
 blindness — for that class. Edited/paraphrased AI remains undetectable by
 design (all zero-shot detectors are paraphrase-fragile).
 
-## Six-detector consensus
+## Eight-detector picture
 
 3-way Binoculars consensus (control-calibrated): errors stay ~100×
 correlated vs independence; 2025–26 all-agree 0.90% vs control floor 1.54%
 (at 5% calib) — consensus shrinks lists but never separates the eras
 (`consensus.csv`). Classifiers agree: all three flag 2025–26 at/below
-their calibrated floors. **Eight statistics** (3 Binoculars, Fast-DetectGPT,
-LRR, 3 classifiers) once `scores_multistat.csv` lands; none shows an
-elevation so far.
+their calibrated floors.
+
+**Fast-DetectGPT + LRR** (`scores_multistat.csv`; falcon pair, shared
+forward passes, ~530 tok/s): Fast-DetectGPT Se = **0.975 at both**
+calibrated operating points (synthetic median d 5.42 vs control 0.28) —
+matches Falcon-Binoculars sensitivity; LRR Se 0.875/0.775. Corpus rates,
+synthetic-leak-corrected: FD 2.88%/0.65%, LRR 3.03%/0.70% — below the
+5%/1% floors, like everything else. **Methods note (bug caught
+2026-07-29):** a first pass filtered eras with `date >= "2025"`, which
+string-matches `synthetic-2026`; the 40 synthetic segments leaked into the
+corpus pool and manufactured an apparent strict-tail excess (1.61% vs 1%).
+Corrected: 0.65%. All committed CSVs and the numbers above are clean;
+recorded here because the failure mode (reference set leaking into the
+measured set) is exactly what the full study must guard against.
+
+So: **eight statistics, zero elevations** above in-domain floors.
+Specimen note: the corpus's #2 segment by Fast-DetectGPT curvature is a
+2025-11-06 member's statement by **Mr. Oliver** — the study's origin
+member — opening with a textbook LLM narrative hook ("Imagine a loving
+family in a quiet hometown much like yours or mine…"). One segment is
+color, not evidence; it is in the Pangram batch (stratum A2).
+
+## Tier-1.5: Wikipedia "Signs of AI writing" lexicon (`tier15_rates.csv`)
+
+Patterns from Wikipedia:Signs_of_AI_writing (WikiProject AI Cleanup),
+rate-compared against the 2019 control — the control turns folklore tells
+into measurable statistics. Result, and the study's **first CI-separated
+positive corpus-level signal**: the 33-pattern AI-lexicon aggregate runs
+**3.31×** higher in 2025–26 (35.0 vs 10.6 per 100k words; 297 vs 14 hits).
+Individual movers: *underscore/showcase/stands-as/Additionally,/foster/
+bolster/participle-tail clauses* all up ×2–4 from near-zero; meanwhile
+*vibrant* (×0.16) and *enduring* (×0.10) — also on the AI list — crashed,
+confirming legislative register has idiosyncratic habits (the work-log's
+warning about transplanting Liang's adjectives). Honest read: a two-point
+comparison cannot split AI-era adoption from six years of natural drift
+(nor direct AI drafting from staff assimilating AI-soaked ambient prose).
+**The decisive test is trend shape through 2020–24** — inflection at
+2023 = AI era; linear from 2019 = drift — which the 60th-Legislature pull
+provides. That pull now serves S10's trend, S15's cross-era cohort, and
+this lexicon curve at once.
+
+## Side study registered
+
+Staff-change detection via authorship drift is now **S15** in
+`studies-and-work-log.md` (spun out 2026-07-29): documented ministerial
+staff changes (GNB directory Wayback snapshots, Public Accounts, news) as
+ground-truth changepoints; spontaneous crosstalk as the within-speaker
+control; Austin as first case study.
 
 ## Authorship (Burrows' Delta, `authorship_delta.py`)
 
