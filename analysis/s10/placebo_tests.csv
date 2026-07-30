@@ -1,9 +1,9 @@
 test,statistic,value
-ai_word_subset_ratio,post/pre,2.280
-formal_register_ratio,post/pre,0.882
-placebo_median,ratio,1.103
-placebo_p99,ratio,2.923
-empirical_p,p,0.0200
-bootstrap_ci_lo,ratio,1.881
-bootstrap_ci_hi,ratio,2.759
-# pre 2019-22, post 2024-26 (2023 transition excluded); single-word AI subset, stem+inflection counting; details in script header
+ai_word_subset_ratio,post/pre,1.997
+formal_register_ratio,post/pre,0.839
+placebo_median,ratio,1.101
+placebo_p99,ratio,2.499
+empirical_p,p,0.0350
+bootstrap_ci_lo,ratio,1.660
+bootstrap_ci_hi,ratio,2.401
+# pre 2018-22 (full 59th+60th baseline), post 2024-26 (2023 transition excluded); single-word AI subset, stem+inflection counting; NOTE: extending the baseline from 2019-22 to 2018-22 moved ratio 2.28->2.00 and p 0.020->0.035 -- within-NB evidence is ceiling-limited by the placebo null (single-chamber topic drift), not by n; the path to smaller p is cross-legislature replication

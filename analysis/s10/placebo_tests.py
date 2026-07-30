@@ -37,7 +37,7 @@ REGISTER_STEMS = ["honourable", "pursuant", "whereas", "commend", "diligent",
                   "forthwith", "herein"]
 INFLECT = ["", "s", "es", "d", "ed", "ing"]
 TOKEN_RE = re.compile(r"[a-z']+")
-PRE = {"2019", "2020", "2021", "2022"}
+PRE = {"2018", "2019", "2020", "2021", "2022"}
 POST = {"2024", "2025", "2026"}
 
 
@@ -60,7 +60,7 @@ def main():
     sp_pre, sp_post = defaultdict(Counter), defaultdict(Counter)
     sp_wpre, sp_wpost = defaultdict(int), defaultdict(int)
 
-    for path in ("segments_all.jsonl", "segments_60th.jsonl"):
+    for path in ("segments_all.jsonl", "segments_60th.jsonl", "segments_59th.jsonl"):
         for line in open(path):
             s = json.loads(line)
             y = s["date"][:4]
@@ -165,9 +165,13 @@ def main():
         f.write(f"empirical_p,p,{exceed/N:.4f}\n")
         f.write(f"bootstrap_ci_lo,ratio,{boots[int(0.025*len(boots))]:.3f}\n")
         f.write(f"bootstrap_ci_hi,ratio,{boots[int(0.975*len(boots))]:.3f}\n")
-        f.write("# pre 2019-22, post 2024-26 (2023 transition excluded); "
-                "single-word AI subset, stem+inflection counting; details in "
-                "script header\n")
+        f.write("# pre 2018-22 (full 59th+60th baseline), post 2024-26 "
+                "(2023 transition excluded); single-word AI subset, "
+                "stem+inflection counting; NOTE: extending the baseline "
+                "from 2019-22 to 2018-22 moved ratio 2.28->2.00 and p "
+                "0.020->0.035 -- within-NB evidence is ceiling-limited by "
+                "the placebo null (single-chamber topic drift), not by n; "
+                "the path to smaller p is cross-legislature replication\n")
 
 
 if __name__ == "__main__":
