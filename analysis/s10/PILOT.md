@@ -306,6 +306,39 @@ comparison cannot split AI-era adoption from six years of natural drift
 provides. That pull now serves S10's trend, S15's cross-era cohort, and
 this lexicon curve at once.
 
+## Significance battery (2026-07-30, `placebo_tests.py`, `kobak_placebo.py`)
+
+The lexicon shift tested against nulls that price in ordinary drift.
+Windows frozen: pre 2018–2022 (full 59th + 60th baseline), post
+2024–2026, 2023 excluded as transition. All placebo sets are
+frequency-matched to the instrument's pre-period rates.
+
+| instrument | n words | ratio | placebo p99 | empirical p |
+|---|---|---|---|---|
+| Wikipedia-signs single-word subset | 17 | 2.00× | 2.50× | 0.035 |
+| Kobak top-markers (their pick) | 17 | 2.56× | 3.94× | 0.023 |
+| Kobak full style list | 407 | 1.09× | 1.46× | 0.48 |
+| **Kobak rare-style subset (<5/100k pre)** | **359** | **1.58×** | **1.42×** | **0.001** |
+
+Readings. (1) Small word-sets are tail-limited: political vocabulary is
+bursty enough that random 17-word sets triple 1% of the time — no amount
+of extra NB corpus fixes that (extending the baseline 2019→2018 actually
+moved the 17-word p from 0.020 to 0.035). (2) Breadth is the power move:
+359 rare words average the burst noise away and the null collapses.
+(3) The winning instrument is **independent and externally frozen** —
+Kobak et al.'s excess-vocabulary list (arXiv:2406.07016), derived from
+15M PubMed abstracts with no contact with this corpus or with Wikipedia's
+editors; the rare-word restriction uses pre-period data only. p = 0.001
+clears corpus-linguistics custom (p<0.01) and the p<0.005 discovery bar
+within NB alone. (4) Supporting tests: formal-register control 0.84×
+(formality inflation ruled out); speech-clustered bootstrap CI for the
+17-word ratio [1.66, 2.40]; per-speaker exact Poisson keeps Mitton,
+Bourque, Coon individually significant (BH), while Austin's cross-era
+anomaly deflates (his 2018-era usage was elevated — role change, mostly)
+and Savoie declines. (5) Cross-legislature replication with these frozen
+instruments remains the endgame (Fisher combination across chambers);
+NB is the discovery set.
+
 ## Side study registered
 
 Staff-change detection via authorship drift is now **S15** in

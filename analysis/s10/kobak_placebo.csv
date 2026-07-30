@@ -1,0 +1,5 @@
+variant,ratio,empirical_p
+full407,1.0893,0.4820
+rare_pre5,1.5843,0.0010
+top_markers,2.5616,0.0230
+# Kobak et al. arXiv:2406.07016 style words; literal forms; 1000 freq-matched placebos; windows frozen as in placebo_tests
