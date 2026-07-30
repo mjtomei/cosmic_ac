@@ -531,7 +531,19 @@ no planner could?" into four measurable requirements:
   specification question, which is a real and different problem. The paper then
   handles preference endogeneity where it natively lives: V.3/V.5's engineered-
   utility-function thread (religion and morality as humanity's prior deliberate
-  preference engineering — Matthew's note), with the platform exploitation of
+  preference engineering — Matthew's note). **Empirical anchor for the engineered-utility claim
+  (Matthew's find, 2026-07-29):** General Social Survey data — poor Americans
+  attending church several times weekly report 36% "very happy" against 26% for
+  wealthy Americans who never attend; attendance predicts happiness better than
+  wealth. The engineered utility function delivers more utility per unit of
+  material input — the note's "higher utility for lower inputs" property,
+  measured. Provenance: numbers circulate as a graphic (via Peter Mallouk on X,
+  Jul 2026); citable sources are the GSS and William von Hippel, *The Social
+  Leap* (2018), which reports them. **VERIFY against GSS/the book; never cite
+  the graphic.** Confounds to state if used: selection into attendance, and
+  community-vs-doctrine as the active ingredient (von Hippel's own gloss credits
+  connection). Do not conflate William von Hippel (behavioral scientist) with
+  Eric von Hippel (innovation economist, already in the references), with the platform exploitation of
   realized preferences as the covert present (I.3) and the fork — engineered
   toward mutual valuation vs. captured by whoever holds the allocator — as the
   live stake. This also honestly cabins what the criterion can promise.
