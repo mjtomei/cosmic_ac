@@ -432,3 +432,40 @@ hits (2025–26 + control), B: 120 decile-stratified 2025–26, C: 60 control
 (Pangram's in-domain FPR), D: 40 synthetic (Pangram's in-domain Se). Fits
 a single $65 Professional month with ~1.44M words to spare (enough to
 sweep the full original-EN corpus afterward), or a month of free tier.
+
+## Related work (searched 2026-07-30; per project convention: build on it)
+
+- **Suvanto, McGlinchey, Barclay & Wahde, arXiv:2606.14209 (June 2026)** —
+  the closest work. UK Parliament + Swedish Riksdag, **written texts only**
+  (UK written statements, Swedish motions, 2014–Apr 2026); they explicitly
+  avoided transcribed speech ("prompting LLMs to replicate spontaneous
+  speech cues can be challenging"). Method: ICON, an interpretable linear
+  n-gram classifier trained human-vs-LLM-regenerated (Gemini 3.1
+  Flash-Lite, GPT-5 mini), FP rate measured on a 2021–mid-2022 holdout.
+  Finding: "steady increase in undisclosed LLM use, in both parliaments,
+  from 2022 onwards." No commercial-detector adjudication, no
+  placebo-lexicon inference; prevalence is classifier-rate based.
+- **Mexican Congress** (TecScience-reported): "linguistic traces" in both
+  chambers, rise from Sept 2024 (Spanish-language).
+- **UK journalism** (Pimlico Journal; TechRound): lexicon counts in
+  Commons Hansard ("I rise to speak" 635× in 2025 vs 231× all of 2024;
+  underscores/streamline). Directional, uncontrolled.
+- **Kobak et al. 2406.07016** (our frozen instrument source, PubMed) and
+  the Liang-group society-wide adoption studies frame the method space;
+  NCSL RELACS 2026: 55% of US legislative staff use genAI.
+
+**What remains distinct here** (state quietly, build-on framing):
+transcribed, professionally edited **floor speech** — the register the
+closest paper deliberately excluded — with the editing confound handled
+by design (pre-ChatGPT same-chamber control, original-vs-translation
+split); externally frozen lexicon instruments with placebo/permutation
+inference (p < 10⁻⁵, choice-free); in-domain Se/Sp both measured 1.0 for
+the adjudicating commercial detector, giving a design-based prevalence
+for recent speech (τ̂ = 8.3%); the zero-shot-vs-lexicon **scissors** as
+mechanism evidence for edited/assimilated AI; per-speaker adjudicated
+attribution (the May-2023 cluster); a Canadian legislature and a
+bilingual-record lever. Suvanto et al. becomes a citation and comparison
+point; their UK written-statement series is complementary to a UK
+spoken-debate replication under our frozen protocol
+(`replication_protocol.md`). Side study S15 (staff-change authorship
+drift) is registered in `studies-and-work-log.md`.
