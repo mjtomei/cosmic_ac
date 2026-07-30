@@ -446,7 +446,7 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
       failure mode a structural-risk advisor must NOT inherit, since its job is
       amplifying minority tail-risk warnings against majority comfort. Cite it
       twice: existence proof, then contrast.
-    - *Two anchors need softening.* Scheidel: Alfani's counterweight (As Gods
+    - *Two anchors need softening.* Scheidel: Alfani's counterweight (cite the JEL 2021 survey "Economic Inequality in Preindustrial Times"; we hold his EINITE working paper — As Gods
       Among Men, 2023; PNAS 2025 assessment) — the violence-only leveling
       thesis does NOT hold absolutely; phrase as "almost entirely" with the
       peaceful exceptions named. Acemoglu-Robinson: Ansell & Samuels'
