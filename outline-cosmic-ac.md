@@ -330,7 +330,11 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
   on current tooling — and it has a natural validation study: **backtest it**.
   Run the prompt against documented historical decision environments (pre-1789
   French fiscal records; pre-2008 risk memos) and score whether it surfaces the
-  pressure before the discharge. Registered as candidate study S15.
+  pressure before the discharge. Registered as candidate study S15 —
+  and prototypable in the S11/S12 societal simulator (Matthew): equip simulated
+  power-holders with the prompt, let extraction build pressure, compare
+  discharge paths against controls. Three studies now share that one harness,
+  which is the strongest argument yet for committing to it (open question 7).
 
   **Honest tension, now narrowed:** with distributed audit, the residual risk is
   not paternalism but homogenization — if everyone's horsemen prompt descends

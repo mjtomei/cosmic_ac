@@ -361,9 +361,12 @@ more mutually agreeable outcomes than human-style vulnerable ones?
 demonstrated in simulation?"
 *Method:* multi-agent negotiation over a shared resource with agents varying in
 personal exposure to loss; measure joint outcome quality and dispute persistence.
-*Note:* S11 and S12 plausibly share one harness — a drifting multi-agent economy
-with a learned allocator/negotiator — which is the main argument for committing
-to either.
+*Note:* S11, S12, and now S15 share one harness — a drifting multi-agent
+economy with a learned allocator/negotiator and power asymmetries. Three
+predictions, one build: the criterion boundary (S11), negotiation outcomes
+(S12), and the four-horsemen prompt's effect on discharge paths (S15). This is
+the strongest version of the case for committing to the simulator as the
+program's fifth effort (open question 7).
 
 ### S15. The four-horsemen prompt — **CANDIDATE, buildable now**
 *Origin:* the Arrow-clause thread (outline IV.3): the only way to avoid the four
@@ -383,6 +386,14 @@ always fires is a jester nobody hears.
 *Cost:* prompt + tooling ≈ free; backtest is archival work.
 *Note:* cheapest item on this list after S10's regex tier, and the only one
 that is itself an artifact of the paper's societal argument.
+*Simulation link (Matthew, 2026-07-30):* prototypable and testable in the
+S11/S12 societal simulator — seed a multi-agent economy with power asymmetries,
+let extraction accumulate Arrow-clause pressure, equip a treatment group of
+power-holders with the prompt, and compare discharge paths (reform vs revolt vs
+collapse) against controls. The controlled counterfactual the backtest cannot
+give: history runs once, the simulator reruns 1789 with the prompt installed.
+Backtest and simulation cover each other's weaknesses (external validity vs
+control).
 
 ### S13. Whole-system workload characterization — **NAMED PREREQUISITE**
 *Question:* across the real consumer workload mix, what are achieved vs maximum
