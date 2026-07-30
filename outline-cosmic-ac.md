@@ -567,8 +567,36 @@ no planner could?" into four measurable requirements:
   the elicitation leg, live in production. Honest complication to verify before
   use: Dubé-Misra reportedly found a majority of consumers paid *less* under
   personalized pricing than uniform pricing (approximate, from memory — check
-  the paper, which is worth adding to the collection). The fair-split version
-  of the same machinery is exactly V.3/V.5's claim., with the platform exploitation of
+  the paper, which is worth adding to the collection). **The incidence analysis (Matthew's question + the correction,
+  2026-07-30).** Efficiency does NOT come from a higher average price — it
+  comes from more trade. Under uniform pricing the deadweight triangle is the
+  excluded buyers; personalization serves them below the old uniform price
+  while pushing high-WTP buyers up toward their reservation values. The price
+  distribution fans out in both directions; the average over all transactions
+  is ambiguous (Dubé-Misra's majority-paid-less is exactly this signature);
+  what unambiguously rises is output, producer surplus, and prices for the
+  previously-served high-WTP group. **Which makes Matthew's tax framing
+  structurally exact:** burden ordered by willingness to pay ≈ ability to pay =
+  a progressive tax on the good, with service extended downmarket — except the
+  proceeds are privatized. "A progressive tax collected by a private party" is
+  the honest one-line description, and it explains the opposition pattern
+  without anyone acting against reason: (a) the people who pay more under it
+  are the affluent and vocal; (b) a tax needs legitimacy of the collector, and
+  a firm's pricing algorithm has none; (c) deep fairness norms oppose
+  demand-based pricing per se — the dual-entitlement result (Kahneman, Knetsch
+  & Thaler, "Fairness as a Constraint on Profit Seeking," AER 76(4), 1986 —
+  VERIFY the AER original handle; Crossref surfaces only anthology reprints):
+  people accept cost-justified increases and reject demand-based ones, which is
+  why even beneficiaries oppose surge pricing. **The clinching comparison:
+  university financial aid.** Tuition minus need-based aid IS per-user pricing
+  on surveilled ability to pay (the FAFSA is the surveillance), run at scale
+  for decades with a moral halo — same machinery, accepted, because the
+  estimator is trusted and the surplus is framed as redistributed. So the
+  variable that flips acceptance is not the mechanism but the governance of the
+  estimator and the destination of the surplus — which is the paper's
+  aggregation-point/moat-vs-commons argument arriving in the pricing layer, and
+  the strongest everyday case for V.3's fair-split version. The fair-split
+  version of the same machinery is exactly V.3/V.5's claim., with the platform exploitation of
   realized preferences as the covert present (I.3) and the fork — engineered
   toward mutual valuation vs. captured by whoever holds the allocator — as the
   live stake. This also honestly cabins what the criterion can promise.
