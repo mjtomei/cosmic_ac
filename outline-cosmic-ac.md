@@ -387,6 +387,24 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
     blunts the stakes — when access to resources no longer rides on relative
     standing, the residual endowment differences stop being fate. State this
     rather than hiding it; it is where a hostile reader will push.
+    **And the limit resolution (Matthew, 2026-07-30): even the natural lottery
+    deflates — but that comes after.** Once machine competence makes human
+    competence differences a rounding error, the endowment term on the refined
+    scale asymptotes toward irrelevance and the scale reduces to **virtue
+    alone** — the exercisable, chosen part. Rawls's objection is answered in
+    the transition and *dissolved* in the limit. The outline already contains
+    this endgame without naming it: V.3's bullet that models serve as
+    interaction points "when cleanliness of their intentions and availability
+    of data outweigh limited competence" is the same structure — intentions
+    outweighing competence — and coherence's bottleneck-is-wanting thesis is
+    its engine: when competence is abundant, the quality of wanting is the
+    last scarce human input. Virtue-as-terminal-differentiator is the wanting
+    bottleneck stated as an endpoint.
+    **Sequencing discipline ("but that comes after"):** keep the two regimes
+    distinct in the text — the transitional meritocracy (endowment + virtue,
+    near register) and the virtue-only limit (far register, [IMAGINED],
+    calibrated possibility-not-arrival like everything else at that altitude).
+    Collapsing them would hand the hostile reader the conflation for free.
   **The historical rhyme, with its warning:** the last time the interface to
   the highest power was democratized — vernacular scripture plus printing, the
   priesthood of all believers — the intermediary hierarchy's de facto royalty
