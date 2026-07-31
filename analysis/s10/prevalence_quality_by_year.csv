@@ -1,0 +1,9 @@
+year,n,pangram_flag_rate,justification,common_good,respect_groups,respect_demands,respect_counterargs,constructive,evidence
+2019,35,0.0,1.66,1.29,1.23,0.96,1.5,0.54,2.06
+2020,40,0.0,1.68,1.05,1.38,0.83,1.44,0.2,1.82
+2021,40,0.0,2.02,1.05,1.1,0.97,1.43,0.25,2.05
+2022,40,0.0,1.9,1.25,1.35,0.97,1.73,0.5,2.2
+2023,50,0.04,1.74,1.14,1.26,0.85,1.44,0.34,2.12
+2024,50,0.04,1.96,1.28,1.3,1.0,1.39,0.26,2.4
+2025-26,90,0.0889,1.87,1.27,1.21,0.6,1.42,0.24,2.24
+# random per-year samples; Pangram verdicts + Fable-5 anchored-v2 blinded judging; 2020-22 Sp check 0/120
