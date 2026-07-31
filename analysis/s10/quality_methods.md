@@ -119,3 +119,28 @@ silently breaks; the remaining "I rise today" is a simulated first person.
   dimension, 100% within one point; ai_guess mean|Δ| 5.7. Inter-judge vs
   the Qwen3-8B pilot: ρ 0.43–0.61 (pilot directionally right,
   compressed).
+
+## Anchored v2 (2026-07-31, wf_0aa63dc2 — strict DQI + Commons anchors)
+
+- **Anchoring effect, measured**: rank-order stable on well-defined
+  dimensions (evidence ρ=0.90, ai_guess ρ=0.94, justification ρ=0.75)
+  but calibration moved hard where the worked examples bite —
+  justification mean 2.12→1.73 (anchors raise the "complete inference"
+  bar), constructive 0.99→0.25 (strict "mediating proposal" almost never
+  occurs, matching Steenbergen's own all-zeros Commons finding).
+  Reproduces the JPIPE anchoring claim on our corpus.
+- **Repeat-pass reliability at the published human bar**: justification
+  r=0.83 (their inter-coder r=0.716), respect_demands 0.87, evidence
+  0.91, counterarguments 0.75 (their κ was 0.559). Caveat: self-agreement
+  ≠ inter-coder agreement; the human-coded subsample remains the true
+  validation.
+- **AUC vs Pangram unchanged: 0.936** (property of the text, not the rubric).
+- **Blinded 2019 vs 2025-26 under strict DQI**: justification +0.21 and
+  evidence +0.19 UP; respect toward others' demands **−0.36**
+  (0.96→0.60) and constructive politics **−0.30** (0.54→0.24) DOWN.
+  The deliberation-theory phrasing of the whole quality result: the
+  chamber argues more completely and cites more, but engages opposing
+  demands less and almost never mediates. Form up, deliberation down.
+- AI-verdict vs human-verdict under v2: justification 1.77 vs 1.52,
+  respect_demands 0.55 vs 0.91 — AI-flagged speech is better-formed and
+  worse-engaged, the same scissors at the discourse level.
