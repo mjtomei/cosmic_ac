@@ -1,0 +1,659 @@
+seg_id,stratum,date,speaker,n_words,prediction,fraction_ai,fraction_ai_assisted
+2025-10-22#t102w1,A-consensus-2025,2025-10-22,Mr. M. LeBlanc,343,Human,0.0,0.0
+2025-10-22#t18w0,A-consensus-2025,2025-10-22,Mr. Russell,144,Human,0.0,0.0
+2025-10-22#t93w0,A-consensus-2025,2025-10-22,Ms. Mitton,250,Human,0.0,0.0
+2025-10-23#t104w0,A-consensus-2025,2025-10-23,Madam Speaker,100,Human,0.0,0.0
+2025-10-24#t162w0,A-consensus-2025,2025-10-24,Hon. Mr. Legacy,206,Mixed,0.0,1.0
+2025-10-28#t254w0,A-consensus-2025,2025-10-28,Mr. Savoie,56,Human,0.0,0.0
+2025-10-29#t337w0,A-consensus-2025,2025-10-29,Mr. Savoie,206,Human,0.0,0.0
+2025-10-30#t430w0,A-consensus-2025,2025-10-30,Ms. Sodhi,176,AI,1.0,0.0
+2025-11-05#t686w0,A-consensus-2025,2025-11-05,Madam Speaker,69,Human,0.0,0.0
+2025-11-05#t687w2,A-consensus-2025,2025-11-05,Mr. Monahan,64,AI,1.0,0.0
+2025-11-05#t701w0,A-consensus-2025,2025-11-05,Mr. M. LeBlanc,69,Human,0.0,0.0
+2025-11-06#t785w0,A-consensus-2025,2025-11-06,Madam Speaker,103,Human,0.0,0.0
+2025-11-06#t805w4,A-consensus-2025,2025-11-06,Ms. S. Wilson,53,Human,0.0,0.0
+2025-11-18#t922w0,A-consensus-2025,2025-11-18,Hon. Mr. McKee,91,Human,0.0,0.0
+2025-12-02#t1333w0,A-consensus-2025,2025-12-02,Hon. C. Chiasson,161,Human,0.0,0.0
+2025-12-02#t1365w0,A-consensus-2025,2025-12-02,Hon. Ms. Thériault,143,AI,1.0,0.0
+2025-12-04#t1516w1,A-consensus-2025,2025-12-04,Ms. M. Wilson,90,AI,1.0,0.0
+2025-12-05#t1574w0,A-consensus-2025,2025-12-05,Ms. Conroy,165,Human,0.0,0.0
+2025-12-09#t1719w0,A-consensus-2025,2025-12-09,Mr. Chair,336,Human,0.0,0.0
+2025-12-10#t1743w0,A-consensus-2025,2025-12-10,Mr. Monahan,160,AI,1.0,0.0
+2025-12-10#t1744w0,A-consensus-2025,2025-12-10,Mr. Savoie,72,Human,0.0,0.0
+2025-12-10#t1783w0,A-consensus-2025,2025-12-10,Mr. Russell,261,AI,1.0,0.0
+2025-12-11#t1877w2,A-consensus-2025,2025-12-11,Madam Speaker,119,Human,0.0,0.0
+2025-12-11#t1916w8,A-consensus-2025,2025-12-11,,92,Human,0.0,0.0
+2025-12-12#t2026w1,A-consensus-2025,2025-12-12,Mr. Savoie,303,Human,0.0,0.0
+2026-03-18#t2129w0,A-consensus-2025,2026-03-18,Ms. Mitton,99,Human,0.0,0.0
+2026-03-20#t2144w0,A-consensus-2025,2026-03-20,Mr. Savoie,120,AI,1.0,0.0
+2026-03-24#t2305w3,A-consensus-2025,2026-03-24,Mr. M. LeBlanc,208,AI,1.0,0.0
+2026-03-26#t2462w0,A-consensus-2025,2026-03-26,Mr. Arseneault,150,AI,1.0,0.0
+2026-03-26#t2545w3,A-consensus-2025,2026-03-26,Mr. Bourque,110,Human,0.0,0.0
+2026-03-26#t2551w0,A-consensus-2025,2026-03-26,Mr. M. LeBlanc,300,AI,1.0,0.0
+2026-05-06#t2644w0,A-consensus-2025,2026-05-06,Ms. M. Wilson,161,AI,1.0,0.0
+2026-05-07#t2871w3,A-consensus-2025,2026-05-07,Mr. Lee,337,AI,1.0,0.0
+2026-05-13#t2998w0,A-consensus-2025,2026-05-13,Hon. Ms. Holt,269,AI,1.0,0.0
+2026-05-13#t3058w0,A-consensus-2025,2026-05-13,Mr. Ames,126,AI,1.0,0.0
+2026-05-13#t3063w0,A-consensus-2025,2026-05-13,Hon. C. Chiasson,309,Mixed,0.0,1.0
+2019-05-10#t30w0,A-consensus-ctl,2019-05-10,Hon. S. Wilson,224,Human,0.0,0.0
+2019-05-10#t64w0,A-consensus-ctl,2019-05-10,Hon. S. Wilson,63,Human,0.0,0.0
+2019-11-27#t132w0,A-consensus-ctl,2019-11-27,Ms. Thériault,140,Human,0.0,0.0
+2019-11-27#t185w0,A-consensus-ctl,2019-11-27,Mr. Austin,108,Human,0.0,0.0
+2019-11-27#t198w0,A-consensus-ctl,2019-11-27,Mrs. Conroy,124,Human,0.0,0.0
+2019-11-27#t216w1,A-consensus-ctl,2019-11-27,,132,Human,0.0,0.0
+2019-11-27#t224w0,A-consensus-ctl,2019-11-27,Mr. Speaker,64,Human,0.0,0.0
+2019-11-27#t230w13,A-consensus-ctl,2019-11-27,Mr. Austin,113,Human,0.0,0.0
+2019-11-27#t256w0,A-consensus-ctl,2019-11-27,Mr. K. Chiasson,178,Human,0.0,0.0
+2026-05-05#t2582w0,B-decile-0,2026-05-05,Mr. Mallet,115,Human,0.0,0.0
+2026-03-24#t2246w0,B-decile-0,2026-03-24,Hon. Ms. Miles,241,Human,0.0,0.0
+2025-11-07#t915w0,B-decile-0,2025-11-07,Hon. Ms. Holt,290,Human,0.0,0.0
+2025-10-28#t288w5,B-decile-0,2025-10-28,Ms. Conroy,124,Human,0.0,0.0
+2026-05-07#t2862w0,B-decile-0,2026-05-07,Mr. M. LeBlanc,67,Human,0.0,0.0
+2025-10-28#t197w0,B-decile-0,2025-10-28,Hon. Mr. Finnigan,142,Human,0.0,0.0
+2025-11-07#t896w0,B-decile-0,2025-11-07,Mr. Savoie,206,Human,0.0,0.0
+2026-03-26#t2519w0,B-decile-0,2026-03-26,Mr. M. LeBlanc,74,Human,0.0,0.0
+2025-11-06#t756w0,B-decile-0,2025-11-06,Hon. Mr. Hickey,92,Human,0.0,0.0
+2025-10-22#t81w0,B-decile-0,2025-10-22,Mr. Savoie,291,Human,0.0,0.0
+2026-05-06#t2699w0,B-decile-0,2026-05-06,Hon. Mr. D’Amours,130,Mixed,0.0,1.0
+2026-03-25#t2368w0,B-decile-0,2026-03-25,Hon. Mr. Dornan,104,Human,0.0,0.0
+2025-12-09#t1701w0,B-decile-1,2025-12-09,Hon. Mr. Legacy,79,Human,0.0,0.0
+2025-11-05#t646w0,B-decile-1,2025-11-05,Mr. Savoie,180,Human,0.0,0.0
+2026-05-08#t2976w0,B-decile-1,2026-05-08,Mr. Hogan,263,Human,0.0,0.0
+2025-10-29#t371w0,B-decile-1,2025-10-29,Hon. Mr. D’Amours,199,Human,0.0,0.0
+2025-12-11#t1817w0,B-decile-1,2025-12-11,Mr. Savoie,205,Human,0.0,0.0
+2026-05-08#t2891w0,B-decile-1,2026-05-08,Ms. M. Johnson,226,Human,0.0,0.0
+2026-03-18#t2051w0,B-decile-1,2026-03-18,Mr. Coon,160,Human,0.0,0.0
+2025-10-22#t102w16,B-decile-1,2025-10-22,Mr. M. LeBlanc,311,Human,0.0,0.0
+2026-03-18#t2135w12,B-decile-1,2026-03-18,Mr. M. LeBlanc,344,AI,1.0,0.0
+2025-12-11#t1816w0,B-decile-1,2025-12-11,Mr. Austin,217,Human,0.0,0.0
+2025-10-22#t48w0,B-decile-1,2025-10-22,Mr. Savoie,169,Human,0.0,0.0
+2025-10-22#t32w0,B-decile-1,2025-10-22,Mr. Savoie,162,Human,0.0,0.0
+2025-11-21#t1271w0,B-decile-2,2025-11-21,Mr. Austin,188,Human,0.0,0.0
+2025-11-06#t836w0,B-decile-2,2025-11-06,,355,Human,0.0,0.0
+2026-03-24#t2323w3,B-decile-2,2026-03-24,Ms. Wilcott,330,Human,0.0,0.0
+2025-12-03#t1430w0,B-decile-2,2025-12-03,Ms. Mitton,147,Human,0.0,0.0
+2025-12-09#t1692w1,B-decile-2,2025-12-09,Mr. M. LeBlanc,349,Human,0.0,0.0
+2025-10-29#t325w0,B-decile-2,2025-10-29,Mr. Cullins,156,Human,0.0,0.0
+2025-10-24#t189w4,B-decile-2,2025-10-24,Hon. Mr. Hickey,236,Human,0.0,0.0
+2025-10-29#t327w0,B-decile-2,2025-10-29,Ms. S. Wilson,142,Human,0.0,0.0
+2025-10-30#t495w1,B-decile-2,2025-10-30,Mr. Weir,339,Human,0.0,0.0
+2025-11-04#t565w0,B-decile-2,2025-11-04,Mr. Savoie,56,Human,0.0,0.0
+2025-10-29#t397w2,B-decile-2,2025-10-29,Mr. J. LeBlanc,305,Human,0.0,0.0
+2026-03-20#t2201w0,B-decile-2,2026-03-20,Hon. Ms. Miles,170,AI,1.0,0.0
+2025-12-05#t1622w0,B-decile-3,2025-12-05,Mr. M. LeBlanc,337,Human,0.0,0.0
+2026-03-24#t2318w3,B-decile-3,2026-03-24,Mr. Austin,291,Human,0.0,0.0
+2026-03-25#t2453w3,B-decile-3,2026-03-25,Ms. Conroy,246,Human,0.0,0.0
+2026-05-14#t3171w0,B-decile-3,2026-05-14,Ms. M. Wilson,233,Human,0.0,0.0
+2026-03-24#t2318w10,B-decile-3,2026-03-24,Mr. Austin,181,Human,0.0,0.0
+2026-03-25#t2346w0,B-decile-3,2026-03-25,Mr. Mallet,288,AI,1.0,0.0
+2025-10-21#t4w1,B-decile-3,2025-10-21,,300,Human,0.0,0.0
+2025-12-04#t1509w0,B-decile-3,2025-12-04,Hon. Mr. Gauvin,169,Human,0.0,0.0
+2026-03-26#t2472w0,B-decile-3,2026-03-26,Ms. Mitton,175,Human,0.0,0.0
+2026-03-24#t2322w9,B-decile-3,2026-03-24,Ms. Mitton,338,Human,0.0,0.0
+2025-12-11#t1822w0,B-decile-3,2025-12-11,Hon. Mr. McKee,201,Human,0.0,0.0
+2025-10-30#t515w1,B-decile-3,2025-10-30,Ms. Wilcott,333,Human,0.0,0.0
+2026-05-14#t3170w0,B-decile-4,2026-05-14,Mr. Bourque,156,Human,0.0,0.0
+2026-03-24#t2322w8,B-decile-4,2026-03-24,Ms. Mitton,317,Human,0.0,0.0
+2026-05-14#t3166w1,B-decile-4,2026-05-14,Mr. M. LeBlanc,360,Human,0.0,0.0
+2026-05-07#t2790w0,B-decile-4,2026-05-07,Mr. Savoie,182,Human,0.0,0.0
+2026-03-25#t2431w0,B-decile-4,2026-03-25,Mr. Hogan,207,Human,0.0,0.0
+2025-12-02#t1317w0,B-decile-4,2025-12-02,Hon. Ms. Holt,151,Human,0.0,0.0
+2025-10-30#t534w3,B-decile-4,2025-10-30,Ms. S. Wilson,338,AI,1.0,0.0
+2025-12-02#t1316w0,B-decile-4,2025-12-02,Mr. Austin,327,Human,0.0,0.0
+2025-10-22#t100w0,B-decile-4,2025-10-22,Madam Speaker,186,Human,0.0,0.0
+2026-05-07#t2771w0,B-decile-4,2026-05-07,Ms. S. Wilson,154,Human,0.0,0.0
+2026-05-13#t3084w0,B-decile-4,2026-05-13,Mr. Monahan,336,Human,0.0,0.0
+2025-10-28#t280w1,B-decile-4,2025-10-28,Mr. Lee,160,Human,0.0,0.0
+2026-03-25#t2449w0,B-decile-5,2026-03-25,Ms. Conroy,307,Human,0.0,0.0
+2026-03-24#t2320w1,B-decile-5,2026-03-24,Mr. Austin,215,Human,0.0,0.0
+2026-03-20#t2229w1,B-decile-5,2026-03-20,Hon. Ms. Miles,154,Human,0.0,0.0
+2025-11-06#t766w0,B-decile-5,2025-11-06,Hon. C. Johnson,136,Human,0.0,0.0
+2025-12-09#t1645w0,B-decile-5,2025-12-09,Mr. Savoie,155,Human,0.0,0.0
+2026-05-07#t2847w1,B-decile-5,2026-05-07,Mr. Coon,297,Human,0.0,0.0
+2025-11-06#t790w0,B-decile-5,2025-11-06,Mr. Coon,179,Human,0.0,0.0
+2025-10-24#t175w2,B-decile-5,2025-10-24,Mr. Coon,335,Human,0.0,0.0
+2026-03-25#t2403w0,B-decile-5,2026-03-25,Hon. Mr. D’Amours,116,Human,0.0,0.0
+2025-10-24#t150w0,B-decile-5,2025-10-24,Hon. C. Johnson,108,Human,0.0,0.0
+2026-03-17#t2033w0,B-decile-5,2026-03-17,,348,Human,0.0,0.0
+2025-11-18#t1014w2,B-decile-5,2025-11-18,Mr. Austin,198,Human,0.0,0.0
+2025-12-11#t1904w0,B-decile-6,2025-12-11,Mr. Savoie,92,Human,0.0,0.0
+2025-10-29#t377w1,B-decile-6,2025-10-29,Madam Speaker,343,Human,0.0,0.0
+2025-11-05#t615w0,B-decile-6,2025-11-05,Hon. Mr. Gauvin,281,Human,0.0,0.0
+2025-10-21#t2w6,B-decile-6,2025-10-21,Her Honour,358,Human,0.0,0.0
+2025-12-02#t1369w3,B-decile-6,2025-12-02,Hon. Mr. Legacy,355,Human,0.0,0.0
+2025-11-21#t1269w0,B-decile-6,2025-11-21,Mr. Austin,142,Human,0.0,0.0
+2025-10-29#t359w0,B-decile-6,2025-10-29,Hon. Mr. LePage,132,Human,0.0,0.0
+2026-05-13#t3056w0,B-decile-6,2026-05-13,Mr. Savoie,79,Human,0.0,0.0
+2026-03-26#t2554w4,B-decile-6,2026-03-26,Mr. Coon,252,Human,0.0,0.0
+2026-05-06#t2742w1,B-decile-6,2026-05-06,Mr. Monahan,318,AI,1.0,0.0
+2026-03-25#t2363w0,B-decile-6,2026-03-25,Mr. Hogan,128,Human,0.0,0.0
+2026-03-24#t2311w0,B-decile-6,2026-03-24,Mr. Weir,321,Human,0.0,0.0
+2026-05-06#t2700w0,B-decile-7,2026-05-06,Ms. M. Wilson,174,Human,0.0,0.0
+2025-11-05#t660w0,B-decile-7,2025-11-05,Ms. Mitton,167,Human,0.0,0.0
+2025-11-20#t1215w1,B-decile-7,2025-11-20,Mr. Weir,130,Human,0.0,0.0
+2025-12-11#t1802w0,B-decile-7,2025-12-11,Ms. Wilcott,147,Human,0.0,0.0
+2026-05-13#t3072w1,B-decile-7,2026-05-13,Mr. Ames,351,AI,1.0,0.0
+2025-11-07#t914w0,B-decile-7,2025-11-07,Mr. Coon,355,Human,0.0,0.0
+2026-03-25#t2412w0,B-decile-7,2026-03-25,Mr. Coon,359,Human,0.0,0.0
+2025-12-10#t1767w0,B-decile-7,2025-12-10,Ms. Mitton,123,Human,0.0,0.0
+2025-11-21#t1276w0,B-decile-7,2025-11-21,Hon. Ms. Holt,164,Human,0.0,0.0
+2025-12-09#t1640w0,B-decile-7,2025-12-09,Mr. Oliver,112,Human,0.0,0.0
+2026-03-24#t2329w0,B-decile-7,2026-03-24,Mr. M. LeBlanc,68,Human,0.0,0.0
+2025-12-11#t1806w0,B-decile-7,2025-12-11,Ms. Mitton,163,Human,0.0,0.0
+2026-03-18#t2064w0,B-decile-8,2026-03-18,Mr. Cullins,131,Human,0.0,0.0
+2026-03-20#t2162w0,B-decile-8,2026-03-20,Mr. Hogan,142,Human,0.0,0.0
+2026-03-25#t2389w0,B-decile-8,2026-03-25,Hon. Ms. Holt,193,Human,0.0,0.0
+2026-05-05#t2605w0,B-decile-8,2026-05-05,Hon. Mr. Randall,155,Human,0.0,0.0
+2026-05-05#t2615w0,B-decile-8,2026-05-05,Hon. Mr. Dornan,183,Human,0.0,0.0
+2026-03-18#t2047w1,B-decile-8,2026-03-18,Hon. Mr. Dornan,129,Human,0.0,0.0
+2025-12-02#t1342w0,B-decile-8,2025-12-02,Mr. Coon,147,Human,0.0,0.0
+2026-05-07#t2832w1,B-decile-8,2026-05-07,Hon. Mr. Dornan,304,Human,0.0,0.0
+2025-10-29#t352w0,B-decile-8,2025-10-29,Mr. Ames,61,Human,0.0,0.0
+2025-12-11#t1804w0,B-decile-8,2025-12-11,Mr. Mallet,114,Human,0.0,0.0
+2026-05-13#t3076w2,B-decile-8,2026-05-13,Mr. Ames,352,AI,1.0,0.0
+2025-11-18#t1002w0,B-decile-8,2025-11-18,Mr. Coon,353,Human,0.0,0.0
+2025-11-05#t690w1,B-decile-9,2025-11-05,Ms. Bockus,302,AI,1.0,0.0
+2026-05-13#t3087w1,B-decile-9,2026-05-13,Mr. Weir,92,Human,0.0,0.0
+2026-05-06#t2693w0,B-decile-9,2026-05-06,Ms. Mitton,164,Human,0.0,0.0
+2025-11-21#t1255w0,B-decile-9,2025-11-21,Mr. Savoie,80,Human,0.0,0.0
+2025-12-09#t1702w0,B-decile-9,2025-12-09,Mr. Monahan,96,Human,0.0,0.0
+2026-03-18#t2107w0,B-decile-9,2026-03-18,Ms. Mitton,156,Human,0.0,0.0
+2025-12-04#t1473w0,B-decile-9,2025-12-04,Mr. Doucet,153,Human,0.0,0.0
+2026-05-06#t2666w0,B-decile-9,2026-05-06,Hon. Mr. Randall,121,Human,0.0,0.0
+2025-12-09#t1639w0,B-decile-9,2025-12-09,Mr. Robichaud,138,AI,1.0,0.0
+2025-12-11#t1848w0,B-decile-9,2025-12-11,Hon. Mr. Dornan,143,Human,0.0,0.0
+2026-05-05#t2616w0,B-decile-9,2026-05-05,Mr. Hogan,113,Human,0.0,0.0
+2025-10-24#t139w0,B-decile-9,2025-10-24,Mr. Austin,132,Human,0.0,0.0
+2019-11-27#t145w0,C-control-2019,2019-11-27,Mr. Savoie,137,Human,0.0,0.0
+2019-05-10#t25w0,C-control-2019,2019-05-10,Hon. Mr. Gauvin,141,Human,0.0,0.0
+2019-12-12#t368w0,C-control-2019,2019-12-12,Mr. LePage,107,Human,0.0,0.0
+2019-12-12#t348w0,C-control-2019,2019-12-12,,299,Human,0.0,0.0
+2019-11-27#t232w4,C-control-2019,2019-11-27,Mr. C. Chiasson,347,Human,0.0,0.0
+2019-11-27#t138w0,C-control-2019,2019-11-27,Mr. Austin,172,Human,0.0,0.0
+2019-11-27#t261w5,C-control-2019,2019-11-27,Hon. Mr. Cardy,324,Human,0.0,0.0
+2019-12-12#t294w0,C-control-2019,2019-12-12,Hon. Mrs. Shephard,159,Human,0.0,0.0
+2019-11-27#t267w8,C-control-2019,2019-11-27,Mr. Horsman,349,Human,0.0,0.0
+2019-12-12#t291w0,C-control-2019,2019-12-12,Mr. D. Landry,135,Human,0.0,0.0
+2019-11-27#t238w11,C-control-2019,2019-11-27,Ms. Mitton,359,Human,0.0,0.0
+2019-03-29#t9w3,C-control-2019,2019-03-29,,292,Human,0.0,0.0
+2019-11-27#t253w3,C-control-2019,2019-11-27,Mr. K. Chiasson,309,Human,0.0,0.0
+2019-03-29#t9w8,C-control-2019,2019-03-29,,328,Human,0.0,0.0
+2019-12-12#t354w0,C-control-2019,2019-12-12,,305,Human,0.0,0.0
+2019-11-27#t203w0,C-control-2019,2019-11-27,,352,Human,0.0,0.0
+2019-12-12#t305w0,C-control-2019,2019-12-12,Mr. LePage,132,Human,0.0,0.0
+2019-12-12#t314w0,C-control-2019,2019-12-12,Mr. Austin,58,Human,0.0,0.0
+2019-12-12#t385w7,C-control-2019,2019-12-12,Hon. Mr. Holland,303,Human,0.0,0.0
+2019-12-12#t406w1,C-control-2019,2019-12-12,Ms. Rogers,328,Human,0.0,0.0
+2019-11-27#t222w0,C-control-2019,2019-11-27,,304,Human,0.0,0.0
+2019-12-12#t302w0,C-control-2019,2019-12-12,Hon. Mrs. Shephard,103,Human,0.0,0.0
+2019-11-27#t252w3,C-control-2019,2019-11-27,Mr. K. Chiasson,51,Human,0.0,0.0
+2019-11-27#t160w0,C-control-2019,2019-11-27,Mr. LePage,132,Human,0.0,0.0
+2019-12-12#t362w3,C-control-2019,2019-12-12,,358,Human,0.0,0.0
+2019-11-27#t230w2,C-control-2019,2019-11-27,Mr. Austin,241,Human,0.0,0.0
+2019-12-12#t382w0,C-control-2019,2019-12-12,Mr. Austin,135,Human,0.0,0.0
+2019-12-12#t330w0,C-control-2019,2019-12-12,Mr. K. Arseneau,165,Human,0.0,0.0
+2019-11-27#t155w0,C-control-2019,2019-11-27,Hon. Mr. Holder,208,Human,0.0,0.0
+2019-11-27#t140w0,C-control-2019,2019-11-27,Mr. Harvey,159,Human,0.0,0.0
+2019-12-12#t371w0,C-control-2019,2019-12-12,Mr. McKee,239,Human,0.0,0.0
+2019-11-27#t238w4,C-control-2019,2019-11-27,Ms. Mitton,263,Human,0.0,0.0
+2019-11-19#t116w13,C-control-2019,2019-11-19,,281,Human,0.0,0.0
+2019-11-27#t252w0,C-control-2019,2019-11-27,Mr. K. Chiasson,344,Human,0.0,0.0
+2019-05-10#t82w0,C-control-2019,2019-05-10,Hon. Mr. Higgs,170,Human,0.0,0.0
+2019-11-27#t165w0,C-control-2019,2019-11-27,Hon. Mr. Holland,182,Human,0.0,0.0
+2019-11-27#t161w0,C-control-2019,2019-11-27,Hon. Mr. Higgs,249,Human,0.0,0.0
+2019-11-19#t116w4,C-control-2019,2019-11-19,,354,Human,0.0,0.0
+2019-12-12#t361w1,C-control-2019,2019-12-12,Ms. Mitton,352,Human,0.0,0.0
+2019-11-27#t217w0,C-control-2019,2019-11-27,Mr. McKee,133,Human,0.0,0.0
+2019-12-12#t400w0,C-control-2019,2019-12-12,Hon. Mr. Carr,321,Human,0.0,0.0
+2019-11-27#t221w0,C-control-2019,2019-11-27,Mr. Coon,92,Human,0.0,0.0
+2019-12-12#t398w0,C-control-2019,2019-12-12,Hon. Mr. Carr,235,Human,0.0,0.0
+2019-05-10#t81w0,C-control-2019,2019-05-10,Mr. Horsman,178,Human,0.0,0.0
+2019-05-10#t108w0,C-control-2019,2019-05-10,,359,Human,0.0,0.0
+2019-12-12#t385w3,C-control-2019,2019-12-12,Hon. Mr. Holland,343,Human,0.0,0.0
+2019-11-27#t223w1,C-control-2019,2019-11-27,M. D’Amours,189,Human,0.0,0.0
+2019-11-27#t261w8,C-control-2019,2019-11-27,Hon. Mr. Cardy,266,Human,0.0,0.0
+2019-11-27#t187w0,C-control-2019,2019-11-27,Mr. Crossman,107,Human,0.0,0.0
+2019-11-19#t116w0,C-control-2019,2019-11-19,,331,Human,0.0,0.0
+2019-11-27#t240w0,C-control-2019,2019-11-27,Mr. G. Arseneault,77,Human,0.0,0.0
+2019-11-27#t230w9,C-control-2019,2019-11-27,Mr. Austin,349,Human,0.0,0.0
+2019-12-12#t318w0,C-control-2019,2019-12-12,Mrs. F. Landry,123,Human,0.0,0.0
+2019-12-12#t398w4,C-control-2019,2019-12-12,Hon. Mr. Carr,234,Human,0.0,0.0
+2019-11-27#t257w0,C-control-2019,2019-11-27,Mr. K. Chiasson,76,Human,0.0,0.0
+2019-12-12#t349w0,C-control-2019,2019-12-12,Mr. K. Chiasson,352,Human,0.0,0.0
+2019-11-27#t137w0,C-control-2019,2019-11-27,Mr. Coon,147,Human,0.0,0.0
+2019-12-12#t327w0,C-control-2019,2019-12-12,Mr. Savoie,168,Human,0.0,0.0
+2019-11-27#t261w4,C-control-2019,2019-11-27,Hon. Mr. Cardy,350,Human,0.0,0.0
+2019-12-12#t300w0,C-control-2019,2019-12-12,Hon. Mrs. Shephard,171,Human,0.0,0.0
+SE#members_statement:Bill 23 and the integrity of:0,D-synthetic-se,synthetic-2026,SYNTHETIC,175,AI,1.0,0.0
+SE#qp_question:Bill 23 and the integrity of:0,D-synthetic-se,synthetic-2026,SYNTHETIC,138,AI,1.0,0.0
+SE#ministers_statement:Bill 23 and the integrity of:0,D-synthetic-se,synthetic-2026,SYNTHETIC,229,AI,1.0,0.0
+SE#debate_response:Bill 23 and the integrity of:0,D-synthetic-se,synthetic-2026,SYNTHETIC,182,AI,1.0,0.0
+SE#members_statement:the 2026-27 capital budget o:0,D-synthetic-se,synthetic-2026,SYNTHETIC,193,AI,1.0,0.0
+SE#qp_question:the 2026-27 capital budget o:0,D-synthetic-se,synthetic-2026,SYNTHETIC,118,AI,1.0,0.0
+SE#ministers_statement:the 2026-27 capital budget o:0,D-synthetic-se,synthetic-2026,SYNTHETIC,236,AI,1.0,0.0
+SE#debate_response:the 2026-27 capital budget o:0,D-synthetic-se,synthetic-2026,SYNTHETIC,165,AI,1.0,0.0
+SE#members_statement:the Nursing Home Without Wal:0,D-synthetic-se,synthetic-2026,SYNTHETIC,181,AI,1.0,0.0
+SE#qp_question:the Nursing Home Without Wal:0,D-synthetic-se,synthetic-2026,SYNTHETIC,96,AI,1.0,0.0
+SE#ministers_statement:the Nursing Home Without Wal:0,D-synthetic-se,synthetic-2026,SYNTHETIC,228,AI,1.0,0.0
+SE#debate_response:the Nursing Home Without Wal:0,D-synthetic-se,synthetic-2026,SYNTHETIC,155,AI,1.0,0.0
+SE#members_statement:addiction treatment and ment:0,D-synthetic-se,synthetic-2026,SYNTHETIC,195,AI,1.0,0.0
+SE#qp_question:addiction treatment and ment:0,D-synthetic-se,synthetic-2026,SYNTHETIC,82,AI,1.0,0.0
+SE#ministers_statement:addiction treatment and ment:0,D-synthetic-se,synthetic-2026,SYNTHETIC,210,AI,1.0,0.0
+SE#debate_response:addiction treatment and ment:0,D-synthetic-se,synthetic-2026,SYNTHETIC,200,AI,1.0,0.0
+SE#members_statement:the property assessment free:0,D-synthetic-se,synthetic-2026,SYNTHETIC,171,AI,1.0,0.0
+SE#qp_question:the property assessment free:0,D-synthetic-se,synthetic-2026,SYNTHETIC,105,AI,1.0,0.0
+SE#ministers_statement:the property assessment free:0,D-synthetic-se,synthetic-2026,SYNTHETIC,196,AI,1.0,0.0
+SE#debate_response:the property assessment free:0,D-synthetic-se,synthetic-2026,SYNTHETIC,202,AI,1.0,0.0
+SE#members_statement:school bus breakdowns and st:0,D-synthetic-se,synthetic-2026,SYNTHETIC,148,AI,1.0,0.0
+SE#qp_question:school bus breakdowns and st:0,D-synthetic-se,synthetic-2026,SYNTHETIC,111,AI,1.0,0.0
+SE#ministers_statement:school bus breakdowns and st:0,D-synthetic-se,synthetic-2026,SYNTHETIC,239,AI,1.0,0.0
+SE#debate_response:school bus breakdowns and st:0,D-synthetic-se,synthetic-2026,SYNTHETIC,173,AI,1.0,0.0
+SE#members_statement:the Mactaquac dam refurbishm:0,D-synthetic-se,synthetic-2026,SYNTHETIC,185,AI,1.0,0.0
+SE#qp_question:the Mactaquac dam refurbishm:0,D-synthetic-se,synthetic-2026,SYNTHETIC,102,AI,1.0,0.0
+SE#ministers_statement:the Mactaquac dam refurbishm:0,D-synthetic-se,synthetic-2026,SYNTHETIC,229,AI,1.0,0.0
+SE#debate_response:the Mactaquac dam refurbishm:0,D-synthetic-se,synthetic-2026,SYNTHETIC,201,AI,1.0,0.0
+SE#members_statement:thanking firefighters after :0,D-synthetic-se,synthetic-2026,SYNTHETIC,191,AI,1.0,0.0
+SE#qp_question:thanking firefighters after :0,D-synthetic-se,synthetic-2026,SYNTHETIC,102,AI,1.0,0.0
+SE#ministers_statement:thanking firefighters after :0,D-synthetic-se,synthetic-2026,SYNTHETIC,230,AI,1.0,0.0
+SE#debate_response:thanking firefighters after :0,D-synthetic-se,synthetic-2026,SYNTHETIC,173,AI,1.0,0.0
+SE#members_statement:Diwali celebrations in New B:0,D-synthetic-se,synthetic-2026,SYNTHETIC,187,AI,1.0,0.0
+SE#qp_question:Diwali celebrations in New B:0,D-synthetic-se,synthetic-2026,SYNTHETIC,85,AI,1.0,0.0
+SE#ministers_statement:Diwali celebrations in New B:0,D-synthetic-se,synthetic-2026,SYNTHETIC,194,AI,1.0,0.0
+SE#debate_response:Diwali celebrations in New B:0,D-synthetic-se,synthetic-2026,SYNTHETIC,159,AI,1.0,0.0
+SE#members_statement:National Police Week and com:0,D-synthetic-se,synthetic-2026,SYNTHETIC,169,AI,1.0,0.0
+SE#qp_question:National Police Week and com:0,D-synthetic-se,synthetic-2026,SYNTHETIC,77,AI,1.0,0.0
+SE#ministers_statement:National Police Week and com:0,D-synthetic-se,synthetic-2026,SYNTHETIC,213,AI,1.0,0.0
+SE#debate_response:National Police Week and com:0,D-synthetic-se,synthetic-2026,SYNTHETIC,212,AI,1.0,0.0
+2025-11-06#t803w1,A2-fastdetect-tail,2025-11-06,Mr. Oliver,332,AI,1.0,0.0
+2026-03-18#t2043w0,A2-fastdetect-tail,2026-03-18,Mr. J. LeBlanc,315,AI,1.0,0.0
+2025-11-18#t1017w3,A2-fastdetect-tail,2025-11-18,Mr. Ames,211,AI,1.0,0.0
+2025-12-03#t1441w0,A2-fastdetect-tail,2025-12-03,Mr. Russell,215,AI,1.0,0.0
+2025-10-29#t305w0,A2-fastdetect-tail,2025-10-29,Ms. M. Johnson,222,AI,1.0,0.0
+2025-10-24#t178w1,A2-fastdetect-tail,2025-10-24,Ms. Mitton,329,AI,1.0,0.0
+2025-11-04#t546w0,A2-fastdetect-tail,2025-11-04,Ms. Wilcott,351,Human,0.0,0.0
+2025-10-30#t427w0,A2-fastdetect-tail,2025-10-30,Ms. M. Johnson,230,Mixed,0.0,1.0
+2025-10-24#t175w3,A2-fastdetect-tail,2025-10-24,Mr. Coon,251,Human,0.0,0.0
+2025-12-05#t1595w0,A2-fastdetect-tail,2025-12-05,Mr. Austin,189,Human,0.0,0.0
+2025-10-30#t531w0,A2-fastdetect-tail,2025-10-30,Mr. Weir,294,Human,0.0,0.0
+2026-05-08#t2991w0,A2-fastdetect-tail,2026-05-08,Mr. Hogan,205,Human,0.0,0.0
+2025-11-06#t835w0,A2-fastdetect-tail,2025-11-06,Mr. Robichaud,358,Human,0.0,0.0
+2026-03-24#t2322w4,A2-fastdetect-tail,2026-03-24,Ms. Mitton,247,Human,0.0,0.0
+2025-11-20#t1192w1,A2-fastdetect-tail,2025-11-20,Mr. Weir,355,Human,0.0,0.0
+2026-03-26#t2552w4,A2-fastdetect-tail,2026-03-26,Mr. Savoie,254,Human,0.0,0.0
+2025-11-07#t858w0,A3-fused,2025-11-07,Mr. Arseneault,154,Human,0.0,0.0
+2025-12-10#t1766w0,A3-fused,2025-12-10,Hon. Ms. Boudreau,111,Human,0.0,0.0
+2025-10-30#t491w0,A3-fused,2025-10-30,Ms. M. Johnson,102,Human,0.0,0.0
+2025-11-21#t1281w1,A3-fused,2025-11-21,Ms. Conroy,87,Human,0.0,0.0
+2025-11-05#t696w0,A3-fused,2025-11-05,Mr. M. LeBlanc,84,Human,0.0,0.0
+2025-11-07#t912w0,A3-fused,2025-11-07,Hon. Mr. Dornan,161,Human,0.0,0.0
+2026-05-05#t2580w0,A3-fused,2026-05-05,Mr. Bourque,145,Human,0.0,0.0
+2025-10-29#t361w0,A3-fused,2025-10-29,Hon. C. Johnson,108,Human,0.0,0.0
+2025-12-03#t1386w0,A3-fused,2025-12-03,Hon. Mr. Gauvin,98,Human,0.0,0.0
+2025-11-20#t1101w0,A3-fused,2025-11-20,Mr. J. LeBlanc,148,AI,1.0,0.0
+2025-10-24#t119w0,A3-fused,2025-10-24,Mr. Johnston,160,AI,1.0,0.0
+2025-11-20#t1098w0,A3-fused,2025-11-20,Mr. Doucet,250,Human,0.0,0.0
+2025-10-28#t231w0,A3-fused,2025-10-28,Hon. C. Johnson,114,Human,0.0,0.0
+2025-11-04#t551w0,A3-fused,2025-11-04,Mr. Coon,144,Human,0.0,0.0
+2025-12-04#t1477w0,A3-fused,2025-12-04,Mr. Robichaud,136,AI,1.0,0.0
+2025-12-05#t1622w1,A3-fused,2025-12-05,Mr. M. LeBlanc,224,Human,0.0,0.0
+2026-03-20#t2140w0,A3-fused,2026-03-20,Ms. Mitton,65,Human,0.0,0.0
+2025-10-22#t22w0,A5-tail-union,2025-10-22,Mr. Arseneault,146,Human,0.0,0.0
+2025-10-22#t51w0,A5-tail-union,2025-10-22,L’hon. C. Johnson,135,Human,0.0,0.0
+2025-10-24#t159w0,A5-tail-union,2025-10-24,Mr. Ames,55,Human,0.0,0.0
+2025-10-28#t213w0,A5-tail-union,2025-10-28,Ms. Wilcott,172,Human,0.0,0.0
+2025-10-28#t256w0,A5-tail-union,2025-10-28,Madam Speaker,52,Human,0.0,0.0
+2025-10-28#t262w0,A5-tail-union,2025-10-28,Hon. Mr. McKee,185,Human,0.0,0.0
+2025-10-29#t349w0,A5-tail-union,2025-10-29,Mr. Ames,63,Human,0.0,0.0
+2025-10-29#t400w7,A5-tail-union,2025-10-29,Mr. Cullins,54,Human,0.0,0.0
+2025-10-30#t482w0,A5-tail-union,2025-10-30,Mr. Coon,153,Human,0.0,0.0
+2025-10-30#t509w4,A5-tail-union,2025-10-30,Mr. Russell,169,AI,1.0,0.0
+2025-10-30#t511w0,A5-tail-union,2025-10-30,Ms. Wilcott,268,Human,0.0,0.0
+2025-11-04#t543w0,A5-tail-union,2025-11-04,Mr. Savoie,89,Human,0.0,0.0
+2025-11-04#t575w0,A5-tail-union,2025-11-04,Hon. Ms. Holt,150,Human,0.0,0.0
+2025-11-05#t632w0,A5-tail-union,2025-11-05,Mr. Arseneault,137,AI,1.0,0.0
+2025-11-05#t663w0,A5-tail-union,2025-11-05,Hon. Ms. Boudreau,171,Human,0.0,0.0
+2025-11-05#t680w2,A5-tail-union,2025-11-05,Ms. Mitton,59,Human,0.0,0.0
+2025-11-05#t710w0,A5-tail-union,2025-11-05,Madam Speaker,63,Human,0.0,0.0
+2025-11-05#t715w2,A5-tail-union,2025-11-05,Hon. Mr. Legacy,71,Human,0.0,0.0
+2025-11-06#t753w0,A5-tail-union,2025-11-06,Hon. Mr. Hickey,52,Human,0.0,0.0
+2025-11-06#t783w0,A5-tail-union,2025-11-06,Madam Speaker,104,Human,0.0,0.0
+2025-11-06#t792w0,A5-tail-union,2025-11-06,Ms. Mitton,133,Human,0.0,0.0
+2025-11-07#t907w0,A5-tail-union,2025-11-07,Hon. Mr. D’Amours,250,Human,0.0,0.0
+2025-11-18#t1018w1,A5-tail-union,2025-11-18,Mr. Ames,72,Human,0.0,0.0
+2025-11-18#t938w0,A5-tail-union,2025-11-18,Ms. Mitton,162,Human,0.0,0.0
+2025-11-18#t951w0,A5-tail-union,2025-11-18,Hon. Ms. Holt,148,Human,0.0,0.0
+2025-11-18#t954w0,A5-tail-union,2025-11-18,Mr. Savoie,50,Human,0.0,0.0
+2025-11-20#t1126w0,A5-tail-union,2025-11-20,Mr. Savoie,55,Human,0.0,0.0
+2025-11-21#t1245w0,A5-tail-union,2025-11-21,Mr. Savoie,66,Human,0.0,0.0
+2025-12-02#t1358w0,A5-tail-union,2025-12-02,Hon. Mr. Dornan,179,Human,0.0,0.0
+2025-12-02#t1374w0,A5-tail-union,2025-12-02,Madam Speaker,59,Human,0.0,0.0
+2025-12-03#t1388w0,A5-tail-union,2025-12-03,Mr. Coon,156,Human,0.0,0.0
+2025-12-03#t1390w0,A5-tail-union,2025-12-03,Mr. Russell,97,Human,0.0,0.0
+2025-12-03#t1396w0,A5-tail-union,2025-12-03,Ms. Sodhi,130,AI,1.0,0.0
+2025-12-03#t1439w0,A5-tail-union,2025-12-03,Mr. Coon,238,Human,0.0,0.0
+2025-12-03#t1447w0,A5-tail-union,2025-12-03,Mr. Oliver,81,Human,0.0,0.0
+2025-12-04#t1492w0,A5-tail-union,2025-12-04,Mr. Savoie,83,Human,0.0,0.0
+2025-12-04#t1550w1,A5-tail-union,2025-12-04,Hon. Mr. McKee,306,AI,1.0,0.0
+2025-12-09#t1625w0,A5-tail-union,2025-12-09,Mr. Russell,159,AI,1.0,0.0
+2025-12-10#t1736w0,A5-tail-union,2025-12-10,Mr. J. LeBlanc,143,Human,0.0,0.0
+2025-12-10#t1759w0,A5-tail-union,2025-12-10,Hon. Mr. Hickey,180,Human,0.0,0.0
+2025-12-10#t1773w0,A5-tail-union,2025-12-10,Mr. Monahan,145,Human,0.0,0.0
+2025-12-10#t1790w0,A5-tail-union,2025-12-10,Ms. Mitton,69,Human,0.0,0.0
+2025-12-11#t1803w0,A5-tail-union,2025-12-11,Mr. Russell,168,AI,1.0,0.0
+2025-12-12#t1971w0,A5-tail-union,2025-12-12,Mr. Savoie,58,Human,0.0,0.0
+2025-12-12#t2018w0,A5-tail-union,2025-12-12,Her Honour,72,Human,0.0,0.0
+2026-03-17#t2037w0,A5-tail-union,2026-03-17,,61,Human,0.0,0.0
+2026-03-18#t2097w0,A5-tail-union,2026-03-18,Ms. M. Johnson,62,Human,0.0,0.0
+2026-03-19#t2136w0,A5-tail-union,2026-03-19,Mr. M. LeBlanc,54,Human,0.0,0.0
+2026-03-24#t2307w2,A5-tail-union,2026-03-24,Ms. Mitton,246,Human,0.0,0.0
+2026-03-24#t2321w2,A5-tail-union,2026-03-24,Mr. Austin,321,Human,0.0,0.0
+2026-03-24#t2327w3,A5-tail-union,2026-03-24,,61,Human,0.0,0.0
+2026-03-25#t2350w0,A5-tail-union,2026-03-25,Ms. M. Wilson,150,AI,1.0,0.0
+2026-03-25#t2418w7,A5-tail-union,2026-03-25,Mr. M. LeBlanc,50,Human,0.0,0.0
+2026-03-25#t2442w0,A5-tail-union,2026-03-25,Mr. Hogan,60,Human,0.0,0.0
+2026-03-26#t2495w0,A5-tail-union,2026-03-26,Hon. Ms. Holt,151,Human,0.0,0.0
+2026-05-06#t2648w0,A5-tail-union,2026-05-06,Ms. S. Wilson,148,Human,0.0,0.0
+2026-05-06#t2695w0,A5-tail-union,2026-05-06,Mr. Savoie,57,Human,0.0,0.0
+2026-05-06#t2703w0,A5-tail-union,2026-05-06,Mr. Weir,162,AI,1.0,0.0
+2026-05-06#t2732w0,A5-tail-union,2026-05-06,Mr. M. LeBlanc,66,Human,0.0,0.0
+2026-05-07#t2830w5,A5-tail-union,2026-05-07,Mr. Lee,288,AI,1.0,0.0
+2026-05-07#t2871w5,A5-tail-union,2026-05-07,Mr. Lee,274,Human,0.0,0.0
+2026-05-08#t2948w0,A5-tail-union,2026-05-08,Hon. Mr. Randall,248,AI,1.0,0.0
+2026-05-08#t2962w0,A5-tail-union,2026-05-08,Mr. Hogan,76,Human,0.0,0.0
+2026-05-08#t2968w0,A5-tail-union,2026-05-08,Mr. Hogan,61,Human,0.0,0.0
+2026-05-08#t2992w0,A5-tail-union,2026-05-08,Mr. M. LeBlanc,61,Human,0.0,0.0
+2026-05-13#t3057w0,A5-tail-union,2026-05-13,Hon. Mr. Gauvin,203,AI,1.0,0.0
+2026-05-13#t3081w0,A5-tail-union,2026-05-13,Mr. Monahan,76,Human,0.0,0.0
+2026-05-13#t3095w5,A5-tail-union,2026-05-13,,187,Human,0.0,0.0
+2026-05-14#t3111w0,A5-tail-union,2026-05-14,Ms. Vautour,155,AI,1.0,0.0
+2026-05-14#t3160w0,A5-tail-union,2026-05-14,Hon. Mr. Randall,185,AI,1.0,0.0
+2025-10-24#t107w0,A4-speaker,2025-10-24,Mr. Robichaud,167,Human,0.0,0.0
+2025-12-09#t1632w0,A4-speaker,2025-12-09,Mr. Robichaud,132,AI,1.0,0.0
+2025-11-04#t559w0,A4-speaker,2025-11-04,Mr. Robichaud,150,AI,1.0,0.0
+2025-10-29#t313w0,A4-speaker,2025-10-29,Mr. Robichaud,146,Human,0.0,0.0
+2025-11-06#t835w1,A4-speaker,2025-11-06,Mr. Robichaud,317,Human,0.0,0.0
+2026-03-20#t2159w0,A4-speaker,2026-03-20,Mr. Robichaud,127,Human,0.0,0.0
+2026-05-05#t2576w0,A4-speaker,2026-05-05,Mr. Robichaud,154,Human,0.0,0.0
+2026-05-08#t2909w0,A4-speaker,2026-05-08,Mr. Robichaud,153,Human,0.0,0.0
+2026-03-25#t2355w0,A4-speaker,2026-03-25,Mr. Robichaud,159,Human,0.0,0.0
+2025-11-06#t835w4,A4-speaker,2025-11-06,Mr. Robichaud,89,Human,0.0,0.0
+2025-11-20#t1208w2,A4-speaker,2025-11-20,Mr. Robichaud,331,Human,0.0,0.0
+2025-10-29#t326w0,A4-speaker,2025-10-29,Mr. Robichaud,176,Human,0.0,0.0
+2026-03-25#t2454w4,A4-speaker,2026-03-25,Mr. Robichaud,344,Human,0.0,0.0
+2025-12-11#t1813w0,A4-speaker,2025-12-11,Mr. Robichaud,151,Human,0.0,0.0
+2025-11-06#t747w0,A4-speaker,2025-11-06,Mr. Robichaud,164,Human,0.0,0.0
+2024-05-07#t16123w0,A6-lexicon,2024-05-07,Mr. K. Arseneau,129,AI,1.0,0.0
+2025-12-10#t1730w0,A6-lexicon,2025-12-10,Mr. Weir,142,AI,1.0,0.0
+2026-03-25#t2343w0,A6-lexicon,2026-03-25,Ms. Mitton,132,Human,0.0,0.0
+2023-11-03#t13954w0,A6-lexicon,2023-11-03,Hon. Mr. Turner,184,Human,0.0,0.0
+2026-05-05#t2572w0,A6-lexicon,2026-05-05,Mr. Ames,154,Human,0.0,0.0
+2024-06-06#t17636w0,A6-lexicon,2024-06-06,,169,Human,0.0,0.0
+2024-06-04#t17361w0,A6-lexicon,2024-06-04,Mr. McKee,185,AI,1.0,0.0
+2023-11-23#t14308w0,A6-lexicon,2023-11-23,Mr. McKee,265,Human,0.0,0.0
+2023-12-06#t15084w2,A6-lexicon,2023-12-06,Mr. Coon,322,AI,1.0,0.0
+2024-05-16#t16835w5,A6-lexicon,2024-05-16,Mr. M. LeBlanc,359,Human,0.0,0.0
+2026-03-20#t2229w0,A6-lexicon,2026-03-20,Hon. Ms. Miles,286,Human,0.0,0.0
+2023-12-01#t14834w1,A6-lexicon,2023-12-01,Mr. Bourque,312,Human,0.0,0.0
+2026-03-17#t2035w2,A6-lexicon,2026-03-17,,323,Human,0.0,0.0
+2026-05-14#t3199w2,A6-lexicon,2026-05-14,Ms. Vautour,332,AI,1.0,0.0
+2025-12-11#t1859w0,A6-lexicon,2025-12-11,Hon. Mr. Randall,333,AI,1.0,0.0
+2023-11-23#t14342w6,A6-lexicon,2023-11-23,Mr. McKee,339,AI,1.0,0.0
+2023-10-26#t13579w0,A6-lexicon,2023-10-26,Mr. McKee,345,Human,0.0,0.0
+2026-05-07#t2871w4,A6-lexicon,2026-05-07,Mr. Lee,351,AI,1.0,0.0
+2024-06-06#t17615w0,A6-lexicon,2024-06-06,Hon. G. Savoie,352,Human,0.0,0.0
+2024-03-27#t15913w1,A6-lexicon,2024-03-27,,357,Human,0.0,0.0
+2026-03-17#t2035w0,A7-speech-llr,2026-03-17,,331,Human,0.0,0.0
+2026-03-17#t2035w1,A7-speech-llr,2026-03-17,,337,Human,0.0,0.0
+2026-03-17#t2035w3,A7-speech-llr,2026-03-17,,188,Human,0.0,0.0
+2024-05-16#t16835w0,A7-speech-llr,2024-05-16,Mr. M. LeBlanc,306,AI,1.0,0.0
+2024-05-16#t16835w1,A7-speech-llr,2024-05-16,Mr. M. LeBlanc,357,AI,1.0,0.0
+2024-05-16#t16835w2,A7-speech-llr,2024-05-16,Mr. M. LeBlanc,303,Human,0.0,0.0
+2024-05-16#t16835w3,A7-speech-llr,2024-05-16,Mr. M. LeBlanc,277,AI,1.0,0.0
+2024-05-16#t16835w4,A7-speech-llr,2024-05-16,Mr. M. LeBlanc,349,Human,0.0,0.0
+2024-05-16#t16835w6,A7-speech-llr,2024-05-16,Mr. M. LeBlanc,250,Human,0.0,0.0
+2025-12-05#t1565w0,A7-speech-llr,2025-12-05,Mr. Russell,146,Human,0.0,0.0
+2026-05-14#t3100w0,A7-speech-llr,2026-05-14,Mr. Weir,148,Human,0.0,0.0
+2026-03-26#t2533w0,A7-speech-llr,2026-03-26,Hon. Ms. Thériault,149,Human,0.0,0.0
+2023-06-13#t12656w0,A7-speech-llr,2023-06-13,Mr. Bourque,150,Human,0.0,0.0
+2025-10-24#t112w0,A7-speech-llr,2025-10-24,Ms. S. Wilson,156,AI,1.0,0.0
+2025-12-04#t1466w0,A7-speech-llr,2025-12-04,Mr. Monahan,159,AI,1.0,0.0
+2023-05-11#t11774w0,A8-transition-fd,2023-05-11,Mr. McKee,358,AI,1.0,0.0
+2023-05-10#t11631w3,A8-transition-fd,2023-05-10,Mr. McKee,326,Mixed,0.0,1.0
+2023-05-10#t11631w5,A8-transition-fd,2023-05-10,Mr. McKee,322,AI,1.0,0.0
+2023-05-10#t11631w6,A8-transition-fd,2023-05-10,Mr. McKee,325,Human,0.0,0.0
+2023-12-05#t14931w4,A8-transition-fd,2023-12-05,Mr. McKee,332,AI,1.0,0.0
+2023-05-10#t11631w7,A8-transition-fd,2023-05-10,Mr. McKee,331,Human,0.0,0.0
+2024-05-09#t16460w0,A8-transition-fd,2024-05-09,Mr. M. LeBlanc,360,AI,1.0,0.0
+2023-03-30#t11384w1,A8-transition-fd,2023-03-30,Mr. K. Chiasson,328,Human,0.0,0.0
+2023-03-29#t11269w0,A8-transition-fd,2023-03-29,Ms. Mary Wilson,298,Human,0.0,0.0
+2024-03-22#t15720w11,A8-transition-fd,2024-03-22,Mr. M. LeBlanc,358,AI,1.0,0.0
+2023-05-10#t11631w4,A8-transition-fd,2023-05-10,Mr. McKee,322,AI,1.0,0.0
+2023-05-10#t11631w2,A8-transition-fd,2023-05-10,Mr. McKee,326,AI,1.0,0.0
+2024-06-06#t17660w1,A8-transition-fd,2024-06-06,Mr. M. LeBlanc,329,AI,1.0,0.0
+2023-12-05#t14931w2,A8-transition-fd,2023-12-05,Mr. McKee,320,Mixed,0.0,1.0
+2023-12-05#t14931w1,A8-transition-fd,2023-12-05,Mr. McKee,301,AI,1.0,0.0
+2023-06-09#t12644w5,A8-transition-fd,2023-06-09,Mrs. Anderson-Mason,308,Human,0.0,0.0
+2023-11-30#t14720w2,A8-transition-fd,2023-11-30,Ms. Holt,352,AI,1.0,0.0
+2023-05-11#t11745w0,A8-transition-fd,2023-05-11,Mr. McKee,282,AI,1.0,0.0
+2023-03-29#t11261w7,A8-transition-fd,2023-03-29,Hon. Mr. Allain,359,Human,0.0,0.0
+2024-05-09#t16460w2,A8-transition-fd,2024-05-09,Mr. M. LeBlanc,331,AI,1.0,0.0
+2020-11-18#t110w0,Y-2020,2020-11-18,Hon. Mrs. Shephard,195,Human,0.0,0.0
+2020-12-15#t816w0,Y-2020,2020-12-15,Hon. Mr. Fitch,157,Human,0.0,0.0
+2020-06-17#t4667w0,Y-2020,2020-06-17,Mr. Austin,351,Human,0.0,0.0
+2020-12-11#t713w0,Y-2020,2020-12-11,Mr. Melanson,134,Human,0.0,0.0
+2020-06-09#t4265w0,Y-2020,2020-06-09,Hon. Mrs. Shephard,167,Human,0.0,0.0
+2020-12-11#t736w0,Y-2020,2020-12-11,Mr. Coon,140,Human,0.0,0.0
+2020-12-08#t422w0,Y-2020,2020-12-08,Mr. McKee,249,Human,0.0,0.0
+2020-03-13#t3906w0,Y-2020,2020-03-13,Mr. Coon,172,Human,0.0,0.0
+2020-12-09#t526w0,Y-2020,2020-12-09,Mr. Coon,139,Human,0.0,0.0
+2020-12-17#t1164w3,Y-2020,2020-12-17,Hon. Ms. Green,346,Human,0.0,0.0
+2020-05-27#t4163w0,Y-2020,2020-05-27,Hon. Mr. Higgs,220,Human,0.0,0.0
+2020-11-18#t83w0,Y-2020,2020-11-18,Mr. Melanson,133,Human,0.0,0.0
+2020-06-16#t4575w0,Y-2020,2020-06-16,Mr. Harvey,159,Human,0.0,0.0
+2020-12-18#t1233w0,Y-2020,2020-12-18,Mr. Melanson,158,Human,0.0,0.0
+2020-05-27#t4140w0,Y-2020,2020-05-27,Mrs. Conroy,206,Human,0.0,0.0
+2020-12-11#t726w0,Y-2020,2020-12-11,Hon. Mr. Higgs,188,Human,0.0,0.0
+2020-06-10#t4399w0,Y-2020,2020-06-10,Mr. LePage,118,Human,0.0,0.0
+2020-12-09#t570w8,Y-2020,2020-12-09,Mr. Legacy,346,Human,0.0,0.0
+2020-12-08#t354w0,Y-2020,2020-12-08,Mr. McKee,125,Human,0.0,0.0
+2020-06-17#t4655w0,Y-2020,2020-06-17,Hon. Mr. Wetmore,114,Human,0.0,0.0
+2020-12-16#t942w0,Y-2020,2020-12-16,Hon. Mr. Steeves,105,Human,0.0,0.0
+2020-06-18#t4730w0,Y-2020,2020-06-18,Mr. DeSaulniers,167,Human,0.0,0.0
+2020-06-16#t4595w0,Y-2020,2020-06-16,Mr. Austin,344,Human,0.0,0.0
+2020-12-11#t754w4,Y-2020,2020-12-11,Hon. Mr. Savoie,359,Human,0.0,0.0
+2020-03-11#t3831w0,Y-2020,2020-03-11,Mr. Coon,355,Human,0.0,0.0
+2020-11-20#t243w0,Y-2020,2020-11-20,Mr. Melanson,134,Human,0.0,0.0
+2020-06-09#t4280w0,Y-2020,2020-06-09,Mr. Bourque,137,Human,0.0,0.0
+2020-12-09#t573w2,Y-2020,2020-12-09,Mrs. Conroy,331,Human,0.0,0.0
+2020-12-15#t781w0,Y-2020,2020-12-15,Mr. K. Arseneau,171,Human,0.0,0.0
+2020-03-11#t3747w0,Y-2020,2020-03-11,Mr. Melanson,173,Human,0.0,0.0
+2020-11-18#t108w0,Y-2020,2020-11-18,Hon. Mr. Higgs,190,Human,0.0,0.0
+2020-12-15#t779w0,Y-2020,2020-12-15,Mrs. Bockus,127,Human,0.0,0.0
+2020-12-09#t453w0,Y-2020,2020-12-09,Mr. McKee,208,Human,0.0,0.0
+2020-06-16#t4540w0,Y-2020,2020-06-16,Mrs. Conroy,167,Human,0.0,0.0
+2020-05-27#t4182w0,Y-2020,2020-05-27,Mr. J. LeBlanc,100,Human,0.0,0.0
+2020-06-10#t4321w0,Y-2020,2020-06-10,Mr. J. LeBlanc,300,Human,0.0,0.0
+2020-12-11#t755w13,Y-2020,2020-12-11,Hon. Mrs. Shephard,330,Human,0.0,0.0
+2020-06-10#t4368w0,Y-2020,2020-06-10,Hon. M. Wilson,161,Human,0.0,0.0
+2020-12-10#t682w5,Y-2020,2020-12-10,Hon. Mr. Cardy,337,Human,0.0,0.0
+2020-12-08#t426w5,Y-2020,2020-12-08,Mr. Austin,291,Human,0.0,0.0
+2021-06-09#t3467w0,Y-2021,2021-06-09,Mrs. Harris,101,Human,0.0,0.0
+2021-03-19#t1603w1,Y-2021,2021-03-19,Mr. Coon,247,Human,0.0,0.0
+2021-06-02#t3092w0,Y-2021,2021-06-02,Hon. Mr. Flemming,147,Human,0.0,0.0
+2021-12-08#t5392w1,Y-2021,2021-12-08,Mr. G. Arseneault,301,Human,0.0,0.0
+2021-11-03#t3988w0,Y-2021,2021-11-03,Mr. McKee,256,Human,0.0,0.0
+2021-05-19#t2716w1,Y-2021,2021-05-19,Mr. McKee,311,Human,0.0,0.0
+2021-12-07#t5279w0,Y-2021,2021-12-07,Mr. C. Chiasson,125,Human,0.0,0.0
+2021-12-07#t5300w1,Y-2021,2021-12-07,Mr. McKee,305,Human,0.0,0.0
+2021-12-07#t5256w1,Y-2021,2021-12-07,Mr. G. Arseneault,273,Human,0.0,0.0
+2021-12-16#t5851w0,Y-2021,2021-12-16,Hon. Ms. Dunn,349,Human,0.0,0.0
+2021-11-03#t3975w3,Y-2021,2021-11-03,Mr. Austin,335,Human,0.0,0.0
+2021-05-20#t2804w2,Y-2021,2021-05-20,Mr. Bourque,322,Human,0.0,0.0
+2021-05-11#t2036w0,Y-2021,2021-05-11,Mr. Bourque,114,Human,0.0,0.0
+2021-12-02#t4983w0,Y-2021,2021-12-02,Mr. K. Arseneau,156,Human,0.0,0.0
+2021-03-24#t1730w0,Y-2021,2021-03-24,Mrs. Harris,207,Human,0.0,0.0
+2021-12-07#t5225w0,Y-2021,2021-12-07,Ms. Mitton,163,Human,0.0,0.0
+2021-05-20#t2768w0,Y-2021,2021-05-20,Mr. Melanson,153,Human,0.0,0.0
+2021-12-09#t5553w4,Y-2021,2021-12-09,Hon. Mary Wilson,353,Human,0.0,0.0
+2021-05-21#t2914w0,Y-2021,2021-05-21,Ms. Mitton,154,Human,0.0,0.0
+2021-05-11#t2031w0,Y-2021,2021-05-11,Hon. Mrs. Shephard,161,Human,0.0,0.0
+2021-03-19#t1542w0,Y-2021,2021-03-19,Mr. Coon,172,Human,0.0,0.0
+2021-06-02#t3064w0,Y-2021,2021-06-02,Mr. Coon,185,Human,0.0,0.0
+2021-06-01#t3017w0,Y-2021,2021-06-01,Hon. Mr. Flemming,166,Human,0.0,0.0
+2021-05-12#t2226w1,Y-2021,2021-05-12,Mr. McKee,353,Human,0.0,0.0
+2021-03-24#t1811w1,Y-2021,2021-03-24,Mr. McKee,249,Human,0.0,0.0
+2021-03-17#t1485w0,Y-2021,2021-03-17,Hon. Mr. Higgs,194,Human,0.0,0.0
+2021-11-04#t4031w0,Y-2021,2021-11-04,Hon. Mr. Holland,206,Human,0.0,0.0
+2021-05-19#t2618w0,Y-2021,2021-05-19,Mrs. Bockus,117,Human,0.0,0.0
+2021-11-25#t4708w2,Y-2021,2021-11-25,Mr. Coon,341,Human,0.0,0.0
+2021-05-19#t2675w0,Y-2021,2021-05-19,Mr. G. Arseneault,130,Human,0.0,0.0
+2021-03-19#t1613w8,Y-2021,2021-03-19,Hon. Mrs. Shephard,314,Human,0.0,0.0
+2021-05-14#t2411w0,Y-2021,2021-05-14,Mr. Melanson,127,Human,0.0,0.0
+2021-11-02#t3846w0,Y-2021,2021-11-02,Mrs. Conroy,166,Human,0.0,0.0
+2021-11-02#t3831w0,Y-2021,2021-11-02,Hon. Mr. Cardy,207,Human,0.0,0.0
+2021-11-10#t4316w0,Y-2021,2021-11-10,Mr. Coon,129,Human,0.0,0.0
+2021-03-25#t1936w0,Y-2021,2021-03-25,Mr. Melanson,161,Human,0.0,0.0
+2021-06-03#t3291w0,Y-2021,2021-06-03,Mr. K. Chiasson,354,Human,0.0,0.0
+2021-11-30#t4824w0,Y-2021,2021-11-30,Ms. Mitton,165,Human,0.0,0.0
+2021-11-04#t4018w0,Y-2021,2021-11-04,Mr. Melanson,160,Human,0.0,0.0
+2021-12-10#t5579w0,Y-2021,2021-12-10,Mr. Melanson,149,Human,0.0,0.0
+2022-03-25#t6141w2,Y-2022,2022-03-25,Mr. C. Chiasson,306,Human,0.0,0.0
+2022-03-31#t6409w0,Y-2022,2022-03-31,Mr. Melanson,118,Human,0.0,0.0
+2022-10-28#t8743w0,Y-2022,2022-10-28,Mr. McKee,317,Human,0.0,0.0
+2022-12-09#t10406w0,Y-2022,2022-12-09,Hon. Mr. Steeves,189,Human,0.0,0.0
+2022-12-15#t10660w0,Y-2022,2022-12-15,Hon. Mr. Holder,187,Human,0.0,0.0
+2022-11-03#t9118w0,Y-2022,2022-11-03,Hon. Mrs. Johnson,349,Human,0.0,0.0
+2022-11-18#t9496w0,Y-2022,2022-11-18,Mr. Coon,143,Human,0.0,0.0
+2022-12-13#t10523w2,Y-2022,2022-12-13,Mr. Coon,288,Human,0.0,0.0
+2022-10-06#t8323w0,Y-2022,2022-10-06,Mr. McKee,286,Human,0.0,0.0
+2022-06-08#t7832w0,Y-2022,2022-06-08,Mr. Legacy,318,Human,0.0,0.0
+2022-11-15#t9230w5,Y-2022,2022-11-15,Mr. C. Chiasson,284,Human,0.0,0.0
+2022-11-17#t9413w0,Y-2022,2022-11-17,Ms. Mitton,177,Human,0.0,0.0
+2022-11-24#t9804w3,Y-2022,2022-11-24,Mr. McKee,359,Human,0.0,0.0
+2022-03-25#t6104w0,Y-2022,2022-03-25,Mr. Melanson,102,Human,0.0,0.0
+2022-03-25#t6139w1,Y-2022,2022-03-25,Hon. Mrs. Shephard,336,Human,0.0,0.0
+2022-06-08#t7806w0,Y-2022,2022-06-08,Hon. Mr. Cardy,171,Human,0.0,0.0
+2022-03-24#t6068w1,Y-2022,2022-03-24,Mr. McKee,330,Human,0.0,0.0
+2022-05-31#t7297w0,Y-2022,2022-05-31,Mr. G. Arseneault,161,Human,0.0,0.0
+2022-06-09#t7899w0,Y-2022,2022-06-09,Hon. Mr. Holland,245,Human,0.0,0.0
+2022-12-15#t10729w2,Y-2022,2022-12-15,Hon. Mrs. Shephard,261,Human,0.0,0.0
+2022-12-14#t10596w0,Y-2022,2022-12-14,Mr. C. Chiasson,332,Human,0.0,0.0
+2022-05-11#t6640w0,Y-2022,2022-05-11,Hon. Mr. Fitch,193,Human,0.0,0.0
+2022-05-11#t6662w1,Y-2022,2022-05-11,Ms. Mitton,332,Human,0.0,0.0
+2022-12-15#t10729w5,Y-2022,2022-12-15,Hon. Mrs. Shephard,171,Human,0.0,0.0
+2022-03-30#t6354w0,Y-2022,2022-03-30,Mr. G. Arseneault,353,Human,0.0,0.0
+2022-12-08#t10355w2,Y-2022,2022-12-08,Hon. G. Savoie,322,Human,0.0,0.0
+2022-05-12#t6834w1,Y-2022,2022-05-12,Ms. Mitton,319,Human,0.0,0.0
+2022-06-08#t7775w0,Y-2022,2022-06-08,Mr. Melanson,162,Human,0.0,0.0
+2022-10-11#t8433w0,Y-2022,2022-10-11,Mr. Austin,226,Human,0.0,0.0
+2022-11-18#t9576w0,Y-2022,2022-11-18,Mr. McKee,205,Human,0.0,0.0
+2022-12-15#t10711w3,Y-2022,2022-12-15,Mr. G. Arseneault,311,Human,0.0,0.0
+2022-03-31#t6474w0,Y-2022,2022-03-31,Mr. Coon,235,Human,0.0,0.0
+2022-10-26#t8662w0,Y-2022,2022-10-26,Mr. Coon,132,Human,0.0,0.0
+2022-03-30#t6300w0,Y-2022,2022-03-30,Hon. Mr. Higgs,203,Human,0.0,0.0
+2022-12-15#t10711w2,Y-2022,2022-12-15,Mr. G. Arseneault,340,Human,0.0,0.0
+2022-03-30#t6340w1,Y-2022,2022-03-30,Hon. Mr. Flemming,311,Human,0.0,0.0
+2022-12-14#t10548w0,Y-2022,2022-12-14,Hon. Mr. Fitch,213,Human,0.0,0.0
+2022-12-14#t10601w0,Y-2022,2022-12-14,Ms. Mitton,347,Human,0.0,0.0
+2022-05-12#t6836w0,Y-2022,2022-05-12,Mr. C. Chiasson,354,Human,0.0,0.0
+2022-03-25#t6076w0,Y-2022,2022-03-25,Hon. Mrs. Johnson,200,Human,0.0,0.0
+2023-06-06#t12356w0,Y-2023,2023-06-06,Mr. Legacy,215,Human,0.0,0.0
+2023-11-30#t14741w0,Y-2023,2023-11-30,Ms. Mitton,288,Human,0.0,0.0
+2023-05-11#t11695w0,Y-2023,2023-05-11,Ms. Mitton,150,Human,0.0,0.0
+2023-03-28#t11095w0,Y-2023,2023-03-28,Hon. Ms. Scott-Wallace,120,Human,0.0,0.0
+2023-10-31#t13656w0,Y-2023,2023-10-31,Mr. K. Chiasson,215,Human,0.0,0.0
+2023-12-13#t15455w0,Y-2023,2023-12-13,Ms. Holt,123,Human,0.0,0.0
+2023-11-01#t13765w1,Y-2023,2023-11-01,Mr. G. Arseneault,238,Human,0.0,0.0
+2023-05-11#t11774w2,Y-2023,2023-05-11,Mr. McKee,296,Human,0.0,0.0
+2023-11-02#t13834w0,Y-2023,2023-11-02,Ms. Holt,115,Human,0.0,0.0
+2023-06-09#t12644w0,Y-2023,2023-06-09,Mrs. Anderson-Mason,263,Human,0.0,0.0
+2023-03-30#t11389w2,Y-2023,2023-03-30,Hon. Mr. Steeves,357,Human,0.0,0.0
+2023-06-08#t12483w0,Y-2023,2023-06-08,Mr. McKee,182,AI,1.0,0.0
+2023-10-25#t13426w0,Y-2023,2023-10-25,Ms. Mitton,329,Human,0.0,0.0
+2023-10-25#t13366w0,Y-2023,2023-10-25,Hon. Mr. Higgs,210,Human,0.0,0.0
+2023-06-13#t12670w0,Y-2023,2023-06-13,Mr. Ames,132,Human,0.0,0.0
+2023-05-18#t12172w1,Y-2023,2023-05-18,Mr. Bourque,257,Human,0.0,0.0
+2023-12-06#t14995w0,Y-2023,2023-12-06,Hon. Ms. Johnson,197,Human,0.0,0.0
+2023-11-30#t14730w1,Y-2023,2023-11-30,Hon. Ms. Bockus,316,Human,0.0,0.0
+2023-10-25#t13459w0,Y-2023,2023-10-25,Hon. Mr. Turner,323,Human,0.0,0.0
+2023-05-18#t12153w10,Y-2023,2023-05-18,Mr. Bourque,273,Human,0.0,0.0
+2023-03-22#t10904w0,Y-2023,2023-03-22,Hon. Mr. Fitch,160,Human,0.0,0.0
+2023-11-02#t13868w3,Y-2023,2023-11-02,Mr. McKee,327,Mixed,0.0,1.0
+2023-10-24#t13296w0,Y-2023,2023-10-24,Hon. Mr. Fitch,147,Human,0.0,0.0
+2023-03-30#t11319w0,Y-2023,2023-03-30,Hon. Mr. Higgs,218,Human,0.0,0.0
+2023-10-26#t13553w4,Y-2023,2023-10-26,Hon. Mr. Hogan,356,Human,0.0,0.0
+2023-05-18#t12159w5,Y-2023,2023-05-18,Hon. Ms. Green,294,Human,0.0,0.0
+2023-03-28#t11074w0,Y-2023,2023-03-28,Ms. Mitton,195,Human,0.0,0.0
+2023-12-07#t15162w0,Y-2023,2023-12-07,Mr. Coon,149,Human,0.0,0.0
+2023-03-24#t10987w0,Y-2023,2023-03-24,Hon. Mr. Crossman,178,Human,0.0,0.0
+2023-10-24#t13285w0,Y-2023,2023-10-24,Hon. Mr. Steeves,114,Human,0.0,0.0
+2023-12-08#t15223w0,Y-2023,2023-12-08,Mr. C. Chiasson,154,Human,0.0,0.0
+2023-03-28#t11139w0,Y-2023,2023-03-28,Mr. Coon,246,Human,0.0,0.0
+2023-10-20#t13251w9,Y-2023,2023-10-20,Hon. Mr. Austin,234,Human,0.0,0.0
+2023-12-12#t15362w0,Y-2023,2023-12-12,Hon. Ms. Green,163,Human,0.0,0.0
+2023-03-29#t11251w7,Y-2023,2023-03-29,Ms. Mitton,332,Human,0.0,0.0
+2023-06-09#t12568w0,Y-2023,2023-06-09,Hon. Mr. Hogan,133,Human,0.0,0.0
+2023-03-22#t10858w0,Y-2023,2023-03-22,Ms. Mitton,180,Human,0.0,0.0
+2023-11-21#t14102w0,Y-2023,2023-11-21,Mr. Bourque,340,Human,0.0,0.0
+2023-06-07#t12381w0,Y-2023,2023-06-07,Mr. McKee,169,Human,0.0,0.0
+2023-03-29#t11245w9,Y-2023,2023-03-29,Mr. C. Chiasson,321,Human,0.0,0.0
+2023-11-02#t13829w0,Y-2023,2023-11-02,Ms. Holt,159,Human,0.0,0.0
+2023-11-22#t14123w0,Y-2023,2023-11-22,Hon. M. Wilson,229,Human,0.0,0.0
+2023-11-02#t13802w0,Y-2023,2023-11-02,Ms. Holt,126,Human,0.0,0.0
+2023-10-26#t13583w2,Y-2023,2023-10-26,Mr. Losier,339,Human,0.0,0.0
+2023-12-13#t15449w0,Y-2023,2023-12-13,Hon. Mr. Fitch,154,Human,0.0,0.0
+2023-11-30#t14748w5,Y-2023,2023-11-30,Mr. McKee,280,Human,0.0,0.0
+2023-12-05#t14907w0,Y-2023,2023-12-05,Hon. Mr. Flemming,182,Human,0.0,0.0
+2023-05-19#t12248w0,Y-2023,2023-05-19,Ms. Holt,186,Human,0.0,0.0
+2023-06-06#t12314w0,Y-2023,2023-06-06,Ms. Mitton,171,Human,0.0,0.0
+2023-06-08#t12536w5,Y-2023,2023-06-08,Mr. Coon,306,Human,0.0,0.0
+2024-11-26#t277w0,Y-2024,2024-11-26,Hon. Mr. McKee,172,Human,0.0,0.0
+2024-03-28#t16099w2,Y-2024,2024-03-28,Mr. Coon,356,Human,0.0,0.0
+2024-06-04#t17435w0,Y-2024,2024-06-04,Hon. G. Savoie,207,Human,0.0,0.0
+2024-05-15#t16701w0,Y-2024,2024-05-15,Hon. G. Savoie,181,Human,0.0,0.0
+2024-12-12#t831w5,Y-2024,2024-12-12,Ms. Scott-Wallace,348,Human,0.0,0.0
+2024-05-17#t16876w0,Y-2024,2024-05-17,Mr. Cardy,236,Human,0.0,0.0
+2024-03-22#t15644w0,Y-2024,2024-03-22,Hon. Ms. Green,180,Human,0.0,0.0
+2024-03-27#t15954w1,Y-2024,2024-03-27,Hon. Mr. Holland,352,Human,0.0,0.0
+2024-03-27#t15944w3,Y-2024,2024-03-27,Mr. G. Arseneault,245,Human,0.0,0.0
+2024-11-22#t158w0,Y-2024,2024-11-22,Hon. Ms. Holt,171,Human,0.0,0.0
+2024-03-27#t15979w10,Y-2024,2024-03-27,Ms. Holt,187,Human,0.0,0.0
+2024-11-22#t206w0,Y-2024,2024-11-22,Mr. Ames,253,AI,1.0,0.0
+2024-12-10#t627w0,Y-2024,2024-12-10,Mr. M. LeBlanc,313,Human,0.0,0.0
+2024-12-13#t847w0,Y-2024,2024-12-13,Mr. Coon,158,Mixed,0.0,1.0
+2024-11-27#t387w0,Y-2024,2024-11-27,Mr. Lee,137,Human,0.0,0.0
+2024-11-28#t541w1,Y-2024,2024-11-28,Mr. Hogan,355,Human,0.0,0.0
+2024-05-30#t17205w0,Y-2024,2024-05-30,Hon. Mr. Austin,183,Human,0.0,0.0
+2024-03-27#t15979w5,Y-2024,2024-03-27,Ms. Holt,339,Human,0.0,0.0
+2024-12-11#t728w2,Y-2024,2024-12-11,Hon. Mr. C. Chiasson,323,Human,0.0,0.0
+2024-05-14#t16587w0,Y-2024,2024-05-14,Hon. G. Savoie,160,Human,0.0,0.0
+2024-06-07#t17680w0,Y-2024,2024-06-07,Hon. M. Wilson,152,Human,0.0,0.0
+2024-03-27#t15979w2,Y-2024,2024-03-27,Ms. Holt,317,Human,0.0,0.0
+2024-05-07#t16227w1,Y-2024,2024-05-07,Ms. Mitton,189,Human,0.0,0.0
+2024-06-07#t17720w0,Y-2024,2024-06-07,Ms. Holt,185,Human,0.0,0.0
+2024-11-22#t207w0,Y-2024,2024-11-22,Mr. Hogan,176,Human,0.0,0.0
+2024-11-22#t169w0,Y-2024,2024-11-22,Mr. Monahan,126,Human,0.0,0.0
+2024-05-07#t16172w0,Y-2024,2024-05-07,Hon. Mr. Higgs,185,Human,0.0,0.0
+2024-03-28#t15996w0,Y-2024,2024-03-28,Hon. R. Savoie,189,Human,0.0,0.0
+2024-12-11#t719w2,Y-2024,2024-12-11,Hon. Mr. Dornan,322,Human,0.0,0.0
+2024-05-31#t17263w0,Y-2024,2024-05-31,Hon. Mr. Turner,162,Human,0.0,0.0
+2024-05-17#t16872w0,Y-2024,2024-05-17,Ms. Conroy,149,Human,0.0,0.0
+2024-06-06#t17660w2,Y-2024,2024-06-06,Mr. M. LeBlanc,341,Human,0.0,0.0
+2024-11-20#t59w0,Y-2024,2024-11-20,Hon. Ms. Holt,218,Human,0.0,0.0
+2024-12-10#t567w0,Y-2024,2024-12-10,Ms. Mitton,139,Human,0.0,0.0
+2024-03-27#t15954w0,Y-2024,2024-03-27,Hon. Mr. Holland,322,Human,0.0,0.0
+2024-05-15#t16632w0,Y-2024,2024-05-15,Hon. G. Savoie,229,Human,0.0,0.0
+2024-11-26#t295w0,Y-2024,2024-11-26,Mr. Savoie,250,Human,0.0,0.0
+2024-05-31#t17316w0,Y-2024,2024-05-31,Ms. Mitton,171,Human,0.0,0.0
+2024-05-17#t16937w0,Y-2024,2024-05-17,Ms. Holt,286,Human,0.0,0.0
+2024-05-29#t17100w0,Y-2024,2024-05-29,Ms. Holt,181,Human,0.0,0.0
+2024-05-10#t16525w0,Y-2024,2024-05-10,Hon. G. Savoie,197,Human,0.0,0.0
+2024-11-22#t227w9,Y-2024,2024-11-22,Hon. Mr. Dornan,310,Human,0.0,0.0
+2024-05-07#t16143w0,Y-2024,2024-05-07,Hon. Mr. Higgs,166,Human,0.0,0.0
+2024-11-26#t246w0,Y-2024,2024-11-26,Mr. Coon,163,Human,0.0,0.0
+2024-05-16#t16823w2,Y-2024,2024-05-16,Mr. C. Chiasson,342,Human,0.0,0.0
+2024-03-28#t15987w0,Y-2024,2024-03-28,Hon. M. Wilson,285,Human,0.0,0.0
+2024-06-07#t17772w2,Y-2024,2024-06-07,Hon. Mr. Holland,185,Human,0.0,0.0
+2024-12-12#t842w5,Y-2024,2024-12-12,Ms. M. Johnson,355,Human,0.0,0.0
+2024-11-20#t113w0,Y-2024,2024-11-20,Hon. Mr. Hickey,308,Human,0.0,0.0
+2024-11-27#t430w2,Y-2024,2024-11-27,Mr. Weir,345,Human,0.0,0.0

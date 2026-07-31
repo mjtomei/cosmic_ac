@@ -11,3 +11,12 @@ analysis/s10/*.log
 analysis/s10/tier1_hits.jsonl
 analysis/s10/segments_60th.jsonl
 analysis/s10/pdfs_60th/
+analysis/s10/segments_all.jsonl
+analysis/s10/segments_59th.jsonl
+analysis/s10/segments_61s1.jsonl
+analysis/s10/judge_blind_pool.json
+analysis/s10/judge_blind_pool_t.json
+analysis/s10/pangram_batch.jsonl
+analysis/s10/pangram_results.jsonl
+analysis/s10/pdfs_59th/
+analysis/s10/pdfs_61s1/
