@@ -144,3 +144,18 @@ silently breaks; the remaining "I rise today" is a simulated first person.
 - AI-verdict vs human-verdict under v2: justification 1.77 vs 1.52,
   respect_demands 0.55 vs 0.91 — AI-flagged speech is better-formed and
   worse-engaged, the same scissors at the discourse level.
+
+## Opus-lean screening trial (2026-07-31, wf_f56fcb22)
+
+Low-effort, detection-only, terse: **AUC 0.951 vs Pangram (beats
+Fable-high's 0.936), Spearman 0.90 with Fable-high, 20 s wall for 241
+segments.** Token note: 2.8k tok/segment measured, but dominated by each
+agent re-reading the full shared pool file; per-batch input files cut
+this to ~450 tok/segment (~17M tokens for the 37.8k-segment corpus).
+Recall-at-top-k% on this pool understates real screening power (pool is
+candidate-enriched to 25% prevalence; top-10% ceiling is 39%, achieved
+34% = near-ceiling). Design consequence + credit policy (Matthew,
+2026-07-31): Pangram credits are reserved for many-legislature
+replication — per legislature: calibration strata + small random
+prevalence anchor + confirmation of the Opus-screened tail only; no
+full-corpus Pangram sweeps. Pangram-3 validation (~$1) still pending.
