@@ -1,0 +1,7 @@
+group,n,justification,common_good,respect,constructiveness,evidence,ai_guess
+cand_ai,53,2.132,1.434,1.0,0.906,1.943,42.453
+cand_human,63,1.905,1.365,1.079,1.079,1.952,18.873
+B_ai,8,2.375,1.875,1.5,1.25,2.25,37.5
+B_human,82,2.207,1.171,0.915,0.854,2.134,9.817
+ctl2019,35,2.229,1.114,1.143,1.2,2.0,7.286
+# Fable-5-high blinded, workflow wf_e2fe0a4b; AUC(ai_guess vs Pangram)=0.936; 2019-vs-B constructiveness -0.36; collider caveat on conditional analysis in PILOT.md

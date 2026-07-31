@@ -97,3 +97,25 @@ corollary (Pennebaker/Kacewicz status work; Newman deception work): low
 displacement — the drafting voice has no experience to reference. Any
 pronoun-based psychological inference on post-2023 institutional text
 silently breaks; the remaining "I rise today" is a simulated first person.
+
+## Fable-5 workflow judge (2026-07-31, wf_e2fe0a4b, 31 agents, blinded)
+
+- **Blind cross-validation of Pangram: AUC 0.936** — Fable-5's ai_guess,
+  from text alone, reproduces Pangram's verdicts (mean 44 on AI-verdict
+  candidates vs 9.7 on random-human, 7.3 on 2019 control). Two unrelated
+  frontier systems agree on which segments are AI.
+- Quality by verdict (unconditional): AI higher justification (2.13 vs
+  1.89), evidence equal, **lower respect (1.00 vs 1.08) and
+  constructiveness (0.89 vs 1.06)**. Conditional on the judge NOT
+  smelling AI (ai_guess ≤ 25, n = 9 vs 46), the form advantage vanishes
+  (justification 1.44 vs 1.78) — the "argues better" signal lives in the
+  segments that read most AI. Collider caveat: conditioning selects
+  atypical segments; directional only.
+- **Blinded time comparison (2019 control vs 2025–26 random):**
+  justification and evidence flat, **constructiveness −0.36 (1.23 →
+  0.87)**, respect −0.14. The chamber's speech commits to less, and the
+  judge cannot see dates.
+- Reliability: 60-segment second pass — exact agreement 80–97% per
+  dimension, 100% within one point; ai_guess mean|Δ| 5.7. Inter-judge vs
+  the Qwen3-8B pilot: ρ 0.43–0.61 (pilot directionally right,
+  compressed).
