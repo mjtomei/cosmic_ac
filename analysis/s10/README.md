@@ -47,3 +47,27 @@ all measured throughput below is a floor, ~5.9× headroom if unlocked.**
 Every number in the memo traces to a CSV/JSONL here (analysis/ convention).
 Scores are *uncorrected instrument readings*; the plan's "Do not" rules apply
 — no AI-rate claims without the in-domain Se/Sp correction (S10 estimator).
+
+## Pangram web-app adjudication route (established 2026-08-01)
+
+**Billing:** web-app scans draw the Pro plan's monthly word allowance, NOT the
+$200 API credit — verified: plan balance held at $167.10 across four web scans
+(~5.3k words), August API usage 0 credits / 0 requests. The "500 scans/month"
+badge is the *image* detection limit. Text is priced 1 credit / 100 words
+against the web allowance.
+
+**Mechanism:** `.txt` is rejected; the uploader takes PDF/DOCX/RTF/CSV, up to
+**100 files per batch**. One RTF per segment gives one verdict per segment —
+no bundling, no attribution ambiguity. `pangram_rtf/` holds 643 files
+(one per >=50 Opus-screened segment), `pangram_rtf_manifest.json` maps
+filename -> seg_id/date/speaker/screen score. Results appear in a Result
+panel that `get_page_text` extracts as `file / credits / words / verdict`.
+
+**Per-document metadata** (from the history detail view, also extractable):
+document-level AI %, AI/Assisted/Human word split, "signs of humanization"
+flag, model version, and a per-segment breakdown with classification,
+confidence, word count and segment text.
+
+**Also noted for the multi-legislature campaign:** the API has a *Bulk*
+endpoint at a 20% discount that accepts per-item `id` fields for row
+mapping — the right tool if we ever return to API-based scanning.

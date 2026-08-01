@@ -1,0 +1,5 @@
+file,seg_id,date,speaker,n_words,opus_screen,pangram
+nb0000,2025-12-04#t1558w3,2025-12-04,Ms. Bockus,334,93,AI
+nb0001,2025-05-08#t1898w4,2025-05-08,Ms. M. Johnson,235,92,AI
+nb0002,2026-05-06#t2719w0,2026-05-06,Ms. M. Wilson,289,92,AI
+# Pangram web-app (Pro scan allowance, NOT API credits) verdicts; one RTF per segment, batch upload

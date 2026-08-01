@@ -1,0 +1,4503 @@
+{
+"nb0000": {
+"seg_id": "2025-12-04#t1558w3",
+"opus_screen": 93,
+"date": "2025-12-04",
+"speaker": "Ms. Bockus",
+"n_words": 334
+},
+"nb0001": {
+"seg_id": "2025-05-08#t1898w4",
+"opus_screen": 92,
+"date": "2025-05-08",
+"speaker": "Ms. M. Johnson",
+"n_words": 235
+},
+"nb0002": {
+"seg_id": "2026-05-06#t2719w0",
+"opus_screen": 92,
+"date": "2026-05-06",
+"speaker": "Ms. M. Wilson",
+"n_words": 289
+},
+"nb0003": {
+"seg_id": "2025-05-08#t1893w6",
+"opus_screen": 92,
+"date": "2025-05-08",
+"speaker": "Ms. Bockus",
+"n_words": 238
+},
+"nb0004": {
+"seg_id": "2025-05-06#t1670w0",
+"opus_screen": 92,
+"date": "2025-05-06",
+"speaker": "Mr. Monahan",
+"n_words": 137
+},
+"nb0005": {
+"seg_id": "2025-12-11#t1860w0",
+"opus_screen": 92,
+"date": "2025-12-11",
+"speaker": "Mr. Russell",
+"n_words": 288
+},
+"nb0006": {
+"seg_id": "2025-05-16#t2553w1",
+"opus_screen": 90,
+"date": "2025-05-16",
+"speaker": "Mr. Monahan",
+"n_words": 324
+},
+"nb0007": {
+"seg_id": "2026-05-13#t3076w3",
+"opus_screen": 88,
+"date": "2026-05-13",
+"speaker": "Mr. Ames",
+"n_words": 286
+},
+"nb0008": {
+"seg_id": "2025-10-30#t534w0",
+"opus_screen": 88,
+"date": "2025-10-30",
+"speaker": "Ms. S. Wilson",
+"n_words": 360
+},
+"nb0009": {
+"seg_id": "2025-11-20#t1204w0",
+"opus_screen": 88,
+"date": "2025-11-20",
+"speaker": "Ms. Sodhi",
+"n_words": 316
+},
+"nb0010": {
+"seg_id": "2025-06-03#t3141w2",
+"opus_screen": 88,
+"date": "2025-06-03",
+"speaker": "Ms. M. Johnson",
+"n_words": 349
+},
+"nb0011": {
+"seg_id": "2025-05-14#t2325w1",
+"opus_screen": 88,
+"date": "2025-05-14",
+"speaker": "Mr. Lee",
+"n_words": 299
+},
+"nb0012": {
+"seg_id": "2024-03-22#t15720w11",
+"opus_screen": 88,
+"date": "2024-03-22",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 358
+},
+"nb0013": {
+"seg_id": "2025-05-16#t2534w3",
+"opus_screen": 88,
+"date": "2025-05-16",
+"speaker": "Ms. Bockus",
+"n_words": 244
+},
+"nb0014": {
+"seg_id": "2025-05-08#t1893w2",
+"opus_screen": 88,
+"date": "2025-05-08",
+"speaker": "Ms. Bockus",
+"n_words": 310
+},
+"nb0015": {
+"seg_id": "2025-10-24#t191w0",
+"opus_screen": 88,
+"date": "2025-10-24",
+"speaker": "Mr. Monahan",
+"n_words": 349
+},
+"nb0016": {
+"seg_id": "2026-05-06#t2715w0",
+"opus_screen": 88,
+"date": "2026-05-06",
+"speaker": "Ms. M. Wilson",
+"n_words": 283
+},
+"nb0017": {
+"seg_id": "2025-11-06#t803w0",
+"opus_screen": 88,
+"date": "2025-11-06",
+"speaker": "Mr. Oliver",
+"n_words": 270
+},
+"nb0018": {
+"seg_id": "2026-05-13#t3076w2",
+"opus_screen": 88,
+"date": "2026-05-13",
+"speaker": "Mr. Ames",
+"n_words": 352
+},
+"nb0019": {
+"seg_id": "2025-12-04#t1558w2",
+"opus_screen": 88,
+"date": "2025-12-04",
+"speaker": "Ms. Bockus",
+"n_words": 351
+},
+"nb0020": {
+"seg_id": "2023-05-10#t11631w5",
+"opus_screen": 88,
+"date": "2023-05-10",
+"speaker": "Mr. McKee",
+"n_words": 322
+},
+"nb0021": {
+"seg_id": "2025-06-03#t3141w3",
+"opus_screen": 88,
+"date": "2025-06-03",
+"speaker": "Ms. M. Johnson",
+"n_words": 348
+},
+"nb0022": {
+"seg_id": "2026-05-07#t2871w4",
+"opus_screen": 88,
+"date": "2026-05-07",
+"speaker": "Mr. Lee",
+"n_words": 351
+},
+"nb0023": {
+"seg_id": "2025-12-10#t1783w0",
+"opus_screen": 88,
+"date": "2025-12-10",
+"speaker": "Mr. Russell",
+"n_words": 261
+},
+"nb0024": {
+"seg_id": "2023-05-11#t11774w0",
+"opus_screen": 88,
+"date": "2023-05-11",
+"speaker": "Mr. McKee",
+"n_words": 358
+},
+"nb0025": {
+"seg_id": "2025-05-08#t1898w0",
+"opus_screen": 88,
+"date": "2025-05-08",
+"speaker": "Ms. M. Johnson",
+"n_words": 310
+},
+"nb0026": {
+"seg_id": "2025-03-19#t1116w5",
+"opus_screen": 88,
+"date": "2025-03-19",
+"speaker": "Mr. Monahan",
+"n_words": 309
+},
+"nb0027": {
+"seg_id": "2025-05-27#t2662w6",
+"opus_screen": 88,
+"date": "2025-05-27",
+"speaker": "Mr. Deputy Speaker",
+"n_words": 263
+},
+"nb0028": {
+"seg_id": "2025-10-30#t534w4",
+"opus_screen": 88,
+"date": "2025-10-30",
+"speaker": "Ms. S. Wilson",
+"n_words": 309
+},
+"nb0029": {
+"seg_id": "2026-05-07#t2871w5",
+"opus_screen": 88,
+"date": "2026-05-07",
+"speaker": "Mr. Lee",
+"n_words": 274
+},
+"nb0030": {
+"seg_id": "2026-05-13#t3069w1",
+"opus_screen": 85,
+"date": "2026-05-13",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 355
+},
+"nb0031": {
+"seg_id": "2025-05-28#t2783w4",
+"opus_screen": 85,
+"date": "2025-05-28",
+"speaker": "Ms. Bockus",
+"n_words": 331
+},
+"nb0032": {
+"seg_id": "2026-05-13#t3069w3",
+"opus_screen": 85,
+"date": "2026-05-13",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 274
+},
+"nb0033": {
+"seg_id": "2026-05-07#t2871w1",
+"opus_screen": 85,
+"date": "2026-05-07",
+"speaker": "Mr. Lee",
+"n_words": 322
+},
+"nb0034": {
+"seg_id": "2025-05-27#t2649w0",
+"opus_screen": 85,
+"date": "2025-05-27",
+"speaker": "Ms. Bockus",
+"n_words": 330
+},
+"nb0035": {
+"seg_id": "2025-11-06#t799w4",
+"opus_screen": 85,
+"date": "2025-11-06",
+"speaker": "Mr. Lee",
+"n_words": 233
+},
+"nb0036": {
+"seg_id": "2025-11-06#t837w0",
+"opus_screen": 85,
+"date": "2025-11-06",
+"speaker": "Mr. Monahan",
+"n_words": 288
+},
+"nb0037": {
+"seg_id": "2026-05-07#t2856w5",
+"opus_screen": 85,
+"date": "2026-05-07",
+"speaker": "Ms. M. Wilson",
+"n_words": 262
+},
+"nb0038": {
+"seg_id": "2024-11-27#t409w3",
+"opus_screen": 85,
+"date": "2024-11-27",
+"speaker": "Ms. Conroy",
+"n_words": 333
+},
+"nb0039": {
+"seg_id": "2025-12-04#t1534w2",
+"opus_screen": 85,
+"date": "2025-12-04",
+"speaker": "Ms. Vautour",
+"n_words": 332
+},
+"nb0040": {
+"seg_id": "2025-05-16#t2533w7",
+"opus_screen": 85,
+"date": "2025-05-16",
+"speaker": "Mr. Weir",
+"n_words": 326
+},
+"nb0041": {
+"seg_id": "2025-12-12#t1943w0",
+"opus_screen": 85,
+"date": "2025-12-12",
+"speaker": "Mr. Monahan",
+"n_words": 144
+},
+"nb0042": {
+"seg_id": "2025-05-27#t2663w0",
+"opus_screen": 85,
+"date": "2025-05-27",
+"speaker": "Mr. Cullins",
+"n_words": 249
+},
+"nb0043": {
+"seg_id": "2026-05-06#t2703w0",
+"opus_screen": 85,
+"date": "2026-05-06",
+"speaker": "Mr. Weir",
+"n_words": 162
+},
+"nb0044": {
+"seg_id": "2025-10-29#t406w0",
+"opus_screen": 85,
+"date": "2025-10-29",
+"speaker": "Ms. M. Wilson",
+"n_words": 332
+},
+"nb0045": {
+"seg_id": "2025-05-28#t2793w0",
+"opus_screen": 85,
+"date": "2025-05-28",
+"speaker": "Ms. M. Johnson",
+"n_words": 301
+},
+"nb0046": {
+"seg_id": "2026-05-07#t2856w6",
+"opus_screen": 85,
+"date": "2026-05-07",
+"speaker": "Ms. M. Wilson",
+"n_words": 317
+},
+"nb0047": {
+"seg_id": "2025-05-08#t1898w1",
+"opus_screen": 85,
+"date": "2025-05-08",
+"speaker": "Ms. M. Johnson",
+"n_words": 314
+},
+"nb0048": {
+"seg_id": "2025-05-16#t2534w1",
+"opus_screen": 85,
+"date": "2025-05-16",
+"speaker": "Ms. Bockus",
+"n_words": 283
+},
+"nb0049": {
+"seg_id": "2025-05-15#t2446w7",
+"opus_screen": 85,
+"date": "2025-05-15",
+"speaker": "Mr. Lee",
+"n_words": 337
+},
+"nb0050": {
+"seg_id": "2025-05-16#t2534w2",
+"opus_screen": 85,
+"date": "2025-05-16",
+"speaker": "Ms. Bockus",
+"n_words": 343
+},
+"nb0051": {
+"seg_id": "2025-05-08#t1931w1",
+"opus_screen": 85,
+"date": "2025-05-08",
+"speaker": "Mr. Monahan",
+"n_words": 353
+},
+"nb0052": {
+"seg_id": "2026-05-13#t3076w1",
+"opus_screen": 85,
+"date": "2026-05-13",
+"speaker": "Mr. Ames",
+"n_words": 340
+},
+"nb0053": {
+"seg_id": "2025-03-19#t1116w4",
+"opus_screen": 85,
+"date": "2025-03-19",
+"speaker": "Mr. Monahan",
+"n_words": 290
+},
+"nb0054": {
+"seg_id": "2026-05-13#t3069w2",
+"opus_screen": 85,
+"date": "2026-05-13",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 324
+},
+"nb0055": {
+"seg_id": "2025-05-06#t1712w0",
+"opus_screen": 85,
+"date": "2025-05-06",
+"speaker": "Mr. Cullins",
+"n_words": 348
+},
+"nb0056": {
+"seg_id": "2026-03-18#t2135w12",
+"opus_screen": 85,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 344
+},
+"nb0057": {
+"seg_id": "2026-05-13#t3072w0",
+"opus_screen": 85,
+"date": "2026-05-13",
+"speaker": "Mr. Ames",
+"n_words": 290
+},
+"nb0058": {
+"seg_id": "2025-05-28#t2792w7",
+"opus_screen": 82,
+"date": "2025-05-28",
+"speaker": "Mr. Cullins",
+"n_words": 262
+},
+"nb0059": {
+"seg_id": "2025-05-30#t3040w0",
+"opus_screen": 82,
+"date": "2025-05-30",
+"speaker": "Ms. M. Johnson",
+"n_words": 354
+},
+"nb0060": {
+"seg_id": "2024-05-09#t16460w0",
+"opus_screen": 82,
+"date": "2024-05-09",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 360
+},
+"nb0061": {
+"seg_id": "2026-03-26#t2551w0",
+"opus_screen": 82,
+"date": "2026-03-26",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 300
+},
+"nb0062": {
+"seg_id": "2025-11-06#t803w2",
+"opus_screen": 82,
+"date": "2025-11-06",
+"speaker": "Mr. Oliver",
+"n_words": 233
+},
+"nb0063": {
+"seg_id": "2026-03-18#t2135w26",
+"opus_screen": 82,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 355
+},
+"nb0064": {
+"seg_id": "2025-11-20#t1204w2",
+"opus_screen": 80,
+"date": "2025-11-20",
+"speaker": "Ms. Sodhi",
+"n_words": 313
+},
+"nb0065": {
+"seg_id": "2026-05-06#t2715w2",
+"opus_screen": 80,
+"date": "2026-05-06",
+"speaker": "Ms. M. Wilson",
+"n_words": 344
+},
+"nb0066": {
+"seg_id": "2025-05-14#t2325w2",
+"opus_screen": 80,
+"date": "2025-05-14",
+"speaker": "Mr. Lee",
+"n_words": 338
+},
+"nb0067": {
+"seg_id": "2025-12-11#t1815w0",
+"opus_screen": 80,
+"date": "2025-12-11",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 166
+},
+"nb0068": {
+"seg_id": "2025-03-27#t1613w6",
+"opus_screen": 80,
+"date": "2025-03-27",
+"speaker": "Mr. Monahan",
+"n_words": 155
+},
+"nb0069": {
+"seg_id": "2026-05-06#t2715w1",
+"opus_screen": 80,
+"date": "2026-05-06",
+"speaker": "Ms. M. Wilson",
+"n_words": 262
+},
+"nb0070": {
+"seg_id": "2025-12-04#t1546w2",
+"opus_screen": 80,
+"date": "2025-12-04",
+"speaker": "Mr. Ames",
+"n_words": 340
+},
+"nb0071": {
+"seg_id": "2026-05-07#t2830w2",
+"opus_screen": 80,
+"date": "2026-05-07",
+"speaker": "Mr. Lee",
+"n_words": 315
+},
+"nb0072": {
+"seg_id": "2026-05-13#t3093w1",
+"opus_screen": 80,
+"date": "2026-05-13",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 337
+},
+"nb0073": {
+"seg_id": "2025-05-16#t2534w0",
+"opus_screen": 80,
+"date": "2025-05-16",
+"speaker": "Ms. Bockus",
+"n_words": 301
+},
+"nb0074": {
+"seg_id": "2025-05-14#t2337w2",
+"opus_screen": 80,
+"date": "2025-05-14",
+"speaker": "Mr. Cullins",
+"n_words": 307
+},
+"nb0075": {
+"seg_id": "2025-05-30#t3040w4",
+"opus_screen": 80,
+"date": "2025-05-30",
+"speaker": "Ms. M. Johnson",
+"n_words": 168
+},
+"nb0076": {
+"seg_id": "2025-05-08#t1893w3",
+"opus_screen": 80,
+"date": "2025-05-08",
+"speaker": "Ms. Bockus",
+"n_words": 327
+},
+"nb0077": {
+"seg_id": "2025-06-03#t3060w0",
+"opus_screen": 80,
+"date": "2025-06-03",
+"speaker": "Mr. Weir",
+"n_words": 131
+},
+"nb0078": {
+"seg_id": "2026-05-14#t3193w2",
+"opus_screen": 80,
+"date": "2026-05-14",
+"speaker": "Mr. J. LeBlanc",
+"n_words": 355
+},
+"nb0079": {
+"seg_id": "2026-05-13#t3072w2",
+"opus_screen": 80,
+"date": "2026-05-13",
+"speaker": "Mr. Ames",
+"n_words": 284
+},
+"nb0080": {
+"seg_id": "2026-05-14#t3199w3",
+"opus_screen": 80,
+"date": "2026-05-14",
+"speaker": "Ms. Vautour",
+"n_words": 359
+},
+"nb0081": {
+"seg_id": "2025-05-14#t2324w0",
+"opus_screen": 80,
+"date": "2025-05-14",
+"speaker": "Mr. Monahan",
+"n_words": 292
+},
+"nb0082": {
+"seg_id": "2025-11-06#t803w1",
+"opus_screen": 80,
+"date": "2025-11-06",
+"speaker": "Mr. Oliver",
+"n_words": 332
+},
+"nb0083": {
+"seg_id": "2025-03-19#t1116w3",
+"opus_screen": 80,
+"date": "2025-03-19",
+"speaker": "Mr. Monahan",
+"n_words": 289
+},
+"nb0084": {
+"seg_id": "2026-03-20#t2199w0",
+"opus_screen": 80,
+"date": "2026-03-20",
+"speaker": "Ms. M. Wilson",
+"n_words": 172
+},
+"nb0085": {
+"seg_id": "2026-05-07#t2856w3",
+"opus_screen": 80,
+"date": "2026-05-07",
+"speaker": "Ms. M. Wilson",
+"n_words": 291
+},
+"nb0086": {
+"seg_id": "2025-11-07#t862w0",
+"opus_screen": 80,
+"date": "2025-11-07",
+"speaker": "Ms. Sodhi",
+"n_words": 156
+},
+"nb0087": {
+"seg_id": "2025-05-07#t1805w1",
+"opus_screen": 80,
+"date": "2025-05-07",
+"speaker": "Ms. M. Johnson",
+"n_words": 353
+},
+"nb0088": {
+"seg_id": "2025-05-28#t2795w0",
+"opus_screen": 80,
+"date": "2025-05-28",
+"speaker": "Mr. Oliver",
+"n_words": 248
+},
+"nb0089": {
+"seg_id": "2026-03-26#t2534w0",
+"opus_screen": 80,
+"date": "2026-03-26",
+"speaker": "Ms. M. Wilson",
+"n_words": 167
+},
+"nb0090": {
+"seg_id": "2026-05-13#t3072w1",
+"opus_screen": 80,
+"date": "2026-05-13",
+"speaker": "Mr. Ames",
+"n_words": 351
+},
+"nb0091": {
+"seg_id": "2025-10-28#t278w0",
+"opus_screen": 80,
+"date": "2025-10-28",
+"speaker": "Mr. Monahan",
+"n_words": 359
+},
+"nb0092": {
+"seg_id": "2025-12-03#t1441w0",
+"opus_screen": 80,
+"date": "2025-12-03",
+"speaker": "Mr. Russell",
+"n_words": 215
+},
+"nb0093": {
+"seg_id": "2025-11-20#t1188w2",
+"opus_screen": 80,
+"date": "2025-11-20",
+"speaker": "Ms. M. Johnson",
+"n_words": 354
+},
+"nb0094": {
+"seg_id": "2025-05-29#t2914w5",
+"opus_screen": 80,
+"date": "2025-05-29",
+"speaker": "Ms. Wilcott",
+"n_words": 342
+},
+"nb0095": {
+"seg_id": "2026-05-13#t3071w2",
+"opus_screen": 80,
+"date": "2026-05-13",
+"speaker": "Mr. Cullins",
+"n_words": 357
+},
+"nb0096": {
+"seg_id": "2025-11-20#t1174w1",
+"opus_screen": 80,
+"date": "2025-11-20",
+"speaker": "Mr. Deputy Speaker",
+"n_words": 325
+},
+"nb0097": {
+"seg_id": "2025-06-04#t3237w4",
+"opus_screen": 80,
+"date": "2025-06-04",
+"speaker": "Ms. M. Johnson",
+"n_words": 324
+},
+"nb0098": {
+"seg_id": "2026-05-06#t2743w2",
+"opus_screen": 80,
+"date": "2026-05-06",
+"speaker": "Mr. Monahan",
+"n_words": 355
+},
+"nb0099": {
+"seg_id": "2026-05-07#t2856w0",
+"opus_screen": 80,
+"date": "2026-05-07",
+"speaker": "Ms. M. Wilson",
+"n_words": 272
+},
+"nb0100": {
+"seg_id": "2025-06-04#t3237w3",
+"opus_screen": 80,
+"date": "2025-06-04",
+"speaker": "Ms. M. Johnson",
+"n_words": 276
+},
+"nb0101": {
+"seg_id": "2024-05-16#t16835w1",
+"opus_screen": 78,
+"date": "2024-05-16",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 357
+},
+"nb0102": {
+"seg_id": "2025-05-14#t2317w2",
+"opus_screen": 78,
+"date": "2025-05-14",
+"speaker": "Mr. Cullins",
+"n_words": 352
+},
+"nb0103": {
+"seg_id": "2026-05-13#t3071w0",
+"opus_screen": 78,
+"date": "2026-05-13",
+"speaker": "Mr. Cullins",
+"n_words": 262
+},
+"nb0104": {
+"seg_id": "2026-05-14#t3199w1",
+"opus_screen": 78,
+"date": "2026-05-14",
+"speaker": "Ms. Vautour",
+"n_words": 346
+},
+"nb0105": {
+"seg_id": "2025-11-05#t691w2",
+"opus_screen": 78,
+"date": "2025-11-05",
+"speaker": "Ms. M. Wilson",
+"n_words": 345
+},
+"nb0106": {
+"seg_id": "2025-05-28#t2820w5",
+"opus_screen": 78,
+"date": "2025-05-28",
+"speaker": "Ms. S. Wilson",
+"n_words": 317
+},
+"nb0107": {
+"seg_id": "2025-05-08#t1898w2",
+"opus_screen": 78,
+"date": "2025-05-08",
+"speaker": "Ms. M. Johnson",
+"n_words": 293
+},
+"nb0108": {
+"seg_id": "2025-12-11#t1934w0",
+"opus_screen": 78,
+"date": "2025-12-11",
+"speaker": "Mr. Cullins",
+"n_words": 330
+},
+"nb0109": {
+"seg_id": "2025-11-20#t1188w3",
+"opus_screen": 78,
+"date": "2025-11-20",
+"speaker": "Ms. M. Johnson",
+"n_words": 292
+},
+"nb0110": {
+"seg_id": "2026-05-07#t2830w3",
+"opus_screen": 78,
+"date": "2026-05-07",
+"speaker": "Mr. Lee",
+"n_words": 353
+},
+"nb0111": {
+"seg_id": "2025-11-06#t809w5",
+"opus_screen": 75,
+"date": "2025-11-06",
+"speaker": "Ms. M. Johnson",
+"n_words": 117
+},
+"nb0112": {
+"seg_id": "2025-05-27#t2649w1",
+"opus_screen": 75,
+"date": "2025-05-27",
+"speaker": "Ms. Bockus",
+"n_words": 254
+},
+"nb0113": {
+"seg_id": "2024-12-12#t812w1",
+"opus_screen": 75,
+"date": "2024-12-12",
+"speaker": "Hon. Mr. McKee",
+"n_words": 350
+},
+"nb0114": {
+"seg_id": "2026-05-14#t3193w1",
+"opus_screen": 75,
+"date": "2026-05-14",
+"speaker": "Mr. J. LeBlanc",
+"n_words": 325
+},
+"nb0115": {
+"seg_id": "2025-05-27#t2635w0",
+"opus_screen": 75,
+"date": "2025-05-27",
+"speaker": "Ms. M. Johnson",
+"n_words": 219
+},
+"nb0116": {
+"seg_id": "2025-11-20#t1100w0",
+"opus_screen": 75,
+"date": "2025-11-20",
+"speaker": "Mr. Monahan",
+"n_words": 176
+},
+"nb0117": {
+"seg_id": "2025-05-28#t2795w5",
+"opus_screen": 75,
+"date": "2025-05-28",
+"speaker": "Mr. Oliver",
+"n_words": 360
+},
+"nb0118": {
+"seg_id": "2025-12-04#t1534w3",
+"opus_screen": 75,
+"date": "2025-12-04",
+"speaker": "Ms. Vautour",
+"n_words": 252
+},
+"nb0119": {
+"seg_id": "2025-10-28#t278w1",
+"opus_screen": 75,
+"date": "2025-10-28",
+"speaker": "Mr. Monahan",
+"n_words": 314
+},
+"nb0120": {
+"seg_id": "2025-10-29#t406w2",
+"opus_screen": 75,
+"date": "2025-10-29",
+"speaker": "Ms. M. Wilson",
+"n_words": 305
+},
+"nb0121": {
+"seg_id": "2025-05-27#t2662w0",
+"opus_screen": 75,
+"date": "2025-05-27",
+"speaker": "Mr. Deputy Speaker",
+"n_words": 340
+},
+"nb0122": {
+"seg_id": "2023-11-23#t14308w0",
+"opus_screen": 75,
+"date": "2023-11-23",
+"speaker": "Mr. McKee",
+"n_words": 265
+},
+"nb0123": {
+"seg_id": "2025-11-05#t694w0",
+"opus_screen": 75,
+"date": "2025-11-05",
+"speaker": "Mr. Monahan",
+"n_words": 342
+},
+"nb0124": {
+"seg_id": "2025-05-14#t2317w0",
+"opus_screen": 75,
+"date": "2025-05-14",
+"speaker": "Mr. Cullins",
+"n_words": 339
+},
+"nb0125": {
+"seg_id": "2025-11-20#t1205w5",
+"opus_screen": 75,
+"date": "2025-11-20",
+"speaker": "Ms. M. Wilson",
+"n_words": 262
+},
+"nb0126": {
+"seg_id": "2025-06-03#t3143w0",
+"opus_screen": 75,
+"date": "2025-06-03",
+"speaker": "Mr. Monahan",
+"n_words": 357
+},
+"nb0127": {
+"seg_id": "2026-03-26#t2546w5",
+"opus_screen": 75,
+"date": "2026-03-26",
+"speaker": "Mr. Austin",
+"n_words": 304
+},
+"nb0128": {
+"seg_id": "2026-05-08#t2952w0",
+"opus_screen": 75,
+"date": "2026-05-08",
+"speaker": "Mr. Savoie",
+"n_words": 349
+},
+"nb0129": {
+"seg_id": "2025-10-30#t534w2",
+"opus_screen": 75,
+"date": "2025-10-30",
+"speaker": "Ms. S. Wilson",
+"n_words": 305
+},
+"nb0130": {
+"seg_id": "2025-05-28#t2792w1",
+"opus_screen": 75,
+"date": "2025-05-28",
+"speaker": "Mr. Cullins",
+"n_words": 296
+},
+"nb0131": {
+"seg_id": "2025-10-29#t406w3",
+"opus_screen": 75,
+"date": "2025-10-29",
+"speaker": "Ms. M. Wilson",
+"n_words": 334
+},
+"nb0132": {
+"seg_id": "2025-10-28#t278w8",
+"opus_screen": 75,
+"date": "2025-10-28",
+"speaker": "Mr. Monahan",
+"n_words": 357
+},
+"nb0133": {
+"seg_id": "2025-12-04#t1546w1",
+"opus_screen": 75,
+"date": "2025-12-04",
+"speaker": "Mr. Ames",
+"n_words": 344
+},
+"nb0134": {
+"seg_id": "2025-11-20#t1205w7",
+"opus_screen": 75,
+"date": "2025-11-20",
+"speaker": "Ms. M. Wilson",
+"n_words": 202
+},
+"nb0135": {
+"seg_id": "2025-05-13#t2035w0",
+"opus_screen": 75,
+"date": "2025-05-13",
+"speaker": "Ms. S. Wilson",
+"n_words": 152
+},
+"nb0136": {
+"seg_id": "2023-11-23#t14342w6",
+"opus_screen": 75,
+"date": "2023-11-23",
+"speaker": "Mr. McKee",
+"n_words": 339
+},
+"nb0137": {
+"seg_id": "2025-05-08#t1893w5",
+"opus_screen": 75,
+"date": "2025-05-08",
+"speaker": "Ms. Bockus",
+"n_words": 355
+},
+"nb0138": {
+"seg_id": "2025-05-28#t2795w6",
+"opus_screen": 75,
+"date": "2025-05-28",
+"speaker": "Mr. Oliver",
+"n_words": 291
+},
+"nb0139": {
+"seg_id": "2025-05-28#t2795w4",
+"opus_screen": 75,
+"date": "2025-05-28",
+"speaker": "Mr. Oliver",
+"n_words": 321
+},
+"nb0140": {
+"seg_id": "2026-05-06#t2715w3",
+"opus_screen": 75,
+"date": "2026-05-06",
+"speaker": "Ms. M. Wilson",
+"n_words": 165
+},
+"nb0141": {
+"seg_id": "2026-05-14#t3193w3",
+"opus_screen": 75,
+"date": "2026-05-14",
+"speaker": "Mr. J. LeBlanc",
+"n_words": 104
+},
+"nb0142": {
+"seg_id": "2026-05-13#t3069w4",
+"opus_screen": 75,
+"date": "2026-05-13",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 245
+},
+"nb0143": {
+"seg_id": "2025-11-06#t809w0",
+"opus_screen": 75,
+"date": "2025-11-06",
+"speaker": "Ms. M. Johnson",
+"n_words": 328
+},
+"nb0144": {
+"seg_id": "2025-12-02#t1371w1",
+"opus_screen": 75,
+"date": "2025-12-02",
+"speaker": "Mr. Monahan",
+"n_words": 174
+},
+"nb0145": {
+"seg_id": "2024-12-12#t840w5",
+"opus_screen": 75,
+"date": "2024-12-12",
+"speaker": "Mr. Monahan",
+"n_words": 344
+},
+"nb0146": {
+"seg_id": "2025-10-29#t401w2",
+"opus_screen": 75,
+"date": "2025-10-29",
+"speaker": "",
+"n_words": 131
+},
+"nb0147": {
+"seg_id": "2023-11-02#t13868w4",
+"opus_screen": 75,
+"date": "2023-11-02",
+"speaker": "Mr. McKee",
+"n_words": 336
+},
+"nb0148": {
+"seg_id": "2025-05-14#t2317w1",
+"opus_screen": 75,
+"date": "2025-05-14",
+"speaker": "Mr. Cullins",
+"n_words": 304
+},
+"nb0149": {
+"seg_id": "2026-03-20#t2234w8",
+"opus_screen": 75,
+"date": "2026-03-20",
+"speaker": "Ms. M. Johnson",
+"n_words": 320
+},
+"nb0150": {
+"seg_id": "2026-05-07#t2856w2",
+"opus_screen": 75,
+"date": "2026-05-07",
+"speaker": "Ms. M. Wilson",
+"n_words": 357
+},
+"nb0151": {
+"seg_id": "2023-10-24#t13338w7",
+"opus_screen": 72,
+"date": "2023-10-24",
+"speaker": "Mr. McKee",
+"n_words": 305
+},
+"nb0152": {
+"seg_id": "2025-10-29#t406w4",
+"opus_screen": 72,
+"date": "2025-10-29",
+"speaker": "Ms. M. Wilson",
+"n_words": 356
+},
+"nb0153": {
+"seg_id": "2024-05-16#t16835w5",
+"opus_screen": 72,
+"date": "2024-05-16",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 359
+},
+"nb0154": {
+"seg_id": "2025-12-12#t2008w0",
+"opus_screen": 72,
+"date": "2025-12-12",
+"speaker": "Ms. Conroy",
+"n_words": 276
+},
+"nb0155": {
+"seg_id": "2026-05-07#t2830w6",
+"opus_screen": 72,
+"date": "2026-05-07",
+"speaker": "Mr. Lee",
+"n_words": 245
+},
+"nb0156": {
+"seg_id": "2026-03-26#t2546w8",
+"opus_screen": 72,
+"date": "2026-03-26",
+"speaker": "Mr. Austin",
+"n_words": 301
+},
+"nb0157": {
+"seg_id": "2025-11-05#t690w2",
+"opus_screen": 72,
+"date": "2025-11-05",
+"speaker": "Ms. Bockus",
+"n_words": 355
+},
+"nb0158": {
+"seg_id": "2025-05-28#t2794w2",
+"opus_screen": 72,
+"date": "2025-05-28",
+"speaker": "Mr. Lee",
+"n_words": 347
+},
+"nb0159": {
+"seg_id": "2025-10-30#t496w4",
+"opus_screen": 72,
+"date": "2025-10-30",
+"speaker": "Hon. Mr. McKee",
+"n_words": 108
+},
+"nb0160": {
+"seg_id": "2025-10-30#t509w4",
+"opus_screen": 72,
+"date": "2025-10-30",
+"speaker": "Mr. Russell",
+"n_words": 169
+},
+"nb0161": {
+"seg_id": "2025-05-14#t2337w0",
+"opus_screen": 72,
+"date": "2025-05-14",
+"speaker": "Mr. Cullins",
+"n_words": 263
+},
+"nb0162": {
+"seg_id": "2023-11-23#t14342w3",
+"opus_screen": 72,
+"date": "2023-11-23",
+"speaker": "Mr. McKee",
+"n_words": 342
+},
+"nb0163": {
+"seg_id": "2024-12-12#t840w4",
+"opus_screen": 72,
+"date": "2024-12-12",
+"speaker": "Mr. Monahan",
+"n_words": 347
+},
+"nb0164": {
+"seg_id": "2024-06-07#t17773w2",
+"opus_screen": 72,
+"date": "2024-06-07",
+"speaker": "Mr. Coon",
+"n_words": 326
+},
+"nb0165": {
+"seg_id": "2025-12-03#t1414w0",
+"opus_screen": 72,
+"date": "2025-12-03",
+"speaker": "Mr. Monahan",
+"n_words": 167
+},
+"nb0166": {
+"seg_id": "2025-05-28#t2781w6",
+"opus_screen": 72,
+"date": "2025-05-28",
+"speaker": "Ms. Conroy",
+"n_words": 326
+},
+"nb0167": {
+"seg_id": "2025-03-26#t1515w5",
+"opus_screen": 72,
+"date": "2025-03-26",
+"speaker": "Ms. M. Johnson",
+"n_words": 313
+},
+"nb0168": {
+"seg_id": "2026-05-07#t2856w4",
+"opus_screen": 72,
+"date": "2026-05-07",
+"speaker": "Ms. M. Wilson",
+"n_words": 279
+},
+"nb0169": {
+"seg_id": "2026-05-14#t3202w1",
+"opus_screen": 72,
+"date": "2026-05-14",
+"speaker": "Ms. Scott-Wallace",
+"n_words": 309
+},
+"nb0170": {
+"seg_id": "2026-03-25#t2418w3",
+"opus_screen": 72,
+"date": "2026-03-25",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 256
+},
+"nb0171": {
+"seg_id": "2026-03-18#t2135w10",
+"opus_screen": 72,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 321
+},
+"nb0172": {
+"seg_id": "2026-05-08#t2949w0",
+"opus_screen": 72,
+"date": "2026-05-08",
+"speaker": "Mr. Russell",
+"n_words": 278
+},
+"nb0173": {
+"seg_id": "2026-03-18#t2135w0",
+"opus_screen": 72,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 334
+},
+"nb0174": {
+"seg_id": "2025-10-21#t5w3",
+"opus_screen": 72,
+"date": "2025-10-21",
+"speaker": "Madam Speaker",
+"n_words": 326
+},
+"nb0175": {
+"seg_id": "2025-05-14#t2337w1",
+"opus_screen": 72,
+"date": "2025-05-14",
+"speaker": "Mr. Cullins",
+"n_words": 286
+},
+"nb0176": {
+"seg_id": "2025-05-06#t1707w1",
+"opus_screen": 72,
+"date": "2025-05-06",
+"speaker": "Mr. Cullins",
+"n_words": 355
+},
+"nb0177": {
+"seg_id": "2025-11-05#t691w1",
+"opus_screen": 72,
+"date": "2025-11-05",
+"speaker": "Ms. M. Wilson",
+"n_words": 261
+},
+"nb0178": {
+"seg_id": "2024-12-13#t940w1",
+"opus_screen": 72,
+"date": "2024-12-13",
+"speaker": "Ms. M. Johnson",
+"n_words": 79
+},
+"nb0179": {
+"seg_id": "2026-05-13#t3070w2",
+"opus_screen": 72,
+"date": "2026-05-13",
+"speaker": "Ms. M. Johnson",
+"n_words": 348
+},
+"nb0180": {
+"seg_id": "2025-06-03#t3143w1",
+"opus_screen": 72,
+"date": "2025-06-03",
+"speaker": "Mr. Monahan",
+"n_words": 356
+},
+"nb0181": {
+"seg_id": "2024-12-12#t745w0",
+"opus_screen": 72,
+"date": "2024-12-12",
+"speaker": "Mr. Weir",
+"n_words": 134
+},
+"nb0182": {
+"seg_id": "2025-10-30#t536w0",
+"opus_screen": 72,
+"date": "2025-10-30",
+"speaker": "Ms. M. Johnson",
+"n_words": 352
+},
+"nb0183": {
+"seg_id": "2024-03-22#t15720w12",
+"opus_screen": 72,
+"date": "2024-03-22",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 64
+},
+"nb0184": {
+"seg_id": "2026-05-08#t2948w0",
+"opus_screen": 72,
+"date": "2026-05-08",
+"speaker": "Hon. Mr. Randall",
+"n_words": 248
+},
+"nb0185": {
+"seg_id": "2025-12-10#t1771w0",
+"opus_screen": 72,
+"date": "2025-12-10",
+"speaker": "Mr. Monahan",
+"n_words": 121
+},
+"nb0186": {
+"seg_id": "2023-06-08#t12483w0",
+"opus_screen": 72,
+"date": "2023-06-08",
+"speaker": "Mr. McKee",
+"n_words": 182
+},
+"nb0187": {
+"seg_id": "2025-11-20#t1188w0",
+"opus_screen": 72,
+"date": "2025-11-20",
+"speaker": "Ms. M. Johnson",
+"n_words": 323
+},
+"nb0188": {
+"seg_id": "2025-11-06#t799w3",
+"opus_screen": 72,
+"date": "2025-11-06",
+"speaker": "Mr. Lee",
+"n_words": 289
+},
+"nb0189": {
+"seg_id": "2025-06-04#t3237w0",
+"opus_screen": 72,
+"date": "2025-06-04",
+"speaker": "Ms. M. Johnson",
+"n_words": 305
+},
+"nb0190": {
+"seg_id": "2025-03-26#t1515w0",
+"opus_screen": 72,
+"date": "2025-03-26",
+"speaker": "Ms. M. Johnson",
+"n_words": 285
+},
+"nb0191": {
+"seg_id": "2025-10-30#t535w0",
+"opus_screen": 72,
+"date": "2025-10-30",
+"speaker": "Hon. Mr. McKee",
+"n_words": 329
+},
+"nb0192": {
+"seg_id": "2025-05-14#t2324w1",
+"opus_screen": 72,
+"date": "2025-05-14",
+"speaker": "Mr. Monahan",
+"n_words": 308
+},
+"nb0193": {
+"seg_id": "2025-06-04#t3237w2",
+"opus_screen": 72,
+"date": "2025-06-04",
+"speaker": "Ms. M. Johnson",
+"n_words": 336
+},
+"nb0194": {
+"seg_id": "2025-12-04#t1546w0",
+"opus_screen": 72,
+"date": "2025-12-04",
+"speaker": "Mr. Ames",
+"n_words": 355
+},
+"nb0195": {
+"seg_id": "2025-05-16#t2553w0",
+"opus_screen": 72,
+"date": "2025-05-16",
+"speaker": "Mr. Monahan",
+"n_words": 348
+},
+"nb0196": {
+"seg_id": "2025-06-03#t3141w0",
+"opus_screen": 72,
+"date": "2025-06-03",
+"speaker": "Ms. M. Johnson",
+"n_words": 312
+},
+"nb0197": {
+"seg_id": "2026-05-07#t2871w0",
+"opus_screen": 72,
+"date": "2026-05-07",
+"speaker": "Mr. Lee",
+"n_words": 343
+},
+"nb0198": {
+"seg_id": "2025-11-19#t1026w0",
+"opus_screen": 72,
+"date": "2025-11-19",
+"speaker": "Ms. M. Johnson",
+"n_words": 327
+},
+"nb0199": {
+"seg_id": "2025-05-15#t2351w0",
+"opus_screen": 72,
+"date": "2025-05-15",
+"speaker": "Mr. Monahan",
+"n_words": 167
+},
+"nb0200": {
+"seg_id": "2024-12-12#t835w4",
+"opus_screen": 72,
+"date": "2024-12-12",
+"speaker": "Ms. M. Wilson",
+"n_words": 326
+},
+"nb0201": {
+"seg_id": "2025-12-04#t1516w0",
+"opus_screen": 72,
+"date": "2025-12-04",
+"speaker": "Ms. M. Wilson",
+"n_words": 285
+},
+"nb0202": {
+"seg_id": "2026-05-14#t3192w4",
+"opus_screen": 72,
+"date": "2026-05-14",
+"speaker": "Ms. M. Johnson",
+"n_words": 338
+},
+"nb0203": {
+"seg_id": "2026-03-18#t2135w8",
+"opus_screen": 72,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 323
+},
+"nb0204": {
+"seg_id": "2026-03-18#t2135w14",
+"opus_screen": 72,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 298
+},
+"nb0205": {
+"seg_id": "2026-05-07#t2830w5",
+"opus_screen": 72,
+"date": "2026-05-07",
+"speaker": "Mr. Lee",
+"n_words": 288
+},
+"nb0206": {
+"seg_id": "2025-12-09#t1641w0",
+"opus_screen": 72,
+"date": "2025-12-09",
+"speaker": "Ms. Sodhi",
+"n_words": 138
+},
+"nb0207": {
+"seg_id": "2026-03-24#t2259w0",
+"opus_screen": 72,
+"date": "2026-03-24",
+"speaker": "Mr. Bourque",
+"n_words": 148
+},
+"nb0208": {
+"seg_id": "2025-10-29#t412w0",
+"opus_screen": 72,
+"date": "2025-10-29",
+"speaker": "Mr. Oliver",
+"n_words": 328
+},
+"nb0209": {
+"seg_id": "2025-12-05#t1607w0",
+"opus_screen": 72,
+"date": "2025-12-05",
+"speaker": "Mr. Monahan",
+"n_words": 153
+},
+"nb0210": {
+"seg_id": "2025-06-05#t3330w1",
+"opus_screen": 72,
+"date": "2025-06-05",
+"speaker": "Ms. Vautour",
+"n_words": 316
+},
+"nb0211": {
+"seg_id": "2024-12-12#t840w2",
+"opus_screen": 72,
+"date": "2024-12-12",
+"speaker": "Mr. Monahan",
+"n_words": 295
+},
+"nb0212": {
+"seg_id": "2026-05-14#t3204w6",
+"opus_screen": 72,
+"date": "2026-05-14",
+"speaker": "Ms. M. Wilson",
+"n_words": 289
+},
+"nb0213": {
+"seg_id": "2024-11-22#t144w0",
+"opus_screen": 72,
+"date": "2024-11-22",
+"speaker": "Ms. Sodhi",
+"n_words": 186
+},
+"nb0214": {
+"seg_id": "2026-05-13#t3090w1",
+"opus_screen": 72,
+"date": "2026-05-13",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 194
+},
+"nb0215": {
+"seg_id": "2024-05-09#t16460w2",
+"opus_screen": 72,
+"date": "2024-05-09",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 331
+},
+"nb0216": {
+"seg_id": "2024-12-12#t842w2",
+"opus_screen": 72,
+"date": "2024-12-12",
+"speaker": "Ms. M. Johnson",
+"n_words": 277
+},
+"nb0217": {
+"seg_id": "2025-11-04#t611w3",
+"opus_screen": 72,
+"date": "2025-11-04",
+"speaker": "Mr. Monahan",
+"n_words": 209
+},
+"nb0218": {
+"seg_id": "2025-11-04#t611w1",
+"opus_screen": 72,
+"date": "2025-11-04",
+"speaker": "Mr. Monahan",
+"n_words": 352
+},
+"nb0219": {
+"seg_id": "2025-05-27#t2595w0",
+"opus_screen": 72,
+"date": "2025-05-27",
+"speaker": "Mr. J. LeBlanc",
+"n_words": 164
+},
+"nb0220": {
+"seg_id": "2026-05-14#t3150w0",
+"opus_screen": 72,
+"date": "2026-05-14",
+"speaker": "Ms. M. Wilson",
+"n_words": 254
+},
+"nb0221": {
+"seg_id": "2025-12-04#t1557w3",
+"opus_screen": 72,
+"date": "2025-12-04",
+"speaker": "",
+"n_words": 353
+},
+"nb0222": {
+"seg_id": "2025-05-16#t2562w0",
+"opus_screen": 72,
+"date": "2025-05-16",
+"speaker": "Ms. S. Wilson",
+"n_words": 325
+},
+"nb0223": {
+"seg_id": "2025-06-05#t3336w1",
+"opus_screen": 70,
+"date": "2025-06-05",
+"speaker": "Ms. M. Johnson",
+"n_words": 341
+},
+"nb0224": {
+"seg_id": "2023-05-11#t11774w5",
+"opus_screen": 70,
+"date": "2023-05-11",
+"speaker": "Mr. McKee",
+"n_words": 280
+},
+"nb0225": {
+"seg_id": "2025-12-04#t1547w1",
+"opus_screen": 70,
+"date": "2025-12-04",
+"speaker": "Mr. Deputy Speaker",
+"n_words": 279
+},
+"nb0226": {
+"seg_id": "2025-05-07#t1805w3",
+"opus_screen": 70,
+"date": "2025-05-07",
+"speaker": "Ms. M. Johnson",
+"n_words": 317
+},
+"nb0227": {
+"seg_id": "2025-06-05#t3250w0",
+"opus_screen": 70,
+"date": "2025-06-05",
+"speaker": "Ms. Bockus",
+"n_words": 161
+},
+"nb0228": {
+"seg_id": "2025-05-28#t2795w2",
+"opus_screen": 70,
+"date": "2025-05-28",
+"speaker": "Mr. Oliver",
+"n_words": 261
+},
+"nb0229": {
+"seg_id": "2025-05-27#t2663w5",
+"opus_screen": 70,
+"date": "2025-05-27",
+"speaker": "Mr. Cullins",
+"n_words": 208
+},
+"nb0230": {
+"seg_id": "2026-03-26#t2544w6",
+"opus_screen": 70,
+"date": "2026-03-26",
+"speaker": "Mr. Coon",
+"n_words": 249
+},
+"nb0231": {
+"seg_id": "2026-03-26#t2551w2",
+"opus_screen": 70,
+"date": "2026-03-26",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 348
+},
+"nb0232": {
+"seg_id": "2025-10-30#t534w3",
+"opus_screen": 70,
+"date": "2025-10-30",
+"speaker": "Ms. S. Wilson",
+"n_words": 338
+},
+"nb0233": {
+"seg_id": "2025-12-11#t1926w1",
+"opus_screen": 70,
+"date": "2025-12-11",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 357
+},
+"nb0234": {
+"seg_id": "2025-05-27#t2663w3",
+"opus_screen": 70,
+"date": "2025-05-27",
+"speaker": "Mr. Cullins",
+"n_words": 360
+},
+"nb0235": {
+"seg_id": "2025-11-05#t694w3",
+"opus_screen": 70,
+"date": "2025-11-05",
+"speaker": "Mr. Monahan",
+"n_words": 332
+},
+"nb0236": {
+"seg_id": "2025-05-14#t2337w3",
+"opus_screen": 70,
+"date": "2025-05-14",
+"speaker": "Mr. Cullins",
+"n_words": 64
+},
+"nb0237": {
+"seg_id": "2025-05-27#t2649w2",
+"opus_screen": 70,
+"date": "2025-05-27",
+"speaker": "Ms. Bockus",
+"n_words": 341
+},
+"nb0238": {
+"seg_id": "2025-12-02#t1306w0",
+"opus_screen": 70,
+"date": "2025-12-02",
+"speaker": "Ms. Vautour",
+"n_words": 140
+},
+"nb0239": {
+"seg_id": "2026-05-13#t3070w3",
+"opus_screen": 70,
+"date": "2026-05-13",
+"speaker": "Ms. M. Johnson",
+"n_words": 131
+},
+"nb0240": {
+"seg_id": "2023-05-10#t11631w6",
+"opus_screen": 70,
+"date": "2023-05-10",
+"speaker": "Mr. McKee",
+"n_words": 325
+},
+"nb0241": {
+"seg_id": "2026-05-13#t3077w0",
+"opus_screen": 70,
+"date": "2026-05-13",
+"speaker": "Mr. Monahan",
+"n_words": 349
+},
+"nb0242": {
+"seg_id": "2026-05-13#t3083w0",
+"opus_screen": 70,
+"date": "2026-05-13",
+"speaker": "Mr. Monahan",
+"n_words": 294
+},
+"nb0243": {
+"seg_id": "2025-05-28#t2794w1",
+"opus_screen": 70,
+"date": "2025-05-28",
+"speaker": "Mr. Lee",
+"n_words": 335
+},
+"nb0244": {
+"seg_id": "2026-03-18#t2135w17",
+"opus_screen": 70,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 273
+},
+"nb0245": {
+"seg_id": "2025-06-04#t3235w0",
+"opus_screen": 70,
+"date": "2025-06-04",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 354
+},
+"nb0246": {
+"seg_id": "2025-05-27#t2663w4",
+"opus_screen": 70,
+"date": "2025-05-27",
+"speaker": "Mr. Cullins",
+"n_words": 328
+},
+"nb0247": {
+"seg_id": "2026-05-14#t3204w5",
+"opus_screen": 70,
+"date": "2026-05-14",
+"speaker": "Ms. M. Wilson",
+"n_words": 336
+},
+"nb0248": {
+"seg_id": "2025-10-24#t179w1",
+"opus_screen": 70,
+"date": "2025-10-24",
+"speaker": "Mr. Russell",
+"n_words": 356
+},
+"nb0249": {
+"seg_id": "2025-05-08#t1893w0",
+"opus_screen": 70,
+"date": "2025-05-08",
+"speaker": "Ms. Bockus",
+"n_words": 347
+},
+"nb0250": {
+"seg_id": "2026-03-26#t2544w5",
+"opus_screen": 70,
+"date": "2026-03-26",
+"speaker": "Mr. Coon",
+"n_words": 348
+},
+"nb0251": {
+"seg_id": "2026-03-24#t2305w3",
+"opus_screen": 70,
+"date": "2026-03-24",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 208
+},
+"nb0252": {
+"seg_id": "2025-05-27#t2650w0",
+"opus_screen": 70,
+"date": "2025-05-27",
+"speaker": "Mr. Ames",
+"n_words": 321
+},
+"nb0253": {
+"seg_id": "2026-03-18#t2063w0",
+"opus_screen": 70,
+"date": "2026-03-18",
+"speaker": "Mr. Bourque",
+"n_words": 164
+},
+"nb0254": {
+"seg_id": "2025-05-27#t2646w2",
+"opus_screen": 70,
+"date": "2025-05-27",
+"speaker": "Madam Speaker",
+"n_words": 324
+},
+"nb0255": {
+"seg_id": "2024-12-10#t631w0",
+"opus_screen": 70,
+"date": "2024-12-10",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 355
+},
+"nb0256": {
+"seg_id": "2025-05-28#t2783w2",
+"opus_screen": 70,
+"date": "2025-05-28",
+"speaker": "Ms. Bockus",
+"n_words": 334
+},
+"nb0257": {
+"seg_id": "2025-03-26#t1515w2",
+"opus_screen": 70,
+"date": "2025-03-26",
+"speaker": "Ms. M. Johnson",
+"n_words": 332
+},
+"nb0258": {
+"seg_id": "2025-05-29#t2829w0",
+"opus_screen": 70,
+"date": "2025-05-29",
+"speaker": "Ms. M. Johnson",
+"n_words": 163
+},
+"nb0259": {
+"seg_id": "2025-05-27#t2649w4",
+"opus_screen": 70,
+"date": "2025-05-27",
+"speaker": "Ms. Bockus",
+"n_words": 219
+},
+"nb0260": {
+"seg_id": "2025-11-19#t1035w0",
+"opus_screen": 70,
+"date": "2025-11-19",
+"speaker": "Mr. J. LeBlanc",
+"n_words": 105
+},
+"nb0261": {
+"seg_id": "2025-03-25#t1339w0",
+"opus_screen": 70,
+"date": "2025-03-25",
+"speaker": "Hon. Ms. Th\u00e9riault",
+"n_words": 322
+},
+"nb0262": {
+"seg_id": "2026-05-13#t3061w0",
+"opus_screen": 70,
+"date": "2026-05-13",
+"speaker": "Mr. Weir",
+"n_words": 137
+},
+"nb0263": {
+"seg_id": "2026-05-13#t3075w0",
+"opus_screen": 70,
+"date": "2026-05-13",
+"speaker": "Mr. Ames",
+"n_words": 272
+},
+"nb0264": {
+"seg_id": "2025-11-20#t1205w4",
+"opus_screen": 70,
+"date": "2025-11-20",
+"speaker": "Ms. M. Wilson",
+"n_words": 265
+},
+"nb0265": {
+"seg_id": "2026-05-14#t3201w1",
+"opus_screen": 70,
+"date": "2026-05-14",
+"speaker": "Mr. Oliver",
+"n_words": 353
+},
+"nb0266": {
+"seg_id": "2026-05-13#t3095w0",
+"opus_screen": 70,
+"date": "2026-05-13",
+"speaker": "",
+"n_words": 354
+},
+"nb0267": {
+"seg_id": "2026-03-20#t2235w1",
+"opus_screen": 70,
+"date": "2026-03-20",
+"speaker": "Ms. M. Johnson",
+"n_words": 327
+},
+"nb0268": {
+"seg_id": "2025-05-27#t2645w6",
+"opus_screen": 70,
+"date": "2025-05-27",
+"speaker": "Ms. Conroy",
+"n_words": 251
+},
+"nb0269": {
+"seg_id": "2025-05-06#t1672w0",
+"opus_screen": 70,
+"date": "2025-05-06",
+"speaker": "Mr. Monahan",
+"n_words": 139
+},
+"nb0270": {
+"seg_id": "2025-12-03#t1396w0",
+"opus_screen": 70,
+"date": "2025-12-03",
+"speaker": "Ms. Sodhi",
+"n_words": 130
+},
+"nb0271": {
+"seg_id": "2026-03-18#t2135w22",
+"opus_screen": 70,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 209
+},
+"nb0272": {
+"seg_id": "2025-05-27#t2650w1",
+"opus_screen": 70,
+"date": "2025-05-27",
+"speaker": "Mr. Ames",
+"n_words": 357
+},
+"nb0273": {
+"seg_id": "2026-03-18#t2043w0",
+"opus_screen": 70,
+"date": "2026-03-18",
+"speaker": "Mr. J. LeBlanc",
+"n_words": 315
+},
+"nb0274": {
+"seg_id": "2024-11-28#t536w2",
+"opus_screen": 70,
+"date": "2024-11-28",
+"speaker": "Mr. Monahan",
+"n_words": 314
+},
+"nb0275": {
+"seg_id": "2023-05-17#t12036w4",
+"opus_screen": 70,
+"date": "2023-05-17",
+"speaker": "Mr. McKee",
+"n_words": 318
+},
+"nb0276": {
+"seg_id": "2024-06-06#t17550w0",
+"opus_screen": 70,
+"date": "2024-06-06",
+"speaker": "Mr. G. Arseneault",
+"n_words": 171
+},
+"nb0277": {
+"seg_id": "2026-05-07#t2814w0",
+"opus_screen": 70,
+"date": "2026-05-07",
+"speaker": "Hon. Ms. Miles",
+"n_words": 155
+},
+"nb0278": {
+"seg_id": "2025-11-20#t1205w0",
+"opus_screen": 70,
+"date": "2025-11-20",
+"speaker": "Ms. M. Wilson",
+"n_words": 336
+},
+"nb0279": {
+"seg_id": "2026-05-13#t3095w2",
+"opus_screen": 70,
+"date": "2026-05-13",
+"speaker": "",
+"n_words": 344
+},
+"nb0280": {
+"seg_id": "2025-05-14#t2323w0",
+"opus_screen": 70,
+"date": "2025-05-14",
+"speaker": "",
+"n_words": 301
+},
+"nb0281": {
+"seg_id": "2025-05-16#t2505w0",
+"opus_screen": 70,
+"date": "2025-05-16",
+"speaker": "Mr. Monahan",
+"n_words": 131
+},
+"nb0282": {
+"seg_id": "2023-11-23#t14342w7",
+"opus_screen": 70,
+"date": "2023-11-23",
+"speaker": "Mr. McKee",
+"n_words": 288
+},
+"nb0283": {
+"seg_id": "2023-06-08#t12543w1",
+"opus_screen": 70,
+"date": "2023-06-08",
+"speaker": "Mr. K. Chiasson",
+"n_words": 164
+},
+"nb0284": {
+"seg_id": "2025-10-29#t378w8",
+"opus_screen": 70,
+"date": "2025-10-29",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 340
+},
+"nb0285": {
+"seg_id": "2025-10-24#t163w0",
+"opus_screen": 70,
+"date": "2025-10-24",
+"speaker": "Mr. Monahan",
+"n_words": 257
+},
+"nb0286": {
+"seg_id": "2024-11-28#t536w1",
+"opus_screen": 68,
+"date": "2024-11-28",
+"speaker": "Mr. Monahan",
+"n_words": 359
+},
+"nb0287": {
+"seg_id": "2025-03-26#t1482w6",
+"opus_screen": 68,
+"date": "2025-03-26",
+"speaker": "Mr. Weir",
+"n_words": 317
+},
+"nb0288": {
+"seg_id": "2025-05-08#t1920w1",
+"opus_screen": 68,
+"date": "2025-05-08",
+"speaker": "Ms. Bockus",
+"n_words": 105
+},
+"nb0289": {
+"seg_id": "2025-03-19#t1150w3",
+"opus_screen": 68,
+"date": "2025-03-19",
+"speaker": "Mr. Cullins",
+"n_words": 327
+},
+"nb0290": {
+"seg_id": "2025-05-07#t1805w0",
+"opus_screen": 68,
+"date": "2025-05-07",
+"speaker": "Ms. M. Johnson",
+"n_words": 315
+},
+"nb0291": {
+"seg_id": "2026-03-20#t2208w3",
+"opus_screen": 68,
+"date": "2026-03-20",
+"speaker": "Ms. Scott-Wallace",
+"n_words": 357
+},
+"nb0292": {
+"seg_id": "2025-05-27#t2662w5",
+"opus_screen": 68,
+"date": "2025-05-27",
+"speaker": "Mr. Deputy Speaker",
+"n_words": 289
+},
+"nb0293": {
+"seg_id": "2025-10-29#t412w1",
+"opus_screen": 68,
+"date": "2025-10-29",
+"speaker": "Mr. Oliver",
+"n_words": 322
+},
+"nb0294": {
+"seg_id": "2025-11-05#t693w1",
+"opus_screen": 68,
+"date": "2025-11-05",
+"speaker": "Ms. M. Johnson",
+"n_words": 339
+},
+"nb0295": {
+"seg_id": "2025-10-24#t193w1",
+"opus_screen": 68,
+"date": "2025-10-24",
+"speaker": "Mr. Monahan",
+"n_words": 339
+},
+"nb0296": {
+"seg_id": "2026-03-18#t2135w13",
+"opus_screen": 66,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 243
+},
+"nb0297": {
+"seg_id": "2026-03-18#t2135w18",
+"opus_screen": 65,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 300
+},
+"nb0298": {
+"seg_id": "2025-05-27#t2576w0",
+"opus_screen": 65,
+"date": "2025-05-27",
+"speaker": "Mr. Monahan",
+"n_words": 148
+},
+"nb0299": {
+"seg_id": "2025-05-27#t2645w4",
+"opus_screen": 65,
+"date": "2025-05-27",
+"speaker": "Ms. Conroy",
+"n_words": 307
+},
+"nb0300": {
+"seg_id": "2026-05-07#t2873w3",
+"opus_screen": 65,
+"date": "2026-05-07",
+"speaker": "Mr. Doucet",
+"n_words": 207
+},
+"nb0301": {
+"seg_id": "2026-05-13#t3070w1",
+"opus_screen": 65,
+"date": "2026-05-13",
+"speaker": "Ms. M. Johnson",
+"n_words": 328
+},
+"nb0302": {
+"seg_id": "2025-06-05#t3333w6",
+"opus_screen": 65,
+"date": "2025-06-05",
+"speaker": "Ms. Conroy",
+"n_words": 199
+},
+"nb0303": {
+"seg_id": "2026-05-13#t3072w3",
+"opus_screen": 65,
+"date": "2026-05-13",
+"speaker": "Mr. Ames",
+"n_words": 138
+},
+"nb0304": {
+"seg_id": "2025-11-05#t620w0",
+"opus_screen": 65,
+"date": "2025-11-05",
+"speaker": "Ms. M. Johnson",
+"n_words": 210
+},
+"nb0305": {
+"seg_id": "2025-05-14#t2170w0",
+"opus_screen": 65,
+"date": "2025-05-14",
+"speaker": "Mr. Weir",
+"n_words": 150
+},
+"nb0306": {
+"seg_id": "2026-05-07#t2830w0",
+"opus_screen": 65,
+"date": "2026-05-07",
+"speaker": "Mr. Lee",
+"n_words": 332
+},
+"nb0307": {
+"seg_id": "2025-12-03#t1446w0",
+"opus_screen": 65,
+"date": "2025-12-03",
+"speaker": "Mr. Weir",
+"n_words": 332
+},
+"nb0308": {
+"seg_id": "2024-12-12#t747w0",
+"opus_screen": 65,
+"date": "2024-12-12",
+"speaker": "Mr. Arseneault",
+"n_words": 157
+},
+"nb0309": {
+"seg_id": "2026-05-07#t2856w8",
+"opus_screen": 65,
+"date": "2026-05-07",
+"speaker": "Ms. M. Wilson",
+"n_words": 249
+},
+"nb0310": {
+"seg_id": "2025-12-12#t2021w0",
+"opus_screen": 65,
+"date": "2025-12-12",
+"speaker": "Mr. Coon",
+"n_words": 321
+},
+"nb0311": {
+"seg_id": "2026-05-07#t2830w4",
+"opus_screen": 65,
+"date": "2026-05-07",
+"speaker": "Mr. Lee",
+"n_words": 291
+},
+"nb0312": {
+"seg_id": "2024-05-28#t17035w1",
+"opus_screen": 65,
+"date": "2024-05-28",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 259
+},
+"nb0313": {
+"seg_id": "2024-11-27#t354w0",
+"opus_screen": 65,
+"date": "2024-11-27",
+"speaker": "Ms. Vautour",
+"n_words": 155
+},
+"nb0314": {
+"seg_id": "2025-11-20#t1216w0",
+"opus_screen": 65,
+"date": "2025-11-20",
+"speaker": "Mr. Deputy Speaker",
+"n_words": 351
+},
+"nb0315": {
+"seg_id": "2024-11-27#t409w4",
+"opus_screen": 65,
+"date": "2024-11-27",
+"speaker": "Ms. Conroy",
+"n_words": 321
+},
+"nb0316": {
+"seg_id": "2025-12-03#t1440w0",
+"opus_screen": 65,
+"date": "2025-12-03",
+"speaker": "Hon. Mr. Randall",
+"n_words": 197
+},
+"nb0317": {
+"seg_id": "2026-03-20#t2209w5",
+"opus_screen": 65,
+"date": "2026-03-20",
+"speaker": "Mr. Coon",
+"n_words": 301
+},
+"nb0318": {
+"seg_id": "2025-05-08#t1918w0",
+"opus_screen": 65,
+"date": "2025-05-08",
+"speaker": "Ms. Bockus",
+"n_words": 353
+},
+"nb0319": {
+"seg_id": "2025-03-19#t1116w6",
+"opus_screen": 65,
+"date": "2025-03-19",
+"speaker": "Mr. Monahan",
+"n_words": 149
+},
+"nb0320": {
+"seg_id": "2026-03-26#t2544w3",
+"opus_screen": 65,
+"date": "2026-03-26",
+"speaker": "Mr. Coon",
+"n_words": 279
+},
+"nb0321": {
+"seg_id": "2024-12-12#t842w3",
+"opus_screen": 65,
+"date": "2024-12-12",
+"speaker": "Ms. M. Johnson",
+"n_words": 355
+},
+"nb0322": {
+"seg_id": "2025-12-04#t1550w0",
+"opus_screen": 65,
+"date": "2025-12-04",
+"speaker": "Hon. Mr. McKee",
+"n_words": 300
+},
+"nb0323": {
+"seg_id": "2025-12-04#t1466w0",
+"opus_screen": 65,
+"date": "2025-12-04",
+"speaker": "Mr. Monahan",
+"n_words": 159
+},
+"nb0324": {
+"seg_id": "2025-05-28#t2792w0",
+"opus_screen": 65,
+"date": "2025-05-28",
+"speaker": "Mr. Cullins",
+"n_words": 347
+},
+"nb0325": {
+"seg_id": "2024-12-10#t631w1",
+"opus_screen": 65,
+"date": "2024-12-10",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 302
+},
+"nb0326": {
+"seg_id": "2023-12-07#t15120w0",
+"opus_screen": 65,
+"date": "2023-12-07",
+"speaker": "Ms. Holt",
+"n_words": 151
+},
+"nb0327": {
+"seg_id": "2025-11-05#t694w4",
+"opus_screen": 65,
+"date": "2025-11-05",
+"speaker": "Mr. Monahan",
+"n_words": 189
+},
+"nb0328": {
+"seg_id": "2025-11-05#t632w0",
+"opus_screen": 65,
+"date": "2025-11-05",
+"speaker": "Mr. Arseneault",
+"n_words": 137
+},
+"nb0329": {
+"seg_id": "2026-05-14#t3199w4",
+"opus_screen": 65,
+"date": "2026-05-14",
+"speaker": "Ms. Vautour",
+"n_words": 318
+},
+"nb0330": {
+"seg_id": "2023-05-11#t11774w3",
+"opus_screen": 65,
+"date": "2023-05-11",
+"speaker": "Mr. McKee",
+"n_words": 318
+},
+"nb0331": {
+"seg_id": "2025-06-05#t3336w2",
+"opus_screen": 65,
+"date": "2025-06-05",
+"speaker": "Ms. M. Johnson",
+"n_words": 292
+},
+"nb0332": {
+"seg_id": "2025-10-28#t274w1",
+"opus_screen": 65,
+"date": "2025-10-28",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 320
+},
+"nb0333": {
+"seg_id": "2025-10-28#t278w3",
+"opus_screen": 65,
+"date": "2025-10-28",
+"speaker": "Mr. Monahan",
+"n_words": 302
+},
+"nb0334": {
+"seg_id": "2024-05-28#t17035w2",
+"opus_screen": 65,
+"date": "2024-05-28",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 342
+},
+"nb0335": {
+"seg_id": "2025-06-05#t3339w1",
+"opus_screen": 65,
+"date": "2025-06-05",
+"speaker": "Ms. Scott-Wallace",
+"n_words": 322
+},
+"nb0336": {
+"seg_id": "2025-05-29#t2825w0",
+"opus_screen": 65,
+"date": "2025-05-29",
+"speaker": "Mr. Arseneault",
+"n_words": 142
+},
+"nb0337": {
+"seg_id": "2025-12-04#t1550w2",
+"opus_screen": 62,
+"date": "2025-12-04",
+"speaker": "Hon. Mr. McKee",
+"n_words": 298
+},
+"nb0338": {
+"seg_id": "2025-11-20#t1194w4",
+"opus_screen": 62,
+"date": "2025-11-20",
+"speaker": "Hon. Mr. McKee",
+"n_words": 318
+},
+"nb0339": {
+"seg_id": "2026-03-18#t2135w24",
+"opus_screen": 62,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 336
+},
+"nb0340": {
+"seg_id": "2025-05-16#t2534w4",
+"opus_screen": 62,
+"date": "2025-05-16",
+"speaker": "Ms. Bockus",
+"n_words": 129
+},
+"nb0341": {
+"seg_id": "2025-11-04#t611w0",
+"opus_screen": 62,
+"date": "2025-11-04",
+"speaker": "Mr. Monahan",
+"n_words": 346
+},
+"nb0342": {
+"seg_id": "2025-10-29#t408w1",
+"opus_screen": 62,
+"date": "2025-10-29",
+"speaker": "Mr. Ames",
+"n_words": 281
+},
+"nb0343": {
+"seg_id": "2026-05-05#t2580w0",
+"opus_screen": 62,
+"date": "2026-05-05",
+"speaker": "Mr. Bourque",
+"n_words": 145
+},
+"nb0344": {
+"seg_id": "2025-12-02#t1356w0",
+"opus_screen": 62,
+"date": "2025-12-02",
+"speaker": "Mr. Weir",
+"n_words": 265
+},
+"nb0345": {
+"seg_id": "2025-12-02#t1300w0",
+"opus_screen": 62,
+"date": "2025-12-02",
+"speaker": "Hon. Mr. Randall",
+"n_words": 214
+},
+"nb0346": {
+"seg_id": "2023-05-17#t12036w3",
+"opus_screen": 62,
+"date": "2023-05-17",
+"speaker": "Mr. McKee",
+"n_words": 289
+},
+"nb0347": {
+"seg_id": "2022-11-24#t9841w5",
+"opus_screen": 62,
+"date": "2022-11-24",
+"speaker": "Mr. McKee",
+"n_words": 321
+},
+"nb0348": {
+"seg_id": "2025-11-18#t934w0",
+"opus_screen": 62,
+"date": "2025-11-18",
+"speaker": "Mr. Savoie",
+"n_words": 152
+},
+"nb0349": {
+"seg_id": "2025-11-05#t691w0",
+"opus_screen": 62,
+"date": "2025-11-05",
+"speaker": "Ms. M. Wilson",
+"n_words": 276
+},
+"nb0350": {
+"seg_id": "2025-11-04#t580w0",
+"opus_screen": 62,
+"date": "2025-11-04",
+"speaker": "Mr. Lee",
+"n_words": 109
+},
+"nb0351": {
+"seg_id": "2025-03-20#t1159w0",
+"opus_screen": 62,
+"date": "2025-03-20",
+"speaker": "Mr. Monahan",
+"n_words": 345
+},
+"nb0352": {
+"seg_id": "2023-12-05#t14931w2",
+"opus_screen": 62,
+"date": "2023-12-05",
+"speaker": "Mr. McKee",
+"n_words": 320
+},
+"nb0353": {
+"seg_id": "2026-05-05#t2629w0",
+"opus_screen": 62,
+"date": "2026-05-05",
+"speaker": "Mr. Weir",
+"n_words": 191
+},
+"nb0354": {
+"seg_id": "2025-05-15#t2456w2",
+"opus_screen": 60,
+"date": "2025-05-15",
+"speaker": "Mr. Cullins",
+"n_words": 213
+},
+"nb0355": {
+"seg_id": "2025-03-20#t1158w1",
+"opus_screen": 60,
+"date": "2025-03-20",
+"speaker": "Mr. Monahan",
+"n_words": 332
+},
+"nb0356": {
+"seg_id": "2025-12-04#t1557w1",
+"opus_screen": 60,
+"date": "2025-12-04",
+"speaker": "",
+"n_words": 298
+},
+"nb0357": {
+"seg_id": "2025-11-18#t1018w0",
+"opus_screen": 60,
+"date": "2025-11-18",
+"speaker": "Mr. Ames",
+"n_words": 339
+},
+"nb0358": {
+"seg_id": "2025-12-04#t1558w1",
+"opus_screen": 60,
+"date": "2025-12-04",
+"speaker": "Ms. Bockus",
+"n_words": 317
+},
+"nb0359": {
+"seg_id": "2026-03-25#t2423w4",
+"opus_screen": 60,
+"date": "2026-03-25",
+"speaker": "Mr. Doucet",
+"n_words": 348
+},
+"nb0360": {
+"seg_id": "2026-05-14#t3199w0",
+"opus_screen": 60,
+"date": "2026-05-14",
+"speaker": "Ms. Vautour",
+"n_words": 323
+},
+"nb0361": {
+"seg_id": "2025-10-30#t509w3",
+"opus_screen": 60,
+"date": "2025-10-30",
+"speaker": "Mr. Russell",
+"n_words": 318
+},
+"nb0362": {
+"seg_id": "2025-12-04#t1463w0",
+"opus_screen": 60,
+"date": "2025-12-04",
+"speaker": "Mr. Weir",
+"n_words": 145
+},
+"nb0363": {
+"seg_id": "2025-12-02#t1296w0",
+"opus_screen": 60,
+"date": "2025-12-02",
+"speaker": "Hon. Ms. Holt",
+"n_words": 269
+},
+"nb0364": {
+"seg_id": "2025-12-09#t1692w0",
+"opus_screen": 60,
+"date": "2025-12-09",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 346
+},
+"nb0365": {
+"seg_id": "2023-03-28#t11152w17",
+"opus_screen": 60,
+"date": "2023-03-28",
+"speaker": "Mr. McKee",
+"n_words": 320
+},
+"nb0366": {
+"seg_id": "2026-05-14#t3204w4",
+"opus_screen": 60,
+"date": "2026-05-14",
+"speaker": "Ms. M. Wilson",
+"n_words": 290
+},
+"nb0367": {
+"seg_id": "2025-05-30#t3040w3",
+"opus_screen": 60,
+"date": "2025-05-30",
+"speaker": "Ms. M. Johnson",
+"n_words": 348
+},
+"nb0368": {
+"seg_id": "2026-05-14#t3105w0",
+"opus_screen": 60,
+"date": "2026-05-14",
+"speaker": "Mr. Monahan",
+"n_words": 147
+},
+"nb0369": {
+"seg_id": "2025-10-29#t378w2",
+"opus_screen": 60,
+"date": "2025-10-29",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 311
+},
+"nb0370": {
+"seg_id": "2025-12-12#t1948w0",
+"opus_screen": 60,
+"date": "2025-12-12",
+"speaker": "Mr. Johnston",
+"n_words": 175
+},
+"nb0371": {
+"seg_id": "2025-12-12#t1954w0",
+"opus_screen": 60,
+"date": "2025-12-12",
+"speaker": "Ms. Sodhi",
+"n_words": 167
+},
+"nb0372": {
+"seg_id": "2025-05-28#t2817w0",
+"opus_screen": 60,
+"date": "2025-05-28",
+"speaker": "Ms. S. Wilson",
+"n_words": 351
+},
+"nb0373": {
+"seg_id": "2025-11-06#t801w0",
+"opus_screen": 60,
+"date": "2025-11-06",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 282
+},
+"nb0374": {
+"seg_id": "2026-03-26#t2544w2",
+"opus_screen": 60,
+"date": "2026-03-26",
+"speaker": "Mr. Coon",
+"n_words": 298
+},
+"nb0375": {
+"seg_id": "2026-05-14#t3166w3",
+"opus_screen": 60,
+"date": "2026-05-14",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 223
+},
+"nb0376": {
+"seg_id": "2026-03-18#t2135w1",
+"opus_screen": 60,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 353
+},
+"nb0377": {
+"seg_id": "2023-10-24#t13338w16",
+"opus_screen": 60,
+"date": "2023-10-24",
+"speaker": "Mr. McKee",
+"n_words": 328
+},
+"nb0378": {
+"seg_id": "2026-05-07#t2812w0",
+"opus_screen": 60,
+"date": "2026-05-07",
+"speaker": "Ms. Conroy",
+"n_words": 238
+},
+"nb0379": {
+"seg_id": "2026-03-20#t2209w4",
+"opus_screen": 60,
+"date": "2026-03-20",
+"speaker": "Mr. Coon",
+"n_words": 331
+},
+"nb0380": {
+"seg_id": "2025-12-11#t1926w4",
+"opus_screen": 60,
+"date": "2025-12-11",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 262
+},
+"nb0381": {
+"seg_id": "2026-03-25#t2446w6",
+"opus_screen": 60,
+"date": "2026-03-25",
+"speaker": "Ms. Conroy",
+"n_words": 329
+},
+"nb0382": {
+"seg_id": "2025-05-27#t2646w3",
+"opus_screen": 60,
+"date": "2025-05-27",
+"speaker": "Madam Speaker",
+"n_words": 64
+},
+"nb0383": {
+"seg_id": "2025-05-28#t2793w1",
+"opus_screen": 60,
+"date": "2025-05-28",
+"speaker": "Ms. M. Johnson",
+"n_words": 306
+},
+"nb0384": {
+"seg_id": "2026-03-26#t2551w1",
+"opus_screen": 60,
+"date": "2026-03-26",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 334
+},
+"nb0385": {
+"seg_id": "2026-03-18#t2135w28",
+"opus_screen": 60,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 278
+},
+"nb0386": {
+"seg_id": "2024-12-12#t835w5",
+"opus_screen": 60,
+"date": "2024-12-12",
+"speaker": "Ms. M. Wilson",
+"n_words": 339
+},
+"nb0387": {
+"seg_id": "2026-03-25#t2346w0",
+"opus_screen": 60,
+"date": "2026-03-25",
+"speaker": "Mr. Mallet",
+"n_words": 288
+},
+"nb0388": {
+"seg_id": "2025-12-04#t1550w1",
+"opus_screen": 60,
+"date": "2025-12-04",
+"speaker": "Hon. Mr. McKee",
+"n_words": 306
+},
+"nb0389": {
+"seg_id": "2025-03-26#t1504w0",
+"opus_screen": 60,
+"date": "2025-03-26",
+"speaker": "Mr. Monahan",
+"n_words": 257
+},
+"nb0390": {
+"seg_id": "2025-10-30#t536w2",
+"opus_screen": 60,
+"date": "2025-10-30",
+"speaker": "Ms. M. Johnson",
+"n_words": 333
+},
+"nb0391": {
+"seg_id": "2025-12-12#t2007w0",
+"opus_screen": 60,
+"date": "2025-12-12",
+"speaker": "Hon. K. Chiasson",
+"n_words": 255
+},
+"nb0392": {
+"seg_id": "2025-05-14#t2325w3",
+"opus_screen": 60,
+"date": "2025-05-14",
+"speaker": "Mr. Lee",
+"n_words": 114
+},
+"nb0393": {
+"seg_id": "2024-12-12#t840w3",
+"opus_screen": 60,
+"date": "2024-12-12",
+"speaker": "Mr. Monahan",
+"n_words": 291
+},
+"nb0394": {
+"seg_id": "2026-05-14#t3202w0",
+"opus_screen": 60,
+"date": "2026-05-14",
+"speaker": "Ms. Scott-Wallace",
+"n_words": 339
+},
+"nb0395": {
+"seg_id": "2025-12-11#t1866w0",
+"opus_screen": 60,
+"date": "2025-12-11",
+"speaker": "Mr. Cullins",
+"n_words": 255
+},
+"nb0396": {
+"seg_id": "2025-12-03#t1398w0",
+"opus_screen": 60,
+"date": "2025-12-03",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 152
+},
+"nb0397": {
+"seg_id": "2025-11-20#t1192w5",
+"opus_screen": 60,
+"date": "2025-11-20",
+"speaker": "Mr. Weir",
+"n_words": 266
+},
+"nb0398": {
+"seg_id": "2025-05-14#t2325w0",
+"opus_screen": 60,
+"date": "2025-05-14",
+"speaker": "Mr. Lee",
+"n_words": 358
+},
+"nb0399": {
+"seg_id": "2025-11-06#t814w4",
+"opus_screen": 60,
+"date": "2025-11-06",
+"speaker": "Ms. Conroy",
+"n_words": 289
+},
+"nb0400": {
+"seg_id": "2025-10-29#t406w1",
+"opus_screen": 60,
+"date": "2025-10-29",
+"speaker": "Ms. M. Wilson",
+"n_words": 289
+},
+"nb0401": {
+"seg_id": "2025-10-30#t534w1",
+"opus_screen": 60,
+"date": "2025-10-30",
+"speaker": "Ms. S. Wilson",
+"n_words": 300
+},
+"nb0402": {
+"seg_id": "2026-03-18#t2135w11",
+"opus_screen": 60,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 341
+},
+"nb0403": {
+"seg_id": "2025-05-08#t1920w0",
+"opus_screen": 60,
+"date": "2025-05-08",
+"speaker": "Ms. Bockus",
+"n_words": 264
+},
+"nb0404": {
+"seg_id": "2025-11-04#t613w3",
+"opus_screen": 60,
+"date": "2025-11-04",
+"speaker": "Mr. Monahan",
+"n_words": 351
+},
+"nb0405": {
+"seg_id": "2023-05-10#t11631w3",
+"opus_screen": 60,
+"date": "2023-05-10",
+"speaker": "Mr. McKee",
+"n_words": 326
+},
+"nb0406": {
+"seg_id": "2025-10-28#t278w7",
+"opus_screen": 58,
+"date": "2025-10-28",
+"speaker": "Mr. Monahan",
+"n_words": 357
+},
+"nb0407": {
+"seg_id": "2025-12-12#t1942w0",
+"opus_screen": 58,
+"date": "2025-12-12",
+"speaker": "Mr. J. LeBlanc",
+"n_words": 164
+},
+"nb0408": {
+"seg_id": "2026-05-08#t2952w1",
+"opus_screen": 58,
+"date": "2026-05-08",
+"speaker": "Mr. Savoie",
+"n_words": 143
+},
+"nb0409": {
+"seg_id": "2023-12-05#t14931w0",
+"opus_screen": 58,
+"date": "2023-12-05",
+"speaker": "Mr. McKee",
+"n_words": 306
+},
+"nb0410": {
+"seg_id": "2025-06-05#t3335w3",
+"opus_screen": 58,
+"date": "2025-06-05",
+"speaker": "Ms. Sodhi",
+"n_words": 160
+},
+"nb0411": {
+"seg_id": "2025-05-16#t2553w2",
+"opus_screen": 55,
+"date": "2025-05-16",
+"speaker": "Mr. Monahan",
+"n_words": 75
+},
+"nb0412": {
+"seg_id": "2024-11-28#t536w3",
+"opus_screen": 55,
+"date": "2024-11-28",
+"speaker": "Mr. Monahan",
+"n_words": 342
+},
+"nb0413": {
+"seg_id": "2025-03-27#t1541w0",
+"opus_screen": 55,
+"date": "2025-03-27",
+"speaker": "Ms. Wilcott",
+"n_words": 171
+},
+"nb0414": {
+"seg_id": "2026-05-07#t2794w0",
+"opus_screen": 55,
+"date": "2026-05-07",
+"speaker": "Mr. Savoie",
+"n_words": 122
+},
+"nb0415": {
+"seg_id": "2026-05-14#t3204w3",
+"opus_screen": 55,
+"date": "2026-05-14",
+"speaker": "Ms. M. Wilson",
+"n_words": 332
+},
+"nb0416": {
+"seg_id": "2025-03-26#t1485w1",
+"opus_screen": 55,
+"date": "2025-03-26",
+"speaker": "Mr. Weir",
+"n_words": 340
+},
+"nb0417": {
+"seg_id": "2026-03-24#t2308w1",
+"opus_screen": 55,
+"date": "2026-03-24",
+"speaker": "Mr. Weir",
+"n_words": 266
+},
+"nb0418": {
+"seg_id": "2024-03-27#t15843w0",
+"opus_screen": 55,
+"date": "2024-03-27",
+"speaker": "Mr. D\u2019Amours",
+"n_words": 134
+},
+"nb0419": {
+"seg_id": "2025-05-15#t2446w4",
+"opus_screen": 55,
+"date": "2025-05-15",
+"speaker": "Mr. Lee",
+"n_words": 341
+},
+"nb0420": {
+"seg_id": "2026-03-18#t2135w20",
+"opus_screen": 55,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 298
+},
+"nb0421": {
+"seg_id": "2026-03-25#t2417w2",
+"opus_screen": 55,
+"date": "2026-03-25",
+"speaker": "Madam Speaker",
+"n_words": 278
+},
+"nb0422": {
+"seg_id": "2026-05-13#t3071w1",
+"opus_screen": 55,
+"date": "2026-05-13",
+"speaker": "Mr. Cullins",
+"n_words": 300
+},
+"nb0423": {
+"seg_id": "2026-03-18#t2135w9",
+"opus_screen": 55,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 328
+},
+"nb0424": {
+"seg_id": "2025-10-22#t86w0",
+"opus_screen": 55,
+"date": "2025-10-22",
+"speaker": "Hon. Mr. Randall",
+"n_words": 252
+},
+"nb0425": {
+"seg_id": "2026-03-20#t2235w0",
+"opus_screen": 55,
+"date": "2026-03-20",
+"speaker": "Ms. M. Johnson",
+"n_words": 319
+},
+"nb0426": {
+"seg_id": "2025-05-28#t2820w0",
+"opus_screen": 55,
+"date": "2025-05-28",
+"speaker": "Ms. S. Wilson",
+"n_words": 343
+},
+"nb0427": {
+"seg_id": "2025-12-05#t1562w0",
+"opus_screen": 55,
+"date": "2025-12-05",
+"speaker": "Ms. M. Wilson",
+"n_words": 181
+},
+"nb0428": {
+"seg_id": "2025-06-05#t3339w3",
+"opus_screen": 55,
+"date": "2025-06-05",
+"speaker": "Ms. Scott-Wallace",
+"n_words": 252
+},
+"nb0429": {
+"seg_id": "2026-03-25#t2446w2",
+"opus_screen": 55,
+"date": "2026-03-25",
+"speaker": "Ms. Conroy",
+"n_words": 346
+},
+"nb0430": {
+"seg_id": "2025-11-06#t765w0",
+"opus_screen": 55,
+"date": "2025-11-06",
+"speaker": "Mr. Lee",
+"n_words": 110
+},
+"nb0431": {
+"seg_id": "2025-03-26#t1520w7",
+"opus_screen": 55,
+"date": "2025-03-26",
+"speaker": "Mr. Robichaud",
+"n_words": 350
+},
+"nb0432": {
+"seg_id": "2026-05-07#t2871w2",
+"opus_screen": 55,
+"date": "2026-05-07",
+"speaker": "Mr. Lee",
+"n_words": 299
+},
+"nb0433": {
+"seg_id": "2026-05-07#t2838w0",
+"opus_screen": 55,
+"date": "2026-05-07",
+"speaker": "Hon. Mr. Legacy",
+"n_words": 257
+},
+"nb0434": {
+"seg_id": "2025-11-20#t1192w8",
+"opus_screen": 55,
+"date": "2025-11-20",
+"speaker": "Mr. Weir",
+"n_words": 355
+},
+"nb0435": {
+"seg_id": "2025-05-28#t2783w5",
+"opus_screen": 55,
+"date": "2025-05-28",
+"speaker": "Ms. Bockus",
+"n_words": 155
+},
+"nb0436": {
+"seg_id": "2025-12-05#t1575w0",
+"opus_screen": 55,
+"date": "2025-12-05",
+"speaker": "Mr. J. LeBlanc",
+"n_words": 158
+},
+"nb0437": {
+"seg_id": "2026-03-18#t2135w27",
+"opus_screen": 55,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 326
+},
+"nb0438": {
+"seg_id": "2026-03-20#t2228w3",
+"opus_screen": 55,
+"date": "2026-03-20",
+"speaker": "Hon. Ms. Miles",
+"n_words": 249
+},
+"nb0439": {
+"seg_id": "2025-10-29#t324w0",
+"opus_screen": 55,
+"date": "2025-10-29",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 166
+},
+"nb0440": {
+"seg_id": "2025-05-09#t1993w0",
+"opus_screen": 55,
+"date": "2025-05-09",
+"speaker": "Hon. Ms. Boudreau",
+"n_words": 300
+},
+"nb0441": {
+"seg_id": "2025-06-03#t3074w0",
+"opus_screen": 55,
+"date": "2025-06-03",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 150
+},
+"nb0442": {
+"seg_id": "2025-11-20#t1168w0",
+"opus_screen": 55,
+"date": "2025-11-20",
+"speaker": "Hon. Mr. Dornan",
+"n_words": 294
+},
+"nb0443": {
+"seg_id": "2025-12-04#t1556w1",
+"opus_screen": 55,
+"date": "2025-12-04",
+"speaker": "Ms. Wilcott",
+"n_words": 178
+},
+"nb0444": {
+"seg_id": "2025-11-05#t690w0",
+"opus_screen": 55,
+"date": "2025-11-05",
+"speaker": "Ms. Bockus",
+"n_words": 257
+},
+"nb0445": {
+"seg_id": "2025-10-24#t194w1",
+"opus_screen": 55,
+"date": "2025-10-24",
+"speaker": "",
+"n_words": 334
+},
+"nb0446": {
+"seg_id": "2026-05-06#t2742w0",
+"opus_screen": 55,
+"date": "2026-05-06",
+"speaker": "Mr. Monahan",
+"n_words": 338
+},
+"nb0447": {
+"seg_id": "2025-05-28#t2811w1",
+"opus_screen": 55,
+"date": "2025-05-28",
+"speaker": "Ms. M. Wilson",
+"n_words": 315
+},
+"nb0448": {
+"seg_id": "2026-05-13#t3070w0",
+"opus_screen": 55,
+"date": "2026-05-13",
+"speaker": "Ms. M. Johnson",
+"n_words": 260
+},
+"nb0449": {
+"seg_id": "2025-12-12#t1977w0",
+"opus_screen": 55,
+"date": "2025-12-12",
+"speaker": "Mr. Cullins",
+"n_words": 120
+},
+"nb0450": {
+"seg_id": "2025-11-20#t1194w0",
+"opus_screen": 55,
+"date": "2025-11-20",
+"speaker": "Hon. Mr. McKee",
+"n_words": 327
+},
+"nb0451": {
+"seg_id": "2025-05-08#t1931w2",
+"opus_screen": 55,
+"date": "2025-05-08",
+"speaker": "Mr. Monahan",
+"n_words": 356
+},
+"nb0452": {
+"seg_id": "2019-11-28#t2730w0",
+"opus_screen": 55,
+"date": "2019-11-28",
+"speaker": "Mr. Crossman",
+"n_words": 81
+},
+"nb0453": {
+"seg_id": "2025-11-06#t811w4",
+"opus_screen": 55,
+"date": "2025-11-06",
+"speaker": "Hon. Ms. Miles",
+"n_words": 289
+},
+"nb0454": {
+"seg_id": "2025-06-04#t3228w0",
+"opus_screen": 55,
+"date": "2025-06-04",
+"speaker": "Ms. S. Wilson",
+"n_words": 340
+},
+"nb0455": {
+"seg_id": "2025-10-29#t307w0",
+"opus_screen": 55,
+"date": "2025-10-29",
+"speaker": "Ms. Conroy",
+"n_words": 161
+},
+"nb0456": {
+"seg_id": "2025-05-14#t2324w2",
+"opus_screen": 55,
+"date": "2025-05-14",
+"speaker": "Mr. Monahan",
+"n_words": 108
+},
+"nb0457": {
+"seg_id": "2025-05-28#t2794w5",
+"opus_screen": 55,
+"date": "2025-05-28",
+"speaker": "Mr. Lee",
+"n_words": 143
+},
+"nb0458": {
+"seg_id": "2025-03-25#t1333w0",
+"opus_screen": 55,
+"date": "2025-03-25",
+"speaker": "Hon. Ms. Miles",
+"n_words": 134
+},
+"nb0459": {
+"seg_id": "2025-06-05#t3335w2",
+"opus_screen": 55,
+"date": "2025-06-05",
+"speaker": "Ms. Sodhi",
+"n_words": 297
+},
+"nb0460": {
+"seg_id": "2026-03-20#t2144w0",
+"opus_screen": 55,
+"date": "2026-03-20",
+"speaker": "Mr. Savoie",
+"n_words": 120
+},
+"nb0461": {
+"seg_id": "2025-05-08#t1893w4",
+"opus_screen": 55,
+"date": "2025-05-08",
+"speaker": "Ms. Bockus",
+"n_words": 345
+},
+"nb0462": {
+"seg_id": "2025-03-26#t1430w0",
+"opus_screen": 55,
+"date": "2025-03-26",
+"speaker": "Mr. Monahan",
+"n_words": 151
+},
+"nb0463": {
+"seg_id": "2023-05-17#t12036w6",
+"opus_screen": 55,
+"date": "2023-05-17",
+"speaker": "Mr. McKee",
+"n_words": 321
+},
+"nb0464": {
+"seg_id": "2026-03-25#t2453w2",
+"opus_screen": 55,
+"date": "2026-03-25",
+"speaker": "Ms. Conroy",
+"n_words": 324
+},
+"nb0465": {
+"seg_id": "2025-05-06#t1648w0",
+"opus_screen": 55,
+"date": "2025-05-06",
+"speaker": "Ms. Vautour",
+"n_words": 167
+},
+"nb0466": {
+"seg_id": "2025-12-04#t1525w5",
+"opus_screen": 55,
+"date": "2025-12-04",
+"speaker": "Mr. Oliver",
+"n_words": 171
+},
+"nb0467": {
+"seg_id": "2026-05-14#t3191w2",
+"opus_screen": 55,
+"date": "2026-05-14",
+"speaker": "Hon. Mr. Finnigan",
+"n_words": 245
+},
+"nb0468": {
+"seg_id": "2025-06-05#t3312w0",
+"opus_screen": 55,
+"date": "2025-06-05",
+"speaker": "Hon. Mr. LePage",
+"n_words": 347
+},
+"nb0469": {
+"seg_id": "2026-03-24#t2308w0",
+"opus_screen": 55,
+"date": "2026-03-24",
+"speaker": "Mr. Weir",
+"n_words": 352
+},
+"nb0470": {
+"seg_id": "2026-05-14#t3195w0",
+"opus_screen": 55,
+"date": "2026-05-14",
+"speaker": "Mr. J. LeBlanc",
+"n_words": 339
+},
+"nb0471": {
+"seg_id": "2026-05-14#t3100w0",
+"opus_screen": 55,
+"date": "2026-05-14",
+"speaker": "Mr. Weir",
+"n_words": 148
+},
+"nb0472": {
+"seg_id": "2025-11-05#t691w4",
+"opus_screen": 55,
+"date": "2025-11-05",
+"speaker": "Ms. M. Wilson",
+"n_words": 315
+},
+"nb0473": {
+"seg_id": "2025-05-27#t2650w2",
+"opus_screen": 55,
+"date": "2025-05-27",
+"speaker": "Mr. Ames",
+"n_words": 208
+},
+"nb0474": {
+"seg_id": "2025-03-21#t1164w0",
+"opus_screen": 55,
+"date": "2025-03-21",
+"speaker": "Hon. Ms. Miles",
+"n_words": 103
+},
+"nb0475": {
+"seg_id": "2025-10-21#t6w6",
+"opus_screen": 55,
+"date": "2025-10-21",
+"speaker": "Ms. Vautour, as seconder, spoke as follows",
+"n_words": 145
+},
+"nb0476": {
+"seg_id": "2025-03-19#t1150w0",
+"opus_screen": 55,
+"date": "2025-03-19",
+"speaker": "Mr. Cullins",
+"n_words": 300
+},
+"nb0477": {
+"seg_id": "2024-05-14#t16564w0",
+"opus_screen": 55,
+"date": "2024-05-14",
+"speaker": "Mr. J. LeBlanc",
+"n_words": 129
+},
+"nb0478": {
+"seg_id": "2025-12-04#t1526w4",
+"opus_screen": 55,
+"date": "2025-12-04",
+"speaker": "Hon. Mr. McKee",
+"n_words": 305
+},
+"nb0479": {
+"seg_id": "2025-12-09#t1639w0",
+"opus_screen": 55,
+"date": "2025-12-09",
+"speaker": "Mr. Robichaud",
+"n_words": 138
+},
+"nb0480": {
+"seg_id": "2025-12-04#t1526w0",
+"opus_screen": 55,
+"date": "2025-12-04",
+"speaker": "Hon. Mr. McKee",
+"n_words": 294
+},
+"nb0481": {
+"seg_id": "2025-11-20#t1116w0",
+"opus_screen": 55,
+"date": "2025-11-20",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 184
+},
+"nb0482": {
+"seg_id": "2025-12-04#t1534w1",
+"opus_screen": 55,
+"date": "2025-12-04",
+"speaker": "Ms. Vautour",
+"n_words": 345
+},
+"nb0483": {
+"seg_id": "2025-05-28#t2820w4",
+"opus_screen": 55,
+"date": "2025-05-28",
+"speaker": "Ms. S. Wilson",
+"n_words": 354
+},
+"nb0484": {
+"seg_id": "2025-05-09#t2016w1",
+"opus_screen": 55,
+"date": "2025-05-09",
+"speaker": "Mr. Monahan",
+"n_words": 300
+},
+"nb0485": {
+"seg_id": "2025-11-06#t809w2",
+"opus_screen": 55,
+"date": "2025-11-06",
+"speaker": "Ms. M. Johnson",
+"n_words": 317
+},
+"nb0486": {
+"seg_id": "2025-05-29#t2912w0",
+"opus_screen": 55,
+"date": "2025-05-29",
+"speaker": "Ms. S. Wilson",
+"n_words": 303
+},
+"nb0487": {
+"seg_id": "2025-05-27#t2646w1",
+"opus_screen": 55,
+"date": "2025-05-27",
+"speaker": "Madam Speaker",
+"n_words": 312
+},
+"nb0488": {
+"seg_id": "2025-05-07#t1737w0",
+"opus_screen": 55,
+"date": "2025-05-07",
+"speaker": "Mr. Arseneault",
+"n_words": 152
+},
+"nb0489": {
+"seg_id": "2026-03-18#t2135w25",
+"opus_screen": 55,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 301
+},
+"nb0490": {
+"seg_id": "2026-05-14#t3192w5",
+"opus_screen": 55,
+"date": "2026-05-14",
+"speaker": "Ms. M. Johnson",
+"n_words": 330
+},
+"nb0491": {
+"seg_id": "2025-06-05#t3336w0",
+"opus_screen": 55,
+"date": "2025-06-05",
+"speaker": "Ms. M. Johnson",
+"n_words": 341
+},
+"nb0492": {
+"seg_id": "2026-05-06#t2742w2",
+"opus_screen": 55,
+"date": "2026-05-06",
+"speaker": "Mr. Monahan",
+"n_words": 181
+},
+"nb0493": {
+"seg_id": "2024-05-10#t16515w0",
+"opus_screen": 55,
+"date": "2024-05-10",
+"speaker": "Ms. Landry",
+"n_words": 98
+},
+"nb0494": {
+"seg_id": "2025-11-18#t1004w0",
+"opus_screen": 55,
+"date": "2025-11-18",
+"speaker": "",
+"n_words": 342
+},
+"nb0495": {
+"seg_id": "2026-03-26#t2475w0",
+"opus_screen": 55,
+"date": "2026-03-26",
+"speaker": "Mr. Johnston",
+"n_words": 157
+},
+"nb0496": {
+"seg_id": "2026-03-20#t2157w0",
+"opus_screen": 55,
+"date": "2026-03-20",
+"speaker": "Ms. Vautour",
+"n_words": 164
+},
+"nb0497": {
+"seg_id": "2026-03-26#t2531w0",
+"opus_screen": 55,
+"date": "2026-03-26",
+"speaker": "Ms. M. Wilson",
+"n_words": 236
+},
+"nb0498": {
+"seg_id": "2025-05-27#t2649w3",
+"opus_screen": 55,
+"date": "2025-05-27",
+"speaker": "Ms. Bockus",
+"n_words": 301
+},
+"nb0499": {
+"seg_id": "2025-10-30#t535w4",
+"opus_screen": 55,
+"date": "2025-10-30",
+"speaker": "Hon. Mr. McKee",
+"n_words": 319
+},
+"nb0500": {
+"seg_id": "2025-12-12#t2021w1",
+"opus_screen": 55,
+"date": "2025-12-12",
+"speaker": "Mr. Coon",
+"n_words": 352
+},
+"nb0501": {
+"seg_id": "2023-12-01#t14828w1",
+"opus_screen": 55,
+"date": "2023-12-01",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 291
+},
+"nb0502": {
+"seg_id": "2026-03-18#t2135w19",
+"opus_screen": 55,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 339
+},
+"nb0503": {
+"seg_id": "2026-03-18#t2135w3",
+"opus_screen": 55,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 321
+},
+"nb0504": {
+"seg_id": "2025-05-08#t1904w0",
+"opus_screen": 55,
+"date": "2025-05-08",
+"speaker": "Mr. Oliver",
+"n_words": 232
+},
+"nb0505": {
+"seg_id": "2025-05-14#t2184w0",
+"opus_screen": 55,
+"date": "2025-05-14",
+"speaker": "Ms. Sodhi",
+"n_words": 123
+},
+"nb0506": {
+"seg_id": "2025-05-27#t2662w2",
+"opus_screen": 55,
+"date": "2025-05-27",
+"speaker": "Mr. Deputy Speaker",
+"n_words": 354
+},
+"nb0507": {
+"seg_id": "2025-05-28#t2737w0",
+"opus_screen": 55,
+"date": "2025-05-28",
+"speaker": "Mr. Monahan",
+"n_words": 168
+},
+"nb0508": {
+"seg_id": "2025-05-13#t2138w2",
+"opus_screen": 55,
+"date": "2025-05-13",
+"speaker": "",
+"n_words": 356
+},
+"nb0509": {
+"seg_id": "2025-11-07#t858w0",
+"opus_screen": 55,
+"date": "2025-11-07",
+"speaker": "Mr. Arseneault",
+"n_words": 154
+},
+"nb0510": {
+"seg_id": "2024-05-07#t16186w0",
+"opus_screen": 55,
+"date": "2024-05-07",
+"speaker": "Mr. G. Arseneault",
+"n_words": 196
+},
+"nb0511": {
+"seg_id": "2025-10-30#t441w0",
+"opus_screen": 55,
+"date": "2025-10-30",
+"speaker": "Ms. Sodhi",
+"n_words": 148
+},
+"nb0512": {
+"seg_id": "2025-03-20#t1159w1",
+"opus_screen": 55,
+"date": "2025-03-20",
+"speaker": "Mr. Monahan",
+"n_words": 321
+},
+"nb0513": {
+"seg_id": "2025-11-20#t1174w0",
+"opus_screen": 55,
+"date": "2025-11-20",
+"speaker": "Mr. Deputy Speaker",
+"n_words": 327
+},
+"nb0514": {
+"seg_id": "2026-03-18#t2097w0",
+"opus_screen": 55,
+"date": "2026-03-18",
+"speaker": "Ms. M. Johnson",
+"n_words": 62
+},
+"nb0515": {
+"seg_id": "2025-10-22#t101w2",
+"opus_screen": 55,
+"date": "2025-10-22",
+"speaker": "Hon. Mr. Legacy",
+"n_words": 326
+},
+"nb0516": {
+"seg_id": "2024-11-28#t491w0",
+"opus_screen": 55,
+"date": "2024-11-28",
+"speaker": "Mr. Monahan",
+"n_words": 119
+},
+"nb0517": {
+"seg_id": "2026-05-08#t2907w0",
+"opus_screen": 55,
+"date": "2026-05-08",
+"speaker": "Mr. J. LeBlanc",
+"n_words": 145
+},
+"nb0518": {
+"seg_id": "2026-05-06#t2659w0",
+"opus_screen": 55,
+"date": "2026-05-06",
+"speaker": "Ms. Vautour",
+"n_words": 135
+},
+"nb0519": {
+"seg_id": "2025-12-05#t1618w0",
+"opus_screen": 55,
+"date": "2025-12-05",
+"speaker": "Mr. Russell",
+"n_words": 279
+},
+"nb0520": {
+"seg_id": "2025-10-29#t387w1",
+"opus_screen": 55,
+"date": "2025-10-29",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 112
+},
+"nb0521": {
+"seg_id": "2025-12-09#t1698w0",
+"opus_screen": 55,
+"date": "2025-12-09",
+"speaker": "Mr. Monahan",
+"n_words": 85
+},
+"nb0522": {
+"seg_id": "2025-03-19#t1116w2",
+"opus_screen": 55,
+"date": "2025-03-19",
+"speaker": "Mr. Monahan",
+"n_words": 343
+},
+"nb0523": {
+"seg_id": "2026-05-08#t2906w0",
+"opus_screen": 55,
+"date": "2026-05-08",
+"speaker": "Ms. M. Wilson",
+"n_words": 145
+},
+"nb0524": {
+"seg_id": "2025-12-12#t2021w2",
+"opus_screen": 55,
+"date": "2025-12-12",
+"speaker": "Mr. Coon",
+"n_words": 292
+},
+"nb0525": {
+"seg_id": "2025-05-29#t2885w0",
+"opus_screen": 55,
+"date": "2025-05-29",
+"speaker": "Hon. C. Johnson",
+"n_words": 227
+},
+"nb0526": {
+"seg_id": "2026-03-25#t2392w0",
+"opus_screen": 55,
+"date": "2026-03-25",
+"speaker": "Ms. M. Wilson",
+"n_words": 260
+},
+"nb0527": {
+"seg_id": "2025-06-04#t3164w0",
+"opus_screen": 55,
+"date": "2025-06-04",
+"speaker": "Mr. J. LeBlanc",
+"n_words": 153
+},
+"nb0528": {
+"seg_id": "2026-03-18#t2135w23",
+"opus_screen": 55,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 346
+},
+"nb0529": {
+"seg_id": "2025-03-19#t1150w1",
+"opus_screen": 55,
+"date": "2025-03-19",
+"speaker": "Mr. Cullins",
+"n_words": 297
+},
+"nb0530": {
+"seg_id": "2025-12-02#t1355w0",
+"opus_screen": 55,
+"date": "2025-12-02",
+"speaker": "Hon. Mr. McKee",
+"n_words": 233
+},
+"nb0531": {
+"seg_id": "2026-05-07#t2856w1",
+"opus_screen": 55,
+"date": "2026-05-07",
+"speaker": "Ms. M. Wilson",
+"n_words": 345
+},
+"nb0532": {
+"seg_id": "2025-12-04#t1558w0",
+"opus_screen": 55,
+"date": "2025-12-04",
+"speaker": "Ms. Bockus",
+"n_words": 280
+},
+"nb0533": {
+"seg_id": "2024-03-20#t15528w0",
+"opus_screen": 55,
+"date": "2024-03-20",
+"speaker": "Ms. Mitton",
+"n_words": 165
+},
+"nb0534": {
+"seg_id": "2025-10-29#t325w0",
+"opus_screen": 55,
+"date": "2025-10-29",
+"speaker": "Mr. Cullins",
+"n_words": 156
+},
+"nb0535": {
+"seg_id": "2025-11-06#t809w3",
+"opus_screen": 55,
+"date": "2025-11-06",
+"speaker": "Ms. M. Johnson",
+"n_words": 353
+},
+"nb0536": {
+"seg_id": "2025-03-19#t1116w1",
+"opus_screen": 55,
+"date": "2025-03-19",
+"speaker": "Mr. Monahan",
+"n_words": 325
+},
+"nb0537": {
+"seg_id": "2025-11-05#t693w0",
+"opus_screen": 55,
+"date": "2025-11-05",
+"speaker": "Ms. M. Johnson",
+"n_words": 309
+},
+"nb0538": {
+"seg_id": "2026-05-14#t3201w0",
+"opus_screen": 55,
+"date": "2026-05-14",
+"speaker": "Mr. Oliver",
+"n_words": 326
+},
+"nb0539": {
+"seg_id": "2025-05-16#t2556w0",
+"opus_screen": 55,
+"date": "2025-05-16",
+"speaker": "Mr. Monahan",
+"n_words": 141
+},
+"nb0540": {
+"seg_id": "2023-12-05#t14868w0",
+"opus_screen": 55,
+"date": "2023-12-05",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 184
+},
+"nb0541": {
+"seg_id": "2023-05-11#t11766w4",
+"opus_screen": 55,
+"date": "2023-05-11",
+"speaker": "Mr. McKee",
+"n_words": 288
+},
+"nb0542": {
+"seg_id": "2025-03-19#t1116w0",
+"opus_screen": 55,
+"date": "2025-03-19",
+"speaker": "Mr. Monahan",
+"n_words": 333
+},
+"nb0543": {
+"seg_id": "2026-03-20#t2234w2",
+"opus_screen": 55,
+"date": "2026-03-20",
+"speaker": "Ms. M. Johnson",
+"n_words": 328
+},
+"nb0544": {
+"seg_id": "2025-05-30#t2945w0",
+"opus_screen": 55,
+"date": "2025-05-30",
+"speaker": "Ms. Mitton",
+"n_words": 136
+},
+"nb0545": {
+"seg_id": "2026-05-07#t2871w3",
+"opus_screen": 55,
+"date": "2026-05-07",
+"speaker": "Mr. Lee",
+"n_words": 337
+},
+"nb0546": {
+"seg_id": "2026-03-20#t2229w0",
+"opus_screen": 55,
+"date": "2026-03-20",
+"speaker": "Hon. Ms. Miles",
+"n_words": 286
+},
+"nb0547": {
+"seg_id": "2025-11-20#t1194w5",
+"opus_screen": 55,
+"date": "2025-11-20",
+"speaker": "Hon. Mr. McKee",
+"n_words": 298
+},
+"nb0548": {
+"seg_id": "2025-10-30#t496w1",
+"opus_screen": 55,
+"date": "2025-10-30",
+"speaker": "Hon. Mr. McKee",
+"n_words": 307
+},
+"nb0549": {
+"seg_id": "2025-05-29#t2922w3",
+"opus_screen": 55,
+"date": "2025-05-29",
+"speaker": "Ms. Scott-Wallace",
+"n_words": 305
+},
+"nb0550": {
+"seg_id": "2026-05-13#t3063w0",
+"opus_screen": 55,
+"date": "2026-05-13",
+"speaker": "Hon. C. Chiasson",
+"n_words": 309
+},
+"nb0551": {
+"seg_id": "2024-05-16#t16816w0",
+"opus_screen": 55,
+"date": "2024-05-16",
+"speaker": "Mr. Losier",
+"n_words": 290
+},
+"nb0552": {
+"seg_id": "2025-05-06#t1646w0",
+"opus_screen": 55,
+"date": "2025-05-06",
+"speaker": "Ms. Sodhi",
+"n_words": 161
+},
+"nb0553": {
+"seg_id": "2025-05-08#t1912w4",
+"opus_screen": 55,
+"date": "2025-05-08",
+"speaker": "Mr. Johnston",
+"n_words": 360
+},
+"nb0554": {
+"seg_id": "2025-11-06#t799w0",
+"opus_screen": 55,
+"date": "2025-11-06",
+"speaker": "Mr. Lee",
+"n_words": 355
+},
+"nb0555": {
+"seg_id": "2026-05-08#t2893w0",
+"opus_screen": 55,
+"date": "2026-05-08",
+"speaker": "Hon. Ms. Boudreau",
+"n_words": 126
+},
+"nb0556": {
+"seg_id": "2026-03-26#t2462w0",
+"opus_screen": 55,
+"date": "2026-03-26",
+"speaker": "Mr. Arseneault",
+"n_words": 150
+},
+"nb0557": {
+"seg_id": "2026-03-25#t2418w2",
+"opus_screen": 55,
+"date": "2026-03-25",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 280
+},
+"nb0558": {
+"seg_id": "2024-11-27#t444w1",
+"opus_screen": 55,
+"date": "2024-11-27",
+"speaker": "Hon. Mr. McKee",
+"n_words": 312
+},
+"nb0559": {
+"seg_id": "2026-03-24#t2255w0",
+"opus_screen": 55,
+"date": "2026-03-24",
+"speaker": "Ms. Sodhi",
+"n_words": 131
+},
+"nb0560": {
+"seg_id": "2025-06-03#t3063w0",
+"opus_screen": 55,
+"date": "2025-06-03",
+"speaker": "Mr. Monahan",
+"n_words": 167
+},
+"nb0561": {
+"seg_id": "2025-06-04#t3235w1",
+"opus_screen": 55,
+"date": "2025-06-04",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 216
+},
+"nb0562": {
+"seg_id": "2026-05-13#t3079w0",
+"opus_screen": 55,
+"date": "2026-05-13",
+"speaker": "Mr. Monahan",
+"n_words": 343
+},
+"nb0563": {
+"seg_id": "2025-03-26#t1515w3",
+"opus_screen": 55,
+"date": "2025-03-26",
+"speaker": "Ms. M. Johnson",
+"n_words": 283
+},
+"nb0564": {
+"seg_id": "2025-12-10#t1775w0",
+"opus_screen": 55,
+"date": "2025-12-10",
+"speaker": "Mr. Monahan",
+"n_words": 128
+},
+"nb0565": {
+"seg_id": "2026-05-13#t3077w1",
+"opus_screen": 55,
+"date": "2026-05-13",
+"speaker": "Mr. Monahan",
+"n_words": 115
+},
+"nb0566": {
+"seg_id": "2026-03-26#t2527w0",
+"opus_screen": 55,
+"date": "2026-03-26",
+"speaker": "Hon. Ms. Boudreau",
+"n_words": 236
+},
+"nb0567": {
+"seg_id": "2025-03-26#t1504w5",
+"opus_screen": 55,
+"date": "2025-03-26",
+"speaker": "Mr. Monahan",
+"n_words": 331
+},
+"nb0568": {
+"seg_id": "2026-05-14#t3191w1",
+"opus_screen": 55,
+"date": "2026-05-14",
+"speaker": "Hon. Mr. Finnigan",
+"n_words": 350
+},
+"nb0569": {
+"seg_id": "2025-11-06#t799w1",
+"opus_screen": 55,
+"date": "2025-11-06",
+"speaker": "Mr. Lee",
+"n_words": 349
+},
+"nb0570": {
+"seg_id": "2026-05-14#t3166w0",
+"opus_screen": 55,
+"date": "2026-05-14",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 339
+},
+"nb0571": {
+"seg_id": "2025-10-28#t298w2",
+"opus_screen": 55,
+"date": "2025-10-28",
+"speaker": "",
+"n_words": 187
+},
+"nb0572": {
+"seg_id": "2025-03-25#t1293w0",
+"opus_screen": 55,
+"date": "2025-03-25",
+"speaker": "Mr. J. LeBlanc",
+"n_words": 141
+},
+"nb0573": {
+"seg_id": "2025-05-16#t2465w0",
+"opus_screen": 55,
+"date": "2025-05-16",
+"speaker": "Ms. M. Wilson",
+"n_words": 170
+},
+"nb0574": {
+"seg_id": "2025-10-21#t6w3",
+"opus_screen": 55,
+"date": "2025-10-21",
+"speaker": "Ms. Vautour, as seconder, spoke as follows",
+"n_words": 335
+},
+"nb0575": {
+"seg_id": "2024-12-12#t840w1",
+"opus_screen": 55,
+"date": "2024-12-12",
+"speaker": "Mr. Monahan",
+"n_words": 289
+},
+"nb0576": {
+"seg_id": "2024-11-28#t462w0",
+"opus_screen": 55,
+"date": "2024-11-28",
+"speaker": "Mr. Robichaud",
+"n_words": 154
+},
+"nb0577": {
+"seg_id": "2025-12-12#t1998w1",
+"opus_screen": 55,
+"date": "2025-12-12",
+"speaker": "Ms. Mitton",
+"n_words": 354
+},
+"nb0578": {
+"seg_id": "2025-06-06#t3362w0",
+"opus_screen": 55,
+"date": "2025-06-06",
+"speaker": "Ms. Vautour",
+"n_words": 155
+},
+"nb0579": {
+"seg_id": "2025-11-05#t690w4",
+"opus_screen": 55,
+"date": "2025-11-05",
+"speaker": "Ms. Bockus",
+"n_words": 353
+},
+"nb0580": {
+"seg_id": "2025-05-28#t2792w5",
+"opus_screen": 55,
+"date": "2025-05-28",
+"speaker": "Mr. Cullins",
+"n_words": 332
+},
+"nb0581": {
+"seg_id": "2026-03-26#t2549w1",
+"opus_screen": 55,
+"date": "2026-03-26",
+"speaker": "Ms. S. Wilson",
+"n_words": 310
+},
+"nb0582": {
+"seg_id": "2024-03-22#t15720w10",
+"opus_screen": 55,
+"date": "2024-03-22",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 249
+},
+"nb0583": {
+"seg_id": "2026-03-18#t2135w21",
+"opus_screen": 55,
+"date": "2026-03-18",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 277
+},
+"nb0584": {
+"seg_id": "2025-06-03#t3143w2",
+"opus_screen": 55,
+"date": "2025-06-03",
+"speaker": "Mr. Monahan",
+"n_words": 184
+},
+"nb0585": {
+"seg_id": "2025-11-04#t605w0",
+"opus_screen": 55,
+"date": "2025-11-04",
+"speaker": "Hon. Mr. Gauvin",
+"n_words": 178
+},
+"nb0586": {
+"seg_id": "2025-05-14#t2169w0",
+"opus_screen": 55,
+"date": "2025-05-14",
+"speaker": "Mr. J. LeBlanc",
+"n_words": 157
+},
+"nb0587": {
+"seg_id": "2025-12-11#t1926w0",
+"opus_screen": 55,
+"date": "2025-12-11",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 335
+},
+"nb0588": {
+"seg_id": "2025-05-28#t2792w6",
+"opus_screen": 55,
+"date": "2025-05-28",
+"speaker": "Mr. Cullins",
+"n_words": 295
+},
+"nb0589": {
+"seg_id": "2025-10-29#t378w6",
+"opus_screen": 55,
+"date": "2025-10-29",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 299
+},
+"nb0590": {
+"seg_id": "2025-05-08#t1900w0",
+"opus_screen": 55,
+"date": "2025-05-08",
+"speaker": "Ms. Vautour",
+"n_words": 330
+},
+"nb0591": {
+"seg_id": "2024-11-28#t466w0",
+"opus_screen": 55,
+"date": "2024-11-28",
+"speaker": "Mr. Monahan",
+"n_words": 134
+},
+"nb0592": {
+"seg_id": "2026-05-14#t3111w0",
+"opus_screen": 55,
+"date": "2026-05-14",
+"speaker": "Ms. Vautour",
+"n_words": 155
+},
+"nb0593": {
+"seg_id": "2023-06-13#t12687w0",
+"opus_screen": 55,
+"date": "2023-06-13",
+"speaker": "Mr. McKee",
+"n_words": 164
+},
+"nb0594": {
+"seg_id": "2025-05-28#t2792w2",
+"opus_screen": 55,
+"date": "2025-05-28",
+"speaker": "Mr. Cullins",
+"n_words": 349
+},
+"nb0595": {
+"seg_id": "2025-12-05#t1579w0",
+"opus_screen": 55,
+"date": "2025-12-05",
+"speaker": "Ms. Sodhi",
+"n_words": 112
+},
+"nb0596": {
+"seg_id": "2025-05-16#t2550w1",
+"opus_screen": 55,
+"date": "2025-05-16",
+"speaker": "Mr. Oliver",
+"n_words": 298
+},
+"nb0597": {
+"seg_id": "2025-11-06#t814w5",
+"opus_screen": 55,
+"date": "2025-11-06",
+"speaker": "Ms. Conroy",
+"n_words": 285
+},
+"nb0598": {
+"seg_id": "2026-05-05#t2572w0",
+"opus_screen": 55,
+"date": "2026-05-05",
+"speaker": "Mr. Ames",
+"n_words": 154
+},
+"nb0599": {
+"seg_id": "2025-10-28#t278w6",
+"opus_screen": 55,
+"date": "2025-10-28",
+"speaker": "Mr. Monahan",
+"n_words": 360
+},
+"nb0600": {
+"seg_id": "2026-03-20#t2228w0",
+"opus_screen": 55,
+"date": "2026-03-20",
+"speaker": "Hon. Ms. Miles",
+"n_words": 327
+},
+"nb0601": {
+"seg_id": "2025-03-19#t972w0",
+"opus_screen": 55,
+"date": "2025-03-19",
+"speaker": "Mr. Coon",
+"n_words": 337
+},
+"nb0602": {
+"seg_id": "2025-11-06#t809w4",
+"opus_screen": 55,
+"date": "2025-11-06",
+"speaker": "Ms. M. Johnson",
+"n_words": 335
+},
+"nb0603": {
+"seg_id": "2025-05-28#t2795w1",
+"opus_screen": 55,
+"date": "2025-05-28",
+"speaker": "Mr. Oliver",
+"n_words": 286
+},
+"nb0604": {
+"seg_id": "2024-12-10#t563w0",
+"opus_screen": 55,
+"date": "2024-12-10",
+"speaker": "Ms. M. Johnson",
+"n_words": 148
+},
+"nb0605": {
+"seg_id": "2026-03-24#t2305w2",
+"opus_screen": 55,
+"date": "2026-03-24",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 324
+},
+"nb0606": {
+"seg_id": "2023-11-30#t14680w0",
+"opus_screen": 55,
+"date": "2023-11-30",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 142
+},
+"nb0607": {
+"seg_id": "2023-05-11#t11766w1",
+"opus_screen": 55,
+"date": "2023-05-11",
+"speaker": "Mr. McKee",
+"n_words": 290
+},
+"nb0608": {
+"seg_id": "2025-05-29#t2912w3",
+"opus_screen": 55,
+"date": "2025-05-29",
+"speaker": "Ms. S. Wilson",
+"n_words": 107
+},
+"nb0609": {
+"seg_id": "2025-10-24#t151w0",
+"opus_screen": 55,
+"date": "2025-10-24",
+"speaker": "Mr. Monahan",
+"n_words": 180
+},
+"nb0610": {
+"seg_id": "2025-06-04#t3193w0",
+"opus_screen": 55,
+"date": "2025-06-04",
+"speaker": "Mr. Monahan",
+"n_words": 146
+},
+"nb0611": {
+"seg_id": "2025-03-20#t1158w0",
+"opus_screen": 55,
+"date": "2025-03-20",
+"speaker": "Mr. Monahan",
+"n_words": 351
+},
+"nb0612": {
+"seg_id": "2025-11-20#t1191w1",
+"opus_screen": 55,
+"date": "2025-11-20",
+"speaker": "Mr. Deputy Speaker",
+"n_words": 317
+},
+"nb0613": {
+"seg_id": "2025-10-30#t509w0",
+"opus_screen": 55,
+"date": "2025-10-30",
+"speaker": "Mr. Russell",
+"n_words": 341
+},
+"nb0614": {
+"seg_id": "2026-05-07#t2852w1",
+"opus_screen": 50,
+"date": "2026-05-07",
+"speaker": "Ms. Wilcott",
+"n_words": 351
+},
+"nb0615": {
+"seg_id": "2025-05-16#t2480w0",
+"opus_screen": 50,
+"date": "2025-05-16",
+"speaker": "Mr. M. LeBlanc",
+"n_words": 163
+},
+"nb0616": {
+"seg_id": "2025-10-30#t505w0",
+"opus_screen": 50,
+"date": "2025-10-30",
+"speaker": "Ms. Vautour",
+"n_words": 349
+},
+"nb0617": {
+"seg_id": "2026-05-07#t2830w1",
+"opus_screen": 50,
+"date": "2026-05-07",
+"speaker": "Mr. Lee",
+"n_words": 302
+},
+"nb0618": {
+"seg_id": "2025-06-03#t3062w0",
+"opus_screen": 50,
+"date": "2025-06-03",
+"speaker": "Ms. Scott-Wallace",
+"n_words": 161
+},
+"nb0619": {
+"seg_id": "2025-10-24#t191w1",
+"opus_screen": 50,
+"date": "2025-10-24",
+"speaker": "Mr. Monahan",
+"n_words": 327
+},
+"nb0620": {
+"seg_id": "2025-11-20#t1204w1",
+"opus_screen": 50,
+"date": "2025-11-20",
+"speaker": "Ms. Sodhi",
+"n_words": 252
+},
+"nb0621": {
+"seg_id": "2025-11-20#t1107w0",
+"opus_screen": 50,
+"date": "2025-11-20",
+"speaker": "Ms. Wilcott",
+"n_words": 133
+},
+"nb0622": {
+"seg_id": "2020-12-08#t396w0",
+"opus_screen": 50,
+"date": "2020-12-08",
+"speaker": "",
+"n_words": 289
+},
+"nb0623": {
+"seg_id": "2025-05-28#t2820w2",
+"opus_screen": 50,
+"date": "2025-05-28",
+"speaker": "Ms. S. Wilson",
+"n_words": 286
+},
+"nb0624": {
+"seg_id": "2025-10-24#t114w0",
+"opus_screen": 50,
+"date": "2025-10-24",
+"speaker": "Hon. Mr. D\u2019Amours",
+"n_words": 157
+},
+"nb0625": {
+"seg_id": "2025-05-15#t2446w5",
+"opus_screen": 50,
+"date": "2025-05-15",
+"speaker": "Mr. Lee",
+"n_words": 334
+},
+"nb0626": {
+"seg_id": "2025-10-21#t5w5",
+"opus_screen": 50,
+"date": "2025-10-21",
+"speaker": "Madam Speaker",
+"n_words": 341
+},
+"nb0627": {
+"seg_id": "2025-06-06#t3360w0",
+"opus_screen": 50,
+"date": "2025-06-06",
+"speaker": "Ms. M. Wilson",
+"n_words": 121
+},
+"nb0628": {
+"seg_id": "2025-05-27#t2645w2",
+"opus_screen": 50,
+"date": "2025-05-27",
+"speaker": "Ms. Conroy",
+"n_words": 275
+},
+"nb0629": {
+"seg_id": "2025-05-14#t2326w3",
+"opus_screen": 50,
+"date": "2025-05-14",
+"speaker": "Mr. Weir",
+"n_words": 315
+},
+"nb0630": {
+"seg_id": "2025-12-02#t1370w1",
+"opus_screen": 50,
+"date": "2025-12-02",
+"speaker": "Hon. Mr. Legacy",
+"n_words": 343
+},
+"nb0631": {
+"seg_id": "2024-11-28#t515w0",
+"opus_screen": 50,
+"date": "2024-11-28",
+"speaker": "Hon. Ms. Boudreau",
+"n_words": 325
+},
+"nb0632": {
+"seg_id": "2025-10-30#t496w0",
+"opus_screen": 50,
+"date": "2025-10-30",
+"speaker": "Hon. Mr. McKee",
+"n_words": 340
+},
+"nb0633": {
+"seg_id": "2023-06-06#t12360w1",
+"opus_screen": 50,
+"date": "2023-06-06",
+"speaker": "",
+"n_words": 305
+},
+"nb0634": {
+"seg_id": "2025-10-30#t505w2",
+"opus_screen": 50,
+"date": "2025-10-30",
+"speaker": "Ms. Vautour",
+"n_words": 261
+},
+"nb0635": {
+"seg_id": "2025-10-21#t6w1",
+"opus_screen": 50,
+"date": "2025-10-21",
+"speaker": "Ms. Vautour, as seconder, spoke as follows",
+"n_words": 329
+},
+"nb0636": {
+"seg_id": "2025-05-09#t1954w0",
+"opus_screen": 50,
+"date": "2025-05-09",
+"speaker": "Mr. Bourque",
+"n_words": 146
+},
+"nb0637": {
+"seg_id": "2024-11-22#t195w1",
+"opus_screen": 50,
+"date": "2024-11-22",
+"speaker": "Hon. Ms. Boudreau",
+"n_words": 114
+},
+"nb0638": {
+"seg_id": "2025-12-04#t1521w0",
+"opus_screen": 50,
+"date": "2025-12-04",
+"speaker": "Hon. Mr. Dornan",
+"n_words": 199
+},
+"nb0639": {
+"seg_id": "2025-12-03#t1392w0",
+"opus_screen": 50,
+"date": "2025-12-03",
+"speaker": "Mr. Lee",
+"n_words": 171
+},
+"nb0640": {
+"seg_id": "2026-03-18#t2050w0",
+"opus_screen": 50,
+"date": "2026-03-18",
+"speaker": "Ms. M. Johnson",
+"n_words": 199
+},
+"nb0641": {
+"seg_id": "2025-10-24#t165w0",
+"opus_screen": 50,
+"date": "2025-10-24",
+"speaker": "Hon. Ms. Boudreau",
+"n_words": 184
+},
+"nb0642": {
+"seg_id": "2025-11-20#t1157w0",
+"opus_screen": 50,
+"date": "2025-11-20",
+"speaker": "Hon. Ms. Boudreau",
+"n_words": 167
+}
+}
