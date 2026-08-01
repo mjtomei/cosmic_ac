@@ -2,7 +2,7 @@
 
 Downloaded from arXiv / author pages / institutional repositories / NBER /
 nobelprize.org / mises.org / course mirrors of classics. Two clusters behind the
-**Cosmic AC** paper (`~/performance_commons`): **(A)** the economics of software as
+**Cosmic AC** paper (this repository): **(A)** the economics of software as
 a public good — the literature §2.1 of the current paper is built on, and the
 "trend with a forty-year record" it extends; **(B)** the socialist-calculation
 debate and its formal descendants — the literature behind the planned **Hayek
