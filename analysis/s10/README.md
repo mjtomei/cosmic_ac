@@ -96,3 +96,24 @@ screen's most adversarial pre-LLM cases.
 random-sample prevalence because the screen only surfaced the top ~1.7% of
 segments; the random-sample estimate remains the prevalence figure, and this
 is the audited, individually-verified subset beneath it.
+
+## UK replication (started 2026-08-01)
+
+`uk/` — House of Commons debates via mySociety ParlParse rsync
+(`data.theyworkforyou.com::parldata/scrapedxml/debates/`), protocol windows
+only (2018–2022 pre, 2024–2026 post; 2023 excluded per protocol). 2,937 XML
+files → 1,137 sitting dates after revision dedup (prefer `latest="yes"`,
+else highest suffix letter).
+
+`uk_extract.py` maps ParlParse `<speech>` elements onto the NB segment schema
+so every downstream script runs unchanged: **573,779 segments / 447,210
+scoreable / 71.0M words / 1,191 speakers**, 8.6× the NB corpus. No PDF
+extraction, no column split, no truncation recovery — the XML is already
+speaker-attributed. Chair/procedural speech excluded by name; `orig_frac`
+is 1.0 throughout (no translation column in the UK record).
+
+`run_protocol.py` is the **frozen protocol v1.0 as executable code** — same
+instrument (Kobak style list), windows, primary statistic, placebo
+construction and secondaries for every corpus; the only per-corpus input is
+the name, which seeds the RNG (`sha1(name)[:8]`). This is what makes the
+cross-legislature Fisher combination legitimate: no corpus can be tuned.
