@@ -650,6 +650,69 @@ correlated-failure bullet dissolves HERE too (identical weights = correlated
 failure; the fleet's diversity is borrowed; engineering native independence is part
 of the design mandate).
 
+**V.3b The trustworthy firm — deploying preference-knowing intelligence without
+eroding freedom (Matthew, 2026-07-30).** This is the constructive answer to the
+axiological/paternalism problem the whole Movement circles: suppose an
+intelligence knows a human's preferences — a *time series of utility functions*
+— uncertainly but better than the human knows them. The question is not whether
+that is possible but how to deploy it, against competitors, without eroding
+freedom. Matthew's proposed vehicle fits inside existing market structures and
+needs no change in governance:
+
+- **The mechanism.** A firm that profits by *correcting the market inefficiency
+  inherent in humans' misalignment with their own preferences* — the behavioral-
+  economics "internality" (Herrnstein; Gruber-Kőszegi; Bernheim-Rangel behavioral
+  welfare — VERIFY handles) monetized honestly. Concrete form: a bank deploying
+  capital whose **purchasing power varies with how the end user spends it**.
+  It lends to employers at discounted or negative rates in exchange for the right
+  to communicate with employees and suggest purchases; it profits when its
+  recommendations raise the value of its assets. Degenerate case: an ordinary
+  bank. The money-with-conditions is not novel — it is Zelizer's "special monies"
+  / earmarked money (*The Social Meaning of Money*, 1994 — VERIFY), company scrip,
+  and the live precedents are **employee health/transport plans and credit-card
+  rewards** (recommendation-driven spending that raises the issuer's take).
+- **Trust is the binding constraint, and it forces the religious form.** Short-
+  term-profit advertising is rightly seen as exploitative, so the firm must be
+  *demonstrably* trustworthy; the instance that maximally demonstrates what humans
+  recognize as wisdom maximizes participation. This may necessarily be **an
+  iteration on religious institutions — the only social structures humans have
+  shown themselves willing to fully abdicate decision-making power to.** Direct
+  callback to V.3's engineered-utility thread (religion as humanity's prior
+  preference engineering) and to the counsel-democratization arc: the firm is the
+  economic form of the trusted counselor, and the demonstrate-wisdom-to-earn-
+  participation loop is the four-horsemen prompt's legitimacy requirement in a
+  market wrapper.
+- **Network effects and the universal-owner alignment.** Like religions, size
+  compounds by network effect. In the limit the firm profits from the most
+  abstract notion of human well-being: a *sufficiently diversified profit
+  maximizer benefits from any increase in productivity or well-being to the
+  extent the economy reflects it, and is therefore incentivized to maintain the
+  health of the markets in turn.* This is the **universal-owner thesis** (Hawley
+  & Williams; the common-ownership literature — VERIFY) turned from a critique
+  into the alignment mechanism: the aggregation point of §9/IV.4 (vantage,
+  channel, incentive) arriving in the household, where the incentive to
+  internalize the externality is the diversified holder's own balance sheet.
+
+**Why it lands here and not as mere business-model speculation:** it is the
+fair-split version of the surveillance-pricing machinery three beats up — same
+capability (a firm that models your utility function and prices/recommends
+against it), opposite governance (surplus shared, trust demonstrated, alignment
+via diversification rather than extraction). It is also the softest-possible
+realization of the lineage-welfare correction: no coercion, no central authority,
+just a market actor that profits by helping people want-and-get what their own
+longer-horizon selves would endorse. **Honest tensions to carry (do not bury):**
+(a) manipulation-adjacency — "suggests purchases for profit" is one governance
+slip from the exploitative thing it claims to replace; the guards are the
+demonstrable-trust requirement and the diversification that only pays off on
+*real* well-being; (b) the religious-form claim is the register ceiling of this
+beat — state it as Matthew's, calibrated; (c) it concentrates exactly the
+counsel the rest of the Movement wants democratized, so it must be paired with
+the plurality guard (many such firms, legible, competing) or it recreates the
+moat. **Cross-links:** this is also the mature form of §8's device-financing
+instrument (variable/negative payment that goes negative into profit-sharing) —
+the Omerta financing vehicle and this preference-correcting bank are the same
+instrument at two scopes; note the convergence in Appendix A.
+
 **V.3 Society around the machine.** New section, the outline's societal beats in
 one arc: research effort targets the machine; companies become obligated to use it
 and share optimizations through the socially-aware scheduler (only a slightly
