@@ -1,5 +1,12 @@
 # S10 pilot — pipeline, throughput, and first scores
 
+> **Framing first: read [`READING-THIS-WORK.md`](READING-THIS-WORK.md) before the
+> data files.** This is a measurement of machine intelligence's presence in a
+> legislature, not an allegation of wrongdoing about any member — legislative
+> speech has always been drafted by others, and "machine-drafted" is a different
+> claim from "not personally written." The study's power is in the aggregate
+> rate; per-segment rows are indicative and published for audit.
+
 Executed 2026-07-29 per `plans/S10-legislative-ai-detection.md` (Tasks 2 and 4,
 plus the pre-2022 control pull). Environment: NVIDIA GB10 (aarch64, 119 GB
 unified), torch 2.13.0+cu130 (SBSA wheel, `--index-url .../whl/cu130`),
