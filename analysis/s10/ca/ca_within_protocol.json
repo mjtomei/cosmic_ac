@@ -1,0 +1,56 @@
+{
+ "corpus": "Canada House of Commons within-speaker",
+ "seed": 2008741172,
+ "pre_words": 11466905,
+ "post_words": 4461432,
+ "n_instrument": 407,
+ "primary_mean_logFC": 0.01219,
+ "placebo_median": -0.24498,
+ "placebo_p99": -0.15377,
+ "placebo_max": -0.08469,
+ "primary_p": 0.0,
+ "n_placebo": 1000,
+ "sweep": [
+  {
+   "threshold_per100k": 1,
+   "n_words": 277,
+   "ratio": 1.028,
+   "p": 0.357
+  },
+  {
+   "threshold_per100k": 2,
+   "n_words": 313,
+   "ratio": 1.0904,
+   "p": 0.164
+  },
+  {
+   "threshold_per100k": 5,
+   "n_words": 357,
+   "ratio": 1.0216,
+   "p": 0.278
+  },
+  {
+   "threshold_per100k": 10,
+   "n_words": 369,
+   "ratio": 0.9988,
+   "p": 0.353
+  },
+  {
+   "threshold_per100k": 20,
+   "n_words": 383,
+   "ratio": 0.9842,
+   "p": 0.388
+  },
+  {
+   "threshold_per100k": 50,
+   "n_words": 395,
+   "ratio": 0.9286,
+   "p": 0.822
+  }
+ ],
+ "formal_register_ratio": 1.1768,
+ "bootstrap_ci": [
+  0.9075,
+  0.9255
+ ]
+}

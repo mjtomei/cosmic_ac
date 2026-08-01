@@ -680,3 +680,55 @@ change is common and the compositional term is local.
 In both chambers the formality gap **widens** under the restriction
 (UK +0.088 → +0.119, IE +0.052 → +0.153), so the convergent effect is not
 general formalization.
+
+## Canada — and a methodological correction that reshapes the comparison
+
+Corpus: 1,097 sittings via ourcommons.ca, 353k scoreable segments, 62.7M
+words. **26% of the "English" record is translated French** (excluded via
+`<FloorLanguage>`), leaving 20.1M pre / 11.1M post member-authored English
+in the common window.
+
+- **Canada full: raw primary −0.0138, p < 0.001**; within-speaker
+  (226 MPs): raw primary **+0.0122, p < 0.001**.
+- Register control 0.987 full / 1.177 within; formality gaps +0.090 / +0.241.
+- Clustered bootstrap CIs [0.925, 0.937] and [0.907, 0.926] — **below 1.0**:
+  in Canada the absolute volume of AI-style vocabulary *fell*.
+
+### The correction: raw primaries are not comparable across corpora
+
+Canada made an error in my earlier reporting unmissable. Its raw primary is
+**negative** yet p < 0.001, because its placebo baseline is lower still
+(median −0.231 vs UK −0.141). **Each corpus has its own baseline for what
+matched random vocabulary did over the same window**, so raw mean-logFC
+values cannot be compared between chambers — only each instrument's *excess
+over its own placebo median* can. Every cross-chamber effect-size comparison
+earlier in this memo used the raw value and was wrong to.
+
+**Placebo-normalised excess (the comparable effect size):**
+
+| chamber | seats | raw primary | **excess** | formality gap |
+|---|---|---|---|---|
+| New Brunswick *(discovery)* | 49 | +0.3791 | **+0.554** | +0.377 |
+| Dáil Éireann | 160 | +0.0647 | **+0.224** | +0.052 |
+| Dáil within-speaker | 160 | +0.0722 | **+0.244** | +0.153 |
+| Canada Commons | 338 | −0.0138 | **+0.218** | +0.090 |
+| Canada within-speaker | 338 | +0.0122 | **+0.257** | +0.241 |
+| UK Commons | 650 | +0.1155 | **+0.257** | +0.088 |
+| UK within-speaker | 650 | +0.0776 | **+0.272** | +0.119 |
+
+**The three confirmatory chambers agree far more closely than the raw
+numbers suggested: excess 0.218–0.272 across every specification, and
+0.244–0.272 on the like-for-like within-speaker runs.** New Brunswick at
+0.554 remains ~2x the others — outlying, but by half as much as the raw
+figures implied.
+
+**Fisher over the three confirmatory chambers: X² = 41.4, df = 6,
+p = 2.4 × 10⁻⁷.**
+
+Canada's negative absolute movement is worth stating plainly: its AI-style
+vocabulary *declined*, just far less than matched vocabulary declined. The
+pre-registered inference (excess over placebo) is unaffected and highly
+significant, but "AI vocabulary is rising" is not literally true of the
+Canadian Commons in absolute terms — only relative to its own vocabulary
+churn. Any headline should say **"rises relative to comparable vocabulary"**,
+not "rises".

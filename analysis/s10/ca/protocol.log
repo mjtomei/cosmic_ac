@@ -1,0 +1,44 @@
+[Canada House of Commons] seed=59054168  pre 20,110,275w  post 11,122,215w
+PRIMARY mean logFC = -0.0138 | placebo median -0.2313 p99 -0.1415 max -0.0994 | p = 0/1000 (<0.001)
+  sweep <1/100k: n=274 ratio=1.131 p=0.137
+  sweep <2/100k: n=310 ratio=1.061 p=0.332
+  sweep <5/100k: n=355 ratio=1.062 p=0.195
+  sweep <10/100k: n=367 ratio=1.039 p=0.274
+  sweep <20/100k: n=382 ratio=1.004 p=0.489
+  sweep <50/100k: n=394 ratio=0.938 p=0.916
+  formal-register control ratio = 0.987 (expect ~1)
+  clustered bootstrap 95% CI (full list ratio): [0.925, 0.937]
+wrote ca/ca_protocol.json
+dispersion floor = instrument median: 0.135 of 465 sitting dates
+[Canada House of Commons] pre 20,110,275w (long 8,099,049 / short 3,876,872), post 11,122,215w
+formality control: 164 words (instrument 407); overlap with instrument: 0
+  top formality markers: unceded, remiss, proponents, prima, facie, argued, artificial, roots, intergenerational, exit, interactions, apartment
+
+  AI instrument      mean logFC = -0.0138
+  formality control  mean logFC = -0.1034
+  GAP (instrument - formality)  = +0.0897
+  -> the instrument leads the formality axis
+wrote canada_house_of_commons_formality.json
+=== WITHIN ===
+[Canada House of Commons within-speaker] seed=2008741172  pre 11,466,905w  post 4,461,432w
+PRIMARY mean logFC = +0.0122 | placebo median -0.2450 p99 -0.1538 max -0.0847 | p = 0/1000 (<0.001)
+  sweep <1/100k: n=277 ratio=1.028 p=0.357
+  sweep <2/100k: n=313 ratio=1.090 p=0.164
+  sweep <5/100k: n=357 ratio=1.022 p=0.278
+  sweep <10/100k: n=369 ratio=0.999 p=0.353
+  sweep <20/100k: n=383 ratio=0.984 p=0.388
+  sweep <50/100k: n=395 ratio=0.929 p=0.822
+  formal-register control ratio = 1.177 (expect ~1)
+  clustered bootstrap 95% CI (full list ratio): [0.907, 0.926]
+wrote ca/ca_within_protocol.json
+dispersion floor = instrument median: 0.071 of 465 sitting dates
+[Canada House of Commons within-speaker] pre 11,466,905w (long 4,857,504 / short 1,946,087), post 4,461,432w
+formality control: 121 words (instrument 407); overlap with instrument: 0
+  top formality markers: precarious, frustrating, signs, located, grandmother, wood, restricted, title, structure, jury, improvement, sudden
+
+  AI instrument      mean logFC = +0.0122
+  formality control  mean logFC = -0.2291
+  GAP (instrument - formality)  = +0.2413
+  -> the instrument leads the formality axis
+wrote canada_house_of_commons_within_speaker_formality.json
+CA_ALL_DONE

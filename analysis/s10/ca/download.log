@@ -3,3 +3,7 @@ PARL 421 done: ok=400 miss=0
 PARL 431 done: ok=444 miss=13
 432: stop at sitting 136 (12 consecutive misses)
 PARL 432 done: ok=568 miss=25
+PARL 441 done: ok=958 miss=35
+451: stop at sitting 151 (12 consecutive misses)
+PARL 451 done: ok=1097 miss=47
+CA_DOWNLOAD_DONE ok=1097 miss=47

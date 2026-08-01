@@ -62,6 +62,12 @@ def main():
             "corpus": name, "seats": seats_for(name),
             "pre_Mw": d["pre_words"] / 1e6, "post_Mw": d["post_words"] / 1e6,
             "primary": d["primary_mean_logFC"],
+            # THE comparable effect size: each corpus has its own placebo
+            # baseline (what matched random vocabulary did there), so raw
+            # primaries are not comparable across chambers. Canada makes this
+            # unmissable: raw primary -0.014 yet p<0.001, because its placebo
+            # median is -0.231.
+            "excess": d["primary_mean_logFC"] - d["placebo_median"],
             "p": p, "p_is_bound": d["primary_p"] == 0,
             "placebo_max": d["placebo_max"],
             "register": d.get("formal_register_ratio"),
@@ -71,14 +77,14 @@ def main():
     rows.sort(key=lambda r: (r["seats"] or 0))
 
     print(f"{'corpus':<38s} {'seats':>5s} {'pre Mw':>7s} {'post Mw':>8s} "
-          f"{'primary':>8s} {'p':>9s} {'form.gap':>9s}")
+          f"{'primary':>8s} {'EXCESS':>8s} {'p':>9s} {'form.gap':>9s}")
     for r in rows:
         p = f"<{r['p']:.0e}" if r["p_is_bound"] else f"{r['p']:.3f}"
         g = f"{r['formality_gap']:+.4f}" if r["formality_gap"] is not None else "  —"
         tag = " (discovery)" if r["discovery"] else ""
         print(f"{r['corpus'][:36]+tag:<38s} {r['seats'] or '?':>5} "
               f"{r['pre_Mw']:>7.1f} {r['post_Mw']:>8.1f} "
-              f"{r['primary']:>+8.4f} {p:>9s} {g:>9s}")
+              f"{r['primary']:>+8.4f} {r['excess']:>+8.4f} {p:>9s} {g:>9s}")
 
     conf = [r for r in rows if not r["discovery"]
             and "within-speaker" not in r["corpus"]]
@@ -106,10 +112,10 @@ def main():
             for s in ("left", "bottom"):
                 ax.spines[s].set_color("#d8d7d2")
             x = [r["seats"] for r in pts]
-            y = [r["primary"] for r in pts]
+            y = [r["excess"] for r in pts]
             g = [r["formality_gap"] for r in pts]
             ax.plot(x, y, "o-", color="#2a78d6", lw=2, ms=7,
-                    label="AI-instrument mean logFC")
+                    label="excess over matched-placebo baseline")
             if all(v is not None for v in g):
                 ax.plot(x, g, "s--", color="#eb6834", lw=1.6, ms=6,
                         label="gap over data-defined formality control")
@@ -121,7 +127,7 @@ def main():
             ax.axhline(0, color="#d8d7d2", lw=1)
             ax.set_xscale("log")
             ax.set_xlabel("chamber size (seats, log scale)", fontsize=9, color="#52514e")
-            ax.set_ylabel("mean log fold-change", fontsize=9, color="#52514e")
+            ax.set_ylabel("excess mean logFC over placebo baseline", fontsize=9, color="#52514e")
             ax.set_title("AI-vocabulary shift vs chamber size, frozen protocol v1.0",
                          fontsize=10.5, color="#0b0b0b", loc="left", pad=10)
             ax.tick_params(colors="#52514e", labelsize=8.5)
