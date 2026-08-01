@@ -24,3 +24,6 @@ analysis/s10/screen_batches/
 analysis/s10/screen_mapping.json
 analysis/s10/pangram_web_scans/
 analysis/s10/pangram_rtf/
+s.json
+core.html
+package-lock.json
