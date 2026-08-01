@@ -1,0 +1,56 @@
+{
+ "corpus": "Dail Eireann within-speaker",
+ "seed": 636279688,
+ "pre_words": 31249500,
+ "post_words": 15086659,
+ "n_instrument": 407,
+ "primary_mean_logFC": 0.07215,
+ "placebo_median": -0.17166,
+ "placebo_p99": -0.08408,
+ "placebo_max": -0.03856,
+ "primary_p": 0.0,
+ "n_placebo": 1000,
+ "sweep": [
+  {
+   "threshold_per100k": 1,
+   "n_words": 272,
+   "ratio": 1.1594,
+   "p": 0.075
+  },
+  {
+   "threshold_per100k": 2,
+   "n_words": 311,
+   "ratio": 1.1202,
+   "p": 0.076
+  },
+  {
+   "threshold_per100k": 5,
+   "n_words": 351,
+   "ratio": 1.1191,
+   "p": 0.029
+  },
+  {
+   "threshold_per100k": 10,
+   "n_words": 367,
+   "ratio": 1.106,
+   "p": 0.024
+  },
+  {
+   "threshold_per100k": 20,
+   "n_words": 381,
+   "ratio": 1.0669,
+   "p": 0.038
+  },
+  {
+   "threshold_per100k": 50,
+   "n_words": 393,
+   "ratio": 1.0537,
+   "p": 0.055
+  }
+ ],
+ "formal_register_ratio": 1.0152,
+ "bootstrap_ci": [
+  1.021,
+  1.0315
+ ]
+}

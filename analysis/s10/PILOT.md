@@ -643,3 +643,40 @@ instrument and protocol are external and frozen. **The replicable effect
 size is ~+0.06 to +0.08 mean logFC**, established on two independent
 chambers and 127M words. The claim the study can defend is that the shift is
 real, detectable, and consistent across parliaments — not that it is large.
+
+### Ireland within-speaker — and a genuine convergence
+
+The Dáil also held a general election inside the post-window (Nov 2024), so
+the same restriction the UK needed applies here. Restricted to the **153 TDs
+with ≥5,000 words in both periods** (31.2M pre / 15.1M post — within 1% of
+the UK within-speaker corpus sizes, which makes the pair unusually
+comparable):
+
+- **+0.0722, p < 0.001**; register control 1.015; clustered CI
+  [1.021, 1.031]; **data-defined formality gap +0.1534**.
+
+**The like-for-like numbers, two independent parliaments, same
+specification:**
+
+| chamber | within-speaker primary | formality gap |
+|---|---|---|
+| Dáil Éireann (153 TDs) | **+0.0722** | +0.1534 |
+| UK Commons (416 MPs) | **+0.0776** | +0.1188 |
+
+They agree to within 8%. This is the cleanest statement the study can make:
+**among members who sat before and after their chamber's election, the
+AI-vocabulary shift is ≈ +0.075 mean logFC, reproduced independently in two
+parliaments on ~46M words each.** An earlier claim in this memo that
++0.065 and +0.078 were "like-for-like" was wrong — Ireland's figure was
+full-corpus; corrected here.
+
+Note the restriction moves the two chambers in *opposite* directions
+(UK +0.116 → +0.078, Ireland +0.065 → +0.072): the post-2024 UK intake
+carried *more* AI vocabulary than continuing MPs, the Irish intake *less*.
+The within-speaker specification removes that difference and the chambers
+converge — which is what one would expect if the underlying behaviour
+change is common and the compositional term is local.
+
+In both chambers the formality gap **widens** under the restriction
+(UK +0.088 → +0.119, IE +0.052 → +0.153), so the convergent effect is not
+general formalization.
