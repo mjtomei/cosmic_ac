@@ -163,6 +163,14 @@ authoritative. Subsections render as h3. All § cross-refs renumbered by script;
 
 ## How Matthew works (conventions)
 
+- **Reading notes live in the repo**, at `reading/notes/` — one file per work,
+  structured as Matthew's notes → the literature that answers each → the text
+  changes motivated, with dated addenda as threads develop. The `notes/` folder
+  in each `~/reading/<collection>/` is a symlink to it. More are in progress;
+  when Matthew shares notes on a work, write them there rather than into a
+  scratch file. (If the working directory is ever renamed, re-point those three
+  symlinks.)
+
 - **Build on published work; do not argue novelty** (Matthew, 2026-07-28: "we
   aren't publishing economists, more published work is better for us"). Start
   from the existing literature, extend its models, credit prior authors for

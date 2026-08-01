@@ -20,7 +20,12 @@ each.
 
 ## Notes
 
-`notes/` holds per-work reading notes: the reader's own notes on a paper, the
+`notes/` is the canonical home for per-work reading notes and is versioned
+here; the `notes/` folder inside each collection under `~/reading/` is a symlink
+to it, so notes written from either place land in the repository. New notes are
+added as reading continues.
+
+Each file holds the reader's own notes on a paper, the
 literature that answers each of them, and the text changes each motivated —
 which is where several of the project's threads were actually derived.
 
