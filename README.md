@@ -37,6 +37,6 @@ self-flagged as internally reviewed only.
 | `studies-and-work-log.md` | Every empirical effort behind the argument — done, committed, and candidate — with a dated log of what has actually run. |
 | `analysis/` | Data, models, and scripts. Every novel number has an artifact here with its sources and assumptions. |
 | `plans/` | Per-study session plans. |
-| `reading/` | The three literature collections behind the argument — 219 papers, tiered, with recommended reading orders. |
+| `reading/` | The three literature collections behind the argument — 219 papers, tiered, with recommended reading orders — and `notes/`, where several of the threads were derived. |
 
 Build: `bash build/build.sh` (needs `matplotlib markdown weasyprint`).

@@ -17,3 +17,25 @@ verified handle, and open-access locations were recorded where they exist.
 Each list gives a recommended reading order — arranged as an argument rather than
 alphabetically — with themed side tracks and the point at which to detour into
 each.
+
+## Notes
+
+`notes/` holds per-work reading notes: the reader's own notes on a paper, the
+literature that answers each of them, and the text changes each motivated —
+which is where several of the project's threads were actually derived.
+
+- `samuelson-1954.md` — the verified passage in which Samuelson concedes the
+  machine ("an omniscient calculating machine could theoretically solve if fed
+  the postulated functions. No such machine now exists," 1954) alongside false
+  signals and communication theory, so the founding paper already holds three of
+  the four legs the Hayek-criterion section assembles. Then five notes on
+  impure goods, endogenous utility functions, distributed search, deception in
+  noise, and the machine — each answered from the literature — and four addenda
+  tracing one arc: religion as engineered preferences, surveillance pricing as
+  its deployed extractive form, the incidence of personalized pricing as a
+  privately-collected progressive tax, and university financial aid as the
+  accepted version built on a baseline inflated by undischargeable credit.
+- `arrow-1969.md` — the verified Arrow passage on Pareto inefficiency producing
+  pressure to depart from the free market, plus the dynamic corollary: denied
+  benign departures, that pressure discharges through the cheapest channel
+  available.
