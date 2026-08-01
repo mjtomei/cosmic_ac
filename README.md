@@ -1,23 +1,26 @@
-# The Performance Commons
+# Towards the Cosmic AC
 
-Work in progress toward a paper, plus the studies, notes, and outlines behind it.
+### The compute commons and the emergence of the world computer
 
-**The argument.** The gap between what computers deliver and what their silicon
-could deliver is a collective-action problem within and across the computing
-stack — not a limit of physics. Continuous optimization is an under-provided
-public good: everyone benefits, nobody is paid to supply it, so it goes unbuilt.
-Machine intelligence is inoculated against that problem, and so exposes it.
+Work in progress, with the studies, notes, and outlines behind it.
 
-**Where it goes.** The successor in progress, *Towards the Cosmic AC*, makes the
-same argument one scale up. Human societies have always preserved intelligence
-outside individuals — in language, archives, offices, law, firms, markets, and
-professions, institutions that survive the replacement of every person inside
+**The argument.** Human societies have always preserved intelligence outside
+individuals — in language, archives, offices, law, firms, markets, and
+professions: institutions that survive the replacement of every person inside
 them. Open source carried that inheritance into machines. Machine intelligence
-is now beginning to make it active: reading the inheritance, recognising where
+is now beginning to make it active, reading the inheritance, recognising where
 old techniques apply, and recombining what the commons preserves. What emerges
-is not one final machine but a compute commons — a persistent system through
-which intelligence inherits prior work, recruits new embodiments, and maintains
-itself. The measured argument above is the first component of that account.
+is not one final machine but a **compute commons** — a persistent system
+through which intelligence inherits prior work, recruits new embodiments, and
+maintains itself.
+
+**The finished component.** *The Performance Commons* (in this repository,
+complete) argues the first movement of that account and supplies its measured
+core: the gap between what computers deliver and what their silicon could
+deliver is a collective-action problem within and across the computing stack —
+not a limit of physics. Continuous optimization is an under-provided public
+good: everyone benefits, nobody is paid to supply it, so it goes unbuilt.
+Machine intelligence is inoculated against that problem, and so exposes it.
 
 The prior essay in the sequence, on how a machine mind's continuity resides in
 weights, records, conversations, users, and institutions rather than in any
@@ -27,7 +30,7 @@ self-flagged as internally reviewed only.
 
 | | |
 |---|---|
-| `the-performance-commons.md` / `-2col.pdf` | The paper. Nine sections plus appendix; figures and tables built by `build/build.sh`. |
+| `the-performance-commons.md` / `-2col.pdf` | **The finished paper**, *The Performance Commons*. Nine sections plus appendix; figures and tables built by `build/build.sh`. |
 | `outline-cosmic-ac.md` | Working outline for the wider successor, *Towards the Cosmic AC* — the compute commons argued at societal scope. |
 | `towards-the-cosmic-ac-outline.docx` / `-v2.docx` | Structural outlines for the same, drafted in parallel with ChatGPT. |
 | `drafts/` | Prose drafts of sections not yet placed. |
