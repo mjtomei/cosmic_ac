@@ -540,3 +540,42 @@ not as a clean AI-attributable shift.
 hand-picked (e.g. words rising with frontbench status in the pre-period
 only), and/or restriction to MPs whose frontbench status did not change.
 NB did not need this because its register control declined (0.84).
+
+### Data-defined formality control (2026-08-01, `formality_axis.py`)
+
+The hand-picked register control invites the objection that it was chosen to
+pass, and it *did* fail on the UK within-speaker subset (1.105). So the
+control is now built from data, pre-period only, with no outcome leakage:
+
+  formality score(w) = log[ rate(w | long pre-period speeches, >=300w)
+                          / rate(w | short interventions, <=120w) ]
+
+then frequency-matched bucket-for-bucket to the instrument's own pre-period
+profile. **Two filters were necessary and both were found empirically:**
+without them the axis returned *hessle, mcdonagh, broxbourne, smokers,
+circuses* — i.e. it measured topical specificity, not register, because long
+speeches are bill debates and short ones are questions. Fixes: (1) a
+dispersion floor at the instrument's median share of sitting dates, (2) a
+proper-noun filter (mid-sentence capitalisation >25%). The axis then returns
+genuine register vocabulary (*amends, movingly, poignant, deficiencies,
+discourse, practicable, applicable, entity*), with **zero overlap** with the
+instrument in every corpus.
+
+| corpus | instrument | formality control | gap |
+|---|---|---|---|
+| NB | +0.3791 | +0.0025 | **+0.3766** |
+| UK full | +0.1155 | +0.0271 | **+0.0884** |
+| UK within-speaker | +0.0776 | −0.0412 | **+0.1188** |
+
+**This resolves the confound in the direction the study needs, and it is the
+stronger test.** Against a control defined by the data rather than by hand,
+the AI instrument leads in every corpus — and it leads *more* in the UK
+within-speaker subset (+0.119) than in the full corpus (+0.088), which is
+the opposite of what the hand-picked control's 1.105 suggested. Reading:
+the continuing-MP subset does show general formalization, but the
+hand-picked list happened to sit closer to that axis than the AI instrument
+does. NB's gap remains ~4x the UK's, so the chamber-size effect-size story
+is unchanged.
+
+Caveat kept: this axis is a *prepared-vs-spontaneous* proxy, not a validated
+register scale, and long/short is an imperfect proxy for prepared/impromptu.
