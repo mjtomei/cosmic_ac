@@ -159,3 +159,23 @@ candidate-enriched to 25% prevalence; top-10% ceiling is 39%, achieved
 replication — per legislature: calibration strata + small random
 prevalence anchor + confirmation of the Opus-screened tail only; no
 full-corpus Pangram sweeps. Pangram-3 validation (~$1) still pending.
+
+## Local prompt-based detectors (2026-07-31, vLLM containers, blinded pool)
+
+| detector | config | AUC vs Pangram |
+|---|---|---|
+| Claude Opus 5 | low effort | **0.951** |
+| Claude Fable 5 | high effort | 0.936 |
+| Qwen3-32B | thinking | 0.721 |
+| gpt-oss-120b | high reasoning | 0.672 |
+| gpt-oss-120b | low reasoning | 0.657 |
+| Qwen3-32B | no thinking | 0.549 |
+
+Same blinded 241-segment pool throughout (61 AI / 180 human by Pangram).
+Reasoning helps the open models some (Qwen +0.17 from thinking) but the
+frontier gap is ~0.25 AUC and reasoning does not close it: detection of
+edited AI in this register is frontier-capability-bound, which
+retro-explains the statistical detectors' nulls and grounds the decision
+to run screening on Opus workflows. (Ops: gpt-oss-120b requires the
+NVIDIA vLLM container's native MXFP4 path — transformers dequantizes to
+bf16 and OOMs the unified-memory box; preflight guard added.)

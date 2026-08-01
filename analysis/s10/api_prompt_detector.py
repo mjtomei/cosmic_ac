@@ -33,15 +33,18 @@ def main():
 
     def score(item):
         bid, text = item
+        is_oss = "gpt-oss" in model
+        msgs = ([{"role": "system", "content": f"Reasoning: {mode}"}]
+                if is_oss else []) + \
+               [{"role": "user", "content": PROMPT.format(X=text)}]
         body = {
             "model": model,
-            "messages": [
-                {"role": "system", "content": f"Reasoning: {mode}"},
-                {"role": "user", "content": PROMPT.format(X=text)},
-            ],
+            "messages": msgs,
             "max_tokens": 4096 if mode == "high" else 2048,
             "temperature": 0,
         }
+        if not is_oss:
+            body["chat_template_kwargs"] = {"enable_thinking": mode == "high"}
         for attempt in range(3):
             try:
                 r = requests.post(url, json=body, timeout=600)
