@@ -1,0 +1,11 @@
+[UK House of Commons within-speaker] seed=4272320249  pre 31,500,579w  post 15,426,222w
+PRIMARY mean logFC = +0.0776 | placebo median -0.1946 p99 -0.1140 max -0.0719 | p = 0/1000 (<0.001)
+  sweep <1/100k: n=277 ratio=1.086 p=0.160
+  sweep <2/100k: n=312 ratio=1.095 p=0.090
+  sweep <5/100k: n=348 ratio=1.077 p=0.104
+  sweep <10/100k: n=366 ratio=1.046 p=0.251
+  sweep <20/100k: n=383 ratio=1.045 p=0.190
+  sweep <50/100k: n=395 ratio=1.033 p=0.157
+  formal-register control ratio = 1.105 (expect ~1)
+  clustered bootstrap 95% CI (full list ratio): [1.000, 1.009]
+wrote uk/uk_within_protocol.json

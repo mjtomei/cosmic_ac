@@ -504,3 +504,39 @@ exactly this purpose).
 **Combination.** Fisher over NB (discovery, p < 10⁻⁵) and UK (confirmatory,
 p < 10⁻³): X² = 36.8, df = 4, **p ≈ 1.9 × 10⁻⁷** — reported with NB
 explicitly labelled as the discovery corpus, per protocol.
+
+### UK within-speaker restriction (2026-08-01, `uk/uk_within_protocol.json`)
+
+The July-2024 election confound, tested: restricted to the **416 MPs with
+≥5,000 words in both periods** (31.3M pre / 15.4M post words), frozen
+protocol re-run unmodified under its own corpus name and seed.
+
+- **Primary survives: mean logFC = +0.0776, p < 0.001** (0/1,000 placebos;
+  placebo max −0.072, i.e. every placebo negative, instrument positive).
+  So the effect is **not purely compositional** — roughly two thirds of the
+  full-corpus effect (+0.116) is present in the *same people*.
+- **But the confound picture gets murkier, and this must be reported.**
+  Formal-register control, pooled: **1.105** (vs 0.998 full corpus) —
+  formality rose ~10% among continuing MPs. Pooled instrument ratios in
+  this subset are 1.033–1.095, i.e. *lower* than the control.
+  Clustered bootstrap CI collapses to **[1.000, 1.009]**, touching 1.0.
+- Like-for-like check (same statistic both sides, equal-weight mean logFC):
+  instrument +0.0776 vs register control **+0.0404** — the instrument still
+  leads, but the gap narrows from **+0.146 (full corpus)** to **+0.037**.
+- The control is **not** contaminated by construction: 0 of its 15 stems
+  appear anywhere in the Kobak excess list.
+
+**Reading.** Neither UK specification is clean, and they fail differently.
+Full corpus carries a *composition* confound (half the Commons replaced);
+the within-speaker subset carries a *role* confound — those 416 continuing
+MPs went through a change of government, so many moved between backbench
+and frontbench, and frontbench speech is more formal and more scripted by
+construction. The primary passes under both, which is the load-bearing
+claim; but the UK effect size should be quoted as **+0.08 to +0.12 mean
+logFC with a general-formalization component that we have not separated**,
+not as a clean AI-attributable shift.
+
+**Next control to build:** a formality set matched on *function* rather than
+hand-picked (e.g. words rising with frontbench status in the pre-period
+only), and/or restriction to MPs whose frontbench status did not change.
+NB did not need this because its register control declined (0.84).
