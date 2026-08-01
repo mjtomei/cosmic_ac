@@ -1,1 +1,5 @@
 PARL 421 done: ok=400 miss=0
+431: stop at sitting 57 (12 consecutive misses)
+PARL 431 done: ok=444 miss=13
+432: stop at sitting 136 (12 consecutive misses)
+PARL 432 done: ok=568 miss=25
