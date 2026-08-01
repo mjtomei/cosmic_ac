@@ -829,6 +829,56 @@ from the counsel directory; cross-linked both ways).
   naïve cardholders' expense, cross-subsidized regardless of income. So the
   named precedents currently run extractive — strengthening both the need for
   the trust mechanism and the honest tension.
+- **The what-changed link, now sourced (6-agent sweep, 2026-07-31; 162 verified
+  finds in the reading directory's `00-WHAT-CHANGED-SWEEP.json`). The evidence
+  splits asymmetrically, and the section should say so:**
+  **(a) Knowing the per-person wedge — overwhelming.** Deployed: Dubé & Misra
+  (*JPE* 131(1), 2023) — ML-estimated individual WTP priced in a live field
+  experiment; Ouyang et al. 2022 (InstructGPT) — fitted preference models as
+  product infrastructure serving hundreds of millions. Measured in economics:
+  Allcott-Kim-Taubinsky-Zinman (*REStud* 89(3), 2022) elicit each payday
+  borrower's own misprediction and price the per-person internality;
+  Handel-Kolstad (*AER* 105(8), 2015) identify the wedge pre-ML and show how
+  expensive it was; Bhargava-Loewenstein-Sydnor (*QJE* 132(3), 2017) — majority
+  choosing dominated health plans, a clean per-person mistake with a dollar
+  cost. Targeting on the wedge already pays: Athey-Keleher-Spiess (*J.
+  Econometrics* 2025, 53k students), Knittel-Stolper (causal forests over ~1M
+  households). Machines model the person better than humans do: Kleinberg et
+  al. (*QJE* 133(1), 2018, bail); Mullainathan-Obermeyer (*QJE* 137(2), 2022 —
+  NOTE the QJE handle, not AER); Hoffman-Kahn-Li (*QJE* 133(2), 2018 —
+  overriding the algorithm makes hiring worse); Youyou-Kosinski-Stillwell
+  (*PNAS* 2015 — beats friends and spouse); Peterson et al. (*Science* 372,
+  2021 — nets discover decision theories); Binz et al., Centaur (*Nature* 644,
+  2025 — one foundation model predicts individual behavior out-of-distribution
+  better than domain models); Park et al. 2024 (arXiv, preprint — a 2-hour AI
+  interview yields agents reproducing a person's responses at ~85% of their own
+  test-retest reliability).
+  **(b) Advice measurably improving outcomes — strong and recent.**
+  Brynjolfsson-Li-Raymond (*QJE* 140(2), 2025): +14% productivity, +34% for
+  novices, 5,179 agents; Noy-Zhang (*Science* 2023): −40% time, +18% quality,
+  gains to the weakest; Goh et al. (*JAMA Netw Open* 2024): the LLM alone beat
+  physicians-with-LLM by 16pp; robo-advice reduces measured biases for the
+  worst-off investors (D'Acunto-Prabhala-Rossi *RFS* 2019) with a welfare
+  ledger (Rossi-Utkus *JFE* 157, 2024); Gargano-Rossi (*J. Finance* 79(3),
+  2024) — a fintech firm profiting by closing users' internality gap, the
+  trustworthy firm in embryo.
+  **(c) Demonstrating wisdom legibly — the honest frontier, thinner and
+  contested.** For: Dietvorst-Simmons-Massey (*Mgmt Sci* 2018) — trivial user
+  control restores algorithm adoption; Logg-Minson-Moore (*OBHDP* 2019) — lay
+  people over-weight algorithmic advice; Model Cards (FAccT 2019) map
+  Dranove-Jin certification onto models. Against: algorithm aversion after one
+  visible error (Dietvorst 2015); Dell'Acqua et al. 2024 — consultants accepted
+  confident advice they could not evaluate and did 19pp WORSE outside the
+  frontier; Obermeyer et al. (*Science* 2019) — a deployed algorithm serving
+  ~200M encoded cost-as-need and under-served Black patients (the label-choice
+  failure: the machine optimized the wrong wedge). Fernandes-Lynch-Netemeyer
+  (2014): generic financial education explains ~0.1% of behavior — why
+  personalized-at-decision-time is the only version of the product that works.
+  **Consequence for the text: state the asymmetry.** The wedge-knowing cost has
+  already collapsed (the extractive twin proves it daily); the
+  wisdom-demonstrating cost is falling but not solved, and the firm's design
+  (balance-sheet coupling, user control, model-card disclosure, plurality)
+  is exactly the engineering of that remaining leg.
 - **Formal advice theory for the design section:** Crawford-Sobel (*Econometrica*
   50(6), 1982) cheap talk; Ottaviani-Sørensen professional advice + the
   reputation-distortion result (wisdom-signaling can itself corrupt advice —
