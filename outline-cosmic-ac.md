@@ -874,6 +874,28 @@ from the counsel directory; cross-linked both ways).
   failure: the machine optimized the wrong wedge). Fernandes-Lynch-Netemeyer
   (2014): generic financial education explains ~0.1% of behavior — why
   personalized-at-decision-time is the only version of the product that works.
+  **Round-2 refinements (47 arrivals reviewed and tiered, 2026-08-01;
+  `00-RANKINGS.json` `round2`):** three additions with teeth. (1) Knittel &
+  Stolper (causal forests, ~1M households): the UNIFORM version of the
+  intervention harms ≥15% of recipients — per-person correction is not a
+  nicety but the difference between helping and hurting, which kills the
+  uniform-nudge fallback. (2) Sharma et al. 2023 (sycophancy): optimizing
+  revealed preference selects convincing agreement over truth INSIDE the
+  technology, before any market pressure — the extractive twin is the default
+  of the training objective itself, which deepens the must-answer critique
+  and makes the design answer non-optional. (3) Salganik et al. (PNAS 2020,
+  Fragile Families common task): 160 teams, rich longitudinal data, near-
+  benchmark R² — a measured ceiling on predicting a specific person; the
+  cheap-wedge claim must be argued within that floor, not past it.
+  **Drafting-ready synthesis (2026-08-01):** three independent literatures
+  converge on the same design conclusion — preference optimization drifts
+  sycophantic (Sharma), reputation incentives corrupt reporting even with
+  zero conflict (Ottaviani-Sørensen), and advice harm concentrates exactly
+  where the advisor lacks continuing exposure to outcomes (Christoffersen's
+  front-loads). Balance-sheet coupling is not one design option among
+  several; it is the unique surviving advisor design in every branch of the
+  evidence. Write V.3b's design paragraph as that sentence.
+
   **Consequence for the text: state the asymmetry.** The wedge-knowing cost has
   already collapsed (the extractive twin proves it daily); the
   wisdom-demonstrating cost is falling but not solved, and the firm's design
