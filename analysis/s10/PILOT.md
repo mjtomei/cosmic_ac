@@ -579,3 +579,22 @@ is unchanged.
 
 Caveat kept: this axis is a *prepared-vs-spontaneous* proxy, not a validated
 register scale, and long/short is an imperfect proxy for prepared/impromptu.
+
+### Robustness: absent-word smoothing does not drive the cross-corpus gap
+
+The primary statistic uses +0.5 smoothing, so a word absent from *both*
+periods contributes a constant `log(W_pre/W_post)` (~+0.6). Corpora differ in
+both their absent-word fraction and their pre/post size ratio, so this could
+in principle manufacture cross-corpus differences. Checked:
+
+| corpus | absent both | offset | primary (all) | primary (present only) |
+|---|---|---|---|---|
+| New Brunswick | 30/407 | +0.580 | +0.3791 | **+0.3882** (n=335) |
+| UK Commons | 22/407 | +0.671 | +0.1155 | **+0.1066** (n=373) |
+
+Restricting to words present in both periods leaves both estimates
+essentially unchanged and *widens* the NB/UK gap (0.264 → 0.282). The UK
+carries the larger offset while showing the smaller effect, so the artifact
+runs opposite to the observed difference. The ~3.6x NB/UK ratio is real.
+(The p-values were never exposed to this: placebos are frequency-matched to
+the instrument, so they carry the same offset.)
