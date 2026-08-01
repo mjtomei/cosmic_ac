@@ -1,5 +1,5 @@
 {
- "corpus": "UK full",
+ "corpus": "UK House of Commons",
  "n_instrument": 407,
  "n_control": 211,
  "instrument_mean_logFC": 0.11549,

@@ -1,5 +1,5 @@
 {
- "corpus": "UK within-speaker",
+ "corpus": "UK House of Commons within-speaker",
  "n_instrument": 407,
  "n_control": 187,
  "instrument_mean_logFC": 0.07762,
