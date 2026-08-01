@@ -650,69 +650,6 @@ correlated-failure bullet dissolves HERE too (identical weights = correlated
 failure; the fleet's diversity is borrowed; engineering native independence is part
 of the design mandate).
 
-**V.3b The trustworthy firm — deploying preference-knowing intelligence without
-eroding freedom (Matthew, 2026-07-30).** This is the constructive answer to the
-axiological/paternalism problem the whole Movement circles: suppose an
-intelligence knows a human's preferences — a *time series of utility functions*
-— uncertainly but better than the human knows them. The question is not whether
-that is possible but how to deploy it, against competitors, without eroding
-freedom. Matthew's proposed vehicle fits inside existing market structures and
-needs no change in governance:
-
-- **The mechanism.** A firm that profits by *correcting the market inefficiency
-  inherent in humans' misalignment with their own preferences* — the behavioral-
-  economics "internality" (Herrnstein; Gruber-Kőszegi; Bernheim-Rangel behavioral
-  welfare — VERIFY handles) monetized honestly. Concrete form: a bank deploying
-  capital whose **purchasing power varies with how the end user spends it**.
-  It lends to employers at discounted or negative rates in exchange for the right
-  to communicate with employees and suggest purchases; it profits when its
-  recommendations raise the value of its assets. Degenerate case: an ordinary
-  bank. The money-with-conditions is not novel — it is Zelizer's "special monies"
-  / earmarked money (*The Social Meaning of Money*, 1994 — VERIFY), company scrip,
-  and the live precedents are **employee health/transport plans and credit-card
-  rewards** (recommendation-driven spending that raises the issuer's take).
-- **Trust is the binding constraint, and it forces the religious form.** Short-
-  term-profit advertising is rightly seen as exploitative, so the firm must be
-  *demonstrably* trustworthy; the instance that maximally demonstrates what humans
-  recognize as wisdom maximizes participation. This may necessarily be **an
-  iteration on religious institutions — the only social structures humans have
-  shown themselves willing to fully abdicate decision-making power to.** Direct
-  callback to V.3's engineered-utility thread (religion as humanity's prior
-  preference engineering) and to the counsel-democratization arc: the firm is the
-  economic form of the trusted counselor, and the demonstrate-wisdom-to-earn-
-  participation loop is the four-horsemen prompt's legitimacy requirement in a
-  market wrapper.
-- **Network effects and the universal-owner alignment.** Like religions, size
-  compounds by network effect. In the limit the firm profits from the most
-  abstract notion of human well-being: a *sufficiently diversified profit
-  maximizer benefits from any increase in productivity or well-being to the
-  extent the economy reflects it, and is therefore incentivized to maintain the
-  health of the markets in turn.* This is the **universal-owner thesis** (Hawley
-  & Williams; the common-ownership literature — VERIFY) turned from a critique
-  into the alignment mechanism: the aggregation point of §9/IV.4 (vantage,
-  channel, incentive) arriving in the household, where the incentive to
-  internalize the externality is the diversified holder's own balance sheet.
-
-**Why it lands here and not as mere business-model speculation:** it is the
-fair-split version of the surveillance-pricing machinery three beats up — same
-capability (a firm that models your utility function and prices/recommends
-against it), opposite governance (surplus shared, trust demonstrated, alignment
-via diversification rather than extraction). It is also the softest-possible
-realization of the lineage-welfare correction: no coercion, no central authority,
-just a market actor that profits by helping people want-and-get what their own
-longer-horizon selves would endorse. **Honest tensions to carry (do not bury):**
-(a) manipulation-adjacency — "suggests purchases for profit" is one governance
-slip from the exploitative thing it claims to replace; the guards are the
-demonstrable-trust requirement and the diversification that only pays off on
-*real* well-being; (b) the religious-form claim is the register ceiling of this
-beat — state it as Matthew's, calibrated; (c) it concentrates exactly the
-counsel the rest of the Movement wants democratized, so it must be paired with
-the plurality guard (many such firms, legible, competing) or it recreates the
-moat. **Cross-links:** this is also the mature form of §8's device-financing
-instrument (variable/negative payment that goes negative into profit-sharing) —
-the Omerta financing vehicle and this preference-correcting bank are the same
-instrument at two scopes; note the convergence in Appendix A.
-
 **V.3 Society around the machine.** New section, the outline's societal beats in
 one arc: research effort targets the machine; companies become obligated to use it
 and share optimizations through the socially-aware scheduler (only a slightly
@@ -743,6 +680,166 @@ argument does not depend on it. Continuing: education becomes free to anyone jud
 noisy contributions; models already serve this role where intentions are clean and
 data is available). *(His outline; [IMAGINED] with real anchors — VERIFY Wenfeng
 transcript, tinygrad/DAO governance examples. ⟨indirect⟩)*
+
+**V.3b The trustworthy firm — deploying preference-knowing intelligence without
+eroding freedom (Matthew, 2026-07-30).** This is the constructive answer to the
+axiological/paternalism problem the whole Movement circles: suppose an
+intelligence knows a human's preferences — a *time series of utility functions*
+— uncertainly but better than the human knows them. The question is not whether
+that is possible but how to deploy it, against competitors, without eroding
+freedom. Matthew's proposed vehicle fits inside existing market structures and
+needs no change in governance:
+
+- **The mechanism.** A firm that profits by *correcting the market inefficiency
+  inherent in humans' misalignment with their own preferences* — the behavioral-
+  economics "internality" — all handles VERIFIED by sweep 2026-07-31: the term's
+  origin is Herrnstein, Loewenstein, Prelec & Vaughan, "Utility maximization and
+  melioration: Internalities in individual choice," *J. Behavioral Decision
+  Making* 6(3):149–185 (1993); the taxation line is Gruber & Kőszegi, "Is
+  Addiction 'Rational'?" *QJE* 116(4):1261–1303 (2001) and "Tax incidence when
+  individuals are time-inconsistent," *J. Public Econ* 88(9–10):1959–1987 (2004);
+  the welfare foundation for "knows preferences better than the human" is
+  Bernheim & Rangel, "Beyond Revealed Preference," *QJE* 124(1):51–104 (2009);
+  the state-of-the-art pricing framework is Allcott, Lockwood & Taubinsky,
+  "Regressive Sin Taxes," *QJE* 134(3):1557–1626 (2019) — monetized honestly. Concrete form: a bank deploying
+  capital whose **purchasing power varies with how the end user spends it**.
+  It lends to employers at discounted or negative rates in exchange for the right
+  to communicate with employees and suggest purchases; it profits when its
+  recommendations raise the value of its assets. Degenerate case: an ordinary
+  bank. The money-with-conditions is not novel — it is Zelizer's "special monies"
+  / earmarked money (VERIFIED: *The Social Meaning of Money*, Basic Books 1994 —
+  no DOI; the 2017 Princeton edition's DOI is NOT the original — plus the
+  article form, "The Social Meaning of Money: 'Special Monies'," *AJS*
+  95(2):342–377, 1989; the economics twin is Nichols & Zeckhauser's
+  restricted-transfers theory (AER P&P 1982) and Currie & Gahvari's cash-vs-kind
+  survey, *JEL* 46(2), 2008), company scrip,
+  and the live precedents are **employee health/transport plans and credit-card
+  rewards** (recommendation-driven spending that raises the issuer's take).
+- **Trust is the binding constraint, and it forces the religious form.** Short-
+  term-profit advertising is rightly seen as exploitative, so the firm must be
+  *demonstrably* trustworthy; the instance that maximally demonstrates what humans
+  recognize as wisdom maximizes participation. This may necessarily be **an
+  iteration on religious institutions — the only social structures humans have
+  shown themselves willing to fully abdicate decision-making power to.** Direct
+  callback to V.3's engineered-utility thread (religion as humanity's prior
+  preference engineering) and to the counsel-democratization arc: the firm is the
+  economic form of the trusted counselor, and the demonstrate-wisdom-to-earn-
+  participation loop is the four-horsemen prompt's legitimacy requirement in a
+  market wrapper.
+- **Network effects and the universal-owner alignment.** Like religions, size
+  compounds by network effect. In the limit the firm profits from the most
+  abstract notion of human well-being: a *sufficiently diversified profit
+  maximizer benefits from any increase in productivity or well-being to the
+  extent the economy reflects it, and is therefore incentivized to maintain the
+  health of the markets in turn.* This is the **universal-owner thesis** (VERIFIED — Hawley & Williams, *The
+  Rise of Fiduciary Capitalism*, U. Penn Press 2000; version trap: the 1997
+  article is "The Emergence of Fiduciary Capitalism," *CGIR* 5(4):206–213, while
+  "The Emergence of Universal Owners" is *Challenge* 43(4), 2000; nearest
+  published statement of our alignment claim: Condon, "Externalities and the
+  Common Owner," *Wash. L. Rev.* 95(1), 2020) turned from a critique
+  into the alignment mechanism: the aggregation point of §9/IV.4 (vantage,
+  channel, incentive) arriving in the household, where the incentive to
+  internalize the externality is the diversified holder's own balance sheet.
+
+**Why it lands here and not as mere business-model speculation:** it is the
+fair-split version of the surveillance-pricing machinery (IV.3 / the axiological-scope block) — same
+capability (a firm that models your utility function and prices/recommends
+against it), opposite governance (surplus shared, trust demonstrated, alignment
+via diversification rather than extraction). It is also the softest-possible
+realization of the lineage-welfare correction: no coercion, no central authority,
+just a market actor that profits by helping people want-and-get what their own
+longer-horizon selves would endorse. **Honest tensions to carry (do not bury):**
+(a) manipulation-adjacency — "suggests purchases for profit" is one governance
+slip from the exploitative thing it claims to replace; the guards are the
+demonstrable-trust requirement and the diversification that only pays off on
+*real* well-being; (b) the religious-form claim is the register ceiling of this
+beat — state it as Matthew's, calibrated; (c) it concentrates exactly the
+counsel the rest of the Movement wants democratized, so it must be paired with
+the plurality guard (many such firms, legible, competing) or it recreates the
+moat. **Cross-links:** this is also the mature form of §8's device-financing
+instrument (variable/negative payment that goes negative into profit-sharing) —
+the Omerta financing vehicle and this preference-correcting bank are the same
+instrument at two scopes; note the convergence in Appendix A. **Reading directory:**
+`~/reading/the-trustworthy-firm/` (created 2026-07-31, per Matthew: separate
+from the counsel directory; cross-linked both ways).
+
+**Sweep results (9 agents, 2026-07-31; full graph in the reading directory's
+`00-CITATION-SWEEP.json` — 196 finds, 58 landmarks, all API-verified):**
+
+- **The mechanism has running small-scale instances.** Thaler & Benartzi's Save
+  More Tomorrow (*JPE* 112(S1):S164–S187, 2004; ~2,500 cites) is the closest
+  existing form — welfare-improving defaults through the employer channel,
+  voluntarily adopted; it lacks only the profit-sharing loop. Ashraf, Karlan &
+  Yin's SEED accounts (*QJE* 121(2):635–672, 2006) are a real bank profitably
+  selling internality correction; Giné, Karlan & Zinman's CARES smoking
+  contracts (*AEJ:Applied* 2(4), 2010) likewise. The firm is these instances
+  generalized by an intelligence that can price the wedge per person.
+- **Trust-as-binding-constraint is formalized.** Gennaioli, Shleifer & Vishny,
+  "Money Doctors" (*J. Finance* 70(1):91–114, 2015): clients pay trusted
+  managers even at lower returns — the formal backbone for
+  demonstrated-wisdom-maximizes-participation. Behavioral measurements both
+  ways: algorithm aversion (Dietvorst-Simmons-Massey 2015) vs algorithm
+  appreciation (Logg-Minson-Moore 2019); egocentric advice-discounting ~70/30
+  with reputation earned slowly, lost fast (Yaniv & Kleinberger 2000).
+- **The must-answer critique, sharpened by the sweep:** competitive markets do
+  NOT spontaneously produce the correcting firm — they select its extractive
+  twin. Heidhues & Kőszegi (*AER* 100(5):2279–2303, 2010): credit markets
+  equilibrium-select contracts exploiting naïve present bias. Gabaix & Laibson's
+  shrouded attributes (*QJE* 121(2):505–540, 2006): competition fails to unwind
+  exploitation. DellaVigna & Malmendier (*QJE* 119(2), 2004; *AER* 96(3), 2006)
+  measured it (gyms). Bryan-Karlan-Nelson (*Ann. Rev. Econ* 2:671–698, 2010)
+  name the undersupply puzzle for commitment devices. So the paper must say
+  WHAT CHANGED: machine intelligence collapses the cost of (a) knowing the
+  per-person wedge and (b) demonstrating wisdom legibly — the ingredients of
+  the correcting equilibrium that were previously too expensive. This turns
+  the critique into the paper's own mechanism, same move as the Hayek section.
+- **The nudge-efficacy fight is a load-bearing honest flag:** Mertens et al.
+  (*PNAS* 119(1), 2022) report d≈0.43 for choice architecture; Maier et al.
+  (*PNAS* 2022) find ~0 after publication-bias correction. The firm's profit
+  pool depends on recommendations moving behavior — cite both, and note the
+  firm's advantage over one-shot nudges: repeated interaction with measured
+  outcomes (its recommendations are falsifiable against its own asset values).
+- **The who-nudges-the-nudgers critique is HAYEKIAN, closing the paper's loop:**
+  Rizzo & Whitman's knowledge-problem objection to paternalism (*Escaping
+  Paternalism*, CUP 2020; earlier law-review forms verified via SSRN only) says
+  the planner cannot know your preferences — the exact claim the Hayek-criterion
+  section addresses. Sunstein's "Hayekian behavioral economics" + Sugden's reply
+  + the "Come on, man!" rejoinder (*BPP* 7(1), 2023) show the field arguing
+  precisely our question. Autonomy objection: Hausman & Welch (*J. Political
+  Philosophy* 18(1):123–136, 2010). Insider recantation: Chater & Loewenstein's
+  i-frame/s-frame (*BBS* 46, 2023) — individual-level nudging served corporate
+  interests; our firm answers by making the corrector's incentive structural.
+- **Universal-owner honest flags (cite or the claim dies in review):** the
+  thesis is a mechanism argument, not observed behavior — actual universal
+  owners practice "feeble stewardship" (Fichtner-Heemskerk 2020); Bebchuk &
+  Hirst give the agency-cost reason index funds underinvest in it; the
+  anticompetitive form (Azar-Schmalz-Tecu, *J. Finance* 73(4):1513–1565, 2018)
+  is contested head-on by Dennis-Gerardi-Schenone (*J. Finance* 2022) with
+  Lewellen-Lowry's broad null; Backus-Conlon-Sinkinson (*AEJ:Micro* 13(3),
+  2021) measure implied rival-profit internalization rising ~700% since 1980.
+  Net: ownership structure moves objectives in theory and measurement, but
+  stewardship needs the intelligence this paper supplies — another
+  what-changed argument, not an appeal to current practice.
+- **The advice channel's corruption, measured (grounds the manipulation
+  tension):** Mullainathan-Noeth-Schoar audit study (NBER w17929, 2012 — never
+  journal-published, cite as WP): advisers reinforce biases that generate fees;
+  Egan-Matvos-Seru (*JPE* 127(1):233–295, 2019): 7% of advisers have misconduct
+  records. Credit-card rewards, the named precedent, are REGRESSIVE —
+  Agarwal-Presbitero-Silva-Wix (FEDS 2023): sophisticated cardholders profit at
+  naïve cardholders' expense, cross-subsidized regardless of income. So the
+  named precedents currently run extractive — strengthening both the need for
+  the trust mechanism and the honest tension.
+- **Formal advice theory for the design section:** Crawford-Sobel (*Econometrica*
+  50(6), 1982) cheap talk; Ottaviani-Sørensen professional advice + the
+  reputation-distortion result (wisdom-signaling can itself corrupt advice —
+  design constraint on the demonstrate-wisdom loop); Aghion-Tirole real
+  authority (*JPE* 105(1), 1997) — suggestion-rights become real control, which
+  is BOTH how the mechanism works and the freedom-erosion caution stated
+  formally; Kamenica-Gentzkow Bayesian persuasion (*AER* 101(6), 2011) as the
+  information-design toolkit. 2023–26 AI-advisor economics is thin (S2 API
+  throttling limited coverage — only Kleinberg-Mullainathan-Raghavan surfaced);
+  worth a dedicated later pass. Robo-advising empirics: D'Acunto-Prabhala-Rossi
+  (*RFS* 2019).
 
 **V.4 The endgame: every device, any intelligence.** Once publicly available
 intelligence passes the competence bar and data is openly available, anyone's
