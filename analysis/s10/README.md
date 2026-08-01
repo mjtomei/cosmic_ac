@@ -65,3 +65,34 @@ confidence, word count and segment text.
 **Also noted for the multi-legislature campaign:** the API has a *Bulk*
 endpoint at a 20% discount that accepts per-item `id` fields for row
 mapping — the right tool if we ever return to API-based scanning.
+
+## Full tail adjudication (2026-08-01): all 643 Opus-screened segments
+
+Every segment scoring >=50 on the corpus-wide Opus screen was submitted to
+Pangram individually (one RTF per segment, web app, no API credit spent).
+
+**Verdicts: 461 AI, 115 Mixed, 67 Human — 89.6% confirmed AI-or-Mixed.**
+
+Screen precision rises monotonically with the Opus score, which is what a
+well-behaved stratifier should do:
+
+| Opus band | n | confirmed AI/Mixed |
+|---|---|---|
+| 90–100 | 7 | 100% |
+| 80–89 | 94 | 99% |
+| 70–79 | 185 | 94% |
+| 60–69 | 120 | 88% |
+| 50–59 | 237 | 83% |
+
+**Pre-LLM control, adversarial version:** the three pre-2023 segments the
+screen rated most AI-like (2019-11-28 Crossman, 2020-12-08, and 2022-11-24
+McKee — six days before ChatGPT's public launch) all came back **Human**.
+Combined with the 240 randomly sampled pre-2023 segments, Pangram's measured
+in-domain specificity is now **243/243**, tested both randomly and at the
+screen's most adversarial pre-LLM cases.
+
+**Floor, not estimate:** 576 confirmed segments over 37,803 scoreable is a
+**1.5% hard floor** for the corpus as a whole. It is far below the 8.3%
+random-sample prevalence because the screen only surfaced the top ~1.7% of
+segments; the random-sample estimate remains the prevalence figure, and this
+is the audited, individually-verified subset beneath it.
