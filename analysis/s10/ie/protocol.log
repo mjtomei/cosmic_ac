@@ -1,0 +1,22 @@
+[Dail Eireann] seed=1426633227  pre 36,680,118w  post 18,657,027w
+PRIMARY mean logFC = +0.0647 | placebo median -0.1592 p99 -0.0690 max -0.0240 | p = 0/1000 (<0.001)
+  sweep <1/100k: n=271 ratio=1.126 p=0.207
+  sweep <2/100k: n=309 ratio=1.114 p=0.146
+  sweep <5/100k: n=350 ratio=1.103 p=0.083
+  sweep <10/100k: n=366 ratio=1.082 p=0.047
+  sweep <20/100k: n=380 ratio=1.051 p=0.069
+  sweep <50/100k: n=393 ratio=1.035 p=0.136
+  formal-register control ratio = 0.990 (expect ~1)
+  clustered bootstrap 95% CI (full list ratio): [1.038, 1.047]
+wrote ie/ie_protocol.json
+--- FORMALITY ---
+dispersion floor = instrument median: 0.203 of 488 sitting dates
+[Dail Eireann] pre 36,680,118w (long 13,990,509 / short 2,247,920), post 18,657,026w
+formality control: 201 words (instrument 407); overlap with instrument: 0
+  top formality markers: dirty, terribly, visual, drove, toilet, respondents, bread, inserts, peers, idir, bheith, absorb
+
+  AI instrument      mean logFC = +0.0647
+  formality control  mean logFC = +0.0131
+  GAP (instrument - formality)  = +0.0516
+  -> the instrument leads the formality axis
+wrote dail_eireann_formality.json

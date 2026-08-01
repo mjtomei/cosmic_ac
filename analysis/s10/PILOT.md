@@ -598,3 +598,48 @@ carries the larger offset while showing the smaller effect, so the artifact
 runs opposite to the observed difference. The ~3.6x NB/UK ratio is real.
 (The p-values were never exposed to this: placebos are frequency-matched to
 the instrument, so they carry the same offset.)
+
+## Ireland (Dáil Éireann) replication + the chamber-size hypothesis FAILS
+
+Corpus: 748 sittings via the Oireachtas API (Akoma Ntoso XML), 251k scoreable
+segments, 56.2M words, 394 speakers; Irish-language segments (1.0%) excluded,
+leaving 55.5M English words. Frozen protocol, unmodified.
+
+- **Replicates: mean logFC = +0.0647, p < 0.001** (0/1,000 placebos; placebo
+  median −0.159, max −0.024).
+- Formal-register control **0.990**; data-defined formality gap **+0.0516**;
+  clustered bootstrap CI **[1.038, 1.047]**, excludes 1.0.
+- Pooled-ratio sweep mostly non-significant (p 0.05–0.21), same
+  broad-but-shallow shape as the UK.
+
+**Fisher over the two confirmatory corpora: X² = 27.6, df = 4,
+p = 1.5 × 10⁻⁵**, with NB reported separately as discovery.
+
+### The size hypothesis is not supported — and this matters
+
+| chamber | seats | primary |
+|---|---|---|
+| New Brunswick | 49 | +0.3791 |
+| **Dáil Éireann** | **160** | **+0.0647** |
+| UK Commons | 650 | +0.1155 |
+| UK Commons (within-speaker) | 650 | +0.0776 |
+
+Ireland sits *below* the UK despite being a quarter its size, so effect size
+is **not monotone in chamber size**. Ireland was chosen precisely to test
+this (mid-size chamber, UK-scale corpus, separating seats from corpus
+volume) and it falsifies the ordering.
+
+What the data actually support: **NB is a large outlier; the two
+confirmatory chambers agree closely with each other** — Ireland +0.065 and
+UK within-speaker +0.078 (the like-for-like comparison, since both chambers
+held elections in the post-window and the UK full-corpus figure carries
+compositional inflation).
+
+**Consequence for the paper, stated plainly.** NB's magnitude should be
+treated as **discovery-inflated and quoted as an upper bound**, not as the
+typical effect. The corpus was selected *because* a signal was visible in it
+(the Bill Oliver clip), which selects on the outcome even though the
+instrument and protocol are external and frozen. **The replicable effect
+size is ~+0.06 to +0.08 mean logFC**, established on two independent
+chambers and 127M words. The claim the study can defend is that the shift is
+real, detectable, and consistent across parliaments — not that it is large.
