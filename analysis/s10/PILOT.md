@@ -469,3 +469,38 @@ point; their UK written-statement series is complementary to a UK
 spoken-debate replication under our frozen protocol
 (`replication_protocol.md`). Side study S15 (staff-change authorship
 drift) is registered in `studies-and-work-log.md`.
+
+## UK replication result (2026-08-01, protocol v1.0, `uk/uk_protocol.json`)
+
+Corpus: House of Commons via ParlParse, 1,137 sitting dates, **47.2M pre-words
+(2018–2022) / 24.2M post-words (2024–2026)**, 2023 excluded per protocol.
+Instrument, windows, statistic, placebo construction and RNG seeding all
+fixed in `run_protocol.py` before the data was touched.
+
+- **PRIMARY replicates: mean logFC = +0.1155, p < 0.001** (0 of 1,000
+  frequency-matched placebos reached it; every placebo draw was *negative*,
+  median −0.141, max −0.008).
+- **Formal-register control = 0.998** — as close to the null expectation as
+  the measurement can get; the instrument is not picking up formality drift.
+- **Speech-clustered bootstrap CI on the full-list pooled ratio:
+  [1.023, 1.031]** — excludes 1.0, so the volume shift is real but *tiny*.
+- **Secondary pooled-ratio sweep is NOT significant** at any threshold
+  (ratios 1.07–1.17, p = 0.11–0.24), unlike NB (1.58, p = 0.001).
+
+**Reading.** The UK shift is *broad but shallow*: an equal-weight statistic
+(one vote per word) detects a consistent small rise across hundreds of style
+words at p < 0.001, while frequency-weighted volume barely moves. In a
+49-seat chamber a few heavy adopters move the whole corpus; in a 650-seat
+Commons they cannot. Effect size is ~3× smaller than NB
+(+0.116 vs +0.379) and this should be reported plainly, not smoothed over.
+
+**Confound to resolve before publication:** the UK post-period spans the
+July 2024 general election, which replaced over half the Commons — so the
+pre/post contrast is partly *different people*, unlike NB where the same
+members span the boundary. The fix is a within-speaker restriction to MPs
+present in both periods (`person_id` is carried in the segment records for
+exactly this purpose).
+
+**Combination.** Fisher over NB (discovery, p < 10⁻⁵) and UK (confirmatory,
+p < 10⁻³): X² = 36.8, df = 4, **p ≈ 1.9 × 10⁻⁷** — reported with NB
+explicitly labelled as the discovery corpus, per protocol.

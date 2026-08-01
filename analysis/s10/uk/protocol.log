@@ -7,3 +7,5 @@ PRIMARY mean logFC = +0.1155 | placebo median -0.1410 p99 -0.0511 max -0.0078 | 
   sweep <20/100k: n=383 ratio=1.081 p=0.130
   sweep <50/100k: n=394 ratio=1.068 p=0.111
   formal-register control ratio = 0.998 (expect ~1)
+  clustered bootstrap 95% CI (full list ratio): [1.023, 1.031]
+wrote uk/uk_protocol.json
