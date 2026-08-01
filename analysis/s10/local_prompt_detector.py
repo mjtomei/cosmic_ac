@@ -36,6 +36,20 @@ def main():
         items = items[:limit]
 
     is_oss = "gpt-oss" in model_id
+    # OOM preflight: on unified memory a GPU over-allocation kills the BOX.
+    # Estimate load size from the checkpoint; MXFP4 dequantized to bf16 is
+    # ~4x the file size. Refuse anything projected past 90 GiB.
+    from pathlib import Path
+    from huggingface_hub import snapshot_download
+    snap = Path(snapshot_download(model_id, allow_patterns=["*.safetensors"]))
+    ckpt_gib = sum(f.stat().st_size for f in snap.glob("*.safetensors")) / 2**30
+    factor = 4.0 if is_oss else 1.0   # assume MXFP4 dequant unless proven native
+    projected = ckpt_gib * factor
+    if projected > 90:
+        sys.exit(f"REFUSING LOAD: {model_id} checkpoint {ckpt_gib:.0f} GiB x "
+                 f"dequant factor {factor} = ~{projected:.0f} GiB projected "
+                 f"> 90 GiB budget. Use a smaller model or a native-MXFP4 "
+                 f"runtime.")
     tok = AutoTokenizer.from_pretrained(model_id)
     if tok.pad_token is None:
         tok.pad_token = tok.eos_token
