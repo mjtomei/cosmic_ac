@@ -74,3 +74,26 @@ results are reported. Corpus inclusion rule: any legislature whose
 official verbatim record spans at least two pre years and one post year
 and clears the pipeline's extraction QA; no corpus may be dropped after
 its p is known.
+
+---
+
+## Clarification 1 (2026-08-01): common pre-window
+
+The v1.0 text says "use everything the source provides; do not select
+years". In practice the sources differ enormously in depth (ParlParse
+reaches 1918; ourcommons.ca reaches 2015; NB's digitised record starts
+2018), so "everything available" would give each chamber a different
+pre-period and make cross-corpus effect sizes non-comparable.
+
+**Practice, applied uniformly and retroactively to every corpus:**
+
+  pre  = sittings from 2018-01-01 to 2022-12-31
+  post = sittings from 2024-01-01 onward
+  2023 excluded (transition year, unchanged)
+
+The 2018 floor is set by New Brunswick, the shallowest source. Corpora with
+deeper archives (UK, Canada) are truncated to it rather than being allowed a
+longer pre-period. This is a deviation from the literal v1.0 wording and is
+recorded here rather than silently applied; it does not affect any
+already-reported result, because NB, Ireland and the UK were all downloaded
+within this window from the outset.
