@@ -18,5 +18,6 @@ Machine intelligence is inoculated against that problem, and so exposes it.
 | `analysis/` | Data, models, and scripts. Every novel number has an artifact here with its sources and assumptions. |
 | `dataflow-vs-heterogeneous-architecture.md` | Companion technical report behind §2. |
 | `plans/` | Per-study session plans. |
+| `reading/` | The three literature collections behind the argument — 219 papers, tiered, with recommended reading orders. |
 
 Build: `bash build/build.sh` (needs `matplotlib markdown weasyprint`).
