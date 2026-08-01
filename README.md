@@ -11,7 +11,6 @@ Machine intelligence is inoculated against that problem, and so exposes it.
 | | |
 |---|---|
 | `the-performance-commons.md` / `-2col.pdf` | The paper. Nine sections plus appendix; figures and tables built by `build/build.sh`. |
-| `HOW-THIS-WAS-MADE.md` | The rhetorical stance, stated; and the working method — including where it failed. |
 | `outline-cosmic-ac.md` | Working outline for the wider successor, *Towards the Cosmic AC* — the compute commons argued at societal scope. |
 | `towards-the-cosmic-ac-outline.docx` / `-v2.docx` | Structural outlines for the same, drafted in parallel with ChatGPT. |
 | `drafts/` | Prose drafts of sections not yet placed. |
