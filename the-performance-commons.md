@@ -52,6 +52,8 @@ The scoping already has one strong answer on record: a composed, programmable ar
 
 *Figure 1. The canonical flexibility–efficiency trade-off is largely an artifact of finite programmer effort. The shaded band is the effort gap — efficiency forfeited because extracting a reconfigurable substrate's potential is too laborious to afford per workload. It is widest exactly where reconfigurable hardware sits and smallest at the custom end (little left to program — though even a systolic-array ASIC takes real effort to feed); at the general-purpose end, the distance that remains at full effort is architectural — the fabric tax — not forgone effort. A shared / AI optimization commons reclaims the band; what remains is the intrinsic physical fabric tax (CGRA ~2–3× energy by estimate, FPGA ~9–35× area). Substrate-to-ASIC ratios on the realizable frontier are anchored to measured values; the finite-effort curve and the effort axis are illustrative.*
 
+The same gap now ships in commodity silicon. Every current laptop and desktop SoC carries a neural engine — 16 TOPS on a mainstream business-desktop APU, up to 50 on a current mobile part (AMD product specifications, 2026) — and almost none of it is reachable by arbitrary code. Apple publishes no low-level interface to its Neural Engine, and its own MLX framework exposes only CPU and GPU backends; Intel's is addressable through OpenVINO alone, and its NPU supported only static model shapes, so an ordinary language-model decode loop would not run on it without rewriting the network (Sridhar et al., NITRO, arXiv:2412.11053); AMD's requires ONNX Runtime with a vendor execution provider and mandatory quantization. Point frontier language models at the problem of writing kernels for one directly and they reach roughly a tenth of the achievable vectorization, in a domain whose authors note has "smaller and more fragmented developer communities" than GPU programming (Kalade & Schelle, NPUEval, arXiv:2507.14403, 2025); measured NPU inference frequently loses outright to the CPU beside it, trailing by up to 1.6× on prefill at half again the energy (Li, Qi & Chen, arXiv:2605.27435, 2026). The capability is designed, fabricated, and paid for in hundreds of millions of units; what is missing is the toolchain — which is to say, the effort.
+
 One more turn of the screw closes the loop with the design conclusion. Even *unlimited design effort* — machine intelligence spinning up bespoke ASICs cheaply — does not argue for ASICs everywhere, because an ASIC is fixed at tape-out and real workloads are not: the adaptability an ASIC structurally lacks is exactly what its efficiency edge over a CGRA costs. So unlimited effort, applied honestly, does not push the optimum toward *more custom* silicon; it pushes it toward **reconfigurable** silicon that an oracle-grade commons can drive to within a small factor of custom while remaining able to change what it computes. That is the analytical core of "more reconfigurable, less programmable."
 
 ## 2. Continuous optimization is an under-provided public good
@@ -138,6 +140,8 @@ What makes solving it worth the effort is the demand side: cheap, unreliable com
 And the crunch has arrived to sharpen the point. AI demand now consumes an estimated 70% of the world's memory output; conventional DRAM contract prices rose 58–63% in a single quarter of 2026 and DDR5 roughly doubled year over year (TrendForce; Counterpoint, 2026); PC makers are passing through 20%+ price increases, Apple repriced its entire hardware line mid-2026, and the memory manufacturers themselves warn the shortage runs into 2027 and beyond. Every part of that raises the replacement cost of a FLOP — and with it the value of the FLOPs already bought, powered, and sitting idle. The idle fleet was always the cheap supply; the crunch is making it the strategic one.
 
 Prior attempts to build exactly this market — Golem, iExec, and BOINC — stalled on human friction, consensus overhead, and extractive token economics (BOINC's volunteer base has fallen from ~1M to ~200K in public tracker counts for reasons its architect calls "likely inherent in the model" — Anderson, J. Grid Computing 2020, which itself reports ~700K active devices; the token marketplaces' stall is observed, not yet studied); the wager of this paper is that machine intelligence is what removes those barriers. The author's own attempt, Omerta, is a work in progress, reported honestly in Appendix A: the networking substrate is built and tested, the end-to-end compute loop is not yet closed, and the hardest remaining parts are coordination and integration, not feasibility.
+
+There is a better-shaped substrate than the household, and its absence from the market is the instructive part. Business fleets are present, mains-powered, centrally administered, and committable by a single decision: one policy change enrols ten thousand machines where a consumer federation needs ten thousand separate consents. US commercial buildings alone hold roughly 112 million PCs (author's computation from the EIA's 2018 Commercial Buildings Energy Consumption Survey public-use microdata, survey-weighted). Yet none of that capacity is sellable today, because the marketplaces that do buy idle compute exclude the hardware categorically — Salad states it "does not currently support Intel dedicated GPUs, or Intel integrated GPUs" and requires eight gigabytes of discrete video memory; Vast.ai offers no CPU-only listing at all (vendor documentation, fetched August 2026). The resource is not withheld by physics, or by price, or even by consent. It is stranded because no runtime targets it, no marketplace lists it, and no buyer bids — which is what a coordination failure looks like when you go looking for its market.
 
 ![Machine demand has no floor — it extends into the range only idle compute can serve](the-performance-commons-figure-3.png)
 
@@ -335,6 +339,7 @@ The distance between the performance we get and the performance the silicon allo
 - Jouppi, N. P., et al. (2017). In-Datacenter Performance Analysis of a Tensor Processing Unit. *ISCA 2017*.
 - Jouppi, N. P., et al. (2021). Ten Lessons From Three Generations Shaped Google's TPUv4i. *ISCA 2021*.
 - Jouppi, N. P., et al. (2023). TPU v4: An Optically Reconfigurable Supercomputer for Machine Learning with Hardware Support for Embeddings. *ISCA 2023*.
+- Kalade, S., & Schelle, G. (2025). NPUEval: Optimizing NPU Kernels with LLMs and Open Source Compilers. arXiv:2507.14403
 - Karikó, K., Buckstein, M., Ni, H., & Weissman, D. (2005). Suppression of RNA Recognition by Toll-like Receptors: The Impact of Nucleoside Modification and the Evolutionary Origin of RNA. *Immunity, 23*.
 - Kim, E., Garg, A., Peng, K., Garg, N., & Kleinberg, J. (2025). Correlated Errors in Large Language Models. *ICML 2025*. arXiv:2506.07962
 - Klein, G., et al. (2009). seL4: Formal Verification of an OS Kernel. *SOSP 2009*.
@@ -355,6 +360,7 @@ The distance between the performance we get and the performance the silicon allo
 - Lehman, J., et al. (2022). Evolution through Large Models. arXiv:2206.08896
 - Leiserson, C. E., Thompson, N. C., Emer, J. S., Kuszmaul, B. C., Lampson, B. W., Sanchez, D., & Schardl, T. B. (2020). There's Plenty of Room at the Top: What Will Drive Computer Performance After Moore's Law? *Science, 368(6495)*.
 - Lerner, J., & Tirole, J. (2002). Some Simple Economics of Open Source. *Journal of Industrial Economics, 50(2)*.
+- Li, P., Qi, J., & Chen, Q. (2026). When NPUs Are Not Always Faster: A Stage-Level Analysis of Mobile LLM Inference. arXiv:2605.27435
 - Lidin, J., et al. (2026). Covenant-72B: Pre-Training a 72B LLM with Trustless Peers Over-the-Internet. arXiv:2603.08163
 - Lie, S. (2023). Cerebras Architecture Deep Dive: First Look Inside the Hardware/Software Co-Design for Deep Learning. *IEEE Micro, 43(3)*.
 - LinkedIn (2025). Job-postings data on "storyteller" roles, as reported in *The Wall Street Journal*, December 2025. wsj.com
@@ -392,6 +398,7 @@ The distance between the performance we get and the performance the silicon allo
 - Stanford Institute for Human-Centered AI (2025, 2026). Artificial Intelligence Index Reports 2025 and 2026. hai.stanford.edu
 - Sullivan, J. (2022). Remarks at the Special Competitive Studies Project Global Emerging Technologies Summit, September 16, 2022. *The White House*.
 - Synopsys (2020). DSO.ai launch: Synopsys Advances State-of-the-Art in Electronic Design with Revolutionary Artificial Intelligence Technology. news.synopsys.com
+- Sridhar, A., et al. (2024). NITRO: LLM Inference on Intel Laptop NPUs. arXiv:2412.11053
 - Terry, S. J. (2023). The Macro Impact of Short-Termism. *Econometrica, 91(5)*.
 - Thiel, P., & Masters, B. (2014). Zero to One: Notes on Startups, or How to Build the Future. *Crown Business*.
 - Thompson, N. C., & Spanuth, S. (2021). The Decline of Computers as a General Purpose Technology. *Communications of the ACM, 64(3)*.
@@ -400,6 +407,7 @@ The distance between the performance we get and the performance the silicon allo
 - Tomei, M. (2026). Dataflow vs. an Optimal Heterogeneous Architecture. Companion technical report to this paper.
 - Tomei, M. (2026). Open-organizations companion work. github.com/mjtomei/project_manager
 - TrendForce (2026). AI Server Demand to Drive Memory Contract Price Increases in 2Q26. trendforce.com
+- U.S. Energy Information Administration (2018). Commercial Buildings Energy Consumption Survey (CBECS), public-use microdata. eia.gov/consumption/commercial/data/2018/
 - Venn, M. (2024). Tiny Tapeout: A Shared Silicon Tapeout Platform Accessible to Everyone. *IEEE Solid-State Circuits Magazine, 16(2)*.
 - Varian, H. R. (2004). System Reliability and Free Riding. In *Economics of Information Security*. Springer.
 - von Hippel, E., & von Krogh, G. (2003). Open Source Software and the "Private-Collective" Innovation Model. *Organization Science, 14(2)*.
