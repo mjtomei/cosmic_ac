@@ -212,6 +212,86 @@ egress, the utilisation discount on remotely-accessed desktops, and redundancy
 overhead (volunteer-computing practice runs ~2× for unreliable hosts). The
 18–73× energy margin is what these have to eat, and they will eat a lot of it.
 
+## The device specs, answered (sweep 2026-08-02) — and two surprises
+
+Earlier the "optimised hardware" scenario had a justified budget with **no specs
+on the other side of it**. Now it has specs, and they change the answer.
+
+### The baseline was wrong: a business PC is not an M4
+
+Our fleet model assumed **2.9 FP32 TFLOPS/device** — a *measured Apple M4*, on a
+fleet that is ~91% not Apple. A standard business desktop has integrated
+graphics only:
+
+| Baseline | FP32 | Basis |
+|---|---|---|
+| Intel UHD 770 (typical i5/i7 business tower) | **~0.79 TFLOPS** | derived, 32 EU × 8 × 2 × 1.55 GHz |
+| Intel Arc iGPU (Core Ultra 7 155H) | ~4.6 TFLOPS | derived, 128 EU × 8 × 2 × 2.25 GHz |
+| AMD Radeon 780M | 4.15 TFLOPS (8.29 only on dual-issue-friendly code) | vendor peak |
+| Apple M4 (our old assumption) | 2.9 TFLOPS | **sustained-measured** |
+
+**The typical business desktop is plausibly ~0.79 TFLOPS — roughly a quarter of
+what we assumed.** This is also the weakest-verified number in the whole model:
+Intel blocks automated fetching, so the figure is derived from architecture
+arithmetic, and the fleet multiplier swings 7×–39× depending on whether the mix
+is UHD-770-era or Arc-era. **Pending the installed-mix sweep, the 0.5 TFLOPS
+sensitivity row is the honest planning figure, not 2.9.**
+
+### Surprise 1 — the Apple ladder is flat in $/TFLOPS
+
+| Config | Price | FP32 | $/TFLOPS |
+|---|---|---|---|
+| Mac mini M4 | $799 | 2.9 | $276 |
+| mini M4 Pro (20c) | $1,799 | ~5.8 | $310 |
+| Studio M4 Max (40c) | $3,499 | ~11.6 | $302 |
+| Studio M3 Ultra (80c) | $6,799 | ~21 | $324 |
+
+Buying up the Apple line buys **density, memory capacity and bandwidth — not
+cheaper FLOPS**. For a compute-resale motive, *N* minis beat one Studio; the
+Studio wins only when a single job needs 96–512GB of unified memory. (All rungs
+above the base M4 are our linear core-scaling of the one measured point, ±20%.)
+Also: Apple has raised prices since launch — the mini is **$799 now versus the
+$599 MSRP** our `cost_model.py` still assumes.
+
+### Surprise 2 — a discrete GPU is ~16× better $/TFLOPS, and power becomes the constraint
+
+| Card | Price | FP32 | $/TFLOPS | Power |
+|---|---|---|---|---|
+| RTX A2000 12GB | ~$525 | 8.0 | $66 | **70 W, fits SFF** |
+| RTX 5070 | $549 | 30.9 | $18 | 250 W |
+| RTX 5080 | $999 | 56.3 | $18 | 360 W |
+| RTX 5090 | $1,999 | 104.8 | $19 | 575 W |
+
+**So the profit-optimising business does not buy a bigger Mac — it buys an
+ordinary business desktop and adds a GPU.** That is a 7×–39× capability
+multiplier for ~$549, well inside the justified budget, and $/TFLOPS is
+near-linear across the GPU range (no bargain tier, no cliff).
+
+**But the binding constraint moves from price to power**, which our earlier
+"energy is 1–5% of value" finding no longer survives:
+
+| Configuration | Always-on energy |
+|---|---|
+| Business PC, iGPU only (65 W) | $79/yr |
+| + RTX A2000 (135 W) | $163/yr |
+| + RTX 5070 (315 W) | $381/yr |
+| + RTX 5090 (640 W) | **$773/yr** |
+
+Against a justified budget of $355–1,419/yr, **an RTX 5090 burns most of the
+revenue it was bought with.** The efficient rung is the low-profile 70 W
+professional card: it fits existing small-form-factor business chassis without a
+PSU upgrade, and costs $163/yr to run. Anything above ~250 W turns this from an
+idle-capacity story into a power-purchasing story, which is a different business.
+
+### The precision trap, confirmed in vendor text
+
+NVIDIA's own newsroom pairs "$549" with **"988 AI TOPS"** for a card whose FP32
+is 30.9 TFLOPS — a **32× gap**, because AI TOPS is sparse FP4/INT8. The A2000
+datasheet prints 8.0 FP32 / 15.6 RT / 63.9 Tensor in one column. Any comparison
+that crosses those columns is meaningless. *This cuts both ways: for the
+fungible-compute denomination (below), the low-precision figures are the
+relevant ones and FP32 is the wrong metric.*
+
 ## Method, and a correction to the headline (2026-08-02)
 
 **How the compute was sized.** Device-hours (devices × hours × idle fraction)
