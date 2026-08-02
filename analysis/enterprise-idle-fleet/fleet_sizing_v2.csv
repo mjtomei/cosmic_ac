@@ -1,0 +1,5 @@
+scenario,device_hours_yr,value_lo_usd,value_hi_usd
+v1 Tier A (after-hours only),488681155200.0,24434057760.0,97736231040.0
+v1 Tier A+B (after-hours only),773177923200.0,38658896160.0,154635584640.0
+v2 Tier A (powered x unused cycles),498238840800.0,24911942040.0,99647768160.0
+v2 Tier A+B (powered x unused cycles),678977964000.0,33948898200.0,135795592800.0

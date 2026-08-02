@@ -212,6 +212,69 @@ egress, the utilisation discount on remotely-accessed desktops, and redundancy
 overhead (volunteer-computing practice runs ~2× for unreliable hosts). The
 18–73× energy margin is what these have to eat, and they will eat a lot of it.
 
+## Two corrections to the sizing (Matthew, 2026-08-02) — `fleet_sizing_v2.py`
+
+### (a) Daytime sharing: right in principle, small in effect
+
+"Work-active" is not "CPU-saturated" — someone editing a document uses a few
+percent of a modern machine, so availability should be *(hours powered) ×
+(fraction of cycles unused)*, not *(hours nobody is at the keyboard)*. This is
+what cycle-stealing has always harvested; HTCondor yields to the interactive
+user rather than waiting for them to leave.
+
+Recomputing on measured idleness (97.9% across a managed institutional fleet —
+Domingues et al., ICPPW 2005; we use a conservative 90%, and reserve a further
+10% of cycles so the user never contends) moves Tier A from **489B to 498B**
+device-hours/yr — **1.02×**. Tier A+B actually *falls* slightly, because v1 gave
+at-home laptops a generous 85% idle share against v2's explicit 16 h/day powered
+window.
+
+**So the honest finding is that this correction buys defensibility, not
+magnitude.** The after-hours model already captured ~76% of the week; the daytime
+cycles are real but they are a small addition to a number that was already
+mostly idle time. What improves is the *basis*: measured CPU idleness rather than
+an assumption about keyboard presence. Sensitivity across 85–97.9% idleness spans
+641–739B device-hours — a ±7% band, far narrower than the price or
+throughput assumptions.
+
+### (b) Hardware chosen with resale in mind — this is the large effect
+
+Today a business specifies a machine for one employee's workload, because
+surplus capacity is pure waste. If surplus earns revenue, the optimum moves up.
+Converting available hours into a justified up-front budget at the depreciation
+life stated in Dell's own 10-K (3–5 years, midpoint 4):
+
+| Device | Available h/yr | Revenue/yr | Justified extra spend over 4y |
+|---|---|---|---|
+| Desktop (always on) | 7,096 | $355–1,419 | **$1,419–5,676** |
+| Laptop (16 h/day) | 4,730 | $237–946 | **$946–3,784** |
+
+**Against a typical business PC at $600–1,500, the idle revenue is of the same
+order as the entire device, and at the upper end several times it.** That does
+not merely shift the specification decision — it removes the employee's workload
+as the binding constraint on it. The machine can be specified for what it can
+*sell*, with the employee's needs met incidentally.
+
+This is the demand-side twin of the paper's existing financing instrument
+(§8 / Omerta: a device that sells its own time, with the builder underwriting the
+risk). The supply side says the buyer can be lent the hardware against its future
+earnings; this says the buyer would rationally want a *bigger* machine than they
+need. Same instrument, both ends.
+
+Capacity if specification rises by multiplier M (a capacity statement, not a
+revenue one): M=2 → 1,358B device-hour-equivalents/yr; M=3 → 2,037B; M=5 →
+3,395B. Business PCs with integrated graphics sit at the worst end of
+compute-per-dollar, so M is bounded well above 1 — but we do not assert a value,
+because $/TFLOPS at the margin is a moving figure we did not verify.
+
+**The price caveat that governs all of this.** Value does *not* scale with M.
+These $/device-hour references are current spot-like prices for scarce compute;
+adding hundreds of billions of device-hours would move down the demand curve, and
+the equilibrium price would fall. The paper's own §4 answer applies — machine
+demand has no floor, because there is always a lower-value next-best task — but
+that argument caps how much revenue a supply expansion of this size can claim.
+**Treat the dollar figures as an upper bound at today's prices, not a forecast.**
+
 ## What supports the idea
 
 | Fact | Number | Source |
