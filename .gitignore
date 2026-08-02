@@ -32,3 +32,7 @@ analysis/s10/uk/xml/
 analysis/s10/uk/segments_uk*.jsonl
 analysis/s10/ie/xml/
 analysis/s10/ie/segments_ie*.jsonl
+analysis/s10/ca/xml/
+analysis/s10/ca/segments_ca*.jsonl
+analysis/s10/*/xml/
+analysis/s10/*/segments_*.jsonl
