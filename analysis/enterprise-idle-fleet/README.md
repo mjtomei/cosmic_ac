@@ -212,6 +212,67 @@ egress, the utilisation discount on remotely-accessed desktops, and redundancy
 overhead (volunteer-computing practice runs ~2× for unreliable hosts). The
 18–73× energy margin is what these have to eat, and they will eat a lot of it.
 
+## The total market, per-slot optimised — and a narrow profitable window
+
+Recomputed on the corrected framing (per machine slot, thresholds crossed,
+observed host rates, energy charged at commercial 13.79 c/kWh).
+
+### Per-slot economics — energy is now the binding constraint
+
+| Tier | Revenue/yr | Watts | Energy/yr | **Net/yr** |
+|---|---|---|---|---|
+| Entry dGPU (RTX 3060 class) | $245 | 235 | $284 | **−$39** |
+| Mid (RTX 3090 class) | $596 | 415 | $501 | +$94 |
+| High (RTX 4090) | $1,577 | 515 | $622 | **+$955** |
+| Top (RTX 5090) | $2,006 | 640 | $773 | **+$1,233** |
+
+*(5090 wattage verified; the others approximate and worth re-checking.)*
+
+**The entry tier is loss-making** — $245 of revenue against $284 of electricity.
+The profitable window opens only at the high end, which inverts the usual
+intuition that cheap hardware is the safe way in. Note also that a business at
+commercial rates is **the most favourable operator of this hardware**: consumer
+Salad hosts pay residential 18.11 c/kWh and clear less on the same machine.
+
+### Scenario A — retrofit the installed base (near-term reality)
+
+Laptops (47.76M) cannot take a card at all and drop out entirely. Only tower
+desktops qualify, and **the tower share of commercial desktops is unverified** —
+the single most valuable missing input in this study.
+
+| Tower share | Slots | @RTX 4090 | @RTX 5090 |
+|---|---|---|---|
+| 10% | 6.4M | $6.1bn | $7.9bn |
+| 25% | 16.0M | $15.2bn | $19.7bn |
+| 50% | 31.9M | $30.5bn | $39.4bn |
+
+### Scenario B — purpose-bought at the next refresh (ceiling)
+
+All 111.6M slots, machine specified with resale in mind:
+
+| Tier | Net market/yr |
+|---|---|
+| Entry dGPU | **−$4.3bn** |
+| Mid | $10.5bn |
+| High (4090) | $106.6bn |
+| Top (5090) | **$137.6bn** |
+
+B assumes every desk takes a high-TDP tower, which no business would do for
+laptop-first roles — read it as a ceiling, not a forecast.
+
+### The answer, stated honestly
+
+**Near-term, retrofitting: roughly $6–40bn/yr net**, depending on a tower share
+nobody has measured. **Ceiling, if the whole fleet were purpose-bought for
+resale: ~$140bn/yr net** — which lands close to the original $13–155bn range,
+but for entirely different and now-defensible reasons, and only at the top tier.
+
+Three constraints define the shape, and all three are thresholds rather than
+gradients: **the 8GB VRAM floor** below which nothing sells, **the energy floor**
+below which cheap cards lose money at commercial power, and **the chassis floor**
+that excludes every laptop and small-form-factor desktop. The market exists in
+the band between them.
+
 ## Correction: buying up DOES work — the denominator was wrong (Matthew, 2026-08-02)
 
 The v3 conclusion that "the Apple ladder is flat in $/TFLOPS so buying up is
