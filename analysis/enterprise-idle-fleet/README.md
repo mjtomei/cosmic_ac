@@ -165,6 +165,53 @@ Remaining real costs, unquantified here and needed before this is a business
 case: office HVAC penalty for rejecting the heat, IT administration, security
 review, and hardware wear. The 18–73× headroom is what those have to eat.
 
+## The total figure
+
+`fleet_sizing.py` → `fleet_sizing.csv`. **US commercial buildings only** — the
+one population with a weighted device census. Global would be several times
+larger; no fetchable global commercial installed-base figure exists, so we do
+not extrapolate.
+
+| Scenario | Devices | Idle device-hours/yr | Value at $0.05–0.20/hr | Net of energy |
+|---|---|---|---|---|
+| **S1 — no policy change** (desktops already left on) | 40.9M | 272B | **$13.6–54.4bn** | $12.9–53.7bn |
+| **S2 — Tier A, policy change** (all on-premises) | 73.4M | 489B | **$24.4–97.7bn** | $23.1–96.4bn |
+| **S3 — Tier A + B** (adds at-home laptops) | 111.6M | 773B | **$38.7–154.6bn** | $36.3–152.3bn |
+
+So the headline: **on the order of $10–50bn/yr of idle business compute is
+available with no behaviour change at all, roughly doubling to $25–100bn with a
+fleet-policy change, and reaching $40–155bn if at-home machines are enrolled** —
+in US commercial buildings alone, before any of the unmodelled costs.
+
+Energy is negligible against it: **1–5% of gross value**, which is the whole
+point — the hardware is already bought, powered, and administered.
+
+**Read the ranges, not the midpoints.** The width comes from the price
+assumption (a 4× spread between spot-like discount tiers), and the scenario
+spread comes from policy, which is the actionable variable. The *ordering* is
+robust; the absolute values are not better than one significant figure.
+
+**In raw FP32 this is 118–324 EFLOPS, nominally 1.8–4.8M H100-equivalents — and
+that comparison should be used with great care or not at all.** It counts FP32
+non-tensor throughput on machines with no tensor cores, no HBM, and no
+interconnect. For the AI workloads that make H100s valuable, effective parity is
+lower by more than an order of magnitude. The honest use of the fleet number is
+for embarrassingly-parallel and loosely-coupled work, which is exactly the class
+§4 says federates.
+
+**Sensitivity.** The per-device throughput assumption (A7) dominates everything:
+at 0.5 TFLOPS/device rather than 2.9, S2 falls from 213 to 37 EFLOPS. Since
+Apple silicon is ~9% of PC units and typical business integrated graphics sit
+well below the measured M4 figure, **the low end of that sweep is the more
+defensible planning number.** The docked-laptop share (A5) barely matters —
+sweeping 10–40% moves S2 by only $23–28bn, because desktops dominate.
+
+**What is not modelled, all of it reducing the result:** office HVAC penalty for
+rejecting the heat, IT administration, security review, hardware wear, network
+egress, the utilisation discount on remotely-accessed desktops, and redundancy
+overhead (volunteer-computing practice runs ~2× for unreliable hosts). The
+18–73× energy margin is what these have to eat, and they will eat a lot of it.
+
 ## What supports the idea
 
 | Fact | Number | Source |
