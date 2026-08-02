@@ -1,0 +1,472 @@
+{
+ "enterprise-installed-base": {
+  "findings": [
+   {
+    "claim": "US commercial buildings contain ~111.6M PCs (63.9M desktops + 47.8M laptops), plus 10.6M servers",
+    "number": "63.85M desktops; 47.76M laptops; 111.6M PCs; 10.6M servers; 5.92M buildings",
+    "source": "US EIA, 2018 CBECS public microdata (PCTERMN/LAPTPN/SERVERN x FINALWT); eia.gov/consumption/commercial/data/2018/xls/cbecs2018_final_public.csv",
+    "status": "VERIFIED-FETCHED",
+    "year": "2018",
+    "caveat": "My weighted summation of fetched microdata; EIA publishes no such table. Covers commercial BUILDINGS only (excludes factories, home offices). 2018 vintage, pre-COVID."
+   },
+   {
+    "claim": "Laptops were only 42.8% of PCs in US commercial buildings pre-COVID; the commercial base was desktop-majority",
+    "number": "42.8% laptop share of desktop+laptop stock",
+    "source": "Derived from EIA CBECS 2018 microdata (PCTERMN, LAPTPN, FINALWT); eia.gov/consumption/commercial/data/2018/xls/cbecs2018_final_public.csv",
+    "status": "VERIFIED-FETCHED",
+    "year": "2018",
+    "caveat": "My arithmetic. 2018 survey; the desktop-to-laptop shift accelerated after 2020, so this is a floor on today's laptop share."
+   },
+   {
+    "claim": "US commercial buildings hold 1.30 PCs per worker: devices outnumber the people using them",
+    "number": "1.30 PCs per worker; 85.8M workers in surveyed buildings; plus 32.2M tablets",
+    "source": "Derived from EIA CBECS 2018 microdata (PCTERMN, LAPTPN, NWKER, FINALWT); eia.gov/consumption/commercial/data/2018/xls/cbecs2018_final_public.csv",
+    "status": "VERIFIED-FETCHED",
+    "year": "2018",
+    "caveat": "My arithmetic. NWKER counts workers in the building, not FTE headcount of the owning firm."
+   },
+   {
+    "claim": "37.9% of employees at EU firms with 10+ staff were issued an employer-owned internet-connected portable device; 41.2% at firms with 250+",
+    "number": "37.89% (10+); 41.16% (250+); up from 25.85% in 2018",
+    "source": "Eurostat isoc_cimobp_use, indicator P_EMPMD2, unit PC_EMP, EU27_2020; ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_cimobp_use",
+    "status": "VERIFIED-FETCHED",
+    "year": "2024",
+    "caveat": "\"Portable device with mobile-network internet\" includes smartphones and tablets, not laptops only, so this is an upper bound on laptops per employee. NACE C10-S951 excl. financial."
+   },
+   {
+    "claim": "Employer device provisioning is near-universal at scale: 93.9% of EU employees at 10+ firms and 98.1% at 250+ firms work for an employer that issues portable devices",
+    "number": "93.86% (10+); 98.06% (250+)",
+    "source": "Eurostat isoc_cimobp_use, indicator P_PMD, unit PC_EMP, EU27_2020; ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_cimobp_use",
+    "status": "VERIFIED-FETCHED",
+    "year": "2024",
+    "caveat": "Share of persons employed working AT such firms, not share receiving a device. Supports the homogeneity premise: the larger the firm, the more certain a managed fleet exists."
+   },
+   {
+    "claim": "Roughly 43 million employer-issued portable devices exist in EU27 firms with 10+ employees; ~24 million of those in firms with 250+",
+    "number": "~43.1M devices (10+); ~24.3M devices (250+)",
+    "source": "Derived: Eurostat isoc_cimobp_use P_EMPMD2 2024 x Eurostat sbs_sc_ovw EMP_NR 2023 (113.85M employed in 10+ firms; 59.14M in 250+), NACE B-S_X_O_S94, EU27_2020",
+    "status": "VERIFIED-FETCHED",
+    "year": "2024",
+    "caveat": "My arithmetic on two fetched Eurostat series with slightly different NACE scopes and a one-year offset. Device mix includes phones/tablets. Order-of-magnitude sizing, not a laptop count."
+   },
+   {
+    "claim": "64.6% of persons employed at EU 10+ firms have internet access for business purposes: the ceiling on networked business endpoints per employee",
+    "number": "64.63% (2025); 54.05% (2019)",
+    "source": "Eurostat isoc_ci_cm_ps, indicator P_IUSE, unit PC_EMP, size GE10, EU27_2020; ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_ci_cm_ps",
+    "status": "VERIFIED-FETCHED",
+    "year": "2025",
+    "caveat": "Persons, not devices. The parallel 'persons employed using computers' series (P_CUSE) was discontinued after 2019 at 54.33%."
+   },
+   {
+    "claim": "Commercial buyers, not consumers, are where PC money is: Dell's commercial PC revenue is 86% of its client segment, HP's is 71% of Personal Systems",
+    "number": "Dell FY26: $44,062M commercial vs $6,922M consumer of $50,984M = 86.4%. HP FY25: $27,438M vs $11,094M of $38,532M = 71.2%",
+    "source": "Dell Technologies 10-K FY2026 (sec.gov/Archives/edgar/data/1571996/000157199626000008/dell-20260130.htm); HP Inc 10-K FY2025 (.../data/47217/000004721725000071/hpq-20251031.htm)",
+    "status": "VERIFIED-FETCHED",
+    "year": "2026",
+    "caveat": "Revenue share, not unit share; commercial ASPs are higher so commercial UNIT share is lower. Both segments bundle displays, workstations, services. Neither filing gives units or a notebook/desktop split."
+   },
+   {
+    "claim": "HP's FY2025 PC unit growth was attributed explicitly to the Windows 10 end-of-support refresh, and it was a commercial-led wave",
+    "number": "Total PS units +4.3%; Commercial PS units +6.4%; Consumer PS units +1.2%",
+    "source": "HP Inc. Form 10-K FY2025, MD&A; sec.gov/Archives/edgar/data/47217/000004721725000071/hpq-20251031.htm",
+    "status": "VERIFIED-FETCHED",
+    "year": "2025",
+    "caveat": "Percentage changes only; HP no longer discloses absolute units. Shows enterprise fleets refresh on an OS-support clock, i.e. synchronously, not at a smooth replacement rate."
+   },
+   {
+    "claim": "The forcing function behind the current enterprise refresh wave: Windows 10 reached end of support on 14 October 2025",
+    "number": "2025-10-14 (Windows 10 Home and Pro, final version 22H2; GA 2015-07-29, a ~10-year platform life)",
+    "source": "Microsoft Lifecycle, 'Windows 10 Home and Pro'; learn.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro",
+    "status": "VERIFIED-FETCHED",
+    "year": "2025",
+    "caveat": "Vendor lifecycle page: primary, but a vendor statement. Paid Extended Security Updates mean real fleet migration lags this date."
+   },
+   {
+    "claim": "Enterprises depreciate computer equipment over 3-5 years, the accounting-anchored business PC refresh cycle",
+    "number": "3-5 years, straight-line",
+    "source": "Dell Technologies 10-K FY2026, PP&E policy: 'Computer and other equipment 3 - 5 years'; sec.gov/Archives/edgar/data/1571996/000157199626000008/dell-20260130.htm",
+    "status": "VERIFIED-FETCHED",
+    "year": "2026",
+    "caveat": "Dell's own internal-asset policy, not a measured market replacement cycle; HP gives only 'three to fifteen years for machinery and equipment'. Depreciation life is a lower bound on physical life."
+   },
+   {
+    "claim": "US private business holds $195.4bn of PCs at current-cost net (depreciated) value and bought $92.8bn more in 2024",
+    "number": "Net stock $195.4bn (2024); investment $92.8bn (2024); net stock $141.7bn (2019)",
+    "source": "US BEA Fixed Assets, asset EP1B 'PCs' summed over 148 industries, detailnonres_stk1/2 and inv1/2.xlsx, updated 2025-09-26; apps.bea.gov/national/FA2004/Details/index.htm",
+    "status": "VERIFIED-FETCHED",
+    "year": "2024",
+    "caveat": "My summation of BEA per-industry sheets; BEA flags these detailed estimates as lower quality than its aggregates. Private only. Stock/investment=2.1 reflects fast geometric depreciation, NOT a service life."
+   }
+  ],
+  "notes": "NOT VERIFIED. (1) GLOBAL business PC installed base and global commercial-vs-consumer UNIT split: IDC 301s to a JS gate, Gartner 403s (Cloudflare), Canalys moved to omdia.tech.informa.com which 403s; Wayback CDX has no recent IDC prUS* snapshots. Needs WebSearch or a pasted IDC PCD Tracker release. (2) NOTEBOOK vs DESKTOP share of COMMERCIAL SHIPMENTS: HP and Dell both dropped that split from their 10-Ks. Only fetched split is CBECS 2018 installed base (42.8% laptop), a stock not a flow. Try Lenovo's HKEX annual report PDF. (3) APPLE/MAC ENTERPRISE SHARE: nothing fetched; Apple's 10-K has no Mac commercial/consumer split, so the \"enterprise Macs specifically\" leg is unsupported. Best lead: Jamf Holdings (NASDAQ: JAMF) 10-K, which reports managed Apple device counts. (4) MEASURED refresh cycle vs accounting life: try the EU JRC Ecodesign preparatory study on computers or the German UBA product-lifetime study; neither attempted. (5) Microsoft's widely quoted \"1.4bn Windows devices\" is NOT in the MSFT FY2026 10-K; I searched the text. CROSS-CHECK WARNING: BEA $195.4bn over CBECS 111.6M implies ~$1,750 net value per machine; do not divide one by the other."
+ },
+ "idle-capacity-econ": {
+  "findings": [
+   {
+    "claim": "Measured peak FP32 GEMM throughput on a base Apple M4 (Mac mini, Metal Performance Shaders); the CPU reaches only 1.5 TFLOPS",
+    "number": "GPU/MPS: 1.36 (M1), 2.24 (M2), 2.47 (M3), 2.9 (M4) FP32 TFLOPS",
+    "year": "2025",
+    "source": "Hübner, Hu, Peng & Markidis (KTH), \"Apple vs. Oranges: Evaluating the Apple Silicon M-Series SoCs for HPC,\" IPDPSW 2025 / arXiv:2502.05317v2 — https://arxiv.org/pdf/2502.05317",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "Base (non-Pro/Max) chips only; devices were MacBook Air (M1, M3) and Mac mini (M2, M4). Pro/Max/Ultra have 2-5x the GPU cores and are unmeasured. FP32 dense GEMM; no FP64 on the GPU."
+   },
+   {
+    "claim": "Power drawn by Apple M-series during that sustained GEMM, via Apple's powermetrics, and resulting compute-per-watt",
+    "number": "10-20 W under load; 0.21 (M1), 0.40 (M2), 0.46 (M3), 0.33 (M4) TFLOPS/W via GPU-MPS; CPU paths <1 GFLOPS/W",
+    "year": "2025",
+    "source": "Hübner et al., arXiv:2502.05317v2, §5.3 — https://arxiv.org/pdf/2502.05317",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "powermetrics reports CPU/GPU block power, not wall power; display, SSD and PSU losses excluded. Machines were mains-connected and held awake with caffeinate."
+   },
+   {
+    "claim": "Reference point in the same paper: an Nvidia GH200 on the same benchmark, i.e. roughly 14x a base M4 GPU on FP32",
+    "number": "41 FP32 TFLOPS (CUDA cores, 61% of peak); 338 TFLOPS TF32 tensor cores",
+    "year": "2025",
+    "source": "Hübner et al., arXiv:2502.05317v2, §5.2 — https://arxiv.org/pdf/2502.05317",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "The tensor-core figure is TF32 and not comparable to Apple's FP32 path; M1-M4 have no tensor-core equivalent (M5 adds per-core Neural Accelerators)."
+   },
+   {
+    "claim": "Apple's own stated Neural Engine throughput for M4 (16-core NPU)",
+    "number": "38 trillion operations per second (38 TOPS)",
+    "year": "2024",
+    "source": "Apple Newsroom, \"Apple introduces M4 chip,\" 7 May 2024 — https://www.apple.com/newsroom/2024/05/apple-introduces-m4-chip/",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "Apple does not state the numeric precision behind \"operations\"; it is an NPU peak figure, not a sustained rate. Apple publishes no TFLOPS figure for its GPUs."
+   },
+   {
+    "claim": "Apple's stated generational jump for M5 GPU AI compute, with per-core Neural Accelerators added",
+    "number": "over 4x peak GPU AI compute vs M4 (over 6x vs M1); 153 GB/s unified memory bandwidth; 10-core GPU",
+    "year": "2025",
+    "source": "Apple Newsroom, \"Apple unleashes M5...\", 15 Oct 2025 — https://www.apple.com/newsroom/2025/10/apple-unleashes-m5-the-next-big-leap-in-ai-performance-for-apple-silicon/",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "Vendor marketing multiplier with no absolute TFLOPS/TOPS and no independent measurement located. Treat as an upper bound."
+   },
+   {
+    "claim": "Idle vs max wall power for the current Mac mini from Apple's own tables; the ~16x idle:max ratio is what makes harvesting idle Macs cheap",
+    "number": "M4: 4 W idle / 65 W max. M4 Pro: 5 W / 140 W. M1 (2020): 6.8 W / 39 W. Intel 2018: 19.9 W / 122 W",
+    "year": "2024",
+    "source": "Apple Support, \"Mac mini power consumption and thermal output (BTU) information\" — https://support.apple.com/en-us/HT201897",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "Desktop, not laptop; Apple publishes no equivalent table for MacBooks. Configurations are specific (the M4 Pro figure is a 64 GB / 8 TB machine)."
+   },
+   {
+    "claim": "ENERGY STAR certified idle power and annual typical energy consumption (TEC) for current enterprise-class MacBooks",
+    "number": "MBP 14 (M4): 3.8-4.1 W short idle, 0.7 W long idle, 9.0-9.2 kWh/yr. MBP 16 (M5 Max): 7.4 W, 2.9-3.2 W, 17.9-18.6 kWh/yr. Air 13 (M4): 3.4-3.6 W, 8.1-8.4 kWh/yr",
+    "year": "2026",
+    "source": "US EPA ENERGY STAR Certified Computers V9.0, Socrata API — https://data.energystar.gov/resource/rxdj-2c88.json (brand_name=Apple; certified 2025-10 to 2026-03)",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "\"Short idle\" is the ENERGY STAR idle state with display on, not a load figure. TEC is a weighted duty-cycle model, not field consumption. Manufacturer-reported to a certification body."
+   },
+   {
+    "claim": "Fleet-wide ENERGY STAR baseline: notebooks idle at ~40% of desktop and ~6% of workstation idle power, so an idle laptop fleet is unusually cheap to keep awake",
+    "number": "Notebooks n=1,140: 5.15 W short idle / 0.90 W long idle / 13.8 kWh-yr. Desktops n=281: 13.18 / 7.77 / 49.6. Workstations n=70: 80.99 / 73.36",
+    "year": "2026",
+    "source": "US EPA ENERGY STAR Certified Computers V9.0, SoQL group-by on type over 1,747 models — https://data.energystar.gov/resource/rxdj-2c88.json",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "Unweighted mean across certified models, not sales-weighted, so it does not represent the installed base; only ENERGY STAR-certified models appear."
+   },
+   {
+    "claim": "US average retail electricity price to the COMMERCIAL sector — the rate a business pays to keep an office fleet awake; ~24% below residential",
+    "number": "13.79 c/kWh (YTD May 2026); 13.41 (2025); 12.75 (2024); 10.43 (2016). Residential YTD 2026: 18.11 c/kWh",
+    "year": "2026",
+    "source": "US EIA, Electric Power Monthly, Table 5.3, May 2026 release — https://www.eia.gov/electricity/monthly/xls/table_5_03.xlsx",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "2025-2026 values are preliminary estimates from a cutoff model sample (Form EIA-861M); 2024 and earlier are final."
+   },
+   {
+    "claim": "State spread in commercial electricity price — a 5.4x range that dominates any siting decision for idle-capacity harvesting",
+    "number": "7.50 c/kWh (N. Dakota) to 40.72 (Hawaii); TX 8.56, WA 11.90, MA 24.85, CA 25.11; US 13.79. All YTD May 2026",
+    "year": "2026",
+    "source": "US EIA, Electric Power Monthly, Table 5.6.B (price by end-use sector, by state) — https://www.eia.gov/electricity/monthly/xls/table_5_06_b.xlsx",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "Year-to-date averages, preliminary. Commercial-sector classification varies by utility (NAICS vs demand-band rate schedules) per EIA's technical note."
+   },
+   {
+    "claim": "Measured after-hours power state of US office equipment: most desktops are left ON overnight and almost none power-manage",
+    "number": "Of 1,453 desktops audited after hours, turn-off rate 36% (~64% left on); only 6% of those not off were in low power; site range 5%-67%",
+    "year": "2004",
+    "source": "Webber et al., \"After-hours Power Status of Office Equipment...,\" LBNL-53729, doi:10.2172/821675 — https://www.osti.gov/servlets/purl/821675",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "2004 field data, 16 buildings, predating modern sleep defaults and the desktop-to-laptop shift. The direction is durable; the exact percentage is not. No modern replication found."
+   },
+   {
+    "claim": "Same LBNL night audit, laptop-specific: enterprise laptops left at the office are overwhelmingly mains-connected and often docked",
+    "number": "35 of 37 laptops (95%) plugged in; 60% of those on docking stations; 24% clearly on. 107 docks found, 80% empty",
+    "year": "2004",
+    "source": "Webber et al., LBNL-53729, \"Laptop Computers\" section — https://www.osti.gov/servlets/purl/821675",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "Very small n (37-50). The 80%-empty docks cut against the thesis: most laptops went home, and LBNL says it did not estimate how many left the building. This is the key uncertainty."
+   },
+   {
+    "claim": "Measured CPU idleness across a managed institutional Windows fleet, plus the standard non-dedicated discount factor",
+    "number": "97.9% mean CPU idleness, 169 machines, 77 days, 583,653 samples; 42.1% memory unused; 2:1 rule (N non-dedicated ~ N/2 dedicated)",
+    "year": "2005",
+    "source": "Domingues, Marques & Silva, \"Resource Usage of Windows Computer Laboratories,\" ICPPW 2005, doi:10.1109/icppw.2005.77 — abstract via https://api.openalex.org/works/https://doi.org/10.1109/icppw.2005.77",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "Authors' abstract fetched via OpenAlex, not full text (closed access), so the per-machine idle-hours breakdown is unconfirmed. University teaching labs — likely an upper bound on idleness."
+   },
+   {
+    "claim": "Measured availability of VOLUNTEER (household) hosts in BOINC/SETI@home — the baseline the enterprise-fleet thesis must beat",
+    "number": "on-fraction 0.81; connected-fraction 0.83; active-fraction 0.84; CPU efficiency 0.899; product ~0.61 of wall time. Mean host lifetime 91 days",
+    "year": "2006",
+    "source": "Anderson & Fedak, \"The Computational and Storage Potential of Volunteer Computing,\" CCGrid 2006, doi:10.1109/ccgrid.2006.101 — https://boinc.berkeley.edu/boinc_papers/internet/paper.pdf",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "2006 consumer desktops on dial-up/DSL-era networks. The 0.61 product is my arithmetic. Same paper: redundant computing costs a factor of slightly over 2."
+   },
+   {
+    "claim": "Derived energy cost of harvesting one idle Apple-silicon laptop-class SoC at US commercial rates, for ~2.9 FP32 TFLOPS",
+    "number": "20 W x 13.79 c/kWh = $0.00276/hour ($0.0022/h incremental over 4 W idle); ~$0.033 per 12-hour night; ~$8.3/yr at 250 nights",
+    "year": "2026",
+    "source": "Derived: power from Hübner et al. arXiv:2502.05317; price from EIA EPM Table 5.3 (13.79 c/kWh YTD May 2026)",
+    "status": "SECONDARY",
+    "caveat": "My arithmetic, not any source's. SoC-block power only — excludes display, PSU loss, and the ~1.3-1.5x office HVAC penalty for rejecting the heat. Ignores battery wear and amortized hardware."
+   },
+   {
+    "claim": "Enterprise cycle-stealing at production scale is documented but only qualitatively: Micron replaced dedicated peak-capacity purchases with two Condor pools",
+    "number": "\"tens of thousands of engineering analysis jobs per week\"; no utilization or idle-hour figures published",
+    "year": "2005",
+    "source": "Thain, Tannenbaum & Livny, \"Distributed Computing in Practice: The Condor Experience,\" CCPE 17(2-4), §10.2 — https://research.cs.wisc.edu/htcondor/doc/condor-practice.pdf",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "Author case study, no measured utilization. Condor's default idle policy — keyboard idle >15 min plus low load average — is stated in the same paper and defines \"idle\" in this literature."
+   },
+   {
+    "claim": "The canonical measured availability figure for privately owned office workstations (usually cited as ~70% available) — origin of the cycle-stealing premise",
+    "number": "UNVERIFIED — could not obtain the number",
+    "year": "1991",
+    "source": "Mutka & Livny, Performance Evaluation 13(4), doi:10.1016/0166-5316(91)90005-N — metadata via Crossref + Semantic Scholar; both full text and abstract paywalled",
+    "status": "UNVERIFIED",
+    "caveat": "Paper exists and is correctly cited (160 citations). Settled by an Elsevier subscription, or by the original UW-Madison CS tech report version if a copy is on ftp.cs.wisc.edu."
+   }
+  ],
+  "notes": "COULD NOT GET. (1) Mutka & Livny 1991's ~70% figure: paywalled, abstract elided by Elsevier; the UW-Madison tech report would settle it. (2) Apple publishes NO power table for MacBooks, only Mac mini / iMac / Mac Pro. Best laptop substitutes are ENERGY STAR idle/TEC (whole-system, manufacturer-submitted) and KTH powermetrics (SoC-block, base chips). No source gives sustained wall-plug watts for a MacBook under load. (3) No measurement of M5's Neural Accelerators exists yet, and nobody has benchmarked Pro/Max/Ultra GPUs on FP32 GEMM in a fetchable venue. (4) arXiv's export API returned empty from this host (blocked); arxiv.org/pdf direct fetches worked, so discovery went via OpenAlex/Crossref. (5) ACM DL is bot-walled, so \"Benchmarking and Characterization of LLM Inference on Apple Silicon\" (doi:10.1145/3771563, 2025) is unread — the obvious source for tokens/sec-per-Mac; get it via institutional proxy. (6) FLEET SIZING IS THE BIGGEST HOLE: CBECS 2018 building-characteristics tables stop at B23, no computer-count table (/2018/bc/xls/ silently serves 2012 tables); IDC/Gartner installed base is paywalled. (7) No post-2015 replication of the LBNL after-hours audit found."
+ },
+ "objections": {
+  "findings": [
+   {
+    "claim": "EU law requires every notebook sold in the EU to ship with sleep-on-inactivity already enabled: the default state of an idle office laptop is asleep, not available",
+    "number": "sleep must activate within 30 min of user inactivity; \"activated before placing the product on the market\" (Annex II 6.2.5)",
+    "source": "Commission Regulation (EU) No 617/2013, ecodesign for computers, 2013 — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013R0617",
+    "status": "VERIFIED-FETCHED",
+    "year": "2013",
+    "caveat": "Binds manufacturers, not fleet owners: a GPO/MDM can override the timer. Still in force — Reg (EU) 2023/826 carves computers out by reference to 617/2013."
+   },
+   {
+    "claim": "The energy counterfactual is brutal: a sleeping notebook is capped in single-digit watts, so federation must beat ~3 W of avoided draw",
+    "number": "sleep-mode power ≤ 3.00 W notebooks, ≤ 5.00 W desktops; +0.70 W allowance if WOL enabled",
+    "source": "Reg (EU) No 617/2013, Annex II 2.2 and 2.4 — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013R0617",
+    "status": "VERIFIED-FETCHED",
+    "year": "2013"
+   },
+   {
+    "claim": "Regulation degrades the dormant fleet's network too, not just its CPU: gigabit links must throttle on the way into sleep",
+    "number": "\"shall reduce the speed of any active 1 Gb/s Ethernet network links when transitioning to sleep or off-with-WOL mode\" (Annex II 6.2.1)",
+    "source": "Reg (EU) No 617/2013, Annex II 6.2.1 — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013R0617",
+    "status": "VERIFIED-FETCHED",
+    "year": "2013"
+   },
+   {
+    "claim": "ENERGY STAR imposes the same as-shipped sleep default in the US market, so the EU rule is not a regional quirk",
+    "number": "Sleep/ALPM \"set to activate after no more than 30 minutes of user inactivity\"; display sleep ≤ 15 min; required as-shipped",
+    "source": "US EPA, ENERGY STAR Computers v8.0 (Rev. April 2020), §3.3.1 + Table 3 — energystar.gov/sites/default/files/asset/document/ENERGY%20STAR%20Computers%20Final%20Version%208.0%20Specification%20-%20Rev.%20April%202020.pdf",
+    "status": "VERIFIED-FETCHED",
+    "year": "2020"
+   },
+   {
+    "claim": "ENERGY STAR concedes notebook remote-wake is conditional on mains power — the exact condition the thesis relies on, and the one that fails when a laptop is unplugged",
+    "number": "\"For Notebooks, WOL may be automatically disabled when the product is disconnected from ac mains power\" (§3.3.1 ii)",
+    "source": "US EPA, ENERGY STAR Computers v8.0 (Rev. April 2020), §3.3.1 — https://www.energystar.gov/sites/default/files/asset/document/ENERGY%20STAR%20Computers%20Final%20Version%208.0%20Specification%20-%20Rev.%20April%202020.pdf",
+    "status": "VERIFIED-FETCHED",
+    "year": "2020",
+    "caveat": "Cuts both ways — best published support for the pro-case: enterprise-channel machines must ship WOL-enabled on AC and support scheduled RTC wake."
+   },
+   {
+    "claim": "Wake-on-LAN in modern Windows is far narrower than folklore: it does not work from the default shutdown state, so a powered-down fleet is unreachable",
+    "number": "\"WOL is supported only from sleep (S3), or when the user explicitly requests to enter hibernate (S4)\"; from Fast Startup S4/S5 NICs are \"explicitly not armed\"",
+    "source": "Microsoft, \"Wake on LAN (WOL) behavior in Windows 10\" (KB2776718) — https://learn.microsoft.com/en-us/troubleshoot/windows-client/setup-upgrade-and-drivers/wake-on-lan-feature",
+    "status": "VERIFIED-FETCHED",
+    "year": "2026",
+    "caveat": "Article scope is Windows 10 1809/1903 and Win7 SP1; notes some firmware can arm the NIC independently of Windows."
+   },
+   {
+    "claim": "Modern Standby machines have no S3 to wake from, and Windows now actively disables wake sources on detected drain — remote orchestration of a sleeping fleet is not solved",
+    "number": "Win11 24H2: \"If excessive battery drain is detected, most wake sources will be disabled\"; on DC \"L2 disconnect for Ethernet, disconnection of Wi-Fi\"",
+    "source": "Microsoft, \"Modern Standby Wake Sources\", Microsoft Learn — https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby-wake-sources",
+    "status": "VERIFIED-FETCHED",
+    "year": "2026"
+   },
+   {
+    "claim": "The US federal security baseline explicitly contemplates deny-all software execution on managed endpoints; a third-party compute agent is the paradigm case CM-7(5) exists to block",
+    "number": "CM-7(5): \"Employ a deny-all, permit-by-exception policy to allow the execution of authorized software programs on the system\"",
+    "source": "NIST SP 800-53 Rev. 5 catalog (OSCAL JSON), control cm-7.5 — https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json",
+    "status": "VERIFIED-FETCHED",
+    "year": "2020"
+   },
+   {
+    "claim": "The baseline names peer-to-peer specifically as a technology to be controlled and documented — the exact network shape a laptop federation would use",
+    "number": "CM-10(c): \"Control and document the use of peer-to-peer file sharing technology\"",
+    "source": "NIST SP 800-53 Rev. 5 catalog (OSCAL JSON), control cm-10 — https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json",
+    "status": "VERIFIED-FETCHED",
+    "year": "2020",
+    "caveat": "Stated rationale is copyright, not compute; still the control auditors cite when P2P daemons appear on managed endpoints."
+   },
+   {
+    "claim": "Baselines require the most restrictive setting consistent with operations and treat deviations as approved exceptions, so allowing an outside overnight workload is a change-control event, not a toggle",
+    "number": "CM-6(a): settings \"reflect the most restrictive mode consistent with operational requirements\"; CM-6(c): deviations documented and approved",
+    "source": "NIST SP 800-53 Rev. 5 catalog (OSCAL JSON), control cm-6 — https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json",
+    "status": "VERIFIED-FETCHED",
+    "year": "2020"
+   },
+   {
+    "claim": "On Mac fleets the platform itself gates execution: unsigned/unnotarized third-party binaries do not run under defaults",
+    "number": "apps must be \"signed ... and notarized by Apple to run under the default Gatekeeper settings\"",
+    "source": "Apple, Apple Platform Security (March 2026), Gatekeeper and runtime protection in macOS — https://help.apple.com/pdf/security/en_US/apple-platform-security-guide.pdf",
+    "status": "VERIFIED-FETCHED",
+    "year": "2026",
+    "caveat": "Notarization is obtainable by any developer, so this is friction and an attribution chokepoint rather than a hard prohibition."
+   },
+   {
+    "claim": "The strongest measured evidence against 'enterprise laptops sit at the office overnight': in the only large after-hours census of US office equipment, four of five docks were empty",
+    "number": "80% of 107 docking stations were empty after hours; of 37 laptops with recorded state, only 24% were \"clearly on\" (95% were plugged in)",
+    "source": "Roberson et al., After-hours Power Status of Office Equipment, LBNL-53729, 2004 — https://doi.org/10.2172/821675 (PDF: osti.gov/servlets/purl/821675)",
+    "status": "VERIFIED-FETCHED",
+    "year": "2004",
+    "caveat": "2003-era survey, 16 buildings, laptops then ~10% of non-server computers. Suggestive of direction only; nobody has repeated this census on a laptop-majority fleet."
+   },
+   {
+    "claim": "The same survey is the best published support for the desktop version of the thesis, and shows power management was essentially never on — which is what later regulation set out to fix",
+    "number": "1,453 desktops: 36% turn-off rate (~64% left on); \"only 6% of all desktop computers that were not off were in low power\"",
+    "source": "Roberson et al., LBNL-53729, 2004 — https://doi.org/10.2172/821675",
+    "status": "VERIFIED-FETCHED",
+    "year": "2004",
+    "caveat": "Pre-dates EU 617/2013 and ENERGY STAR v8 as-shipped sleep defaults; a 6% PM rate is not plausible for a 2026 managed fleet."
+   },
+   {
+    "claim": "Hybrid work removes machines from the building on many nights, disproportionately from the knowledge-worker fleets that have the good hardware",
+    "number": "2025: 35% of employed people did some or all work at home on days worked; 51% among bachelor's degree or higher",
+    "source": "BLS, American Time Use Survey — 2025 Results (USDL-26-1022); bls.gov blocks bots, fetched via web.archive.org/web/20260723073053/https://www.bls.gov/news.release/atus.nr0.htm",
+    "status": "VERIFIED-FETCHED",
+    "year": "2026",
+    "caveat": "Measures work location, not device location; a hybrid worker may still leave a docked machine at the office. Bounds the addressable fleet rather than proving absence."
+   },
+   {
+    "claim": "Sustained nightly load attacks the battery through the two variables that dominate calendar ageing: a plugged-in laptop sits at high state of charge and elevated temperature at once",
+    "number": "resistance growth during calendar ageing is \"enhanced by operating the battery at high temperatures and high SOC-levels\"",
+    "source": "Stroe, Swierczynski, Kær & Teodorescu, IEEE Trans. Industry Applications, 2017 — https://doi.org/10.1109/tia.2017.2756026 (PDF: vbn.aau.dk/ws/files/311054890/)",
+    "status": "VERIFIED-FETCHED",
+    "year": "2017",
+    "caveat": "LFP/graphite cells at 40-55 C accelerated conditions, not laptop NMC/LCO packs in situ. Directional only; optimized-charging caps blunt the high-SOC term."
+   },
+   {
+    "claim": "Sustained compute on thermally constrained mobile-class hardware does not hold rated throughput — the resource you rent is not the one you benchmarked",
+    "number": "under continuous ML inference \"the CPU clock frequency is reduced, and the model inference latency may increase dramatically\"",
+    "source": "Wang et al., \"Play It Cool: Dynamic Shifting Prevents Thermal Throttling,\" arXiv:2206.10849, 2022 — http://arxiv.org/abs/2206.10849",
+    "status": "VERIFIED-FETCHED",
+    "year": "2022",
+    "caveat": "Measured on phones, not laptops; actively cooled laptops throttle less. No laptop-specific sustained-throughput derating figure could be fetched."
+   },
+   {
+    "claim": "The US regulatory leg of the anti-case is weaker than assumed: the federal acquisition clause mandating energy-efficient product purchasing has been removed in the 2026 FAR overhaul",
+    "number": "FAR 52.223-15 is \"[Reserved]\" as of FAC 2026-01, effective 03/13/2026",
+    "source": "GSA, Acquisition.gov, FAR 52.223-15 — https://www.acquisition.gov/far/52.223-15",
+    "status": "VERIFIED-FETCHED",
+    "year": "2026",
+    "caveat": "Evidence against part of the brief. US sleep-by-default pressure now rests on ENERGY STAR criteria and agency policy. Did not verify what replaced it."
+   },
+   {
+    "claim": "The economics are set by retail commercial electricity, which the business owner pays — the P&L argument must clear a retail price while the datacenter competitor clears a wholesale one",
+    "number": "US average commercial retail price 13.54 c/kWh, May 2026 (12.93 c/kWh May 2025); residential 18.44 c/kWh",
+    "source": "US EIA, Electric Power Monthly, Table 5.6.A, May 2026 — https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a",
+    "status": "VERIFIED-FETCHED",
+    "year": "2026",
+    "caveat": "Preliminary EIA-826 cutoff-sample estimates. Excludes the office HVAC penalty for rejecting that heat overnight, which I could not source."
+   }
+  ],
+  "notes": "GAPS. (1) CIS Benchmarks/Controls are registration-walled; NIST SP 800-53r5 CM-6/CM-7(5)/CM-10, fetched from NIST's official OSCAL catalog, make the same point with better provenance. (2) No primary fetchable survey quantifying how many enterprises forbid third-party workloads on managed endpoints (Verizon MSI, Ponemon, Gartner are vendor or paywalled). Biggest hole in leg (a): the control text proves capability and auditor expectation, not prevalence of enforcement. Would be settled by a peer-reviewed endpoint-policy survey or FISMA CIO metrics on CM-7(5) adoption. (3) Apple power-management and MDM docs (clamshell sleep, Wake for network access, pmset payloads) are JS-rendered and returned only nav chrome, so the Mac-specific sleep/wake objection is UNVERIFIED; settle via the macOS Deployment guide PDF or com.apple.MCX reference. (4) Laptop-vs-desktop share of enterprise PCs: IDC/Gartner only, paywalled; omitted rather than guessed. (5) Sustained wall power of a modern enterprise laptop under load, and the office HVAC penalty, not fetched. (6) No fetchable primary evidence of named firms mandating nightly shutdown in their own ESG policy."
+ },
+ "mac-in-enterprise": {
+  "findings": [
+   {
+    "claim": "Apple's own current enterprise-penetration claim, exact wording. Denominator is NOT the Fortune 500 but LinkedIn's list of 50 large US employers.",
+    "number": "84% of top U.S. companies use Mac at scale (= 42 of 50 companies)",
+    "year": "2026",
+    "source": "Apple Inc., apple.com/business, footnote 4: \"Based on internal Apple data and LinkedIn Top Companies 2026: The 50 best large employers to grow your career in the U.S.\" Fetched https://www.apple.com/business/ 2026-08-02",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "Vendor claim resting on undisclosed \"internal Apple data\"; \"at scale\" undefined. No primary Apple source exists for the popular \">80% of the Fortune 500\" framing — different, much larger denominator."
+   },
+   {
+    "claim": "Second, longer wording of the same claim on the same page (confirms the LinkedIn denominator).",
+    "number": "84% of LinkedIn's 2026 Top Companies to Grow Your Career in the U.S. use Mac to power their teams",
+    "year": "2026",
+    "source": "Apple Inc., apple.com/business, \"Industry Choice\" tile. Fetched https://www.apple.com/business/ 2026-08-02",
+    "status": "VERIFIED-FETCHED"
+   },
+   {
+    "claim": "Hard count of enterprise/institution-managed Apple devices under one MDM vendor — best public primary number for centrally managed Apple fleets.",
+    "number": "33.2 million devices deployed by more than 76,500 customers, as of Dec 31, 2024",
+    "year": "2024",
+    "source": "Jamf Holding Corp. Form 10-K FY2024, Item 1, filed 2025-02-27. https://www.sec.gov/Archives/edgar/data/1721947/000162828025008642/jamf-20241231.htm",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "All Apple device types (iPhone/iPad/Mac/TV); Jamf never breaks out Macs, and the base includes big K-12 iPad fleets — so a loose upper bound on enterprise Macs. Excludes Intune/Kandji/Mosyle/Addigy fleets."
+   },
+   {
+    "claim": "Growth of Jamf-managed Apple devices: roughly doubled in ~4.75 years but decelerating (+7.7% 2022→2023, +2.8% 2023→2024).",
+    "number": "16.0M (Mar 31, 2020) → 30.0M (Dec 31, 2022) → 32.3M (Dec 31, 2023) → 33.2M (Dec 31, 2024)",
+    "year": "2020-2024",
+    "source": "Jamf S-1 (2020) a2241939zs-1.htm and Forms 10-K FY2022/FY2023/FY2024, SEC EDGAR CIK 0001721947 (sec.gov/Archives/edgar/data/1721947/)",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "Customers over the same span: ~38,500 → 71,000 → 75,300 → 76,500. Jamf's Q3-2025 10-Q and Q3-2025 earnings 8-K do not restate a device count, so Dec-2024 is the latest disclosed figure."
+   },
+   {
+    "claim": "Jamf's stated total addressable market for Apple-in-the-enterprise management and security.",
+    "number": "~$49 billion (2024)",
+    "year": "2024",
+    "source": "Jamf 10-K FY2024, \"Market Opportunity\": \"Based on Frost & Sullivan data and management estimates ... approximately $49 billion in 2024.\" sec.gov/Archives/edgar/data/1721947/000162828025008642/jamf-20241231.htm",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "Revenue TAM, not a device count; includes non-Apple devices that could run Jamf security products, and BYOD as well as corporate-purchased devices."
+   },
+   {
+    "claim": "IBM's Mac deployment — the canonical enterprise-fleet datapoint, from IBM CIO Fletcher Previn's JNUC keynote as reported by Jamf.",
+    "number": "100,000+ Macs expected deployed by end of 2016; 1,300 new Macs per week; 73% of IBM employees wanted a Mac next",
+    "year": "2016",
+    "source": "Jamf blog 2016-10-19, \"Debate over: IBM confirms Macs are $535 less expensive than PCs\" (Fletcher Previn, JNUC 2016); via web.archive.org/web/2019/https://www.jamf.com/blog/debate-over-ibm-confirms-that-macs-are-535-less-expensive-than-pcs/",
+    "status": "SECONDARY",
+    "caveat": "Vendor blog reporting an IBM exec's talk; no IBM-published primary found (ibm.com Mac@IBM URLs 404 / unarchived). The later \"290,000 Macs at IBM\" figure is UNVERIFIED — no fetchable source."
+   },
+   {
+    "claim": "IBM's per-device support-cost saving from Mac vs PC — the P&L argument that a business owner treats its fleet differently from a consumer.",
+    "number": "$273–$543 saved per Mac vs a PC over a four-year lifespan; PCs drove twice the support calls",
+    "year": "2016",
+    "source": "Same Jamf blog of 2016-10-19 reporting Fletcher Previn (IBM) at JNUC 2016, retrieved via the Wayback Machine (URL in the preceding finding).",
+    "status": "SECONDARY",
+    "caveat": "2016 vintage, Intel-era Macs, one company, presented by an interested vendor. Illustrative, not a fleet-economics parameter."
+   },
+   {
+    "claim": "Apple's current claim on local/on-device enterprise AI capability — directly relevant to enterprise Macs as an inference substrate.",
+    "number": "57% of enterprise AI models can run locally on MacBook Air",
+    "year": "2025",
+    "source": "Apple Inc., apple.com/business, \"On-Device AI\" tile, footnote 3: \"Based on data from Omdia, Rethinking Critical AI Infrastructure, commissioned by Apple, 2025.\" Fetched 2026-08-02",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "Apple-commissioned Omdia study; underlying report not fetched, and \"enterprise AI models\" is undefined (share of model count, not of workload)."
+   },
+   {
+    "claim": "Apple's IT-burden claim for Mac fleets (bears on centrally-managed-fleet reliability).",
+    "number": "55% fewer IT help tickets filed each year for Mac",
+    "year": "2026",
+    "source": "Apple Inc., apple.com/business, \"IT Savings\" tile, footnotes 5 and 7: Forrester Consulting, \"The Total Economic Impact of Apple Mac at Work\", June 2026, commissioned by Apple. Fetched 2026-08-02",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "Apple-commissioned Forrester TEI using surveys and a composite organization; Apple's own footnote says it \"is not meant to be used as a competitive analysis.\" TEI PDF itself not fetched."
+   },
+   {
+    "claim": "Apple's laptop-share claim for the work segment — sourcing shows it is a single-SKU shipment ranking, not a fleet-share statistic.",
+    "number": "MacBook Air is the leading laptop for work",
+    "year": "2026",
+    "source": "Apple Inc., apple.com/business, footnote 2: \"Based on data from Omdia, PC Horizon Service, MacBook Air 13\\\" shipments, May 2026.\" Fetched 2026-08-02",
+    "status": "VERIFIED-FETCHED",
+    "caveat": "Ranks one model against individually-SKU'd competitors; does not imply Mac majority share of enterprise laptops. Omdia PC Horizon is paywalled and was not fetched."
+   }
+  ],
+  "notes": "THE APPLE CLAIM: live on apple.com/business (fetched 2026-08-02): \"84% of top U.S. companies use Mac at scale,\" footnoted to LinkedIn Top Companies 2026 (the 50 best large U.S. employers) plus internal Apple data. So 42 of 50 firms. No primary Apple source found for \">80% of the Fortune 500\" — do not use that wording.\n\nNOT FOUND: (1) Mac-specific count inside Jamf's 33.2M — Jamf never splits Mac vs iOS/iPad. Would be settled by Jamf investor-day material or an IDC/Canalys commercial-vs-consumer Mac shipment series (paywalled). (2) \"290,000 Macs at IBM\" — no fetchable IBM or Jamf source; ibm.com Mac@IBM URLs 404 and unarchived; settled by the JNUC 2018/2019 keynote transcript or an IBM newsroom post. (3) Kandji/Addigy/Mosyle counts — private, no filings. (4) Apple earnings-call transcripts are not on apple.com and Apple 8-Ks carry no enterprise Mac stats. (5) Forrester TEI and Omdia reports not fetched — only Apple's summary claims plus footnote citations.\n\nSERIES RISK: Jamf was still NASDAQ-listed as of its 2026-02-02 8-K, but the last device disclosure is FY2024; a take-private would end the best public series on managed Apple fleet size."
+ },
+ "left-on-overnight": null
+}

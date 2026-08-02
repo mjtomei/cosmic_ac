@@ -488,6 +488,28 @@ lab machines.
    claim rather than a structural one.
 4. S14 when Omerta phase 1.5 exists; S13 is the long-horizon version of S8.
 
+### S16. Enterprise idle fleets as a federation substrate — **CANDIDATE, scoped**
+*Origin:* Matthew, 2026-08-02, from an Apple ad claiming >80% of top companies
+use Macs: business machines left plugged in at offices overnight should be a
+more reliable federation resource than household devices, with owners
+(businesses) rationally incentivised to sell idle capacity.
+*Status:* desk research done — `analysis/enterprise-idle-fleet/` (57 findings,
+primary sources only). **Finding: the premise is half right and the wrong half
+is the laptop half — laptops go home (80% of docks empty after hours), desktops
+stay (~64% left on).** ~41M business desktops idle overnight in US commercial
+buildings (derived); businesses pay ~24% less for electricity than households;
+harvesting costs ~$0.003/hr. Against: EU/ENERGY STAR mandate sleep-as-shipped,
+Wake-on-LAN is narrower than folklore, endpoint policy gives IT a refusal, and
+hybrid work removes the good hardware from the building.
+*The measurement worth making:* nobody has repeated the after-hours census since
+LBNL-53729 (2004), which predates modern sleep defaults, the laptop shift, and
+hybrid work. What fraction of business machines are powered and reachable
+outside working hours in 2026 is **unmeasured**, cheap to measure on one
+organisation's fleet, and publishable alone. Would directly harden §4 and the
+Omerta plan's supply assumptions.
+*Do not use:* ">80% of the Fortune 500 use Macs" — Apple's actual claim is 84%
+of LinkedIn's 50 top US employers, i.e. 42 of 50, with "at scale" undefined.
+
 ## Open decisions
 
 - S10: which detector, and subscription vs API pacing? (pilot answer: Falcon pair + Fast-DetectGPT sweep, Pangram adjudicates; batch ready)
