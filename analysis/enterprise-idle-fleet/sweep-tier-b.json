@@ -1,0 +1,262 @@
+{
+ "time-use-duration": {
+  "findings": [
+   {
+    "claim": "On days they worked at home, employed people spent an average of 5.10 hours working at home. Even on a day the work laptop IS used at home, it is work-active ~5 hours, leaving ~19 of 24 idle.",
+    "number": "5.10 hours/day worked at home",
+    "source": "BLS American Time Use Survey, Table 6 (2025 annual averages), fetched via web.archive.org mirror of bls.gov/news.release/atus.t06.htm",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home",
+    "year": "2025"
+   },
+   {
+    "claim": "Of employed people who worked on an average day, 34.5% did some or all of their work at home; 69.8% worked at their workplace. ATUS counts ANY work at home, not a full day.",
+    "number": "34.5% any work at home; 69.8% at workplace (of those who worked)",
+    "source": "BLS ATUS Table 6, 2025 annual averages (archive.org mirror)",
+    "status": "VERIFIED-FETCHED",
+    "tier": "both",
+    "year": "2025"
+   },
+   {
+    "claim": "Full-time workers at home averaged 5.35 h of work at home vs 8.21 h at the workplace. Work done at home is ~2.9 h/day shorter: the at-home machine is lower duty cycle even on days it is used.",
+    "number": "5.35 h at home vs 8.21 h at workplace (full-time)",
+    "source": "BLS ATUS Table 6, 2025 annual averages (archive.org mirror)",
+    "status": "VERIFIED-FETCHED",
+    "tier": "both",
+    "year": "2025"
+   },
+   {
+    "claim": "Degree-holders, the population most likely to be issued a company laptop, worked at home on 51.4% of days worked, averaging 5.18 hours of at-home work. High incidence, still only ~5 hours.",
+    "number": "51.4% incidence; 5.18 h/day at home (bachelor's degree and higher)",
+    "source": "BLS ATUS Table 6, 2025 annual averages (archive.org mirror)",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home",
+    "year": "2025"
+   },
+   {
+    "claim": "DERIVED: expected at-home work hours per employed person per day worked = 0.345 x 5.10. Averaged over all workers, a work machine at home is in active work use under two hours per workday.",
+    "number": "~1.76 hours/worker/day worked",
+    "source": "Derived from BLS ATUS Table 6, 2025 (34.5% x 5.10 h)",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home",
+    "year": "2025",
+    "caveat": "Arithmetic derivation by me, not a published BLS figure; mixes zero-at-home days into the mean."
+   },
+   {
+    "claim": "Pre-pandemic: in 2018 only 23.7% worked at home on days worked, averaging 2.94 h at home vs 7.94 at workplace. The classic laptop-carried-home regime: ~0.70 h/worker/day expected.",
+    "number": "2.94 h/day at home; 23.7% incidence (2018); derived 0.70 h/worker/day",
+    "source": "BLS ATUS Table 6, 2018 annual averages, via web.archive.org 2019 snapshot of bls.gov/news.release/atus.t06.htm",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home",
+    "year": "2018"
+   },
+   {
+    "claim": "At-home work duration jumped then plateaued: 2.94 h (2018) to 5.41 h (2022) to ~5.12 h to 5.10 h (2025); incidence 23.7% to 33.8% to 34.6% to 34.5%. Tier B is flat, not still growing.",
+    "number": "2.94 / 5.41 / 5.12 / 5.10 hours; 23.7% / 33.8% / 34.6% / 34.5%",
+    "source": "BLS ATUS Table 6, successive annual averages, four web.archive.org snapshots of bls.gov/news.release/atus.t06.htm",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home",
+    "year": "2018-2025",
+    "caveat": "The intermediate 5.12 h / 34.6% snapshot's table header was truncated in extraction; it is the 2023 or 2024 annual average. 2018/2022/2025 are unambiguous."
+   },
+   {
+    "claim": "Full-day (6+ h) home work is rarer than any-work-at-home: 28% of paid full days were WFH days (Sept 2024, SWAA) vs 34.5% doing some work at home (ATUS). The gap is the barely-opened-laptop population.",
+    "number": "28% of paid full days WFH (Sept 2024)",
+    "source": "Barrero, Bloom, Buckman & Davis, SWAA January 2025 Updates deck, slide 5 (wfhresearch.com PDF, fetched directly)",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home",
+    "year": "2024"
+   },
+   {
+    "claim": "Tier A remains the bulk: mid-2024, 61% of US full-time employees worked all days on business premises, 27% hybrid, 12% fully remote. Only ~39% generate any Tier-B machine-hours in a given week.",
+    "number": "61% fully on-site / 27% hybrid / 12% fully remote",
+    "source": "Barrero, Bloom, Buckman & Davis, SWAA January 2025 Updates deck, slide 11 (wfhresearch.com PDF, fetched directly)",
+    "status": "VERIFIED-FETCHED",
+    "tier": "both",
+    "year": "2024"
+   },
+   {
+    "claim": "Employer plans for work-from-home trend near 2.3 days/week for employees able to WFH: for that subset roughly 2-3 of 5 workdays place the machine at a residence rather than on premises.",
+    "number": "~2.3 days/week planned WFH (WFH-able employees)",
+    "source": "Barrero, Bloom, Buckman & Davis, SWAA January 2025 Updates deck, slide 7 (wfhresearch.com PDF, fetched directly)",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home",
+    "year": "2020-2024"
+   },
+   {
+    "claim": "EU comparison (incidence only, no duration): in 2024, 8.9% of employed persons 15-64 usually worked from home, 13.7% sometimes, 77.4% never. Tier B is proportionally much smaller in the EU.",
+    "number": "8.9% usually / 13.7% sometimes / 77.4% never (EU27, 2024)",
+    "source": "Eurostat dataset lfsa_ehomp, fetched via Eurostat dissemination API (ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_ehomp)",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home",
+    "year": "2024"
+   },
+   {
+    "claim": "DERIVED Tier-B idle budget: ~18.9 h idle on a day the laptop is home and used (79% of the calendar day), ~10.9 h against a 16 h waking day, ~24 h on a day it goes home unopened.",
+    "number": "~18.9 h idle on a used day; ~24 h on an unused day",
+    "source": "Derived from BLS ATUS Table 6, 2025 (5.10 h at home)",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home",
+    "year": "2025",
+    "caveat": "Arithmetic derivation, not published. Excludes personal (non-work) use of the same machine, which ATUS does not measure and which would shrink the harvestable window."
+   },
+   {
+    "claim": "Tier A cross-check: workplace workers averaged 7.87 h of work there (8.21 full-time), so an on-premises machine is work-active ~8 of 24 h, leaving ~16 h/day plus weekends - consistent with the LBNL empty-dock finding.",
+    "number": "7.87 h/day at workplace (8.21 full-time) -> ~16 h/day idle",
+    "source": "BLS ATUS Table 6, 2025 annual averages (archive.org mirror)",
+    "status": "VERIFIED-FETCHED",
+    "tier": "A-on-premises",
+    "year": "2025"
+   }
+  ],
+  "notes": "No WebSearch used. bls.gov reached via web.archive.org mirrors of news.release/atus.t06.htm at four timestamps, plus atus.nr0.htm and atus.t04.htm. SWAA deck pulled directly from wfhresearch.com and converted with pdftotext. Eurostat via its open dissemination API (frequenc index SMT=0, USU=1, NVR=2 read from the API's own category index; values 13.7/8.9/77.4). OpenAlex searches for peer-reviewed after-hours work DURATION studies returned nothing usable; the one on-topic hit (doi 10.1080/1359432x.2023.2225773) measures intentions and frequency, not machine-hours, so it is excluded. No vendor telemetry fetched, so none reported. Headline: Tier B machine-hours are real but low duty cycle and flat since 2022 - ~5.1 h of at-home work on days it happens, ~1.8 h averaged over all workdays, vs a pre-pandemic 2.9 h / 0.7 h baseline. The resource relocates rather than disappears; what changes is who pays power and which uplink it sits behind. Caveat on all ATUS at-home figures: BLS footnote 2 says they include any work at home and are not restricted to people whose usual workplace is home."
+ },
+ "device-duty-cycle": null,
+ "at-home-tier-mechanics": {
+  "findings": [
+   {
+    "claim": "Company laptops at home are used for work only ~5.1 hours on a day work is done at home — the duration measure, not incidence",
+    "number": "5.10 avg hours of work at home (employed 15+); 5.35 h full-time; 5.18 h bachelor's degree and higher",
+    "source": "BLS American Time Use Survey 2025 annual averages, Table 6 (fetched via web.archive.org snapshot 20260724 of bls.gov/news.release/atus.t06.htm; last modified 2026-06-25)",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home",
+    "year": "2025",
+    "caveat": "ATUS 'work at home' covers any work done at home, not necessarily on an employer-issued laptop; it is person-time, not device-on time."
+   },
+   {
+    "claim": "Work-at-home is a minority of workdays even among those who work: only about a third of people who worked on an average day did any of it at home",
+    "number": "34.5% of those who worked; 51.4% among bachelor's-and-higher; 37.837M worked at home on an average day of 167.443M employed (22.6%)",
+    "source": "BLS ATUS 2025 annual averages, Table 6 (archived bls.gov/news.release/atus.t06.htm)",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home",
+    "year": "2025"
+   },
+   {
+    "claim": "DERIVED: a company laptop that goes home is idle the overwhelming majority of wall-clock time — the resource relocates rather than disappears, and Tier B's harvestable window is large",
+    "number": "5.10 h of 24 h = 78.8% idle on a work-at-home day; weighted by 34.5% incidence, ~1.76 h/day expected use = ~92.7% of hours idle",
+    "source": "Derived by this analysis from BLS ATUS 2025 Table 6 (5.10 h, 34.5%)",
+    "status": "SECONDARY",
+    "tier": "B-at-home",
+    "year": "2025",
+    "caveat": "Derived arithmetic, not a published BLS statistic. Assumes laptop use tracks the person's at-home work hours and ignores sleep/lid-closed states, which reduce harvestable hours further."
+   },
+   {
+    "claim": "Cloud MDM reaches off-network devices: Intune runs entirely in the cloud, and compliance decisions are explicitly decoupled from network location",
+    "number": "\"runs entirely in the cloud, with no on-premises infrastructure required\"; decisions based on device posture \"not on whether the device is on the corporate network\"",
+    "source": "Microsoft Learn, 'What is Microsoft Intune?', learn.microsoft.com/en-us/intune/intune-service/fundamentals/what-is-intune (ms.date 2026-05-06)",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home",
+    "year": "2026"
+   },
+   {
+    "claim": "Intune management traffic is ordinary outbound HTTPS to public endpoints — no VPN, gateway, or corporate LAN in the path",
+    "number": "\"As a cloud-only service, Intune doesn't require an on-premises infrastructure such as servers or gateways\"; all endpoints public FQDNs on TCP 80/443",
+    "source": "Microsoft Learn, 'Network endpoints for Microsoft Intune', learn.microsoft.com/en-us/mem/intune/fundamentals/intune-endpoints (updated 2026-07-01)",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home",
+    "year": "2026"
+   },
+   {
+    "claim": "Apple MDM push works over any consumer internet connection, not a corporate network",
+    "number": "APNs needs \"a persistent connection to Apple's servers over Ethernet, cellular data (if capable), or Wi-Fi\"; TCP 5223, plus 443 or 2197; Apple 17.0.0.0/8",
+    "source": "Apple Support article 102266, 'If your Apple devices aren't getting Apple push notifications' (published 2023-08-22)",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home",
+    "year": "2023"
+   },
+   {
+    "claim": "Apple Declarative Device Management strengthens the off-network case: devices apply and enforce policy autonomously, without server polling or continuous connectivity",
+    "number": "device \"asynchronously appl[ies] settings and report[s] status back... without constant polling\"; stays in desired state \"even without internet connectivity\"",
+    "source": "Apple Platform Deployment guide, 'Intro to declarative device management' (support.apple.com/guide/deployment/depb1bab77f8)",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home"
+   },
+   {
+    "claim": "Harvesting on an employee's meter costs ~31% more per kWh than harvesting on the business's meter",
+    "number": "US avg retail price YTD Jan-May 2026: residential 18.11 vs commercial 13.79 c/kWh = 1.31x; May 2026 alone 18.44 vs 13.54 = 1.36x",
+    "source": "EIA Electric Power Monthly, Table 5.3 (eia.gov/electricity/monthly), data through May 2026",
+    "status": "VERIFIED-FETCHED",
+    "tier": "both",
+    "year": "2026",
+    "caveat": "EIA notes 2025 and 2026 values are preliminary estimates based on a cutoff model sample."
+   },
+   {
+    "claim": "DERIVED: the energy-to-harvest figure re-priced at residential rates stays negligible against revenue",
+    "number": "~$0.003/hr commercial scales to ~$0.0039-0.0041/hr residential (x1.31-1.36) vs $0.05-0.20/hr spot-like revenue",
+    "source": "Derived from the project's existing ~$0.003/hr energy figure and EIA EPM Table 5.3 residential/commercial ratio",
+    "status": "SECONDARY",
+    "tier": "B-at-home",
+    "year": "2026",
+    "caveat": "Derived. Excludes residential time-of-use premia, which can materially raise evening/overnight marginal rates in CA and NY."
+   },
+   {
+    "claim": "US law can force the employer to pay: California Labor Code 2802 is a mandatory indemnity for necessary expenditures incurred in obeying the employer",
+    "number": "\"shall indemnify his or her employee for all necessary expenditures or losses incurred by the employee in direct consequence of the discharge of his or her duties\"",
+    "source": "California Labor Code 2802(a), leginfo.legislature.ca.gov (lawCode=LAB, sectionNum=2802)",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home"
+   },
+   {
+    "claim": "Cochran v. Schwan's Home Service (2014) extended 2802 to require reasonable reimbursement of home utilities and phone used for work even absent marginal cost — the leading home-expense authority",
+    "number": "Cochran v. Schwan's Home Serv., Inc., 228 Cal. App. 4th 1137 (2014)",
+    "source": "Cited from model knowledge; opinion not fetchable under the no-WebSearch constraint",
+    "status": "UNVERIFIED",
+    "tier": "B-at-home",
+    "year": "2014",
+    "caveat": "Citation and holding not verified against a fetched primary source. Verify before it becomes load-bearing."
+   },
+   {
+    "claim": "UK puts an explicit tax-free price on an employee's home electricity for work: HMRC allows a flat homeworking allowance with no tax or reporting",
+    "number": "GBP 6.00/week (GBP 26/month) from 2020-21 onwards; previously GBP 4.00/week (GBP 18/month) for 2012-13 to 2019-20",
+    "source": "GOV.UK, 'Expenses and benefits: homeworking — Homeworking expenses and benefits that are exempt from tax'",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home",
+    "caveat": "Requires an agreed, regular homeworking arrangement. GBP 6/week is ~GBP 0.036/hr over a 168-hour week — same order as the energy cost, so the safe harbour would roughly cover a harvested machine."
+   },
+   {
+    "claim": "Paying households for a controllable in-home resource is established large-scale utility practice — the closest operating precedent for Tier B compensation",
+    "number": "10,658,027 US residential customers enrolled in demand response in 2024 (10,950,828 all sectors); 4,785 MW actual residential peak savings",
+    "source": "EIA Electric Power Annual, Table 10.3, 'Demand Response — Yearly Energy and Demand Savings', Form EIA-861",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home",
+    "year": "2024"
+   },
+   {
+    "claim": "The going rate for that household precedent is low — a useful anchor for what consent costs",
+    "number": "$273.346M residential customer incentives 2024 over 10.658M households = ~$25.6/household-year (derived); $1.2247B all sectors",
+    "source": "EIA Electric Power Annual, Table 10.4, 'Demand Response — Program Costs', Form EIA-861; per-household figure derived against Table 10.3",
+    "status": "VERIFIED-FETCHED",
+    "tier": "B-at-home",
+    "year": "2024",
+    "caveat": "The per-household division is this analysis's arithmetic; EIA publishes only aggregate incentives and enrolment counts."
+   },
+   {
+    "claim": "Organizations have already enrolled device fleets in donated distributed compute at scale — the operational template for Tier A and B exists",
+    "number": "800,000+ people, 80 countries, 450 organizations, computing power of 7 million computers/phones/tablets; 6 billion+ calculations",
+    "source": "World Community Grid, About Us (worldcommunitygrid.org) — founded by IBM 2004, assets transferred to Krembil Research Institute (UHN) in 2021",
+    "status": "VERIFIED-FETCHED",
+    "tier": "both",
+    "year": "2021",
+    "caveat": "Cumulative lifetime totals, not concurrent devices; the page does not separate business-enrolled fleets from individual volunteers among the 450 organizations."
+   },
+   {
+    "claim": "Intel/United Devices philanthropic 'screensaver' grids (2001-2007) are the other named corporate-fleet precedent",
+    "number": "~3.5 million PCs claimed at peak",
+    "source": "Model knowledge; no primary source fetched (project sites defunct)",
+    "status": "UNVERIFIED",
+    "tier": "both",
+    "year": "2001",
+    "caveat": "Number not verified; treat as illustrative only."
+   },
+   {
+    "claim": "Documented crypto-mining-on-employer-hardware incidents (the involuntary version of Tier B) exist but no primary record was retrievable here",
+    "number": "n/a",
+    "source": "Attempted NSF Office of Inspector General semiannual reports (nsf.gov/oig) — 404 on fetch",
+    "status": "UNVERIFIED",
+    "tier": "both",
+    "caveat": "Do not cite. The Harvard Odyssey Dogecoin incident (2014) and NSF OIG bitcoin-mining findings are recalled but unfetched."
+   }
+  ],
+  "notes": "TIER B VERDICT. (1) Operable: yes. Intune \"runs entirely in the cloud, with no on-premises infrastructure required\" and judges posture \"not on whether the device is on the corporate network\"; required endpoints are public FQDNs on TCP 443. Apple APNs needs only Ethernet/cellular/Wi-Fi to 17.0.0.0/8; DDM pushes enforcement into the device. A laptop at a kitchen table is as controllable as one at a desk. The binding constraint is consent, power billing and residential uplink, not technical reach.\n\n(2) Whose cost: the employee's, ~31% premium (18.11 vs 13.79 c/kWh), moving harvest energy ~$0.003 to ~$0.004/hr. CA Labor Code 2802 makes indemnification mandatory. HMRC prices it at GBP 6/week tax-free, ~GBP 0.036/hr over a full week.\n\n(3) Precedent: both ways. 10.66M US households in demand response, paid $273M/yr (~$26/household-year). World Community Grid: 450 organizations, 7M devices.\n\nDURATION: 5.10 h of at-home work per work-at-home day, on 34.5% of workdays, so ~1.76 h/day and ~93% idle. More idle at home than at the office.\n\nCAVEATS: ATUS is person-time, not device-on time. Cochran and the Intel figure UNVERIFIED; no mining incident retrieved. EIA 2025-26 preliminary."
+ }
+}

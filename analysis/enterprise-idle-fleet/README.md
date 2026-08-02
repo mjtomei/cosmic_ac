@@ -70,9 +70,58 @@ supply into two tiers that should be sized separately:
 
 Sizing them separately is the honest way to present the resource: Tier A is what
 the argument can claim without asking anyone to change behaviour, and Tier B is
-the upside if the incentive is arranged. *Sweep in flight for the duration data
-that sets Tier B's size — how many hours a work laptop is actually used at home,
-as opposed to merely present.*
+the upside if the incentive is arranged.
+
+### Tier sizing, from time-use duration (sweep 2026-08-02, `sweep-tier-b.json`)
+
+The key correction to the incidence figures everyone quotes: BLS ATUS reports
+*duration*, and it is short. **On a day someone works at home they work there
+5.10 hours** (5.35 full-time; 5.18 for degree-holders, the population most
+likely to hold a company laptop). At-home workdays are ~2.9 h *shorter* than
+on-premises ones (5.35 vs 8.21 full-time).
+
+| | Work-active | Idle | Idle share |
+|---|---|---|---|
+| Tier A, on premises (weekday) | 8.21 h | 15.8 h | 66% |
+| Tier A, on premises (full week) | 41 h | 127 h | **76%** |
+| Tier B, at home, laptop used | 5.10 h | 18.9 h | **79%** |
+| Tier B, at home, laptop unopened | 0 h | 24 h | 100% |
+
+**The emergency-laptop population is measurable, and Matthew's read is right.**
+34.5% of people who worked did *any* work at home (ATUS 2025), while only 28% of
+paid full days were work-from-home days (SWAA, Sept 2024) — the gap is partial
+and incidental use. And 61% of US full-time employees are fully on-site (SWAA),
+so most laptops that leave the building are not doing a workday at anyone's
+kitchen table. Averaged across all workers and workdays, at-home work is
+**~1.76 h per worker per day** (0.345 × 5.10, our arithmetic).
+
+**Tier B is flat, not growing** — worth knowing before betting on it:
+2.94 h/day and 23.7% incidence (2018) → 5.41 h and 33.8% (2022) → 5.10 h and
+34.5% (2025). The step change happened once, in 2020–22, and has since plateaued.
+Geography matters more than time now: in the EU only 8.9% usually work from home
+and 77.4% never do (Eurostat lfsa_ehomp 2024), so Tier B is proportionally much
+smaller there while Tier A is correspondingly larger.
+
+### Tier B is technically operable; the constraint is consent and billing
+
+Cloud MDM reaches a laptop at a kitchen table exactly as it reaches one at a
+desk. Microsoft Intune "runs entirely in the cloud, with no on-premises
+infrastructure required" and evaluates device posture "not on whether the device
+is on the corporate network," over public HTTPS endpoints; Apple's push service
+needs only Ethernet, Wi-Fi or cellular reachability to Apple's range. **There is
+no technical gap between the tiers** — the differences are that the employee's
+meter pays (18.11 vs 13.79 c/kWh, ~31% more) and the uplink is residential.
+
+Two governance facts follow. **The employer may be legally obliged to pay**:
+California Labor Code 2802(a) requires indemnifying employees for "all necessary
+expenditures or losses incurred… in direct consequence of the discharge of
+duties," which is the statute under which home-utility reimbursement claims are
+brought. And **paying households for a controllable in-home resource is already
+routine at scale**: 10.66M US residential customers were enrolled in utility
+demand-response programmes in 2024, receiving $273.3M in incentives — about
+**$25.60 per household per year** (our arithmetic on EIA Electric Power Annual
+Tables 10.3/10.4). That is a real anchor for what household consent costs, and
+it is low relative to the 18–73× energy margin above.
 
 **Unmeasured, and it matters:** the prevalence of off-hours remote access to
 business desktops, and their actual baseline utilisation in 2026. The only
