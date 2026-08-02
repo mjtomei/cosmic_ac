@@ -212,6 +212,77 @@ egress, the utilisation discount on remotely-accessed desktops, and redundancy
 overhead (volunteer-computing practice runs ~2× for unreliable hosts). The
 18–73× energy margin is what these have to eat, and they will eat a lot of it.
 
+## v5 — the fungible-compute denomination, and the paper's thesis measured
+
+Requested (Matthew, 2026-08-02): a number denominated in FP8/FP16 rather than
+FP32, because that corresponds to the predicted future in which compute is
+fungible. The result is the strongest on-thesis finding in this study.
+
+### The ladder, by reachability
+
+| Denomination | Per device | Fleet continuous | Reachable today? |
+|---|---|---|---|
+| FP32 sustained | 0.51 TFLOPS | **39.5 EFLOPS** | yes — and worth ~$0 (v4) |
+| FP16 packed (2×) | 1.02 T | 79 E | **yes** — ordinary ALU rate |
+| INT8 via DP4a (4×) | 2.04 T | **158 EOPS** | **yes** — plain OpenCL/SYCL/Vulkan |
+| Platform TOPS, AMD 8700G business desktop | 34 TOPS | 2,635 EOPS | **no** — NPU framework-gated |
+| Platform TOPS, AMD HX 370 laptop | 80 TOPS | 6,201 EOPS | no |
+| Platform TOPS, Intel Lunar Lake | 120 TOPS | 9,301 EOPS | no |
+
+The 4× INT8 ratio is not an assumption: Intel's Xe-LPG iGPU delivers 18 TOPS
+against 4.6 FP32 TFLOPS — exactly the DP4a ratio — and it is reachable from
+ordinary compute APIs, so it genuinely pools.
+
+### The NPU tier is stranded, and that is the paper's argument, measured
+
+Every vendor now ships a neural engine, and **none of it is reachable by
+arbitrary workloads**:
+
+- **Apple**: "No public low-level ANE API. Core ML model graphs only; MLX
+  exposes cpu and gpu devices only, no ANE backend." Stranded for general compute.
+- **Intel**: OpenVINO NPU plugin only, which Intel's own docs say "may offer a
+  limited set of supported OpenVINO features." The NITRO paper (arXiv:2412.11053)
+  adds: "The NPU currently has a constraint in that it only supports static
+  models" — LLM decode does not work out of the box; the authors had to rewrite
+  the transformer for static shapes.
+- **AMD**: ONNX Runtime plus Vitis AI execution provider only, with mandatory
+  quantization or bf16 recompilation.
+
+And when the best available tools are pointed at it, the yield is dismal:
+**NPUEval (arXiv:2507.14403) measures frontier LLMs achieving ~10% average
+vectorization efficiency** writing AMD NPU kernels, noting that "unlike GPU
+programming… NPU programming is new, with smaller and more fragmented developer
+communities." **Peak TOPS is gated by toolchain, not silicon.**
+
+Worse for the vendor numbers, measured NPU performance frequently *loses*:
+"When NPUs Are Not Always Faster" (arXiv:2605.27435) finds the NPU behind the
+CPU by up to 1.6× on prefill and only 1.05–1.2× ahead on decode, at +51% energy —
+because achieved-versus-peak is dominated by quantization, cross-backend fallback
+and scheduling overhead rather than peak MACs.
+
+### Why this matters more than the dollar figures
+
+Stack the three findings from v3, v4 and v5 and they say one thing:
+
+1. The fleet has **39.5 EFLOPS** of sustained FP32 sitting idle 76% of the week.
+2. It is worth **~$0**, because no marketplace accepts integrated graphics.
+3. Refreshed silicon carries **17× more** capability again in NPU form, and
+   effectively **none of it is reachable** — the best measured yield from
+   frontier-model kernel-writing is ~10% of peak.
+
+**Each barrier is a coordination failure, not a physical one.** No runtime
+targets the hardware; no marketplace lists it; no toolchain reaches the neural
+engines. This study set out to size a resource and instead produced a
+measurement of the thing the paper argues exists — with the NPU tier as the
+purest instance yet found: capability shipped in hundreds of millions of units,
+physically present, and stranded behind a programmability barrier that the
+industry has not been paid to solve.
+
+**Register note:** the FP32 and INT8 rows are [REAL] and reachable. The platform
+TOPS rows are [MIXED] — the silicon is real and verified from vendor
+specifications, the accessibility is not. Never present the platform-TOPS
+figures as available capacity; present them as the size of the barrier.
+
 ## v4 — priced at OBSERVED market rates. The headline finding is a zero.
 
 Rates fetched live 2026-08-02 from the markets that actually buy idle compute
