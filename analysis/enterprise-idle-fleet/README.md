@@ -212,6 +212,53 @@ egress, the utilisation discount on remotely-accessed desktops, and redundancy
 overhead (volunteer-computing practice runs ~2× for unreliable hosts). The
 18–73× energy margin is what these have to eat, and they will eat a lot of it.
 
+## Method, and a correction to the headline (2026-08-02)
+
+**How the compute was sized.** Device-hours (devices × hours × idle fraction)
+priced at $0.05–0.20 per device-hour, that price being the project's existing
+$0.50/hr datacenter reference at 60–90% spot-like discounts (`cost_model.py`).
+TFLOPS were reported separately and **never reconciled with the price** — which
+turns out to matter.
+
+**The reconciliation, and why the dollar headline is too high.** The $/device-hour
+anchor traces to EC2 Mac dedicated at $0.65/hr. Against the measured 2.9 FP32
+TFLOPS of an M4, that is **$0.22 per TFLOPS-hour** — roughly **5–8× what a
+commodity GPU costs per FP32 TFLOPS-hour** (H100 ≈ $0.03–0.045; the H100 $/hr
+input is UNVERIFIED and needs checking). The gap is not a compute price at all:
+EC2 Mac carries a macOS-licence scarcity rent, because iOS CI/CD must legally run
+on Apple hardware. Anchoring 111M heterogeneous business PCs to it imports a
+premium that does not generalise.
+
+**Consequence: treat the $13–155bn figures as an upper bound with a known upward
+bias, not an estimate.** They are the right shape and the wrong level.
+
+**Compute-denominated sizing** (679B available device-hours/yr, Tier A+B):
+
+| Per-device throughput | TFLOPS-hours/yr | @$0.03/TFLOPS-h | @$0.01 | @$0.003 |
+|---|---|---|---|---|
+| 0.5 TFLOPS (typical integrated graphics) | 0.3T | $10bn | $3bn | $1bn |
+| 1.0 TFLOPS | 0.7T | $20bn | $7bn | $2bn |
+| 2.9 TFLOPS (measured M4) | 2.0T | $59bn | $20bn | $6bn |
+
+**So the defensible market range is single-digit to low-tens of billions per
+year, not $155bn** — and the number is governed by the price column, which is
+where the honest uncertainty lives.
+
+**Why total market size cannot be answered from the supply side alone.** Every
+figure above sizes a *resource*. A market is the intersection with demand, and
+this supply is price-taking: adding hundreds of billions of device-hours moves
+down the demand curve, so the realised price is *endogenous to the supply being
+added*. Two things bound it in opposite directions, and the paper already
+contains both — §4's no-floor argument (machine demand extends toward
+arbitrarily low value, so the curve is long) against the plain fact that
+commodity GPU capacity sets a ceiling price this fleet cannot exceed.
+
+**What would settle it, and is missing:** a demand-side anchor — total addressable
+spend for loosely-coupled, interruptible, non-GPU-class compute. Cloud
+infrastructure spend and AI capex are the obvious references and neither is
+verified here. **Until that exists, the honest claim is the physical resource
+(679B device-hours, 0.3–2.0T TFLOPS-hours/yr) rather than a dollar market size.**
+
 ## Two corrections to the sizing (Matthew, 2026-08-02) — `fleet_sizing_v2.py`
 
 ### (a) Daytime sharing: right in principle, small in effect
