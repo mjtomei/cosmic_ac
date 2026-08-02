@@ -212,6 +212,66 @@ egress, the utilisation discount on remotely-accessed desktops, and redundancy
 overhead (volunteer-computing practice runs ~2× for unreliable hosts). The
 18–73× energy margin is what these have to eat, and they will eat a lot of it.
 
+## Correction: buying up DOES work — the denominator was wrong (Matthew, 2026-08-02)
+
+The v3 conclusion that "the Apple ladder is flat in $/TFLOPS so buying up is
+dominated" was a framing error. Three corrections, two of which the observed data
+confirms outright.
+
+### 1. Per-machine profit rises steeply, and machines are the constraint
+
+| Machine class | Host $/hr | **Per machine, per year** |
+|---|---|---|
+| GTX 1660 / RTX 2060 class | $0.014 | $123 |
+| RTX 3060 12GB | $0.028 | $245 |
+| RTX 3090 24GB | $0.068 | $596 |
+| RTX 4090 | $0.180 | $1,577 |
+| RTX 5090 | $0.229 | **$2,006** |
+
+**16× more revenue from one machine slot.** My $/TFLOPS framing implicitly asked
+"where do I get cheapest FLOPS per dollar," which is the right question only if
+dollars are the constraint. **They are not — slots are.** A business has N
+employees, therefore N desks, therefore N machine slots. It cannot put 28 Mac
+minis on one desk. The real question is "given one slot, how capable should the
+machine be," and under a slot constraint **buying up strictly dominates**: both
+total and per-machine profit rise, exactly as Matthew said.
+
+This also reverses the earlier "N minis beat one Studio" conclusion. That is
+true per dollar and false per desk, and per desk is the binding version.
+
+### 2. Consolidation and $/FLOP — the data says flat, but that is not the mechanism
+
+Testing the "consolidated compute sells for more per FLOP" hypothesis directly:
+
+- **Salad host rates per FP32 TFLOP** run $1.91–2.19 milli-$/TFLOPS-hr from an
+  RTX 3060 to a 5090 — essentially **flat**, revenue tracking FLOPS linearly.
+  (5090 FP32 is verified; the others are approximate and should be re-checked.)
+- **Akash CPU ladder** per vCPU actually **falls** with size: $0.0250 → $0.0165
+  → $0.0150 per vCPU-hour from 1 to 8 vCPU. Consolidation is *discounted* there.
+
+So on today's marketplaces the per-FLOP premium for consolidation is not visible.
+
+### 3. But the premium is real — it is categorical, not proportional
+
+The mechanism is the same one v4 uncovered at the bottom of the range: **capability
+thresholds, not ratios.**
+
+- Below 8GB VRAM there is **no bid at all** — not a lower price, zero.
+- A Mac Studio M3 Ultra with up to 512GB unified memory at 819GB/s runs models
+  that **no quantity of base Mac minis can run**, because the job must fit inside
+  one machine's memory.
+
+A workload class you cannot serve pays nothing regardless of your FLOPS. So
+buying up buys *access to workload classes*, and the return appears as a step
+function at each threshold rather than as a better rate per FLOP. That is why
+the flat $/TFLOPS curve is compatible with buying up being correct: the FLOPS
+price is flat, the *eligible set* is not.
+
+**Consequence for the model:** the optimisation case should be evaluated per
+machine slot against the thresholds it crosses (VRAM eligibility, unified-memory
+capacity, framework support), not per dollar against a FLOPS rate. The earlier
+per-dollar treatment understated the case.
+
 ## v5 — the fungible-compute denomination, and the paper's thesis measured
 
 Requested (Matthew, 2026-08-02): a number denominated in FP8/FP16 rather than
