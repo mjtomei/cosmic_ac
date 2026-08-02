@@ -1,8 +1,17 @@
 # Enterprise idle fleets as a federation substrate
 
-Question (Matthew, 2026-08-02): are business laptops left plugged in at offices
-overnight a more reliable federation resource than household consumer devices,
-with owners who are incentivised to sell the idle capacity?
+Question (Matthew, 2026-08-02): are business machines at the place of business a
+more reliable federation resource than household consumer devices, with owners
+incentivised to sell the idle capacity?
+
+**Framing correction (Matthew, same day) — this note was first written against
+the wrong question.** The first pass asked whether machines are *currently left
+on overnight*, which made sleep defaults look like a blocker. They are not. Sleep
+timers are shipping defaults that bind manufacturers; a group policy or MDM
+profile overrides them, and enterprise fleets are centrally controlled by
+definition. The machines do not need to be awake today — they need to be
+**present**, **remotely controllable**, and **profitable to run**. Everything
+below is organised on those three axes.
 
 Method: four agent sweeps over primary sources only — EIA CBECS microdata, EIA
 Electric Power Monthly, Eurostat APIs, BEA fixed assets, SEC filings, EPA
@@ -13,8 +22,55 @@ and is **not** repeated as fact here.
 
 ## The answer in one line
 
-The premise is half right, and the wrong half is the laptop half: **laptops go
-home; desktops stay.** The strong version of the idea is a desktop story.
+**Presence is the only real constraint, and the economics clear it by one to two
+orders of magnitude.** Laptops go home; desktops stay — so the strongest version
+is a desktop story, with docked laptops as a bonus tier. Control is solved
+(that is what MDM is), and profitability is not close: energy is ~$0.003/hr
+against $0.05–0.20/hr of spot-like revenue.
+
+## 1. Presence — the binding constraint
+
+Desktops are always at the place of business: **63.85M** in US commercial
+buildings, mains-powered, no battery to age, better sustained thermals.
+Laptops are partly present — the one after-hours census found **80% of docking
+stations empty** (LBNL-53729, 2004, n=107), and hybrid work has since taken 35%
+of employed people home on a given day, 51% among degree-holders (BLS ATUS 2025).
+Docked laptops are a real but smaller tier layered on the desktop base.
+
+## 2. Control — solved, and it is the structural advantage
+
+Sleep-as-shipped rules (EU Ecodesign 617/2013; ENERGY STAR v8 §3.3.1) bind
+*manufacturers at the point of sale*, not operators: a GPO or MDM profile
+changes fleet power policy centrally. ENERGY STAR in fact *requires* notebook
+Wake-on-LAN to function on AC power (§3.3.1 ii), so the docked subset is
+remotely wakeable by specification. Central management is near-universal at
+scale — 98.1% of employees at EU firms of 250+ work somewhere issuing managed
+portable devices (Eurostat), and one MDM vendor alone administers 33.2M Apple
+devices across 76,500 organisations (Jamf 10-K FY2024).
+
+**The decisive point is the decision unit.** One IT policy change enrols ten
+thousand machines at once; consumer federation needs ten thousand separate
+consent decisions for the same capacity. Since this paper's whole thesis is that
+the resource stays stranded for *coordination* reasons rather than physical
+ones, an owner who can commit a fleet with a single decision is not a marginal
+improvement on the household case — it is a different order of coordination
+cost, and it is the reason to prefer enterprise supply.
+
+## 3. Profitability — not close
+
+Energy is the only marginal cost, since the hardware is already bought,
+amortised, and managed (the S3 "stranded compute" case). At the measured 20 W
+for an Apple-class SoC under sustained load and the commercial rate of
+13.79 c/kWh: **$0.0028/hr**, about 3 cents per twelve-hour night, ~$8/machine/yr
+over 250 nights. A 65 W desktop under load is $0.009/hr. Against the project's
+own revenue reference (datacenter $0.50/hr at 60/75/90% spot-like discounts →
+$0.20/$0.125/$0.05 per hour), margins run **73×, 45× and 18×** on energy.
+Businesses also buy power ~24% below households (13.79 vs 18.11 c/kWh), so the
+same machine is cheaper to run at the office than at home.
+
+Remaining real costs, unquantified here and needed before this is a business
+case: office HVAC penalty for rejecting the heat, IT administration, security
+review, and hardware wear. The 18–73× headroom is what those have to eat.
 
 ## What supports the idea
 
@@ -38,22 +94,23 @@ Energy to harvest one idle Apple-class SoC ≈ 20 W × 13.79 c/kWh ≈ **$0.003/
 about 3 cents a night. Both figures combine sources across years; treat as
 order-of-magnitude sizing, not measurement.
 
-## What cuts against it
+## What still cuts against it (after the reframe)
 
 1. **Most laptops leave.** 80% of 107 docking stations were empty after hours,
    and only 24% of laptops found were clearly on (LBNL-53729). Hybrid work has
    sharpened this: 35% of employed people did some work at home on a given day
    in 2025, 51% among degree-holders (BLS ATUS 2025).
-2. **Sleep is mandated, as shipped.** EU Ecodesign Reg. 617/2013 requires
-   notebooks to enter sleep within 30 min of inactivity, capped at ≤3 W, and to
-   throttle gigabit links on the way into sleep; ENERGY STAR v8 §3.3.1 imposes
-   the same default in the US. The counterfactual to harvesting is not a wasteful
-   idle machine but a 3 W sleeping one.
-3. **Waking the fleet is harder than folklore.** Windows WOL does not work from
-   the default shutdown state (MS KB2776718); Modern Standby machines have no S3
-   to wake from, and Windows 11 24H2 disables most wake sources on detected
-   drain. ENERGY STAR does require notebook WOL on AC power — the docked subset
-   is reachable by design, which is the pro-case's best single fact.
+2. ~~**Sleep is mandated, as shipped.**~~ **Withdrawn on the reframe** — these
+   are shipping defaults binding manufacturers, overridable by fleet policy. What
+   survives is only the accounting point: the counterfactual is a ≤3 W sleeping
+   machine, so the energy *delta* charged against revenue is the full load draw,
+   which is what the margins above already use.
+3. **Waking is an engineering detail, not a barrier — but a real one.** Windows
+   WOL does not work from the default shutdown state (MS KB2776718) and Modern
+   Standby machines have no S3 to wake from, so a fleet cannot simply be
+   magic-packeted awake from off. The fix is policy, not hardware: set the fleet
+   to stay awake or to scheduled-RTC-wake during the harvest window. Costs an
+   MDM profile, not a capability.
 4. **Endpoint policy gives IT the tooling to refuse.** NIST SP 800-53r5 CM-7(5)
    (deny-all, permit-by-exception execution), CM-10 (control P2P specifically),
    CM-6 (most restrictive setting consistent with operations). macOS Gatekeeper
@@ -82,6 +139,11 @@ studies with undefined denominators (Forrester TEI on help tickets; Omdia's
 argument should not lean on Macs specifically.**
 
 ## The open measurement
+
+Under the corrected framing the question to measure is **presence and
+controllability**, not current power state: what fraction of an organisation's
+fleet is physically on premises and MDM-reachable outside working hours. That is
+answerable from any single company's MDM console in an afternoon.
 
 Nobody has repeated the after-hours census since 2004. LBNL-53729 predates
 modern sleep defaults entirely, its laptop sample is 37 machines, and the
