@@ -212,6 +212,78 @@ egress, the utilisation discount on remotely-accessed desktops, and redundancy
 overhead (volunteer-computing practice runs ~2× for unreliable hosts). The
 18–73× energy margin is what these have to eat, and they will eat a lot of it.
 
+## v4 — priced at OBSERVED market rates. The headline finding is a zero.
+
+Rates fetched live 2026-08-02 from the markets that actually buy idle compute
+(Salad's demand-monitor API, Vast.ai's bundles API, Akash's pricing API,
+RunPod's price page).
+
+### The business fleet as it exists today has no bid
+
+> **"Salad does not currently support Intel dedicated GPUs, or Intel integrated
+> GPUs."** — Salad support docs, fetched 2026-08-02. Container jobs require
+> RTX 2070 or better with 8GB VRAM.
+
+- **Salad**: integrated graphics → not eligible for any paying workload.
+- **Vast.ai**: no CPU-only offer type exists; hosting requires Ubuntu, NVIDIA
+  drivers and inbound router ports — a managed Windows business desktop
+  cannot participate at all.
+- **Akash**: a listed GTX 1050 2GB carries *no price*. Never leased.
+- Across all three, **below ~8GB VRAM there is no bid.**
+
+**What hosts are actually paid** (Salad, per idle machine-hour): $0.014 floor
+(GTX 1660 / RTX 2060 class) · $0.028 (RTX 3060 12GB) · $0.068 (RTX 3090) ·
+$0.180 (RTX 4090) · $0.229 (RTX 5090). CPU-only comparables exist on the
+*renter* side only — Salad $0.024/hr for 4 vCPU/8GB, Akash $0.066/hr for
+4 vCPU/16GB, against $0.25–0.29/hr for the same spec on AWS/GCP/Azure.
+
+### Fleet value, re-priced
+
+| Basis | $/device-hour | Fleet value/yr |
+|---|---|---|
+| v1/v2 assumption | $0.05–0.20 | $34–136bn |
+| **iGPU business PC, today** | **$0.00** | **~$0** |
+| If a CPU-slice market existed (host ≈30–50% of renter) | $0.008–0.033 | $5–22bn |
+| With an entry discrete GPU added | $0.014–0.048 | $10–33bn |
+| With RTX 4090/5090-class | $0.180–0.229 | $122–156bn |
+
+**The v1/v2 range did not merely overstate the price — it priced a class of
+machine that has no bid at all.** The correction is not a discount; it is a
+category error, now fixed.
+
+### What this does to the argument — it sharpens it
+
+The resource is not stranded by physics, or by economics, or even by the
+consent and control problems examined above. **It is stranded because the
+market will not accept that hardware class**: no runtime targets it, no
+marketplace lists it, no buyer bids for it. The machines are present, powered,
+centrally managed, cheap to run, and idle 76% of the week — and worth nothing,
+because nobody has built the thing that would buy what they have.
+
+That is this paper's collective-action thesis appearing inside its own supply
+estimate. The gap between the fleet's physical capacity (39.5 EFLOPS sustained)
+and its market value (~$0) is not a modelling artifact — **it is a measurement
+of the coordination failure the paper is about.**
+
+### What the GPU upgrade actually buys
+
+Not "more compute" — **eligibility**. The 8GB-VRAM threshold is the line between
+a machine with no bid and a machine with a published price. That reframes the
+optimisation case: a business does not add a card to earn proportionally more,
+it adds a card to enter the market at all. The 70 W A2000 with 12GB clears the
+VRAM bar while fitting an SFF chassis, which is why it remains the efficient
+rung despite its modest FP32.
+
+### Honest caveats on the zero
+
+The $0 is the price on *existing consumer-GPU marketplaces*, which are built for
+CUDA workloads. It is not proof that business CPU capacity is worthless — CI/CD
+runners, batch, transcoding and simulation all consume ordinary CPU, and the
+CPU-slice comparables above show real prices in that shape. It is proof that
+**no such market presently reaches this fleet**, which is a different and more
+interesting claim. The host-share of renter price is unpublished on Vast and
+Akash; the 30–50% band is inferred from Salad's disclosed split.
+
 ## v3 — regenerated on the real installed mix (`fleet_sizing_v3.py`)
 
 The installed-mix sweep (4 agents, 2026-08-02) verified the volume business SKU
