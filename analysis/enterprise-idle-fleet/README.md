@@ -212,6 +212,74 @@ egress, the utilisation discount on remotely-accessed desktops, and redundancy
 overhead (volunteer-computing practice runs ~2× for unreliable hosts). The
 18–73× energy margin is what these have to eat, and they will eat a lot of it.
 
+## v3 — regenerated on the real installed mix (`fleet_sizing_v3.py`)
+
+The installed-mix sweep (4 agents, 2026-08-02) verified the volume business SKU
+from **nine Lenovo PSREF official spec PDFs**. Dell (403) and HP (503) blocked
+fetching, so this is single-vendor evidence — but it is unambiguous:
+
+- **ThinkPad T14/L14 (volume laptop): every graphics option is integrated.
+  There is no discrete GPU on the spec sheet at all.**
+- **ThinkCentre M70q/M75q (volume tiny/SFF desktop): all integrated** — Intel
+  UHD 710/730/770, AMD Radeon 740M/760M/780M.
+- Only the M70t **tower** offers discrete cards.
+- Volume CPU tier is low-power: T-suffix i3/i5, U-series Core Ultra.
+- Lenovo's own footnote: Arc graphics requires 16GB **dual-channel** memory
+  "otherwise it will function as Intel Graphics" — single-channel fleets are
+  derated below even these figures.
+
+### The headline correction
+
+| Basis | FP32/device | Fleet EFLOPS | vs v1 |
+|---|---|---|---|
+| v1 assumption (measured Apple M4) | 2.9 | 224.8 | 1.00× |
+| Peak, weighted low | 0.6 | 46.5 | 0.21× |
+| **Peak, weighted central** | **0.85** | **65.9** | 0.29× |
+| Peak, weighted high | 1.2 | 93.0 | 0.41× |
+| **Sustained central (peak × 0.6 derate)** | **0.51** | **39.5** | **0.18×** |
+
+**The fleet is ~5.7× smaller than v1 said.** Every compute-denominated figure in
+v1/v2 should be divided by roughly six. Two compounding reasons: the volume
+business machine is an integrated-graphics part around 0.85 TFLOPS peak, and an
+iGPU shares the CPU's DDR bus (~90 GB/s dual-channel DDR5-5600), so it is
+memory-bound well below peak.
+
+**Note the asymmetry that makes even this generous:** the 2.9 figure for the M4
+was *sustained and measured*; the 0.85 here is *peak*. Comparing them already
+flatters the business fleet, so the true gap is wider than 5.7×.
+
+### What optimisation buys, per device — power is the constraint
+
+| Config | FP32 | × base | Card | Watts | Energy/yr | Net vs $355–1,419 budget |
+|---|---|---|---|---|---|---|
+| Business PC as-is | 0.51 | 1× | — | 65 | $79 | +$276 / +$1,340 |
+| **+ RTX A2000 (SFF-safe)** | **8.0** | **16×** | $525 | 135 | $163 | **+$192 / +$1,256** |
+| + RTX 5070 | 30.9 | 61× | $549 | 315 | $381 | −$26 / +$1,038 |
+| + RTX 5090 | 104.8 | 205× | $1,999 | 640 | $773 | −$418 / +$646 |
+
+**The efficient rung is the 70 W low-profile professional card** — 16× the
+capability, fits an existing small-form-factor chassis without a PSU upgrade, and
+leaves the revenue budget intact. The 5070 is **already loss-making at the low
+end of the budget** once power is charged, and the 5090 is loss-making by $418
+before any other cost. Above ~250 W this stops being an idle-capacity business
+and becomes a power-purchasing business.
+
+### Fleetwide optimisation — an upper bound, not a forecast
+
+As-is 39.5 EFLOPS → +A2000 fleetwide 620 EFLOPS → +5070 fleetwide 2,395 EFLOPS.
+**Treat these as ceilings.** They assume every machine takes a card, which the
+SKU evidence says is impossible: laptops and tiny/SFF desktops have no slot, and
+only the tower chassis accepts one. The tower share of commercial desktop volume
+was not verified and is the single input that would make this real.
+
+### Dollars deliberately omitted from v3
+
+v3 reports **capacity, not dollars**, because the dollar anchor was shown to be
+inflated — the EC2 Mac rate embeds a macOS-licence scarcity rent — and its
+replacement is still in flight. Two denominations are being fetched: observed
+market rates per machine-hour (today), and FP16/FP8/NPU throughput (the fungible
+-compute future). Dollar figures return when those land.
+
 ## The device specs, answered (sweep 2026-08-02) — and two surprises
 
 Earlier the "optimised hardware" scenario had a justified budget with **no specs
