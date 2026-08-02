@@ -212,6 +212,77 @@ egress, the utilisation discount on remotely-accessed desktops, and redundancy
 overhead (volunteer-computing practice runs ~2× for unreliable hosts). The
 18–73× energy margin is what these have to eat, and they will eat a lot of it.
 
+## Medium term: laptops enter, and the desk node becomes an asset
+## (Matthew, 2026-08-02)
+
+Two corrections to the near-term framing above. Excluding laptops assumed the
+market stays CUDA-and-8GB-VRAM shaped; and ruling out desktops-at-every-desk
+applied *today's* logic — machines are a cost to minimise — to a future in which
+they are a revenue source.
+
+### Scenario C — the laptop market opens, and laptops win on power
+
+If the eligibility gate falls as runtimes broaden (which is this paper's own
+thesis, not an outside assumption), 47.76M laptops enter the market. Their
+advantage is not throughput but **wattage**:
+
+| Laptop rate | Net/machine/yr | Fleet net |
+|---|---|---|
+| $0.002/hr | −$16 | −$0.8bn |
+| **$0.0041/hr** | **breakeven** | — |
+| $0.010/hr | +$44 | $2.1bn |
+| $0.020/hr | +$118 | $5.6bn |
+
+**A laptop clears its own power at $0.004/hr; an entry desktop GPU needs
+$0.032/hr — eight times more.** At 30W a laptop burns $31/yr of electricity
+against $284/yr for a GPU desktop. So in the medium term the laptop fleet is
+profitable at rates that make cheap desktop GPUs loss-making, which reverses the
+near-term conclusion that laptops are the useless half of the fleet. They are the
+*efficient* half; they are simply the half no market currently accepts.
+
+### Scenario D — compute price escalation makes the desk node an asset
+
+The near-term dismissal of towers-at-every-desk assumed the machine is overhead.
+If compute prices keep rising faster than wages — and the paper already documents
+DRAM contract prices up 58–63% in a quarter with AI consuming ~70% of memory
+output — the desk node becomes a profit centre that justifies its own form factor.
+
+| Compute prices | Desk node net/yr | Share of a $100k employee | Desktop fleet net |
+|---|---|---|---|
+| 1× (today) | $1,233 | 1.2% | $79bn |
+| 2× | $2,466 | 2.5% | $157bn |
+| 3× | $3,699 | 3.7% | $236bn |
+| 5× | $6,165 | 6.2% | $394bn |
+| 10× | $12,330 | **12.3%** | $787bn |
+
+Revenue scales while energy does not — correct if prices rise from demand rather
+than from power costs; if electricity rises too, net compresses.
+
+**The threshold that matters is when the node's earnings become material against
+the cost of the employee sitting at it.** At 1× it is a rounding error nobody
+will restructure procurement for. At 3–5× it is 4–6% of a loaded salary, which is
+the range where a CFO starts specifying hardware for yield rather than for task
+fit. That is the moment the form-factor decision inverts.
+
+### Scenario E — both, which is the realistic shape
+
+These are not alternatives. The employee gets a laptop for mobility; a separate
+node sits at the desk as an **earning asset** — not the work machine, but hardware
+sited where power is cheap, the network is fast, and IT already manages the
+endpoint. Across both fleets: **$81bn/yr at today's prices, $242bn at 3×, $404bn
+at 5×.**
+
+This is the demand-side completion of the paper's financing instrument: §8 says
+the builder can underwrite a device against its future earnings; Scenario D says
+that as compute prices rise, the earnings justify hardware the employee's own
+workload never would. At sufficient compute prices **the office becomes a
+datacenter that happens to have people in it** — which is the same conclusion the
+Movement reaches from the other direction.
+
+**Register:** C is [MIXED] — the fleet and wattages are real, the market opening
+is predicted. D and E are [IMAGINED] with a real anchor in current memory-price
+escalation; the price multiple is a scenario variable, not a forecast.
+
 ## The total market, per-slot optimised — and a narrow profitable window
 
 Recomputed on the corrected framing (per machine slot, thresholds crossed,
