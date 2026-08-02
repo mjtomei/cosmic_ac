@@ -52,6 +52,28 @@ home on a given day in 2025, 51% among degree-holders — BLS ATUS 2025) *and*
 drives remote sessions into the office desktops that remain. The two device
 classes are not independent hedges against the same trend.
 
+**But "went home" is not "in use" (Matthew, 2026-08-02).** A company laptop
+carried home for emergencies and rarely opened is still idle, still
+company-owned, and — since modern MDM is cloud-based — still centrally
+reachable. The resource is *relocated*, not destroyed. What actually changes is
+who pays for power (residential 18.11 c/kWh vs commercial 13.79, so the employee's
+meter is ~31% more expensive) and what the uplink looks like. That splits the
+supply into two tiers that should be sized separately:
+
+- **Tier A — on premises, no behaviour change.** Desktops plus docked laptops.
+  Business pays power at commercial rates, business-grade uplink, single
+  policy decision enrols the fleet. This is the conservative floor.
+- **Tier B — at-home sharing.** Company laptops sitting idle at employees'
+  homes. Requires consent or compensation because the cost lands on the
+  employee's bill, and the uplink is residential. Larger population, weaker
+  per-device economics, extra governance.
+
+Sizing them separately is the honest way to present the resource: Tier A is what
+the argument can claim without asking anyone to change behaviour, and Tier B is
+the upside if the incentive is arranged. *Sweep in flight for the duration data
+that sets Tier B's size — how many hours a work laptop is actually used at home,
+as opposed to merely present.*
+
 **Unmeasured, and it matters:** the prevalence of off-hours remote access to
 business desktops, and their actual baseline utilisation in 2026. The only
 measured fleet idleness on hand is 97.9% mean CPU idleness across a managed
