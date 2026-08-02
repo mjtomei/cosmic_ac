@@ -22,20 +22,42 @@ and is **not** repeated as fact here.
 
 ## The answer in one line
 
-**Presence is the only real constraint, and the economics clear it by one to two
-orders of magnitude.** Laptops go home; desktops stay — so the strongest version
-is a desktop story, with docked laptops as a bonus tier. Control is solved
-(that is what MDM is), and profitability is not close: energy is ~$0.003/hr
-against $0.05–0.20/hr of spot-like revenue.
+**Presence and free headroom are the only real constraints, and the economics
+clear them by one to two orders of magnitude.** Both device classes count: all
+111.6M business PCs are in scope, and they fail differently — laptops go home,
+desktops stay but are more likely to be in use. Control is solved (that is what
+MDM is), and profitability is not close: energy is ~$0.003/hr against
+$0.05–0.20/hr of spot-like revenue.
 
 ## 1. Presence — the binding constraint
 
-Desktops are always at the place of business: **63.85M** in US commercial
-buildings, mains-powered, no battery to age, better sustained thermals.
-Laptops are partly present — the one after-hours census found **80% of docking
-stations empty** (LBNL-53729, 2004, n=107), and hybrid work has since taken 35%
-of employed people home on a given day, 51% among degree-holders (BLS ATUS 2025).
-Docked laptops are a real but smaller tier layered on the desktop base.
+Neither class is excluded; they fail on different axes, and the addressable
+resource is the sum of what survives each failure.
+
+**Desktops — present, but less free than the count implies.** All **63.85M** are
+at the place of business, mains-powered, with no battery to age and better
+sustained thermals. The offsetting factor is that office desktops are more likely
+to be *remotely accessed* and to carry higher baseline utilisation — they are the
+machines people connect back into, and the ones that quietly host shared or
+long-running work. Their raw count therefore overstates their free headroom.
+
+**Laptops — free when present, but often absent.** The one after-hours census
+found **80% of docking stations empty** (LBNL-53729, 2004, n=107); those that
+stayed were 95% plugged in and 60% docked. A laptop left at the office is more
+likely to be genuinely idle than a desktop is.
+
+**The symmetry worth noting:** hybrid work degrades both classes through a single
+cause. It takes laptops out of the building (35% of employed people worked from
+home on a given day in 2025, 51% among degree-holders — BLS ATUS 2025) *and*
+drives remote sessions into the office desktops that remain. The two device
+classes are not independent hedges against the same trend.
+
+**Unmeasured, and it matters:** the prevalence of off-hours remote access to
+business desktops, and their actual baseline utilisation in 2026. The only
+measured fleet idleness on hand is 97.9% mean CPU idleness across a managed
+institutional fleet (Domingues et al., ICPPW 2005) — university teaching labs,
+pre-dating both mass remote access and hybrid work, so it is an upper bound and
+almost certainly a loose one.
 
 ## 2. Control — solved, and it is the structural advantage
 
@@ -140,10 +162,12 @@ argument should not lean on Macs specifically.**
 
 ## The open measurement
 
-Under the corrected framing the question to measure is **presence and
-controllability**, not current power state: what fraction of an organisation's
-fleet is physically on premises and MDM-reachable outside working hours. That is
-answerable from any single company's MDM console in an afternoon.
+Under the corrected framing the question to measure is **presence, reachability,
+and free headroom** — not current power state. For one organisation's fleet:
+what fraction is physically on premises outside working hours, what fraction is
+MDM-reachable, and what fraction is genuinely idle rather than carrying a remote
+session or background work. All three come off the same management console, and
+the third is the one nobody has measured in the remote-access era.
 
 Nobody has repeated the after-hours census since 2004. LBNL-53729 predates
 modern sleep defaults entirely, its laptop sample is 37 machines, and the
