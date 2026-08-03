@@ -1,0 +1,620 @@
+{
+ "peripherals-bom": {
+  "items": [
+   {
+    "item": "Realtek RTL8111H-CG — PCIe GbE MAC+PHY, QFN-32 4x4 (cheapest true 'second NIC' silicon an OEM would design in)",
+    "cost": "$1.3172 @1; $1.1361 @30; $0.9854 @100; $0.9535 @490; $0.9405 @980",
+    "basis": "per-unit-volume",
+    "status": "VERIFIED-FETCHED",
+    "source": "https://www.findchips.com/search/RTL8111H (LCSC listing, fetched 2026-08-03); Win Source also stocks",
+    "applies_to": "case2",
+    "caveat": "IC only; add ~$1-2 (UNVERIFIED) for RJ45+magnetics, EEPROM, passives. Requires a board respin, so it edges toward Case 3 unless the port exists."
+   },
+   {
+    "item": "Realtek RTL8153-VC-CG — USB 3.0 to Gigabit Ethernet controller, integrated PHY, QFN-48 (the chip inside a USB-Ethernet dongle)",
+    "cost": "$3.8182 @1; $2.9560 @10; $2.4294 @30; $1.9887 @100 (LCSC). Win Source: $3.1090 @17 → $2.0730 @145",
+    "basis": "per-unit-volume",
+    "status": "VERIFIED-FETCHED",
+    "source": "https://www.findchips.com/search/RTL8153 (LCSC + Win Source Electronics listings, fetched 2026-08-03)",
+    "applies_to": "case2",
+    "caveat": "No 1k+ break published; $1.99 @100 is the deepest verified. Broker/Asia-catalogue pricing, not an authorized-disti contract price."
+   },
+   {
+    "item": "Microchip LAN7800/Y9X — USB 3.1 Gen1 to 10/100/1000 Ethernet bridge with integrated PHY (Western-disti alternative to RTL8153)",
+    "cost": "$8.91 @1; $7.40 @25; $7.27 @100; $7.26 @520 (Newark). element14 APAC: $12.47 @1 → $10.23 @100",
+    "basis": "per-unit-volume",
+    "status": "VERIFIED-FETCHED",
+    "source": "https://www.findchips.com/search/LAN7800 (Newark 43AC9339, element14 2807466; fetched 2026-08-03)",
+    "applies_to": "case2",
+    "caveat": "~7x the Realtek equivalent. Shows that a brand-name Western supply chain is a real multiplier on this line item."
+   },
+   {
+    "item": "Microchip LAN7801/9JX — USB 3.1 Gen1 to RGMII Ethernet bridge (external PHY required)",
+    "cost": "Microchip direct: $7.95 @1; $6.62 @25; $6.02 @100; $5.55 @1000; $5.28 @5000. Newark: $8.27 @1 → $6.64 @100",
+    "basis": "per-unit-volume",
+    "status": "VERIFIED-FETCHED",
+    "source": "https://www.findchips.com/search/LAN7801 (Microchip manufacturer-direct price ladder + Newark 43AC9340; fetched 2026-08-03)",
+    "applies_to": "case2",
+    "caveat": "One of the few genuine published 1k/5k OEM ladders found. Excludes the external GbE PHY (add ~$1-2, UNVERIFIED)."
+   },
+   {
+    "item": "Intel I210-IT (WGI210IT S LJXT) — PCIe GbE controller, 64-QFN",
+    "cost": "$9.8920 @6; $8.1160 @13; $7.3560 @34; $6.5950 @46 (Win Source, 25,000 in stock)",
+    "basis": "per-unit-volume",
+    "status": "SECONDARY",
+    "source": "https://www.findchips.com/search/I210-IT (Win Source broker listing; EBV Elektronik lists authorized stock at RFQ only). Fetched 2026-08-03",
+    "applies_to": "case2",
+    "caveat": "Broker pricing, not Intel tray price. Intel's ARK price page is Cloudflare-blocked (403) — could not verify."
+   },
+   {
+    "item": "Intel I226-V (KTI226V S RKTU) — 2.5GbE PCIe controller",
+    "cost": "Not published — authorized disti quotes RFQ only, MOQ 4,000 pcs / 4,000-pc package multiple",
+    "basis": "per-unit-volume",
+    "status": "UNVERIFIED",
+    "source": "https://www.findchips.com/search/I226-V (EBV Elektronik, authorized distributor listing; price withheld). Fetched 2026-08-03",
+    "applies_to": "case2",
+    "caveat": "The 4,000-unit MOQ is itself the finding: an OEM-only part, invisible to any retrofit buyer."
+   },
+   {
+    "item": "USB 3.0 Gigabit Ethernet adapter, finished good (TP-Link UE300/UE306; Plugable USB3-E1000) — retrofit path for a separate NIC",
+    "cost": "$11.99-$13.99 (UE300 $12.99 list/$11.99 sale; UE306 $13.99); Plugable USB3-E1000 $19.95, Newegg volume discount $18.75",
+    "basis": "per-unit-retail",
+    "status": "VERIFIED-FETCHED",
+    "source": "https://www.newegg.com/p/pl?d=usb+3.0+gigabit+ethernet+adapter (fetched 2026-08-03)",
+    "applies_to": "case2",
+    "caveat": "A $12 retail dongle is only ~4x the bare RTL8153 at 100-piece pricing, so retrofit is barely penalized on this line."
+   },
+   {
+    "item": "USB-C 2.5GbE Ethernet adapter, finished good",
+    "cost": "Sabrent NT-25GA $25.99; Plugable USBC-E2500 $24.95; WAVLINK WL-NWU341G $28.99; Sabrent NT-C5GA $47.94; Realtek STL-U-1921 $39.99",
+    "basis": "per-unit-retail",
+    "status": "VERIFIED-FETCHED",
+    "source": "https://www.newegg.com/p/pl?d=usb+2.5gbe+ethernet+adapter ; STL-U-1921 from https://www.digikey.com/en/products/result?keywords=RTL8156 (both fetched 2026-08-03)",
+    "applies_to": "case2",
+    "caveat": "2.5GbE roughly doubles the GbE dongle price; only worth it if the rented workload is bandwidth-bound, which idle-compute rental usually is not."
+   },
+   {
+    "item": "USB-C to Gigabit adapters through an electronics distributor (Digi-Key), for OEM-channel comparison",
+    "cost": "Olimex USB-C-GIGABIT $17.02; USB-A-GIGABIT $20.97; USB-C-GIGABIT-HUB $28.85; Manhattan 153454 USB-C GbE + 60W PD $41.99",
+    "basis": "per-unit-retail",
+    "status": "VERIFIED-FETCHED",
+    "source": "https://www.digikey.com/en/products/result?keywords=RTL8153 (Digi-Key Adapters/Converters listing, fetched 2026-08-03)",
+    "applies_to": "case2",
+    "caveat": "Digi-Key showed no quantity breaks on these. Consumer retail (Newegg) is cheaper than the distributor channel for the same function."
+   },
+   {
+    "item": "M.2 NVMe SSD, 256 GB — separate storage for the shared partition (module form)",
+    "cost": "$54.99 Patriot P300P256GM28; $54.79-56.79 Silicon Power SP256GBP34A60M28; $59.99 NX-256-2280; $68.99 Teamgroup; $88.00 Gigabyte",
+    "basis": "per-unit-retail",
+    "status": "VERIFIED-FETCHED",
+    "source": "https://www.newegg.com/p/pl?d=m.2+nvme+256gb (fetched 2026-08-03)",
+    "applies_to": "case2",
+    "caveat": "Aug-2026 sits in a NAND up-cycle; 256GB M.2 was ~$25-30 in 2024. Treat $55 as a cycle-peak number, not a structural floor."
+   },
+   {
+    "item": "M.2 NVMe SSD, 512 GB",
+    "cost": "$85.99 (S501Q-512GB); $91.99 (Patriot P300P512GM28); $99.99 (NX-512-2280); $103.18 (ADATA CN600 512GB Pro)",
+    "basis": "per-unit-retail",
+    "status": "VERIFIED-FETCHED",
+    "source": "https://www.newegg.com/p/pl?d=m.2+nvme+512gb (fetched 2026-08-03)",
+    "applies_to": "case2",
+    "caveat": "$/GB is better at 512GB: doubling capacity costs ~+60%, not +100%."
+   },
+   {
+    "item": "Industrial eMMC BGA, bare component (Swissbit SFEM020GB1ED1TO-I, 20 GB, 153-ball BGA)",
+    "cost": "$20.50 flat at qty 1 through qty 250 (Newark 85AJ4612); element14 APAC $45.88 @1; Farnell £20.63 @1",
+    "basis": "per-unit-volume",
+    "status": "VERIFIED-FETCHED",
+    "source": "https://www.findchips.com/search/SFEM025GB1EA1TO-I-5E-11P-STD → similar part SFEM020GB1ED1TO-I-6F-11P-STD (fetched 2026-08-03)",
+    "applies_to": "case2",
+    "caveat": "$1.03/GB industrial vs $0.21/GB for a consumer 256GB M.2 module. Bare eMMC is the wrong answer for Case 2 unless it must be soldered down."
+   },
+   {
+    "item": "Micron MTFC128GAPALBH-AIT — 128 GB eMMC 5.1, 153-ball TFBGA (mainstream OEM eMMC)",
+    "cost": "Price not published; Newark lists min order qty 1,520 pcs with no price shown",
+    "basis": "per-unit-volume",
+    "status": "UNVERIFIED",
+    "source": "https://www.findchips.com/search/MTFC128GAPALBH-IT (Newark 80AH7070; MOQ 1,520, price withheld). Fetched 2026-08-03",
+    "applies_to": "case2",
+    "caveat": "Commodity NAND/eMMC contract pricing is proprietary; TrendForce's OEM SSD and NAND wafer series are paywalled and render no numbers to a fetch."
+   },
+   {
+    "item": "DDR4 SODIMM 8 GB — additional DRAM if the partition needs its own",
+    "cost": "$56.20 Nemix NE-SS-0054; $57.05 Crucial CT8G4SFD824A; $58.04 CT8G4SFS824A; $66.88 CT8G4SFS832A; $73.00 CT8G4SFRA32A (DDR4-3200)",
+    "basis": "per-unit-retail",
+    "status": "VERIFIED-FETCHED",
+    "source": "https://www.newegg.com/p/pl?d=ddr4+sodimm+8gb (fetched 2026-08-03)",
+    "applies_to": "case2",
+    "caveat": "Cycle-inflated. The most volatile line in the Case 2 BOM and the one most likely to be wrong within 12 months."
+   },
+   {
+    "item": "DDR5 SODIMM 16 GB — additional DRAM on a current-generation business PC",
+    "cost": "$179.99 76TT48NUS1R8-16G; $186.49 ADATA AD5S480016G-S; $209.89 Crucial CT16G48C40S5; $219.99 CT16G56C46S5; $229.99 Corsair",
+    "basis": "per-unit-retail",
+    "status": "VERIFIED-FETCHED",
+    "source": "https://www.newegg.com/p/pl?d=ddr5+sodimm+16gb (fetched 2026-08-03)",
+    "applies_to": "case2",
+    "caveat": "At $180-230 a stick, dedicated DRAM costs more than a year of low-end revenue ($123/yr). On DDR5, memory partitioning must be logical, not physical."
+   },
+   {
+    "item": "Business-class USB-C docking station with Ethernet (Lenovo ThinkPad USB-C/Thunderbolt dock class) via corporate reseller",
+    "cost": "$101.99-$297.99 street ($119.99-$329.99 list); ThinkPad USB-C dock $202.99-$216.99; Plugable business dock $245.99",
+    "basis": "per-unit-retail",
+    "status": "VERIFIED-FETCHED",
+    "source": "https://www.cdw.com/search/?key=lenovo+usb-c+dock+gen2 and https://www.cdw.com/search/?key=dell+wd19s+dock (fetched 2026-08-03)",
+    "applies_to": "case2",
+    "caveat": "KEY: if a dock is already at the desk its NIC is sunk, so Case 2's network-isolation cost drops to ~$0 — the dock MAC is already distinct from the host NIC."
+   },
+   {
+    "item": "Consumer USB-C dock with Gigabit Ethernet (retrofit path where no dock exists)",
+    "cost": "$28.99 ORICO PW11-8PM 8-in-1; $54.99 WAVLINK WL-UMD08 (GbE); $79.95 Plugable UD-CA1A (GbE + 60W PD); $99.99-$158.99 WAVLINK Pro",
+    "basis": "per-unit-retail",
+    "status": "VERIFIED-FETCHED",
+    "source": "https://www.newegg.com/p/pl?d=usb-c+dock+ethernet (fetched 2026-08-03)",
+    "applies_to": "case2",
+    "caveat": "A $29-55 consumer dock delivers the same second-MAC isolation as a $250 business dock. The premium buys manageability and warranty, not isolation."
+   },
+   {
+    "item": "M.2 A+E key 2.5GbE NIC module — for machines with a spare WiFi slot (no chassis slot or USB port consumed)",
+    "cost": "$16.99 (AJMRTC M.2 A+E Key 2.5G, RJ45); $79.99 (LR-Link LRES2212PF-SFP, SFP)",
+    "basis": "per-unit-retail",
+    "status": "VERIFIED-FETCHED",
+    "source": "https://www.newegg.com/p/pl?d=m.2+a+e+key+ethernet+adapter (fetched 2026-08-03)",
+    "applies_to": "case2",
+    "caveat": "Cheapest internal (non-dongle) second NIC found. Matters because a USB dongle the user can unplug is weak isolation."
+   },
+   {
+    "item": "CASE 2 TOTAL — retrofit at retail, minimum viable: USB GbE dongle + 256 GB M.2 NVMe, no extra DRAM",
+    "cost": "$67-$75 one-time per machine ($12-20 NIC + $55 SSD)",
+    "basis": "per-unit-retail",
+    "status": "SECONDARY",
+    "source": "Sum of fetched Newegg line items above; arithmetic is mine",
+    "applies_to": "case2",
+    "caveat": "Assumes a free M.2 slot and free USB port. Excludes IT touch-labour to open and configure the machine, which likely exceeds the BOM (UNVERIFIED)."
+   },
+   {
+    "item": "CASE 2 TOTAL — retrofit at retail, hardened: internal M.2 A+E 2.5GbE NIC + 512 GB M.2 NVMe",
+    "cost": "$103-$121 one-time per machine ($17 NIC + $86-104 SSD)",
+    "basis": "per-unit-retail",
+    "status": "SECONDARY",
+    "source": "Sum of fetched Newegg line items above; arithmetic is mine",
+    "applies_to": "case2",
+    "caveat": "User cannot trivially unplug the NIC. Still no dedicated DRAM."
+   },
+   {
+    "item": "CASE 2 TOTAL — retrofit at retail, with dedicated DRAM (the expensive variant)",
+    "cost": "DDR4 machine: $123-$148. DDR5 machine: $253-$305",
+    "basis": "per-unit-retail",
+    "status": "SECONDARY",
+    "source": "Sum of fetched Newegg line items above; arithmetic is mine",
+    "applies_to": "case2",
+    "caveat": "On DDR5 this exceeds two years of low-end ($123/yr) revenue. Dedicated physical DRAM is only defensible at the high end of the revenue range."
+   },
+   {
+    "item": "CASE 2 TOTAL — OEM at volume, chips on the board: PCIe GbE controller + 256 GB flash, no extra DRAM",
+    "cost": "~$32-$60 per machine (~$0.94-2.00 NIC silicon + ~$1-2 magnetics/RJ45/passives + $30-55 flash)",
+    "basis": "per-unit-volume",
+    "status": "SECONDARY",
+    "source": "RTL8111H @980 = $0.9405 and RTL8153 @100 = $1.9887 (findchips/LCSC, fetched); flash bounded above by fetched retail $55 for 256GB M.2",
+    "applies_to": "case2",
+    "caveat": "Flash is the weak leg: no OEM NAND contract price is publicly fetchable. Retail $55 is a hard upper bound; true OEM cost plausibly $30-40 but UNVERIFIED."
+   },
+   {
+    "item": "Memory-market timing caveat on every flash and DRAM number above",
+    "cost": "n/a — directional",
+    "basis": "recurring-annual",
+    "status": "SECONDARY",
+    "source": "https://www.trendforce.com/presscenter/news — 'Diverging Memory Market Outlook in 2027 as DRAM Supply Remains Tight While NAND Flash Supply Conditions Ease' (fetched 2026-08-03)",
+    "applies_to": "case2",
+    "caveat": "NAND supply should ease while DRAM stays tight into 2027. That asymmetry favours storage-isolation designs over memory-isolation designs."
+   }
+  ],
+  "notes": "FETCH RELIABILITY. Digi-Key blocks curl (403); its keyword-search pages are readable via page-fetch but inconsistently (RTL8153/RTL8156 returned live listings; LAN7801, LAN9500A, eMMC, SODIMM returned only chrome). Mouser blocks curl and fetch (Incapsula captcha/timeouts) — NO Mouser data despite repeated attempts. Octopart, Newark direct, Arrow, TME, Future, oemsecrets, B&H all 403. Findchips.com (Supplyframe) IS fully curl-fetchable and returns per-distributor price ladders (Newark, Farnell, element14, Microchip-direct, LCSC, Win Source) — it carries all bare-IC pricing here. Newegg and CDW are curl-fetchable. Intel ARK is Cloudflare-blocked. TrendForce contract-price series are paywalled: no OEM NAND/DRAM contract prices, the biggest gap.\n\nHEADLINE. Case 2 incremental BOM ~$67-75 retrofit-retail, ~$32-60 OEM-volume, rising to $253-305 retrofit on DDR5 if the partition needs its own DRAM. Against $123-2,006/yr over 3-5yr, the no-dedicated-DRAM variants pay back in 4-7 months even at the low revenue end. Two structural findings: on an already-docked fleet the network leg is ~$0; and DRAM is the only line exceeding a year of revenue — isolate storage physically, memory logically."
+ },
+ "platform-nre": {
+  "items": [
+   {
+    "item": "IC design NRE, 28nm planar (IBS 2018 curve) — mature-node reference point",
+    "cost": "$51.3M per new chip design",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Semiconductor Engineering, 'Big Trouble At 3nm' (LaPedus, 21 Jun 2018), quoting International Business Strategies (IBS): https://semiengineering.com/big-trouble-at-3nm/",
+    "applies_to": "case3",
+    "caveat": "IBS full-chip cost incl. IP, verification, masks, software; a partition feature added to an existing SoC is a small delta on this, not a fresh instance."
+   },
+   {
+    "item": "IC design NRE, 7nm FinFET (IBS 2018 curve)",
+    "cost": "$297.8M per new chip design",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Semiconductor Engineering, 'Big Trouble At 3nm', IBS data: https://semiengineering.com/big-trouble-at-3nm/",
+    "applies_to": "case3",
+    "caveat": "Same-source series as the 28nm figure; leading-edge, first-mover pricing."
+   },
+   {
+    "item": "IC design NRE, 5nm (IBS 2018 curve)",
+    "cost": "$542.2M per new chip design",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Semiconductor Engineering, 'Big Trouble At 3nm', IBS data: https://semiengineering.com/big-trouble-at-3nm/",
+    "applies_to": "case3",
+    "caveat": "Widely re-quoted headline number; Semi Engineering's own 2023 follow-up argues it is inflated — see the maturity-discount row."
+   },
+   {
+    "item": "IC design NRE, 3nm (IBS 2018 range; top of range is an Nvidia-class GPU)",
+    "cost": "$500M–$1.5B per new chip design",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Semiconductor Engineering, 'Big Trouble At 3nm', IBS (Handel Jones): https://semiengineering.com/big-trouble-at-3nm/",
+    "applies_to": "case3",
+    "caveat": "IBS explicitly attributes the $1.5B end to a complex Nvidia GPU, not a typical SoC."
+   },
+   {
+    "item": "IC design NRE, 16nm/14nm — and how the estimate itself fell as the node matured",
+    "cost": "~$310M (IBS 2014 chart) → ~$106M (IBS 2018 chart)",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Semiconductor Engineering, 'What Will That Chip Cost?' (Brian Bailey, 30 Oct 2023), comparing the IBS 2014 and IBS 2018 charts: https://semiengineering.com/what-will-that-chip-cost/",
+    "applies_to": "case3",
+    "caveat": "Same article notes 28nm moved ~$85M → ~$51M on the same revision. Node design cost falls roughly 3x as the node matures."
+   },
+   {
+    "item": "Maturity-discounted design NRE (Semi Engineering's correction of the IBS headlines)",
+    "cost": "~$160M at 7nm, ~$280M at 5nm",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Semiconductor Engineering, 'What Will That Chip Cost?', applying the historical 2014→2018 discount to the current curve: https://semiengineering.com/what-will-that-chip-cost/",
+    "applies_to": "case3",
+    "caveat": "Editorial extrapolation, not an IBS publication. Use as the honest low end against the IBS headline high end."
+   },
+   {
+    "item": "Derivative-design economics: full node NRE is paid once per architecture, not per SKU",
+    "cost": "Qualitative; OEMs take one architecture into a node then fan out a family of parts",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Isadore Katz (Siemens EDA) quoted in Semiconductor Engineering, 'What Will That Chip Cost?': https://semiengineering.com/what-will-that-chip-cost/",
+    "applies_to": "case3",
+    "caveat": "Load-bearing for CASE 3: a partition shipped as a variant of an existing client SoC is a derivative, priced far below the node's headline design cost."
+   },
+   {
+    "item": "Venture-burn proxy for a full advanced-node startup chip programme (Innovium, 7nm switch silicon)",
+    "cost": "~$150M to first chip; $402M raised over 10 rounds funding multiple generations",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Nick Ilyadis (Achronix) in Semiconductor Engineering, 'What Will That Chip Cost?': https://semiengineering.com/what-will-that-chip-cost/",
+    "applies_to": "case3",
+    "caveat": "Includes company opex, not just design NRE; serves as an upper-bound sanity check on the $160–300M 7nm figures."
+   },
+   {
+    "item": "Mask-set cost scaling by node (leading edge vs mature)",
+    "cost": "A single 2nm mask set ≈ 30× a 65nm mask set",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Qu, quoted in Semiconductor Engineering, 'With Chiplets, What Role Does Economics Play?': https://semiengineering.com/with-chiplets-what-role-does-economics-play/",
+    "applies_to": "case3",
+    "caveat": "Ratio only, no absolute dollars. Anchors against the paper's existing 130nm >$500k-at-introduction / ~$120k-mature mask figures."
+   },
+   {
+    "item": "Process-development and fab cost at 3nm (context: why nobody builds a node for a partition feature)",
+    "cost": "$4–5B process development; $15–20B for a 40k wafer/month fab",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Handel Jones (IBS) in Semiconductor Engineering, 'Big Trouble At 3nm': https://semiengineering.com/big-trouble-at-3nm/",
+    "applies_to": "case3",
+    "caveat": "Foundry-side, not design-side. Included only to bound the argument: any realistic CASE 3 rides an existing node."
+   },
+   {
+    "item": "Silicon-prototyping floor: TSMC 16nm FinFET Compact RF, Europractice mini@sic shuttle",
+    "cost": "€30,592 standard for 1mm² minimum area; €2,827 per extra 0.1mm² (€26,592 / €2,568 academic)",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Europractice Schedules & Prices 2026, TSMC mini@sic price list: https://europractice-ic.com/schedules-prices-2026/",
+    "applies_to": "case3",
+    "caveat": "Multi-project shuttle — a few tens of prototype dies, shared mask set, no production masks. This is the cost of trying the idea, not shipping it."
+   },
+   {
+    "item": "Silicon-prototyping floor: TSMC 28nm HPC+ RF, Europractice mini@sic shuttle",
+    "cost": "€10,609 standard for 1mm² minimum; €919.19 per extra 0.1mm² (€8,509 / €834 academic)",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Europractice Schedules & Prices 2026, TSMC mini@sic price list: https://europractice-ic.com/schedules-prices-2026/",
+    "applies_to": "case3",
+    "caveat": "Areas quoted are on-silicon; designed area can be area/0.81 at 28nm per the price list footnote."
+   },
+   {
+    "item": "Silicon-prototyping floor, mature nodes: TSMC 65nm mini@sic and UMC full-block MPW",
+    "cost": "TSMC 65nm €4,491 min-area. UMC per block: 0.18µm €16,750 (5×5mm), 65nm €43,750 (4×4mm), 40nm €70,500 (4×4mm)",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Europractice Schedules & Prices 2026, TSMC mini@sic and UMC MPW price lists: https://europractice-ic.com/schedules-prices-2026/",
+    "applies_to": "case3",
+    "caveat": "UMC 28N priced 'on request'. EUR; ~$1.1/€ at fetch time. Shuttle prices exclude packaging and test."
+   },
+   {
+    "item": "OEM regulatory certification per SKU — FCC, basic device, no transmitter",
+    "cost": "$3,000–$5,000 per SKU",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Compliance Testing LLC published price framework: https://www.compliancetesting.com/fcc-certification-cost/",
+    "applies_to": "case3",
+    "caveat": "Also applies to CASE 2 if a second NIC changes emissions. US only; CE/UKCA/UL/CB/Energy Star are separate, roughly comparable line items each."
+   },
+   {
+    "item": "OEM certification per SKU — FCC, device with unlicensed transmitters (Wi-Fi/BT/LTE)",
+    "cost": "$9,000–$12,000 per SKU; $6,500–$10,000 if using pre-certified modules",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Compliance Testing LLC published price framework: https://www.compliancetesting.com/fcc-certification-cost/",
+    "applies_to": "case3",
+    "caveat": "Third-party lab retail pricing; large OEMs with in-house labs pay less per SKU but carry the lab as fixed cost."
+   },
+   {
+    "item": "OEM platform R&D envelope, HP Inc — the pot any partition programme is funded from",
+    "cost": "$1.60B FY2025 R&D ($1.64B FY2024)",
+    "basis": "recurring-annual",
+    "status": "VERIFIED-FETCHED",
+    "source": "SEC XBRL companyconcept, HP INC. CIK 0000047217, us-gaap:ResearchAndDevelopmentExpense, 10-K: https://data.sec.gov/api/xbrl/companyconcept/CIK0000047217/us-gaap/ResearchAndDevelopmentExpense.json",
+    "applies_to": "case3",
+    "caveat": "Company-wide, spans printing. At ~50M PCs/yr this is order $30/unit blended R&D — the ceiling a per-unit NRE amortization must respect."
+   },
+   {
+    "item": "OEM platform R&D envelope, Dell Technologies",
+    "cost": "$3.14B FY2026; $3.06B FY2025; $2.80B FY2024",
+    "basis": "recurring-annual",
+    "status": "VERIFIED-FETCHED",
+    "source": "SEC XBRL companyconcept, Dell Technologies Inc. CIK 0001571996, us-gaap:ResearchAndDevelopmentExpense, 10-K filings: https://data.sec.gov/api/xbrl/companyconcept/CIK0001571996/us-gaap/ResearchAndDevelopmentExpense.json",
+    "applies_to": "case3",
+    "caveat": "Includes ISG (servers/storage), which dominates Dell's R&D; the CSG client-platform share is not disclosed."
+   },
+   {
+    "item": "Engineering-years as the OEM's native unit of NRE — worked example of the magnitude",
+    "cost": "One Arm customizable-IP engagement cut a high-end infrastructure SoC programme by 80 engineering years",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Brian Jeff (Arm) quoted in Semiconductor Engineering, 'What Will That Chip Cost?': https://semiengineering.com/what-will-that-chip-cost/",
+    "applies_to": "case3",
+    "caveat": "Server-class SoC, not a client platform; cited only to establish that OEM platform NRE is denominated in tens-to-hundreds of engineer-years."
+   },
+   {
+    "item": "TIER 1 — FIRMWARE/PLATFORM ONLY: BIOS/UEFI, boot domain, IOMMU/core/memory partitioning on existing silicon features",
+    "cost": "Est. 15–50 engineer-years ≈ $4M–$18M at $250–350k fully loaded, plus per-SKU certification",
+    "basis": "one-time-NRE",
+    "status": "UNVERIFIED",
+    "source": "Constructed. Engineer-year unit taken from the Arm datapoint; loaded-cost rate not fetched — BLS OES and GSA CALC both refused automated retrieval in this pass.",
+    "applies_to": "case3",
+    "caveat": "UNVERIFIED in both scope and rate. No OEM publishes per-feature firmware NRE. An order-of-magnitude bracket, not a table-ready number."
+   },
+   {
+    "item": "TIER 2 — BOARD RESPIN: new PCB layout separating memory channels and peripherals, 2–3 spins, SI/thermal requalification",
+    "cost": "Est. $1M–$5M NRE on top of Tier 1, plus $10k–$50k per SKU for the full regulatory suite",
+    "basis": "one-time-NRE",
+    "status": "UNVERIFIED",
+    "source": "Constructed. PCB fabricator NRE/tooling pages (4pcb.com, pcbway.com, protoexpress.com) returned no fetchable pricing under a browser UA; only the FCC lab price list was obtainable.",
+    "applies_to": "case3",
+    "caveat": "UNVERIFIED. Only the certification component has a fetched anchor. A respin also resets DFM/DFT and supply qualification, not separately priced here."
+   },
+   {
+    "item": "TIER 3 — NEW SILICON: full custom design NRE for a partition-aware client SoC, by node",
+    "cost": "28nm ~$51M; 16nm ~$106M; 7nm ~$160M–$298M; 5nm ~$280M–$542M; 3nm $500M–$1.5B",
+    "basis": "one-time-NRE",
+    "status": "SECONDARY",
+    "source": "Aggregated from the IBS-sourced rows above: https://semiengineering.com/big-trouble-at-3nm/ and https://semiengineering.com/what-will-that-chip-cost/",
+    "applies_to": "case3",
+    "caveat": "Whole-chip costs. A partition added as a derivative of an existing client SoC is a fraction of this — architecture-once, family-of-parts (Katz, Siemens)."
+   }
+  ],
+  "notes": "METHOD: curl with browser UA, no WebSearch. Unfetchable this pass: BLS OES (robot denial), GSA CALC (404, decommissioned), DuckDuckGo/Bing HTML, all PCB-fab pricing pages, EE Times. IBS figures came from the primary Semi Engineering articles, not second-hand blogs.\n\nKEY FINDING: the three tiers separate by roughly two orders of magnitude each (firmware ~$10^6-10^7; board respin similar again on top; new silicon ~$10^8). But Tier 3 is likely the wrong number to quote. Semi Engineering's 2023 follow-up shows IBS headlines are first-mover, new-architecture costs, and documents the estimates themselves falling ~3x as a node matures (16nm $310M->$106M; 28nm $85M->$51M). A partition reusing existing IOMMU/SEV/TrustZone silicon is a Tier 1 delta.\n\nAMORTIZATION (computed): $10M NRE / 5M units = $2/unit; / 500k = $20; / 100k = $100. Against $123-$2,006/yr revenue over a 3-5yr life, Tier 1 clears easily at OEM volume; Tier 3 clears only if the partition ships across the whole client line.\n\nCONFIDENCE: Tier 3 rows are solid and fetched. Tier 1 and Tier 2 dollar brackets are UNVERIFIED constructions - no OEM discloses per-feature firmware or board NRE. Do not present those two as sourced."
+ },
+ "audit-and-certification": {
+  "items": [
+   {
+    "item": "Penetration test, web/SaaS application (one product, one engagement)",
+    "cost": "$5,000-$50,000 per pentest; SaaS-scoped $5,000-$30,000; API $5,000-$30,000",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Astra Security, \"How Much Does a Pentest Cost in 2026\", updated 2026-07-14, https://www.getastra.com/blog/security-audit/penetration-testing-cost/ (fetched)",
+    "applies_to": "all",
+    "caveat": "Vendor blog with commercial interest; ranges agree with the SOC 2 auditor sources below ($2,500-$25,000)."
+   },
+   {
+    "item": "Penetration test, white-box / source-assisted (right model for a small shared-compute agent)",
+    "cost": "$500-$2,000 per asset; grey-box $500-$50,000; black-box $5,000-$50,000",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Astra Security pentest-cost page (fetched), \"Pentesting Methodology Pricing\" table",
+    "applies_to": "case1",
+    "caveat": "Per-asset. A Case-1 agent is one asset; a full host-OS attack-surface review is not, and prices toward black-box."
+   },
+   {
+    "item": "Network penetration test, per device (if the shared workload gets its own NIC/network path)",
+    "cost": "$150-$1,000 per device",
+    "basis": "per-unit-volume",
+    "status": "VERIFIED-FETCHED",
+    "source": "Astra Security pentest-cost page (fetched)",
+    "applies_to": "case2",
+    "caveat": "Priced per IP/device tested, not per fleet machine; you test the reference design once, not 10,000 desktops."
+   },
+   {
+    "item": "SOC 2 Type II audit fee (baseline enterprise expectation before any hardware talk)",
+    "cost": "$15,000-$60,000+ audit fee; Type I $7,500-$35,000",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "soc2auditors.io, \"How Much Does a SOC 2 Audit Cost in 2026\", https://soc2auditors.io/resources/how-much-does-a-soc-2-audit-cost-in-2026 (fetched)",
+    "applies_to": "all",
+    "caveat": "Audit fee only - excludes readiness, remediation, platform, and internal labor."
+   },
+   {
+    "item": "SOC 2 total first-year compliance cost (audit + readiness + platform + remediation)",
+    "cost": "$30,000-$100,000 typical startup/SaaS scope; $15,000-$100,000+ (2nd source); $80,000-$350,000 larger scope",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "soc2auditors.io; brightdefense.com/resources/soc-2-audit-costs/ ($15k-$100k+); secureframe.com/hub/soc-2/audit-cost (TOTAL $80-350k) - all fetched",
+    "applies_to": "all",
+    "caveat": "Three vendor-published estimates, each with a product to sell. Convergent at the low end, divergent at the top (scope-driven)."
+   },
+   {
+    "item": "SOC 2 recurring annual cost (Type II must be re-issued every 12 months)",
+    "cost": "Maintenance $10,000-$60,000/yr; platform $7,000-$30,000/yr; annual pentest $2,500-$25,000",
+    "basis": "recurring-annual",
+    "status": "VERIFIED-FETCHED",
+    "source": "Secureframe SOC 2 hub (Annual Maintenance $10-60k) and Bright Defense (platform $7k-$25k/yr; pentest $2.5k-$25k; scans $1k-$5k) - both fetched",
+    "applies_to": "all",
+    "caveat": "Floor recurring assurance cost for ALL three cases; it does not go away when you add hardware."
+   },
+   {
+    "item": "Common Criteria evaluation - laboratory fee paid by vendor, by assurance level",
+    "cost": "EAL2 ~$75k-$200k; EAL3 ~$115k-$250k; EAL4 ~$150k-$350k (2006 dollars)",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "GAO-06-392 Figure 4 (axis \"Dollars in thousands\"), https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-06-392/pdf/GAOREPORTS-GAO-06-392.pdf (fetched, page rendered and read)",
+    "applies_to": "case2",
+    "caveat": "Read off a GAO bar chart; GAO swapped its Fig-2/Fig-4 captions. 2006 USD; ~1.6x in 2026 = EAL4 ~$240k-$560k."
+   },
+   {
+    "item": "Common Criteria evaluation - elapsed duration by assurance level",
+    "cost": "EAL2 ~5-9 months; EAL3 ~7-11; EAL4 ~11-24; plus ~6 months vendor doc prep before testing starts",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "GAO-06-392 Figure 2 (axis \"Months\") plus body text: \"about six months is the average time for vendors to complete the required documentation\" (fetched)",
+    "applies_to": "case2",
+    "caveat": "Schedule, not money, but it is the real cost: 1.5-2.5 years of delayed revenue for an EAL4 boundary."
+   },
+   {
+    "item": "Common Criteria at EAL4-comparable depth - vendor-reported total spend, not just lab fees",
+    "cost": "US$1,000,000-$2,500,000 per evaluation",
+    "basis": "one-time-NRE",
+    "status": "SECONDARY",
+    "source": "Wikipedia \"Evaluation Assurance Level\" (fetched), reporting mid/late-1990s vendor spend on EAL4-comparable evaluations; primary vendor reports not retrieved",
+    "applies_to": "case2",
+    "caveat": "1990s figures, secondary attribution. The gap vs GAO's lab fee is internal engineering and documentation."
+   },
+   {
+    "item": "Common Criteria EAL6 - industry rule of thumb per line of code (the Case-3 headline)",
+    "cost": "~$10,000 per line of code; ~$87M for seL4's ~8,700-line kernel",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Klein et al., SOSP 2009, sec.7: \"industry rules-of-thumb of $10k/LOC for Common Criteria EAL6 certification, which would be $87M for seL4\" - trustworthy.systems/publications/nicta_full_text/1852.pdf (fetched)",
+    "applies_to": "case3",
+    "caveat": "A rule of thumb quoted by the seL4 authors to argue it is bad value. It caps TCB size: 10k LOC of trusted code is a $100M certification."
+   },
+   {
+    "item": "FIPS 140-3 - NIST CMVP cost-recovery fee (government's own published price per submission)",
+    "cost": "Level 1 $14,000; Level 2 $15,000; Level 3 $15,500; Level 4 $17,000",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "SafeLogic page reproducing the NIST CMVP cost-recovery fee schedule effective 2024-01-01, https://www.safelogic.com/fips-140-3 (fetched). Direct csrc.nist.gov PDF 404'd.",
+    "applies_to": "all",
+    "caveat": "NIST fee only, and only for a first attempt; excludes accredited-lab testing and consulting. Re-verify on csrc.nist.gov before quoting."
+   },
+   {
+    "item": "FIPS 140-3 - accredited lab testing plus consulting (the non-NIST part)",
+    "cost": "~$50,000-$200,000 typical for a first software module validation",
+    "basis": "one-time-NRE",
+    "status": "UNVERIFIED",
+    "source": "No public lab rate card was fetchable (Corsec's cost article publishes no figures; Lightship and Rycombe cost pages 404'd). Range is my estimate, not fetched.",
+    "applies_to": "all",
+    "caveat": "UNVERIFIED. Do not put in front of an insurer without an actual lab quote."
+   },
+   {
+    "item": "FIPS 140-3 - elapsed time and certificate lifecycle",
+    "cost": "2+ years end-to-end self-driven; 5-year certificate sunset; pre-validated/rebrand route ~2 months",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "SafeLogic FIPS 140-3 page (fetched): \"can take two+ years\"; \"expiration date five years into the future\"; RapidCert \"in only two months\"",
+    "applies_to": "all",
+    "caveat": "Source sells the 2-month alternative, so has an interest in the 2-year figure. The 5-year sunset is a CMVP fact."
+   },
+   {
+    "item": "FIPS 140-3 - recurring re-validation exposure (certification is not one-and-done)",
+    "cost": "At least annual standards transitions force lab re-review; ~50% of active modules died in the 2022 transition",
+    "basis": "recurring-annual",
+    "status": "VERIFIED-FETCHED",
+    "source": "SafeLogic FIPS 140-3 page (fetched): \"there was a transition in 2022 that roughly 50% of previously active FIPS 140 validated modules did not survive\"",
+    "applies_to": "all",
+    "caveat": "The most underrated line item: certification decays and can force a re-spend well before the 5-year sunset."
+   },
+   {
+    "item": "Formal verification of an isolation kernel - measured effort, seL4 (gold standard)",
+    "cost": "~29 py total: 20.5 py correctness (9 reusable tools + 11 seL4-specific), 4.1 security, 2 binary, 2 capDL; kernel 2.2 py",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Klein et al., \"Comprehensive Formal Verification of an OS Microkernel\", ACM TOCS 32(1) 2014, sec.7.2 and Fig 19 - trustworthy.systems/publications/nicta_full_text/7371.pdf (fetched)",
+    "applies_to": "case3",
+    "caveat": "For an ~8,700-LOC C microkernel. Proof effort is ~9x the kernel's own dev effort and scales with TCB size."
+   },
+   {
+    "item": "Formal verification - replication cost for a NEW kernel using the same methodology",
+    "cost": "~6 py of proof, ~8 py total including the kernel - \"only twice the SLOCCount estimate\" for an unassured system",
+    "basis": "one-time-NRE",
+    "status": "VERIFIED-FETCHED",
+    "source": "Klein et al., SOSP 2009 sec.7 (fetched)",
+    "applies_to": "case3",
+    "caveat": "An author estimate, not a measured second project. This is the commons argument: the 9 py of frameworks is already paid for and shared."
+   },
+   {
+    "item": "Formal verification - proof MAINTENANCE per significant change (the recurring line)",
+    "cost": "A change touching ~12% of code cost 1.5-2 py to re-verify (~32% of original effort); another change ~1 py (~17%)",
+    "basis": "recurring-annual",
+    "status": "VERIFIED-FETCHED",
+    "source": "Klein et al., SOSP 2009 sec.7 \"The cost of change\", and TOCS 2014 (fetched)",
+    "applies_to": "case3",
+    "caveat": "Kills naive Case-3 economics: every respin or firmware revision touching the partition re-opens the proof. Budget ~1 py/yr per maintained line."
+   },
+   {
+    "item": "Formal verification, dollarized - seL4-equivalent proof of an isolation boundary",
+    "cost": "20 py x $150k-$250k loaded = $3.0M-$5.1M one-time; replication (8 py) $1.2M-$2.0M; maintenance $150k-$250k/yr",
+    "basis": "one-time-NRE",
+    "status": "SECONDARY",
+    "source": "Derived: seL4 person-year figures (VERIFIED, Klein TOCS 2014) times a fully-loaded formal-methods engineer cost. The $/py is my assumption, not fetched.",
+    "applies_to": "case3",
+    "caveat": "py counts are hard, $/py is not. Note it is 17-70x cheaper than the $87M EAL6 rule-of-thumb for the same kernel."
+   },
+   {
+    "item": "CASE 1 TOTAL - security-audited software on the same OS and network",
+    "cost": "One-time $50k-$150k (pentest $5k-$50k + SOC 2 first year $30k-$100k); recurring $20k-$110k/yr",
+    "basis": "recurring-annual",
+    "status": "SECONDARY",
+    "source": "Sum of the VERIFIED items above (Astra pentest; soc2auditors.io / Secureframe / Bright Defense SOC 2)",
+    "applies_to": "case1",
+    "caveat": "No certification line at all. If the enterprise already carries SOC 2, the marginal assurance cost is near zero."
+   },
+   {
+    "item": "CASE 2 TOTAL - separate VM plus separate NIC/storage, with a certified boundary",
+    "cost": "Case-1 assurance plus CC EAL2-EAL4: lab fee $240k-$560k (inflated), realistic all-in $500k-$2.5M, 1.5-2.5 yrs",
+    "basis": "one-time-NRE",
+    "status": "SECONDARY",
+    "source": "GAO-06-392 Figs 2 and 4 (VERIFIED) plus vendor-reported EAL4 totals (SECONDARY) plus the Case-1 sums",
+    "applies_to": "case2",
+    "caveat": "Whether CC is required is a business judgment. If the insurer accepts SOC 2 plus a hypervisor-scoped pentest, Case 2 collapses to roughly Case 1."
+   },
+   {
+    "item": "CASE 3 TOTAL - manufacturer-engineered hardware partition, certifiable boundary",
+    "cost": "Proof route $1.2M-$5.1M one-time + $150k-$250k/yr; EAL6 route ~$10k/LOC of TCB (~$87M at 8.7k LOC); FIPS adds $14k-$17k + lab",
+    "basis": "one-time-NRE",
+    "status": "SECONDARY",
+    "source": "Klein TOCS 2014 / SOSP 2009 effort figures (VERIFIED) plus NIST CMVP fee schedule (VERIFIED) plus an assumed $/py",
+    "applies_to": "case3",
+    "caveat": "The two routes differ by ~20x. seL4's result is exactly the argument that proof beats EAL6 on both cost and assurance."
+   },
+   {
+    "item": "CASE 3 AMORTIZED - assurance cost per machine by OEM shipment volume",
+    "cost": "$3.0M proof over 1M units = $3.00/unit; over 100k = $30/unit; over 10k = $300/unit; $200k/yr upkeep over 1M = $0.20/unit/yr",
+    "basis": "per-unit-volume",
+    "status": "SECONDARY",
+    "source": "Derived from the dollarized seL4 figure; volumes illustrative",
+    "applies_to": "case3",
+    "caveat": "Against $123-$2,006/machine/yr revenue, Case-3 assurance is a rounding error at OEM volume. Silicon NRE, not assurance, decides Case 3."
+   },
+   {
+    "item": "CASE 1/2 AMORTIZED - assurance cost per machine by enterprise fleet size",
+    "cost": "$60k/yr midpoint over 10,000 machines = $6/machine/yr; over 1,000 = $60; over 100 = $600",
+    "basis": "per-unit-volume",
+    "status": "SECONDARY",
+    "source": "Derived from the VERIFIED SOC 2 plus pentest recurring ranges",
+    "applies_to": "case1",
+    "caveat": "At $123/machine/yr revenue, recurring assurance eats ~50% of gross on a 1,000-machine fleet and exceeds it below ~500. This forces aggregation."
+   }
+  ],
+  "notes": "METHOD: curl with browser UA only, no WebSearch. Mojeek for URL discovery (Google/DDG served challenges; Mojeek captcha'd after ~6 queries). Refused/404: csrc.nist.gov CMVP fee PDF, gao.gov direct (403, obtained via govinfo.gov), commoncriteriaportal.org, Vanta/Drata/Sprinto, Lightship and Rycombe FIPS cost pages, niap-ccevs.org (JS app).\n\nSTRONGEST NUMBERS, fetched and primary/government: GAO-06-392 CC lab fees and durations by EAL, read off rendered chart pages; NIST CMVP cost-recovery fee schedule; Klein et al. seL4 effort (TOCS 2014 Fig 19, SOSP 2009 sec.7) including proof-maintenance figures that dominate lifetime cost and are rarely quoted.\n\nTWO FINDINGS THAT MATTER. (1) seL4's own authors quote $10k/LOC for EAL6 = $87M for their kernel while their proof cost ~20 py: proof is ~an order of magnitude cheaper than certification for stronger assurance, so Case 3 should pitch proof, not EAL. (2) Certification decays: ~50% of active FIPS 140 modules died in the 2022 transition, and a 12% code change cost seL4 1.5-2 py to re-verify.\n\nWEAKEST ITEM: FIPS accredited-lab fees are UNVERIFIED; no lab publishes a rate card."
+ }
+}
