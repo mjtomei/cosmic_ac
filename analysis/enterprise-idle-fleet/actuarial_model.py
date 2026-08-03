@@ -49,6 +49,15 @@ VERIFIED INPUTS (all fetched; see actuarial-findings.json for URLs)
     so the category elimination has tail value, not just attritional value.
 
 MODELLING ASSUMPTIONS (clearly ours, not fetched)
+ A0 IDLE-GATING (verified 2026-08-03, see co-execution-verification.md): the
+    premise that hardware attacks need simultaneous execution is FALSE as a
+    general claim. Only a minority (PortSmash, TLBleed, cross-thread RSB, and
+    the live-victim cache channels) require concurrency; ~20 families attack
+    state the victim left behind, and Meltdown/RAMBleed need no victim
+    execution at all. Whole-machine idle admission DOES retire the
+    concurrency-dependent class plus the cross-core cache channels that
+    flush-on-switch cannot reach — a real, creditable control — but it is NOT
+    immunity, so Case 3's index below is NOT reduced further for it.
  A1 Boundary exposure index, used as a RELATIVE frequency multiplier: taken
     from realised in-the-wild exploitation of each boundary type. Case 1 = 502
     (KEV endpoint entries), Case 2 = 5 (true guest->host escapes), Case 3 = 0.5
