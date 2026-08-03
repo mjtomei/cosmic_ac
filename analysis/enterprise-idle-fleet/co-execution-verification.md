@@ -170,3 +170,71 @@ by two things Case 3 cannot supply:
 the category elimination and needs no new silicon; Case 4 buys down the
 residual and is justified by scale. Conflating 3 and 4 overstates what the
 insurance argument requires — the underwriting case is complete at Case 3.
+
+
+## Design invariants, stated (Matthew, 2026-08-03)
+
+Confirmed: **every case under consideration assumes both**, and the analysis
+above should be read against them rather than against a bare architecture.
+
+  **I1 — No simultaneous execution.** Shared work is admitted only when no
+  business workload is running, enforced from outside the shared domain.
+  **I2 — Full scrub of shared storage at every transition**, in both
+  directions (idle→admit and admit→resume).
+
+### What I1 + I2 close
+
+With both invariants, the *stale on-core state* residual — which the section
+above lists as the largest — is mostly closed, because the structures those
+attacks read are architecturally clearable:
+
+| State | Clearing mechanism |
+|---|---|
+| Fill buffers, load ports, store buffers | VERW (with MD_CLEAR microcode) |
+| L1 data cache | L1D_FLUSH |
+| All cache levels incl. LLC | WBINVD |
+| Branch predictors | IBPB |
+| Vector / FP / integer register files | explicit zeroing (VZEROALL and equivalents) |
+
+That covers the mechanisms behind MDS, TAA, L1TF, RFDS, Downfall and the
+predictor-poisoning family. **I2 is what makes the difference** — the reason
+Downfall defeats SGX at its highest configuration is that VERW and L1D_FLUSH
+*alone* do not touch the vector register file. A scrub defined as "all shared
+storage" rather than "the vendor's named flush instructions" closes that gap.
+
+### What remains after I1 + I2 — and it is a different shape
+
+1. **Unflushable microarchitectural state.** Prefetcher state, cache
+   replacement-policy LFSRs, and memory arbiters have no clearing interface.
+   Ge et al.'s follow-up names these specifically and concludes new ISA support
+   is required, finding that even a single-cycle flush is insufficient because
+   components reset asynchronously. **But note the class change:** these are
+   *timing* channels that leak access patterns, not *data* channels that leak
+   contents. Far lower bandwidth, far harder to weaponise, and not a
+   register-contents disclosure.
+2. **Zenbleed-class bugs in the clearing logic itself.** Zenbleed was not
+   residual data awaiting a flush; it was a defect in the register-file
+   management path (the vzeroupper optimisation), which needed a chicken bit
+   rather than a scrub. **A scrub cannot fix a bug in the scrub.** This is
+   irreducible and argues for microcode currency as a monitored control.
+3. **Everything that was never about shared storage.** I1 and I2 are orthogonal
+   to these, and they are what Case 4 exists to address:
+   - **Rowhammer / RAMBleed** — perturbs or infers via *adjacent DRAM cells*.
+     Nothing is read from shared storage at all; RAMBleed reads the attacker's
+     own memory. Needs memory topology, not flushing.
+   - **DMA from peripherals** — bypasses execution entirely; needs IOMMU
+     discipline and, properly, bus separation.
+   - **Cold-boot / remanence** — physical, post-power.
+   - **Memory-resident secrets reachable after a spatial escape** — if the
+     hypervisor or kernel boundary fails, "idle and scrubbed" is irrelevant.
+
+### Net
+
+I1 + I2 convert the residual from *"the attacker reads what the victim left in
+registers and buffers"* to *"the attacker infers access patterns through
+structures with no clearing interface, or attacks the memory substrate
+directly."* That is a materially better position than the one the verification
+section describes, and it is the position the actuarial model should credit —
+provided both invariants are enforced from outside the shared domain and
+microcode currency is monitored, since two of the three residual classes are
+defects rather than design properties.
