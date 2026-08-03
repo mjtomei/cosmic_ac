@@ -204,14 +204,12 @@ storage" rather than "the vendor's named flush instructions" closes that gap.
 
 ### What remains after I1 + I2 — and it is a different shape
 
-1. **Unflushable microarchitectural state.** Prefetcher state, cache
-   replacement-policy LFSRs, and memory arbiters have no clearing interface.
-   Ge et al.'s follow-up names these specifically and concludes new ISA support
-   is required, finding that even a single-cycle flush is insufficient because
-   components reset asynchronously. **But note the class change:** these are
-   *timing* channels that leak access patterns, not *data* channels that leak
-   contents. Far lower bandwidth, far harder to weaponise, and not a
-   register-contents disclosure.
+1. **Microarchitectural state with no *documented* clearing instruction** —
+   prefetchers, cache replacement policy, memory arbiters. See the correction
+   below: these are not unflushable, they are undocumented. Note also the class
+   change: these are *timing* channels that leak access patterns, not *data*
+   channels that leak contents. Far lower bandwidth, far harder to weaponise,
+   and not a register-contents disclosure.
 2. **Zenbleed-class bugs in the clearing logic itself.** Zenbleed was not
    residual data awaiting a flush; it was a defect in the register-file
    management path (the vzeroupper optimisation), which needed a chicken bit
@@ -312,3 +310,46 @@ by Y." **I3 is the control most likely to convert into an actual premium
 reduction, precisely because it is the one that yields a measurement** — and
 building the harness that produces that measurement is a small, well-defined
 piece of work that could be done before any hardware exists.
+
+
+## Correction — "unflushable" was wrong (Matthew, 2026-08-03)
+
+I called prefetcher, replacement-policy and arbiter state *unflushable*. That
+is not right. **The state is finite and deterministic, so a driving sequence
+into a known condition exists; what is missing is documentation, not
+capability.** Reaching it requires reverse-engineering the microarchitecture.
+
+**There is published precedent for exactly this reverse engineering.** Abel &
+Reineke built `nanoBench` (arXiv:1911.03282) specifically to characterise
+undocumented x86 microarchitectural behaviour from outside, and the same authors'
+work measures and models cache replacement policies on real Intel parts. This is
+an established research method with public tooling, not a speculative capability.
+
+**For prefetchers there is an easier path still: they can simply be turned off.**
+Intel exposes prefetcher control via MSR (0x1A4), so the shared domain can run
+with prefetching disabled and the state question does not arise for the window.
+Disabling costs throughput on the shared workload — which is a price paid in the
+tenant's own performance, not the host's security.
+
+So the honest limit is not impossibility, it is **maintenance**: the sequence is
+microarchitecture-specific and must be re-derived for each CPU generation, and
+validated against parts you may not have. That is an ongoing engineering
+obligation with a real cost — and it is precisely the kind of obligation that
+belongs in the *builder's* hands rather than each enterprise's, which is another
+argument for the manufacturer-partition shape of Case 3.
+
+**And it is a search problem, which is this paper's own thesis applied to itself.**
+Finding an instruction sequence that drives an undocumented structure to a known
+state is a search over sequences with a measurable objective — exactly the class
+of problem §6 argues machine intelligence is now good at, and exactly the class
+of tacit, per-part, never-pooled knowledge §2 says goes unproduced because no
+individual actor is paid to produce it. If the argument is right anywhere, it
+should be right here: this is optimization work that is valuable to everyone,
+cheap for a model to search, and currently done by nobody.
+
+**Consequence for I3:** the decorrelating scrub is the fallback for structures
+whose flush sequence has not *yet* been derived, not the permanent answer for
+structures that cannot be flushed. That is a better position — it converts an
+open-ended residual into a work item with a known method, and the measurement
+harness described above doubles as the validation harness for each derived
+sequence.
