@@ -238,3 +238,77 @@ section describes, and it is the position the actuarial model should credit —
 provided both invariants are enforced from outside the shared domain and
 microcode currency is monitored, since two of the three residual classes are
 defects rather than design properties.
+
+
+## I3 — decorrelating scrub for unflushable state (Matthew, 2026-08-03)
+
+Proposed third invariant: **software that deliberately obfuscates or overwrites
+the microarchitectural state that has no clearing interface**, as a second line
+of defence behind I1 and I2.
+
+### Why it is possible at all
+
+The structures left over after I2 — prefetcher training, cache
+replacement-policy state (PLRU trees, LFSRs), memory arbiter position — cannot
+be *addressed*, so they cannot be flushed. But they can all be **driven**:
+
+- **Prefetchers** train on access patterns; a workload with randomised strides
+  overwrites that training.
+- **Replacement-policy state** advances on every access; touching all ways in
+  every set walks a PLRU tree to a known or random condition, and an LFSR
+  advances regardless of intent.
+- **Arbiters** hold round-robin position and queue depth; memory traffic moves
+  them.
+
+So the mechanism is: run a decorrelating workload at the transition. It is not
+a flush — it is state saturation, which destroys the correlation between what
+the victim did and what an attacker can later measure.
+
+### The structural advantage: transition frequency
+
+Time-protection research is bounded by cost. Ge et al. must flush on **every
+partition switch**, so the mitigation competes directly with scheduler
+throughput and every microsecond matters — which is why "pad the flush to
+worst-case latency" is a real constraint for them and why they conclude
+hardware support is needed.
+
+**Idle harvesting transitions a few times a day, not thousands of times a
+second.** A scrub that would be prohibitive in a general-purpose OS is
+affordable here: seconds of decorrelating work per transition is a rounding
+error against an idle window measured in hours. **This model can afford a
+mitigation that the systems literature had to reject on cost** — which is a
+genuine advantage of the harvesting shape, not a workaround.
+
+### The honest limits
+
+1. **Noise is a cost-raiser, not a channel-closer.** The standard objection to
+   injected noise holds: it increases the attacker's required sample count
+   rather than eliminating the channel, and a patient attacker with unlimited
+   trials wins. As a *second* line behind I1 and I2 that is the correct role,
+   and it should be described that way and not as a boundary.
+   The bar it raises is real, though — AMD's own TSA guidance notes that "to
+   reliably exfiltrate data, an attacker must typically be able to invoke the
+   victim many times," and the victim here is gone.
+2. **It does nothing for the memory substrate.** Rowhammer, RAMBleed, DMA and
+   cold-boot are untouched — no amount of microarchitectural obfuscation
+   affects an attack that reads adjacent DRAM cells. Those remain Case 4's
+   territory.
+3. **It is defeated by defects in itself**, exactly as I2 is: a decorrelator
+   that a CPU bug lets an attacker distinguish from real work is not
+   decorrelating.
+
+### Why this one is worth building anyway: it is measurable
+
+Unlike most controls in this space, the effectiveness of a decorrelating scrub
+against a specific channel is **empirically testable**. Run the published
+attack suite — Prime+Probe, Flush+Reload, the prefetcher channels — with and
+without the scrub, and measure the achieved channel bandwidth. That produces a
+number, repeatable by a third party.
+
+That matters commercially rather than only technically. An underwriter cannot
+credit "we believe this helps." It can credit "the published attack suite was
+run against this configuration and measured channel bandwidth fell by X, audited
+by Y." **I3 is the control most likely to convert into an actual premium
+reduction, precisely because it is the one that yields a measurement** — and
+building the harness that produces that measurement is a small, well-defined
+piece of work that could be done before any hardware exists.
