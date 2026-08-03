@@ -212,6 +212,72 @@ egress, the utilisation discount on remotely-accessed desktops, and redundancy
 overhead (volunteer-computing practice runs ~2× for unreliable hosts). The
 18–73× energy margin is what these have to eat, and they will eat a lot of it.
 
+## Three paths across the barrier (Matthew, 2026-08-03)
+
+S16 established that the fleet is stranded by market structure rather than
+physics. Three distinct mechanisms could cross it, and they are independent —
+any one suffices.
+
+### Path 1 — risk transfer, which is what the paper's underwriter already is
+
+**The technique is not the missing piece.** HTCondor has harvested idle
+workstation cycles in production since the 1980s; Micron replaced dedicated
+peak-capacity purchases with two Condor pools running "tens of thousands of
+engineering analysis jobs per week" (Thain, Tannenbaum & Livny, *CCPE* 17(2–4),
+§10.2). The default policy — keyboard idle beyond fifteen minutes plus a low load
+average — is exactly the yield-to-the-user discipline this whole study assumed
+had to be invented. **The market therefore knows both the inefficiency and its
+technical solution.** What has never generalised is running *someone else's* code
+on *your* endpoints across an organisational boundary, and the obstacle there is
+risk: security review, liability, data exposure, and a capacity promise made from
+machines the seller does not control.
+
+That is an insurance problem, and the paper already contains the instrument.
+§8.2 has the builder as lender and underwriter — "let the builder also insure the
+owner against the residual risk — a warranty being the classic signal of quality
+precisely because it is expensive to fake (Grossman, 1981)."
+
+**This resolves a tension the paper does not currently acknowledge.** §8.2 aims
+that instrument at households, reasoning that "a household prices only its own
+tradeoff while an institution's gatekeeper prices career risk." S16 finds the
+institutional fleet is the *better* substrate — present, powered, centrally
+committable. Both are true, and the synthesis is that the gatekeeper's objection
+**is** risk, which is precisely what an underwriter absorbs. The instrument was
+aimed at the wrong target, or rather at only half of it: institutions are harder
+to sell *and* more valuable, and the warranty is what makes them addressable.
+
+### Path 2 — rising reward makes the same risk tolerable, with nothing solved
+
+Risk tolerance is not fixed; it is relative to reward. A security review, a
+liability opinion and a policy exception are fixed costs that no CFO commissions
+for $1,233/yr per desk. At 5× compute prices the same desk nets $6,165 and the
+same review is obviously worth commissioning. **Compute-price escalation moves
+firms across the threshold without anyone solving the risk problem at all** —
+which makes it an independent path, not a variant of Path 1.
+
+### Path 3 — tighter integration, and the fleet gets attention anyway
+
+The strongest of the three, because it requires no new market. As machine
+intelligence becomes integral to operations, companies deploy inference on their
+own fleets for their own purposes — Apple already markets that "57% of enterprise
+AI models can run locally on MacBook Air" (Apple-commissioned Omdia study;
+denominator undefined, so directional only). Doing that means instrumenting,
+scheduling and actually utilising the endpoint fleet. **Once that infrastructure
+exists for internal reasons, selling surplus is a marginal step rather than a
+novel capability.**
+
+This is the same shape as the paper's own account of how commons form: private
+benefits ride along with the public good (von Hippel & von Krogh, 2003, already
+cited in §2.1). Nobody has to build a market for idle enterprise compute; they
+build internal MI infrastructure, and the surplus falls out of it.
+
+**Why this reframes the study's conclusion.** S16's headline was that the fleet is
+worth ~$0 because no market accepts it. That is the *static* reading. The dynamic
+reading is that three independent forces are pushing on that barrier — an
+insurable risk with a known instrument, a reward curve rising past the cost of
+diligence, and an integration trend that builds the plumbing for other reasons.
+The barrier is real, and it is not load-bearing against all three at once.
+
 ## Medium term: laptops enter, and the desk node becomes an asset
 ## (Matthew, 2026-08-02)
 
