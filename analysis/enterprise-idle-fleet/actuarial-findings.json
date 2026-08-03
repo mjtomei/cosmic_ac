@@ -1,0 +1,212 @@
+{
+ "findings": [
+  {
+   "claim": "Cyber is priced in two layers, not one: an attritional layer (frequency x severity from claims) and an accumulation/systemic layer priced by scenario, then capped, reinsured or excluded.",
+   "value": "The isolation architecture moves the attritional layer; the accumulation layer is governed by global correlation, which none of the three cases reduces",
+   "applies_to": "method",
+   "status": "SECONDARY",
+   "source": "Synthesis of Bohme & Kataria (WEIS 2006) + Zeller & Scherer, European Actuarial Journal 14:711-748 (2024), both fetched",
+   "caveat": "Framing is mine; each cited paper supports one layer, no single fetched source states the split this way"
+  },
+  {
+   "claim": "Canonical actuarial model of cyber correlation: two-step risk arrival with internal correlation rhoI (within one firm) and global correlation rhoG (across the insurer portfolio).",
+   "value": "Insurance is viable for HIGH internal / LOW global correlation. High rhoG causes imperfect risk-pooling, forcing high safety loadings that choke supply.",
+   "applies_to": "method",
+   "status": "VERIFIED-FETCHED",
+   "source": "Bohme & Kataria, Models and Measures for Correlation in Cyber-Insurance, WEIS 2006 - https://www.econinfosec.org/archive/weis2006/docs/16.pdf",
+   "caveat": "2006 paper; rhoG/rhoI estimated from Leurre.com honeynet data; authors flag rhoI results as less robust"
+  },
+  {
+   "claim": "Bohme & Kataria's 2x2 classification puts insider attack and common-software failure in opposite quadrants, mapping directly onto the three cases.",
+   "value": "Insider attack = high rhoI / LOW rhoG (insurable). Worms/viruses (one software population, many firms) = high rhoI AND high rhoG (hard-to-insure quadrant). Hardware failure = low/low.",
+   "applies_to": "all",
+   "status": "VERIFIED-FETCHED",
+   "source": "Bohme & Kataria WEIS 2006, Table 1 - https://www.econinfosec.org/archive/weis2006/docs/16.pdf",
+   "caveat": "Their hardware caveat, 'unless defective computers belong to same faulty production batch', is precisely the Case 3 residual risk"
+  },
+  {
+   "claim": "Ignoring common-vulnerability dependence leaves expected loss unchanged but understates the tail, so naive frequency-severity pricing gets the mean right and the capital requirement wrong.",
+   "value": "E[S(T)] identical (55) either way; VaR(0.995) rises 76 (independence) -> 113 (common events modelled): tail understated ~33%, true tail ~49% higher",
+   "applies_to": "method",
+   "status": "VERIFIED-FETCHED",
+   "source": "Zeller & Scherer, European Actuarial Journal 14:711-748 (2024), Table 2 - https://link.springer.com/content/pdf/10.1007/s13385-024-00381-9.pdf",
+   "caveat": "Illustrative parameterisation of a stylised portfolio, not a market calibration"
+  },
+  {
+   "claim": "Annualised probability that a typical firm suffers a significant cyber incident - the frequency term.",
+   "value": "9.3% in 2024, up from 2.5% in 2008 (nearly quadrupled). Manufacturing 11.2%, retail 10.9%. Sub-$100M firms more than doubled; $100B+ firms fell ~a third.",
+   "applies_to": "frequency",
+   "status": "VERIFIED-FETCHED",
+   "source": "Cyentia Institute, IRIS 2025, Figures 6-8 - https://www.cyentia.com/wp-content/uploads/2026/03/IRIS-2025.pdf"
+  },
+  {
+   "claim": "Severity distribution from actual cyber insurance claims - the largest such published dataset.",
+   "value": "n=69,683 US claims; of ~24,873 non-zero: median insurable loss $83,000; top 10% >$920,000; top 2.5% >$5,000,000. Mean is seven-figure, so mean/median ~12x.",
+   "applies_to": "severity",
+   "status": "VERIFIED-FETCHED",
+   "source": "Verizon 2026 Breach Impact Study (DBIR companion) - https://www.verizon.com/business/resources/reports/2026-breach-impact-study-dbir.pdf",
+   "caveat": "US closed claims only; zero-dollar claims excluded; insurable loss is not total economic loss"
+  },
+  {
+   "claim": "Severity is rising in real terms and scales steeply with insured entity size.",
+   "value": "Median $60K (2019) -> $110K (2024), +80% vs 23% CPI. SMB ~$38K, mid-market ~$96K, large enterprise ~$283K; large-enterprise top 2.5% >$22M (22x the SMB extreme).",
+   "applies_to": "severity",
+   "status": "VERIFIED-FETCHED",
+   "source": "Verizon 2026 Breach Impact Study, Figures 4, 11, 12 - https://www.verizon.com/business/resources/reports/2026-breach-impact-study-dbir.pdf"
+  },
+  {
+   "claim": "Business interruption dominates the tail - relevant because a shared-compute failure mode is availability, not only confidentiality.",
+   "value": "BI has the highest median loss (~$90,000) and highest top-2.5% (~$5M); external liability median only ~$22,000 but top 2.5% just above $4M",
+   "applies_to": "severity",
+   "status": "VERIFIED-FETCHED",
+   "source": "Verizon 2026 Breach Impact Study, Figure 13 - https://www.verizon.com/business/resources/reports/2026-breach-impact-study-dbir.pdf"
+  },
+  {
+   "claim": "Independent severity anchor from a broader (non-claims) loss dataset.",
+   "value": "Median total loss $603K; geometric mean $464K; arithmetic mean $14M; 95th pct $32M (2015-2024, 2024 USD). Typical loss up 15x since 2008; tail up 5x.",
+   "applies_to": "severity",
+   "status": "VERIFIED-FETCHED",
+   "source": "Cyentia IRIS 2025, Figure 9 - https://www.cyentia.com/wp-content/uploads/2026/03/IRIS-2025.pdf",
+   "caveat": "IRIS median ($603K) is ~7x the DBIR claims median ($83K); different populations (disclosures/litigation vs paid claims). Use both as a band"
+  },
+  {
+   "claim": "CASE 1 boundary base rate: the same-OS/same-network boundary is the most exploited boundary in existence, by a wide margin.",
+   "value": "502 of 1,656 CISA KEV entries (30%) are endpoint OS/app products (Windows, Chrome/Edge, Office, Adobe, Java, Linux kernel, macOS/iOS, Android). Microsoft alone: 382.",
+   "applies_to": "case1",
+   "status": "VERIFIED-FETCHED",
+   "source": "Author count over CISA KEV v2026.07.29 - https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+   "caveat": "Keyword classification by vendor/product string; KEV records confirmed in-the-wild exploitation, not incidents"
+  },
+  {
+   "claim": "CASE 2 boundary base rate for hypervisor guest-to-host, from the complete Xen Security Advisory series - the cleanest 15-year record with per-advisory IMPACT statements.",
+   "value": "508 advisories 2011-2026. By IMPACT text: 45 unambiguous guest->host escalation/code execution, 64 including hedged wording, 118 loosest. So ~3-8 host-compromise advisories per year.",
+   "applies_to": "case2",
+   "status": "VERIFIED-FETCHED",
+   "source": "Author classification of all 508 advisories from https://xenbits.xen.org/xsa/ (advisory-N.html) plus https://xenbits.xen.org/xsa/xsa.json",
+   "caveat": "Regex classification of IMPACT prose; the 45/64/118 spread is the honest uncertainty band. ~173 DoS-only advisories excluded"
+  },
+  {
+   "claim": "CASE 2 realised failure rate: hypervisor escapes are common in advisories but rare in observed exploitation.",
+   "value": "~11 of 1,656 KEV entries (0.66%) are hypervisor products. Only ~4-6 are true guest->host escape: the CVE-2025-22224/22225/22226 ESXi zero-day chain, CVE-2020-1040, CVE-2008-3431.",
+   "applies_to": "case2",
+   "status": "VERIFIED-FETCHED",
+   "source": "Author count over CISA KEV v2026.07.29 - https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+   "caveat": "KEV under-counts targeted espionage use. Hyper-V VSP entries (CVE-2025-21333/21334/21335) are host-local EoP, not guest escape, and are excluded"
+  },
+  {
+   "claim": "CASE 2 vulnerability supply, independent measure from NVD.",
+   "value": "43 CVEs match 'guest OS to execute arbitrary code on the host'; 302 CVEs mention 'hypervisor'; QEMU alone has 421 CVEs; 20 CVEs match 'container escape'",
+   "applies_to": "case2",
+   "status": "VERIFIED-FETCHED",
+   "source": "NIST NVD API 2.0 keyword and virtualMatchString queries - https://services.nvd.nist.gov/rest/json/cves/2.0",
+   "caveat": "Keyword search over description text; undercounts advisories phrased differently"
+  },
+  {
+   "claim": "CASE 3 boundary base rate: silicon/CPU isolation boundaries have essentially never failed in observed real-world exploitation, despite eight years of published attacks.",
+   "value": "ZERO of 1,656 CISA KEV entries relate to Spectre, Meltdown, transient execution, speculative side channels, SGX, TrustZone or CPU enclaves.",
+   "applies_to": "case3",
+   "status": "VERIFIED-FETCHED",
+   "source": "Author keyword scan over CISA KEV v2026.07.29 - https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+   "caveat": "Absence of evidence: microarchitectural attacks are hard to attribute forensically, so KEV likely under-detects rather than proving zero occurrence"
+  },
+  {
+   "claim": "CASE 3 residual: vulnerability supply against silicon isolation is non-zero, and its correlation profile is the worst of the three - one design flaw is in every unit at once and is often unpatchable.",
+   "value": "49 NVD CVEs match 'speculative execution'; 47 match 'Intel SGX'",
+   "applies_to": "case3",
+   "status": "VERIFIED-FETCHED",
+   "source": "NIST NVD API 2.0 - services.nvd.nist.gov/rest/json/cves/2.0?keywordSearch=speculative+execution and keywordSearch=Intel+SGX",
+   "caveat": "Bohme & Kataria's low-rhoG rating for hardware excepts a 'same faulty production batch'; a manufacturer partition IS one batch"
+  },
+  {
+   "claim": "What CASE 3 uniquely removes: the internal-actor and misconfiguration category. Real and sizeable, but smaller than assumed and shrinking in the DBIR sample.",
+   "value": "Misc Errors + Privilege Misuse share of breaches: 33% (2024) -> 19% (2025) -> 11% (2026: 8% Errors + 3% Misuse). Within internal-actor breaches, error beats malice ~2:1.",
+   "applies_to": "severity",
+   "status": "VERIFIED-FETCHED",
+   "source": "Verizon DBIR 2026 Executive Summary p.1; DBIR 2025 pp.21,60 - https://www.verizon.com/business/resources/executivebriefs/2026-dbir-executive-summary.pdf",
+   "caveat": "Incident-pattern shares, not actor shares; DBIR itself flags the 2024-2026 decline as partly a change in contributing partners"
+  },
+  {
+   "claim": "The human element persists in all three cases: Case 3 removes staff from the sharing switch, not from the business estate.",
+   "value": "Human element in 62% of breaches (2026), 60% (2025). Internal-actor breaches n=2,199 of 12,063 analysed (~18%) in DBIR 2025.",
+   "applies_to": "all",
+   "status": "VERIFIED-FETCHED",
+   "source": "Verizon DBIR 2025 p.21 (Figures 18, 20); DBIR 2026 Exec Summary - https://www.verizon.com/business/resources/reports/2025-dbir-data-breach-investigations-report.pdf",
+   "caveat": "The 2,199/12,063 ratio is my arithmetic from figure sample sizes in the text; the figures are images and were not OCR'd"
+  },
+  {
+   "claim": "Initial access vectors - what attackers actually use, which tells you which boundary the frequency term is really about.",
+   "value": "2026: vulnerability exploitation 31% (now the leader, +55% YoY), credential abuse 13%. 2025: exploitation 20%. Only 26% of KEV-listed criticals fully remediated; median 43 days.",
+   "applies_to": "frequency",
+   "status": "VERIFIED-FETCHED",
+   "source": "Verizon DBIR 2026 Executive Summary pp.8-9 - https://www.verizon.com/business/resources/executivebriefs/2026-dbir-executive-summary.pdf"
+  },
+  {
+   "claim": "THE DECISIVE CORRELATION NUMBER: multi-party 'ripple' events are 10x worse in the body and 22x worse in the tail. One software image on millions of endpoints manufactures exactly this event class.",
+   "value": "Median loss single-party $83,925 vs multi-party $854,139 (10.2x). 95th pct $17.5M vs $391.0M (22.3x). The multi-party tail is thicker, not merely shifted.",
+   "applies_to": "method",
+   "status": "VERIFIED-FETCHED",
+   "source": "Cyentia Institute, IRIS Tsunami, Figure 4 (from Ripples Across the Risk Surface, with RiskRecon) - https://www.cyentia.com/wp-content/uploads/2026/03/IRIS-Tsunami.pdf"
+  },
+  {
+   "claim": "Propagation mechanics of the largest correlated cyber events - the named mechanism is exactly what this business would create.",
+   "value": "50 largest multi-party events: median cost $90.4M vs ~$200K for a typical single incident; median 31 secondary orgs, up to 800. Top propagation path: aggregated data and shared systems.",
+   "applies_to": "method",
+   "status": "VERIFIED-FETCHED",
+   "source": "Cyentia Institute, IRIS Tsunami, Key Findings and pp.8-9 - https://www.cyentia.com/wp-content/uploads/2026/03/IRIS-Tsunami.pdf",
+   "caveat": "Sample is the 50 largest events by design - severity-conditional, says nothing about frequency"
+  },
+  {
+   "claim": "Insiders and third parties are present even in the extreme correlated events, so Case 3's category elimination has value at the tail too.",
+   "value": "Insiders and third parties contributed to 34 of the 50 extreme multi-party events analysed",
+   "applies_to": "case3",
+   "status": "VERIFIED-FETCHED",
+   "source": "Cyentia IRIS Tsunami, Key Findings - https://www.cyentia.com/wp-content/uploads/2026/03/IRIS-Tsunami.pdf"
+  },
+  {
+   "claim": "Ripple propagation is slow enough to observe but too fast for mid-term underwriting action - relevant to whether cover can be withdrawn mid-event.",
+   "value": "25% of downstream firms are involved within 32 days of the initial event; the remaining 50% later",
+   "applies_to": "method",
+   "status": "VERIFIED-FETCHED",
+   "source": "Cyentia IRIS Tsunami, 'How long does it take ripples to propagate' - https://www.cyentia.com/wp-content/uploads/2026/03/IRIS-Tsunami.pdf"
+  },
+  {
+   "claim": "Third-party dependency is now the dominant driver of breach exposure - the category into which a shared-compute platform places the business.",
+   "value": "Breaches with third-party involvement: 15% (2024) -> 30% (2025) -> 48% (2026), a 60% YoY rise. Only 23% of third-party cloud exposures were fully remediated.",
+   "applies_to": "frequency",
+   "status": "VERIFIED-FETCHED",
+   "source": "Verizon DBIR 2025 p.15; DBIR 2026 Executive Summary p.9 - https://www.verizon.com/business/resources/executivebriefs/2026-dbir-executive-summary.pdf"
+  },
+  {
+   "claim": "Ransomware is the modal loss driver in the attritional layer and the realistic monetisation path for anyone who does break out of a shared-compute sandbox.",
+   "value": "Present in 48% of breaches (2026), 44% (2025), 32% (2024). Median ransom paid $139,875, down from $150,000; 69% did not pay. 88% of SMB breaches vs 39% of large-org breaches.",
+   "applies_to": "severity",
+   "status": "VERIFIED-FETCHED",
+   "source": "Verizon DBIR 2026 Executive Summary p.9; DBIR 2025 p.10 - https://www.verizon.com/business/resources/executivebriefs/2026-dbir-executive-summary.pdf"
+  },
+  {
+   "claim": "Insurers already observe the third-party channel in claims, not only in breach counts.",
+   "value": "Resilience reports 40% of claims had third-party involvement (cited by DBIR 2025 endnote 25, alongside the CDK Global event)",
+   "applies_to": "frequency",
+   "status": "SECONDARY",
+   "source": "Verizon DBIR 2025, endnote 25 - https://www.verizon.com/business/resources/reports/2025-dbir-data-breach-investigations-report.pdf",
+   "caveat": "Cited within the DBIR; the underlying Resilience report was not fetched"
+  },
+  {
+   "claim": "No precedent found by direct fetch for cyber cover on a volunteer-computing or distributed-compute platform. Nearest analogues are MSP and software-supply-chain events, treated as accumulation not attritional risk.",
+   "value": "Analogues in fetched sources: CDK Global (DBIR 2025 endnote 25); software supply chain became a separate claims category only in the 2024 data, with a median above other breach types",
+   "applies_to": "method",
+   "status": "SECONDARY",
+   "source": "Verizon DBIR 2025 endnote 25; Verizon 2026 Breach Impact Study - https://www.verizon.com/business/resources/reports/2026-breach-impact-study-dbir.pdf",
+   "caveat": "Kaseya 2021, CrowdStrike July 2024 and Lloyd's bulletin Y5381 are the obvious further precedents but were NOT fetched"
+  },
+  {
+   "claim": "Lloyd's mandates state-backed cyber-attack exclusions on standalone cyber policies and sizes systemic cyber scenarios in the trillions - i.e. the accumulation layer is contracted out rather than priced.",
+   "value": "Market bulletin Y5381 (Aug 2022), effective 31 Mar 2023; Lloyd's systemic risk scenario ~$3.5trn global economic exposure",
+   "applies_to": "method",
+   "status": "UNVERIFIED",
+   "source": "lloyds.com bulletin and press-release URLs returned 404 or JS-only shells under curl; recalled from model knowledge, NOT fetched",
+   "caveat": "Verify before this becomes load-bearing - it is the key commercial fact for whether Case 2/3 can be insured without caps"
+  }
+ ],
+ "notes": "CORRECTION TO THE INTUITION. \"Rate of attack surfaces leading to incidents x cost of incidents\" is the attritional layer only. There the three cases are closer than expected: realised exploitation of the Case 2 boundary is already rare (~4-6 confirmed guest-to-host escapes in 15 years of KEV) and of the Case 3 boundary is zero-observed. Separation is not mainly frequency of boundary failure - it is which loss categories are eliminated, and what happens to correlation.\n\nPER CASE. Case 1 sits on the most-attacked boundary in existence (30% of all KEV) and gives the underwriter nothing to credit; shared work inherits full endpoint frequency (~9.3%/firm/yr) and severity ($83K median claim, >$5M at 2.5%). Case 2 moves onto a boundary with a measured advisory rate (Xen ~3-8 host-compromise advisories/yr) but very low realised exploitation; the separate NIC also blocks lateral movement, which matters because business interruption carries both the highest median (~$90K) and highest tail (~$5M) of the four loss types. Case 3 alone removes a whole actuarial category - internal actors and misconfiguration, ~11% of breaches in 2026, up to 33% in 2024 - but concentrates the residual into a single unpatchable, perfectly correlated design risk across the installed base.\n\nDECISIVE. None of the three touches global correlation rhoG, which determines insurability. Expect a real quote to rate the attritional layer off DBIR/IRIS, then cap or exclude the accumulation layer."
+}
