@@ -142,7 +142,54 @@ print("""
 
   Consequence for the plan: expect a real quote to rate the attritional layer
   off DBIR/IRIS experience and then CAP OR EXCLUDE the accumulation layer.
-  The cap is the number that matters commercially, and no isolation
-  architecture moves it. What moves it is portfolio construction — multiple
-  independent hardware designs, staged rollout, and per-event limits.
+  The cap is the number that matters commercially. Isolation architecture does
+  not move it directly — but the decomposition in section 5 does.
+
+=== 5. The two-factor decomposition — why rhoG is smaller than it looks ===
+    (Matthew, 2026-08-03)
+
+  Compromise of the shared compute domain and loss of company data are two
+  DIFFERENT events, and only the first is correlated. A loss requires BOTH:
+
+     (a) the shared-domain boundary fails  — correlated: one design, every unit
+     (b) the attacker then defeats THAT company's own IT security — idiosyncratic
+
+  Factor (b) is independent across firms, because every company's security
+  posture, segmentation, monitoring and credential hygiene is its own. So the
+  systemic event does not produce a systemic LOSS; it produces N independent
+  conversion attempts.
+
+  Two consequences, and the second is the important one:
+
+  1. Expected systemic loss scales by p_conv. At p_conv = 0.10 across a
+     1M-endpoint portfolio, $83bn of naive exposure becomes $8.3bn.
+  2. The loss stops being a JUMP and becomes a SUM of independent Bernoullis.
+     Its coefficient of variation collapses as ~1/sqrt(N) — about 0.003 at
+     p_conv = 0.10 and N = 1M. A tightly concentrated distribution is exactly
+     what an insurer can hold capital against; a single correlated jump is what
+     it cannot. This is the difference between uninsurable and rateable.
+
+  WHAT THE CORRELATED EVENT COSTS WHEN CONVERSION FAILS. If the boundary breaks
+  but company defences hold, the loss is compute theft plus reimaging — bounded
+  and per-unit. At an assumed ~$200/machine, a 1M-endpoint systemic event costs
+  ~$200M rather than the ~$83bn implied by treating every foothold as a breach.
+  The systemic scenario for Cases 2 and 3 is "N machines need reimaging," not
+  "N data breaches."
+
+  BUT IT DOES NOT RESCUE CASE 1. There, a boundary failure lands the attacker
+  already inside the business OS and network with local context — the second
+  factor barely exists, so most of the correlated event converts. The
+  decomposition is worth the most exactly where the isolation is strongest,
+  which compounds rather than substitutes for the case ranking above.
+
+  HONEST RESIDUALS. Ransomware needs no exfiltration, though in Cases 2 and 3
+  the shared domain cannot reach business storage, so it folds back into the
+  conversion term. If the shared domain can observe memory or issue DMA,
+  exfiltration may not need to defeat IT security separately — which is why
+  IOMMU and memory partitioning are load-bearing rather than optional. And
+  compute theft at scale may be reportable even when bounded in dollars.
+
+  Portfolio construction still matters — multiple independent hardware designs,
+  staged rollout, per-event limits — but the decomposition means the accumulation
+  layer is a rateable exposure rather than an uninsurable one.
 """)
