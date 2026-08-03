@@ -130,3 +130,43 @@ I implied before checking. The defensible position is:
 For an underwriter this is still creditable — it is a documented, testable
 control that removes named attack classes — but it should be presented as
 defence-in-depth, not as a boundary proof.
+
+
+## Addendum — Case 4, and what it is actually for (Matthew, 2026-08-03)
+
+The residual classes above are the argument for **new silicon as a separate
+case**, not for abandoning Case 3.
+
+**Case 3 — manufacturer partition on existing silicon** already banks the
+largest actuarial prize: the company-non-interference property, which
+eliminates the insider and misconfiguration category (11% of 2026 breach
+patterns, 33% in 2024, and present in 34 of 50 extreme multi-party events).
+Nobody at the firm can misconfigure what nobody at the firm can touch. That
+needs core and memory-controller partitioning, an IOMMU, a separate boot
+domain and firmware enforcement — all of which ship today. **It does not need
+a new chip.**
+
+**Case 4 — silicon designed for shared execution from the start** is justified
+by two things Case 3 cannot supply:
+
+1. **Scale.** If the goal is to carry a substantial share of all compute rather
+   than to monetise idle time on machines bought for other reasons, the NRE
+   amortises across a fleet large enough to change the arithmetic entirely.
+   This is the paper's own Appendix A phase three — "hardware built for this
+   from birth" — and its economics are the endgame's, not the retrofit's.
+2. **The residual attack classes.** Everything idle-gating and flush-on-switch
+   cannot reach is addressable in architecture but not in software: DRAM
+   substrate attacks (Rowhammer, RAMBleed) via memory topology and per-domain
+   DIMMs; DMA via bus separation rather than IOMMU configuration; and stale
+   on-core state via architectural flush primitives that clear *every*
+   structure rather than the subset current instructions happen to cover. The
+   security literature reaches the same conclusion independently: Ge, Yarom,
+   Cock & Heiser's follow-up work finds that "the current architecture does not
+   provide the OS sufficient means to enforce time protection, and hardware
+   support is needed," and proposes a new ISA instruction (fence.t) precisely
+   because software cannot close the gap.
+
+**So the ladder is:** Case 2 buys network and storage separation; Case 3 buys
+the category elimination and needs no new silicon; Case 4 buys down the
+residual and is justified by scale. Conflating 3 and 4 overstates what the
+insurance argument requires — the underwriting case is complete at Case 3.

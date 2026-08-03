@@ -49,6 +49,27 @@ VERIFIED INPUTS (all fetched; see actuarial-findings.json for URLs)
     so the category elimination has tail value, not just attritional value.
 
 MODELLING ASSUMPTIONS (clearly ours, not fetched)
+ A5 CASE 3 vs CASE 4 (Matthew, 2026-08-03). These are different cases and
+    should not be conflated:
+      CASE 3 = manufacturer-engineered partition on EXISTING silicon (core and
+        memory-controller partitioning, IOMMU, separate boot domain, firmware
+        enforcement). This is what delivers the COMPANY-NON-INTERFERENCE
+        property — nobody at the firm can touch the sharing mechanism — and
+        that property alone eliminates the insider/misconfiguration category
+        (C1), which is the largest actuarial win available. It needs no new
+        chip.
+      CASE 4 = NEW SILICON designed for shared execution from the start. Its
+        justification is NOT insurance economics — Case 3 already banks the
+        category elimination — it is (a) scale, if the goal is to carry a
+        substantial share of all compute, and (b) buying down the RESIDUAL
+        classes that Case 3 cannot reach: DRAM-substrate attacks (Rowhammer,
+        RAMBleed) via memory architecture, DMA via bus topology, and stale
+        on-core state via architectural flush primitives. The security
+        literature points the same way — Ge et al.'s follow-up concludes "the
+        current architecture does not provide the OS sufficient means to
+        enforce time protection, and hardware support is needed." Case 4 is
+        also the paper's own Appendix A phase three, "hardware built for this
+        from birth."
  A0 IDLE-GATING (verified 2026-08-03, see co-execution-verification.md): the
     premise that hardware attacks need simultaneous execution is FALSE as a
     general claim. Only a minority (PortSmash, TLBleed, cross-thread RSB, and
