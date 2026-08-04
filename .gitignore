@@ -36,3 +36,6 @@ analysis/s10/ca/xml/
 analysis/s10/ca/segments_ca*.jsonl
 analysis/s10/*/xml/
 analysis/s10/*/segments_*.jsonl
+analysis/s10/pangram_ch/
+__pycache__/
+*.pyc
