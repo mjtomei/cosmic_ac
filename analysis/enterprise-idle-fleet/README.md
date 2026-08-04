@@ -547,7 +547,7 @@ Rates fetched live 2026-08-02 from the markets that actually buy idle compute
 (Salad's demand-monitor API, Vast.ai's bundles API, Akash's pricing API,
 RunPod's price page).
 
-### The business fleet as it exists today has no bid
+### The business fleet cannot participate in the markets that would buy it
 
 > **"Salad does not currently support Intel dedicated GPUs, or Intel integrated
 > GPUs."** — Salad support docs, fetched 2026-08-02. Container jobs require
@@ -602,6 +602,26 @@ optimisation case: a business does not add a card to earn proportionally more,
 it adds a card to enter the market at all. The 70 W A2000 with 12GB clears the
 VRAM bar while fitting an SFF chassis, which is why it remains the efficient
 rung despite its modest FP32.
+
+### Correction (Matthew, 2026-08-04): demand exists; participation is the barrier
+
+Calling this "no bid" was too strong, and the sweep's own data contradicts it.
+**CPU capacity trades openly**: Salad sells a 4-vCPU/8GB instance at $0.024/hr
+and Akash a 4-vCPU/16GiB at $0.066/hr, against $0.25–0.29 for the same
+specification from AWS/GCP/Azure. Idle *consumer* machines are rented and paid
+for at $0.014–0.229/hr. Demand for compute of this shape is real and priced.
+
+What the fetched evidence actually shows is that **the host-side conditions
+exclude a managed business fleet**: Salad requires a discrete GPU with ≥8GB
+VRAM; Vast.ai requires a Linux install, vendor drivers, inbound router ports and
+a machine dedicated to the purpose. Those are onboarding requirements, not
+prices. A Windows endpoint under MDM fails them on every count while being
+perfectly capable of the work.
+
+That is a better version of the finding, and more on-thesis: the barrier is
+integration and participation friction on the supply side, not an absent market.
+The fleet is worth ~$0 *to its owner today* because it cannot get in, not
+because nobody wants what it has.
 
 ### Honest caveats on the zero
 
