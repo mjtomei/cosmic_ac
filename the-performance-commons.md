@@ -438,6 +438,57 @@ That instrument is also no longer unusual to offer. Financing a personal computi
 
 What accumulates is not the margin. The paper's own analysis says the price per device-hour should be expected to fall: Figure 4's demand curve extends toward arbitrarily low value precisely because machine demand keeps finding a lower-value next-best task, and a plan that depends on holding a price is betting against the argument that justifies it. What accumulates is the network — the isolation that makes untrusted work safe to run, the scheduler that places it, the reputation that lets capacity be sold with a promise attached, and an installed base that has already accepted the instrument. Those assets appreciate on exactly the trend this paper argues is coming: if continuous optimization becomes a public good supplied by machine intelligence, the scarce thing is not compute but the capacity to place work across heterogeneous, untrusted, intermittent hardware and be accountable for the result. That is §7's aggregation point arriving from the supply side, and it is the same asset whether the workloads it carries are today's batch jobs or the shared optimization commons described above. The network is the position; the compute revenue is how it is financed while it is built.
 
+### A.0.1 What a shared machine earns, and what isolation costs
+
+Two tables close the business case. Both price one machine for one year, net of
+energy at commercial rates, hardware, amortised engineering and assurance, and
+an insurance premium — the last taken at the pessimistic end of a swept
+incident probability, since no source gives the rate at which shared work
+causes an incident. Four isolation architectures: **1** audited software on the
+same operating system and network; **2** a separate virtual machine with its own
+network interface and storage; **3** a manufacturer-engineered partition on
+existing silicon, which the company cannot reach; **4** silicon designed for
+shared execution. Revenue is the rate actually paid to hosts on today's
+marketplaces. Working: `analysis/enterprise-idle-fleet/`.
+
+| Machine | Revenue | Energy | Case 1 | Case 2 | Case 3 | Case 4 |
+|---|---|---|---|---|---|---|
+| Integrated graphics, as shipped | $0 | $79 | −$87 | −$136 | −$96 | −$98 |
+| + entry discrete GPU | $123 | $284 | −$297 | −$220 | −$179 | −$181 |
+| + mid, 3090-class | $596 | $501 | −$42 | +$36 | +$77 | +$75 |
+| + high, 4090 | $1,577 | $622 | +$819 | +$896 | **+$937** | +$935 |
+| + top, 5090 | $2,006 | $773 | +$1,097 | +$1,174 | **+$1,215** | +$1,213 |
+
+*Table A3. Profit per machine per year at observed marketplace rates. Isolation
+changes the answer by tens of dollars; the configuration changes it by
+thousands. Note the top row: the machine a business actually owns earns nothing,
+because the marketplaces that buy idle compute impose host-side conditions —
+a discrete GPU with eight gigabytes of video memory, or a Linux install with
+vendor drivers and inbound ports — that a managed fleet cannot meet. Note also
+that the cheap upgrade loses money: at commercial electricity an entry card
+burns more power than it earns, and only the high tiers clear.*
+
+The second table asks what changes if compute is priced by throughput rather
+than by machine class, and if the price of compute keeps rising as it is now.
+The escalation is not invented: DDR5 contract prices roughly doubled year over
+year and a 256 GB NVMe module went from about $25–30 in 2024 to $55 in 2026, so
+2× and 3× are the observed trend extended, not a forecast. Fungibility is
+likewise anchored rather than assumed — the market already prices FP32 almost
+linearly across the machines it accepts, at $0.00215 to $0.00218 per
+TFLOP-hour for a 3060, a 4090 and a 5090 alike.
+
+| Tradeable denomination | at today's price | 2× | 3× |
+|---|---|---|---|
+| FP32 sustained, 0.51 TFLOPS | −$90 | −$83 | −$76 |
+| INT8 poolable today, 2.04 | −$70 | −$42 | −$15 |
+| Platform TOPS including the neural engine, 34 | **+$354** | **+$805** | **+$1,256** |
+
+*Table A4. The same machine, priced per unit of throughput, on the Case 3 cost
+stack. Read the two axes against each other: tripling the price of compute is
+worth $14 a year to this machine, while making its neural engine purchasable is
+worth $444 — thirty times more. The barrier is not that compute is cheap. It is
+that most of what the machine can already do cannot be sold.*
+
 ### A.1 The efforts
 
 The two questions are not rhetorical; each has a concrete effort behind it, and honesty about their state is part of the case. Omerta attacks Q2 from the supply side, pooling idle compute; a human-and-machine coordination layer built on top of it attacks Q2 from the work side, and supplies the velocity measurement of §6; the *coherence* work develops the inoculation thesis and the practical protocol for working with machine intelligence as a peer rather than a tool; and the reconfigurable demonstrator below attacks Q1 directly. Table A1 reports each effort's state; the protocols follow. One separation keeps the program honest: the prediction is an ecosystem, not a company. If optimization becomes a public good, several kinds of business become natural — hardware built for the commons, managed optimization services, deployment and verification infrastructure, specialized silicon design, federated compute operation. Omerta is one point in that design space, and the paper's argument does not depend on it winning.
