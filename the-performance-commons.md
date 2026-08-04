@@ -468,6 +468,51 @@ vendor drivers and inbound ports — that a managed fleet cannot meet. Note also
 that the cheap upgrade loses money: at commercial electricity an entry card
 burns more power than it earns, and only the high tiers clear.*
 
+The cost side is worth separating, because it is where the isolation choice actually shows up and because the insurance line behaves unlike the others.
+
+| Cost per machine per year | Case 1 | Case 2 | Case 3 | Case 4 |
+|---|---|---|---|---|
+| Hardware, amortised over four years | — | $14.25 | $14.25 | $14.25 |
+| Engineering and assurance, amortised | $8.50 | $43.50 | $3.70 | $5.34 |
+| Insurance premium, pessimistic | $127.69 | $1.28 | $0.11 | $0.11 |
+| Insurance premium, optimistic | $1.28 | $0.01 | — | — |
+| **Total, pessimistic** | **$136.19** | **$59.03** | **$18.06** | **$19.70** |
+
+*Table A4. Insurance is 94% of the cost of sharing on an unisolated machine and
+about 1% on a partitioned one. Note also that the most engineered case is the
+cheapest: Case 3's engineering amortises over an OEM's shipment volume, while
+Case 2 pays for a network interface and a disk on every machine, forever.*
+
+**How these were computed.** Insurance follows the standard decomposition —
+frequency times severity for the attritional layer, with the systemic layer
+priced separately by scenario and capped. Severity is the median insurable loss
+from 69,683 US cyber claims, $83,000; the mean is roughly twelve times that, and
+pricing off it would overstate the typical case while still missing the tail.
+Frequency is the unknown: no source reports how often shared work causes an
+incident, so the annual per-machine probability is swept, and the two rows above
+are its pessimistic and optimistic ends. The cases are then scaled by how often
+each isolation boundary has actually failed in the wild — the endpoint operating
+system accounts for about 30% of all vulnerabilities known to have been
+exploited, guest-to-host hypervisor escapes number four to six confirmed in
+fifteen years, and no exploited vulnerability on record has crossed a CPU
+isolation boundary. Case 3 additionally removes the internal-actor and
+misconfiguration category, a tenth of breach patterns and a third of them two
+years ago, because nobody at the firm can touch what the manufacturer
+partitions. Hardware is a network controller at volume price plus a small NVMe
+module; engineering is a platform programme and a formal-proof effort at
+seL4-measured cost, divided by an OEM's shipments for Cases 3 and 4 and by one
+enterprise's fleet for Cases 1 and 2.
+
+One caution the table cannot show. None of these architectures reduces
+correlation across an insurer's portfolio, and correlation is what decides
+whether cover is written at all rather than what it costs. A single design
+placed on every endpoint is the hard-to-insure quadrant. What rescues it is that
+compromising the shared domain and losing company data are different events:
+the first is correlated, the second requires defeating each firm's own security
+separately, which is not. That decomposition turns a single correlated jump into
+a sum of independent conversions — the difference between an exposure an insurer
+can hold capital against and one it cannot.
+
 The second table asks what changes if compute is priced by throughput rather
 than by machine class, and if the price of compute keeps rising as it is now.
 The escalation is not invented: DDR5 contract prices roughly doubled year over
@@ -483,7 +528,7 @@ TFLOP-hour for a 3060, a 4090 and a 5090 alike.
 | INT8 poolable today, 2.04 | −$70 | −$42 | −$15 |
 | Platform TOPS including the neural engine, 34 | **+$354** | **+$805** | **+$1,256** |
 
-*Table A4. The same machine, priced per unit of throughput, on the Case 3 cost
+*Table A5. The same machine, priced per unit of throughput, on the Case 3 cost
 stack. Read the two axes against each other: tripling the price of compute is
 worth $14 a year to this machine, while making its neural engine purchasable is
 worth $444 — thirty times more. The barrier is not that compute is cheap. It is
