@@ -223,3 +223,19 @@ print("""
   staged rollout, per-event limits — but the decomposition means the accumulation
   layer is a rateable exposure rather than an uninsurable one.
 """)
+
+import csv, pathlib as _pl
+_rows = []
+for _n, _idx in BOUNDARY.items():
+    _rel = (_idx/BOUNDARY["Case 1 same OS/network"]) * (1-CAT_ELIM[_n])
+    for _p in (0.001, 0.005, 0.01, 0.05):
+        _pp = _p*_idx/BOUNDARY["Case 1 same OS/network"]*(1-CAT_ELIM[_n])
+        _rows.append({"case": _n, "boundary_index": _idx,
+                      "category_elimination": CAT_ELIM[_n], "relative_premium": _rel,
+                      "p_base": _p, "expected_loss_usd": _pp*SEV_MED_CLAIM,
+                      "premium_usd": _pp*SEV_MED_CLAIM/LOSS_RATIO})
+_o = _pl.Path(__file__).with_name("actuarial_model.csv")
+with _o.open("w", newline="") as _f:
+    _w = csv.DictWriter(_f, fieldnames=list(_rows[0].keys())); _w.writeheader()
+    for _r in _rows: _w.writerow(_r)
+print(f"wrote {_o.name}")

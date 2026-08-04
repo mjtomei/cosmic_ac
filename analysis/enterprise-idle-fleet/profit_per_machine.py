@@ -143,3 +143,19 @@ print("""
    and (b) whether cover can be written given portfolio correlation. Both are
    structural, not economic.
 """)
+
+import csv, pathlib as _pl
+_rows = []
+for _pm in (1e-5, 1e-4, 1e-3, 1e-2):
+    for _name, _rev, _w in configs:
+        for _c in IDX:
+            _pr = _pm*IDX[_c]*SEV/LOSS_RATIO
+            _rows.append({"case": _c, "config": _name, "p_m": _pm,
+                          "revenue_usd_yr": _rev, "energy_usd_yr": round(energy(_w),2),
+                          "fixed_usd_yr": round(fixed[_c],2), "insurance_usd_yr": round(_pr,2),
+                          "profit_usd_yr": round(_rev-energy(_w)-fixed[_c]-_pr,2)})
+_o = _pl.Path(__file__).with_name("profit_per_machine.csv")
+with _o.open("w", newline="") as _f:
+    _w2 = csv.DictWriter(_f, fieldnames=list(_rows[0].keys())); _w2.writeheader()
+    for _r in _rows: _w2.writerow(_r)
+print(f"wrote {_o.name} ({len(_rows)} rows)")
