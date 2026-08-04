@@ -781,6 +781,66 @@ that crosses those columns is meaningless. *This cuts both ways: for the
 fungible-compute denomination (below), the low-precision figures are the
 relevant ones and FP32 is the wrong metric.*
 
+## Pricing: today observed, and the fungible future (2026-08-04)
+
+Two models, deliberately side by side. Price consistency across the whole study
+was audited on 2026-08-04: v1 and v2 still carried the discredited
+$0.05–0.20/device-hour basis and are now **marked superseded in the source** —
+their device-hour and capacity arithmetic stands, their dollars do not.
+
+### Today — `fleet_sizing_v4.py`
+
+| Basis | Fleet/yr |
+|---|---|
+| v1/v2 derived basis (superseded) | $34–136bn |
+| **Observed CPU-slice, host share 30–50%** | **$5–22bn** |
+| Observed GPU host rates, entry → top | $9.5–155bn |
+
+The CPU-slice row is the right comparison for the fleet that actually exists,
+and it is **not hypothetical** — Akash and Salad sell CPU instances today. On
+the Akash rate the existing fleet is worth roughly **$13–22bn/yr to its owners
+if it could participate**, needing no new hardware. That is the value the
+participation barrier is currently destroying.
+
+The derived basis was not uniformly wrong — it sat above the observed CPU range
+and below the top-end GPU rate. It was measuring the wrong machine.
+
+### The future — `fleet_sizing_v5_fungible.py`
+
+Prices compute per unit of throughput rather than per machine class, with
+hardware prices escalating. The anchor is observed, not derived: **the market
+already prices FP32 almost linearly** across machines it accepts — $0.00215,
+$0.00218, $0.00218 per TFLOPS-hour for a 3060, 4090 and 5090 respectively. So
+"fungible" means extending that same rate to machines currently excluded.
+
+Net per machine per year, after energy:
+
+| Tradeable denomination | 1× | 3× | 10× |
+|---|---|---|---|
+| FP32 sustained (0.51 TF) | −$72 | −$58 | −$11 |
+| FP16 packed (1.02) | −$65 | −$38 | +$57 |
+| INT8 poolable via DP4a (2.04) | −$51 | +$3 | +$192 |
+| **Platform TOPS incl. NPU (34)** | **+$372** | **+$1,274** | **+$4,431** |
+
+### The finding: fungibility is worth more than price escalation
+
+For the machine that actually exists — integrated graphics, no discrete GPU —
+the two levers are not close:
+
+- **Price escalation alone, staying FP32: 1× → 10× is a 10× gain.**
+- **Denomination alone, at today's prices: FP32 → platform TOPS is a 67× gain.**
+
+Solving programmability is worth roughly **seven times more to this fleet than a
+tenfold rise in the price of compute**. And they are not substitutes: at FP32
+and today's prices the machine earns ~$7/yr against $79/yr of power — loss-making
+by an order of magnitude, which is precisely why no market bids for it. It needs
+the denomination change to clear its own energy cost at all.
+
+**That is the paper's thesis stated as a price.** The barrier is not that compute
+is cheap; it is that most of what the machine can do is not purchasable. The NPU
+tier alone — physically present, framework-gated, worth more than every other
+denomination combined — is the entire argument as a single line item.
+
 ## Method, and a correction to the headline (2026-08-02)
 
 **How the compute was sized.** Device-hours (devices × hours × idle fraction)

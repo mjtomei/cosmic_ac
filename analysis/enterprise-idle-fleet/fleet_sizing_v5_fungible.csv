@@ -1,0 +1,21 @@
+denomination,units_per_device,price_multiple,rate_usd_per_unit_hr,revenue_usd_machine_yr,net_after_energy_usd_yr,fleet_net_usd_bn
+FP32 sustained,0.51,1,0.00218,6.76,-71.76,-8.01
+FP32 sustained,0.51,2,0.00436,13.53,-64.99,-7.25
+FP32 sustained,0.51,3,0.006540000000000001,20.29,-58.23,-6.5
+FP32 sustained,0.51,5,0.0109,33.82,-44.7,-4.99
+FP32 sustained,0.51,10,0.0218,67.64,-10.88,-1.21
+FP16 packed,1.02,1,0.00218,13.53,-64.99,-7.25
+FP16 packed,1.02,2,0.00436,27.06,-51.46,-5.74
+FP16 packed,1.02,3,0.006540000000000001,40.59,-37.93,-4.23
+FP16 packed,1.02,5,0.0109,67.64,-10.88,-1.21
+FP16 packed,1.02,10,0.0218,135.29,56.77,6.34
+INT8 poolable (DP4a),2.04,1,0.00218,27.06,-51.46,-5.74
+INT8 poolable (DP4a),2.04,2,0.00436,54.12,-24.4,-2.72
+INT8 poolable (DP4a),2.04,3,0.006540000000000001,81.17,2.65,0.3
+INT8 poolable (DP4a),2.04,5,0.0109,135.29,56.77,6.34
+INT8 poolable (DP4a),2.04,10,0.0218,270.58,192.06,21.43
+Platform TOPS (NPU incl.),34.0,1,0.00218,450.96,372.44,41.56
+Platform TOPS (NPU incl.),34.0,2,0.00436,901.93,823.41,91.89
+Platform TOPS (NPU incl.),34.0,3,0.006540000000000001,1352.89,1274.37,142.22
+Platform TOPS (NPU incl.),34.0,5,0.0109,2254.82,2176.3,242.87
+Platform TOPS (NPU incl.),34.0,10,0.0218,4509.63,4431.11,494.51

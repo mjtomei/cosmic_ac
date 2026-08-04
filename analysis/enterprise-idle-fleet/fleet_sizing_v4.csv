@@ -1,0 +1,9 @@
+basis,rate_usd_hr,host_lo,host_hi,fleet_bn_lo,fleet_bn_hi
+CPU renter: Salad 4vCPU/8GB,0.024,0.0072,0.012,4.8888,8.148
+CPU renter: Akash 4vCPU/16GiB,0.066,0.0198,0.033,13.4442,22.407
+CPU renter: hyperscaler same spec,0.27,0.081,0.135,54.999,91.665
+GPU host: entry (1660/2060),0.014,0.014,0.014,9.506,9.506
+GPU host: RTX 3060,0.028,0.028,0.028,19.012,19.012
+GPU host: RTX 3090,0.068,0.068,0.068,46.172,46.172
+GPU host: RTX 4090,0.18,0.18,0.18,122.22,122.22
+GPU host: RTX 5090,0.229,0.229,0.229,155.491,155.491
