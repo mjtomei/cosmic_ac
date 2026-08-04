@@ -1,0 +1,9 @@
+config,case,baseline_premium_usd,profit_at_1x_usd,breakeven_multiple
+"high, 4090 ($1,577/yr)",Case 1,127.69,818.69,7.4
+"high, 4090 ($1,577/yr)",Case 2,1.28,895.85,702.6
+"high, 4090 ($1,577/yr)",Case 3,0.11,936.81,8152.7
+"high, 4090 ($1,577/yr)",Case 4,0.11,935.17,8138.4
+"mid, 3090-class ($596/yr)",Case 1,127.69,-41.51,0.7
+"mid, 3090-class ($596/yr)",Case 2,1.28,35.65,28.9
+"mid, 3090-class ($596/yr)",Case 3,0.11,76.61,667.6
+"mid, 3090-class ($596/yr)",Case 4,0.11,74.97,653.4
