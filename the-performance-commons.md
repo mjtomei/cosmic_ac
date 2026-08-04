@@ -513,6 +513,10 @@ separately, which is not. That decomposition turns a single correlated jump into
 a sum of independent conversions — the difference between an exposure an insurer
 can hold capital against and one it cannot.
 
+![Tolerance on the insurance estimate](the-performance-commons-figure-insurance.png)
+
+*Figure 8. How wrong the insurance estimate can be before the business stops working. The premium is the least-supported number in this analysis — no source reports how often shared work causes an incident on a host estate, so the underlying probability is swept rather than sourced. What isolation buys is therefore not mainly a cheaper premium but tolerance to being wrong about it: an unisolated machine's entire margin is consumed by a sevenfold error, while a partitioned one absorbs three to four orders of magnitude. Note also that the cushion travels with the configuration — at the thinner margin on the right, every architecture's tolerance compresses by roughly an order of magnitude. The chart shows attritional pricing only; a systemic event would not reprice cover so much as withdraw or cap it, which is a failure mode no premium multiple can represent.*
+
 The second table asks what changes if compute is priced by throughput rather
 than by machine class, and if the price of compute keeps rising as it is now.
 The escalation is not invented: DDR5 contract prices roughly doubled year over

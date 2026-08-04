@@ -30,7 +30,7 @@ front, body = (html_body[:m.start()], html_body[m.start():]) if m else ("", html
 
 # --- wrap figures: dense -> full width (span both columns); compact (figs 2,3,4) -> single column ---
 def fig_class(src_):
-    return 'onecol' if src_.endswith(('figure-2.png', 'figure-3.png', 'figure-4.png', 'figure-tapeout.png', 'figure-embargo.png')) else 'fullwidth'
+    return 'onecol' if src_.endswith(('figure-2.png', 'figure-3.png', 'figure-4.png', 'figure-tapeout.png', 'figure-embargo.png')) else 'fullwidth'  # figure-insurance is fullwidth (two panels)
 
 def fig_repl(mm):
     s, cap = mm.group(1), mm.group(2)
