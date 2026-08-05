@@ -120,3 +120,100 @@ corporate version cannot.
 - Don K. Price, *The Scientific Estate* (Harvard UP, 1965) — the probable
   referent of Teles's "[scientific] estate," and the Kennedy School's own
   founding statement on expertise and democratic authority.
+
+
+---
+
+# Supporting research (sweep, 2026-08-04) — `technocratic-counsel-sweep.json`
+
+Teles's account checks out in the primary record, and the institution says the
+quiet part itself.
+
+## The Kennedy School was explicitly founded to make a governing class
+
+- **Harvard Kennedy School's own history page:** Littauer "backed his vision of
+  **a school for a new professional governing class** with an unprecedented $2
+  million gift." The counsel-as-royalty's-last-scarce-good thesis, stated by the
+  institution about itself.
+- **Littauer's 1935 terms**, via Conant in the *Crimson*: the school was "**not
+  merely to train technical specialists, but to educate men in a broad way for
+  public service**." Generalist counsel, not technique — which is the distinction
+  the arc turns on.
+- **It opened in March 1937 with no students.** A three-month session in which
+  the faculty took instruction from about fifty serving officials on what to
+  teach. The commission's maxim: "It is far more important that the work of
+  training students be started right than that it be started early." An
+  institution seeking counsel on how to institutionalise counsel.
+- **Don K. Price** — confirmed as the referent of Teles's "[scientific] estate" —
+  was the dean who launched the 1969 MPP, whose core was "analytical methods,
+  economic theory, statistical methods, political analysis." Teles's account of
+  the founding logic is exact.
+- **It was a programme, not one school**: Ford Foundation money created or
+  rebuilt eight policy schools in the late 1960s (Berkeley, Carnegie-Mellon,
+  Duke, Harvard, Michigan, Texas, Stanford GSB, RAND) around a shared two-year
+  analytic core, with an explicit "rejection of the politics–administration
+  dichotomy" (Ellwood, *JPAM* 27(1), 2008).
+
+## Price's own doctrine complicates our argument in a way worth taking seriously
+
+From *The Scientific Estate* (1965), verified through secondary quotation since
+the book is lending-restricted:
+
+- **p.137:** "the closer the estate is to the end of the spectrum that is
+  concerned solely with truth, the more it is entitled to freedom and
+  self-government" — and the closer to power, the more it must "submit to the
+  test of political responsibility… the ultimate decision of the electorate."
+  Autonomy varies *inversely* with power. That is a governance principle for
+  counsel that our arc currently lacks, and it is a good one.
+- **p.186, the sharp one:** "the main lines of our policy, over the long run, are
+  likely to be determined by **scientific developments that we cannot foresee**,
+  rather than by political doctrines that we can now state."
+
+  This cuts at a soft spot. Our arc assumes cheap counsel lets citizens choose
+  better among available options. Price says the expert estate **generates the
+  option set**, so democratising advice about the menu does not democratise
+  authorship of the menu. Answering that is now a requirement, not an optional
+  refinement.
+
+## OTA: counsel withdrawn, with a date and a line item
+
+The strongest single piece of support found, because it is a natural experiment
+in the opposite direction.
+
+- The **1972 statute states the counsel-gap diagnosis in law**: existing agencies
+  are "not designed to provide the legislative branch with adequate and timely
+  information," so Congress must "equip itself with new and effective means for
+  securing competent, unbiased information" (86 Stat. 797).
+- **FY1995: $21,970,000 and 143 staff. Next act: $3,615,000 "to carry out the
+  orderly closure."** Closed 29 September 1995 after 23 years; records, library
+  and the Unix system transferred to the Architect of the Capitol. The function
+  was withdrawn, not replaced.
+- The staff series is a clean curve: 10 (FY1974) → peak 164 (FY1978) → 143 every
+  year FY1985–95 → zero.
+- **And the legislature cut its own counsel more broadly in the same moment**:
+  House committee staff fell 39% in one year, 2,046 (1994) → 1,246 (1995), and
+  never recovered (1,11x in 2015 against a 1987 peak of 2,024). CRS 868 (FY1980)
+  → 609 (FY2015). GAO 5,476 (FY1978) → 3,677 (FY1996).
+- **The exception proves the mechanism:** CBO is flat, 193 (FY1975) → 235
+  (FY2015). The body whose numbers Congress *procedurally requires* survived; the
+  bodies producing discretionary advice did not. Counsel that is not structurally
+  demanded gets cut.
+- Standing counsel for Congress now runs about **$1.02bn/yr** (GAO $811.9M, CRS
+  $136.1M, CBO $70M, FY2024) — the price of the apparatus, for scale.
+
+**Canonical account to acquire:** Bruce Bimber, *The Politics of Expertise in
+Congress: The Rise and Fall of the Office of Technology Assessment* (SUNY, 1996).
+
+## Still open
+
+Two sweep angles failed on the schema layer and are re-running: the Great
+Society's analytic machinery (PPBS, Rivlin, Wildavsky) and the critique
+literature (Moynihan, Halberstam, Lindblom, Scott). One partial result did
+surface: **Allen Schick, "A Death in the Bureaucracy: The Demise of Federal
+PPB," *PAR* 33(2), 1973** — PPB extended government-wide for the Great Society
+in 1965 and dead by 1971, which is the six-year lifespan of the analytical
+plumbing Teles describes.
+
+Also not yet fetched, and worth a second route: GAO's **Science, Technology
+Assessment and Analytics** team, created 2019 — the partial restoration of OTA's
+function, and the live "counsel is being rebuilt" datapoint.

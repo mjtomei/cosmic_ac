@@ -1,0 +1,229 @@
+{
+ "hks-founding": {
+  "findings": [
+   {
+    "claim": "Littauer's gift endowed a school for the 'science and art of government administration' and 'not merely to train technical specialists, but to educate men in a broad way for public service.'",
+    "detail": "Crimson, 11 Dec 1935, quoting President Conant reading the terms of Lucius N. Littauer's $2,000,000 gift, Harvard's largest ever from an individual. Gift also aimed to improve 'public administration -- national, state, and local -- for the welfare of our people.' Generalist counsel, not technique.",
+    "status": "VERIFIED-FETCHED",
+    "source": "Harvard Crimson, \"$2,000,000 Gift of Lucius N. Littauer For School of Public Administration,\" Dec 11, 1935",
+    "oa_pdf_url": "https://www.thecrimson.com/article/1935/12/11/2000000-gift-of-lucius-n-littauer/",
+    "relation": "precedent"
+   },
+   {
+    "claim": "Conant appointed an inter-university commission under Princeton's President Dodds to report on 'university education for governmental service' before the school was designed.",
+    "detail": "Same 1935 Crimson story; members included Civil Service Commissioner Leonard D. White and HBS Dean Donham. Conant: 'Mr. Littauer has wisely recognized that the best available brains and experience should be brought to bear on the problem.' Counsel about how to institutionalise counsel.",
+    "status": "VERIFIED-FETCHED",
+    "source": "Harvard Crimson, Dec 11, 1935",
+    "oa_pdf_url": "https://www.thecrimson.com/article/1935/12/11/2000000-gift-of-lucius-n-littauer/",
+    "relation": "precedent"
+   },
+   {
+    "claim": "The school opened March 1937 with no students: a three-month session in which faculty took instruction from ~50 serving federal, state and local officials on curriculum and research, on a $65,000 Rockefeller grant.",
+    "detail": "Crimson, 29 Jan 1937; students deferred to fall 1938. Commission maxim quoted in the Crimson editorial two days earlier: 'It is far more important that the work of training students be started right than that it be started early.' Faculty all borrowed from existing Harvard faculties.",
+    "status": "VERIFIED-FETCHED",
+    "source": "Harvard Crimson, \"Littauer School Will Open March 1 for Exploratory Session Without Students,\" Jan 29, 1937; editorial \"The Littauer Plan,\" Jan 27, 1937",
+    "oa_pdf_url": "https://www.thecrimson.com/article/1937/1/29/littauer-school-will-open-march-1/",
+    "relation": "precedent"
+   },
+   {
+    "claim": "The intended product was a rising cadre: professionals gaining 'a broad knowledge of the practical problems of government as a means of entering the public service and advancing to positions of importance in it.'",
+    "detail": "Crimson, Jan 29, 1937 (target students: law/technical graduates and advanced-degree holders), plus 'in-service' fellowships for serving officials on leave. The 1959 curriculum committee reaffirmed preparing students for advancement 'to the highest levels of the career service' (HKS timeline).",
+    "status": "VERIFIED-FETCHED",
+    "source": "Harvard Crimson, Jan 29, 1937; HKS official history timeline",
+    "oa_pdf_url": "https://www.hks.harvard.edu/more/about/timeline-harvard-kennedy-schools-history",
+    "relation": "supports-thesis"
+   },
+   {
+    "claim": "HKS itself describes Littauer's founding vision as backing 'a school for a new professional governing class.'",
+    "detail": "Harvard Kennedy School 'History' page (ksg.harvard.edu/about/history, c. 2014, via Wayback): Littauer 'backed his vision of a school for a new professional governing class with an unprecedented $2 million gift.' The institution's self-description names the de-facto-royalty mechanism directly.",
+    "status": "VERIFIED-FETCHED",
+    "source": "Harvard Kennedy School, \"History\" (ksg.harvard.edu/about/history), via Internet Archive",
+    "oa_pdf_url": "https://web.archive.org/web/2010/http://www.ksg.harvard.edu/about/history",
+    "relation": "supports-thesis"
+   },
+   {
+    "claim": "Dean Don K. Price on the 1969 MPP: it would let a student 'combine qualifications for a private profession with an understanding of the way in which it can be applied to the broader problems of public policy.'",
+    "detail": "Crimson, 29 July 1969, first MPP cohort (21 students, joint degrees with Law and Medicine); Price also said the aim was students 'better equipped to carry on the tasks of modern government.' Core: analytical methods, economic theory, statistical methods, political analysis.",
+    "status": "VERIFIED-FETCHED",
+    "source": "Harvard Crimson, Marion E. McCollom, \"Kennedy School Offers Graduate Studies Program in Public Policy,\" July 29, 1969",
+    "oa_pdf_url": "https://www.thecrimson.com/article/1969/7/29/kennedy-school-offers-graduate-studies-program/",
+    "relation": "precedent"
+   },
+   {
+    "claim": "Price's four-estates doctrine: 'the closer the estate is to the end of the spectrum that is concerned solely with truth, the more it is entitled to freedom and self-government' — autonomy varies inversely with power.",
+    "detail": "Verbatim from Price, The Scientific Estate (Belknap, 1965), p.137, with the estates named (scientific, professional, administrative, political); continues: closer to power, 'the more it is required to submit to the test of political responsibility... the ultimate decision of the electorate.'",
+    "status": "VERIFIED-FETCHED",
+    "source": "Law & Contemporary Problems 69 (2006), \"Transparency in Public Science,\" n.15, quoting Price 1965 at 137 (book itself lending-restricted)",
+    "oa_pdf_url": "https://web.archive.org/web/2020/https://scholarship.law.duke.edu/cgi/viewcontent.cgi?article=1385&context=lcp",
+    "relation": "complicates-thesis"
+   },
+   {
+    "claim": "Price framed the book's question constitutionally: 'how is science, with all its new power, to be related to our political purposes and values, and to our economic and constitutional system?'",
+    "detail": "Price 1965 at p.3, quoted in Miller's 1966 Duke LJ review, written while Price was sitting dean. Review also quotes p.15 (scientific revolution more radical for political institutions than the industrial) and p.162 ('science alone cannot solve political problems').",
+    "status": "VERIFIED-FETCHED",
+    "source": "Arthur Selwyn Miller, review of The Scientific Estate, Duke Law Journal 1966: 615, 625-629",
+    "oa_pdf_url": "https://web.archive.org/web/2020/https://scholarship.law.duke.edu/cgi/viewcontent.cgi?article=2043&context=dlj",
+    "relation": "context"
+   },
+   {
+    "claim": "Price, p.186: 'the main lines of our [public] policy, over the long run, are likely to be determined by scientific developments that we cannot foresee, rather than by political doctrines that we can now state.'",
+    "detail": "Quoted with emphasis added in the 1966 Duke LJ review. Cuts against any reading in which cheap counsel merely lets citizens choose better among fixed options: the option set itself is generated by the expert estate.",
+    "status": "VERIFIED-FETCHED",
+    "source": "Price 1965 at 186, quoted in Duke Law Journal 1966: 615",
+    "oa_pdf_url": "https://web.archive.org/web/2020/https://scholarship.law.duke.edu/cgi/viewcontent.cgi?article=2043&context=dlj",
+    "relation": "complicates-thesis"
+   },
+   {
+    "claim": "Harvard's 1969 MPP was one node of a Ford Foundation programme that created or reborn eight public policy schools in the late 1960s (Berkeley, Carnegie-Mellon, Duke, Harvard, Michigan, Texas, Stanford GSB, RAND).",
+    "detail": "Ellwood (JPAM 2008): shared two-year lock-step analytic core (a year of economics, a year of quant), client workshops, full-time cohorts, urban/domestic orientation, and explicit 'rejection of the politics-administration dichotomy' — analysts trained as advocates for efficiency.",
+    "status": "VERIFIED-FETCHED",
+    "source": "John Ellwood, \"Challenges to public policy and public management education,\" JPAM 27(1), 2008, 172-176 (10.1002/pam.20313)",
+    "oa_pdf_url": "https://web.archive.org/web/2020id_/https://onlinelibrary.wiley.com/doi/pdf/10.1002/pam.20313",
+    "relation": "precedent"
+   },
+   {
+    "claim": "The quantitative turn preceded the policy programme: in 1963 the curriculum committee recommended a course for students with no math training, 'intended to provide...an introduction to quantitative methods.'",
+    "detail": "HKS timeline sequence: 1958 Price (a Ford Foundation vice president) made dean; 1963 quant recommendation; 1966 rename to JFK School + Institute of Politics; 1968 faculty recommends MPP after two-year study, FAS authorises the PhD; 1969 first 21 students; 1971 first eight MPP degrees.",
+    "status": "VERIFIED-FETCHED",
+    "source": "Harvard Kennedy School, \"Timeline of Harvard Kennedy School's history\"",
+    "oa_pdf_url": "https://www.hks.harvard.edu/more/about/timeline-harvard-kennedy-schools-history",
+    "relation": "context"
+   },
+   {
+    "claim": "Correction: Price was not the first dean. John H. Williams was (1937), then Edward Mason (1947); Price became dean in 1958 and presided over both the 1966 renaming and the 1969 MPP; Allison was fourth dean (1977).",
+    "detail": "HKS timeline, corroborated by the 1969 Crimson ('Don K. Price, dean of the Kennedy School') and the 1966 Duke LJ review ('Dean, Graduate School of Public Administration'). Also: the Littauer gift was announced 11 Dec 1935, though HKS dates it 1936 (the establishment year).",
+    "status": "VERIFIED-FETCHED",
+    "source": "HKS timeline; Crimson 1935-12-11 and 1969-07-29; Duke LJ 1966",
+    "oa_pdf_url": "https://www.hks.harvard.edu/more/about/timeline-harvard-kennedy-schools-history",
+    "relation": "context"
+   },
+   {
+    "claim": "Neustadt is institutionally recorded as a founding father of the modern Kennedy School and served as associate dean until 1975; Schelling was founding faculty of the 1969 programme.",
+    "detail": "Harvard Gazette, 19 May 2005. The Neustadt Award honours whoever 'has created powerful solutions to public problems, drawing on research and intellectual ideas as appropriate' — the school's own operative definition of successful counsel.",
+    "status": "VERIFIED-FETCHED",
+    "source": "Harvard Gazette, \"Inaugural Schelling and Neustadt Awards given to scholar, judge,\" May 19, 2005",
+    "oa_pdf_url": "https://web.archive.org/web/2010/http://www.hno.harvard.edu/gazette/2005/05.19/25-neustadt.html",
+    "relation": "context"
+   },
+   {
+    "claim": "Neustadt's own founding memoranda for the public policy programme could not be obtained online; the 1968 two-year faculty study that produced the MPP is recorded only by date.",
+    "detail": "Negative result across HKS/ksg.harvard.edu (Wayback), Harvard Gazette, Crimson via Wayback CDX 1966-73 (sparse coverage), OpenAlex full-text. Likely primary: Harvard University Archives (Faculty of Public Administration) or Neustadt papers, JFK Library. Treat quoted Neustadt 'founding statements' as unverified.",
+    "status": "UNVERIFIED",
+    "source": "Negative result: HKS, Harvard Gazette, Crimson/Wayback CDX, OpenAlex full-text search",
+    "relation": "context"
+   },
+   {
+    "claim": "The Scientific Estate (1965) and Government and Science (1954) are on archive.org but lending-restricted; full text is not fetchable and archive.org's public full-text index does not cover them.",
+    "detail": "Identifiers scientificestate0000pric, _v5w7, _m5o1 (djvu.txt 403s) and governmentscienc0000pric_x9j8. All Price quotations above were recovered through open-access articles quoting him with page cites; the four-estates chapter in full needs a borrow or print copy.",
+    "status": "VERIFIED-FETCHED",
+    "source": "archive.org metadata API, four Don K. Price identifiers",
+    "oa_pdf_url": "https://archive.org/metadata/scientificestate0000pric",
+    "relation": "context"
+   }
+  ],
+  "notes": "Method: curl with browser UA only, no WebSearch. Wayback was the workhorse — bepress (Duke) and Wiley refuse direct curl (202/403) but serve through /web/2020/ and /web/2020id_/ prefixes. Crimson's on-site search is JS-only, but its URL slugs encode headlines, so cdx/search/cdx?url=thecrimson.com/article/YYYY*&fl=original plus grep works as a full-archive index (1935 and 1937 well covered; 1966-73 sparse). OpenAlex filter=fulltext.search:...,is_oa:true substituted for Scholar and is how the verbatim Price p.137 four-estates quote was found.\n\nTwo corrections to the brief: Price was the third dean (1958-1977), not the first — but he was dean for both the 1966 renaming and the 1969 MPP, the more useful fact. And the Littauer gift was announced 11 Dec 1935, not 1936.\n\nBest precedent line: HKS's own history calls it 'a school for a new professional governing class,' while the gift terms insisted it not 'merely train technical specialists.' Best counter-line: Price's p.137 principle — an estate's claim to autonomy varies inversely with its proximity to power — which bites any counsel apparatus, machine counsel included.\n\nSecond-pass targets: Neustadt's 1967-68 prospectus (Harvard University Archives; JFK Library Neustadt papers); the Dodds Commission report (Jan 1937); the full four-estates chapter; Price's Government and Science (1954) thesis, still unverified in primary form."
+ },
+ "great-society-analysis": null,
+ "the-critique": null,
+ "counsel-institutions": {
+  "findings": [
+   {
+    "claim": "The Employment Act of 1946 wrote standing expert counsel into statute: a three-member Council of Economic Advisers, duty-bound to gather and interpret economic information and appraise every federal program.",
+    "detail": "Sec. 4, 60 Stat. 23 at 24-25. Members paid $15,000/yr; all CEA member and staff salaries capped at $345,000 per fiscal year. Sec. 5 created the Joint Committee on the Economic Report as the legislature's receiving organ. Counsel manufactured by statute, and priced.",
+    "status": "VERIFIED-FETCHED",
+    "source": "Employment Act of 1946, Pub. L. 79-304, 60 Stat. 23 (Feb. 20, 1946)",
+    "oa_pdf_url": "https://www.govinfo.gov/content/pkg/STATUTE-60/pdf/STATUTE-60-Pg23.pdf",
+    "relation": "precedent"
+   },
+   {
+    "claim": "The 1972 OTA statute states the counsel-scarcity diagnosis: existing agencies are 'not designed to provide the legislative branch with adequate and timely information, independently developed.'",
+    "detail": "Sec. 2(c)-(d), 86 Stat. 797: Congress must 'equip itself with new and effective means for securing competent, unbiased information.' Sec. 3(d) rations who may commission assessments; Sec. 4 sets a thirteen-member Board, six Senators and six Representatives.",
+    "status": "VERIFIED-FETCHED",
+    "source": "Technology Assessment Act of 1972, Pub. L. 92-484, 86 Stat. 797 (Oct. 13, 1972)",
+    "oa_pdf_url": "https://www.govinfo.gov/content/pkg/STATUTE-86/pdf/STATUTE-86-Pg797.pdf",
+    "relation": "precedent"
+   },
+   {
+    "claim": "OTA's abolition is legible as a line item: FY1995 gave it $21,970,000 and 143 staff; the next act gave $3,615,000 'to carry out the orderly closure' and capped it at 17 employees.",
+    "detail": "Pub. L. 103-283, 108 Stat. 1423; Pub. L. 104-53, 109 Stat. 526, Secs. 113-114 (60 days severance; all records, the Unix system, library and research materials to the Architect of the Capitol). The adjacent line, CBO at $23,188,000 / 221 FTE, survived.",
+    "status": "VERIFIED-FETCHED",
+    "source": "Pub. L. 103-283, 108 Stat. 1423; Pub. L. 104-53, 109 Stat. 514 at 526",
+    "oa_pdf_url": "https://www.govinfo.gov/content/pkg/STATUTE-109/pdf/STATUTE-109-Pg514.pdf",
+    "relation": "supports-thesis"
+   },
+   {
+    "claim": "OTA closed September 29, 1995 after a 23-year run; its entire output was archived and put online rather than replaced. The counsel function was withdrawn while the artifacts were kept.",
+    "detail": "Princeton's 'OTA Legacy' site, verbatim: 'The Congressional Office of Technology Assessment closed on September 29, 1995. During its 23-year history, OTA provided...' Full publication set issued by GPO on CD-ROM, April 1996. Second mirror at ota.fas.org.",
+    "status": "VERIFIED-FETCHED",
+    "source": "The OTA Legacy, princeton.edu/~ota (fetched 2026-08)",
+    "oa_pdf_url": "https://www.princeton.edu/~ota/",
+    "relation": "supports-thesis"
+   },
+   {
+    "claim": "The staff series shows OTA at 10 (FY1974), peaking at 164 (FY1978), holding 143 every year FY1985-FY1995, then zero: a natural experiment in withdrawing an institution's counsel.",
+    "detail": "Brookings Vital Statistics, Table 5-8 'Staffs of Congressional Support Agencies, FY1946-FY2015', with footnote 'The Office of Technology Assessment was eliminated in 1995.' Peak 164 was the entire standing technical counsel of the U.S. Congress.",
+    "status": "VERIFIED-FETCHED",
+    "source": "Brookings, Vital Statistics on Congress, Ch. 5, Table 5-8",
+    "oa_pdf_url": "https://www.brookings.edu/wp-content/uploads/2017/01/vitalstats_ch5_full.pdf",
+    "relation": "supports-thesis"
+   },
+   {
+    "claim": "House committee staff, the legislature's own in-house analytic capacity, fell 39% in one year, 2,046 (1994) to 1,246 (1995), and never recovered: 1,110 in 2015, below the 1975 level.",
+    "detail": "Vital Statistics Table 5-5, 1891-2015. House peak 2,024 (1987). Senate committee staff 958 (1994) to 732 (1995); 888 in 2015 against a 1975 peak of 1,277. The 104th Congress cut its own counsel and OTA in the same retrenchment.",
+    "status": "VERIFIED-FETCHED",
+    "source": "Brookings, Vital Statistics on Congress, Table 5-5",
+    "oa_pdf_url": "https://www.brookings.edu/wp-content/uploads/2017/01/vitalstats_ch5_full.pdf",
+    "relation": "supports-thesis"
+   },
+   {
+    "claim": "The decline is not confined to 1995: CRS fell from 868 staff (FY1980) to 609 (FY2015); GAO from 5,476 (FY1978) to 4,572 (FY1995) to 3,677 (FY1996), a 20% cut in one year, and 2,989 by FY2015.",
+    "detail": "Vital Statistics Table 5-8. CBO is the exception, flat at 193 (FY1975) to 235 (FY2015). The body producing scorekeeping numbers Congress procedurally requires survives; the bodies producing interpretive counsel shrink. GAO stood at 14,219 in FY1946.",
+    "status": "VERIFIED-FETCHED",
+    "source": "Brookings, Vital Statistics on Congress, Table 5-8",
+    "oa_pdf_url": "https://www.brookings.edu/wp-content/uploads/2017/01/vitalstats_ch5_full.pdf",
+    "relation": "supports-thesis"
+   },
+   {
+    "claim": "Current standing counsel for the U.S. Congress costs about $1.02B/yr across three agencies: GAO $811,894,000, CRS $136,080,000, CBO $70,000,000 (FY2024).",
+    "detail": "Consolidated Appropriations Act, 2024, legislative branch division. CRS's authority still cites 'section 203 of the Legislative Reorganization Act of 1946 (2 U.S.C. 166)', the same 1946 moment as the CEA. Denominator: ~0.016% of a ~$6.5T federal budget.",
+    "status": "VERIFIED-FETCHED",
+    "source": "Pub. L. 118-47, Consolidated Appropriations Act, 2024",
+    "oa_pdf_url": "https://www.govinfo.gov/content/pkg/PLAW-118publ47/html/PLAW-118publ47.htm",
+    "relation": "context"
+   },
+   {
+    "claim": "The canonical scholarly account is Bruce Bimber, 'The Politics of Expertise in Congress: The Rise and Fall of the Office of Technology Assessment' (SUNY Press, 1996).",
+    "detail": "Verified as a real holding (Internet Archive id politicsofexpert0000bimb, 1996) with three indexed reviews: Choice 34-3002; Technol. Forecasting & Social Change (10.1016/s0040-1625(96)00089-3); APSR (10.2307/1215881). Lending-restricted; I verified the work and reception, not the argument.",
+    "status": "SECONDARY",
+    "source": "Bimber, B. (1996). The Politics of Expertise in Congress. SUNY Press.",
+    "oa_pdf_url": "https://archive.org/details/politicsofexpert0000bimb",
+    "relation": "context"
+   },
+   {
+    "claim": "The sharpest precedent for failure is PPB, extended government-wide for the Great Society in 1965 and dead by 1971. Allen Schick's obituary: 'A Death in the Bureaucracy: The Demise of Federal PPB.'",
+    "detail": "PAR 33(2), Mar. 1973, p.146, DOI 10.2307/974211 (Crossref metadata verified; text JSTOR-walled, not fetched). Companion: Schick, 'More Views on PPB', PAR 29(4) 1969, p.431, DOI 10.2307/973260. Counsel supplied at scale to a government that had not asked for it was abandoned in six years.",
+    "status": "SECONDARY",
+    "source": "Schick, A. (1973). A Death in the Bureaucracy. Public Administration Review 33(2):146",
+    "oa_pdf_url": "https://doi.org/10.2307/974211",
+    "relation": "complicates-thesis"
+   },
+   {
+    "claim": "Harvard Kennedy School describes its founding as manufacturing public-service expertise: 'HKS was founded in the 1930s as the Harvard Graduate School of Public Administration.'",
+    "detail": "Verbatim from hks.harvard.edu/about (fetched 2026-08). All history/timeline sub-pages 404 as of this fetch, so the usual specifics (Littauer's 1935/36 gift, the 1966 Kennedy renaming) are NOT verified here and should be sourced elsewhere before use.",
+    "status": "VERIFIED-FETCHED",
+    "source": "Harvard Kennedy School, About page, hks.harvard.edu/about",
+    "oa_pdf_url": "https://www.hks.harvard.edu/about",
+    "relation": "precedent"
+   },
+   {
+    "claim": "OTA's statute held its own vulnerability: only committee chairs, the Board, or the Director could commission an assessment, so no individual legislator's daily work depended on it.",
+    "detail": "Sec. 3(d), 86 Stat. 798, contrasted with CBO, whose cost estimates are procedurally required for reported bills and which survived the same Congress at 221 FTE. This is my reading of the fetched statute against the fetched appropriations record, not a claim I found in a source.",
+    "status": "UNVERIFIED",
+    "source": "Inference from Pub. L. 92-484 Sec. 3(d) read against Pub. L. 104-53",
+    "oa_pdf_url": "https://www.govinfo.gov/content/pkg/STATUTE-86/pdf/STATUTE-86-Pg797.pdf",
+    "relation": "supports-thesis"
+   }
+  ],
+  "notes": "No WebSearch. Statutes fetched from govinfo.gov and extracted locally; staff series from a Brookings-hosted PDF; closure date from Princeton's OTA Legacy site. Crossref/OpenAlex/Unpaywall used only for metadata.\n\nBlocked, worth a second pass by another route: (a) crsreports.congress.gov 403s to curl under any User-Agent, so CRS's own staffing series (R. Eric Petersen) was not obtained. (b) gao.gov 403s (Akamai) with no Wayback snapshot at the STAA path, so the 2019 creation of GAO's Science, Technology Assessment and Analytics team — the partial restoration of OTA's function, the live \"counsel is being rebuilt\" datapoint — is absent here. (c) American Presidency Project has no retrievable LBJ PPBS statement at the obvious slug, so the 1965 government-wide extension of PPB rests only on Schick's metadata. (d) Bimber's book is on archive.org but lending-restricted and search-inside returned nothing, so the politics of the 1995 abolition (Gingrich, Contract with America, the Senate's failed rescue) are unverified — only the appropriations act that executed it.\n\nStrongest number for the thesis: House committee staff 2,046 (1994) to 1,246 (1995). Strongest counterargument anchor: Schick's PPB obituary. Note the asymmetry the numbers expose — CBO, producing procedurally-required scores, is flat since 1975; every body producing interpretive counsel shrank."
+ }
+}
