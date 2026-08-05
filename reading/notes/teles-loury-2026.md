@@ -221,3 +221,115 @@ plumbing Teles describes.
 Also not yet fetched, and worth a second route: GAO's **Science, Technology
 Assessment and Analytics** team, created 2019 — the partial restoration of OTA's
 function, and the live "counsel is being rebuilt" datapoint.
+
+
+---
+
+# Full-transcript review (2026-08-05) — what the keyword pass missed
+
+The first pass searched for "Kennedy School," "counsel," "great society." Read
+end to end, **the opening third is as relevant as the passage that prompted the
+search**, and one item is a direct challenge to our own argument.
+
+## 1. Motivated cognition defended as the engine of verification (~03:59)
+
+> "Science requires conflict… I actually think a certain degree of **motivated
+> cognition** where we have people who have an emotional or intellectual **beef
+> where they want to actually go and check your citations and rerun your model**…
+> And where that's lacking, it's very easy to slip into a lot of easy conclusions
+> that don't get checked."
+
+**The same phenomenon Kahan treats as pathology, read as function.** Kahan: motivated
+reasoners resist identity-inconvenient conclusions. Teles: motivated reasoners
+audit *other people's*. Both can hold, and together they say motivated cognition
+is distributed error-detection — costly individually, valuable at population
+level. Load-bearing for V.3a: removing it is not obviously an improvement, and
+any machine-counsel argument must say what replaces the auditing function.
+
+His worked example (~11:38) is a prize-winning history of colonial gun ownership
+whose sources proved "dodgy and problematic," which ideologically diverse
+historians would have caught sooner. (Almost certainly Bellesiles's *Arming
+America*, 2000 — he does not name it; **verify before citing**.)
+
+## 2. Loury's variance-for-truth statement (~06:30)
+
+> "The university is for finding truth. How do you find truth? Through
+> **competitive disputation** among people who are disciplined and skilled. If we
+> don't have different ideological philosophical orientations, we're not going to
+> have sufficient **dissonance and conflict** that would generate… a better
+> understanding of the truth."
+
+The *coherence* work's suppression-of-idea-variance thesis, stated independently
+by an economist — useful precisely because it is not ours.
+
+## 3. Discriminatory equilibrium without discriminators (~04:48–06:30)
+
+Homogenisation and polarisation can rise "**even if nobody is particularly
+discriminating in the present**," because "when people look at who's in an
+institution, they extrapolate from that whether or not they belong" — until
+academia is "coded as an ideological project in the way that **nursing was once
+coded as a purely gendered project**." An emergent equilibrium with no bad actor:
+the same shape as §2.2's herd. Cites **Neil Gross, *Why Are Professors Liberal
+and Why Do Conservatives Care?***
+
+## 4. Competition for jurisdiction (~16:31–19:36)
+
+> "It's good to have a **competition for jurisdiction**… If you're trying to
+> figure out the effect of a particular discrete intervention, mostly economics
+> has everything you need. But if you're trying to explain a really big long-term
+> complex system like economic development, then economics in its own toolkit
+> doesn't have enough."
+
+And against the systems charge: "**good economics is in fact complex system
+thinking**… macroeconomics was one of the original complex systems theories."
+
+## 5. The mission, stated as counsel distribution (~21:14)
+
+> "We've made a decision that we want to **serve something like the entirety of
+> the governing class of the United States**."
+
+Set beside HKS's "a school for **a new professional** governing class," this is
+the same institutional object ninety years apart, with *distribution* named as
+the reform. **The cleanest single exhibit the counsel arc has.**
+
+Constitutional argument for it (~23:48): "part of our constitutional order when
+it works is it doesn't let any particular party or faction mostly govern on their
+own… to do really big things, we often have to do them **across ideological
+lines**." Cites Hopkins president **Ron Daniels, *What Universities Owe
+Democracy***.
+
+## 6. Two strategy claims bearing on the program itself
+
+**Long horizons (~26:08):** "The most important work gets done when somebody
+starts something because they really believe in it and **they just keep going at
+it until the opportunity opens up**. A lot of people have to do things for a very
+long time before the world's ready for it."
+
+**Greenfield over infill (~39:58–40:46):** "It's really hard to change any old
+institution — whether it's a government or a firm or a university. It's always
+easier to find some **green field**… doing **infill housing is a lot harder**
+than saying let's go find some place out in the green field." Plus: use policy to
+"encourage people to find those green fields." The same choice Appendix A's
+phasing faces, argued by someone who chose greenfield and can say why.
+
+## 7. The challenge to carry (~34:30)
+
+> "One of the risks of AI is… the purpose of it is to **automate cognition**…
+> the worry is that in the process **we're going to pull out where the actual
+> discretion and judgment are in organizations**. To really make government use AI
+> effectively we need a sense of **what are the essentially human tasks in
+> governance**."
+
+The accountability-sink worry stated *prospectively*, and the sharpest available
+objection to machine counsel in governance: automate the legible parts and you
+may excise judgment that was load-bearing precisely because it was illegible.
+Pair with Davies.
+
+## People and institutions named (for the governance directory)
+
+William Howell (dean); Ron Daniels (*What Universities Owe Democracy*); Seth
+Lazar (philosophy of AI); Gillian Hadfield (law and economics, AI governance);
+Nick Caputo; Bobin Sampot (economics of science and innovation, hired because "so
+much of how we've governed science is being torn up in funding structures");
+SNF Agora Institute and its Center for Economy and Society; Neil Gross; Harold
+Pollack (Chicago).
