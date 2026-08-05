@@ -187,9 +187,11 @@ wrong category from the start; the balance sheets are merely the last to find ou
 
 **IV.3 Nobody plans it; the existing superintelligences birth it.** New section,
 now carried by the companion report **"Assets, Rents, and the Socialized Buildout"**
-(in repo: assets-rents-socialized-buildout.pdf — the accounting behind everything
-in this section; its own sources: Goldman, Gartner, PitchBook, Odlyzko, Nordhaus,
-Perez/Janeway, SEC/court records). The argument arc, with its numbers:
+(in repo: assets-rents-socialized-buildout-2e.pdf, 2nd ed. 2026-08-04 — the
+accounting behind everything in this section; its own sources: Goldman, Gartner,
+PitchBook, Odlyzko, Nordhaus, Perez/Janeway, Campbell, SEC/court records;
+primary-verification ledger: `analysis/capital-cycle/VERIFICATION.md`; models:
+`analysis/capital-cycle/`). The argument arc, with its numbers:
 
 - **The gap is expectation, not investment.** ~$27T of AI-attached market value vs
   ~$1.0–1.2T of deployed, depreciation-adjusted AI capital stock — 94% expectation,
@@ -208,7 +210,9 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
   interpretations, in ascending register: (a) it is a bubble, and the crash
   socializes the buildout the telecom way — the bequest is open weights [REAL,
   the precedent]; (b) the moats hold, and the rents are captured out of
-  substituted labor — the reading the market claims to be making [MIXED]; or
+  substituted labor — the reading the market claims to be making [MIXED], and
+  it now carries a location question inside it (*whose* moats, builders' or
+  riders'? — the rent-location bullet below); or
   (c) **the bubble is the down payment on a post-scarcity society** — the
   arithmetic fails in money because it is pricing, badly, in money, the regime
   in which money's own role shrinks; the impossible revenue requirement is what
@@ -252,7 +256,12 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
   sustained extraction without legitimacy selects the violent discharge channel;
   (b) it re-reads IV.3's productive bubble as a *benign, self-assessed
   discharge* — the investor class socializes its own capital through the crash
-  instead of having it expropriated, Scheidel's leveling without the horsemen;
+  instead of having it expropriated, Scheidel's leveling without the horsemen
+  [refined by the 2e (accepted 2026-08-04): the discharge is not a future
+  crash event — the cycle socializes **continuously, pre-crash** (~$300–400B
+  external revenue against $700B–1T/yr cash out, funded by index capital,
+  debt, and sovereigns), so the discharge is *already running*, and the
+  mechanism does not depend on a crash occurring at all];
   (c) it gives the commons argument its self-interest form addressed to the
   surplus holders: the fair split is not charity but the cheapest long-run
   discharge of Arrow pressure available to them — which is I.3's covert→overt
@@ -570,15 +579,47 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
   produced; (c) the norms clause feeds I.2/V.3's engineered-preferences thread:
   Arrow reads social norms as compensations for market failure, which is the
   economics-side twin of the religion-as-engineered-utility-functions point.
-- **The precedent says the private and social outcomes diverge completely.** Telecom
-  1996–2002: $1.5–2T raised; demand forecasts off by an order of magnitude
-  (Odlyzko); $2T of equity erased, $1T of debt; sector ROIC 5–8% against 7–9% cost
-  of capital, persistently — the industry operating the internet's transport layer
-  never earned its capital cost. A covertly socialized infrastructure program,
-  neither consensual nor centrally planned, but effective (Nordhaus: producers
-  capture ~2.2% of the surplus they create; Perez/Janeway productive bubble; the
-  1847 railway mania as the same play run earlier). Equity-financed losses diffuse
-  — the 2001 recession was mild; bank-funded busts (1873, 2008) propagate.
+- **The precedent says the private and social outcomes diverge completely —
+  three records, one shape** (2e report §6 + Table 6: peak investment share,
+  financing, dominant asset life, private return, toll-booth winners, loss
+  absorption).
+  **Britain 1844–52:** railway investment ~5–7% of GDP at the 1847 peak — no
+  private program since has matched it; dividends 4.4% → 7% → 2.4%, prices
+  +106% then below their start; the expansion carried by profitable incumbents
+  via rights issues, not fly-by-night promoters (Campbell; Campbell & Turner;
+  Odlyzko). Campbell's composition point lives here (placement per Matthew,
+  2026-08-04): prices tracked dividends up and down — **a sector can overbuild
+  catastrophically without any individual security being mispriced against its
+  own expected cash flows**. Carried forward to the AI residual: no
+  irrationality about Nvidia or Microsoft is required; fallacy of composition
+  suffices — each layer fairly priced against margin assumptions that cannot
+  jointly be satisfied by the end flow. Britain got a network it would never
+  have voted to fund through taxation, and railway shareholders spent decades
+  earning less than the government's own perpetuities. [REAL — railway
+  literature.]
+  **US 1865–1900:** network doubled 1865–75 (35,085 → 74,096 miles;
+  construction peak 7,439 miles built in 1872, later 2,665 → 11,569 in
+  1878–82 — VERIFIED exact vs Historical Statistics Q 321/Q 329); ~20% of
+  mileage in receivership by 1877 and ~25% again by mid-1894; ~6% of GDP at
+  the 1880s peak, ~15% of the decade's capital formation; ton-mile revenue
+  ~2.2¢ (1870, Fishlow's estimate) → 0.729¢ (1900), nominal [REAL — HSUS/
+  NBER Macrohistory/Fishlow; `analysis/capital-cycle/VERIFICATION.md`]. The
+  "water": railroad capitalization $4.6B (1876) → $10.6B (1890), ~40% "water"
+  — a replacement-cost gap named and measured a century before Tobin; implied
+  sector Q at peak watering ~1.7× vs the AI complex's 15–23×. The honest
+  fork: either intangibles are worth an order of magnitude more relative to
+  plant than anything in 1890, or the watering is proportionally larger —
+  naming which you believe is the entire argument. [Cooke/Northern Pacific,
+  NYSE-volume, and London-issuance detail still on the flagged secondary —
+  see queue; never cite it.]
+  **Telecom 1996–2002:** $1.5–2T raised; demand forecasts off by an order of
+  magnitude (Odlyzko); $2T of equity erased, $1T of debt; sector ROIC 5–8%
+  against 7–9% cost of capital, persistently — the industry operating the
+  internet's transport layer never earned its capital cost. A covertly
+  socialized infrastructure program, neither consensual nor centrally planned,
+  but effective (Nordhaus: producers capture ~2.2% of the surplus they create;
+  Perez/Janeway productive bubble). Equity-financed losses diffuse — the 2001
+  recession was mild; bank-funded busts (1873, 2008) propagate.
 - **The second harvest.** The overbuilt network did two things no planner ordered:
   it induced humanity to transcribe itself — the web, the forums, the code, the
   training corpus — and it grew the ad-funded engine that later paid for the AI
@@ -592,6 +633,70 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
   financing (supplier investments, warrants, utilization backstops) is system-safer
   than Lucent/Nortel receivables but epistemically worse: it corrupts the demand
   signal itself. Double-capitalization and margin-stacking are already binding.
+  2e additions (report §8 + §3.2): Microsoft's commercial RPO reached $678B
+  mid-2026 (+84% y/y) and **includes OpenAI's $250B Azure commitment** — the
+  flagship signed-freight evidence is one-third-plus signed by the loop's own
+  negative-margin terminus [verify RPO decomposition — queue]. Meta's Hyperion
+  SPV: $27.3B senior secured at 6.581% (2049), off balance sheet, secured by a
+  lease promise, not the datacenter [terms on flagged secondary — queue].
+  Credit already tiers what the loop's equity trades as one theme: 6.6% (Meta
+  SPV) vs 11–15% (CoreWeave term loans) — lenders pricing the tail correlation
+  index weights ignore (quiet §2.2.3 tie, per Matthew 2026-08-04: the spread
+  is the market making the loop *legible*). Signal contamination now
+  quarterly: MSFT FQ4-2026 net income included a $3.2B paper gain on its
+  Anthropic stake, ~9% of the quarter's earnings [REAL — CNBC results
+  coverage]. Credit Mobilier as the related-party ancestor: the Union
+  Pacific's own promoters billing it ~$94M for ~$50M of construction —
+  construction-phase rent extraction wearing the costume of network demand;
+  lineage: Credit Mobilier's invoices → Lucent's receivables → Nvidia's equity
+  stakes and warrants. Diagnostic constant: who profits if the network is
+  built, regardless of whether it is ever profitably run? Depreciation
+  inventory [REAL — 10-K-verified 2026-08-04, metric corrected in
+  VERIFICATION.md]: useful-life extensions manufactured ~$14.5B/yr of
+  reported operating income (~$11.7B after tax) across MSFT/GOOGL/AMZN/META/
+  ORCL; Amazon then reverted a subset from six years to five effective Jan
+  2025, citing the pace of AI hardware development, at $1.4B — the most
+  experienced operator agreeing with the model's five-year IT life.
+- **History pays the riders; the market has priced the builders — and July
+  2026 was the first mass migration between the two allocations.** In every
+  precedent the network capital earned poor returns while asset-light riders
+  owning the customer, the standard, or the validated record kept the profit:
+  Adams Express, American Express, Pullman on the railroads (Adams persists
+  today as the ADX closed-end fund); Google/Amazon/Netflix on post-crash
+  fiber, content platforms funding ~4 of 5 new transatlantic-cable dollars by
+  2018–19. The market's current allocation is the inverse — rent
+  capitalization concentrated in builders and suppliers while incumbent
+  application software entered mid-2026 at 11–14× trailing earnings. "Right
+  in total, wrong in location" is a coherent resolution of the ~$17T
+  residual, and **relocation redistributes the GDP requirement without
+  relaxing it**. Dated case study (per Matthew 2026-08-04, enters the paper
+  as such — framed so the dating is explicit): the Situational Awareness LP
+  unwind, July 30 — the builder-long/software-short trade in its purest form,
+  margin-called into a ~$16B single-block sale (longs −36 to −55% on the
+  month while the shorts surged; Microsoft +25) against Nasdaq −10; every
+  core long bottomed on margin-call day and snapped back once the block
+  cleared — flow, not verdict. The Microsoft print is the controlled
+  experiment: decade-high short interest into earnings, then Azure
+  accelerating to 43% with capex guidance held → +$480B in a session —
+  forced to choose between Microsoft-the-builder and Microsoft-the-rails,
+  the market chose the rails. First mass repricing from the market's rent
+  allocation toward history's **without any aggregate crash** — level and
+  location are separate questions and July moved only the second; and
+  early-and-levered is punished identically to wrong, so the blowup does not
+  adjudicate the decade thesis. Two qualifications the toll-booth thesis's
+  promoters omit: (i) seat-priced software is a derivative claim on
+  headcount — a toll booth on a road whose traffic is the thing being
+  automated (Microsoft ran its first voluntary retirement program the same
+  quarter it passed 30M paid Copilot seats); (ii) the historical toll booths
+  were killed by the state, not by competition — Parcel Post 1913,
+  consolidation into American Railway Express 1918, Pullman by consent
+  decree. **Moats made of standards and validated records are political
+  artifacts.** This sharpens the three-readings fork: reading (b) ("the
+  moats hold") now carries a location question inside it — *whose* moats,
+  builders' or riders'? [Aggregates REAL — CNBC/Faber, WSJ, FT, Bloomberg,
+  SpotGamma, Fortune, S3, ledgered in the 2e's §5. Per-name returns and the
+  express-company/Pullman financials still on the flagged secondary — never
+  cite it; see queue.]
 - **The durable public good this time is open weights** — structurally stronger
   than fiber: irreversibility plus zero-cost reproduction, and the artifact
   *teaches its own manufacture* (every served token is a lesson; distillation
@@ -608,15 +713,23 @@ Perez/Janeway, SEC/court records). The argument arc, with its numbers:
   robust to automated optimizers — which take over increasingly large
   co-optimizing surfaces of the design process — will survive; the durable residue
   of a bust is shells, power, workforce, and weights, not five-year accelerators.
-  (Also the report's last-mile point, which feeds III.2: bubbles fund the fundable
-  layer, not the binding one — telecom's actual bottleneck was the last mile; AI's
-  is power interconnection and enterprise integration, where capital moves slowest.)
+  The deflation clock (2e §6.3): ton-mile revenue deflated by roughly
+  two-thirds, nominal, over thirty years; AI inference prices routinely fall
+  that much in a year — the commodity-deflation phase that consumed a
+  generation compresses into quarters, the five-year asset life restated from
+  the price side. (Also the report's last-mile point, which feeds III.2:
+  bubbles fund the fundable layer, not the binding one — telecom's actual
+  bottleneck was the last mile; AI's is power interconnection and enterprise
+  integration, where capital moves slowest.)
 
-*[MIXED — the accounting is [REAL] (reported + modeled, provenance in the report);
-the socialized-buildout reading is the declared interpretation. ⟨indirect⟩ — the
+*[MIXED — the accounting is [REAL] (reported + modeled; provenance in the 2e
+report's Data Provenance note, load-bearing figures re-anchored to primaries in
+`analysis/capital-cycle/VERIFICATION.md`); the socialized-buildout and
+rent-location readings are the declared interpretations. ⟨indirect⟩ — the
 markets do the arguing. Still to verify separately: Zuckerberg/Nadella/Musk/Huang
 open-weight posts + Microsoft open-weight page (the executives narrating the
-socialization).]*
+socialization); the 2e items in the queue (per-name July returns,
+express-company financials, Hyperion terms, Cooke/NYSE detail).]*
 
 **IV.4 The aggregation point, and who runs the scheduler.** Current §7 (vantage /
 channel / incentive, Game Ready / Cloud Profiles fragments, commoditize-the-layer)
@@ -680,6 +793,75 @@ argument does not depend on it. Continuing: education becomes free to anyone jud
 noisy contributions; models already serve this role where intentions are clean and
 data is available). *(His outline; [IMAGINED] with real anchors — VERIFY Wenfeng
 transcript, tinygrad/DAO governance examples. ⟨indirect⟩)*
+
+**V.3a Partisanship, alignment, and the last strategy left (Matthew, 2026-08-05).**
+Prompted by Teles saying his new policy school needs help reducing partisanship
+(Loury & Teles, *The Glenn Show*, 29 Jul 2026 — notes in
+`reading/notes/teles-loury-2026.md`). Two moves, and the second is the one that
+matters.
+
+**First: partisanship as a heuristic for incomplete information.** ⟨M⟩ You cannot
+evaluate every situation, so you fall back on who has seemed to share your goals
+before — party as a proxy for alignment. Given a full view of each situation and
+of everyone around you, you know who is actually on your side *in each instance*,
+and the proxy stops earning its keep. Three supports follow: more bandwidth for
+argumentation rather than affiliation; positions derivable independently from
+visible interests; and therefore less room for dishonest signalling. This has a
+literature on both sides and the counterargument is serious — if partisanship is
+identity rather than an information deficit, more information hardens it (Achen &
+Bartels; Taber & Lodge's motivated skepticism). Sweep in flight; whatever it
+returns, the claim must be stated as conditional on partisanship being
+informational at the margin, not assumed.
+
+**Second, and this is the sharp one: under full legibility the only durable way
+to gain power is to actually align your interests with everyone.** ⟨M⟩ If
+positions can be derived from visible interests, cheap talk stops working —
+you cannot signal alignment you do not have. What remains is the real thing. And
+the way to have interests that conflict with fewer people is to **need less**:
+optimising your own utility function to be happy with less. ⟨M⟩ Today that
+strategy is largely confined to religion.
+
+**Why this is a convergence rather than a new thread.** Four existing arguments
+land on the same point:
+- **The engineered-utility thread** (religion and morality as humanity's prior
+  deliberate preference engineering) already claims engineered functions deliver
+  more welfare per unit of material input — the GSS anchor. This says the same
+  property is *strategically* advantageous, not merely pleasant.
+- **V.3b's trust constraint**: the firm that maximally demonstrates wisdom
+  maximises participation, and may have to be an iteration on religious
+  institutions. Same conclusion, arrived at from the market side.
+- **The universal-owner limit**: a sufficiently diversified holder profits from
+  aggregate well-being. That is interest-alignment achieved by *portfolio*
+  rather than by *asceticism* — two routes to the same position.
+- **Legibility** (§2.2.3, and I.3's covert-substitution thesis): the paper
+  already argues that when work becomes legible, obedience loses its role as the
+  measure of value. This extends it — when *interests* become legible, professed
+  alignment loses its role too.
+
+**The mechanism has a name in the literature, and it is not ours.** This is
+costly signalling: a signal is credible only when it is expensive to fake
+(Zahavi's handicap principle; Grossman 1981 on warranties, already cited in
+§8.2). Religious asceticism is the worked example — Sosis & Bressler,
+"Cooperation and Commune Longevity: A Test of the Costly Signaling Theory of
+Religion," *Cross-Cultural Research* 37(2), 2003 (doi:10.1177/1069397103037002003)
+find religious communes imposing more costly requirements survive longer than
+secular ones; see also Sosis, "Why aren't we all Hutterites?", *Human Nature*
+2003 (doi:10.1007/s12110-003-1000-6), and Norenzayan, *Big Gods* (2013,
+doi:10.1515/9781400848324). Frank's *Passions Within Reason* (1988) — already on
+the books list — is the commitment-device version. **Build on these; the claim is
+that machine legibility makes the costly-signalling equilibrium general rather
+than confined to religious communities.**
+
+**Honest tensions to carry.** (a) Kuran's preference falsification (already cited)
+is the thing being defeated — but the same legibility that defeats falsification
+is surveillance, and the paper must not pretend otherwise; the difference between
+"your interests are visible" and "your interests are exposed" is governance, not
+technology. (b) "Happy with less" is a *strategy* here, and asceticism as a route
+to power has an ugly history when institutionalised — it becomes a demand made of
+others. State it as an individual optimisation, never as a social prescription.
+(c) It cuts against the abundance framing elsewhere in the program: needing less
+and building more are not obviously the same programme, and V.6's
+future-without-money material should reconcile them rather than assert both.
 
 **V.3b The trustworthy firm — deploying preference-knowing intelligence without
 eroding freedom (Matthew, 2026-07-30).** This is the constructive answer to the
@@ -1404,6 +1586,39 @@ locate the actual quote and source, possibly Deep Utopia or interviews) · Vinge
 1993 "The Coming Technological Singularity" for past-the-singularity
 unpredictability (the "opaque wall" passage — verify wording).
 
+NEW to-verify items from the capital-cycle report 2e (2026-08-04; all currently
+ride on the report's ref [28], a marketing essay — **never cite [28] in paper
+text**; re-anchor first, targets in the handoff §5:
+`analysis/capital-cycle/HANDOFF-capital-cycle-2e.md`): per-name July 2026
+long/short returns · express-company and Pullman financials (Harlow *Old
+Waybills*, Stimson, the 1944–47 antitrust record) · Cooke/Northern Pacific
+detail, 87%-of-NYSE-volume Jan 1870, ~70% London issuance share 1870–74,
+default counts 1876–77 · Meta Hyperion SPV terms ($27.3B at 6.581%) · Oracle
+FY2026 + CoreWeave financing terms (11–15%) · hyperscaler capex/OCF ratios ·
+MSFT commercial RPO $678B incl. OpenAI's $250B Azure commitment · Credit
+Mobilier ~$94M-for-~$50M construction figures · content platforms funding ~4
+of 5 new transatlantic-cable dollars 2018–19 · Adams Express → ADX closed-end
+fund persistence.
+
+RESOLVED by the 2e report + the 2026-08-04 primary-verification pass (full
+ledger with filing URLs: `analysis/capital-cycle/VERIFICATION.md`): the
+railway-mania record (Campbell 2013 + CEPR; Campbell & Turner; Odlyzko) · US
+railroad mileage series — 35,085→74,096 (1865–75), 7,439 built 1872,
+2,665→11,569 (1878–82) all EXACT against Historical Statistics Q 321/Q 329
+(note: mixes miles-built and net-additions series, both Poor's-derived) ·
+ton-mile series — 1900 = 0.729¢ exact (NBER Macrohistory/Poor's); 1870
+restated to Fishlow's ~2.2¢ estimate (the 2e's original 1.88¢ was an unsourced
+blend; decline ~two-thirds, nominal) · the depreciation-extension inventory —
+all five companies verified verbatim against 10-Ks, with a metric correction
+(the essay mixed operating and net series; consistent operating series MSFT
+3.7/GOOGL 3.9/AMZN 3.2/META 2.92/ORCL 0.73 ≈ $14.5B/yr; net ≈ $11.7B/yr) and
+Amazon's 6y→5y reversal confirmed (+$1.4B D&A 2025, AI-pace rationale,
+primarily AWS) · Moody's $785B/2026→~$1T/2027 (universe = six named US
+hyperscalers, May 2026) · Bain ~$2T need / ~$800B world shortfall (GTR press
+release 2025-09-23) · the July 2026 unwind aggregates and the Microsoft print
+(CNBC/Faber, WSJ, FT, Bloomberg, SpotGamma, Fortune, S3 — the 2e's own §5
+ledger).
+
 RESOLVED by the capital-cycle report (2026-07-28, uploaded by Matthew — the content
 of the claude.ai share link, open question 4): dotcom/telecom
 negative-aggregate-ROI (sector ROIC 5–8% vs 7–9% CoC; Odlyzko; The Economist 2002;
@@ -1436,6 +1651,10 @@ report itself.
    the binding constraint was always intelligence, and that is the moving variable.
 7. The simulation demonstration (V.5's embedded question): does it join Appendix
    A as a committed fifth effort, or stay a stated open question in the text?
+8. (2026-08-04, from the 2e integration) Does the July 2026 rotation enter the
+   paper as a dated case study, or stay report-only? Dated market events age
+   fast in a paper of this scope. Staged proposal either way:
+   `plans/capital-cycle-2e-integration.md`.
    Note 2026-07-28: the Hayek-criterion toy model (V.5) and the negotiation sim
    are plausibly ONE harness — a drifting multi-agent economy with a learned
    allocator/negotiator — which strengthens the case for committing to it.
