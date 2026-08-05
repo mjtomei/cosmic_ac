@@ -806,12 +806,24 @@ before — party as a proxy for alignment. Given a full view of each situation a
 of everyone around you, you know who is actually on your side *in each instance*,
 and the proxy stops earning its keep. Three supports follow: more bandwidth for
 argumentation rather than affiliation; positions derivable independently from
-visible interests; and therefore less room for dishonest signalling. This has a
-literature on both sides and the counterargument is serious — if partisanship is
-identity rather than an information deficit, more information hardens it (Achen &
-Bartels; Taber & Lodge's motivated skepticism). Sweep in flight; whatever it
-returns, the claim must be stated as conditional on partisanship being
-informational at the margin, not assumed.
+visible interests; and therefore less room for dishonest signalling. **Evidence gathered 2026-08-05 —
+`reading/notes/partisanship-evidence.md`. The claim survives in a narrower and
+better form; write it that way.** Lead anchor: Ahler & Sood (*J. Politics* 2018)
+is close to the exact mechanism — partisans wrongly believe 32% of Democrats are
+LGBT (6% actual) and 38% of Republicans earn >$250k (2% actual), and *told the
+real composition* they "see its supporters as less extreme and feel less socially
+distant." Mechanism: Druckman, Peterson & Slothuus (*APSR* 2013) — "cues become
+important when substantive information is inconclusive." But the refutations are
+strong and must travel with it: Slothuus & Bisgaard (*AJPS* 2021) find positions
+follow allegiance, supporters moving ~15 points when their party reversed and up
+to 36 among initial opponents; Kahan (2013, 2017) finds the *most* reflective and
+*most* numerate polarise hardest, and reframes partisanship as a loyalty signal —
+in which case a complete picture removes no reason to hold it. **Do not write
+that information dissolves partisanship.** Write Druckman's actual finding: cue
+reliance is endogenous to polarization, so cheap counsel acts on one term of a
+feedback loop. That predicts an uncomfortable failure mode the paper should state
+itself — the intervention works best where polarization is lowest, and worst
+where it is most needed.
 
 **Second, and this is the sharp one: under full legibility the only durable way
 to gain power is to actually align your interests with everyone.** ⟨M⟩ If

@@ -1,0 +1,341 @@
+{
+ "shortcut-theory": {
+  "findings": [
+   {
+    "handle": "Lupia & McCubbins, The Democratic Dilemma (Cambridge UP, 1998), conditions stated verbatim in Ilya Somin, 'Resolving the Democratic Dilemma?', Yale J. on Regulation 16:401 (1999)",
+    "finding": "Shortcut works only under two conditions: the 'knowledge condition' (source knows) and 'incentives condition' (source has reason to tell truth). Incentives met if (1) principal and speaker have common interests, (2) principal can verify ex post, or (3) lying is penalized (L&M pp.12-18, 25).",
+    "status": "VERIFIED-FETCHED",
+    "bears_on": "claim4-signalling",
+    "direction": "supports",
+    "oa_pdf_url": "https://web.archive.org/web/2019id_/https://digitalcommons.law.yale.edu/cgi/viewcontent.cgi?article=1479&context=yjreg"
+   },
+   {
+    "handle": "Somin 1999 book note on Lupia & McCubbins, Yale J. on Regulation 16:401 (fetched via Wayback)",
+    "finding": "The trust problem regresses. In the one L&M trial where principals were falsely told they shared interests with the speaker, they accepted advice exactly as when interests genuinely aligned (L&M p.109). Cue-taking tracks apparent, not actual, alignment.",
+    "status": "VERIFIED-FETCHED",
+    "bears_on": "claim4-signalling",
+    "direction": "complicates",
+    "oa_pdf_url": "https://web.archive.org/web/2019id_/https://digitalcommons.law.yale.edu/cgi/viewcontent.cgi?article=1479&context=yjreg"
+   },
+   {
+    "handle": "Somin 1999, same source, restating L&M's actual claim",
+    "finding": "The precise premise: 'information about the knowledge and trustworthiness of key political elites can substitute for information about the substance of specific policies.' Somin grants the former is plausibly cheaper; he denies it is cheap in absolute terms or currently held by the electorate.",
+    "status": "VERIFIED-FETCHED",
+    "bears_on": "claim1-shortcut",
+    "direction": "supports",
+    "oa_pdf_url": "https://web.archive.org/web/2019id_/https://digitalcommons.law.yale.edu/cgi/viewcontent.cgi?article=1479&context=yjreg"
+   },
+   {
+    "handle": "Somin 1999 on the Limbaugh/Donahue survey in L&M ch.9",
+    "finding": "L&M: respondents who saw a host as knowledgeable and usually agreed moved toward his prison-spending stance; those who usually disagreed moved away — opposed-interest cues carry information too. Somin notes most credited the hosts with expertise they lacked.",
+    "status": "VERIFIED-FETCHED",
+    "bears_on": "claim2-dissolves",
+    "direction": "complicates",
+    "oa_pdf_url": "https://web.archive.org/web/2019id_/https://digitalcommons.law.yale.edu/cgi/viewcontent.cgi?article=1479&context=yjreg"
+   },
+   {
+    "handle": "Druckman, Peterson & Slothuus, 'How Elite Partisan Polarization Affects Public Opinion Formation', APSR 107(1) (2013), doi:10.1017/s0003055412000500",
+    "finding": "Near-direct test of claim 1: 'cues become important when substantive information is inconclusive... Only when the arguments are equally strong do they turn to party cues to find their way.' Under low polarization the first information considered is the argument, not the party cue.",
+    "status": "VERIFIED-FETCHED",
+    "bears_on": "claim1-shortcut",
+    "direction": "supports",
+    "oa_pdf_url": "https://pure.au.dk/ws/files/53348012/Druckman_Peterson_Slothuus_APSR_2013.pdf"
+   },
+   {
+    "handle": "Druckman, Peterson & Slothuus 2013, APSR 107(1); two survey experiments (offshore drilling, DREAM Act)",
+    "finding": "Same paper refutes the scaling step: polarization 'intensifies the impact of party endorsements, decreases the impact of substantive information and... stimulates greater confidence in those — less substantively grounded — opinions.' Cue reliance is not merely a scarcity response.",
+    "status": "VERIFIED-FETCHED",
+    "bears_on": "claim2-dissolves",
+    "direction": "refutes",
+    "oa_pdf_url": "https://pure.au.dk/ws/files/53348012/Druckman_Peterson_Slothuus_APSR_2013.pdf"
+   },
+   {
+    "handle": "Bullock, 'Elite Influence on Public Opinion in an Informed Electorate', APSR 105(3):496-515 (2011), doi:10.1017/s0003055411000165 — quoted verbatim in Druckman et al. 2013",
+    "finding": "Varying cues and policy content independently: 'party cues have an effect, but do not overwhelm content'; Bullock concludes 'party cues are influential, but partisans... are generally affected at least as much' by policy information. Primary PDF closed (Unpaywall: no OA location).",
+    "status": "SECONDARY",
+    "bears_on": "claim2-dissolves",
+    "direction": "supports"
+   },
+   {
+    "handle": "Lupia, 'Shortcuts Versus Encyclopedias: Information and Voting Behavior in California Insurance Reform Elections', APSR 88(1):63-76 (1994), doi:10.2307/2944882",
+    "finding": "Handle confirmed via Crossref + OpenAlex (1,865 cites), but closed everywhere (Unpaywall oa_status 'closed', zero OA locations; S2 abstract elided). The canonical result — badly informed voters knowing insurance-industry endorsements voted like well-informed ones — not read in original.",
+    "status": "SECONDARY",
+    "bears_on": "claim1-shortcut",
+    "direction": "supports"
+   },
+   {
+    "handle": "Kahan, 'Ideology, motivated reasoning, and cognitive reflection', Judgment and Decision Making 8(4):407-424 (2013)",
+    "finding": "Strongest fetched case against claim 1: motivated reasoning 'is not a consequence of over-reliance on heuristic or intuitive forms of reasoning... On the contrary, subjects who scored highest in cognitive reflection were the most likely to display ideologically motivated cognition.'",
+    "status": "VERIFIED-FETCHED",
+    "bears_on": "claim1-shortcut",
+    "direction": "refutes",
+    "oa_pdf_url": "https://journal.sjdm.org/13/13313/jdm13313.pdf"
+   },
+   {
+    "handle": "Kahan 2013, same paper, on what partisanship is for",
+    "finding": "Alternative account of function: motivated cognition 'promotes individuals' interests in forming and maintaining beliefs that signify their loyalty to important affinity groups.' If partisanship is a loyalty signal, a complete situational picture removes no reason to hold it.",
+    "status": "VERIFIED-FETCHED",
+    "bears_on": "claim1-shortcut",
+    "direction": "refutes",
+    "oa_pdf_url": "https://journal.sjdm.org/13/13313/jdm13313.pdf"
+   },
+   {
+    "handle": "Kahan, Peters, Dawson & Slovic, 'Motivated numeracy and enlightened self-government', Behavioural Public Policy 1(1):54-86 (2017), doi:10.1017/bpp.2016.2",
+    "finding": "Companion result: high-numeracy subjects deploy quantitative skill selectively toward identity-congruent conclusions, so polarization is greatest among the most numerate. Handle verified via Crossref/Unpaywall (bronze at Cambridge); PDF blocked to this fetcher, so reported second-hand.",
+    "status": "SECONDARY",
+    "bears_on": "claim1-shortcut",
+    "direction": "refutes"
+   },
+   {
+    "handle": "Slothuus & Bisgaard, 'How Political Parties Shape Public Opinion in the Real World', AJPS 65(4):896-911 (2021), doi:10.1111/ajps.12550",
+    "finding": "Five-wave panel around two Danish parties abruptly reversing welfare positions: supporters moved ~15 points immediately, 'even when the new position went against citizens' previously held views' — up to 36 points among initial opponents. Allegiance rewrites the position.",
+    "status": "VERIFIED-FETCHED",
+    "bears_on": "claim2-dissolves",
+    "direction": "refutes",
+    "oa_pdf_url": "https://pure.au.dk/ws/files/292931303/How_Political_Parties_Shape_Public_Opinion_in_the_Real_World_with_Appendix_Accepted_manuscript_2021.pdf"
+   },
+   {
+    "handle": "Ahler & Sood, 'The Parties in Our Heads: Misperceptions about Party Composition and Their Consequences', Journal of Politics 80(3):964-981 (2018), doi:10.1086/697253",
+    "finding": "Best fetched evidence for 'a view of everyone around you': people think 32% of Democrats are LGBT (6% actual) and 38% of Republicans earn >$250k (2% actual); told the real composition, partisans 'see its supporters as less extreme and feel less socially distant from them.'",
+    "status": "VERIFIED-FETCHED",
+    "bears_on": "claim2-dissolves",
+    "direction": "supports",
+    "oa_pdf_url": "https://gsood.com/research/papers/partisanComposition.pdf"
+   },
+   {
+    "handle": "Fishkin, Siu, Diamond & Bradburn, 'Is Deliberation an Antidote to Extreme Partisan Polarization?', APSR 115(4):1464-1481 (2021), doi:10.1017/s0003055421000642",
+    "finding": "Field experiment, 500+ registered voters, pre-post with control group: out-party feeling thermometers rose 13 points among Democrats and 14 among Republicans, with the largest gains (16-17+ points) among those holding the most extreme prior positions.",
+    "status": "VERIFIED-FETCHED",
+    "bears_on": "claim3-argumentation",
+    "direction": "supports",
+    "oa_pdf_url": "https://preprints.apsanet.org/engage/api-gateway/apsa/assets/orp/resource/item/5f3da4bf10cdbe00192da9dd/original/is-deliberation-an-antidote-to-extreme-partisan-polarization-reflections-on-america-in-one-room.pdf"
+   },
+   {
+    "handle": "Downs, An Economic Theory of Democracy (Harper & Row, 1957); handle confirmed via IA item economictheoryof0000down and Crossref review record 10.2307/2109186",
+    "finding": "Origin of claim 1: ideologies and party labels exist because information is costly, letting voters infer differentiating stands without pricing every policy. Text not fetchable (all IA copies lending-restricted, no OA edition), so wording comes from secondary literature.",
+    "status": "SECONDARY",
+    "bears_on": "claim1-shortcut",
+    "direction": "supports"
+   },
+   {
+    "handle": "Popkin, The Reasoning Voter (1991, IA reasoningvoterco0000popk); Sniderman, Brody & Tetlock, Reasoning and Choice (1991), doi:10.1017/cbo9780511720468; Zaller, Mass Opinion (1992), doi:10.1017/cbo9780511818691",
+    "finding": "The canonical statements of low-information rationality and the likeability/party heuristic. Handles verified from catalogue metadata only; none is OA and IA search-inside returned nothing, so no verbatim passage obtained. Zaller is the counterweight: opinion tracks elite cue supply.",
+    "status": "SECONDARY",
+    "bears_on": "claim1-shortcut",
+    "direction": "supports"
+   },
+   {
+    "handle": "Lau & Redlawsk, 'Advantages and Disadvantages of Cognitive Heuristics in Political Decision Making', AJPS 45(4):951 (2001), doi:10.2307/2669334",
+    "finding": "Names the boundary condition: heuristics raise correct-voting rates for the sophisticated but can lower them for novices. Raw information does not automatically substitute for the competence that makes it usable. Handle verified via Crossref; article closed on Unpaywall.",
+    "status": "SECONDARY",
+    "bears_on": "claim2-dissolves",
+    "direction": "complicates"
+   },
+   {
+    "handle": "Boudreau, 'Closing the Gap: When Do Cues Eliminate Differences between Sophisticated and Unsophisticated Citizens?', Journal of Politics 71(3):964-976 (2009), doi:10.1017/s0022381609090823",
+    "finding": "The title is literally the conditions question; institutional treatments (penalties for lying, verification — L&M's incentive mechanisms) close the sophistication gap. Handle verified via Crossref/Unpaywall (green, SSRN only); SSRN returned HTML, so not read first-hand.",
+    "status": "SECONDARY",
+    "bears_on": "claim4-signalling",
+    "direction": "supports"
+   },
+   {
+    "handle": "Nicholson, 'Polarizing Cues', AJPS 56(1):52-66 (2012), doi:10.1111/j.1540-5907.2011.00541.x",
+    "finding": "In-party endorsements persuade; out-party endorsements push people away, polarizing rather than informing. Attributing a position to a known source is itself a polarizing input, limiting how far machine-derived interest-attributed positions bypass signalling. Metadata verified only.",
+    "status": "SECONDARY",
+    "bears_on": "claim4-signalling",
+    "direction": "complicates"
+   },
+   {
+    "handle": "Taber & Lodge, AJPS 50(3):755-769 (2006), doi:10.1111/j.1540-5907.2006.00214.x; Achen & Bartels, Democracy for Realists (2016), doi:10.1515/9781400882731; Green, Palmquist & Schickler, Partisan Hearts and Minds (2002)",
+    "finding": "The identity-not-information canon. Taber & Lodge: disconfirmation bias and attitude polarization strongest among the most knowledgeable. Green et al. (doi:10.12987/9780300132007): partisanship as stable social identity. Achen & Bartels: group attachment drives vote choice. Texts not fetched.",
+    "status": "SECONDARY",
+    "bears_on": "claim1-shortcut",
+    "direction": "refutes"
+   }
+  ],
+  "notes": "Method: curl only (Crossref, OpenAlex, Unpaywall, Semantic Scholar metadata, archive.org + Wayback, publisher/author repos). Six PDFs read in full: Somin 1999 via Wayback (most useful find — states Lupia & McCubbins' knowledge/incentives conditions and the three incentive mechanisms verbatim with page cites), Druckman-Peterson-Slothuus 2013, Slothuus-Bisgaard 2021, Kahan 2013, Ahler-Sood 2018, Fishkin et al. 2021 preprint. Blocked to this fetcher: Cambridge Core (Kahan 2017, Bullock), Wiley pdfdirect, SSRN delivery (Boudreau), Annual Reviews, digitalcommons direct (Wayback worked). IA books (Downs, Popkin, Lupia-McCubbins) are lending-restricted; both search-inside endpoints returned empty. Strongest published case against sub-claim 1, ranked: Kahan 2013 (cognitive reflection increases motivated cognition — fetched, quotable), Kahan et al. 2017 motivated numeracy, Taber & Lodge 2006, Green/Palmquist/Schickler 2002, Achen & Bartels 2016. Sharpest single result for the paper's argument: Druckman et al. 2013 — under low polarization the argument is consulted first and the party cue only breaks ties, confirming the premise while bounding it, since polarization reverses the ordering."
+ },
+ "identity-refutation": {
+  "findings": [
+   {
+    "handle": "Achen & Bartels, *Democracy for Realists* (Princeton UP 2016), DOI 10.1515/9781400882731",
+    "finding": "Canonical counterargument: partisanship is social identity, and policy views follow party rather than the reverse. 'Blind retrospection' (voters punish incumbents for droughts, shark attacks) says the deficit is not information but the direction of reasoning, so richer situational information need not re-order allegiance.",
+    "status": "SECONDARY",
+    "bears_on": "claim1-shortcut",
+    "direction": "refutes"
+   },
+   {
+    "handle": "Green, Palmquist & Schickler, *Partisan Hearts and Minds* (Yale UP 2002), DOI 10.12987/9780300132007",
+    "finding": "Party ID modelled as a stable social identity akin to religious or ethnic attachment, largely unmoved by short-term issue or performance information. If identity is the substrate, per-situation information updates beliefs about the situation without updating the affiliation that structures coalition choice.",
+    "status": "SECONDARY",
+    "bears_on": "claim2-dissolves",
+    "direction": "refutes"
+   },
+   {
+    "handle": "Taber & Lodge, 'Motivated Skepticism in the Evaluation of Political Beliefs,' AJPS 50(3) 2006, DOI 10.1111/j.1540-5907.2006.00214.x (abstract fetched, 4,337 cites)",
+    "finding": "Strongest single experiment against (1). On affirmative action and gun control: prior-attitude effect, disconfirmation bias, confirmation bias; both biases produced ATTITUDE POLARIZATION, strongest 'among those with the strongest priors and highest levels of political sophistication.' More argument, more divergence.",
+    "status": "VERIFIED-FETCHED",
+    "bears_on": "claim3-argumentation",
+    "direction": "refutes"
+   },
+   {
+    "handle": "Kahan et al., 'Motivated numeracy and enlightened self-government,' Behavioural Public Policy 1(1) 2017 (orig. 2013), DOI 10.1017/bpp.2016.2",
+    "finding": "Identical 2x2 data were read accurately by high-numeracy subjects when framed as a skin-rash trial, but polarized and became less accurate when framed as gun control. Contra the science-comprehension thesis, polarization did not abate among the most numerate, it INCREASED. Supports identity-protective cognition.",
+    "status": "VERIFIED-FETCHED",
+    "oa_pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/EC9F2410D5562EF10B7A5E2539063806/S2398063X16000026a.pdf/div-class-title-motivated-numeracy-and-enlightened-self-government-div.pdf",
+    "bears_on": "claim1-shortcut",
+    "direction": "refutes"
+   },
+   {
+    "handle": "Kahan, Peters, Wittlin, Slovic et al., 'The polarizing impact of science literacy and numeracy on perceived climate change risks,' Nature Climate Change 2, 2012, DOI 10.1038/nclimate1547",
+    "finding": "Observational companion: greater science literacy and numeracy associate with GREATER cultural polarization on climate risk, not convergence. Crossref metadata verified; abstract not retrievable from either API, so effect sizes need checking against the PDF before quoting.",
+    "status": "SECONDARY",
+    "bears_on": "claim1-shortcut",
+    "direction": "refutes"
+   },
+   {
+    "handle": "Iyengar, Sood & Lelkes, 'Affect, Not Ideology: A Social Identity Perspective on Polarization,' POQ 76(3) 2012, DOI 10.1093/poq/nfs038",
+    "finding": "Attacks the informational framing directly: partisan affect is 'inconsistently (and perhaps artifactually) founded in policy attitudes.' Partisans increasingly dislike and distrust each other in ways not traceable to policy disagreement, so resolving policy disagreement per-situation leaves the operative animus untouched.",
+    "status": "VERIFIED-FETCHED",
+    "bears_on": "claim2-dissolves",
+    "direction": "refutes"
+   },
+   {
+    "handle": "Iyengar, Lelkes, Levendusky, Malhotra & Westwood, 'The Origins and Consequences of Affective Polarization in the United States,' Annu. Rev. Polit. Sci. 22, 2019, DOI 10.1146/annurev-polisci-051117-073034",
+    "finding": "The field's synthesis review: traces affective polarization 'to the power of partisanship as a social identity' and documents spill-over well outside politics. Best single citation for 'partisanship is identity, not information-processing.' Open PDF.",
+    "status": "VERIFIED-FETCHED",
+    "oa_pdf_url": "https://www.annualreviews.org/doi/pdf/10.1146/annurev-polisci-051117-073034",
+    "bears_on": "claim1-shortcut",
+    "direction": "refutes"
+   },
+   {
+    "handle": "Mason, *Uncivil Agreement: How Politics Became Our Identity* (Chicago 2018), DOI 10.7208/chicago/9780226524689.001.0001",
+    "finding": "Social sorting: as partisan, religious, racial and cultural identities align, animosity rises even where policy positions do not diverge ('uncivil agreement'). People can already be told who agrees with them substantively and still behave as team members, undercutting the premise that ally-identification is the binding constraint.",
+    "status": "SECONDARY",
+    "bears_on": "claim2-dissolves",
+    "direction": "refutes"
+   },
+   {
+    "handle": "Bail et al., 'Exposure to opposing views on social media can increase political polarization,' PNAS 115(37) 2018, DOI 10.1073/pnas.1804840115",
+    "finding": "Field experiment paying Twitter users to follow an opposing-ideology bot for a month: Republicans became SUBSTANTIALLY MORE CONSERVATIVE post-treatment (Democrats moved slightly liberal, n.s.). The direct empirical rebuttal to 'give people a full view of the other side' via a machine intermediary.",
+    "status": "VERIFIED-FETCHED",
+    "bears_on": "claim2-dissolves",
+    "direction": "refutes"
+   },
+   {
+    "handle": "Druckman, Peterson & Slothuus, 'How Elite Partisan Polarization Affects Public Opinion Formation,' APSR 107(1) 2013, DOI 10.1017/s0003055412000500",
+    "finding": "Two experiments (drilling, immigration): polarized elite environments INTENSIFY party-endorsement effects, DECREASE the impact of substantive information, and increase confidence in those less-grounded opinions. Precise refutation of the mechanism: under polarization, adding information lowers its own marginal weight.",
+    "status": "VERIFIED-FETCHED",
+    "oa_pdf_url": "https://pure.au.dk/ws/files/53348012/Druckman_Peterson_Slothuus_APSR_2013.pdf",
+    "bears_on": "claim1-shortcut",
+    "direction": "refutes"
+   },
+   {
+    "handle": "Cohen, 'Party Over Policy: The Dominating Impact of Group Influence on Political Beliefs,' JPSP 85(5) 2003, DOI 10.1037/0022-3514.85.5.808",
+    "finding": "Subjects endorsed a stringent or a generous welfare policy according to which party was said to back it, while believing their judgement was content-driven. Full per-situation information does not displace the group cue, and subjects are unaware the cue is operating.",
+    "status": "SECONDARY",
+    "bears_on": "claim2-dissolves",
+    "direction": "refutes"
+   },
+   {
+    "handle": "Lenz, *Follow the Leader? How Voters Respond to Politicians' Policies and Performance* (Chicago 2012), DOI 10.7208/chicago/9780226472157.001.0001",
+    "finding": "Panel evidence that when voters learn about an issue they typically ADOPT their preferred politician's position rather than switching politicians. Better per-situation information ran through the identity, not around it.",
+    "status": "SECONDARY",
+    "bears_on": "claim2-dissolves",
+    "direction": "refutes"
+   },
+   {
+    "handle": "Kinder & Kalmoe, *Neither Liberal nor Conservative: Ideological Innocence in the American Public* (Chicago 2017), DOI 10.7208/chicago/9780226452593.001.0001",
+    "finding": "Reaffirms Converse: most citizens lack organised ideological structure while party ID is durable. Undercuts (4)'s premise that coherent latent positions are waiting to be derived; for many there is no stable position to infer, only a group attachment.",
+    "status": "SECONDARY",
+    "bears_on": "claim4-signalling",
+    "direction": "refutes"
+   },
+   {
+    "handle": "Sears & Funk, 'The Role of Self-Interest in Social and Political Attitudes,' Adv. Exp. Soc. Psych. 24, 1991, DOI 10.1016/s0065-2601(08)60327-5 (also J. Behav. Econ. 1990, DOI 10.1016/0090-5720(90)90030-b)",
+    "finding": "Decisive obstacle to (4): material self-interest is a weak, inconsistent predictor of mass policy attitudes; symbolic predispositions dominate. A machine deriving positions from 'visible interests' would derive positions people do not hold, so divergence from the derived position is not evidence of dishonesty.",
+    "status": "SECONDARY",
+    "bears_on": "claim4-signalling",
+    "direction": "refutes"
+   },
+   {
+    "handle": "Bullock, Gerber, Hill & Huber, QJPS 10(4) 2015, DOI 10.1561/100.00014074; Prior, Sood & Khanna, 'You Cannot Be Serious,' QJPS 10(4) 2015, DOI 10.1561/100.00014127",
+    "finding": "Paying respondents for accuracy substantially shrinks partisan gaps in factual beliefs: much apparent partisan misperception is expressive responding, cheap talk not sincere belief. Supports (4)'s diagnosis that dishonest signalling is pervasive, but the fix is incentive design, not information supply.",
+    "status": "VERIFIED-FETCHED",
+    "bears_on": "claim4-signalling",
+    "direction": "complicates"
+   },
+   {
+    "handle": "Ahler & Sood, 'The Parties in Our Heads,' Journal of Politics 80(3) 2018, DOI 10.1086/697253",
+    "finding": "Best evidence FOR (2). Americans think 32% of Democrats are LGBT (6% real) and 38% of Republicans earn >$250k (2% real); not artifacts of expressive responding or innumeracy. Given information about the out-party's actual composition, partisans see its supporters as less extreme and feel less socially distant.",
+    "status": "VERIFIED-FETCHED",
+    "bears_on": "claim2-dissolves",
+    "direction": "supports"
+   },
+   {
+    "handle": "Moore-Berg et al., PNAS 117(26) 2020, DOI 10.1073/pnas.2001263117; Lees & Cikara, Nature Human Behaviour 2019, DOI 10.1038/s41562-019-0766-4",
+    "finding": "Partisans overestimate the other side's prejudice and dehumanization by roughly 2x, and these exaggerated meta-perceptions independently predict hostility. Supports the version of (2) where the missing information is accurate second-order belief about others, not more policy detail.",
+    "status": "VERIFIED-FETCHED",
+    "oa_pdf_url": "https://www.pnas.org/content/pnas/117/26/14864.full.pdf",
+    "bears_on": "claim2-dissolves",
+    "direction": "supports"
+   },
+   {
+    "handle": "Fishkin, Siu, Diamond & Bradburn, 'Is Deliberation an Antidote to Extreme Partisan Polarization? Reflections on America in One Room,' APSR 115(4) 2021, DOI 10.1017/s0003055421000642",
+    "finding": "Strongest published support for (3). 500+ registered voters deliberated a long weekend on five issues with a pre-post control group: 'large, depolarizing changes in their policy attitudes and large decreases in affective polarization.' Conditions were moderation, balanced briefings, face-to-face.",
+    "status": "VERIFIED-FETCHED",
+    "oa_pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/5DEFB6F8D944ECDE77A5E80C3346D4DE/S0003055421000642a.pdf/div-class-title-is-deliberation-an-antidote-to-extreme-partisan-polarization-reflections-on-america-in-one-room-div.pdf",
+    "bears_on": "claim3-argumentation",
+    "direction": "supports"
+   },
+   {
+    "handle": "Broockman & Kalla, 'Durably reducing transphobia: a field experiment on door-to-door canvassing,' Science 352(6282) 2016, DOI 10.1126/science.aad9713",
+    "finding": "A single ~10-minute perspective-taking conversation reduced transphobia for at least 3 months and raised support for a nondiscrimination law even after exposure to counterarguments. Supports (3) but locates the active ingredient in non-argumentative perspective-taking, not argument bandwidth or information volume.",
+    "status": "VERIFIED-FETCHED",
+    "oa_pdf_url": "https://www.ocf.berkeley.edu/~broockma/broockman_kalla_transphobia_canvassing_experiment.pdf",
+    "bears_on": "claim3-argumentation",
+    "direction": "complicates"
+   },
+   {
+    "handle": "Kalla & Broockman, 'The Minimal Persuasive Effects of Campaign Contact in General Elections,' APSR 112(1) 2018, DOI 10.1017/s0003055417000363",
+    "finding": "Meta-analysis of 40 field experiments plus 9 originals: best estimate of persuasive effect on candidate choice in general elections is ZERO, with early persuasion decaying. A hard prior against more argumentative throughput moving partisan vote choice.",
+    "status": "VERIFIED-FETCHED",
+    "oa_pdf_url": "https://escholarship.org/content/qt103775sx/qt103775sx.pdf?t=qamtj9",
+    "bears_on": "claim3-argumentation",
+    "direction": "refutes"
+   },
+   {
+    "handle": "Nyhan, PNAS 118(15) 2021, DOI 10.1073/pnas.1912440117; Wood & Porter, Political Behavior 41, 2019, DOI 10.1007/s11109-018-9443-y; orig. Nyhan & Reifler 2010, DOI 10.1007/s11109-010-9112-2",
+    "finding": "Honesty check: Nyhan, author of the original backfire paper, says its generality was distorted. Corrections typically do increase accuracy on receipt, but effects 'decay or be overwhelmed by cues from elites.' Do not lean on backfire; lean on decay-plus-elite-cues.",
+    "status": "VERIFIED-FETCHED",
+    "oa_pdf_url": "https://www.pnas.org/content/pnas/118/15/e1912440117.full.pdf",
+    "bears_on": "claim1-shortcut",
+    "direction": "complicates"
+   },
+   {
+    "handle": "Coppock, *Persuasion in Parallel* (Chicago 2022), DOI 10.7208/chicago/9780226821832.001.0001",
+    "finding": "Strongest challenge to the counterargument itself: across many survey experiments, information moves Democrats and Republicans in the SAME direction by SIMILAR magnitudes, parallel rather than polarizing. If right, (1) survives weakened: information helps everyone slightly but does not close the gap.",
+    "status": "SECONDARY",
+    "bears_on": "claim3-argumentation",
+    "direction": "supports"
+   },
+   {
+    "handle": "Voelkel, Stagnaro, Chu, Pink et al., 'Megastudy testing 25 treatments to reduce antidemocratic attitudes and partisan animosity,' Science, 18 Oct 2024, DOI 10.1126/science.adh4764",
+    "finding": "Best current map of what works at scale. Structural finding: interventions reducing partisan ANIMOSITY are not those reducing ANTIDEMOCRATIC attitudes. Top animosity-reducers were correcting out-party misperceptions (Ahler-Sood family) and sympathetic exemplars. Pull effect sizes from the paper.",
+    "status": "SECONDARY",
+    "bears_on": "general",
+    "direction": "complicates"
+   },
+   {
+    "handle": "Klar & Krupnikov, *Independent Politics* (Cambridge 2016), DOI 10.1017/cbo9781316471050",
+    "finding": "Complicates (4) in the opposite direction: many Americans conceal partisan identity and self-label 'independent' because partisanship is socially undesirable, so observed expression is already strategic. Machine-visible interests and leanings would remove the social cover that currently DAMPENS expressed partisanship.",
+    "status": "SECONDARY",
+    "bears_on": "claim4-signalling",
+    "direction": "complicates"
+   }
+  ],
+  "notes": "Method: no WebSearch. Crossref REST + OpenAlex (abstract_inverted_index reconstructed) via curl. VERIFIED-FETCHED = abstract retrieved and read. SECONDARY = bibliographic record verified, substance from my own knowledge (all monographs; book abstracts absent from these APIs).\n\nCaveats: Kahan Nature Climate Change 2012 abstract not retrievable from either API (only DOI/venue/year confirmed). The Voelkel megastudy's circulating title returns only the OSF/RePEc preprint; Crossref gives the Science version as \"Megastudy testing 25 treatments...\" — cite as fetched.\n\nStrategic read: strongest anti-(1) case is Taber & Lodge + Kahan motivated numeracy + Druckman 2013 — sophistication and numeracy AMPLIFY divergence, and polarized environments actively downweight substantive information. Bail 2018 is the direct field refutation of \"show them the other side.\" But there is a genuine seam: Ahler & Sood and Moore-Berg show information about WHO the other side is reduces animosity where policy information does not. That is the defensible form of (2) — \"a view of everyone around you,\" not \"a full view of each situation.\" Nyhan has publicly walked back backfire; do not rest on it."
+ },
+ "does-information-help": null,
+ "interests-and-signalling": null
+}
