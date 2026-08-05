@@ -29,7 +29,11 @@ obliged to say out loud what the original was for.
 
 *("the ship estate" in the captions is almost certainly "the scientific estate"
 — Don K. Price's* The Scientific Estate *(1965), the founding statement of
-expertise-and-democracy by the Kennedy School's own first dean. Verify against
+expertise-and-democracy by the Kennedy School's own sitting dean. (**Correction,
+2026-08-05:** Price was *not* the first dean — John H. Williams was, in 1937,
+then Edward Mason in 1947. Price became dean in 1958 and presided over both the
+1966 Kennedy renaming and the 1969 MPP, so he is the dean who built the
+analytical programme Teles describes, which is the relevant fact.) Verify against
 audio; if right it is a direct citation of the text the counsel arc wants.)*
 
 **Then the expiry:**
