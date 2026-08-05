@@ -40,6 +40,14 @@ which is where several of the project's threads were actually derived.
   its deployed extractive form, the incidence of personalized pricing as a
   privately-collected progressive tax, and university financial aid as the
   accepted version built on a baseline inflated by undischargeable credit.
+- `teles-loury-2026.md` — the Kennedy School's founding logic stated by the
+  person building its successor: the school exists because the Great Society was
+  read as the state lacking "analytical plumbing," on an *end-of-ideology*
+  assumption that has since failed. Supplies both the precedent for
+  counsel-as-manufactured-capacity and the failure diagnosis the argument must
+  answer. Also sources Teles's citation of Dan Davies, *The Unaccountability
+  Machine*, on the corporation as a form of artificial intelligence. Transcript
+  filed alongside.
 - `arrow-1969.md` — the verified Arrow passage on Pareto inefficiency producing
   pressure to depart from the free market, plus the dynamic corollary: denied
   benign departures, that pressure discharges through the cheapest channel
