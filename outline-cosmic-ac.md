@@ -818,7 +818,19 @@ strong and must travel with it: Slothuus & Bisgaard (*AJPS* 2021) find positions
 follow allegiance, supporters moving ~15 points when their party reversed and up
 to 36 among initial opponents; Kahan (2013, 2017) finds the *most* reflective and
 *most* numerate polarise hardest, and reframes partisanship as a loyalty signal —
-in which case a complete picture removes no reason to hold it. **Do not write
+in which case a complete picture removes no reason to hold it. **The argument is selection, not persuasion (Matthew, 2026-08-05).** The
+findings above are individual psychology — people preferring heuristics when
+better methods are available. The claim is that arrangements able to identify
+true alignment per situation *decide better*, and better-deciding arrangements
+outcompete worse ones; the psychology sets the pace, not the direction. This is
+§5.1's variation-selection-inheritance argument and §2.2.1's defector returns,
+applied to governance. Recast Kahan and Slothuus & Bisgaard as **the reason it
+takes time**, not as refutations. The objection that lives at the same level is
+Olson 1982 — distributional coalitions accumulate in *successful* societies and
+retard adaptation, so winning is not self-reinforcing on this axis; the honest
+frame is a race between better decisions accruing advantage and success
+accumulating blocking coalitions, with cheap counsel raising the rate of the
+first. **Do not write
 that information dissolves partisanship.** Write Druckman's actual finding: cue
 reliance is endogenous to polarization, so cheap counsel acts on one term of a
 feedback loop. That predicts an uncomfortable failure mode the paper should state

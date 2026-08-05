@@ -103,3 +103,76 @@ Two angles failed and are worth re-running: the deliberation evidence (Fishkin's
 megastudy, which tested 25+ depolarization interventions at scale), and the
 interests/signalling angle (Mercier & Sperber on argumentation, Kuran on
 preference falsification, and the hazards of legible preferences).
+
+
+---
+
+## Correction (Matthew, 2026-08-05): the refutations are at the wrong level
+
+Matthew's response: neither Kahan nor Slothuus & Bisgaard refutes the point.
+They show *people can prefer heuristics even when better methods are available* —
+individual psychology. The claim is about **which systems win**: the arrangement
+that makes better decisions outcompetes the one that does not, and people who
+cling to the heuristic are eventually outcompeted. The findings change the
+*timescale*, not the direction.
+
+**This is correct, and it is the paper's own argument.** §5.1 already claims open
+commons win "in the literal variation-selection-inheritance sense" — forking is
+selection without permission, good branches are adopted, bad ones die. §2.2.1
+already claims defectors from the herd take power-law returns (M1, R1). V.3a's
+partisanship move is that logic applied to governance, and I answered it with
+persuasion-level evidence, which is the wrong instrument.
+
+Restated properly, the claim does not need anyone's mind to change. It needs
+only that arrangements deciding better accrue advantage faster than arrangements
+deciding worse.
+
+### What the selection version actually requires
+
+Three conditions, and they are worth naming because each is a place it could fail:
+
+1. **Competition exists** between arrangements with different decision quality.
+2. **Decision quality translates into advantage** — better decisions must
+   actually win, not merely be better.
+3. **Selection is fast enough** relative to the horizon that matters. Matthew
+   concedes this one explicitly: the psychology makes it slower.
+
+Condition 1 is strongest at the firm layer and weakest at the state layer. Firms
+die on decade timescales; states persist for centuries while deciding badly. That
+argues the mechanism runs through firms first — which is exactly the route the
+paper already takes elsewhere, and exactly what V.3b's firm is.
+
+### The objection that does operate at this level
+
+Not Kahan. **Olson, *The Rise and Decline of Nations* (1982)** — already cited
+above for a different purpose. Distributional coalitions *accumulate in stable,
+successful societies* and progressively retard the adoption of new technology and
+the reallocation of resources. That is a selection-level claim that **success
+itself degrades decision quality**, and it cuts directly at condition 2: the
+arrangement that wins acquires the coalitions that make it decide worse, so
+winning is not self-reinforcing on this axis.
+
+The optimistic counterpart, and the one that supports the claim, is
+Acemoglu & Robinson's institutional line — inclusive institutions outperform
+extractive ones over long horizons — which is the selection argument for better
+decision-making systems, made by authors the counsel cluster already carries
+(A-R 2000 is in the reading list).
+
+**So the honest framing is a race between two selection effects**: better
+decisions accruing advantage, against successful arrangements accumulating
+coalitions that block adaptation. The paper's claim is that cheap machine counsel
+raises the rate of the first. Olson describes the second. Neither is psychology,
+and that is the level the argument should be conducted at.
+
+### Consequence for how V.3a is written
+
+- **Do not argue that partisanship dissolves.** Argue that arrangements which can
+  identify true alignment per situation decide better, and that better-deciding
+  arrangements win — the individual psychology sets the pace, not the direction.
+- Keep Ahler & Sood as evidence that the *mechanism* works when applied, not as
+  evidence that populations will adopt it.
+- Keep Kahan and Slothuus & Bisgaard, but recast: they are **the reason it takes
+  time**, not reasons it fails. That is a more defensible position and a less
+  brittle one.
+- Carry Olson 1982 as the real objection, since it is the one that lives at the
+  same level as the claim.
