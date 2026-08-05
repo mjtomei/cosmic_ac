@@ -856,12 +856,46 @@ than confined to religious communities.**
 is the thing being defeated — but the same legibility that defeats falsification
 is surveillance, and the paper must not pretend otherwise; the difference between
 "your interests are visible" and "your interests are exposed" is governance, not
-technology. (b) "Happy with less" is a *strategy* here, and asceticism as a route
-to power has an ugly history when institutionalised — it becomes a demand made of
-others. State it as an individual optimisation, never as a social prescription.
-(c) It cuts against the abundance framing elsewhere in the program: needing less
-and building more are not obviously the same programme, and V.6's
-future-without-money material should reconcile them rather than assert both.
+technology. (b) ~~asceticism institutionalised becomes a demand on others~~ —
+**withdrawn; the objection mistook the claim (Matthew, 2026-08-05).**
+
+**It is not a rule anyone imposes. It is an emergent demand on whoever holds the
+most power** — a property of the position, not of a person, and attaching to no
+specific individual. Nobody promulgates it; the equilibrium does. And it is not
+the performative asceticism of the past, whose whole point was visible
+self-denial as a signal. Under legibility the signal is unnecessary, because the
+interests are readable directly.
+
+**The decisive correction: consuming what is abundant is neutral.** ⟨M⟩ Your
+interests conflict with others only over what is *scarce*. A thing that is
+abundant can be consumed without taking anything from anyone, so wanting it costs
+you no alignment. That already exempts much of what historical ascetics denied
+themselves, and **the list is constantly growing**. It may soon include **any
+mental state** ⟨M⟩ — which would be the largest single expansion of the abundant
+set there has been, since the states asceticism principally targeted (comfort,
+pleasure, contentment) would move from scarce to free.
+
+So the strategy is not "want less." It is **want things that do not conflict** —
+and abundance decides which those are. That is preference *composition*, not
+renunciation, and it is the same axis the paper already runs on.
+
+**Three published authors carry this; we assemble rather than claim it.**
+Keynes named the distinction in 1930 — needs "absolute in the sense that we feel
+them whatever the situation of our fellow human beings may be," versus those felt
+"only if their satisfaction lifts us above… our fellows," of which he wrote that
+the second class "may indeed be insatiable" (*Economic Possibilities for our
+Grandchildren*, already in the reading list and cited for V.6). Samuelson 1954
+supplies non-rivalry, the paper's own foundation: consumption that does not
+diminish anyone else's. Hirsch's *Social Limits to Growth* (1976) supplies the
+inverse — positional goods, rival by construction because they are about relative
+standing. **Aligning your utility function means composing it from non-rival and
+absolute goods and away from positional ones.** The paper has had that vocabulary
+since §2.1; this applies it to a person instead of to a technology.
+
+(c) The abundance tension dissolves with the same correction. Needing less and
+building more are the *same* programme once the object is right: building expands
+the abundant set, which expands what can be wanted without conflict. V.6 should
+say that rather than reconciling two positions it does not actually hold.
 
 **V.3b The trustworthy firm — deploying preference-knowing intelligence without
 eroding freedom (Matthew, 2026-07-30).** This is the constructive answer to the
