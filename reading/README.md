@@ -48,6 +48,14 @@ which is where several of the project's threads were actually derived.
   answer. Also sources Teles's citation of Dan Davies, *The Unaccountability
   Machine*, on the corporation as a form of artificial intelligence. Transcript
   filed alongside.
+- `economics-is-radical.md` — Teles's claim that orthodox economics condemns the
+  status quo, traced to its literature. The match to this project is his 2013
+  "Kludgeocracy" essay, not *The Captured Economy*: complexity obscures who
+  benefits and so defeats mobilisation, which is our competence/encoding
+  argument in the policy domain. Records the confirmed absence — nothing
+  published joins policy-capture economics to technical under-provision — and
+  how to assemble it from Olson 1982, Frischmann 2005 and Teles 2013 instead of
+  claiming it.
 - `arrow-1969.md` — the verified Arrow passage on Pareto inefficiency producing
   pressure to depart from the free market, plus the dynamic corollary: denied
   benign departures, that pressure discharges through the cheapest channel

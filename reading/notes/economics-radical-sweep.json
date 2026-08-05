@@ -1,0 +1,333 @@
+{
+ "captured-economy": {
+  "findings": [
+   {
+    "handle": "Teles, Steven M. \"The Scourge of Upward Redistribution.\" National Affairs 24 (Fall 2015). Fetched via Wayback snapshot 20260728170626.",
+    "argument": "The direct precursor to The Captured Economy, naming our mechanism verbatim: \"Economists from Mancur Olson on have traced the political success of rent-seeking to the unbalanced incentives to organize of rent extractors and those from whom the rents are being extracted.\"",
+    "status": "VERIFIED-FETCHED",
+    "relation": "same-mechanism",
+    "oa_pdf_url": "https://web.archive.org/web/20260728170626/https://www.nationalaffairs.com/publications/detail/the-scourge-of-upward-redistribution"
+   },
+   {
+    "handle": "Teles (2015), same essay — the low-salience extension of Olson",
+    "argument": "Teles goes beyond Olson: \"the problem extends even further than imbalanced organization. Many of the most powerful forms of upward-redistributing rent-seeking take place in obscure decision-making contexts.\" Obscurity, not just diffuseness, is what defeats the diffuse side.",
+    "status": "VERIFIED-FETCHED",
+    "relation": "same-mechanism",
+    "oa_pdf_url": "https://web.archive.org/web/20260728170626/https://www.nationalaffairs.com/publications/detail/the-scourge-of-upward-redistribution"
+   },
+   {
+    "handle": "Teles, Steven M. \"Kludgeocracy in America.\" National Affairs 17 (Fall 2013). Fetched via Wayback.",
+    "argument": "\"Complexity is the friend of the organized and well-resourced\" (quoted in the 2015 essay; developed here). Illegibility is itself the barrier keeping the diffuse side from acting — the same claim the paper makes about encoding and legibility of optimization competence.",
+    "status": "VERIFIED-FETCHED",
+    "relation": "bridges-to-technical",
+    "oa_pdf_url": "https://web.archive.org/web/2020/https://www.nationalaffairs.com/publications/detail/kludgeocracy-in-america"
+   },
+   {
+    "handle": "Lindsey, Brink, and Steven M. Teles. The Captured Economy: How the Powerful Enrich Themselves, Slow Down Growth, and Increase Inequality. Oxford University Press, 2017. 232 pp.",
+    "argument": "Verified bibliographically (Crossref reviews 10.1111/gove.12421 and 10.1007/s10790-018-9627-z; OpenLibrary OL18942262W). Four domains of regressive regulation: finance, intellectual property, occupational licensing, land use. Full text blocked; three of four domains confirmed from the 2015 precursor essay.",
+    "status": "SECONDARY",
+    "relation": "same-mechanism"
+   },
+   {
+    "handle": "Olson, Mancur. \"Big Bills Left on the Sidewalk: Why Some Nations are Rich, and Others Poor.\" Journal of Economic Perspectives 10(2): 3–24, 1996. DOI 10.1257/jep.10.2.3",
+    "argument": "The strongest orthodox statement that huge, well-understood gains sit unexploited because institutions do not organize to capture them. Closest published analogue to the paper's claim that the ASIC gap is effort, not physics: the money is on the sidewalk and nobody picks it up.",
+    "status": "SECONDARY",
+    "relation": "same-mechanism"
+   },
+   {
+    "handle": "Olson, Mancur. The Rise and Decline of Nations: Economic Growth, Stagflation, and Social Rigidities. Yale University Press, 1982. (Yale reissue DOIs 10.12987/9780300157673, 10.12987/9780300268904)",
+    "argument": "Distributional coalitions accumulate in stable societies and progressively slow adoption of new technology and reallocation of resources. Growth-suppression by incumbent coordination is the macro form of the paper's herd and satisficing argument.",
+    "status": "SECONDARY",
+    "relation": "same-mechanism"
+   },
+   {
+    "handle": "Krueger, Anne O. \"The Political Economy of the Rent-Seeking Society.\" American Economic Review 64(3): 291–303, 1974. Reprint verified: 10.1007/978-3-540-79247-5_8; OpenAlex W1486212401, 5,361 citations.",
+    "argument": "Founding measurement paper: competition for artificially created rents dissipates real resources, so the welfare loss exceeds the deadweight triangle. Orthodox price theory, radical conclusion. Original AER pagination not fetched.",
+    "status": "SECONDARY",
+    "relation": "same-mechanism"
+   },
+   {
+    "handle": "Tullock, Gordon. \"The Welfare Costs of Tariffs, Monopolies, and Theft.\" Western Economic Journal (now Economic Inquiry) 5(3): 224–232, 1967. DOI 10.1111/j.1465-7295.1967.tb01923.x",
+    "argument": "Origin of the rent-seeking cost argument. Verified via Crossref metadata (Economic Inquiry 5:224–232, 1967) plus Congleton's 2018 Public Choice retrospective (10.1007/s11127-018-0542-4). Text not fetched.",
+    "status": "SECONDARY",
+    "relation": "context"
+   },
+   {
+    "handle": "Stigler, George J. \"The Theory of Economic Regulation.\" Bell J. Econ. Mgmt. Sci. 2(1), 1971, DOI 10.2307/3003160; and \"Free Riders and Collective Action,\" 1974, DOI 10.2307/3003114",
+    "argument": "Chicago-school orthodoxy stating that regulation is acquired by and operated for the benefit of the concentrated industry. The 1974 appendix is Stigler doing the Olson free-rider math explicitly — the mechanism, named, from the most establishment source available.",
+    "status": "SECONDARY",
+    "relation": "same-mechanism"
+   },
+   {
+    "handle": "Zingales, Luigi. \"Towards a Political Theory of the Firm.\" Journal of Economic Perspectives 31(3): 113–130, 2017. DOI 10.1257/jep.31.3.113. Full text fetched as NBER WP 23593.",
+    "argument": "\"Neoclassical theory assumes that firms have no power of fiat… a fortiori no power to influence the rules of the game. In the real world, firms have such power.\" Names the \"Medici vicious circle\": money buys political power, which is used to make money. A correction to orthodoxy from inside Chicago.",
+    "status": "VERIFIED-FETCHED",
+    "relation": "same-mechanism",
+    "oa_pdf_url": "http://www.nber.org/papers/w23593.pdf"
+   },
+   {
+    "handle": "Gutiérrez, Germán, and Thomas Philippon. \"Declining Competition and Investment in the U.S.\" NBER Working Paper 23583, July 2017. DOI 10.3386/w23583. PDF fetched.",
+    "argument": "Causal evidence that declining competition explains US under-investment relative to Tobin's Q since ~2000, and \"that the increase in concentration can be explained by increasing regulations.\" Under-provision of investment traced to a policy equilibrium, measured.",
+    "status": "VERIFIED-FETCHED",
+    "relation": "same-mechanism",
+    "oa_pdf_url": "http://www.nber.org/papers/w23583.pdf"
+   },
+   {
+    "handle": "Gutiérrez, Germán, and Thomas Philippon. \"How EU Markets Became More Competitive Than US Markets: A Study of Institutional Drift.\" NBER Working Paper 24700, 2018. PDF fetched.",
+    "argument": "The design lesson, tested: \"countries in a single market willingly promote a supranational regulator that enforces free markets beyond the preferences of any individual country.\" Federating enforcement above the captured level defeats concentrated interests — precedent for the paper's federation/underwriter argument.",
+    "status": "VERIFIED-FETCHED",
+    "relation": "bridges-to-technical",
+    "oa_pdf_url": "http://www.nber.org/papers/w24700.pdf"
+   },
+   {
+    "handle": "Philippon, Thomas. The Great Reversal: How America Gave Up on Free Markets. Harvard University Press, 2019. DOI 10.4159/9780674243095 (226 citations; front matter OA at De Gruyter)",
+    "argument": "Book-length orthodox-competition-economics condemnation of the US policy equilibrium: US markets became less competitive than European ones because of lobbying and entry barriers, costing consumers and investment. Body text not fetched.",
+    "status": "SECONDARY",
+    "relation": "same-mechanism"
+   },
+   {
+    "handle": "Furman, Jason, and Peter Orszag. \"A Firm-Level Perspective on the Role of Rents in the Rise in Inequality.\" Columbia University, 16 Oct 2015. PDF fetched.",
+    "argument": "A sitting CEA Chair argues rents, not marginal product, drive a rising share of returns: growing dispersion of firm-level returns to capital, an increasing fraction of firms earning 10–30%+ annually, and inter-firm rather than intra-firm pay dispersion explaining inequality.",
+    "status": "VERIFIED-FETCHED",
+    "relation": "adjacent",
+    "oa_pdf_url": "https://obamawhitehouse.archives.gov/sites/default/files/page/files/20151016_firm_level_perspective_on_role_of_rents_in_inequality.pdf"
+   },
+   {
+    "handle": "Boldrin, Michele, and David K. Levine. \"The Case Against Patents.\" JEP 27(1): 3–22, 2013. WP version fetched: FRB St. Louis WP 2012-035, DOI 10.20955/wp.2012.035",
+    "argument": "\"There is no empirical evidence that [patents] serve to increase innovation and productivity.\" A JEP-published claim that the IP equilibrium suppresses the technical progress it is defended as producing — the closest orthodox statement to the paper's under-provided-optimization case.",
+    "status": "VERIFIED-FETCHED",
+    "relation": "bridges-to-technical",
+    "oa_pdf_url": "https://s3.amazonaws.com/real.stlouisfed.org/wp/2012/2012-035.pdf"
+   },
+   {
+    "handle": "Heller, Michael A., and Rebecca S. Eisenberg. \"Can Patents Deter Innovation? The Anticommons in Biomedical Research.\" Science 280(5364): 698–701, 1998. DOI 10.1126/science.280.5364.698",
+    "argument": "The tragedy of the anticommons: fragmented upstream rights under-provide downstream innovation. Structurally the mirror image of the paper's commons argument, and the standard citation for a technical field throttled by rights allocation rather than physics.",
+    "status": "SECONDARY",
+    "relation": "bridges-to-technical"
+   },
+   {
+    "handle": "Frischmann, Brett M. Infrastructure: The Social Value of Shared Resources. Oxford University Press, 2012. DOI 10.1093/acprof:oso/9780199895656.001.0001",
+    "argument": "The nearest published bridge from the public-goods diagnosis to technical systems: infrastructural resources generate demand-side externalities markets systematically under-value, so private allocation under-provides them. Covers physical, environmental, and information infrastructure in one framework.",
+    "status": "SECONDARY",
+    "relation": "bridges-to-technical"
+   },
+   {
+    "handle": "Gutiérrez, Germán, and Thomas Philippon. \"Investmentless Growth: An Empirical Investigation.\" Brookings Papers on Economic Activity, 2017. DOI 10.1353/eca.2017.0013",
+    "argument": "The BPEA companion to w23583; establishment venue, same finding — the US invests less than its Q and cash flows imply, with competition and governance rather than technology as the explanation.",
+    "status": "SECONDARY",
+    "relation": "adjacent"
+   },
+   {
+    "handle": "Bessen, James. \"Accounting for Rising Corporate Profits: Intangibles or Regulatory Rents?\" Boston University School of Law, 2016. SSRN DOI 10.2139/ssrn.2778641",
+    "argument": "Decomposes the profit rise into intangible investment versus political rents and attributes a substantial share to regulation. The measurement companion to Teles's four domains, and Bessen is already cited elsewhere in this project's literature.",
+    "status": "SECONDARY",
+    "relation": "adjacent"
+   },
+   {
+    "handle": "Kleiner, Morris M., and Alan B. Krueger. \"Analyzing the Extent and Influence of Occupational Licensing on the Labor Market.\" J. Labor Economics 31(2): S173–S202, 2013. DOI 10.1086/669060 (NBER w14979)",
+    "argument": "The primary measurement behind the licensing domain of The Captured Economy: roughly 29% of US workers licensed, with a wage premium consistent with entry restriction. Cite this rather than the book if the licensing number becomes load-bearing.",
+    "status": "SECONDARY",
+    "relation": "context"
+   },
+   {
+    "handle": "Moe, Terry M. Review of The Captured Economy. Governance, 2019. DOI 10.1111/gove.12421 (Unpaywall: not OA)",
+    "argument": "A named critique by a Stanford political scientist exists in a top governance journal; content not fetched because the review is paywalled and no repository copy is indexed. Flagged so the paper does not cite Lindsey-Teles as uncontested.",
+    "status": "SECONDARY",
+    "relation": "critique"
+   }
+  ],
+  "notes": "curl only. Sources used: Crossref, OpenAlex, Unpaywall, DOAJ, OpenLibrary, NBER, obamawhitehouse.archives.gov, FRB St. Louis, Wayback. Blocked: aeaweb.org, nationalaffairs.com direct, cato.org, niskanencenter.org, global.oup.com, Google Books, archive.org search-inside, Semantic Scholar.\n\n(a) SAME mechanism. Teles traces it to Olson explicitly: concentrated interests organize, diffuse ones do not. Our optimization case flips the sign (nobody captures a rent; everybody declines to fund a non-rival good) but the collective-action structure and the Olson/Samuelson citations are identical.\n(b) Lineage: Tullock 1967, Krueger 1974, Stigler 1971/1974, Olson 1982/1996; modern measurement in Zingales 2017, Gutierrez-Philippon 2017, Furman-Orszag 2015, Philippon 2019.\n(c) Nothing found connecting policy capture to technical under-provision. Closest bridges: Frischmann 2012, Boldrin-Levine 2013, Heller-Eisenberg 1998.\n\nBest new anchors: Olson 1996 big-bills-on-the-sidewalk; Teles on complexity favoring the organized; NBER w24700 on federating enforcement above the captured level."
+ },
+ "abundance-cluster": {
+  "findings": [
+   {
+    "handle": "Steven M. Teles, \"Kludgeocracy in America,\" National Affairs no. 17 (Fall 2013)",
+    "argument": "Complexity, not size, is the pathology. Veto points act as \"toll booths\": \"new ideas have to be layered over old programs rather than replace them.\" Complexity is legible only to organized interests, who profit from the opacity. Diagnoses a \"kludge industry\" that supplies it.",
+    "status": "VERIFIED-FETCHED",
+    "relation": "bridges-to-technical",
+    "oa_pdf_url": "http://web.archive.org/web/2023/https://www.nationalaffairs.com/publications/detail/kludgeocracy-in-america"
+   },
+   {
+    "handle": "Nicholas Bagley, \"The Procedure Fetish,\" 118 Michigan Law Review 345 (2019), doi:10.36644/mlr.118.3.procedure",
+    "argument": "Procedural rules justified as legitimacy- and capture-preventing are \"overdrawn and harmful\" and \"may exacerbate the very problems they aim to fix.\" Procedure is never neutral: raising review stringency favors whoever loses from action. \"Administrative law could achieve more by doing less.\"",
+    "status": "VERIFIED-FETCHED",
+    "relation": "same-mechanism",
+    "oa_pdf_url": "https://repository.law.umich.edu/cgi/viewcontent.cgi?article=4492&context=mlr"
+   },
+   {
+    "handle": "Jennifer Pahlka, \"We have cancer,\" Eating Policy, 23 Sep 2024",
+    "argument": "Quantifies accretion: DoD 5000-series 7 pp to 2,000+ pp in 53 yrs (~11%/yr \"inflation rate of bureaucracy\", per Shyam Sankar); NEPA reviews avg 4 yrs / ~2,000 pp. Key line: \"We lack the tools for procedural deflation.\" Names Bagley's procedure fetish as the driver.",
+    "status": "VERIFIED-FETCHED",
+    "relation": "same-mechanism",
+    "oa_pdf_url": "https://www.eatingpolicy.com/p/we-have-cancer"
+   },
+   {
+    "handle": "Jennifer Pahlka, \"Stop making people do the wrong jobs\" (Eating Policy, Apr 2024; reposted 10 Nov 2025)",
+    "argument": "Her thesis stated plainly: \"The problem isn't that public servants are doing a bad job, it's that they're doing a great job — at the wrong jobs.\" Capability present; compliance work displaces delivery. \"Congress tells us to do something. Then the compliance offices keep us from doing that very thing.\"",
+    "status": "VERIFIED-FETCHED",
+    "relation": "same-mechanism",
+    "oa_pdf_url": "https://www.eatingpolicy.com/p/from-the-archives-stop-making-people"
+   },
+   {
+    "handle": "Jennifer Pahlka & Kelly Taylor, \"The Digital Service Was Never the Point,\" Eating Policy, 30 May 2026",
+    "argument": "Names the \"pilot that doesn't scale\" trap: a proven digital-service team gets a tolerated carve-out while everything around it runs unchanged, so the demonstration never propagates. Colorado's 2026 OIT reset (project to product model, governed by outcomes) offered as first at-scale adoption.",
+    "status": "VERIFIED-FETCHED",
+    "relation": "adjacent",
+    "oa_pdf_url": "https://www.eatingpolicy.com/p/the-digital-service-was-never-the"
+   },
+   {
+    "handle": "Marc J. Dunkelman, \"This Is Why Your Holiday Travel Is Awful,\" Politico Magazine, 29 Nov 2019 (the Penn Station piece)",
+    "argument": "The article behind Why Nothing Works. Post-Caro progressivism devolved public power so thoroughly that \"government power is now spread so thin that places once incapable of stopping bad projects now cannot get good projects off the ground.\" Built from a ~600-entry timeline of 30 yrs of failure.",
+    "status": "VERIFIED-FETCHED",
+    "relation": "same-mechanism",
+    "oa_pdf_url": "http://web.archive.org/web/2020id_/https://www.politico.com/news/magazine/2019/11/29/penn-station-robert-caro-073564"
+   },
+   {
+    "handle": "Donald Moynihan, \"Rescuing state capacity: Proceduralism, the new politicization, and public policy,\" J. Policy Analysis & Management (2025), doi:10.1002/pam.22673",
+    "argument": "The rigorous version of the trade-book claim. Capacity is \"usually taken for granted… a background variable left largely unconsidered\"; the creeping threat is \"a tendency towards proceduralism that layers in rules, veto points, and delay that constrains state actors from achieving critical goals.\"",
+    "status": "VERIFIED-FETCHED",
+    "relation": "same-mechanism",
+    "oa_pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/pam.22673"
+   },
+   {
+    "handle": "Susan Webb Yackee & Jason Webb Yackee, \"Procedural constraints and regulatory ossification in the US states,\" Regulation & Governance (2024), doi:10.1111/rego.12627",
+    "argument": "The best counter-evidence, empirical not rhetorical. Survey of 1,460 agency leaders across 50 states: agencies issue many rules and do so quickly; \"fears about the supposed tendency of procedural oversight mechanisms on the ability to regulate may be exaggerated.\" Ossification is asserted more than tested.",
+    "status": "VERIFIED-FETCHED",
+    "relation": "critique",
+    "oa_pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/rego.12627"
+   },
+   {
+    "handle": "Moynihan, Herd & Harvey, \"Administrative Burden: Learning, Psychological, and Compliance Costs in Citizen-State Interactions,\" JPART 25(1):43 (2015), doi:10.1093/jopart/muu009",
+    "argument": "Foundational measurement construct (932 cites): burden = learning + psychological + compliance costs. Crucially, burden \"will often be a deliberate political choice rather than simply the product of historical accident or neglect\"; opacity enables \"hidden politics.\" Process is chosen, not just accreted.",
+    "status": "VERIFIED-FETCHED",
+    "relation": "same-mechanism",
+    "oa_pdf_url": "https://academic.oup.com/jpart/article-pdf/25/1/43/9347647/muu009.pdf"
+   },
+   {
+    "handle": "Pamela Herd & Donald Moynihan, Administrative Burden: Policymaking by Other Means (Russell Sage Foundation, 2018), doi:10.7758/9781610448789",
+    "argument": "Book-length development of the burden construct and the standard citation for it. Metadata verified via Crossref chapter DOIs; full text not fetched, so treat specific empirical chapters as unread if a number becomes load-bearing.",
+    "status": "SECONDARY",
+    "relation": "context"
+   },
+   {
+    "handle": "Hsieh & Moretti, \"Housing Constraints and Spatial Misallocation,\" AEJ:Macro 11(2) 2019, doi:10.1257/mac.20170388 — with Greaney, Comment, doi:10.1257/mac.20230141",
+    "argument": "The quantitative anchor of the abundance case (constraints \"lowered aggregate US growth by 36 percent from 1964 to 2009\") is formally contested: Greaney (2026) documents code errors, shows the counterfactual lowers output as written, finds the corrected effect two orders of magnitude smaller.",
+    "status": "VERIFIED-FETCHED",
+    "relation": "critique"
+   },
+   {
+    "handle": "Ezra Klein & Derek Thompson, Abundance (Avid Reader Press, 2025), ISBN 9781668023488",
+    "argument": "Characterized via Bartik's open Upjohn paper (doi:10.17848/pol2025-036): abundance policies aim to \"make it easier to build housing or infrastructure, deliver government services more quickly and more efficiently.\" Bartik's critique: it neglects place-based policy and distressed labor markets.",
+    "status": "SECONDARY",
+    "relation": "context",
+    "oa_pdf_url": "https://research.upjohn.org/cgi/viewcontent.cgi?article=1035&context=up_policypapers"
+   },
+   {
+    "handle": "Brink Lindsey & Steven M. Teles, The Captured Economy (Oxford University Press, 2017)",
+    "argument": "The work Teles names. Verified only via Crossref-indexed reviews (Moe, Governance 2019, doi:10.1111/gove.12421; Chartier, J. Value Inquiry 2018): title, publisher, 232 pp. Thesis not read directly — but \"Kludgeocracy\" is its argued core and IS fetched.",
+    "status": "SECONDARY",
+    "relation": "context"
+   },
+   {
+    "handle": "Marc J. Dunkelman, Why Nothing Works: Who Killed Progress — and How to Bring It Back (2025)",
+    "argument": "Confirmed via indexed reviews (Lennartz, Archiv des öffentlichen Rechts 2025, doi:10.1628/aoer-2025-0023; Heath, Commonwealth & Comparative Politics 2025, doi:10.1080/14662043.2025.2581368 — both closed per Unpaywall). Book not fetched; the 2019 Penn Station article carries the argument and is verified.",
+    "status": "SECONDARY",
+    "relation": "context"
+   }
+  ],
+  "notes": "(a) Same family, different binding constraint. Ours: a non-rival good is under-supplied because no one captures the return. Theirs: capability exists, delivery blocked by over-supplied veto rights and accreted procedure. Both reduce to Olson. Moynihan/Herd/Harvey show the process side is often DELIBERATE. Sibling failure mode, not the same claim.\n\n(b) Rigorous versions: Bagley 2019 (law), Moynihan JPAM 2025 (best single scholarly cite), Moynihan/Herd/Harvey 2015 plus Herd & Moynihan 2018 (measurement). The 2025 trade books are popular restatements; Teles 2013 \"Kludgeocracy\" is the origin and sharper.\n\n(c) The link to technical under-provision is made only inside government software - Pahlka does it explicitly (cites Bagley, quantifies accretion at ~11%/yr). Nobody connects it to the computing stack itself. That is our opening.\n\nBEST GIFT: Teles took \"kludge\" FROM programming to describe policy. Borrow it back with attribution; Pahlka's \"we lack the tools for procedural deflation\" fits accreted abstraction layers exactly.\n\nFLAGS: never cite Hsieh-Moretti's 36% unqualified (Greaney 2026); Yackee & Yackee 2024 is real pushback on ossification."
+ },
+ "bridge-to-technical": {
+  "findings": [
+   {
+    "handle": "Steven M. Teles, \"Kludgeocracy in America,\" National Affairs no. 17 (Fall 2013)",
+    "argument": "Verbatim: \"Policy complexity is valuable for those seeking to extract rents... because it makes it hard to see just who is benefitting and how; complexity so thoroughly obscures the actual mechanism of political action that it is difficult to mobilize against.\" Same structure as the paper's toolchain argument.",
+    "status": "VERIFIED-FETCHED",
+    "oa_pdf_url": "https://web.archive.org/web/20260710125315/https://www.nationalaffairs.com/publications/detail/kludgeocracy-in-america",
+    "relation": "bridges-to-technical"
+   },
+   {
+    "handle": "Brett M. Frischmann, \"An Economic Theory of Infrastructure and Commons Management,\" 89 Minn. L. Rev. 917 (2005). DOI 10.24926/265535.1573",
+    "argument": "Closest published form of the paper's technical claim: nonrival infrastructure yields externalities suppliers cannot appropriate, so markets under-provide it and commons management is the corrective. Grepped full text: 31 hits 'free rid', 0 'rent-seeking', 1 'Olson'. Same mechanism, no capture bridge.",
+    "status": "VERIFIED-FETCHED",
+    "oa_pdf_url": "https://scholarship.law.umn.edu/cgi/viewcontent.cgi?article=1672&context=mlr",
+    "relation": "same-mechanism"
+   },
+   {
+    "handle": "Karlson, Sandström & Wennberg, \"Bureaucrats or Markets in Innovation Policy? – a critique of the entrepreneurial state,\" Rev. Austrian Econ. 34:81–95 (2021). DOI 10.1007/s11138-020-00508-7",
+    "argument": "The rent-seeking critique of Mazzucato, and the one place R&D under-provision and capture are argued to share a mechanism: curing market failure by state provision produces policy failure via information and incentive problems. JEL keywords include 'Rent seeking'; 14 rent hits, 2 underinvest.",
+    "status": "VERIFIED-FETCHED",
+    "oa_pdf_url": "https://link.springer.com/content/pdf/10.1007/s11138-020-00508-7.pdf",
+    "relation": "critique"
+   },
+   {
+    "handle": "James Bessen & Alessandro Nuvolari, \"Diffusing new technology without dissipating rents,\" Industrial and Corporate Change 28(2):365–388 (2019). DOI 10.1093/icc/dty068",
+    "argument": "Models WHY inventors share freely with competitors without destroying their rents: when a new technology coexists with an alternative for a decade+, productivity gains exceed rent dissipation. The missing published answer to 'who pays to defect into the commons', from an author §2.1 already cites.",
+    "status": "VERIFIED-FETCHED",
+    "oa_pdf_url": "https://www.iris.sssup.it/bitstream/11382/532953/1/bessen_nuvolari_ICC.pdf",
+    "relation": "same-mechanism"
+   },
+   {
+    "handle": "Brink Lindsey & Steven M. Teles, The Captured Economy (Oxford Univ. Press, 2017), ISBN 978-0190627768",
+    "argument": "Book behind the podcast quote. Four rent domains: IP, finance, occupational licensing, land use. Only IP touches technology, and it concerns legal monopoly, not under-provision of shared capability. Verified via three indexed reviews (10.1111/ecaf.12299, 10.1007/s10790-018-9627-z, 10.3917/pe.183.0190s).",
+    "status": "SECONDARY",
+    "relation": "context"
+   },
+   {
+    "handle": "Hall & Ziedonis, \"The Patent Paradox Revisited: Patenting in the U.S. Semiconductor Industry, 1979–1995,\" RAND J. Econ. 32(1):101 (2001). DOI 10.2307/2696400; NBER w7062",
+    "argument": "Best empirical case that incumbent hardware firms accumulate patents as bargaining chips and entry tolls rather than as innovation. This is the Krueger/Tullock reading of semiconductor incumbency the brief asked for, established and citable.",
+    "status": "SECONDARY",
+    "oa_pdf_url": "https://doi.org/10.3386/w7062",
+    "relation": "adjacent"
+   },
+   {
+    "handle": "Carl Shapiro, \"Navigating the Patent Thicket: Cross Licenses, Patent Pools, and Standard-Setting,\" Innovation Policy and the Economy 1 (2000/2001). SSRN 273550",
+    "argument": "Names the semiconductor patent thicket as a toll layer over cumulative innovation, with standard-setting as the mitigating institution. Pairs with Hall–Ziedonis to give a published rent-extraction account of the hardware layer.",
+    "status": "SECONDARY",
+    "oa_pdf_url": "https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=273550",
+    "relation": "adjacent"
+   },
+   {
+    "handle": "James Bessen, \"Accounting for Rising Corporate Profits: Intangibles or Regulatory Rents?\" SSRN 2778641 (2016); \"Industry Concentration and Information Technology,\" J. Law & Econ. 63(3) (2020), DOI 10.1086/708936",
+    "argument": "Bessen runs both sides: post-2000 profit growth traced to regulatory rents, and concentration traced to proprietary in-house software large firms do not share. Closest existing approach to 'rent extraction and non-diffusion of software capability are one story' — never stated as one claim.",
+    "status": "SECONDARY",
+    "oa_pdf_url": "https://scholarship.law.bu.edu/faculty_scholarship/3176",
+    "relation": "bridges-to-technical"
+   },
+   {
+    "handle": "Hoffmann, Nagle & Zhou, \"The Value of Open Source Software,\" HBS WP 24-038 (2024). DOI 10.2139/ssrn.4693148 (OA confirmed via OpenAlex)",
+    "argument": "Already cited by the paper; OA status confirmed. Supplies the demand-side magnitude (supply cost vs multi-trillion demand-side value) that is the quantitative form of Frischmann's under-appropriation argument. Cited together, the under-provision claim rests on published work.",
+    "status": "SECONDARY",
+    "oa_pdf_url": "https://doi.org/10.2139/ssrn.4693148",
+    "relation": "same-mechanism"
+   },
+   {
+    "handle": "Mark A. Lemley, \"Property, Intellectual Property, and Free Riding,\" 83 Tex. L. Rev. 1031 (2005). SSRN 582602",
+    "argument": "Strongest published counter to the paper's framing: uninternalized positive externalities are the normal and desirable state of an information economy, so under-provision inferred from unappropriated spillover is not by itself a market failure. §9 should meet this directly.",
+    "status": "SECONDARY",
+    "oa_pdf_url": "https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=582602",
+    "relation": "critique"
+   },
+   {
+    "handle": "Mancur Olson, The Rise and Decline of Nations (Yale Univ. Press, 1982). DOI 10.12987/9780300157673",
+    "argument": "The bridge already exists inside an author the paper cites. Olson 1965 gives free-riding; Olson 1982 gives the other half — accumulated distributional coalitions slow adoption of new technology and reallocation of resources. Citing both makes the capture-to-stagnation link Olson's, not the paper's.",
+    "status": "SECONDARY",
+    "relation": "bridges-to-technical"
+   },
+   {
+    "handle": "Farrell & Saloner, \"Installed Base and Compatibility: Innovation, Product Preannouncements, and Predation,\" AER 76(5) (1986); MIT DSpace hdl 1721.1/63734",
+    "argument": "The formal coordination-failure result behind the paper's herd section: excess inertia around an installed base, and strategic preannouncement used to hold the herd in place. With David 1985 (already cited) this grounds 'everyone copies the safe target' in standards economics.",
+    "status": "SECONDARY",
+    "oa_pdf_url": "http://hdl.handle.net/1721.1/63734",
+    "relation": "adjacent"
+   },
+   {
+    "handle": "CONFIRMED ABSENCE — nothing published bridges policy-capture economics to technical under-provision of shared computing infrastructure",
+    "argument": "Crossref, OpenAlex (title + fulltext), arXiv and Unpaywall searched on rent-seeking x open source; capture x tech stagnation x hardware; collective action x semiconductor tools; compiler x public good. Zero hits. Frischmann has infrastructure without capture; Teles has capture without a technical layer.",
+    "status": "VERIFIED-FETCHED",
+    "relation": "context"
+   }
+  ],
+  "notes": "(a) ADJACENT IN DOMAIN, IDENTICAL IN STRUCTURE. Teles's kludgeocracy essay is the sharpest match: complexity obscures who benefits, defeats mobilization, and pays rents to those who can navigate it. Swap \"policy\" for \"toolchain\" and it is the paper's competence/encoding argument. The paper can quote Teles directly (fetched) and note the term was borrowed from programming — the return trip is cheap and honest.\n\n(b) Developed in: Olson 1982 (coalitions retard technology adoption); Frischmann 2005/2012 (demand-side under-provision of nonrival infrastructure); Karlson et al. 2020 (rent-seeking critique of state provision); Bessen's two lines.\n\n(c) NO. Nothing joins them. Per the build-on-published-work convention, do not claim the bridge as novel — assemble it from Olson 1982 + Frischmann 2005 + Teles 2013 and let three published authors carry the weight.\n\nCautions: Lemley 2005 is the live objection (unappropriated spillover alone does not prove under-provision). Bessen & Nuvolari 2019 is the most useful new source — a published model of why anyone defects into the commons; Bessen 2006 is already in §2.1.\n\nFull texts in scratchpad: frischmann2005.pdf, karlson.pdf, bn.pdf, klud2.html."
+ }
+}
