@@ -830,7 +830,27 @@ Olson 1982 — distributional coalitions accumulate in *successful* societies an
 retard adaptation, so winning is not self-reinforcing on this axis; the honest
 frame is a race between better decisions accruing advantage and success
 accumulating blocking coalitions, with cheap counsel raising the rate of the
-first. **Do not write
+first.
+
+**And the delay is itself a target (Matthew, 2026-08-05).** The psychology that
+slows selection — motivated reasoning, positions following allegiance — is not a
+fixed constant of the problem; it is another prosthesis target, and the same one
+the paper already argues for everywhere else. Machine counsel has no affinity
+group whose loyalty its conclusions must signal, which is precisely the function
+Kahan assigns to motivated cognition, so its derived positions are not
+identity-protective in the way a person's own reasoning is. The delay term
+shrinks by the same mechanism that drives the selection.
+
+**But state the limit exactly, because there is a real one.** If a person must
+*believe* the machine's conclusion, Kahan applies again to the acceptance
+decision — his finding is that abler reasoners are better at rejecting
+identity-inconvenient conclusions, so a prosthesis producing better conclusions
+does not automatically produce better beliefs. The escape is that the selection
+argument never needed belief: it needs *decisions*. An arrangement that acts on
+better counsel outcompetes one that does not, whether or not anyone is persuaded
+by it — and acting is a lower bar than believing. So the prosthesis targets the
+decision layer, and Kahan's objection, which lives at the belief layer, does not
+reach it. Say that plainly; it is the cleanest form of the whole argument. **Do not write
 that information dissolves partisanship.** Write Druckman's actual finding: cue
 reliance is endogenous to polarization, so cheap counsel acts on one term of a
 feedback loop. That predicts an uncomfortable failure mode the paper should state

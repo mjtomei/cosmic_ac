@@ -408,6 +408,18 @@ in their entries. What remains is only versions-of-record and books.
 
 ## Not downloaded — books
 
+★★★ **Olson 1982** (*The Rise and Decline of Nations*) — **priority, added
+2026-08-05**: distributional coalitions accumulate in stable, successful
+societies and retard adoption of new technology and reallocation of resources.
+The paper cites Olson 1965 for free-riding; 1982 supplies the other half, and it
+is the selection-level objection to the counsel argument (success degrades
+decision quality). Yale reissue DOIs 10.12987/9780300157673, 10.12987/9780300268904.
+★★★ **Olson 1996**, "Big Bills Left on the Sidewalk: Why Some Nations are Rich,
+and Others Poor," *JEP* 10(2):3–24, doi:10.1257/jep.10.2.3 — **not a book; wanted
+and not yet retrieved.** Large well-understood gains sit unexploited because
+institutions do not organise to capture them: this paper's thesis in economics
+language. AEA direct and Wayback both blocked this pass; JEP is normally free at
+aeaweb.org, so retry in a browser.
 ★★ **Olson 1965** (*Logic of Collective Action*); ★★ **Hess & Ostrom 2007**
 (*Understanding Knowledge as a Commons* — the eScholarship "PDF" is a 4-page
 review, not the book); ★ **Shapiro & Varian 1999** (*Information Rules*); ★ **Boehm
