@@ -271,7 +271,9 @@ point at that.)
 find the error; a simulated adversary is instructed to. Whether instructed
 adversarialism is as searching as the motivated kind is an empirical question we
 should not assume the answer to — though the published debate-as-alignment line
-(Irving, Christiano & Amodei, "AI safety via debate," 2018 — **verify handle**)
+(Irving, Christiano & Amodei, "AI safety via debate," arXiv:1805.00899v2,
+22 Oct 2018 — **handle VERIFIED 2026-08-05** off the PDF, now on disk at
+`governance-and-state-capacity/irving-2018-ai-safety-via-debate.pdf`)
 is the same wager, made by others first. And Kahan still applies downstream: the
 human deciding whether to accept the adversarial review is motivated even if the
 reviewer is not. That is the belief layer again, and the selection argument's
