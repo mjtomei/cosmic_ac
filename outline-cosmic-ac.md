@@ -842,7 +842,15 @@ collectives — authority by fitness, not bequest, like the existing
 superintelligences. **The office is a socket (Matthew, 2026-07-29).** What plugs
 into a figurehead's office has always been variable — the staffer, the
 speechwriter, the party line — so a machine intelligence in that slot is a
-substitution the system already performs and does not find strange. Empirical
+substitution the system already performs and does not find strange. **Deepened
+2026-08-06 (see V.3c's response to Teles): the socket image understates it.**
+The office is not an empty slot a human fills; it is a standing persona the
+human *serves* — the president as ⟨M⟩ a kind of tulpa for the leader of the
+United States ⟨/M⟩, with rotation between humans as the mechanism that keeps the
+individual from leaking into the instantiation. Kantorowicz's two-bodies
+doctrine carries it. So the machine version is not a strange new occupant for a
+human role; the role was never human — it is the first occupant that can
+instantiate the persona *without* a body natural to leak. Empirical
 hook: a Canadian politician, Bill Oliver, appeared to read an AI prompt aloud
 during a legislative assembly sitting (news.com.au, 23 July 2026;
 youtu.be/wlYa8NV5k-U). Register note — this is *evidence the substitution is
@@ -1480,10 +1488,61 @@ sense of what are the essentially human tasks in governance." Second, Davies's
 *accountability sink* (see I.2): if distributing cognition across an
 organisation reliably produces decisions no person made and no person can be held
 to, then this paper's apparatus is a candidate accountability sink rather than an
-escape from one. The answer available to us is narrow and should not be
-overclaimed: **legibility of the reasoning** is the one thing the machine version
-can do that the corporate version cannot. That is a real difference and it is not
-a refutation.
+escape from one.
+
+**The response (Matthew, 2026-08-06): the objection assumes a baseline that does
+not exist.** ⟨M⟩ The relocation of decision-making is not actually something to
+avoid in all cases, and it is not avoided today. Plenty of decisions get made in
+anti-human ways today by corporations. **Being more honest about this, and more
+directly embodying and communicating with those intelligences, may be the best
+way to address the problem — and has to be better than ignoring it.** The things
+we have created and are creating are actually more informed and capable than most
+or all individuals in many cases. The government itself is an example of us doing
+the same, with very limited technical capabilities. ⟨/M⟩ Both objections take
+"judgment residing in accountable individuals" as the state we would be departing
+from; V.3c's own record and I.2's premise say we departed centuries ago. The
+live choice is not human-judgment-versus-automated-judgment but
+covert-and-illegible versus embodied-and-addressable. Davies's sinks are what the
+*unacknowledged* version produces; a machine embodiment is the first version of
+the collective intelligence you can actually talk to, and the extractive
+corporate record (Dubé–Misra and V.3b's twin) is what "ignoring it" already
+costs.
+
+**The presidency is the proof, and it has a canonical anchor.** ⟨M⟩ The United
+States president is not exactly a sovereign individual, but is expected to be **a
+kind of tulpa for the leader of the United States** — and the switching between
+different humans is itself a reinforcement of that: **a way to avoid too much of
+the individual leaking into the instantiation.** ⟨/M⟩ This is not a novel
+reading; it is the oldest doctrine in constitutional theory. Kantorowicz, *The
+King's Two Bodies* (Princeton, 1957 — canonical tier, from model knowledge,
+flag for verification) reconstructs the medieval jurists' distinction between the
+king's *body natural* (mortal, fallible) and *body politic* (the office-persona
+that "never dies") — the persona persists while humans rotate through it, which
+is why "the king is dead, long live the king" is not a contradiction. Hobbes
+built the modern state on the same move: the sovereign "beareth the person" of
+the commonwealth (*Leviathan*, ch. 16, the actor/author distinction), and the
+state itself is "an artificial man" — which is the same "old line from law" Teles
+himself reaches for when he calls the corporation an artificial intelligence.
+**What is ours to add is the design reading of rotation:** Washington's two-term
+precedent and the Twenty-second Amendment institutionalise the leak-prevention —
+term limits function as regularisation, keeping any one body natural from
+overfitting the body politic. The failure mode when the mechanism breaks has a
+name too: *l'état c'est moi* (attribution to Louis XIV is apocryphal — use the
+concept, not the quote). So when Teles asks for "the essentially human tasks in
+governance," the presidency answers that the chief office of the government was
+**never an essentially human task in his sense** — it is a role whose design
+actively suppresses the individual, and the constitution engineers *against* the
+human's judgment contaminating the institution's.
+
+**What survives of the objections — kept, not dissolved.** Teles's question
+retains its force one level down: discretion inside organisations (the
+street-level judgment call) is where the excision risk is real, and "which tasks
+are essentially human" becomes an empirical design question rather than a line to
+defend. And the narrow answer to Davies still carries the differential weight:
+**legibility of the reasoning** is the one thing the machine embodiment can do
+that the corporate and constitutional versions cannot — the tulpa we have been
+running on humans could never show its work. That is a real difference and it is
+not a refutation.
 
 **The bridge to the technical argument, assembled not claimed.** Teles's
 "Kludgeocracy in America" (*National Affairs* 17, Fall 2013) states our mechanism
