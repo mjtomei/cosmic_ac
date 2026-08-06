@@ -43,10 +43,19 @@ officials drawn from federal, state and" local government. The school's first
 act was to convene practitioners rather than to teach, which is the
 supply-of-counsel reading of its founding, in its own words, at the time. The
 MPP launched July 1969 with **21 students**.
-Price's four estates — autonomy varying inversely with power — is the governance
-principle the counsel arc lacks. His p.186 is the complication: policy is
-"determined by scientific developments that we cannot foresee," so the expert
-estate generates the option set.
+Price's four estates — scientific, professional, administrative, political, along
+"the spectrum from truth to power," with autonomy varying inversely with
+proximity to power — is the governance principle the counsel arc lacks, and the
+complication is that the expert estate *generates* the option set rather than
+merely advising on it. ⚠ **Paraphrase only.** A verification pass (2026-08-05)
+could not confirm any Price quotation we hold: the "scientific developments that
+we cannot foresee" sentence attributed to p.186 returns **zero hits anywhere**,
+and the p.137 autonomy line could not be retrieved. Both came to us at second
+hand. Nothing of Price's may be quoted until a copy is read — the book is
+access-restricted on archive.org and gated on ACLS, so this needs a library.
+Deanship verified: Williams 1937–47, Mason 1947–58, Price from 1958 — **third
+dean, not the first**; "founding dean of the Kennedy School" is a 1966 renaming
+artifact.
 
 **2. The analytic machinery, installed and abandoned.** PPBS extended
 government-wide in 1965 and dead by 1971 (Schick, "A Death in the Bureaucracy,"
@@ -128,7 +137,8 @@ back-numbers needing a purchase or a browser: Schick, "A Death in the
 Bureaucracy" (*PAR* 1973, the PPBS obituary); **Olson 1982, *The Rise and
 Decline of Nations*** (★★★ priority — it is the objection that operates at the
 same level as our own claim); Price, *The Scientific Estate* (1965; only
-Miller's 1966 *Duke L.J.* review is on disk); Davies, *The Unaccountability
+Miller's 1966 *Duke L.J.* review is on disk — now a **blocker**, since no Price
+quotation we hold survived verification); Davies, *The Unaccountability
 Machine* (2024); Rivlin; Wildavsky; and the OTA closure appropriation line item.
 
 Status: opened 2026-08-05; acquisition complete; ranked (below).

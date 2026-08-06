@@ -160,8 +160,27 @@ quiet part itself.
 
 ## Price's own doctrine complicates our argument in a way worth taking seriously
 
-From *The Scientific Estate* (1965), verified through secondary quotation since
-the book is lending-restricted:
+⚠ **VERIFICATION FAILED, 2026-08-05 — none of the wording below is currently
+supportable and none of it may be printed.** A dedicated pass could not retrieve
+either quotation. The p.186 sentence returns **zero hits anywhere**: no web
+result, no Google Books hit, no archive.org full-text hit. The p.137 line could
+not be retrieved either. Both entered these notes through secondary quotation,
+which is exactly the failure mode the project's verification convention exists to
+catch, and they are kept below only so the claim can be checked against a
+physical copy. All three archive.org scans are access-restricted and the ACLS
+e-book is subscription-gated, so this needs a library copy.
+
+**What IS verified** and can carry the argument as paraphrase: Price arranges
+four estates — scientific, professional, administrative, political — along "the
+spectrum from truth to power" (his chapter title), interposing the professional
+and administrative estates between science and politics so science reaches
+decisions through a chain of responsibility. Bibliography confirmed: Belknap
+Press of Harvard University Press, 1965, xi + 323 pp., ISBN 9780674794856; no
+evidence of a revised edition. Deanship confirmed: Williams 1937–47, Mason
+1947–58, **Price from 1958 — the third dean, not the first**. Sources calling him
+"founding dean of the Kennedy School" describe a 1966 renaming, not a founding.
+
+The unverified text, retained only for checking:
 
 - **p.137:** "the closer the estate is to the end of the spectrum that is
   concerned solely with truth, the more it is entitled to freedom and
@@ -281,8 +300,18 @@ answer holds — it is decisions, not beliefs, that have to move.
 
 His worked example (~11:38) is a prize-winning history of colonial gun ownership
 whose sources proved "dodgy and problematic," which ideologically diverse
-historians would have caught sooner. (Almost certainly Bellesiles's *Arming
-America*, 2000 — he does not name it; **verify before citing**.)
+historians would have caught sooner. **VERIFIED 2026-08-05:** Bellesiles,
+*Arming America* (Knopf, 2000) — he does not name it, and no competing candidate
+exists. Bancroft Prize 2001; rescinded by Columbia's trustees 7 Dec 2002
+(announced 13 Dec), the only rescission since the prize was established in 1948.
+Emory's external committee (Stanley N. Katz, Hanna H. Gray — *Hanna*, not Hannah
+— and Laurel Thatcher Ulrich) reported 25 Oct 2002: "abundant evidence of
+superficial and thesis-driven research"; the Table 1 sourcing failure "does move
+into the realm of 'falsification'"; "his scholarly integrity is seriously in
+question." He resigned the same day, effective 31 Dec 2002. Columbia stated the
+judgment "had nothing to do with the book's content or the author's point of
+view" — keep that line if we use the example, since our claim is about
+error-detection, not about the politics of the finding.
 
 ## 2. Loury's variance-for-truth statement (~06:30)
 

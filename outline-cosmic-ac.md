@@ -1010,8 +1010,27 @@ citations and rerun your model**… And where that's lacking, it's very easy to
 slip into a lot of easy conclusions that don't get checked." His worked example
 (~11:38) is a prize-winning history of colonial gun ownership whose sources
 proved "dodgy and problematic," which ideologically diverse historians would have
-caught sooner (almost certainly Bellesiles's *Arming America*, 2000 — he does not
-name it; **verify before citing**). This is the same phenomenon Kahan treats as
+caught sooner. **Identified and VERIFIED 2026-08-05** (he does not name it; no
+competing candidate exists): Michael A. Bellesiles, *Arming America: The Origins
+of a National Gun Culture* (Knopf, 2000). It won the **Bancroft Prize in 2001**;
+Columbia's trustees voted to **rescind on 7 December 2002**, announced 13
+December — the **only rescission in the prize's history**, which was established
+in 1948. Emory convened an external committee of three historians (Stanley N.
+Katz, Hanna H. Gray, Laurel Thatcher Ulrich — note *Hanna*, not Hannah), whose
+25 October 2002 report found "abundant evidence of superficial and thesis-driven
+research," said his failure to identify sources for Table 1 "does move into the
+realm of 'falsification'," and concluded "his scholarly integrity is seriously in
+question." Bellesiles resigned the same day, effective 31 December 2002. Columbia
+was careful that the judgment "was based solely on the evaluation of the
+questionable scholarship of the work and had nothing to do with the book's
+content or the author's point of view" — a distinction worth preserving if we
+use the example, since our argument is about error-detection, not about the
+politics of the finding. **This is the best available example of exactly the
+mechanism at issue**: the errors were found, but slowly, and by an adversary who
+went to the archives — the concrete defects include Providence wills that did not
+exist, citation to San Francisco probate records destroyed in the 1906
+earthquake, and 1746 Connecticut militia returns reported as 57% unarmed against
+primary sources showing 81.7% armed. This is the same phenomenon Kahan treats as
 pathology, read as function: Kahan's motivated reasoners resist
 identity-inconvenient conclusions, Teles's motivated reasoners audit *other
 people's*. Both hold, and together they say motivated cognition is **distributed
@@ -1334,20 +1353,38 @@ States**." Ninety years apart, the same institutional object, with *distribution
 named as the reform by the person building it. This is the cleanest single
 exhibit the counsel arc has, and it should be quoted as a pair.
 
-**Price's complication, kept.** Don K. Price — dean from 1958, *not* the first
-(Williams 1937, Mason 1947) — argues in *The Scientific Estate* (1965) that
-autonomy varies inversely with power across four estates — "the closer the estate
-is to the end of the spectrum that is concerned solely with truth, the more it is
-entitled to freedom and self-government" (p.137). That is the governance
-principle the arc otherwise lacks, and his p.186 cuts at us: "the main lines of
-our policy, over the long run, are likely to be determined by **scientific
-developments that we cannot foresee**, rather than by political doctrines that we
-can now state" — so the expert estate does not merely advise on the option set,
-it *generates* it. **Both quotes and both page numbers are so far confirmed only
-through secondary quotation** (the book is lending-restricted); a copy must be
-obtained and the pages checked before either is printed. If the pages cannot be
-confirmed, quote without page numbers or drop the quotation and keep the
-paraphrase. A machine
+**Price's complication, kept — as paraphrase only.** Don K. Price was dean from
+1958 and was **the third dean, not the first** (John H. Williams 1937–47, Edward
+S. Mason 1947–58; verified 2026-08-05 against HKS's own history timeline).
+Note the trap: sources calling him "founding dean of the John F. Kennedy School
+of Government" are describing a renaming artifact — the school was renamed for
+Kennedy in 1966 while he was in post, so he was the first dean *under that name*
+and the third of the institution. Never repeat the founding-dean phrasing
+unqualified.
+
+In *The Scientific Estate* (Belknap/Harvard, 1965) he arranges four estates —
+**scientific, professional, administrative, political** — along what he calls
+"the spectrum from truth to power," interposing the professional and
+administrative estates between science and politics so that science reaches
+decisions through a chain of responsibility. The principle we want is that
+autonomy varies inversely with proximity to power, and that is the governance
+principle the arc otherwise lacks. The complication we want is that the expert
+estate does not merely advise on the option set, it *generates* it — which makes
+machine counsel a shift in who sets the agenda rather than a neutral improvement
+in advice.
+
+⚠ **NO PRICE QUOTATION MAY BE PRINTED YET.** A verification pass (2026-08-05)
+could not confirm *any* of the wording previously recorded for him. The
+"scientific developments that we cannot foresee" sentence attributed to p.186
+returns **zero hits anywhere** — no web result, no Google Books hit, no
+archive.org full-text hit — and the autonomy-versus-power line attributed to
+p.137 could not be retrieved either. Both entered our notes through secondary
+quotation and neither is currently supportable; treat them as unsourced until a
+copy of the book is read. The paraphrase above is safe because it rests on the
+four-estate structure and the chapter title, which are verified. All three
+archive.org scans are access-restricted and the ACLS e-book is subscription-
+gated, so this needs a library copy. **To acquire: Price 1965 — now a blocker,
+not a nicety.** A machine
 counsel that generates options is not a neutral improvement in advice; it is a
 shift in who sets the agenda. Say so.
 
