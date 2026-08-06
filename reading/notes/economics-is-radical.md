@@ -145,3 +145,21 @@ the weight. State the absence once, quietly, if at all.
 - *The Captured Economy* itself was verified only bibliographically (Oxford UP,
   2017, 232 pp, via indexed reviews). "Kludgeocracy" is its argued core and *is*
   fetched — quote that instead.
+
+
+---
+
+## Addendum (2026-08-06): the absence, narrowed by the citation-graph pass
+
+The "confirmed absence" above was overstated — keyword sweeps missed what a
+citation walk found. Published planks now known: **Holmes & Schmitz 1995**
+(Minneapolis Fed QR — insiders politically block technology adoption to protect
+rents, modelled), **Akcigit, Baslandze & Lotti 2023** (*Econometrica* —
+political connections raise firm survival while suppressing innovation, Italian
+registry microdata), **Bessen 2020** (*JLE* — proprietary IT as the rent
+instrument), **Goodman & Lehto 2023** (*Public Choice* — IP economics bridged to
+knowledge-commons governance). The unclaimed part is only the specific span to
+the computing stack's continuous optimization, and **Kärnä, Karlsson & Engberg
+2022** (*Econ. Innov. New Tech.*) states that gap in print. Cite the planks,
+let Kärnä carry the absence, still assemble rather than claim. Full report:
+`~/reading/governance-and-state-capacity/00-CITATION-GRAPH.md`.

@@ -91,12 +91,22 @@ technical claim.
 
 ## Two findings this directory exists to hold
 
-**The confirmed absence.** Nothing published bridges policy-capture economics to
-technical under-provision of shared computing infrastructure (searched across
-Crossref, OpenAlex full text, arXiv, Unpaywall). Frischmann has infrastructure
-without capture; Teles has capture without the technical half. Per project
-convention the bridge is **assembled from Olson 1982 + Frischmann 2005 + Teles
-2013**, not claimed.
+**The absence, now NARROWED (correction, 2026-08-06).** The original finding —
+nothing published bridges policy-capture economics to technical under-provision
+of shared computing infrastructure — was overstated, and the citation-graph pass
+(below) found the planks the keyword sweeps missed: **Holmes & Schmitz 1995**
+(a published model of insiders politically blocking technology adoption to
+protect rents), **Akcigit, Baslandze & Lotti 2023** (capture measured
+suppressing innovation in registry microdata, *Econometrica*), **Bessen 2020**
+(proprietary IT itself as the rent instrument), and **Goodman & Lehto 2023**
+(IP economics bridged to knowledge-commons governance in *Public Choice*). What
+remains unclaimed is only the *specific span*: none applies capture/
+under-provision economics to continuous optimization of the computing stack
+itself — and **Kärnä, Karlsson & Engberg 2022** states that gap in print
+(innovation-policy analysis omits political/capture failure), which is exactly
+the published absence-statement the project's conventions prefer. Posture: cite
+the planks as the bridge's shoulders; let Kärnä et al. carry the one quiet
+absence claim; per convention still assembled, never claimed.
 
 **The sharpest objection to our own argument**, from Teles: automating cognition
 risks "pull[ing] out where the actual discretion and judgment are in
@@ -306,3 +316,49 @@ wrong, and all of them would survive into a draft unnoticed.
 | `teles-2013` / `teles-2015` | Wayback captures — **no journal pagination**, and `pdftotext` interleaves the archive toolbar into the body. Check every quote against the rendered page. |
 | `shapiro-2001-patent-thicket` | **Image-only, no text layer.** Read via `pdftoppm`. A grep over this file proves nothing. |
 | `brookings-vital-statistics-congress-staff` | Do **not** cite the 1946 GAO figure (14,219) as lost expertise — that was a wartime voucher-audit agency. Data stop at 2015/16. |
+
+
+---
+
+## Citation-graph pass (2026-08-06) — `00-CITATION-GRAPH.md` / `.json`
+
+Four agents walked references and citers of 13 starred works via OpenAlex
+(116 candidates → deduped, ranked, all handles API-verified, never from
+memory). Full report in `00-CITATION-GRAPH.md`. Headlines:
+
+**The strongest single signal is a convergence:** **Arrow 1962**, "Economic
+Welfare and the Allocation of Resources for Invention," surfaced independently
+from two unrelated seeds (Furman-Orszag and Karlson). It is the original
+under-provision-of-invention result — the direct ancestor of the paper's central
+claim — and the paper currently cites only Arrow 1969, from model knowledge.
+
+**The single clearest gap on disk:** **Stigler 1971**, "The Theory of Economic
+Regulation" — the seminal capture paper the entire on-disk capture line stands
+on. **Baumol 1990** (entrepreneurship allocated between productive and
+unproductive uses by payoff structure) is the missing keystone between Olson and
+the paper's claim that engineering effort is misallocated, not scarce.
+
+**The bridge planks** (see the corrected absence-finding above): Holmes &
+Schmitz 1995, Akcigit-Baslandze-Lotti 2023, Bessen 2020, Goodman & Lehto 2023,
+with Kärnä-Karlsson-Engberg 2022 carrying the absence statement in print.
+
+**Objections found, acquire-grade:** **Wittman 1989** ("Why Democracies Produce
+Efficient Results" — the direct counter Olson 1996 was written against: no big
+bills lie unclaimed); **McCubbins-Noll-Weingast 1987** (procedures are
+deliberate deck-stacking by principals, not pathology); **Derthick & Quirk
+1985** (capture is defeasible — deregulation happened; the cure needs this
+precedent as much as the diagnosis needs Stigler); **Autor et al. 2020**
+(superstar firms: concentration from technology, not capture);
+**Kitsikopoulos 2023** (re-reads the Cornish case toward the patent system —
+confront before leaning on Lean's Engine Reporter); and **McKelvey et al. 2025**
+(generative AI as a driver of commons *closure* — the most on-thesis objection
+in the batch: the Bessen-Nuvolari worry, stated for our own decade).
+
+**For §2.1's machinery:** Scotchmer 1991 (sequential improvers systematically
+under-rewarded), Levin et al. 1987 + Cohen-Nelson-Walsh 2000 (the appropriability
+surveys: secrecy and lead time beat patents), Allen 1983 (collective invention —
+the founding paper of the literature Bessen-Nuvolari extends), von Hippel 1987
+(know-how trading between rivals), Heller & Eisenberg 1998 (the anticommons),
+Merges 1996 (industries privately building collective institutions to escape
+rights deadlock — prior art for the cure), Dixit & Olson 2000 (voluntary
+coalitions under-provide even at negligible transaction costs).

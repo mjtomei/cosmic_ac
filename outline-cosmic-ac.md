@@ -1595,6 +1595,26 @@ which is precisely the gap the assembly closes. Carry Lemley (83 *Tex. L. Rev.*
 and desirable state of an information economy, so under-provision inferred from
 unappropriated spillover is not by itself a market failure.
 
+**Correction (2026-08-06, citation-graph pass): the "confirmed absence" was
+overstated, and the corrected version is stronger for us.** A citation walk
+around the directory's top tier found bridge planks the keyword sweeps missed:
+**Holmes & Schmitz 1995** (Minneapolis Fed QR — a published *model* of insiders
+politically blocking technology adoption to protect rents), **Akcigit, Baslandze
+& Lotti 2023** (*Econometrica* — capture measured suppressing innovation in
+registry microdata), **Bessen 2020** (*JLE* — proprietary IT itself as the rent
+instrument), **Goodman & Lehto 2023** (*Public Choice* — IP economics bridged to
+knowledge-commons governance). What remains unclaimed is only the specific span
+to the computing stack's continuous optimization — and **Kärnä, Karlsson &
+Engberg 2022** states that gap in print, which per the build-on-published-work
+convention is better than our stating it: cite the planks as shoulders, let
+Kärnä et al. carry the one quiet absence claim. Two objections from the same
+pass must travel with the bridge: **Wittman 1989** ("Why Democracies Produce
+Efficient Results" — the direct counter Olson 1996 was written against: no big
+bills lie unclaimed), and **Derthick & Quirk 1985** (capture is *defeasible* —
+airline/trucking/telecom deregulation beat entrenched interests; the cure claim
+needs this precedent as much as the diagnosis needs Stigler 1971, which is also
+the seminal capture paper the shelf still lacks).
+
 **V.4 The endgame: every device, any intelligence.** Once publicly available
 intelligence passes the competence bar and data is openly available, anyone's
 personal device can fully embody any intelligence in existence — and can therefore
