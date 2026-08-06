@@ -94,5 +94,40 @@ directories) finds what the model-knowledge list missed — cluster 2 and cluste
 4 especially are live research programs with recent literatures the outline has
 not seen.
 
-Status: opened 2026-08-06; acquisition sweep launching; ranking and
-citation-graph passes to follow.
+## What is on disk (2026-08-06 sweep: 21 works, 20/21 targets — all verified)
+
+Primary texts rendered from public-domain sources (Gutenberg/Wikisource/
+archive.org): Hobbes (ch. 16 verified present), Plato (noble-lie passage
+verified, "royal lie"/"audacious fiction" in Jowett), Bentham 1791 (403-pp
+Google scan — **image-only, no text layer**), Voltaire's Épître (it lives at
+*Épître 104*, not under its own title; "il faudrait l'inventer" verified),
+Nietzsche §125 (Common's 1910 translation — his wording is "Where is God
+gone?", NOT Kaufmann's "Whither is God"; quote whichever translation is cited,
+not a blend), Durkheim (Swain translation).
+
+Scholarly cluster: French 1979, List 2018 (LSE accepted version of the *Noûs*
+article), Dartmouth v. Woodward (LoC US Reports pages; Marshall's "artificial
+being, invisible, intangible" verified), Beer's VSM paper (the Wiley-reprint
+text of JORS 35(1) 1984), and **Runciman's LRB Diary (40(2), 25 Jan 2018)** —
+"Corporations are another form of artificial thinking machine," the OA short
+form of *The Handover*'s thesis.
+
+Watching-god cluster: all six landed, four of them only via Wayback captures of
+Norenzayan's dead UBC manuscripts page and Johnson's squatted personal site —
+**the OA record of this literature is measurably rotting**; keep local copies.
+Zuckerman 2009 is the author's complete 45-pp preprint (the only OA typeset
+copy is truncated).
+
+Panopticon cluster: Mann/Nolan/Wellman (publisher OA), Brin's Wired 4.12 essay,
+Foucault's complete "Panopticism" chapter (the full 195–228 text, not the
+common 4-page excerpt).
+
+**Filename honesty:** the Kantorowicz stand-in is renamed
+`shortall-2023-kings-two-bodies-secularization.pdf` (Shortall, *Modern
+Intellectual History* 20 (2023), CC-BY — a reassessment essay centred on
+Kantorowicz). **The book itself remains no_oa and stays on the purchase list**,
+as do List & Pettit's *Group Agency*, Norenzayan's *Big Gods*, Runciman's
+*The Handover*, Davies, Brin's and Foucault's and Zuckerman's books.
+
+Status: opened 2026-08-06; acquisition complete; ranking pass running;
+citation-graph pass to follow.
