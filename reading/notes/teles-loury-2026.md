@@ -246,6 +246,37 @@ is distributed error-detection — costly individually, valuable at population
 level. Load-bearing for V.3a: removing it is not obviously an improvement, and
 any machine-counsel argument must say what replaces the auditing function.
 
+**Our direct response, for the text if we quote him (Matthew, 2026-08-05):**
+the auditing function does not require the adversary to be a *different person*.
+Two routes internalise it. First, sufficient intellectual humility lets you
+review your own model adversarially — rarer than diversity, but not impossible,
+and it is what disciplined practice already asks for. Second, and generally,
+**machine intelligence can inhabit different points of view and perform the
+adversarial review for a single human.** Teles's mechanism needs someone with a
+motive to check your citations and rerun your model; a machine can be *instructed*
+to have that motive, and instructed to hold several incompatible ones at once.
+
+**This paper is its own evidence.** Its citation audit ran one agent per
+reference, each fetching the source and comparing it against the inline claim,
+with every apparent mismatch then adversarially verified — six real
+misrepresentations out of 129 references. The same discipline caught two
+fabricated "duplicate file" claims from a calibration agent in the S16 work, and
+an author's own chronology error about Ariane 6. In each case the adversary was
+synthetic and the errors were real. (Note the tension with dropping
+`HOW-THIS-WAS-MADE.md`: if the argument leans on machine adversarial review, the
+production method is the best available demonstration of it, and something should
+point at that.)
+
+**The honest limit is motive versus capability.** Teles's adversary *wants* to
+find the error; a simulated adversary is instructed to. Whether instructed
+adversarialism is as searching as the motivated kind is an empirical question we
+should not assume the answer to — though the published debate-as-alignment line
+(Irving, Christiano & Amodei, "AI safety via debate," 2018 — **verify handle**)
+is the same wager, made by others first. And Kahan still applies downstream: the
+human deciding whether to accept the adversarial review is motivated even if the
+reviewer is not. That is the belief layer again, and the selection argument's
+answer holds — it is decisions, not beliefs, that have to move.
+
 His worked example (~11:38) is a prize-winning history of colonial gun ownership
 whose sources proved "dodgy and problematic," which ideologically diverse
 historians would have caught sooner. (Almost certainly Bellesiles's *Arming
