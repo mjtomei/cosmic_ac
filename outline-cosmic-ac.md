@@ -198,7 +198,11 @@ vulnerability behind it; sufficiently advanced actors can already access any
 device; the recent OpenAI breakout and the Mythos hype mark the public arrival.
 *(New text. [MIXED] — real anchors (botnets, Welchia/Hajime-class worms, the
 breakout incident — VERIFY all) + declared limit-case. §9's partial-inoculation /
-correlated-failure bullet does NOT land here — it lands in V.2 pluralism.)*
+correlated-failure bullet does NOT land here — it lands in V.2 pluralism.
+The *social* consequence of this endpoint — the fear that universal exposure
+produces nihilism and violence rather than adaptation — is handled in V.3a(e),
+where the roon "kompromat jubilee" exchange (5 Aug 2026) is the fear stated in
+the wild.)*
 
 ---
 
@@ -1061,6 +1065,87 @@ And Kahan still applies downstream: the human deciding whether to *accept* the
 adversarial review is motivated even if the reviewer is not — which is the belief
 layer again, and where the selection argument above answers, since it is
 decisions and not beliefs that have to move.
+
+**(e) The nihilism fear, and the function of the shared lie (Matthew,
+2026-08-06).** The remaining objection to distributed counsel is not that it
+fails but that it *works*: ⟨M⟩ there may be a general fear that **too many people
+would fall into nihilism if information was more free, because it happens to a
+lot of smart people today** ⟨M — anecdotal, and flagged as such; but the fear
+itself is real and stated in the wild: roon (@tszzl, 5 Aug 2026), "let's have a
+kompromat jubilee. computer security bankruptcy. everything leaks and we all
+forgive each other for our sins," drew the reply that simultaneous exposure of
+everyone's secrets — "the revelation of evil's ubiquity" — "forces humanity's
+confrontation w/ its ontic banality. There would be violence." That is III.3's
+endpoint arriving in public conversation, with the fear attached; screenshot on
+file, ephemeral, colour not evidence⟩.
+
+**The mechanism, Matthew's statement:** ⟨M⟩ One of the purposes of the shared lie
+— the idea that there is some orientation towards the good, or a higher power
+directly watching you as an individual — is to **make up for the fact that
+without the lie, the things that are like that are too hard to see for most
+people.** The machine counsel is a **literal instantiation of those things that
+is legible to everyone at any competence level.** ⟨/M⟩
+
+**The function of the lie is published, measured literature — build on it, per
+convention.** Plato's noble lie (*Republic* 414b–c) is the canonical statement
+that a shared fiction can be load-bearing for social order; Voltaire's "if God
+did not exist, it would be necessary to invent him" (Épître à l'auteur des
+*Trois imposteurs*, 1768) is the functional-invention claim itself. The modern
+program measures it: Norenzayan's *Big Gods* (Princeton, 2013 — "watched people
+are nice people") and the supernatural-punishment line (Johnson & Krüger 2004;
+Johnson, *God Is Watching You*, OUP 2016) argue the watching-god belief scaled
+cooperation among strangers; Purzycki et al. (*Nature* 530, 2016) measure it in
+cross-cultural economic games — belief in moralistic, punishing, *knowing* gods
+predicts impartiality toward distant co-religionists. **Two traps:** Whitehouse
+et al.'s *Nature* 2019 "Complex societies precede moralizing gods" was
+**RETRACTED (2021) — never cite it**; and the lab "watching-eyes" priming effect
+fails meta-analysis (Northover et al. 2017) — lean on the cross-cultural and
+historical work, not on priming. And Dostoevsky's "if God does not exist,
+everything is permitted" is a **paraphrase that appears nowhere verbatim in
+*The Brothers Karamazov*** — the idea is Ivan's but the sentence is the
+translators'; quote Nietzsche instead, who is verbatim and better: the madman of
+*Gay Science* §125 announcing that the death of the shared lie arrives *before*
+anything exists to replace its function.
+
+**The restatement that makes it ours:** the lie was a **compression artifact — a
+low-bandwidth interface to a real structure.** There actually is an orientation
+toward the good (the long-run payoff structure of cooperation, which the paper's
+own §5/IV.1 fitness argument and the whole selection line of V.3a assert), and
+there actually is watching (accountability, reputational memory, V.3's automated
+investigators). What the god-belief supplied was those truths *at a bandwidth
+every person could receive*. Nietzsche's own remedy — author your values
+yourself — works only for the rare, which is why what followed him was nihilism
+at scale rather than self-authorship at scale: **the remedy had a competence
+floor.** That is exactly the gap machine counsel closes: it does not restore the
+lie and does not restrict the information — it **supplies the seeing**, per
+person, at whatever bandwidth the person can use. The Jasanoff objection already
+on the shelf (transparency yields nothing "absent an active culture able to make
+sense of it," `lawcontemp-2006`) is answered by the same move: machine counsel
+*is* the interpretive culture, provisioned individually.
+
+**Supporting rather than refuting: the societies that already shed the watcher.**
+Zuckerman's *Society Without God* (NYU, 2008 — VERIFY handle) documents Denmark
+and Sweden as low-belief societies without moral collapse — but what replaced
+the watching god there was **high-trust legible institutions**, which is the
+mechanism restated, not a counterexample to it. Secularization does not produce
+nihilism where something else makes the cooperative structure visible; it
+produces it where the lie is withdrawn and nothing supplies the seeing.
+
+**Honest tensions, carried here rather than hidden.** (i) The watcher being
+*real* sharpens tension (a) above: a literal instantiation of "directly watching
+you as an individual" has a dystopian twin, and its name is Bentham's panopticon.
+The difference between counsel and panopticon is who the seeing serves — the
+watched person or the watcher's owner — which is the same
+governance-not-technology line the surveillance tension already draws, and V.3b's
+firm design (user control, balance-sheet coupling) is where the governance
+lives. (ii) The mechanism requires that the structure the lie compressed is
+actually there to see — that goodness *does* pay off legibly on observable
+horizons. Where it does not (and Olson's coalitions, above, are a standing
+counterexample on some horizons), counsel that honestly reports the payoff
+structure will report the ugly parts too. The claim survives in its honest form:
+counsel replaces the lie's function only as fast as the world it reports on is
+actually being made worth reporting — which is one more reason the paper's
+constructive program and this section are one argument, not two.
 
 **V.3b The trustworthy firm — deploying preference-knowing intelligence without
 eroding freedom (Matthew, 2026-07-30).** This is the constructive answer to the
