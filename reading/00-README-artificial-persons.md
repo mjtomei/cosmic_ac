@@ -148,3 +148,32 @@ Excluding what the purchase list already covers (Kantorowicz 1957, List & Pettit
 Status: split 2026-08-07; 8 works on disk; citation-graph acquisitions pending
 (the aggregation theorems, the persona lineage, the moral-agency contest,
 Espejo/Ulrich, rotation empirics, reason-giving law, machine counsel practised).
+
+
+---
+
+## Citation-graph + gap-hunt pass (2026-08-07) — `00-CITATION-GRAPH.md` / `.json`
+
+Joint pass over the pre-split directory (110 candidates; the report file covers
+both directories — the persona/agency/two-bodies/rotation/reason-giving/
+machine-counsel clusters belong here, the watching-god corrections and
+observability clusters to the sibling). Of the eleven gaps the ranking pass
+surfaced, the hunt ANSWERED seven outright: the discursive dilemma (the full
+Kornhauser-Sager → Pettit → List & Pettit line, mostly OA), rotation measured
+(Besley-Case through Frantz's personalisation index, with Ferraz-Finan as the
+cost objection), reason-giving law (Schauer, Shapiro-Levy, Stack, Mashaw),
+machine counsel practised (Dietvorst, Logg, Bonaccio-Dalal, Engstrom), the
+presidency persona vocabulary (Rogin applying Kantorowicz to the presidency
+directly, Morgan's *Inventing the People*, Lefort, Schmitt 1922, Goffman), the
+CERC re-analyses, and the state of the big-gods debate. PARTIAL: Cybersyn
+(Espejo 1980 located; Medina's OA articles rate-limited) and transparency
+measured (observability cluster landed; BWC RCTs and FOIA studies rate-limited).
+STILL OPEN: Ulrich's critique + Beer's reply (API 429s; staged for retry).
+
+**Strongest convergence: Lefort's empty place** — surfaced independently from
+the Shortall walk and the vocabulary hunt. Democracy institutionalises
+*non-incarnation*: occupants rotate through a place of power that stays empty —
+the tulpa thesis and rotation-as-regularisation bridged in one canonical move.
+**The machine-as-persona triangle** converged from three seeds: List 2021
+(support), Bryson-Diamantis-Grant 2017 (objection), Okumura 2023 (development) —
+cite together.
