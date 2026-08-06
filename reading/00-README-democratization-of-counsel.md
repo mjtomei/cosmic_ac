@@ -16,6 +16,10 @@ finds, critiques, and the landmark spine per seed. Headline: **the Downs-flip
 rational) is unclaimed in the literature** — four seeds independently confirm.
 Per-work reading notes go in `notes/`.
 
+Sibling directory `governance-and-state-capacity/` (created 2026-08-05) carries the
+institutional record — Kennedy School founding, PPBS, OTA, proceduralism, capture —
+while this list keeps the normative argument and the partisanship literature.
+
 Sibling directory `the-trustworthy-firm/` (created 2026-07-31) carries the
 household-side twin — V.3b's preference-correcting firm. KKT, Dubé-Misra and
 Špecián stay HERE (they were ranked in this cluster) but are cross-listed there.

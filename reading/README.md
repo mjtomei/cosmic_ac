@@ -12,6 +12,7 @@ verified handle, and open-access locations were recorded where they exist.
 |---|---|---|
 | `00-README-software-economies-and-the-knowledge-problem.md` | 84 | The economics of software as a public good, and the socialist-calculation debate with its formal descendants — the literature §2.1 is built on, and the Hayek-criterion material. |
 | `00-README-democratization-of-counsel.md` | 31 | Elite structural counsel as a scarce good, the republic as its institutional shape, and what changes when counsel becomes cheap — Lippmann and Dewey forward. |
+| `00-README-governance-and-state-capacity.md` | — | The institutional record of counsel supplied to government: schools built to manufacture a governing class, analytic machinery installed and abandoned, counsel agencies created and defunded, and the proceduralism and capture literatures explaining why capacity decays. Sibling to the counsel list — that one keeps the normative argument, this one the institutional record. |
 | `00-README-the-trustworthy-firm.md` | 104 | Internalities, commitment devices, conditioned money, the economics of advice and its corruption, and the measurement record on machines estimating individual preferences. |
 
 Each list gives a recommended reading order — arranged as an argument rather than
