@@ -1479,18 +1479,32 @@ estate does not merely advise on the option set, it *generates* it — which mak
 machine counsel a shift in who sets the agenda rather than a neutral improvement
 in advice.
 
-⚠ **NO PRICE QUOTATION MAY BE PRINTED YET.** A verification pass (2026-08-05)
-could not confirm *any* of the wording previously recorded for him. The
-"scientific developments that we cannot foresee" sentence attributed to p.186
-returns **zero hits anywhere** — no web result, no Google Books hit, no
-archive.org full-text hit — and the autonomy-versus-power line attributed to
-p.137 could not be retrieved either. Both entered our notes through secondary
-quotation and neither is currently supportable; treat them as unsourced until a
-copy of the book is read. The paraphrase above is safe because it rests on the
-four-estate structure and the chapter title, which are verified. All three
-archive.org scans are access-restricted and the ACLS e-book is subscription-
-gated, so this needs a library copy. **To acquire: Price 1965 — now a blocker,
-not a nicety.** A machine
+✅ **BLOCKER CLEARED (2026-08-07): both quotes verified by Google Books
+SearchWithinVolume on the 1965 Belknap scans — and one was a misquote, now
+corrected.** Quote A verified EXACTLY at **p.137**, on two independent
+digitizations: "the closer the estate is to the end of the spectrum that is
+concerned solely with truth, the more it is entitled to freedom and
+self-government" — with the citing caution that this is clause (1) of a
+numbered pair; clause (2) is "the closer it gets to the exercise of power, the
+less it is permitted to organize itself as a corporate entity, and the more it
+is required to submit to the test of political [responsibility]" — quote the
+pair or note the symmetry, since quoting (1) alone drops the structure Price
+built. It sits in ch. 5, "The Spectrum from Truth to Power" (begins p.120).
+Quote B's **page** was right and its **wording was wrong**: Price wrote "rather
+**more** than," not "rather than." Corrected text, safe to print: **"the main
+lines of our policy, over the long run, are likely to be determined by
+scientific developments that we cannot foresee, rather more than by political
+doctrines that we can now state"** (p.186) — a hedged comparative, not the
+absolute our version implied, which slightly *softens* the
+expert-estate-generates-the-option-set complication and should be characterised
+accordingly. **Provenance of the error found on our own shelf**: Miller's 1966
+*Duke L.J.* review (on disk) misquotes it identically, dropping "more" and
+interpolating "[public]" — our quote entered through Miller, not the book. A
+clean demonstration of the citation-faithfulness convention: verify against the
+source, never the reviewer. Price's own article-length statement of the
+four-estates material exists ("The Established Dissenters," *Daedalus* 94(1)
+1965, 84–116 — an abridged ch. 4, triple-confirmed, JSTOR); the book itself
+stays on the purchase list per the de-risk-not-replace rule. A machine
 counsel that generates options is not a neutral improvement in advice; it is a
 shift in who sets the agenda. Say so.
 

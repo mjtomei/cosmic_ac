@@ -160,6 +160,10 @@ quiet part itself.
 
 ## Price's own doctrine complicates our argument in a way worth taking seriously
 
+✅ **RESOLVED 2026-08-07 — both quotes verified via Google Books
+SearchWithinVolume; see the addendum below the retained text.** The 2026-08-05
+failure note is kept for the record:
+
 ⚠ **VERIFICATION FAILED, 2026-08-05 — none of the wording below is currently
 supportable and none of it may be printed.** A dedicated pass could not retrieve
 either quotation. The p.186 sentence returns **zero hits anywhere**: no web
@@ -395,3 +399,30 @@ Nick Caputo; Bobin Sampot (economics of science and innovation, hired because "s
 much of how we've governed science is being torn up in funding structures");
 SNF Agora Institute and its Center for Economy and Society; Neil Gross; Harold
 Pollack (Chicago).
+
+
+---
+
+## Price quotes resolved (2026-08-07)
+
+Google Books `SearchWithinVolume` on two independent 1965 Belknap scans:
+
+- **p.137 (Quote A): verified exactly as recorded**, on both scans. It is
+  clause (1) of a numbered pair — clause (2) gives the power-end inversion —
+  so quote the pair or note the symmetry. Ch. 5, "The Spectrum from Truth to
+  Power," begins p.120.
+- **p.186 (Quote B): page right, wording WRONG.** Price wrote "rather **more**
+  than," not "rather than." Corrected, printable: "the main lines of our
+  policy, over the long run, are likely to be determined by scientific
+  developments that we cannot foresee, rather more than by political doctrines
+  that we can now state." Adversarial check: the wrong wording returns 0 hits
+  in the scan; the corrected wording returns exactly 1, at p.186, with the
+  running foot "186 The Scientific Estate" visible.
+- **The misquote's source is Miller's 1966 *Duke L.J.* review, on our own
+  disk** — identical wording, dropped "more," interpolated "[public]",
+  footnote 10 "Id. at 186." Our quote entered through the reviewer, not the
+  book. Miller's other Price quotes (pp. 3, 15, 107, 162) are therefore also
+  suspect until scan-checked the same way.
+- Price's own article form of ch. 4: "The Established Dissenters," *Daedalus*
+  94(1) (1965) 84–116 (JSTOR; will NOT contain Quote A, which is ch. 5).
+  Book remains on the purchase list per the de-risk-not-replace rule.

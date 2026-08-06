@@ -47,12 +47,13 @@ Price's four estates — scientific, professional, administrative, political, al
 "the spectrum from truth to power," with autonomy varying inversely with
 proximity to power — is the governance principle the counsel arc lacks, and the
 complication is that the expert estate *generates* the option set rather than
-merely advising on it. ⚠ **Paraphrase only.** A verification pass (2026-08-05)
-could not confirm any Price quotation we hold: the "scientific developments that
-we cannot foresee" sentence attributed to p.186 returns **zero hits anywhere**,
-and the p.137 autonomy line could not be retrieved. Both came to us at second
-hand. Nothing of Price's may be quoted until a copy is read — the book is
-access-restricted on archive.org and gated on ACLS, so this needs a library.
+merely advising on it. ✅ **Quotes RESOLVED 2026-08-07** via Google Books SearchWithinVolume on the
+1965 Belknap scans: p.137 verified exactly (clause 1 of a pair — quote with its
+power-end twin); p.186's wording was a **misquote inherited from Miller's 1966
+review on this very shelf** — Price wrote "rather **more** than by political
+doctrines," a hedged comparative. Corrected wording in
+`notes/teles-loury-2026.md`; Miller's other Price quotes now suspect until
+scan-checked. Book stays on the purchase list (de-risk-not-replace).
 Deanship verified: Williams 1937–47, Mason 1947–58, Price from 1958 — **third
 dean, not the first**; "founding dean of the Kennedy School" is a 1966 renaming
 artifact.
@@ -439,3 +440,35 @@ serves no directory; most of Caputo's other work likewise declined).
   on how hard "academia is ideologically coded" can be pushed). **The works
   Teles actually cites (Gross & Fosse 2012; the 2013 book) are both closed —
   purchase/browser list.**
+
+
+## Alternative-presentations hunt landed (2026-08-07): directory at 103+ PDFs
+
+Olson in his own words without the book: `olson-1995-varieties-of-eurosclerosis`
+(the whole RDN theory restated by Olson, EUI), `olson-1986-appreciation-tests-
+criticisms` (his reply to the *Scandinavian Political Studies* symposium —
+image-only scan), `olson-1988-jep-productivity-slowdown` (the technology-
+adoption leg, 9 uses of "distributional coalitions"), plus the **verbatim
+page-anchored bridge quote** carried by a public-domain federal document
+(`chang-moncur-1984-wrrc-tr165…`, quoting RDN Implication 7 at p.74). The AER
+P&P lead was false — dropped after a full Crossref sweep. **Both IA scans of
+the 1982 book are print-disabled only, NOT borrowable** — buy used (~$10–20).
+
+PPBS cluster now has spine: the full JEC 1969 compendium vols 2–3 (public
+domain, 440pp, Schick p.817 / Wildavsky p.835 / Rivlin p.909),
+`schick-1970-budget-bureau-that-was` (his institutional-death narrative three
+years before "A Death in the Bureaucracy," OA at Duke), the GAO 1997
+PPBS/ZBB/MBO retrospective, Meyers 2017 (block-quotes "The Road to PPB"), and
+Bimber's **1992 MIT dissertation** (213pp, openly deposited — the book's
+argument in full; the book is now optional).
+
+Objections pinned: the complete publisher abstract of McKelvey 2025 (its
+empirical object is US Copyright Office rulemaking submissions, and its
+conclusion is two-sided — "common theory must address the challenge of AI"; do
+not deploy as a simple enclosure claim) plus four OA companion pieces by the
+same authors; Kitsikopoulos's own precis of ch. 5 from Springer's free front
+matter, with his three named interlocutors (Dutton 1984, MacLeod 1988, MacLeod
+EHR 1992) — read those before leaning on Lean's Engine Reporter; and Derthick &
+Quirk's own two-page *Brookings Review* statement with the counterfactual quote
+verbatim ("If economists had not made the case for procompetitive deregulation,
+it would not have occurred").
