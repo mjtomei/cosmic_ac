@@ -51,7 +51,17 @@ objection lane).
 **3. Cybernetics and the handover.** Beer's VSM (with Allende correcting Beer
 that System Five was not the president but the people — the coup as the failure
 mode); Runciman's LRB essay ("Corporations are another form of artificial
-thinking machine"); Davies (purchase list). Incoming: Espejo 1980 (Cybersyn at
+thinking machine"); **Davies now on disk in OA essay form** —
+`davies-2025-taming-unaccountability-machine-hypertext.pdf` (★★ ⚠, ranked by the
+Runciman standard), his fullest open statement of accountability sinks
+("when the feedback link is broken between the consequences of decisions and
+the body responsible for making them, learning is almost impossible") with the
+corporations-as-AI framing verbatim in the appended Back of Mind post
+("organisations, corporations and governments can be seen as 'artificial
+intelligences', in the sense that they're non human decision making systems").
+The objection carried in I.2/V.3c can now be quoted in Davies' own words rather
+than through Teles's secondhand account; the book stays on the purchase list as
+the citable form. Incoming: Espejo 1980 (Cybersyn at
 source), Ulrich's critique + Beer's reply — a paper proposing machine counsel
 in governance must carry that critique.
 
@@ -135,6 +145,6 @@ Excluding what the purchase list already covers (Kantorowicz 1957, List & Pettit
 
 11. **Housekeeping, not scholarship:** the Dartmouth scan is dirty OCR of a whole U.S. Reports volume and the Bentham has no text layer at all — every quotation from either must be proofed against the page image before it reaches print.
 
-Status: split 2026-08-07; 7 works on disk; citation-graph acquisitions pending
+Status: split 2026-08-07; 8 works on disk; citation-graph acquisitions pending
 (the aggregation theorems, the persona lineage, the moral-agency contest,
 Espejo/Ulrich, rotation empirics, reason-giving law, machine counsel practised).
