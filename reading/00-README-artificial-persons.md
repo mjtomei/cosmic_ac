@@ -220,3 +220,35 @@ getting-the-answers-right is substantive justification only, and his whole case
 is that it is not enough. Verify quotes against *P&PA* 53:102–168 before print.
 Howell's *Thinking About the Presidency* (Princeton 2013) is a purchase-list
 candidate — the book-length office-first argument.)
+
+
+## Citation-graph acquisitions landed (2026-08-07): directory at 45 PDFs
+
+The whole discursive-dilemma line is on disk (Pettit 2001 "Groups with Minds"
+ANU preprint; List & Pettit 2002; Kornhauser & Sager 1986 AND 1993, both
+published scans; Pettit's discursive-dilemma paper; List's Synthese survey;
+List 2021 Springer VoR; Pettit 2018; Björnsson & Hess VoR; Maitland 1903
+extracted from the public-domain Collected Papers; **bonus: Copp 2007 landed
+alongside Copp 2006** from the same archived author site). Two-bodies
+vocabulary: Schmitt chs. 1–3 excerpt (the "secularized theological concepts"
+passage verified), Lefort's chapter (Macey translation), Goffman's full 1956
+Edinburgh monograph, Bryson et al. VoR. Rotation + reason-giving + practice:
+Besley-Case, Ferraz-Finan, Frantz (personalisation), Geddes-Wright-Frantz,
+Stack's Chenery article (published YLJ), Mashaw's Fordham article (fetched per
+plan instead of the CUP book), Dietvorst, Logg, Bonaccio-Dalal, and the full
+122-pp ACUS *Government by Algorithm* report. Cybersyn: **Ulrich's 1981
+critique landed** (journal scan rebuilt from his own academia.edu page —
+image-only, no text layer) and **Medina's 2006 JLAS article** (Wayback of her
+old Indiana page). Version notes per file in the fetch log; notable: Copp 2006
+and Ulrich are image-only scans (OCR before quoting); Besley-Case is the NBER
+scan without text layer.
+
+**Failed, all honestly:** Velasquez 1983 + 2003 and Sepinwall 2016 (the
+moral-agency contest's counter-side — all three closed everywhere; browser/
+purchase list); Morgan 1988 (CDL lending only); Schauer 1995 "Giving Reasons"
+(JSTOR-only); **Rogin's article version precisely located** — "The King's Two
+Bodies: Abraham Lincoln, Richard Nixon, and Presidential Self-Sacrifice,"
+*Massachusetts Review* 20 (Autumn 1979) 553–73, JSTOR stable/25088986 —
+browser list; **Espejo 1980 is one human click away**: a full text exists on
+ResearchGate but its Cloudflare challenge defeated every automated route —
+the exact URL is in the fetch log and any human browser session should get it.

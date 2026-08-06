@@ -199,3 +199,27 @@ the tulpa thesis and rotation-as-regularisation bridged in one canonical move.
 **The machine-as-persona triangle** converged from three seeds: List 2021
 (support), Bryson-Diamantis-Grant 2017 (objection), Okumura 2023 (development) —
 cite together.
+
+
+## Citation-graph acquisitions landed (2026-08-07): directory at 35 PDFs
+
+The complete corrections record is on disk: Beheim et al. (LSE accepted
+manuscript — **the oa_hint claiming the Nature version is free was wrong**;
+note the accepted title reads "determines" where the published reads
+"determined"), Bendixen 2023 (Cambridge VoR), Lightner 2023 (Aarhus VoR),
+the Purzycki-team methods critique (SocArXiv preprint), the Whitehouse 2022
+retake (Oxford ORA VoR, 44pp), Watts 2015 and Lang 2019 and Laurin 2012 (all
+publisher VoR via Europe PMC), van Elk 2015, Gomes & McCullough (the author-
+hosted APA proof — the only OA route), the Many-Analysts reflection
+(preprint), Fitouchi 2025 (82-pp accepted MS), White's karma manuscript
+(docx→PDF, stamped), the full 65-pp BBS treatment of Norenzayan (target +
+commentaries + response), and Okumura 2023 (Wiley VoR). Observability/
+panopticon empirics: Bradley 2018, **Ariel 2017** (the "paradoxical effects of
+self-awareness of being observed" multisite — note: *not* "Contagious
+Accountability"), **Yokum's PNAS DC null** (2,224 officers), and the Campbell
+systematic review (Lum 2020). The symmetry answer now has its measurement
+record, and it must carry the DC null honestly.
+
+Version cautions: several items are accepted manuscripts or preprints of
+paywalled VoRs — each file's provenance is stamped or noted; verify
+quotations against the published version before print where flagged.
