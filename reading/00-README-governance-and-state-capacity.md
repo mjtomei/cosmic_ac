@@ -29,10 +29,20 @@ Same institutional object; *distribution* named as the reform.
 
 ## The five clusters
 
-**1. Manufacturing a governing class.** The Littauer gift and the 1937 opening
-with no students; Don K. Price (dean from 1958, *not* the first — Williams 1937,
-Mason 1947) and *The Scientific Estate* (1965); the 1969 MPP and the Ford
-Foundation programme that built eight policy schools on a shared analytic core.
+**1. Manufacturing a governing class.** The Littauer gift and the 1937 opening;
+Don K. Price (dean from 1958, *not* the first — Williams 1937, Mason 1947) and
+*The Scientific Estate* (1965); the 1969 MPP and the Ford Foundation programme
+that built eight policy schools on a shared analytic core.
+
+The three *Crimson* pieces are on disk and sharpen the record. The gift is
+$2,000,000 from Lucius Nathan Littauer '78, announced 11 December 1935, standing
+up "the thirteenth graduate school of the University." The 1937 opening is
+better than "with no students" — it opened that way **deliberately**: a
+three-month session from 1 March in which the faculty sat with "fifty prominent
+officials drawn from federal, state and" local government. The school's first
+act was to convene practitioners rather than to teach, which is the
+supply-of-counsel reading of its founding, in its own words, at the time. The
+MPP launched July 1969 with **21 students**.
 Price's four estates — autonomy varying inversely with power — is the governance
 principle the counsel arc lacks. His p.186 is the complication: policy is
 "determined by scientific developments that we cannot foresee," so the expert
@@ -84,4 +94,41 @@ risks "pull[ing] out where the actual discretion and judgment are in
 organizations," so we need "a sense of what are the essentially human tasks in
 governance." Pair with Davies, *The Unaccountability Machine* (2024).
 
-Status: opened 2026-08-05; acquisition sweep running; ranking pass to follow.
+## What is on disk
+
+**33 works, all retrieved and verified** (2026-08-05, 4-agent sweep; page-1
+titles checked against filenames, not trusted from the fetch reports). Both
+priority targets landed: **Frischmann 2005** (115pp, the Minnesota Law Review
+version) and **Olson 1996** (the published *JEP* text, which had blocked twice —
+AEA serves it as a browser download, so `expect_download()` was needed; the
+technique is reusable for other AEA articles).
+
+Three files are browser renditions rather than publisher PDFs, and it matters
+for quoting: `teles-2013-kludgeocracy` and `teles-2015-upward-redistribution`
+are Wayback captures of *National Affairs* with the archive banner on page 1
+(no page numbers — cite by section), and `moynihan-2025-rescuing-state-capacity`
+is a rendition of the Wiley full-text HTML because Cloudflare blocks the
+publisher PDF here; it is complete (18pp, *JPAM* 44(2):364–378) but not the
+publisher's pagination.
+
+Two are scans. `shapiro-2001-patent-thicket` has **no text layer at all** — it is
+readable but not greppable, and needs OCR before any search over it counts as
+evidence of absence. `hall-ziedonis-2001-patent-paradox` has a scanned cover
+page and text throughout the rest.
+
+Filename corrections found by reading the documents: `yackee-2022-…` is
+**Yackee & Yackee 2024** (*Regulation & Governance*, online 7 Sep 2024);
+`gutierrez-philippon-2018-institutional-drift` is the NBER working paper titled
+"How European Markets Became Free," the earlier title of the published
+comparison paper; `hsieh-moretti-2019-housing-constraints` is the **working
+paper** (NBER 21154), not the *AEJ:Macro* version.
+
+**Still missing, and the sweep did not attempt them** — books and paywalled
+back-numbers needing a purchase or a browser: Schick, "A Death in the
+Bureaucracy" (*PAR* 1973, the PPBS obituary); **Olson 1982, *The Rise and
+Decline of Nations*** (★★★ priority — it is the objection that operates at the
+same level as our own claim); Price, *The Scientific Estate* (1965; only
+Miller's 1966 *Duke L.J.* review is on disk); Davies, *The Unaccountability
+Machine* (2024); Rivlin; Wildavsky; and the OTA closure appropriation line item.
+
+Status: opened 2026-08-05; acquisition complete; ranking pass running.
