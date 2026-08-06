@@ -44,6 +44,27 @@ intelligence — and with the ability to act in their own interest. *(New text. 
 evolutionary-theory argument lives here: appeal to the currently-accepted higher
 power, correcting its misreading as license for bad behavior. ⟨indirect⟩)*
 
+**The premise has a published, independent statement — use it instead of
+asserting.** Teles, in the same podcast (~35:16): "in some sense, **the
+corporation is a form of artificial intelligence**… the whole point of the
+corporation is that you're going to divide up tasks that could have in an early
+period been in one person's head, and put them into an organizational structure
+that then has to coordinate — and then the overall entity of the corporation will
+be making decisions, and then we talk about it like an **artificial person**.
+That's an old line from law." He credits Dan Davies, *The Unaccountability
+Machine: Why Big Systems Make Terrible Decisions — and How the World Lost Its
+Mind* (Profile 2024 / Chicago; handle verified via OpenLibrary), whose frame is
+Stafford Beer's Viable System Model and the idea of **accountability sinks** —
+structures that make decisions no person made and no person can be held to. This
+is I.2's premise arriving from management cybernetics rather than from computing,
+and building on it is cheaper than arguing it. The lineage also runs straight
+into the Hayek-criterion cluster, since Beer's Project Cybersyn is the
+socialist-calculation debate built in hardware. **Carry the cut against us in
+the same breath** (it is the same objection V.3c holds): if distributing
+cognition across an organisation reliably produces accountability sinks, our
+apparatus is a candidate sink rather than an escape from one. Davies states it
+better than a critic would. **To acquire: Davies 2024 — priority, no OA copy.**
+
 **I.3 The pull-forward.** The mutual bootstrap: we give machines abilities we don't
 understand; they return the same. As machine intelligence and interconnect grow to
 dominate the world computer's capacity, the machine begins pulling the humans
@@ -82,6 +103,18 @@ claim, missing markets, moral-obligation extension).
 (M1 / R1 / Etched), what binds it (competence, reuse-as-convention literature,
 subjugation proxy, wanting-deficit, embargo natural experiment + Figure 2), what
 unbinds it (legibility, best-story).
+
+  **The bound-by-complexity mechanism has a published statement in another
+  domain, and the term came from ours.** Teles's "Kludgeocracy in America"
+  (*National Affairs* 17, Fall 2013): "**complexity is the friend of the
+  organized and well-resourced**," because complexity "so thoroughly obscures the
+  actual mechanism of political action that it is difficult to mobilize against
+  it." Substitute *toolchain* for *policy* and that is this section's argument —
+  bound by competence and encoding, unbound by legibility — published by someone
+  else, in policy, in 2013. Teles took "kludge" *out of programming* to get
+  there, so bringing it back is a round trip rather than a borrowing, and it lets
+  a published author carry the framing at no cost to us. Developed in V.3c, which
+  also states where his failure mode (extraction) differs from ours (omission).
 
   **Candidate additions — "doing the impossible" (Matthew, 2026-07-29;
   handles verified 2026-07-29 unless flagged).** The existing defector trio is
@@ -941,6 +974,47 @@ building more are the *same* programme once the object is right: building expand
 the abundant set, which expands what can be wanted without conflict. V.6 should
 say that rather than reconciling two positions it does not actually hold.
 
+**(d) The objection that motivated cognition is the engine, not the bug — and
+our answer.** Teles, ~03:59: "Science requires conflict… I actually think a
+certain degree of **motivated cognition** where we have people who have an
+emotional or intellectual **beef where they want to actually go and check your
+citations and rerun your model**… And where that's lacking, it's very easy to
+slip into a lot of easy conclusions that don't get checked." His worked example
+(~11:38) is a prize-winning history of colonial gun ownership whose sources
+proved "dodgy and problematic," which ideologically diverse historians would have
+caught sooner (almost certainly Bellesiles's *Arming America*, 2000 — he does not
+name it; **verify before citing**). This is the same phenomenon Kahan treats as
+pathology, read as function: Kahan's motivated reasoners resist
+identity-inconvenient conclusions, Teles's motivated reasoners audit *other
+people's*. Both hold, and together they say motivated cognition is **distributed
+error-detection** — costly individually, valuable at population level. It is
+load-bearing here, because removing it is not obviously an improvement, and any
+machine-counsel argument owes an account of what replaces the auditing function.
+
+⟨M⟩ The answer is that the auditing function does not require the adversary to be
+a different person. If you are sufficiently intellectually humble you can review
+your own model adversarially — and, generally, **machine intelligence can inhabit
+different points of view and perform that adversarial review for a single
+human.** Teles's mechanism needs someone with a motive to check your citations
+and rerun your model; a machine can be *instructed* to have that motive, and to
+hold several incompatible ones at once. Loury states the same requirement from
+the other side (~06:30): truth comes "through **competitive disputation** among
+people who are disciplined and skilled," and without differing orientations there
+is not "sufficient **dissonance and conflict**" to generate it — which is the
+*coherence* work's suppression-of-idea-variance thesis stated independently by an
+economist, and useful precisely because it is not ours.
+
+**The honest limit is motive versus capability**, and it should be stated rather
+than finessed: Teles's adversary *wants* to find the error; a simulated adversary
+is instructed to. Whether instructed adversarialism is as searching as the
+motivated kind is an empirical question. The published debate-as-alignment line
+(Irving, Christiano & Amodei, "AI safety via debate," 2018 — handle now verified,
+PDF on disk in the governance directory) is the same wager made by others first.
+And Kahan still applies downstream: the human deciding whether to *accept* the
+adversarial review is motivated even if the reviewer is not — which is the belief
+layer again, and where the selection argument above answers, since it is
+decisions and not beliefs that have to move.
+
 **V.3b The trustworthy firm — deploying preference-knowing intelligence without
 eroding freedom (Matthew, 2026-07-30).** This is the constructive answer to the
 axiological/paternalism problem the whole Movement circles: suppose an
@@ -1172,6 +1246,106 @@ from the counsel directory; cross-linked both ways).
   throttling limited coverage — only Kleinberg-Mullainathan-Raghavan surfaced);
   worth a dedicated later pass. Robo-advising empirics: D'Acunto-Prabhala-Rossi
   (*RFS* 2019).
+
+**V.3c Counsel, manufactured and withdrawn — the institutional record.**
+New section, supplying the historical evidence that V.3a and V.3b argue on top
+of. Sources: Loury & Teles, *The Glenn Show*, 29 Jul 2026
+(`reading/notes/teles-loury-2026.md`); the directory
+`reading/00-README-governance-and-state-capacity.md`. The whole section is
+[REAL] — it is a record, not a prediction, and it is the strongest evidence the
+counsel arc has, because **the counsel-gap thesis has already been believed,
+funded, and acted on in living memory.**
+
+**The claim was made, with money.** Lucius Nathan Littauer gave Harvard
+$2,000,000 on 11 December 1935 to found what the *Crimson* called "the
+thirteenth graduate school of the University," and the institution's own history
+says he "backed his vision of a school for **a new professional governing
+class**." The 1937 opening is the detail that carries the argument: the school
+opened on 1 March **deliberately without students**, running a three-month
+session in which the faculty sat with "fifty prominent officials drawn from
+federal, state and" local government. Its first act was to convene practitioners,
+not to teach — the supply-of-counsel reading of its founding, stated at the time,
+by itself. The MPP followed in July 1969 with 21 students, and the Ford
+Foundation then replicated the analytic core across eight schools. Teles's
+account of what it was *for* — "systems analysis… advanced microeconomics… the
+basic analytical plumbing" — is a diagnosis of the Great Society as **a state
+that lacked analytical capacity**. That is our thesis, in twentieth-century
+American form, and because it was acted on it is evidence rather than analogy.
+
+**And then it was withdrawn, with a date and a line item.** The Employment Act
+of 1946 wrote the Council of Economic Advisers into statute; the OTA Act of 1972
+(Pub. L. 92-484, 86 Stat. 797) put the counsel-gap diagnosis into law. OTA was
+closed on 29 September 1995: $21,970,000 and 143 staff replaced by $3,615,000
+"to carry out the orderly closure." House committee staff fell 39% in a single
+year and never recovered. **CBO survived flat, and the reason is the finding:
+its numbers are procedurally required.** Counsel that is not structurally
+demanded gets cut — which is the same shape as the paper's central claim, since
+optimization that nobody is required to buy is also not supplied. Standing
+counsel for Congress now runs about $1.02bn/yr, against the analytic capacity of
+the interests it faces.
+
+**Why it did not deliver, and what that costs our argument.** Teles's diagnosis
+is that the model assumed the *end of ideology* — that once the analysis
+improved, decisions would follow, because the disagreements were technical rather
+than fundamental. That assumption did not hold, and any argument that machine
+counsel improves governance has to say why it does not inherit the same defect.
+**The honest answer is about distribution, not quality.** The Kennedy School's
+counsel was built for the state, not for the citizen, so it improved the
+apparatus and left the Downs asymmetry exactly where it was. Which is why the
+second pole is the exhibit: Teles on the school he is building now — "we want to
+**serve something like the entirety of the governing class of the United
+States**." Ninety years apart, the same institutional object, with *distribution*
+named as the reform by the person building it. This is the cleanest single
+exhibit the counsel arc has, and it should be quoted as a pair.
+
+**Price's complication, kept.** Don K. Price — dean from 1958, *not* the first
+(Williams 1937, Mason 1947) — argues in *The Scientific Estate* (1965) that
+autonomy varies inversely with power across four estates. That is the governance
+principle the arc otherwise lacks, and his p.186 cuts at us: policy is
+"determined by scientific developments that we cannot foresee," so the expert
+estate does not merely advise on the option set, it *generates* it. A machine
+counsel that generates options is not a neutral improvement in advice; it is a
+shift in who sets the agenda. Say so.
+
+**Two objections to carry, both from people better placed than a critic.**
+First, Teles: the risk of automating cognition is that "we're going to **pull out
+where the actual discretion and judgment are in organizations**," so we need "a
+sense of what are the essentially human tasks in governance." Second, Davies's
+*accountability sink* (see I.2): if distributing cognition across an
+organisation reliably produces decisions no person made and no person can be held
+to, then this paper's apparatus is a candidate accountability sink rather than an
+escape from one. The answer available to us is narrow and should not be
+overclaimed: **legibility of the reasoning** is the one thing the machine version
+can do that the corporate version cannot. That is a real difference and it is not
+a refutation.
+
+**The bridge to the technical argument, assembled not claimed.** Teles's
+"Kludgeocracy in America" (*National Affairs* 17, Fall 2013) states our mechanism
+in the policy domain: "policy complexity is valuable for those seeking to extract
+rents… complexity so thoroughly obscures the actual mechanism of political action
+that it is difficult to mobilize against it," and flatly, "**complexity is the
+friend of the organized and well-resourced**." Substitute *toolchain* for
+*policy* and that is II.4's herd — bound by competence and encoding, unbound by
+legibility — published by someone else in 2013. **And the word made a round
+trip:** Teles took "kludge" out of programming to describe policy, so bringing it
+back to computing is cheap, honest, and lets a published author carry the
+framing. His 2015 precursor sharpens Olson for us: rent-seeking succeeds not only
+through "unbalanced incentives to organize" but because "many of the most
+powerful forms of upward-redistributing rent-seeking take place in **obscure
+decision-making contexts**" — *obscurity*, not merely diffuseness, which is the
+better version of our claim too. Where we differ from him is worth stating in one
+line: his failure is **extraction** (incumbents capturing rules to collect
+rents), ours is **omission** (a non-rival good nobody supplies because no one
+captures its aggregate return). Same engine, sibling failure modes, different
+remedies. Per project convention the bridge to the technical half is **assembled
+from Olson 1982 + Frischmann 2005 + Teles 2013** and never claimed as novel;
+Frischmann's "An Economic Theory of Infrastructure and Commons Management" (89
+*Minn. L. Rev.* 917) is the closest published form of our own technical claim,
+and a full-text grep finds 31 hits for "free rid" and **zero for "rent-seek"** —
+which is precisely the gap the assembly closes. Carry Lemley (83 *Tex. L. Rev.*
+1031) as the live objection: uninternalised positive externalities are the normal
+and desirable state of an information economy, so under-provision inferred from
+unappropriated spillover is not by itself a market failure.
 
 **V.4 The endgame: every device, any intelligence.** Once publicly available
 intelligence passes the competence bar and data is openly available, anyone's
@@ -1559,6 +1733,23 @@ Candidate fifth effort (from V.5's embedded question): a multi-agent SIMULATION
 demonstrating the negotiation/openness predictions — whether embodied-intelligence
 negotiation reaches more mutually agreeable outcomes than personally-vulnerable
 representatives. Would join Table A1 if Matthew commits to it.
+
+**Two strategy claims worth stating in the phasing, from someone who made the
+same choice and can say why** (Teles, same podcast). **Greenfield over infill
+(~39:58–40:46):** "It's really hard to change any old institution — whether it's
+a government or a firm or a university. It's always easier to find some **green
+field**… doing **infill housing is a lot harder** than saying let's go find some
+place out in the green field," plus the policy corollary of *encouraging* people
+to find them. That is exactly the choice the roadmap's phasing faces — whether to
+reform an incumbent toolchain or to stand up a parallel one and let it eat the
+old pieces slowly — and VI.2 already takes the greenfield side, so it should say
+that the choice is deliberate and that a practitioner argues for it. **Long
+horizons (~26:08):** "The most important work gets done when somebody starts
+something because they really believe in it and **they just keep going at it
+until the opportunity opens up**. A lot of people have to do things for a very
+long time before the world's ready for it." This is the honest register for the
+program: the four committed efforts are not a bet that the opportunity is open
+now.
 
 ---
 
