@@ -287,8 +287,8 @@ wrong, and all of them would survive into a draft unnoticed.
 
 | File | The trap |
 |---|---|
-| `hsieh-moretti-2019-housing-constraints` | This is the **NBER working paper**, which reports 8.9% of GDP and ">50% of aggregate growth." **CONFLICT TO RESOLVE:** the ranking agent reports the published *AEJ:Macro* figure as 3.7%, while `notes/economics-is-radical.md` records the widely-cited published figure as 36% (1964–2009). Both cannot be right. Resolve against the published article before any number is used. |
-| `greaney-2026-comment-hsieh-moretti` | Filename says 2026; the document is dated **October 2023**. |
+| `hsieh-moretti-2019-housing-constraints` | This is the **NBER working paper**, which reports 8.9% of GDP and ">50% of aggregate growth." **CONFLICT RESOLVED 2026-08-05** against Greaney's opening paragraph: the *published AEJ:Macro* claim is **3.7% higher GDP in 2009**. The familiar "36% of aggregate growth, 1964–2009" is the working-paper framing of a *different quantity*. Never quote this file's numbers as "Hsieh and Moretti (2019)." |
+| `greaney-2026-comment-hsieh-moretti` | Filename says 2026; the document is dated **October 2023**. Read the finding precisely: the *replication* of HM's own code predicts a **decrease**, but Greaney's *amended* model gives **+0.02%**, which he says is "consistent with HM's conclusion." The direction survives; the magnitude collapses. Do not report this as a reversal. |
 | `yackee-2022-ossification-states` | Published **2024**, two authors, *Regulation & Governance*. OCR'd scan — verify quoted strings character by character. |
 | `hall-ziedonis-2001-patent-paradox` | Actually **Hall & Ham, NBER WP 7062 (1999)**; its §4.4 is labelled "Preliminary Results." Cite *RAND* 32(1) 2001 for numbers. |
 | `boldrin-levine-2013-case-against-patents` | Actually **St. Louis Fed WP 2012-035A**, not the *JEP* 27(1) 2013 version. |

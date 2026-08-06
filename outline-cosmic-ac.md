@@ -207,6 +207,34 @@ correlated-failure bullet does NOT land here — it lands in V.2 pluralism.)*
 **IV.1 Precedent: open source already solved this.** Current §5 whole (5.1 fitness,
 5.2 EDA breach, 5.3 silicon commons + accelerator wall + TSMC capacity-is-a-choice).
 
+  **A measured 19th-century performance commons — and the objection that comes
+  with it.** Bessen & Nuvolari, "Diffusing new technology without dissipating
+  rents" (*Industrial and Corporate Change* 28(2), 2019), read 2026-08-05, is
+  simultaneously the best supporting evidence the reading has turned up and the
+  sharpest challenge to this Movement. **Support:** Lean's *Engine Reporter* is
+  literally a performance commons — monthly publication of engine duty, technical
+  detail and operating procedure, launched to diffuse best practice — and it
+  coincides with Cornwall taking world leadership in steam. The heaviest
+  reporters earned the highest returns; Cornish steam patents fell below 1% of
+  the national total while duty rose; across three cases royalties ran 1–3% of
+  operating profits against 78–79% productivity gains. And their binding
+  constraint is ours, in 1830s clothing: "the limited supply of people with the
+  practical knowledge and skills to build, install, operate, and maintain the new
+  technologies" — effort and competence, not physics. This is the published model
+  of *why* sharing does not destroy returns, which §5 currently argues from
+  fitness rather than from a model. **The objection:** their mechanism says
+  sharing survives only *while* that skill constraint keeps old and new
+  technology coexisting, and it predicts sharing ends when the constraint eases —
+  after 1833, power weaving was all patented. Our whole bet is that cheap machine
+  intelligence eases exactly that constraint, so on their model we should predict
+  collapse back into proprietary exclusion, not a durable commons. **This is the
+  strongest published argument against the paper's cure and it must be answered
+  in IX/limits rather than cited only for its support half.** The answer probably
+  has to be that machine intelligence does not merely relieve the skill scarcity
+  but changes who can *hold* the resulting competence — a commons whose competence
+  is copyable is not the same object as one whose competence is scarce labour —
+  but that is a claim we would owe an argument for, not a move we can assume.
+
 **IV.2 Machine intelligence multiplies the commons.** Current §6: KernelBench, AI-
 plus-pooling compounds, the self-application record, the evidence record, the fork.
 **The break-off argument inverts here per the new frame:** privately captured, the
@@ -1274,10 +1302,18 @@ American form, and because it was acted on it is evidence rather than analogy.
 
 **And then it was withdrawn, with a date and a line item.** The Employment Act
 of 1946 wrote the Council of Economic Advisers into statute; the OTA Act of 1972
-(Pub. L. 92-484, 86 Stat. 797) put the counsel-gap diagnosis into law. OTA was
-closed on 29 September 1995: $21,970,000 and 143 staff replaced by $3,615,000
-"to carry out the orderly closure." House committee staff fell 39% in a single
-year and never recovered. **CBO survived flat, and the reason is the finding:
+(Pub. L. 92-484, 86 Stat. 797) put the counsel-gap diagnosis into law in so many
+words — existing agencies are "not designed to provide the legislative branch
+with adequate and timely information," so Congress must "equip itself with new
+and effective means for securing competent, unbiased information." OTA was closed
+on 29 September 1995 after 23 years: $21,970,000 and 143 staff replaced by
+$3,615,000 "to carry out the orderly closure," with records, library and the Unix
+system transferred to the Architect of the Capitol. The function was withdrawn,
+not replaced. The staff series is a clean curve — 10 (FY1974) → peak 164 (FY1978)
+→ 143 every year FY1985–95 → zero — and the legislature cut its own counsel more
+broadly in the same moment: House committee staff fell 39% in one year, 2,046
+(1994) → 1,246 (1995), and never recovered; CRS went 868 (FY1980) → 609 (FY2015);
+GAO 5,476 (FY1978) → 3,677 (FY1996). **CBO survived flat, and the reason is the finding:
 its numbers are procedurally required.** Counsel that is not structurally
 demanded gets cut — which is the same shape as the paper's central claim, since
 optimization that nobody is required to buy is also not supplied. Standing
@@ -1300,10 +1336,18 @@ exhibit the counsel arc has, and it should be quoted as a pair.
 
 **Price's complication, kept.** Don K. Price — dean from 1958, *not* the first
 (Williams 1937, Mason 1947) — argues in *The Scientific Estate* (1965) that
-autonomy varies inversely with power across four estates. That is the governance
-principle the arc otherwise lacks, and his p.186 cuts at us: policy is
-"determined by scientific developments that we cannot foresee," so the expert
-estate does not merely advise on the option set, it *generates* it. A machine
+autonomy varies inversely with power across four estates — "the closer the estate
+is to the end of the spectrum that is concerned solely with truth, the more it is
+entitled to freedom and self-government" (p.137). That is the governance
+principle the arc otherwise lacks, and his p.186 cuts at us: "the main lines of
+our policy, over the long run, are likely to be determined by **scientific
+developments that we cannot foresee**, rather than by political doctrines that we
+can now state" — so the expert estate does not merely advise on the option set,
+it *generates* it. **Both quotes and both page numbers are so far confirmed only
+through secondary quotation** (the book is lending-restricted); a copy must be
+obtained and the pages checked before either is printed. If the pages cannot be
+confirmed, quote without page numbers or drop the quotation and keep the
+paraphrase. A machine
 counsel that generates options is not a neutral improvement in advice; it is a
 shift in who sets the agenda. Say so.
 
@@ -1338,7 +1382,17 @@ line: his failure is **extraction** (incumbents capturing rules to collect
 rents), ours is **omission** (a non-rival good nobody supplies because no one
 captures its aggregate return). Same engine, sibling failure modes, different
 remedies. Per project convention the bridge to the technical half is **assembled
-from Olson 1982 + Frischmann 2005 + Teles 2013** and never claimed as novel;
+from Olson 1982 + Frischmann 2005 + Teles 2013** and never claimed as novel —
+**but one of those three legs is not yet on disk.** The governance directory
+holds Olson *1996* ("Big Bills Left on the Sidewalk"), which is superb for the
+argumentative template — measure the gap to potential, then eliminate endowments,
+technology access and marketable human capital one at a time until only
+coordination remains, which is II.1's "the gap is effort, not physics" one level
+up, and its migration natural experiments are the precedent for our own embargo
+and tapeout experiments. It is *not* the distributional-coalitions argument the
+bridge leans on. Either acquire *The Rise and Decline of Nations* or re-anchor
+the citation to 1996 in the text; do not print the 1982 cite while the shelf
+cannot support it.
 Frischmann's "An Economic Theory of Infrastructure and Commons Management" (89
 *Minn. L. Rev.* 917) is the closest published form of our own technical claim,
 and a full-text grep finds 31 hits for "free rid" and **zero for "rent-seek"** —

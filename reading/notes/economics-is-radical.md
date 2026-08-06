@@ -119,10 +119,26 @@ the weight. State the absence once, quietly, if at all.
   the *normal and desirable* state of an information economy, so under-provision
   inferred from unappropriated spillover is not by itself a market failure. §9
   should carry this.
-- **Do not cite the abundance movement's headline number.** Hsieh & Moretti's
-  claim that housing constraints "lowered aggregate US growth by 36 percent from
-  1964 to 2009" is formally contested — Greaney (2026) documents code errors and
-  finds the corrected counterfactual runs the other way.
+- **Do not cite the abundance movement's headline number** — and note that the
+  first version of this bullet got the contest wrong in two ways, corrected
+  2026-08-05 against Greaney's actual text. **What is contested, precisely:**
+  the *published* Hsieh & Moretti (2019, *AEJ:Macro*) claim is that easing
+  land-use restrictions in three high-productivity cities "would have increased
+  GDP in 2009 by 3.7%." The widely-quoted "lowered aggregate US growth by 36
+  percent from 1964 to 2009" is the earlier working-paper framing of a
+  *different* quantity (growth over a period, not the GDP level in 2009); the
+  NBER WP on disk here reports 8.9% of GDP and ">50% of aggregate growth."
+  Never quote the working paper's numbers as "Hsieh and Moretti (2019)."
+  **What Greaney actually shows**, and the distinction matters: a straight
+  replication using HM's own model and data predicts deregulation would
+  *decrease* output, traced to errors in their code; separately, HM's model is
+  unit-dependent — results change with the arbitrary choice of population unit —
+  so it is not well-specified. But his *amended* model gives **+0.02%**, which he
+  states is "consistent with HM's conclusion that relaxing land-use regulations
+  can increase output," only two orders of magnitude smaller. So the corrected
+  counterfactual does **not** run the other way; the failed replication does.
+  The honest summary is that the direction survives and the magnitude collapses.
+  (Comment dated October 2023 despite the 2026 filename.)
 - Yackee & Yackee (*Regulation & Governance*) survey 1,460 agency leaders across
   50 states and find agencies issue many rules quickly, so ossification fears
   "may be misplaced." Empirical counter-evidence to the procedure story.
