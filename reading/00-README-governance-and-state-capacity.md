@@ -362,3 +362,38 @@ the founding paper of the literature Bessen-Nuvolari extends), von Hippel 1987
 Merges 1996 (industries privately building collective institutions to escape
 rights deadlock — prior art for the cure), Dixit & Olson 2000 (voluntary
 coalitions under-provide even at negligible transaction costs).
+
+
+## Citation-graph acquisitions landed (2026-08-06): 28 of 30
+
+The acquire-list from `00-CITATION-GRAPH.md` is on disk — the directory now
+holds **68 PDFs**. All verified (magic bytes + page-1 match). Everything from
+the seminal tier landed in its **published** version: Stigler 1971 (BFI-hosted
+JSTOR scan), Arrow 1962 (official NBER chapter), Baumol 1990, Wittman 1989
+(recovered via Wayback of an author upload — no live OA exists), Scotchmer 1991
+and Ansolabehere 2003 (both via the AEA forced-download technique), Dixit-Olson
+2000, Levin et al. 1987 (the full BPEA version with the Gilbert/Griliches
+comments), Heller-Eisenberg 1998, Merges 1996, Allen 1983, von Hippel 1987,
+Becker 1983, McCubbins-Noll-Weingast 1987, Yackee & Yackee 2009 (the federal
+companion to the 2024 state study), Hacker 2004, Duranton-Puga 2023 and
+Callander et al. 2022 (both published Econometrica typescripts from author
+pages), Elhauge 1991, Hinterleitner 2023 (CC-BY), Kärnä et al. 2022 (published
+T&F OA), Goodman-Lehto 2023 (published Springer version via PhilPapers/Wayback),
+Holmes-Schmitz 1995, Bessen 2020 (BU accepted manuscript), Bessen-Maskin 2009
+(**image scan — OCR before quoting**), plus NBER working-paper versions of
+Akcigit-Baslandze-Lotti, Akcigit-Ates, Autor et al., Lancieri-Posner-Zingales,
+and Brynjolfsson-Rock-Syverson.
+
+**Version corrections found while fetching:** Galasso & Schankerman is **QJE
+130(1):317–369 (2015)**, not 129(4) 2014 as the graph agent recorded — the LSE
+cover sheet is authoritative. Five works are WP versions of later journal
+articles (noted per file above); cite accordingly.
+
+**The two failures are both legitimately closed, and both matter:**
+**McKelvey, Simon & Frizzera 2025** ("Generative AI and the information
+commons: controversy, copyright, and closure," *ICS* 29(6)) — the most
+on-thesis objection the graph found (commons *closure* driven by generative AI)
+— has no OA copy anywhere; the authors' 50-copy free-eprint link is exhausted.
+**Kitsikopoulos 2023** (the Cornish-case-favoring-patents chapter, Springer
+book) — needed before leaning on Lean's Engine Reporter — likewise closed, no
+repository copy. **Both go on the browser/purchase list.**
