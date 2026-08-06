@@ -39,3 +39,6 @@ analysis/s10/*/segments_*.jsonl
 analysis/s10/pangram_ch/
 __pycache__/
 *.pyc
+
+# Full third-party transcripts: quote from them in notes, never redistribute whole
+reading/notes/*-transcript.txt
