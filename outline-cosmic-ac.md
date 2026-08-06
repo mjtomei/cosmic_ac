@@ -1603,6 +1603,34 @@ with better marketing. The claim survives in the conditional form Matthew gave
 it: more offloading **if the competence is there**, and, implicitly, if the
 coupling is built.
 
+**"Shows its work" now has its own contest, and both sides arrived from
+Teles's own school (podcast fetch-rank pass, 2026-08-07).** Supporting, and
+filling the reason-giving gap squarely: Lazar, "Legitimacy, Authority, and
+Democratic Duties of Explanation" (forthcoming *Oxford Studies in Political
+Philosophy*; on disk) — publicity is "partly constitutive of legitimacy and
+authority," and the duty runs to **the political community that authorised the
+power**, not merely to the decision subject: "The powerful must be able to
+explain their decisions to we the people who authorise them to exercise power."
+That is Hobbes ch. 25's duty of counsel ("Rash, And Unevident Inferences … Are
+Repugnant To The Office Of A Counsellour") derived from authorisation itself,
+in top-standing modern form — the show-your-work claim inherits a published
+normative foundation. But carry his §VI with it: Lazar pre-empts the
+humans-cannot-explain-either move this section leans on, replying that it
+"presupposes a depressing view of our capacity for rational decision-making."
+**Against, and sharper: Caputo, "Administrative Law's Fourth Settlement: AI and
+the Scrutable State"** (Assistant Professor at Teles's Hopkins school; on
+disk) — requiring agencies to explain AI-assisted decisions in review-legible
+terms "has surface appeal" but machine reason-giving is **post-hoc
+storytelling**, and the right instrument is *audit*, not *explanation*. This is
+a sympathiser's objection aimed at the exact sentence the unifying claim rests
+on ("the first instantiation that can show its work"), and the honest response
+is probably concession-and-refinement: what the machine version can supply that
+the corporate tulpa cannot is not a faithful introspective narrative but an
+**auditable record** — logged inputs, checkable intermediate claims, rerunnable
+reasoning — which is closer to what Hobbes's "evident inference" duty actually
+demands, and closer to what V.3a(d)'s citation-audit practice already is. If
+the paper adopts that refinement, say Caputo forced it.
+
 **The bridge to the technical argument, assembled not claimed.** Teles's
 "Kludgeocracy in America" (*National Affairs* 17, Fall 2013) states our mechanism
 in the policy domain: "policy complexity is valuable for those seeking to extract
