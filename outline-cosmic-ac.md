@@ -1142,11 +1142,24 @@ produces it where the lie is withdrawn and nothing supplies the seeing.
 **Honest tensions, carried here rather than hidden.** (i) The watcher being
 *real* sharpens tension (a) above: a literal instantiation of "directly watching
 you as an individual" has a dystopian twin, and its name is Bentham's panopticon.
-The difference between counsel and panopticon is who the seeing serves — the
-watched person or the watcher's owner — which is the same
-governance-not-technology line the surveillance tension already draws, and V.3b's
-firm design (user control, balance-sheet coupling) is where the governance
-lives. (ii) The mechanism requires that the structure the lie compressed is
+**The response (Matthew, 2026-08-06):** ⟨M⟩ the panopticon worry **requires a
+power imbalance — which is what the solution is trying to address** in our
+case. ⟨/M⟩ The panopticon's defining feature is not the watching but the
+*asymmetry*: the inspector sees without being seen, and the watched cannot watch
+back. Our architecture is symmetric legibility — and more than symmetric, since
+V.3a's own equilibrium puts the *strongest* alignment demand on whoever holds
+the most power, so the powerful are the most-watched parties in the system, not
+the watchers. The panopticon is therefore not the twin of machine counsel; it is
+the *asymmetric special case*, and the whole program is the removal of the
+asymmetry. This response is published in nearly this form: Brin, *The
+Transparent Society* (1998 — VERIFY handle) argues transparency is benign
+precisely when it is reciprocal ("watching the watchers"), and Mann's
+*sousveillance* line (Mann, Nolan & Wellman, *Surveillance & Society* 1(3),
+2003 — OA journal, fetchable) names the inversion — seeing from below. What
+remains ours to keep honest: symmetry is a *design property that must be
+defended*, not a law of the technology — the same system with an owner and a
+one-way mirror is exactly Bentham's building, which is why V.3b's firm design
+(user control, balance-sheet coupling) is where the governance lives. (ii) The mechanism requires that the structure the lie compressed is
 actually there to see — that goodness *does* pay off legibly on observable
 horizons. Where it does not (and Olson's coalitions, above, are a standing
 counterexample on some horizons), counsel that honestly reports the payoff
