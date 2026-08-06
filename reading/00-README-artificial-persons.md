@@ -177,3 +177,46 @@ the tulpa thesis and rotation-as-regularisation bridged in one canonical move.
 **The machine-as-persona triangle** converged from three seeds: List 2021
 (support), Bryson-Diamantis-Grant 2017 (objection), Okumura 2023 (development) —
 cite together.
+
+
+## Podcast-named additions (2026-08-07 fetch-and-rank pass; entries in `00-RANKINGS.json`)
+
+- ★★★ ⚠ **`lazar-2024-democratic-duties-of-explanation.pdf`** (Seth Lazar,
+  forthcoming *Oxford Studies in Political Philosophy*; arXiv v4) — **gap 7
+  (reason-giving) filled squarely**: publicity as "partly constitutive of
+  legitimacy and authority," owed to the political community that authorised
+  the power, not merely to the decision subject — Hobbes ch. 25's duty of
+  counsel in top-standing modern analytic form. Flagged ⚠ because §VI
+  pre-empts the comparative move our argument leans on ("humans can't explain
+  either"): Lazar replies that this "presupposes a depressing view of our
+  capacity for rational decision-making." Engage, don't route around.
+- ★★★ **`howell-porter-wood-2020-presidential-performances.pdf`** — the
+  presidency-as-office gap filled with *measurement*: a validated 22-item
+  "presidentialism" scale — "how well a president measures up against **the
+  expectations of the institution**" — empirically distinct from approval.
+  The office's persona separated from the person, quantified. Caution:
+  all experiments on one president (Trump), MTurk panels, effects decay.
+- ★★ **`moe-howell-1999-unilateral-action-theory.pdf`** — presidential power
+  relocated from the man to the office (the Constitution as incomplete
+  contract).
+- ★★ **`hadfield-weingast-2012-what-is-law-coordination-model-usc-wp.pdf`** —
+  law's characteristic form (generality, impersonality, open public
+  reasoning, stability) derived from what decentralized coordination
+  requires; the formal backdrop for machine agents entering a normative order.
+- ★★ ⚠ **`hadfield-2026-democratic-matrix-normative-competence-webrender.pdf`**
+  (Hadfield, Trivedi & Hadfield-Menell, Knight First Amendment Institute) —
+  gap 6's applied half: AI agents will be actors in the normative order
+  regardless of intent, rule-encoding alignment cannot work on
+  contract-theoretic grounds (the contract is "inevitably, often optimally,
+  incomplete"). ⚠ for the footnote conjecture that making AI agents *better*
+  than humans at democratic order is "neither feasible nor desirable" —
+  an unargued flag from the best-credentialled person on this seam; print it
+  as a flag raised, not a case made.
+
+(Also from this pass: Lazar's "Governing the Algorithmic City" preprint was
+placed in `democratization-of-counsel/` — its object is who may govern through
+the machine, and its recap sentence is aimed at the Cosmic AC program:
+getting-the-answers-right is substantive justification only, and his whole case
+is that it is not enough. Verify quotes against *P&PA* 53:102–168 before print.
+Howell's *Thinking About the Presidency* (Princeton 2013) is a purchase-list
+candidate — the book-length office-first argument.)

@@ -397,3 +397,45 @@ on-thesis objection the graph found (commons *closure* driven by generative AI)
 **Kitsikopoulos 2023** (the Cornish-case-favoring-patents chapter, Springer
 book) — needed before leaning on Lean's Engine Reporter — likewise closed, no
 repository copy. **Both go on the browser/purchase list.**
+
+
+## Podcast-named additions (2026-08-07 fetch-and-rank pass; entries in `00-RANKINGS.json`)
+
+The people named in the Loury–Teles episode, fetched and ranked by the standing
+rubric — podcast-named was explicitly *not* grounds for inflation, and two
+skips prove it (Pollack: publishes on substance-use treatment and crime policy,
+serves no directory; most of Caputo's other work likewise declined).
+
+- ★★★ **`daniels-2021-what-universities-owe-democracy.pdf`** — the complete
+  Project MUSE **open-access edition** (CC BY-NC-ND, 338pp). A primary
+  doctrine document for cluster 1's second pole: the president of the
+  university where Teles is building his school, stating the counsel-supply
+  obligation from the institution's side ("What links public policy to the
+  public interest are facts," p.134; "What is needed is openness with
+  guardrails," p.185). **Caution: Teles's constitutional gloss is NOT in the
+  book in those terms — attribute it to Teles.** Advocacy by an incumbent;
+  re-cite its numbers to primaries.
+- ★★★ ⚠ **`caputo-2026-administrative-law-fourth-settlement.pdf`** — Nicholas
+  Caputo (Assistant Professor at Teles's own school): the
+  "capability–accountability trap" with a three-settlement periodisation of
+  administrative law, and **an objection aimed at the sibling directories'
+  unifying thesis**: machine reason-giving as judicial-review currency is
+  "post-hoc storytelling"; he substitutes *audit* for *explanation*. A
+  sympathiser's objection — the strongest kind.
+- ★★★ ⚠ **`sampat-williams-2015-patents-follow-on-genome.pdf`** (NBER w21666;
+  published *AER* 109(1) 2019 — quote the published hedge "no quantitatively
+  important effect") — the cleanest available causal test of the anticommons
+  claim, on the human genome, finding **no effect of gene patents on follow-on
+  innovation**. Earns three the way Greaney does: a genuine objection to a
+  starred lane (Heller-Eisenberg → Shapiro). Scope caution: human genes only;
+  may test patent *breadth* rather than the anticommons as such.
+- ★★ **`azoulay-2017-nih-funding-private-patenting.pdf`** (cite the *ReStud*
+  86(1) 2019 version for numbers) — the measured answer to Karlson's ★★★
+  objection: $10M NIH → 2.3 net private patents, identified off study-section
+  rigidities.
+- ★★ **`gross-simmons-2007-social-political-views-american-professors.pdf`** —
+  the survey under the Gross line (n=1,471: 44.1% liberal, 46.6% moderate,
+  9.2% conservative — the moderate bloc equals the liberal bloc, a constraint
+  on how hard "academia is ideologically coded" can be pushed). **The works
+  Teles actually cites (Gross & Fosse 2012; the 2013 book) are both closed —
+  purchase/browser list.**
