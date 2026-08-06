@@ -1557,6 +1557,52 @@ that the corporate and constitutional versions cannot — the tulpa we have been
 running on humans could never show its work. That is a real difference and it is
 not a refutation.
 
+**The feedback answer (Matthew, 2026-08-07) — and it argues on Davies's own
+ground.** Davies' sharpest sentence, now quotable from his own OA essay
+(`reading/artificial-persons/davies-2025-taming-unaccountability-machine-hypertext.pdf`),
+is that "when the feedback link is broken between the consequences of decisions
+and the body responsible for making them, learning is almost impossible." The
+response: ⟨M⟩ **there is feedback in proportion to competence and integration
+into society — which links well-being. So it is an argument for more
+offloading, if the competence is there.** ⟨/M⟩ Unpacked: the accountability
+sink is not a property of artificial persons as such; it is a property of
+*low-competence, poorly-integrated* ones. A deciding structure that cannot model
+the consequences of its decisions (low competence) or does not experience them
+(insulated from the society it decides over) cannot close Davies' loop no matter
+how many humans it contains. An intelligence competent enough to trace its
+decisions to their consequences, and integrated deeply enough that its own
+well-being is coupled to society's outcomes, closes the loop *by construction*.
+The objection, properly read, is an argument for offloading to sufficiently
+competent, sufficiently integrated machine intelligence — and against exactly
+the half-artificial persons we run now.
+
+**The response inherits Davies' own framework rather than fighting it.** His
+diagnosis is cybernetic — unaccountability as "a failure to transmit and process
+some important kinds of information" — and so is the cure: competence is
+**requisite variety** (Ashby 1956, already surfaced beneath Beer in the
+citation graph: the controller must match the variety of the controlled
+system), and integration is the **feedback channel** Beer's whole apparatus
+exists to keep unbroken. The corporation is a low-variety artificial
+intelligence with a *deliberately severed* feedback link — limited liability is
+institutionalised feedback-breaking, accepted as the price of capital
+formation — so the sink is a design trade, not an inevitability, which is
+precisely what makes a differently-designed instantiation possible. V.3b's firm
+is the deployed instance of the cure: **balance-sheet coupling is
+feedback-by-design** — the deciding intelligence profits and loses with the
+people it decides for. And the rotation literature the gap hunt just surfaced
+carries the measured version: Ferraz & Finan find re-election-eligible mayors
+measurably less corrupt than lame ducks — accountability *is* feedback
+proportional to integration, already quantified in humans.
+
+**Honest tension, stated rather than smoothed:** "integration links well-being"
+is a design requirement, not a property machines get free. The coupling must be
+engineered (the underwriter bearing consequences, the firm's balance sheet, the
+scheduler's social awareness) and defended, exactly as V.3a(e)'s symmetry must
+be — an offloaded intelligence *without* engineered coupling is Davies' sink
+with better marketing. The claim survives in the conditional form Matthew gave
+it: more offloading **if the competence is there**, and, implicitly, if the
+coupling is built.
+
 **The bridge to the technical argument, assembled not claimed.** Teles's
 "Kludgeocracy in America" (*National Affairs* 17, Fall 2013) states our mechanism
 in the policy domain: "policy complexity is valuable for those seeking to extract
