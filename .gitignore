@@ -51,3 +51,15 @@ analysis/s10/*/zips/
 
 # Full third-party transcripts: quote from them in notes, never redistribute whole
 reading/notes/*-transcript.txt
+
+# Extracted-speech pools: derived from the corpora, but they carry the source
+# text verbatim, so they inherit its licence and stay out of the public repo.
+analysis/s10/align_ratio/
+analysis/s10/word_context/
+analysis/s10/quality_expansion/
+analysis/s10/band_screen_pool.json
+
+# Scratch download areas and large run inputs — acquired sources, not our work.
+analysis/s9/profiling/runs/
+analysis/_scratch_ins/
+fetched/

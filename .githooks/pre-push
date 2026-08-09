@@ -84,9 +84,30 @@ check_range() {
       fail=1
     elif [ "$size" -gt $((CORPUS_TEXT_MB * 1024 * 1024)) ]; then
       case "$path" in
-        *.jsonl|*.xml|*.txt|*.csv)
-          say "BLOCKED: $path ($((size / 1024 / 1024))MB $path) looks like corpus data — likely copyrighted/licensed source text"
+        *.jsonl|*.xml|*.txt|*.csv|*.json|*.tsv)
+          say "BLOCKED: $path ($((size / 1024 / 1024))MB) looks like corpus data — likely copyrighted/licensed source text"
           fail=1
+          continue
+          ;;
+      esac
+    fi
+
+    # Content backstop. Extracted-speech pools (band_screen_pool.json,
+    # quality_expansion/pool.json, align_ratio/items.json …) carry verbatim
+    # Hansard under 10MB, and new ones keep appearing under new names — so
+    # sniff the content instead of chasing directory names. Bulk verbatim text
+    # shows up as many long prose runs; one long note in a results file does
+    # not. Threshold is deliberately high to leave ordinary artifacts alone.
+    if [ "$size" -gt 102400 ]; then
+      case "$path" in
+        *.json|*.jsonl|*.csv|*.tsv|*.txt)
+          local prose
+          prose=$(git cat-file -p "$sha" 2>/dev/null | head -c 2000000 \
+                  | grep -o -E '[A-Za-z][A-Za-z,;'"'"'’ ()-]{300,}' | wc -l)
+          if [ "${prose:-0}" -ge 20 ]; then
+            say "BLOCKED: $path holds bulk verbatim prose ($prose long passages) — reads as extracted transcript text, not derived results"
+            fail=1
+          fi
           ;;
       esac
     fi
