@@ -122,7 +122,11 @@ check_range() {
   else
     # Fallback: grep added lines for high-confidence secret shapes.
     local added
-    added=$(git log -p --unified=0 --pretty=format: "$@" 2>/dev/null | grep '^+' | grep -v '^+++')
+    # --binary-files=text: without it grep bails out of a diff the moment it
+    # sees a binary hunk, printing "binary file matches" and leaving the rest
+    # of that diff unscanned — the scan has to be deterministic, not skipped.
+    added=$(git log -p --unified=0 --pretty=format: "$@" 2>/dev/null \
+            | grep --binary-files=text '^+' | grep --binary-files=text -v '^+++')
     local patterns=(
       'AKIA[0-9A-Z]{16}'                                   # AWS access key
       'ghp_[A-Za-z0-9]{36}'                                # GitHub PAT
@@ -137,7 +141,7 @@ check_range() {
     )
     local p hits
     for p in "${patterns[@]}"; do
-      hits=$(printf '%s\n' "$added" | grep -E -c -e "$p" || true)
+      hits=$(printf '%s\n' "$added" | grep --binary-files=text -E -c -e "$p" || true)
       if [ "${hits:-0}" -gt 0 ]; then
         say "BLOCKED: possible secret matching /$p/ in pushed commits ($hits line(s))"
         fail=1
