@@ -1,0 +1,7 @@
+workload,region,tier,host_share_or_rate,bytes_per_invocation,amenability,a9_share,notes
+gzip -9,deflate longest_match/compress loop,1,~21 MB/s single-thread (90MB in 4.5s),streaming,high: bounded window (32KB) + match loop; classic FPGA target,,control kernel; QAT/IAA is the deployed answer
+xz -6,LZMA match+range coder,1,~2.9 MB/s single-thread,streaming,medium: range coder serial; match finder offloadable,,slowest tier-1 anchor on host
+zstd -19,optimal-parse match finder,1,~18 MB/s single-thread,streaming,medium-high: large window (8MB+) strains Z7 BRAM,,zstd -3 is 15x faster - only high levels are candidates
+sha256,compression function,1,~2.3 GB/s host (ARMv8 crypto),streaming,absorbed: host ISA already has it; A9 does NOT (pre-crypto-ext),,above-threshold on host / below on A9 - nice natural experiment
+json parse,tokenizer+number parse,1.5,~235 MB/s (python) / jq similar,streaming,medium: simdjson shows SIMD answer; irregular control flow,,bridge kernel: tax-adjacent but no deployed accelerator
+python json.tool,json/__init__.py load + codecs decode,2-smoke,50% + 33% of self time (py-spy smoke),n/a,n/a - interpreter overhead dominates; would need native path,,harness smoke test only; real tier-2 runs pending perf unlock + slate decision
