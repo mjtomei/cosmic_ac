@@ -16,7 +16,7 @@ frequency-matched ordinary vocabulary does over the same window.
 
 ## Instrument (fixed, external)
 
-The **style-annotated words** of Kobak, González-Márquez, Horvát & Berens,
+The **style-annotated words** of Kobak, González-Márquez, Horvát & Lause,
 *Delving into LLM-assisted writing in biomedical publications through
 excess vocabulary* (arXiv:2406.07016), file `results/excess_words.csv`
 from github.com/berenslab/llm-excess-vocab, rows with `type == "style"`

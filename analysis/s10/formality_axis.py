@@ -28,10 +28,13 @@ Usage: python formality_axis.py CORPUS_LABEL SEGMENTS.jsonl [more.jsonl ...]
 import csv
 import json
 import math
+import os
 import re
 import sys
 from collections import Counter
 
+_HERE = os.path.dirname(os.path.abspath(__file__))
+MIN_COUNT = 20
 TOKEN_RE = re.compile(r"[a-z']+")
 TOKEN_CASE = re.compile(r"[A-Za-z']+")
 PRE_MAX = "2022-12-31"
@@ -43,7 +46,7 @@ SHORT_MAX = 120
 def main():
     label, files = sys.argv[1], sys.argv[2:]
     style = sorted({r["word"].lower() for r in
-                    csv.DictReader(open("kobak_excess_words.csv"))
+                    csv.DictReader(open(os.path.join(_HERE, "kobak_excess_words.csv")))
                     if r["type"] == "style" and r["word"].isalpha()})
 
     pre_c, post_c = Counter(), Counter()
@@ -96,7 +99,13 @@ def main():
     # --- formality axis from pre-period only ---
     scored = []
     for w, n in pre_c.items():
-        if n < 200 or len(w) < 4 or not w.isalpha():
+        # Floor was 200, which sits above log2 bucket 7 -- but 227 of the
+        # instrument's 407 words live in buckets 0-3, so those quotas could
+        # never fill and the realised control came out systematically MORE
+        # COMMON than the thing it controls (review F7: NB filled only 67 of
+        # 407). 20 is low enough to fill the rare buckets while still giving
+        # a stable long-vs-short ratio.
+        if n < MIN_COUNT or len(w) < 4 or not w.isalpha():
             continue
         if disp.get(w, 0) < DISP_MIN:
             continue
@@ -114,12 +123,28 @@ def main():
         b = int(math.log2(pre_c[w] + 1))
         by_bucket.setdefault(b, []).append(w)
     control, sset = [], set(style)
+    realised = {}
     for b, want in sorted(inst_buckets.items()):
         pool = [w for w in by_bucket.get(b, []) if w not in sset]
-        control.extend(pool[:want])
-    print(f"formality control: {len(control)} words "
-          f"(instrument {len(style)}); overlap with instrument: "
-          f"{len(set(control) & sset)}")
+        take = pool[:want]
+        # If a bucket still cannot fill, borrow from the nearest neighbouring
+        # buckets rather than silently shipping a shorter control -- an
+        # unfilled quota is exactly the frequency mismatch this is meant to
+        # remove.
+        if len(take) < want:
+            for off in (1, -1, 2, -2, 3, -3, 4, -4):
+                if len(take) >= want:
+                    break
+                extra = [w for w in by_bucket.get(b + off, [])
+                         if w not in sset and w not in take]
+                take.extend(extra[:want - len(take)])
+        realised[b] = (want, len(take))
+        control.extend(take)
+    filled = sum(n for _, n in realised.values())
+    print(f"formality control: {filled} words of {len(style)} requested; "
+          f"overlap with instrument: {len(set(control) & sset)}")
+    print("  bucket match (log2 pre-count: wanted/filled): " +
+          " ".join(f"{b}:{w}/{n}" for b, (w, n) in sorted(realised.items())))
     print(f"  top formality markers: {', '.join(control[:12])}")
 
     def mean_lfc(words):

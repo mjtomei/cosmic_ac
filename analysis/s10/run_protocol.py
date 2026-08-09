@@ -16,6 +16,7 @@ import csv
 import hashlib
 import json
 import math
+import os
 import random
 import re
 import sys
@@ -32,7 +33,11 @@ REGISTER = ["honourable", "pursuant", "whereas", "commend", "diligent",
 INFLECT = ["", "s", "es", "d", "ed", "ing"]
 
 
-def load_instrument(path="kobak_excess_words.csv"):
+_HERE = os.path.dirname(os.path.abspath(__file__))
+
+
+def load_instrument(path=None):
+    path = path or os.path.join(_HERE, "kobak_excess_words.csv")
     return sorted({r["word"].lower() for r in csv.DictReader(open(path))
                    if r["type"] == "style" and r["word"].isalpha()})
 

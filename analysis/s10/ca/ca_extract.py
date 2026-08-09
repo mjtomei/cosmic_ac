@@ -76,6 +76,7 @@ def extract_file(path):
         return []
     out = []
     section = ""
+    order = ""
     turn = 0
     floor = "EN"   # <FloorLanguage> marks the language actually spoken;
                    # in the -E edition, FR spans are TRANSLATIONS, not
@@ -87,6 +88,13 @@ def extract_file(path):
             continue
         if tag == "SubjectOfBusinessTitle":
             section = text_of(el)[:120]
+            continue
+        if tag == "OrderOfBusinessTitle":
+            # The PARENT rubric -- "Oral Questions", "Statements by Members",
+            # "Government Orders". SubjectOfBusinessTitle under Oral Questions
+            # is only the topic ("Carbon Pricing"), so without this there is no
+            # way to tell unscripted Question Period from set-piece debate.
+            order = text_of(el)[:80]
             continue
         if tag != "Intervention":
             continue
@@ -117,7 +125,7 @@ def extract_file(path):
             out.append({
                 "seg_id": f"{turn_id}w{widx}", "turn_id": turn_id,
                 "date": date, "file": path.name, "page": "",
-                "speaker": speaker, "section": section,
+                "speaker": speaker, "section": section, "order": order,
                 "person_id": "", "lang": lang_of(txt),
                 "floor_lang": floor,
                 "translated": floor != "EN",
