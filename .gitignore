@@ -40,5 +40,14 @@ analysis/s10/pangram_ch/
 __pycache__/
 *.pyc
 
+# Corpora acquired after the 2026-08-04 history purge. Same rule as above:
+# source transcripts are licensed by their publishers and never redistributed
+# from this public repo. Scripts and derived results are tracked; raw text is not.
+analysis/s10/us/
+analysis/s10/provinces/
+analysis/s10/permeation/
+analysis/s10/*/xml_*/
+analysis/s10/*/zips/
+
 # Full third-party transcripts: quote from them in notes, never redistribute whole
 reading/notes/*-transcript.txt

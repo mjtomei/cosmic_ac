@@ -20,24 +20,36 @@ check_range() {
   # $@ = rev-list args covering exactly the commits being pushed
   local objects new_files
 
-  # --- 1. Oversized blobs and corpus-shaped paths ---
+  # --- 1a. Corpus-shaped paths ---
+  # Enumerate paths from the COMMITS, not from rev-list --objects: git stores one
+  # object per unique content, so identical-content files (or a corpus file whose
+  # bytes already exist in history) appear there exactly once, under a single
+  # arbitrary path. Path filtering off that list silently misses the duplicates.
+  # xml_deep/xml_hist hold thousands of individually-small files, so the size
+  # gates below never fire on them — the path rule is the only thing catching
+  # them. Same for scraped provincial HTML/PDF and the US zips.
+  local paths
+  paths=$(git log --pretty=format: --name-only --no-renames "$@" 2>/dev/null | sed '/^$/d' | sort -u)
+  while IFS= read -r path; do
+    [ -n "$path" ] || continue
+    case "$path" in
+      analysis/*/xml/*|analysis/*/*/xml/*|analysis/*/xml_*/*|analysis/*/*/xml_*/*|\
+      analysis/*/zips/*|analysis/*/*/zips/*|\
+      analysis/s10/us/*|analysis/s10/provinces/*|analysis/s10/permeation/*|\
+      */segments_*.jsonl|segments_*.jsonl|\
+      analysis/*/pdfs*/*|analysis/*/pangram_*/*|*.pyc|*/__pycache__/*)
+        say "BLOCKED: corpus/artifact path in push: $path"
+        fail=1
+        ;;
+    esac
+  done <<< "$paths"
+
+  # --- 1b. Oversized blobs ---
   objects=$(git rev-list --objects "$@" 2>/dev/null) || return 0
   new_files=$(printf '%s\n' "$objects" | awk 'NF>1 {print $1, substr($0, index($0,$2))}')
 
   while IFS=' ' read -r sha path; do
     [ -n "$path" ] || continue
-
-    # Corpus / transcript paths: raw parliamentary XML, segment extracts,
-    # scraped PDFs, detector batch pools, python bytecode.
-    case "$path" in
-      analysis/*/xml/*|analysis/*/*/xml/*|*/segments_*.jsonl|segments_*.jsonl|\
-      analysis/*/pdfs*/*|analysis/*/pangram_*/*|*.pyc|*/__pycache__/*)
-        say "BLOCKED: corpus/artifact path in push: $path"
-        fail=1
-        continue
-        ;;
-    esac
-
     size=$(git cat-file -s "$sha" 2>/dev/null) || continue
     if [ "$size" -gt $((MAX_BLOB_MB * 1024 * 1024)) ]; then
       say "BLOCKED: $path is $((size / 1024 / 1024))MB (limit ${MAX_BLOB_MB}MB) — large data files stay out of the public repo"
