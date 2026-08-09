@@ -664,8 +664,10 @@ primary-verification ledger: `analysis/capital-cycle/VERIFICATION.md`; models:
   literature.]
   **US 1865–1900:** network doubled 1865–75 (35,085 → 74,096 miles;
   construction peak 7,439 miles built in 1872, later 2,665 → 11,569 in
-  1878–82 — VERIFIED exact vs Historical Statistics Q 321/Q 329); ~20% of
-  mileage in receivership by 1877 and ~25% again by mid-1894; ~6% of GDP at
+  1878–82 — VERIFIED exact vs Historical Statistics Q 321/Q 329); 18.2% of
+  mileage in receivership at the Jan-1877 peak and 20.4% at Mar-1894, with a
+  quarter of aggregate capitalization through receivership 1893–97 (Swain
+  1898; Ripley 1915 — mileage and capitalization are different claims); ~6% of GDP at
   the 1880s peak, ~15% of the decade's capital formation; ton-mile revenue
   ~2.2¢ (1870, Fishlow's estimate) → 0.729¢ (1900), nominal [REAL — HSUS/
   NBER Macrohistory/Fishlow; `analysis/capital-cycle/VERIFICATION.md`]. The
@@ -678,7 +680,10 @@ primary-verification ledger: `analysis/capital-cycle/VERIFICATION.md`; models:
   NYSE-volume, and London-issuance detail still on the flagged secondary —
   see queue; never cite it.]
   **Telecom 1996–2002:** $1.5–2T raised; demand forecasts off by an order of
-  magnitude (Odlyzko); $2T of equity erased, $1T of debt; sector ROIC 5–8%
+  magnitude (Odlyzko); ~$2T of market value erased and ~$1T of debt (Powell,
+  Senate Commerce testimony 2002-07-30 — the $2T is Powell's figure, not The
+  Economist's, whose own number was the ~$1T debt; corrected 2026-08-06);
+  sector ROIC 5–8%
   against 7–9% cost of capital, persistently — the industry operating the
   internet's transport layer never earned its capital cost. A covertly
   socialized infrastructure program, neither consensual nor centrally planned,
@@ -2210,6 +2215,27 @@ instances); Keynes 1930 "Economic Possibilities for our Grandchildren"; Bostrom
 locate the actual quote and source, possibly Deep Utopia or interviews) · Vinge
 1993 "The Coming Technological Singularity" for past-the-singularity
 unpredictability (the "opaque wall" passage — verify wording).
+
+**NON-RIVALRY ARGUMENT — anchors verified, prior art mapped (2026-08-08; full
+ledger `analysis/capital-cycle/NONRIVALRY-ANCHORS.md`).** Arrow 1962, Romer
+1990, Teece 1986 all VERIFIED verbatim from primary PDFs; Nordhaus's 2.2% is in
+the WP conclusion not the abstract (cite the WP); Bresnahan & Trajtenberg 1995
+names the collective-action mechanism thirty years early. Prior-art status
+splits three ways: the open-weights-commoditize-the-returns claim is **already
+published repeatedly** (Surman/FT, Moody, Dediu-and-Thompson's rebuttal) and
+must be cited into; the appropriability literature **exists and is close**
+(Azoulay-Krieger-Nagaraj NBER 32474 is Teece-applied-to-genAI; Korinek & Vipra
+is the natural-monopoly counterposition; Björkegren and Borri et al. supply
+market-based evidence); only the **crash-and-dispossession vs
+copy-without-dispossession inversion** appears unclaimed, and should be built on
+Perez/Janeway + Arrow/Romer/Jones-Tonetti + Nordhaus rather than claimed.
+Counter to engage by name: **Toby Ord, arXiv:2503.05705** (inference scaling
+devalues open weights) and Sastry et al. arXiv:2402.08797 (rivalry relocates to
+silicon). Counter's weak point, measured: compute-excludability decays as fast
+as it is built (distillation; price-per-capability −9× to −900×/yr), and the
+open-weight frontier lag fell from ~1 year (2024) to ~4 months (2026).
+⚠️ **Bears on Figure 2:** Jin et al. arXiv:2606.15999 may be a published
+empirical version of the embargo natural experiment — check before F2 is final.
 
 NEW to-verify items from the capital-cycle report 2e (2026-08-04; all currently
 ride on the report's ref [28], a marketing essay — **never cite [28] in paper
