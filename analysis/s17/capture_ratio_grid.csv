@@ -1,0 +1,26 @@
+scenario,imitation_lag_years,lambda_per_yr,a,capture_raw,capture_normalized_to_nordhaus_2.2pct,capture_norm_halflife_reading,fold_drop_vs_baseline_same_a
+Nordhaus 1948-2001 baseline (patent renewals),n/a (lambda a priori),0.200,0.104,0.02696,0.03269,0.03269,1.0
+Nordhaus 1948-2001 baseline (patent renewals),n/a (lambda a priori),0.200,0.070,0.01815,0.02200,0.02200,1.0
+Nordhaus 1948-2001 baseline (patent renewals),n/a (lambda a priori),0.200,0.059,0.01530,0.01854,0.01854,1.0
+Nordhaus 1948-2001 baseline (patent renewals),n/a (lambda a priori),0.200,0.030,0.00778,0.00943,0.00943,1.0
+Nordhaus 1948-2001 baseline (patent renewals),n/a (lambda a priori),0.200,0.010,0.00259,0.00314,0.00314,1.0
+"GPT-3 -> OPT-175B era, lag ~23 mo (2020-22)",1.917,0.522,0.104,0.01230,0.01491,0.02045,2.2
+"GPT-3 -> OPT-175B era, lag ~23 mo (2020-22)",1.917,0.522,0.070,0.00828,0.01004,0.01376,2.2
+"GPT-3 -> OPT-175B era, lag ~23 mo (2020-22)",1.917,0.522,0.059,0.00698,0.00846,0.01160,2.2
+"GPT-3 -> OPT-175B era, lag ~23 mo (2020-22)",1.917,0.522,0.030,0.00355,0.00430,0.00590,2.2
+"GPT-3 -> OPT-175B era, lag ~23 mo (2020-22)",1.917,0.522,0.010,0.00118,0.00143,0.00197,2.2
+"Epoch Nov-2024 report, lag ~1 yr",1.000,1.000,0.104,0.00680,0.00825,0.01156,4.0
+"Epoch Nov-2024 report, lag ~1 yr",1.000,1.000,0.070,0.00458,0.00555,0.00778,4.0
+"Epoch Nov-2024 report, lag ~1 yr",1.000,1.000,0.059,0.00386,0.00468,0.00656,4.0
+"Epoch Nov-2024 report, lag ~1 yr",1.000,1.000,0.030,0.00196,0.00238,0.00334,4.0
+"Epoch Nov-2024 report, lag ~1 yr",1.000,1.000,0.010,0.00065,0.00079,0.00111,4.0
+"Epoch ECI Jan-2026 - May-2026, lag ~4 mo",0.333,3.000,0.104,0.00237,0.00287,0.00411,11.4
+"Epoch ECI Jan-2026 - May-2026, lag ~4 mo",0.333,3.000,0.070,0.00160,0.00193,0.00276,11.4
+"Epoch ECI Jan-2026 - May-2026, lag ~4 mo",0.333,3.000,0.059,0.00135,0.00163,0.00233,11.4
+"Epoch ECI Jan-2026 - May-2026, lag ~4 mo",0.333,3.000,0.030,0.00068,0.00083,0.00118,11.4
+"Epoch ECI Jan-2026 - May-2026, lag ~4 mo",0.333,3.000,0.010,0.00023,0.00028,0.00039,11.4
+"Epoch ECI Jan-2023 - Oct-2025, lag ~3 mo",0.250,4.000,0.104,0.00179,0.00217,0.00310,15.1
+"Epoch ECI Jan-2023 - Oct-2025, lag ~3 mo",0.250,4.000,0.070,0.00120,0.00146,0.00209,15.1
+"Epoch ECI Jan-2023 - Oct-2025, lag ~3 mo",0.250,4.000,0.059,0.00101,0.00123,0.00176,15.1
+"Epoch ECI Jan-2023 - Oct-2025, lag ~3 mo",0.250,4.000,0.030,0.00052,0.00063,0.00090,15.1
+"Epoch ECI Jan-2023 - Oct-2025, lag ~3 mo",0.250,4.000,0.010,0.00017,0.00021,0.00030,15.1
