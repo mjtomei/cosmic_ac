@@ -40,6 +40,34 @@ check_range() {
       analysis/*/pdfs*/*|analysis/*/pangram_*/*|*.pyc|*/__pycache__/*)
         say "BLOCKED: corpus/artifact path in push: $path"
         fail=1
+        continue
+        ;;
+    esac
+
+    # Third-party documents. Acquired papers, vendor reports and scraped pages
+    # are read here, quoted in notes, and never redistributed from a public
+    # repo — most carry no licence permitting it. Our OWN renders are the only
+    # documents that belong in git, so this is a whitelist, not a blacklist:
+    # anything that is not a known project deliverable gets stopped.
+    case "$path" in
+      the-performance-commons*.pdf|assets-rents-socialized-buildout*.pdf|\
+      dataflow-vs-heterogeneous-architecture.pdf|build/*.pdf|\
+      analysis/*/REVIEW*.pdf|analysis/*/METHODOLOGY*.pdf|REVIEW-RESPONSES.pdf)
+        : ;;                                    # our own renders — allowed
+      *.pdf|*.epub|*.mobi|*.docx|*.doc|*.pptx|*.djvu)
+        say "BLOCKED: third-party document (not a known project deliverable): $path"
+        say "         quote it in reading/notes/ instead of committing the file."
+        fail=1
+        continue
+        ;;
+    esac
+
+    # Scratch scrape/download areas: whole-page HTML and fetched sources.
+    case "$path" in
+      analysis/_scratch_ins/*|fetched/*|*/pangram_web_scans/*)
+        say "BLOCKED: scratch/scraped download area: $path"
+        fail=1
+        continue
         ;;
     esac
   done <<< "$paths"
