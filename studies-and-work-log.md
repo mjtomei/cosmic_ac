@@ -8,6 +8,12 @@ Convention carried from `analysis/README.md`: **every novel number gets a
 reproducible artifact** — a script, a CSV, or a documented workflow — with
 sources for anything not derived here and assumptions written down.
 
+Register scope (tightened 2026-08-04): studies only — efforts that produce a
+number or artifact the paper stands on. Meta/process passes (citation audits,
+literature rankings, structure reviews) are good practice, recur per study, and
+live in the work log, not the register. Numbering is permanent: retired or
+renumbered entries leave gaps rather than shifting later numbers.
+
 ---
 
 ## Study register
@@ -42,31 +48,10 @@ the deepest spot tier.
 *Artifacts:* `analysis/cost_model.py` → `consumer_vs_datacenter_cost.csv`.
 *Open:* real utilization distributions (see S11).
 
-### S4. Citation-faithfulness audit — **DONE (method reusable)**
-*Question:* does every inline claim faithfully represent its source?
-*Method:* 50 Opus agents, one per reference batch, each fetching the source;
-every mismatch adversarially verified before action.
-*Findings:* 6 real misrepresentations out of 129 references, all fixed; the
-~24%-more-PRs claim found its primary source.
-*Artifact:* workflow script in the session's workflow directory; ledger in
-`CLAUDE.md`.
-
-### S5. Reading-list review and ranking — **DONE**
-*Question:* which of the assembled literature is actually load-bearing?
-*Method:* one agent reads each paper and scores relevance / field standing /
-quality; a calibration pass normalizes across all of them. Two rounds (51 + 23),
-round 2 anchored to round 1's composites so both sit on one scale.
-*Artifacts:* `~/reading/software-economies-and-the-knowledge-problem/`
-(74 PDFs, `00-README-*.md`, `00-RANKINGS.json`).
-
-### S6. Citation-graph sweep — **DONE**
-*Question:* what published work already does part of the Hayek criterion's job?
-*Method:* 65 agents over Semantic Scholar and OpenAlex from 14 seeds; forward
-and backward citations; every candidate adversarially verified.
-*Findings:* all four criterion legs have published machinery in five disjoint
-communities; drift is formalized four times over; scheduler-as-planned-economy
-is not ours to claim (Karma, OSDI 2023).
-*Artifact:* `00-CITATION-SWEEP.json` in the reading directory.
+*(S4–S6 — citation-faithfulness audit, reading-list ranking, citation-graph
+sweep — retired from the register 2026-08-04 as meta/process work; numbers stay
+reserved. Full entries in git history; runs in the work log; the audit ledger
+in `CLAUDE.md`; rankings and sweep artifacts in the reading directories.)*
 
 ### S7. Development-velocity measurement — **DONE elsewhere, cited**
 *Source:* `~/claude-work/project-manager/docs/velocity-analysis/`.
@@ -75,7 +60,12 @@ output outpaces review.
 
 ---
 
-### S8. Dataflow-multicore in gem5 — **COMMITTED, not started**
+### S8. Dataflow-multicore in gem5 — **PARKED (2026-08-05: merged into S9's framing; FPGA target first)**
+*(2026-08-05, Matthew: S8 and S9 are the same study — two target architectures
+for one continuously-optimizing intelligence. The FPGA target (S9) goes first;
+the gem5 arm and the rung-0 ideal-ASIC limit are parked — the limit "is not
+well defined yet although I think there is something there." The S8 plan file
+keeps the shared related-works ledger.)*
 *Question:* how much of the realization gap is recoverable by automatic dataflow
 mapping of ordinary code?
 *Method:* ordinary code on a simulated multicore with NUMA and a full memory
@@ -86,17 +76,37 @@ reconfigurable substrates — is currently unmeasured. This is the measurement.
 *Cost:* compute only; gem5 is free.
 *Artifact target:* `analysis/` sweep + a figure replacing Figure 6's conceptual
 boundary with a measured one.
+*Session plan:* `plans/S8-dataflow-multicore-gem5.md` (2026-08-05) —
+related-works pass done (6 agents, all anchors web-verified), three-phase
+methodology drafted, open decisions listed. Positioning finding: every piece
+of the mechanism exists published (TaskMiner, T4, Carrefour, ADWS, ninja gap);
+what is unmeasured is the composite end-to-end gap on ordinary code and its
+automatic recovery — a quantification + composition claim, not novelty.
 
-### S9. FPGA soft-core specialization — **COMMITTED, second**
-*Question:* does the simulated gain survive on real silicon?
-*Method:* RISC-V soft core (Rocket/CVA6/VexRiscv) on a commodity FPGA; profile a
-genuine workload on the core's own performance counters; synthesize a
-tightly-coupled accelerator or retune the microarchitecture; re-place with the
-open flow (Yosys, OpenROAD); measure the same workload again.
-*Honest flags:* a soft core on an FPGA is itself ~20–35× off an ASIC, so this
-isolates *relative* gain from profile-guided specialization, never an absolute
-number. The crux in both S8 and S9 is automatic mapping — measuring the gap is
-easy, closing it without a human in the loop is the claim.
+### S9. Continuous FPGA acceleration by machine intelligence — **ACTIVE (reframed 2026-08-05; absorbs S8's aims)**
+*Question:* can an LLM fully replace a human engineer at the standing task
+"always watch what is running on this processor and accelerate pieces of it
+as efficiently as possible" — on an attached FPGA fabric?
+*Reframing (2026-08-05, supersedes the old soft-core-specialization entry,
+kept below for history):* three modes, all in scope — (1) LLM-driven use of
+existing tooling (the toolchain's complexity is itself the bottleneck);
+(2) LLM hand-designing RTL/HLS in measurement loops; (3) the intelligence
+optimizing its own optimization loop, QoR as fitness. Historical anchor: warp
+processing (Vahid & Lysecky, mid-2000s) — transparent profile-guided
+hot-code-to-fabric, which worked and died of exactly the collective-action
+gap the paper diagnoses. Applications: tier 1 = datacenter-tax kernels as
+controls; tier 2 = the below-ISA-extension-threshold long tail (the thesis
+case). Hardware: Matthew's Zybo Z7 (Zynq-7000: profile on the A9 PS, offload
+to the PL).
+*Session plan:* `plans/S9-fpga-continuous-acceleration.md` (self-contained;
+citation-graph pass 2026-08-05).
+*Honest flags:* the 2012-era Cortex-A9 baseline is weak — report relative
+gain from autonomy, and energy, never implying 1:1 transfer to modern CPUs;
+FPGA is ~20–35× off ASIC so absolute efficiency claims stay off the table;
+selection caveat carries over from the old entry.
+*(Old S9 entry, for history: RISC-V soft core, profile-guided
+specialization, open-flow re-place — subsumed as one possible tier-2
+mechanism rather than the study's frame.)*
 
 ---
 
@@ -368,40 +378,24 @@ predictions, one build: the criterion boundary (S11), negotiation outcomes
 the strongest version of the case for committing to the simulator as the
 program's fifth effort (open question 7).
 
-### S15. The four-horsemen prompt — **CANDIDATE, buildable now**
-*Origin:* the Arrow-clause thread (outline IV.3): the only way to avoid the four
-horsemen is to negotiate with them; the audit is distributed instantiation.
-*Artifact:* a standing background agent for anyone holding significant power —
-monitors decisions/environment for accumulating structural pressure, notifies
-with historical analogies (sources attached) and quantitative signals.
-*Quantitative base:* instability forecasting works — Goldstone et al., AJPS 54
-(2010), the PITF model (verified); ACLED-class event data.
-*Validation:* backtest against documented historical decision environments
-(pre-1789 fiscal records, pre-2008 risk memos): does it surface the pressure
-before the discharge? Precision matters as much as recall — an alarm that
-always fires is a jester nobody hears.
-*Honest flags:* the memento-mori framing's classical sourcing is debated
-(Tertullian; verify before use); a monoculture of auditors is the residual risk
-— plurality of instantiations is the guard.
-*Cost:* prompt + tooling ≈ free; backtest is archival work.
-*Note:* cheapest item on this list after S10's regex tier, and the only one
-that is itself an artifact of the paper's societal argument.
-*Simulation link (Matthew, 2026-07-30):* prototypable and testable in the
-S11/S12 societal simulator — seed a multi-agent economy with power asymmetries,
-let extraction accumulate Arrow-clause pressure, equip a treatment group of
-power-holders with the prompt, and compare discharge paths (reform vs revolt vs
-collapse) against controls. The controlled counterfactual the backtest cannot
-give: history runs once, the simulator reruns 1789 with the prompt installed.
-Backtest and simulation cover each other's weaknesses (external validity vs
-control).
-
 ### S13. Whole-system workload characterization — **NAMED PREREQUISITE**
 *Question:* across the real consumer workload mix, what are achieved vs maximum
 parallelism, dataflow locality, phase behaviour, and input statistics?
 *Status:* named in the paper's limits as the missing map and the prerequisite for
 pinning Figure 6's boundary. Larger than S8; S8 is its first slice.
 
-### S14½ / S15. Staff-change detection via authorship drift — **CANDIDATE (side study, spun out of S10, 2026-07-29)**
+### S14. Omerta utilization measurement — **FUTURE, phase 1.5**
+*Question:* what utilization, demand and reliability distributions do donated
+consumer devices actually show?
+*Why:* S3's cost model turns on utilization, and the financing instrument in §8
+cannot be priced without it. Matthew's prior expectation: low, but not as low as
+lab machines.
+
+### S14½. Staff-change detection via authorship drift — **CANDIDATE (side study, spun out of S10, 2026-07-29)**
+*(Numbering note, 2026-08-04: this entry briefly carried "S15" as an
+alternate label while S15 was also assigned to the four-horsemen prompt.
+Deduped: S15 = four-horsemen (the label the work log and S11/S12 notes
+already use); this study keeps S14½.)*
 *Question:* can stylometric changepoints in a member's **prepared** speech
 detect documented staff turnover, using the member's **spontaneous**
 crosstalk as the within-speaker control?
@@ -435,58 +429,32 @@ first case study, confound and use-case in one).
 the staff-timeline scrape; prepared/spontaneous labels (S10's noisy
 section tracker, upgraded).
 
-### S14. Omerta utilization measurement — **FUTURE, phase 1.5**
-*Question:* what utilization, demand and reliability distributions do donated
-consumer devices actually show?
-*Why:* S3's cost model turns on utilization, and the financing instrument in §8
-cannot be priced without it. Matthew's prior expectation: low, but not as low as
-lab machines.
-
----
-
-## Work log
-
-| Date | What ran | Result |
-|---|---|---|
-| 2026-06 → 07 | Paper built out from handoff; figures, structure, §12→Appendix A | 15pp two-column deliverable |
-| 2026-07-20 | Structure and readability workflows (59 + 32 agents) | 27 + 14 fixes implemented |
-| 2026-07-24 | RSI citation verification | §8 break-off argument fully sourced |
-| 2026-07-27 | **S4** citation-faithfulness audit (50 Opus agents, all 129 refs) | 6 fixes; ~24%-PR claim sourced |
-| 2026-07-27 | reviews.txt response pass | Table 1 → ranges; §2.1 rebuilt on the literature; `analysis/` created (**S3**) |
-| 2026-07-27 | Cosmic AC outline v1 | Six movements; §9 dissolved inline |
-| 2026-07-28 | Capital-cycle report integrated | IV.3 rebuilt; three-readings fork |
-| 2026-07-28 | **S5** reading-list review, round 1 (51 papers) | Tiers + rationales |
-| 2026-07-28 | **S6** citation-graph sweep (65 agents) | Drift leg found already formalized ×4 |
-| 2026-07-28 | Reading directory assembled | 74 PDFs, nothing unobtainable |
-| 2026-07-29 | **S5** round 2 (23 papers) + merge | All 74 on one scale; 5 round-1 re-tierings |
-| 2026-07-29 | Bill Oliver clip investigated | Canadian not Australian; transcript pulled; Hansard not yet published |
-| 2026-07-29 | **S10** designed and costed | ~$321/session at bulk API; $65 entry via Professional plan |
-| 2026-07-29 | **S10 pilot executed** — full pipeline on NB corpus + 2019 control; Falcon-pair Binoculars over 1.21M tokens; Qwen3-1.7B pair; Tier-1 regex | 509 tok/s e2e (GPU clock-capped 513/3003 MHz — see PILOT.md); 0 Tier-1 hits in 993k words; 2025–26 flag rates sit BELOW the 2019 false-positive floor → τ̂=0 at pilot sensitivity; era drift in score distribution = the design finding |
-| 2026-07-31 | **S10 quality arm** — DQI-anchored judging: Q1 lexical battery, Qwen pilot, Fable-5 blinded workflow v1+v2 (strict DQI + Steenbergen Commons anchors), corpus-wide per-year metrics | AI speech: 3× less first-person, formally stronger, worse-engaged; **blind Fable-5 AUC 0.936 vs Pangram**; v2 repeat-reliability at the published human bar; blinded 2019→2025-26: justification/evidence UP, respect-toward-demands −0.36, constructive −0.30 — form up, deliberation down |
-| 2026-07-30 | **S10 Pangram adjudication** — 438 segs, Se/Sp both measured perfect in-domain (synthetic AI legislative speech; pre-2023 controls, later extended across five control years) | Corrected prevalence estimated for recent speech and superseded by the per-year series (2026-07-31 row). **Figures live in `analysis/s10/` and are still moving — do not quote a number from this log while the study is open.** hits uniform across detector deciles (edited-AI invisible to zero-shot detectors — retro-explains all nulls); 68/218 candidates confirmed incl. McKee May-2023 cluster, Oliver, Sodhi, the Premier |
-| 2026-07-29 | **S10** Fast-DetectGPT+LRR done; synthetic-leak bug caught+corrected; Tier-1.5 Wikipedia-signs lexicon; **S15 registered** | FD Se=0.975 both thresholds, corpus below floors (8 statistics, 0 elevations); Oliver specimen in FD tail; **AI-lexicon aggregate 3.31× (CI-separated)** — trend-shape test needs 60th-Leg pull |
-| 2026-07-29 | **S10 detector trials** (PILOT.md addendum) — Qwen3-8B third pair; synthetic Se corpus (Mistral-7B-Instruct, 40 speeches); 3 classifiers (HC3-RoBERTa, RADAR, GPT-2-era); Burrows-Delta authorship; Pangram batch built | **Falcon pair Se=1.0/0.975 at calibrated 5%/1% FPR — bigger ≠ better** (Qwen3-8B 0.825/0.25; classifiers ≤0.675); 6 detectors, none lifts 2025–26 above its floor → bound ≤~0.4% at measured Se; authorship attribution 54.5% vs 2.3% chance, Austin cross-era anomaly; `pangram_batch.jsonl` 265 segs/52.6k words ready |
-| 2026-07-30 | **Counsel cluster ranked** (27 papers + calibrator); 4 couldn't-get items obtained (Tessler main, Špecián, Kreps-Kriner, Alfani-WP) | 8/12/7 tiers; argument-ordered path + 6 side tracks; Fishkin demoted (facilitation ≠ counsel); Estlund = the shared-advisor defense |
-| 2026-07-30 | V.3b recorded — **the trustworthy firm** (Matthew's text): preference-correcting bank, variable purchasing power, religious-institution iteration, universal-owner limit | Placed as fair-split twin of surveillance pricing; honest tensions logged (manipulation-adjacency; concentrates counsel → plurality guard) |
-| 2026-07-31 | **Trustworthy-firm sweeps** (9-agent verify+graph; 6-agent what-changed) + reading directory | All V.3b anchors verified (3 handle corrections); markets-select-the-extractive-twin critique → the paper's own what-changed mechanism; what-changed evidence ASYMMETRIC: wedge-knowing overwhelming, wisdom-demonstrating the frontier |
-| 2026-07-31 | **Trustworthy-firm shelf ranked** — 102 PDFs, two rounds (54+47 reviewers, 1 resume through session-limit reset); 2 calibrator hallucinations caught and reversed | 20/71/11 tiers; 18-step main path ends on Sharma sycophancy + Salganik ceiling; convergence result: three literatures independently select outcome-coupled incentives as the only surviving advisor design |
-| 2026-07-31 | **S10 per-year prevalence** (calibrated, Pangram) — sensitivity and specificity both perfect in-domain, controls spanning five pre-2023 years | Prevalence is flat and at the control floor through 2022, inflects after 2023, and rises steeply through early 2026 — accelerating, not plateauing; interrupted-time-series slope change at the pre-registered 2023 break is significant against placebo. **Current point estimates and CIs: `analysis/s10/PROGRESS-REPORT-*.md`. Study open — do not quote figures from this log.** |
-| 2026-08-01 | Paper: Brynjolfsson-Li-Raymond QJE 2025 added to §2.2.2 (tacit competence → copyable artifact, measured); F3/F4 twin block split into in-column figures | 20pp rebuild QA'd page-by-page; p8 gap eliminated; figures now sit at their references |
-
----
-
-## Priorities, as I see them
-
-1. **S10, now essentially free.** Tiers 1–3 cost nothing but compute, the corpus
-   is already downloaded, and the method has a published anchor (Liang et al.).
-   It produces an original figure and is the only study here that could stand
-   alone as a short paper.
-   The negative control is non-negotiable.
-2. **S8**, because it is the paper's own committed first experiment and the only
-   thing that converts §1.2's central inference into a measurement.
-3. **S11+S12 merged**, if the criterion section is going to make a quantitative
-   claim rather than a structural one.
-4. S14 when Omerta phase 1.5 exists; S13 is the long-horizon version of S8.
+### S15. The four-horsemen prompt — **CANDIDATE, buildable now**
+*Origin:* the Arrow-clause thread (outline IV.3): the only way to avoid the four
+horsemen is to negotiate with them; the audit is distributed instantiation.
+*Artifact:* a standing background agent for anyone holding significant power —
+monitors decisions/environment for accumulating structural pressure, notifies
+with historical analogies (sources attached) and quantitative signals.
+*Quantitative base:* instability forecasting works — Goldstone et al., AJPS 54
+(2010), the PITF model (verified); ACLED-class event data.
+*Validation:* backtest against documented historical decision environments
+(pre-1789 fiscal records, pre-2008 risk memos): does it surface the pressure
+before the discharge? Precision matters as much as recall — an alarm that
+always fires is a jester nobody hears.
+*Honest flags:* the memento-mori framing's classical sourcing is debated
+(Tertullian; verify before use); a monoculture of auditors is the residual risk
+— plurality of instantiations is the guard.
+*Cost:* prompt + tooling ≈ free; backtest is archival work.
+*Note:* cheapest item on this list after S10's regex tier, and the only one
+that is itself an artifact of the paper's societal argument.
+*Simulation link (Matthew, 2026-07-30):* prototypable and testable in the
+S11/S12 societal simulator — seed a multi-agent economy with power asymmetries,
+let extraction accumulate Arrow-clause pressure, equip a treatment group of
+power-holders with the prompt, and compare discharge paths (reform vs revolt vs
+collapse) against controls. The controlled counterfactual the backtest cannot
+give: history runs once, the simulator reruns 1789 with the prompt installed.
+Backtest and simulation cover each other's weaknesses (external validity vs
+control).
 
 ### S16. Enterprise idle fleets as a federation substrate — **CANDIDATE, scoped**
 *Origin:* Matthew, 2026-08-02, from an Apple ad claiming >80% of top companies
@@ -510,9 +478,159 @@ Omerta plan's supply assumptions.
 *Do not use:* ">80% of the Fortune 500 use Macs" — Apple's actual claim is 84%
 of LinkedIn's 50 top US employers, i.e. 42 of 50, with "at scale" undefined.
 
+### S17. The Mansfield ratio, recomputed — **REGISTERED 2026-08-04, in execution**
+*Origin:* claude.ai dialogue 2026-08-04 (Arrow 1962/1969, Samuelson 1954,
+appropriability); handoff at `plans/S17-appropriability-and-externality-pricing.md`.
+*(Arrived numbered "S16"; renumbered S17 — S16 was already the idle-fleet study,
+and the S15 double-assignment was deduped the same day: S15 = four-horsemen,
+staff-change stays S14½.)*
+*Question:* how far has the imitation lag for frontier capability fallen since
+Mansfield, Schwartz & Wagner measured it (EJ 1981: imitation time ~70% of
+innovation time, ~60% imitated within 4 years), and what does the measured lag
+do to Nordhaus's 2.2% capture ratio (NBER WP 10433: a≈0.07, λ=0.20/yr imposed
+from patent renewals)?
+*Method:* (1) open-vs-closed frontier lag series from Epoch AI (ECI) plus at
+least one ECI-independent metric; (2) sparse imitation-cost-ratio series where
+budgets are public (distillation runs vs frontier training cost), vendor
+numbers flagged; (3) re-solve the capture ratio over measured λ (~0.5/yr in
+2020–22 → ~3/yr in 2025–26), sweeping α; (4) negative control: a domain where
+machine intelligence is not the imitation mechanism (generic-drug entry lags),
+showing no collapse there.
+*Artifacts:* `analysis/s17/` — `imitation_lag.csv`, `nordhaus_recompute.py` →
+`capture_ratio_grid.csv`, wedge figure. Reading notes:
+`reading/notes/nordhaus-2004.md`.
+*Honest limits (registered with the study):* benchmark parity ≠ economic
+substitutability; Epoch's private-benchmark and withheld-model caveats mean
+the measured lag understates the true one; the 2025→2026 3→4-month move is a
+widening — no clean exponential; α migrates to complements (Teece) rather than
+collapsing everywhere — the claim is about the artifact, not the firm;
+Bessen-Maskin 2009 means "unprofitable to sell," not "unproduced."
+*Placement (proposed, Matthew decides):* IV.2/IV.3 economic mechanism; pairs
+with the capital-cycle 2e report's durable-moats requirement (same claim from
+two sides). Externality-pricing half: V.5 as the criterion pointed at a second
+objective — whether it gets its own study is an open question below.
+
+### S18. AI capital stock, rents, and rent location — **CANDIDATE**
+*(Carried as unnumbered "Sx" until 2026-08-04; assigned S18.)*
+*Question:* what is the deployed AI capital stock, what rent stream has the
+market capitalized against it, and what external revenue must arrive for the
+pricing to hold?
+*Findings:* ~$1.08T gross / ~$1.16T net stock vs ~$18T AI-attributable market
+gain; sector Q 15–23×; required external revenue 3–6.5% of world GDP (breakeven
+floor ~$1.7T/yr) vs ~0.3% today; rents ~85–90% mean-reverting supply-chain
+scarcity; rent-location precedent (railroads/fiber: riders profit, network
+capital doesn't) inverts the market's allocation, and July 2026 was the first
+mass repricing toward history's allocation without any aggregate crash.
+*Artifacts:* `analysis/capital-cycle/` (ai_stock.py, gdp_req.py,
+build_report_v2.py, VERIFICATION.md), `assets-rents-socialized-buildout-2e.pdf`.
+*Honest flags:* AI-attribution shares and add-ons are authors' estimates;
+several 2e figures rode on a flagged secondary source — the load-bearing ones
+(10-K depreciation inventory, Moody's, Bain, mileage, ton-mile) re-anchored to
+primaries 2026-08-04 (`analysis/capital-cycle/VERIFICATION.md`), the rest
+pending; market-value attribution ($18T vs $27T) follows Goldman's own caveat.
+
+---
+
+## Work log
+
+| Date | What ran | Result |
+|---|---|---|
+| 2026-06 → 07 | Paper built out from handoff; figures, structure, §12→Appendix A | 15pp two-column deliverable |
+| 2026-07-20 | Structure and readability workflows (59 + 32 agents) | 27 + 14 fixes implemented |
+| 2026-07-24 | RSI citation verification | §8 break-off argument fully sourced |
+| 2026-07-27 | **S4** citation-faithfulness audit (50 Opus agents, all 129 refs) | 6 fixes; ~24%-PR claim sourced |
+| 2026-07-27 | reviews.txt response pass | Table 1 → ranges; §2.1 rebuilt on the literature; `analysis/` created (**S3**) |
+| 2026-07-27 | Cosmic AC outline v1 | Six movements; §9 dissolved inline |
+| 2026-07-28 | Capital-cycle report integrated | IV.3 rebuilt; three-readings fork |
+| 2026-07-28 | **S5** reading-list review, round 1 (51 papers) | Tiers + rationales |
+| 2026-07-28 | **S6** citation-graph sweep (65 agents) | Drift leg found already formalized ×4 |
+| 2026-07-28 | Reading directory assembled | 74 PDFs, nothing unobtainable |
+| 2026-07-29 | **S5** round 2 (23 papers) + merge | All 74 on one scale; 5 round-1 re-tierings |
+| 2026-07-29 | Bill Oliver clip investigated | Canadian not Australian; transcript pulled; Hansard not yet published |
+| 2026-07-29 | **S10** designed and costed | ~$321/session at bulk API; $65 entry via Professional plan |
+| 2026-07-29 | **S10 pilot executed** — full pipeline on NB corpus + 2019 control; Falcon-pair Binoculars over 1.21M tokens; Qwen3-1.7B pair; Tier-1 regex | 509 tok/s e2e (GPU clock-capped 513/3003 MHz — see PILOT.md); 0 Tier-1 hits in 993k words; 2025–26 flag rates sit BELOW the 2019 false-positive floor → τ̂=0 at pilot sensitivity; era drift in score distribution = the design finding |
+| 2026-07-29 | **S10** Fast-DetectGPT+LRR done; synthetic-leak bug caught+corrected; Tier-1.5 Wikipedia-signs lexicon; **staff-change study registered** (then labeled S15; renumbered S14½ in the 2026-08-04 dedupe) | FD Se=0.975 both thresholds, corpus below floors (8 statistics, 0 elevations); Oliver specimen in FD tail; **AI-lexicon aggregate 3.31× (CI-separated)** — trend-shape test needs 60th-Leg pull |
+| 2026-07-29 | **S10 detector trials** (PILOT.md addendum) — Qwen3-8B third pair; synthetic Se corpus (Mistral-7B-Instruct, 40 speeches); 3 classifiers (HC3-RoBERTa, RADAR, GPT-2-era); Burrows-Delta authorship; Pangram batch built | **Falcon pair Se=1.0/0.975 at calibrated 5%/1% FPR — bigger ≠ better** (Qwen3-8B 0.825/0.25; classifiers ≤0.675); 6 detectors, none lifts 2025–26 above its floor → bound ≤~0.4% at measured Se; authorship attribution 54.5% vs 2.3% chance, Austin cross-era anomaly; `pangram_batch.jsonl` 265 segs/52.6k words ready |
+| 2026-07-30 | **S10 Pangram adjudication** — 438 segs, Se/Sp both measured perfect in-domain (synthetic AI legislative speech; pre-2023 controls, later extended across five control years) | Corrected prevalence estimated for recent speech and superseded by the per-year series (2026-07-31 row). **Figures live in `analysis/s10/` and are still moving — do not quote a number from this log while the study is open.** hits uniform across detector deciles (edited-AI invisible to zero-shot detectors — retro-explains all nulls); 68/218 candidates confirmed incl. McKee May-2023 cluster, Oliver, Sodhi, the Premier |
+| 2026-07-30 | **Counsel cluster ranked** (27 papers + calibrator); 4 couldn't-get items obtained (Tessler main, Špecián, Kreps-Kriner, Alfani-WP) | 8/12/7 tiers; argument-ordered path + 6 side tracks; Fishkin demoted (facilitation ≠ counsel); Estlund = the shared-advisor defense |
+| 2026-07-30 | V.3b recorded — **the trustworthy firm** (Matthew's text): preference-correcting bank, variable purchasing power, religious-institution iteration, universal-owner limit | Placed as fair-split twin of surveillance pricing; honest tensions logged (manipulation-adjacency; concentrates counsel → plurality guard) |
+| 2026-07-31 | **S10 quality arm** — DQI-anchored judging: Q1 lexical battery, Qwen pilot, Fable-5 blinded workflow v1+v2 (strict DQI + Steenbergen Commons anchors), corpus-wide per-year metrics | AI speech: 3× less first-person, formally stronger, worse-engaged; **blind Fable-5 AUC 0.936 vs Pangram**; v2 repeat-reliability at the published human bar; blinded 2019→2025-26: justification/evidence UP, respect-toward-demands −0.36, constructive −0.30 — form up, deliberation down |
+| 2026-07-31 | **Trustworthy-firm sweeps** (9-agent verify+graph; 6-agent what-changed) + reading directory | All V.3b anchors verified (3 handle corrections); markets-select-the-extractive-twin critique → the paper's own what-changed mechanism; what-changed evidence ASYMMETRIC: wedge-knowing overwhelming, wisdom-demonstrating the frontier |
+| 2026-07-31 | **Trustworthy-firm shelf ranked** — 102 PDFs, two rounds (54+47 reviewers, 1 resume through session-limit reset); 2 calibrator hallucinations caught and reversed | 20/71/11 tiers; 18-step main path ends on Sharma sycophancy + Salganik ceiling; convergence result: three literatures independently select outcome-coupled incentives as the only surviving advisor design |
+| 2026-07-31 | **S10 per-year prevalence** (calibrated, Pangram) — sensitivity and specificity both perfect in-domain, controls spanning five pre-2023 years | Prevalence is flat and at the control floor through 2022, inflects after 2023, and rises steeply through early 2026 — accelerating, not plateauing; interrupted-time-series slope change at the pre-registered 2023 break is significant against placebo. **Current point estimates and CIs: `analysis/s10/PROGRESS-REPORT-*.md`. Study open — do not quote figures from this log.** |
+| 2026-08-01 | Paper: Brynjolfsson-Li-Raymond QJE 2025 added to §2.2.2 (tacit competence → copyable artifact, measured); F3/F4 twin block split into in-column figures | 20pp rebuild QA'd page-by-page; p8 gap eliminated; figures now sit at their references |
+| 2026-08-02 | **S10 teaching-grade methodology write-up** (`analysis/s10/METHODOLOGY.md`) — every number's provenance, the reasoning behind each design choice, and what each figure does and does not license | Written for a reader new to this kind of analysis; paired with an adversarial review sourcing published comparators (`METHODOLOGY-REVIEW.md`) |
+| 2026-08-02 | **S10 per-chamber Pangram calibration** (Ireland/Canada/UK, uniform random — no screen stratification, so plain design-based estimates) | **Specificity 1.0 replicates outside NB: Canada 60/60 and Ireland 60/60 pre-2023 controls all Human.** Canada prevalence 17.5% AI / 26.7% AI+Mixed on the 120–360w band |
+| 2026-08-02 | **Segment-length confound found and corrected** — the chamber samples used a 120-word floor excluding 46% of segments, and flag rate rises steeply with length (Canada 11.1% at 120–199w → 22.6% at 280–360w) | Measured the excluded 50–119w band rather than extrapolating: Canada short band **2.5%** vs long band 17.5%. Corpus-weighted Canada = **10.6% ± 4.3 segment-weighted, 14.0% ± 5.3 word-weighted**. NB's sample was already length-representative (16% short vs 13.9% in pool), so **NB 7.5% and Canada 10.6% are indistinguishable — the uncorrected 7.5%-vs-17.5% gap was a sampling-frame artifact** |
+| 2026-08-02 | **S10 US corpus** — GovInfo CREC, 330 stratified sitting days. API route abandoned (DEMO_KEY caps at ~40 req/hr); the content endpoint needs no credential, so the sitting-day oracle is the zip's own status code | Extractor drops **Extensions of Remarks** (written insertions, never spoken — the largest US-specific contaminant) and Daily Digest; House and Senate run as separate corpora; `congMember` gives bioGuideId + party + state, so within-speaker is exact rather than surname-matched. Residual revise-and-extend contamination is flagged, not solved |
+| 2026-08-03 | **S10 protocol v1.1** (adversarial-review round 1 applied): present-in-both restriction + dispersion-matched placebos; mechanism test WITHDRAWN (predictor was 92% a rarity index — verified independently); citation fixed (Lause, not Berens) | Effect sizes halve; Fisher 2.4e-7 → 2.9e-6 over five chambers (US House +0.104 sig., US Senate real null on 24M words); House-vs-Senate = within-country institutional contrast |
+| 2026-08-04 | **S10 round-2 review found the fatal flaw**: the placebo null does not control for TREND. In-time placebos (pre-LLM window pairs) return excesses equal to the real effect at p<0.001 in UK/IE/CA; estimator check (odd/even split) ~0, so the drift is real and secular | Every lexicon p-value demoted to descriptive. Kobak's own trend-break counterfactual then run on a rebuilt 20-year UK corpus (2006-2026): fires on COVID 2020-21,**null on 2024/2026** — no break at LLM arrival. Lexicon arm retired as an AI instrument |
+| 2026-08-04 | **The trajectory finding** (Matthew's RLHF-mirror hypothesis): split Kobak list by instruct-over-base preference (paired generation, no Hansard data). Frequency-matched halves: RLHF-preferred words diverged from matched controls +0.25 across 2006-2019, then PLATEAUED (+0.01 across 2019-2026) | LLM output as a measure of pre-existing human preference direction; preference tuning selects the register humans were already drifting toward. Alignment experiments: instruct models over-produce Kobak style vs own base (+0.88 pooled Qwen3/Mistral; OLMo ladder: SFT +0.76, DPO +0.86, RLVR +0.37 — accrues every stage, preference heaviest, placebo stage not null) |
+| 2026-08-05 | **S10 corpus-likelihood instruments retired**: full-trace instruct-vs-base delta null in 3 families; word-position variant (Matthew's design, self-normalised, no placebo words) is the one that lands: **+0.0099 [+0.0007,+0.0196], P(<=0)=0.02, 9/10 family-chamber cells positive** | First contextual permeation evidence: phrasing around register words drifts toward the assistant; corpus-wide version stays null, so the drift is confined to register-word neighbourhoods |
+| 2026-08-06 | **S10 exposure-gradient tests** (Coherence mechanism): US Congress drift vs home-state adoption NULL (with power: party covariate t=+3.4); then the clean version — 7 provincial Hansards built from scratch (BC/AB/SK/ON/MB/NS/NL, 259 members), StatCan 22-10-0034 adoption gradient | Registered spec −0.0045 [−0.0108,+0.0009] (wrong sign); growth spec null. **No dose-response on local adoption in either country.** Emergent: pre-LLM register drift +0.04..+0.09 in 6/7 provinces — the UK secular climb is continental. NB's own archive predates 2016 only (discovery chamber, least-preserved history) |
+| 2026-08-07 | **S10 sixteen-chamber panel built**: 8 Canadian provinces + 6 Australian states (203.6M words) + Scotland/Wales/NI, each from its own archive with a bespoke extractor and a mandatory validation report | Decomposition: the register climb is **compositional**. Arrival premium (new members minus incumbents, same years) **+1.87 per 1,000, CI [+1.25,+2.49], positive in 15/16 chambers**, sign test p≈2.6e-4. Within-member change **not significant pooled** (−0.42, CI [−1.32,+0.49]) — the honest form is "incumbents flat, arrivals higher", not "incumbents declined" |
+| 2026-08-07 | **Member biographies collected** (1,396 provincial members, 79% birth-year coverage via Wikidata/enwiki) → the cohort regression | **Birth decade +0.93 (t=+12.0), rising to +1.06 with occupation and education controlled.** Candidate professionalisation and educational expansion REFUTED: communications backgrounds −0.67, law −1.67, post-secondary −0.53 — all the wrong sign. Cohort not age: chamber age flat (52.2→51.4) while register rises, and mean birth year advancing 13.8 yrs predicts +1.28 of the observed +2.06 (~60%) |
+| 2026-08-08 | **The onset is observed**: UK Commons extended to **1985–2026** (10,006 sitting-day files) | Register **declines** 1985–1994 (−18.97/yr, minimum 593 in 1994), then reverses: +31.64 (1996–2005), +42.22 (2006–2016), +28.26 (2017–2026). Placebo flat across all 41 years. **Inflection at 1994–96 = mass consumer internet; the transformer era is the slowest-growing rising period.** A pre-existing secular trend is ruled out — it was falling before the web |
+| 2026-08-08 | **Mechanism still unidentified**: cohort × province-adoption interaction **+0.09 (t=+0.97)** — later-born members from early-adopting provinces drifted no more than same-age members from late-adopting ones | Third null on isolating computer exposure specifically (after the US-state and province gradients). Defensible claim is **generational, mechanism unidentified**, ambient computing leading on timing alone. Isolating it needs province of FORMATION, which the biography data lacks |
+| 2026-08-08 | **Third and final exposure test**: member birthplaces collected (Wikidata P19, 70% coverage; **34% serve a province other than their birth province**, half foreign-born across 34 countries) — the right geography at last | Pre-committed spec A (birth-province adoption during the member's own age-15-25 window): **−0.40, t=−1.00 — null and wrong-signed**. Spec B looked significant (t=+2.20) until inference was clustered on the 10 birth provinces: **CI [−0.22,+0.33]**, 23% of resamples ≤0. Second occurrence in this study of unclustered inference on a province-level regressor manufacturing a result that flattered the hypothesis. Cohort effect unmoved throughout (+1.02..+1.22, t≈11-12). **Stopping here: three dose-response nulls; further proxies not worth running** |
+| 2026-08-04 | **Capital-cycle report 2e integrated** — models + generator into `analysis/capital-cycle/`, PDF rebuilt in-repo, primary-verification pass (10-K depreciation inventory, Moody's, Bain, mileage, ton-mile) via web agents | 2e in repo root; outline-IV.3 edits STAGED as `plans/capital-cycle-2e-integration.md` (not applied — work with Matthew); verification results in `analysis/capital-cycle/VERIFICATION.md`; Stansberry [28] never-cite rule recorded |
+| 2026-08-04 | **IV.3 worked with Matthew** — three-record precedent, rent-location bullet (July 2026 as dated case study), socialization additions, deflation clock, Arrow-clause "discharge already running" | Decisions ledgered in `plans/capital-cycle-2e-integration.md`; composition point placed in the Britain record; legibility cross-link in |
+| 2026-08-07 → 08-09 | **Endogenous-socialization thread worked with Matthew** — non-rivalry inversion, wanting/absorption, mindshare-vs-resources, the legal layer. Five Opus verification passes: non-rivalry anchors + prior art; capability-vs-Moore's-law; agriculture commons; weights/capability IP (three agents incl. peer-session work); 2026 open-weights policy | Staged as `plans/endogenous-socialization-proposal.md`; evidence in `analysis/capital-cycle/NONRIVALRY-ANCHORS.md` and `analysis/commons-precedents/{agriculture,weights-ip}.md`. **Key results:** Arrow 1962/Romer/Teece verified verbatim; the copyleft-inversion argument is **already published** (Henderson & Lemley, 100 Ind. L.J. 1327) — cite, don't claim; only the crash-vs-copy inversion, the weights≈germplasm framing, and "no right attaches to capability" came back unclaimed. **No AI provider has ever sued over distillation** (Musk conceded it under oath; no claim followed) — enforcement is termination + lobbying. Agriculture: TFP ×2.84 while terms of trade fell to 35%; the extension system **built** the farm lobby (Olson, correcting the Populism arc); OSSI abandoned copyleft over propagation, not enforceability. **Corrections applied:** capability-vs-Moore's-law is ~1.6–2×/yr extra multiplier, not an order of magnitude (Gundlach et al. is the flag to cite ourselves); the US open-weights "exemption" is from a *voluntary, unpublished* review; the industry split is over remedy scope, not open-vs-closed (OpenAI is on both sides) |
+| 2026-08-06 | **Recognition half-life measured** (`analysis/capital-cycle/recognition_halflife.py`) — era asset mixes × lives from primaries (ICC/Fishlow/Ulmer; FCC SOCC + FCC 99-397; EDGAR verbatim: WorldCom/Qwest/Williams/Level 3) via Opus agents | Railroads: **never** (betterment accounting, 100% storable; mandates 1907/1943/1983; receivership restructured claims, not assets — 18.2%/20.4% mileage peaks corrected in report+outline). Telecom: ~8–10y as booked, booked slow (fiber 40→25 restated; WilTel 21→15; GX 17.9% depreciated when impaired 74%); recognition = the 2001–04 impairment waves ($2T figure re-attributed Economist→Powell; GX capex corrected to ~$9.7B audited). AI: **3.5y** on its own schedule — the first buildout whose accounting clock outruns its bubble. Proposed IV.3 clause pending Matthew |
+| 2026-08-04 | **Register overhaul** (Matthew): S8/S9 COMMITTED → CANDIDATE, deferred — econ work first for the time being; meta/process entries retired (S4–S6, numbers reserved); Sx assigned S18; entries reordered numerically (S16/S17 moved up from below Priorities); priorities rewritten; stale S15 labels fixed to S14½; work-log rows date-sorted | Old versions in git history; Appendix A's committed-program framing in the paper left as is — revising it is a separate decision |
+| 2026-08-05 | **S8 related-works + methodology pass** (6 web agents: in-repo citation inventory, limit studies, task runtimes/NUMA, dataflow architectures, auto-parallelization history, gem5 norms) | `plans/S8-dataflow-multicore-gem5.md` written (self-contained). Key facts: gem5 NUMA feasible via CHI+Garnet (CXL-DMSim template, 3.4% silicon-validated); FS mode non-negotiable; GB10 is the right host (Arm KVM needs aarch64 — verify /dev/kvm); trace-driven limit study is the least-effort credible dataflow arm; T4/TaskMiner/Gupta-Sohi are the position-against set; ISPASS-2009 96%-coverage-behind-rare-dependences is the dynamic-information anchor; venue corrections recorded (ADM=Yoo/ASPLOS, Kremlin=PLDI, Speedup Stacks=ISPASS) |
+| 2026-08-05 | **S8 methodology reformulated** (Matthew): ideal-ASIC limit study — unlimited area under a power budget with energy-costed ops/transfers, ML-assisted placement+scheduling with a self-improving optimizer loop → constraint-project onto the gem5 architecture → evaluate → target gaps. Anchors verified (1 web agent, primary PDFs) | Plan §3 restructured (ceiling/projection/targeting; gap stack as central figure; bound conservative by construction; optimizer generations = F6's commons-maturity axis, measured). Novelty verdict: no prior unlimited-area, power-budgeted, distance-costed ideal-ASIC bound for general-purpose programs — the unprovided term is wire energy under optimized placement (Aladdin has no placement; Timeloop is affine-only; TDG bounds specific designs). Energy constants pulled from primaries (Horowitz 45nm, Keckler 40→10nm wire 240→115 fJ/bit/mm, Dally 14nm 100 fJ/bit-mm); CACTI 7 frozen at 32nm — extrapolation needed. Same day, sequencing pinned (Matthew): rung 0 = no memory, no instruction-delivery cost — pure computation placement/scheduling, the perfect-specialization (same-app-same-input) bound; program = limit + reproductions of published architectures (dsa-framework, SwarmArch candidates), then converge the two by adding realism rungs to the bound and improvements to the architectures. Floor discipline sharpened (Matthew): Hong-Kung I/O bounds don't count cross-operation reuse (weights-stationary residency pays them zero) — floors must match each rung's machine class; universal floor = op energy + compulsory I/O only. Rungs split into constraints (only hurt) vs resources (only help); "which workloads pull a RAM into the optimal mapping" named a result target |
+| 2026-08-05 | **FPGA-first pivot** (Matthew): S8+S9 unified — dataflow multicore and FPGA are two target architectures for one continuously-optimizing intelligence; FPGA first (mature tooling absorbs P&R; Zybo Z7 in hand). S8 gem5 arm + rung-0 limit parked; S9 reframed as "LLM fully replaces the human at continuous profile-and-accelerate"; new plan `plans/S9-fpga-continuous-acceleration.md`; 4-agent citation-graph pass launched (warp-processing lineage, datacenter-tax slate, LLM-for-hardware SOTA, Zybo feasibility) | Pivot rationale: end-user analysis (datacenter tax ~30% of fleet cycles; below-ISA-threshold long tail as the thesis case) plus warp processing as the on-thesis precedent — it died of the collective-action gap the paper names |
+| 2026-08-05 | **S9 related-works pass completed** — 4 agents landed (warp-processing citation graph from primary PDFs; datacenter-tax slate; LLM-for-hardware SOTA; Zybo feasibility); plan rewritten integrated | **Verified open gap: arXiv "hardware/software partitioning"+"LLM" = zero results; no published system closes the full warp loop (continuous profiling → selection → LLM synthesis → on-board validation → self-improvement)**; nearest neighbors HLSPilot (ICCAD 2024) and ContractHIL-HLS (2026 preprint, PYNQ). Warp verified: 6.3×/66% (TODAES 2006), CAD 1.2s/3.6MB; four walls (amenability/toolchain/selection/economics) all judgment bottlenecks. Tax corrected to 22–27%; flatness data (6.3% hottest function, 353 for 80%, "sea of accelerators"). Feasibility: Vivado x86-only → FEX-Emu path (2026 fixes) + x86 fallback; openXC7 0.9.x timing landed, aarch64-native; PYNQ 3.0.1 community image; board self-measures power (IMON→XADC). Baseline discipline: NEON 4–8×, A9 ~30–40× below modern core, VTA 2.1–5.3× is the calibrated expectation |
+| 2026-08-05 | **S9 profiling track started** (`analysis/s9/profiling/`) — harness on the GB10 (py-spy installed+smoke-tested, gprof path, coarse anchors), tier-1 kernel anchors on real repo data (90MB s10 JSON), `candidates.csv` seeded | gzip -9 ~21 MB/s and xz ~3 MB/s single-thread (classic FPGA targets); sha256 ~2.3 GB/s via host ARMv8 crypto vs A9 which predates the extension — a natural above/below-threshold pair on our own hardware; JSON ~235 MB/s (bridge kernel, no deployed accelerator). perf blocked (`perf_event_paranoid=4`; unlock = `sudo sysctl kernel.perf_event_paranoid=1`) — needed for tier-2 discovery on arbitrary binaries |
+| 2026-08-05 | **S9 refinements** (Matthew): LLM failure modes = first work item, not blockers (frontier models + possible project-manager-tool orchestration); board = Z7-20; profiling reframed as an **intelligent grounded whole-system observer** (VM-grade, LLM-driven — a third novel artifact) — prior-art sweep launched (continuous profiling/GWP, CoreSight/Intel PT, QEMU introspection/PANDA, LLM+monitoring). Reading collection created: `~/reading/automatic-hardware-specialization/` (README + reading path in house style; 2 fetch agents downloading ~45 PDFs) | Observable-twin pattern sketched: workload runs emulated on the GB10 where everything is visible, ground truth measured on the Zybo |
+| 2026-08-05 | **S9 observer sweep + reading shelf complete** — whole-system-observation prior art verified (3 passes); 47/47 PDFs fetched into `~/reading/automatic-hardware-specialization/` (manifests A/B, none paywalled-only) | **Second unclaimed niche confirmed: no published system has an LLM continuously holding low-level whole-machine observation and closing the optimize/offload loop** (ECO = offline/source-level; SchedCP = scheduler-only; AIOps agents = curated APIs, 11% success; HLSPilot = one-shot). Three-tier observer designed into the plan: QEMU observable twin (record/replay + TCG plugins + queryable execution store — the store and trace-diffing are themselves unbuilt primitives) → gem5 ordinal timing → Zybo ground truth (A9 PMU TMA-lite + **PTM→ETB CoreSight trace, mainline-wired; TPIU→EMIO→PL = the FPGA capturing its own CPU's instruction stream**). Key precedents: PIE (gem5 as LLM oracle), COZ (counterfactual epistemology), PANDA (record-once-replay-many) |
+| 2026-08-05 | **S9 stack nailed down** (Matthew: open-source HLS preferred; soft-core hooks endorsed as novelty source) — plan §5½; toolchain verification agent confirmed | **Flow: Bambu (primary HLS; Nane TCAD-2016: matched/beat commercial wall-clock at ~1.3× LUTs; aarch64 build untested → week-1 item) + Dynamatic dataflow arm + openXC7 (timing *analysis* landed, P&R not timing-driven) + GenZ + PYNQ/DFX; Vivado-under-FEX = reference track. Profiling: 3 instruments → one queryable execution store — always-on perf/TMA-lite+PTM snapshots; QEMU observable twin (covers both ISAs); instrumented VexRiscv (plugin architecture + FormalPlugin/RVFI verified; 2K LUTs full+MMU; Linux via LiteX, PS7 in-tree; openXC7 demos already include ps7+vexriscv).** Novelty scoped: FirePerf/TIP/ABACUS+LegUp-2011 are prior art (LegUp even did profiler→partitioning); claim only the conjunction — deployed soft core + instruction/memory-stream hooks + fully open flow + automatic decisions + observer co-designing its sensors |
+| 2026-08-05 | **S9 topology flipped** (Matthew: GB10 profiling can't close the loop) — the Zybo is the watched machine (A9 = realistic subject, full armhf userspace; instrumented VexRiscv = invasive subject, rv32 Linux via Buildroot — python3/zstd/openssl/git/ssh all packaged; NO Node/V8 on rv32 so the agent stays on the GB10 and SSHes in); GB10 = observer's machine (agent, toolchain, QEMU twin, execution store); GB10 profiling demoted to bootstrap scouting | Soft core runs the non-GPU workload mix in kind, not scale (~100–300× per-core deficit → scaled inputs; A9 ~10× the soft core); NaxRiscv rv64 flagged as unverified upgrade path |
+| 2026-08-05 | **S9 daily-driver + Claude-Code-on-RISC-V checks** (1 agent, primary sources) | Soft cores ARE daily-driven where the core is the point: Precursor/Betrusted (VexRiscv on Spartan-7 — inspectability, "evidence-based trust in silicon" quotes pulled), Somlo's self-hosting Fedora/Rocket workstation (rebuilds own bitstream on itself), Vampire V4/MEGA65; never on performance grounds. Framing: our observability = optimization-side twin of Precursor's security-side inspectability. Claude Code: rv32 = verified impossible (no Node target, V8 rv32 deprecated, QEMU 32-bit hosts dropped, box64 64-only); rv64 = demo-possible (Debian Node 20 + pinned ≤2.1.100 JS release; current releases are x64/arm64 native binaries). Agent-on-GB10 + SSH confirmed as the design |
+| 2026-08-05 | **S9 rv64 soft-core check** (Matthew: why not 64-bit?) — verified viable with margin on the SpinalHDL path | NaxRiscv RV64IMASU 17.9K LUT @137MHz (-3), **Debian riscv64 demonstrated at 100MHz on -1-grade Artix-7**; VexiiRiscv (successor, LiteX `--cpu-variant=debian` RV64GC) is the trial target — rv32-linux config only 3.35K LUT; CVA6 confirmed too big (~55–60K); Rocket fits but 25MHz. Debian trixie riscv64 official (RV64GC baseline — FPU mandatory), 1GiB headless fine, **Node 20.19 ships riscv64** → Node workloads under invasive observation possible on rv64. armhf safe through trixie. Decision rule in plan: week-1 trial synthesis, ≤25K LUT @ ≥50MHz → VexiiRiscv rv64 becomes the invasive subject |
+| 2026-08-05 | **S9 topology settled A9-primary** (Matthew): rv64-size question resolved — the published cores are big because they're *performance* designs, not because of the ISA (Vexii rv64i base = 2.16K LUTs; the real adders are ~1.5–2× datapath + the D-FPU that Debian's lp64d ABI and V8's JIT mandate; rv32's 2K figure rides soft-float Buildroot). Phase 1: A9 = watched machine (PMU + PTM trace; TPIU→EMIO→PL sustained-capture block = build item), fabric spent on accelerators; Claude-Code-on-A9 = cheap experiment (armhf Node 20.19 verified in trixie + pinned ≤2.1.100 JS release; 1 GiB vs 4 GB wall); agent-on-GB10/SSH stays the working config. Phase 2: instrumented soft core when memory-stream visibility earns its area — week-1 Vexii rv64gc trial synthesis prices it in advance | Soft core's unique capability precisely scoped: memory-address/value streams — the one thing neither the A9 nor any hard CPU of that era exposes |
+| 2026-08-05 | **S9 soft core decided** (Matthew): minimal rv64 — VexiiRiscv smallest Debian-capable RV64GC config; week-1 trial synthesis validates rather than decides; NaxRiscv → rv32 VexRiscv only as fallback ladder. **Radar added: Thompson's evolvable hardware** — verified same day (ICES 1996/LNCS 1259; 32-cell clockless core; "five" disconnected cells is Davidson's New-Scientist number, not the paper's; ~10°C window, ~7% *region*-transfer degradation). Key recovery: **Thompson & Layzell ICES 2000 solved the fragility — worst-of-four-chips fitness across foundries/temps → robust on six unseen chips at −50°C**; design principle recorded: the portability envelope must live inside the fitness function or the search sells whatever isn't varied. 9 PDFs added to the shelf (incl. Evolved Radio, Haddow-Tyrrell 2011 post-mortem, Wright Nature 2022 echo); field arc: ICES dead after 2014, intrinsic line stalled | Plan §5¾; ties to rung-0 per-input specialization vs deployment robustness |
+| 2026-08-06 | **Reading collection assembled: `~/reading/the-price-of-thought/`** (S17 v2's shelf — the ledger / captured protections / credit economy / the estimator); 15 direct fetches + 12-agent Opus fetch workflow; leg-4 prose corrected per Matthew (the falling price is intelligence itself, which is what makes Arrow's "impossibly complex" accounting possible — correction recorded in proposed-text §4 and the handoff addendum) | 26 verified PDFs incl. Machlup 1958 scan, BPEA 1987 official, Eldred brief, Boldrin-Levine full book (cite by chapter), Hemphill-Sampat SSRN-version flag, Mansfield-1985 image-only flag; **3 gaps need library pulls: Mansfield 1981 (namesake — no OA copy exists), Dasgupta-David 1994 (embargoed), Deng-Papadimitriou 1994**; README with per-item provenance; notes/ symlinked to repo |
+| 2026-08-06 | **S17 v2 — argument rebuilt per Matthew's correction** (not collapse-under-existing-metrics; the four legs: negative ledger under externality accounting / power abusing protective systems / right-to-think conditioned on market participation / open tracking intelligence as lowest-cost credit assignment); Arrow 1962 read in full (`reading/notes/arrow-1962.md`); 3 verification agents over the newly load-bearing anchors | All verified (`analysis/s17/v2_anchor_verification.md`): BSV 55/21 + LBV 57.7/13.6 + Jones-Summers $5–20/$1 (WP corrected to 27863); *Patent Failure* ~$12B costs vs ~$3B rents (contested — flag); quinolones DWL 13× the holder's gain; **Arrow signed the Eldred brief** (0.33% incentive, 224× DWL asymmetry, lost 7–2); Machlup p.80 exact; CNW framing corrected (copying still #1; strategic majorities + horse-trading quote is the defensible form); Elsevier STM 38.4% computed from RELX primary; Merton verbatim; Shapley phrasing corrected (#P-complete weighted-majority, not "in general"); Epoch 9–900×/yr (not "1000× in 2 yr"); ASCAP sampling→census + BMI v. CBS founding-on-measurement-cost quote. Staged text v2 at `plans/S17-proposed-text.md` — outline untouched |
+| 2026-08-07 | **S9 deep hunt: 9 of 13 missing works recovered** (13 Opus-medium agents, one per work; routes the shallow pass skipped — author theses, lab-wiki Wayback captures, repository OAI/REST APIs, linked code repos, SSRN, browser) | Shelf **157 PDFs**. Originals: NOVIA (MICRO 2021), Cayman (DAC 2025, author page), RACER (TACO 2025 CC-BY, + XRT sibling), Lahti HLS-QoR (green AM), Confucius. Alternates: Nair/Lysecky profiler → the two conference papers the TECS version merges (CASES'08 + DAC'09, from a Wayback capture of Lysecky's lab wiki), TraceDoctor → thesis Paper C, Sriraman Top Picks → PhD dissertation ch. VI (superset), Quickloop → SSRN preprint under a different title. Two IDs resolved (Quickloop truncation; the Confucius "companion" was a phantom — v1 title of the same arXiv entry). **Operational lesson: dl.acm.org 403 to scripts = bot-blocking, NOT paywall — ACM marks many MICRO/ISCA/TACO papers FREE ACCESS; check the landing page in a browser before declaring an ACM work unobtainable.** Outstanding 4 with verdicts: MicroBlaze warp TECS'09 (skip — DATE'05/TODAES'06 siblings carry it), AGI-Complete (free browser click gets the author's gold-OA ASPLOS'25 version), SmartNIC tax (nothing exists), Fleetbench (repo is the better artifact) |
+| 2026-08-07 | **S9 shelf completed: every sweep-proposed work fetched** (12-batch Opus-medium workflow + index pass) | **144 PDFs** (was 72); `00-MANIFEST-D.md` covers the 72 additions with sources; 13 works unobtainable (ACM/IEEE paywalled — notably NOVIA MICRO 2021 *inline* accelerators, Nair-Lysecky TECS 2011 hardware profiler, MicroBlaze warp processor TECS 2009, Fleetbench ISPASS 2024, Cayman DAC 2025; RACER TACO 2025 is gold-OA but Cloudflare-blocked — retryable); 3 byte-identical duplicates removed; all new files page-size + title verified. **The D shelf is UNRANKED.** Notable haul given the same-day thesis correction: the in-pipeline reconfigurable-coprocessor lineage (PRISC MICRO-27 1994, Garp 1997, Chimaera 2000) — the ancestry of "optimize the core itself"; Morph SOSP 1997; the observer line past TIP (TEA 2023, DIP 2026); FarSlayer (turnkey legacy-software FPGA acceleration); Melnyk's self-improvable reconfigurable system (2013/2021); Yu & Wentzlaff "Area Bloating and the Future of Specialization"; Loyd 2025 bitstream evolution (modern Thompson descendant) |
+| 2026-08-07 | **S9 thesis corrected: it's loop size, not the accelerator long tail** (Matthew: "I would be just as happy with a general purpose soft core getting optimized... And I'd also be happy just with identifying that if the NRE of an ASIC was zero, massive benefits would be possible"). New plan §0 defines three equal-success outcomes: per-app accelerators / **core-level optimization** (custom instructions, µarch retunes — better conditioned: LogCA in-pipeline break-even 128B vs 32KB on-die vs 256KB PCIe) / **zero-NRE counterfactual** (engineering-cost twin of the parked rung-0 ideal-ASIC bound). Tier 2 demoted from "the thesis case" to one instantiation; §7 gains loop-cost as the primary measured series (wall-clock, agent cost, interventions, iterations per accepted optimization, tracked as a trend) | Also settled: open-flow QoR inflation accepted — agent recovering headroom a weak free toolchain left IS the NRE-lowering result (paper §5.2's "ML breaches EDA", measured by our own loop); rule = headline speedups anchor to the commercial reference, gap-closing number reported alongside |
+| 2026-08-07 | **S9 reframed on success criteria** (Matthew: not carving a conference niche — excel at best-in-class flow results, interesting optimizations/meta-optimizations, and daily use; overlapping work is good). Plan §3 reframed (neighbors = shoulders/comparators), §3.5 comparator set added (grouped by what they measure against), §4 gained the **sea-of-accelerators challenge + design response**; all 110 sweep-proposed works dispatched for fetch | The challenge, stated: LogCA (break-even granularity g₁ set by offload overhead — in-pipeline 128B vs on-die 32KB vs PCIe 256KB), Accelerometer (per-invocation cost makes flat-tail speedup negative), AccelSeeker (breadth-first small-leaf selection measured to fail), c-cores (per-function 0.96–1.15×, runtime +22%, energy-only win) all say the long tail is the *hardest* regime, not the opportunity. Response designed in: profitability gate computes g₁ before build; kernel **fusion** to raise C; phase-2 in-pipeline coupling is the 128B regime; energy term in fitness from day one; tier-1 controls prove the flow where offload is known to pay; "the tail is uneconomic at AXI/DMA coupling" accepted as a publishable finding |
+| 2026-08-06 | **S9 shelf ranked + citation-graph swept** (90-agent workflow: 16-PDF part-C fetch, 72 Opus reviewers, 16 Opus sweep seeds, Fable calibrator; one session-limit interruption, resumed from cache) | Shelf now 72 PDFs; `00-RANKINGS.json` (18/51/3 tiers; 156 red flags — recurring: LogCA-class interface-cost math pressures the tier-2 "sea of accelerators" premise at AXI/DMA coupling, argues for in-pipeline hooks/fusion) + `00-CITATION-SWEEP.json` (**64 threat-flagged 2025–26 works — the agentic-hardware neighborhood is far busier than the 08-05 verification found**: A3D (Purdue, "closest to niche 1"), HSCO-Bench (real-FPGA deploy, erodes on-board-validation differentiator), AgRefactor/HLS-Seek/A2H-MAS (mode-2/3 neighbors), PRAGMA/KernelPro/AccelOpt (profiling-guided LLM loops on GPU/NPU/Trainium), Magellan/AI-PROPELLER (fleet profiles + evolved optimizer), Icicle (TMA on Rocket/BOOM, narrows niche 3), McDougall/Sankaralingam in-field introspection units, Morph SOSP 1997 (the standing task as OS service), Cayman/ISAMORE (non-LLM auto kernel selection). ALL API-level finds pending verification before positioning rewrites). Calibration: 4 tier promotions noted in README; Accelerometer PDF was the talk deck (re-fetch dispatched); 46 priority-1 shelf additions proposed |
+| 2026-08-04 | **S17 registered and executed** — Nordhaus WP 10433 read in full (notes: `reading/notes/nordhaus-2004.md`), capture ratio re-solved over measured AI imitation lags (Epoch ECI + 2 independent metrics), cost-ratio series, negative control, externality anchors verified (3 web agents); register numbering deduped (S15 = four-horsemen, staff-change = S14½) | **Capture 2.2% → ~0.15–0.19% at 2023–26 lags (11–15×, α held at 0.07); uncaptured share 97.8% → 99.8%.** Negative control flat (pharma 13.5→14.1 yr; fab ~4 yr both sides of export controls); no modern Mansfield replication exists (reportable absence). Nordhaus's own §V predicted the direction. Artifacts `analysis/s17/`; proposed text STAGED `plans/S17-proposed-text.md` (outline untouched); vendor methane cost figures killed in verification; SCC 4× move NOT attributable to discounting alone — framing constraint recorded |
+
+---
+
+## Priorities, as I see them
+
+*(Rewritten 2026-08-04 for the econ focus; the earlier committed-program
+ordering is in git history.)*
+
+1. **The econ thread.** S17's capture-ratio result into the outline (placement
+   staged at `plans/S17-proposed-text.md` — decide with Matthew, not
+   autonomously), the capital-cycle 2e integration
+   (`plans/capital-cycle-2e-integration.md`, same rule), S18's remaining
+   verification debt, and S16's after-hours census — the one cheap original
+   measurement in the thread.
+2. **S10, open and essentially free.** The per-year prevalence series is the
+   project's best original figure; the negative control remains non-negotiable.
+   S14½ rides along on the same corpus.
+3. **S11+S12 merged**, if the criterion section is going to make a quantitative
+   claim rather than a structural one — and the S15 simulation link makes the
+   shared harness the strongest version of that case.
+4. **Architecture studies, when focus returns:** S8 first (it converts §1.2's
+   central inference into a measurement), S9 second, S13 as the long horizon;
+   S14 when Omerta phase 1.5 exists.
+
 ## Open decisions
 
 - S10: which detector, and subscription vs API pacing? (pilot answer: Falcon pair + Fast-DetectGPT sweep, Pangram adjudicates; batch ready)
-- S15: Delta vs LUAR embeddings; staff-timeline sourcing depth (directory Wayback vs Public Accounts only)
+- S14½: Delta vs LUAR embeddings; staff-timeline sourcing depth (directory Wayback vs Public Accounts only)
 - S11/S12: commit as a fifth Appendix A effort, or leave as stated open questions?
 - S9: Intel desktop for PIN-based tracing, or stay on the current machine?
+- S17: does the appropriability collapse go into IV.2/IV.3 as mechanism, or get
+  its own subsection? How hard to pitch the sale→compensation claim (V.5's
+  whether-to-when template is the obvious calibration)? Does the externality
+  half become its own study (measuring the externality-estimation cost curve
+  the way S17 measures the imitation lag), or stay a cited structural argument?

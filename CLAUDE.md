@@ -24,11 +24,13 @@ soft-core validation second).
 | `the-performance-commons-figure*.png` | Figures 1–5. Fig 2 is the compact single-column version (direct labels, no legend box). |
 | `the-performance-commons-figures-and-tables.md` / `.pdf` | Companion "List of Figures and Tables." Keep in sync (md updated for T4; pdf regenerate pending). |
 | `dataflow-vs-heterogeneous-architecture.md` / `.pdf` | Companion technical report behind §2 / Figure 1. |
-| `assets-rents-socialized-buildout.pdf` | Companion report (Claude dialogue w/ Matthew, 2026-07-27): AI capital cycle — $27T attach vs ~$1.2T stock, rent/revenue requirements, telecom precedent, open-weights-as-bequest. Feeds Cosmic AC outline IV.3. |
+| `assets-rents-socialized-buildout-2e.pdf` | Companion report, **2nd ed.** (Claude dialogue w/ Matthew, 2026-08-04): AI capital cycle — $27T attach vs ~$1.2T stock, rent/revenue requirements + buildout precedents (railway mania/US railroads/telecom, Table 6), toll-booth layer + rent-location corollary, July 2026 rotation, circular-economy additions. Feeds Cosmic AC outline IV.3 (integration proposal: `plans/capital-cycle-2e-integration.md`). 1e kept as `assets-rents-socialized-buildout.pdf` (historical). |
+| `analysis/capital-cycle/` | Reproducible artifacts behind the 2e report: `build_report_v2.py` (**canonical source of the report's text** — edit + rerun, never edit the PDF), `ai_stock.py` (vintage stock model, Tables 1–2), `gdp_req.py` (revenue-requirement inversion, Tables 3–4), `VERIFICATION.md` (primary-source pass; **never cite the report's ref [28] (Stansberry) in paper text**), handoff doc, README. |
 | `outline-cosmic-ac.md` | Working outline for the widened compute-commons paper (v1 + capital-cycle integration). Matthew iterating on structure/subtitle with ChatGPT in parallel. |
 | `studies-and-work-log.md` | **Study register + dated work log** (S1–S14: done, committed, candidate) — start here for "what have we actually run, and what's next." |
 | `plans/` | Per-study session plans. `S10-legislative-ai-detection.md` is self-contained — a fresh session can execute from it. |
 | `analysis/s10/` | **S10 pilot (2026-07-29)**: Hansard extraction+scoring pipeline, throughput benchmarks, scores, `PILOT.md` memo. GB10 env gotchas (torch cu130, JIT cache, clock cap) documented there. |
+| `analysis/s17/` | **S17 (2026-08-04)**: Nordhaus capture ratio re-solved at measured AI imitation lags (2.2% → ~0.2%, 11–15×). Lag/cost CSVs, negative control, externality-anchor verification, README with honest limits. Proposed paper text staged at `plans/S17-proposed-text.md` — outline untouched, Matthew decides. |
 | `performance-commons-handoff.zip` | Original handoff archive (historical; already extracted). |
 | `build/` | Figure + PDF pipeline (`bash build/build.sh`). |
 
