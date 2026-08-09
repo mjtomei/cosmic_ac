@@ -63,3 +63,10 @@ analysis/s10/band_screen_pool.json
 analysis/s9/profiling/runs/
 analysis/_scratch_ins/
 fetched/
+
+# Acquired papers live beside the analysis that cites them, but are never
+# committed — the guard blocks them too. Scripts and results are versioned.
+analysis/*/profiling/*.pdf
+analysis/**/*.pdf
+!analysis/**/METHODOLOGY*.pdf
+!analysis/**/REVIEW*.pdf
