@@ -391,14 +391,6 @@ chamber), and DQI grading of successful evaders against their originals. The
 question is whether evasion is free or costs deliberative quality. If free,
 12.4% is a floor and detection is a dead end.
 
-**Bypass study:** `[PENDING]` — ladder of rewrites seeded from the 45
-natural low-Opus/Pangram-AI cases in §4.4, with a **human-text control arm
-through the identical ladder** (without it a drop in flags is unattributable
-— heavy paraphrase may destroy the register that makes human text look
-human), and DQI grading of successful evaders against their originals. The
-question is whether evasion is free or costs deliberative quality. If free,
-12.4% is a floor and detection is a dead end.
-
 ---
 
 ## 5. Limits
