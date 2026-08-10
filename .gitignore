@@ -56,7 +56,13 @@ reading/notes/*-transcript.txt
 # text verbatim, so they inherit its licence and stay out of the public repo.
 analysis/s10/align_ratio/
 analysis/s10/word_context/
-analysis/s10/quality_expansion/
+# quality_expansion: ignore only the blinded TEXT pools, which carry Hansard
+# verbatim. The scripts, unblinding keys (metadata only) and graded results
+# (scores only) carry no source text and are tracked, so the quality arm is
+# reproducible from the repo given the corpora.
+analysis/s10/quality_expansion/pool.json
+analysis/s10/quality_expansion/pool2.json
+analysis/s10/quality_expansion/judge_blind_pool.json
 analysis/s10/band_screen_pool.json
 
 # Scratch download areas and large run inputs — acquired sources, not our work.

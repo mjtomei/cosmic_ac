@@ -1,0 +1,6140 @@
+{
+ "R0000": {
+  "chamber": "WAL",
+  "verdict": "Mixed",
+  "date": "2026-01-14",
+  "speaker": "Laura Anne Jones",
+  "n_words": 195,
+  "seg_id": "WAL2026-01-14#t239w0",
+  "genre": null
+ },
+ "R0001": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2026-01-28",
+  "speaker": "Fred Davies (Niagara South, CPC)",
+  "n_words": 181,
+  "seg_id": "CA2026-01-28#t2w0",
+  "genre": "SO31"
+ },
+ "R0002": {
+  "chamber": "NSW",
+  "verdict": "AI",
+  "date": "2025-12-23",
+  "speaker": "The Hon. MARK BANASIAK",
+  "n_words": 224,
+  "seg_id": "NSWLC2025-12-23#t27w7",
+  "genre": null
+ },
+ "R0003": {
+  "chamber": "AB",
+  "verdict": "Human",
+  "date": "2026-04-15",
+  "speaker": "Ms Hoffman",
+  "n_words": 135,
+  "seg_id": "AB2026-04-15#t51w0",
+  "genre": null
+ },
+ "R0004": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2025-10-27",
+  "speaker": "Bruce Banman",
+  "n_words": 345,
+  "seg_id": "BC2025-10-27#t101w4",
+  "genre": null
+ },
+ "R0005": {
+  "chamber": "US-SENATE",
+  "verdict": "Mixed",
+  "date": "2025-12-09",
+  "speaker": "Mr. SULLIVAN",
+  "n_words": 267,
+  "seg_id": "US2025-12-09-S8569#t0w10",
+  "genre": null
+ },
+ "R0006": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-11-07",
+  "speaker": "Hon. Andrew Scheer (Regina\u2014Qu'Appelle, CPC)",
+  "n_words": 120,
+  "seg_id": "CA2025-11-07#t79w0",
+  "genre": "OQ"
+ },
+ "R0007": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2026-06-02",
+  "speaker": "Branden Leslie (Portage\u2014Lisgar, CPC)",
+  "n_words": 216,
+  "seg_id": "CA2026-06-02#t120w0",
+  "genre": "SO31"
+ },
+ "R0008": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2026-03-18",
+  "speaker": "Mr PAUL SCULLY",
+  "n_words": 308,
+  "seg_id": "NSWLA2026-03-18#t76w0",
+  "genre": null
+ },
+ "R0009": {
+  "chamber": "SK",
+  "verdict": "AI",
+  "date": "2026-03-23",
+  "speaker": "Hon. Chris Beaudry",
+  "n_words": 360,
+  "seg_id": "SK2026-03-23#t0w8",
+  "genre": null
+ },
+ "R0010": {
+  "chamber": "BC",
+  "verdict": "Mixed",
+  "date": "2026-02-23",
+  "speaker": "Stephanie Higginson",
+  "n_words": 354,
+  "seg_id": "BC2026-02-23#t25w0",
+  "genre": null
+ },
+ "R0011": {
+  "chamber": "Dail Eireann",
+  "verdict": "Human",
+  "date": "2025-10-02",
+  "speaker": "Deputy Jennifer Carroll MacNeill",
+  "n_words": 216,
+  "seg_id": "IE2025-10-02#t239w0",
+  "genre": null
+ },
+ "R0012": {
+  "chamber": "US-SENATE",
+  "verdict": "AI",
+  "date": "2026-04-15",
+  "speaker": "Ms. SMITH",
+  "n_words": 354,
+  "seg_id": "US2026-04-15-S1790-3#t6w41",
+  "genre": null
+ },
+ "R0013": {
+  "chamber": "MB",
+  "verdict": "AI",
+  "date": "2026-05-05",
+  "speaker": "MLA Sandhu",
+  "n_words": 353,
+  "seg_id": "MB2026-05-05#t42w2",
+  "genre": null
+ },
+ "R0014": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-04-30",
+  "speaker": "Rosemarie Falk (Battlefords\u2014Lloydminster\u2014Meadow Lake, CPC)",
+  "n_words": 151,
+  "seg_id": "CA2026-04-30#t130w0",
+  "genre": "SO31"
+ },
+ "R0015": {
+  "chamber": "US-HOUSE",
+  "verdict": "Human",
+  "date": "2026-06-29",
+  "speaker": "Mr. CARTER of Georgia",
+  "n_words": 156,
+  "seg_id": "US2026-06-29-H4309-4#t8w0",
+  "genre": null
+ },
+ "R0016": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2025-11-28",
+  "speaker": "Vincent Ho (Richmond Hill South, CPC)",
+  "n_words": 211,
+  "seg_id": "CA2025-11-28#t43w0",
+  "genre": "SO31"
+ },
+ "R0017": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2025-03-11",
+  "speaker": "Mrs Long",
+  "n_words": 215,
+  "seg_id": "NI2025-03-11#t189w0",
+  "genre": null
+ },
+ "R0018": {
+  "chamber": "NI",
+  "verdict": "Mixed",
+  "date": "2026-04-27",
+  "speaker": "Mr Muir (The Minister of Agriculture, Environment and Rural Affairs)",
+  "n_words": 339,
+  "seg_id": "NI2026-04-27#t214w0",
+  "genre": null
+ },
+ "R0019": {
+  "chamber": "US-HOUSE",
+  "verdict": "Human",
+  "date": "2026-05-14",
+  "speaker": "Mr. RASKIN",
+  "n_words": 349,
+  "seg_id": "US2026-05-14-H3480#t19w0",
+  "genre": null
+ },
+ "R0020": {
+  "chamber": "NSW",
+  "verdict": "AI",
+  "date": "2026-06-23",
+  "speaker": "Ms MARYANNE STUART",
+  "n_words": 312,
+  "seg_id": "NSWLA2026-06-23#t136w0",
+  "genre": null
+ },
+ "R0021": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2025-05-01",
+  "speaker": "Hon. Niki Sharma",
+  "n_words": 121,
+  "seg_id": "BC2025-05-01#t362w0",
+  "genre": null
+ },
+ "R0022": {
+  "chamber": "NI",
+  "verdict": "AI",
+  "date": "2026-04-27",
+  "speaker": "Mrs Erskine",
+  "n_words": 207,
+  "seg_id": "NI2026-04-27#t210w1",
+  "genre": null
+ },
+ "R0023": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-02-27",
+  "speaker": "Peter Fragiskatos (Parliamentary Secretary to the Minister of Immigration, Refugees and Citizenship, Lib.)",
+  "n_words": 125,
+  "seg_id": "CA2026-02-27#t60w0",
+  "genre": "OQ"
+ },
+ "R0024": {
+  "chamber": "US-HOUSE",
+  "verdict": "Human",
+  "date": "2026-07-23",
+  "speaker": "Ms. CHU",
+  "n_words": 355,
+  "seg_id": "US2026-07-23-H5182-6#t3w2",
+  "genre": null
+ },
+ "R0025": {
+  "chamber": "QLD",
+  "verdict": "Mixed",
+  "date": "2025-04-01",
+  "speaker": "DOOLAN",
+  "n_words": 339,
+  "seg_id": "QLD2025-04-01#t171w0",
+  "genre": null
+ },
+ "R0026": {
+  "chamber": "NS",
+  "verdict": "Human",
+  "date": "2025-02-25",
+  "speaker": "ELIZABETH SMITH-MCCROSSIN",
+  "n_words": 268,
+  "seg_id": "NS2025-02-25#t138w2",
+  "genre": null
+ },
+ "R0027": {
+  "chamber": "US-HOUSE",
+  "verdict": "Mixed",
+  "date": "2026-04-15",
+  "speaker": "Mr. PFLUGER",
+  "n_words": 304,
+  "seg_id": "US2026-04-15-H2902#t5w1",
+  "genre": null
+ },
+ "R0028": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-12-09",
+  "speaker": "Lianne Rood (Middlesex\u2014London, CPC)",
+  "n_words": 130,
+  "seg_id": "CA2025-12-09#t228w0",
+  "genre": "OQ"
+ },
+ "R0029": {
+  "chamber": "SCO",
+  "verdict": "AI",
+  "date": "2026-06-10",
+  "speaker": "Liam Kerr",
+  "n_words": 289,
+  "seg_id": "SCO2026-06-10#t10005w1",
+  "genre": null
+ },
+ "R0030": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2025-11-04",
+  "speaker": "Mr Donnelly",
+  "n_words": 323,
+  "seg_id": "NI2025-11-04#t346w1",
+  "genre": null
+ },
+ "R0031": {
+  "chamber": "AB",
+  "verdict": "Mixed",
+  "date": "2025-05-06",
+  "speaker": "Member Miyashiro",
+  "n_words": 351,
+  "seg_id": "AB2025-05-06#t28w2",
+  "genre": null
+ },
+ "R0032": {
+  "chamber": "NSW",
+  "verdict": "Mixed",
+  "date": "2025-09-17",
+  "speaker": "Ms LYNDA VOLTZ",
+  "n_words": 125,
+  "seg_id": "NSWLA2025-09-17#t89w4",
+  "genre": null
+ },
+ "R0033": {
+  "chamber": "CA-FED",
+  "verdict": "Mixed",
+  "date": "2025-10-22",
+  "speaker": "Brad Redekopp (Saskatoon West, CPC)",
+  "n_words": 177,
+  "seg_id": "CA2025-10-22#t2w0",
+  "genre": "SO31"
+ },
+ "R0034": {
+  "chamber": "SA",
+  "verdict": "Mixed",
+  "date": "2025-03-20",
+  "speaker": "Mr ODENWALDER",
+  "n_words": 347,
+  "seg_id": "SAHA2025-03-20#t14w5",
+  "genre": null
+ },
+ "R0035": {
+  "chamber": "BC",
+  "verdict": "Mixed",
+  "date": "2026-03-31",
+  "speaker": "Hon. Anne Kang",
+  "n_words": 196,
+  "seg_id": "BC2026-03-31#t11w0",
+  "genre": null
+ },
+ "R0036": {
+  "chamber": "NS",
+  "verdict": "Mixed",
+  "date": "2026-03-12",
+  "speaker": "CHRIS PALMER",
+  "n_words": 164,
+  "seg_id": "NS2026-03-12#t36w0",
+  "genre": null
+ },
+ "R0037": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-10-10",
+  "speaker": "Michael Kram (Regina\u2014Wascana, CPC)",
+  "n_words": 130,
+  "seg_id": "CA2025-10-10#t43w0",
+  "genre": "SO31"
+ },
+ "R0038": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2025-11-24",
+  "speaker": "Mr Givan",
+  "n_words": 256,
+  "seg_id": "NI2025-11-24#t175w0",
+  "genre": null
+ },
+ "R0039": {
+  "chamber": "ON",
+  "verdict": "Human",
+  "date": "2025-05-26",
+  "speaker": "Mr. Brian Saunderson",
+  "n_words": 159,
+  "seg_id": "ON2025-05-26#t5w0",
+  "genre": null
+ },
+ "R0040": {
+  "chamber": "TAS",
+  "verdict": "Human",
+  "date": "2026-06-17",
+  "speaker": "Dr WOODRUFF",
+  "n_words": 352,
+  "seg_id": "TASHA2026-06-17#p1t56w7",
+  "genre": null
+ },
+ "R0041": {
+  "chamber": "WA",
+  "verdict": "Human",
+  "date": "2025-11-11",
+  "speaker": "Hon Matthew Swinbourn",
+  "n_words": 166,
+  "seg_id": "WALC2025-11-11#t30w0",
+  "genre": null
+ },
+ "R0042": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2026-02-02",
+  "speaker": "Andrew Lawton",
+  "n_words": 163,
+  "seg_id": "CA2026-02-02#t287w0",
+  "genre": null
+ },
+ "R0043": {
+  "chamber": "ON",
+  "verdict": "AI",
+  "date": "2026-05-04",
+  "speaker": "Ms. Teresa J. Armstrong",
+  "n_words": 233,
+  "seg_id": "ON2026-05-04#t25w0",
+  "genre": null
+ },
+ "R0044": {
+  "chamber": "NS",
+  "verdict": "Human",
+  "date": "2025-10-02",
+  "speaker": "ROD WILSON",
+  "n_words": 350,
+  "seg_id": "NS2025-10-02#t165w1",
+  "genre": null
+ },
+ "R0045": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2026-02-24",
+  "speaker": "Yvan Baker (Etobicoke Centre, Lib.)",
+  "n_words": 216,
+  "seg_id": "CA2026-02-24#t242w0",
+  "genre": "OQ"
+ },
+ "R0046": {
+  "chamber": "NS",
+  "verdict": "Human",
+  "date": "2026-02-25",
+  "speaker": "HON. BECKY DRUHAN",
+  "n_words": 281,
+  "seg_id": "NS2026-02-25#t146w3",
+  "genre": null
+ },
+ "R0047": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-06-16",
+  "speaker": "Hon. Sean Fraser (Minister of Justice and Attorney General of Canada and Minister responsible for the Atlantic Canada Opportunities Agency, Lib.)",
+  "n_words": 126,
+  "seg_id": "CA2025-06-16#t211w0",
+  "genre": "OQ"
+ },
+ "R0048": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2025-03-13",
+  "speaker": "BATES",
+  "n_words": 358,
+  "seg_id": "QLD2025-03-13#t159w0",
+  "genre": null
+ },
+ "R0049": {
+  "chamber": "TAS",
+  "verdict": "Mixed",
+  "date": "2026-05-28",
+  "speaker": "Ms BROWN",
+  "n_words": 329,
+  "seg_id": "TASHA2026-05-28#p1t78w1",
+  "genre": null
+ },
+ "R0050": {
+  "chamber": "WAL",
+  "verdict": "Mixed",
+  "date": "2026-06-16",
+  "speaker": "Dafydd Trystan Davies",
+  "n_words": 166,
+  "seg_id": "WAL2026-06-16#t92w0",
+  "genre": null
+ },
+ "R0051": {
+  "chamber": "NSW",
+  "verdict": "AI",
+  "date": "2026-05-13",
+  "speaker": "Mrs WENDY TUCKERMAN",
+  "n_words": 308,
+  "seg_id": "NSWLA2026-05-13#t230w0",
+  "genre": null
+ },
+ "R0052": {
+  "chamber": "ON",
+  "verdict": "Mixed",
+  "date": "2025-12-11",
+  "speaker": "Mrs. Jennifer (Jennie) Stevens",
+  "n_words": 344,
+  "seg_id": "ON2025-12-11#t1w5",
+  "genre": null
+ },
+ "R0053": {
+  "chamber": "SK",
+  "verdict": "Mixed",
+  "date": "2025-12-01",
+  "speaker": "Chris Beaudry",
+  "n_words": 235,
+  "seg_id": "SK2025-12-01#t16w0",
+  "genre": null
+ },
+ "R0054": {
+  "chamber": "NS",
+  "verdict": "Human",
+  "date": "2026-03-09",
+  "speaker": "KENDRA COOMBES",
+  "n_words": 356,
+  "seg_id": "NS2026-03-09#t74w6",
+  "genre": null
+ },
+ "R0055": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2026-05-12",
+  "speaker": "Mr RYAN PARK",
+  "n_words": 128,
+  "seg_id": "NSWLA2026-05-12#t29w0",
+  "genre": null
+ },
+ "R0056": {
+  "chamber": "SK",
+  "verdict": "Mixed",
+  "date": "2026-04-21",
+  "speaker": "Erika Ritchie",
+  "n_words": 347,
+  "seg_id": "SK2026-04-21#t74w0",
+  "genre": null
+ },
+ "R0057": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2025-05-01",
+  "speaker": "Hon. Niki Sharma",
+  "n_words": 175,
+  "seg_id": "BC2025-05-01#t315w0",
+  "genre": null
+ },
+ "R0058": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Mixed",
+  "date": "2026-06-16",
+  "speaker": "Dan Mazier (Riding Mountain, CPC)",
+  "n_words": 347,
+  "seg_id": "CA2026-06-16#t277w0",
+  "genre": null
+ },
+ "R0059": {
+  "chamber": "ON",
+  "verdict": "Human",
+  "date": "2025-11-27",
+  "speaker": "Hon. Sam Oosterhoff",
+  "n_words": 180,
+  "seg_id": "ON2025-11-27#t208w0",
+  "genre": null
+ },
+ "R0060": {
+  "chamber": "US-HOUSE",
+  "verdict": "AI",
+  "date": "2025-09-09",
+  "speaker": "Mr. ROGERS of Alabama",
+  "n_words": 308,
+  "seg_id": "US2025-09-09-H3915#t45w148",
+  "genre": null
+ },
+ "R0061": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Mixed",
+  "date": "2026-02-03",
+  "speaker": "Rhonda Kirkland (Oshawa, CPC)",
+  "n_words": 232,
+  "seg_id": "CA2026-02-03#t17w0",
+  "genre": null
+ },
+ "R0062": {
+  "chamber": "ON",
+  "verdict": "AI",
+  "date": "2025-10-21",
+  "speaker": "Hon. Andrea Khanjin",
+  "n_words": 274,
+  "seg_id": "ON2025-10-21#t0w8",
+  "genre": null
+ },
+ "R0063": {
+  "chamber": "BC",
+  "verdict": "AI",
+  "date": "2025-10-27",
+  "speaker": "George Anderson",
+  "n_words": 281,
+  "seg_id": "BC2025-10-27#t18w1",
+  "genre": null
+ },
+ "R0064": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2025-06-03",
+  "speaker": "Mr RAY WILLIAMS",
+  "n_words": 266,
+  "seg_id": "NSWLA2025-06-03#t105w2",
+  "genre": null
+ },
+ "R0065": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2026-01-19",
+  "speaker": "Mr McGrath",
+  "n_words": 264,
+  "seg_id": "NI2026-01-19#t19w0",
+  "genre": null
+ },
+ "R0066": {
+  "chamber": "BC",
+  "verdict": "AI",
+  "date": "2025-11-18",
+  "speaker": "David Williams",
+  "n_words": 128,
+  "seg_id": "BC2025-11-18#t73w0",
+  "genre": null
+ },
+ "R0067": {
+  "chamber": "US-SENATE",
+  "verdict": "Mixed",
+  "date": "2025-09-04",
+  "speaker": "Ms. ROSEN",
+  "n_words": 255,
+  "seg_id": "US2025-09-04-S6316#t0w0",
+  "genre": null
+ },
+ "R0068": {
+  "chamber": "WA",
+  "verdict": "Mixed",
+  "date": "2025-08-14",
+  "speaker": "Hon Rod Caddies",
+  "n_words": 284,
+  "seg_id": "WALC2025-08-14#t42w0",
+  "genre": null
+ },
+ "R0069": {
+  "chamber": "NSW",
+  "verdict": "AI",
+  "date": "2025-05-08",
+  "speaker": "Ms LIZA BUTLER",
+  "n_words": 272,
+  "seg_id": "NSWLA2025-05-08#t107w1",
+  "genre": null
+ },
+ "R0070": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2026-01-28",
+  "speaker": "Jeremy Patzer (Swift Current\u2014Grasslands\u2014Kindersley, CPC)",
+  "n_words": 201,
+  "seg_id": "CA2026-01-28#t13w0",
+  "genre": null
+ },
+ "R0071": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2026-03-04",
+  "speaker": "BUTCHER",
+  "n_words": 352,
+  "seg_id": "QLD2026-03-04#t122w1",
+  "genre": null
+ },
+ "R0072": {
+  "chamber": "WA",
+  "verdict": "AI",
+  "date": "2025-10-14",
+  "speaker": "Mrs Magenta Marshall",
+  "n_words": 350,
+  "seg_id": "WALA2025-10-14#t125w1",
+  "genre": null
+ },
+ "R0073": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2025-06-17",
+  "speaker": "Branden Leslie (Portage\u2014Lisgar, CPC)",
+  "n_words": 306,
+  "seg_id": "CA2025-06-17#t277w3",
+  "genre": null
+ },
+ "R0074": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2025-09-22",
+  "speaker": "Wade Grant",
+  "n_words": 195,
+  "seg_id": "CA2025-09-22#t301w0",
+  "genre": null
+ },
+ "R0075": {
+  "chamber": "US-HOUSE",
+  "verdict": "AI",
+  "date": "2025-04-01",
+  "speaker": "Mr. GRIFFITH",
+  "n_words": 327,
+  "seg_id": "US2025-04-01-H1389-6#t53w1",
+  "genre": null
+ },
+ "R0076": {
+  "chamber": "NS",
+  "verdict": "Human",
+  "date": "2026-04-07",
+  "speaker": "MICHELLE THOMPSON",
+  "n_words": 132,
+  "seg_id": "NS2026-04-07#t76w0",
+  "genre": null
+ },
+ "R0077": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2025-12-10",
+  "speaker": "NICHOLLS",
+  "n_words": 139,
+  "seg_id": "QLD2025-12-10#t36w0",
+  "genre": null
+ },
+ "R0078": {
+  "chamber": "US-HOUSE",
+  "verdict": "Mixed",
+  "date": "2026-02-11",
+  "speaker": "Mr. McGOVERN",
+  "n_words": 220,
+  "seg_id": "US2026-02-11-H2121-6#t54w1",
+  "genre": null
+ },
+ "R0079": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2025-11-26",
+  "speaker": "Claire Ratt\u00e9e",
+  "n_words": 121,
+  "seg_id": "BC2025-11-26#t283w0",
+  "genre": null
+ },
+ "R0080": {
+  "chamber": "TAS",
+  "verdict": "Human",
+  "date": "2026-03-17",
+  "speaker": "Ms FINLAY",
+  "n_words": 295,
+  "seg_id": "TASHA2026-03-17#p1t72w3",
+  "genre": null
+ },
+ "R0081": {
+  "chamber": "QLD",
+  "verdict": "AI",
+  "date": "2026-03-26",
+  "speaker": "YOUNG",
+  "n_words": 186,
+  "seg_id": "QLD2026-03-26#t189w1",
+  "genre": null
+ },
+ "R0082": {
+  "chamber": "SA",
+  "verdict": "Human",
+  "date": "2025-06-17",
+  "speaker": "Ms HOOD",
+  "n_words": 323,
+  "seg_id": "SAHA2025-06-17#t5w0",
+  "genre": null
+ },
+ "R0083": {
+  "chamber": "AB",
+  "verdict": "AI",
+  "date": "2025-12-01",
+  "speaker": "Member Boparai",
+  "n_words": 346,
+  "seg_id": "AB2025-12-01#t11w0",
+  "genre": null
+ },
+ "R0084": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2025-05-05",
+  "speaker": "Gavin Dew",
+  "n_words": 126,
+  "seg_id": "BC2025-05-05#t649w0",
+  "genre": null
+ },
+ "R0085": {
+  "chamber": "US-HOUSE",
+  "verdict": "Human",
+  "date": "2025-03-24",
+  "speaker": "Ms. STEVENS",
+  "n_words": 308,
+  "seg_id": "US2025-03-24-H1202#t3w0",
+  "genre": null
+ },
+ "R0086": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-04-23",
+  "speaker": "Hon. Andrew Scheer (Regina\u2014Qu'Appelle, CPC)",
+  "n_words": 177,
+  "seg_id": "CA2026-04-23#t235w0",
+  "genre": "OQ"
+ },
+ "R0087": {
+  "chamber": "QLD",
+  "verdict": "AI",
+  "date": "2026-06-25",
+  "speaker": "PURDIE",
+  "n_words": 354,
+  "seg_id": "QLD2026-06-25#t329w0",
+  "genre": null
+ },
+ "R0088": {
+  "chamber": "ON",
+  "verdict": "AI",
+  "date": "2025-11-05",
+  "speaker": "Ms. Jess Dixon",
+  "n_words": 329,
+  "seg_id": "ON2025-11-05#t129w6",
+  "genre": null
+ },
+ "R0089": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2025-09-18",
+  "speaker": "Ryan Turnbull (Whitby, Lib.)",
+  "n_words": 171,
+  "seg_id": "CA2025-09-18#t113w0",
+  "genre": "SO31"
+ },
+ "R0090": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2025-03-13",
+  "speaker": "O\u2019CONNOR",
+  "n_words": 336,
+  "seg_id": "QLD2025-03-13#t181w0",
+  "genre": null
+ },
+ "R0091": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2026-05-12",
+  "speaker": "Mr McGrath",
+  "n_words": 311,
+  "seg_id": "NI2026-05-12#t130w3",
+  "genre": null
+ },
+ "R0092": {
+  "chamber": "ON",
+  "verdict": "Mixed",
+  "date": "2025-05-05",
+  "speaker": "Ms. Stephanie Bowman",
+  "n_words": 272,
+  "seg_id": "ON2025-05-05#t119w3",
+  "genre": null
+ },
+ "R0093": {
+  "chamber": "ON",
+  "verdict": "AI",
+  "date": "2026-05-06",
+  "speaker": "Hon. Peter Bethlenfalvy",
+  "n_words": 356,
+  "seg_id": "ON2026-05-06#t0w1",
+  "genre": null
+ },
+ "R0094": {
+  "chamber": "SCO",
+  "verdict": "Human",
+  "date": "2025-03-27",
+  "speaker": "Ross Greer",
+  "n_words": 344,
+  "seg_id": "SCO2025-03-27#t6594w0",
+  "genre": null
+ },
+ "R0095": {
+  "chamber": "VIC",
+  "verdict": "Mixed",
+  "date": "2025-12-04",
+  "speaker": "Wendy LOVELL",
+  "n_words": 344,
+  "seg_id": "VICLC:Second-reading:2025-12-04#t35w11",
+  "genre": null
+ },
+ "R0096": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2026-03-17",
+  "speaker": "Ms KOBI SHETTY",
+  "n_words": 241,
+  "seg_id": "NSWLA2026-03-17#t146w0",
+  "genre": null
+ },
+ "R0097": {
+  "chamber": "NL",
+  "verdict": "AI",
+  "date": "2026-05-20",
+  "speaker": "M. BUTT",
+  "n_words": 350,
+  "seg_id": "NL2026-05-20#t142w1",
+  "genre": null
+ },
+ "R0098": {
+  "chamber": "AB",
+  "verdict": "Mixed",
+  "date": "2025-12-02",
+  "speaker": "Mr. Haji",
+  "n_words": 357,
+  "seg_id": "AB2025-12-02#t146w2",
+  "genre": null
+ },
+ "R0099": {
+  "chamber": "NI",
+  "verdict": "Mixed",
+  "date": "2026-06-22",
+  "speaker": "Ms Bunting",
+  "n_words": 276,
+  "seg_id": "NI2026-06-22#t318w0",
+  "genre": null
+ },
+ "R0100": {
+  "chamber": "NSW",
+  "verdict": "AI",
+  "date": "2026-03-24",
+  "speaker": "The Hon. Dr SARAH KAINE",
+  "n_words": 334,
+  "seg_id": "NSWLC2026-03-24#t85w2",
+  "genre": null
+ },
+ "R0101": {
+  "chamber": "AB",
+  "verdict": "Human",
+  "date": "2025-03-26",
+  "speaker": "Mr. Dach",
+  "n_words": 135,
+  "seg_id": "AB2025-03-26#t127w7",
+  "genre": null
+ },
+ "R0102": {
+  "chamber": "WAL",
+  "verdict": "Human",
+  "date": "2025-07-16",
+  "speaker": "Darren Millar",
+  "n_words": 223,
+  "seg_id": "WAL2025-07-16#t30w0",
+  "genre": null
+ },
+ "R0103": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2026-02-10",
+  "speaker": "PURDIE",
+  "n_words": 334,
+  "seg_id": "QLD2026-02-10#t81w8",
+  "genre": null
+ },
+ "R0104": {
+  "chamber": "UK House of Commons",
+  "verdict": "AI",
+  "date": "2025-06-12",
+  "speaker": "Graham Stuart",
+  "n_words": 222,
+  "seg_id": "UK2025-06-12#t414w2",
+  "genre": null
+ },
+ "R0105": {
+  "chamber": "NS",
+  "verdict": "AI",
+  "date": "2026-03-27",
+  "speaker": "ADEGOKE FADARE",
+  "n_words": 148,
+  "seg_id": "NS2026-03-27#t39w0",
+  "genre": null
+ },
+ "R0106": {
+  "chamber": "BC",
+  "verdict": "AI",
+  "date": "2025-03-31",
+  "speaker": "Paul Choi",
+  "n_words": 316,
+  "seg_id": "BC2025-03-31#t9w1",
+  "genre": null
+ },
+ "R0107": {
+  "chamber": "QLD",
+  "verdict": "Mixed",
+  "date": "2026-03-25",
+  "speaker": "MARTIN",
+  "n_words": 345,
+  "seg_id": "QLD2026-03-25#t181w1",
+  "genre": null
+ },
+ "R0108": {
+  "chamber": "US-HOUSE",
+  "verdict": "Mixed",
+  "date": "2025-03-26",
+  "speaker": "Mr. GOLDMAN of Texas",
+  "n_words": 241,
+  "seg_id": "US2025-03-26-H1284-7#t5w0",
+  "genre": null
+ },
+ "R0109": {
+  "chamber": "NI",
+  "verdict": "Mixed",
+  "date": "2026-03-02",
+  "speaker": "Ms McLaughlin",
+  "n_words": 285,
+  "seg_id": "NI2026-03-02#t269w0",
+  "genre": null
+ },
+ "R0110": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2025-12-04",
+  "speaker": "Anna Roberts (King\u2014Vaughan, CPC)",
+  "n_words": 356,
+  "seg_id": "CA2025-12-04#t243w2",
+  "genre": null
+ },
+ "R0111": {
+  "chamber": "NS",
+  "verdict": "Human",
+  "date": "2025-02-20",
+  "speaker": "SUZY HANSEN",
+  "n_words": 327,
+  "seg_id": "NS2025-02-20#t132w13",
+  "genre": null
+ },
+ "R0112": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2026-04-28",
+  "speaker": "Mr Carroll",
+  "n_words": 273,
+  "seg_id": "NI2026-04-28#t177w1",
+  "genre": null
+ },
+ "R0113": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2025-10-01",
+  "speaker": "Stephanie Kusie (Calgary Midnapore, CPC)",
+  "n_words": 172,
+  "seg_id": "CA2025-10-01#t3w0",
+  "genre": null
+ },
+ "R0114": {
+  "chamber": "WA",
+  "verdict": "Human",
+  "date": "2025-12-11",
+  "speaker": "Hon Sophie McNeill",
+  "n_words": 209,
+  "seg_id": "WALC2025-12-11#t234w0",
+  "genre": null
+ },
+ "R0115": {
+  "chamber": "NL",
+  "verdict": "Human",
+  "date": "2026-04-27",
+  "speaker": "J. PARSONS",
+  "n_words": 180,
+  "seg_id": "NL2026-04-27#t124w0",
+  "genre": null
+ },
+ "R0116": {
+  "chamber": "SCO",
+  "verdict": "Human",
+  "date": "2026-06-24",
+  "speaker": "Donald MacKinnon",
+  "n_words": 281,
+  "seg_id": "SCO2026-06-24#t11352w1",
+  "genre": null
+ },
+ "R0117": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-05-26",
+  "speaker": "Kyle Seeback (Dufferin\u2014Caledon, CPC)",
+  "n_words": 136,
+  "seg_id": "CA2026-05-26#t135w0",
+  "genre": "SO31"
+ },
+ "R0118": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2026-03-02",
+  "speaker": "Mr Nesbitt",
+  "n_words": 122,
+  "seg_id": "NI2026-03-02#t130w0",
+  "genre": null
+ },
+ "R0119": {
+  "chamber": "MB",
+  "verdict": "Human",
+  "date": "2025-03-19",
+  "speaker": "MLA Sandhu",
+  "n_words": 165,
+  "seg_id": "MB2025-03-19#t35w0",
+  "genre": null
+ },
+ "R0120": {
+  "chamber": "AB",
+  "verdict": "AI",
+  "date": "2025-05-01",
+  "speaker": "Mr. Ip",
+  "n_words": 352,
+  "seg_id": "AB2025-05-01#t116w3",
+  "genre": null
+ },
+ "R0121": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2025-11-21",
+  "speaker": "Ned Kuruc (Hamilton East\u2014Stoney Creek, CPC)",
+  "n_words": 328,
+  "seg_id": "CA2025-11-21#t7w2",
+  "genre": null
+ },
+ "R0122": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-06-15",
+  "speaker": "Warren Steinley (Regina\u2014Lewvan, CPC)",
+  "n_words": 350,
+  "seg_id": "CA2026-06-15#t297w3",
+  "genre": "DEBATE"
+ },
+ "R0123": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2025-11-24",
+  "speaker": "Arnold Viersen (Peace River\u2014Westlock, CPC)",
+  "n_words": 167,
+  "seg_id": "CA2025-11-24#t88w0",
+  "genre": null
+ },
+ "R0124": {
+  "chamber": "NS",
+  "verdict": "AI",
+  "date": "2026-04-08",
+  "speaker": "LISA LACHANCE",
+  "n_words": 304,
+  "seg_id": "NS2026-04-08#t128w0",
+  "genre": null
+ },
+ "R0125": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2025-06-12",
+  "speaker": "Sima Acan (Oakville West, Lib.)",
+  "n_words": 302,
+  "seg_id": "CA2025-06-12#t448w2",
+  "genre": null
+ },
+ "R0126": {
+  "chamber": "QLD",
+  "verdict": "Mixed",
+  "date": "2026-05-14",
+  "speaker": "DOOLEY",
+  "n_words": 356,
+  "seg_id": "QLD2026-05-14#t260w1",
+  "genre": null
+ },
+ "R0127": {
+  "chamber": "QLD",
+  "verdict": "Mixed",
+  "date": "2026-06-26",
+  "speaker": "VORSTER",
+  "n_words": 357,
+  "seg_id": "QLD2026-06-26#t80w4",
+  "genre": null
+ },
+ "R0128": {
+  "chamber": "SCO",
+  "verdict": "AI",
+  "date": "2026-01-13",
+  "speaker": "Monica Lennon",
+  "n_words": 332,
+  "seg_id": "SCO2026-01-13#t725w1",
+  "genre": null
+ },
+ "R0129": {
+  "chamber": "VIC",
+  "verdict": "AI",
+  "date": "2026-06-02",
+  "speaker": "Richard WELCH",
+  "n_words": 211,
+  "seg_id": "VICLC:Second-reading:2026-06-02#t7w3",
+  "genre": null
+ },
+ "R0130": {
+  "chamber": "WAL",
+  "verdict": "AI",
+  "date": "2026-01-14",
+  "speaker": "Adam Price",
+  "n_words": 180,
+  "seg_id": "WAL2026-01-14#t281w3",
+  "genre": null
+ },
+ "R0131": {
+  "chamber": "VIC",
+  "verdict": "Human",
+  "date": "2026-02-19",
+  "speaker": "Georgie PURCELL",
+  "n_words": 354,
+  "seg_id": "VICLC:Second-reading:2026-02-19#t5w0",
+  "genre": null
+ },
+ "R0132": {
+  "chamber": "NS",
+  "verdict": "AI",
+  "date": "2025-10-03",
+  "speaker": "SUSAN LEBLANC",
+  "n_words": 330,
+  "seg_id": "NS2025-10-03#t131w0",
+  "genre": null
+ },
+ "R0133": {
+  "chamber": "SCO",
+  "verdict": "Mixed",
+  "date": "2026-03-11",
+  "speaker": "Fulton MacGregor",
+  "n_words": 225,
+  "seg_id": "SCO2026-03-11#t6502w0",
+  "genre": null
+ },
+ "R0134": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2025-05-12",
+  "speaker": "Hon. Sheila Malcolmson",
+  "n_words": 352,
+  "seg_id": "BC2025-05-12#t73w0",
+  "genre": null
+ },
+ "R0135": {
+  "chamber": "VIC",
+  "verdict": "AI",
+  "date": "2026-07-30",
+  "speaker": "Belinda WILSON",
+  "n_words": 215,
+  "seg_id": "VICLA:Members-statements:2026-07-30#t30w0",
+  "genre": null
+ },
+ "R0136": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2026-03-25",
+  "speaker": "Ms KOBI SHETTY",
+  "n_words": 142,
+  "seg_id": "NSWLA2026-03-25#t155w2",
+  "genre": null
+ },
+ "R0137": {
+  "chamber": "Dail Eireann",
+  "verdict": "AI",
+  "date": "2026-04-29",
+  "speaker": "Deputy Gary Gannon",
+  "n_words": 196,
+  "seg_id": "IE2026-04-29#t50w0",
+  "genre": null
+ },
+ "R0138": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2025-05-20",
+  "speaker": "GRACE",
+  "n_words": 175,
+  "seg_id": "QLD2025-05-20#t318w0",
+  "genre": null
+ },
+ "R0139": {
+  "chamber": "QLD",
+  "verdict": "AI",
+  "date": "2025-08-28",
+  "speaker": "PEASE",
+  "n_words": 335,
+  "seg_id": "QLD2025-08-28#t123w1",
+  "genre": null
+ },
+ "R0140": {
+  "chamber": "AB",
+  "verdict": "Human",
+  "date": "2025-11-25",
+  "speaker": "Mr. Shepherd",
+  "n_words": 329,
+  "seg_id": "AB2025-11-25#t0w0",
+  "genre": null
+ },
+ "R0141": {
+  "chamber": "NSW",
+  "verdict": "Mixed",
+  "date": "2025-10-15",
+  "speaker": "Ms CATE FAEHRMANN",
+  "n_words": 252,
+  "seg_id": "NSWLC2025-10-15#t108w0",
+  "genre": null
+ },
+ "R0142": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-10-28",
+  "speaker": "Hon. Kevin Lamoureux (Parliamentary Secretary to the Leader of the Government in the House of Commons, Lib.)",
+  "n_words": 148,
+  "seg_id": "CA2025-10-28#t53w0",
+  "genre": "DEBATE"
+ },
+ "R0143": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2025-05-26",
+  "speaker": "Hon. Adrian Dix",
+  "n_words": 155,
+  "seg_id": "BC2025-05-26#t514w0",
+  "genre": null
+ },
+ "R0144": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-10-21",
+  "speaker": "Dane Lloyd",
+  "n_words": 135,
+  "seg_id": "CA2025-10-21#t133w0",
+  "genre": "DEBATE"
+ },
+ "R0145": {
+  "chamber": "WA",
+  "verdict": "AI",
+  "date": "2026-05-13",
+  "speaker": "Mr Bevan Eatts",
+  "n_words": 334,
+  "seg_id": "WALA2026-05-13#t192w0",
+  "genre": null
+ },
+ "R0146": {
+  "chamber": "US-HOUSE",
+  "verdict": "Mixed",
+  "date": "2026-02-04",
+  "speaker": "Ms. JOHNSON of Texas",
+  "n_words": 342,
+  "seg_id": "US2026-02-04-H1989#t0w0",
+  "genre": null
+ },
+ "R0147": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2025-04-03",
+  "speaker": "GERBER",
+  "n_words": 333,
+  "seg_id": "QLD2025-04-03#t166w7",
+  "genre": null
+ },
+ "R0148": {
+  "chamber": "ON",
+  "verdict": "AI",
+  "date": "2026-03-31",
+  "speaker": "MPP Alexa Gilmour",
+  "n_words": 125,
+  "seg_id": "ON2026-03-31#t110w0",
+  "genre": null
+ },
+ "R0149": {
+  "chamber": "US-SENATE",
+  "verdict": "Human",
+  "date": "2025-03-31",
+  "speaker": "Mr. MURPHY",
+  "n_words": 337,
+  "seg_id": "US2025-03-31-S1961#t57w1",
+  "genre": null
+ },
+ "R0150": {
+  "chamber": "CA-FED",
+  "verdict": "Mixed",
+  "date": "2025-11-05",
+  "speaker": "Amandeep Sodhi (Brampton Centre, Lib.)",
+  "n_words": 164,
+  "seg_id": "CA2025-11-05#t7w0",
+  "genre": "SO31"
+ },
+ "R0151": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2026-04-21",
+  "speaker": "Brendan Hanley (Parliamentary Secretary to the Minister of Northern and Arctic Affairs, Lib.)",
+  "n_words": 302,
+  "seg_id": "CA2026-04-21#t213w1",
+  "genre": null
+ },
+ "R0152": {
+  "chamber": "NSW",
+  "verdict": "AI",
+  "date": "2025-08-06",
+  "speaker": "Mr MICHAEL KEMP",
+  "n_words": 155,
+  "seg_id": "NSWLA2025-08-06#t191w0",
+  "genre": null
+ },
+ "R0153": {
+  "chamber": "WAL",
+  "verdict": "Human",
+  "date": "2026-07-14",
+  "speaker": "Andrew R.T. Davies",
+  "n_words": 129,
+  "seg_id": "WAL2026-07-14#t11w0",
+  "genre": null
+ },
+ "R0154": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-06-13",
+  "speaker": "Wade Grant (Vancouver Quadra)",
+  "n_words": 195,
+  "seg_id": "CA2025-06-13#t19w0",
+  "genre": "SO31"
+ },
+ "R0155": {
+  "chamber": "AB",
+  "verdict": "Human",
+  "date": "2025-11-17",
+  "speaker": "Mr. Gurinder Brar",
+  "n_words": 172,
+  "seg_id": "AB2025-11-17#t129w0",
+  "genre": null
+ },
+ "R0156": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2026-06-03",
+  "speaker": "KATTER",
+  "n_words": 161,
+  "seg_id": "QLD2026-06-03#t273w1",
+  "genre": null
+ },
+ "R0157": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2026-01-26",
+  "speaker": "Rhonda Kirkland (Oshawa, CPC)",
+  "n_words": 287,
+  "seg_id": "CA2026-01-26#t189w1",
+  "genre": "DEBATE"
+ },
+ "R0158": {
+  "chamber": "WA",
+  "verdict": "Human",
+  "date": "2026-05-14",
+  "speaker": "Hon Neil Thomson",
+  "n_words": 348,
+  "seg_id": "WALC2026-05-14#t33w1",
+  "genre": null
+ },
+ "R0159": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2026-05-06",
+  "speaker": "Raquel Dancho (Kildonan\u2014St. Paul, CPC)",
+  "n_words": 345,
+  "seg_id": "CA2026-05-06#t169w3",
+  "genre": null
+ },
+ "R0160": {
+  "chamber": "Dail Eireann",
+  "verdict": "Human",
+  "date": "2025-05-15",
+  "speaker": "Deputy Charles Ward",
+  "n_words": 182,
+  "seg_id": "IE2025-05-15#t169w0",
+  "genre": null
+ },
+ "R0161": {
+  "chamber": "TAS",
+  "verdict": "Human",
+  "date": "2025-03-12",
+  "speaker": "Mr FERGUSON",
+  "n_words": 333,
+  "seg_id": "TASHA2025-03-12#p1t254w1",
+  "genre": null
+ },
+ "R0162": {
+  "chamber": "Dail Eireann",
+  "verdict": "Mixed",
+  "date": "2025-12-16",
+  "speaker": "Deputy Se\u00e1n \u00d3 Feargha\u00edl",
+  "n_words": 325,
+  "seg_id": "IE2025-12-16#t308w1",
+  "genre": null
+ },
+ "R0163": {
+  "chamber": "US-SENATE",
+  "verdict": "Human",
+  "date": "2025-11-20",
+  "speaker": "Mr. DURBIN",
+  "n_words": 325,
+  "seg_id": "US2025-11-20-S8249-6#t1w5",
+  "genre": null
+ },
+ "R0164": {
+  "chamber": "WAL",
+  "verdict": "Human",
+  "date": "2025-07-01",
+  "speaker": "Jeremy Miles",
+  "n_words": 127,
+  "seg_id": "WAL2025-07-01#t95w1",
+  "genre": null
+ },
+ "R0165": {
+  "chamber": "ON",
+  "verdict": "Human",
+  "date": "2026-05-14",
+  "speaker": "Hon. Stan Cho",
+  "n_words": 146,
+  "seg_id": "ON2026-05-14#t136w0",
+  "genre": null
+ },
+ "R0166": {
+  "chamber": "QLD",
+  "verdict": "AI",
+  "date": "2025-06-27",
+  "speaker": "BUTCHER",
+  "n_words": 357,
+  "seg_id": "QLD2025-06-27#t63w0",
+  "genre": null
+ },
+ "R0167": {
+  "chamber": "ON",
+  "verdict": "Human",
+  "date": "2025-11-06",
+  "speaker": "Hon. David Piccini",
+  "n_words": 187,
+  "seg_id": "ON2025-11-06#t61w0",
+  "genre": null
+ },
+ "R0168": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2026-05-07",
+  "speaker": "Michael Kram (Regina\u2014Wascana, CPC)",
+  "n_words": 144,
+  "seg_id": "CA2026-05-07#t137w0",
+  "genre": "SO31"
+ },
+ "R0169": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-11-18",
+  "speaker": "Hon. Nathaniel Erskine-Smith (Beaches\u2014East York, Lib.)",
+  "n_words": 147,
+  "seg_id": "CA2025-11-18#t97w0",
+  "genre": "DEBATE"
+ },
+ "R0170": {
+  "chamber": "TAS",
+  "verdict": "Human",
+  "date": "2025-11-05",
+  "speaker": "Mr BARNETT",
+  "n_words": 341,
+  "seg_id": "TASHA2025-11-05#p1t130w3",
+  "genre": null
+ },
+ "R0171": {
+  "chamber": "NSW",
+  "verdict": "Mixed",
+  "date": "2026-02-10",
+  "speaker": "The Hon. SCOTT FARLOW",
+  "n_words": 210,
+  "seg_id": "NSWLC2026-02-10#t109w9",
+  "genre": null
+ },
+ "R0172": {
+  "chamber": "NL",
+  "verdict": "Mixed",
+  "date": "2026-03-18",
+  "speaker": "P. PIKE",
+  "n_words": 175,
+  "seg_id": "NL2026-03-18#t28w2",
+  "genre": null
+ },
+ "R0173": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Mixed",
+  "date": "2025-11-24",
+  "speaker": "John Brassard (Barrie South\u2014Innisfil, CPC)",
+  "n_words": 175,
+  "seg_id": "CA2025-11-24#t82w0",
+  "genre": null
+ },
+ "R0174": {
+  "chamber": "WAL",
+  "verdict": "AI",
+  "date": "2026-01-27",
+  "speaker": "Joel James",
+  "n_words": 338,
+  "seg_id": "WAL2026-01-27#t226w1",
+  "genre": null
+ },
+ "R0175": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2026-02-06",
+  "speaker": "Hon. Michelle Rempel Garner (Calgary Nose Hill, CPC)",
+  "n_words": 312,
+  "seg_id": "CA2026-02-06#t131w0",
+  "genre": "OQ"
+ },
+ "R0176": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2025-02-25",
+  "speaker": "Mrs Erskine",
+  "n_words": 288,
+  "seg_id": "NI2025-02-25#t173w3",
+  "genre": null
+ },
+ "R0177": {
+  "chamber": "Dail Eireann",
+  "verdict": "Human",
+  "date": "2025-02-20",
+  "speaker": "Deputy Pearse Doherty",
+  "n_words": 262,
+  "seg_id": "IE2025-02-20#t158w0",
+  "genre": null
+ },
+ "R0178": {
+  "chamber": "NSW",
+  "verdict": "Mixed",
+  "date": "2026-03-25",
+  "speaker": "Mr TIM JAMES",
+  "n_words": 256,
+  "seg_id": "NSWLA2026-03-25#t201w1",
+  "genre": null
+ },
+ "R0179": {
+  "chamber": "NL",
+  "verdict": "AI",
+  "date": "2026-03-31",
+  "speaker": "PREMIER WAKEHAM",
+  "n_words": 303,
+  "seg_id": "NL2026-03-31#t132w0",
+  "genre": null
+ },
+ "R0180": {
+  "chamber": "QLD",
+  "verdict": "AI",
+  "date": "2026-06-23",
+  "speaker": "RYAN",
+  "n_words": 337,
+  "seg_id": "QLD2026-06-23#t243w0",
+  "genre": null
+ },
+ "R0181": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2026-03-12",
+  "speaker": "Michael Coteau (Scarborough\u2014Woburn, Lib.)",
+  "n_words": 156,
+  "seg_id": "CA2026-03-12#t132w0",
+  "genre": null
+ },
+ "R0182": {
+  "chamber": "BC",
+  "verdict": "AI",
+  "date": "2025-05-12",
+  "speaker": "Teresa Wat",
+  "n_words": 347,
+  "seg_id": "BC2025-05-12#t17w0",
+  "genre": null
+ },
+ "R0183": {
+  "chamber": "ON",
+  "verdict": "Human",
+  "date": "2025-12-08",
+  "speaker": "Mr. Stephen Blais",
+  "n_words": 326,
+  "seg_id": "ON2025-12-08#t114w3",
+  "genre": null
+ },
+ "R0184": {
+  "chamber": "ON",
+  "verdict": "Human",
+  "date": "2025-11-18",
+  "speaker": "Hon. David Piccini",
+  "n_words": 184,
+  "seg_id": "ON2025-11-18#t116w0",
+  "genre": null
+ },
+ "R0185": {
+  "chamber": "NS",
+  "verdict": "AI",
+  "date": "2026-04-07",
+  "speaker": "HON. IAIN RANKIN",
+  "n_words": 355,
+  "seg_id": "NS2026-04-07#t125w2",
+  "genre": null
+ },
+ "R0186": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-02-23",
+  "speaker": "Carol Anstey (Long Range Mountains, CPC)",
+  "n_words": 278,
+  "seg_id": "CA2026-02-23#t211w0",
+  "genre": "DEBATE"
+ },
+ "R0187": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2026-03-09",
+  "speaker": "Chak Au (Richmond Centre\u2014Marpole, CPC)",
+  "n_words": 275,
+  "seg_id": "CA2026-03-09#t261w1",
+  "genre": "DEBATE"
+ },
+ "R0188": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2026-02-24",
+  "speaker": "Mr McGrath",
+  "n_words": 274,
+  "seg_id": "NI2026-02-24#t227w0",
+  "genre": null
+ },
+ "R0189": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2025-04-07",
+  "speaker": "Hon. Josie Osborne",
+  "n_words": 326,
+  "seg_id": "BC2025-04-07#t113w0",
+  "genre": null
+ },
+ "R0190": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-11-19",
+  "speaker": "Burton Bailey (Red Deer, CPC)",
+  "n_words": 160,
+  "seg_id": "CA2025-11-19#t11w0",
+  "genre": "SO31"
+ },
+ "R0191": {
+  "chamber": "AB",
+  "verdict": "AI",
+  "date": "2025-03-10",
+  "speaker": "Mr. McDougall",
+  "n_words": 137,
+  "seg_id": "AB2025-03-10#t167w3",
+  "genre": null
+ },
+ "R0192": {
+  "chamber": "Dail Eireann",
+  "verdict": "Mixed",
+  "date": "2025-09-18",
+  "speaker": "Minister of State at the Department of Justice, Home Affairs and Migration",
+  "n_words": 233,
+  "seg_id": "IE2025-09-18#t283w4",
+  "genre": null
+ },
+ "R0193": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2025-12-04",
+  "speaker": "Connie Cody (Cambridge, CPC)",
+  "n_words": 124,
+  "seg_id": "CA2025-12-04#t186w0",
+  "genre": "OQ"
+ },
+ "R0194": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-02-25",
+  "speaker": "Burton Bailey (Red Deer, CPC)",
+  "n_words": 168,
+  "seg_id": "CA2026-02-25#t15w0",
+  "genre": "SO31"
+ },
+ "R0195": {
+  "chamber": "TAS",
+  "verdict": "Mixed",
+  "date": "2026-05-21",
+  "speaker": "Mr ABETZ",
+  "n_words": 326,
+  "seg_id": "TASHA2026-05-21#p1t86w0",
+  "genre": null
+ },
+ "R0196": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2026-01-27",
+  "speaker": "Tamara Kronis (Nanaimo\u2014Ladysmith, CPC)",
+  "n_words": 319,
+  "seg_id": "CA2026-01-27#t241w3",
+  "genre": null
+ },
+ "R0197": {
+  "chamber": "NS",
+  "verdict": "AI",
+  "date": "2025-02-24",
+  "speaker": "HON. IAIN RANKIN",
+  "n_words": 219,
+  "seg_id": "NS2025-02-24#t14w0",
+  "genre": null
+ },
+ "R0198": {
+  "chamber": "CA-FED",
+  "verdict": "Mixed",
+  "date": "2026-05-01",
+  "speaker": "Carol Anstey (Long Range Mountains, CPC)",
+  "n_words": 331,
+  "seg_id": "CA2026-05-01#t172w2",
+  "genre": "DEBATE"
+ },
+ "R0199": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2026-05-11",
+  "speaker": "Ms Kimmins",
+  "n_words": 194,
+  "seg_id": "NI2026-05-11#t153w0",
+  "genre": null
+ },
+ "R0200": {
+  "chamber": "SA",
+  "verdict": "Human",
+  "date": "2025-03-06",
+  "speaker": "The Hon. K.J. MAHER",
+  "n_words": 355,
+  "seg_id": "SALC2025-03-06#t114w0",
+  "genre": null
+ },
+ "R0201": {
+  "chamber": "US-HOUSE",
+  "verdict": "Human",
+  "date": "2025-02-10",
+  "speaker": "Mr. HILL of Arkansas",
+  "n_words": 198,
+  "seg_id": "US2025-02-10-H603#t9w0",
+  "genre": null
+ },
+ "R0202": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2025-11-19",
+  "speaker": "Ryan Turnbull (Whitby, Lib.)",
+  "n_words": 141,
+  "seg_id": "CA2025-11-19#t12w0",
+  "genre": "SO31"
+ },
+ "R0203": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2025-12-04",
+  "speaker": "Amarjeet Gill (Brampton West, CPC)",
+  "n_words": 311,
+  "seg_id": "CA2025-12-04#t111w0",
+  "genre": null
+ },
+ "R0204": {
+  "chamber": "WAL",
+  "verdict": "Human",
+  "date": "2025-03-26",
+  "speaker": "Jayne Bryant",
+  "n_words": 269,
+  "seg_id": "WAL2025-03-26#t55w0",
+  "genre": null
+ },
+ "R0205": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-10-02",
+  "speaker": "Hon. Steven MacKinnon (Minister of Transport and Leader of the Government in the House of Commons, Lib.)",
+  "n_words": 261,
+  "seg_id": "CA2025-10-02#t241w0",
+  "genre": "OQ"
+ },
+ "R0206": {
+  "chamber": "AB",
+  "verdict": "Human",
+  "date": "2025-12-09",
+  "speaker": "Mr. Amery",
+  "n_words": 261,
+  "seg_id": "AB2025-12-09#t172w0",
+  "genre": null
+ },
+ "R0207": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2025-11-20",
+  "speaker": "Vince Gasparro (Parliamentary Secretary to the Secretary of State (Combatting Crime), Lib.)",
+  "n_words": 166,
+  "seg_id": "CA2025-11-20#t275w3",
+  "genre": "DEBATE"
+ },
+ "R0208": {
+  "chamber": "WAL",
+  "verdict": "Mixed",
+  "date": "2026-07-15",
+  "speaker": "Janet Finch-Saunders",
+  "n_words": 188,
+  "seg_id": "WAL2026-07-15#t226w0",
+  "genre": null
+ },
+ "R0209": {
+  "chamber": "NSW",
+  "verdict": "Mixed",
+  "date": "2026-02-11",
+  "speaker": "Mr ADAM CROUCH",
+  "n_words": 316,
+  "seg_id": "NSWLA2026-02-11#t181w2",
+  "genre": null
+ },
+ "R0210": {
+  "chamber": "CA-FED",
+  "verdict": "Mixed",
+  "date": "2025-09-16",
+  "speaker": "Tamara Jansen (Cloverdale\u2014Langley City, CPC)",
+  "n_words": 303,
+  "seg_id": "CA2025-09-16#t233w0",
+  "genre": "OQ"
+ },
+ "R0211": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2025-04-29",
+  "speaker": "Hon. Ravi Kahlon",
+  "n_words": 346,
+  "seg_id": "BC2025-04-29#t244w0",
+  "genre": null
+ },
+ "R0212": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2026-02-05",
+  "speaker": "The Hon. EMMA HURST",
+  "n_words": 326,
+  "seg_id": "NSWLC2026-02-05#t103w8",
+  "genre": null
+ },
+ "R0213": {
+  "chamber": "NSW",
+  "verdict": "AI",
+  "date": "2026-05-06",
+  "speaker": "Mr WARREN KIRBY",
+  "n_words": 181,
+  "seg_id": "NSWLA2026-05-06#t154w0",
+  "genre": null
+ },
+ "R0214": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2025-04-30",
+  "speaker": "Hon. Ravi Kahlon",
+  "n_words": 289,
+  "seg_id": "BC2025-04-30#t101w0",
+  "genre": null
+ },
+ "R0215": {
+  "chamber": "Dail Eireann",
+  "verdict": "Mixed",
+  "date": "2025-09-23",
+  "speaker": "Minister for Education and Youth",
+  "n_words": 320,
+  "seg_id": "IE2025-09-23#t100w0",
+  "genre": null
+ },
+ "R0216": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2025-05-28",
+  "speaker": "Mr RON HOENIG",
+  "n_words": 308,
+  "seg_id": "NSWLA2025-05-28#t89w0",
+  "genre": null
+ },
+ "R0217": {
+  "chamber": "US-HOUSE",
+  "verdict": "AI",
+  "date": "2026-07-22",
+  "speaker": "Mr. CARTER of Georgia",
+  "n_words": 199,
+  "seg_id": "US2026-07-22-H5127-2#t25w0",
+  "genre": null
+ },
+ "R0218": {
+  "chamber": "UK House of Commons",
+  "verdict": "Mixed",
+  "date": "2026-06-22",
+  "speaker": "Judith Cummins",
+  "n_words": 348,
+  "seg_id": "UK2026-06-22#t330w3",
+  "genre": null
+ },
+ "R0219": {
+  "chamber": "WAL",
+  "verdict": "AI",
+  "date": "2026-01-28",
+  "speaker": "Ken Skates",
+  "n_words": 303,
+  "seg_id": "WAL2026-01-28#t146w1",
+  "genre": null
+ },
+ "R0220": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2026-02-13",
+  "speaker": "Billy Morin (Edmonton Northwest, CPC)",
+  "n_words": 148,
+  "seg_id": "CA2026-02-13#t35w0",
+  "genre": "SO31"
+ },
+ "R0221": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2026-04-16",
+  "speaker": "Michael Cooper",
+  "n_words": 138,
+  "seg_id": "CA2026-04-16#t31w0",
+  "genre": null
+ },
+ "R0222": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2025-10-21",
+  "speaker": "Michael Guglielmin (Vaughan\u2014Woodbridge, CPC)",
+  "n_words": 258,
+  "seg_id": "CA2025-10-21#t298w3",
+  "genre": "DEBATE"
+ },
+ "R0223": {
+  "chamber": "WAL",
+  "verdict": "Human",
+  "date": "2026-02-11",
+  "speaker": "Ken Skates",
+  "n_words": 195,
+  "seg_id": "WAL2026-02-11#t18w0",
+  "genre": null
+ },
+ "R0224": {
+  "chamber": "US-HOUSE",
+  "verdict": "AI",
+  "date": "2025-07-22",
+  "speaker": "Mr. WIED",
+  "n_words": 296,
+  "seg_id": "US2025-07-22-H3546-5#t0w0",
+  "genre": null
+ },
+ "R0225": {
+  "chamber": "US-HOUSE",
+  "verdict": "Mixed",
+  "date": "2026-07-15",
+  "speaker": "Mr. GOTTHEIMER",
+  "n_words": 331,
+  "seg_id": "US2026-07-15-H4472-2#t4w0",
+  "genre": null
+ },
+ "R0226": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2025-11-06",
+  "speaker": "Pauline Rochefort (Parliamentary Secretary to the Secretary of State (Rural Development), Lib.)",
+  "n_words": 125,
+  "seg_id": "CA2025-11-06#t58w4",
+  "genre": null
+ },
+ "R0227": {
+  "chamber": "MB",
+  "verdict": "AI",
+  "date": "2026-05-26",
+  "speaker": "Mr. King",
+  "n_words": 353,
+  "seg_id": "MB2026-05-26#t92w1",
+  "genre": null
+ },
+ "R0228": {
+  "chamber": "SA",
+  "verdict": "AI",
+  "date": "2025-05-15",
+  "speaker": "The Hon. N.J. CENTOFANTI",
+  "n_words": 345,
+  "seg_id": "SALC2025-05-15#t151w1",
+  "genre": null
+ },
+ "R0229": {
+  "chamber": "AB",
+  "verdict": "AI",
+  "date": "2025-10-27",
+  "speaker": "Mr. Guthrie",
+  "n_words": 353,
+  "seg_id": "AB2025-10-27#t19w2",
+  "genre": null
+ },
+ "R0230": {
+  "chamber": "ON",
+  "verdict": "AI",
+  "date": "2025-11-03",
+  "speaker": "Mr. Tyler Allsopp",
+  "n_words": 313,
+  "seg_id": "ON2025-11-03#t210w0",
+  "genre": null
+ },
+ "R0231": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2026-05-28",
+  "speaker": "Jean Yip (Scarborough\u2014Agincourt, Lib.)",
+  "n_words": 125,
+  "seg_id": "CA2026-05-28#t141w0",
+  "genre": "SO31"
+ },
+ "R0232": {
+  "chamber": "BC",
+  "verdict": "Mixed",
+  "date": "2026-03-10",
+  "speaker": "Darlene Rotchford",
+  "n_words": 324,
+  "seg_id": "BC2026-03-10#t5w1",
+  "genre": null
+ },
+ "R0233": {
+  "chamber": "SK",
+  "verdict": "Human",
+  "date": "2025-11-19",
+  "speaker": "Hugh Gordon",
+  "n_words": 287,
+  "seg_id": "SK2025-11-19#t65w0",
+  "genre": null
+ },
+ "R0234": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-06-17",
+  "speaker": "Warren Steinley (Regina\u2014Lewvan, CPC)",
+  "n_words": 167,
+  "seg_id": "CA2025-06-17#t235w0",
+  "genre": "DEBATE"
+ },
+ "R0235": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2025-11-04",
+  "speaker": "Hon. Andrew Scheer (Regina\u2014Qu'Appelle, CPC)",
+  "n_words": 136,
+  "seg_id": "CA2025-11-04#t162w0",
+  "genre": null
+ },
+ "R0236": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2025-10-29",
+  "speaker": "Sukhman Gill (Abbotsford\u2014South Langley, CPC)",
+  "n_words": 360,
+  "seg_id": "CA2025-10-29#t178w0",
+  "genre": null
+ },
+ "R0237": {
+  "chamber": "NL",
+  "verdict": "Human",
+  "date": "2026-05-27",
+  "speaker": "L. EVANS",
+  "n_words": 126,
+  "seg_id": "NL2026-05-27#t95w0",
+  "genre": null
+ },
+ "R0238": {
+  "chamber": "US-HOUSE",
+  "verdict": "Human",
+  "date": "2026-04-29",
+  "speaker": "Ms. CRAIG",
+  "n_words": 265,
+  "seg_id": "US2026-04-29-H3169#t41w2",
+  "genre": null
+ },
+ "R0239": {
+  "chamber": "ON",
+  "verdict": "Human",
+  "date": "2026-04-02",
+  "speaker": "MPP George Darouze",
+  "n_words": 122,
+  "seg_id": "ON2026-04-02#t224w0",
+  "genre": null
+ },
+ "R0240": {
+  "chamber": "US-HOUSE",
+  "verdict": "Mixed",
+  "date": "2025-03-27",
+  "speaker": "Ms. CASTOR of Florida",
+  "n_words": 355,
+  "seg_id": "US2025-03-27-H1307-2#t12w1",
+  "genre": null
+ },
+ "R0241": {
+  "chamber": "SK",
+  "verdict": "AI",
+  "date": "2025-04-29",
+  "speaker": "Kevin Weedmark",
+  "n_words": 231,
+  "seg_id": "SK2025-04-29#t21w0",
+  "genre": null
+ },
+ "R0242": {
+  "chamber": "QLD",
+  "verdict": "Mixed",
+  "date": "2025-06-26",
+  "speaker": "McMILLAN",
+  "n_words": 307,
+  "seg_id": "QLD2025-06-26#t233w0",
+  "genre": null
+ },
+ "R0243": {
+  "chamber": "VIC",
+  "verdict": "Human",
+  "date": "2025-09-09",
+  "speaker": "Ryan BATCHELOR",
+  "n_words": 354,
+  "seg_id": "VICLC:Second-reading:2025-09-09#t12w2",
+  "genre": null
+ },
+ "R0244": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2025-11-24",
+  "speaker": "Leah Gazan (Winnipeg Centre, NDP)",
+  "n_words": 153,
+  "seg_id": "CA2025-11-24#t80w0",
+  "genre": null
+ },
+ "R0245": {
+  "chamber": "TAS",
+  "verdict": "Mixed",
+  "date": "2026-05-05",
+  "speaker": "Ms BADGER",
+  "n_words": 336,
+  "seg_id": "TASHA2026-05-05#p1t80w4",
+  "genre": null
+ },
+ "R0246": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2025-05-20",
+  "speaker": "SCANLON",
+  "n_words": 357,
+  "seg_id": "QLD2025-05-20#t205w1",
+  "genre": null
+ },
+ "R0247": {
+  "chamber": "MB",
+  "verdict": "AI",
+  "date": "2025-10-07",
+  "speaker": "Mr. Simard",
+  "n_words": 303,
+  "seg_id": "MB2025-10-07#t47w0",
+  "genre": null
+ },
+ "R0248": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2025-12-09",
+  "speaker": "Mr O'Dowd",
+  "n_words": 231,
+  "seg_id": "NI2025-12-09#t151w0",
+  "genre": null
+ },
+ "R0249": {
+  "chamber": "US-HOUSE",
+  "verdict": "Mixed",
+  "date": "2025-04-01",
+  "speaker": "Mr. NORMAN",
+  "n_words": 213,
+  "seg_id": "US2025-04-01-H1384-3#t0w1",
+  "genre": null
+ },
+ "R0250": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2025-11-11",
+  "speaker": "Mr Muir",
+  "n_words": 120,
+  "seg_id": "NI2025-11-11#t85w0",
+  "genre": null
+ },
+ "R0251": {
+  "chamber": "NS",
+  "verdict": "Human",
+  "date": "2026-02-27",
+  "speaker": "SUSAN LEBLANC",
+  "n_words": 212,
+  "seg_id": "NS2026-02-27#t26w0",
+  "genre": null
+ },
+ "R0252": {
+  "chamber": "US-HOUSE",
+  "verdict": "Human",
+  "date": "2026-01-13",
+  "speaker": "Mr. ROY",
+  "n_words": 340,
+  "seg_id": "US2026-01-13-H705#t43w1",
+  "genre": null
+ },
+ "R0253": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2025-09-17",
+  "speaker": "Rhonda Kirkland (Oshawa, CPC)",
+  "n_words": 141,
+  "seg_id": "CA2025-09-17#t209w0",
+  "genre": null
+ },
+ "R0254": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Mixed",
+  "date": "2026-04-14",
+  "speaker": "Michael Guglielmin (Vaughan\u2014Woodbridge, CPC)",
+  "n_words": 331,
+  "seg_id": "CA2026-04-14#t124w1",
+  "genre": null
+ },
+ "R0255": {
+  "chamber": "TAS",
+  "verdict": "Human",
+  "date": "2026-04-15",
+  "speaker": "Mr O'BYRNE",
+  "n_words": 347,
+  "seg_id": "TASHA2026-04-15#p1t177w0",
+  "genre": null
+ },
+ "R0256": {
+  "chamber": "TAS",
+  "verdict": "Human",
+  "date": "2026-03-18",
+  "speaker": "Mr GEORGE",
+  "n_words": 284,
+  "seg_id": "TASHA2026-03-18#p1t82w1",
+  "genre": null
+ },
+ "R0257": {
+  "chamber": "AB",
+  "verdict": "Human",
+  "date": "2025-11-05",
+  "speaker": "Mr. Haji",
+  "n_words": 196,
+  "seg_id": "AB2025-11-05#t139w4",
+  "genre": null
+ },
+ "R0258": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2025-02-19",
+  "speaker": "MICKELBERG",
+  "n_words": 343,
+  "seg_id": "QLD2025-02-19#t36w0",
+  "genre": null
+ },
+ "R0259": {
+  "chamber": "NI",
+  "verdict": "Mixed",
+  "date": "2026-03-24",
+  "speaker": "Ms Nicholl",
+  "n_words": 302,
+  "seg_id": "NI2026-03-24#t256w0",
+  "genre": null
+ },
+ "R0260": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2026-03-19",
+  "speaker": "The Hon. JOHN GRAHAM",
+  "n_words": 315,
+  "seg_id": "NSWLC2026-03-19#t139w5",
+  "genre": null
+ },
+ "R0261": {
+  "chamber": "US-HOUSE",
+  "verdict": "AI",
+  "date": "2025-09-10",
+  "speaker": "Mr. ROGERS of Alabama",
+  "n_words": 358,
+  "seg_id": "US2025-09-10-H4176-6#t194w18",
+  "genre": null
+ },
+ "R0262": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2025-01-20",
+  "speaker": "Mr Beattie",
+  "n_words": 155,
+  "seg_id": "NI2025-01-20#t29w1",
+  "genre": null
+ },
+ "R0263": {
+  "chamber": "SA",
+  "verdict": "AI",
+  "date": "2025-03-18",
+  "speaker": "Ms THOMPSON",
+  "n_words": 330,
+  "seg_id": "SAHA2025-03-18#t28w1",
+  "genre": null
+ },
+ "R0264": {
+  "chamber": "US-HOUSE",
+  "verdict": "Human",
+  "date": "2025-09-11",
+  "speaker": "Ms. LEE of Nevada",
+  "n_words": 150,
+  "seg_id": "US2025-09-11-H4251-6#t0w0",
+  "genre": null
+ },
+ "R0265": {
+  "chamber": "SA",
+  "verdict": "Mixed",
+  "date": "2025-04-29",
+  "speaker": "The Hon. K.J. MAHER",
+  "n_words": 338,
+  "seg_id": "SALC2025-04-29#t26w0",
+  "genre": null
+ },
+ "R0266": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2025-09-16",
+  "speaker": "Mr DUGALD SAUNDERS",
+  "n_words": 333,
+  "seg_id": "NSWLA2025-09-16#t95w0",
+  "genre": null
+ },
+ "R0267": {
+  "chamber": "US-HOUSE",
+  "verdict": "Mixed",
+  "date": "2026-01-20",
+  "speaker": "Mr. HORSFORD",
+  "n_words": 355,
+  "seg_id": "US2026-01-20-H942-7#t4w0",
+  "genre": null
+ },
+ "R0268": {
+  "chamber": "CA-FED",
+  "verdict": "Mixed",
+  "date": "2026-04-15",
+  "speaker": "Rosemarie Falk (Battlefords\u2014Lloydminster\u2014Meadow Lake, CPC)",
+  "n_words": 144,
+  "seg_id": "CA2026-04-15#t10w0",
+  "genre": "SO31"
+ },
+ "R0269": {
+  "chamber": "QLD",
+  "verdict": "AI",
+  "date": "2026-04-21",
+  "speaker": "O\u2019CONNOR",
+  "n_words": 356,
+  "seg_id": "QLD2026-04-21#t207w0",
+  "genre": null
+ },
+ "R0270": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2025-11-19",
+  "speaker": "LANGBROEK",
+  "n_words": 348,
+  "seg_id": "QLD2025-11-19#t10w0",
+  "genre": null
+ },
+ "R0271": {
+  "chamber": "QLD",
+  "verdict": "AI",
+  "date": "2026-04-21",
+  "speaker": "MILES",
+  "n_words": 276,
+  "seg_id": "QLD2026-04-21#t209w0",
+  "genre": null
+ },
+ "R0272": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2026-05-01",
+  "speaker": "Kelly DeRidder (Kitchener Centre, CPC)",
+  "n_words": 143,
+  "seg_id": "CA2026-05-01#t43w0",
+  "genre": "SO31"
+ },
+ "R0273": {
+  "chamber": "AB",
+  "verdict": "AI",
+  "date": "2025-05-07",
+  "speaker": "Member Calahoo Stonehouse",
+  "n_words": 342,
+  "seg_id": "AB2025-05-07#t22w3",
+  "genre": null
+ },
+ "R0274": {
+  "chamber": "QLD",
+  "verdict": "AI",
+  "date": "2025-10-15",
+  "speaker": "JAMES",
+  "n_words": 351,
+  "seg_id": "QLD2025-10-15#t204w2",
+  "genre": null
+ },
+ "R0275": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-05-28",
+  "speaker": "Hon. Arielle Kayabaga (London West, Lib.)",
+  "n_words": 216,
+  "seg_id": "CA2026-05-28#t231w0",
+  "genre": "OQ"
+ },
+ "R0276": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2025-12-01",
+  "speaker": "Grant Jackson (Brandon\u2014Souris, CPC)",
+  "n_words": 315,
+  "seg_id": "CA2025-12-01#t187w2",
+  "genre": null
+ },
+ "R0277": {
+  "chamber": "ON",
+  "verdict": "Mixed",
+  "date": "2026-04-15",
+  "speaker": "Mr. Billy Pang",
+  "n_words": 332,
+  "seg_id": "ON2026-04-15#t236w2",
+  "genre": null
+ },
+ "R0278": {
+  "chamber": "QLD",
+  "verdict": "Mixed",
+  "date": "2026-05-12",
+  "speaker": "BENNETT",
+  "n_words": 350,
+  "seg_id": "QLD2026-05-12#t246w0",
+  "genre": null
+ },
+ "R0279": {
+  "chamber": "NI",
+  "verdict": "AI",
+  "date": "2026-05-12",
+  "speaker": "Ms Brownlee",
+  "n_words": 349,
+  "seg_id": "NI2026-05-12#t35w2",
+  "genre": null
+ },
+ "R0280": {
+  "chamber": "VIC",
+  "verdict": "Human",
+  "date": "2025-06-18",
+  "speaker": "Lauren KATHAGE",
+  "n_words": 355,
+  "seg_id": "VICLA:Second-reading:2025-06-18#t24w0",
+  "genre": null
+ },
+ "R0281": {
+  "chamber": "Dail Eireann",
+  "verdict": "Human",
+  "date": "2026-05-07",
+  "speaker": "Deputy Marie Sherlock",
+  "n_words": 232,
+  "seg_id": "IE2026-05-07#t319w0",
+  "genre": null
+ },
+ "R0282": {
+  "chamber": "TAS",
+  "verdict": "AI",
+  "date": "2026-03-24",
+  "speaker": "Mr BARNETT",
+  "n_words": 134,
+  "seg_id": "TASHA2026-03-24#p1t148w1",
+  "genre": null
+ },
+ "R0283": {
+  "chamber": "SA",
+  "verdict": "AI",
+  "date": "2025-09-17",
+  "speaker": "Mr BASHAM",
+  "n_words": 343,
+  "seg_id": "SAHA2025-09-17#t104w0",
+  "genre": null
+ },
+ "R0284": {
+  "chamber": "US-SENATE",
+  "verdict": "Human",
+  "date": "2026-01-13",
+  "speaker": "Mr. THUNE",
+  "n_words": 268,
+  "seg_id": "US2026-01-13-S141-6#t1w2",
+  "genre": null
+ },
+ "R0285": {
+  "chamber": "TAS",
+  "verdict": "Mixed",
+  "date": "2025-04-09",
+  "speaker": "Mrs BESWICK",
+  "n_words": 287,
+  "seg_id": "TASHA2025-04-09#p1t149w4",
+  "genre": null
+ },
+ "R0286": {
+  "chamber": "Dail Eireann",
+  "verdict": "Human",
+  "date": "2026-06-24",
+  "speaker": "Deputy Sin\u00e9ad Gibney",
+  "n_words": 263,
+  "seg_id": "IE2026-06-24#t277w6",
+  "genre": null
+ },
+ "R0287": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2025-02-19",
+  "speaker": "The Hon. EMILY SUVAAL",
+  "n_words": 355,
+  "seg_id": "NSWLC2025-02-19#t159w2",
+  "genre": null
+ },
+ "R0288": {
+  "chamber": "AB",
+  "verdict": "Human",
+  "date": "2025-10-28",
+  "speaker": "Dr. Elmeligi",
+  "n_words": 360,
+  "seg_id": "AB2025-10-28#t138w0",
+  "genre": null
+ },
+ "R0289": {
+  "chamber": "MB",
+  "verdict": "Human",
+  "date": "2026-05-08",
+  "speaker": "Mrs. Cook",
+  "n_words": 172,
+  "seg_id": "MB2026-05-08#t40w0",
+  "genre": null
+ },
+ "R0290": {
+  "chamber": "VIC",
+  "verdict": "Human",
+  "date": "2025-05-20",
+  "speaker": "Kim O\u2019KEEFFE",
+  "n_words": 298,
+  "seg_id": "VICLA:Second-reading:2025-05-20#t69w0",
+  "genre": null
+ },
+ "R0291": {
+  "chamber": "ON",
+  "verdict": "Human",
+  "date": "2025-10-27",
+  "speaker": "Hon. Rob Flack",
+  "n_words": 180,
+  "seg_id": "ON2025-10-27#t189w0",
+  "genre": null
+ },
+ "R0292": {
+  "chamber": "BC",
+  "verdict": "AI",
+  "date": "2025-04-16",
+  "speaker": "David Williams",
+  "n_words": 355,
+  "seg_id": "BC2025-04-16#t113w1",
+  "genre": null
+ },
+ "R0293": {
+  "chamber": "WA",
+  "verdict": "Human",
+  "date": "2025-05-22",
+  "speaker": "Ms Meredith Hammat",
+  "n_words": 350,
+  "seg_id": "WALA2025-05-22#t13w2",
+  "genre": null
+ },
+ "R0294": {
+  "chamber": "MB",
+  "verdict": "AI",
+  "date": "2025-04-16",
+  "speaker": "Mrs. Cook",
+  "n_words": 141,
+  "seg_id": "MB2025-04-16#t20w0",
+  "genre": null
+ },
+ "R0295": {
+  "chamber": "SCO",
+  "verdict": "AI",
+  "date": "2026-01-21",
+  "speaker": "Stephen Kerr",
+  "n_words": 310,
+  "seg_id": "SCO2026-01-21#t1607w1",
+  "genre": null
+ },
+ "R0296": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2025-10-02",
+  "speaker": "Cathay Wagantall (Yorkton\u2014Melville, CPC)",
+  "n_words": 122,
+  "seg_id": "CA2025-10-02#t328w0",
+  "genre": null
+ },
+ "R0297": {
+  "chamber": "VIC",
+  "verdict": "Human",
+  "date": "2026-03-18",
+  "speaker": "David LIMBRICK",
+  "n_words": 269,
+  "seg_id": "VICLC:Second-reading:2026-03-18#t20w5",
+  "genre": null
+ },
+ "R0298": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2025-06-09",
+  "speaker": "Ms Bunting (The Chairperson of the Committee for Justice)",
+  "n_words": 303,
+  "seg_id": "NI2025-06-09#t242w1",
+  "genre": null
+ },
+ "R0299": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-06-18",
+  "speaker": "Juanita Nathan (Pickering\u2014Brooklin, Lib.)",
+  "n_words": 340,
+  "seg_id": "CA2025-06-18#t142w2",
+  "genre": "DEBATE"
+ },
+ "R0300": {
+  "chamber": "US-HOUSE",
+  "verdict": "Human",
+  "date": "2025-02-25",
+  "speaker": "Ms. PRESSLEY",
+  "n_words": 229,
+  "seg_id": "US2025-02-25-H791-3#t112w0",
+  "genre": null
+ },
+ "R0301": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2025-02-18",
+  "speaker": "Mr NATHAN HAGARTY",
+  "n_words": 159,
+  "seg_id": "NSWLA2025-02-18#t179w0",
+  "genre": null
+ },
+ "R0302": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2026-02-12",
+  "speaker": "Ms KATELIN McINERNEY",
+  "n_words": 224,
+  "seg_id": "NSWLA2026-02-12#t128w0",
+  "genre": null
+ },
+ "R0303": {
+  "chamber": "QLD",
+  "verdict": "AI",
+  "date": "2026-05-14",
+  "speaker": "O\u2019CONNOR",
+  "n_words": 351,
+  "seg_id": "QLD2026-05-14#t233w1",
+  "genre": null
+ },
+ "R0304": {
+  "chamber": "VIC",
+  "verdict": "Mixed",
+  "date": "2025-11-19",
+  "speaker": "Nicole WERNER",
+  "n_words": 354,
+  "seg_id": "VICLA:Second-reading:2025-11-19#t5w6",
+  "genre": null
+ },
+ "R0305": {
+  "chamber": "WAL",
+  "verdict": "Human",
+  "date": "2026-07-01",
+  "speaker": "Adam Price",
+  "n_words": 200,
+  "seg_id": "WAL2026-07-01#t37w0",
+  "genre": null
+ },
+ "R0306": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-06-05",
+  "speaker": "Hon. Chrystia Freeland",
+  "n_words": 298,
+  "seg_id": "CA2025-06-05#t388w0",
+  "genre": "DEBATE"
+ },
+ "R0307": {
+  "chamber": "SK",
+  "verdict": "Mixed",
+  "date": "2026-04-02",
+  "speaker": "April ChiefCalf",
+  "n_words": 225,
+  "seg_id": "SK2026-04-02#t9w0",
+  "genre": null
+ },
+ "R0308": {
+  "chamber": "WA",
+  "verdict": "AI",
+  "date": "2025-11-12",
+  "speaker": "Mr Bevan Eatts",
+  "n_words": 339,
+  "seg_id": "WALA2025-11-12#t105w3",
+  "genre": null
+ },
+ "R0309": {
+  "chamber": "NS",
+  "verdict": "AI",
+  "date": "2026-03-12",
+  "speaker": "HON. IAIN RANKIN",
+  "n_words": 211,
+  "seg_id": "NS2026-03-12#t31w0",
+  "genre": null
+ },
+ "R0310": {
+  "chamber": "NI",
+  "verdict": "Mixed",
+  "date": "2026-06-16",
+  "speaker": "Ms Finnegan",
+  "n_words": 278,
+  "seg_id": "NI2026-06-16#t164w0",
+  "genre": null
+ },
+ "R0311": {
+  "chamber": "SCO",
+  "verdict": "Human",
+  "date": "2026-01-28",
+  "speaker": "Douglas Ross",
+  "n_words": 194,
+  "seg_id": "SCO2026-01-28#t2027w0",
+  "genre": null
+ },
+ "R0312": {
+  "chamber": "AB",
+  "verdict": "Human",
+  "date": "2026-03-09",
+  "speaker": "Ms Sweet",
+  "n_words": 345,
+  "seg_id": "AB2026-03-09#t152w1",
+  "genre": null
+ },
+ "R0313": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2026-04-13",
+  "speaker": "Lorne Doerkson",
+  "n_words": 347,
+  "seg_id": "BC2026-04-13#t84w1",
+  "genre": null
+ },
+ "R0314": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2025-12-03",
+  "speaker": "Fraser Tolmie (Moose Jaw\u2014Lake Centre\u2014Lanigan, CPC)",
+  "n_words": 304,
+  "seg_id": "CA2025-12-03#t144w1",
+  "genre": "DEBATE"
+ },
+ "R0315": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Mixed",
+  "date": "2025-10-07",
+  "speaker": "Bob Zimmer (Prince George\u2014Peace River\u2014Northern Rockies, CPC)",
+  "n_words": 250,
+  "seg_id": "CA2025-10-07#t228w3",
+  "genre": null
+ },
+ "R0316": {
+  "chamber": "VIC",
+  "verdict": "Human",
+  "date": "2025-03-06",
+  "speaker": "Ann-Marie HERMANS",
+  "n_words": 349,
+  "seg_id": "VICLC:Adjournment:2025-03-06#t7w0",
+  "genre": null
+ },
+ "R0317": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2026-05-01",
+  "speaker": "Mike Kelloway (Sydney\u2014Glace Bay, Lib.)",
+  "n_words": 145,
+  "seg_id": "CA2026-05-01#t40w0",
+  "genre": "SO31"
+ },
+ "R0318": {
+  "chamber": "TAS",
+  "verdict": "AI",
+  "date": "2025-09-11",
+  "speaker": "Ms JOHNSTON",
+  "n_words": 223,
+  "seg_id": "TASHA2025-09-11#p1t127w0",
+  "genre": null
+ },
+ "R0319": {
+  "chamber": "ON",
+  "verdict": "Mixed",
+  "date": "2026-03-31",
+  "speaker": "M. Guy Bourgouin",
+  "n_words": 348,
+  "seg_id": "ON2026-03-31#t9w0",
+  "genre": null
+ },
+ "R0320": {
+  "chamber": "Dail Eireann",
+  "verdict": "Human",
+  "date": "2026-05-27",
+  "speaker": "Deputy Mary Lou McDonald",
+  "n_words": 275,
+  "seg_id": "IE2026-05-27#t55w0",
+  "genre": null
+ },
+ "R0321": {
+  "chamber": "SA",
+  "verdict": "Mixed",
+  "date": "2025-09-18",
+  "speaker": "Ms HUTCHESSON",
+  "n_words": 187,
+  "seg_id": "SAHA2025-09-18#t187w2",
+  "genre": null
+ },
+ "R0322": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2026-05-19",
+  "speaker": "Mr Beattie",
+  "n_words": 218,
+  "seg_id": "NI2026-05-19#t286w2",
+  "genre": null
+ },
+ "R0323": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-01-27",
+  "speaker": "Patrick Weiler (West Vancouver\u2014Sunshine Coast\u2014Sea to Sky Country, Lib.)",
+  "n_words": 272,
+  "seg_id": "CA2026-01-27#t255w0",
+  "genre": "DEBATE"
+ },
+ "R0324": {
+  "chamber": "SK",
+  "verdict": "Mixed",
+  "date": "2026-04-21",
+  "speaker": "James Thorsteinson",
+  "n_words": 235,
+  "seg_id": "SK2026-04-21#t25w0",
+  "genre": null
+ },
+ "R0325": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2026-06-08",
+  "speaker": "Mr Beattie",
+  "n_words": 316,
+  "seg_id": "NI2026-06-08#t292w1",
+  "genre": null
+ },
+ "R0326": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2026-02-12",
+  "speaker": "Hon. Arielle Kayabaga (London West, Lib.)",
+  "n_words": 321,
+  "seg_id": "CA2026-02-12#t218w3",
+  "genre": null
+ },
+ "R0327": {
+  "chamber": "AB",
+  "verdict": "Human",
+  "date": "2025-10-27",
+  "speaker": "Member Gurinder Brar",
+  "n_words": 356,
+  "seg_id": "AB2025-10-27#t30w0",
+  "genre": null
+ },
+ "R0328": {
+  "chamber": "US-HOUSE",
+  "verdict": "AI",
+  "date": "2025-09-10",
+  "speaker": "Mr. TORRES of New York",
+  "n_words": 182,
+  "seg_id": "US2025-09-10-H4231-4#t4w0",
+  "genre": null
+ },
+ "R0329": {
+  "chamber": "WA",
+  "verdict": "Human",
+  "date": "2025-08-20",
+  "speaker": "Mr Peter Rundle",
+  "n_words": 335,
+  "seg_id": "WALA2025-08-20#t138w1",
+  "genre": null
+ },
+ "R0330": {
+  "chamber": "SA",
+  "verdict": "Mixed",
+  "date": "2025-06-17",
+  "speaker": "The Hon. V.A. TARZIA",
+  "n_words": 332,
+  "seg_id": "SAHA2025-06-17#t0w0",
+  "genre": null
+ },
+ "R0331": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-09-26",
+  "speaker": "Hon. Fran\u00e7ois-Philippe Champagne (Minister of Finance and National Revenue, Lib.)",
+  "n_words": 121,
+  "seg_id": "CA2025-09-26#t68w0",
+  "genre": "OQ"
+ },
+ "R0332": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2026-06-22",
+  "speaker": "Mr Givan",
+  "n_words": 126,
+  "seg_id": "NI2026-06-22#t186w0",
+  "genre": null
+ },
+ "R0333": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-11-25",
+  "speaker": "Gord Johns (Courtenay\u2014Alberni, NDP)",
+  "n_words": 180,
+  "seg_id": "CA2025-11-25#t497w2",
+  "genre": "DEBATE"
+ },
+ "R0334": {
+  "chamber": "WAL",
+  "verdict": "AI",
+  "date": "2026-07-08",
+  "speaker": "Cristiana Emsley",
+  "n_words": 132,
+  "seg_id": "WAL2026-07-08#t166w2",
+  "genre": null
+ },
+ "R0335": {
+  "chamber": "NL",
+  "verdict": "Human",
+  "date": "2026-06-01",
+  "speaker": "L. EVANS",
+  "n_words": 129,
+  "seg_id": "NL2026-06-01#t47w0",
+  "genre": null
+ },
+ "R0336": {
+  "chamber": "UK House of Commons",
+  "verdict": "Human",
+  "date": "2025-03-28",
+  "speaker": "Chris McDonald",
+  "n_words": 271,
+  "seg_id": "UK2025-03-28#t158w1",
+  "genre": null
+ },
+ "R0337": {
+  "chamber": "ON",
+  "verdict": "Human",
+  "date": "2025-05-13",
+  "speaker": "Mr. Rob Cerjanec",
+  "n_words": 127,
+  "seg_id": "ON2025-05-13#t192w0",
+  "genre": null
+ },
+ "R0338": {
+  "chamber": "NSW",
+  "verdict": "AI",
+  "date": "2025-10-22",
+  "speaker": "Mr EDMOND ATALLA",
+  "n_words": 221,
+  "seg_id": "NSWLA2025-10-22#t176w2",
+  "genre": null
+ },
+ "R0339": {
+  "chamber": "ON",
+  "verdict": "AI",
+  "date": "2025-11-20",
+  "speaker": "MPP Stephanie Smyth",
+  "n_words": 341,
+  "seg_id": "ON2025-11-20#t202w0",
+  "genre": null
+ },
+ "R0340": {
+  "chamber": "ON",
+  "verdict": "Mixed",
+  "date": "2026-05-11",
+  "speaker": "MPP Andrea Hazell",
+  "n_words": 282,
+  "seg_id": "ON2026-05-11#t138w2",
+  "genre": null
+ },
+ "R0341": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2025-09-23",
+  "speaker": "Hon. Andrew Scheer (Regina\u2014Qu'Appelle, CPC)",
+  "n_words": 340,
+  "seg_id": "CA2025-09-23#t67w0",
+  "genre": null
+ },
+ "R0342": {
+  "chamber": "US-HOUSE",
+  "verdict": "Human",
+  "date": "2026-06-24",
+  "speaker": "Mr. MILLER of Ohio",
+  "n_words": 189,
+  "seg_id": "US2026-06-24-H4213#t0w1",
+  "genre": null
+ },
+ "R0343": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2026-06-01",
+  "speaker": "Kelly Block (Carlton Trail\u2014Eagle Creek, CPC)",
+  "n_words": 349,
+  "seg_id": "CA2026-06-01#t246w2",
+  "genre": null
+ },
+ "R0344": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Mixed",
+  "date": "2026-06-03",
+  "speaker": "Vincent Ho (Richmond Hill South, CPC)",
+  "n_words": 164,
+  "seg_id": "CA2026-06-03#t139w0",
+  "genre": null
+ },
+ "R0345": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2025-02-19",
+  "speaker": "Hon. Spencer Chandra Herbert",
+  "n_words": 317,
+  "seg_id": "BC2025-02-19#t80w3",
+  "genre": null
+ },
+ "R0346": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2025-06-03",
+  "speaker": "John-Paul Danko (Hamilton West\u2014Ancaster\u2014Dundas, Lib.)",
+  "n_words": 359,
+  "seg_id": "CA2025-06-03#t95w3",
+  "genre": null
+ },
+ "R0347": {
+  "chamber": "BC",
+  "verdict": "Mixed",
+  "date": "2025-10-28",
+  "speaker": "Kristina Loewen",
+  "n_words": 202,
+  "seg_id": "BC2025-10-28#t6w3",
+  "genre": null
+ },
+ "R0348": {
+  "chamber": "ON",
+  "verdict": "AI",
+  "date": "2025-05-26",
+  "speaker": "Mr. Dave Smith",
+  "n_words": 136,
+  "seg_id": "ON2025-05-26#t2w8",
+  "genre": null
+ },
+ "R0349": {
+  "chamber": "SK",
+  "verdict": "Human",
+  "date": "2025-11-03",
+  "speaker": "Jared Clarke",
+  "n_words": 184,
+  "seg_id": "SK2025-11-03#t12w1",
+  "genre": null
+ },
+ "R0350": {
+  "chamber": "ON",
+  "verdict": "Human",
+  "date": "2025-11-06",
+  "speaker": "Ms. Peggy Sattler",
+  "n_words": 199,
+  "seg_id": "ON2025-11-06#t131w0",
+  "genre": null
+ },
+ "R0351": {
+  "chamber": "SA",
+  "verdict": "Human",
+  "date": "2025-04-03",
+  "speaker": "The Hon. C.M. SCRIVEN",
+  "n_words": 260,
+  "seg_id": "SALC2025-04-03#t43w1",
+  "genre": null
+ },
+ "R0352": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2026-06-10",
+  "speaker": "Dan Mazier (Riding Mountain, CPC)",
+  "n_words": 344,
+  "seg_id": "CA2026-06-10#t131w0",
+  "genre": null
+ },
+ "R0353": {
+  "chamber": "TAS",
+  "verdict": "Human",
+  "date": "2026-05-05",
+  "speaker": "Ms ROSOL",
+  "n_words": 145,
+  "seg_id": "TASHA2026-05-05#p1t60w2",
+  "genre": null
+ },
+ "R0354": {
+  "chamber": "UK House of Commons",
+  "verdict": "Human",
+  "date": "2026-01-21",
+  "speaker": "Hilary Benn",
+  "n_words": 138,
+  "seg_id": "UK2026-01-21#t517w0",
+  "genre": null
+ },
+ "R0355": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-01-28",
+  "speaker": "Hon. Maninder Sidhu",
+  "n_words": 165,
+  "seg_id": "CA2026-01-28#t129w0",
+  "genre": "DEBATE"
+ },
+ "R0356": {
+  "chamber": "TAS",
+  "verdict": "Human",
+  "date": "2025-12-04",
+  "speaker": "Dr WOODRUFF",
+  "n_words": 138,
+  "seg_id": "TASHA2025-12-04#p1t193w1",
+  "genre": null
+ },
+ "R0357": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-04-20",
+  "speaker": "Hon. Kevin Lamoureux (Parliamentary Secretary to the Leader of the Government in the House of Commons, Lib.)",
+  "n_words": 148,
+  "seg_id": "CA2026-04-20#t72w0",
+  "genre": "DEBATE"
+ },
+ "R0358": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2026-03-10",
+  "speaker": "Linda Hepner",
+  "n_words": 156,
+  "seg_id": "BC2026-03-10#t340w0",
+  "genre": null
+ },
+ "R0359": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-04-30",
+  "speaker": "Carlos Leit\u00e3o (Parliamentary Secretary to the Minister of Industry, Lib.)",
+  "n_words": 296,
+  "seg_id": "CA2026-04-30#t261w0",
+  "genre": "DEBATE"
+ },
+ "R0360": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2025-06-16",
+  "speaker": "Tim Louis (Kitchener\u2014Conestoga, Lib.)",
+  "n_words": 143,
+  "seg_id": "CA2025-06-16#t125w0",
+  "genre": "SO31"
+ },
+ "R0361": {
+  "chamber": "VIC",
+  "verdict": "Mixed",
+  "date": "2025-09-09",
+  "speaker": "Jacinta ALLAN",
+  "n_words": 338,
+  "seg_id": "VICLA:Motions:2025-09-09#t0w0",
+  "genre": null
+ },
+ "R0362": {
+  "chamber": "QLD",
+  "verdict": "Mixed",
+  "date": "2026-03-03",
+  "speaker": "KELLY",
+  "n_words": 355,
+  "seg_id": "QLD2026-03-03#t257w1",
+  "genre": null
+ },
+ "R0363": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2026-02-13",
+  "speaker": "Tim Louis (Kitchener\u2014Conestoga, Lib.)",
+  "n_words": 181,
+  "seg_id": "CA2026-02-13#t38w0",
+  "genre": "SO31"
+ },
+ "R0364": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2025-05-21",
+  "speaker": "CRISAFULLI",
+  "n_words": 319,
+  "seg_id": "QLD2025-05-21#t23w0",
+  "genre": null
+ },
+ "R0365": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2025-03-14",
+  "speaker": "LISTER",
+  "n_words": 292,
+  "seg_id": "QLD2025-03-14#t212w0",
+  "genre": null
+ },
+ "R0366": {
+  "chamber": "TAS",
+  "verdict": "Mixed",
+  "date": "2026-04-16",
+  "speaker": "Mr BARNETT",
+  "n_words": 216,
+  "seg_id": "TASHA2026-04-16#p1t99w0",
+  "genre": null
+ },
+ "R0367": {
+  "chamber": "NSW",
+  "verdict": "Mixed",
+  "date": "2025-06-04",
+  "speaker": "Mr JAMES GRIFFIN",
+  "n_words": 152,
+  "seg_id": "NSWLA2025-06-04#t154w0",
+  "genre": null
+ },
+ "R0368": {
+  "chamber": "WA",
+  "verdict": "AI",
+  "date": "2026-05-05",
+  "speaker": "Hon Dr Brian Walker",
+  "n_words": 352,
+  "seg_id": "WALC2026-05-05#t11w3",
+  "genre": null
+ },
+ "R0369": {
+  "chamber": "SK",
+  "verdict": "Human",
+  "date": "2026-03-10",
+  "speaker": "Noor Burki",
+  "n_words": 191,
+  "seg_id": "SK2026-03-10#t66w1",
+  "genre": null
+ },
+ "R0370": {
+  "chamber": "MB",
+  "verdict": "Mixed",
+  "date": "2026-03-09",
+  "speaker": "Mr. Kinew",
+  "n_words": 337,
+  "seg_id": "MB2026-03-09#t43w0",
+  "genre": null
+ },
+ "R0371": {
+  "chamber": "SCO",
+  "verdict": "Human",
+  "date": "2026-03-19",
+  "speaker": "Kevin Stewart",
+  "n_words": 130,
+  "seg_id": "SCO2026-03-19#t7901w1",
+  "genre": null
+ },
+ "R0372": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2026-02-26",
+  "speaker": "Hon. Bowinn Ma",
+  "n_words": 260,
+  "seg_id": "BC2026-02-26#t232w0",
+  "genre": null
+ },
+ "R0373": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2025-09-15",
+  "speaker": "Mr Givan",
+  "n_words": 120,
+  "seg_id": "NI2025-09-15#t257w0",
+  "genre": null
+ },
+ "R0374": {
+  "chamber": "WAL",
+  "verdict": "Human",
+  "date": "2025-11-04",
+  "speaker": "Huw Irranca-Davies",
+  "n_words": 240,
+  "seg_id": "WAL2025-11-04#t47w0",
+  "genre": null
+ },
+ "R0375": {
+  "chamber": "VIC",
+  "verdict": "AI",
+  "date": "2025-05-15",
+  "speaker": "Jordan CRUGNALE",
+  "n_words": 197,
+  "seg_id": "VICLA:Motions:2025-05-15#t30w4",
+  "genre": null
+ },
+ "R0376": {
+  "chamber": "AB",
+  "verdict": "Mixed",
+  "date": "2025-11-25",
+  "speaker": "Ms Pancholi",
+  "n_words": 336,
+  "seg_id": "AB2025-11-25#t170w1",
+  "genre": null
+ },
+ "R0377": {
+  "chamber": "Dail Eireann",
+  "verdict": "Human",
+  "date": "2025-06-26",
+  "speaker": "Deputy Naoise \u00d3 Muir\u00ed",
+  "n_words": 148,
+  "seg_id": "IE2025-06-26#t62w0",
+  "genre": null
+ },
+ "R0378": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2026-02-02",
+  "speaker": "Mr O'Dowd",
+  "n_words": 152,
+  "seg_id": "NI2026-02-02#t28w0",
+  "genre": null
+ },
+ "R0379": {
+  "chamber": "NL",
+  "verdict": "Mixed",
+  "date": "2025-03-03",
+  "speaker": "L. O\u2019DRISCOLL",
+  "n_words": 168,
+  "seg_id": "NL2025-03-03#t2w0",
+  "genre": null
+ },
+ "R0380": {
+  "chamber": "VIC",
+  "verdict": "AI",
+  "date": "2025-12-04",
+  "speaker": "Annabelle CLEELAND",
+  "n_words": 351,
+  "seg_id": "VICLA:Second-reading:2025-12-04#t18w0",
+  "genre": null
+ },
+ "R0381": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2025-11-24",
+  "speaker": "Salma Zahid (Scarborough Centre\u2014Don Valley East, Lib.)",
+  "n_words": 341,
+  "seg_id": "CA2025-11-24#t219w2",
+  "genre": "DEBATE"
+ },
+ "R0382": {
+  "chamber": "TAS",
+  "verdict": "Human",
+  "date": "2025-03-05",
+  "speaker": "Mr ABETZ",
+  "n_words": 248,
+  "seg_id": "TASHA2025-03-05#p1t115w5",
+  "genre": null
+ },
+ "R0383": {
+  "chamber": "VIC",
+  "verdict": "Human",
+  "date": "2025-02-04",
+  "speaker": "Danny O\u2019BRIEN",
+  "n_words": 285,
+  "seg_id": "VICLA:Condolences:2025-02-04#t2w1",
+  "genre": null
+ },
+ "R0384": {
+  "chamber": "TAS",
+  "verdict": "Mixed",
+  "date": "2026-04-15",
+  "speaker": "Mr VERMEY",
+  "n_words": 356,
+  "seg_id": "TASHA2026-04-15#p1t232w0",
+  "genre": null
+ },
+ "R0385": {
+  "chamber": "AB",
+  "verdict": "AI",
+  "date": "2025-03-17",
+  "speaker": "Mr. Yao",
+  "n_words": 357,
+  "seg_id": "AB2025-03-17#t15w0",
+  "genre": null
+ },
+ "R0386": {
+  "chamber": "CA-FED",
+  "verdict": "Mixed",
+  "date": "2026-05-25",
+  "speaker": "Scot Davidson (New Tecumseth\u2014Gwillimbury, CPC)",
+  "n_words": 280,
+  "seg_id": "CA2026-05-25#t230w3",
+  "genre": "DEBATE"
+ },
+ "R0387": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2026-04-22",
+  "speaker": "MANDER",
+  "n_words": 322,
+  "seg_id": "QLD2026-04-22#t174w0",
+  "genre": null
+ },
+ "R0388": {
+  "chamber": "QLD",
+  "verdict": "Mixed",
+  "date": "2025-06-27",
+  "speaker": "WATTS",
+  "n_words": 358,
+  "seg_id": "QLD2025-06-27#t125w1",
+  "genre": null
+ },
+ "R0389": {
+  "chamber": "CA-FED",
+  "verdict": "Mixed",
+  "date": "2025-06-20",
+  "speaker": "William Stevenson (Yellowhead, CPC)",
+  "n_words": 149,
+  "seg_id": "CA2025-06-20#t45w0",
+  "genre": "SO31"
+ },
+ "R0390": {
+  "chamber": "SA",
+  "verdict": "Human",
+  "date": "2025-03-04",
+  "speaker": "The Hon. R.A. SIMMS",
+  "n_words": 163,
+  "seg_id": "SALC2025-03-04#t133w0",
+  "genre": null
+ },
+ "R0391": {
+  "chamber": "NS",
+  "verdict": "Mixed",
+  "date": "2025-02-28",
+  "speaker": "LINA HAMID",
+  "n_words": 271,
+  "seg_id": "NS2025-02-28#t134w4",
+  "genre": null
+ },
+ "R0392": {
+  "chamber": "Dail Eireann",
+  "verdict": "Human",
+  "date": "2025-06-26",
+  "speaker": "Deputy Jennifer Carroll MacNeill",
+  "n_words": 244,
+  "seg_id": "IE2025-06-26#t82w0",
+  "genre": null
+ },
+ "R0393": {
+  "chamber": "Dail Eireann",
+  "verdict": "AI",
+  "date": "2026-01-20",
+  "speaker": "Deputy Liam Quaide",
+  "n_words": 302,
+  "seg_id": "IE2026-01-20#t194w1",
+  "genre": null
+ },
+ "R0394": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2026-05-13",
+  "speaker": "Mr STEVE WHAN",
+  "n_words": 165,
+  "seg_id": "NSWLA2026-05-13#t236w0",
+  "genre": null
+ },
+ "R0395": {
+  "chamber": "ON",
+  "verdict": "Human",
+  "date": "2025-12-03",
+  "speaker": "Ms. Jennifer K. French",
+  "n_words": 228,
+  "seg_id": "ON2025-12-03#t147w1",
+  "genre": null
+ },
+ "R0396": {
+  "chamber": "BC",
+  "verdict": "AI",
+  "date": "2025-11-17",
+  "speaker": "Lynne Block",
+  "n_words": 332,
+  "seg_id": "BC2025-11-17#t87w5",
+  "genre": null
+ },
+ "R0397": {
+  "chamber": "VIC",
+  "verdict": "AI",
+  "date": "2025-10-16",
+  "speaker": "Sheena WATT",
+  "n_words": 357,
+  "seg_id": "VICLC:Second-reading:2025-10-16#t5w1",
+  "genre": null
+ },
+ "R0398": {
+  "chamber": "VIC",
+  "verdict": "AI",
+  "date": "2025-05-13",
+  "speaker": "Sheena WATT",
+  "n_words": 200,
+  "seg_id": "VICLC:Second-reading:2025-05-13#t14w5",
+  "genre": null
+ },
+ "R0399": {
+  "chamber": "TAS",
+  "verdict": "Human",
+  "date": "2026-03-25",
+  "speaker": "Mr GEORGE",
+  "n_words": 221,
+  "seg_id": "TASHA2026-03-25#p1t147w0",
+  "genre": null
+ },
+ "R0400": {
+  "chamber": "MB",
+  "verdict": "Human",
+  "date": "2025-05-15",
+  "speaker": "Mrs. Cook",
+  "n_words": 130,
+  "seg_id": "MB2025-05-15#t22w0",
+  "genre": null
+ },
+ "R0401": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-11-25",
+  "speaker": "John Barlow (Foothills, CPC)",
+  "n_words": 125,
+  "seg_id": "CA2025-11-25#t189w0",
+  "genre": "OQ"
+ },
+ "R0402": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2025-06-24",
+  "speaker": "Ms D Armstrong",
+  "n_words": 267,
+  "seg_id": "NI2025-06-24#t404w1",
+  "genre": null
+ },
+ "R0403": {
+  "chamber": "AB",
+  "verdict": "Human",
+  "date": "2025-12-08",
+  "speaker": "Mr. Nenshi",
+  "n_words": 137,
+  "seg_id": "AB2025-12-08#t48w0",
+  "genre": null
+ },
+ "R0404": {
+  "chamber": "TAS",
+  "verdict": "AI",
+  "date": "2025-09-23",
+  "speaker": "Ms JOHNSTON",
+  "n_words": 216,
+  "seg_id": "TASHA2025-09-23#p1t124w1",
+  "genre": null
+ },
+ "R0405": {
+  "chamber": "NSW",
+  "verdict": "AI",
+  "date": "2025-03-26",
+  "speaker": "The Hon. MARK BANASIAK",
+  "n_words": 304,
+  "seg_id": "NSWLC2025-03-26#t193w2",
+  "genre": null
+ },
+ "R0406": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-05-28",
+  "speaker": "Andrew Lawton (Elgin\u2014St. Thomas\u2014London South, CPC)",
+  "n_words": 163,
+  "seg_id": "CA2026-05-28#t144w0",
+  "genre": "SO31"
+ },
+ "R0407": {
+  "chamber": "NS",
+  "verdict": "Human",
+  "date": "2025-02-18",
+  "speaker": "CLAUDIA CHENDER",
+  "n_words": 339,
+  "seg_id": "NS2025-02-18#t120w4",
+  "genre": null
+ },
+ "R0408": {
+  "chamber": "NS",
+  "verdict": "AI",
+  "date": "2026-03-25",
+  "speaker": "HON. BECKY DRUHAN",
+  "n_words": 220,
+  "seg_id": "NS2026-03-25#t12w0",
+  "genre": null
+ },
+ "R0409": {
+  "chamber": "SCO",
+  "verdict": "Mixed",
+  "date": "2025-11-05",
+  "speaker": "Sandesh Gulhane",
+  "n_words": 226,
+  "seg_id": "SCO2025-11-05#t18097w1",
+  "genre": null
+ },
+ "R0410": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2026-06-22",
+  "speaker": "Mr Frew",
+  "n_words": 279,
+  "seg_id": "NI2026-06-22#t429w1",
+  "genre": null
+ },
+ "R0411": {
+  "chamber": "US-HOUSE",
+  "verdict": "Human",
+  "date": "2026-04-23",
+  "speaker": "Mr. BALDERSON",
+  "n_words": 157,
+  "seg_id": "US2026-04-23-H3071-7#t0w0",
+  "genre": null
+ },
+ "R0412": {
+  "chamber": "TAS",
+  "verdict": "Human",
+  "date": "2026-05-07",
+  "speaker": "Ms ROSOL",
+  "n_words": 333,
+  "seg_id": "TASHA2026-05-07#p1t167w1",
+  "genre": null
+ },
+ "R0413": {
+  "chamber": "NSW",
+  "verdict": "AI",
+  "date": "2026-02-11",
+  "speaker": "The Hon. ROBERT BORSAK",
+  "n_words": 314,
+  "seg_id": "NSWLC2026-02-11#t163w2",
+  "genre": null
+ },
+ "R0414": {
+  "chamber": "WA",
+  "verdict": "Human",
+  "date": "2025-09-16",
+  "speaker": "Hon Neil Thomson",
+  "n_words": 171,
+  "seg_id": "WALC2025-09-16#t201w0",
+  "genre": null
+ },
+ "R0415": {
+  "chamber": "QLD",
+  "verdict": "AI",
+  "date": "2026-03-04",
+  "speaker": "DOOLEY",
+  "n_words": 360,
+  "seg_id": "QLD2026-03-04#t2w0",
+  "genre": null
+ },
+ "R0416": {
+  "chamber": "ON",
+  "verdict": "Human",
+  "date": "2026-03-31",
+  "speaker": "Hon. Nolan Quinn",
+  "n_words": 152,
+  "seg_id": "ON2026-03-31#t74w0",
+  "genre": null
+ },
+ "R0417": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-04-29",
+  "speaker": "Taleeb Noormohamed (Vancouver Granville, Lib.)",
+  "n_words": 200,
+  "seg_id": "CA2026-04-29#t0w0",
+  "genre": "SO31"
+ },
+ "R0418": {
+  "chamber": "NL",
+  "verdict": "Human",
+  "date": "2025-03-04",
+  "speaker": "G. BYRNE",
+  "n_words": 212,
+  "seg_id": "NL2025-03-04#t166w3",
+  "genre": null
+ },
+ "R0419": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2026-03-03",
+  "speaker": "MULLEN",
+  "n_words": 349,
+  "seg_id": "QLD2026-03-03#t196w4",
+  "genre": null
+ },
+ "R0420": {
+  "chamber": "CA-FED",
+  "verdict": "Mixed",
+  "date": "2026-04-14",
+  "speaker": "Dan Albas (Okanagan Lake West\u2014South Kelowna, CPC)",
+  "n_words": 214,
+  "seg_id": "CA2026-04-14#t271w0",
+  "genre": "DEBATE"
+ },
+ "R0421": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2026-02-10",
+  "speaker": "Zoe Royer (Port Moody\u2014Coquitlam, Lib.)",
+  "n_words": 124,
+  "seg_id": "CA2026-02-10#t144w0",
+  "genre": "SO31"
+ },
+ "R0422": {
+  "chamber": "CA-FED",
+  "verdict": "Mixed",
+  "date": "2026-02-09",
+  "speaker": "Hon. Mandy Gull-Masty (Minister of Indigenous Services, Lib.)",
+  "n_words": 341,
+  "seg_id": "CA2026-02-09#t36w2",
+  "genre": "DEBATE"
+ },
+ "R0423": {
+  "chamber": "UK House of Commons",
+  "verdict": "Human",
+  "date": "2026-06-22",
+  "speaker": "Louise Jones",
+  "n_words": 310,
+  "seg_id": "UK2026-06-22#t405w0",
+  "genre": null
+ },
+ "R0424": {
+  "chamber": "Dail Eireann",
+  "verdict": "Human",
+  "date": "2026-04-29",
+  "speaker": "Deputy Conor Sheehan",
+  "n_words": 269,
+  "seg_id": "IE2026-04-29#t352w0",
+  "genre": null
+ },
+ "R0425": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2025-06-12",
+  "speaker": "Hon. Kody Blois (Parliamentary Secretary to the Prime Minister, Lib.)",
+  "n_words": 329,
+  "seg_id": "CA2025-06-12#t126w1",
+  "genre": null
+ },
+ "R0426": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2025-11-03",
+  "speaker": "Caroline Desrochers (Parliamentary Secretary to the Minister of Housing and Infrastructure, Lib.)",
+  "n_words": 337,
+  "seg_id": "CA2025-11-03#t216w3",
+  "genre": null
+ },
+ "R0427": {
+  "chamber": "VIC",
+  "verdict": "Human",
+  "date": "2026-02-18",
+  "speaker": "Danny PEARSON",
+  "n_words": 357,
+  "seg_id": "VICLA:Second-reading:2026-02-18#t0w4",
+  "genre": null
+ },
+ "R0428": {
+  "chamber": "NS",
+  "verdict": "Human",
+  "date": "2025-10-03",
+  "speaker": "JOHN LOHR",
+  "n_words": 130,
+  "seg_id": "NS2025-10-03#t101w0",
+  "genre": null
+ },
+ "R0429": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2025-10-15",
+  "speaker": "Ms DONNA DAVIS",
+  "n_words": 243,
+  "seg_id": "NSWLA2025-10-15#t151w0",
+  "genre": null
+ },
+ "R0430": {
+  "chamber": "UK House of Commons",
+  "verdict": "Human",
+  "date": "2025-03-17",
+  "speaker": "Nusrat Ghani",
+  "n_words": 349,
+  "seg_id": "UK2025-03-17#t274w15",
+  "genre": null
+ },
+ "R0431": {
+  "chamber": "US-HOUSE",
+  "verdict": "Human",
+  "date": "2025-07-21",
+  "speaker": "Mr. HILL of Arkansas",
+  "n_words": 283,
+  "seg_id": "US2025-07-21-H3517#t4w0",
+  "genre": null
+ },
+ "R0432": {
+  "chamber": "QLD",
+  "verdict": "AI",
+  "date": "2026-06-02",
+  "speaker": "de BRENNI",
+  "n_words": 341,
+  "seg_id": "QLD2026-06-02#t205w0",
+  "genre": null
+ },
+ "R0433": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2025-06-17",
+  "speaker": "Hon. Judy A. Sgro (Humber River\u2014Black Creek, Lib.)",
+  "n_words": 324,
+  "seg_id": "CA2025-06-17#t71w2",
+  "genre": "DEBATE"
+ },
+ "R0434": {
+  "chamber": "Dail Eireann",
+  "verdict": "Human",
+  "date": "2025-03-19",
+  "speaker": "Deputy Mary Lou McDonald",
+  "n_words": 334,
+  "seg_id": "IE2025-03-19#t0w0",
+  "genre": null
+ },
+ "R0435": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2026-06-04",
+  "speaker": "MULLEN",
+  "n_words": 279,
+  "seg_id": "QLD2026-06-04#t253w2",
+  "genre": null
+ },
+ "R0436": {
+  "chamber": "ON",
+  "verdict": "AI",
+  "date": "2025-10-20",
+  "speaker": "Mr. Amarjot Sandhu",
+  "n_words": 123,
+  "seg_id": "ON2025-10-20#t99w0",
+  "genre": null
+ },
+ "R0437": {
+  "chamber": "Dail Eireann",
+  "verdict": "Mixed",
+  "date": "2025-05-20",
+  "speaker": "Deputy Pat Buckley",
+  "n_words": 205,
+  "seg_id": "IE2025-05-20#t389w1",
+  "genre": null
+ },
+ "R0438": {
+  "chamber": "TAS",
+  "verdict": "AI",
+  "date": "2025-09-23",
+  "speaker": "Ms JOHNSTON",
+  "n_words": 325,
+  "seg_id": "TASHA2025-09-23#p1t57w0",
+  "genre": null
+ },
+ "R0439": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2026-06-24",
+  "speaker": "PEASE",
+  "n_words": 244,
+  "seg_id": "QLD2026-06-24#t203w0",
+  "genre": null
+ },
+ "R0440": {
+  "chamber": "NI",
+  "verdict": "AI",
+  "date": "2025-11-24",
+  "speaker": "Mr Middleton",
+  "n_words": 321,
+  "seg_id": "NI2025-11-24#t9w0",
+  "genre": null
+ },
+ "R0441": {
+  "chamber": "AB",
+  "verdict": "Mixed",
+  "date": "2026-05-12",
+  "speaker": "Member Gurinder Brar",
+  "n_words": 341,
+  "seg_id": "AB2026-05-12#t12w1",
+  "genre": null
+ },
+ "R0442": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2026-02-12",
+  "speaker": "Ms ABIGAIL BOYD",
+  "n_words": 339,
+  "seg_id": "NSWLC2026-02-12#t122w1",
+  "genre": null
+ },
+ "R0443": {
+  "chamber": "US-SENATE",
+  "verdict": "Mixed",
+  "date": "2025-12-18",
+  "speaker": "Ms. ERNST",
+  "n_words": 329,
+  "seg_id": "US2025-12-18-S8918#t0w0",
+  "genre": null
+ },
+ "R0444": {
+  "chamber": "AB",
+  "verdict": "Human",
+  "date": "2025-05-05",
+  "speaker": "Mr. Haji",
+  "n_words": 247,
+  "seg_id": "AB2025-05-05#t143w1",
+  "genre": null
+ },
+ "R0445": {
+  "chamber": "BC",
+  "verdict": "Mixed",
+  "date": "2025-11-25",
+  "speaker": "Hon. Josie Osborne",
+  "n_words": 303,
+  "seg_id": "BC2025-11-25#t23w2",
+  "genre": null
+ },
+ "R0446": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Mixed",
+  "date": "2025-06-16",
+  "speaker": "Dan Muys (Flamborough\u2014Glanbrook\u2014Brant North, CPC)",
+  "n_words": 310,
+  "seg_id": "CA2025-06-16#t91w0",
+  "genre": null
+ },
+ "R0447": {
+  "chamber": "SA",
+  "verdict": "AI",
+  "date": "2025-08-21",
+  "speaker": "Mr FULBROOK",
+  "n_words": 349,
+  "seg_id": "SAHA2025-08-21#t155w0",
+  "genre": null
+ },
+ "R0448": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2026-06-10",
+  "speaker": "Rob Morrison (Columbia\u2014Kootenay\u2014Southern Rockies, CPC)",
+  "n_words": 169,
+  "seg_id": "CA2026-06-10#t5w0",
+  "genre": "SO31"
+ },
+ "R0449": {
+  "chamber": "SA",
+  "verdict": "Mixed",
+  "date": "2025-06-04",
+  "speaker": "The Hon. H.M. GIROLAMO",
+  "n_words": 337,
+  "seg_id": "SALC2025-06-04#t79w1",
+  "genre": null
+ },
+ "R0450": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2025-06-02",
+  "speaker": "Connie Cody (Cambridge, CPC)",
+  "n_words": 277,
+  "seg_id": "CA2025-06-02#t285w0",
+  "genre": null
+ },
+ "R0451": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2025-06-25",
+  "speaker": "Ms SUE HIGGINSON",
+  "n_words": 345,
+  "seg_id": "NSWLC2025-06-25#t160w0",
+  "genre": null
+ },
+ "R0452": {
+  "chamber": "NS",
+  "verdict": "Mixed",
+  "date": "2025-02-19",
+  "speaker": "HON. BECKY DRUHAN",
+  "n_words": 350,
+  "seg_id": "NS2025-02-19#t154w0",
+  "genre": null
+ },
+ "R0453": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2026-05-05",
+  "speaker": "Ms JULIA FINN",
+  "n_words": 252,
+  "seg_id": "NSWLA2026-05-05#t170w0",
+  "genre": null
+ },
+ "R0454": {
+  "chamber": "NL",
+  "verdict": "Human",
+  "date": "2026-05-25",
+  "speaker": "J. DINN",
+  "n_words": 121,
+  "seg_id": "NL2026-05-25#t72w0",
+  "genre": null
+ },
+ "R0455": {
+  "chamber": "SK",
+  "verdict": "AI",
+  "date": "2026-03-31",
+  "speaker": "Noor Burki",
+  "n_words": 188,
+  "seg_id": "SK2026-03-31#t17w0",
+  "genre": null
+ },
+ "R0456": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2025-05-28",
+  "speaker": "John Rustad",
+  "n_words": 236,
+  "seg_id": "BC2025-05-28#t148w2",
+  "genre": null
+ },
+ "R0457": {
+  "chamber": "NS",
+  "verdict": "Mixed",
+  "date": "2025-10-01",
+  "speaker": "HON. IAIN RANKIN",
+  "n_words": 290,
+  "seg_id": "NS2025-10-01#t149w1",
+  "genre": null
+ },
+ "R0458": {
+  "chamber": "QLD",
+  "verdict": "Mixed",
+  "date": "2025-03-12",
+  "speaker": "KIRKLAND",
+  "n_words": 342,
+  "seg_id": "QLD2025-03-12#t176w1",
+  "genre": null
+ },
+ "R0459": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Mixed",
+  "date": "2025-06-19",
+  "speaker": "Greg McLean (Calgary Centre, CPC)",
+  "n_words": 255,
+  "seg_id": "CA2025-06-19#t283w10",
+  "genre": null
+ },
+ "R0460": {
+  "chamber": "WA",
+  "verdict": "AI",
+  "date": "2025-05-27",
+  "speaker": "Mr Dan Bull",
+  "n_words": 345,
+  "seg_id": "WALA2025-05-27#t71w1",
+  "genre": null
+ },
+ "R0461": {
+  "chamber": "NL",
+  "verdict": "Human",
+  "date": "2025-03-12",
+  "speaker": "C. PARDY",
+  "n_words": 130,
+  "seg_id": "NL2025-03-12#t94w1",
+  "genre": null
+ },
+ "R0462": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2025-06-24",
+  "speaker": "BOLTON",
+  "n_words": 360,
+  "seg_id": "QLD2025-06-24#t141w0",
+  "genre": null
+ },
+ "R0463": {
+  "chamber": "NI",
+  "verdict": "Mixed",
+  "date": "2026-05-12",
+  "speaker": "Mr McGrath",
+  "n_words": 247,
+  "seg_id": "NI2026-05-12#t130w0",
+  "genre": null
+ },
+ "R0464": {
+  "chamber": "US-HOUSE",
+  "verdict": "Human",
+  "date": "2026-02-23",
+  "speaker": "Mr. CARSON",
+  "n_words": 304,
+  "seg_id": "US2026-02-23-H2248#t25w0",
+  "genre": null
+ },
+ "R0465": {
+  "chamber": "US-HOUSE",
+  "verdict": "AI",
+  "date": "2025-03-31",
+  "speaker": "Mrs. CAMMACK",
+  "n_words": 353,
+  "seg_id": "US2025-03-31-H1359-4#t8w0",
+  "genre": null
+ },
+ "R0466": {
+  "chamber": "BC",
+  "verdict": "AI",
+  "date": "2025-05-13",
+  "speaker": "Lawrence Mok",
+  "n_words": 356,
+  "seg_id": "BC2025-05-13#t27w3",
+  "genre": null
+ },
+ "R0467": {
+  "chamber": "NSW",
+  "verdict": "Mixed",
+  "date": "2026-08-05",
+  "speaker": "Mr PHILIP DONATO",
+  "n_words": 312,
+  "seg_id": "NSWLA2026-08-05#t138w1",
+  "genre": null
+ },
+ "R0468": {
+  "chamber": "WAL",
+  "verdict": "Human",
+  "date": "2025-12-09",
+  "speaker": "Mark Isherwood",
+  "n_words": 192,
+  "seg_id": "WAL2025-12-09#t1w0",
+  "genre": null
+ },
+ "R0469": {
+  "chamber": "QLD",
+  "verdict": "AI",
+  "date": "2025-11-18",
+  "speaker": "JAMES",
+  "n_words": 359,
+  "seg_id": "QLD2025-11-18#t151w0",
+  "genre": null
+ },
+ "R0470": {
+  "chamber": "BC",
+  "verdict": "AI",
+  "date": "2025-02-26",
+  "speaker": "Macklin McCall",
+  "n_words": 314,
+  "seg_id": "BC2025-02-26#t18w0",
+  "genre": null
+ },
+ "R0471": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2025-10-14",
+  "speaker": "POWELL",
+  "n_words": 346,
+  "seg_id": "QLD2025-10-14#t144w0",
+  "genre": null
+ },
+ "R0472": {
+  "chamber": "NI",
+  "verdict": "Mixed",
+  "date": "2025-11-11",
+  "speaker": "Mr Gaston",
+  "n_words": 296,
+  "seg_id": "NI2025-11-11#t173w0",
+  "genre": null
+ },
+ "R0473": {
+  "chamber": "SCO",
+  "verdict": "Human",
+  "date": "2026-02-04",
+  "speaker": "Alexander Burnett",
+  "n_words": 150,
+  "seg_id": "SCO2026-02-04#t2884w0",
+  "genre": null
+ },
+ "R0474": {
+  "chamber": "SA",
+  "verdict": "AI",
+  "date": "2025-06-05",
+  "speaker": "The Hon. N.J. CENTOFANTI",
+  "n_words": 126,
+  "seg_id": "SALC2025-06-05#t1w2",
+  "genre": null
+ },
+ "R0475": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2026-02-09",
+  "speaker": "Stephanie Kusie (Calgary Midnapore, CPC)",
+  "n_words": 126,
+  "seg_id": "CA2026-02-09#t3w4",
+  "genre": null
+ },
+ "R0476": {
+  "chamber": "UK House of Commons",
+  "verdict": "Human",
+  "date": "2026-03-23",
+  "speaker": "Chris Philp",
+  "n_words": 342,
+  "seg_id": "UK2026-03-23#t256w1",
+  "genre": null
+ },
+ "R0477": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2026-05-27",
+  "speaker": "Hon. David Eby",
+  "n_words": 348,
+  "seg_id": "BC2026-05-27#t101w0",
+  "genre": null
+ },
+ "R0478": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2026-04-29",
+  "speaker": "Eric Duncan (Stormont\u2014Dundas\u2014Glengarry, CPC)",
+  "n_words": 169,
+  "seg_id": "CA2026-04-29#t5w0",
+  "genre": null
+ },
+ "R0479": {
+  "chamber": "NS",
+  "verdict": "AI",
+  "date": "2025-09-24",
+  "speaker": "MARCO MACLEOD",
+  "n_words": 287,
+  "seg_id": "NS2025-09-24#t138w1",
+  "genre": null
+ },
+ "R0480": {
+  "chamber": "NL",
+  "verdict": "AI",
+  "date": "2026-05-06",
+  "speaker": "L. EVANS",
+  "n_words": 215,
+  "seg_id": "NL2026-05-06#t172w0",
+  "genre": null
+ },
+ "R0481": {
+  "chamber": "NI",
+  "verdict": "Mixed",
+  "date": "2026-05-19",
+  "speaker": "Mr Buckley",
+  "n_words": 317,
+  "seg_id": "NI2026-05-19#t321w0",
+  "genre": null
+ },
+ "R0482": {
+  "chamber": "Dail Eireann",
+  "verdict": "Human",
+  "date": "2025-10-15",
+  "speaker": "Deputy Eoin \u00d3 Broin",
+  "n_words": 245,
+  "seg_id": "IE2025-10-15#t43w0",
+  "genre": null
+ },
+ "R0483": {
+  "chamber": "NS",
+  "verdict": "Human",
+  "date": "2025-02-27",
+  "speaker": "ELIZABETH SMITH-MCROSSIN",
+  "n_words": 240,
+  "seg_id": "NS2025-02-27#t147w2",
+  "genre": null
+ },
+ "R0484": {
+  "chamber": "UK House of Commons",
+  "verdict": "AI",
+  "date": "2026-04-14",
+  "speaker": "Mary Foy",
+  "n_words": 274,
+  "seg_id": "UK2026-04-14#t345w0",
+  "genre": null
+ },
+ "R0485": {
+  "chamber": "NSW",
+  "verdict": "Mixed",
+  "date": "2025-08-06",
+  "speaker": "The Hon. AILEEN MacDONALD",
+  "n_words": 227,
+  "seg_id": "NSWLC2025-08-06#t14w0",
+  "genre": null
+ },
+ "R0486": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2026-08-04",
+  "speaker": "The Hon. DANIEL MOOKHEY",
+  "n_words": 259,
+  "seg_id": "NSWLC2026-08-04#t30w0",
+  "genre": null
+ },
+ "R0487": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2025-11-11",
+  "speaker": "The Hon. STEPHEN LAWRENCE",
+  "n_words": 302,
+  "seg_id": "NSWLC2025-11-11#t97w0",
+  "genre": null
+ },
+ "R0488": {
+  "chamber": "US-HOUSE",
+  "verdict": "AI",
+  "date": "2026-06-29",
+  "speaker": "Mr. ROSE",
+  "n_words": 350,
+  "seg_id": "US2026-06-29-H4273#t11w3",
+  "genre": null
+ },
+ "R0489": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2026-06-18",
+  "speaker": "Gord Johns (Courtenay\u2014Alberni, NDP)",
+  "n_words": 154,
+  "seg_id": "CA2026-06-18#t60w0",
+  "genre": null
+ },
+ "R0490": {
+  "chamber": "AB",
+  "verdict": "AI",
+  "date": "2025-12-02",
+  "speaker": "Mr. Gurtej Brar",
+  "n_words": 349,
+  "seg_id": "AB2025-12-02#t8w0",
+  "genre": null
+ },
+ "R0491": {
+  "chamber": "NS",
+  "verdict": "Human",
+  "date": "2025-03-19",
+  "speaker": "HON. DEREK MOMBOURQUETTE",
+  "n_words": 183,
+  "seg_id": "NS2025-03-19#t10w0",
+  "genre": null
+ },
+ "R0492": {
+  "chamber": "NI",
+  "verdict": "Mixed",
+  "date": "2026-05-19",
+  "speaker": "Mrs Cameron",
+  "n_words": 332,
+  "seg_id": "NI2026-05-19#t210w1",
+  "genre": null
+ },
+ "R0493": {
+  "chamber": "SK",
+  "verdict": "Human",
+  "date": "2025-12-01",
+  "speaker": "Hon. Eric Schmalz",
+  "n_words": 355,
+  "seg_id": "SK2025-12-01#t63w1",
+  "genre": null
+ },
+ "R0494": {
+  "chamber": "AB",
+  "verdict": "Human",
+  "date": "2026-04-01",
+  "speaker": "Mr. Getson",
+  "n_words": 139,
+  "seg_id": "AB2026-04-01#t133w5",
+  "genre": null
+ },
+ "R0495": {
+  "chamber": "NI",
+  "verdict": "Mixed",
+  "date": "2026-04-13",
+  "speaker": "Mr Honeyford",
+  "n_words": 241,
+  "seg_id": "NI2026-04-13#t8w0",
+  "genre": null
+ },
+ "R0496": {
+  "chamber": "TAS",
+  "verdict": "Mixed",
+  "date": "2026-03-26",
+  "speaker": "Mr PEARCE",
+  "n_words": 226,
+  "seg_id": "TASHA2026-03-26#p1t84w1",
+  "genre": null
+ },
+ "R0497": {
+  "chamber": "NS",
+  "verdict": "AI",
+  "date": "2025-03-19",
+  "speaker": "ELIZABETH SMITH-MCCROSSIN",
+  "n_words": 332,
+  "seg_id": "NS2025-03-19#t129w4",
+  "genre": null
+ },
+ "R0498": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2025-12-05",
+  "speaker": "Tamara Jansen (Cloverdale\u2014Langley City, CPC)",
+  "n_words": 211,
+  "seg_id": "CA2025-12-05#t183w6",
+  "genre": null
+ },
+ "R0499": {
+  "chamber": "QLD",
+  "verdict": "AI",
+  "date": "2025-11-18",
+  "speaker": "HUTTON",
+  "n_words": 213,
+  "seg_id": "QLD2025-11-18#t197w0",
+  "genre": null
+ },
+ "R0500": {
+  "chamber": "ON",
+  "verdict": "AI",
+  "date": "2025-05-07",
+  "speaker": "Mme Lucille Collard",
+  "n_words": 300,
+  "seg_id": "ON2025-05-07#t138w2",
+  "genre": null
+ },
+ "R0501": {
+  "chamber": "NI",
+  "verdict": "AI",
+  "date": "2026-02-03",
+  "speaker": "Ms Brownlee",
+  "n_words": 311,
+  "seg_id": "NI2026-02-03#t10w0",
+  "genre": null
+ },
+ "R0502": {
+  "chamber": "VIC",
+  "verdict": "Human",
+  "date": "2026-03-04",
+  "speaker": "Jacinta ERMACORA",
+  "n_words": 337,
+  "seg_id": "VICLC:Motions:2026-03-04#t2w1",
+  "genre": null
+ },
+ "R0503": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2026-02-10",
+  "speaker": "Julie Dzerowicz (Davenport, Lib.)",
+  "n_words": 320,
+  "seg_id": "CA2026-02-10#t121w2",
+  "genre": null
+ },
+ "R0504": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2025-02-03",
+  "speaker": "Mr Givan",
+  "n_words": 166,
+  "seg_id": "NI2025-02-03#t65w0",
+  "genre": null
+ },
+ "R0505": {
+  "chamber": "NSW",
+  "verdict": "AI",
+  "date": "2025-09-17",
+  "speaker": "Ms LYNDA VOLTZ",
+  "n_words": 334,
+  "seg_id": "NSWLA2025-09-17#t89w0",
+  "genre": null
+ },
+ "R0506": {
+  "chamber": "Dail Eireann",
+  "verdict": "Human",
+  "date": "2025-09-25",
+  "speaker": "Deputy Niamh Smyth",
+  "n_words": 197,
+  "seg_id": "IE2025-09-25#t277w0",
+  "genre": null
+ },
+ "R0507": {
+  "chamber": "ON",
+  "verdict": "Human",
+  "date": "2025-12-04",
+  "speaker": "Mr. Jonathan Tsao",
+  "n_words": 282,
+  "seg_id": "ON2025-12-04#t139w2",
+  "genre": null
+ },
+ "R0508": {
+  "chamber": "AB",
+  "verdict": "AI",
+  "date": "2026-02-24",
+  "speaker": "Member Hoyle",
+  "n_words": 275,
+  "seg_id": "AB2026-02-24#t14w0",
+  "genre": null
+ },
+ "R0509": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2025-11-13",
+  "speaker": "The Hon. SUSAN CARTER",
+  "n_words": 170,
+  "seg_id": "NSWLC2025-11-13#t133w5",
+  "genre": null
+ },
+ "R0510": {
+  "chamber": "SA",
+  "verdict": "Human",
+  "date": "2025-05-13",
+  "speaker": "The Hon. S.L. GAME",
+  "n_words": 301,
+  "seg_id": "SALC2025-05-13#t76w2",
+  "genre": null
+ },
+ "R0511": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2025-11-03",
+  "speaker": "Vincent Ho",
+  "n_words": 245,
+  "seg_id": "CA2025-11-03#t230w0",
+  "genre": null
+ },
+ "R0512": {
+  "chamber": "NL",
+  "verdict": "AI",
+  "date": "2026-05-06",
+  "speaker": "H. CONWAY OTTENHEIMER",
+  "n_words": 160,
+  "seg_id": "NL2026-05-06#t81w0",
+  "genre": null
+ },
+ "R0513": {
+  "chamber": "US-HOUSE",
+  "verdict": "Human",
+  "date": "2025-01-23",
+  "speaker": "Mr. THOMPSON of Pennsylvania",
+  "n_words": 280,
+  "seg_id": "US2025-01-23-H307#t0w0",
+  "genre": null
+ },
+ "R0514": {
+  "chamber": "VIC",
+  "verdict": "Human",
+  "date": "2026-05-13",
+  "speaker": "Anthony CARBINES",
+  "n_words": 327,
+  "seg_id": "VICLA:Adjournment:2026-05-13#t10w0",
+  "genre": null
+ },
+ "R0515": {
+  "chamber": "US-HOUSE",
+  "verdict": "Human",
+  "date": "2025-02-06",
+  "speaker": "Mr. MURPHY",
+  "n_words": 319,
+  "seg_id": "US2025-02-06-H520-3#t52w0",
+  "genre": null
+ },
+ "R0516": {
+  "chamber": "VIC",
+  "verdict": "AI",
+  "date": "2026-02-05",
+  "speaker": "Renee HEATH",
+  "n_words": 132,
+  "seg_id": "VICLC:Constituency-questions:2026-02-05#t10w0",
+  "genre": null
+ },
+ "R0517": {
+  "chamber": "BC",
+  "verdict": "AI",
+  "date": "2025-05-12",
+  "speaker": "Steve Morissette",
+  "n_words": 322,
+  "seg_id": "BC2025-05-12#t13w0",
+  "genre": null
+ },
+ "R0518": {
+  "chamber": "US-HOUSE",
+  "verdict": "Human",
+  "date": "2026-04-21",
+  "speaker": "Mrs. HARSHBARGER",
+  "n_words": 230,
+  "seg_id": "US2026-04-21-H3023#t2w0",
+  "genre": null
+ },
+ "R0519": {
+  "chamber": "US-HOUSE",
+  "verdict": "Human",
+  "date": "2025-12-15",
+  "speaker": "Ms. McCLELLAN",
+  "n_words": 339,
+  "seg_id": "US2025-12-15-H5891-4#t3w2",
+  "genre": null
+ },
+ "R0520": {
+  "chamber": "BC",
+  "verdict": "Mixed",
+  "date": "2025-02-25",
+  "speaker": "Sunita Dhir",
+  "n_words": 332,
+  "seg_id": "BC2025-02-25#t17w3",
+  "genre": null
+ },
+ "R0521": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2025-11-20",
+  "speaker": "Jessica Fancy (South Shore\u2014St. Margarets, Lib.)",
+  "n_words": 272,
+  "seg_id": "CA2025-11-20#t299w1",
+  "genre": null
+ },
+ "R0522": {
+  "chamber": "TAS",
+  "verdict": "AI",
+  "date": "2025-06-05",
+  "speaker": "Ms BROWN",
+  "n_words": 318,
+  "seg_id": "TASHA2025-06-05#p1t77w2",
+  "genre": null
+ },
+ "R0523": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2025-11-18",
+  "speaker": "Gavin Dew",
+  "n_words": 221,
+  "seg_id": "BC2025-11-18#t251w0",
+  "genre": null
+ },
+ "R0524": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-04-23",
+  "speaker": "Hon. Evan Solomon (Minister of Artificial Intelligence and Digital Innovation and Minister responsible for the Federal Economic Development Agency for Southern Ontario, Lib.)",
+  "n_words": 127,
+  "seg_id": "CA2026-04-23#t202w0",
+  "genre": "OQ"
+ },
+ "R0525": {
+  "chamber": "NSW",
+  "verdict": "Mixed",
+  "date": "2025-08-08",
+  "speaker": "Ms LIZA BUTLER",
+  "n_words": 263,
+  "seg_id": "NSWLA2025-08-08#t23w1",
+  "genre": null
+ },
+ "R0526": {
+  "chamber": "US-HOUSE",
+  "verdict": "Human",
+  "date": "2025-12-16",
+  "speaker": "Mr. HOYER",
+  "n_words": 322,
+  "seg_id": "US2025-12-16-H5903-2#t0w0",
+  "genre": null
+ },
+ "R0527": {
+  "chamber": "TAS",
+  "verdict": "Human",
+  "date": "2026-03-05",
+  "speaker": "Mr BARNETT",
+  "n_words": 282,
+  "seg_id": "TASHA2026-03-05#p1t89w4",
+  "genre": null
+ },
+ "R0528": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Mixed",
+  "date": "2026-06-16",
+  "speaker": "Dan Mazier (Riding Mountain, CPC)",
+  "n_words": 303,
+  "seg_id": "CA2026-06-16#t277w3",
+  "genre": null
+ },
+ "R0529": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2026-02-12",
+  "speaker": "Mr MICHAEL DALEY",
+  "n_words": 227,
+  "seg_id": "NSWLA2026-02-12#t57w0",
+  "genre": null
+ },
+ "R0530": {
+  "chamber": "NSW",
+  "verdict": "AI",
+  "date": "2026-08-06",
+  "speaker": "The Hon. AILEEN MacDONALD",
+  "n_words": 342,
+  "seg_id": "NSWLC2026-08-06#t0w0",
+  "genre": null
+ },
+ "R0531": {
+  "chamber": "SA",
+  "verdict": "AI",
+  "date": "2025-04-03",
+  "speaker": "Ms HUTCHESSON",
+  "n_words": 351,
+  "seg_id": "SAHA2025-04-03#t91w2",
+  "genre": null
+ },
+ "R0532": {
+  "chamber": "NS",
+  "verdict": "Human",
+  "date": "2025-03-18",
+  "speaker": "LISA LACHANCE",
+  "n_words": 180,
+  "seg_id": "NS2025-03-18#t9w0",
+  "genre": null
+ },
+ "R0533": {
+  "chamber": "VIC",
+  "verdict": "Mixed",
+  "date": "2025-11-20",
+  "speaker": "Enver ERDOGAN",
+  "n_words": 217,
+  "seg_id": "VICLC:Members-statements:2025-11-20#t7w0",
+  "genre": null
+ },
+ "R0534": {
+  "chamber": "ON",
+  "verdict": "Human",
+  "date": "2026-05-14",
+  "speaker": "MPP Robin Lennox",
+  "n_words": 288,
+  "seg_id": "ON2026-05-14#t0w2",
+  "genre": null
+ },
+ "R0535": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2026-06-05",
+  "speaker": "Tamara Kronis (Nanaimo\u2014Ladysmith, CPC)",
+  "n_words": 304,
+  "seg_id": "CA2026-06-05#t174w0",
+  "genre": null
+ },
+ "R0536": {
+  "chamber": "WAL",
+  "verdict": "Human",
+  "date": "2025-03-04",
+  "speaker": "Jane Dodds",
+  "n_words": 282,
+  "seg_id": "WAL2025-03-04#t127w1",
+  "genre": null
+ },
+ "R0537": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-04-22",
+  "speaker": "Hon. Adam van Koeverden (Secretary of State (Sport), Lib.)",
+  "n_words": 120,
+  "seg_id": "CA2026-04-22#t19w0",
+  "genre": "OQ"
+ },
+ "R0538": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2026-05-12",
+  "speaker": "Mr MICHAEL DALEY",
+  "n_words": 150,
+  "seg_id": "NSWLA2026-05-12#t31w1",
+  "genre": null
+ },
+ "R0539": {
+  "chamber": "UK House of Commons",
+  "verdict": "Mixed",
+  "date": "2026-06-11",
+  "speaker": "Kim Leadbeater",
+  "n_words": 234,
+  "seg_id": "UK2026-06-11#t241w0",
+  "genre": null
+ },
+ "R0540": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2025-08-27",
+  "speaker": "FRECKLINGTON",
+  "n_words": 359,
+  "seg_id": "QLD2025-08-27#t54w0",
+  "genre": null
+ },
+ "R0541": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2026-05-26",
+  "speaker": "Mr Martin",
+  "n_words": 341,
+  "seg_id": "NI2026-05-26#t271w1",
+  "genre": null
+ },
+ "R0542": {
+  "chamber": "US-HOUSE",
+  "verdict": "AI",
+  "date": "2026-02-11",
+  "speaker": "Mrs. BIGGS of South Carolina",
+  "n_words": 193,
+  "seg_id": "US2026-02-11-H2121-6#t37w0",
+  "genre": null
+ },
+ "R0543": {
+  "chamber": "NS",
+  "verdict": "AI",
+  "date": "2026-03-13",
+  "speaker": "HON. DAVE RITCEY",
+  "n_words": 123,
+  "seg_id": "NS2026-03-13#t43w0",
+  "genre": null
+ },
+ "R0544": {
+  "chamber": "NI",
+  "verdict": "AI",
+  "date": "2026-02-09",
+  "speaker": "Ms D Armstrong",
+  "n_words": 208,
+  "seg_id": "NI2026-02-09#t269w0",
+  "genre": null
+ },
+ "R0545": {
+  "chamber": "WAL",
+  "verdict": "Mixed",
+  "date": "2026-02-24",
+  "speaker": "Jane Dodds",
+  "n_words": 202,
+  "seg_id": "WAL2026-02-24#t71w0",
+  "genre": null
+ },
+ "R0546": {
+  "chamber": "NI",
+  "verdict": "AI",
+  "date": "2026-04-28",
+  "speaker": "Ms D Armstrong",
+  "n_words": 343,
+  "seg_id": "NI2026-04-28#t85w0",
+  "genre": null
+ },
+ "R0547": {
+  "chamber": "SK",
+  "verdict": "AI",
+  "date": "2026-05-07",
+  "speaker": "Megan Patterson",
+  "n_words": 206,
+  "seg_id": "SK2026-05-07#t16w0",
+  "genre": null
+ },
+ "R0548": {
+  "chamber": "NSW",
+  "verdict": "AI",
+  "date": "2025-10-21",
+  "speaker": "The Hon. ROBERT BORSAK",
+  "n_words": 322,
+  "seg_id": "NSWLC2025-10-21#t109w0",
+  "genre": null
+ },
+ "R0549": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2025-02-19",
+  "speaker": "Mr PHILIP DONATO",
+  "n_words": 338,
+  "seg_id": "NSWLA2025-02-19#t218w1",
+  "genre": null
+ },
+ "R0550": {
+  "chamber": "UK House of Commons",
+  "verdict": "Mixed",
+  "date": "2026-01-26",
+  "speaker": "James MacCleary",
+  "n_words": 323,
+  "seg_id": "UK2026-01-26#t442w0",
+  "genre": null
+ },
+ "R0551": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2025-09-17",
+  "speaker": "MARR",
+  "n_words": 338,
+  "seg_id": "QLD2025-09-17#t179w0",
+  "genre": null
+ },
+ "R0552": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-05-27",
+  "speaker": "John Brassard (Barrie South\u2014Innisfil, CPC)",
+  "n_words": 190,
+  "seg_id": "CA2026-05-27#t7w0",
+  "genre": "SO31"
+ },
+ "R0553": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-02-24",
+  "speaker": "Yvan Baker (Etobicoke Centre, Lib.)",
+  "n_words": 204,
+  "seg_id": "CA2026-02-24#t154w0",
+  "genre": "SO31"
+ },
+ "R0554": {
+  "chamber": "SA",
+  "verdict": "Human",
+  "date": "2025-09-02",
+  "speaker": "The Hon. A. PICCOLO",
+  "n_words": 342,
+  "seg_id": "SAHA2025-09-02#t4w0",
+  "genre": null
+ },
+ "R0555": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2025-05-14",
+  "speaker": "Trevor Halford",
+  "n_words": 242,
+  "seg_id": "BC2025-05-14#t204w0",
+  "genre": null
+ },
+ "R0556": {
+  "chamber": "VIC",
+  "verdict": "Human",
+  "date": "2026-06-16",
+  "speaker": "Michael GALEA",
+  "n_words": 138,
+  "seg_id": "VICLC:Constituency-questions:2026-06-16#t3w0",
+  "genre": null
+ },
+ "R0557": {
+  "chamber": "US-HOUSE",
+  "verdict": "AI",
+  "date": "2026-03-18",
+  "speaker": "Mr. HERNANDEZ",
+  "n_words": 335,
+  "seg_id": "US2026-03-18-H2589#t8w0",
+  "genre": null
+ },
+ "R0558": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-12-02",
+  "speaker": "Brad Redekopp (Saskatoon West, CPC)",
+  "n_words": 332,
+  "seg_id": "CA2025-12-02#t295w0",
+  "genre": "DEBATE"
+ },
+ "R0559": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2025-12-09",
+  "speaker": "FRECKLINGTON",
+  "n_words": 344,
+  "seg_id": "QLD2025-12-09#t49w0",
+  "genre": null
+ },
+ "R0560": {
+  "chamber": "BC",
+  "verdict": "AI",
+  "date": "2025-05-08",
+  "speaker": "Sheldon Clare",
+  "n_words": 349,
+  "seg_id": "BC2025-05-08#t25w2",
+  "genre": null
+ },
+ "R0561": {
+  "chamber": "NI",
+  "verdict": "AI",
+  "date": "2026-03-16",
+  "speaker": "Ms Sugden",
+  "n_words": 140,
+  "seg_id": "NI2026-03-16#t192w3",
+  "genre": null
+ },
+ "R0562": {
+  "chamber": "ON",
+  "verdict": "Human",
+  "date": "2026-05-25",
+  "speaker": "Mr. Brian Saunderson",
+  "n_words": 259,
+  "seg_id": "ON2026-05-25#t146w11",
+  "genre": null
+ },
+ "R0563": {
+  "chamber": "NS",
+  "verdict": "Human",
+  "date": "2026-03-12",
+  "speaker": "DEREK MOMBOURQUETTE",
+  "n_words": 336,
+  "seg_id": "NS2026-03-12#t152w0",
+  "genre": null
+ },
+ "R0564": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-04-14",
+  "speaker": "Andrew Lawton (Elgin\u2014St. Thomas\u2014London South, CPC)",
+  "n_words": 183,
+  "seg_id": "CA2026-04-14#t274w0",
+  "genre": "DEBATE"
+ },
+ "R0565": {
+  "chamber": "SA",
+  "verdict": "Human",
+  "date": "2025-03-06",
+  "speaker": "Mr FULBROOK",
+  "n_words": 330,
+  "seg_id": "SAHA2025-03-06#t97w1",
+  "genre": null
+ },
+ "R0566": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2026-01-26",
+  "speaker": "Garnett Genuis (Sherwood Park\u2014Fort Saskatchewan, CPC)",
+  "n_words": 251,
+  "seg_id": "CA2026-01-26#t241w1",
+  "genre": null
+ },
+ "R0567": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2025-10-22",
+  "speaker": "Mr TIM CRAKANTHORP",
+  "n_words": 345,
+  "seg_id": "NSWLA2025-10-22#t226w1",
+  "genre": null
+ },
+ "R0568": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-09-15",
+  "speaker": "Hon. Pierre Poilievre (Leader of the Opposition, CPC)",
+  "n_words": 120,
+  "seg_id": "CA2025-09-15#t112w0",
+  "genre": "OQ"
+ },
+ "R0569": {
+  "chamber": "Dail Eireann",
+  "verdict": "Human",
+  "date": "2025-10-21",
+  "speaker": "The Taoiseach",
+  "n_words": 282,
+  "seg_id": "IE2025-10-21#t120w0",
+  "genre": null
+ },
+ "R0570": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2026-05-01",
+  "speaker": "Chris Lewis (Essex, CPC)",
+  "n_words": 149,
+  "seg_id": "CA2026-05-01#t36w0",
+  "genre": null
+ },
+ "R0571": {
+  "chamber": "NI",
+  "verdict": "AI",
+  "date": "2025-05-27",
+  "speaker": "Ms McLaughlin",
+  "n_words": 313,
+  "seg_id": "NI2025-05-27#t70w0",
+  "genre": null
+ },
+ "R0572": {
+  "chamber": "NSW",
+  "verdict": "AI",
+  "date": "2025-11-11",
+  "speaker": "The Hon. EMMA HURST",
+  "n_words": 266,
+  "seg_id": "NSWLC2025-11-11#t169w0",
+  "genre": null
+ },
+ "R0573": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2025-10-14",
+  "speaker": "WATTS",
+  "n_words": 144,
+  "seg_id": "QLD2025-10-14#t170w0",
+  "genre": null
+ },
+ "R0574": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2025-04-08",
+  "speaker": "Hon. Josie Osborne",
+  "n_words": 196,
+  "seg_id": "BC2025-04-08#t65w0",
+  "genre": null
+ },
+ "R0575": {
+  "chamber": "AB",
+  "verdict": "Human",
+  "date": "2026-03-19",
+  "speaker": "Member Arcand-Paul",
+  "n_words": 358,
+  "seg_id": "AB2026-03-19#t143w1",
+  "genre": null
+ },
+ "R0576": {
+  "chamber": "TAS",
+  "verdict": "Human",
+  "date": "2025-05-06",
+  "speaker": "Mr BAYLEY",
+  "n_words": 299,
+  "seg_id": "TASHA2025-05-06#p1t111w0",
+  "genre": null
+ },
+ "R0577": {
+  "chamber": "NI",
+  "verdict": "Mixed",
+  "date": "2025-06-03",
+  "speaker": "Ms K Armstrong",
+  "n_words": 268,
+  "seg_id": "NI2025-06-03#t150w0",
+  "genre": null
+ },
+ "R0578": {
+  "chamber": "Dail Eireann",
+  "verdict": "AI",
+  "date": "2025-11-13",
+  "speaker": "Deputy Eoghan Kenny",
+  "n_words": 276,
+  "seg_id": "IE2025-11-13#t320w1",
+  "genre": null
+ },
+ "R0579": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2026-02-06",
+  "speaker": "Alexandra Mend\u00e8s (Brossard\u2014Saint-Lambert, Lib.)",
+  "n_words": 159,
+  "seg_id": "CA2026-02-06#t132w1",
+  "genre": "OQ"
+ },
+ "R0580": {
+  "chamber": "NI",
+  "verdict": "Mixed",
+  "date": "2025-11-04",
+  "speaker": "Mr O'Dowd",
+  "n_words": 277,
+  "seg_id": "NI2025-11-04#t237w0",
+  "genre": null
+ },
+ "R0581": {
+  "chamber": "NS",
+  "verdict": "Human",
+  "date": "2025-09-24",
+  "speaker": "LISA LACHANCE",
+  "n_words": 269,
+  "seg_id": "NS2025-09-24#t150w5",
+  "genre": null
+ },
+ "R0582": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2026-03-23",
+  "speaker": "Andrew Lawton (Elgin\u2014St. Thomas\u2014London South, CPC)",
+  "n_words": 343,
+  "seg_id": "CA2026-03-23#t36w2",
+  "genre": null
+ },
+ "R0583": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2025-10-22",
+  "speaker": "Billy Morin (Edmonton Northwest, CPC)",
+  "n_words": 342,
+  "seg_id": "CA2025-10-22#t129w0",
+  "genre": null
+ },
+ "R0584": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2025-05-22",
+  "speaker": "POWELL",
+  "n_words": 358,
+  "seg_id": "QLD2025-05-22#t137w1",
+  "genre": null
+ },
+ "R0585": {
+  "chamber": "MB",
+  "verdict": "Human",
+  "date": "2025-05-05",
+  "speaker": "MLA Asagwara",
+  "n_words": 140,
+  "seg_id": "MB2025-05-05#t42w0",
+  "genre": null
+ },
+ "R0586": {
+  "chamber": "QLD",
+  "verdict": "Human",
+  "date": "2025-06-24",
+  "speaker": "BLEIJIE",
+  "n_words": 357,
+  "seg_id": "QLD2025-06-24#t1w0",
+  "genre": null
+ },
+ "R0587": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2025-06-17",
+  "speaker": "Kyle Seeback (Dufferin\u2014Caledon, CPC)",
+  "n_words": 321,
+  "seg_id": "CA2025-06-17#t15w2",
+  "genre": null
+ },
+ "R0588": {
+  "chamber": "ON",
+  "verdict": "Human",
+  "date": "2026-03-30",
+  "speaker": "Ms. Catherine Fife",
+  "n_words": 351,
+  "seg_id": "ON2026-03-30#t138w2",
+  "genre": null
+ },
+ "R0589": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2025-09-11",
+  "speaker": "Mr BRENDAN MOYLAN",
+  "n_words": 289,
+  "seg_id": "NSWLA2025-09-11#t196w0",
+  "genre": null
+ },
+ "R0590": {
+  "chamber": "SK",
+  "verdict": "Human",
+  "date": "2026-03-30",
+  "speaker": "Hugh Gordon",
+  "n_words": 236,
+  "seg_id": "SK2026-03-30#t11w0",
+  "genre": null
+ },
+ "R0591": {
+  "chamber": "TAS",
+  "verdict": "Human",
+  "date": "2025-12-04",
+  "speaker": "Mr ABETZ",
+  "n_words": 284,
+  "seg_id": "TASHA2025-12-04#p1t19w0",
+  "genre": null
+ },
+ "R0592": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2026-03-19",
+  "speaker": "The Hon. JEREMY BUCKINGHAM",
+  "n_words": 127,
+  "seg_id": "NSWLC2026-03-19#t58w1",
+  "genre": null
+ },
+ "R0593": {
+  "chamber": "SA",
+  "verdict": "AI",
+  "date": "2025-10-16",
+  "speaker": "The Hon. N.J. CENTOFANTI",
+  "n_words": 339,
+  "seg_id": "SALC2025-10-16#t124w0",
+  "genre": null
+ },
+ "R0594": {
+  "chamber": "VIC",
+  "verdict": "Human",
+  "date": "2026-07-29",
+  "speaker": "Danny O\u2019BRIEN",
+  "n_words": 358,
+  "seg_id": "VICLA:Matters-of-public-importance:2026-07-29#t0w0",
+  "genre": null
+ },
+ "R0595": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-06-08",
+  "speaker": "Andrew Lawton (Elgin\u2014St. Thomas\u2014London South, CPC)",
+  "n_words": 127,
+  "seg_id": "CA2026-06-08#t104w0",
+  "genre": "OQ"
+ },
+ "R0596": {
+  "chamber": "NS",
+  "verdict": "AI",
+  "date": "2025-03-25",
+  "speaker": "RICK BURNS",
+  "n_words": 159,
+  "seg_id": "NS2025-03-25#t43w0",
+  "genre": null
+ },
+ "R0597": {
+  "chamber": "UK House of Commons",
+  "verdict": "Human",
+  "date": "2025-12-09",
+  "speaker": "Josh Babarinde",
+  "n_words": 249,
+  "seg_id": "UK2025-12-09#t378w1",
+  "genre": null
+ },
+ "R0598": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Mixed",
+  "date": "2025-12-03",
+  "speaker": "Scot Davidson (New Tecumseth\u2014Gwillimbury, CPC)",
+  "n_words": 337,
+  "seg_id": "CA2025-12-03#t305w1",
+  "genre": null
+ },
+ "R0599": {
+  "chamber": "WA",
+  "verdict": "Human",
+  "date": "2025-08-19",
+  "speaker": "Ms Sabine Winton",
+  "n_words": 240,
+  "seg_id": "WALA2025-08-19#t96w0",
+  "genre": null
+ },
+ "R0600": {
+  "chamber": "MB",
+  "verdict": "Human",
+  "date": "2025-12-02",
+  "speaker": "Mr. Ewasko",
+  "n_words": 358,
+  "seg_id": "MB2025-12-02#t62w0",
+  "genre": null
+ },
+ "R0601": {
+  "chamber": "SA",
+  "verdict": "Human",
+  "date": "2025-09-03",
+  "speaker": "The Hon. C.M. SCRIVEN",
+  "n_words": 353,
+  "seg_id": "SALC2025-09-03#t22w2",
+  "genre": null
+ },
+ "R0602": {
+  "chamber": "AB",
+  "verdict": "Human",
+  "date": "2025-11-06",
+  "speaker": "Ms Smith",
+  "n_words": 346,
+  "seg_id": "AB2025-11-06#t139w1",
+  "genre": null
+ },
+ "R0603": {
+  "chamber": "NS",
+  "verdict": "Human",
+  "date": "2026-04-02",
+  "speaker": "CLAUDIA CHENDER",
+  "n_words": 359,
+  "seg_id": "NS2026-04-02#t130w0",
+  "genre": null
+ },
+ "R0604": {
+  "chamber": "NS",
+  "verdict": "Human",
+  "date": "2025-03-05",
+  "speaker": "HON. IAIN RANKIN",
+  "n_words": 261,
+  "seg_id": "NS2025-03-05#t123w0",
+  "genre": null
+ },
+ "R0605": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2026-05-05",
+  "speaker": "Robert Morrissey (Egmont, Lib.)",
+  "n_words": 360,
+  "seg_id": "CA2026-05-05#t334w0",
+  "genre": null
+ },
+ "R0606": {
+  "chamber": "VIC",
+  "verdict": "AI",
+  "date": "2026-03-05",
+  "speaker": "Evan MULHOLLAND",
+  "n_words": 347,
+  "seg_id": "VICLC:Second-reading:2026-03-05#t3w0",
+  "genre": null
+ },
+ "R0607": {
+  "chamber": "WAL",
+  "verdict": "AI",
+  "date": "2025-10-15",
+  "speaker": "Sam Rowlands",
+  "n_words": 242,
+  "seg_id": "WAL2025-10-15#t132w1",
+  "genre": null
+ },
+ "R0608": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2026-05-29",
+  "speaker": "Eric Duncan (Stormont\u2014Dundas\u2014Glengarry, CPC)",
+  "n_words": 269,
+  "seg_id": "CA2026-05-29#t148w1",
+  "genre": null
+ },
+ "R0609": {
+  "chamber": "Dail Eireann",
+  "verdict": "Mixed",
+  "date": "2026-01-21",
+  "speaker": "Deputy Johnny Guirke",
+  "n_words": 332,
+  "seg_id": "IE2026-01-21#t34w0",
+  "genre": null
+ },
+ "R0610": {
+  "chamber": "AB",
+  "verdict": "Mixed",
+  "date": "2025-12-09",
+  "speaker": "Mr. Wright",
+  "n_words": 360,
+  "seg_id": "AB2025-12-09#t133w0",
+  "genre": null
+ },
+ "R0611": {
+  "chamber": "QLD",
+  "verdict": "AI",
+  "date": "2025-09-18",
+  "speaker": "DOOLEY",
+  "n_words": 355,
+  "seg_id": "QLD2025-09-18#t221w1",
+  "genre": null
+ },
+ "R0612": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-04-14",
+  "speaker": "Hon. Andrew Scheer (Regina\u2014Qu'Appelle, CPC)",
+  "n_words": 129,
+  "seg_id": "CA2026-04-14#t144w0",
+  "genre": "OQ"
+ },
+ "R0613": {
+  "chamber": "NS",
+  "verdict": "Mixed",
+  "date": "2026-03-23",
+  "speaker": "HON. IAIN RANKIN",
+  "n_words": 186,
+  "seg_id": "NS2026-03-23#t11w0",
+  "genre": null
+ },
+ "R0614": {
+  "chamber": "Dail Eireann",
+  "verdict": "Human",
+  "date": "2025-02-19",
+  "speaker": "Deputy Conor Sheehan",
+  "n_words": 190,
+  "seg_id": "IE2025-02-19#t56w3",
+  "genre": null
+ },
+ "R0615": {
+  "chamber": "ON",
+  "verdict": "Mixed",
+  "date": "2026-05-14",
+  "speaker": "M. Guy Bourgouin",
+  "n_words": 336,
+  "seg_id": "ON2026-05-14#t144w1",
+  "genre": null
+ },
+ "R0616": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2026-03-13",
+  "speaker": "Eric Melillo (Kenora\u2014Kiiwetinoong, CPC)",
+  "n_words": 311,
+  "seg_id": "CA2026-03-13#t168w0",
+  "genre": null
+ },
+ "R0617": {
+  "chamber": "VIC",
+  "verdict": "Human",
+  "date": "2026-02-03",
+  "speaker": "Moira DEEMING",
+  "n_words": 219,
+  "seg_id": "VICLC:Condolences:2026-02-03#t13w1",
+  "genre": null
+ },
+ "R0618": {
+  "chamber": "VIC",
+  "verdict": "AI",
+  "date": "2025-08-13",
+  "speaker": "Gabrielle DE VIETRI",
+  "n_words": 250,
+  "seg_id": "VICLA:Second-reading:2025-08-13#t22w3",
+  "genre": null
+ },
+ "R0619": {
+  "chamber": "SCO",
+  "verdict": "AI",
+  "date": "2025-01-09",
+  "speaker": "Ash Regan",
+  "n_words": 272,
+  "seg_id": "SCO2025-01-09#t379w1",
+  "genre": null
+ },
+ "R0620": {
+  "chamber": "UK House of Commons",
+  "verdict": "Mixed",
+  "date": "2026-02-09",
+  "speaker": "Douglas McAllister",
+  "n_words": 318,
+  "seg_id": "UK2026-02-09#t352w2",
+  "genre": null
+ },
+ "R0621": {
+  "chamber": "ON",
+  "verdict": "Mixed",
+  "date": "2025-05-05",
+  "speaker": "Mr. Stephen Blais",
+  "n_words": 339,
+  "seg_id": "ON2025-05-05#t127w0",
+  "genre": null
+ },
+ "R0622": {
+  "chamber": "BC",
+  "verdict": "Human",
+  "date": "2025-05-05",
+  "speaker": "Elenore Sturko",
+  "n_words": 260,
+  "seg_id": "BC2025-05-05#t204w0",
+  "genre": null
+ },
+ "R0623": {
+  "chamber": "QLD",
+  "verdict": "Mixed",
+  "date": "2025-12-11",
+  "speaker": "FIELD",
+  "n_words": 360,
+  "seg_id": "QLD2025-12-11#t143w2",
+  "genre": null
+ },
+ "R0624": {
+  "chamber": "NI",
+  "verdict": "AI",
+  "date": "2026-02-16",
+  "speaker": "Ms D Armstrong",
+  "n_words": 247,
+  "seg_id": "NI2026-02-16#t45w0",
+  "genre": null
+ },
+ "R0625": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2026-04-30",
+  "speaker": "Larry Brock (Brantford\u2014Brant South\u2014Six Nations, CPC)",
+  "n_words": 173,
+  "seg_id": "CA2026-04-30#t139w0",
+  "genre": "SO31"
+ },
+ "R0626": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2026-04-14",
+  "speaker": "Eric Duncan",
+  "n_words": 188,
+  "seg_id": "CA2026-04-14#t248w0",
+  "genre": null
+ },
+ "R0627": {
+  "chamber": "BC",
+  "verdict": "AI",
+  "date": "2026-03-04",
+  "speaker": "Harman Bhangu",
+  "n_words": 340,
+  "seg_id": "BC2026-03-04#t79w1",
+  "genre": null
+ },
+ "R0628": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2026-04-22",
+  "speaker": "Carol Anstey (Long Range Mountains, CPC)",
+  "n_words": 298,
+  "seg_id": "CA2026-04-22#t180w0",
+  "genre": null
+ },
+ "R0629": {
+  "chamber": "Dail Eireann",
+  "verdict": "Mixed",
+  "date": "2026-05-06",
+  "speaker": "Deputy Michael Cahill",
+  "n_words": 301,
+  "seg_id": "IE2026-05-06#t298w0",
+  "genre": null
+ },
+ "R0630": {
+  "chamber": "SA",
+  "verdict": "Human",
+  "date": "2025-08-21",
+  "speaker": "The Hon. A. KOUTSANTONIS",
+  "n_words": 251,
+  "seg_id": "SAHA2025-08-21#t108w1",
+  "genre": null
+ },
+ "R0631": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2025-10-21",
+  "speaker": "Blaine Calkins (Ponoka\u2014Didsbury, CPC)",
+  "n_words": 322,
+  "seg_id": "CA2025-10-21#t113w0",
+  "genre": "DEBATE"
+ },
+ "R0632": {
+  "chamber": "NI",
+  "verdict": "AI",
+  "date": "2025-05-06",
+  "speaker": "Ms Hunter",
+  "n_words": 167,
+  "seg_id": "NI2025-05-06#t4w1",
+  "genre": null
+ },
+ "R0633": {
+  "chamber": "TAS",
+  "verdict": "AI",
+  "date": "2026-05-05",
+  "speaker": "Mr WINTER",
+  "n_words": 350,
+  "seg_id": "TASHA2026-05-05#p1t92w3",
+  "genre": null
+ },
+ "R0634": {
+  "chamber": "NI",
+  "verdict": "AI",
+  "date": "2025-06-10",
+  "speaker": "Mr Dickson",
+  "n_words": 357,
+  "seg_id": "NI2025-06-10#t14w0",
+  "genre": null
+ },
+ "R0635": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2025-10-23",
+  "speaker": "Mike Dawson (Miramichi\u2014Grand Lake, CPC)",
+  "n_words": 223,
+  "seg_id": "CA2025-10-23#t68w3",
+  "genre": null
+ },
+ "R0636": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2025-10-02",
+  "speaker": "Hon. Ruby Sahota (Secretary of State (Combatting Crime), Lib.)",
+  "n_words": 125,
+  "seg_id": "CA2025-10-02#t74w0",
+  "genre": null
+ },
+ "R0637": {
+  "chamber": "QLD",
+  "verdict": "Mixed",
+  "date": "2026-02-12",
+  "speaker": "KNUTH",
+  "n_words": 334,
+  "seg_id": "QLD2026-02-12#t169w0",
+  "genre": null
+ },
+ "R0638": {
+  "chamber": "WA",
+  "verdict": "Mixed",
+  "date": "2026-06-16",
+  "speaker": "Hon Stephen Dawson",
+  "n_words": 303,
+  "seg_id": "WALC2026-06-16#t126w0",
+  "genre": null
+ },
+ "R0639": {
+  "chamber": "Dail Eireann",
+  "verdict": "Mixed",
+  "date": "2026-06-24",
+  "speaker": "Minister of State at the Department of Children, Disability and Equality",
+  "n_words": 292,
+  "seg_id": "IE2026-06-24#t241w4",
+  "genre": null
+ },
+ "R0640": {
+  "chamber": "AB",
+  "verdict": "AI",
+  "date": "2026-04-23",
+  "speaker": "Mrs. Petrovic",
+  "n_words": 351,
+  "seg_id": "AB2026-04-23#t8w0",
+  "genre": null
+ },
+ "R0641": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2025-09-22",
+  "speaker": "Shannon Miedema (Halifax, Lib.)",
+  "n_words": 159,
+  "seg_id": "CA2025-09-22#t97w0",
+  "genre": "SO31"
+ },
+ "R0642": {
+  "chamber": "BC",
+  "verdict": "AI",
+  "date": "2025-04-14",
+  "speaker": "\u00c1\u2019a :l\u00edya Warbus",
+  "n_words": 355,
+  "seg_id": "BC2025-04-14#t88w10",
+  "genre": null
+ },
+ "R0643": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2025-10-20",
+  "speaker": "Hon. Arielle Kayabaga (London West, Lib.)",
+  "n_words": 289,
+  "seg_id": "CA2025-10-20#t233w3",
+  "genre": "DEBATE"
+ },
+ "R0644": {
+  "chamber": "Dail Eireann",
+  "verdict": "Mixed",
+  "date": "2026-05-12",
+  "speaker": "Deputy Jennifer Whitmore",
+  "n_words": 232,
+  "seg_id": "IE2026-05-12#t277w3",
+  "genre": null
+ },
+ "R0645": {
+  "chamber": "TAS",
+  "verdict": "AI",
+  "date": "2025-12-03",
+  "speaker": "Mr FERGUSON",
+  "n_words": 346,
+  "seg_id": "TASHA2025-12-03#p1t96w2",
+  "genre": null
+ },
+ "R0646": {
+  "chamber": "MB",
+  "verdict": "AI",
+  "date": "2026-05-26",
+  "speaker": "MLA Bereza",
+  "n_words": 297,
+  "seg_id": "MB2026-05-26#t44w0",
+  "genre": null
+ },
+ "R0647": {
+  "chamber": "NSW",
+  "verdict": "Mixed",
+  "date": "2025-10-23",
+  "speaker": "Mrs HELEN DALTON",
+  "n_words": 167,
+  "seg_id": "NSWLA2025-10-23#t113w1",
+  "genre": null
+ },
+ "R0648": {
+  "chamber": "NSW",
+  "verdict": "AI",
+  "date": "2026-05-28",
+  "speaker": "Ms KATELIN McINERNEY",
+  "n_words": 142,
+  "seg_id": "NSWLA2026-05-28#t231w0",
+  "genre": null
+ },
+ "R0649": {
+  "chamber": "SK",
+  "verdict": "Human",
+  "date": "2026-05-14",
+  "speaker": "Hon. Michael Weger",
+  "n_words": 354,
+  "seg_id": "SK2026-05-14#t10w1",
+  "genre": null
+ },
+ "R0650": {
+  "chamber": "SA",
+  "verdict": "Human",
+  "date": "2025-10-29",
+  "speaker": "The Hon. C. BONAROS",
+  "n_words": 351,
+  "seg_id": "SALC2025-10-29#t75w1",
+  "genre": null
+ },
+ "R0651": {
+  "chamber": "MB",
+  "verdict": "Human",
+  "date": "2026-05-20",
+  "speaker": "Mr. Wharton",
+  "n_words": 334,
+  "seg_id": "MB2026-05-20#t48w2",
+  "genre": null
+ },
+ "R0652": {
+  "chamber": "NS",
+  "verdict": "Human",
+  "date": "2025-10-02",
+  "speaker": "ELIZABETH SMITH-MCCROSSIN",
+  "n_words": 321,
+  "seg_id": "NS2025-10-02#t150w0",
+  "genre": null
+ },
+ "R0653": {
+  "chamber": "Dail Eireann",
+  "verdict": "AI",
+  "date": "2025-11-04",
+  "speaker": "Deputy Ciar\u00e1n Ahern",
+  "n_words": 312,
+  "seg_id": "IE2025-11-04#t121w9",
+  "genre": null
+ },
+ "R0654": {
+  "chamber": "Dail Eireann",
+  "verdict": "AI",
+  "date": "2026-02-10",
+  "speaker": "Deputy Peadar T\u00f3ib\u00edn",
+  "n_words": 339,
+  "seg_id": "IE2026-02-10#t304w0",
+  "genre": null
+ },
+ "R0655": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2025-11-17",
+  "speaker": "Wade Chang (Burnaby Central, Lib.)",
+  "n_words": 280,
+  "seg_id": "CA2025-11-17#t59w1",
+  "genre": "DEBATE"
+ },
+ "R0656": {
+  "chamber": "US-SENATE",
+  "verdict": "Human",
+  "date": "2025-09-02",
+  "speaker": "Mr. RISCH",
+  "n_words": 227,
+  "seg_id": "US2025-09-02-S5556-2#t0w2",
+  "genre": null
+ },
+ "R0657": {
+  "chamber": "Dail Eireann",
+  "verdict": "AI",
+  "date": "2025-12-02",
+  "speaker": "Deputy Michael Collins",
+  "n_words": 209,
+  "seg_id": "IE2025-12-02#t73w2",
+  "genre": null
+ },
+ "R0658": {
+  "chamber": "ON",
+  "verdict": "Human",
+  "date": "2026-03-31",
+  "speaker": "Ms. Aislinn Clancy",
+  "n_words": 170,
+  "seg_id": "ON2026-03-31#t117w0",
+  "genre": null
+ },
+ "R0659": {
+  "chamber": "NI",
+  "verdict": "Mixed",
+  "date": "2025-09-15",
+  "speaker": "Mrs Guy",
+  "n_words": 330,
+  "seg_id": "NI2025-09-15#t253w0",
+  "genre": null
+ },
+ "R0660": {
+  "chamber": "NI",
+  "verdict": "Human",
+  "date": "2025-05-27",
+  "speaker": "Mrs O'Neill",
+  "n_words": 129,
+  "seg_id": "NI2025-05-27#t116w0",
+  "genre": null
+ },
+ "R0661": {
+  "chamber": "SCO",
+  "verdict": "Human",
+  "date": "2025-11-11",
+  "speaker": "Neil Bibby",
+  "n_words": 258,
+  "seg_id": "SCO2025-11-11#t18583w2",
+  "genre": null
+ },
+ "R0662": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Mixed",
+  "date": "2025-11-27",
+  "speaker": "Vincent Ho (Richmond Hill South, CPC)",
+  "n_words": 310,
+  "seg_id": "CA2025-11-27#t17w4",
+  "genre": null
+ },
+ "R0663": {
+  "chamber": "BC",
+  "verdict": "Mixed",
+  "date": "2026-02-18",
+  "speaker": "Korky Neufeld",
+  "n_words": 322,
+  "seg_id": "BC2026-02-18#t92w0",
+  "genre": null
+ },
+ "R0664": {
+  "chamber": "SK",
+  "verdict": "Human",
+  "date": "2025-04-02",
+  "speaker": "Hon. Jim Reiter",
+  "n_words": 133,
+  "seg_id": "SK2025-04-02#t58w0",
+  "genre": null
+ },
+ "R0665": {
+  "chamber": "NS",
+  "verdict": "AI",
+  "date": "2026-03-13",
+  "speaker": "LINA HAMID",
+  "n_words": 278,
+  "seg_id": "NS2026-03-13#t137w1",
+  "genre": null
+ },
+ "R0666": {
+  "chamber": "Canada House of Commons",
+  "verdict": "AI",
+  "date": "2026-02-03",
+  "speaker": "Harb Gill",
+  "n_words": 145,
+  "seg_id": "CA2026-02-03#t65w0",
+  "genre": null
+ },
+ "R0667": {
+  "chamber": "NSW",
+  "verdict": "AI",
+  "date": "2026-02-10",
+  "speaker": "Mr ANTHONY ROBERTS",
+  "n_words": 287,
+  "seg_id": "NSWLA2026-02-10#t106w1",
+  "genre": null
+ },
+ "R0668": {
+  "chamber": "CA-FED",
+  "verdict": "Mixed",
+  "date": "2026-04-21",
+  "speaker": "Larry Brock (Brantford\u2014Brant South\u2014Six Nations, CPC)",
+  "n_words": 178,
+  "seg_id": "CA2026-04-21#t111w0",
+  "genre": "SO31"
+ },
+ "R0669": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2025-02-12",
+  "speaker": "Ms ABIGAIL BOYD",
+  "n_words": 339,
+  "seg_id": "NSWLC2025-02-12#t198w0",
+  "genre": null
+ },
+ "R0670": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2025-10-03",
+  "speaker": "Yasir Naqvi (Ottawa Centre, Lib.)",
+  "n_words": 150,
+  "seg_id": "CA2025-10-03#t44w0",
+  "genre": null
+ },
+ "R0671": {
+  "chamber": "NSW",
+  "verdict": "AI",
+  "date": "2026-03-18",
+  "speaker": "Mrs HELEN DALTON",
+  "n_words": 338,
+  "seg_id": "NSWLA2026-03-18#t232w1",
+  "genre": null
+ },
+ "R0672": {
+  "chamber": "NSW",
+  "verdict": "AI",
+  "date": "2026-02-05",
+  "speaker": "Mr ROBERT DWYER",
+  "n_words": 244,
+  "seg_id": "NSWLA2026-02-05#t208w0",
+  "genre": null
+ },
+ "R0673": {
+  "chamber": "Canada House of Commons",
+  "verdict": "Human",
+  "date": "2025-12-09",
+  "speaker": "Hon. Mike Lake (Leduc\u2014Wetaskiwin, CPC)",
+  "n_words": 196,
+  "seg_id": "CA2025-12-09#t61w0",
+  "genre": null
+ },
+ "R0674": {
+  "chamber": "CA-FED",
+  "verdict": "Human",
+  "date": "2026-02-23",
+  "speaker": "Hon. Fran\u00e7ois-Philippe Champagne (Minister of Finance and National Revenue, Lib.)",
+  "n_words": 125,
+  "seg_id": "CA2026-02-23#t144w0",
+  "genre": "OQ"
+ },
+ "R0675": {
+  "chamber": "SK",
+  "verdict": "Human",
+  "date": "2026-03-11",
+  "speaker": "Jordan McPhail",
+  "n_words": 321,
+  "seg_id": "SK2026-03-11#t70w1",
+  "genre": null
+ },
+ "R0676": {
+  "chamber": "SA",
+  "verdict": "Human",
+  "date": "2025-02-18",
+  "speaker": "The Hon. K.J. MAHER",
+  "n_words": 122,
+  "seg_id": "SALC2025-02-18#t136w0",
+  "genre": null
+ },
+ "R0677": {
+  "chamber": "SA",
+  "verdict": "Human",
+  "date": "2025-06-05",
+  "speaker": "The Hon. C.M. SCRIVEN",
+  "n_words": 351,
+  "seg_id": "SALC2025-06-05#t76w1",
+  "genre": null
+ },
+ "R0678": {
+  "chamber": "CA-FED",
+  "verdict": "Mixed",
+  "date": "2026-02-02",
+  "speaker": "Fraser Tolmie (Moose Jaw\u2014Lake Centre\u2014Lanigan, CPC)",
+  "n_words": 289,
+  "seg_id": "CA2026-02-02#t270w1",
+  "genre": "DEBATE"
+ },
+ "R0679": {
+  "chamber": "BC",
+  "verdict": "AI",
+  "date": "2026-04-16",
+  "speaker": "Tony Luck",
+  "n_words": 334,
+  "seg_id": "BC2026-04-16#t39w5",
+  "genre": null
+ },
+ "R0680": {
+  "chamber": "NSW",
+  "verdict": "Human",
+  "date": "2025-06-25",
+  "speaker": "Mr MARK TAYLOR",
+  "n_words": 170,
+  "seg_id": "NSWLA2025-06-25#t235w1",
+  "genre": null
+ },
+ "R0681": {
+  "chamber": "CA-FED",
+  "verdict": "AI",
+  "date": "2025-09-19",
+  "speaker": "Chak Au (Richmond Centre\u2014Marpole, CPC)",
+  "n_words": 131,
+  "seg_id": "CA2025-09-19#t40w0",
+  "genre": "SO31"
+ }
+}
