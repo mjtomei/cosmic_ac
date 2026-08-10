@@ -1,0 +1,897 @@
+{
+  "_meta": {
+    "title": "AI policy scan of legislatures in the S10 corpus",
+    "purpose": "Establish, per chamber, whether an official policy/rule/guidance governs members' and staff use of generative AI in preparing speeches, questions, motions, correspondence or committee work. Intended as an explanatory variable for S10's measurement of AI-generated text in legislative transcripts (2025-2026).",
+    "compiled": "2026-08-09",
+    "method": "Primary parliamentary documents wherever retrievable (policy PDFs, annual reports, committee estimates answers, Hansard/Official Report full-text search, FOI responses, management-committee minutes), supplemented by verified secondary reporting where a policy is not public. WebSearch quota was exhausted, so discovery used DuckDuckGo/Brave result pages via WebFetch, the r.jina.ai text proxy, each parliament's own search backend, and direct site crawling.",
+    "scoring_key": {
+      "policy_exists": [
+        "yes_members_and_staff",
+        "yes_staff_only",
+        "yes_text_not_retrieved",
+        "in_development",
+        "no_policy_found",
+        "unclear"
+      ],
+      "no_policy_found_means": "Nothing located in the public record. NOT proof of non-existence: an unpublished intranet circular would be invisible to this method. Distinguished throughout from 'exists but text not retrieved'.",
+      "disclosure_required": "Whether AI-drafted text would be flagged in the published record (Hansard / Official Report / Congressional Record). Internal, office-level or work-product disclosure duties are recorded separately and do NOT count as 'yes' here."
+    },
+    "headline_findings": [
+      "No chamber anywhere in scope requires AI-drafted text to be disclosed in its published record. Zero out of 22 chambers examined.",
+      "No chamber forbids members from using generative AI to draft speeches, questions or motions.",
+      "Only one chamber in scope has published guidance addressed to MEMBERS about AI in proceedings: the UK Parliament (both Houses).",
+      "Where policies exist elsewhere, they are almost always ADMINISTRATION/STAFF instruments issued by a Clerk or IT department, framed as information security, not as rules of authorship.",
+      "The only Speaker's ruling anywhere on AI-authored speeches is Alberta's, and it went the permissive way: 'ChatGPT is not staff'.",
+      "The UK guidance is the only document that squarely addresses the study's question, and it resolves it permissively: AI-generated content used in formal proceedings is the Member's own contribution, protected by privilege 'regardless of the tools used to produce that material'."
+    ]
+  },
+
+  "chambers": [
+    {
+      "chamber": "UK House of Commons (guidance is bicameral; covers House of Lords too)",
+      "jurisdiction": "United Kingdom",
+      "group": 1,
+      "policy_exists": "yes_members_and_staff",
+      "policy_name": "Artificial Intelligence: Guidance for Members",
+      "issuer": "Parliamentary Digital Service, for the House of Commons Speaker's Steering Group on AI in Parliaments (chair: Nusrat Ghani MP, Chairman of Ways and Means and Principal Deputy Speaker; members Dawn Butler MP, Sir Jeremy Wright MP) and the Lord Speaker's Group on AI (chair: Lord Clement-Jones CBE). Preface signed by Speaker Sir Lindsay Hoyle and the Lord Speaker.",
+      "dates": {
+        "steering_group_established": "9 May 2025",
+        "first_published": "January 2025",
+        "v4": "September 2025 (file named july_25_updated)",
+        "current": "April 2026, publicised June 2026"
+      },
+      "scope": "Members of BOTH Houses and their staff, 'in relation to the use of AI in support of their Parliamentary duties'. Explicitly reaches formal proceedings (speeches, questions, select committee evidence) and Members as employers. Separate AI guidance exists for administration staff (AI Strategy Group, chaired by Parliament's CTO). Separate Lords guidance exists on the use of AI in preparing amendments (referenced in the Members' guidance; text not published).",
+      "stance": "permitted_with_guardrails",
+      "operative_quotes": [
+        "3. Use it if you wish - Finding and using a suitable AI tool is the best way to find out whether AI can support your work.",
+        "1. Keep a human in the loop - Whenever using content created by AI, it is important to check that output closely for accuracy and to be certain that you are happy for it to be used. Members are responsible and accountable for how AI tools are used within their offices and for the content created by those AI tools.",
+        "4. Be prepared to disclose your use of AI - You should consider how you would disclose the use of AI if you are asked to do so. This includes considering where AI might be used in your offices and ensuring staff are aware of what constitutes appropriate use.",
+        "Keep a human in the loop and use AI for drafts, not final outputs.",
+        "Be prepared to disclose the use of AI if requested.",
+        "First, Members might use AI to generate content to be used in formal proceedings. Members are responsible for their contributions to formal proceedings (for instance, questions or speeches), and these are protected by privilege regardless of the tools used to produce that material. The same applies to evidence to select committees.",
+        "As their employers, Members are responsible for how AI tools are used by their staff. ... Members are encouraged to consider where AI may be used within their offices and ensure staff are aware of appropriate use.",
+        "If a 'deepfake' makes use of Parliamentary proceedings (e.g. a clip of a speech in the Chamber), the Clerks of the Journals and Speaker's Counsel should be informed."
+      ],
+      "prohibitions": [
+        "Do not enter sensitive data into public AI tools (parliamentary Copilot Chat excepted).",
+        "Do not use AI tools on parliamentary devices without reviewing the Acceptable Use Policy.",
+        "Do not use AI for harmful, unethical or unlawful purposes, or personal gain conflicting with Parliament's interests.",
+        "Do not rely on the accuracy of AI-generated research; for authoritative information contact the House Library."
+      ],
+      "covers_speeches_explicitly": true,
+      "disclosure_required": "no",
+      "disclosure_detail": "Reactive only. No requirement to flag AI-drafted text in Hansard or anywhere else. Members are asked only to 'be prepared to disclose the use of AI if requested' and to 'consider how you would disclose'. AI-drafted speeches and questions are expressly the Member's own contributions.",
+      "tools_provided": "Microsoft Copilot Chat available to all parliamentary account holders under Microsoft Enterprise Data Protection; third-party public tools permitted with stated cautions. A Copilot pilot has run for MPs.",
+      "office_policy_template": "Yes - an example AI office policy template for Commons Members and their staff, via Members' HR Advice Service. Guidance only; not part of staff contracts.",
+      "code_of_conduct": "The MPs' Code of Conduct and Guide to the Rules (HC 1083, 2023) contains ZERO mentions of artificial intelligence or generative AI (full text checked).",
+      "speaker_rulings": "None found.",
+      "incidents": [
+        "20 Dec 2022, Christmas Adjournment debate: Dr Luke Evans MP (Con, Bosworth) read a ChatGPT-written 'Churchillian' speech, saying 'I think this may be a first'. Kevin Brennan MP intervened: 'Did he write that himself or was it written by artificial intelligence?' No point of order, no ruling.",
+        "Aug-Sep 2025: press controversy over the LLM tell 'I rise to speak' (Mike Reader MP identified it; Tom Tugendhat MP attacked colleagues publicly). Floor grumbling and press complaints only - no points of order, no rulings.",
+        "Mike Reader MP photographed using ChatGPT for constituent correspondence, Aug 2025; Ben Obese-Jecty MP: 'using ChatGPT for any form of constituency correspondence was unacceptable.' Mark Sewards MP launched a constituent-facing AI avatar of himself."
+      ],
+      "hansard_negative_check": "UK Hansard API search 2023-2026: 'speech was written by ChatGPT' = 0 hits; 'I used ChatGPT to write' = 0 hits; 'generated by ChatGPT' = 0 hits. The only match for 'this speech was written by' is from 1985 ('someone in Tory Central Office').",
+      "research_service": "House of Commons Library Good Information Toolkit training; Libraries and POST run AI seminars for Members and staff; the Library is positioned as the authoritative alternative to AI-generated research.",
+      "other_notes": "The Commons Modernisation Committee's first report (Dec 2025, 18 recommendations) does not explicitly address AI; AI runs on a parallel track via the Speaker's Steering Group and PDS. The Procedure Committee's written-parliamentary-questions inquiry (launched 24 Nov 2025) does NOT mention AI in its terms of reference, though the Hansard Society's March 2026 submission lists AI as a driver of the WPQ volume surge (49,125 in 2024 to 90,331 in 2025).",
+      "sources": [
+        "https://www.parliament.uk/globalassets/mps-lords--offices/offices/parliamentary-digital-service/parliamentary-digital-service---ai-guidance-members-2026.pdf",
+        "https://www.parliament.uk/globalassets/mps-lords--offices/offices/parliamentary-digital-service/july_25_updated_-_parliamentary_digital_service_-_ai_guidance_members_v4_external_-_final.pdf",
+        "https://www.parliament.uk/business/news/2025/may/speakers-steering-group-on-ai-in-parliaments-established/",
+        "https://www.nusghani.org.uk/news/artificial-intelligence-guidance-mps",
+        "https://library.bussola-tech.co/p/artificial-intelligence-guidance-members-uk-parliament",
+        "https://publications.parliament.uk/pa/cm5803/cmcode/1083/1083.pdf",
+        "https://www.independent.co.uk/news/uk/politics/conservative-luke-evans-commons-mps-houses-of-parliament-b2248838.html",
+        "https://www.politicshome.com/news/article/mps-divided-use-ai-work",
+        "https://www.hansardsociety.org.uk/publications/submissions/written-parliamentary-questions-procedure-committee"
+      ],
+      "confidence": "high - full primary text retrieved"
+    },
+
+    {
+      "chamber": "US House of Representatives",
+      "jurisdiction": "United States (federal)",
+      "group": 1,
+      "policy_exists": "yes_members_and_staff",
+      "policy_name": "House Information Technology Policy 8 (HITPOL 8) - Artificial Intelligence",
+      "issuer": "Chief Administrative Officer (CAO), approved by the Committee on House Administration (CHA); announced by e-Dear Colleague",
+      "dates": {
+        "predecessor": "June 2023 - HIR guidance authorising ChatGPT Plus only, research and evaluation, non-sensitive data",
+        "effective": "28 August 2024 (approved by the Committee on House Administration)",
+        "announced": "September 2024",
+        "fact_sheet_updated": "12 September 2024",
+        "review_cadence": "at least once per Congressional Session"
+      },
+      "scope": "'House User' defined broadly: Members, Committees, Leadership, House Officers, staff, interns, fellows, contractors, vendors, detailees. Framed as IT/security policy, but enumerated use cases reach drafting talking points and constituent correspondence.",
+      "stance": "permitted_with_tiered_approval",
+      "operative_quotes": [
+        "The purpose of this House Information Technology Policy (HITPOL) was to establish principles necessary for responsible AI use, define permissible and prohibited House use cases, and ensure that all House users protect House and Member data when using AI tools within the House environment.",
+        "The House AI Policy provides a framework for the expanded use of AI in the House. The policy incorporates appropriate guardrails and specific AI principles that will guide both Members and institutional offices as they responsibly incorporate this technology into their operations.",
+        "all permissible and approved uses must be routinely reported to the CAO's House Information Resources upon request"
+      ],
+      "guardrails": ["Human Oversight and Decision-Making", "Clear and Comprehensive Policies", "Robust Testing and Evaluation", "Transparency and Disclosure", "Education and Upskilling"],
+      "principles": ["Security", "Data Privacy", "Accuracy (never present unvalidated AI output to the public)", "Reliability (attribute all AI-generated outputs to their source and tool)", "Transparency (disclose AI use)", "Fairness", "Ethical Use"],
+      "use_case_tiers": {
+        "generally_permissible": "internal research, summarising content, formatting data, grammar correction, draft refinement, brainstorming (non-sensitive, internal audience)",
+        "requires_management_approval": "AI-generated constituent correspondence, AI-assisted scheduling for Member activities, first drafts for talking points",
+        "requires_HIR_approval": "code generation, chatbots, third-party AI apps and extensions",
+        "prohibited": "inputting constituent PII for casework, personnel actions based on AI outputs, creating deepfakes, and 'finalizing legislation'"
+      },
+      "covers_speeches_explicitly": "partially - 'first drafts for talking points' is an enumerated use case requiring management approval; floor speeches are not separately named",
+      "disclosure_required": "no",
+      "disclosure_detail": "The Transparency principle requires users to 'disclose AI use', and POPVOX Foundation's review of the document describes 'mandatory disclosure of AI use' plus reporting to the CAO on request. This is an internal administrative obligation. There is NO House Rule and no Congressional Record convention requiring AI-drafted floor speeches, statements or questions to be flagged in the published record.",
+      "public_availability": "NOT PUBLIC. HITPOL 8 sits on the HouseNet intranet behind the House firewall. Staff report low awareness.",
+      "approved_tools": ["OpenAI ChatGPT Pro", "Anthropic Claude Pro", "Google Gemini", "Microsoft Copilot"],
+      "deployment": "Late 2025 enterprise agreement with Microsoft for 6,000 Copilot licences; distribution began 2026; offices must establish an internal AI use policy before access. As of March 2026 offices report Copilot's system prompt refuses political and policy-position content, limiting its usefulness for Member statements and constituent correspondence.",
+      "house_rules": "119th Congress House Rules package (adopted 3 January 2025) directs the House to 'continue efforts to integrate artificial intelligence technologies into the operations and functions of the House', including 'AI-driven tools to support effective oversight through efficient legislative drafting, analysis, and comparative assessments of legislative texts'. It does not govern Members' use of AI in speeches.",
+      "speaker_rulings": "None found.",
+      "incidents": [
+        "January 2023: Rep. Jake Auchincloss (D-MA-04) delivered an AI-generated speech on the House floor introducing the US-Israel Artificial Intelligence Center Act; reviewed, refined and edited by the Member and his team; voluntarily disclosed; no procedural objection. Reported by AP as the first AI-written speech read in Congress.",
+        "January 2023: Rep. Ted Lieu (D-CA-36) introduced the first federal legislation written by artificial intelligence.",
+        "July 2024: Rep. Jennifer Wexton (D-VA-10) used an AI-generated model of her own pre-illness voice to speak on the House floor and in committee; assistive use, fast-tracked for approval under the policy.",
+        "February 2024 onward: congressional offices received AI-generated phone calls (a gun-violence awareness campaign), recurring several times."
+      ],
+      "sources": [
+        "https://cao.house.gov/sites/evo-subsites/cao.house.gov/files/evo-media-document/House%20Artificial%20Intelligence%20Policy%20%E2%80%93%20Fact%20Sheet_CAO%20Online.pdf",
+        "https://cha.house.gov/_cache/files/4/2/42dca19e-194b-481e-b11b-67153a8ab821/A0DC312390F4983FB50A73CB71E3E346.cha-modernization-ai-flash-report-12-20-24-v3.0.pdf",
+        "https://cha.house.gov/2024/9/cha-cao-announce-house-of-representatives-ai-policy",
+        "https://www.popvox.org/blog/house-senate-ai",
+        "https://www.popvox.org/blog/house-rules-ai-focus"
+      ],
+      "confidence": "high on existence, dates, tiers, tools (CAO fact sheet and CHA flash report are primary); medium on exact operative wording of HITPOL 8, which is not public - internal wording is from POPVOX Foundation's review"
+    },
+
+    {
+      "chamber": "US Senate",
+      "jurisdiction": "United States (federal)",
+      "group": 1,
+      "policy_exists": "yes_members_and_staff",
+      "policy_name": "Senate Artificial Intelligence Policy, SAA-CIO-CYB-040 v1.00",
+      "issuer": "Senate Sergeant at Arms and Doorkeeper, and the Assistant Sergeant at Arms / Chief Information Officer (SAA CIO)",
+      "dates": {
+        "first_guidance": "December 2023 - SAA CIO authorised OpenAI ChatGPT, Google Bard and Microsoft Bing Chat for research and evaluation with non-sensitive data",
+        "framework": "27 October 2025 - comprehensive AI Policy SAA-CIO-CYB-040 v1.00",
+        "tier2_approvals": "6-10 March 2026 - Microsoft Copilot Chat, Google Workspace with Gemini Chat and OpenAI ChatGPT Enterprise approved for use WITH Senate data"
+      },
+      "scope": "All Senate offices and committees, support offices, contractors, suppliers and vendors using Senate IT networks. IT/security framing, but the policy's own enumerated external use cases explicitly include drafting SPEECHES.",
+      "stance": "permitted_with_tiered_approval",
+      "operative_quotes": [
+        "The Sergeant at Arms (SAA) office of the Chief Information Officer (CIO) has approved the use of three Generative Artificial Intelligence (AI) platforms with Senate data.",
+        "[Copilot] can help with routine Senate work, including drafting and editing documents, summarizing information, preparing talking points and briefing material, and conducting research and analysis.",
+        "Do not present AI-generated content to the public that has not been validated by a human.",
+        "Do not enter PII into AI tools."
+      ],
+      "tiers": {
+        "tier1": "Approved for non-Senate data - research and evaluation only, non-sensitive/non-official data, human review of generated content",
+        "tier2": "Approved for Senate Official Information - higher security and contractual requirements, Senate data may be entered, same human-review expectation"
+      },
+      "enumerated_use_cases": "Internal: summarising documents, drafting reports, brainstorming, conducting research, analysing datasets, generating reports and visualisations. External: drafting content for constituent meetings, SPEECHES, social media posts, translating content, transcribing events, aggregating feedback, generating images for external communications.",
+      "covers_speeches_explicitly": true,
+      "disclosure_required": "no",
+      "disclosure_detail": "The policy encourages each Member office to develop its own internal AI policy covering use cases, human review of AI-generated content and 'AI-use disclosure'. There is no Senate-wide disclosure mandate and no requirement that AI-drafted floor statements be flagged in the Congressional Record.",
+      "governance": "AI Governance Board (SAA Executive Office, Acquisitions, Office of General Counsel, CIO) sets overarching Senate AI policy and strategy; reports to the Senate Committee on Rules and Senate Leadership, who reserve the right to join the board.",
+      "prohibitions": ["deepfakes", "personnel decisions based on AI", "PII or physical security information in AI tools", "Senate usernames or passwords in prompts", "Senate credentials or email addresses to log in to AI tools on non-Senate devices"],
+      "public_availability": "NOT PUBLIC. Guidance sits on an internal SAA portal; tier assignments require the internal Cybersecurity Risk Assessment Portal. The March 2026 approval memo leaked to press (404 Media published the full text).",
+      "speaker_rulings": "None found.",
+      "incidents": "None located in the Senate. (Note the Australian Senate parallel: Senator Jacqui Lambie, 9 May 2023, 'This speech was 100 per cent written by artificial intelligence.')",
+      "sources": [
+        "https://www.popvox.org/blog/house-senate-ai",
+        "https://www.popvox.org/blog/ai-senate-guidance",
+        "https://www.404media.co/heres-the-memo-approving-gemini-chatgpt-and-copilot-for-use-in-the-senate/",
+        "https://www.nytimes.com/2026/03/10/us/politics/us-senate-chatgpt-ai-chatbots.html"
+      ],
+      "confidence": "high on existence, dates, tools; medium on operative wording (policy not public; wording from POPVOX review and the leaked March 2026 memo)"
+    },
+
+    {
+      "chamber": "Canada, House of Commons (federal)",
+      "jurisdiction": "Canada (federal)",
+      "group": 1,
+      "policy_exists": "yes_staff_only",
+      "policy_name": "House of Commons Administration AI programme: intranet AI hub with guidelines (June 2024); online GenAI resources for MPs (May 2025); organisational AI strategy (adoption targeted autumn 2025)",
+      "issuer": "House of Commons Administration (AI and Digital Experience Strategy), via an AI working group established April 2024 with subcommittees on AI strategy, corporate planning, member services, guardrails, policy review, and events/communications",
+      "dates": {
+        "working_group": "April 2024",
+        "intranet_AI_hub_with_guidelines": "June 2024",
+        "genai_resources_for_MPs": "May 2025, timed to the Members' Orientation Programme after the 28 April 2025 general election",
+        "organisational_AI_strategy": "final stages of approval in 2025; adoption targeted autumn 2025"
+      },
+      "scope": "House Administration employees, plus online GenAI resources for MPs and their staff. Framed around data protection, fiscal responsibility, cybersecurity and deepfake awareness - not the conduct of proceedings.",
+      "stance": "permitted_with_guidance",
+      "operative_quotes": [
+        "In May 2025, to coincide with our Members' Orientation Program following the general election on 28 April, we rolled out online GenAI resources for MPs, offering practical guidance on responsible use for members and their staff.",
+        "In June 2024, we introduced an AI hub on our intranet, featuring guidelines and resources to support the responsible use of AI-powered tools.",
+        "we now are in the final stages of approving our AI strategy ... built around five pillars ... strategy and governance, data and risk management, employee experience, client experience, and projects and value"
+      ],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "no",
+      "disclosure_detail": "No disclosure requirement found. Nothing would flag AI-drafted text in the Debates.",
+      "boie": "No Board of Internal Economy AI by-law or policy located. The Members' Allowances and Services Manual (306 pp, current edition) contains ZERO mentions of artificial intelligence, generative AI or machine learning (full text checked).",
+      "speaker_rulings": "None. The index of Selected Decisions of Speaker Greg Fergus contains no AI entry.",
+      "incidents": "MPs cite ChatGPT openly in debate without objection. Kelly McCauley MP, Business of Supply, 22 September 2025: 'Just to be sure, I asked ChatGPT if it could name any, and it came back saying it could not find credible evidence...'. Kody Blois MP, PROC, 10 December 2024: 'I asked ChatGPT what the value of Michael Cooper's pension would be...'. Full-corpus search for 'written by ChatGPT' returns zero hits. No declared AI-written speech in a Canadian federal chamber was found.",
+      "research_service": "Library of Parliament AI Working Group ran a first phase of exploratory testing of generative AI tools (reference and writing assistance, indexing, media monitoring, visualisation, data analysis), presented at IFLAPARL 2024, Madrid, October 2024. The House of Commons of Canada also contributed to the IPU Guidelines for AI in parliaments and hosted an inter-parliamentary AI seminar in 2025 attended by Queensland.",
+      "sources": [
+        "https://www.ipu.org/innovation-tracker/story/ai-journey-house-commons-canada",
+        "https://www.ourcommons.ca/Content/MAS/mas-e.pdf",
+        "https://www.ourcommons.ca/procedure/speakers-decisions/greg-fergus/index-e.html",
+        "https://repository.ifla.org/items/a1de5281-6075-4ed5-8223-79e21f0eb4a7/full"
+      ],
+      "confidence": "high that no chamber rule or BOIE policy exists; medium-low on the content of the MP-facing GenAI resources, which sit on the internal network and could not be retrieved"
+    },
+
+    {
+      "chamber": "Scottish Parliament",
+      "jurisdiction": "Scotland (devolved)",
+      "group": 1,
+      "policy_exists": "no_policy_found",
+      "policy_name": null,
+      "issuer": null,
+      "dates": {},
+      "scope": null,
+      "stance": "silent",
+      "operative_quotes": [],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "no",
+      "disclosure_detail": "No rule found.",
+      "evidence_of_absence": [
+        "The Parliament's published policy index (~45 policies) contains no AI policy.",
+        "Acceptable Use of IT Policy (SPCB employee handbook): ZERO occurrences of artificial intelligence, generative, AI, ChatGPT, Copilot, large language (full text checked).",
+        "Policy on MSP use of parliamentary resources: zero AI mentions.",
+        "Official Report full-text search, all sessions 1999-2026: 'artificial intelligence' AND 'code of conduct' = 0 contributions; 'Scottish Parliamentary Corporate Body' AND 'artificial intelligence' = 2 incidental business motions. No SPCB or Presiding Officer statement on the Parliament's own AI use exists in the record.",
+        "SPICe Spotlight has AI subject-matter posts (June/July 2024) but nothing on SPICe's own use of AI in producing briefings."
+      ],
+      "speaker_rulings": "None found.",
+      "incidents": "None involving MSPs. Adjacent: Ethical Standards Commissioner Ian Bruce told the SPPA Committee on 5 March 2026 that his office uses Copilot for research and that some complaints against MSPs 'are AI generated'. Scottish Information Commissioner David Hamilton told the same committee on 26 February 2026 that AI is driving FOI request volumes.",
+      "sources": [
+        "https://www.parliament.scot/about/how-parliament-works/policies",
+        "https://www.parliament.scot/careers/employee-handbook/policies/use-of-it-and-social-media/acceptable-use-of-it-policy",
+        "https://www.parliament.scot/about/how-parliament-works/policies/msp-use-of-parliamentary-resources",
+        "https://www.parliament.scot/chamber-and-committees/official-report/search-what-was-said-in-parliament/SPPAC-05-03-2026?meeting=20129&iob=224921"
+      ],
+      "confidence": "high on the published record; an unpublished internal staff note cannot be excluded (parliament.scot publishes no FOI disclosure log)"
+    },
+
+    {
+      "chamber": "Senedd Cymru / Welsh Parliament",
+      "jurisdiction": "Wales (devolved)",
+      "group": 1,
+      "policy_exists": "yes_text_not_retrieved",
+      "policy_name": "Senedd Commission staff AI guidance (unpublished) + an AI section within ICT Strategy 24-29; governed Microsoft Copilot trial extended to Members and their support staff",
+      "issuer": "Senedd Commission (guidance and ICT strategy); Llywydd Elin Jones AS/MS reporting on the Commission's behalf",
+      "dates": {
+        "foi_response": "9 April 2025",
+        "llywydd_plenary_statement": "24 September 2025"
+      },
+      "scope": "Guidance = Commission staff. Copilot trial = Members of the Senedd AND their support staff. General productivity/ICT use, not speeches specifically.",
+      "stance": "permitted_with_guidance",
+      "operative_quotes": [
+        "There is no general instruction, however, staff may use AI to assist them in their work provided they follow guidance. (Senedd Commission FOI response, 9 April 2025)",
+        "All Senedd ICT users have access to the browser-based Enterprise version of Microsoft Copilot. A group of users are using Copilot for Microsoft 365 and Teams Premium. The latter is a pilot.",
+        "A section on AI has been included in the recently revised ICT Strategy 24-29.",
+        "The Senedd is adopting AI incrementally, balancing opportunity with caution. We are currently running a structured, risk-managed trial of Microsoft Copilot for Microsoft 365 and Teams Premium, using strong controls in terms of governance and privacy. Members of the Senedd and their support staff have been given an opportunity to participate in this trial, and we have received positive feedback. (Llywydd, Plenary, 24 September 2025)"
+      ],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "no",
+      "disclosure_detail": "Nothing found requiring AI-drafted text to be flagged in the Record of Proceedings.",
+      "code_of_conduct": "Standards of Conduct Committee review of the Code of Conduct for Members of the Senedd (proposals for the Seventh Senedd, May 2026): ZERO occurrences of AI or artificial intelligence (full text checked).",
+      "speaker_rulings": "No Llywydd's ruling on AI-generated content. The 24 September 2025 answer is a Commission update, not a ruling.",
+      "incidents": "20-21 June 2023: Tom Giffard MS (Con, South Wales West) delivered a 90-second statement congratulating Wales on the World Cup of Darts written almost entirely by ChatGPT (he edited out one false claim), then revealed the source: 'I decided to use ChatGPT for the first time in the Senedd chamber this afternoon to show just how advanced the technology is becoming.' First known use in the Senedd chamber. No procedural consequence.",
+      "budget": "GBP 47,508 allocated for AI in FY2025/26.",
+      "sources": [
+        "https://senedd.wales/media/avynurux/foi-use-of-artificial-intelligence.pdf",
+        "https://record.senedd.wales/Plenary/15364#C705200",
+        "https://business.senedd.wales/documents/s169234/Review%20of%20the%20Code%20of%20Conduct%20for%20Members%20of%20the%20Senedd.pdf",
+        "https://www.bbc.com/news/uk-wales-politics-65976541"
+      ],
+      "confidence": "high that guidance exists and that the trial covers Members; the guidance text itself and the ICT Strategy AI section are not published"
+    },
+
+    {
+      "chamber": "Northern Ireland Assembly",
+      "jurisdiction": "Northern Ireland (devolved)",
+      "group": 1,
+      "policy_exists": "unclear",
+      "policy_name": null,
+      "issuer": null,
+      "dates": {},
+      "scope": null,
+      "stance": "no_rule_found",
+      "operative_quotes": [],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "unknown",
+      "disclosure_detail": "No rule found.",
+      "what_exists": "RaISe Briefing Paper 33/25 (NIAR 193-2024), 'Use of AI in Legislatures', Ray McCaffrey, September 2024, published to the Chairpersons' Liaison Group research-papers page 9 April 2025. It is comparative and descriptive, not prescriptive: it surveys parliamentary AI use, previews the IPU guidelines, and cites UK Parliament's guidance as an external exemplar. It states no NI Assembly rule.",
+      "gap": "Site search for 'artificial intelligence' on niassembly.gov.uk returns 142 results faceted as Assembly Commission (2) and Freedom of Information (1); those three items could not be retrieved (facet filtering requires a POST the site rejects). Speaker's rulings and the Committee on Standards and Privileges were not investigated. This is the weakest coverage of the four devolved/Irish chambers.",
+      "speaker_rulings": "Not investigated.",
+      "incidents": "None found.",
+      "sources": [
+        "http://www.niassembly.gov.uk/assembly-business/committees/2022-2027/chairpersons-liaison-group/research-papers/2025/use-of-ai-in-legislatures/",
+        "http://www.niassembly.gov.uk/globalassets/documents/raise/publications/2022-2027/2025/clg/3325.pdf"
+      ],
+      "confidence": "low-medium - mark as unclear, not as established absence"
+    },
+
+    {
+      "chamber": "Houses of the Oireachtas (Dail Eireann and Seanad Eireann)",
+      "jurisdiction": "Ireland",
+      "group": 1,
+      "policy_exists": "yes_staff_only",
+      "policy_name": "Responsible Artificial Intelligence (RAI) Framework and AI Charter for the Houses of the Oireachtas Service",
+      "issuer": "Houses of the Oireachtas Service / Houses of the Oireachtas Commission; governed by a dedicated AI Programme Board and AI Steering Group; ICT owns delivery",
+      "dates": {
+        "strategic_plan": "10 October 2025 - Strategic Plan 2025-2027, Goal 5.5",
+        "draft_charter_and_policy": "submitted to the Management Board and Commission in Q4 2025",
+        "deployment": "planned for 2026 following formal approval of the AI charter"
+      },
+      "scope": "The Houses of the Oireachtas SERVICE (staff and administration). Use cases developed in 2025: contextual search and summarisation for research; automated first-draft generation of the Journal of Parliamentary Proceedings; agentic legal research; PII identifier. It does NOT govern Members' speeches, parliamentary questions or motions.",
+      "stance": "in_development_risk_based",
+      "operative_quotes": [
+        "Develop and implement a Responsible Artificial Intelligence (AI) Framework for the Houses of the Oireachtas to foster innovation while ensuring safety and security. (Strategic Plan 2025-2027, Goal 5.5)",
+        "Like other parliaments, we will continue to take a risk-based approach to AI (including Generative AI). This involves developing a Responsible AI Framework for the Houses of the Oireachtas taking into consideration our compliance and literacy obligations under the EU Artificial Intelligence Act and the Guidelines for Responsible use of AI in the Public Service.",
+        "A key priority is the development of a Responsible AI Framework and charter. A draft charter and accompanying policy were submitted to the Management Board and Commission in Q4. (Commission Annual Report 2025, published 30 June 2026)",
+        "Deployment of AI in the organisation is planned for 2026 following formal approval of the AI charter."
+      ],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "no",
+      "disclosure_detail": "No disclosure rule found for either staff outputs or Members' material.",
+      "discrepancy_flag": "The Chancellery of the Sejm's EU-wide survey (11 June 2025) lists Ireland among the parliaments with ADOPTED internal AI guidelines, and uniquely reports that Ireland's scope covers 'all staff, i.e. members of parliament, parliamentary staff, employees, contractors...' - broader than any other EU chamber surveyed. The Oireachtas's own 2025-2026 documents describe the charter as still in draft in Q4 2025 with deployment in 2026, and as a Service instrument. These may refer to different documents, or the survey may reflect an earlier or draft instrument. UNRESOLVED - do not assert that Oireachtas AI rules bind TDs without confirming the underlying document.",
+      "speaker_rulings": "No Ceann Comhairle ruling found.",
+      "incidents": "June 2026: Peadar Toibin TD (Aontu, Meath West) tabled a cross-departmental PQ series asking whether departments can identify AI-generated parliamentary questions. PQ 45370/26, answered 16 June 2026 by Simon Harris TD: 'My Department does not have any way of identifying if a Parliamentary Question is AI generated.' Department of Education: 'all PQs are processed in the same way, regardless of how they may have been generated.' No declared AI-written speech in the Dail or Seanad was found.",
+      "not_the_legislature": "Irish Government departmental AI policies are executive-branch and excluded - e.g. the Department of Defence AI Policy 'advises staff not to use generative AI to draft or respond to official [correspondence]' and the Department of Foreign Affairs GenAI Interim Policy says GenAI 'should not be used to respond' to PQs. These bind civil servants answering PQs, NOT members asking them.",
+      "sources": [
+        "https://data.oireachtas.ie/ie/oireachtas/corporate/strategy/2025/2025-10-10_houses-of-the-oireachtas-service-strategic-plan-2025-2027_en.pdf",
+        "https://data.oireachtas.ie/ie/oireachtas/corporate/strategy/2025/2025-10-10_houses-of-the-oireachtas-service-action-plan-2025_en.pdf",
+        "https://data.oireachtas.ie/ie/oireachtas/corporate/reports/2026/2026-06-30_houses-of-the-oireachtas-commission-annual-report-2025_en.pdf",
+        "https://www.kildarestreet.com/wrans/?id=2026-06-16a.624",
+        "https://parleu2025.pl/wp-content/uploads/2025/07/EN_Survey_report_artificial_intelligence_in_the_work_of_eu_national_parliaments_And_the_european_parliament.pdf"
+      ],
+      "confidence": "high on the Service framework; the members-scope question is contested between two sources - flagged"
+    },
+
+    {
+      "chamber": "British Columbia, Legislative Assembly",
+      "jurisdiction": "Canada (province)",
+      "group": 2,
+      "policy_exists": "yes_staff_only",
+      "policy_name": "Policy 5405, Appropriate Use of Information Technology Resources, Version 4, Section 5 'Use of Artificial Intelligence'; with a subsidiary Procedure on the Integration of AI and Guide to Using Generative AI (both unpublished)",
+      "issuer": "Approved by the Clerk of the Legislative Assembly (operational policy); subsidiary instruments amended by the CIO and the Law Clerk and Parliamentary Counsel",
+      "dates": {
+        "policy_5405_v4": "11 February 2026",
+        "members_policy_7410_v1": "7 May 2024 (approved by the Legislative Assembly Management Committee; contains NO AI provisions)",
+        "members_policy_revision_scheduled": "2026-27 work plan, Tier 1 priority, deposited at LAMC 17 March 2026"
+      },
+      "scope": "Policy 5405 applies to 'all employees of the Legislative Assembly appointed under section 39 of the Constitution Act ... and may also apply, in part or in full, to contractors.' It does NOT apply to Members. The parallel Members' policy (7410) is AI-silent.",
+      "stance": "permitted_with_conditions_staff_only",
+      "operative_quotes": [
+        "An employee remains fully responsible for the accuracy, completeness, and appropriateness of all work, whether or not an AI tool was used. (5405 s.5.02)",
+        "Generative AI is a decision-support tool only and must not be used for autonomous decision-making or to generate official records without human review and approval. (5405 s.5.03)",
+        "When using non-public Legislative Assembly information or completing work-related tasks, an employee must only use AI tools that have been approved by ITD ... [and must] disclose when the substantive basis of their content, analysis, or recommendations has been produced by generative AI. (5405 s.5.04(d))",
+        "Update the policy to include the use artificial intelligence (AI) to ensure use of AI by Members, caucuses, and their staff does not create a risk to information security. (LAMC Information Note, 2026-27 Policy Development Work Plan, on Policy 7410)"
+      ],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "no",
+      "disclosure_detail": "BC has the ONLY affirmative AI-disclosure duty found in any Canadian legislature - Policy 5405 s.5.04(d) - but it binds Assembly ADMINISTRATION EMPLOYEES' work product, not Members, not caucus staff, and not the record. Nothing would flag AI-drafted text in BC Hansard.",
+      "speaker_rulings": "None found.",
+      "incidents": "14 March 2024: MLA Adam Olsen (Saanich North and the Islands) read a 300-word ChatGPT-generated statement on regulating AI in elections into the record. His disclosure ('This content was 100 percent generated by ChatGPT') appears in his blog post; the transcript gives no indication he told the House. BC Hansard 2025-02 to 2026-05 (42,473 segments): ChatGPT appears only rhetorically. No point of order.",
+      "sources": [
+        "https://api.lims.leg.bc.ca/pdms/file/Policy/5405-Appropriate-Use-of-Information-Technology-Resources.pdf",
+        "https://api.lims.leg.bc.ca/pdms/file/Policy/7410-Appropriate-Use-of-IT-Resources-Members.pdf",
+        "https://api.lims.leg.bc.ca/pcms/file/21074/LAMC_IN_2026-27_Policy-Dev-Work-Plan_2026-03-17.pdf",
+        "https://adamolsen.ca/2024/03/regulating-artificial-intelligence-in-british-columbia-elections/"
+      ],
+      "confidence": "high - primary policy documents retrieved in full"
+    },
+
+    {
+      "chamber": "Alberta, Legislative Assembly",
+      "jurisdiction": "Canada (province)",
+      "group": 2,
+      "policy_exists": "no_policy_found",
+      "policy_name": null,
+      "issuer": null,
+      "dates": {},
+      "scope": null,
+      "stance": "silent_but_adjudicated",
+      "operative_quotes": [],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "no",
+      "disclosure_detail": "No rule.",
+      "evidence_of_absence": "The consolidated Members' Services Committee Orders (the MSC instrument governing MLA remuneration, allowances, constituency offices and IT) contains ZERO mentions of AI, artificial intelligence, generative, ChatGPT, Copilot or machine learning (full text checked). LAO Annual Reports 2022, 2023 and 2024-25 mention AI only as conference session topics.",
+      "speaker_rulings": "THE ONLY SPEAKER'S RULING ON AI-AUTHORED SPEECHES FOUND ANYWHERE IN SCOPE. Alberta Hansard, 2 December 2025, Point of Order: Insulting Language. Government House Leader Joseph Schow had told independent members to 'consider using their subscription for ChatGPT on doing proper research rather than selecting personal insults'. Opposition House Leader Christina Gray argued the staff-written-speeches precedent should extend to AI: 'I know there is precedent that referring to reading speeches that have been written by staff has absolutely been ruled out. Reading speeches written by ChatGPT strikes me as very much the same thing.' Speaker Nathan Cooper ruled: 'while I have at least some sympathy for the last argument I heard, ChatGPT is not staff. ... It's a matter of debate, but none of it is helpful ... There was enough bad behaviour to go around.' The Speaker DECLINED to extend the staff-authorship doctrine to AI. Follow-on 23 March 2026: Gray raised the same point again; Speaker: 'It doesn't quite reach the stage of a point of order today, but ... please receive this as an admonishment.'",
+      "incidents": "6 May 2025: Mr. Stephan (Red Deer-South) read ChatGPT output into debate with attribution ('This is what ChatGPT said... That's ChatGPT; that's not me'), drawing objections that 'ChatGPT is not a primary source'. On 7 May 2025 he formally tabled it: 'I rise to table the five requisite copies of a ChatGPT analysis, referenced in my speech yesterday' - an AI-generated document entering the tabled-documents record. 9 April 2025, Mr. Ip named the gap: 'As members with constituency offices there may already be staff who are using these tools. How is data being safeguarded and protected, and what are the provisions around the use of artificial intelligence? This piece of legislation does not address that.'",
+      "sources": [
+        "https://www.assembly.ab.ca/docs/default-source/reference/assembly-documents/members_services_orders.pdf",
+        "http://search.assembly.ab.ca/laosearch.html (Alberta Hansard 20251202_1330, 20260323_1330, 20250506_1930, 20250507, 20250409_1330)",
+        "https://www.assembly.ab.ca/about/legislative-assembly-office/reports"
+      ],
+      "confidence": "high"
+    },
+
+    {
+      "chamber": "Saskatchewan, Legislative Assembly",
+      "jurisdiction": "Canada (province)",
+      "group": 2,
+      "policy_exists": "no_policy_found",
+      "policy_name": null,
+      "issuer": null,
+      "dates": {},
+      "scope": null,
+      "stance": "silent",
+      "operative_quotes": [],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "no",
+      "disclosure_detail": "No rule.",
+      "evidence_of_absence": "All 21 published Board of Internal Economy Directives downloaded and full-text grepped: ZERO mentions of AI, artificial intelligence, generative, ChatGPT, Copilot or LLM. This includes Directive 7.3, Caucus Information Technology Resources (adopted 23 February 2004, reprint 1 April 2026), which covers only hardware/software purchase, support and maintenance under a $1,000-per-member caucus IT grant, with no use rules.",
+      "speaker_rulings": "None.",
+      "incidents": "None. Saskatchewan is the only chamber with literally zero hits: 10,111 Hansard segments, 2025-03-19 to 2026-05-14, contain no ChatGPT, no Copilot, no LLM, no 'AI-generated' and no AI-authorship reference of any kind.",
+      "sources": [
+        "https://www.legassembly.sk.ca/mlas/board-of-internal-economy/directives/",
+        "https://www.legassembly.sk.ca/media/0abf4kly/directive-73-caucus-information-technology-resources.pdf"
+      ],
+      "confidence": "high - highest-confidence negative of the eight provinces"
+    },
+
+    {
+      "chamber": "Manitoba, Legislative Assembly",
+      "jurisdiction": "Canada (province)",
+      "group": 2,
+      "policy_exists": "no_policy_found",
+      "policy_name": null,
+      "issuer": null,
+      "dates": {},
+      "scope": null,
+      "stance": "silent",
+      "operative_quotes": [],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "unknown",
+      "disclosure_detail": "No rule found; coverage incomplete.",
+      "coverage_caveat": "PARTIAL. Legislative Assembly Management Commission (LAMC) document pages could not be located on gov.mb.ca; LAMC minutes and the Members' Allowances Regulation were NOT retrieved. Treat the policy finding as unverified rather than established.",
+      "speaker_rulings": "None found.",
+      "incidents": "Hansard 2025-03 to 2026-06 (13,304 segments): the only AI-authorship references are cross-bench taunts by Government House Leader Mr. Wiebe. 5 March 2026: 'the member opposite should know that ChatGPT will write him another question if he just asks it.' 19 March 2026: 'He's out of gas. He's got one question written down by ChatGPT, and that's all he's got, I suppose.' No point of order was raised and no Speaker's ruling followed - unlike Alberta, where near-identical language produced a ruling.",
+      "sources": [],
+      "confidence": "low-medium"
+    },
+
+    {
+      "chamber": "Ontario, Legislative Assembly",
+      "jurisdiction": "Canada (province)",
+      "group": 2,
+      "policy_exists": "no_policy_found",
+      "policy_name": null,
+      "issuer": null,
+      "dates": {},
+      "scope": null,
+      "stance": "silent",
+      "operative_quotes": [],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "no",
+      "disclosure_detail": "No rule found.",
+      "coverage_caveat": "ola.org's search endpoint is Akamai-blocked (403) and the Board of Internal Economy publishes no directives, so absence is inferred from the published record rather than confirmed internally. Site map and Office of the Assembly pages carry no members' policy manual, no IT acceptable-use policy and no AI guidance. No Legislative Library AI guidance found.",
+      "not_the_legislature": "Ontario's Responsible Use of Artificial Intelligence Directive and Trustworthy AI Framework are Ontario Public Service (executive) instruments and do not cover the Legislative Assembly or members' offices. Bill 61, the Ontario Artificial Intelligence, Talent and Innovation Strategy Act 2025, is outward-facing legislation.",
+      "speaker_rulings": "None - notable, because the accusation was made twice and never adjudicated.",
+      "incidents": "29 May 2025, Government House Leader Steve Clark: 'I think I learned last night that they bought an application, ChatGPT Pro, because I think 90% of their speeches came right out of ChatGPT.' Rebutted 2 June 2025 by Adil Shamji: 'I want to reflect on how interesting it is to hear him speaking and complaining about ChatGPT, given how much we hear the government members read what is just handed to them by their staffers.' No point of order, no ruling. 11 December 2025: a dispute over a government intimate-partner-violence report the NDP alleged was AI-written; Minister Charmaine Williams countered that 'the same tool that they use says that their press releases were written by AI'; MPP Lisa Gretzky alleged 'AI hallucinations, signed off by a government'. Again no ruling.",
+      "sources": [
+        "https://www.ola.org/en/site-map",
+        "https://www.ola.org/en/office-assembly",
+        "https://www.ontario.ca/page/responsible-use-artificial-intelligence-directive"
+      ],
+      "confidence": "medium"
+    },
+
+    {
+      "chamber": "Nova Scotia, House of Assembly",
+      "jurisdiction": "Canada (province)",
+      "group": 2,
+      "policy_exists": "no_policy_found",
+      "policy_name": null,
+      "issuer": null,
+      "dates": {},
+      "scope": null,
+      "stance": "silent",
+      "operative_quotes": [],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "no",
+      "disclosure_detail": "No rule.",
+      "evidence_of_absence": "The House of Assembly Management Commission's complete published policy set is two documents (Political Activity and Impartiality Policy 2023-01; Harassment Prevention and Resolution Policy) - neither mentions AI. The HAMC Annotated Regulations (effective 2026-05), the members' resources and expenses instrument, contain no AI/generative/ChatGPT/Copilot. HAMC minutes for 14 Jan 2026, 22 Oct 2025, 19 Mar 2025, 29 Jan 2025 and 22 May 2024: no AI mentions. No legislative-library AI guidance found.",
+      "speaker_rulings": "None.",
+      "incidents": "Hansard 2025-02 to 2026-04 (10,532 segments): two incidental ChatGPT references, both rhetorical. No rulings, no challenges, no debate about member AI use.",
+      "sources": [
+        "https://nslegislature.ca/members/governance-and-accountability/house-of-assembly-management-commission/policies",
+        "https://nslegislature.ca/sites/default/files/pdfs/committees/hamc/docs/hamc-regulations-annotated.pdf"
+      ],
+      "confidence": "high"
+    },
+
+    {
+      "chamber": "Newfoundland and Labrador, House of Assembly",
+      "jurisdiction": "Canada (province)",
+      "group": 2,
+      "policy_exists": "no_policy_found",
+      "policy_name": null,
+      "issuer": null,
+      "dates": {},
+      "scope": null,
+      "stance": "silent",
+      "operative_quotes": [],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "no",
+      "disclosure_detail": "No rule.",
+      "evidence_of_absence": "The House's complete published Policies and Guidelines list (25 instruments) contains no AI, IT-acceptable-use or technology-use policy; the closest are 2016 phone-services policies and a 2009 records-management policy. The Members' Guide to Resources and Allowances and the Members' Parliamentary Guide contain zero AI mentions. House of Assembly Management Commission agendas, minutes and briefing materials for 2024-25, 2025-26 and 2026-27 (28 documents, ~125k words, including verbatim transcripts of the 2025-12-09, 2026-03-30 and 2026-06-17 meetings) contain zero AI mentions. Caveat: six older minutes PDFs are image scans with no extractable text.",
+      "not_the_legislature": "Minister Sarah Stoodley, 13 May 2025, described a new Treasury Board AI policy and AI training for public servants plus a Microsoft AI tool for public servants - the NL PUBLIC SERVICE, not the House or MHA offices.",
+      "speaker_rulings": "None.",
+      "incidents": "21-22 April 2026: B. Ford challenged the Minister of Tourism, Culture and Arts over a photo posted of herself in front of The Rooms that 'was either AI generated or doctored', with the Royal Newfoundland and Labrador Regiment caribou artwork removed and replaced by an unknown logo. Ford, 22 April: 'A day later, when asked, she said she didn't know what I was talking about. Later, in the media, she admitted she used ChatGPT to create it.' Same day, L. Parrott referred to 'AI-generated reports that were incredibly wrong'. Fought out in Question Period as political accountability - no Speaker's ruling, no procedural consequence, no disclosure rule.",
+      "sources": [
+        "https://assembly.nl.ca/About/PoliciesGuidelines/",
+        "https://assembly.nl.ca/pdfs/MembersGuideToResourcesAndAllowances.pdf",
+        "https://assembly.nl.ca/ManComm/Meetings/"
+      ],
+      "confidence": "high"
+    },
+
+    {
+      "chamber": "Prince Edward Island, Legislative Assembly",
+      "jurisdiction": "Canada (province)",
+      "group": 2,
+      "policy_exists": "no_policy_found",
+      "policy_name": null,
+      "issuer": null,
+      "dates": {},
+      "scope": null,
+      "stance": "silent",
+      "operative_quotes": [],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "unknown",
+      "disclosure_detail": "No rule found; coverage incomplete.",
+      "coverage_caveat": "PARTIAL. assembly.pe.ca is behind a Radware bot-management captcha and the Legislative Management Committee page returned 404; committee documents were NOT retrieved. Treat as unverified.",
+      "not_the_legislature": "Standing committee, 7 November 2025, Hon. J. Burridge: 'Now with government you have Copilot, which is basically like another version of ChatGPT. That's being integrated. On the operational side, we're hiring staff on the AI side to kind of lead this for Prince Edward Island.' This is the PEI public service Microsoft/Copilot rollout.",
+      "speaker_rulings": "None.",
+      "incidents": "None. Hansard 2025-03 to 2026-05 (24,425 segments): all AI/Copilot references are executive-branch IT procurement discussed in committee.",
+      "sources": [],
+      "confidence": "low-medium"
+    },
+
+    {
+      "chamber": "New South Wales, Parliament (Legislative Assembly + Legislative Council)",
+      "jurisdiction": "Australia (state)",
+      "group": 3,
+      "policy_exists": "no_policy_found",
+      "policy_name": null,
+      "issuer": null,
+      "dates": {},
+      "scope": null,
+      "stance": "silent",
+      "operative_quotes": [
+        "AI group - the Strategic Planning and Cyber Security teams initiated an Artificial Intelligence Interest Group to increase transparency on AI usage, share knowledge, and guide best practices aligned with cybersecurity advice. (NSW DPS Annual Report 2024-25 - an interest group, not a policy)"
+      ],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "no",
+      "disclosure_detail": "No rule. Nothing addressed to members, speeches, questions, motions or committee work.",
+      "evidence_of_absence": "Full sitemap crawl (1,000 URLs) found no AI policy page; the reviews-and-reports page lists only Broderick-review documents; DPS Annual Report 2024-25 and Legislative Council Annual Report 2025 grepped in full.",
+      "ai_in_the_record": "Hansard has adopted AI in production: 'the team has incorporated artificial intelligence and automated speech recognition to their work' (Editor of Debates, ANZACATT, Wellington, January 2025). Relevant to transcript provenance for S10.",
+      "not_the_legislature": "Digital NSW's NSW AI Assessment Framework and NSW AI Policy bind NSW Government agencies, not the Parliament or members.",
+      "speaker_rulings": "None found.",
+      "incidents": "None at state level. NSW's PFAS-in-waterways inquiry received a Rainforest Reserves Australia submission containing AI-fabricated citations (see incidents section).",
+      "sources": [
+        "https://www.parliament.nsw.gov.au/_media/documents/about/annual-reports/dps-annual-report-2025.pdf",
+        "https://www.parliament.nsw.gov.au/_media/documents/lc/annual-reports/24-25-legislative-council-annual-report.pdf",
+        "https://www.digital.nsw.gov.au/policy/artificial-intelligence"
+      ],
+      "confidence": "medium-high"
+    },
+
+    {
+      "chamber": "Victoria, Parliament (Legislative Assembly + Legislative Council)",
+      "jurisdiction": "Australia (state)",
+      "group": 3,
+      "policy_exists": "no_policy_found",
+      "policy_name": null,
+      "issuer": null,
+      "dates": {},
+      "scope": null,
+      "stance": "silent",
+      "operative_quotes": [
+        "Members of parliament are embracing Artificial Intelligence but are also paying attention to some of its broader implications. (Parliament of Victoria, 'Future forward, but user beware', 3 October 2025 - an article about members using AI that cites no parliamentary rule at all)"
+      ],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "no",
+      "disclosure_detail": "No rule.",
+      "evidence_of_absence": "The Victorian Department of Parliamentary Services Annual Report 2024-25 (tabled paper 9507) contains ZERO occurrences of 'AI', 'artificial intelligence', 'generative', 'Copilot' or 'ChatGPT' across the entire document (~363 KB extracted text; extraction verified against control terms). Members of Parliament (Victoria) Guidelines No. 01/2025 (Victorian Independent Remuneration Tribunal, 10 October 2025, updated 11 November 2025): no AI mentions.",
+      "members_using_ai": "Named in Parliament's own October 2025 article: Richard Welch MLC - 'In politics, everyone is using it, and everyone is finding a productivity from it'; David Limbrick MLC - 'utilises AI along with his team in their work for parliament, including as a tool for research, summarising documents and planning', and 'It still needs human oversight... I wouldn't want to rely on it exclusively'; Paul Hamer MLA - 'exploring it as a tool for research'.",
+      "not_the_legislature": "Government Services Minister Natalie Hutchins (May 2025, answering Limbrick in the LC) confirmed DGS 'has developed a Victorian-specific assurance framework based on the national framework' used to assess Microsoft Copilot pilots 'within the Victorian Public Service'. The VPS is not the Parliament.",
+      "speaker_rulings": "None found.",
+      "incidents": "None at state level.",
+      "sources": [
+        "https://www.parliament.vic.gov.au/4ab1c4/globalassets/tabled-paper-documents/tabled-paper-9507/dps-2024-25-annual-report.pdf",
+        "https://www.parliament.vic.gov.au/news/society/future-forward/",
+        "https://www.remunerationtribunal.vic.gov.au/members-of-parliament-victoria-guidelines-no-01-2025"
+      ],
+      "confidence": "high - unusually strong negative evidence"
+    },
+
+    {
+      "chamber": "Queensland, Legislative Assembly (unicameral)",
+      "jurisdiction": "Australia (state)",
+      "group": 3,
+      "policy_exists": "yes_staff_only",
+      "policy_name": "Parliamentary Service Artificial Intelligence Policy, plus supplementary Artificial Intelligence Guidelines, plus Digital Strategy 2026-2030",
+      "issuer": "Queensland Parliamentary Service; disclosed by the Speaker, Hon. Pat Weir MP, in Responses to Questions on Notice, Estimates 2026, Governance, Energy and Finance Committee, 17 July 2026 (QoN 6)",
+      "dates": {
+        "ai_policy_implemented": "December 2025",
+        "ai_policy_reviewed_and_updated": "June 2026",
+        "digital_strategy": "May 2026"
+      },
+      "scope": "The Parliamentary Service - the parliamentary administration and its staff. In Queensland electorate-office staff are employed under the Parliamentary Service Act 1988, so they are plausibly in scope, but the Speaker's answer does not say so. MEMBERS are not mentioned, and nothing addresses speeches, questions on notice, motions or committee work. The Members' Remuneration Handbook and the Speaker's Financial Guidelines both contain ZERO AI mentions.",
+      "stance": "permitted_with_conditions_staff_only",
+      "operative_quotes": [
+        "The Digital Strategy 2026-2030 (released in May 2026) together with the Artificial Intelligence Policy and Guidelines (released in December 2025) help guide and manage the adoption of artificial intelligence (AI) in the Parliamentary Service.",
+        "In addition, the Parliamentary Service implemented an Artificial Intelligence Policy in December 2025 and has reviewed and updated the policy in June 2026. The policy establishes a framework for the use of AI across the Parliamentary Service and is based on principles of safe and responsible use, accountability, transparency and capability building. The policy includes requirements for the use of approved AI tools, information security and confidentiality, validation of AI-generated outputs, and clear accountability for decisions and work products supported by AI.",
+        "The Parliamentary Service has developed Artificial Intelligence Guidelines to supplement the policy that provide practical guidance on the responsible use of AI, including how AI tools work, key risks, and strategies to support their safe, ethical and effective use.",
+        "These initiatives include regular AI-focused innovation updates at all General Staff Meetings, Microsoft Copilot training, a compulsory online learning module based on the Parliamentary Service AI Policy and Guidelines, and an Innovation Community of Practice to support staff in adopting innovative technologies, including AI agents."
+      ],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "no",
+      "disclosure_detail": "The policy carries a general transparency principle and a strategy action to 'promote transparency in how AI is used', but nothing that would flag AI-drafted text in Hansard.",
+      "policy_text_status": "exists_text_not_retrieved - the policy and guidelines are not published at any public URL located. Content above is quoted from the Speaker's own estimates answer.",
+      "governance": "Executive Leadership Team oversight; ITS technical security assessments; standing agenda item on innovation and AI; aligned to the Queensland Audit Office Checklist for Managing Ethical Risks in Artificial Intelligence; annual policy review; baseline assessment with 12-month reassessment. Benchmarks against other Westminster parliaments via ANZPIT and a 2025 seminar run by the Canadian House of Commons.",
+      "speaker_rulings": "None found.",
+      "incidents": "None at state level.",
+      "sources": [
+        "https://documents.parliament.qld.gov.au/com/GEFC-11EE/C202627-CA28/260717%20-%20Hon%20Pat%20Weir%20MP%20-%20Responses%20to%20Questions%20on%20Notice.pdf",
+        "https://documents.parliament.qld.gov.au/Members/entitlements/Remuneration%20Handbook.pdf",
+        "https://www.parliament.qld.gov.au/-/media/Annual-Report-2024-25/2024-25AnnualReport.pdf"
+      ],
+      "confidence": "high on existence, dates and content summary (primary, from the Speaker); the policy document itself was not retrieved"
+    },
+
+    {
+      "chamber": "Western Australia, Parliament (Legislative Assembly + Legislative Council)",
+      "jurisdiction": "Australia (state)",
+      "group": 3,
+      "policy_exists": "no_policy_found",
+      "policy_name": null,
+      "issuer": null,
+      "dates": {"parliamentary_portal_launch": "April 2025"},
+      "scope": null,
+      "stance": "silent_but_ai_deployed_to_members",
+      "operative_quotes": [
+        "[The Parliamentary Portal Member Dashboard allows members to] prompt a private AI Parliamentary Assistant to answer general member queries. (Parliamentary Services Department Annual Report 2024-25)",
+        "Automatic speech recognition has been introduced for the first take of Hansard."
+      ],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "no",
+      "disclosure_detail": "No rule.",
+      "notable": "WA has deployed an AI tool directly to members (a private AI Parliamentary Assistant, April 2025) without publishing any rule governing members' AI use. 'Artificial intelligence' appears exactly once in the entire annual report. The three parliamentary departments approved a Policy Management Policy in August 2024 to standardise Parliament's policies; no AI policy is named among the outputs.",
+      "speaker_rulings": "None found.",
+      "incidents": "None at state level.",
+      "sources": [
+        "https://parlwa.public.parliament.io/WebCMS/WebCMS.nsf/resources/file-psd-annual-report-2024-25/$file/Parliamentary%20Services%20Department%20Annual%20Report%202024-25.pdf"
+      ],
+      "confidence": "medium-high"
+    },
+
+    {
+      "chamber": "South Australia, Parliament (House of Assembly + Legislative Council)",
+      "jurisdiction": "Australia (state)",
+      "group": 3,
+      "policy_exists": "no_policy_found",
+      "policy_name": null,
+      "issuer": null,
+      "dates": {},
+      "scope": null,
+      "stance": "silent",
+      "operative_quotes": [],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "unknown",
+      "disclosure_detail": "No rule found; coverage weakest of the six states.",
+      "coverage_caveat": "LOW CONFIDENCE. SA Parliament has the thinnest web presence of the six: its site search is JavaScript-driven and returns nothing to automated fetches, and the Joint Parliamentary Service annual report is not published at a retrievable URL. An internal policy could exist unpublished.",
+      "what_exists": "AI appears on the SA Parliament site only as a subject: the Select Committee on Artificial Intelligence (established July 2023) and AI-related debates.",
+      "speaker_rulings": "None found.",
+      "incidents": "None at state level.",
+      "sources": [
+        "https://www.parliament.sa.gov.au/en/News/2023/07/11/03/37/Select-Committee-on-Artificial-Intelligence"
+      ],
+      "confidence": "low"
+    },
+
+    {
+      "chamber": "Tasmania, Parliament (House of Assembly + Legislative Council)",
+      "jurisdiction": "Australia (state)",
+      "group": 3,
+      "policy_exists": "no_policy_found",
+      "policy_name": null,
+      "issuer": null,
+      "dates": {},
+      "scope": null,
+      "stance": "silent",
+      "operative_quotes": [
+        "This guidance is for agencies to ensure a consistent approach to the use of artificial intelligence by the Tasmanian Government. (Dept of Premier and Cabinet - AGENCIES, not the Parliament)"
+      ],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "unknown",
+      "disclosure_detail": "No rule found.",
+      "not_the_legislature": "The only AI instrument is 'Guidance for the use of artificial intelligence in Tasmanian Government', issued by the Department of Premier and Cabinet, binding agencies. This is the clearest case in scope of an executive instrument being mistaken for a parliamentary one.",
+      "coverage_caveat": "parliament.tas.gov.au sits behind Cloudflare and refused all automated fetches; this rests on indexed content rather than direct site inspection.",
+      "speaker_rulings": "None found.",
+      "incidents": "None at state level.",
+      "sources": [
+        "https://www.dpac.tas.gov.au/__data/assets/pdf_file/0024/420468/FINAL-AI-OPP-1.1.pdf"
+      ],
+      "confidence": "low-medium"
+    },
+
+    {
+      "chamber": "Australian Parliament (House of Representatives + Senate) - BONUS COMPARATOR",
+      "jurisdiction": "Australia (federal)",
+      "group": "bonus",
+      "policy_exists": "yes_members_and_staff",
+      "policy_name": "DPS AI Transparency Statement",
+      "issuer": "Department of Parliamentary Services, ICT service provider to the Parliament, the parliamentary departments and the Parliamentary Workplace Support Service; DPS CIO appointed accountable official 30 September 2024",
+      "dates": {"last_updated": "13 February 2026", "review": "annual", "accountable_official_appointed": "30 September 2024"},
+      "scope": "Explicitly includes parliamentarians and their staff: 'AI fundamentals training has been made available to the staff of the parliamentary departments, parliamentarians and their staff and the PWSS.' The CIO is accountable for 'driving engagement with AI training by DPS staff and within Parliamentarian's offices.' ICT-governance and security framing, not speech-content regulation.",
+      "stance": "permitted_with_registration_and_approval",
+      "operative_quotes": [
+        "Any users of Parliamentary ICT resources that wish to adopt and use AI are required to: report new AI use cases or requests to use AI to DPS ICT service desk; notify DPS ICT and following departmental approval and change management processes before using AI; undertake testing to evaluate whether AI is suitable for the intended use case; monitor and assess the value and effectiveness of adopted AI solutions against their use case, and adjust as necessary; maintain legal and regulatory compliance; report unintended outcomes, faults or negative impacts from AI use to DPS ICT service desk, and report if sensitive information is inadvertently entered into generative AI tools or services to DPS Cyber Security.",
+        "DPS has configured a caution splash screen to remind users to consider the relevant DTA AI guidance when using public generative AI tools.",
+        "DPS will ensure it is obvious to individuals if: they are interacting with an AI system, such as an AI chatbot, or the content is completely AI produced, without human review."
+      ],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "no",
+      "disclosure_detail": "The transparency obligation is DPS's own (labelling AI chatbots and wholly-AI-produced content it publishes), not a member's obligation to flag an AI-drafted speech.",
+      "governance": "Shared-responsibility model run by a cross-departmental AI working group coordinated by DPS ICT, maintaining 'a central register of AI use cases for the Parliament'; compliance with the DTA Policy for the responsible use of AI in government; DTA AI impact assessment tool.",
+      "speaker_rulings": "None found.",
+      "incidents": "Feb 2023: Julian Hill MP and Aaron Violi MP delivered part-ChatGPT-written speeches in the House of Representatives to illustrate the technology. 9 May 2023: Senator Jacqui Lambie closed a speech 'This speech was 100 per cent written by artificial intelligence.' Senator Ross Cadell delivered a 514-word ChatGPT-written speech about the dangers of AI. Andrew Leigh, Allegra Spender and Jerome Laxale also experimented Feb-Jun 2023. See also the committee-submission incidents below.",
+      "sources": [
+        "https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Department_of_Parliamentary_Services/Publications/AI_Transparency_Statement",
+        "https://www.aph.gov.au/-/media/05_About_Parliament/54_Parliamentary_Depts/543_DPS/Publication/AR_24-25/DPS_Annual_Report_2024-25.pdf"
+      ],
+      "confidence": "high - published primary document"
+    },
+
+    {
+      "chamber": "New Zealand Parliament - BONUS COMPARATOR",
+      "jurisdiction": "New Zealand",
+      "group": "bonus",
+      "policy_exists": "yes_text_not_retrieved",
+      "policy_name": "Parliamentary Service guidance to MPs on AI tools (not public)",
+      "issuer": "New Zealand Parliamentary Service",
+      "dates": {"evidenced": "DPMC OIA response, May 2026"},
+      "scope": "Members of Parliament. Permissive.",
+      "stance": "permitted_with_preferred_tool",
+      "operative_quotes": [
+        "During consultation, the Parliamentary Service advised DPMC that it provides guidance to Members of Parliament (MPs)... on the AI tools they can use, but that MPs are free to use other AI tools. The Parliamentary Service also noted it provides Microsoft Copilot to MPs as a preferred tool."
+      ],
+      "covers_speeches_explicitly": false,
+      "disclosure_required": "no",
+      "disclosure_detail": "None found. The Parliamentary Service is not subject to the OIA, so the guidance text itself was refused under s18(g).",
+      "incidents": "February 2026: Finance Minister Nicola Willis derided Chris Hipkins' state-of-the-nation address as something 'ChatGPT could have written'; when an AI detector then flagged her own speech, she said Microsoft Copilot was used to check phrasing and grammar, not to write content. RELEVANT TO S10 METHODOLOGY: a major outlet ran a detector on a NZ political speech and the resulting dispute turned on exactly the 'detectors guess from patterns, they don't prove authorship' objection; there is an NZ Media Council ruling on the Stuff article. March 2026: Newsroom obtained ministers' genAI chat logs under the OIA - only four ministers said they had used AI in an official capacity, one released logs (Erica Stanford's ChatGPT log for a speech). Reported ministerial uses include speechwriting, proofreading, research, drafting questions to officials, and correspondence drafts.",
+      "sources": [
+        "https://www.dpmc.govt.nz/sites/default/files/2026-05/dpmc-roia-oia-2025-26-0497.pdf",
+        "https://newsroom.co.nz/2026/03/06/how-ministers-use-ai/",
+        "https://www.mediacouncil.org.nz/rulings/trev-garrett-against-stuff/"
+      ],
+      "confidence": "medium - existence confirmed by an official OIA response; text withheld"
+    }
+  ],
+
+  "comparative_sources": [
+    {
+      "name": "IPU World e-Parliament Report 2024",
+      "date": "October 2024 (data collected October 2023 - January 2024)",
+      "sample": "115 parliaments and chambers from 86 countries, plus the European Parliament and Pan-African Parliament",
+      "key_numbers": {
+        "regulations_set_out_in_law": {"yes": "11%", "planned": "28%", "no": "57%"},
+        "parliament_has_internal_procedures_or_regulations": {"yes": "14%", "planned": "28%", "no": "53%"},
+        "ai_usage_considered_per_project": {"yes": "39%", "planned": "24%", "no": "31%"},
+        "both_law_and_internal_procedures": "7%",
+        "parliaments_using_AI_in_some_form": "29% in 2024 (10% in 2020, 1% in 2016)"
+      },
+      "quotes": [
+        "Only 11% of parliaments are bound by laws regarding the use of AI and just 14% have internal procedures or regulations on this subject.",
+        "A mere 7% of parliaments have holistic legislation and internal regulations to manage AI deployment responsibly.",
+        "Given the potential impact of GenAI... the lack of governance and regulation is an aspect that must be addressed sooner rather than later."
+      ],
+      "limitation": "Aggregate percentages only. No named table of which parliaments have AI policies.",
+      "url": "https://www.ipu.org/resources/publications/reports/2024-10/world-e-parliament-report-2024",
+      "note_2026_edition": "No 2026 edition found. Treat as not found, not as non-existent."
+    },
+    {
+      "name": "IPU Guidelines for AI in parliaments",
+      "date": "December 2024",
+      "issuer": "IPU Centre for Innovation in Parliament, Parliamentary Data Science Hub; from an April 2024 expert panel convened in Brasilia by the Chamber of Deputies of Brazil",
+      "content": "15 guideline modules (role of AI, risks, alignment with frameworks, inter-parliamentary cooperation, strategy/governance, ethical principles, data and AI literacy, portfolio management, data governance, security, risk, systems development), plus a companion 'Use cases for AI in parliaments'.",
+      "contributing_chambers": ["Chamber of Deputies of Brazil", "European Parliament", "Chamber of Deputies and Senate of Spain", "National Assembly of Angola", "Chamber of Deputies of Chile", "Chamber of Deputies of Italy", "House of Commons of Canada", "Parliament of Norway", "Parliament of South Africa", "Parliament of Austria", "Senate of the Netherlands"],
+      "url": "https://www.ipu.org/ai-guidelines",
+      "do_not_conflate_with": "A separate document, also 2024: 'Guidelines for AI in Parliaments', eds. Fotios Fitsilis (Hellenic Parliament), Jorn von Lucke (Zeppelin University), Franklin De Vrieze (Westminster Foundation for Democracy), July 2024 - https://www.wfd.org/sites/default/files/2024-07/wfd-ai-guidelines-for-parliaments-2024-english.pdf"
+    },
+    {
+      "name": "Chancellery of the Sejm / Polish EU Presidency survey - the best named-parliament table that exists",
+      "full_title": "Artificial Intelligence in the Work of EU National Parliaments and the European Parliament - Survey report, Marzena Laskowska PhD, Bureau of Research, Chancellery of the Sejm",
+      "date": "11 June 2025",
+      "sample": "all 39 EU national chambers + European Parliament; 34 completed questionnaires",
+      "adopted_or_drafted_internal_AI_acts": ["Austria", "Belgium (Kamer/Chambre and Senat/Senaat, joint)", "Czechia (Poslanecka snemovna)", "Finland (Eduskunta)", "Germany (Bundestag)", "Ireland (Oireachtas)", "Luxembourg (Chambre des Deputes)", "Italy (Camera dei Deputati)", "European Parliament"],
+      "work_in_progress": ["Denmark", "Estonia", "France (AN, Senat)", "Spain (Senado)", "Netherlands (Eerste Kamer, Tweede Kamer)", "Lithuania", "Latvia", "Slovenia (Drzavni zbor)", "Sweden", "Hungary", "Italy (Senato)", "Poland (Sejm)"],
+      "quotes": [
+        "Parliaments/Chambers that do not have such regulations or are not working on establishing them remain in a clear minority (10 out of 34).",
+        "the vast majority of parliamentary administrations (21 out of 34) have yet to establish an AI strategy or initiate work on one."
+      ],
+      "content_analysis_of_9_retrieved_guidelines": "8/9 have a preamble; 6/9 define AI; 9/9 flag risks; 5/9 assign responsibility to the individual user; 4/9 REQUIRE AN 'AI-ASSISTED' DISCLAIMER on significantly AI-generated output; 5/9 give operational do/don't lists; 9/9 cross-refer to the AI Act/GDPR; 5/9 have a review clause; 5/9 mandate staff training.",
+      "scope_finding": "Scope is almost always STAFF, not members - except Ireland, whose guidelines are reported to apply to 'all staff, i.e. members of parliament, parliamentary staff, employees, contractors...'. Austria, Germany, Italy and the EP address administration staff only.",
+      "restrictions": "Only 5 chambers exclude specific AI tasks (Belgium Senat, Czech Poslanecka snemovna, Denmark Folketinget, Netherlands Tweede Kamer, Ireland Oireachtas). Belgium's Senat and Denmark's Folketinget specifically bar DeepSeek on geopolitical/security grounds. Six chambers say staff use of public AI tools is unacceptable: Czech Senat, French Senat, German Bundesrat, Cyprus, Finland, Ireland.",
+      "ai_in_practice": "27 of 34 have implemented AI; the dominant use is transcription of plenary proceedings (27 chambers), then committee transcription (14). The European Parliament reported 13 distinct AI tasks.",
+      "url": "https://parleu2025.pl/wp-content/uploads/2025/07/EN_Survey_report_artificial_intelligence_in_the_work_of_eu_national_parliaments_And_the_european_parliament.pdf"
+    },
+    {
+      "name": "NCSL surveys of US state legislatures",
+      "2025": "Spring 2025, 68 responses from staff in 35 states, Puerto Rico and the USVI. '44% of respondents indicated that they are currently using generative AI tools for legislative work, nearly twice as many as reported doing so the previous year.' NO LEGISLATURE REPORTED PROHIBITING AI USE IN 2025, VERSUS FOUR IN 2024. NCSL notes 'many legislatures have not yet adopted policies or guidance.'",
+      "2024": "79 responses from staff in 40 states, DC and Puerto Rico; staff from 12 states said their office has an AI policy. States not named.",
+      "urls": [
+        "https://www.ncsl.org/center-for-legislative-strengthening/legislative-use-of-artificial-intelligence-2025-survey",
+        "https://www.ncsl.org/center-for-legislative-strengthening/legislative-use-of-artificial-intelligence-2024-survey"
+      ]
+    },
+    {
+      "name": "ParlAmericas",
+      "finding": "Has a Digital Caucus (est. 2023) and a Digital Governance and AI programme, but NO survey of legislatures' internal AI policies was located.",
+      "url": "https://www.parlamericas.org/digital-governance-and-ai/"
+    },
+    {
+      "name": "Bussola Tech / ASGP",
+      "finding": "'Key Considerations of Artificial Intelligence in Parliaments', produced with the ASGP, the OAS, Socatt Africa and the Hellenic OCR Team. Named contributing parliaments include Estonia, Canada (House of Commons), Brazil, Chile, US House of Representatives, Greece, Uruguay, the European Parliament and Suriname. Closest ASGP-linked collation.",
+      "url": "https://www.bussola-tech.co/key-consideration-ai-parliament"
+    }
+  ],
+
+  "incidents_register": {
+    "declared_ai_written_speeches": [
+      {"who": "Dr Luke Evans MP (Con, Bosworth)", "chamber": "UK House of Commons", "date": "20 December 2022", "detail": "Christmas Adjournment debate; ChatGPT-written 'Churchillian' speech; 'I think this may be a first'. Kevin Brennan MP intervened: 'Did he write that himself or was it written by artificial intelligence?'", "consequence": "none", "verified": true},
+      {"who": "Rep. Jake Auchincloss (D-MA-04)", "chamber": "US House of Representatives", "date": "25-26 January 2023", "detail": "Two-paragraph ChatGPT speech for the US-Israel Artificial Intelligence Center Act; AP reported it as the first AI-written speech read in Congress.", "consequence": "none", "verified": true},
+      {"who": "Julian Hill MP (ALP) and Aaron Violi MP (Lib)", "chamber": "Australian House of Representatives", "date": "early February 2023", "detail": "Speeches partly written by ChatGPT, delivered to illustrate the technology.", "consequence": "none", "verified": true},
+      {"who": "Senator Jacqui Lambie", "chamber": "Australian Senate", "date": "9 May 2023", "detail": "'This speech was 100 per cent written by artificial intelligence.' Senator Ross Cadell also delivered a 514-word ChatGPT speech about the dangers of AI.", "consequence": "none", "verified": true},
+      {"who": "Tom Giffard MS (Con, South Wales West)", "chamber": "Senedd Cymru", "date": "20-21 June 2023", "detail": "90-second ChatGPT-written statement on the World Cup of Darts; one false claim edited out; source revealed at the end. First known use in the Senedd chamber.", "consequence": "none", "verified": true},
+      {"who": "MLA Adam Olsen", "chamber": "BC Legislative Assembly", "date": "14 March 2024", "detail": "300-word ChatGPT statement on regulating AI in elections read into the record. Disclosure appears in his blog; the transcript gives no indication he told the House.", "consequence": "none", "verified": true},
+      {"who": "Mr. Stephan MLA (Red Deer-South)", "chamber": "Alberta Legislative Assembly", "date": "6-7 May 2025", "detail": "Read ChatGPT output into debate with attribution, then formally tabled it: 'I rise to table the five requisite copies of a ChatGPT analysis, referenced in my speech yesterday.' Objections that 'ChatGPT is not a primary source' were made in debate, not as a point of order.", "consequence": "none", "verified": true}
+    ],
+    "undeclared_ai_text_discovered": [
+      {"who": "Bill Oliver MLA (PC)", "chamber": "New Brunswick Legislative Assembly (not in the S10 corpus)", "date": "speech 9 June 2026; surfaced c. 25-28 July 2026", "detail": "Read AI prompt residue aloud mid-speech, more than once, e.g. 'Here's a more natural flowing version of that section that reads like a legislative speech rather than a series of short points.' Per Global News, 'no one else in the legislature appeared to notice or react.' Surfaced weeks later via Reddit; clips viewed millions of times. He later apologised.", "consequence": "no Speaker intervention; political embarrassment only", "verified": true, "note": "The single most important incident for S10's premise: undeclared AI-drafted text passed through a Canadian chamber and into Hansard unremarked. The 9 June date comes from Global News and is worth pinning against NB Hansard before citing."}
+    ],
+    "accusations_without_adjudication": [
+      {"chamber": "Ontario Legislative Assembly", "date": "29 May and 2 June 2025", "detail": "Government House Leader Steve Clark: 'I think 90% of their speeches came right out of ChatGPT.' Rebutted by Adil Shamji. No point of order, no ruling."},
+      {"chamber": "Ontario Legislative Assembly", "date": "11 December 2025", "detail": "NDP alleged a government intimate-partner-violence report was AI-written; Minister Charmaine Williams countered that the NDP's own press releases test as AI; MPP Lisa Gretzky alleged 'AI hallucinations, signed off by a government'. No ruling."},
+      {"chamber": "Manitoba Legislative Assembly", "date": "5 and 19 March 2026", "detail": "Government House Leader Wiebe: 'ChatGPT will write him another question if he just asks it'; 'He's got one question written down by ChatGPT.' No point of order, no ruling."},
+      {"chamber": "NL House of Assembly", "date": "21-22 April 2026", "detail": "B. Ford challenged a Minister over an AI-generated or doctored photo; the Minister later admitted using ChatGPT to create it. Question Period accountability only; no ruling."},
+      {"chamber": "UK House of Commons", "date": "August-September 2025", "detail": "The 'I rise to speak' affair: Mike Reader MP identified the phrase as an LLM tell; Tom Tugendhat MP publicly attacked colleagues. Press and floor grumbling; no points of order or rulings."}
+    ],
+    "speaker_rulings": [
+      {"chamber": "Alberta Legislative Assembly", "date": "2 December 2025", "speaker": "Nathan Cooper", "holding": "'ChatGPT is not staff.' Declined to extend the precedent against alleging staff-written speeches to allegations of AI-written speeches; treated the exchange as a matter of debate. Reinforced 23 March 2026 with an admonishment but again no point of order.", "significance": "The only Speaker's ruling on AI-authored speeches found anywhere in scope, and it is permissive."}
+    ],
+    "hallucinated_citations_in_committee_material": [
+      {"jurisdiction": "Australia (Commonwealth)", "date": "October-November 2023", "detail": "Accounting academics led by Emeritus Professor James Guthrie submitted case studies to the parliamentary inquiry into consulting firms containing false allegations against Deloitte, KPMG, PwC and EY, generated by Google Bard. Guthrie apologised unreservedly to the Senate; KPMG formally complained. AI Incident Database Incident 614."},
+      {"jurisdiction": "Australia (Commonwealth)", "date": "reported at Senate estimates, 28 May 2024", "detail": "A joint committee published, then had to unwind, a submission containing AI-drafted inaccuracies. Senator Richard Colbeck: 'a submission being made using AI that turned out to have false information... My concern is the submission was received, published under parliamentary privilege and a party then has to go through a process saying, None of this happened.' Clerk of the Senate Richard Pye: contents 'seemed plausible'; no routine diagnostic tools to detect AI-generated submissions; but 'we should be cautious about dismissing products that are generated with the assistance of AI out of hand... This is a facilitative technology.' The committee and submission are not named in the reporting."},
+      {"jurisdiction": "Australia (Commonwealth Senate + NSW Parliament)", "date": "reported 17 October 2025", "detail": "Rainforest Reserves Australia made submissions with fabricated citations to the Senate inquiry on climate/energy misinformation, a Senate PFAS inquiry, and a NSW parliamentary inquiry into PFAS in waterways. Its submission writer admitted using AI on 100+ submissions since August 2024. Prof Naomi Oreskes: 'the passage cites my work in a way that is 100% misleading.'"}
+    ],
+    "not_found": [
+      "Any chamber that bans or restricts AI-generated petitions or submissions.",
+      "Any requirement anywhere that AI-drafted text be disclosed in the published record.",
+      "Any UK case of hallucinated citations in a select committee submission.",
+      "Any declared AI-written speech in the New Zealand House, the Oireachtas, or a Canadian federal chamber.",
+      "Any Speaker's or Presiding Officer's ruling on AI-generated content outside Alberta."
+    ]
+  },
+
+  "prior_art_warnings_for_S10": [
+    {
+      "work": "Ben Rice, 'Hunting for ChatGPT in Parliament (and mostly not finding it)', riceonpaper.substack.com",
+      "why_it_matters": "A near-exact methodological precursor on the Australian federal corpus: 124,734 substantive Hansard speeches 2018-2026 (64,643 post-ChatGPT), scored with Binoculars (0.4% flagged), Fast-DetectGPT (3.1% post-ChatGPT), per-MP stylometric change-point analysis, AND Claude Sonnet 4.6 scoring 0-10 across 64,642 speeches - the same LLM-screen design as S10. Result: NO statistically significant post-ChatGPT increase (7.7% flagged pre-2022 vs 7.1% post); only seven speeches scored 'likely AI'; calibration showed an 8% false-positive rate exceeding the corpus detection rate. Conclusion: parliamentary prose's formality and repetition structurally resemble AI text."
+    },
+    {
+      "work": "Pimlico Journal, 'MPs are almost certainly using ChatGPT to generate Commons speeches', 1 September 2025",
+      "why_it_matters": "Computes z-scores of AI-associated word/phrase frequency in the Commons per year, 2007-2025, normalised by total words spoken. Closest published precedent to the S10 design on a chamber in the corpus, and reaches the opposite conclusion to Rice.",
+      "url": "https://www.pimlicojournal.co.uk/p/mps-are-almost-certainly-using-chatgpt"
+    },
+    {
+      "work": "NZ: Nicola Willis / Chris Hipkins detector dispute, February 2026",
+      "why_it_matters": "A major outlet ran an AI detector on a political speech; the dispute turned on exactly the 'detectors infer from patterns, they do not prove authorship' objection, and produced an NZ Media Council ruling. A live example of the reputational risk attached to detector-based claims about named politicians."
+    }
+  ],
+
+  "transcript_provenance_note": "Several chambers now use AI in producing the record itself, which matters for a study measuring AI-generated text in transcripts: NSW Hansard 'has incorporated artificial intelligence and automated speech recognition'; WA has introduced automatic speech recognition for the first take of Hansard; the Oireachtas Service has an approved use case for 'automated first-draft generation of the Journal of Parliamentary Proceedings'; and across the EU, transcription of plenary proceedings is the single most common parliamentary AI application (27 of 34 chambers). AI-mediated transcription is a plausible confound distinct from AI-drafted speech."
+}
