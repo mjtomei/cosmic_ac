@@ -48,6 +48,14 @@ rediscover these:
 - **The Kobak content list is PubMed's content** and only 105 of 462 words
   appear in legislative text. This observation is the origin of the substance
   channel item now in §8.6.
+- **The length-band dose-response inverts between v1.0 and v1.1.** Under v1.0
+  short segments carried the larger excess (IE +0.378 short vs +0.214 long;
+  CA +0.312 short); under v1.1 long exceeds short everywhere (UK +0.128 vs
+  +0.072, IE +0.080 vs +0.060, CA +0.041 vs −0.027). The current write-up does
+  **not** quote either version — §4.8's permeation claim rests on the
+  in-context measure (`word_context_delta.py`, +0.0099) instead. Recorded
+  because the v1.0 numbers survive in these archived documents and in old
+  session notes, and must not be re-quoted.
 
 ## Current documents
 
