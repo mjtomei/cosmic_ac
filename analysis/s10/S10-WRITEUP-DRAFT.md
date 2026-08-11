@@ -659,7 +659,18 @@ beat" is the whole of that apparatus.
   regime diagnostic, but the diagnostic uses two markers, not all of them.
 - **Mixed is pooled with AI** throughout. Reported separately in the CSV.
 - **The permeation effect is small** and rests on one instrument.
-- **Cohort mechanism is unidentified.** Three exposure tests null.
+- **This study measures register, not substance.** Whether machine assistance
+  changes *what* is argued, which evidence is cited, or which framings are
+  reached for is not measured anywhere in §4, and the frequency instrument
+  cannot measure it — the Kobak style/content split is PubMed's content and
+  does not transfer to a legislature. The quality arm (§4.9) is the closest
+  thing here, and it grades form rather than position. A domain-native
+  substance arm is buildable from materials we already hold (§8.6 item 1);
+  until it exists, no claim in this study should be read as being about the
+  content of legislative argument.
+- **Cohort mechanism is unidentified.** Three exposure tests null, and the
+  informative next evidence is a different kind rather than a fourth
+  operationalisation of the same kind (§8.6 items 2–4).
 - **No chamber requires AI disclosure**, so no ground truth exists anywhere;
   every number rests on detector calibration rather than admission.
 - **Single detector.** Specificity is measured, but Pangram 4 is one vendor.
@@ -906,27 +917,132 @@ same reason it is collapsing.
 
 ### 8.6 Future work
 
-1. **Does the counterfactual residual behave?** Take the §4.9 pairs, generate
-   the automated counterpart for each, and check whether the residual separates
-   the segments we have independent reason to believe were human-drafted. We
-   already hold the pairs and the labels.
-2. **Do watermarks survive our search?** The v3 contrastive attack targeted
-   structural features — rhythm, tricolons, anticlimactic endings — and
-   Anthropic's own stated limit is that marks may not survive text that is
-   "heavily edited, paraphrased, translated, or mixed". Our rewrites are
-   exactly that, with a plausibility gate keeping them usable as floor speech,
-   so this is a sharper test than generic paraphrase. **Blocked until
-   third-party detection publishes**; no query access to the verifier is what
-   makes it the honest threat model when it does.
-3. **Detector access as a variable.** Re-run the search with Pangram in the
-   loop rather than an Opus proxy. Our 24.6% is a floor on adversary capability
-   and the gap is unmeasured.
-4. **Human-coded DQI subsample**, still the real validation of §8.3's claim
-   that the instrument is cheap *and* sound (listed in Limits).
-5. **Does anyone actually evade?** The norms argument in §8.2 rests on the
-   assumption that current prevalence is undisguised. A chamber-level test —
-   whether flagged text clusters away from the evasion signature — would turn
-   that assumption into a measurement.
+Grouped by what they would settle. Several were designed during the study and
+deferred rather than invented here; where a design was set aside deliberately,
+that is recorded.
+
+**A. The measurement this study does not make.**
+
+1. **The substance channel.** §4 measures *register*. Whether machine
+   assistance changes what legislators argue, which evidence they cite, and
+   which framings they reach for is unmeasured, and the Kobak instrument cannot
+   answer it — its style/content split is PubMed's content, not a legislature's,
+   and does not transfer. The materials for a domain-native version already
+   exist: the base-versus-instruct generation that produced §4.7's +0.88 yields
+   an empirically derived list of what post-training adds *to legislative text
+   specifically*. Split that list into register-like and substance-like by an
+   independent rule and run both through the frozen protocol as separate arms,
+   giving "did the register shift" and "did the substance shift" as two
+   measurements instead of one. Estimated at a few hours. This is the single
+   most valuable unrun item, and it is also a limit on the present study rather
+   than merely an extension (§5).
+
+**B. Getting outside the parliamentary archive.** Three versions of one move.
+§4.6's mechanism is unidentified and three exposure tests inside the archive
+returned null (Appendix A); the informative next evidence is a different *kind*,
+not a fourth operationalisation of the same kind.
+
+2. **Cross-country onset timing.** Within-country geography is exhausted — by
+   2006 everywhere in Canada and the US was past the inflection, leaving about
+   five points of spread. If the climb tracks immersion it should *start later*
+   in late-adopting countries; Poland, Romania, Brazil and Mexico lag the UK by
+   five to ten years, which is a difference-in-differences on onset with far
+   more leverage. The language barrier is now surmountable with our own method:
+   generate paired base/instruct output in the target language and take the
+   words post-training adds — the same procedure behind §4.7. ParlaMint is the
+   corpus vehicle. **Deferred by Matthew during the study** in favour of
+   staying with the existing English word list; recorded here because the
+   English fallbacks it was traded against have all since been run.
+3. **A population-wide, age-stratified corpus outside politics.** The
+   generational-language-change rival predicts the same shift in *any*
+   age-stratified corpus, with politics incidental. The within-legislature leg
+   of that test was run — birth decade survives occupation and education, both
+   of which run the wrong way — but the external leg has never been attempted
+   and no such corpus has been named.
+4. **The same people's non-parliamentary writing before they entered
+   politics.** Directly tests whether the register is acquired before political
+   life. Not reachable from parliamentary archives, which is why it was set
+   aside; it remains the cleanest available test of the cohort story.
+
+**C. Corpora and arms already within reach.**
+
+5. **The written arm of the US Congressional Record.** Extensions of Remarks
+   is separable from floor speech and is currently dropped at extraction
+   (`us/us_extract.py`). It mirrors the closest prior work directly — Suvanto
+   et al. studied *written* parliamentary text and explicitly avoided
+   transcribed speech — so running it turns a contrast of methods into a
+   head-to-head on comparable material.
+6. **NSW Written Community Recognition Statements**, currently excluded to keep
+   the corpus spoken-only. Short, formulaic, offline-drafted text is exactly
+   where machine writing should surface first, and the section grew from 4.7%
+   of raw words in 2018 to 29–32% in 2025-26 — an uncollected datum in its own
+   right. Recoverable from the same PDFs as a separate stream.
+7. **Genre-resolved US prevalence.** Canada and the provinces carry genre
+   metadata and the US does not, which is why the US sits out §4.3. Recovering
+   One Minute Speeches, Special Orders and Morning Business needs re-extraction
+   against CREC granule metadata.
+8. **Coverage gaps that need a non-English instrument**: 199k words of
+   French-original New Brunswick debate, never scored by anything; Quebec,
+   dropped from the province gradient for the same reason; and New Zealand,
+   ranked as tractable but never built. All three are first customers for the
+   build-the-instrument-in-any-language method in item 2.
+
+**D. Rivals for the register trend that remain live.**
+
+9. **Staff age as the exposure measure.** Members read what staff write, so a
+   70-year-old member with 24-year-old staff has young exposure — which is why
+   the member-age design is not the right one. Legislative staff are young and
+   short-tenured, so office exposure tracks the cohort entering staff work, and
+   that cohort turned computer-native in the mid-2000s, where the UK curve
+   starts climbing. Data is thin but two routes exist: Legistorm's US
+   congressional staff records (paid) and House Statements of Disbursements
+   (names, salaries, tenure and salary as seniority proxies). Neither has been
+   pursued. This is also the natural companion to S15.
+10. **A role-controlled UK specification.** The two UK specs fail in opposite
+    directions — the full corpus has a composition problem, and the
+    within-speaker subset has a role problem, since those MPs lived through a
+    change of government and frontbench speech is more formal and more scripted
+    by function. The fix is a formality set defined by function rather than
+    hand-picked (words that rise with frontbench status *in the pre-period
+    only*), restricted to MPs whose frontbench status did not change. Related:
+    `arrival_premium.py` shows the arrival premium exists in every era at about
+    +0.8 and *grows*, so the level component is real and currently unattributed
+    between tenure and role.
+11. **Candidate selection for media performance**, named as a compositional
+    rival and never given a test or a data source. And the
+    **professionalised-communications** rival — message discipline and
+    clip-ready speech over the same years — has only ever been tested
+    indirectly, through its prediction of uniform rather than gradiented drift.
+    Since the gradient tests returned null, that indirect test cannot
+    distinguish it from the exposure story. It is live and unmeasured.
+
+**E. The detector and evasion arm.**
+
+12. **Does the counterfactual residual behave?** Take the §4.9 pairs, generate
+    the automated counterpart for each, and check whether the residual
+    separates segments we have independent reason to think were human-drafted.
+    We already hold the pairs and the labels.
+13. **Do watermarks survive our search?** The v3 contrastive attack targeted
+    structural features — rhythm, tricolons, anticlimactic endings — and
+    Anthropic's own stated limit is that marks may not survive text "heavily
+    edited, paraphrased, translated, or mixed". Our rewrites are exactly that,
+    with a plausibility gate keeping them usable as floor speech, so this is a
+    sharper test than generic paraphrase. **Blocked until third-party detection
+    publishes**; no query access to the verifier is what makes it the honest
+    threat model when it does.
+14. **Detector access as a variable.** Re-run the search with Pangram in the
+    loop rather than an Opus proxy. Our 24.6% is a floor on adversary
+    capability and the gap is unmeasured.
+15. **The below-threshold residual sample** — roughly 150 segments, 33–54k
+    words, about $5. It bounds what the *screen* misses, which is a different
+    quantity from what Pangram misses on edited text, and worth having stated
+    as its own number.
+16. **Human-coded DQI subsample**, still the real validation of §8.3's claim
+    that the instrument is cheap *and* sound (§5).
+17. **Does anyone actually evade?** The norms argument in §8.2 rests on current
+    prevalence being undisguised. A chamber-level test — whether flagged text
+    clusters away from the evasion signature — would turn that assumption into
+    a measurement.
 
 ---
 
