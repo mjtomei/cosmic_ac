@@ -458,7 +458,31 @@ rewritten variants of 130 flagged originals**, each variant scored by Pangram.
 Selection differs between runs and the differences matter; the filter stack for
 each is set out in `BYPASS_METHODOLOGY.md` and summarised in Appendix C.
 
-**The headline: an adversarially-induced false-negative rate of 8.5%.**[^r49a]
+**The headline: asking a general-purpose model to rework a speech in a loop
+beats the commercial evasion industry by about tenfold.** No fine-tuning, no
+detector access, no evasion tooling — Opus, a rewrite prompt, and six rounds
+of keep-the-best. Against the 13 commercial "humanizer" services benchmarked
+in Pangram's own technical report, which get **2.31%** of documents past it,
+this gets **24.6%** of targets past it: **10.6×**.[^r49a] Against Pangram's
+clean-conditions false-negative rate of 0.34%, it is 72×.
+
+That is the finding. The detector is not weak — its specificity is 0 in 1,260
+(§4.1), and a single "make this sound human" prompt makes text *more*
+detectable, not less. But the gap between a purpose-built evasion product and
+a frontier model told to try again is an order of magnitude in the frontier
+model's favour, and it will not narrow in the detector's direction.
+
+One asymmetry to keep visible: the 2.31% is a **one-shot** rate, while 24.6%
+allows up to eighteen attempts. Like-for-like on single attempts the multiple
+is **3.7×** (8.5% against 2.31%). The tenfold figure is the honest one for an
+actor bypassing a *given* text, because discarded drafts cost them nothing;
+the 3.7× is the honest one for comparing instruments. Both are below.
+
+**Two rates, and both belong here.** They answer different questions and the
+gap between them is threefold, so quoting either alone misleads.
+
+**The conservative figure — 8.5% per variant, all four runs.** How often a
+single rewrite attempt defeats the detector.
 
 | | variants | Pangram says Human | `fraction_ai = 0.0` |
 |---|---|---|---|
@@ -469,7 +493,34 @@ each is set out in `BYPASS_METHODOLOGY.md` and summarised in Appendix C.
 | **pooled** | **461** | **39 = 8.5%** [6.3, 11.4] | **37 = 8.0%** [5.9, 10.9] |
 
 Restricted to unambiguously AI-seeded originals the rate is unchanged: 34/400
-= 8.5% by label, 32/400 = 8.0% strict.
+= 8.5% by label, 32/400 = 8.0% strict. This is the right number when the claim
+is about the *detector*, and it is deliberately harsh on ourselves: it keeps
+two superseded searches in the denominator, including the badly-seeded run
+that produced nothing.
+
+**The operational figure — 24.6% per target, best method only.** An adversary
+does not care how many drafts they discard; they care whether the speech they
+wanted through got through. Taking only the **final search in each chamber**
+and asking on what fraction of *targets* at least one variant reached a clean
+Human verdict:
+
+| | targets | ≥1 Human | ≥1 at `fraction_ai = 0.0` |
+|---|---|---|---|
+| NB v3 contrastive | 38 | 10 = 26.3% | 10 = 26.3% |
+| GO all-31 uniform | 27 | 6 = 22.2% | 5 = 18.5% |
+| **pooled** | **65** | **16 = 24.6%** [16, 36] | **15 = 23.1%** [15, 35] |
+
+**About one flagged speech in four can be walked past the detector**, at a
+budget of six rounds and three variants per round. This is the figure a fresh
+study replicating our best method should expect to reproduce, and the more
+honest description of the exposure a chamber actually faces.
+
+Two things make it more trustworthy than its interval suggests. The strict
+criterion barely moves it — exactly one target loses its only reversal. And
+the two chambers agree closely (26.3% and 22.2%) **despite contradicting each
+other on which edits work**: their hypotheses agree on repetition and
+unglossed idiom and flatly disagree on sentence rhythm. The rate transfers;
+the playbook does not.
 
 **Against 0 AI labels in 1,260 genuine pre-AI controls (§4.1).** That is what
 makes the reversals worth reporting: they are movements *into* a class the
@@ -493,24 +544,28 @@ rather than under clean conditions.
 | Pangram 4, 13 humanizer services | 2.31% | FNR under commercial evasion, vendor |
 | Pangram 4, BLADER de-AI agent | 0.43% | FNR under agentic evasion, vendor |
 | Pangram 4, Perkins benchmark | 2.86% | FNR, doc-level, adversarial, vendor |
-| **this study** | **8.5%** | **induced FNR, directed search, 461 variants** |
+| **this study, per variant** | **8.5%** | **induced FNR, one attempt, 461 variants — 3.7× the humanizers** |
+| *this study, per target* | *24.6%* | *induced, ≤18 attempts — 10.6× the humanizers* |
 | Rice 2026, Australian Hansard | ~8% | **false *positive* rate**, n = 50 |
 
-The last row is included because the numeric coincidence invites a comparison
-that does not exist: Rice's ~8% is a false-positive rate on 50 pre-ChatGPT
-speeches, measured on an LLM judge rather than on Pangram, and it is not
-commensurable with anything else in the table (§7). The vendor rows are
-vendor-reported on undisclosed test data and should be read as such;
-independent evaluations (RAID, Dugan et al. 2024; Weber-Wulff et al. 2023)
-consistently find detectors fail toward false negatives under obfuscation,
-which is the direction our result also points.
+**Only the per-variant row is commensurable with the vendor rows**, which are
+one-shot document-level rates on known-AI text. The per-target row is
+italicised because it allows up to eighteen attempts per document, and no
+published benchmark grants that; it is the right number for exposure, the
+wrong number for a detector comparison. The Rice row is included because the
+numeric coincidence invites a comparison that does not exist: his ~8% is a
+false-positive rate on 50 pre-ChatGPT speeches, measured on an LLM judge
+rather than on Pangram (§7). The vendor rows are vendor-reported on
+undisclosed test data and should be read as such; independent evaluations
+(RAID, Dugan et al. 2024; Weber-Wulff et al. 2023) consistently find detectors
+fail toward false negatives under obfuscation, which is the direction our
+result also points.
 
-**Per text, the rate is a property of the search budget, not the detector.**
-With ~6 rounds × 3 variants, 10 of 38 New Brunswick texts (26%) reached a clean
-Human verdict at least once and 17 of 38 (45%) softened off AI at all. Those
-figures rise with attempts and with search sophistication — the blind v2 search
-flipped 10% of variants, the contrastive v3 search 28% — so they bound what a
-weekend of effort achieves, not what is achievable.
+**Both rates move with effort, and that is the real caveat on each.** The
+blind v2 search flipped 10% of variants; the contrastive v3 search 28%. If
+"soften off AI" rather than "reach Human" is the bar, 17 of 38 New Brunswick
+targets (45%) cleared it. So 8.5% and 24.6% bound what two days and four
+searches achieved, not what is achievable.
 
 **A correction to an earlier claim.** We previously reported that Pangram's own
 uncertainty predicts evasion, at "22% for AI seeds against 76% for Mixed". That
@@ -562,12 +617,12 @@ Stage 4 also settles a residual worry from stage 3: justification rises +0.16
 raw (t +1.7) and goes *negative* once word count enters, so the apparent gain
 was length. Humanized variants run ~30 words longer at the median.
 
-**What this means for the prevalence number.** Evasion is real, reaches a
-detector-clean verdict roughly one variant in twelve under directed search, and
-is free in deliberative-quality terms — so 12.4% is a floor, and the honest
-reading is that it measures *undisguised* machine drafting. But it is not
-cheap: it took a frontier model, contrastive exemplars mined from matched human
-text, and a multi-round search scoring three replicates per variant. A single
+**What this means for the prevalence number.** Evasion is real, clears the
+detector on about one flagged speech in four under directed search, and is free
+in deliberative-quality terms — so 12.4% is a floor, and the honest reading is
+that it measures *undisguised* machine drafting. But it is not free in effort:
+it took a frontier model, contrastive exemplars mined from matched human text,
+and a multi-round search scoring three replicates per variant. A single
 "make this sound human" prompt does the opposite — instructed rewriting *raises*
 Pangram's score, and human text pushed through the same ladder went from 11.7
 to 60.2. The gap between "a detector can be beaten" and "a detector is easy to
@@ -592,10 +647,10 @@ beat" is the whole of that apparatus.
 ## 5. Limits
 
 - **Prevalence is a floor.** Detectors see undisguised machine text. A
-  directed search reaches a detector-clean verdict on 8.5% of variants
-  (§4.9), so 12.4% is a lower bound. How much of a lower bound is not
-  estimable from this design: we can measure how often evasion succeeds when
-  attempted, not how often it is attempted.
+  directed search clears the detector on 8.5% of variants and **24.6% of
+  targets** (§4.9), so 12.4% is a lower bound. How much of a lower bound is
+  not estimable from this design: we can measure how often evasion succeeds
+  when attempted, not how often it is attempted.
 - **The evasion rate is an upper bound on our own effort, not on anyone's.**
   Four runs over two days with a frontier model. A staff tool refined over
   months, or a local model fine-tuned against the detector, is a different

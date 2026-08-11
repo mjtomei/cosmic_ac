@@ -9,6 +9,21 @@ single recomputation over all four runs at once could expose (see below). This
 script is the artifact: it reads the four verdict files, pools them, and prints
 every figure the write-up quotes.
 
+TWO RATES, AND BOTH BELONG IN THE WRITE-UP
+
+  PER VARIANT, ALL FOUR RUNS -- 8.5%. The conservative figure. It averages two
+  superseded searches into the denominator and asks how often a RANDOM attempt
+  succeeds. Use it when the claim is about the detector.
+
+  PER TARGET, FINAL SEARCH ONLY -- 24.6%. The operational figure. It asks
+  whether the speech an adversary wanted through got through, which is the
+  only question they care about; discarded drafts cost them nothing. Use it
+  when the claim is about what an attacker achieves, and as the figure a fresh
+  study replicating our best method should expect.
+
+Neither supersedes the other. Quoting only the first understates the exposure;
+quoting only the second overstates the detector's weakness.
+
 THE QUANTITY, NAMED CAREFULLY
 
 We report an ADVERSARIALLY-INDUCED FALSE-NEGATIVE RATE: of all rewritten
@@ -180,9 +195,52 @@ def main():
     print("  evasion. Like-for-like, the gap is directional and not")
     print("  significant per variant.")
 
+    # ---- the second headline: per-target, best method only ---------------
+    #
+    # The pooled per-variant rate above is deliberately conservative: it
+    # averages two superseded searches into the denominator and asks how often
+    # a RANDOM attempt succeeds. That is the wrong question for an adversary,
+    # who does not care how many drafts they discard -- only whether the speech
+    # they wanted through got through.
+    #
+    # This is the same data asked the other way: taking only the FINAL search
+    # per chamber, on what fraction of TARGETS did at least one variant reach a
+    # clean Human verdict? It is the figure a fresh study replicating our best
+    # method should expect to reproduce, so it is reported alongside.
+    FINAL = {"NB v3 contrastive", "GO all-31 uniform"}
+    print("\nPER TARGET, FINAL SEARCH PER CHAMBER ONLY")
+    print("(at least one variant reaching Human, ~6 rounds x 3 variants)\n")
+    print(f"  {'run':<20s} {'targets':>8s} {'label':>16s} {'strict':>16s}")
+    tt = hh = ss = 0
+    for run in ["NB v3 contrastive", "GO all-31 uniform"]:
+        t = collections.defaultdict(list)
+        for r in rows:
+            if r["run"] == run:
+                t[r["seg_id"]].append(r)
+        k = sum(1 for v in t.values()
+                if any(x["verdict"] == "Human" for x in v))
+        st = sum(1 for v in t.values() if any(x["strict"] for x in v))
+        lo, hi = wilson(k, len(t))
+        slo, shi = wilson(st, len(t))
+        tt += len(t); hh += k; ss += st
+        print(f"  {run:<20s} {len(t):>8d} "
+              f"{f'{k}/{len(t)} = {100*k/len(t):.1f}%':>16s} "
+              f"{f'{st}/{len(t)} = {100*st/len(t):.1f}%':>16s}")
+    lo, hi = wilson(hh, tt)
+    slo, shi = wilson(ss, tt)
+    print(f"  {'POOLED':<20s} {tt:>8d} "
+          f"{f'{hh}/{tt} = {100*hh/tt:.1f}%':>16s} "
+          f"{f'{ss}/{tt} = {100*ss/tt:.1f}%':>16s}")
+    print(f"    label  [{100*lo:.0f}, {100*hi:.0f}]   "
+          f"strict [{100*slo:.0f}, {100*shi:.0f}]")
+    print("  The two chambers agree within their intervals despite")
+    print("  contradicting each other on WHICH edits work (see")
+    print("  BYPASS_METHODOLOGY.md) -- the rate transfers, the playbook")
+    print("  does not.")
+
     # per-text, conditional on the search budget
-    print("\nPER TEXT (conditional on ~6 rounds x 3 variants -- a property of")
-    print("the search budget, not of the detector)\n")
+    print("\nPER TEXT, ALL RUNS AND SEED TYPES (conditional on ~6 rounds x 3")
+    print("variants -- a property of the search budget, not of the detector)\n")
     for run in ["NB v3 contrastive", "GO all-31 uniform"]:
         v = [r for r in rows if r["run"] == run]
         for sv in (["AI"] if run.startswith("NB") else ["AI", "Mixed"]):

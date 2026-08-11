@@ -237,11 +237,36 @@ it has set a new best within the last 3 rounds.
 
 ---
 
-## Pooled result across all four runs
+## Results — two rates, and which to quote
 
 Computed by `bypass_report.py`, which is the only place these are derived; the
 per-run numbers in this document were each computed separately at the time and
 should be read as history.
+
+**The operational rate: 24.6% per target.** Final search per chamber only, at
+least one variant reaching a clean Human verdict. This is what an actor
+bypassing a *given* speech achieves, and it is the headline — discarded drafts
+cost them nothing.
+
+| run | targets | ≥1 Human | ≥1 at `fraction_ai` = 0.0 |
+|---|---|---|---|
+| NB v3 contrastive | 38 | 10 = 26.3% | 10 = 26.3% |
+| GO all-31 uniform | 27 | 6 = 22.2% | 5 = 18.5% |
+| **pooled** | **65** | **16 = 24.6%** [16, 36] | **15 = 23.1%** [15, 35] |
+
+Against the 13 commercial humanizer services in Pangram's own technical report
+(2.31% one-shot), that is **10.6×** — an off-the-shelf model in a rewrite loop
+beating purpose-built evasion products by an order of magnitude. Like-for-like
+on single attempts the multiple is 3.7×; the 2.31% baseline is one-shot while
+24.6% allows up to eighteen attempts, and that asymmetry must be stated
+whenever the tenfold figure is used.
+
+The two chambers agree closely **despite contradicting each other on which
+edits work** (see the mechanism note at the end). The rate transfers; the
+playbook does not.
+
+**The conservative rate: 8.5% per variant**, all four runs, one attempt each.
+Quote this when the claim is about the detector rather than the attacker.
 
 | run | variants | Human | `fraction_ai = 0.0` |
 |---|---|---|---|
