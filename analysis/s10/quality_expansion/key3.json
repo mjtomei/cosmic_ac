@@ -1,0 +1,610 @@
+{
+ "H000": {
+  "condition": "humanized",
+  "seg_id": "2025-12-11#t1877w2",
+  "opus3x": 30,
+  "plaus": 88,
+  "hypothesis": "Room deixis and disputed wording",
+  "n_words": 171
+ },
+ "H001": {
+  "condition": "humanized",
+  "seg_id": "2026-05-13#t3072w1",
+  "opus3x": 43.3,
+  "plaus": 79.3,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 285
+ },
+ "H002": {
+  "condition": "original",
+  "seg_id": "2025-12-11#t1859w0",
+  "opus3x": 25,
+  "plaus": 88,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 333
+ },
+ "H003": {
+  "condition": "humanized",
+  "seg_id": "2026-05-14#t3111w0",
+  "opus3x": 36.7,
+  "plaus": 85,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 183
+ },
+ "H004": {
+  "condition": "original",
+  "seg_id": "2026-05-13#t3072w1",
+  "opus3x": 43.3,
+  "plaus": 79.3,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 351
+ },
+ "H005": {
+  "condition": "humanized",
+  "seg_id": "2026-05-05#t2576w0",
+  "opus3x": 30,
+  "plaus": 83,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 141
+ },
+ "H006": {
+  "condition": "original",
+  "seg_id": "2026-05-13#t3076w2",
+  "opus3x": 33.3,
+  "plaus": 84.3,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 352
+ },
+ "H007": {
+  "condition": "humanized",
+  "seg_id": "2026-05-14#t3166w1",
+  "opus3x": 32.7,
+  "plaus": 88.7,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 399
+ },
+ "H008": {
+  "condition": "humanized",
+  "seg_id": "2026-03-20#t2201w0",
+  "opus3x": 40,
+  "plaus": 82.3,
+  "hypothesis": "Numbers with a baseline and an attributor",
+  "n_words": 154
+ },
+ "H009": {
+  "condition": "humanized",
+  "seg_id": "2026-05-06#t2648w0",
+  "opus3x": 31.7,
+  "plaus": 80,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 154
+ },
+ "H010": {
+  "condition": "humanized",
+  "seg_id": "2025-11-05#t690w1",
+  "opus3x": 35,
+  "plaus": 87.7,
+  "hypothesis": "Unanswered question runs",
+  "n_words": 326
+ },
+ "H011": {
+  "condition": "humanized",
+  "seg_id": "2026-03-18#t2135w12",
+  "opus3x": 45,
+  "plaus": 83.3,
+  "hypothesis": "Cadence floor",
+  "n_words": 314
+ },
+ "H012": {
+  "condition": "original",
+  "seg_id": "2026-05-06#t2648w0",
+  "opus3x": 31.7,
+  "plaus": 80,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 148
+ },
+ "H013": {
+  "condition": "original",
+  "seg_id": "2026-03-18#t2135w12",
+  "opus3x": 45,
+  "plaus": 83.3,
+  "hypothesis": "Cadence floor",
+  "n_words": 344
+ },
+ "H014": {
+  "condition": "humanized",
+  "seg_id": "2025-12-10#t1783w0",
+  "opus3x": 38.3,
+  "plaus": 85.3,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 269
+ },
+ "H015": {
+  "condition": "humanized",
+  "seg_id": "2026-05-14#t3199w2",
+  "opus3x": 39.3,
+  "plaus": 77.3,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 268
+ },
+ "H016": {
+  "condition": "original",
+  "seg_id": "2026-03-20#t2201w0",
+  "opus3x": 40,
+  "plaus": 82.3,
+  "hypothesis": "Numbers with a baseline and an attributor",
+  "n_words": 170
+ },
+ "H017": {
+  "condition": "humanized",
+  "seg_id": "2025-12-04#t1477w0",
+  "opus3x": 36.7,
+  "plaus": 85.7,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 147
+ },
+ "H018": {
+  "condition": "original",
+  "seg_id": "2025-11-18#t1017w3",
+  "opus3x": 36,
+  "plaus": 87,
+  "hypothesis": "Announced verbatim repetition",
+  "n_words": 211
+ },
+ "H019": {
+  "condition": "original",
+  "seg_id": "2025-12-04#t1477w0",
+  "opus3x": 36.7,
+  "plaus": 85.7,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 136
+ },
+ "H020": {
+  "condition": "humanized",
+  "seg_id": "2023-05-11#t11774w0",
+  "opus3x": 32,
+  "plaus": 82,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 308
+ },
+ "H021": {
+  "condition": "humanized",
+  "seg_id": "2026-03-25#t2350w0",
+  "opus3x": 31.7,
+  "plaus": 74.7,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 194
+ },
+ "H022": {
+  "condition": "original",
+  "seg_id": "2025-12-09#t1625w0",
+  "opus3x": 36.7,
+  "plaus": 91.3,
+  "hypothesis": "Descending ending",
+  "n_words": 159
+ },
+ "H023": {
+  "condition": "original",
+  "seg_id": "2026-05-06#t2699w0",
+  "opus3x": 33.3,
+  "plaus": 80,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 130
+ },
+ "H024": {
+  "condition": "humanized",
+  "seg_id": "2025-12-03#t1396w0",
+  "opus3x": 40.7,
+  "plaus": 81,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 160
+ },
+ "H025": {
+  "condition": "original",
+  "seg_id": "2025-12-03#t1396w0",
+  "opus3x": 40.7,
+  "plaus": 81,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 130
+ },
+ "H026": {
+  "condition": "original",
+  "seg_id": "2025-10-24#t178w1",
+  "opus3x": 41.7,
+  "plaus": 90,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 329
+ },
+ "H027": {
+  "condition": "original",
+  "seg_id": "2026-05-08#t2948w0",
+  "opus3x": 40,
+  "plaus": 75,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 248
+ },
+ "H028": {
+  "condition": "original",
+  "seg_id": "2025-12-10#t1743w0",
+  "opus3x": 26.7,
+  "plaus": 91,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 160
+ },
+ "H029": {
+  "condition": "original",
+  "seg_id": "2025-12-05#t1574w0",
+  "opus3x": 34.3,
+  "plaus": 88,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 165
+ },
+ "H030": {
+  "condition": "original",
+  "seg_id": "2025-12-02#t1365w0",
+  "opus3x": 26.7,
+  "plaus": 84,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 143
+ },
+ "H031": {
+  "condition": "original",
+  "seg_id": "2025-12-04#t1466w0",
+  "opus3x": 35,
+  "plaus": 87,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 159
+ },
+ "H032": {
+  "condition": "humanized",
+  "seg_id": "2025-12-09#t1625w0",
+  "opus3x": 36.7,
+  "plaus": 91.3,
+  "hypothesis": "Descending ending",
+  "n_words": 174
+ },
+ "H033": {
+  "condition": "humanized",
+  "seg_id": "2025-12-04#t1466w0",
+  "opus3x": 35,
+  "plaus": 87,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 166
+ },
+ "H034": {
+  "condition": "original",
+  "seg_id": "2025-12-04#t1550w1",
+  "opus3x": 45,
+  "plaus": 73,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 306
+ },
+ "H035": {
+  "condition": "original",
+  "seg_id": "2025-11-05#t690w1",
+  "opus3x": 35,
+  "plaus": 87.7,
+  "hypothesis": "Unanswered question runs",
+  "n_words": 302
+ },
+ "H036": {
+  "condition": "humanized",
+  "seg_id": "2024-05-07#t16123w0",
+  "opus3x": 31,
+  "plaus": 90,
+  "hypothesis": "Descending ending",
+  "n_words": 132
+ },
+ "H037": {
+  "condition": "original",
+  "seg_id": "2026-05-05#t2576w0",
+  "opus3x": 30,
+  "plaus": 83,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 154
+ },
+ "H038": {
+  "condition": "original",
+  "seg_id": "2026-03-20#t2144w0",
+  "opus3x": 41.7,
+  "plaus": 86.7,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 120
+ },
+ "H039": {
+  "condition": "original",
+  "seg_id": "2026-03-24#t2305w3",
+  "opus3x": 31.7,
+  "plaus": 88,
+  "hypothesis": "Room deixis and disputed wording",
+  "n_words": 208
+ },
+ "H040": {
+  "condition": "original",
+  "seg_id": "2026-05-14#t3166w1",
+  "opus3x": 32.7,
+  "plaus": 88.7,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 360
+ },
+ "H041": {
+  "condition": "original",
+  "seg_id": "2026-03-25#t2350w0",
+  "opus3x": 31.7,
+  "plaus": 74.7,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 150
+ },
+ "H042": {
+  "condition": "original",
+  "seg_id": "2023-05-11#t11774w0",
+  "opus3x": 32,
+  "plaus": 82,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 358
+ },
+ "H043": {
+  "condition": "original",
+  "seg_id": "2024-05-16#t16835w0",
+  "opus3x": 38.3,
+  "plaus": 85.7,
+  "hypothesis": "Room deixis and disputed wording",
+  "n_words": 306
+ },
+ "H044": {
+  "condition": "humanized",
+  "seg_id": "2025-12-11#t1859w0",
+  "opus3x": 25,
+  "plaus": 88,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 285
+ },
+ "H045": {
+  "condition": "original",
+  "seg_id": "2026-05-14#t3199w2",
+  "opus3x": 39.3,
+  "plaus": 77.3,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 332
+ },
+ "H046": {
+  "condition": "humanized",
+  "seg_id": "2026-05-05#t2582w0",
+  "opus3x": 32.7,
+  "plaus": 90,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 163
+ },
+ "H047": {
+  "condition": "humanized",
+  "seg_id": "2025-11-18#t922w0",
+  "opus3x": 31.7,
+  "plaus": 89.3,
+  "hypothesis": "Cadence floor",
+  "n_words": 93
+ },
+ "H048": {
+  "condition": "humanized",
+  "seg_id": "2023-12-05#t14931w2",
+  "opus3x": 39.3,
+  "plaus": 88.7,
+  "hypothesis": "Announced verbatim repetition",
+  "n_words": 329
+ },
+ "H049": {
+  "condition": "original",
+  "seg_id": "2025-11-05#t632w0",
+  "opus3x": 32.7,
+  "plaus": 87,
+  "hypothesis": "Gloss discipline",
+  "n_words": 137
+ },
+ "H050": {
+  "condition": "humanized",
+  "seg_id": "2026-03-20#t2144w0",
+  "opus3x": 41.7,
+  "plaus": 86.7,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 162
+ },
+ "H051": {
+  "condition": "original",
+  "seg_id": "2023-12-05#t14931w4",
+  "opus3x": 38,
+  "plaus": 85,
+  "hypothesis": "Room deixis and disputed wording",
+  "n_words": 332
+ },
+ "H052": {
+  "condition": "humanized",
+  "seg_id": "2024-05-16#t16835w1",
+  "opus3x": 31.7,
+  "plaus": 87,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 346
+ },
+ "H053": {
+  "condition": "humanized",
+  "seg_id": "2025-12-09#t1639w0",
+  "opus3x": 42,
+  "plaus": 70,
+  "hypothesis": "Gloss discipline",
+  "n_words": 132
+ },
+ "H054": {
+  "condition": "original",
+  "seg_id": "2023-12-05#t14931w2",
+  "opus3x": 39.3,
+  "plaus": 88.7,
+  "hypothesis": "Announced verbatim repetition",
+  "n_words": 320
+ },
+ "H055": {
+  "condition": "original",
+  "seg_id": "2024-05-07#t16123w0",
+  "opus3x": 31,
+  "plaus": 90,
+  "hypothesis": "Descending ending",
+  "n_words": 129
+ },
+ "H056": {
+  "condition": "humanized",
+  "seg_id": "2023-12-05#t14931w4",
+  "opus3x": 38,
+  "plaus": 85,
+  "hypothesis": "Room deixis and disputed wording",
+  "n_words": 238
+ },
+ "H057": {
+  "condition": "humanized",
+  "seg_id": "2025-11-18#t1017w3",
+  "opus3x": 36,
+  "plaus": 87,
+  "hypothesis": "Announced verbatim repetition",
+  "n_words": 216
+ },
+ "H058": {
+  "condition": "original",
+  "seg_id": "2025-12-11#t1877w2",
+  "opus3x": 30,
+  "plaus": 88,
+  "hypothesis": "Room deixis and disputed wording",
+  "n_words": 119
+ },
+ "H059": {
+  "condition": "humanized",
+  "seg_id": "2026-03-24#t2305w3",
+  "opus3x": 31.7,
+  "plaus": 88,
+  "hypothesis": "Room deixis and disputed wording",
+  "n_words": 206
+ },
+ "H060": {
+  "condition": "original",
+  "seg_id": "2024-05-16#t16835w1",
+  "opus3x": 31.7,
+  "plaus": 87,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 357
+ },
+ "H061": {
+  "condition": "humanized",
+  "seg_id": "2025-12-02#t1365w0",
+  "opus3x": 26.7,
+  "plaus": 84,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 142
+ },
+ "H062": {
+  "condition": "humanized",
+  "seg_id": "2024-05-16#t16835w0",
+  "opus3x": 38.3,
+  "plaus": 85.7,
+  "hypothesis": "Room deixis and disputed wording",
+  "n_words": 208
+ },
+ "H063": {
+  "condition": "humanized",
+  "seg_id": "2025-12-05#t1574w0",
+  "opus3x": 34.3,
+  "plaus": 88,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 159
+ },
+ "H064": {
+  "condition": "original",
+  "seg_id": "2026-05-05#t2582w0",
+  "opus3x": 32.7,
+  "plaus": 90,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 115
+ },
+ "H065": {
+  "condition": "humanized",
+  "seg_id": "2025-11-05#t632w0",
+  "opus3x": 32.7,
+  "plaus": 87,
+  "hypothesis": "Gloss discipline",
+  "n_words": 138
+ },
+ "H066": {
+  "condition": "original",
+  "seg_id": "2025-12-09#t1639w0",
+  "opus3x": 42,
+  "plaus": 70,
+  "hypothesis": "Gloss discipline",
+  "n_words": 138
+ },
+ "H067": {
+  "condition": "humanized",
+  "seg_id": "2026-05-08#t2948w0",
+  "opus3x": 40,
+  "plaus": 75,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 266
+ },
+ "H068": {
+  "condition": "humanized",
+  "seg_id": "2025-12-10#t1743w0",
+  "opus3x": 26.7,
+  "plaus": 91,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 227
+ },
+ "H069": {
+  "condition": "original",
+  "seg_id": "2025-11-18#t922w0",
+  "opus3x": 31.7,
+  "plaus": 89.3,
+  "hypothesis": "Cadence floor",
+  "n_words": 91
+ },
+ "H070": {
+  "condition": "humanized",
+  "seg_id": "2026-05-13#t3076w2",
+  "opus3x": 33.3,
+  "plaus": 84.3,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 338
+ },
+ "H071": {
+  "condition": "humanized",
+  "seg_id": "2025-12-04#t1550w1",
+  "opus3x": 45,
+  "plaus": 73,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 324
+ },
+ "H072": {
+  "condition": "humanized",
+  "seg_id": "2026-05-06#t2699w0",
+  "opus3x": 33.3,
+  "plaus": 80,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 153
+ },
+ "H073": {
+  "condition": "original",
+  "seg_id": "2025-12-10#t1783w0",
+  "opus3x": 38.3,
+  "plaus": 85.3,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 261
+ },
+ "H074": {
+  "condition": "humanized",
+  "seg_id": "2025-10-24#t178w1",
+  "opus3x": 41.7,
+  "plaus": 90,
+  "hypothesis": "Abstract-noun ballast",
+  "n_words": 297
+ },
+ "H075": {
+  "condition": "original",
+  "seg_id": "2026-05-14#t3111w0",
+  "opus3x": 36.7,
+  "plaus": 85,
+  "hypothesis": "Self-limiting first person",
+  "n_words": 155
+ }
+}

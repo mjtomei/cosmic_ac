@@ -1,0 +1,642 @@
+[
+ {
+  "seed_id": "2026-05-06#t2699w0",
+  "seed_opus": 30,
+  "human_exemplars": [
+   {
+    "seg_id": "2025-10-22#t22w0",
+    "opus": 28,
+    "gap": 2
+   },
+   {
+    "seg_id": "2026-03-25#t2403w0",
+    "opus": 25,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "2025-12-11#t1859w0",
+  "seed_opus": 45,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-03-25#t2355w0",
+    "opus": 42,
+    "gap": 3
+   },
+   {
+    "seg_id": "2026-03-17#t2035w0",
+    "opus": 40,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "2025-12-02#t1365w0",
+  "seed_opus": 45,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-03-25#t2355w0",
+    "opus": 42,
+    "gap": 3
+   },
+   {
+    "seg_id": "2026-03-17#t2035w0",
+    "opus": 40,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "2026-05-06#t2648w0",
+  "seed_opus": 45,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-03-25#t2355w0",
+    "opus": 42,
+    "gap": 3
+   },
+   {
+    "seg_id": "2026-03-17#t2035w0",
+    "opus": 40,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "2025-10-24#t178w1",
+  "seed_opus": 38,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-03-24#t2246w0",
+    "opus": 35,
+    "gap": 3
+   },
+   {
+    "seg_id": "2025-12-05#t1622w0",
+    "opus": 35,
+    "gap": 3
+   }
+  ]
+ },
+ {
+  "seed_id": "2025-12-09#t1625w0",
+  "seed_opus": 45,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-03-25#t2355w0",
+    "opus": 42,
+    "gap": 3
+   },
+   {
+    "seg_id": "2026-03-17#t2035w0",
+    "opus": 40,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "2026-03-18#t2135w12",
+  "seed_opus": 85,
+  "human_exemplars": [
+   {
+    "seg_id": "2023-11-23#t14342w6",
+    "opus": 75,
+    "gap": 10
+   },
+   {
+    "seg_id": "2023-05-10#t11631w6",
+    "opus": 70,
+    "gap": 15
+   }
+  ]
+ },
+ {
+  "seed_id": "2026-05-07#t2871w4",
+  "seed_opus": 88,
+  "human_exemplars": [
+   {
+    "seg_id": "2023-11-23#t14342w6",
+    "opus": 75,
+    "gap": 13
+   },
+   {
+    "seg_id": "2023-05-10#t11631w6",
+    "opus": 70,
+    "gap": 18
+   }
+  ]
+ },
+ {
+  "seed_id": "2025-12-10#t1743w0",
+  "seed_opus": 30,
+  "human_exemplars": [
+   {
+    "seg_id": "2025-10-22#t22w0",
+    "opus": 28,
+    "gap": 2
+   },
+   {
+    "seg_id": "2026-03-25#t2403w0",
+    "opus": 25,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "2025-11-05#t632w0",
+  "seed_opus": 65,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-03-18#t2097w0",
+    "opus": 55,
+    "gap": 10
+   },
+   {
+    "seg_id": "2025-11-07#t858w0",
+    "opus": 55,
+    "gap": 10
+   }
+  ]
+ },
+ {
+  "seed_id": "2026-05-14#t3166w1",
+  "seed_opus": 38,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-03-24#t2246w0",
+    "opus": 35,
+    "gap": 3
+   },
+   {
+    "seg_id": "2025-12-05#t1622w0",
+    "opus": 35,
+    "gap": 3
+   }
+  ]
+ },
+ {
+  "seed_id": "2024-05-16#t16835w1",
+  "seed_opus": 78,
+  "human_exemplars": [
+   {
+    "seg_id": "2023-11-23#t14342w6",
+    "opus": 75,
+    "gap": 3
+   },
+   {
+    "seg_id": "2023-05-10#t11631w6",
+    "opus": 70,
+    "gap": 8
+   }
+  ]
+ },
+ {
+  "seed_id": "2025-12-04#t1550w1",
+  "seed_opus": 60,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-03-18#t2097w0",
+    "opus": 55,
+    "gap": 5
+   },
+   {
+    "seg_id": "2025-11-07#t858w0",
+    "opus": 55,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "2026-03-20#t2144w0",
+  "seed_opus": 55,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-05-13#t3081w0",
+    "opus": 45,
+    "gap": 10
+   },
+   {
+    "seg_id": "2024-12-13#t847w0",
+    "opus": 45,
+    "gap": 10
+   }
+  ]
+ },
+ {
+  "seed_id": "2026-03-25#t2350w0",
+  "seed_opus": 28,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-03-25#t2403w0",
+    "opus": 25,
+    "gap": 3
+   },
+   {
+    "seg_id": "2026-03-24#t2318w3",
+    "opus": 25,
+    "gap": 3
+   }
+  ]
+ },
+ {
+  "seed_id": "2025-12-04#t1466w0",
+  "seed_opus": 65,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-03-18#t2097w0",
+    "opus": 55,
+    "gap": 10
+   },
+   {
+    "seg_id": "2025-11-07#t858w0",
+    "opus": 55,
+    "gap": 10
+   }
+  ]
+ },
+ {
+  "seed_id": "2026-05-05#t2576w0",
+  "seed_opus": 25,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-03-26#t2472w0",
+    "opus": 22,
+    "gap": 3
+   },
+   {
+    "seg_id": "2026-03-20#t2159w0",
+    "opus": 22,
+    "gap": 3
+   }
+  ]
+ },
+ {
+  "seed_id": "2025-12-04#t1477w0",
+  "seed_opus": 40,
+  "human_exemplars": [
+   {
+    "seg_id": "2025-10-29#t313w0",
+    "opus": 38,
+    "gap": 2
+   },
+   {
+    "seg_id": "2026-03-24#t2246w0",
+    "opus": 35,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "2023-12-05#t14931w2",
+  "seed_opus": 62,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-03-18#t2097w0",
+    "opus": 55,
+    "gap": 7
+   },
+   {
+    "seg_id": "2025-11-07#t858w0",
+    "opus": 55,
+    "gap": 7
+   }
+  ]
+ },
+ {
+  "seed_id": "2026-05-14#t3199w2",
+  "seed_opus": 45,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-03-25#t2355w0",
+    "opus": 42,
+    "gap": 3
+   },
+   {
+    "seg_id": "2026-03-17#t2035w0",
+    "opus": 40,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "2025-12-11#t1877w2",
+  "seed_opus": 15,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-05-07#t2832w1",
+    "opus": 14,
+    "gap": 1
+   },
+   {
+    "seg_id": "2026-03-25#t2412w0",
+    "opus": 14,
+    "gap": 1
+   }
+  ]
+ },
+ {
+  "seed_id": "2023-05-11#t11774w0",
+  "seed_opus": 88,
+  "human_exemplars": [
+   {
+    "seg_id": "2023-11-23#t14342w6",
+    "opus": 75,
+    "gap": 13
+   },
+   {
+    "seg_id": "2023-05-10#t11631w6",
+    "opus": 70,
+    "gap": 18
+   }
+  ]
+ },
+ {
+  "seed_id": "2023-12-05#t14931w4",
+  "seed_opus": 45,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-03-25#t2355w0",
+    "opus": 42,
+    "gap": 3
+   },
+   {
+    "seg_id": "2026-03-17#t2035w0",
+    "opus": 40,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "2025-12-09#t1639w0",
+  "seed_opus": 55,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-05-13#t3081w0",
+    "opus": 45,
+    "gap": 10
+   },
+   {
+    "seg_id": "2024-12-13#t847w0",
+    "opus": 45,
+    "gap": 10
+   }
+  ]
+ },
+ {
+  "seed_id": "2026-05-13#t3072w1",
+  "seed_opus": 80,
+  "human_exemplars": [
+   {
+    "seg_id": "2023-11-23#t14342w6",
+    "opus": 75,
+    "gap": 5
+   },
+   {
+    "seg_id": "2023-05-10#t11631w6",
+    "opus": 70,
+    "gap": 10
+   }
+  ]
+ },
+ {
+  "seed_id": "2025-12-05#t1574w0",
+  "seed_opus": 35,
+  "human_exemplars": [
+   {
+    "seg_id": "2025-12-11#t1813w0",
+    "opus": 32,
+    "gap": 3
+   },
+   {
+    "seg_id": "2026-05-13#t3095w5",
+    "opus": 30,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "2024-05-07#t16123w0",
+  "seed_opus": 18,
+  "human_exemplars": [
+   {
+    "seg_id": "2025-11-06#t836w0",
+    "opus": 16,
+    "gap": 2
+   },
+   {
+    "seg_id": "2024-05-17#t16872w0",
+    "opus": 16,
+    "gap": 2
+   }
+  ]
+ },
+ {
+  "seed_id": "2025-11-18#t1017w3",
+  "seed_opus": 35,
+  "human_exemplars": [
+   {
+    "seg_id": "2025-12-11#t1813w0",
+    "opus": 32,
+    "gap": 3
+   },
+   {
+    "seg_id": "2026-05-13#t3095w5",
+    "opus": 30,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "2026-05-14#t3111w0",
+  "seed_opus": 55,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-05-13#t3081w0",
+    "opus": 45,
+    "gap": 10
+   },
+   {
+    "seg_id": "2024-12-13#t847w0",
+    "opus": 45,
+    "gap": 10
+   }
+  ]
+ },
+ {
+  "seed_id": "2026-03-24#t2305w3",
+  "seed_opus": 70,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-03-18#t2097w0",
+    "opus": 55,
+    "gap": 15
+   },
+   {
+    "seg_id": "2025-11-07#t858w0",
+    "opus": 55,
+    "gap": 15
+   }
+  ]
+ },
+ {
+  "seed_id": "2025-11-06#t803w1",
+  "seed_opus": 80,
+  "human_exemplars": [
+   {
+    "seg_id": "2023-11-23#t14342w6",
+    "opus": 75,
+    "gap": 5
+   },
+   {
+    "seg_id": "2023-05-10#t11631w6",
+    "opus": 70,
+    "gap": 10
+   }
+  ]
+ },
+ {
+  "seed_id": "2025-12-10#t1783w0",
+  "seed_opus": 88,
+  "human_exemplars": [
+   {
+    "seg_id": "2023-11-23#t14342w6",
+    "opus": 75,
+    "gap": 13
+   },
+   {
+    "seg_id": "2023-05-10#t11631w6",
+    "opus": 70,
+    "gap": 18
+   }
+  ]
+ },
+ {
+  "seed_id": "2025-11-05#t690w1",
+  "seed_opus": 35,
+  "human_exemplars": [
+   {
+    "seg_id": "2025-12-11#t1813w0",
+    "opus": 32,
+    "gap": 3
+   },
+   {
+    "seg_id": "2026-05-13#t3095w5",
+    "opus": 30,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "2026-05-08#t2948w0",
+  "seed_opus": 72,
+  "human_exemplars": [
+   {
+    "seg_id": "2023-05-10#t11631w6",
+    "opus": 70,
+    "gap": 2
+   },
+   {
+    "seg_id": "2026-03-18#t2097w0",
+    "opus": 55,
+    "gap": 17
+   }
+  ]
+ },
+ {
+  "seed_id": "2026-05-05#t2582w0",
+  "seed_opus": 22,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-05-13#t3084w0",
+    "opus": 20,
+    "gap": 2
+   },
+   {
+    "seg_id": "2026-03-25#t2363w0",
+    "opus": 20,
+    "gap": 2
+   }
+  ]
+ },
+ {
+  "seed_id": "2024-05-16#t16835w0",
+  "seed_opus": 45,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-03-25#t2355w0",
+    "opus": 42,
+    "gap": 3
+   },
+   {
+    "seg_id": "2026-03-17#t2035w0",
+    "opus": 40,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "2025-11-18#t922w0",
+  "seed_opus": 12,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-05-06#t2693w0",
+    "opus": 10,
+    "gap": 2
+   },
+   {
+    "seg_id": "2026-03-26#t2552w4",
+    "opus": 10,
+    "gap": 2
+   }
+  ]
+ },
+ {
+  "seed_id": "2026-03-20#t2201w0",
+  "seed_opus": 45,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-03-25#t2355w0",
+    "opus": 42,
+    "gap": 3
+   },
+   {
+    "seg_id": "2026-03-17#t2035w0",
+    "opus": 40,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "2026-05-13#t3076w2",
+  "seed_opus": 88,
+  "human_exemplars": [
+   {
+    "seg_id": "2023-11-23#t14342w6",
+    "opus": 75,
+    "gap": 13
+   },
+   {
+    "seg_id": "2023-05-10#t11631w6",
+    "opus": 70,
+    "gap": 18
+   }
+  ]
+ },
+ {
+  "seed_id": "2025-12-03#t1396w0",
+  "seed_opus": 70,
+  "human_exemplars": [
+   {
+    "seg_id": "2026-03-18#t2097w0",
+    "opus": 55,
+    "gap": 15
+   },
+   {
+    "seg_id": "2025-11-07#t858w0",
+    "opus": 55,
+    "gap": 15
+   }
+  ]
+ }
+]

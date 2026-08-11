@@ -1,0 +1,726 @@
+{
+ "seed": [
+  {
+   "seg_id": "2023-05-10#t11631w2",
+   "opus": 45,
+   "n_words": 326,
+   "chamber": "NB",
+   "date": "2023-05-10",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2023-05-11#t11745w0",
+   "opus": 45,
+   "n_words": 282,
+   "chamber": "NB",
+   "date": "2023-05-11",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2023-12-05#t14931w4",
+   "opus": 45,
+   "n_words": 332,
+   "chamber": "NB",
+   "date": "2023-12-05",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2024-05-07#t16123w0",
+   "opus": 18,
+   "n_words": 129,
+   "chamber": "NB",
+   "date": "2024-05-07",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2024-05-16#t16835w0",
+   "opus": 45,
+   "n_words": 306,
+   "chamber": "NB",
+   "date": "2024-05-16",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2024-06-04#t17361w0",
+   "opus": 45,
+   "n_words": 185,
+   "chamber": "NB",
+   "date": "2024-06-04",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-10-24#t112w0",
+   "opus": 45,
+   "n_words": 156,
+   "chamber": "NB",
+   "date": "2025-10-24",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-10-24#t119w0",
+   "opus": 35,
+   "n_words": 160,
+   "chamber": "NB",
+   "date": "2025-10-24",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-10-24#t162w0",
+   "opus": 30,
+   "n_words": 206,
+   "chamber": "NB",
+   "date": "2025-10-24",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-10-24#t178w1",
+   "opus": 38,
+   "n_words": 329,
+   "chamber": "NB",
+   "date": "2025-10-24",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-10-29#t305w0",
+   "opus": 45,
+   "n_words": 222,
+   "chamber": "NB",
+   "date": "2025-10-29",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-10-30#t427w0",
+   "opus": 22,
+   "n_words": 230,
+   "chamber": "NB",
+   "date": "2025-10-30",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-10-30#t430w0",
+   "opus": 45,
+   "n_words": 176,
+   "chamber": "NB",
+   "date": "2025-10-30",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-11-04#t559w0",
+   "opus": 40,
+   "n_words": 150,
+   "chamber": "NB",
+   "date": "2025-11-04",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-11-05#t690w1",
+   "opus": 35,
+   "n_words": 302,
+   "chamber": "NB",
+   "date": "2025-11-05",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-11-18#t1017w3",
+   "opus": 35,
+   "n_words": 211,
+   "chamber": "NB",
+   "date": "2025-11-18",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-11-18#t922w0",
+   "opus": 12,
+   "n_words": 91,
+   "chamber": "NB",
+   "date": "2025-11-18",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-11-20#t1101w0",
+   "opus": 30,
+   "n_words": 148,
+   "chamber": "NB",
+   "date": "2025-11-20",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-12-02#t1365w0",
+   "opus": 45,
+   "n_words": 143,
+   "chamber": "NB",
+   "date": "2025-12-02",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-12-04#t1477w0",
+   "opus": 40,
+   "n_words": 136,
+   "chamber": "NB",
+   "date": "2025-12-04",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-12-04#t1516w1",
+   "opus": 35,
+   "n_words": 90,
+   "chamber": "NB",
+   "date": "2025-12-04",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-12-05#t1574w0",
+   "opus": 35,
+   "n_words": 165,
+   "chamber": "NB",
+   "date": "2025-12-05",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-12-09#t1625w0",
+   "opus": 45,
+   "n_words": 159,
+   "chamber": "NB",
+   "date": "2025-12-09",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-12-09#t1632w0",
+   "opus": 45,
+   "n_words": 132,
+   "chamber": "NB",
+   "date": "2025-12-09",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-12-10#t1730w0",
+   "opus": 30,
+   "n_words": 142,
+   "chamber": "NB",
+   "date": "2025-12-10",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-12-10#t1743w0",
+   "opus": 30,
+   "n_words": 160,
+   "chamber": "NB",
+   "date": "2025-12-10",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-12-10#t1773w0",
+   "opus": 25,
+   "n_words": 145,
+   "chamber": "NB",
+   "date": "2025-12-10",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-12-11#t1859w0",
+   "opus": 45,
+   "n_words": 333,
+   "chamber": "NB",
+   "date": "2025-12-11",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2025-12-11#t1877w2",
+   "opus": 15,
+   "n_words": 119,
+   "chamber": "NB",
+   "date": "2025-12-11",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2026-03-20#t2201w0",
+   "opus": 45,
+   "n_words": 170,
+   "chamber": "NB",
+   "date": "2026-03-20",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2026-03-25#t2350w0",
+   "opus": 28,
+   "n_words": 150,
+   "chamber": "NB",
+   "date": "2026-03-25",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2026-03-26#t2533w0",
+   "opus": 45,
+   "n_words": 149,
+   "chamber": "NB",
+   "date": "2026-03-26",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2026-05-05#t2576w0",
+   "opus": 25,
+   "n_words": 154,
+   "chamber": "NB",
+   "date": "2026-05-05",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2026-05-05#t2582w0",
+   "opus": 22,
+   "n_words": 115,
+   "chamber": "NB",
+   "date": "2026-05-05",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2026-05-06#t2644w0",
+   "opus": 35,
+   "n_words": 161,
+   "chamber": "NB",
+   "date": "2026-05-06",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2026-05-06#t2648w0",
+   "opus": 45,
+   "n_words": 148,
+   "chamber": "NB",
+   "date": "2026-05-06",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2026-05-06#t2699w0",
+   "opus": 30,
+   "n_words": 130,
+   "chamber": "NB",
+   "date": "2026-05-06",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2026-05-06#t2700w0",
+   "opus": 35,
+   "n_words": 174,
+   "chamber": "NB",
+   "date": "2026-05-06",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2026-05-06#t2742w1",
+   "opus": 45,
+   "n_words": 318,
+   "chamber": "NB",
+   "date": "2026-05-06",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2026-05-08#t2909w0",
+   "opus": 35,
+   "n_words": 153,
+   "chamber": "NB",
+   "date": "2026-05-08",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2026-05-13#t3057w0",
+   "opus": 28,
+   "n_words": 203,
+   "chamber": "NB",
+   "date": "2026-05-13",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2026-05-13#t3058w0",
+   "opus": 45,
+   "n_words": 126,
+   "chamber": "NB",
+   "date": "2026-05-13",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2026-05-14#t3160w0",
+   "opus": 45,
+   "n_words": 185,
+   "chamber": "NB",
+   "date": "2026-05-14",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2026-05-14#t3166w1",
+   "opus": 38,
+   "n_words": 360,
+   "chamber": "NB",
+   "date": "2026-05-14",
+   "verdict": "AI"
+  },
+  {
+   "seg_id": "2026-05-14#t3199w2",
+   "opus": 45,
+   "n_words": 332,
+   "chamber": "NB",
+   "date": "2026-05-14",
+   "verdict": "AI"
+  }
+ ],
+ "control": [
+  {
+   "seg_id": "2025-11-04#t543w0",
+   "opus": 10,
+   "n_words": 89,
+   "chamber": "NB",
+   "date": "2025-11-04",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2019-11-27#t221w0",
+   "opus": 5,
+   "n_words": 92,
+   "chamber": "NB",
+   "date": "2019-11-27",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2023-11-02#t13834w0",
+   "opus": 8,
+   "n_words": 115,
+   "chamber": "NB",
+   "date": "2023-11-02",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2020-06-10#t4399w0",
+   "opus": 12,
+   "n_words": 118,
+   "chamber": "NB",
+   "date": "2020-06-10",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2023-11-02#t13802w0",
+   "opus": 6,
+   "n_words": 126,
+   "chamber": "NB",
+   "date": "2023-11-02",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2021-11-10#t4316w0",
+   "opus": 10,
+   "n_words": 129,
+   "chamber": "NB",
+   "date": "2021-11-10",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2021-05-19#t2675w0",
+   "opus": 4,
+   "n_words": 130,
+   "chamber": "NB",
+   "date": "2021-05-19",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2019-11-27#t160w0",
+   "opus": 8,
+   "n_words": 132,
+   "chamber": "NB",
+   "date": "2019-11-27",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2025-11-06#t766w0",
+   "opus": 18,
+   "n_words": 136,
+   "chamber": "NB",
+   "date": "2025-11-06",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2025-10-28#t197w0",
+   "opus": 12,
+   "n_words": 142,
+   "chamber": "NB",
+   "date": "2025-10-28",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2022-11-18#t9496w0",
+   "opus": 14,
+   "n_words": 143,
+   "chamber": "NB",
+   "date": "2022-11-18",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2025-10-22#t18w0",
+   "opus": 10,
+   "n_words": 144,
+   "chamber": "NB",
+   "date": "2025-10-22",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2025-11-18#t951w0",
+   "opus": 10,
+   "n_words": 148,
+   "chamber": "NB",
+   "date": "2025-11-18",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2019-11-27#t137w0",
+   "opus": 22,
+   "n_words": 147,
+   "chamber": "NB",
+   "date": "2019-11-27",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2021-12-10#t5579w0",
+   "opus": 3,
+   "n_words": 149,
+   "chamber": "NB",
+   "date": "2021-12-10",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2023-05-11#t11695w0",
+   "opus": 8,
+   "n_words": 150,
+   "chamber": "NB",
+   "date": "2023-05-11",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2023-06-13#t12656w0",
+   "opus": 14,
+   "n_words": 150,
+   "chamber": "NB",
+   "date": "2023-06-13",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2021-05-20#t2768w0",
+   "opus": 8,
+   "n_words": 153,
+   "chamber": "NB",
+   "date": "2021-05-20",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2021-05-21#t2914w0",
+   "opus": 20,
+   "n_words": 154,
+   "chamber": "NB",
+   "date": "2021-05-21",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2021-12-02#t4983w0",
+   "opus": 7,
+   "n_words": 156,
+   "chamber": "NB",
+   "date": "2021-12-02",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2019-11-27#t140w0",
+   "opus": 14,
+   "n_words": 159,
+   "chamber": "NB",
+   "date": "2019-11-27",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2021-11-04#t4018w0",
+   "opus": 6,
+   "n_words": 160,
+   "chamber": "NB",
+   "date": "2021-11-04",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2023-03-22#t10904w0",
+   "opus": 6,
+   "n_words": 160,
+   "chamber": "NB",
+   "date": "2023-03-22",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2020-06-10#t4368w0",
+   "opus": 9,
+   "n_words": 161,
+   "chamber": "NB",
+   "date": "2020-06-10",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2019-12-12#t330w0",
+   "opus": 8,
+   "n_words": 165,
+   "chamber": "NB",
+   "date": "2019-12-12",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2019-05-10#t82w0",
+   "opus": 8,
+   "n_words": 170,
+   "chamber": "NB",
+   "date": "2019-05-10",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2020-03-11#t3747w0",
+   "opus": 6,
+   "n_words": 173,
+   "chamber": "NB",
+   "date": "2020-03-11",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2024-11-22#t207w0",
+   "opus": 20,
+   "n_words": 176,
+   "chamber": "NB",
+   "date": "2024-11-22",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2021-06-02#t3064w0",
+   "opus": 12,
+   "n_words": 185,
+   "chamber": "NB",
+   "date": "2021-06-02",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2024-05-07#t16172w0",
+   "opus": 5,
+   "n_words": 185,
+   "chamber": "NB",
+   "date": "2024-05-07",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2022-03-30#t6300w0",
+   "opus": 3,
+   "n_words": 203,
+   "chamber": "NB",
+   "date": "2022-03-30",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2020-05-27#t4140w0",
+   "opus": 6,
+   "n_words": 206,
+   "chamber": "NB",
+   "date": "2020-05-27",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2023-10-25#t13366w0",
+   "opus": 6,
+   "n_words": 210,
+   "chamber": "NB",
+   "date": "2023-10-25",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2019-05-10#t30w0",
+   "opus": 35,
+   "n_words": 224,
+   "chamber": "NB",
+   "date": "2019-05-10",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2023-11-22#t14123w0",
+   "opus": 10,
+   "n_words": 229,
+   "chamber": "NB",
+   "date": "2023-11-22",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2019-11-19#t116w13",
+   "opus": 30,
+   "n_words": 281,
+   "chamber": "NB",
+   "date": "2019-11-19",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2019-12-12#t385w7",
+   "opus": 5,
+   "n_words": 303,
+   "chamber": "NB",
+   "date": "2019-12-12",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2022-03-25#t6141w2",
+   "opus": 4,
+   "n_words": 306,
+   "chamber": "NB",
+   "date": "2022-03-25",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2022-06-08#t7832w0",
+   "opus": 6,
+   "n_words": 318,
+   "chamber": "NB",
+   "date": "2022-06-08",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2023-05-10#t11631w6",
+   "opus": 70,
+   "n_words": 325,
+   "chamber": "NB",
+   "date": "2023-05-10",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2023-10-25#t13426w0",
+   "opus": 4,
+   "n_words": 329,
+   "chamber": "NB",
+   "date": "2023-10-25",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2022-05-11#t6662w1",
+   "opus": 12,
+   "n_words": 332,
+   "chamber": "NB",
+   "date": "2022-05-11",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2022-12-14#t10596w0",
+   "opus": 6,
+   "n_words": 332,
+   "chamber": "NB",
+   "date": "2022-12-14",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2025-10-30#t515w1",
+   "opus": 12,
+   "n_words": 333,
+   "chamber": "NB",
+   "date": "2025-10-30",
+   "verdict": "Human"
+  },
+  {
+   "seg_id": "2019-05-10#t108w0",
+   "opus": 15,
+   "n_words": 359,
+   "chamber": "NB",
+   "date": "2019-05-10",
+   "verdict": "Human"
+  }
+ ]
+}

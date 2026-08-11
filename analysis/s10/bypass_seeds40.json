@@ -1,0 +1,282 @@
+[
+ {
+  "seg_id": "2026-05-06#t2699w0",
+  "opus": 30,
+  "n_words": 130,
+  "date": "2026-05-06",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2025-12-11#t1859w0",
+  "opus": 45,
+  "n_words": 333,
+  "date": "2025-12-11",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2025-12-02#t1365w0",
+  "opus": 45,
+  "n_words": 143,
+  "date": "2025-12-02",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2026-05-06#t2648w0",
+  "opus": 45,
+  "n_words": 148,
+  "date": "2026-05-06",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2025-10-24#t178w1",
+  "opus": 38,
+  "n_words": 329,
+  "date": "2025-10-24",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2025-12-09#t1625w0",
+  "opus": 45,
+  "n_words": 159,
+  "date": "2025-12-09",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2026-03-18#t2135w12",
+  "opus": 85,
+  "n_words": 344,
+  "date": "2026-03-18",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2026-05-07#t2871w4",
+  "opus": 88,
+  "n_words": 351,
+  "date": "2026-05-07",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2025-12-10#t1743w0",
+  "opus": 30,
+  "n_words": 160,
+  "date": "2025-12-10",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2025-11-05#t632w0",
+  "opus": 65,
+  "n_words": 137,
+  "date": "2025-11-05",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2026-05-14#t3166w1",
+  "opus": 38,
+  "n_words": 360,
+  "date": "2026-05-14",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2024-05-16#t16835w1",
+  "opus": 78,
+  "n_words": 357,
+  "date": "2024-05-16",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2025-12-04#t1550w1",
+  "opus": 60,
+  "n_words": 306,
+  "date": "2025-12-04",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2026-03-20#t2144w0",
+  "opus": 55,
+  "n_words": 120,
+  "date": "2026-03-20",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2026-03-25#t2350w0",
+  "opus": 28,
+  "n_words": 150,
+  "date": "2026-03-25",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2025-12-04#t1466w0",
+  "opus": 65,
+  "n_words": 159,
+  "date": "2025-12-04",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2026-05-05#t2576w0",
+  "opus": 25,
+  "n_words": 154,
+  "date": "2026-05-05",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2025-12-04#t1477w0",
+  "opus": 40,
+  "n_words": 136,
+  "date": "2025-12-04",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2023-12-05#t14931w2",
+  "opus": 62,
+  "n_words": 320,
+  "date": "2023-12-05",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2026-05-14#t3199w2",
+  "opus": 45,
+  "n_words": 332,
+  "date": "2026-05-14",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2025-12-11#t1877w2",
+  "opus": 15,
+  "n_words": 119,
+  "date": "2025-12-11",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2023-05-11#t11774w0",
+  "opus": 88,
+  "n_words": 358,
+  "date": "2023-05-11",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2023-12-05#t14931w4",
+  "opus": 45,
+  "n_words": 332,
+  "date": "2023-12-05",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2025-12-09#t1639w0",
+  "opus": 55,
+  "n_words": 138,
+  "date": "2025-12-09",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2026-05-13#t3072w1",
+  "opus": 80,
+  "n_words": 351,
+  "date": "2026-05-13",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2025-12-05#t1574w0",
+  "opus": 35,
+  "n_words": 165,
+  "date": "2025-12-05",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2024-05-07#t16123w0",
+  "opus": 18,
+  "n_words": 129,
+  "date": "2024-05-07",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2025-11-18#t1017w3",
+  "opus": 35,
+  "n_words": 211,
+  "date": "2025-11-18",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2026-05-14#t3111w0",
+  "opus": 55,
+  "n_words": 155,
+  "date": "2026-05-14",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2026-03-24#t2305w3",
+  "opus": 70,
+  "n_words": 208,
+  "date": "2026-03-24",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2025-11-06#t803w1",
+  "opus": 80,
+  "n_words": 332,
+  "date": "2025-11-06",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2025-12-10#t1783w0",
+  "opus": 88,
+  "n_words": 261,
+  "date": "2025-12-10",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2025-11-05#t690w1",
+  "opus": 35,
+  "n_words": 302,
+  "date": "2025-11-05",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2026-05-08#t2948w0",
+  "opus": 72,
+  "n_words": 248,
+  "date": "2026-05-08",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2026-05-05#t2582w0",
+  "opus": 22,
+  "n_words": 115,
+  "date": "2026-05-05",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2024-05-16#t16835w0",
+  "opus": 45,
+  "n_words": 306,
+  "date": "2024-05-16",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2025-11-18#t922w0",
+  "opus": 12,
+  "n_words": 91,
+  "date": "2025-11-18",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2026-03-20#t2201w0",
+  "opus": 45,
+  "n_words": 170,
+  "date": "2026-03-20",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2026-05-13#t3076w2",
+  "opus": 88,
+  "n_words": 352,
+  "date": "2026-05-13",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "2025-12-03#t1396w0",
+  "opus": 70,
+  "n_words": 130,
+  "date": "2025-12-03",
+  "verdict": "AI"
+ }
+]

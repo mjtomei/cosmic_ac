@@ -38,8 +38,12 @@ export const meta = {
 //           verdict rather than an LLM screen (207 AI / 134 Mixed / 341
 //           Human). Cannot control genre; fixes the power problem instead.
 const HERE = '/home/matt/performance_commons/analysis/s10/quality_expansion'
-const STAGE = (typeof args === 'object' && args && args.stage) !== undefined
-  ? args.stage : 1
+// args can arrive as a JSON-encoded STRING rather than an object depending on
+// how the Workflow tool is invoked. Parse both forms. Without this, every
+// stage silently falls back to 1 and grades the wrong pool -- a footgun that
+// had to be re-fixed by hand on arch-home after each new stage was shipped.
+const A = typeof args === 'string' ? JSON.parse(args) : args
+const STAGE = (A && A.stage !== undefined) ? A.stage : 1
 // stage 0 = REPLICATION of the PUBLISHED v2 run: judge_blind_pool.json,
 // 241 segments, S-prefixed ids, compared per-segment against
 // fable_judge_v2_scores.csv.
@@ -52,12 +56,21 @@ const STAGE = (typeof args === 'object' && args && args.stage) !== undefined
 //
 // ai_guess comes from the judge itself as in the original, so stage 0 runs no
 // separate Screen phase.
-const POOL = STAGE === 0 ? `${HERE}/judge_blind_pool.json`
+// stage 3 = PAIRED humanized-vs-original. 38 texts, each contributing its
+// unmodified original AND its best detector-evading rewrite, blinded and
+// interleaved. Within-text pairing means DQI differences are attributable to
+// the rewrite rather than to content, speaker or occasion.
+// stage 4 = the Government Orders arm of the same paired design, kept
+// separate from stage 3 so the two chambers can be checked for
+// consistency BEFORE pooling rather than merged by default.
+const POOL = STAGE === 4 ? `${HERE}/pool4.json`
+           : STAGE === 3 ? `${HERE}/pool3.json`
+           : STAGE === 0 ? `${HERE}/judge_blind_pool.json`
            : STAGE === 2 ? `${HERE}/pool2.json`
            : `${HERE}/pool.json`
-const N = STAGE === 0 ? 241 : STAGE === 2 ? 682 : 840
-const PREFIX = STAGE === 0 ? 'S' : STAGE === 2 ? 'R' : 'Q'
-const PAD = STAGE === 0 ? 3 : 4
+const N = STAGE === 4 ? 50 : STAGE === 3 ? 76 : STAGE === 0 ? 241 : STAGE === 2 ? 682 : 840
+const PREFIX = STAGE === 4 ? 'G' : STAGE === 3 ? 'H' : STAGE === 0 ? 'S' : STAGE === 2 ? 'R' : 'Q'
+const PAD = (STAGE === 0 || STAGE === 3 || STAGE === 4) ? 3 : 4
 
 const ids = Array.from({length: N}, (_, i) => PREFIX + String(i).padStart(PAD, '0'))
 
@@ -180,7 +193,7 @@ Read the JSON file ${POOL} (Read tool). It maps segment IDs to text. Score ONLY 
 
 // ---------- run ----------
 phase('Screen')
-const screened = STAGE === 0 ? [] : (log(
+const screened = (STAGE === 0 || STAGE === 3 || STAGE === 4) ? [] : (log(
   `Blinded AI screen over ${N} segments in ${screenBatches.length} batches`),
   await parallel(screenBatches.map((b, i) => () =>
   agent(screenPrompt(b), {

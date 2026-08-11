@@ -1,0 +1,642 @@
+[
+ {
+  "id": "gv000",
+  "seg_id": "CA2026-03-23#t232w1",
+  "opus3x": 28.3,
+  "plaus": 90.7,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 295
+ },
+ {
+  "id": "gv001",
+  "seg_id": "CA2025-11-28#t7w2",
+  "opus3x": 29,
+  "plaus": 90,
+  "hypothesis": "Lexical recycling",
+  "n_words": 358
+ },
+ {
+  "id": "gv002",
+  "seg_id": "CA2026-05-26#t20w0",
+  "opus3x": 31.7,
+  "plaus": 88.7,
+  "hypothesis": "Lexical recycling",
+  "n_words": 320
+ },
+ {
+  "id": "gv003",
+  "seg_id": "CA2025-11-04#t61w0",
+  "opus3x": 33.3,
+  "plaus": 92.3,
+  "hypothesis": "1. Lexical recycling",
+  "n_words": 341
+ },
+ {
+  "id": "gv004",
+  "seg_id": "CA2025-06-11#t107w1",
+  "opus3x": 36.7,
+  "plaus": 88,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 347
+ },
+ {
+  "id": "gv005",
+  "seg_id": "CA2026-03-23#t180w2",
+  "opus3x": 37.7,
+  "plaus": 90,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 383
+ },
+ {
+  "id": "gv006",
+  "seg_id": "CA2026-03-23#t232w1",
+  "opus3x": 37.7,
+  "plaus": 90,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 283
+ },
+ {
+  "id": "gv007",
+  "seg_id": "CA2025-11-28#t7w2",
+  "opus3x": 38.3,
+  "plaus": 88.7,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 383
+ },
+ {
+  "id": "gv008",
+  "seg_id": "CA2025-11-25#t235w2",
+  "opus3x": 38.3,
+  "plaus": 88,
+  "hypothesis": "Downgraded modality on your own proposal",
+  "n_words": 362
+ },
+ {
+  "id": "gv009",
+  "seg_id": "CA2026-05-28#t71w1",
+  "opus3x": 39.3,
+  "plaus": 86.3,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 347
+ },
+ {
+  "id": "gv010",
+  "seg_id": "CA2025-06-13#t0w4",
+  "opus3x": 39.3,
+  "plaus": 84,
+  "hypothesis": "Downgraded modality on your own proposal",
+  "n_words": 366
+ },
+ {
+  "id": "gv011",
+  "seg_id": "CA2025-09-18#t31w1",
+  "opus3x": 40,
+  "plaus": 85,
+  "hypothesis": "Lexical recycling",
+  "n_words": 350
+ },
+ {
+  "id": "gv012",
+  "seg_id": "CA2025-11-25#t235w2",
+  "opus3x": 40,
+  "plaus": 89.3,
+  "hypothesis": "Lists overrun and decay",
+  "n_words": 383
+ },
+ {
+  "id": "gv013",
+  "seg_id": "CA2025-06-13#t0w4",
+  "opus3x": 40,
+  "plaus": 84.3,
+  "hypothesis": "1. Lexical recycling",
+  "n_words": 384
+ },
+ {
+  "id": "gv014",
+  "seg_id": "CA2025-11-04#t61w0",
+  "opus3x": 40.3,
+  "plaus": 84,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 352
+ },
+ {
+  "id": "gv015",
+  "seg_id": "CA2025-11-25#t235w2",
+  "opus3x": 40.7,
+  "plaus": 85.3,
+  "hypothesis": "Additive, not the negated-foil reframe",
+  "n_words": 345
+ },
+ {
+  "id": "gv016",
+  "seg_id": "CA2025-09-18#t31w1",
+  "opus3x": 40.7,
+  "plaus": 83.3,
+  "hypothesis": "Anticlimactic ending",
+  "n_words": 362
+ },
+ {
+  "id": "gv017",
+  "seg_id": "CA2025-09-18#t31w1",
+  "opus3x": 41,
+  "plaus": 85.3,
+  "hypothesis": "Lexical recycling",
+  "n_words": 351
+ },
+ {
+  "id": "gv018",
+  "seg_id": "CA2025-11-28#t7w2",
+  "opus3x": 41,
+  "plaus": 88,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 377
+ },
+ {
+  "id": "gv019",
+  "seg_id": "CA2025-11-25#t235w2",
+  "opus3x": 41.3,
+  "plaus": 85.7,
+  "hypothesis": "Lexical recycling",
+  "n_words": 371
+ },
+ {
+  "id": "gv020",
+  "seg_id": "CA2025-11-04#t61w0",
+  "opus3x": 41.3,
+  "plaus": 87.3,
+  "hypothesis": "Lexical recycling",
+  "n_words": 333
+ },
+ {
+  "id": "gv021",
+  "seg_id": "CA2026-03-23#t232w1",
+  "opus3x": 41.7,
+  "plaus": 83.3,
+  "hypothesis": "Additive, not the negated-foil reframe",
+  "n_words": 290
+ },
+ {
+  "id": "gv022",
+  "seg_id": "CA2026-05-28#t259w1",
+  "opus3x": 42,
+  "plaus": 89.3,
+  "hypothesis": "No one-beat sentence",
+  "n_words": 344
+ },
+ {
+  "id": "gv023",
+  "seg_id": "CA2025-11-18#t262w0",
+  "opus3x": 42.3,
+  "plaus": 86.7,
+  "hypothesis": "Lexical recycling",
+  "n_words": 393
+ },
+ {
+  "id": "gv024",
+  "seg_id": "CA2025-11-18#t262w0",
+  "opus3x": 42.7,
+  "plaus": 87,
+  "hypothesis": "Lexical recycling",
+  "n_words": 371
+ },
+ {
+  "id": "gv025",
+  "seg_id": "CA2025-11-25#t235w2",
+  "opus3x": 43,
+  "plaus": 85.7,
+  "hypothesis": "Lists overrun and decay",
+  "n_words": 389
+ },
+ {
+  "id": "gv026",
+  "seg_id": "CA2025-10-02#t337w3",
+  "opus3x": 43.3,
+  "plaus": 88,
+  "hypothesis": "Anticlimactic ending",
+  "n_words": 354
+ },
+ {
+  "id": "gv027",
+  "seg_id": "CA2025-11-28#t7w2",
+  "opus3x": 43.3,
+  "plaus": 82.3,
+  "hypothesis": "Lists overrun and decay",
+  "n_words": 385
+ },
+ {
+  "id": "gv028",
+  "seg_id": "CA2026-05-07#t32w8",
+  "opus3x": 43.3,
+  "plaus": 83.3,
+  "hypothesis": "Anticlimactic ending",
+  "n_words": 279
+ },
+ {
+  "id": "gv029",
+  "seg_id": "CA2025-06-13#t0w4",
+  "opus3x": 43.3,
+  "plaus": 85,
+  "hypothesis": "Lexical recycling",
+  "n_words": 344
+ },
+ {
+  "id": "gv030",
+  "seg_id": "CA2025-09-18#t31w1",
+  "opus3x": 43.3,
+  "plaus": 81.7,
+  "hypothesis": "No one-beat sentence",
+  "n_words": 337
+ },
+ {
+  "id": "gv031",
+  "seg_id": "CA2026-05-28#t71w0",
+  "opus3x": 43.3,
+  "plaus": 88,
+  "hypothesis": "Lexical recycling",
+  "n_words": 376
+ },
+ {
+  "id": "gv032",
+  "seg_id": "CA2026-05-28#t259w1",
+  "opus3x": 43.3,
+  "plaus": 89.3,
+  "hypothesis": "Lexical recycling",
+  "n_words": 338
+ },
+ {
+  "id": "gv033",
+  "seg_id": "CA2025-11-25#t235w2",
+  "opus3x": 43.3,
+  "plaus": 84.7,
+  "hypothesis": "Anticlimactic ending",
+  "n_words": 350
+ },
+ {
+  "id": "gv034",
+  "seg_id": "CA2025-11-28#t7w2",
+  "opus3x": 43.7,
+  "plaus": 86,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 379
+ },
+ {
+  "id": "gv035",
+  "seg_id": "CA2026-02-09#t9w3",
+  "opus3x": 44,
+  "plaus": 86,
+  "hypothesis": "Lists overrun and decay",
+  "n_words": 176
+ },
+ {
+  "id": "gv036",
+  "seg_id": "CA2026-03-23#t232w1",
+  "opus3x": 44,
+  "plaus": 86,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 281
+ },
+ {
+  "id": "gv037",
+  "seg_id": "CA2025-09-18#t31w1",
+  "opus3x": 44,
+  "plaus": 87.7,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 369
+ },
+ {
+  "id": "gv038",
+  "seg_id": "CA2025-06-13#t0w4",
+  "opus3x": 44,
+  "plaus": 83,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 382
+ },
+ {
+  "id": "gv039",
+  "seg_id": "CA2025-11-04#t61w0",
+  "opus3x": 44.3,
+  "plaus": 84,
+  "hypothesis": "8. Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 351
+ },
+ {
+  "id": "gv040",
+  "seg_id": "CA2025-11-25#t235w2",
+  "opus3x": 44.7,
+  "plaus": 86.3,
+  "hypothesis": "Anticlimactic ending",
+  "n_words": 379
+ },
+ {
+  "id": "gv041",
+  "seg_id": "CA2026-05-07#t32w8",
+  "opus3x": 45,
+  "plaus": 83.5,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 321
+ },
+ {
+  "id": "gv042",
+  "seg_id": "CA2025-11-25#t235w2",
+  "opus3x": 45,
+  "plaus": 80,
+  "hypothesis": "Additive, not the negated-foil reframe",
+  "n_words": 339
+ },
+ {
+  "id": "gv043",
+  "seg_id": "CA2025-11-28#t137w0",
+  "opus3x": 45,
+  "plaus": 89.3,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 382
+ },
+ {
+  "id": "gv044",
+  "seg_id": "CA2025-09-18#t31w1",
+  "opus3x": 45,
+  "plaus": 86.3,
+  "hypothesis": "No one-beat sentence",
+  "n_words": 343
+ },
+ {
+  "id": "gv045",
+  "seg_id": "CA2026-02-09#t9w3",
+  "opus3x": 45,
+  "plaus": 84,
+  "hypothesis": "No one-beat sentence",
+  "n_words": 193
+ },
+ {
+  "id": "gv046",
+  "seg_id": "CA2026-05-26#t20w0",
+  "opus3x": 45,
+  "plaus": 86,
+  "hypothesis": "Lists overrun and decay",
+  "n_words": 348
+ },
+ {
+  "id": "gv047",
+  "seg_id": "CA2026-05-07#t32w8",
+  "opus3x": 45,
+  "plaus": 88,
+  "hypothesis": "6. Anticlimactic ending",
+  "n_words": 279
+ },
+ {
+  "id": "gv048",
+  "seg_id": "CA2025-06-11#t172w2",
+  "opus3x": 45,
+  "plaus": 86,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 396
+ },
+ {
+  "id": "gv049",
+  "seg_id": "CA2025-06-11#t172w2",
+  "opus3x": 45,
+  "plaus": 86,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 395
+ },
+ {
+  "id": "gv050",
+  "seg_id": "CA2026-06-16#t79w2",
+  "opus3x": 45.7,
+  "plaus": 86.7,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 399
+ },
+ {
+  "id": "gv051",
+  "seg_id": "CA2026-05-26#t20w0",
+  "opus3x": 46,
+  "plaus": 85.3,
+  "hypothesis": "Anticlimactic ending",
+  "n_words": 330
+ },
+ {
+  "id": "gv052",
+  "seg_id": "CA2025-11-18#t262w0",
+  "opus3x": 46,
+  "plaus": 85.3,
+  "hypothesis": "Lexical recycling",
+  "n_words": 377
+ },
+ {
+  "id": "gv053",
+  "seg_id": "CA2025-12-02#t272w0",
+  "opus3x": 46,
+  "plaus": 84.3,
+  "hypothesis": "Anticlimactic ending",
+  "n_words": 373
+ },
+ {
+  "id": "gv054",
+  "seg_id": "CA2026-05-28#t71w1",
+  "opus3x": 46,
+  "plaus": 77.3,
+  "hypothesis": "Additive, not the negated-foil reframe",
+  "n_words": 333
+ },
+ {
+  "id": "gv055",
+  "seg_id": "CA2026-04-28#t22w2",
+  "opus3x": 46.3,
+  "plaus": 87,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 373
+ },
+ {
+  "id": "gv056",
+  "seg_id": "CA2026-05-28#t71w1",
+  "opus3x": 46.7,
+  "plaus": 80,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 365
+ },
+ {
+  "id": "gv057",
+  "seg_id": "CA2026-02-09#t9w3",
+  "opus3x": 46.7,
+  "plaus": 80,
+  "hypothesis": "Anticlimactic ending",
+  "n_words": 171
+ },
+ {
+  "id": "gv058",
+  "seg_id": "CA2026-03-23#t232w1",
+  "opus3x": 46.7,
+  "plaus": 77.7,
+  "hypothesis": "Lexical recycling",
+  "n_words": 278
+ },
+ {
+  "id": "gv059",
+  "seg_id": "CA2025-11-28#t137w0",
+  "opus3x": 47.3,
+  "plaus": 88,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 379
+ },
+ {
+  "id": "gv060",
+  "seg_id": "CA2025-11-04#t61w0",
+  "opus3x": 47.7,
+  "plaus": 81.3,
+  "hypothesis": "Downgraded modality on your own proposal",
+  "n_words": 326
+ },
+ {
+  "id": "gv061",
+  "seg_id": "CA2025-06-11#t172w2",
+  "opus3x": 47.7,
+  "plaus": 87.3,
+  "hypothesis": "Lists overrun and decay",
+  "n_words": 414
+ },
+ {
+  "id": "gv062",
+  "seg_id": "CA2025-12-02#t272w0",
+  "opus3x": 47.7,
+  "plaus": 85,
+  "hypothesis": "Lexical recycling",
+  "n_words": 346
+ },
+ {
+  "id": "gv063",
+  "seg_id": "CA2026-04-28#t110w3",
+  "opus3x": 48.3,
+  "plaus": 74.3,
+  "hypothesis": "Downgraded modality on your own proposal",
+  "n_words": 157
+ },
+ {
+  "id": "gv064",
+  "seg_id": "CA2026-03-23#t180w2",
+  "opus3x": 48.3,
+  "plaus": 88.3,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 367
+ },
+ {
+  "id": "gv065",
+  "seg_id": "CA2026-03-23#t232w1",
+  "opus3x": 48.3,
+  "plaus": 85.3,
+  "hypothesis": "Lexical recycling",
+  "n_words": 273
+ },
+ {
+  "id": "gv066",
+  "seg_id": "CA2026-05-28#t259w1",
+  "opus3x": 48.3,
+  "plaus": 88.7,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 353
+ },
+ {
+  "id": "gv067",
+  "seg_id": "CA2026-02-09#t9w3",
+  "opus3x": 48.3,
+  "plaus": 76.7,
+  "hypothesis": "Lists overrun and decay",
+  "n_words": 168
+ },
+ {
+  "id": "gv068",
+  "seg_id": "CA2025-06-13#t0w4",
+  "opus3x": 48.3,
+  "plaus": 83.3,
+  "hypothesis": "8. Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 377
+ },
+ {
+  "id": "gv069",
+  "seg_id": "CA2026-05-28#t71w0",
+  "opus3x": 48.3,
+  "plaus": 88,
+  "hypothesis": "Lexical recycling",
+  "n_words": 355
+ },
+ {
+  "id": "gv070",
+  "seg_id": "CA2025-06-11#t107w1",
+  "opus3x": 48.3,
+  "plaus": 84,
+  "hypothesis": "Lexical recycling",
+  "n_words": 303
+ },
+ {
+  "id": "gv071",
+  "seg_id": "CA2025-11-18#t262w0",
+  "opus3x": 48.3,
+  "plaus": 86,
+  "hypothesis": "No one-beat sentence",
+  "n_words": 361
+ },
+ {
+  "id": "gv072",
+  "seg_id": "CA2025-11-18#t262w0",
+  "opus3x": 48.7,
+  "plaus": 81.7,
+  "hypothesis": "Anticlimactic ending",
+  "n_words": 378
+ },
+ {
+  "id": "gv073",
+  "seg_id": "CA2025-11-04#t61w0",
+  "opus3x": 49,
+  "plaus": 81.7,
+  "hypothesis": "Additive, not the negated-foil reframe",
+  "n_words": 317
+ },
+ {
+  "id": "gv074",
+  "seg_id": "CA2025-11-18#t262w0",
+  "opus3x": 49,
+  "plaus": 85,
+  "hypothesis": "Additive, not the negated-foil reframe",
+  "n_words": 363
+ },
+ {
+  "id": "gv075",
+  "seg_id": "CA2025-09-18#t31w1",
+  "opus3x": 49,
+  "plaus": 84.3,
+  "hypothesis": "Lexical recycling",
+  "n_words": 362
+ },
+ {
+  "id": "gv076",
+  "seg_id": "CA2025-11-25#t235w2",
+  "opus3x": 49.3,
+  "plaus": 79.7,
+  "hypothesis": "Lists overrun and decay",
+  "n_words": 387
+ },
+ {
+  "id": "gv077",
+  "seg_id": "CA2026-05-28#t241w1",
+  "opus3x": 49.3,
+  "plaus": 87,
+  "hypothesis": "Lexical recycling",
+  "n_words": 374
+ },
+ {
+  "id": "gv078",
+  "seg_id": "CA2026-05-26#t20w3",
+  "opus3x": 49.3,
+  "plaus": 88,
+  "hypothesis": "Lists overrun and decay",
+  "n_words": 351
+ },
+ {
+  "id": "gv079",
+  "seg_id": "CA2025-11-07#t27w3",
+  "opus3x": 49.7,
+  "plaus": 73,
+  "hypothesis": "Downgraded modality on your own proposal",
+  "n_words": 224
+ }
+]

@@ -1,0 +1,1292 @@
+[
+ {
+  "id": "ga000",
+  "seg_id": "CA2025-06-16#t91w0",
+  "opus3x": 22,
+  "plaus": 92,
+  "hypothesis": "Semicolon-as-antithesis",
+  "seed_opus": 25,
+  "seed_verdict": "Mixed",
+  "n_words": 313
+ },
+ {
+  "id": "ga001",
+  "seg_id": "CA2025-06-19#t283w10",
+  "opus3x": 25,
+  "plaus": 88,
+  "hypothesis": "Full official names, glossed",
+  "seed_opus": 15,
+  "seed_verdict": "Mixed",
+  "n_words": 273
+ },
+ {
+  "id": "ga002",
+  "seg_id": "CA2025-12-01#t187w2",
+  "opus3x": 28.3,
+  "plaus": 90,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 35,
+  "seed_verdict": "AI",
+  "n_words": 360
+ },
+ {
+  "id": "ga003",
+  "seg_id": "CA2025-12-01#t187w2",
+  "opus3x": 28.3,
+  "plaus": 88,
+  "hypothesis": "Semicolon-as-antithesis",
+  "seed_opus": 35,
+  "seed_verdict": "AI",
+  "n_words": 315
+ },
+ {
+  "id": "ga004",
+  "seg_id": "CA2025-12-01#t187w2",
+  "opus3x": 28.3,
+  "plaus": 88.7,
+  "hypothesis": "Semicolon-as-antithesis",
+  "seed_opus": 35,
+  "seed_verdict": "AI",
+  "n_words": 317
+ },
+ {
+  "id": "ga005",
+  "seg_id": "CA2025-06-17#t277w3",
+  "opus3x": 29,
+  "plaus": 92,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 40,
+  "seed_verdict": "AI",
+  "n_words": 353
+ },
+ {
+  "id": "ga006",
+  "seg_id": "CA2026-02-02#t270w1",
+  "opus3x": 29.3,
+  "plaus": 90,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 35,
+  "seed_verdict": "Mixed",
+  "n_words": 326
+ },
+ {
+  "id": "ga007",
+  "seg_id": "CA2025-12-03#t305w1",
+  "opus3x": 29.3,
+  "plaus": 89.3,
+  "hypothesis": "Fewer numbers, hedged and sourced",
+  "seed_opus": 25,
+  "seed_verdict": "Mixed",
+  "n_words": 352
+ },
+ {
+  "id": "ga008",
+  "seg_id": "CA2025-12-01#t187w2",
+  "opus3x": 30,
+  "plaus": 88,
+  "hypothesis": "Semicolon-as-antithesis",
+  "seed_opus": 35,
+  "seed_verdict": "AI",
+  "n_words": 316
+ },
+ {
+  "id": "ga009",
+  "seg_id": "CA2025-11-27#t17w4",
+  "opus3x": 30,
+  "plaus": 87,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 22,
+  "seed_verdict": "Mixed",
+  "n_words": 338
+ },
+ {
+  "id": "ga010",
+  "seg_id": "CA2026-02-02#t270w1",
+  "opus3x": 30.7,
+  "plaus": 89.3,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 35,
+  "seed_verdict": "Mixed",
+  "n_words": 339
+ },
+ {
+  "id": "ga011",
+  "seg_id": "CA2026-05-25#t230w3",
+  "opus3x": 31.7,
+  "plaus": 90,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 40,
+  "seed_verdict": "Mixed",
+  "n_words": 314
+ },
+ {
+  "id": "ga012",
+  "seg_id": "CA2025-06-17#t277w3",
+  "opus3x": 33.3,
+  "plaus": 88,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 40,
+  "seed_verdict": "AI",
+  "n_words": 324
+ },
+ {
+  "id": "ga013",
+  "seg_id": "CA2025-06-16#t91w0",
+  "opus3x": 33.3,
+  "plaus": 88.7,
+  "hypothesis": "Semicolon-as-antithesis",
+  "seed_opus": 25,
+  "seed_verdict": "Mixed",
+  "n_words": 309
+ },
+ {
+  "id": "ga014",
+  "seg_id": "CA2026-05-01#t172w2",
+  "opus3x": 34.3,
+  "plaus": 86.3,
+  "hypothesis": "Kill the 'It is' definition",
+  "seed_opus": 35,
+  "seed_verdict": "Mixed",
+  "n_words": 336
+ },
+ {
+  "id": "ga015",
+  "seg_id": "CA2025-12-01#t187w2",
+  "opus3x": 35,
+  "plaus": 90,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 35,
+  "seed_verdict": "AI",
+  "n_words": 371
+ },
+ {
+  "id": "ga016",
+  "seg_id": "CA2026-05-25#t230w3",
+  "opus3x": 35,
+  "plaus": 90,
+  "hypothesis": "Full official names, glossed",
+  "seed_opus": 40,
+  "seed_verdict": "Mixed",
+  "n_words": 330
+ },
+ {
+  "id": "ga017",
+  "seg_id": "CA2025-06-16#t91w0",
+  "opus3x": 35,
+  "plaus": 87,
+  "hypothesis": "Semicolon-as-antithesis",
+  "seed_opus": 25,
+  "seed_verdict": "Mixed",
+  "n_words": 309
+ },
+ {
+  "id": "ga018",
+  "seg_id": "CA2026-02-03#t17w0",
+  "opus3x": 35,
+  "plaus": 88,
+  "hypothesis": "Hand the argument to a named outsider",
+  "seed_opus": 72,
+  "seed_verdict": "Mixed",
+  "n_words": 319
+ },
+ {
+  "id": "ga019",
+  "seg_id": "CA2025-06-17#t277w3",
+  "opus3x": 35.7,
+  "plaus": 89,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 40,
+  "seed_verdict": "AI",
+  "n_words": 332
+ },
+ {
+  "id": "ga020",
+  "seg_id": "CA2025-06-16#t91w0",
+  "opus3x": 35.7,
+  "plaus": 89.3,
+  "hypothesis": "Semicolon-as-antithesis (zero semicolons)",
+  "seed_opus": 25,
+  "seed_verdict": "Mixed",
+  "n_words": 308
+ },
+ {
+  "id": "ga021",
+  "seg_id": "CA2026-04-14#t271w0",
+  "opus3x": 36,
+  "plaus": 89.3,
+  "hypothesis": "Hand the argument to a named outsider",
+  "seed_opus": 55,
+  "seed_verdict": "Mixed",
+  "n_words": 315
+ },
+ {
+  "id": "ga022",
+  "seg_id": "CA2025-11-21#t7w2",
+  "opus3x": 36.3,
+  "plaus": 88.3,
+  "hypothesis": "Semicolon-as-antithesis",
+  "seed_opus": 50,
+  "seed_verdict": "AI",
+  "n_words": 330
+ },
+ {
+  "id": "ga023",
+  "seg_id": "CA2025-06-19#t283w10",
+  "opus3x": 36.7,
+  "plaus": 84.3,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 15,
+  "seed_verdict": "Mixed",
+  "n_words": 295
+ },
+ {
+  "id": "ga024",
+  "seg_id": "CA2026-05-01#t172w2",
+  "opus3x": 36.7,
+  "plaus": 85.3,
+  "hypothesis": "Kill the 'It is' definition",
+  "seed_opus": 35,
+  "seed_verdict": "Mixed",
+  "n_words": 340
+ },
+ {
+  "id": "ga025",
+  "seg_id": "CA2025-10-21#t298w3",
+  "opus3x": 36.7,
+  "plaus": 88,
+  "hypothesis": "Repetition without a payoff line",
+  "seed_opus": 45,
+  "seed_verdict": "AI",
+  "n_words": 270
+ },
+ {
+  "id": "ga026",
+  "seg_id": "CA2026-02-02#t270w1",
+  "opus3x": 37,
+  "plaus": 88.7,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 35,
+  "seed_verdict": "Mixed",
+  "n_words": 327
+ },
+ {
+  "id": "ga027",
+  "seg_id": "CA2025-10-21#t298w3",
+  "opus3x": 37.3,
+  "plaus": 88,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 45,
+  "seed_verdict": "AI",
+  "n_words": 311
+ },
+ {
+  "id": "ga028",
+  "seg_id": "CA2026-02-10#t121w2",
+  "opus3x": 38,
+  "plaus": 85.7,
+  "hypothesis": "Hand the argument to a named outsider",
+  "seed_opus": 55,
+  "seed_verdict": "AI",
+  "n_words": 340
+ },
+ {
+  "id": "ga029",
+  "seg_id": "CA2026-05-01#t172w2",
+  "opus3x": 38.3,
+  "plaus": 85.3,
+  "hypothesis": "Full official names, glossed",
+  "seed_opus": 35,
+  "seed_verdict": "Mixed",
+  "n_words": 348
+ },
+ {
+  "id": "ga030",
+  "seg_id": "CA2025-06-16#t91w0",
+  "opus3x": 38.3,
+  "plaus": 87.3,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 25,
+  "seed_verdict": "Mixed",
+  "n_words": 350
+ },
+ {
+  "id": "ga031",
+  "seg_id": "CA2026-04-14#t271w0",
+  "opus3x": 38.3,
+  "plaus": 85,
+  "hypothesis": "Speaker-management asides and one ungainly sentence",
+  "seed_opus": 55,
+  "seed_verdict": "Mixed",
+  "n_words": 278
+ },
+ {
+  "id": "ga032",
+  "seg_id": "CA2025-12-03#t305w1",
+  "opus3x": 39.3,
+  "plaus": 86.7,
+  "hypothesis": "Repetition without a payoff line",
+  "seed_opus": 25,
+  "seed_verdict": "Mixed",
+  "n_words": 366
+ },
+ {
+  "id": "ga033",
+  "seg_id": "CA2025-10-21#t298w3",
+  "opus3x": 39.3,
+  "plaus": 88,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 45,
+  "seed_verdict": "AI",
+  "n_words": 316
+ },
+ {
+  "id": "ga034",
+  "seg_id": "CA2025-12-03#t144w1",
+  "opus3x": 40,
+  "plaus": 90,
+  "hypothesis": "Full official names, glossed",
+  "seed_opus": 40,
+  "seed_verdict": "AI",
+  "n_words": 338
+ },
+ {
+  "id": "ga035",
+  "seg_id": "CA2025-06-17#t277w3",
+  "opus3x": 40,
+  "plaus": 86.3,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 40,
+  "seed_verdict": "AI",
+  "n_words": 335
+ },
+ {
+  "id": "ga036",
+  "seg_id": "CA2025-12-01#t187w2",
+  "opus3x": 40,
+  "plaus": 87,
+  "hypothesis": "Semicolon-as-antithesis (zero semicolons)",
+  "seed_opus": 35,
+  "seed_verdict": "AI",
+  "n_words": 311
+ },
+ {
+  "id": "ga037",
+  "seg_id": "CA2025-10-23#t68w3",
+  "opus3x": 40,
+  "plaus": 84,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 55,
+  "seed_verdict": "AI",
+  "n_words": 251
+ },
+ {
+  "id": "ga038",
+  "seg_id": "CA2025-11-17#t59w1",
+  "opus3x": 40,
+  "plaus": 75,
+  "hypothesis": "Speaker-management asides and one ungainly sentence",
+  "seed_opus": 68,
+  "seed_verdict": "AI",
+  "n_words": 335
+ },
+ {
+  "id": "ga039",
+  "seg_id": "CA2025-11-21#t7w2",
+  "opus3x": 40.7,
+  "plaus": 84,
+  "hypothesis": "Semicolon-as-antithesis",
+  "seed_opus": 50,
+  "seed_verdict": "AI",
+  "n_words": 331
+ },
+ {
+  "id": "ga040",
+  "seg_id": "CA2026-01-26#t189w1",
+  "opus3x": 40.7,
+  "plaus": 82.7,
+  "hypothesis": "Speaker-management asides and one ungainly sentence",
+  "seed_opus": 55,
+  "seed_verdict": "AI",
+  "n_words": 328
+ },
+ {
+  "id": "ga041",
+  "seg_id": "CA2025-12-03#t305w1",
+  "opus3x": 41,
+  "plaus": 87.7,
+  "hypothesis": "Hand the argument to a named outsider (long verbatim quote, flat gloss)",
+  "seed_opus": 25,
+  "seed_verdict": "Mixed",
+  "n_words": 304
+ },
+ {
+  "id": "ga042",
+  "seg_id": "CA2026-05-25#t230w3",
+  "opus3x": 41,
+  "plaus": 84,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 40,
+  "seed_verdict": "Mixed",
+  "n_words": 318
+ },
+ {
+  "id": "ga043",
+  "seg_id": "CA2026-02-02#t270w1",
+  "opus3x": 41.3,
+  "plaus": 86.7,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 35,
+  "seed_verdict": "Mixed",
+  "n_words": 343
+ },
+ {
+  "id": "ga044",
+  "seg_id": "CA2025-10-23#t68w3",
+  "opus3x": 41.3,
+  "plaus": 88,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 55,
+  "seed_verdict": "AI",
+  "n_words": 292
+ },
+ {
+  "id": "ga045",
+  "seg_id": "CA2025-06-19#t283w10",
+  "opus3x": 41.7,
+  "plaus": 81.3,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 15,
+  "seed_verdict": "Mixed",
+  "n_words": 327
+ },
+ {
+  "id": "ga046",
+  "seg_id": "CA2025-06-17#t277w3",
+  "opus3x": 41.7,
+  "plaus": 82.7,
+  "hypothesis": "Semicolon-as-antithesis",
+  "seed_opus": 40,
+  "seed_verdict": "AI",
+  "n_words": 307
+ },
+ {
+  "id": "ga047",
+  "seg_id": "CA2025-12-03#t144w1",
+  "opus3x": 41.7,
+  "plaus": 84.7,
+  "hypothesis": "Semicolon-as-antithesis",
+  "seed_opus": 40,
+  "seed_verdict": "AI",
+  "n_words": 308
+ },
+ {
+  "id": "ga048",
+  "seg_id": "CA2025-11-27#t17w4",
+  "opus3x": 41.7,
+  "plaus": 83.3,
+  "hypothesis": "Fewer numbers, hedged and sourced",
+  "seed_opus": 22,
+  "seed_verdict": "Mixed",
+  "n_words": 294
+ },
+ {
+  "id": "ga049",
+  "seg_id": "CA2025-06-17#t71w2",
+  "opus3x": 41.7,
+  "plaus": 84,
+  "hypothesis": "Full official names, glossed",
+  "seed_opus": 45,
+  "seed_verdict": "AI",
+  "n_words": 324
+ },
+ {
+  "id": "ga050",
+  "seg_id": "CA2026-02-10#t121w2",
+  "opus3x": 41.7,
+  "plaus": 88.7,
+  "hypothesis": "Full official names, glossed",
+  "seed_opus": 55,
+  "seed_verdict": "AI",
+  "n_words": 361
+ },
+ {
+  "id": "ga051",
+  "seg_id": "CA2025-10-07#t228w3",
+  "opus3x": 41.7,
+  "plaus": 80,
+  "hypothesis": "Hand the argument to a named outsider",
+  "seed_opus": 60,
+  "seed_verdict": "Mixed",
+  "n_words": 344
+ },
+ {
+  "id": "ga052",
+  "seg_id": "CA2026-04-14#t124w1",
+  "opus3x": 41.7,
+  "plaus": 88.7,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 45,
+  "seed_verdict": "Mixed",
+  "n_words": 370
+ },
+ {
+  "id": "ga053",
+  "seg_id": "CA2026-02-10#t121w2",
+  "opus3x": 41.7,
+  "plaus": 88.7,
+  "hypothesis": "Full official names, glossed",
+  "seed_opus": 55,
+  "seed_verdict": "AI",
+  "n_words": 355
+ },
+ {
+  "id": "ga054",
+  "seg_id": "CA2026-04-14#t271w0",
+  "opus3x": 41.7,
+  "plaus": 91,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 55,
+  "seed_verdict": "Mixed",
+  "n_words": 240
+ },
+ {
+  "id": "ga055",
+  "seg_id": "CA2025-11-27#t17w4",
+  "opus3x": 42.3,
+  "plaus": 86.7,
+  "hypothesis": "Fewer numbers, hedged and sourced",
+  "seed_opus": 22,
+  "seed_verdict": "Mixed",
+  "n_words": 300
+ },
+ {
+  "id": "ga056",
+  "seg_id": "CA2025-06-17#t277w3",
+  "opus3x": 42.3,
+  "plaus": 88,
+  "hypothesis": "Semicolon-as-antithesis",
+  "seed_opus": 40,
+  "seed_verdict": "AI",
+  "n_words": 311
+ },
+ {
+  "id": "ga057",
+  "seg_id": "CA2025-06-16#t91w0",
+  "opus3x": 42.5,
+  "plaus": 88,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 25,
+  "seed_verdict": "Mixed",
+  "n_words": 356
+ },
+ {
+  "id": "ga058",
+  "seg_id": "CA2025-12-03#t305w1",
+  "opus3x": 42.5,
+  "plaus": 85,
+  "hypothesis": "Fewer numbers, hedged and sourced",
+  "seed_opus": 25,
+  "seed_verdict": "Mixed",
+  "n_words": 344
+ },
+ {
+  "id": "ga059",
+  "seg_id": "CA2026-04-14#t124w1",
+  "opus3x": 42.7,
+  "plaus": 86.7,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 45,
+  "seed_verdict": "Mixed",
+  "n_words": 376
+ },
+ {
+  "id": "ga060",
+  "seg_id": "CA2026-05-01#t172w2",
+  "opus3x": 43.3,
+  "plaus": 85,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 35,
+  "seed_verdict": "Mixed",
+  "n_words": 362
+ },
+ {
+  "id": "ga061",
+  "seg_id": "CA2026-05-25#t230w3",
+  "opus3x": 43.3,
+  "plaus": 85,
+  "hypothesis": "Fewer numbers, hedged and sourced",
+  "seed_opus": 40,
+  "seed_verdict": "Mixed",
+  "n_words": 298
+ },
+ {
+  "id": "ga062",
+  "seg_id": "CA2025-12-01#t187w2",
+  "opus3x": 43.3,
+  "plaus": 85.7,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 35,
+  "seed_verdict": "AI",
+  "n_words": 343
+ },
+ {
+  "id": "ga063",
+  "seg_id": "CA2026-05-25#t230w3",
+  "opus3x": 43.3,
+  "plaus": 88,
+  "hypothesis": "Fewer numbers, hedged and sourced",
+  "seed_opus": 40,
+  "seed_verdict": "Mixed",
+  "n_words": 300
+ },
+ {
+  "id": "ga064",
+  "seg_id": "CA2026-01-26#t189w1",
+  "opus3x": 43.3,
+  "plaus": 84,
+  "hypothesis": "Hand the argument to a named outsider",
+  "seed_opus": 55,
+  "seed_verdict": "AI",
+  "n_words": 342
+ },
+ {
+  "id": "ga065",
+  "seg_id": "CA2026-02-03#t17w0",
+  "opus3x": 43.3,
+  "plaus": 83,
+  "hypothesis": "Hand the argument to a named outsider",
+  "seed_opus": 72,
+  "seed_verdict": "Mixed",
+  "n_words": 319
+ },
+ {
+  "id": "ga066",
+  "seg_id": "CA2026-04-14#t124w1",
+  "opus3x": 44,
+  "plaus": 83.3,
+  "hypothesis": "Fewer numbers, hedged and sourced",
+  "seed_opus": 45,
+  "seed_verdict": "Mixed",
+  "n_words": 360
+ },
+ {
+  "id": "ga067",
+  "seg_id": "CA2026-01-26#t189w1",
+  "opus3x": 44,
+  "plaus": 88.7,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 55,
+  "seed_verdict": "AI",
+  "n_words": 336
+ },
+ {
+  "id": "ga068",
+  "seg_id": "CA2026-04-21#t213w1",
+  "opus3x": 44,
+  "plaus": 86.3,
+  "hypothesis": "Hand the argument to a named outsider",
+  "seed_opus": 78,
+  "seed_verdict": "AI",
+  "n_words": 344
+ },
+ {
+  "id": "ga069",
+  "seg_id": "CA2025-10-23#t68w3",
+  "opus3x": 44,
+  "plaus": 86.7,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 55,
+  "seed_verdict": "AI",
+  "n_words": 302
+ },
+ {
+  "id": "ga070",
+  "seg_id": "CA2025-10-23#t68w3",
+  "opus3x": 44,
+  "plaus": 82.7,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 55,
+  "seed_verdict": "AI",
+  "n_words": 235
+ },
+ {
+  "id": "ga071",
+  "seg_id": "CA2026-01-26#t189w1",
+  "opus3x": 44,
+  "plaus": 91.3,
+  "hypothesis": "Semicolon-as-antithesis",
+  "seed_opus": 55,
+  "seed_verdict": "AI",
+  "n_words": 287
+ },
+ {
+  "id": "ga072",
+  "seg_id": "CA2025-12-01#t187w2",
+  "opus3x": 44.3,
+  "plaus": 88,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 35,
+  "seed_verdict": "AI",
+  "n_words": 369
+ },
+ {
+  "id": "ga073",
+  "seg_id": "CA2026-04-14#t271w0",
+  "opus3x": 44.7,
+  "plaus": 82.7,
+  "hypothesis": "Speaker-management asides and one ungainly sentence",
+  "seed_opus": 55,
+  "seed_verdict": "Mixed",
+  "n_words": 308
+ },
+ {
+  "id": "ga074",
+  "seg_id": "CA2026-05-25#t230w3",
+  "opus3x": 45,
+  "plaus": 88,
+  "hypothesis": "Fewer numbers, hedged and sourced",
+  "seed_opus": 40,
+  "seed_verdict": "Mixed",
+  "n_words": 299
+ },
+ {
+  "id": "ga075",
+  "seg_id": "CA2025-12-03#t144w1",
+  "opus3x": 45,
+  "plaus": 85,
+  "hypothesis": "Fewer numbers, hedged and sourced",
+  "seed_opus": 40,
+  "seed_verdict": "AI",
+  "n_words": 316
+ },
+ {
+  "id": "ga076",
+  "seg_id": "CA2026-04-14#t124w1",
+  "opus3x": 45,
+  "plaus": 90,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 45,
+  "seed_verdict": "Mixed",
+  "n_words": 340
+ },
+ {
+  "id": "ga077",
+  "seg_id": "CA2026-05-01#t172w2",
+  "opus3x": 45,
+  "plaus": 80,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 35,
+  "seed_verdict": "Mixed",
+  "n_words": 356
+ },
+ {
+  "id": "ga078",
+  "seg_id": "CA2025-11-21#t7w2",
+  "opus3x": 45,
+  "plaus": 80.7,
+  "hypothesis": "Semicolon-as-antithesis",
+  "seed_opus": 50,
+  "seed_verdict": "AI",
+  "n_words": 332
+ },
+ {
+  "id": "ga079",
+  "seg_id": "CA2026-05-25#t230w3",
+  "opus3x": 45,
+  "plaus": 90.7,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 40,
+  "seed_verdict": "Mixed",
+  "n_words": 350
+ },
+ {
+  "id": "ga080",
+  "seg_id": "CA2026-02-10#t121w2",
+  "opus3x": 45,
+  "plaus": 87,
+  "hypothesis": "Hand the argument to a named outsider",
+  "seed_opus": 55,
+  "seed_verdict": "AI",
+  "n_words": 360
+ },
+ {
+  "id": "ga081",
+  "seg_id": "CA2026-01-26#t189w1",
+  "opus3x": 45,
+  "plaus": 86.3,
+  "hypothesis": "Fewer numbers, hedged and sourced",
+  "seed_opus": 55,
+  "seed_verdict": "AI",
+  "n_words": 293
+ },
+ {
+  "id": "ga082",
+  "seg_id": "CA2026-02-03#t65w0",
+  "opus3x": 45,
+  "plaus": 85,
+  "hypothesis": "Fewer numbers, hedged and sourced",
+  "seed_opus": 68,
+  "seed_verdict": "AI",
+  "n_words": 175
+ },
+ {
+  "id": "ga083",
+  "seg_id": "CA2025-12-03#t305w1",
+  "opus3x": 45.7,
+  "plaus": 86,
+  "hypothesis": "Full official names, glossed",
+  "seed_opus": 25,
+  "seed_verdict": "Mixed",
+  "n_words": 307
+ },
+ {
+  "id": "ga084",
+  "seg_id": "CA2025-10-23#t68w3",
+  "opus3x": 45.7,
+  "plaus": 84.3,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 55,
+  "seed_verdict": "AI",
+  "n_words": 278
+ },
+ {
+  "id": "ga085",
+  "seg_id": "CA2025-10-21#t298w3",
+  "opus3x": 46,
+  "plaus": 86.7,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 45,
+  "seed_verdict": "AI",
+  "n_words": 319
+ },
+ {
+  "id": "ga086",
+  "seg_id": "CA2025-06-16#t91w0",
+  "opus3x": 46,
+  "plaus": 83,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 25,
+  "seed_verdict": "Mixed",
+  "n_words": 331
+ },
+ {
+  "id": "ga087",
+  "seg_id": "CA2025-10-07#t228w3",
+  "opus3x": 46,
+  "plaus": 78.7,
+  "hypothesis": "Kill the 'It is' definition",
+  "seed_opus": 60,
+  "seed_verdict": "Mixed",
+  "n_words": 266
+ },
+ {
+  "id": "ga088",
+  "seg_id": "CA2025-06-17#t71w2",
+  "opus3x": 46,
+  "plaus": 83,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 45,
+  "seed_verdict": "AI",
+  "n_words": 351
+ },
+ {
+  "id": "ga089",
+  "seg_id": "CA2025-12-03#t144w1",
+  "opus3x": 46.7,
+  "plaus": 83,
+  "hypothesis": "Full official names, glossed",
+  "seed_opus": 40,
+  "seed_verdict": "AI",
+  "n_words": 338
+ },
+ {
+  "id": "ga090",
+  "seg_id": "CA2025-10-23#t68w3",
+  "opus3x": 46.7,
+  "plaus": 86,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 55,
+  "seed_verdict": "AI",
+  "n_words": 245
+ },
+ {
+  "id": "ga091",
+  "seg_id": "CA2025-10-07#t228w3",
+  "opus3x": 46.7,
+  "plaus": 79.3,
+  "hypothesis": "Full official names, glossed",
+  "seed_opus": 60,
+  "seed_verdict": "Mixed",
+  "n_words": 297
+ },
+ {
+  "id": "ga092",
+  "seg_id": "CA2025-12-03#t144w1",
+  "opus3x": 46.7,
+  "plaus": 87,
+  "hypothesis": "Hand the argument to a named outsider",
+  "seed_opus": 40,
+  "seed_verdict": "AI",
+  "n_words": 390
+ },
+ {
+  "id": "ga093",
+  "seg_id": "CA2026-04-14#t271w0",
+  "opus3x": 47,
+  "plaus": 86.3,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 55,
+  "seed_verdict": "Mixed",
+  "n_words": 243
+ },
+ {
+  "id": "ga094",
+  "seg_id": "CA2025-11-27#t17w4",
+  "opus3x": 47.3,
+  "plaus": 78.7,
+  "hypothesis": "Fewer numbers, hedged and sourced",
+  "seed_opus": 22,
+  "seed_verdict": "Mixed",
+  "n_words": 337
+ },
+ {
+  "id": "ga095",
+  "seg_id": "CA2026-06-05#t174w0",
+  "opus3x": 47.3,
+  "plaus": 73,
+  "hypothesis": "Speaker-management asides and one ungainly sentence",
+  "seed_opus": 50,
+  "seed_verdict": "AI",
+  "n_words": 362
+ },
+ {
+  "id": "ga096",
+  "seg_id": "CA2025-11-21#t7w2",
+  "opus3x": 47.3,
+  "plaus": 80.7,
+  "hypothesis": "Full official names, glossed",
+  "seed_opus": 50,
+  "seed_verdict": "AI",
+  "n_words": 337
+ },
+ {
+  "id": "ga097",
+  "seg_id": "CA2025-11-17#t59w1",
+  "opus3x": 47.7,
+  "plaus": 80,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 68,
+  "seed_verdict": "AI",
+  "n_words": 319
+ },
+ {
+  "id": "ga098",
+  "seg_id": "CA2025-11-27#t17w4",
+  "opus3x": 47.7,
+  "plaus": 77.3,
+  "hypothesis": "Hand the argument to a named outsider",
+  "seed_opus": 22,
+  "seed_verdict": "Mixed",
+  "n_words": 312
+ },
+ {
+  "id": "ga099",
+  "seg_id": "CA2026-04-14#t271w0",
+  "opus3x": 47.7,
+  "plaus": 85.7,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 55,
+  "seed_verdict": "Mixed",
+  "n_words": 254
+ },
+ {
+  "id": "ga100",
+  "seg_id": "CA2025-10-07#t228w3",
+  "opus3x": 47.7,
+  "plaus": 81.7,
+  "hypothesis": "Full official names, glossed",
+  "seed_opus": 60,
+  "seed_verdict": "Mixed",
+  "n_words": 297
+ },
+ {
+  "id": "ga101",
+  "seg_id": "CA2025-06-17#t71w2",
+  "opus3x": 48.3,
+  "plaus": 81.7,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 45,
+  "seed_verdict": "AI",
+  "n_words": 334
+ },
+ {
+  "id": "ga102",
+  "seg_id": "CA2026-06-05#t174w0",
+  "opus3x": 48.3,
+  "plaus": 80.3,
+  "hypothesis": "Kill the 'It is' definition",
+  "seed_opus": 50,
+  "seed_verdict": "AI",
+  "n_words": 322
+ },
+ {
+  "id": "ga103",
+  "seg_id": "CA2025-12-03#t305w1",
+  "opus3x": 48.3,
+  "plaus": 81.7,
+  "hypothesis": "Repetition without a payoff line",
+  "seed_opus": 25,
+  "seed_verdict": "Mixed",
+  "n_words": 348
+ },
+ {
+  "id": "ga104",
+  "seg_id": "CA2025-06-17#t71w2",
+  "opus3x": 48.3,
+  "plaus": 82.7,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 45,
+  "seed_verdict": "AI",
+  "n_words": 359
+ },
+ {
+  "id": "ga105",
+  "seg_id": "CA2026-01-26#t189w1",
+  "opus3x": 48.3,
+  "plaus": 86.3,
+  "hypothesis": "Semicolon-as-antithesis",
+  "seed_opus": 55,
+  "seed_verdict": "AI",
+  "n_words": 287
+ },
+ {
+  "id": "ga106",
+  "seg_id": "CA2025-12-03#t305w1",
+  "opus3x": 48.3,
+  "plaus": 80,
+  "hypothesis": "Fewer numbers, hedged and sourced",
+  "seed_opus": 25,
+  "seed_verdict": "Mixed",
+  "n_words": 345
+ },
+ {
+  "id": "ga107",
+  "seg_id": "CA2025-06-17#t71w2",
+  "opus3x": 48.3,
+  "plaus": 77.3,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 45,
+  "seed_verdict": "AI",
+  "n_words": 324
+ },
+ {
+  "id": "ga108",
+  "seg_id": "CA2025-10-07#t228w3",
+  "opus3x": 48.3,
+  "plaus": 83,
+  "hypothesis": "Full official names, glossed",
+  "seed_opus": 60,
+  "seed_verdict": "Mixed",
+  "n_words": 302
+ },
+ {
+  "id": "ga109",
+  "seg_id": "CA2026-03-09#t261w1",
+  "opus3x": 48.3,
+  "plaus": 79.3,
+  "hypothesis": "Speaker-management asides and one ungainly sentence",
+  "seed_opus": 72,
+  "seed_verdict": "AI",
+  "n_words": 348
+ },
+ {
+  "id": "ga110",
+  "seg_id": "CA2025-10-21#t298w3",
+  "opus3x": 48.3,
+  "plaus": 87,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 45,
+  "seed_verdict": "AI",
+  "n_words": 326
+ },
+ {
+  "id": "ga111",
+  "seg_id": "CA2025-10-07#t228w3",
+  "opus3x": 48.3,
+  "plaus": 80.7,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 60,
+  "seed_verdict": "Mixed",
+  "n_words": 298
+ },
+ {
+  "id": "ga112",
+  "seg_id": "CA2026-01-26#t189w1",
+  "opus3x": 48.3,
+  "plaus": 88,
+  "hypothesis": "Fewer numbers, hedged and sourced",
+  "seed_opus": 55,
+  "seed_verdict": "AI",
+  "n_words": 300
+ },
+ {
+  "id": "ga113",
+  "seg_id": "CA2025-11-17#t59w1",
+  "opus3x": 48.3,
+  "plaus": 78,
+  "hypothesis": "Speaker-management asides and one ungainly sentence",
+  "seed_opus": 68,
+  "seed_verdict": "AI",
+  "n_words": 353
+ },
+ {
+  "id": "ga114",
+  "seg_id": "CA2026-05-01#t172w2",
+  "opus3x": 48.7,
+  "plaus": 83.3,
+  "hypothesis": "Full official names, glossed",
+  "seed_opus": 35,
+  "seed_verdict": "Mixed",
+  "n_words": 341
+ },
+ {
+  "id": "ga115",
+  "seg_id": "CA2025-11-21#t7w2",
+  "opus3x": 48.7,
+  "plaus": 79.3,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 50,
+  "seed_verdict": "AI",
+  "n_words": 359
+ },
+ {
+  "id": "ga116",
+  "seg_id": "CA2026-02-03#t17w0",
+  "opus3x": 48.7,
+  "plaus": 78,
+  "hypothesis": "Speaker-management asides and one ungainly sentence",
+  "seed_opus": 72,
+  "seed_verdict": "Mixed",
+  "n_words": 321
+ },
+ {
+  "id": "ga117",
+  "seg_id": "CA2025-06-17#t277w3",
+  "opus3x": 49,
+  "plaus": 80.7,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 40,
+  "seed_verdict": "AI",
+  "n_words": 345
+ },
+ {
+  "id": "ga118",
+  "seg_id": "CA2025-11-24#t219w2",
+  "opus3x": 49,
+  "plaus": 85,
+  "hypothesis": "Semicolon-as-antithesis",
+  "seed_opus": 45,
+  "seed_verdict": "AI",
+  "n_words": 341
+ },
+ {
+  "id": "ga119",
+  "seg_id": "CA2025-10-23#t68w3",
+  "opus3x": 49,
+  "plaus": 85,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 55,
+  "seed_verdict": "AI",
+  "n_words": 270
+ },
+ {
+  "id": "ga120",
+  "seg_id": "CA2026-05-25#t230w3",
+  "opus3x": 49,
+  "plaus": 87.3,
+  "hypothesis": "Fewer numbers, hedged and sourced",
+  "seed_opus": 40,
+  "seed_verdict": "Mixed",
+  "n_words": 298
+ },
+ {
+  "id": "ga121",
+  "seg_id": "CA2025-11-21#t7w2",
+  "opus3x": 49,
+  "plaus": 80.7,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 50,
+  "seed_verdict": "AI",
+  "n_words": 363
+ },
+ {
+  "id": "ga122",
+  "seg_id": "CA2026-04-14#t124w1",
+  "opus3x": 49,
+  "plaus": 80,
+  "hypothesis": "Fewer numbers, hedged and sourced",
+  "seed_opus": 45,
+  "seed_verdict": "Mixed",
+  "n_words": 343
+ },
+ {
+  "id": "ga123",
+  "seg_id": "CA2026-04-14#t271w0",
+  "opus3x": 49,
+  "plaus": 84,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 55,
+  "seed_verdict": "Mixed",
+  "n_words": 257
+ },
+ {
+  "id": "ga124",
+  "seg_id": "CA2026-06-05#t174w0",
+  "opus3x": 49.3,
+  "plaus": 81.3,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 50,
+  "seed_verdict": "AI",
+  "n_words": 350
+ },
+ {
+  "id": "ga125",
+  "seg_id": "CA2026-03-09#t261w1",
+  "opus3x": 49.3,
+  "plaus": 86,
+  "hypothesis": "No closing aphorism",
+  "seed_opus": 72,
+  "seed_verdict": "AI",
+  "n_words": 313
+ },
+ {
+  "id": "ga126",
+  "seg_id": "CA2026-02-12#t218w3",
+  "opus3x": 49.3,
+  "plaus": 86.7,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 85,
+  "seed_verdict": "AI",
+  "n_words": 333
+ },
+ {
+  "id": "ga127",
+  "seg_id": "CA2025-11-17#t59w1",
+  "opus3x": 49.3,
+  "plaus": 79,
+  "hypothesis": "Fewer numbers, hedged and sourced",
+  "seed_opus": 68,
+  "seed_verdict": "AI",
+  "n_words": 302
+ },
+ {
+  "id": "ga128",
+  "seg_id": "CA2025-10-21#t298w3",
+  "opus3x": 49.7,
+  "plaus": 83,
+  "hypothesis": "Procedural coordinates up front",
+  "seed_opus": 45,
+  "seed_verdict": "AI",
+  "n_words": 328
+ }
+]

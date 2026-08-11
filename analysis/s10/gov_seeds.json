@@ -1,0 +1,247 @@
+[
+ {
+  "seg_id": "CA2025-10-31#t5w0",
+  "opus": 78,
+  "n_words": 330,
+  "date": "2025-10-31",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-05-28#t71w0",
+  "opus": 75,
+  "n_words": 358,
+  "date": "2026-05-28",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-06-04#t284w4",
+  "opus": 75,
+  "n_words": 151,
+  "date": "2026-06-04",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-04-28#t22w2",
+  "opus": 75,
+  "n_words": 344,
+  "date": "2026-04-28",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-06-09#t319w0",
+  "opus": 72,
+  "n_words": 273,
+  "date": "2026-06-09",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-03-12#t78w0",
+  "opus": 72,
+  "n_words": 232,
+  "date": "2026-03-12",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-05-26#t20w3",
+  "opus": 72,
+  "n_words": 286,
+  "date": "2026-05-26",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-05-28#t259w1",
+  "opus": 72,
+  "n_words": 323,
+  "date": "2026-05-28",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-05-07#t32w8",
+  "opus": 72,
+  "n_words": 279,
+  "date": "2026-05-07",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2025-06-11#t107w1",
+  "opus": 72,
+  "n_words": 303,
+  "date": "2025-06-11",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2025-11-18#t262w0",
+  "opus": 70,
+  "n_words": 354,
+  "date": "2025-11-18",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2025-11-25#t235w2",
+  "opus": 70,
+  "n_words": 343,
+  "date": "2025-11-25",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2025-10-02#t337w3",
+  "opus": 70,
+  "n_words": 318,
+  "date": "2025-10-02",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-03-23#t180w2",
+  "opus": 70,
+  "n_words": 338,
+  "date": "2026-03-23",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-04-28#t110w3",
+  "opus": 70,
+  "n_words": 134,
+  "date": "2026-04-28",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-06-10#t150w2",
+  "opus": 68,
+  "n_words": 343,
+  "date": "2026-06-10",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2025-11-28#t137w0",
+  "opus": 65,
+  "n_words": 345,
+  "date": "2025-11-28",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2025-06-11#t172w2",
+  "opus": 65,
+  "n_words": 350,
+  "date": "2025-06-11",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2025-12-02#t272w0",
+  "opus": 62,
+  "n_words": 335,
+  "date": "2025-12-02",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-05-28#t385w1",
+  "opus": 62,
+  "n_words": 302,
+  "date": "2026-05-28",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-05-28#t241w1",
+  "opus": 60,
+  "n_words": 356,
+  "date": "2026-05-28",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-04-14#t271w2",
+  "opus": 60,
+  "n_words": 321,
+  "date": "2026-04-14",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-06-16#t79w2",
+  "opus": 60,
+  "n_words": 357,
+  "date": "2026-06-16",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-06-15#t184w1",
+  "opus": 60,
+  "n_words": 357,
+  "date": "2026-06-15",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2025-11-24#t219w0",
+  "opus": 60,
+  "n_words": 322,
+  "date": "2025-11-24",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2025-10-02#t113w2",
+  "opus": 60,
+  "n_words": 343,
+  "date": "2025-10-02",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2025-09-18#t31w1",
+  "opus": 55,
+  "n_words": 330,
+  "date": "2025-09-18",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-02-09#t9w3",
+  "opus": 55,
+  "n_words": 154,
+  "date": "2026-02-09",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-03-23#t232w1",
+  "opus": 55,
+  "n_words": 259,
+  "date": "2026-03-23",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2025-11-28#t7w2",
+  "opus": 55,
+  "n_words": 346,
+  "date": "2025-11-28",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-05-26#t20w0",
+  "opus": 55,
+  "n_words": 296,
+  "date": "2026-05-26",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2025-11-07#t27w3",
+  "opus": 55,
+  "n_words": 197,
+  "date": "2025-11-07",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2025-06-13#t0w4",
+  "opus": 55,
+  "n_words": 350,
+  "date": "2025-06-13",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-05-28#t71w1",
+  "opus": 55,
+  "n_words": 324,
+  "date": "2026-05-28",
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2025-11-04#t61w0",
+  "opus": 55,
+  "n_words": 317,
+  "date": "2025-11-04",
+  "verdict": "AI"
+ }
+]

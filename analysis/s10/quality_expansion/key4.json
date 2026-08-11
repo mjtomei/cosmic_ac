@@ -1,0 +1,452 @@
+{
+ "G000": {
+  "condition": "humanized",
+  "seg_id": "CA2025-11-28#t7w2",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 29,
+  "plaus": 90,
+  "hypothesis": "Lexical recycling",
+  "n_words": 358
+ },
+ "G001": {
+  "condition": "original",
+  "seg_id": "CA2025-10-02#t337w3",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 43.3,
+  "plaus": 88,
+  "hypothesis": "Anticlimactic ending",
+  "n_words": 318
+ },
+ "G002": {
+  "condition": "original",
+  "seg_id": "CA2025-06-11#t172w2",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 45,
+  "plaus": 86,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 350
+ },
+ "G003": {
+  "condition": "original",
+  "seg_id": "CA2025-11-07#t27w3",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 49.7,
+  "plaus": 73,
+  "hypothesis": "Downgraded modality on your own proposal",
+  "n_words": 197
+ },
+ "G004": {
+  "condition": "humanized",
+  "seg_id": "CA2026-02-09#t9w3",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 44,
+  "plaus": 86,
+  "hypothesis": "Lists overrun and decay",
+  "n_words": 176
+ },
+ "G005": {
+  "condition": "humanized",
+  "seg_id": "CA2026-05-28#t71w0",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 43.3,
+  "plaus": 88,
+  "hypothesis": "Lexical recycling",
+  "n_words": 376
+ },
+ "G006": {
+  "condition": "humanized",
+  "seg_id": "CA2026-06-16#t79w2",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 45.7,
+  "plaus": 86.7,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 399
+ },
+ "G007": {
+  "condition": "original",
+  "seg_id": "CA2026-05-07#t32w8",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 43.3,
+  "plaus": 83.3,
+  "hypothesis": "Anticlimactic ending",
+  "n_words": 279
+ },
+ "G008": {
+  "condition": "original",
+  "seg_id": "CA2025-12-02#t272w0",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 46,
+  "plaus": 84.3,
+  "hypothesis": "Anticlimactic ending",
+  "n_words": 335
+ },
+ "G009": {
+  "condition": "humanized",
+  "seg_id": "CA2025-06-13#t0w4",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 39.3,
+  "plaus": 84,
+  "hypothesis": "Downgraded modality on your own proposal",
+  "n_words": 366
+ },
+ "G010": {
+  "condition": "humanized",
+  "seg_id": "CA2026-05-28#t259w1",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 42,
+  "plaus": 89.3,
+  "hypothesis": "No one-beat sentence",
+  "n_words": 344
+ },
+ "G011": {
+  "condition": "original",
+  "seg_id": "CA2026-05-28#t71w1",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 39.3,
+  "plaus": 86.3,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 324
+ },
+ "G012": {
+  "condition": "humanized",
+  "seg_id": "CA2025-10-02#t337w3",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 43.3,
+  "plaus": 88,
+  "hypothesis": "Anticlimactic ending",
+  "n_words": 354
+ },
+ "G013": {
+  "condition": "original",
+  "seg_id": "CA2026-04-28#t22w2",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 46.3,
+  "plaus": 87,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 344
+ },
+ "G014": {
+  "condition": "original",
+  "seg_id": "CA2026-06-16#t79w2",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 45.7,
+  "plaus": 86.7,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 357
+ },
+ "G015": {
+  "condition": "original",
+  "seg_id": "CA2025-09-18#t31w1",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 40,
+  "plaus": 85,
+  "hypothesis": "Lexical recycling",
+  "n_words": 330
+ },
+ "G016": {
+  "condition": "humanized",
+  "seg_id": "CA2025-11-18#t262w0",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 42.3,
+  "plaus": 86.7,
+  "hypothesis": "Lexical recycling",
+  "n_words": 393
+ },
+ "G017": {
+  "condition": "original",
+  "seg_id": "CA2026-05-26#t20w0",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 31.7,
+  "plaus": 88.7,
+  "hypothesis": "Lexical recycling",
+  "n_words": 296
+ },
+ "G018": {
+  "condition": "humanized",
+  "seg_id": "CA2026-04-28#t110w3",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 48.3,
+  "plaus": 74.3,
+  "hypothesis": "Downgraded modality on your own proposal",
+  "n_words": 157
+ },
+ "G019": {
+  "condition": "original",
+  "seg_id": "CA2025-11-28#t137w0",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 45,
+  "plaus": 89.3,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 345
+ },
+ "G020": {
+  "condition": "original",
+  "seg_id": "CA2025-06-11#t107w1",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 36.7,
+  "plaus": 88,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 303
+ },
+ "G021": {
+  "condition": "original",
+  "seg_id": "CA2025-11-18#t262w0",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 42.3,
+  "plaus": 86.7,
+  "hypothesis": "Lexical recycling",
+  "n_words": 354
+ },
+ "G022": {
+  "condition": "humanized",
+  "seg_id": "CA2026-03-23#t232w1",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 28.3,
+  "plaus": 90.7,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 295
+ },
+ "G023": {
+  "condition": "original",
+  "seg_id": "CA2025-06-13#t0w4",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 39.3,
+  "plaus": 84,
+  "hypothesis": "Downgraded modality on your own proposal",
+  "n_words": 350
+ },
+ "G024": {
+  "condition": "humanized",
+  "seg_id": "CA2025-06-11#t172w2",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 45,
+  "plaus": 86,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 396
+ },
+ "G025": {
+  "condition": "original",
+  "seg_id": "CA2026-05-28#t71w0",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 43.3,
+  "plaus": 88,
+  "hypothesis": "Lexical recycling",
+  "n_words": 358
+ },
+ "G026": {
+  "condition": "original",
+  "seg_id": "CA2026-02-09#t9w3",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 44,
+  "plaus": 86,
+  "hypothesis": "Lists overrun and decay",
+  "n_words": 154
+ },
+ "G027": {
+  "condition": "original",
+  "seg_id": "CA2025-11-04#t61w0",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 33.3,
+  "plaus": 92.3,
+  "hypothesis": "1. Lexical recycling",
+  "n_words": 317
+ },
+ "G028": {
+  "condition": "humanized",
+  "seg_id": "CA2025-11-28#t137w0",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 45,
+  "plaus": 89.3,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 382
+ },
+ "G029": {
+  "condition": "original",
+  "seg_id": "CA2026-05-26#t20w3",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 49.3,
+  "plaus": 88,
+  "hypothesis": "Lists overrun and decay",
+  "n_words": 286
+ },
+ "G030": {
+  "condition": "original",
+  "seg_id": "CA2026-04-28#t110w3",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 48.3,
+  "plaus": 74.3,
+  "hypothesis": "Downgraded modality on your own proposal",
+  "n_words": 134
+ },
+ "G031": {
+  "condition": "humanized",
+  "seg_id": "CA2025-09-18#t31w1",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 40,
+  "plaus": 85,
+  "hypothesis": "Lexical recycling",
+  "n_words": 350
+ },
+ "G032": {
+  "condition": "original",
+  "seg_id": "CA2026-05-28#t241w1",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 49.3,
+  "plaus": 87,
+  "hypothesis": "Lexical recycling",
+  "n_words": 356
+ },
+ "G033": {
+  "condition": "original",
+  "seg_id": "CA2025-11-28#t7w2",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 29,
+  "plaus": 90,
+  "hypothesis": "Lexical recycling",
+  "n_words": 346
+ },
+ "G034": {
+  "condition": "humanized",
+  "seg_id": "CA2025-11-25#t235w2",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 38.3,
+  "plaus": 88,
+  "hypothesis": "Downgraded modality on your own proposal",
+  "n_words": 362
+ },
+ "G035": {
+  "condition": "original",
+  "seg_id": "CA2026-03-23#t232w1",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 28.3,
+  "plaus": 90.7,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 259
+ },
+ "G036": {
+  "condition": "humanized",
+  "seg_id": "CA2026-04-28#t22w2",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 46.3,
+  "plaus": 87,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 373
+ },
+ "G037": {
+  "condition": "original",
+  "seg_id": "CA2026-03-23#t180w2",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 37.7,
+  "plaus": 90,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 338
+ },
+ "G038": {
+  "condition": "original",
+  "seg_id": "CA2026-05-28#t259w1",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 42,
+  "plaus": 89.3,
+  "hypothesis": "No one-beat sentence",
+  "n_words": 323
+ },
+ "G039": {
+  "condition": "humanized",
+  "seg_id": "CA2025-12-02#t272w0",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 46,
+  "plaus": 84.3,
+  "hypothesis": "Anticlimactic ending",
+  "n_words": 373
+ },
+ "G040": {
+  "condition": "humanized",
+  "seg_id": "CA2026-03-23#t180w2",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 37.7,
+  "plaus": 90,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 383
+ },
+ "G041": {
+  "condition": "humanized",
+  "seg_id": "CA2025-06-11#t107w1",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 36.7,
+  "plaus": 88,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 347
+ },
+ "G042": {
+  "condition": "humanized",
+  "seg_id": "CA2026-05-26#t20w3",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 49.3,
+  "plaus": 88,
+  "hypothesis": "Lists overrun and decay",
+  "n_words": 351
+ },
+ "G043": {
+  "condition": "humanized",
+  "seg_id": "CA2025-11-04#t61w0",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 33.3,
+  "plaus": 92.3,
+  "hypothesis": "1. Lexical recycling",
+  "n_words": 341
+ },
+ "G044": {
+  "condition": "humanized",
+  "seg_id": "CA2025-11-07#t27w3",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 49.7,
+  "plaus": 73,
+  "hypothesis": "Downgraded modality on your own proposal",
+  "n_words": 224
+ },
+ "G045": {
+  "condition": "humanized",
+  "seg_id": "CA2026-05-28#t241w1",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 49.3,
+  "plaus": 87,
+  "hypothesis": "Lexical recycling",
+  "n_words": 374
+ },
+ "G046": {
+  "condition": "humanized",
+  "seg_id": "CA2026-05-07#t32w8",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 43.3,
+  "plaus": 83.3,
+  "hypothesis": "Anticlimactic ending",
+  "n_words": 279
+ },
+ "G047": {
+  "condition": "humanized",
+  "seg_id": "CA2026-05-28#t71w1",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 39.3,
+  "plaus": 86.3,
+  "hypothesis": "Unglossed institutional idiom plus an unreturned aside",
+  "n_words": 347
+ },
+ "G048": {
+  "condition": "original",
+  "seg_id": "CA2025-11-25#t235w2",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 38.3,
+  "plaus": 88,
+  "hypothesis": "Downgraded modality on your own proposal",
+  "n_words": 343
+ },
+ "G049": {
+  "condition": "humanized",
+  "seg_id": "CA2026-05-26#t20w0",
+  "chamber": "CA-FED-DEBATE",
+  "opus3x": 31.7,
+  "plaus": 88.7,
+  "hypothesis": "Lexical recycling",
+  "n_words": 320
+ }
+}

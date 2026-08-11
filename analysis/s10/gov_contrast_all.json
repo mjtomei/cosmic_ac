@@ -1,0 +1,498 @@
+[
+ {
+  "seed_id": "CA2025-06-19#t283w10",
+  "seed_opus": 15,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2019-02-08#t1w0",
+    "opus": 14,
+    "gap": 1
+   },
+   {
+    "seg_id": "CA2026-01-26#t28w0",
+    "opus": 12,
+    "gap": 3
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2025-11-27#t17w4",
+  "seed_opus": 22,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-04-30#t261w0",
+    "opus": 20,
+    "gap": 2
+   },
+   {
+    "seg_id": "CA2026-04-16#t256w0",
+    "opus": 20,
+    "gap": 2
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2025-06-16#t91w0",
+  "seed_opus": 25,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-06-10#t196w0",
+    "opus": 22,
+    "gap": 3
+   },
+   {
+    "seg_id": "CA2026-04-30#t261w0",
+    "opus": 20,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2025-12-03#t305w1",
+  "seed_opus": 25,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-06-10#t196w0",
+    "opus": 22,
+    "gap": 3
+   },
+   {
+    "seg_id": "CA2026-04-30#t261w0",
+    "opus": 20,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2025-12-01#t187w2",
+  "seed_opus": 35,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2025-06-09#t21w2",
+    "opus": 30,
+    "gap": 5
+   },
+   {
+    "seg_id": "CA2026-01-27#t255w0",
+    "opus": 25,
+    "gap": 10
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2026-02-02#t270w1",
+  "seed_opus": 35,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2025-06-09#t21w2",
+    "opus": 30,
+    "gap": 5
+   },
+   {
+    "seg_id": "CA2026-01-27#t255w0",
+    "opus": 25,
+    "gap": 10
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2026-05-01#t172w2",
+  "seed_opus": 35,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2025-06-09#t21w2",
+    "opus": 30,
+    "gap": 5
+   },
+   {
+    "seg_id": "CA2026-01-27#t255w0",
+    "opus": 25,
+    "gap": 10
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2025-06-17#t277w3",
+  "seed_opus": 40,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-04-16#t18w3",
+    "opus": 35,
+    "gap": 5
+   },
+   {
+    "seg_id": "CA2026-04-13#t220w1",
+    "opus": 35,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2026-05-25#t230w3",
+  "seed_opus": 40,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-04-16#t18w3",
+    "opus": 35,
+    "gap": 5
+   },
+   {
+    "seg_id": "CA2026-04-13#t220w1",
+    "opus": 35,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2025-12-03#t144w1",
+  "seed_opus": 40,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-04-16#t18w3",
+    "opus": 35,
+    "gap": 5
+   },
+   {
+    "seg_id": "CA2026-04-13#t220w1",
+    "opus": 35,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2026-04-14#t124w1",
+  "seed_opus": 45,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-04-16#t18w3",
+    "opus": 35,
+    "gap": 10
+   },
+   {
+    "seg_id": "CA2026-04-13#t220w1",
+    "opus": 35,
+    "gap": 10
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2025-11-24#t219w2",
+  "seed_opus": 45,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-04-16#t18w3",
+    "opus": 35,
+    "gap": 10
+   },
+   {
+    "seg_id": "CA2026-04-13#t220w1",
+    "opus": 35,
+    "gap": 10
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2025-06-17#t71w2",
+  "seed_opus": 45,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-04-16#t18w3",
+    "opus": 35,
+    "gap": 10
+   },
+   {
+    "seg_id": "CA2026-04-13#t220w1",
+    "opus": 35,
+    "gap": 10
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2025-10-21#t298w3",
+  "seed_opus": 45,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-04-16#t18w3",
+    "opus": 35,
+    "gap": 10
+   },
+   {
+    "seg_id": "CA2026-04-13#t220w1",
+    "opus": 35,
+    "gap": 10
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2026-06-05#t174w0",
+  "seed_opus": 50,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-05-26#t350w1",
+    "opus": 45,
+    "gap": 5
+   },
+   {
+    "seg_id": "CA2026-04-23#t238w4",
+    "opus": 45,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2025-11-21#t7w2",
+  "seed_opus": 50,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-05-26#t350w1",
+    "opus": 45,
+    "gap": 5
+   },
+   {
+    "seg_id": "CA2026-04-23#t238w4",
+    "opus": 45,
+    "gap": 5
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2026-02-10#t121w2",
+  "seed_opus": 55,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-05-26#t350w1",
+    "opus": 45,
+    "gap": 10
+   },
+   {
+    "seg_id": "CA2026-04-23#t238w4",
+    "opus": 45,
+    "gap": 10
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2025-10-23#t68w3",
+  "seed_opus": 55,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-05-26#t350w1",
+    "opus": 45,
+    "gap": 10
+   },
+   {
+    "seg_id": "CA2026-04-23#t238w4",
+    "opus": 45,
+    "gap": 10
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2026-01-26#t189w1",
+  "seed_opus": 55,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-05-26#t350w1",
+    "opus": 45,
+    "gap": 10
+   },
+   {
+    "seg_id": "CA2026-04-23#t238w4",
+    "opus": 45,
+    "gap": 10
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2026-04-14#t271w0",
+  "seed_opus": 55,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-05-26#t350w1",
+    "opus": 45,
+    "gap": 10
+   },
+   {
+    "seg_id": "CA2026-04-23#t238w4",
+    "opus": 45,
+    "gap": 10
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2025-11-20#t275w3",
+  "seed_opus": 58,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-05-26#t350w1",
+    "opus": 45,
+    "gap": 13
+   },
+   {
+    "seg_id": "CA2026-04-23#t238w4",
+    "opus": 45,
+    "gap": 13
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2025-10-07#t228w3",
+  "seed_opus": 60,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-05-26#t350w1",
+    "opus": 45,
+    "gap": 15
+   },
+   {
+    "seg_id": "CA2026-04-23#t238w4",
+    "opus": 45,
+    "gap": 15
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2026-02-09#t36w2",
+  "seed_opus": 60,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-05-26#t350w1",
+    "opus": 45,
+    "gap": 15
+   },
+   {
+    "seg_id": "CA2026-04-23#t238w4",
+    "opus": 45,
+    "gap": 15
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2025-10-20#t233w3",
+  "seed_opus": 62,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-05-26#t350w1",
+    "opus": 45,
+    "gap": 17
+   },
+   {
+    "seg_id": "CA2026-04-23#t238w4",
+    "opus": 45,
+    "gap": 17
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2026-02-03#t65w0",
+  "seed_opus": 68,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-04-27#t63w1",
+    "opus": 65,
+    "gap": 3
+   },
+   {
+    "seg_id": "CA2026-05-26#t350w1",
+    "opus": 45,
+    "gap": 23
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2025-11-17#t59w1",
+  "seed_opus": 68,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-04-27#t63w1",
+    "opus": 65,
+    "gap": 3
+   },
+   {
+    "seg_id": "CA2026-05-26#t350w1",
+    "opus": 45,
+    "gap": 23
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2026-01-27#t241w3",
+  "seed_opus": 70,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-04-27#t63w1",
+    "opus": 65,
+    "gap": 5
+   },
+   {
+    "seg_id": "CA2026-05-26#t350w1",
+    "opus": 45,
+    "gap": 25
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2026-02-03#t17w0",
+  "seed_opus": 72,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-04-27#t63w1",
+    "opus": 65,
+    "gap": 7
+   },
+   {
+    "seg_id": "CA2026-05-26#t350w1",
+    "opus": 45,
+    "gap": 27
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2026-03-09#t261w1",
+  "seed_opus": 72,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-04-27#t63w1",
+    "opus": 65,
+    "gap": 7
+   },
+   {
+    "seg_id": "CA2026-05-26#t350w1",
+    "opus": 45,
+    "gap": 27
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2026-04-21#t213w1",
+  "seed_opus": 78,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-04-27#t63w1",
+    "opus": 65,
+    "gap": 13
+   },
+   {
+    "seg_id": "CA2026-05-26#t350w1",
+    "opus": 45,
+    "gap": 33
+   }
+  ]
+ },
+ {
+  "seed_id": "CA2026-02-12#t218w3",
+  "seed_opus": 85,
+  "human_exemplars": [
+   {
+    "seg_id": "CA2026-04-27#t63w1",
+    "opus": 65,
+    "gap": 20
+   },
+   {
+    "seg_id": "CA2026-05-26#t350w1",
+    "opus": 45,
+    "gap": 40
+   }
+  ]
+ }
+]

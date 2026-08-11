@@ -269,6 +269,38 @@ the **disagreements are informative** — 45 Pangram-AI hits score below 50 on
 Opus, 9 below 30. Those are naturally occurring partial bypasses and seed the
 study in §4.9.
 
+**Reasoning effort buys nothing here, and that is worth stating rather than
+hiding.** The screen's headline figure — **AUC 0.951** against Pangram on the
+241-segment labelled pool — was produced at `effort=low`, and low had never
+been compared against anything. Re-run on the same pool with the prompt and
+batching held byte-identical:
+
+| run | AUC | 95% CI |
+|---|---|---|
+| archived low | 0.951 | [0.925, 0.973] |
+| fresh low (replicate) | 0.942 | [0.914, 0.968] |
+| **max** | **0.942** | [0.912, 0.967] |
+
+The low-effort run was replicated precisely so the comparison has a noise
+floor. |archived − fresh| = **0.009**; max − mean(low) = **−0.005**. The
+effort gap is smaller than run-to-run variation, and negative. Per-segment
+correlations agree: low-vs-low r = +0.976, low-vs-max +0.959 and +0.960 —
+max is not scoring differently and losing, it is scoring the same way with
+slightly more scatter.
+
+Against a single low run, max would have looked like a −0.009 decline and
+been tempting to report as an effect. Two low runs differ by exactly that
+much. **The replicate is what makes the null readable.**
+
+This also cuts against the pattern in the open models, measured on the same
+pool: effort moved Qwen3-32B by **+0.172** and gpt-oss-120b by **+0.015**,
+against **−0.005** for Opus. Reasoning closes part of the gap for weak
+detectors and does nothing for a strong one — consistent with §3.4's finding
+that reasoning never closes the ~0.25 AUC frontier gap, but sharper: the
+frontier model is not reasoning its way to 0.951, it is recognising something
+at a glance. Practically, it means the screen can be run at a fifth of the
+cost with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
+
 ### 4.5 The register shift starts in 1994–96, decades before the machines
 
 Descriptive series (§3.3), UK Commons extended back to 1985. The register

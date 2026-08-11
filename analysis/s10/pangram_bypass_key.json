@@ -1,0 +1,402 @@
+[
+ {
+  "id": "bp_20230511_t11774w0",
+  "seg_id": "2023-05-11#t11774w0",
+  "key": "2023-05-11#t11774w0|r2v2",
+  "opus_orig": 88,
+  "opus_orig3x": 85,
+  "opus_rw3x": 56,
+  "plaus": 86,
+  "n_words": 318
+ },
+ {
+  "id": "bp_20231205_t14931w2",
+  "seg_id": "2023-12-05#t14931w2",
+  "key": "2023-12-05#t14931w2|r1v1",
+  "opus_orig": 62,
+  "opus_orig3x": 45,
+  "opus_rw3x": 33.3,
+  "plaus": 88,
+  "n_words": 294
+ },
+ {
+  "id": "bp_20231205_t14931w4",
+  "seg_id": "2023-12-05#t14931w4",
+  "key": "2023-12-05#t14931w4|r2v1",
+  "opus_orig": 45,
+  "opus_orig3x": 72,
+  "opus_rw3x": 36.3,
+  "plaus": 87.3,
+  "n_words": 297
+ },
+ {
+  "id": "bp_20240507_t16123w0",
+  "seg_id": "2024-05-07#t16123w0",
+  "key": "2024-05-07#t16123w0|r2v1",
+  "opus_orig": 18,
+  "opus_orig3x": 26.7,
+  "opus_rw3x": 23,
+  "plaus": 90,
+  "n_words": 160
+ },
+ {
+  "id": "bp_20240516_t16835w0",
+  "seg_id": "2024-05-16#t16835w0",
+  "key": "2024-05-16#t16835w0|r2v1",
+  "opus_orig": 45,
+  "opus_orig3x": 35,
+  "opus_rw3x": 26.7,
+  "plaus": 88.7,
+  "n_words": 257
+ },
+ {
+  "id": "bp_20240516_t16835w1",
+  "seg_id": "2024-05-16#t16835w1",
+  "key": "2024-05-16#t16835w1|r2v1",
+  "opus_orig": 78,
+  "opus_orig3x": 51.7,
+  "opus_rw3x": 41.7,
+  "plaus": 84.3,
+  "n_words": 364
+ },
+ {
+  "id": "bp_20251024_t178w1",
+  "seg_id": "2025-10-24#t178w1",
+  "key": "2025-10-24#t178w1|r2v2",
+  "opus_orig": 38,
+  "opus_orig3x": 30,
+  "opus_rw3x": 62.3,
+  "plaus": 87,
+  "n_words": 339
+ },
+ {
+  "id": "bp_20251105_t632w0",
+  "seg_id": "2025-11-05#t632w0",
+  "key": "2025-11-05#t632w0|r2v1",
+  "opus_orig": 65,
+  "opus_orig3x": 60,
+  "opus_rw3x": 45,
+  "plaus": 87.3,
+  "n_words": 153
+ },
+ {
+  "id": "bp_20251105_t690w1",
+  "seg_id": "2025-11-05#t690w1",
+  "key": "2025-11-05#t690w1|r1v1",
+  "opus_orig": 35,
+  "opus_orig3x": 40,
+  "opus_rw3x": 57,
+  "plaus": 84.7,
+  "n_words": 330
+ },
+ {
+  "id": "bp_20251106_t803w1",
+  "seg_id": "2025-11-06#t803w1",
+  "key": "2025-11-06#t803w1|r1v1",
+  "opus_orig": 80,
+  "opus_orig3x": 70.3,
+  "opus_rw3x": 56,
+  "plaus": 71.3,
+  "n_words": 288
+ },
+ {
+  "id": "bp_20251118_t1017w3",
+  "seg_id": "2025-11-18#t1017w3",
+  "key": "2025-11-18#t1017w3|r1v1",
+  "opus_orig": 35,
+  "opus_orig3x": 55,
+  "opus_rw3x": 48.7,
+  "plaus": 85.3,
+  "n_words": 222
+ },
+ {
+  "id": "bp_20251118_t922w0",
+  "seg_id": "2025-11-18#t922w0",
+  "key": "2025-11-18#t922w0|r1v1",
+  "opus_orig": 12,
+  "opus_orig3x": 12,
+  "opus_rw3x": 61.7,
+  "plaus": 87,
+  "n_words": 106
+ },
+ {
+  "id": "bp_20251202_t1365w0",
+  "seg_id": "2025-12-02#t1365w0",
+  "key": "2025-12-02#t1365w0|r2v1",
+  "opus_orig": 45,
+  "opus_orig3x": 33.7,
+  "opus_rw3x": 45,
+  "plaus": 84,
+  "n_words": 170
+ },
+ {
+  "id": "bp_20251203_t1396w0",
+  "seg_id": "2025-12-03#t1396w0",
+  "key": "2025-12-03#t1396w0|r1v1",
+  "opus_orig": 70,
+  "opus_orig3x": 30,
+  "opus_rw3x": 64,
+  "plaus": 86.3,
+  "n_words": 147
+ },
+ {
+  "id": "bp_20251204_t1466w0",
+  "seg_id": "2025-12-04#t1466w0",
+  "key": "2025-12-04#t1466w0|r1v1",
+  "opus_orig": 65,
+  "opus_orig3x": 40,
+  "opus_rw3x": 33.3,
+  "plaus": 91.7,
+  "n_words": 170
+ },
+ {
+  "id": "bp_20251204_t1477w0",
+  "seg_id": "2025-12-04#t1477w0",
+  "key": "2025-12-04#t1477w0|r1v2",
+  "opus_orig": 40,
+  "opus_orig3x": 36.7,
+  "opus_rw3x": 50.3,
+  "plaus": 88.7,
+  "n_words": 144
+ },
+ {
+  "id": "bp_20251204_t1550w1",
+  "seg_id": "2025-12-04#t1550w1",
+  "key": "2025-12-04#t1550w1|r2v3",
+  "opus_orig": 60,
+  "opus_orig3x": 58.3,
+  "opus_rw3x": 65.3,
+  "plaus": 74,
+  "n_words": 343
+ },
+ {
+  "id": "bp_20251205_t1574w0",
+  "seg_id": "2025-12-05#t1574w0",
+  "key": "2025-12-05#t1574w0|r1v1",
+  "opus_orig": 35,
+  "opus_orig3x": 28.3,
+  "opus_rw3x": 30,
+  "plaus": 88,
+  "n_words": 155
+ },
+ {
+  "id": "bp_20251209_t1625w0",
+  "seg_id": "2025-12-09#t1625w0",
+  "key": "2025-12-09#t1625w0|r2v2",
+  "opus_orig": 45,
+  "opus_orig3x": 21.3,
+  "opus_rw3x": 30,
+  "plaus": 86,
+  "n_words": 150
+ },
+ {
+  "id": "bp_20251209_t1639w0",
+  "seg_id": "2025-12-09#t1639w0",
+  "key": "2025-12-09#t1639w0|r2v1",
+  "opus_orig": 55,
+  "opus_orig3x": 51.7,
+  "opus_rw3x": 54,
+  "plaus": 86,
+  "n_words": 190
+ },
+ {
+  "id": "bp_20251210_t1743w0",
+  "seg_id": "2025-12-10#t1743w0",
+  "key": "2025-12-10#t1743w0|r2v2",
+  "opus_orig": 30,
+  "opus_orig3x": 45,
+  "opus_rw3x": 36.7,
+  "plaus": 87,
+  "n_words": 161
+ },
+ {
+  "id": "bp_20251210_t1783w0",
+  "seg_id": "2025-12-10#t1783w0",
+  "key": "2025-12-10#t1783w0|r2v2",
+  "opus_orig": 88,
+  "opus_orig3x": 80,
+  "opus_rw3x": 65,
+  "plaus": 81.7,
+  "n_words": 297
+ },
+ {
+  "id": "bp_20251211_t1859w0",
+  "seg_id": "2025-12-11#t1859w0",
+  "key": "2025-12-11#t1859w0|r2v1",
+  "opus_orig": 45,
+  "opus_orig3x": 39.3,
+  "opus_rw3x": 51.7,
+  "plaus": 83.3,
+  "n_words": 319
+ },
+ {
+  "id": "bp_20251211_t1877w2",
+  "seg_id": "2025-12-11#t1877w2",
+  "key": "2025-12-11#t1877w2|r2v1",
+  "opus_orig": 15,
+  "opus_orig3x": 38.3,
+  "opus_rw3x": 23.3,
+  "plaus": 94,
+  "n_words": 126
+ },
+ {
+  "id": "bp_20260318_t2135w12",
+  "seg_id": "2026-03-18#t2135w12",
+  "key": "2026-03-18#t2135w12|r1v1",
+  "opus_orig": 85,
+  "opus_orig3x": 36,
+  "opus_rw3x": 57.7,
+  "plaus": 82.7,
+  "n_words": 380
+ },
+ {
+  "id": "bp_20260320_t2144w0",
+  "seg_id": "2026-03-20#t2144w0",
+  "key": "2026-03-20#t2144w0|r1v1",
+  "opus_orig": 55,
+  "opus_orig3x": 46.7,
+  "opus_rw3x": 48.3,
+  "plaus": 92.7,
+  "n_words": 127
+ },
+ {
+  "id": "bp_20260320_t2201w0",
+  "seg_id": "2026-03-20#t2201w0",
+  "key": "2026-03-20#t2201w0|r1v2",
+  "opus_orig": 45,
+  "opus_orig3x": 32.7,
+  "opus_rw3x": 72.7,
+  "plaus": 77.3,
+  "n_words": 213
+ },
+ {
+  "id": "bp_20260324_t2305w3",
+  "seg_id": "2026-03-24#t2305w3",
+  "key": "2026-03-24#t2305w3|r1v1",
+  "opus_orig": 70,
+  "opus_orig3x": 64,
+  "opus_rw3x": 47.3,
+  "plaus": 85,
+  "n_words": 230
+ },
+ {
+  "id": "bp_20260325_t2350w0",
+  "seg_id": "2026-03-25#t2350w0",
+  "key": "2026-03-25#t2350w0|r1v2",
+  "opus_orig": 28,
+  "opus_orig3x": 41.7,
+  "opus_rw3x": 41.7,
+  "plaus": 91.3,
+  "n_words": 158
+ },
+ {
+  "id": "bp_20260505_t2576w0",
+  "seg_id": "2026-05-05#t2576w0",
+  "key": "2026-05-05#t2576w0|r1v1",
+  "opus_orig": 25,
+  "opus_orig3x": 41.7,
+  "opus_rw3x": 47.3,
+  "plaus": 89.3,
+  "n_words": 181
+ },
+ {
+  "id": "bp_20260505_t2582w0",
+  "seg_id": "2026-05-05#t2582w0",
+  "key": "2026-05-05#t2582w0|r1v2",
+  "opus_orig": 22,
+  "opus_orig3x": 14,
+  "opus_rw3x": 31.7,
+  "plaus": 90.7,
+  "n_words": 145
+ },
+ {
+  "id": "bp_20260506_t2648w0",
+  "seg_id": "2026-05-06#t2648w0",
+  "key": "2026-05-06#t2648w0|r2v1",
+  "opus_orig": 45,
+  "opus_orig3x": 31.3,
+  "opus_rw3x": 39.3,
+  "plaus": 83.3,
+  "n_words": 167
+ },
+ {
+  "id": "bp_20260506_t2699w0",
+  "seg_id": "2026-05-06#t2699w0",
+  "key": "2026-05-06#t2699w0|r2v1",
+  "opus_orig": 30,
+  "opus_orig3x": 30,
+  "opus_rw3x": 31.7,
+  "plaus": 77.3,
+  "n_words": 149
+ },
+ {
+  "id": "bp_20260507_t2871w4",
+  "seg_id": "2026-05-07#t2871w4",
+  "key": "2026-05-07#t2871w4|r1v3",
+  "opus_orig": 88,
+  "opus_orig3x": 68,
+  "opus_rw3x": 73,
+  "plaus": 69.7,
+  "n_words": 373
+ },
+ {
+  "id": "bp_20260508_t2948w0",
+  "seg_id": "2026-05-08#t2948w0",
+  "key": "2026-05-08#t2948w0|r1v1",
+  "opus_orig": 72,
+  "opus_orig3x": 48.3,
+  "opus_rw3x": 70.7,
+  "plaus": 79.3,
+  "n_words": 270
+ },
+ {
+  "id": "bp_20260513_t3072w1",
+  "seg_id": "2026-05-13#t3072w1",
+  "key": "2026-05-13#t3072w1|r1v1",
+  "opus_orig": 80,
+  "opus_orig3x": 79.3,
+  "opus_rw3x": 62,
+  "plaus": 80.7,
+  "n_words": 371
+ },
+ {
+  "id": "bp_20260513_t3076w2",
+  "seg_id": "2026-05-13#t3076w2",
+  "key": "2026-05-13#t3076w2|r2v1",
+  "opus_orig": 88,
+  "opus_orig3x": 83.3,
+  "opus_rw3x": 70,
+  "plaus": 80,
+  "n_words": 451
+ },
+ {
+  "id": "bp_20260514_t3111w0",
+  "seg_id": "2026-05-14#t3111w0",
+  "key": "2026-05-14#t3111w0|r1v3",
+  "opus_orig": 55,
+  "opus_orig3x": 71.3,
+  "opus_rw3x": 68,
+  "plaus": 77,
+  "n_words": 154
+ },
+ {
+  "id": "bp_20260514_t3166w1",
+  "seg_id": "2026-05-14#t3166w1",
+  "key": "2026-05-14#t3166w1|r2v2",
+  "opus_orig": 38,
+  "opus_orig3x": 40,
+  "opus_rw3x": 28.3,
+  "plaus": 89.3,
+  "n_words": 343
+ },
+ {
+  "id": "bp_20260514_t3199w2",
+  "seg_id": "2026-05-14#t3199w2",
+  "key": "2026-05-14#t3199w2|r1v3",
+  "opus_orig": 45,
+  "opus_orig3x": 55,
+  "opus_rw3x": 74,
+  "plaus": 80,
+  "n_words": 341
+ }
+]

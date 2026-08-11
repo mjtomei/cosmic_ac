@@ -1,0 +1,82 @@
+[
+ {
+  "seg_id": "CA2025-06-19#t283w10",
+  "opus": 15,
+  "verdict": "Mixed"
+ },
+ {
+  "seg_id": "CA2025-11-27#t17w4",
+  "opus": 22,
+  "verdict": "Mixed"
+ },
+ {
+  "seg_id": "CA2025-06-16#t91w0",
+  "opus": 25,
+  "verdict": "Mixed"
+ },
+ {
+  "seg_id": "CA2025-12-03#t305w1",
+  "opus": 25,
+  "verdict": "Mixed"
+ },
+ {
+  "seg_id": "CA2025-12-01#t187w2",
+  "opus": 35,
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-02-02#t270w1",
+  "opus": 35,
+  "verdict": "Mixed"
+ },
+ {
+  "seg_id": "CA2026-05-01#t172w2",
+  "opus": 35,
+  "verdict": "Mixed"
+ },
+ {
+  "seg_id": "CA2025-06-17#t277w3",
+  "opus": 40,
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-05-25#t230w3",
+  "opus": 40,
+  "verdict": "Mixed"
+ },
+ {
+  "seg_id": "CA2025-12-03#t144w1",
+  "opus": 40,
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-04-14#t124w1",
+  "opus": 45,
+  "verdict": "Mixed"
+ },
+ {
+  "seg_id": "CA2025-11-24#t219w2",
+  "opus": 45,
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2025-06-17#t71w2",
+  "opus": 45,
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2025-10-21#t298w3",
+  "opus": 45,
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2026-06-05#t174w0",
+  "opus": 50,
+  "verdict": "AI"
+ },
+ {
+  "seg_id": "CA2025-11-21#t7w2",
+  "opus": 50,
+  "verdict": "AI"
+ }
+]
