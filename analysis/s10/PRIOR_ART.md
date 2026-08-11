@@ -175,17 +175,30 @@ adversarial figure and far below the legacy-detector ones.
 
 ## To verify before citing
 
-0. **Anthropic structural text signatures** (§8.2) — reported by Matthew as a
-   recent announcement: invisible signatures carried in the *structure* of
-   generated text rather than surface statistics. **Not verified.** The
-   session's web-search budget was exhausted (200/200) before it could be
-   checked. Needed before it appears in any published version: the primary
-   announcement, the date, whether the mark is structural or token-level, and
-   whether verification uses a secret key. The surrounding argument in §8.2 is
-   built on published watermarking work (Kirchenbauer et al. 2023 / 2023b,
-   Sadasivan et al. 2023, Zhang et al. *Watermarks in the Sand*,
-   Dathathri et al. SynthID-Text) and stands without this claim; the claim
-   is currently marked unverified in place.
+0. **Anthropic text watermarking** (§8.2) — **VERIFIED 2026-08-11** against the
+   Claude help-centre article "How Claude marks AI-generated content"
+   (support.claude.com/en/articles/16266773). Confirmed: an "imperceptible
+   watermark directly into the text itself" that "will travel with the text
+   when it's copied and pasted elsewhere"; models launched **on or after
+   2 August 2026** support it at launch, existing models in progress; scope is
+   all Claude products plus AWS / Google Cloud / Microsoft; supported image
+   files (.svg, .png, .jpg) additionally carry C2PA-signed provenance metadata.
+
+   **Three things are NOT established and must not be asserted.** (i) Whether
+   the text mark is *structural* or token-level — the documentation says only
+   "imperceptible" and gives no mechanism, so our §8.2 does not characterise
+   it. (ii) Whether a secret key is involved. (iii) Robustness: detection is
+   not yet available to third parties ("we're also working to enable users and
+   other third parties to detect", documentation forthcoming), and Anthropic
+   itself states marks may not survive text that is "heavily edited,
+   paraphrased, translated, or mixed", with short passages carrying no reliable
+   signal. No adversarial robustness testing is claimed.
+
+   Supporting literature for the surrounding argument, all pre-existing:
+   Kirchenbauer et al. 2023 / 2023b, Sadasivan et al. 2023, Zhang et al.
+   *Watermarks in the Sand*, Dathathri et al. SynthID-Text (*Nature* 2024).
+   **Re-check when the detection documentation publishes** — it is the piece
+   that would let us test §8.6 item 2 directly.
 1. ~~Rice~~ — **VERIFIED 2026-08-11**, see above. Four corrections applied.
 2. ~~Pimlico Journal~~ — **VERIFIED 2026-08-11**, see above. One gap remains:
    whether the z-score baseline is the full 2007–2025 series or a pre-2022

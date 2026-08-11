@@ -796,31 +796,53 @@ want. It is also what lets 12.4% stand as a measurement of disclosed-by-default
 behaviour while conceding the limit above entirely.
 
 The better version of the norms instrument is not a sharper detector but a
-**signature the generator puts there on purpose** — a mark carried in the
-structure of the text rather than in its surface statistics, verified against a
-secret key. This inverts the asymmetry that beat us: an attacker with no query
-access to the verifier cannot hill-climb it, which is exactly the situation our
-search was in and the reason it needed eighteen tries.
+**signature the generator puts there on purpose**. Anthropic began embedding
+"an imperceptible watermark directly into the text itself" for Claude models
+launched on or after **2 August 2026**, with retrofitting of existing models in
+progress, across all its products and its AWS, Google Cloud and Microsoft
+distribution; generated image files additionally carry C2PA-signed provenance
+metadata. Detection is not yet public — the company says it is "working to
+enable users and other third parties to detect Claude's embedded watermarks",
+with technical documentation forthcoming. Google DeepMind's SynthID-Text
+(Dathathri et al., *Nature* 2024) is the deployed precedent.
 
-Three honest limits, all published:
+**The durable argument for hiddenness is not robustness — it is minimal
+interference with the content.** This is worth stating carefully, because the
+obvious argument is the wrong one. One could say a secret-keyed mark cannot be
+hill-climbed without query access to the verifier, which is exactly the
+situation our search was in and the reason it needed eighteen tries. True, but
+fragile: it erodes the moment the detector is released, and released detectors
+are the whole point of a transparency measure. Anthropic's own documentation
+concedes the robustness half — marks may not survive text that is "heavily
+edited, paraphrased, translated, or mixed", and short passages may carry no
+reliable signal.
 
-- **Paraphrase degrades token-level watermarks** (Sadasivan et al. 2023;
-  Kirchenbauer et al. 2023b find survival depends on having enough marked
-  tokens). Structural marks are the response to this, and whether they survive
-  the kind of rewriting §4.9 performed is an empirical question nobody has
-  answered on legislative text.
-- **Strong watermarking may be impossible in general.** Zhang et al.,
-  *Watermarks in the Sand*, give an impossibility result for an attacker with a
-  quality oracle and a perturbation budget — close to the setting we ran.
+The property that never goes away is that an invisible mark **costs the reader
+nothing even after the detector is public**. A visible disclosure label
+degrades the artifact, invites removal, and is trivially stripped; an
+imperceptible one imposes no cost on the text and survives ordinary copying
+between applications. Image watermarking is the settled analogy: easy to crop
+or inpaint away, universally deployed anyway, and useful precisely as a norm
+rather than a lock.
+
+**Bypassability is therefore not a defect here — it is the category.** Zhang
+et al., *Watermarks in the Sand*, give an impossibility result for strong
+watermarking against an attacker with a quality oracle and a perturbation
+budget, close to the setting we ran; paraphrase degrades token-level marks
+(Sadasivan et al. 2023, with Kirchenbauer et al. 2023b making survival a
+function of marked-token count). None of that refutes the instrument. It
+establishes that a watermark is a norms instrument and not a security
+primitive, which is the same thing §4.9 establishes about detection, and both
+are still worth having for the same reason locks are.
+
+Two limits that do bite, and neither is about robustness:
+
 - **It requires the generator to cooperate.** Open-weight models will not mark
-  their output, so watermarking raises the cost of frontier-API use and does
-  nothing about a local model. And a mark can attest presence, never absence:
-  unmarked text proves nothing.
-
-*Anthropic is reported to have announced structural text signatures of this
-kind. **Unverified** — the session's search budget was exhausted before it
-could be checked, and it must be confirmed against the primary announcement
-before appearing in any published version.*
+  their output, so this prices casual frontier-API use and does nothing about a
+  local model.
+- **A mark attests presence, never absence.** Unmarked text proves nothing,
+  which means watermarking can support a disclosure norm but can never
+  underwrite an accusation.
 
 ### 8.3 The substitution, and why our null is the argument for it
 
@@ -888,11 +910,14 @@ same reason it is collapsing.
    the automated counterpart for each, and check whether the residual separates
    the segments we have independent reason to believe were human-drafted. We
    already hold the pairs and the labels.
-2. **Do structural signatures survive our search?** The v3 contrastive attack
-   targeted structural features — rhythm, tricolons, anticlimactic endings —
-   which is exactly what a structural watermark would encode. Running it
-   against a watermarked corpus is a direct test, and no query access to the
-   verifier makes it the honest version of the threat model.
+2. **Do watermarks survive our search?** The v3 contrastive attack targeted
+   structural features — rhythm, tricolons, anticlimactic endings — and
+   Anthropic's own stated limit is that marks may not survive text that is
+   "heavily edited, paraphrased, translated, or mixed". Our rewrites are
+   exactly that, with a plausibility gate keeping them usable as floor speech,
+   so this is a sharper test than generic paraphrase. **Blocked until
+   third-party detection publishes**; no query access to the verifier is what
+   makes it the honest threat model when it does.
 3. **Detector access as a variable.** Re-run the search with Pangram in the
    loop rather than an Opus proxy. Our 24.6% is a floor on adversary capability
    and the gap is unmeasured.
