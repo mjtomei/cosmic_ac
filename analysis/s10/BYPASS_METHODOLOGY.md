@@ -20,10 +20,39 @@ The third turned out to dominate the other two, and it was discovered late.
 
 ---
 
-## The core finding that reorganised the arm
+## The organising hypothesis — and its current status
 
-Pangram flips are predicted by the **seed's original Opus score**, not by how
-far a rewrite drives that score down.
+**Status, after the full GO run: DIRECTIONAL, NOT ESTABLISHED. Do not quote it
+as a finding.** It reorganised the arm and it is still the best available
+account of the pattern, but it does not clear significance on the one sample
+that can test it cleanly. `bypass_report.py` prints the current numbers.
+
+The hypothesis: what predicts a Pangram flip is a property of the **original**
+— whether the detector was already near its boundary — not how far a rewrite
+drives any score down.
+
+Two versions of the evidence, and only the first is sound:
+
+**Opus banding (below).** Measured on New Brunswick, where the Opus screen
+post-dates the Pangram batch. Real, but Opus is a proxy for the thing we care
+about.
+
+**Pangram's own Mixed verdict.** The direct test, and the one we briefly
+overclaimed. An earlier note reported "22% for AI seeds against 76% for
+Mixed" as a Pangram-native replacement for the Opus banding. That figure was
+computed on batch 0 (100 of 129) and the two halves are **not the same
+statistic** — it scored "not confidently AI" as success, so a Mixed seed that
+*stayed Mixed* counted as an evasion. Like-for-like on the full 129, using the
+one outcome that is a genuine state change for both seed types:
+
+| seed verdict | variants | → AI | → Mixed | → Human |
+|---|---|---|---|---|
+| AI | 68 | 54 | 10 | 4 = 5.9% |
+| Mixed | 61 | 17 | 39 | 5 = 8.2% |
+
+Fisher exact **p = 0.735**. Per text the gap is wider (2/16 against 4/11) but
+rests on 27 texts. Note also that **28% of Mixed-seeded variants moved the
+wrong way, to AI** — the search is not monotone in the detector's score.
 
 **Band on the 3x re-scored baseline, never on the selection score.** Seeds are
 chosen using a single noisy measurement, so that measurement overstates their
@@ -52,6 +81,14 @@ Mechanism, stated as a hypothesis rather than a finding: text that Pangram
 flags while a frontier LLM reads as human-ish is borderline for Pangram, and a
 modest rewrite tips it over. Text both detectors agree is machine-written
 does not move.
+
+**Terminology, since it is where the overclaim came from.** For an AI-only
+seed set, "flip" is well defined: the variant moved off AI. That is what the
+45% per-text and 28% per-variant New Brunswick figures mean, and they are
+sound. The moment Mixed seeds enter, "flip" stops being well defined — moving
+off Mixed can mean getting *worse*. Across mixed seed types the only
+comparable outcome is reaching **Human**, and every cross-seed number must use
+it.
 
 ---
 
@@ -199,6 +236,28 @@ round retires texts that are improving in small steps. A text stays alive while
 it has set a new best within the last 3 rounds.
 
 ---
+
+## Pooled result across all four runs
+
+Computed by `bypass_report.py`, which is the only place these are derived; the
+per-run numbers in this document were each computed separately at the time and
+should be read as history.
+
+| run | variants | Human | `fraction_ai = 0.0` |
+|---|---|---|---|
+| NB v2 blind | 40 | 1 | 1 |
+| NB v3 contrastive | 212 | 29 | 29 |
+| GO Opus-selected | 80 | 0 | 0 |
+| GO all-31 uniform | 129 | 9 | 7 |
+| **pooled** | **461** | **39 = 8.5%** [6.3, 11.4] | **37 = 8.0%** [5.9, 10.9] |
+
+The GO Opus-selected run stays in the pool despite being the badly-seeded one.
+Dropping a run *because* it produced no successes would inflate the rate.
+
+**Label instability at the boundary.** Of the 9 GO reversals, `ga033` re-scanned
+as **Mixed at 0.67** and `ga092` as Human at **0.10** — ~11% verdict
+instability on the same text and model. All 30 New Brunswick Human labels
+re-scanned at exactly 0.0.
 
 ## What must be said when quoting any number from this arm
 

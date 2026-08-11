@@ -1,0 +1,12 @@
+{
+  "_note": "Re-score of every Human-labelled variant from the GO all-31 uniform run (gov_all_pangram.json), via the Pangram API. 'verdict' is the API's re-scan label, which disagrees with the dashboard label on ga033. fraction_ai is the continuous score behind the label; the strict criterion in bypass_report.py is fraction_ai == 0.0.",
+  "ga023": {"seed_verdict": "Mixed", "verdict": "Human", "fraction_ai": 0.0},
+  "ga025": {"seed_verdict": "AI", "verdict": "Human", "fraction_ai": 0.0},
+  "ga033": {"seed_verdict": "AI", "verdict": "Mixed", "fraction_ai": 0.667},
+  "ga054": {"seed_verdict": "Mixed", "verdict": "Human", "fraction_ai": 0.0},
+  "ga055": {"seed_verdict": "Mixed", "verdict": "Human", "fraction_ai": 0.0},
+  "ga086": {"seed_verdict": "Mixed", "verdict": "Human", "fraction_ai": 0.0},
+  "ga092": {"seed_verdict": "AI", "verdict": "Human", "fraction_ai": 0.0996},
+  "ga098": {"seed_verdict": "Mixed", "verdict": "Human", "fraction_ai": 0.0},
+  "ga110": {"seed_verdict": "AI", "verdict": "Human", "fraction_ai": 0.0}
+}

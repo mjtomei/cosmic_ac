@@ -1,12 +1,16 @@
 # Machine-drafted speech in legislatures: prevalence, concentration, and a register that predates the machines
 
-**S10 — draft write-up, 2026-08-10.** One arm is still open and is marked
-`[PENDING]` in place: the detector-bypass study. The quality arm (§4.9) is
-complete across all three stages. Everything else is complete and reproducible from `analysis/s10/`.
+**S10 — draft write-up, 2026-08-11.** All arms complete, including the
+detector-bypass study and both prior-art comparators. Everything is
+reproducible from `analysis/s10/`.
 
-**Numbers marked † are carried from earlier in the study and should be
-re-checked against their artifact before publication.** Everything unmarked
-was computed or re-verified on 2026-08-09/10 and names its source file.
+**Numbers marked † are carried from earlier in the study.** All nine were
+re-derived from their artifacts on 2026-08-11 and reproduce; footnotes on each
+give the script and invocation. Two of the nine (§4.6's cohort share, §4.7's
+pooled alignment effect) were briefly and wrongly recorded as unsourced — the
+verification pass had looked in the wrong script — so their footnotes name the
+right one explicitly. Everything unmarked was computed or re-verified on
+2026-08-09/11 and names its source file.
 
 ---
 
@@ -306,7 +310,12 @@ cost with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 Descriptive series (§3.3), UK Commons extended back to 1985. The register
 *declines* through the late 1980s and turns upward around **1994–96** —
 before the consumer web, and long before any language model. Whatever this
-measures, LLMs did not start it.
+measures, LLMs did not start it.[^r45]
+
+[^r45]: `python long_trend.py --seg uk/segments_uk_deep.jsonl`. The turning
+    point is the minimum of the fitted series; it lands on 1994 exactly. The
+    "1994–96" range in the text is the flat region around that minimum, not
+    an interval estimate.
 
 Read together with §4.7, the interesting reading is not "LLMs changed
 parliamentary register" but that **human register had been moving toward what
@@ -314,11 +323,25 @@ instruct-tuning later selected for, for thirty years.** †
 
 ### 4.6 Cohort replacement, not incumbent conversion
 
-- Arrivals bring **+1.87 per 1,000** more than incumbents (15/16 chambers). †
+- Arrivals bring **+1.87 per 1,000** more than incumbents (15/16 chambers). †[^r46a]
 - Birth decade predicts at **t ≈ 12**; occupation and education both run the
-  wrong way. †
+  wrong way. †[^r46b]
 - Cohort is separable from age: chamber age is flat while the register rises;
-  cohort accounts for **~60%** of the change. †
+  cohort accounts for **~60%** of the change. †[^r46c]
+
+[^r46a]: `python arrival_premium.py`. CI [+1.25, +2.49], clustered on member.
+
+[^r46b]: `python formation_window.py`. t = +12.06 unadjusted, +13.22 with
+    occupation and education controls — the controls *strengthen* the cohort
+    term, which is why they are reported as running the wrong way for a
+    selection story.
+
+[^r46c]: Not a decomposition — an arithmetic closure. Mean birth year advances
+    **13.8 years** across the window; at the fitted **+0.093 per year** that
+    predicts **+1.28** of the observed **+2.06**, i.e. ~60%. Distinct from the
+    within/between split in the next bullet, which asks a different question
+    (`decomposition_inference.py`) and attributes essentially all of the
+    change to composition: between +2.18 against within −0.42.
 - **Incumbents are flat, not falling.** Pooled within-member change is −0.42,
   CI [−1.32, +0.49] — not significant. An earlier claim that sitting
   legislators' register fell was wrong; it did not survive clustering on
@@ -337,21 +360,35 @@ OLMo-2 ladder, same prompts across the post-training stages:
 | DPO | **+0.86** † |
 | RLVR | +0.37 † |
 
-Pooled alignment effect **+0.88** †. The shift is largest at the preference
-stage, which is what makes §4.5 more than a coincidence of direction:
-the thing RLHF selects for is something humans were already drifting toward.
+Pooled alignment effect **+0.88** †.[^r47] The shift is largest at the
+preference stage, which is what makes §4.5 more than a coincidence of
+direction: the thing RLHF selects for is something humans were already
+drifting toward.
+
+[^r47]: Ladder stages: `python olmo_ladder.py` (end-to-end base→instruct
+    **+1.2420**). The pooled **+0.88** is a *separate* experiment on two other
+    model families — `python rlhf_pref_analyze.py`, which prints
+    `EXCESS +0.8797, p < 0.001` (Qwen3-8B and Mistral-7B, 668 and 788 prompt
+    pairs, Kobak style words against frequency-matched controls). It is not a
+    pooling of the three OLMo stages, and it is not produced by
+    `align_ratio.py report`, which prints the Hansard-drift arm instead.
+    Recorded here because looking for it in the wrong script is how it came to
+    be mistaken for an unsourced figure.
 
 ### 4.8 Permeation: detector-independent and small but positive
 
 In-context likelihood of the Kobak style words within Hansard traces,
 self-normalised, no placebo word list, no external control:
 
-**+0.0099, CI [+0.0007, +0.0196], positive in 9/10 cells.** †
+**+0.0099, CI [+0.0007, +0.0196], positive in 9/10 cells.** †[^r48]
 
 Small, but it is the only permeation evidence that does not route through a
 detector, and it survives the failure mode that demoted the lexicon arm.
 
-### 4.9 Quality: better-formed, and *not* worse-engaged
+[^r48]: `python word_context_delta.py`. Per-model cell table at
+    `METHODOLOGY.md:1009`; the Qwen row reproduces exactly on re-run.
+
+### 4.9 Quality: better-formed, not worse-engaged — and evadable under effort
 
 Graded against the Discourse Quality Index (Steenbergen, Bächtiger, Spörndli
 & Steiner 2003), using the original authors' own codings of a 1998 UK Commons
@@ -414,22 +451,155 @@ change a reader's confidence:
    are partly reading the same style signal, so the fixed-effects columns are
    what carry the quality claim; the raw contrasts should not be quoted alone.
 
-**Bypass study:** `[PENDING]` — ladder of rewrites seeded from the 45
-natural low-Opus/Pangram-AI cases in §4.4, with a **human-text control arm
-through the identical ladder** (without it a drop in flags is unattributable
-— heavy paraphrase may destroy the register that makes human text look
-human), a **plausibility gate** (would this pass as floor speech in this
-chamber), and DQI grading of successful evaders against their originals. The
-question is whether evasion is free or costs deliberative quality. If free,
-12.4% is a floor and detection is a dead end.
+**Bypass study.** Prevalence counts machine text a detector can see. If a
+member can defeat the detector cheaply, 12.4% is a floor and detection-based
+prevalence is a dead end. Four search runs across two chambers, **461
+rewritten variants of 130 flagged originals**, each variant scored by Pangram.
+Selection differs between runs and the differences matter; the filter stack for
+each is set out in `BYPASS_METHODOLOGY.md` and summarised in Appendix C.
+
+**The headline: an adversarially-induced false-negative rate of 8.5%.**[^r49a]
+
+| | variants | Pangram says Human | `fraction_ai = 0.0` |
+|---|---|---|---|
+| NB v2 blind search | 40 | 1 | 1 |
+| NB v3 contrastive | 212 | 29 | 29 |
+| GO Opus-selected | 80 | 0 | 0 |
+| GO all-31 uniform | 129 | 9 | 7 |
+| **pooled** | **461** | **39 = 8.5%** [6.3, 11.4] | **37 = 8.0%** [5.9, 10.9] |
+
+Restricted to unambiguously AI-seeded originals the rate is unchanged: 34/400
+= 8.5% by label, 32/400 = 8.0% strict.
+
+**Against 0 AI labels in 1,260 genuine pre-AI controls (§4.1).** That is what
+makes the reversals worth reporting: they are movements *into* a class the
+detector otherwise reaches zero times out of 1,260. This is not a detector
+that is merely noisy at the boundary — it is one with a hard specificity floor
+that a directed search nevertheless walks text across.
+
+**Naming the quantity precisely, because the comparison is easy to get wrong.**
+Ours is an **induced false-negative rate** under attack, and it is *not* the
+same measurement as a vendor's published FNR, for two reasons that must travel
+with the number. First, ground truth is a Pangram verdict on the *original*,
+not known authorship — a "false negative" here means the detector reversed
+itself on text it had flagged, not that a machine demonstrably wrote it.
+Second, the variants are the surviving output of a search that optimised
+against a correlated proxy, so this is a rate under adversarial pressure
+rather than under clean conditions.
+
+| measurement | rate | what it is |
+|---|---|---|
+| Pangram 4, clean | 0.34% | FNR, known-AI text, vendor-reported |
+| Pangram 4, 13 humanizer services | 2.31% | FNR under commercial evasion, vendor |
+| Pangram 4, BLADER de-AI agent | 0.43% | FNR under agentic evasion, vendor |
+| Pangram 4, Perkins benchmark | 2.86% | FNR, doc-level, adversarial, vendor |
+| **this study** | **8.5%** | **induced FNR, directed search, 461 variants** |
+| Rice 2026, Australian Hansard | ~8% | **false *positive* rate**, n = 50 |
+
+The last row is included because the numeric coincidence invites a comparison
+that does not exist: Rice's ~8% is a false-positive rate on 50 pre-ChatGPT
+speeches, measured on an LLM judge rather than on Pangram, and it is not
+commensurable with anything else in the table (§7). The vendor rows are
+vendor-reported on undisclosed test data and should be read as such;
+independent evaluations (RAID, Dugan et al. 2024; Weber-Wulff et al. 2023)
+consistently find detectors fail toward false negatives under obfuscation,
+which is the direction our result also points.
+
+**Per text, the rate is a property of the search budget, not the detector.**
+With ~6 rounds × 3 variants, 10 of 38 New Brunswick texts (26%) reached a clean
+Human verdict at least once and 17 of 38 (45%) softened off AI at all. Those
+figures rise with attempts and with search sophistication — the blind v2 search
+flipped 10% of variants, the contrastive v3 search 28% — so they bound what a
+weekend of effort achieves, not what is achievable.
+
+**A correction to an earlier claim.** We previously reported that Pangram's own
+uncertainty predicts evasion, at "22% for AI seeds against 76% for Mixed". That
+figure was computed on the first 100 of 129 variants, and the two halves are
+not the same statistic: it counted "not confidently AI" as success, which
+scores a Mixed-seeded text that *stayed Mixed* as an evasion. Like-for-like, on
+the full run, using the one outcome that is a genuine state change for both
+seed types:
+
+| seed verdict | variants | → AI | → Mixed | → Human |
+|---|---|---|---|---|
+| AI | 68 | 54 | 10 | 4 = 5.9% [2, 14] |
+| Mixed | 61 | 17 | 39 | 5 = 8.2% [4, 18] |
+
+Fisher exact **p = 0.735**. The per-text figures run in the same direction and
+are larger (2/16 against 4/11) but rest on 27 texts. **The hypothesis that
+borderline originals are the vulnerable ones remains plausible and remains
+unestablished**; it should not be quoted as a finding. What is established is
+that 28% of Mixed-seeded variants moved the *wrong* way, to AI — a directed
+search against this detector is not monotone.
+
+**The label and the score disagree at the boundary, and the interface hides
+it.** Of the 9 Government Orders reversals, one (`ga033`) came back **Mixed at
+`fraction_ai` 0.67** on re-scan rather than Human at all, and another
+(`ga092`) was Human at 0.10 rather than 0.0 — about 11% verdict instability on
+the same text and the same model. New Brunswick showed none: all 30 of its
+Human labels re-scanned at exactly 0.0. The dashboard reports a categorical
+label, so a user reads "Human" as "a person wrote this"; the continuous score
+underneath sometimes says something weaker. Both numbers are therefore reported
+throughout this study, and the gap between them — half a percentage point
+pooled — changes no conclusion here.
+
+**Evasion does not cost deliberative quality.** Two paired arms, 63
+within-text pairs, blinded and interleaved, graded on the same v2b DQI rubric:
+stage 3 is 38 New Brunswick pairs, stage 4 is 25 Government Orders pairs. Every
+dimension is null on both, adjusted for length.[^r49b]
+
+| dimension | stage 3 (n=38) | stage 4 (n=25) |
+|---|---|---|
+| justification | +0.05 (t +0.6) | −0.17 (t −0.8) |
+| common_good | −0.05 (t −0.8) | −0.05 (t −0.2) |
+| respect_groups | −0.08 (t −1.8) | +0.04 (t +0.9) |
+| respect_demands | −0.14 (t −1.0) | +0.08 (t +1.0) |
+| respect_counterargs | +0.24 (t +1.3) | +0.05 (t +0.5) |
+| constructive | −0.00 (t −0.0) | −0.01 (t −0.1) |
+| evidence | +0.02 (t +0.4) | −0.08 (t −0.2) |
+
+Stage 4 also settles a residual worry from stage 3: justification rises +0.16
+raw (t +1.7) and goes *negative* once word count enters, so the apparent gain
+was length. Humanized variants run ~30 words longer at the median.
+
+**What this means for the prevalence number.** Evasion is real, reaches a
+detector-clean verdict roughly one variant in twelve under directed search, and
+is free in deliberative-quality terms — so 12.4% is a floor, and the honest
+reading is that it measures *undisguised* machine drafting. But it is not
+cheap: it took a frontier model, contrastive exemplars mined from matched human
+text, and a multi-round search scoring three replicates per variant. A single
+"make this sound human" prompt does the opposite — instructed rewriting *raises*
+Pangram's score, and human text pushed through the same ladder went from 11.7
+to 60.2. The gap between "a detector can be beaten" and "a detector is easy to
+beat" is the whole of that apparatus.
+
+[^r49a]: `python bypass_report.py`, which reads the four verdict files and
+    prints every figure in this subsection, including the Wilson intervals and
+    the Fisher test. Strict re-scores in `nb_reflip_fractions.json`,
+    `bp_reflip_fractions.json`, `go_reflip_fractions.json`. Rewritten variant
+    text is held locally and excluded from the repository under the corpus
+    licence policy.
+
+[^r49b]: `cd quality_expansion && python analyze_stage3.py [RUNDIR]` and
+    `python analyze_stage3.py --key4 [RUNDIR]`; values cached in
+    `results_stage34.json`. Quoted column is the intercept with
+    (humanized − original) word count as covariate. `-1` (inapplicable) pairs
+    are excluded, which is why the two sentinel dimensions have smaller n
+    (12 and 12 in stage 3; 18 and 16 in stage 4).
 
 ---
 
 ## 5. Limits
 
-- **Prevalence is a floor.** Detectors see undisguised machine text. §4.9
-  will quantify the gap; until it lands, 12.4% should be read as a lower
-  bound.
+- **Prevalence is a floor.** Detectors see undisguised machine text. A
+  directed search reaches a detector-clean verdict on 8.5% of variants
+  (§4.9), so 12.4% is a lower bound. How much of a lower bound is not
+  estimable from this design: we can measure how often evasion succeeds when
+  attempted, not how often it is attempted.
+- **The evasion rate is an upper bound on our own effort, not on anyone's.**
+  Four runs over two days with a frontier model. A staff tool refined over
+  months, or a local model fine-tuned against the detector, is a different
+  adversary and we did not test one.
 - **Tasmania is uninterpretable** and excluded. Other chambers passed the
   regime diagnostic, but the diagnostic uses two markers, not all of them.
 - **Mixed is pooled with AI** throughout. Reported separately in the CSV.
@@ -475,35 +645,60 @@ evidence, not evidence of absence. Saskatchewan is the one solid null.
 
 ## 7. Related work
 
-Two prior studies ran comparable designs on chambers in this corpus and
+Two prior efforts ran comparable designs on chambers in this corpus and
 reached opposite conclusions. **Neither used a calibrated commercial
-detector.**
+detector, and neither is peer-reviewed** — one is a Substack post, the other a
+pseudonymous magazine piece. Details and primary-source verification in
+`PRIOR_ART.md`.
 
-| | Rice (Australian federal) | Pimlico Journal (UK Commons) |
+| | Rice 2026 (Australian federal) | Pimlico Journal 2025 (UK Commons) |
 |---|---|---|
-| instrument | Binoculars + Fast-DetectGPT + LLM scoring | z-score excess vocabulary |
-| result | **no** post-ChatGPT increase | increase detected |
-| reported FPR | **~8%, exceeding the detection rate** | not reported |
+| instrument | Binoculars, Fast-DetectGPT, LLM judge, per-MP stylometry | z-score excess vocabulary |
+| corpus | 124,734 speeches, 2018– | UK Commons |
+| result | **no** post-ChatGPT inflection | increase asserted |
+| calibration | 50 pre-ChatGPT / 50 Claude-written | none reported |
 
-The answer to Rice is not that the detectors are bad — Binoculars (Hans et
-al. 2024) and Fast-DetectGPT (Bao et al. 2024) are published methods.
-**It is that a false-positive rate exceeding the detection rate makes the
-null uninformative rather than negative**: at that specificity a true
-prevalence of a few percent cannot be distinguished from noise. Our
-corresponding figure is 0 in 1,260, measured chamber by chamber.
+**Rice does not claim evidence of absence, and should not be cited as
+though he does.** He measures his LLM judge at **20% sensitivity** against
+known-AI speeches, and his own calibration script prints a verdict string for
+that case — *detector blind*. His stated reading is that no threshold
+separates the classes in parliamentary register, and that
+"it is inconceivable that only three or four federal politicians have used AI
+to draft a speech in the past three years." His null is a sensitivity failure
+he diagnoses himself.
 
-Pimlico's agreement is **not** corroboration: its method is the same family
-as the arm we demoted in §3.3 for lacking a trend control. A method that
-agrees with us while sharing the defect we found in our own version of it is
-weak support, and should be treated as a third result to explain.
+**One correction to how we previously answered him.** We wrote that his
+false-positive rate exceeded his detection rate, making the null
+uninformative. Rice does say this, but the two figures are measured at
+different thresholds — the 8% FPR at "highly likely AI" (≥8/10), the 7.1%
+corpus rate at "possibly AI" (≥6/10) — so the comparison does not hold as
+stated, and we should not have repeated it. The FPR itself is real but thin:
+**4 of 50**, Wilson CI [3.2%, 18.8%], and it characterises a Haiku-class judge
+rather than the Sonnet-class judge behind his headline run. Our corresponding
+specificity is 0 in 1,260, measured chamber by chamber.
+
+The substantive answer to Rice is therefore about **sensitivity, not
+specificity**, and it generalises beyond his study. Binoculars (Hans et al.
+2024) and Fast-DetectGPT (Bao et al. 2024) are sound published methods that
+degrade severely on formal institutional prose: on peer-review benchmarks
+reproduced in the Pangram 4 report, both fall to roughly 6% true-positive rate
+at 1% FPR — false-negative rates above 90% — where a calibrated commercial
+detector holds above 95%. Hansard is the same kind of register. A null
+recovered with those instruments on this genre is close to uninformative, and
+Rice's own numbers (Binoculars flagging 0.4% of everything) look like exactly
+that.
+
+Pimlico's agreement is **not** corroboration. Its method is the same family as
+the arm we demoted in §3.3 for lacking a trend control, it reports no
+prevalence estimate, and its own author hedges the finding as
+"LinkedIn-ification" rather than drafting. A method that agrees with us while
+sharing the defect we found in our own version of it is weak support, and
+should be treated as a third result to explain.
 
 Both may be measuring something real and different. §4.8 predicts exactly
 this split: lexical methods fire on permeation that is not drafting, while
 detector methods get ambiguous because the human baseline is moving toward
 the thing being detected.
-
-*All figures in this section are unverified against primary sources
-(`PRIOR_ART.md`).*
 
 ---
 
@@ -597,7 +792,35 @@ Stage 0's comparison and both stages' regressions were recomputed from the
 raw result files by a second party who did not run the grading, and reproduce
 to the reported precision.
 
-### C.4 Artifacts
+### C.4 Bypass sample selection
+
+The four bypass runs are not one sample, and pooling them is defensible only
+because the differences are recorded. Full stacks in `BYPASS_METHODOLOGY.md`.
+
+| run | seeds | how the seeds were chosen | Opus's role |
+|---|---|---|---|
+| NB v2 blind | 40 | Pangram-AI, stratified across Opus bands | outcome |
+| NB v3 contrastive | 38 | same pool, contrastive exemplars added | outcome |
+| GO Opus-selected | 25 | top 48 of 600 **by Opus score**, then Pangram-AI | **selection** |
+| GO all-31 uniform | 27 | every Pangram positive in the uniform GO draws | outcome |
+
+Two consequences carried into the text. The GO Opus-selected run regresses
+−10.3 points on re-scoring because every seed sits at the extreme of a noisy
+distribution, and it is range-restricted — it cannot contain the low band
+where New Brunswick found most of its successes, so its zero successes test
+nothing about the band hypothesis. And the GO all-31 run is the cleanest
+provenance in the study: exactly one selection step, the Pangram verdict
+itself, with no detector, lexicon, or Opus score influencing which segments
+were scanned. It is also every Government Orders positive we hold, so it is an
+exploratory replication rather than an independent rate estimate.
+
+Banding, where it appears, is always on the **mean of three independent
+re-scores**, never on the single noisy measurement used to select. Banding on
+the selection score manufactured a clean cross-chamber gradient that was an
+artifact of differential regression, and it was briefly reported before being
+caught.
+
+### C.5 Artifacts
 
 | artifact | what it does |
 |---|---|
@@ -608,8 +831,16 @@ to the reported precision.
 | `transcript_regime_check.py` | §2.1, writes `transcript_regime.csv` |
 | `build_pangram_expansion.py` | sampling, cleaning, regime floors |
 | `in_time_placebo.py` | §3.3, the test that demoted the lexicon arm |
-| `olmo_ladder.py`, `align_ratio.py` | §4.7 |
+| `long_trend.py` | §4.5 series and its 1994 trough |
+| `arrival_premium.py`, `formation_window.py`, `decomposition_inference.py` | §4.6 |
+| `olmo_ladder.py` | §4.7 ladder stages |
+| `rlhf_pref_analyze.py` | §4.7 pooled **+0.88** (not `align_ratio.py`) |
+| `align_ratio.py` | §4.7 Hansard-drift arm |
+| `word_context_delta.py` | §4.8 in-context permeation |
+| `bypass_report.py` | §4.9 bypass, all four runs pooled |
+| `go_reflip_fractions.json` + `nb_`/`bp_` | strict re-scores behind the 8.0% |
 | `quality_expansion/` | §4.9, self-contained (`RUNME.md`) |
+| `BYPASS_METHODOLOGY.md` | §4.9 selection filters, per sample |
 | `PRIOR_ART.md`, `ai_policy_scan.md` | §6, §7 |
 
 Cost: $158.00 API + 8,962 dashboard credits.
