@@ -204,6 +204,66 @@ produces nihilism and violence rather than adaptation — is handled in V.3a(e),
 where the roon "kompromat jubilee" exchange (5 Aug 2026) is the fear stated in
 the wild.)*
 
+  **The near-term quantification, and how it relates to this section's
+  limit-case (Fable & Carson 2026 — read 2026-08-10, PDF at
+  `~/reading/security-economics/`).** "Projected Cyber Security Costs from
+  Frontier AI: A Response to Tyler Cowen" (Zenodo, doi:10.5281/zenodo.21879325)
+  — notable first as *another Claude-coauthored work* ("Fable, C."), and
+  methodologically as an existence proof of V.3c's auditable-record refinement:
+  sealed priors dated before any simulation ran, a decision registry
+  (D-01–D-15), published working transcripts, adjustable-knob parameters, and a
+  forecast scheduled to be scored against reality at end-2027 and end-2028.
+  That is machine counsel showing its work in exactly the form Caputo's
+  objection demands — audit, not post-hoc narrative.
+
+  **What it actually finds is subtler than "costs won't rise much."** Median
+  AI-*added* cost ≈ $116B/yr by 2028 on a no-AI baseline of $1.3–1.4T (~+9%) —
+  but the mean is ≈ $262B, a 39% chance the AI-caused increase alone exceeds
+  $200B/yr, and **the paper's own headline finding is the median–mean wedge**:
+  typical years are modest, the expectation is dominated by rare catastrophic
+  years, and the underlying loss distributions have tails so heavy that "an
+  unbounded average is not mathematically defined" (they cap events at $250B
+  and years at $3.5T and call their tail estimates conservative). A
+  modest-median, tail-driven-mean cost structure is *what III.3's body
+  metaphor looks like in dollars* — infections mostly tolerated, occasionally
+  systemic — so the paper is compatible with this section, not opposed to it.
+
+  **Matthew's objection (2026-08-10), and the paper concedes it internally:**
+  ⟨M⟩ we don't have autonomous agents continuously hunting for bugs and
+  defending against them yet — **that is when you would see something more
+  like what we predict.** ⟨/M⟩ Their own regime table says the same thing from
+  the other side: defense-dominant gets the *lowest* sealed weight (25%)
+  explicitly because "even if AI defense is technically superior, 2–3 years is
+  too short for enterprise-wide deployment" — i.e. the 2028 horizon predates
+  the continuous-autonomous-defense equilibrium, so the forecast measures the
+  *transition window*, not the equilibrium III.3 describes. Cite it as the
+  best available disciplined near-term number, with its horizon named; its
+  offense-dominant "observable signatures" (agentic-signature incident share,
+  the patch race visibly lost, time-to-exploit compression) double as the
+  leading indicators for when the world crosses into this section's regime.
+
+  **The sentence to steal, because it is our thesis in security clothing:**
+  their case for weighting offense is the **diffusion asymmetry** — "offense
+  adopts frontier capability instantly, defense deploys through enterprise
+  procurement cycles measured in years." Offense is an individual actor's
+  choice; defense is coordination-bound. That is the collective-action
+  under-provision claim, stated by an independent source, in the security
+  domain — and it is precisely what III.2/Omerta's architectural sharing and
+  the socially-aware scheduler exist to fix. (Their "monoculture surface
+  growing" clause also feeds the §9/coherence monoculture thread.)
+
+  **Bibliography gift:** the paper's reference list supplies exactly the
+  anchors III.3's VERIFY flags have been waiting for — TIME, "Inside the
+  OpenAI–Hugging Face attack" (24 Jul 2026); UK AI Security Institute,
+  "Incident report: Unsanctioned agent behaviour during cyber testing" (2026);
+  Anthropic 2026a,b (agents "autonomously executing 80–90% of tactical
+  operations"); the CNBC/OpenAI/HF/TIME cluster on the end-to-end autonomous
+  system "with no human direction." Verify each from its primary before use,
+  but the handles are now concrete. Cautions: working paper published
+  2026-08-10 (same day as Cowen's challenge — fast turnaround, presumably
+  hours); co-author Carson's identity unverified; treat all numbers as the
+  sealed-forecast versions until the 2027/2028 scoring exists.
+
 ---
 
 ## Movement IV — The commons is how it gets built  [REAL→MIXED] ⟨indirect⟩
