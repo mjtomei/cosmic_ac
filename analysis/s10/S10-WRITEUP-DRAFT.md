@@ -757,6 +757,154 @@ the thing being detected.
 
 ---
 
+## 8. Discussion: detection as a norms instrument, and what to measure instead
+
+§4.9 is usually read as a result about one detector. It is better read as an
+instance of a general limit, and the generalisation changes what the rest of
+the study is for.
+
+### 8.1 The limit
+
+Point a general-purpose model at its own output, tell it to try again, and it
+will defeat any check you can put in front of it. This is not a claim about
+Pangram. It follows from the check being a fixed function and the attacker
+being an optimiser with a quality constraint the optimiser itself can satisfy.
+
+Our own numbers are the *weak* instance. The search never queried the detector
+it was evading: it optimised against an Opus proxy, tested on Pangram only at
+the end, used roughly eighteen attempts per target, and involved no
+fine-tuning, no gradients, and no detector access of any kind. 24.6% of
+targets cleared is what that buys. An adversary who can query the check
+directly is hill-climbing the actual objective, and there is no reason to
+expect the ceiling to be near where we stopped.
+
+**Two scoping notes, because the argument can be overextended.** Inferring
+*future* checks is weaker than defeating present ones — you cannot optimise
+against features you cannot anticipate. And the limit applies to **post-hoc
+statistical detection of unmarked text**, which is a different problem from
+provenance asserted at generation time.
+
+### 8.2 Where the norms argument actually lands
+
+Detection fails against adversaries and works against everyone else. That is
+not a small residual: the 12.4% in §4.2 exists precisely because nobody
+currently bothers to evade, or the undisguised register signature would not be
+there to find. **Detection is a norms instrument, not a security instrument** —
+locks, not vaults. It raises the cost of casual undisclosed use and does
+nothing against motivated use, and that is a coherent thing for a chamber to
+want. It is also what lets 12.4% stand as a measurement of disclosed-by-default
+behaviour while conceding the limit above entirely.
+
+The better version of the norms instrument is not a sharper detector but a
+**signature the generator puts there on purpose** — a mark carried in the
+structure of the text rather than in its surface statistics, verified against a
+secret key. This inverts the asymmetry that beat us: an attacker with no query
+access to the verifier cannot hill-climb it, which is exactly the situation our
+search was in and the reason it needed eighteen tries.
+
+Three honest limits, all published:
+
+- **Paraphrase degrades token-level watermarks** (Sadasivan et al. 2023;
+  Kirchenbauer et al. 2023b find survival depends on having enough marked
+  tokens). Structural marks are the response to this, and whether they survive
+  the kind of rewriting §4.9 performed is an empirical question nobody has
+  answered on legislative text.
+- **Strong watermarking may be impossible in general.** Zhang et al.,
+  *Watermarks in the Sand*, give an impossibility result for an attacker with a
+  quality oracle and a perturbation budget — close to the setting we ran.
+- **It requires the generator to cooperate.** Open-weight models will not mark
+  their output, so watermarking raises the cost of frontier-API use and does
+  nothing about a local model. And a mark can attest presence, never absence:
+  unmarked text proves nothing.
+
+*Anthropic is reported to have announced structural text signatures of this
+kind. **Unverified** — the session's search budget was exhausted before it
+could be checked, and it must be confirmed against the primary announcement
+before appearing in any published version.*
+
+### 8.3 The substitution, and why our null is the argument for it
+
+If provenance is the wrong thing to spend effort on, the question is what to
+spend it on instead. The answer available from this study is: **check the work
+directly.**
+
+The case rests on the §4.9 quality null, which is usually read as bad news.
+Evasion cost nothing on any of seven DQI dimensions across 63 paired grades.
+Read as a detection result, that is a failure. Read as a substitution result it
+is the entire argument: **quality assessment is orthogonal to provenance, not a
+proxy for it.** Had DQI tracked authorship, it would merely be a worse
+detector. Because it does not, it measures the thing anyone actually wanted to
+know.
+
+And it is now cheap in a way it has not been before. The instrument reproduces
+at or above the published human inter-coder bar across accounts and machines
+(Appendix C.1), on a rubric with published human codings as anchors. Twenty
+years ago the Discourse Quality Index required trained coders and bounded any
+study to a few hundred speeches. We graded 1,522 in the main arms without
+trained coders. That capability arrived with the same technology that broke
+detection, which is the substitution in one sentence: the machine that made
+provenance unmeasurable made quality measurable.
+
+### 8.4 Where text is a proxy for a person's internal state
+
+Deliberation is judged on the artifact, so §8.3 suffices. Education is not:
+there the text is a proxy for what is in someone's head, and a proxy that can
+be generated is no proxy at all. That case needs a **more rigorous proof of
+understanding**, and machine intelligence supplies the means as well as the
+problem — adaptive examination against a person's *entire* corpus of work, with
+provenance and time-on-task as evidence rather than the text alone.
+
+Two costs to state plainly. Process and timing data are themselves spoofable,
+so this is an escalation and not a resolution. And "analyse the student's
+entire corpus" is a surveillance instrument before it is an assessment
+instrument; the version worth building is the one that is legible to the person
+being assessed.
+
+### 8.5 Measuring the human contribution against an automated counterpart
+
+The most promising direction, and the least developed. Generate what a fully
+automated system would produce given the same task and context; the human
+contribution is the residual. This is the marginal-product definition done
+properly, and it is measurable today.
+
+**The baseline must move.** The obvious objection is that the residual shrinks
+as models improve, and the obvious fix — freeze a model vintage — is wrong. It
+reproduces the error the current debate already makes, where contributions
+relative to dumb computers are treated as obviously legitimate and anything
+touching an LLM as obviously suspect. **The goalpost should move by
+construction, always incorporating the latest technology**, because that is
+what contribution means: what you added over the best available alternative. A
+shrinking residual is correct measurement, not measurement decay. Nobody
+credits long division done by hand.
+
+The one thing worth recording is *which* baseline a given measurement was taken
+against — metadata that keeps an old measurement interpretable, not a fixed
+target. This is the same quantity S17 measures as the imitation lag, and the
+same reason it is collapsing.
+
+### 8.6 Future work
+
+1. **Does the counterfactual residual behave?** Take the §4.9 pairs, generate
+   the automated counterpart for each, and check whether the residual separates
+   the segments we have independent reason to believe were human-drafted. We
+   already hold the pairs and the labels.
+2. **Do structural signatures survive our search?** The v3 contrastive attack
+   targeted structural features — rhythm, tricolons, anticlimactic endings —
+   which is exactly what a structural watermark would encode. Running it
+   against a watermarked corpus is a direct test, and no query access to the
+   verifier makes it the honest version of the threat model.
+3. **Detector access as a variable.** Re-run the search with Pangram in the
+   loop rather than an Opus proxy. Our 24.6% is a floor on adversary capability
+   and the gap is unmeasured.
+4. **Human-coded DQI subsample**, still the real validation of §8.3's claim
+   that the instrument is cheap *and* sound (listed in Limits).
+5. **Does anyone actually evade?** The norms argument in §8.2 rests on the
+   assumption that current prevalence is undisguised. A chamber-level test —
+   whether flagged text clusters away from the evasion signature — would turn
+   that assumption into a measurement.
+
+---
+
 ## Appendix A — Null results
 
 Reported because they bound what the study can claim.
