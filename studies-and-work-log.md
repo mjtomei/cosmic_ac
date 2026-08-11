@@ -110,242 +110,96 @@ mechanism rather than the study's frame.)*
 
 ---
 
-### S10. AI-generated text in legislative transcripts — **CANDIDATE, designed**
+### S10. AI-generated text in legislative transcripts — **DONE, UNREVIEWED**
 *Origin:* the Bill Oliver clip (New Brunswick, May–June 2026) in which a member
 appears to read a model's framing sentence aloud mid-speech. Matthew ran the
-YouTube auto-caption transcript through Pangram: **100% AI-generated**.
+YouTube auto-caption transcript through Pangram: 100% AI-generated.
 
-*Question:* what share of legislative speech is machine-generated, and how has
-it moved since late 2022?
+*Question:* what share of legislative speech is machine-drafted, how has it
+moved since late 2022, and is human speech separately drifting toward machine
+register?
 
-*Why it matters for the paper:* it converts V.3's "the office is a socket" from
-an anecdote into a measured trend — direct evidence that substitution of machine
-cognition into institutional roles is already underway and unremarked. It is the
-paper's best candidate for an original empirical figure, and it is *cheap*.
+*Why it matters for the paper:* it converts "the office is a socket" from an
+anecdote into a measured trend — direct evidence that substitution of machine
+cognition into institutional roles is already underway and unremarked. It is
+the paper's best original empirical figure.
 
-*Method:*
-1. Corpus: official Hansard (not auto-captions). New Brunswick's 61st Legislature
-   is already downloaded — 38 sittings, 1.60M words bilingual, ~0.80M English.
-   Extend to other Canadian provinces, the federal Parliament, UK, Australia,
-   US states with published verbatim records.
-2. Segment by speech and by speaker, keeping date, chamber, party, and whether
-   the passage is prepared remarks or spontaneous debate (the distinction is
-   likely to dominate the signal).
-3. Score each segment with a detector (Pangram; ideally a second detector for
-   agreement).
-4. Report share-of-words flagged over time, per chamber and per speaker.
+*Findings.* Two arms, reported as separate claims because they are separate
+quantities.
 
-*The methodological crux — a negative control:* score pre-2022 transcripts from
-the same chambers and speakers. Any nonzero rate there is the false-positive
-floor, and the study's entire claim is the delta above it. Without this the
-result is worthless, because formal prepared oratory is exactly the register
-detectors over-flag.
+**Prevalence** (calibrated detector, Pangram 4, per-chamber pre-2022 controls):
+- **Specificity 1,260/1,260.** Zero false positives on genuine pre-AI speech,
+  measured chamber by chamber rather than transferred.
+- **Pooled 12.4% [11.1, 13.8]** across 19 chambers in 4 countries, 2025–26.
+- **A sevenfold spread is the finding, not noise.** US House **15.0%** against
+  US Senate **3.3%** — two chambers of one legislature, near-identical AI
+  policies, 4.5-fold apart. NSW 23.3% at the top, US Senate at the bottom.
+- **Drafting concentrates in scripted business**: SO31 one-minute set-pieces
+  **36.7%**, Government Orders 23.3%, Oral Questions (not on notice) 8.3%, all
+  three pre-AI controls **0.0%**.
 
-*Other confounds to state:* Hansard is lightly edited by professional editors,
-which may itself normalize prose toward the flagged register; prepared speeches
-have always been staff-drafted, so "AI" and "not written by the speaker" are
-different claims and only the former is being measured; bilingual chambers carry
-professional translations that should be scored separately or excluded.
+**Register and permeation** (detector-independent instruments):
+- The register shift **starts around 1994–96**, decades before any language
+  model. LLMs did not start it.
+- It is **cohort replacement, not incumbent conversion**: arrivals bring +1.87
+  per 1,000 more than incumbents (15/16 chambers); birth decade predicts at
+  t ≈ 12; incumbents are flat (−0.42, CI [−1.32, +0.49]). Occupation and
+  education both run the *wrong* way, refuting professionalisation and
+  educational expansion.
+- The register is a **post-training artifact**: OLMo-2 ladder SFT +0.76,
+  DPO +0.86, RLVR +0.37, heaviest at the preference stage; pooled instruct-
+  over-base excess +0.88 on two further model families.
+- **In-context permeation +0.0099** [+0.0007, +0.0196], positive in 9/10 cells
+  — small, but the only permeation evidence that routes through no detector.
 
-*Cost (Pangram, measured against the NB corpus):*
+**Quality and evadability:**
+- AI-assisted speech is **better-formed and not worse-engaged**: justification,
+  common-good framing and respect toward groups all up; every engagement
+  dimension null once genre or chamber is held fixed. "Deliberation down" was
+  genre, and is superseded.
+- **The detector is evadable under effort.** An off-the-shelf model in a
+  rewrite loop — no fine-tuning, no detector access — clears Pangram on
+  **8.5% of variants** and **24.6% of targets**, about **10.6×** the 2.31%
+  that 13 commercial humanizer services achieve. Evasion costs **nothing** in
+  deliberative quality (7 DQI dimensions null across 63 paired grades), but it
+  is not cheap: a single "sound human" prompt *raises* the score.
+- So 12.4% is a **floor**, and detection is a norms instrument rather than a
+  security one.
 
-| Scope | English words | Pangram 4 API | bulk −20% |
-|---|---|---|---|
-| NB, one session (have it) | 0.80M | $401 | **$321** |
-| NB, full legislature (~4 sessions) | 3.2M | $1,604 | $1,284 |
-| One large provincial legislature, 1 yr | ~8M | $4,000 | $3,200 |
-| Canadian Parliament, 1 yr | ~40M | $20,000 | $16,000 |
-| 10 legislatures × 5 yrs | ~200M | $100,000 | $80,000 |
+*Artifacts:* `analysis/s10/` — write-up `S10-WRITEUP-DRAFT.md` (§1–8 +
+appendices), methodology `METHODOLOGY.md`, prior art `PRIOR_ART.md`, bypass
+selection `BYPASS_METHODOLOGY.md`, and one script per claim
+(`prevalence_report.py`, `bypass_report.py`, `arrival_premium.py`,
+`formation_window.py`, `decomposition_inference.py`, `olmo_ladder.py`,
+`rlhf_pref_analyze.py`, `word_context_delta.py`, `long_trend.py`,
+`quality_expansion/`). 4,258 Pangram 4 verdicts. **Cost: $158.00 API +
+8,962 dashboard credits.**
 
-Pangram's older model is listed at 1/10th the price ($0.05/1,000 words), which
-would put a full NB legislature at ~$128 — worth testing whether its accuracy
-suffices, since a 10× price difference changes what is affordable by two orders
-of scope. The **Professional plan ($65/mo, 1.5M words/mo + $200 API credit)**
-covers roughly two NB sessions per month at no marginal cost: a slow,
-subscription-paced study over a year costs ~$780 and covers ~18M words, which is
-a serious corpus. *Recommended entry point: one month of Professional, NB corpus
-plus a pre-2022 control, ≈$65.*
+*Honest flags:*
+- **Not yet reviewed.** Fresh adversarial review outstanding; the two earlier
+  rounds are archived at `analysis/s10/reviews-superseded/` and target a
+  version of the study that no longer exists.
+- **Prevalence is a floor**, and how much of one is not estimable from this
+  design — we can measure how often evasion succeeds when attempted, not how
+  often it is attempted.
+- **This measures register, not substance.** Whether machine assistance
+  changes what is argued or which evidence is cited is unmeasured, and the
+  frequency instrument cannot measure it.
+- **Single detector.** Specificity is measured, but Pangram 4 is one vendor.
+- **Cohort mechanism unidentified.** Three exposure tests null; the informative
+  next evidence is a different kind, not a fourth operationalisation.
+- **Tasmania excluded** — its transcription regime changed between the control
+  and prevalence windows, so no control can calibrate it.
+- **The quality arm is LLM-graded.** Reproduces at or above the published human
+  inter-coder bar, but self-agreement is not inter-coder agreement; the
+  human-coded subsample is not done.
+- **No chamber requires AI disclosure**, so no ground truth exists anywhere.
 
-*Instrumentation — revised 2026-07-29 after Matthew asked about cheaper and
-local options. The paid detector turns out to be the wrong primary instrument.*
-
-**Tier 1 — prompt-leakage regex (free, hard lower bound).** Not "common LLM
-phrases" in the stylistic sense (delve, tapestry, "it is important to note"),
-which have real and drifting human base rates. The strong version searches for
-**meta-discourse addressed to a requester rather than an audience** — text that
-can only appear if model output was pasted without editing. The Bill Oliver line
-is the type specimen: an offer to produce a revised version, read aloud in the
-chamber. Categories: assistant framing ("Here's a…", "Certainly, here is…",
-"I hope this helps", "Let me know if you'd like…"); instruction echoes ("in a
-professional tone", "as requested", "a more natural flowing version");
-self-identification ("as an AI language model"); unfilled placeholders
-("[INSERT NAME]", "[Your Name]"); and markdown artifacts surviving into a
-spoken or printed record. Every hit is individually verifiable and quotable, so
-this yields a defensible **floor**, not an estimate — the rate will be small,
-and the trend plus the specimens are the story.
-
-**Tier 2 — distributional estimation (free, the headline number).** Built on
-**Liang, Izzo, Zhang et al., "Monitoring AI-Modified Content at Scale"
-(arXiv:2403.07183)**. How it actually works, from the paper:
-
-- It never classifies a document. It models the corpus as a **mixture**: each
-  document is drawn from `(1−α)·P + α·Q`, where `P` is the human token
-  distribution, `Q` the AI one, and **α — the fraction of the corpus that is
-  AI-generated — is the single parameter being estimated** by maximising the
-  corpus log-likelihood `Σ log((1−α)P(xᵢ) + αQ(xᵢ))`.
-- **The vocabulary is adjectives only.** Every calculation depends solely on
-  which adjectives appear in a document; the authors report this is more stable
-  than adverbs, verbs, nouns, or all tokens (alternatives in their Appendix D).
-  Their headline signal is a frequency shift in ICLR 2024 reviews — *commendable*
-  9.8×, *meticulous* 34.7×, *intricate* 11.2× more likely per sentence.
-- **`P` and `Q` come from reference corpora**, not from a model's internals:
-  `P` from historical documents known to be human-written; `Q` by taking the same
-  *writing instructions* given to the humans, prompting an LLM with them, and
-  collecting the output. So the AI reference is generated under the real task's
-  own brief.
-- Their reported cost advantage is enormous — about **seven orders of magnitude
-  cheaper than per-document detectors**, while reducing estimation error 3.4×
-  in-distribution and 4.6× out-of-distribution.
-- They give a **sample-size bound** (Theorem I.1): the error on α̂ shrinks as
-  `1/√n` with an explicit constant depending on how separated `P` and `Q` are and
-  on α itself. This is the piece that matters for any sampling design — see below.
-- Applied result in their case study: **6.5–16.9%** of peer-review text at four
-  2023–24 AI conferences was substantially LLM-modified, with corpus-level
-  trends they note are too subtle to see per document.
-
-*Mapping onto Hansard:* `P` = pre-2022 sittings from the same chambers; `Q` =
-speeches generated by prompting a model with the actual bill text and the
-speaking role (the legislative analogue of their "review instructions" trick);
-α estimated per session, per chamber, per party, over time. Note their adjective
-choice may not transfer — legislative register has its own adjectival habits —
-so run their Appendix-D alternatives and pick on stability against the pre-2022
-control, not on which gives the biggest number.
-
-**Cost: zero.**
-
-**Tier 3 — local zero-shot detectors (free, validation).** The machine has an
-NVIDIA GB10 and 119 GB of RAM, so per-document scoring is a compute question,
-not a budget one. Candidates, all verified to exist:
-- **Binoculars** (Hans, Schwarzschild, Cherepanova et al., arXiv:2401.12070) —
-  zero-shot, contrasts two closely related models, no training required. First
-  choice.
-- **Fast-DetectGPT** (Bao, Zhao, Teng et al., arXiv:2310.05130) — conditional
-  probability curvature; the cheap successor to DetectGPT.
-- **Ghostbuster** (Verma, Fleisig, Tomlin et al., arXiv:2305.15047) — features
-  from weaker models, no token-probability access needed for the target model.
-Use these to score the segments Tiers 1–2 surface, not to sweep the corpus
-blind. **Caveat to state in any writeup:** these were validated on essays and
-news, mostly against 2023–24 models; legislative oratory is a different register
-and 2026 models are harder to detect, so treat their absolute rates as
-uncalibrated for this domain.
-
-**Tier 4 — Pangram on a sample (paid, cross-check).** Demoted from the primary
-instrument to an independent second opinion on a few hundred segments. At that
-volume the free tier (2,000 words/day) or one month of Professional ($65) is
-sufficient; the four- and five-figure corpus-sweep estimates below are no longer
-the plan, and are kept only to show what the naive approach would have cost.
-
-**Estimator — redesigned 2026-07-29 on Matthew's reframing.** He proposed
-treating the question as *"what is the probability that a given piece of text is
-flagged AI by Pangram?"* rather than fitting Liang's token-mixture model. That is
-a better fit here, and it is standard survey sampling rather than a bespoke
-likelihood.
-
-*How Liang models the text, for the record (it is simpler than it sounds):* a
-document is a **set** of adjectives, not a bag of counts (deliberately — unique
-tokens grow sublinearly with length, so longer documents are not crushed;
-they cite the coupon-collector intuition). Per-token occurrence rates are just
-`p̂(t) = #documents containing t / #documents`, and the document likelihood is
-**independent Bernoulli across the vocabulary**:
-`P(x) = Π_{t∈x} p̂(t) · Π_{t∉x} (1 − p̂(t))`, and likewise `Q`. So it is naive
-Bayes over adjective presence, with sentences as the unit. The independence
-assumption is doing a lot of work, and the adjective vocabulary was tuned on peer
-reviews — two reasons not to copy it wholesale into legislative register.
-
-*Our estimator instead.* For a randomly drawn segment let `F = 1` if Pangram
-flags it, and let `π = P(F = 1)` in some stratum. Then:
-
-1. **`π̂ = k/n` is a binomial proportion.** Precision is exactly known — with
-   n = 1,000 and a true rate near 5%, the 95% interval is about [3.8%, 6.5%];
-   n = 2,000 gives [4.1%, 6.0%]. No modelling assumptions at all.
-2. **`π` is instrument-dependent, so correct it.** What we want is the true rate
-   `τ`, related by `π = τ·Se + (1−τ)·(1−Sp)` for detector sensitivity `Se` and
-   specificity `Sp`. Inverting gives the **Rogan–Gladen prevalence estimator**,
-   `τ̂ = (π̂ + Sp − 1)/(Se + Sp − 1)` — standard epidemiology for screening with
-   an imperfect test (Rogan & Gladen, *Am. J. Epidemiology*, 1978 — **verify the
-   handle before citing**).
-3. **Both nuisance parameters are measurable in-domain, cheaply.** The pre-2022
-   control *is* the estimate of `1 − Sp`, the false-positive rate on exactly this
-   register — so the negative control stops being a sanity check and becomes a
-   parameter. `Se` comes from generating known-AI legislative speech (Liang's `Q`
-   trick: prompt with the real bill text and speaking role) and scoring it.
-   Nothing here needs the vendor's published accuracy claims.
-4. **Watch the correction's leverage.** Variance is amplified by
-   `1/(Se + Sp − 1)`: about 1.06× at Se .95/Sp .99, 1.25× at Se .85/Sp .95. And
-   when `π̂ < 1 − Sp` the point estimate goes negative — truncate at zero and
-   report the interval, never the truncated point alone. At Se .90/Sp .97 a 3%
-   flag rate corrects to ≈0%, which is the honest and important answer: at low
-   true prevalence, a detector this good still cannot distinguish signal from its
-   own error floor.
-
-**Two-phase design — this is where Matthew's expand-from-samples idea becomes
-principled.** Phase 1: run the free local detectors (Binoculars et al.) over the
-*entire* corpus, giving every segment an auxiliary score. Phase 2: draw a
-stratified sample on that score × year × chamber and pay for Pangram only there.
-This is textbook two-phase sampling for stratification, and it has a property
-worth stating plainly: **the free detector does not need to be accurate — only
-correlated with the truth — to cut the variance of the paid estimate.** Its
-errors bias nothing, because stratum weights are known exactly from the full
-corpus. Expanding into a flagged speaker's other speeches is then the same
-mechanism applied at the speaker level, which is also the only way to get
-per-speaker estimates stable enough to report.
-
-*Also handle:* segments within a speech or sitting are correlated, so use
-cluster-robust variance (or the design effect `1 + (m−1)ρ`) rather than treating
-segments as independent. Sample whole speeches as clusters.
-
-*Cost at this design:* 2,000 segments of ~150 words is 300k words ≈ **$120** at
-the bulk API rate, and **fits inside a single $65 Professional month**. Even
-5,000 segments of 300 words (1.5M words) fits that month's allowance. The
-corpus-sweep pricing below is now purely historical.
-
-*Liang is out of the plan (decided 2026-07-29), kept as a reference only.* Its
-mixture estimator is a good paper and the source of the `Q`-by-prompting trick we
-still use, but running two estimators means defending two sets of assumptions,
-and the corrected-sample design above is both simpler and better matched to the
-instrument we actually trust.
-
-*Session plan:* `plans/S10-legislative-ai-detection.md` — self-contained
-starting point (detector survey, NB pilot, corpus search, throughput/batching).
-
-*Pilot (2026-07-29, `analysis/s10/` + PILOT.md there):* full pipeline ran on
-all 38 sittings plus a 6-sitting 2019 control. Three results. (1) Throughput:
-Falcon-pair Binoculars scores the whole corpus+control (1.21M tokens) in
-40 min on the GB10 — 509 tok/s end-to-end, and the GPU was discovered
-clock-capped at 513/3003 MHz (fix needs root), so that is a floor with ~5.9×
-headroom; Qwen3-1.7B pair runs ~2–3× faster. A 260M-token multi-legislature
-sweep is overnight-to-days scale — the two-phase design stands. (2) Substance:
-2025–26 raw flag rates sit BELOW the 2019 pre-ChatGPT false-positive floor
-(2.85% vs 5.64% acc-threshold; 0.53% vs 1.03% low-FPR), so Rogan–Gladen gives
-τ̂ = 0 at the pilot's sensitivity (bound in `analysis/s10/`); Tier-1 leakage regex: 0 hits in 993k
-words (edited-record caveat). No detectable machine share via this
-instrument — a null that is partly about the instrument (2023-era detector,
-2026 text; Se unmeasured). (3) Design finding: the score distribution DRIFTS
-between eras (2019 reads more AI-like than 2025–26), and the drift
-REPLICATES across architectures (Falcon-7B and Qwen3-1.7B pairs, ρ≈0.73
-agreement) — a property of the record, not the detector — so Sp/threshold
-transport across eras is invalid — Se/Sp must be measured per era, add
-within-era human anchors (spontaneous crosstalk), keep Pangram as the
-second instrument. Bonus discovery: NB's two-column record puts language-as-
-spoken in the left column, so speaker-authored English (709k words) separates
-cleanly from translator-authored English — validated per speaker.
-
-*Status:* pilot done; corpus + control archived with the pipeline in
-`analysis/s10/`. Next: in-domain per-era `Se` corpus (highest value), the
-detector survey (Task 1), prepared-vs-spontaneous labels, Pangram stratified
-sample, Hansard Office request for the Bill Oliver sitting. Remaining
-decisions unchanged: estimator code, and which model generates `Q`
-(plausible-vintage, not necessarily 2026-frontier).
+*Superseded planning material:* the original pre-execution design — including
+the cost projections, the four-tier instrumentation plan that demoted Pangram
+to a cross-check, and the Liang-based estimator — is preserved verbatim at
+`plans/S10-original-design.md`, with a note on which choices reversed and why.
+Session plan of the same vintage: `plans/S10-legislative-ai-detection.md`.
 
 ### S11. Hayek-criterion toy model — **CANDIDATE**
 *Question:* where is the boundary at which an allocator beats a market, as a
@@ -605,7 +459,11 @@ pending; market-value attribution ($18T vs $27T) follows Goldman's own caveat.
 | 2026-08-09 | **S10 expansion, API portion** — 1,431 segs on Pangram 4 (658 NB rescore + 360 genre + 413 chamber controls) | **Specificity 593/593 across 8 new chambers** (AB, CA-FED, NSW, QLD, SA, TAS, VIC, WA), zero false positives; with the prior 423/423 that is 1,016/1,016. **Genre arm resolves the scripted-drafting question with the detector**: SO31 36.7% / Government Orders 23.3% / Oral Questions 8.3%, all six controls 0.0%; SO31 vs OQ 4.40×, Fisher p=0.00034 — the lexicon's inference now confirmed by an independent instrument. 2,827 files remain for the dashboard route. **Study open — do not quote from this log.** |
 | 2026-08-09 | **Prior art logged** — Rice (Australian federal Hansard; Binoculars + Fast-DetectGPT + LLM scoring; null) and Pimlico Journal (UK Commons z-score; positive). Neither used Pangram. | `analysis/s10/PRIOR_ART.md`. Rice's reported ~8% FPR exceeds his detection rate, making the null underpowered rather than negative — the calibration argument, not a dismissal. Pimlico shares the family of the arm we demoted, so its agreement is not corroboration. **All figures unverified against primary sources.** |
 | 2026-08-09 | **S10 Pangram expansion COMPLETE** — 4,258 verdicts on Pangram 4 across 19 chambers, 4 countries (1,431 Bulk API + 2,827 dashboard; routes verified equivalent 20/20 before mixing) | **Specificity 1,260/1,260 = 100% [99.7%, 100%]** — every chamber bought its own 60-segment pre-AI control and not one produced a false positive. In-domain Se = 1.000 (n=40 synthetic legislative speech), so calibrated prevalence = observed. **Pooled prevalence 12.4% [11.1%, 13.8%]** (2,220 segments, TAS excluded as regime-flagged). Range 3.3% (US Senate) to 23.3% (NSW). **Genre arm: SO31 36.7% / Government Orders 23.3% / Oral Questions 8.3%, all controls 0.0%** — 4.4x scripted-vs-unscripted, Fisher p=0.00034. Artifacts: `prevalence_report.py`, `pangram_p4_verdicts.csv`, `nb_p3_vs_p4.py`, `transcript_regime_check.py`, `PRIOR_ART.md`. **Study open — do not quote from this log.** |
-| 2026-08-10/11 | **S10 bypass arm + verification close-out.** Four adversarial search runs across two chambers (461 rewritten variants of 130 Pangram-flagged originals): blind, contrastive, Opus-seeded, and a clean uniform-draw run. Plus quality stages 3-4 (63 paired DQI grades), the Opus effort A/B, and a primary-source pass on both prior-art comparators. | **Asking Opus to rework a speech in a loop beats the commercial evasion industry ~10x.** Per target (final search per chamber, >=1 variant reaching a clean Human verdict): **24.6%** [16, 36], 23.1% strict — against **2.31%** for the 13 humanizer services in Pangram's own report, i.e. **10.6x**, and 72x its clean-conditions FNR. No fine-tuning, no detector access, no evasion tooling. Like-for-like on single attempts the multiple is 3.7x (the 2.31% is one-shot, 24.6% allows <=18 attempts — state this whenever the 10x is used). Conservative per-variant rate **8.5%** [6.3, 11.4] by label, **8.0%** strict, all four runs. Both against **0 AI labels in 1,260** pre-AI controls. The two chambers agree (26.3%/22.2%) despite contradicting each other on which edits work — the rate transfers, the playbook does not. Evasion costs **no** deliberative quality (all 7 DQI dimensions null on both arms, length-adjusted), but is not cheap: it needs a frontier model, contrastive exemplars and multi-round search — a single "sound human" prompt *raises* the score. **Two corrections:** the "seed AI 22% vs Mixed 76%" claim does not survive (computed on a partial batch, and the two halves were different statistics; like-for-like Fisher p = 0.735 — the borderline-original hypothesis is now explicitly unestablished), and our answer to Rice rested on *his* invalid threshold-crossing comparison — the durable argument is sensitivity, not specificity. Rice verified: he diagnoses his own detector as blind (20% sensitivity) and must not be cited as evidence of absence. All nine † figures re-derived and reproducing; §4.9 rewritten; `bypass_report.py` is the new single source. **New §8 Discussion + future work**: the bypass result generalised — a general model pointed at its own text defeats any check it can query, and ours is the *weak* instance (no detector access in the loop). Detection is therefore a norms instrument, not a security one (locks, not vaults), which is what lets 12.4% stand as a measurement of disclosed-by-default behaviour. Substitution argument: the §4.9 quality null is the *case for* checking work instead of provenance — DQI is orthogonal to authorship, not a proxy for it, so it measures what you wanted; and the same technology that broke detection made 1,522 gradings affordable. Plus proof-of-understanding where text proxies internal state, and the counterfactual-residual measure of human contribution with a **deliberately moving** baseline (freezing a vintage reproduces the current error of treating pre-LLM tools as obviously fine). **Anthropic text watermarking VERIFIED** (help-centre art. 16266773): imperceptible in-text mark, models launched on/after 2026-08-02, all products + AWS/GCP/Microsoft, C2PA on image files. Mechanism (structural vs token-level), secret key, and robustness are all UNSTATED — third-party detection not yet published, and Anthropic concedes marks may not survive text "heavily edited, paraphrased, translated, or mixed". §8.2 argues the durable benefit of hiddenness is **minimal interference with the content even after the detector is released** — not robustness, which erodes on release. Bypassability is the category, not a defect: a watermark is a norms instrument, same as detection (Zhang et al. *Watermarks in the Sand* is then not a refutation). Logged at `PRIOR_ART.md` item 0; re-check when detection docs publish. **§8.6 future work rebuilt from a transcript sweep** (8 files, 178MB) after Matthew noted more studies had been planned than written down — 17 items in five groups. Recovered and previously unrecorded: the **substance channel** (register vs what-is-argued; Kobak's style/content split is PubMed's content and does not transfer — buildable in hours from the base-vs-instruct list behind §4.7, and now also a stated Limit); **cross-country onset timing** via ParlaMint with the instrument rebuilt per language (deferred by Matthew mid-study in favour of the English list); a **population-wide age-stratified corpus outside politics**; **pre-political writing by the same members**; the **US Extensions of Remarks** written arm (head-to-head vs Suvanto, currently dropped at extraction); **NSW Written Community Recognition Statements** (4.7% of words in 2018 → 29-32% in 2025-26, excluded to keep the corpus spoken); **staff age** as the exposure measure via Legistorm / House Disbursements (links S15); the **role-controlled UK spec**; and the still-live **professionalised-communications** rival. One flagged candidate excluded after checking: the trend-aware Kobak counterfactual is already run on the full window (`kobak_counterfactual.py` fits all years <= t-2). |
+| 2026-08-10 | **S10 bypass arm** — four adversarial search runs across two chambers (461 rewritten variants of 130 Pangram-flagged originals): v2 blind, v3 contrastive, Opus-seeded, and a clean uniform-draw run. Selection filters differ per run and are documented in `BYPASS_METHODOLOGY.md`. | **An off-the-shelf model in a rewrite loop beats the commercial evasion industry ~10×.** Per target (final search per chamber, ≥1 variant reaching a clean Human verdict): **24.6%** [16, 36], 23.1% strict — against **2.31%** for the 13 humanizer services in Pangram's own report, i.e. **10.6×**, and 72× its clean FNR. No fine-tuning, no detector access, no evasion tooling. Like-for-like on single attempts the multiple is 3.7× (2.31% is one-shot, 24.6% allows ≤18 attempts — state this whenever the 10× is used). Conservative per-variant rate **8.5%** [6.3, 11.4], **8.0%** strict. Both against **0 AI labels in 1,260** pre-AI controls. The two chambers agree (26.3%/22.2%) despite contradicting each other on which edits work — the rate transfers, the playbook does not. Quality unaffected: 7 DQI dimensions null across 63 paired grades, and stage 4 shows stage 3's justification gain was length. `bypass_report.py` is the single source. |
+| 2026-08-11 | **S10 verification close-out** — all nine † figures re-derived from their artifacts; footnotes added giving script and invocation for each. | All nine reproduce. **Two I had reported as unsourced were both real and both my error:** +0.88 is `rlhf_pref_analyze.py` (`EXCESS +0.8797`), not `align_ratio.py`, which prints the Hansard-drift arm; ~60% is the cohort arithmetic closure (13.8 yrs × 0.093 = +1.28 of +2.06), not the within/between split. Lesson recorded: for figures carried across sessions the transcript is the authoritative provenance — search it before re-running anything. |
+| 2026-08-11 | **S10 two overclaims corrected** | (1) "Seed AI 22% vs Mixed 76%" **does not survive** — computed on batch 0 of 129, and the halves were different statistics (it scored a Mixed seed that stayed Mixed as an evasion). Like-for-like 5.9% vs 8.2%, Fisher **p = 0.735**; the borderline-original hypothesis is now labelled directional and unestablished. (2) Our answer to Rice rested on **his** FPR-exceeds-detection-rate line, which crosses thresholds (≥8 vs ≥6) and does not hold — rewritten around sensitivity. Rice verified against primary source: n=50, Haiku-class judge, and **he diagnoses his own detector as blind** (20% sensitivity), so he must not be cited as evidence of absence. Pimlico verified the same day. |
+| 2026-08-11 | **S10 §8 Discussion + future work** written; future work rebuilt from a sweep of all 8 session transcripts (178MB) after Matthew noted more had been planned than written down | Bypass result generalised: a general model pointed at its own text defeats any check it can query, and ours is the *weak* instance (no detector access in the loop). Detection is a **norms instrument, not a security one** — which is what lets 12.4% stand as disclosed-by-default behaviour. **The §4.9 quality null is the case FOR checking work instead of provenance**: DQI is orthogonal to authorship, not a proxy, so it measures what you wanted; and the technology that broke detection made 1,522 gradings affordable. Anthropic text watermarking **verified** (help-centre art. 16266773, models from 2026-08-02) — §8.2 argues the durable benefit of hiddenness is **minimal interference with the content even after the detector is released**, not robustness, which erodes on release; bypassability is the category, not a defect. 17 future-work items in five groups, incl. the previously unrecorded **substance channel**, **cross-country onset timing**, **US Extensions of Remarks**, **staff age as exposure**, and the still-live professionalised-communications rival. |
+| 2026-08-11 | **S10 repo hygiene** | `METHODOLOGY.md` (1,469 lines) was untracked despite being a cited artifact — scanned for verbatim Hansard (zero speech markers, zero block quotes), then committed. The two adversarial-review rounds and our responses **archived to `analysis/s10/reviews-superseded/`**: they target the v1.0/v1.1 lexicon arm since demoted to descriptive, and predate the Pangram headline, the model-tier fix and the 19-chamber expansion. Their README records the four findings worth carrying forward and the **v1.0→v1.1 length-band inversion**, so those numbers are not re-quoted. S10 register entry rewritten as DONE/UNREVIEWED; original design preserved at `plans/S10-original-design.md`. |
 
 ---
 
@@ -620,9 +478,13 @@ ordering is in git history.)*
    (`plans/capital-cycle-2e-integration.md`, same rule), S18's remaining
    verification debt, and S16's after-hours census — the one cheap original
    measurement in the thread.
-2. **S10, open and essentially free.** The per-year prevalence series is the
-   project's best original figure; the negative control remains non-negotiable.
-   S14½ rides along on the same corpus.
+2. **S10, measurement done, review outstanding.** The study is complete and
+   drafted (19 chambers, 4,258 verdicts, §1-8 + appendices); what it lacks is
+   a fresh adversarial review and a decision on how much of it enters the
+   paper. The per-year prevalence series remains the project's best original
+   figure. Everything further is optional - §8.6 lists 17 items, of which the
+   **substance channel** is the one that changes what the study can claim.
+   S14½ still rides along on the same corpus.
 3. **S11+S12 merged**, if the criterion section is going to make a quantitative
    claim rather than a structural one — and the S15 simulation link makes the
    shared harness the strongest version of that case.
@@ -632,7 +494,7 @@ ordering is in git history.)*
 
 ## Open decisions
 
-- S10: which detector, and subscription vs API pacing? (pilot answer: Falcon pair + Fast-DetectGPT sweep, Pangram adjudicates; batch ready)
+- S10: **how much of it goes in the paper, and where?** The study outgrew its role as one figure. Also: run the substance-channel arm (§8.6 item 1, a few hours, and it is a stated Limit until it exists) before or after the fresh review? *(Resolved and retired: the detector question — the free tiers all flag 2025–26 below their own pre-LLM false-positive floors; Pangram 4 with per-chamber controls is the instrument.)*
 - S14½: Delta vs LUAR embeddings; staff-timeline sourcing depth (directory Wayback vs Public Accounts only)
 - S11/S12: commit as a fifth Appendix A effort, or leave as stated open questions?
 - S9: Intel desktop for PIN-based tracing, or stay on the current machine?
