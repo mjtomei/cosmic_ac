@@ -244,14 +244,48 @@ format, the more machine drafting — and it is the one place where the lexicon
 arm's inference is confirmed by an independent instrument. Two instruments
 agreeing is worth more than either alone.
 
-**The sampling runs against the finding, which makes it conservative.** The
-120–360-word filter retains 95.2% of SO31 segments but only **6.4% of Oral
-Questions** (median QP utterance is 89 words). The OQ cell is therefore the
-long tail of Question Period, which skews toward *prepared ministerial
-answers* rather than rapid exchange — the sub-population most likely to be
-machine-drafted. We sampled the most preparable end of the unscripted genre
-and it still came in lowest. Government Orders' middle position is likewise
-what a mixture of both ends would produce.
+**The Oral Questions cell is not Question Period, and reading its flags
+individually says more than the rate does.** The 120–360-word filter retains
+95.2% of SO31 segments but only a small fraction of Oral Questions, because
+QP utterances are short. What survives is the long tail: procedural and
+ceremonial business filed under the QP rubric rather than question-and-answer
+exchange.
+
+Not one of the five flagged segments is spontaneous exchange.[^r43] Two are
+**eulogies** for a former member. One is a **question of privilege**
+responding to a matter raised the previous day. One is a **unanimous-consent
+motion** — text negotiated between parties beforehand and read verbatim, the
+most pre-written thing that happens in the chamber. The fifth is a backbench
+question of the routinely staff-written kind. The genre claim therefore holds
+segment by segment and not only in aggregate: within the genre nominated as
+unscripted, the flags land exactly on the parts that were written in advance.
+
+This makes the 8.3% a **mislabelled row rather than a wrong one**. It is not
+an estimate of Question Period; it is an estimate of long-tail business
+carrying the QP heading, and the true rate for genuine exchange is lower —
+possibly zero.
+
+**One flag type has no control, and it should not be leaned on.** Two of the
+five are tributes, both at `fraction_ai` 1.0, and **no pre-AI tribute exists
+anywhere in the control set**. Tribute register — elevated, cadenced, parallel
+construction, abstract virtue nouns — is exactly what a detector keys on. Those
+two are either strong evidence of drafting or the most interesting false
+positive in the study, and nothing here separates the two readings. What the
+controls do establish is that formal prepared *procedural* speech does not trip
+the detector: the six pre-AI privilege and Business-of-the-House segments among
+the CA-FED controls all read Human, inside the 1,260/1,260 overall.
+
+[^r43]: `python genre_oq_audit.py`, which prints the five flags with their
+    order-of-business headings, the control composition, and the unmet tribute
+    control. It also retires an argument this section previously made — that
+    the length floor leaves "prepared ministerial answers", the sub-population
+    "most likely to be machine-drafted". Both halves are false: ministerial and
+    parliamentary-secretary segments flag **0 of 28**, all five flags coming
+    from non-ministers, and the floor selects *away* from ministers rather than
+    toward them (ministerial share of Oral Questions falls 46.3% → 36.1% across
+    the filter; median ministerial utterance 89 words against 95). The
+    conclusion that the cell is biased upward survives; that mechanism does
+    not.
 
 Extraction is paragraph-level throughout, so no genre loses whole speeches to
 the length cap; the differential retention above is a property of natural
@@ -674,6 +708,11 @@ beat" is the whole of that apparatus.
 - **No chamber requires AI disclosure**, so no ground truth exists anywhere;
   every number rests on detector calibration rather than admission.
 - **Single detector.** Specificity is measured, but Pangram 4 is one vendor.
+- **Specificity is measured on the genres the controls happen to contain.**
+  1,260/1,260 is strong, but no tribute or eulogy is among them, and tributes
+  produced two of the five Oral Questions flags at maximal confidence (§4.3).
+  Until a pre-AI tribute control exists (§8.6 item 4a), the specificity claim
+  does not extend to that register.
 - **Judge leakage.** Screen and grading-judge AI guesses correlate at
   r = +0.758, so the quality claim rests on the fixed-effects columns, not
   the raw contrasts (§4.9).
@@ -965,6 +1004,17 @@ not a fourth operationalisation of the same kind.
    aside; it remains the cleanest available test of the cohort story.
 
 **C. Corpora and arms already within reach.**
+
+4a. **A pre-AI tribute control — the one specificity gap we know about.** Every
+   chamber bought a 60-segment pre-2022 control, and 1,260 of 1,260 read Human,
+   including six ceremonial and procedural CA-FED segments. But **no tribute or
+   eulogy is in any of them**, and two of the five Oral Questions flags are
+   eulogies at `fraction_ai` 1.0 (§4.3). Tribute register is elevated,
+   cadenced and heavy on parallel construction — the surface features a
+   detector keys on — so it is the one genre where a false positive could hide
+   behind our specificity claim. Score ~40 pre-2022 tributes from the same
+   chamber. Same design as every control already bought, roughly $5, and it
+   either closes the gap or produces the most interesting result in the arm.
 
 5. **The written arm of the US Congressional Record.** Extensions of Remarks
    is separable from floor speech and is currently dropped at extraction
