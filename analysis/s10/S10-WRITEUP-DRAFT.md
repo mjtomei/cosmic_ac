@@ -649,19 +649,26 @@ no covariate. **Every dimension is null on both.**[^r49b]
 | constructive | 0.00 (t 0.0) | −0.12 (t −1.8) |
 | evidence | +0.03 (t +0.4) | +0.08 (t +0.7) |
 
-**On length, which we do not adjust away.** Stage 4's rewrites run about 29
-words longer than their originals; stage 3's do not (mean −1.3). Justification
-shows the largest movement in stage 4, and it is reasonable to suspect the two
-are related — but that is a reason to *report* the relationship, not to remove
-it. On this rubric a longer passage genuinely has room to justify more, and a
-member with a longer slot could earn the same points the same way. Adding
-justification by adding words is a real strategy, not an artifact of one.
-Partialling it out would treat a route to quality as a nuisance parameter.
+**On length, which we do not adjust away — and which does not replicate.**
+Stage 4's rewrites run about 29 words longer than their originals; stage 3's do
+not (mean −1.3). Within stage 4, justification does move with length, at
+**r = +0.33**. That is the largest correlation on the board and it points the
+way the length story predicts.
 
-The per-pair correlation between length change and score change has not been
-computed; `analyze_stage3.py` prints it, but doing so needs the grading
-transcripts rather than the cached aggregates. It is the honest way to state
-the length relationship and is worth one run.[^r49c]
+It does not survive the other stage. In stage 3 the same correlation is
+**r = −0.24** — longer rewrites justify *less* — and stage 3 is where the
+estimate is better identified, its word deltas running both directions with sd
+38 against stage 4's one-sided 14. Neither reaches significance (p = 0.11 and
+p = 0.15). **A relationship that changes sign between two arms of the same
+design is not a relationship**, and the tidy explanation that justification's
+stage-4 drift "was length" fails on the data rather than on the statistics.
+
+We report the correlation rather than removing it, because length is not a
+confound here in any case. On this rubric a longer passage genuinely has room
+to justify more, and a member with a longer slot could earn the same points the
+same way. Adding justification by adding words is a real strategy, not an
+artifact of one; partialling it out would treat a route to quality as a
+nuisance parameter.[^r49c]
 
 [^r49c]: An earlier version of this section reported a *length-adjusted*
     column instead and used it to conclude that justification's apparent gain
@@ -694,11 +701,13 @@ beat" is the whole of that apparatus.
 
 [^r49b]: `cd quality_expansion && python analyze_stage3.py [RUNDIR]` and
     `python analyze_stage3.py --key4 [RUNDIR]`; values cached in
-    `results_stage34.json`. Quoted column is the **raw paired difference**,
-    humanized − original, within text; the script also prints `r(words)`, the
-    correlation between length change and score change (see [^r49c]). `-1`
-    (inapplicable) pairs are excluded, which is why the two sentinel dimensions
-    have smaller n (12 and 12 in stage 3; 18 and 16 in stage 4).
+    `results_stage34.json`, which now also caches `r_words` per dimension.
+    Grading transcripts live on the second machine (stage 3 run
+    `wf_b9bbcff8-1a7`, stage 4 `wf_7516f16c-386`); the script needs a run
+    directory, so pass one. Quoted column is the **raw paired difference**,
+    humanized − original, within text. `-1` (inapplicable) pairs are excluded,
+    which is why the two sentinel dimensions have smaller n (12 and 12 in
+    stage 3; 18 and 16 in stage 4).
 
 ---
 

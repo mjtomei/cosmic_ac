@@ -22,14 +22,20 @@ variant. Blinded, interleaved, graded on the v2b DQI rubric. Within-text
 pairing means content, speaker and occasion are held fixed by construction --
 the only thing varying is the rewrite.
 
-LENGTH: REPORTED, NOT PARTIALLED OUT. Humanized versions run longer in stage 4
-(mean +29 words; stage 3's are flat at -1.3). Whether any dimension tracks that
-per pair is what r(words) reports, and it has not been computed yet -- the
-cached results_stage34.json holds aggregates only, so this needs a run against
-the grading transcripts. Either way it is not a confound. On this rubric a longer
-passage genuinely has room to justify more, and earning justification by adding
-words is a strategy a member with a longer slot could use too -- partialling it
-out would treat a real route to quality as a nuisance parameter. So length is
+LENGTH: REPORTED, NOT PARTIALLED OUT -- AND IT DOES NOT REPLICATE. Humanized
+versions run longer in stage 4 (mean +29 words; stage 3's are flat at -1.3),
+and within stage 4 justification tracks length at r = +0.33, the largest
+correlation in either table. In stage 3 the same correlation is r = -0.24:
+longer rewrites justify LESS. Neither is significant (p = 0.11, p = 0.15), and
+stage 3 is the better-identified of the two, its deltas running both directions
+with sd 38 against stage 4's one-sided 14. A sign that flips between two arms of
+one design is not a finding, so the story that justification's stage-4 drift
+"was length" fails on the data and not merely on the statistics.
+
+It would not be a confound even if it held. On this rubric a longer passage
+genuinely has room to justify more, and earning justification by adding words is
+a strategy a member with a longer slot could use too -- partialling it out would
+treat a real route to quality as a nuisance parameter. So length is
 reported as a plain correlation, r(words), and the raw paired difference is the
 quoted effect.
 
