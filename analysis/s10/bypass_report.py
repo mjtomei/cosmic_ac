@@ -217,13 +217,13 @@ def main():
           f"[{100*wilson(h,n)[0]:.1f}, {100*wilson(h,n)[1]:.1f}] and "
           f"[{100*wilson(s,n)[0]:.1f}, {100*wilson(s,n)[1]:.1f}] -- about half")
     print(f"  the width, because it treats each rewrite as independent.)")
-    nbar = n / m
-    icc = (hdeff - 1) / (nbar - 1)
-    print(f"  implied ICC {icc:.2f}: ~{100*icc:.0f}% of the variation in "
-          f"success is BETWEEN texts,")
-    print(f"  not between rewrites of one text (mean {nbar:.1f} variants per "
-          f"text). Precision comes")
-    print(f"  from more source texts, not more attempts per text.")
+    print(f"  Mean {n/m:.1f} variants per text. Repeated draws from THIS "
+          f"search on one text")
+    print(f"  add little to the estimate -- which is a statement about "
+          f"measurement precision,")
+    print(f"  not about whether a text is evadable. A different method on the "
+          f"same text is")
+    print(f"  untested; see the zero-yield block below.")
 
     ai = [r for r in rows if r["seed_verdict"] == "AI"]
     ah = sum(1 for r in ai if r["verdict"] == "Human")
@@ -347,6 +347,11 @@ def main():
     print("  than a demonstration that the text resists rewriting. Their best")
     print("  variants were discarded rather than stored, so the question")
     print("  cannot be settled from this run.")
+    print("  And 'this search could not move it in six rounds' is not 'more")
+    print("  effort would not move it'. More DRAWS from the same process")
+    print("  plausibly would not -- the search had converged. A different")
+    print("  METHOD is a separate question and is untested: better exemplars,")
+    print("  a rewriter fine-tuned against the detector, or a human editor.")
 
     # per-text, conditional on the search budget
     print("\nPER TEXT, ALL RUNS AND SEED TYPES (conditional on ~6 rounds x 3")

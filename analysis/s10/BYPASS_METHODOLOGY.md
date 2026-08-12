@@ -298,12 +298,6 @@ original -- the design effect is 3.55, so the effective n is ~130 rather than
 461 and a Wilson interval would be half the width it should be. The per-target
 table above needs no correction: one observation per text by construction.
 
-The implied intraclass correlation is **0.64** -- about two thirds of the
-variation in whether a rewrite succeeds sits between texts rather than between
-rewrites of the same text. That is this document's band hypothesis restated as
-a variance decomposition, and it says where to spend effort next: **more source
-texts, not more attempts per text.**
-
 The GO Opus-selected run stays in the pool despite being the badly-seeded one.
 Dropping a run *because* it produced no successes would inflate the rate.
 

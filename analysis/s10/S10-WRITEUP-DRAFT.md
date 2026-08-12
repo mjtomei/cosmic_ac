@@ -554,15 +554,6 @@ non-parametric cluster bootstrap over texts, 20,000 draws. The per-target
 figures below need no such correction — they already carry one observation per
 text.
 
-Put the other way round, the implied intraclass correlation is **0.64**:
-**roughly two thirds of the variation in whether a rewrite succeeds is between
-texts rather than between rewrites of the same text.** Which speech an attacker
-picks matters about twice as much as which rewrite they produce. That is the
-band finding restated as a variance decomposition, and it has a practical
-corollary for anyone extending this work — precision comes from **more source
-texts, not more attempts per text**, because further rewrites of a text largely
-re-measure something already known.
-
 **The operational figure — 22.5% per target, best method only.** An adversary
 does not care how many drafts they discard; they care whether the speech they
 wanted through got through. Taking only the **final search in each chamber**
@@ -588,6 +579,13 @@ candidate their own proxy will submit has not got that speech past anything —
 so they belong in the denominator. Counting only targets that yielded makes
 the rate conditional on the attack having already half-succeeded, and gave
 24.6% where the answer is 22.5%.
+
+Those six are not evidence that the text cannot be disguised. They establish
+that *this* search, at this budget, did not manage it — and the search had
+converged, so further draws from the same process would probably not have
+helped either. Whether a **different method** would is a separate question and
+an untested one: better contrastive exemplars, a rewriter fine-tuned against
+the detector, or a human editor are all outside what was tried.
 
 The two chambers agree closely (25.0% and 19.4%) **despite contradicting each
 other on which edits work**: their hypotheses agree on repetition and
