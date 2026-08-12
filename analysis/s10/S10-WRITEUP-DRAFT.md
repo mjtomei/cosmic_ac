@@ -534,13 +534,25 @@ single rewrite attempt defeats the detector.
 | NB v3 contrastive | 212 | 29 | 29 |
 | GO Opus-selected | 80 | 0 | 0 |
 | GO all-31 uniform | 129 | 9 | 7 |
-| **pooled** | **461** | **39 = 8.5%** [6.3, 11.4] | **37 = 8.0%** [5.9, 10.9] |
+| **pooled** | **461** | **39 = 8.5%** [4.0, 13.4] | **37 = 8.0%** [3.6, 12.9] |
 
 Restricted to unambiguously AI-seeded originals the rate is unchanged: 34/400
-= 8.5% by label, 32/400 = 8.0% strict. This is the right number when the claim
-is about the *detector*, and it is deliberately harsh on ourselves: it keeps
-two superseded searches in the denominator, including the badly-seeded run
-that produced nothing.
+= 8.5% [3.5, 14.2] by label, 32/400 = 8.0% strict. This is the right number
+when the claim is about the *detector*, and it is deliberately harsh on
+ourselves: it keeps two superseded searches in the denominator, including the
+badly-seeded run that produced nothing.
+
+**The intervals are clustered on text, and they are wide.** The 461 variants
+are up to eighteen rewrites of each of 92 originals, and success is strongly
+clustered by original — which is what this arm's own band analysis asserts,
+that evadability is a property of the text rather than of the rewrite. Treating
+each rewrite as an independent trial gives a Wilson interval of [6.3, 11.4],
+about half the width it should be: the cluster-robust standard error is 2.44
+percentage points against a naive 1.30, a **design effect of 3.55**, so the
+effective sample is about 130 variants and not 461. Quoted above is a
+non-parametric cluster bootstrap over texts, 20,000 draws. The per-target
+figures below need no such correction — they already carry one observation per
+text.
 
 **The operational figure — 22.5% per target, best method only.** An adversary
 does not care how many drafts they discard; they care whether the speech they
@@ -600,7 +612,11 @@ rather than under clean conditions.
 | Rice 2026, Australian Hansard | ~8% | **false *positive* rate**, n = 50 |
 
 **Only the per-variant row is commensurable with the vendor rows**, which are
-one-shot document-level rates on known-AI text. The per-target row is
+one-shot document-level rates on known-AI text. And the comparison is a
+comparison of point estimates: once the per-variant interval is clustered on
+text it runs [4.0, 13.4], so the adversarial vendor figures at 2.31–2.86% sit
+below our estimate but not far below its lower bound. The ordering is not in
+doubt; its margin is less certain than the point estimates suggest. The per-target row is
 italicised because it allows up to eighteen attempts per document, and no
 published benchmark grants that; it is the right number for exposure, the
 wrong number for a detector comparison. The Rice row is included because the

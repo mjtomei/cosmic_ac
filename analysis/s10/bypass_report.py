@@ -55,6 +55,10 @@ TWO CORRECTIONS THIS SCRIPT ENCODES
   * Rates must be reported per-variant AND per-text. Per-text rates are
     conditional on the search budget (~6 rounds x 3 variants) and are not
     detector properties.
+  * Per-variant intervals were Wilson, which assumes 461 independent trials.
+    They are up to 18 rewrites of each of 92 texts and success clusters by
+    text: design effect 3.55, effective n ~130. Now a cluster bootstrap over
+    texts, which roughly doubles the width.
   * The per-target denominator counted only targets that produced a variant
     under the submission gate. Sixteen of 106 searched targets (15%) never
     did, across four to six full rounds each. They are attack failures and
@@ -66,6 +70,7 @@ import collections
 import json
 import math
 import os
+import random
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
@@ -78,6 +83,40 @@ def wilson(k, n, z=1.96):
     c = p + z * z / (2 * n)
     h = z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n))
     return ((c - h) / d, (c + h) / d)
+
+
+def cluster_boot(rows, pred, seed=0, n=20000):
+    """Rate and 95% CI, resampling TEXTS rather than variants.
+
+    The per-variant rate is up to 18 rewrites of each of 92 texts, and success
+    is strongly text-clustered -- which is exactly what this arm's own band
+    analysis asserts, that evadability is a property of the original. Wilson
+    assumes independent Bernoulli trials and is therefore about half the width
+    it should be: cluster-robust SE is 2.44pp against a naive 1.30pp, a design
+    effect of 3.55, so the effective n is ~130 rather than 461.
+
+    Returns (rate, lo, hi, n_clusters, n_variants, design_effect).
+    """
+    cl = collections.defaultdict(list)
+    for r in rows:
+        cl[r["seg_id"]].append(bool(pred(r)))
+    keys = list(cl)
+    m = len(keys)
+    N = sum(len(cl[k]) for k in keys)
+    p = sum(sum(cl[k]) for k in keys) / N
+    var = m / (m - 1) * sum((sum(cl[k]) - p * len(cl[k])) ** 2
+                            for k in keys) / N ** 2
+    naive = math.sqrt(p * (1 - p) / N) if 0 < p < 1 else float("nan")
+    rng = random.Random(seed)
+    draws = []
+    for _ in range(n):
+        s = [cl[keys[rng.randrange(m)]] for _ in range(m)]
+        tot = sum(len(x) for x in s)
+        if tot:
+            draws.append(sum(sum(x) for x in s) / tot)
+    draws.sort()
+    return (p, draws[int(.025 * len(draws))], draws[int(.975 * len(draws))],
+            m, N, (math.sqrt(var) / naive) ** 2)
 
 
 def fisher(a, b, c, d):
@@ -161,20 +200,32 @@ def main():
     n = len(rows)
     h = sum(1 for r in rows if r["verdict"] == "Human")
     s = sum(1 for r in rows if r["strict"])
-    lo, hi = wilson(h, n)
-    slo, shi = wilson(s, n)
+    # CLUSTER ON TEXT. Wilson would assume 461 independent trials; these are
+    # up to 18 rewrites of each of 92 texts.
+    hp, hlo, hhi, m, _, hdeff = cluster_boot(
+        rows, lambda r: r["verdict"] == "Human")
+    sp, slo2, shi2, _, _, sdeff = cluster_boot(rows, lambda r: r["strict"])
     print(f"\nPOOLED INDUCED FALSE-NEGATIVE RATE (per variant)")
-    print(f"  Human label       {h:>3d}/{n} = {100*h/n:.1f}% "
-          f"[{100*lo:.1f}, {100*hi:.1f}]")
-    print(f"  fraction_ai = 0.0 {s:>3d}/{n} = {100*s/n:.1f}% "
-          f"[{100*slo:.1f}, {100*shi:.1f}]")
+    print(f"  {m} text clusters over {n} variants; intervals are a "
+          f"non-parametric")
+    print(f"  cluster bootstrap over texts, 20,000 draws.")
+    print(f"  Human label       {h:>3d}/{n} = {100*hp:.1f}% "
+          f"[{100*hlo:.1f}, {100*hhi:.1f}]   design effect {hdeff:.2f}")
+    print(f"  fraction_ai = 0.0 {s:>3d}/{n} = {100*sp:.1f}% "
+          f"[{100*slo2:.1f}, {100*shi2:.1f}]   design effect {sdeff:.2f}")
+    print(f"  (Wilson on the same counts would give "
+          f"[{100*wilson(h,n)[0]:.1f}, {100*wilson(h,n)[1]:.1f}] and "
+          f"[{100*wilson(s,n)[0]:.1f}, {100*wilson(s,n)[1]:.1f}] -- about half")
+    print(f"  the width, because it treats each rewrite as independent.)")
 
     ai = [r for r in rows if r["seed_verdict"] == "AI"]
     ah = sum(1 for r in ai if r["verdict"] == "Human")
     asr = sum(1 for r in ai if r["strict"])
-    alo, ahi = wilson(ah, len(ai))
-    print(f"\n  restricted to unambiguously AI-seeded originals:")
-    print(f"    Human label     {ah:>3d}/{len(ai)} = {100*ah/len(ai):.1f}% "
+    ap, alo, ahi, am, _, _ = cluster_boot(
+        ai, lambda r: r["verdict"] == "Human", seed=1)
+    print(f"\n  restricted to unambiguously AI-seeded originals "
+          f"({am} clusters):")
+    print(f"    Human label     {ah:>3d}/{len(ai)} = {100*ap:.1f}% "
           f"[{100*alo:.1f}, {100*ahi:.1f}]")
     print(f"    strict          {asr:>3d}/{len(ai)} = "
           f"{100*asr/len(ai):.1f}%")

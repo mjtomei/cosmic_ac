@@ -290,7 +290,13 @@ Quote this when the claim is about the detector rather than the attacker.
 | NB v3 contrastive | 212 | 29 | 29 |
 | GO Opus-selected | 80 | 0 | 0 |
 | GO all-31 uniform | 129 | 9 | 7 |
-| **pooled** | **461** | **39 = 8.5%** [6.3, 11.4] | **37 = 8.0%** [5.9, 10.9] |
+| **pooled** | **461** | **39 = 8.5%** [4.0, 13.4] | **37 = 8.0%** [3.6, 12.9] |
+
+Intervals are a cluster bootstrap over the 92 source texts, not Wilson. The
+variants are up to eighteen rewrites of each original and success clusters by
+original -- the design effect is 3.55, so the effective n is ~130 rather than
+461 and a Wilson interval would be half the width it should be. The per-target
+table above needs no correction: one observation per text by construction.
 
 The GO Opus-selected run stays in the pool despite being the badly-seeded one.
 Dropping a run *because* it produced no successes would inflate the rate.
