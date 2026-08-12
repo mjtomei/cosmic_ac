@@ -188,7 +188,10 @@ def main():
     # Distinct texts, not the sum of per-run seed counts. The two New
     # Brunswick searches re-attack the SAME 40 texts, so adding the four runs
     # gives 130 where the distinct figure is 106 attacked and 92 with a
-    # verdict. That repetition is also what drives the design effect below.
+    # verdict. This is a description-of-sample fix and is NOT the source of
+    # the design effect below: clustering on (run, text) rather than text
+    # removes the overlap entirely and moves deff only 3.55 -> 3.45. The
+    # clustering is ~97% multiple variants of one target within one search.
     import functools
     st = {}
     for run, f in (("NB v3 contrastive", "bypass_v3.json"),

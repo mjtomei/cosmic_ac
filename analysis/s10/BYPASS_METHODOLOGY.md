@@ -246,9 +246,13 @@ texts**. Adding the four per-run seed counts gives 130, which is neither the
 distinct count nor the seed-run count, and the write-up used it as the arm's
 opening figure until 2026-08-12.
 
-The repetition is not a bookkeeping detail. Half the pooled denominator is
-repeat measurement on the same New Brunswick material, which is exactly why
-the per-variant intervals must be clustered on text.
+The repetition matters for describing the sample honestly, but it is **not**
+what drives the clustering correction below. Clustering on (run, text) instead
+of text -- which treats the same New Brunswick text attacked twice as two
+independent clusters, removing the overlap entirely -- moves the design effect
+only from 3.55 to 3.45. Roughly 97% of the clustering comes from taking
+multiple variants of one target *within* a single search, and would be there
+even if all four runs had used disjoint texts.
 
 ## Results — two rates, and which to quote
 
