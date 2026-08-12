@@ -217,6 +217,13 @@ def main():
           f"[{100*wilson(h,n)[0]:.1f}, {100*wilson(h,n)[1]:.1f}] and "
           f"[{100*wilson(s,n)[0]:.1f}, {100*wilson(s,n)[1]:.1f}] -- about half")
     print(f"  the width, because it treats each rewrite as independent.)")
+    nbar = n / m
+    icc = (hdeff - 1) / (nbar - 1)
+    print(f"  implied ICC {icc:.2f}: ~{100*icc:.0f}% of the variation in "
+          f"success is BETWEEN texts,")
+    print(f"  not between rewrites of one text (mean {nbar:.1f} variants per "
+          f"text). Precision comes")
+    print(f"  from more source texts, not more attempts per text.")
 
     ai = [r for r in rows if r["seed_verdict"] == "AI"]
     ah = sum(1 for r in ai if r["verdict"] == "Human")

@@ -554,6 +554,15 @@ non-parametric cluster bootstrap over texts, 20,000 draws. The per-target
 figures below need no such correction — they already carry one observation per
 text.
 
+Put the other way round, the implied intraclass correlation is **0.64**:
+**roughly two thirds of the variation in whether a rewrite succeeds is between
+texts rather than between rewrites of the same text.** Which speech an attacker
+picks matters about twice as much as which rewrite they produce. That is the
+band finding restated as a variance decomposition, and it has a practical
+corollary for anyone extending this work — precision comes from **more source
+texts, not more attempts per text**, because further rewrites of a text largely
+re-measure something already known.
+
 **The operational figure — 22.5% per target, best method only.** An adversary
 does not care how many drafts they discard; they care whether the speech they
 wanted through got through. Taking only the **final search in each chamber**
