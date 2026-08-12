@@ -243,23 +243,39 @@ Computed by `bypass_report.py`, which is the only place these are derived; the
 per-run numbers in this document were each computed separately at the time and
 should be read as history.
 
-**The operational rate: 24.6% per target.** Final search per chamber only, at
+**The operational rate: 22.5% per target.** Final search per chamber only, at
 least one variant reaching a clean Human verdict. This is what an actor
 bypassing a *given* speech achieves, and it is the headline — discarded drafts
 cost them nothing.
 
-| run | targets | ≥1 Human | ≥1 at `fraction_ai` = 0.0 |
-|---|---|---|---|
-| NB v3 contrastive | 38 | 10 = 26.3% | 10 = 26.3% |
-| GO all-31 uniform | 27 | 6 = 22.2% | 5 = 18.5% |
-| **pooled** | **65** | **16 = 24.6%** [16, 36] | **15 = 23.1%** [15, 35] |
+| run | searched | zero-yield | ≥1 Human | ≥1 at `fraction_ai` = 0.0 |
+|---|---|---|---|---|
+| NB v3 contrastive | 40 | 2 | 10 = 25.0% | 10 = 25.0% |
+| GO all-31 uniform | 31 | 4 | 6 = 19.4% | 5 = 16.1% |
+| **pooled** | **71** | **6** | **16 = 22.5%** [14.4, 33.5] | **15 = 21.1%** [13.2, 32.0] |
+
+**The denominator is targets SEARCHED.** The search submits a variant to
+Pangram only when its Opus proxy drops below 50; six of these 71 ran four to
+six full rounds and never produced one. They are attack failures and belong in
+the denominator. An earlier version used targets that yielded (38 and 27),
+which reported 24.6% — the completers-only version of the same rate.
 
 Against the 13 commercial humanizer services in Pangram's own technical report
-(2.31% one-shot), that is **10.6×** — an off-the-shelf model in a rewrite loop
+(2.31% one-shot), that is **9.8×** — an off-the-shelf model in a rewrite loop
 beating purpose-built evasion products by an order of magnitude. Like-for-like
 on single attempts the multiple is 3.7×; the 2.31% baseline is one-shot while
-24.6% allows up to eighteen attempts, and that asymmetry must be stated
+22.5% allows up to eighteen attempts, and that asymmetry must be stated
 whenever the tenfold figure is used.
+
+**Sixteen of 106 searched targets (15%) yielded nothing submittable**, across
+all three searches — 2 of 40 in NB v3, 4 of 31 in GO all-31, and 10 of 35 in
+the Opus-selected run. That is the study's only direct evidence of text the
+attack could not move, and it is weaker than it looks: the four Government
+Orders near-misses sit at 50.0–51.7 against a gate of < 50 with a 3× re-score
+sd of ~2.4, so their exclusion is nearer a coin flip than a demonstration of
+resistance. Their best variants were scored and then discarded rather than
+stored, so this run cannot settle whether the gate threw away real evasions.
+`bypass_report.py` lists all sixteen with rounds and best score.
 
 The two chambers agree closely **despite contradicting each other on which
 edits work** (see the mechanism note at the end). The rate transfers; the

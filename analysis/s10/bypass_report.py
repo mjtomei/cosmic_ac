@@ -15,11 +15,14 @@ TWO RATES, AND BOTH BELONG IN THE WRITE-UP
   superseded searches into the denominator and asks how often a RANDOM attempt
   succeeds. Use it when the claim is about the detector.
 
-  PER TARGET, FINAL SEARCH ONLY -- 24.6%. The operational figure. It asks
+  PER TARGET, FINAL SEARCH ONLY -- 22.5%. The operational figure. It asks
   whether the speech an adversary wanted through got through, which is the
   only question they care about; discarded drafts cost them nothing. Use it
   when the claim is about what an attacker achieves, and as the figure a fresh
-  study replicating our best method should expect.
+  study replicating our best method should expect. The denominator is targets
+  SEARCHED, not targets that yielded a submittable variant -- see the block
+  below. Using the yielded count instead gave 24.6%, which is the same error
+  as reporting a treatment effect on completers only.
 
 Neither supersedes the other. Quoting only the first understates the exposure;
 quoting only the second overstates the detector's weakness.
@@ -52,6 +55,10 @@ TWO CORRECTIONS THIS SCRIPT ENCODES
   * Rates must be reported per-variant AND per-text. Per-text rates are
     conditional on the search budget (~6 rounds x 3 variants) and are not
     detector properties.
+  * The per-target denominator counted only targets that produced a variant
+    under the submission gate. Sixteen of 106 searched targets (15%) never
+    did, across four to six full rounds each. They are attack failures and
+    belong in the denominator: 24.6% -> 22.5%.
 
 Usage: python bypass_report.py
 """
@@ -207,36 +214,81 @@ def main():
     # per chamber, on what fraction of TARGETS did at least one variant reach a
     # clean Human verdict? It is the figure a fresh study replicating our best
     # method should expect to reproduce, so it is reported alongside.
-    FINAL = {"NB v3 contrastive", "GO all-31 uniform"}
+    # THE DENOMINATOR IS TARGETS SEARCHED, NOT TARGETS THAT YIELDED.
+    # The search only submits a variant to Pangram if its Opus proxy score
+    # drops below 50. Sixteen targets across the three searches ran four to
+    # six full rounds and never produced anything under that gate. They are
+    # attack FAILURES -- an adversary who cannot produce a candidate their own
+    # proxy will submit has not walked that speech past anything -- so they
+    # belong in the denominator. Counting only targets that yielded makes the
+    # rate conditional on the attack having already half-succeeded, and
+    # inflated the headline from 22.5% to 24.6%.
+    SEARCH = {"NB v3 contrastive": "bypass_v3.json",
+              "GO all-31 uniform": "gov_bypass_all.json",
+              "GO Opus-selected": "gov_bypass_v3.json"}
+
+    def searched(run):
+        f = os.path.join(HERE, SEARCH[run])
+        if not os.path.exists(f):
+            return None
+        return len(json.load(open(f))["state"])
+
     print("\nPER TARGET, FINAL SEARCH PER CHAMBER ONLY")
-    print("(at least one variant reaching Human, ~6 rounds x 3 variants)\n")
-    print(f"  {'run':<20s} {'targets':>8s} {'label':>16s} {'strict':>16s}")
+    print("(at least one variant reaching Human; denominator is targets")
+    print("SEARCHED, including those that never cleared the submission gate)\n")
+    print(f"  {'run':<20s} {'searched':>9s} {'zero-yield':>11s} "
+          f"{'label':>16s} {'strict':>16s}")
     tt = hh = ss = 0
     for run in ["NB v3 contrastive", "GO all-31 uniform"]:
         t = collections.defaultdict(list)
         for r in rows:
             if r["run"] == run:
                 t[r["seg_id"]].append(r)
+        n = searched(run) or len(t)
         k = sum(1 for v in t.values()
                 if any(x["verdict"] == "Human" for x in v))
         st = sum(1 for v in t.values() if any(x["strict"] for x in v))
-        lo, hi = wilson(k, len(t))
-        slo, shi = wilson(st, len(t))
-        tt += len(t); hh += k; ss += st
-        print(f"  {run:<20s} {len(t):>8d} "
-              f"{f'{k}/{len(t)} = {100*k/len(t):.1f}%':>16s} "
-              f"{f'{st}/{len(t)} = {100*st/len(t):.1f}%':>16s}")
+        tt += n; hh += k; ss += st
+        print(f"  {run:<20s} {n:>9d} {n - len(t):>11d} "
+              f"{f'{k}/{n} = {100*k/n:.1f}%':>16s} "
+              f"{f'{st}/{n} = {100*st/n:.1f}%':>16s}")
     lo, hi = wilson(hh, tt)
     slo, shi = wilson(ss, tt)
-    print(f"  {'POOLED':<20s} {tt:>8d} "
+    print(f"  {'POOLED':<20s} {tt:>9d} {'':>11s} "
           f"{f'{hh}/{tt} = {100*hh/tt:.1f}%':>16s} "
           f"{f'{ss}/{tt} = {100*ss/tt:.1f}%':>16s}")
-    print(f"    label  [{100*lo:.0f}, {100*hi:.0f}]   "
-          f"strict [{100*slo:.0f}, {100*shi:.0f}]")
+    print(f"    label  [{100*lo:.1f}, {100*hi:.1f}]   "
+          f"strict [{100*slo:.1f}, {100*shi:.1f}]")
     print("  The two chambers agree within their intervals despite")
     print("  contradicting each other on WHICH edits work (see")
     print("  BYPASS_METHODOLOGY.md) -- the rate transfers, the playbook")
     print("  does not.")
+
+    print("\nTARGETS THE SEARCH COULD NOT MOVE")
+    print("  The only direct evidence in the study of text that resisted the")
+    print("  attack. Best proxy score reached, against a submission gate of")
+    print("  < 50 and a 3x re-score sd of ~2.4:\n")
+    tot_s = tot_z = 0
+    for run, f in SEARCH.items():
+        fp = os.path.join(HERE, f)
+        if not os.path.exists(fp):
+            continue
+        d = json.load(open(fp))
+        kept = set(x["seg_id"] for x in d["kept"])
+        z = [(s, d["state"][s]["rounds"], d["state"][s]["best"])
+             for s in d["state"] if s not in kept]
+        tot_s += len(d["state"]); tot_z += len(z)
+        print(f"  {run}: {len(z)} of {len(d['state'])} searched")
+        for s, r, b in sorted(z, key=lambda x: x[2]):
+            print(f"      {s:<24s} {r} rounds, best {b:.1f}")
+    print(f"\n  {tot_z} of {tot_s} searched targets ({100*tot_z/tot_s:.0f}%) "
+          f"yielded nothing submittable.")
+    print("  Caveat that cuts the other way: the four Government Orders")
+    print("  near-misses sit at 50.0-51.7 against a gate of < 50 and a")
+    print("  re-score sd of ~2.4, so their exclusion is closer to a coin flip")
+    print("  than a demonstration that the text resists rewriting. Their best")
+    print("  variants were discarded rather than stored, so the question")
+    print("  cannot be settled from this run.")
 
     # per-text, conditional on the search budget
     print("\nPER TEXT, ALL RUNS AND SEED TYPES (conditional on ~6 rounds x 3")

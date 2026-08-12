@@ -507,8 +507,8 @@ beats the commercial evasion industry by about tenfold.** No fine-tuning, no
 detector access, no evasion tooling — Opus, a rewrite prompt, and six rounds
 of keep-the-best. Against the 13 commercial "humanizer" services benchmarked
 in Pangram's own technical report, which get **2.31%** of documents past it,
-this gets **24.6%** of targets past it: **10.6×**.[^r49a] Against Pangram's
-clean-conditions false-negative rate of 0.34%, it is 72×.
+this gets **22.5%** of targets past it: **9.8×**.[^r49a] Against Pangram's
+clean-conditions false-negative rate of 0.34%, it is 65×.
 
 That is the finding. The detector is not weak — its specificity is 0 in 1,260
 (§4.1), and a single "make this sound human" prompt makes text *more*
@@ -516,7 +516,7 @@ detectable, not less. But the gap between a purpose-built evasion product and
 a frontier model told to try again is an order of magnitude in the frontier
 model's favour, and it will not narrow in the detector's direction.
 
-One asymmetry to keep visible: the 2.31% is a **one-shot** rate, while 24.6%
+One asymmetry to keep visible: the 2.31% is a **one-shot** rate, while 22.5%
 allows up to eighteen attempts. Like-for-like on single attempts the multiple
 is **3.7×** (8.5% against 2.31%). The tenfold figure is the honest one for an
 actor bypassing a *given* text, because discarded drafts cost them nothing;
@@ -542,26 +542,33 @@ is about the *detector*, and it is deliberately harsh on ourselves: it keeps
 two superseded searches in the denominator, including the badly-seeded run
 that produced nothing.
 
-**The operational figure — 24.6% per target, best method only.** An adversary
+**The operational figure — 22.5% per target, best method only.** An adversary
 does not care how many drafts they discard; they care whether the speech they
 wanted through got through. Taking only the **final search in each chamber**
 and asking on what fraction of *targets* at least one variant reached a clean
 Human verdict:
 
-| | targets | ≥1 Human | ≥1 at `fraction_ai = 0.0` |
-|---|---|---|---|
-| NB v3 contrastive | 38 | 10 = 26.3% | 10 = 26.3% |
-| GO all-31 uniform | 27 | 6 = 22.2% | 5 = 18.5% |
-| **pooled** | **65** | **16 = 24.6%** [16, 36] | **15 = 23.1%** [15, 35] |
+| | searched | zero-yield | ≥1 Human | ≥1 at `fraction_ai = 0.0` |
+|---|---|---|---|---|
+| NB v3 contrastive | 40 | 2 | 10 = 25.0% | 10 = 25.0% |
+| GO all-31 uniform | 31 | 4 | 6 = 19.4% | 5 = 16.1% |
+| **pooled** | **71** | **6** | **16 = 22.5%** [14.4, 33.5] | **15 = 21.1%** [13.2, 32.0] |
 
-**About one flagged speech in four can be walked past the detector**, at a
+**Roughly one flagged speech in five can be walked past the detector**, at a
 budget of six rounds and three variants per round. This is the figure a fresh
 study replicating our best method should expect to reproduce, and the more
 honest description of the exposure a chamber actually faces.
 
-Two things make it more trustworthy than its interval suggests. The strict
-criterion barely moves it — exactly one target loses its only reversal. And
-the two chambers agree closely (26.3% and 22.2%) **despite contradicting each
+**The denominator is targets searched, not targets that yielded a variant.**
+The search submits a rewrite to Pangram only when its Opus proxy score drops
+below 50, and six of these 71 targets ran four to six full rounds without ever
+producing one. Those are attack failures — an adversary who cannot produce a
+candidate their own proxy will submit has not got that speech past anything —
+so they belong in the denominator. Counting only targets that yielded makes
+the rate conditional on the attack having already half-succeeded, and gave
+24.6% where the answer is 22.5%.
+
+The two chambers agree closely (25.0% and 19.4%) **despite contradicting each
 other on which edits work**: their hypotheses agree on repetition and
 unglossed idiom and flatly disagree on sentence rhythm. The rate transfers;
 the playbook does not.
@@ -589,7 +596,7 @@ rather than under clean conditions.
 | Pangram 4, BLADER de-AI agent | 0.43% | FNR under agentic evasion, vendor |
 | Pangram 4, Perkins benchmark | 2.86% | FNR, doc-level, adversarial, vendor |
 | **this study, per variant** | **8.5%** | **induced FNR, one attempt, 461 variants — 3.7× the humanizers** |
-| *this study, per target* | *24.6%* | *induced, ≤18 attempts — 10.6× the humanizers* |
+| *this study, per target* | *22.5%* | *induced, ≤18 attempts — 9.8× the humanizers* |
 | Rice 2026, Australian Hansard | ~8% | **false *positive* rate**, n = 50 |
 
 **Only the per-variant row is commensurable with the vendor rows**, which are
@@ -608,7 +615,7 @@ result also points.
 **Both rates move with effort, and that is the real caveat on each.** The
 blind v2 search flipped 10% of variants; the contrastive v3 search 28%. If
 "soften off AI" rather than "reach Human" is the bar, 17 of 38 New Brunswick
-targets (45%) cleared it. So 8.5% and 24.6% bound what two days and four
+targets (45%) cleared it. So 8.5% and 22.5% bound what two days and four
 searches achieved, not what is achievable.
 
 **A correction to an earlier claim.** We previously reported that Pangram's own
@@ -692,7 +699,7 @@ nuisance parameter.[^r49c]
     nothing for a covariate to control.
 
 **What this means for the prevalence number.** Evasion is real, clears the
-detector on about one flagged speech in four under directed search, and is free
+detector on roughly one flagged speech in five under directed search, and is free
 in deliberative-quality terms — so 12.4% is a floor, and the honest reading is
 that it measures *undisguised* machine drafting. But it is not free in effort:
 it took a frontier model, contrastive exemplars mined from matched human text,
@@ -724,7 +731,7 @@ beat" is the whole of that apparatus.
 ## 5. Limits
 
 - **Prevalence is a floor.** Detectors see undisguised machine text. A
-  directed search clears the detector on 8.5% of variants and **24.6% of
+  directed search clears the detector on 8.5% of variants and **22.5% of
   targets** (§4.9), so 12.4% is a lower bound. How much of a lower bound is
   not estimable from this design: we can measure how often evasion succeeds
   when attempted, not how often it is attempted.
@@ -866,7 +873,7 @@ being an optimiser with a quality constraint the optimiser itself can satisfy.
 Our own numbers are the *weak* instance. The search never queried the detector
 it was evading: it optimised against an Opus proxy, tested on Pangram only at
 the end, used roughly eighteen attempts per target, and involved no
-fine-tuning, no gradients, and no detector access of any kind. 24.6% of
+fine-tuning, no gradients, and no detector access of any kind. 22.5% of
 targets cleared is what that buys. An adversary who can query the check
 directly is hill-climbing the actual objective, and there is no reason to
 expect the ceiling to be near where we stopped.
@@ -1124,7 +1131,7 @@ not a fourth operationalisation of the same kind.
     publishes**; no query access to the verifier is what makes it the honest
     threat model when it does.
 14. **Detector access as a variable.** Re-run the search with Pangram in the
-    loop rather than an Opus proxy. Our 24.6% is a floor on adversary
+    loop rather than an Opus proxy. Our 22.5% is a floor on adversary
     capability and the gap is unmeasured.
 15. **The below-threshold residual sample** — roughly 150 segments, 33–54k
     words, about $5. It bounds what the *screen* misses, which is a different
@@ -1237,9 +1244,14 @@ because the differences are recorded. Full stacks in `BYPASS_METHODOLOGY.md`.
 | run | seeds | how the seeds were chosen | Opus's role |
 |---|---|---|---|
 | NB v2 blind | 40 | Pangram-AI, stratified across Opus bands | outcome |
-| NB v3 contrastive | 38 | same pool, contrastive exemplars added | outcome |
-| GO Opus-selected | 25 | top 48 of 600 **by Opus score**, then Pangram-AI | **selection** |
-| GO all-31 uniform | 27 | every Pangram positive in the uniform GO draws | outcome |
+| NB v3 contrastive | 40 | same pool, contrastive exemplars added | outcome |
+| GO Opus-selected | 35 | top 48 of 600 **by Opus score**, then Pangram-AI | **selection** |
+| GO all-31 uniform | 31 | every Pangram positive in the uniform GO draws | outcome |
+
+The seed column is targets **searched**. An earlier version listed 38, 25 and
+27 — the counts that produced at least one variant clearing the submission
+gate — which understated the attack surface, most severely for the
+Opus-selected run where 10 of 35 targets yielded nothing.
 
 Two consequences carried into the text. The GO Opus-selected run regresses
 −10.3 points on re-scoring because every seed sits at the extreme of a noisy
