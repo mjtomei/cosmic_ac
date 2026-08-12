@@ -649,22 +649,30 @@ no covariate. **Every dimension is null on both.**[^r49b]
 | constructive | 0.00 (t 0.0) | −0.12 (t −1.8) |
 | evidence | +0.03 (t +0.4) | +0.08 (t +0.7) |
 
-**Length moves with justification, and that is not a confound.** Stage 4's
-rewrites run about 29 words longer than their originals (stage 3's do not —
-mean −1.3), and justification is the dimension that drifts up with them. We do
-not adjust it away, because on this rubric a longer passage genuinely has room
-to justify more, and a member with a longer slot could earn the same points the
-same way. Adding justification by adding words is a real strategy, not an
-artifact of one. It is worth knowing that the two travel together; it is not a
-reason to discount the (null) result.
+**On length, which we do not adjust away.** Stage 4's rewrites run about 29
+words longer than their originals; stage 3's do not (mean −1.3). Justification
+shows the largest movement in stage 4, and it is reasonable to suspect the two
+are related — but that is a reason to *report* the relationship, not to remove
+it. On this rubric a longer passage genuinely has room to justify more, and a
+member with a longer slot could earn the same points the same way. Adding
+justification by adding words is a real strategy, not an artifact of one.
+Partialling it out would treat a route to quality as a nuisance parameter.
 
-We also do not report a length-adjusted column for stage 4. Every stage-4
-rewrite got longer — 24 of 25 deltas are strictly positive — so the adjusted
-coefficient is an intercept at a word delta of zero, extrapolated 2.1 standard
-deviations outside the data on the strength of a single observation. It
-inflates the standard error 2.3× and can flip signs on noise alone. Stage 3 has
-no such problem and its adjusted values agree with its raw ones to within
-0.002.
+The per-pair correlation between length change and score change has not been
+computed; `analyze_stage3.py` prints it, but doing so needs the grading
+transcripts rather than the cached aggregates. It is the honest way to state
+the length relationship and is worth one run.[^r49c]
+
+[^r49c]: An earlier version of this section reported a *length-adjusted*
+    column instead and used it to conclude that justification's apparent gain
+    "was length". That column is the regression intercept at a word delta of
+    zero, and 24 of the 25 stage-4 deltas are strictly positive — a zero delta
+    sits 2.1 sd outside the sample with one observation there, giving an
+    intercept VIF of 5.43 and inflating the standard error 2.3×. The +0.16 →
+    −0.173 sign flip was extrapolation. The column has been removed from the
+    script rather than repaired: the design is within-text paired, so content,
+    speaker and occasion are already fixed by construction and there was
+    nothing for a covariate to control.
 
 **What this means for the prevalence number.** Evasion is real, clears the
 detector on about one flagged speech in four under directed search, and is free
@@ -687,13 +695,10 @@ beat" is the whole of that apparatus.
 [^r49b]: `cd quality_expansion && python analyze_stage3.py [RUNDIR]` and
     `python analyze_stage3.py --key4 [RUNDIR]`; values cached in
     `results_stage34.json`. Quoted column is the **raw paired difference**,
-    humanized − original, within text. The script also prints a length-adjusted
-    column; use it for stage 3 only, where the word-delta distribution is
-    centred near zero (mean −1.3, VIF 1.00) and it agrees with the raw column
-    to within 0.002. It is not identified in stage 4, where 24 of 25 deltas are
-    strictly positive. `-1` (inapplicable) pairs are excluded, which is why the
-    two sentinel dimensions have smaller n (12 and 12 in stage 3; 18 and 16 in
-    stage 4).
+    humanized − original, within text; the script also prints `r(words)`, the
+    correlation between length change and score change (see [^r49c]). `-1`
+    (inapplicable) pairs are excluded, which is why the two sentinel dimensions
+    have smaller n (12 and 12 in stage 3; 18 and 16 in stage 4).
 
 ---
 

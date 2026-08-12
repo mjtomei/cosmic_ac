@@ -23,21 +23,26 @@ pairing means content, speaker and occasion are held fixed by construction --
 the only thing varying is the rewrite.
 
 LENGTH: REPORTED, NOT PARTIALLED OUT. Humanized versions run longer in stage 4
-(mean +29 words; stage 3's are flat at -1.3). More room can lift justification
-by itself -- but that is not automatically a confound. On this rubric a longer
+(mean +29 words; stage 3's are flat at -1.3). Whether any dimension tracks that
+per pair is what r(words) reports, and it has not been computed yet -- the
+cached results_stage34.json holds aggregates only, so this needs a run against
+the grading transcripts. Either way it is not a confound. On this rubric a longer
 passage genuinely has room to justify more, and earning justification by adding
-words is a strategy a human with a longer slot could use too. So the raw paired
-difference is the quoted quantity, and length is reported as a co-travelling
-fact rather than adjusted away.
+words is a strategy a member with a longer slot could use too -- partialling it
+out would treat a real route to quality as a nuisance parameter. So length is
+reported as a plain correlation, r(words), and the raw paired difference is the
+quoted effect.
 
-The adjusted column is still printed, because it is safe and informative where
-a zero word delta is inside the data (stage 3: VIF 1.00, agrees with raw to
-0.002). It is NOT safe in stage 4, where 24 of 25 deltas are strictly positive
-and the intercept extrapolates 2.1 sd past the sample, inflating its SE 2.3x
-and flipping signs on noise. The script now computes that diagnostic and says
-which case it is in rather than leaving it to the reader. An earlier version of
-this file instructed "Quote the adjusted one" unconditionally; that was wrong
-for stage 4 and the write-up briefly repeated the error.
+This file used to regress each pair's score change on its word change and
+report the intercept -- the modelled effect at zero word delta -- with the
+instruction "Quote that column." Two things were wrong with that and both are
+now removed. It was never needed: the design is within-text paired, so content,
+speaker and occasion are already fixed by construction and there is nothing for
+a covariate to control. And it was not identified in stage 4, where 24 of 25
+deltas are strictly positive, so a zero delta sat 2.1 sd outside the sample
+(intercept VIF 5.43, standard error inflated 2.3x) and the column flipped
+justification from +0.16 to -0.173 on extrapolation alone. The write-up quoted
+that flip as evidence the gain "was length" before the error was caught.
 
 -1 codes INAPPLICABLE (no other demand / no counterargument on the table) and
 is excluded from means, matching the published v2 convention.
@@ -94,32 +99,15 @@ def paired_t(diffs):
     return m, m / (s / math.sqrt(n))
 
 
-def ols(Y, X):
-    n, k = len(Y), len(X[0])
-    A = [[sum(X[i][a]*X[i][b] for i in range(n)) for b in range(k)] for a in range(k)]
-    yv = [sum(X[i][a]*Y[i] for i in range(n)) for a in range(k)]
-    I = [[1.0 if i == j else 0.0 for j in range(k)] for i in range(k)]
-    M = [r[:] for r in A]
-    for c in range(k):
-        p = max(range(c, k), key=lambda r: abs(M[r][c]))
-        M[c], M[p] = M[p], M[c]; I[c], I[p] = I[p], I[c]
-        d = M[c][c]
-        if abs(d) < 1e-12:
-            return None
-        M[c] = [v/d for v in M[c]]; I[c] = [v/d for v in I[c]]
-        for r in range(k):
-            if r != c:
-                f = M[r][c]
-                M[r] = [M[r][j]-f*M[c][j] for j in range(k)]
-                I[r] = [I[r][j]-f*I[c][j] for j in range(k)]
-    beta = [sum(I[a][b]*yv[b] for b in range(k)) for a in range(k)]
-    res = [Y[i]-sum(X[i][j]*beta[j] for j in range(k)) for i in range(n)]
-    meat = [[sum(X[i][a]*X[i][b]*res[i]**2 for i in range(n)) for b in range(k)]
-            for a in range(k)]
-    sc = n/max(n-k, 1)
-    V = [[sc*sum(I[a][p]*meat[p][q]*I[b][q] for p in range(k) for q in range(k))
-          for b in range(k)] for a in range(k)]
-    return [(beta[j], math.sqrt(max(V[j][j], 0))) for j in range(k)]
+def pearson(x, y):
+    n = len(x)
+    if n < 3:
+        return None
+    mx, my = statistics.mean(x), statistics.mean(y)
+    num = sum((a - mx) * (b - my) for a, b in zip(x, y))
+    den = math.sqrt(sum((a - mx) ** 2 for a in x)
+                    * sum((b - my) ** 2 for b in y))
+    return num / den if den else None
 
 
 def main():
@@ -153,7 +141,7 @@ def main():
     print(f"complete pairs: {len(full)}/{len(pairs)}\n")
 
     print(f"{'dimension':<21s} {'original':>9s} {'humanized':>10s} "
-          f"{'diff':>7s} {'t':>7s} {'+words adj':>11s}")
+          f"{'diff':>7s} {'t':>7s} {'r(words)':>9s}")
     for d in DIMS:
         raw, wd = [], []
         for s, v in full.items():
@@ -169,46 +157,31 @@ def main():
             continue
         diffs = [h - o for o, h in raw]
         m, t = paired_t(diffs)
-        fit = ols(diffs, [[1.0, w / 100.0] for w in wd])
-        adj = f"{fit[0][0]:+.3f} (t{fit[0][0]/fit[0][1]:+.1f})" if fit else "n/a"
+        r = pearson(wd, diffs)
+        rs = f"{r:+.2f}" if r is not None else "n/a"
         print(f"{d:<21s} {statistics.mean(o for o,_ in raw):>9.2f} "
               f"{statistics.mean(h for _,h in raw):>10.2f} {m:>+7.2f} "
-              f"{t:>+7.1f}{'*' if abs(t)>2.03 else ' '} {adj:>11s}  n={len(raw)}")
+              f"{t:>+7.1f}{'*' if abs(t)>2.03 else ' '} {rs:>9s}  "
+              f"n={len(raw)}")
 
-    print("\n  diff = humanized - original, paired within text. QUOTE THIS.")
-    print("  '+words adj' is the intercept with (humanized-original) word")
-    print("  count as covariate -- the modelled effect at ZERO word delta.")
-    print("  It is only meaningful where a zero delta is actually in the data.")
+    print("\n  diff = humanized - original, paired within text. This is the")
+    print("  quoted quantity. The design is within-text paired -- same speech,")
+    print("  same speaker, same occasion -- so content is held fixed by")
+    print("  construction and no covariate is needed to get the effect.")
 
-    # Whether the adjusted column can be quoted at all is a property of the
-    # sample, so decide it here rather than leaving it to the reader.
-    allwd = []
-    for s, v in full.items():
-        allwd.append(v["humanized"][1]["n_words"] - v["original"][1]["n_words"])
+    allwd = [v["humanized"][1]["n_words"] - v["original"][1]["n_words"]
+             for v in full.values()]
     if len(allwd) > 2:
-        m = statistics.mean(allwd)
-        sd = statistics.stdev(allwd)
-        vif = 1 + (m / sd) ** 2 if sd else float("inf")
-        pos = sum(1 for w in allwd if w > 0)
-        print(f"\n  word delta: mean {m:+.1f}, sd {sd:.1f}, "
-              f"{pos}/{len(allwd)} strictly positive")
-        print(f"  intercept VIF = {vif:.2f} "
-              f"(SE inflated {vif ** 0.5:.2f}x vs the raw column)")
-        if vif > 2:
-            print("  -> ADJUSTED COLUMN NOT IDENTIFIED. A zero word delta is "
-                  f"{abs(m)/sd:.1f} sd outside")
-            print("     the sample centre, so that column extrapolates past "
-                  "the data and can")
-            print("     flip signs on noise. Do not quote it. Report the raw "
-                  "column and, if")
-            print("     length matters to the argument, report the length "
-                  "slope separately.")
-        else:
-            print("  -> adjusted column is identified and safe to quote "
-                  "alongside the raw one.")
-    print("\n  NOTE: a length effect is not automatically a confound. On this")
-    print("  rubric a longer passage has room to justify more, and earning")
-    print("  justification by adding words is a strategy a human can use too.")
+        print(f"\n  word delta: mean {statistics.mean(allwd):+.1f}, "
+              f"sd {statistics.stdev(allwd):.1f}, "
+              f"{sum(1 for w in allwd if w > 0)}/{len(allwd)} longer")
+    print("  r(words) is the correlation between how much longer a rewrite")
+    print("  got and how much its score moved. Reported because it is")
+    print("  interesting, NOT as a confound to be removed: on this rubric a")
+    print("  longer passage genuinely has room to justify more, and earning")
+    print("  justification by adding words is a strategy a member with a")
+    print("  longer slot could use too. Partialling it out would treat a real")
+    print("  route to quality as a nuisance parameter.")
     print("  * marks |t| > 2.03 (two-sided .05 at ~35 df).")
 
 
