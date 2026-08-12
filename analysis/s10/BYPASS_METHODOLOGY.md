@@ -237,6 +237,19 @@ it has set a new best within the last 3 rounds.
 
 ---
 
+## The sample, counted correctly
+
+**461 variants of 92 distinct originals.** 106 texts were attacked across the
+four searches, and 146 seed-runs were performed — because the two New
+Brunswick searches (v2 blind and v3 contrastive) re-attack **the same 40
+texts**. Adding the four per-run seed counts gives 130, which is neither the
+distinct count nor the seed-run count, and the write-up used it as the arm's
+opening figure until 2026-08-12.
+
+The repetition is not a bookkeeping detail. Half the pooled denominator is
+repeat measurement on the same New Brunswick material, which is exactly why
+the per-variant intervals must be clustered on text.
+
 ## Results — two rates, and which to quote
 
 Computed by `bypass_report.py`, which is the only place these are derived; the

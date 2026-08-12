@@ -185,6 +185,29 @@ def load():
 def main():
     rows = load()
 
+    # Distinct texts, not the sum of per-run seed counts. The two New
+    # Brunswick searches re-attack the SAME 40 texts, so adding the four runs
+    # gives 130 where the distinct figure is 106 attacked and 92 with a
+    # verdict. That repetition is also what drives the design effect below.
+    import functools
+    st = {}
+    for run, f in (("NB v3 contrastive", "bypass_v3.json"),
+                   ("GO all-31 uniform", "gov_bypass_all.json"),
+                   ("GO Opus-selected", "gov_bypass_v3.json")):
+        fp = os.path.join(HERE, f)
+        if os.path.exists(fp):
+            st[run] = set(json.load(open(fp))["state"])
+    st["NB v2 blind"] = set(r["seg_id"] for r in rows
+                            if r["run"] == "NB v2 blind")
+    attacked = functools.reduce(lambda a, b: a | b, st.values(), set())
+    print(f"SAMPLE: {len(rows)} variants of {len(set(r['seg_id'] for r in rows))}"
+          f" distinct originals with a verdict; {len(attacked)} attacked;"
+          f" {sum(len(v) for v in st.values())} seed-runs.")
+    nb = st.get("NB v2 blind", set()) & st.get("NB v3 contrastive", set())
+    if nb:
+        print(f"The two New Brunswick searches re-attack the same "
+              f"{len(nb)} texts.\n")
+
     print("PER-RUN\n")
     print(f"{'run':<20s} {'seeds':>6s} {'var':>5s} {'AI':>4s} {'Mix':>4s} "
           f"{'Hum':>4s} {'strict':>7s}")

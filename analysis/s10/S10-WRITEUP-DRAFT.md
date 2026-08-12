@@ -497,8 +497,11 @@ change a reader's confidence:
 
 **Bypass study.** Prevalence counts machine text a detector can see. If a
 member can defeat the detector cheaply, 12.4% is a floor and detection-based
-prevalence is a dead end. Four search runs across two chambers, **461
-rewritten variants of 130 flagged originals**, each variant scored by Pangram.
+prevalence is a dead end. Four search runs across two chambers, **461 rewritten
+variants of 92 distinct originals** — 106 were attacked, and the two New
+Brunswick searches re-attack the same 40 texts — each variant scored by
+Pangram. That repetition is not incidental: it is why the per-variant
+intervals below have to be clustered on text.
 Selection differs between runs and the differences matter; the filter stack for
 each is set out in `BYPASS_METHODOLOGY.md` and summarised in Appendix C.
 
