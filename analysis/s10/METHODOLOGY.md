@@ -1350,15 +1350,37 @@ ratio's own denominator, dragging the control median to −0.45 against ~0 for a
 symmetric pool. The old procedure returned **+0.45 on random word lists with no
 special property**, so roughly half the former estimate was pedestal.
 
-**Where the effect lives, and where it does not.** It is concentrated rather
-than broad: the 155 style words the base model does emit average just +0.05,
-while the 57 it does not average +1.45. The concentration is real and not a
-small-count artifact — style words are instruct-only 57 times against
-base-only 20, where frequency-matched controls sit at 38.7 against 36.6, a
-3.7 sd skew. But those 57 words carry only **1.7%** of the style list's token
-mass in 2025–26 Hansard, and TEST B finds the alignment score does **not**
-predict which words actually rose there. The alignment finding is about the
-*word list*; it does not carry the Hansard measurement.
+**The generation corpus is too small to measure most of the list, and that
+inflates the estimate a second time.** Only ~90k words per model were generated
+(800 prompts x 45 words, continued 180 tokens; `rlhf_pref_generate.py`), so a
+word occurring once per 100k words appears about twice. 146 of the 212 style
+words sit at base count <= 4. Stratifying by how well each word is actually
+measured:
+
+| base count | words | excess | share of 2025-26 Hansard token mass |
+|---|---|---|---|
+| 0 (unmeasurable) | 57 | +1.49 | 1.7% |
+| 1-4 | 89 | -0.06 | 5.8% |
+| 5-19 | 35 | +0.16 | 7.6% |
+| **20+ (well measured)** | **31** | **+0.21** | **84.9%** |
+
+So the pooled +0.42 is itself carried by words the run cannot measure. **On the
+words that carry 85% of the instrument's Hansard mass the excess is +0.21** —
+real, and about a quarter of the originally reported +0.88.
+
+The concentration in unmeasured words is not purely a pseudocount artifact:
+style words are instruct-only 57 times against base-only 20, where
+frequency-matched controls sit at 38.7 against 36.6, a 3.7 sd skew. But the
+*magnitude* attached to those words is not estimable at this corpus size.
+
+**Quote +0.21 for any claim about the words the instrument actually uses.**
+Reaching a base count of 20 for the Hansard-relevant style words needs roughly
+2M words per model, about 20x the current run; that regeneration would also
+recover llama3, whose instruct generations were never produced, leaving the
+pooled figure resting on two families rather than the three the design called
+for. Note also that TEST B finds the alignment score does not predict which
+words rose in Hansard, so the alignment finding is about the composition of the
+*word list*, not about what drives the Hansard measurement.
 
 **The test that fails — it does not predict Hansard.** The same score, asked
 whether it predicts *which words rose*, does not survive frequency
