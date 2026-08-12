@@ -634,22 +634,37 @@ pooled — changes no conclusion here.
 
 **Evasion does not cost deliberative quality.** Two paired arms, 63
 within-text pairs, blinded and interleaved, graded on the same v2b DQI rubric:
-stage 3 is 38 New Brunswick pairs, stage 4 is 25 Government Orders pairs. Every
-dimension is null on both, adjusted for length.[^r49b]
+stage 3 is 38 New Brunswick pairs, stage 4 is 25 Government Orders pairs.
+Within-text pairing holds content, speaker and occasion fixed by construction,
+so these are the raw paired differences — the design's own estimand, needing
+no covariate. **Every dimension is null on both.**[^r49b]
 
 | dimension | stage 3 (n=38) | stage 4 (n=25) |
 |---|---|---|
-| justification | +0.05 (t +0.6) | −0.17 (t −0.8) |
-| common_good | −0.05 (t −0.8) | −0.05 (t −0.2) |
-| respect_groups | −0.08 (t −1.8) | +0.04 (t +0.9) |
-| respect_demands | −0.14 (t −1.0) | +0.08 (t +1.0) |
-| respect_counterargs | +0.24 (t +1.3) | +0.05 (t +0.5) |
-| constructive | −0.00 (t −0.0) | −0.01 (t −0.1) |
-| evidence | +0.02 (t +0.4) | −0.08 (t −0.2) |
+| justification | +0.05 (t +0.6) | +0.16 (t +1.7) |
+| common_good | −0.05 (t −0.8) | 0.00 (t 0.0) |
+| respect_groups | −0.08 (t −1.8) | +0.04 (t +1.0) |
+| respect_demands | −0.08 (t −0.6) | 0.00 (t 0.0) |
+| respect_counterargs | +0.33 (t +1.8) | +0.12 (t +1.0) |
+| constructive | 0.00 (t 0.0) | −0.12 (t −1.8) |
+| evidence | +0.03 (t +0.4) | +0.08 (t +0.7) |
 
-Stage 4 also settles a residual worry from stage 3: justification rises +0.16
-raw (t +1.7) and goes *negative* once word count enters, so the apparent gain
-was length. Humanized variants run ~30 words longer at the median.
+**Length moves with justification, and that is not a confound.** Stage 4's
+rewrites run about 29 words longer than their originals (stage 3's do not —
+mean −1.3), and justification is the dimension that drifts up with them. We do
+not adjust it away, because on this rubric a longer passage genuinely has room
+to justify more, and a member with a longer slot could earn the same points the
+same way. Adding justification by adding words is a real strategy, not an
+artifact of one. It is worth knowing that the two travel together; it is not a
+reason to discount the (null) result.
+
+We also do not report a length-adjusted column for stage 4. Every stage-4
+rewrite got longer — 24 of 25 deltas are strictly positive — so the adjusted
+coefficient is an intercept at a word delta of zero, extrapolated 2.1 standard
+deviations outside the data on the strength of a single observation. It
+inflates the standard error 2.3× and can flip signs on noise alone. Stage 3 has
+no such problem and its adjusted values agree with its raw ones to within
+0.002.
 
 **What this means for the prevalence number.** Evasion is real, clears the
 detector on about one flagged speech in four under directed search, and is free
@@ -671,10 +686,14 @@ beat" is the whole of that apparatus.
 
 [^r49b]: `cd quality_expansion && python analyze_stage3.py [RUNDIR]` and
     `python analyze_stage3.py --key4 [RUNDIR]`; values cached in
-    `results_stage34.json`. Quoted column is the intercept with
-    (humanized − original) word count as covariate. `-1` (inapplicable) pairs
-    are excluded, which is why the two sentinel dimensions have smaller n
-    (12 and 12 in stage 3; 18 and 16 in stage 4).
+    `results_stage34.json`. Quoted column is the **raw paired difference**,
+    humanized − original, within text. The script also prints a length-adjusted
+    column; use it for stage 3 only, where the word-delta distribution is
+    centred near zero (mean −1.3, VIF 1.00) and it agrees with the raw column
+    to within 0.002. It is not identified in stage 4, where 24 of 25 deltas are
+    strictly positive. `-1` (inapplicable) pairs are excluded, which is why the
+    two sentinel dimensions have smaller n (12 and 12 in stage 3; 18 and 16 in
+    stage 4).
 
 ---
 

@@ -22,10 +22,22 @@ variant. Blinded, interleaved, graded on the v2b DQI rubric. Within-text
 pairing means content, speaker and occasion are held fixed by construction --
 the only thing varying is the rewrite.
 
-THE LENGTH CONFOUND IS REAL AND CONTROLLED. Humanized versions run ~30 words
-longer at the median (200 vs 168). More room can lift justification and
-evidence by itself, so the paired model reports the raw difference AND the
-difference with word count as a covariate. Quote the adjusted one.
+LENGTH: REPORTED, NOT PARTIALLED OUT. Humanized versions run longer in stage 4
+(mean +29 words; stage 3's are flat at -1.3). More room can lift justification
+by itself -- but that is not automatically a confound. On this rubric a longer
+passage genuinely has room to justify more, and earning justification by adding
+words is a strategy a human with a longer slot could use too. So the raw paired
+difference is the quoted quantity, and length is reported as a co-travelling
+fact rather than adjusted away.
+
+The adjusted column is still printed, because it is safe and informative where
+a zero word delta is inside the data (stage 3: VIF 1.00, agrees with raw to
+0.002). It is NOT safe in stage 4, where 24 of 25 deltas are strictly positive
+and the intercept extrapolates 2.1 sd past the sample, inflating its SE 2.3x
+and flipping signs on noise. The script now computes that diagnostic and says
+which case it is in rather than leaving it to the reader. An earlier version of
+this file instructed "Quote the adjusted one" unconditionally; that was wrong
+for stage 4 and the write-up briefly repeated the error.
 
 -1 codes INAPPLICABLE (no other demand / no counterargument on the table) and
 is excluded from means, matching the published v2 convention.
@@ -163,9 +175,40 @@ def main():
               f"{statistics.mean(h for _,h in raw):>10.2f} {m:>+7.2f} "
               f"{t:>+7.1f}{'*' if abs(t)>2.03 else ' '} {adj:>11s}  n={len(raw)}")
 
-    print("\n  diff = humanized - original, paired within text.")
-    print("  '+words adj' is the intercept with (humanized-original) word count")
-    print("  as covariate: the effect at equal length. Quote that column.")
+    print("\n  diff = humanized - original, paired within text. QUOTE THIS.")
+    print("  '+words adj' is the intercept with (humanized-original) word")
+    print("  count as covariate -- the modelled effect at ZERO word delta.")
+    print("  It is only meaningful where a zero delta is actually in the data.")
+
+    # Whether the adjusted column can be quoted at all is a property of the
+    # sample, so decide it here rather than leaving it to the reader.
+    allwd = []
+    for s, v in full.items():
+        allwd.append(v["humanized"][1]["n_words"] - v["original"][1]["n_words"])
+    if len(allwd) > 2:
+        m = statistics.mean(allwd)
+        sd = statistics.stdev(allwd)
+        vif = 1 + (m / sd) ** 2 if sd else float("inf")
+        pos = sum(1 for w in allwd if w > 0)
+        print(f"\n  word delta: mean {m:+.1f}, sd {sd:.1f}, "
+              f"{pos}/{len(allwd)} strictly positive")
+        print(f"  intercept VIF = {vif:.2f} "
+              f"(SE inflated {vif ** 0.5:.2f}x vs the raw column)")
+        if vif > 2:
+            print("  -> ADJUSTED COLUMN NOT IDENTIFIED. A zero word delta is "
+                  f"{abs(m)/sd:.1f} sd outside")
+            print("     the sample centre, so that column extrapolates past "
+                  "the data and can")
+            print("     flip signs on noise. Do not quote it. Report the raw "
+                  "column and, if")
+            print("     length matters to the argument, report the length "
+                  "slope separately.")
+        else:
+            print("  -> adjusted column is identified and safe to quote "
+                  "alongside the raw one.")
+    print("\n  NOTE: a length effect is not automatically a confound. On this")
+    print("  rubric a longer passage has room to justify more, and earning")
+    print("  justification by adding words is a strategy a human can use too.")
     print("  * marks |t| > 2.03 (two-sided .05 at ~35 df).")
 
 
