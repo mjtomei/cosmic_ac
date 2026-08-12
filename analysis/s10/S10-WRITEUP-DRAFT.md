@@ -394,20 +394,30 @@ OLMo-2 ladder, same prompts across the post-training stages:
 | DPO | **+0.86** † |
 | RLVR | +0.37 † |
 
-Pooled alignment effect **+0.88** †.[^r47] The shift is largest at the
-preference stage, which is what makes §4.5 more than a coincidence of
-direction: the thing RLHF selects for is something humans were already
-drifting toward.
+Pooled alignment effect **+0.42** [6.7 sd above the estimator's own null].[^r47]
+The shift is largest at the preference stage, which is what makes §4.5 more
+than a coincidence of direction: the thing RLHF selects for is something humans
+were already drifting toward.
 
 [^r47]: Ladder stages: `python olmo_ladder.py` (end-to-end base→instruct
-    **+1.2420**). The pooled **+0.88** is a *separate* experiment on two other
+    **+1.2420**). The pooled **+0.42** is a *separate* experiment on two other
     model families — `python rlhf_pref_analyze.py`, which prints
-    `EXCESS +0.8797, p < 0.001` (Qwen3-8B and Mistral-7B, 668 and 788 prompt
-    pairs, Kobak style words against frequency-matched controls). It is not a
-    pooling of the three OLMo stages, and it is not produced by
-    `align_ratio.py report`, which prints the Hansard-drift arm instead.
-    Recorded here because looking for it in the wrong script is how it came to
-    be mistaken for an unsourced figure.
+    `EXCESS +0.4214, p < 0.001` (Qwen3-8B **+0.47** [+0.34, +0.59], Mistral-7B
+    **+0.16** [+0.05, +0.27]; 668 and 788 prompt pairs, Kobak style words
+    against frequency-matched controls). It is not a pooling of the three OLMo
+    stages, and it is not produced by `align_ratio.py report`, which prints the
+    Hansard-drift arm instead. Recorded here because looking for it in the
+    wrong script is how it came to be mistaken for an unsourced figure.
+
+    **This figure was +0.88 until 2026-08-12 and the old value should not be
+    quoted.** The control pool was asymmetric: candidates were drawn only from
+    words the base model had emitted, so a control absent from base output was
+    impossible, while 57 of the 212 style words (27%) are absent from base
+    output and carry mean preference +1.45. Controls were also bucketed on the
+    ratio's own denominator, dragging the control median to −0.45 where a
+    symmetric control sits at ~0. Fed 30 random frequency-matched word lists,
+    the old procedure returned **+0.45** — a pedestal for lists with no special
+    property. The corrected estimator returns +0.003 on the same nulls.
 
 ### 4.8 Permeation: detector-independent and small but positive
 
@@ -1000,7 +1010,7 @@ that is recorded.
    which framings they reach for is unmeasured, and the Kobak instrument cannot
    answer it — its style/content split is PubMed's content, not a legislature's,
    and does not transfer. The materials for a domain-native version already
-   exist: the base-versus-instruct generation that produced §4.7's +0.88 yields
+   exist: the base-versus-instruct generation that produced §4.7's +0.42 yields
    an empirically derived list of what post-training adds *to legislative text
    specifically*. Split that list into register-like and substance-like by an
    independent rule and run both through the frozen protocol as separate arms,
@@ -1261,7 +1271,7 @@ caught.
 | `long_trend.py` | §4.5 series and its 1994 trough |
 | `arrival_premium.py`, `formation_window.py`, `decomposition_inference.py` | §4.6 |
 | `olmo_ladder.py` | §4.7 ladder stages |
-| `rlhf_pref_analyze.py` | §4.7 pooled **+0.88** (not `align_ratio.py`) |
+| `rlhf_pref_analyze.py` | §4.7 pooled **+0.42**, with null calibration (not `align_ratio.py`) |
 | `align_ratio.py` | §4.7 Hansard-drift arm |
 | `word_context_delta.py` | §4.8 in-context permeation |
 | `bypass_report.py` | §4.9 bypass, all four runs pooled |

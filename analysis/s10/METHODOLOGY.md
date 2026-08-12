@@ -1329,14 +1329,36 @@ frequency-matched controls drawn from the base model's own output:
 
 | family | excess | 95% CI | prompt pairs |
 |---|---|---|---|
-| Qwen3-8B | **+1.04** | [+1.05, +1.31] | 668 |
-| Mistral-7B | **+0.65** | [+0.67, +0.99] | 788 |
+| Qwen3-8B | **+0.47** | [+0.34, +0.59] | 668 |
+| Mistral-7B | **+0.16** | [+0.05, +0.27] | 788 |
 
-Pooled excess **+0.880, p < 0.001**, and it is broad rather than a few words:
-**70.8% of style words are instruct-preferred against 28.2% of all other
-words.** So the vocabulary Kobak derived from PubMed abstracts — with no
-reference to alignment at all — is largely the vocabulary that post-training
-adds. "AI register" is more precisely **assistant register**.
+Pooled excess **+0.421, p < 0.001**, sitting **6.7 sd** above what the same
+estimator returns on 30 random frequency-matched word lists (+0.003). So the
+vocabulary Kobak derived from PubMed abstracts — with no reference to alignment
+at all — is enriched for vocabulary that post-training adds. "AI register" is
+more precisely **assistant register**.
+
+**Corrected 2026-08-12; the previous values must not be quoted.** This table
+read +1.04 [+1.05, +1.31] and +0.65 [+0.67, +0.99] with a pooled +0.880. Two
+faults. The intervals were impossible — in both rows the point estimate fell
+outside its own CI — and came from a run that cannot be reconstructed. And the
+control pool was asymmetric: candidates were drawn only from words the base
+model had emitted, making a control absent from base output structurally
+impossible, while 57 of the 212 style words (27%) are absent from base output
+and carry mean preference +1.45; controls were additionally bucketed on the
+ratio's own denominator, dragging the control median to −0.45 against ~0 for a
+symmetric pool. The old procedure returned **+0.45 on random word lists with no
+special property**, so roughly half the former estimate was pedestal.
+
+**Where the effect lives, and where it does not.** It is concentrated rather
+than broad: the 155 style words the base model does emit average just +0.05,
+while the 57 it does not average +1.45. The concentration is real and not a
+small-count artifact — style words are instruct-only 57 times against
+base-only 20, where frequency-matched controls sit at 38.7 against 36.6, a
+3.7 sd skew. But those 57 words carry only **1.7%** of the style list's token
+mass in 2025–26 Hansard, and TEST B finds the alignment score does **not**
+predict which words actually rose there. The alignment finding is about the
+*word list*; it does not carry the Hansard measurement.
 
 **The test that fails — it does not predict Hansard.** The same score, asked
 whether it predicts *which words rose*, does not survive frequency
