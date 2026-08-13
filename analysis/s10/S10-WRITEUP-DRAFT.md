@@ -1324,11 +1324,23 @@ smallest of them.
 calibration, genre and bypass-outcome numbers.
 
 *A frontier-model subscription* (Claude Code) for everything that needed a
-frontier model rather than a detector: the corpus-wide Opus screens and their
-reasoning-effort A/B, the synthetic in-domain sensitivity corpus, every DQI
-grading pass across the four quality stages, the rewrite-and-score loops of the
-bypass search, and the analysis, verification and adversarial review of the
-study itself.
+frontier model rather than a detector. Which model did what matters here and is
+not interchangeable:
+
+| arm | model | effort |
+|---|---|---|
+| Corpus-wide screen (§4.4), effort A/B | Claude Opus | low, and max in the A/B |
+| Bypass search: scoring / rewriting / hypotheses (§4.9) | Claude Opus | low / medium / high |
+| DQI grading, all four stages (§4.9) | **Claude Fable 5** | default |
+| Synthetic in-domain sensitivity corpus (§3.1) | Claude Opus | default |
+| Analysis, verification, adversarial review | Claude Opus | varies |
+
+The screen/grader split is load-bearing rather than incidental. §4.9 reports
+that the screen's `ai_guess` and the grading judge's independent `ai_guess`
+correlate at r = +0.758, and treats that as a leakage problem. It is one — but
+it is a correlation between **two different models**, which makes it a fact
+about the shared style signal rather than an artifact of one model agreeing
+with itself.
 
 *An NVIDIA DGX Spark (GB10)* for the open-weight work: the six-detector survey
 that established the free instruments do not work on this register, the OLMo-2

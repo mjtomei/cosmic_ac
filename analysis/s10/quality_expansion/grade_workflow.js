@@ -1,3 +1,10 @@
+// MODEL PROVENANCE. This workflow sets no `model` on its agent() calls, so
+// grading ran on whatever the host session's default was. That is a
+// reproducibility hole: stages 3 and 4 were graded by claude-fable-5, and
+// the only record of it is the string in the agent transcripts on the
+// machine that ran them. Recovered 2026-08-12 and written into Appendix C.
+// Set `model` explicitly on any future grading run.
+
 export const meta = {
   name: 's10-quality-genre-controlled',
   description: 'Genre-controlled DQI grading of 840 blinded Canadian Hansard segments, plus a blinded AI screen on the same text',

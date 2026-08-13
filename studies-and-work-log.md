@@ -174,7 +174,8 @@ selection `BYPASS_METHODOLOGY.md`, and one script per claim
 `rlhf_pref_analyze.py`, `word_context_delta.py`, `long_trend.py`,
 `quality_expansion/`). 4,258 Pangram 4 verdicts. **Run on three resources: Pangram, a Claude Code subscription, and the DGX Spark** —
 the frontier-model subscription carried the Opus screens, the effort A/B, all DQI grading,
-the bypass rewrite loops and the study's own analysis and review;
+the bypass rewrite loops and the study's own analysis and review — **and which model did what is
+now recorded in Appendix C**: Opus for the screens, bypass search and synthetic Se corpus, **Fable 5 for all DQI grading**. Stages 3-4 set no model in `grade_workflow.js` and inherited the session default; recovered from arch-home transcripts 2026-08-12. The screen/grader split makes §4.9's r = +0.758 leakage figure a correlation between *two different models*;
 the box carried the detector survey, the synthetic Se corpus, the OLMo ladder,
 the base/instruct generation, permeation scoring, the band screens and the
 bypass search. (Cost accounting removed 2026-08-12 after three passes got it
