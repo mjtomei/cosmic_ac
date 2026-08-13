@@ -1373,6 +1373,38 @@ style words are instruct-only 57 times against base-only 20, where
 frequency-matched controls sit at 38.7 against 36.6, a 3.7 sd skew. But the
 *magnitude* attached to those words is not estimable at this corpus size.
 
+**The style list is partly out-of-domain, and the generation is narrower
+than the speech it imitates.** Both, measured at matched volume by
+`style_coverage.py` (~770k words, two families at checkpoint 1600):
+
+| corpus | style words present | at >= 20 occurrences |
+|---|---|---|
+| generated base | 224 / 407 (55.0%) | 67 (16.5%) |
+| generated instruct | 279 / 407 (68.6%) | 98 (24.1%) |
+| real Hansard, pre-2023 | 300 / 407 (73.7%) | 85 (20.9%) |
+| real Hansard, 2025-26 | 296 / 407 (72.7%) | 92 (22.6%) |
+
+**111 of the 407 words never appear in human legislative English either**, so
+the in-domain denominator is ~296 and coverage quoted against 407 understates
+every corpus alike. Kobak's list came from PubMed abstracts; a quarter of it is
+biomedical vocabulary legislatures do not use.
+
+But base generation covers only 224 of Hansard's 296 -- **76% at equal
+volume**, and 73% of the depth -- so part of the shortfall is real legislative
+usage the base models simply do not reproduce, not out-of-domain vocabulary.
+
+And instruct coverage is markedly higher than base (279 against 224), nearly
+matching Hansard on presence and exceeding it on depth (98 against 92). That is
+§4.7's claim appearing as *coverage* rather than as a rate, and it is
+independent corroboration: it needs no control matching, no excess computation
+and no pseudocount.
+
+**Outstanding: re-run when the scaled generation completes** (four families,
+6,400 prompts, ~6x volume). Two things to watch -- whether base coverage closes
+on Hansard as volume grows, which decides whether narrowness is a property of
+base continuation or of sample size; and whether the instruct-over-base
+coverage gap holds on llama31 and the 30B MoE.
+
 **Quote +0.21 for any claim about the words the instrument actually uses.**
 Reaching a base count of 20 for the Hansard-relevant style words needs roughly
 2M words per model, about 20x the current run; that regeneration would also
