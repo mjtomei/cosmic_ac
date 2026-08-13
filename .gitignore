@@ -79,3 +79,8 @@ analysis/*/profiling/*.pdf
 analysis/**/*.pdf
 !analysis/**/METHODOLOGY*.pdf
 !analysis/**/REVIEW*.pdf
+
+# Short-band upload CSVs: verbatim Hansard, same licence policy as the other
+# corpus text. The manifest (ids + metadata) and the verdicts (labels only)
+# are tracked, so the arm is reproducible from build_shortband.py + corpora.
+analysis/s10/pangram_shortband/
