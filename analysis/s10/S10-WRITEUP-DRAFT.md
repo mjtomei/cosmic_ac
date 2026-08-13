@@ -1317,4 +1317,17 @@ caught.
 | `BYPASS_METHODOLOGY.md` | §4.9 selection filters, per sample |
 | `PRIOR_ART.md`, `ai_policy_scan.md` | §6, §7 |
 
-Cost: $158.00 API + 8,962 dashboard credits.
+**Cost: $65.** One month of Pangram Professional, which bundles 15,000
+dashboard credits (1.5M words) and $200 of API credit. All 4,258 verdicts fall
+inside a single billing cycle, consuming ~14,400 of the 15,000 credits and
+essentially all of the included API allowance. No marginal spend beyond the
+subscription.
+
+That figure is the reproduction cost, and it is the point: the original design
+costed a study of this scope at $321 per session on the bulk API and $16,000
+for a year of one parliament. Nineteen chambers came in at the price of the
+entry-level plan.
+
+*(An earlier version of this line read "$158.00 API + 8,962 dashboard credits".
+Both numbers were consumption of an included allowance rather than money spent,
+and both were understated.)*
