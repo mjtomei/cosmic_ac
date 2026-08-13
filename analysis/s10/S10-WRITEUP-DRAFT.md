@@ -1317,29 +1317,14 @@ caught.
 | `BYPASS_METHODOLOGY.md` | §4.9 selection filters, per sample |
 | `PRIOR_ART.md`, `ai_policy_scan.md` | §6, §7 |
 
-**What it takes to reproduce this.** Two things, and the second is the larger
-of them.
-
-*Detector.* One month of Pangram Professional, the entry-level paid plan. All
-4,258 verdicts fall inside a single billing cycle with no marginal spend, which
-is the cheap half and the half most readers would expect to dominate.
-
-*Local compute.* A workstation-class GPU box — here an NVIDIA DGX Spark
-(GB10) — carrying everything the commercial detector did not: the six-detector
+**What this was run on.** Pangram, a commercial detector, for all 4,258
+verdicts. An NVIDIA DGX Spark (GB10) for everything else: the six-detector
 survey that established the free instruments do not work on this register, the
 synthetic in-domain sensitivity corpus, the OLMo-2 post-training ladder, the
 paired base-versus-instruct generation behind §4.7, the in-context permeation
 scoring in §4.8, the Opus and open-model band screens, and the bypass search.
-That is a few hundred gigabytes of model weights and a substantial number of
-GPU-hours, and it is not substitutable by spending more with the detector
-vendor.
 
-So the honest reproduction cost is a cheap subscription **plus** hardware most
-readers will not have idle. Anyone with the machine can repeat the prevalence
-arm for the price of one month's plan; the register, ladder and permeation arms
-need the box.
-
-*(An earlier version of this line gave an API dollar figure and a credit count
-as though they were money spent. Both were consumption of an allowance the
-subscription already included, both were understated, and both ignored the
-local compute entirely.)*
+The local half is the larger one and is not substitutable by spending more with
+the detector vendor. Anyone with the machine can repeat the prevalence arm
+against a Pangram subscription; the register, ladder and permeation arms need
+the box.
