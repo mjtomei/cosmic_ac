@@ -172,7 +172,9 @@ selection `BYPASS_METHODOLOGY.md`, and one script per claim
 (`prevalence_report.py`, `bypass_report.py`, `arrival_premium.py`,
 `formation_window.py`, `decomposition_inference.py`, `olmo_ladder.py`,
 `rlhf_pref_analyze.py`, `word_context_delta.py`, `long_trend.py`,
-`quality_expansion/`). 4,258 Pangram 4 verdicts. **Run on Pangram plus the DGX Spark** —
+`quality_expansion/`). 4,258 Pangram 4 verdicts. **Run on three resources: Pangram, a Claude Code subscription, and the DGX Spark** —
+the frontier-model subscription carried the Opus screens, the effort A/B, all DQI grading,
+the bypass rewrite loops and the study's own analysis and review;
 the box carried the detector survey, the synthetic Se corpus, the OLMo ladder,
 the base/instruct generation, permeation scoring, the band screens and the
 bypass search. (Cost accounting removed 2026-08-12 after three passes got it

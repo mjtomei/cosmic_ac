@@ -1317,14 +1317,25 @@ caught.
 | `BYPASS_METHODOLOGY.md` | §4.9 selection filters, per sample |
 | `PRIOR_ART.md`, `ai_policy_scan.md` | §6, §7 |
 
-**What this was run on.** Pangram, a commercial detector, for all 4,258
-verdicts. An NVIDIA DGX Spark (GB10) for everything else: the six-detector
-survey that established the free instruments do not work on this register, the
-synthetic in-domain sensitivity corpus, the OLMo-2 post-training ladder, the
-paired base-versus-instruct generation behind §4.7, the in-context permeation
-scoring in §4.8, the Opus and open-model band screens, and the bypass search.
+**What this was run on.** Three resources, and the commercial detector is the
+smallest of them.
 
-The local half is the larger one and is not substitutable by spending more with
-the detector vendor. Anyone with the machine can repeat the prevalence arm
-against a Pangram subscription; the register, ladder and permeation arms need
-the box.
+*Pangram*, a commercial detector, for all 4,258 verdicts — the prevalence,
+calibration, genre and bypass-outcome numbers.
+
+*A frontier-model subscription* (Claude Code) for everything that needed a
+frontier model rather than a detector: the corpus-wide Opus screens and their
+reasoning-effort A/B, the synthetic in-domain sensitivity corpus, every DQI
+grading pass across the four quality stages, the rewrite-and-score loops of the
+bypass search, and the analysis, verification and adversarial review of the
+study itself.
+
+*An NVIDIA DGX Spark (GB10)* for the open-weight work: the six-detector survey
+that established the free instruments do not work on this register, the OLMo-2
+post-training ladder, the paired base-versus-instruct generation behind §4.7,
+the in-context permeation scoring in §4.8, and the open-model band screens.
+
+Only the first is metered per document. The other two are the larger share of
+the work and are not substitutable by spending more with the detector vendor.
+Anyone holding all three can repeat the study; a Pangram subscription alone
+reproduces the prevalence arm and nothing else.
