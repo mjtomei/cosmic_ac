@@ -46,6 +46,14 @@ __pycache__/
 analysis/s10/us/
 analysis/s10/provinces/
 analysis/s10/permeation/
+# ...but the download and extraction SCRIPTS in those directories are our own
+# work and contain no source text. They are the only path from a recorded
+# seg_id back to the text it names, so without them the verdict files are
+# unreproducible for 17 of the 21 chambers. Un-ignore them explicitly.
+!analysis/s10/us/
+!analysis/s10/us/*.py
+!analysis/s10/provinces/
+!analysis/s10/provinces/*.py
 analysis/s10/*/xml_*/
 analysis/s10/*/zips/
 

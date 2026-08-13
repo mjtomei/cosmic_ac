@@ -14399,124 +14399,124 @@
   "n_words": 112,
   "band": "short"
  },
- "sbus-p000": {
-  "chamber": "US-Senate",
+ "sbushop000": {
+  "chamber": "US-House",
   "era": "prev",
-  "seg_id": "US2025-09-29-S6814-2#t2w2",
-  "date": "2025-09-29",
-  "speaker": "Mr. PETERS",
-  "n_words": 84,
-  "band": "short"
- },
- "sbus-p001": {
-  "chamber": "US-Senate",
-  "era": "prev",
-  "seg_id": "US2025-01-16-S198#t37w2",
-  "date": "2025-01-16",
-  "speaker": "Mr. MERKLEY",
-  "n_words": 60,
-  "band": "short"
- },
- "sbus-p002": {
-  "chamber": "US-Senate",
-  "era": "prev",
-  "seg_id": "US2026-04-13-S1711#t0w2",
-  "date": "2026-04-13",
-  "speaker": "Mr. KING",
+  "seg_id": "US2026-03-04-H2395#t40w0",
+  "date": "2026-03-04",
+  "speaker": "Mr. MAST",
   "n_words": 67,
   "band": "short"
  },
- "sbus-p003": {
-  "chamber": "US-Senate",
+ "sbushop001": {
+  "chamber": "US-House",
   "era": "prev",
-  "seg_id": "US2025-04-28-S2593-2#t0w4",
-  "date": "2025-04-28",
-  "speaker": "Mr. CORNYN",
-  "n_words": 70,
+  "seg_id": "US2025-12-15-H5857#t11w1",
+  "date": "2025-12-15",
+  "speaker": "Mr. KILEY of California",
+  "n_words": 82,
   "band": "short"
  },
- "sbus-p004": {
-  "chamber": "US-Senate",
+ "sbushop002": {
+  "chamber": "US-House",
   "era": "prev",
-  "seg_id": "US2026-02-11-S574-5#t0w1",
-  "date": "2026-02-11",
-  "speaker": "Mr. TUBERVILLE",
-  "n_words": 77,
+  "seg_id": "US2026-07-22-H5029-6#t52w128",
+  "date": "2026-07-22",
+  "speaker": "Mr. ROGERS of Alabama",
+  "n_words": 60,
   "band": "short"
  },
- "sbus-p005": {
-  "chamber": "US-Senate",
+ "sbushop003": {
+  "chamber": "US-House",
   "era": "prev",
-  "seg_id": "US2025-11-03-S7870#t0w0",
-  "date": "2025-11-03",
-  "speaker": "Mr. THUNE",
-  "n_words": 84,
+  "seg_id": "US2025-05-21-H2235-2#t81w0",
+  "date": "2025-05-21",
+  "speaker": "Mr. SMITH of Missouri",
+  "n_words": 50,
   "band": "short"
  },
- "sbus-p006": {
-  "chamber": "US-Senate",
+ "sbushop004": {
+  "chamber": "US-House",
   "era": "prev",
-  "seg_id": "US2025-02-12-S932-4#t0w0",
-  "date": "2025-02-12",
-  "speaker": "Mr. THUNE",
-  "n_words": 112,
+  "seg_id": "US2026-04-29-H3169#t43w236",
+  "date": "2026-04-29",
+  "speaker": "Mr. THOMPSON of Pennsylvania",
+  "n_words": 94,
   "band": "short"
  },
- "sbus-p007": {
-  "chamber": "US-Senate",
+ "sbushop005": {
+  "chamber": "US-House",
   "era": "prev",
-  "seg_id": "US2026-07-30-S4385#t0w8",
-  "date": "2026-07-30",
-  "speaker": "Mr. DURBIN",
-  "n_words": 111,
-  "band": "short"
- },
- "sbus-p008": {
-  "chamber": "US-Senate",
-  "era": "prev",
-  "seg_id": "US2025-01-24-S374-5#t0w0",
-  "date": "2025-01-24",
-  "speaker": "Mr. THUNE",
-  "n_words": 80,
-  "band": "short"
- },
- "sbus-p009": {
-  "chamber": "US-Senate",
-  "era": "prev",
-  "seg_id": "US2025-02-13-S964#t1w2",
-  "date": "2025-02-13",
-  "speaker": "Mr. MARKEY",
-  "n_words": 106,
-  "band": "short"
- },
- "sbus-p010": {
-  "chamber": "US-Senate",
-  "era": "prev",
-  "seg_id": "US2026-02-02-S431-6#t0w2",
-  "date": "2026-02-02",
-  "speaker": "Mr. GRASSLEY",
-  "n_words": 102,
-  "band": "short"
- },
- "sbus-p011": {
-  "chamber": "US-Senate",
-  "era": "prev",
-  "seg_id": "US2025-01-29-S451#t0w3",
-  "date": "2025-01-29",
-  "speaker": "Mr. DURBIN",
-  "n_words": 101,
-  "band": "short"
- },
- "sbus-p012": {
-  "chamber": "US-Senate",
-  "era": "prev",
-  "seg_id": "US2025-06-30-S4037-6#t70w0",
-  "date": "2025-06-30",
-  "speaker": "Mr. BARRASSO",
+  "seg_id": "US2025-12-11-H5768-3#t49w1",
+  "date": "2025-12-11",
+  "speaker": "Mr. BEAN of Florida",
   "n_words": 55,
   "band": "short"
  },
- "sbus-p013": {
+ "sbushop006": {
+  "chamber": "US-House",
+  "era": "prev",
+  "seg_id": "US2025-06-10-H2581-4#t10w0",
+  "date": "2025-06-10",
+  "speaker": "Ms. SIMON",
+  "n_words": 76,
+  "band": "short"
+ },
+ "sbushop007": {
+  "chamber": "US-House",
+  "era": "prev",
+  "seg_id": "US2026-06-29-H4280-2#t11w1",
+  "date": "2026-06-29",
+  "speaker": "Mrs. TRAHAN",
+  "n_words": 87,
+  "band": "short"
+ },
+ "sbushop008": {
+  "chamber": "US-House",
+  "era": "prev",
+  "seg_id": "US2025-09-16-H4321#t18w1",
+  "date": "2025-09-16",
+  "speaker": "Mr. McGOVERN",
+  "n_words": 51,
+  "band": "short"
+ },
+ "sbushop009": {
+  "chamber": "US-House",
+  "era": "prev",
+  "seg_id": "US2026-07-20-H4654#t5w1",
+  "date": "2026-07-20",
+  "speaker": "Mr. MACKENZIE",
+  "n_words": 90,
+  "band": "short"
+ },
+ "sbushop010": {
+  "chamber": "US-House",
+  "era": "prev",
+  "seg_id": "US2025-07-14-H3220#t0w0",
+  "date": "2025-07-14",
+  "speaker": "Mr. LATTA",
+  "n_words": 52,
+  "band": "short"
+ },
+ "sbushop011": {
+  "chamber": "US-House",
+  "era": "prev",
+  "seg_id": "US2026-01-21-H1131-5#t24w0",
+  "date": "2026-01-21",
+  "speaker": "Ms. BONAMICI",
+  "n_words": 115,
+  "band": "short"
+ },
+ "sbushop012": {
+  "chamber": "US-House",
+  "era": "prev",
+  "seg_id": "US2026-06-23-H4151-3#t25w0",
+  "date": "2026-06-23",
+  "speaker": "Ms. De La CRUZ",
+  "n_words": 84,
+  "band": "short"
+ },
+ "sbushop013": {
   "chamber": "US-House",
   "era": "prev",
   "seg_id": "US2026-04-30-H3299-3#t37w0",
@@ -14525,7 +14525,7 @@
   "n_words": 72,
   "band": "short"
  },
- "sbus-p014": {
+ "sbushop014": {
   "chamber": "US-House",
   "era": "prev",
   "seg_id": "US2026-07-14-H4441-2#t0w0",
@@ -14534,7 +14534,7 @@
   "n_words": 57,
   "band": "short"
  },
- "sbus-p015": {
+ "sbushop015": {
   "chamber": "US-House",
   "era": "prev",
   "seg_id": "US2025-03-25-H1232-3#t25w0",
@@ -14543,7 +14543,7 @@
   "n_words": 110,
   "band": "short"
  },
- "sbus-p016": {
+ "sbushop016": {
   "chamber": "US-House",
   "era": "prev",
   "seg_id": "US2026-06-03-H3805#t18w1",
@@ -14552,7 +14552,7 @@
   "n_words": 100,
   "band": "short"
  },
- "sbus-p017": {
+ "sbushop017": {
   "chamber": "US-House",
   "era": "prev",
   "seg_id": "US2026-01-07-H112-7#t15w1",
@@ -14561,7 +14561,7 @@
   "n_words": 58,
   "band": "short"
  },
- "sbus-p018": {
+ "sbushop018": {
   "chamber": "US-House",
   "era": "prev",
   "seg_id": "US2025-09-11-H4242-4#t0w0",
@@ -14570,7 +14570,7 @@
   "n_words": 50,
   "band": "short"
  },
- "sbus-p019": {
+ "sbushop019": {
   "chamber": "US-House",
   "era": "prev",
   "seg_id": "US2026-04-29-H3137#t20w1",
@@ -14579,70 +14579,70 @@
   "n_words": 59,
   "band": "short"
  },
- "sbus-c000": {
-  "chamber": "US-Senate",
+ "sbushoc000": {
+  "chamber": "US-House",
   "era": "ctl",
-  "seg_id": "US2013-03-07-S1259#t2w2",
-  "date": "2013-03-07",
-  "speaker": "Mr. WHITEHOUSE",
-  "n_words": 70,
+  "seg_id": "US2006-07-26-H5883#t19w0",
+  "date": "2006-07-26",
+  "speaker": "Mr. KIRK",
+  "n_words": 92,
   "band": "short"
  },
- "sbus-c001": {
-  "chamber": "US-Senate",
+ "sbushoc001": {
+  "chamber": "US-House",
   "era": "ctl",
-  "seg_id": "US2021-04-21-S2102#t0w2",
-  "date": "2021-04-21",
-  "speaker": "Ms. ERNST",
-  "n_words": 76,
-  "band": "short"
- },
- "sbus-c002": {
-  "chamber": "US-Senate",
-  "era": "ctl",
-  "seg_id": "US2011-11-30-S8054-2#t22w0",
-  "date": "2011-11-30",
-  "speaker": "Mr. GRAHAM",
+  "seg_id": "US2009-07-14-H8057#t1w0",
+  "date": "2009-07-14",
+  "speaker": "Mr. BROUN of Georgia",
   "n_words": 65,
   "band": "short"
  },
- "sbus-c003": {
-  "chamber": "US-Senate",
+ "sbushoc002": {
+  "chamber": "US-House",
   "era": "ctl",
-  "seg_id": "US2018-04-18-S2227-6#t13w0",
-  "date": "2018-04-18",
-  "speaker": "Mr. SULLIVAN",
-  "n_words": 85,
+  "seg_id": "US2019-02-26-H2112-3#t3w2",
+  "date": "2019-02-26",
+  "speaker": "Mrs. TORRES of California",
+  "n_words": 55,
   "band": "short"
  },
- "sbus-c004": {
-  "chamber": "US-Senate",
+ "sbushoc003": {
+  "chamber": "US-House",
   "era": "ctl",
-  "seg_id": "US2010-04-12-S2188#t0w5",
-  "date": "2010-04-12",
-  "speaker": "Mr. KYL",
-  "n_words": 82,
+  "seg_id": "US2016-05-25-H3208#t24w0",
+  "date": "2016-05-25",
+  "speaker": "Mr. CHAFFETZ",
+  "n_words": 114,
   "band": "short"
  },
- "sbus-c005": {
-  "chamber": "US-Senate",
+ "sbushoc004": {
+  "chamber": "US-House",
   "era": "ctl",
-  "seg_id": "US2010-07-29-S6539-4#t0w0",
-  "date": "2010-07-29",
-  "speaker": "Ms. LANDRIEU",
-  "n_words": 85,
+  "seg_id": "US2019-10-30-H8645-3#t18w0",
+  "date": "2019-10-30",
+  "speaker": "Mr. LAMBORN",
+  "n_words": 88,
   "band": "short"
  },
- "sbus-c006": {
-  "chamber": "US-Senate",
+ "sbushoc005": {
+  "chamber": "US-House",
   "era": "ctl",
-  "seg_id": "US2011-05-12-S2905#t0w1",
-  "date": "2011-05-12",
-  "speaker": "Mr. BROWN of Ohio",
-  "n_words": 57,
+  "seg_id": "US2013-12-12-H8088-2#t0w0",
+  "date": "2013-12-12",
+  "speaker": "Mrs. CHRISTENSEN",
+  "n_words": 106,
   "band": "short"
  },
- "sbus-c007": {
+ "sbushoc006": {
+  "chamber": "US-House",
+  "era": "ctl",
+  "seg_id": "US2010-02-03-H546#t53w0",
+  "date": "2010-02-03",
+  "speaker": "Mr. AKIN",
+  "n_words": 59,
+  "band": "short"
+ },
+ "sbushoc007": {
   "chamber": "US-House",
   "era": "ctl",
   "seg_id": "US2009-11-04-H12302-2#t74w0",
@@ -14651,7 +14651,7 @@
   "n_words": 86,
   "band": "short"
  },
- "sbus-c008": {
+ "sbushoc008": {
   "chamber": "US-House",
   "era": "ctl",
   "seg_id": "US2015-07-14-H5137#t9w0",
@@ -14660,7 +14660,7 @@
   "n_words": 54,
   "band": "short"
  },
- "sbus-c009": {
+ "sbushoc009": {
   "chamber": "US-House",
   "era": "ctl",
   "seg_id": "US2008-03-06-H1349-2#t112w0",
@@ -14669,7 +14669,7 @@
   "n_words": 89,
   "band": "short"
  },
- "sbus-c010": {
+ "sbushoc010": {
   "chamber": "US-House",
   "era": "ctl",
   "seg_id": "US2018-09-12-H8120#t0w0",
@@ -14677,5 +14677,356 @@
   "speaker": "Mr. PAULSEN",
   "n_words": 57,
   "band": "short"
+ },
+ "sbussep000": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2025-09-29-S6814-2#t2w2",
+  "date": "2025-09-29",
+  "speaker": "Mr. PETERS",
+  "n_words": 84,
+  "band": "short"
+ },
+ "sbussep001": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2025-01-16-S198#t37w2",
+  "date": "2025-01-16",
+  "speaker": "Mr. MERKLEY",
+  "n_words": 60,
+  "band": "short"
+ },
+ "sbussep002": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2026-04-13-S1711#t0w2",
+  "date": "2026-04-13",
+  "speaker": "Mr. KING",
+  "n_words": 67,
+  "band": "short"
+ },
+ "sbussep003": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2025-04-28-S2593-2#t0w4",
+  "date": "2025-04-28",
+  "speaker": "Mr. CORNYN",
+  "n_words": 70,
+  "band": "short"
+ },
+ "sbussep004": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2026-02-11-S574-5#t0w1",
+  "date": "2026-02-11",
+  "speaker": "Mr. TUBERVILLE",
+  "n_words": 77,
+  "band": "short"
+ },
+ "sbussep005": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2025-11-03-S7870#t0w0",
+  "date": "2025-11-03",
+  "speaker": "Mr. THUNE",
+  "n_words": 84,
+  "band": "short"
+ },
+ "sbussep006": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2025-02-12-S932-4#t0w0",
+  "date": "2025-02-12",
+  "speaker": "Mr. THUNE",
+  "n_words": 112,
+  "band": "short"
+ },
+ "sbussep007": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2026-07-30-S4385#t0w8",
+  "date": "2026-07-30",
+  "speaker": "Mr. DURBIN",
+  "n_words": 111,
+  "band": "short"
+ },
+ "sbussep008": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2025-01-24-S374-5#t0w0",
+  "date": "2025-01-24",
+  "speaker": "Mr. THUNE",
+  "n_words": 80,
+  "band": "short"
+ },
+ "sbussep009": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2025-02-13-S964#t1w2",
+  "date": "2025-02-13",
+  "speaker": "Mr. MARKEY",
+  "n_words": 106,
+  "band": "short"
+ },
+ "sbussep010": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2026-02-02-S431-6#t0w2",
+  "date": "2026-02-02",
+  "speaker": "Mr. GRASSLEY",
+  "n_words": 102,
+  "band": "short"
+ },
+ "sbussep011": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2025-01-29-S451#t0w3",
+  "date": "2025-01-29",
+  "speaker": "Mr. DURBIN",
+  "n_words": 101,
+  "band": "short"
+ },
+ "sbussep012": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2025-06-30-S4037-6#t70w0",
+  "date": "2025-06-30",
+  "speaker": "Mr. BARRASSO",
+  "n_words": 55,
+  "band": "short"
+ },
+ "sbussec000": {
+  "chamber": "US-Senate",
+  "era": "ctl",
+  "seg_id": "US2013-03-07-S1259#t2w2",
+  "date": "2013-03-07",
+  "speaker": "Mr. WHITEHOUSE",
+  "n_words": 70,
+  "band": "short"
+ },
+ "sbussec001": {
+  "chamber": "US-Senate",
+  "era": "ctl",
+  "seg_id": "US2021-04-21-S2102#t0w2",
+  "date": "2021-04-21",
+  "speaker": "Ms. ERNST",
+  "n_words": 76,
+  "band": "short"
+ },
+ "sbussec002": {
+  "chamber": "US-Senate",
+  "era": "ctl",
+  "seg_id": "US2011-11-30-S8054-2#t22w0",
+  "date": "2011-11-30",
+  "speaker": "Mr. GRAHAM",
+  "n_words": 65,
+  "band": "short"
+ },
+ "sbussec003": {
+  "chamber": "US-Senate",
+  "era": "ctl",
+  "seg_id": "US2018-04-18-S2227-6#t13w0",
+  "date": "2018-04-18",
+  "speaker": "Mr. SULLIVAN",
+  "n_words": 85,
+  "band": "short"
+ },
+ "sbussec004": {
+  "chamber": "US-Senate",
+  "era": "ctl",
+  "seg_id": "US2010-04-12-S2188#t0w5",
+  "date": "2010-04-12",
+  "speaker": "Mr. KYL",
+  "n_words": 82,
+  "band": "short"
+ },
+ "sbussec005": {
+  "chamber": "US-Senate",
+  "era": "ctl",
+  "seg_id": "US2010-07-29-S6539-4#t0w0",
+  "date": "2010-07-29",
+  "speaker": "Ms. LANDRIEU",
+  "n_words": 85,
+  "band": "short"
+ },
+ "sbussec006": {
+  "chamber": "US-Senate",
+  "era": "ctl",
+  "seg_id": "US2011-05-12-S2905#t0w1",
+  "date": "2011-05-12",
+  "speaker": "Mr. BROWN of Ohio",
+  "n_words": 57,
+  "band": "short"
+ },
+ "oviep000": {
+  "chamber": "IE",
+  "era": "prev",
+  "seg_id": "IE2025-06-10#t358w0",
+  "date": "2025-06-10",
+  "speaker": "Deputy Maeve O'Connell",
+  "n_words": 415,
+  "band": "over"
+ },
+ "ovushop000": {
+  "chamber": "US-House",
+  "era": "prev",
+  "seg_id": "US2026-07-21-H4736#t47w122",
+  "date": "2026-07-21",
+  "speaker": "Mr. ROGERS of Alabama",
+  "n_words": 429,
+  "band": "over"
+ },
+ "ovushop001": {
+  "chamber": "US-House",
+  "era": "prev",
+  "seg_id": "US2026-04-29-H3169#t43w280",
+  "date": "2026-04-29",
+  "speaker": "Mr. THOMPSON of Pennsylvania",
+  "n_words": 1153,
+  "band": "over"
+ },
+ "ovushop002": {
+  "chamber": "US-House",
+  "era": "prev",
+  "seg_id": "US2026-06-04-H3840-4#t20w54",
+  "date": "2026-06-04",
+  "speaker": "Mr. HARRIS of Maryland",
+  "n_words": 645,
+  "band": "over"
+ },
+ "ovushop003": {
+  "chamber": "US-House",
+  "era": "prev",
+  "seg_id": "US2025-01-14-H126#t91w1",
+  "date": "2025-01-14",
+  "speaker": "Ms. BONAMICI",
+  "n_words": 697,
+  "band": "over"
+ },
+ "ovushop004": {
+  "chamber": "US-House",
+  "era": "prev",
+  "seg_id": "US2026-07-21-H4736#t47w400",
+  "date": "2026-07-21",
+  "speaker": "Mr. ROGERS of Alabama",
+  "n_words": 944,
+  "band": "over"
+ },
+ "ovushop005": {
+  "chamber": "US-House",
+  "era": "prev",
+  "seg_id": "US2026-07-22-H5029-6#t52w154",
+  "date": "2026-07-22",
+  "speaker": "Mr. ROGERS of Alabama",
+  "n_words": 385,
+  "band": "over"
+ },
+ "ovushoc000": {
+  "chamber": "US-House",
+  "era": "ctl",
+  "seg_id": "US2019-12-18-H12115#t63w2",
+  "date": "2019-12-18",
+  "speaker": "Mr. McGOVERN",
+  "n_words": 424,
+  "band": "over"
+ },
+ "ovushoc001": {
+  "chamber": "US-House",
+  "era": "ctl",
+  "seg_id": "US2008-07-16-H6599-3#t47w39",
+  "date": "2008-07-16",
+  "speaker": "Mr. REYES",
+  "n_words": 501,
+  "band": "over"
+ },
+ "ovussep000": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2026-05-19-S2362-3#t0w5",
+  "date": "2026-05-19",
+  "speaker": "Mr. McCONNELL",
+  "n_words": 1265,
+  "band": "over"
+ },
+ "ovussep001": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2026-07-20-S4151#t2w8",
+  "date": "2026-07-20",
+  "speaker": "Mr. LEE",
+  "n_words": 420,
+  "band": "over"
+ },
+ "ovussep002": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2025-05-07-S2796-2#t0w2",
+  "date": "2025-05-07",
+  "speaker": "Mr. LEE",
+  "n_words": 1068,
+  "band": "over"
+ },
+ "ovussep003": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2026-05-14-S2307#t0w1",
+  "date": "2026-05-14",
+  "speaker": "Mr. DURBIN",
+  "n_words": 425,
+  "band": "over"
+ },
+ "ovussep004": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2026-06-10-S2731#t0w4",
+  "date": "2026-06-10",
+  "speaker": "Mr. RISCH",
+  "n_words": 995,
+  "band": "over"
+ },
+ "ovussep005": {
+  "chamber": "US-Senate",
+  "era": "prev",
+  "seg_id": "US2026-06-24-S3205#t1w12",
+  "date": "2026-06-24",
+  "speaker": "Mr. ARMSTRONG",
+  "n_words": 399,
+  "band": "over"
+ },
+ "ovussec000": {
+  "chamber": "US-Senate",
+  "era": "ctl",
+  "seg_id": "US2017-07-26-S4302#t0w7",
+  "date": "2017-07-26",
+  "speaker": "Mr. DURBIN",
+  "n_words": 690,
+  "band": "over"
+ },
+ "ovussec001": {
+  "chamber": "US-Senate",
+  "era": "ctl",
+  "seg_id": "US2008-02-25-S1127#t0w10",
+  "date": "2008-02-25",
+  "speaker": "Mr. PRYOR",
+  "n_words": 365,
+  "band": "over"
+ },
+ "ovussec002": {
+  "chamber": "US-Senate",
+  "era": "ctl",
+  "seg_id": "US2020-10-19-S6075#t0w576",
+  "date": "2020-10-19",
+  "speaker": "Mr. SCHUMER",
+  "n_words": 474,
+  "band": "over"
+ },
+ "ovussec003": {
+  "chamber": "US-Senate",
+  "era": "ctl",
+  "seg_id": "US2009-01-15-S419-2#t29w383",
+  "date": "2009-01-15",
+  "speaker": "Mr. KYL",
+  "n_words": 584,
+  "band": "over"
  }
 }

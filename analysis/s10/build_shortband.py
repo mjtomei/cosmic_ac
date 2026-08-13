@@ -94,6 +94,23 @@ N_PREV, N_CTL = 120, 60
 sys.path.insert(0, HERE)
 import build_pangram_expansion as BX      # noqa: E402  (era_of, usable, CODES)
 
+
+def prefix(ch):
+    """Short id prefix, distinct per chamber.
+
+    BX.CODES has no entry for the non-province chambers, and the old fallback
+    of ch[:3] mapped BOTH 'US-House' and 'US-Senate' to 'us-', so their ids
+    collided and whichever was written second silently overwrote the first.
+    Caught after it had already cost US-House 13 short-band and 8 over-band
+    segments in the manifest.
+    """
+    code = BX.CODES.get(ch)
+    if code:
+        return code.lower()
+    # Only the US pair collided; every other fallback prefix is already in use
+    # by scored segments, so it is preserved rather than tidied.
+    return {"US-House": "usho", "US-Senate": "usse"}.get(ch, ch[:3].lower())
+
 SOURCES = (
     [(p, None) for p in sorted(glob.glob(os.path.join(HERE, "provinces",
                                                       "segments_*.jsonl")))]
@@ -186,6 +203,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--plan", action="store_true")
     ap.add_argument("--build", action="store_true")
+    ap.add_argument("--append-over", action="store_true",
+                    help="add the over-360 stratum to an EXISTING manifest "
+                         "and write new CSVs after the last one, so batches "
+                         "already scored keep their ids")
     args = ap.parse_args()
 
     pools = collect()
@@ -200,7 +221,46 @@ def main():
               f"{r['n_prev']+r['n_ctl']:>6d}")
     print(f"\n{len(rows)} chambers, {tot:,} segments, {tot:,} credits "
           f"(1 each), {-(-tot // BATCH)} upload CSVs")
-    if not args.build:
+    if not (args.build or args.append_over):
+        return
+
+    if args.append_over:
+        man = json.load(open(MANIFEST))
+        bi = 1 + max((int(f[2:4]) for f in os.listdir(OUT)
+                      if f.startswith("sb") and f.endswith(".csv")),
+                     default=-1)
+        batch, n = [], 0
+        print(f"\nappending over-360 stratum; existing manifest has "
+              f"{len(man)} segments, next CSV is sb{bi:02d}.csv\n")
+        for r in rows:
+            ch = r["chamber"]
+            for era, k in (("prev", r["o_prev"]), ("ctl", r["o_ctl"])):
+                if not k:
+                    continue
+                pool = pools[ch][era]["over"]
+                rng = random.Random(int(hashlib.sha1(
+                    f"{ch}{era}overband".encode()).hexdigest()[:8], 16))
+                for i, d in enumerate(rng.sample(pool, k)):
+                    sid = f"ov{prefix(ch)}{era[0]}{i:03d}"
+                    man[sid] = {"chamber": ch, "era": era,
+                                "seg_id": d["seg_id"], "date": d["date"],
+                                "speaker": d.get("speaker", ""),
+                                "n_words": d["n_words"], "band": "over"}
+                    batch.append((sid, " ".join(d["text"].split())))
+                    n += 1
+                    if len(batch) == BATCH:
+                        write(batch, bi); bi += 1; batch = []
+        if batch:
+            write(batch, bi); bi += 1
+        json.dump(man, open(MANIFEST, "w"), indent=1)
+        cred = sum(max(1, -(-man[k]["n_words"] // 100)) for k in man
+                   if man[k].get("band") == "over")
+        print(f"added {n} over-360 segments (~{cred:,} credits); "
+              f"manifest now {len(man)}")
+        for r in rows:
+            if r["o_prev"] or r["o_ctl"]:
+                print(f"    {r['chamber']:<10s} prev {r['o_prev']:>3d}  "
+                      f"ctl {r['o_ctl']:>3d}")
         return
 
     os.makedirs(OUT, exist_ok=True)
@@ -214,7 +274,7 @@ def main():
             rng = random.Random(int(hashlib.sha1(
                 f"{ch}{era}shortband".encode()).hexdigest()[:8], 16))
             for i, d in enumerate(rng.sample(pool, k)):
-                sid = f"sb{BX.CODES.get(ch, ch[:3]).lower()}{era[0]}{i:03d}"
+                sid = f"sb{prefix(ch)}{era[0]}{i:03d}"
                 man[sid] = {"chamber": ch, "era": era, "seg_id": d["seg_id"],
                             "date": d["date"], "speaker": d.get("speaker", ""),
                             "n_words": d["n_words"], "band": "short"}
