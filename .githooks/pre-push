@@ -32,7 +32,16 @@ check_range() {
   paths=$(git log --pretty=format: --name-only --no-renames "$@" 2>/dev/null | sed '/^$/d' | sort -u)
   while IFS= read -r path; do
     [ -n "$path" ] || continue
+    # Corpus directories hold licensed transcripts AND the scripts that fetch
+    # and extract them. The scripts are our own work, carry no source text, and
+    # are the only path from a recorded seg_id back to the text it names --
+    # without them 17 of 21 chambers are unreproducible. Allow *.py through the
+    # path rule; the content backstop below now scans .py too, so a script that
+    # embeds transcript prose is still caught on content rather than location.
     case "$path" in
+      analysis/s10/us/*.py|analysis/s10/provinces/*.py|\
+      analysis/s10/permeation/*.py)
+        : ;;                                    # extraction code — allowed
       analysis/*/xml/*|analysis/*/*/xml/*|analysis/*/xml_*/*|analysis/*/*/xml_*/*|\
       analysis/*/zips/*|analysis/*/*/zips/*|\
       analysis/s10/us/*|analysis/s10/provinces/*|analysis/s10/permeation/*|\
@@ -98,13 +107,25 @@ check_range() {
     # sniff the content instead of chasing directory names. Bulk verbatim text
     # shows up as many long prose runs; one long note in a results file does
     # not. Threshold is deliberately high to leave ordinary artifacts alone.
-    if [ "$size" -gt 102400 ]; then
+    # Size gate: 100KB for data files, but extraction scripts are small and a
+    # pasted transcript inside one would be too. Scan .py at any size.
+    scan_floor=102400
+    case "$path" in *.py) scan_floor=0 ;; esac
+    if [ "$size" -gt "$scan_floor" ]; then
       case "$path" in
-        *.json|*.jsonl|*.csv|*.tsv|*.txt)
+        *.json|*.jsonl|*.csv|*.tsv|*.txt|*.py)
           local prose
           prose=$(git cat-file -p "$sha" 2>/dev/null | head -c 2000000 \
                   | grep -o -E '[A-Za-z][A-Za-z,;'"'"'’ ()-]{300,}' | wc -l)
-          if [ "${prose:-0}" -ge 20 ]; then
+          # Threshold is 20 for data files, where ordinary results can carry
+          # a few long notes. For .py it is 1: measured across all 86
+          # extraction scripts in this repo, every one scores ZERO long prose
+          # runs, while a script with 61KB of real Hansard pasted into it
+          # scores 3. Code has no legitimate reason to contain a 300-character
+          # unpunctuated prose run, so any is treated as a paste.
+          local floor=20
+          case "$path" in *.py) floor=1 ;; esac
+          if [ "${prose:-0}" -ge "$floor" ]; then
             say "BLOCKED: $path holds bulk verbatim prose ($prose long passages) — reads as extracted transcript text, not derived results"
             fail=1
           fi
