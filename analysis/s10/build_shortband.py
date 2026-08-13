@@ -36,19 +36,39 @@ with n_long = 120 for prevalence and 60 for control. Pooling short and long
 then gives the corpus rate directly, with no reweighting assumptions -- which
 is what §5.0a's post-hoc weighting could not offer.
 
-WHAT IS EXCLUDED, AND STATED RATHER THAN ASSUMED
+THE OTHER EXCLUDED BAND: ABOVE 360 WORDS
 
-Above 360 words: 61 segments in the entire post-2025 corpus, 0.1% of words.
-Extraction is paragraph-level, so almost no paragraph runs that long and the
-ceiling was never binding. Scoring all 61 would cost 549 credits to settle a
-question that cannot move the answer; it is excluded and declared.
+Also sampled here, at the same matched rate. The packer in segment.py (and in
+us_extract.py -- they share the logic) never splits a PARAGRAPH: it appends
+whole paragraphs and flushes only once the buffer holds MIN_WORDS, so a single
+600-word paragraph arriving at an empty buffer becomes an oversized segment.
+Corpus-wide that is 1.7% of words, but it is concentrated almost entirely in
+the United States -- 11.4% of US Senate words, 7.7% of US House, under 1%
+everywhere else -- because the Congressional Record prints speech in long
+unbroken blocks where Hansard breaks it up. Median segment: 277 words in the
+Senate, 91 in UK Commons.
 
-Below 50 words: zero segments exist. Extraction already floors there, and
-Pangram's own interface refuses text under 50 words.
+This matters because it biases the OPPOSITE WAY from the short band. Short text
+is low-rate, so excluding it biases up; the longest text is the highest-rate, so
+excluding it biases down. US Senate reports the study's lowest prevalence, 3.3%,
+with a tenth of its record in the band most likely to be flagged.
 
-COST: 1 credit per segment (every short segment is 50-119 words, and billing
-is ceil(words/100)). ~1,651 credits for all 21 chambers, prevalence and
-control -- 11% of a monthly allowance that would otherwise expire.
+Matched rate gives only ~6 prevalence segments for each US chamber, and their
+intervals will be visibly wide. That is deliberate and it is the point:
+matched-rate sampling is unbiased by construction and keeps the pooled estimate
+self-weighting. Oversampling this stratum because we expect it to be
+interesting would break self-weighting, require reweighting across the whole
+design, and leave the US chambers non-comparable to the other nineteen. A wide
+interval is the honest report of what the exclusion cost; the remedy is more
+sampling at matched rate throughout.
+
+Below 50 words remains genuinely unreachable: Pangram refuses text that short,
+so those 3.5% of words cannot be scored by any sampling design.
+
+COST: ceil(words/100) credits per segment. Short segments are mostly 1 credit
+but 27% run 101-119 words and cost 2, so the short band alone is ~2,068 rather
+than the 1,631 its segment count suggests. Over-360 segments average ~660
+words and cost ~7 each, but there are few of them at matched rate.
 
 Usage:
   python build_shortband.py --plan     # sample sizes per chamber
@@ -68,6 +88,7 @@ OUT = os.path.join(HERE, "pangram_shortband")
 MANIFEST = os.path.join(HERE, "pangram_shortband_manifest.json")
 BATCH = 100          # dashboard hard cap: "Only the first 100 will be processed"
 SHORT_MIN, SHORT_MAX = 50, 120
+OVER_MIN = 361        # the other excluded band; see the docstring
 N_PREV, N_CTL = 120, 60
 
 sys.path.insert(0, HERE)
@@ -90,6 +111,20 @@ def is_short(d):
             and SHORT_MIN <= d["n_words"] < SHORT_MAX)
 
 
+def is_over(d):
+    """The other excluded band. The packer never splits a paragraph, so a
+    single paragraph over MAX_WORDS becomes an oversized segment; that is
+    almost entirely a US phenomenon (11.4% of Senate words, 7.7% of House,
+    under 1% elsewhere) because the Congressional Record prints speech in long
+    unbroken blocks. Sampled at the SAME matched rate as every other band --
+    which yields very few segments for most chambers, and that is correct:
+    matched rate keeps the pooled estimate self-weighting. Oversampling this
+    stratum because we expect it to be high-rate would break that."""
+    return (d.get("scoreable") and not d.get("translated")
+            and (d.get("orig_frac") or 1.0) > 0.5
+            and d["n_words"] >= OVER_MIN)
+
+
 def collect():
     """-> {chamber: {era: {'long': int, 'short': [segments]}}}"""
     pools = {}
@@ -106,12 +141,15 @@ def collect():
                 continue
             if era == "ctl" and d["date"] < BX.REGIME_FLOOR.get(ch, ""):
                 continue
-            p = pools.setdefault(ch, {"ctl": {"long": 0, "short": []},
-                                      "prev": {"long": 0, "short": []}})
+            p = pools.setdefault(ch, {
+                "ctl": {"long": 0, "short": [], "over": []},
+                "prev": {"long": 0, "short": [], "over": []}})
             if BX.usable(d):
                 p[era]["long"] += 1
             elif is_short(d):
                 p[era]["short"].append(d)
+            elif is_over(d):
+                p[era]["over"].append(d)
     return pools
 
 
@@ -125,9 +163,14 @@ def sizes(pools):
         n_ctl = round(N_CTL * len(p["ctl"]["short"]) / p["ctl"]["long"])
         n_prev = min(n_prev, len(p["prev"]["short"]))
         n_ctl = min(n_ctl, len(p["ctl"]["short"]))
+        o_prev = min(round(N_PREV * len(p["prev"]["over"]) / p["prev"]["long"]),
+                     len(p["prev"]["over"]))
+        o_ctl = min(round(N_CTL * len(p["ctl"]["over"]) / p["ctl"]["long"]),
+                    len(p["ctl"]["over"]))
         share = len(p["prev"]["short"]) / (len(p["prev"]["short"])
                                            + p["prev"]["long"])
         rows.append({"chamber": ch, "n_prev": n_prev, "n_ctl": n_ctl,
+                     "o_prev": o_prev, "o_ctl": o_ctl,
                      "short_share": share,
                      "pool_prev": len(p["prev"]["short"]),
                      "pool_ctl": len(p["ctl"]["short"]),

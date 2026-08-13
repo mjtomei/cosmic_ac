@@ -738,6 +738,49 @@ statement is the one-sided one: **at least 7.5% of New Brunswick segments in
 sittings from October 2025 to May 2026, with 1/Se as a stated unknown
 multiplier**, and every correction running toward more AI, never less.
 
+### 5.0-us The United States needed its own extractor, and five decisions
+
+The Congressional Record is not Hansard and `us_extract.py` makes choices the
+other chambers do not require. All five are in the code's own docstring; they
+belong here because each one changes what the US numbers mean.
+
+**1. Extensions of Remarks are dropped.** These are written submissions
+inserted into the Record by members who never said them on the floor. They are
+the largest contaminant in CREC for a study of *spoken* language and they are
+precisely the genre most likely to be ghost-drafted, so including them would
+inflate the US estimate for the wrong reason. `mods.xml` tags them
+`granuleClass=EXTENSIONS`. Note the consequence: this is also the arm that
+would compare most directly against Suvanto et al., who studied written
+parliamentary text — running it is §8.6 item 5.
+
+**2. DAILYDIGEST is dropped**, being an editorial summary written by Record
+staff rather than by members.
+
+**3. Only HOUSE and SENATE granules are kept**, and every segment carries
+`chamber`, because the two have different insertion conventions and different
+speech norms. That is what makes the House-vs-Senate contrast in §4.2 possible
+at all.
+
+**4. "Revise and extend" contamination remains and cannot be removed.** House
+members may revise their remarks within five legislative days and the Record
+does not mark what changed; the Senate's old bullet convention for inserted
+statements does not survive into the HTML. A `revise_extend_flag` marks
+granules containing an explicit leave-to-revise request so the share can at
+least be measured, but the residual is a stated limitation rather than a
+solved problem. **This is the one US-specific issue that could inflate rather
+than deflate the US figures**, since revised text has been edited off-floor.
+
+**5. Chair and clerk voices are excluded** (SPEAKER, PRESIDING OFFICER, ACTING
+PRESIDENT, CHAIR, Clerk, VICE PRESIDENT) as procedural.
+
+**What is NOT US-specific: the segmenter.** `us_extract.py` uses the same
+360-word packer as `segment.py`, with the same `MIN_WORDS` flush guard. An
+earlier version of this document said the US extractor "does not use the
+360-word packer"; that was wrong. The over-360 segments concentrated in the US
+are a consequence of source formatting — the Record prints speech in long
+unbroken paragraphs and the packer never splits a paragraph — not of different
+code. See §5.0-pre.
+
 ### 5.0-pre What the study can see at all, and in what units
 
 **Word-weighted is the primary measure. Segments are our construct.**
@@ -774,8 +817,19 @@ effort narrows this; only a detector that reads shorter text would.
 **Two exclusions bias in opposite directions, and one is concentrated in the
 US.** The short band is low-rate text excluded, which biases *up*. The over-360
 band is the longest text excluded, and since flag rate rises steeply with
-length it biases *down*. That exclusion is almost entirely American, because
-the US extractor does not use the 360-word packer:
+length it biases *down*.
+
+That exclusion is almost entirely American, and **not because the US extractor
+differs** — `us_extract.py` uses the same `MAX_WORDS = 360` packer as
+`segment.py`, with the same flush condition. The packer never splits a
+*paragraph*: it appends whole paragraphs and flushes only when the buffer
+already holds at least `MIN_WORDS`, so a single 600-word paragraph arriving at
+an empty buffer becomes an oversized segment on its own. Only 1% of these are
+single-window turns, so it is not "one long speech" — it is an ordinary turn
+containing one enormous paragraph. The Congressional Record prints speech as
+long unbroken blocks where Hansard breaks it up; median segment length is 277
+words in the US Senate against 91 in UK Commons. Same code, different source
+formatting:
 
 | chamber | words over 360 |
 |---|---|
@@ -787,6 +841,17 @@ US Senate reports the lowest prevalence in the study at 3.3%, and 11.4% of its
 record sits in the excluded band where rates should be highest. That figure is
 more band-conditional than any other in Table §4.2 and should not be read as a
 clean chamber comparison until the tail is scored.
+
+**The over-360 band is sampled at the same matched rate as everything else**,
+which for the two US chambers means only about six prevalence segments each.
+That is deliberate. Matched-rate sampling keeps the pooled estimate
+self-weighting and unbiased by construction; the alternative — oversampling
+this stratum because we expect it to be interesting — would break
+self-weighting, require reweighting assumptions across the whole design, and
+leave the two US chambers non-comparable to the other nineteen. Six segments
+will give the US chambers a visibly wide interval. That width is the honest
+statement of what the exclusion cost us, and the remedy for it is more
+sampling at matched rate throughout, not a patch on one stratum.
 
 **Short-band composition.** The packer can leave a tail when it splits a turn,
 so 16% of short-band segments are offcuts of longer speeches rather than whole
