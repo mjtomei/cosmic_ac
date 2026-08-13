@@ -1317,17 +1317,29 @@ caught.
 | `BYPASS_METHODOLOGY.md` | §4.9 selection filters, per sample |
 | `PRIOR_ART.md`, `ai_policy_scan.md` | §6, §7 |
 
-**Cost: $65.** One month of Pangram Professional, which bundles 15,000
-dashboard credits (1.5M words) and $200 of API credit. All 4,258 verdicts fall
-inside a single billing cycle, consuming ~14,400 of the 15,000 credits and
-essentially all of the included API allowance. No marginal spend beyond the
-subscription.
+**What it takes to reproduce this.** Two things, and the second is the larger
+of them.
 
-That figure is the reproduction cost, and it is the point: the original design
-costed a study of this scope at $321 per session on the bulk API and $16,000
-for a year of one parliament. Nineteen chambers came in at the price of the
-entry-level plan.
+*Detector.* One month of Pangram Professional, the entry-level paid plan. All
+4,258 verdicts fall inside a single billing cycle with no marginal spend, which
+is the cheap half and the half most readers would expect to dominate.
 
-*(An earlier version of this line read "$158.00 API + 8,962 dashboard credits".
-Both numbers were consumption of an included allowance rather than money spent,
-and both were understated.)*
+*Local compute.* A workstation-class GPU box — here an NVIDIA DGX Spark
+(GB10) — carrying everything the commercial detector did not: the six-detector
+survey that established the free instruments do not work on this register, the
+synthetic in-domain sensitivity corpus, the OLMo-2 post-training ladder, the
+paired base-versus-instruct generation behind §4.7, the in-context permeation
+scoring in §4.8, the Opus and open-model band screens, and the bypass search.
+That is a few hundred gigabytes of model weights and a substantial number of
+GPU-hours, and it is not substitutable by spending more with the detector
+vendor.
+
+So the honest reproduction cost is a cheap subscription **plus** hardware most
+readers will not have idle. Anyone with the machine can repeat the prevalence
+arm for the price of one month's plan; the register, ladder and permeation arms
+need the box.
+
+*(An earlier version of this line gave an API dollar figure and a credit count
+as though they were money spent. Both were consumption of an allowance the
+subscription already included, both were understated, and both ignored the
+local compute entirely.)*

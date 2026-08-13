@@ -172,11 +172,14 @@ selection `BYPASS_METHODOLOGY.md`, and one script per claim
 (`prevalence_report.py`, `bypass_report.py`, `arrival_premium.py`,
 `formation_window.py`, `decomposition_inference.py`, `olmo_ladder.py`,
 `rlhf_pref_analyze.py`, `word_context_delta.py`, `long_trend.py`,
-`quality_expansion/`). 4,258 Pangram 4 verdicts. **Cost: $65** — one month of Pangram
-Professional, which bundles 15,000 dashboard credits and $200 of API credit;
-every verdict falls inside one billing cycle. (Corrected 2026-08-12 from
-"$158.00 API + 8,962 dashboard credits", which reported consumption of an
-included allowance as money spent, and understated it besides.)
+`quality_expansion/`). 4,258 Pangram 4 verdicts. **Cost: one month of Pangram
+Professional (entry-level plan) plus local GPU compute on the DGX Spark** —
+the box carried the detector survey, the synthetic Se corpus, the OLMo ladder,
+the base/instruct generation, permeation scoring, the band screens and the
+bypass search. (Corrected 2026-08-12 twice: the original line reported an API
+dollar figure and a credit count as though they were money spent, when both
+were consumption of an included allowance; the first correction then still
+omitted the hardware, which is the larger half.)
 
 *Honest flags:*
 - **Not yet reviewed.** Fresh adversarial review outstanding; the two earlier
