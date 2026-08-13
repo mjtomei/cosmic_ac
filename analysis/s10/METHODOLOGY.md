@@ -738,6 +738,61 @@ statement is the one-sided one: **at least 7.5% of New Brunswick segments in
 sittings from October 2025 to May 2026, with 1/Se as a stated unknown
 multiplier**, and every correction running toward more AI, never less.
 
+### 5.0-pre What the study can see at all, and in what units
+
+**Word-weighted is the primary measure. Segments are our construct.**
+`segment.py` assembles paragraphs into speaker turns, then greedily packs each
+turn into windows of at most 360 words, flushing whenever the next paragraph
+would overflow and flagging anything under 50 words unscoreable. A 1,000-word
+speech becomes roughly three segments; a 60-word interjection becomes one. So a
+segment-weighted rate partly measures our packer. A word-weighted rate answers
+"what share of what was said is machine-drafted", which is the question being
+asked, and is invariant to how the text was cut up. Segment-weighted figures
+are reported alongside for comparability with the sampling frame, never alone.
+
+**The full accounting** (`corpus_audit.py`), over the extracted record of
+5,164,469 segments and 853,824,297 words:
+
+| | segments | % seg | words | % words | |
+|---|---|---|---|---|---|
+| long band 120–360 | 2,685,098 | 52.0% | 702.8M | **82.3%** | scored |
+| short band 50–119 | 1,104,944 | 21.4% | 91.6M | **10.7%** | being scored |
+| under 50 words | 1,260,920 | 24.4% | 29.6M | 3.5% | **out** |
+| translated | 91,097 | 1.8% | 15.1M | 1.8% | **out** |
+| over 360 words | 22,410 | 0.4% | 14.7M | 1.7% | **out** |
+
+**93.0% of words are reachable; 7.0% are not.** Half of that is text under 50
+words, which Pangram refuses outright — unmeasurable rather than merely
+unmeasured.
+
+**The implied error bar, stated plainly.** A word-weighted rate `r` measured on
+the reachable 93.0% bounds the true corpus rate to
+`[0.930r, 0.930r + 0.070]`, because the unreachable share could in principle be
+all human or all machine. At r = 12.4% that is **[11.5%, 18.5%]**. No sampling
+effort narrows this; only a detector that reads shorter text would.
+
+**Two exclusions bias in opposite directions, and one is concentrated in the
+US.** The short band is low-rate text excluded, which biases *up*. The over-360
+band is the longest text excluded, and since flag rate rises steeply with
+length it biases *down*. That exclusion is almost entirely American, because
+the US extractor does not use the 360-word packer:
+
+| chamber | words over 360 |
+|---|---|
+| **US Senate** | **11.4%** |
+| **US House** | **7.7%** |
+| everywhere else | < 1% |
+
+US Senate reports the lowest prevalence in the study at 3.3%, and 11.4% of its
+record sits in the excluded band where rates should be highest. That figure is
+more band-conditional than any other in Table §4.2 and should not be read as a
+clean chamber comparison until the tail is scored.
+
+**Short-band composition.** The packer can leave a tail when it splits a turn,
+so 16% of short-band segments are offcuts of longer speeches rather than whole
+utterances (13.2% remainders, 2.7% mid-turn). The short-band rate should be
+split by origin when the scoring completes.
+
 ### 5.0a Segment length is a confound, and it bit us
 
 The three confirmatory chambers were first sampled with a **120-word floor**
