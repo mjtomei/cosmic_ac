@@ -119,7 +119,13 @@ check_range() {
     # applies, and the prompt pools (Hansard excerpts) are gitignored.
     case "$path" in
       analysis/s10/claude_gen/*.json|analysis/s10/claude_gen_old/*.json|\
-      analysis/s10/rlhf_gen/*.json|analysis/s10/rlhf_gen_180/*.json)
+      analysis/s10/rlhf_gen/*.json|analysis/s10/rlhf_gen_180/*.json|\
+      analysis/s10/covariates_tier1*.json|analysis/s10/rosters/*.json)
+        # covariates_tier1*: study-derived member covariates (same class as
+        # the allowlisted provinces/member_allsource.json — structured fields
+        # plus short attributed evidence quotes, no transcript text); rosters:
+        # speaker keys and word counts only. Both cross the 2MB size gate
+        # purely by breadth of coverage.
         continue ;;
     esac
     if false; then :
