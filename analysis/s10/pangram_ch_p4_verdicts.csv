@@ -1,0 +1,361 @@
+id,chamber,stratum,seg_id,date,n_words,pangram,prior,version
+ch000,Dail Eireann,ctl,IE2018-03-21#t150w0,2018-03-21,176,Human,Human,4.0-web
+ch001,Dail Eireann,ctl,IE2018-05-02#t194w0,2018-05-02,123,Human,Human,4.0-web
+ch002,Dail Eireann,ctl,IE2018-05-22#t69w0,2018-05-22,150,Human,Human,4.0-web
+ch003,Dail Eireann,ctl,IE2018-05-30#t355w0,2018-05-30,135,Human,Human,4.0-web
+ch004,Dail Eireann,ctl,IE2018-07-03#t383w1,2018-07-03,316,Human,Human,4.0-web
+ch005,Dail Eireann,ctl,IE2018-09-25#t118w1,2018-09-25,181,Human,Human,4.0-web
+ch006,Dail Eireann,ctl,IE2018-10-18#t160w3,2018-10-18,332,Human,Human,4.0-web
+ch007,Dail Eireann,ctl,IE2018-11-29#t61w0,2018-11-29,350,Human,Human,4.0-web
+ch008,Dail Eireann,ctl,IE2018-12-11#t89w0,2018-12-11,136,Human,Human,4.0-web
+ch009,Dail Eireann,ctl,IE2018-12-19#t117w0,2018-12-19,135,Human,Human,4.0-web
+ch010,Dail Eireann,ctl,IE2019-01-22#t365w2,2019-01-22,346,Human,Human,4.0-web
+ch011,Dail Eireann,ctl,IE2019-02-12#t41w0,2019-02-12,144,Human,Human,4.0-web
+ch012,Dail Eireann,ctl,IE2019-04-03#t232w0,2019-04-03,285,Human,Human,4.0-web
+ch013,Dail Eireann,ctl,IE2019-04-09#t280w0,2019-04-09,195,Human,Human,4.0-web
+ch014,Dail Eireann,ctl,IE2019-04-17#t349w0,2019-04-17,145,Human,Human,4.0-web
+ch015,Dail Eireann,ctl,IE2019-04-18#t277w2,2019-04-18,150,Human,Human,4.0-web
+ch016,Dail Eireann,ctl,IE2019-05-08#t121w0,2019-05-08,134,Human,Human,4.0-web
+ch017,Dail Eireann,ctl,IE2019-05-29#t114w0,2019-05-29,325,Human,Human,4.0-web
+ch018,Dail Eireann,ctl,IE2019-05-29#t242w2,2019-05-29,229,Human,Human,4.0-web
+ch019,Dail Eireann,ctl,IE2019-10-15#t244w0,2019-10-15,298,Human,Human,4.0-web
+ch020,Dail Eireann,ctl,IE2019-11-13#t339w0,2019-11-13,290,Human,Human,4.0-web
+ch021,Dail Eireann,ctl,IE2019-12-04#t86w1,2019-12-04,293,Human,Human,4.0-web
+ch022,Dail Eireann,ctl,IE2020-04-30#t257w0,2020-04-30,261,Human,Human,4.0-web
+ch023,Dail Eireann,ctl,IE2020-05-13#t31w0,2020-05-13,312,Human,Human,4.0-web
+ch024,Dail Eireann,ctl,IE2020-05-21#t27w1,2020-05-21,346,Human,Human,4.0-web
+ch025,Dail Eireann,ctl,IE2020-06-17#t151w0,2020-06-17,143,Human,Human,4.0-web
+ch026,Dail Eireann,ctl,IE2020-06-30#t28w3,2020-06-30,299,Human,Human,4.0-web
+ch027,Dail Eireann,ctl,IE2020-09-02#t101w1,2020-09-02,335,Human,Human,4.0-web
+ch028,Dail Eireann,ctl,IE2020-09-08#t264w1,2020-09-08,341,Human,Human,4.0-web
+ch029,Dail Eireann,ctl,IE2020-09-08#t26w1,2020-09-08,205,Human,Human,4.0-web
+ch030,Dail Eireann,ctl,IE2020-09-24#t183w4,2020-09-24,320,Human,Human,4.0-web
+ch031,Dail Eireann,ctl,IE2020-10-01#t258w0,2020-10-01,164,Human,Human,4.0-web
+ch032,Dail Eireann,ctl,IE2020-10-21#t253w0,2020-10-21,178,Human,Human,4.0-web
+ch033,Dail Eireann,ctl,IE2020-12-10#t201w0,2020-12-10,163,Human,Human,4.0-web
+ch034,Dail Eireann,ctl,IE2021-01-20#t22w1,2021-01-20,271,Human,Human,4.0-web
+ch035,Dail Eireann,ctl,IE2021-01-21#t250w0,2021-01-21,309,Human,Human,4.0-web
+ch036,Dail Eireann,ctl,IE2021-02-25#t12w0,2021-02-25,286,Human,Human,4.0-web
+ch037,Dail Eireann,ctl,IE2021-02-25#t13w2,2021-02-25,172,Human,Human,4.0-web
+ch038,Dail Eireann,ctl,IE2021-03-11#t110w0,2021-03-11,203,Human,Human,4.0-web
+ch039,Dail Eireann,ctl,IE2021-04-21#t233w5,2021-04-21,360,Human,Human,4.0-web
+ch040,Dail Eireann,ctl,IE2021-06-22#t212w0,2021-06-22,148,Human,Human,4.0-web
+ch041,Dail Eireann,ctl,IE2021-06-24#t139w0,2021-06-24,187,Human,Human,4.0-web
+ch042,Dail Eireann,ctl,IE2021-06-24#t229w2,2021-06-24,165,Human,Human,4.0-web
+ch043,Dail Eireann,ctl,IE2021-06-30#t153w0,2021-06-30,227,Human,Human,4.0-web
+ch044,Dail Eireann,ctl,IE2021-07-01#t220w3,2021-07-01,338,Human,Human,4.0-web
+ch045,Dail Eireann,ctl,IE2021-07-02#t52w2,2021-07-02,297,Human,Human,4.0-web
+ch046,Dail Eireann,ctl,IE2021-11-23#t171w1,2021-11-23,163,Human,Human,4.0-web
+ch047,Dail Eireann,ctl,IE2021-12-03#t225w1,2021-12-03,260,Human,Human,4.0-web
+ch048,Dail Eireann,ctl,IE2021-12-07#t32w0,2021-12-07,327,Human,Human,4.0-web
+ch049,Dail Eireann,ctl,IE2022-01-26#t294w2,2022-01-26,164,Human,Human,4.0-web
+ch050,Dail Eireann,ctl,IE2022-02-09#t255w2,2022-02-09,317,Human,Human,4.0-web
+ch051,Dail Eireann,ctl,IE2022-03-08#t201w0,2022-03-08,323,Human,Human,4.0-web
+ch052,Dail Eireann,ctl,IE2022-03-23#t22w1,2022-03-23,220,Human,Human,4.0-web
+ch053,Dail Eireann,ctl,IE2022-05-05#t272w2,2022-05-05,167,Human,Human,4.0-web
+ch054,Dail Eireann,ctl,IE2022-06-01#t223w1,2022-06-01,188,Human,Human,4.0-web
+ch055,Dail Eireann,ctl,IE2022-09-21#t180w3,2022-09-21,220,Human,Human,4.0-web
+ch056,Dail Eireann,ctl,IE2022-09-21#t211w0,2022-09-21,237,Human,Human,4.0-web
+ch057,Dail Eireann,ctl,IE2022-09-22#t271w0,2022-09-22,140,Human,Human,4.0-web
+ch058,Dail Eireann,ctl,IE2022-10-27#t266w1,2022-10-27,243,Human,Human,4.0-web
+ch059,Dail Eireann,ctl,IE2022-11-17#t29w0,2022-11-17,227,Human,Human,4.0-web
+ch060,Dail Eireann,prev,IE2025-02-05#t107w0,2025-02-05,158,Human,Human,4.0-web
+ch061,Dail Eireann,prev,IE2025-02-12#t246w0,2025-02-12,150,Human,Human,4.0-web
+ch062,Dail Eireann,prev,IE2025-02-19#t56w3,2025-02-19,190,Human,Human,4.0-web
+ch063,Dail Eireann,prev,IE2025-02-20#t157w0,2025-02-20,162,Human,Human,4.0-web
+ch064,Dail Eireann,prev,IE2025-02-20#t158w0,2025-02-20,262,Human,Human,4.0-web
+ch065,Dail Eireann,prev,IE2025-02-25#t223w1,2025-02-25,318,Human,Human,4.0-web
+ch066,Dail Eireann,prev,IE2025-02-26#t296w0,2025-02-26,211,Human,Human,4.0-web
+ch067,Dail Eireann,prev,IE2025-03-19#t0w0,2025-03-19,334,Human,Human,4.0-web
+ch068,Dail Eireann,prev,IE2025-03-25#t2w0,2025-03-25,217,Human,Human,4.0-web
+ch069,Dail Eireann,prev,IE2025-03-27#t217w0,2025-03-27,136,Human,Human,4.0-web
+ch070,Dail Eireann,prev,IE2025-03-27#t35w0,2025-03-27,315,Human,Human,4.0-web
+ch071,Dail Eireann,prev,IE2025-04-01#t291w0,2025-04-01,286,Human,Human,4.0-web
+ch072,Dail Eireann,prev,IE2025-04-01#t562w1,2025-04-01,162,Human,Human,4.0-web
+ch073,Dail Eireann,prev,IE2025-04-02#t51w0,2025-04-02,354,Human,Human,4.0-web
+ch074,Dail Eireann,prev,IE2025-04-08#t96w0,2025-04-08,156,Human,Human,4.0-web
+ch075,Dail Eireann,prev,IE2025-04-30#t48w1,2025-04-30,180,Human,Human,4.0-web
+ch076,Dail Eireann,prev,IE2025-05-07#t26w0,2025-05-07,345,Human,Human,4.0-web
+ch077,Dail Eireann,prev,IE2025-05-14#t281w0,2025-05-14,354,Human,Human,4.0-web
+ch078,Dail Eireann,prev,IE2025-05-15#t169w0,2025-05-15,182,Human,Human,4.0-web
+ch079,Dail Eireann,prev,IE2025-05-20#t389w1,2025-05-20,205,Mixed,Mixed,4.0-web
+ch080,Dail Eireann,prev,IE2025-05-21#t24w0,2025-05-21,293,Human,Human,4.0-web
+ch081,Dail Eireann,prev,IE2025-05-21#t298w1,2025-05-21,215,Human,Human,4.0-web
+ch082,Dail Eireann,prev,IE2025-05-22#t100w0,2025-05-22,258,Human,Human,4.0-web
+ch083,Dail Eireann,prev,IE2025-05-22#t24w1,2025-05-22,207,Human,Human,4.0-web
+ch084,Dail Eireann,prev,IE2025-05-29#t417w1,2025-05-29,258,Human,Human,4.0-web
+ch085,Dail Eireann,prev,IE2025-05-29#t433w0,2025-05-29,255,Human,Human,4.0-web
+ch086,Dail Eireann,prev,IE2025-06-17#t49w0,2025-06-17,202,Human,Human,4.0-web
+ch087,Dail Eireann,prev,IE2025-06-18#t383w0,2025-06-18,184,Human,Human,4.0-web
+ch088,Dail Eireann,prev,IE2025-06-24#t198w0,2025-06-24,235,Human,Human,4.0-web
+ch089,Dail Eireann,prev,IE2025-06-26#t325w0,2025-06-26,340,Human,Human,4.0-web
+ch090,Dail Eireann,prev,IE2025-06-26#t327w1,2025-06-26,263,Human,Human,4.0-web
+ch091,Dail Eireann,prev,IE2025-06-26#t62w0,2025-06-26,148,Human,Human,4.0-web
+ch092,Dail Eireann,prev,IE2025-06-26#t82w0,2025-06-26,244,Human,Human,4.0-web
+ch093,Dail Eireann,prev,IE2025-07-01#t229w0,2025-07-01,263,Human,Human,4.0-web
+ch094,Dail Eireann,prev,IE2025-07-08#t136w0,2025-07-08,201,Human,Human,4.0-web
+ch095,Dail Eireann,prev,IE2025-07-10#t104w0,2025-07-10,144,Human,Human,4.0-web
+ch096,Dail Eireann,prev,IE2025-07-10#t67w0,2025-07-10,164,Human,Human,4.0-web
+ch097,Dail Eireann,prev,IE2025-07-15#t618w0,2025-07-15,176,Human,Human,4.0-web
+ch098,Dail Eireann,prev,IE2025-07-16#t28w1,2025-07-16,288,Human,Human,4.0-web
+ch099,Dail Eireann,prev,IE2025-07-17#t295w0,2025-07-17,187,Human,Human,4.0-web
+ch100,Dail Eireann,prev,IE2025-09-18#t283w4,2025-09-18,233,Mixed,Mixed,4.0-web
+ch101,Dail Eireann,prev,IE2025-09-23#t100w0,2025-09-23,320,Mixed,Mixed,4.0-web
+ch102,Dail Eireann,prev,IE2025-09-24#t18w0,2025-09-24,330,Human,Human,4.0-web
+ch103,Dail Eireann,prev,IE2025-09-25#t277w0,2025-09-25,197,Human,Human,4.0-web
+ch104,Dail Eireann,prev,IE2025-10-02#t239w0,2025-10-02,216,Human,Human,4.0-web
+ch105,Dail Eireann,prev,IE2025-10-02#t317w0,2025-10-02,125,Human,Human,4.0-web
+ch106,Dail Eireann,prev,IE2025-10-14#t270w2,2025-10-14,197,Human,Human,4.0-web
+ch107,Dail Eireann,prev,IE2025-10-15#t43w0,2025-10-15,245,Human,Human,4.0-web
+ch108,Dail Eireann,prev,IE2025-10-16#t308w0,2025-10-16,288,Human,Human,4.0-web
+ch109,Dail Eireann,prev,IE2025-10-16#t311w1,2025-10-16,228,Human,Human,4.0-web
+ch110,Dail Eireann,prev,IE2025-10-21#t120w0,2025-10-21,282,Human,Human,4.0-web
+ch111,Dail Eireann,prev,IE2025-10-21#t225w1,2025-10-21,322,Human,Human,4.0-web
+ch112,Dail Eireann,prev,IE2025-10-22#t222w3,2025-10-22,359,Human,Human,4.0-web
+ch113,Dail Eireann,prev,IE2025-11-04#t119w1,2025-11-04,270,Human,Human,4.0-web
+ch114,Dail Eireann,prev,IE2025-11-04#t121w9,2025-11-04,312,AI,AI,4.0-web
+ch115,Dail Eireann,prev,IE2025-11-05#t230w4,2025-11-05,260,Human,Human,4.0-web
+ch116,Dail Eireann,prev,IE2025-11-05#t29w2,2025-11-05,209,Human,Human,4.0-web
+ch117,Dail Eireann,prev,IE2025-11-06#t331w1,2025-11-06,263,Human,Human,4.0-web
+ch118,Dail Eireann,prev,IE2025-11-12#t318w1,2025-11-12,202,Human,Human,4.0-web
+ch119,Dail Eireann,prev,IE2025-11-13#t320w1,2025-11-13,276,AI,AI,4.0-web
+ch120,Dail Eireann,prev,IE2025-11-13#t351w4,2025-11-13,295,Human,Human,4.0-web
+ch121,Dail Eireann,prev,IE2025-11-26#t419w4,2025-11-26,135,Human,Human,4.0-web
+ch122,Dail Eireann,prev,IE2025-11-26#t533w0,2025-11-26,250,Human,Human,4.0-web
+ch123,Dail Eireann,prev,IE2025-12-02#t73w2,2025-12-02,209,AI,AI,4.0-web
+ch124,Dail Eireann,prev,IE2025-12-04#t363w0,2025-12-04,313,Human,Human,4.0-web
+ch125,Dail Eireann,prev,IE2025-12-09#t156w0,2025-12-09,180,Human,Human,4.0-web
+ch126,Dail Eireann,prev,IE2025-12-16#t169w4,2025-12-16,312,Human,Human,4.0-web
+ch127,Dail Eireann,prev,IE2025-12-16#t308w1,2025-12-16,325,Mixed,Mixed,4.0-web
+ch128,Dail Eireann,prev,IE2025-12-17#t289w3,2025-12-17,357,Human,Human,4.0-web
+ch129,Dail Eireann,prev,IE2026-01-14#t164w2,2026-01-14,189,Human,Human,4.0-web
+ch130,Dail Eireann,prev,IE2026-01-20#t194w1,2026-01-20,302,AI,AI,4.0-web
+ch131,Dail Eireann,prev,IE2026-01-20#t203w4,2026-01-20,245,Human,Human,4.0-web
+ch132,Dail Eireann,prev,IE2026-01-20#t343w0,2026-01-20,213,Human,Human,4.0-web
+ch133,Dail Eireann,prev,IE2026-01-21#t34w0,2026-01-21,332,Mixed,Mixed,4.0-web
+ch134,Dail Eireann,prev,IE2026-01-27#t271w0,2026-01-27,136,Human,Human,4.0-web
+ch135,Dail Eireann,prev,IE2026-02-05#t211w0,2026-02-05,252,Human,Human,4.0-web
+ch136,Dail Eireann,prev,IE2026-02-10#t304w0,2026-02-10,339,AI,AI,4.0-web
+ch137,Dail Eireann,prev,IE2026-02-11#t27w0,2026-02-11,298,Human,Human,4.0-web
+ch138,Dail Eireann,prev,IE2026-02-12#t239w0,2026-02-12,159,Human,Human,4.0-web
+ch139,Dail Eireann,prev,IE2026-02-17#t193w0,2026-02-17,176,Human,Human,4.0-web
+ch140,Dail Eireann,prev,IE2026-02-17#t393w0,2026-02-17,240,Human,Human,4.0-web
+ch141,Dail Eireann,prev,IE2026-02-18#t263w4,2026-02-18,328,Human,Human,4.0-web
+ch142,Dail Eireann,prev,IE2026-02-18#t343w0,2026-02-18,150,Human,Human,4.0-web
+ch143,Dail Eireann,prev,IE2026-02-24#t131w0,2026-02-24,154,Human,Human,4.0-web
+ch144,Dail Eireann,prev,IE2026-02-24#t150w0,2026-02-24,180,Human,Human,4.0-web
+ch145,Dail Eireann,prev,IE2026-02-24#t291w0,2026-02-24,281,Human,Human,4.0-web
+ch146,Dail Eireann,prev,IE2026-02-24#t60w1,2026-02-24,148,Human,Human,4.0-web
+ch147,Dail Eireann,prev,IE2026-03-04#t236w1,2026-03-04,190,Human,Human,4.0-web
+ch148,Dail Eireann,prev,IE2026-03-04#t296w1,2026-03-04,291,Human,Human,4.0-web
+ch149,Dail Eireann,prev,IE2026-03-19#t269w0,2026-03-19,249,Human,Human,4.0-web
+ch150,Dail Eireann,prev,IE2026-03-24#t143w0,2026-03-24,150,Human,Human,4.0-web
+ch151,Dail Eireann,prev,IE2026-04-22#t280w1,2026-04-22,293,Human,Human,4.0-web
+ch152,Dail Eireann,prev,IE2026-04-22#t9w1,2026-04-22,301,Human,Human,4.0-web
+ch153,Dail Eireann,prev,IE2026-04-29#t324w1,2026-04-29,326,Human,Human,4.0-web
+ch154,Dail Eireann,prev,IE2026-04-29#t352w0,2026-04-29,269,Human,Human,4.0-web
+ch155,Dail Eireann,prev,IE2026-04-29#t50w0,2026-04-29,196,AI,AI,4.0-web
+ch156,Dail Eireann,prev,IE2026-05-06#t298w0,2026-05-06,301,Mixed,Mixed,4.0-web
+ch157,Dail Eireann,prev,IE2026-05-07#t319w0,2026-05-07,232,Human,Human,4.0-web
+ch158,Dail Eireann,prev,IE2026-05-07#t32w0,2026-05-07,182,Human,Human,4.0-web
+ch159,Dail Eireann,prev,IE2026-05-12#t277w3,2026-05-12,232,Mixed,Mixed,4.0-web
+ch160,Dail Eireann,prev,IE2026-05-14#t64w0,2026-05-14,302,Human,Human,4.0-web
+ch161,Dail Eireann,prev,IE2026-05-19#t339w0,2026-05-19,130,Human,Human,4.0-web
+ch162,Dail Eireann,prev,IE2026-05-21#t106w0,2026-05-21,302,Human,Human,4.0-web
+ch163,Dail Eireann,prev,IE2026-05-27#t55w0,2026-05-27,275,Human,Human,4.0-web
+ch164,Dail Eireann,prev,IE2026-05-28#t150w0,2026-05-28,178,Human,Human,4.0-web
+ch165,Dail Eireann,prev,IE2026-05-28#t167w1,2026-05-28,328,Human,Human,4.0-web
+ch166,Dail Eireann,prev,IE2026-05-28#t94w0,2026-05-28,329,Human,Human,4.0-web
+ch167,Dail Eireann,prev,IE2026-06-10#t177w1,2026-06-10,356,Human,Human,4.0-web
+ch168,Dail Eireann,prev,IE2026-06-18#t0w0,2026-06-18,125,Human,Human,4.0-web
+ch169,Dail Eireann,prev,IE2026-06-24#t241w4,2026-06-24,292,Mixed,Mixed,4.0-web
+ch170,Dail Eireann,prev,IE2026-06-24#t277w6,2026-06-24,263,Human,Human,4.0-web
+ch171,Dail Eireann,prev,IE2026-07-01#t95w0,2026-07-01,229,Human,Human,4.0-web
+ch172,Dail Eireann,prev,IE2026-07-02#t113w0,2026-07-02,159,Human,Human,4.0-web
+ch173,Dail Eireann,prev,IE2026-07-02#t5w0,2026-07-02,309,Human,Human,4.0-web
+ch174,Dail Eireann,prev,IE2026-07-08#t219w0,2026-07-08,281,Human,Human,4.0-web
+ch175,Dail Eireann,prev,IE2026-07-08#t264w0,2026-07-08,150,Human,Human,4.0-web
+ch176,Dail Eireann,prev,IE2026-07-09#t234w0,2026-07-09,239,Human,Human,4.0-web
+ch177,Dail Eireann,prev,IE2026-07-15#t242w4,2026-07-15,313,Human,Human,4.0-web
+ch178,Dail Eireann,prev,IE2026-07-15#t256w0,2026-07-15,314,Human,Human,4.0-web
+ch179,Dail Eireann,prev,IE2026-07-16#t330w0,2026-07-16,187,Human,Human,4.0-web
+ch180,UK House of Commons,ctl,UK2018-01-11#t439w3,2018-01-11,314,Human,Human,4.0-web
+ch181,UK House of Commons,ctl,UK2018-01-15#t450w1,2018-01-15,268,Human,Human,4.0-web
+ch182,UK House of Commons,ctl,UK2018-01-22#t340w2,2018-01-22,302,Human,Human,4.0-web
+ch183,UK House of Commons,ctl,UK2018-01-30#t192w0,2018-01-30,129,Human,Human,4.0-web
+ch184,UK House of Commons,ctl,UK2018-03-26#t378w0,2018-03-26,277,Human,Human,4.0-web
+ch185,UK House of Commons,ctl,UK2018-04-27#t134w0,2018-04-27,338,Human,Human,4.0-web
+ch186,UK House of Commons,ctl,UK2018-06-12#t573w0,2018-06-12,245,Human,Human,4.0-web
+ch187,UK House of Commons,ctl,UK2018-11-13#t359w0,2018-11-13,200,Human,Human,4.0-web
+ch188,UK House of Commons,ctl,UK2018-12-03#t576w0,2018-12-03,296,Human,Human,4.0-web
+ch189,UK House of Commons,ctl,UK2018-12-11#t516w0,2018-12-11,289,Human,Human,4.0-web
+ch190,UK House of Commons,ctl,UK2019-01-14#t629w1,2019-01-14,239,Human,Human,4.0-web
+ch191,UK House of Commons,ctl,UK2019-01-24#t399w1,2019-01-24,121,Human,Human,4.0-web
+ch192,UK House of Commons,ctl,UK2019-02-04#t471w0,2019-02-04,309,Human,Human,4.0-web
+ch193,UK House of Commons,ctl,UK2019-02-21#t358w0,2019-02-21,295,Human,Human,4.0-web
+ch194,UK House of Commons,ctl,UK2019-02-25#t357w1,2019-02-25,284,Human,Human,4.0-web
+ch195,UK House of Commons,ctl,UK2019-02-26#t270w0,2019-02-26,123,Human,Human,4.0-web
+ch196,UK House of Commons,ctl,UK2019-03-07#t372w0,2019-03-07,342,Human,Human,4.0-web
+ch197,UK House of Commons,ctl,UK2019-03-14#t494w1,2019-03-14,334,Human,Human,4.0-web
+ch198,UK House of Commons,ctl,UK2019-03-28#t574w1,2019-03-28,264,Human,Human,4.0-web
+ch199,UK House of Commons,ctl,UK2019-04-10#t220w0,2019-04-10,208,Human,Human,4.0-web
+ch200,UK House of Commons,ctl,UK2019-05-08#t350w0,2019-05-08,317,Human,Human,4.0-web
+ch201,UK House of Commons,ctl,UK2019-05-22#t102w0,2019-05-22,131,Human,Human,4.0-web
+ch202,UK House of Commons,ctl,UK2019-06-10#t396w1,2019-06-10,284,Human,Human,4.0-web
+ch203,UK House of Commons,ctl,UK2019-06-13#t385w2,2019-06-13,330,Human,Human,4.0-web
+ch204,UK House of Commons,ctl,UK2019-07-11#t395w0,2019-07-11,311,Human,Human,4.0-web
+ch205,UK House of Commons,ctl,UK2019-07-22#t187w0,2019-07-22,256,Human,Human,4.0-web
+ch206,UK House of Commons,ctl,UK2019-09-03#t154w1,2019-09-03,311,Human,Human,4.0-web
+ch207,UK House of Commons,ctl,UK2019-09-03#t517w6,2019-09-03,168,Human,Human,4.0-web
+ch208,UK House of Commons,ctl,UK2019-09-04#t187w0,2019-09-04,153,Human,Human,4.0-web
+ch209,UK House of Commons,ctl,UK2020-01-07#t238w1,2020-01-07,263,Human,Human,4.0-web
+ch210,UK House of Commons,ctl,UK2020-01-07#t363w4,2020-01-07,309,Human,Human,4.0-web
+ch211,UK House of Commons,ctl,UK2020-01-29#t149w0,2020-01-29,142,Human,Human,4.0-web
+ch212,UK House of Commons,ctl,UK2020-02-03#t405w0,2020-02-03,128,Human,Human,4.0-web
+ch213,UK House of Commons,ctl,UK2020-02-24#t165w0,2020-02-24,150,Human,Human,4.0-web
+ch214,UK House of Commons,ctl,UK2020-03-12#t382w3,2020-03-12,293,Human,Human,4.0-web
+ch215,UK House of Commons,ctl,UK2020-04-29#t125w0,2020-04-29,232,Human,Human,4.0-web
+ch216,UK House of Commons,ctl,UK2020-06-03#t375w0,2020-06-03,326,Human,Human,4.0-web
+ch217,UK House of Commons,ctl,UK2020-09-08#t343w0,2020-09-08,306,Human,Human,4.0-web
+ch218,UK House of Commons,ctl,UK2020-11-18#t371w1,2020-11-18,318,Human,Human,4.0-web
+ch219,UK House of Commons,ctl,UK2020-12-03#t384w0,2020-12-03,338,Human,Human,4.0-web
+ch220,UK House of Commons,ctl,UK2021-01-25#t144w0,2021-01-25,245,Human,Human,4.0-web
+ch221,UK House of Commons,ctl,UK2021-01-28#t298w0,2021-01-28,294,Human,Human,4.0-web
+ch222,UK House of Commons,ctl,UK2021-03-04#t207w0,2021-03-04,295,Human,Human,4.0-web
+ch223,UK House of Commons,ctl,UK2021-04-12#t10w1,2021-04-12,235,Human,Human,4.0-web
+ch224,UK House of Commons,ctl,UK2021-05-25#t302w1,2021-05-25,307,Human,Human,4.0-web
+ch225,UK House of Commons,ctl,UK2021-06-07#t321w0,2021-06-07,291,Human,Human,4.0-web
+ch226,UK House of Commons,ctl,UK2021-06-14#t241w0,2021-06-14,166,Human,Human,4.0-web
+ch227,UK House of Commons,ctl,UK2021-07-05#t188w0,2021-07-05,270,Human,Human,4.0-web
+ch228,UK House of Commons,ctl,UK2021-07-13#t387w1,2021-07-13,184,Human,Human,4.0-web
+ch229,UK House of Commons,ctl,UK2021-07-22#t372w1,2021-07-22,281,Human,Human,4.0-web
+ch230,UK House of Commons,ctl,UK2021-09-13#t310w0,2021-09-13,303,Human,Human,4.0-web
+ch231,UK House of Commons,ctl,UK2021-09-15#t388w0,2021-09-15,354,Human,Human,4.0-web
+ch232,UK House of Commons,ctl,UK2022-01-24#t311w0,2022-01-24,249,Human,Human,4.0-web
+ch233,UK House of Commons,ctl,UK2022-01-25#t396w0,2022-01-25,344,Human,Human,4.0-web
+ch234,UK House of Commons,ctl,UK2022-03-03#t346w1,2022-03-03,357,Human,Human,4.0-web
+ch235,UK House of Commons,ctl,UK2022-03-21#t178w0,2022-03-21,120,Human,Human,4.0-web
+ch236,UK House of Commons,ctl,UK2022-06-16#t378w3,2022-06-16,330,Human,Human,4.0-web
+ch237,UK House of Commons,ctl,UK2022-06-16#t383w0,2022-06-16,334,Human,Human,4.0-web
+ch238,UK House of Commons,ctl,UK2022-09-08#t471w0,2022-09-08,128,Human,Human,4.0-web
+ch239,UK House of Commons,ctl,UK2022-10-27#t359w0,2022-10-27,157,Human,Human,4.0-web
+ch240,UK House of Commons,prev,UK2025-01-07#t344w0,2025-01-07,327,Human,Human,4.0-web
+ch241,UK House of Commons,prev,UK2025-01-08#t238w2,2025-01-08,171,Human,Human,4.0-web
+ch242,UK House of Commons,prev,UK2025-01-14#t83w0,2025-01-14,125,Human,Human,4.0-web
+ch243,UK House of Commons,prev,UK2025-01-21#t110w0,2025-01-21,122,Human,Human,4.0-web
+ch244,UK House of Commons,prev,UK2025-01-21#t226w0,2025-01-21,158,Human,Human,4.0-web
+ch245,UK House of Commons,prev,UK2025-01-21#t259w0,2025-01-21,138,Human,Human,4.0-web
+ch246,UK House of Commons,prev,UK2025-01-24#t47w0,2025-01-24,266,Human,Human,4.0-web
+ch247,UK House of Commons,prev,UK2025-01-27#t306w0,2025-01-27,282,Human,Human,4.0-web
+ch248,UK House of Commons,prev,UK2025-01-28#t235w0,2025-01-28,151,Human,Human,4.0-web
+ch249,UK House of Commons,prev,UK2025-01-29#t272w2,2025-01-29,331,Human,Human,4.0-web
+ch250,UK House of Commons,prev,UK2025-02-03#t353w0,2025-02-03,331,Human,Human,4.0-web
+ch251,UK House of Commons,prev,UK2025-03-03#t472w2,2025-03-03,172,Human,Human,4.0-web
+ch252,UK House of Commons,prev,UK2025-03-05#t134w0,2025-03-05,356,Human,Human,4.0-web
+ch253,UK House of Commons,prev,UK2025-03-10#t385w1,2025-03-10,322,Human,Human,4.0-web
+ch254,UK House of Commons,prev,UK2025-03-11#t249w0,2025-03-11,189,Human,Human,4.0-web
+ch255,UK House of Commons,prev,UK2025-03-17#t274w15,2025-03-17,349,Human,Human,4.0-web
+ch256,UK House of Commons,prev,UK2025-03-20#t33w0,2025-03-20,160,Human,Human,4.0-web
+ch257,UK House of Commons,prev,UK2025-03-24#t498w0,2025-03-24,351,Human,Human,4.0-web
+ch258,UK House of Commons,prev,UK2025-03-26#t302w1,2025-03-26,323,Human,Human,4.0-web
+ch259,UK House of Commons,prev,UK2025-03-26#t303w1,2025-03-26,246,Human,Human,4.0-web
+ch260,UK House of Commons,prev,UK2025-03-27#t449w1,2025-03-27,252,Human,Human,4.0-web
+ch261,UK House of Commons,prev,UK2025-03-28#t151w0,2025-03-28,340,Human,Human,4.0-web
+ch262,UK House of Commons,prev,UK2025-03-28#t152w1,2025-03-28,203,Human,Human,4.0-web
+ch263,UK House of Commons,prev,UK2025-03-28#t158w1,2025-03-28,271,Human,Human,4.0-web
+ch264,UK House of Commons,prev,UK2025-04-01#t518w1,2025-04-01,341,Human,Human,4.0-web
+ch265,UK House of Commons,prev,UK2025-04-02#t128w0,2025-04-02,190,Human,Human,4.0-web
+ch266,UK House of Commons,prev,UK2025-04-03#t426w3,2025-04-03,242,Human,Human,4.0-web
+ch267,UK House of Commons,prev,UK2025-04-23#t177w1,2025-04-23,295,Human,Human,4.0-web
+ch268,UK House of Commons,prev,UK2025-04-23#t187w0,2025-04-23,293,Human,Human,4.0-web
+ch269,UK House of Commons,prev,UK2025-04-24#t225w0,2025-04-24,122,Human,Human,4.0-web
+ch270,UK House of Commons,prev,UK2025-04-28#t405w0,2025-04-28,339,Human,Human,4.0-web
+ch271,UK House of Commons,prev,UK2025-05-07#t289w0,2025-05-07,201,Human,Human,4.0-web
+ch272,UK House of Commons,prev,UK2025-05-07#t401w0,2025-05-07,223,Human,Human,4.0-web
+ch273,UK House of Commons,prev,UK2025-05-08#t268w0,2025-05-08,217,Human,Human,4.0-web
+ch274,UK House of Commons,prev,UK2025-05-12#t209w1,2025-05-12,195,Human,Human,4.0-web
+ch275,UK House of Commons,prev,UK2025-05-13#t258w0,2025-05-13,216,Human,Human,4.0-web
+ch276,UK House of Commons,prev,UK2025-05-19#t315w1,2025-05-19,358,Human,Human,4.0-web
+ch277,UK House of Commons,prev,UK2025-05-19#t337w2,2025-05-19,344,Human,Human,4.0-web
+ch278,UK House of Commons,prev,UK2025-05-21#t356w0,2025-05-21,348,Human,Human,4.0-web
+ch279,UK House of Commons,prev,UK2025-06-03#t286w0,2025-06-03,351,Human,Human,4.0-web
+ch280,UK House of Commons,prev,UK2025-06-09#t229w0,2025-06-09,185,Human,Human,4.0-web
+ch281,UK House of Commons,prev,UK2025-06-09#t382w6,2025-06-09,337,Human,Human,4.0-web
+ch282,UK House of Commons,prev,UK2025-06-12#t414w2,2025-06-12,222,AI,AI,4.0-web
+ch283,UK House of Commons,prev,UK2025-06-12#t442w0,2025-06-12,301,Human,Human,4.0-web
+ch284,UK House of Commons,prev,UK2025-06-16#t153w5,2025-06-16,293,Human,Human,4.0-web
+ch285,UK House of Commons,prev,UK2025-06-17#t315w1,2025-06-17,126,Human,Human,4.0-web
+ch286,UK House of Commons,prev,UK2025-06-18#t212w54,2025-06-18,353,Human,Human,4.0-web
+ch287,UK House of Commons,prev,UK2025-06-18#t383w0,2025-06-18,352,Human,Human,4.0-web
+ch288,UK House of Commons,prev,UK2025-06-19#t497w0,2025-06-19,305,Human,Human,4.0-web
+ch289,UK House of Commons,prev,UK2025-06-20#t108w0,2025-06-20,143,Human,Human,4.0-web
+ch290,UK House of Commons,prev,UK2025-06-26#t334w0,2025-06-26,125,Human,Human,4.0-web
+ch291,UK House of Commons,prev,UK2025-06-30#t380w0,2025-06-30,295,Human,Human,4.0-web
+ch292,UK House of Commons,prev,UK2025-07-03#t284w0,2025-07-03,139,Human,Human,4.0-web
+ch293,UK House of Commons,prev,UK2025-07-15#t362w0,2025-07-15,354,Human,Human,4.0-web
+ch294,UK House of Commons,prev,UK2025-09-03#t435w0,2025-09-03,306,Human,Human,4.0-web
+ch295,UK House of Commons,prev,UK2025-09-08#t197w0,2025-09-08,162,Human,Human,4.0-web
+ch296,UK House of Commons,prev,UK2025-09-09#t405w1,2025-09-09,347,Human,Human,4.0-web
+ch297,UK House of Commons,prev,UK2025-09-16#t407w1,2025-09-16,197,Human,Human,4.0-web
+ch298,UK House of Commons,prev,UK2025-10-13#t528w0,2025-10-13,256,Human,Human,4.0-web
+ch299,UK House of Commons,prev,UK2025-10-15#t153w0,2025-10-15,125,Human,Human,4.0-web
+ch300,UK House of Commons,prev,UK2025-10-15#t90w0,2025-10-15,174,Human,Human,4.0-web
+ch301,UK House of Commons,prev,UK2025-10-30#t485w0,2025-10-30,343,Human,Human,4.0-web
+ch302,UK House of Commons,prev,UK2025-11-11#t391w0,2025-11-11,320,Human,Human,4.0-web
+ch303,UK House of Commons,prev,UK2025-11-13#t439w0,2025-11-13,307,Human,Human,4.0-web
+ch304,UK House of Commons,prev,UK2025-11-17#t374w2,2025-11-17,288,Human,Human,4.0-web
+ch305,UK House of Commons,prev,UK2025-11-18#t178w0,2025-11-18,153,Human,Human,4.0-web
+ch306,UK House of Commons,prev,UK2025-11-19#t190w1,2025-11-19,249,Human,Human,4.0-web
+ch307,UK House of Commons,prev,UK2025-11-24#t556w2,2025-11-24,249,Human,Human,4.0-web
+ch308,UK House of Commons,prev,UK2025-11-24#t582w1,2025-11-24,322,Human,Human,4.0-web
+ch309,UK House of Commons,prev,UK2025-11-26#t267w0,2025-11-26,267,Human,Human,4.0-web
+ch310,UK House of Commons,prev,UK2025-12-02#t346w0,2025-12-02,357,Human,Human,4.0-web
+ch311,UK House of Commons,prev,UK2025-12-03#t298w2,2025-12-03,275,Human,Human,4.0-web
+ch312,UK House of Commons,prev,UK2025-12-09#t378w1,2025-12-09,249,Human,Human,4.0-web
+ch313,UK House of Commons,prev,UK2025-12-09#t414w1,2025-12-09,199,Human,Human,4.0-web
+ch314,UK House of Commons,prev,UK2025-12-10#t521w4,2025-12-10,289,Human,Human,4.0-web
+ch315,UK House of Commons,prev,UK2025-12-15#t263w0,2025-12-15,203,Human,Human,4.0-web
+ch316,UK House of Commons,prev,UK2025-12-17#t502w0,2025-12-17,232,Human,Human,4.0-web
+ch317,UK House of Commons,prev,UK2026-01-07#t329w1,2026-01-07,142,Human,Human,4.0-web
+ch318,UK House of Commons,prev,UK2026-01-07#t339w0,2026-01-07,181,Human,Human,4.0-web
+ch319,UK House of Commons,prev,UK2026-01-08#t394w1,2026-01-08,255,Human,Human,4.0-web
+ch320,UK House of Commons,prev,UK2026-01-12#t237w0,2026-01-12,353,Human,Human,4.0-web
+ch321,UK House of Commons,prev,UK2026-01-21#t517w0,2026-01-21,138,Human,Human,4.0-web
+ch322,UK House of Commons,prev,UK2026-01-22#t326w2,2026-01-22,296,Human,Human,4.0-web
+ch323,UK House of Commons,prev,UK2026-01-26#t442w0,2026-01-26,323,Mixed,Mixed,4.0-web
+ch324,UK House of Commons,prev,UK2026-01-29#t350w0,2026-01-29,349,Human,Human,4.0-web
+ch325,UK House of Commons,prev,UK2026-02-02#t461w0,2026-02-02,149,Human,Human,4.0-web
+ch326,UK House of Commons,prev,UK2026-02-04#t138w0,2026-02-04,266,Human,Human,4.0-web
+ch327,UK House of Commons,prev,UK2026-02-04#t73w0,2026-02-04,218,Human,Human,4.0-web
+ch328,UK House of Commons,prev,UK2026-02-09#t352w2,2026-02-09,318,Mixed,Mixed,4.0-web
+ch329,UK House of Commons,prev,UK2026-02-11#t309w1,2026-02-11,250,Human,Human,4.0-web
+ch330,UK House of Commons,prev,UK2026-02-26#t284w3,2026-02-26,159,Human,Human,4.0-web
+ch331,UK House of Commons,prev,UK2026-03-05#t417w0,2026-03-05,299,Human,Human,4.0-web
+ch332,UK House of Commons,prev,UK2026-03-12#t295w0,2026-03-12,310,Human,Human,4.0-web
+ch333,UK House of Commons,prev,UK2026-03-19#t474w4,2026-03-19,303,Human,Human,4.0-web
+ch334,UK House of Commons,prev,UK2026-03-23#t256w1,2026-03-23,342,Human,Human,4.0-web
+ch335,UK House of Commons,prev,UK2026-04-14#t345w0,2026-04-14,274,AI,AI,4.0-web
+ch336,UK House of Commons,prev,UK2026-04-14#t391w0,2026-04-14,293,Human,Human,4.0-web
+ch337,UK House of Commons,prev,UK2026-04-22#t184w0,2026-04-22,160,Human,Human,4.0-web
+ch338,UK House of Commons,prev,UK2026-04-22#t343w0,2026-04-22,150,Human,Human,4.0-web
+ch339,UK House of Commons,prev,UK2026-04-27#t480w0,2026-04-27,122,Human,Human,4.0-web
+ch340,UK House of Commons,prev,UK2026-04-28#t235w1,2026-04-28,266,Human,Human,4.0-web
+ch341,UK House of Commons,prev,UK2026-04-29#t80w0,2026-04-29,133,Human,Human,4.0-web
+ch342,UK House of Commons,prev,UK2026-05-13#t81w0,2026-05-13,124,Human,Human,4.0-web
+ch343,UK House of Commons,prev,UK2026-05-14#t93w0,2026-05-14,145,Human,Human,4.0-web
+ch344,UK House of Commons,prev,UK2026-05-19#t268w0,2026-05-19,127,Human,Human,4.0-web
+ch345,UK House of Commons,prev,UK2026-05-19#t464w1,2026-05-19,216,Human,Human,4.0-web
+ch346,UK House of Commons,prev,UK2026-05-20#t221w1,2026-05-20,256,Human,Human,4.0-web
+ch347,UK House of Commons,prev,UK2026-06-02#t398w0,2026-06-02,333,Human,Human,4.0-web
+ch348,UK House of Commons,prev,UK2026-06-08#t130w0,2026-06-08,124,Human,Human,4.0-web
+ch349,UK House of Commons,prev,UK2026-06-10#t327w0,2026-06-10,211,Human,Human,4.0-web
+ch350,UK House of Commons,prev,UK2026-06-11#t241w0,2026-06-11,234,Mixed,Mixed,4.0-web
+ch351,UK House of Commons,prev,UK2026-06-18#t177w0,2026-06-18,138,Human,Human,4.0-web
+ch352,UK House of Commons,prev,UK2026-06-22#t164w0,2026-06-22,348,Human,Human,4.0-web
+ch353,UK House of Commons,prev,UK2026-06-22#t330w3,2026-06-22,348,Mixed,Mixed,4.0-web
+ch354,UK House of Commons,prev,UK2026-06-22#t405w0,2026-06-22,310,Human,Human,4.0-web
+ch355,UK House of Commons,prev,UK2026-06-23#t85w0,2026-06-23,121,Human,Human,4.0-web
+ch356,UK House of Commons,prev,UK2026-06-24#t256w0,2026-06-24,216,Human,Human,4.0-web
+ch357,UK House of Commons,prev,UK2026-06-30#t316w0,2026-06-30,133,Human,Human,4.0-web
+ch358,UK House of Commons,prev,UK2026-07-13#t474w0,2026-07-13,250,Human,Human,4.0-web
+ch359,UK House of Commons,prev,UK2026-07-15#t95w0,2026-07-15,203,Human,Human,4.0-web

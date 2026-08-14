@@ -1,0 +1,1082 @@
+{
+"ieshrt000": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2026-03-05#t364w5",
+"date": "2026-03-05",
+"speaker": "Deputy Malcolm Byrne",
+"n_words": 107
+},
+"ieshrt001": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2026-01-13#t358w0",
+"date": "2026-01-13",
+"speaker": "Deputy Peter Roche",
+"n_words": 67
+},
+"ieshrt002": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-02-27#t227w0",
+"date": "2025-02-27",
+"speaker": "Deputy Gary Gannon",
+"n_words": 85
+},
+"ieshrt003": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-06-10#t543w0",
+"date": "2025-06-10",
+"speaker": "Deputy Darragh O'Brien",
+"n_words": 70
+},
+"ieshrt004": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-05-21#t288w2",
+"date": "2025-05-21",
+"speaker": "Deputy Se\u00e1n \u00d3 Feargha\u00edl",
+"n_words": 63
+},
+"ieshrt005": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-02-18#t240w0",
+"date": "2025-02-18",
+"speaker": "Deputy Rose Conway-Walsh",
+"n_words": 103
+},
+"ieshrt006": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-05-22#t110w0",
+"date": "2025-05-22",
+"speaker": "Deputy Michael Collins",
+"n_words": 53
+},
+"ieshrt007": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2026-02-04#t134w0",
+"date": "2026-02-04",
+"speaker": "Minister of State at the Department of the Taoiseach",
+"n_words": 95
+},
+"ieshrt008": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2026-02-18#t266w1",
+"date": "2026-02-18",
+"speaker": "Deputy Louis O'Hara",
+"n_words": 90
+},
+"ieshrt009": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-11-18#t6w0",
+"date": "2025-11-18",
+"speaker": "Deputy Paul Murphy",
+"n_words": 107
+},
+"ieshrt010": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-05-21#t2w1",
+"date": "2025-05-21",
+"speaker": "Deputy Conor D. McGuinness",
+"n_words": 52
+},
+"ieshrt011": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-11-04#t141w3",
+"date": "2025-11-04",
+"speaker": "Deputy John McGuinness",
+"n_words": 90
+},
+"ieshrt012": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-07-01#t30w0",
+"date": "2025-07-01",
+"speaker": "Deputy Conor Sheehan",
+"n_words": 55
+},
+"ieshrt013": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2026-04-16#t6w0",
+"date": "2026-04-16",
+"speaker": "Deputy Conor Sheehan",
+"n_words": 56
+},
+"ieshrt014": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-11-06#t20w0",
+"date": "2025-11-06",
+"speaker": "Deputy Sin\u00e9ad Gibney",
+"n_words": 73
+},
+"ieshrt015": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2026-07-15#t115w0",
+"date": "2026-07-15",
+"speaker": "The Taoiseach",
+"n_words": 89
+},
+"ieshrt016": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-02-13#t62w0",
+"date": "2025-02-13",
+"speaker": "Deputy Ged Nash",
+"n_words": 72
+},
+"ieshrt017": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-07-10#t39w0",
+"date": "2025-07-10",
+"speaker": "Deputy John Lahart",
+"n_words": 53
+},
+"ieshrt018": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2026-06-09#t55w0",
+"date": "2026-06-09",
+"speaker": "Deputy Michael Collins",
+"n_words": 73
+},
+"ieshrt019": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2026-02-18#t395w0",
+"date": "2026-02-18",
+"speaker": "Deputy Matt Carthy",
+"n_words": 61
+},
+"ieshrt020": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-09-30#t182w0",
+"date": "2025-09-30",
+"speaker": "Deputy Tony McCormack",
+"n_words": 93
+},
+"ieshrt021": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-05-07#t36w0",
+"date": "2025-05-07",
+"speaker": "Deputy Michael Collins",
+"n_words": 97
+},
+"ieshrt022": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2026-01-28#t21w4",
+"date": "2026-01-28",
+"speaker": "Deputy Eoin Hayes",
+"n_words": 60
+},
+"ieshrt023": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-06-17#t314w1",
+"date": "2025-06-17",
+"speaker": "Deputy Danny Healy-Rae",
+"n_words": 102
+},
+"ieshrt024": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-03-27#t178w0",
+"date": "2025-03-27",
+"speaker": "Deputy Miche\u00e1l Carrigy",
+"n_words": 89
+},
+"ieshrt025": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2026-03-25#t202w0",
+"date": "2026-03-25",
+"speaker": "Deputy Peter 'Chap' Cleere",
+"n_words": 50
+},
+"ieshrt026": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2026-06-10#t192w1",
+"date": "2026-06-10",
+"speaker": "Deputy John McGuinness",
+"n_words": 92
+},
+"ieshrt027": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2026-04-22#t200w0",
+"date": "2026-04-22",
+"speaker": "The Taoiseach",
+"n_words": 110
+},
+"ieshrt028": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2026-06-24#t154w0",
+"date": "2026-06-24",
+"speaker": "Deputy Joanna Byrne",
+"n_words": 65
+},
+"ieshrt029": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-06-17#t153w0",
+"date": "2025-06-17",
+"speaker": "The Taoiseach",
+"n_words": 59
+},
+"ieshrt030": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2026-03-04#t174w0",
+"date": "2026-03-04",
+"speaker": "Deputy Aengus \u00d3 Snodaigh",
+"n_words": 55
+},
+"ieshrt031": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-07-09#t357w2",
+"date": "2025-07-09",
+"speaker": "Deputy Eoin \u00d3 Broin",
+"n_words": 66
+},
+"ieshrt032": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2026-02-12#t286w1",
+"date": "2026-02-12",
+"speaker": "Deputy Charlie McConalogue",
+"n_words": 64
+},
+"ieshrt033": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2026-07-08#t22w2",
+"date": "2026-07-08",
+"speaker": "Deputy Holly Cairns",
+"n_words": 60
+},
+"ieshrt034": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-06-19#t30w0",
+"date": "2025-06-19",
+"speaker": "Deputy Sin\u00e9ad Gibney",
+"n_words": 54
+},
+"ieshrt035": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-10-22#t156w0",
+"date": "2025-10-22",
+"speaker": "The Taoiseach",
+"n_words": 63
+},
+"ieshrt036": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-04-01#t556w1",
+"date": "2025-04-01",
+"speaker": "Deputy Michael Cahill",
+"n_words": 116
+},
+"ieshrt037": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2026-02-11#t97w2",
+"date": "2026-02-11",
+"speaker": "Deputy Mary Lou McDonald",
+"n_words": 78
+},
+"ieshrt038": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-12-16#t174w1",
+"date": "2025-12-16",
+"speaker": "Deputy David Cullinane",
+"n_words": 80
+},
+"ieshrt039": {
+"chamber": "ie",
+"code": "ie",
+"stratum": "shrt",
+"seg_id": "IE2025-09-18#t277w0",
+"date": "2025-09-18",
+"speaker": "Deputy Jennifer Carroll MacNeill",
+"n_words": 85
+},
+"cashrt000": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-11-24#t15w0",
+"date": "2025-11-24",
+"speaker": "Corey Hogan",
+"n_words": 101
+},
+"cashrt001": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-05-28#t494w0",
+"date": "2026-05-28",
+"speaker": "Hon. Lena Metlege Diab (Minister of Immigration, Refugees and Citizenship, Lib.)",
+"n_words": 57
+},
+"cashrt002": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-12-04#t330w0",
+"date": "2025-12-04",
+"speaker": "Michael Cooper",
+"n_words": 103
+},
+"cashrt003": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-10-09#t293w0",
+"date": "2025-10-09",
+"speaker": "Hon. Mark Gerretsen",
+"n_words": 91
+},
+"cashrt004": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-11-07#t131w0",
+"date": "2025-11-07",
+"speaker": "Ginette Lavack (Parliamentary Secretary to the Minister of Indigenous Services, Lib.)",
+"n_words": 79
+},
+"cashrt005": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-11-25#t40w0",
+"date": "2025-11-25",
+"speaker": "Zoe Royer",
+"n_words": 66
+},
+"cashrt006": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-11-20#t232w0",
+"date": "2025-11-20",
+"speaker": "Tako Van Popta",
+"n_words": 111
+},
+"cashrt007": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-09-23#t199w0",
+"date": "2025-09-23",
+"speaker": "Larry Brock (Brantford\u2014Brant South\u2014Six Nations, CPC)",
+"n_words": 92
+},
+"cashrt008": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-06-13#t55w0",
+"date": "2025-06-13",
+"speaker": "Ryan Turnbull (Parliamentary Secretary to the Minister of Finance and National Revenue and to the Secretary of State (Canada Revenue Agency and Financial Institutions), Lib.)",
+"n_words": 57
+},
+"cashrt009": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-11-17#t96w0",
+"date": "2025-11-17",
+"speaker": "Right Hon. Mark Carney (Prime Minister, Lib.)",
+"n_words": 76
+},
+"cashrt010": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-05-29#t205w0",
+"date": "2025-05-29",
+"speaker": "Frank Caputo (Kamloops\u2014Thompson\u2014Nicola, CPC)",
+"n_words": 94
+},
+"cashrt011": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-03-24#t203w0",
+"date": "2026-03-24",
+"speaker": "Hon. M\u00e9lanie Joly (Minister of Industry and Minister responsible for Canada Economic Development for Quebec Regions, Lib.)",
+"n_words": 64
+},
+"cashrt012": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-06-17#t257w0",
+"date": "2026-06-17",
+"speaker": "Melissa Lantsman",
+"n_words": 83
+},
+"cashrt013": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-06-11#t694w0",
+"date": "2025-06-11",
+"speaker": "Hon. Tim Hodgson",
+"n_words": 50
+},
+"cashrt014": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-11-06#t218w0",
+"date": "2025-11-06",
+"speaker": "Hon. Ruby Sahota (Secretary of State (Combatting Crime), Lib.)",
+"n_words": 97
+},
+"cashrt015": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-09-19#t72w0",
+"date": "2025-09-19",
+"speaker": "Hon. Sean Fraser (Minister of Justice and Attorney General of Canada and Minister responsible for the Atlantic Canada Opportunities Agency, Lib.)",
+"n_words": 106
+},
+"cashrt016": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-03-12#t192w0",
+"date": "2026-03-12",
+"speaker": "Rhonda Kirkland (Oshawa, CPC)",
+"n_words": 88
+},
+"cashrt017": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-02-10#t247w0",
+"date": "2026-02-10",
+"speaker": "Hon. Kevin Lamoureux (Parliamentary Secretary to the Leader of the Government in the House of Commons, Lib.)",
+"n_words": 115
+},
+"cashrt018": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-03-26#t227w0",
+"date": "2026-03-26",
+"speaker": "Mel Arnold (Kamloops\u2014Shuswap\u2014Central Rockies, CPC)",
+"n_words": 80
+},
+"cashrt019": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-04-29#t104w0",
+"date": "2026-04-29",
+"speaker": "Chris Bittle (St. Catharines, Lib.)",
+"n_words": 63
+},
+"cashrt020": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-10-30#t139w0",
+"date": "2025-10-30",
+"speaker": "Hon. Rechie Valdez (Minister of Women and Gender Equality and Secretary of State (Small Business and Tourism), Lib.)",
+"n_words": 103
+},
+"cashrt021": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-06-15#t107w0",
+"date": "2026-06-15",
+"speaker": "Hon. Buckley Belanger (Secretary of State (Rural Development), Lib.)",
+"n_words": 102
+},
+"cashrt022": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-06-09#t772w0",
+"date": "2025-06-09",
+"speaker": "Arpan Khanna",
+"n_words": 57
+},
+"cashrt023": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-11-27#t302w3",
+"date": "2025-11-27",
+"speaker": "Hon. Kevin Lamoureux (Parliamentary Secretary to the Leader of the Government in the House of Commons, Lib.)",
+"n_words": 80
+},
+"cashrt024": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-04-14#t199w0",
+"date": "2026-04-14",
+"speaker": "Hon. Rebecca Alty (Minister of Crown-Indigenous Relations, Lib.)",
+"n_words": 95
+},
+"cashrt025": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-12-05#t68w0",
+"date": "2025-12-05",
+"speaker": "Sophie Chatel (Parliamentary Secretary to the Minister of Agriculture and Agri-Food, Lib.)",
+"n_words": 89
+},
+"cashrt026": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-06-03#t71w0",
+"date": "2026-06-03",
+"speaker": "Hon. Pierre Poilievre (Leader of the Opposition, CPC)",
+"n_words": 97
+},
+"cashrt027": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-06-20#t18w0",
+"date": "2025-06-20",
+"speaker": "Hon. Kevin Lamoureux",
+"n_words": 79
+},
+"cashrt028": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-10-10#t108w0",
+"date": "2025-10-10",
+"speaker": "Corey Hogan (Parliamentary Secretary to the Minister of Energy and Natural Resources, Lib.)",
+"n_words": 90
+},
+"cashrt029": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-03-24#t233w0",
+"date": "2026-03-24",
+"speaker": "Hon. Kevin Lamoureux (Parliamentary Secretary to the Leader of the Government in the House of Commons, Lib.)",
+"n_words": 76
+},
+"cashrt030": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-09-16#t316w0",
+"date": "2025-09-16",
+"speaker": "Melissa Lantsman",
+"n_words": 101
+},
+"cashrt031": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-06-10#t93w0",
+"date": "2026-06-10",
+"speaker": "Hon. David McGuinty (Minister of National Defence, Lib.)",
+"n_words": 101
+},
+"cashrt032": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-05-29#t101w0",
+"date": "2026-05-29",
+"speaker": "Branden Leslie (Portage\u2014Lisgar, CPC)",
+"n_words": 103
+},
+"cashrt033": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-02-10#t179w0",
+"date": "2026-02-10",
+"speaker": "Hon. Fran\u00e7ois-Philippe Champagne (Minister of Finance and National Revenue, Lib.)",
+"n_words": 65
+},
+"cashrt034": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-04-23#t100w0",
+"date": "2026-04-23",
+"speaker": "Scott Anderson",
+"n_words": 108
+},
+"cashrt035": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-02-12#t209w0",
+"date": "2026-02-12",
+"speaker": "Hon. Heath MacDonald (Minister of Agriculture and Agri-Food, Lib.)",
+"n_words": 105
+},
+"cashrt036": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-06-04#t192w0",
+"date": "2026-06-04",
+"speaker": "Hon. Heath MacDonald (Minister of Agriculture and Agri-Food, Lib.)",
+"n_words": 119
+},
+"cashrt037": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-03-12#t311w0",
+"date": "2026-03-12",
+"speaker": "Hon. Kevin Lamoureux",
+"n_words": 97
+},
+"cashrt038": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2025-11-27#t208w0",
+"date": "2025-11-27",
+"speaker": "Hon. Patty Hajdu (Minister of Jobs and Families and Minister responsible for the Federal Economic Development Agency for Northern Ontario, Lib.)",
+"n_words": 104
+},
+"cashrt039": {
+"chamber": "ca",
+"code": "ca",
+"stratum": "shrt",
+"seg_id": "CA2026-04-21#t175w0",
+"date": "2026-04-21",
+"speaker": "Hon. Wayne Long (Secretary of State (Canada Revenue Agency and Financial Institutions), Lib.)",
+"n_words": 108
+},
+"ukshrt000": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-07-15#t163w0",
+"date": "2025-07-15",
+"speaker": "Steve Witherden",
+"n_words": 64
+},
+"ukshrt001": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-03-03#t412w0",
+"date": "2025-03-03",
+"speaker": "Harriet Cross",
+"n_words": 69
+},
+"ukshrt002": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-01-19#t533w0",
+"date": "2026-01-19",
+"speaker": "David Chadwick",
+"n_words": 68
+},
+"ukshrt003": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-02-25#t355w5",
+"date": "2026-02-25",
+"speaker": "Monica Harding",
+"n_words": 78
+},
+"ukshrt004": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-10-23#t163w0",
+"date": "2025-10-23",
+"speaker": "Ellie Reeves",
+"n_words": 117
+},
+"ukshrt005": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-09-04#t375w0",
+"date": "2025-09-04",
+"speaker": "Stephen Morgan",
+"n_words": 99
+},
+"ukshrt006": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-07-09#t459w0",
+"date": "2026-07-09",
+"speaker": "Lewis Atkinson",
+"n_words": 82
+},
+"ukshrt007": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-07-17#t89w0",
+"date": "2025-07-17",
+"speaker": "Gareth Thomas",
+"n_words": 103
+},
+"ukshrt008": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-01-09#t244w0",
+"date": "2025-01-09",
+"speaker": "Darren Jones",
+"n_words": 111
+},
+"ukshrt009": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-01-07#t595w0",
+"date": "2026-01-07",
+"speaker": "John Healey",
+"n_words": 52
+},
+"ukshrt010": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-03-18#t187w0",
+"date": "2025-03-18",
+"speaker": "Liz Kendall",
+"n_words": 97
+},
+"ukshrt011": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-04-24#t269w0",
+"date": "2025-04-24",
+"speaker": "Lucy Powell",
+"n_words": 100
+},
+"ukshrt012": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-06-30#t86w0",
+"date": "2026-06-30",
+"speaker": "Jim Shannon",
+"n_words": 84
+},
+"ukshrt013": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-06-04#t42w0",
+"date": "2026-06-04",
+"speaker": "Angela Eagle",
+"n_words": 72
+},
+"ukshrt014": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-06-04#t29w0",
+"date": "2025-06-04",
+"speaker": "Christine Jardine",
+"n_words": 82
+},
+"ukshrt015": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-04-22#t259w3",
+"date": "2026-04-22",
+"speaker": "Torsten Bell",
+"n_words": 88
+},
+"ukshrt016": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-02-02#t212w0",
+"date": "2026-02-02",
+"speaker": "Rupa Huq",
+"n_words": 83
+},
+"ukshrt017": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-05-22#t286w0",
+"date": "2025-05-22",
+"speaker": "John Hayes",
+"n_words": 99
+},
+"ukshrt018": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-03-17#t129w0",
+"date": "2026-03-17",
+"speaker": "Sarah Sackman",
+"n_words": 62
+},
+"ukshrt019": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-07-07#t268w0",
+"date": "2026-07-07",
+"speaker": "Iain Duncan Smith",
+"n_words": 98
+},
+"ukshrt020": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-03-23#t187w0",
+"date": "2026-03-23",
+"speaker": "Dave Doogan",
+"n_words": 95
+},
+"ukshrt021": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-01-27#t421w0",
+"date": "2026-01-27",
+"speaker": "Alistair Strathern",
+"n_words": 68
+},
+"ukshrt022": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-02-24#t209w0",
+"date": "2025-02-24",
+"speaker": "David Lammy",
+"n_words": 105
+},
+"ukshrt023": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-02-23#t199w0",
+"date": "2026-02-23",
+"speaker": "Christine Jardine",
+"n_words": 106
+},
+"ukshrt024": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-03-26#t103w0",
+"date": "2026-03-26",
+"speaker": "Keir Mather",
+"n_words": 110
+},
+"ukshrt025": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-04-30#t210w0",
+"date": "2025-04-30",
+"speaker": "Roger Gale",
+"n_words": 72
+},
+"ukshrt026": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-12-18#t282w0",
+"date": "2025-12-18",
+"speaker": "Alan Campbell",
+"n_words": 59
+},
+"ukshrt027": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-03-10#t34w0",
+"date": "2026-03-10",
+"speaker": "Rachel Reeves",
+"n_words": 115
+},
+"ukshrt028": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-03-18#t280w0",
+"date": "2025-03-18",
+"speaker": "Liz Kendall",
+"n_words": 57
+},
+"ukshrt029": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-10-28#t478w3",
+"date": "2025-10-28",
+"speaker": "Max Wilkinson",
+"n_words": 101
+},
+"ukshrt030": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-07-07#t187w0",
+"date": "2026-07-07",
+"speaker": "Andrew Snowden",
+"n_words": 101
+},
+"ukshrt031": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-05-21#t456w0",
+"date": "2025-05-21",
+"speaker": "John Hayes",
+"n_words": 106
+},
+"ukshrt032": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-02-05#t56w0",
+"date": "2025-02-05",
+"speaker": "Anneliese Dodds",
+"n_words": 56
+},
+"ukshrt033": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-01-29#t275w0",
+"date": "2026-01-29",
+"speaker": "Pat McFadden",
+"n_words": 70
+},
+"ukshrt034": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-01-20#t82w0",
+"date": "2026-01-20",
+"speaker": "Chris Elmore",
+"n_words": 94
+},
+"ukshrt035": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-02-10#t233w0",
+"date": "2026-02-10",
+"speaker": "John Martin McDonnell",
+"n_words": 79
+},
+"ukshrt036": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-11-26#t182w0",
+"date": "2025-11-26",
+"speaker": "Layla Moran",
+"n_words": 85
+},
+"ukshrt037": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-06-03#t216w0",
+"date": "2026-06-03",
+"speaker": "Vikki Slade",
+"n_words": 83
+},
+"ukshrt038": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2025-11-26#t67w0",
+"date": "2025-11-26",
+"speaker": "Douglas Alexander",
+"n_words": 76
+},
+"ukshrt039": {
+"chamber": "uk",
+"code": "uk",
+"stratum": "shrt",
+"seg_id": "UK2026-03-23#t93w0",
+"date": "2026-03-23",
+"speaker": "Si\u00e2n Berry",
+"n_words": 72
+}
+}

@@ -26,9 +26,31 @@ Stages
 
 Usage: python3 aus_vic_harvest.py {plan|download} [ASSEMBLY|COUNCIL ...]
 """
+# BROWSER USER-AGENT: A CONSCIOUS EXCEPTION, NOT AN INHERITED DEFAULT
+#
+# This script identifies as Chrome because the host's Azure WAF answers plain
+# library user-agents with 403. Reviewed and accepted 2026-08-13 (Matthew): a
+# UA filter that every real browser passes is a speed bump against
+# indiscriminate scrapers, not an access decision about this study, and the
+# Hansard it guards is a public record the parliament serves freely to any
+# browser.
+#
+# The exception is bounded, and the boundary is the point. Nothing else is
+# disguised: no UA rotation, no proxies, no other header spoofing, no attempt
+# on a challenge-response check, and the 1 req/s host-wide gate is honoured.
+# Where a site's block was aimed at us rather than at scrapers generally, the
+# answer this study gave was to stop -- parliament.wa.gov.au's WAF and PEI's
+# Radware Bot Manager were both reported as blocked and routed around via the
+# Internet Archive or left as documented gaps, never defeated.
+#
+# So: do not read this line as licence to spoof elsewhere. It is one recorded
+# decision about one host.
+
+
 import html as htmllib
 import json
 from collections import Counter
+import os
 import re
 import sys
 import threading
@@ -44,7 +66,11 @@ HOST = "https://hansard.parliament.vic.gov.au/"
 # The host is behind an Azure WAF that 403s plain library user-agents.
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
       "Chrome/126.0.0.0 Safari/537.36")
-WINDOWS = [(2006, 2010), (2015, 2019)]
+# The window pair above is the original drift design; the sources
+# publish continuously. S10_FILL / S10_SUFFIX backfill the skipped
+# years (2011-14, 2020-24) without overwriting the first pass.
+WINDOWS = ([(2011, 2014), (2020, 2024)]
+           if os.environ.get("S10_FILL") else [(2006, 2010), (2015, 2019)])
 MONTHS = ["January", "February", "March", "April", "May", "June", "July",
           "August", "September", "October", "November", "December"]
 # Activity types that carry no member speech worth scoring: tabled matter,
@@ -209,7 +235,7 @@ def plan(houses):
         say("  split %s %s %s (%d docs) -> %d bins"
             % (house, d, act, cnt, len(bins)))
 
-    json.dump(cells, open(HERE / "aus_vic_manifest.json", "w"), indent=1)
+    json.dump(cells, open(HERE / f"aus_vic_manifest{os.environ.get('S10_SUFFIX','')}.json", "w"), indent=1)
     say("PLAN DONE cells=%d sitting_days=%s" % (len(cells), dict(sitting)))
 
 
@@ -220,7 +246,7 @@ def body_of(h):
 
 
 def download():
-    rows = json.load(open(HERE / "aus_vic_manifest.json"))
+    rows = json.load(open(HERE / f"aus_vic_manifest{os.environ.get('S10_SUFFIX','')}.json"))
     # Assembly first: it is the chamber the study needs, Council is a bonus.
     rows.sort(key=lambda r: (r["chamber"] != "ASSEMBLY", r["date"], r["name"]))
     raw = HERE / "aus_vic_raw"

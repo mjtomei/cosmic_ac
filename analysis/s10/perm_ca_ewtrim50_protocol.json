@@ -1,0 +1,56 @@
+{
+ "corpus": "Canada House of Commons ewtrim50",
+ "seed": 2923474423,
+ "pre_words": 4171560,
+ "post_words": 1922586,
+ "n_instrument": 407,
+ "primary_mean_logFC": -0.11811,
+ "placebo_median": -0.26465,
+ "placebo_p99": -0.1723,
+ "placebo_max": -0.12584,
+ "primary_p": 0.0,
+ "n_placebo": 1000,
+ "sweep": [
+  {
+   "threshold_per100k": 1,
+   "n_words": 275,
+   "ratio": 0.819,
+   "p": 0.967
+  },
+  {
+   "threshold_per100k": 2,
+   "n_words": 314,
+   "ratio": 0.819,
+   "p": 0.971
+  },
+  {
+   "threshold_per100k": 5,
+   "n_words": 356,
+   "ratio": 0.8028,
+   "p": 0.996
+  },
+  {
+   "threshold_per100k": 10,
+   "n_words": 370,
+   "ratio": 0.7875,
+   "p": 1.0
+  },
+  {
+   "threshold_per100k": 20,
+   "n_words": 383,
+   "ratio": 0.8084,
+   "p": 0.995
+  },
+  {
+   "threshold_per100k": 50,
+   "n_words": 395,
+   "ratio": 0.7699,
+   "p": 1.0
+  }
+ ],
+ "formal_register_ratio": 1.0038,
+ "bootstrap_ci": [
+  0.837,
+  0.8627
+ ]
+}

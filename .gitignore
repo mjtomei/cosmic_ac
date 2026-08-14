@@ -54,8 +54,38 @@ analysis/s10/permeation/
 !analysis/s10/us/*.py
 !analysis/s10/provinces/
 !analysis/s10/provinces/*.py
+
+# RE-IGNORE the data inside those directories. Un-ignoring a DIRECTORY makes
+# git descend into it again, so the two lines above silently undid the whole
+# rule: 38 raw-transcript directories were left merely UNTRACKED rather than
+# ignored, and a single `git add -A` would have staged licensed source text
+# into a public repo. Found 2026-08-13 during the chamber backfill. The
+# un-ignores must stay narrow (scripts only) and every data directory under
+# them must be named again here.
+analysis/s10/us/*/
+analysis/s10/provinces/*_raw*/
+# ...and the same names WITHOUT a trailing slash: two of the raw dirs
+# (aus_nsw2025_raw, aus_qld_2025_raw) are symlinks, and a dir-only pattern
+# does not match a symlink.
+analysis/s10/provinces/*_raw
+analysis/s10/provinces/work/
+analysis/s10/provinces/*.out
+analysis/s10/provinces/*.log
 analysis/s10/*/xml_*/
 analysis/s10/*/zips/
+
+# Pangram upload pools: RTF/CSV batches carrying Hansard verbatim.
+analysis/s10/pangram_ch/
+analysis/s10/pangram_ch2/
+analysis/s10/pangram_genre/
+analysis/s10/pangram_x/
+analysis/s10/pangram_rtf/
+analysis/s10/pangram_web_scans/
+analysis/s10/pangram_shortband/
+analysis/s10/pangram_tier_check/
+analysis/s10/pangram_ch_rescore/
+analysis/s10/pangram_mb_redraw/
+analysis/s10/olmo_ladder/
 
 # Full third-party transcripts: quote from them in notes, never redistribute whole
 reading/notes/*-transcript.txt
@@ -92,3 +122,81 @@ analysis/**/*.pdf
 # corpus text. The manifest (ids + metadata) and the verdicts (labels only)
 # are tracked, so the arm is reproducible from build_shortband.py + corpora.
 analysis/s10/pangram_shortband/
+analysis/s10/pangram_tier_check/
+analysis/s10/pangram_ch_rescore/
+analysis/s10/pangram_mb_redraw/
+
+# Superseded Manitoba raw extraction (176MB) -- kept on disk so the pre-fix
+# verdicts stay reproducible, referenced by S10-WRITEUP-DRAFT footnote r42mb,
+# but not tracked; rebuildable from the archived downloads.
+analysis/s10/provinces/superseded/
+# Rebuildable per-member vector cache (14MB): python build_member_vectors.py
+analysis/s10/member_word_vectors.json
+
+# --- 2026-08-14 push hygiene ---
+# Root-level scratch: downloaded papers and scrape debris. Never for a public
+# repo (several are copyrighted PDFs); listed by name so new project files at
+# root still surface in git status.
+/ddg.html
+/ddg.sh
+/fetch.sh
+/g.tmp
+/gao*.pdf
+/gao*.png
+/gao.txt
+/gb.json
+/grepd.py
+/hacker-2004-privatizing-risk.pdf
+/m4.html
+/mj2.html
+/mj3.html
+/mj.sh
+/s1.html
+/sa.html
+/sa2.html
+/sc.html
+/sel4sosp.pdf
+/sel4sosp.txt
+/tocs.pdf
+/tocs.txt
+
+# Corpus-derived text that must not be republished: the redraw upload batch
+# (Hansard segments as RTF; rebuild with build_cafed_ctl_redraw.py --build)
+# and the scored-segment capture (full transcript text; rebuild with
+# build_member_vectors.py).
+analysis/s10/pangram_cafed_ctl2/
+analysis/s10/scored_seg_texts.jsonl
+
+# provinces/ and us/ hold licensed transcripts, scraped third-party prose and
+# download machinery. Default-ignore everything, then re-include our own code
+# and the study-produced covariate outputs (structured fields we derived; at
+# most short attributed quotes). The pre-push hook enforces the same boundary
+# independently.
+analysis/s10/provinces/*
+!analysis/s10/provinces/*.py
+!analysis/s10/provinces/OCCUPATION_CODING.md
+!analysis/s10/provinces/occupation_strings.json
+!analysis/s10/provinces/occupation_coding.json
+!analysis/s10/provinces/class_origin.json
+!analysis/s10/provinces/member_allsource.json
+!analysis/s10/provinces/member_bios.json
+!analysis/s10/provinces/wiki_depth.json
+!analysis/s10/provinces/aus_state_covariates.csv
+!analysis/s10/provinces/*_education*.json
+!analysis/s10/provinces/*_education*.csv
+!analysis/s10/provinces/*_education_occupation.json
+!analysis/s10/provinces/ns_member_bios.json
+!analysis/s10/provinces/sk_legislature_bios.json
+analysis/s10/us/*
+!analysis/s10/us/*.py
+
+# Pangram upload batches and screen pools: verbatim Hansard text, rebuildable
+# from the corpora + build scripts. The generation PROMPTS are 45-word Hansard
+# excerpts and stay out too; the generated continuations themselves are our
+# own model output and are tracked.
+analysis/s10/web_batches/
+analysis/s10/gov_screen_pool.json
+analysis/s10/go_pos_screen_pool.json
+analysis/s10/pangram_gov_variants.csv
+analysis/s10/rlhf_gen/prompts.json
+analysis/s10/rlhf_gen/prompts_all.json

@@ -1,0 +1,30 @@
+{
+ "corpus": "Dail Eireann",
+ "protocol": "v1.1",
+ "seed": 2292295421,
+ "pre_words": 36680118,
+ "post_words": 18657027,
+ "pre_sittings": 488,
+ "n_placebo": 1000,
+ "arms": {
+  "style": {
+   "n_words_total": 407,
+   "n_words_present": 370,
+   "primary_mean_logFC": 0.06995,
+   "placebo_median": -0.01042,
+   "placebo_max": 0.07774,
+   "excess": 0.08037,
+   "p": 0.002
+  },
+  "content": {
+   "n_words_total": 493,
+   "n_words_present": 198,
+   "primary_mean_logFC": -0.40633,
+   "placebo_median": -0.0523,
+   "placebo_max": 0.10191,
+   "excess": -0.35403,
+   "p": 1.0
+  }
+ },
+ "style_minus_content": 0.4344
+}

@@ -8,10 +8,21 @@ Two eras, two entirely different sources:
     2006-07 Transitional Assembly, and the restored Assembly from May 2007).
     A turn opens with <p class="B1SpeakersName"><strong>Name</strong>: ...;
     continuation paragraphs are B3BodyText / B3BodyTextnoindent.
-  * 2015-2019 -- data.niassembly.gov.uk's Hansard open-data API, one JSON
+  * 2012-2026 -- data.niassembly.gov.uk's Hansard open-data API, one JSON
     document per sitting (GetHansardComponentsByReportId_JSON).  Components
-    arrive in document order; a Speaker (*) component opens a turn and the
+    arrive in document order; a Speaker component opens a turn and the
     Spoken Text components that follow are its paragraphs.
+
+    The API itself has two markup eras.  From 2015 the ComponentType carries a
+    parenthesised role -- "Speaker (MlaName)", "Speaker (Speaker)",
+    "Speaker (DeputySpeaker)" -- and the chair is identified from that role.
+    Before that (its earliest report is 10 September 2012) the type is the bare
+    string "Speaker" and the role is not encoded anywhere, so the chair has to
+    be identified from the printed label, exactly as the 2006-2010 archive era
+    already does: "Mr Speaker:", "Mr Deputy Speaker:", "Mr Principal Deputy
+    Speaker:" all match CHAIR.  No file from 2015 onwards contains a bare
+    "Speaker" component (checked across all 248 built api_*.json files), so
+    this branch cannot reach the already-built corpus.
 
 Excluded in both eras: the chair (Speaker, Deputy/Principal Deputy/Acting
 Speaker, Madam Speaker), headings, motions as tabled, tabled oral/written
@@ -64,7 +75,10 @@ QUOTE_CLS = {"q1quoteindented", "q2quotecentred", "q1quoteindentednospace"}
 NEUTRAL_CLS = {"timeperiod"}          # skip, but do not end the turn
 PARA_RE = re.compile(r'<p\s+class="([^"]+)"[^>]*>(.*?)</p>', re.S | re.I)
 STRONG = re.compile(r"<strong>(.*?)</strong>\s*:?\s*", re.S | re.I)
-DATE_FROM_NAME = re.compile(r"arch_(\d{4}-\d{2}-\d{2})")
+# arch_* is the frozen archive site (cp1252); live_* is the same Word-export
+# markup served by the modern CMS on the live per-day pages (UTF-8), which is
+# how ni_gap_extract.py reaches 2011-12-12 .. 2012-03-27
+DATE_FROM_NAME = re.compile(r"(?:arch|live)_(\d{4}-\d{2}-\d{2})")
 
 
 def clean(raw):
@@ -80,9 +94,9 @@ def units_of(text):
     return sentences(text) if len(text.split()) > MAX_WORDS else [text]
 
 
-def extract_archive(path, prov="NI"):
+def extract_archive(path, prov="NI", encoding="cp1252"):
     date = DATE_FROM_NAME.search(path.name).group(1)
-    h = path.read_bytes().decode("cp1252", "replace")
+    h = path.read_bytes().decode(encoding, "replace")
     out, turn, speaker, units = [], 0, None, []
     raw_words = 0
 
@@ -124,7 +138,8 @@ def extract_archive(path, prov="NI"):
 CHAIR_TYPE = re.compile(
     r"^Speaker \((Speaker|DeputySpeaker|PrincipalDeputySpeaker|ActingSpeaker"
     r"|TemporarySpeaker|Special)\)$")
-SPEAKER_TYPE = re.compile(r"^Speaker \(")
+# "Speaker (MlaName)" from 2015 on; bare "Speaker" in the 2012-2014 documents
+SPEAKER_TYPE = re.compile(r"^Speaker(?: \(|$)")
 BODY_TYPE = {"Spoken Text"}
 NEUTRAL_TYPE = {"Time"}
 def extract_api(path, prov="NI"):

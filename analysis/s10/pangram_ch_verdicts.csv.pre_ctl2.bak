@@ -1,0 +1,661 @@
+file,chamber,code,stratum,seg_id,date,speaker,n_words,pangram,version,version_source
+cactl000,Canada House of Commons,ca,ctl,CA2019-01-31#t228w2,2019-01-31,"Ms. Rachael Harder (Lethbridge, CPC)",290,Human,4.0-web,dashboard history 2026-08-13
+cactl001,Canada House of Commons,ca,ctl,CA2022-12-05#t32w1,2022-12-05,"Mr. Daniel Blaikie (Elmwood—Transcona, NDP)",257,Human,4.0-web,dashboard history 2026-08-13
+cactl002,Canada House of Commons,ca,ctl,CA2022-05-12#t109w2,2022-05-12,"Mr. Francesco Sorbara (Vaughan—Woodbridge, Lib.)",239,Human,4.0-web,dashboard history 2026-08-13
+cactl003,Canada House of Commons,ca,ctl,CA2020-07-08#t274w1,2020-07-08,"Mr. Jagmeet Singh (Burnaby South, NDP)",354,Human,4.0-web,dashboard history 2026-08-13
+cactl004,Canada House of Commons,ca,ctl,CA2021-12-01#t327w0,2021-12-01,"Ms. Elizabeth May (Saanich—Gulf Islands, GP)",344,Human,4.0-web,dashboard history 2026-08-13
+cactl005,Canada House of Commons,ca,ctl,CA2019-12-10#t40w1,2019-12-10,"Hon. Candice Bergen (Portage—Lisgar, CPC)",307,Human,4.0-web,dashboard history 2026-08-13
+cactl006,Canada House of Commons,ca,ctl,CA2020-11-06#t158w1,2020-11-06,"Mr. Matt Jeneroux (Edmonton Riverbend, CPC)",327,Human,4.0-web,dashboard history 2026-08-13
+cactl007,Canada House of Commons,ca,ctl,CA2022-03-31#t261w2,2022-03-31,"Mr. Robert Kitchen (Souris—Moose Mountain, CPC)",259,Human,4.0-web,dashboard history 2026-08-13
+cactl008,Canada House of Commons,ca,ctl,CA2019-02-07#t258w5,2019-02-07,"Mr. Sean Fraser (Parliamentary Secretary to the Minister of Environment and Climate Change, Lib.)",243,Human,4.0-web,dashboard history 2026-08-13
+cactl009,Canada House of Commons,ca,ctl,CA2018-06-14#t317w1,2018-06-14,"Mr. Kyle Peterson (Newmarket—Aurora, Lib.)",293,Human,4.0-web,dashboard history 2026-08-13
+cactl010,Canada House of Commons,ca,ctl,CA2022-03-29#t283w0,2022-03-29,"Mr. Taylor Bachrach (Skeena—Bulkley Valley, NDP)",137,Human,4.0-web,dashboard history 2026-08-13
+cactl011,Canada House of Commons,ca,ctl,CA2018-09-18#t218w2,2018-09-18,"Mrs. Celina Caesar-Chavannes (Whitby, Lib.)",340,Human,4.0-web,dashboard history 2026-08-13
+cactl012,Canada House of Commons,ca,ctl,CA2018-06-18#t351w2,2018-06-18,"Mr. Larry Miller (Bruce—Grey—Owen Sound, CPC)",289,Human,4.0-web,dashboard history 2026-08-13
+cactl013,Canada House of Commons,ca,ctl,CA2022-09-29#t98w0,2022-09-29,Mr. Mark Strahl,121,Human,4.0-web,dashboard history 2026-08-13
+cactl014,Canada House of Commons,ca,ctl,CA2019-02-28#t63w0,2019-02-28,Mr. Randall Garrison,211,Human,4.0-web,dashboard history 2026-08-13
+cactl015,Canada House of Commons,ca,ctl,CA2021-02-01#t217w0,2021-02-01,Ms. Elizabeth May,133,Human,4.0-web,dashboard history 2026-08-13
+cactl016,Canada House of Commons,ca,ctl,CA2022-11-01#t134w0,2022-11-01,"Mr. Blaine Calkins (Red Deer—Lacombe, CPC)",206,Human,4.0-web,dashboard history 2026-08-13
+cactl017,Canada House of Commons,ca,ctl,CA2018-04-23#t73w0,2018-04-23,"Hon. Peter Van Loan (York—Simcoe, CPC)",138,Human,4.0-web,dashboard history 2026-08-13
+cactl018,Canada House of Commons,ca,ctl,CA2018-10-18#t248w2,2018-10-18,"Mr. Paul Lefebvre (Parliamentary Secretary to the Minister of Natural Resources, Lib.)",351,Human,4.0-web,dashboard history 2026-08-13
+cactl019,Canada House of Commons,ca,ctl,CA2018-06-19#t220w0,2018-06-19,"Hon. K. Kellie Leitch (Simcoe—Grey, CPC)",293,Human,4.0-web,dashboard history 2026-08-13
+cactl020,Canada House of Commons,ca,ctl,CA2020-11-23#t185w0,2020-11-23,"Ms. Elizabeth May (Saanich—Gulf Islands, GP)",148,Human,4.0-web,dashboard history 2026-08-13
+cactl021,Canada House of Commons,ca,ctl,CA2020-02-24#t2w0,2020-02-24,Hon. Marco Mendicino,174,Human,4.0-web,dashboard history 2026-08-13
+cactl022,Canada House of Commons,ca,ctl,CA2018-11-22#t209w3,2018-11-22,"Mr. Darrell Samson (Sackville—Preston—Chezzetcook, Lib.)",298,Human,4.0-web,dashboard history 2026-08-13
+cactl023,Canada House of Commons,ca,ctl,CA2022-04-26#t302w1,2022-04-26,"Mr. Eric Duncan (Stormont—Dundas—South Glengarry, CPC)",339,Human,4.0-web,dashboard history 2026-08-13
+cactl024,Canada House of Commons,ca,ctl,CA2022-02-07#t193w0,2022-02-07,"Mr. Marty Morantz (Charleswood—St. James—Assiniboia—Headingley, CPC)",213,Human,4.0-web,dashboard history 2026-08-13
+cactl025,Canada House of Commons,ca,ctl,CA2022-10-24#t168w4,2022-10-24,"Mr. Garnett Genuis (Sherwood Park—Fort Saskatchewan, CPC)",348,Human,4.0-web,dashboard history 2026-08-13
+cactl026,Canada House of Commons,ca,ctl,CA2020-10-27#t283w4,2020-10-27,"Mr. Adam Vaughan (Parliamentary Secretary to the Minister of Families, Children and Social Development (Housing), Lib.)",337,Human,4.0-web,dashboard history 2026-08-13
+cactl027,Canada House of Commons,ca,ctl,CA2022-10-17#t259w0,2022-10-17,Ms. Pam Damoff,150,Human,4.0-web,dashboard history 2026-08-13
+cactl028,Canada House of Commons,ca,ctl,CA2021-12-15#t12w0,2021-12-15,"Ms. Julie Dzerowicz (Davenport, Lib.)",207,Human,4.0-web,dashboard history 2026-08-13
+cactl029,Canada House of Commons,ca,ctl,CA2021-06-21#t191w0,2021-06-21,"Mr. Don Davies (Vancouver Kingsway, NDP)",217,Human,4.0-web,dashboard history 2026-08-13
+cactl030,Canada House of Commons,ca,ctl,CA2021-05-27#t238w0,2021-05-27,Mr. Damien Kurek,331,Human,4.0-web,dashboard history 2026-08-13
+cactl031,Canada House of Commons,ca,ctl,CA2022-10-18#t324w0,2022-10-18,"Mr. Warren Steinley (Regina—Lewvan, CPC)",122,Human,4.0-web,dashboard history 2026-08-13
+cactl032,Canada House of Commons,ca,ctl,CA2020-09-24#t18w3,2020-09-24,"Hon. Candice Bergen (Portage—Lisgar, CPC)",353,Human,4.0-web,dashboard history 2026-08-13
+cactl033,Canada House of Commons,ca,ctl,CA2021-12-15#t0w0,2021-12-15,"Hon. Greg Fergus (Hull—Aylmer, Lib.)",130,Human,4.0-web,dashboard history 2026-08-13
+cactl034,Canada House of Commons,ca,ctl,CA2020-02-03#t62w2,2020-02-03,"Mr. Ted Falk (Provencher, CPC)",354,Human,4.0-web,dashboard history 2026-08-13
+cactl035,Canada House of Commons,ca,ctl,CA2020-12-10#t233w4,2020-12-10,"Mr. Paul Manly (Nanaimo—Ladysmith, GP)",129,Human,4.0-web,dashboard history 2026-08-13
+cactl036,Canada House of Commons,ca,ctl,CA2018-09-25#t227w3,2018-09-25,"Mrs. Cheryl Gallant (Renfrew—Nipissing—Pembroke, CPC)",324,Human,4.0-web,dashboard history 2026-08-13
+cactl037,Canada House of Commons,ca,ctl,CA2018-12-07#t166w0,2018-12-07,"Mr. Adam Vaughan (Parliamentary Secretary to the Minister of Families, Children and Social Development (Housing and Urban Affairs), Lib.)",176,Human,4.0-web,dashboard history 2026-08-13
+cactl038,Canada House of Commons,ca,ctl,CA2018-09-24#t275w6,2018-09-24,"Mr. Blaine Calkins (Red Deer—Lacombe, CPC)",332,Human,4.0-web,dashboard history 2026-08-13
+cactl039,Canada House of Commons,ca,ctl,CA2020-11-24#t105w0,2020-11-24,"Mr. Lloyd Longfield (Guelph, Lib.)",126,Human,4.0-web,dashboard history 2026-08-13
+cactl040,Canada House of Commons,ca,ctl,CA2021-05-06#t379w1,2021-05-06,"Mr. Robert Oliphant (Parliamentary Secretary to the Minister of Foreign Affairs, Lib.)",346,Human,4.0-web,dashboard history 2026-08-13
+cactl041,Canada House of Commons,ca,ctl,CA2022-04-07#t113w0,2022-04-07,"Mr. Gord Johns (Courtenay—Alberni, NDP)",125,Human,4.0-web,dashboard history 2026-08-13
+cactl042,Canada House of Commons,ca,ctl,CA2022-04-25#t278w0,2022-04-25,Ms. Elizabeth May,154,Human,4.0-web,dashboard history 2026-08-13
+cactl043,Canada House of Commons,ca,ctl,CA2022-05-17#t68w0,2022-05-17,"Mr. Greg McLean (Calgary Centre, CPC)",303,Human,4.0-web,dashboard history 2026-08-13
+cactl044,Canada House of Commons,ca,ctl,CA2020-09-25#t18w1,2020-09-25,"Mr. Robert Oliphant (Parliamentary Secretary to the Minister of Foreign Affairs, Lib.)",260,Human,4.0-web,dashboard history 2026-08-13
+cactl045,Canada House of Commons,ca,ctl,CA2021-06-16#t0w0,2021-06-16,"Mr. Kody Blois (Kings—Hants, Lib.)",168,Human,4.0-web,dashboard history 2026-08-13
+cactl046,Canada House of Commons,ca,ctl,CA2020-09-28#t172w0,2020-09-28,"Mr. Garnett Genuis (Sherwood Park—Fort Saskatchewan, CPC)",318,Human,4.0-web,dashboard history 2026-08-13
+cactl047,Canada House of Commons,ca,ctl,CA2021-04-16#t103w0,2021-04-16,"Mr. Sean Fraser (Parliamentary Secretary to the Deputy Prime Minister and Minister of Finance and to the Minister of Middle Class Prosperity and Associate Minister of Finance, Lib.)",125,Human,4.0-web,dashboard history 2026-08-13
+cactl048,Canada House of Commons,ca,ctl,CA2018-09-20#t71w0,2018-09-20,"Hon. John McKay (Scarborough—Guildwood, Lib.)",206,Human,4.0-web,dashboard history 2026-08-13
+cactl049,Canada House of Commons,ca,ctl,CA2022-11-29#t244w3,2022-11-29,Hon. Marc Miller,348,Human,4.0-web,dashboard history 2026-08-13
+cactl050,Canada House of Commons,ca,ctl,CA2021-04-12#t27w2,2021-04-12,"Hon. Ed Fast (Abbotsford, CPC)",344,Human,4.0-web,dashboard history 2026-08-13
+cactl051,Canada House of Commons,ca,ctl,CA2020-11-06#t149w3,2020-11-06,"Mr. Randeep Sarai (Surrey Centre, Lib.)",315,Human,4.0-web,dashboard history 2026-08-13
+cactl052,Canada House of Commons,ca,ctl,CA2022-03-31#t69w4,2022-03-31,"Mr. Larry Maguire (Brandon—Souris, CPC)",228,Human,4.0-web,dashboard history 2026-08-13
+cactl053,Canada House of Commons,ca,ctl,CA2022-02-08#t92w0,2022-02-08,"Mrs. Cathay Wagantall (Yorkton—Melville, CPC)",143,Human,4.0-web,dashboard history 2026-08-13
+cactl054,Canada House of Commons,ca,ctl,CA2020-12-03#t179w0,2020-12-03,"Hon. Seamus O'Regan (Minister of Natural Resources, Lib.)",130,Human,4.0-web,dashboard history 2026-08-13
+cactl055,Canada House of Commons,ca,ctl,CA2021-01-25#t370w0,2021-01-25,Mr. Francis Drouin,178,Human,4.0-web,dashboard history 2026-08-13
+cactl056,Canada House of Commons,ca,ctl,CA2022-05-06#t197w1,2022-05-06,"Ms. Marilyn Gladu (Sarnia—Lambton, CPC)",333,Human,4.0-web,dashboard history 2026-08-13
+cactl057,Canada House of Commons,ca,ctl,CA2018-10-04#t54w1,2018-10-04,"Mr. Ali Ehsassi (Willowdale, Lib.)",302,Human,4.0-web,dashboard history 2026-08-13
+cactl058,Canada House of Commons,ca,ctl,CA2018-02-15#t62w0,2018-02-15,"Mr. Mark Gerretsen (Kingston and the Islands, Lib.)",204,Human,4.0-web,dashboard history 2026-08-13
+cactl059,Canada House of Commons,ca,ctl,CA2020-11-17#t73w4,2020-11-17,"Mr. Robert Oliphant (Parliamentary Secretary to the Minister of Foreign Affairs, Lib.)",171,Human,4.0-web,dashboard history 2026-08-13
+caprev000,Canada House of Commons,ca,prev,CA2026-06-01#t246w2,2026-06-01,"Kelly Block (Carlton Trail—Eagle Creek, CPC)",349,Human,4.0-web,dashboard history 2026-08-13
+caprev001,Canada House of Commons,ca,prev,CA2026-05-05#t334w0,2026-05-05,"Robert Morrissey (Egmont, Lib.)",360,Human,4.0-web,dashboard history 2026-08-13
+caprev002,Canada House of Commons,ca,prev,CA2025-12-02#t105w0,2025-12-02,"Hon. Kevin Lamoureux (Parliamentary Secretary to the Leader of the Government in the House of Commons, Lib.)",139,Human,4.0-web,dashboard history 2026-08-13
+caprev003,Canada House of Commons,ca,prev,CA2025-06-20#t252w0,2025-06-20,"Hon. Chrystia Freeland (Minister of Transport and Internal Trade, Lib.)",313,Human,4.0-web,dashboard history 2026-08-13
+caprev004,Canada House of Commons,ca,prev,CA2025-11-24#t88w0,2025-11-24,"Arnold Viersen (Peace River—Westlock, CPC)",167,AI,4.0-web,dashboard history 2026-08-13
+caprev005,Canada House of Commons,ca,prev,CA2025-11-03#t216w3,2025-11-03,"Caroline Desrochers (Parliamentary Secretary to the Minister of Housing and Infrastructure, Lib.)",337,Human,4.0-web,dashboard history 2026-08-13
+caprev006,Canada House of Commons,ca,prev,CA2026-04-16#t31w0,2026-04-16,Michael Cooper,138,Human,4.0-web,dashboard history 2026-08-13
+caprev007,Canada House of Commons,ca,prev,CA2026-06-05#t165w1,2026-06-05,"Elizabeth May (Saanich—Gulf Islands, GP)",300,Human,4.0-web,dashboard history 2026-08-13
+caprev008,Canada House of Commons,ca,prev,CA2026-01-26#t241w1,2026-01-26,"Garnett Genuis (Sherwood Park—Fort Saskatchewan, CPC)",251,Human,4.0-web,dashboard history 2026-08-13
+caprev009,Canada House of Commons,ca,prev,CA2026-04-14#t248w0,2026-04-14,Eric Duncan,188,Human,4.0-web,dashboard history 2026-08-13
+caprev010,Canada House of Commons,ca,prev,CA2025-06-16#t338w0,2025-06-16,"John Barlow (Foothills, CPC)",290,Human,4.0-web,dashboard history 2026-08-13
+caprev011,Canada House of Commons,ca,prev,CA2025-10-07#t52w0,2025-10-07,Jamie Schmale,129,Human,4.0-web,dashboard history 2026-08-13
+caprev012,Canada House of Commons,ca,prev,CA2025-06-16#t34w0,2025-06-16,"Richard Bragdon (Tobique—Mactaquac, CPC)",128,Human,4.0-web,dashboard history 2026-08-13
+caprev013,Canada House of Commons,ca,prev,CA2025-11-24#t82w0,2025-11-24,"John Brassard (Barrie South—Innisfil, CPC)",175,Mixed,4.0-web,dashboard history 2026-08-13
+caprev014,Canada House of Commons,ca,prev,CA2026-02-02#t287w0,2026-02-02,Andrew Lawton,163,Human,4.0-web,dashboard history 2026-08-13
+caprev015,Canada House of Commons,ca,prev,CA2025-10-02#t328w0,2025-10-02,"Cathay Wagantall (Yorkton—Melville, CPC)",122,Human,4.0-web,dashboard history 2026-08-13
+caprev016,Canada House of Commons,ca,prev,CA2026-04-22#t180w0,2026-04-22,"Carol Anstey (Long Range Mountains, CPC)",298,Human,4.0-web,dashboard history 2026-08-13
+caprev017,Canada House of Commons,ca,prev,CA2026-06-05#t174w0,2026-06-05,"Tamara Kronis (Nanaimo—Ladysmith, CPC)",304,AI,4.0-web,dashboard history 2026-08-13
+caprev018,Canada House of Commons,ca,prev,CA2025-11-28#t192w1,2025-11-28,"Michael Cooper (St. Albert—Sturgeon River, CPC)",261,Human,4.0-web,dashboard history 2026-08-13
+caprev019,Canada House of Commons,ca,prev,CA2026-06-10#t131w0,2026-06-10,"Dan Mazier (Riding Mountain, CPC)",344,AI,4.0-web,dashboard history 2026-08-13
+caprev020,Canada House of Commons,ca,prev,CA2025-06-03#t81w0,2025-06-03,"Grant Jackson (Brandon—Souris, CPC)",312,Human,4.0-web,dashboard history 2026-08-13
+caprev021,Canada House of Commons,ca,prev,CA2025-10-08#t159w0,2025-10-08,"Jeremy Patzer (Swift Current—Grasslands—Kindersley, CPC)",120,Human,4.0-web,dashboard history 2026-08-13
+caprev022,Canada House of Commons,ca,prev,CA2025-12-02#t101w0,2025-12-02,Branden Leslie,155,Human,4.0-web,dashboard history 2026-08-13
+caprev023,Canada House of Commons,ca,prev,CA2026-01-27#t255w1,2026-01-27,"Patrick Weiler (West Vancouver—Sunshine Coast—Sea to Sky Country, Lib.)",291,Human,4.0-web,dashboard history 2026-08-13
+caprev024,Canada House of Commons,ca,prev,CA2025-10-07#t228w3,2025-10-07,"Bob Zimmer (Prince George—Peace River—Northern Rockies, CPC)",250,Mixed,4.0-web,dashboard history 2026-08-13
+caprev025,Canada House of Commons,ca,prev,CA2026-03-13#t182w0,2026-03-13,"Shannon Stubbs (Lakeland, CPC)",287,Human,4.0-web,dashboard history 2026-08-13
+caprev026,Canada House of Commons,ca,prev,CA2026-02-23#t10w0,2026-02-23,Hon. Gregor Robertson,226,Human,4.0-web,dashboard history 2026-08-13
+caprev027,Canada House of Commons,ca,prev,CA2025-06-16#t91w0,2025-06-16,"Dan Muys (Flamborough—Glanbrook—Brant North, CPC)",310,Mixed,4.0-web,dashboard history 2026-08-13
+caprev028,Canada House of Commons,ca,prev,CA2025-09-15#t196w6,2025-09-15,"Frank Caputo (Kamloops—Thompson—Nicola, CPC)",356,Human,4.0-web,dashboard history 2026-08-13
+caprev029,Canada House of Commons,ca,prev,CA2025-06-17#t15w2,2025-06-17,"Kyle Seeback (Dufferin—Caledon, CPC)",321,Human,4.0-web,dashboard history 2026-08-13
+caprev030,Canada House of Commons,ca,prev,CA2026-05-06#t168w0,2026-05-06,"Dan Mazier (Riding Mountain, CPC)",215,Human,4.0-web,dashboard history 2026-08-13
+caprev031,Canada House of Commons,ca,prev,CA2026-03-09#t364w0,2026-03-09,"Garnett Genuis (Sherwood Park—Fort Saskatchewan, CPC)",124,Human,4.0-web,dashboard history 2026-08-13
+caprev032,Canada House of Commons,ca,prev,CA2026-06-09#t159w0,2026-06-09,"Blaine Calkins (Ponoka—Didsbury, CPC)",129,Human,4.0-web,dashboard history 2026-08-13
+caprev033,Canada House of Commons,ca,prev,CA2026-04-17#t186w0,2026-04-17,"Maggie Chi (Parliamentary Secretary to the Minister of Health, Lib.)",278,Human,4.0-web,dashboard history 2026-08-13
+caprev034,Canada House of Commons,ca,prev,CA2026-06-03#t139w0,2026-06-03,"Vincent Ho (Richmond Hill South, CPC)",164,Mixed,4.0-web,dashboard history 2026-08-13
+caprev035,Canada House of Commons,ca,prev,CA2026-06-16#t277w3,2026-06-16,"Dan Mazier (Riding Mountain, CPC)",303,Mixed,4.0-web,dashboard history 2026-08-13
+caprev036,Canada House of Commons,ca,prev,CA2025-06-12#t598w1,2025-06-12,"Hon. Kevin Lamoureux (Parliamentary Secretary to the Leader of the Government in the House of Commons, Lib.)",295,Human,4.0-web,dashboard history 2026-08-13
+caprev037,Canada House of Commons,ca,prev,CA2026-02-05#t303w3,2026-02-05,"Jonathan Rowe (Terra Nova—The Peninsulas, CPC)",306,Human,4.0-web,dashboard history 2026-08-13
+caprev038,Canada House of Commons,ca,prev,CA2026-01-28#t13w0,2026-01-28,"Jeremy Patzer (Swift Current—Grasslands—Kindersley, CPC)",201,Human,4.0-web,dashboard history 2026-08-13
+caprev039,Canada House of Commons,ca,prev,CA2025-11-20#t299w1,2025-11-20,"Jessica Fancy (South Shore—St. Margarets, Lib.)",272,AI,4.0-web,dashboard history 2026-08-13
+caprev040,Canada House of Commons,ca,prev,CA2026-03-12#t132w0,2026-03-12,"Michael Coteau (Scarborough—Woburn, Lib.)",156,AI,4.0-web,dashboard history 2026-08-13
+caprev041,Canada House of Commons,ca,prev,CA2025-06-12#t448w2,2025-06-12,"Sima Acan (Oakville West, Lib.)",302,Human,4.0-web,dashboard history 2026-08-13
+caprev042,Canada House of Commons,ca,prev,CA2025-10-01#t3w0,2025-10-01,"Stephanie Kusie (Calgary Midnapore, CPC)",172,Human,4.0-web,dashboard history 2026-08-13
+caprev043,Canada House of Commons,ca,prev,CA2025-10-27#t225w0,2025-10-27,Hon. Kevin Lamoureux,138,Human,4.0-web,dashboard history 2026-08-13
+caprev044,Canada House of Commons,ca,prev,CA2025-11-18#t147w0,2025-11-18,"John Barlow (Foothills, CPC)",168,Human,4.0-web,dashboard history 2026-08-13
+caprev045,Canada House of Commons,ca,prev,CA2026-06-16#t251w0,2026-06-16,Hon. Gregor Robertson,196,Human,4.0-web,dashboard history 2026-08-13
+caprev046,Canada House of Commons,ca,prev,CA2026-04-21#t213w1,2026-04-21,"Brendan Hanley (Parliamentary Secretary to the Minister of Northern and Arctic Affairs, Lib.)",302,AI,4.0-web,dashboard history 2026-08-13
+caprev047,Canada House of Commons,ca,prev,CA2025-06-17#t277w3,2025-06-17,"Branden Leslie (Portage—Lisgar, CPC)",306,AI,4.0-web,dashboard history 2026-08-13
+caprev048,Canada House of Commons,ca,prev,CA2026-04-14#t124w1,2026-04-14,"Michael Guglielmin (Vaughan—Woodbridge, CPC)",331,Mixed,4.0-web,dashboard history 2026-08-13
+caprev049,Canada House of Commons,ca,prev,CA2025-09-15#t196w7,2025-09-15,"Frank Caputo (Kamloops—Thompson—Nicola, CPC)",352,Human,4.0-web,dashboard history 2026-08-13
+caprev050,Canada House of Commons,ca,prev,CA2025-12-05#t183w6,2025-12-05,"Tamara Jansen (Cloverdale—Langley City, CPC)",211,AI,4.0-web,dashboard history 2026-08-13
+caprev051,Canada House of Commons,ca,prev,CA2026-02-10#t121w2,2026-02-10,"Julie Dzerowicz (Davenport, Lib.)",320,AI,4.0-web,dashboard history 2026-08-13
+caprev052,Canada House of Commons,ca,prev,CA2026-02-03#t65w0,2026-02-03,Harb Gill,145,AI,4.0-web,dashboard history 2026-08-13
+caprev053,Canada House of Commons,ca,prev,CA2025-11-03#t230w0,2025-11-03,Vincent Ho,245,AI,4.0-web,dashboard history 2026-08-13
+caprev054,Canada House of Commons,ca,prev,CA2025-09-17#t209w0,2025-09-17,"Rhonda Kirkland (Oshawa, CPC)",141,Human,4.0-web,dashboard history 2026-08-13
+caprev055,Canada House of Commons,ca,prev,CA2025-06-17#t409w6,2025-06-17,"Hon. Kevin Lamoureux (Parliamentary Secretary to the Leader of the Government in the House of Commons, Lib.)",360,Human,4.0-web,dashboard history 2026-08-13
+caprev056,Canada House of Commons,ca,prev,CA2026-01-27#t241w3,2026-01-27,"Tamara Kronis (Nanaimo—Ladysmith, CPC)",319,AI,4.0-web,dashboard history 2026-08-13
+caprev057,Canada House of Commons,ca,prev,CA2025-10-01#t110w0,2025-10-01,"Gord Johns (Courtenay—Alberni, NDP)",206,Human,4.0-web,dashboard history 2026-08-13
+caprev058,Canada House of Commons,ca,prev,CA2026-05-06#t12w0,2026-05-06,"Corey Tochor (Saskatoon—University, CPC)",141,Human,4.0-web,dashboard history 2026-08-13
+caprev059,Canada House of Commons,ca,prev,CA2025-11-25#t334w1,2025-11-25,"Hon. Pierre Poilievre (Leader of the Opposition, CPC)",241,Human,4.0-web,dashboard history 2026-08-13
+caprev060,Canada House of Commons,ca,prev,CA2026-02-12#t218w3,2026-02-12,"Hon. Arielle Kayabaga (London West, Lib.)",321,AI,4.0-web,dashboard history 2026-08-13
+caprev061,Canada House of Commons,ca,prev,CA2025-12-03#t305w1,2025-12-03,"Scot Davidson (New Tecumseth—Gwillimbury, CPC)",337,Mixed,4.0-web,dashboard history 2026-08-13
+caprev062,Canada House of Commons,ca,prev,CA2026-04-23#t254w5,2026-04-23,Hon. Andrew Scheer,146,Human,4.0-web,dashboard history 2026-08-13
+caprev063,Canada House of Commons,ca,prev,CA2025-12-09#t61w0,2025-12-09,"Hon. Mike Lake (Leduc—Wetaskiwin, CPC)",196,Human,4.0-web,dashboard history 2026-08-13
+caprev064,Canada House of Commons,ca,prev,CA2025-06-12#t254w1,2025-06-12,"Michael Cooper (St. Albert—Sturgeon River, CPC)",285,Human,4.0-web,dashboard history 2026-08-13
+caprev065,Canada House of Commons,ca,prev,CA2025-10-31#t130w0,2025-10-31,"Michael Kram (Regina—Wascana, CPC)",140,Human,4.0-web,dashboard history 2026-08-13
+caprev066,Canada House of Commons,ca,prev,CA2025-06-12#t237w0,2025-06-12,"Jacob Mantle (York—Durham, CPC)",184,Human,4.0-web,dashboard history 2026-08-13
+caprev067,Canada House of Commons,ca,prev,CA2025-12-04#t243w2,2025-12-04,"Anna Roberts (King—Vaughan, CPC)",356,Human,4.0-web,dashboard history 2026-08-13
+caprev068,Canada House of Commons,ca,prev,CA2025-11-24#t80w0,2025-11-24,"Leah Gazan (Winnipeg Centre, NDP)",153,AI,4.0-web,dashboard history 2026-08-13
+caprev069,Canada House of Commons,ca,prev,CA2026-02-03#t17w0,2026-02-03,"Rhonda Kirkland (Oshawa, CPC)",232,Mixed,4.0-web,dashboard history 2026-08-13
+caprev070,Canada House of Commons,ca,prev,CA2026-06-18#t60w0,2026-06-18,"Gord Johns (Courtenay—Alberni, NDP)",154,Human,4.0-web,dashboard history 2026-08-13
+caprev071,Canada House of Commons,ca,prev,CA2025-11-25#t221w2,2025-11-25,"Eric Duncan (Stormont—Dundas—Glengarry, CPC)",353,Human,4.0-web,dashboard history 2026-08-13
+caprev072,Canada House of Commons,ca,prev,CA2025-12-03#t256w1,2025-12-03,"Wade Grant (Parliamentary Secretary to the Minister of Environment and Climate Change, Lib.)",323,Human,4.0-web,dashboard history 2026-08-13
+caprev073,Canada House of Commons,ca,prev,CA2025-12-08#t54w1,2025-12-08,"Rosemarie Falk (Battlefords—Lloydminster—Meadow Lake, CPC)",279,Human,4.0-web,dashboard history 2026-08-13
+caprev074,Canada House of Commons,ca,prev,CA2026-05-29#t148w1,2026-05-29,"Eric Duncan (Stormont—Dundas—Glengarry, CPC)",269,Human,4.0-web,dashboard history 2026-08-13
+caprev075,Canada House of Commons,ca,prev,CA2026-03-23#t36w2,2026-03-23,"Andrew Lawton (Elgin—St. Thomas—London South, CPC)",343,Human,4.0-web,dashboard history 2026-08-13
+caprev076,Canada House of Commons,ca,prev,CA2025-12-01#t187w2,2025-12-01,"Grant Jackson (Brandon—Souris, CPC)",315,AI,4.0-web,dashboard history 2026-08-13
+caprev077,Canada House of Commons,ca,prev,CA2025-06-03#t95w3,2025-06-03,"John-Paul Danko (Hamilton West—Ancaster—Dundas, Lib.)",359,Human,4.0-web,dashboard history 2026-08-13
+caprev078,Canada House of Commons,ca,prev,CA2025-11-27#t17w4,2025-11-27,"Vincent Ho (Richmond Hill South, CPC)",310,Mixed,4.0-web,dashboard history 2026-08-13
+caprev079,Canada House of Commons,ca,prev,CA2026-02-04#t2w0,2026-02-04,"Philip Lawrence (Northumberland—Clarke, CPC)",127,Human,4.0-web,dashboard history 2026-08-13
+caprev080,Canada House of Commons,ca,prev,CA2026-06-16#t277w0,2026-06-16,"Dan Mazier (Riding Mountain, CPC)",347,Mixed,4.0-web,dashboard history 2026-08-13
+caprev081,Canada House of Commons,ca,prev,CA2025-12-03#t128w0,2025-12-03,Hon. Kody Blois,188,Human,4.0-web,dashboard history 2026-08-13
+caprev082,Canada House of Commons,ca,prev,CA2025-06-02#t285w0,2025-06-02,"Connie Cody (Cambridge, CPC)",277,Human,4.0-web,dashboard history 2026-08-13
+caprev083,Canada House of Commons,ca,prev,CA2026-02-09#t3w4,2026-02-09,"Stephanie Kusie (Calgary Midnapore, CPC)",126,Human,4.0-web,dashboard history 2026-08-13
+caprev084,Canada House of Commons,ca,prev,CA2025-06-12#t126w1,2025-06-12,"Hon. Kody Blois (Parliamentary Secretary to the Prime Minister, Lib.)",329,Human,4.0-web,dashboard history 2026-08-13
+caprev085,Canada House of Commons,ca,prev,CA2026-04-29#t137w0,2026-04-29,"Hon. Kevin Lamoureux (Parliamentary Secretary to the Leader of the Government in the House of Commons, Lib.)",158,Human,4.0-web,dashboard history 2026-08-13
+caprev086,Canada House of Commons,ca,prev,CA2025-09-22#t301w0,2025-09-22,Wade Grant,195,Human,4.0-web,dashboard history 2026-08-13
+caprev087,Canada House of Commons,ca,prev,CA2026-04-27#t63w0,2026-04-27,"Shannon Miedema (Halifax, Lib.)",341,Human,4.0-web,dashboard history 2026-08-13
+caprev088,Canada House of Commons,ca,prev,CA2026-03-12#t312w0,2026-03-12,"William Stevenson (Yellowhead, CPC)",329,Human,4.0-web,dashboard history 2026-08-13
+caprev089,Canada House of Commons,ca,prev,CA2025-10-30#t51w0,2025-10-30,"Hon. Kevin Lamoureux (Parliamentary Secretary to the Leader of the Government in the House of Commons, Lib.)",183,Human,4.0-web,dashboard history 2026-08-13
+caprev090,Canada House of Commons,ca,prev,CA2025-05-30#t132w0,2025-05-30,"Gord Johns (Courtenay—Alberni, NDP)",193,Human,4.0-web,dashboard history 2026-08-13
+caprev091,Canada House of Commons,ca,prev,CA2025-10-02#t74w0,2025-10-02,"Hon. Ruby Sahota (Secretary of State (Combatting Crime), Lib.)",125,Human,4.0-web,dashboard history 2026-08-13
+caprev092,Canada House of Commons,ca,prev,CA2025-06-19#t283w10,2025-06-19,"Greg McLean (Calgary Centre, CPC)",255,Mixed,4.0-web,dashboard history 2026-08-13
+caprev093,Canada House of Commons,ca,prev,CA2026-04-29#t5w0,2026-04-29,"Eric Duncan (Stormont—Dundas—Glengarry, CPC)",169,AI,4.0-web,dashboard history 2026-08-13
+caprev094,Canada House of Commons,ca,prev,CA2026-03-24#t250w0,2026-03-24,Charles Sousa,143,Human,4.0-web,dashboard history 2026-08-13
+caprev095,Canada House of Commons,ca,prev,CA2025-12-04#t111w0,2025-12-04,"Amarjeet Gill (Brampton West, CPC)",311,AI,4.0-web,dashboard history 2026-08-13
+caprev096,Canada House of Commons,ca,prev,CA2026-04-23#t93w4,2026-04-23,"Scott Anderson (Vernon—Lake Country—Monashee, CPC)",255,Human,4.0-web,dashboard history 2026-08-13
+caprev097,Canada House of Commons,ca,prev,CA2025-11-06#t58w4,2025-11-06,"Pauline Rochefort (Parliamentary Secretary to the Secretary of State (Rural Development), Lib.)",125,Human,4.0-web,dashboard history 2026-08-13
+caprev098,Canada House of Commons,ca,prev,CA2025-10-22#t129w0,2025-10-22,"Billy Morin (Edmonton Northwest, CPC)",342,Human,4.0-web,dashboard history 2026-08-13
+caprev099,Canada House of Commons,ca,prev,CA2026-04-23#t86w1,2026-04-23,"Kristina Tesser Derksen (Milton East—Halton Hills South, Lib.)",340,Human,4.0-web,dashboard history 2026-08-13
+caprev100,Canada House of Commons,ca,prev,CA2026-05-06#t169w3,2026-05-06,"Raquel Dancho (Kildonan—St. Paul, CPC)",345,AI,4.0-web,dashboard history 2026-08-13
+caprev101,Canada House of Commons,ca,prev,CA2025-10-09#t9w0,2025-10-09,Melissa Lantsman,175,Human,4.0-web,dashboard history 2026-08-13
+caprev102,Canada House of Commons,ca,prev,CA2025-11-04#t162w0,2025-11-04,"Hon. Andrew Scheer (Regina—Qu'Appelle, CPC)",136,Human,4.0-web,dashboard history 2026-08-13
+caprev103,Canada House of Commons,ca,prev,CA2025-11-21#t7w2,2025-11-21,"Ned Kuruc (Hamilton East—Stoney Creek, CPC)",328,AI,4.0-web,dashboard history 2026-08-13
+caprev104,Canada House of Commons,ca,prev,CA2025-10-23#t68w3,2025-10-23,"Mike Dawson (Miramichi—Grand Lake, CPC)",223,AI,4.0-web,dashboard history 2026-08-13
+caprev105,Canada House of Commons,ca,prev,CA2025-09-22#t98w0,2025-09-22,"Connie Cody (Cambridge, CPC)",200,Human,4.0-web,dashboard history 2026-08-13
+caprev106,Canada House of Commons,ca,prev,CA2025-10-29#t178w0,2025-10-29,"Sukhman Gill (Abbotsford—South Langley, CPC)",360,AI,4.0-web,dashboard history 2026-08-13
+caprev107,Canada House of Commons,ca,prev,CA2025-09-25#t57w2,2025-09-25,"Randy Hoback (Prince Albert, CPC)",308,Human,4.0-web,dashboard history 2026-08-13
+caprev108,Canada House of Commons,ca,prev,CA2025-10-03#t44w0,2025-10-03,"Yasir Naqvi (Ottawa Centre, Lib.)",150,Human,4.0-web,dashboard history 2026-08-13
+caprev109,Canada House of Commons,ca,prev,CA2025-09-23#t67w0,2025-09-23,"Hon. Andrew Scheer (Regina—Qu'Appelle, CPC)",340,Human,4.0-web,dashboard history 2026-08-13
+caprev110,Canada House of Commons,ca,prev,CA2025-10-28#t18w5,2025-10-28,"Adam Chambers (Simcoe North, CPC)",351,Human,4.0-web,dashboard history 2026-08-13
+caprev111,Canada House of Commons,ca,prev,CA2026-06-18#t90w0,2026-06-18,Jenny Kwan,161,Human,4.0-web,dashboard history 2026-08-13
+caprev112,Canada House of Commons,ca,prev,CA2026-03-23#t259w2,2026-03-23,"Jeremy Patzer (Swift Current—Grasslands—Kindersley, CPC)",336,Human,4.0-web,dashboard history 2026-08-13
+caprev113,Canada House of Commons,ca,prev,CA2026-05-08#t14w3,2026-05-08,"James Bezan (Selkirk—Interlake—Eastman, CPC)",343,Human,4.0-web,dashboard history 2026-08-13
+caprev114,Canada House of Commons,ca,prev,CA2026-01-28#t198w0,2026-01-28,Pat Kelly,120,Human,4.0-web,dashboard history 2026-08-13
+caprev115,Canada House of Commons,ca,prev,CA2025-09-24#t115w0,2025-09-24,"Garnett Genuis (Sherwood Park—Fort Saskatchewan, CPC)",245,Human,4.0-web,dashboard history 2026-08-13
+caprev116,Canada House of Commons,ca,prev,CA2026-05-28#t490w0,2026-05-28,"Hon. Lena Metlege Diab (Minister of Immigration, Refugees and Citizenship, Lib.)",334,Human,4.0-web,dashboard history 2026-08-13
+caprev117,Canada House of Commons,ca,prev,CA2026-03-13#t168w0,2026-03-13,"Eric Melillo (Kenora—Kiiwetinoong, CPC)",311,Human,4.0-web,dashboard history 2026-08-13
+caprev118,Canada House of Commons,ca,prev,CA2026-04-13#t207w6,2026-04-13,"Andrew Lawton (Elgin—St. Thomas—London South, CPC)",230,Human,4.0-web,dashboard history 2026-08-13
+caprev119,Canada House of Commons,ca,prev,CA2026-05-01#t36w0,2026-05-01,"Chris Lewis (Essex, CPC)",149,Human,4.0-web,dashboard history 2026-08-13
+cashrt000,ca,ca,shrt,CA2025-11-24#t15w0,2025-11-24,Corey Hogan,101,Human,4.0-web,dashboard history 2026-08-13
+cashrt001,ca,ca,shrt,CA2026-05-28#t494w0,2026-05-28,"Hon. Lena Metlege Diab (Minister of Immigration, Refugees and Citizenship, Lib.)",57,Human,4.0-web,dashboard history 2026-08-13
+cashrt002,ca,ca,shrt,CA2025-12-04#t330w0,2025-12-04,Michael Cooper,103,Human,4.0-web,dashboard history 2026-08-13
+cashrt003,ca,ca,shrt,CA2025-10-09#t293w0,2025-10-09,Hon. Mark Gerretsen,91,Human,4.0-web,dashboard history 2026-08-13
+cashrt004,ca,ca,shrt,CA2025-11-07#t131w0,2025-11-07,"Ginette Lavack (Parliamentary Secretary to the Minister of Indigenous Services, Lib.)",79,Human,4.0-web,dashboard history 2026-08-13
+cashrt005,ca,ca,shrt,CA2025-11-25#t40w0,2025-11-25,Zoe Royer,66,Human,4.0-web,dashboard history 2026-08-13
+cashrt006,ca,ca,shrt,CA2025-11-20#t232w0,2025-11-20,Tako Van Popta,111,Human,4.0-web,dashboard history 2026-08-13
+cashrt007,ca,ca,shrt,CA2025-09-23#t199w0,2025-09-23,"Larry Brock (Brantford—Brant South—Six Nations, CPC)",92,Human,4.0-web,dashboard history 2026-08-13
+cashrt008,ca,ca,shrt,CA2025-06-13#t55w0,2025-06-13,"Ryan Turnbull (Parliamentary Secretary to the Minister of Finance and National Revenue and to the Secretary of State (Canada Revenue Agency and Financial Institutions), Lib.)",57,Human,4.0-web,dashboard history 2026-08-13
+cashrt009,ca,ca,shrt,CA2025-11-17#t96w0,2025-11-17,"Right Hon. Mark Carney (Prime Minister, Lib.)",76,Human,4.0-web,dashboard history 2026-08-13
+cashrt010,ca,ca,shrt,CA2025-05-29#t205w0,2025-05-29,"Frank Caputo (Kamloops—Thompson—Nicola, CPC)",94,Human,4.0-web,dashboard history 2026-08-13
+cashrt011,ca,ca,shrt,CA2026-03-24#t203w0,2026-03-24,"Hon. Mélanie Joly (Minister of Industry and Minister responsible for Canada Economic Development for Quebec Regions, Lib.)",64,Human,4.0-web,dashboard history 2026-08-13
+cashrt012,ca,ca,shrt,CA2026-06-17#t257w0,2026-06-17,Melissa Lantsman,83,Human,4.0-web,dashboard history 2026-08-13
+cashrt013,ca,ca,shrt,CA2025-06-11#t694w0,2025-06-11,Hon. Tim Hodgson,50,Human,4.0-web,dashboard history 2026-08-13
+cashrt014,ca,ca,shrt,CA2025-11-06#t218w0,2025-11-06,"Hon. Ruby Sahota (Secretary of State (Combatting Crime), Lib.)",97,Human,4.0-web,dashboard history 2026-08-13
+cashrt015,ca,ca,shrt,CA2025-09-19#t72w0,2025-09-19,"Hon. Sean Fraser (Minister of Justice and Attorney General of Canada and Minister responsible for the Atlantic Canada Opportunities Agency, Lib.)",106,Human,4.0-web,dashboard history 2026-08-13
+cashrt016,ca,ca,shrt,CA2026-03-12#t192w0,2026-03-12,"Rhonda Kirkland (Oshawa, CPC)",88,Human,4.0-web,dashboard history 2026-08-13
+cashrt017,ca,ca,shrt,CA2026-02-10#t247w0,2026-02-10,"Hon. Kevin Lamoureux (Parliamentary Secretary to the Leader of the Government in the House of Commons, Lib.)",115,Human,4.0-web,dashboard history 2026-08-13
+cashrt018,ca,ca,shrt,CA2026-03-26#t227w0,2026-03-26,"Mel Arnold (Kamloops—Shuswap—Central Rockies, CPC)",80,Human,4.0-web,dashboard history 2026-08-13
+cashrt019,ca,ca,shrt,CA2026-04-29#t104w0,2026-04-29,"Chris Bittle (St. Catharines, Lib.)",63,Human,4.0-web,dashboard history 2026-08-13
+cashrt020,ca,ca,shrt,CA2025-10-30#t139w0,2025-10-30,"Hon. Rechie Valdez (Minister of Women and Gender Equality and Secretary of State (Small Business and Tourism), Lib.)",103,AI,4.0-web,dashboard history 2026-08-13
+cashrt021,ca,ca,shrt,CA2026-06-15#t107w0,2026-06-15,"Hon. Buckley Belanger (Secretary of State (Rural Development), Lib.)",102,Human,4.0-web,dashboard history 2026-08-13
+cashrt022,ca,ca,shrt,CA2025-06-09#t772w0,2025-06-09,Arpan Khanna,57,Human,4.0-web,dashboard history 2026-08-13
+cashrt023,ca,ca,shrt,CA2025-11-27#t302w3,2025-11-27,"Hon. Kevin Lamoureux (Parliamentary Secretary to the Leader of the Government in the House of Commons, Lib.)",80,Human,4.0-web,dashboard history 2026-08-13
+cashrt024,ca,ca,shrt,CA2026-04-14#t199w0,2026-04-14,"Hon. Rebecca Alty (Minister of Crown-Indigenous Relations, Lib.)",95,Human,4.0-web,dashboard history 2026-08-13
+cashrt025,ca,ca,shrt,CA2025-12-05#t68w0,2025-12-05,"Sophie Chatel (Parliamentary Secretary to the Minister of Agriculture and Agri-Food, Lib.)",89,Human,4.0-web,dashboard history 2026-08-13
+cashrt026,ca,ca,shrt,CA2026-06-03#t71w0,2026-06-03,"Hon. Pierre Poilievre (Leader of the Opposition, CPC)",97,Human,4.0-web,dashboard history 2026-08-13
+cashrt027,ca,ca,shrt,CA2025-06-20#t18w0,2025-06-20,Hon. Kevin Lamoureux,79,Human,4.0-web,dashboard history 2026-08-13
+cashrt028,ca,ca,shrt,CA2025-10-10#t108w0,2025-10-10,"Corey Hogan (Parliamentary Secretary to the Minister of Energy and Natural Resources, Lib.)",90,Human,4.0-web,dashboard history 2026-08-13
+cashrt029,ca,ca,shrt,CA2026-03-24#t233w0,2026-03-24,"Hon. Kevin Lamoureux (Parliamentary Secretary to the Leader of the Government in the House of Commons, Lib.)",76,Human,4.0-web,dashboard history 2026-08-13
+cashrt030,ca,ca,shrt,CA2025-09-16#t316w0,2025-09-16,Melissa Lantsman,101,Human,4.0-web,dashboard history 2026-08-13
+cashrt031,ca,ca,shrt,CA2026-06-10#t93w0,2026-06-10,"Hon. David McGuinty (Minister of National Defence, Lib.)",101,Human,4.0-web,dashboard history 2026-08-13
+cashrt032,ca,ca,shrt,CA2026-05-29#t101w0,2026-05-29,"Branden Leslie (Portage—Lisgar, CPC)",103,Human,4.0-web,dashboard history 2026-08-13
+cashrt033,ca,ca,shrt,CA2026-02-10#t179w0,2026-02-10,"Hon. François-Philippe Champagne (Minister of Finance and National Revenue, Lib.)",65,Human,4.0-web,dashboard history 2026-08-13
+cashrt034,ca,ca,shrt,CA2026-04-23#t100w0,2026-04-23,Scott Anderson,108,Human,4.0-web,dashboard history 2026-08-13
+cashrt035,ca,ca,shrt,CA2026-02-12#t209w0,2026-02-12,"Hon. Heath MacDonald (Minister of Agriculture and Agri-Food, Lib.)",105,Human,4.0-web,dashboard history 2026-08-13
+cashrt036,ca,ca,shrt,CA2026-06-04#t192w0,2026-06-04,"Hon. Heath MacDonald (Minister of Agriculture and Agri-Food, Lib.)",119,Human,4.0-web,dashboard history 2026-08-13
+cashrt037,ca,ca,shrt,CA2026-03-12#t311w0,2026-03-12,Hon. Kevin Lamoureux,97,Human,4.0-web,dashboard history 2026-08-13
+cashrt038,ca,ca,shrt,CA2025-11-27#t208w0,2025-11-27,"Hon. Patty Hajdu (Minister of Jobs and Families and Minister responsible for the Federal Economic Development Agency for Northern Ontario, Lib.)",104,Human,4.0-web,dashboard history 2026-08-13
+cashrt039,ca,ca,shrt,CA2026-04-21#t175w0,2026-04-21,"Hon. Wayne Long (Secretary of State (Canada Revenue Agency and Financial Institutions), Lib.)",108,Human,4.0-web,dashboard history 2026-08-13
+iectl000,Dail Eireann,ie,ctl,IE2020-06-30#t28w3,2020-06-30,Deputy Peter Fitzpatrick,299,Human,4.0-web,dashboard history 2026-08-13
+iectl001,Dail Eireann,ie,ctl,IE2018-03-21#t150w0,2018-03-21,Deputy Catherine Martin,176,Human,4.0-web,dashboard history 2026-08-13
+iectl002,Dail Eireann,ie,ctl,IE2019-12-04#t86w1,2019-12-04,Deputy Micheál Martin,293,Human,4.0-web,dashboard history 2026-08-13
+iectl003,Dail Eireann,ie,ctl,IE2020-04-30#t257w0,2020-04-30,Deputy Michael Creed,261,Human,4.0-web,dashboard history 2026-08-13
+iectl004,Dail Eireann,ie,ctl,IE2021-02-25#t13w2,2021-02-25,Deputy Catherine Connolly,172,Human,4.0-web,dashboard history 2026-08-13
+iectl005,Dail Eireann,ie,ctl,IE2022-09-22#t271w0,2022-09-22,Deputy Anne Rabbitte,140,Human,4.0-web,dashboard history 2026-08-13
+iectl006,Dail Eireann,ie,ctl,IE2020-10-01#t258w0,2020-10-01,Deputy David Cullinane,164,Human,4.0-web,dashboard history 2026-08-13
+iectl007,Dail Eireann,ie,ctl,IE2021-01-21#t250w0,2021-01-21,Deputy Richard O'Donoghue,309,Human,4.0-web,dashboard history 2026-08-13
+iectl008,Dail Eireann,ie,ctl,IE2018-12-19#t117w0,2018-12-19,Deputy Bríd Smith,135,Human,4.0-web,dashboard history 2026-08-13
+iectl009,Dail Eireann,ie,ctl,IE2021-03-11#t110w0,2021-03-11,The Tánaiste,203,Human,4.0-web,dashboard history 2026-08-13
+iectl010,Dail Eireann,ie,ctl,IE2019-11-13#t339w0,2019-11-13,Deputy Robert Troy,290,Human,4.0-web,dashboard history 2026-08-13
+iectl011,Dail Eireann,ie,ctl,IE2021-06-30#t153w0,2021-06-30,Deputy Neale Richmond,227,Human,4.0-web,dashboard history 2026-08-13
+iectl012,Dail Eireann,ie,ctl,IE2018-12-11#t89w0,2018-12-11,Deputy Michael Moynihan,136,Human,4.0-web,dashboard history 2026-08-13
+iectl013,Dail Eireann,ie,ctl,IE2020-05-21#t27w1,2020-05-21,Deputy Michael Collins,346,Human,4.0-web,dashboard history 2026-08-13
+iectl014,Dail Eireann,ie,ctl,IE2022-10-27#t266w1,2022-10-27,"Minister for Children, Equality, Disability, Integration and Youth",243,Human,4.0-web,dashboard history 2026-08-13
+iectl015,Dail Eireann,ie,ctl,IE2022-01-26#t294w2,2022-01-26,Deputy Mary Lou McDonald,164,Human,4.0-web,dashboard history 2026-08-13
+iectl016,Dail Eireann,ie,ctl,IE2018-05-22#t69w0,2018-05-22,Deputy Danny Healy-Rae,150,Human,4.0-web,dashboard history 2026-08-13
+iectl017,Dail Eireann,ie,ctl,IE2019-10-15#t244w0,2019-10-15,Minister for Children and Youth Affairs,298,Human,4.0-web,dashboard history 2026-08-13
+iectl018,Dail Eireann,ie,ctl,IE2022-09-21#t211w0,2022-09-21,Deputy Alan Kelly,237,Human,4.0-web,dashboard history 2026-08-13
+iectl019,Dail Eireann,ie,ctl,IE2021-11-23#t171w1,2021-11-23,Deputy Martin Browne,163,Human,4.0-web,dashboard history 2026-08-13
+iectl020,Dail Eireann,ie,ctl,IE2018-11-29#t61w0,2018-11-29,Deputy Charles Flanagan,350,Human,4.0-web,dashboard history 2026-08-13
+iectl021,Dail Eireann,ie,ctl,IE2022-05-05#t272w2,2022-05-05,Deputy Ivana Bacik,167,Human,4.0-web,dashboard history 2026-08-13
+iectl022,Dail Eireann,ie,ctl,IE2020-09-08#t26w1,2020-09-08,The Taoiseach,205,Human,4.0-web,dashboard history 2026-08-13
+iectl023,Dail Eireann,ie,ctl,IE2019-05-29#t114w0,2019-05-29,Deputy Catherine Connolly,325,Human,4.0-web,dashboard history 2026-08-13
+iectl024,Dail Eireann,ie,ctl,IE2020-09-24#t183w4,2020-09-24,Minister for Foreign Affairs,320,Human,4.0-web,dashboard history 2026-08-13
+iectl025,Dail Eireann,ie,ctl,IE2018-05-30#t355w0,2018-05-30,Deputy Thomas Byrne,135,Human,4.0-web,dashboard history 2026-08-13
+iectl026,Dail Eireann,ie,ctl,IE2021-07-01#t220w3,2021-07-01,Minister of State at the Department of Public Expenditure and Reform,338,Human,4.0-web,dashboard history 2026-08-13
+iectl027,Dail Eireann,ie,ctl,IE2019-04-03#t232w0,2019-04-03,The Taoiseach,285,Human,4.0-web,dashboard history 2026-08-13
+iectl028,Dail Eireann,ie,ctl,IE2019-04-18#t277w2,2019-04-18,Deputy Clare Daly,150,Human,4.0-web,dashboard history 2026-08-13
+iectl029,Dail Eireann,ie,ctl,IE2020-09-02#t101w1,2020-09-02,Deputy Martin Browne,335,Human,4.0-web,dashboard history 2026-08-13
+iectl030,Dail Eireann,ie,ctl,IE2022-06-01#t223w1,2022-06-01,Deputy Michael Collins,188,Human,4.0-web,dashboard history 2026-08-13
+iectl031,Dail Eireann,ie,ctl,IE2018-05-02#t194w0,2018-05-02,Deputy Mary Butler,123,Human,4.0-web,dashboard history 2026-08-13
+iectl032,Dail Eireann,ie,ctl,IE2022-03-08#t201w0,2022-03-08,Deputy Bernard J. Durkan,323,Human,4.0-web,dashboard history 2026-08-13
+iectl033,Dail Eireann,ie,ctl,IE2021-01-20#t22w1,2021-01-20,Deputy Catherine Connolly,271,Human,4.0-web,dashboard history 2026-08-13
+iectl034,Dail Eireann,ie,ctl,IE2021-04-21#t233w5,2021-04-21,Deputy Jennifer Whitmore,360,Human,4.0-web,dashboard history 2026-08-13
+iectl035,Dail Eireann,ie,ctl,IE2019-05-08#t121w0,2019-05-08,"Minister for Housing, Planning and Local Government",134,Human,4.0-web,dashboard history 2026-08-13
+iectl036,Dail Eireann,ie,ctl,IE2018-09-25#t118w1,2018-09-25,The Taoiseach,181,Human,4.0-web,dashboard history 2026-08-13
+iectl037,Dail Eireann,ie,ctl,IE2020-09-08#t264w1,2020-09-08,Minister for Education and Skills,341,Human,4.0-web,dashboard history 2026-08-13
+iectl038,Dail Eireann,ie,ctl,IE2018-10-18#t160w3,2018-10-18,Deputy Michael Fitzmaurice,332,Human,4.0-web,dashboard history 2026-08-13
+iectl039,Dail Eireann,ie,ctl,IE2021-07-02#t52w2,2021-07-02,Deputy Thomas Pringle,297,Human,4.0-web,dashboard history 2026-08-13
+iectl040,Dail Eireann,ie,ctl,IE2019-05-29#t242w2,2019-05-29,Deputy Willie O'Dea,229,Human,4.0-web,dashboard history 2026-08-13
+iectl041,Dail Eireann,ie,ctl,IE2019-02-12#t41w0,2019-02-12,The Taoiseach,144,Human,4.0-web,dashboard history 2026-08-13
+iectl042,Dail Eireann,ie,ctl,IE2021-06-24#t139w0,2021-06-24,Deputy Simon Coveney,187,Human,4.0-web,dashboard history 2026-08-13
+iectl043,Dail Eireann,ie,ctl,IE2019-04-17#t349w0,2019-04-17,Deputy Simon Harris,145,Human,4.0-web,dashboard history 2026-08-13
+iectl044,Dail Eireann,ie,ctl,IE2019-01-22#t365w2,2019-01-22,Minister of State at the Department of Justice and Equality,346,Human,4.0-web,dashboard history 2026-08-13
+iectl045,Dail Eireann,ie,ctl,IE2020-06-17#t151w0,2020-06-17,Deputy Darren O'Rourke,143,Human,4.0-web,dashboard history 2026-08-13
+iectl046,Dail Eireann,ie,ctl,IE2021-12-07#t32w0,2021-12-07,The Taoiseach,327,Human,4.0-web,dashboard history 2026-08-13
+iectl047,Dail Eireann,ie,ctl,IE2020-12-10#t201w0,2020-12-10,The Tánaiste,163,Human,4.0-web,dashboard history 2026-08-13
+iectl048,Dail Eireann,ie,ctl,IE2022-03-23#t22w1,2022-03-23,Deputy Eoin Ó Broin,220,Human,4.0-web,dashboard history 2026-08-13
+iectl049,Dail Eireann,ie,ctl,IE2021-12-03#t225w1,2021-12-03,Deputy Bernard J. Durkan,260,Human,4.0-web,dashboard history 2026-08-13
+iectl050,Dail Eireann,ie,ctl,IE2020-10-21#t253w0,2020-10-21,Deputy Frankie Feighan,178,Human,4.0-web,dashboard history 2026-08-13
+iectl051,Dail Eireann,ie,ctl,IE2020-05-13#t31w0,2020-05-13,Deputy Sorca Clarke,312,Human,4.0-web,dashboard history 2026-08-13
+iectl052,Dail Eireann,ie,ctl,IE2022-09-21#t180w3,2022-09-21,"Minister of State at the Department of Enterprise, Trade and Employment",220,Human,4.0-web,dashboard history 2026-08-13
+iectl053,Dail Eireann,ie,ctl,IE2021-02-25#t12w0,2021-02-25,Deputy Mark Ward,286,Human,4.0-web,dashboard history 2026-08-13
+iectl054,Dail Eireann,ie,ctl,IE2022-02-09#t255w2,2022-02-09,Deputy Michael Healy-Rae,317,Human,4.0-web,dashboard history 2026-08-13
+iectl055,Dail Eireann,ie,ctl,IE2018-07-03#t383w1,2018-07-03,Deputy John Brassil,316,Human,4.0-web,dashboard history 2026-08-13
+iectl056,Dail Eireann,ie,ctl,IE2021-06-22#t212w0,2021-06-22,Deputy Thomas Gould,148,Human,4.0-web,dashboard history 2026-08-13
+iectl057,Dail Eireann,ie,ctl,IE2021-06-24#t229w2,2021-06-24,Deputy Eoin Ó Broin,165,Human,4.0-web,dashboard history 2026-08-13
+iectl058,Dail Eireann,ie,ctl,IE2022-11-17#t29w0,2022-11-17,Deputy Pádraig O'Sullivan,227,Human,4.0-web,dashboard history 2026-08-13
+iectl059,Dail Eireann,ie,ctl,IE2019-04-09#t280w0,2019-04-09,Deputy Mick Wallace,195,Human,4.0-web,dashboard history 2026-08-13
+ieprev000,Dail Eireann,ie,prev,IE2026-05-28#t94w0,2026-05-28,Minister of State at the Department of Education and Youth,329,Human,4.0-web,dashboard history 2026-08-13
+ieprev001,Dail Eireann,ie,prev,IE2025-04-02#t51w0,2025-04-02,Deputy Paul Donnelly,354,Human,4.0-web,dashboard history 2026-08-13
+ieprev002,Dail Eireann,ie,prev,IE2025-03-25#t2w0,2025-03-25,Deputy Mary Lou McDonald,217,Human,4.0-web,dashboard history 2026-08-13
+ieprev003,Dail Eireann,ie,prev,IE2026-02-18#t343w0,2026-02-18,Deputy Aidan Farrelly,150,Human,4.0-web,dashboard history 2026-08-13
+ieprev004,Dail Eireann,ie,prev,IE2026-03-19#t269w0,2026-03-19,Deputy Claire Kerrane,249,Human,4.0-web,dashboard history 2026-08-13
+ieprev005,Dail Eireann,ie,prev,IE2025-07-10#t67w0,2025-07-10,Deputy Simon Harris,164,Human,4.0-web,dashboard history 2026-08-13
+ieprev006,Dail Eireann,ie,prev,IE2026-07-01#t95w0,2026-07-01,Deputy Thomas Gould,229,Human,4.0-web,dashboard history 2026-08-13
+ieprev007,Dail Eireann,ie,prev,IE2025-11-06#t331w1,2025-11-06,Deputy Naoise Ó Cearúil,263,Human,4.0-web,dashboard history 2026-08-13
+ieprev008,Dail Eireann,ie,prev,IE2025-05-29#t417w1,2025-05-29,Deputy Ciarán Ahern,258,Human,4.0-web,dashboard history 2026-08-13
+ieprev009,Dail Eireann,ie,prev,IE2026-02-24#t150w0,2026-02-24,Deputy Jennifer Whitmore,180,Human,4.0-web,dashboard history 2026-08-13
+ieprev010,Dail Eireann,ie,prev,IE2026-04-29#t324w1,2026-04-29,Deputy Niall Collins,326,Human,4.0-web,dashboard history 2026-08-13
+ieprev011,Dail Eireann,ie,prev,IE2026-05-12#t277w3,2026-05-12,Deputy Jennifer Whitmore,232,Mixed,4.0-web,dashboard history 2026-08-13
+ieprev012,Dail Eireann,ie,prev,IE2026-02-24#t131w0,2026-02-24,Deputy Jennifer Carroll MacNeill,154,Human,4.0-web,dashboard history 2026-08-13
+ieprev013,Dail Eireann,ie,prev,IE2025-11-26#t419w4,2025-11-26,"Minister of State at the Department of Justice, Home Affairs and Migration",135,Human,4.0-web,dashboard history 2026-08-13
+ieprev014,Dail Eireann,ie,prev,IE2025-09-23#t100w0,2025-09-23,Minister for Education and Youth,320,Mixed,4.0-web,dashboard history 2026-08-13
+ieprev015,Dail Eireann,ie,prev,IE2025-10-02#t239w0,2025-10-02,Deputy Jennifer Carroll MacNeill,216,Human,4.0-web,dashboard history 2026-08-13
+ieprev016,Dail Eireann,ie,prev,IE2025-10-14#t270w2,2025-10-14,Deputy Séamus McGrath,197,Human,4.0-web,dashboard history 2026-08-13
+ieprev017,Dail Eireann,ie,prev,IE2025-11-04#t119w1,2025-11-04,Deputy Réada Cronin,270,Human,4.0-web,dashboard history 2026-08-13
+ieprev018,Dail Eireann,ie,prev,IE2025-05-15#t169w0,2025-05-15,Deputy Charles Ward,182,Human,4.0-web,dashboard history 2026-08-13
+ieprev019,Dail Eireann,ie,prev,IE2026-04-29#t352w0,2026-04-29,Deputy Conor Sheehan,269,Human,4.0-web,dashboard history 2026-08-13
+ieprev020,Dail Eireann,ie,prev,IE2025-02-26#t296w0,2025-02-26,Deputy Simon Harris,211,Human,4.0-web,dashboard history 2026-08-13
+ieprev021,Dail Eireann,ie,prev,IE2025-12-02#t73w2,2025-12-02,Deputy Michael Collins,209,AI,4.0-web,dashboard history 2026-08-13
+ieprev022,Dail Eireann,ie,prev,IE2025-09-18#t283w4,2025-09-18,"Minister of State at the Department of Justice, Home Affairs and Migration",233,Mixed,4.0-web,dashboard history 2026-08-13
+ieprev023,Dail Eireann,ie,prev,IE2025-02-20#t158w0,2025-02-20,Deputy Pearse Doherty,262,Human,4.0-web,dashboard history 2026-08-13
+ieprev024,Dail Eireann,ie,prev,IE2025-03-27#t35w0,2025-03-27,Deputy James Lawless,315,Human,4.0-web,dashboard history 2026-08-13
+ieprev025,Dail Eireann,ie,prev,IE2026-05-06#t298w0,2026-05-06,Deputy Michael Cahill,301,Mixed,4.0-web,dashboard history 2026-08-13
+ieprev026,Dail Eireann,ie,prev,IE2026-06-24#t241w4,2026-06-24,"Minister of State at the Department of Children, Disability and Equality",292,Mixed,4.0-web,dashboard history 2026-08-13
+ieprev027,Dail Eireann,ie,prev,IE2025-06-18#t383w0,2025-06-18,Deputy Mary Butler,184,Human,4.0-web,dashboard history 2026-08-13
+ieprev028,Dail Eireann,ie,prev,IE2025-02-25#t223w1,2025-02-25,"Minister for Children, Equality, Disability, Integration and Youth",318,Human,4.0-web,dashboard history 2026-08-13
+ieprev029,Dail Eireann,ie,prev,IE2025-05-21#t24w0,2025-05-21,Deputy Christopher O'Sullivan,293,Human,4.0-web,dashboard history 2026-08-13
+ieprev030,Dail Eireann,ie,prev,IE2026-01-14#t164w2,2026-01-14,Deputy Paul McAuliffe,189,Human,4.0-web,dashboard history 2026-08-13
+ieprev031,Dail Eireann,ie,prev,IE2026-03-04#t236w1,2026-03-04,Deputy Pat Buckley,190,Human,4.0-web,dashboard history 2026-08-13
+ieprev032,Dail Eireann,ie,prev,IE2025-04-08#t96w0,2025-04-08,Deputy Rory Hearne,156,Human,4.0-web,dashboard history 2026-08-13
+ieprev033,Dail Eireann,ie,prev,IE2025-05-22#t24w1,2025-05-22,Deputy James Lawless,207,Human,4.0-web,dashboard history 2026-08-13
+ieprev034,Dail Eireann,ie,prev,IE2025-12-04#t363w0,2025-12-04,Deputy Louis O'Hara,313,Human,4.0-web,dashboard history 2026-08-13
+ieprev035,Dail Eireann,ie,prev,IE2025-06-26#t327w1,2025-06-26,Deputy Paul Murphy,263,Human,4.0-web,dashboard history 2026-08-13
+ieprev036,Dail Eireann,ie,prev,IE2025-03-19#t0w0,2025-03-19,Deputy Mary Lou McDonald,334,Human,4.0-web,dashboard history 2026-08-13
+ieprev037,Dail Eireann,ie,prev,IE2025-12-17#t289w3,2025-12-17,Deputy Ruairí Ó Murchú,357,Human,4.0-web,dashboard history 2026-08-13
+ieprev038,Dail Eireann,ie,prev,IE2026-04-22#t9w1,2026-04-22,Deputy Paul Nicholas Gogarty,301,Human,4.0-web,dashboard history 2026-08-13
+ieprev039,Dail Eireann,ie,prev,IE2025-05-14#t281w0,2025-05-14,Deputy Mairéad Farrell,354,Human,4.0-web,dashboard history 2026-08-13
+ieprev040,Dail Eireann,ie,prev,IE2026-02-11#t27w0,2026-02-11,Deputy Michael Collins,298,Human,4.0-web,dashboard history 2026-08-13
+ieprev041,Dail Eireann,ie,prev,IE2026-02-12#t239w0,2026-02-12,Deputy Martin Daly,159,Human,4.0-web,dashboard history 2026-08-13
+ieprev042,Dail Eireann,ie,prev,IE2025-11-26#t533w0,2025-11-26,Deputy Pearse Doherty,250,Human,4.0-web,dashboard history 2026-08-13
+ieprev043,Dail Eireann,ie,prev,IE2026-04-29#t50w0,2026-04-29,Deputy Gary Gannon,196,AI,4.0-web,dashboard history 2026-08-13
+ieprev044,Dail Eireann,ie,prev,IE2025-02-05#t107w0,2025-02-05,Deputy John Lahart,158,Human,4.0-web,dashboard history 2026-08-13
+ieprev045,Dail Eireann,ie,prev,IE2026-02-05#t211w0,2026-02-05,Deputy Pádraig Rice,252,Human,4.0-web,dashboard history 2026-08-13
+ieprev046,Dail Eireann,ie,prev,IE2026-05-21#t106w0,2026-05-21,Deputy Dara Calleary,302,Human,4.0-web,dashboard history 2026-08-13
+ieprev047,Dail Eireann,ie,prev,IE2026-02-10#t304w0,2026-02-10,Deputy Peadar Tóibín,339,AI,4.0-web,dashboard history 2026-08-13
+ieprev048,Dail Eireann,ie,prev,IE2026-01-21#t34w0,2026-01-21,Deputy Johnny Guirke,332,Mixed,4.0-web,dashboard history 2026-08-13
+ieprev049,Dail Eireann,ie,prev,IE2025-11-04#t121w9,2025-11-04,Deputy Ciarán Ahern,312,AI,4.0-web,dashboard history 2026-08-13
+ieprev050,Dail Eireann,ie,prev,IE2025-12-16#t308w1,2025-12-16,Deputy Seán Ó Fearghaíl,325,Mixed,4.0-web,dashboard history 2026-08-13
+ieprev051,Dail Eireann,ie,prev,IE2026-05-28#t167w1,2026-05-28,Deputy Pearse Doherty,328,Human,4.0-web,dashboard history 2026-08-13
+ieprev052,Dail Eireann,ie,prev,IE2026-06-18#t0w0,2026-06-18,Deputy Louise O'Reilly,125,Human,4.0-web,dashboard history 2026-08-13
+ieprev053,Dail Eireann,ie,prev,IE2025-04-01#t562w1,2025-04-01,Deputy Louis O'Hara,162,Human,4.0-web,dashboard history 2026-08-13
+ieprev054,Dail Eireann,ie,prev,IE2026-07-02#t5w0,2026-07-02,Deputy Helen McEntee,309,Human,4.0-web,dashboard history 2026-08-13
+ieprev055,Dail Eireann,ie,prev,IE2026-06-24#t277w6,2026-06-24,Deputy Sinéad Gibney,263,Human,4.0-web,dashboard history 2026-08-13
+ieprev056,Dail Eireann,ie,prev,IE2026-05-07#t319w0,2026-05-07,Deputy Marie Sherlock,232,Human,4.0-web,dashboard history 2026-08-13
+ieprev057,Dail Eireann,ie,prev,IE2025-03-27#t217w0,2025-03-27,Minister for Finance,136,Human,4.0-web,dashboard history 2026-08-13
+ieprev058,Dail Eireann,ie,prev,IE2026-05-28#t150w0,2026-05-28,Deputy Hildegarde Naughton,178,Human,4.0-web,dashboard history 2026-08-13
+ieprev059,Dail Eireann,ie,prev,IE2026-07-15#t256w0,2026-07-15,Deputy Jim O'Callaghan,314,Human,4.0-web,dashboard history 2026-08-13
+ieprev060,Dail Eireann,ie,prev,IE2026-05-07#t32w0,2026-05-07,Deputy Patrick O'Donovan,182,Human,4.0-web,dashboard history 2026-08-13
+ieprev061,Dail Eireann,ie,prev,IE2025-05-29#t433w0,2025-05-29,Deputy Thomas Byrne,255,Human,4.0-web,dashboard history 2026-08-13
+ieprev062,Dail Eireann,ie,prev,IE2025-10-02#t317w0,2025-10-02,Simon Harris,125,Human,4.0-web,dashboard history 2026-08-13
+ieprev063,Dail Eireann,ie,prev,IE2026-07-16#t330w0,2026-07-16,Deputy Ruairí Ó Murchú,187,Human,4.0-web,dashboard history 2026-08-13
+ieprev064,Dail Eireann,ie,prev,IE2026-03-04#t296w1,2026-03-04,Minister for Health,291,Human,4.0-web,dashboard history 2026-08-13
+ieprev065,Dail Eireann,ie,prev,IE2025-11-13#t320w1,2025-11-13,Deputy Eoghan Kenny,276,AI,4.0-web,dashboard history 2026-08-13
+ieprev066,Dail Eireann,ie,prev,IE2025-07-01#t229w0,2025-07-01,Deputy Gillian Toole,263,Human,4.0-web,dashboard history 2026-08-13
+ieprev067,Dail Eireann,ie,prev,IE2025-11-05#t29w2,2025-11-05,Deputy Alan Kelly,209,Human,4.0-web,dashboard history 2026-08-13
+ieprev068,Dail Eireann,ie,prev,IE2026-05-27#t55w0,2026-05-27,Deputy Mary Lou McDonald,275,Human,4.0-web,dashboard history 2026-08-13
+ieprev069,Dail Eireann,ie,prev,IE2025-10-21#t225w1,2025-10-21,Deputy Richard O'Donoghue,322,Human,4.0-web,dashboard history 2026-08-13
+ieprev070,Dail Eireann,ie,prev,IE2025-09-24#t18w0,2025-09-24,Deputy Mark Wall,330,Human,4.0-web,dashboard history 2026-08-13
+ieprev071,Dail Eireann,ie,prev,IE2026-02-17#t193w0,2026-02-17,Deputy George Lawlor,176,Human,4.0-web,dashboard history 2026-08-13
+ieprev072,Dail Eireann,ie,prev,IE2025-04-30#t48w1,2025-04-30,Deputy Brian Stanley,180,Human,4.0-web,dashboard history 2026-08-13
+ieprev073,Dail Eireann,ie,prev,IE2026-07-15#t242w4,2026-07-15,Deputy Matt Carthy,313,Human,4.0-web,dashboard history 2026-08-13
+ieprev074,Dail Eireann,ie,prev,IE2026-06-10#t177w1,2026-06-10,"Minister for Enterprise, Tourism and Employment",356,Human,4.0-web,dashboard history 2026-08-13
+ieprev075,Dail Eireann,ie,prev,IE2026-01-27#t271w0,2026-01-27,Deputy Barry Heneghan,136,Human,4.0-web,dashboard history 2026-08-13
+ieprev076,Dail Eireann,ie,prev,IE2025-02-12#t246w0,2025-02-12,Deputy Paul Murphy,150,Human,4.0-web,dashboard history 2026-08-13
+ieprev077,Dail Eireann,ie,prev,IE2025-05-21#t298w1,2025-05-21,"Minister of State at the Department of Housing, Local Government and Heritage",215,Human,4.0-web,dashboard history 2026-08-13
+ieprev078,Dail Eireann,ie,prev,IE2026-07-09#t234w0,2026-07-09,Deputy Brian Stanley,239,Human,4.0-web,dashboard history 2026-08-13
+ieprev079,Dail Eireann,ie,prev,IE2025-05-07#t26w0,2025-05-07,"Minister for Public Expenditure, National Development Plan Delivery and Reform",345,Human,4.0-web,dashboard history 2026-08-13
+ieprev080,Dail Eireann,ie,prev,IE2025-10-21#t120w0,2025-10-21,The Taoiseach,282,Human,4.0-web,dashboard history 2026-08-13
+ieprev081,Dail Eireann,ie,prev,IE2025-07-10#t104w0,2025-07-10,Deputy Jerry Buttimer,144,Human,4.0-web,dashboard history 2026-08-13
+ieprev082,Dail Eireann,ie,prev,IE2025-06-24#t198w0,2025-06-24,The Taoiseach,235,Human,4.0-web,dashboard history 2026-08-13
+ieprev083,Dail Eireann,ie,prev,IE2026-02-17#t393w0,2026-02-17,Deputy Brendan Smith,240,Human,4.0-web,dashboard history 2026-08-13
+ieprev084,Dail Eireann,ie,prev,IE2025-11-13#t351w4,2025-11-13,Deputy Paul Nicholas Gogarty,295,Human,4.0-web,dashboard history 2026-08-13
+ieprev085,Dail Eireann,ie,prev,IE2026-01-20#t203w4,2026-01-20,Deputy Charles Ward,245,Human,4.0-web,dashboard history 2026-08-13
+ieprev086,Dail Eireann,ie,prev,IE2026-07-08#t219w0,2026-07-08,Deputy Catherine Ardagh,281,Human,4.0-web,dashboard history 2026-08-13
+ieprev087,Dail Eireann,ie,prev,IE2025-07-15#t618w0,2025-07-15,Deputy Paschal Donohoe,176,Human,4.0-web,dashboard history 2026-08-13
+ieprev088,Dail Eireann,ie,prev,IE2025-10-16#t311w1,2025-10-16,Minister of State at the Department of Education and Youth,228,Human,4.0-web,dashboard history 2026-08-13
+ieprev089,Dail Eireann,ie,prev,IE2025-07-16#t28w1,2025-07-16,Deputy Roderic O'Gorman,288,Human,4.0-web,dashboard history 2026-08-13
+ieprev090,Dail Eireann,ie,prev,IE2025-06-17#t49w0,2025-06-17,Deputy Ivana Bacik,202,Human,4.0-web,dashboard history 2026-08-13
+ieprev091,Dail Eireann,ie,prev,IE2025-05-22#t100w0,2025-05-22,Deputy Louise O'Reilly,258,Human,4.0-web,dashboard history 2026-08-13
+ieprev092,Dail Eireann,ie,prev,IE2025-06-26#t82w0,2025-06-26,Deputy Jennifer Carroll MacNeill,244,Human,4.0-web,dashboard history 2026-08-13
+ieprev093,Dail Eireann,ie,prev,IE2025-12-16#t169w4,2025-12-16,Deputy Richard O'Donoghue,312,Human,4.0-web,dashboard history 2026-08-13
+ieprev094,Dail Eireann,ie,prev,IE2026-05-14#t64w0,2026-05-14,Deputy Jim O'Callaghan,302,Human,4.0-web,dashboard history 2026-08-13
+ieprev095,Dail Eireann,ie,prev,IE2025-06-26#t62w0,2025-06-26,Deputy Naoise Ó Muirí,148,Human,4.0-web,dashboard history 2026-08-13
+ieprev096,Dail Eireann,ie,prev,IE2025-10-22#t222w3,2025-10-22,"Minister of State at the Department of Agriculture, Food and the Marine",359,Human,4.0-web,dashboard history 2026-08-13
+ieprev097,Dail Eireann,ie,prev,IE2026-02-24#t60w1,2026-02-24,The Taoiseach,148,Human,4.0-web,dashboard history 2026-08-13
+ieprev098,Dail Eireann,ie,prev,IE2025-04-01#t291w0,2025-04-01,Deputy Jack Chambers,286,Human,4.0-web,dashboard history 2026-08-13
+ieprev099,Dail Eireann,ie,prev,IE2025-09-25#t277w0,2025-09-25,Deputy Niamh Smyth,197,Human,4.0-web,dashboard history 2026-08-13
+ieprev100,Dail Eireann,ie,prev,IE2025-02-20#t157w0,2025-02-20,Deputy Ruairí Ó Murchú,162,Human,4.0-web,dashboard history 2026-08-13
+ieprev101,Dail Eireann,ie,prev,IE2026-01-20#t343w0,2026-01-20,Deputy Darren O'Rourke,213,Human,4.0-web,dashboard history 2026-08-13
+ieprev102,Dail Eireann,ie,prev,IE2026-04-22#t280w1,2026-04-22,Deputy Louise O'Reilly,293,Human,4.0-web,dashboard history 2026-08-13
+ieprev103,Dail Eireann,ie,prev,IE2026-03-24#t143w0,2026-03-24,Deputy Cian O'Callaghan,150,Human,4.0-web,dashboard history 2026-08-13
+ieprev104,Dail Eireann,ie,prev,IE2025-06-26#t325w0,2025-06-26,Deputy Mairéad Farrell,340,Human,4.0-web,dashboard history 2026-08-13
+ieprev105,Dail Eireann,ie,prev,IE2025-05-20#t389w1,2025-05-20,Deputy Pat Buckley,205,Mixed,4.0-web,dashboard history 2026-08-13
+ieprev106,Dail Eireann,ie,prev,IE2025-11-05#t230w4,2025-11-05,Deputy Matt Carthy,260,Human,4.0-web,dashboard history 2026-08-13
+ieprev107,Dail Eireann,ie,prev,IE2025-07-17#t295w0,2025-07-17,Deputy Conor Sheehan,187,Human,4.0-web,dashboard history 2026-08-13
+ieprev108,Dail Eireann,ie,prev,IE2025-11-12#t318w1,2025-11-12,Deputy Richard O'Donoghue,202,Human,4.0-web,dashboard history 2026-08-13
+ieprev109,Dail Eireann,ie,prev,IE2025-02-19#t56w3,2025-02-19,Deputy Conor Sheehan,190,Human,4.0-web,dashboard history 2026-08-13
+ieprev110,Dail Eireann,ie,prev,IE2026-05-19#t339w0,2026-05-19,Deputy James Browne,130,Human,4.0-web,dashboard history 2026-08-13
+ieprev111,Dail Eireann,ie,prev,IE2026-02-18#t263w4,2026-02-18,Deputy Matt Carthy,328,Human,4.0-web,dashboard history 2026-08-13
+ieprev112,Dail Eireann,ie,prev,IE2025-10-15#t43w0,2025-10-15,Deputy Eoin Ó Broin,245,Human,4.0-web,dashboard history 2026-08-13
+ieprev113,Dail Eireann,ie,prev,IE2026-07-02#t113w0,2026-07-02,Deputy Tony McCormack,159,Human,4.0-web,dashboard history 2026-08-13
+ieprev114,Dail Eireann,ie,prev,IE2026-07-08#t264w0,2026-07-08,Deputy Thomas Gould,150,Human,4.0-web,dashboard history 2026-08-13
+ieprev115,Dail Eireann,ie,prev,IE2026-02-24#t291w0,2026-02-24,Deputy Peadar Tóibín,281,Human,4.0-web,dashboard history 2026-08-13
+ieprev116,Dail Eireann,ie,prev,IE2025-12-09#t156w0,2025-12-09,Deputy Peadar Tóibín,180,Human,4.0-web,dashboard history 2026-08-13
+ieprev117,Dail Eireann,ie,prev,IE2025-10-16#t308w0,2025-10-16,Deputy Ruairí Ó Murchú,288,Human,4.0-web,dashboard history 2026-08-13
+ieprev118,Dail Eireann,ie,prev,IE2026-01-20#t194w1,2026-01-20,Deputy Liam Quaide,302,AI,4.0-web,dashboard history 2026-08-13
+ieprev119,Dail Eireann,ie,prev,IE2025-07-08#t136w0,2025-07-08,The Taoiseach,201,Human,4.0-web,dashboard history 2026-08-13
+ieshrt000,ie,ie,shrt,IE2026-03-05#t364w5,2026-03-05,Deputy Malcolm Byrne,107,Human,4.0-web,dashboard history 2026-08-13
+ieshrt001,ie,ie,shrt,IE2026-01-13#t358w0,2026-01-13,Deputy Peter Roche,67,Human,4.0-web,dashboard history 2026-08-13
+ieshrt002,ie,ie,shrt,IE2025-02-27#t227w0,2025-02-27,Deputy Gary Gannon,85,Human,4.0-web,dashboard history 2026-08-13
+ieshrt003,ie,ie,shrt,IE2025-06-10#t543w0,2025-06-10,Deputy Darragh O'Brien,70,Human,4.0-web,dashboard history 2026-08-13
+ieshrt004,ie,ie,shrt,IE2025-05-21#t288w2,2025-05-21,Deputy Seán Ó Fearghaíl,63,Human,4.0-web,dashboard history 2026-08-13
+ieshrt005,ie,ie,shrt,IE2025-02-18#t240w0,2025-02-18,Deputy Rose Conway-Walsh,103,Human,4.0-web,dashboard history 2026-08-13
+ieshrt006,ie,ie,shrt,IE2025-05-22#t110w0,2025-05-22,Deputy Michael Collins,53,Human,4.0-web,dashboard history 2026-08-13
+ieshrt007,ie,ie,shrt,IE2026-02-04#t134w0,2026-02-04,Minister of State at the Department of the Taoiseach,95,Human,4.0-web,dashboard history 2026-08-13
+ieshrt008,ie,ie,shrt,IE2026-02-18#t266w1,2026-02-18,Deputy Louis O'Hara,90,Human,4.0-web,dashboard history 2026-08-13
+ieshrt009,ie,ie,shrt,IE2025-11-18#t6w0,2025-11-18,Deputy Paul Murphy,107,Human,4.0-web,dashboard history 2026-08-13
+ieshrt010,ie,ie,shrt,IE2025-05-21#t2w1,2025-05-21,Deputy Conor D. McGuinness,52,Human,4.0-web,dashboard history 2026-08-13
+ieshrt011,ie,ie,shrt,IE2025-11-04#t141w3,2025-11-04,Deputy John McGuinness,90,Human,4.0-web,dashboard history 2026-08-13
+ieshrt012,ie,ie,shrt,IE2025-07-01#t30w0,2025-07-01,Deputy Conor Sheehan,55,Human,4.0-web,dashboard history 2026-08-13
+ieshrt013,ie,ie,shrt,IE2026-04-16#t6w0,2026-04-16,Deputy Conor Sheehan,56,Human,4.0-web,dashboard history 2026-08-13
+ieshrt014,ie,ie,shrt,IE2025-11-06#t20w0,2025-11-06,Deputy Sinéad Gibney,73,Human,4.0-web,dashboard history 2026-08-13
+ieshrt015,ie,ie,shrt,IE2026-07-15#t115w0,2026-07-15,The Taoiseach,89,Human,4.0-web,dashboard history 2026-08-13
+ieshrt016,ie,ie,shrt,IE2025-02-13#t62w0,2025-02-13,Deputy Ged Nash,72,Human,4.0-web,dashboard history 2026-08-13
+ieshrt017,ie,ie,shrt,IE2025-07-10#t39w0,2025-07-10,Deputy John Lahart,53,Human,4.0-web,dashboard history 2026-08-13
+ieshrt018,ie,ie,shrt,IE2026-06-09#t55w0,2026-06-09,Deputy Michael Collins,73,Human,4.0-web,dashboard history 2026-08-13
+ieshrt019,ie,ie,shrt,IE2026-02-18#t395w0,2026-02-18,Deputy Matt Carthy,61,Human,4.0-web,dashboard history 2026-08-13
+ieshrt020,ie,ie,shrt,IE2025-09-30#t182w0,2025-09-30,Deputy Tony McCormack,93,Human,4.0-web,dashboard history 2026-08-13
+ieshrt021,ie,ie,shrt,IE2025-05-07#t36w0,2025-05-07,Deputy Michael Collins,97,Human,4.0-web,dashboard history 2026-08-13
+ieshrt022,ie,ie,shrt,IE2026-01-28#t21w4,2026-01-28,Deputy Eoin Hayes,60,Human,4.0-web,dashboard history 2026-08-13
+ieshrt023,ie,ie,shrt,IE2025-06-17#t314w1,2025-06-17,Deputy Danny Healy-Rae,102,Human,4.0-web,dashboard history 2026-08-13
+ieshrt024,ie,ie,shrt,IE2025-03-27#t178w0,2025-03-27,Deputy Micheál Carrigy,89,Human,4.0-web,dashboard history 2026-08-13
+ieshrt025,ie,ie,shrt,IE2026-03-25#t202w0,2026-03-25,Deputy Peter 'Chap' Cleere,50,Human,4.0-web,dashboard history 2026-08-13
+ieshrt026,ie,ie,shrt,IE2026-06-10#t192w1,2026-06-10,Deputy John McGuinness,92,Human,4.0-web,dashboard history 2026-08-13
+ieshrt027,ie,ie,shrt,IE2026-04-22#t200w0,2026-04-22,The Taoiseach,110,Human,4.0-web,dashboard history 2026-08-13
+ieshrt028,ie,ie,shrt,IE2026-06-24#t154w0,2026-06-24,Deputy Joanna Byrne,65,Human,4.0-web,dashboard history 2026-08-13
+ieshrt029,ie,ie,shrt,IE2025-06-17#t153w0,2025-06-17,The Taoiseach,59,Human,4.0-web,dashboard history 2026-08-13
+ieshrt030,ie,ie,shrt,IE2026-03-04#t174w0,2026-03-04,Deputy Aengus Ó Snodaigh,55,Human,4.0-web,dashboard history 2026-08-13
+ieshrt031,ie,ie,shrt,IE2025-07-09#t357w2,2025-07-09,Deputy Eoin Ó Broin,66,Human,4.0-web,dashboard history 2026-08-13
+ieshrt032,ie,ie,shrt,IE2026-02-12#t286w1,2026-02-12,Deputy Charlie McConalogue,64,Human,4.0-web,dashboard history 2026-08-13
+ieshrt033,ie,ie,shrt,IE2026-07-08#t22w2,2026-07-08,Deputy Holly Cairns,60,Human,4.0-web,dashboard history 2026-08-13
+ieshrt034,ie,ie,shrt,IE2025-06-19#t30w0,2025-06-19,Deputy Sinéad Gibney,54,Human,4.0-web,dashboard history 2026-08-13
+ieshrt035,ie,ie,shrt,IE2025-10-22#t156w0,2025-10-22,The Taoiseach,63,Human,4.0-web,dashboard history 2026-08-13
+ieshrt036,ie,ie,shrt,IE2025-04-01#t556w1,2025-04-01,Deputy Michael Cahill,116,Human,4.0-web,dashboard history 2026-08-13
+ieshrt037,ie,ie,shrt,IE2026-02-11#t97w2,2026-02-11,Deputy Mary Lou McDonald,78,Human,4.0-web,dashboard history 2026-08-13
+ieshrt038,ie,ie,shrt,IE2025-12-16#t174w1,2025-12-16,Deputy David Cullinane,80,Human,4.0-web,dashboard history 2026-08-13
+ieshrt039,ie,ie,shrt,IE2025-09-18#t277w0,2025-09-18,Deputy Jennifer Carroll MacNeill,85,Human,4.0-web,dashboard history 2026-08-13
+ukctl000,UK House of Commons,uk,ctl,UK2018-01-30#t192w0,2018-01-30,Steven Baker,129,Human,4.0-web,dashboard history 2026-08-13
+ukctl001,UK House of Commons,uk,ctl,UK2018-03-26#t378w0,2018-03-26,John Bercow,277,Human,4.0-web,dashboard history 2026-08-13
+ukctl002,UK House of Commons,uk,ctl,UK2018-01-11#t439w3,2018-01-11,Nia Griffith,314,Human,4.0-web,dashboard history 2026-08-13
+ukctl003,UK House of Commons,uk,ctl,UK2021-06-14#t241w0,2021-06-14,Jeremy Hunt,166,Human,4.0-web,dashboard history 2026-08-13
+ukctl004,UK House of Commons,uk,ctl,UK2019-04-10#t220w0,2019-04-10,Chloe Smith,208,Human,4.0-web,dashboard history 2026-08-13
+ukctl005,UK House of Commons,uk,ctl,UK2019-02-21#t358w0,2019-02-21,Chi Onwurah,295,Human,4.0-web,dashboard history 2026-08-13
+ukctl006,UK House of Commons,uk,ctl,UK2019-09-03#t154w1,2019-09-03,Boris Johnson,311,Human,4.0-web,dashboard history 2026-08-13
+ukctl007,UK House of Commons,uk,ctl,UK2019-03-07#t372w0,2019-03-07,Wera Hobhouse,342,Human,4.0-web,dashboard history 2026-08-13
+ukctl008,UK House of Commons,uk,ctl,UK2018-11-13#t359w0,2018-11-13,Vicky Ford,200,Human,4.0-web,dashboard history 2026-08-13
+ukctl009,UK House of Commons,uk,ctl,UK2021-01-28#t298w0,2021-01-28,Fleur Anderson,294,Human,4.0-web,dashboard history 2026-08-13
+ukctl010,UK House of Commons,uk,ctl,UK2021-09-13#t310w0,2021-09-13,Chris Bryant,303,Human,4.0-web,dashboard history 2026-08-13
+ukctl011,UK House of Commons,uk,ctl,UK2020-02-24#t165w0,2020-02-24,Mark Hendrick,150,Human,4.0-web,dashboard history 2026-08-13
+ukctl012,UK House of Commons,uk,ctl,UK2020-11-18#t371w1,2020-11-18,Neale Hanvey,318,Human,4.0-web,dashboard history 2026-08-13
+ukctl013,UK House of Commons,uk,ctl,UK2020-01-07#t238w1,2020-01-07,Roger Gale,263,Human,4.0-web,dashboard history 2026-08-13
+ukctl014,UK House of Commons,uk,ctl,UK2021-06-07#t321w0,2021-06-07,Greg Clark,291,Human,4.0-web,dashboard history 2026-08-13
+ukctl015,UK House of Commons,uk,ctl,UK2019-02-04#t471w0,2019-02-04,Gavin Newlands,309,Human,4.0-web,dashboard history 2026-08-13
+ukctl016,UK House of Commons,uk,ctl,UK2018-12-11#t516w0,2018-12-11,Liz Twist,289,Human,4.0-web,dashboard history 2026-08-13
+ukctl017,UK House of Commons,uk,ctl,UK2021-09-15#t388w0,2021-09-15,Debbie Abrahams,354,Human,4.0-web,dashboard history 2026-08-13
+ukctl018,UK House of Commons,uk,ctl,UK2019-05-08#t350w0,2019-05-08,Michael Ellis,317,Human,4.0-web,dashboard history 2026-08-13
+ukctl019,UK House of Commons,uk,ctl,UK2018-06-12#t573w0,2018-06-12,Chi Onwurah,245,Human,4.0-web,dashboard history 2026-08-13
+ukctl020,UK House of Commons,uk,ctl,UK2020-09-08#t343w0,2020-09-08,James Brokenshire,306,Human,4.0-web,dashboard history 2026-08-13
+ukctl021,UK House of Commons,uk,ctl,UK2021-01-25#t144w0,2021-01-25,Steve Reed,245,Human,4.0-web,dashboard history 2026-08-13
+ukctl022,UK House of Commons,uk,ctl,UK2019-01-24#t399w1,2019-01-24,Nicky Morgan,121,Human,4.0-web,dashboard history 2026-08-13
+ukctl023,UK House of Commons,uk,ctl,UK2020-01-07#t363w4,2020-01-07,Stuart McDonald,309,Human,4.0-web,dashboard history 2026-08-13
+ukctl024,UK House of Commons,uk,ctl,UK2022-03-21#t178w0,2022-03-21,Kit Malthouse,120,Human,4.0-web,dashboard history 2026-08-13
+ukctl025,UK House of Commons,uk,ctl,UK2019-01-14#t629w1,2019-01-14,Seema Malhotra,239,Human,4.0-web,dashboard history 2026-08-13
+ukctl026,UK House of Commons,uk,ctl,UK2022-06-16#t378w3,2022-06-16,Jeff Smith,330,Human,4.0-web,dashboard history 2026-08-13
+ukctl027,UK House of Commons,uk,ctl,UK2021-07-13#t387w1,2021-07-13,Jacob Rees-Mogg,184,Human,4.0-web,dashboard history 2026-08-13
+ukctl028,UK House of Commons,uk,ctl,UK2021-03-04#t207w0,2021-03-04,Dominic Raab,295,Human,4.0-web,dashboard history 2026-08-13
+ukctl029,UK House of Commons,uk,ctl,UK2022-09-08#t471w0,2022-09-08,Justin Tomlinson,128,Human,4.0-web,dashboard history 2026-08-13
+ukctl030,UK House of Commons,uk,ctl,UK2019-03-14#t494w1,2019-03-14,Bill Cash,334,Human,4.0-web,dashboard history 2026-08-13
+ukctl031,UK House of Commons,uk,ctl,UK2022-03-03#t346w1,2022-03-03,Mick Whitley,357,Human,4.0-web,dashboard history 2026-08-13
+ukctl032,UK House of Commons,uk,ctl,UK2019-07-11#t395w0,2019-07-11,Pete Wishart,311,Human,4.0-web,dashboard history 2026-08-13
+ukctl033,UK House of Commons,uk,ctl,UK2019-02-25#t357w1,2019-02-25,Sue Hayman,284,Human,4.0-web,dashboard history 2026-08-13
+ukctl034,UK House of Commons,uk,ctl,UK2020-06-03#t375w0,2020-06-03,Stephen Hammond,326,Human,4.0-web,dashboard history 2026-08-13
+ukctl035,UK House of Commons,uk,ctl,UK2019-06-10#t396w1,2019-06-10,Gerald Jones,284,Human,4.0-web,dashboard history 2026-08-13
+ukctl036,UK House of Commons,uk,ctl,UK2018-04-27#t134w0,2018-04-27,Philip Davies,338,Human,4.0-web,dashboard history 2026-08-13
+ukctl037,UK House of Commons,uk,ctl,UK2019-07-22#t187w0,2019-07-22,Andrew Griffiths,256,Human,4.0-web,dashboard history 2026-08-13
+ukctl038,UK House of Commons,uk,ctl,UK2019-09-03#t517w6,2019-09-03,Kenneth Clarke,168,Human,4.0-web,dashboard history 2026-08-13
+ukctl039,UK House of Commons,uk,ctl,UK2019-06-13#t385w2,2019-06-13,Stephen Hammond,330,Human,4.0-web,dashboard history 2026-08-13
+ukctl040,UK House of Commons,uk,ctl,UK2019-05-22#t102w0,2019-05-22,Ronnie Cowan,131,Human,4.0-web,dashboard history 2026-08-13
+ukctl041,UK House of Commons,uk,ctl,UK2019-09-04#t187w0,2019-09-04,John Bercow,153,Human,4.0-web,dashboard history 2026-08-13
+ukctl042,UK House of Commons,uk,ctl,UK2020-04-29#t125w0,2020-04-29,Nigel Adams,232,Human,4.0-web,dashboard history 2026-08-13
+ukctl043,UK House of Commons,uk,ctl,UK2022-06-16#t383w0,2022-06-16,Kirsty Blackman,334,Human,4.0-web,dashboard history 2026-08-13
+ukctl044,UK House of Commons,uk,ctl,UK2021-04-12#t10w1,2021-04-12,Roger Gale,235,Human,4.0-web,dashboard history 2026-08-13
+ukctl045,UK House of Commons,uk,ctl,UK2019-02-26#t270w0,2019-02-26,Theresa May,123,Human,4.0-web,dashboard history 2026-08-13
+ukctl046,UK House of Commons,uk,ctl,UK2022-01-24#t311w0,2022-01-24,Allan Dorans,249,Human,4.0-web,dashboard history 2026-08-13
+ukctl047,UK House of Commons,uk,ctl,UK2020-01-29#t149w0,2020-01-29,Lindsay Hoyle,142,Human,4.0-web,dashboard history 2026-08-13
+ukctl048,UK House of Commons,uk,ctl,UK2022-01-25#t396w0,2022-01-25,Liam Byrne,344,Human,4.0-web,dashboard history 2026-08-13
+ukctl049,UK House of Commons,uk,ctl,UK2018-01-15#t450w1,2018-01-15,Stephen Kerr,268,Human,4.0-web,dashboard history 2026-08-13
+ukctl050,UK House of Commons,uk,ctl,UK2021-07-05#t188w0,2021-07-05,Sajid Javid,270,Human,4.0-web,dashboard history 2026-08-13
+ukctl051,UK House of Commons,uk,ctl,UK2019-03-28#t574w1,2019-03-28,Lee Rowley,264,Human,4.0-web,dashboard history 2026-08-13
+ukctl052,UK House of Commons,uk,ctl,UK2021-05-25#t302w1,2021-05-25,Jim Shannon,307,Human,4.0-web,dashboard history 2026-08-13
+ukctl053,UK House of Commons,uk,ctl,UK2018-01-22#t340w2,2018-01-22,Darren Jones,302,Human,4.0-web,dashboard history 2026-08-13
+ukctl054,UK House of Commons,uk,ctl,UK2020-02-03#t405w0,2020-02-03,Kerry McCarthy,128,Human,4.0-web,dashboard history 2026-08-13
+ukctl055,UK House of Commons,uk,ctl,UK2020-03-12#t382w3,2020-03-12,Rebecca Long-Bailey,293,Human,4.0-web,dashboard history 2026-08-13
+ukctl056,UK House of Commons,uk,ctl,UK2018-12-03#t576w0,2018-12-03,Alan Duncan,296,Human,4.0-web,dashboard history 2026-08-13
+ukctl057,UK House of Commons,uk,ctl,UK2021-07-22#t372w1,2021-07-22,John Cryer,281,Human,4.0-web,dashboard history 2026-08-13
+ukctl058,UK House of Commons,uk,ctl,UK2020-12-03#t384w0,2020-12-03,Esther McVey,338,Human,4.0-web,dashboard history 2026-08-13
+ukctl059,UK House of Commons,uk,ctl,UK2022-10-27#t359w0,2022-10-27,Helen Whately,157,Human,4.0-web,dashboard history 2026-08-13
+ukprev000,UK House of Commons,uk,prev,UK2025-06-03#t286w0,2025-06-03,Mark Francois,351,Human,4.0-web,dashboard history 2026-08-13
+ukprev001,UK House of Commons,uk,prev,UK2025-06-09#t382w6,2025-06-09,Nusrat Ghani,337,Human,4.0-web,dashboard history 2026-08-13
+ukprev002,UK House of Commons,uk,prev,UK2026-06-23#t85w0,2026-06-23,Rachel Reeves,121,Human,4.0-web,dashboard history 2026-08-13
+ukprev003,UK House of Commons,uk,prev,UK2025-12-15#t263w0,2025-12-15,Jess Phillips,203,Human,4.0-web,dashboard history 2026-08-13
+ukprev004,UK House of Commons,uk,prev,UK2025-10-15#t153w0,2025-10-15,Cat Smith,125,Human,4.0-web,dashboard history 2026-08-13
+ukprev005,UK House of Commons,uk,prev,UK2025-07-03#t284w0,2025-07-03,Jeremy Hunt,139,Human,4.0-web,dashboard history 2026-08-13
+ukprev006,UK House of Commons,uk,prev,UK2025-03-28#t152w1,2025-03-28,Mark Ferguson,203,Human,4.0-web,dashboard history 2026-08-13
+ukprev007,UK House of Commons,uk,prev,UK2025-05-13#t258w0,2025-05-13,Alex Burghart,216,Human,4.0-web,dashboard history 2026-08-13
+ukprev008,UK House of Commons,uk,prev,UK2026-01-22#t326w2,2026-01-22,Bill Esterson,296,Human,4.0-web,dashboard history 2026-08-13
+ukprev009,UK House of Commons,uk,prev,UK2025-05-12#t209w1,2025-05-12,Jonathan Reynolds,195,Human,4.0-web,dashboard history 2026-08-13
+ukprev010,UK House of Commons,uk,prev,UK2026-06-30#t316w0,2026-06-30,Mike Martin,133,Human,4.0-web,dashboard history 2026-08-13
+ukprev011,UK House of Commons,uk,prev,UK2026-07-15#t95w0,2026-07-15,Edward Davey,203,Human,4.0-web,dashboard history 2026-08-13
+ukprev012,UK House of Commons,uk,prev,UK2025-06-20#t108w0,2025-06-20,Luke Taylor,143,Human,4.0-web,dashboard history 2026-08-13
+ukprev013,UK House of Commons,uk,prev,UK2025-06-16#t153w5,2025-06-16,Yvette Cooper,293,Human,4.0-web,dashboard history 2026-08-13
+ukprev014,UK House of Commons,uk,prev,UK2025-11-26#t267w0,2025-11-26,Bill Esterson,267,Human,4.0-web,dashboard history 2026-08-13
+ukprev015,UK House of Commons,uk,prev,UK2025-05-07#t289w0,2025-05-07,Ben Spencer,201,Human,4.0-web,dashboard history 2026-08-13
+ukprev016,UK House of Commons,uk,prev,UK2025-05-07#t401w0,2025-05-07,Alan Mak,223,Human,4.0-web,dashboard history 2026-08-13
+ukprev017,UK House of Commons,uk,prev,UK2026-04-22#t184w0,2026-04-22,Scott Arthur,160,Human,4.0-web,dashboard history 2026-08-13
+ukprev018,UK House of Commons,uk,prev,UK2026-03-05#t417w0,2026-03-05,Mark Francois,299,Human,4.0-web,dashboard history 2026-08-13
+ukprev019,UK House of Commons,uk,prev,UK2025-06-18#t383w0,2025-06-18,Imogen Walker,352,Human,4.0-web,dashboard history 2026-08-13
+ukprev020,UK House of Commons,uk,prev,UK2025-09-16#t407w1,2025-09-16,Andrew Slaughter,197,Human,4.0-web,dashboard history 2026-08-13
+ukprev021,UK House of Commons,uk,prev,UK2026-04-27#t480w0,2026-04-27,Laura Trott,122,Human,4.0-web,dashboard history 2026-08-13
+ukprev022,UK House of Commons,uk,prev,UK2025-12-09#t414w1,2025-12-09,Jerome Mayhew,199,Human,4.0-web,dashboard history 2026-08-13
+ukprev023,UK House of Commons,uk,prev,UK2025-06-12#t414w2,2025-06-12,Graham Stuart,222,AI,4.0-web,dashboard history 2026-08-13
+ukprev024,UK House of Commons,uk,prev,UK2026-05-19#t464w1,2026-05-19,Linsey Farnsworth,216,Human,4.0-web,dashboard history 2026-08-13
+ukprev025,UK House of Commons,uk,prev,UK2025-06-18#t212w54,2025-06-18,Judith Cummins,353,Human,4.0-web,dashboard history 2026-08-13
+ukprev026,UK House of Commons,uk,prev,UK2026-04-14#t391w0,2026-04-14,Will Forster,293,Human,4.0-web,dashboard history 2026-08-13
+ukprev027,UK House of Commons,uk,prev,UK2026-01-26#t442w0,2026-01-26,James MacCleary,323,Mixed,4.0-web,dashboard history 2026-08-13
+ukprev028,UK House of Commons,uk,prev,UK2026-07-13#t474w0,2026-07-13,Tom Collins,250,Human,4.0-web,dashboard history 2026-08-13
+ukprev029,UK House of Commons,uk,prev,UK2025-03-26#t302w1,2025-03-26,Mary Glindon,323,Human,4.0-web,dashboard history 2026-08-13
+ukprev030,UK House of Commons,uk,prev,UK2025-06-09#t229w0,2025-06-09,Steve Darling,185,Human,4.0-web,dashboard history 2026-08-13
+ukprev031,UK House of Commons,uk,prev,UK2025-11-18#t178w0,2025-11-18,Dan Jarvis,153,Human,4.0-web,dashboard history 2026-08-13
+ukprev032,UK House of Commons,uk,prev,UK2025-05-08#t268w0,2025-05-08,Douglas Alexander,217,Human,4.0-web,dashboard history 2026-08-13
+ukprev033,UK House of Commons,uk,prev,UK2025-03-28#t158w1,2025-03-28,Chris McDonald,271,Human,4.0-web,dashboard history 2026-08-13
+ukprev034,UK House of Commons,uk,prev,UK2025-03-24#t498w0,2025-03-24,Jake Richards,351,Human,4.0-web,dashboard history 2026-08-13
+ukprev035,UK House of Commons,uk,prev,UK2026-05-14#t93w0,2026-05-14,Lincoln Jopp,145,Human,4.0-web,dashboard history 2026-08-13
+ukprev036,UK House of Commons,uk,prev,UK2025-06-12#t442w0,2025-06-12,Jenny Riddell-Carpenter,301,Human,4.0-web,dashboard history 2026-08-13
+ukprev037,UK House of Commons,uk,prev,UK2025-09-03#t435w0,2025-09-03,Matt Vickers,306,Human,4.0-web,dashboard history 2026-08-13
+ukprev038,UK House of Commons,uk,prev,UK2026-02-11#t309w1,2026-02-11,Matt Vickers,250,Human,4.0-web,dashboard history 2026-08-13
+ukprev039,UK House of Commons,uk,prev,UK2025-01-21#t259w0,2025-01-21,Yvette Cooper,138,Human,4.0-web,dashboard history 2026-08-13
+ukprev040,UK House of Commons,uk,prev,UK2026-05-19#t268w0,2026-05-19,Martin Vickers,127,Human,4.0-web,dashboard history 2026-08-13
+ukprev041,UK House of Commons,uk,prev,UK2025-11-19#t190w1,2025-11-19,Chris Murray,249,Human,4.0-web,dashboard history 2026-08-13
+ukprev042,UK House of Commons,uk,prev,UK2025-06-26#t334w0,2025-06-26,Keir Starmer,125,Human,4.0-web,dashboard history 2026-08-13
+ukprev043,UK House of Commons,uk,prev,UK2025-10-15#t90w0,2025-10-15,Keir Starmer,174,Human,4.0-web,dashboard history 2026-08-13
+ukprev044,UK House of Commons,uk,prev,UK2026-02-26#t284w3,2026-02-26,Ann Davies,159,Human,4.0-web,dashboard history 2026-08-13
+ukprev045,UK House of Commons,uk,prev,UK2025-04-24#t225w0,2025-04-24,Steffan Aquarone,122,Human,4.0-web,dashboard history 2026-08-13
+ukprev046,UK House of Commons,uk,prev,UK2025-10-30#t485w0,2025-10-30,Jim Shannon,343,Human,4.0-web,dashboard history 2026-08-13
+ukprev047,UK House of Commons,uk,prev,UK2025-12-03#t298w2,2025-12-03,Neil Duncan-Jordan,275,Human,4.0-web,dashboard history 2026-08-13
+ukprev048,UK House of Commons,uk,prev,UK2025-12-10#t521w4,2025-12-10,Wes Streeting,289,Human,4.0-web,dashboard history 2026-08-13
+ukprev049,UK House of Commons,uk,prev,UK2025-01-21#t110w0,2025-01-21,James Murray,122,Human,4.0-web,dashboard history 2026-08-13
+ukprev050,UK House of Commons,uk,prev,UK2025-01-07#t344w0,2025-01-07,Darren Jones,327,Human,4.0-web,dashboard history 2026-08-13
+ukprev051,UK House of Commons,uk,prev,UK2025-05-19#t337w2,2025-05-19,Kevin McKenna,344,Human,4.0-web,dashboard history 2026-08-13
+ukprev052,UK House of Commons,uk,prev,UK2025-04-02#t128w0,2025-04-02,Stephen Doughty,190,Human,4.0-web,dashboard history 2026-08-13
+ukprev053,UK House of Commons,uk,prev,UK2026-01-07#t339w0,2026-01-07,Mark Pritchard,181,Human,4.0-web,dashboard history 2026-08-13
+ukprev054,UK House of Commons,uk,prev,UK2025-03-26#t303w1,2025-03-26,Bob Blackman,246,Human,4.0-web,dashboard history 2026-08-13
+ukprev055,UK House of Commons,uk,prev,UK2026-02-04#t138w0,2026-02-04,Alex Burghart,266,Human,4.0-web,dashboard history 2026-08-13
+ukprev056,UK House of Commons,uk,prev,UK2025-01-08#t238w2,2025-01-08,Jessica Asato,171,Human,4.0-web,dashboard history 2026-08-13
+ukprev057,UK House of Commons,uk,prev,UK2026-01-12#t237w0,2026-01-12,Neil Hudson,353,Human,4.0-web,dashboard history 2026-08-13
+ukprev058,UK House of Commons,uk,prev,UK2025-02-03#t353w0,2025-02-03,Siân Berry,331,Human,4.0-web,dashboard history 2026-08-13
+ukprev059,UK House of Commons,uk,prev,UK2025-04-23#t177w1,2025-04-23,Chris Curtis,295,Human,4.0-web,dashboard history 2026-08-13
+ukprev060,UK House of Commons,uk,prev,UK2025-06-30#t380w0,2025-06-30,Dan Jarvis,295,Human,4.0-web,dashboard history 2026-08-13
+ukprev061,UK House of Commons,uk,prev,UK2026-06-02#t398w0,2026-06-02,Alistair Carns,333,Human,4.0-web,dashboard history 2026-08-13
+ukprev062,UK House of Commons,uk,prev,UK2026-06-22#t164w0,2026-06-22,Kemi Badenoch,348,Human,4.0-web,dashboard history 2026-08-13
+ukprev063,UK House of Commons,uk,prev,UK2025-12-02#t346w0,2025-12-02,Ruth Jones,357,Human,4.0-web,dashboard history 2026-08-13
+ukprev064,UK House of Commons,uk,prev,UK2025-11-17#t374w2,2025-11-17,Kemi Badenoch,288,Human,4.0-web,dashboard history 2026-08-13
+ukprev065,UK House of Commons,uk,prev,UK2025-11-13#t439w0,2025-11-13,Kit Malthouse,307,Human,4.0-web,dashboard history 2026-08-13
+ukprev066,UK House of Commons,uk,prev,UK2025-09-09#t405w1,2025-09-09,Jeremy Wright,347,Human,4.0-web,dashboard history 2026-08-13
+ukprev067,UK House of Commons,uk,prev,UK2026-06-18#t177w0,2026-06-18,Alan Campbell,138,Human,4.0-web,dashboard history 2026-08-13
+ukprev068,UK House of Commons,uk,prev,UK2025-12-09#t378w1,2025-12-09,Josh Babarinde,249,Human,4.0-web,dashboard history 2026-08-13
+ukprev069,UK House of Commons,uk,prev,UK2025-12-17#t502w0,2025-12-17,Chris McDonald,232,Human,4.0-web,dashboard history 2026-08-13
+ukprev070,UK House of Commons,uk,prev,UK2026-05-13#t81w0,2026-05-13,David Davis,124,Human,4.0-web,dashboard history 2026-08-13
+ukprev071,UK House of Commons,uk,prev,UK2026-06-24#t256w0,2026-06-24,Amanda Martin,216,Human,4.0-web,dashboard history 2026-08-13
+ukprev072,UK House of Commons,uk,prev,UK2025-03-03#t472w2,2025-03-03,Marsha de Cordova,172,Human,4.0-web,dashboard history 2026-08-13
+ukprev073,UK House of Commons,uk,prev,UK2025-04-03#t426w3,2025-04-03,Bobby Dean,242,Human,4.0-web,dashboard history 2026-08-13
+ukprev074,UK House of Commons,uk,prev,UK2026-01-29#t350w0,2026-01-29,Kirsty Blackman,349,Human,4.0-web,dashboard history 2026-08-13
+ukprev075,UK House of Commons,uk,prev,UK2025-03-27#t449w1,2025-03-27,Chris Murray,252,Human,4.0-web,dashboard history 2026-08-13
+ukprev076,UK House of Commons,uk,prev,UK2025-05-19#t315w1,2025-05-19,Neil Coyle,358,Human,4.0-web,dashboard history 2026-08-13
+ukprev077,UK House of Commons,uk,prev,UK2025-03-11#t249w0,2025-03-11,Greg Smith,189,Human,4.0-web,dashboard history 2026-08-13
+ukprev078,UK House of Commons,uk,prev,UK2026-01-21#t517w0,2026-01-21,Hilary Benn,138,Human,4.0-web,dashboard history 2026-08-13
+ukprev079,UK House of Commons,uk,prev,UK2025-09-08#t197w0,2025-09-08,Florence Eshalomi,162,Human,4.0-web,dashboard history 2026-08-13
+ukprev080,UK House of Commons,uk,prev,UK2025-11-24#t556w2,2025-11-24,Rebecca Paul,249,Human,4.0-web,dashboard history 2026-08-13
+ukprev081,UK House of Commons,uk,prev,UK2025-01-29#t272w2,2025-01-29,Marsha de Cordova,331,Human,4.0-web,dashboard history 2026-08-13
+ukprev082,UK House of Commons,uk,prev,UK2025-01-27#t306w0,2025-01-27,Max Wilkinson,282,Human,4.0-web,dashboard history 2026-08-13
+ukprev083,UK House of Commons,uk,prev,UK2025-01-28#t235w0,2025-01-28,John Martin McDonnell,151,Human,4.0-web,dashboard history 2026-08-13
+ukprev084,UK House of Commons,uk,prev,UK2026-02-04#t73w0,2026-02-04,Keir Starmer,218,Human,4.0-web,dashboard history 2026-08-13
+ukprev085,UK House of Commons,uk,prev,UK2025-01-21#t226w0,2025-01-21,James Cleverly,158,Human,4.0-web,dashboard history 2026-08-13
+ukprev086,UK House of Commons,uk,prev,UK2025-04-28#t405w0,2025-04-28,Lee Dillon,339,Human,4.0-web,dashboard history 2026-08-13
+ukprev087,UK House of Commons,uk,prev,UK2026-02-09#t352w2,2026-02-09,Douglas McAllister,318,Mixed,4.0-web,dashboard history 2026-08-13
+ukprev088,UK House of Commons,uk,prev,UK2026-06-08#t130w0,2026-06-08,Natalie Fleet,124,Human,4.0-web,dashboard history 2026-08-13
+ukprev089,UK House of Commons,uk,prev,UK2026-04-14#t345w0,2026-04-14,Mary Foy,274,AI,4.0-web,dashboard history 2026-08-13
+ukprev090,UK House of Commons,uk,prev,UK2026-06-22#t330w3,2026-06-22,Judith Cummins,348,Mixed,4.0-web,dashboard history 2026-08-13
+ukprev091,UK House of Commons,uk,prev,UK2025-03-17#t274w15,2025-03-17,Nusrat Ghani,349,Human,4.0-web,dashboard history 2026-08-13
+ukprev092,UK House of Commons,uk,prev,UK2026-02-02#t461w0,2026-02-02,Ben Maguire,149,Human,4.0-web,dashboard history 2026-08-13
+ukprev093,UK House of Commons,uk,prev,UK2025-06-19#t497w0,2025-06-19,Catherine McKinnell,305,Human,4.0-web,dashboard history 2026-08-13
+ukprev094,UK House of Commons,uk,prev,UK2025-11-11#t391w0,2025-11-11,Mark Francois,320,Human,4.0-web,dashboard history 2026-08-13
+ukprev095,UK House of Commons,uk,prev,UK2026-05-20#t221w1,2026-05-20,Luke Pollard,256,Human,4.0-web,dashboard history 2026-08-13
+ukprev096,UK House of Commons,uk,prev,UK2026-06-11#t241w0,2026-06-11,Kim Leadbeater,234,Mixed,4.0-web,dashboard history 2026-08-13
+ukprev097,UK House of Commons,uk,prev,UK2025-03-10#t385w1,2025-03-10,Josh Simons,322,Human,4.0-web,dashboard history 2026-08-13
+ukprev098,UK House of Commons,uk,prev,UK2026-01-07#t329w1,2026-01-07,Angela Eagle,142,Human,4.0-web,dashboard history 2026-08-13
+ukprev099,UK House of Commons,uk,prev,UK2026-06-10#t327w0,2026-06-10,Olly Glover,211,Human,4.0-web,dashboard history 2026-08-13
+ukprev100,UK House of Commons,uk,prev,UK2025-03-05#t134w0,2025-03-05,Shabana Mahmood,356,Human,4.0-web,dashboard history 2026-08-13
+ukprev101,UK House of Commons,uk,prev,UK2025-10-13#t528w0,2025-10-13,Fleur Anderson,256,Human,4.0-web,dashboard history 2026-08-13
+ukprev102,UK House of Commons,uk,prev,UK2025-07-15#t362w0,2025-07-15,Antonia Bance,354,Human,4.0-web,dashboard history 2026-08-13
+ukprev103,UK House of Commons,uk,prev,UK2026-03-23#t256w1,2026-03-23,Chris Philp,342,Human,4.0-web,dashboard history 2026-08-13
+ukprev104,UK House of Commons,uk,prev,UK2025-05-21#t356w0,2025-05-21,Chris Philp,348,Human,4.0-web,dashboard history 2026-08-13
+ukprev105,UK House of Commons,uk,prev,UK2025-01-14#t83w0,2025-01-14,Monica Harding,125,Human,4.0-web,dashboard history 2026-08-13
+ukprev106,UK House of Commons,uk,prev,UK2026-04-22#t343w0,2026-04-22,Lisa Smart,150,Human,4.0-web,dashboard history 2026-08-13
+ukprev107,UK House of Commons,uk,prev,UK2026-04-28#t235w1,2026-04-28,Simon Hoare,266,Human,4.0-web,dashboard history 2026-08-13
+ukprev108,UK House of Commons,uk,prev,UK2025-06-17#t315w1,2025-06-17,Rebecca Smith,126,Human,4.0-web,dashboard history 2026-08-13
+ukprev109,UK House of Commons,uk,prev,UK2026-01-08#t394w1,2026-01-08,Matt Western,255,Human,4.0-web,dashboard history 2026-08-13
+ukprev110,UK House of Commons,uk,prev,UK2025-04-01#t518w1,2025-04-01,Laurence Turner,341,Human,4.0-web,dashboard history 2026-08-13
+ukprev111,UK House of Commons,uk,prev,UK2025-01-24#t47w0,2025-01-24,Simon Hoare,266,Human,4.0-web,dashboard history 2026-08-13
+ukprev112,UK House of Commons,uk,prev,UK2026-03-19#t474w4,2026-03-19,Luke Akehurst,303,Human,4.0-web,dashboard history 2026-08-13
+ukprev113,UK House of Commons,uk,prev,UK2025-04-23#t187w0,2025-04-23,Connor Naismith,293,Human,4.0-web,dashboard history 2026-08-13
+ukprev114,UK House of Commons,uk,prev,UK2025-11-24#t582w1,2025-11-24,Alex Davies-Jones,322,Human,4.0-web,dashboard history 2026-08-13
+ukprev115,UK House of Commons,uk,prev,UK2025-03-20#t33w0,2025-03-20,Robbie Moore,160,Human,4.0-web,dashboard history 2026-08-13
+ukprev116,UK House of Commons,uk,prev,UK2025-03-28#t151w0,2025-03-28,Chris Hinchliff,340,Human,4.0-web,dashboard history 2026-08-13
+ukprev117,UK House of Commons,uk,prev,UK2026-06-22#t405w0,2026-06-22,Louise Jones,310,Human,4.0-web,dashboard history 2026-08-13
+ukprev118,UK House of Commons,uk,prev,UK2026-04-29#t80w0,2026-04-29,Emily Thornberry,133,Human,4.0-web,dashboard history 2026-08-13
+ukprev119,UK House of Commons,uk,prev,UK2026-03-12#t295w0,2026-03-12,Max Wilkinson,310,Human,4.0-web,dashboard history 2026-08-13
+ukshrt000,uk,uk,shrt,UK2025-07-15#t163w0,2025-07-15,Steve Witherden,64,Human,4.0-web,dashboard history 2026-08-13
+ukshrt001,uk,uk,shrt,UK2025-03-03#t412w0,2025-03-03,Harriet Cross,69,Human,4.0-web,dashboard history 2026-08-13
+ukshrt002,uk,uk,shrt,UK2026-01-19#t533w0,2026-01-19,David Chadwick,68,Human,4.0-web,dashboard history 2026-08-13
+ukshrt003,uk,uk,shrt,UK2026-02-25#t355w5,2026-02-25,Monica Harding,78,Human,4.0-web,dashboard history 2026-08-13
+ukshrt004,uk,uk,shrt,UK2025-10-23#t163w0,2025-10-23,Ellie Reeves,117,Human,4.0-web,dashboard history 2026-08-13
+ukshrt005,uk,uk,shrt,UK2025-09-04#t375w0,2025-09-04,Stephen Morgan,99,Human,4.0-web,dashboard history 2026-08-13
+ukshrt006,uk,uk,shrt,UK2026-07-09#t459w0,2026-07-09,Lewis Atkinson,82,Human,4.0-web,dashboard history 2026-08-13
+ukshrt007,uk,uk,shrt,UK2025-07-17#t89w0,2025-07-17,Gareth Thomas,103,Human,4.0-web,dashboard history 2026-08-13
+ukshrt008,uk,uk,shrt,UK2025-01-09#t244w0,2025-01-09,Darren Jones,111,Human,4.0-web,dashboard history 2026-08-13
+ukshrt009,uk,uk,shrt,UK2026-01-07#t595w0,2026-01-07,John Healey,52,Human,4.0-web,dashboard history 2026-08-13
+ukshrt010,uk,uk,shrt,UK2025-03-18#t187w0,2025-03-18,Liz Kendall,97,Human,4.0-web,dashboard history 2026-08-13
+ukshrt011,uk,uk,shrt,UK2025-04-24#t269w0,2025-04-24,Lucy Powell,100,Human,4.0-web,dashboard history 2026-08-13
+ukshrt012,uk,uk,shrt,UK2026-06-30#t86w0,2026-06-30,Jim Shannon,84,Human,4.0-web,dashboard history 2026-08-13
+ukshrt013,uk,uk,shrt,UK2026-06-04#t42w0,2026-06-04,Angela Eagle,72,Human,4.0-web,dashboard history 2026-08-13
+ukshrt014,uk,uk,shrt,UK2025-06-04#t29w0,2025-06-04,Christine Jardine,82,Human,4.0-web,dashboard history 2026-08-13
+ukshrt015,uk,uk,shrt,UK2026-04-22#t259w3,2026-04-22,Torsten Bell,88,Human,4.0-web,dashboard history 2026-08-13
+ukshrt016,uk,uk,shrt,UK2026-02-02#t212w0,2026-02-02,Rupa Huq,83,Human,4.0-web,dashboard history 2026-08-13
+ukshrt017,uk,uk,shrt,UK2025-05-22#t286w0,2025-05-22,John Hayes,99,Human,4.0-web,dashboard history 2026-08-13
+ukshrt018,uk,uk,shrt,UK2026-03-17#t129w0,2026-03-17,Sarah Sackman,62,Human,4.0-web,dashboard history 2026-08-13
+ukshrt019,uk,uk,shrt,UK2026-07-07#t268w0,2026-07-07,Iain Duncan Smith,98,Human,4.0-web,dashboard history 2026-08-13
+ukshrt020,uk,uk,shrt,UK2026-03-23#t187w0,2026-03-23,Dave Doogan,95,Human,4.0-web,dashboard history 2026-08-13
+ukshrt021,uk,uk,shrt,UK2026-01-27#t421w0,2026-01-27,Alistair Strathern,68,Human,4.0-web,dashboard history 2026-08-13
+ukshrt022,uk,uk,shrt,UK2025-02-24#t209w0,2025-02-24,David Lammy,105,Human,4.0-web,dashboard history 2026-08-13
+ukshrt023,uk,uk,shrt,UK2026-02-23#t199w0,2026-02-23,Christine Jardine,106,Human,4.0-web,dashboard history 2026-08-13
+ukshrt024,uk,uk,shrt,UK2026-03-26#t103w0,2026-03-26,Keir Mather,110,Human,4.0-web,dashboard history 2026-08-13
+ukshrt025,uk,uk,shrt,UK2025-04-30#t210w0,2025-04-30,Roger Gale,72,Human,4.0-web,dashboard history 2026-08-13
+ukshrt026,uk,uk,shrt,UK2025-12-18#t282w0,2025-12-18,Alan Campbell,59,Human,4.0-web,dashboard history 2026-08-13
+ukshrt027,uk,uk,shrt,UK2026-03-10#t34w0,2026-03-10,Rachel Reeves,115,Human,4.0-web,dashboard history 2026-08-13
+ukshrt028,uk,uk,shrt,UK2025-03-18#t280w0,2025-03-18,Liz Kendall,57,Human,4.0-web,dashboard history 2026-08-13
+ukshrt029,uk,uk,shrt,UK2025-10-28#t478w3,2025-10-28,Max Wilkinson,101,Human,4.0-web,dashboard history 2026-08-13
+ukshrt030,uk,uk,shrt,UK2026-07-07#t187w0,2026-07-07,Andrew Snowden,101,Human,4.0-web,dashboard history 2026-08-13
+ukshrt031,uk,uk,shrt,UK2025-05-21#t456w0,2025-05-21,John Hayes,106,Human,4.0-web,dashboard history 2026-08-13
+ukshrt032,uk,uk,shrt,UK2025-02-05#t56w0,2025-02-05,Anneliese Dodds,56,Human,4.0-web,dashboard history 2026-08-13
+ukshrt033,uk,uk,shrt,UK2026-01-29#t275w0,2026-01-29,Pat McFadden,70,Human,4.0-web,dashboard history 2026-08-13
+ukshrt034,uk,uk,shrt,UK2026-01-20#t82w0,2026-01-20,Chris Elmore,94,Human,4.0-web,dashboard history 2026-08-13
+ukshrt035,uk,uk,shrt,UK2026-02-10#t233w0,2026-02-10,John Martin McDonnell,79,Human,4.0-web,dashboard history 2026-08-13
+ukshrt036,uk,uk,shrt,UK2025-11-26#t182w0,2025-11-26,Layla Moran,85,Human,4.0-web,dashboard history 2026-08-13
+ukshrt037,uk,uk,shrt,UK2026-06-03#t216w0,2026-06-03,Vikki Slade,83,Human,4.0-web,dashboard history 2026-08-13
+ukshrt038,uk,uk,shrt,UK2025-11-26#t67w0,2025-11-26,Douglas Alexander,76,Human,4.0-web,dashboard history 2026-08-13
+ukshrt039,uk,uk,shrt,UK2026-03-23#t93w0,2026-03-23,Siân Berry,72,Human,4.0-web,dashboard history 2026-08-13

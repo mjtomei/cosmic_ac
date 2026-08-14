@@ -1,0 +1,56 @@
+{
+ "corpus": "UK House of Commons sh25",
+ "seed": 557725148,
+ "pre_words": 9659351,
+ "post_words": 4682714,
+ "n_instrument": 407,
+ "primary_mean_logFC": 0.05788,
+ "placebo_median": -0.17815,
+ "placebo_p99": -0.09923,
+ "placebo_max": -0.08746,
+ "primary_p": 0.0,
+ "n_placebo": 1000,
+ "sweep": [
+  {
+   "threshold_per100k": 1,
+   "n_words": 274,
+   "ratio": 1.0439,
+   "p": 0.322
+  },
+  {
+   "threshold_per100k": 2,
+   "n_words": 308,
+   "ratio": 1.0359,
+   "p": 0.364
+  },
+  {
+   "threshold_per100k": 5,
+   "n_words": 347,
+   "ratio": 0.991,
+   "p": 0.698
+  },
+  {
+   "threshold_per100k": 10,
+   "n_words": 368,
+   "ratio": 0.9577,
+   "p": 0.931
+  },
+  {
+   "threshold_per100k": 20,
+   "n_words": 382,
+   "ratio": 0.9633,
+   "p": 0.909
+  },
+  {
+   "threshold_per100k": 50,
+   "n_words": 395,
+   "ratio": 0.9699,
+   "p": 0.756
+  }
+ ],
+ "formal_register_ratio": 0.952,
+ "bootstrap_ci": [
+  0.9686,
+  0.9858
+ ]
+}

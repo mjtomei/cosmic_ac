@@ -1,0 +1,62 @@
+{
+ "ie-long-post": {
+  "n": 400,
+  "mean": 10.1575,
+  "flag_rate": 0.0025
+ },
+ "ie-short-post": {
+  "n": 400,
+  "mean": 5.9325,
+  "flag_rate": 0.0
+ },
+ "ca-long-pre": {
+  "n": 400,
+  "mean": 7.2575,
+  "flag_rate": 0.0
+ },
+ "uk-short-pre": {
+  "n": 400,
+  "mean": 4.9925,
+  "flag_rate": 0.0
+ },
+ "ie-long-pre": {
+  "n": 400,
+  "mean": 6.2275,
+  "flag_rate": 0.0
+ },
+ "uk-long-pre": {
+  "n": 400,
+  "mean": 6.15,
+  "flag_rate": 0.0
+ },
+ "uk-long-post": {
+  "n": 400,
+  "mean": 11.08,
+  "flag_rate": 0.0075
+ },
+ "ca-short-pre": {
+  "n": 400,
+  "mean": 5.7575,
+  "flag_rate": 0.0
+ },
+ "uk-short-post": {
+  "n": 400,
+  "mean": 7.3,
+  "flag_rate": 0.0
+ },
+ "ca-short-post": {
+  "n": 400,
+  "mean": 6.71,
+  "flag_rate": 0.0025
+ },
+ "ca-long-post": {
+  "n": 400,
+  "mean": 12.2725,
+  "flag_rate": 0.0275
+ },
+ "ie-short-pre": {
+  "n": 400,
+  "mean": 4.75,
+  "flag_rate": 0.0
+ }
+}

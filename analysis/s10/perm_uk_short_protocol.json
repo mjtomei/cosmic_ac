@@ -1,0 +1,56 @@
+{
+ "corpus": "UK House of Commons short-band",
+ "seed": 937158747,
+ "pre_words": 12132422,
+ "post_words": 6708242,
+ "n_instrument": 407,
+ "primary_mean_logFC": 0.11042,
+ "placebo_median": -0.18868,
+ "placebo_p99": -0.09768,
+ "placebo_max": -0.07618,
+ "primary_p": 0.0,
+ "n_placebo": 1000,
+ "sweep": [
+  {
+   "threshold_per100k": 1,
+   "n_words": 284,
+   "ratio": 1.1401,
+   "p": 0.199
+  },
+  {
+   "threshold_per100k": 2,
+   "n_words": 313,
+   "ratio": 1.1091,
+   "p": 0.233
+  },
+  {
+   "threshold_per100k": 5,
+   "n_words": 352,
+   "ratio": 1.0695,
+   "p": 0.363
+  },
+  {
+   "threshold_per100k": 10,
+   "n_words": 367,
+   "ratio": 1.0278,
+   "p": 0.618
+  },
+  {
+   "threshold_per100k": 20,
+   "n_words": 382,
+   "ratio": 1.0284,
+   "p": 0.571
+  },
+  {
+   "threshold_per100k": 50,
+   "n_words": 394,
+   "ratio": 1.0259,
+   "p": 0.505
+  }
+ ],
+ "formal_register_ratio": 1.0989,
+ "bootstrap_ci": [
+  1.0279,
+  1.0399
+ ]
+}

@@ -51,7 +51,13 @@ def main():
         m = man[k]
         rows.append({"id": k, "chamber": m["chamber"], "era": m["era"],
                      "seg_id": m["seg_id"], "date": m["date"],
-                     "n_words": m["n_words"], "band": "short",
+                     # Take the band from the MANIFEST, never a literal. This read
+                     # "short" until 2026-08-13, which was harmless while the
+                     # short band was all there was -- then the 19 over-360
+                     # segments were recorded and every one was filed as
+                     # short, moving the short band's word-weighted rate from
+                     # 0.82% to 2.03% and leaving "over" reading as unscored.
+                     "n_words": m["n_words"], "band": m.get("band", "short"),
                      "pangram": v, "version": "4.0-web"})
         added += 1
     with open(OUT, "w", newline="") as fh:

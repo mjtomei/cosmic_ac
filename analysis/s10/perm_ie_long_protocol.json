@@ -1,0 +1,56 @@
+{
+ "corpus": "Dail Eireann long-band",
+ "seed": 1946364401,
+ "pre_words": 34479929,
+ "post_words": 17576240,
+ "n_instrument": 407,
+ "primary_mean_logFC": 0.05922,
+ "placebo_median": -0.15434,
+ "placebo_p99": -0.0666,
+ "placebo_max": -0.03588,
+ "primary_p": 0.0,
+ "n_placebo": 1000,
+ "sweep": [
+  {
+   "threshold_per100k": 1,
+   "n_words": 271,
+   "ratio": 1.1209,
+   "p": 0.196
+  },
+  {
+   "threshold_per100k": 2,
+   "n_words": 309,
+   "ratio": 1.1129,
+   "p": 0.148
+  },
+  {
+   "threshold_per100k": 5,
+   "n_words": 348,
+   "ratio": 1.0952,
+   "p": 0.092
+  },
+  {
+   "threshold_per100k": 10,
+   "n_words": 366,
+   "ratio": 1.081,
+   "p": 0.063
+  },
+  {
+   "threshold_per100k": 20,
+   "n_words": 380,
+   "ratio": 1.0498,
+   "p": 0.099
+  },
+  {
+   "threshold_per100k": 50,
+   "n_words": 393,
+   "ratio": 1.034,
+   "p": 0.121
+  }
+ ],
+ "formal_register_ratio": 0.9852,
+ "bootstrap_ci": [
+  1.0365,
+  1.0462
+ ]
+}

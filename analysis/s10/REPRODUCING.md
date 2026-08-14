@@ -54,10 +54,20 @@ them; 17 of the 21 chambers were unreproducible as a result. Fixed 2026-08-12.
 | `pangram_ch_verdicts.csv` | the earlier four-chamber arm (**Pangram 3 era — see below**) |
 | `pangram_verdicts.csv` | the New Brunswick pilot |
 
-**A warning about `pangram_ch_verdicts.csv`.** Its 120 short-band rows are
-119 Human, 1 AI and *no Mixed at all*, which is the Pangram 3 signature. They
-were scored on 2026-08-02, a week before the model-tier defect was found, and
-none has been rescored. Do not pool them with Pangram 4 results.
+**A note about `pangram_ch_verdicts.csv`.** It carries no `version` column,
+so its model tier is inferred rather than recorded. Earlier text here called
+its 120 short-band rows (119 Human, 1 AI, no Mixed) "the Pangram 3 signature"
+and told you not to pool them. **That inference was wrong on both halves.**
+Pangram 3 does return Mixed — the `prior_p3` column of
+`pangram_p4_verdicts.csv` holds 8 of them — so absence of Mixed identifies
+nothing. And zero Mixed among 120 *short* segments is what Pangram 4 predicts
+anyway: the matched-rate P4 short band flagged 9 of 1,648.
+
+What the tier actually rests on: the arm was scored by uploading RTFs to the
+web dashboard (`pangram_ch/` holds 540 files, `pangram_ch2/` the short band),
+and the dashboard runs Pangram 4 — the P3 default afflicts the *API* route
+(§3.2). That is strong but indirect. Before pooling these rows with Pangram 4
+results, rescore a sample and check agreement.
 
 ## To find the exact segments that came back AI
 
@@ -81,3 +91,35 @@ resulting `segments_*.jsonl`. The text is in the `text` field.
   unmeasurable by any sampling design rather than merely unmeasured
   (`corpus_audit.py`).
 - **The four-chamber short bands**, until they are rescored on Pangram 4.
+
+## Manitoba: the live files understate the record (found 2026-08-13)
+
+`provinces_extract.py` matched a speaker prefix in a single `<b>` run. From
+mid-2018 Manitoba's Word export splits a name across several runs around
+inserted TOC anchors — `<b>Ms. Malaya </b><b><a name=_Toc..>Marcelino</a></b><b>
+ (Notre Dame):</b>` — so the prefix did not match, the speech accreted to the
+previous turn (usually the Speaker's) and was then dropped as chair voice.
+Chair share of page text runs 4% in 2011–13 against 37–40% in 2020–24.
+
+The extractor is fixed. The **live files are not regenerated**, because
+re-extraction shifts turn indices and 135 of the 278 Manitoba segments carrying
+a Pangram verdict would lose their `seg_id` anchor.
+
+| file | status |
+|---|---|
+| `segments_mb.jsonl`, `segments_mb_2025.jsonl` | live; understate 2018+ |
+| `segments_mb_FIXED.jsonl` | corrected, complete 2006–2026, **not yet canonical** |
+
+Measured shortfall in the live files: 2018 −4.9%, 2019 −41.0%, 2025 −78.1%,
+2026 −65.1%; 2006–2017 unaffected (≤0.5%).
+
+**What this does and does not invalidate.** The instrument rate barely moves —
+Manitoba 2025–26 goes 3,556 to 3,627 per 100k, **+2.0%** — because the lost
+text is ordinary member speech of much the same register, so the trend series
+is sound. What is compromised is the *sampling frame*: Manitoba's prevalence
+sample was drawn from 58% of its record. The verdicts themselves remain valid
+measurements of the text that was scored.
+
+Before any Manitoba prevalence claim is relied on, redraw the sample from
+`segments_mb_FIXED.jsonl` and rescore (~500 credits). Before any Manitoba trend
+claim, the +2.0% is within the noise of the series and no action is needed.

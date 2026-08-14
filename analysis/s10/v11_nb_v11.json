@@ -1,0 +1,30 @@
+{
+ "corpus": "New Brunswick",
+ "protocol": "v1.1",
+ "seed": 557045366,
+ "pre_words": 4244863,
+ "post_words": 2450195,
+ "pre_sittings": 169,
+ "n_placebo": 1000,
+ "arms": {
+  "style": {
+   "n_words_total": 407,
+   "n_words_present": 335,
+   "primary_mean_logFC": 0.3937,
+   "placebo_median": 0.11613,
+   "placebo_max": 0.22457,
+   "excess": 0.27756,
+   "p": 0.0
+  },
+  "content": {
+   "n_words_total": 493,
+   "n_words_present": 165,
+   "primary_mean_logFC": 0.05984,
+   "placebo_median": 0.06382,
+   "placebo_max": 0.20286,
+   "excess": -0.00398,
+   "p": 0.529
+  }
+ },
+ "style_minus_content": 0.28154
+}

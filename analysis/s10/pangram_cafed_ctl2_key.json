@@ -1,0 +1,72 @@
+{
+ "cafedctl200": {
+  "seg_id": "CA2018-05-01#t108w0",
+  "chamber": "CA-FED",
+  "stratum": "ctl",
+  "band": "long",
+  "date": "2018-05-01",
+  "n_words": 156,
+  "speaker": "Hon. Ed Fast (Abbotsford, CPC)",
+  "replaces": "cactl001"
+ },
+ "cafedctl201": {
+  "seg_id": "CA2018-09-18#t218w0",
+  "chamber": "CA-FED",
+  "stratum": "ctl",
+  "band": "long",
+  "date": "2018-09-18",
+  "n_words": 331,
+  "speaker": "Mrs. Celina Caesar-Chavannes (Whitby, Lib.)",
+  "replaces": "cactl013"
+ },
+ "cafedctl202": {
+  "seg_id": "CA2018-10-29#t26w0",
+  "chamber": "CA-FED",
+  "stratum": "ctl",
+  "band": "long",
+  "date": "2018-10-29",
+  "n_words": 289,
+  "speaker": "Mr. Alistair MacGregor",
+  "replaces": "cactl016"
+ },
+ "cafedctl203": {
+  "seg_id": "CA2019-02-21#t236w0",
+  "chamber": "CA-FED",
+  "stratum": "ctl",
+  "band": "long",
+  "date": "2019-02-21",
+  "n_words": 142,
+  "speaker": "Mr. Jim Eglinski",
+  "replaces": "cactl025"
+ },
+ "cafedctl204": {
+  "seg_id": "CA2020-11-17#t94w2",
+  "chamber": "CA-FED",
+  "stratum": "ctl",
+  "band": "long",
+  "date": "2020-11-17",
+  "n_words": 354,
+  "speaker": "Mr. Francesco Sorbara (Parliamentary Secretary to the Minister of National Revenue, Lib.)",
+  "replaces": "cactl027"
+ },
+ "cafedctl205": {
+  "seg_id": "CA2021-03-11#t34w0",
+  "chamber": "CA-FED",
+  "stratum": "ctl",
+  "band": "long",
+  "date": "2021-03-11",
+  "n_words": 168,
+  "speaker": "Mr. Charlie Angus",
+  "replaces": "cactl031"
+ },
+ "cafedctl206": {
+  "seg_id": "CA2021-12-14#t17w0",
+  "chamber": "CA-FED",
+  "stratum": "ctl",
+  "band": "long",
+  "date": "2021-12-14",
+  "n_words": 142,
+  "speaker": "Mr. Garnett Genuis (Sherwood Park\u2014Fort Saskatchewan, CPC)",
+  "replaces": "cactl049"
+ }
+}

@@ -1,0 +1,2599 @@
+{
+ "records": [
+  {
+   "name": "pallister",
+   "matched_name": "Brian Pallister",
+   "wiki_title": "Brian Pallister",
+   "education_level": "bachelor",
+   "education_field": "education",
+   "alma_maters": [
+    "Brandon University"
+   ],
+   "prior_occupation": "high school teacher in rural Manitoba",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Brian_Pallister"
+  },
+  {
+   "name": "jon gerrard",
+   "matched_name": "Jon Gerrard",
+   "wiki_title": "Jon Gerrard",
+   "education_level": "professional",
+   "education_field": "medicine; economics",
+   "alma_maters": [
+    "University of Saskatchewan",
+    "McGill University",
+    "University of Minnesota"
+   ],
+   "prior_occupation": "pediatrician, Winnipeg Children's Hospital; head of Pediatric Hematology/Oncology; taught at the University of Manitoba",
+   "occupation_category": "health",
+   "source_url": "https://en.wikipedia.org/wiki/Jon_Gerrard"
+  },
+  {
+   "name": "goertzen",
+   "matched_name": "Kelvin Goertzen",
+   "wiki_title": "Kelvin Goertzen",
+   "education_level": "professional",
+   "education_field": "law; economics; commerce",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "Manitoba Department of Culture, Heritage and Citizenship; executive assistant to MLAs; advisor to an MP",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Kelvin_Goertzen"
+  },
+  {
+   "name": "selinger",
+   "matched_name": "Greg Selinger",
+   "wiki_title": "Greg Selinger",
+   "education_level": "graduate",
+   "education_field": "social work; public administration",
+   "alma_maters": [
+    "University of Manitoba",
+    "Queen's University",
+    "London School of Economics"
+   ],
+   "prior_occupation": "associate professor, Faculty of Social Work, University of Manitoba",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Greg_Selinger"
+  },
+  {
+   "name": "kevin lamoureux",
+   "matched_name": "Kevin Lamoureux",
+   "wiki_title": "Kevin Lamoureux",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [
+    "University of Winnipeg"
+   ],
+   "prior_occupation": "store manager and air traffic control assistant; three years in the armed forces",
+   "occupation_category": "other",
+   "source_url": "https://en.wikipedia.org/wiki/Kevin_Lamoureux"
+  },
+  {
+   "name": "friesen",
+   "matched_name": "Cameron Friesen",
+   "wiki_title": "Cameron Friesen",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Cameron_Friesen"
+  },
+  {
+   "name": "kelvin goertzen",
+   "matched_name": "Kelvin Goertzen",
+   "wiki_title": "Kelvin Goertzen",
+   "education_level": "professional",
+   "education_field": "law; economics; commerce",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "Manitoba Department of Culture, Heritage and Citizenship; executive assistant to MLAs; advisor to an MP",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Kelvin_Goertzen"
+  },
+  {
+   "name": "gerrard",
+   "matched_name": "Jon Gerrard",
+   "wiki_title": "Jon Gerrard",
+   "education_level": "professional",
+   "education_field": "medicine; economics",
+   "alma_maters": [
+    "University of Saskatchewan",
+    "McGill University",
+    "University of Minnesota"
+   ],
+   "prior_occupation": "pediatrician, Winnipeg Children's Hospital; head of Pediatric Hematology/Oncology; taught at the University of Manitoba",
+   "occupation_category": "health",
+   "source_url": "https://en.wikipedia.org/wiki/Jon_Gerrard"
+  },
+  {
+   "name": "doer",
+   "matched_name": "Gary Doer",
+   "wiki_title": "Gary Doer",
+   "education_level": "secondary",
+   "education_field": null,
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "corrections officer; then president of the Manitoba Government Employees' Association",
+   "occupation_category": "trades-labour",
+   "source_url": "https://en.wikipedia.org/wiki/Gary_Doer"
+  },
+  {
+   "name": "swan",
+   "matched_name": "Andrew Swan",
+   "wiki_title": "Andrew Swan",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "lawyer (partner, Thompson Dorfman Sweatman; family law)",
+   "occupation_category": "law",
+   "source_url": "https://en.wikipedia.org/wiki/Andrew_Swan"
+  },
+  {
+   "name": "andrew swan",
+   "matched_name": "Andrew Swan",
+   "wiki_title": "Andrew Swan",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "lawyer (partner, Thompson Dorfman Sweatman; family law)",
+   "occupation_category": "law",
+   "source_url": "https://en.wikipedia.org/wiki/Andrew_Swan"
+  },
+  {
+   "name": "mcfadyen",
+   "matched_name": "Hugh McFadyen",
+   "wiki_title": "Hugh McFadyen",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [
+    "University of Manitoba",
+    "University College London"
+   ],
+   "prior_occupation": "lawyer (Clifford Chance LLP, London); party researcher and principal secretary to the Premier",
+   "occupation_category": "law",
+   "source_url": "https://en.wikipedia.org/wiki/Hugh_McFadyen"
+  },
+  {
+   "name": "lamoureux",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": null
+  },
+  {
+   "name": "kinew",
+   "matched_name": "Wab Kinew",
+   "wiki_title": "Wab Kinew",
+   "education_level": "bachelor",
+   "education_field": "economics",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "author, musician, broadcaster (CBC) and university administrator (director of Indigenous Inclusion, University of Winnipeg)",
+   "occupation_category": "communications-PR-journalism",
+   "source_url": "https://en.wikipedia.org/wiki/Wab_Kinew"
+  },
+  {
+   "name": "cliff cullen",
+   "matched_name": "Cliff Cullen",
+   "wiki_title": "Cliff Cullen",
+   "education_level": "college",
+   "education_field": "agriculture",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "worked in the agricultural and environmental sectors; insurance broker",
+   "occupation_category": "agriculture",
+   "source_url": "https://en.wikipedia.org/wiki/Cliff_Cullen"
+  },
+  {
+   "name": "larry maguire",
+   "matched_name": "Larry Maguire",
+   "wiki_title": "Larry Maguire",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "owner-operator of Maguire Farms Limited, Elgin, 1975-2001",
+   "occupation_category": "agriculture",
+   "source_url": "https://en.wikipedia.org/wiki/Larry_Maguire"
+  },
+  {
+   "name": "allum",
+   "matched_name": "James Allum",
+   "wiki_title": "James Allum",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/James_Allum"
+  },
+  {
+   "name": "hugh mcfadyen",
+   "matched_name": "Hugh McFadyen",
+   "wiki_title": "Hugh McFadyen",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [
+    "University of Manitoba",
+    "University College London"
+   ],
+   "prior_occupation": "lawyer (Clifford Chance LLP, London); party researcher and principal secretary to the Premier",
+   "occupation_category": "law",
+   "source_url": "https://en.wikipedia.org/wiki/Hugh_McFadyen"
+  },
+  {
+   "name": "myrna driedger",
+   "matched_name": "Myrna Driedger",
+   "wiki_title": "Myrna Driedger",
+   "education_level": "college",
+   "education_field": "nursing",
+   "alma_maters": [
+    "Winnipeg General Hospital School of Nursing",
+    "Red River Community College"
+   ],
+   "prior_occupation": "nurse for 23 years",
+   "occupation_category": "health",
+   "source_url": "https://en.wikipedia.org/wiki/Myrna_Driedger"
+  },
+  {
+   "name": "cullen",
+   "matched_name": "Cliff Cullen",
+   "wiki_title": "Cliff Cullen",
+   "education_level": "college",
+   "education_field": "agriculture",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "worked in the agricultural and environmental sectors; insurance broker",
+   "occupation_category": "agriculture",
+   "source_url": "https://en.wikipedia.org/wiki/Cliff_Cullen"
+  },
+  {
+   "name": "fielding",
+   "matched_name": "Scott Fielding",
+   "wiki_title": "Scott Fielding",
+   "education_level": "bachelor",
+   "education_field": "political science and economics",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "pharmaceutical sales representative; part owner of Tiber River Naturals",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Scott_Fielding"
+  },
+  {
+   "name": "wiebe",
+   "matched_name": "Matt Wiebe",
+   "wiki_title": "Matt Wiebe",
+   "education_level": "graduate",
+   "education_field": "economics; public administration",
+   "alma_maters": [
+    "University of Winnipeg"
+   ],
+   "prior_occupation": "constituency assistant to Premier Gary Doer and to MP Bill Blaikie",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Matt_Wiebe"
+  },
+  {
+   "name": "ron schuler",
+   "matched_name": "Ron Schuler",
+   "wiki_title": "Ron Schuler",
+   "education_level": "bachelor",
+   "education_field": "international relations",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "small business owner (Christmas Traditions, Espresso Junction Inc., Gingerbread World Inc.)",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Ron_Schuler"
+  },
+  {
+   "name": "wowchuk",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": null
+  },
+  {
+   "name": "heather stefanson",
+   "matched_name": "Heather Stefanson",
+   "wiki_title": "Heather Stefanson",
+   "education_level": "bachelor",
+   "education_field": "political science",
+   "alma_maters": [
+    "University of Western Ontario"
+   ],
+   "prior_occupation": "special assistant in the Office of the Prime Minister; assistant to the federal Agriculture Minister",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Heather_Stefanson"
+  },
+  {
+   "name": "stefanson",
+   "matched_name": "Heather Stefanson",
+   "wiki_title": "Heather Stefanson",
+   "education_level": "bachelor",
+   "education_field": "political science",
+   "alma_maters": [
+    "University of Western Ontario"
+   ],
+   "prior_occupation": "special assistant in the Office of the Prime Minister; assistant to the federal Agriculture Minister",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Heather_Stefanson"
+  },
+  {
+   "name": "mavis taillieu",
+   "matched_name": "Mavis Taillieu",
+   "wiki_title": "Mavis Taillieu",
+   "education_level": "bachelor",
+   "education_field": null,
+   "alma_maters": [
+    "University of Winnipeg"
+   ],
+   "prior_occupation": "registered laboratory technologist; fifteen years in health care",
+   "occupation_category": "health",
+   "source_url": "https://en.wikipedia.org/wiki/Mavis_Taillieu"
+  },
+  {
+   "name": "schuler",
+   "matched_name": "Ron Schuler",
+   "wiki_title": "Ron Schuler",
+   "education_level": "bachelor",
+   "education_field": "international relations",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "small business owner (Christmas Traditions, Espresso Junction Inc., Gingerbread World Inc.)",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Ron_Schuler"
+  },
+  {
+   "name": "lindsey",
+   "matched_name": "Tom Lindsey",
+   "wiki_title": "Tom Lindsey",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "head operator, Flin Flon mill; active in United Steelworkers Local 7106",
+   "occupation_category": "trades-labour",
+   "source_url": "https://en.wikipedia.org/wiki/Tom_Lindsey"
+  },
+  {
+   "name": "ashton",
+   "matched_name": "Steve Ashton",
+   "wiki_title": "Steve Ashton",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [
+    "University of Manitoba",
+    "Lakehead University"
+   ],
+   "prior_occupation": "steelworker at INCO, Thompson (United Steelworkers of America); economics lecturer for Inter Universities North",
+   "occupation_category": "trades-labour",
+   "source_url": "https://en.wikipedia.org/wiki/Steve_Ashton"
+  },
+  {
+   "name": "oswald",
+   "matched_name": "Theresa Oswald",
+   "wiki_title": "Theresa Oswald",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "teacher and school administrator for fifteen years; vice-principal, Victor Mager School",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Theresa_Oswald"
+  },
+  {
+   "name": "lemieux",
+   "matched_name": "Ron Lemieux",
+   "wiki_title": "Ron Lemieux",
+   "education_level": "bachelor",
+   "education_field": "arts; education",
+   "alma_maters": [
+    "University of Winnipeg",
+    "University of Manitoba"
+   ],
+   "prior_occupation": "teacher; earlier professional ice hockey player",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Ron_Lemieux"
+  },
+  {
+   "name": "matt wiebe",
+   "matched_name": "Matt Wiebe",
+   "wiki_title": "Matt Wiebe",
+   "education_level": "graduate",
+   "education_field": "economics; public administration",
+   "alma_maters": [
+    "University of Winnipeg"
+   ],
+   "prior_occupation": "constituency assistant to Premier Gary Doer and to MP Bill Blaikie",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Matt_Wiebe"
+  },
+  {
+   "name": "greg selinger",
+   "matched_name": "Greg Selinger",
+   "wiki_title": "Greg Selinger",
+   "education_level": "graduate",
+   "education_field": "social work; public administration",
+   "alma_maters": [
+    "University of Manitoba",
+    "Queen's University",
+    "London School of Economics"
+   ],
+   "prior_occupation": "associate professor, Faculty of Social Work, University of Manitoba",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Greg_Selinger"
+  },
+  {
+   "name": "fontaine",
+   "matched_name": "Nahanni Fontaine",
+   "wiki_title": "Nahanni Fontaine",
+   "education_level": "graduate",
+   "education_field": "native studies; environmental development",
+   "alma_maters": [
+    "University of Winnipeg"
+   ],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Nahanni_Fontaine"
+  },
+  {
+   "name": "leanne rowat",
+   "matched_name": "Leanne Rowat",
+   "wiki_title": "Leanne Rowat",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "constituency assistant to an MLA; community development officer in the Souris region",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Leanne_Rowat"
+  },
+  {
+   "name": "mackintosh",
+   "matched_name": "Gord Mackintosh",
+   "wiki_title": "Gord Mackintosh",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "lawyer (environmental law); earlier Canadian and Manitoba Human Rights Commissions and Deputy Clerk of the Manitoba Legislature",
+   "occupation_category": "law",
+   "source_url": "https://en.wikipedia.org/wiki/Gord_Mackintosh"
+  },
+  {
+   "name": "chomiak",
+   "matched_name": "Dave Chomiak",
+   "wiki_title": "Dave Chomiak",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [],
+   "prior_occupation": "lawyer",
+   "occupation_category": "law",
+   "source_url": "https://en.wikipedia.org/wiki/Dave_Chomiak"
+  },
+  {
+   "name": "wishart",
+   "matched_name": "Ian Wishart",
+   "wiki_title": "Ian Wishart (politician)",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Ian_Wishart_(politician)"
+  },
+  {
+   "name": "ralph eichler",
+   "matched_name": "Ralph Eichler",
+   "wiki_title": "Ralph Eichler",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "administrator of the Interlake School Division for eight years; owner of Prairie Farm Ranch Supply",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Ralph_Eichler"
+  },
+  {
+   "name": "blaine pedersen",
+   "matched_name": "Blaine Pedersen",
+   "wiki_title": "Blaine Pedersen",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Blaine_Pedersen"
+  },
+  {
+   "name": "nahanni fontaine",
+   "matched_name": "Nahanni Fontaine",
+   "wiki_title": "Nahanni Fontaine",
+   "education_level": "graduate",
+   "education_field": "native studies; environmental development",
+   "alma_maters": [
+    "University of Winnipeg"
+   ],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Nahanni_Fontaine"
+  },
+  {
+   "name": "david faurschou",
+   "matched_name": "David Faurschou",
+   "wiki_title": "David Faurschou",
+   "education_level": "college",
+   "education_field": "agriculture",
+   "alma_maters": [
+    "University of Manitoba",
+    "Manitoba Institute of Agrologists"
+   ],
+   "prior_occupation": "farmer; vice-president and general manager, Faurschou Farms Limited",
+   "occupation_category": "agriculture",
+   "source_url": "https://en.wikipedia.org/wiki/David_Faurschou"
+  },
+  {
+   "name": "brian pallister",
+   "matched_name": "Brian Pallister",
+   "wiki_title": "Brian Pallister",
+   "education_level": "bachelor",
+   "education_field": "education",
+   "alma_maters": [
+    "Brandon University"
+   ],
+   "prior_occupation": "high school teacher in rural Manitoba",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Brian_Pallister"
+  },
+  {
+   "name": "derkach",
+   "matched_name": "Len Derkach",
+   "wiki_title": "Len Derkach",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [
+    "Brandon University"
+   ],
+   "prior_occupation": "teacher and farmer",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Len_Derkach"
+  },
+  {
+   "name": "eichler",
+   "matched_name": "Ralph Eichler",
+   "wiki_title": "Ralph Eichler",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "administrator of the Interlake School Division for eight years; owner of Prairie Farm Ranch Supply",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Ralph_Eichler"
+  },
+  {
+   "name": "rick borotsik",
+   "matched_name": "Rick Borotsik",
+   "wiki_title": "Rick Borotsik",
+   "education_level": "bachelor",
+   "education_field": null,
+   "alma_maters": [
+    "Brandon University"
+   ],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Rick_Borotsik"
+  },
+  {
+   "name": "pedersen",
+   "matched_name": "Blaine Pedersen",
+   "wiki_title": "Blaine Pedersen",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Blaine_Pedersen"
+  },
+  {
+   "name": "driedger",
+   "matched_name": "Myrna Driedger",
+   "wiki_title": "Myrna Driedger",
+   "education_level": "college",
+   "education_field": "nursing",
+   "alma_maters": [
+    "Winnipeg General Hospital School of Nursing",
+    "Red River Community College"
+   ],
+   "prior_occupation": "nurse for 23 years",
+   "occupation_category": "health",
+   "source_url": "https://en.wikipedia.org/wiki/Myrna_Driedger"
+  },
+  {
+   "name": "wab kinew",
+   "matched_name": "Wab Kinew",
+   "wiki_title": "Wab Kinew",
+   "education_level": "bachelor",
+   "education_field": "economics",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "author, musician, broadcaster (CBC) and university administrator (director of Indigenous Inclusion, University of Winnipeg)",
+   "occupation_category": "communications-PR-journalism",
+   "source_url": "https://en.wikipedia.org/wiki/Wab_Kinew"
+  },
+  {
+   "name": "james allum",
+   "matched_name": "James Allum",
+   "wiki_title": "James Allum",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/James_Allum"
+  },
+  {
+   "name": "borotsik",
+   "matched_name": "Rick Borotsik",
+   "wiki_title": "Rick Borotsik",
+   "education_level": "bachelor",
+   "education_field": null,
+   "alma_maters": [
+    "Brandon University"
+   ],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Rick_Borotsik"
+  },
+  {
+   "name": "steve ashton",
+   "matched_name": "Steve Ashton",
+   "wiki_title": "Steve Ashton",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [
+    "University of Manitoba",
+    "Lakehead University"
+   ],
+   "prior_occupation": "steelworker at INCO, Thompson (United Steelworkers of America); economics lecturer for Inter Universities North",
+   "occupation_category": "trades-labour",
+   "source_url": "https://en.wikipedia.org/wiki/Steve_Ashton"
+  },
+  {
+   "name": "leonard derkach",
+   "matched_name": "Len Derkach",
+   "wiki_title": "Len Derkach",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [
+    "Brandon University"
+   ],
+   "prior_occupation": "teacher and farmer",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Len_Derkach"
+  },
+  {
+   "name": "struthers",
+   "matched_name": "Stan Struthers",
+   "wiki_title": "Stan Struthers",
+   "education_level": "graduate",
+   "education_field": "education",
+   "alma_maters": [
+    "Brandon University",
+    "University of Manitoba"
+   ],
+   "prior_occupation": "teacher; principal at Rorketon Collegiate",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Stan_Struthers"
+  },
+  {
+   "name": "rob altemeyer",
+   "matched_name": "Rob Altemeyer",
+   "wiki_title": "Rob Altemeyer",
+   "education_level": "graduate",
+   "education_field": "anthropology; natural resource management",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Rob_Altemeyer"
+  },
+  {
+   "name": "rondeau",
+   "matched_name": "Jim Rondeau",
+   "wiki_title": "Jim Rondeau",
+   "education_level": "bachelor",
+   "education_field": "education",
+   "alma_maters": [
+    "University of Winnipeg",
+    "University of Manitoba"
+   ],
+   "prior_occupation": "teacher; coordinator of the Frontier School Division at the University of Winnipeg",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Jim_Rondeau"
+  },
+  {
+   "name": "stuart briese",
+   "matched_name": "Stu Briese",
+   "wiki_title": "Stu Briese",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "twenty years on the council of the Rural Municipality of Langford; president, Association of Manitoba Municipalities",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Stu_Briese"
+  },
+  {
+   "name": "jim maloway",
+   "matched_name": "Jim Maloway",
+   "wiki_title": "Jim Maloway",
+   "education_level": "bachelor",
+   "education_field": "political science",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "owner of Maloway & Eliason Insurance & Travel Centre; earlier liquor inspector, Manitoba Liquor Control Commission",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Jim_Maloway"
+  },
+  {
+   "name": "maguire",
+   "matched_name": "Larry Maguire",
+   "wiki_title": "Larry Maguire",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "owner-operator of Maguire Farms Limited, Elgin, 1975-2001",
+   "occupation_category": "agriculture",
+   "source_url": "https://en.wikipedia.org/wiki/Larry_Maguire"
+  },
+  {
+   "name": "bjornson",
+   "matched_name": "Peter Bjornson",
+   "wiki_title": "Peter Bjornson",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "teacher",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Peter_Bjornson"
+  },
+  {
+   "name": "cliff graydon",
+   "matched_name": "Cliff Graydon",
+   "wiki_title": "Cliff Graydon",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "farmer; founding member and director, Manitoba Cattle Producers Association",
+   "occupation_category": "agriculture",
+   "source_url": "https://en.wikipedia.org/wiki/Cliff_Graydon"
+  },
+  {
+   "name": "flor marcelino",
+   "matched_name": "Flor Marcelino",
+   "wiki_title": "Flor Marcelino",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "editor and publisher of The Philippine Times",
+   "occupation_category": "communications-PR-journalism",
+   "source_url": "https://en.wikipedia.org/wiki/Flor_Marcelino"
+  },
+  {
+   "name": "dave chomiak",
+   "matched_name": "Dave Chomiak",
+   "wiki_title": "Dave Chomiak",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [],
+   "prior_occupation": "lawyer",
+   "occupation_category": "law",
+   "source_url": "https://en.wikipedia.org/wiki/Dave_Chomiak"
+  },
+  {
+   "name": "bonnie mitchelson",
+   "matched_name": "Bonnie Mitchelson",
+   "wiki_title": "Bonnie Mitchelson",
+   "education_level": "college",
+   "education_field": "nursing",
+   "alma_maters": [
+    "Health Sciences Centre School of Nursing"
+   ],
+   "prior_occupation": "registered nurse",
+   "occupation_category": "health",
+   "source_url": "https://en.wikipedia.org/wiki/Bonnie_Mitchelson"
+  },
+  {
+   "name": "cameron friesen",
+   "matched_name": "Cameron Friesen",
+   "wiki_title": "Cameron Friesen",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Cameron_Friesen"
+  },
+  {
+   "name": "peter dyck",
+   "matched_name": "Peter Dyck",
+   "wiki_title": "Peter Dyck",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "public school music teacher; also owner-operator of a grain farm and cattle feedlot",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Peter_Dyck"
+  },
+  {
+   "name": "maloway",
+   "matched_name": "Jim Maloway",
+   "wiki_title": "Jim Maloway",
+   "education_level": "bachelor",
+   "education_field": "political science",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "owner of Maloway & Eliason Insurance & Travel Centre; earlier liquor inspector, Manitoba Liquor Control Commission",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Jim_Maloway"
+  },
+  {
+   "name": "taillieu",
+   "matched_name": "Mavis Taillieu",
+   "wiki_title": "Mavis Taillieu",
+   "education_level": "bachelor",
+   "education_field": null,
+   "alma_maters": [
+    "University of Winnipeg"
+   ],
+   "prior_occupation": "registered laboratory technologist; fifteen years in health care",
+   "occupation_category": "health",
+   "source_url": "https://en.wikipedia.org/wiki/Mavis_Taillieu"
+  },
+  {
+   "name": "gary doer",
+   "matched_name": "Gary Doer",
+   "wiki_title": "Gary Doer",
+   "education_level": "secondary",
+   "education_field": null,
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "corrections officer; then president of the Manitoba Government Employees' Association",
+   "occupation_category": "trades-labour",
+   "source_url": "https://en.wikipedia.org/wiki/Gary_Doer"
+  },
+  {
+   "name": "tom lindsey",
+   "matched_name": "Tom Lindsey",
+   "wiki_title": "Tom Lindsey",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "head operator, Flin Flon mill; active in United Steelworkers Local 7106",
+   "occupation_category": "trades-labour",
+   "source_url": "https://en.wikipedia.org/wiki/Tom_Lindsey"
+  },
+  {
+   "name": "shannon martin",
+   "matched_name": "Shannon Martin",
+   "wiki_title": "Shannon Martin",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "executive director, Reaching E-Quality Employment Services; provincial director, Canadian Federation of Independent Business",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://en.wikipedia.org/wiki/Shannon_Martin"
+  },
+  {
+   "name": "gerald hawranik",
+   "matched_name": "Gerald Hawranik",
+   "wiki_title": "Gerald Hawranik",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "practising lawyer; co-owner of an insurance agency and automobile dealership",
+   "occupation_category": "law",
+   "source_url": "https://en.wikipedia.org/wiki/Gerald_Hawranik"
+  },
+  {
+   "name": "altemeyer",
+   "matched_name": "Rob Altemeyer",
+   "wiki_title": "Rob Altemeyer",
+   "education_level": "graduate",
+   "education_field": "anthropology; natural resource management",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Rob_Altemeyer"
+  },
+  {
+   "name": "marcelino",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": null
+  },
+  {
+   "name": "melnick",
+   "matched_name": "Christine Melnick",
+   "wiki_title": "Christine Melnick",
+   "education_level": "graduate",
+   "education_field": "library and information science",
+   "alma_maters": [
+    "University of Manitoba",
+    "Dalhousie University"
+   ],
+   "prior_occupation": "librarian and researcher, Canada/Manitoba Business Service Centre",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Christine_Melnick"
+  },
+  {
+   "name": "fletcher",
+   "matched_name": "Steven Fletcher",
+   "wiki_title": "Steven Fletcher (politician)",
+   "education_level": "bachelor",
+   "education_field": "geological engineering",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "geological engineer",
+   "occupation_category": "other",
+   "source_url": "https://en.wikipedia.org/wiki/Steven_Fletcher_(politician)"
+  },
+  {
+   "name": "jim rondeau",
+   "matched_name": "Jim Rondeau",
+   "wiki_title": "Jim Rondeau",
+   "education_level": "bachelor",
+   "education_field": "education",
+   "alma_maters": [
+    "University of Winnipeg",
+    "University of Manitoba"
+   ],
+   "prior_occupation": "teacher; coordinator of the Frontier School Division at the University of Winnipeg",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Jim_Rondeau"
+  },
+  {
+   "name": "theresa oswald",
+   "matched_name": "Theresa Oswald",
+   "wiki_title": "Theresa Oswald",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "teacher and school administrator for fifteen years; vice-principal, Victor Mager School",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Theresa_Oswald"
+  },
+  {
+   "name": "jennifer howard",
+   "matched_name": "Jennifer Howard",
+   "wiki_title": "Jennifer Howard (Canadian politician)",
+   "education_level": "bachelor",
+   "education_field": null,
+   "alma_maters": [
+    "Brandon University"
+   ],
+   "prior_occupation": "policy advisor on health care to Premier Gary Doer; executive director, Women's Health Clinic",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Jennifer_Howard_(Canadian_politician)"
+  },
+  {
+   "name": "peter bjornson",
+   "matched_name": "Peter Bjornson",
+   "wiki_title": "Peter Bjornson",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "teacher",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Peter_Bjornson"
+  },
+  {
+   "name": "smith",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": null
+  },
+  {
+   "name": "mohinder saran",
+   "matched_name": "Mohinder Saran",
+   "wiki_title": "Mohinder Saran",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Mohinder_Saran"
+  },
+  {
+   "name": "graydon",
+   "matched_name": "Cliff Graydon",
+   "wiki_title": "Cliff Graydon",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "farmer; founding member and director, Manitoba Cattle Producers Association",
+   "occupation_category": "agriculture",
+   "source_url": "https://en.wikipedia.org/wiki/Cliff_Graydon"
+  },
+  {
+   "name": "steven fletcher",
+   "matched_name": "Steven Fletcher",
+   "wiki_title": "Steven Fletcher (politician)",
+   "education_level": "bachelor",
+   "education_field": "geological engineering",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "geological engineer",
+   "occupation_category": "other",
+   "source_url": "https://en.wikipedia.org/wiki/Steven_Fletcher_(politician)"
+  },
+  {
+   "name": "ian wishart",
+   "matched_name": "Ian Wishart",
+   "wiki_title": "Ian Wishart (politician)",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Ian_Wishart_(politician)"
+  },
+  {
+   "name": "rowat",
+   "matched_name": "Leanne Rowat",
+   "wiki_title": "Leanne Rowat",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "constituency assistant to an MLA; community development officer in the Souris region",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Leanne_Rowat"
+  },
+  {
+   "name": "doug martindale",
+   "matched_name": "Doug Martindale",
+   "wiki_title": "Doug Martindale",
+   "education_level": "graduate",
+   "education_field": "arts; divinity",
+   "alma_maters": [
+    "Brock University",
+    "Victoria University, Toronto"
+   ],
+   "prior_occupation": "United Church minister",
+   "occupation_category": "other",
+   "source_url": "https://en.wikipedia.org/wiki/Doug_Martindale"
+  },
+  {
+   "name": "faurschou",
+   "matched_name": "David Faurschou",
+   "wiki_title": "David Faurschou",
+   "education_level": "college",
+   "education_field": "agriculture",
+   "alma_maters": [
+    "University of Manitoba",
+    "Manitoba Institute of Agrologists"
+   ],
+   "prior_occupation": "farmer; vice-president and general manager, Faurschou Farms Limited",
+   "occupation_category": "agriculture",
+   "source_url": "https://en.wikipedia.org/wiki/David_Faurschou"
+  },
+  {
+   "name": "reg helwer",
+   "matched_name": "Reg Helwer",
+   "wiki_title": "Reg Helwer",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Reg_Helwer"
+  },
+  {
+   "name": "sharon blady",
+   "matched_name": "Sharon Blady",
+   "wiki_title": "Sharon Blady",
+   "education_level": "graduate",
+   "education_field": "anthropology and art history; native studies",
+   "alma_maters": [
+    "University of Manitoba",
+    "University of Victoria"
+   ],
+   "prior_occupation": "instructor in social work and native studies, University of Manitoba; taught at Brandon University",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Sharon_Blady"
+  },
+  {
+   "name": "irvin-ross",
+   "matched_name": "Kerri Irvin-Ross",
+   "wiki_title": "Kerri Irvin-Ross",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Kerri_Irvin-Ross"
+  },
+  {
+   "name": "mitchelson",
+   "matched_name": "Bonnie Mitchelson",
+   "wiki_title": "Bonnie Mitchelson",
+   "education_level": "college",
+   "education_field": "nursing",
+   "alma_maters": [
+    "Health Sciences Centre School of Nursing"
+   ],
+   "prior_occupation": "registered nurse",
+   "occupation_category": "health",
+   "source_url": "https://en.wikipedia.org/wiki/Bonnie_Mitchelson"
+  },
+  {
+   "name": "hawranik",
+   "matched_name": "Gerald Hawranik",
+   "wiki_title": "Gerald Hawranik",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "practising lawyer; co-owner of an insurance agency and automobile dealership",
+   "occupation_category": "law",
+   "source_url": "https://en.wikipedia.org/wiki/Gerald_Hawranik"
+  },
+  {
+   "name": "lamont",
+   "matched_name": "Dougald Lamont",
+   "wiki_title": "Dougald Lamont",
+   "education_level": "graduate",
+   "education_field": "English literature",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "instructor in government-business relations, University of Winnipeg; political advisor",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Dougald_Lamont"
+  },
+  {
+   "name": "clarke",
+   "matched_name": "Eileen Clarke",
+   "wiki_title": "Eileen Clarke (politician)",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Eileen_Clarke_(politician)"
+  },
+  {
+   "name": "wayne ewasko",
+   "matched_name": "Wayne Ewasko",
+   "wiki_title": "Wayne Ewasko",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Wayne_Ewasko"
+  },
+  {
+   "name": "rosann wowchuk",
+   "matched_name": "Rosann Wowchuk",
+   "wiki_title": "Rosann Wowchuk",
+   "education_level": "college",
+   "education_field": "education",
+   "alma_maters": [
+    "Manitoba Teachers' College"
+   ],
+   "prior_occupation": "teacher and farmer",
+   "occupation_category": "agriculture",
+   "source_url": "https://en.wikipedia.org/wiki/Rosann_Wowchuk"
+  },
+  {
+   "name": "blady",
+   "matched_name": "Sharon Blady",
+   "wiki_title": "Sharon Blady",
+   "education_level": "graduate",
+   "education_field": "anthropology and art history; native studies",
+   "alma_maters": [
+    "University of Manitoba",
+    "University of Victoria"
+   ],
+   "prior_occupation": "instructor in social work and native studies, University of Manitoba; taught at Brandon University",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Sharon_Blady"
+  },
+  {
+   "name": "squires",
+   "matched_name": "Rochelle Squires",
+   "wiki_title": "Rochelle Squires",
+   "education_level": "graduate",
+   "education_field": "communications; journalism; creative writing",
+   "alma_maters": [
+    "University of Winnipeg",
+    "Red River College",
+    "University of British Columbia"
+   ],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Rochelle_Squires"
+  },
+  {
+   "name": "stan struthers",
+   "matched_name": "Stan Struthers",
+   "wiki_title": "Stan Struthers",
+   "education_level": "graduate",
+   "education_field": "education",
+   "alma_maters": [
+    "Brandon University",
+    "University of Manitoba"
+   ],
+   "prior_occupation": "teacher; principal at Rorketon Collegiate",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Stan_Struthers"
+  },
+  {
+   "name": "ron lemieux",
+   "matched_name": "Ron Lemieux",
+   "wiki_title": "Ron Lemieux",
+   "education_level": "bachelor",
+   "education_field": "arts; education",
+   "alma_maters": [
+    "University of Winnipeg",
+    "University of Manitoba"
+   ],
+   "prior_occupation": "teacher; earlier professional ice hockey player",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Ron_Lemieux"
+  },
+  {
+   "name": "tom nevakshonoff",
+   "matched_name": "Tom Nevakshonoff",
+   "wiki_title": "Tom Nevakshonoff",
+   "education_level": "bachelor",
+   "education_field": "East European studies",
+   "alma_maters": [
+    "Carleton University"
+   ],
+   "prior_occupation": "co-owner of the family business Aberdeen Lodge",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Tom_Nevakshonoff"
+  },
+  {
+   "name": "amanda lathlin",
+   "matched_name": "Amanda Lathlin",
+   "wiki_title": "Amanda Lathlin",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "worked for University College of the North; band councillor, Opaskwayak Cree Nation",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Amanda_Lathlin"
+  },
+  {
+   "name": "cindy lamoureux",
+   "matched_name": "Cindy Lamoureux",
+   "wiki_title": "Cindy Lamoureux",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [
+    "University of Winnipeg"
+   ],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Cindy_Lamoureux"
+  },
+  {
+   "name": "gord mackintosh",
+   "matched_name": "Gord Mackintosh",
+   "wiki_title": "Gord Mackintosh",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "lawyer (environmental law); earlier Canadian and Manitoba Human Rights Commissions and Deputy Clerk of the Manitoba Legislature",
+   "occupation_category": "law",
+   "source_url": "https://en.wikipedia.org/wiki/Gord_Mackintosh"
+  },
+  {
+   "name": "lathlin",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": null
+  },
+  {
+   "name": "gerard jennissen",
+   "matched_name": "Gerard Jennissen",
+   "wiki_title": "Gerard Jennissen",
+   "education_level": "graduate",
+   "education_field": "arts and education; communication",
+   "alma_maters": [
+    "University of Saskatchewan"
+   ],
+   "prior_occupation": "high school English teacher; Frontier Collegiate Institute 1972-1994",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Gerard_Jennissen"
+  },
+  {
+   "name": "marilyn brick",
+   "matched_name": "Marilyn Brick",
+   "wiki_title": "Marilyn Brick",
+   "education_level": "bachelor",
+   "education_field": "physical education; human resource management",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "Community Services Department, City of Winnipeg",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Marilyn_Brick"
+  },
+  {
+   "name": "bernadette smith",
+   "matched_name": "Bernadette Smith",
+   "wiki_title": "Bernadette Smith",
+   "education_level": "bachelor",
+   "education_field": "education; child and youth care",
+   "alma_maters": [
+    "Red River College",
+    "University of Winnipeg"
+   ],
+   "prior_occupation": "teacher at Maples Collegiate; assistant director, WayFinders Program, Seven Oaks School Division",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Bernadette_Smith"
+  },
+  {
+   "name": "sale",
+   "matched_name": "Tim Sale",
+   "wiki_title": "Tim Sale (politician)",
+   "education_level": "bachelor",
+   "education_field": "science; theology",
+   "alma_maters": [
+    "University of Trinity College, Toronto"
+   ],
+   "prior_occupation": "executive director and CEO, Social Planning Council of Winnipeg; ordained Anglican priest; later taught at the University of Manitoba",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://en.wikipedia.org/wiki/Tim_Sale_(politician)"
+  },
+  {
+   "name": "allan",
+   "matched_name": "Nancy Allan",
+   "wiki_title": "Nancy Allan",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "Manitoba Motion Picture Industries Association; consultant to small business and non-profit organizations",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Nancy_Allan"
+  },
+  {
+   "name": "bidhu jha",
+   "matched_name": "Bidhu Jha",
+   "wiki_title": "Bidhu Jha",
+   "education_level": "bachelor",
+   "education_field": "mechanical engineering",
+   "alma_maters": [
+    "Birla Institute of Technology, Sindri"
+   ],
+   "prior_occupation": "founder of Optimum Ergonomics Ltd and Optimum Technology Corporation",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Bidhu_Jha"
+  },
+  {
+   "name": "rochelle squires",
+   "matched_name": "Rochelle Squires",
+   "wiki_title": "Rochelle Squires",
+   "education_level": "graduate",
+   "education_field": "communications; journalism; creative writing",
+   "alma_maters": [
+    "University of Winnipeg",
+    "Red River College",
+    "University of British Columbia"
+   ],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Rochelle_Squires"
+  },
+  {
+   "name": "doyle piwniuk",
+   "matched_name": "Doyle Piwniuk",
+   "wiki_title": "Doyle Piwniuk",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "insurance broker and financial planner",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Doyle_Piwniuk"
+  },
+  {
+   "name": "ted marcelino",
+   "matched_name": "Ted Marcelino",
+   "wiki_title": "Ted Marcelino",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Ted_Marcelino"
+  },
+  {
+   "name": "judy klassen",
+   "matched_name": "Judy Klassen",
+   "wiki_title": "Judy Klassen",
+   "education_level": "college",
+   "education_field": "business studies",
+   "alma_maters": [
+    "Red River College"
+   ],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Judy_Klassen"
+  },
+  {
+   "name": "dave gaudreau",
+   "matched_name": "Dave Gaudreau",
+   "wiki_title": "Dave Gaudreau",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Dave_Gaudreau"
+  },
+  {
+   "name": "kerri irvin-ross",
+   "matched_name": "Kerri Irvin-Ross",
+   "wiki_title": "Kerri Irvin-Ross",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Kerri_Irvin-Ross"
+  },
+  {
+   "name": "briese",
+   "matched_name": "Stu Briese",
+   "wiki_title": "Stu Briese",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "twenty years on the council of the Rural Municipality of Langford; president, Association of Manitoba Municipalities",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Stu_Briese"
+  },
+  {
+   "name": "nancy allan",
+   "matched_name": "Nancy Allan",
+   "wiki_title": "Nancy Allan",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "Manitoba Motion Picture Industries Association; consultant to small business and non-profit organizations",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Nancy_Allan"
+  },
+  {
+   "name": "robinson",
+   "matched_name": "Eric Robinson",
+   "wiki_title": "Eric Robinson (Canadian politician)",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "producer and broadcaster, CBC; Native Communications Inc.; earlier addiction counsellor and radio disc jockey",
+   "occupation_category": "communications-PR-journalism",
+   "source_url": "https://en.wikipedia.org/wiki/Eric_Robinson_(Canadian_politician)"
+  },
+  {
+   "name": "dennis smook",
+   "matched_name": "Dennis Smook",
+   "wiki_title": "Dennis Smook",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Dennis_Smook"
+  },
+  {
+   "name": "ewasko",
+   "matched_name": "Wayne Ewasko",
+   "wiki_title": "Wayne Ewasko",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Wayne_Ewasko"
+  },
+  {
+   "name": "dewar",
+   "matched_name": "Gregory Dewar",
+   "wiki_title": "Greg Dewar",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [
+    "University of Winnipeg"
+   ],
+   "prior_occupation": "steelworker and small businessman",
+   "occupation_category": "trades-labour",
+   "source_url": "https://en.wikipedia.org/wiki/Greg_Dewar"
+  },
+  {
+   "name": "daryl reid",
+   "matched_name": "Daryl Reid",
+   "wiki_title": "Daryl Reid",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "Canadian National railway worker; shop steward and executive board member, International Brotherhood of Electrical Workers",
+   "occupation_category": "trades-labour",
+   "source_url": "https://en.wikipedia.org/wiki/Daryl_Reid"
+  },
+  {
+   "name": "christine melnick",
+   "matched_name": "Christine Melnick",
+   "wiki_title": "Christine Melnick",
+   "education_level": "graduate",
+   "education_field": "library and information science",
+   "alma_maters": [
+    "University of Manitoba",
+    "Dalhousie University"
+   ],
+   "prior_occupation": "librarian and researcher, Canada/Manitoba Business Service Centre",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Christine_Melnick"
+  },
+  {
+   "name": "erin selby",
+   "matched_name": "Erin Selby",
+   "wiki_title": "Erin Selby",
+   "education_level": "bachelor",
+   "education_field": "communications studies",
+   "alma_maters": [
+    "Concordia University"
+   ],
+   "prior_occupation": "television weather anchor and consumer reporter (Citytv, Global, CTV Winnipeg)",
+   "occupation_category": "communications-PR-journalism",
+   "source_url": "https://en.wikipedia.org/wiki/Erin_Selby"
+  },
+  {
+   "name": "wharton",
+   "matched_name": "Jeff Wharton",
+   "wiki_title": "Jeff Wharton",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Jeff_Wharton"
+  },
+  {
+   "name": "drew caldwell",
+   "matched_name": "Drew Caldwell",
+   "wiki_title": "Drew Caldwell",
+   "education_level": "bachelor",
+   "education_field": "arts; education",
+   "alma_maters": [
+    "Brandon University",
+    "Queen's University",
+    "McGill University"
+   ],
+   "prior_occupation": "supply teacher; manager of the Brandon Career Symposium",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Drew_Caldwell"
+  },
+  {
+   "name": "martin",
+   "matched_name": "Shannon Martin",
+   "wiki_title": "Shannon Martin",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "executive director, Reaching E-Quality Employment Services; provincial director, Canadian Federation of Independent Business",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://en.wikipedia.org/wiki/Shannon_Martin"
+  },
+  {
+   "name": "nevakshonoff",
+   "matched_name": "Tom Nevakshonoff",
+   "wiki_title": "Tom Nevakshonoff",
+   "education_level": "bachelor",
+   "education_field": "East European studies",
+   "alma_maters": [
+    "Carleton University"
+   ],
+   "prior_occupation": "co-owner of the family business Aberdeen Lodge",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Tom_Nevakshonoff"
+  },
+  {
+   "name": "klassen",
+   "matched_name": "Judy Klassen",
+   "wiki_title": "Judy Klassen",
+   "education_level": "college",
+   "education_field": "business studies",
+   "alma_maters": [
+    "Red River College"
+   ],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Judy_Klassen"
+  },
+  {
+   "name": "martindale",
+   "matched_name": "Doug Martindale",
+   "wiki_title": "Doug Martindale",
+   "education_level": "graduate",
+   "education_field": "arts; divinity",
+   "alma_maters": [
+    "Brock University",
+    "Victoria University, Toronto"
+   ],
+   "prior_occupation": "United Church minister",
+   "occupation_category": "other",
+   "source_url": "https://en.wikipedia.org/wiki/Doug_Martindale"
+  },
+  {
+   "name": "dyck",
+   "matched_name": "Peter Dyck",
+   "wiki_title": "Peter Dyck",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "public school music teacher; also owner-operator of a grain farm and cattle feedlot",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Peter_Dyck"
+  },
+  {
+   "name": "kevin chief",
+   "matched_name": "Kevin Chief",
+   "wiki_title": "Kevin Chief",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Kevin_Chief"
+  },
+  {
+   "name": "scott fielding",
+   "matched_name": "Scott Fielding",
+   "wiki_title": "Scott Fielding",
+   "education_level": "bachelor",
+   "education_field": "political science and economics",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "pharmaceutical sales representative; part owner of Tiber River Naturals",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Scott_Fielding"
+  },
+  {
+   "name": "eric robinson",
+   "matched_name": "Eric Robinson",
+   "wiki_title": "Eric Robinson (Canadian politician)",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "producer and broadcaster, CBC; Native Communications Inc.; earlier addiction counsellor and radio disc jockey",
+   "occupation_category": "communications-PR-journalism",
+   "source_url": "https://en.wikipedia.org/wiki/Eric_Robinson_(Canadian_politician)"
+  },
+  {
+   "name": "bonnie korzeniowski",
+   "matched_name": "Bonnie Korzeniowski",
+   "wiki_title": "Bonnie Korzeniowski",
+   "education_level": "graduate",
+   "education_field": "social work; administration",
+   "alma_maters": [],
+   "prior_occupation": "social worker for twenty years, including twelve years in psychogeriatrics at the Deer Lodge Centre",
+   "occupation_category": "health",
+   "source_url": "https://en.wikipedia.org/wiki/Bonnie_Korzeniowski"
+  },
+  {
+   "name": "james teitsma",
+   "matched_name": "James Teitsma",
+   "wiki_title": "James Teitsma",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/James_Teitsma"
+  },
+  {
+   "name": "nic curry",
+   "matched_name": "Nic Curry",
+   "wiki_title": "Nic Curry",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Nic_Curry"
+  },
+  {
+   "name": "andrew smith",
+   "matched_name": "Andrew Smith",
+   "wiki_title": "Andrew Smith (Canadian politician)",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Andrew_Smith_(Canadian_politician)"
+  },
+  {
+   "name": "cox",
+   "matched_name": "Cathy Cox",
+   "wiki_title": "Cathy Cox (Canadian politician)",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Cathy_Cox_(Canadian_politician)"
+  },
+  {
+   "name": "erna braun",
+   "matched_name": "Erna Braun",
+   "wiki_title": "Erna Braun",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "head of the Winnipeg Teachers Association",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Erna_Braun"
+  },
+  {
+   "name": "saran",
+   "matched_name": "Mohinder Saran",
+   "wiki_title": "Mohinder Saran",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Mohinder_Saran"
+  },
+  {
+   "name": "eileen clarke",
+   "matched_name": "Eileen Clarke",
+   "wiki_title": "Eileen Clarke (politician)",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Eileen_Clarke_(politician)"
+  },
+  {
+   "name": "cathy cox",
+   "matched_name": "Cathy Cox",
+   "wiki_title": "Cathy Cox (Canadian politician)",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Cathy_Cox_(Canadian_politician)"
+  },
+  {
+   "name": "chief",
+   "matched_name": "Kevin Chief",
+   "wiki_title": "Kevin Chief",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Kevin_Chief"
+  },
+  {
+   "name": "howard",
+   "matched_name": "Jennifer Howard",
+   "wiki_title": "Jennifer Howard (Canadian politician)",
+   "education_level": "bachelor",
+   "education_field": null,
+   "alma_maters": [
+    "Brandon University"
+   ],
+   "prior_occupation": "policy advisor on health care to Premier Gary Doer; executive director, Women's Health Clinic",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Jennifer_Howard_(Canadian_politician)"
+  },
+  {
+   "name": "helwer",
+   "matched_name": "Reg Helwer",
+   "wiki_title": "Reg Helwer",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Reg_Helwer"
+  },
+  {
+   "name": "blaikie",
+   "matched_name": "Bill Blaikie",
+   "wiki_title": "Bill Blaikie",
+   "education_level": "graduate",
+   "education_field": "philosophy and religious studies; divinity",
+   "alma_maters": [
+    "University of Winnipeg",
+    "Emmanuel College, Toronto School of Theology"
+   ],
+   "prior_occupation": "United Church minister; Minister/Director of North End Community Ministry",
+   "occupation_category": "other",
+   "source_url": "https://en.wikipedia.org/wiki/Bill_Blaikie"
+  },
+  {
+   "name": "gregory dewar",
+   "matched_name": "Gregory Dewar",
+   "wiki_title": "Greg Dewar",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [
+    "University of Winnipeg"
+   ],
+   "prior_occupation": "steelworker and small businessman",
+   "occupation_category": "trades-labour",
+   "source_url": "https://en.wikipedia.org/wiki/Greg_Dewar"
+  },
+  {
+   "name": "cummings",
+   "matched_name": "Glen Cummings",
+   "wiki_title": "Glen Cummings (politician)",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [
+    "Neepawa Area College"
+   ],
+   "prior_occupation": "farmer; school board chair and trustee, Beautiful Plains School Division",
+   "occupation_category": "agriculture",
+   "source_url": "https://en.wikipedia.org/wiki/Glen_Cummings_(politician)"
+  },
+  {
+   "name": "alan lagimodiere",
+   "matched_name": "Alan Lagimodiere",
+   "wiki_title": "Alan Lagimodiere",
+   "education_level": "professional",
+   "education_field": "veterinary medicine; agriculture",
+   "alma_maters": [
+    "University of Manitoba",
+    "University of Saskatchewan"
+   ],
+   "prior_occupation": "hotelier and veterinarian",
+   "occupation_category": "health",
+   "source_url": "https://en.wikipedia.org/wiki/Alan_Lagimodiere"
+  },
+  {
+   "name": "derek johnson",
+   "matched_name": "Derek Johnson",
+   "wiki_title": "Derek Johnson (politician)",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Derek_Johnson_(politician)"
+  },
+  {
+   "name": "len isleifson",
+   "matched_name": "Len Isleifson",
+   "wiki_title": "Len Isleifson",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Len_Isleifson"
+  },
+  {
+   "name": "andrew micklefield",
+   "matched_name": "Andrew Micklefield",
+   "wiki_title": "Andrew Micklefield",
+   "education_level": "bachelor",
+   "education_field": "education",
+   "alma_maters": [
+    "University of Winnipeg"
+   ],
+   "prior_occupation": "teacher; principal of The King's School, Winnipeg",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Andrew_Micklefield"
+  },
+  {
+   "name": "bill blaikie",
+   "matched_name": "Bill Blaikie",
+   "wiki_title": "Bill Blaikie",
+   "education_level": "graduate",
+   "education_field": "philosophy and religious studies; divinity",
+   "alma_maters": [
+    "University of Winnipeg",
+    "Emmanuel College, Toronto School of Theology"
+   ],
+   "prior_occupation": "United Church minister; Minister/Director of North End Community Ministry",
+   "occupation_category": "other",
+   "source_url": "https://en.wikipedia.org/wiki/Bill_Blaikie"
+  },
+  {
+   "name": "jack penner",
+   "matched_name": "Jack Penner",
+   "wiki_title": "Jack Penner",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "farmer; also worked for West Park Motors, Altona",
+   "occupation_category": "agriculture",
+   "source_url": "https://en.wikipedia.org/wiki/Jack_Penner"
+  },
+  {
+   "name": "scott johnston",
+   "matched_name": "Scott Johnston",
+   "wiki_title": "Scott Johnston",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Scott_Johnston"
+  },
+  {
+   "name": "blair yakimoski",
+   "matched_name": "Blair Yakimoski",
+   "wiki_title": "Blair Yakimoski",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Blair_Yakimoski"
+  },
+  {
+   "name": "murray",
+   "matched_name": "Stuart Murray",
+   "wiki_title": "Stuart Murray",
+   "education_level": "unknown",
+   "education_field": "science; architectural science",
+   "alma_maters": [
+    "University of Manitoba",
+    "Ryerson Polytechnical Institute"
+   ],
+   "prior_occupation": "vice-president then CEO and president of Domo Gasoline Corporation; earlier media director, Canadian Opera Company",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Stuart_Murray"
+  },
+  {
+   "name": "teitsma",
+   "matched_name": "James Teitsma",
+   "wiki_title": "James Teitsma",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/James_Teitsma"
+  },
+  {
+   "name": "mcgifford",
+   "matched_name": "Diane McGifford",
+   "wiki_title": "Diane McGifford",
+   "education_level": "graduate",
+   "education_field": "English literature",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "university professor (Saskatchewan, Manitoba, Winnipeg)",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Diane_McGifford"
+  },
+  {
+   "name": "jon reyes",
+   "matched_name": "Jon Reyes",
+   "wiki_title": "Jon Reyes",
+   "education_level": "bachelor",
+   "education_field": "entrepreneurial management",
+   "alma_maters": [
+    "Royal Roads University"
+   ],
+   "prior_occupation": "small business owner (two businesses over 16 years); earlier Royal Canadian Navy and federal civil servant",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Jon_Reyes"
+  },
+  {
+   "name": "jennissen",
+   "matched_name": "Gerard Jennissen",
+   "wiki_title": "Gerard Jennissen",
+   "education_level": "graduate",
+   "education_field": "arts and education; communication",
+   "alma_maters": [
+    "University of Saskatchewan"
+   ],
+   "prior_occupation": "high school English teacher; Frontier Collegiate Institute 1972-1994",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Gerard_Jennissen"
+  },
+  {
+   "name": "guillemard",
+   "matched_name": "Sarah Guillemard",
+   "wiki_title": "Sarah Guillemard",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Sarah_Guillemard"
+  },
+  {
+   "name": "brad michaleski",
+   "matched_name": "Brad Michaleski",
+   "wiki_title": "Brad Michaleski",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Brad_Michaleski"
+  },
+  {
+   "name": "glen cummings",
+   "matched_name": "Glen Cummings",
+   "wiki_title": "Glen Cummings (politician)",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [
+    "Neepawa Area College"
+   ],
+   "prior_occupation": "farmer; school board chair and trustee, Beautiful Plains School Division",
+   "occupation_category": "agriculture",
+   "source_url": "https://en.wikipedia.org/wiki/Glen_Cummings_(politician)"
+  },
+  {
+   "name": "sarah guillemard",
+   "matched_name": "Sarah Guillemard",
+   "wiki_title": "Sarah Guillemard",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Sarah_Guillemard"
+  },
+  {
+   "name": "dougald lamont",
+   "matched_name": "Dougald Lamont",
+   "wiki_title": "Dougald Lamont",
+   "education_level": "graduate",
+   "education_field": "English literature",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "instructor in government-business relations, University of Winnipeg; political advisor",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Dougald_Lamont"
+  },
+  {
+   "name": "jeff wharton",
+   "matched_name": "Jeff Wharton",
+   "wiki_title": "Jeff Wharton",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Jeff_Wharton"
+  },
+  {
+   "name": "melanie wight",
+   "matched_name": "Melanie Wight",
+   "wiki_title": "Melanie Wight",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Melanie_Wight"
+  },
+  {
+   "name": "rick wowchuk",
+   "matched_name": "Rick Wowchuk",
+   "wiki_title": "Rick Wowchuk",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Rick_Wowchuk"
+  },
+  {
+   "name": "janice morley-lecomte",
+   "matched_name": "Janice Morley-Lecomte",
+   "wiki_title": "Janice Morley-Lecomte",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Janice_Morley-Lecomte"
+  },
+  {
+   "name": "colleen mayer",
+   "matched_name": "Colleen Mayer",
+   "wiki_title": "Colleen Mayer",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Colleen_Mayer"
+  },
+  {
+   "name": "reid",
+   "matched_name": "Daryl Reid",
+   "wiki_title": "Daryl Reid",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "Canadian National railway worker; shop steward and executive board member, International Brotherhood of Electrical Workers",
+   "occupation_category": "trades-labour",
+   "source_url": "https://en.wikipedia.org/wiki/Daryl_Reid"
+  },
+  {
+   "name": "kelly bindle",
+   "matched_name": "Kelly Bindle",
+   "wiki_title": "Kelly Bindle",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Kelly_Bindle"
+  },
+  {
+   "name": "frank whitehead",
+   "matched_name": "Frank Whitehead",
+   "wiki_title": "Frank Whitehead (Canadian politician)",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "chief of the Opaskwayak Cree Nation; political advisor to the Assembly of Manitoba Chiefs",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Frank_Whitehead_(Canadian_politician)"
+  },
+  {
+   "name": "piwniuk",
+   "matched_name": "Doyle Piwniuk",
+   "wiki_title": "Doyle Piwniuk",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "insurance broker and financial planner",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Doyle_Piwniuk"
+  },
+  {
+   "name": "caldwell",
+   "matched_name": "Drew Caldwell",
+   "wiki_title": "Drew Caldwell",
+   "education_level": "bachelor",
+   "education_field": "arts; education",
+   "alma_maters": [
+    "Brandon University",
+    "Queen's University",
+    "McGill University"
+   ],
+   "prior_occupation": "supply teacher; manager of the Brandon Career Symposium",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Drew_Caldwell"
+  },
+  {
+   "name": "thomas nevakshonoff",
+   "matched_name": "Tom Nevakshonoff",
+   "wiki_title": "Tom Nevakshonoff",
+   "education_level": "bachelor",
+   "education_field": "East European studies",
+   "alma_maters": [
+    "Carleton University"
+   ],
+   "prior_occupation": "co-owner of the family business Aberdeen Lodge",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Tom_Nevakshonoff"
+  },
+  {
+   "name": "bob lagass\u00e9",
+   "matched_name": "Bob Lagass\u00e9",
+   "wiki_title": "Bob Lagass\u00e9",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Bob_Lagass\u00e9"
+  },
+  {
+   "name": "micklefield",
+   "matched_name": "Andrew Micklefield",
+   "wiki_title": "Andrew Micklefield",
+   "education_level": "bachelor",
+   "education_field": "education",
+   "alma_maters": [
+    "University of Winnipeg"
+   ],
+   "prior_occupation": "teacher; principal of The King's School, Winnipeg",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Andrew_Micklefield"
+  },
+  {
+   "name": "clarence pettersen",
+   "matched_name": "Clarence Pettersen",
+   "wiki_title": "Clarence Pettersen",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Clarence_Pettersen"
+  },
+  {
+   "name": "curry",
+   "matched_name": "Nic Curry",
+   "wiki_title": "Nic Curry",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Nic_Curry"
+  },
+  {
+   "name": "greg nesbitt",
+   "matched_name": "Greg Nesbitt",
+   "wiki_title": "Greg Nesbitt",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Greg_Nesbitt"
+  },
+  {
+   "name": "greg dewar",
+   "matched_name": "Gregory Dewar",
+   "wiki_title": "Greg Dewar",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [
+    "University of Winnipeg"
+   ],
+   "prior_occupation": "steelworker and small businessman",
+   "occupation_category": "trades-labour",
+   "source_url": "https://en.wikipedia.org/wiki/Greg_Dewar"
+  },
+  {
+   "name": "lagimodiere",
+   "matched_name": "Alan Lagimodiere",
+   "wiki_title": "Alan Lagimodiere",
+   "education_level": "professional",
+   "education_field": "veterinary medicine; agriculture",
+   "alma_maters": [
+    "University of Manitoba",
+    "University of Saskatchewan"
+   ],
+   "prior_occupation": "hotelier and veterinarian",
+   "occupation_category": "health",
+   "source_url": "https://en.wikipedia.org/wiki/Alan_Lagimodiere"
+  },
+  {
+   "name": "penner",
+   "matched_name": "Jack Penner",
+   "wiki_title": "Jack Penner",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "farmer; also worked for West Park Motors, Altona",
+   "occupation_category": "agriculture",
+   "source_url": "https://en.wikipedia.org/wiki/Jack_Penner"
+  },
+  {
+   "name": "ron kostyshyn",
+   "matched_name": "Ron Kostyshyn",
+   "wiki_title": "Ron Kostyshyn",
+   "education_level": "secondary",
+   "education_field": null,
+   "alma_maters": [
+    "Ethelbert High School"
+   ],
+   "prior_occupation": "farmer (200 cow/calf operation, 2,560 acres) for 26 years",
+   "occupation_category": "agriculture",
+   "source_url": "https://en.wikipedia.org/wiki/Ron_Kostyshyn"
+  },
+  {
+   "name": "brick",
+   "matched_name": "Marilyn Brick",
+   "wiki_title": "Marilyn Brick",
+   "education_level": "bachelor",
+   "education_field": "physical education; human resource management",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "Community Services Department, City of Winnipeg",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Marilyn_Brick"
+  },
+  {
+   "name": "stuart murray",
+   "matched_name": "Stuart Murray",
+   "wiki_title": "Stuart Murray",
+   "education_level": "unknown",
+   "education_field": "science; architectural science",
+   "alma_maters": [
+    "University of Manitoba",
+    "Ryerson Polytechnical Institute"
+   ],
+   "prior_occupation": "vice-president then CEO and president of Domo Gasoline Corporation; earlier media director, Canadian Opera Company",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Stuart_Murray"
+  },
+  {
+   "name": "smook",
+   "matched_name": "Dennis Smook",
+   "wiki_title": "Dennis Smook",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Dennis_Smook"
+  },
+  {
+   "name": "selby",
+   "matched_name": "Erin Selby",
+   "wiki_title": "Erin Selby",
+   "education_level": "bachelor",
+   "education_field": "communications studies",
+   "alma_maters": [
+    "Concordia University"
+   ],
+   "prior_occupation": "television weather anchor and consumer reporter (Citytv, Global, CTV Winnipeg)",
+   "occupation_category": "communications-PR-journalism",
+   "source_url": "https://en.wikipedia.org/wiki/Erin_Selby"
+  },
+  {
+   "name": "tim sale",
+   "matched_name": "Tim Sale",
+   "wiki_title": "Tim Sale (politician)",
+   "education_level": "bachelor",
+   "education_field": "science; theology",
+   "alma_maters": [
+    "University of Trinity College, Toronto"
+   ],
+   "prior_occupation": "executive director and CEO, Social Planning Council of Winnipeg; ordained Anglican priest; later taught at the University of Manitoba",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://en.wikipedia.org/wiki/Tim_Sale_(politician)"
+  },
+  {
+   "name": "braun",
+   "matched_name": "Erna Braun",
+   "wiki_title": "Erna Braun",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "head of the Winnipeg Teachers Association",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Erna_Braun"
+  },
+  {
+   "name": "deanne crothers",
+   "matched_name": "Deanne Crothers",
+   "wiki_title": "Deanne Crothers",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Deanne_Crothers"
+  },
+  {
+   "name": "jack reimer",
+   "matched_name": "Jack Reimer",
+   "wiki_title": "Jack Reimer",
+   "education_level": "bachelor",
+   "education_field": "sociology",
+   "alma_maters": [
+    "University of North Dakota"
+   ],
+   "prior_occupation": "marketing and management instructor for Imperial Oil; automobile and tourism industries; owned a restaurant and service station",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Jack_Reimer"
+  },
+  {
+   "name": "isleifson",
+   "matched_name": "Len Isleifson",
+   "wiki_title": "Len Isleifson",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Len_Isleifson"
+  },
+  {
+   "name": "mla asagwara",
+   "matched_name": "Uzoma Asagwara",
+   "wiki_title": "Uzoma Asagwara",
+   "education_level": "bachelor",
+   "education_field": "psychiatric nursing",
+   "alma_maters": [
+    "University of Winnipeg",
+    "Brandon University"
+   ],
+   "prior_occupation": "registered psychiatric nurse specialising in adult and youth mental health and addictions",
+   "occupation_category": "health",
+   "source_url": "https://en.wikipedia.org/wiki/Uzoma_Asagwara"
+  },
+  {
+   "name": "diane mcgifford",
+   "matched_name": "Diane McGifford",
+   "wiki_title": "Diane McGifford",
+   "education_level": "graduate",
+   "education_field": "English literature",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "university professor (Saskatchewan, Manitoba, Winnipeg)",
+   "occupation_category": "education",
+   "source_url": "https://en.wikipedia.org/wiki/Diane_McGifford"
+  },
+  {
+   "name": "scott smith",
+   "matched_name": "Scott Smith",
+   "wiki_title": "Scott Smith (Canadian politician)",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": "firefighter for twenty years",
+   "occupation_category": "public-service",
+   "source_url": "https://en.wikipedia.org/wiki/Scott_Smith_(Canadian_politician)"
+  },
+  {
+   "name": "nesbitt",
+   "matched_name": "Greg Nesbitt",
+   "wiki_title": "Greg Nesbitt",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Greg_Nesbitt"
+  },
+  {
+   "name": "bindle",
+   "matched_name": "Kelly Bindle",
+   "wiki_title": "Kelly Bindle",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Kelly_Bindle"
+  },
+  {
+   "name": "reimer",
+   "matched_name": "Jack Reimer",
+   "wiki_title": "Jack Reimer",
+   "education_level": "bachelor",
+   "education_field": "sociology",
+   "alma_maters": [
+    "University of North Dakota"
+   ],
+   "prior_occupation": "marketing and management instructor for Imperial Oil; automobile and tourism industries; owned a restaurant and service station",
+   "occupation_category": "business",
+   "source_url": "https://en.wikipedia.org/wiki/Jack_Reimer"
+  },
+  {
+   "name": "gaudreau",
+   "matched_name": "Dave Gaudreau",
+   "wiki_title": "Dave Gaudreau",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Dave_Gaudreau"
+  },
+  {
+   "name": "yakimoski",
+   "matched_name": "Blair Yakimoski",
+   "wiki_title": "Blair Yakimoski",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Blair_Yakimoski"
+  },
+  {
+   "name": "michaleski",
+   "matched_name": "Brad Michaleski",
+   "wiki_title": "Brad Michaleski",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Brad_Michaleski"
+  },
+  {
+   "name": "mayer",
+   "matched_name": "Colleen Mayer",
+   "wiki_title": "Colleen Mayer",
+   "education_level": "unknown",
+   "education_field": null,
+   "alma_maters": [],
+   "prior_occupation": null,
+   "occupation_category": "unknown",
+   "source_url": "https://en.wikipedia.org/wiki/Colleen_Mayer"
+  },
+  {
+   "name": "korzeniowski",
+   "matched_name": "Bonnie Korzeniowski",
+   "wiki_title": "Bonnie Korzeniowski",
+   "education_level": "graduate",
+   "education_field": "social work; administration",
+   "alma_maters": [],
+   "prior_occupation": "social worker for twenty years, including twelve years in psychogeriatrics at the Deer Lodge Centre",
+   "occupation_category": "health",
+   "source_url": "https://en.wikipedia.org/wiki/Bonnie_Korzeniowski"
+  },
+  {
+   "name": "kostyshyn",
+   "matched_name": "Ron Kostyshyn",
+   "wiki_title": "Ron Kostyshyn",
+   "education_level": "secondary",
+   "education_field": null,
+   "alma_maters": [
+    "Ethelbert High School"
+   ],
+   "prior_occupation": "farmer (200 cow/calf operation, 2,560 acres) for 26 years",
+   "occupation_category": "agriculture",
+   "source_url": "https://en.wikipedia.org/wiki/Ron_Kostyshyn"
+  }
+ ],
+ "unmatched": [
+  "lamoureux",
+  "wowchuk",
+  "marcelino",
+  "smith",
+  "lathlin"
+ ]
+}

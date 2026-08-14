@@ -23,10 +23,14 @@ HOST = "https://business.senedd.wales/"
 UA = "performance-commons-research/1.0 (academic corpus build; matthewtomei@gmail.com)"
 HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = "/tmp/claude-1000/-home-matt-performance-commons/90221613-745b-4ed1-89b6-bc432df3d564/scratchpad/wales_cache"
-OUT = os.path.join(HERE, "wales_pdf_manifest.json")
+OUT = os.path.join(HERE, "wales_pdf_manifest%s.json"
+                   % os.environ.get("S10_SUFFIX", ""))
 os.makedirs(CACHE, exist_ok=True)
 
-WINDOWS = [("2006-01-01", "2010-12-31"), ("2015-01-01", "2015-12-31")]
+# The original pair; S10_FILL widens to the years the windowed design skipped.
+WINDOWS = ([("2011-01-01", "2014-12-31"), ("2020-01-01", "2024-12-31")]
+           if os.environ.get("S10_FILL") else
+           [("2006-01-01", "2010-12-31"), ("2015-01-01", "2015-12-31")])
 LAST_FETCH = [0.0]
 
 
@@ -67,11 +71,18 @@ def in_window(d):
 # --------------------------------------------------------------------------
 # STEP 1a: 2015 via the GetMeetings web service (CId 153)
 # --------------------------------------------------------------------------
-def meetings_2015():
+def meetings_ws(cid, lo, hi, keep=None):
+    """GetMeetings web service for one body.
+
+    NOTE: the service ignores sFromDate/sToDate for at least some bodies (CId
+    153 returns its whole 2011-05..2016-04 span whatever is asked), so the
+    caller filters. It also returns NOTHING for the retired Third-Assembly body
+    (CId 701) at any date range -- that one has to come off the Year pages.
+    """
     xml = fetch(
         HOST + "mgwebservice.asmx/GetMeetings",
-        data={"lCommitteeId": 153, "sFromDate": "2015-01-01", "sToDate": "2015-12-31"},
-        key="ws_getmeetings_153",
+        data={"lCommitteeId": cid, "sFromDate": lo, "sToDate": hi},
+        key=f"ws_getmeetings_{cid}_{lo}_{hi}",
     )
     out = {}
     for m in re.finditer(
@@ -79,10 +90,20 @@ def meetings_2015():
     ):
         mid, dd, mm, yyyy = m.groups()
         date = f"{yyyy}-{mm}-{dd}"
-        if date.startswith("2015"):
-            out[mid] = date
-    log(f"[list] CId=153 web service -> {len(out)} meetings in 2015")
-    return {(mid, "153"): d for mid, d in out.items()}
+        if keep and not keep(date):
+            continue
+        out[mid] = date
+    log(f"[list] CId={cid} web service -> {len(out)} meetings kept "
+        f"({min(out.values()) if out else '-'}..{max(out.values()) if out else '-'})")
+    return {(mid, str(cid)): d for mid, d in out.items()}
+
+
+def meetings_year_pages(cid, years):
+    """Year listing pages for one body (used where the web service is empty)."""
+    found = {}
+    for y in years:
+        _page(cid, f"{HOST}ieListMeetings.aspx?CId={cid}&Year={y}", found)
+    return found
 
 
 # --------------------------------------------------------------------------
@@ -192,6 +213,10 @@ def absolutise(href):
 # tier 0 = canonical CMIS "Record of Proceedings"; tier 1 = "The Record";
 # tier 2 = Welsh-only "Cofnod".
 def classify(name, text):
+    # "$Foo.docx.pdf" is a Word owner-lock temp file left in the CMIS folder --
+    # a byte-duplicate of the real record (seen on 2011-03-30). Never a document.
+    if name.startswith("$"):
+        return None
     s = (name + " || " + text).lower()
     if "voting record" in s or "cofnod pleidleisio" in s:
         return None
@@ -209,6 +234,20 @@ def classify(name, text):
 
 
 PART_RE = re.compile(r"\bpart\s*(\d+)|\brhan\s*(\d+)|\bpm\b|\bam\b", re.I)
+# CMIS prints each document's size in the link text ("... PDF 1 MB").
+SIZE_RE = re.compile(r"\bPDF\s+([\d.]+)\s*(KB|MB|GB)\b", re.I)
+_UNIT = {"kb": 1, "mb": 1024, "gb": 1024 * 1024}
+
+
+def too_small(text):
+    """True for a stub upload: a real Record is hundreds of KB at minimum.
+
+    2014-12-10 publishes a 1 KB 'Record of Proceedings' that serves a zero-byte
+    body, with the actual transcript beside it as a 1 MB 'The Record'. Without
+    this the tier-0 preference picks the stub and the sitting is lost.
+    """
+    m = SIZE_RE.search(text)
+    return bool(m) and float(m.group(1)) * _UNIT[m.group(2).lower()] < 20
 
 
 def records_for(mid, cid, expect_date):
@@ -233,6 +272,9 @@ def records_for(mid, cid, expect_date):
         t = classify(name, text)
         if t is None:
             continue
+        if too_small(text):
+            log(f"  ! stub record skipped m={mid}: {text[:70]}")
+            continue
         tiers.setdefault(t, {})[absolutise(href)] = name
     return title, tiers
 
@@ -241,11 +283,25 @@ def main():
     # ---- meeting lists
     meetings = {}
     log("== STEP 1: meeting lists ==")
-    log("[list] CId=702 (Second Assembly), seed years 2006-2007")
-    meetings.update(crawl_body(702, [2006, 2007], "2006-01-01", "2007-12-31"))
-    log("[list] CId=701 (Third Assembly), seed years 2007-2010")
-    meetings.update(crawl_body(701, [2007, 2008, 2009, 2010], "2007-01-01", "2010-12-31"))
-    meetings.update(meetings_2015())
+    if os.environ.get("S10_FILL"):
+        # The fill's PDF era is 2011-2014 only: the Record moves to the
+        # record.senedd.wales bilingual XML export on 2016-05-11, so the
+        # 2020-2024 half of the fill is harvested by wales_harvest_fill.py.
+        # 2011 straddles two bodies -- the Third Assembly sat to 2011-03-30
+        # (dissolution; election 2011-05-05), the Fourth from 2011-05-11.
+        log("[list] CId=701 (Third Assembly) year page 2011")
+        meetings.update(meetings_year_pages(701, [2011]))
+        log("[list] CId=153 (Fourth Assembly) web service")
+        meetings.update(meetings_ws(153, "2011-01-01", "2014-12-31"))
+        years = ["2011", "2012", "2013", "2014"]
+    else:
+        log("[list] CId=702 (Second Assembly), seed years 2006-2007")
+        meetings.update(crawl_body(702, [2006, 2007], "2006-01-01", "2007-12-31"))
+        log("[list] CId=701 (Third Assembly), seed years 2007-2010")
+        meetings.update(crawl_body(701, [2007, 2008, 2009, 2010], "2007-01-01", "2010-12-31"))
+        meetings.update(meetings_ws(153, "2015-01-01", "2015-12-31",
+                                    keep=lambda d: d.startswith("2015")))
+        years = ["2006", "2007", "2008", "2009", "2010", "2015"]
 
     meetings = {k: v for k, v in meetings.items() if in_window(v)}
     log(f"[list] {len(meetings)} meetings inside target windows")
@@ -256,8 +312,10 @@ def main():
         bymonth.setdefault(d[:4], set()).add(d[:7])
     # Aug is summer recess and Apr/May 2007 is the dissolution/election gap: expected.
     EXPECTED_GAPS = {"2006-08", "2007-08", "2008-08", "2009-08", "2010-08", "2015-08",
-                     "2007-04"}
-    for y in ["2006", "2007", "2008", "2009", "2010", "2015"]:
+                     "2007-04",
+                     # 2011: dissolution 2011-03-31, election 2011-05-05.
+                     "2011-04", "2011-08", "2012-08", "2013-08", "2014-08"}
+    for y in years:
         got = sorted(bymonth.get(y, []))
         missing = [f"{y}-{m:02d}" for m in range(1, 13) if f"{y}-{m:02d}" not in got]
         unexpected = [m for m in missing if m not in EXPECTED_GAPS]

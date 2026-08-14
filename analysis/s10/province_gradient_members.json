@@ -1,0 +1,2369 @@
+[
+ {
+  "prov": "ON",
+  "name": "tim hudak",
+  "drift": -0.006819647030112452,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 344392,
+  "w_late": 43343
+ },
+ {
+  "prov": "ON",
+  "name": "paul miller",
+  "drift": -0.03873667529816599,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 269877,
+  "w_late": 116736
+ },
+ {
+  "prov": "ON",
+  "name": "vic dhillon",
+  "drift": 0.05229079979658258,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 35891,
+  "w_late": 18867
+ },
+ {
+  "prov": "SK",
+  "name": "michelson",
+  "drift": -0.03564563588861436,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 31815,
+  "w_late": 46969
+ },
+ {
+  "prov": "BC",
+  "name": "l. krog",
+  "drift": -0.014015905923860261,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 367603,
+  "w_late": 240473
+ },
+ {
+  "prov": "NL",
+  "name": "king",
+  "drift": -0.19575087668220825,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 83642,
+  "w_late": 119372
+ },
+ {
+  "prov": "SK",
+  "name": "reiter",
+  "drift": 0.21127160640300902,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 26247,
+  "w_late": 78665
+ },
+ {
+  "prov": "MB",
+  "name": "wowchuk",
+  "drift": 0.09780982536557259,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 194631,
+  "w_late": 10936
+ },
+ {
+  "prov": "NL",
+  "name": "hedderson",
+  "drift": -0.110297838644322,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 49421,
+  "w_late": 13010
+ },
+ {
+  "prov": "ON",
+  "name": "andrea horwath",
+  "drift": -0.08285055289823484,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 456301,
+  "w_late": 390500
+ },
+ {
+  "prov": "AB",
+  "name": "swann",
+  "drift": 0.08457989466355093,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 214163,
+  "w_late": 182450
+ },
+ {
+  "prov": "ON",
+  "name": "deborah matthews",
+  "drift": -0.09572005813509976,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 151832,
+  "w_late": 112246
+ },
+ {
+  "prov": "NL",
+  "name": "conway ottenheimer",
+  "drift": -0.0055581706400731345,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 7852,
+  "w_late": 21260
+ },
+ {
+  "prov": "ON",
+  "name": "steve clark",
+  "drift": 0.22716623471830366,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 43047,
+  "w_late": 222919
+ },
+ {
+  "prov": "AB",
+  "name": "hehr",
+  "drift": 0.16851805346983062,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 228861,
+  "w_late": 11692
+ },
+ {
+  "prov": "BC",
+  "name": "v. huntington",
+  "drift": -0.028189435799747864,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 29148,
+  "w_late": 77699
+ },
+ {
+  "prov": "MB",
+  "name": "bonnie mitchelson",
+  "drift": 0.005252580898921111,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 169666,
+  "w_late": 30343
+ },
+ {
+  "prov": "ON",
+  "name": "robert bailey",
+  "drift": 0.05680729207171781,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 109177,
+  "w_late": 106463
+ },
+ {
+  "prov": "MB",
+  "name": "flor marcelino",
+  "drift": -0.06078737111627841,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 32032,
+  "w_late": 91736
+ },
+ {
+  "prov": "SK",
+  "name": "hart",
+  "drift": -0.0011208988095527672,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 75229,
+  "w_late": 15818
+ },
+ {
+  "prov": "MB",
+  "name": "jon gerrard",
+  "drift": 0.37464005797505595,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 297927,
+  "w_late": 270374
+ },
+ {
+  "prov": "SK",
+  "name": "wotherspoon",
+  "drift": 0.00983701587179131,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 207525,
+  "w_late": 355897
+ },
+ {
+  "prov": "MB",
+  "name": "lamoureux",
+  "drift": 0.1892176076080785,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 238988,
+  "w_late": 43181
+ },
+ {
+  "prov": "NL",
+  "name": "sullivan",
+  "drift": 0.05253252934231056,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 110468,
+  "w_late": 9295
+ },
+ {
+  "prov": "MB",
+  "name": "stuart briese",
+  "drift": 0.07870347639349518,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 114282,
+  "w_late": 15290
+ },
+ {
+  "prov": "AB",
+  "name": "rodney",
+  "drift": -0.03434619042146747,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 66135,
+  "w_late": 78534
+ },
+ {
+  "prov": "NL",
+  "name": "dinn",
+  "drift": 0.018413303990918506,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 33719,
+  "w_late": 22249
+ },
+ {
+  "prov": "BC",
+  "name": "c. james",
+  "drift": 0.20960237495389022,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 206815,
+  "w_late": 517050
+ },
+ {
+  "prov": "MB",
+  "name": "dave chomiak",
+  "drift": 0.1572903209762927,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 101297,
+  "w_late": 19709
+ },
+ {
+  "prov": "ON",
+  "name": "kathleen o. wynne",
+  "drift": -0.03916620893182077,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 118365,
+  "w_late": 301443
+ },
+ {
+  "prov": "BC",
+  "name": "d. barnett",
+  "drift": -0.22159347944825836,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 21689,
+  "w_late": 120101
+ },
+ {
+  "prov": "BC",
+  "name": "b. bennett",
+  "drift": 0.04054228128861259,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 126230,
+  "w_late": 118745
+ },
+ {
+  "prov": "SK",
+  "name": "morgan",
+  "drift": 0.15197442500354547,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 155313,
+  "w_late": 129052
+ },
+ {
+  "prov": "NS",
+  "name": "keith bain",
+  "drift": -0.0013912538540563485,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 61624,
+  "w_late": 23791
+ },
+ {
+  "prov": "MB",
+  "name": "gerrard",
+  "drift": 0.2196032571325116,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 217203,
+  "w_late": 163048
+ },
+ {
+  "prov": "NS",
+  "name": "gary burrill",
+  "drift": 0.11901786937528946,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 5400,
+  "w_late": 113304
+ },
+ {
+  "prov": "ON",
+  "name": "james j. bradley",
+  "drift": 0.01842252533444516,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 104038,
+  "w_late": 117270
+ },
+ {
+  "prov": "SK",
+  "name": "stewart",
+  "drift": 0.013702537591674613,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 51791,
+  "w_late": 46004
+ },
+ {
+  "prov": "MB",
+  "name": "marcelino",
+  "drift": 0.008870306118417437,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 7499,
+  "w_late": 101745
+ },
+ {
+  "prov": "BC",
+  "name": "l. reid",
+  "drift": 0.03029985794472706,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 81481,
+  "w_late": 18435
+ },
+ {
+  "prov": "NS",
+  "name": "lenore zann",
+  "drift": -0.01045679094556129,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 10049,
+  "w_late": 233277
+ },
+ {
+  "prov": "BC",
+  "name": "dalton",
+  "drift": 0.06637314609627332,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 20404,
+  "w_late": 24524
+ },
+ {
+  "prov": "ON",
+  "name": "monte kwinter",
+  "drift": 0.008116655624692881,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 41510,
+  "w_late": 5187
+ },
+ {
+  "prov": "SK",
+  "name": "elhard",
+  "drift": 0.0830765852012959,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 97246,
+  "w_late": 10690
+ },
+ {
+  "prov": "SK",
+  "name": "belanger",
+  "drift": 0.21861629231429647,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 183654,
+  "w_late": 455907
+ },
+ {
+  "prov": "MB",
+  "name": "eric robinson",
+  "drift": 0.03740655583509739,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 66526,
+  "w_late": 24728
+ },
+ {
+  "prov": "BC",
+  "name": "g. hogg",
+  "drift": -0.11439388963906397,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 31950,
+  "w_late": 17121
+ },
+ {
+  "prov": "BC",
+  "name": "d. routley",
+  "drift": 0.1298358429094419,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 257071,
+  "w_late": 168987
+ },
+ {
+  "prov": "MB",
+  "name": "peter bjornson",
+  "drift": 0.037153693701986956,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 211703,
+  "w_late": 10658
+ },
+ {
+  "prov": "BC",
+  "name": "b. ralston",
+  "drift": 0.14431018392270722,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 366194,
+  "w_late": 273225
+ },
+ {
+  "prov": "NS",
+  "name": "sterling belliveau",
+  "drift": 0.10301561352413802,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 61370,
+  "w_late": 111898
+ },
+ {
+  "prov": "AB",
+  "name": "forsyth",
+  "drift": 0.007295624796331057,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 89399,
+  "w_late": 12600
+ },
+ {
+  "prov": "SK",
+  "name": "duncan",
+  "drift": 0.3409432819832994,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 95199,
+  "w_late": 142819
+ },
+ {
+  "prov": "BC",
+  "name": "s. hammell",
+  "drift": 0.031335690017820994,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 52069,
+  "w_late": 45687
+ },
+ {
+  "prov": "BC",
+  "name": "r. chouhan",
+  "drift": 0.1383619577071986,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 81865,
+  "w_late": 11186
+ },
+ {
+  "prov": "MB",
+  "name": "drew caldwell",
+  "drift": 0.12964503314725062,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 52716,
+  "w_late": 13622
+ },
+ {
+  "prov": "SK",
+  "name": "toth",
+  "drift": -0.09498811805403129,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 62979,
+  "w_late": 11096
+ },
+ {
+  "prov": "BC",
+  "name": "r. austin",
+  "drift": -0.0386348051850976,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 101046,
+  "w_late": 53479
+ },
+ {
+  "prov": "BC",
+  "name": "k. corrigan",
+  "drift": -0.10202272882830166,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 70259,
+  "w_late": 181362
+ },
+ {
+  "prov": "ON",
+  "name": "brad duguid",
+  "drift": 0.09610216107670022,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 110228,
+  "w_late": 74665
+ },
+ {
+  "prov": "MB",
+  "name": "nevakshonoff",
+  "drift": 0.4185648985935773,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 20225,
+  "w_late": 22724
+ },
+ {
+  "prov": "BC",
+  "name": "farnworth",
+  "drift": 0.13250232644959964,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 248336,
+  "w_late": 213045
+ },
+ {
+  "prov": "MB",
+  "name": "lathlin",
+  "drift": 0.2434502226251105,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 24242,
+  "w_late": 39341
+ },
+ {
+  "prov": "SK",
+  "name": "eagles",
+  "drift": 0.04904480838561115,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 36675,
+  "w_late": 6594
+ },
+ {
+  "prov": "MB",
+  "name": "heather stefanson",
+  "drift": 0.14485236371900967,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 201323,
+  "w_late": 203104
+ },
+ {
+  "prov": "ON",
+  "name": "bas balkissoon",
+  "drift": 0.0799638957259747,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 56551,
+  "w_late": 17285
+ },
+ {
+  "prov": "MB",
+  "name": "kelvin goertzen",
+  "drift": 0.03840551355790911,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 212436,
+  "w_late": 171272
+ },
+ {
+  "prov": "ON",
+  "name": "madeleine meilleur",
+  "drift": 0.14665545984557457,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 52544,
+  "w_late": 18675
+ },
+ {
+  "prov": "NS",
+  "name": "keith colwell",
+  "drift": 0.3683152490203211,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 164478,
+  "w_late": 38279
+ },
+ {
+  "prov": "ON",
+  "name": "laurie scott",
+  "drift": 0.2315884108370906,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 177282,
+  "w_late": 175467
+ },
+ {
+  "prov": "BC",
+  "name": "l. popham",
+  "drift": -0.09341307200709759,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 28529,
+  "w_late": 168179
+ },
+ {
+  "prov": "SK",
+  "name": "chartier",
+  "drift": -0.06960535853084093,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 54362,
+  "w_late": 315660
+ },
+ {
+  "prov": "NL",
+  "name": "michael",
+  "drift": 0.12028815196615936,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 681551,
+  "w_late": 540822
+ },
+ {
+  "prov": "ON",
+  "name": "david orazietti",
+  "drift": 0.12239228366535863,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 85827,
+  "w_late": 28098
+ },
+ {
+  "prov": "PE",
+  "name": "r. brown",
+  "drift": 0.44681181575136103,
+  "adopt": 51.1,
+  "region": "atlantic",
+  "w_early": 30471,
+  "w_late": 58478
+ },
+ {
+  "prov": "ON",
+  "name": "helena jaczek",
+  "drift": 0.06362256733474025,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 74169,
+  "w_late": 71903
+ },
+ {
+  "prov": "ON",
+  "name": "mike colle",
+  "drift": -0.09130057397251085,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 198444,
+  "w_late": 96519
+ },
+ {
+  "prov": "MB",
+  "name": "jim rondeau",
+  "drift": 0.029149875194555253,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 222958,
+  "w_late": 16023
+ },
+ {
+  "prov": "MB",
+  "name": "bidhu jha",
+  "drift": 0.02595129484113111,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 51714,
+  "w_late": 11023
+ },
+ {
+  "prov": "NL",
+  "name": "reid",
+  "drift": 0.44869364893367636,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 295561,
+  "w_late": 94817
+ },
+ {
+  "prov": "BC",
+  "name": "c. trevena",
+  "drift": 0.08587570979493181,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 223186,
+  "w_late": 275249
+ },
+ {
+  "prov": "BC",
+  "name": "n. yamamoto",
+  "drift": 0.210274386121223,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 13554,
+  "w_late": 17417
+ },
+ {
+  "prov": "BC",
+  "name": "n. simons",
+  "drift": -0.0598855492795064,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 194629,
+  "w_late": 121018
+ },
+ {
+  "prov": "ON",
+  "name": "france g\u00e9linas",
+  "drift": -0.29244455577871176,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 289482,
+  "w_late": 474313
+ },
+ {
+  "prov": "SK",
+  "name": "forbes",
+  "drift": -0.010580142216328858,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 198482,
+  "w_late": 428306
+ },
+ {
+  "prov": "ON",
+  "name": "toby barrett",
+  "drift": 0.029048581413567254,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 218534,
+  "w_late": 155265
+ },
+ {
+  "prov": "SK",
+  "name": "boyd",
+  "drift": 0.23370113173094992,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 38439,
+  "w_late": 26415
+ },
+ {
+  "prov": "MB",
+  "name": "goertzen",
+  "drift": 0.2416530785727884,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 170482,
+  "w_late": 370270
+ },
+ {
+  "prov": "NL",
+  "name": "cornect",
+  "drift": 0.1932869388401448,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 19244,
+  "w_late": 13512
+ },
+ {
+  "prov": "MB",
+  "name": "blaine pedersen",
+  "drift": 0.16467134180645876,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 158609,
+  "w_late": 158080
+ },
+ {
+  "prov": "NL",
+  "name": "davis",
+  "drift": 0.1545319486000447,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 15343,
+  "w_late": 28706
+ },
+ {
+  "prov": "BC",
+  "name": "r. fleming",
+  "drift": 0.18855151479184612,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 299255,
+  "w_late": 319401
+ },
+ {
+  "prov": "ON",
+  "name": "charles sousa",
+  "drift": 0.17508585014276645,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 68915,
+  "w_late": 139045
+ },
+ {
+  "prov": "ON",
+  "name": "peter tabuns",
+  "drift": -0.05551978615241471,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 450481,
+  "w_late": 373610
+ },
+ {
+  "prov": "BC",
+  "name": "mungall",
+  "drift": 0.21021184201939724,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 48569,
+  "w_late": 234824
+ },
+ {
+  "prov": "NS",
+  "name": "chuck porter",
+  "drift": 0.17240115193722222,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 134547,
+  "w_late": 46309
+ },
+ {
+  "prov": "ON",
+  "name": "jim wilson",
+  "drift": 0.08371914474197956,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 163615,
+  "w_late": 99417
+ },
+ {
+  "prov": "SK",
+  "name": "d\u2019autremont",
+  "drift": -0.019973643019909115,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 101590,
+  "w_late": 31540
+ },
+ {
+  "prov": "ON",
+  "name": "liz sandals",
+  "drift": 0.07436004705384724,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 120582,
+  "w_late": 100473
+ },
+ {
+  "prov": "BC",
+  "name": "j. thornthwaite",
+  "drift": 0.0840582254310529,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 15835,
+  "w_late": 197793
+ },
+ {
+  "prov": "ON",
+  "name": "norm miller",
+  "drift": 0.08417250472297995,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 311547,
+  "w_late": 148447
+ },
+ {
+  "prov": "AB",
+  "name": "taylor",
+  "drift": 0.1088737490284669,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 274275,
+  "w_late": 92734
+ },
+ {
+  "prov": "BC",
+  "name": "karagianis",
+  "drift": 0.07958947201561696,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 341299,
+  "w_late": 68006
+ },
+ {
+  "prov": "NS",
+  "name": "leo glavine",
+  "drift": 0.2597918695980339,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 199938,
+  "w_late": 128060
+ },
+ {
+  "prov": "SK",
+  "name": "nilson",
+  "drift": 0.015322750130993656,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 170781,
+  "w_late": 109775
+ },
+ {
+  "prov": "SK",
+  "name": "tell",
+  "drift": 0.20287486481015315,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 24121,
+  "w_late": 30614
+ },
+ {
+  "prov": "NS",
+  "name": "lieutenant governor",
+  "drift": 0.0326359536185733,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 8661,
+  "w_late": 5024
+ },
+ {
+  "prov": "NL",
+  "name": "pollard",
+  "drift": -0.03805251158144074,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 21222,
+  "w_late": 37368
+ },
+ {
+  "prov": "BC",
+  "name": "de jong",
+  "drift": 0.2090890026656777,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 316363,
+  "w_late": 352326
+ },
+ {
+  "prov": "BC",
+  "name": "a. dix",
+  "drift": 0.1626355227039041,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 414739,
+  "w_late": 381765
+ },
+ {
+  "prov": "SK",
+  "name": "broten",
+  "drift": -0.09188548807409846,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 214128,
+  "w_late": 97675
+ },
+ {
+  "prov": "SK",
+  "name": "draude",
+  "drift": 0.09441706373043968,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 105331,
+  "w_late": 15158
+ },
+ {
+  "prov": "AB",
+  "name": "amery",
+  "drift": 0.004998769491233679,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 13844,
+  "w_late": 8735
+ },
+ {
+  "prov": "BC",
+  "name": "j. horgan",
+  "drift": -0.005306563682367593,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 472378,
+  "w_late": 297633
+ },
+ {
+  "prov": "ON",
+  "name": "shafiq qaadri",
+  "drift": -0.09425780050415478,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 43619,
+  "w_late": 53322
+ },
+ {
+  "prov": "BC",
+  "name": "r. sultan",
+  "drift": -0.00999469644529627,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 59026,
+  "w_late": 108923
+ },
+ {
+  "prov": "SK",
+  "name": "bradshaw",
+  "drift": -0.138010934346377,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 28811,
+  "w_late": 55018
+ },
+ {
+  "prov": "MB",
+  "name": "ron schuler",
+  "drift": 0.15284114306721835,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 204137,
+  "w_late": 198006
+ },
+ {
+  "prov": "ON",
+  "name": "reza moridi",
+  "drift": -0.05772470215461889,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 42992,
+  "w_late": 32118
+ },
+ {
+  "prov": "BC",
+  "name": "stilwell",
+  "drift": -0.25490980130573715,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 36369,
+  "w_late": 56533
+ },
+ {
+  "prov": "NS",
+  "name": "andrew younger",
+  "drift": 0.19947710290579365,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 123361,
+  "w_late": 24605
+ },
+ {
+  "prov": "ON",
+  "name": "bill mauro",
+  "drift": 0.1586430462412628,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 119551,
+  "w_late": 91244
+ },
+ {
+  "prov": "NS",
+  "name": "alfie macleod",
+  "drift": -0.17063313484997422,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 37557,
+  "w_late": 92327
+ },
+ {
+  "prov": "ON",
+  "name": "harinder s. takhar",
+  "drift": 0.16002659915940376,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 45045,
+  "w_late": 16809
+ },
+ {
+  "prov": "AB",
+  "name": "eggen",
+  "drift": 0.038212286215024815,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 165001,
+  "w_late": 207308
+ },
+ {
+  "prov": "MB",
+  "name": "cliff cullen",
+  "drift": 0.30768305595961964,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 253768,
+  "w_late": 204716
+ },
+ {
+  "prov": "NL",
+  "name": "joyce",
+  "drift": 0.22845296881350274,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 81461,
+  "w_late": 346066
+ },
+ {
+  "prov": "AB",
+  "name": "horner",
+  "drift": -0.005028787490106268,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 145479,
+  "w_late": 15045
+ },
+ {
+  "prov": "BC",
+  "name": "e. foster",
+  "drift": 0.11030930213502288,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 9355,
+  "w_late": 17973
+ },
+ {
+  "prov": "AB",
+  "name": "bhullar",
+  "drift": -0.10148156806663339,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 31008,
+  "w_late": 12463
+ },
+ {
+  "prov": "NS",
+  "name": "kelly regan",
+  "drift": 0.0629102089274044,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 63111,
+  "w_late": 78442
+ },
+ {
+  "prov": "ON",
+  "name": "joe dickson",
+  "drift": 0.018154217000052042,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 41110,
+  "w_late": 34019
+ },
+ {
+  "prov": "MB",
+  "name": "matt wiebe",
+  "drift": -0.12827500285138482,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 16298,
+  "w_late": 375574
+ },
+ {
+  "prov": "NS",
+  "name": "david wilson",
+  "drift": 0.32759991468200933,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 7002,
+  "w_late": 230383
+ },
+ {
+  "prov": "NL",
+  "name": "kent",
+  "drift": 0.13776895313023263,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 57773,
+  "w_late": 321560
+ },
+ {
+  "prov": "MB",
+  "name": "cliff graydon",
+  "drift": 0.20866482469393235,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 145141,
+  "w_late": 72768
+ },
+ {
+  "prov": "SK",
+  "name": "heppner",
+  "drift": -0.06977367454103922,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 83925,
+  "w_late": 39360
+ },
+ {
+  "prov": "ON",
+  "name": "mario sergio",
+  "drift": 0.10972712566610412,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 48073,
+  "w_late": 14750
+ },
+ {
+  "prov": "NS",
+  "name": "karen casey",
+  "drift": 0.08817648723949689,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 115994,
+  "w_late": 78092
+ },
+ {
+  "prov": "BC",
+  "name": "s. thomson",
+  "drift": -0.029104423278787817,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 43677,
+  "w_late": 209886
+ },
+ {
+  "prov": "MB",
+  "name": "greg selinger",
+  "drift": 0.09297984550036328,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 387096,
+  "w_late": 235741
+ },
+ {
+  "prov": "NL",
+  "name": "peach",
+  "drift": -0.1915195797139515,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 24893,
+  "w_late": 16646
+ },
+ {
+  "prov": "BC",
+  "name": "r. coleman",
+  "drift": -0.04498795841741299,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 490873,
+  "w_late": 269360
+ },
+ {
+  "prov": "ON",
+  "name": "lisa macleod",
+  "drift": 0.033507849023816316,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 214705,
+  "w_late": 266383
+ },
+ {
+  "prov": "ON",
+  "name": "glen r. murray",
+  "drift": -0.0749016689923575,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 31917,
+  "w_late": 126951
+ },
+ {
+  "prov": "BC",
+  "name": "b. routley",
+  "drift": 0.20003533699195636,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 67185,
+  "w_late": 102860
+ },
+ {
+  "prov": "MB",
+  "name": "dewar",
+  "drift": 0.17261213878820636,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 13714,
+  "w_late": 37610
+ },
+ {
+  "prov": "ON",
+  "name": "julia munro",
+  "drift": 0.08812475958138666,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 150562,
+  "w_late": 98683
+ },
+ {
+  "prov": "ON",
+  "name": "john yakabuski",
+  "drift": 0.009568871467784956,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 284207,
+  "w_late": 305728
+ },
+ {
+  "prov": "BC",
+  "name": "n. macdonald",
+  "drift": -0.010225356339791838,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 307183,
+  "w_late": 97223
+ },
+ {
+  "prov": "NL",
+  "name": "hutchings",
+  "drift": -0.01611074905836052,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 57296,
+  "w_late": 408044
+ },
+ {
+  "prov": "AB",
+  "name": "blakeman",
+  "drift": 0.15215630479104902,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 717396,
+  "w_late": 31021
+ },
+ {
+  "prov": "ON",
+  "name": "michael chan",
+  "drift": 0.1380567483148205,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 25385,
+  "w_late": 19420
+ },
+ {
+  "prov": "SK",
+  "name": "brkich",
+  "drift": 0.06804891802565019,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 84999,
+  "w_late": 34652
+ },
+ {
+  "prov": "NL",
+  "name": "dean",
+  "drift": 0.16009651987241794,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 90828,
+  "w_late": 24306
+ },
+ {
+  "prov": "NL",
+  "name": "wiseman",
+  "drift": 0.09180530885528852,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 208816,
+  "w_late": 84078
+ },
+ {
+  "prov": "MB",
+  "name": "chomiak",
+  "drift": 0.19304104988452425,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 145471,
+  "w_late": 27179
+ },
+ {
+  "prov": "BC",
+  "name": "s. chandra herbert",
+  "drift": 0.11029016558516591,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 25677,
+  "w_late": 176236
+ },
+ {
+  "prov": "NS",
+  "name": "macleod",
+  "drift": -0.10184595106457084,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 9085,
+  "w_late": 24545
+ },
+ {
+  "prov": "NS",
+  "name": "zach churchill",
+  "drift": 0.01966632332938867,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 14579,
+  "w_late": 101214
+ },
+ {
+  "prov": "ON",
+  "name": "david zimmer",
+  "drift": 0.19041749408551337,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 119376,
+  "w_late": 59268
+ },
+ {
+  "prov": "ON",
+  "name": "michael gravelle",
+  "drift": 0.0314026164125758,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 44017,
+  "w_late": 50510
+ },
+ {
+  "prov": "SK",
+  "name": "krawetz",
+  "drift": 0.16291945758454218,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 126036,
+  "w_late": 17861
+ },
+ {
+  "prov": "SK",
+  "name": "norris",
+  "drift": -0.07397754982764826,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 73145,
+  "w_late": 11555
+ },
+ {
+  "prov": "MB",
+  "name": "jennifer howard",
+  "drift": 0.05041009548330879,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 103405,
+  "w_late": 30450
+ },
+ {
+  "prov": "MB",
+  "name": "jim maloway",
+  "drift": -0.19546082444290458,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 37954,
+  "w_late": 205980
+ },
+ {
+  "prov": "NL",
+  "name": "ball",
+  "drift": -0.1172174187253544,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 18532,
+  "w_late": 54369
+ },
+ {
+  "prov": "BC",
+  "name": "d. mcrae",
+  "drift": -0.04094149499420241,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 31738,
+  "w_late": 67167
+ },
+ {
+  "prov": "BC",
+  "name": "s. bond",
+  "drift": -0.12076936430902452,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 318960,
+  "w_late": 394226
+ },
+ {
+  "prov": "SK",
+  "name": "ottenbreit",
+  "drift": 0.12376480886431263,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 58175,
+  "w_late": 82647
+ },
+ {
+  "prov": "NS",
+  "name": "d'entremont",
+  "drift": -0.0047355647196841155,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 74297,
+  "w_late": 51824
+ },
+ {
+  "prov": "SK",
+  "name": "wall",
+  "drift": 0.10354207075887845,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 318734,
+  "w_late": 267753
+ },
+ {
+  "prov": "SK",
+  "name": "ross",
+  "drift": -0.08074189479627902,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 35979,
+  "w_late": 42799
+ },
+ {
+  "prov": "BC",
+  "name": "t. lake",
+  "drift": 0.20463422408513154,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 30620,
+  "w_late": 195737
+ },
+ {
+  "prov": "ON",
+  "name": "yasir naqvi",
+  "drift": 0.02350375057282239,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 131690,
+  "w_late": 263896
+ },
+ {
+  "prov": "ON",
+  "name": "lorenzo berardinetti",
+  "drift": 0.03920470795668718,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 95387,
+  "w_late": 58256
+ },
+ {
+  "prov": "MB",
+  "name": "gord mackintosh",
+  "drift": -0.03333658386662766,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 207144,
+  "w_late": 29755
+ },
+ {
+  "prov": "BC",
+  "name": "h. bains",
+  "drift": 0.20447264915675775,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 200260,
+  "w_late": 261534
+ },
+ {
+  "prov": "SK",
+  "name": "harpauer",
+  "drift": 0.131224776214011,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 74956,
+  "w_late": 48382
+ },
+ {
+  "prov": "MB",
+  "name": "erna braun",
+  "drift": 0.08594766543184254,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 32889,
+  "w_late": 17098
+ },
+ {
+  "prov": "ON",
+  "name": "sylvia jones",
+  "drift": -0.06258036464853789,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 106292,
+  "w_late": 180739
+ },
+ {
+  "prov": "SK",
+  "name": "bjornerud",
+  "drift": 0.10856486109578392,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 84825,
+  "w_late": 14320
+ },
+ {
+  "prov": "MB",
+  "name": "steve ashton",
+  "drift": 0.13274265678631103,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 251334,
+  "w_late": 89413
+ },
+ {
+  "prov": "NS",
+  "name": "jamie baillie",
+  "drift": -0.2031309870710999,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 26267,
+  "w_late": 275671
+ },
+ {
+  "prov": "ON",
+  "name": "bob chiarelli",
+  "drift": 0.161651254017807,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 8031,
+  "w_late": 47155
+ },
+ {
+  "prov": "SK",
+  "name": "cheveldayoff",
+  "drift": 0.15069902085745118,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 123422,
+  "w_late": 48902
+ },
+ {
+  "prov": "MB",
+  "name": "sharon blady",
+  "drift": 0.0601029103199322,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 64631,
+  "w_late": 90978
+ },
+ {
+  "prov": "ON",
+  "name": "lou rinaldi",
+  "drift": 0.1291868233534626,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 63402,
+  "w_late": 90424
+ },
+ {
+  "prov": "BC",
+  "name": "s. cadieux",
+  "drift": -0.17577292087247076,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 17543,
+  "w_late": 173467
+ },
+ {
+  "prov": "NS",
+  "name": "maureen macdonald",
+  "drift": 0.004676044591300305,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 153339,
+  "w_late": 79975
+ },
+ {
+  "prov": "SK",
+  "name": "kirsch",
+  "drift": 0.1010043185645918,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 41973,
+  "w_late": 17025
+ },
+ {
+  "prov": "BC",
+  "name": "polak",
+  "drift": 0.011163753654169717,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 132184,
+  "w_late": 140537
+ },
+ {
+  "prov": "ON",
+  "name": "laura albanese",
+  "drift": -0.03571593628440062,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 36443,
+  "w_late": 58482
+ },
+ {
+  "prov": "BC",
+  "name": "j. yap",
+  "drift": 0.0039642715930364725,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 65743,
+  "w_late": 91136
+ },
+ {
+  "prov": "BC",
+  "name": "s. simpson",
+  "drift": 0.12956786041069596,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 486038,
+  "w_late": 247990
+ },
+ {
+  "prov": "MB",
+  "name": "ralph eichler",
+  "drift": -0.03549077753005145,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 217808,
+  "w_late": 96198
+ },
+ {
+  "prov": "SK",
+  "name": "harrison",
+  "drift": 0.01849605094465734,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 44642,
+  "w_late": 57198
+ },
+ {
+  "prov": "NL",
+  "name": "f. collins",
+  "drift": -0.008758635230249959,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 73343,
+  "w_late": 18455
+ },
+ {
+  "prov": "NL",
+  "name": "perry",
+  "drift": 0.031550698497704976,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 19413,
+  "w_late": 276450
+ },
+ {
+  "prov": "MB",
+  "name": "ron lemieux",
+  "drift": 0.149954848127687,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 229498,
+  "w_late": 23385
+ },
+ {
+  "prov": "BC",
+  "name": "n. letnick",
+  "drift": -0.13961163933347787,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 32578,
+  "w_late": 177347
+ },
+ {
+  "prov": "ON",
+  "name": "amrit mangat",
+  "drift": 0.05862119004407351,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 16027,
+  "w_late": 26567
+ },
+ {
+  "prov": "NS",
+  "name": "diana whalen",
+  "drift": 0.13577407095547256,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 316319,
+  "w_late": 73789
+ },
+ {
+  "prov": "BC",
+  "name": "r. lee",
+  "drift": -0.010905984279218517,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 47852,
+  "w_late": 199138
+ },
+ {
+  "prov": "AB",
+  "name": "campbell",
+  "drift": -0.06823237952941857,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 23915,
+  "w_late": 10680
+ },
+ {
+  "prov": "NS",
+  "name": "allan macmaster",
+  "drift": 0.04722310154582254,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 62312,
+  "w_late": 154725
+ },
+ {
+  "prov": "MB",
+  "name": "kerri irvin-ross",
+  "drift": -0.02247225962132504,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 65355,
+  "w_late": 73125
+ },
+ {
+  "prov": "AB",
+  "name": "fawcett",
+  "drift": 0.037639362942193166,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 49997,
+  "w_late": 8552
+ },
+ {
+  "prov": "AB",
+  "name": "denis",
+  "drift": -0.10389897706505036,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 91845,
+  "w_late": 11750
+ },
+ {
+  "prov": "NS",
+  "name": "stephen mcneil",
+  "drift": 0.237294587100069,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 146704,
+  "w_late": 16581
+ },
+ {
+  "prov": "AB",
+  "name": "mason",
+  "drift": 0.1533570905657216,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 398710,
+  "w_late": 220771
+ },
+ {
+  "prov": "AB",
+  "name": "notley",
+  "drift": -0.0618260749558176,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 342851,
+  "w_late": 349964
+ },
+ {
+  "prov": "MB",
+  "name": "andrew swan",
+  "drift": -0.08036432771730428,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 200069,
+  "w_late": 476417
+ },
+ {
+  "prov": "SK",
+  "name": "wilson",
+  "drift": 0.16250656618864057,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 26097,
+  "w_late": 48055
+ },
+ {
+  "prov": "BC",
+  "name": "j. kwan",
+  "drift": 0.06500621280836738,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 283533,
+  "w_late": 27494
+ },
+ {
+  "prov": "SK",
+  "name": "merriman",
+  "drift": 0.372662905468932,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 34282,
+  "w_late": 68392
+ },
+ {
+  "prov": "ON",
+  "name": "jeff leal",
+  "drift": 0.18169948867343286,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 186644,
+  "w_late": 94687
+ },
+ {
+  "prov": "ON",
+  "name": "kevin daniel flynn",
+  "drift": 0.12282663147695883,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 137300,
+  "w_late": 130863
+ },
+ {
+  "prov": "SK",
+  "name": "vermette",
+  "drift": 0.01452471034907632,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 77918,
+  "w_late": 194589
+ },
+ {
+  "prov": "BC",
+  "name": "elmore",
+  "drift": -0.08344973243337772,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 36991,
+  "w_late": 105580
+ },
+ {
+  "prov": "ON",
+  "name": "cheri dinovo",
+  "drift": 0.0343569195780123,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 408490,
+  "w_late": 134308
+ },
+ {
+  "prov": "AB",
+  "name": "mcqueen",
+  "drift": -0.0647521217434218,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 32145,
+  "w_late": 8063
+ },
+ {
+  "prov": "BC",
+  "name": "s. fraser",
+  "drift": 0.24459974317532826,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 232278,
+  "w_late": 179150
+ },
+ {
+  "prov": "ON",
+  "name": "eric hoskins",
+  "drift": 0.44365178465797117,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 17502,
+  "w_late": 198353
+ },
+ {
+  "prov": "ON",
+  "name": "christine elliott",
+  "drift": 0.2321294498392673,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 178543,
+  "w_late": 83442
+ },
+ {
+  "prov": "ON",
+  "name": "ted mcmeekin",
+  "drift": 0.08925889570484574,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 58360,
+  "w_late": 39553
+ },
+ {
+  "prov": "NL",
+  "name": "dalley",
+  "drift": 0.023438740417584203,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 33841,
+  "w_late": 40468
+ },
+ {
+  "prov": "MB",
+  "name": "mohinder saran",
+  "drift": -0.364964132737597,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 31624,
+  "w_late": 97476
+ },
+ {
+  "prov": "NS",
+  "name": "christopher d'entremont",
+  "drift": 0.010351148823713019,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 173812,
+  "w_late": 134317
+ },
+ {
+  "prov": "SK",
+  "name": "weekes",
+  "drift": 0.22839451830101523,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 73631,
+  "w_late": 32356
+ },
+ {
+  "prov": "MB",
+  "name": "leanne rowat",
+  "drift": 0.010614849372635071,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 232833,
+  "w_late": 27959
+ },
+ {
+  "prov": "NL",
+  "name": "jackman",
+  "drift": 0.024745583132511132,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 89497,
+  "w_late": 27144
+ },
+ {
+  "prov": "PE",
+  "name": "murphy",
+  "drift": -0.18397518481072672,
+  "adopt": 51.1,
+  "region": "atlantic",
+  "w_early": 11028,
+  "w_late": 12935
+ },
+ {
+  "prov": "ON",
+  "name": "garfield dunlop",
+  "drift": 0.08186674325382615,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 244560,
+  "w_late": 23046
+ },
+ {
+  "prov": "ON",
+  "name": "gilles bisson",
+  "drift": -0.0036831602024420818,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 506176,
+  "w_late": 470505
+ },
+ {
+  "prov": "MB",
+  "name": "stan struthers",
+  "drift": 0.11422294488795592,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 201676,
+  "w_late": 7210
+ },
+ {
+  "prov": "BC",
+  "name": "b. stewart",
+  "drift": -0.19387736028926472,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 57557,
+  "w_late": 82376
+ },
+ {
+  "prov": "PE",
+  "name": "macdonald",
+  "drift": 0.00703964189005668,
+  "adopt": 51.1,
+  "region": "atlantic",
+  "w_early": 15224,
+  "w_late": 54421
+ },
+ {
+  "prov": "AB",
+  "name": "oberle",
+  "drift": 0.011472569611434547,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 46005,
+  "w_late": 13040
+ },
+ {
+  "prov": "PE",
+  "name": "d. currie",
+  "drift": 0.3233122905757704,
+  "adopt": 51.1,
+  "region": "atlantic",
+  "w_early": 13540,
+  "w_late": 43085
+ },
+ {
+  "prov": "MB",
+  "name": "nancy allan",
+  "drift": 0.13286876083483867,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 105497,
+  "w_late": 10155
+ },
+ {
+  "prov": "NS",
+  "name": "michel samson",
+  "drift": 0.2713289016457879,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 289546,
+  "w_late": 49000
+ },
+ {
+  "prov": "BC",
+  "name": "j. rustad",
+  "drift": 0.0432590124631963,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 123732,
+  "w_late": 265137
+ },
+ {
+  "prov": "BC",
+  "name": "d. donaldson",
+  "drift": 0.2533229962074222,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 65806,
+  "w_late": 314908
+ },
+ {
+  "prov": "MB",
+  "name": "smith",
+  "drift": 0.2708532638272778,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 8801,
+  "w_late": 87876
+ },
+ {
+  "prov": "MB",
+  "name": "rob altemeyer",
+  "drift": 0.013874524714619252,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 42458,
+  "w_late": 205209
+ },
+ {
+  "prov": "BC",
+  "name": "j. brar",
+  "drift": 0.026296833793809926,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 177622,
+  "w_late": 44963
+ },
+ {
+  "prov": "ON",
+  "name": "bob delaney",
+  "drift": -0.03946313612865371,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 201570,
+  "w_late": 138467
+ },
+ {
+  "prov": "ON",
+  "name": "ernie hardeman",
+  "drift": 0.20913894510069356,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 234098,
+  "w_late": 219208
+ },
+ {
+  "prov": "MB",
+  "name": "myrna driedger",
+  "drift": 0.18839345634122828,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 307716,
+  "w_late": 61917
+ },
+ {
+  "prov": "ON",
+  "name": "ted arnott",
+  "drift": 0.1117743270017344,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 194452,
+  "w_late": 155054
+ },
+ {
+  "prov": "MB",
+  "name": "theresa oswald",
+  "drift": 0.17327004961622383,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 288045,
+  "w_late": 11367
+ },
+ {
+  "prov": "NL",
+  "name": "forsey",
+  "drift": -0.06798136811385602,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 41317,
+  "w_late": 39888
+ },
+ {
+  "prov": "SK",
+  "name": "mccall",
+  "drift": 0.11465342848058951,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 150735,
+  "w_late": 260058
+ },
+ {
+  "prov": "MB",
+  "name": "briese",
+  "drift": 0.09743463391700471,
+  "adopt": 49.8,
+  "region": "central",
+  "w_early": 46134,
+  "w_late": 7927
+ },
+ {
+  "prov": "NL",
+  "name": "byrne",
+  "drift": 0.4878372324132698,
+  "adopt": 45.5,
+  "region": "atlantic",
+  "w_early": 10521,
+  "w_late": 119846
+ },
+ {
+  "prov": "AB",
+  "name": "horne",
+  "drift": -0.08388130924189391,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 54619,
+  "w_late": 32398
+ },
+ {
+  "prov": "BC",
+  "name": "k. conroy",
+  "drift": 0.19497956801488536,
+  "adopt": 55.9,
+  "region": "west",
+  "w_early": 98762,
+  "w_late": 171120
+ },
+ {
+  "prov": "ON",
+  "name": "randy hillier",
+  "drift": 0.0967149551129054,
+  "adopt": 54.2,
+  "region": "central",
+  "w_early": 78305,
+  "w_late": 168650
+ },
+ {
+  "prov": "NS",
+  "name": "geoff maclellan",
+  "drift": 0.26909436379178064,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 13174,
+  "w_late": 108689
+ },
+ {
+  "prov": "AB",
+  "name": "drysdale",
+  "drift": -0.204889930585463,
+  "adopt": 58.8,
+  "region": "west",
+  "w_early": 13554,
+  "w_late": 61248
+ },
+ {
+  "prov": "SK",
+  "name": "mcmorris",
+  "drift": 0.022852542003548443,
+  "adopt": 46.9,
+  "region": "west",
+  "w_early": 208448,
+  "w_late": 65992
+ },
+ {
+  "prov": "NS",
+  "name": "denise peterson-rafuse",
+  "drift": -0.17932197021813012,
+  "adopt": 52.0,
+  "region": "atlantic",
+  "w_early": 23756,
+  "w_late": 123469
+ }
+]

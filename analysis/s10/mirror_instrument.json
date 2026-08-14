@@ -1,0 +1,726 @@
+{
+ "us_marked": [
+  "exhibit",
+  "bonds",
+  "santa",
+  "simon",
+  "patents",
+  "baseline",
+  "file",
+  "payroll",
+  "founding",
+  "gifts",
+  "abortion",
+  "basin",
+  "deduction",
+  "requisite",
+  "subsection",
+  "enacting",
+  "coverage",
+  "elementary",
+  "enact",
+  "certification",
+  "reactor",
+  "oversight",
+  "colleague",
+  "ford",
+  "applicable",
+  "additionally",
+  "grandchildren",
+  "ninth",
+  "kids",
+  "ordered",
+  "plaintiff",
+  "calendar",
+  "bacon",
+  "disposition",
+  "generic",
+  "crop",
+  "workforce",
+  "prayer",
+  "taxable",
+  "thereof",
+  "alien",
+  "leverage",
+  "balanced",
+  "pending",
+  "securities",
+  "prohibit",
+  "statutes",
+  "endangered",
+  "termination",
+  "filibuster",
+  "miller",
+  "entity",
+  "acquisition",
+  "ballistic",
+  "petroleum",
+  "insured",
+  "eliminating",
+  "hiring",
+  "missile",
+  "violated",
+  "testimony",
+  "patent",
+  "versus",
+  "cocaine",
+  "dole",
+  "terminate",
+  "waive",
+  "determines",
+  "license",
+  "reimbursement",
+  "caps",
+  "proxy",
+  "fiscal",
+  "violations",
+  "physicians",
+  "prohibits",
+  "vetoed",
+  "quorum",
+  "proponents",
+  "indian",
+  "johnson",
+  "unanimous",
+  "nonetheless",
+  "supreme",
+  "wheat",
+  "abortions",
+  "enactment",
+  "johnston",
+  "title",
+  "unfunded",
+  "accomplished",
+  "ronald",
+  "stamps",
+  "printed",
+  "timber",
+  "portion",
+  "desert",
+  "hearings",
+  "kennedy",
+  "physician",
+  "president",
+  "goals",
+  "nutrition",
+  "american",
+  "lobbyists",
+  "presidents",
+  "lands",
+  "cuban",
+  "transportation",
+  "presidential",
+  "nomination",
+  "native",
+  "grazing",
+  "consume",
+  "veterans",
+  "striking",
+  "filing",
+  "entities",
+  "chart",
+  "ongoing",
+  "nafta",
+  "mexico",
+  "vietnam",
+  "americans",
+  "dollar",
+  "lieu",
+  "violation",
+  "bush",
+  "administrator",
+  "accomplish",
+  "appropriation",
+  "bipartisan",
+  "pursuant",
+  "wilderness",
+  "yield",
+  "georgia",
+  "clinton",
+  "washington",
+  "ranking",
+  "maybe",
+  "republican",
+  "toward",
+  "federal",
+  "congress",
+  "california",
+  "inserting",
+  "republicans",
+  "dollars",
+  "senator",
+  "senate"
+ ],
+ "uk_marked": [
+  "scotland",
+  "ministers",
+  "constituency",
+  "chancellor",
+  "nursery",
+  "parliament",
+  "royal",
+  "secondly",
+  "kingdom",
+  "london",
+  "interruption",
+  "minister",
+  "schemes",
+  "manchester",
+  "britain",
+  "british",
+  "belfast",
+  "representations",
+  "scheme",
+  "decommissioning",
+  "lords",
+  "tabled",
+  "wider",
+  "ministerial",
+  "sinn",
+  "ireland",
+  "lottery",
+  "brussels",
+  "landlords",
+  "landlord",
+  "reply",
+  "lord",
+  "kent",
+  "conservative",
+  "transport",
+  "councils",
+  "countryside",
+  "fein",
+  "abolition",
+  "brent",
+  "bristol",
+  "rightly",
+  "shadow",
+  "railway",
+  "welcomed",
+  "european",
+  "welcome",
+  "parliamentary",
+  "bench",
+  "shops",
+  "constituencies",
+  "tackle",
+  "unsatisfactory",
+  "authorities",
+  "knives",
+  "disgraceful",
+  "interventions",
+  "crown",
+  "capping",
+  "rented",
+  "redundancy",
+  "birmingham",
+  "trusts",
+  "confirm",
+  "accommodation",
+  "keen",
+  "reassure",
+  "lone",
+  "beds",
+  "incompetence",
+  "sundays",
+  "norfolk",
+  "grateful",
+  "channel",
+  "dispatch",
+  "suffolk",
+  "compulsory",
+  "pits",
+  "millennium",
+  "appalling",
+  "lady",
+  "england",
+  "dreadful",
+  "durham",
+  "betting",
+  "bogus",
+  "blight",
+  "friend",
+  "estates",
+  "towards",
+  "arrangements",
+  "trent",
+  "flats",
+  "afterwards",
+  "tunnel",
+  "pupil",
+  "electorate",
+  "seekers",
+  "winding",
+  "widening",
+  "difficulties",
+  "noise",
+  "northern",
+  "beef",
+  "downing",
+  "tenants",
+  "confederation",
+  "relation",
+  "regulator",
+  "prime",
+  "premises",
+  "undertakings",
+  "parish",
+  "queen",
+  "sport",
+  "clauses",
+  "expenditure",
+  "directive",
+  "conservatives",
+  "select",
+  "referendum",
+  "obliged",
+  "consultative",
+  "bath",
+  "ministry",
+  "intervened",
+  "hull",
+  "bypass",
+  "transparency",
+  "tender",
+  "advertisements",
+  "trident",
+  "sensible",
+  "links",
+  "deprivation",
+  "valuation",
+  "happily",
+  "laughter",
+  "divorce",
+  "servants",
+  "electricity",
+  "unemployed",
+  "workings",
+  "worrying",
+  "accession",
+  "incapacity",
+  "welcoming",
+  "liabilities",
+  "stage",
+  "socialist"
+ ],
+ "series": {
+  "UK": [
+   {
+    "year": 1985,
+    "words": 10707527,
+    "us_marked": 111.79985817453462,
+    "uk_marked": 2024.1555309643393
+   },
+   {
+    "year": 1986,
+    "words": 10587867,
+    "us_marked": 118.44689775570471,
+    "uk_marked": 2047.239543148776
+   },
+   {
+    "year": 1987,
+    "words": 9143202,
+    "us_marked": 101.03681401767126,
+    "uk_marked": 2112.7171859486425
+   },
+   {
+    "year": 1988,
+    "words": 11136266,
+    "us_marked": 108.86054625491165,
+    "uk_marked": 2097.220019708581
+   },
+   {
+    "year": 1989,
+    "words": 11221323,
+    "us_marked": 102.48345939244419,
+    "uk_marked": 2074.6216823096524
+   },
+   {
+    "year": 1990,
+    "words": 10758020,
+    "us_marked": 113.52460768803182,
+    "uk_marked": 2060.1281648481786
+   },
+   {
+    "year": 1991,
+    "words": 9507172,
+    "us_marked": 95.46477122744808,
+    "uk_marked": 2107.188131233978
+   },
+   {
+    "year": 1992,
+    "words": 8124629,
+    "us_marked": 99.01990601663165,
+    "uk_marked": 2226.723214069221
+   },
+   {
+    "year": 1993,
+    "words": 9929678,
+    "us_marked": 103.82008359183449,
+    "uk_marked": 2222.7206159152393
+   },
+   {
+    "year": 1997,
+    "words": 8242033,
+    "us_marked": 91.2517579097293,
+    "uk_marked": 2268.493707802432
+   },
+   {
+    "year": 1998,
+    "words": 10872651,
+    "us_marked": 110.51582544128382,
+    "uk_marked": 2276.491722211998
+   },
+   {
+    "year": 1999,
+    "words": 10138437,
+    "us_marked": 97.29310346358122,
+    "uk_marked": 2074.0672354131116
+   },
+   {
+    "year": 2000,
+    "words": 9860289,
+    "us_marked": 105.86910789328792,
+    "uk_marked": 2001.9697191431203
+   },
+   {
+    "year": 2001,
+    "words": 8412584,
+    "us_marked": 109.49073435700613,
+    "uk_marked": 1986.0009718773683
+   },
+   {
+    "year": 2002,
+    "words": 8781656,
+    "us_marked": 117.93903108935262,
+    "uk_marked": 1917.9412174651343
+   },
+   {
+    "year": 2003,
+    "words": 8962170,
+    "us_marked": 119.9039964651418,
+    "uk_marked": 1985.6463334214816
+   },
+   {
+    "year": 2004,
+    "words": 9269257,
+    "us_marked": 119.94488878666327,
+    "uk_marked": 1914.4468645113627
+   },
+   {
+    "year": 2005,
+    "words": 7647501,
+    "us_marked": 103.55016625692498,
+    "uk_marked": 1965.4394291677763
+   },
+   {
+    "year": 2006,
+    "words": 8428633,
+    "us_marked": 107.22972515234677,
+    "uk_marked": 1894.0081980079094
+   },
+   {
+    "year": 2007,
+    "words": 8982331,
+    "us_marked": 106.27530871440833,
+    "uk_marked": 1902.6575618288837
+   },
+   {
+    "year": 2008,
+    "words": 9209788,
+    "us_marked": 120.75196519181549,
+    "uk_marked": 1838.967411627716
+   },
+   {
+    "year": 2009,
+    "words": 8797786,
+    "us_marked": 118.73441795469907,
+    "uk_marked": 1769.0700819501633
+   },
+   {
+    "year": 2010,
+    "words": 8780213,
+    "us_marked": 112.01322792510842,
+    "uk_marked": 1912.7895872229979
+   },
+   {
+    "year": 2011,
+    "words": 9374359,
+    "us_marked": 118.60010908479182,
+    "uk_marked": 1957.7765263736967
+   },
+   {
+    "year": 2012,
+    "words": 8619295,
+    "us_marked": 109.0228377146855,
+    "uk_marked": 1980.231561862078
+   },
+   {
+    "year": 2013,
+    "words": 9583292,
+    "us_marked": 110.70308616287598,
+    "uk_marked": 1958.0432277342693
+   },
+   {
+    "year": 2014,
+    "words": 8995966,
+    "us_marked": 111.61669575007286,
+    "uk_marked": 1939.113598250594
+   },
+   {
+    "year": 2015,
+    "words": 8462266,
+    "us_marked": 131.14690556879208,
+    "uk_marked": 2093.5763541349324
+   },
+   {
+    "year": 2016,
+    "words": 9460715,
+    "us_marked": 125.7515948847418,
+    "uk_marked": 2004.23540926875
+   },
+   {
+    "year": 2017,
+    "words": 8173112,
+    "us_marked": 130.43991077083,
+    "uk_marked": 2131.6849689567453
+   },
+   {
+    "year": 2018,
+    "words": 9807431,
+    "us_marked": 127.09750392330061,
+    "uk_marked": 2059.9890022167883
+   },
+   {
+    "year": 2019,
+    "words": 8858914,
+    "us_marked": 121.10965294391615,
+    "uk_marked": 2187.1755386721215
+   },
+   {
+    "year": 2020,
+    "words": 9604001,
+    "us_marked": 123.42772559061582,
+    "uk_marked": 2062.442517446635
+   },
+   {
+    "year": 2021,
+    "words": 9524299,
+    "us_marked": 141.081249129201,
+    "uk_marked": 1910.4923102477148
+   },
+   {
+    "year": 2022,
+    "words": 9432625,
+    "us_marked": 148.6754747485456,
+    "uk_marked": 2063.423490279747
+   },
+   {
+    "year": 2024,
+    "words": 8342954,
+    "us_marked": 142.33567630841546,
+    "uk_marked": 2000.8740309487503
+   },
+   {
+    "year": 2025,
+    "words": 10107047,
+    "us_marked": 158.1075065743733,
+    "uk_marked": 1968.8441144084916
+   },
+   {
+    "year": 2026,
+    "words": 5702758,
+    "us_marked": 161.483268271247,
+    "uk_marked": 2020.51358307682
+   }
+  ],
+  "US": [
+   {
+    "year": 1997,
+    "words": 9646125,
+    "us_marked": 2357.1019450815743,
+    "uk_marked": 146.2763544946805
+   },
+   {
+    "year": 1998,
+    "words": 8716618,
+    "us_marked": 2144.6850143025654,
+    "uk_marked": 158.04294739083437
+   },
+   {
+    "year": 1999,
+    "words": 10849770,
+    "us_marked": 2206.415435534578,
+    "uk_marked": 149.56077409935878
+   },
+   {
+    "year": 2000,
+    "words": 8442060,
+    "us_marked": 2114.8274236383063,
+    "uk_marked": 163.71596506066055
+   },
+   {
+    "year": 2001,
+    "words": 8717191,
+    "us_marked": 2200.5253756628713,
+    "uk_marked": 157.14924681586075
+   },
+   {
+    "year": 2002,
+    "words": 6937436,
+    "us_marked": 2143.817975401863,
+    "uk_marked": 156.268108275161
+   },
+   {
+    "year": 2003,
+    "words": 9912103,
+    "us_marked": 2295.2848653812416,
+    "uk_marked": 166.25129904320002
+   },
+   {
+    "year": 2004,
+    "words": 8416601,
+    "us_marked": 2056.839809799704,
+    "uk_marked": 158.92401219922388
+   },
+   {
+    "year": 2005,
+    "words": 8279750,
+    "us_marked": 2217.482411908572,
+    "uk_marked": 162.75853739545278
+   },
+   {
+    "year": 2006,
+    "words": 8450397,
+    "us_marked": 2149.425642369228,
+    "uk_marked": 161.3770335287206
+   },
+   {
+    "year": 2007,
+    "words": 8615962,
+    "us_marked": 2149.6612914495213,
+    "uk_marked": 157.64925611324654
+   },
+   {
+    "year": 2008,
+    "words": 6827978,
+    "us_marked": 2131.9781639601065,
+    "uk_marked": 155.023932414545
+   },
+   {
+    "year": 2009,
+    "words": 8125946,
+    "us_marked": 2197.8856369461478,
+    "uk_marked": 160.52284866278953
+   },
+   {
+    "year": 2010,
+    "words": 5554342,
+    "us_marked": 2089.7164776673817,
+    "uk_marked": 183.13600422876374
+   },
+   {
+    "year": 2011,
+    "words": 5196931,
+    "us_marked": 2259.8722207395094,
+    "uk_marked": 152.78247873600785
+   },
+   {
+    "year": 2012,
+    "words": 3982891,
+    "us_marked": 2257.556131965449,
+    "uk_marked": 170.2281081756945
+   },
+   {
+    "year": 2013,
+    "words": 4700103,
+    "us_marked": 2129.336314544596,
+    "uk_marked": 156.5497607180098
+   },
+   {
+    "year": 2014,
+    "words": 4469422,
+    "us_marked": 2010.8416703546902,
+    "uk_marked": 184.72187231369068
+   },
+   {
+    "year": 2015,
+    "words": 4650431,
+    "us_marked": 2128.2113421315144,
+    "uk_marked": 169.85522417169506
+   },
+   {
+    "year": 2016,
+    "words": 3378102,
+    "us_marked": 2023.4439339013445,
+    "uk_marked": 179.4794828575336
+   },
+   {
+    "year": 2017,
+    "words": 3216917,
+    "us_marked": 2259.98992202783,
+    "uk_marked": 163.16864874039337
+   },
+   {
+    "year": 2018,
+    "words": 10370904,
+    "us_marked": 2129.3611434451614,
+    "uk_marked": 179.26113287713395
+   },
+   {
+    "year": 2019,
+    "words": 11035656,
+    "us_marked": 2165.236031278974,
+    "uk_marked": 180.46050003733353
+   },
+   {
+    "year": 2020,
+    "words": 9036288,
+    "us_marked": 2222.7711201767806,
+    "uk_marked": 173.45618023684062
+   },
+   {
+    "year": 2021,
+    "words": 8438280,
+    "us_marked": 2135.2692728849956,
+    "uk_marked": 178.82791279739473
+   },
+   {
+    "year": 2022,
+    "words": 7900761,
+    "us_marked": 2125.3901997541757,
+    "uk_marked": 186.75416203578365
+   },
+   {
+    "year": 2023,
+    "words": 2827975,
+    "us_marked": 2321.4137324410576,
+    "uk_marked": 169.69739831504876
+   },
+   {
+    "year": 2024,
+    "words": 7510412,
+    "us_marked": 2137.2728952819098,
+    "uk_marked": 192.05337869613544
+   },
+   {
+    "year": 2025,
+    "words": 8986687,
+    "us_marked": 2275.3657716130538,
+    "uk_marked": 169.86237531139116
+   },
+   {
+    "year": 2026,
+    "words": 5666947,
+    "us_marked": 2368.735758425127,
+    "uk_marked": 157.56279351121512
+   }
+  ]
+ },
+ "ratios": {
+  "UK:us_marked": 1.4443960028925071,
+  "UK:uk_marked": 0.9982007568925376,
+  "US:us_marked": 1.0049356428421896,
+  "US:uk_marked": 1.0771583285318
+ }
+}

@@ -1,0 +1,7014 @@
+[
+ {
+  "id": "occ0000",
+  "string": "Small-business owner since 1998; professional musician and music teacher",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0001",
+  "string": "Business owner, Tim Hortons franchisee in Prince Rupert BC and Grande Prairie",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0002",
+  "string": "Journeyman hairstylist; owner-operator of a salon for approximately 34 years; insurance industry experience",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0003",
+  "string": "Real estate broker and office owner (26-year career); owner of construction, storage and property management businesses; rancher",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0004",
+  "string": "Teacher at Inner City High School, Edmonton; neighbourhood and community development; Canada World Youth projects",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0005",
+  "string": "Electrician",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0006",
+  "string": "Community social worker, City of Calgary; family counselling; public policy manager at a community-based charitable organization; Calgary alderman 15 years",
+  "n_members": 2,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0007",
+  "string": "Chief of staff and director of legislative affairs, Wildrose caucus; two terms as councillor for the town of Carstairs",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0008",
+  "string": "Consultant in human resource management, labour relations and dispute resolution (2015-2019); close to 20 years in transportation-industry management; sessional university instructor",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0009",
+  "string": "Accountant for 14 years; previously field operator in the oil and gas industry",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0010",
+  "string": "Associate broker in the real estate industry for close to 30 years",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0011",
+  "string": "Software developer (while pursuing a computing science degree)",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0012",
+  "string": "Insurance broker and small-business owner for almost 20 years",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0013",
+  "string": "Fifth-generation farm owner near Pine Lake; policy adviser to the federal Minister of Agriculture 2008-2015",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0014",
+  "string": "Teacher (Zimbabwe and Edmonton schools, 1990-2004); executive director, Friends of Medicare",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0015",
+  "string": "Calgary Police Service constable and patrol sergeant (12 years)",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0016",
+  "string": "Instructor, University of Calgary Faculty of Social Work (Edmonton division); program director, Edmonton Social Planning Council; vice-president, Catholic Social Services; private social work practice",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0017",
+  "string": "Lawyer, associate at a private law firm (labour, employment and human rights law)",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0018",
+  "string": "Project director in the construction industry (15 years); senior manager of planning and execution for a private energy-sector company",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0019",
+  "string": "Owner and chief consultant of a strategic consulting agency",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0020",
+  "string": "Investment manager; 15-year career in finance, investment and venture capital",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0021",
+  "string": "Caseworker, assessor and court co-ordinator with Child and Family Services; group home supervisor",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0022",
+  "string": "Staffer for Members of the Legislative Assembly and for the federal Minister of the Environment; worked in the oil sands for almost five years",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0023",
+  "string": "Senior executive for a Calgary home builder (over a decade); district sales manager for an international airline (15+ years); vice-president, Calgary Economic Development",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0024",
+  "string": "Senior consultant with a software development consulting firm; software developer and instructor",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0025",
+  "string": "Professional engineer; private business owner in the ranching and retail industries for almost 20 years",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0026",
+  "string": "Construction industry for over 37 years - foreman, superintendent, consultant and construction inspector",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0027",
+  "string": "Edmonton Public School Board trustee (two terms; board chair 2012-2014)",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0028",
+  "string": "Owned and operated a small business in Calgary for close to 30 years; worked in the telecommunications and energy industries",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0029",
+  "string": "Executive director and other roles with The Mustard Seed (Christian not-for-profit) over 25 years",
+  "n_members": 2,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0030",
+  "string": "Lawyer, partner and litigator at a large Northern Alberta law firm (11 years); previously small business owner; MP 2004-2014",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0031",
+  "string": "Non-profit sector for over 15 years; leadership roles with The Mustard Seed, Canadian Mental Health Association and Boys & Girls Clubs of Calgary",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0032",
+  "string": "Member of Parliament 1997-2016; began public life as president of the Canadian Taxpayers Federation",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0033",
+  "string": "Owner of a small outfitting business and an operational farm",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0034",
+  "string": "English as a second language instructor",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0035",
+  "string": "Lawyer for 16 years in Nigeria and Alberta; senior technical advisor, Government of Alberta",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0036",
+  "string": "Food industry national sales manager and sales/marketing manager; owner-operator of a food distribution and marketing wholesale business; Calgary alderman 2001-2010",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0037",
+  "string": "High school teacher and vice-principal; senior manager and executive director at Alberta Education; director of stakeholder relations, Premier's office",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0038",
+  "string": "Worked at the Michener Centre, Red Deer (shift charge, behavioural specialist, social academic) 1981-2006; trustee, Red Deer Catholic Regional School Division for over 11 years; family farm and hog-farm trucking division",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0039",
+  "string": "Academic program coordinator and student adviser, University of Alberta International; elected president of the Non-Academic Staff Association (union)",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0040",
+  "string": "Commercial construction; red seal journeyman carpenter and gold seal project manager",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0041",
+  "string": "Communication consulting to senior leaders in the private sector; accredited civil and commercial mediator; former business-school instructor",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0042",
+  "string": "Shipper/receiver for 26 years; shop steward, UFCW Local 401",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0043",
+  "string": "Labour lawyer; worked for labour unions in Alberta and British Columbia; ministerial advisor to British Columbia's Attorney General",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0044",
+  "string": "Ordained minister; owner of a general contracting business; journeyman carpenter",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0045",
+  "string": "Practising lawyer (labour/employment and education law); senior legislative consultant for Alberta Education",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0046",
+  "string": "Professional engineer; 25+ years in the energy sector in management positions",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0047",
+  "string": "Policy analyst with the Alberta Federation of Labour (five years)",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0048",
+  "string": "Small business owner in Airdrie",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0049",
+  "string": "Owned and operated multiple franchise businesses for close to a decade; previously marketing/communications and graphic design",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0050",
+  "string": "Executive director, Lo-Se-Ca Foundation (non-profit) for almost 15 years; instructor at MacEwan University",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0051",
+  "string": "Market development manager, Coca-Cola Refreshments Canada; digital media coordinator, Re/Max Crown Real Estate",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0052",
+  "string": "Lawyer practising aboriginal law at a national law firm",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0053",
+  "string": "Senior director of policy and regulatory affairs, Canadian Energy Pipeline Association; policy and government relations for a multinational energy transportation company (2006-2015); 13 years practising law",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0054",
+  "string": "Senior positions in the oil and gas industry",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0055",
+  "string": "Soil and groundwater contamination specialist, Alberta Environment (2008-2015)",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0056",
+  "string": "Legislative co-ordinator with the Legislative Assembly of Alberta; parliamentary assistant with the House of Commons of Canada",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0057",
+  "string": "Director of alumni marketing and communications, University of Calgary; director of communications, Saskatchewan Ministry of Education",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0058",
+  "string": "Partner with a private law firm specializing in bankruptcy and insolvency",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0059",
+  "string": "Practising lawyer in Calgary",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0060",
+  "string": "Communications adviser and writer; previously musician and studio engineer",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0061",
+  "string": "Social worker for 25 years (child welfare, mental health, community development, social policy); social work instructor",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0062",
+  "string": "Social studies teacher, 30 years as an educator",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0063",
+  "string": "Lawyer and chartered professional accountant; founder and owner of CA Tax Law",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0064",
+  "string": "Registered social worker; child protection services (2005-2015)",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0065",
+  "string": "Managing director and co-owner of a family cattle ranching operation and an oil field environmental company since 2002; 12 years in public accounting practice",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0066",
+  "string": "Technology sales and document control systems for a large Canadian technology company; previously tradesman in construction; three-term Spruce Grove city councillor",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0067",
+  "string": "Grain farmer, family farm at Dapp, Alberta",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0068",
+  "string": "Foreign qualification recognition and immigration officer, Government of Alberta; taught English as a second language in Japan",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0069",
+  "string": "Worked at a construction and gravel company",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0070",
+  "string": "Owner-operator of numerous businesses in construction, land development and heavy construction; rancher; County of Wetaskiwin councillor and deputy reeve",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0071",
+  "string": "Emergency response services for 20 years",
+  "n_members": 1,
+  "provs": [
+   "AB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0072",
+  "string": "Executive Director, Canadian Parents for French (BC & Yukon); public-policy commentator; Chief of Staff to the Premier 1996-99",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0073",
+  "string": "public servant; co-founder of a management and research consulting company",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0074",
+  "string": "ran a real estate management and consulting company; former RCMP member and security specialist",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0075",
+  "string": "Director of Policy and Communications, Smart Growth BC; legislative coordinator, CUPE; consultant",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0076",
+  "string": "Director of Child and Family Services, Carrier Sekani Family Services; school trustee; Director of Child Care Policy, Government of BC",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0077",
+  "string": "business manager, continuing education department, Prince George School District; school trustee",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0078",
+  "string": "lawyer, Abbotsford firm",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0079",
+  "string": "lawyer; operated his own law firm in Surrey for 18 years",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0080",
+  "string": "research and communications; Victoria city councillor",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0081",
+  "string": "practising lawyer in a Nanaimo law firm since 1980",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0082",
+  "string": "lawyer; Executive Director, BC Civil Liberties Association; adjunct professor of law, UBC",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0083",
+  "string": "journalist (BBC Canadian correspondent); democratic-development work for Canada and the UN; communications business owner",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0084",
+  "string": "president of the Access Group, a corporate communications firm; real estate development",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0085",
+  "string": "elected officer and vice-president, Steelworkers-IWA Canada Local 2171",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0086",
+  "string": "Canada Research Chair in climate modelling and analysis, University of Victoria",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0087",
+  "string": "owned and operated a bicycle store; taught English in Japan; school trustee",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0088",
+  "string": "ran a consulting business working with non-profits and First Nations on affordable housing; 15 years in the fashion industry; 10 years in publishing",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0089",
+  "string": "background in small business, labour, harbour management, fisheries and shellfish aquaculture; Mayor of Tofino",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0090",
+  "string": "political science instructor, Okanagan University College; berry farm owner",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0091",
+  "string": "principal of Nicholson Elementary School; teacher for more than 15 years",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0092",
+  "string": "Corporate Manager, Organizational Effectiveness and Leadership Development, forest products company; high school teacher; small business owner",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0093",
+  "string": "founder of Western Geographic Information Systems Inc.; GIS department manager, forest inventory consultants",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0094",
+  "string": "jobs in forestry, tourism, education, communications and journalism",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0095",
+  "string": "Executive Director, Sierra Club BC; three-term president, BC Government and Service Employees' Union",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0096",
+  "string": "founder and CEO of a Kamloops-based software company",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0097",
+  "string": "Director of Health and Social Development, Sechelt Nation; child-protection social worker; criminology lecturer",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0098",
+  "string": "community legal advocate in the Downtown Eastside",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0099",
+  "string": "owned and operated a small business; vice-president of finance and administration, Asia Pacific Foundation of Canada",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0100",
+  "string": "lawyer in Chilliwack; former park ranger and sawmill worker",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0101",
+  "string": "owner and operator of a local small business; Mayor of Kamloops",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0102",
+  "string": "community development work; managed food security and micro-finance non-profits",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0103",
+  "string": "home-based family therapy practice; Director of Development, SHARE Family and Community Services; counselling instructor",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0104",
+  "string": "owned a trucking company, co-owned a logging company, owns two restaurants",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0105",
+  "string": "Director of Operations for a small business; school trustee and board chair",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0106",
+  "string": "steam engineer; Early Childhood Educator, administrator and college instructor; small business person; rancher",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0107",
+  "string": "Executive Director, BC Agriculture Council; General Manager, BC Fruit Growers Association and BC Milk Producers Association",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0108",
+  "string": "lawyer and public policy researcher; legal journal editor",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0109",
+  "string": "Certified General Accountant",
+  "n_members": 2,
+  "provs": [
+   "BC",
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0110",
+  "string": "partner in a Cranbrook law firm; owned fly-in wilderness lodges",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0111",
+  "string": "mental health therapist, Fraser Health Authority; wildlife biologist; nature-tour business owner; teacher",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0112",
+  "string": "National President, Canadian Union of Public Employees; Secretary Business Manager, Hospital Employees Union",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0113",
+  "string": "political staff: executive assistant, policy adviser and chief of staff to federal and provincial politicians",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0114",
+  "string": "veterinarian; Mayor of Kamloops",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0115",
+  "string": "Executive Director, Surrey Self Employment and Entrepreneur Development Society; public and non-profit sector work",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0116",
+  "string": "started his own business in international development and technology transfer",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0117",
+  "string": "Registered Dietitian Nutritionist, 22-year career in health care; self-employed health consultant",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0118",
+  "string": "owned two H&R Block franchises, a Motorola dealership and a computer store; business instructor, Okanagan College",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0119",
+  "string": "20 years in the natural gas industry; Mayor of Dawson Creek",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0120",
+  "string": "assistant to Ministers of Forests, Finance and Environment for seven years; Saanich councillor",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0121",
+  "string": "lawyer at a national law firm; previously educated and licensed as a physician; deputy minister",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0122",
+  "string": "bus driver",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0123",
+  "string": "arts and culture industry; associate producer, UN World Urban Festival; Vancouver Parks Commissioner",
+  "n_members": 2,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0124",
+  "string": "owner-operator of Barking Dog Vineyard, a certified organic vineyard",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0125",
+  "string": "secondary school teacher; general manager of development, Marathon Realty; founder, Citycore Development Corporation; Mayor of Vancouver",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0126",
+  "string": "director of marketing and development, BC Paraplegic Association",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0127",
+  "string": "educator in the Prince Rupert School District for 27 years",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0128",
+  "string": "32-year RCMP career, retiring as Superintendent for the North District",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0129",
+  "string": "owned and operated a business in Fort Nelson; oil and gas industry",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0130",
+  "string": "teacher; held several positions with the teachers' union",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0131",
+  "string": "Executive Director, Quesnel and District Chamber of Commerce",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0132",
+  "string": "sawmill worker at Youbou Sawmill; president of IWA Local 1-80 / USW Local 1-1937",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0133",
+  "string": "economist; Chief Economist and Senior Vice President, Royal Bank of Canada; professor, Harvard Business School; professional engineer",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0134",
+  "string": "owned and operated several small businesses",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0135",
+  "string": "20 years with the Insurance Corporation of BC, latterly road safety regional manager",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0136",
+  "string": "financial services; 20-year management career with a major Canadian bank; financial consultant",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0137",
+  "string": "Community Schools Coordinator for a non-profit society; 20 years in the hotel/tourism private sector",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0138",
+  "string": "Crown counsel; math teacher",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0139",
+  "string": "Executive Director, Nakusp Community Services Society",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0140",
+  "string": "teacher for 28 years; President, BC Teachers' Federation",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0141",
+  "string": "transit operator (bus driver); coordinator, Canadian Auto Workers Local 111",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0142",
+  "string": "self-employed business owner and realtor; Mayor of 100 Mile House",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0143",
+  "string": "small business owner; Central Saanich councillor",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0144",
+  "string": "founder of Quails' Gate estate winery; chair of the BC Grape Marketing Board",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0145",
+  "string": "installer-repairman with BC Tel for 17 years; Mayor of Dawson Creek",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0146",
+  "string": "lawyer; partner at Davidson & Company",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0147",
+  "string": "business and property development; Mayor of Chilliwack",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0148",
+  "string": "CEO, Coast Capital Savings; senior executive at HSBC; more than 25 years in financial management",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0149",
+  "string": "partner and senior executive, DDB Canada marketing and communications; radio and television",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0150",
+  "string": "co-founder of Happy Planet Juice; organic farmer",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0151",
+  "string": "President and CEO of Twin Anchors Marine / TA Structures for 24 years",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0152",
+  "string": "bank management, real estate and property development; Mayor of Mission",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0153",
+  "string": "22 years in the Canadian brewing industry in senior management; winery partner; certified management accountant",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0154",
+  "string": "lawyer for 14 years, then judge of the County Court, Supreme Court and Court of Appeal of British Columbia",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0155",
+  "string": "president of the Banking Solutions Group, Open Solutions Canada; president and CEO, The Electric Mail Company",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0156",
+  "string": "social worker specialising in alcohol and drug rehabilitation; small business owner; Mayor of Saanich",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0157",
+  "string": "teacher in the Victoria School District and at Shawnigan",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0158",
+  "string": "Re/Max manager (real estate); Nanaimo city councillor",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0159",
+  "string": "broadcast journalist (W5, Canada AM, Pacific Report); Chair of CBC/Radio-Canada",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0160",
+  "string": "high school teacher; President, BC Teachers' Federation; Member of Parliament",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0161",
+  "string": "RCMP Security Service civilian member and Special Constable; federal government official; Band Manager, Gitanmaax Indian Reserve",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0162",
+  "string": "criminologist and faculty member, School of Criminology, University of the Fraser Valley",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0163",
+  "string": "Surrey businessperson; Assistant Publisher of the Indo-Canadian Times; real estate agent",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0164",
+  "string": "paramedic; owner of North Arm Farm; Mayor of Pemberton",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0165",
+  "string": "instructor, School of Business, University of the Fraser Valley; syndicated newspaper columnist",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0166",
+  "string": "language therapist, teacher and school administrator, Richmond School District",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0167",
+  "string": "full-time teacher with School District 60; Canadian Armed Forces reservist",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0168",
+  "string": "Associate Deputy Representative, BC Office of the Representative for Children and Youth; National Aboriginal Project Coordinator, Save the Children Canada",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0169",
+  "string": "teacher at GP Vanier Secondary School for 14 years",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0170",
+  "string": "hand logging, beachcombing and construction; taxi boat operator; Chief Councillor of the Haisla Nation",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0171",
+  "string": "teacher; Executive Director, Surrey Aboriginal Society",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0172",
+  "string": "Royal Canadian Air Force; 25 years in small business; manager of CHNL radio station; business consultant",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0173",
+  "string": "co-founder of the polling firm McIntyre & Mustel Research Associates",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0174",
+  "string": "founding president, Canadian Farmworkers' Union; director, Hospital Employees Union",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0175",
+  "string": "president and CEO, Mainstream Broadcasting Corporation; news director, Channel M Television; communications advisor to BC Cabinet Policy and Communications Secretariat",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0176",
+  "string": "financial advisor; Cranbrook city councillor",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0177",
+  "string": "worked with the T. Buck Suzuki Environmental Foundation and northern community groups; Prince Rupert city councillor",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0178",
+  "string": "small business owner; international sales manager, Columbia Computing Services; founder and executive director, Vancouver Friends for Life Society",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0179",
+  "string": "high school teacher, Calgary Board of Education; CEO, Calgary Education Partnership Foundation; campus manager, College of the Rockies",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0180",
+  "string": "president of a telecommunications company; retail chain national marketing manager; convenience store chain owner",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0181",
+  "string": "consulting economist for over 25 years",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0182",
+  "string": "over 30 years running and owning a dairy farm and farm auction business",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0183",
+  "string": "child protection social worker; national development manager for children's services, NSPCC; Executive Director, Pacific Centre Family Services Association",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0184",
+  "string": "family retail business; Mayor of Penticton",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0185",
+  "string": "worked in provincial and federal government constituency offices for over 10 years; community organizer with ACORN",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0186",
+  "string": "RCMP regular member 1961-1989; private investigator; provincial coroner",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0187",
+  "string": "programmer analyst at TRIUMF, Canada's national particle research facility",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0188",
+  "string": "founder and President, Suncor Development Corporation; Executive Vice-President, Progressive Construction Ltd.",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0189",
+  "string": "founder, Global Civic Policy Society and Sam Sullivan Disability Foundation; Mayor of Vancouver",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0190",
+  "string": "three decades in the BC financial services industry; business consultant",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0191",
+  "string": "seven years in banking; Director of Stakeholder Relations, New Democrat Caucus; Olympic field hockey athlete",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0192",
+  "string": "music teacher in the Burnaby school system",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0193",
+  "string": "operated a dairy farm in Abbotsford",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0194",
+  "string": "healthcare educator; taught at BCIT, Vancouver Community College and West Coast College of Massage Therapy",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0195",
+  "string": "facilitator, BC Healthy Communities Interior Region; coordinator for Community Futures; partner in a gallery business; school board chair",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0196",
+  "string": "project manager; professional engineer; managed terminal expansion projects at Vancouver International Airport",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0197",
+  "string": "counsellor, probation officer and Regional Director for Corrections",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0198",
+  "string": "family physician for 23 years; president of the BC Medical Association",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0199",
+  "string": "owned three businesses in Oliver; Mayor of Oliver",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0200",
+  "string": "motivational speaker and community advocate for persons with disabilities; Paralympic champion",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0201",
+  "string": "long-time teacher in the Maple Ridge School District",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0202",
+  "string": "environmental researcher, educator and project manager; Courtenay councillor",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0203",
+  "string": "RCMP Research Chair and Director, Centre for Public Safety and Criminal Justice Research, University of the Fraser Valley",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0204",
+  "string": "dentist; established Pitt Meadows' first dental practice",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0205",
+  "string": "flight attendant; school board trustee",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0206",
+  "string": "owns five A&W restaurants; commercial insurance agent and realtor; financial director of an international company",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0207",
+  "string": "drug and alcohol counsellor; support worker for women facing domestic violence",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0208",
+  "string": "RCMP officer, commissioned to Inspector, Officer in Charge of Operations",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0209",
+  "string": "more than 30 years with the Public Service Alliance of Canada",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0210",
+  "string": "Managing Director - Corporate and CEO, Maple Leaf Studios Ltd.; political staff in Ottawa",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0211",
+  "string": "president and owner of Tora Design Group for 21 years; president and general manager, North Vancouver Chamber of Commerce",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0212",
+  "string": "journalist; Global Television Asia bureau chief; Director of Communications, BC LNG Alliance",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0213",
+  "string": "25 years in the oil and gas industry; president of Alpha Controls Ltd. (construction and electrical services)",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0214",
+  "string": "secondary teacher; owned and operated a small manufacturing business",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0215",
+  "string": "founded a farm fertilizer business serving the local farm community",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0216",
+  "string": "registered forest technician; Mayor of the Village of Lumby",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0217",
+  "string": "worked in hi-tech industries: film animation and mobile app development",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0218",
+  "string": "real estate (co-chair, Real Estate Institute of BC Vancouver chapter); President of Tourism Richmond",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0219",
+  "string": "Executive Director, Autism Support Network; parent advocate",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0220",
+  "string": "worked for Energy Probe and the Canadian Institute for Environmental Law and Policy; Islands Trust Council chair; Member of Parliament",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0221",
+  "string": "police officer, rising to Superintendent in the Vancouver Police Department; Chief of the West Vancouver Police Department",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0222",
+  "string": "president and CEO, BC Cancer Foundation",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0223",
+  "string": "registered nurse, then lawyer with an interest in medical-legal issues",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0224",
+  "string": "radiologist and nuclear medicine physician; Head of Nuclear Medicine at St. Paul's, Surrey Memorial and Abbotsford hospitals",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0225",
+  "string": "real estate and construction industries; general insurance industry for ten years",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0226",
+  "string": "30-year career with BC Hydro in power generation; professional engineer",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0227",
+  "string": "Account Manager, Vancity Community Business banking team; Executive Director, South Granville Seniors Centre",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0228",
+  "string": "realtor and President of Sun Country Realty Ltd.; orchardist",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0229",
+  "string": "owns and operates Desert Edge Nursery, a retail/wholesale vegetable and nursery operation; Mayor of Osoyoos",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0230",
+  "string": "career RCMP officer for over 38 years, District Commander in Surrey",
+  "n_members": 1,
+  "provs": [
+   "BC"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0231",
+  "string": "high school teacher in rural Manitoba",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0232",
+  "string": "pediatrician, Winnipeg Children's Hospital; head of Pediatric Hematology/Oncology; taught at the University of Manitoba",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0233",
+  "string": "Manitoba Department of Culture, Heritage and Citizenship; executive assistant to MLAs; advisor to an MP",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0234",
+  "string": "associate professor, Faculty of Social Work, University of Manitoba",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0235",
+  "string": "store manager and air traffic control assistant; three years in the armed forces",
+  "n_members": 1,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0236",
+  "string": "corrections officer; then president of the Manitoba Government Employees' Association",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0237",
+  "string": "lawyer (partner, Thompson Dorfman Sweatman; family law)",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0238",
+  "string": "lawyer (Clifford Chance LLP, London); party researcher and principal secretary to the Premier",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0239",
+  "string": "author, musician, broadcaster (CBC) and university administrator (director of Indigenous Inclusion, University of Winnipeg)",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0240",
+  "string": "worked in the agricultural and environmental sectors; insurance broker",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0241",
+  "string": "owner-operator of Maguire Farms Limited, Elgin, 1975-2001",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0242",
+  "string": "nurse for 23 years",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0243",
+  "string": "pharmaceutical sales representative; part owner of Tiber River Naturals",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0244",
+  "string": "constituency assistant to Premier Gary Doer and to MP Bill Blaikie",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0245",
+  "string": "small business owner (Christmas Traditions, Espresso Junction Inc., Gingerbread World Inc.)",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0246",
+  "string": "special assistant in the Office of the Prime Minister; assistant to the federal Agriculture Minister",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0247",
+  "string": "registered laboratory technologist; fifteen years in health care",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0248",
+  "string": "head operator, Flin Flon mill; active in United Steelworkers Local 7106",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0249",
+  "string": "steelworker at INCO, Thompson (United Steelworkers of America); economics lecturer for Inter Universities North",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0250",
+  "string": "teacher and school administrator for fifteen years; vice-principal, Victor Mager School",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0251",
+  "string": "teacher; earlier professional ice hockey player",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0252",
+  "string": "constituency assistant to an MLA; community development officer in the Souris region",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0253",
+  "string": "lawyer (environmental law); earlier Canadian and Manitoba Human Rights Commissions and Deputy Clerk of the Manitoba Legislature",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0254",
+  "string": "lawyer",
+  "n_members": 3,
+  "provs": [
+   "MB",
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0255",
+  "string": "administrator of the Interlake School Division for eight years; owner of Prairie Farm Ranch Supply",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0256",
+  "string": "farmer; vice-president and general manager, Faurschou Farms Limited",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0257",
+  "string": "teacher and farmer",
+  "n_members": 3,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0258",
+  "string": "teacher; principal at Rorketon Collegiate",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0259",
+  "string": "teacher; coordinator of the Frontier School Division at the University of Winnipeg",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0260",
+  "string": "twenty years on the council of the Rural Municipality of Langford; president, Association of Manitoba Municipalities",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0261",
+  "string": "owner of Maloway & Eliason Insurance & Travel Centre; earlier liquor inspector, Manitoba Liquor Control Commission",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0262",
+  "string": "teacher",
+  "n_members": 4,
+  "provs": [
+   "MB",
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0263",
+  "string": "farmer; founding member and director, Manitoba Cattle Producers Association",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0264",
+  "string": "editor and publisher of The Philippine Times",
+  "n_members": 1,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0265",
+  "string": "registered nurse",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0266",
+  "string": "public school music teacher; also owner-operator of a grain farm and cattle feedlot",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0267",
+  "string": "executive director, Reaching E-Quality Employment Services; provincial director, Canadian Federation of Independent Business",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0268",
+  "string": "practising lawyer; co-owner of an insurance agency and automobile dealership",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0269",
+  "string": "librarian and researcher, Canada/Manitoba Business Service Centre",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0270",
+  "string": "geological engineer",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0271",
+  "string": "policy advisor on health care to Premier Gary Doer; executive director, Women's Health Clinic",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0272",
+  "string": "United Church minister",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0273",
+  "string": "instructor in social work and native studies, University of Manitoba; taught at Brandon University",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0274",
+  "string": "instructor in government-business relations, University of Winnipeg; political advisor",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0275",
+  "string": "co-owner of the family business Aberdeen Lodge",
+  "n_members": 3,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0276",
+  "string": "worked for University College of the North; band councillor, Opaskwayak Cree Nation",
+  "n_members": 1,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0277",
+  "string": "high school English teacher; Frontier Collegiate Institute 1972-1994",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0278",
+  "string": "Community Services Department, City of Winnipeg",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0279",
+  "string": "teacher at Maples Collegiate; assistant director, WayFinders Program, Seven Oaks School Division",
+  "n_members": 1,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0280",
+  "string": "executive director and CEO, Social Planning Council of Winnipeg; ordained Anglican priest; later taught at the University of Manitoba",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0281",
+  "string": "Manitoba Motion Picture Industries Association; consultant to small business and non-profit organizations",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0282",
+  "string": "founder of Optimum Ergonomics Ltd and Optimum Technology Corporation",
+  "n_members": 1,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0283",
+  "string": "insurance broker and financial planner",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0284",
+  "string": "producer and broadcaster, CBC; Native Communications Inc.; earlier addiction counsellor and radio disc jockey",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0285",
+  "string": "steelworker and small businessman",
+  "n_members": 3,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0286",
+  "string": "Canadian National railway worker; shop steward and executive board member, International Brotherhood of Electrical Workers",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0287",
+  "string": "television weather anchor and consumer reporter (Citytv, Global, CTV Winnipeg)",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0288",
+  "string": "supply teacher; manager of the Brandon Career Symposium",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0289",
+  "string": "social worker for twenty years, including twelve years in psychogeriatrics at the Deer Lodge Centre",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0290",
+  "string": "head of the Winnipeg Teachers Association",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0291",
+  "string": "United Church minister; Minister/Director of North End Community Ministry",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0292",
+  "string": "farmer; school board chair and trustee, Beautiful Plains School Division",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0293",
+  "string": "hotelier and veterinarian",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0294",
+  "string": "teacher; principal of The King's School, Winnipeg",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0295",
+  "string": "farmer; also worked for West Park Motors, Altona",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0296",
+  "string": "vice-president then CEO and president of Domo Gasoline Corporation; earlier media director, Canadian Opera Company",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0297",
+  "string": "university professor (Saskatchewan, Manitoba, Winnipeg)",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0298",
+  "string": "small business owner (two businesses over 16 years); earlier Royal Canadian Navy and federal civil servant",
+  "n_members": 1,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0299",
+  "string": "chief of the Opaskwayak Cree Nation; political advisor to the Assembly of Manitoba Chiefs",
+  "n_members": 1,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0300",
+  "string": "farmer (200 cow/calf operation, 2,560 acres) for 26 years",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0301",
+  "string": "marketing and management instructor for Imperial Oil; automobile and tourism industries; owned a restaurant and service station",
+  "n_members": 2,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0302",
+  "string": "registered psychiatric nurse specialising in adult and youth mental health and addictions",
+  "n_members": 1,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0303",
+  "string": "firefighter for twenty years",
+  "n_members": 1,
+  "provs": [
+   "MB"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0304",
+  "string": "high school teacher and principal; Director, Office of Social Action; Executive Director, Women in Resource Development Committee",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0305",
+  "string": "journalist and news reporter; owner-operator of small businesses in transportation and tourism",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0306",
+  "string": "lawyer (practised at Port aux Basques 1980-1999)",
+  "n_members": 2,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0307",
+  "string": "career in occupational health and safety",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0308",
+  "string": "senior manager, provincial government (26 years); independent business owner",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0309",
+  "string": "police officer, Royal Newfoundland Constabulary",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0310",
+  "string": "lawyer (called to the NL bar 2005)",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0311",
+  "string": "documentary filmmaker; women's advocacy worker",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0312",
+  "string": "11 years with the Workplace Health, Safety and Compensation Commission; chief of staff to the Leader of the Opposition; consultant",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0313",
+  "string": "IKON Office Solutions (27 years)",
+  "n_members": 2,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0314",
+  "string": "CEO, Big Brothers Big Sisters of Eastern Newfoundland; management and marketing consultant; business owner",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0315",
+  "string": "executive assistant to MHAs",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0316",
+  "string": "mental health counsellor (20 years); executive assistant to ministers",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0317",
+  "string": "consultant (TMP Consulting Inc.); Executive Director, Coast of Bays Corporation regional economic development board",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0318",
+  "string": "15-year career in health administration; financial services management",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0319",
+  "string": "criminal lawyer",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0320",
+  "string": "client services officer, Community Business Development Corporation Nortip",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0321",
+  "string": "CEO, Bennett Group of Companies",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0322",
+  "string": "business owner and CEO (biotechnology, fisheries, resources); Member of Parliament",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0323",
+  "string": "career and employment counsellor (23 years)",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0324",
+  "string": "lawyer, senior partner in a Corner Brook law firm",
+  "n_members": 2,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0325",
+  "string": "professor, Faculty of Education, Memorial University; senior education policy advisor, Ontario Public Service",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0326",
+  "string": "Statistics Canada (1986-1990); Small Business Enterprise; Penney Group of Companies",
+  "n_members": 2,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0327",
+  "string": "general surgeon",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0328",
+  "string": "parole officer, Correctional Service of Canada",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0329",
+  "string": "high school teacher and vice-principal (before entering politics in 1975); later lawyer",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0330",
+  "string": "pharmacist; owner, O'Brien's Pharmacy and Medical Centre",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0331",
+  "string": "30-year career with the Iron Ore Company of Canada; mayor of Labrador City",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0332",
+  "string": "career in education and business; Mayor",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0333",
+  "string": "executive assistant to the Leader of the Opposition; entrepreneur in family business",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0334",
+  "string": "instructor, faculty supervisor, principal and operator, Keyin College (20 years)",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0335",
+  "string": "teacher and school principal (27 years)",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0336",
+  "string": "worked in community development, communications, fisheries and social work",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0337",
+  "string": "aide to a Member of Parliament; political assistant, Official Opposition",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0338",
+  "string": "employment counsellor and housing/homelessness caseworker, Community Education Network",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0339",
+  "string": "neonatal nurse; executive director, NL Association for Community Living",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0340",
+  "string": "executive assistant to a Member of Parliament (1997-2002); family business",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0341",
+  "string": "school principal, teacher and superintendent of education; then lawyer (1996-2007)",
+  "n_members": 2,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0342",
+  "string": "principal scientist, Stantec (resource development, land use, wildlife ecology)",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0343",
+  "string": "fisherman and boat skipper; staff member, Fish, Food and Allied Workers union",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0344",
+  "string": "draftsman, Iron Ore Company of Canada; sales/accounting, Morgan Printing; divisional supervisor, Brookfield Dairy",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0345",
+  "string": "social worker; guidance counsellor and school principal",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0346",
+  "string": "pharmacist",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0347",
+  "string": "provincial public service (26 years)",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0348",
+  "string": "reporter and producer (CBC, Rogers TV, NTV)",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0349",
+  "string": "fisherman and boat captain; weather observer; environmental observer, Labrador Inuit Association; hotel and tourism owner",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0350",
+  "string": "executive director and program coordinator, Church Lads' Brigade; city councillor",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0351",
+  "string": "school principal",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0352",
+  "string": "25 years with Newfoundland and Labrador Hydro, including senior management",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0353",
+  "string": "co-founder, Consumer Group for Fair Gas Prices",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0354",
+  "string": "construction company owner; funeral director and funeral home owner",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0355",
+  "string": "teacher (28 years)",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0356",
+  "string": "Royal Newfoundland Constabulary officer; manager of family hardware business",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0357",
+  "string": "consultant; employed with a regulatory agency working with electric and water utilities",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0358",
+  "string": "labourer and fish plant worker; teacher (2 years); payroll clerk; town clerk/manager (15 years); resource manager, Beothic Fish Processors (14 years)",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0359",
+  "string": "Auditor General of Newfoundland and Labrador; deputy minister; chartered accountant",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0360",
+  "string": "teacher and school principal (22 years)",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0361",
+  "string": "town clerk/manager, Greenspond (30 years)",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0362",
+  "string": "fish plant worker; FFAW union representative and organizer; harbour supervisor/administrator",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0363",
+  "string": "teacher; constituency assistant and executive assistant to ministers",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0364",
+  "string": "owner-operator, Hunter's Electrical Ltd. (journeyman electrician)",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0365",
+  "string": "travel consultant (20+ years); mayor",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0366",
+  "string": "businessman; owned and operated six businesses in Labrador West",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0367",
+  "string": "fishing enterprise owner-operator",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0368",
+  "string": "sales and marketing, Molson Canada (25 years)",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0369",
+  "string": "experience in media, economic development and sales; political assistant to an MHA",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0370",
+  "string": "special assistant to an MP; community service officer/coordinator in economic development",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0371",
+  "string": "employed at College of the North Atlantic (29 years); mayor of Paradise",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0372",
+  "string": "teacher and school principal",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0373",
+  "string": "teacher and school administrator (30 years)",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0374",
+  "string": "director of recreation and tourism, Town of Lewisporte (25 years)",
+  "n_members": 2,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0375",
+  "string": "insurance adjuster (32 years)",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0376",
+  "string": "teacher, vice-principal and principal (31-year education career)",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0377",
+  "string": "teacher (6 years); entrepreneur (gift shop, property company, inn)",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0378",
+  "string": "26 years in the public health care sector; NAPE local president",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0379",
+  "string": "teacher, principal and school board supervisor (18 years); business (13 years)",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0380",
+  "string": "provincial public service (recreation and sport, historic sites, youth services) from 1987",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0381",
+  "string": "co-owner, Plum Point Motel",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0382",
+  "string": "senior business analyst, Iron Ore Company of Canada",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0383",
+  "string": "land surveyor; president of survey companies",
+  "n_members": 1,
+  "provs": [
+   "NL"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0384",
+  "string": "Radio Broadcaster; Salesperson",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0385",
+  "string": "Management Consultant; Municipal Politician",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0386",
+  "string": "Lawyer",
+  "n_members": 40,
+  "provs": [
+   "NS",
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0387",
+  "string": "School Administrator; Teacher",
+  "n_members": 4,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0388",
+  "string": "Paramedic",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0389",
+  "string": "Professor; Social Worker",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0390",
+  "string": "Chartered Accountant",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0391",
+  "string": "Chartered Accountant; Corporate Executive",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0392",
+  "string": "Actor; Writer",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0393",
+  "string": "Businessman; Manufacturing Company Owner; Municipal Politician",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0394",
+  "string": "Farmer; Small Business Owner",
+  "n_members": 3,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0395",
+  "string": "Executive Assistant; Investment Advisor",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0396",
+  "string": "Small Business Owner",
+  "n_members": 5,
+  "provs": [
+   "NS",
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0397",
+  "string": "Consultant; Professor",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0398",
+  "string": "Municipal Politician; Paramedic",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0399",
+  "string": "School Board Administrator; School Principal; Teacher",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0400",
+  "string": "Businessman; Municipal Politician",
+  "n_members": 4,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0401",
+  "string": "Community Relations Manager; Safety Officer",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0402",
+  "string": "Fisherman; Municipal Politician",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0403",
+  "string": "Businessman",
+  "n_members": 16,
+  "provs": [
+   "NS",
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0404",
+  "string": "Executive Director; Journalist",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0405",
+  "string": "Producer; Television Director; Writer",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0406",
+  "string": "Physiotherapist",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0407",
+  "string": "Author; Journalist; Municipal Politician; Small Business Operator",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0408",
+  "string": "Police Officer",
+  "n_members": 5,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0409",
+  "string": "Lawyer; Researcher",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0410",
+  "string": "Business Marketing Professional; Municipal Worker",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0411",
+  "string": "Lawyer; Dartmouth City Councillor",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0412",
+  "string": "Municipal Administrator; Municipal Poliitician; Naval Officer",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0413",
+  "string": "School Administrator; School Principal; School Vice-principal; Teacher",
+  "n_members": 3,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0414",
+  "string": "Businesswoman; Lawyer",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0415",
+  "string": "Business Development Director; Executive Assistant",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0416",
+  "string": "Actor; Artisitic Director",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0417",
+  "string": "Physiotherapist; Small Business Owner",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0418",
+  "string": "Non-government Organization (ngo) Director; Policy Analyst",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0419",
+  "string": "Public Servant",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0420",
+  "string": "Author; Clergyman; Lecturer; Magazine Editor",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0421",
+  "string": "Businessman; Fisherman",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0422",
+  "string": "Businesswoman; Small Business Operator; Small Business Owner; Volunteer Worker",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0423",
+  "string": "Fire Chief; School Board Trustee; Small Business Owner",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0424",
+  "string": "Minister",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0425",
+  "string": "Early Childhood Educator; Volunteer Worker",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0426",
+  "string": "Teacher",
+  "n_members": 27,
+  "provs": [
+   "NS",
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0427",
+  "string": "Farmer; Teacher",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0428",
+  "string": "Law Professor; Lawyer; Municipal Politician",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0429",
+  "string": "Small Business Owner; Registered Nurse",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0430",
+  "string": "Worked at the Nova Scotia Health Authority and the Canadian Union of Public Employees",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0431",
+  "string": "Business Manager; Project Manager",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0432",
+  "string": "Businessman; Municipal Politician; Real Estate Salesperson; Teacher",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0433",
+  "string": "Community Developer; Teacher",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0434",
+  "string": "Businessman; Consultant; Educator; Hockey Scout",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0435",
+  "string": "Educator; Teacher",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0436",
+  "string": "Sales Representative; Technician",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0437",
+  "string": "Municipal Politician; Public Relations; School Board Trustee",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0438",
+  "string": "Executive Assistant",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0439",
+  "string": "Municipal Politician",
+  "n_members": 3,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0440",
+  "string": "Municipal Politician; School Board Trustee",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0441",
+  "string": "Clergyman",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0442",
+  "string": "Author; Editor; Researcher",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0443",
+  "string": "Professor",
+  "n_members": 3,
+  "provs": [
+   "NS",
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0444",
+  "string": "Camera Operator",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0445",
+  "string": "School Principal; School Vice-principal; Teacher",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0446",
+  "string": "Executive Director Of Youth Organization; Steel Worker",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0447",
+  "string": "Counsellor; Teacher",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0448",
+  "string": "Architect; Municipal Politician",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0449",
+  "string": "Consultant; Farmer",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0450",
+  "string": "Ceramicist; Farmer; Small Business Owner; Woodlot Owner",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0451",
+  "string": "Small business owner",
+  "n_members": 4,
+  "provs": [
+   "NS",
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0452",
+  "string": "Businessman; Small Business Operator; Small Business Owner",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0453",
+  "string": "Consultant in the geo-information technologies sector; Executive Director of GeoAlliance Canada",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0454",
+  "string": "Municipal Politician; Preschool Operator",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0455",
+  "string": "Real Estate Agent",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0456",
+  "string": "Lawyer and small business owner",
+  "n_members": 3,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0457",
+  "string": "Administrative Assistant; Small Business Owner",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0458",
+  "string": "Executive Director",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0459",
+  "string": "Student Leader; Volunteer Worker",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0460",
+  "string": "Actor; Counsellor; Educator; Sales Representative",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0461",
+  "string": "Teacher; Woodlot Owner",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0462",
+  "string": "Interpreter",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0463",
+  "string": "Insurance Broker",
+  "n_members": 2,
+  "provs": [
+   "NS",
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0464",
+  "string": "Public Servant; Volunteer",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0465",
+  "string": "Airline Worker",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0466",
+  "string": "Municipal Politician; Small Business Owner",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0467",
+  "string": "Businessman; Machine Operator; Municipal Politician",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0468",
+  "string": "Fire Chief; Industrial Electrician; Production Manager",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0469",
+  "string": "Health Care Manager; Small Business Owner; Social Worker",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0470",
+  "string": "Outreach Assistant",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0471",
+  "string": "Musician; Teacher",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0472",
+  "string": "Advanced Care Paramedic",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0473",
+  "string": "Businessman; Small Business Owner",
+  "n_members": 2,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0474",
+  "string": "Potter; Small Business Operator; Small Business Owner",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0475",
+  "string": "Lawyer with Nova Scotia Legal Aid; Senior Counsel and managing lawyer",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0476",
+  "string": "Clergyman; Technician",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0477",
+  "string": "Fisherman; Registered Nurse",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0478",
+  "string": "Farmer; Real Estate; Small Woodlot Owner",
+  "n_members": 1,
+  "provs": [
+   "NS"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0479",
+  "string": "Labour union organizer, Ontario Federation of Labour",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0480",
+  "string": "Physiotherapist, health care administrator",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0481",
+  "string": "Community organizer; literacy and legal-aid advocacy",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0482",
+  "string": "Civil servant",
+  "n_members": 5,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0483",
+  "string": "Hardware store owner; real estate sales representative",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0484",
+  "string": "Research coordinator",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0485",
+  "string": "United Church of Canada minister",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0486",
+  "string": "Health-care executive",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0487",
+  "string": "Airline pilot",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0488",
+  "string": "Political aide",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0489",
+  "string": "Advertising agency founder",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0490",
+  "string": "Business owner",
+  "n_members": 4,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0491",
+  "string": "Mechanic, Lobbyist, Local politician",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0492",
+  "string": "Business manager",
+  "n_members": 3,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0493",
+  "string": "Farmer; business administrator; agriculture teacher",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0494",
+  "string": "Policy analyst",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0495",
+  "string": "Journalist",
+  "n_members": 3,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0496",
+  "string": "IT consultant",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0497",
+  "string": "Dairy farmer; president, Temiskaming Federation of Agriculture",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0498",
+  "string": "Registered nurse",
+  "n_members": 3,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0499",
+  "string": "Politician, radio broadcaster",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0500",
+  "string": "Unifor local president",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0501",
+  "string": "Optometrist",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0502",
+  "string": "Executive assistant to the PC party leader",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0503",
+  "string": "General manager, Ontario Dairy Goat Cooperative; rural community advisor, OMAFRA",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0504",
+  "string": "Insurance broker",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0505",
+  "string": "Executive assistant to MPPs",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0506",
+  "string": "Event planner",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0507",
+  "string": "Political assistant",
+  "n_members": 3,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0508",
+  "string": "Licensed construction electrician",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0509",
+  "string": "Trade unionist",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0510",
+  "string": "Pharmacist",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0511",
+  "string": "Teacher, journalist",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0512",
+  "string": "Constituency assistant",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0513",
+  "string": "Engineer, Bell Canada",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0514",
+  "string": "Independent contractor",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0515",
+  "string": "Physician, politician, humanitarian",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0516",
+  "string": "Property manager",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0517",
+  "string": "Politician, banker, small business owner",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0518",
+  "string": "Waitress; administrative assistant",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0519",
+  "string": "Criminal defence lawyer",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0520",
+  "string": "Weekly newspaper owner; production management",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0521",
+  "string": "Broadcaster, entrepreneur",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0522",
+  "string": "Administrative assistant",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0523",
+  "string": "Consultant",
+  "n_members": 4,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0524",
+  "string": "Sales and marketing consultant",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0525",
+  "string": "Nurse",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0526",
+  "string": "Political staff (executive assistant to municipal, provincial and federal members)",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0527",
+  "string": "Political staff",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0528",
+  "string": "Provincial ministries and private sector",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0529",
+  "string": "Management consultant Politician",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0530",
+  "string": "Sales, Honeywell",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0531",
+  "string": "Community health and human-rights advocacy",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0532",
+  "string": "Lawyer, broadcaster, businessman",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0533",
+  "string": "Union administrator",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0534",
+  "string": "Physician, politician",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0535",
+  "string": "Critical care nurse",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0536",
+  "string": "Family retail business; chamber of commerce president",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0537",
+  "string": "Non-profit executive (Goodwill Industries, CivicAction)",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0538",
+  "string": "Educator, businessman",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0539",
+  "string": "Legislative assistant and policy analyst",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0540",
+  "string": "Journalist, university administration",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0541",
+  "string": "Policy researcher; research and policy director, ACTRA",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0542",
+  "string": "Insurance business",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0543",
+  "string": "Office manager and chief of staff to federal MPs",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0544",
+  "string": "Teacher, Algoma District School Board",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0545",
+  "string": "Businessman; journalist",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0546",
+  "string": "Human resources executive",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0547",
+  "string": "Director of the Hamilton Port Authority Director of Corporate and Social Responsibility First Ontario Credit Union",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0548",
+  "string": "Commercial real estate agent",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0549",
+  "string": "Television journalist",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0550",
+  "string": "Financial planner",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0551",
+  "string": "Insurance adjudicator",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0552",
+  "string": "Management consultant",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0553",
+  "string": "Social worker; businesswoman",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0554",
+  "string": "Retail store owner",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0555",
+  "string": "Physician",
+  "n_members": 3,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0556",
+  "string": "Non-profit director",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0557",
+  "string": "Executive assistant to Liberal politicians; publicist",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0558",
+  "string": "Engineering firm CEO",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0559",
+  "string": "Director of media relations, Prime Minister's Office",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0560",
+  "string": "lawyer, executive",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0561",
+  "string": "Chartered engineer and physicist",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0562",
+  "string": "Architect / urban planner",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0563",
+  "string": "Businessowner",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0564",
+  "string": "Manager of Product Development",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0565",
+  "string": "Co-founder, organic food businesses",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0566",
+  "string": "Registered Nurse, Lawyer",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0567",
+  "string": "Marketing director",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0568",
+  "string": "Co-owner, Deco Labels and Tags",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0569",
+  "string": "Catholic school board trustee",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0570",
+  "string": "Municipal councillor",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0571",
+  "string": "Elementary school teacher; ski instructor",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0572",
+  "string": "Rotary Club general manager; executive director, Kidney Foundation",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0573",
+  "string": "International trade lawyer",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0574",
+  "string": "Corporate banking",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0575",
+  "string": "Communications consultant",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0576",
+  "string": "Executive chef",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0577",
+  "string": "Smelter Worker Safety Representative, Flash Furnace Operator, Trade unionist, university professor",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0578",
+  "string": "Real estate broker",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0579",
+  "string": "Real estate agent",
+  "n_members": 4,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0580",
+  "string": "Educator",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0581",
+  "string": "Mediator, Workplace Safety and Insurance Appeals Tribunal",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0582",
+  "string": "Weather presenter",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0583",
+  "string": "Farmer",
+  "n_members": 5,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0584",
+  "string": "Author, researcher and professor",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0585",
+  "string": "Nurse and lawyer in remote First Nations communities",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0586",
+  "string": "Executive director, Niagara Folk Arts; steelworkers local president",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0587",
+  "string": "Farmer, civil engineer",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0588",
+  "string": "Political Staffer",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0589",
+  "string": "Teacher, Librarian, Politician",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0590",
+  "string": "Musician",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0591",
+  "string": "Funeral director",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0592",
+  "string": "Post-secondary administrator",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0593",
+  "string": "Corporate lawyer",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0594",
+  "string": "Teacher, business administrator",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0595",
+  "string": "Human resource development",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0596",
+  "string": "Executive assistant to a Toronto city councillor",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0597",
+  "string": "Senior executive, Acuity Funds",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0598",
+  "string": "Entrepreneur",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0599",
+  "string": "Businessperson",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0600",
+  "string": "News anchor and sports reporter",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0601",
+  "string": "Social worker",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0602",
+  "string": "Executive assistant",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0603",
+  "string": "Broadcaster, author",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0604",
+  "string": "Real Estate Broker and Auditor",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0605",
+  "string": "Lawyer and political staffer",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0606",
+  "string": "Client services and sales manager at venture fund firm, financial analyst, lawyer",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0607",
+  "string": "International business consultant; OPP investigator",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0608",
+  "string": "Public relations",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0609",
+  "string": "Small business owner, Radio Show Host, Community Activist",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0610",
+  "string": "Banker",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0611",
+  "string": "Auditor",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0612",
+  "string": "Health system transformation lead, Nishnawbe Aski Nation",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0613",
+  "string": "City councillor",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0614",
+  "string": "Auto dealership manager",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0615",
+  "string": "Archivist",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0616",
+  "string": "journalist, communications specialist",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0617",
+  "string": "Lawyer, politician",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0618",
+  "string": "Bookkeeper",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0619",
+  "string": "IT professor, George Brown College",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0620",
+  "string": "Citizenship judge",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0621",
+  "string": "Union leader",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0622",
+  "string": "Businesswoman",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0623",
+  "string": "Computer engineer; realtor",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0624",
+  "string": "CEO, Metropolitan Hamilton Real Estate Board",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0625",
+  "string": "Chief psychologist, Hamilton Board of Education",
+  "n_members": 2,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0626",
+  "string": "Electronic engineer",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0627",
+  "string": "Music teacher",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0628",
+  "string": "Teacher, political organizer, politician",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0629",
+  "string": "Technology instructor, Loyalist College; engineer",
+  "n_members": 1,
+  "provs": [
+   "ON"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0630",
+  "string": "business owner, web-application developer, information systems analyst; owner/operator of an IT consulting and web development company; systems analyst at Deltaware Systems and Alcatel Canada",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0631",
+  "string": "information technology; 14 years with the provincial Department of Finance and Municipal Affairs, Information Technology Division",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0632",
+  "string": "dentist; operated a dental clinic and cafe in Hampton",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0633",
+  "string": "lawyer; called to the PEI bar 2005, practised with Cox & Palmer, Charlottetown",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0634",
+  "string": "employment counsellor, farmer; economic development officer; ran Atlantic Career Advancement (HR consulting) 2000-2007; operated a 400-acre beef/blueberry/potato farm",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0635",
+  "string": "realtor (RE/MAX), electronics technician at Maritime Electric, partner in a stone business",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0636",
+  "string": "computer programmer in information technology; Charlottetown city councillor for 17 years",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0637",
+  "string": "education assistant with the Western School Board; certified life-skills instructor; municipal councillor 1991-1997",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0638",
+  "string": "business consultant with MRSB Consulting; lobster and tuna fisherman; chief of staff to the Opposition leader",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0639",
+  "string": "hospitality and tourism; worked in the service industry for 32 years",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0640",
+  "string": "member of the RCMP 1971-2007; on retirement, owner of a private marine-sector business (marine surveyor)",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0641",
+  "string": "self-employed lobster fisherman; volunteer fire chief, Souris Fire Department",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0642",
+  "string": "Executive Director of the PEI Business Women's Association for five years",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0643",
+  "string": "interior design, construction and renovation; administrator at the Dr. John Gillis Memorial Lodge",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0644",
+  "string": "dairy farmer and small business operator",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0645",
+  "string": "military police officer; chief of police in the Borden-Carleton area; owner of the Esso gas station in Borden",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0646",
+  "string": "realtor with Century 21 Northumberland Realty and real-estate developer; earlier the family fishing and aquaculture business",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0647",
+  "string": "Summerside city councillor for four years; Development Officer at the Holland College Foundation",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0648",
+  "string": "owned and operated companies in the IT, accommodation, manufacturing and property-development sectors; business development consulting",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0649",
+  "string": "teacher at Central Queens Elementary School",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0650",
+  "string": "farmer (potatoes, beef, formerly hogs and dairy); farm chemical salesperson; snow removal business",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0651",
+  "string": "businessman; operated a retail gas and convenience store with Irving Oil for 19 years and Scooter's Dairy Bar & Take-out; municipal politics for 16 years",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0652",
+  "string": "Property Development Officer with the PEI Department of Environment, Energy and Forestry",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0653",
+  "string": "taught high school in Charlottetown for 29 years; summer-school lecturer; realtor",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0654",
+  "string": "teacher for 35 years (school principal 1961-62), then real estate agent from 1993",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0655",
+  "string": "RCMP officer from 1967; opened and ran Burger King franchises in Charlottetown (1979) and Summerside (1986), sold 2011",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0656",
+  "string": "farmer on the family farm in Grand River; executive director and president of the PEI Federation of Agriculture",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0657",
+  "string": "recreation director, parks superintendent, businessperson; Charlottetown city councillor 1997-2003",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0658",
+  "string": "community development officer and coordinator",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0659",
+  "string": "retail sales for more than 30 years; managed and then owned Stedman's department store in Montague 1985-2002; town councillor 1990-1996",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0660",
+  "string": "radio broadcast journalist; CBC Northern Service, CBC Calgary, host of CBC Radio's Island Morning 1983-2003",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0661",
+  "string": "manager for Health and Community Services",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0662",
+  "string": "owner, with her husband, of a cloth diapering business in Summerside",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0663",
+  "string": "community-based researcher; teaching assistant and sessional faculty at the University of Guelph and local president of CUPE 3913; founding member of the Community Engaged Scholarship Institute",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0664",
+  "string": "assistant manager at Malpeque Bay Credit Union and Manager of Commercial Lending",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0665",
+  "string": "family golf-course tourism business; career with a national telecom; product manager for business internet at Bell Aliant from 2012",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0666",
+  "string": "entrepreneur owning two small businesses (fitness/wellness and landscaping); broadcaster and colour commentator",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0667",
+  "string": "optometrist and business owner; founding partner of the Family Vision Centre, Charlottetown",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0668",
+  "string": "provincial civil servant from 1979 (Health and Social Services, Attorney General, Agriculture, Fisheries), rising to supervisor, manager and director; blueberry farmer",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0669",
+  "string": "vehicle technician; works on the family potato farm business; also worked with the Souris hospital",
+  "n_members": 1,
+  "provs": [
+   "PE"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0670",
+  "string": "Farmer; Member of Parliament 1993-2000; auxiliary RCMP constable",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0671",
+  "string": "Provincial government employee",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0672",
+  "string": "Community legal services worker, Saskatchewan Legal Aid Commission; staff representative, Canadian Union of Public Employees",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0673",
+  "string": "Operates a pedigreed seed farm near Eston",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0674",
+  "string": "Architect; Regina city councillor (four terms)",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0675",
+  "string": "Mining (International Minerals and Chemicals); farmer from 1974; R.M. of Saltcoats councillor and reeve",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0676",
+  "string": "Director of business development for the City of Swift Current; small business owner",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0677",
+  "string": "Radio broadcaster and columnist; senior writer/editor for legal publications Commercial Lawyer and European Lawyer; school board trustee",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0678",
+  "string": "Journalist (New Breed); editor; programmer/producer/administrator, Missinipi Broadcasting Corporation; mayor of Ile-a-la-Crosse",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0679",
+  "string": "Health policy manager, Saskatchewan Medical Association; policy analyst with the provincial government",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0680",
+  "string": "Assistant executive director at a women's shelter; registered social worker",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0681",
+  "string": "Lawyer with the federal government, aboriginal law specialist; co-owner of a campground business",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0682",
+  "string": "Psychiatric nurse; police officer (Saskatoon and Regina city police, rank of Sergeant); president, Regina Police Association",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0683",
+  "string": "Executive director of SIGN, a non-profit human service agency in Yorkton; farmer; Yorkton city alderman",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0684",
+  "string": "Attended the College of Education; school board trustee, Lloydminster Public School Division (20 years, 16 as chair)",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0685",
+  "string": "Entrepreneur; owner/operator of Health Conveyance Inc., a communications company",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0686",
+  "string": "Oil industry (Mobil Oil, PanCanadian, Dome Petroleum, Producers Pipeline); farmer since 1977",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0687",
+  "string": "Newspaper reporter; then Saskatchewan Department of Labour, Work and Family unit",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0688",
+  "string": "Youth counsellor at St. Mary's High School; SaskTel; various positions with the Saskatchewan government",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0689",
+  "string": "Constable, Prince Albert Police Service; previously correctional officer and parole officer, Correctional Service of Canada",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0690",
+  "string": "Farmer/producer; R.M. councillor; president of SARM",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0691",
+  "string": "Commercial driver in the car hauling business; mayor of the Village of Borden",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0692",
+  "string": "Teacher for 18 years in Saskatoon and rural Saskatchewan",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0693",
+  "string": "Farmer (grain and purebred Hereford cattle); co-owner and auctioneer, Kirsch Auctions",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0694",
+  "string": "Owner/operator of a family sports shop, D & S Sports Inc.; mayor of Spiritwood; raised on the family farm",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0695",
+  "string": "Driver education instructor/administrator for Prairie View School Division; traffic safety coordinator, Saskatchewan Safety Council; took over the family farm",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0696",
+  "string": "Lawyer in Saskatoon (Q.C.); chair and CEO of the Saskatchewan Legal Aid Commission 1988-1992",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0697",
+  "string": "Mixed farming operation at Langbank",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0698",
+  "string": "Medical laboratory technologist, Royal University Hospital microbiology lab; then farming at LeRoy",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0699",
+  "string": "Family farming operation near Macoun/Estevan",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0700",
+  "string": "Teacher (Southey, SK and Burns Lake, BC); Regina city councillor and mayor 1988",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0701",
+  "string": "Grain industry for 19 years, from elevator manager to marketing manager of an inland terminal; owns and operates a fourth-generation family farm",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0702",
+  "string": "Worked in the family's forest industry company and in the service industry in the La Ronge area; school board and Gabriel Dumont Institute chair",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0703",
+  "string": "Research officer with the opposition caucus; previously worked for the Department of Health",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0704",
+  "string": "Farmer (grain and cattle near Shaunavon); customs officer",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0705",
+  "string": "Operated a family business in Prince Albert from 1970",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0706",
+  "string": "Farmer near Beechy; custom farming services; Member of Parliament 1993-1997",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0707",
+  "string": "Lawyer in Saskatoon (11 years full-time, four part-time)",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0708",
+  "string": "Saskatoon city councillor, Ward 8",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0709",
+  "string": "Radio news announcer and news director in Swift Current; then constituency assistant and executive assistant to Premier Brad Wall",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0710",
+  "string": "Lawyer in Saskatoon 1986-2003",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0711",
+  "string": "Oil rigs in winter and farming in summer; commercial pilot's licence, aerial spraying business",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0712",
+  "string": "Professional football player, Saskatchewan Roughriders (17 years); substitute teacher; provincial government minor football development",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0713",
+  "string": "Farmer; R.M. of Cupar councillor",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0714",
+  "string": "Lawyer, partner at McKercher LLP (Q.C.); Saskatoon school board trustee and city councillor",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0715",
+  "string": "Regional development manager, Saskatchewan Transportation Company; president/chair of Saskatoon Credit Union board",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0716",
+  "string": "Runs the family's mixed farm operation at Bladworth; village councillor",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0717",
+  "string": "Oil industry and SaskPower; customer service technician with SaskTel; vice-president of CEP Local 3",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0718",
+  "string": "Owned and operated Ottenbreit Waste Systems Limited; commercial pilot",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0719",
+  "string": "Regina city councillor (six years)",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0720",
+  "string": "Employed with a financial institution; realtor in North Battleford",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0721",
+  "string": "Business owner in Porcupine Plain; worked in oil and gas, insurance, banking and human resources",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0722",
+  "string": "Member of Parliament 2004-2006",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0723",
+  "string": "Rural municipal administrator for the R.M.s of Marriott and Pleasant Valley; president of the Rural Municipal Administrators' Association",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0724",
+  "string": "Manager of customer service at SaskTel; reporter and producer for CBC television; filmmaker",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0725",
+  "string": "Assistant director of personnel, Department of Northern Saskatchewan; business manager, Kikinahk Friendship Centre; program coordinator, Rainbow Youth Centre; research coordinator, U of R Faculty of Social Work",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0726",
+  "string": "Saskatoon City Police Service officer for 18 years; previously an emergency medical technician",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0727",
+  "string": "Owner/operator of Riverside Auto Group; manager with BMO for 20 years; corrections officer for four years",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0728",
+  "string": "Lawyer and mediator with MacPherson, Leslie & Tyerman 1978-1995",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0729",
+  "string": "Registered nurse in Saskatoon; president of the Saskatchewan Union of Nurses 1993-1998",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0730",
+  "string": "Nurse's aide; assistant to the R.M. secretary; secretary/treasurer for six Conservation and Development Area Authorities; general manager, Westland Rec-Creation Concepts Inc.",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0731",
+  "string": "Senior business advisor, Western Economic Diversification; entrepreneur (real estate, sports memorabilia, food distribution)",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0732",
+  "string": "Former grain producer; worked in the energy sector and for SaskPower, SaskTel, SaskEnergy, TransGas and TransCanada Pipelines; owned a land and environmental consulting company",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0733",
+  "string": "Teacher for 11 years at Invermay; owned and operated an insurance brokerage 1983-1993; operates the family farm",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0734",
+  "string": "Division director, Investors Group; director of government relations, Bayer Healthcare; vice-president of corporate relations, SaskPower",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0735",
+  "string": "Business and advertising in Melfort; partner in the Melfort Journal for over 25 years; mayor of Melfort",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0736",
+  "string": "Provincial government employee; senior elected official and negotiator for the Saskatchewan Government Employees' Union; owned small businesses",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0737",
+  "string": "Employed at the Saskatchewan Wheat Pool for 12 years; member of the Grain Services Union bargaining committee",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0738",
+  "string": "Owner/operator of Fairview Dodge in North Battleford",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0739",
+  "string": "Licensed realtor in Regina for more than 20 years; operated a catering company; farmed",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0740",
+  "string": "Member of Parliament 1988-1997; North Battleford city councillor",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0741",
+  "string": "Over 30 years at CTV Saskatoon; president of the CTV Staff Association; Catholic school board trustee",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0742",
+  "string": "Teacher, principal, SUNTEP coordinator; supervised intern teachers and taught drama and writing at SUNTEP for the University of Saskatchewan",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0743",
+  "string": "Licensed assistant in a financial planning office for 20 years; Estevan city councillor",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0744",
+  "string": "Ordained United Church minister 1976; served congregations and Zion United Church, Moose Jaw 1979-1986",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0745",
+  "string": "Farmer and rancher near Pense; board of education trustee and municipal councillor",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0746",
+  "string": "Director of Dales House; director of Immigration Settlement; supervisor, Health-Community Care Branch; team leader, Paul Dojack Youth Centre; clinical director, Leading Thunderbird Lodge",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0747",
+  "string": "United Church minister for 20 years",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0748",
+  "string": "Accountant (A.M. Alm Chartered Accountants; Brannick and Blanchard CGAs) combined with grain farming for 26 years",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0749",
+  "string": "Jewellery business owner in Toronto; road safety consultant for SGI",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0750",
+  "string": "Corrections worker at the Men's Provincial Correctional Centre, Prince Albert; cattle rancher; reeve of the R.M. of Paddockwood",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0751",
+  "string": "Registered social worker with the Prince Albert Parkland Health Region",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0752",
+  "string": "Lawyer in private practice, then with a provincial legal-aid charity; Regina Catholic School Board trustee",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0753",
+  "string": "Principal and teacher-therapist, Radius Community Education Centre, Saskatoon",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0754",
+  "string": "Coordinator of Saskatoon Communities for Children",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0755",
+  "string": "Farmer and rancher near Biggar; partner in Weekes Custom Feeding Inc.",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0756",
+  "string": "Coordinator of Global Relations, University of Saskatchewan International; legislative assistant in the House of Commons",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0757",
+  "string": "Three years of post-secondary schooling; farmed near Kelvington about 10 years; founding president of Plains Poultry Ltd.; operated a small business in Melfort for 25 years",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0758",
+  "string": "Municipal councillor for the R.M. of Clayton for 10 years; Norquay Co-op board",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0759",
+  "string": "Family doctor in Saskatoon",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0760",
+  "string": "Worked for Canada Safeway; chief shop steward for Safeway employees 1994-2003",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0761",
+  "string": "Grain farmer between Shellbrook and Parkside",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0762",
+  "string": "Regional director, Teen Challenge Saskatchewan (non-profit addictions recovery centre); author and motivational speaker",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0763",
+  "string": "Consultant in agricultural management and policy development; managing director of livestock-based enterprises in Europe; family custom grazing and livestock business",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0764",
+  "string": "Co-owner of Dennis Foods in Canora; mayor and town councillor for over 20 years",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0765",
+  "string": "Operated an oilfield service company; Microsoft Certified Systems Engineer, IT contractor",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0766",
+  "string": "Long-time instructor in the Department of Politics and International Studies, University of Regina; owner of TBM Strategies, a management consulting business",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0767",
+  "string": "Minister (pastor) in the Baptist church; ran a furniture manufacturing company; school division trustee",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0768",
+  "string": "Teacher; developed and managed programs for high-risk youth offenders; business director of a business improvement district",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0769",
+  "string": "Executive assistant to the Associate Dean of Aboriginal Affairs, College of Arts & Science, University of Saskatchewan; sessional lecturer in sociology",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0770",
+  "string": "Dietitian and public health nutritionist, Prince Albert Parkland Health Region; co-owner of a forestry/agroforestry small business",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0771",
+  "string": "Territory manager for Hoechst AG 1986-1996; owner/operator of Wagon Wheel Seed Corporation, a pedigreed seed farm",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0772",
+  "string": "Executive assistant to NDP MP Lorne Nystrom 1997-2001; earlier lifeguard and general labourer",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0773",
+  "string": "Over 25 years in the communication industry (television, radio and newspaper) in management positions, including the Saskatchewan Newspaper Group",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0774",
+  "string": "Ministerial staff in Ottawa; researcher in the Saskatchewan Ministry of Executive Council; director of research for the government caucus",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0775",
+  "string": "Farmed and worked in farm machinery sales for 20 years; earlier a broadcaster (announcer, talk show producer, director of news and public affairs)",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0776",
+  "string": "Lawyer in Regina; small business owner",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ },
+ {
+  "id": "occ0777",
+  "string": "Royal Canadian Air Force pilot, retired Lieutenant-Colonel; commander of the Snowbirds squadron; small rancher",
+  "n_members": 1,
+  "provs": [
+   "SK"
+  ],
+  "whose": "member_own"
+ }
+]

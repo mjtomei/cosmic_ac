@@ -172,9 +172,39 @@ def parse_on(path):
 
 
 # ---------------------------------------------------------------- Manitoba
-B_PREFIX = re.compile(r"^(?:\s|<a\b[^>]*>|</a>|<span\b[^>]*>|</span>|"
-                      r"<st1:[^>]*>|</st1:[^>]*>|<o:p>|</o:p>|<!--.*?-->)*"
-                      r"<b\b[^>]*>(.*?)</b>", re.S)
+# NB: no \xa0 alternative -- \s already matches U+00A0, and two alternatives
+# that match the same character make this star catastrophically ambiguous
+# (measured: one 2016 file wedged the extractor for >30 min).
+MB_SKIP = (r"(?:\s|&nbsp;|<a\b[^>]*>|</a>|<span\b[^>]*>|</span>|"
+           r"<st1:[^>]*>|</st1:[^>]*>|<o:p>|</o:p>|<!--.*?-->)*")
+B_PREFIX = re.compile(r"^" + MB_SKIP + r"<b\b[^>]*>(.*?)</b>", re.S)
+# same, unanchored: used to walk a RUN of adjacent <b> elements
+B_NEXT = re.compile(MB_SKIP + r"<b\b[^>]*>(.*?)</b>", re.S)
+
+
+def mb_bold_run(body):
+    """Text of the LEADING RUN of <b> elements, plus the offset past it.
+
+    From ~2020 the Word export splits a speaker's name across several bold
+    elements around the TOC anchors it inserts --
+      <b>Ms. Malaya </b><b><a name=_Toc..>Marcelino</a></b><b> (Notre Dame):</b>
+    -- so matching only the first <b> loses the trailing colon, the turn is
+    not recognised, and the whole speech accretes to the previous (usually
+    the Speaker's) turn and is then dropped as a chair voice. Joining the
+    run recovers it (measured: 2020-24 word yield 0.53-0.66 -> 0.87-0.89 of
+    page text; 2006-2014 unchanged).
+    """
+    m = B_PREFIX.match(body)
+    if not m:
+        return None, 0
+    parts, pos = [strip_tags(m.group(1))], m.end()
+    while True:
+        m = B_NEXT.match(body, pos)
+        if not m:
+            break
+        parts.append(strip_tags(m.group(1)))
+        pos = m.end()
+    return WS.sub(" ", " ".join(p for p in parts if p)).strip(), pos
 
 
 def parse_mb(path):
@@ -195,14 +225,13 @@ def parse_mb(path):
             continue
         heading = ("Subheading" in attrs or "align=center" in attrs
                    or 'align="center"' in attrs or "DateStyle" in attrs)
-        bm = B_PREFIX.match(body)
+        bt, bend = mb_bold_run(body)
         if heading:
             section = text[:120]
             cur = None
             continue
-        if bm:
-            bt = strip_tags(bm.group(1))
-            rest = strip_tags(body[bm.end():])
+        if bt is not None:
+            rest = strip_tags(body[bend:])
             if bt.endswith(":"):
                 sp = bt.rstrip(":").strip()
                 cur = (sp, section, [rest.lstrip(':').strip()] if rest else [])
@@ -233,6 +262,26 @@ def ns_upper(s):
     return letters and all(c.isupper() for c in letters)
 
 
+NS_P_CLOSED = re.compile(r"<[pP]\b[^>]*>(.*?)</[pP]>", re.S)
+NS_P_OPEN = re.compile(r"<[pP]\b[^>]*>")
+
+
+def ns_paragraphs(h):
+    """Paragraph bodies, tolerating the UNCLOSED-<p> export.
+
+    37 sitting days of the 61st assembly's 3rd session (May and Oct-Dec 2011)
+    are published as `<p class="hsd_general">text` with no `</p>` at all --
+    only the page furniture is closed. Matching closed <p>...</p> finds ten
+    header paragraphs and no speech, so the day extracts to zero segments and
+    reads as a house that never sat. Fall back to splitting on the opening
+    tags when most of them are unclosed.
+    """
+    closed = NS_P_CLOSED.findall(h)
+    if len(closed) >= 0.5 * len(NS_P_OPEN.findall(h)):
+        return closed
+    return [re.split(r"(?i)</p>", c, 1)[0] for c in NS_P_OPEN.split(h)[1:]]
+
+
 def parse_ns(path):
     h = path.read_text(encoding="utf-8", errors="replace")
     date = path.name[:10]
@@ -250,8 +299,8 @@ def parse_ns(path):
     turns = []
     section = ""
     cur = None
-    for m in re.finditer(r"<[pP]\b[^>]*>(.*?)</[pP]>", h, re.S):
-        text = strip_tags(m.group(1))
+    for body in ns_paragraphs(h):
+        text = strip_tags(body)
         text = WS.sub(" ", text.replace("«", " ").replace("»", " ")).strip()
         if not text:
             continue

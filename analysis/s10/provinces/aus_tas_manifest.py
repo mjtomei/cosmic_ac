@@ -31,6 +31,7 @@ most years; both parts of a day are kept and share a date.
 Usage: python3 aus_tas_manifest.py
 """
 import json
+import os
 import re
 import sys
 import time
@@ -42,7 +43,12 @@ HERE = Path(__file__).parent
 BASE = "https://search.parliament.tas.gov.au"
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, "
       "like Gecko) Chrome/128.0.0.0 Safari/537.36")
-YEARS = list(range(2006, 2011)) + list(range(2015, 2020))
+# The window pair above is the original drift design; the sources
+# publish continuously. S10_FILL / S10_SUFFIX backfill the skipped
+# years (2011-14, 2020-24) without overwriting the first pass.
+YEARS = (list(range(2011, 2015)) + list(range(2020, 2025))
+         if os.environ.get("S10_FILL") else
+         list(range(2006, 2011)) + list(range(2015, 2020)))
 # Legislative Council is the identical pipeline (slug lchansard, author
 # "Legislative Council") and works for 2006-2010 + 2015-2017, but the ISYS index
 # has NO documents under ...\Archive\20182021\Council\{2018,2019,2020}\ -- those
@@ -178,7 +184,7 @@ def main():
                 kept += 1
             report.append(f"{code} {y}: {len(rows)} docs -> keep {kept}, "
                           f"committee/other {dropped}, undated {undated}")
-    out = HERE / "aus_tas_manifest.json"
+    out = HERE / f"aus_tas_manifest{os.environ.get('S10_SUFFIX','')}.json"
     out.write_text(json.dumps(manifest, indent=1))
     (HERE / "aus_tas_dropped_titles.txt").write_text("\n".join(dropped_titles))
     print("\n".join(report))

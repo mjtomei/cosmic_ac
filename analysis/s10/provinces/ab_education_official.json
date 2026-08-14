@@ -1,0 +1,1195 @@
+{
+ "prov": "AB",
+ "source": "Legislative Assembly of Alberta official Member biographies (assembly.ab.ca), live pages plus Internet Archive captures",
+ "n_targets": 224,
+ "n_with_bio": 75,
+ "records": [
+  {
+   "name": "aheer",
+   "full_name": "Leela Sharon Aheer, ECA",
+   "mid": "0883",
+   "source_kind": "wayback",
+   "education_level": "bachelor",
+   "education_field": "music",
+   "alma_maters": [
+    "University of Manitoba",
+    "University of Calgary"
+   ],
+   "prior_occupation": "Small-business owner since 1998; professional musician and music teacher",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20200921095712/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0883&legl=30&from=mla_home"
+  },
+  {
+   "name": "allard",
+   "full_name": "Tracy Allard, ECA",
+   "mid": "0912",
+   "source_kind": "wayback",
+   "education_level": "bachelor",
+   "education_field": "commerce; disability management",
+   "alma_maters": [
+    "University of British Columbia"
+   ],
+   "prior_occupation": "Business owner, Tim Hortons franchisee in Prince Rupert BC and Grande Prairie",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20200921093257/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0912&legl=30&from=mla_home"
+  },
+  {
+   "name": "armstrong-homeniuk",
+   "full_name": "Jackie Armstrong-Homeniuk",
+   "mid": "0914",
+   "source_kind": "live",
+   "education_level": "college",
+   "education_field": "business and economic development courses; hairstyling",
+   "alma_maters": [
+    "MacEwan University",
+    "University of Calgary"
+   ],
+   "prior_occupation": "Journeyman hairstylist; owner-operator of a salon for approximately 34 years; insurance industry experience",
+   "occupation_category": "trades-labour",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0914"
+  },
+  {
+   "name": "barnes",
+   "full_name": "Drew Barnes",
+   "mid": "0816",
+   "source_kind": "wayback",
+   "education_level": "bachelor",
+   "education_field": "commerce",
+   "alma_maters": [
+    "Camrose Lutheran College",
+    "University of Alberta"
+   ],
+   "prior_occupation": "Real estate broker and office owner (26-year career); owner of construction, storage and property management businesses; rancher",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20200921100546/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0816&legl=30&from=mla_home"
+  },
+  {
+   "name": "bilous",
+   "full_name": "Deron Bilous, ECA",
+   "mid": "0829",
+   "source_kind": "wayback",
+   "education_level": "bachelor",
+   "education_field": "education",
+   "alma_maters": [
+    "University of Alberta"
+   ],
+   "prior_occupation": "Teacher at Inner City High School, Edmonton; neighbourhood and community development; Canada World Youth projects",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20200921090611/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0829&legl=30&from=mla_home"
+  },
+  {
+   "name": "carson",
+   "full_name": "Jon Carson",
+   "mid": "0837",
+   "source_kind": "wayback",
+   "education_level": "college",
+   "education_field": "radio and television broadcasting; electrical apprenticeship",
+   "alma_maters": [
+    "Northern Alberta Institute of Technology"
+   ],
+   "prior_occupation": "Electrician",
+   "occupation_category": "trades-labour",
+   "source_url": "https://web.archive.org/web/20200921102543/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0837&legl=30&from=mla_home"
+  },
+  {
+   "name": "ceci",
+   "full_name": "Joe Ceci",
+   "mid": "0838",
+   "source_kind": "live",
+   "education_level": "graduate",
+   "education_field": "social work",
+   "alma_maters": [
+    "University of Western Ontario",
+    "University of Calgary"
+   ],
+   "prior_occupation": "Community social worker, City of Calgary; family counselling; public policy manager at a community-based charitable organization; Calgary alderman 15 years",
+   "occupation_category": "public-service",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0838"
+  },
+  {
+   "name": "cooper",
+   "full_name": "Nathan Cooper",
+   "mid": "0885",
+   "source_kind": "wayback",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Chief of staff and director of legislative affairs, Wildrose caucus; two terms as councillor for the town of Carstairs",
+   "occupation_category": "public-service",
+   "source_url": "https://web.archive.org/web/20200926194949/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0885&from=mla_home"
+  },
+  {
+   "name": "copping",
+   "full_name": "Jason Copping, ECA",
+   "mid": "0915",
+   "source_kind": "wayback",
+   "education_level": "graduate",
+   "education_field": "industrial relations; labour and employment law; political science",
+   "alma_maters": [
+    "McGill University",
+    "Queen's University",
+    "York University"
+   ],
+   "prior_occupation": "Consultant in human resource management, labour relations and dispute resolution (2015-2019); close to 20 years in transportation-industry management; sessional university instructor",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20200921101741/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0915&legl=30&from=mla_home"
+  },
+  {
+   "name": "cyr",
+   "full_name": "Scott Cyr",
+   "mid": "0886",
+   "source_kind": "live",
+   "education_level": "bachelor",
+   "education_field": "accounting and finance",
+   "alma_maters": [
+    "University of Lethbridge"
+   ],
+   "prior_occupation": "Accountant for 14 years; previously field operator in the oil and gas industry",
+   "occupation_category": "business",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0886"
+  },
+  {
+   "name": "dach",
+   "full_name": "Lorne Dach",
+   "mid": "0842",
+   "source_kind": "live",
+   "education_level": "bachelor",
+   "education_field": "political science",
+   "alma_maters": [
+    "University of Alberta"
+   ],
+   "prior_occupation": "Associate broker in the real estate industry for close to 30 years",
+   "occupation_category": "business",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0842"
+  },
+  {
+   "name": "dang",
+   "full_name": "Thomas Dang",
+   "mid": "0843",
+   "source_kind": "wayback",
+   "education_level": "unknown",
+   "education_field": "computing science",
+   "alma_maters": [
+    "University of Alberta"
+   ],
+   "prior_occupation": "Software developer (while pursuing a computing science degree)",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20200921103711/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0843&legl=30&from=mla_home"
+  },
+  {
+   "name": "deol",
+   "full_name": "Jasvir Deol",
+   "mid": "0909",
+   "source_kind": "live",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Insurance broker and small-business owner for almost 20 years",
+   "occupation_category": "business",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0909"
+  },
+  {
+   "name": "dreeshen",
+   "full_name": "Devin Dreeshen",
+   "mid": "0908",
+   "source_kind": "live",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Fifth-generation farm owner near Pine Lake; policy adviser to the federal Minister of Agriculture 2008-2015",
+   "occupation_category": "agriculture",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0908"
+  },
+  {
+   "name": "eggen",
+   "full_name": "David Eggen",
+   "mid": "0757",
+   "source_kind": "live",
+   "education_level": "bachelor",
+   "education_field": "education",
+   "alma_maters": [
+    "University of Alberta"
+   ],
+   "prior_occupation": "Teacher (Zimbabwe and Edmonton schools, 1990-2004); executive director, Friends of Medicare",
+   "occupation_category": "education",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0757"
+  },
+  {
+   "name": "ellis",
+   "full_name": "Mike Ellis",
+   "mid": "0832",
+   "source_kind": "live",
+   "education_level": "college",
+   "education_field": "policing; management",
+   "alma_maters": [
+    "Charles Sturt University",
+    "Mount Royal College"
+   ],
+   "prior_occupation": "Calgary Police Service constable and patrol sergeant (12 years)",
+   "occupation_category": "public-service",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0832"
+  },
+  {
+   "name": "feehan",
+   "full_name": "Richard Feehan, ECA",
+   "mid": "0844",
+   "source_kind": "wayback",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Instructor, University of Calgary Faculty of Social Work (Edmonton division); program director, Edmonton Social Planning Council; vice-president, Catholic Social Services; private social work practice",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20200921100703/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0844&legl=30&from=mla_home"
+  },
+  {
+   "name": "ganley",
+   "full_name": "Kathleen Ganley",
+   "mid": "0846",
+   "source_kind": "live",
+   "education_level": "professional",
+   "education_field": "law; philosophy; psychology",
+   "alma_maters": [
+    "University of Calgary"
+   ],
+   "prior_occupation": "Lawyer, associate at a private law firm (labour, employment and human rights law)",
+   "occupation_category": "law",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0846"
+  },
+  {
+   "name": "getson",
+   "full_name": "Shane Getson",
+   "mid": "0917",
+   "source_kind": "live",
+   "education_level": "college",
+   "education_field": "civil engineering technology",
+   "alma_maters": [
+    "Northern Alberta Institute of Technology"
+   ],
+   "prior_occupation": "Project director in the construction industry (15 years); senior manager of planning and execution for a private energy-sector company",
+   "occupation_category": "business",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0917"
+  },
+  {
+   "name": "glasgo",
+   "full_name": "Michaela Frey",
+   "mid": "0918",
+   "source_kind": "wayback",
+   "education_level": "bachelor",
+   "education_field": "political science",
+   "alma_maters": [
+    "University of Lethbridge"
+   ],
+   "prior_occupation": "Owner and chief consultant of a strategic consulting agency",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20200921084546/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0918&legl=30&from=mla_home"
+  },
+  {
+   "name": "glubish",
+   "full_name": "Nate Glubish",
+   "mid": "0919",
+   "source_kind": "live",
+   "education_level": "bachelor",
+   "education_field": "commerce; finance",
+   "alma_maters": [
+    "University of Saskatchewan"
+   ],
+   "prior_occupation": "Investment manager; 15-year career in finance, investment and venture capital",
+   "occupation_category": "business",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0919"
+  },
+  {
+   "name": "goehring",
+   "full_name": "Nicole Goehring",
+   "mid": "0847",
+   "source_kind": "live",
+   "education_level": "college",
+   "education_field": "social work",
+   "alma_maters": [
+    "MacEwan University"
+   ],
+   "prior_occupation": "Caseworker, assessor and court co-ordinator with Child and Family Services; group home supervisor",
+   "occupation_category": "public-service",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0847"
+  },
+  {
+   "name": "goodridge",
+   "full_name": "Laila Goodridge",
+   "mid": "0907",
+   "source_kind": "wayback",
+   "education_level": "bachelor",
+   "education_field": "arts",
+   "alma_maters": [
+    "University of Alberta"
+   ],
+   "prior_occupation": "Staffer for Members of the Legislative Assembly and for the federal Minister of the Environment; worked in the oil sands for almost five years",
+   "occupation_category": "public-service",
+   "source_url": "https://web.archive.org/web/20200923192702/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0907&from=mla_home"
+  },
+  {
+   "name": "gotfried",
+   "full_name": "Richard Gotfried",
+   "mid": "0900",
+   "source_kind": "wayback",
+   "education_level": "college",
+   "education_field": "management; political science and economics",
+   "alma_maters": [
+    "Boston College",
+    "University of Hong Kong",
+    "University of Calgary"
+   ],
+   "prior_occupation": "Senior executive for a Calgary home builder (over a decade); district sales manager for an international airline (15+ years); vice-president, Calgary Economic Development",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20200926153809/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0900&from=bill&billinfoid=11833"
+  },
+  {
+   "name": "gray",
+   "full_name": "Christina Gray",
+   "mid": "0848",
+   "source_kind": "live",
+   "education_level": "bachelor",
+   "education_field": "psychology; software development",
+   "alma_maters": [],
+   "prior_occupation": "Senior consultant with a software development consulting firm; software developer and instructor",
+   "occupation_category": "business",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0848"
+  },
+  {
+   "name": "guthrie",
+   "full_name": "Pete Guthrie",
+   "mid": "0920",
+   "source_kind": "live",
+   "education_level": "bachelor",
+   "education_field": "chemical engineering",
+   "alma_maters": [
+    "University of Alberta"
+   ],
+   "prior_occupation": "Professional engineer; private business owner in the ranching and retail industries for almost 20 years",
+   "occupation_category": "business",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0920"
+  },
+  {
+   "name": "hanson",
+   "full_name": "David Hanson",
+   "mid": "0888",
+   "source_kind": "wayback",
+   "education_level": "college",
+   "education_field": "plumbing, gasfitting and steamfitting; medical radiology",
+   "alma_maters": [
+    "Northern Alberta Institute of Technology"
+   ],
+   "prior_occupation": "Construction industry for over 37 years - foreman, superintendent, consultant and construction inspector",
+   "occupation_category": "trades-labour",
+   "source_url": "https://web.archive.org/web/20200926195352/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0888&from=mla_home"
+  },
+  {
+   "name": "hoffman",
+   "full_name": "Sarah Hoffman",
+   "mid": "0850",
+   "source_kind": "live",
+   "education_level": "graduate",
+   "education_field": "education; mathematics; religious studies",
+   "alma_maters": [
+    "University of Alberta",
+    "Concordia University of Edmonton"
+   ],
+   "prior_occupation": "Edmonton Public School Board trustee (two terms; board chair 2012-2014)",
+   "occupation_category": "public-service",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0850"
+  },
+  {
+   "name": "hunter",
+   "full_name": "Grant Hunter",
+   "mid": "0889",
+   "source_kind": "live",
+   "education_level": "graduate",
+   "education_field": "science; business administration",
+   "alma_maters": [],
+   "prior_occupation": "",
+   "occupation_category": "unknown",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0889"
+  },
+  {
+   "name": "issik",
+   "full_name": "Whitney Issik, ECA",
+   "mid": "0922",
+   "source_kind": "wayback",
+   "education_level": "bachelor",
+   "education_field": "arts",
+   "alma_maters": [
+    "University of Calgary"
+   ],
+   "prior_occupation": "Owned and operated a small business in Calgary for close to 30 years; worked in the telecommunications and energy industries",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20200921095424/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0922&legl=30&from=mla_home"
+  },
+  {
+   "name": "jason nixon",
+   "full_name": "Jason Nixon",
+   "mid": "0892",
+   "source_kind": "live",
+   "education_level": "college",
+   "education_field": "business administration management",
+   "alma_maters": [
+    "Southern Alberta Institute of Technology",
+    "Athabasca University"
+   ],
+   "prior_occupation": "Executive director and other roles with The Mustard Seed (Christian not-for-profit) over 25 years",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0892"
+  },
+  {
+   "name": "jean",
+   "full_name": "Brian Jean, KC",
+   "mid": "0882",
+   "source_kind": "live",
+   "education_level": "professional",
+   "education_field": "law; science; business administration",
+   "alma_maters": [],
+   "prior_occupation": "Lawyer, partner and litigator at a large Northern Alberta law firm (11 years); previously small business owner; MP 2004-2014",
+   "occupation_category": "law",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0882"
+  },
+  {
+   "name": "jeremy nixon",
+   "full_name": "Jeremy Nixon, ECA",
+   "mid": "0932",
+   "source_kind": "wayback",
+   "education_level": "bachelor",
+   "education_field": "communications and culture",
+   "alma_maters": [
+    "University of Calgary"
+   ],
+   "prior_occupation": "Non-profit sector for over 15 years; leadership roles with The Mustard Seed, Canadian Mental Health Association and Boys & Girls Clubs of Calgary",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20200921102413/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0932&legl=30&from=mla_home"
+  },
+  {
+   "name": "kenney",
+   "full_name": "Jason Kenney, PC, ECA",
+   "mid": "0906",
+   "source_kind": "wayback",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Member of Parliament 1997-2016; began public life as president of the Canadian Taxpayers Federation",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20200921092254/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0906&legl=30&from=mla_home"
+  },
+  {
+   "name": "loewen",
+   "full_name": "Todd Loewen",
+   "mid": "0890",
+   "source_kind": "live",
+   "education_level": "secondary",
+   "education_field": "",
+   "alma_maters": [
+    "Hillside Junior Senior High School"
+   ],
+   "prior_occupation": "Owner of a small outfitting business and an operational farm",
+   "occupation_category": "agriculture",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0890"
+  },
+  {
+   "name": "lovely",
+   "full_name": "Jackie Lovely",
+   "mid": "0926",
+   "source_kind": "live",
+   "education_level": "graduate",
+   "education_field": "business administration; hotel and restaurant administration",
+   "alma_maters": [
+    "University of Saskatchewan",
+    "Saskatchewan Polytechnic",
+    "Cape Breton University"
+   ],
+   "prior_occupation": "English as a second language instructor",
+   "occupation_category": "education",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0926"
+  },
+  {
+   "name": "madu",
+   "full_name": "Kaycee Madu, ECA, KC",
+   "mid": "0927",
+   "source_kind": "wayback",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [
+    "University of Lagos"
+   ],
+   "prior_occupation": "Lawyer for 16 years in Nigeria and Alberta; senior technical advisor, Government of Alberta",
+   "occupation_category": "law",
+   "source_url": "https://web.archive.org/web/20200918192747/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0927&from=bill&billinfoid=11862"
+  },
+  {
+   "name": "mciver",
+   "full_name": "Ric McIver",
+   "mid": "0808",
+   "source_kind": "live",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Food industry national sales manager and sales/marketing manager; owner-operator of a food distribution and marketing wholesale business; Calgary alderman 2001-2010",
+   "occupation_category": "business",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0808"
+  },
+  {
+   "name": "member ceci",
+   "full_name": "Joe Ceci",
+   "mid": "0838",
+   "source_kind": "live",
+   "education_level": "graduate",
+   "education_field": "social work",
+   "alma_maters": [
+    "University of Western Ontario",
+    "University of Calgary"
+   ],
+   "prior_occupation": "Community social worker, City of Calgary; family counselling; public policy manager at a community-based charitable organization; Calgary alderman 15 years",
+   "occupation_category": "public-service",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0838"
+  },
+  {
+   "name": "member irwin",
+   "full_name": "Janis Irwin",
+   "mid": "0910",
+   "source_kind": "live",
+   "education_level": "graduate",
+   "education_field": "education",
+   "alma_maters": [
+    "University of Alberta",
+    "University of Calgary"
+   ],
+   "prior_occupation": "High school teacher and vice-principal; senior manager and executive director at Alberta Education; director of stakeholder relations, Premier's office",
+   "occupation_category": "education",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0910"
+  },
+  {
+   "name": "member lagrange",
+   "full_name": "Adriana LaGrange",
+   "mid": "0924",
+   "source_kind": "live",
+   "education_level": "college",
+   "education_field": "rehabilitative studies",
+   "alma_maters": [
+    "Humber College"
+   ],
+   "prior_occupation": "Worked at the Michener Centre, Red Deer (shift charge, behavioural specialist, social academic) 1981-2006; trustee, Red Deer Catholic Regional School Division for over 11 years; family farm and hog-farm trucking division",
+   "occupation_category": "public-service",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0924"
+  },
+  {
+   "name": "member loyola",
+   "full_name": "Rodrigo Loyola",
+   "mid": "0856",
+   "source_kind": "wayback",
+   "education_level": "bachelor",
+   "education_field": "arts",
+   "alma_maters": [
+    "University of Alberta"
+   ],
+   "prior_occupation": "Academic program coordinator and student adviser, University of Alberta International; elected president of the Non-Academic Staff Association (union)",
+   "occupation_category": "trades-labour",
+   "source_url": "https://web.archive.org/web/20200921093156/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0856&legl=30&from=mla_home"
+  },
+  {
+   "name": "neudorf",
+   "full_name": "Nathan Neudorf",
+   "mid": "0930",
+   "source_kind": "live",
+   "education_level": "college",
+   "education_field": "civil and structural engineering; carpentry",
+   "alma_maters": [],
+   "prior_occupation": "Commercial construction; red seal journeyman carpenter and gold seal project manager",
+   "occupation_category": "trades-labour",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0930"
+  },
+  {
+   "name": "nicolaides",
+   "full_name": "Demetrios Nicolaides",
+   "mid": "0931",
+   "source_kind": "live",
+   "education_level": "graduate",
+   "education_field": "political science; conflict studies; international relations",
+   "alma_maters": [
+    "University of Cyprus",
+    "European University Center for Peace Studies",
+    "University of Calgary"
+   ],
+   "prior_occupation": "Communication consulting to senior leaders in the private sector; accredited civil and commercial mediator; former business-school instructor",
+   "occupation_category": "communications-PR-journalism",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0931"
+  },
+  {
+   "name": "nielsen",
+   "full_name": "Chris Nielsen",
+   "mid": "0865",
+   "source_kind": "wayback",
+   "education_level": "college",
+   "education_field": "engineering design",
+   "alma_maters": [
+    "Northern Alberta Institute of Technology"
+   ],
+   "prior_occupation": "Shipper/receiver for 26 years; shop steward, UFCW Local 401",
+   "occupation_category": "trades-labour",
+   "source_url": "https://web.archive.org/web/20200921102611/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0865&legl=30&from=mla_home"
+  },
+  {
+   "name": "nixon",
+   "full_name": "Jason Nixon",
+   "mid": "0892",
+   "source_kind": "live",
+   "education_level": "college",
+   "education_field": "business administration management",
+   "alma_maters": [
+    "Southern Alberta Institute of Technology",
+    "Athabasca University"
+   ],
+   "prior_occupation": "Executive director and other roles with The Mustard Seed (Christian not-for-profit) over 25 years",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0892"
+  },
+  {
+   "name": "notley",
+   "full_name": "Rachel Notley, ECA",
+   "mid": "0791",
+   "source_kind": "wayback",
+   "education_level": "professional",
+   "education_field": "law; political science",
+   "alma_maters": [
+    "University of Alberta",
+    "Osgoode Hall Law School"
+   ],
+   "prior_occupation": "Labour lawyer; worked for labour unions in Alberta and British Columbia; ministerial advisor to British Columbia's Attorney General",
+   "occupation_category": "law",
+   "source_url": "https://web.archive.org/web/20200921092840/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0791&legl=30&from=mla_home"
+  },
+  {
+   "name": "orr",
+   "full_name": "Ron J.N. Orr, ECA",
+   "mid": "0893",
+   "source_kind": "wayback",
+   "education_level": "graduate",
+   "education_field": "theology",
+   "alma_maters": [],
+   "prior_occupation": "Ordained minister; owner of a general contracting business; journeyman carpenter",
+   "occupation_category": "other",
+   "source_url": "https://web.archive.org/web/20200921102643/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0893&legl=30&from=mla_home"
+  },
+  {
+   "name": "pancholi",
+   "full_name": "Rakhi Pancholi",
+   "mid": "0911",
+   "source_kind": "live",
+   "education_level": "professional",
+   "education_field": "law; political science",
+   "alma_maters": [
+    "University of Toronto",
+    "University of Alberta"
+   ],
+   "prior_occupation": "Practising lawyer (labour/employment and education law); senior legislative consultant for Alberta Education",
+   "occupation_category": "law",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0911"
+  },
+  {
+   "name": "panda",
+   "full_name": "Prasad Panda, ECA",
+   "mid": "0904",
+   "source_kind": "wayback",
+   "education_level": "bachelor",
+   "education_field": "mechanical engineering",
+   "alma_maters": [
+    "VRS College of Engineering and Technology"
+   ],
+   "prior_occupation": "Professional engineer; 25+ years in the energy sector in management positions",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20200921102340/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0904&legl=30&from=mla_home"
+  },
+  {
+   "name": "phillips",
+   "full_name": "Shannon Phillips, ECA",
+   "mid": "0867",
+   "source_kind": "wayback",
+   "education_level": "graduate",
+   "education_field": "political science",
+   "alma_maters": [
+    "University of Alberta"
+   ],
+   "prior_occupation": "Policy analyst with the Alberta Federation of Labour (five years)",
+   "occupation_category": "trades-labour",
+   "source_url": "https://web.archive.org/web/20200921092726/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0867&legl=30&from=mla_home"
+  },
+  {
+   "name": "pitt",
+   "full_name": "Angela Pitt",
+   "mid": "0894",
+   "source_kind": "live",
+   "education_level": "college",
+   "education_field": "business administration; marketing",
+   "alma_maters": [
+    "Southern Alberta Institute of Technology"
+   ],
+   "prior_occupation": "Small business owner in Airdrie",
+   "occupation_category": "business",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0894"
+  },
+  {
+   "name": "reid",
+   "full_name": "Roger Reid",
+   "mid": "0935",
+   "source_kind": "wayback",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Owned and operated multiple franchise businesses for close to a decade; previously marketing/communications and graphic design",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20200921085229/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0935&legl=30&from=mla_home"
+  },
+  {
+   "name": "renaud",
+   "full_name": "Marie Renaud",
+   "mid": "0869",
+   "source_kind": "live",
+   "education_level": "college",
+   "education_field": "community disability studies; counselling",
+   "alma_maters": [
+    "MacEwan University",
+    "University of Alberta"
+   ],
+   "prior_occupation": "Executive director, Lo-Se-Ca Foundation (non-profit) for almost 15 years; instructor at MacEwan University",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0869"
+  },
+  {
+   "name": "rosin",
+   "full_name": "Miranda Rosin",
+   "mid": "0936",
+   "source_kind": "wayback",
+   "education_level": "bachelor",
+   "education_field": "business administration",
+   "alma_maters": [
+    "University of Regina"
+   ],
+   "prior_occupation": "Market development manager, Coca-Cola Refreshments Canada; digital media coordinator, Re/Max Crown Real Estate",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20200921104113/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0936&legl=30&from=mla_home"
+  },
+  {
+   "name": "sabir",
+   "full_name": "Irfan Sabir",
+   "mid": "0871",
+   "source_kind": "live",
+   "education_level": "professional",
+   "education_field": "law; social work; economics",
+   "alma_maters": [
+    "University of Calgary",
+    "University of Azad Jammu and Kashmir"
+   ],
+   "prior_occupation": "Lawyer practising aboriginal law at a national law firm",
+   "occupation_category": "law",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0871"
+  },
+  {
+   "name": "savage",
+   "full_name": "Sonya Savage, ECA, KC",
+   "mid": "0939",
+   "source_kind": "wayback",
+   "education_level": "professional",
+   "education_field": "law; environmental and energy law",
+   "alma_maters": [
+    "University of Calgary"
+   ],
+   "prior_occupation": "Senior director of policy and regulatory affairs, Canadian Energy Pipeline Association; policy and government relations for a multinational energy transportation company (2006-2015); 13 years practising law",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20200920075759/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0939&from=bill&billinfoid=11844"
+  },
+  {
+   "name": "sawhney",
+   "full_name": "Rajan Sawhney",
+   "mid": "0940",
+   "source_kind": "live",
+   "education_level": "graduate",
+   "education_field": "business administration; economics; political science",
+   "alma_maters": [
+    "University of Calgary"
+   ],
+   "prior_occupation": "Senior positions in the oil and gas industry",
+   "occupation_category": "business",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0940"
+  },
+  {
+   "name": "schmidt",
+   "full_name": "Marlin Schmidt",
+   "mid": "0872",
+   "source_kind": "live",
+   "education_level": "graduate",
+   "education_field": "applied environmental geosciences",
+   "alma_maters": [
+    "Eberhard Karls Universitat Tubingen",
+    "Queen's University"
+   ],
+   "prior_occupation": "Soil and groundwater contamination specialist, Alberta Environment (2008-2015)",
+   "occupation_category": "public-service",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0872"
+  },
+  {
+   "name": "schow",
+   "full_name": "Joseph Schow",
+   "mid": "0941",
+   "source_kind": "live",
+   "education_level": "graduate",
+   "education_field": "Russian; international affairs",
+   "alma_maters": [
+    "Dalhousie University",
+    "George Washington University"
+   ],
+   "prior_occupation": "Legislative co-ordinator with the Legislative Assembly of Alberta; parliamentary assistant with the House of Commons of Canada",
+   "occupation_category": "public-service",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0941"
+  },
+  {
+   "name": "schulz",
+   "full_name": "Rebecca Schulz, ECA",
+   "mid": "0942",
+   "source_kind": "wayback",
+   "education_level": "graduate",
+   "education_field": "communications",
+   "alma_maters": [
+    "Johns Hopkins University",
+    "University of Saskatchewan"
+   ],
+   "prior_occupation": "Director of alumni marketing and communications, University of Calgary; director of communications, Saskatchewan Ministry of Education",
+   "occupation_category": "communications-PR-journalism",
+   "source_url": "https://web.archive.org/web/20200921082134/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0942&legl=30&from=mla_home"
+  },
+  {
+   "name": "schweitzer",
+   "full_name": "Doug Schweitzer, ECA, KC",
+   "mid": "0943",
+   "source_kind": "wayback",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Partner with a private law firm specializing in bankruptcy and insolvency",
+   "occupation_category": "law",
+   "source_url": "https://web.archive.org/web/20200918193745/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0943&from=bill&billinfoid=11859"
+  },
+  {
+   "name": "shandro",
+   "full_name": "Tyler Shandro, ECA, KC",
+   "mid": "0944",
+   "source_kind": "wayback",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [
+    "University of Calgary"
+   ],
+   "prior_occupation": "Practising lawyer in Calgary",
+   "occupation_category": "law",
+   "source_url": "https://web.archive.org/web/20200920075321/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0944&from=bill&billinfoid=11848"
+  },
+  {
+   "name": "shepherd",
+   "full_name": "David Shepherd",
+   "mid": "0874",
+   "source_kind": "live",
+   "education_level": "bachelor",
+   "education_field": "professional communications; music",
+   "alma_maters": [
+    "MacEwan University",
+    "Royal Roads University"
+   ],
+   "prior_occupation": "Communications adviser and writer; previously musician and studio engineer",
+   "occupation_category": "communications-PR-journalism",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0874"
+  },
+  {
+   "name": "sigurdson",
+   "full_name": "Lori Sigurdson",
+   "mid": "0875",
+   "source_kind": "live",
+   "education_level": "graduate",
+   "education_field": "social work; political science",
+   "alma_maters": [
+    "University of Alberta",
+    "University of Calgary"
+   ],
+   "prior_occupation": "Social worker for 25 years (child welfare, mental health, community development, social policy); social work instructor",
+   "occupation_category": "public-service",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0875"
+  },
+  {
+   "name": "smith",
+   "full_name": "Mark Smith",
+   "mid": "0896",
+   "source_kind": "wayback",
+   "education_level": "bachelor",
+   "education_field": "education",
+   "alma_maters": [
+    "Concordia College",
+    "University of Alberta"
+   ],
+   "prior_occupation": "Social studies teacher, 30 years as an educator",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20200921090041/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0896&legl=30&from=mla_home"
+  },
+  {
+   "name": "stephan",
+   "full_name": "Jason Stephan",
+   "mid": "0947",
+   "source_kind": "live",
+   "education_level": "professional",
+   "education_field": "law; accounting",
+   "alma_maters": [
+    "University of Calgary"
+   ],
+   "prior_occupation": "Lawyer and chartered professional accountant; founder and owner of CA Tax Law",
+   "occupation_category": "law",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0947"
+  },
+  {
+   "name": "sweet",
+   "full_name": "Heather Sweet",
+   "mid": "0877",
+   "source_kind": "live",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Registered social worker; child protection services (2005-2015)",
+   "occupation_category": "public-service",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0877"
+  },
+  {
+   "name": "toews",
+   "full_name": "Travis Toews, ECA",
+   "mid": "0948",
+   "source_kind": "wayback",
+   "education_level": "unknown",
+   "education_field": "accounting (CPA, CMA)",
+   "alma_maters": [],
+   "prior_occupation": "Managing director and co-owner of a family cattle ranching operation and an oil field environmental company since 2002; 12 years in public accounting practice",
+   "occupation_category": "agriculture",
+   "source_url": "https://web.archive.org/web/20200918222136/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0948&from=bill&billinfoid=11832"
+  },
+  {
+   "name": "turton",
+   "full_name": "Searle Turton",
+   "mid": "0950",
+   "source_kind": "live",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Technology sales and document control systems for a large Canadian technology company; previously tradesman in construction; three-term Spruce Grove city councillor",
+   "occupation_category": "business",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0950"
+  },
+  {
+   "name": "van dijken",
+   "full_name": "Glenn van Dijken",
+   "mid": "0898",
+   "source_kind": "live",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Grain farmer, family farm at Dapp, Alberta",
+   "occupation_category": "agriculture",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0898"
+  },
+  {
+   "name": "walker",
+   "full_name": "Jordan Walker",
+   "mid": "0951",
+   "source_kind": "wayback",
+   "education_level": "graduate",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Foreign qualification recognition and immigration officer, Government of Alberta; taught English as a second language in Japan",
+   "occupation_category": "public-service",
+   "source_url": "https://web.archive.org/web/20200921093052/https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0951&legl=30&from=mla_home"
+  },
+  {
+   "name": "williams",
+   "full_name": "Dan Williams",
+   "mid": "0952",
+   "source_kind": "live",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Worked at a construction and gravel company",
+   "occupation_category": "trades-labour",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0952"
+  },
+  {
+   "name": "wilson",
+   "full_name": "Rick Wilson",
+   "mid": "0953",
+   "source_kind": "live",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Owner-operator of numerous businesses in construction, land development and heavy construction; rancher; County of Wetaskiwin councillor and deputy reeve",
+   "occupation_category": "business",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0953"
+  },
+  {
+   "name": "yao",
+   "full_name": "Tany Yao",
+   "mid": "0899",
+   "source_kind": "live",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Emergency response services for 20 years",
+   "occupation_category": "health",
+   "source_url": "https://www.assembly.ab.ca/members/members-of-the-legislative-assembly/member-information?mid=0899"
+  }
+ ],
+ "no_official_bio": [
+  "ady",
+  "agnihotri",
+  "allred",
+  "amery",
+  "anderson",
+  "anglin",
+  "b. miller",
+  "babcock",
+  "backs",
+  "benito",
+  "berger",
+  "bhardwaj",
+  "bhullar",
+  "blackett",
+  "blakeman",
+  "bonko",
+  "boutilier",
+  "brown",
+  "calahasen",
+  "campbell",
+  "cao",
+  "cardinal",
+  "carlier",
+  "cenaiko",
+  "chase",
+  "cheffins",
+  "clark",
+  "coolahan",
+  "coutts",
+  "dallas",
+  "danyluk",
+  "delong",
+  "denis",
+  "doerksen",
+  "drever",
+  "drysdale",
+  "ducharme",
+  "dunford",
+  "elniski",
+  "elsalhy",
+  "evans",
+  "fawcett",
+  "fildebrandt",
+  "fitzpatrick",
+  "flaherty",
+  "forsyth",
+  "fraser",
+  "fritz",
+  "gill",
+  "goudreau",
+  "graydon",
+  "griffiths",
+  "groeneveld",
+  "haley",
+  "hancock",
+  "hayden",
+  "hehr",
+  "herard",
+  "hinkley",
+  "hinman",
+  "horne",
+  "horner",
+  "jabbour",
+  "jablonski",
+  "jacobs",
+  "jansen",
+  "johnson",
+  "johnston",
+  "kang",
+  "kazim",
+  "klein",
+  "kleinsteuber",
+  "klimchuk",
+  "knight",
+  "larivee",
+  "leskiw",
+  "liepert",
+  "lindsay",
+  "littlewood",
+  "lougheed",
+  "luff",
+  "lukaszuk",
+  "lund",
+  "macdonald",
+  "macintyre",
+  "malkinson",
+  "mar",
+  "martin",
+  "marz",
+  "mason",
+  "mather",
+  "mcclellan",
+  "mccuaig-boyd",
+  "mcfarland",
+  "mckitrick",
+  "mclean",
+  "mcpherson",
+  "mcqueen",
+  "melchin",
+  "miller",
+  "mitzel",
+  "morton",
+  "oberg",
+  "oberle",
+  "olson",
+  "ouellette",
+  "pannu",
+  "pastoor",
+  "payne",
+  "piquette",
+  "prins",
+  "quest",
+  "r. miller",
+  "redford",
+  "renner",
+  "rev. abbott",
+  "rodney",
+  "rogers",
+  "rosendahl",
+  "s. anderson",
+  "sandhu",
+  "sarich",
+  "saskiw",
+  "schneider",
+  "schreiner",
+  "sherman",
+  "snelgrove",
+  "starke",
+  "stelmach",
+  "stevens",
+  "stier",
+  "strang",
+  "strankman",
+  "sucha",
+  "swann",
+  "taft",
+  "tarchuk",
+  "taylor",
+  "tougas",
+  "turner",
+  "vanderburg",
+  "w. anderson",
+  "weadick",
+  "webber",
+  "westhead",
+  "woo-paw",
+  "woollard",
+  "xiao",
+  "zwozdesky"
+ ]
+}

@@ -301,6 +301,27 @@ WRONG for OpenAI on both counts, half-right for Anthropic.**
   software analogues did" and the whole reconciliation added as a new §3.3
   paragraph + source [37].
 
+**Subscription plans as a socialization channel (added 2026-08-12, Matthew's
+point).** SemiAnalysis (June 2026, via aggregator — original paywalled;
+**re-verify before load-bearing use**) stress-drained the plans with coding
+tasks: **Claude Max 20x ($200/mo) ≈ $8,000/mo of API-equivalent tokens;
+ChatGPT Pro up to $14,000 — 40–70× face value.** Break-even reconstruction:
+utilization* = markup × price / API-equivalent value; at $8,000 equivalent,
+any assumed API markup ≤ ~4× puts break-even **under 10% average utilization**
+(matches the calculation from Matthew's earlier session, which did not survive
+to disk). Two readings, both wanted: (i) the paid plans — not just free tiers —
+deliver capability at a small fraction of its metered value, i.e. **below-cost
+delivery through the subscription channel is part of the continuous
+socialization**, cross-subsidized inside the plan (light users → heavy users)
+and outside it (the loop's capital → the deficit); (ii) **flat-rate viability
+is a solvency bet on wanting saturation** — the pricing is only sustainable if
+most subscribers do not want most of what they bought, so the labs' own price
+structure is revealed-preference evidence for the coherence thesis, and the
+subscription model's survival is a live gauge on the wanting race (if agentic
+orchestration makes everyone a heavy user, the model reprices to metered or
+dies — the labs' own seat-to-work question, cf. the report's §11 watch
+variable).
+
 **Why the $330–350B aggregate survives:** it is *economic rent* — profit above
 a normal return, after all costs — not gross margin. Healthy marginal serving
 economics and zero economic rent at the model layer are fully compatible, and

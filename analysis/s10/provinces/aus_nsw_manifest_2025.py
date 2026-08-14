@@ -21,6 +21,12 @@ YEAR = "https://api.parliament.nsw.gov.au/api/hansard/search/year/{}"
 PDF = "https://api.parliament.nsw.gov.au/api/hansard/search/daily/pdf/{}"
 CH = {"Legislative Assembly": "LA", "Legislative Council": "LC"}
 START, END = "2025-01-01", "2026-08-09"
+# The 2011-14 and 2020-24 years the windowed design skipped. Same public year
+# index, so backfilling is a wider year list and a different output file.
+import os
+FILL_YEARS = [2011, 2012, 2013, 2014, 2020, 2021, 2022, 2023, 2024]
+if os.environ.get("S10_FILL"):
+    START, END = "2011-01-01", "2024-12-31"
 
 
 def get(url):
@@ -32,7 +38,7 @@ def get(url):
 
 def main():
     rows = []
-    for year in (2025, 2026):
+    for year in (FILL_YEARS if os.environ.get('S10_FILL') else (2025, 2026)):
         time.sleep(1.1)
         days = get(YEAR.format(year))
         n = 0
@@ -56,7 +62,7 @@ def main():
                 n += 1
         print(f"{year}: {len(days)} indexed dates, {n} chamber-days in period")
     rows.sort(key=lambda r: (r["date"], r["chamber"]))
-    (HERE / "aus_nsw_manifest_2025.json").write_text(json.dumps(rows, indent=1))
+    (HERE / f"aus_nsw_manifest{os.environ.get('S10_SUFFIX', '_2025')}.json").write_text(json.dumps(rows, indent=1))
     unc = sum(1 for r in rows if r["uncorrected"])
     print(f"manifest rows: {len(rows)}  (uncorrected/proof: {unc})")
     per = {}

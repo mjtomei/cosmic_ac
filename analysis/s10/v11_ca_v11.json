@@ -1,0 +1,30 @@
+{
+ "corpus": "Canada House of Commons",
+ "protocol": "v1.1",
+ "seed": 1510476100,
+ "pre_words": 20110275,
+ "post_words": 11122215,
+ "pre_sittings": 465,
+ "n_placebo": 1000,
+ "arms": {
+  "style": {
+   "n_words_total": 407,
+   "n_words_present": 384,
+   "primary_mean_logFC": -0.00129,
+   "placebo_median": -0.02988,
+   "placebo_max": 0.0633,
+   "excess": 0.02859,
+   "p": 0.132
+  },
+  "content": {
+   "n_words_total": 493,
+   "n_words_present": 210,
+   "primary_mean_logFC": -0.56817,
+   "placebo_median": -0.118,
+   "placebo_max": 0.02654,
+   "excess": -0.45017,
+   "p": 1.0
+  }
+ },
+ "style_minus_content": 0.47876
+}

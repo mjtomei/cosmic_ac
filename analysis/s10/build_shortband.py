@@ -15,13 +15,16 @@ and applied no weights.
 
 TWO REASONS TO REDO IT RATHER THAN REUSE §5.0a
 
-Its short-band verdicts are 119 Human and 1 AI across 120 segments, with NOT
-ONE Mixed. That is the Pangram 3 signature: the tier defect was not found
-until 2026-08-09, a week after those scores, and P3 never returns Mixed at all
-(it called Human on 3 of 8 P4-AI segments and 5 of 6 P4-Mixed in the route
-check). None of those 120 were ever rescored on Pangram 4 -- verified against
-pangram_p4_verdicts.csv. If the short-band rate was measured with a model that
-undercounts, §5.0a's correction is too large, not too small.
+Its short-band verdicts are 119 Human and 1 AI across 120 segments, with no
+Mixed, and that was read here as the Pangram 3 signature. IT IS NOT. Pangram 3
+does return Mixed -- pangram_p4_verdicts.csv's prior_p3 column holds 8 -- and
+zero Mixed among 120 SHORT segments is what Pangram 4 predicts regardless: the
+matched-rate P4 short band flagged 9 of 1,648. The tier of those rows is
+unrecorded, not established.
+
+The reason to redo the short band stands on the other argument below, which
+does not depend on the tier at all: 40 per chamber with weights applied
+afterwards is not the same design as a matched sampling rate.
 
 And it sampled a fixed 40 per chamber, then applied corpus weights afterwards.
 

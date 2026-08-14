@@ -14,6 +14,7 @@ Some archived captures recorded the WAF 403 page, so rows are filtered to
 statuscode 200 AND the expected mimetype; earliest good capture wins.
 """
 import json
+import os
 import re
 import time
 import urllib.request
@@ -26,7 +27,11 @@ CDX = ("http://web.archive.org/cdx/search/cdx?url=hansardsearch.parliament.sa.go
        "/daily/{ch}/&matchType=prefix&fl=original,timestamp,mimetype,statuscode"
        "&limit=400000")
 CHAMBER = {"lh": "House of Assembly", "uh": "Legislative Council"}
-WINDOWS = ((2006, 2010), (2015, 2019))
+# The window pair above is the original drift design; the sources
+# publish continuously. S10_FILL / S10_SUFFIX backfill the skipped
+# years (2011-14, 2020-24) without overwriting the first pass.
+WINDOWS = (((2011, 2014), (2020, 2024))
+           if os.environ.get("S10_FILL") else ((2006, 2010), (2015, 2019)))
 
 
 def in_window(d):
@@ -90,7 +95,7 @@ def main():
                     "local": f"{ch}_{date}_x{n:03d}.xml",
                 })
 
-    (HERE / "aus_sa_manifest.json").write_text(json.dumps(rows, indent=1))
+    (HERE / f"aus_sa_manifest{os.environ.get('S10_SUFFIX','')}.json").write_text(json.dumps(rows, indent=1))
     days = {(r["ch"], r["date"]) for r in rows}
     print(f"{len(rows)} files over {len(days)} chamber-days")
     for lo, hi in WINDOWS:

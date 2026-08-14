@@ -1,8 +1,15 @@
 # Machine-drafted speech in legislatures: prevalence, concentration, and a register that predates the machines
 
-**S10 — draft write-up, 2026-08-11.** All arms complete, including the
-detector-bypass study and both prior-art comparators. Everything is
-reproducible from `analysis/s10/`.
+**S10 — draft write-up, 2026-08-11; §4.6a and Appendix A extended
+2026-08-13.** All arms complete, including the detector-bypass study and both
+prior-art comparators. Everything is reproducible from `analysis/s10/`.
+
+**The 2026-08-13 additions carry UNVERIFIED citations.** §4.6a places its
+result against Labov, Simmel, Veblen, Jhering, Bourdieu and Lieberson, none of
+which has been checked against a primary text — one fetched entry was already
+wrong on both year and publisher. See `CLASS-REGISTER-LITERATURE.md`. That
+subsection also reports standard errors that are not clustered on member,
+which the study has been bitten by three times; both are flagged in place.
 
 **Numbers marked † are carried from earlier in the study.** All nine were
 re-derived from their artifacts on 2026-08-11 and reproduce; footnotes on each
@@ -52,12 +59,14 @@ Per chamber, two strata:
   2022-12-31: ChatGPT shipped 2022-11-30, and a "pre-AI" control dated
   December 2022 is not pre-AI. Every chamber had ample earlier material, so
   the tighter cutoff cost nothing.
-- **prevalence** — 120 segments dated 2025-01-01 or later, sampled uniformly
-  at random with no screen stratification, so the estimate needs no
-  reweighting.
+- **prevalence** — segments dated 2025-01-01 or later, sampled uniformly at
+  random with no detector-screen stratification.
 
-Segments are 120–360 words, member-authored, English-original, non-chair.
-Sampling is seeded per cell and reproducible (`build_pangram_expansion.py`).
+Segments are member-authored, English-original, non-chair, and 50 words or
+longer — the whole of the record Pangram will read. Sampling is at a uniform
+rate across segment lengths, so the sample reproduces the corpus's own length
+mix and the pooled estimate needs no length weights. Sampling is seeded per cell
+and reproducible (`build_pangram_expansion.py`, `build_shortband.py`).
 
 ### 2.1 Two contamination hazards, both found by looking
 
@@ -191,25 +200,123 @@ a false-positive problem** — disagreements run net upward (33 segments moved
 out of Human, 9 the other way). Earlier NB conclusions stand as conservative.
 (`nb_p3_vs_p4.py`)
 
-### 4.2 Prevalence: 12.4%, with a sevenfold spread
+### 4.2 Prevalence: 9.0% of words, with an elevenfold spread
 
-**Pooled 275/2,220 = 12.4% [11.1%, 13.8%]**, excluding regime-flagged TAS.
+**Pooled 9.03% of words [8.00%, 10.08%]** — 65,795 machine-written words of
+728,998 across 3,519 segments in 20 chambers, excluding regime-flagged TAS.
 
-| chamber | flagged | 95% CI | | chamber | flagged | 95% CI |
+Every figure below is the share of *what was said* that is machine-drafted,
+over the whole of the record Pangram will read.
+
+*Weighted by words, because a segment is not a natural unit.* `segment.py`
+packs speaker turns into windows of at most 360 words, so a long speech becomes
+three segments and a short interjection becomes one. A rate over segments is
+partly a measurement of our packer; a rate over words is invariant to how the
+text was cut up.
+
+*Weighted by AI fraction, because a flagged segment is not uniformly flagged.*
+A Mixed verdict is Pangram reporting that part of the segment is human, so
+counting all of its words as machine over-states the rate by a third —
+**12.03% against 9.03%**. Every flagged segment is weighted by its own AI
+share: recorded directly for the API-scored rows, and read off the dashboard
+result by result for all 132 Mixed segments the API did not cover. Mixed
+segments average **0.435** machine (n=132, sd 0.219, range 0.11–1.00); AI
+verdicts are effectively a constant at 0.9965. Human verdicts are 0.0 in every
+one of the 1,246 recorded cases.[^r42f]
+
+| chamber | rate | 95% CI | | chamber | rate | 95% CI |
 |---|---|---|---|---|---|---|
-| NSW | **23.3%** | [16.7, 31.7] | | AB | 11.7% | [7.1, 18.6] |
-| CA-FED | 22.8% | [17.3, 29.4] | | VIC | 10.8% | [6.4, 17.7] |
-| QLD | 20.8% | [14.5, 28.9] | | SA | 10.0% | [5.8, 16.7] |
-| NI | 20.0% | [13.8, 28.0] | | WAL | 7.5% | [4.0, 13.6] |
-| BC | 16.7% | [11.1, 24.3] | | SK | 6.7% | [3.4, 12.6] |
-| US House | 15.0% | [9.7, 22.5] | | WA | 5.8% | [2.9, 11.6] |
-| NS | 14.2% | [9.0, 21.5] | | MB / NL / SCO | 5.0% | [2.3, 10.5] |
-| ON | 14.2% | [9.0, 21.5] | | **US Senate** | **3.3%** | [1.3, 8.3] |
-| *TAS (flagged)* | *11.7%* | *not pooled* | | | | |
+| NSW | **19.8%** | [13.2, 26.9] | | IE | 7.5% | [3.6, 12.2] |
+| CA-FED | 18.5% | [12.5, 24.6] | | VIC | 7.3% | [3.5, 11.7] |
+| QLD | 15.8% | [9.9, 22.1] | | SA | 6.8% | [2.9, 11.3] |
+| BC | 14.2% | [8.3, 20.4] | | WA | 4.9% | [1.4, 9.1] |
+| MB | 13.1% | [8.1, 18.6] | | WAL | 4.9% | [1.6, 8.9] |
+| NI | 13.1% | [8.1, 18.6] | | SK | 4.1% | [1.3, 7.5] |
+| **US House** | **12.1%** | [7.0, 17.7] | | SCO | 3.9% | [1.0, 7.4] |
+| ON | 11.1% | [6.1, 16.8] | | NL | 3.3% | [0.8, 6.6] |
+| NS | 10.0% | [5.4, 15.2] | | UK | 2.5% | [0.7, 4.8] |
+| AB | 7.8% | [3.9, 12.2] | | **US Senate** | **1.8%** | [0.1, 4.1] |
 
-The spread is the finding, not noise around a mean. **US House 15.0% vs US
-Senate 3.3%** is the sharpest contrast available: two chambers of one
-legislature, near-identical AI policies, differing 4.5-fold.
+Intervals are cluster bootstraps over segments, not Wilson intervals: the
+estimator is a ratio of two random sums whose numerator and denominator move
+together, so a chamber whose one flagged segment happens to run 900 words
+should read as less certain than one whose flag is 130 words, and a binomial on
+segment counts cannot express that.[^r42]
+
+The spread is the finding, not noise around a mean. **US House 12.1% vs US
+Senate 1.8%** is the sharpest contrast available: two chambers of one
+legislature, near-identical AI policies, differing sevenfold.
+
+**Federal Canada's row comes from its own uniform draw**, not from the
+genre-stratified sample that answers §4.3. The genre arm takes 60 segments
+each from Statements by Members, Government Orders and Oral Questions, which
+imposes a genre mix rather than observing one and leaves 25.6% of the chamber's
+in-band record — Private Members' Business, Adjournment Proceedings, Routine
+Proceedings, the Throne Speech reply — in no stratum at all. Read as a chamber
+rate it gives 16.5%; the uniform draw of 120 prevalence segments gives **18.5%**,
+and the uniform draw is what the table reports. Dropping CA-FED entirely leaves
+the pool at 8.50% against 9.03%, so the chamber contributes about half a point
+to the headline and neither makes nor breaks it.[^r42ca]
+
+[^r42ca]: `pangram_ch_verdicts.csv`, rows `caprev*`/`cactl*`. Its short band
+    already matched this draw: 120 × 15,236/18,029 = 101, and 101 short
+    segments were scored at the matched rate. Seven controls dated after the
+    2022-06-30 cutoff — one of them after ChatGPT shipped — were replaced on
+    2026-08-13 from the same 2018–2022 window the survivors occupy
+    (`build_cafed_ctl_redraw.py`); all seven replacements scored Human, as had
+    all seven originals, so specificity is unchanged at 60/60 and only the
+    design claim is repaired.
+
+**UK Commons and Dáil Éireann are scored entirely on Pangram 4**, verified
+rather than assumed: all 360 of their segments from the four-chamber arm, which
+recorded no model version, were rescored through the dashboard and agree with
+the original verdicts **360 out of 360**. That agreement is itself the largest
+Pangram 3-versus-4 comparison in the study (§3.2).
+
+**Manitoba's 13.1% depends on a repaired extractor**, and without it the
+chamber reads 5.3%. The original extraction lost 42% of the record: from
+mid-2018 the Manitoba Hansard export splits a speaker's name across several bold runs
+around inserted table-of-contents anchors, the extractor's prefix pattern
+matched only the first run, and the speech accreted to the previous turn — the
+Speaker's — where it was discarded as chair voice. Chair share of page text ran
+4% in 2011–13 against 37–40% in 2020–24.
+
+The loss was **not neutral**, which is why it matters so much. A frame missing
+42% of text at random would leave the rate roughly unchanged. What was
+missing were the formatted, anchor-bearing speeches — the prepared ones — and
+prepared business is exactly where drafting concentrates (§4.3). The extractor
+was preferentially deleting the machine-drafted half of the chamber's record.
+
+The controls are the check that this is a frame effect and not the detector
+behaving differently: they were clean before the fix and remain clean after,
+**0 of 18,342 words**. 275 segments were redrawn from the corrected extraction
+and rescored, restricted to the original year windows so that the frame is the
+only thing that changed.[^r42mb]
+
+[^r42mb]: `python build_mb_redraw.py`, then `pangram_mb_redraw_verdicts.csv`.
+    The redraw deliberately excludes the years backfilled in August 2026: a
+    first draw from the corrected frame pulled 30 of its 90 controls from
+    2011–14 and 2020–22, years no other chamber can draw from, which would have
+    confounded the frame repair with a change of window. The superseded
+    extraction is kept at `provinces/superseded/` so the pre-fix verdicts stay
+    reproducible — 135 of the old 278 seg_ids do not exist in the corrected
+    file, because re-extraction shifts turn indices.
+
+[^r42f]: Fractions live in `fraction_ai_harvested.json` (151 harvested
+    individually) and in the `fraction_ai` column of
+    `pangram_p4_verdicts.csv` (1,431 recorded by the API). The 154 AI verdicts
+    not harvested individually are carried at the measured constant; two
+    independent samples put it at 0.9965 (n=148) and 1.0000 (n=19), and the
+    lowest AI value anywhere is 0.81, so clicking them would move the pooled
+    figure by under 0.01pp.
+
+    **This is a correction, not a refinement.** Every rate this study reported
+    before 2026-08-13 counted a Mixed segment as wholly machine-written. The
+    error is a factor of 1.33 on the headline and is not uniform across the
+    study: it is largest where Mixed verdicts cluster, which is the
+    mixed-format business in the middle of §4.3's genre ladder.
+
+[^r42]: `python -c "import banded_prevalence as B; B.table(B.load())"`.
 
 ### 4.3 Genre: drafting concentrates in scripted business
 
@@ -230,14 +337,36 @@ procedure permits**, which is the mechanism under test:
   on notice**, so neither question nor answer can be fully drafted in
   advance; both sides are held to roughly 35 seconds.
 
-| genre, 2025–26 | flagged | 95% CI |
+| genre, 2025–26 | flagged words | 95% CI |
 |---|---|---|
-| **SO31** — one-minute scripted set-pieces | **36.7%** | [25.6, 49.3] |
-| Government Orders — mixed prepared and spontaneous | 23.3% | [14.4, 35.4] |
-| **Oral Questions** — not on notice | **8.3%** | [3.6, 18.1] |
-| all three pre-AI controls | **0.0%** | [0.0, 6.0] |
+| **SO31** — one-minute scripted set-pieces | **32.3%** | [21.0, 44.1] |
+| Government Orders — mixed prepared and spontaneous | 19.9% | [10.4, 30.3] |
+| **Oral Questions** — not on notice | **9.8%** | [2.3, 19.2] |
+| all three pre-AI controls | **0.0%** | [0.0, 0.0] |
 
-**SO31 vs OQ: 4.40×, Fisher exact two-sided p = 0.00034.**
+**SO31 vs OQ: 3.29×, +22.5pp, permutation p = 0.0025.**
+
+Word-weighted and fraction-weighted, like every other rate here. **Weighting
+by the AI share widened this ladder rather than flattening it**, which was not
+the expected direction: Mixed verdicts are commoner in the mixed-format
+Government Orders than in the scripted SO31 set pieces, so counting Mixed
+segments as wholly machine had been flattering the middle rung. On binary
+counting the three read 35.8% / 25.7% / 11.8% and a 3.03× ratio.
+
+The word-weighting choice matters more in this table than anywhere else in the
+study: the genres differ sharply in how long
+their segments are — SO31 is a one-minute set piece, a Government Orders slot
+runs twenty — so a segment-weighted comparison measures the packer's behaviour
+across genres alongside the drafting. On segments the same data reads 36.7% /
+23.3% / 8.3% and a 4.40× ratio; word- and fraction-weighted the ordering is
+unchanged and **the gap settles at 3.29×**. The test is a label permutation rather than
+Fisher exact, because Fisher takes segment counts and the estimator is a ratio
+of summed words.[^r43w]
+
+[^r43w]: `python prevalence_report.py` for the rates and bootstrap intervals;
+    the SO31-vs-OQ permutation is 50,000 label shuffles of the pooled
+    prevalence segments. Reported here rather than the old Fisher p = 0.00034,
+    which tested a quantity the study no longer reports.
 
 The ordering is exactly what the mechanism predicts — the more preparable the
 format, the more machine drafting — and it is the one place where the lexicon
@@ -355,11 +484,137 @@ Read together with §4.7, the interesting reading is not "LLMs changed
 parliamentary register" but that **human register had been moving toward what
 instruct-tuning later selected for, for thirty years.** †
 
+### 4.5a The climb is everywhere except the United States
+
+Running the same series on every chamber turns the thirty-year drift into a
+comparison. The instrument and the 200 matched placebo sets are built once, on
+UK Commons 2010–12, and applied unchanged everywhere, so the chambers are
+measured with the same ruler.[^r45a]
+
+| chamber | gap per 100k, first year | last year | change | |
+|---|---|---|---|---|
+| UK Commons | 380 (1994) | **1,444** (2026) | **×3.80** | rises |
+| Ireland | 1,603 (2018) | **1,975** (2026) | ×1.23 | rises |
+| CA federal | 1,865 (2015) | 1,735 (2026) | ×0.93 | flat |
+| **US House** | **1,515** (1994) | **1,709** (2026) | **×1.13** | **flat** |
+| **US Senate** | **1,314** (1994) | **1,562** (2026) | **×1.19** | **flat** |
+
+The US chambers are flat across thirty-two years, and they start *above* where
+the UK still sits two decades later: US House 1,515 in 1994 against the UK's
+1,444 in 2026. So the picture is not a common shift. It is everyone else
+converging upward on a level the United States already held before the consumer
+web, while the United States does not move.
+
+The US series reaches back to 1994 only as of 2026-08-13. The Congressional
+Record is on GovInfo from 1994, which the study had not used: the original
+download began at 2006 because that was where the state-exposure design needed
+it. Extending it was the decisive test, because a US series starting in 2006
+cannot distinguish "the United States was always there" from "the United States
+got there first and stopped". The 1994 values settle it.[^r45c]
+
+**They caught up; they did not pass.** A single recent year appears to
+contradict that: in 2026 the Canadian provinces, Ireland, the Australian states
+and federal Canada all sit above US House. The comparison does not survive
+contact with the variance. US House swings between 1,660 and 2,074 across the
+series — a 25% range, the widest here — and 2026 catches it at 1,709, near its
+own floor. On 2020–26 means, with each series' standard deviation alongside:
+
+| | mean | sd | vs US House |
+|---|---|---|---|
+| CA provinces | 2,054 | 61 | **+155 (+1.28 sd)** |
+| Ireland | 1,901 | 52 | +2 (+0.02 sd) |
+| **US House** | **1,899** | **121** | — |
+| AUS states | 1,861 | 36 | −39 (−0.32 sd) |
+| CA federal | 1,816 | 134 | −84 (−0.69 sd) |
+| US Senate | 1,591 | 60 | −309 (−2.55 sd) |
+| UK Commons | 1,415 | 61 | −484 (−4.00 sd) |
+
+Only the Canadian provinces are meaningfully above, and they are a standing
+exception this study does not explain. Ireland is at parity to within a
+fiftieth of a standard deviation; the Australian states and federal Canada are
+below. Three of the four apparent overshoots are US House having a low year.
+
+**Exported machine text does not account for the rest, and cuts the wrong
+way.** The natural rescue — that AI drafting, American-inflected, is pushing
+the others past — fails on the arithmetic: US House is **14.3% machine by
+instrument occurrences** against Ireland's 9.0% and the Australian states'
+11.3%, so removing machine text lowers the American benchmark by more than it
+lowers the challengers. Federal Canada is the one case it does explain, at
+21.7% the most machine-written chamber in the study, dropping from
+apparently-above to clearly-below once corrected.[^r45f]
+
+[^r45f]: `python convergence_check.py`, with shares from
+    `ai_share_of_instrument.py`. Machine-written text carries the instrument at
+    4,231 occurrences per 100k words against human text's 3,470, a ratio of
+    1.22×, so a chamber that is 9.0% machine by words is 10.6% machine by
+    occurrences. Note this is an overlap between two instruments and not a
+    causal decomposition: a high instrument rate inside flagged text is part of
+    why the detector flagged it. The correction also applies only to 2025–26,
+    the detector's window, so it is anachronistically absent from 2023–24 where
+    some machine text certainly exists unmeasured.
+
+**A caveat that constrains how this can be read.** The instrument is Kobak et
+al.'s list, derived from PubMed abstracts — American scientific English. Chamber
+*levels* are therefore partly definitional: a US-derived yardstick will score US
+speech high whatever is happening. The defensible comparison is the *within*-chamber
+trend, and that is where the finding sits.
+
+**What post-training does resembles what already distinguished American
+usage.** If the two processes select for the same thing, the vocabulary shift
+instruct-tuning induces should line up with the difference that already
+separated American from British legislative speech before any model existed.
+Measured on 4,823 words in a 2006–10 window, it does, weakly and
+specifically:[^r45b]
+
+| contrast | Spearman | partial, holding frequency |
+|---|---|---|
+| post-training preference vs log(US/UK) | **+0.081** | **+0.086** |
+| vs log(Canada/UK) | +0.012 | +0.012 |
+| vs log(Australia/UK) | +0.018 | +0.004 |
+| vs log(US/Canada) | +0.083 | +0.088 |
+
+Permutation p < 0.005. The **discrimination** carries more than the coefficient:
+Canada and Australia are anglophone parliamentary democracies too, and
+post-training moves models toward none of what distinguishes *them* from
+Westminster. It is not drift away from British usage; it is drift toward
+American usage specifically, and Canada — nearest neighbour to the United
+States — shows nothing.
+
+The effect is small: r = 0.081 is under one percent of variance. And the design
+establishes compatibility, not cause. A shared cause predicts the same
+correlation — both the models and the global drift could be downstream of an
+American-dominated written corpus, with no common optimization involved. §8.6
+names the instrument that would separate those two.
+
+[^r45a]: `python occurrence_trends.py --build --report`. Word-weighted, pooled
+    into fixed-composition panels; a pooled line whose membership changes
+    between years is a picture of the download schedule, not a trend. Chamber
+    coverage and every gap are tabulated in the output. 2023 is missing from
+    most chambers because the study design excluded it as a washout year
+    between the 2018–22 and 2024–26 windows.
+
+[^r45c]: `python us/fetch_us_hist.py --years 1994-2005,2023 --per-year 60
+    --tag US_DEEP_DONE`, then re-extract with `us/us_extract.py zips
+    segments_us.jsonl` and rebuild. 780 sitting-day zips at 60 days/year;
+    both chambers are now unbroken 1994-2026 with no missing year. The
+    extraction nearly doubled the US corpus — House 66.0M to 108.2M words,
+    Senate 74.4M to 144.7M. Rates are per 100k words, so uniform within-year
+    sampling costs precision and not validity.
+
+[^r45b]: `python alignment_vs_american.py`. Three families at 1,600 prompts;
+    reference corpora US 37.6M, UK 44.2M, CA 74.8M, AU 88.8M words over
+    2006–10 — pre-transformer, and early enough that the UK's own climb has
+    barely begun, so the ratio compares two human traditions rather than two
+    stages of one drift. Reported on all words. US/UK spelling pairs and
+    one-word orthographic forms (`percent` for "per cent") are reported as a
+    separate stratum, along with two harsher filters, as robustness only.
+
 ### 4.6 Cohort replacement, not incumbent conversion
 
 - Arrivals bring **+1.87 per 1,000** more than incumbents (15/16 chambers). †[^r46a]
-- Birth decade predicts at **t ≈ 12**; occupation and education both run the
-  wrong way. †[^r46b]
+- Birth decade predicts at **t ≈ 12**; coarse occupation and post-secondary
+  controls run the wrong way, *strengthening* the cohort term. Finer measures
+  of both do predict the register (§4.6a) and still leave cohort intact. †[^r46b]
 - Cohort is separable from age: chamber age is flat while the register rises;
   cohort accounts for **~60%** of the change. †[^r46c]
 
@@ -382,7 +637,196 @@ instruct-tuning later selected for, for thirty years.** †
   member. (`decomposition_inference.py`)
 
 Stated conclusion: **generational, mechanism unidentified.** Three exposure
-tests failed to identify it (Appendix A).
+tests failed to identify it (Appendix A). Cohort is not the whole of who uses
+the register, though — §4.6a adds three predictors that survive it — but none
+of them identifies the cohort mechanism either.
+
+### 4.6a Standing predicts the register, and it predicts it downward
+
+Cohort is the largest term but it is not the only one, and the others share a
+direction worth stating before the tables: **the more established the speaker,
+the less of this register they use.** That holds across three measures which
+survive each other — occupational class, educational attainment, and how much
+has been written about the member — and it holds inside the vocabulary as well
+as across it, since the group that uses least is also the group that most
+avoids the words which rose most.
+
+None of this displaces cohort, which runs +1.20 to +1.40 per decade in every
+specification below. It sits beside it.
+
+#### Class: the peak is one rung below the top
+
+Coding each member's pre-political occupation into the
+Erikson–Goldthorpe–Portocarero schema — two independent Claude passes over a
+shared rubric, blind to each other, 96.4% raw agreement, disagreements
+adjudicated (`provinces/OCCUPATION_CODING.md`) — gives 897 members and 5,294
+member-years, 57.5% of the words that reach a named non-chair speaker in the
+eight Canadian provinces.
+
+Register rate against EGP class, year and province fixed effects, weighted by
+words, baseline class I:
+
+| class | | vs I | t | members |
+|---|---|---|---|---|
+| III | routine non-manual | **+2.00** | 4.98 | 29 |
+| II | lower service | **+0.84** | 4.23 | 435 |
+| IVab | petty bourgeoisie | **+0.80** | 3.24 | 180 |
+| I | higher service | — | — | 186 |
+| V/VI | skilled manual | +0.21 | 0.34 | 45 |
+| IVc | farmers | −0.24 | −0.58 | 53 |
+| VIIab | semi- and unskilled manual | **−1.66** | −4.22 | 16 |
+
+**The peak sits one to two rungs below the top.** Teachers, nurses,
+journalists, clerks and shopkeepers use the register more than lawyers,
+physicians and professors do, and the manual classes use it least. Lawyers are
+the single largest occupation in the corpus (40 members) and they sit *below*
+teachers.
+
+**The standard three-class collapse destroys this result**, which is worth
+stating because that collapse is the conventional reporting unit. NS-SEC pools
+III with IVc and V/VI with VIIab; the opposite signs cancel and the table reads
+professional 35.5 / intermediate 35.3 / working 34.9 — a null. The
+seven-class schema is not a refinement here, it is the difference between a
+finding and nothing.[^r46d]
+
+#### Education: a real ladder, once the professional track is taken off it
+
+Education behaves the same way once the ladder is separated from the
+professional track. On the academic rungs alone — secondary, college,
+bachelor, graduate — register rises **+0.366 per rung** (t = 3.30), and
+**+0.315** with birth cohort controlled (t = 2.96). Treating a professional
+degree as a rung above a master's zeroes the linear term entirely, because
+law and medicine sit **−0.785 below bachelor's** (t = −3.49). A professional
+degree outranks a bachelor's on any ordering, so that dip cannot be attainment;
+it is the same class-I effect arriving through a second instrument.
+
+#### The shape has a name
+
+The second-highest status group exceeding the highest, most visibly in
+self-conscious styles, is Labov's crossover pattern, and the disposition behind
+it is what he called linguistic insecurity — whose described signature,
+conscious striving for correctness with wide stylistic fluctuation, is the
+middle tier here.
+
+#### Flight: class I avoids the words that became common
+
+What distinguishes class I is *which* words it avoids. Across style words with
+enough volume in 2023–26, the correlation between a word's post/pre lift and
+class I's relative use of it against class II is negative at every volume
+threshold and strengthens monotonically with volume: ρ = −0.13 at 100+
+occurrences, −0.22 at 300+, **−0.42 at 800+ (p = 0.004)**, −0.46 at 1,500+.
+Class I under-uses `primary` (2.35× lift), `advocating` (1.85×), `advocates`
+(1.57×), `outcomes` (1.54×); it over-uses `remarkable`, `individuals`,
+`broader`, `ultimately` — words that barely moved.
+
+That is chase-and-flight: a marker loses value as it is copied, so the group
+that holds it abandons the most conspicuous forms first. Jhering stated it in
+1883 — fashion, once universally adopted, "condemned by its very nature to
+renew itself continuously" — and Veblen and Simmel gave it its standard form.
+Lieberson is the closest parallel to our case, because his markers are discrete
+lexical items: first names diffuse down the status ladder and are abandoned by
+higher-status parents once they become common.[^r46e]
+
+#### Prominence: the same direction, a different variable
+
+Each member's Wikipedia article length — fetched from the MediaWiki API through
+their Wikidata identifier, so it is a measured page property and not a
+judgement (`wiki_depth.py`, 1,354 of 1,396 members resolved, median 8,924
+bytes, range 1,478 to 136,048) — predicts the register **negatively**. Members
+with longer articles use less of it.
+
+On the 4,437 member-years carrying class, depth and birth year together:
+
+| | alone | with class | + cohort and volume |
+|---|---|---|---|
+| log article length | −0.607 (t −4.9) | −0.590 (t −4.6) | **−0.747** (t −6.2) |
+| class II vs I | +0.654 (t 3.1) | +0.464 (t 2.2) | +0.416 (t 2.1) |
+| class IVab vs I | +0.793 (t 3.0) | +0.541 (t 2.0) | +0.570 (t 2.2) |
+| class VIIab vs I | −1.563 (t −3.9) | −2.002 (t −4.9) | −2.176 (t −5.8) |
+| birth decade | | | **+1.400** (t 16.3) |
+| log words spoken | | | −0.461 (t −4.0) |
+
+Each absorbs about a quarter of the other and both survive. So the study has
+three partially independent predictors, and the two new ones point the same
+way: **the more established the speaker, the less of this register they use** —
+at the level of occupational class, and again at the level of individual
+prominence within a class. Volume runs the same direction; members who speak
+more use it less.
+
+WP:NPOL gives essentially every elected member an article, so existence
+discriminates nothing and depth is the usable instrument. It was collected as a
+control on notability bias in the education covariate — members whose education
+we know have **1.80× the median article length** of those we do not, so that
+bias is real and measured — and it turned out to be a result in its own right.
+
+#### Word mix: the effects live in rate, not vocabulary — and machine text sits outside the geometry
+
+A composition check (`vector_analysis.py`, methodology and full results in
+`VECTOR-ANALYSIS.md`): normalising each member's style-word vector to its own
+sum and z-scoring across 1,356 members, there are no prior-free clusters
+(silhouettes fall monotonically in k; PC1 carries 71% of variance), and class,
+education and cohort correlate with the mix at |r| ≤ 0.20 — **the standing
+effects above are about how much register a member uses, not which words**.
+Machine-flagged speech resembles no class tier (peak z-cosine +0.12 against a
+human control's +0.47), and in the one clean base/instruct pair available,
+post-training moves the model's mix **out of the human class geometry**:
+Sonnet 5, Opus 5 and Fable 5 traces are negative against every human class
+and education centroid and are the only text sets positively similar to the
+machine-flagged legislature pool (Sonnet +0.186) — the wild flagged speech
+resembles the models that presumably wrote it. qwen3's move *up* (class
+II/bachelor to I/graduate) is the outlier among five measurable families. Scored AI use itself runs *highest* in class I
+(11.3% vs II's 5.7%, 27-segment cell, suggestive only). Interpretation,
+recorded as such in VECTOR-ANALYSIS.md: because register and prevalence can
+now be measured explicitly, a legislature with a stated goal of fair
+representation can control for them — a fairness mechanism independent of the
+social dynamics this section documents, which are expected to persist.
+
+#### Limits, and they are real
+
+Article length is measured once, in 2026, and applied to every year of a
+member's career. A backbencher who later became premier carries their eventual
+prominence backwards through the series. That biases toward finding nothing
+rather than something, since it adds noise to the regressor, but it means the
+coefficient is not a clean within-career estimate.
+
+Class III is unstable and should be read as such: +1.03 with class alone, −1.05
+once depth, cohort and volume enter. On 29 members that is what an
+underdetermined cell looks like, and it is the clearest argument for the
+clustering caveat below.
+
+Classes III and VIIab rest on 29 and 16 members. Their standard errors treat
+repeated years of the same person as independent, so the true intervals are
+wider than shown and those two rows should not be quoted as significant. II and
+IVab, at 435 and 180 members, carry the finding.
+
+The chase-and-flight correlation strengthens as the volume cut rises, and that
+cut was chosen before the pattern was seen but not pre-registered. Two readings
+are consistent with the monotonicity — flight genuinely concentrates on the
+common forms, as the theory says, or low-volume words are noisier and
+attenuate the correlation — and this data cannot separate them. What argues
+against an artifact is that the sign is negative at all six thresholds,
+including the widest and least significant.
+
+Both effects leave cohort intact. Birth decade runs **+1.20 to +1.36 per
+decade** in every specification here, larger than any class or education
+contrast.
+
+[^r46d]: `python covariate_study.py`, `python class_origin.py --dist`. Coding
+    workflow and rubric ambiguities in `provinces/OCCUPATION_CODING.md`; the
+    adjudicators' fifteen flagged ambiguities cluster on exactly the I/II and
+    service/manual cuts the schema turns on, which is a caveat on the coding
+    and not on the register measurement.
+
+[^r46e]: `python class_markedness.py`, `build_class_word_year.py`. An earlier
+    version of this test used the *most-risen* words rather than the
+    *most-used* ones and found nothing; the theory predicts flight from gross
+    forms, so rare risers are the wrong test set. A separate cross-sectional
+    result — class I holding the lowest share of marked words overall — did
+    not survive a year control and is not reported. **Citations in this
+    subsection are UNVERIFIED**: gathered from reference pages, not primary
+    texts, and one fetched entry was already wrong on year and publisher. See
+    `CLASS-REGISTER-LITERATURE.md`. None should reach a published version
+    before the books are opened.
 
 ### 4.7 The register is a post-training artifact
 
@@ -394,30 +838,108 @@ OLMo-2 ladder, same prompts across the post-training stages:
 | DPO | **+0.86** † |
 | RLVR | +0.37 † |
 
-Pooled alignment effect **+0.42** [6.7 sd above the estimator's own null].[^r47]
-The shift is largest at the preference stage, which is what makes §4.5 more
-than a coincidence of direction: the thing RLHF selects for is something humans
-were already drifting toward.
+Pooled alignment effect **+0.387** on the scaled generation — three model
+families, 1,600 prompt pairs each, 1.19M base words.[^r47] The shift is largest
+at the preference stage, which is what makes §4.5 more than a coincidence of
+direction: the thing RLHF selects for is something humans were already drifting
+toward.
+
+**Quote the well-measured figure, not the pooled one.** The same run reports
++0.6311 pooled over every style word present and +0.3872 restricted to the 82
+words with at least 20 base occurrences. Doubling the data separates them: the
+well-measured estimate is flat (+0.3881 → +0.3903, a move of +0.0022 from 800
+to 1,600 prompts on the same families) while the pooled estimate keeps climbing
+(+0.6074 → +0.6235, and on Qwen3 alone +0.6776 → +0.7481 from 1,600 to 3,200).
+A quantity that grows with sample size is not converging on anything. The
+pooled figure includes style words with zero or near-zero base occurrences,
+where the 0.5 pseudocount sets the value, and more data keeps pulling in more
+of them.
+
+**All four families are positive on their own** — +0.356 to +0.749 pooled —
+which matters more than the pool, since it is four independent replications
+rather than one estimate. The 30B mixture-of-experts model is the weakest at
++0.067 well-measured, but it is also the only family whose instruct side never
+passed 800 prompts, with just 37 style words clearing 20 occurrences. That is
+an unresolved flag, not a counter-result.
 
 [^r47]: Ladder stages: `python olmo_ladder.py` (end-to-end base→instruct
-    **+1.2420**). The pooled **+0.42** is a *separate* experiment on two other
-    model families — `python rlhf_pref_analyze.py`, which prints
-    `EXCESS +0.4214, p < 0.001` (Qwen3-8B **+0.47** [+0.34, +0.59], Mistral-7B
-    **+0.16** [+0.05, +0.27]; 668 and 788 prompt pairs, Kobak style words
-    against frequency-matched controls). It is not a pooling of the three OLMo
+    **+1.2420**). The **+0.387** is a *separate* experiment on other model
+    families: `python rlhf_pref_compile.py`, reading the generation built by
+    `rlhf_pref_scale.py` at 400 new tokens over 3 families at 1,600 prompt
+    pairs each and 1.19M base words. It is not a pooling of the three OLMo
     stages, and it is not produced by `align_ratio.py report`, which prints the
-    Hansard-drift arm instead. Recorded here because looking for it in the
-    wrong script is how it came to be mistaken for an unsourced figure.
+    Hansard-drift arm instead.
 
-    **This figure was +0.88 until 2026-08-12 and the old value should not be
-    quoted.** The control pool was asymmetric: candidates were drawn only from
-    words the base model had emitted, so a control absent from base output was
-    impossible, while 57 of the 212 style words (27%) are absent from base
-    output and carry mean preference +1.45. Controls were also bucketed on the
-    ratio's own denominator, dragging the control median to −0.45 where a
-    symmetric control sits at ~0. Fed 30 random frequency-matched word lists,
-    the old procedure returned **+0.45** — a pedestal for lists with no special
-    property. The corrected estimator returns +0.003 on the same nulls.
+    Controls are drawn from the union of the base and instruct vocabularies and
+    bucketed on the combined count. Both details are load-bearing. Drawing only
+    from words the base model emitted makes a control absent from base output
+    impossible while 27% of the style words are exactly that, and bucketing on
+    the base count alone selects controls on the ratio's own denominator. An
+    estimator with either flaw returns **+0.45** on 30 random
+    frequency-matched word lists — a pedestal for lists with no special
+    property at all. The estimator used here returns +0.003 on those same
+    nulls, so the +0.387 sits on nothing.
+
+    The run stopped at 1,600 prompts rather than its planned 6,400. The 30B MoE
+    pair cost about six times its estimate, because a mixture-of-experts model's
+    active-parameter advantage does not survive batching — at batch 48 the
+    sequences route to different experts and the union touched per step
+    approaches the whole model. Active-parameter arithmetic describes batch 1.
+
+### 4.7a Coverage: post-training moves the model's vocabulary onto Hansard's
+
+§4.7's excess runs over Kobak's 407 style words, and only about half appear in
+the generated corpus. The standing answer was a presence count — real Hansard
+covers barely more of the list at the same volume, so the list is partly
+out-of-domain and 407 is the wrong denominator. That is a summary of a
+distribution, and the distribution says something the summary hides.
+
+At matched volume, style words by number of occurrences:[^r47a]
+
+| corpus | **0** | 1–2 | 3–5 | 6–10 | 11–20 | 21–50 | 51+ |
+|---|---|---|---|---|---|---|---|
+| generated base | **158** | 82 | 32 | 24 | 29 | 29 | 53 |
+| generated instruct | **118** | 60 | 40 | 33 | 31 | 46 | 79 |
+| Hansard pre-2023 | **86** | 80 | 55 | 39 | 42 | 39 | 66 |
+| Hansard 2025–26 | **85** | 82 | 47 | 40 | 37 | 49 | 67 |
+
+The shapes differ, so the defence only half holds: at equal volume the
+generated corpus has by far the fatter zero bin, and part of the missing
+coverage is a property of the generation rather than of the word list.
+
+**The overlap is the result, because it says which words are missing rather
+than how many.** Partitioning the 407 against Hansard 2025–26:
+
+| | absent from both | absent from generated only | absent from Hansard only | present in both |
+|---|---|---|---|---|
+| base | 72 | **86** | 13 | 236 |
+| instruct | 63 | **55** | 22 | **267** |
+
+Only **72 words are absent from both** — that is the genuine out-of-domain
+share, well under what a presence count implied. And post-training moves the
+model onto Hansard's vocabulary: the words real legislators use that the model
+does not fall from **86 to 55**, and the words both use rise from 236 to 267.
+
+This is §4.7's claim arriving by a different route. It needs no control
+matching, no frequency bucketing and no pseudocount — it is a count of which
+words appear — so it is not exposed to the estimator defect that cost §4.7 its
+original +0.88. Two measurements of the same shift, one of which cannot fail in
+the way the other did.
+
+**What the models never produce is the reason to be careful.** The words
+present in 2025–26 Hansard and absent from our generations are the archetypal
+ones: *transformative, unlocking, enhances, groundbreaking, leveraging,
+pioneering, pivotal, amid*. Our 8B open models do not emit that register;
+whatever is putting it in the record is not them. So the base-versus-instruct
+contrast is a **directional proxy for what post-training does**, not a model of
+the register actually appearing in Hansard, and §4.7 should not be read as
+reproducing the thing §4.2 detects.
+
+[^r47a]: `python style_word_frequency.py`. Three families at 1,600 prompts;
+    every corpus truncated to 1,187,489 words, base and instruct counted
+    separately — pooling them doubles the generated volume against a
+    volume-matched human corpus and manufactures parity, which an earlier
+    version of `style_coverage.py` did.
 
 ### 4.8 Permeation: detector-independent and small but positive
 
@@ -496,7 +1018,7 @@ change a reader's confidence:
    what carry the quality claim; the raw contrasts should not be quoted alone.
 
 **Bypass study.** Prevalence counts machine text a detector can see. If a
-member can defeat the detector cheaply, 12.4% is a floor and detection-based
+member can defeat the detector cheaply, 9.0% is a floor and detection-based
 prevalence is a dead end. Four search runs across two chambers, **461 rewritten
 variants of 92 distinct originals** — 106 were attacked, and the two New
 Brunswick searches re-attack the same 40 texts — each variant scored by
@@ -725,7 +1247,7 @@ nuisance parameter.[^r49c]
 
 **What this means for the prevalence number.** Evasion is real, clears the
 detector on roughly one flagged speech in five under directed search, and is free
-in deliberative-quality terms — so 12.4% is a floor, and the honest reading is
+in deliberative-quality terms — so 9.0% is a floor, and the honest reading is
 that it measures *undisguised* machine drafting. But it is not free in effort:
 it took a frontier model, contrastive exemplars mined from matched human text,
 and a multi-round search scoring three replicates per variant. A single
@@ -757,7 +1279,7 @@ beat" is the whole of that apparatus.
 
 - **Prevalence is a floor.** Detectors see undisguised machine text. A
   directed search clears the detector on 8.5% of variants and **22.5% of
-  targets** (§4.9), so 12.4% is a lower bound. How much of a lower bound is
+  targets** (§4.9), so 9.0% is a lower bound. How much of a lower bound is
   not estimable from this design: we can measure how often evasion succeeds
   when attempted, not how often it is attempted.
 - **The evasion rate is an upper bound on our own effort, not on anyone's.**
@@ -912,12 +1434,12 @@ provenance asserted at generation time.
 ### 8.2 Where the norms argument actually lands
 
 Detection fails against adversaries and works against everyone else. That is
-not a small residual: the 12.4% in §4.2 exists precisely because nobody
+not a small residual: the 9.0% in §4.2 exists precisely because nobody
 currently bothers to evade, or the undisguised register signature would not be
 there to find. **Detection is a norms instrument, not a security instrument** —
 locks, not vaults. It raises the cost of casual undisclosed use and does
 nothing against motivated use, and that is a coherent thing for a chamber to
-want. It is also what lets 12.4% stand as a measurement of disclosed-by-default
+want. It is also what lets 9.0% stand as a measurement of disclosed-by-default
 behaviour while conceding the limit above entirely.
 
 The better version of the norms instrument is not a sharper detector but a
@@ -1042,7 +1564,7 @@ that is recorded.
    which framings they reach for is unmeasured, and the Kobak instrument cannot
    answer it — its style/content split is PubMed's content, not a legislature's,
    and does not transfer. The materials for a domain-native version already
-   exist: the base-versus-instruct generation that produced §4.7's +0.42 yields
+   exist: the base-versus-instruct generation that produced §4.7's +0.387 yields
    an empirically derived list of what post-training adds *to legislative text
    specifically*. Split that list into register-like and substance-like by an
    independent rule and run both through the frozen protocol as separate arms,
@@ -1050,6 +1572,35 @@ that is recorded.
    measurements instead of one. Estimated at a few hours. This is the single
    most valuable unrun item, and it is also a limit on the present study rather
    than merely an extension (§5).
+
+1a. **A register-feature instrument, and the test that would settle §4.5a.**
+   Every arm in this study measures register through a *word list*, which is
+   why §4.5a's American result can be read two ways: the correlation is carried
+   partly by managerial and topical vocabulary, and a word list cannot separate
+   "models adopt American subject matter" from "models adopt the American way
+   of arguing". The features that would are syntactic and stance-bearing, not
+   lexical: hedge and modal density (*may, might, tends to, somewhat*),
+   first-person plural rate, concessive construction (*while X, nonetheless
+   Y*), agentless passives, subordination depth, and a balance marker for
+   on-the-one-hand structure. None of them can be carried by *senator* or
+   *dollars*.
+
+   Run that instrument on two contrasts at once — base against instruct, and
+   US against UK in the pre-transformer window — and the thesis behind §4.5a
+   becomes falsifiable. **If both contrasts move the same features in the same
+   direction, alignment and the American public tradition are selecting for the
+   same thing.** If post-training raises hedging and inclusiveness while the
+   US–UK difference sits somewhere else entirely, the lexical correlation was
+   subject matter and the soft-power reading fails. Either outcome is
+   informative, which the present measurement is not.
+
+   This pairs directly with §8.5. A register-feature profile is a measurable
+   *automated counterpart*: it says what an aligned model's stance profile
+   looks like on the same task, so a speaker's distance from it is the residual
+   §8.5 asks for — and unlike a detector score it decomposes into named
+   features rather than one number. It also gives §8.6.1's register/substance
+   split a principled rule, since the two lists are constructed by different
+   criteria rather than by splitting one list in half.
 
 **B. Getting outside the parliamentary archive.** Three versions of one move.
 §4.6's mechanism is unidentified and three exposure tests inside the archive
@@ -1186,9 +1737,48 @@ Reported because they bound what the study can claim.
    validating the estimator on a known shock).
 6. **Frequency-weighted secondary** — 4/30 cells.
 7. **Incumbent register change** — −0.42, CI [−1.32, +0.49], not significant.
+8. **Provincial AI prevalence** — the Canadian provinces average 9.1% machine
+   by words against US House 12.1%, so removing machine text *widens* the gap
+   they were supposed to explain. Wrong sign, not merely small.
+9. **Skilled-immigration share** — ρ = +0.26 on levels, +0.09 on growth, n = 6.
+10. **Province-level post-secondary share** — ρ = −0.04 on levels, +0.11 on
+    growth, n = 7. Note this is the *aggregate* null; the member-level
+    education ladder in §4.6a does predict, which is the difference between
+    seven data points and three thousand.
+11. **Graduate/professional as a binary** — null in every province (BC −0.25,
+    MB −0.26, NL −0.24, ON −0.30, SK +0.23, none significant; PE +2.19 on 87
+    member-years is one hit in six). The binary fails because it pools a
+    graduate degree (+0.01) with a professional one (−0.79); the ordered
+    ladder in §4.6a is what recovers the effect.
+12. **Cross-province education composition** — ρ = 0.00 against graduate
+    share, and ρ = 0.00 against source tier. Not usable in any case: coverage
+    runs 5% to 81% across provinces and the two best-covered provinces are the
+    two sourced from Wikipedia, so a province-level regression would be
+    fitting a source dummy.
+13. **Markedness as pre-AI rarity** — null. Rare-word share of instrument use
+    is 0.22–0.25% in every class, differences within ±0.02pp. The class effect
+    is a uniform scaling of the instrument, not a re-weighting, when
+    "conspicuous" is defined as rare *before* the machines. Defining it
+    instead as *risen* and *common* is what produces §4.6a's result.
+14. **Class I avoiding marked words, cross-sectionally** — did not survive a
+    year control. Pooled, class I held the lowest share of the most-risen
+    words (−1.76pp against VIIab); within era it is level with class II
+    (1.48% vs 1.49% in 2023–26) and higher in 2020–22. The pooled table was
+    class I's year distribution. **Recorded because it was reported before the
+    control was run** — the third time in this study that unclustered or
+    uncontrolled inference produced a flattering result.
+15. **Wikipedia article depth as a confounder of the education effect** — null,
+    and only in that narrow sense. The notability selection is real: members
+    whose education is known have 1.80× the median article length of those
+    whose is not. But controlling for depth moves the education coefficients by
+    0.00 to 0.11, so the education results are not artifacts of who has a long
+    article. Depth's own strong negative effect on the register is **not** a
+    null and is reported in §4.6a.
 
 Together these say the cohort effect is real and its **mechanism is not
-exposure as we can measure it.**
+exposure as we can measure it.** Items 9–12 say the same of composition at the
+*chamber* level: nothing about who a legislature recruits explains why it
+climbs. What does carry is measured on individuals, not on chambers.
 
 ## Appendix B — Superseded analyses
 
@@ -1307,8 +1897,17 @@ caught.
 | `in_time_placebo.py` | §3.3, the test that demoted the lexicon arm |
 | `long_trend.py` | §4.5 series and its 1994 trough |
 | `arrival_premium.py`, `formation_window.py`, `decomposition_inference.py` | §4.6 |
+| `covariate_study.py` | §4.6a class and education, member level (`--build-cache` first, ~10 min) |
+| `class_origin.py` | §4.6a EGP/NS-SEC arithmetic over the checked-in coding |
+| `class_markedness.py`, `build_class_word_year.py` | §4.6a chase-and-flight |
+| `provinces/occupation_coding.json` + `OCCUPATION_CODING.md` | the coding itself, with its 96.4% agreement rate |
+| `wiki_depth.py` | article length via Wikidata QID → MediaWiki, the notability control |
+| `build_allsource_merge.py` | rebuilds `member_allsource.json` from the workflow journal |
+| `CLASS-REGISTER-LITERATURE.md` | §4.6a citations, **unverified**, with the suspect entries flagged |
+| `band_coverage_check.py` | standing check that every length band is sampled at its chamber's own rate |
 | `olmo_ladder.py` | §4.7 ladder stages |
-| `rlhf_pref_analyze.py` | §4.7 pooled **+0.42**, with null calibration (not `align_ratio.py`) |
+| `rlhf_pref_compile.py` | §4.7 **+0.387** well-measured, 3 families at 1,600 prompts |
+| `rlhf_pref_analyze.py` | the superseded +0.42 run, with null calibration (not `align_ratio.py`) |
 | `align_ratio.py` | §4.7 Hansard-drift arm |
 | `word_context_delta.py` | §4.8 in-context permeation |
 | `bypass_report.py` | §4.9 bypass, all four runs pooled |

@@ -1,0 +1,56 @@
+{
+ "corpus": "Dail Eireann prepared",
+ "seed": 3504402657,
+ "pre_words": 32953093,
+ "post_words": 16539330,
+ "n_instrument": 407,
+ "primary_mean_logFC": 0.05954,
+ "placebo_median": -0.16023,
+ "placebo_p99": -0.07201,
+ "placebo_max": -0.02276,
+ "primary_p": 0.0,
+ "n_placebo": 1000,
+ "sweep": [
+  {
+   "threshold_per100k": 1,
+   "n_words": 268,
+   "ratio": 1.133,
+   "p": 0.17
+  },
+  {
+   "threshold_per100k": 2,
+   "n_words": 308,
+   "ratio": 1.1257,
+   "p": 0.09
+  },
+  {
+   "threshold_per100k": 5,
+   "n_words": 349,
+   "ratio": 1.0936,
+   "p": 0.09
+  },
+  {
+   "threshold_per100k": 10,
+   "n_words": 366,
+   "ratio": 1.0861,
+   "p": 0.04
+  },
+  {
+   "threshold_per100k": 20,
+   "n_words": 380,
+   "ratio": 1.0565,
+   "p": 0.079
+  },
+  {
+   "threshold_per100k": 50,
+   "n_words": 393,
+   "ratio": 1.0406,
+   "p": 0.127
+  }
+ ],
+ "formal_register_ratio": 0.9956,
+ "bootstrap_ci": [
+  1.0381,
+  1.0483
+ ]
+}

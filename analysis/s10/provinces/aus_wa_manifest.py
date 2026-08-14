@@ -16,6 +16,7 @@ Requires a browser User-Agent (the site's Azure WAF 403s anything else).
 Usage: python3 aus_wa_manifest.py
 """
 import json
+import os
 import re
 import sys
 import time
@@ -29,7 +30,11 @@ UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
       "Chrome/126.0.0.0 Safari/537.36")
 VIEWS = {"Legislative Assembly": "($lookupDailyTransLAByDate)",
          "Legislative Council": "($lookupDailyTransLCByDate)"}
-WINDOWS = ((2006, 2010), (2015, 2019))
+# The window pair above is the original drift design; the sources
+# publish continuously. S10_FILL / S10_SUFFIX backfill the skipped
+# years (2011-14, 2020-24) without overwriting the first pass.
+WINDOWS = (((2011, 2014), (2020, 2024))
+           if os.environ.get("S10_FILL") else ((2006, 2010), (2015, 2019)))
 ROW = re.compile(r'href="(/Hansard/hansard\.nsf/[0-9a-f]+/[0-9a-f]+\?OpenDocument)"'
                  r'>(\d{8})</a>', re.I)
 REDIR = re.compile(r'window\.location\.replace\("([^"]+)"\)')
@@ -82,7 +87,7 @@ def main():
                          "chamber": chamber})
         CACHE.write_text(json.dumps(cache))
     rows.sort(key=lambda r: (r["chamber"], r["date"]))
-    (HERE / "aus_wa_manifest.json").write_text(json.dumps(rows, indent=1))
+    (HERE / f"aus_wa_manifest{os.environ.get('S10_SUFFIX','')}.json").write_text(json.dumps(rows, indent=1))
     print(f"manifest: {len(rows)} whole-day PDFs", file=sys.stderr)
 
 

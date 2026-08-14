@@ -31,7 +31,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 from prov_common import is_chair, pack_turn
 
 TAG = re.compile(r"<[^>]+>")
-DATE_FROM_NAME = re.compile(r"(\d{4})(\d{2})(\d{2})[ap]m-")
+# case-insensitive: one 2020 file is published as "...0212PM-Hansard-n304.html"
+DATE_FROM_NAME = re.compile(r"(\d{4})(\d{2})(\d{2})[ap]m-", re.I)
 BOLD_SPK = re.compile(
     r"^(?:\s|&nbsp;)*<b>(?:\s|&nbsp;)*([^<:]{1,60}?)\s*:?\s*</b>\s*:?",
     re.I | re.S)

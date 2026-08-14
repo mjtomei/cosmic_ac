@@ -1,0 +1,2282 @@
+{
+ "prov": "BC",
+ "chamber": "Legislative Assembly of British Columbia",
+ "generated": "2026-08-13",
+ "source_kind": "official-archive",
+ "source_url": "https://web.archive.org/web/*/https://www.leg.bc.ca/learn-about-us/members/*",
+ "source_description": "Per-member biography pages published by the Legislative Assembly of British Columbia (leg.bc.ca), 38th-42nd Parliaments, retrieved from the Internet Archive Wayback Machine. The live site no longer serves these pages (404).",
+ "n_members_in_source": 174,
+ "n_with_education": 83,
+ "n_with_occupation": 160,
+ "fraction_from_wikipedia": 0.0,
+ "records": [
+  {
+   "name": "Adrian Dix",
+   "education_level": "bachelor",
+   "education_field": "",
+   "alma_maters": [
+    "University of British Columbia"
+   ],
+   "prior_occupation": "Executive Director, Canadian Parents for French (BC & Yukon); public-policy commentator; Chief of Staff to the Premier 1996-99",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20061020120258/http://www.leg.bc.ca:80/mla/38thParl/dix.htm",
+   "hansard_speaker_key": "a. dix",
+   "first_seen": "2006-02-16",
+   "last_seen": "2019-11-26"
+  },
+  {
+   "name": "John Horgan",
+   "education_level": "graduate",
+   "education_field": "arts",
+   "alma_maters": [
+    "Trent University",
+    "University of Sydney"
+   ],
+   "prior_occupation": "public servant; co-founder of a management and research consulting company",
+   "occupation_category": "public-service",
+   "source_url": "https://web.archive.org/web/20061019173557/http://www.leg.bc.ca:80/mla/38thParl/horgan.htm",
+   "hansard_speaker_key": "j. horgan",
+   "first_seen": "2006-02-15",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Rich Coleman",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "ran a real estate management and consulting company; former RCMP member and security specialist",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902194231/http://www.leg.bc.ca:80/mla/38thparl/coleman.htm",
+   "hansard_speaker_key": "r. coleman",
+   "first_seen": "2006-02-23",
+   "last_seen": "2019-11-27"
+  },
+  {
+   "name": "Shane Simpson",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Director of Policy and Communications, Smart Growth BC; legislative coordinator, CUPE; consultant",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20051125192233/http://www.leg.bc.ca:80/mla/38thParl/simpsons.htm",
+   "hansard_speaker_key": "s. simpson",
+   "first_seen": "2006-02-20",
+   "last_seen": "2019-11-26"
+  },
+  {
+   "name": "Carole James",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Director of Child and Family Services, Carrier Sekani Family Services; school trustee; Director of Child Care Policy, Government of BC",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20171108084837/https://www.leg.bc.ca/learn-about-us/members/38th-Parliament/james",
+   "hansard_speaker_key": "c. james",
+   "first_seen": "2006-02-15",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Shirley Bond",
+   "education_level": "college",
+   "education_field": "arts and science",
+   "alma_maters": [
+    "College of New Caledonia",
+    "University of Northern British Columbia"
+   ],
+   "prior_occupation": "business manager, continuing education department, Prince George School District; school trustee",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20060902192228/http://www.leg.bc.ca:80/mla/38thparl/bond.htm",
+   "hansard_speaker_key": "s. bond",
+   "first_seen": "2006-02-15",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Mike de Jong",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [
+    "Carleton University",
+    "University of Alberta"
+   ],
+   "prior_occupation": "lawyer, Abbotsford firm",
+   "occupation_category": "law",
+   "source_url": "https://web.archive.org/web/20060902193223/http://www.leg.bc.ca:80/mla/38thParl/dejong.htm",
+   "hansard_speaker_key": "de jong",
+   "first_seen": "2006-02-14",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Bruce Ralston",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [
+    "University of British Columbia",
+    "University of Cambridge"
+   ],
+   "prior_occupation": "lawyer; operated his own law firm in Surrey for 18 years",
+   "occupation_category": "law",
+   "source_url": "https://web.archive.org/web/20060902194130/http://www.leg.bc.ca:80/mla/38thParl/ralston.htm",
+   "hansard_speaker_key": "b. ralston",
+   "first_seen": "2006-02-16",
+   "last_seen": "2019-11-27"
+  },
+  {
+   "name": "Rob Fleming",
+   "education_level": "bachelor",
+   "education_field": "",
+   "alma_maters": [
+    "University of Victoria"
+   ],
+   "prior_occupation": "research and communications; Victoria city councillor",
+   "occupation_category": "communications-PR-journalism",
+   "source_url": "https://web.archive.org/web/20051125191752/http://www.leg.bc.ca:80/mla/38thParl/fleming.htm",
+   "hansard_speaker_key": "r. fleming",
+   "first_seen": "2006-02-15",
+   "last_seen": "2019-11-18"
+  },
+  {
+   "name": "Leonard Krog",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [],
+   "prior_occupation": "practising lawyer in a Nanaimo law firm since 1980",
+   "occupation_category": "law",
+   "source_url": "https://web.archive.org/web/20171108070234/https://www.leg.bc.ca/learn-about-us/members/38th-Parliament/krog",
+   "hansard_speaker_key": "l. krog",
+   "first_seen": "2006-02-15",
+   "last_seen": "2018-05-30"
+  },
+  {
+   "name": "David Eby",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [],
+   "prior_occupation": "lawyer; Executive Director, BC Civil Liberties Association; adjunct professor of law, UBC",
+   "occupation_category": "law",
+   "source_url": "https://web.archive.org/web/20170829212819/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Eby-David",
+   "hansard_speaker_key": "d. eby",
+   "first_seen": "2015-02-16",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Claire Trevena",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "journalist (BBC Canadian correspondent); democratic-development work for Canada and the UN; communications business owner",
+   "occupation_category": "communications-PR-journalism",
+   "source_url": "https://web.archive.org/web/20060902194204/http://www.leg.bc.ca:80/mla/38thParl/trevena.htm",
+   "hansard_speaker_key": "c. trevena",
+   "first_seen": "2006-02-15",
+   "last_seen": "2019-11-20"
+  },
+  {
+   "name": "Kevin Falcon",
+   "education_level": "bachelor",
+   "education_field": "arts; real estate",
+   "alma_maters": [
+    "Simon Fraser University",
+    "University of British Columbia"
+   ],
+   "prior_occupation": "president of the Access Group, a corporate communications firm; real estate development",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902193455/http://www.leg.bc.ca:80/mla/38thparl/falcon.htm",
+   "hansard_speaker_key": "k. falcon",
+   "first_seen": "2006-03-02",
+   "last_seen": "2010-06-02"
+  },
+  {
+   "name": "Harry Bains",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "elected officer and vice-president, Steelworkers-IWA Canada Local 2171",
+   "occupation_category": "trades-labour",
+   "source_url": "https://web.archive.org/web/20060902192341/http://www.leg.bc.ca:80/mla/38thParl/bains.htm",
+   "hansard_speaker_key": "h. bains",
+   "first_seen": "2006-02-20",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Mike Farnworth",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "",
+   "occupation_category": "unknown",
+   "source_url": "https://web.archive.org/web/20061020122347/http://www.leg.bc.ca:80/mla/38thParl/farnworth.htm",
+   "hansard_speaker_key": "farnworth",
+   "first_seen": "2006-02-15",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Andrew Weaver",
+   "education_level": "graduate",
+   "education_field": "climate modelling / earth and ocean sciences",
+   "alma_maters": [],
+   "prior_occupation": "Canada Research Chair in climate modelling and analysis, University of Victoria",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20151126055042/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/weaver-Andrew",
+   "hansard_speaker_key": "a. weaver",
+   "first_seen": "2015-02-12",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Doug Routley",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "owned and operated a bicycle store; taught English in Japan; school trustee",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902194152/http://www.leg.bc.ca:80/mla/38thParl/routley.htm",
+   "hansard_speaker_key": "d. routley",
+   "first_seen": "2006-02-16",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Maurine Karagianis",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "ran a consulting business working with non-profits and First Nations on affordable housing; 15 years in the fashion industry; 10 years in publishing",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20061019173621/http://www.leg.bc.ca:80/mla/38thParl/karagianis.htm",
+   "hansard_speaker_key": "karagianis",
+   "first_seen": "2006-02-15",
+   "last_seen": "2017-03-06"
+  },
+  {
+   "name": "Scott Fraser",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "background in small business, labour, harbour management, fisheries and shellfish aquaculture; Mayor of Tofino",
+   "occupation_category": "other",
+   "source_url": "https://web.archive.org/web/20060902193235/http://www.leg.bc.ca:80/mla/38thParl/fraser.htm",
+   "hansard_speaker_key": "s. fraser",
+   "first_seen": "2006-02-23",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "George Abbott",
+   "education_level": "graduate",
+   "education_field": "political science",
+   "alma_maters": [
+    "University of British Columbia",
+    "University of Victoria"
+   ],
+   "prior_occupation": "political science instructor, Okanagan University College; berry farm owner",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20060902193432/http://www.leg.bc.ca:80/mla/38thparl/abbott.htm",
+   "hansard_speaker_key": "g. abbott",
+   "first_seen": "2006-02-15",
+   "last_seen": "2010-06-03"
+  },
+  {
+   "name": "Norm Macdonald",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "principal of Nicholson Elementary School; teacher for more than 15 years",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20060902195517/http://www.leg.bc.ca:80/mla/38thParl/macdonald.htm",
+   "hansard_speaker_key": "n. macdonald",
+   "first_seen": "2006-02-15",
+   "last_seen": "2017-03-14"
+  },
+  {
+   "name": "Bob Simpson",
+   "education_level": "bachelor",
+   "education_field": "",
+   "alma_maters": [
+    "University of Victoria"
+   ],
+   "prior_occupation": "Corporate Manager, Organizational Effectiveness and Leadership Development, forest products company; high school teacher; small business owner",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060617194856/http://www.leg.bc.ca:80/mla/38thParl/simpsonb.htm",
+   "hansard_speaker_key": "b. simpson",
+   "first_seen": "2006-02-16",
+   "last_seen": "2010-06-03"
+  },
+  {
+   "name": "John Rustad",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "founder of Western Geographic Information Systems Inc.; GIS department manager, forest inventory consultants",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902193326/http://www.leg.bc.ca:80/mla/38thParl/rustad.htm",
+   "hansard_speaker_key": "j. rustad",
+   "first_seen": "2006-02-20",
+   "last_seen": "2019-11-26"
+  },
+  {
+   "name": "Doug Donaldson",
+   "education_level": "graduate",
+   "education_field": "biology; journalism",
+   "alma_maters": [],
+   "prior_occupation": "jobs in forestry, tourism, education, communications and journalism",
+   "occupation_category": "communications-PR-journalism",
+   "source_url": "https://web.archive.org/web/20110218210959/http://www.leg.bc.ca/mla/39thParl/donaldsond.htm",
+   "hansard_speaker_key": "d. donaldson",
+   "first_seen": "2009-08-31",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "George Heyman",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Executive Director, Sierra Club BC; three-term president, BC Government and Service Employees' Union",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20170829212902/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Heyman-George",
+   "hansard_speaker_key": "g. heyman",
+   "first_seen": "2015-02-12",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Todd Stone",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "founder and CEO of a Kamloops-based software company",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20160902190507/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Stone-Todd",
+   "hansard_speaker_key": "t. stone",
+   "first_seen": "2015-02-11",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Nicholas Simons",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Director of Health and Social Development, Sechelt Nation; child-protection social worker; criminology lecturer",
+   "occupation_category": "public-service",
+   "source_url": "https://web.archive.org/web/20061229042809/http://www.leg.bc.ca/mla/38thParl/simons.htm",
+   "hansard_speaker_key": "n. simons",
+   "first_seen": "2006-02-21",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Jenny Kwan",
+   "education_level": "bachelor",
+   "education_field": "criminology",
+   "alma_maters": [
+    "Simon Fraser University"
+   ],
+   "prior_occupation": "community legal advocate in the Downtown Eastside",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20060502113609/http://www.leg.bc.ca:80/mla/38thparl/kwan.htm",
+   "hansard_speaker_key": "j. kwan",
+   "first_seen": "2006-02-15",
+   "last_seen": "2015-05-28"
+  },
+  {
+   "name": "Colin Hansen",
+   "education_level": "bachelor",
+   "education_field": "political science",
+   "alma_maters": [
+    "University of Victoria"
+   ],
+   "prior_occupation": "owned and operated a small business; vice-president of finance and administration, Asia Pacific Foundation of Canada",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902193508/http://www.leg.bc.ca:80/mla/38thparl/hansen.htm",
+   "hansard_speaker_key": "c. hansen",
+   "first_seen": "2006-02-27",
+   "last_seen": "2010-06-03"
+  },
+  {
+   "name": "Barry Penner",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [
+    "Simon Fraser University",
+    "University of Victoria"
+   ],
+   "prior_occupation": "lawyer in Chilliwack; former park ranger and sawmill worker",
+   "occupation_category": "law",
+   "source_url": "https://web.archive.org/web/20060902193544/http://www.leg.bc.ca:80/mla/38thparl/penner.htm",
+   "hansard_speaker_key": "b. penner",
+   "first_seen": "2006-02-16",
+   "last_seen": "2010-06-03"
+  },
+  {
+   "name": "Peter Milobar",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "owner and operator of a local small business; Mayor of Kamloops",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20170707193925/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Milobar-Peter",
+   "hansard_speaker_key": "p. milobar",
+   "first_seen": "2017-06-26",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Michelle Mungall",
+   "education_level": "graduate",
+   "education_field": "political science; human security and peacebuilding",
+   "alma_maters": [
+    "University of Alberta",
+    "Royal Roads University"
+   ],
+   "prior_occupation": "community development work; managed food security and micro-finance non-profits",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20110218205726/http://www.leg.bc.ca/mla/39thParl/mungallm.htm",
+   "hansard_speaker_key": "mungall",
+   "first_seen": "2009-08-26",
+   "last_seen": "2019-11-27"
+  },
+  {
+   "name": "Selina Robinson",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "home-based family therapy practice; Director of Development, SHARE Family and Community Services; counselling instructor",
+   "occupation_category": "health",
+   "source_url": "https://web.archive.org/web/20170409124515/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Robinson-Selina",
+   "hansard_speaker_key": "s. robinson",
+   "first_seen": "2015-02-11",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Pat Bell",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [
+    "University of British Columbia"
+   ],
+   "prior_occupation": "owned a trucking company, co-owned a logging company, owns two restaurants",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902185502/http://www.leg.bc.ca:80/mla/38thparl/bell.htm",
+   "hansard_speaker_key": "p. bell",
+   "first_seen": "2006-02-20",
+   "last_seen": "2010-06-03"
+  },
+  {
+   "name": "Mary Polak",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Director of Operations for a small business; school trustee and board chair",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902192530/http://www.leg.bc.ca:80/mla/38thParl/polak.htm",
+   "hansard_speaker_key": "polak",
+   "first_seen": "2006-02-15",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Katrine Conroy",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "steam engineer; Early Childhood Educator, administrator and college instructor; small business person; rancher",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20060902193210/http://www.leg.bc.ca:80/mla/38thParl/conroy.htm",
+   "hansard_speaker_key": "k. conroy",
+   "first_seen": "2006-02-15",
+   "last_seen": "2019-11-25"
+  },
+  {
+   "name": "Steve Thomson",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Executive Director, BC Agriculture Council; General Manager, BC Fruit Growers Association and BC Milk Producers Association",
+   "occupation_category": "agriculture",
+   "source_url": "https://web.archive.org/web/20110218204952/http://www.leg.bc.ca/mla/39thParl/thomsons.htm",
+   "hansard_speaker_key": "s. thomson",
+   "first_seen": "2009-09-03",
+   "last_seen": "2019-11-27"
+  },
+  {
+   "name": "Kathy Corrigan",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [],
+   "prior_occupation": "lawyer and public policy researcher; legal journal editor",
+   "occupation_category": "law",
+   "source_url": "https://web.archive.org/web/20110218203813/http://www.leg.bc.ca/mla/39thParl/corrigank.htm",
+   "hansard_speaker_key": "k. corrigan",
+   "first_seen": "2009-08-31",
+   "last_seen": "2017-03-16"
+  },
+  {
+   "name": "Ida Chong",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Certified General Accountant",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902192543/http://www.leg.bc.ca:80/mla/38thparl/chong.htm",
+   "hansard_speaker_key": "i. chong",
+   "first_seen": "2006-02-16",
+   "last_seen": "2010-06-02"
+  },
+  {
+   "name": "Bill Bennett",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [
+    "University of Guelph",
+    "Queen's University"
+   ],
+   "prior_occupation": "partner in a Cranbrook law firm; owned fly-in wilderness lodges",
+   "occupation_category": "law",
+   "source_url": "https://web.archive.org/web/20060902194216/http://www.leg.bc.ca:80/mla/38thparl/bennett.htm",
+   "hansard_speaker_key": "b. bennett",
+   "first_seen": "2006-02-16",
+   "last_seen": "2017-03-16"
+  },
+  {
+   "name": "Michael Sather",
+   "education_level": "graduate",
+   "education_field": "psychology; zoology",
+   "alma_maters": [
+    "University of Alberta"
+   ],
+   "prior_occupation": "mental health therapist, Fraser Health Authority; wildlife biologist; nature-tour business owner; teacher",
+   "occupation_category": "health",
+   "source_url": "https://web.archive.org/web/20051125191231/http://www.leg.bc.ca:80/mla/38thParl/sather.htm",
+   "hansard_speaker_key": "sather",
+   "first_seen": "2006-02-16",
+   "last_seen": "2010-05-31"
+  },
+  {
+   "name": "Judy Darcy",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "National President, Canadian Union of Public Employees; Secretary Business Manager, Hospital Employees Union",
+   "occupation_category": "trades-labour",
+   "source_url": "https://web.archive.org/web/20160815121500/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/darcy-Judy",
+   "hansard_speaker_key": "j. darcy",
+   "first_seen": "2015-02-11",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Laurie Throness",
+   "education_level": "graduate",
+   "education_field": "biblical studies; history; public administration",
+   "alma_maters": [
+    "Canadian Bible College",
+    "University of Waterloo",
+    "Queen's University",
+    "University of Cambridge"
+   ],
+   "prior_occupation": "political staff: executive assistant, policy adviser and chief of staff to federal and provincial politicians",
+   "occupation_category": "public-service",
+   "source_url": "https://web.archive.org/web/20160108115815/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/throness-Laurie",
+   "hansard_speaker_key": "l. throness",
+   "first_seen": "2015-02-16",
+   "last_seen": "2019-11-27"
+  },
+  {
+   "name": "Terry Lake",
+   "education_level": "professional",
+   "education_field": "veterinary medicine",
+   "alma_maters": [],
+   "prior_occupation": "veterinarian; Mayor of Kamloops",
+   "occupation_category": "health",
+   "source_url": "https://web.archive.org/web/20110128031655/http://leg.bc.ca/mla/39thParl/lakeT.htm",
+   "hansard_speaker_key": "t. lake",
+   "first_seen": "2009-08-27",
+   "last_seen": "2017-03-16"
+  },
+  {
+   "name": "Jagrup Brar",
+   "education_level": "graduate",
+   "education_field": "public administration",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "Executive Director, Surrey Self Employment and Entrepreneur Development Society; public and non-profit sector work",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20060902192239/http://www.leg.bc.ca:80/mla/38thparl/brar.htm",
+   "hansard_speaker_key": "j. brar",
+   "first_seen": "2006-02-20",
+   "last_seen": "2019-11-26"
+  },
+  {
+   "name": "Harry Lali",
+   "education_level": "bachelor",
+   "education_field": "history and South Asian area studies",
+   "alma_maters": [
+    "University of Victoria",
+    "University of British Columbia"
+   ],
+   "prior_occupation": "started his own business in international development and technology transfer",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902192150/http://www.leg.bc.ca:80/mla/38thParl/lali.htm",
+   "hansard_speaker_key": "h. lali",
+   "first_seen": "2006-02-16",
+   "last_seen": "2010-06-02"
+  },
+  {
+   "name": "Jane Thornthwaite",
+   "education_level": "bachelor",
+   "education_field": "nutrition / home economics",
+   "alma_maters": [],
+   "prior_occupation": "Registered Dietitian Nutritionist, 22-year career in health care; self-employed health consultant",
+   "occupation_category": "health",
+   "source_url": "https://web.archive.org/web/20110128032342/http://leg.bc.ca/mla/39thParl/thornthwaiteJ.htm",
+   "hansard_speaker_key": "j. thornthwaite",
+   "first_seen": "2009-08-26",
+   "last_seen": "2019-11-27"
+  },
+  {
+   "name": "Norm Letnick",
+   "education_level": "graduate",
+   "education_field": "commerce; business administration",
+   "alma_maters": [
+    "University of Calgary",
+    "Heriot-Watt University",
+    "University of British Columbia"
+   ],
+   "prior_occupation": "owned two H&R Block franchises, a Motorola dealership and a computer store; business instructor, Okanagan College",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20110218204832/http://www.leg.bc.ca/mla/39thParl/letnickn.htm",
+   "hansard_speaker_key": "n. letnick",
+   "first_seen": "2009-08-26",
+   "last_seen": "2019-11-20"
+  },
+  {
+   "name": "Mike Bernier",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "20 years in the natural gas industry; Mayor of Dawson Creek",
+   "occupation_category": "other",
+   "source_url": "https://web.archive.org/web/20160124192227/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/bernier-Mike",
+   "hansard_speaker_key": "bernier",
+   "first_seen": "2015-02-16",
+   "last_seen": "2019-11-21"
+  },
+  {
+   "name": "David Cubberley",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "assistant to Ministers of Forests, Finance and Environment for seven years; Saanich councillor",
+   "occupation_category": "public-service",
+   "source_url": "https://web.archive.org/web/20061020122333/http://www.leg.bc.ca:80/mla/38thParl/cubberley.htm",
+   "hansard_speaker_key": "d. cubberley",
+   "first_seen": "2006-02-15",
+   "last_seen": "2009-03-25"
+  },
+  {
+   "name": "Andrew Wilkinson",
+   "education_level": "professional",
+   "education_field": "law; medicine",
+   "alma_maters": [],
+   "prior_occupation": "lawyer at a national law firm; previously educated and licensed as a physician; deputy minister",
+   "occupation_category": "law",
+   "source_url": "https://web.archive.org/web/20170829213235/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Wilkinson-Andrew",
+   "hansard_speaker_key": "a. wilkinson",
+   "first_seen": "2015-02-11",
+   "last_seen": "2019-11-27"
+  },
+  {
+   "name": "Guy Gentner",
+   "education_level": "bachelor",
+   "education_field": "",
+   "alma_maters": [
+    "Simon Fraser University"
+   ],
+   "prior_occupation": "bus driver",
+   "occupation_category": "trades-labour",
+   "source_url": "https://web.archive.org/web/20051125193659/http://www.leg.bc.ca:80/mla/38thParl/gentner.htm",
+   "hansard_speaker_key": "g. gentner",
+   "first_seen": "2006-02-20",
+   "last_seen": "2010-06-02"
+  },
+  {
+   "name": "Spencer Chandra Herbert",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "arts and culture industry; associate producer, UN World Urban Festival; Vancouver Parks Commissioner",
+   "occupation_category": "other",
+   "source_url": "https://web.archive.org/web/20110218210401/http://www.leg.bc.ca/mla/39thParl/chandraherberts.htm",
+   "hansard_speaker_key": "s. chandra herbert",
+   "first_seen": "2010-04-01",
+   "last_seen": "2019-11-27"
+  },
+  {
+   "name": "Lana Popham",
+   "education_level": "bachelor",
+   "education_field": "",
+   "alma_maters": [
+    "University of British Columbia"
+   ],
+   "prior_occupation": "owner-operator of Barking Dog Vineyard, a certified organic vineyard",
+   "occupation_category": "agriculture",
+   "source_url": "https://web.archive.org/web/20110218203442/http://www.leg.bc.ca/mla/39thParl/pophaml.htm",
+   "hansard_speaker_key": "l. popham",
+   "first_seen": "2009-08-27",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Gordon Campbell",
+   "education_level": "graduate",
+   "education_field": "business administration",
+   "alma_maters": [
+    "Dartmouth College",
+    "Simon Fraser University"
+   ],
+   "prior_occupation": "secondary school teacher; general manager of development, Marathon Realty; founder, Citycore Development Corporation; Mayor of Vancouver",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902195011/http://www.leg.bc.ca:80/mla/38thparl/campbell.htm",
+   "hansard_speaker_key": "g. campbell",
+   "first_seen": "2006-02-14",
+   "last_seen": "2010-06-01"
+  },
+  {
+   "name": "Stephanie Cadieux",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "director of marketing and development, BC Paraplegic Association",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20110128034453/http://leg.bc.ca/mla/39thparl/cadieuxS.htm",
+   "hansard_speaker_key": "s. cadieux",
+   "first_seen": "2009-08-26",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Gary Coons",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "educator in the Prince Rupert School District for 27 years",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20061019063415/http://www.leg.bc.ca:80/mla/38thParl/coons.htm",
+   "hansard_speaker_key": "g. coons",
+   "first_seen": "2006-02-15",
+   "last_seen": "2010-06-03"
+  },
+  {
+   "name": "Mike Morris",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "32-year RCMP career, retiring as Superintendent for the North District",
+   "occupation_category": "public-service",
+   "source_url": "https://web.archive.org/web/20151222163845/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Morris-Mike",
+   "hansard_speaker_key": "morris",
+   "first_seen": "2015-02-11",
+   "last_seen": "2019-11-25"
+  },
+  {
+   "name": "lee",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "",
+   "occupation_category": "unknown",
+   "source_url": "",
+   "hansard_speaker_key": "lee",
+   "first_seen": "2017-06-26",
+   "last_seen": "2019-11-26"
+  },
+  {
+   "name": "Richard Neufeld",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "owned and operated a business in Fort Nelson; oil and gas industry",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20061019172950/http://www.leg.bc.ca:80/mla/38thparl/neufeld.htm",
+   "hansard_speaker_key": "r. neufeld",
+   "first_seen": "2006-02-16",
+   "last_seen": "2008-11-25"
+  },
+  {
+   "name": "Charlie Wyse",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "teacher; held several positions with the teachers' union",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20051125190246/http://www.leg.bc.ca:80/mla/38thParl/wyse.htm",
+   "hansard_speaker_key": "c. wyse",
+   "first_seen": "2006-02-16",
+   "last_seen": "2009-03-30"
+  },
+  {
+   "name": "Coralee Oakes",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Executive Director, Quesnel and District Chamber of Commerce",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20170829213026/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Oakes-Coralee",
+   "hansard_speaker_key": "c. oakes",
+   "first_seen": "2015-02-17",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Bill Routley",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "sawmill worker at Youbou Sawmill; president of IWA Local 1-80 / USW Local 1-1937",
+   "occupation_category": "trades-labour",
+   "source_url": "https://web.archive.org/web/20170829213107/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Routley-Bill",
+   "hansard_speaker_key": "b. routley",
+   "first_seen": "2009-08-27",
+   "last_seen": "2019-05-29"
+  },
+  {
+   "name": "Chuck Puchmayr",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "",
+   "occupation_category": "unknown",
+   "source_url": "https://web.archive.org/web/20051125190815/http://www.leg.bc.ca:80/mla/38thParl/puchmayr.htm",
+   "hansard_speaker_key": "c. puchmayr",
+   "first_seen": "2006-02-21",
+   "last_seen": "2009-03-11"
+  },
+  {
+   "name": "Ralph Sultan",
+   "education_level": "graduate",
+   "education_field": "economics; engineering",
+   "alma_maters": [
+    "University of British Columbia",
+    "Harvard University"
+   ],
+   "prior_occupation": "economist; Chief Economist and Senior Vice President, Royal Bank of Canada; professor, Harvard Business School; professional engineer",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902193352/http://www.leg.bc.ca:80/mla/38thParl/sultan.htm",
+   "hansard_speaker_key": "r. sultan",
+   "first_seen": "2006-02-20",
+   "last_seen": "2019-11-26"
+  },
+  {
+   "name": "Diane Thorne",
+   "education_level": "college",
+   "education_field": "liberal arts",
+   "alma_maters": [
+    "Simon Fraser University"
+   ],
+   "prior_occupation": "owned and operated several small businesses",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902193419/http://www.leg.bc.ca:80/mla/38thParl/thorne.htm",
+   "hansard_speaker_key": "d. thorne",
+   "first_seen": "2006-02-20",
+   "last_seen": "2010-06-03"
+  },
+  {
+   "name": "Kevin Krueger",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "20 years with the Insurance Corporation of BC, latterly road safety regional manager",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902193927/http://www.leg.bc.ca:80/mla/38thParl/krueger.htm",
+   "hansard_speaker_key": "k. krueger",
+   "first_seen": "2006-02-22",
+   "last_seen": "2010-06-03"
+  },
+  {
+   "name": "John Yap",
+   "education_level": "graduate",
+   "education_field": "business administration; science",
+   "alma_maters": [
+    "University of British Columbia"
+   ],
+   "prior_occupation": "financial services; 20-year management career with a major Canadian bank; financial consultant",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20051126105003/http://www.leg.bc.ca:80/mla/38thParl/yap.htm",
+   "hansard_speaker_key": "j. yap",
+   "first_seen": "2006-02-16",
+   "last_seen": "2019-11-21"
+  },
+  {
+   "name": "Robin Austin",
+   "education_level": "bachelor",
+   "education_field": "social work",
+   "alma_maters": [
+    "University of Strathclyde",
+    "University of Northern British Columbia"
+   ],
+   "prior_occupation": "Community Schools Coordinator for a non-profit society; 20 years in the hotel/tourism private sector",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20060902193157/http://www.leg.bc.ca:80/mla/38thParl/austin.htm",
+   "hansard_speaker_key": "r. austin",
+   "first_seen": "2006-02-16",
+   "last_seen": "2017-03-14"
+  },
+  {
+   "name": "Suzanne Anton",
+   "education_level": "professional",
+   "education_field": "law; mathematics",
+   "alma_maters": [
+    "University of Victoria",
+    "University of British Columbia"
+   ],
+   "prior_occupation": "Crown counsel; math teacher",
+   "occupation_category": "law",
+   "source_url": "https://web.archive.org/web/20170829212629/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Anton-Suzanne",
+   "hansard_speaker_key": "s. anton",
+   "first_seen": "2015-02-10",
+   "last_seen": "2017-03-16"
+  },
+  {
+   "name": "Corky Evans",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Executive Director, Nakusp Community Services Society",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20061019063426/http://www.leg.bc.ca:80/mla/38thParl/evans.htm",
+   "hansard_speaker_key": "c. evans",
+   "first_seen": "2006-03-01",
+   "last_seen": "2009-03-31"
+  },
+  {
+   "name": "David Chudnovsky",
+   "education_level": "bachelor",
+   "education_field": "history and political science; education",
+   "alma_maters": [
+    "York University",
+    "University of Toronto"
+   ],
+   "prior_occupation": "teacher for 28 years; President, BC Teachers' Federation",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20060902201141/http://www.leg.bc.ca:80/mla/38thParl/chudnovsky.htm",
+   "hansard_speaker_key": "d. chudnovsky",
+   "first_seen": "2006-02-15",
+   "last_seen": "2009-03-26"
+  },
+  {
+   "name": "Mable Elmore",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "transit operator (bus driver); coordinator, Canadian Auto Workers Local 111",
+   "occupation_category": "trades-labour",
+   "source_url": "https://web.archive.org/web/20110218210915/http://www.leg.bc.ca/mla/39thParl/elmorem.htm",
+   "hansard_speaker_key": "elmore",
+   "first_seen": "2009-08-31",
+   "last_seen": "2019-11-18"
+  },
+  {
+   "name": "Donna Barnett",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "self-employed business owner and realtor; Mayor of 100 Mile House",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20110128031453/http://leg.bc.ca/mla/39thParl/barnettD.htm",
+   "hansard_speaker_key": "d. barnett",
+   "first_seen": "2009-08-31",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Adam Olsen",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "small business owner; Central Saanich councillor",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20170830133906/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/OLSEN-Adam",
+   "hansard_speaker_key": "a. olsen",
+   "first_seen": "2017-06-29",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Ben Stewart",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "founder of Quails' Gate estate winery; chair of the BC Grape Marketing Board",
+   "occupation_category": "agriculture",
+   "source_url": "https://web.archive.org/web/20110218210057/http://www.leg.bc.ca/mla/39thParl/stewartb.htm",
+   "hansard_speaker_key": "b. stewart",
+   "first_seen": "2009-09-01",
+   "last_seen": "2019-11-18"
+  },
+  {
+   "name": "Blair Lekstrom",
+   "education_level": "secondary",
+   "education_field": "",
+   "alma_maters": [
+    "South Peace Secondary School"
+   ],
+   "prior_occupation": "installer-repairman with BC Tel for 17 years; Mayor of Dawson Creek",
+   "occupation_category": "trades-labour",
+   "source_url": "https://web.archive.org/web/20060902194843/http://www.leg.bc.ca:80/mla/38thParl/lekstrom.htm",
+   "hansard_speaker_key": "b. lekstrom",
+   "first_seen": "2006-02-20",
+   "last_seen": "2010-06-03"
+  },
+  {
+   "name": "Tom Christensen",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [
+    "University of Victoria"
+   ],
+   "prior_occupation": "lawyer; partner at Davidson & Company",
+   "occupation_category": "law",
+   "source_url": "https://web.archive.org/web/20060902201518/http://www.leg.bc.ca:80/mla/38thparl/christensen.htm",
+   "hansard_speaker_key": "t. christensen",
+   "first_seen": "2006-02-22",
+   "last_seen": "2009-03-30"
+  },
+  {
+   "name": "John Les",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "business and property development; Mayor of Chilliwack",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902191956/http://www.leg.bc.ca:80/mla/38thparl/les.htm",
+   "hansard_speaker_key": "j. les",
+   "first_seen": "2006-02-15",
+   "last_seen": "2010-06-01"
+  },
+  {
+   "name": "Tracy Redies",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "CEO, Coast Capital Savings; senior executive at HSBC; more than 25 years in financial management",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20170830133909/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/REDIES-Tracy",
+   "hansard_speaker_key": "t. redies",
+   "first_seen": "2017-06-26",
+   "last_seen": "2019-05-30"
+  },
+  {
+   "name": "Peter Fassbender",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "partner and senior executive, DDB Canada marketing and communications; radio and television",
+   "occupation_category": "communications-PR-journalism",
+   "source_url": "https://web.archive.org/web/20160323025316/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/fassbender-Peter",
+   "hansard_speaker_key": "p. fassbender",
+   "first_seen": "2015-02-11",
+   "last_seen": "2017-03-15"
+  },
+  {
+   "name": "Gregor Robertson",
+   "education_level": "bachelor",
+   "education_field": "English and biology",
+   "alma_maters": [],
+   "prior_occupation": "co-founder of Happy Planet Juice; organic farmer",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902195531/http://www.leg.bc.ca:80/mla/38thParl/robertson.htm",
+   "hansard_speaker_key": "g. robertson",
+   "first_seen": "2006-02-16",
+   "last_seen": "2008-05-27"
+  },
+  {
+   "name": "Greg Kyllo",
+   "education_level": "college",
+   "education_field": "",
+   "alma_maters": [
+    "Okanagan College"
+   ],
+   "prior_occupation": "President and CEO of Twin Anchors Marine / TA Structures for 24 years",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20160515224959/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/kyllo-Greg",
+   "hansard_speaker_key": "g. kyllo",
+   "first_seen": "2015-02-12",
+   "last_seen": "2019-11-25"
+  },
+  {
+   "name": "Randy Hawes",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "bank management, real estate and property development; Mayor of Mission",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902192623/http://www.leg.bc.ca:80/mla/38thparl/hawes.htm",
+   "hansard_speaker_key": "r. hawes",
+   "first_seen": "2006-02-15",
+   "last_seen": "2010-06-03"
+  },
+  {
+   "name": "Rick Thorpe",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "22 years in the Canadian brewing industry in senior management; winery partner; certified management accountant",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902193608/http://www.leg.bc.ca:80/mla/38thparl/thorpe.htm",
+   "hansard_speaker_key": "r. thorpe",
+   "first_seen": "2006-02-15",
+   "last_seen": "2009-03-30"
+  },
+  {
+   "name": "Wally Oppal",
+   "education_level": "professional",
+   "education_field": "law",
+   "alma_maters": [
+    "University of British Columbia"
+   ],
+   "prior_occupation": "lawyer for 14 years, then judge of the County Court, Supreme Court and Court of Appeal of British Columbia",
+   "occupation_category": "law",
+   "source_url": "https://web.archive.org/web/20051125192501/http://www.leg.bc.ca:80/mla/38thParl/oppal.htm",
+   "hansard_speaker_key": "w. oppal",
+   "first_seen": "2006-02-14",
+   "last_seen": "2009-03-31"
+  },
+  {
+   "name": "Iain Black",
+   "education_level": "bachelor",
+   "education_field": "business",
+   "alma_maters": [
+    "University of Manitoba"
+   ],
+   "prior_occupation": "president of the Banking Solutions Group, Open Solutions Canada; president and CEO, The Electric Mail Company",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20061020120937/http://www.leg.bc.ca:80/mla/38thParl/black.htm",
+   "hansard_speaker_key": "i. black",
+   "first_seen": "2006-02-15",
+   "last_seen": "2010-05-19"
+  },
+  {
+   "name": "Murray Coell",
+   "education_level": "bachelor",
+   "education_field": "social welfare",
+   "alma_maters": [
+    "University of Victoria"
+   ],
+   "prior_occupation": "social worker specialising in alcohol and drug rehabilitation; small business owner; Mayor of Saanich",
+   "occupation_category": "public-service",
+   "source_url": "https://web.archive.org/web/20060902192559/http://www.leg.bc.ca:80/mla/38thparl/coell.htm",
+   "hansard_speaker_key": "coell",
+   "first_seen": "2006-03-06",
+   "last_seen": "2010-05-04"
+  },
+  {
+   "name": "Sonia Furstenau",
+   "education_level": "graduate",
+   "education_field": "history",
+   "alma_maters": [
+    "University of Victoria"
+   ],
+   "prior_occupation": "teacher in the Victoria School District and at Shawnigan",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20170707193815/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Furstenau-Sonia",
+   "hansard_speaker_key": "s. furstenau",
+   "first_seen": "2017-06-28",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Ron Cantelon",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Re/Max manager (real estate); Nanaimo city councillor",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902194831/http://www.leg.bc.ca:80/mla/38thParl/cantelon.htm",
+   "hansard_speaker_key": "r. cantelon",
+   "first_seen": "2006-02-15",
+   "last_seen": "2010-06-03"
+  },
+  {
+   "name": "Spencer Chandra Herbert",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "arts and culture industry; associate producer, UN World Urban Festival; Vancouver Parks Commissioner",
+   "occupation_category": "other",
+   "source_url": "https://web.archive.org/web/20110218210401/http://www.leg.bc.ca/mla/39thParl/chandraherberts.htm",
+   "hansard_speaker_key": "s. herbert",
+   "first_seen": "2008-11-24",
+   "last_seen": "2010-03-31"
+  },
+  {
+   "name": "Carole Taylor",
+   "education_level": "bachelor",
+   "education_field": "English",
+   "alma_maters": [
+    "University of Toronto"
+   ],
+   "prior_occupation": "broadcast journalist (W5, Canada AM, Pacific Report); Chair of CBC/Radio-Canada",
+   "occupation_category": "communications-PR-journalism",
+   "source_url": "https://web.archive.org/web/20060902193404/http://www.leg.bc.ca:80/mla/38thParl/taylor.htm",
+   "hansard_speaker_key": "c. taylor",
+   "first_seen": "2006-02-21",
+   "last_seen": "2008-05-29"
+  },
+  {
+   "name": "Jinny Sims",
+   "education_level": "bachelor",
+   "education_field": "education",
+   "alma_maters": [
+    "University of Manchester"
+   ],
+   "prior_occupation": "high school teacher; President, BC Teachers' Federation; Member of Parliament",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20170729091958/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Sims-Jinny",
+   "hansard_speaker_key": "j. sims",
+   "first_seen": "2017-09-12",
+   "last_seen": "2019-11-27"
+  },
+  {
+   "name": "Marvin Hunt",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "",
+   "occupation_category": "unknown",
+   "source_url": "https://web.archive.org/web/20170829212919/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Hunt-Marvin",
+   "hansard_speaker_key": "hunt",
+   "first_seen": "2015-02-11",
+   "last_seen": "2019-10-23"
+  },
+  {
+   "name": "Vicki Huntington",
+   "education_level": "bachelor",
+   "education_field": "political science",
+   "alma_maters": [
+    "University of British Columbia"
+   ],
+   "prior_occupation": "RCMP Security Service civilian member and Special Constable; federal government official; Band Manager, Gitanmaax Indian Reserve",
+   "occupation_category": "public-service",
+   "source_url": "https://web.archive.org/web/20110128034104/http://leg.bc.ca/mla/39thParl/huntingtonV.htm",
+   "hansard_speaker_key": "v. huntington",
+   "first_seen": "2009-09-03",
+   "last_seen": "2017-03-14"
+  },
+  {
+   "name": "John Martin",
+   "education_level": "graduate",
+   "education_field": "criminology",
+   "alma_maters": [
+    "British Columbia Institute of Technology",
+    "Simon Fraser University"
+   ],
+   "prior_occupation": "criminologist and faculty member, School of Criminology, University of the Fraser Valley",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20170131195013/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Martin-John",
+   "hansard_speaker_key": "j. martin",
+   "first_seen": "2015-02-11",
+   "last_seen": "2019-11-18"
+  },
+  {
+   "name": "Dave Hayer",
+   "education_level": "bachelor",
+   "education_field": "business administration",
+   "alma_maters": [
+    "Simon Fraser University",
+    "University of British Columbia"
+   ],
+   "prior_occupation": "Surrey businessperson; Assistant Publisher of the Indo-Canadian Times; real estate agent",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20061019173922/http://www.leg.bc.ca:80/mla/38thparl/hayer.htm",
+   "hansard_speaker_key": "d. hayer",
+   "first_seen": "2006-02-15",
+   "last_seen": "2010-06-03"
+  },
+  {
+   "name": "Jordan Sturdy",
+   "education_level": "college",
+   "education_field": "",
+   "alma_maters": [
+    "Vancouver Community College",
+    "University of British Columbia"
+   ],
+   "prior_occupation": "paramedic; owner of North Arm Farm; Mayor of Pemberton",
+   "occupation_category": "health",
+   "source_url": "https://web.archive.org/web/20170829213145/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Sturdy-Jordan",
+   "hansard_speaker_key": "j. sturdy",
+   "first_seen": "2015-02-17",
+   "last_seen": "2019-11-27"
+  },
+  {
+   "name": "Simon Gibson",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "instructor, School of Business, University of the Fraser Valley; syndicated newspaper columnist",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20170829212847/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Gibson-Simon",
+   "hansard_speaker_key": "s. gibson",
+   "first_seen": "2015-02-12",
+   "last_seen": "2019-11-26"
+  },
+  {
+   "name": "Linda Reid",
+   "education_level": "graduate",
+   "education_field": "education",
+   "alma_maters": [
+    "University of British Columbia"
+   ],
+   "prior_occupation": "language therapist, teacher and school administrator, Richmond School District",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20061210012306/http://www.leg.bc.ca:80/mla/38thparl/reidl.htm",
+   "hansard_speaker_key": "l. reid",
+   "first_seen": "2006-02-23",
+   "last_seen": "2019-11-19"
+  },
+  {
+   "name": "Dan Davies",
+   "education_level": "graduate",
+   "education_field": "education; leadership and administration",
+   "alma_maters": [
+    "Gonzaga University",
+    "Simon Fraser University"
+   ],
+   "prior_occupation": "full-time teacher with School District 60; Canadian Armed Forces reservist",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20170806022322/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Davies-Dan",
+   "hansard_speaker_key": "d. davies",
+   "first_seen": "2017-06-26",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Melanie Mark",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Associate Deputy Representative, BC Office of the Representative for Children and Youth; National Aboriginal Project Coordinator, Save the Children Canada",
+   "occupation_category": "public-service",
+   "source_url": "https://web.archive.org/web/20170829213005/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Mark-Melanie",
+   "hansard_speaker_key": "mark",
+   "first_seen": "2016-02-24",
+   "last_seen": "2019-11-25"
+  },
+  {
+   "name": "Don McRae",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "teacher at GP Vanier Secondary School for 14 years",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20110128031730/http://leg.bc.ca/mla/39thParl/mcraeD.htm",
+   "hansard_speaker_key": "d. mcrae",
+   "first_seen": "2009-08-27",
+   "last_seen": "2017-03-16"
+  },
+  {
+   "name": "Ellis Ross",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "hand logging, beachcombing and construction; taxi boat operator; Chief Councillor of the Haisla Nation",
+   "occupation_category": "trades-labour",
+   "source_url": "https://web.archive.org/web/20170830133914/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/ROSS-Ellis",
+   "hansard_speaker_key": "e. ross",
+   "first_seen": "2017-06-27",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Sue Hammell",
+   "education_level": "bachelor",
+   "education_field": "education",
+   "alma_maters": [
+    "University of British Columbia"
+   ],
+   "prior_occupation": "teacher; Executive Director, Surrey Aboriginal Society",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20051125193031/http://www.leg.bc.ca:80/mla/38thParl/hammell.htm",
+   "hansard_speaker_key": "s. hammell",
+   "first_seen": "2006-02-28",
+   "last_seen": "2017-03-16"
+  },
+  {
+   "name": "Claude Richmond",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Royal Canadian Air Force; 25 years in small business; manager of CHNL radio station; business consultant",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902195035/http://www.leg.bc.ca:80/mla/38thparl/richmond.htm",
+   "hansard_speaker_key": "c. richmond",
+   "first_seen": "2006-02-15",
+   "last_seen": "2009-03-12"
+  },
+  {
+   "name": "Joan McIntyre",
+   "education_level": "bachelor",
+   "education_field": "political science",
+   "alma_maters": [
+    "University of Toronto"
+   ],
+   "prior_occupation": "co-founder of the polling firm McIntyre & Mustel Research Associates",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902194858/http://www.leg.bc.ca:80/mla/38thParl/mcintyre.htm",
+   "hansard_speaker_key": "j. mcintyre",
+   "first_seen": "2006-02-20",
+   "last_seen": "2010-06-03"
+  },
+  {
+   "name": "Raj Chouhan",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "founding president, Canadian Farmworkers' Union; director, Hospital Employees Union",
+   "occupation_category": "trades-labour",
+   "source_url": "https://web.archive.org/web/20060902193818/http://www.leg.bc.ca:80/mla/38thParl/chouhan.htm",
+   "hansard_speaker_key": "r. chouhan",
+   "first_seen": "2006-02-15",
+   "last_seen": "2019-11-27"
+  },
+  {
+   "name": "Teresa Wat",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "president and CEO, Mainstream Broadcasting Corporation; news director, Channel M Television; communications advisor to BC Cabinet Policy and Communications Secretariat",
+   "occupation_category": "communications-PR-journalism",
+   "source_url": "https://web.archive.org/web/20160917223709/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Wat-Teresa",
+   "hansard_speaker_key": "t. wat",
+   "first_seen": "2015-02-12",
+   "last_seen": "2019-11-18"
+  },
+  {
+   "name": "Tom Shypitka",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "financial advisor; Cranbrook city councillor",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20170707194039/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Shypitka-Tom",
+   "hansard_speaker_key": "t. shypitka",
+   "first_seen": "2017-06-26",
+   "last_seen": "2019-11-21"
+  },
+  {
+   "name": "Christy Clark",
+   "education_level": "college",
+   "education_field": "political science and religious studies",
+   "alma_maters": [
+    "Simon Fraser University",
+    "Sorbonne",
+    "University of Edinburgh"
+   ],
+   "prior_occupation": "",
+   "occupation_category": "unknown",
+   "source_url": "https://web.archive.org/web/20160106223050/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/clark-Christy",
+   "hansard_speaker_key": "c. clark",
+   "first_seen": "2015-02-10",
+   "last_seen": "2017-06-29"
+  },
+  {
+   "name": "stilwell",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "",
+   "occupation_category": "unknown",
+   "source_url": "",
+   "hansard_speaker_key": "stilwell",
+   "first_seen": "2009-08-26",
+   "last_seen": "2019-11-26"
+  },
+  {
+   "name": "Jennifer Rice",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "worked with the T. Buck Suzuki Environmental Foundation and northern community groups; Prince Rupert city councillor",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20170829213058/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Rice-Jennifer",
+   "hansard_speaker_key": "j. rice",
+   "first_seen": "2015-02-12",
+   "last_seen": "2019-11-20"
+  },
+  {
+   "name": "Lorne Mayencourt",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "small business owner; international sales manager, Columbia Computing Services; founder and executive director, Vancouver Friends for Life Society",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902201154/http://www.leg.bc.ca:80/mla/38thParl/mayencourt.htm",
+   "hansard_speaker_key": "l. mayencourt",
+   "first_seen": "2006-02-15",
+   "last_seen": "2008-05-26"
+  },
+  {
+   "name": "Doug Clovechok",
+   "education_level": "graduate",
+   "education_field": "educational leadership and administration; secondary education",
+   "alma_maters": [
+    "Gonzaga University",
+    "University of Calgary"
+   ],
+   "prior_occupation": "high school teacher, Calgary Board of Education; CEO, Calgary Education Partnership Foundation; campus manager, College of the Rockies",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20170707193709/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Clovechok-Doug",
+   "hansard_speaker_key": "d. clovechok",
+   "first_seen": "2017-06-26",
+   "last_seen": "2019-11-18"
+  },
+  {
+   "name": "Harry Bloy",
+   "education_level": "college",
+   "education_field": "marketing",
+   "alma_maters": [
+    "Ryerson Polytechnical Institute"
+   ],
+   "prior_occupation": "president of a telecommunications company; retail chain national marketing manager; convenience store chain owner",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902192100/http://www.leg.bc.ca:80/mla/38thParl/bloy.htm",
+   "hansard_speaker_key": "h. bloy",
+   "first_seen": "2006-02-21",
+   "last_seen": "2010-06-03"
+  },
+  {
+   "name": "Gary Holman",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "consulting economist for over 25 years",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20170829212911/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Holman-Gary",
+   "hansard_speaker_key": "g. holman",
+   "first_seen": "2015-02-11",
+   "last_seen": "2017-03-16"
+  },
+  {
+   "name": "Ian Paton",
+   "education_level": "bachelor",
+   "education_field": "",
+   "alma_maters": [
+    "University of British Columbia"
+   ],
+   "prior_occupation": "over 30 years running and owning a dairy farm and farm auction business",
+   "occupation_category": "agriculture",
+   "source_url": "https://web.archive.org/web/20170707193840/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Paton-Ian",
+   "hansard_speaker_key": "i. paton",
+   "first_seen": "2017-06-28",
+   "last_seen": "2019-11-20"
+  },
+  {
+   "name": "Mitzi Dean",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "child protection social worker; national development manager for children's services, NSPCC; Executive Director, Pacific Centre Family Services Association",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20170829193450/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Dean-Mitzi",
+   "hansard_speaker_key": "dean",
+   "first_seen": "2017-06-29",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Dan Ashton",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "family retail business; Mayor of Penticton",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20170829212654/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Ashton-Dan",
+   "hansard_speaker_key": "d. ashton",
+   "first_seen": "2015-02-11",
+   "last_seen": "2019-11-26"
+  },
+  {
+   "name": "Katrina Chen",
+   "education_level": "bachelor",
+   "education_field": "political science and history",
+   "alma_maters": [
+    "Simon Fraser University",
+    "University of British Columbia"
+   ],
+   "prior_occupation": "worked in provincial and federal government constituency offices for over 10 years; community organizer with ACORN",
+   "occupation_category": "public-service",
+   "source_url": "https://web.archive.org/web/20170729131748/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Chen-Katrina",
+   "hansard_speaker_key": "k. chen",
+   "first_seen": "2017-06-29",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Bob D'Eith",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "",
+   "occupation_category": "unknown",
+   "source_url": "",
+   "hansard_speaker_key": "b. d’eith",
+   "first_seen": "2017-06-28",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Dennis MacKay",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "RCMP regular member 1961-1989; private investigator; provincial coroner",
+   "occupation_category": "public-service",
+   "source_url": "https://web.archive.org/web/20060902193313/http://www.leg.bc.ca:80/mla/38thParl/mackay.htm",
+   "hansard_speaker_key": "d. mackay",
+   "first_seen": "2006-02-20",
+   "last_seen": "2009-03-31"
+  },
+  {
+   "name": "Stan Hagen",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "",
+   "occupation_category": "unknown",
+   "source_url": "https://web.archive.org/web/20060902192610/http://www.leg.bc.ca:80/mla/38thparl/hagen.htm",
+   "hansard_speaker_key": "s. hagen",
+   "first_seen": "2006-02-16",
+   "last_seen": "2008-11-20"
+  },
+  {
+   "name": "Richard Lee",
+   "education_level": "graduate",
+   "education_field": "physics and mathematics; applied mathematics",
+   "alma_maters": [
+    "University of British Columbia"
+   ],
+   "prior_occupation": "programmer analyst at TRIUMF, Canada's national particle research facility",
+   "occupation_category": "other",
+   "source_url": "https://web.archive.org/web/20060902191943/http://www.leg.bc.ca:80/mla/38thparl/lee.htm",
+   "hansard_speaker_key": "r. lee",
+   "first_seen": "2006-02-15",
+   "last_seen": "2017-03-15"
+  },
+  {
+   "name": "Olga Ilich",
+   "education_level": "graduate",
+   "education_field": "business administration",
+   "alma_maters": [
+    "University of British Columbia",
+    "University of Manitoba",
+    "Memorial University of Newfoundland"
+   ],
+   "prior_occupation": "founder and President, Suncor Development Corporation; Executive Vice-President, Progressive Construction Ltd.",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20061019173050/http://www.leg.bc.ca:80/mla/38thParl/ilich.htm",
+   "hansard_speaker_key": "o. ilich",
+   "first_seen": "2006-02-27",
+   "last_seen": "2009-03-25"
+  },
+  {
+   "name": "Sam Sullivan",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "founder, Global Civic Policy Society and Sam Sullivan Disability Foundation; Mayor of Vancouver",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20170829213149/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Sullivan-Sam",
+   "hansard_speaker_key": "s. sullivan",
+   "first_seen": "2015-02-16",
+   "last_seen": "2019-11-19"
+  },
+  {
+   "name": "Joan Isaacs",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "three decades in the BC financial services industry; business consultant",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20170707193724/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Isaacs-Joan",
+   "hansard_speaker_key": "j. isaacs",
+   "first_seen": "2017-06-27",
+   "last_seen": "2019-11-28"
+  },
+  {
+   "name": "Ravi Kahlon",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "seven years in banking; Director of Stakeholder Relations, New Democrat Caucus; Olympic field hockey athlete",
+   "occupation_category": "public-service",
+   "source_url": "https://web.archive.org/web/20170707193829/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Kahlon-Ravi",
+   "hansard_speaker_key": "r. kahlon",
+   "first_seen": "2017-06-27",
+   "last_seen": "2019-11-26"
+  },
+  {
+   "name": "Anne Kang",
+   "education_level": "graduate",
+   "education_field": "special education; music; education",
+   "alma_maters": [
+    "University of British Columbia"
+   ],
+   "prior_occupation": "music teacher in the Burnaby school system",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20170729092003/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Kang-Anne",
+   "hansard_speaker_key": "a. kang",
+   "first_seen": "2017-06-29",
+   "last_seen": "2019-11-27"
+  },
+  {
+   "name": "John van Dongen",
+   "education_level": "college",
+   "education_field": "agricultural economics",
+   "alma_maters": [
+    "University of British Columbia"
+   ],
+   "prior_occupation": "operated a dairy farm in Abbotsford",
+   "occupation_category": "agriculture",
+   "source_url": "https://web.archive.org/web/20060902195544/http://www.leg.bc.ca:80/mla/38thparl/vandongen.htm",
+   "hansard_speaker_key": "j. van dongen",
+   "first_seen": "2006-02-22",
+   "last_seen": "2010-06-03"
+  },
+  {
+   "name": "Jane Shin",
+   "education_level": "professional",
+   "education_field": "medicine",
+   "alma_maters": [
+    "Spartan Health Sciences University"
+   ],
+   "prior_occupation": "healthcare educator; taught at BCIT, Vancouver Community College and West Coast College of Massage Therapy",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20160917222557/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/shin-Jane",
+   "hansard_speaker_key": "j. shin",
+   "first_seen": "2015-02-16",
+   "last_seen": "2017-03-16"
+  },
+  {
+   "name": "Jackie Tegart",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "facilitator, BC Healthy Communities Interior Region; coordinator for Community Futures; partner in a gallery business; school board chair",
+   "occupation_category": "other",
+   "source_url": "https://web.archive.org/web/20170829213157/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Tegart-Jackie",
+   "hansard_speaker_key": "j. tegart",
+   "first_seen": "2015-02-11",
+   "last_seen": "2019-11-25"
+  },
+  {
+   "name": "Bowinn Ma",
+   "education_level": "graduate",
+   "education_field": "applied science (engineering); management",
+   "alma_maters": [
+    "University of British Columbia"
+   ],
+   "prior_occupation": "project manager; professional engineer; managed terminal expansion projects at Vancouver International Airport",
+   "occupation_category": "other",
+   "source_url": "https://web.archive.org/web/20170729131417/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Ma-Bowinn",
+   "hansard_speaker_key": "b. ma",
+   "first_seen": "2017-06-28",
+   "last_seen": "2019-11-27"
+  },
+  {
+   "name": "Gordon Hogg",
+   "education_level": "graduate",
+   "education_field": "psychology; sociology",
+   "alma_maters": [
+    "University of British Columbia",
+    "Antioch College"
+   ],
+   "prior_occupation": "counsellor, probation officer and Regional Director for Corrections",
+   "occupation_category": "public-service",
+   "source_url": "https://web.archive.org/web/20051125190522/http://www.leg.bc.ca:80/mla/38thParl/hogg.htm",
+   "hansard_speaker_key": "g. hogg",
+   "first_seen": "2006-03-06",
+   "last_seen": "2017-03-16"
+  },
+  {
+   "name": "Margaret MacDiarmid",
+   "education_level": "professional",
+   "education_field": "medicine",
+   "alma_maters": [],
+   "prior_occupation": "family physician for 23 years; president of the BC Medical Association",
+   "occupation_category": "health",
+   "source_url": "https://web.archive.org/web/20110218204055/http://www.leg.bc.ca/mla/39thParl/macdiarmidm.htm",
+   "hansard_speaker_key": "macdiarmid",
+   "first_seen": "2009-08-31",
+   "last_seen": "2010-06-01"
+  },
+  {
+   "name": "Linda Larson",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "owned three businesses in Oliver; Mayor of Oliver",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20170129202804/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Larson-Linda",
+   "hansard_speaker_key": "l. larson",
+   "first_seen": "2015-02-25",
+   "last_seen": "2019-11-21"
+  },
+  {
+   "name": "Michelle Stilwell",
+   "education_level": "bachelor",
+   "education_field": "science",
+   "alma_maters": [
+    "University of Calgary"
+   ],
+   "prior_occupation": "motivational speaker and community advocate for persons with disabilities; Paralympic champion",
+   "occupation_category": "other",
+   "source_url": "https://web.archive.org/web/20170829213131/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Stilwell-Michelle",
+   "hansard_speaker_key": "michelle stilwell",
+   "first_seen": "2015-02-19",
+   "last_seen": "2017-03-14"
+  },
+  {
+   "name": "Marc Dalton",
+   "education_level": "graduate",
+   "education_field": "educational leadership; French and history",
+   "alma_maters": [
+    "Simon Fraser University"
+   ],
+   "prior_occupation": "long-time teacher in the Maple Ridge School District",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20110128032307/http://leg.bc.ca/mla/39thParl/daltonM.htm",
+   "hansard_speaker_key": "dalton",
+   "first_seen": "2009-08-31",
+   "last_seen": "2017-03-14"
+  },
+  {
+   "name": "Ronna-Rae Leonard",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "environmental researcher, educator and project manager; Courtenay councillor",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20170707193759/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Leonard-Ronna-Rae",
+   "hansard_speaker_key": "r. leonard",
+   "first_seen": "2017-09-12",
+   "last_seen": "2019-11-26"
+  },
+  {
+   "name": "Linda Reimer",
+   "education_level": "bachelor",
+   "education_field": "business with a criminology minor",
+   "alma_maters": [
+    "Simon Fraser University"
+   ],
+   "prior_occupation": "",
+   "occupation_category": "unknown",
+   "source_url": "https://web.archive.org/web/20170829213054/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Reimer-Linda",
+   "hansard_speaker_key": "l. reimer",
+   "first_seen": "2015-02-16",
+   "last_seen": "2017-03-16"
+  },
+  {
+   "name": "Darryl Plecas",
+   "education_level": "graduate",
+   "education_field": "criminology; higher education",
+   "alma_maters": [
+    "Simon Fraser University",
+    "University of British Columbia"
+   ],
+   "prior_occupation": "RCMP Research Chair and Director, Centre for Public Safety and Criminal Justice Research, University of the Fraser Valley",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20170829213034/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Plecas-Darryl",
+   "hansard_speaker_key": "d. plecas",
+   "first_seen": "2015-02-16",
+   "last_seen": "2017-06-26"
+  },
+  {
+   "name": "Doug Bing",
+   "education_level": "professional",
+   "education_field": "dentistry",
+   "alma_maters": [
+    "University of British Columbia"
+   ],
+   "prior_occupation": "dentist; established Pitt Meadows' first dental practice",
+   "occupation_category": "health",
+   "source_url": "https://web.archive.org/web/20160917223651/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Bing-Doug",
+   "hansard_speaker_key": "d. bing",
+   "first_seen": "2015-02-17",
+   "last_seen": "2017-03-15"
+  },
+  {
+   "name": "Lisa Beare",
+   "education_level": "college",
+   "education_field": "local government management",
+   "alma_maters": [
+    "University of Victoria"
+   ],
+   "prior_occupation": "flight attendant; school board trustee",
+   "occupation_category": "other",
+   "source_url": "https://web.archive.org/web/20170829193536/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Beare-Lisa",
+   "hansard_speaker_key": "l. beare",
+   "first_seen": "2017-06-28",
+   "last_seen": "2019-11-21"
+  },
+  {
+   "name": "Dawn Black",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "",
+   "occupation_category": "unknown",
+   "source_url": "https://web.archive.org/web/20110128032137/http://leg.bc.ca/mla/39thParl/blackD.htm",
+   "hansard_speaker_key": "d. black",
+   "first_seen": "2009-08-27",
+   "last_seen": "2010-06-03"
+  },
+  {
+   "name": "Scott Hamilton",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "",
+   "occupation_category": "unknown",
+   "source_url": "https://web.archive.org/web/20170829212851/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/hamilton-Scott",
+   "hansard_speaker_key": "s. hamilton",
+   "first_seen": "2015-02-11",
+   "last_seen": "2017-03-13"
+  },
+  {
+   "name": "John Nuraney",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "owns five A&W restaurants; commercial insurance agent and realtor; financial director of an international company",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902193940/http://www.leg.bc.ca:80/mla/38thParl/nuraney.htm",
+   "hansard_speaker_key": "j. nuraney",
+   "first_seen": "2006-02-27",
+   "last_seen": "2009-03-30"
+  },
+  {
+   "name": "Rachna Singh",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "drug and alcohol counsellor; support worker for women facing domestic violence",
+   "occupation_category": "health",
+   "source_url": "https://web.archive.org/web/20170729092257/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Singh-Rachna",
+   "hansard_speaker_key": "r. singh",
+   "first_seen": "2017-06-29",
+   "last_seen": "2019-11-26"
+  },
+  {
+   "name": "Amrik Virk",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "RCMP officer, commissioned to Inspector, Officer in Charge of Operations",
+   "occupation_category": "public-service",
+   "source_url": "https://web.archive.org/web/20160917222325/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Virk-Amrik",
+   "hansard_speaker_key": "a. virk",
+   "first_seen": "2015-02-12",
+   "last_seen": "2017-03-16"
+  },
+  {
+   "name": "Janet Routledge",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "more than 30 years with the Public Service Alliance of Canada",
+   "occupation_category": "trades-labour",
+   "source_url": "https://web.archive.org/web/20170829193359/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Routledge-Janet",
+   "hansard_speaker_key": "j. routledge",
+   "first_seen": "2017-06-27",
+   "last_seen": "2019-11-27"
+  },
+  {
+   "name": "Douglas Horne",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Managing Director - Corporate and CEO, Maple Leaf Studios Ltd.; political staff in Ottawa",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20110128034555/http://leg.bc.ca/mla/39thparl/horneD.htm",
+   "hansard_speaker_key": "d. horne",
+   "first_seen": "2009-08-31",
+   "last_seen": "2015-05-11"
+  },
+  {
+   "name": "Naomi Yamamoto",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "president and owner of Tora Design Group for 21 years; president and general manager, North Vancouver Chamber of Commerce",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20110218210740/http://www.leg.bc.ca/mla/39thParl/yamamoton.htm",
+   "hansard_speaker_key": "n. yamamoto",
+   "first_seen": "2009-08-27",
+   "last_seen": "2017-03-16"
+  },
+  {
+   "name": "Jas Johal",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "journalist; Global Television Asia bureau chief; Director of Communications, BC LNG Alliance",
+   "occupation_category": "communications-PR-journalism",
+   "source_url": "https://web.archive.org/web/20170729131857/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Johal-Jas",
+   "hansard_speaker_key": "j. johal",
+   "first_seen": "2017-06-26",
+   "last_seen": "2019-11-26"
+  },
+  {
+   "name": "Pat Pimm",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "25 years in the oil and gas industry; president of Alpha Controls Ltd. (construction and electrical services)",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20110128033855/http://leg.bc.ca/mla/39thParl/pimmP.htm",
+   "hansard_speaker_key": "p. pimm",
+   "first_seen": "2009-08-31",
+   "last_seen": "2016-05-18"
+  },
+  {
+   "name": "Katherine Whittred",
+   "education_level": "bachelor",
+   "education_field": "education",
+   "alma_maters": [
+    "University of Calgary"
+   ],
+   "prior_occupation": "secondary teacher; owned and operated a small manufacturing business",
+   "occupation_category": "education",
+   "source_url": "https://web.archive.org/web/20060902194945/http://www.leg.bc.ca:80/mla/38thParl/whittred.htm",
+   "hansard_speaker_key": "k. whittred",
+   "first_seen": "2006-02-15",
+   "last_seen": "2009-03-25"
+  },
+  {
+   "name": "Val Roddick",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "founded a farm fertilizer business serving the local farm community",
+   "occupation_category": "agriculture",
+   "source_url": "https://web.archive.org/web/20060902194139/http://www.leg.bc.ca:80/mla/38thParl/roddick.htm",
+   "hansard_speaker_key": "v. roddick",
+   "first_seen": "2006-02-16",
+   "last_seen": "2009-03-31"
+  },
+  {
+   "name": "Eric Foster",
+   "education_level": "unknown",
+   "education_field": "forestry",
+   "alma_maters": [],
+   "prior_occupation": "registered forest technician; Mayor of the Village of Lumby",
+   "occupation_category": "trades-labour",
+   "source_url": "https://web.archive.org/web/20110128034515/http://leg.bc.ca/mla/39thparl/fosterE.htm",
+   "hansard_speaker_key": "e. foster",
+   "first_seen": "2009-09-01",
+   "last_seen": "2019-10-07"
+  },
+  {
+   "name": "Judith Guichon",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "",
+   "occupation_category": "unknown",
+   "source_url": "",
+   "hansard_speaker_key": "j. guichon",
+   "first_seen": "2015-02-10",
+   "last_seen": "2018-02-13"
+  },
+  {
+   "name": "Rick Glumac",
+   "education_level": "bachelor",
+   "education_field": "electronics engineering",
+   "alma_maters": [
+    "Simon Fraser University"
+   ],
+   "prior_occupation": "worked in hi-tech industries: film animation and mobile app development",
+   "occupation_category": "other",
+   "source_url": "https://web.archive.org/web/20170806022427/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Glumac-Rick",
+   "hansard_speaker_key": "r. glumac",
+   "first_seen": "2017-06-29",
+   "last_seen": "2019-11-26"
+  },
+  {
+   "name": "Rob Howard",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "real estate (co-chair, Real Estate Institute of BC Vancouver chapter); President of Tourism Richmond",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20110128032207/http://leg.bc.ca/mla/39thParl/howardR.htm",
+   "hansard_speaker_key": "r. howard",
+   "first_seen": "2009-08-27",
+   "last_seen": "2010-06-02"
+  },
+  {
+   "name": "Jodie Wickens",
+   "education_level": "college",
+   "education_field": "behaviour intervention and classroom and community support",
+   "alma_maters": [
+    "Douglas College"
+   ],
+   "prior_occupation": "Executive Director, Autism Support Network; parent advocate",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20170829213231/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Wickens-Jodie",
+   "hansard_speaker_key": "j. wickens",
+   "first_seen": "2016-02-17",
+   "last_seen": "2017-03-15"
+  },
+  {
+   "name": "Steven Point",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "",
+   "occupation_category": "unknown",
+   "source_url": "",
+   "hansard_speaker_key": "s. point",
+   "first_seen": "2008-02-12",
+   "last_seen": "2010-02-09"
+  },
+  {
+   "name": "Sheila Malcolmson",
+   "education_level": "bachelor",
+   "education_field": "environmental and resource studies",
+   "alma_maters": [
+    "Trent University"
+   ],
+   "prior_occupation": "worked for Energy Probe and the Canadian Institute for Environmental Law and Policy; Islands Trust Council chair; Member of Parliament",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20190719212350/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Malcolmson-Sheila",
+   "hansard_speaker_key": "s. malcolmson",
+   "first_seen": "2019-02-14",
+   "last_seen": "2019-11-27"
+  },
+  {
+   "name": "Kash Heed",
+   "education_level": "graduate",
+   "education_field": "",
+   "alma_maters": [
+    "Simon Fraser University",
+    "BC Police Academy"
+   ],
+   "prior_occupation": "police officer, rising to Superintendent in the Vancouver Police Department; Chief of the West Vancouver Police Department",
+   "occupation_category": "public-service",
+   "source_url": "https://web.archive.org/web/20110218205900/http://www.leg.bc.ca/mla/39thParl/heedk.htm",
+   "hansard_speaker_key": "k. heed",
+   "first_seen": "2009-09-17",
+   "last_seen": "2010-03-29"
+  },
+  {
+   "name": "Mary McNeil",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "president and CEO, BC Cancer Foundation",
+   "occupation_category": "NGO-advocacy",
+   "source_url": "https://web.archive.org/web/20110218210716/http://www.leg.bc.ca/mla/39thParl/mcneilm.htm",
+   "hansard_speaker_key": "mcneil",
+   "first_seen": "2009-08-27",
+   "last_seen": "2010-04-22"
+  },
+  {
+   "name": "Sindi Hawkins",
+   "education_level": "professional",
+   "education_field": "law; nursing",
+   "alma_maters": [
+    "University of Calgary",
+    "Montreal Neurological Hospital"
+   ],
+   "prior_occupation": "registered nurse, then lawyer with an interest in medical-legal issues",
+   "occupation_category": "law",
+   "source_url": "https://web.archive.org/web/20060902194243/http://www.leg.bc.ca:80/mla/38thparl/hawkins.htm",
+   "hansard_speaker_key": "s. hawkins",
+   "first_seen": "2006-02-16",
+   "last_seen": "2009-03-10"
+  },
+  {
+   "name": "Moira Stilwell",
+   "education_level": "professional",
+   "education_field": "medicine",
+   "alma_maters": [],
+   "prior_occupation": "radiologist and nuclear medicine physician; Head of Nuclear Medicine at St. Paul's, Surrey Memorial and Abbotsford hospitals",
+   "occupation_category": "health",
+   "source_url": "https://web.archive.org/web/20170829213137/https://www.leg.bc.ca/learn-about-us/members/40th-Parliament/Stilwell-Moira",
+   "hansard_speaker_key": "moira stilwell",
+   "first_seen": "2015-02-18",
+   "last_seen": "2017-02-23"
+  },
+  {
+   "name": "Daniel Jarvis",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "real estate and construction industries; general insurance industry for ten years",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902193247/http://www.leg.bc.ca:80/mla/38thParl/jarvis.htm",
+   "hansard_speaker_key": "d. jarvis",
+   "first_seen": "2006-02-15",
+   "last_seen": "2008-05-06"
+  },
+  {
+   "name": "Iona Campagnolo",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "",
+   "occupation_category": "unknown",
+   "source_url": "",
+   "hansard_speaker_key": "i. campagnolo",
+   "first_seen": "2006-02-14",
+   "last_seen": "2007-05-31"
+  },
+  {
+   "name": "George Chow",
+   "education_level": "bachelor",
+   "education_field": "mechanical engineering",
+   "alma_maters": [
+    "University of British Columbia"
+   ],
+   "prior_occupation": "30-year career with BC Hydro in power generation; professional engineer",
+   "occupation_category": "other",
+   "source_url": "https://web.archive.org/web/20170729131534/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/Chow-George",
+   "hansard_speaker_key": "g. chow",
+   "first_seen": "2017-09-18",
+   "last_seen": "2019-11-20"
+  },
+  {
+   "name": "Jenn McGinn",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "Account Manager, Vancity Community Business banking team; Executive Director, South Granville Seniors Centre",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20110218221055/http://www.leg.bc.ca/mla/38thParl/mcginn.htm",
+   "hansard_speaker_key": "j. mcginn",
+   "first_seen": "2008-11-20",
+   "last_seen": "2009-03-30"
+  },
+  {
+   "name": "Al Horning",
+   "education_level": "secondary",
+   "education_field": "",
+   "alma_maters": [
+    "Rutland Secondary School"
+   ],
+   "prior_occupation": "realtor and President of Sun Country Realty Ltd.; orchardist",
+   "occupation_category": "business",
+   "source_url": "https://web.archive.org/web/20060902193913/http://www.leg.bc.ca:80/mla/38thParl/horning.htm",
+   "hansard_speaker_key": "a. horning",
+   "first_seen": "2006-02-16",
+   "last_seen": "2008-05-08"
+  },
+  {
+   "name": "John Slater",
+   "education_level": "college",
+   "education_field": "",
+   "alma_maters": [
+    "University of Victoria"
+   ],
+   "prior_occupation": "owns and operates Desert Edge Nursery, a retail/wholesale vegetable and nursery operation; Mayor of Osoyoos",
+   "occupation_category": "agriculture",
+   "source_url": "https://web.archive.org/web/20110128031319/http://leg.bc.ca/mla/39thParl/slaterJ.htm",
+   "hansard_speaker_key": "j. slater",
+   "first_seen": "2009-09-01",
+   "last_seen": "2010-06-03"
+  },
+  {
+   "name": "Garry Begg",
+   "education_level": "unknown",
+   "education_field": "",
+   "alma_maters": [],
+   "prior_occupation": "career RCMP officer for over 38 years, District Commander in Surrey",
+   "occupation_category": "public-service",
+   "source_url": "https://web.archive.org/web/20170830133830/https://www.leg.bc.ca/learn-about-us/members/41st-Parliament/BEGG-Garry",
+   "hansard_speaker_key": "g. begg",
+   "first_seen": "2017-06-29",
+   "last_seen": "2019-10-31"
+  }
+ ]
+}

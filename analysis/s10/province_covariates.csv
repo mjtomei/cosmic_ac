@@ -1,0 +1,12 @@
+prov,name,internet1997,internet1998,internet1999,internet2000,internet2001,internet2002,internet2003,note
+"#source: Statistics Canada table 22-10-0034 (Household Internet Use Survey),","household internet use from any location, % of households;",downloaded 2026-08-06 from www150.statcan.gc.ca/n1/tbl/csv/22100034-eng.zip,,,,,,
+BC,British Columbia,33.2,42.0,48.1,55.9,65.3,65.7,70.6,
+AB,Alberta,34.0,45.0,50.8,58.8,65.3,64.3,68.8,
+SK,Saskatchewan,26.4,33.7,39.9,46.9,52.6,57.6,62.6,
+MB,Manitoba,28.8,33.3,38.3,49.8,56.7,60.1,64.2,
+ON,Ontario,32.9,39.1,44.5,54.2,63.7,67.4,68.4,
+QC,Quebec,19.8,26.2,33.1,43.6,53.7,53.2,54.9,French-language debates; excluded from English-instrument designs
+NB,New Brunswick,28.1,31.0,38.0,45.2,52.4,48.6,53.3,
+NS,Nova Scotia,31.8,37.8,41.1,52.0,57.4,58.1,63.1,
+PE,Prince Edward Island,25.7,35.4,40.5,51.1,57.8,54.1,59.4,
+NL,Newfoundland and Labrador,26.1,28.8,35.2,45.5,50.2,50.8,56.3,

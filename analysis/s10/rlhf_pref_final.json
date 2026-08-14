@@ -1,0 +1,222 @@
+{
+ "paired": {
+  "llama31": 1600,
+  "qwen3": 3200,
+  "mistral": 1600,
+  "qwen3_a3b": 800
+ },
+ "by_checkpoint": [
+  {
+   "n": 800,
+   "families": 4,
+   "prompts": 800,
+   "base_words": 768027,
+   "instruct_words": 944225,
+   "style_words_present": 293,
+   "unmeasured": 61,
+   "well_measured": 67,
+   "excess_pooled": 0.6057797934742138,
+   "excess_well_measured": 0.3757905382230248,
+   "strata": {
+    "0": {
+     "n_words": 61,
+     "excess": 1.5040340918865753
+    },
+    "1-4": {
+     "n_words": 104,
+     "excess": 0.428740977320316
+    },
+    "5-19": {
+     "n_words": 61,
+     "excess": 0.2809635124263708
+    },
+    "20+": {
+     "n_words": 67,
+     "excess": 0.3757905382230248
+    }
+   }
+  },
+  {
+   "n": 1600,
+   "families": 3,
+   "prompts": 1600,
+   "base_words": 1187489,
+   "instruct_words": 1435683,
+   "style_words_present": 310,
+   "unmeasured": 61,
+   "well_measured": 82,
+   "excess_pooled": 0.631060053818042,
+   "excess_well_measured": 0.38715030883460655,
+   "strata": {
+    "0": {
+     "n_words": 61,
+     "excess": 1.607857988247638
+    },
+    "1-4": {
+     "n_words": 105,
+     "excess": 0.35567773122433344
+    },
+    "5-19": {
+     "n_words": 62,
+     "excess": 0.4141932704031401
+    },
+    "20+": {
+     "n_words": 82,
+     "excess": 0.38715030883460655
+    }
+   }
+  },
+  {
+   "n": 3200,
+   "families": 1,
+   "prompts": 3200,
+   "base_words": 709733,
+   "instruct_words": 887464,
+   "style_words_present": 296,
+   "unmeasured": 70,
+   "well_measured": 67,
+   "excess_pooled": 0.7441269519867523,
+   "excess_well_measured": 0.2999958597998568,
+   "strata": {
+    "0": {
+     "n_words": 70,
+     "excess": 1.9250048460435083
+    },
+    "1-4": {
+     "n_words": 98,
+     "excess": 0.3385281138036562
+    },
+    "5-19": {
+     "n_words": 61,
+     "excess": 0.5239724917343684
+    },
+    "20+": {
+     "n_words": 67,
+     "excess": 0.2999958597998568
+    }
+   }
+  }
+ ],
+ "per_family": {
+  "llama31": {
+   "n": 1600,
+   "prompts": 1600,
+   "families": 1,
+   "base_words": 417829,
+   "instruct_words": 548226,
+   "style_words_present": 250,
+   "unmeasured": 61,
+   "well_measured": 50,
+   "excess_pooled": 0.5452132881678027,
+   "excess_well_measured": 0.42577203054327667,
+   "strata": {
+    "0": {
+     "n_words": 61,
+     "excess": 1.458852532312693
+    },
+    "1-4": {
+     "n_words": 89,
+     "excess": 0.19750326484544767
+    },
+    "5-19": {
+     "n_words": 50,
+     "excess": 0.2151362550323902
+    },
+    "20+": {
+     "n_words": 50,
+     "excess": 0.42577203054327667
+    }
+   }
+  },
+  "qwen3": {
+   "n": 3200,
+   "prompts": 3200,
+   "families": 1,
+   "base_words": 709733,
+   "instruct_words": 887464,
+   "style_words_present": 296,
+   "unmeasured": 70,
+   "well_measured": 67,
+   "excess_pooled": 0.7492951347832745,
+   "excess_well_measured": 0.2961185116076085,
+   "strata": {
+    "0": {
+     "n_words": 70,
+     "excess": 1.9288936659701104
+    },
+    "1-4": {
+     "n_words": 98,
+     "excess": 0.3185766921782211
+    },
+    "5-19": {
+     "n_words": 61,
+     "excess": 0.5449439067310798
+    },
+    "20+": {
+     "n_words": 67,
+     "excess": 0.2961185116076085
+    }
+   }
+  },
+  "mistral": {
+   "n": 1600,
+   "prompts": 1600,
+   "families": 1,
+   "base_words": 409987,
+   "instruct_words": 440641,
+   "style_words_present": 242,
+   "unmeasured": 59,
+   "well_measured": 49,
+   "excess_pooled": 0.3559818763465991,
+   "excess_well_measured": 0.2780975323147295,
+   "strata": {
+    "0": {
+     "n_words": 59,
+     "excess": 1.4272226130798646
+    },
+    "1-4": {
+     "n_words": 79,
+     "excess": -0.11214279720601117
+    },
+    "5-19": {
+     "n_words": 55,
+     "excess": -0.11347695995031912
+    },
+    "20+": {
+     "n_words": 49,
+     "excess": 0.2780975323147295
+    }
+   }
+  },
+  "qwen3_a3b": {
+   "n": 800,
+   "prompts": 800,
+   "families": 1,
+   "base_words": 179186,
+   "instruct_words": 222484,
+   "style_words_present": 217,
+   "unmeasured": 51,
+   "well_measured": 37,
+   "excess_pooled": 0.5239739763907205,
+   "excess_well_measured": 0.06740316720639543,
+   "strata": {
+    "0": {
+     "n_words": 51,
+     "excess": 1.6842494590888688
+    },
+    "1-4": {
+     "n_words": 95,
+     "excess": 0.20493305930341582
+    },
+    "5-19": {
+     "n_words": 34,
+     "excess": 0.2014813709886355
+    },
+    "20+": {
+     "n_words": 37,
+     "excess": 0.06740316720639543
+    }
+   }
+  }
+ }
+}

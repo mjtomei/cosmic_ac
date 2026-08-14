@@ -1,0 +1,53 @@
+state,name,internet2001,ci_lo,ci_hi,region
+"#source: NTIA 'A Nation Online' Feb 2002, Table 1-1 (Sept 2001 CPS),",percent of state population age 3+ using the internet;,internet2001 = midpoint of the published 90% CI,,,
+AL,Alabama,46.15,43.3,49.0,south
+AK,Alaska,68.8,66.0,71.6,west
+AZ,Arizona,53.1,50.4,55.8,west
+AR,Arkansas,44.25,41.4,47.1,south
+CA,California,52.1,50.9,53.3,west
+CO,Colorado,60.1,57.3,62.9,west
+CT,Connecticut,58.6,55.3,61.9,northeast
+DE,Delaware,58.35,55.1,61.6,south
+DC,District of Columbia,45.3,42.0,48.6,south
+FL,Florida,52.0,50.5,53.5,south
+GA,Georgia,50.25,47.7,52.8,south
+HI,Hawaii,50.85,47.6,54.1,west
+ID,Idaho,55.75,53.0,58.5,west
+IL,Illinois,51.25,49.5,53.0,midwest
+IN,Indiana,55.5,52.6,58.4,midwest
+IA,Iowa,58.25,55.3,61.2,midwest
+KS,Kansas,58.0,55.0,61.0,midwest
+KY,Kentucky,53.2,50.3,56.1,south
+LA,Louisiana,43.4,40.6,46.2,south
+ME,Maine,60.4,57.2,63.6,northeast
+MD,Maryland,61.35,58.4,64.3,south
+MA,Massachusetts,56.65,54.5,58.8,northeast
+MI,Michigan,56.4,54.6,58.2,midwest
+MN,Minnesota,63.45,60.7,66.2,midwest
+MS,Mississippi,41.8,38.9,44.7,south
+MO,Missouri,57.3,54.3,60.3,midwest
+MT,Montana,57.55,54.7,60.4,west
+NE,Nebraska,55.4,52.4,58.4,midwest
+NV,Nevada,52.05,49.2,54.9,west
+NH,New Hampshire,63.45,60.2,66.7,northeast
+NJ,New Jersey,59.95,58.1,61.8,northeast
+NM,New Mexico,49.75,46.9,52.6,west
+NY,New York,52.95,51.6,54.3,northeast
+NC,North Carolina,47.15,45.0,49.3,south
+ND,North Dakota,56.45,53.4,59.5,midwest
+OH,Ohio,55.0,53.2,56.8,midwest
+OK,Oklahoma,49.65,46.8,52.5,south
+OR,Oregon,61.15,58.2,64.1,west
+PA,Pennsylvania,55.0,53.3,56.7,northeast
+RI,Rhode Island,56.65,53.3,60.0,northeast
+SC,South Carolina,47.65,44.6,50.7,south
+SD,South Dakota,58.75,55.9,61.6,midwest
+TN,Tennessee,52.5,49.5,55.5,south
+TX,Texas,51.15,49.7,52.6,south
+UT,Utah,61.35,58.7,64.0,west
+VT,Vermont,60.45,57.3,63.6,northeast
+VA,Virginia,58.45,55.7,61.2,south
+WA,Washington,61.25,58.3,64.2,west
+WV,West Virginia,46.7,43.9,49.5,south
+WI,Wisconsin,57.0,54.1,59.9,midwest
+WY,Wyoming,62.25,59.3,65.2,west

@@ -1,0 +1,30 @@
+{
+ "corpus": "UK House of Commons",
+ "protocol": "v1.1",
+ "seed": 2990729624,
+ "pre_words": 47227270,
+ "post_words": 24152759,
+ "pre_sittings": 747,
+ "n_placebo": 1000,
+ "arms": {
+  "style": {
+   "n_words_total": 407,
+   "n_words_present": 373,
+   "primary_mean_logFC": 0.10657,
+   "placebo_median": -0.01417,
+   "placebo_max": 0.07072,
+   "excess": 0.12074,
+   "p": 0.0
+  },
+  "content": {
+   "n_words_total": 493,
+   "n_words_present": 225,
+   "primary_mean_logFC": -0.2926,
+   "placebo_median": -0.0346,
+   "placebo_max": 0.09648,
+   "excess": -0.258,
+   "p": 1.0
+  }
+ },
+ "style_minus_content": 0.37874
+}

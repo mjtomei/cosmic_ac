@@ -1,0 +1,56 @@
+{
+ "corpus": "Canada House of Commons long-band",
+ "seed": 800529965,
+ "pre_words": 16295308,
+ "post_words": 8766282,
+ "n_instrument": 407,
+ "primary_mean_logFC": -6e-05,
+ "placebo_median": -0.22091,
+ "placebo_p99": -0.13192,
+ "placebo_max": -0.10992,
+ "primary_p": 0.0,
+ "n_placebo": 1000,
+ "sweep": [
+  {
+   "threshold_per100k": 1,
+   "n_words": 272,
+   "ratio": 1.1205,
+   "p": 0.162
+  },
+  {
+   "threshold_per100k": 2,
+   "n_words": 307,
+   "ratio": 1.0855,
+   "p": 0.221
+  },
+  {
+   "threshold_per100k": 5,
+   "n_words": 354,
+   "ratio": 1.092,
+   "p": 0.15
+  },
+  {
+   "threshold_per100k": 10,
+   "n_words": 366,
+   "ratio": 1.0792,
+   "p": 0.11
+  },
+  {
+   "threshold_per100k": 20,
+   "n_words": 383,
+   "ratio": 1.0193,
+   "p": 0.431
+  },
+  {
+   "threshold_per100k": 50,
+   "n_words": 394,
+   "ratio": 0.9592,
+   "p": 0.898
+  }
+ ],
+ "formal_register_ratio": 0.9653,
+ "bootstrap_ci": [
+  0.9313,
+  0.945
+ ]
+}

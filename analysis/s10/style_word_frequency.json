@@ -1,0 +1,152 @@
+{
+ "style_n": 407,
+ "bins": [
+  "0",
+  "1-2",
+  "3-5",
+  "6-10",
+  "11-20",
+  "21-50",
+  "51-100",
+  "101-500",
+  "500+"
+ ],
+ "target_words": 1187489,
+ "families": [
+  "llama31(1600)",
+  "qwen3(1600)",
+  "mistral(1600)"
+ ],
+ "corpora": {
+  "generated BASE": {
+   "hist": [
+    158,
+    82,
+    32,
+    24,
+    29,
+    29,
+    15,
+    24,
+    14
+   ],
+   "words": 1187489,
+   "present": 249,
+   "median_count": 1,
+   "overlap": {
+    "absent_both": 72,
+    "absent_generated_only": 86,
+    "absent_hansard_only": 13,
+    "present_both": 236,
+    "generated_only_examples": [
+     "transformative",
+     "unlocking",
+     "enhances",
+     "preserving",
+     "escalating",
+     "exceptionally",
+     "amid",
+     "groundbreaking",
+     "leveraging",
+     "pioneering",
+     "pivotal",
+     "aligning",
+     "foundational",
+     "impactful",
+     "comprehend",
+     "strategically",
+     "bolstering",
+     "dependable",
+     "detailing",
+     "emphasising",
+     "harnessing",
+     "reveals",
+     "advancements",
+     "diminishing",
+     "elevated"
+    ]
+   }
+  },
+  "generated INSTRUCT": {
+   "hist": [
+    118,
+    60,
+    40,
+    33,
+    31,
+    46,
+    24,
+    31,
+    24
+   ],
+   "words": 1435683,
+   "present": 289,
+   "median_count": 4,
+   "overlap": {
+    "absent_both": 63,
+    "absent_generated_only": 55,
+    "absent_hansard_only": 22,
+    "present_both": 267,
+    "generated_only_examples": [
+     "comprising",
+     "groundwork",
+     "endangering",
+     "predominantly",
+     "comprehend",
+     "enhancements",
+     "strategically",
+     "bolstering",
+     "emphasising",
+     "surged",
+     "displaying",
+     "encompass",
+     "exhibit",
+     "refining",
+     "uncovering",
+     "unveiling",
+     "elevating",
+     "emerges",
+     "emphasises",
+     "equipping",
+     "necessitate",
+     "overlook",
+     "shedding",
+     "accentuates",
+     "afflicted"
+    ]
+   }
+  },
+  "Hansard pre-2023": {
+   "hist": [
+    86,
+    80,
+    55,
+    39,
+    42,
+    39,
+    22,
+    30,
+    14
+   ],
+   "words": 1187715,
+   "present": 321,
+   "median_count": 4
+  },
+  "Hansard 2025-26": {
+   "hist": [
+    85,
+    82,
+    47,
+    40,
+    37,
+    49,
+    20,
+    31,
+    16
+   ],
+   "words": 1187542,
+   "present": 322,
+   "median_count": 5
+  }
+ }
+}

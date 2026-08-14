@@ -1,0 +1,60 @@
+[
+ {
+  "prompts": 800,
+  "families": 4,
+  "base_words": 768027,
+  "instruct_words": 944225,
+  "style_words_present": 293,
+  "unmeasured": 61,
+  "well_measured": 67,
+  "excess_pooled": 0.6080559658227044,
+  "excess_well_measured": 0.3778026555409405,
+  "strata": {
+   "0": {
+    "n_words": 61,
+    "excess": 1.4821660586310115
+   },
+   "1-4": {
+    "n_words": 104,
+    "excess": 0.43673648497184386
+   },
+   "5-19": {
+    "n_words": 61,
+    "excess": 0.2896922763191173
+   },
+   "20+": {
+    "n_words": 67,
+    "excess": 0.3778026555409405
+   }
+  }
+ },
+ {
+  "prompts": 1600,
+  "families": 2,
+  "base_words": 769660,
+  "instruct_words": 887457,
+  "style_words_present": 298,
+  "unmeasured": 74,
+  "well_measured": 67,
+  "excess_pooled": 0.6195767281535401,
+  "excess_well_measured": 0.3325479369333957,
+  "strata": {
+   "0": {
+    "n_words": 74,
+    "excess": 1.6615991849187797
+   },
+   "1-4": {
+    "n_words": 100,
+    "excess": 0.2836597723653749
+   },
+   "5-19": {
+    "n_words": 57,
+    "excess": 0.2171936687334926
+   },
+   "20+": {
+    "n_words": 67,
+    "excess": 0.3325479369333957
+   }
+  }
+ }
+]

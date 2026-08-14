@@ -8,7 +8,8 @@ for Matthew to accept, amend, or reject. Every claim's verification status is in
 `analysis/commons-precedents/weights-ip.md`.
 
 Decisions already taken in dialogue are marked ⟨agreed⟩. Open decisions are
-collected in §7.
+collected in §8; §7 holds the 2026-08-12 additions motivated by the Nvidia
+credit event, kept separate so they review as a unit.
 
 ---
 
@@ -246,7 +247,91 @@ revealed by ordinary use. ⚠️ Note they are simultaneously the **theoretical
 backing for the rent-location corollary** (complementary assets *are* the toll
 booth), so cite them in both places.
 
-## 7. Open decisions for Matthew
+## 7. Additions since staging (2026-08-12) — review as a unit
+
+Items (a)–(e): occasioned by the Nvidia compute-credit platforms (2026-08-10;
+facts, frames, and to-do checklist in
+`analysis/capital-cycle/nvidia-credit-note.md`). Item (f): the subscription
+economics (Matthew, 2026-08-12). Everything motivated since the 08-09 staging
+is collected here — both changes proposed *to this proposal* and changes
+motivated *elsewhere* — so it reviews as one block. Nothing below has been
+folded into §§1–6 or the outline.
+
+**(a) → §1: the transmission mechanism.** As staged, the argument has a gap:
+endogenous socialization is a *diffuse* process, and a rent stream can erode
+gracefully for years without any discrete event — leaving the "pop" unlocated
+and the claim exposed to "it just deflates slowly." The credit platforms close
+the gap. Collateralized lending against GPUs converts commoditization into a
+repricing event with a schedule: credit reprices at refinancing; the first
+vintage of platform-financed hardware exhausts its book life ~5 years after
+deployment; the refinancing wave lands ~2030 — exactly when the model's ~$5T
+stock needs its returns to have arrived. Underwriting must assume scarcity
+pricing (Matthew's formulation: **expected returns priced on non-commodity
+expectations against commodity reality** — telecom's DWDM failure restated:
+debt underwritten on doubling-every-100-days demand while DWDM multiplied
+capacity per strand ~100× mid-buildout). If commodity reality arrives first,
+it surfaces as **failed refinancings** — so the inversion gains a
+falsification point with an approximate date, and "the pop is caused by the
+technology working" acquires its concrete channel: capability diffusion →
+collateral repricing → credit event. ⚠️ Assertable only once actual terms
+surface (residual guarantees, assumed lives, utilization-price curves — the
+checklist is in the note).
+
+**(b) → §3(b): the market has taken the other side of the wanting bet, with
+size and named actors.** The $500B platforms are underwritable only in the
+growing-rents scenario — the model's cheapest row — and "the whole economy
+accelerating" is broad absorption, i.e. the wanting race resolving favourably.
+The wanting argument now has a counterparty: ⟨indirect⟩, the markets do the
+arguing, and someone loses money on a specific row of Table 3. Evidence of
+*stakes*, not of outcome.
+
+**(c) → §4: funder #1 named.** The trilemma's "capital markets on expectation
+of future broad rents" now has actors and a structure: Apollo/BlackRock/
+Blackstone/Brookfield/Goldman/KKR, $500B+, SPVs, insurance-linked and
+pension-adjacent pools — the socialization base widening in real time.
+
+**(d) → NOT this proposal: the continuous-socialization bullet (IV.3).** The
+event is primarily an entry for the *existing* thread: the §11 watch variables
+firing (debt/private-credit share; intra-loop renegotiation), the Credit
+Mobilier lineage's next entry (supplier orchestrating third-party capital into
+platforms financing purchases of its own product), and the fungibility/scarcity
+contradiction (collateral requires fungibility AND scarcity; fungible+abundant
+= commodity pricing; the legs cohere only under Nvidia's own supply
+discipline — the lenders' security is the monopolist's scarcity management).
+Same dated-case-study aging policy as July 2026.
+
+**(e) → NOT this proposal: the surviving-hardware bullet, after verification.**
+Railroad equipment trusts as the honest counter: rolling stock financed as
+fungible movable collateral, and equipment-trust certificates **survived
+receiverships** (receivers needed the cars) while roadbed equity was wiped
+out. A sophisticated read of the platforms is that structure deliberately
+rebuilt. Disanalogies: ~25y boxcar life vs 3–5y GPUs; industry-standard gauge
+vs single-vendor CUDA. [UNVERIFIED — needs a pass (Tufano BHR 1997;
+"Philadelphia plan" certificates) before any use.]
+
+**(f) → §3(b): the labs' own pricing is a solvency bet on wanting
+saturation.** SemiAnalysis (June 2026) stress-drained the plans: Claude Max
+20x ($200/mo) delivers ~$8,000/mo of API-equivalent tokens, ChatGPT Pro up to
+$14,000 — 40–70× face value [via aggregator; re-verify against the paywalled
+original before use]. Break-even: at $8,000 equivalent, any assumed API markup
+≤ ~4× puts break-even under **10% average utilization** (reconstructs
+Matthew's earlier-session calculation). Two uses. *Socialization:* the paid
+subscription channel — not just free tiers — delivers capability at a small
+fraction of metered value; below-cost delivery is running through the plans,
+cross-subsidized by light users and the loop's capital. *Wanting:* flat-rate
+pricing is solvent **only if most subscribers do not want most of what they
+bought** — the labs' own price structure is revealed-preference evidence for
+the wanting argument, sitting on the same side of the bet as §3(b)'s
+counterparty observation but from inside the labs. Corollary gauge: if agentic
+orchestration makes everyone a heavy user, the subscription model reprices to
+metered or dies — a live, observable indicator on the wanting race, and the
+labs' own version of the seat-to-work question the report's §11 already
+watches.
+
+**Decision asked:** accept (a)–(c) and (f) into §§1/3/4; route (d)–(e) to
+their threads now or hold everything until deal terms make (a) assertable.
+
+## 8. Open decisions for Matthew
 
 1. **Where the inversion lives** — inside the three-readings block as a
    refinement of reading (a), or as its own bullet before it?

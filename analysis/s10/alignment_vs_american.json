@@ -1,0 +1,203 @@
+{
+ "all words": {
+  "n_words": 4823,
+  "US_vs_UK": {
+   "spearman": 0.08108686038708253,
+   "partial": 0.08568622744817497
+  },
+  "CA_vs_UK": {
+   "spearman": 0.011898110512308173,
+   "partial": 0.011830138709853447
+  },
+  "AU_vs_UK": {
+   "spearman": 0.017452248022253918,
+   "partial": 0.004422617858692465
+  },
+  "US_vs_CA": {
+   "spearman": 0.08308119289634093,
+   "partial": 0.08748837281345205
+  },
+  "perm_p": 0.0
+ },
+ "spelling + orthographic removed": {
+  "n_words": 4796,
+  "US_vs_UK": {
+   "spearman": 0.0752737445818417,
+   "partial": 0.08007617762714445
+  },
+  "CA_vs_UK": {
+   "spearman": 0.006773679940082339,
+   "partial": 0.006860252277180405
+  },
+  "AU_vs_UK": {
+   "spearman": 0.015425040695091327,
+   "partial": 0.0022483253236638564
+  },
+  "US_vs_CA": {
+   "spearman": 0.08008208747658062,
+   "partial": 0.08451995581452441
+  },
+  "perm_p": 0.0
+ },
+ "PRIMARY: attested >=20 in both": {
+  "n_words": 4620,
+  "US_vs_UK": {
+   "spearman": 0.06477031710694672,
+   "partial": 0.06734967057327634
+  },
+  "CA_vs_UK": {
+   "spearman": -0.0022714297861584796,
+   "partial": -0.0020025543979382476
+  },
+  "AU_vs_UK": {
+   "spearman": 0.008814476902617123,
+   "partial": -0.007915915495786376
+  },
+  "US_vs_CA": {
+   "spearman": 0.07730582881860457,
+   "partial": 0.07909557845436016
+  },
+  "perm_p": 0.0
+ },
+ "robustness: middle 80% by US/UK skew": {
+  "n_words": 3696,
+  "US_vs_UK": {
+   "spearman": 0.027304384934413554,
+   "partial": 0.02756977861707725
+  },
+  "CA_vs_UK": {
+   "spearman": -0.0473970749081825,
+   "partial": -0.04440847201473898
+  },
+  "AU_vs_UK": {
+   "spearman": -0.014983086216029734,
+   "partial": -0.03440528683339308
+  },
+  "US_vs_CA": {
+   "spearman": 0.06423338703303857,
+   "partial": 0.06036995139602762
+  },
+  "perm_p": 0.11
+ },
+ "robustness: attested >=200 in both": {
+  "n_words": 4025,
+  "US_vs_UK": {
+   "spearman": 0.06124753572375059,
+   "partial": 0.05759792796413075
+  },
+  "CA_vs_UK": {
+   "spearman": -0.008904774648403783,
+   "partial": -0.006182176285167083
+  },
+  "AU_vs_UK": {
+   "spearman": 0.0062546581004081355,
+   "partial": -0.01150085164936975
+  },
+  "US_vs_CA": {
+   "spearman": 0.07793937749186856,
+   "partial": 0.07015275289650953
+  },
+  "perm_p": 0.0
+ },
+ "Kobak style words only": {
+  "n_words": 146,
+  "US_vs_UK": {
+   "spearman": 0.08738622188268098,
+   "partial": 0.07842158211132139
+  },
+  "CA_vs_UK": {
+   "spearman": 0.13490262463395344,
+   "partial": 0.1381900537974352
+  },
+  "AU_vs_UK": {
+   "spearman": 0.091733938993824,
+   "partial": 0.04426341495326874
+  },
+  "US_vs_CA": {
+   "spearman": -0.04038846033003268,
+   "partial": -0.055743931822877166
+  },
+  "perm_p": 0.305
+ },
+ "divergence": {
+  "US-UK": 0.7017274378601801,
+  "US-CA": 0.6498032947841414,
+  "US-AU": 0.6937348174975173,
+  "UK-CA": 0.6912905042293194,
+  "UK-AU": 0.5790881216838211,
+  "CA-AU": 0.5547791968842819
+ },
+ "top_joint": [
+  "maybe",
+  "senator",
+  "folks",
+  "senators",
+  "federal",
+  "inference",
+  "preserving",
+  "congress",
+  "conveys",
+  "cooperation",
+  "senate",
+  "columbia",
+  "okay",
+  "entities",
+  "dollars",
+  "maintains",
+  "indians",
+  "transportation",
+  "author",
+  "metaphor",
+  "workforce",
+  "lest",
+  "mandates",
+  "pacific",
+  "additionally",
+  "multifaceted",
+  "adjustments",
+  "translation",
+  "title",
+  "entity",
+  "violation",
+  "timeline",
+  "countless",
+  "american",
+  "passage",
+  "text",
+  "corporations",
+  "bush",
+  "collins",
+  "toward",
+  "paragraph",
+  "unborn",
+  "paraphrase",
+  "cargo",
+  "explicitly",
+  "respectful",
+  "indicating",
+  "entrepreneurship",
+  "user",
+  "entrepreneurs",
+  "hampshire",
+  "lands",
+  "version",
+  "indian",
+  "misinformation",
+  "acknowledgment",
+  "tireless",
+  "documented",
+  "ethics",
+  "lowered"
+ ],
+ "families": [
+  "llama31(1600)",
+  "qwen3(1600)",
+  "mistral(1600)"
+ ],
+ "corpus_words": {
+  "US": 37574625,
+  "UK": 44198751,
+  "CA": 74808275,
+  "AU": 88840390
+ }
+}

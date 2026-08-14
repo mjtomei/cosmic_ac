@@ -1,0 +1,9 @@
+{
+ "test_a_excess": 0.8796912760694148,
+ "test_a_p": 0.0,
+ "families": [
+  "qwen3",
+  "mistral"
+ ],
+ "n_words": 212
+}

@@ -99,8 +99,13 @@ def main():
     print(f"  bounds the true corpus rate to [{inb/W:.3f}r, "
           f"{inb/W:.3f}r + {out/W:.3f}], since the unreachable share could in "
           f"principle be")
-    print(f"  all human or all machine. At r = 12.4% that is "
-          f"[{100*inb/W*0.124:.1f}%, {100*(inb/W*0.124 + out/W):.1f}%].")
+    # r is now the word-weighted, all-bands pooled rate from
+    # banded_prevalence.py (9.03%, 20 chambers, fraction-weighted), not the old long-band
+    # 12.4%. The bands the study once excluded are scored; what remains
+    # outside is text under 50 words, which Pangram refuses outright.
+    R = 0.0897
+    print(f"  all human or all machine. At r = {100*R:.1f}% that is "
+          f"[{100*inb/W*R:.1f}%, {100*(inb/W*R + out/W):.1f}%].")
 
     # The over-360 exclusion is not evenly spread, and it biases the OTHER
     # WAY from the short band: long text has the highest flag rates.

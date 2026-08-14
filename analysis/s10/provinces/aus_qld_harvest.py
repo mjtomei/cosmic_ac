@@ -38,6 +38,10 @@ UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
 API = "https://www.parliament.qld.gov.au/qpsapi/Search/SearchForPhrase"
 GUID = "6bc7b54d-2c4e-469c-bab7-7009a785a4f1"
 YEARS = list(range(2006, 2011)) + list(range(2015, 2020))
+# The two windows above are the original drift design. The source publishes
+# continuously, so --years backfills the skipped 2011-14 and 2020-24 without
+# touching the manifest the first pass produced (--out keeps them separate).
+FILL_YEARS = list(range(2011, 2015)) + list(range(2020, 2025))
 PHRASES = ["Queensland", "member"]
 HREF = re.compile(r'href="(https://documents\.parliament\.qld\.gov\.au/[^"]+)"', re.I)
 DATE = re.compile(r"/(\d{4})/(\d{4})_(\d{2})_(\d{2})_WEEKLY\.PDF$", re.I)
@@ -62,8 +66,15 @@ def query(phrase, year):
 
 
 def main():
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--years", default="", help="'fill' or a comma list")
+    ap.add_argument("--out", default="aus_qld_manifest.json")
+    a = ap.parse_args()
+    years = (FILL_YEARS if a.years == "fill"
+             else [int(x) for x in a.years.split(",")] if a.years else YEARS)
     found = {}
-    for year in YEARS:
+    for year in years:
         for phrase in PHRASES:
             time.sleep(1.2)
             try:
@@ -86,7 +97,7 @@ def main():
 
     rows = [{"url": u, "date": d, "prov": "QLD"}
             for d, u in sorted(found.items())]
-    (HERE / "aus_qld_manifest.json").write_text(json.dumps(rows, indent=1))
+    (HERE / a.out).write_text(json.dumps(rows, indent=1))
     per = {}
     for r in rows:
         per[r["date"][:4]] = per.get(r["date"][:4], 0) + 1

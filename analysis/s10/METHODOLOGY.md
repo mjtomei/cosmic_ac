@@ -790,8 +790,17 @@ would overflow and flagging anything under 50 words unscoreable. A 1,000-word
 speech becomes roughly three segments; a 60-word interjection becomes one. So a
 segment-weighted rate partly measures our packer. A word-weighted rate answers
 "what share of what was said is machine-drafted", which is the question being
-asked, and is invariant to how the text was cut up. Segment-weighted figures
-are reported alongside for comparability with the sampling frame, never alone.
+asked, and is invariant to how the text was cut up.
+
+**Segment-weighted figures are no longer reported anywhere.** They were kept
+alongside for a time "for comparability with the sampling frame", which in
+practice meant two numbers for one quantity and a standing invitation to quote
+whichever suited. Every prevalence rate in the study — pooled, per chamber, per
+genre, per band — is word-weighted, with cluster-bootstrap intervals over
+segments rather than Wilson intervals, because the estimator is a ratio of two
+random sums that move together. Wilson survives only where the unit genuinely
+is the document: specificity (a control either fired or it did not), bypass
+rates over variants, and route-agreement checks.
 
 **The full accounting** (`corpus_audit.py`), over the extracted record of
 5,164,469 segments and 853,824,297 words:
@@ -799,25 +808,27 @@ are reported alongside for comparability with the sampling frame, never alone.
 | | segments | % seg | words | % words | |
 |---|---|---|---|---|---|
 | long band 120–360 | 2,685,098 | 52.0% | 702.8M | **82.3%** | scored |
-| short band 50–119 | 1,104,944 | 21.4% | 91.6M | **10.7%** | being scored |
+| short band 50–119 | 1,104,944 | 21.4% | 91.6M | **10.7%** | scored |
+| over 360 words | 22,410 | 0.4% | 14.7M | 1.7% | scored |
 | under 50 words | 1,260,920 | 24.4% | 29.6M | 3.5% | **out** |
 | translated | 91,097 | 1.8% | 15.1M | 1.8% | **out** |
-| over 360 words | 22,410 | 0.4% | 14.7M | 1.7% | **out** |
 
-**93.0% of words are reachable; 7.0% are not.** Half of that is text under 50
-words, which Pangram refuses outright — unmeasurable rather than merely
-unmeasured.
+**94.7% of words are reachable; 5.3% are not** — text under 50 words, which
+Pangram refuses outright and which is therefore unmeasurable rather than merely
+unmeasured, plus translated text, which is excluded by design because a
+translator's register is not a member's.
+
+**The whole reachable record is scored at one uniform sampling rate**, so the
+sample carries the corpus's own length mix and no length weights are applied.
+Flag rate does vary with length — 0.82% under 120 words, 13.22% at 120–360,
+14.38% above 360 — which is why the rate is sampled across all of it rather
+than extrapolated from any part.
 
 **The implied error bar, stated plainly.** A word-weighted rate `r` measured on
-the reachable 93.0% bounds the true corpus rate to
-`[0.930r, 0.930r + 0.070]`, because the unreachable share could in principle be
-all human or all machine. At r = 12.4% that is **[11.5%, 18.5%]**. No sampling
+the reachable 94.7% bounds the true corpus rate to
+`[0.947r, 0.947r + 0.053]`, because the unreachable share could in principle be
+all human or all machine. At r = 9.03% that is **[8.6%, 13.8%]**. No sampling
 effort narrows this; only a detector that reads shorter text would.
-
-**Two exclusions bias in opposite directions, and one is concentrated in the
-US.** The short band is low-rate text excluded, which biases *up*. The over-360
-band is the longest text excluded, and since flag rate rises steeply with
-length it biases *down*.
 
 That exclusion is almost entirely American, and **not because the US extractor
 differs** — `us_extract.py` uses the same `MAX_WORDS = 360` packer as
@@ -872,13 +883,18 @@ The fix is to measure the excluded band rather than extrapolate, then
 combine with weights taken from the **full corpus** (not the sample), which
 is what makes the result design-based:
 
-| chamber | long band | short band | **segment-weighted** | **word-weighted** |
-|---|---|---|---|---|
-| Canada | 17.5% | 2.5% | **10.6% ± 4.3** | **14.0% ± 5.3** |
+| chamber | long band | short band | **word-weighted** |
+|---|---|---|---|
+| Canada | 17.5% | 2.5% | **14.0% ± 5.3** |
 
-Two weightings because they answer different questions: segment-weighted is
-"what share of *turns* is AI-flagged", word-weighted is "what share of the
-*record* is". Quote the second only if the claim is about text volume.
+**Superseded 2026-08-13.** This table is the 2026-08-02 four-chamber arm, which
+sampled a fixed 40 short segments per chamber and applied corpus weights
+afterwards. The study now samples the short and over-360 bands at the SAME rate
+as the long band, so the combined sample is self-weighting and needs no
+reweighting constants at all (`build_shortband.py`, `banded_prevalence.py`).
+The pooled result on that design is **11.73% of words [10.41, 13.08]** over 18
+chambers. The segment-weighted column that stood here has been removed rather
+than updated: the study reports one weighting.
 
 New Brunswick needed no such correction — its sample was 16% short segments
 against 13.9% in its pool, so it was already representative. **This is why

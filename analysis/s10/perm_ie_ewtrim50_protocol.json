@@ -1,0 +1,56 @@
+{
+ "corpus": "Dail Eireann ewtrim50",
+ "seed": 3919796410,
+ "pre_words": 14800010,
+ "post_words": 7573213,
+ "n_instrument": 407,
+ "primary_mean_logFC": -0.05194,
+ "placebo_median": -0.18148,
+ "placebo_p99": -0.09757,
+ "placebo_max": -0.07748,
+ "primary_p": 0.0,
+ "n_placebo": 1000,
+ "sweep": [
+  {
+   "threshold_per100k": 1,
+   "n_words": 269,
+   "ratio": 0.9302,
+   "p": 0.944
+  },
+  {
+   "threshold_per100k": 2,
+   "n_words": 307,
+   "ratio": 0.9167,
+   "p": 0.97
+  },
+  {
+   "threshold_per100k": 5,
+   "n_words": 349,
+   "ratio": 0.9195,
+   "p": 0.978
+  },
+  {
+   "threshold_per100k": 10,
+   "n_words": 365,
+   "ratio": 0.9151,
+   "p": 0.98
+  },
+  {
+   "threshold_per100k": 20,
+   "n_words": 382,
+   "ratio": 0.9188,
+   "p": 0.973
+  },
+  {
+   "threshold_per100k": 50,
+   "n_words": 394,
+   "ratio": 0.9129,
+   "p": 0.987
+  }
+ ],
+ "formal_register_ratio": 1.0479,
+ "bootstrap_ci": [
+  0.9741,
+  0.9876
+ ]
+}

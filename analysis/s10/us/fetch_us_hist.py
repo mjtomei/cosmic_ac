@@ -37,6 +37,21 @@ from fetch_us import PKG, UA, download
 YEARS = list(range(2006, 2018))
 
 
+def parse_years(spec):
+    """'1994-2005,2023' -> [1994..2005, 2023]. GovInfo carries CREC back to
+    1994, verified by range-probe, so the UK deep series (1985-) can be
+    replicated on a second legislature for 1994- rather than 2006-."""
+    out = []
+    for part in spec.split(","):
+        part = part.strip()
+        if "-" in part:
+            a, b = part.split("-")
+            out += list(range(int(a), int(b) + 1))
+        elif part:
+            out.append(int(part))
+    return out
+
+
 def weekdays(year):
     d = dt.date(year, 1, 1)
     end = dt.date(year, 12, 31)
@@ -80,11 +95,19 @@ def main():
     ap.add_argument("--per-year", type=int, default=60)
     ap.add_argument("--out", default="zips")
     ap.add_argument("--workers", type=int, default=8)
+    ap.add_argument("--years", default="",
+                    help="e.g. 1994-2005,2023; default is the 2006-2017 set")
+    ap.add_argument("--tag", default="US_HIST_DONE",
+                    help="completion marker, so a deep run does not overwrite "
+                         "the 2006-2017 one")
     args = ap.parse_args()
     os.makedirs(args.out, exist_ok=True)
+    years = parse_years(args.years) if args.years else YEARS
+    print(f"years: {years[0]}-{years[-1]} ({len(years)}), "
+          f"{args.per_year}/yr\n", flush=True)
 
     picked = []
-    for year in YEARS:
+    for year in years:
         cands = weekdays(year)
         rng = random.Random(int(hashlib.sha1(
             f"CREChist{year}".encode()).hexdigest()[:8], 16))
@@ -116,7 +139,7 @@ def main():
             if done % 25 == 0:
                 print(f"  {done}/{len(todo)} ok={ok}", flush=True)
     print(f"done: {ok}/{len(todo)}", flush=True)
-    open("../US_HIST_DONE", "w").write(f"{ok}\n")
+    open(f"../{args.tag}", "w").write(f"{ok}\n")
 
 
 if __name__ == "__main__":
