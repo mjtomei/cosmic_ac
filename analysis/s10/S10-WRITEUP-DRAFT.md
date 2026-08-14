@@ -772,9 +772,20 @@ human control's +0.47), and in the one clean base/instruct pair available,
 post-training moves the model's mix **out of the human class geometry**:
 Sonnet 5, Opus 5 and Fable 5 traces are negative against every human class
 and education centroid and are the only text sets positively similar to the
-machine-flagged legislature pool (Sonnet +0.186) — the wild flagged speech
-resembles the models that presumably wrote it. qwen3's move *up* (class
-II/bachelor to I/graduate) is the outlier among five measurable families. Scored AI use itself runs *highest* in class I
+machine-flagged legislature pool. qwen3's move *up* (class II/bachelor to
+I/graduate) is the outlier among five measurable families. Extending the
+comparison to the older Claude versions still serving (Sonnet 4.5, Opus 4.1,
+Opus 4; 300 audited continuations each) sharpens this into a **family
+signature**: all six Claude models are positive against the flagged pool
+(+0.016 to +0.186) and all five open-model sets negative (−0.024 to −0.063),
+stable across three model generations. Within-family ordering is not
+interpretable at these sample sizes, but the family split is clean — the
+flagged text shares distinctive vocabulary with one lineage and not the
+other. This is register lineage, not attribution (§8.6 A.1b). Register
+*rate* is also a lineage property: Opus sits at base-model rate across three
+generations (2,696–2,837 per 100k), Sonnet runs hot in both versions
+(4,639–5,116), and Fable 5, at 3,369, is the first model measured that lands
+inside the human class range at all. Scored AI use itself runs *highest* in class I
 (11.3% vs II's 5.7%, 27-segment cell, suggestive only). Interpretation,
 recorded as such in VECTOR-ANALYSIS.md: because register and prevalence can
 now be measured explicitly, a legislature with a stated goal of fair
@@ -1594,6 +1605,27 @@ that is recorded.
    subject matter and the soft-power reading fails. Either outcome is
    informative, which the present measurement is not.
 
+1b. **Vendor attribution for the family signature.** §4.6a's vector result —
+   every Claude model positive against the flagged legislature pool, every
+   open model negative, across three Claude generations — is *consistent
+   with* Claude drafting but cannot attribute, because the discriminative
+   controls are missing: no GPT, Gemini or Llama-instruct-served traces exist
+   on the same prompt pool. The design is already fixed and cheap: the same
+   800-prompt continuation protocol (45-word Hansard openings, ~300 words,
+   no styling instructions, thinking off), run through each major vendor's
+   API, audited for uniqueness and degeneracy before entering any table
+   (the audit is not optional — two of nine Claude trace sets failed it in
+   ways that specifically corrupt this measurement). If the flagged pool's
+   similarity peaks on one vendor's family and is flat or negative on the
+   others, the signature becomes evidence *about* usage rather than
+   consistency with it; if several vendors' models all match, the signature
+   is a frontier-register commons and attribution is off the table — which
+   would itself bear on §4.5a's homogenization reading. Two caveats bound
+   even the positive outcome: models train on one another's output, so
+   lineage blurs with each generation, and the flagged pool (126 segments,
+   1,495 instrument occurrences) should be enlarged first — the §4.2 sample
+   grows it mechanically as more chambers are scored.
+
    This pairs directly with §8.5. A register-feature profile is a measurable
    *automated counterpart*: it says what an aligned model's stance profile
    looks like on the same task, so a speaker's distance from it is the residual
@@ -1900,6 +1932,8 @@ caught.
 | `covariate_study.py` | §4.6a class and education, member level (`--build-cache` first, ~10 min) |
 | `class_origin.py` | §4.6a EGP/NS-SEC arithmetic over the checked-in coding |
 | `class_markedness.py`, `build_class_word_year.py` | §4.6a chase-and-flight |
+| `build_member_vectors.py`, `vector_analysis.py` | §4.6a word-mix geometry; VECTOR-ANALYSIS.md is the full log |
+| `claude_gen/`, `claude_gen_old/`, `rlhf_gen_180/` | generated traces behind the family-signature table (audited) |
 | `provinces/occupation_coding.json` + `OCCUPATION_CODING.md` | the coding itself, with its 96.4% agreement rate |
 | `wiki_depth.py` | article length via Wikidata QID → MediaWiki, the notability control |
 | `build_allsource_merge.py` | rebuilds `member_allsource.json` from the workflow journal |

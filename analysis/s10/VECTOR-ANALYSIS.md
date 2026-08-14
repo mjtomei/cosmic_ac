@@ -90,6 +90,39 @@ measurable instruct moves go DIFFERENT ways:
 
 llama3 has no instruct trace in this set.
 
+**7. The flagged text carries a family signature, across model generations.**
+A second workflow (2026-08-14) probed seven older Claude versions and
+generated 300 continuations from each that still serves — Sonnet 4.5,
+Opus 4.1, Opus 4; Sonnet 4, Sonnet 3.7 and Haiku 3.5 are retired. Deduped and
+audited, against the flagged legislature pool:
+
+| set | texts | per 100k | z-cos to flagged |
+|---|---|---|---|
+| Sonnet 5 | 400 | 5,116 | **+0.186** |
+| Opus 4.1 | 300 | 2,837 | **+0.170** |
+| Fable 5 | 400 | 3,369 | +0.083 |
+| Opus 4 | 300 | 2,696 | +0.062 |
+| Opus 5 | 400 | 2,755 | +0.032 |
+| Sonnet 4.5 (deduped) | 124 | 4,639 | +0.016 |
+| open models (5 sets) | 799–800 | 2,756–3,666 | **−0.024 to −0.063** |
+
+Every Claude model is positive against the flagged pool; every open model is
+negative — a family signature stable across three generations, not a
+single-model coincidence. Within-family ordering is NOT interpretable at
+these n's (the deployed-generation prediction — Sonnet 4.5 should beat
+Sonnet 5 — failed, but on 124 texts against a 1,495-occurrence pool that rank
+is noise). The rate axis shows lineage temperament: Opus is stable at
+2,696–2,837 across three generations, Sonnet hot in both versions.
+
+**Generation QA, learned the hard way.** Haiku 4.5's traces were unusable —
+121/300 unique, one whole chunk padded with hundreds of repeated "This",
+which is a style word, inflating its apparent rate to a fake 32,508 per 100k
+— and Sonnet 4.5 delivered 124/300 unique from template reuse. Low-effort
+agents doing bulk generation cut corners in ways that specifically corrupt
+this measurement. Every trace set now passes a uniqueness and degeneracy
+audit before entering any table; all current-generation and local sets passed
+clean, so no previously reported number moved.
+
 **The Claude traces decided it: OUT is the modal move.** Sonnet 5, Opus 5 and
 Fable 5 (400 continuations each, same prompt pool, thinking off, generated
 2026-08-14) are NEGATIVE against every human class and education centroid
@@ -102,6 +135,38 @@ any human class tier. qwen3's upward move is the outlier, not the pattern.
 Register RATE differs sharply across the three (a side observation, rate not
 mix): sonnet ~5,100 instrument occurrences per 100k words — half again the
 human corpus level — fable ~3,400 (human-level), opus ~2,800 (below).
+
+**Fable as the first rate-human model** (Matthew, 2026-08-14). Laying the
+model rates against the seven human class rates (VIIab 3,255 … III 3,652):
+every base model sits below the entire human class structure, the open
+instruct models sit above it, the Sonnet lineage sits far above it — and
+Fable 5, at 3,369, is the first model measured that lands INSIDE the human
+class range, between the manual classes and the farmers. Matthew connects
+this to capability timing: the kind of academic writing-style work this study
+consists of only became reliably doable after Fable shipped — the model that
+writes at human register rate arrived together with the ability to do this
+analysis at all.
+
+The nuance that keeps the claim precise: Fable is rate-human, not mix-human.
+Its z-scored composition is still negative against every human class centroid
+(−0.05 to −0.11) — it uses the instrument at a human VOLUME while still
+favouring a non-human MIX. "First human model" is true on the axis that the
+§4.5 trend and the class table measure, and not yet true in vector space.
+
+A second reading (Matthew, same session): it is a good sign that the most
+powerful model is the more human one — within the Claude 5 family the
+flagship sits in the human range while the mid-tier runs half again hotter,
+so capability and register-exaggeration are not moving together; the
+strongest model is converging on the human norm rather than amplifying the
+machine register. The study-side corollary cuts the other way: a frontier
+model at human rate is a harder target for every rate-sensitive instrument
+this study uses, so if the pattern holds, prevalence measurement gets harder
+with each frontier generation even as the register gap it measures closes.
+
+Also worth stating for the record: Fable 5 is the model conducting this
+study. The generation prompt forbade styling adjustments, and the trace
+agents did not know what would be measured, but a reader weighing the result
+should know the instrument and one of its subjects share a lineage.
 
 ## Interpretation on the record (Matthew, 2026-08-14) — flagged as such
 

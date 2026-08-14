@@ -118,8 +118,8 @@ check_range() {
     # exempt from the corpus-text heuristics below. The 10MB cap above still
     # applies, and the prompt pools (Hansard excerpts) are gitignored.
     case "$path" in
-      analysis/s10/claude_gen/*.json|analysis/s10/rlhf_gen/*.json|\
-      analysis/s10/rlhf_gen_180/*.json)
+      analysis/s10/claude_gen/*.json|analysis/s10/claude_gen_old/*.json|\
+      analysis/s10/rlhf_gen/*.json|analysis/s10/rlhf_gen_180/*.json)
         continue ;;
     esac
     if false; then :

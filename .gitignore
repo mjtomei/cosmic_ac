@@ -200,3 +200,7 @@ analysis/s10/go_pos_screen_pool.json
 analysis/s10/pangram_gov_variants.csv
 analysis/s10/rlhf_gen/prompts.json
 analysis/s10/rlhf_gen/prompts_all.json
+# Haiku 4.5 traces failed the generation audit (template dupes + degenerate
+# "This" padding, VECTOR-ANALYSIS.md) and are excluded from every table;
+# kept on disk as the audit's evidence, not tracked.
+analysis/s10/claude_gen_old/haiku_c*.json
