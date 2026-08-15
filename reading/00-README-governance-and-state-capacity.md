@@ -488,3 +488,28 @@ entitlement-blocked at any public-library proxy — for those, one month of
 **JPASS (~$20) covers PAR, *Daedalus*, *Massachusetts Review*, *Stanford L.
 Rev.*, and *JOP* with 120 downloads** — the efficient route for the whole
 remaining JSTOR list at once.
+
+
+## Deep re-hunt results (2026-08-15) — and the corrected action list
+
+**Fetched:** Kitsikopoulos's 2025 RHI article (the WAF fell to an aggregator
+route — gold-OA galley, 29pp; Watt-era, context not the ch.5 answer) and the
+Gross & Fosse working paper (75pp — the political-typing argument Teles cites;
+never cite its pages as *Theory and Society*).
+
+**Definitive negatives, do not re-run:** Schick 1973 was **never anthologized**
+— IA's full-text API checked 421 title-hits across every public-administration
+anthology; all citations. PAR's IA microfilm stops at 1961; Wiley's PAR
+backfile starts at 2000 (the DOIs are JSTOR-registered — there is no Wiley page
+to free). It exists, lawfully, only on JSTOR. **Schick 1966 by contrast is in
+seven anthologies with verified page numbers** — `classicsofpublic0002unse`
+ch.29 p.299 et al. — borrowable on IA with a free account, or purchasable as
+the DeGruyter chapter (doi:10.5749/9780816662432-015).
+
+**Access-map corrections (before money is spent):** JPASS is **$19.50/MONTH
+recurring** (not a one-off), 10 PDF downloads/month on monthly; the full
+4,007-journal title list was harvested — **PAR, Massachusetts Review, Stanford
+L. Rev., and JOP are IN; *Daedalus* is genuinely NOT** (Price's article needs
+the book or ILL). The California State Library card is **not** open to all
+residents (state employees etc. — dead end). SJPL licenses no JSTOR either,
+but holds **Olson 1982 in print** (338.9001 Olson).

@@ -261,3 +261,31 @@ Hunting her closed Philosophy Compass survey through SCCLD's EBSCO turned up
 (Conn. L. Rev. 44(3), 2012, ★★ c1) — the Dartmouth line at its live
 constitutional pressure point. The 2016 survey stays on the browser list; do
 not cite one as the other.
+
+
+## Deep re-hunt results (2026-08-15)
+
+**Fetched, closing most of the moral-agency contest:** Velasquez 2003
+(publisher VoR via the extended academia-assets technique — the author's own
+self-archived copy; ★★★ ⚠ c2, French's canonical opponent), Sepinwall 2016
+(the wanted survey, publisher VoR), Leyser's complete 2016 introduction
+(ix–xxiii, Google Books preview capture — page images, no text layer), and the
+Santner JCRT symposium pair (his own compressed statement of *The Royal
+Remains*; the book stays no_oa). **Velasquez 1983** remains un-fetched but is
+**borrowable tonight**: Werhane, *Persons, Rights, and Corporations*
+(IA `personsrightscor00werh`, 13 lendable copies, chapter from p.59).
+
+**Rogin 1979 reprint chain verified**: first reprinted in Greenstone ed.,
+*Public Values and Private Power in American Politics* (Chicago 1982; not on
+IA), revised as ch.3 of *Ronald Reagan, the Movie* (print-disabled only). The
+*Massachusetts Review* original is in JPASS. **Kahn 2009**: fully closed, not
+in eScholarship; *Representations* is a JSTOR journal — check JPASS. **Espejo
+1980**: now the hardest item left — RG has hard-banned this IP, T&F is
+sale-only, and the 1989/1994 reprint volumes verifiably do not contain it;
+Matthew's one click on the RG link from any home network remains the route.
+
+**Library wins (SCCLD card, tonight):** Kantorowicz's *King's Two Bodies*
+(2016 ed.) and Norenzayan's *Big Gods* are **borrowable NOW as hoopla ebooks**
+(records S981C13282941, S981C13282718); Davies (658 DAVIES) and Runciman
+(322.3 RUNCIMA) are SCCLD print holds; Foucault print likewise. IA lending is
+dead for all eleven buy-list books (print-disabled only, post-Hachette).
