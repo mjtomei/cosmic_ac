@@ -12,8 +12,10 @@ export const meta = {
 //     covariates_tier1_missing_keys.json instead of the roster head — the
 //     recovery mode after a partial run; n = length of that chamber's missing
 //     list. Agents are told which file to slice so nothing done is re-paid.
-const CH = (args && args.chambers) || []
-const MISSING = !!(args && args.missing)
+const ARGS = (typeof args === 'string') ? JSON.parse(args) : (args || {})
+const CH = ARGS.chambers || []
+const MISSING = !!ARGS.missing
+if (!CH.length) throw new Error('no chambers in args — got: ' + JSON.stringify(args).slice(0, 200))
 
 const SOURCES = {
   'US-HOUSE': [
@@ -88,7 +90,11 @@ function brief(ch, chunk, chunkSize) {
 '',
 'YOUR SLICE',
 '',
-'Read rosters/' + ch + '.json — corpus speaker keys with word counts and year spans, sorted by words spoken (descending, so early indices matter most to the study\'s power). Take entries at zero-based indices ' + (chunk * chunkSize) + ' through ' + (chunk * chunkSize + chunkSize - 1) + ' inclusive. Work through ALL of them.',
+'All file paths below are relative to /home/mjtomei/s10_tier1_recovery — read them from there.',
+'',
+MISSING
+  ? 'Read covariates_tier1_missing_keys.json — an object mapping chamber name to the list of roster keys a previous run missed. Take the "' + ch + '" list, entries at zero-based indices ' + (chunk * chunkSize) + ' through ' + (chunk * chunkSize + chunkSize - 1) + ' inclusive (the last chunk may run past the end; just do the entries that exist). Then look each of your keys up in rosters/' + ch + '.json to get its word counts and year spans. Work through ALL of them.'
+  : 'Read rosters/' + ch + '.json — corpus speaker keys with word counts and year spans, sorted by words spoken (descending, so early indices matter most to the study\'s power). Take entries at zero-based indices ' + (chunk * chunkSize) + ' through ' + (chunk * chunkSize + chunkSize - 1) + ' inclusive. Work through ALL of them.',
 '',
 'THE KEY IS THE DELIVERABLE\'S SPINE. Return each roster "key" VERBATIM. It is the corpus join key; an altered key makes the record unusable. This study has already lost one collection round to key drift.',
 '',

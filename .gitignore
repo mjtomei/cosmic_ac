@@ -204,3 +204,6 @@ analysis/s10/rlhf_gen/prompts_all.json
 # "This" padding, VECTOR-ANALYSIS.md) and are excluded from every table;
 # kept on disk as the audit's evidence, not tracked.
 analysis/s10/claude_gen_old/haiku_c*.json
+# Intermediate from the arch-home recovery run; fully merged into
+# covariates_tier1.json, rebuildable from that machine's workflow journals.
+analysis/s10/covariates_missing_recovered.json
