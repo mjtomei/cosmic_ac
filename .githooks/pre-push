@@ -51,6 +51,7 @@ check_range() {
       analysis/s10/provinces/OCCUPATION_CODING.md|\
       analysis/s10/provinces/occupation_strings.json|\
       analysis/s10/provinces/occupation_coding.json|\
+      analysis/s10/provinces/occupation_coding_v2.json|\
       analysis/s10/provinces/class_origin.json|\
       analysis/s10/provinces/member_allsource.json|\
       analysis/s10/provinces/member_bios.json|\
@@ -120,7 +121,8 @@ check_range() {
     case "$path" in
       analysis/s10/claude_gen/*.json|analysis/s10/claude_gen_old/*.json|\
       analysis/s10/rlhf_gen/*.json|analysis/s10/rlhf_gen_180/*.json|\
-      analysis/s10/covariates_tier1*.json|analysis/s10/rosters/*.json)
+      analysis/s10/covariates_tier1*.json|analysis/s10/rosters/*.json|\
+      analysis/s10/provinces/occupation_coding*.json)
         # covariates_tier1*: study-derived member covariates (same class as
         # the allowlisted provinces/member_allsource.json — structured fields
         # plus short attributed evidence quotes, no transcript text); rosters:
