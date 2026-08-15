@@ -66,8 +66,9 @@ channels and the one counter-channel:
 1. **Attack surface falls** — S1 frequency mult 0.90/1.05/1.30 (balanced
    shaded ~8–10% for displacement of the compute-acquisition slice of volume
    crime — the unnegotiated botnet/cryptojacking market of Anderson et al.;
-   fraud/BEC, the bulk of S1 dollars, unchanged); S3a probability mult
-   0.9/1.3/2.0 (attested access shrinks the exploitable initiation surface).
+   fraud/BEC, the bulk of S1 dollars, unchanged); S3a probability
+   mult 0.9/1.3/2.0 (attested access shrinks the exploitable initiation
+   surface).
    S2 frequency and severity shift carried from balanced unchanged.
 2. **Blast radius bounded** — severity truncation 20/35/55% vs
    defense-dominant's 15/25/40: S16's two-factor decomposition (a correlated
@@ -79,8 +80,8 @@ channels and the one counter-channel:
 3. **Defense spend converts to rent-funded protection** — Ch1 growth delta
    −6/−3/0 pp/yr (underwriter bundles security into the cession contract;
    Grossman 1981 warranty; S16 Path 1).
-4. **Negotiated payments are not losses** — per-regime transfer share
-   0.50/0.65/0.80 vs blended 0.35/0.45/0.60 (breach-of-contract damages and
+4. **Negotiated payments are not losses** — per-regime transfer
+   share 0.50/0.65/0.80 vs blended 0.35/0.45/0.60 (breach-of-contract damages and
    bounty-style settlements displace resource destruction; DOJ's 2022 CFAA
    good-faith policy is the legal precedent, vulnerability-reward programs
    the priced one). Affects the resource-only basis only.
