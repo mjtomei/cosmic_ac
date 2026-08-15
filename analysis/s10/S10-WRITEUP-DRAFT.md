@@ -641,20 +641,44 @@ tests failed to identify it (Appendix A). Cohort is not the whole of who uses
 the register, though — §4.6a adds three predictors that survive it — but none
 of them identifies the cohort mechanism either.
 
-### 4.6a Standing predicts the register, and it predicts it downward
+### 4.6a Standing and the register: a suggestive shape that did not survive its own checks
 
-Cohort is the largest term but it is not the only one, and the others share a
-direction worth stating before the tables: **the more established the speaker,
-the less of this register they use.** That holds across three measures which
-survive each other — occupational class, educational attainment, and how much
-has been written about the member — and it holds inside the vocabulary as well
-as across it, since the group that uses least is also the group that most
-avoids the words which rose most.
+This section reports a negative arc honestly, because the study committed to
+the check that produced it. On the eight Canadian provinces, occupational
+class, educational attainment and member prominence all appeared to predict
+the register downward — the more established the speaker, the less of it they
+used — at t-statistics of 3 to 4. Two committed checks later, almost none of
+that stands:
 
-None of this displaces cohort, which runs +1.20 to +1.40 per decade in every
-specification below. It sits beside it.
+**Clustering the standard errors by member** (the study's third encounter
+with unclustered inference flattering a result) leaves the provincial point
+estimates untouched and doubles to triples their errors: class II falls from
+t = 3.40 to 1.48, IVab from 3.51 to 1.49, VIIab from −4.04 to −1.84, the
+education ladder from 2.96 to 0.78. Member-years are not independent draws,
+and treating them as such had manufactured the significance.
 
-#### Class: the peak is one rung below the top
+**Replication on the tier-1 panel** (US House, US Senate, UK Commons, federal
+Canada, Dáil Éireann — 18,178 member-years, 2,742 members, clustered) finds
+the same qualitative shape at smaller magnitude — II +0.24 and IVab +0.28
+above class I, VIIab −0.51 below — with nothing individually significant
+except class III, which is significant with the OPPOSITE sign to its
+provincial estimate, i.e. noise behaving like noise.
+
+Pooled across all thirteen chambers (22,639 class-coded member-years, 3,413
+members): the only class contrast that touches significance is VIIab at
+−0.785 (t = −1.99); the education ladder is −0.08 (t = −0.8); a professional
+degree is −0.27 (t = −1.1). **Birth cohort is +1.01 (t = 10.96)** and is
++0.88 to +1.36 at t ≥ 6.9 in every split and specification tried.
+
+What survives, stated at its true weight: a recurring but unproven shape (the
+middle classes above the top in both independent panels, the manual bottom
+below in both), one marginal contrast (semi- and unskilled manual members use
+about 0.8 fewer instrument words per 1,000, p ≈ 0.05), and a cohort effect
+that no covariate in this study touches. The confident section that stood
+here for two days was written from unclustered provincial estimates, and its
+retraction is recorded in Appendix B.
+
+#### Class: the provincial estimates (retained as the discovery record; see the panel result above)
 
 Coding each member's pre-political occupation into the
 Erikson–Goldthorpe–Portocarero schema — two independent Claude passes over a
@@ -689,7 +713,7 @@ professional 35.5 / intermediate 35.3 / working 34.9 — a null. The
 seven-class schema is not a refinement here, it is the difference between a
 finding and nothing.[^r46d]
 
-#### Education: a real ladder, once the professional track is taken off it
+#### Education: the provincial ladder (did not replicate; see above)
 
 Education behaves the same way once the ladder is separated from the
 professional track. On the academic rungs alone — secondary, college,
@@ -700,13 +724,17 @@ law and medicine sit **−0.785 below bachelor's** (t = −3.49). A professional
 degree outranks a bachelor's on any ordering, so that dip cannot be attainment;
 it is the same class-I effect arriving through a second instrument.
 
-#### The shape has a name
+#### The shape has a name — held now as hypothesis, not finding
 
-The second-highest status group exceeding the highest, most visibly in
-self-conscious styles, is Labov's crossover pattern, and the disposition behind
-it is what he called linguistic insecurity — whose described signature,
-conscious striving for correctness with wide stylistic fluctuation, is the
-middle tier here.
+The second-highest status group exceeding the highest is Labov's crossover
+pattern, and the middle tier's described disposition matches his linguistic
+insecurity. After clustering, the crossover here is a recurring direction in
+two panels rather than a demonstrated effect, so the parallel is a hypothesis
+the enlarged panel failed to confirm at conventional thresholds — not a
+replication of Labov. It stays because the shape recurred independently and
+because the flight result below is measured on pooled text rather than
+member-level inference, but nothing in this subsection should be cited as
+established.
 
 #### Flight: class I avoids the words that became common
 
@@ -727,7 +755,11 @@ Lieberson is the closest parallel to our case, because his markers are discrete
 lexical items: first names diffuse down the status ladder and are abandoned by
 higher-status parents once they become common.[^r46e]
 
-#### Prominence: the same direction, a different variable
+#### Prominence: the same direction, a different variable (not yet re-tested)
+
+The result below is provincial and its errors are NOT clustered by member;
+given what clustering did to the class and education arms, treat it as
+unconfirmed until the panel re-run includes it.
 
 Each member's Wikipedia article length — fetched from the MediaWiki API through
 their Wikidata identifier, so it is a measured page property and not a
@@ -800,10 +832,14 @@ prominence backwards through the series. That biases toward finding nothing
 rather than something, since it adds noise to the regressor, but it means the
 coefficient is not a clean within-career estimate.
 
-Class III is unstable and should be read as such: +1.03 with class alone, −1.05
-once depth, cohort and volume enter. On 29 members that is what an
-underdetermined cell looks like, and it is the clearest argument for the
-clustering caveat below.
+Class III's premium is a cohort effect and should not be read as class.
+Controlling birth year alone moves it from +1.03 to −0.32, and the mechanism
+is compositional: III's median birth year is 1974 against 1956–1960 for every
+other class — routine non-manual members are the chamber's young class, by
+sixteen years. The rest of the curve is age-robust on the same subsample: II
+and IVab strengthen slightly under the control (+0.68, +0.91), VIIab holds at
+−1.51, so the peak sits at IVab/II rather than III and the crossover reading
+is unchanged.
 
 Classes III and VIIab rest on 29 and 16 members. Their standard errors treat
 repeated years of the same person as independent, so the true intervals are
@@ -1807,12 +1843,33 @@ Reported because they bound what the study can claim.
     article. Depth's own strong negative effect on the register is **not** a
     null and is reported in §4.6a.
 
+16. **Class origin (parental EGP) against register** — first measurement,
+    704 members with a coded parental class across thirteen chambers:
+    intermediate-origin +0.09, working-origin +0.12 against
+    professional-origin, t ≈ 0.2. Nothing.
+17. **The education ladder at panel scale** — provincial +0.32/rung fell to
+    +0.26 (t = 0.78) under member clustering and to −0.13 (t = −1.4) on the
+    tier-1 chambers. The §4.6a provincial ladder was unclustered inference.
+18. **Class contrasts at panel scale** — every §4.6a class coefficient loses
+    conventional significance under clustering except VIIab (−0.79,
+    t = −1.99). Point estimates keep their signs in both panels; magnitudes
+    halve out of sample.
+
 Together these say the cohort effect is real and its **mechanism is not
 exposure as we can measure it.** Items 9–12 say the same of composition at the
 *chamber* level: nothing about who a legislature recruits explains why it
 climbs. What does carry is measured on individuals, not on chambers.
 
 ## Appendix B — Superseded analyses
+
+0. **§4.6a as first written (2026-08-14 to 08-15)** — "standing predicts the
+   register downward" at t = 3–4 across class, education and prominence.
+   Superseded by the clustered full-panel estimation (`panel_estimation.py`):
+   the significance was an artifact of treating member-years as independent,
+   the study's third such incident. The panel section now standing in §4.6a
+   is the corrected record; provincial tables retained below it as the
+   discovery trail. Cohort, which the superseded section said "sits beside"
+   the standing effects, is in fact the only survivor.
 
 1. **Protocol v1.0** — superseded by v1.1 (present-in-both restriction,
    frequency × dispersion-matched placebos).
