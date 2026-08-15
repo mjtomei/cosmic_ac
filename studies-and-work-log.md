@@ -391,6 +391,45 @@ several 2e figures rode on a flagged secondary source — the load-bearing ones
 primaries 2026-08-04 (`analysis/capital-cycle/VERIFICATION.md`), the rest
 pending; market-value attribution ($18T vs $27T) follows Goldman's own caveat.
 
+### S19. The negotiated-cession regime (Fable–Carson extension) — **DONE, UNREVIEWED**
+*(The 2026-08-15 plan file self-labeled this S18
+(`plans/S18-negotiated-cession-cyber-model.md`), colliding with the register's
+S18 above; registered here as S19. File paths keep the brief's S18 names.)*
+*Question* (Matthew, 2026-08-10/15): what has to be true for ceding negotiated
+control of one's own compute to be individually rational — the point where
+malware, compromise, and ownership are redefined — and how does that change
+the Fable–Carson cyber-cost model?
+*Method:* their headline reproduced exactly from their untouched code (2028
+anchored median $107.2B / mean $240.6B / P(>$200B) 38.0%); their engine forked
+with marked diffs (CC-BY) and a fourth regime added in their own parameter
+vocabulary — 8 priors, all ours, anchored to S16's actuarial and rent inputs;
+the S16×S19 crossover solved per machine-year; sealed dynamics rolled to 2032
+(labeled ours).
+*Findings:* (1) **Cession already beats defense wherever hardware can
+participate** — at hardware-partitioned isolation (S16 Case 3/4) residual risk
+is ~$0.25/machine-yr and observed rent clears break-even 2.5×; the binding
+constraint is participation, not security. The one value-destroying cell is
+unnegotiated, unpartitioned access at pessimistic incident rates
+(−$1,886/machine-yr): malware, priced. Households sit at breakeven
+(obs/R* ≈ 0.97); enterprises clear. (2) The cession regime's 2028 distribution
+is defense-like at the median (−$125B vs defense −$151B) with a **tenfold
+fatter tail** (P99 $208B vs $20B) — Böhme–Kataria's same-batch correlation is
+the price of the architecture. (3) At 10% mixture weight it cuts their sealed
+median headline 27–48%; phased to 45% by 2032 the median goes negative
+(wedge ~$360B/yr) while ceded-fleet rent is only $3–18B/yr (US commercial) —
+**the regime's value is avoided losses and converted defense spend, not
+rent**. (4) Q3 by inspection: defense in their model is a severity-truncation
+haircut only ("the placeholder detection/patch/containment machinery is
+removed") — continuous autonomous defense structurally cannot appear except as
+a regime label; the forecast measures the transition window by construction.
+*Artifacts:* `analysis/negotiated-cession/` (forked engine, params, 5 CSVs,
+README with honest limits, verification.md — 9 handles verified);
+`plans/S18-proposed-text.md` (staged only; outline untouched).
+*Honest flags:* the cession-lowers-losses channel enters through a
+severity-truncation parameter we choose (20/35/55%) — the weakest link, named;
+everything past 2028 is our construction; the phase-in schedule is a scenario,
+not a forecast.
+
 ---
 
 ## Work log
@@ -480,6 +519,7 @@ pending; market-value attribution ($18T vs $27T) follows Goldman's own caveat.
 | 2026-08-12 | **S10 over-360 band added at matched rate; US extraction documented.** Matthew rejected my argument for oversampling the over-360 stratum in the two US chambers. | **He was right and my objection was about precision dressed as validity.** Matched rate is unbiased by construction and keeps the pooled estimate self-weighting; oversampling one stratum because we expect it to be interesting would break that, require reweighting across the design, and leave the US chambers non-comparable to the other nineteen. The US intervals will be wide (~6 prevalence segments each) and **that width is the honest report of what the exclusion cost** — the remedy is more sampling at matched rate throughout. **Also corrected a claim I made twice:** `us_extract.py` uses the *same* 360-word packer as `segment.py`. The over-360 concentration is source formatting — the Record prints long unbroken paragraphs and the packer never splits a paragraph — not different code. **New §5.0-us** documents the five genuinely US-specific decisions, none previously in the methodology: Extensions of Remarks dropped (the largest spoken-language contaminant, and the genre most likely ghost-drafted), DAILYDIGEST dropped, HOUSE/SENATE only, chair/clerk excluded, and **revise-and-extend contamination that cannot be removed** — the one US issue that biases *up* rather than down. |
 | 2026-08-12 | **S10 reproduction chain repaired** — Matthew asked whether the repo carries markers letting someone recover exactly which segments came back AI. | **It did not, for 17 of 21 chambers.** `seg_id` is tracked everywhere (manifests + verdict CSVs), but a seg_id is only meaningful with the extractor that assigned it, and `.gitignore` blanket-ignored `analysis/s10/provinces/` and `analysis/s10/us/` to keep licensed transcripts out — swallowing **86 download and extraction scripts** that contain no source text. Un-ignored explicitly and committed after scanning each for embedded transcript prose (five regex hits, all docstrings and surname-casing test cases). New `REPRODUCING.md` documents the chain: seg_id format, fetch → extract → segment → sample → score, which verdict file is which, and how to list every flagged segment. It also warns that `pangram_ch_verdicts.csv`'s short-band rows are Pangram 3 era (119 Human / 1 AI / **zero Mixed**) and must not be pooled with P4 results. |
 | 2026-08-11 | **S10 repo hygiene** | `METHODOLOGY.md` (1,469 lines) was untracked despite being a cited artifact — scanned for verbatim Hansard (zero speech markers, zero block quotes), then committed. The two adversarial-review rounds and our responses **archived to `analysis/s10/reviews-superseded/`**: they target the v1.0/v1.1 lexicon arm since demoted to descriptive, and predate the Pangram headline, the model-tier fix and the 19-chamber expansion. Their README records the four findings worth carrying forward and the **v1.0→v1.1 length-band inversion**, so those numbers are not re-quoted. S10 register entry rewritten as DONE/UNREVIEWED; original design preserved at `plans/S10-original-design.md`. |
+| 2026-08-15 | **S19 executed from the handoff brief** (`plans/S18-negotiated-cession-cyber-model.md`; numbering collision noted in the register) — Fable–Carson headline reproduced to the decimal, engine forked with a fourth *negotiated-cession* regime (8 priors, all ours), S16×S19 crossover solved, sealed dynamics rolled to 2032. | **Cession is already individually rational wherever hardware can participate**: at hardware-partitioned isolation residual risk ≈ $0.25/machine-yr, observed rent clears break-even 2.5×; the only value-destroying cell is unnegotiated unpartitioned access (−$1,886/machine-yr) — malware, priced. Cession regime: defense-like median (−$125B, 2028 anchored), tenfold-fatter tail (P99 $208B vs $20B) — correlation is the price of the architecture. Horizon: 45% weight by 2032 flips the mixture median negative (wedge ~$360B/yr) vs rent of $3–18B/yr — the value is avoided losses + converted defense spend, not rent. 9 citation handles verified. Staged text at `plans/S18-proposed-text.md`; outline untouched. |
 
 ---
 

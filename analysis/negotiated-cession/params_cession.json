@@ -1,0 +1,1497 @@
+{
+ "_meta": {
+  "description": "SEALED parameters for the Cowen cyber-cost Monte Carlo, translated from parameter_sheet.md (sealed Aug 10, 2026, Brad Carson). Units $B unless the field name says otherwise.",
+  "placeholder": false,
+  "sealed_date": "2026-08-10",
+  "schema": "config/knobs_schema.md",
+  "generated_by": "scratchpad/build_params.py",
+  "units": "USD billions ($B) unless a field name says otherwise",
+  "_interpretation_notes": [
+   "Quantile mapping: (p10/mode/p90) triples matched on p10/p90 exactly (lognormal positive, normal sign-free, beta for probabilities); mode used as consistency check only.",
+   "S1 parameterized by frequency x MEAN severity (sev_mean_usd): sheet says 'mu set to match mean', so the lognormal mu co-varies with sigma to hold the mean \u2014 mean-parameterization implements this exactly. Product of medians (10.31M x $17,450) = $180B 2024 level -> ~$260B 2026, matching the sealed S1 level prior (150/260/450 at 2026).",
+   "S1 baseline growth = fitted measured-trend growth ^ (1 - reporting_growth_share), the log-space version of sheet 'measured growth x (1 - reporting share)'.",
+   "S2 frequency grows at its own sealed trend (+3/+8/+15%/yr), not the loss-series trend; the 3x3 cell ratio still rescales the S1+S2 delta.",
+   "S2 GPD scale prior encodes the sealed median-exceedance $1.2B (0.8-2.0) at modal xi=0.95: scale = excess x xi/(2^xi - 1).",
+   "S3a payments-infrastructure = 3 tiers (Lloyd's triple used directly, not the weighted average) x first-year share (0.30/0.40/0.55): sev median = total x share-median 0.406. Tier probabilities encoded as tight Betas (published anchors).",
+   "S3a severity triples split 50/50 in log space between epistemic (sev_median prior) and aleatory (sev_sigma_log) so the TOTAL severity distribution matches the sheet triple.",
+   "S3a dependence_shift = per-regime target rho minus modal baseline rho (0.10).",
+   "S3b restructured to the sheet's 8 parameters; event rate = campaigns x P(foothold) x P(damaging); s3_prob_mult NOT applied to S3b (sheet: 'prob mult on S3a scenarios'); 2028 rate held at 2027 level (no sealed growth), subject to D-15 damping. Generative model documented in engine.py; seed_share/ref_share/max_cycles are declared structural constants [U].",
+   "Defense = per-regime severity-truncation haircut only (sheet section 4 row); the placeholder detection/patch/containment machinery is removed. Truncation is an AI shift-factor: 2028 deviation ramps at 1.5x and is subject to D-15 damping (literal reading of 'all AI multipliers').",
+   "Ch2 reporting_correction = 1/(1 + post-break uplift): section-6 header says corrections are APPLIED to measured outcomes; the correction converts apparent-basis excess to true excess (multiplier < 1, conservative).",
+   "Ch1 delta = category_deflator x [vendor_2026 x (1+labor_mult)] x ((1+g+delta_pp/100)^n - (1+g)^n), n = year-2026; sealed growth-rate-delta formulation replaces the placeholder absolute-$ prior. loss_response_coef retained as declared structural [U] (D-15 mechanism c). Ch1 delta is NOT damped by D-15 (it is not a section-4 multiplier; post-event spend rises).",
+   "Ch4 phase-in 50% weight 2027 / 100% 2028 (sheet section 7) applied in engine stats; the site export carries full-weight Ch4 samples (site has no per-year Ch4 dimension).",
+   "Ch2 loss series = IC3 x 12 (modal underreporting 5 x modal US->global 2.4), constant scale so growth equals the measured IC3 trend; 2026 quarters extrapolated at realized 2025 growth [U]. Chainalysis ransomware series is reported as honest tension, not blended into the trend.",
+   "Ch1 spend series growth-spliced across Gartner 2018/2024 series breaks, anchored 2026 = $240B; 2016->17 and the two bridge growths are [U] declared.",
+   "Quarterly values are geometric within-year interpolations of annual totals (documented; only ratios and window membership matter to the fits).",
+   "D-15 trigger compares the AI-world systemic total (S3a + S3b when both variants run) against damping_trigger_busd; damping factor drawn once per outer draw.",
+   "ILS check: Matterhorn Re attaches at $9B US industry insured loss; converted to global economic via modal econ:insured 7:1 and modal US->global 2.449 -> threshold ~$154B.",
+   "Baseline growth prior (11/12.5/14%/yr, section 5) is subsumed by the fitted 3x3 spend matrix; recorded here for the appendix.",
+   "sheet section 3a note: the old $120B infra working bound is retired to p90+ per the sheet; prior encodes p10 $8B / p90 $120B."
+  ],
+  "s18_extension": "Fourth regime 'cession' added by S18 (performance_commons, analysis/negotiated-cession/). All s18_ours entries are OUR constructions; sealed parameters carried unchanged."
+ },
+ "knobs": {
+  "counterfactual_form": {
+   "value_or_prior": "log_linear",
+   "anchor": "D-05, D-12",
+   "citation": "DECISIONS.md",
+   "verified": true,
+   "knob": true,
+   "placeholder": false
+  },
+  "fit_window": {
+   "value_or_prior": "full_2015_2024",
+   "anchor": "D-12",
+   "citation": "DECISIONS.md",
+   "verified": true,
+   "knob": true,
+   "placeholder": false
+  },
+  "break_date": {
+   "value_or_prior": "2026Q2",
+   "anchor": "D-12c",
+   "citation": "DECISIONS.md",
+   "verified": true,
+   "knob": true,
+   "placeholder": false
+  },
+  "reference_cell": {
+   "value_or_prior": {
+    "form": "log_linear",
+    "window": "full_2015_2024"
+   },
+   "anchor": "D-12b",
+   "citation": "DECISIONS.md",
+   "verified": true,
+   "knob": true,
+   "placeholder": false
+  },
+  "thresholds_busd": {
+   "value_or_prior": [
+    25,
+    50,
+    100,
+    200
+   ],
+   "anchor": "D-06",
+   "citation": "DECISIONS.md",
+   "verified": true,
+   "knob": true,
+   "placeholder": false
+  },
+  "regime_weights": {
+   "value_or_prior": {
+    "offense": 0.3,
+    "balanced": 0.45,
+    "defense": 0.25
+   },
+   "anchor": "D-07 sealed Aug 10 2026",
+   "citation": "DECISIONS.md",
+   "verified": true,
+   "knob": true,
+   "placeholder": false
+  },
+  "regime_preset": {
+   "value_or_prior": "sealed_brad",
+   "anchor": "D-07",
+   "citation": "DECISIONS.md",
+   "verified": true,
+   "knob": true,
+   "placeholder": false
+  },
+  "ch4_posture": {
+   "value_or_prior": "moderate",
+   "anchor": "D-13",
+   "citation": "DECISIONS.md",
+   "verified": true,
+   "knob": true,
+   "placeholder": false
+  },
+  "ch4_bounds_busd": {
+   "value_or_prior": {
+    "min": 2,
+    "mode": 12,
+    "max": 60
+   },
+   "anchor": "D-13 Moderate",
+   "citation": "DECISIONS.md",
+   "verified": true,
+   "knob": true,
+   "placeholder": false
+  },
+  "s3_variant": {
+   "value_or_prior": "both",
+   "anchor": "D-04",
+   "citation": "DECISIONS.md",
+   "verified": true,
+   "knob": true,
+   "placeholder": false
+  },
+  "headline_basis": {
+   "value_or_prior": "transfer_inclusive",
+   "anchor": "D-09 (both always reported)",
+   "citation": "DECISIONS.md",
+   "verified": true,
+   "knob": true,
+   "placeholder": false
+  },
+  "s2_cap_busd": {
+   "value_or_prior": 250.0,
+   "anchor": "D-14: per-event cap, Cloud Down extreme $121B + headroom",
+   "citation": "DECISIONS.md D-14; sheet section 0",
+   "verified": true,
+   "knob": true,
+   "placeholder": false
+  },
+  "s3_annual_cap_busd": {
+   "value_or_prior": 3500.0,
+   "anchor": "D-14: ~3% of gross world product, war/pandemic-scale ceiling",
+   "citation": "DECISIONS.md D-14; sheet section 0",
+   "verified": true,
+   "knob": true,
+   "placeholder": false
+  },
+  "s3_cap_presets_busd": {
+   "value_or_prior": {
+    "strict": 1000.0,
+    "central": 3500.0,
+    "permissive": 10000.0
+   },
+   "anchor": "D-14 site presets",
+   "citation": "DECISIONS.md D-14",
+   "verified": true,
+   "knob": true,
+   "placeholder": false
+  },
+  "damping_trigger_busd": {
+   "value_or_prior": 50.0,
+   "anchor": "D-15: ~a Bashe-class realized year; declared",
+   "citation": "sheet section 7b; DECISIONS.md D-15",
+   "verified": true,
+   "knob": true,
+   "placeholder": false
+  },
+  "cession_weight_presets": {
+   "value_or_prior": {
+    "none": 0.0,
+    "early": 0.1,
+    "mid": 0.25,
+    "high": 0.5
+   },
+   "anchor": "S18 mix-time sensitivity grid; not a sealed belief",
+   "citation": "S18",
+   "verified": false,
+   "knob": true,
+   "placeholder": false
+  }
+ },
+ "run": {
+  "n_outer": {
+   "value_or_prior": 10000,
+   "anchor": "D-03 epistemic layer",
+   "citation": "DECISIONS.md",
+   "verified": true,
+   "knob": false,
+   "placeholder": false
+  },
+  "n_inner": {
+   "value_or_prior": 10000,
+   "anchor": "D-03 aleatory layer",
+   "citation": "DECISIONS.md",
+   "verified": true,
+   "knob": false,
+   "placeholder": false
+  },
+  "seed": {
+   "value_or_prior": 20260810,
+   "anchor": "reproducibility",
+   "citation": "knobs_schema.md",
+   "verified": true,
+   "knob": false,
+   "placeholder": false
+  },
+  "chunk_outer": {
+   "value_or_prior": 100,
+   "anchor": "memory/perf tuning only; no effect on results",
+   "citation": "n/a",
+   "verified": true,
+   "knob": false,
+   "placeholder": false
+  },
+  "ai_ramp_2028": {
+   "value_or_prior": 1.5,
+   "anchor": "sheet section 4 header: 2028 = 1.5x the deviation from 1.0",
+   "citation": "parameter_sheet.md section 4",
+   "verified": true,
+   "knob": false,
+   "placeholder": false
+  },
+  "n_site_samples": {
+   "value_or_prior": 4000,
+   "anchor": "site export size (1000 too noisy for P99)",
+   "citation": "site contract",
+   "verified": true,
+   "knob": false,
+   "placeholder": false
+  }
+ },
+ "strata": {
+  "s1": {
+   "freq_mean_2024": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 10309907.856038,
+     "sigma_log": 0.405688
+    },
+    "anchor": "IC3 2024 complaints 859,532 x underreporting 3/5/8 x US->global 2.0/2.4/3.0; median 10.31M global incidents",
+    "citation": "IC3 2024 report; sheet section 1",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "freq_dispersion": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 15.491933,
+     "sigma_log": 0.515686
+    },
+    "anchor": "NB overdispersion k = 8/15/30; IC3 YoY burstiness incl. 2021 spike (D-12)",
+    "citation": "sheet section 1",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "sev_mean_usd": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 17450.435525,
+     "sigma_log": 0.08497
+    },
+    "anchor": "mean $ per incident; product with freq matches sealed S1 level 150/260/450B at 2026 (median product $180B at 2024); mu set to match mean per sheet",
+    "citation": "NetDiligence via sheet section 1",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "sev_sigma_log": {
+    "value_or_prior": {
+     "dist": "normal",
+     "mean": 1.85,
+     "sd": 0.273106
+    },
+    "anchor": "lognormal body width 1.5/1.8/2.2",
+    "citation": "NetDiligence via sheet section 1",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "reporting_growth_share": {
+    "value_or_prior": {
+     "dist": "beta",
+     "alpha": 2.9682,
+     "beta": 5.7394
+    },
+    "anchor": "share of measured growth that is reporting artifact 0.15/0.35/0.55; insured-subsample anchored",
+    "citation": "Coalition/NetDiligence vs IC3; sheet section 1",
+    "verified": true,
+    "knob": true,
+    "placeholder": false
+   },
+   "transfer_share_s1": {
+    "value_or_prior": {
+     "dist": "beta",
+     "alpha": 14.5807,
+     "beta": 10.7169
+    },
+    "anchor": "S1 transfer share 0.45/0.55/0.70 (informs blended ch2.transfer_share; D-09)",
+    "citation": "Coalition/DBIR composition; sheet section 1",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   }
+  },
+  "s2": {
+   "poisson_rate_2024": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 3.0,
+     "sigma_log": 0.540866
+    },
+    "anchor": "realized >=$500M events 2017-2024: 1.5/3/6 per yr",
+    "citation": "Equifax, NotPetya, Change Healthcare, MOVEit; sheet section 2",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "freq_trend_pct": {
+    "value_or_prior": {
+     "dist": "normal",
+     "mean": 9.0,
+     "sd": 4.681825
+    },
+    "anchor": "baseline frequency trend +3/+8/+15%/yr",
+    "citation": "claims severity-inflation; sheet section 2",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "gpd_shape": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 0.970824,
+     "sigma_log": 0.313037
+    },
+    "anchor": "xi prior 0.65/0.95/1.45 (D-14); spans finite-variance leg through modal infinite-mean finding",
+    "citation": "Eling-Wirfs, Malavasi et al. 2022; sheet section 0/2",
+    "verified": true,
+    "knob": true,
+    "placeholder": false
+   },
+   "gpd_scale_busd": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 0.684237,
+     "sigma_log": 0.627926
+    },
+    "anchor": "set s.t. median exceedance $1.2B (0.8-2.0) at modal xi: scale = excess*xi/(2^xi-1)",
+    "citation": "Change Healthcare $3.09B, Merck $1.4B, MOVEit; sheet section 2",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "gpd_threshold_busd": {
+    "value_or_prior": 0.5,
+    "anchor": "stratum definition: $500M fixed",
+    "citation": "sheet section 2",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   }
+  },
+  "s3a": {
+   "common_shock_loading": {
+    "value_or_prior": {
+     "dist": "beta",
+     "alpha": 3.3948,
+     "beta": 25.1269
+    },
+    "anchor": "pre-AI common-shock rho 0.05/0.10/0.20; JRT spillovers 2-4x own-firm",
+    "citation": "JRT Table B.XIII; sheet section 3a",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "scenarios": [
+    {
+     "name": "correlated_infra_failure",
+     "annual_prob": {
+      "value_or_prior": {
+       "dist": "beta",
+       "alpha": 3.6235,
+       "beta": 72.7704
+      },
+      "anchor": "CrowdStrike-class+ 2/4/8%/yr",
+      "citation": "CrowdStrike 2024, Cloud Down; sheet section 3a",
+      "verified": true,
+      "knob": false,
+      "placeholder": false
+     },
+     "sev_median_busd": {
+      "value_or_prior": {
+       "dist": "lognormal",
+       "median": 31.13799,
+       "sigma_log": 0.677986
+      },
+      "anchor": "severity $8/25/120B total; 50/50 epistemic/aleatory log-split (total spread preserved); old $120B bound retired to p90+",
+      "citation": "CrowdStrike $5.4B F500 -> ~$15B global; Cloud Down; sheet section 3a",
+      "verified": true,
+      "knob": false,
+      "placeholder": false
+     },
+     "sev_sigma_log": {
+      "value_or_prior": 0.7466,
+      "anchor": "aleatory half of the 8-120B log-spread",
+      "citation": "sheet section 3a",
+      "verified": true,
+      "knob": false,
+      "placeholder": false
+     }
+    },
+    {
+     "name": "systemic_ransomware_worm",
+     "annual_prob": {
+      "value_or_prior": {
+       "dist": "beta",
+       "alpha": 3.7358,
+       "beta": 311.8186
+      },
+      "anchor": "Bashe-class 0.5/1/2%/yr",
+      "citation": "CyRiM/Lloyd's Bashe; sheet section 3a",
+      "verified": true,
+      "knob": false,
+      "placeholder": false
+     },
+     "sev_median_busd": {
+      "value_or_prior": {
+       "dist": "lognormal",
+       "median": 154.939762,
+       "sigma_log": 0.283786
+      },
+      "anchor": "severity $80/150/300B total; 50/50 epistemic/aleatory log-split; ~1.3x economy scaling",
+      "citation": "CyRiM Bashe $85-193B; sheet section 3a",
+      "verified": true,
+      "knob": false,
+      "placeholder": false
+     },
+     "sev_sigma_log": {
+      "value_or_prior": 0.365,
+      "anchor": "aleatory half of the 80-300B log-spread",
+      "citation": "sheet section 3a",
+      "verified": true,
+      "knob": false,
+      "placeholder": false
+     }
+    },
+    {
+     "name": "payments_infra_major",
+     "annual_prob": {
+      "value_or_prior": {
+       "dist": "beta",
+       "alpha": 26.8,
+       "beta": 3973.2
+      },
+      "anchor": "Lloyd's major tier 0.67%/yr, used directly",
+      "citation": "Lloyd's/CCRS 2023; sheet section 3a",
+      "verified": true,
+      "knob": false,
+      "placeholder": false
+     },
+     "sev_median_busd": {
+      "value_or_prior": {
+       "dist": "lognormal",
+       "median": 893.644225,
+       "sigma_log": 0.236485
+      },
+      "anchor": "$2.2T total x first-year share 0.30/0.40/0.55 (declared)",
+      "citation": "Lloyd's 2023; sheet section 3a",
+      "verified": true,
+      "knob": false,
+      "placeholder": false
+     },
+     "sev_sigma_log": {
+      "value_or_prior": 0.15,
+      "anchor": "tier magnitude published; small residual dispersion (declared)",
+      "citation": "sheet section 3a",
+      "verified": false,
+      "knob": false,
+      "placeholder": false
+     }
+    },
+    {
+     "name": "payments_infra_severe",
+     "annual_prob": {
+      "value_or_prior": {
+       "dist": "beta",
+       "alpha": 4.0,
+       "beta": 3996.0
+      },
+      "anchor": "Lloyd's severe tier 0.10%/yr, used directly",
+      "citation": "Lloyd's/CCRS 2023; sheet section 3a",
+      "verified": true,
+      "knob": false,
+      "placeholder": false
+     },
+     "sev_median_busd": {
+      "value_or_prior": {
+       "dist": "lognormal",
+       "median": 2437.211521,
+       "sigma_log": 0.236485
+      },
+      "anchor": "~$6T total x first-year share 0.30/0.40/0.55",
+      "citation": "Lloyd's 2023; sheet section 3a",
+      "verified": true,
+      "knob": false,
+      "placeholder": false
+     },
+     "sev_sigma_log": {
+      "value_or_prior": 0.15,
+      "anchor": "declared",
+      "citation": "sheet section 3a",
+      "verified": false,
+      "knob": false,
+      "placeholder": false
+     }
+    },
+    {
+     "name": "payments_infra_extreme",
+     "annual_prob": {
+      "value_or_prior": {
+       "dist": "beta",
+       "alpha": 0.96,
+       "beta": 3999.04
+      },
+      "anchor": "Lloyd's extreme tier 0.024%/yr, used directly",
+      "citation": "Lloyd's/CCRS 2023; sheet section 3a",
+      "verified": true,
+      "knob": false,
+      "placeholder": false
+     },
+     "sev_median_busd": {
+      "value_or_prior": {
+       "dist": "lognormal",
+       "median": 6499.230724,
+       "sigma_log": 0.236485
+      },
+      "anchor": "$16T total x first-year share 0.30/0.40/0.55; D-14 annual cap binds here by design",
+      "citation": "Lloyd's 2023; sheet section 3a",
+      "verified": true,
+      "knob": false,
+      "placeholder": false
+     },
+     "sev_sigma_log": {
+      "value_or_prior": 0.15,
+      "anchor": "declared",
+      "citation": "sheet section 3a",
+      "verified": false,
+      "knob": false,
+      "placeholder": false
+     }
+    }
+   ]
+  },
+  "s3b": {
+   "campaigns_per_year": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 6.324555,
+     "sigma_log": 0.898358
+    },
+    "anchor": "systemic-capable autonomous campaigns/yr 2027: 2/6/20",
+    "citation": "HF + Anthropic 2026 observed; GTG-1002; sheet section 3b #1",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "p_foothold": {
+    "value_or_prior": {
+     "dist": "beta",
+     "alpha": 1.4137,
+     "beta": 8.1838
+    },
+    "anchor": "P(systemic foothold | campaign) 0.03/0.10/0.30",
+    "citation": "HF sandbox-escape once-for-once; sheet section 3b #2",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "p_damaging": {
+    "value_or_prior": {
+     "dist": "beta",
+     "alpha": 2.0645,
+     "beta": 2.0645
+    },
+    "anchor": "P(damaging objective | capable campaign) 0.2/0.5/0.8",
+    "citation": "HF was eval-seeking; criminal/state adoption; sheet section 3b #8",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "branching_factor": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 1.095445,
+     "sigma_log": 0.786119
+    },
+    "anchor": "propagation R per containment cycle 0.4/1.2/3.0",
+    "citation": "HF lateral movement, re-establishment 2 days post-patch; sheet section 3b #3",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "cycle_time_days": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 5.291503,
+     "sigma_log": 0.759201
+    },
+    "anchor": "containment cycle time days 2/4/14 (lognormal median)",
+    "citation": "HF weekend timeline; sheet section 3b #4",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "cycle_sigma_log": {
+    "value_or_prior": 0.5,
+    "anchor": "per-event aleatory dispersion around the cycle-time median; declared structural",
+    "citation": "declared [U]",
+    "verified": false,
+    "knob": false,
+    "placeholder": false
+   },
+   "patch_race_win_prob": {
+    "value_or_prior": {
+     "dist": "beta",
+     "alpha": 2.9976,
+     "beta": 9.488
+    },
+    "anchor": "P(defender wins patch race) 0.10/0.20/0.40; Brad's sealed D-07 Q2 = 20%",
+    "citation": "D-07 Q2 sealed; Mandiant TTE; sheet section 3b #5",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "blast_radius_share": {
+    "value_or_prior": {
+     "dist": "beta",
+     "alpha": 1.2536,
+     "beta": 9.3681
+    },
+    "anchor": "blast-radius share of economy given monoculture 0.02/0.08/0.25",
+    "citation": "top-3 cloud ~65% infra share; sheet section 3b #6",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "damage_rate_busd_per_day": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 10.954451,
+     "sigma_log": 0.786119
+    },
+    "anchor": "damage rate $B/day during systemic event, full-economy-scaled: 4/10/30",
+    "citation": "CrowdStrike ~$15B global/day; sheet section 3b #7",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "seed_share": {
+    "value_or_prior": 0.001,
+    "anchor": "initial affected share of economy at foothold; declared structural",
+    "citation": "declared [U]",
+    "verified": false,
+    "knob": false,
+    "placeholder": false
+   },
+   "ref_share": {
+    "value_or_prior": 0.08,
+    "anchor": "damage-rate prior is anchored at the modal blast-radius share; severity scales linearly in share/ref_share",
+    "citation": "declared structural",
+    "verified": false,
+    "knob": false,
+    "placeholder": false
+   },
+   "max_cycles": {
+    "value_or_prior": 12,
+    "anchor": "cascade cycle cap; declared structural",
+    "citation": "declared [U]",
+    "verified": false,
+    "knob": false,
+    "placeholder": false
+   }
+  }
+ },
+ "ai_shift": {
+  "offense": {
+   "s1_freq_mult": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 1.691153,
+     "sigma_log": 0.205256
+    },
+    "anchor": "S1 freq mult 1.3/1.6/2.2",
+    "citation": "AI-phishing 54% vs 12%; Hoxhunt; Anthropic ban data; sheet section 4",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "s2_freq_mult": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 1.907878,
+     "sigma_log": 0.299346
+    },
+    "anchor": "S2 freq mult 1.3/1.8/2.8",
+    "citation": "TTE negative; vuln exploitation #1 vector; sheet section 4",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "severity_shift": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 1.218606,
+     "sigma_log": 0.079901
+    },
+    "anchor": "S1/S2/S3 severity shift +10/+20/+35%",
+    "citation": "personalization scales fraud size; weak anchor; sheet section 4",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "s3_prob_mult": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 2.738613,
+     "sigma_log": 0.469732
+    },
+    "anchor": "S3a scenario prob mult 1.5/2.5/5.0 \u2014 weakest-anchored, most consequential",
+    "citation": "CyberCube force-multiplier; monoculture; HF propagation; sheet section 4",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "dependence_shift": {
+    "value_or_prior": {
+     "dist": "normal",
+     "mean": 0.275,
+     "sd": 0.175568
+    },
+    "anchor": "target rho 0.15/0.35/0.60 minus modal baseline 0.10",
+    "citation": "sheet section 4",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   }
+  },
+  "balanced": {
+   "s1_freq_mult": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 1.183216,
+     "sigma_log": 0.131275
+    },
+    "anchor": "1.0/1.15/1.4",
+    "citation": "sheet section 4",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "s2_freq_mult": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 1.2,
+     "sigma_log": 0.22448
+    },
+    "anchor": "0.9/1.2/1.6",
+    "citation": "sheet section 4",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "severity_shift": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 1.072381,
+     "sigma_log": 0.054528
+    },
+    "anchor": "0/+5/+15%",
+    "citation": "sheet section 4",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "s3_prob_mult": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 1.48324,
+     "sigma_log": 0.307618
+    },
+    "anchor": "1.0/1.4/2.2",
+    "citation": "sheet section 4",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "dependence_shift": {
+    "value_or_prior": {
+     "dist": "normal",
+     "mean": 0.125,
+     "sd": 0.097538
+    },
+    "anchor": "target rho 0.10/0.20/0.35 minus modal baseline 0.10",
+    "citation": "sheet section 4",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   }
+  },
+  "defense": {
+   "s1_freq_mult": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 0.938083,
+     "sigma_log": 0.124245
+    },
+    "anchor": "0.8/0.95/1.1",
+    "citation": "sheet section 4",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "s2_freq_mult": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 0.877496,
+     "sigma_log": 0.176343
+    },
+    "anchor": "0.7/0.9/1.1",
+    "citation": "sheet section 4",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "severity_shift": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 0.972111,
+     "sigma_log": 0.060142
+    },
+    "anchor": "-10/0/+5%",
+    "citation": "sheet section 4",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "s3_prob_mult": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 0.848528,
+     "sigma_log": 0.270433
+    },
+    "anchor": "0.6/0.9/1.2",
+    "citation": "sheet section 4",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "dependence_shift": {
+    "value_or_prior": {
+     "dist": "normal",
+     "mean": 0.025,
+     "sd": 0.058523
+    },
+    "anchor": "target rho 0.05/0.10/0.20 minus modal baseline 0.10",
+    "citation": "sheet section 4",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   }
+  },
+  "cession": {
+   "s1_freq_mult": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 1.0816653826391969,
+     "sigma_log": 0.14346858527266956
+    },
+    "anchor": "S1 freq mult 0.90/1.05/1.30 \u2014 balanced regime (1.0/1.15/1.4) shaded ~8-10% for displacement of the compute-acquisition slice of volume crime (botnet rental, cryptojacking, DDoS capacity \u2014 the unnegotiated market); AI offense on fraud/BEC, the bulk of S1 dollars, unchanged. OURS.",
+    "citation": "Anderson et al. 2013/2019 cybercrime-cost composition; S18 construction",
+    "verified": false,
+    "knob": true,
+    "placeholder": false,
+    "s18_ours": true
+   },
+   "s2_freq_mult": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 1.2000000000000002,
+     "sigma_log": 0.22447951388481924
+    },
+    "anchor": "S2 freq mult carried from balanced unchanged (0.9/1.2/1.6): negotiated access does not deter targeted single-firm breaches; data theft targets remain. Declared carry-over.",
+    "citation": "Fable-Carson sheet section 4 (balanced); S18 carry",
+    "verified": false,
+    "knob": true,
+    "placeholder": false,
+    "s18_ours": true
+   },
+   "severity_shift": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 1.0723805294763609,
+     "sigma_log": 0.0545284115492326
+    },
+    "anchor": "Severity shift carried from balanced unchanged (0/+5/+15%): offense-side severity gains are orthogonal to the cession channel. Declared carry-over.",
+    "citation": "Fable-Carson sheet section 4 (balanced); S18 carry",
+    "verified": false,
+    "knob": true,
+    "placeholder": false,
+    "s18_ours": true
+   },
+   "s3_prob_mult": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 1.3416407864998738,
+     "sigma_log": 0.3115394330147155
+    },
+    "anchor": "S3a prob mult 0.9/1.3/2.0 \u2014 balanced (1.0/1.4/2.2) shaded ~10%: an attested negotiated-access fabric shrinks the exploitable initiation surface (agents that can buy access need not exploit it); modest because the S3a scenarios (payments infra, cloud) are not primarily endpoint-initiated. OURS.",
+    "citation": "S16 Case-3 partition (owner-untouchable shared path); S18 construction",
+    "verified": false,
+    "knob": true,
+    "placeholder": false,
+    "s18_ours": true
+   },
+   "dependence_shift": {
+    "value_or_prior": {
+     "dist": "normal",
+     "mean": 0.225,
+     "sd": 0.13655322556266636
+    },
+    "anchor": "Dependence shift: target rho 0.15/0.30/0.50 minus modal baseline 0.10. HIGHER than balanced (0.125), between balanced and offense (0.275): one partition design + one negotiation protocol on the whole installed base is Bohme-Kataria's same-production-batch cell. Correlation is the price of the architecture \u2014 the regime's honest counter-channel. OURS.",
+    "citation": "Bohme & Kataria WEIS 2006 (rho_G, same-batch exception); S16 actuarial model section 4; S18 construction",
+    "verified": false,
+    "knob": true,
+    "placeholder": false,
+    "s18_ours": true
+   }
+  }
+ },
+ "defense": {
+  "offense": {
+   "severity_truncation": {
+    "value_or_prior": {
+     "dist": "triangular",
+     "min": 0.0,
+     "mode": 0.0,
+     "max": 0.146
+    },
+    "anchor": "haircut 0/0/10% (p90 = 0.10 under triangular(0,0,b)); AI-world severity x (1-h)",
+    "citation": "sheet section 4 truncation row",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   }
+  },
+  "balanced": {
+   "severity_truncation": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 0.1,
+     "sigma_log": 0.540866
+    },
+    "anchor": "haircut 5/10/20%",
+    "citation": "sheet section 4 truncation row",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   }
+  },
+  "defense": {
+   "severity_truncation": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 0.244949,
+     "sigma_log": 0.382673
+    },
+    "anchor": "haircut 15/25/40%",
+    "citation": "OpenAI agent-written patches; AI-SOC triage; sheet section 4",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   }
+  },
+  "safeguard_damping": {
+   "value_or_prior": {
+    "dist": "normal",
+    "mean": 0.7,
+    "sd": 0.156061
+   },
+   "anchor": "D-15 post-event damping factor 0.5/0.7/0.9 on 2028 deviations if 2027 systemic loss >= trigger",
+   "citation": "HF response: slowdown + agent-authored fixes + UK AISI report; sheet section 7b",
+   "verified": true,
+   "knob": true,
+   "placeholder": false
+  },
+  "cession": {
+   "severity_truncation": {
+    "value_or_prior": {
+     "dist": "lognormal",
+     "median": 0.33166247903554,
+     "sigma_log": 0.3946781927766582
+    },
+    "anchor": "Severity haircut 20/35/55% \u2014 S16 two-factor decomposition: a correlated boundary failure converts to per-machine reimaging (~$200) unless the attacker independently defeats each firm's own IT; Case-3 partition eliminates the insider/misconfiguration category on the shared path (11-33% of DBIR breach patterns); realized boundary-exploitation index 502 (endpoint) -> 0.5 (hardware-partitioned) in KEV. Above defense-dominant (15/25/40) because architectural, not reactive. OURS \u2014 THE WEAKEST LINK of this study: our cession-lowers-losses channel enters through this parameter, which we choose.",
+    "citation": "S16 actuarial_model.py (A1 boundary index, A4 category elimination, section 5 decomposition); Verizon DBIR; CISA KEV; S18 construction",
+    "verified": false,
+    "knob": true,
+    "placeholder": false,
+    "s18_ours": true
+   }
+  }
+ },
+ "ch1": {
+  "spend_series_busd_quarterly": {
+   "value_or_prior": {
+    "quarters": [
+     "2015Q1",
+     "2015Q2",
+     "2015Q3",
+     "2015Q4",
+     "2016Q1",
+     "2016Q2",
+     "2016Q3",
+     "2016Q4",
+     "2017Q1",
+     "2017Q2",
+     "2017Q3",
+     "2017Q4",
+     "2018Q1",
+     "2018Q2",
+     "2018Q3",
+     "2018Q4",
+     "2019Q1",
+     "2019Q2",
+     "2019Q3",
+     "2019Q4",
+     "2020Q1",
+     "2020Q2",
+     "2020Q3",
+     "2020Q4",
+     "2021Q1",
+     "2021Q2",
+     "2021Q3",
+     "2021Q4",
+     "2022Q1",
+     "2022Q2",
+     "2022Q3",
+     "2022Q4",
+     "2023Q1",
+     "2023Q2",
+     "2023Q3",
+     "2023Q4",
+     "2024Q1",
+     "2024Q2",
+     "2024Q3",
+     "2024Q4",
+     "2025Q1",
+     "2025Q2",
+     "2025Q3",
+     "2025Q4",
+     "2026Q1",
+     "2026Q2"
+    ],
+    "values": [
+     20.6606,
+     21.0727,
+     21.493,
+     21.9217,
+     22.4876,
+     22.8498,
+     23.2178,
+     23.5918,
+     23.8111,
+     24.3018,
+     24.8025,
+     25.3136,
+     25.808,
+     26.358,
+     26.9197,
+     27.4933,
+     28.1483,
+     28.7018,
+     29.2662,
+     29.8417,
+     29.9982,
+     30.8741,
+     31.7755,
+     32.7032,
+     33.3738,
+     34.538,
+     35.7427,
+     36.9895,
+     39.0359,
+     39.8861,
+     40.7547,
+     41.6423,
+     42.4453,
+     43.4392,
+     44.4563,
+     45.4972,
+     46.4493,
+     47.6126,
+     48.8049,
+     50.0272,
+     50.8761,
+     52.4198,
+     54.0102,
+     55.6489,
+     57.3373,
+     59.077
+    ]
+   },
+   "anchor": "Gartner 2015-2026 growth-spliced across 2018/2024 series breaks, anchored 2026F=$240B; quarterly geometric interpolation; 2016-17 + bridge growths [U]",
+   "citation": "Gartner PRs 2015-2026 (research/anchors_frequency_spend.md section 3)",
+   "verified": true,
+   "knob": false,
+   "placeholder": false
+  },
+  "vendor_spend_2026_busd": {
+   "value_or_prior": {
+    "dist": "normal",
+    "mean": 240.0,
+    "sd": 6.242433
+   },
+   "anchor": "vendor-spend baseline 2026 $240B (232-248)",
+   "citation": "Gartner 2026F; sheet section 5",
+   "verified": true,
+   "knob": false,
+   "placeholder": false
+  },
+  "baseline_growth": {
+   "value_or_prior": {
+    "dist": "normal",
+    "mean": 0.125,
+    "sd": 0.011705
+   },
+   "anchor": "pre-2025 spend trend 11/12.5/14%/yr (appendix; fits use the series)",
+   "citation": "Gartner/IDC concordant; sheet section 5",
+   "verified": true,
+   "knob": false,
+   "placeholder": false
+  },
+  "labor_mult": {
+   "value_or_prior": {
+    "dist": "normal",
+    "mean": 1.2,
+    "sd": 0.312122
+   },
+   "anchor": "internal labor cost multiplier x vendor spend 0.8/1.2/1.6; WIDE \u2014 flagged",
+   "citation": "~5.5M workforce x blended cost; declared [U]; sheet section 5",
+   "verified": false,
+   "knob": false,
+   "placeholder": false
+  },
+  "category_deflator": {
+   "value_or_prior": {
+    "dist": "beta",
+    "alpha": 3.6461,
+    "beta": 4.0586
+   },
+   "anchor": "share of measured AI-security spend genuinely incremental 0.25/0.45/0.70; declared judgment",
+   "citation": "sheet section 5",
+   "verified": false,
+   "knob": true,
+   "placeholder": false
+  },
+  "ai_growth_delta_pp": {
+   "offense": {
+    "value_or_prior": {
+     "dist": "normal",
+     "mean": 4.0,
+     "sd": 2.340912
+    },
+    "anchor": "Ch1 AI growth-rate delta +1/+3.5/+7 pp/yr; symmetric per D-10",
+    "citation": "Black Hat spend signal vs token-price deflation; sheet section 5",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "balanced": {
+    "value_or_prior": {
+     "dist": "normal",
+     "mean": 1.0,
+     "sd": 1.560608
+    },
+    "anchor": "-1/+1/+3 pp/yr",
+    "citation": "sheet section 5",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "defense": {
+    "value_or_prior": {
+     "dist": "normal",
+     "mean": -2.0,
+     "sd": 2.340912
+    },
+    "anchor": "-5/-2/+1 pp/yr",
+    "citation": "sheet section 5",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "cession": {
+    "value_or_prior": {
+     "dist": "normal",
+     "mean": -3.0,
+     "sd": 2.3409124382171376
+    },
+    "anchor": "Ch1 growth delta -6/-3/0 pp/yr \u2014 security spend partially converts to rent-funded, underwriter-bundled protection (the cession contract prices residual risk into the rent split; warranty as quality signal). More negative than defense-dominant (-5/-2/+1) because the conversion is structural, not just unit-cost deflation. P(>0)=10% keeps D-10's straddle-zero spirit. OURS.",
+    "citation": "S16 Path 1 (builder as underwriter); Grossman 1981; S18 construction",
+    "verified": false,
+    "knob": true,
+    "placeholder": false,
+    "s18_ours": true
+   }
+  },
+  "loss_response_coef": {
+   "value_or_prior": {
+    "dist": "beta",
+    "alpha": 2.0,
+    "beta": 18.0
+   },
+   "anchor": "lagged spend response per $1B realized excess loss; structural (handoff D4; D-15 mechanism c)",
+   "citation": "declared [U]",
+   "verified": false,
+   "knob": false,
+   "placeholder": false
+  }
+ },
+ "ch2": {
+  "loss_series_busd_quarterly": {
+   "value_or_prior": {
+    "quarters": [
+     "2015Q1",
+     "2015Q2",
+     "2015Q3",
+     "2015Q4",
+     "2016Q1",
+     "2016Q2",
+     "2016Q3",
+     "2016Q4",
+     "2017Q1",
+     "2017Q2",
+     "2017Q3",
+     "2017Q4",
+     "2018Q1",
+     "2018Q2",
+     "2018Q3",
+     "2018Q4",
+     "2019Q1",
+     "2019Q2",
+     "2019Q3",
+     "2019Q4",
+     "2020Q1",
+     "2020Q2",
+     "2020Q3",
+     "2020Q4",
+     "2021Q1",
+     "2021Q2",
+     "2021Q3",
+     "2021Q4",
+     "2022Q1",
+     "2022Q2",
+     "2022Q3",
+     "2022Q4",
+     "2023Q1",
+     "2023Q2",
+     "2023Q3",
+     "2023Q4",
+     "2024Q1",
+     "2024Q2",
+     "2024Q3",
+     "2024Q4",
+     "2025Q1",
+     "2025Q2",
+     "2025Q3",
+     "2025Q4",
+     "2026Q1",
+     "2026Q2"
+    ],
+    "values": [
+     2.8539,
+     3.0792,
+     3.3223,
+     3.5845,
+     4.3842,
+     4.3613,
+     4.3386,
+     4.316,
+     3.2944,
+     3.8685,
+     4.5427,
+     5.3344,
+     7.3296,
+     7.8209,
+     8.3451,
+     8.9045,
+     9.7934,
+     10.2501,
+     10.7281,
+     11.2284,
+     10.3597,
+     11.7287,
+     13.2785,
+     15.0331,
+     17.7013,
+     19.566,
+     21.6272,
+     23.9055,
+     28.6943,
+     30.1171,
+     31.6105,
+     33.178,
+     33.6099,
+     36.0801,
+     38.7317,
+     41.5783,
+     45.5843,
+     48.2864,
+     51.1487,
+     54.1806,
+     57.3922,
+     60.7943,
+     64.3981,
+     68.2155,
+     72.2592,
+     76.5426
+    ]
+   },
+   "anchor": "IC3 2015-2025 actual x 12 (modal underreporting 5 x modal US->global 2.4); 2026 extrapolated at 2025 growth [U]; quarterly geometric interpolation; 2021 spike left in (D-12a)",
+   "citation": "IC3 annual reports 2015-2025 (research/anchors_frequency_spend.md section 1)",
+   "verified": true,
+   "knob": false,
+   "placeholder": false
+  },
+  "reporting_correction": {
+   "value_or_prior": {
+    "dist": "lognormal",
+    "median": 0.87288,
+    "sigma_log": 0.068032
+   },
+   "anchor": "1/(1+uplift), uplift 5/12/25% apparent-loss inflation 2026-28 (SEC 8-K migration + post-HF salience); converts apparent to true excess",
+   "citation": "SEC 8-K trackers; sheet section 6",
+   "verified": true,
+   "knob": true,
+   "placeholder": false
+  },
+  "transfer_share": {
+   "value_or_prior": {
+    "dist": "beta",
+    "alpha": 12.2763,
+    "beta": 13.5928
+   },
+   "anchor": "blended transfer share 0.35/0.45/0.60 (D-09 split)",
+   "citation": "component composition; sheet section 6",
+   "verified": true,
+   "knob": false,
+   "placeholder": false
+  },
+  "econ_to_insured_ratio": {
+   "value_or_prior": {
+    "dist": "lognormal",
+    "median": 7.071068,
+    "sigma_log": 0.270433
+   },
+   "anchor": "economic:insured 5/7/10 : 1 (ILS check only)",
+   "citation": "CrowdStrike insured $0.54-1.8B vs $5.4B+ economic; sheet section 6",
+   "verified": true,
+   "knob": false,
+   "placeholder": false
+  },
+  "us_to_global_mult": {
+   "value_or_prior": {
+    "dist": "lognormal",
+    "median": 2.44949,
+    "sigma_log": 0.158193
+   },
+   "anchor": "US -> global multiplier 2.0/2.4/3.0 (D-08); declared",
+   "citation": "sheet section 1 [U]",
+   "verified": false,
+   "knob": false,
+   "placeholder": false
+  },
+  "transfer_share_cession": {
+   "value_or_prior": {
+    "dist": "beta",
+    "alpha": 10.4877,
+    "beta": 5.6472
+   },
+   "anchor": "Transfer share of remaining measured losses 0.50/0.65/0.80 vs baseline blended 0.35/0.45/0.60: under negotiated access, a larger share of what is still recorded as loss resolves as contract transfers \u2014 breach-of-contract damages, bounty-style settlements \u2014 rather than resource destruction. Legal reclassification precedent: DOJ's 2022 CFAA good-faith policy; priced precedent: vulnerability-reward programs. Affects the resource_only basis ONLY (D-09 headline unchanged). OURS.",
+   "citation": "DOJ CFAA charging policy May 2022; Finifter-Akhawe-Wagner 2013; S18 construction",
+   "verified": false,
+   "knob": true,
+   "placeholder": false,
+   "s18_ours": true
+  }
+ },
+ "ch4": {
+  "postures": {
+   "strict": {
+    "value_or_prior": {
+     "min": 1,
+     "mode": 5,
+     "max": 25
+    },
+    "anchor": "D-13 Strict",
+    "citation": "DECISIONS.md D-13",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "moderate": {
+    "value_or_prior": {
+     "min": 2,
+     "mode": 12,
+     "max": 60
+    },
+    "anchor": "D-13 Moderate (CHOSEN)",
+    "citation": "DECISIONS.md D-13",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   },
+   "expansive": {
+    "value_or_prior": {
+     "min": 5,
+     "mode": 25,
+     "max": 100
+    },
+    "anchor": "D-13 Expansive",
+    "citation": "DECISIONS.md D-13",
+    "verified": true,
+    "knob": false,
+    "placeholder": false
+   }
+  },
+  "phase_in": {
+   "value_or_prior": {
+    "2027": 0.5,
+    "2028": 1.0
+   },
+   "anchor": "sheet section 7: 50% weight 2027, 100% 2028",
+   "citation": "parameter_sheet.md section 7",
+   "verified": true,
+   "knob": false,
+   "placeholder": false
+  }
+ },
+ "market": {
+  "matterhorn_attach_busd_insured": {
+   "value_or_prior": 9.0,
+   "anchor": "Matterhorn Re attaches at $9B US industry insured loss",
+   "citation": "sheet section 8",
+   "verified": true,
+   "knob": false,
+   "placeholder": false
+  },
+  "matterhorn_attach_prob": {
+   "value_or_prior": 0.0223,
+   "anchor": "market-implied annual attach probability 2.23%",
+   "citation": "sheet section 8",
+   "verified": true,
+   "knob": false,
+   "placeholder": false
+  },
+  "polestar_el_range": {
+   "value_or_prior": [
+    0.0082,
+    0.0205
+   ],
+   "anchor": "PoleStar 2026-1 expected losses 0.82-2.05%; priced at/below guidance Dec 2025; no post-HF repricing as of Aug 10 2026",
+   "citation": "sheet section 8",
+   "verified": true,
+   "knob": false,
+   "placeholder": false
+  },
+  "polestar_spread_range": {
+   "value_or_prior": [
+    0.07,
+    0.105
+   ],
+   "anchor": "PoleStar spreads 7-10.5%",
+   "citation": "sheet section 8",
+   "verified": true,
+   "knob": false,
+   "placeholder": false
+  }
+ }
+}
