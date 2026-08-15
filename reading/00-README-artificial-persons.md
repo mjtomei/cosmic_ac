@@ -252,3 +252,12 @@ Bodies: Abraham Lincoln, Richard Nixon, and Presidential Self-Sacrifice,"
 browser list; **Espejo 1980 is one human click away**: a full text exists on
 ResearchGate but its Cloudflare challenge defeated every automated route —
 the exact URL is in the fetch log and any human browser session should get it.
+
+
+## Library-card fetch (2026-08-15): Sepinwall 2012 (bonus)
+
+Hunting her closed Philosophy Compass survey through SCCLD's EBSCO turned up
+**"Citizens United and the Ineluctable Question of Corporate Citizenship"**
+(Conn. L. Rev. 44(3), 2012, ★★ c1) — the Dartmouth line at its live
+constitutional pressure point. The 2016 survey stays on the browser list; do
+not cite one as the other.

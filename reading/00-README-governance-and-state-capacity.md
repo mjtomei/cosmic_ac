@@ -472,3 +472,19 @@ EHR 1992) — read those before leaning on Lean's Engine Reporter; and Derthick 
 Quirk's own two-page *Brookings Review* statement with the counterfactual quote
 verbatim ("If economists had not made the case for procompetitive deregulation,
 it would not have occurred").
+
+
+## Library-card fetches (2026-08-15, SCCLD via rpa.sccl.org in Chromium)
+
+The July finding re-confirmed and mapped precisely: **SCCLD licenses no JSTOR**,
+and EBSCO Academic Search Complete's backfile does not reach the 1960s–70s
+targets (Schick 1973/1966, Wildavsky 1966, Rogin 1979, Price's *Daedalus*
+piece all unindexed). What ASC does hold, now fetched: **Bimber 1998, "The
+death of an agency: OTA and trophy hunting in U.S. budget policy"** (★★★ c3 —
+the mechanism the withdrawal arc needed: OTA killed as a budget *trophy*, not
+for savings; with the 1992 dissertation already on disk, the Bimber book is now
+fully covered and off the purchase list). The JSTOR-tier items remain
+entitlement-blocked at any public-library proxy — for those, one month of
+**JPASS (~$20) covers PAR, *Daedalus*, *Massachusetts Review*, *Stanford L.
+Rev.*, and *JOP* with 120 downloads** — the efficient route for the whole
+remaining JSTOR list at once.
