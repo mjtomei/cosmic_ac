@@ -41,5 +41,11 @@ adapting unless told otherwise.
 
 Products these built: `~/reading/*/00-CITATION-SWEEP.json`,
 `00-RANKINGS.json`, and the collections' PDF sets. The security-economics
-sweep (2026-08-15) was run with plain parallel agents before these were
-rescued; its acquire + ranking stages should use these templates.
+collection (2026-08-15) ran its sweep with plain parallel agents (before
+the templates were rescued), then its acquire + ranking stages from these
+templates — those two instances are preserved here as
+`security-economics-acquire.js` (10 fetch agents, 92/99 ok, honest no_oa
+reporting) and `security-economics-ranking.js` (92 opus/medium readers +
+opus/high calibrator; its calibration notes in
+`~/reading/security-economics/00-RANKINGS.json` are the model for what the
+calibrate stage should return).
