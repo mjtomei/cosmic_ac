@@ -1824,6 +1824,25 @@ that is recorded.
    a measured false-accusation rate attached — the number a disclosure-norm
    policy would actually need.
 
+1d. **A search that targets the human judge, to measure the vulnerability's
+   ceiling.** The bypass arm (§4.9) optimises rewrites against a *statistical*
+   detector; 1c shows human register-judgment is already anti-correlated with
+   truth on that output as a side effect. The complement is a search whose
+   objective IS a model of the human reviewer — rewrite to minimise a
+   held-out human-proxy's AI-likeness rating (and, in the strong form, to
+   maximise its rated authenticity above the genuine-human baseline). This
+   measures how far "more human than human" can be pushed when it is the
+   explicit target rather than a by-product, i.e. the ceiling of the
+   false-accusation problem a disclosure regime would face. Framed and run as
+   MEASUREMENT of an adversary's reachable frontier, not as a deployable
+   deception tool: the deliverable is the reachable rating gap and what text
+   features drive it (pairing with the §8.6.1a register-feature instrument, so
+   the output is named features rather than a black-box rewrite), reported so
+   that reviewers and disclosure policies can be built against the ceiling
+   rather than the current floor. The obvious dual-use tension is real and is
+   the reason to publish the ceiling openly rather than leave it to be found
+   privately.
+
 **B. Getting outside the parliamentary archive.** Three versions of one move.
 §4.6's mechanism is unidentified and three exposure tests inside the archive
 returned null (Appendix A); the informative next evidence is a different *kind*,
