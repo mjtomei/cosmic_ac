@@ -1654,6 +1654,21 @@ Two limits that do bite, and neither is about robustness:
   which means watermarking can support a disclosure norm but can never
   underwrite an accusation.
 
+And the fallback people reach for when a detector is unavailable — their own
+sense of whether text "reads like a person" — is worse than unreliable on
+adversarial input; it is anti-correlated with the truth. Asked to judge
+AI-likeness by register, a frontier reader flagged 13 of 35 genuine human
+floor speeches and only 5 of 35 machine rewrites that had been optimised
+against a detector (§4.9 stage 5): adversarial optimisation removes exactly the
+tells gut judgment keys on, so the errors of a vibes-based adjudicator
+concentrate on the *unoptimised* — ordinary speakers who ran their words
+through nothing. As machine-assisted text spreads, register ceases to carry
+authorship information at all, and any institution still adjudicating
+authenticity by feel will manufacture false accusations that fall hardest on
+the people least equipped to contest them. (One unblinded, lineage-correlated
+judge on 35 texts; illustrative, not a measured effect — see the future-work
+item below.)
+
 ### 8.3 The substitution, and why our null is the argument for it
 
 If provenance is the wrong thing to spend effort on, the question is what to
@@ -1791,6 +1806,23 @@ that is recorded.
    features rather than one number. It also gives §8.6.1's register/substance
    split a principled rule, since the two lists are constructed by different
    criteria rather than by splitting one list in half.
+
+1c. **The anti-correlation of gut judgment, measured properly.** §8.2's
+   sharpest claim — that register-based human judgment of authorship is
+   anti-correlated with the truth on adversarial text, flagging real humans
+   more than optimised machine rewrites — currently rests on one unblinded,
+   lineage-correlated judge (the DQI grader shares a family with the search's
+   own Opus proxy) over 35 texts, where the paired effect is directional but
+   not significant (−4 points, t = −1.15). The confirmatory design is cheap
+   and pre-registerable: recruit human raters (or at minimum a
+   non-Claude-family model, so the judge is independent of the optimisation
+   target), give them a balanced blind mix of genuine floor speech, ordinary
+   machine drafts, and detector-optimised rewrites, and record whether the
+   false-positive rate on real humans exceeds the miss rate on optimised text.
+   If it does, "detection cannot underwrite an accusation" strengthens from a
+   statement about detectors to a statement about human judgment itself, with
+   a measured false-accusation rate attached — the number a disclosure-norm
+   policy would actually need.
 
 **B. Getting outside the parliamentary archive.** Three versions of one move.
 §4.6's mechanism is unidentified and three exposure tests inside the archive
