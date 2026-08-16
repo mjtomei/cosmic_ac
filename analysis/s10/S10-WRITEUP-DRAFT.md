@@ -249,9 +249,11 @@ together, so a chamber whose one flagged segment happens to run 900 words
 should read as less certain than one whose flag is 130 words, and a binomial on
 segment counts cannot express that.[^r42]
 
-The spread is the finding, not noise around a mean. **US House 12.1% vs US
-Senate 1.8%** is the sharpest contrast available: two chambers of one
-legislature, near-identical AI policies, differing sevenfold.
+The spread is the finding, not noise around a mean: chamber rates run from
+1.8% to 19.8%, an elevenfold range. What drives a chamber's position is not
+established here — even two chambers of one legislature can sit far apart
+(§8.6 B4), and the study does not attribute the between-chamber differences to
+any measured cause.
 
 **Federal Canada's row comes from its own uniform draw**, not from the
 genre-stratified sample that answers §4.3. The genre arm takes 60 segments
@@ -1857,6 +1859,18 @@ that is recorded.
 §4.6's mechanism is unidentified and three exposure tests inside the archive
 returned null (Appendix A); the informative next evidence is a different *kind*,
 not a fourth operationalisation of the same kind.
+
+4. **What drives the between-chamber spread — currently unexplained.** Chamber
+   prevalence ranges elevenfold (US Senate 1.8% to NSW 19.8%), and the gaps are
+   not attributed to any measured cause. The sharpest case is within one
+   legislature: US House 12.1% vs US Senate 1.8%, same country, same era, same
+   authorship-and-disclosure rules, differing sevenfold. The leading untested
+   candidate is genre composition — the House runs far more one-minute floor
+   speeches, the SO31-type format §4.3 measures at ~37% machine — but US genre
+   metadata was never recovered, so it cannot be netted out; chamber culture,
+   staffing and turnover are equally untested. Recovering US per-segment genre
+   (order-of-business tags in the Congressional Record) would let the House
+   rate be decomposed and is the concrete next step.
 
 2. **Cross-country onset timing.** Within-country geography is exhausted — by
    2006 everywhere in Canada and the US was past the inflection, leaving about
