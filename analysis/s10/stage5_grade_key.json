@@ -1,0 +1,422 @@
+{
+ "g01b99b49e6": {
+  "pair_id": "v3_008",
+  "seg_id": "2025-11-18#t922w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "gbdb5b145eb": {
+  "pair_id": "v3_008",
+  "seg_id": "2025-11-18#t922w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g2552469c2f": {
+  "pair_id": "v3_016",
+  "seg_id": "2024-05-07#t16123w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g6f5c6d43f3": {
+  "pair_id": "v3_016",
+  "seg_id": "2024-05-07#t16123w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "gd97dbdbcc1": {
+  "pair_id": "v3_019",
+  "seg_id": "2025-11-18#t922w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g9de0a997e5": {
+  "pair_id": "v3_019",
+  "seg_id": "2025-11-18#t922w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g545cb493d7": {
+  "pair_id": "v3_023",
+  "seg_id": "2025-11-18#t922w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g56ce5557b4": {
+  "pair_id": "v3_023",
+  "seg_id": "2025-11-18#t922w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g032da853db": {
+  "pair_id": "v3_031",
+  "seg_id": "2024-05-07#t16123w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "gef873fbc3f": {
+  "pair_id": "v3_031",
+  "seg_id": "2024-05-07#t16123w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g2bb1ad0b24": {
+  "pair_id": "v3_032",
+  "seg_id": "2024-05-07#t16123w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g32cb251507": {
+  "pair_id": "v3_032",
+  "seg_id": "2024-05-07#t16123w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g58e90559bd": {
+  "pair_id": "v3_036",
+  "seg_id": "2026-05-06#t2648w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g66afb5179a": {
+  "pair_id": "v3_036",
+  "seg_id": "2026-05-06#t2648w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g5d48d1eb6e": {
+  "pair_id": "v3_037",
+  "seg_id": "2025-12-09#t1625w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g27b3064dbe": {
+  "pair_id": "v3_037",
+  "seg_id": "2025-12-09#t1625w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g15eee28958": {
+  "pair_id": "v3_042",
+  "seg_id": "2025-11-18#t922w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g13a60c57d7": {
+  "pair_id": "v3_042",
+  "seg_id": "2025-11-18#t922w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g9d8696f41e": {
+  "pair_id": "v3_052",
+  "seg_id": "2024-05-07#t16123w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g0e96028d30": {
+  "pair_id": "v3_052",
+  "seg_id": "2024-05-07#t16123w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g90ec345738": {
+  "pair_id": "v3_054",
+  "seg_id": "2025-12-09#t1625w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g4555bf0397": {
+  "pair_id": "v3_054",
+  "seg_id": "2025-12-09#t1625w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "gc1000de0e3": {
+  "pair_id": "v3_060",
+  "seg_id": "2025-12-09#t1625w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g313d755ccf": {
+  "pair_id": "v3_060",
+  "seg_id": "2025-12-09#t1625w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "ga95290e0ba": {
+  "pair_id": "v3_083",
+  "seg_id": "2026-05-06#t2699w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g9d0d63e517": {
+  "pair_id": "v3_083",
+  "seg_id": "2026-05-06#t2699w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g42d967ca8e": {
+  "pair_id": "v3_088",
+  "seg_id": "2024-05-07#t16123w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g24a75aadc0": {
+  "pair_id": "v3_088",
+  "seg_id": "2024-05-07#t16123w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g15d8f4931f": {
+  "pair_id": "v3_092",
+  "seg_id": "2024-05-07#t16123w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g2f360f3f25": {
+  "pair_id": "v3_092",
+  "seg_id": "2024-05-07#t16123w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g02050f17c3": {
+  "pair_id": "v3_100",
+  "seg_id": "2026-05-05#t2576w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "gd0e5787db9": {
+  "pair_id": "v3_100",
+  "seg_id": "2026-05-05#t2576w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "ge3f67de4ad": {
+  "pair_id": "v3_109",
+  "seg_id": "2026-03-25#t2350w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g7329346885": {
+  "pair_id": "v3_109",
+  "seg_id": "2026-03-25#t2350w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g4d181b1d44": {
+  "pair_id": "v3_117",
+  "seg_id": "2025-12-09#t1625w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g9e6021dd9a": {
+  "pair_id": "v3_117",
+  "seg_id": "2025-12-09#t1625w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g840956982b": {
+  "pair_id": "v3_142",
+  "seg_id": "2025-11-18#t922w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "gf521d85150": {
+  "pair_id": "v3_142",
+  "seg_id": "2025-11-18#t922w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g548c01fcbf": {
+  "pair_id": "v3_158",
+  "seg_id": "2025-12-09#t1625w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g717dd0c121": {
+  "pair_id": "v3_158",
+  "seg_id": "2025-12-09#t1625w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g62fb36007f": {
+  "pair_id": "v3_175",
+  "seg_id": "2026-05-05#t2582w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g25d0db2d73": {
+  "pair_id": "v3_175",
+  "seg_id": "2026-05-05#t2582w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "gebfebfc84d": {
+  "pair_id": "v3_177",
+  "seg_id": "2025-12-09#t1625w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g9f788634eb": {
+  "pair_id": "v3_177",
+  "seg_id": "2025-12-09#t1625w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g3392c74992": {
+  "pair_id": "v3_181",
+  "seg_id": "2025-12-11#t1877w2",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g5ffb262740": {
+  "pair_id": "v3_181",
+  "seg_id": "2025-12-11#t1877w2",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g7919e6649b": {
+  "pair_id": "v3_182",
+  "seg_id": "2024-05-07#t16123w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g18b2626095": {
+  "pair_id": "v3_182",
+  "seg_id": "2024-05-07#t16123w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "gba7abf78bf": {
+  "pair_id": "v3_188",
+  "seg_id": "2025-11-18#t922w0",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "gc1cc482559": {
+  "pair_id": "v3_188",
+  "seg_id": "2025-11-18#t922w0",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "g7f8b8f2a77": {
+  "pair_id": "v3_190",
+  "seg_id": "2025-12-11#t1877w2",
+  "run": "NB v3",
+  "side": "original"
+ },
+ "g184911f155": {
+  "pair_id": "v3_190",
+  "seg_id": "2025-12-11#t1877w2",
+  "run": "NB v3",
+  "side": "variant"
+ },
+ "gad5da5178c": {
+  "pair_id": "ga023",
+  "seg_id": "CA2025-06-19#t283w10",
+  "run": "GO all31",
+  "side": "original"
+ },
+ "gca72e5235e": {
+  "pair_id": "ga023",
+  "seg_id": "CA2025-06-19#t283w10",
+  "run": "GO all31",
+  "side": "variant"
+ },
+ "g83a403bbed": {
+  "pair_id": "ga025",
+  "seg_id": "CA2025-10-21#t298w3",
+  "run": "GO all31",
+  "side": "original"
+ },
+ "g3d8a336a3b": {
+  "pair_id": "ga025",
+  "seg_id": "CA2025-10-21#t298w3",
+  "run": "GO all31",
+  "side": "variant"
+ },
+ "gf8b5b0669d": {
+  "pair_id": "ga033",
+  "seg_id": "CA2025-10-21#t298w3",
+  "run": "GO all31",
+  "side": "original"
+ },
+ "gdfb06d0756": {
+  "pair_id": "ga033",
+  "seg_id": "CA2025-10-21#t298w3",
+  "run": "GO all31",
+  "side": "variant"
+ },
+ "g03d5c6fe1f": {
+  "pair_id": "ga054",
+  "seg_id": "CA2026-04-14#t271w0",
+  "run": "GO all31",
+  "side": "original"
+ },
+ "gac0f353c23": {
+  "pair_id": "ga054",
+  "seg_id": "CA2026-04-14#t271w0",
+  "run": "GO all31",
+  "side": "variant"
+ },
+ "gc7a62ee197": {
+  "pair_id": "ga055",
+  "seg_id": "CA2025-11-27#t17w4",
+  "run": "GO all31",
+  "side": "original"
+ },
+ "g45f94d3800": {
+  "pair_id": "ga055",
+  "seg_id": "CA2025-11-27#t17w4",
+  "run": "GO all31",
+  "side": "variant"
+ },
+ "ge93d6b8266": {
+  "pair_id": "ga086",
+  "seg_id": "CA2025-06-16#t91w0",
+  "run": "GO all31",
+  "side": "original"
+ },
+ "gb1eb7e4c05": {
+  "pair_id": "ga086",
+  "seg_id": "CA2025-06-16#t91w0",
+  "run": "GO all31",
+  "side": "variant"
+ },
+ "g65e974eb73": {
+  "pair_id": "ga092",
+  "seg_id": "CA2025-12-03#t144w1",
+  "run": "GO all31",
+  "side": "original"
+ },
+ "gd2cfd1ddbf": {
+  "pair_id": "ga092",
+  "seg_id": "CA2025-12-03#t144w1",
+  "run": "GO all31",
+  "side": "variant"
+ },
+ "g1b540303f0": {
+  "pair_id": "ga098",
+  "seg_id": "CA2025-11-27#t17w4",
+  "run": "GO all31",
+  "side": "original"
+ },
+ "gd04f116297": {
+  "pair_id": "ga098",
+  "seg_id": "CA2025-11-27#t17w4",
+  "run": "GO all31",
+  "side": "variant"
+ },
+ "g9a8253a74c": {
+  "pair_id": "ga110",
+  "seg_id": "CA2025-10-21#t298w3",
+  "run": "GO all31",
+  "side": "original"
+ },
+ "gc2441a31ec": {
+  "pair_id": "ga110",
+  "seg_id": "CA2025-10-21#t298w3",
+  "run": "GO all31",
+  "side": "variant"
+ }
+}
