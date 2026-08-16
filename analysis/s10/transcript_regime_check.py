@@ -63,14 +63,24 @@ def main():
     ap.add_argument("--min-words", type=int, default=80)
     args = ap.parse_args()
 
+    # provinces/ carries `prov`; the US and CA-FED corpora do not, so key
+    # them by file (P6: these three were previously never screened because the
+    # glob stopped at provinces/).
+    FILE_CH = {"us/segments_us_house.jsonl": "US-HOUSE",
+               "us/segments_us_senate.jsonl": "US-SENATE",
+               "ca/segments_ca2.jsonl": "CA-FED"}
+    sources = [(p, None) for p in sorted(glob.glob(
+        os.path.join(HERE, "provinces", "segments_*.jsonl")))]
+    sources += [(os.path.join(HERE, rel), ch) for rel, ch in FILE_CH.items()]
     pool = defaultdict(lambda: defaultdict(list))
-    for p in sorted(glob.glob(os.path.join(HERE, "provinces",
-                                           "segments_*.jsonl"))):
-        for line in open(p):
+    for path, forced in sources:
+        if not os.path.exists(path):
+            continue
+        for line in open(path):
             d = json.loads(line)
             t = d.get("text", "")
             if len(t.split()) >= args.min_words:
-                pool[d.get("prov")][d["date"][:4]].append(t)
+                pool[forced or d.get("prov")][d["date"][:4]].append(t)
 
     rows = []
     for pv in sorted(pool):

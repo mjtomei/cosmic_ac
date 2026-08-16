@@ -94,8 +94,13 @@ Findings, and they cut against the received story:
   no control can calibrate it. **TAS is reported but excluded from pooled
   estimates.**
 - **NL (2016), WAL (2015), MB (2007)** step *inside* the control window.
-  Their controls were floored to the current regime — still comfortably
-  pre-AI, so nothing was lost.
+  On the raw pool NL and WAL trip the same "across the windows" banner as
+  Tasmania (NL +770%, WAL +238% full-series), but that is an artifact of
+  averaging a pre-window that straddles their own step; with the floor applied
+  the reconciled step is small (NL +8%, WAL +11%, MB +9%). Their controls were
+  floored to the current regime — still comfortably pre-AI, so nothing was
+  lost, and unlike Tasmania the step falls inside the control window where a
+  floor can fix it.
 
 ---
 
@@ -1443,8 +1448,12 @@ beat" is the whole of that apparatus.
   Four runs over two days with a frontier model. A staff tool refined over
   months, or a local model fine-tuned against the detector, is a different
   adversary and we did not test one.
-- **Tasmania is uninterpretable** and excluded. Other chambers passed the
-  regime diagnostic, but the diagnostic uses two markers, not all of them.
+- **Tasmania is uninterpretable** and excluded. All twenty pooled chambers
+  are now screened (the diagnostic previously globbed only the provinces;
+  CA-FED, US House and US Senate were added — CA-FED flat, the two US chambers
+  a gradual multi-decade climb with no discrete step). Nineteen pass; Tasmania
+  is the sole exclusion. The diagnostic uses two convention-tracking markers,
+  not all of them.
 - **Mixed is pooled with AI** throughout. Reported separately in the CSV.
 - **The permeation effect is small** and rests on one instrument.
 - **This study measures register, not substance.** Whether machine assistance
