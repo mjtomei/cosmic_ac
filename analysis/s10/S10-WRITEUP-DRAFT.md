@@ -641,14 +641,14 @@ tests failed to identify it (Appendix A). Cohort is not the whole of who uses
 the register, though — §4.6a adds three predictors that survive it — but none
 of them identifies the cohort mechanism either.
 
-### 4.6a Standing and the register: a suggestive shape that did not survive its own checks
+### 4.6a Class and the register: jointly significant, individually noisy — and education is not it
 
-This section reports a negative arc honestly, because the study committed to
-the check that produced it. On the eight Canadian provinces, occupational
-class, educational attainment and member prominence all appeared to predict
-the register downward — the more established the speaker, the less of it they
-used — at t-statistics of 3 to 4. Two committed checks later, almost none of
-that stands:
+The arc of this section is a correction applied twice, recorded because both
+applications were the study's own committed checks. On the eight provinces,
+class, education and prominence appeared to predict the register at t = 3–4.
+Clustering by member and replication then removed every INDIVIDUAL certainty
+— and an over-hasty first rewrite of this section called that a reversal. The
+joint tests say otherwise:
 
 **Clustering the standard errors by member** (the study's third encounter
 with unclustered inference flattering a result) leaves the provincial point
@@ -665,18 +665,30 @@ except class III, which is significant with the OPPOSITE sign to its
 provincial estimate, i.e. noise behaving like noise.
 
 Pooled across all thirteen chambers (22,639 class-coded member-years, 3,413
-members): the only class contrast that touches significance is VIIab at
-−0.785 (t = −1.99); the education ladder is −0.08 (t = −0.8); a professional
-degree is −0.27 (t = −1.1). **Birth cohort is +1.01 (t = 10.96)** and is
-+0.88 to +1.36 at t ≥ 6.9 in every split and specification tried.
+member clusters), the accurate statement has three parts:
 
-What survives, stated at its true weight: a recurring but unproven shape (the
-middle classes above the top in both independent panels, the manual bottom
-below in both), one marginal contrast (semi- and unskilled manual members use
-about 0.8 fewer instrument words per 1,000, p ≈ 0.05), and a cohort effect
-that no covariate in this study touches. The confident section that stood
-here for two days was written from unclustered provincial estimates, and its
-retraction is recorded in Appendix B.
+**Class matters, as a joint hypothesis.** The Wald test that all six class
+terms are zero rejects at **p = 0.029** pooled, with each independent panel
+alone at p ≈ 0.078 — six individually noisy coefficients carrying a real
+pattern between them. The qualitative structure replicates across the two
+panels: **II and IVab above class I, VIIab below, in both** (≈1.6% under
+independent sign-flips), and the manual-class deficit stands on its own:
+**VIIab −0.785, t = −1.99**. Magnitudes are roughly HALF the provincial
+estimates, and the middle ranks cannot be ordered — III swings from last to
+first between panels on its small cells.
+
+**Education is not it.** The provincial ladder (+0.32/rung, t = 2.96
+unclustered) falls to t = 0.78 clustered and runs wrong-signed on the tier-1
+chambers (−0.13, t = −1.4); a professional degree is −0.27 (t = −1.1)
+pooled. Parental class origin, first measured here on 704 members: null
+(t ≈ 0.2). The education and origin stories are dead on this evidence; the
+class effect is occupational, not educational.
+
+**Cohort towers over all of it.** Birth decade is **+1.01 (t = 10.96)**
+pooled and +0.88 to +1.36 at t ≥ 6.9 in every split and specification — three
+countries, 22 chambers, untouched by any covariate this study has measured.
+For scale: the entire significant class structure spans about 1.3 per 1,000
+(IVab to VIIab); cohort covers that span in thirteen years of birth date.
 
 #### Class: the provincial estimates (retained as the discovery record; see the panel result above)
 
@@ -1862,14 +1874,15 @@ climbs. What does carry is measured on individuals, not on chambers.
 
 ## Appendix B — Superseded analyses
 
-0. **§4.6a as first written (2026-08-14 to 08-15)** — "standing predicts the
-   register downward" at t = 3–4 across class, education and prominence.
-   Superseded by the clustered full-panel estimation (`panel_estimation.py`):
-   the significance was an artifact of treating member-years as independent,
-   the study's third such incident. The panel section now standing in §4.6a
-   is the corrected record; provincial tables retained below it as the
-   discovery trail. Cohort, which the superseded section said "sits beside"
-   the standing effects, is in fact the only survivor.
+0. **§4.6a, twice** — first written as "standing predicts the register
+   downward" at t = 3–4 (unclustered provincial estimates, the study's third
+   unclustered-inference incident); then over-corrected to "did not survive
+   its own checks" on per-term t-tests alone. The joint Wald (p = 0.029
+   pooled) and the cross-panel shape replication showed the over-correction
+   wrong within a day (Matthew caught it from the preserved ordering). The
+   standing version reports all three layers: jointly significant class,
+   dead education/origin, dominant cohort. Both superseded framings are part
+   of the record.
 
 1. **Protocol v1.0** — superseded by v1.1 (present-in-both restriction,
    frequency × dispersion-matched placebos).
