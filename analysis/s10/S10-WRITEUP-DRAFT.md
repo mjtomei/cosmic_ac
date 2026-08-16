@@ -1843,6 +1843,22 @@ that is recorded.
    the reason to publish the ceiling openly rather than leave it to be found
    privately.
 
+1e. **The detection game — 1c and 1d as one self-generating instrument.**
+   Human and AI participants each continue a shared prompt (legislative, or an
+   Apples-to-Apples card for reach); humans rate each submission's
+   LLM-likelihood under a proper scoring rule, blind to the human:AI mix. The
+   independent variable is how much human-review feedback each AI generator
+   sees — none / own aggregate / others' games only / full transcripts — a
+   dose-response ladder for the value of human-review signal to an adversary.
+   One apparatus yields three curves: human detection accuracy over rounds
+   (does it fall as models adapt?), the AI pass-rate ceiling by condition (1d,
+   under consent), and the false-accusation rate on real humans (1c, at scale
+   and with real raters rather than the single lineage-correlated judge behind
+   §8.2). The game frame is what makes it practical — participation is
+   intrinsic — and it is the ethical form of 1d, since the human-targeting
+   search runs inside a disclosed, consented frame. Design detail in
+   `plans/S10-detection-game.md`.
+
 **B. Getting outside the parliamentary archive.** Three versions of one move.
 §4.6's mechanism is unidentified and three exposure tests inside the archive
 returned null (Appendix A); the informative next evidence is a different *kind*,
