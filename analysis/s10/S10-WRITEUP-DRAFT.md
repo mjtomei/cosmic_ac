@@ -348,7 +348,7 @@ procedure permits**, which is the mechanism under test:
 | **SO31** — one-minute scripted set-pieces | **32.3%** | [21.0, 44.1] |
 | Government Orders — mixed prepared and spontaneous | 19.9% | [10.4, 30.3] |
 | **Oral Questions** — not on notice | **9.8%** | [2.3, 19.2] |
-| all three pre-AI controls | **0.0%** | [0.0, 0.0] |
+| all three pre-AI controls (0/180) | **0.0%** | [0.0, 2.1] |
 
 **SO31 vs OQ: 3.29×, +22.5pp, permutation p = 0.0025.**
 
@@ -805,41 +805,24 @@ Lieberson is the closest parallel to our case, because his markers are discrete
 lexical items: first names diffuse down the status ladder and are abandoned by
 higher-status parents once they become common.[^r46e]
 
-#### Prominence: the same direction, a different variable (not yet re-tested)
+#### Prominence: same direction, small, and heterogeneous
 
-The result below is provincial and its errors are NOT clustered by member;
-given what clustering did to the class and education arms, treat it as
-unconfirmed until the panel re-run includes it.
+Each member's Wikipedia article length — a measured page property (wikitext
+bytes via the MediaWiki API), not a judgement — predicts the register
+**negatively**: members with longer articles use less of it. Re-tested on the
+full panel at member level (equal weight, z within chamber, HC1; Appendix D.2)
+the effect is **−0.033σ per log-byte (t −3.5), n=4,297 across 13 chambers** —
+real, significant, and the same sign everywhere, but an order of magnitude
+smaller than the provincial member-year estimate first suggested (−0.75/1,000,
+which carried the same word-weighting inflation as the class arm). It is also
+strongly heterogeneous: −0.21σ in the Canadian provinces, −0.02σ in the
+national chambers, where article length is long and its range compressed.
 
-Each member's Wikipedia article length — fetched from the MediaWiki API through
-their Wikidata identifier, so it is a measured page property and not a
-judgement (`wiki_depth.py`, 1,354 of 1,396 members resolved, median 8,924
-bytes, range 1,478 to 136,048) — predicts the register **negatively**. Members
-with longer articles use less of it.
-
-On the 4,437 member-years carrying class, depth and birth year together:
-
-| | alone | with class | + cohort and volume |
-|---|---|---|---|
-| log article length | −0.607 (t −4.9) | −0.590 (t −4.6) | **−0.747** (t −6.2) |
-| class II vs I | +0.654 (t 3.1) | +0.464 (t 2.2) | +0.416 (t 2.1) |
-| class IVab vs I | +0.793 (t 3.0) | +0.541 (t 2.0) | +0.570 (t 2.2) |
-| class VIIab vs I | −1.563 (t −3.9) | −2.002 (t −4.9) | −2.176 (t −5.8) |
-| birth decade | | | **+1.400** (t 16.3) |
-| log words spoken | | | −0.461 (t −4.0) |
-
-Each absorbs about a quarter of the other and both survive. So the study has
-three partially independent predictors, and the two new ones point the same
-way: **the more established the speaker, the less of this register they use** —
-at the level of occupational class, and again at the level of individual
-prominence within a class. Volume runs the same direction; members who speak
-more use it less.
-
-WP:NPOL gives essentially every elected member an article, so existence
-discriminates nothing and depth is the usable instrument. It was collected as a
-control on notability bias in the education covariate — members whose education
-we know have **1.80× the median article length** of those we do not, so that
-bias is real and measured — and it turned out to be a result in its own right.
+Depth was collected as a control on notability bias in the education covariate
+— members whose education we know have **1.80× the median article length** of
+those we do not, so that bias is real and measured — and it survived as a small
+result in its own right. WP:NPOL gives essentially every elected member an
+article, so existence discriminates nothing; depth is the usable instrument.
 
 #### Word mix: the effects live in rate, not vocabulary — and machine text sits outside the geometry
 
@@ -2303,3 +2286,26 @@ the negative coefficients it produces (respect_demands −1.21, respect_countera
 documentation named; that control is nonetheless not a clean instrument, and
 the only unconfounded fixes — a human-coded subsample, or grading
 style-normalised text — remain future work.
+
+### D.2 Prominence (Wikipedia article length) on the full panel
+
+The §4.6a prominence effect was first estimated from the Canadian provinces at
+member-year level (−0.75 per 1,000, t −6.2), which carried the same
+word-weighting and clustering inflation as the class arm. Re-tested at member
+level (one legislator, one observation; register z-scored within chamber
+against the full member population; HC1), with article length fetched for the
+tier-1 chambers from their evidence-URL titles (`build_t1_wiki_depth.py`,
+3,999 of 4,008 resolved) and joined to the provincial fetch:
+
+| panel | logdepth coef (σ) | t | n |
+|---|---|---|---|
+| CA provinces | −0.214 | −6.0 | 1,055 |
+| tier-1 chambers | −0.021 | −2.1 | 3,242 |
+| **full panel (13 chambers)** | **−0.033** | **−3.5** | 4,297 |
+
+The effect is negative and significant on the full panel, same sign in both
+sub-panels — so it replicates — but it is an order of magnitude weaker than the
+provincial estimate and strongly heterogeneous: article length in the national
+chambers is long and range-compressed (median ~23k bytes vs ~8.9k in the
+provinces), where the contrast nearly flattens. Reported as a small, robust,
+heterogeneous effect, not the −0.75 the member-year provincial run implied.
