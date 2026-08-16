@@ -1633,12 +1633,20 @@ member-level mean and sd of its FULL population — the full population, not
 the covariate subsample, so the scale is defined independently of who has a
 covariate; HC1 errors, valid because each member appears once.
 
-Known sensitivity, stated rather than hidden: the choice of normalization
-population moves marginal terms across the 1.96 line (the II-over-I
-crossover is t = 2.69 with subsample scaling, t = 1.57 with full-population
-scaling; the IVc and V/VI deficits move the other way). Nothing significant
-under BOTH normalizations is reported as fragile; the crossover is reported
-as directionally persistent, not established.
+Known sensitivity, and its resolution: the choice of normalization
+population moved the II-over-I crossover across the 1.96 line (t = 2.69
+subsample-scaled, t = 1.57 full-population-scaled). The resolution is the
+estimator that needs no normalization: WITHIN-CHAMBER contrasts,
+cohort-adjusted, combined by inverse-variance meta-analysis — each
+legislature is its own control, so cross-chamber scaling never enters. That
+gives +0.59 per 1,000 (z = 3.50), positive in 9/12 chambers and
+individually significant in each of the three powered to detect it. The
+full-population z regression's null is explained, not adjudicated away: 1/sd
+scaling down-weights the large low-variance chambers where the contrast is
+best measured. Standing rule adopted from this episode (Matthew's catch, the
+second of the section): when a contrast's significance depends on a
+cross-chamber scaling choice, the within-chamber meta-analysis is the
+canonical estimator.
 
 Limit of the career-level design: no year fixed effects are possible, so
 the birth-decade term absorbs era of service and is never quoted from this
