@@ -1601,6 +1601,60 @@ upper bound, and excluded from the Fisher combination.
 
 ---
 
+
+## 6.2 Member-level covariate estimation (class, education, origin)
+
+The §4.6a estimations went through three specifications, in order, each
+adopted because the previous one failed a committed check. All three remain
+in the repository because the sequence is itself a methods finding.
+
+**1. Member-year, word-weighted, unclustered** (`covariate_study.py`,
+`formation_window.py`). Inflated every standing effect — t = 3–4 on the
+provinces — by treating a member's years as independent draws. Third
+occurrence of this failure class in the study.
+
+**2. Member-year, word-weighted, cluster-robust by member**
+(`panel_estimation.py`; Liang–Zeger, small-sample adjusted). Same point
+estimates, 2–3× the errors. Per-term t-tests then under-read the result:
+six individually insignificant class terms are JOINTLY significant (Wald
+p = 0.029 pooled, p ≈ 0.078 in each of two independent panels). The joint
+Wald is reported beside every per-term table from here on; per-term reading
+of a distributed pattern caused a wrong disconfirmation that stood for a
+day (Appendix B of the write-up records both the inflation and the
+over-correction).
+
+**3. Legislator-level, equal weight, normalized within chamber**
+(`member_level_estimation.py`) — the CANONICAL specification for class,
+education and origin. One observation per legislator (career rate over all
+words, ≥8,000); equal weights, because word-weighting let a few verbose
+long-servers dominate (one provincial coefficient fell from +0.91 to +0.01σ
+on the change); register z-scored within each legislature against the
+member-level mean and sd of its FULL population — the full population, not
+the covariate subsample, so the scale is defined independently of who has a
+covariate; HC1 errors, valid because each member appears once.
+
+Known sensitivity, stated rather than hidden: the choice of normalization
+population moves marginal terms across the 1.96 line (the II-over-I
+crossover is t = 2.69 with subsample scaling, t = 1.57 with full-population
+scaling; the IVc and V/VI deficits move the other way). Nothing significant
+under BOTH normalizations is reported as fragile; the crossover is reported
+as directionally persistent, not established.
+
+Limit of the career-level design: no year fixed effects are possible, so
+the birth-decade term absorbs era of service and is never quoted from this
+specification. Cohort is quoted only from the member-year panel with year
+FE (+1.01/decade, t = 10.96).
+
+Raw-pooled cross-chamber estimation is retained in `panel_estimation.py`
+output as the cautionary comparator: chambers with near-zero covariate
+variance but large populations (the US, where nearly every member holds a
+degree) drown within-chamber effects — this alone reversed the sign of the
+education ladder before normalization.
+
+Origin (parental class via the same double-blind EGP coding, Erikson
+dominance across coded parents) is null under every specification: joint
+p = 0.53–0.59, n = 704. Reported as a robust null.
+
 ## 7. Quality measurement
 
 Instrument: the **Discourse Quality Index** (Steenbergen, Bächtiger,

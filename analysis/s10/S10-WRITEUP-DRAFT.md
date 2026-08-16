@@ -664,31 +664,52 @@ above class I, VIIab −0.51 below — with nothing individually significant
 except class III, which is significant with the OPPOSITE sign to its
 provincial estimate, i.e. noise behaving like noise.
 
-Pooled across all thirteen chambers (22,639 class-coded member-years, 3,413
-member clusters), the accurate statement has three parts:
+The final specification — one observation per legislator at equal weight,
+register z-scored within each legislature against its full member
+population, HC1 errors, joint Wald beside every table
+(`member_level_estimation.py`; the reasoning for each choice is in its
+docstring) — settles the section:
 
-**Class matters, as a joint hypothesis.** The Wald test that all six class
-terms are zero rejects at **p = 0.029** pooled, with each independent panel
-alone at p ≈ 0.078 — six individually noisy coefficients carrying a real
-pattern between them. The qualitative structure replicates across the two
-panels: **II and IVab above class I, VIIab below, in both** (≈1.6% under
-independent sign-flips), and the manual-class deficit stands on its own:
-**VIIab −0.785, t = −1.99**. Magnitudes are roughly HALF the provincial
-estimates, and the middle ranks cannot be ordered — III swings from last to
-first between panels on its small cells.
+**Class is a monotone gradient, strongest at the bottom.** At member level
+(n = 3,413, joint **p = 0.0001**): VIIab **−0.306σ (t = −3.12)**, V/VI
+−0.184σ (t = −2.32), IVc −0.184σ (t = −1.97), IVab −0.078, class I baseline,
+II +0.054 above it. The panel specification agrees jointly (Wald p = 0.029
+pooled, p ≈ 0.078 in each independent panel). Manual and farm members use
+distinctly less of the register than the service classes, about a third of a
+within-chamber standard deviation at the extreme.
 
-**Education is not it.** The provincial ladder (+0.32/rung, t = 2.96
-unclustered) falls to t = 0.78 clustered and runs wrong-signed on the tier-1
-chambers (−0.13, t = −1.4); a professional degree is −0.27 (t = −1.1)
-pooled. Parental class origin, first measured here on 704 members: null
-(t ≈ 0.2). The education and origin stories are dead on this evidence; the
-class effect is occupational, not educational.
+**The II-over-I crossover is directionally persistent, not established.**
+Class II sits above class I in every specification tried — provincial,
+tier-1, pooled, raw member-level (+0.571, t = 3.73 with chamber FE) — but at
+z-scored member level it is t = 1.57, and its significance moves with the
+normalization choice. Labov's crossover remains the right description of the
+SHAPE if it is real; the evidence here does not establish it. The exact
+location of any peak is not a claim this study makes: under a
+chase-and-flight cycle the peak SHOULD migrate downward as the top tier's
+abandonment propagates, so peak location is a hypothesis about dynamics, not
+a fixed structural parameter (an era-resolved peak test is future work).
 
-**Cohort towers over all of it.** Birth decade is **+1.01 (t = 10.96)**
-pooled and +0.88 to +1.36 at t ≥ 6.9 in every split and specification — three
-countries, 22 chambers, untouched by any covariate this study has measured.
-For scale: the entire significant class structure spans about 1.3 per 1,000
-(IVab to VIIab); cohort covers that span in thirteen years of birth date.
+**Education matters, with the same top-end structure.** Joint p = 0.0002 at
+member level; the academic ladder runs **+0.065σ/rung (t = 3.42)**; a
+professional degree sits below bachelor's in every specification (−0.449,
+t = −2.22 raw; −0.065, ns, z-scored). The earlier "education is dead"
+verdict was an artifact of raw cross-chamber pooling, where the US chambers
+— nearly universal degree-holding, so almost no covariate variance — swamp
+the estimate; putting chambers on their own scales recovers it.
+
+**Origin is null, and robustly so.** Parental class, 704 members, tested
+under both the panel and member-level specifications: joint p = 0.53–0.59,
+group means within 0.1σ of each other. **The register tracks class
+destination, not class origin** — what a legislator did, not where they came
+from — which favours occupational practice over inherited-status accounts of
+the gradient, stated as interpretation.
+
+**Cohort towers over all of it.** Birth decade is **+1.01 (t = 10.96)** in
+the member-year panel with year fixed effects — the citable figure, since
+career-level specifications absorb era of service into the cohort term — and
+survives every covariate this study has measured, in three countries and 22
+chambers. For scale: the whole class gradient spans ~0.36σ; cohort covers
+that in about thirteen years of birth date.
 
 #### Class: the provincial estimates (retained as the discovery record; see the panel result above)
 
