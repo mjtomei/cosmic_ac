@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
-"""OLMo-2 post-training ladder: WHICH stage adds the assistant register?
+"""
+2026-08-16 NOTE (M9): the per-transition estimator below carries the M3
+defect per stage — controls drawn from the earlier checkpoint's vocabulary
+only, bucketed on the ratio's own denominator — giving stage pedestals of
++0.45/+0.56/+0.31 on null word lists. The `report` values (+0.76/+0.86/+0.37)
+are therefore SUPERSEDED; corrected stage values (exact stratified route,
+agreeing with two other corrections in REVIEW-2026-08-11 M9) are
+SFT +0.32, DPO +0.27, RLVR +0.06 (CI straddling zero — the placebo behaves).
+SFT vs DPO: indistinguishable (paired bootstrap CI [-0.31,+0.15]). The
+symmetric-pool rebuild in the style of rlhf_pref_analyze.py is the pending
+proper fix; until then quote the corrected values, never `report`'s.
+OLMo-2 post-training ladder: WHICH stage adds the assistant register?
 
 WHY THIS EXPERIMENT EXISTS
 

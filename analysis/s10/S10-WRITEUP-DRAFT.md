@@ -921,19 +921,32 @@ contrast.
 
 ### 4.7 The register is a post-training artifact
 
-OLMo-2 ladder, same prompts across the post-training stages:
+OLMo-2 ladder, same prompts across the post-training stages. The stage values
+are bias-corrected: the estimator as first shipped carried a per-transition
+pedestal (the M3 defect, per stage — null calibration on random word lists
+returns +0.45/+0.56/+0.31, largest at DPO only because DPO's generations are
+longest), and three independent corrected routes agree on the picture below
+(exact stratified estimator shown; audit values in the 2026-08-11 review, M9):
 
-| stage | register shift |
-|---|---|
-| SFT | +0.76 † |
-| DPO | **+0.86** † |
-| RLVR | +0.37 † |
+| stage | register shift (corrected) | shipped, superseded |
+|---|---|---|
+| SFT | +0.32 | +0.76 |
+| DPO | +0.27 | +0.86 |
+| RLVR | **+0.06** (CI straddles 0) | +0.37 |
 
 Pooled alignment effect **+0.387** on the scaled generation — three model
-families, 1,600 prompt pairs each, 1.19M base words.[^r47] The shift is largest
-at the preference stage, which is what makes §4.5 more than a coincidence of
-direction: the thing RLHF selects for is something humans were already drifting
-toward.
+families, 1,600 prompt pairs each, 1.19M base words.[^r47] SFT and DPO
+contribute **indistinguishably** (paired bootstrap over 800 shared prompts:
+DPO − SFT = −0.08, 95% CI [−0.31, +0.15]); no stage ordering is supported, and
+an earlier reading of the preference stage as the largest contributor — with
+the RLHF-selects-what-humans-drift-toward interpretation built on it — was the
+pedestal, not the data, and is withdrawn (Appendix B). The correction
+STRENGTHENS the arm's design claim: **RLVR was the pre-registered placebo** —
+tuning on verifiable math/code correctness should not install a speech
+register — and corrected it behaves exactly as the placebo it was designed to
+be, where the shipped +0.37 (p = 0.000) had it failing its own manipulation
+check. Post-training as a whole installs the register; base→instruct
+end-to-end (+1.24) is untouched.
 
 **Quote the well-measured figure, not the pooled one.** The same run reports
 +0.6311 pooled over every style word present and +0.3872 restricted to the 82
@@ -1905,6 +1918,13 @@ exposure as we can measure it.** Items 9–12 say the same of composition at the
 climbs. What does carry is measured on individuals, not on chambers.
 
 ## Appendix B — Superseded analyses
+
+0a. **§4.7's stage ordering** — "the shift is largest at the preference
+   stage," and the sycophancy-adjacent reading tying it to §4.5, rested on a
+   per-transition estimator pedestal (M9; the M3 defect per stage). Corrected
+   by three agreeing estimator routes: SFT ≈ DPO, RLVR ≈ 0. The §4.5
+   connection returns to a coincidence of direction; the RLVR placebo now
+   passes its own manipulation check.
 
 0. **§4.6a, twice** — first written as "standing predicts the register
    downward" at t = 3–4 (unclustered provincial estimates, the study's third
