@@ -2251,7 +2251,9 @@ the work and are not substitutable by spending more with the detector vendor.
 Anyone holding all three can repeat the study; a Pangram subscription alone
 reproduces the prevalence arm and nothing else.
 
-## Appendix D — The judge-leakage control (documented, run, not adopted)
+## Appendix D — Robustness and sensitivity checks
+
+### D.1 The judge-leakage control (documented, run, not adopted)
 
 The grading rubric scores an `ai_guess` alongside the seven DQI dimensions,
 and `README.md`/`RUNME.md` describe a test of it: *if the quality differences
