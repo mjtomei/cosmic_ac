@@ -27,8 +27,12 @@ stated rather than discovered. Two consequences follow from it:
   windows so it changes the frame and nothing else.
 
 The backfill completed 2026-08-13 makes 2020 to mid-2022 available for every
-chamber. Using it is worth doing, but for all chambers at once, which is why it
-is a separate item rather than something a per-chamber fix reaches for.
+chamber, so a recent-control redraw is possible. It is DELIBERATELY NOT DONE
+(Matthew, 2026-08-16): five chambers (CA-FED, IE, UK, US-House, US-Senate)
+already carry 2020-2022 controls, cross-window comparability is tested by
+transcript_regime_check.py plus 223 clean near-window controls, and the
+time-stability of specificity is accepted rather than treated as a live
+concern. See REVIEW-2026-08-11.md P2.
 
 Usage: python sample_years.py [--csv]
 """
