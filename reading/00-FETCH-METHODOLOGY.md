@@ -54,6 +54,20 @@ mode or technique is proven.
    every ID must be verified, and say "confirm title on screen before
    downloading."
 
+## Version doctrine
+
+**Any legitimate version is a success.** Working papers, accepted manuscripts,
+and preprints carrying the work's substance count as FETCHED — never report
+located-needs-human for a paywalled VoR while an earlier version is obtainable
+(the Gross & Fosse WP, the NBER copies of AER/QJE papers, and the LSE
+Alonso-Matouschek postprint are all working copies of record here). Prefer the
+VoR when both are reachable; when only an earlier version lands, record exactly
+what it is and the published citation, and **never cite one version's
+pagination or wording as another's** (the Hsieh-Moretti 8.9%-vs-3.7% and the
+Beheim "determines/determined" title drift are the standing cautionary
+examples). The original stays on the acquisition list only when it is
+load-bearing per the de-risk-not-replace rule.
+
 ## Verification (unchanged, mandatory)
 
 %PDF magic + early-page title/author match against the resolved identity;

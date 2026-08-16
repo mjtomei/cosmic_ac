@@ -30,7 +30,13 @@ the exact URL and action instead); never construct/pattern-guess IDs — resolve
 them; verify every saved file (%PDF magic + early-page title/author match
 against the RESOLVED identity) and record the VERSION (VoR / accepted /
 preprint / WP / rendered-HTML with source+date stamped on p.1); filenames tell
-the truth about what the file actually is.`
+the truth about what the file actually is. ANY LEGITIMATE VERSION IS A SUCCESS:
+a working paper, accepted manuscript, or preprint carrying the work's substance
+counts as fetched — do not report located_needs_human for a paywalled VoR when
+an earlier version is obtainable; fetch the version, record what it is, and
+note the published citation so pagination is never cross-attributed. Prefer VoR
+when both are reachable (the merge stage picks the best), but never treat
+version preference as a reason to come home empty.`
 
 // The complete source ladder appears in EVERY attempt; only order and emphasis
 // vary, so the three attempts are independent redundant passes, not slices.

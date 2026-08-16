@@ -92,7 +92,10 @@ technical claim.
 
 ## Two findings this directory exists to hold
 
-**The absence, now NARROWED (correction, 2026-08-06).** The original finding —
+**[SUPERSEDED 2026-08-16 — see the consolidated section: the technical bridge
+now EXISTS ON DISK (Bessen 2020, Akcigit–Ates, Akcigit–Baslandze–Lotti,
+Galasso–Schankerman) and the absence framing should not be used at all;
+retained below as history.]** **The absence, now NARROWED (correction, 2026-08-06).** The original finding —
 nothing published bridges policy-capture economics to technical under-provision
 of shared computing infrastructure — was overstated, and the citation-graph pass
 (below) found the planks the keyword sweeps missed: **Holmes & Schmitz 1995**
@@ -240,7 +243,7 @@ Ranked by what the *path* most needs:
 Further gaps inferred from the shape of what is here:
 
 - **No supply-side account of who pays.** Frischmann brackets it explicitly (p. 1023); Teles 2015 offers Walker's third-party support with its own failure mode; Gutiérrez-Philippon 2018 offers ex-ante delegation to a neutral rule-setter. That is three fragments and no anchor. The paper's §8 financing/underwriter problem currently has no leg to stand on in this directory.
-- **No published bridge from policy-capture economics to technical under-provision.** This is the directory's stated *confirmed absence* and the path confirms it: Frischmann is the only work that reasons about technical infrastructure at all, and he does not touch capture; Shapiro is the only work in the paper's own industry, and he does not touch counsel institutions. The bridge remains to be assembled, never claimed.
+- **No published bridge from policy-capture economics to technical under-provision.** *(SUPERSEDED 2026-08-16 — the bridge now exists on disk; see the consolidated section.)* This was the directory's stated *confirmed absence* and the 2026-08-05 path confirmed it: Frischmann is the only work that reasons about technical infrastructure at all, and he does not touch capture; Shapiro is the only work in the paper's own industry, and he does not touch counsel institutions. The bridge remains to be assembled, never claimed.
 - **Nothing measures analytic quality, only analytic headcount.** Yackee (entry 11) explicitly leaves Bagley's quality channel untested, and Brookings counts staff, not output. The decay claim's strongest form — capacity fell in quality, not volume — has no evidence on disk in either direction.
 
 ---

@@ -166,15 +166,16 @@ scale.)*
 17. ★★★ **mises-1920-economic-calculation.pdf** — official Mises Institute edition of
     the 1920 essay (Adler transl.; original pages 86–121). No prices for
     producer goods → no rational calculation. The debate's opening move.
-17b. ★★★ **lange-taylor-1938-economic-theory-of-socialism.pdf** — Lange &
+17b. ★ (background/archive — **retired 2026-08-16**, superseded by 17c/17d, the
+    RES originals with clean text) **lange-taylor-1938-economic-theory-of-socialism.pdf** — Lange &
     Taylor, *On the Economic Theory of Socialism*, ed. Lippincott, Univ. of
     Minnesota Press 1938 — the book version of the two *Review of Economic
     Studies* articles (4(1):53–71, 1936; 4(2):123–142, 1937), plus Taylor's
     1929 AEA address and Lippincott's introduction. The trial-and-error Central
     Planning Board as Walrasian auctioneer: the position everything in the
-    "formal descendants" sections was built to test. **Cite the RES articles for
-    the argument — pagination differs here; this is an archive.org DLI scan,
-    image-only and of unclear rights, so treat it as a reading copy.**
+    "formal descendants" sections was built to test. **The RES originals are now on disk (17c/17d) — cite and quote
+    those; this book is a *revised* text (attribute nothing across editions), an
+    image-only archive.org DLI scan of unclear rights. Reading copy only.**
 18. ★★★ **hayek-1945-use-of-knowledge.pdf** — AER 35(4):519–530. Dispersed "knowledge
     of the particular circumstances of time and place"; prices as the economizing
     telecommunication system. The paper the criterion is named for — note his
@@ -244,7 +245,9 @@ of which talks to the calculation debate. These are the papers to build on.)*
     — Radner, *Econometrica* 61(5):1109–1146. The founding paper of the
     real-time-processing line: organizations as networks of finite-capacity
     processors with delay as a first-class cost. Read before #45–46, which
-    extend it. (Image-only scan.)
+    extend it. (**File replaced 2026-08-16**: the JPASS publisher copy with a
+    clean text layer overwrote the July image-only scan — this entry and the
+    2026-08-16 entry below describe the same, single file.)
 45. ★★★ **vanzandt-1999-realtime-decentralized-information-processing.pdf** —
     Van Zandt, *RES* 66(4):633–658. Organizations as finite-capacity processors
     where aggregation *takes time*, so decisions run on data of heterogeneous

@@ -336,10 +336,8 @@ Cluster sizes under the directory's five-cluster scheme: 1 doctrine/persona —
 
 ### (b) The ranking, grouped by cluster (⚠ = genuine objection)
 
-† = the entry's `cluster` field in `00-RANKINGS.json` still carries its legacy
-number from the pre-split three-cluster pass; the cluster shown here is the
-current five-cluster assignment. The JSON was not rewritten — read the table,
-not the field, for cluster membership.
+† = this entry's `cluster` field predated the five-cluster scheme; **reconciled
+in `00-RANKINGS.json` on 2026-08-16** — table and JSON now agree.
 
 #### Cluster 1 — Doctrine and persona (20)
 
@@ -411,7 +409,7 @@ not the field, for cluster membership.
 | ★★★ ⚠ | `ferraz-finan-2011-electoral-accountability.pdf` | Brazilian mayors barred from re-election misappropriate 27% more — and the gap vanishes where local media or prosecutors exist. |
 | ★★★ | `howell-porter-wood-2020-presidential-performances.pdf`† | A validated 22-item "presidentialism" scale: how far the occupant meets the office's expectations, empirically distinct from approval. |
 | ★★ ⚠ | `besley-case-1995-term-limits.pdf` | Term-limited governors set different policy — the officeholder behaves as an individual agent, not a collective one. |
-| ★★ | `frantz-2020-personalization-measure.pdf` | A year-by-year index of the individual capturing the office, and the repression it predicts. |
+| ★★ | `frantz-2020-personalization-power-repression-preprint.pdf` | A year-by-year index of the individual capturing the office, and the repression it predicts. |
 | ★★ | `geddes-2014-autocratic-breakdown.pdf` | 280 autocratic regimes defined as rules persisting through changes of leader — the office/occupant distinction operationalised. |
 | ★★ | `moe-howell-1999-unilateral-action-theory.pdf`† | Presidential power relocated from the man to the office: the Constitution as an incomplete contract. |
 
@@ -427,7 +425,7 @@ not the field, for cluster membership.
 | ★★ ⚠ | `hadfield-2026-democratic-matrix-normative-competence-webrender.pdf`† | AI agents will be actors in the normative order regardless of intent; rule-encoding alignment cannot work on contract-theoretic grounds. |
 | ★★ | `hadfield-weingast-2012-what-is-law-coordination-model-usc-wp.pdf`† | Law's characteristic form derived from what decentralized coordination requires. |
 | ★★ ⚠ | `logg-2019-algorithm-appreciation.pdf` | Lay people appreciate algorithmic advice; the professionals who staff offices discount it, and lose accuracy for doing so. |
-| ★★ ⚠ | `mashaw-2018-reasoned-administration-excerpt.pdf` | Administration can legitimate itself only by giving reasons — and its reason-giving answers truth while leaving justice and authenticity untouched. |
+| ★★ ⚠ | `mashaw-2001-small-things-like-reasons-fordham.pdf` | Administration can legitimate itself only by giving reasons — and its reason-giving answers truth while leaving justice and authenticity untouched. |
 | ★★ | `schauer-1995-giving-reasons.pdf`† | Giving a reason commits the giver to a generality beyond the instant case. |
 
 ### (c) The revised reading path
@@ -662,7 +660,7 @@ subsumed by the party the political agent would be "a collective rather than an
 individual," and the data are "suggestive of incomplete party discipline." The
 leakage, detected in state fiscal data.
 
-**24. `frantz-2020-personalization-measure.pdf` ★★** — **NEW.** The individual
+**24. `frantz-2020-personalization-power-repression-preprint.pdf` ★★** — **NEW.** The individual
 leaking into the instantiation, given an index and a time series (China 0 in
 1949, peak 1968, falling after Mao), with repression as the measured cost. The
 mechanism paragraph is the payload: professionalised officials with "an identity
@@ -721,7 +719,7 @@ framing.
 
 #### Stage VI — Machine counsel: what showing the work would have to mean
 
-**29. `mashaw-2018-reasoned-administration-excerpt.pdf` ★★ ⚠** — **NEW, and read
+**29. `mashaw-2001-small-things-like-reasons-fordham.pdf` ★★ ⚠** — **NEW, and read
 before Stack, as Stack himself does.** The structural claim: legislatures
 legitimate by will, courts by their capacity to settle, and only administration
 has neither recourse — "The President made me do it" *delegitimates*
@@ -842,10 +840,12 @@ keep them as the OA-quotable forms, drop them from the path.
   "in the way demons are said to assume possession of souls." The tulpa claim is
   about where judgment is formed, not who drives the body, so the concession is
   free — but only if made first.
-- **Housekeeping carried forward from the batch:** two filenames actively
-  mislead — `mashaw-2018-reasoned-administration-excerpt.pdf` is the 2001
-  *Fordham* lecture, and `frantz-2020-personalization-measure.pdf` is not the
-  measure paper (that is Geddes, Wright & Frantz 2018). `ferraz-finan-2011` and
+- **Housekeeping carried forward from the batch (RESOLVED 2026-08-16):** the two
+  misleading filenames were renamed to tell the truth —
+  `mashaw-2001-small-things-like-reasons-fordham.pdf` (was mashaw-2018-…-excerpt)
+  and `frantz-2020-personalization-power-repression-preprint.pdf` (was
+  …-personalization-measure; the measurement paper proper is Geddes, Wright &
+  Frantz 2018, still un-fetched). JSON paths updated. `ferraz-finan-2011` and
   `besley-case-1995` are both NBER preprints, not the AER/QJE versions their
   filenames imply. Image-only, no text layer: Copp 2006, Ulrich 1981,
   Besley-Case, Kantorowicz 1951 (landscape two-up spreads), the KTB sample
