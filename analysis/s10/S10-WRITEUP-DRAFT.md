@@ -215,14 +215,19 @@ partly a measurement of our packer; a rate over words is invariant to how the
 text was cut up.
 
 *Weighted by AI fraction, because a flagged segment is not uniformly flagged.*
-A Mixed verdict is Pangram reporting that part of the segment is human, so
-counting all of its words as machine over-states the rate by a third —
-**12.03% against 9.03%**. Every flagged segment is weighted by its own AI
-share: recorded directly for the API-scored rows, and read off the dashboard
-result by result for all 132 Mixed segments the API did not cover. Mixed
-segments average **0.435** machine (n=132, sd 0.219, range 0.11–1.00); AI
-verdicts are effectively a constant at 0.9965. Human verdicts are 0.0 in every
-one of the 1,246 recorded cases.[^r42f]
+The flagged segments are not one kind: of the 364 flagged prevalence segments,
+**217 are full AI verdicts and 147 (40%) are Mixed** — Pangram reporting that
+part of the segment is human. Counting a Mixed segment's words as fully machine
+over-states the rate by a third — **12.03% against 9.03%** — so the split is
+not cosmetic, and folding Mixed in at full weight (as a naive AI+Mixed count
+would) is the single largest upward bias in the headline. Every flagged segment
+is therefore weighted by its own AI share: recorded directly for the API-scored
+rows, and read off the dashboard result by result for all 132 Mixed segments
+the API did not cover. Those harvested Mixed segments average **0.435** machine
+(n=132, sd 0.219, range 0.11–1.00); AI verdicts are effectively a constant at
+0.9965. Human verdicts are 0.0 in every one of the 1,246 recorded cases. The
+9.03% headline is thus already the split-corrected figure, not an AI-or-Mixed
+count.[^r42f]
 
 | chamber | rate | 95% CI | | chamber | rate | 95% CI |
 |---|---|---|---|---|---|---|
