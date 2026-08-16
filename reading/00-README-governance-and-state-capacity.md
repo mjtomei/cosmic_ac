@@ -513,3 +513,18 @@ L. Rev., and JOP are IN; *Daedalus* is genuinely NOT** (Price's article needs
 the book or ILL). The California State Library card is **not** open to all
 residents (state employees etc. — dead end). SJPL licenses no JSTOR either,
 but holds **Olson 1982 in print** (338.9001 Olson).
+
+
+## JPASS downloads landed (2026-08-16)
+
+**`schick-1973-death-in-the-bureaucracy.pdf` — ★★★, and CLUSTER 2 IS NO LONGER
+EMPTY.** The PPBS obituary is on disk: the analytic machinery installed
+government-wide in 1965 and dead by 1971, pronounced by the field's chronicler
+in the exact document this directory was opened to hold. The
+installed-and-abandoned arc is now documented at every stage: JEC compendium
+(the machinery working, 1969), Schick 1970 (the Budget Bureau dying), Schick
+1973 (the method's death certificate), GAO 1997 (the federal retrospective).
+Also landed: `quirk-1988-defense-politics-of-ideas.pdf` (★★, the
+Derthick-Quirk thesis defended against the Stigler-school critique by its
+author). Remaining JSTOR wants for next month's quota: Schick 1966 (free IA
+alternative exists) and Wildavsky 1966 (1967 version on disk) — both optional.

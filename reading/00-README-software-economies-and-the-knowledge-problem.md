@@ -2,11 +2,11 @@
 
 Downloaded from arXiv / author pages / institutional repositories / NBER /
 nobelprize.org / mises.org / course mirrors of classics. Two clusters behind the
-**Cosmic AC** paper (this repository): **(A)** the economics of software as
+**Cosmic AC** paper (`~/performance_commons`): **(A)** the economics of software as
 a public good — the literature §2.1 of the current paper is built on, and the
 "trend with a forty-year record" it extends; **(B)** the socialist-calculation
 debate and its formal descendants — the literature behind the planned **Hayek
-criterion** section (outline V.5 in `outline-cosmic-ac.md`):
+criterion** section (outline V.5 in `~/performance_commons/outline-cosmic-ac.md`):
 what an intelligence would need — bandwidth, computation, truthful elicitation,
 drift-tracking — to do what Hayek said no planner could. The headline from the
 verification pass: **no prior work assembles the four-part criterion; the drift
@@ -408,18 +408,6 @@ in their entries. What remains is only versions-of-record and books.
 
 ## Not downloaded — books
 
-★★★ **Olson 1982** (*The Rise and Decline of Nations*) — **priority, added
-2026-08-05**: distributional coalitions accumulate in stable, successful
-societies and retard adoption of new technology and reallocation of resources.
-The paper cites Olson 1965 for free-riding; 1982 supplies the other half, and it
-is the selection-level objection to the counsel argument (success degrades
-decision quality). Yale reissue DOIs 10.12987/9780300157673, 10.12987/9780300268904.
-★★★ **Olson 1996**, "Big Bills Left on the Sidewalk: Why Some Nations are Rich,
-and Others Poor," *JEP* 10(2):3–24, doi:10.1257/jep.10.2.3 — **not a book; wanted
-and not yet retrieved.** Large well-understood gains sit unexploited because
-institutions do not organise to capture them: this paper's thesis in economics
-language. AEA direct and Wayback both blocked this pass; JEP is normally free at
-aeaweb.org, so retry in a browser.
 ★★ **Olson 1965** (*Logic of Collective Action*); ★★ **Hess & Ostrom 2007**
 (*Understanding Knowledge as a Commons* — the eScholarship "PDF" is a 4-page
 review, not the book); ★ **Shapiro & Varian 1999** (*Information Rules*); ★ **Boehm
@@ -461,7 +449,7 @@ sentence level.*
 
 *Provenance: handles verified by research agents 2026-07-28 (Crossref/publisher/
 primary-PDF checks; the novelty sweep and per-component criterion map are in
-`outline-cosmic-ac.md` §V.5). Version-number traps found in
+`~/performance_commons/outline-cosmic-ac.md` §V.5). Version-number traps found in
 verification: AI Economist is 12% in Science Advances, 16% only on arXiv; Mises
 1920 is pp. 86–121 of Archiv für Sozialwissenschaft (singular); Chen-Deng FOCS
 2006 is pp. 261–272; the 175 ZB IDC figure belongs to the 2018 "Digitization of
@@ -469,3 +457,14 @@ the World" paper, not 2017's "Data Age 2025"; Fernández-Villaverde's "Simple
 Rules… with AI" was never journal-published. Substituted versions (WP/preprint/
 chapter-extract) are flagged per entry above — double-check pagination against
 the journal of record before anything goes into a doc.*
+
+
+## Paywalled list cleared (2026-08-16, JPASS + LSE eprints)
+
+The three items flagged "for your library run" in July are on disk:
+**Lange 1936 + 1937** (both parts of "On the Economic Theory of Socialism,"
+publisher scans — the canonical market-socialism side of the calculation
+debate, wanted since the directory opened) and **Radner 1993**, "The
+Organization of Decentralized Information Processing" (*Econometrica* 61(5) —
+the foundational model for the drift/dynamics section; no open copy existed
+anywhere). Not yet ranked into the July tiers - rank on next pass.

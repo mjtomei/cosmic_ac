@@ -289,3 +289,18 @@ Matthew's one click on the RG link from any home network remains the route.
 (records S981C13282941, S981C13282718); Davies (658 DAVIES) and Runciman
 (322.3 RUNCIMA) are SCCLD print holds; Foucault print likewise. IA lending is
 dead for all eleven buy-list books (print-disabled only, post-Hachette).
+
+
+## JPASS downloads landed (2026-08-16)
+
+Four arrivals close the two-bodies and moral-agency wants: **Rogin 1979**
+(★★★ — Kantorowicz applied to the presidency, the tulpa thesis's missing
+article, original form), **Kahn 2009** (★★★ — the doctrine as an *authored,
+maintained* legal-poetic artifact, the closest scholarly kin to the tulpa
+thesis; read with Shortall's genealogy-is-not-identity caution),
+**Schauer 1995** (★★ — reason-giving as commitment to generality, the
+legal-theory depth behind Lazar), and **Velasquez 1983** (★★ ⚠ — the contest
+now on disk in both its early and mature forms). The persona/two-bodies
+lineage — Maitland, Hobbes, Dartmouth, Kantorowicz (intro + Shortall + hoopla
+ebook), Rogin, Kahn, Lefort, Schmitt, Morgan-via-Barnett, Santner symposium —
+is complete enough to write from.

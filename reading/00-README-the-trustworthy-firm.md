@@ -1,7 +1,7 @@
 # The Trustworthy Firm — reading list
 
 The cluster behind **V.3b** of the Cosmic AC outline
-(`outline-cosmic-ac.md`): deploying an intelligence that
+(`~/performance_commons/outline-cosmic-ac.md`): deploying an intelligence that
 knows a human's preferences (a time series of utility functions) better than the
 human — without eroding freedom. The vehicle: a firm that profits by correcting
 the *internality* (the human's misalignment with their own preferences), in
@@ -215,3 +215,13 @@ agarwal-2023; the path now ends honestly on the two cautions):
    superseded here by aguilera-bermejo-capape-cunat-2020 (Matthew's find —
    the same Norwegian-fund story as a natural experiment).
 
+
+
+## Broken-handle entry resolved and fetched (2026-08-16)
+
+The failed-fetch entry `ricardo-2008-optimal` is **Alonso & Matouschek,
+"Optimal Delegation," *RESTUD* 75(1):259-293 (2008)** — on disk as the LSE
+eprints accepted version (green OA; no JSTOR slot needed). The formal theory
+of when a principal cedes decision rights to a better-informed agent: V.3b's
+question, and the offloading-in-proportion-to-competence answer, as a theorem.
+Not yet ranked into the tiers - rank on next pass.
