@@ -937,10 +937,15 @@ longest), and three independent corrected routes agree on the picture below
 Pooled alignment effect **+0.387** on the scaled generation — three model
 families, 1,600 prompt pairs each, 1.19M base words.[^r47] SFT and DPO
 contribute **indistinguishably** (paired bootstrap over 800 shared prompts:
-DPO − SFT = −0.08, 95% CI [−0.31, +0.15]); no stage ordering is supported, and
-an earlier reading of the preference stage as the largest contributor — with
-the RLHF-selects-what-humans-drift-toward interpretation built on it — was the
-pedestal, not the data, and is withdrawn (Appendix B). The correction
+DPO − SFT = −0.08, 95% CI [−0.31, +0.15]), so no stage ordering is supported —
+an earlier version leaned on "largest at the preference stage," and that
+ordering was the pedestal, not the data (Appendix B). What remains true, and
+is kept as a datapoint rather than a load-bearing link: the register is
+installed by the stages tuned toward human demonstrations and preferences, and
+not by the stage tuned toward verifiable correctness. That is consistent with
+§4.5's reading that alignment concentrates something humans already favoured —
+an association, not an identified mechanism, and the section's argument no
+longer rests on it. The correction
 STRENGTHENS the arm's design claim: **RLVR was the pre-registered placebo** —
 tuning on verifiable math/code correctness should not install a speech
 register — and corrected it behaves exactly as the placebo it was designed to
@@ -1920,10 +1925,12 @@ climbs. What does carry is measured on individuals, not on chambers.
 ## Appendix B — Superseded analyses
 
 0a. **§4.7's stage ordering** — "the shift is largest at the preference
-   stage," and the sycophancy-adjacent reading tying it to §4.5, rested on a
-   per-transition estimator pedestal (M9; the M3 defect per stage). Corrected
-   by three agreeing estimator routes: SFT ≈ DPO, RLVR ≈ 0. The §4.5
-   connection returns to a coincidence of direction; the RLVR placebo now
+   stage" rested on a per-transition estimator pedestal (M9; the M3 defect
+   per stage). Corrected by three agreeing routes: SFT ≈ DPO, RLVR ≈ 0. The
+   §4.5 connection is DE-EMPHASIZED rather than withdrawn (Matthew): the
+   preference-and-demonstration stages installing the register while the
+   correctness stage does not remains an interesting association, but the
+   text no longer relies on any stage ordering, and the RLVR placebo now
    passes its own manipulation check.
 
 0. **§4.6a, twice** — first written as "standing predicts the register
