@@ -685,13 +685,15 @@ the contrast is positive in 9 of 12 chambers, individually significant in
 each of the three with the power to detect it (UK +0.68, t = 2.48; US House
 +0.82, t = 2.10; Manitoba +2.26, t = 2.21), and the inverse-variance
 meta-analysis across chambers gives **+0.59 per 1,000, z = 3.50**. One
-regression variant (full-population z-scoring) reads null at t = 1.57; that
+regression variant (full-population z-scoring) reads +0.054σ at t = 1.57 — a
+diluted positive, not a contrary result: same sign as every other view,
+within 1.2 se of its sibling regression, short of the threshold because that
 scaling down-weights exactly the large low-variance chambers where the
-contrast is best measured — a mechanical account, and the reason the
-within-chamber view, which no scaling can touch, is the informative summary
-here. (The meta was computed after the variants disagreed; it corroborates
-the two pre-specified views that see the contrast, it does not adjudicate
-between estimators.) Teachers, nurses and journalists out-use lawyers, physicians and
+contrast is largest. Under heterogeneous per-chamber effects, differently
+weighted estimators answer differently weighted questions; no specification
+at any point estimated the contrast negative. (The within-chamber meta was
+computed after the variants diverged; it corroborates rather than
+adjudicates.) Teachers, nurses and journalists out-use lawyers, physicians and
 professors, within their own chambers, on both sides of the Atlantic —
 Labov's crossover, in this register. The exact location of any peak remains
 a non-claim: under a chase-and-flight cycle the peak SHOULD migrate downward

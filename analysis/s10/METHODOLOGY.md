@@ -1638,12 +1638,17 @@ normalized and unnormalized specifications were both specified before their
 results were seen (the normalization was Matthew's request in advance; the
 raw variant is the section's original form), and they are EQUALLY VALID
 views of the data — no rule here picks between them, and none was tested
-beyond the ones asked for. On the II-over-I contrast they disagreed: raw
-+0.571 (t = 3.73), subsample-scaled z t = 2.69, full-population-scaled z
-t = 1.57. The disagreement has a mechanical explanation, not an evidential
-one: 1/sd scaling down-weights the large low-variance chambers (UK, US
-House) where the contrast is best measured, so the third variant dilutes a
-contrast the first two see.
+beyond the ones asked for. On the II-over-I contrast: raw +0.571 (t = 3.73), subsample-scaled z
+t = 2.69, full-population-scaled z +0.054σ (t = 1.57). The third is NOT a
+contrary result — it is a diluted positive: same sign, within 1.2 se of its
+sibling regression, and a null only on the significance threshold. Its
+smaller magnitude has a mechanical account: 1/sd scaling down-weights the
+large low-variance chambers (UK, US House) where the contrast is largest,
+and with genuinely heterogeneous per-chamber effects (MB +2.3, CA-FED ≈ 0)
+differently-weighted estimators target different true averages — the ~2.3 se
+gap between the third view and the meta's magnitude is two answers to two
+weightings, not evidence against the effect. At no point did any
+specification estimate the contrast negative.
 
 A within-chamber contrast meta-analysis — each legislature its own control,
 so cross-chamber scaling never enters — gives +0.59 per 1,000 (z = 3.50),
