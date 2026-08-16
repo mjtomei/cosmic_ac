@@ -14,13 +14,16 @@ Two strata per chamber:
   prev  120 segments dated >= 2025-01-01, uniform random, no screen
         stratification, so no reweighting is needed
 
-CALIBRATION. With specificity Sp and sensitivity Se, an observed flag rate
+CALIBRATION. With specificity Sp (sensitivity is not estimated), an observed flag rate
 pi relates to true prevalence tau by Rogan-Gladen:
 
     pi = tau*Se + (1-tau)*(1-Sp)   =>   tau = (pi - (1-Sp)) / (Se - (1-Sp))
 
-When Sp = 1 this collapses to tau = pi/Se. Se is taken from the synthetic
-legislative-speech arm (D-synthetic-se), which is in-domain: AI text written
+Se is NOT estimated. With Sp = 1 (measured) and Se <= 1 necessarily,
+tau = pi/Se >= pi, so the observed flag rate is a conservative FLOOR on true
+prevalence and is what we report. (An earlier version estimated Se from a
+small synthetic arm; it was dropped as weaker than the published FNRs it
+duplicated.)
 to look like this chamber's business, not generic essays. Sp comes from that
 chamber's own control.
 
@@ -115,12 +118,6 @@ def main():
         print(f"  !! {len(bad)} rows not on Pangram 4 — excluded")
         rows = [r for r in rows if r["version"] in ("4.0", "4.0-web")]
 
-    # sensitivity, in-domain, from the synthetic legislative-speech arm
-    syn = [r for r in rows if r["stratum"] == "D-synthetic-se"]
-    se = (sum(r["pangram"] in FLAG for r in syn) / len(syn)) if syn else None
-    print(f"in-domain sensitivity Se = "
-          f"{f'{se:.3f} (n={len(syn)})' if se else 'unavailable'}\n")
-
     ch = defaultdict(lambda: defaultdict(list))
     for r in rows:
         if r["source"].startswith("expansion") and r["stratum"] in ("ctl", "prev"):
@@ -139,10 +136,8 @@ def main():
         kw, w, wr = wrate(prev)
         k, n = sum(r["pangram"] in FLAG for r in prev), len(prev)
         lo, hi = wboot(prev, seed=abs(hash(c)) % 9999)
-        tau = ""
-        if se and ctl:
-            den = se - (1 - sp)
-            tau = f"{max(0.0, (wr - (1 - sp)) / den):.1%}" if den > 0 else "n/a"
+        # Sp-only floor: with Se unestimated and <=1, tau >= wr-(1-sp).
+        tau = f"{max(0.0, wr - (1 - sp)):.1%}" if ctl else ""
         flagreg = any(r.get("regime_flag") for r in prev)
         print(f"{c:<10s} {f'{len(ctl)-fp}/{len(ctl)}':>12s} {sp:>7.3f} "
               f"{n:>7d} {wr:>8.1%} {f'[{lo:.1%}, {hi:.1%}]':>16s} "

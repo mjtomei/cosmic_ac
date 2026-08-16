@@ -116,9 +116,11 @@ to true prevalence `τ` by Rogan–Gladen:
 π = τ·Se + (1−τ)(1−Sp)      ⇒     τ = (π − (1−Sp)) / (Se − (1−Sp))
 ```
 
-When `Sp = 1` this collapses to `τ = π/Se`. `Se` is estimated in-domain from
-synthetic AI legislative speech written to imitate the chamber's own
-business, not generic essays.
+When `Sp = 1` this collapses to `τ = π/Se`. **`Se` is not estimated.** Since a
+detector's sensitivity cannot exceed 1, `τ = π/Se ≥ π`, so with `Sp = 1`
+measured (§4.1) the observed flag rate is a conservative floor on true
+prevalence — every prevalence figure below is thus conservative with respect
+to machine text the detector misses.
 
 ### 3.2 Detector, and a defect worth recording
 
@@ -170,7 +172,7 @@ pad an appendix:
 | Corpus-wide likelihood delta | triple-replicated null | no signal at corpus scale |
 | Frequency-weighted secondary | fired in 4/30 cells | indistinguishable from noise |
 | Content-word control | orthogonal to the claim | words rising elsewhere says nothing about here |
-| Mistral synthetic control corpus | deleted | replaced by in-domain synthetic Se |
+| Mistral synthetic sensitivity corpus | deleted | too few words to carry variance; sensitivity not estimated |
 
 ---
 
@@ -179,10 +181,10 @@ pad an appendix:
 ### 4.1 Calibration: 1,260 / 1,260
 
 **Zero false positives across every chamber's own pre-AI control.**
-Specificity **100.00% [99.7%, 100.0%]** (Wilson). In-domain sensitivity
-**Se = 1.000** (n=40 synthetic legislative speech), so the Rogan–Gladen
-correction is the identity and **observed rate = calibrated prevalence**.
-(`prevalence_report.py`)
+Specificity **100.00% [99.7%, 100.0%]** (Wilson). Sensitivity is not
+estimated: with `Sp = 1` and any real detector's `Se ≤ 1`, the observed flag
+rate is a **conservative floor** on true prevalence, so every §4.2 figure is
+if anything an underestimate of machine text. (`prevalence_report.py`)
 
 **New Brunswick rescore.** 658 segments, byte-identical stored text, Pangram
 3 vs Pangram 4:
@@ -191,7 +193,6 @@ correction is the identity and **observed rate = calibrated prevalence**.
 |---|---|---|
 | pre-AI control (n=60) | 60/60 | 60/60 |
 | 2020 / 2021 / 2022 | 0% flagged | 0% flagged |
-| synthetic-AI sensitivity | 100% | 100% |
 | AI + Mixed, overall | 122 | **144** |
 | exact agreement | | 92% |
 
