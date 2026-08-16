@@ -1334,10 +1334,9 @@ which it shares no segments. Named precisely because of what the verdicts
 show: **61 of the 63 graded rewrites did not clear the detector** (stage 3:
 AI 29 / Mixed 7 / Human 2; stage 4: AI 23 / Mixed 2). What is measured is the
 effect of rewriting *under an evasion instruction*, not of successful evasion
-— though the selection was by the Opus proxy, not the Pangram outcome, so the
-graded set is not conditioned on failure either (grading only the 16 genuine
-reversals would condition on the outcome at n = 16, which is why it was not
-done). Within-text pairing holds content, speaker and occasion fixed by
+— the selection was by the Opus proxy, not the Pangram outcome, so this graded
+set is not conditioned on failure. The complementary arm, graded ON the
+Pangram outcome (the successful reversals), is stage 5 below. Within-text pairing holds content, speaker and occasion fixed by
 construction, so these are the raw paired differences — the design's own
 estimand, needing no covariate. **Every dimension is null on both.**[^r49b]
 
@@ -1350,6 +1349,32 @@ estimand, needing no covariate. **Every dimension is null on both.**[^r49b]
 | respect_counterargs | +0.33 (t +1.8) | +0.12 (t +1.0) |
 | constructive | 0.00 (t 0.0) | −0.12 (t −1.8) |
 | evidence | +0.03 (t +0.4) | +0.08 (t +0.7) |
+
+**Stage 5 grades the successful evasions themselves, and finds the same
+null.** Conditioning on the outcome — the complement of stages 3/4 — every
+rewrite that reached a Human verdict (39 variants across 15 targets, one
+target's original text unavailable and dropped) was graded blind against its
+original on the same v2b rubric, two independent passes (inter-pass exact
+agreement 79–100%). No dimension moves at either level:
+
+| dimension | variant (n=35) | target (n=15) |
+|---|---|---|
+| justification | −0.14 (t −1.7) | −0.03 (t −0.2) |
+| common_good | +0.01 (t +0.3) | +0.03 (t +0.4) |
+| respect_groups | +0.04 (t +1.0) | +0.10 (t +1.2) |
+| respect_demands | −0.01 (t −0.6) | 0.00 (t 0.0) |
+| respect_counterargs | +0.11 (t +0.9) | +0.10 (t +0.4) |
+| constructive | +0.03 (t +1.0) | +0.07 (t +1.0) |
+| evidence | −0.01 (t −0.2) | +0.04 (t +0.3) |
+
+The lone lean — justification at variant level (t −1.7) — collapses on
+aggregation to targets (t −0.2), a within-target artifact of multiply-graded
+targets, not a cost. So the two arms bracket the claim: **evasion-directed
+rewriting is null (stages 3/4) and evasion-ACHIEVING rewriting is null (stage
+5).** (A note the DQI judge's own `ai_guess` adds: it rated the successful
+evaders 36/100 against 40 for the human originals — barely less AI-like — so
+the two detectors disagree on this set even as neither finds a quality
+difference. `stage5_scores.json`, `PREREG-stage5-successful-evasion.md`.)
 
 **On length, which we do not adjust away — and which does not replicate.**
 Stage 4's rewrites run about 29 words longer than their originals; stage 3's do
@@ -1644,9 +1669,10 @@ it.** Had DQI tracked authorship, it would merely be a worse detector; because
 it does not, it measures the thing anyone actually wanted to know. The paired
 evasion arms add a separate, secondary reassurance for anyone worried about
 the arms race specifically: rewriting under evasion pressure did not move any
-of the seven dimensions across 63 within-text pairs (61 of which did not in
-fact clear the detector — §4.9), so a body that measures quality directly need
-not fear that evasion pressure degrades the metric it watches.
+of the seven dimensions across 63 within-text pairs, and neither did the 39
+rewrites that actually cleared the detector when graded on their own (§4.9
+stage 5), so a body that measures quality directly need not fear that evasion
+— attempted or achieved — degrades the metric it watches.
 
 And it is now cheap in a way it has not been before. The instrument reproduces
 at or above the published human inter-coder bar across accounts and machines
