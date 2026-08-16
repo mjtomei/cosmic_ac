@@ -1305,12 +1305,21 @@ underneath sometimes says something weaker. Both numbers are therefore reported
 throughout this study, and the gap between them — half a percentage point
 pooled — changes no conclusion here.
 
-**Evasion does not cost deliberative quality.** Two paired arms, 63
-within-text pairs, blinded and interleaved, graded on the same v2b DQI rubric:
-stage 3 is 38 New Brunswick pairs, stage 4 is 25 Government Orders pairs.
-Within-text pairing holds content, speaker and occasion fixed by construction,
-so these are the raw paired differences — the design's own estimand, needing
-no covariate. **Every dimension is null on both.**[^r49b]
+**Evasion-directed rewriting does not measurably change deliberative
+quality.** Two paired arms, 63 within-text pairs, blinded and interleaved,
+graded on the same v2b DQI rubric: stage 3 is 38 New Brunswick pairs (the v3
+ladder variants), stage 4 is 25 Government Orders pairs from the **GO
+Opus-selected run** — not the GO all-31 arm of the bypass section above, with
+which it shares no segments. Named precisely because of what the verdicts
+show: **61 of the 63 graded rewrites did not clear the detector** (stage 3:
+AI 29 / Mixed 7 / Human 2; stage 4: AI 23 / Mixed 2). What is measured is the
+effect of rewriting *under an evasion instruction*, not of successful evasion
+— though the selection was by the Opus proxy, not the Pangram outcome, so the
+graded set is not conditioned on failure either (grading only the 16 genuine
+reversals would condition on the outcome at n = 16, which is why it was not
+done). Within-text pairing holds content, speaker and occasion fixed by
+construction, so these are the raw paired differences — the design's own
+estimand, needing no covariate. **Every dimension is null on both.**[^r49b]
 
 | dimension | stage 3 (n=38) | stage 4 (n=25) |
 |---|---|---|
@@ -1606,13 +1615,18 @@ If provenance is the wrong thing to spend effort on, the question is what to
 spend it on instead. The answer available from this study is: **check the work
 directly.**
 
-The case rests on the §4.9 quality null, which is usually read as bad news.
-Evasion cost nothing on any of seven DQI dimensions across 63 paired grades.
-Read as a detection result, that is a failure. Read as a substitution result it
-is the entire argument: **quality assessment is orthogonal to provenance, not a
-proxy for it.** Had DQI tracked authorship, it would merely be a worse
-detector. Because it does not, it measures the thing anyone actually wanted to
-know.
+The case rests on §4.9's primary finding, and it is independent of evasion:
+machine-assisted text grades **better-formed, not worse-engaged** on the DQI —
+so policing authorship does not protect quality, because the authorship
+detection would flag is not where the quality deficit is. That is the whole
+argument: **quality assessment is orthogonal to provenance, not a proxy for
+it.** Had DQI tracked authorship, it would merely be a worse detector; because
+it does not, it measures the thing anyone actually wanted to know. The paired
+evasion arms add a separate, secondary reassurance for anyone worried about
+the arms race specifically: rewriting under evasion pressure did not move any
+of the seven dimensions across 63 within-text pairs (61 of which did not in
+fact clear the detector — §4.9), so a body that measures quality directly need
+not fear that evasion pressure degrades the metric it watches.
 
 And it is now cheap in a way it has not been before. The instrument reproduces
 at or above the published human inter-coder bar across accounts and machines
