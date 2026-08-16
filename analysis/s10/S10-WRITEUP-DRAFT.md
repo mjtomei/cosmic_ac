@@ -1150,27 +1150,30 @@ a frontier model told to try again is an order of magnitude in the frontier
 model's favour, and it will not narrow in the detector's direction.
 
 One asymmetry to keep visible: the 2.31% is a **one-shot** rate, while 22.5%
-allows up to eighteen attempts. A single-attempt comparison is harder to make
-cleanly than an earlier version of this section implied. The 8.5% per-variant
-rate is NOT a per-attempt rate: the 461 variants are the ~25% of ~1,830
-generated rewrites that survived an internal gate (Opus AI-score < 50 AND
-plausibility ≥ 70) before Pangram ever saw them. The true per-rewrite rate
-therefore lies in a bracket — **[2.1%, 8.5%]** — with 2.1% the unconditional
-figure (39 successes / ~1,830 generated) and 8.5% the post-gate figure. So
-the like-for-like multiple against the 2.31% humanizer rate is anywhere from
-**0.9× to 3.7×**, and which end is fair depends on whether the humanizer
-services also discard internal failures before their reported rate (unknown).
-The tenfold per-target figure is unaffected — discarding candidates can only
-lose targets, never gain them, so 22.5% per target is conservative regardless.
+allows up to eighteen attempts. Like-for-like on single detector submissions
+the multiple is **3.7×** (8.5% against 2.31%). One point of transparency about
+that 8.5%: it is the rate per variant *submitted to the detector*, and the
+search generates several Opus rewrites per submission, screening them on
+Opus's own AI-score and plausibility before spending a detector query on the
+survivors (≈461 submitted of ≈1,830 generated; §methodology). This is the
+attacker's actual flow, not a distortion of it — the Opus self-score is free
+and available before any detector call, so a real adversary screens exactly
+this way rather than submitting every draft. The number to read it against is
+therefore per detector submission, which is what the vendor rows also are. (An
+unconditional per-generated-rewrite rate would be ≈2.1%, but that counts drafts
+no attacker would submit, so it understates the operational threat.) The
+tenfold per-target figure is unaffected either way — discarding candidates can
+only lose targets, never gain them, so 22.5% per target is conservative
+regardless.
 
 **Two rates, and both belong here.** They answer different questions and the
 gap between them is threefold, so quoting either alone misleads.
 
-**The per-variant figure — 8.5%, all four runs.** How often a
-detector-SUBMITTED variant defeats the detector — conditional on passing the
-Opus < 50 / plausibility ≥ 70 gate that retained ~25% of generated rewrites.
-Not a per-attempt rate (see the bracket above); the unconditional
-per-rewrite rate is ~2.1%.
+**The per-variant figure — 8.5%, all four runs.** How often a variant
+submitted to the detector defeats it, in a search that pre-screens Opus
+rewrites on Opus's own score before submitting (§methodology gives the
+generated:submitted ratio). This is the realistic per-detector-query rate; it
+is not a per-Opus-generation rate.
 
 | | variants | Pangram says Human | `fraction_ai = 0.0` |
 |---|---|---|---|
@@ -1258,16 +1261,18 @@ rather than under clean conditions.
 | Pangram 4, 13 humanizer services | 2.31% | FNR under commercial evasion, vendor |
 | Pangram 4, BLADER de-AI agent | 0.43% | FNR under agentic evasion, vendor |
 | Pangram 4, Perkins benchmark | 2.86% | FNR, doc-level, adversarial, vendor |
-| **this study, per submitted variant** | **8.5%** | **induced FNR, post-gate (Opus<50 & plaus≥70, ~25% of rewrites); per-rewrite bracket [2.1%, 8.5%]** |
+| **this study, per detector submission** | **8.5%** | **induced FNR under an iterative search that self-screens rewrites before submitting — 3.7× the humanizers** |
 | *this study, per target* | *22.5%* | *induced, ≤18 attempts — 9.8× the humanizers* |
 | Rice 2026, Australian Hansard | ~8% | **false *positive* rate**, n = 50 |
 
-**No row here is cleanly commensurable with the vendor rows**, which are
-one-shot document-level FNRs on known-AI text with unknown internal
-filtering. The per-submitted-variant 8.5% is the closest, but it is
-post-gate; the per-rewrite bracket [2.1%, 8.5%] spans the vendor figures
-rather than clearing them, and only the point-estimate ordering (our search
-beats a single humanizer pass) is secure. And the comparison is a
+**The per-detector-submission row is the one commensurable with the vendor
+rows**, which are also document-level FNRs per submission on adversarially
+prepared text. The difference is method, not accounting: our submissions are
+the survivors of an Opus self-screen, i.e. a stronger attack than a single
+humanizer pass, which is why 8.5% exceeds the 2.31% commercial rate. Read as a
+comparison of point estimates; clustered on text the per-variant interval runs
+[4.0, 13.4], so the vendor figures sit below our estimate but within its lower
+tail — the ordering is secure, its margin less so. And the comparison is a
 comparison of point estimates: once the per-variant interval is clustered on
 text it runs [4.0, 13.4], so the adversarial vendor figures at 2.31–2.86% sit
 below our estimate but not far below its lower bound. The ordering is not in

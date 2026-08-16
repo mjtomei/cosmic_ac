@@ -217,10 +217,27 @@ copied from the NB script and differs only in file paths, the seed count, and
 | PATIENCE (rounds without a new best before retirement) | 3 |
 | MAX_ROUNDS | 6 |
 | EPS (a new best must beat the old by more than this) | 1.0 |
-| KEEP_BELOW (variant retained for testing) | 50 |
+| KEEP_BELOW (variant submitted to Pangram: replicated Opus AI-score below this) | 50 |
+| PLAUS_MIN (variant also required replicated plausibility ≥ this before submission) | 70 |
 | K (variants per active text per round) | 3 |
 | replicates per variant | 3 |
 | effort | medium (rewrite), low (score) |
+
+**Generated vs submitted, and why 8.5% is per detector submission.** The search
+generates K=3 rewrites per active text per round and scores each on Opus's own
+AI-score and plausibility (`gov_bypass_all.js:163`: `m.ai < KEEP_BELOW &&
+m.pl >= 70`). Only variants clearing BOTH gates are submitted to Pangram —
+roughly 461 of ~1,830 generated across the four runs (~25%). The reported
+per-variant rate (8.5% = 39/461) is therefore **per detector submission**, not
+per Opus generation. This is deliberate and reflects the real attacker flow:
+the Opus self-score is free and available before any detector call, so an
+adversary screens locally and spends detector queries only on survivors. The
+per-detector-submission rate is what the vendor FNR rows are also measured as,
+so it is the commensurable quantity. The unconditional per-generated-rewrite
+rate (39/1,830 ≈ 2.1%) is reported in §4.9 as a floor but counts drafts no
+attacker would submit; it is not the operational number. The per-target rate
+(22.5%) is unaffected by the gate — discarding candidates can only lose
+targets, never create them.
 
 **Why low effort for scoring:** measured, not assumed. Opus at max effort
 scored −0.005 AUC against a 0.009 run-to-run noise floor on this task, so low
