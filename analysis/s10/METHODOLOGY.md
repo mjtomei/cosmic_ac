@@ -1633,20 +1633,30 @@ member-level mean and sd of its FULL population — the full population, not
 the covariate subsample, so the scale is defined independently of who has a
 covariate; HC1 errors, valid because each member appears once.
 
-Known sensitivity, and its resolution: the choice of normalization
-population moved the II-over-I crossover across the 1.96 line (t = 2.69
-subsample-scaled, t = 1.57 full-population-scaled). The resolution is the
-estimator that needs no normalization: WITHIN-CHAMBER contrasts,
-cohort-adjusted, combined by inverse-variance meta-analysis — each
-legislature is its own control, so cross-chamber scaling never enters. That
-gives +0.59 per 1,000 (z = 3.50), positive in 9/12 chambers and
-individually significant in each of the three powered to detect it. The
-full-population z regression's null is explained, not adjudicated away: 1/sd
-scaling down-weights the large low-variance chambers where the contrast is
-best measured. Standing rule adopted from this episode (Matthew's catch, the
-second of the section): when a contrast's significance depends on a
-cross-chamber scaling choice, the within-chamber meta-analysis is the
-canonical estimator.
+Known sensitivity, handled by explanation rather than adjudication. The
+normalized and unnormalized specifications were both specified before their
+results were seen (the normalization was Matthew's request in advance; the
+raw variant is the section's original form), and they are EQUALLY VALID
+views of the data — no rule here picks between them, and none was tested
+beyond the ones asked for. On the II-over-I contrast they disagreed: raw
++0.571 (t = 3.73), subsample-scaled z t = 2.69, full-population-scaled z
+t = 1.57. The disagreement has a mechanical explanation, not an evidential
+one: 1/sd scaling down-weights the large low-variance chambers (UK, US
+House) where the contrast is best measured, so the third variant dilutes a
+contrast the first two see.
+
+A within-chamber contrast meta-analysis — each legislature its own control,
+so cross-chamber scaling never enters — gives +0.59 per 1,000 (z = 3.50),
+positive in 9/12 chambers and individually significant in each of the three
+powered to detect it. STATED PLAINLY: that estimator was computed AFTER the
+disagreement was observed. It is a corroborating resolution whose value is
+that scaling cannot touch it, not a pre-registered primary, and it is not
+retroactively crowned canonical — a rule for choosing estimators minted
+after seeing which one flatters the result would be the forking-paths error
+this file exists to prevent. The crossover claim rests on the totality:
+sign-consistency across chambers, individual significance wherever power
+exists, agreement of two of three pre-specified views, and a mechanical
+account of the third.
 
 Limit of the career-level design: no year fixed effects are possible, so
 the birth-decade term absorbs era of service and is never quoted from this
