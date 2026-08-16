@@ -217,11 +217,54 @@ agarwal-2023; the path now ends honestly on the two cautions):
 
 
 
-## Broken-handle entry resolved and fetched (2026-08-16)
+## Broken-handle entry resolved and fetched (2026-08-16) — ranked 2026-08-16
 
 The failed-fetch entry `ricardo-2008-optimal` is **Alonso & Matouschek,
 "Optimal Delegation," *RESTUD* 75(1):259-293 (2008)** — on disk as the LSE
-eprints accepted version (green OA; no JSTOR slot needed). The formal theory
-of when a principal cedes decision rights to a better-informed agent: V.3b's
-question, and the offloading-in-proportion-to-competence answer, as a theorem.
-Not yet ranked into the tiers - rank on next pass.
+eprints accepted version (green OA; no JSTOR slot needed). Ranked here; it
+joins the side track "Advice corrupts — beyond the trust rent," where it was
+already listed.
+
+★★ **alonso-matouschek-2008-optimal-delegation.pdf**
+   The general characterization of Holmström's delegation problem without
+   transfers: what set of choices to leave an agent, and why more alignment does
+   not imply more discretion. The cluster's framing sentence — deploying
+   preference-knowing intelligence 'without eroding freedom' — is a discretion
+   question, and this answers discretion questions in full generality when the
+   principal cannot commit to contingent transfers. That no-transfers assumption
+   is exactly the firm's situation: it cannot contract on a person's private
+   consumption states. Prop. 2 characterizes the optimal delegation set; Prop. 4
+   collapses it to a single interval once the agent is sufficiently aligned,
+   which is why real organizations use simple caps; and the regulation
+   application shows a welfare-maximizing regulator without transfers can do no
+   better than a price cap — the structural cousin of a spend-limit. Two results
+   cut against the cluster's intuitions. Whether to rule a choice out depends on
+   the *slope* of the bias, not its level: an agent whose preferences are locally
+   flat in the state chooses insufficiently state-sensitively, so the principal
+   removes intermediate options to force responsiveness — a rationale for gapped
+   rather than capped choice sets that behavioral welfare economics does not
+   supply. And the Ally and Uncertainty Principles fail once sets can be
+   arbitrary: 'the principal may then give less discretion to a more aligned
+   agent or to one with a bigger informational advantage' (§9). Held at ★★ for a
+   specific reason: the model's only instrument is prohibition — a choice is in
+   the set or out of it — and this README already concludes from Beshears 2020
+   that the firm's lever must be price and suggestion, not prohibition. It is
+   therefore the rigorous theory of the instrument the argument has decided
+   against: indispensable for saying precisely what is given up by pricing rather
+   than forbidding, but not carrying a leg on its own. **Upgrade to ★★★ if the
+   firm's design ever admits a hard permitted-set component (category-restricted
+   accounts, vouchers in the Farhi-Gabaix sense), at which point it becomes leg
+   3's optimality theory.** Cautions, and the first is sharp for a directory
+   where ~25 of 55 files are working papers: this is the LSE accepted-version
+   postprint and its pagination is the manuscript's own (body pp. 1–33,
+   appendices A–B to p. 59), NOT *RESTUD* 75(1):259–293 — the front matter warns
+   'there may be differences between this version and the published version', so
+   re-map every page cite before print. Substantively the model has no ability
+   differences between principal and agent and no information-acquisition
+   incentives, and §9 concedes it cannot rationalize management by exception.
+   The role mapping also needs an argument the cluster has not yet made: here the
+   *agent* holds the informational advantage and is interpersonally biased,
+   whereas the trustworthy firm's premise is that the *firm* knows the wedge and
+   the human's misalignment is intrapersonal. The standard fix — principal as
+   long-run self, agent as present self — is a modeling move to defend, not a
+   free translation.

@@ -528,3 +528,825 @@ Also landed: `quirk-1988-defense-politics-of-ideas.pdf` (★★, the
 Derthick-Quirk thesis defended against the Stigler-school critique by its
 author). Remaining JSTOR wants for next month's quota: Schick 1966 (free IA
 alternative exists) and Wildavsky 1966 (1967 version on disk) — both optional.
+
+
+---
+
+## Consolidated ranking and reading path (2026-08-16) — supersedes the 2026-08-05 path
+
+67 works ranked in the rank-expansion pass (entries carry `"source": "rank-expansion
+2026-08-16"` in `00-RANKINGS.json`) join the 43 already there. **The directory is now
+110 ranked works.** Nothing below deletes or revises anything above; the 2026-08-05
+ranking and its 26-entry path stay on the record as history, and where this section
+disagrees with it, this section is the current one.
+
+### (a) Star distribution across all 110 ranked works
+
+| | count | share |
+|---|---|---|
+| ★★★ | 46 | 42% |
+| ★★ | 47 | 43% |
+| ★ | 17 | 15% |
+
+**32 works are marked OBJECTION** (⚠ below) — 18 of them at ★★★. That is the
+convention working as designed: genuine objections score up, and nearly two in five
+of the top tier are arguments against the position paper's own thesis.
+
+By cluster:
+
+| cluster | works | ★★★ | ★★ | ★ |
+|---|---|---|---|---|
+| 1 — manufacturing a governing class | 8 | 3 | 3 | 2 |
+| 2 — analytic machinery installed and abandoned (PPBS) | 12 | 5 | 4 | 3 |
+| 3 — counsel institutions created and withdrawn | 10 | 4 | 4 | 2 |
+| 4 — why capable states cannot execute | 15 | 5 | 10 | 0 |
+| 5 — capture, rents, and the technical bridge | 65 | 29 | 26 | 10 |
+
+Two structural changes since 2026-08-05. **Cluster 2 was empty then; it now has
+twelve works and is documented end to end** — the doctrine underneath PPBS (JEC
+vol. 1), the machinery at peak with its own price tag (vol. 2), the 1969 autopsy
+with attackers and defenders bound into one volume (vol. 3), the practitioner
+(Rivlin), the critic (Wildavsky), the death certificate (Schick 1973) and the
+auditor's four-times-repeated ledger (GAO 1997). And **cluster 5 has grown to 65
+works**, which is now less a cluster than three lanes: the public-choice seminal
+tier (Arrow, Stigler, Becker, Wittman, Olson, Elhauge, Ansolabehere), the
+appropriability/IP-and-diffusion lane (Levin, Cohen–Nelson–Walsh, Scotchmer,
+Heller–Eisenberg, Merges, Galasso–Schankerman, Bessen–Maskin, Allen, von Hippel),
+and the measured-modern lane (Bessen 2020, Akcigit–Ates, Akcigit–Baslandze–Lotti,
+Autor, Lancieri–Posner–Zingales, Brynjolfsson–Rock–Syverson).
+
+### (b) The full ranked table, by cluster
+
+⚠ = genuine objection to the paper's own argument. Sorted by stars within cluster.
+Files added in this pass are the ones absent from the 2026-08-05 list above.
+
+### Cluster 1 — Manufacturing a governing class (8 works)
+
+| ★ | file | one-line |
+|---|---|---|
+| ★★★ | `crimson-1935-littauer-gift` | Founding document of the first framing pole: a $2M private gift creating a graduate school to educate men broadly for public service, not technical specialists. |
+| ★★★ | `daniels-2021-what-universities-owe-democracy` | A sitting research-university president's doctrine of what universities owe democracy, whose third chapter is the counsel-supply obligation stated from the institution's side — universities as custodians of fact and curators of expertise — with open science as the proposed cure. |
+| ★★★ | `ellwood-2008-policy-school-challenges` | Plenary insider account of what US policy schools were built to supply, and the measured ways that supply has decayed since 1985. |
+| ★★ | `crimson-1937-littauer-opens` | The school opens with a faculty, fifty visiting officials, a $65,000 Rockefeller grant, and deliberately no students; enrollment is capped at forty to seventy. |
+| ★★ | `gross-fosse-2012-why-are-professors-liberal-ubc-working-paper-2010` | The argument Teles actually cites, at last: political typing/self-selection explains ~43% of the professoriate's political gap (GSS 1974-2008 decomposition). The mechanism behind the discriminatory-equilibrium point. |
+| ★★ | `gross-simmons-2007-social-political-views-american-professors` |  |
+| ★ | `crimson-1969-mpp-launch` | Twenty-one students admitted to Harvard's first MPP cohort; four core courses in analytical methods, economics, statistics, and political analysis. |
+| ★ | `mckelvey-redden-roberge-stark-2024-unstable-diffusions-jdsr` | Special-issue introduction arguing that hype, scandal, inevitability and silence are the four modes by which AI is made public, and that engineered demonstrations have displaced democratic capacity to imagine futures. |
+
+### Cluster 2 — Analytic machinery installed and abandoned (PPBS) (12 works)
+
+| ★ | file | one-line |
+|---|---|---|
+| ★★★ ⚠ | `jec-1969-ppb-compendium-vol3-full` | Congress's own 1969 autopsy of PPBS at the moment of its collapse, with the attackers and the defenders bound into the same volume: Wildavsky's "Rescuing Policy Analysis from PPBS" (p. 835) facing Enthoven's and Rivlin's insider accounts, Schick's "Systems for Analysis" (p. 817), Greenhouse's "The Fatal Triumph of Financial Management Over Economics" (p. 886), Polsby on Congress (p. 943), and Marvin & Rouse's comparative agency survey (p. 801). |
+| ★★★ ⚠ | `rivlin-1971-systematic-thinking-ch1-gaither-lectures` | Rivlin's four propositions after three years running HEW's analytic shop: measurement of problems and of distributional incidence improved a lot; knowledge of how to actually produce better services did not — and nothing in the system is organized to acquire it. |
+| ★★★ | `schick-1969-systems-for-analysis-ppb-and-its-alternatives-jec-compendium` | Schick asks why the budget process is 'nonanalytic or antianalytic' in the first place, and answers with a mechanism — routine drives out analysis — that is the cleanest statement in the whole PPBS literature of why continuous optimization is structurally under-supplied. |
+| ★★★ ⚠ | `schick-1973-death-in-the-bureaucracy` | THE PPBS obituary - the analytic machinery installed government-wide in 1965, dead by 1971, pronounced by the field's chronicler. Cluster 2, empty since the directory opened, now has its spine: the arc's hinge is documented rather than asserted, and the decay story becomes falsifiable. |
+| ★★★ ⚠ | `wildavsky-1967-political-economy-efficiency-publicinterest` | The contemporaneous case that cost-benefit, systems analysis and program budgeting are not neutral optimizing machinery but a redistribution of decision rights — "system politics" — written while PPBS was being installed government-wide. |
+| ★★ | `gao-1997-performance-budgeting-past-initiatives-ppbs-zbb-mbo` | The official ledger of the install-and-abandon cycle: Hoover Commission performance budgeting, PPBS, MBO, and ZBB, each governmentwide, each conceded to have failed, with per-initiative appendices on what was mandated, what was built, and how it ended. |
+| ★★ | `hacker-2004-privatizing-risk` | The published vocabulary for institutions that are withdrawn without ever being repealed — drift, conversion, layering — and the argument that drift is usually deliberate, not inadvertent. |
+| ★★ | `jec-1969-ppb-compendium-vol2-full` | The Bureau of the Budget's own status report on PPBS at its peak — how much analytic staff was actually bought, what it cost, and what it was directed to produce — with BOB Bulletin 68-9 and specimen issue letters, program memoranda and analytic studies reproduced entire. |
+| ★★ | `rivlin-1969-ppbs-in-hew-lessons-from-experience-jec-compendium` | Rivlin's contemporaneous debrief, written weeks after leaving the Assistant Secretaryship she held for three years: what the HEW analytic staff actually built, and the candid admission that evaluation capacity was neither available inside the department nor purchasable outside it. |
+| ★ | `bronner-2020-lessons-budgeting-literature-1930-1969` | A nine-page self-published annotated timeline of federal budgeting literature from Buck 1934 through Gross 1969, ending in a one-page summary table. |
+| ★ | `jec-1969-ppb-compendium-vol3-contents` | A one-page provenance cover sheet plus three scanned pages of the vol. 3 table of contents and the three-volume author index. |
+| ★ | `rivlin-1971-systematic-thinking-contents` | The book's two-page table of contents — apparatus, useful only as a map of what the six chapters cover and which of them the directory does not yet hold. |
+
+### Cluster 3 — Counsel institutions created and withdrawn (CEA / OTA / CBO) (10 works)
+
+| ★ | file | one-line |
+|---|---|---|
+| ★★★ | `bimber-1998-death-of-an-agency-ota` | The scholar of record's account of OTA's termination: killed as a budget trophy - symbolic politics, not savings - by a majority proving it could close an agency. |
+| ★★★ | `brookings-vital-statistics-congress-staff` | The measured decay of congressional counsel capacity: support-agency and committee staff series, 1891-2016, including OTA's elimination. |
+| ★★★ | `leg-branch-approps-1996-ota-closure` | The terminating instrument itself: $3,615,000 to "carry out the orderly closure" of OTA, a 17-employee cap, and the disposal of the agency's records and hardware to the Architect of the Capitol. |
+| ★★★ | `ota-act-1972-statute` | Congress's own statutory finding that it lacked independent technical counsel, and the act creating OTA to supply it (killed 1995). |
+| ★★ | `bimber-1992-institutions-and-information-politics-of-expertise-mit-dissertation` | The demand-side study of OTA: because a decentralized two-party legislature presents the agency with many masters and centrifugal demands, the supplier of expertise survives by manufacturing neutrality — offering something for everyone. |
+| ★★ | `employment-act-1946-statute` | Statute creating the Council of Economic Advisers and the Joint Committee on the Economic Report -- analytic counsel installed by law in both branches. |
+| ★★ ⚠ | `miller-1966-review-scientific-estate` | 1966 review of the Harvard public-administration dean's book on how technical expertise relates to political authority, and whether it displaces judgment. |
+| ★★ | `schick-1970-budget-bureau-that-was-lawcontempprobs` | The institutional host of PPBS, examined at the moment of its conversion into OMB: the Bureau's power always rested on monopoly of a presidential function, and its analytic ambitions died of examiner capture, staff immobility, and a director who never tooled up his own agency for the system he was preaching. |
+| ★ | `derthick-quirk-1985-dynamics-of-deregulation-brookings-review` | A publisher's book announcement standing in for an unavailable book — it compresses the five-reason account and preserves the counterfactual sentence, and that is all it is. |
+| ★ | `gao-staa-fact-sheet` | GAO's own promotional update on the STAA team created in 2019 — the partial, in-house reconstitution of congressional technology assessment 24 years after OTA was defunded. |
+
+### Cluster 4 — Why capable states cannot execute (proceduralism, burden, accumulation) (15 works)
+
+| ★ | file | one-line |
+|---|---|---|
+| ★★★ | `bagley-2019-procedure-fetish` | Formally neutral procedure hands organized industry the levers: 81% vs 4% of EPA comments, 170x more pre-notice contacts, 93% of Volcker contacts. |
+| ★★★ ⚠ | `caputo-2026-administrative-law-fourth-settlement` | Since the ICC in 1887 administrative law has been trapped between capability and accountability — expertise the overseers cannot read — and AI is proposed as the first technology that could raise both at once. |
+| ★★★ ⚠ | `karlson-2021-critique-entrepreneurial-state` | Market-failure justifications for innovation policy are unmeasurable and unvalidated; information and incentive problems turn attempted corrections into policy failure and rent-seeking. |
+| ★★★ | `teles-2013-kludgeocracy` | Names accreted policy complexity as the American state's defining pathology: veto points become toll booths, new programs layer over old, and a 'kludge industry' profits from the mess. |
+| ★★★ ⚠ | `yackee-2022-ossification-states` | 1460 state agency leaders across 50 states: 75% promulgate rules in under a year; procedural constraints show no consistent ossification effect. |
+| ★★ | `dunkelman-2019-penn-station` | Thirty-year archival case study of Penn Station: post-1970s diffusion of public power created so many veto points that no actor can supply obviously-wanted shared infrastructure. |
+| ★★ | `duranton-puga-2023-urban-growth` | Builds and estimates an urban growth model in which incumbent residents set planning regulations to cap city size, then computes the counterfactual of relaxing regulation in the seven large, highly-constrained U.S. cities: New York grows from 20 to 27.6 million, aggregate output per person rises 7.95%, and incumbents lose 0.046%. |
+| ★★ | `hinterleitner-2023-growth-of-policies` | A field map of the policy-accumulation literature carrying one hard measured result: sectoral policy portfolios grew fivefold across 21 OECD countries while implementation capacity stayed flat. |
+| ★★ ⚠ | `karna-karlsson-engberg-2022-political-failure` | Text analysis of all 7,161 papers in eight leading innovation journals, 2010–2019, finding that only 3.6% substantively discuss political failure — the systematic objection to reasoning from "market failure" straight to "public provision." |
+| ★★ ⚠ | `meyers-2017-congress-insurmountable-obstacle-road-to-ppb` | A Schick-lineage assessment asking whether the legislature is the permanent binding constraint on analytic budgeting, and arguing that GPRAMA is now heading for the same death PPBS died — this time as tragedy rather than farce. |
+| ★★ | `moynihan-2025-rescuing-state-capacity` | Presidential address: capacity is invisible, voters never reward it, rules accrete because nobody is paid to remove them; measured returns to monitoring capacity are 24-29x. |
+| ★★ | `moynihan-herd-harvey-2015-administrative-burden` | Founds administrative burden as learning + psychological + compliance costs, and argues burden is deliberate hidden politics; Wisconsin verification form predicted -2-3%, delivered -20%. |
+| ★★ | `pahlka-2024-we-have-cancer` | Procedural accretion compounds at a measurable rate and is self-reproducing - repealed rules regrow because new regulations copy old ones; no deflation mechanism exists. |
+| ★★ | `pahlka-2024-wrong-jobs` | State capacity fails not through bad public servants but through job design: compliance work crowds out mission work, so supplied analysis cannot be consumed. |
+| ★★ ⚠ | `yackee-yackee-2009-ossification-federal` | The first empirical test of the ossification thesis — all federal rule-writing agencies 1983–2006, Cox hazard models — and it largely disconfirms it, finding procedural constraints if anything speed young rules up. |
+
+### Cluster 5 — Capture, rents, and the technical bridge (65 works)
+
+| ★ | file | one-line |
+|---|---|---|
+| ★★★ | `akcigit-ates-2023-business-dynamism` | Runs a calibrated general-equilibrium horse race among four candidate causes of the U.S. dynamism decline — corporate taxes, R&D subsidies, entry costs, and knowledge diffusion — and finds declining diffusion from frontier to laggard firms accounts for 50-70%+ of ten joint trends, then documents rising patent concentration and patent-thicket purchasing as the likely mechanism. |
+| ★★★ | `akcigit-baslandze-lotti-2023-connecting-to-power` | Italian universe data (32M firm-years merged to patents, social security, and the local-politician registry) showing market leaders substitute political connection for innovation — the "leadership paradox" — with a close-election RD confirming connections buy size and survival but not productivity. |
+| ★★★ | `allen-1983-collective-invention` | The founding empirical account of firms freely releasing plant designs and operating data to rivals, producing cumulative non-patentable improvement as a by-product of ordinary investment — and of that institution's decline. |
+| ★★★ ⚠ | `ansolabehere-2003-so-little-money` | Tullock's puzzle, revived with three decades of data: the observed price of influence is orders of magnitude below the value at stake, and forty studies of PAC money and roll-call votes mostly find nothing. |
+| ★★★ | `arrow-1962-welfare-invention` | The canonical derivation that a competitive economy underinvests in the production of knowledge - risk, inappropriability, and increasing returns in use - and that appropriating the returns necessarily means underusing the result. |
+| ★★★ ⚠ | `bessen-2020-industry-concentration-it` | IV estimates that firms' $250B/yr of *proprietary* (non-diffusing) software — not lax antitrust — accounts for most of the rise in US industry concentration, with the top four firms capturing the productivity gain. |
+| ★★★ ⚠ | `bessen-maskin-2009-sequential-innovation` | Formal model plus a software natural experiment showing that where innovation is sequential and complementary, imitation can raise the original inventor's own profit and stronger patents can reduce R&D. |
+| ★★★ ⚠ | `bessen-nuvolari-2019-diffusing-without-dissipating` | Three 19th-century cases where inventors freely shared designs, kept high rents for decades, and got their largest productivity gains from the sharing regime itself. |
+| ★★★ | `dixit-olson-2000-coase-theorem` | Even with literally zero transaction costs and costless enforcement, voluntary participation in the bargaining itself destroys efficient public-good provision - and the one efficient equilibrium is not robust to arbitrarily small transaction costs. |
+| ★★★ ⚠ | `elhauge-1991-interest-group-theory` | A 80-page demolition of the inference from "interest groups are influential" to "the process is defective and should be overridden" — the discipline every capture argument in this directory needs. |
+| ★★★ ⚠ | `ferrari-mckelvey-2022-hyperproduction-deep-generative-models` | Peer-reviewed political economy showing that generative-AI production runs on a rented proprietary layer — game engines (Unity, Epic) licensed to DeepMind and OpenAI alike — so the payoff of the technology accrues as rent to whoever owns the chokepoint. |
+| ★★★ | `frischmann-2005-infrastructure-commons` | Builds a demand-side economics of infrastructure: nonrival generic inputs whose downstream public/nonmarket outputs are never fully manifested as demand, so markets undersupply open access. |
+| ★★★ | `furman-orszag-2015-rents-inequality` | Firm-level returns to capital fanned out sharply after ~1990: the 90/50 ROIC ratio rose from under 3 to about 10, with ~100% returns at the 90th percentile. |
+| ★★★ | `galasso-schankerman-2014-patents-cumulative` | Random assignment of Federal Circuit judges turns patent invalidation into a natural experiment: killing a patent raises follow-on citations ~50%, but only in computers/electronics and only when a large patentee was blocking small entrants. |
+| ★★★ ⚠ | `greaney-2026-comment-hsieh-moretti` | Replicating Hsieh-Moretti's own code flips the sign, documents coding errors, and shows their model is unit-dependent; repaired, the effect is two orders of magnitude smaller. |
+| ★★★ | `heller-eisenberg-1998-anticommons` | Names the mirror-image failure the whole directory turns on: too many owners with rights to exclude and none with an effective privilege of use produce systematic *underuse* of a resource — privatization curing one tragedy by causing another. |
+| ★★★ | `hsieh-moretti-2019-housing-constraints` | Local land-use capture by incumbent homeowners in three high-TFP cities imposed a large aggregate national output loss; the canonical measured-rents quantification. |
+| ★★★ ⚠ | `jec-1969-ppb-compendium-vol1-full` | The doctrinal underlay of the whole PPBS enterprise, and the original publication venue of Arrow's "The Organization of Economic Activity: Issues Pertinent to the Choice of Market Versus Nonmarket Allocation" (p. 47) — alongside Olson on fiscal equivalence (p. 321), Demsetz on contracting cost (p. 167), Zeckhauser on uncertainty and collective action (p. 149), Weisbrod, Steiner, Vickrey, Baumol, Hirshleifer, and Schultze on incentives (p. 201). |
+| ★★★ | `lancieri-posner-zingales-2022-antitrust-decline` | Tests the Stigler capture hypothesis against the "enlightened technocrat" hypothesis for forty years of antitrust decline, using new datasets on polls, executive orders, confirmation hearings, judicial votes and amicus briefs, and finds the decline was made by unaccountable regulators and judges in ways that track business interest rather than expert consensus. |
+| ★★★ | `mccubbins-noll-weingast-1987-administrative-procedures` | The seminal theory that administrative procedure is not quality control but a control technology — enacting coalitions "stack the deck" so an agency's environment mirrors the coalition long after it has disbanded, and defunding independent analysis is one of the stacking instruments. |
+| ★★★ ⚠ | `merges-1996-contracting-liability-rules` | The standing objection to every "the commons must be legislated" argument: strong property rules push repeat players into private collective rights organizations (ASCAP, BMI, patent pools) that outperform statutory compulsory licensing. |
+| ★★★ | `olson-1988-jep-productivity-slowdown-oil-shocks-real-cycle` | Olson kills the energy-price explanation of the 1973 productivity slowdown with transparent upper-bound arithmetic, then rebuilds it on distributional coalitions - the canonical economics demonstration that a persistent performance gap is institutional, not physical. |
+| ★★★ | `olson-1995-varieties-of-eurosclerosis-eui-jean-monnet-32` | Olson's thirteen-year audit of his own book, containing the two results this project most needs: encompassing organizations cannot prevent narrow ones, only delay them - and the only real cure is that the problem become legible. |
+| ★★★ | `olson-1996-big-bills-sidewalk` | Eliminates endowments, technology access, and personal human capital one by one as explanations of the income gap, leaving institutions: huge realizable gains go unpicked. |
+| ★★★ ⚠ | `sampat-williams-2015-patents-follow-on-genome` | Quasi-experimental test of the anticommons hypothesis on the human genome: gene patents had no quantitatively important effect on follow-on innovation, while a non-patent restriction on access to the same data did. |
+| ★★★ | `shapiro-2001-patent-thicket` | Overlapping blocking patents in semiconductors tax and stall cumulative innovation; cross-licenses and pools are the institutional workaround, and antitrust can worsen the problem. |
+| ★★★ | `stigler-1971-economic-regulation` | The founding statement of capture as a demand-and-supply problem: industries buy regulation because the state's coercive powers are for sale, and small concentrated groups outbid large diffuse ones because political decisions must be infrequent and global. |
+| ★★★ ⚠ | `wittman-1989-democracies-efficient` | The frontal objection: political markets are as efficient as economic ones, models of political failure smuggle in voter stupidity or absent competition, and the burden of proof belongs on whoever claims inefficiency. |
+| ★★★ | `zingales-2017-political-theory-firm` | Market power buys political power which buys more market power - the "Medici vicious circle"; and corporate influence must be measured by outputs, not lobbying inputs. |
+| ★★ ⚠ | `autor-2020-superstar-firms` | Uses U.S. Economic Census micro-panels since 1982 plus OECD data to show the falling labor share is driven by between-firm reallocation toward low-labor-share "superstar" firms in exactly the industries where concentration rose most — and argues that concentration grew fastest where patenting and TFP growth were fastest, so technological dynamism rather than rent-seeking is the leading explanation. |
+| ★★ | `azoulay-2017-nih-funding-private-patenting` | Idiosyncratic NIH peer-review funding rules give exogenous variation in public research money: a $10M increase in an area yields a net 2.3 additional private-sector patents. |
+| ★★ | `baumol-1990-productive-unproductive` | The supply of talent is roughly constant; what varies is its allocation between innovation and rent-seeking, and that allocation is set by the prevailing rules of the game - with Rome, Sung China and medieval Europe as the evidence. |
+| ★★ ⚠ | `becker-1983-pressure-groups` | Formalizes capture as competition in producing pressure, and derives the uncomfortable corollary that efficiency-raising policies tend to win - because they generate gains rather than deadweight costs, so their beneficiaries have the intrinsic advantage. |
+| ★★ | `boldrin-levine-2013-case-against-patents` | Patents show no correlation with measured productivity; the political economy of patent law is a one-way rent-seeking ratchet driven by mature, declining firms. |
+| ★★ | `brynjolfsson-rock-syverson-2017-productivity-paradox` | Weighs four explanations for AI capability outrunning measured productivity — false hopes, mismeasurement, redistribution, implementation lags — and argues lags dominate, because a general-purpose technology's gains wait on complementary co-invention that behaves like intangible capital and can make measured productivity fall before it rises. |
+| ★★ | `callander-foarta-sugaya-2022-market-political` | Formal model in which a self-interested policymaker sets a *minimum technology standard* to protect the leader and extract rents; because further investment would make protection unnecessary, the leader stops investing at the threshold — a "reverse Arrow effect" — and the AT&T/Bell Labs record is offered as the application. |
+| ★★ | `cohen-nelson-walsh-2000-protecting-assets` | The 1994 Carnegie Mellon replication of the Yale survey across 1,478 R&D labs: patents still the weakest mechanism, secrecy risen sharply, and in complex-product industries firms patent to force cross-licensing rather than to appropriate returns. |
+| ★★ | `gutierrez-philippon-2017-declining-competition` | US firms under-invest relative to Tobin's Q; weak competitive pressure is causally implicated, and rising regulation predicts higher concentration and lower investment. |
+| ★★ | `gutierrez-philippon-2018-institutional-drift` | Enforcement can decay without any formal institutional change; countries delegate to a supranational regulator precisely because capture risk is symmetric, and US lobbying runs >2x the EU's. |
+| ★★ | `hall-ziedonis-2001-patent-paradox` | Semiconductor firms rank patents a distant sixth for appropriating R&D returns yet doubled patent yield per R&D dollar - defensive portfolios as bargaining chips. |
+| ★★ | `holmes-schmitz-1995-resistance-new-technology` | General-equilibrium model in which groups holding rents in the old technology block the new one, plus three cases — European vs US auto, bovine growth hormone, and building codes — showing blocking survives exactly where the market is too narrow for competition to punish it. |
+| ★★ ⚠ | `kitsikopoulos-2023-steam-engines-frontmatter-preface-ch5-precis` | Apparatus, but the one apparatus file that carries real argument: the Preface states in the author's own prose his challenge to Nuvolari's collective-invention thesis (ch. 5) and his duty-performance finding of innovation then stagnation in Cornish engines (ch. 6). |
+| ★★ ⚠ | `kuai-ferrari-2026-genai-governance-special-issue-intro` | Editorial introduction to the ICS special issue that contains the closed McKelvey/Simon/Frizzera article — and it summarises that article's actual findings, giving us the three enclosure trajectories the abstract alone does not. |
+| ★★ ⚠ | `lawcontemp-2006-transparency-public-science` | Openness in policy-relevant science is bounded: 'sequestration' is often unintentional, and more disclosure does not reliably produce better knowledge. |
+| ★★ | `lemley-2005-free-riding` | Canonical argument that full internalization of positive externalities is never the goal, is self-defeating, and invites rent-seeking; free riding is the wrong frame for non-rival goods. |
+| ★★ | `levin-1987-appropriating-returns` | The Yale survey of 650 R&D executives across 130 lines of business: patents rate lowest of all appropriability mechanisms, and lead time plus moving quickly down the learning curve rate highest — most sharply for process innovation. |
+| ★★ ⚠ | `mcdonnell-2015-what-caused-airline-deregulation-independent-review` | The contest to Derthick and Quirk's counterfactual: deregulation followed from rents having already dissipated, and the economists arrived where the incentives were already pointing. |
+| ★★ | `mckelvey-2025-conversation-genai-might-be-worthless` | A leading commons critic arguing that genAI may be a toxic asset — too legally encumbered and too costly to own — and that open models released as by-products of industrial competition (Llama, DeepSeek) are what actually erodes the incumbents' valuations. |
+| ★★ ⚠ | `mckelvey-hunt-2023-chatgpt-infrastructural-ambitions-commons` | The compressed conference version of the same argument, but carrying one thing the long preprint does not: the extrinsic/intrinsic commodification split (after Mosco) that names two distinct ways firms convert a commons into an asset. |
+| ★★ ⚠ | `mckelvey-hunt-2023-remodelling-internet-infrastructure-osf-preprint` | The fullest open-access statement of the McKelvey commons-enclosure objection: walks ChatGPT through Braman's information production chain (creation/processing/flows/uses) and ends by demanding commons-based regulation obligating firms to maintain the infrastructures they consume. |
+| ★★ | `olson-1986-appreciation-tests-criticisms` | Olson's reply to a four-paper symposium testing Rise and Decline: the encompassing-organization logic stated cleanly, the free-riding-on-the-encompassing dynamic, and a defense of deliberate simplification as the point of theory. |
+| ★★ | `quirk-1988-defense-politics-of-ideas` | Quirk defending the Derthick-Quirk capture-is-defeasible thesis against the economic-theory-of-regulation critique - the standing objection to the deregulation precedent, answered by its author. |
+| ★★ | `scotchmer-1991-shoulders-of-giants` | The canonical statement of the division-of-profit problem in cumulative research: no patent breadth can simultaneously reward the foundation-layer and the improvers, and prior agreements outperform ex post licensing. |
+| ★★ | `teles-2015-upward-redistribution` | Surveys rents from licensing, finance, IP, and land use, and traces their persistence to organizational imbalance, low-visibility venues, cultural capture, and the state's own lost analytic capacity. |
+| ★★ ⚠ | `vonhippel-1987-knowhow-trading` | Case study and Prisoner's-Dilemma model of engineers in rival US steel minimills routinely trading proprietary process know-how through informal reciprocal networks, with the conditions under which trading stops. |
+| ★ | `chang-moncur-1984-wrrc-tr165-quotes-olson-rdn-implications-p74` | A Hawaii water-rights technical report that reads a state supreme court decision as creating a distributional coalition - useful mainly as a locator for the Olson Rise and Decline p. 74 implications list, which it reproduces. |
+| ★ | `goodman-lehto-2023-knowledge-commons` | Synthesis essay joining the Coasian externality/anticommons literature to Ostrom's Governing Knowledge Commons framework, arguing for polycentric bottom-up governance and illustrating with open-source software and Mokyr's Republic of Letters. |
+| ★ | `irving-2018-ai-safety-via-debate` | Proposes self-play debate so a weak judge can extract honest answers from stronger agents; DEBATE=PSPACE with polynomial-time judges; MNIST demo only. |
+| ★ | `kitsikopoulos-2023-ch5-cornish-patents-abstract-notes-refs` | Abstract-plus-endnotes capture standing in for a paywalled chapter — the richest of the apparatus files, since the endnotes carry fragments of the actual argument, but the argument itself is not here. |
+| ★ | `kitsikopoulos-2025-rhi-sectoral-steam-diffusion-abstract-refs` | Abstract-and-references capture made when the Universitat de Barcelona server returned HTTP 403 — and now superseded, because the gold-OA full text was obtained on 2026-08-15 and sits beside it in this directory. |
+| ★ | `kitsikopoulos-2025-rhi-sectoral-steam-diffusion-fulltext` | His current standing statement on steam diffusion and the patent system - but Watt-period coal/iron, NOT the 19th-c. Cornish ch.5 case; context for the Bessen-Nuvolari contest, not its answer. |
+| ★ | `kitsikopoulos-2026-companion-volume-abstracts-and-ch5-crossreference` | A pure acquisition-and-provenance memo documenting a failed hunt for an open version of ch. 5, plus the companion volume's abstracts and one cross-reference confirming ch. 5 is the author's standing statement on patents. |
+| ★ | `mckelvey-2023-walrus-is-chatgpt-even-legal` | General-audience survey of the 2023 copyright and privacy exposure around training data, ending on the prediction that licensing costs leave only players rich enough to pay and platforms willing to sell their users out. |
+| ★ ⚠ | `mckelvey-simon-frizzera-2025-ics-commons-closure-access-record` | Not the paper: an access record documenting that the ICS 2025 article is legitimately closed, reproducing the verified publisher abstract and cataloguing the OA substitutes fetched in its place. |
+| ★ | `olson-1985-space-agriculture-and-organization-ajae-agecon` | Olson applies the Logic to agriculture: space-intensivity drives up coordination and surveillance costs, which caps farm size, which makes farming genuinely competitive and farm cartels unenforceable. |
+
+### (c) The revised reading path — the argument in order
+
+**Sixty-eight entries, in five movements** (A 1–8, B 9–24, C 25–33, D 34–54,
+E 55–68). It keeps the 2026-08-05 argument
+structure — what kind of good this is → why it stays unsupplied → how capacity
+decays without anyone abolishing it → the institutional record → the objections and
+the precedent for the cure — and inserts the new material where the argument
+actually needs it. Three structural changes: the **seminal economics now comes
+first** (Arrow, Stigler) instead of the argument starting mid-literature; the
+**PPBS arc is a movement of its own**, documented rather than inferred; and every
+objection sits immediately behind the claim it contests, never in a separate
+appendix of doubts. **The ★★★ entries alone are a complete walk**; ★★ entries are
+marked *(skippable)* and add depth at the point where they sit. Apparatus and every
+★ are off the path by design — they are locators, not reading.
+
+**A. What kind of good this is, and why it is undersupplied**
+
+1. ★★★ **`arrow-1962-welfare-invention`** — *NEW, and the path now starts here.*
+   The canonical derivation that a competitive economy underinvests in knowledge
+   through three compounding channels (risk, inappropriability, increasing returns
+   in use) plus the twist the paper needs most: to the extent a firm *does* capture
+   the value of its optimization work, that work is then underused relative to the
+   optimum — the exact position of a proprietary kernel library. Also carries the
+   parallel-research passage (pp. 618–19) that is the published form of the paper's
+   herd/monoculture and aggregation-point arguments, so those can be built on
+   Arrow rather than claimed. **This closes an open item in CLAUDE.md**: §4's
+   missing-markets quartet listed "Arrow 1969" as placed from model knowledge and
+   unverified; 1962 is the correct anchor for the underinvestment claim, and it is
+   now on disk and verified. Arrow's own remedy leans public/centralized — the
+   commons-and-federation answer is a different institutional form and must not be
+   presented as his.
+2. ★★★ ⚠ **`jec-1969-ppb-compendium-vol1-full`** (Arrow's "The Organization of
+   Economic Activity," p. 47) — *NEW.* Second because it is Arrow one step
+   further out: market failure is *broader* than externality and is relative to the
+   mode of economic organization rather than to technology, transaction costs
+   (specifically the cost of the information needed to enter a market) are the
+   general case, and — the passage the paper should quote — social norms and
+   professional conventions are society's uncosted substitutes for missing markets,
+   adaptive in origin and liable to become retrogressive. That is
+   design-reuse-as-convention, stated by Arrow in 1969. The volume also carries
+   Demsetz's in-volume dissent forty pages earlier and Olson on fiscal equivalence
+   (p. 321), so the objection travels with the doctrine. Heavily degraded Google
+   scan; re-check every quotation against the page image.
+3. ★★★ **`frischmann-2005-infrastructure-commons`** — unchanged in role: the
+   *testable definition* of the paper's own object, and the demand-side location of
+   the failure. Read Part II (pp. 939–980). His own bracket at p. 1023 — he does not
+   answer who pays to build the commons — is now partially answered later on this
+   path by Allen and von Hippel, and should be named rather than papered over.
+4. ★★★ **`olson-1996-big-bills-sidewalk`** — the *argumentative template*: measure
+   the gap to potential, then knock out endowments, technology access and human
+   capital one at a time until only coordination remains. Structurally identical to
+   "the gap is effort, not physics." **Version warning stands: this is the 1996 JEP
+   lecture, not Olson 1982.**
+5. ★★★ **`olson-1988-jep-productivity-slowdown-oil-shocks-real-cycle`** — *NEW, and
+   it is the template executed on a real gap.* Olson kills the oil-price explanation
+   of the 1973 productivity slowdown with auditable upper-bound arithmetic (~0.1% of
+   GDP per year against a shortfall that had cost ~12% of output by 1981) and only
+   then substitutes the collective-action account. The paper's own move, with a
+   published precedent. Three transfers: the Murrell test (new postwar British
+   industries performed nearly as well as West German ones, old ones much worse —
+   incumbency as the variable, with an empirical test attached); coalitions raising
+   "the extent of policing of transactions and innovations that endanger
+   supracompetitive prices" (p. 63), i.e. under-provision *enforced*, not merely
+   omitted; and the 1-percent-stake arithmetic (p. 59). Use the arithmetic and the
+   old-vs-new-industry test; leave the sticky-price business-cycle half alone.
+6. ★★★ **`dixit-olson-2000-coase-theorem`** — *NEW, and the answer to the first
+   question any economist will ask the paper:* if 10–100× is really on the table,
+   why has nobody bargained their way to it? Because the Coasean reply fails at the
+   step everyone skips — the non-cooperative decision to show up. With zero
+   transaction costs and costless enforcement, M=10 of N=15 beneficiaries, cost 9.5
+   against benefit 10: provision probability 0.00000019, and scaling N up makes it
+   worse. Olson's last word also names the escape route the paper's §8
+   federation/underwriter design gropes toward — bundle excludable private benefits
+   with the non-excludable good. Copy the authors' restraint: they explicitly refuse
+   to claim public goods almost never get provided.
+7. ★★ *(skippable)* **`lemley-2005-free-riding`** — still here, still disciplining
+   the claim before it is made: uncompensated positive externalities are the normal
+   condition of a market economy, so the argument must be "nobody covers the fixed
+   cost of supplying the optimization at all," not "optimizers capture too little."
+8. ★★★ **`olson-1995-varieties-of-eurosclerosis-eui-jean-monnet-32`** — *NEW, and it
+   belongs here rather than in the capture movement because it states the structural
+   prediction the paper's cure has to survive.* Olson audits his own book at thirteen
+   years and concedes the devolution result: encompassing organizations "may delay —
+   but they cannot by themselves prevent — the emergence of narrow special
+   interests," because a cartel needs control of only one market while an
+   encompassing party needs a plurality. A commons or consortium that internalizes
+   the social gain is therefore not a stable equilibrium against narrow defection.
+   The compensating half is the antidote section: Olson's stated cure is
+   **legibility** — "A special interest can get its way only because most of the
+   society does not notice or understand what is happening" — which is the published
+   parent of the paper's claim that machine intelligence changes the supply
+   economics by making foregone optimization visible and cheap to name. Institute
+   working paper, not refereed; the legibility claim is Olson's assertion, not a
+   tested finding, and should be presented as the theory's escape hatch.
+
+**B. Why it stays unsupplied: capture, rents, and the measured alternatives to
+optimizing**
+
+9. ★★★ **`stigler-1971-economic-regulation`** — *NEW, and the seminal doctrine the
+   rest of this movement argues with* (Becker extends it, Wittman denies it,
+   Dixit–Olson name it as the optimism they attack, Lancieri–Posner–Zingales test
+   it). The transferable machinery is not the corruption story but the supply-side
+   argument at pp. 10–11: political decisions must be simultaneous and universal, so
+   participation cannot be proportioned to interest and knowledge, and the system
+   "does not offer good incentives like those in private markets to the acquisition
+   of knowledge." That is a general theory of why competence fails to concentrate
+   where the stakes are — read it onto standards bodies and shared toolchains, where
+   everyone votes on everything and nobody is paid to know. Never print his
+   conclusion without one of its contests (Becker, Wittman, Quirk 1988).
+10. ★★★ **`zingales-2017-political-theory-firm`** — the Medici vicious circle:
+    market power buys political power that buys more market power. What an incumbent
+    does *instead of* supplying improvement. His methodological point remains the one
+    the paper needs most: influence must be read off outputs, not inputs.
+11. ★★★ **`akcigit-baslandze-lotti-2023-connecting-to-power`** — *NEW, and this is
+    Zingales measured.* Italian universe data, 32M firm-years: 4.5% of firms are
+    politically connected but employ a third of the workforce; ranking the top 20
+    firms per market, politician-intensity rises monotonically with rank while
+    patent-intensity falls monotonically — the two curves cross. A close-election RD
+    shows connections buy size and survival but *not* productivity. The
+    "leadership paradox" is the reason optimization goes unfunded at the top of the
+    distribution: the leader has a cheaper instrument than getting better. Working
+    paper, not the JPE version — verify figures before printing.
+12. ★★★ **`lancieri-posner-zingales-2022-antitrust-decline`** — *NEW.* Stigler's
+    hypothesis versus the enlightened-technocrat account over forty years of
+    antitrust decline, with new datasets (amicus briefs per case 0.41 → 4.35, the
+    Powell memo, the Manne judicial seminars). The concept worth stealing is
+    **epistemological capture** — ideas persisting in doctrine for forty years after
+    losing standing in the academy — which is the exact shape of the paper's claim
+    that a technical consensus can be an institutional artifact rather than a
+    physical constraint, and it is honest that it has no smoking gun.
+13. ★★★ **`furman-orszag-2015-rents-inequality`** — the measured shape of the
+    equilibrium: the 90/50 ratio of returns on invested capital rising from under 3
+    to about 10, persisting rather than being competed away. Cite the *dispersion* —
+    improvement that does not diffuse.
+14. ★★★ ⚠ **`bessen-2020-industry-concentration-it`** — *NEW, and the single best
+    technical bridge in the directory.* Proprietary in-house software went from 33%
+    of IT investment in 1985 to 55% ($250B) in 2016; software-developer share of an
+    industry's workforce predicts top-4 share, IV-identified, with a widening
+    top-4-vs-rest productivity gap. The contrast is the paper's own: the barcode
+    scanner diffuses, Walmart's integration of it does not. **OBJECTION attached to
+    the same finding** — Bessen argues concentration is rising from barriers to
+    *technology*, not barriers to entry, which cuts against the capture reading and
+    against Gutiérrez–Philippon. Cite the diffusion failure, not a monopoly claim.
+15. ★★★ **`akcigit-ates-2023-business-dynamism`** — *NEW.* The economy-wide
+    restatement: a calibrated horse race among four candidate causes finds declining
+    knowledge diffusion accounts for 50–70%+ of ten joint trends, and — the sentence
+    that matters — the baseline diffusion rate is *below the welfare optimum*, with
+    no villain required. Read with its own honest two-sidedness: at high diffusion
+    rates, lower diffusion could improve welfare by protecting leaders' incentives.
+    Model-conditional throughout; δ is a parameter, not a measurement.
+16. ★★ *(skippable)* ⚠ **`autor-2020-superstar-firms`** — the strongest pushback on
+    reading concentration as capture: the industries that concentrated are the ones
+    innovating fastest, and the authors say the rigged-economy story fails as a
+    complete explanation. Their "more subtle story" — win on the merits, then erect
+    barriers — is the reconciliation that lets this and entry 12 both be true.
+17. ★★★ ⚠ **`wittman-1989-democracies-efficient`** — *NEW, and the frontal
+    objection.* Political markets are as efficient as economic ones; every model of
+    failure smuggles in voter stupidity, absent competition, or high negotiation
+    costs. Transposed, it is the objection to the paper's whole thesis: if 10–100× is
+    available, an entrepreneur is paid to find it, so a persistent gap is evidence
+    the gap is not real or not worth closing. State it in Wittman's own terms before
+    answering; the answer is already in the literature (entry 6 rebuts him by name).
+18. ★★★ ⚠ **`elhauge-1991-interest-group-theory`** — *NEW, and the discipline every
+    under-provision claim in this directory needs.* Any "process defect" identified
+    by interest-group theory presupposes a normative baseline the theory cannot
+    supply — "under-provided relative to *what*, and who sets it?" is the question
+    the paper must answer explicitly. Part III's comparative-institutions rule (the
+    remedy is not exogenous to the theory that condemned the status quo) and Part IV's
+    result that raising the cost of change *increases* organized groups' relative
+    advantage are the two pieces to carry. Parts I and V are law-review-internal.
+19. ★★★ ⚠ **`ansolabehere-2003-so-little-money`** — *NEW.* The quantitative
+    objection to naive rent-purchase: $3B on the 2000 elections against $2T of
+    federal spending; defense contractors gave $13.2M against $134B of procurement;
+    ~40 studies of PAC money and roll-call votes mostly find nothing. Answer it
+    rather than step around it — and take the authors' own pointer, that the channel
+    is lobbying and access (10:1 over PAC money), not vote-buying.
+20. ★★ *(skippable)* ⚠ **`becker-1983-pressure-groups`** — the disciplined version
+    of the same worry: efficiency-raising policies tend to *win*, because their
+    beneficiaries generate gains rather than deadweight costs. So an observed
+    persistent inefficiency is not automatically capture — the paper owes a story
+    about why the beneficiaries of closing the gap produce less pressure than the
+    incumbents. Proposition 3 (successful groups are small relative to those taxed)
+    supplies half of that story.
+21. ★★★ **`hsieh-moretti-2019-housing-constraints`** — the canonical quantification
+    of a locally rational private veto suppressing a good whose benefits are
+    national. **SERIOUS VERSION TRAP unchanged: this file is the NBER WP (8.9%); the
+    published AEJ:Macro figure is 3.7%.**
+22. ★★★ ⚠ **`greaney-2026-comment-hsieh-moretti`** — **mandatory with entry 21.**
+    Re-running the original code flips the sign; repaired, the effect is +0.02%.
+23. ★★ *(skippable)* **`duranton-puga-2023-urban-growth`** — *NEW, and it is the
+    better-behaved version of the same object:* incumbents choose the regulation
+    endogenously, and Table III's asymmetry is the cleanest number in the directory
+    for an under-provision equilibrium — aggregate output per person +7.95% from
+    relaxing planning in seven cities, against a loss to the blocking incumbents of
+    0.046%. Veto is nearly free to the vetoer; the foregone gain lands on people not
+    in the room. Quote 7.95% as a point in a 5.72–8.19% range.
+24. ★★ *(skippable)* **`brynjolfsson-rock-syverson-2017-productivity-paradox`** —
+    *NEW.* Why capability outrunning measured productivity is expected: the binding
+    constraint on a general-purpose technology is the complementary co-invention
+    nobody has paid for yet, ~10× the direct hardware investment in the last
+    computerization wave. That is the paper's claim in national-accounts clothing,
+    and the J-curve is the honest reason a real gain can show up as a measured loss.
+    Pre-transformer, and the lag thesis is unfalsifiable in the short run.
+
+**C. How capacity decays without anyone abolishing it**
+
+25. ★★★ **`mccubbins-noll-weingast-1987-administrative-procedures`** — *NEW, and it
+    opens this movement now.* Procedure is not quality control, it is a control
+    technology: enacting coalitions stack the deck so the agency's environment
+    mirrors the coalition "long after the coalition behind the legislation has
+    disbanded," and control then runs on autopilot without visible oversight. The
+    line this directory was missing is at p. 262 — *defunding independent staff
+    analysis sits inside the deck-stacking taxonomy*, so cumbersome procedure plus no
+    analysis budget is one instrument, not two facts. That makes the withdrawals in
+    movement D design rather than austerity, and it is the published parent of the
+    project's own "standards coordinate interface, not competence" idea. Shelve with
+    its contest (Balla 1998; the Yackee line below).
+26. ★★★ **`teles-2013-kludgeocracy`** — layering, and the kludge industry whose
+    revenue depends on the complexity persisting.
+27. ★★★ **`bagley-2019-procedure-fetish`** — formally neutral procedure *is* the
+    capture channel, with four hard numbers and Olson cited by name at p. 393.
+28. ★★★ ⚠ **`yackee-2022-ossification-states`** — **objection to a load-bearing
+    premise**; 1,460 state agency leaders, 75% promulgate in under a year.
+29. ★★ *(skippable)* ⚠ **`yackee-yackee-2009-ossification-federal`** — *NEW, and the
+    federal companion that should never be separated from entry 28.* All federal
+    rule-writing agencies 1983–2006: procedural constraints if anything speed young
+    rules up. Its diagnosis of how the ossification literature went wrong is the part
+    that transfers — extrapolating from a handful of famous failures to a claim about
+    the whole process is exactly the inferential error the position paper is most
+    exposed to when it reasons from celebrated ninja-gap anecdotes. Bibliographic
+    trap: print citation is JPART 20 (2010) 261–282.
+30. ★★ *(skippable)* **`hacker-2004-privatizing-risk`** — *NEW, and it supplies the
+    vocabulary the rest of this movement has been improvising.* **Drift** — "changes
+    in the operation or effect of policies that occur without significant changes in
+    those policies' structure" — with the argument that drift is usually deliberate:
+    opponents need not repeal anything, only block compensatory adjustment. That is
+    the precise shape of what happens to PPBS and to the counsel institutions in
+    movement D. Evidence is all US social policy; the apparatus transfers, the record
+    does not.
+31. ★★ *(skippable)* **`hinterleitner-2023-growth-of-policies`** — *NEW.* The one
+    hard measured result behind the accumulation story: sectoral policy portfolios
+    grew fivefold across 21 OECD countries 1976–2020 while implementation capacity
+    stayed flat, so marginal policies displace resources from implementing existing
+    ones. Gratton et al.'s mechanism — insulated policymakers overproduce legislation
+    to signal commitment — is the rigorous version of "producing rules is cheap and
+    executing them is not." A review; every number is someone else's.
+32. ★★ *(skippable)* **`gutierrez-philippon-2018-institutional-drift`** — enforcement
+    erodes while statute, agency and org chart stay put; plus the constructive
+    result that rivals will agree ex ante to a more independent rule-setter.
+33. ★★★ ⚠ **`caputo-2026-administrative-law-fourth-settlement`** — the
+    capability–accountability trap, and a sympathiser's objection: machine
+    reason-giving as review currency is "post-hoc storytelling"; substitute audit for
+    explanation.
+
+**D. The analytic machinery installed and abandoned — and counsel built and
+withdrawn**
+
+*This movement did not exist in the 2026-08-05 path: cluster 2 was empty, so the
+arc's hinge was asserted from staff counts. It is now documented at every stage, in
+primary sources, with the defenders and the attackers both present.*
+
+34. ★★★ **`schick-1969-systems-for-analysis-ppb-and-its-alternatives-jec-compendium`**
+    — *NEW, and the single most transferable item in the whole expansion.* Schick
+    does not ask whether PPBS worked; he asks the prior question this project asks
+    about computing — why does an organization with every incentive to optimize
+    systematically fail to? The answer is four forces: routinization of choice,
+    conflict-control through nonanalytic rules like last-year's-level, bottom-up
+    aggregation by people with "little incentive or capability to explore possible
+    departures from established programs," and the limits of budgetary intelligence.
+    Each restates directly in stack terms. **"A Gresham's law is at work: routine
+    drives out analysis" (p. 819)** is the under-provision mechanism stated about an
+    institution, sourced to March & Simon 1958 — a citation the paper can use
+    directly. And p. 820's "Where there are no answers, soon there will be no
+    questions, for there always is a deadline around the corner and a job to be done"
+    is §2.1's satisficing argument in one clause. His structural remedy is the
+    project's own: analysis must be institutionally insulated from the cycle that
+    consumes it, i.e. funded as a commons rather than charged to each product's
+    schedule. Image-only scan; transcribe from page images.
+35. ★★★ ⚠ **`jec-1969-ppb-compendium-vol3-full`** — *NEW.* Congress's own autopsy at
+    the moment of collapse, and it satisfies the contested-findings convention
+    *structurally*: the JEC commissioned the critique and the defence and printed
+    them adjacent — Schick at p. 817, Wildavsky's "Rescuing Policy Analysis from
+    PPBS" at p. 835, Enthoven's and Rivlin's insider accounts, Greenhouse's "The
+    Fatal Triumph of Financial Management Over Economics" at p. 886, Polsby on
+    Congress at p. 943 (the antecedent of the staffing build-out that produced OTA
+    and CBO), and Marvin & Rouse's survey of which agencies had working analytic
+    capacity and which had letterhead. Read this volume before vols. 1 or 2.
+36. ★★★ ⚠ **`wildavsky-1967-political-economy-efficiency-publicinterest`** — the
+    contemporaneous objection, and it is aimed at the paper as much as at PPBS.
+    Cost-benefit and systems analysis are not neutral optimizing machinery but a
+    redistribution of decision rights, and the ratchet is explicit: pure efficiency →
+    mixed efficiency (the analyst reformulates the objective) → total efficiency (the
+    analyst reformulates the decision structure). A commons of continuous
+    optimization that reorganizes the stack around abundant optimization intelligence
+    is making exactly that move, and Wildavsky gives the strongest reason it will be
+    resisted by the people whose discretion it absorbs. Two further hits: the DoD
+    success story was exported before anyone published a study of whether it worked
+    (pp. 42–43), and the formula once installed gets "twisted out of shape" by the
+    interests it constrains (p. 47).
+37. ★★★ ⚠ **`rivlin-1971-systematic-thinking-ch1-gaither-lectures`** — *NEW, and the
+    under-provision claim stated from inside the machinery.* Four propositions after
+    three years running HEW's analytic shop: measurement of problems and of
+    distributional incidence improved a great deal; knowledge of how to actually
+    *produce* better services did not — "neither social service systems nor federal
+    programs are organized to find out." Diagnosis accumulates, capability does not.
+    That is the paper's own asymmetry between abundant benchmarking and absent
+    optimization, in a different domain, from a credible witness. **Objection flagged
+    for a contained reason:** proposition 3 holds that comparing benefits across
+    programs is not achievable and never will be, which bounds any claim that a
+    capable optimizer can allocate across incommensurable objectives — the honest
+    reading is to confine the paper's claim to within-objective optimization.
+38. ★★ *(skippable)* **`jec-1969-ppb-compendium-vol2-full`** — *NEW, and it carries
+    the expansion's single best number.* The Bureau of the Budget's own status
+    report: the entire federal apparatus for evaluating ~$200B of annual spending was
+    ~825 professional positions, a third of them net new, at ~$40M/year — **0.0002 of
+    outlays** — and Carlson notes that generalising the 0.5–1% evaluation earmarks
+    Congress had already legislated for a few programs would raise evaluation funding
+    seventeen- to thirty-three-fold. An under-provision measurement made by the
+    provider, against a benchmark the legislature had already set in the narrow case
+    and declined to generalise. Read the 25 pages of argument; the other 170 are
+    instrument text. Self-defence by the responsible official — read against Marvin &
+    Rouse and Wildavsky in vol. 3.
+39. ★★ *(skippable)* **`rivlin-1969-ppbs-in-hew-lessons-from-experience-jec-compendium`**
+    — *NEW.* The operational detail under entry 37, and the scarcity claim in her own
+    words: the skills to design and interpret effectiveness information "are not
+    presently available in HEW, nor is it easy to find them outside the Government."
+    That is the historical anchor for the paper's argument that what changed is the
+    *supply economics of optimization competence*. Also: the durable product was
+    institutional — a standing analytic staff with a voice in the room, because
+    "decision makers rarely have time to read."
+40. ★★ *(skippable)* **`schick-1970-budget-bureau-that-was-lawcontempprobs`** — *NEW.*
+    The host institution dying: examiners captured by the agencies they reviewed
+    (daily contact, career transfers into them), two-thirds of supervisors in place
+    sixteen years or more so that "it was a labyrinthian task to make even minor
+    modifications," and the demand-side failure — the Bureau required more PPBS
+    material than it could handle and was visibly not practising what it preached.
+    Mandated optimization without provisioning the capacity to absorb its output.
+41. ★★★ **`schick-1973-death-in-the-bureaucracy`** — the death certificate, and the
+    hinge the 2026-08-05 path had to assert. It now arrives with four years of
+    documented context in front of it rather than standing alone.
+42. ★★ *(skippable)* **`gao-1997-performance-budgeting-past-initiatives-ppbs-zbb-mbo`**
+    — *NEW.* The auditor's ledger: Hoover performance budgeting, PPBS, MBO, ZBB —
+    four governmentwide installs, four abandonments. Two findings earn their place:
+    agencies were given **ten weeks** to build program structures DOD had taken
+    **ten years** to build, and the initiatives "faltered in large part because they
+    intentionally attempted to develop performance plans and measures in isolation
+    from congressional oversight and resource allocation processes" — optimization
+    output produced where its consumers could not use it. Plus the abandonment datum
+    in the auditor's voice: discontinued in 1971 "with remarkably little comment."
+43. ★★ *(skippable)* ⚠ **`meyers-2017-congress-insurmountable-obstacle-road-to-ppb`**
+    — *NEW.* The bridge from 1973 to now: the machinery exists, GPRAMA reports are
+    produced, and the legislature that commissioned them declines to read them —
+    with legislators rationally resisting performance information because it exposes
+    their programs to cuts. He entertains the strong structural objection (incapacity
+    as constitutional design) before rejecting it. Half of it is dated 2017 news.
+44. ★★★ **`crimson-1935-littauer-gift`** — pole one in contemporaneous primary form:
+    a $2M gift creating a school to "educate men in a broad way for public service,"
+    explicitly not to train technical specialists. **The directory's framing quote —
+    "a school for a new professional governing class" — is NOT in this file.**
+45. ★★ *(skippable)* **`crimson-1937-littauer-opens`** — counsel supply rationed on
+    purpose, capped at forty to seventy.
+46. ★★★ **`ellwood-2008-policy-school-challenges`** — the purpose stated *and* the
+    decay measured, by a former CBO staffer against himself; the one-sentence bridge
+    from cluster 1 to cluster 2 (schools founded to staff the PPBS-era analytic
+    units), which movement D now makes good on.
+47. ★★★ **`daniels-2021-what-universities-owe-democracy`** — the modern pole of the
+    same obligation, stated by the president of the university where Teles is
+    building his school. Advocacy by an incumbent; re-cite its numbers to primaries,
+    and attribute the constitutional gloss to Teles, not to the book.
+48. ★★ *(skippable)* **`employment-act-1946-statute`** — the paradigm creation
+    document: persons "exceptionally qualified to analyze and interpret" as a
+    condition of office.
+49. ★★★ **`ota-act-1972-statute`** — a legislature declaring in statute that no
+    existing body supplied it competent independent assessment *of technology*, and
+    buying that capacity for $5M over two fiscal years.
+50. ★★★ **`leg-branch-approps-1996-ota-closure`** — *NEW, and the matching bookend
+    the 2026-08-05 path listed as a gap.* $3,615,000 "to carry out the orderly
+    closure," a 17-employee cap, and §114's liquidation inventory down to the Unix
+    system and the photocopiers. Three things only the instrument can show: the
+    killing was done **by appropriation, not repeal** (2 U.S.C. 471 was left standing
+    — never write "Congress abolished the OTA Act"); the same page funds CBO at
+    $24,288,000 with a 232-FTE floor, so the counsel institution that scored budgets
+    survived and the one that scored technology did not, printed in one column of the
+    Statutes at Large; and the physical inventory of an abandoned public good. Read
+    immediately after entry 25 makes sense of it: defunding analysis is a
+    deck-stacking instrument, not an austerity accident.
+51. ★★★ **`bimber-1998-death-of-an-agency-ota`** — the mechanism of the killing: OTA
+    taken as a budget *trophy*, not for savings.
+52. ★★ *(skippable)* **`bimber-1992-institutions-and-information-politics-of-expertise-mit-dissertation`**
+    — *NEW, and the demand-side derivation the closure documents presuppose.* Facing
+    many masters with centrifugal demands, a supplier of expertise survives by
+    manufacturing neutrality — "attempting to offer something for everyone" — and an
+    institution optimized to be acceptable to everyone is owned by no one, which is
+    why it can be closed by a line in an appropriations bill with no defending
+    coalition. That transfers straight onto a shared optimization commons serving
+    heterogeneous consumers: the neutrality that makes it usable by everyone is the
+    property that leaves it in nobody's budget. Image-only scan; the 1996 book
+    supersedes it, and it predates the closure entirely.
+53. ★★★ **`brookings-vital-statistics-congress-staff`** — the decay as a number
+    series: CRS 868 (1980) → 609 (2015); GAO 5,303 (1979) → 2,989 (2015); OTA 10
+    (1974) → 143 → gone. **Do not cite the 1946 GAO figure as lost expertise.**
+54. ★★ *(skippable)* **`teles-2015-upward-redistribution`** — the causal join back to
+    movement B: cut committee staff and the legislature buys its expertise from the
+    regulated. Also the closest published precedent for the federation-underwriter
+    problem (Walker's third-party support) with its own failure mode attached.
+
+**E. The objections, and the precedent for the cure**
+
+55. ★★★ ⚠ **`karlson-2021-critique-entrepreneurial-state`** — **objection aimed at
+    the diagnosis rather than the cure**: market-failure justifications for
+    innovation policy were theoretical, never validated, and cannot be located or
+    sized. It bites hardest here, after the full institutional record, and it forces
+    the paper to say why open/commons supply escapes the policy-failure critique that
+    sinks industrial policy — the more so because the authors cite Frischmann and von
+    Hippel approvingly as the alternative.
+56. ★★ *(skippable)* ⚠ **`karna-karlsson-engberg-2022-political-failure`** — *NEW,
+    and it is Karlson with original measurement.* All 7,161 papers in eight leading
+    innovation journals, 2010–2019: only 3.6% substantively discuss political
+    failure; "median voter" appears in one paper. The standing caveat on any
+    commons-provisioning proposal, in one line — a recommendation succeeds only if it
+    solves a market failure *while* minimizing political failure. Take the count, not
+    the editorial.
+57. ★★ *(skippable)* **`levin-1987-appropriating-returns`** — *NEW, and the
+    measurement the under-provision claim needs, on exactly the right margin.*
+    Continuous optimization is process innovation, and process patents score worst of
+    every appropriability mechanism in the Yale survey (3.52 vs 5.11 for lead time);
+    only 20% of business lines rate them above 4.0. In semiconductors/computers,
+    patents raise imitation costs by 7–15 points against 30–40 in drugs, and an
+    unpatented innovation is duplicated in six to twelve months. So the returns to
+    optimization work, when captured at all, are captured by transient advantages
+    that decay — the mechanism of private under-supply.
+58. ★★ *(skippable)* **`cohen-nelson-walsh-2000-protecting-assets`** — *NEW, the
+    deliberate 1994 replication; cite the pair, never one alone.* Two findings: in
+    complex-product industries 54.8% patent to force cross-licensing against 10.3% in
+    discrete-product ("mostly, your patents are used in horse trading") — the
+    toll-booth layer measured; and the one thing that changed across a period of
+    pro-patent reform was the **rise of secrecy**, the mechanism that most suppresses
+    spillovers, which the authors flag against Griliches and explicitly call an
+    opening for research. That is a credited opening to extend, not a novelty claim.
+59. ★★★ **`heller-eisenberg-1998-anticommons`** — *NEW, and the seminal doctrinal
+    statement of under-provision-by-fragmentation.* The paper already runs on its
+    vocabulary (the capital-cycle companion's toll-booth layer is theirs). Its four
+    obstacles — bundling transaction costs, heterogeneous owner interests, antitrust
+    chill on pooling, and owners overvaluing their own fragment — transfer line for
+    line to a stack where each layer's owner holds a veto over cross-layer
+    optimization and no one holds the privilege to optimize the whole.
+60. ★★★ **`shapiro-2001-patent-thicket`** — the same doctrine in the paper's own
+    industry, with Cournot complements formalized and cross-licenses, pools and
+    standard-setting as the institutional workaround. Image-only scan.
+61. ★★★ **`galasso-schankerman-2014-patents-cumulative`** — *NEW, and the causal
+    test that lands squarely in computing.* Random assignment of Federal Circuit
+    judges: invalidating a patent raises follow-on citations ~50%, ~520% for
+    small-firm citations to invalidated large-firm patents — **only** in computers,
+    electronics and medical instruments, and **only** where a large patentee was
+    blocking small entrants. That is the incumbent-blocks-entrant mechanism the
+    paper's herd/entry-fee argument needs, identified rather than asserted, and it
+    arrives with its own limits: zero effect for most patents, nothing in drugs and
+    chemicals, and the authors refuse the wholesale-scaling-back conclusion.
+62. ★★★ ⚠ **`sampat-williams-2015-patents-follow-on-genome`** — the cleanest causal
+    test of the anticommons claim, finding no quantitatively important effect of gene
+    patents on follow-on innovation. Read as the bound on entries 59–61: the
+    anticommons is real but sector-specific, and the sector where it bites is
+    computing — which is precisely what entry 61 measures.
+63. ★★★ ⚠ **`merges-1996-contracting-liability-rules`** — *NEW, and the
+    Wittman-class objection for the IP half of the record.* Strong property rules push
+    repeat players into private collective rights organizations — ASCAP, BMI, patent
+    pools, the Harry Fox Agency, informal know-how trading — that outperform
+    statutory compulsory licensing, and statutes freeze rates where CROs re-price
+    continuously. If repeat play reliably manufactures the coordinating institution,
+    the good is not under-provided, it is provided by a different mechanism. **The
+    paper's honest reply is the load-bearing distinction of this whole movement:**
+    Merges's CROs coordinate the *exchange of rights*, not the *supply of continuous
+    optimization effort*. Argue that; do not assume it.
+64. ★★★ ⚠ **`bessen-maskin-2009-sequential-innovation`** — *NEW, and it objects in
+    the direction the paper most needs tested.* The reflexive fix for an
+    under-provided public good is stronger property rights; where innovation is
+    sequential and complementary — software, computers, semiconductors, named as such
+    — that fix is backwards, imitation can raise the original inventor's own profit,
+    and firms acquiring the most software patents after protection strengthened cut
+    R&D relative to sales. That gives the paper a **non-altruistic private-incentive
+    account of why a commons participant contributes**, and footnote 4's roster
+    (Apple's "Welcome, IBM. Seriously.", Adobe releasing PostScript and PDF, Cisco
+    contributing patented technology to standards bodies, IBM donating patents to
+    open source) is usable evidence that firms in this industry deliberately invite
+    imitation. Conditional result — it needs specialized capital or a first-mover lag,
+    and Propositions 3–4 concede the static case runs the other way. Image-only scan.
+65. ★★★ **`allen-1983-collective-invention`** — *NEW, and the closest historical
+    precedent in the literature to a performance commons.* Cleveland blast furnaces:
+    continuous incremental optimization (height 50→80 ft, blast 600°F→1400°F) that no
+    individual can be credited with, was not patentable, whose private return fell far
+    below its social value — so it was supplied collectively or not at all. Allen
+    states the under-provision result outright *and* gives the failure mode (invention
+    tracked capital formation, so when investment fell the rate of invention "was
+    doubtless inadequate"), and §6's three candidate explanations for why firms
+    released information are a ready-made menu for why an optimization commons can be
+    privately rational. It also frames the paper's own claim correctly: collective
+    invention receded as oligopoly and the industrial research lab arrived — an
+    institutional withdrawal, not a physical limit.
+66. ★★ *(skippable)* ⚠ **`vonhippel-1987-knowhow-trading`** — *NEW, and the right
+    unit of analysis:* not firms deciding to open-source but individual engineers
+    making unaccounted reciprocal trades of process know-how across firm boundaries.
+    His scope condition is the project's own — trading dominates where know-how is
+    proprietary only by virtue of secrecy and each unit is too small to justify a
+    negotiated licence, which he notes bounds a large universe because most technical
+    progress is small and incremental. **Objection credit:** he disputes Allen's
+    reading of the iron industry directly, arguing the ironmasters may have been
+    selectively trading rather than collectively inventing — print the contest rather
+    than smoothing it. The negative cases (trading halts during competitive bids;
+    Quanex as the documented non-trader) are what keep the commons claim falsifiable.
+67. ★★★ ⚠ **`ferrari-mckelvey-2022-hyperproduction-deep-generative-models`** — *NEW,
+    and the sharpest available objection to the commoditize-the-layer move.*
+    Assetization and asset specificity applied to the layer beneath ML, with named
+    cases where the largest labs are themselves tenants (DeepMind's Unity deal;
+    OpenAI's Rubik's-cube hand). An open or shared optimizing layer can be re-enclosed
+    as a licensed asset one level down, and the entities with the most compute will
+    still pay rent. Pre-ChatGPT; its metaverse bet did not land — cite the mechanism
+    and the licensing facts, not the forecast. (Its author's own later op-ed,
+    `mckelvey-2025-conversation-genai-might-be-worthless` ★★, argues the opposite
+    conclusion from the same premises and is worth a glance for that reason alone.)
+68. ★★★ ⚠ **`bessen-nuvolari-2019-diffusing-without-dissipating`** — **the path still
+    ends on its sharpest challenge**, and the expansion sharpens it further. Support:
+    Lean's Engine Reporter *is* a performance commons; the heaviest reporters earned
+    the highest returns; the binding constraint was "the limited supply of people with
+    the practical knowledge and skills to build, install, operate, and maintain the
+    new technologies." The objection: their model predicts sharing ends when that
+    skill constraint eases — which is exactly what the paper bets machine intelligence
+    does. **New in this pass:** the counter-history is now on disk too —
+    Kitsikopoulos's Preface (★★ ⚠) states his ch. 5 challenge that the Cornish
+    high-pressure engine was patent-driven rather than collectively invented and that
+    Nuvolari mishandled the patent statistics, and his ch. 6 duty-performance finding
+    (best-vs-average gap widening to the mid-1840s, then narrowing into stagnation as
+    Cornwall's share of world copper collapsed) is the ninja-gap curve measured 150
+    years early. Read the Preface for the map; the chapters themselves are still
+    paywalled and the Nuvolari originals are still not in the directory.
+
+**Off the path by design.** All seventeen ★ entries are apparatus, locators or
+superseded captures and are listed in the table above with their reasons — the
+Kitsikopoulos landing-page captures, `jec-1969-ppb-compendium-vol3-contents`
+(superseded by vol3-full), `rivlin-1971-systematic-thinking-contents`,
+`bronner-2020-lessons-budgeting-literature-1930-1969` (self-published, contains
+outright errors; use only to locate primaries), `derthick-quirk-1985-dynamics-of-deregulation-brookings-review` (a book notice, not the book — never cite it as
+Derthick & Quirk), `gao-staa-fact-sheet` (agency marketing; useful only as the
+129-staff-by-2022 rebuild datapoint against the $3,615,000 closure line),
+`mckelvey-simon-frizzera-2025-ics-commons-closure-access-record`,
+`goodman-lehto-2023-knowledge-commons`, `olson-1985-space-agriculture-and-organization-ajae-agecon`,
+`chang-moncur-1984-wrrc-tr165-quotes-olson-rdn-implications-p74`, `mckelvey-2023-walrus-is-chatgpt-even-legal`, `crimson-1969-mpp-launch`,
+`irving-2018-ai-safety-via-debate`. The 2026-08-05 side tracks (accretion
+narratives, patent-and-IP rents, the Harvard timeline) stand unchanged, with the IP
+track now substantially promoted onto the path itself at entries 57–66.
+
+### (d) What changed — which arrivals displaced or reinforced which path entries
+
+**Displaced from the front of the path.** Frischmann and Olson 1996 opened the
+2026-08-05 walk; they are now entries 3 and 4, behind **Arrow 1962** and **Arrow
+1969 (JEC vol. 1)**. The old opening had the argument starting mid-literature and
+made Frischmann carry the "why is it undersupplied" load he does not actually carry
+— he defines the good and locates the failure on the demand side, but the
+underinvestment derivation is Arrow's. This also **closes an open item in
+CLAUDE.md**: §4's missing-markets quartet listed Arrow 1969 as placed from model
+knowledge and unverified; both Arrow papers are now on disk, and 1962 is the correct
+anchor for underinvestment.
+
+**Reinforced, not displaced.** Olson 1996's argumentative template is now shown
+being executed on a real gap by Olson himself (**Olson 1988**, entry 5) — the same
+move the paper makes about ASIC performance, with published arithmetic. And the
+"why hasn't someone bargained to it" question, previously unanswered anywhere in the
+directory, is answered by **Dixit–Olson 2000** (entry 6).
+
+**The gap the old path named as its own largest hole is closed.** The 2026-08-05
+Gaps section said "cluster 2 is empty" and that without a PPBS obituary "the arc's
+hinge is asserted." Movement D now runs **Schick 1969 → JEC vol. 3 → Wildavsky 1967
+→ Rivlin 1971 → (vol. 2, Rivlin 1969, Schick 1970) → Schick 1973 → GAO 1997 →
+Meyers 2017**. Schick 1973 landed 2026-08-16 by JPASS and was already recorded
+above; what this pass adds is the four years of documented context in front of it
+and the retrospective behind it, so the death certificate no longer stands alone.
+The old Gaps item asking for "Rivlin *and* Wildavsky, so cluster 2 has its own
+contest" is satisfied twice over — the contest is not assembled editorially, it was
+printed adjacent by the Joint Economic Committee in 1969.
+
+**A second gap closed.** The old path's entry 19 (OTA Act 1972) noted that the
+statute says nothing about the abolition and that the appropriations line item was
+not in the directory. **`leg-branch-approps-1996-ota-closure`** is now entry 50, and
+it is better than a bookend: it shows the killing was done by appropriation with the
+authorizing statute left standing, and it funds CBO on the same page — the counsel
+institution that scored budgets surviving and the one that scored technology not.
+
+**Newly framed rather than newly evidenced.** **McCubbins–Noll–Weingast 1987** now
+opens movement C, ahead of Teles and Bagley, because it changes what the withdrawals
+in movement D *mean*: defunding independent staff analysis is inside the
+deck-stacking taxonomy, so cumbersome procedure plus no analysis budget is one
+instrument rather than two facts. It is also the published parent of the project's
+own memory item "standards coordinate interface, not competence" — that idea should
+now be built on MNW rather than asserted. **Hacker 2004** supplies the word (*drift*)
+the old path was improvising around at entries 14 and 20.
+
+**The objection tier roughly doubled, and its weight moved.** The old path had six
+objections, all late. There are now 32 across the directory, 18 of them ★★★, each
+sitting behind the claim it contests: **Wittman**, **Elhauge** and **Ansolabehere**
+behind the capture movement; **Yackee–Yackee 2009** beside **Yackee 2022** behind
+the ossification premise; **Wildavsky** and **Rivlin's proposition 3** inside the
+PPBS arc; **Merges** and **Bessen–Maskin** against the property-rights fix;
+**Ferrari–McKelvey** against commoditize-the-layer. Elhauge in particular is the one
+that costs the paper the most work: "under-provided relative to what baseline, and
+who sets it?" is a question §2.1 currently answers implicitly.
+
+**The technical bridge is no longer missing.** The 2026-08-05 pass recorded as a
+confirmed absence that nothing connected policy-capture economics to technical
+under-provision — Frischmann touched infrastructure but not capture, Shapiro touched
+the industry but not counsel institutions. **Bessen 2020** (proprietary,
+non-diffusing software explains most of the concentration rise; $250B/yr),
+**Akcigit–Ates** (diffusion below the welfare optimum in a calibrated GE model),
+**Akcigit–Baslandze–Lotti** (leaders substitute political connection for innovation,
+RD-identified) and **Galasso–Schankerman** (blocking measured, and only in
+computers/electronics) are that bridge, in published work, with their contests
+attached (**Autor**, **Sampat–Williams**). The paper should build on them and drop
+any residual absence framing.
+
+**Who pays is still open, but less so.** The old note "no supply-side account of who
+pays — three fragments and no anchor" is improved rather than resolved:
+**Allen 1983** is the historical existence proof that continuous non-patentable
+optimization was supplied collectively and why it stopped; **von Hippel 1987** gives
+the individual-engineer unit of analysis and the scope condition; **Bessen–Maskin**
+gives the non-altruistic private incentive to be imitated; **Dixit–Olson** names the
+bundling mechanism; **Olson 1995** names the devolution failure mode any such
+arrangement faces. That is now an argument with parts, not a bracket — but nothing
+here measures the cost of provisioning a commons, and that remains the §8 hole.
+
+**Still absent after this pass.** Olson 1982 itself (SJPL holds it in print; both IA
+scans are print-disabled); Price, *The Scientific Estate* (1965); the Teles
+"pulling out where the discretion is" quote, still unsourced; the Nuvolari originals
+that Kitsikopoulos ch. 5 attacks, and ch. 5 itself; Heller's Harvard Law Review 111
+full theory behind the 4-page *Science* piece; and — new to the list — the published
+versions of four working papers now on the path (Akcigit–Ates, Autor,
+Akcigit–Baslandze–Lotti, Lancieri–Posner–Zingales), whose numbers must be checked
+against the journal texts before any of them are printed.

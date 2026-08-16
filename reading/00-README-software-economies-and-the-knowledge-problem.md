@@ -459,12 +459,95 @@ chapter-extract) are flagged per entry above — double-check pagination against
 the journal of record before anything goes into a doc.*
 
 
-## Paywalled list cleared (2026-08-16, JPASS + LSE eprints)
+## Paywalled list cleared (2026-08-16, JPASS) — ranked 2026-08-16
 
-The three items flagged "for your library run" in July are on disk:
-**Lange 1936 + 1937** (both parts of "On the Economic Theory of Socialism,"
-publisher scans — the canonical market-socialism side of the calculation
-debate, wanted since the directory opened) and **Radner 1993**, "The
-Organization of Decentralized Information Processing" (*Econometrica* 61(5) —
-the foundational model for the drift/dynamics section; no open copy existed
-anywhere). Not yet ranked into the July tiers - rank on next pass.
+The three items flagged "for your library run" in July are on disk and ranked
+here. All three are text-layer publisher PDFs, so unlike most of section B they
+can be grepped and quoted directly. Tier placements: 17c and 17d belong to the
+knowledge-problem canon, 44b to the drift/dynamics line.
+
+17c. ★★★ **lange-1936-economic-theory-socialism-part-one.pdf** — Lange, *RES*
+    4(1):53–71, Oct. 1936 (JSTOR 2967660; text layer, 20 pp.). The trial-and-error
+    Central Planning Board in its original published form: prices as an accounting
+    rule, and error announcing itself as a physical shortage or surplus. This is
+    the exact position the whole "formal descendants" half was assembled to test,
+    and the target Hayek 1940 (#19) replies to line by line. §2 sets out Walrasian
+    tâtonnement; §3 transplants it — the Board imposes the *parametric function of
+    prices* on managers as an accounting rule (all accounting done "as if prices
+    were independent of the decisions taken"), fixes prices, and reads its own
+    errors off physical surpluses and shortages at the end of the accounting
+    period. Two rules replace profit maximization (minimize average cost; produce
+    until average cost equals price) and replace free entry. The whole Lange
+    solution in about eight pages, and the deflationary answer the Hayek-criterion
+    section must beat: if Lange is right, a planner needed no special intelligence
+    in 1936 and the "what changed" move loses its premise. Note §3's closing move,
+    the nearest thing in the debate to our own framing — "The Central Planning
+    Board performs the functions of the market" (p. 64): the market as a
+    computation something else can execute. **Substantively redundant with the
+    1938 book (#17b), but the book is a *revised* text — attribute quotes to RES
+    1936, never to Lippincott, and vice versa. Retire #17b to background/archive
+    (it still carries Taylor's 1929 address and Lippincott's introduction, which
+    this file does not), and drop its "cite the RES articles, pagination differs
+    here" workaround: this arrival makes it obsolete.**
+17d. ★★ **lange-1937-economic-theory-socialism-part-two.pdf** — Lange, *RES*
+    4(2):123–142, Feb. 1937 (JSTOR 2967609; text layer, 21 pp.). Lange's welfare
+    case rather than his calculation case, plus the concession that the real risk
+    was never calculation at all but bureaucratization. Completes the citation and
+    carries much less than Part One. §5 argues the formal equivalence between
+    competitive capitalism and planning is exactly that — formal — and that the
+    two differ in the *distribution* condition C and in the comprehensiveness of
+    what enters the price system at all. That second point is the useful one for
+    the wider project: Lange's claim that a planner can "convert its social
+    overhead costs into prime costs" and account for alternatives private cost
+    accounting drops is a 1937 statement of the same under-provision structure the
+    Performance Commons argument runs on, made from the other side of the aisle,
+    and it sits beside the Samuelson/Arrow/Pigou line already held (#65–68). The
+    one load-bearing sentence is the bureaucratization concession — "the real
+    danger of socialism is that of a bureaucratisation of economic life, and not
+    the impossibility of coping with the problem of allocation of resources"
+    (pp. 127–128), volunteered against his own position. **But do not let that
+    line do work it cannot: Lange immediately rules the question out of scope
+    ("belongs to the field of sociology rather than of economic theory"). It is a
+    conceded intuition, not a result.** §6 on the policy of transition is 1930s
+    political sequencing and the Appendix is Marx-exegetical — context at best;
+    §5's business-cycle claim (a socialist economy localizes mistakes, no
+    cumulative demand shrinkage) is an undefended assertion history did not treat
+    kindly. Same revision trap as #17c: attribute to RES 1937, not the book.
+44b. ★★★ **radner-1993-organization-decentralized-information-processing.pdf**
+    — Radner, *Econometrica* 61(5):1109–1146 (JSTOR 2951495; text layer, 39 pp. —
+    this JPASS copy supersedes the image-only scan the July entry above describes).
+    A hard lower bound on how fast any organization can decide: delay grows at
+    least like log₂N, so decision latency cannot be held constant as the thing
+    being managed grows. The sharpest formal result in the batch, and it lands on
+    the criterion's computation-and-latency leg — the thinnest of the four.
+    Managers are capacity-limited processors; efficiency is measured in processors
+    P and delay C; two bounds survive any network shape, P ≥ N/T and C ≥ 1 + log₂N
+    (§1, p. 1114). The second bites: timeliness *cannot* be held fixed while scale
+    rises, however many processors you buy. That converts Hayek's rhetorical "by
+    the time the equations were solved the information would be obsolete" (which
+    Lange quotes from Robbins at #17c p. 56 and waves away) into a theorem,
+    generated inside mainstream economics rather than by Austrians. §7's second
+    example is stronger and is the passage to build the section on: with benefit
+    decaying exponentially in delay, net benefit of processing goes *negative* at
+    sufficient scale — the optimal organization stops observing and decides on the
+    prior ("in a statistical decision problem, this would imply that the decision
+    should be based on prior information, without using any observations,"
+    p. 1138). It also supplies the citation spine: #45 and #46 extend it, and
+    Proposition 1 in §5.3 is Van Zandt's sharpness result in Radner's own
+    notation, so this file is what makes those two readable as a line rather than
+    as orphans. For the Q2/distributed half, Radner is explicit that his subject
+    sits "close to the boundary between economics and computer science" and that
+    his associative-operation trees are literally parallel computation (§1,
+    p. 1111). **Two limits Radner flags himself must travel with any citation.
+    (1) The model covers only *associative* operations; §7.3 says these are
+    believed most amenable to parallelization, so his bounds would be lower bounds
+    for all operations, but "I am not aware of any precise result along these
+    lines" — never present the log bound as general without that hedge. (2) The
+    returns-to-scale verdict flips with the cost specification: increasing returns
+    under a delay cost independent of N (eq. 3.4), decreasing under one
+    proportional to N (eq. 7.1), both plausible — never quote "decreasing returns
+    to scale in information processing" without naming the cost function.**
+    Separately, the P/C bounds count *processors*, so a machine-intelligence
+    rebuttal that cheapens processors attacks the bandwidth/capacity leg and
+    leaves the latency leg untouched. That asymmetry is the argument, and it
+    should be stated that way.
