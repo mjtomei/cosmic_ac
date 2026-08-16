@@ -379,12 +379,23 @@ of summed words.[^r43w]
 [^r43w]: `python prevalence_report.py` for the rates and bootstrap intervals;
     the SO31-vs-OQ permutation is 50,000 label shuffles of the pooled
     prevalence segments. Reported here rather than the old Fisher p = 0.00034,
-    which tested a quantity the study no longer reports.
+    which tested a quantity the study no longer reports. The same script prints
+    the Cochran–Armitage trend statistic on the segment counts (doses
+    OQ < DEBATE < SO31); the adjacent-rung Fisher exacts are computed from the
+    3×2 segment table.
 
 The ordering is exactly what the mechanism predicts — the more preparable the
 format, the more machine drafting — and it is the one place where the lexicon
 arm's inference is confirmed by an independent instrument. Two instruments
 agreeing is worth more than either alone.
+
+The monotone trend across all three rungs is the ladder's proper test, and it
+holds: a Cochran–Armitage trend test on the segment counts (5, 14 and 22 flags
+of 60) gives z = 3.70, p = 2.2 × 10⁻⁴.[^r43w] The two adjacent steps are each
+individually underpowered at 60 segments per cell — SO31 vs Government Orders
+p = 0.16, Government Orders vs OQ p = 0.043 by Fisher exact — so it is the
+trend across the ladder, not any single step between neighbours, that the data
+establish.
 
 **The Oral Questions cell is not Question Period, and reading its flags
 individually says more than the rate does.** The 120–360-word filter retains
@@ -431,7 +442,10 @@ the CA-FED controls all read Human, inside the 1,260/1,260 overall.
 
 Extraction is paragraph-level throughout, so no genre loses whole speeches to
 the length cap; the differential retention above is a property of natural
-utterance length, not of truncation.
+utterance length, not of truncation. Flag rate itself rises with segment length
+(§5), which cuts the same way: the filter keeps Oral Questions' longer segments,
+so the surviving cell is biased *up*, and true Question-Period exchange sits
+lower still.
 
 ### 4.4 The Opus screen tracks Pangram
 
@@ -1482,9 +1496,11 @@ beat" is the whole of that apparatus.
   only clean fixes are a human-coded subsample or grading style-normalised
   text, neither yet done.
 - **Genre cells are not equally representative.** The length filter retains
-  95% of SO31 but 6% of Oral Questions (§4.3). The direction of that
-  selection is conservative for the reported gradient, but it means the OQ
-  figure is not an estimate of Question Period as a whole.
+  95% of SO31 but 6% of Oral Questions (§4.3). Flag rate also rises with
+  segment length within a chamber, so the filter — which keeps the longer
+  tail of each cell — works in the same conservative direction for the
+  reported gradient, but it means the OQ figure is not an estimate of
+  Question Period as a whole.
 - **The quality arm is LLM-graded.** Repeat-pass and cross-account agreement
   both sit at or above the published human inter-coder bar, but
   self-agreement is not inter-coder agreement; the human-coded subsample

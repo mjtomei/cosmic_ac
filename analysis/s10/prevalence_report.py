@@ -190,6 +190,31 @@ def main():
                       f"{'[' + format(100*lo, '.1f') + ', ' + format(100*hi, '.1f') + ']':>16s} "
                       f"{len(sub):>5d}")
 
+        # Cochran-Armitage trend across the three rungs, on SEGMENT counts of
+        # the post-AI stratum with doses OQ=0, DEBATE=1, SO31=2. The pairwise
+        # Fisher exacts leave the two adjacent steps individually underpowered
+        # at 60 segments per cell; the trend test is the ladder's proper
+        # monotonicity statistic and is what the write-up quotes.
+        cells = []
+        for g, x in (("OQ", 0), ("DEBATE", 1), ("SO31", 2)):
+            sub = [r for r in gen if r["genre"] == g and r["stratum"] == "prev"]
+            if sub:
+                cells.append((g, x, len(sub),
+                              sum(1 for r in sub if r["pangram"] in FLAG)))
+        if len(cells) == 3:
+            N = sum(n for _, _, n, _ in cells)
+            R = sum(r for _, _, _, r in cells)
+            pbar = R / N
+            T = sum(x * (r - n * pbar) for _, x, n, r in cells)
+            xbar = sum(x * n for _, x, n, _ in cells) / N
+            varT = pbar * (1 - pbar) * sum(n * (x - xbar) ** 2
+                                           for _, x, n, _ in cells)
+            z = T / math.sqrt(varT) if varT > 0 else float("nan")
+            p = math.erfc(abs(z) / math.sqrt(2))
+            print(f"  Cochran-Armitage trend (segments, doses OQ<DEBATE<SO31): "
+                  f"z = {z:.3f}, p = {p:.2e}  "
+                  f"[{'/'.join(f'{r}of{n}' for _, _, n, r in cells)}]")
+
 
 if __name__ == "__main__":
     main()
