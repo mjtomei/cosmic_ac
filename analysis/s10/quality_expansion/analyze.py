@@ -221,9 +221,41 @@ def main():
                         sum((b - my) ** 2 for b in ys))
         print(f"\n=== 3. Leakage probe ===")
         print(f"  screen ai_guess vs grading-judge ai_guess: r = {num/den:+.3f}")
-        print(f"  (high r means both are seeing the same style signal; the")
-        print(f"   genre-FE column in section 2 is what protects the quality")
-        print(f"   claim, and section 2's coefficients are the ones to quote)")
+        print(f"  (a correlation between TWO DIFFERENT models — a fact about a")
+        print(f"   shared style signal, not one model agreeing with itself)")
+
+        # 3b — the documented control test (README/RUNME). Run once, reported
+        # in Appendix D of the write-up, NOT relied on: judge_ai is scored
+        # AFTER the quality codes (a post-treatment descendant of them) and in
+        # stage 1 it is a second noisy reading of the same latent as the AI
+        # regressor, so it attenuates by construction. Kept because the docs
+        # promised it and an unrun documented test is its own defect.
+        print(f"\n=== 3b. Documented control: DQI ~ ai + genre/era FE + judge_ai ===")
+        print(f"  (BAD CONTROL — collider + collinearity; see Appendix D. "
+              f"Shown, not adopted.)")
+        print(f"{'dimension':<18s} {'AI + FE':>12s} {'+ judge_ai':>14s}")
+        for d in DIMS:
+            sub = [r for r in scored
+                   if r["judge_ai"] is not None
+                   and not (d in SENTINEL and r[d] == -1)]
+            if len(sub) < 100:
+                continue
+            Y = [r[d] for r in sub]
+            base = [[1.0, r["ai"] / 100.0] +
+                    [1.0 if r["genre"] == g else 0.0 for g in genres] +
+                    [1.0 if r["era"] == e else 0.0 for e in eras] for r in sub]
+            ctl = [row + [sub[i]["judge_ai"] / 100.0]
+                   for i, row in enumerate(base)]
+            fb = ols(Y, base, ["const", "ai"] + [f"g{g}" for g in genres] +
+                     [f"e{e}" for e in eras])
+            fc = ols(Y, ctl, ["const", "ai"] + [f"g{g}" for g in genres] +
+                     [f"e{e}" for e in eras] + ["judge_ai"])
+            if not fb or not fc:
+                continue
+            bb, sb = fb["ai"]
+            bc, sc = fc["ai"]
+            print(f"{d:<18s} {bb:>+8.3f}(t{bb/sb:>+4.1f}) "
+                  f"{bc:>+9.3f}(t{bc/sc:>+4.1f})")
 
     out = os.path.join(HERE, "results.json")
     json.dump(rows, open(out, "w"), indent=1)

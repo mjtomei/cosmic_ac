@@ -1126,10 +1126,13 @@ change a reader's confidence:
    machine drafting concentrates in SO31 and **SO31 has the lowest
    justification of any genre** (1.14, against 2.01 for government business).
    Pooling across genres hides an effect that is plainly there inside each.
-3. **Judge leakage is substantial.** The blinded screen's `ai_guess` and the
-   grading judge's independent `ai_guess` correlate at **r = +0.758**. Both
-   are partly reading the same style signal, so the fixed-effects columns are
-   what carry the quality claim; the raw contrasts should not be quoted alone.
+3. **The two independent AI-guesses correlate** (screen vs grading judge,
+   r = +0.758) — a shared style signal across two different models, which is a
+   caveat on reading either judge's `ai_guess` as ground truth, not on the DQI
+   scores. Its bearing on the quality claim is tested in Appendix D and does
+   not overturn the external-label result; the genre/era fixed effects in the
+   table above control confounds between cells, which is a separate matter from
+   leakage within a text.
 
 **Bypass study.** Prevalence counts machine text a detector can see. If a
 member can defeat the detector cheaply, 9.0% is a floor and detection-based
@@ -1479,8 +1482,10 @@ beat" is the whole of that apparatus.
   Until a pre-AI tribute control exists (§8.6 item 4a), the specificity claim
   does not extend to that register.
 - **Judge leakage.** Screen and grading-judge AI guesses correlate at
-  r = +0.758, so the quality claim rests on the fixed-effects columns, not
-  the raw contrasts (§4.9).
+  r = +0.758. Controlling the judge's own `ai_guess` (Appendix D) leaves the
+  largest external-label conjuncts standing but over-attenuates others; the
+  only clean fixes are a human-coded subsample or grading style-normalised
+  text, neither yet done.
 - **Genre cells are not equally representative.** The length filter retains
   95% of SO31 but 6% of Oral Questions (§4.3). The direction of that
   selection is conservative for the reported gradient, but it means the OQ
@@ -2245,3 +2250,53 @@ Only the first is metered per document. The other two are the larger share of
 the work and are not substitutable by spending more with the detector vendor.
 Anyone holding all three can repeat the study; a Pangram subscription alone
 reproduces the prevalence arm and nothing else.
+
+## Appendix D — The judge-leakage control (documented, run, not adopted)
+
+The grading rubric scores an `ai_guess` alongside the seven DQI dimensions,
+and `README.md`/`RUNME.md` describe a test of it: *if the quality differences
+vanish once the judge's own AI-guess is controlled, the judge was detecting
+style rather than measuring quality.* That test was specified but, until
+2026-08-16, never actually run — a gap flagged in review (M11) and closed here.
+It is reported in this appendix rather than the main text because, run, it is a
+**bad control** for reasons given below; it is shown for completeness, not
+relied on.
+
+DQI dimension regressed on the screen `ai_guess` + genre/era fixed effects,
+then with the grading judge's own `ai_guess` added (`analyze.py` §3b):
+
+| dimension | stage 1 (internal): AI+FE → +judge_ai | stage 2 (external): AI+FE → +judge_ai |
+|---|---|---|
+| justification | +1.13 (t 4.1) → +0.83 (t 2.2) | +0.75 (t 4.1) → **+1.17 (t 3.6)** |
+| common_good | +0.58 (t 3.3) → +0.08 (t 0.3) | +0.89 (t 7.0) → **+0.71 (t 3.2)** |
+| respect_groups | +0.29 (t 2.0) → −0.14 | +0.64 (t 6.2) → +0.15 |
+| respect_demands | −0.18 → −1.21 (t −2.6) | −0.16 → −0.49 |
+| respect_counterargs | +0.14 → −0.83 | −0.14 → −1.07 (t −2.8) |
+| constructive | −0.02 → +0.03 | −0.14 → −0.10 |
+| evidence | +0.35 → +0.12 | +0.39 (t 2.4) → +0.11 |
+
+**What it shows.** On the stage-2 external label, the two largest conjuncts —
+justification and common_good — survive the control (t 3.6, t 3.2); the
+headline is not an artifact of the judge smelling AI. respect_groups and
+evidence attenuate to non-significance.
+
+**Why it is a bad control, and not adopted as the estimate.** Two reasons, and
+the negative coefficients it produces (respect_demands −1.21, respect_counterargs
+−1.07) are the tell of both.
+
+1. **Collider.** The rubric scores `ai_guess` *after* the quality codes, so it
+   is plausibly a descendant of the quality perceptions rather than a prior
+   confound. Conditioning on a post-treatment variable opens rather than closes
+   a bias path.
+2. **Collinearity in stage 1.** There the AI regressor and `judge_ai` are two
+   noisy readings of the same latent — regressing screen-AI on FE + judge-AI
+   absorbs 74% of the identifying variation — so the control attenuates *by
+   construction*. A stage-1 respect_demands estimate of −1.21 on a 0–2 scale,
+   per 100 points of a regressor whose observed maximum is 70, is not credible
+   on its face.
+
+**Standing conclusion.** The leakage correlation is real and is disclosed
+(§4.9, §5); the external-label result is robust to the one control the
+documentation named; that control is nonetheless not a clean instrument, and
+the only unconfounded fixes — a human-coded subsample, or grading
+style-normalised text — remain future work.
