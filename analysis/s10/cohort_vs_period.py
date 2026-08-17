@@ -60,6 +60,14 @@ def load_birth():
         if b.get("birth_year") and b.get("prov") and b.get("name"):
             birth.setdefault(f'{b["prov"]}|{FW.norm(b["name"])}',
                              int(b["birth_year"]))
+    # the nine chambers collected 2026-08-17; keys are already corpus-roster
+    # forms, so they join directly
+    m9 = os.path.join(HERE, "covariates_missing9.json")
+    if os.path.exists(m9):
+        for r in json.load(open(m9)):
+            if r.get("birth_year") and not r.get("ambiguous"):
+                birth.setdefault(f'{r["chamber"]}|{r["key"]}',
+                                 int(r["birth_year"]))
     return birth
 
 

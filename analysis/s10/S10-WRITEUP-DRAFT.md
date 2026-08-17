@@ -744,13 +744,40 @@ population, HC1 errors, joint Wald beside every table
 (`member_level_estimation.py`; the reasoning for each choice is in its
 docstring) — settles the section:
 
-**Class is a monotone gradient, strongest at the bottom.** At member level
-(n = 3,413, joint **p = 0.0001**): VIIab **−0.306σ (t = −3.12)**, V/VI
-−0.184σ (t = −2.32), IVc −0.184σ (t = −1.97), IVab −0.078, class I baseline,
-II +0.054 above it. The panel specification agrees jointly (Wald p = 0.029
-pooled, p ≈ 0.078 in each independent panel). Manual and farm members use
-distinctly less of the register than the service classes, about a third of a
-within-chamber standard deviation at the extreme.
+**Class is an inverted U, peaking one rung below the top.** At member level
+across 22 chambers (n = 4,896, joint Wald **p = 0.0000**), reading the raw
+within-chamber means so that every class stands on its own rather than against
+a baseline:
+
+| EGP class | mean z | n |
+|---|---|---|
+| I higher service | −0.088 | 1,767 |
+| **II lower service** | **+0.020** | 2,049 |
+| III routine non-manual | +0.036 | 147 |
+| IVab petty bourgeoisie | −0.092 | 425 |
+| V/VI skilled manual | −0.200 | 222 |
+| VIIab semi- and unskilled | −0.403 | 109 |
+| IVc farmers | −0.439 | 177 |
+
+Class II sits above class I, and everything below the service classes falls
+away sharply. Against class I the contrasts are II **+0.073 (t = 2.49)**, IVc
+−0.260 (t = −3.82), V/VI −0.161 (t = −2.63), VIIab −0.252 (t = −2.99); under
+chamber fixed effects on raw rates the crossover is larger still, +0.650
+(t = 5.17). III is nominally the highest cell but rests on 147 members and is
+not distinguishable from II.
+
+**Who the peak actually is.** The classes are coded from members' own prior
+occupations, so the peak has a concrete membership: class II is teachers (about
+300 of them once the variants are pooled), journalists (73), social workers
+(47), nurses (63). Class I, below it, is lawyers (roughly 500 across the four
+national vocabularies), physicians, accountants, dentists, professors. The
+petty bourgeoisie — businessmen, small proprietors, realtors, insurance and
+stock brokers — is not elevated at all. The register is heaviest among the
+**salaried, credentialled semi-professions**: the teaching, caring and
+communicating occupations, credentialled but not elite-credentialled, employed
+but not propertied. That is a description of who speaks it, not a claim about
+where it came from — §4.5 dates the shift to 1994–96, before anything measured
+here could have produced it.
 
 **The II-over-I crossover is established, by the test that needs no
 normalization at all.** Comparing class II to class I WITHIN each chamber —
@@ -774,13 +801,35 @@ a non-claim: under a chase-and-flight cycle the peak SHOULD migrate downward
 as the top tier's abandonment propagates, so peak location is dynamics, not
 structure (an era-resolved peak test is future work).
 
-**Education matters, with the same top-end structure.** Joint p = 0.0002 at
-member level; the academic ladder runs **+0.065σ/rung (t = 3.42)**; a
-professional degree sits below bachelor's in every specification (−0.449,
-t = −2.22 raw; −0.065, ns, z-scored). The earlier "education is dead"
-verdict was an artifact of raw cross-chamber pooling, where the US chambers
-— nearly universal degree-holding, so almost no covariate variance — swamp
-the estimate; putting chambers on their own scales recovers it.
+**Education makes the same inverted U, and it is the same people.** Read as
+levels rather than as a ladder (22 chambers, cohort controlled, baseline
+bachelor):
+
+| level | mean z | n | vs bachelor |
+|---|---|---|---|
+| secondary | −0.281 | 234 | **−0.166 (t = −2.69)** |
+| college | −0.161 | 371 | **−0.139 (t = −2.67)** |
+| **bachelor** | **+0.042** | 1,194 | baseline |
+| graduate | −0.025 | 1,271 | −0.008 (t = −0.22) |
+| **professional** | −0.130 | 991 | **−0.091 (t = −2.29)** |
+
+Bachelor and graduate form a plateau at the top; both arms fall away
+significantly, and the descending arm is the **professional** degree — law and
+medicine, the most elite credential in the table — measured on 991 members.
+An earlier draft reported this as an ascending "academic ladder" of
++0.065σ/rung. That was a straight line fitted through a hump, and it excluded
+the professional degree as being off the ladder — dropping the one category
+that breaks monotonicity. The block is jointly significant on its own
+(Wald p = 0.0025).
+
+It is not, however, an independent channel. Put class and education in one
+model and the education block goes to **p = 0.18** while class holds at
+**p = 0.0000** — because the two instruments name the same stratum. Teachers,
+nurses and social workers hold bachelor's and master's degrees; lawyers and
+physicians hold professional ones. "Class II, not class I" and "bachelor or
+graduate, not professional" are two descriptions of one group, so whichever
+enters the model first absorbs the other. Education's shape is real and
+independently measured; its apparent separate effect is not.
 
 **Origin is null, and robustly so.** Parental class, 704 members, tested
 under both the panel and member-level specifications: joint p = 0.53–0.59,
