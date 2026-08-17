@@ -23,12 +23,14 @@ accountability* — how much an occupation consists of rendering one's own
 judgment into prose for a superior who can overrule it — rather than status,
 autonomy, or education.
 
-An earlier framing used autonomy ("freedom to make decisions") and was rejected
-before testing, for a reason that is itself part of the hypothesis: **a farmer
-and a miner are about equally unfree, but their requirements are imposed by the
-natural world rather than by a person.** Freedom conflates constraint-by-nature
-with constraint-by-authority; only the second is predicted to generate the
-register.
+Autonomy alone was rejected as the framing, for a reason that is itself part of
+the hypothesis: **a farmer and a miner are about equally unfree, but their
+requirements are imposed by the natural world rather than by a person.** Freedom
+conflates constraint-by-nature with constraint-by-authority, and only the second
+is predicted to generate the register. Autonomy is not discarded, though — the
+claim is about reporting *and* discretion together, so both enter the composite,
+autonomy reverse-scored. What is rejected is autonomy *on its own*, which is why
+the direction split in (C) and the two-half decomposition both exist.
 
 ## The instrument
 
@@ -42,37 +44,43 @@ in the taxonomy.
 
 ### The confirmatory composite (FIXED — no item may be added, dropped or reweighted)
 
-Equally weighted mean of these four, each standardised across occupations:
+The construct is **subordinate account-giving**: rendering your judgment into
+prose for someone above you *and* not holding the final say over it. Reporting
+and autonomy are two faces of one thing rather than two things (Matthew), so
+both enter the composite, with the autonomy items **reverse-scored**.
 
-| element ID | name | block |
-|---|---|---|
-| `4.C.1.a.2.j` | Written Letters and Memos | Work Context |
-| `4.A.3.b.6` | Documenting / Recording Information | Work Activities |
-| `4.A.4.a.2` | Communicating with Supervisors, Peers, or Subordinates | Work Activities |
-| `4.A.4.c.1` | Performing Administrative Activities | Work Activities |
+Equally weighted mean of these six, each standardised across occupations:
 
-**The rule for what goes in the composite.** Items are averaged only if they
-are interchangeable indicators of *one* latent construct — the four above are
-all readings of "how much of this job is rendering judgment into prose for
-someone above you". Anything whose separate contribution we want to **measure**
-gets its own coefficient instead, because averaging it in assumes the answer
-rather than estimating it.
+| element ID | name | sign | block |
+|---|---|---|---|
+| `4.C.1.a.2.j` | Written Letters and Memos | + | Work Context |
+| `4.A.3.b.6` | Documenting / Recording Information | + | Work Activities |
+| `4.A.4.a.2` | Communicating with Supervisors, Peers, or Subordinates | + | Work Activities |
+| `4.A.4.c.1` | Performing Administrative Activities | + | Work Activities |
+| `4.C.3.a.4` | Freedom to Make Decisions | **−** | Work Context |
+| `4.C.3.b.8` | Determine Tasks, Priorities and Goals | **−** | Work Context |
 
-That is why the two below are covariates and not composite items. The hypothesis
-makes a specific claim about each — a *negative* one about autonomy (a farmer
-and a miner are equally unfree, yet neither answers to a person, so freedom is
-the wrong axis) and a *positive* one about education (the supply side of the
-two-factor account). Folding either in would bake the claim in; giving it a
-coefficient tests it. Note this privileges two elements out of ~271 purely
-because the theory names them, which is the legitimate use of pre-registration
-but should be explicit: every other element reaches the model only through the
-free-model pool.
+Including autonomy negatively is not a free parameter — it is a prediction, and
+it sharpens the case the hypothesis has to explain. Class I documents heavily
+(lawyers, physicians, senior administrators) but holds high discretion, so the
+reverse-scored terms pull it down; that is precisely the II-over-I crossover the
+composite must reproduce. It also keeps the farmer where the theory wants him:
+low reporting *and* high freedom, low on both halves.
 
-| element ID | name | why separate |
-|---|---|---|
-| `4.C.3.a.4` | Freedom to Make Decisions | the autonomy axis this hypothesis rejects as insufficient |
-| `4.C.3.b.8` | Determine Tasks, Priorities and Goals | second autonomy item, replaces the retired structured/unstructured scale |
-| Job Zone / education | required education | literacy resources, the supply side of the two-factor account |
+**Only one separate covariate.** Required education (Job Zone, or Education
+Level Required) is not part of the construct — it is the *supply* side of the
+two-factor account, the resources needed to produce the register at all, as
+against the demand the composite measures. It therefore gets its own
+coefficient rather than being averaged in.
+
+**Pre-specified decomposition (secondary, not a re-definition).** The composite
+is reported first and is what the hypothesis stands or falls on. Alongside it,
+and fixed here, the two halves are also reported separately — the four
+accountability items as one score, the two autonomy items as another — so it is
+visible which half carries the result. This is a decomposition of a fixed
+composite, not licence to re-weight it: if the autonomy half does all the work,
+that is reported as such and the hypothesis is revised in a later study, not
+here.
 
 ### The full element set
 
@@ -169,7 +177,7 @@ Member-level, matching the canonical spec in `member_level_estimation.py`: one
 observation per legislator, equal weight, register z-scored within chamber
 against the chamber's full member population, HC1 errors.
 
-    (A) z ~ accountability + freedom + required_education    (+ birth decade)
+    (A) z ~ account_giving + required_education              (+ birth decade)
     (B) z ~ social − realistic + required_education          (+ birth decade)
     (C) z ~ upward + lateral + downward + required_education (+ birth decade)
     (D) z ~ EGP class dummies                                (+ birth decade)
@@ -184,7 +192,10 @@ nuisance.
 
 ## Pre-specified predictions
 
-1. **Accountability is positive and survives** freedom and required education.
+1. **The account-giving composite is positive and survives** required
+   education. Its two halves are also reported separately (see the composite
+   section); the hypothesis predicts the reporting half positive and the
+   autonomy half negative, i.e. both pointing the same way once reverse-scored.
 2. **Sociality also predicts**, because the two constructs overlap by
    construction — a job requiring interaction with an individual involves
    reporting to them in some sense. A positive result for (B) is expected and is
