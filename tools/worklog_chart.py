@@ -53,6 +53,7 @@ import datetime
 import glob
 import json
 import os
+import statistics
 import subprocess
 import sys
 from collections import defaultdict
@@ -156,6 +157,18 @@ def is_human_message(entry):
 FOREIGN_REF_MIN = 5          # references to the repo before a session started
                              # elsewhere counts as work on this repo
 
+# Rulings on sessions filed under another project directory. The automatic test
+# cannot separate working on this repo from mentioning it — the genuine 07-03
+# session never opened a file here (it drove tmux) while the coherence session
+# that only discussed the paper did — so the calls are recorded by hand and the
+# undecided ones are reported rather than guessed at.
+FOREIGN_RULINGS = {
+    # session-id prefix: (counts?, why)
+    "dc16072e": (True,  "2026-07-03 from ~: set up this project's tmux panes"),
+    "45e78f09": (False, "coherence's own work; only mentions this paper "
+                        "(Matthew, 2026-08-17)"),
+}
+
 
 def foreign_session_files():
     """Session files in OTHER project directories that worked on this repo.
@@ -208,8 +221,12 @@ def session_intervals_by_file(human_only=True, include_foreign=False):
     gap = datetime.timedelta(minutes=SESSION_GAP_MIN)
     per_session = {}
     files = {f for g in SESSION_GLOBS for f in glob.glob(g)}
-    foreign = foreign_session_files() if include_foreign else {}
-    files = sorted(files | set(foreign))
+    for path in foreign_session_files():
+        counts, _ = FOREIGN_RULINGS.get(os.path.basename(path)[:8],
+                                        (include_foreign, ""))
+        if counts:
+            files.add(path)
+    files = sorted(files)
     for f in files:
         ts = []
         with open(f, errors="replace") as fh:
@@ -389,6 +406,50 @@ def render_weekly(day, nsess, width=40):
     return header + "\n".join(lines) + "\n" + footer
 
 
+def summary_stats(day, windows=(7, 30, None)):
+    """Mean and SD of hours/day over trailing windows.
+
+    Two means, because they answer different questions and diverge a lot here:
+    per CALENDAR day in the window (zero days included — the honest "how much
+    per day did this project get") and per ACTIVE day (how heavy a working day
+    is when there is one). Quoting only the first makes a focused worker look
+    idle; only the second hides how many days were skipped.
+
+    SD is the sample SD over calendar days, so it reflects the on/off pattern
+    rather than only the variation among working days.
+    """
+    if not day:
+        return ""
+    today = datetime.datetime.now(TZ).date()
+    first = min(day)
+    rows = []
+    for w in windows:
+        start = first if w is None else today - datetime.timedelta(days=w - 1)
+        start = max(start, first)
+        n_days = (today - start).days + 1
+        vals = [day.get(start + datetime.timedelta(days=i), 0.0)
+                for i in range(n_days)]
+        if not vals:
+            continue
+        act = [v for v in vals if v > 0]
+        mean = statistics.fmean(vals)
+        sd = statistics.stdev(vals) if len(vals) > 1 else 0.0
+        rows.append((
+            "all" if w is None else f"last {w}",
+            n_days, len(act), mean, sd,
+            statistics.fmean(act) if act else 0.0,
+        ))
+    if not rows:
+        return ""
+    out = ["", "         window     days  active   mean h/d      SD   mean h/active-d",
+           "         " + "-" * 62]
+    for name, n, a, mean, sd, amean in rows:
+        out.append(f"         {name:<10} {n:5d}  {a:6d}   {mean:8.2f}  {sd:6.2f}"
+                   f"   {amean:13.2f}")
+    out.append("         mean and SD are per calendar day, zero days included")
+    return "\n".join(out)
+
+
 def build(since=None, want_gross=True, human_only=True, include_foreign=False):
     per_session = session_intervals_by_file(human_only=human_only,
                                            include_foreign=include_foreign)
@@ -443,14 +504,22 @@ def main():
             include_foreign=args.include_foreign)
         cand = foreign_session_files()
         if cand:
-            verb = "counted" if args.include_foreign else "NOT counted"
             print(f"note: {len(cand)} session(s) outside this repo's project "
-                  f"directory reference it ({verb}; --include-foreign to add):")
+                  f"directory reference it:")
             for path, n in sorted(cand.items()):
-                print(f"  {os.path.basename(path)[:8]}  "
-                      f"{os.path.basename(os.path.dirname(path)):32} {n} refs")
+                sid = os.path.basename(path)[:8]
+                ruled = FOREIGN_RULINGS.get(sid)
+                if ruled is None:
+                    mark = "counted" if args.include_foreign else "not counted"
+                    why = "undecided; --include-foreign to add"
+                else:
+                    mark = "counted" if ruled[0] else "not counted"
+                    why = ruled[1]
+                print(f"  {sid}  {os.path.basename(os.path.dirname(path)):30} "
+                      f"{n:3d} refs  [{mark}] {why}")
             print()
         print(render_weekly(day, nsess) if args.weekly else chart)
+        print(summary_stats(day))
         if args.per_session:
             print("\nPer-session active hours (sums above the union — they overlap):")
             rows = []
