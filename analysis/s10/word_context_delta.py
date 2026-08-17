@@ -272,10 +272,124 @@ def report(args):
             print(f"{ch:<7s} {key:<6s} {ch_:>+9.4f}  [{lo:+.4f}, {hi:+.4f}]{star}")
 
 
+def _cells(fam):
+    """Per-(chamber, era) mean normalised delta for one model family.
+
+    report() hardcodes the qwen3 full-trace files, so --family=mistral never
+    reached them; this reads the right pair for whichever family is asked for.
+    """
+    occ = {"qwen3": ("base_occ_lp.json", "instruct_occ_lp.json"),
+           "mistral": ("mistral_base_occ_lp.json",
+                       "mistral_instruct_occ_lp.json")}[fam]
+    full = {"qwen3": ("qwen3_base_lp.json", "qwen3_instruct_lp.json"),
+            "mistral": ("mistral_base_lp.json",
+                        "mistral_instruct_lp.json")}[fam]
+    items = json.load(open(os.path.join(_HERE, ITEMS)))
+    base = json.load(open(os.path.join(_HERE, OUT, occ[0])))
+    inst = json.load(open(os.path.join(_HERE, OUT, occ[1])))
+    fb = json.load(open(os.path.join(_HERE, "align_ratio", full[0])))
+    fi = json.load(open(os.path.join(_HERE, "align_ratio", full[1])))
+    rows = defaultdict(list)
+    for it, bo, io, (bt, bn), (itt, itn) in zip(items, base, inst, fb, fi):
+        di, ni = 0.0, 0
+        for (bl, btk, bi), (il, itk, ii) in zip(bo, io):
+            if not bi:
+                continue
+            di += (il - bl) / max(btk, 1)
+            ni += 1
+        if not ni:
+            continue
+        fulld = (itt - bt) / max(min(bn, itn), 1)
+        rows[(it["chamber"], it["era"])].append(
+            {"norm": di / ni - fulld, "turn": it["turn_id"]})
+    return rows
+
+
+def pooled(args):
+    """The number §4.8 actually prints: the two-family, five-chamber pooled
+    pre->post change in the normalised instrument-position delta, with a
+    clustered bootstrap over speeches and a design-based permutation test.
+
+    Previously this existed only as prose -- report() prints five Qwen3 rows
+    and no pooled statistic, so the footnote's invocation could not produce the
+    sentence's number. B defaults to 2,000 because at B=400 the 2.5% percentile
+    carries about one Monte-Carlo SE of noise, which is the whole width of the
+    lower bound's distance from zero; the point estimate and the permutation p
+    are stable regardless.
+    """
+    B = getattr(args, "boot", None) or 2000
+    seed = getattr(args, "seed", None) or 6
+    rng = random.Random(seed)
+    CH = ("ie", "ca", "uk", "ush", "uss")
+    fams = ("qwen3", "mistral")
+    cells, cellrows = {}, {}
+    for fam in fams:
+        r = _cells(fam)
+        for ch in CH:
+            pre, post = r.get((ch, "pre")), r.get((ch, "post"))
+            if not (pre and post):
+                continue
+            mp = sum(x["norm"] for x in pre) / len(pre)
+            mq = sum(x["norm"] for x in post) / len(post)
+            cells[(fam, ch)] = mq - mp
+            cellrows[(fam, ch)] = (pre, post)
+    vals = list(cells.values())
+    point = sum(vals) / len(vals)
+    npos = sum(1 for v in vals if v > 0)
+    print(f"pooled over {len(vals)} cells ({len(fams)} families x {len(CH)} "
+          f"chambers), normalised estimand")
+    print(f"{'cell':<16s}{'change':>10s}")
+    for k in sorted(cells):
+        print(f"  {k[0]+'/'+k[1]:<14s}{cells[k]:>+10.4f}")
+    print(f"\n  POOLED {point:+.4f}   positive in {npos}/{len(vals)} cells")
+
+    def draw():
+        tot = 0.0
+        for k, (pre, post) in cellrows.items():
+            def cl(rs):
+                byt = defaultdict(list)
+                for r in rs:
+                    byt[r["turn"]].append(r["norm"])
+                ks = list(byt)
+                s_ = t_ = 0
+                for _ in range(len(ks)):
+                    vv = byt[ks[rng.randrange(len(ks))]]
+                    s_ += sum(vv)
+                    t_ += len(vv)
+                return s_ / t_
+            tot += cl(post) - cl(pre)
+        return tot / len(cellrows)
+    dd = sorted(draw() for _ in range(B))
+    lo, hi = dd[int(.025 * B)], dd[int(.975 * B) - 1]
+    ple = sum(1 for v in dd if v <= 0) / B
+    print(f"  clustered bootstrap B={B}, seed={seed}: 95% CI "
+          f"[{lo:+.4f}, {hi:+.4f}], P(<=0) = {ple:.3f}")
+
+    # design-based permutation: shuffle era labels within chamber x family
+    perm = 0
+    P = 3000
+    for _ in range(P):
+        tot = 0.0
+        for k, (pre, post) in cellrows.items():
+            allr = pre + post
+            idx = list(range(len(allr)))
+            rng.shuffle(idx)
+            a = [allr[i] for i in idx[:len(pre)]]
+            b = [allr[i] for i in idx[len(pre):]]
+            tot += (sum(x["norm"] for x in b) / len(b)
+                    - sum(x["norm"] for x in a) / len(a))
+        if tot / len(cellrows) >= point:
+            perm += 1
+    print(f"  permutation test (era labels shuffled within cell, {P} draws): "
+          f"one-sided p = {(perm + 1) / (P + 1):.4f}")
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("mode", choices=["score", "report"])
+    ap.add_argument("mode", choices=["score", "report", "pooled"])
     ap.add_argument("--batch", type=int, default=16)
     ap.add_argument("--family", default="qwen3")
+    ap.add_argument("--boot", type=int, default=2000)
+    ap.add_argument("--seed", type=int, default=6)
     a = ap.parse_args()
-    (score if a.mode == "score" else report)(a)
+    {"score": score, "report": report, "pooled": pooled}[a.mode](a)
