@@ -2155,6 +2155,30 @@ climbs. What does carry is measured on individuals, not on chambers.
 6. **Content-word control** and **Mistral synthetic corpus** — cut (§3.4).
 7. **Pre-per-year prevalence point estimates** — superseded by the per-year
    series and then by the 19-chamber panel.
+8. **Two arrival-premium measures of cohort** — the pre-2026-08-17 basis for
+   "cohort replacement, not incumbent conversion". Both are replaced by the
+   birth-vs-spoken-year split in §4.6, which reads the generational gradient
+   directly instead of through arrival.
+   - *The one-shot decomposition premium* (+1.88 per 1,000, CI [+1.26, +2.49],
+     positive in 15/16 chambers) compared members who entered after 2010
+     against the pre-2010 old guard, both measured in 2015–19. It is a
+     cumulative early-vs-late contrast, so its size depends on the two window
+     choices, and it cannot separate arriving-with-more-register from
+     having-served-less-long.
+   - *The rolling premium* (each year's fresh intake against sitting members)
+     was the version that could speak to change over time, and its trend is a
+     null: pooled ≈ 0 across 21 chambers, chamber-heterogeneous, with no rise
+     during the 1994–96 onset (`panel_arrival_premium.py`). An earlier claim
+     that the premium "grows" across intakes is not supported. It also carries
+     a confound the replacement avoids — the newest members have their own
+     reasons to write differently, so a marginal newcomer gap is not cleanly a
+     cohort measure.
+   - *The ~60% arithmetic closure* (mean birth year advancing 13.8 years at
+     +0.093/yr predicting +1.28 of an observed +2.06) rested on those windows
+     and on a province-only panel; the regression in §4.6 supersedes it.
+   Retained here because the cohort claim itself survived all three and is now
+   carried by a cleaner instrument — what changed is the measurement, not the
+   finding.
 
 ## Appendix C — Replication and reproducibility
 
