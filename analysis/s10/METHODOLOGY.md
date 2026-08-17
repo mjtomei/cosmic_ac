@@ -374,7 +374,7 @@ calibrated detector says, segment by segment**.
 
 Two detectors are available and neither has any connection to Kobak's list:
 Pangram (calibrated in-domain, 423/423 specificity, but expensive so only ~120
-unbiased segments) and the Opus screen (AUC 0.951 against Pangram, run over
+unbiased segments) and the Opus screen (AUC 0.954 against Pangram, run over
 all 37,801 NB segments).
 
 **The list is specific.** Per-segment density predicts the Opus score at
@@ -548,8 +548,8 @@ The obvious worry is that "eight detectors found nothing" might just mean
 zero-shot detectors do not work on transcribed parliamentary speech. It does
 not, because *other* instruments find plenty in the very same corpus: Pangram
 individually confirmed **576 of 643** tail segments as AI or Mixed (89.6%),
-and a frontier LLM screen separates its verdicts at AUC 0.951 while open-weight
-models manage 0.55–0.72 (§4.2).
+and a frontier LLM screen separates its verdicts at AUC 0.95 while open-weight
+models manage 0.52–0.69 (§4.2).
 
 So the same segments that eight statistical detectors rate unremarkable are
 adjudicated AI by a calibrated commercial classifier and recovered by a
@@ -565,16 +565,17 @@ reported.*
 
 ### 4.2 Prompt-based detection, and the capability finding
 
-Same blinded pool, same question, six configurations:
+Same blinded pool, same question, six configurations (AUC against Pangram 4;
+`python opus_screen_auc.py`):
 
 | detector | AUC vs Pangram |
 |---|---|
-| Claude Opus 5 (low effort) | **0.951** |
-| Claude Fable 5 (high effort) | 0.936 |
-| Qwen3-32B (thinking) | 0.721 |
-| gpt-oss-120b (high reasoning) | 0.672 |
-| gpt-oss-120b (low reasoning) | 0.657 |
-| Qwen3-32B (no thinking) | 0.549 |
+| Claude Opus 5 (low effort) | **0.948** |
+| Claude Fable 5 (high effort) | 0.948 |
+| Qwen3-32B (thinking) | 0.693 |
+| gpt-oss-120b (high reasoning) | 0.650 |
+| gpt-oss-120b (low reasoning) | 0.635 |
+| Qwen3-32B (no thinking) | 0.522 |
 
 Reasoning effort helps the open models somewhat but never closes a ~0.25 AUC
 gap. **Detecting edited AI in this register is frontier-capability-bound** —
@@ -659,7 +660,7 @@ cheap instrument does not need to be accurate — only correlated with truth —
 because stratum weights are known exactly from the full corpus.**
 
 In practice a lean Claude Opus screen (low effort, detection-only prompt)
-scored all 37,801 NB segments for ~17M tokens, at AUC 0.951 against Pangram.
+scored all 37,801 NB segments for ~17M tokens, at AUC 0.954 against Pangram.
 Its precision is monotone in score — 100% at 90+, 83% at 50–59 — which is
 what a well-behaved stratifier looks like.
 
@@ -1729,7 +1730,7 @@ psychological inference on post-2023 institutional text is now unsafe.
 | 8.3% prevalence (NB) | ~1 in 12 recent NB segments is AI-flagged | anything about other chambers *(pending)* |
 | Sp = 1.0 measured (423/423) | no inflation from false positives | that Se = 1 on *edited* AI — unmeasured, so 7.5% is a floor (§4.3) |
 | 89.6% of 643 confirmed | the screen is a precise stratifier | a corpus-wide rate |
-| AUC 0.951 (Opus screen) | frontier LLMs track a commercial detector | that either tracks ground truth |
+| AUC 0.954 (Opus screen) | frontier LLMs track a commercial detector | that either tracks ground truth |
 
 **And one wording constraint.** In Canada the absolute volume of AI-style
 vocabulary *fell* (bootstrap CIs 0.925 and 0.916). It fell less than

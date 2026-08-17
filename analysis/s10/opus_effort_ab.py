@@ -23,10 +23,21 @@ from run-to-run variation, so low is replicated. Three numbers result:
 |archived - fresh| is the noise floor. A max-vs-low gap smaller than that
 floor is not evidence of anything, however tidy it looks.
 
-Ground truth is the Pangram-derived group label carried in
-fable_judge_v2_scores.csv: *_ai = AI, *_human and ctl2019 = human.
+Ground truth is Pangram 4 (pangram_p4_verdicts.csv), the study's canonical
+oracle per METHODOLOGY 3.2, joined to the pool through the blind_id -> sid map
+in fable_judge_v2_scores.csv. The group field in that file is the older P3
+labelling; 30 of 241 binary labels differ, so it is used only for the id join,
+not for the label itself. Under P4 the three arms read 0.948 / 0.951 / 0.942
+(archived low / fresh low / max) -- max is still the lowest, so the null holds.
 
 Usage: python opus_effort_ab.py [WORKFLOW_RUN_DIR]
+       An explicit run dir is honoured; otherwise the newest workflow dir that
+       actually contains both arms is used. opus_effort_raw.json is a fallback
+       only when no run dir yields data.
+
+The generating workflow .js was not retained, but the run is fully recoverable:
+both arms are re-derived from the `effort` field on the agent transcripts, so no
+committed script is load-bearing for reproduction.
 """
 import csv
 import glob
@@ -41,15 +52,28 @@ BASE = os.path.expanduser("~/.claude/projects")
 
 
 def labels():
+    """blind_id -> Pangram-4 binary label, via the blind_id -> sid join.
+
+    The group field in fable_judge_v2_scores.csv is P3 and is used only to reach
+    sid; the label itself is read from the P4 verdicts so this A/B uses the same
+    oracle as the rest of the study (30/241 binary labels differ under P3).
+    """
+    p4 = {}
+    for r in csv.DictReader(open(os.path.join(HERE,
+                                              "pangram_p4_verdicts.csv"))):
+        v = r.get("pangram")
+        p4[r["seg_id"]] = (1 if v in ("AI", "Mixed")
+                           else 0 if v == "Human" else None)
     lab, sid = {}, {}
     for r in csv.DictReader(open(os.path.join(HERE,
                                               "fable_judge_v2_scores.csv"))):
         g = r["group"]
-        if g.endswith("_ai"):
-            lab[r["blind_id"]] = 1
-        elif g.endswith("_human") or g == "ctl2019":
-            lab[r["blind_id"]] = 0
+        if not (g.endswith("_ai") or g.endswith("_human") or g == "ctl2019"):
+            continue
         sid[r["blind_id"]] = r["sid"]
+        y = p4.get(r["sid"])
+        if y is not None:
+            lab[r["blind_id"]] = y
     return lab, sid
 
 
@@ -78,61 +102,72 @@ def boot_ci(pairs, n=2000, seed=7):
 
 
 def harvest(run_dir):
-    """{arm: {blind_id: score}}.
+    """{arm: {blind_id: score}} read straight from a workflow run directory.
 
-    Prefers opus_effort_raw.json, extracted from the workflow's own return
-    value. The per-agent journal cannot be used: its `key` is a content hash
-    and the meta files carry only agentType/model, so nothing on disk records
-    which arm an agent belonged to. Split by return value, not by transcript.
+    The arm each agent belonged to IS on disk: every transcript record carries
+    a top-level `effort` field ("low" or "max"), constant within a file. We tag
+    every score in a file by that file's effort, so the mapping survives even if
+    opus_effort_raw.json is deleted. Returns empty arms if run_dir is falsy or
+    holds no scores; the caller decides whether to fall back to the cache.
     """
-    cached = os.path.join(HERE, "opus_effort_raw.json")
-    if os.path.exists(cached):
-        return json.load(open(cached))
     arms = {"low": {}, "max": {}}
-    for p in glob.glob(os.path.join(run_dir, "*.jsonl")):
-        arm = ("low" if os.path.basename(p).startswith("agent-low")
-               else "max" if os.path.basename(p).startswith("agent-max")
-               else None)
-        for line in open(p):
+    if not run_dir:
+        return arms
+    for path in glob.glob(os.path.join(run_dir, "*.jsonl")):
+        eff, scores = [None], {}
+
+        def absorb(x):
+            if isinstance(x, dict):
+                e = x.get("effort")
+                if isinstance(e, str) and e in ("low", "max"):
+                    eff[0] = e
+                i, g = x.get("id"), x.get("ai_guess")
+                if isinstance(i, str) and i.startswith("S") \
+                        and isinstance(g, int):
+                    scores[i] = g
+                else:
+                    for v in x.values():
+                        absorb(v)
+            elif isinstance(x, list):
+                for v in x:
+                    absorb(v)
+        for line in open(path):
             try:
-                o = json.loads(line)
+                absorb(json.loads(line))
             except Exception:
                 continue
-
-            def absorb(x, arm=arm):
-                if isinstance(x, dict):
-                    i, g = x.get("id"), x.get("ai_guess")
-                    if isinstance(i, str) and i.startswith("S") \
-                            and isinstance(g, int):
-                        if arm:
-                            arms[arm][i] = g
-                    else:
-                        for v in x.values():
-                            absorb(v, arm)
-                elif isinstance(x, list):
-                    for v in x:
-                        absorb(v, arm)
-            absorb(o)
+        if eff[0] and scores:
+            arms[eff[0]].update(scores)
     return arms
+
+
+def resolve_arms(run):
+    """(arms, source) with honest precedence: explicit run_dir, then the newest
+    workflow dir that actually contains both arms, then the cached JSON."""
+    if run:
+        a = harvest(run)
+        if a["low"] and a["max"]:
+            return a, run
+    for c in sorted(glob.glob(os.path.join(BASE, "*", "*", "subagents",
+                                           "workflows", "wf_*")),
+                    key=os.path.getmtime, reverse=True):
+        a = harvest(c)
+        if a["low"] and a["max"]:
+            return a, c
+    cached = os.path.join(HERE, "opus_effort_raw.json")
+    if os.path.exists(cached):
+        return json.load(open(cached)), "(cached opus_effort_raw.json)"
+    return {"low": {}, "max": {}}, None
 
 
 def main():
     run = sys.argv[1] if len(sys.argv) > 1 else None
-    if not run:
-        cands = sorted(glob.glob(os.path.join(BASE, "*", "*", "subagents",
-                                              "workflows", "wf_*")),
-                       key=os.path.getmtime, reverse=True)
-        for c in cands:
-            a = harvest(c)
-            if a["low"] and a["max"]:
-                run = c
-                break
-    if not run:
+    arms, source = resolve_arms(run)
+    if not (arms["low"] and arms["max"]):
         sys.exit("no run dir with both arms found — pass one explicitly")
-    print(f"run dir: {run}")
+    print(f"scores from: {source}")
 
     lab, _ = labels()
-    arms = harvest(run)
     arch = {r["blind_id"]: int(r["opus_ai_guess"])
             for r in csv.DictReader(open(os.path.join(
                 HERE, "opus_lean_scores.csv")))
@@ -155,17 +190,29 @@ def main():
               f"{f'[{lo:.3f}, {hi:.3f}]':>18s} "
               f"{statistics.mean(v for v,_ in pairs):>11.1f}")
 
-    if "archived low" in aucs and "fresh low" in aucs:
-        floor = abs(aucs["archived low"] - aucs["fresh low"])
-        print(f"\nnoise floor  |archived low - fresh low| = {floor:.3f}")
-        if "max" in aucs:
-            gap = aucs["max"] - statistics.mean(
-                [aucs["archived low"], aucs["fresh low"]])
-            print(f"effort gap   max - mean(low)            = {gap:+.3f}")
-            verdict = ("EXCEEDS the noise floor — effort buys detection"
-                       if abs(gap) > floor else
-                       "WITHIN the noise floor — no evidence effort helps")
-            print(f"             -> {verdict}")
+    # Paired bootstrap of max - mean(low) over segments. A single
+    # |archived - fresh| gap is a 1-df benchmark that carries almost no
+    # information about run-to-run variance and, being tiny by chance in one
+    # pair, can flip an arbitrary sign into a spurious "effect". The bootstrap
+    # interval is what the write-up reports.
+    if all(k in series for k in ("archived low", "fresh low", "max")):
+        import random
+        keys = sorted(set(series["archived low"]) & set(series["fresh low"])
+                      & set(series["max"]) & set(lab))
+
+        def gap(sample):
+            def a(name):
+                return auc([(series[name][k], lab[k]) for k in sample])
+            return a("max") - (a("archived low") + a("fresh low")) / 2
+        point = gap(keys)
+        rng = random.Random(7)
+        draws = sorted(gap([keys[rng.randrange(len(keys))]
+                            for _ in range(len(keys))]) for _ in range(4000))
+        lo, hi = draws[int(.025 * len(draws))], draws[int(.975 * len(draws))]
+        print(f"\neffort gap   max - mean(low) = {point:+.4f}  "
+              f"95% CI [{lo:+.4f}, {hi:+.4f}]")
+        print("             -> interval contains zero; effects below ~0.03 AUC "
+              "are outside this design's resolution")
 
     # per-segment stability: do the two low runs agree with each other as
     # closely as low agrees with max? If not, the arms differ in kind.

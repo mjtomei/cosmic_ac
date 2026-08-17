@@ -458,42 +458,53 @@ separates Pangram's classes cleanly on the 618-segment overlap:
 | Mixed | 26 | 44.8 |
 | Human | 514 | **11.9** |
 
-This matters for two reasons: it is a cheap stratifier for future work, and
-the **disagreements are informative** — 45 Pangram-AI hits score below 50 on
-Opus, 9 below 30. Those are naturally occurring partial bypasses and seed the
-study in §4.9.
+The deployed screen — the run over all 37,801 segments — separates Pangram's
+AI and human classes at **AUC 0.954** [0.934, 0.971] on the 618-segment
+overlap, and it is a cheap stratifier for future work.[^r44dep] The pool is a
+case-control mixture whose human class is drawn partly from pre-2023 text,
+which is *provably* pre-LLM and therefore the cleanest available negative;
+restricting the negatives to 2023-and-later contemporary speech only *lowers*
+the AUC, to **0.940** [0.915, 0.961]. Contemporary human speech is the harder
+class to separate — as the permeation finding predicts — so the era mix is not
+flattering the screen.
+
+[^r44dep]: `python opus_screen_auc.py`. The deployed screen is
+    `opus_screen_full.js` (473 batches of 40), distinct from the lean
+    validation run used in the effort A/B below; the two differ in score level
+    (mean 34.3 vs 26.5) but not in discrimination. All labels are Pangram 4.
 
 **Reasoning effort buys nothing here, and that is worth stating rather than
-hiding.** The screen's headline figure — **AUC 0.951** against Pangram on the
-241-segment labelled pool — was produced at `effort=low`, and low had never
-been compared against anything. Re-run on the same pool with the prompt and
-batching held byte-identical:
+hiding.** The screen was tuned and validated at `effort=low`, and low had
+never been compared against anything. Re-run on the 241-segment labelled pool
+with the prompt and batching held byte-identical (all AUCs against Pangram 4):
 
 | run | AUC | 95% CI |
 |---|---|---|
-| archived low | 0.951 | [0.925, 0.973] |
-| fresh low (replicate) | 0.942 | [0.914, 0.968] |
-| **max** | **0.942** | [0.912, 0.967] |
+| archived low | 0.948 | [0.920, 0.973] |
+| fresh low (replicate) | 0.951 | [0.923, 0.974] |
+| **max** | **0.942** | [0.911, 0.968] |
 
-The low-effort run was replicated precisely so the comparison has a noise
-floor. |archived − fresh| = **0.009**; max − mean(low) = **−0.005**. The
-effort gap is smaller than run-to-run variation, and negative. Per-segment
-correlations agree: low-vs-low r = +0.976, low-vs-max +0.959 and +0.960 —
-max is not scoring differently and losing, it is scoring the same way with
-slightly more scatter.
+The low-effort run was replicated so the effort comparison has a noise floor.
+A paired bootstrap of max − mean(low) gives **−0.007**, 95% CI
+**[−0.023, +0.007]**: centred below zero, and the whole interval sits below
+even the +0.015 the weaker open model gains from reasoning, let alone Qwen's
++0.172. Effects below ~0.03 AUC are outside this design's resolution.
+Per-segment correlations agree: low-vs-low r = +0.976, low-vs-max +0.959 and
++0.960 — max ranks the same and is *more decisive on the human class* (it
+sends more clear negatives to the floor), not a different scorer.
 
-Against a single low run, max would have looked like a −0.009 decline and
-been tempting to report as an effect. Two low runs differ by exactly that
-much. **The replicate is what makes the null readable.**
+Against a single low run, max would have looked like a small decline and been
+tempting to report as an effect. **The replicate is what makes the null
+readable.**
 
 This also cuts against the pattern in the open models, measured on the same
 pool: effort moved Qwen3-32B by **+0.172** and gpt-oss-120b by **+0.015**,
-against **−0.005** for Opus. Reasoning closes part of the gap for weak
+against **−0.007** for Opus. Reasoning closes part of the gap for weak
 detectors and does nothing for a strong one — consistent with §3.4's finding
 that reasoning never closes the ~0.25 AUC frontier gap, but sharper: the
-frontier model is not reasoning its way to 0.951, it is recognising something
-at a glance. Practically, it means the screen can be run at a fifth of the
-cost with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
+frontier model is not reasoning its way to 0.95, it is recognising something
+at a glance. Practically, the screen can be run for about **4× fewer reasoning
+tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 ### 4.5 The register shift starts in 1994–96, decades before the machines
 
