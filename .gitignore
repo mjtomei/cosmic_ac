@@ -178,6 +178,7 @@ analysis/s10/provinces/*
 !analysis/s10/provinces/occupation_strings.json
 !analysis/s10/provinces/occupation_coding.json
 !analysis/s10/provinces/occupation_coding_v2.json
+!analysis/s10/provinces/occupation_coding_missing9.json
 !analysis/s10/provinces/class_origin.json
 !analysis/s10/provinces/member_allsource.json
 !analysis/s10/provinces/member_bios.json
