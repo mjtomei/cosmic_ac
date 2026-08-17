@@ -683,7 +683,10 @@ the same year and chamber. Both hold, and they separate cleanly.
 Stated conclusion: **both mechanisms operate.** Later-born cohorts arrive using
 more of the register, a gradient that stands net of calendar drift; and members
 already sitting drift upward inside their own careers, at about half the
-aggregate rate. Neither displaces the other. The mechanism behind the cohort
+aggregate rate. Neither displaces the other. The cohort gradient is not
+ministerial office: in the chambers whose record marks rank it *strengthens*
+when office years are removed, and office-holders use less of the register than
+backbenchers, not more (Appendix D.3). The mechanism behind the cohort
 gradient remains unidentified — three exposure tests failed to isolate it
 (Appendix A). Cohort is not the whole of who uses the register — §4.6a adds
 three predictors that survive it — but none of them identifies the cohort
@@ -1976,6 +1979,18 @@ not a fourth operationalisation of the same kind.
    chamber. Same design as every control already bought, roughly $5, and it
    either closes the gap or produces the most interesting result in the arm.
 
+4b. **An LLM genre classifier, to make the genre ladder a panel result.** The
+   §4.3 ladder — the more preparable the format, the more machine drafting — is
+   measured in federal Canada alone, because it is the only chamber whose
+   record carries order of business in a usable field. The `section` field is
+   empty in 43 of 53 chamber files and holds topic titles in the rest
+   (Appendix D.3). A classifier labelling segments by order of business
+   (scripted statement / debate / question) from the text and its surrounding
+   context would lift that constraint and turn a one-chamber ladder into a
+   cross-chamber one — and genre is the control the quality arm most wants
+   (§4.9) and the one the panel currently cannot hold fixed. Validate against
+   federal Canada, where the true labels are known.
+
 5. **The written arm of the US Congressional Record.** Extensions of Remarks
    is separable from floor speech and is currently dropped at extraction
    (`us/us_extract.py`). It mirrors the closest prior work directly — Suvanto
@@ -2423,3 +2438,44 @@ provincial estimate and strongly heterogeneous: article length in the national
 chambers is long and range-compressed (median ~23k bytes vs ~8.9k in the
 provinces), where the contrast nearly flattens. Reported as a small, robust,
 heterogeneous effect, not the −0.75 the member-year provincial run implied.
+
+### D.3 Is the cohort gradient ministerial office?
+
+Ministers read departmental text, which is more prepared and more formal, so if
+later-born members were likelier to hold office the birth gradient in §4.6
+could be office rather than generation. Chambers differ in whether the record
+lets this be tested: UK Hansard prints ministers under their own names (0.2% of
+speaker strings carry a rank marker), so ministers sit in both groups there and
+no split is possible. The eight Canadian provinces print "Hon. <name>" (Ontario,
+25.8%), so office years are identifiable. Because the name normaliser strips the
+honorific, one member appears both with and without it across a career, and the
+flag is per member-*year* rather than per member — a backbencher who becomes a
+minister contributes to both groups (`office_split.py`, 8,289 member-year cells
+with a birth year: 1,893 office, 6,396 non-office).
+
+| cells | birth gradient (per decade) | t |
+|---|---|---|
+| all | +1.19 | +18.4 |
+| **non-office only** | **+1.31** | **+17.9** |
+| office only | +0.62 | +4.9 |
+
+**The gradient is not office, and the premise runs backwards.** Restricting to
+non-office member-years *strengthens* the birth effect (+1.19 → +1.31) rather
+than weakening it, and office-holders use **less** of the register, not more —
+33.69 against 35.11 per 1,000 words. The gradient also survives inside the
+office group alone, attenuated but clearly resolved. Scope limit: this is the
+eight rank-marking provinces; the UK and Australian chambers cannot be tested
+this way, and §8.6 still lists a role-controlled UK specification as unrun.
+
+Two related notes on what this panel can and cannot hold fixed. The `ROLE`
+pattern applied during extraction is **speaker-identity hygiene, not a role
+control**: it drops chair and presiding-officer strings that cannot be joined
+to a person, and removes **0.47% of words** (4.1M of 870.4M, 0.64% of
+segments) — the right order for a name-parsing filter and no substitute for the
+office split above. And **genre cannot be controlled outside federal Canada**:
+the `section` field is empty in 43 of the 53 chamber files, and where it is
+populated it carries topic titles (`ONTARIO ECONOMY`, `PUBLIC BILLS FOR SECOND
+READING`) rather than order of business. Federal Canada's `order` field is the
+exception, which is why the genre ladder in §4.3 is measured there and nowhere
+else — a data constraint, not a choice of scope, and one an LLM genre classifier
+could lift (§8.6).
