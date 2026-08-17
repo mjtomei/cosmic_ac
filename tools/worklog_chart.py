@@ -153,7 +153,48 @@ def is_human_message(entry):
     return not text.startswith(_INJECTED_PREFIXES)
 
 
-def session_intervals_by_file(human_only=True):
+FOREIGN_REF_MIN = 5          # references to the repo before a session started
+                             # elsewhere counts as work on this repo
+
+
+def foreign_session_files():
+    """Session files in OTHER project directories that worked on this repo.
+
+    Claude Code files a session under the directory it was launched from, so
+    work on this repo done from ~ or from a sibling checkout lands elsewhere
+    and a glob of this project's directory alone silently misses it. That is
+    not hypothetical: a 2026-07-03 session run from /home/matt referenced this
+    repo 22 times while setting up the tmux panes, and its whole week charted
+    as zero.
+
+    Attribution is therefore by what a session TOUCHED, not where it ran.
+    grep does the prefilter because it scans 1.5GB in ~0.05s where parsing
+    every file in Python would not be worth the wait; a session must mention
+    the repo path at least FOREIGN_REF_MIN times, so that merely discussing
+    the project does not count as working on it.
+    """
+    try:
+        out = subprocess.run(
+            ["grep", "-rlF", "--include=*.jsonl", REPO_DIR, PROJECTS_DIR],
+            capture_output=True, text=True, timeout=60).stdout
+    except (OSError, subprocess.SubprocessError):
+        return {}
+    own = os.path.join(PROJECTS_DIR, PROJECT_SLUG) + os.sep
+    found = {}
+    for path in out.splitlines():
+        if not path or path.startswith(own) or "/subagents/" in path:
+            continue
+        try:
+            n = subprocess.run(["grep", "-cF", REPO_DIR, path],
+                               capture_output=True, text=True).stdout.strip()
+            if int(n or 0) >= FOREIGN_REF_MIN:
+                found[path] = int(n)
+        except (OSError, subprocess.SubprocessError, ValueError):
+            continue
+    return found
+
+
+def session_intervals_by_file(human_only=True, include_foreign=False):
     """{session_id: [(start, end), ...]} for gaps <= SESSION_GAP_MIN.
 
     Kept per file rather than pooled: with concurrent sessions, pooling first
@@ -166,7 +207,9 @@ def session_intervals_by_file(human_only=True):
     """
     gap = datetime.timedelta(minutes=SESSION_GAP_MIN)
     per_session = {}
-    files = sorted({f for g in SESSION_GLOBS for f in glob.glob(g)})
+    files = {f for g in SESSION_GLOBS for f in glob.glob(g)}
+    foreign = foreign_session_files() if include_foreign else {}
+    files = sorted(files | set(foreign))
     for f in files:
         ts = []
         with open(f, errors="replace") as fh:
@@ -346,8 +389,9 @@ def render_weekly(day, nsess, width=40):
     return header + "\n".join(lines) + "\n" + footer
 
 
-def build(since=None, want_gross=True, human_only=True):
-    per_session = session_intervals_by_file(human_only=human_only)
+def build(since=None, want_gross=True, human_only=True, include_foreign=False):
+    per_session = session_intervals_by_file(human_only=human_only,
+                                           include_foreign=include_foreign)
     merged = merge(commit_intervals()
                    + [iv for ivals in per_session.values() for iv in ivals])
     day = clip(hours_per_day(merged), since)
@@ -376,6 +420,11 @@ def main():
                     help="seconds between redraws; 0 = render once and exit")
     ap.add_argument("--since", type=datetime.date.fromisoformat, default=None,
                     metavar="YYYY-MM-DD", help="ignore days before this date")
+    ap.add_argument("--include-foreign", action="store_true",
+                    help="count sessions launched from another directory that "
+                         "reference this repo. Off by default: the test cannot "
+                         "reliably tell working on this repo from mentioning "
+                         "it, so candidates are listed and you decide")
     ap.add_argument("--weekly", action="store_true",
                     help="bucket by ISO week instead of by day")
     ap.add_argument("--per-session", action="store_true",
@@ -390,7 +439,17 @@ def main():
 
     if args.interval <= 0:
         chart, day, nsess, per_session = build(
-            args.since, human_only=not args.include_agent)
+            args.since, human_only=not args.include_agent,
+            include_foreign=args.include_foreign)
+        cand = foreign_session_files()
+        if cand:
+            verb = "counted" if args.include_foreign else "NOT counted"
+            print(f"note: {len(cand)} session(s) outside this repo's project "
+                  f"directory reference it ({verb}; --include-foreign to add):")
+            for path, n in sorted(cand.items()):
+                print(f"  {os.path.basename(path)[:8]}  "
+                      f"{os.path.basename(os.path.dirname(path)):32} {n} refs")
+            print()
         print(render_weekly(day, nsess) if args.weekly else chart)
         if args.per_session:
             print("\nPer-session active hours (sums above the union — they overlap):")
