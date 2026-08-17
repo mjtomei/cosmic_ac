@@ -73,6 +73,39 @@ two-factor account, the resources needed to produce the register at all, as
 against the demand the composite measures. It therefore gets its own
 coefficient rather than being averaged in.
 
+**Autonomy is predicted SUFFICIENT but NOT NECESSARY (Matthew), and the
+composite's linear form does not capture that.** High autonomy should reliably
+suppress the register; low *measured* autonomy should predict little, because
+O\*NET rates **nominal** autonomy — discretion recognised in the hierarchy —
+while a miner or farm labourer holds substantial **effective** autonomy
+moment-to-moment that never registers as recognised discretion. Nobody dictates
+how you swing a pick. This is why the manual classes sit at the floor despite
+scoring low on measured freedom: the measure misses autonomy that is really
+there, not the theory.
+
+The composite keeps a plain reverse-scored linear term regardless, because a
+hinge would introduce a knot location as a free parameter and defeat the point
+of fixing the instrument in advance. The asymmetry is therefore registered as a
+prediction about **how to read the result**, and as two fixed secondary tests:
+
+- **Asymmetry test.** Split the autonomy score at its median and fit the two
+  sides separately. The prediction is that the **high-autonomy** side carries a
+  clear negative association with register and the **low-autonomy** side is
+  near-flat. A weak *linear* autonomy coefficient is therefore NOT
+  disconfirmation — under this hypothesis it is what a symmetric fit to a
+  one-sided relationship should produce.
+- **Nominal versus effective.** The two are separable in O\*NET and are fixed
+  here as two scores. Nominal: `4.C.3.a.4` Freedom to Make Decisions,
+  `4.C.3.a.2.a` Impact of Decisions on Co-workers, `4.C.3.a.2.b` Frequency of
+  Decision Making, `4.C.3.a.1` Consequence of Error. Effective: `4.C.3.b.8`
+  Determine Tasks, Priorities and Goals, and reverse-scored `4.C.3.d.3` Pace
+  Determined by Speed of Equipment, `4.C.3.b.7` Importance of Repeating Same
+  Tasks, `4.C.3.b.2` Degree of Automation. The prediction is that **effective**
+  autonomy tracks the register's floor better than nominal does, and
+  specifically that it places miners and labourers near farmers rather than near
+  teachers. If nominal does the better job, the effective/nominal distinction is
+  wrong and should be dropped rather than rescued.
+
 **Pre-specified decomposition (secondary, not a re-definition).** The composite
 is reported first and is what the hypothesis stands or falls on. Alongside it,
 and fixed here, the two halves are also reported separately — the four
@@ -208,14 +241,21 @@ nuisance.
 4. **Farmers are the diagnostic case.** EGP ranks IVc mid-table; both composites
    and the observed value place it at the floor. If either beats EGP anywhere,
    it should be here.
-5. **Police are predicted to be MISSED.** Police other-ranks write heavily
+5. **The manual classes are no longer a counter-case, and that must not be
+   claimed as a success.** V/VI and VIIab score low on measured autonomy yet sit
+   at the register's floor. Under the sufficient-not-necessary reading this is
+   expected — they hold effective autonomy the nominal scales miss — but that
+   reading was adopted *after* seeing them there, so it earns no credit unless
+   the effective-autonomy score above independently places them near farmers.
+   That is the test; the narrative is not.
+6. **Police are predicted to be MISSED.** Police other-ranks write heavily
    (incident reports, statements, court files), so they will score high on
    Documenting and Written Letters and Memos, but they are observed at −0.200.
    Recorded as an expected failure **in advance**; neither composite will be
    modified to accommodate it. A simple combination of existing scales that
    misses one occupation is more informative than a bespoke rule that misses
    none.
-6. **Two-factor outcome is the most likely.** An accountability or sociality
+7. **Two-factor outcome is the most likely.** An accountability or sociality
    term negative-at-the-top with required education positive-at-the-bottom would
    produce the observed U as the product of two crossed gradients, and would
    explain why education showed the same shape while being statistically
