@@ -672,12 +672,19 @@ the same year and chamber. Both hold, and they separate cleanly.
 - **The gradient holds within year and province at +1.05 per 1,000 per decade**
   (t ≈ 8.5, clustered on member), unmoved by occupation and education controls,
   which *strengthen* it rather than explain it away (§4.6a). †[^r46b]
+- **Sitting members convert too, at about half the pace.** With member fixed
+  effects — so the slope is identified only off a member's own movement, and
+  every fixed difference between members drops out — the register rises
+  **+0.51 per 1,000 words per decade** within member (t = 6.0, clustered on
+  member, 8,600 members with three or more years). Against the +1.24 total
+  calendar drift, roughly **40% of the period rise happens inside continuing
+  careers** and the rest arrives with the composition of the chamber. †[^r46c]
 
-Stated conclusion: **the register's rise is generational as well as
-period-wide.** Later-born cohorts arrive using more of it, and that gradient
-stands net of calendar drift; the mechanism behind the cohort gradient remains
-unidentified — three exposure tests failed to isolate it (Appendix A). Whether
-sitting members' own register changed is a separate question and returns a null
+Stated conclusion: **both mechanisms operate.** Later-born cohorts arrive using
+more of the register, a gradient that stands net of calendar drift; and members
+already sitting drift upward inside their own careers, at about half the
+aggregate rate. Neither displaces the other. The mechanism behind the cohort
+gradient remains unidentified — three exposure tests failed to isolate it
 (Appendix A). Cohort is not the whole of who uses the register — §4.6a adds
 three predictors that survive it — but none of them identifies the cohort
 mechanism either.
@@ -697,6 +704,13 @@ mechanism either.
     script also prints inflate the t to +17.7 — a third instance of the
     unclustered-inference pattern flagged in Appendix A, though here, with 888
     member clusters, the conclusion is unmoved.
+
+[^r46c]: `python cohort_vs_period.py`, final block. Within-member (member fixed
+    effects) regression of the register rate on spoken year, word-weighted,
+    over every chamber in the panel; members need three or more years to
+    contribute. Standard errors cluster on member. Because the estimate is
+    identified only off a member's own change, cohort, chamber, seat safety and
+    every other fixed attribute of the member drop out by construction.
 
 ### 4.6a Class and the register: jointly significant, individually noisy — and education is not it
 
@@ -2057,39 +2071,37 @@ Reported because they bound what the study can claim.
 5. **Kobak counterfactual on 2024 and 2026** — null (fires on COVID 2020-21,
    validating the estimator on a known shock).
 6. **Frequency-weighted secondary** — 4/30 cells.
-7. **Incumbent register change** — −0.42, CI [−1.32, +0.49], not significant:
-   sitting members' own register did not measurably change.
-8. **Provincial AI prevalence** — the Canadian provinces average 9.1% machine
+7. **Provincial AI prevalence** — the Canadian provinces average 9.1% machine
    by words against US House 12.1%, so removing machine text *widens* the gap
    they were supposed to explain. Wrong sign, not merely small.
-9. **Skilled-immigration share** — ρ = +0.26 on levels, +0.09 on growth, n = 6.
-10. **Province-level post-secondary share** — ρ = −0.04 on levels, +0.11 on
+8. **Skilled-immigration share** — ρ = +0.26 on levels, +0.09 on growth, n = 6.
+9. **Province-level post-secondary share** — ρ = −0.04 on levels, +0.11 on
     growth, n = 7. Note this is the *aggregate* null; the member-level
     education ladder in §4.6a does predict, which is the difference between
     seven data points and three thousand.
-11. **Graduate/professional as a binary** — null in every province (BC −0.25,
+10. **Graduate/professional as a binary** — null in every province (BC −0.25,
     MB −0.26, NL −0.24, ON −0.30, SK +0.23, none significant; PE +2.19 on 87
     member-years is one hit in six). The binary fails because it pools a
     graduate degree (+0.01) with a professional one (−0.79); the ordered
     ladder in §4.6a is what recovers the effect.
-12. **Cross-province education composition** — ρ = 0.00 against graduate
+11. **Cross-province education composition** — ρ = 0.00 against graduate
     share, and ρ = 0.00 against source tier. Not usable in any case: coverage
     runs 5% to 81% across provinces and the two best-covered provinces are the
     two sourced from Wikipedia, so a province-level regression would be
     fitting a source dummy.
-13. **Markedness as pre-AI rarity** — null. Rare-word share of instrument use
+12. **Markedness as pre-AI rarity** — null. Rare-word share of instrument use
     is 0.22–0.25% in every class, differences within ±0.02pp. The class effect
     is a uniform scaling of the instrument, not a re-weighting, when
     "conspicuous" is defined as rare *before* the machines. Defining it
     instead as *risen* and *common* is what produces §4.6a's result.
-14. **Class I avoiding marked words, cross-sectionally** — did not survive a
+13. **Class I avoiding marked words, cross-sectionally** — did not survive a
     year control. Pooled, class I held the lowest share of the most-risen
     words (−1.76pp against VIIab); within era it is level with class II
     (1.48% vs 1.49% in 2023–26) and higher in 2020–22. The pooled table was
     class I's year distribution. **Recorded because it was reported before the
     control was run** — the third time in this study that unclustered or
     uncontrolled inference produced a flattering result.
-15. **Wikipedia article depth as a confounder of the education effect** — null,
+14. **Wikipedia article depth as a confounder of the education effect** — null,
     and only in that narrow sense. The notability selection is real: members
     whose education is known have 1.80× the median article length of those
     whose is not. But controlling for depth moves the education coefficients by
@@ -2097,14 +2109,14 @@ Reported because they bound what the study can claim.
     article. Depth's own strong negative effect on the register is **not** a
     null and is reported in §4.6a.
 
-16. **Class origin (parental EGP) against register** — first measurement,
+15. **Class origin (parental EGP) against register** — first measurement,
     704 members with a coded parental class across thirteen chambers:
     intermediate-origin +0.09, working-origin +0.12 against
     professional-origin, t ≈ 0.2. Nothing.
-17. **The education ladder at panel scale** — provincial +0.32/rung fell to
+16. **The education ladder at panel scale** — provincial +0.32/rung fell to
     +0.26 (t = 0.78) under member clustering and to −0.13 (t = −1.4) on the
     tier-1 chambers. The §4.6a provincial ladder was unclustered inference.
-18. **Class contrasts at panel scale** — every §4.6a class coefficient loses
+17. **Class contrasts at panel scale** — every §4.6a class coefficient loses
     conventional significance under clustering except VIIab (−0.79,
     t = −1.99). Point estimates keep their signs in both panels; magnitudes
     halve out of sample.
@@ -2179,6 +2191,13 @@ climbs. What does carry is measured on individuals, not on chambers.
    Retained here because the cohort claim itself survived all three and is now
    carried by a cleaner instrument — what changed is the measurement, not the
    finding.
+9. **"Incumbents are flat"** — reported as a null (within-member change −0.42,
+   CI [−1.32, +0.49]) on the same retired window contrast, over 16 chambers.
+   The full panel with member fixed effects contradicts it: sitting members'
+   own register rises **+0.51 per 1,000 per decade (t = 6.0)**, about 40% of
+   the total calendar drift (§4.6). The null was an underpowered window
+   comparison, not a flat trend, and "cohort replacement, *not* incumbent
+   conversion" was the wrong frame — both mechanisms operate.
 
 ## Appendix C — Replication and reproducibility
 

@@ -1322,9 +1322,15 @@ of 13 chambers. Birth years are held for the US House and Senate, UK, Ireland,
 federal Canada and eight Canadian provinces; nine Australian and UK-devolved
 chambers lack them and are omitted.
 
-Whether sitting members' own register changed is a separate question and returns
-a null (Appendix A). §5.4.3 pins the generational gradient down further, within
-province and year.
+Sitting members change too. With member fixed effects — the slope identified
+only off a member's own movement over time, every fixed difference between
+members removed — the register rises **+0.51 per 1,000 per decade within
+member** (t = 6.0, clustered on member, 8,600 members with three or more
+years). Set against the +1.24 total, roughly 40% of the calendar drift happens
+inside continuing careers and the remainder arrives with the chamber's changing
+composition: both mechanisms operate, and neither displaces the other.
+
+§5.4.3 pins the generational gradient down further, within province and year.
 
 #### 5.4.3 What distinguishes arrivals is birth year
 

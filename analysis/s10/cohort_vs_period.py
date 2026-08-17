@@ -150,6 +150,62 @@ def main():
     _apc([r for r in reg_rows if r[3]], ["spoken", "entry", "birth"],
          "period vs cohort vs generation (birth known)")
 
+    within_member(panel)
+
+
+def within_member(panel):
+    """Do SITTING members' own register change? Within-member trend.
+
+    Member fixed effects: rate and year are demeaned within each member, so the
+    slope is identified only off a member's own movement over time and every
+    between-member difference (cohort, class, safe-seat, chamber) drops out.
+    This is the honest form of the "do incumbents convert?" question, and it
+    replaces a window-based early-vs-late contrast that depended on the two
+    window choices. SEs cluster on member.
+    """
+    rows = []          # (member, year, rate, words)
+    for ch, ms in panel.items():
+        for m, ys in ms.items():
+            if len(ys) < 3:                    # need within-member variation
+                continue
+            for y, (w, h) in ys.items():
+                if w >= MIN_MEMBER_YEAR_WORDS:
+                    rows.append((f"{ch}|{m}", y, h / w * 1000, w, ch))
+    bym = defaultdict(list)
+    for r in rows:
+        bym[r[0]].append(r)
+    bym = {m: v for m, v in bym.items() if len(v) >= 3}
+    # within-member demeaning (word-weighted means)
+    num = den = 0.0
+    for m, v in bym.items():
+        W = sum(r[3] for r in v)
+        my = sum(r[2] * r[3] for r in v) / W
+        mx = sum(r[1] * r[3] for r in v) / W
+        num += sum(r[3] * (r[1] - mx) * (r[2] - my) for r in v)
+        den += sum(r[3] * (r[1] - mx) ** 2 for r in v)
+    if den == 0:
+        print("\nwithin-member trend: no variation")
+        return
+    beta = num / den
+    # cluster-robust se on member: sum of per-member score contributions
+    meat = 0.0
+    for m, v in bym.items():
+        W = sum(r[3] for r in v)
+        my = sum(r[2] * r[3] for r in v) / W
+        mx = sum(r[1] * r[3] for r in v) / W
+        g = sum(r[3] * (r[1] - mx) * ((r[2] - my) - beta * (r[1] - mx))
+                for r in v)
+        meat += g * g
+    G = len(bym)
+    se = math.sqrt(meat * (G / max(G - 1, 1))) / den
+    print(f"\nWITHIN-MEMBER trend (member FE, {G:,} members with 3+ years, "
+          f"clustered on member):")
+    print(f"  spoken year {beta*10:+.3f} per 1,000 words per decade "
+          f"(se {se*10:.3f}, t {beta/se:+.2f})"
+          f"{' *' if abs(beta/se) > 1.96 else '   (n.s.)'}")
+    print("  -> a sitting member's OWN register change, net of every fixed "
+          "difference between members")
+
 
 def _apc(rows, stamps, label):
     if len(rows) < 500:
