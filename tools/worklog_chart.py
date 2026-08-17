@@ -289,6 +289,63 @@ def render(day, nsess, gross, solo=0.0, longest=None, width=40):
     return header + "\n".join(lines) + "\n" + "\n".join(footer)
 
 
+def render_weekly(day, nsess, width=40):
+    """Same hours, bucketed by ISO week — the shape over a project, not a day.
+
+    Weeks are labelled by their Monday. A partial first or last week is shown
+    as-is and marked, rather than dropped or scaled up: this repo's history
+    starts and ends mid-week, and a silently rescaled bar would read as a real
+    difference in effort.
+    """
+    if not day:
+        return "No commits or session logs found."
+    weeks = defaultdict(float)
+    active = defaultdict(int)
+    for d, h in day.items():
+        monday = d - datetime.timedelta(days=d.weekday())
+        weeks[monday] += h
+        if h:
+            active[monday] += 1
+    first, last = min(day), max(day)
+    # Walk every week in range, not just the ones with data: skipping empty
+    # weeks would print Jun 22 next to Jul 13 and read as continuous work.
+    wk = first - datetime.timedelta(days=first.weekday())
+    end = last - datetime.timedelta(days=last.weekday())
+    while wk <= end:
+        weeks.setdefault(wk, 0.0)
+        wk += datetime.timedelta(days=7)
+    peak = max(weeks.values()) or 1.0
+    per_block = peak / width
+    blocks = "▏▎▍▌▋▊▉█"
+    lines = []
+    for monday in sorted(weeks):
+        h = weeks[monday]
+        full = int(h / per_block)
+        frac = (h / per_block) - full
+        bar = "█" * full
+        if frac > 0 and full < width:
+            bar += blocks[min(len(blocks) - 1, int(frac * len(blocks)))]
+        sunday = monday + datetime.timedelta(days=6)
+        # A week is partial when the data starts or ends inside it.
+        partial = "*" if (monday < first <= sunday) or (monday <= last < sunday) else ""
+        n = active[monday]
+        lines.append(f"{monday:%b %d}{partial:1}│{bar:<{width}} "
+                     f"{h:6.2f} h  {n} d  {h / n if n else 0:4.1f} h/d")
+    total = sum(weeks.values())
+    header = (
+        f"Work time per week  (commit windows ∪ human-message gaps "
+        f"<{SESSION_GAP_MIN} min)\n"
+        f"{first:%Y-%m-%d} → {last:%Y-%m-%d} · weeks labelled by Monday · "
+        f"* = partial week\n"
+    )
+    footer = (
+        f"        └{'─' * (width + 1)}\n"
+        f"         full block ≈ {per_block:.3f} h        TOTAL ≈ {total:.2f} h "
+        f"over {len(weeks)} weeks ({total / len(weeks):.1f} h/week)"
+    )
+    return header + "\n".join(lines) + "\n" + footer
+
+
 def build(since=None, want_gross=True, human_only=True):
     per_session = session_intervals_by_file(human_only=human_only)
     merged = merge(commit_intervals()
@@ -319,6 +376,8 @@ def main():
                     help="seconds between redraws; 0 = render once and exit")
     ap.add_argument("--since", type=datetime.date.fromisoformat, default=None,
                     metavar="YYYY-MM-DD", help="ignore days before this date")
+    ap.add_argument("--weekly", action="store_true",
+                    help="bucket by ISO week instead of by day")
     ap.add_argument("--per-session", action="store_true",
                     help="also list each session's own active hours")
     ap.add_argument("--include-agent", action="store_true",
@@ -332,7 +391,7 @@ def main():
     if args.interval <= 0:
         chart, day, nsess, per_session = build(
             args.since, human_only=not args.include_agent)
-        print(chart)
+        print(render_weekly(day, nsess) if args.weekly else chart)
         if args.per_session:
             print("\nPer-session active hours (sums above the union — they overlap):")
             rows = []
