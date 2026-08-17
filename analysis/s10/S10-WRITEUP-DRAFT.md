@@ -873,18 +873,41 @@ Lieberson is the closest parallel to our case, because his markers are discrete
 lexical items: first names diffuse down the status ladder and are abandoned by
 higher-status parents once they become common.[^r46e]
 
-#### Prominence: same direction, small, and heterogeneous
+#### Prominence: a gradient in the provinces, an arc in the national chambers
 
 Each member's Wikipedia article length — a measured page property (wikitext
-bytes via the MediaWiki API), not a judgement — predicts the register
-**negatively**: members with longer articles use less of it. Re-tested on the
-full panel at member level (equal weight, z within chamber, HC1; Appendix D.2)
-the effect is **−0.033σ per log-byte (t −3.5), n=4,297 across 13 chambers** —
-real, significant, and the same sign everywhere, but an order of magnitude
-smaller than the provincial member-year estimate first suggested (−0.75/1,000,
-which carried the same word-weighting inflation as the class arm). It is also
-strongly heterogeneous: −0.21σ in the Canadian provinces, −0.02σ in the
-national chambers, where article length is long and its range compressed.
+bytes via the MediaWiki API), not a judgement — is the third status marker
+available here, alongside class and office. Read in buckets rather than as a
+single slope, it behaves differently in the two kinds of chamber
+(Appendix D.3a):
+
+| quintile of article length | Canadian provinces | national chambers |
+|---|---|---|
+| Q1 (least written about) | +0.00 | −0.15 |
+| Q2 | −0.13 | −0.02 |
+| Q3 | −0.17 | **+0.15** |
+| Q4 | −0.27 | +0.10 |
+| Q5 (most written about) | **−0.40** | −0.06 |
+
+In the provinces prominence is a **monotone gradient** — the more written about
+a member is, the less of the register they use (−0.19σ per log-byte, t = −5.6).
+In the national chambers it is not a gradient at all but an **arc**: the
+moderately prominent use the most, and both the obscure and the most prominent
+use less. A single pooled slope is the wrong summary of those two shapes, and
+which way it points depends on how the chambers happen to be mixed; the effect
+is small enough either way that the pooled number is not the interesting
+quantity. The buckets are.
+
+The arc is worth naming because it is the same shape the other two status
+markers make. Class peaks at II and falls away above and below it; office-
+holders — the highest-status *positions* — use less than backbenchers
+(Appendix D.3); and prominence peaks in the middle of its range. Three markers
+measured in completely different ways, one shape: the top of each pulls back
+from the form while the tier just below leans into it. That is what a
+chase-and-flight cycle looks like from three angles at once, and where the peak
+sits should depend on how far along the cycle a given chamber is. Recorded as a
+hypothesis — the arc was found while reconciling the pooled estimate, not
+predicted in advance — and the era-resolved test it implies has not been run.
 
 Depth was collected as a control on notability bias in the education covariate
 — members whose education we know have **1.80× the median article length** of
@@ -1112,13 +1135,29 @@ reproducing the thing §4.2 detects.
 In-context likelihood of the Kobak style words within Hansard traces,
 self-normalised, no placebo word list, no external control:
 
-**+0.0099, CI [+0.0007, +0.0196], positive in 9/10 cells.** †[^r48]
+**+0.0099, positive in 9 of 10 cells, permutation p = 0.017.** †[^r48]
 
 Small, but it is the only permeation evidence that does not route through a
 detector, and it survives the failure mode that demoted the lexicon arm.
 
-[^r48]: `python word_context_delta.py`. Per-model cell table at
-    `METHODOLOGY.md:1009`; the Qwen row reproduces exactly on re-run.
+The interval is quoted as approximately **[0.000, +0.020]** deliberately. The
+point estimate and the sign count are exact, and every inferential route agrees
+— P(≤0) between 0.017 and 0.024, permutation p between 0.015 and 0.022 across
+seeds — but the bootstrap's lower endpoint sits close enough to zero that its
+value moves by an order of magnitude with the resampling seed (+0.0001 to
++0.0009 over five seeds at B = 2,000). Printing it to four decimals would claim
+a precision the estimator does not have, so the permutation test leads.
+
+[^r48]: `python word_context_delta.py pooled`, which prints the pooled figure,
+    the ten chamber × family cells, the clustered bootstrap and the permutation
+    test. Earlier drafts cited `word_context_delta.py` alone, whose `report`
+    mode hardcodes the Qwen3 traces and prints five per-chamber rows with no
+    pooled statistic — the number in the sentence above was not reachable from
+    the invocation given for it. Defaults are B = 2,000 (at B = 400 the 2.5%
+    percentile carries roughly one Monte-Carlo standard error, which is the
+    whole distance of the lower bound from zero) and a recorded seed. The
+    permutation test shuffles era labels within each chamber × family cell,
+    3,000 draws. Per-model cell table at `METHODOLOGY.md:1009`.
 
 ### 4.9 Quality: better-formed, not worse-engaged — and evadable under effort
 
@@ -2428,16 +2467,39 @@ tier-1 chambers from their evidence-URL titles (`build_t1_wiki_depth.py`,
 
 | panel | logdepth coef (σ) | t | n |
 |---|---|---|---|
-| CA provinces | −0.214 | −6.0 | 1,055 |
-| tier-1 chambers | −0.021 | −2.1 | 3,242 |
-| **full panel (13 chambers)** | **−0.033** | **−3.5** | 4,297 |
+| CA provinces | **−0.191** | −5.6 | 1,055 |
+| tier-1 chambers | +0.018 | +1.8 | 3,242 |
+| full panel (13 chambers) | +0.019 | +2.0 | 4,297 |
 
-The effect is negative and significant on the full panel, same sign in both
-sub-panels — so it replicates — but it is an order of magnitude weaker than the
-provincial estimate and strongly heterogeneous: article length in the national
-chambers is long and range-compressed (median ~23k bytes vs ~8.9k in the
-provinces), where the contrast nearly flattens. Reported as a small, robust,
-heterogeneous effect, not the −0.75 the member-year provincial run implied.
+**The two sub-panels do not agree, and the pooled slope is not a usable
+summary.** An earlier version of this table reported −0.021 and −0.033 for the
+tier-1 and pooled rows and concluded that the effect "replicates" with the same
+sign everywhere. Both figures had the wrong sign. The provincial estimate is
+the one that reproduces (−0.19 against the −0.214 first reported); the national
+chambers run the other way, and pooling two opposite shapes produces a number
+whose sign depends on the mix rather than on anything about legislators. The
+provincial member-year estimate that started this arm (−0.75 per 1,000) was
+inflated by the same word-weighting as the class arm and is superseded by the
+member-level figure above.
+
+### D.3a Prominence in buckets, which is how it should be read
+
+A linear coefficient assumes a gradient. Quintiles of log article length against
+mean within-chamber register z show that only one sub-panel has one:
+
+| quintile | provinces (median bytes) | mean z | national (median bytes) | mean z |
+|---|---|---|---|---|
+| Q1 | 3,464 | +0.00 | 5,547 | −0.15 |
+| Q2 | 5,879 | −0.13 | 13,232 | −0.02 |
+| Q3 | 8,960 | −0.17 | 22,130 | **+0.15** |
+| Q4 | 13,563 | −0.27 | 38,344 | +0.10 |
+| Q5 | 26,223 | **−0.40** | 85,062 | −0.06 |
+
+The provinces are monotone. The national chambers are an arc peaking in the
+middle two quintiles. Range compression explains why a national gradient would
+be *attenuated* — national medians run 5.5k–85k against 3.5k–26k — but not why
+it would change shape, so compression is not the whole story. §4.6a reads these
+as buckets and notes the arc's resemblance to the class and office results.
 
 ### D.3 Is the cohort gradient ministerial office?
 

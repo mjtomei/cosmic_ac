@@ -1138,8 +1138,16 @@ Pre → post change in that quantity, two model families, five chambers:
 | Qwen3-8B | +0.017 | +0.016 | +0.011 | +0.013 | +0.002 | +0.0118 |
 | Mistral-7B | +0.005 | +0.008 | +0.017 | −0.006 | +0.016 | +0.0081 |
 
-**Two-family pooled: +0.0099, 95% CI [+0.0007, +0.0196], P(≤0) = 0.020;
-9 of 10 family-chamber cells positive** (clustered bootstrap over speeches).
+**Two-family pooled: +0.0099, 9 of 10 family-chamber cells positive,
+permutation p = 0.017, interval approximately [0.000, +0.020].**
+
+The interval is given to three decimals on purpose. Clustered over speeches at
+B = 2,000 it excludes zero under every seed tried (lower bound +0.0001 to
++0.0009, P(≤0) 0.017–0.024), but that endpoint moves by an order of magnitude
+with the seed while the point estimate, the sign count and the permutation p
+(0.015–0.022) do not. The permutation test — era labels shuffled within each
+chamber × family cell, 3,000 draws — is therefore the statistic to quote.
+Reproduce with `python word_context_delta.py pooled`.
 
 This is the first *contextual* permeation evidence: the phrasing around the
 register words has drifted measurably toward the assistant's, in text
