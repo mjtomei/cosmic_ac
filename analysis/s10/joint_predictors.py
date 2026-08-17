@@ -68,7 +68,9 @@ def depth_key(member):
 def load_depth():
     """CH|key -> log(article length), over both fetches."""
     out = {}
-    for f in ("provinces/wiki_depth.json", "wiki_depth_t1.json"):
+    for f in ("provinces/wiki_depth.json", "wiki_depth_t1.json",
+              # the nine chambers, fetched 2026-08-17: 2,310 of 2,315 resolved
+              "wiki_depth_missing9.json"):
         p = os.path.join(HERE, f)
         if not os.path.exists(p):
             continue

@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Wikipedia article length for the tier-1 legislators, from evidence URLs.
+"""Wikipedia article length for legislators, from their evidence URLs.
+
+--src/--out point it at a covariate file; the default is the tier-1 set. The
+nine chambers collected 2026-08-17 carry a wikipedia evidence URL for 98% of
+members, so the same route gives them the prominence covariate, which was 0%
+for all nine and was silently limiting every joint model that included it.
 
 The tier-1 covariate records (covariates_tier1.json) carry, for 4,198 of
 4,372 members, a wikipedia-tier evidence entry whose URL is the member's
@@ -25,7 +30,12 @@ def get(url,tries=6):
             w=float(e.headers.get("Retry-After") or delay); print(f"  429; wait {w:.0f}s",flush=True)
             time.sleep(w); delay=min(delay*2,60)
 def main():
-    recs=json.load(open(os.path.join(HERE,"covariates_tier1.json")))
+    import argparse
+    ap=argparse.ArgumentParser()
+    ap.add_argument("--src",default="covariates_tier1.json")
+    ap.add_argument("--out",default="wiki_depth_t1.json")
+    a=ap.parse_args()
+    recs=json.load(open(os.path.join(HERE,a.src)))
     # member -> title (first wikipedia article URL in its evidence)
     title_of={}
     for r in recs:
@@ -52,7 +62,7 @@ def main():
     for (ch,key),t in title_of.items():
         # match via normalized title if needed
         out[f"{ch}|{key}"]={"title":t,"length":length.get(t)}
-    json.dump(out,open(os.path.join(HERE,"wiki_depth_t1.json"),"w"))
+    json.dump(out,open(os.path.join(HERE,a.out),"w"))
     got=sum(1 for v in out.values() if v.get("length"))
-    print(f"wrote wiki_depth_t1.json: {got}/{len(out)} members with a length")
+    print(f"wrote {a.out}: {got}/{len(out)} members with a length")
 if __name__=="__main__": main()

@@ -1,0 +1,21 @@
+panel,quintile,median_bytes,mean_z,se,n
+all 22 chambers,Q1,3598,0.0027,0.0271,1379
+all 22 chambers,Q2,7506,-0.0668,0.0262,1379
+all 22 chambers,Q3,12463,-0.0701,0.0266,1379
+all 22 chambers,Q4,23103,0.0235,0.0268,1379
+all 22 chambers,Q5,57435,-0.0593,0.0263,1380
+Canadian provinces,Q1,3464,0.0014,0.0569,257
+Canadian provinces,Q2,5879,-0.1247,0.0569,257
+Canadian provinces,Q3,8960,-0.1694,0.0598,257
+Canadian provinces,Q4,13563,-0.269,0.0564,257
+Canadian provinces,Q5,26223,-0.4009,0.0532,258
+national chambers,Q1,5547,-0.1513,0.0377,670
+national chambers,Q2,13232,-0.023,0.0388,670
+national chambers,Q3,22130,0.1537,0.0406,670
+national chambers,Q4,38344,0.1043,0.0392,670
+national chambers,Q5,85062,-0.0573,0.0358,673
+AU + UK-devolved (new),Q1,3089,0.1108,0.0511,451
+AU + UK-devolved (new),Q2,5543,0.0103,0.0472,451
+AU + UK-devolved (new),Q3,7941,0.0355,0.0465,451
+AU + UK-devolved (new),Q4,11581,0.0056,0.0461,451
+AU + UK-devolved (new),Q5,25093,-0.1707,0.0434,453

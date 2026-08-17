@@ -661,14 +661,14 @@ the same year and chamber. Both hold, and they separate cleanly.
 
 - **Birth cohort predicts the register net of calendar time.** Regressing the
   member-year rate on spoken year and birth year together, with chamber fixed
-  effects (13 chambers carrying member birth years, 46,515 member-years): birth
-  **+0.95 per 1,000 words per decade** (t = 28.4) against spoken year **+1.24
-  per decade** (t = 24.3). A legislator born a decade later uses about
-  +0.95/1,000 more of the register *in the same year and chamber*. †[^r46a]
+  effects (all 22 chambers, 61,312 member-years): birth **+0.88 per 1,000 words
+  per decade** (t = 33.8) against spoken year **+1.25 per decade** (t = 29.2).
+  A legislator born a decade later uses about +0.88/1,000 more of the register
+  *in the same year and chamber*. †[^r46a]
 - **Birth is the marginally stronger organiser.** On identical rows the
-  within-chamber, word-weighted correlation of the register rate is **+0.333
-  with birth year** against **+0.303 with spoken year**, and birth is the
-  stronger of the two in 10 of the 13 chambers. †[^r46a]
+  within-chamber, word-weighted correlation of the register rate is **+0.325
+  with birth year** against **+0.302 with spoken year**, and birth is the
+  stronger of the two in 15 of the 22 chambers. †[^r46a]
 - **The gradient holds within year and province at +1.05 per 1,000 per decade**
   (t ≈ 8.5, clustered on member), unmoved by occupation and education controls,
   which *strengthen* it rather than explain it away (§4.6a). †[^r46b]
@@ -686,7 +686,7 @@ already sitting drift upward inside their own careers, at about half the
 aggregate rate. Neither displaces the other. The cohort gradient is not
 ministerial office: in the chambers whose record marks rank it *strengthens*
 when office years are removed, and office-holders use less of the register than
-backbenchers, not more (Appendix D.3). The mechanism behind the cohort
+backbenchers, not more (Appendix D.4). The mechanism behind the cohort
 gradient remains unidentified — three exposure tests failed to isolate it
 (Appendix A). Cohort is not the whole of who uses the register — §4.6a adds
 three predictors that survive it — but none of them identifies the cohort
@@ -694,10 +694,9 @@ mechanism either.
 
 [^r46a]: `python cohort_vs_period.py`. Member-year register rate regressed on
     spoken year and birth year with chamber fixed effects, word-weighted,
-    HC-robust; 13 chambers carry member birth years (US House, US Senate, UK,
-    Ireland, federal Canada, and eight Canadian provinces), 46,515 member-years.
-    Within-chamber correlations are on the same rows. Nine Australian and
-    UK-devolved chambers lack member birth data and are omitted.
+    HC-robust; all 22 chambers now carry member birth years, 61,312
+    member-years, after the nine Australian and UK-devolved chambers were
+    collected on 2026-08-17. Within-chamber correlations are on the same rows.
 
 [^r46b]: `python formation_window.py`, clustered on member (CR1): birth-decade
     coefficient +1.05 per 1,000 words per decade, t = +8.46 unadjusted and
@@ -766,6 +765,37 @@ chamber fixed effects on raw rates the crossover is larger still, +0.650
 (t = 5.17). III is nominally the highest cell but rests on 147 members and is
 not distinguishable from II.
 
+**The shape holds in every period, and does not migrate.** A chase-and-flight
+cycle predicts that the originating tier abandons the form first, so the peak
+should slide downward across eras. It does not: class II sits above class I in
+all seven half-decades, and the manual-and-farm tail stays at the floor
+throughout.
+
+![Register by EGP class, one line per half-decade](class_by_era_grouped.png)
+
+*The class profile of the register, 1995–2026. One point per class per period
+(≥25 members), member-level means over 22 chambers, z-scored within
+chamber × period so the overall era rise is removed and only the shape across
+classes remains. IVc, V/VI and VIIab are pooled because separately they run
+26–113 members per period and cross each other on noise; I and II are kept
+apart because the crossover between them is the claim under test. Error bars
+are ±1 se. Class III remains thin (26–81 members) and its late excursion is not
+readable as movement.* †[^r46cls]
+
+The era test cannot say who originated the form. Class I is never at the top,
+not even in 1995–99 — but class coding only becomes substantial around 2005,
+and §4.5 dates the register's turn to 1994–96. We are looking at a cycle
+already in progress, with the crossover established before the first frame. The
+study that would discriminate is class-coded Commons speech from 1985–1996,
+where the deep archive reaches and occupations are recoverable (§8.6).
+
+[^r46cls]: `python plot_class_by_era_grouped.py`, reading
+    `class_by_era_grouped.csv` (per-point means, standard errors and member
+    counts); the unpooled version is `class_by_era.csv` / `class_by_era.png`.
+    An earlier member-**year** aggregation of the same data appeared to show the
+    peak migrating downward; that was an artifact of counting long-serving
+    members repeatedly, and the member-level estimate above retracts it.
+
 **Who the peak actually is.** The classes are coded from members' own prior
 occupations, so the peak has a concrete membership: class II is teachers (about
 300 of them once the variants are pooled), journalists (73), social workers
@@ -823,13 +853,47 @@ that breaks monotonicity. The block is jointly significant on its own
 (Wald p = 0.0025).
 
 It is not, however, an independent channel. Put class and education in one
-model and the education block goes to **p = 0.18** while class holds at
+model and the education block goes to **p = 0.22** while class holds at
 **p = 0.0000** — because the two instruments name the same stratum. Teachers,
 nurses and social workers hold bachelor's and master's degrees; lawyers and
 physicians hold professional ones. "Class II, not class I" and "bachelor or
 graduate, not professional" are two descriptions of one group, so whichever
 enters the model first absorbs the other. Education's shape is real and
 independently measured; its apparent separate effect is not.
+
+#### All four predictors at once
+
+Cohort, class, education and prominence in a single member-level regression
+(n = 4,056 complete cases across 22 chambers; each block also fitted alone on
+this same sample, so attenuation is read against its own baseline rather than
+against an estimate from a different set of members): †[^r46joint]
+
+| predictor | alone | joint |
+|---|---|---|
+| **cohort** (per decade) | +0.280 (t 24.3) | **+0.270 (t 26.9)** |
+| **class** (block Wald) | **p = 0.0000** | **p = 0.0000** |
+|  · II over I | +0.093 (t 3.02) | +0.072 (t 2.10) |
+|  · VIIab | −0.300 (t −2.90) | −0.299 (t −2.80) |
+| **education** (block Wald) | p = 0.0025 | **p = 0.2150** |
+| **prominence** (linear, *not* the right form — see D.3) | +0.035 (t 3.08) | +0.020 (t 2.05) |
+
+**They do not deserve equal billing.** Cohort is untouched by the others and an
+order of magnitude better resolved than any of them. Class survives everything,
+barely moving. Education does not survive class. Prominence appears here only because a
+regression needs a number: the linear term is standing in for two opposite
+shapes that cancel when pooled, and the honest reading is the bucket table in
+Appendix D.3, not this coefficient.
+
+An earlier version of this table, computed before the nine-chamber expansion
+(n = 2,989), showed class failing the joint test — the II-over-I contrast fell
+to t = 1.26 and the block to p = 0.0074. That was a power problem, not a
+result: cohort is collinear with both class and education, and the smaller
+sample could not separate them.
+
+[^r46joint]: `python joint_predictors.py`. Canonical member-level spec — one
+    observation per legislator, equal weight, register z-scored within chamber
+    against the chamber's full member population, HC1 errors, joint Wald over
+    each block's term vector.
 
 **Origin is null, and robustly so.** Parental class, 704 members, tested
 under both the panel and member-level specifications: joint p = 0.53–0.59,
@@ -927,36 +991,44 @@ higher-status parents once they become common.[^r46e]
 Each member's Wikipedia article length — a measured page property (wikitext
 bytes via the MediaWiki API), not a judgement — is the third status marker
 available here, alongside class and office. Read in buckets rather than as a
-single slope, it behaves differently in the two kinds of chamber
-(Appendix D.3a):
+single slope, it splits the chambers into two shapes (Appendix D.3; all 22
+chambers, 6,896 members, 99% coverage):
 
-| quintile of article length | Canadian provinces | national chambers |
-|---|---|---|
-| Q1 (least written about) | +0.00 | −0.15 |
-| Q2 | −0.13 | −0.02 |
-| Q3 | −0.17 | **+0.15** |
-| Q4 | −0.27 | +0.10 |
-| Q5 (most written about) | **−0.40** | −0.06 |
+| quintile of article length | CA provinces | AU + UK-devolved | national |
+|---|---|---|---|
+| Q1 (least written about) | +0.00 | **+0.11** | −0.15 |
+| Q2 | −0.13 | +0.01 | −0.02 |
+| Q3 | −0.17 | +0.04 | **+0.15** |
+| Q4 | −0.27 | +0.01 | +0.10 |
+| Q5 (most written about) | **−0.40** | **−0.17** | −0.06 |
 
-In the provinces prominence is a **monotone gradient** — the more written about
-a member is, the less of the register they use (−0.19σ per log-byte, t = −5.6).
-In the national chambers it is not a gradient at all but an **arc**: the
-moderately prominent use the most, and both the obscure and the most prominent
-use less. A single pooled slope is the wrong summary of those two shapes, and
-which way it points depends on how the chambers happen to be mixed; the effect
-is small enough either way that the pooled number is not the interesting
-quantity. The buckets are.
+The **seventeen sub-national chambers decline**: the more written about a
+member is, the less of the register they use. The eight Canadian provinces do
+so steeply, and the nine Australian and UK-devolved chambers reproduce the
+direction more weakly — a replication in chambers collected afterwards, not a
+restatement. The **five national chambers arc** instead, peaking in the middle
+and falling at both ends. Pooled over all 22 the buckets are flat
+(+0.00, −0.07, −0.07, +0.02, −0.06), so the two shapes cancel and no single
+slope describes them; the buckets are the result.
 
-The arc is worth naming because it is the same shape the other two status
-markers make. Class peaks at II and falls away above and below it; office-
-holders — the highest-status *positions* — use less than backbenchers
-(Appendix D.3); and prominence peaks in the middle of its range. Three markers
-measured in completely different ways, one shape: the top of each pulls back
-from the form while the tier just below leans into it. That is what a
-chase-and-flight cycle looks like from three angles at once, and where the peak
-sits should depend on how far along the cycle a given chamber is. Recorded as a
-hypothesis — the arc was found while reconciling the pooled estimate, not
-predicted in advance — and the era-resolved test it implies has not been run.
+**What the four markers share is not a peak but a retreat at the top.** Class
+peaks at II with class I below it. Education plateaus at bachelor and graduate
+with the professional degree below. Office-holders — the highest-status
+*positions* — use less than backbenchers (Appendix D.4). Prominence arcs in the
+national chambers and declines outright in the sub-national ones, but in both
+the most-written-about members are below the middle of their own distribution.
+Four markers, measured in completely different ways, agreeing that the top of
+each pulls back from the form; whether a distinct interior peak also appears
+varies by marker and by chamber, and should not be over-read.
+
+That is what a chase-and-flight cycle looks like from four angles at once, and
+it is recorded as a hypothesis rather than a finding: the shapes were noticed
+while reconciling estimates, not predicted in advance. The era-resolved test it
+implies **has** now been run and does not support the cycle's dynamic half —
+the class profile holds its shape in every half-decade rather than migrating
+(figure above). A cycle already in progress before our first frame would look
+like this too, which is why the discriminating study is class-coded speech from
+before 1996 (§8.6).
 
 Depth was collected as a control on notability bias in the education covariate
 — members whose education we know have **1.80× the median article length** of
@@ -2072,7 +2144,7 @@ not a fourth operationalisation of the same kind.
    measured in federal Canada alone, because it is the only chamber whose
    record carries order of business in a usable field. The `section` field is
    empty in 43 of 53 chamber files and holds topic titles in the rest
-   (Appendix D.3). A classifier labelling segments by order of business
+   (Appendix D.4). A classifier labelling segments by order of business
    (scripted statement / debate / question) from the text and its surrounding
    context would lift that constraint and turn a one-chamber ladder into a
    cross-chamber one — and genre is the control the quality arm most wants
@@ -2514,43 +2586,58 @@ against the full member population; HC1), with article length fetched for the
 tier-1 chambers from their evidence-URL titles (`build_t1_wiki_depth.py`,
 3,999 of 4,008 resolved) and joined to the provincial fetch:
 
-| panel | logdepth coef (σ) | t | n |
-|---|---|---|---|
-| CA provinces | **−0.191** | −5.6 | 1,055 |
-| tier-1 chambers | +0.018 | +1.8 | 3,242 |
-| full panel (13 chambers) | +0.019 | +2.0 | 4,297 |
+**There is no usable pooled slope, and the appendix no longer prints one.** An
+earlier version of this section reported prominence as −0.033σ per log-byte
+across 13 chambers and concluded that the effect "replicates" with the same sign
+everywhere. Both the tier-1 and pooled figures had the wrong sign, and the
+deeper problem was the estimand: a single slope assumes a gradient, and only
+some chambers have one. With all 22 chambers now carrying article lengths
+(6,896 members, 99% coverage after the 2026-08-17 fetch) the pooled quintiles
+are flat noise — +0.003, −0.067, −0.070, +0.023, −0.059 — so a linear
+coefficient over the pooled panel summarises nothing. D.3 gives the buckets,
+which is the only form in which this variable says anything. The provincial
+member-year estimate that started this arm (−0.75 per 1,000) was inflated by
+the same word-weighting as the class arm and is superseded.
 
-**The two sub-panels do not agree, and the pooled slope is not a usable
-summary.** An earlier version of this table reported −0.021 and −0.033 for the
-tier-1 and pooled rows and concluded that the effect "replicates" with the same
-sign everywhere. Both figures had the wrong sign. The provincial estimate is
-the one that reproduces (−0.19 against the −0.214 first reported); the national
-chambers run the other way, and pooling two opposite shapes produces a number
-whose sign depends on the mix rather than on anything about legislators. The
-provincial member-year estimate that started this arm (−0.75 per 1,000) was
-inflated by the same word-weighting as the class arm and is superseded by the
-member-level figure above.
-
-### D.3a Prominence in buckets, which is how it should be read
+### D.3 Prominence in buckets, which is how it should be read
 
 A linear coefficient assumes a gradient. Quintiles of log article length against
-mean within-chamber register z show that only one sub-panel has one:
+mean within-chamber register z show that the chambers split into two shapes, and
+that pooling them produces neither:
 
-| quintile | provinces (median bytes) | mean z | national (median bytes) | mean z |
+| quintile | CA provinces | AU + UK-devolved | national chambers | all 22 pooled |
 |---|---|---|---|---|
-| Q1 | 3,464 | +0.00 | 5,547 | −0.15 |
-| Q2 | 5,879 | −0.13 | 13,232 | −0.02 |
-| Q3 | 8,960 | −0.17 | 22,130 | **+0.15** |
-| Q4 | 13,563 | −0.27 | 38,344 | +0.10 |
-| Q5 | 26,223 | **−0.40** | 85,062 | −0.06 |
+| Q1 (least written about) | +0.001 | **+0.111** | −0.151 | +0.003 |
+| Q2 | −0.125 | +0.010 | −0.023 | −0.067 |
+| Q3 | −0.169 | +0.035 | **+0.154** | −0.070 |
+| Q4 | −0.269 | +0.006 | +0.104 | +0.023 |
+| Q5 (most written about) | **−0.401** | **−0.171** | −0.057 | −0.059 |
+| n | 1,286 | 2,257 | 3,353 | 6,896 |
 
-The provinces are monotone. The national chambers are an arc peaking in the
-middle two quintiles. Range compression explains why a national gradient would
-be *attenuated* — national medians run 5.5k–85k against 3.5k–26k — but not why
-it would change shape, so compression is not the whole story. §4.6a reads these
-as buckets and notes the arc's resemblance to the class and office results.
+The **seventeen sub-national chambers decline**: the more written about a member
+is, the less of the register they use. The eight Canadian provinces do so
+steeply and monotonically, and the nine Australian and UK-devolved chambers —
+collected later and analysed here for the first time — reproduce the direction
+more weakly, which is a replication of the provincial result in fresh chambers
+rather than a restatement of it.
 
-### D.3 Is the cohort gradient ministerial office?
+The **five national chambers arc** instead, peaking in the middle two quintiles,
+with both the obscure and the most-written-about below. Range compression is
+part of it — national medians run 5.5k–85k bytes against 3.1k–26k
+sub-nationally — but compression attenuates a gradient toward zero rather than
+bending it into a hump, so it is not the whole story.
+
+**Pooled, the two shapes cancel.** The all-22 column has no ordering worth
+reading, and standard errors on each bucket are ±0.026–0.027, so the flatness is
+measured rather than merely noisy. This is why §4.6a reports prominence as
+buckets and why no pooled coefficient is quoted anywhere. †[^rpb]
+
+[^rpb]: `python plot_class_by_era.py`-adjacent computation; per-bucket means,
+    standard errors and counts in `prominence_buckets.csv`. Article lengths from
+    the MediaWiki API via `build_t1_wiki_depth.py`, run over the tier-1 set, the
+    provincial fetch and the nine new chambers (2,310 of 2,315 resolved).
+
+### D.4 Is the cohort gradient ministerial office?
 
 Ministers read departmental text, which is more prepared and more formal, so if
 later-born members were likelier to hold office the birth gradient in §4.6
