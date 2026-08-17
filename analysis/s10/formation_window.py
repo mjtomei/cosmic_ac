@@ -65,7 +65,11 @@ def norm(s):
     return re.sub(r"\s*\(.*?\)\s*$", "", s).lower()
 
 
-def ols(y, X, names):
+def ols(y, X, names, clusters=None):
+    """OLS with HC1 errors, or CR1 cluster-robust errors if `clusters` is a
+    per-row list of group ids. birth_decade is constant within a member, so the
+    member-year HC1 default understates its se; clustering on member is the
+    honest inference and is what §4.6 reports."""
     n, k = len(y), len(X[0])
     XtX = [[sum(X[i][a] * X[i][b] for i in range(n)) for b in range(k)]
            for a in range(k)]
@@ -88,9 +92,22 @@ def ols(y, X, names):
                 I[r] = [I[r][j] - f * I[c][j] for j in range(k)]
     beta = [sum(I[a][b] * Xty[b] for b in range(k)) for a in range(k)]
     resid = [y[i] - sum(X[i][j] * beta[j] for j in range(k)) for i in range(n)]
-    meat = [[sum(X[i][a] * X[i][b] * resid[i] ** 2 for i in range(n))
-             for b in range(k)] for a in range(k)]
-    sc = n / max(n - k, 1)
+    if clusters is None:
+        meat = [[sum(X[i][a] * X[i][b] * resid[i] ** 2 for i in range(n))
+                 for b in range(k)] for a in range(k)]
+        sc = n / max(n - k, 1)
+    else:
+        # CR1: sum over clusters of the outer product of each cluster's
+        # score vector g_c[a] = sum_{i in c} X[i][a] * resid[i]
+        groups = defaultdict(list)
+        for i, g in enumerate(clusters):
+            groups[g].append(i)
+        score = [[sum(X[i][a] * resid[i] for i in idx) for a in range(k)]
+                 for idx in groups.values()]
+        meat = [[sum(s[a] * s[b] for s in score) for b in range(k)]
+                for a in range(k)]
+        G = len(groups)
+        sc = (G / max(G - 1, 1)) * ((n - 1) / max(n - k, 1))
     V = [[sc * sum(I[a][p] * meat[p][q] * I[b][q]
                    for p in range(k) for q in range(k))
           for b in range(k)] for a in range(k)]
@@ -184,12 +201,17 @@ def main():
                  [1.0 if r["prov"] == p else 0.0 for p in provs] +
                  [1.0 if r["year"] == y else 0.0 for y in years])
         Y.append(r["rate"])
+    clus = [(r["prov"], r["pid"]) for r in rows]  # cluster on member
     fit = ols(Y, X, names)
+    fitc = ols(Y, X, names, clusters=clus)
     b, se = fit["birth_decade"]
+    bc, sec = fitc["birth_decade"]
     print(f"\nPRIMARY — register rate on birth decade, province and year fixed:")
-    print(f"  birth_decade {b:+.4f} per 1,000 words per decade later "
-          f"(se {se:.4f}, t {b / se:+.2f})"
+    print(f"  birth_decade {b:+.4f} per 1,000 words per decade later")
+    print(f"    HC1 (member-year)   se {se:.4f}, t {b / se:+.2f}"
           f"{' *' if abs(b / se) > 1.96 else ''}")
+    print(f"    CR1 (member cluster) se {sec:.4f}, t {bc / sec:+.2f}"
+          f"{' *' if abs(bc / sec) > 1.96 else ''}   <- reported")
 
     # add occupation and education
     names2 = names + [f"occ_{o}" for o in occs] + ["postsec"]
@@ -198,11 +220,15 @@ def main():
         X2.append(X[i] + [1.0 if r["occ"] == o else 0.0 for o in occs] +
                   [1.0 if r["postsec"] else 0.0])
     fit2 = ols(Y, X2, names2)
-    if fit2:
+    fit2c = ols(Y, X2, names2, clusters=clus)
+    if fit2 and fit2c:
         b2, se2 = fit2["birth_decade"]
+        b2c, se2c = fit2c["birth_decade"]
         print(f"\nWITH occupation category and post-secondary:")
-        print(f"  birth_decade {b2:+.4f} (se {se2:.4f}, t {b2 / se2:+.2f})"
-              f"{' *' if abs(b2 / se2) > 1.96 else ''}")
+        print(f"  birth_decade {b2:+.4f}")
+        print(f"    HC1 (member-year)   se {se2:.4f}, t {b2 / se2:+.2f}")
+        print(f"    CR1 (member cluster) se {se2c:.4f}, t {b2c / se2c:+.2f}"
+              f"{' *' if abs(b2c / se2c) > 1.96 else ''}   <- reported")
         ps, pse = fit2["postsec"]
         print(f"  postsecondary {ps:+.4f} (se {pse:.4f}, t {ps / pse:+.2f})")
         sig = [(n, fit2[n]) for n in names2 if n.startswith("occ_")

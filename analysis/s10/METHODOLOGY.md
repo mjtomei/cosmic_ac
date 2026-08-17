@@ -1293,8 +1293,10 @@ shows the register *declining* before the consumer web and rising after:
 | 2006–2016 | **+42.22** |
 | 2017–2026 | +28.26 |
 
-The gap falls from 774 (1985) to a minimum of **593 (1994)**, then climbs
-monotonically to 1,720 (2026). The frequency-and-dispersion-matched placebo is
+The gap falls from 774 (1985) to a minimum of **593 (1994)**, then rises —
+unevenly, with year-to-year dips rather than monotonically — to 1,720 (2026).
+(Gap measured against a 1990–92 baseline; `long_trend.py --base 1990 1991
+1992`.) The frequency-and-dispersion-matched placebo is
 flat across all 41 years (1,520–1,575), so this is not measurement drift. A
 pre-existing secular trend would have been rising in 1985–94; it was falling.
 **The inflection coincides with mass consumer internet adoption, and the
@@ -1304,7 +1306,7 @@ transformer era is the slowest-growing of the three rising periods.**
 
 | quantity (16 chambers) | pooled | 95% CI |
 |---|---|---|
-| **arrival premium** (new members minus incumbents, same years) | **+1.87** | **[+1.25, +2.49]** |
+| **arrival premium** (new members minus incumbents, same years) | **+1.88** | **[+1.26, +2.49]** |
 | within-member change | −0.42 | [−1.32, +0.49] *(n.s.)* |
 | compositional component | +2.12 | — |
 

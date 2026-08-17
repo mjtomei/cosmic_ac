@@ -30,6 +30,7 @@ Usage: python decomposition_inference.py
 import csv
 import glob
 import json
+import math
 import os
 import random
 import re
@@ -161,10 +162,28 @@ def main():
           f"{'  *' if wh < 0 or wl > 0 else '  (includes zero)'}")
     print(f"  premium {statistics.mean(pv_):+.2f}  95% CI [{pl:+.2f}, {ph:+.2f}]"
           f"{'  *' if ph < 0 or pl > 0 else '  (includes zero)'}")
-    print(f"  sign test on the premium: positive in "
-          f"{sum(1 for x in pv_ if x > 0)}/{n}, "
-          f"one-sided binomial p = {0.5 ** n * sum(1 for _ in range(1)):.2e} "
-          f"(exact for all-positive; see count above)")
+    npos = sum(1 for x in pv_ if x > 0)
+    # one-sided sign test: P(>= npos of n positive | p=0.5). The old code
+    # hardcoded 0.5**n (the all-positive value) regardless of npos.
+    sign_p = sum(math.comb(n, k) for k in range(npos, n + 1)) * 0.5 ** n
+    print(f"  sign test on the premium: positive in {npos}/{n}, "
+          f"one-sided binomial p = {sign_p:.2e}")
+
+    # country means -- the 16 chambers are three national systems, not 16
+    # independent draws, so report the between-country structure too
+    COUNTRY = {"AB": "Canada", "BC": "Canada", "MB": "Canada", "NL": "Canada",
+               "NS": "Canada", "ON": "Canada", "SK": "Canada",
+               "NSW": "Australia", "QLD": "Australia", "SA": "Australia",
+               "TAS": "Australia", "VIC": "Australia", "WA": "Australia",
+               "NI": "UK", "SCO": "UK", "WAL": "UK"}
+    bycountry = defaultdict(list)
+    for row in P:
+        bycountry[COUNTRY.get(row[0], "?")].append(row[1])
+    print("  premium by national system:")
+    for c in ("Canada", "Australia", "UK"):
+        v = bycountry.get(c, [])
+        if v:
+            print(f"    {c:<10s} {statistics.mean(v):+.2f}  (n={len(v)})")
 
 
 if __name__ == "__main__":

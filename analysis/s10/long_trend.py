@@ -62,7 +62,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--seg", default="uk/segments_uk_long.jsonl")
     ap.add_argument("--label", default="UK House of Commons")
+    ap.add_argument("--base", nargs="+", default=list(BASE_YEARS),
+                    help="baseline anchor years the gap is re-based on "
+                         "(default 2010 2011 2012); METHODOLOGY 5.4.1 uses "
+                         "1990 1991 1992)")
     args = ap.parse_args()
+    base_years = tuple(args.base)
     style = load_style()
     sset = set(style)
 
@@ -78,7 +83,7 @@ def main():
         t = TOKEN_RE.findall(d["text"].lower())
         per_year[y].update(t)
         words[y] += len(t)
-        if y in BASE_YEARS:
+        if y in base_years:
             for w in set(t):
                 if last.get(w) != d["date"]:
                     disp[w] += 1
@@ -87,7 +92,7 @@ def main():
     years = sorted(y for y in per_year if words[y] > 200_000)
     base = Counter()
     base_w = 0
-    for y in BASE_YEARS:
+    for y in base_years:
         base.update(per_year.get(y, Counter()))
         base_w += words.get(y, 0)
     if base_w == 0:
@@ -127,19 +132,19 @@ def main():
         return sum(per_year[y][w] for w in ws) / words[y] * 1e5
 
     print(f"=== {args.label} ===  instrument = {len(present)} Kobak style words "
-          f"present in {'/'.join(BASE_YEARS)}")
-    print(f"  baseline era {'/'.join(BASE_YEARS)}: {base_w:,} words\n")
+          f"present in {'/'.join(base_years)}")
+    print(f"  baseline era {'/'.join(base_years)}: {base_w:,} words\n")
     print(f"  {'year':<6s} {'Mwords':>7s} {'instrument':>11s} {'placebo':>9s} "
           f"{'GAP':>8s} {'gap vs base':>12s}")
-    b_inst = rate(present, BASE_YEARS[0])
+    b_inst = rate(present, base_years[0])
     rows = []
     for y in years:
         ri = rate(present, y)
         rp = sorted(rate(p, y) for p in placebo_sets)
         med = rp[len(rp) // 2]
         rows.append((y, ri, med, ri - med))
-    gap_base = sum(r[3] for r in rows if r[0] in BASE_YEARS) / \
-        max(1, sum(1 for r in rows if r[0] in BASE_YEARS))
+    gap_base = sum(r[3] for r in rows if r[0] in base_years) / \
+        max(1, sum(1 for r in rows if r[0] in base_years))
     marks = {"2017": "  <- Attention Is All You Need (Jun)",
              "2018": "  <- Gmail Smart Compose (May)",
              "2019": "  <- GPT-2 (Feb)",
@@ -154,7 +159,7 @@ def main():
                 "placebo_per100k": med, "gap": g} for y, ri, med, g in rows],
               open(f"long_trend_{args.label.split()[0].lower()}.json", "w"), indent=1)
     print(f"\n  gap is instrument minus matched-placebo rate; the final column")
-    print(f"  re-bases it on {'/'.join(BASE_YEARS)}, so it reads as change since")
+    print(f"  re-bases it on {'/'.join(base_years)}, so it reads as change since")
     print(f"  before the transformer era.")
 
 

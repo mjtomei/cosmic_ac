@@ -513,10 +513,13 @@ Descriptive series (§3.3), UK Commons extended back to 1985. The register
 before the consumer web, and long before any language model. Whatever this
 measures, LLMs did not start it.[^r45]
 
-[^r45]: `python long_trend.py --seg uk/segments_uk_deep.jsonl`. The turning
-    point is the minimum of the fitted series; it lands on 1994 exactly. The
-    "1994–96" range in the text is the flat region around that minimum, not
-    an interval estimate.
+[^r45]: `python long_trend.py --seg uk/segments_uk_deep.jsonl` for the annual
+    series; the turning point is the minimum of the annual
+    instrument-minus-placebo gap (the script fits no curve), and it lands on
+    1994. A day-clustered bootstrap (`python long_trend_bootstrap.py`, 2,000
+    resamples of sitting days within year) puts the minimum at 1994 in 84.8% of
+    resamples, 1995 in 13.0% and 1996 in 2.1% — so "1994–96" is a genuine
+    [1994, 1996] interval, not a hedge.
 
 Read together with §4.7, the interesting reading is not "LLMs changed
 parliamentary register" but that **human register had been moving toward what
@@ -649,19 +652,28 @@ names the instrument that would separate those two.
 
 ### 4.6 Cohort replacement, not incumbent conversion
 
-- Arrivals bring **+1.87 per 1,000** more than incumbents (15/16 chambers). †[^r46a]
-- Birth decade predicts at **t ≈ 12**; coarse occupation and post-secondary
-  controls run the wrong way, *strengthening* the cohort term. Finer measures
-  of both do predict the register (§4.6a) and still leave cohort intact. †[^r46b]
+- Arrivals bring **+1.88 per 1,000** more than incumbents (15/16 chambers). †[^r46a]
+- Birth decade predicts at **t ≈ 8–9** (clustered on member); coarse
+  occupation and post-secondary controls run the wrong way, *strengthening* the
+  cohort term. Finer measures of both do predict the register (§4.6a) and still
+  leave cohort intact. †[^r46b]
 - Cohort is separable from age: chamber age is flat while the register rises;
   cohort accounts for **~60%** of the change. †[^r46c]
 
-[^r46a]: `python arrival_premium.py`. CI [+1.25, +2.49], clustered on member.
+[^r46a]: `python decomposition_inference.py`. Pooled premium +1.88, 95% CI
+    [+1.26, +2.49] from a **chamber-level** bootstrap (16 chambers resampled
+    whole), positive in 15 of 16 (sign-test p = 2.6 × 10⁻⁴). `arrival_premium.py`,
+    cited here in an earlier draft, computes the separate UK cohort-vs-tenure
+    series, not this pooled figure.
 
-[^r46b]: `python formation_window.py`. t = +12.06 unadjusted, +13.22 with
-    occupation and education controls — the controls *strengthen* the cohort
-    term, which is why they are reported as running the wrong way for a
-    selection story.
+[^r46b]: `python formation_window.py`, clustered on member (CR1): birth-decade
+    coefficient +1.05 per 1,000 words per decade, t = +8.46 unadjusted and
+    +9.23 with occupation and education controls. The controls *strengthen* the
+    cohort term (coefficient +1.05 → +1.14), which is why they are reported as
+    running the wrong way for a selection story. The member-year HC1 errors the
+    script also prints inflate the t to +17.7 — a third instance of the
+    unclustered-inference pattern flagged in Appendix A, though here, with 888
+    member clusters, the conclusion is unmoved.
 
 [^r46c]: Not a decomposition — an arithmetic closure. Mean birth year advances
     **13.8 years** across the window; at the fitted **+0.093 per year** that
@@ -2032,7 +2044,11 @@ Reported because they bound what the study can claim.
 3. **Cohort × birth-province adoption** — null. Spec B initially showed
    t = +2.20; clustered on 10 birth provinces the CI is [−0.22, +0.33].
    **Unclustered inference manufactured a hypothesis-flattering result twice
-   in this study; both are recorded as cautionary.**
+   in this study; both are recorded as cautionary.** A third instance is the
+   cohort t-statistic itself (§4.6): member-year HC1 errors report t ≈ 17.7,
+   clustering on member gives t ≈ 8–9. Unlike the two above it does not flip —
+   888 member clusters, not 10 provinces — but it is the same failure mode and
+   is corrected the same way.
 4. **Corpus-wide likelihood delta** — triple-replicated null.
 5. **Kobak counterfactual on 2024 and 2026** — null (fires on COVID 2020-21,
    validating the estimator on a known shock).
