@@ -87,16 +87,41 @@ About 215 rated elements, none of which may inform the composite:
   Artistic, **Social**, Enterprising, Conventional) and the 41 basic-interest
   scales `1.B.3.*`.
 
-**A rival hypothesis worth naming in advance.** The RIASEC **Social** scale
-`1.B.1.d` may reproduce the whole class U on its own: the peak (teachers,
-nurses, social workers, journalists) is the Social cluster nearly by
+### A second registered hypothesis: sociality, and the direction of interaction
+
+RIASEC **Social** `1.B.1.d` may reproduce the class U on its own — the peak
+(teachers, nurses, social workers, journalists) is the Social cluster nearly by
 definition, the floor (farmers, miners, labourers) is **Realistic** `1.B.1.a`,
-class I is Investigative/Enterprising and class III is Conventional. A
-Social-minus-Realistic contrast is two numbers, defined by other people decades
-ago for unrelated purposes, and if it beats both the accountability composite
-and EGP then the finding is about working-with-people rather than about
-answering-to-people. That is a different claim and should not be reported as a
-confirmation of this one.
+class I is Investigative/Enterprising, class III is Conventional. The
+**Social-minus-Realistic contrast** is therefore registered here as a second
+hypothesis in its own right, on equal footing with the accountability composite.
+
+It is a **sibling of the accountability hypothesis, not a rival** (Matthew): any
+job that requires interacting with an individual involves reporting to them in
+some sense, so the two constructs overlap by construction. What separates them
+is not whether interaction happens but **which way it points**, and O\*NET rates
+that separately:
+
+| direction | elements |
+|---|---|
+| **upward** — to someone who can overrule you | `4.A.4.a.2` Communicating with Supervisors, Peers, or Subordinates; the accountability composite above |
+| **lateral / public** — to people you serve rather than answer to | `4.A.4.a.4` Establishing and Maintaining Interpersonal Relationships; `4.A.4.a.5` Assisting and Caring for Others; `4.A.4.a.8` Performing for or Working Directly with the Public; `1.B.1.d` Social |
+| **downward** — to people who answer to you | `4.A.4.b.1` Coordinating the Work and Activities of Others; `4.A.4.b.4` Guiding, Directing, and Motivating Subordinates; `4.A.4.b.5` Coaching and Developing Others |
+
+**The three-way contrast is the discriminating test**, and each outcome names a
+different finding:
+
+- **upward alone predicts** — reporting in a social *hierarchy*; the
+  accountability hypothesis.
+- **all three predict about equally** — general social *role*; sociality, and
+  direction is irrelevant.
+- **downward predicts too** — a managerial register, which is a third account
+  neither hypothesis proposed and would need its own explanation.
+- **lateral predicts but upward does not** — service-facing speech rather than
+  deference, which would invert the reading of the U.
+
+This distinction is the reason to run the test at all: both hypotheses predict
+the same cross-sectional U, and only the direction split tells them apart.
 
 ## Specification
 
@@ -104,32 +129,46 @@ Member-level, matching the canonical spec in `member_level_estimation.py`: one
 observation per legislator, equal weight, register z-scored within chamber
 against the chamber's full member population, HC1 errors.
 
-    z  ~  accountability + freedom + required_education   (+ birth decade)
+    (A) z ~ accountability + freedom + required_education    (+ birth decade)
+    (B) z ~ social − realistic + required_education          (+ birth decade)
+    (C) z ~ upward + lateral + downward + required_education (+ birth decade)
+    (D) z ~ EGP class dummies                                (+ birth decade)
 
-against the incumbent model
-
-    z  ~  EGP class dummies                               (+ birth decade)
-
-Model comparison on the **same members**, by adjusted R² and by whether each
-block survives the other's inclusion.
+(A) is the accountability hypothesis, (B) sociality, (C) the direction split
+that discriminates them, (D) the incumbent. All four fitted on the **same
+members** and compared by adjusted R², by held-out performance on withheld
+occupations, and by whether each block survives the others' inclusion. (C) is
+what decides between (A) and (B); (A) and (B) are both reported whatever (C)
+says, because a sibling hypothesis that also predicts is a result, not a
+nuisance.
 
 ## Pre-specified predictions
 
 1. **Accountability is positive and survives** freedom and required education.
-2. **Farmers are the diagnostic case.** EGP ranks IVc mid-table; both the
-   composite and the observed value place it at the floor. If the composite
-   beats EGP anywhere, it should be here.
-3. **Police are predicted to be MISSED.** Police other-ranks write heavily
+2. **Sociality also predicts**, because the two constructs overlap by
+   construction — a job requiring interaction with an individual involves
+   reporting to them in some sense. A positive result for (B) is expected and is
+   **not** evidence against (A). The informative quantity is (C).
+3. **Upward outscores downward.** If the register is deference, the upward block
+   carries (C) and the downward block does not. Roughly equal loadings across
+   all three directions would favour sociality; a downward loading would
+   indicate a managerial register, which neither hypothesis predicts and which
+   would need its own account.
+4. **Farmers are the diagnostic case.** EGP ranks IVc mid-table; both composites
+   and the observed value place it at the floor. If either beats EGP anywhere,
+   it should be here.
+5. **Police are predicted to be MISSED.** Police other-ranks write heavily
    (incident reports, statements, court files), so they will score high on
-   Documenting and Letters-and-Memos, but they are observed at −0.200. This is
-   recorded as an expected failure **in advance**, and the composite will NOT be
+   Documenting and Written Letters and Memos, but they are observed at −0.200.
+   Recorded as an expected failure **in advance**; neither composite will be
    modified to accommodate it. A simple combination of existing scales that
-   misses one occupation is a more informative result than a bespoke rule that
-   misses none.
-4. **Two-factor outcome is the most likely.** Accountability negative-at-the-top
-   and required-education positive-at-the-bottom would produce the observed U as
-   the product of two crossed gradients, and would explain why education showed
-   the same shape while being statistically inseparable from class.
+   misses one occupation is more informative than a bespoke rule that misses
+   none.
+6. **Two-factor outcome is the most likely.** An accountability or sociality
+   term negative-at-the-top with required education positive-at-the-bottom would
+   produce the observed U as the product of two crossed gradients, and would
+   explain why education showed the same shape while being statistically
+   inseparable from class.
 
 ## The free model (Matthew, 2026-08-17) — exploratory by construction
 
@@ -140,32 +179,44 @@ after** the confirmatory comparison above is computed and recorded, and **it can
 never revise the composite**. If the free model finds something the composite
 missed, that is a new hypothesis for a later study, not a correction to this one.
 
-### The trap this design has to avoid
+### Sampling and validation (Matthew, 2026-08-17)
 
-Register is measured per member; every O\*NET element is constant within an
-occupation. Roughly 5,000 members will map to perhaps 600–900 distinct SOC
-codes, so for learning occupation-level structure the effective sample is the
-number of **occupations**, not members. Three hundred lawyers are one
-observation of "lawyer". Fitting ~215 heavily collinear elements against ~700
-effective observations will select confidently and replicate nothing.
+**Keep every member-level row.** O\*NET elements are constant within an
+occupation, but the model is not given occupation alone: member-level features
+(birth decade, chamber, education level, prominence) vary within occupation, so
+two teachers of different cohorts in different chambers are genuinely two
+observations and the model should be free to learn probabilistic structure from
+them. Aggregating to one row per SOC code would discard that.
 
-### Consequently
+**Validation is repeated random holdout over members.** The question this study
+asks is descriptive — *which occupational properties travel with the register* —
+not predictive of occupations never seen. A model that predicts partly through
+an occupation's mean still answers the descriptive question, because the
+features are what describe the occupation. So the primary design holds out
+random subsets of members, repeatedly.
 
-1. **Aggregate to SOC**, or cluster all errors on SOC. Never let member count
-   stand in for occupational variety.
-2. **Regularise** — elastic net over the standardised pool, alpha and lambda by
-   cross-validation *at the SOC level* so no occupation appears in both folds.
-3. **Stability selection.** Bootstrap the fit and report selection *frequency*
-   per element, not a single chosen set. Lasso picks one member of a correlated
-   cluster arbitrarily, and which one it picks is not a finding. Report clusters,
-   not winners.
-4. **Held-out evaluation**, with the accountability composite, the RIASEC
-   Social-minus-Realistic contrast, and EGP class all scored on the **same**
-   held-out occupations. The deliverable is a three- or four-way out-of-sample
-   comparison, not a coefficient table.
-5. **Report what it costs.** If the free model beats the composite by a trivial
-   margin while selecting fifty elements, say so; a hand-built two-term model
-   that nearly matches a fifty-term one is the more useful result.
+**Fixed training process, repeated, findings must survive.** The procedure is
+specified once and not tuned per run: standardise on the training split, elastic
+net over the pool, hyperparameters by inner cross-validation. It is then
+repeated over many random holdout splits, and **only findings that survive
+across runs are reported**. The deliverable per element is a selection
+*frequency* across repetitions, not its presence in any one fit — regularised
+regression picks one member of a correlated cluster arbitrarily, and which one
+it picks is not a finding. Report clusters and frequencies; never a single
+winning set.
+
+**One secondary check, on one sub-question.** Random member holdout is neutral
+for feature importance but mildly favours the free model in the *model
+comparison*, because 215 features can fingerprint an occupation and recall its
+mean in a way a four-term composite cannot. So the comparison of (A)–(D) and the
+free model is **additionally** run with whole occupations held out, and both
+numbers are reported. If they agree, the point is moot; if they disagree, the
+grouped number is the conservative one for that comparison only, and neither is
+used to revise feature selection.
+
+**Report what the free model costs.** If it beats a hand-built two-term model by
+a trivial margin while selecting fifty elements, say so; the near-match by the
+small model is then the more useful result.
 
 ### What would count as each outcome
 
