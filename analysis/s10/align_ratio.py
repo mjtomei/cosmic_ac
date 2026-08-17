@@ -58,6 +58,29 @@ CORPORA = {
     "uss": "us/segments_us_senate.jsonl",
 }
 OUT = "align_ratio"
+# The permeation arm was built on five chambers because that was the corpus at
+# the time. The pooled DiD against the placebo positions (L6) is precision-bound
+# rather than negative, and its precision is set by the number of independent
+# CHAMBERS, so --full widens the sample to every chamber held. Written to a
+# separate --out so the five-chamber artifacts keep reproducing the numbers
+# already in the write-up.
+CORPORA_FULL = dict(CORPORA)
+CORPORA_FULL.update({
+    "ca": "ca/segments_ca2.jsonl", "uk": "uk/segments_uk_deep.jsonl",
+    "ab": "provinces/segments_ab.jsonl", "bc": "provinces/segments_bc.jsonl",
+    "mb": "provinces/segments_mb.jsonl", "nl": "provinces/segments_nl.jsonl",
+    "ns": "provinces/segments_ns.jsonl", "on": "provinces/segments_on.jsonl",
+    "pe": "provinces/segments_pe.jsonl", "sk": "provinces/segments_sk.jsonl",
+    "nsw": "provinces/segments_aus_nsw.jsonl",
+    "qld": "provinces/segments_aus_qld.jsonl",
+    "sa": "provinces/segments_aus_sa.jsonl",
+    "tas": "provinces/segments_aus_tas.jsonl",
+    "vic": "provinces/segments_aus_vic.jsonl",
+    "wa": "provinces/segments_aus_wa.jsonl",
+    "ni": "provinces/segments_ni.jsonl",
+    "sco": "provinces/segments_scot.jsonl",
+    "wal": "provinces/segments_wales.jsonl",
+})
 WMIN, WMAX = 120, 361
 
 
@@ -69,9 +92,9 @@ def era(d):
     return None
 
 
-def build_sample(per_cell):
+def build_sample(per_cell, corpora=None):
     items = []
-    for code, path in CORPORA.items():
+    for code, path in (corpora or CORPORA).items():
         if not os.path.exists(path):
             print(f"  skip {code}: missing")
             continue
@@ -104,13 +127,17 @@ def score(args):
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
+    global OUT
+    OUT = getattr(args, "out", None) or OUT
     os.makedirs(OUT, exist_ok=True)
     ipath = f"{OUT}/items.json"
     if os.path.exists(ipath):
         items = json.load(open(ipath))
         print(f"reusing {len(items):,} sampled segments")
     else:
-        items = build_sample(args.per_cell)
+        items = build_sample(args.per_cell,
+                             CORPORA_FULL if getattr(args, 'full', False)
+                             else CORPORA)
         json.dump(items, open(ipath, "w"))
         print(f"{len(items):,} segments sampled")
 
@@ -218,6 +245,9 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("mode", choices=["score", "report"])
     ap.add_argument("--per-cell", type=int, default=1500)
+    ap.add_argument("--full", action="store_true",
+                    help="sample every chamber, not just the original five")
+    ap.add_argument("--out", default=None, help="output dir (default align_ratio)")
     ap.add_argument("--batch", type=int, default=16)
     a = ap.parse_args()
     (score if a.mode == "score" else report)(a)

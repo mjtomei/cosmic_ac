@@ -136,6 +136,9 @@ def score(args):
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
+    global OUT, ITEMS
+    OUT = getattr(args, "out", None) or OUT
+    ITEMS = getattr(args, "items", None) or ITEMS
     os.makedirs(OUT, exist_ok=True)
     items = json.load(open(ITEMS))
     lex_i, lex_p = build_lexicons(items)
@@ -390,6 +393,8 @@ if __name__ == "__main__":
     ap.add_argument("--batch", type=int, default=16)
     ap.add_argument("--family", default="qwen3")
     ap.add_argument("--boot", type=int, default=2000)
+    ap.add_argument("--out", default=None, help="output dir (default word_context)")
+    ap.add_argument("--items", default=None, help="items.json to score")
     ap.add_argument("--seed", type=int, default=6)
     a = ap.parse_args()
     {"score": score, "report": report, "pooled": pooled}[a.mode](a)

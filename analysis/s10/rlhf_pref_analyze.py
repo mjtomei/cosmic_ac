@@ -53,6 +53,7 @@ import json
 import math
 import os
 import random
+import sys
 import re
 from collections import Counter, defaultdict
 
@@ -68,6 +69,16 @@ META = re.compile(r"\b(this (text|passage|speech|statement|excerpt)|the speaker|
                   r"in this (text|passage)|here is|sure[,!]|I cannot|as an ai|"
                   r"does this answer)\b", re.I)
 SRC = ["ie/segments_ie_en.jsonl", "uk/segments_uk.jsonl", "ca/segments_ca_en.jsonl"]
+# --full widens the Hansard outcome for TESTS B/C from three chambers to the
+# whole panel. The three-chamber default was never a design choice about which
+# legislatures the register shift lives in -- it is what existed when the test
+# was written -- and word-level tests are the most power-hungry in the study,
+# so the narrow corpus is the likeliest reason TEST B reads null.
+import glob as _glob
+SRC_FULL = (["ie/segments_ie_en.jsonl", "ca/segments_ca2.jsonl",
+             "us/segments_us_house.jsonl", "us/segments_us_senate.jsonl",
+             "uk/segments_uk_deep.jsonl"]
+            + sorted(_glob.glob("provinces/segments_*.jsonl")))
 FAMS = ["llama3", "qwen3", "mistral"]
 _HERE = os.path.dirname(os.path.abspath(__file__))
 
@@ -302,7 +313,7 @@ def main():
     # ---------- Hansard outcome, for tests B and C ----------
     pre_c, post_c = Counter(), Counter()
     pre_w = post_w = 0
-    for path in SRC:
+    for path in (SRC_FULL if '--full' in sys.argv else SRC):
         if not os.path.exists(path):
             continue
         for line in open(path):
