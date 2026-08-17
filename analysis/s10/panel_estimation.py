@@ -78,6 +78,25 @@ def provincial_rows(code):
         if r.get("birth_year") and k not in by:
             by[k] = r["birth_year"]
     edu = CS.load_covariates("official")
+    # The nine chambers collected 2026-08-17 (6 Australian states, Scotland,
+    # Wales, Northern Ireland) had no member data at all. Their keys are
+    # already FW.norm() forms taken from the corpus roster, so they join
+    # directly. Occupation is carried but NOT coded to EGP yet, so `egp` stays
+    # None for them until the coding pass runs -- an uncoded occupation string
+    # is invisible to the class regression, and pretending otherwise would
+    # silently drop them from it.
+    m9_birth, m9_edu = {}, {}
+    _m9 = os.path.join(HERE, "covariates_missing9.json")
+    if os.path.exists(_m9):
+        for r in json.load(open(_m9)):
+            k = (r.get("chamber"), r.get("key"))
+            if r.get("ambiguous"):
+                continue
+            if r.get("birth_year"):
+                m9_birth.setdefault(k, int(r["birth_year"]))
+            lv = (r.get("education_level") or "").strip().lower()
+            if lv in LV:
+                m9_edu.setdefault(k, lv)
     rows = []
     cell = json.load(open(os.path.join(HERE, "member_year_rates.json")))
     agg = defaultdict(lambda: [0, 0])
@@ -92,8 +111,9 @@ def provincial_rows(code):
             "chamber": pv, "member": f"{pv}|{nm}", "year": int(yr),
             "words": w, "rate": h / w * 1000,
             "egp": cls.get((pv, nm)),
-            "edu": (edu.get(pv, {}).get(nm) or {}).get("edu"),
-            "birth": by.get((pv, nm)),
+            "edu": ((edu.get(pv, {}).get(nm) or {}).get("edu")
+                    or m9_edu.get((pv, nm))),
+            "birth": by.get((pv, nm)) or m9_birth.get((pv, nm)),
             "father": None, "mother": None,     # provincial parental joined
         })                                       # via allsource below
     pj = {}
