@@ -1302,24 +1302,29 @@ pre-existing secular trend would have been rising in 1985–94; it was falling.
 **The inflection coincides with mass consumer internet adoption, and the
 transformer era is the slowest-growing of the three rising periods.**
 
-#### 5.4.2 It arrives with new members, not with changed ones
+#### 5.4.2 The register rises with generation, not only with calendar time
 
-| quantity (16 chambers) | pooled | 95% CI |
+Each member-year of speech is stamped with the year it was spoken (period) and
+the speaker's birth year (generation). Regressing the register rate on both, with
+chamber fixed effects (13 chambers with member birth years, 46,515 member-years),
+separates them:
+
+| stamp | coefficient / decade | t |
 |---|---|---|
-| **arrival premium** (new members minus incumbents, same years) | **+1.88** | **[+1.26, +2.49]** |
-| within-member change | −0.42 | [−1.32, +0.49] *(n.s.)* |
-| compositional component | +2.12 | — |
+| **birth year** (generation) | **+0.95** | +28.4 |
+| spoken year (period) | +1.24 | +24.3 |
 
-Positive in **15 of 16 chambers** (sign test p ≈ 2.6 × 10⁻⁴), significant
-individually in 10. Member-level bootstrap, resampling members not words.
+Both survive net of each other: the register is partly a calendar-wide drift and
+partly a generational gradient, neither reducible to the other. On identical
+rows the within-chamber word-weighted correlation of the rate is +0.333 with
+birth year against +0.303 with spoken year — birth the stronger organiser in 10
+of 13 chambers. Birth years are held for the US House and Senate, UK, Ireland,
+federal Canada and eight Canadian provinces; nine Australian and UK-devolved
+chambers lack them and are omitted.
 
-The honest form of this is "**incumbents flat, arrivals higher**" — not
-"incumbents declined". The within-member component is significantly negative
-in only 4 chambers (BC, ON, QLD, SK) and significantly *positive* in 3 (NI,
-SCO, WAL). Those three are all UK devolved, and two carry known
-era-asymmetric instruments (Wales PDF→XML across the windows; NI's second
-window truncated by the Stormont collapse), which is exactly the artifact
-shape that manufactures a spurious within-member effect.
+Whether sitting members' own register changed is a separate question and returns
+a null (Appendix A). §5.4.3 pins the generational gradient down further, within
+province and year.
 
 #### 5.4.3 What distinguishes arrivals is birth year
 
@@ -1328,11 +1333,11 @@ Per-member-year register rate on birth decade, province and year fixed
 
 | predictor | coefficient | t |
 |---|---|---|
-| **birth decade** | **+0.93** | **+12.03** |
-| birth decade, adding occupation + education | **+1.06** | **+13.36** |
-| post-secondary attested | −0.53 | −3.31 |
-| occupation: law | −1.67 | −5.83 |
-| occupation: communications/PR/journalism | −0.67 | −2.02 |
+| **birth decade** (clustered on member) | **+1.05** | **+8.46** |
+| birth decade, adding occupation + education | **+1.14** | **+9.23** |
+| post-secondary attested | −0.47 | −3.73 |
+| occupation: law | −1.39 | −6.24 |
+| occupation: communications/PR/journalism | −0.71 | −2.83 |
 
 Raw cohort means run 33.30 (1930s) → 33.64 (1950s) → 36.84 (1970s) → 39.60
 (1990s) — flat, then climbing from the 1960s cohort.
@@ -1345,9 +1350,10 @@ the cohort coefficient.
 **Cohort, not age.** With year fixed effects, birth year and age are
 collinear, so the coefficient could in principle be an age effect. It is not:
 mean chamber age is flat (52.2 in 2006 → 51.4 in 2019) while the register
-rises +2.06. A stable-age chamber shows no trend under an age effect. Under a
-cohort effect, mean birth year advanced 13.8 years, which at +0.093/yr
-predicts **+1.28 of the observed +2.06 — about 60%**.
+rises. A stable-age chamber shows no trend under an age effect; under a cohort
+effect it shifts as later-born members replace earlier ones — which is what the
+birth-year gradient in §5.4.2, measured net of calendar period, captures
+directly.
 
 #### 5.4.4 What is still not identified — three nulls
 

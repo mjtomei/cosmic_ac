@@ -650,21 +650,44 @@ names the instrument that would separate those two.
     one-word orthographic forms (`percent` for "per cent") are reported as a
     separate stratum, along with two harsher filters, as robustness only.
 
-### 4.6 Cohort replacement, not incumbent conversion
+### 4.6 A generational gradient, net of calendar drift
 
-- Arrivals bring **+1.88 per 1,000** more than incumbents (15/16 chambers). †[^r46a]
-- Birth decade predicts at **t ≈ 8–9** (clustered on member); coarse
-  occupation and post-secondary controls run the wrong way, *strengthening* the
-  cohort term. Finer measures of both do predict the register (§4.6a) and still
-  leave cohort intact. †[^r46b]
-- Cohort is separable from age: chamber age is flat while the register rises;
-  cohort accounts for **~60%** of the change. †[^r46c]
+Every member-year of legislative speech carries two time-stamps: the year the
+words were **spoken** (calendar period) and the speaker's **birth year**
+(generation). If the register were only a period effect, everyone would drift
+up together and birth year would add nothing once the calendar year is held
+fixed; if it were generational, later-born members would use more of it even in
+the same year and chamber. Both hold, and they separate cleanly.
 
-[^r46a]: `python decomposition_inference.py`. Pooled premium +1.88, 95% CI
-    [+1.26, +2.49] from a **chamber-level** bootstrap (16 chambers resampled
-    whole), positive in 15 of 16 (sign-test p = 2.6 × 10⁻⁴). `arrival_premium.py`,
-    cited here in an earlier draft, computes the separate UK cohort-vs-tenure
-    series, not this pooled figure.
+- **Birth cohort predicts the register net of calendar time.** Regressing the
+  member-year rate on spoken year and birth year together, with chamber fixed
+  effects (13 chambers carrying member birth years, 46,515 member-years): birth
+  **+0.95 per 1,000 words per decade** (t = 28.4) against spoken year **+1.24
+  per decade** (t = 24.3). A legislator born a decade later uses about
+  +0.95/1,000 more of the register *in the same year and chamber*. †[^r46a]
+- **Birth is the marginally stronger organiser.** On identical rows the
+  within-chamber, word-weighted correlation of the register rate is **+0.333
+  with birth year** against **+0.303 with spoken year**, and birth is the
+  stronger of the two in 10 of the 13 chambers. †[^r46a]
+- **The gradient holds within year and province at +1.05 per 1,000 per decade**
+  (t ≈ 8.5, clustered on member), unmoved by occupation and education controls,
+  which *strengthen* it rather than explain it away (§4.6a). †[^r46b]
+
+Stated conclusion: **the register's rise is generational as well as
+period-wide.** Later-born cohorts arrive using more of it, and that gradient
+stands net of calendar drift; the mechanism behind the cohort gradient remains
+unidentified — three exposure tests failed to isolate it (Appendix A). Whether
+sitting members' own register changed is a separate question and returns a null
+(Appendix A). Cohort is not the whole of who uses the register — §4.6a adds
+three predictors that survive it — but none of them identifies the cohort
+mechanism either.
+
+[^r46a]: `python cohort_vs_period.py`. Member-year register rate regressed on
+    spoken year and birth year with chamber fixed effects, word-weighted,
+    HC-robust; 13 chambers carry member birth years (US House, US Senate, UK,
+    Ireland, federal Canada, and eight Canadian provinces), 46,515 member-years.
+    Within-chamber correlations are on the same rows. Nine Australian and
+    UK-devolved chambers lack member birth data and are omitted.
 
 [^r46b]: `python formation_window.py`, clustered on member (CR1): birth-decade
     coefficient +1.05 per 1,000 words per decade, t = +8.46 unadjusted and
@@ -674,22 +697,6 @@ names the instrument that would separate those two.
     script also prints inflate the t to +17.7 — a third instance of the
     unclustered-inference pattern flagged in Appendix A, though here, with 888
     member clusters, the conclusion is unmoved.
-
-[^r46c]: Not a decomposition — an arithmetic closure. Mean birth year advances
-    **13.8 years** across the window; at the fitted **+0.093 per year** that
-    predicts **+1.28** of the observed **+2.06**, i.e. ~60%. Distinct from the
-    within/between split in the next bullet, which asks a different question
-    (`decomposition_inference.py`) and attributes essentially all of the
-    change to composition: between +2.18 against within −0.42.
-- **Incumbents are flat, not falling.** Pooled within-member change is −0.42,
-  CI [−1.32, +0.49] — not significant. An earlier claim that sitting
-  legislators' register fell was wrong; it did not survive clustering on
-  member. (`decomposition_inference.py`)
-
-Stated conclusion: **generational, mechanism unidentified.** Three exposure
-tests failed to identify it (Appendix A). Cohort is not the whole of who uses
-the register, though — §4.6a adds three predictors that survive it — but none
-of them identifies the cohort mechanism either.
 
 ### 4.6a Class and the register: jointly significant, individually noisy — and education is not it
 
@@ -1993,10 +2000,7 @@ not a fourth operationalisation of the same kind.
     change of government and frontbench speech is more formal and more scripted
     by function. The fix is a formality set defined by function rather than
     hand-picked (words that rise with frontbench status *in the pre-period
-    only*), restricted to MPs whose frontbench status did not change. Related:
-    `arrival_premium.py` shows the arrival premium exists in every era at about
-    +0.8 and *grows*, so the level component is real and currently unattributed
-    between tenure and role.
+    only*), restricted to MPs whose frontbench status did not change.
 11. **Candidate selection for media performance**, named as a compositional
     rival and never given a test or a data source. And the
     **professionalised-communications** rival — message discipline and
@@ -2053,7 +2057,8 @@ Reported because they bound what the study can claim.
 5. **Kobak counterfactual on 2024 and 2026** — null (fires on COVID 2020-21,
    validating the estimator on a known shock).
 6. **Frequency-weighted secondary** — 4/30 cells.
-7. **Incumbent register change** — −0.42, CI [−1.32, +0.49], not significant.
+7. **Incumbent register change** — −0.42, CI [−1.32, +0.49], not significant:
+   sitting members' own register did not measurably change.
 8. **Provincial AI prevalence** — the Canadian provinces average 9.1% machine
    by words against US House 12.1%, so removing machine text *widens* the gap
    they were supposed to explain. Wrong sign, not merely small.
@@ -2244,7 +2249,7 @@ caught.
 | `build_pangram_expansion.py` | sampling, cleaning, regime floors |
 | `in_time_placebo.py` | §3.3, the test that demoted the lexicon arm |
 | `long_trend.py` | §4.5 series and its 1994 trough |
-| `arrival_premium.py`, `formation_window.py`, `decomposition_inference.py` | §4.6 |
+| `cohort_vs_period.py`, `formation_window.py` | §4.6 (birth vs period) |
 | `covariate_study.py` | §4.6a class and education, member level (`--build-cache` first, ~10 min) |
 | `class_origin.py` | §4.6a EGP/NS-SEC arithmetic over the checked-in coding |
 | `class_markedness.py`, `build_class_word_year.py` | §4.6a chase-and-flight |

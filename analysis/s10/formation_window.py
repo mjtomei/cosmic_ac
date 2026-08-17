@@ -3,12 +3,11 @@
 
 THE TEST
 
-Two geographic exposure tests came back null (US states, Canadian provinces),
-but the within/between decomposition then showed why they had to: the register
-climb is compositional. Sitting members did not change; new arrivals enter
-speaking more of it (+2.47 per 1,000 in 8/8 provinces), and the UK series
-shows that premium GROWING across intakes rather than being a constant
-newcomer offset.
+Two geographic exposure tests came back null (US states, Canadian provinces).
+The register's rise is partly generational: later-born members use more of it
+even in the same year and chamber (see cohort_vs_period.py for the birth-vs-
+spoken-year separation across chambers). This script pins that gradient down
+within province and year, on the eight provinces with member birth years.
 
 So exposure, if it operates, operates during FORMATION — schooling and early
 career — not during tenure, and not at the district. That relocates the test:
