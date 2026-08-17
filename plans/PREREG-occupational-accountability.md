@@ -51,8 +51,22 @@ Equally weighted mean of these four, each standardised across occupations:
 | `4.A.4.a.2` | Communicating with Supervisors, Peers, or Subordinates | Work Activities |
 | `4.A.4.c.1` | Performing Administrative Activities | Work Activities |
 
-Entered as **separate covariates**, not folded into the composite, so autonomy
-and literacy stay distinguishable from accountability:
+**The rule for what goes in the composite.** Items are averaged only if they
+are interchangeable indicators of *one* latent construct — the four above are
+all readings of "how much of this job is rendering judgment into prose for
+someone above you". Anything whose separate contribution we want to **measure**
+gets its own coefficient instead, because averaging it in assumes the answer
+rather than estimating it.
+
+That is why the two below are covariates and not composite items. The hypothesis
+makes a specific claim about each — a *negative* one about autonomy (a farmer
+and a miner are equally unfree, yet neither answers to a person, so freedom is
+the wrong axis) and a *positive* one about education (the supply side of the
+two-factor account). Folding either in would bake the claim in; giving it a
+coefficient tests it. Note this privileges two elements out of ~271 purely
+because the theory names them, which is the legitimate use of pre-registration
+but should be explicit: every other element reaches the model only through the
+free-model pool.
 
 | element ID | name | why separate |
 |---|---|---|
@@ -60,32 +74,58 @@ and literacy stay distinguishable from accountability:
 | `4.C.3.b.8` | Determine Tasks, Priorities and Goals | second autonomy item, replaces the retired structured/unstructured scale |
 | Job Zone / education | required education | literacy resources, the supply side of the two-factor account |
 
-### The exploratory pool (for the free model only)
+### The full element set
 
-About 215 rated elements, none of which may inform the composite:
+There is **no subset**. Coding maps each occupation string to one O\*NET-SOC
+code; every rated element then joins for free from the public CSVs, so the
+marginal cost of an extra element is zero and the free model receives all of
+them:
 
-- **Work Context** `4.C.*` — 59 leaves, including the deliberate negative
-  controls *Spend Time Sitting* `4.C.2.d.1.a`, *Indoors, Environmentally
-  Controlled* `4.C.2.a.1.a`, *Physical Proximity* `4.C.2.a.3`. If those predict
-  as well as the composite, the model has found "office job", not language.
-- **Work Activities** `4.A.*` at the rated level — notably *Interpreting the
-  Meaning of Information for Others* `4.A.4.a.1`, *Communicating with People
-  Outside the Organization* `4.A.4.a.3`, *Assisting and Caring for Others*
-  `4.A.4.a.5`, *Selling or Influencing Others* `4.A.4.a.6`, *Performing for or
-  Working Directly with the Public* `4.A.4.a.8`, *Training and Teaching Others*
-  `4.A.4.b.3`, *Providing Consultation and Advice to Others* `4.A.4.b.6`,
-  *Evaluating Information to Determine Compliance with Standards* `4.A.2.a.3`.
-- **Skills** `2.A.*`, `2.B.*` — *Writing* `2.A.1.c`, *Speaking* `2.A.1.d`,
-  *Reading Comprehension* `2.A.1.a`, *Active Listening* `2.A.1.b`, *Persuasion*
-  `2.B.1.c`, *Instructing* `2.B.1.e`, *Social Perceptiveness* `2.B.1.a`,
-  *Service Orientation* `2.B.1.f`.
-- **Knowledge** `2.C.*` — *English Language* `2.C.7.a`, *Communications and
-  Media* `2.C.9.b`, *Education and Training* (2.C.6 branch), *Sociology and
-  Anthropology* `2.C.4.f`, *Psychology* `2.C.4.e`, *Therapy and Counseling*
-  `2.C.5.b`, *Law and Government* `2.C.8.b`.
-- **Interests** — RIASEC `1.B.1.a`–`1.B.1.f` (Realistic, Investigative,
-  Artistic, **Social**, Enterprising, Conventional) and the 41 basic-interest
-  scales `1.B.3.*`.
+| block | element ID prefix | rated elements |
+|---|---|---|
+| Work Context | `4.C` | 59 |
+| Abilities | `1.A` | 52 |
+| Generalized Work Activities | `4.A` | 41 |
+| Basic Interests | `1.B.3` | 41 |
+| Knowledge | `2.C` | 33 |
+| Cross-functional Skills | `2.B` | 25 |
+| Basic Skills | `2.A` | 10 |
+| Interests (RIASEC) | `1.B.1` | 9 |
+| Job Zone | — | 1 |
+| **total** | | **~271** |
+
+(The content model lists 3,006 rows, but 2,419 of those are detailed work-activity
+*task statements* under `4.A` with no per-occupation ratings.)
+
+**Elements with a prior claim** — named because theory points at them, not
+because the pool is limited to them: *Interpreting the Meaning of Information
+for Others* `4.A.4.a.1`, *Communicating with People Outside the Organization*
+`4.A.4.a.3`, *Assisting and Caring for Others* `4.A.4.a.5`, *Selling or
+Influencing Others* `4.A.4.a.6`, *Performing for or Working Directly with the
+Public* `4.A.4.a.8`, *Training and Teaching Others* `4.A.4.b.3`, *Providing
+Consultation and Advice to Others* `4.A.4.b.6`, *Evaluating Information to
+Determine Compliance with Standards* `4.A.2.a.3`; *Writing* `2.A.1.c`,
+*Speaking* `2.A.1.d`, *Persuasion* `2.B.1.c`, *Instructing* `2.B.1.e`, *Social
+Perceptiveness* `2.B.1.a`; *English Language* `2.C.7.a`, *Communications and
+Media* `2.C.9.b`, *Sociology and Anthropology* `2.C.4.f`, *Therapy and
+Counseling* `2.C.5.b`, *Law and Government* `2.C.8.b`.
+
+**Deliberate negative controls**, already in the pool and flagged so their
+selection is interpretable: *Spend Time Sitting* `4.C.2.d.1.a`, *Indoors,
+Environmentally Controlled* `4.C.2.a.1.a`, *Physical Proximity* `4.C.2.a.3`. If
+these predict as well as the composite, the model has found "office job" rather
+than anything about language.
+
+### Coverage check, to be reported before any model is fitted
+
+O\*NET rates roughly 900 O\*NET-SOC occupations, and many of our 7,421 strings
+will map to the same code, so **distinct SOC codes — not member count — is what
+bounds the occupational variety available**. Report, before fitting: the number
+of distinct SOC codes matched, the share of members mapped, the ten most common
+codes with their member counts, and the share of members sitting in the top ten.
+If the panel collapses onto a few dozen codes, the study is underpowered for
+occupational structure regardless of how many members it has, and that should be
+visible in advance rather than discovered in the results.
 
 ### A second registered hypothesis: sociality, and the direction of interaction
 
@@ -207,7 +247,7 @@ winning set.
 
 **One secondary check, on one sub-question.** Random member holdout is neutral
 for feature importance but mildly favours the free model in the *model
-comparison*, because 215 features can fingerprint an occupation and recall its
+comparison*, because ~271 features can fingerprint an occupation and recall its
 mean in a way a four-term composite cannot. So the comparison of (A)–(D) and the
 free model is **additionally** run with whole occupations held out, and both
 numbers are reported. If they agree, the point is moot; if they disagree, the
