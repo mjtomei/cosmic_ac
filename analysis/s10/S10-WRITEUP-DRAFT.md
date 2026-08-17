@@ -1172,8 +1172,15 @@ rather than one estimate. The 30B mixture-of-experts model is the weakest at
 passed 800 prompts, with just 37 style words clearing 20 occurrences. That is
 an unresolved flag, not a counter-result.
 
-[^r47]: Ladder stages: `python olmo_ladder.py` (end-to-end base→instruct
-    **+1.2420**). The **+0.387** is a *separate* experiment on other model
+[^r47]: Ladder stages: `python olmo_ladder.py report`, which prints the
+    end-to-end base→instruct row (**+1.2412**) alongside the three adjacent
+    transitions. An earlier version of the script defined only the three
+    adjacent pairs, so this footnote quoted a figure its own invocation did not
+    produce. Note the three uncorrected stages sum to +1.99 against that +1.24;
+    the gap is the per-transition control pedestal described below, and closes
+    to about 0.03 under the bias-free estimator — which is why the stages are
+    reported as three separate measurements and not as a decomposition of one
+    path. The **+0.387** is a *separate* experiment on other model
     families: `python rlhf_pref_compile.py`, reading the generation built by
     `rlhf_pref_scale.py` at 400 new tokens over 3 families at 1,600 prompt
     pairs each and 1.19M base words. It is not a pooling of the three OLMo
@@ -1257,6 +1264,16 @@ In-context likelihood of the Kobak style words within Hansard traces,
 self-normalised, no placebo word list, no external control:
 
 **+0.0099, positive in 9 of 10 cells, permutation p = 0.017.** †[^r48]
+
+The ten cells are five chambers scored by two model families, not ten
+replications: both families score the *identical* segments at the *identical*
+word positions, so they are two scorers of one text sample rather than two
+samples. The sign count is therefore a statement of consistency — the effect is
+not carried by one chamber or one scorer — and the permutation test, which
+shuffles era labels within each chamber × family cell, is what carries the
+inference. The two families agree on sign, on magnitude (+0.0118 Qwen3 against
++0.0081 Mistral) and on 9 of 10 cells, which is the useful thing they establish:
+the result does not depend on which model judges likelihood.
 
 Small, but it is the only permeation evidence that does not route through a
 detector, and it survives the failure mode that demoted the lexicon arm.

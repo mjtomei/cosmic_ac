@@ -72,7 +72,15 @@ STAGES = [
     ("dpo", "allenai/OLMo-2-1124-7B-DPO"),
     ("instruct", "allenai/OLMo-2-1124-7B-Instruct"),
 ]
-TRANSITIONS = [("base", "sft", "instruction demonstrations"),
+# base->instruct is listed first so `report` prints the end-to-end figure the
+# write-up's footnote cites; without it the footnote quoted a number its own
+# invocation never produced. The three adjacent pairs do NOT sum to it under the
+# uncorrected estimator (1.99 against 1.24) -- that gap was the per-transition
+# control pedestal, and it closes to ~0.03 under the bias-free estimator, which
+# is why the ladder is reported as three separate measurements rather than as a
+# decomposition of one path.
+TRANSITIONS = [("base", "instruct", "END-TO-END base->instruct"),
+               ("base", "sft", "instruction demonstrations"),
                ("sft", "dpo", "PREFERENCE OPTIMISATION"),
                ("dpo", "instruct", "RLVR (placebo stage)")]
 OUT = "olmo_ladder"

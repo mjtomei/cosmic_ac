@@ -3,7 +3,7 @@
 **Written to be readable by someone who has not done this kind of analysis
 before.** Each section says what we were trying to learn, what could have
 fooled us, what we did about it, and what the resulting number actually
-licenses you to claim. Numbers are as of 2026-08-02.
+licenses you to claim. Numbers are as of 2026-08-17.
 
 ---
 
@@ -1141,6 +1141,14 @@ Pre → post change in that quantity, two model families, five chambers:
 **Two-family pooled: +0.0099, 9 of 10 family-chamber cells positive,
 permutation p = 0.017, interval approximately [0.000, +0.020].**
 
+The ten cells are not ten independent replications: five chambers are scored by
+two model families over the identical segments and identical word positions, and
+`ush`/`uss` are one legislature while `ie`/`uk`/`ca` are three Westminster
+records. Treating them as independent would overstate the sign count (naive
+binomial P(>=9 of 10) = 0.0107 against a design-based 0.0173), which is why the
+permutation test is quoted instead. What the second family buys is scorer
+robustness, not sample size.
+
 The interval is given to three decimals on purpose. Clustered over speeches at
 B = 2,000 it excludes zero under every seed tried (lower bound +0.0001 to
 +0.0009, P(≤0) 0.017–0.024), but that endpoint moves by an order of magnitude
@@ -1608,8 +1616,9 @@ still carries some task residue (*text, speaker, context*) because the filter
 only inspects each generation's opening. And an instruct-model contrast is not
 the same as measuring RLHF specifically: SFT and preference optimisation are
 confounded here. Separating them needs a family that ships intermediate
-checkpoints — OLMo-2 publishes SFT and DPO stages separately and is the right
-next step.
+checkpoints — OLMo-2 publishes SFT and DPO stages separately, and that step has
+since been taken (§6.1a), which separated the stages and showed them
+indistinguishable rather than ordered.
 
 And the honest concession: **New Brunswick was selected because a signal was
 visible there** (the origin was a clip of a member reading an AI framing
@@ -1619,6 +1628,51 @@ upper bound, and excluded from the Fisher combination.
 
 ---
 
+
+### 6.1a The OLMo-2 post-training ladder
+
+Added 2026-08-17. Three figures in §4.7 rested on `olmo_ladder.py` while this
+file's only mention of OLMo was a line in future work — the script postdated the
+methodology by a day and was never written up. That omission mattered, because
+this file's standing "what could have fooled us" convention is exactly where the
+defect below would have been caught before it reached the write-up.
+
+**The design.** OLMo-2 publishes its post-training checkpoints separately, so
+the same prompts can be scored at base, SFT, DPO and instruct, and each
+transition measured on its own. The pre-registered logic is that **RLVR is a
+placebo stage**: tuning on verifiable maths and code correctness has no reason
+to install a speech register, so a healthy estimator should return roughly zero
+there and the two human-facing stages should carry whatever is carried.
+
+**What could have fooled us, and did.** The estimator as first shipped compared
+each transition's style-word excess against controls drawn per transition, and
+that construction carries a pedestal: null calibration on random word lists
+returns **+0.45 / +0.56 / +0.31** across the three transitions, largest at DPO
+purely because DPO's generations are longest. On the uncorrected numbers the
+ladder read +0.76 / +0.86 / +0.37 and RLVR — the placebo — came out significant
+at p = 0.000, i.e. the design failed its own manipulation check and the failure
+was read as a finding ("largest at the preference stage").
+
+**Two signatures should have caught it earlier.** First, the placebo fired.
+Second, the stages did not add up: +0.76 + 0.86 + 0.37 = **1.99** against an
+end-to-end base→instruct of **1.24**, so the parts exceeded the whole by 60% in
+something presented as a decomposition of a single path. The raw per-word log
+ratios telescope exactly, which localises the entire discrepancy in the
+per-transition control medians.
+
+**Corrected.** Under a bias-free exact stratified estimator the stages read
++0.32 / +0.27 / **+0.06** (CI straddling zero at RLVR) and sum to within about
+0.03 of the end-to-end figure. The placebo behaves as a placebo; SFT and DPO are
+indistinguishable from each other (paired bootstrap over 800 shared prompts,
+DPO − SFT = −0.08, CI [−0.31, +0.15]).
+
+**What is claimed now.** Only that the register is installed by the stages tuned
+toward human demonstrations and preferences and not by the stage tuned toward
+verifiable correctness. No stage ordering is supported, the three transitions
+are reported as separate measurements rather than as a decomposition, and §4.7's
+argument does not rest on the connection. `python olmo_ladder.py report` prints
+the end-to-end row beside the three transitions so the write-up's figures are
+reproducible from the invocation cited for them.
 
 ## 6.2 Member-level covariate estimation (class, education, origin)
 
