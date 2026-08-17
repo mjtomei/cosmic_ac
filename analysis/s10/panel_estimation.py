@@ -56,7 +56,10 @@ MIN_WORDS = 8000
 def coding_maps():
     m = {}
     for f in ("provinces/occupation_coding.json",
-              "provinces/occupation_coding_v2.json"):
+              "provinces/occupation_coding_v2.json",
+              # 1,856 strings from the nine chambers collected 2026-08-17,
+              # coded 2026-08-17 at 95.96% raw double-blind agreement
+              "provinces/occupation_coding_missing9.json"):
         for r in json.load(open(os.path.join(HERE, f))):
             if r.get("egp") in EGP_RANK or r.get("egp") in ("unknown",
                                                             "none-political"):
@@ -85,7 +88,7 @@ def provincial_rows(code):
     # None for them until the coding pass runs -- an uncoded occupation string
     # is invisible to the class regression, and pretending otherwise would
     # silently drop them from it.
-    m9_birth, m9_edu = {}, {}
+    m9_birth, m9_edu, m9_egp = {}, {}, {}
     _m9 = os.path.join(HERE, "covariates_missing9.json")
     if os.path.exists(_m9):
         for r in json.load(open(_m9)):
@@ -97,6 +100,9 @@ def provincial_rows(code):
             lv = (r.get("education_level") or "").strip().lower()
             if lv in LV:
                 m9_edu.setdefault(k, lv)
+            e = code.get((r.get("prior_occupation") or "").strip())
+            if e in EGP_RANK:
+                m9_egp.setdefault(k, e)
     rows = []
     cell = json.load(open(os.path.join(HERE, "member_year_rates.json")))
     agg = defaultdict(lambda: [0, 0])
@@ -110,7 +116,7 @@ def provincial_rows(code):
         rows.append({
             "chamber": pv, "member": f"{pv}|{nm}", "year": int(yr),
             "words": w, "rate": h / w * 1000,
-            "egp": cls.get((pv, nm)),
+            "egp": cls.get((pv, nm)) or m9_egp.get((pv, nm)),
             "edu": ((edu.get(pv, {}).get(nm) or {}).get("edu")
                     or m9_edu.get((pv, nm))),
             "birth": by.get((pv, nm)) or m9_birth.get((pv, nm)),

@@ -64,23 +64,25 @@ OUT = "align_ratio"
 # CHAMBERS, so --full widens the sample to every chamber held. Written to a
 # separate --out so the five-chamber artifacts keep reproducing the numbers
 # already in the write-up.
-CORPORA_FULL = dict(CORPORA)
-CORPORA_FULL.update({
-    "ca": "ca/segments_ca2.jsonl", "uk": "uk/segments_uk_deep.jsonl",
-    "ab": "provinces/segments_ab.jsonl", "bc": "provinces/segments_bc.jsonl",
-    "mb": "provinces/segments_mb.jsonl", "nl": "provinces/segments_nl.jsonl",
-    "ns": "provinces/segments_ns.jsonl", "on": "provinces/segments_on.jsonl",
-    "pe": "provinces/segments_pe.jsonl", "sk": "provinces/segments_sk.jsonl",
-    "nsw": "provinces/segments_aus_nsw.jsonl",
-    "qld": "provinces/segments_aus_qld.jsonl",
-    "sa": "provinces/segments_aus_sa.jsonl",
-    "tas": "provinces/segments_aus_tas.jsonl",
-    "vic": "provinces/segments_aus_vic.jsonl",
-    "wa": "provinces/segments_aus_wa.jsonl",
-    "ni": "provinces/segments_ni.jsonl",
-    "sco": "provinces/segments_scot.jsonl",
-    "wal": "provinces/segments_wales.jsonl",
-})
+CORPORA_FULL = {
+    "ie": ["ie/segments_ie_en.jsonl"],
+    "ca": ["ca/segments_ca2.jsonl"],
+    "uk": ["uk/segments_uk_deep.jsonl", "uk/segments_uk_2023.jsonl"],
+    "ush": ["us/segments_us_house.jsonl"],
+    "uss": ["us/segments_us_senate.jsonl"],
+}
+# Each province/state chamber is split across a base file plus _fill and _2025
+# supplements, and the POST era lives almost entirely in _2025. Sampling the
+# base file alone silently yields a pre-only cell, which is useless to a
+# pre-vs-post contrast -- caught when the first sample drew post items for only
+# 6 of 22 chambers.
+for _code, _stem in (("ab", "ab"), ("bc", "bc"), ("mb", "mb"), ("nl", "nl"),
+                     ("ns", "ns"), ("on", "on"), ("pe", "pe"), ("sk", "sk"),
+                     ("nsw", "aus_nsw"), ("qld", "aus_qld"), ("sa", "aus_sa"),
+                     ("tas", "aus_tas"), ("vic", "aus_vic"), ("wa", "aus_wa"),
+                     ("ni", "ni"), ("sco", "scot"), ("wal", "wales")):
+    CORPORA_FULL[_code] = [f"provinces/segments_{_stem}{_sfx}.jsonl"
+                           for _sfx in ("", "_fill", "_fill2", "_2025")]
 WMIN, WMAX = 120, 361
 
 
@@ -94,12 +96,14 @@ def era(d):
 
 def build_sample(per_cell, corpora=None):
     items = []
-    for code, path in (corpora or CORPORA).items():
-        if not os.path.exists(path):
+    for code, paths in (corpora or CORPORA).items():
+        paths = [paths] if isinstance(paths, str) else paths
+        paths = [p for p in paths if os.path.exists(p)]
+        if not paths:
             print(f"  skip {code}: missing")
             continue
         cells = {}
-        for line in open(path):
+        for line in (l for p in paths for l in open(p)):
             d = json.loads(line)
             if (not d.get("scoreable") or d.get("translated")
                     or d.get("orig_frac", 1.0) <= 0.5):
