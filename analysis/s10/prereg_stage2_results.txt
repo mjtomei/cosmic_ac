@@ -1,0 +1,36 @@
+lattice panel (all covariates present): n = 3,594; education categories kept: ['bachelor', 'college', 'graduate', 'professional', 'secondary', 'unknown']
+
+==========================================================================
+LATTICE A (registered): components x {bd, EGP, edu, prominence}
+==========================================================================
+predictor      median              5-95% right-dir |t|>1.96   (n specs)
+comp_U         +0.044   [+0.019,+0.073]      100%      62%   (16)
+comp_L         +0.012   [-0.030,+0.048]       25%      25%   (16)
+comp_D         +0.028   [+0.014,+0.035]      100%       0%   (16)
+comp_N         +0.084   [+0.027,+0.101]      100%      50%   (16)
+bd             +0.378   [+0.374,+0.382]      100%     100%   (16)
+egp_II         +0.084   [+0.070,+0.126]      100%      75%   (16)
+egp_IVc        -0.188   [-0.283,-0.134]      100%      44%   (16)
+logdepth       +0.044   [+0.026,+0.050]      100%      69%   (16)
+
+prediction 1 -- do the components add to EGP? (paired specs,
+with-block adjR2 minus without, over the 16 covariate masks):
+  mean ΔR² +0.0065   min +0.0026   max +0.0114   positive in 16/16
+
+four-sign pattern, 16 pattern-eligible specs:
+  registered signs (U+ L- D+ N+): 25%
+  pre-revision signs (U+ L+ D- N+), descriptive: 0%
+  permutation (2000 within-chamber shuffles): P(pattern share >= observed) = 0.0870
+
+==========================================================================
+LATTICE B (amended): each ladder level alone x 16 covariate masks
+==========================================================================
+predictor      median              5-95% right-dir |t|>1.96  full-covar
+dir_free       -0.060   [-0.087,-0.051]      100%     100%   -0.053 (t -3.3)
+dir_bottom     -0.037   [-0.045,-0.022]  unsigned      75%   -0.037 (t -2.3)
+dir_middle     +0.057   [+0.027,+0.076]      100%      88%   +0.041 (t +2.6)
+dir_top        +0.041   [+0.028,+0.056]  unsigned      88%   +0.041 (t +2.5)
+lvl_FREE       -0.060   [-0.064,-0.052]      100%     100%   -0.063 (t -3.7)
+lvl_BOTTOM     -0.019   [-0.027,-0.013]  unsigned       0%   -0.022 (t -1.4)
+lvl_MIDDLE     +0.058   [+0.039,+0.063]      100%     100%   +0.042 (t +2.6)
+lvl_TOP        +0.051   [+0.033,+0.055]  unsigned     100%   +0.034 (t +2.1)
