@@ -30,7 +30,8 @@ conflates constraint-by-nature with constraint-by-authority, and only the second
 is predicted to generate the register. Autonomy is not discarded, though — the
 claim is about reporting *and* discretion together, so both enter the composite,
 autonomy reverse-scored. What is rejected is autonomy *on its own*, which is why
-the direction split in (C) and the two-half decomposition both exist.
+direction enters as a modifier of both base measures rather than as a
+separate construct — see the six-cell grid in the Specification.
 
 ## The instrument
 
@@ -42,14 +43,16 @@ Memos; Documenting/Recording sits under technical activities rather than the
 communication block; and "Structured versus Unstructured Work" no longer exists
 in the taxonomy.
 
-### The confirmatory composite (FIXED — no item may be added, dropped or reweighted)
+### M1, the account-giving measure (FIXED — no item added, dropped or reweighted)
 
 The construct is **subordinate account-giving**: rendering your judgment into
 prose for someone above you *and* not holding the final say over it. Reporting
 and autonomy are two faces of one thing rather than two things (Matthew), so
 both enter the composite, with the autonomy items **reverse-scored**.
 
-Equally weighted mean of these six, each standardised across occupations:
+Equally weighted mean of these six, each standardised across occupations. In
+the Specification's grid these are **M1a**, the upward cell — the direction
+modifier splits the rest of M1 out into lateral and downward variants:
 
 | element ID | name | sign | block |
 |---|---|---|---|
@@ -169,145 +172,152 @@ If the panel collapses onto a few dozen codes, the study is underpowered for
 occupational structure regardless of how many members it has, and that should be
 visible in advance rather than discovered in the results.
 
-### A second registered hypothesis: sociality, and the direction of interaction
+### Why sociality (M2) is a base measure and not a rival
 
 RIASEC **Social** `1.B.1.d` may reproduce the class U on its own — the peak
 (teachers, nurses, social workers, journalists) is the Social cluster nearly by
 definition, the floor (farmers, miners, labourers) is **Realistic** `1.B.1.a`,
-class I is Investigative/Enterprising, class III is Conventional. The
-**Social-minus-Realistic contrast** is therefore registered here as a second
-hypothesis in its own right, on equal footing with the accountability composite.
+class I is Investigative/Enterprising, class III is Conventional. That makes it
+a serious account of the same shape, defined by other people decades ago for
+unrelated purposes.
 
-It is a **sibling of the accountability hypothesis, not a rival** (Matthew): any
-job that requires interacting with an individual involves reporting to them in
-some sense, so the two constructs overlap by construction. What separates them
-is not whether interaction happens but **which way it points**, and O\*NET rates
-that separately:
+It is a **sibling of account-giving, not a rival** (Matthew): any job requiring
+interaction with an individual involves reporting to them in some sense, so the
+two overlap by construction. What separates them is not whether interaction
+happens but **which way it points** — which is why direction enters as a
+modifier of both measures rather than as a construct of its own, and why the
+six-cell grid in the Specification is the shape of the test.
 
-| block | elements |
-|---|---|
-| **upward** — accounting to someone who can overrule you | `4.C.1.a.2.j` Written Letters and Memos; `4.A.3.b.6` Documenting/Recording Information; `4.A.4.a.2` Communicating with Supervisors, Peers, or Subordinates; `4.A.4.c.1` Performing Administrative Activities |
-| **autonomy_rev** — not holding the final say (reverse-scored) | `4.C.3.a.4` Freedom to Make Decisions; `4.C.3.b.8` Determine Tasks, Priorities and Goals |
-| **lateral / public** — to people you serve rather than answer to | `4.A.4.a.4` Establishing and Maintaining Interpersonal Relationships; `4.A.4.a.5` Assisting and Caring for Others; `4.A.4.a.8` Performing for or Working Directly with the Public; `1.B.1.d` Social |
-| **downward** — to people who answer to you | `4.A.4.b.1` Coordinating the Work and Activities of Others; `4.A.4.b.4` Guiding, Directing, and Motivating Subordinates; `4.A.4.b.5` Coaching and Developing Others |
-
-The first two blocks are exactly the six items of the composite in (A), split
-back apart — **upward** is its four positive items, **autonomy_rev** its two
-reverse-scored ones. That is what makes (C) a decomposition of (A) rather than a
-competing model.
-
-**The three-way contrast is the discriminating test**, and each outcome names a
-different finding:
-
-- **upward alone predicts** — reporting in a social *hierarchy*; the
-  accountability hypothesis.
-- **all three predict about equally** — general social *role*; sociality, and
-  direction is irrelevant.
-- **downward predicts too** — a managerial register, which is a third account
-  neither hypothesis proposed and would need its own explanation.
-- **lateral predicts but upward does not** — service-facing speech rather than
-  deference, which would invert the reading of the U.
-
-This distinction is the reason to run the test at all: both hypotheses predict
-the same cross-sectional U, and only the direction split tells them apart.
+If the sign pattern holds on M2's row but not M1's, the finding is about working
+with people; if it holds on M1's but not M2's, it is about answering to them; if
+it holds on both, the register belongs to the occupation that does both while
+directing nobody. Those are three different papers, and the grid is what tells
+them apart.
 
 ## Specification
 
-**Revised 2026-08-18, before any O\*NET data was joined.** The revision is
-logged rather than applied silently: three defects were found in the first
-version — (i) model D lacked the covariates the others had, so the incumbent was
-handicapped in its own comparison; (ii) C was not a decomposition of A but a
-different model, since A carried the autonomy terms and C did not; (iii)
-"required education" named an O\*NET *occupation* property while the study also
-holds each member's *own* education, and the two were not distinguished. Nothing
-had been fitted, so this is a tightening of the instrument, not a response to
-results.
+**Revised 2026-08-18, before any O\*NET data was joined**, and logged rather
+than applied silently. The first version fitted four competing models and gave
+one of them a covariate the incumbent lacked. The structure below is Matthew's:
+two base measures, each **varied by direction of interaction**, giving six
+predictors plus their combination — direction is a *modifier* of the proxies,
+not a rival construct.
 
-Member-level, matching the canonical spec in `member_level_estimation.py`: one
-observation per legislator, equal weight, register z-scored within chamber
-against the chamber's full member population, HC1 errors.
+Member-level, canonical spec (`member_level_estimation.py`): one observation per
+legislator, equal weight, register z-scored within chamber against the chamber's
+full member population, HC1 errors. Every model carries `birthdec` and nothing
+else — **no education term anywhere**, on either the occupation or the member
+(Matthew): occupations demanding account-giving also demand education, so
+conditioning is over-control on the causal path.
 
-**Education is out of these models entirely (Matthew, 2026-08-18).** Neither
-O\*NET's occupation-level requirement nor the member's own education level
-appears. Occupations demanding upward account-giving also tend to demand
-education, so conditioning on it is over-control on the causal path rather than
-a clean adjustment; and the member's own education belongs to the class arm in
-§4.6a, where §4.6a already found it inseparable from class. Leaving it out keeps
-this a clean occupational test. The cost is stated in the predictions: the
-composite's coefficient now absorbs whatever education would have explained, so
-this design cannot separate demand from ability.
+### The two base measures
 
-    (A) z ~ account_giving + birthdec
-    (B) z ~ (social − realistic) + birthdec
-    (C) z ~ upward + lateral + downward + autonomy_rev + birthdec
-    (D) z ~ EGP class dummies + birthdec
+- **M1 — account-giving.** Proxy for the inverse of freedom from reporting to
+  individuals: how much the job consists of rendering judgment into prose for
+  someone else, and not holding the final say.
+- **M2 — sociality.** Working with people rather than things (RIASEC Social
+  against Realistic, and the people-serving activities).
 
-**A is exactly C with its blocks collapsed.** The six-item composite in A is the
-equally weighted mean of the upward items and the reverse-scored autonomy items;
-C separates them and adds the lateral and downward blocks. So C is a true
-decomposition of A, not a rival to it, and A's role is to test the construct as
-registered while C's is to say which part of it carries the result.
+### Varied by direction, giving six
 
-**Every model carries the same single covariate** (`birthdec`), so no comparison
-is decided by one specification being given a predictor another was denied. The
-first version gave A, B and C an education term and withheld it from D, which
-would have flattered the hypothesis in its own headline test.
+| | upward (a) | lateral (b) | downward (c) |
+|---|---|---|---|
+| **M1** account-giving | `4.C.1.a.2.j` Written Letters and Memos · `4.A.3.b.6` Documenting/Recording · `4.A.4.a.2` Communicating with Supervisors · `4.A.4.c.1` Administrative Activities · **+ `4.C.3.a.4` Freedom to Make Decisions and `4.C.3.b.8` Determine Tasks reverse-scored** | `4.A.4.a.3` Communicating with People Outside the Organization · `4.A.4.a.4` Establishing and Maintaining Interpersonal Relationships | `4.A.4.b.1` Coordinating the Work of Others · `4.A.4.c.2` Staffing Organizational Units · `4.A.4.c.3` Monitoring and Controlling Resources |
+| **M2** sociality | `4.A.4.a.6` Selling or Influencing Others *(thin — see below)* | `1.B.1.d` Social minus `1.B.1.a` Realistic · `4.A.4.a.5` Assisting and Caring for Others · `4.A.4.a.8` Working Directly with the Public | `4.A.4.b.3` Training and Teaching Others · `4.A.4.b.4` Guiding, Directing and Motivating Subordinates · `4.A.4.b.5` Coaching and Developing Others |
 
-**Each block is reported alone as well as jointly**, on the same members, so
-attenuation is read against its own baseline. Upward, lateral and downward are
-strongly collinear — jobs with much interaction have all three — which is
-precisely why the discriminating test is the JOINT fit: three separate models
-would each come back positive off shared interaction variance and separate
-nothing. The alone-fits are reported for interpretation, not for adjudication.
+Each cell is the equally weighted mean of its standardised elements. The
+autonomy items sit in **M1a** because not holding the final say is what makes
+reporting *upward* rather than merely frequent.
 
-Compared by adjusted R², by held-out performance, and by whether each block
-survives the others' inclusion. (C) decides between (A) and (B); (A) and (B) are
-both reported whatever (C) says, because a sibling hypothesis that also predicts
-is a result, not a nuisance.
+**One cell is thin and is declared so in advance.** O\*NET has no clean
+"sociality directed at a superior" element; `4.A.4.a.6` Selling or Influencing
+Others is the closest and is not a good fit, since influencing is as often
+lateral or downward. **M2a is therefore the weakest of the six and a null there
+is uninformative** — it must not be read as evidence against the pattern.
+
+### Models
+
+    (0)  z ~ EGP class dummies                       + birthdec   [incumbent]
+    (1)  z ~ <one predictor>                         + birthdec   [x7, each alone]
+    (2)  z ~ M1a+M1b+M1c+M2a+M2b+M2c                 + birthdec   [JOINT — the test]
+    (3)  z ~ combined                                + birthdec   [all six pooled]
+
+`combined` is the equally weighted mean of the six cells, entered as a single
+summary covariate — the "everything at once" proxy.
+
+Each of the seven predictors is fitted **alone** as well as in the joint model,
+on the same members, so attenuation is read against its own baseline. The joint
+fit is the discriminating test: the six cells are collinear, and separate models
+would each come back positive off shared interaction variance.
+
+**Pre-specified subsets**, fixed here, reported whatever the joint model says:
+M1a alone against M1c alone (does reporting up beat commanding down?); M1a+M2b
+(the drone profile proper); the six with the autonomy items removed from M1a
+(does the composite survive without them?).
 
 ## Pre-specified predictions
 
-1. **The account-giving composite is positive and survives** required
-   education. Its two halves are also reported separately (see the composite
-   section); the hypothesis predicts the reporting half positive and the
-   autonomy half negative, i.e. both pointing the same way once reverse-scored.
-2. **Sociality also predicts**, because the two constructs overlap by
-   construction — a job requiring interaction with an individual involves
-   reporting to them in some sense. A positive result for (B) is expected and is
-   **not** evidence against (A). The informative quantity is (C).
-3. **The comparison is like-for-like or it is nothing.** All four models carry
-   `birthdec` and nothing else beyond their own block, so no margin over the
-   incumbent can come from an extra covariate.
-4. **Upward outscores downward.** If the register is deference, the upward block
-   carries (C) and the downward block does not. Roughly equal loadings across
-   all three directions would favour sociality; a downward loading would
-   indicate a managerial register, which neither hypothesis predicts and which
-   would need its own account.
-5. **Farmers are the diagnostic case.** EGP ranks IVc mid-table; both composites
-   and the observed value place it at the floor. If either beats EGP anywhere,
-   it should be here.
-6. **The manual classes are no longer a counter-case, and that must not be
-   claimed as a success.** V/VI and VIIab score low on measured autonomy yet sit
-   at the register's floor. Under the sufficient-not-necessary reading this is
-   expected — they hold effective autonomy the nominal scales miss — but that
-   reading was adopted *after* seeing them there, so it earns no credit unless
-   the effective-autonomy score above independently places them near farmers.
-   That is the test; the narrative is not.
-7. **Police are predicted to be MISSED.** Police other-ranks write heavily
-   (incident reports, statements, court files), so they will score high on
-   Documenting and Written Letters and Memos, but they are observed at −0.200.
-   Recorded as an expected failure **in advance**; neither composite will be
-   modified to accommodate it. A simple combination of existing scales that
-   misses one occupation is more informative than a bespoke rule that misses
-   none.
-8. **The two-factor account is NOT tested by this design, and no result here
-   should be read as bearing on it.** The idea — that accountability creates the
-   demand for the register while education supplies the ability to produce it,
-   the two crossed gradients making the observed U — requires education in the
-   model, and it has deliberately been left out. Whatever education would have
-   explained is absorbed into the composite's coefficient. If (A) succeeds, the
-   two-factor question becomes the natural follow-up study, with the
-   over-control problem handled properly rather than by adding a term.
+### The sign pattern (Matthew) — the drone profile
+
+The register is predicted to belong to the occupation that **reports upward,
+serves laterally, and commands nobody**. As signs on the six cells:
+
+| | upward (a) | lateral (b) | downward (c) |
+|---|---|---|---|
+| **M1** account-giving | **+** | **+** | **−** |
+| **M2** sociality | **+** *(thin cell)* | **+** | **−** |
+
+**The downward sign is what makes this falsifiable.** Every rival account
+predicts something different there:
+
+- **positive downward** → a *managerial* register: the form belongs to people
+  who direct others, and this hypothesis is wrong.
+- **flat across all three** → *sociality without hierarchy*: what matters is
+  working with people at all, and direction is decoration. This is hypothesis
+  (M2) winning over (M1) and is a different finding, not a weaker version of
+  this one.
+- **upward only, lateral null** → pure deference rather than the drone profile;
+  the service half is doing nothing and the construct should be narrowed.
+
+Confirmation requires the **pattern**, not any single cell. Two of six in the
+right direction is not partial support, it is noise.
+
+### The rest, in order
+
+1. **The joint model beats the incumbent.** Model (2) exceeds model (0) on
+   adjusted R² and its blocks survive. If it does not, occupational structure
+   adds nothing beyond EGP class and the hypothesis fails on its own terms.
+2. **M1a is the strongest single cell.** If any one predictor carries the
+   result it should be upward account-giving. If `combined` beats every
+   individual cell by a wide margin, the construct is diffuse rather than
+   specific and should be described that way.
+3. **M2a is uninformative either way.** The cell is thin by construction
+   (no clean O\*NET element for sociality directed at a superior), so a null
+   there is a measurement gap, not evidence.
+4. **Farmers are the diagnostic case.** EGP ranks IVc mid-table; the observed
+   register places it at the floor. If the grid beats EGP anywhere, it is here:
+   farmers should score low on M1a (nobody to report to) and low on M2b (working
+   with land, not people).
+5. **The manual classes are not a counter-case, and that must not be claimed as
+   a success.** V/VI and VIIab score low on measured autonomy yet sit at the
+   floor. Under the sufficient-not-necessary reading this is expected — they
+   hold effective autonomy the nominal scales miss — but that reading was
+   adopted *after* seeing them there, so it earns no credit unless the
+   effective-autonomy score places them near farmers independently.
+6. **Police are predicted to be MISSED.** Police other-ranks write heavily, so
+   they score high on M1a, yet they sit at −0.200. Recorded as an expected
+   failure in advance; no cell will be modified to accommodate them. A simple
+   grid that misses one occupation is more informative than a bespoke rule that
+   misses none.
+7. **The two-factor account is NOT tested here.** It needs education in the
+   model and education is deliberately out, so the cells absorb whatever
+   education would have explained. No result here bears on demand-versus-ability;
+   that becomes the follow-up if the grid succeeds.
+8. **The military absence caps what any success can claim.** Military officers
+   are the paradigm of M1a-high and M1c-low — the drone profile in its purest
+   institutional form — and O\*NET rates no military occupation, so they are
+   structurally absent. A confirmed pattern cannot be said to hold "generally"
+   while omitting the occupation that instantiates it most sharply.
 
 ## Deferred to future work: the unconstrained model
 
