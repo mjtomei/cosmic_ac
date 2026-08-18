@@ -30,6 +30,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 U = ["4.C.1.a.2.j", "4.A.3.b.6", "4.A.4.a.2", "4.A.4.c.1", "4.C.3.a.4", "4.C.3.b.8"]
 L = ["4.A.4.a.3", "4.A.4.a.4", "4.A.4.a.5", "4.A.4.a.8", "1.B.1.d", "1.B.1.a"]
 D = ["4.A.4.b.1", "4.A.4.c.2", "4.A.4.c.3", "4.A.4.b.3", "4.A.4.b.4", "4.A.4.b.5"]
+# 1.B.3.al Management/Administration also sits in D, but is 30.3-only (new file
+# Specific Interest Areas), so it cannot appear in a 29.1-vs-30.3 comparison.
 ALL = U + L + D
 COMP = {e: c for c, g in (("U", U), ("L", L), ("D", D)) for e in g}
 

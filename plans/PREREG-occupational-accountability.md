@@ -254,7 +254,7 @@ choice this study should be making on the analyst's judgement.
 
 | | upward (U) | lateral (L) | downward (D) |
 |---|---|---|---|
-| **M1** account-giving | `4.C.1.a.2.j` Written Letters and Memos · `4.A.3.b.6` Documenting/Recording · `4.A.4.a.2` Communicating with Supervisors · `4.A.4.c.1` Administrative Activities · **+ `4.C.3.a.4` Freedom to Make Decisions and `4.C.3.b.8` Determine Tasks reverse-scored** | `4.A.4.a.3` Communicating with People Outside the Organization · `4.A.4.a.4` Establishing and Maintaining Interpersonal Relationships | `4.A.4.b.1` Coordinating the Work of Others · `4.A.4.c.2` Staffing Organizational Units · `4.A.4.c.3` Monitoring and Controlling Resources |
+| **M1** account-giving | `4.C.1.a.2.j` Written Letters and Memos · `4.A.3.b.6` Documenting/Recording · `4.A.4.a.2` Communicating with Supervisors · `4.A.4.c.1` Administrative Activities · **+ `4.C.3.a.4` Freedom to Make Decisions and `4.C.3.b.8` Determine Tasks reverse-scored** | `4.A.4.a.3` Communicating with People Outside the Organization · `4.A.4.a.4` Establishing and Maintaining Interpersonal Relationships | `4.A.4.b.1` Coordinating the Work of Others · `4.A.4.c.2` Staffing Organizational Units · `4.A.4.c.3` Monitoring and Controlling Resources · **`1.B.3.al` Management/Administration** |
 | **M2** sociality | *(empty — no such element exists)* | `1.B.1.d` Social minus `1.B.1.a` Realistic · `4.A.4.a.5` Assisting and Caring for Others · `4.A.4.a.8` Working Directly with the Public | `4.A.4.b.3` Training and Teaching Others · `4.A.4.b.4` Guiding, Directing and Motivating Subordinates · `4.A.4.b.5` Coaching and Developing Others |
 
 **The upward-sociality cell is empty, not weak (Matthew).** O\*NET has no
@@ -269,7 +269,29 @@ its standardised elements across both base measures:
 
     U  upward     M1's six upward elements                (M2 contributes none)
     L  lateral    M1's two + M2's three                   (5 elements)
-    D  downward   M1's three + M2's three                 (6 elements)
+    D  downward   M1's three + M2's three + Mgmt/Admin     (7 elements)
+
+**`1.B.3.al` Management/Administration is added to D on Matthew's judgement that
+it belongs there**, and is the one element in the instrument drawn from O\*NET
+30.3's new Specific Interest Areas. Two things are recorded about it, because
+they cut against each other:
+
+- It is an *interest* rating (1–7, the same scale as the RIASEC pair already in
+  L), not an activity or context rating. It measures what incumbents are drawn
+  to rather than what the job requires. L already mixes the two kinds, so this
+  is not a new departure, but D was previously homogeneous and now is not.
+- Its domain source is **AI/Expert** for all 891 occupations, dated 05/2026,
+  with no incumbent survey behind it. In a study whose outcome is
+  machine-generated register, a machine-generated predictor is not circular but
+  is worth naming.
+
+It costs almost nothing in coverage: complete-on-all-elements falls from 894
+occupations to 862, but those 32 are occupations no member in the corpus held,
+so member-slot coverage moves 6,170 → 6,168, both 87.7%.
+
+**D with and without it is a pre-specified split**, exactly as U is split on the
+autonomy items. If the element is doing real work the two agree; if D's result
+depends on it, that is reported rather than absorbed.
 
 Nothing is missing from a column: the upward component is built from the
 elements that exist, which happen to be M1's. The autonomy items sit in **U**,
@@ -402,7 +424,8 @@ inference — are what Stage 2 implements.
 reporting up beat commanding down?); the three components with the autonomy
 items removed from U, which separates *reporting to someone* from *lacking the
 final say* — the two are conflated in U by construction, and the manual classes
-are where they come apart (prediction 6).
+are where they come apart (prediction 6); and **D without `1.B.3.al`**, which is
+the only AI-sourced element in the instrument.
 
 ## Pre-specified predictions
 
@@ -570,11 +593,16 @@ the right direction is not partial support, it is noise.
    element for it, so it is absent from the instrument rather than measured
    badly. Nothing in the predictions above or below depends on it, and no result
    may be explained after the fact by appeal to it.
-5. **Farmers are the diagnostic case.** EGP ranks IVc mid-table; the observed
-   register places it at the floor. If the grid beats EGP anywhere, it is here:
-   farmers should score low on U (nobody to report to) and low on L (working
-   with land, not people) — that is, they should land in the `free` profile,
-   which is predicted lowest.
+5. **Farmers are an illustrative case, not a load-bearing one (Matthew).** EGP
+   ranks IVc mid-table; the observed register places it at the floor, and the
+   grid should agree — farmers score low on U (nobody to report to) and low on L
+   (working with land, not people), putting them at the `free` end. But **the
+   free/managerial/drone result does not depend on them.** There are 251 farmer
+   members, 3.6% of coded slots; a profile ordering that holds across the other
+   96% is not weakened by a soft farmer showing, and an earlier draft calling
+   this "the diagnostic case" overweighted a small cell. Reported as
+   corroboration where it lands, and not counted against the hypothesis where it
+   does not.
 6. **The manual classes are not a counter-case, and that must not be claimed as
    a success.** V/VI and VIIab score low on measured autonomy yet sit at the
    floor. Under the sufficient-not-necessary reading this is expected — they
@@ -632,6 +660,22 @@ composite most **over-predicts**, and ask whether they share that character
 (police, military other-ranks, elected and public-facing roles) against
 occupations answering to a named superior. This is exploratory, is not part of
 the model comparison, and cannot be used to revise the composite.
+
+**A second side study: the specific interest areas as an occupational map
+(Matthew).** O\*NET 30.3 adds 41 Specific Interest Areas — `1.B.3.f`
+Agriculture, `1.B.3.z` Social Service, `1.B.3.ao` Law, `1.B.3.an` Politics and
+the rest — on a 1–7 scale across 891 occupations. Only Management/Administration
+enters the instrument. The others are a far finer occupational description than
+either EGP's seven classes or this study's three components, and asking what
+they say about the register is interesting in its own right rather than as a
+check on anything here. Agriculture in particular gives a direct read on the
+farmers without routing through the free profile.
+
+Held back as a separate study, not folded in, for the reason that makes it
+attractive: 41 dense predictors over ~4,400 occupations will find something, and
+a set that large has no honest place in a pre-registration written around three
+components. It also inherits the AI/Expert sourcing noted above, which matters
+more when the whole instrument rests on it.
 
 ## Known limitations, stated in advance
 
