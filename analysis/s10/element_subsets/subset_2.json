@@ -1,0 +1,345 @@
+[
+ {
+  "id": "1.A.1.a.3",
+  "name": "Oral Expression",
+  "desc": "The ability to communicate information and ideas in speaking so others will understand.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.1.b.5",
+  "name": "Inductive Reasoning",
+  "desc": "The ability to combine pieces of information to form general rules or conclusions (includes finding a relationship among seemingly unrelated events).",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.1.e.1",
+  "name": "Speed of Closure",
+  "desc": "The ability to quickly make sense of, combine, and organize information into meaningful patterns.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.1.g.2",
+  "name": "Time Sharing",
+  "desc": "The ability to shift back and forth between two or more activities or sources of information (such as speech, sounds, touch, or other sources).",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.2.b.3",
+  "name": "Response Orientation",
+  "desc": "The ability to choose quickly between two or more movements in response to two or more different signals (lights, sounds, pictures). It includes the speed with which the correct response is started with the hand, foot, or other body part.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.3.a.2",
+  "name": "Explosive Strength",
+  "desc": "The ability to use short bursts of muscle force to propel oneself (as in jumping or sprinting), or to throw an object.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.3.c.3",
+  "name": "Gross Body Coordination",
+  "desc": "The ability to coordinate the movement of your arms, legs, and torso together when the whole body is in motion.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.4.a.5",
+  "name": "Peripheral Vision",
+  "desc": "The ability to see objects or movement of objects to one's side when the eyes are looking ahead.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.4.b.4",
+  "name": "Speech Recognition",
+  "desc": "The ability to identify and understand the speech of another person.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.B.1.e",
+  "name": "Enterprising",
+  "desc": "Work involves managing, negotiating, marketing, or selling, typically in a business setting, or leading or advising people in political and legal situations. Enterprising occupations are often associated with business initiatives, sales, marketing/advertising,",
+  "file": "Career Interest Types",
+  "n_occ": 923
+ },
+ {
+  "id": "2.D.4.a",
+  "name": "Job-Related Professional Certification",
+  "desc": "Possession of an occupational or industry certification to perform the job.",
+  "file": "Education",
+  "n_occ": 564
+ },
+ {
+  "id": "2.A.1.f",
+  "name": "Science",
+  "desc": "Using scientific rules and methods to solve problems.",
+  "file": "Essential Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.1.b",
+  "name": "Administrative",
+  "desc": "Knowledge of administrative and office procedures and systems such as word processing, managing files and records, stenography and transcription, designing forms, and workplace terminology.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.2.a",
+  "name": "Production and Processing",
+  "desc": "Knowledge of raw materials, production processes, quality control, costs, and other techniques for maximizing the effective manufacture and distribution of goods.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.3.e",
+  "name": "Mechanical",
+  "desc": "Knowledge of machines and tools, including their designs, uses, repair, and maintenance.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.4.f",
+  "name": "Sociology and Anthropology",
+  "desc": "Knowledge of group behavior and dynamics, societal trends and influences, human migrations, ethnicity, cultures, and their history and origins.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.7.b",
+  "name": "Foreign Language",
+  "desc": "Knowledge of the structure and content of a foreign (non-English) language including the meaning and spelling of words, rules of composition and grammar, and pronunciation.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.9.a",
+  "name": "Telecommunications",
+  "desc": "Knowledge of transmission, broadcasting, switching, control, and operation of telecommunications systems.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "1.B.3.ad",
+  "name": "Professional Advising",
+  "desc": "Work involves providing expert advice, coaching, and counseling on topics such as careers, educational opportunities, and educational and professional development.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.aj",
+  "name": "Human Resources",
+  "desc": "Work involves recruiting, selecting, and training job applicants, maintaining employee personnel records, administering compensation and employee-benefit programs, and conducting employee performance reviews.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.b",
+  "name": "Construction/Woodwork",
+  "desc": "Work involves constructing, installing, or repairing structures and fixtures made of wood.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.h",
+  "name": "Animal Service",
+  "desc": "Work involves feeding, grooming, exercising, or otherwise providing care to promote and maintain the well-being of pets and other animals in settings such as kennels, animal shelters, and zoos.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.n",
+  "name": "Social Science",
+  "desc": "Work involves studying and researching human behavior, society, politics, and social relationships through scientific disciplines such as psychology, sociology, economics, or political science.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.t",
+  "name": "Performing Arts",
+  "desc": "Work involves acting as a performer in dance, comedy, or dramatic productions, choreographing of dance performances, or producing of live or recorded entertainment.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.z",
+  "name": "Social Service",
+  "desc": "Work involves providing social services and assistance to improve the well-being and social and psychological functioning of children and adults.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "2.B.1.b",
+  "name": "Coordination",
+  "desc": "Adjusting actions in relation to others' actions.",
+  "file": "Transferable Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.B.3.a",
+  "name": "Operations Analysis",
+  "desc": "Analyzing needs and product requirements to create a design.",
+  "file": "Transferable Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.B.3.h",
+  "name": "Operation and Control",
+  "desc": "Controlling operations of equipment or systems.",
+  "file": "Transferable Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.B.4.g",
+  "name": "Systems Analysis",
+  "desc": "Determining how a system should work and how changes in conditions, operations, and the environment will affect outcomes.",
+  "file": "Transferable Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.1.a.1",
+  "name": "Getting Information",
+  "desc": "Observing, receiving, and otherwise obtaining information from all relevant sources.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.2.a.2",
+  "name": "Processing Information",
+  "desc": "Compiling, coding, categorizing, calculating, tabulating, auditing, or verifying information or data.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.2.b.4",
+  "name": "Developing Objectives and Strategies",
+  "desc": "Establishing long-range objectives and specifying the strategies and actions to achieve them.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.3.a.4",
+  "name": "Operating Vehicles, Mechanized Devices, or Equipment",
+  "desc": "Running, maneuvering, navigating, or driving vehicles or mechanized equipment, such as forklifts, passenger vehicles, aircraft, or watercraft.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.4.a.1",
+  "name": "Interpreting the Meaning of Information for Others",
+  "desc": "Translating or explaining what information means and how it can be used.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.4.a.7",
+  "name": "Resolving Conflicts and Negotiating with Others",
+  "desc": "Handling complaints, settling disputes, and resolving grievances and conflicts, or otherwise negotiating with others.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.4.b.5",
+  "name": "Coaching and Developing Others",
+  "desc": "Identifying the developmental needs of others and coaching, mentoring, or otherwise helping others to improve their knowledge or skills.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.1.a.2.f",
+  "name": "Telephone Conversations",
+  "desc": "How often do you have telephone conversations in this job?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.1.b.1.f",
+  "name": "Deal With External Customers or the Public in General",
+  "desc": "How important is it to deal with external customers (as in retail sales) or the public in general (as in police work) in this job?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.1.d.3",
+  "name": "Dealing with Violent or Physically Aggressive People",
+  "desc": "How frequently does this job require the worker to deal with physical aggression of violent individuals?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.a.1.f",
+  "name": "In an Enclosed Vehicle or Operate Enclosed Equipment",
+  "desc": "How often does this job require working in a closed vehicle or operate enclosed equipment (like a car)?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.b.1.e",
+  "name": "Exposed to Cramped Work Space, Awkward Positions",
+  "desc": "How often does this job require working in cramped work spaces that requires getting into awkward positions?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.c.1.e",
+  "name": "Exposed to Hazardous Equipment",
+  "desc": "How often does this job require exposure to hazardous equipment?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.d.1.e",
+  "name": "Spend Time Kneeling, Crouching, Stooping, or Crawling",
+  "desc": "How much does this job require kneeling, crouching, stooping or crawling?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.e.1.e",
+  "name": "Wear Specialized Protective or Safety Equipment such as Breathing Apparatus, Safety Harness, Full Protection Suits, or Radiation Protection",
+  "desc": "How often does this job require wearing specialized protective or safety equipment such as breathing apparatus, safety harness, full protection suits, or radiation protection?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.3.b.4",
+  "name": "Importance of Being Exact or Accurate",
+  "desc": "How important is being very exact or highly accurate in performing this job?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.3.d.4",
+  "name": "Work Schedules",
+  "desc": "How regular are the work schedules for this job?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "1.D.1.e",
+  "name": "Initiative",
+  "desc": "A tendency to be proactive and take on extra responsibilities and tasks that may fall outside of one's required work role.",
+  "file": "Work Styles",
+  "n_occ": 891
+ },
+ {
+  "id": "1.D.2.b",
+  "name": "Sincerity",
+  "desc": "A tendency to be genuine and sincere in interactions with others at work, without concern for personal gain or self-interest.",
+  "file": "Work Styles",
+  "n_occ": 891
+ },
+ {
+  "id": "1.D.3.b",
+  "name": "Attention to Detail",
+  "desc": "A tendency to be detail-oriented, organized, and thorough in completing work.",
+  "file": "Work Styles",
+  "n_occ": 891
+ }
+]

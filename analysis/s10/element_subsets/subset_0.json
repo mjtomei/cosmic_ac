@@ -1,0 +1,352 @@
+[
+ {
+  "id": "1.A.1.a.1",
+  "name": "Oral Comprehension",
+  "desc": "The ability to listen to and understand information and ideas presented through spoken words and sentences.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.1.b.3",
+  "name": "Problem Sensitivity",
+  "desc": "The ability to tell when something is wrong or is likely to go wrong. It does not involve solving the problem, only recognizing that there is a problem.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.1.c.2",
+  "name": "Number Facility",
+  "desc": "The ability to add, subtract, multiply, or divide quickly and correctly.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.1.f.2",
+  "name": "Visualization",
+  "desc": "The ability to imagine how something will look after it is moved around or when its parts are moved or rearranged.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.2.b.1",
+  "name": "Control Precision",
+  "desc": "The ability to quickly and repeatedly adjust the controls of a machine or a vehicle to exact positions.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.2.c.3",
+  "name": "Speed of Limb Movement",
+  "desc": "The ability to quickly move the arms and legs.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.3.c.1",
+  "name": "Extent Flexibility",
+  "desc": "The ability to bend, stretch, twist, or reach with your body, arms, and/or legs.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.4.a.3",
+  "name": "Visual Color Discrimination",
+  "desc": "The ability to match or detect differences between colors, including shades of color and brightness.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.4.b.2",
+  "name": "Auditory Attention",
+  "desc": "The ability to focus on a single source of sound in the presence of other distracting sounds.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.B.1.c",
+  "name": "Artistic",
+  "desc": "Work involves creating original visual artwork, performances, written works, food, or music for a variety of media, or applying artistic principles to the design of various objects and materials. Artistic occupations are often associated with visual arts, appl",
+  "file": "Career Interest Types",
+  "n_occ": 923
+ },
+ {
+  "id": "1.B.1.i",
+  "name": "Third Interest High-Point",
+  "desc": "Tertiary-Cutoff/Rank Descriptiveness",
+  "file": "Career Interest Types",
+  "n_occ": 923
+ },
+ {
+  "id": "2.A.1.d",
+  "name": "Speaking",
+  "desc": "Talking to others to convey information effectively.",
+  "file": "Essential Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.A.2.d",
+  "name": "Monitoring",
+  "desc": "Monitoring/Assessing performance of yourself, other individuals, or organizations to make improvements or take corrective action.",
+  "file": "Essential Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.1.f",
+  "name": "Personnel and Human Resources",
+  "desc": "Knowledge of principles and procedures for personnel recruitment, selection, training, compensation and benefits, labor relations and negotiation, and personnel information systems.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.3.c",
+  "name": "Design",
+  "desc": "Knowledge of design techniques, tools, and principles involved in production of precision technical plans, blueprints, drawings, and models.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.4.d",
+  "name": "Biology",
+  "desc": "Knowledge of plant and animal organisms, their tissues, cells, functions, interdependencies, and interactions with each other and the environment.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.6",
+  "name": "Education and Training",
+  "desc": "Knowledge of principles and methods for curriculum and training design, teaching and instruction for individuals and groups, and the measurement of training effects.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.8.a",
+  "name": "Public Safety and Security",
+  "desc": "Knowledge of relevant equipment, policies, procedures, and strategies to promote effective local, state, or national security operations for the protection of people, data, property, and institutions.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "1.B.3.ab",
+  "name": "Religious Activities",
+  "desc": "Work involves conducting religious worship, leading a church or other religious group, and offering moral guidance associated with beliefs and practices of a religious faith.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.ah",
+  "name": "Finance",
+  "desc": "Work involves directing and managing financial activities, such as planning and investments for an individual or organization to generate income.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.an",
+  "name": "Politics",
+  "desc": "Work involves engaging in political activities to influence government policy.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.f",
+  "name": "Agriculture",
+  "desc": "Work involves planting, cultivating, and harvesting crops, plants, or trees, or raising farm animals. Work can also involve preparing plant and animal products for distribution to consumers, or protecting natural resources to maximize their use in farming.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.l",
+  "name": "Life Science",
+  "desc": "Work involves studying and researching living organisms through scientific disciplines such as biology, botany, zoology, microbiology, physiology, biochemistry, or zoology.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.r",
+  "name": "Visual Arts",
+  "desc": "Work involves creating original visual artwork for a variety of media and purposes using various techniques and software.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.x",
+  "name": "Culinary Art",
+  "desc": "Work involves preparing, cooking, and presenting food in a distinctive style usually associated with a specific culture or region.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "3.A.4.a",
+  "name": "Job-related Apprenticeship",
+  "desc": "Completion of a job-related apprenticeship to perform the job.",
+  "file": "Training and Experience",
+  "n_occ": 563
+ },
+ {
+  "id": "2.B.1.f",
+  "name": "Service Orientation",
+  "desc": "Actively looking for ways to help people.",
+  "file": "Transferable Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.B.3.e",
+  "name": "Programming",
+  "desc": "Writing computer programs for various purposes.",
+  "file": "Transferable Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.B.3.m",
+  "name": "Quality Control Analysis",
+  "desc": "Conducting tests and inspections of products, services, or processes to evaluate quality or performance.",
+  "file": "Transferable Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.B.5.c",
+  "name": "Management of Material Resources",
+  "desc": "Obtaining and seeing to the appropriate use of equipment, facilities, and materials needed to do certain work.",
+  "file": "Transferable Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.1.b.3",
+  "name": "Estimating the Quantifiable Characteristics of Products, Events, or Information",
+  "desc": "Estimating sizes, distances, and quantities; or determining time, costs, resources, or materials needed to perform a work activity.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.2.b.2",
+  "name": "Thinking Creatively",
+  "desc": "Developing, designing, or creating new applications, ideas, relationships, systems, or products, including artistic contributions.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.3.a.2",
+  "name": "Handling and Moving Objects",
+  "desc": "Using hands and arms in handling, installing, positioning, and moving materials, and manipulating things.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.3.b.5",
+  "name": "Repairing and Maintaining Electronic Equipment",
+  "desc": "Servicing, repairing, calibrating, regulating, fine-tuning, or testing machines, devices, and equipment that operate primarily on the basis of electrical or electronic (not mechanical) principles.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.4.a.5",
+  "name": "Assisting and Caring for Others",
+  "desc": "Providing personal assistance, medical attention, emotional support, or other personal care to others such as coworkers, customers, or patients.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.4.b.3",
+  "name": "Training and Teaching Others",
+  "desc": "Identifying the educational needs of others, developing formal educational or training programs or classes, and teaching or instructing others.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.4.c.3",
+  "name": "Monitoring and Controlling Resources",
+  "desc": "Monitoring and controlling resources and overseeing the spending of money.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.1.a.4",
+  "name": "Contact With Others",
+  "desc": "How much does this job require the worker to be in contact with others (face-to-face, by telephone, or otherwise) in order to perform it?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.1.d.1",
+  "name": "Conflict Situations",
+  "desc": "How frequently are there conflict situations the employee has to face in this job?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.a.1.d",
+  "name": "Outdoors, Under Cover",
+  "desc": "How often does this job require working outdoors, under cover (like in an open shed)?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.b.1.c",
+  "name": "Exposed to Extremely Bright or Inadequate Lighting Conditions",
+  "desc": "How often does this job require working in extremely bright or inadequate lighting conditions?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.c.1.c",
+  "name": "Exposed to High Places",
+  "desc": "How often does this job require exposure to high places?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.d.1.c",
+  "name": "Spend Time Climbing Ladders, Scaffolds, or Poles",
+  "desc": "How much does this job require climbing ladders, scaffolds, poles, etc.?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.d.1.i",
+  "name": "Spend Time Making Repetitive Motions",
+  "desc": "How much does this job require making repetitive motions?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.3.a.4",
+  "name": "Freedom to Make Decisions",
+  "desc": "How much decision making freedom, without supervision, does the job offer?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.3.d.1",
+  "name": "Time Pressure",
+  "desc": "How often does this job require the worker to meet strict deadlines?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "1.D.1.c",
+  "name": "Intellectual Curiosity",
+  "desc": "A tendency to seek out and acquire new work-related knowledge and obtain a deep understanding of work-related subjects.",
+  "file": "Work Styles",
+  "n_occ": 891
+ },
+ {
+  "id": "1.D.1.i",
+  "name": "Leadership Orientation",
+  "desc": "A tendency to lead, take charge, offer opinions, and provide direction at work.",
+  "file": "Work Styles",
+  "n_occ": 891
+ },
+ {
+  "id": "1.D.2.f",
+  "name": "Social Orientation",
+  "desc": "A tendency to seek out, enjoy, and be energized by social interaction at work.",
+  "file": "Work Styles",
+  "n_occ": 891
+ },
+ {
+  "id": "1.D.4.b",
+  "name": "Self-Control",
+  "desc": "A tendency to remain calm and composed and to manage emotions effectively in response to criticism or difficult situations at work.",
+  "file": "Work Styles",
+  "n_occ": 891
+ }
+]

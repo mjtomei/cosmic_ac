@@ -1,0 +1,3664 @@
+[
+ {
+  "id": "1.A.1.a.1",
+  "name": "Oral Comprehension",
+  "desc": "The ability to listen to and understand information and ideas presented through spoken words and sentences.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.a.2",
+  "name": "Written Comprehension",
+  "desc": "The ability to read and understand information and ideas presented in writing.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.a.3",
+  "name": "Oral Expression",
+  "desc": "The ability to communicate information and ideas in speaking so others will understand.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.a.4",
+  "name": "Written Expression",
+  "desc": "The ability to communicate information and ideas in writing so others will understand.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.b.1",
+  "name": "Fluency of Ideas",
+  "desc": "The ability to come up with a number of ideas about a topic (the number of ideas is important, not their quality, correctness, or creativity).",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.b.2",
+  "name": "Originality",
+  "desc": "The ability to come up with unusual or clever ideas about a given topic or situation, or to develop creative ways to solve a problem.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.b.3",
+  "name": "Problem Sensitivity",
+  "desc": "The ability to tell when something is wrong or is likely to go wrong. It does not involve solving the problem, only recognizing that there is a problem.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.b.4",
+  "name": "Deductive Reasoning",
+  "desc": "The ability to apply general rules to specific problems to produce answers that make sense.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.b.5",
+  "name": "Inductive Reasoning",
+  "desc": "The ability to combine pieces of information to form general rules or conclusions (includes finding a relationship among seemingly unrelated events).",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.b.6",
+  "name": "Information Ordering",
+  "desc": "The ability to arrange things or actions in a certain order or pattern according to a specific rule or set of rules (e.g., patterns of numbers, letters, words, pictures, mathematical operations).",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.b.7",
+  "name": "Category Flexibility",
+  "desc": "The ability to generate or use different sets of rules for combining or grouping things in different ways.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.c.1",
+  "name": "Mathematical Reasoning",
+  "desc": "The ability to choose the right mathematical methods or formulas to solve a problem.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.c.2",
+  "name": "Number Facility",
+  "desc": "The ability to add, subtract, multiply, or divide quickly and correctly.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.d.1",
+  "name": "Memorization",
+  "desc": "The ability to remember information such as words, numbers, pictures, and procedures.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.e.1",
+  "name": "Speed of Closure",
+  "desc": "The ability to quickly make sense of, combine, and organize information into meaningful patterns.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.e.2",
+  "name": "Flexibility of Closure",
+  "desc": "The ability to identify or detect a known pattern (a figure, object, word, or sound) that is hidden in other distracting material.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.e.3",
+  "name": "Perceptual Speed",
+  "desc": "The ability to quickly and accurately compare similarities and differences among sets of letters, numbers, objects, pictures, or patterns. The things to be compared may be presented at the same time or one after the other. This ability also includes comparing ",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.f.1",
+  "name": "Spatial Orientation",
+  "desc": "The ability to know your location in relation to the environment or to know where other objects are in relation to you.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.f.2",
+  "name": "Visualization",
+  "desc": "The ability to imagine how something will look after it is moved around or when its parts are moved or rearranged.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.g.1",
+  "name": "Selective Attention",
+  "desc": "The ability to concentrate on a task over a period of time without being distracted.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.1.g.2",
+  "name": "Time Sharing",
+  "desc": "The ability to shift back and forth between two or more activities or sources of information (such as speech, sounds, touch, or other sources).",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.2.a.1",
+  "name": "Arm-Hand Steadiness",
+  "desc": "The ability to keep your hand and arm steady while moving your arm or while holding your arm and hand in one position.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.2.a.2",
+  "name": "Manual Dexterity",
+  "desc": "The ability to quickly move your hand, your hand together with your arm, or your two hands to grasp, manipulate, or assemble objects.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.2.a.3",
+  "name": "Finger Dexterity",
+  "desc": "The ability to make precisely coordinated movements of the fingers of one or both hands to grasp, manipulate, or assemble very small objects.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.2.b.1",
+  "name": "Control Precision",
+  "desc": "The ability to quickly and repeatedly adjust the controls of a machine or a vehicle to exact positions.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.2.b.2",
+  "name": "Multilimb Coordination",
+  "desc": "The ability to coordinate two or more limbs (for example, two arms, two legs, or one leg and one arm) while sitting, standing, or lying down. It does not involve performing the activities while the whole body is in motion.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.2.b.3",
+  "name": "Response Orientation",
+  "desc": "The ability to choose quickly between two or more movements in response to two or more different signals (lights, sounds, pictures). It includes the speed with which the correct response is started with the hand, foot, or other body part.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.2.b.4",
+  "name": "Rate Control",
+  "desc": "The ability to time your movements or the movement of a piece of equipment in anticipation of changes in the speed and/or direction of a moving object or scene.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.2.c.1",
+  "name": "Reaction Time",
+  "desc": "The ability to quickly respond (with the hand, finger, or foot) to a signal (sound, light, picture) when it appears.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.2.c.2",
+  "name": "Wrist-Finger Speed",
+  "desc": "The ability to make fast, simple, repeated movements of the fingers, hands, and wrists.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.2.c.3",
+  "name": "Speed of Limb Movement",
+  "desc": "The ability to quickly move the arms and legs.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.3.a.1",
+  "name": "Static Strength",
+  "desc": "The ability to exert maximum muscle force to lift, push, pull, or carry objects.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.3.a.2",
+  "name": "Explosive Strength",
+  "desc": "The ability to use short bursts of muscle force to propel oneself (as in jumping or sprinting), or to throw an object.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.3.a.3",
+  "name": "Dynamic Strength",
+  "desc": "The ability to exert muscle force repeatedly or continuously over time. This involves muscular endurance and resistance to muscle fatigue.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.3.a.4",
+  "name": "Trunk Strength",
+  "desc": "The ability to use your abdominal and lower back muscles to support part of the body repeatedly or continuously over time without \"giving out\" or fatiguing.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.3.b.1",
+  "name": "Stamina",
+  "desc": "The ability to exert yourself physically over long periods of time without getting winded or out of breath.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.3.c.1",
+  "name": "Extent Flexibility",
+  "desc": "The ability to bend, stretch, twist, or reach with your body, arms, and/or legs.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.3.c.2",
+  "name": "Dynamic Flexibility",
+  "desc": "The ability to quickly and repeatedly bend, stretch, twist, or reach out with your body, arms, and/or legs.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.3.c.3",
+  "name": "Gross Body Coordination",
+  "desc": "The ability to coordinate the movement of your arms, legs, and torso together when the whole body is in motion.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.3.c.4",
+  "name": "Gross Body Equilibrium",
+  "desc": "The ability to keep or regain your body balance or stay upright when in an unstable position.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.4.a.1",
+  "name": "Near Vision",
+  "desc": "The ability to see details at close range (within a few feet of the observer).",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.4.a.2",
+  "name": "Far Vision",
+  "desc": "The ability to see details at a distance.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.4.a.3",
+  "name": "Visual Color Discrimination",
+  "desc": "The ability to match or detect differences between colors, including shades of color and brightness.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.4.a.4",
+  "name": "Night Vision",
+  "desc": "The ability to see under low-light conditions.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.4.a.5",
+  "name": "Peripheral Vision",
+  "desc": "The ability to see objects or movement of objects to one's side when the eyes are looking ahead.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.4.a.6",
+  "name": "Depth Perception",
+  "desc": "The ability to judge which of several objects is closer or farther away from you, or to judge the distance between you and an object.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.4.a.7",
+  "name": "Glare Sensitivity",
+  "desc": "The ability to see objects in the presence of a glare or bright lighting.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.4.b.1",
+  "name": "Hearing Sensitivity",
+  "desc": "The ability to detect or tell the differences between sounds that vary in pitch and loudness.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.4.b.2",
+  "name": "Auditory Attention",
+  "desc": "The ability to focus on a single source of sound in the presence of other distracting sounds.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.4.b.3",
+  "name": "Sound Localization",
+  "desc": "The ability to tell the direction from which a sound originated.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.4.b.4",
+  "name": "Speech Recognition",
+  "desc": "The ability to identify and understand the speech of another person.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.A.4.b.5",
+  "name": "Speech Clarity",
+  "desc": "The ability to speak clearly so others can understand you.",
+  "file": "Abilities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.1.a",
+  "name": "Realistic",
+  "desc": "Work involves designing, building, or repairing of equipment, materials, or structures, engaging in physical activity, or working outdoors. Realistic occupations are often associated with engineering, mechanics and electronics, construction, woodworking, trans",
+  "file": "Career Interest Types",
+  "n_occ": 923,
+  "scales": [
+   "IH",
+   "OI"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "1.B.1.b",
+  "name": "Investigative",
+  "desc": "Work involves studying and researching non-living objects, living organisms, disease or other forms of impairment, or human behavior. Investigative occupations are often associated with physical, life, medical, or social sciences, and can be found in the field",
+  "file": "Career Interest Types",
+  "n_occ": 923,
+  "scales": [
+   "IH",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.1.c",
+  "name": "Artistic",
+  "desc": "Work involves creating original visual artwork, performances, written works, food, or music for a variety of media, or applying artistic principles to the design of various objects and materials. Artistic occupations are often associated with visual arts, appl",
+  "file": "Career Interest Types",
+  "n_occ": 923,
+  "scales": [
+   "IH",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.1.d",
+  "name": "Social",
+  "desc": "Work involves helping, teaching, advising, assisting, or providing service to others. Social occupations are often associated with social, health care, personal service, teaching/education, or religious activities.",
+  "file": "Career Interest Types",
+  "n_occ": 923,
+  "scales": [
+   "IH",
+   "OI"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "1.B.1.e",
+  "name": "Enterprising",
+  "desc": "Work involves managing, negotiating, marketing, or selling, typically in a business setting, or leading or advising people in political and legal situations. Enterprising occupations are often associated with business initiatives, sales, marketing/advertising,",
+  "file": "Career Interest Types",
+  "n_occ": 923,
+  "scales": [
+   "IH",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.1.f",
+  "name": "Conventional",
+  "desc": "Work involves following procedures and regulations to organize information or data, typically in a business setting. Conventional occupations are often associated with office work, accounting, mathematics/statistics, information technology, finance, or human r",
+  "file": "Career Interest Types",
+  "n_occ": 923,
+  "scales": [
+   "IH",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.1.g",
+  "name": "First Interest High-Point",
+  "desc": "Primary-Rank Descriptiveness",
+  "file": "Career Interest Types",
+  "n_occ": 923,
+  "scales": [
+   "IH",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.1.h",
+  "name": "Second Interest High-Point",
+  "desc": "Secondary-Cutoff/Rank Descriptiveness",
+  "file": "Career Interest Types",
+  "n_occ": 923,
+  "scales": [
+   "IH",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.1.i",
+  "name": "Third Interest High-Point",
+  "desc": "Tertiary-Cutoff/Rank Descriptiveness",
+  "file": "Career Interest Types",
+  "n_occ": 923,
+  "scales": [
+   "IH",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.D.1",
+  "name": "Required Level of Education",
+  "desc": "The level of education required to perform a job.",
+  "file": "Education",
+  "n_occ": 878,
+  "scales": [
+   "IM",
+   "RL"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.D.4.a",
+  "name": "Job-Related Professional Certification",
+  "desc": "Possession of an occupational or industry certification to perform the job.",
+  "file": "Education",
+  "n_occ": 564,
+  "scales": [
+   "IM",
+   "RL"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.A.1.a",
+  "name": "Reading Comprehension",
+  "desc": "Understanding written sentences and paragraphs in work-related documents.",
+  "file": "Essential Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.A.1.b",
+  "name": "Active Listening",
+  "desc": "Giving full attention to what other people are saying, taking time to understand the points being made, asking questions as appropriate, and not interrupting at inappropriate times.",
+  "file": "Essential Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.A.1.c",
+  "name": "Writing",
+  "desc": "Communicating effectively in writing as appropriate for the needs of the audience.",
+  "file": "Essential Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.A.1.d",
+  "name": "Speaking",
+  "desc": "Talking to others to convey information effectively.",
+  "file": "Essential Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.A.1.e",
+  "name": "Mathematics",
+  "desc": "Using mathematics to solve problems.",
+  "file": "Essential Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.A.1.f",
+  "name": "Science",
+  "desc": "Using scientific rules and methods to solve problems.",
+  "file": "Essential Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.A.2.a",
+  "name": "Critical Thinking",
+  "desc": "Using logic and reasoning to identify the strengths and weaknesses of alternative solutions, conclusions, or approaches to problems.",
+  "file": "Essential Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.A.2.b",
+  "name": "Active Learning",
+  "desc": "Understanding the implications of new information for both current and future problem-solving and decision-making.",
+  "file": "Essential Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.A.2.c",
+  "name": "Learning Strategies",
+  "desc": "Selecting and using training/instructional methods and procedures appropriate for the situation when learning or teaching new things.",
+  "file": "Essential Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.A.2.d",
+  "name": "Monitoring",
+  "desc": "Monitoring/Assessing performance of yourself, other individuals, or organizations to make improvements or take corrective action.",
+  "file": "Essential Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.1.a",
+  "name": "Administration and Management",
+  "desc": "Knowledge of business and management principles involved in strategic planning, resource allocation, human resources modeling, leadership technique, production methods, and coordination of people and resources.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.1.b",
+  "name": "Administrative",
+  "desc": "Knowledge of administrative and office procedures and systems such as word processing, managing files and records, stenography and transcription, designing forms, and workplace terminology.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.1.c",
+  "name": "Economics and Accounting",
+  "desc": "Knowledge of economic and accounting principles and practices, the financial markets, banking, and the analysis and reporting of financial data.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.1.d",
+  "name": "Sales and Marketing",
+  "desc": "Knowledge of principles and methods for showing, promoting, and selling products or services. This includes marketing strategy and tactics, product demonstration, sales techniques, and sales control systems.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.1.e",
+  "name": "Customer and Personal Service",
+  "desc": "Knowledge of principles and processes for providing customer and personal services. This includes customer needs assessment, meeting quality standards for services, and evaluation of customer satisfaction.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.1.f",
+  "name": "Personnel and Human Resources",
+  "desc": "Knowledge of principles and procedures for personnel recruitment, selection, training, compensation and benefits, labor relations and negotiation, and personnel information systems.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.10",
+  "name": "Transportation",
+  "desc": "Knowledge of principles and methods for moving people or goods by air, rail, sea, or road, including the relative costs and benefits.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.2.a",
+  "name": "Production and Processing",
+  "desc": "Knowledge of raw materials, production processes, quality control, costs, and other techniques for maximizing the effective manufacture and distribution of goods.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.2.b",
+  "name": "Food Production",
+  "desc": "Knowledge of techniques and equipment for planting, growing, and harvesting food products (both plant and animal) for consumption, including storage/handling techniques.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.3.a",
+  "name": "Computers and Electronics",
+  "desc": "Knowledge of circuit boards, processors, chips, electronic equipment, and computer hardware and software, including applications and programming.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.3.b",
+  "name": "Engineering and Technology",
+  "desc": "Knowledge of the practical application of engineering science and technology. This includes applying principles, techniques, procedures, and equipment to the design and production of various goods and services.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.3.c",
+  "name": "Design",
+  "desc": "Knowledge of design techniques, tools, and principles involved in production of precision technical plans, blueprints, drawings, and models.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.3.d",
+  "name": "Building and Construction",
+  "desc": "Knowledge of materials, methods, and the tools involved in the construction or repair of houses, buildings, or other structures such as highways and roads.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.3.e",
+  "name": "Mechanical",
+  "desc": "Knowledge of machines and tools, including their designs, uses, repair, and maintenance.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.4.a",
+  "name": "Mathematics",
+  "desc": "Knowledge of arithmetic, algebra, geometry, calculus, statistics, and their applications.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.4.b",
+  "name": "Physics",
+  "desc": "Knowledge and prediction of physical principles, laws, their interrelationships, and applications to understanding fluid, material, and atmospheric dynamics, and mechanical, electrical, atomic and sub-atomic structures and processes.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.4.c",
+  "name": "Chemistry",
+  "desc": "Knowledge of the chemical composition, structure, and properties of substances and of the chemical processes and transformations that they undergo. This includes uses of chemicals and their interactions, danger signs, production techniques, and disposal method",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.4.d",
+  "name": "Biology",
+  "desc": "Knowledge of plant and animal organisms, their tissues, cells, functions, interdependencies, and interactions with each other and the environment.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.4.e",
+  "name": "Psychology",
+  "desc": "Knowledge of human behavior and performance; individual differences in ability, personality, and interests; learning and motivation; psychological research methods; and the assessment and treatment of behavioral and affective disorders.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.4.f",
+  "name": "Sociology and Anthropology",
+  "desc": "Knowledge of group behavior and dynamics, societal trends and influences, human migrations, ethnicity, cultures, and their history and origins.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.4.g",
+  "name": "Geography",
+  "desc": "Knowledge of principles and methods for describing the features of land, sea, and air masses, including their physical characteristics, locations, interrelationships, and distribution of plant, animal, and human life.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.5.a",
+  "name": "Medicine and Dentistry",
+  "desc": "Knowledge of the information and techniques needed to diagnose and treat human injuries, diseases, and deformities. This includes symptoms, treatment alternatives, drug properties and interactions, and preventive health-care measures.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.5.b",
+  "name": "Therapy and Counseling",
+  "desc": "Knowledge of principles, methods, and procedures for diagnosis, treatment, and rehabilitation of physical and mental dysfunctions, and for career counseling and guidance.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.6",
+  "name": "Education and Training",
+  "desc": "Knowledge of principles and methods for curriculum and training design, teaching and instruction for individuals and groups, and the measurement of training effects.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.7.a",
+  "name": "English Language",
+  "desc": "Knowledge of the structure and content of the English language including the meaning and spelling of words, and rules of composition and grammar.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.7.b",
+  "name": "Foreign Language",
+  "desc": "Knowledge of the structure and content of a foreign (non-English) language including the meaning and spelling of words, rules of composition and grammar, and pronunciation.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.7.c",
+  "name": "Fine Arts",
+  "desc": "Knowledge of the theory and techniques required to compose, produce, and perform works of music, dance, visual arts, drama, and sculpture.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.7.d",
+  "name": "History and Archeology",
+  "desc": "Knowledge of historical events and their causes, indicators, and effects on civilizations and cultures.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.7.e",
+  "name": "Philosophy and Theology",
+  "desc": "Knowledge of different philosophical systems and religions. This includes their basic principles, values, ethics, ways of thinking, customs, practices, and their impact on human culture.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.8.a",
+  "name": "Public Safety and Security",
+  "desc": "Knowledge of relevant equipment, policies, procedures, and strategies to promote effective local, state, or national security operations for the protection of people, data, property, and institutions.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.8.b",
+  "name": "Law and Government",
+  "desc": "Knowledge of laws, legal codes, court procedures, precedents, government regulations, executive orders, agency rules, and the democratic political process.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.9.a",
+  "name": "Telecommunications",
+  "desc": "Knowledge of transmission, broadcasting, switching, control, and operation of telecommunications systems.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.C.9.b",
+  "name": "Communications and Media",
+  "desc": "Knowledge of media production, communication, and dissemination techniques and methods. This includes alternative ways to inform and entertain via written, oral, and visual media.",
+  "file": "Knowledge",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.a",
+  "name": "Mechanics/Electronics",
+  "desc": "Work involves maintaining and repairing of machinery, such as automotive engines, electronic equipment, computers, and communication systems.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.aa",
+  "name": "Health Care Service",
+  "desc": "Work involves providing health care services to individuals to include the diagnosis, prevention, or treatment of diseases and other forms of illness or impairment.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.ab",
+  "name": "Religious Activities",
+  "desc": "Work involves conducting religious worship, leading a church or other religious group, and offering moral guidance associated with beliefs and practices of a religious faith.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.ac",
+  "name": "Personal Service",
+  "desc": "Work involves providing personal services to individuals in need of non-medical assistance such as helping arrange or plan for travel, meals, or events.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.ad",
+  "name": "Professional Advising",
+  "desc": "Work involves providing expert advice, coaching, and counseling on topics such as careers, educational opportunities, and educational and professional development.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.ae",
+  "name": "Business Initiatives",
+  "desc": "Work involves creating strategic plans or taking actions to expand an organization's business or market share.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.af",
+  "name": "Sales",
+  "desc": "Work involves selling goods or services.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.ag",
+  "name": "Marketing/Advertising",
+  "desc": "Work involves promoting or creating a public image for products, services, or organizations to attract interest, engagement, or sales.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.ah",
+  "name": "Finance",
+  "desc": "Work involves directing and managing financial activities, such as planning and investments for an individual or organization to generate income.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.ai",
+  "name": "Accounting",
+  "desc": "Work involves examining, analyzing, and interpreting accounting records for financial statements, or maintaining, auditing, or evaluating records and accounts.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.aj",
+  "name": "Human Resources",
+  "desc": "Work involves recruiting, selecting, and training job applicants, maintaining employee personnel records, administering compensation and employee-benefit programs, and conducting employee performance reviews.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.ak",
+  "name": "Office Work",
+  "desc": "Work involves clerical and administrative tasks for an organization such as answering phones, bookkeeping, updating records, scheduling appointments or meetings, and editing of documents and files.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.al",
+  "name": "Management/Administration",
+  "desc": "Work involves planning, directing, or coordinating the daily operations of an organization, and overseeing personnel, business, or administrative services.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "1.B.3.am",
+  "name": "Public Speaking",
+  "desc": "Work involves speaking before an audience to educate, entertain, or influence the listeners.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.an",
+  "name": "Politics",
+  "desc": "Work involves engaging in political activities to influence government policy.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.ao",
+  "name": "Law",
+  "desc": "Work involves studying and applying legal knowledge.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.b",
+  "name": "Construction/Woodwork",
+  "desc": "Work involves constructing, installing, or repairing structures and fixtures made of wood.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.c",
+  "name": "Transportation/Machine Operation",
+  "desc": "Work involves driving vehicles, such as vans, trucks, trains, and buses to transport people or materials. Work can also involve operating heavy equipment, such as cranes, forklifts, bulldozers, and backhoes to move materials or earth.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.d",
+  "name": "Physical/Manual Labor",
+  "desc": "Work involves manually unloading and moving freight, stock, luggage, or other materials, or performing other physical labor.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.e",
+  "name": "Protective Service",
+  "desc": "Work involves maintaining order and protecting life and property by conducting investigations and enforcing laws and regulations to prevent or solve crimes.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.f",
+  "name": "Agriculture",
+  "desc": "Work involves planting, cultivating, and harvesting crops, plants, or trees, or raising farm animals. Work can also involve preparing plant and animal products for distribution to consumers, or protecting natural resources to maximize their use in farming.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.g",
+  "name": "Nature/Outdoors",
+  "desc": "Work involves planning, restoring, and conserving natural areas and wildlife habitats.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.h",
+  "name": "Animal Service",
+  "desc": "Work involves feeding, grooming, exercising, or otherwise providing care to promote and maintain the well-being of pets and other animals in settings such as kennels, animal shelters, and zoos.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.i",
+  "name": "Athletics",
+  "desc": "Work involves training, practicing, or competing in athletic events, or supporting those participating in athletics through coaching, training, or officiating.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.j",
+  "name": "Engineering",
+  "desc": "Work involves applying science and technology to the design, building, testing, and use of electrical and electronic components, mechanical devices and machines, automotive, marine, and aerospace equipment and vehicles, materials, or structures.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.k",
+  "name": "Physical Science",
+  "desc": "Work involves studying and researching non-living objects, materials, and phenomena through scientific disciplines such as physics, chemistry, astronomy, meteorology, or geology.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.l",
+  "name": "Life Science",
+  "desc": "Work involves studying and researching living organisms through scientific disciplines such as biology, botany, zoology, microbiology, physiology, biochemistry, or zoology.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.m",
+  "name": "Medical Science",
+  "desc": "Work involves studying and researching the causes, nature, effects, and treatments of disease or other forms of impairment or illness.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.n",
+  "name": "Social Science",
+  "desc": "Work involves studying and researching human behavior, society, politics, and social relationships through scientific disciplines such as psychology, sociology, economics, or political science.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.o",
+  "name": "Humanities",
+  "desc": "Work involves studying and researching aspects of human history, culture, and language through disciplines such as history, philosophy, the language arts, or area/ethnic studies.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.p",
+  "name": "Mathematics/Statistics",
+  "desc": "Work involves developing and applying mathematics and statistical theory and methods.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.q",
+  "name": "Information Technology",
+  "desc": "Work involves designing, developing, testing, and maintaining computer software, hardware, networks, and systems.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.r",
+  "name": "Visual Arts",
+  "desc": "Work involves creating original visual artwork for a variety of media and purposes using various techniques and software.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.s",
+  "name": "Applied Arts and Design",
+  "desc": "Work involves applying artistic principles to the design and creation of various objects and materials.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.t",
+  "name": "Performing Arts",
+  "desc": "Work involves acting as a performer in dance, comedy, or dramatic productions, choreographing of dance performances, or producing of live or recorded entertainment.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.u",
+  "name": "Music",
+  "desc": "Work involves conducting, composing, or playing music or singing.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.v",
+  "name": "Creative Writing",
+  "desc": "Work involves developing creative written works, such as novels, scripts, song lyrics, poetry, stories, or advertisements.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.w",
+  "name": "Media",
+  "desc": "Work involves producing, developing, writing, directing, or presenting information through print, radio, television, or digital media.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.x",
+  "name": "Culinary Art",
+  "desc": "Work involves preparing, cooking, and presenting food in a distinctive style usually associated with a specific culture or region.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.y",
+  "name": "Teaching/Education",
+  "desc": "Work involves teaching through lectures, discussions, and demonstrations in one or more subjects.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.B.3.z",
+  "name": "Social Service",
+  "desc": "Work involves providing social services and assistance to improve the well-being and social and psychological functioning of children and adults.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891,
+  "scales": [
+   "DS",
+   "OI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "3.A.1",
+  "name": "Related Work Experience",
+  "desc": "Amount of related work experience required to get hired for the job?",
+  "file": "Training and Experience",
+  "n_occ": 878,
+  "scales": [
+   "IM",
+   "OJ",
+   "PT",
+   "RW"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "3.A.2",
+  "name": "On-Site or In-Plant Training",
+  "desc": "Amount of on-site or in-plant training (e.g., organized class room instruction) required to perform the job?",
+  "file": "Training and Experience",
+  "n_occ": 878,
+  "scales": [
+   "IM",
+   "OJ",
+   "PT",
+   "RW"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "3.A.3",
+  "name": "On-the-Job Training",
+  "desc": "Amount of on the job training required to perform the job?",
+  "file": "Training and Experience",
+  "n_occ": 878,
+  "scales": [
+   "IM",
+   "OJ",
+   "PT",
+   "RW"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "3.A.4.a",
+  "name": "Job-related Apprenticeship",
+  "desc": "Completion of a job-related apprenticeship to perform the job.",
+  "file": "Training and Experience",
+  "n_occ": 563,
+  "scales": [
+   "IM",
+   "OJ",
+   "PT",
+   "RW"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.1.a",
+  "name": "Social Perceptiveness",
+  "desc": "Being aware of others' reactions and understanding why they react as they do.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.1.b",
+  "name": "Coordination",
+  "desc": "Adjusting actions in relation to others' actions.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.1.c",
+  "name": "Persuasion",
+  "desc": "Persuading others to change their minds or behavior.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.1.d",
+  "name": "Negotiation",
+  "desc": "Bringing others together and trying to reconcile differences.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.1.e",
+  "name": "Instructing",
+  "desc": "Teaching others how to do something.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.1.f",
+  "name": "Service Orientation",
+  "desc": "Actively looking for ways to help people.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.2.i",
+  "name": "Complex Problem Solving",
+  "desc": "Identifying complex problems and reviewing related information to develop and evaluate options and implement solutions.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.3.a",
+  "name": "Operations Analysis",
+  "desc": "Analyzing needs and product requirements to create a design.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.3.b",
+  "name": "Technology Design",
+  "desc": "Generating or adapting equipment and technology to serve user needs.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.3.c",
+  "name": "Equipment Selection",
+  "desc": "Determining the kind of tools and equipment needed to do a job.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.3.d",
+  "name": "Installation",
+  "desc": "Installing equipment, machines, wiring, or programs to meet specifications.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.3.e",
+  "name": "Programming",
+  "desc": "Writing computer programs for various purposes.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.3.g",
+  "name": "Operations Monitoring",
+  "desc": "Watching gauges, dials, or other indicators to make sure a machine is working properly.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.3.h",
+  "name": "Operation and Control",
+  "desc": "Controlling operations of equipment or systems.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.3.j",
+  "name": "Equipment Maintenance",
+  "desc": "Performing routine maintenance on equipment and determining when and what kind of maintenance is needed.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.3.k",
+  "name": "Troubleshooting",
+  "desc": "Determining causes of operating errors and deciding what to do about it.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.3.l",
+  "name": "Repairing",
+  "desc": "Repairing machines or systems using the needed tools.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.3.m",
+  "name": "Quality Control Analysis",
+  "desc": "Conducting tests and inspections of products, services, or processes to evaluate quality or performance.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.4.e",
+  "name": "Judgment and Decision Making",
+  "desc": "Considering the relative costs and benefits of potential actions to choose the most appropriate one.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.4.g",
+  "name": "Systems Analysis",
+  "desc": "Determining how a system should work and how changes in conditions, operations, and the environment will affect outcomes.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.4.h",
+  "name": "Systems Evaluation",
+  "desc": "Identifying measures or indicators of system performance and the actions needed to improve or correct performance, relative to the goals of the system.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.5.a",
+  "name": "Time Management",
+  "desc": "Managing one's own time and the time of others.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.5.b",
+  "name": "Management of Financial Resources",
+  "desc": "Determining how money will be spent to get the work done, and accounting for these expenditures.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.5.c",
+  "name": "Management of Material Resources",
+  "desc": "Obtaining and seeing to the appropriate use of equipment, facilities, and materials needed to do certain work.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "2.B.5.d",
+  "name": "Management of Personnel Resources",
+  "desc": "Motivating, developing, and directing people as they work, identifying the best people for the job.",
+  "file": "Transferable Skills",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.1.a.1",
+  "name": "Getting Information",
+  "desc": "Observing, receiving, and otherwise obtaining information from all relevant sources.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.1.a.2",
+  "name": "Monitoring Processes, Materials, or Surroundings",
+  "desc": "Monitoring and reviewing information from materials, events, or the environment, to detect or assess problems.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.1.b.1",
+  "name": "Identifying Objects, Actions, and Events",
+  "desc": "Identifying information by categorizing, estimating, recognizing differences or similarities, and detecting changes in circumstances or events.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.1.b.2",
+  "name": "Inspecting Equipment, Structures, or Materials",
+  "desc": "Inspecting equipment, structures, or materials to identify the cause of errors or other problems or defects.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.1.b.3",
+  "name": "Estimating the Quantifiable Characteristics of Products, Events, or Information",
+  "desc": "Estimating sizes, distances, and quantities; or determining time, costs, resources, or materials needed to perform a work activity.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.2.a.1",
+  "name": "Judging the Qualities of Objects, Services, or People",
+  "desc": "Assessing the value, importance, or quality of things or people.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.2.a.2",
+  "name": "Processing Information",
+  "desc": "Compiling, coding, categorizing, calculating, tabulating, auditing, or verifying information or data.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.2.a.3",
+  "name": "Evaluating Information to Determine Compliance with Standards",
+  "desc": "Using relevant information and individual judgment to determine whether events or processes comply with laws, regulations, or standards.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.2.a.4",
+  "name": "Analyzing Data or Information",
+  "desc": "Identifying the underlying principles, reasons, or facts of information by breaking down information or data into separate parts.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.2.b.1",
+  "name": "Making Decisions and Solving Problems",
+  "desc": "Analyzing information and evaluating results to choose the best solution and solve problems.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.2.b.2",
+  "name": "Thinking Creatively",
+  "desc": "Developing, designing, or creating new applications, ideas, relationships, systems, or products, including artistic contributions.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.2.b.3",
+  "name": "Updating and Using Relevant Knowledge",
+  "desc": "Keeping up-to-date technically and applying new knowledge to your job.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.2.b.4",
+  "name": "Developing Objectives and Strategies",
+  "desc": "Establishing long-range objectives and specifying the strategies and actions to achieve them.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.2.b.5",
+  "name": "Scheduling Work and Activities",
+  "desc": "Scheduling events, programs, and activities, as well as the work of others.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.2.b.6",
+  "name": "Organizing, Planning, and Prioritizing Work",
+  "desc": "Developing specific goals and plans to prioritize, organize, and accomplish your work.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.3.a.1",
+  "name": "Performing General Physical Activities",
+  "desc": "Performing general physical activities includes doing activities that require considerable use of your arms and legs and moving your whole body, such as climbing, lifting, balancing, walking, stooping, and handling materials.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.3.a.2",
+  "name": "Handling and Moving Objects",
+  "desc": "Using hands and arms in handling, installing, positioning, and moving materials, and manipulating things.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.3.a.3",
+  "name": "Controlling Machines and Processes",
+  "desc": "Using either control mechanisms or direct physical activity to operate machines or processes (not including computers or vehicles).",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.3.a.4",
+  "name": "Operating Vehicles, Mechanized Devices, or Equipment",
+  "desc": "Running, maneuvering, navigating, or driving vehicles or mechanized equipment, such as forklifts, passenger vehicles, aircraft, or watercraft.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.3.b.1",
+  "name": "Working with Computers",
+  "desc": "Using computers and computer systems (including hardware and software) to program, write software, set up functions, enter data, or process information.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.3.b.2",
+  "name": "Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",
+  "desc": "Providing documentation, detailed instructions, drawings, or specifications to tell others about how devices, parts, equipment, or structures are to be fabricated, constructed, assembled, modified, maintained, or used.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.3.b.4",
+  "name": "Repairing and Maintaining Mechanical Equipment",
+  "desc": "Servicing, repairing, adjusting, and testing machines, devices, moving parts, and equipment that operate primarily on the basis of mechanical (not electronic) principles.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.3.b.5",
+  "name": "Repairing and Maintaining Electronic Equipment",
+  "desc": "Servicing, repairing, calibrating, regulating, fine-tuning, or testing machines, devices, and equipment that operate primarily on the basis of electrical or electronic (not mechanical) principles.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.3.b.6",
+  "name": "Documenting/Recording Information",
+  "desc": "Entering, transcribing, recording, storing, or maintaining information in written or electronic/magnetic form.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "4.A.4.a.1",
+  "name": "Interpreting the Meaning of Information for Others",
+  "desc": "Translating or explaining what information means and how it can be used.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.4.a.2",
+  "name": "Communicating with Supervisors, Peers, or Subordinates",
+  "desc": "Providing information to supervisors, co-workers, and subordinates by telephone, in written form, e-mail, or in person.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "4.A.4.a.3",
+  "name": "Communicating with People Outside the Organization",
+  "desc": "Communicating with people outside the organization, representing the organization to customers, the public, government, and other external sources. This information can be exchanged in person, in writing, or by telephone or e-mail.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "4.A.4.a.4",
+  "name": "Establishing and Maintaining Interpersonal Relationships",
+  "desc": "Developing constructive and cooperative working relationships with others, and maintaining them over time.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "4.A.4.a.5",
+  "name": "Assisting and Caring for Others",
+  "desc": "Providing personal assistance, medical attention, emotional support, or other personal care to others such as coworkers, customers, or patients.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "4.A.4.a.6",
+  "name": "Selling or Influencing Others",
+  "desc": "Convincing others to buy merchandise/goods or to otherwise change their minds or actions.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.4.a.7",
+  "name": "Resolving Conflicts and Negotiating with Others",
+  "desc": "Handling complaints, settling disputes, and resolving grievances and conflicts, or otherwise negotiating with others.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.4.a.8",
+  "name": "Performing for or Working Directly with the Public",
+  "desc": "Performing for people or dealing directly with the public. This includes serving customers in restaurants and stores, and receiving clients or guests.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "4.A.4.b.1",
+  "name": "Coordinating the Work and Activities of Others",
+  "desc": "Getting members of a group to work together to accomplish tasks.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "4.A.4.b.2",
+  "name": "Developing and Building Teams",
+  "desc": "Encouraging and building mutual trust, respect, and cooperation among team members.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.4.b.3",
+  "name": "Training and Teaching Others",
+  "desc": "Identifying the educational needs of others, developing formal educational or training programs or classes, and teaching or instructing others.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "4.A.4.b.4",
+  "name": "Guiding, Directing, and Motivating Subordinates",
+  "desc": "Providing guidance and direction to subordinates, including setting performance standards and monitoring performance.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "4.A.4.b.5",
+  "name": "Coaching and Developing Others",
+  "desc": "Identifying the developmental needs of others and coaching, mentoring, or otherwise helping others to improve their knowledge or skills.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "4.A.4.b.6",
+  "name": "Providing Consultation and Advice to Others",
+  "desc": "Providing guidance and expert advice to management or other groups on technical, systems-, or process-related topics.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.A.4.c.1",
+  "name": "Performing Administrative Activities",
+  "desc": "Performing day-to-day administrative tasks such as maintaining information files and processing paperwork.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "4.A.4.c.2",
+  "name": "Staffing Organizational Units",
+  "desc": "Recruiting, interviewing, selecting, hiring, and promoting employees in an organization.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "4.A.4.c.3",
+  "name": "Monitoring and Controlling Resources",
+  "desc": "Monitoring and controlling resources and overseeing the spending of money.",
+  "file": "Work Activities",
+  "n_occ": 894,
+  "scales": [
+   "IM",
+   "LV"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "4.C.1.a.2.c",
+  "name": "Public Speaking",
+  "desc": "How frequently does your job require public speaking (one speaker with an audience)?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.1.a.2.f",
+  "name": "Telephone Conversations",
+  "desc": "How often do you have telephone conversations in this job?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.1.a.2.h",
+  "name": "E-Mail",
+  "desc": "How frequently does your job require you to use E-mail?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.1.a.2.j",
+  "name": "Written Letters and Memos",
+  "desc": "How frequently does your job require written letters and memos?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "4.C.1.a.2.l",
+  "name": "Face-to-Face Discussions with Individuals and Within Teams",
+  "desc": "How frequently does your job require face-to-face discussions with individuals and within teams?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.1.a.4",
+  "name": "Contact With Others",
+  "desc": "How much does this job require the worker to be in contact with others (face-to-face, by telephone, or otherwise) in order to perform it?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.1.b.1.e",
+  "name": "Work With or Contribute to a Work Group or Team",
+  "desc": "How important is it to work with or contribute to a work group or team in this job?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.1.b.1.f",
+  "name": "Deal With External Customers or the Public in General",
+  "desc": "How important is it to deal with external customers (as in retail sales) or the public in general (as in police work) in this job?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.1.b.1.g",
+  "name": "Coordinate or Lead Others in Accomplishing Work Activities",
+  "desc": "How important is it to coordinate or lead others (not as a supervisor or team leader) in accomplishing work activities in this job?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.1.c.1",
+  "name": "Health and Safety of Other Workers",
+  "desc": "How much responsibility is there for the health and safety of others in this job?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.1.c.2",
+  "name": "Work Outcomes and Results of Other Workers",
+  "desc": "How responsible is the worker for work outcomes and results of other workers?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.1.d.1",
+  "name": "Conflict Situations",
+  "desc": "How frequently are there conflict situations the employee has to face in this job?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.1.d.2",
+  "name": "Dealing With Unpleasant, Angry, or Discourteous People",
+  "desc": "How frequently does the worker have to deal with unpleasant, angry, or discourteous individuals as part of the job requirements?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.1.d.3",
+  "name": "Dealing with Violent or Physically Aggressive People",
+  "desc": "How frequently does this job require the worker to deal with physical aggression of violent individuals?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.a.1.a",
+  "name": "Indoors, Environmentally Controlled",
+  "desc": "How often does this job require working indoors in an environmentally controlled environment (like a warehouse with air conditioning)?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.a.1.b",
+  "name": "Indoors, Not Environmentally Controlled",
+  "desc": "How often does this job require working in an environment that is not environmentally controlled (like a warehouse without air conditioning)?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.a.1.c",
+  "name": "Outdoors, Exposed to All Weather Conditions",
+  "desc": "How often does this job require working outdoors, exposed to all weather conditions?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.a.1.d",
+  "name": "Outdoors, Under Cover",
+  "desc": "How often does this job require working outdoors, under cover (like in an open shed)?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.a.1.e",
+  "name": "In an Open Vehicle or Operating Equipment",
+  "desc": "How often does this job require working in an open vehicle or operating equipment (like a tractor)?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.a.1.f",
+  "name": "In an Enclosed Vehicle or Operate Enclosed Equipment",
+  "desc": "How often does this job require working in a closed vehicle or operate enclosed equipment (like a car)?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.a.3",
+  "name": "Physical Proximity",
+  "desc": "To what extent does this job require the worker to perform job tasks physically close to other people?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.b.1.a",
+  "name": "Exposed to Sounds, Noise Levels that are Distracting or Uncomfortable",
+  "desc": "How often does this job require working exposed to sounds and noise levels that are distracting or uncomfortable?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.b.1.b",
+  "name": "Exposed to Very Hot or Cold Temperatures",
+  "desc": "How often does this job require working in very hot (above 90 F degrees) or very cold (below 32 F degrees) temperatures?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.b.1.c",
+  "name": "Exposed to Extremely Bright or Inadequate Lighting Conditions",
+  "desc": "How often does this job require working in extremely bright or inadequate lighting conditions?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.b.1.d",
+  "name": "Exposed to Contaminants",
+  "desc": "How often does this job require working exposed to contaminants (such as pollutants, gases, dust or odors)?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.b.1.e",
+  "name": "Exposed to Cramped Work Space, Awkward Positions",
+  "desc": "How often does this job require working in cramped work spaces that requires getting into awkward positions?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.b.1.f",
+  "name": "Exposed to Whole Body Vibration",
+  "desc": "How often does this job require exposure to whole body vibration (like operating a jackhammer or earth moving equipment)?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.c.1.a",
+  "name": "Exposed to Radiation",
+  "desc": "How often does this job require exposure to radiation?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.c.1.b",
+  "name": "Exposed to Disease or Infections",
+  "desc": "How often does this job require exposure to disease/infections?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.c.1.c",
+  "name": "Exposed to High Places",
+  "desc": "How often does this job require exposure to high places?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.c.1.d",
+  "name": "Exposed to Hazardous Conditions",
+  "desc": "How often does this job require exposure to hazardous conditions?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.c.1.e",
+  "name": "Exposed to Hazardous Equipment",
+  "desc": "How often does this job require exposure to hazardous equipment?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.c.1.f",
+  "name": "Exposed to Minor Burns, Cuts, Bites, or Stings",
+  "desc": "How often does this job require exposure to minor burns, cuts, bites, or stings?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.d.1.a",
+  "name": "Spend Time Sitting",
+  "desc": "How much does this job require sitting?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.d.1.b",
+  "name": "Spend Time Standing",
+  "desc": "How much does this job require standing?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.d.1.c",
+  "name": "Spend Time Climbing Ladders, Scaffolds, or Poles",
+  "desc": "How much does this job require climbing ladders, scaffolds, poles, etc.?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.d.1.d",
+  "name": "Spend Time Walking or Running",
+  "desc": "How much does this job require walking or running?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.d.1.e",
+  "name": "Spend Time Kneeling, Crouching, Stooping, or Crawling",
+  "desc": "How much does this job require kneeling, crouching, stooping or crawling?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.d.1.f",
+  "name": "Spend Time Keeping or Regaining Balance",
+  "desc": "How much does this job require keeping or regaining your balance?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.d.1.g",
+  "name": "Spend Time Using Your Hands to Handle, Control, or Feel Objects, Tools, or Controls",
+  "desc": "How much does this job require using your hands to handle, control, or feel objects, tools or controls?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.d.1.h",
+  "name": "Spend Time Bending or Twisting Your Body",
+  "desc": "How much does this job require bending or twisting your body?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.d.1.i",
+  "name": "Spend Time Making Repetitive Motions",
+  "desc": "How much does this job require making repetitive motions?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.e.1.d",
+  "name": "Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets",
+  "desc": "How often does this job require wearing common protective or safety equipment such as safety shoes, glasses, gloves, hearing protection, hard hats or life-jackets?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.2.e.1.e",
+  "name": "Wear Specialized Protective or Safety Equipment such as Breathing Apparatus, Safety Harness, Full Protection Suits, or Radiation Protection",
+  "desc": "How often does this job require wearing specialized protective or safety equipment such as breathing apparatus, safety harness, full protection suits, or radiation protection?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.3.a.1",
+  "name": "Consequence of Error",
+  "desc": "How serious would the result usually be if the worker made a mistake that was not easily correctable?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.3.a.2.a",
+  "name": "Impact of Decisions on Co-workers or Company Results",
+  "desc": "What results do your decisions usually have on other people or the image or reputation or financial resources of your employer?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.3.a.2.b",
+  "name": "Frequency of Decision Making",
+  "desc": "How often is the worker required to make decisions that affect other people, the financial resources, and/or the image and reputation of the organization?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.3.a.4",
+  "name": "Freedom to Make Decisions",
+  "desc": "How much decision making freedom, without supervision, does the job offer?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "4.C.3.b.2",
+  "name": "Degree of Automation",
+  "desc": "How automated is the job?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.3.b.4",
+  "name": "Importance of Being Exact or Accurate",
+  "desc": "How important is being very exact or highly accurate in performing this job?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.3.b.7",
+  "name": "Importance of Repeating Same Tasks",
+  "desc": "How important are continuous, repetitive, physical activities (like key entry) or mental activities (like checking entries in a ledger) to performing this job?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.3.b.8",
+  "name": "Determine Tasks, Priorities and Goals",
+  "desc": "How much freedom does the worker have in determining the tasks, priorities, or goals of the job?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": true
+ },
+ {
+  "id": "4.C.3.c.1",
+  "name": "Level of Competition",
+  "desc": "To what extent does this job require the worker to compete or to be aware of competitive pressures?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.3.d.1",
+  "name": "Time Pressure",
+  "desc": "How often does this job require the worker to meet strict deadlines?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.3.d.3",
+  "name": "Pace Determined by Speed of Equipment",
+  "desc": "How important is it to this job that the pace is determined by the speed of equipment or machinery? (This does not refer to keeping busy at all times on this job.)",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.3.d.4",
+  "name": "Work Schedules",
+  "desc": "How regular are the work schedules for this job?",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "4.C.3.d.8",
+  "name": "Duration of Typical Work Week",
+  "desc": "Number of hours typically worked in one week.",
+  "file": "Work Context",
+  "n_occ": 894,
+  "scales": [
+   "CT",
+   "CTP",
+   "CX",
+   "CXP"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.1.a",
+  "name": "Innovation",
+  "desc": "A tendency to be inventive, to be imaginative, and to adopt new perspectives on ways to accomplish work.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.1.b",
+  "name": "Achievement Orientation",
+  "desc": "A tendency to establish and maintain personally challenging work-related goals, set high work-related standards, and exert high effort toward meeting those goals and standards.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.1.c",
+  "name": "Intellectual Curiosity",
+  "desc": "A tendency to seek out and acquire new work-related knowledge and obtain a deep understanding of work-related subjects.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.1.d",
+  "name": "Tolerance for Ambiguity",
+  "desc": "A tendency to be comfortable with ambiguity and uncertainty at work.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.1.e",
+  "name": "Initiative",
+  "desc": "A tendency to be proactive and take on extra responsibilities and tasks that may fall outside of one's required work role.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.1.f",
+  "name": "Adaptability",
+  "desc": "A tendency to be open to and comfortable with change, new experiences, or ideas at work.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.1.g",
+  "name": "Self-Confidence",
+  "desc": "A tendency to believe in one's work-related capabilities and ability to control one's work-related outcomes.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.1.h",
+  "name": "Perseverance",
+  "desc": "A tendency to exhibit determination and resolve to perform or complete tasks in the face of difficult circumstances or obstacles at work.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.1.i",
+  "name": "Leadership Orientation",
+  "desc": "A tendency to lead, take charge, offer opinions, and provide direction at work.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.2.a",
+  "name": "Humility",
+  "desc": "A tendency to be modest and humble when interacting with others at work.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.2.b",
+  "name": "Sincerity",
+  "desc": "A tendency to be genuine and sincere in interactions with others at work, without concern for personal gain or self-interest.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.2.c",
+  "name": "Empathy",
+  "desc": "A tendency to show concern for others and be sensitive to others' needs and feelings at work.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.2.d",
+  "name": "Cooperation",
+  "desc": "A tendency to be pleasant, helpful, and willing to assist others at work.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.2.e",
+  "name": "Optimism",
+  "desc": "A tendency to exhibit a positive attitude and positive emotions at work, even under difficult circumstances.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.2.f",
+  "name": "Social Orientation",
+  "desc": "A tendency to seek out, enjoy, and be energized by social interaction at work.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.3.a",
+  "name": "Cautiousness",
+  "desc": "A tendency to be careful, deliberate, and risk-avoidant when making work-related decisions or doing work.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.3.b",
+  "name": "Attention to Detail",
+  "desc": "A tendency to be detail-oriented, organized, and thorough in completing work.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.3.c",
+  "name": "Dependability",
+  "desc": "A tendency to be reliable, responsible, and consistent in meeting work-related obligations.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.3.d",
+  "name": "Integrity",
+  "desc": "A tendency to be honest and ethical at work.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.4.a",
+  "name": "Stress Tolerance",
+  "desc": "A tendency to cope and function effectively in stressful situations at work.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ },
+ {
+  "id": "1.D.4.b",
+  "name": "Self-Control",
+  "desc": "A tendency to remain calm and composed and to manage emotions effectively in response to criticism or difficult situations at work.",
+  "file": "Work Styles",
+  "n_occ": 891,
+  "scales": [
+   "DR",
+   "WI"
+  ],
+  "in_instrument": false
+ }
+]

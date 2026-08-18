@@ -1,0 +1,345 @@
+[
+ {
+  "id": "1.A.1.b.1",
+  "name": "Fluency of Ideas",
+  "desc": "The ability to come up with a number of ideas about a topic (the number of ideas is important, not their quality, correctness, or creativity).",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.1.b.7",
+  "name": "Category Flexibility",
+  "desc": "The ability to generate or use different sets of rules for combining or grouping things in different ways.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.1.e.3",
+  "name": "Perceptual Speed",
+  "desc": "The ability to quickly and accurately compare similarities and differences among sets of letters, numbers, objects, pictures, or patterns. The things to be compared may be presented at the same time or one after the other. This ability also includes comparing ",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.2.a.2",
+  "name": "Manual Dexterity",
+  "desc": "The ability to quickly move your hand, your hand together with your arm, or your two hands to grasp, manipulate, or assemble objects.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.2.c.1",
+  "name": "Reaction Time",
+  "desc": "The ability to quickly respond (with the hand, finger, or foot) to a signal (sound, light, picture) when it appears.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.3.a.4",
+  "name": "Trunk Strength",
+  "desc": "The ability to use your abdominal and lower back muscles to support part of the body repeatedly or continuously over time without \"giving out\" or fatiguing.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.4.a.1",
+  "name": "Near Vision",
+  "desc": "The ability to see details at close range (within a few feet of the observer).",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.4.a.7",
+  "name": "Glare Sensitivity",
+  "desc": "The ability to see objects in the presence of a glare or bright lighting.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.B.1.a",
+  "name": "Realistic",
+  "desc": "Work involves designing, building, or repairing of equipment, materials, or structures, engaging in physical activity, or working outdoors. Realistic occupations are often associated with engineering, mechanics and electronics, construction, woodworking, trans",
+  "file": "Career Interest Types",
+  "n_occ": 923
+ },
+ {
+  "id": "1.B.1.g",
+  "name": "First Interest High-Point",
+  "desc": "Primary-Rank Descriptiveness",
+  "file": "Career Interest Types",
+  "n_occ": 923
+ },
+ {
+  "id": "2.A.1.b",
+  "name": "Active Listening",
+  "desc": "Giving full attention to what other people are saying, taking time to understand the points being made, asking questions as appropriate, and not interrupting at inappropriate times.",
+  "file": "Essential Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.A.2.b",
+  "name": "Active Learning",
+  "desc": "Understanding the implications of new information for both current and future problem-solving and decision-making.",
+  "file": "Essential Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.1.d",
+  "name": "Sales and Marketing",
+  "desc": "Knowledge of principles and methods for showing, promoting, and selling products or services. This includes marketing strategy and tactics, product demonstration, sales techniques, and sales control systems.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.3.a",
+  "name": "Computers and Electronics",
+  "desc": "Knowledge of circuit boards, processors, chips, electronic equipment, and computer hardware and software, including applications and programming.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.4.b",
+  "name": "Physics",
+  "desc": "Knowledge and prediction of physical principles, laws, their interrelationships, and applications to understanding fluid, material, and atmospheric dynamics, and mechanical, electrical, atomic and sub-atomic structures and processes.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.5.a",
+  "name": "Medicine and Dentistry",
+  "desc": "Knowledge of the information and techniques needed to diagnose and treat human injuries, diseases, and deformities. This includes symptoms, treatment alternatives, drug properties and interactions, and preventive health-care measures.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.7.d",
+  "name": "History and Archeology",
+  "desc": "Knowledge of historical events and their causes, indicators, and effects on civilizations and cultures.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "1.B.3.a",
+  "name": "Mechanics/Electronics",
+  "desc": "Work involves maintaining and repairing of machinery, such as automotive engines, electronic equipment, computers, and communication systems.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.af",
+  "name": "Sales",
+  "desc": "Work involves selling goods or services.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.al",
+  "name": "Management/Administration",
+  "desc": "Work involves planning, directing, or coordinating the daily operations of an organization, and overseeing personnel, business, or administrative services.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.d",
+  "name": "Physical/Manual Labor",
+  "desc": "Work involves manually unloading and moving freight, stock, luggage, or other materials, or performing other physical labor.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.j",
+  "name": "Engineering",
+  "desc": "Work involves applying science and technology to the design, building, testing, and use of electrical and electronic components, mechanical devices and machines, automotive, marine, and aerospace equipment and vehicles, materials, or structures.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.p",
+  "name": "Mathematics/Statistics",
+  "desc": "Work involves developing and applying mathematics and statistical theory and methods.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.v",
+  "name": "Creative Writing",
+  "desc": "Work involves developing creative written works, such as novels, scripts, song lyrics, poetry, stories, or advertisements.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "3.A.2",
+  "name": "On-Site or In-Plant Training",
+  "desc": "Amount of on-site or in-plant training (e.g., organized class room instruction) required to perform the job?",
+  "file": "Training and Experience",
+  "n_occ": 878
+ },
+ {
+  "id": "2.B.1.d",
+  "name": "Negotiation",
+  "desc": "Bringing others together and trying to reconcile differences.",
+  "file": "Transferable Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.B.3.c",
+  "name": "Equipment Selection",
+  "desc": "Determining the kind of tools and equipment needed to do a job.",
+  "file": "Transferable Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.B.3.k",
+  "name": "Troubleshooting",
+  "desc": "Determining causes of operating errors and deciding what to do about it.",
+  "file": "Transferable Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.B.5.a",
+  "name": "Time Management",
+  "desc": "Managing one's own time and the time of others.",
+  "file": "Transferable Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.1.b.1",
+  "name": "Identifying Objects, Actions, and Events",
+  "desc": "Identifying information by categorizing, estimating, recognizing differences or similarities, and detecting changes in circumstances or events.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.2.a.4",
+  "name": "Analyzing Data or Information",
+  "desc": "Identifying the underlying principles, reasons, or facts of information by breaking down information or data into separate parts.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.2.b.6",
+  "name": "Organizing, Planning, and Prioritizing Work",
+  "desc": "Developing specific goals and plans to prioritize, organize, and accomplish your work.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.3.b.2",
+  "name": "Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",
+  "desc": "Providing documentation, detailed instructions, drawings, or specifications to tell others about how devices, parts, equipment, or structures are to be fabricated, constructed, assembled, modified, maintained, or used.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.4.a.3",
+  "name": "Communicating with People Outside the Organization",
+  "desc": "Communicating with people outside the organization, representing the organization to customers, the public, government, and other external sources. This information can be exchanged in person, in writing, or by telephone or e-mail.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.4.b.1",
+  "name": "Coordinating the Work and Activities of Others",
+  "desc": "Getting members of a group to work together to accomplish tasks.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.4.c.1",
+  "name": "Performing Administrative Activities",
+  "desc": "Performing day-to-day administrative tasks such as maintaining information files and processing paperwork.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.1.a.2.j",
+  "name": "Written Letters and Memos",
+  "desc": "How frequently does your job require written letters and memos?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.1.c.1",
+  "name": "Health and Safety of Other Workers",
+  "desc": "How much responsibility is there for the health and safety of others in this job?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.a.1.b",
+  "name": "Indoors, Not Environmentally Controlled",
+  "desc": "How often does this job require working in an environment that is not environmentally controlled (like a warehouse without air conditioning)?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.b.1.a",
+  "name": "Exposed to Sounds, Noise Levels that are Distracting or Uncomfortable",
+  "desc": "How often does this job require working exposed to sounds and noise levels that are distracting or uncomfortable?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.c.1.a",
+  "name": "Exposed to Radiation",
+  "desc": "How often does this job require exposure to radiation?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.d.1.a",
+  "name": "Spend Time Sitting",
+  "desc": "How much does this job require sitting?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.d.1.g",
+  "name": "Spend Time Using Your Hands to Handle, Control, or Feel Objects, Tools, or Controls",
+  "desc": "How much does this job require using your hands to handle, control, or feel objects, tools or controls?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.3.a.2.a",
+  "name": "Impact of Decisions on Co-workers or Company Results",
+  "desc": "What results do your decisions usually have on other people or the image or reputation or financial resources of your employer?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.3.b.8",
+  "name": "Determine Tasks, Priorities and Goals",
+  "desc": "How much freedom does the worker have in determining the tasks, priorities, or goals of the job?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "1.D.1.a",
+  "name": "Innovation",
+  "desc": "A tendency to be inventive, to be imaginative, and to adopt new perspectives on ways to accomplish work.",
+  "file": "Work Styles",
+  "n_occ": 891
+ },
+ {
+  "id": "1.D.1.g",
+  "name": "Self-Confidence",
+  "desc": "A tendency to believe in one's work-related capabilities and ability to control one's work-related outcomes.",
+  "file": "Work Styles",
+  "n_occ": 891
+ },
+ {
+  "id": "1.D.2.d",
+  "name": "Cooperation",
+  "desc": "A tendency to be pleasant, helpful, and willing to assist others at work.",
+  "file": "Work Styles",
+  "n_occ": 891
+ },
+ {
+  "id": "1.D.3.d",
+  "name": "Integrity",
+  "desc": "A tendency to be honest and ethical at work.",
+  "file": "Work Styles",
+  "n_occ": 891
+ }
+]

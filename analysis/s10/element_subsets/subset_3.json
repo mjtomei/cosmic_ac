@@ -1,0 +1,345 @@
+[
+ {
+  "id": "1.A.1.a.4",
+  "name": "Written Expression",
+  "desc": "The ability to communicate information and ideas in writing so others will understand.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.1.b.6",
+  "name": "Information Ordering",
+  "desc": "The ability to arrange things or actions in a certain order or pattern according to a specific rule or set of rules (e.g., patterns of numbers, letters, words, pictures, mathematical operations).",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.1.e.2",
+  "name": "Flexibility of Closure",
+  "desc": "The ability to identify or detect a known pattern (a figure, object, word, or sound) that is hidden in other distracting material.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.2.a.1",
+  "name": "Arm-Hand Steadiness",
+  "desc": "The ability to keep your hand and arm steady while moving your arm or while holding your arm and hand in one position.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.2.b.4",
+  "name": "Rate Control",
+  "desc": "The ability to time your movements or the movement of a piece of equipment in anticipation of changes in the speed and/or direction of a moving object or scene.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.3.a.3",
+  "name": "Dynamic Strength",
+  "desc": "The ability to exert muscle force repeatedly or continuously over time. This involves muscular endurance and resistance to muscle fatigue.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.3.c.4",
+  "name": "Gross Body Equilibrium",
+  "desc": "The ability to keep or regain your body balance or stay upright when in an unstable position.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.4.a.6",
+  "name": "Depth Perception",
+  "desc": "The ability to judge which of several objects is closer or farther away from you, or to judge the distance between you and an object.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.A.4.b.5",
+  "name": "Speech Clarity",
+  "desc": "The ability to speak clearly so others can understand you.",
+  "file": "Abilities",
+  "n_occ": 894
+ },
+ {
+  "id": "1.B.1.f",
+  "name": "Conventional",
+  "desc": "Work involves following procedures and regulations to organize information or data, typically in a business setting. Conventional occupations are often associated with office work, accounting, mathematics/statistics, information technology, finance, or human r",
+  "file": "Career Interest Types",
+  "n_occ": 923
+ },
+ {
+  "id": "2.A.1.a",
+  "name": "Reading Comprehension",
+  "desc": "Understanding written sentences and paragraphs in work-related documents.",
+  "file": "Essential Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.A.2.a",
+  "name": "Critical Thinking",
+  "desc": "Using logic and reasoning to identify the strengths and weaknesses of alternative solutions, conclusions, or approaches to problems.",
+  "file": "Essential Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.1.c",
+  "name": "Economics and Accounting",
+  "desc": "Knowledge of economic and accounting principles and practices, the financial markets, banking, and the analysis and reporting of financial data.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.2.b",
+  "name": "Food Production",
+  "desc": "Knowledge of techniques and equipment for planting, growing, and harvesting food products (both plant and animal) for consumption, including storage/handling techniques.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.4.a",
+  "name": "Mathematics",
+  "desc": "Knowledge of arithmetic, algebra, geometry, calculus, statistics, and their applications.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.4.g",
+  "name": "Geography",
+  "desc": "Knowledge of principles and methods for describing the features of land, sea, and air masses, including their physical characteristics, locations, interrelationships, and distribution of plant, animal, and human life.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.7.c",
+  "name": "Fine Arts",
+  "desc": "Knowledge of the theory and techniques required to compose, produce, and perform works of music, dance, visual arts, drama, and sculpture.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "2.C.9.b",
+  "name": "Communications and Media",
+  "desc": "Knowledge of media production, communication, and dissemination techniques and methods. This includes alternative ways to inform and entertain via written, oral, and visual media.",
+  "file": "Knowledge",
+  "n_occ": 894
+ },
+ {
+  "id": "1.B.3.ae",
+  "name": "Business Initiatives",
+  "desc": "Work involves creating strategic plans or taking actions to expand an organization's business or market share.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.ak",
+  "name": "Office Work",
+  "desc": "Work involves clerical and administrative tasks for an organization such as answering phones, bookkeeping, updating records, scheduling appointments or meetings, and editing of documents and files.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.c",
+  "name": "Transportation/Machine Operation",
+  "desc": "Work involves driving vehicles, such as vans, trucks, trains, and buses to transport people or materials. Work can also involve operating heavy equipment, such as cranes, forklifts, bulldozers, and backhoes to move materials or earth.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.i",
+  "name": "Athletics",
+  "desc": "Work involves training, practicing, or competing in athletic events, or supporting those participating in athletics through coaching, training, or officiating.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.o",
+  "name": "Humanities",
+  "desc": "Work involves studying and researching aspects of human history, culture, and language through disciplines such as history, philosophy, the language arts, or area/ethnic studies.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "1.B.3.u",
+  "name": "Music",
+  "desc": "Work involves conducting, composing, or playing music or singing.",
+  "file": "Specific Interest Areas",
+  "n_occ": 891
+ },
+ {
+  "id": "3.A.1",
+  "name": "Related Work Experience",
+  "desc": "Amount of related work experience required to get hired for the job?",
+  "file": "Training and Experience",
+  "n_occ": 878
+ },
+ {
+  "id": "2.B.1.c",
+  "name": "Persuasion",
+  "desc": "Persuading others to change their minds or behavior.",
+  "file": "Transferable Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.B.3.b",
+  "name": "Technology Design",
+  "desc": "Generating or adapting equipment and technology to serve user needs.",
+  "file": "Transferable Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.B.3.j",
+  "name": "Equipment Maintenance",
+  "desc": "Performing routine maintenance on equipment and determining when and what kind of maintenance is needed.",
+  "file": "Transferable Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "2.B.4.h",
+  "name": "Systems Evaluation",
+  "desc": "Identifying measures or indicators of system performance and the actions needed to improve or correct performance, relative to the goals of the system.",
+  "file": "Transferable Skills",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.1.a.2",
+  "name": "Monitoring Processes, Materials, or Surroundings",
+  "desc": "Monitoring and reviewing information from materials, events, or the environment, to detect or assess problems.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.2.a.3",
+  "name": "Evaluating Information to Determine Compliance with Standards",
+  "desc": "Using relevant information and individual judgment to determine whether events or processes comply with laws, regulations, or standards.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.2.b.5",
+  "name": "Scheduling Work and Activities",
+  "desc": "Scheduling events, programs, and activities, as well as the work of others.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.3.b.1",
+  "name": "Working with Computers",
+  "desc": "Using computers and computer systems (including hardware and software) to program, write software, set up functions, enter data, or process information.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.4.a.2",
+  "name": "Communicating with Supervisors, Peers, or Subordinates",
+  "desc": "Providing information to supervisors, co-workers, and subordinates by telephone, in written form, e-mail, or in person.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.4.a.8",
+  "name": "Performing for or Working Directly with the Public",
+  "desc": "Performing for people or dealing directly with the public. This includes serving customers in restaurants and stores, and receiving clients or guests.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.A.4.b.6",
+  "name": "Providing Consultation and Advice to Others",
+  "desc": "Providing guidance and expert advice to management or other groups on technical, systems-, or process-related topics.",
+  "file": "Work Activities",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.1.a.2.h",
+  "name": "E-Mail",
+  "desc": "How frequently does your job require you to use E-mail?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.1.b.1.g",
+  "name": "Coordinate or Lead Others in Accomplishing Work Activities",
+  "desc": "How important is it to coordinate or lead others (not as a supervisor or team leader) in accomplishing work activities in this job?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.a.1.a",
+  "name": "Indoors, Environmentally Controlled",
+  "desc": "How often does this job require working indoors in an environmentally controlled environment (like a warehouse with air conditioning)?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.a.3",
+  "name": "Physical Proximity",
+  "desc": "To what extent does this job require the worker to perform job tasks physically close to other people?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.b.1.f",
+  "name": "Exposed to Whole Body Vibration",
+  "desc": "How often does this job require exposure to whole body vibration (like operating a jackhammer or earth moving equipment)?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.c.1.f",
+  "name": "Exposed to Minor Burns, Cuts, Bites, or Stings",
+  "desc": "How often does this job require exposure to minor burns, cuts, bites, or stings?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.2.d.1.f",
+  "name": "Spend Time Keeping or Regaining Balance",
+  "desc": "How much does this job require keeping or regaining your balance?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.3.a.1",
+  "name": "Consequence of Error",
+  "desc": "How serious would the result usually be if the worker made a mistake that was not easily correctable?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.3.b.7",
+  "name": "Importance of Repeating Same Tasks",
+  "desc": "How important are continuous, repetitive, physical activities (like key entry) or mental activities (like checking entries in a ledger) to performing this job?",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "4.C.3.d.8",
+  "name": "Duration of Typical Work Week",
+  "desc": "Number of hours typically worked in one week.",
+  "file": "Work Context",
+  "n_occ": 894
+ },
+ {
+  "id": "1.D.1.f",
+  "name": "Adaptability",
+  "desc": "A tendency to be open to and comfortable with change, new experiences, or ideas at work.",
+  "file": "Work Styles",
+  "n_occ": 891
+ },
+ {
+  "id": "1.D.2.c",
+  "name": "Empathy",
+  "desc": "A tendency to show concern for others and be sensitive to others' needs and feelings at work.",
+  "file": "Work Styles",
+  "n_occ": 891
+ },
+ {
+  "id": "1.D.3.c",
+  "name": "Dependability",
+  "desc": "A tendency to be reliable, responsible, and consistent in meeting work-related obligations.",
+  "file": "Work Styles",
+  "n_occ": 891
+ }
+]
