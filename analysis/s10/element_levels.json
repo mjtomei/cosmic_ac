@@ -1,0 +1,1088 @@
+{
+ "nominations": 252,
+ "consensus": 85,
+ "singletons": 14,
+ "per_level": {
+  "TOP": 34,
+  "MIDDLE": 27,
+  "BOTTOM": 13,
+  "FREE": 11
+ },
+ "consensus_pairs": [
+  {
+   "id": "1.B.1.e",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 2,
+   "n": 3,
+   "why": [
+    "Managing/leading/negotiating interest is highest for executives and proprietors; interest evidence, but separates TOP from BOTTOM clearly.",
+    "Enterprising interest (managing, leading, business initiatives) peaks in executive occupations; interest evidence, but separates TOP+MIDDLE from BOTTOM",
+    "Interest rating, but managing/leading/negotiating content directly indicates directing an enterprise; separates TOP (and MIDDLE) from BOTTOM"
+   ]
+  },
+  {
+   "id": "1.B.1.e",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 2,
+   "n": 3,
+   "why": [
+    "Managerial occupations code Enterprising, separating MIDDLE from BOTTOM, but less strongly than TOP; interest rating.",
+    "Managers rate high on Enterprising, though less than the apex; interest rating so weaker evidence",
+    "Managerial occupations load Enterprising, but weaker than TOP and it is an interest rating"
+   ]
+  },
+  {
+   "id": "1.B.3.ae",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 3,
+   "n": 3,
+   "why": [
+    "Strategic plans to expand the organisation is apex work; separates TOP from BOTTOM and most MIDDLE (interest rating, so weaker)",
+    "Strategic planning to expand an organization's business is apex work; separates TOP from BOTTOM, and partly from MIDDLE; interest rating so confidence tempered",
+    "Creating strategic plans to expand the organization is apex work; separates TOP from BOTTOM and most MIDDLE (interest rating, so confidence capped)"
+   ]
+  },
+  {
+   "id": "1.B.3.aj",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 2,
+   "n": 3,
+   "why": [
+    "Recruiting, performance reviews and compensation administration are people-management tasks concentrated in MIDDLE (HR and line managers), separating MIDDLE from BOTTOM and FREE; interest-area rating.",
+    "HR interest (recruiting, performance reviews, compensation) tracks personnel-management functions of middle management, but the rating concentrates in HR-specialist occupations specifically; interest evidence",
+    "Recruiting, compensation and performance reviews are mid-management personnel functions; interest rating, so weak; separates MIDDLE from BOTTOM/FREE"
+   ]
+  },
+  {
+   "id": "1.B.3.ak",
+   "level": "BOTTOM",
+   "sign": "+",
+   "subset": 3,
+   "n": 3,
+   "why": [
+    "Clerical/administrative task content marks base office positions; separates BOTTOM from FREE and TOP (interest rating, so weaker)",
+    "Clerical/administrative task content marks clerks and junior office staff; separates BOTTOM from FREE and TOP; interest rating",
+    "Clerical/administrative tasks under direction mark the organizational base; separates BOTTOM from FREE and TOP (interest rating)"
+   ]
+  },
+  {
+   "id": "1.B.3.al",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 4,
+   "n": 3,
+   "why": [
+    "Interest area but described as planning/directing operations and overseeing personnel \u2014 directly names managerial work; separates MIDDLE+TOP from others; interest rating so confidence moderated",
+    "Work-involves planning/directing operations and overseeing personnel is the managerial content itself, though rated as an interest; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Same directing/overseeing content marks MIDDLE managers; interest rating so confidence capped at medium."
+   ]
+  },
+  {
+   "id": "1.B.3.al",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 4,
+   "n": 3,
+   "why": [
+    "Directing and coordinating an organisation's operations is definitional of the apex; separates MIDDLE+TOP from BOTTOM/FREE; interest rating",
+    "Directing daily operations of an organisation describes the apex as well as middle management; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Interest area is literally planning/directing operations and overseeing personnel; separates MIDDLE+TOP from BOTTOM+FREE, but interest ratings are weaker evidence."
+   ]
+  },
+  {
+   "id": "1.D.1.i",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 0,
+   "n": 3,
+   "why": [
+    "Tendency to take charge and provide direction is required at the apex; separates TOP+MIDDLE from BOTTOM (work style, so weaker than an activity).",
+    "Providing direction is the apex job itself; separates TOP (with MIDDLE) from BOTTOM+FREE.",
+    "Leading and directing is the apex's defining activity; separates TOP from BOTTOM."
+   ]
+  },
+  {
+   "id": "1.D.1.i",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 0,
+   "n": 3,
+   "why": [
+    "Providing direction to subordinates marks any supervisory position; separates MIDDLE+TOP from BOTTOM.",
+    "Tendency to take charge and provide direction is required where the job includes managing below; separates MIDDLE+TOP from BOTTOM (work-style rating, so slightly weaker than an activity).",
+    "Tendency to take charge and provide direction marks supervisory roles; separates MIDDLE and TOP from BOTTOM (work-style rating, hence medium)."
+   ]
+  },
+  {
+   "id": "2.B.4.e",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 1,
+   "n": 3,
+   "why": [
+    "Weighing costs and benefits of organisational actions is concentrated at the apex; helps separate TOP from MIDDLE and BOTTOM, though skilled professionals dilute it",
+    "Cost-benefit decision authority peaks at the apex, but it is a capacity-style skill also high for front-line professionals; weakly separates TOP from BOTTOM",
+    "Cost-benefit decision-making with organisational scope peaks at the apex; separates TOP from BOTTOM, weakly from MIDDLE (skill element, so weaker evidence)"
+   ]
+  },
+  {
+   "id": "2.B.5.b",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 5,
+   "n": 3,
+   "why": [
+    "Deciding how the organisation's money is spent is apex work; leans TOP over MIDDLE, so helps separate MIDDLE from TOP",
+    "Deciding how the organization's money is spent peaks at the apex; separates TOP from BOTTOM and helps separate TOP from MIDDLE",
+    "Budget authority peaks at the apex; separates TOP from BOTTOM and partly from MIDDLE (functional managers vary)"
+   ]
+  },
+  {
+   "id": "2.B.5.b",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 5,
+   "n": 3,
+   "why": [
+    "Department heads and finance/HR managers hold budgets; separates MIDDLE+TOP from BOTTOM",
+    "Department heads hold budgets; separates MIDDLE+TOP from BOTTOM",
+    "Department heads control budgets; separates MIDDLE/TOP from BOTTOM"
+   ]
+  },
+  {
+   "id": "2.B.5.b",
+   "level": "FREE",
+   "sign": "+",
+   "subset": 5,
+   "n": 3,
+   "why": [
+    "Proprietors and farmers manage their own capital and expenditures; separates FREE from BOTTOM",
+    "Proprietors and farmers manage their own capital and spending; weakly separates FREE from BOTTOM",
+    "Proprietors and farmers manage their own money; weakly separates FREE from BOTTOM"
+   ]
+  },
+  {
+   "id": "2.B.5.c",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 0,
+   "n": 3,
+   "why": [
+    "Obtaining and directing use of equipment/facilities for others' work is a managerial task; separates MIDDLE+TOP from BOTTOM.",
+    "Obtaining and directing use of equipment/facilities is a managerial task; separates MIDDLE+TOP from BOTTOM.",
+    "Obtaining and allocating equipment/facilities is a managerial skill; separates MIDDLE and TOP from BOTTOM."
+   ]
+  },
+  {
+   "id": "2.B.5.c",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 0,
+   "n": 3,
+   "why": [
+    "Directing organizational resources sits with the apex as well as middle management; separates MIDDLE+TOP from BOTTOM.",
+    "Apex roles allocate the organisation's material resources; separates TOP (with MIDDLE) from BOTTOM.",
+    "Resource allocation authority concentrates at the apex; separates TOP from BOTTOM."
+   ]
+  },
+  {
+   "id": "2.B.5.d",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 1,
+   "n": 3,
+   "why": [
+    "Motivating, developing, and directing people as they work is the core MIDDLE task; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Motivating/developing/directing people as they work is the managing-below task itself; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Motivating/developing/directing people as they work is the manager's task; separates MIDDLE+TOP from BOTTOM+FREE"
+   ]
+  },
+  {
+   "id": "2.B.5.d",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 1,
+   "n": 3,
+   "why": [
+    "TOP directs the organisation's people; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Apex roles require managing personnel resources; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Personnel management remains central at the apex; high with MIDDLE against BOTTOM+FREE"
+   ]
+  },
+  {
+   "id": "2.B.5.d",
+   "level": "BOTTOM",
+   "sign": "-",
+   "subset": 1,
+   "n": 3,
+   "why": [
+    "No reports means little personnel management; separates BOTTOM from MIDDLE+TOP",
+    "Positions with no reports rate low on personnel management; separates BOTTOM from MIDDLE+TOP",
+    "Supervised workers without reports rate low; separates BOTTOM from MIDDLE+TOP"
+   ]
+  },
+  {
+   "id": "2.C.1.a",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 1,
+   "n": 3,
+   "why": [
+    "Knowledge element but a direct position indicator: management principles, resource allocation, and coordination of people are what MIDDLE jobs involve; separates MIDDLE+TOP from BOTTOM",
+    "Management-principles knowledge is required by managerial roles; knowledge but a direct indicator of managing below; separates MIDDLE+TOP from BOTTOM",
+    "Management-principles knowledge elevated for department heads and administrators; separates MIDDLE+TOP from BOTTOM+FREE, though lower than TOP"
+   ]
+  },
+  {
+   "id": "2.C.1.a",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 1,
+   "n": 3,
+   "why": [
+    "Strategic planning and leadership knowledge peaks at the apex, likely highest of all levels; separates TOP from BOTTOM and partially from MIDDLE",
+    "Strategic planning and resource allocation are the apex's core content; separates TOP (and MIDDLE) from BOTTOM; likely highest at TOP",
+    "Knowledge element but a direct position indicator: strategic planning and resource allocation is the job at the apex; highest at TOP, separating TOP from MIDDLE as well as below"
+   ]
+  },
+  {
+   "id": "2.C.1.b",
+   "level": "BOTTOM",
+   "sign": "+",
+   "subset": 2,
+   "n": 3,
+   "why": [
+    "Clerical/office-procedure knowledge marks supervised support roles (clerks, secretaries), separating clerical BOTTOM from TOP and manual FREE, but misses non-clerical BOTTOM workers.",
+    "Administrative/clerical-procedures knowledge peaks in clerks, secretaries, records staff \u2014 the supervised base of office hierarchies; separates BOTTOM from FREE manual/trade occupations and from TOP",
+    "Office-procedure knowledge peaks in clerical/junior staff, one archetype of BOTTOM, but manual BOTTOM jobs rate low so separation from other levels is partial"
+   ]
+  },
+  {
+   "id": "2.C.1.f",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 0,
+   "n": 3,
+   "why": [
+    "Personnel/HR knowledge (recruitment, compensation, labor relations) indicates supervising staff; separates MIDDLE+TOP from BOTTOM+FREE, with an HR-specialist confound.",
+    "Knowledge of recruitment, compensation and labor relations directly indicates having subordinates to hire and manage; separates MIDDLE+TOP from BOTTOM+FREE.",
+    "HR/personnel knowledge is required only where one manages people; separates MIDDLE and TOP from BOTTOM and from FREE sole operators with no personnel."
+   ]
+  },
+  {
+   "id": "2.C.1.f",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 0,
+   "n": 3,
+   "why": [
+    "Executives and proprietors of large firms require personnel-management knowledge; separates MIDDLE+TOP from BOTTOM+FREE.",
+    "Heads of organisations require personnel/HR knowledge for the workforce they direct; separates TOP (with MIDDLE) from BOTTOM+FREE.",
+    "Executives require personnel, compensation, and labor-relations knowledge; separates TOP from BOTTOM and FREE."
+   ]
+  },
+  {
+   "id": "3.A.1",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 3,
+   "n": 3,
+   "why": [
+    "Apex positions require the most prior experience; separates TOP from BOTTOM and partially from MIDDLE",
+    "Chief-executive roles require the longest prior related experience; separates TOP from BOTTOM and MIDDLE",
+    "Apex positions demand the most prior related experience; separates TOP from BOTTOM (and partly from MIDDLE)"
+   ]
+  },
+  {
+   "id": "3.A.1",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 3,
+   "n": 3,
+   "why": [
+    "Managerial posts require substantial experience; separates MIDDLE from BOTTOM",
+    "Managerial posts require substantial experience; separates MIDDLE from BOTTOM",
+    "Promotion into supervision requires substantial prior experience; separates MIDDLE from BOTTOM"
+   ]
+  },
+  {
+   "id": "4.A.2.b.4",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 2,
+   "n": 3,
+   "why": [
+    "Establishing long-range objectives is the defining activity of the apex; separates TOP (and MIDDLE) from BOTTOM and FREE sole operators, with the gradient peaking at TOP.",
+    "Establishing long-range objectives is the apex function; separates TOP (and MIDDLE) from BOTTOM and most FREE occupations",
+    "Establishing long-range objectives is the defining apex activity; separates TOP (and to a degree MIDDLE) from BOTTOM and FREE"
+   ]
+  },
+  {
+   "id": "4.A.2.b.4",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 2,
+   "n": 3,
+   "why": [
+    "Managers set departmental objectives too; separates MIDDLE+TOP from BOTTOM, though TOP rates higher still.",
+    "Department heads set strategy within their unit; separates MIDDLE+TOP from BOTTOM",
+    "Department heads set strategy within their unit; elevated vs BOTTOM/FREE though below TOP"
+   ]
+  },
+  {
+   "id": "4.A.2.b.5",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 3,
+   "n": 3,
+   "why": [
+    "Scheduling 'the work of others' is the defining supervisory activity; separates MIDDLE+TOP from BOTTOM and most FREE",
+    "Scheduling the work of others is the defining middle-management activity; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Scheduling the work of others is the core supervisory activity; separates MIDDLE+TOP from BOTTOM+FREE"
+   ]
+  },
+  {
+   "id": "4.A.2.b.5",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 3,
+   "n": 3,
+   "why": [
+    "Executives schedule others' work; separates TOP (with MIDDLE) from BOTTOM",
+    "Apex roles also direct and schedule others' work; separates TOP from BOTTOM+FREE though not from MIDDLE",
+    "Directing others' work stays high at the apex, though delegated somewhat; separates TOP from BOTTOM+FREE"
+   ]
+  },
+  {
+   "id": "4.A.4.a.2",
+   "level": "FREE",
+   "sign": "-",
+   "subset": 3,
+   "n": 3,
+   "why": [
+    "Communicating with supervisors/subordinates presumes a chain of command; may separate FREE from all organisational levels, but O*NET rates nearly all jobs high on it",
+    "Those outside any chain of command have no supervisors or subordinates to communicate with; separates FREE from all organizational levels, but the item is near-universally rated high",
+    "Occupations outside any chain of command have no supervisors or subordinates to communicate with; separates FREE from all inside-organization levels"
+   ]
+  },
+  {
+   "id": "4.A.4.a.3",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 4,
+   "n": 3,
+   "why": [
+    "Representing the organisation to customers, public and government is concentrated at the apex; separates TOP from MIDDLE and BOTTOM",
+    "Representing the organisation to external parties concentrates at the apex, but many front-line jobs also face customers, so it separates TOP from BOTTOM only weakly",
+    "Representing the organisation to external parties concentrates at the apex; helps separate TOP from MIDDLE, though front-line customer-facing BOTTOM jobs add noise."
+   ]
+  },
+  {
+   "id": "4.A.4.a.7",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 2,
+   "n": 3,
+   "why": [
+    "Handling grievances and settling disputes is core supervisory work; separates MIDDLE+TOP from BOTTOM, though customer-facing BOTTOM roles add noise.",
+    "Grievance-handling and dispute settlement concentrates in supervisory roles, but also in front-line service jobs, so separation of MIDDLE+TOP from BOTTOM is noisy",
+    "Settling disputes and grievances is core supervisory work; separates MIDDLE+TOP from BOTTOM"
+   ]
+  },
+  {
+   "id": "4.A.4.a.7",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 2,
+   "n": 3,
+   "why": [
+    "Negotiation on behalf of the organisation is characteristic of the apex; separates TOP (with MIDDLE) from BOTTOM.",
+    "Negotiation is prominent for executives; weakly separates MIDDLE+TOP from BOTTOM",
+    "Negotiation on behalf of the organisation concentrates at the apex; separates TOP from BOTTOM/FREE"
+   ]
+  },
+  {
+   "id": "4.A.4.b.1",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 4,
+   "n": 3,
+   "why": [
+    "Getting group members to work together is the core supervisory task; separates MIDDLE+TOP from BOTTOM and solo FREE",
+    "Getting group members to work together is the defining activity of supervision; separates FREE+BOTTOM (no subordinates) from MIDDLE+TOP",
+    "Coordinating others' work is the defining activity of supervision; separates MIDDLE+TOP from BOTTOM+FREE."
+   ]
+  },
+  {
+   "id": "4.A.4.b.1",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 4,
+   "n": 3,
+   "why": [
+    "Coordinating others' work stays high at the apex; separates MIDDLE+TOP from BOTTOM/FREE",
+    "Directing an organisation requires coordinating others; separates FREE+BOTTOM from MIDDLE+TOP, not MIDDLE from TOP",
+    "Apex jobs coordinate others by definition; separates MIDDLE+TOP from BOTTOM+FREE."
+   ]
+  },
+  {
+   "id": "4.A.4.b.2",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 5,
+   "n": 3,
+   "why": [
+    "Building teams is leadership activity; separates TOP+MIDDLE from BOTTOM+FREE, weaker than staffing since team members also rate it",
+    "Leadership of the whole organization rates high on team-building; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Executives build leadership teams; same manager-vs-nonmanager separation as MIDDLE"
+   ]
+  },
+  {
+   "id": "4.A.4.b.2",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 5,
+   "n": 3,
+   "why": [
+    "Supervisors build and maintain teams; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Building team trust/cooperation is core supervisory work; separates managers (MIDDLE+TOP) from non-managers",
+    "Building team trust/cooperation is supervisory work, though team members also rate it; separates MIDDLE/TOP from BOTTOM/FREE weakly"
+   ]
+  },
+  {
+   "id": "4.A.4.b.4",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 1,
+   "n": 3,
+   "why": [
+    "Directing subordinates is the definitional activity of MIDDLE; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Directing subordinates is definitional for managing below; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Directing subordinates is the defining activity of MIDDLE; separates MIDDLE+TOP from BOTTOM and FREE"
+   ]
+  },
+  {
+   "id": "4.A.4.b.4",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 1,
+   "n": 3,
+   "why": [
+    "Apex positions also direct subordinates; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Apex positions direct subordinates; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Apex positions direct subordinates; high with MIDDLE, separating both from BOTTOM/FREE"
+   ]
+  },
+  {
+   "id": "4.A.4.b.4",
+   "level": "BOTTOM",
+   "sign": "-",
+   "subset": 1,
+   "n": 3,
+   "why": [
+    "BOTTOM has no subordinates by definition, so rates low; separates BOTTOM from MIDDLE+TOP",
+    "No-subordinates base positions rate low on directing subordinates; separates BOTTOM from MIDDLE+TOP",
+    "No subordinates at the base, so systematically low; separates BOTTOM from MIDDLE+TOP"
+   ]
+  },
+  {
+   "id": "4.A.4.b.4",
+   "level": "FREE",
+   "sign": "-",
+   "subset": 1,
+   "n": 3,
+   "why": [
+    "FREE commands nobody, so rates low, though some own-account workers use occasional help; separates FREE from MIDDLE+TOP",
+    "Sole operators command nobody, rating low; separates FREE from MIDDLE+TOP (weaker where FREE hires help)",
+    "Sole practitioners and own-account workers command nobody; low rating separates FREE from MIDDLE+TOP (not from BOTTOM)"
+   ]
+  },
+  {
+   "id": "4.A.4.b.5",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 2,
+   "n": 3,
+   "why": [
+    "Coaching/mentoring subordinates marks having reports, separating MIDDLE+TOP from BOTTOM; contaminated by teachers and trainers who are BOTTOM front-line.",
+    "Coaching/developing subordinates is the day-to-day supervisory task; separates MIDDLE (and TOP) from BOTTOM and FREE solo workers",
+    "Coaching and developing subordinates marks having reports; separates MIDDLE+TOP from BOTTOM/FREE, though teachers dilute it"
+   ]
+  },
+  {
+   "id": "4.A.4.b.5",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 2,
+   "n": 3,
+   "why": [
+    "Developing others remains high at the apex; same MIDDLE+TOP vs BOTTOM separation as for MIDDLE.",
+    "Executives develop direct reports, though less than middle managers; separates having-subordinates (MIDDLE+TOP) from BOTTOM",
+    "Executives develop direct reports; shares the has-subordinates signal with MIDDLE"
+   ]
+  },
+  {
+   "id": "4.A.4.c.2",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 5,
+   "n": 3,
+   "why": [
+    "Recruiting/hiring/promoting is management work; separates TOP+MIDDLE from BOTTOM+FREE",
+    "Executives staff the organization; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Executives staff the organisation; same axis as MIDDLE; separates managers from non-managers"
+   ]
+  },
+  {
+   "id": "4.A.4.c.2",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 5,
+   "n": 3,
+   "why": [
+    "Staffing is core supervisory activity; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Recruiting/hiring/promoting is a defining managerial task; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Recruiting/hiring/promoting is line-management work; separates MIDDLE/TOP from BOTTOM/FREE"
+   ]
+  },
+  {
+   "id": "4.A.4.c.2",
+   "level": "BOTTOM",
+   "sign": "-",
+   "subset": 5,
+   "n": 3,
+   "why": [
+    "No subordinates means no hiring/promoting; separates BOTTOM from MIDDLE+TOP",
+    "Base-level workers do not hire or promote; separates BOTTOM from MIDDLE+TOP",
+    "Base positions do no hiring or promoting; low end separates BOTTOM from MIDDLE/TOP"
+   ]
+  },
+  {
+   "id": "4.A.4.c.3",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 0,
+   "n": 3,
+   "why": [
+    "Overseeing spending and controlling resources is a core apex activity; separates TOP (and MIDDLE) from BOTTOM.",
+    "Directing the organisation entails controlling its resources and budgets; separates TOP (with MIDDLE) from BOTTOM.",
+    "Directing the organisation entails controlling its resources and budget; separates TOP from BOTTOM."
+   ]
+  },
+  {
+   "id": "4.A.4.c.3",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 0,
+   "n": 3,
+   "why": [
+    "Budget and resource oversight is delegated to mid-level managers; separates MIDDLE+TOP from BOTTOM.",
+    "Overseeing spending and resources is a core activity of managers; separates MIDDLE+TOP from BOTTOM.",
+    "Overseeing spending and resources is delegated managerial work; separates MIDDLE (and TOP) from BOTTOM."
+   ]
+  },
+  {
+   "id": "4.A.4.c.3",
+   "level": "FREE",
+   "sign": "+",
+   "subset": 0,
+   "n": 3,
+   "why": [
+    "Proprietors and farmers oversee their own spending and resources; separates FREE from BOTTOM though not from managers.",
+    "Proprietors and farmers control their own money and stock, so likely elevated; weakly separates FREE from BOTTOM.",
+    "Proprietors and farmers oversee their own spending, though at smaller scale; weakly separates FREE from BOTTOM."
+   ]
+  },
+  {
+   "id": "4.C.1.b.1.e",
+   "level": "FREE",
+   "sign": "-",
+   "subset": 1,
+   "n": 3,
+   "why": [
+    "Context rating: importance of working in a team is low for sole practitioners, farmers, and own-account workers outside any organisation; separates FREE from all three inside-organisation levels",
+    "Work-group importance is low for those outside any organisation; separates FREE from all in-organisation levels (BOTTOM/MIDDLE/TOP)",
+    "Context rating: work-group importance is low for farmers, sole practitioners and own-account workers; separates FREE (outside any organisation) from all three inside-organisation levels"
+   ]
+  },
+  {
+   "id": "4.C.1.c.2",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 5,
+   "n": 3,
+   "why": [
+    "Direct measure of responsibility for other workers' outcomes; separates TOP+MIDDLE from BOTTOM+FREE",
+    "Apex positions are maximally responsible for others' results; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Apex directs the whole organisation; same axis, high end; separates TOP+MIDDLE from BOTTOM+FREE"
+   ]
+  },
+  {
+   "id": "4.C.1.c.2",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 5,
+   "n": 3,
+   "why": [
+    "Managing below means answering for subordinates' results; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Direct measure of responsibility for other workers' outcomes; separates MIDDLE+TOP from BOTTOM+FREE",
+    "Direct responsibility-for-subordinates context rating; separates BOTTOM/FREE (low) from MIDDLE/TOP (high)"
+   ]
+  },
+  {
+   "id": "4.C.1.c.2",
+   "level": "BOTTOM",
+   "sign": "-",
+   "subset": 5,
+   "n": 3,
+   "why": [
+    "Supervised workers with no reports are not responsible for others' outcomes; separates BOTTOM from MIDDLE+TOP",
+    "No subordinates means low responsibility for others' outcomes; separates BOTTOM from MIDDLE+TOP",
+    "No subordinates at the base, so systematically low; separates BOTTOM from MIDDLE/TOP"
+   ]
+  },
+  {
+   "id": "4.C.1.c.2",
+   "level": "FREE",
+   "sign": "-",
+   "subset": 5,
+   "n": 3,
+   "why": [
+    "Solo operators command nobody, so low responsibility for others' results; separates FREE from MIDDLE+TOP",
+    "Solo workers answer for their own output only; separates FREE from MIDDLE+TOP, though proprietors with helpers blur it",
+    "Own-account workers command nobody, so low; medium because some (farmers) hire hands; separates FREE from MIDDLE/TOP"
+   ]
+  },
+  {
+   "id": "4.C.3.a.2.a",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 4,
+   "n": 3,
+   "why": [
+    "Decision impact on company results is greatest at the apex; separates TOP from BOTTOM and grades against MIDDLE",
+    "Apex decisions carry the largest consequences for the firm's results and reputation; separates TOP from BOTTOM and partially from MIDDLE",
+    "Decision impact on company results/reputation peaks at the apex; helps separate TOP from MIDDLE and both from BOTTOM."
+   ]
+  },
+  {
+   "id": "4.C.3.a.2.a",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 4,
+   "n": 3,
+   "why": [
+    "Managers' decisions affect co-workers and unit results; separates MIDDLE+TOP from BOTTOM, weaker than for TOP",
+    "Managerial decisions affect co-workers and unit results more than base-level work does; separates MIDDLE from BOTTOM but not from TOP",
+    "Managers' decisions affect co-workers and results, though less than TOP; separates MIDDLE+TOP from BOTTOM."
+   ]
+  },
+  {
+   "id": "4.C.3.a.2.b",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 5,
+   "n": 3,
+   "why": [
+    "Frequent decisions affecting people, finances and organisational reputation define the apex; leans TOP, helping separate MIDDLE from TOP",
+    "Decisions affecting other people, finances and the organization's reputation are the apex's daily work; separates TOP from BOTTOM and partly from MIDDLE",
+    "Frequent organisation-affecting decisions define the apex; separates TOP from BOTTOM"
+   ]
+  },
+  {
+   "id": "4.C.3.a.2.b",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 5,
+   "n": 3,
+   "why": [
+    "Managers routinely make decisions affecting others and resources; separates MIDDLE+TOP from BOTTOM",
+    "Managers make organization-affecting decisions regularly, below the apex's frequency; separates MIDDLE+TOP from BOTTOM",
+    "Managers decide often but many front-line professionals also rate high; weakly separates MIDDLE from BOTTOM"
+   ]
+  },
+  {
+   "id": "4.C.3.a.4",
+   "level": "FREE",
+   "sign": "+",
+   "subset": 0,
+   "n": 3,
+   "why": [
+    "Decision freedom without supervision is near-definitional for working outside a chain of command; separates FREE+TOP from BOTTOM.",
+    "Decision-making freedom without supervision is the definition of answering to nobody; separates FREE+TOP from BOTTOM.",
+    "Decision-making freedom without supervision is highest for those with no boss; separates FREE (and TOP) from BOTTOM."
+   ]
+  },
+  {
+   "id": "4.C.3.a.4",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 0,
+   "n": 3,
+   "why": [
+    "Apex positions have no day-to-day superior, so unsupervised decision freedom rates high; separates TOP from BOTTOM+MIDDLE.",
+    "Apex positions have no day-to-day superior, so unsupervised decision freedom is maximal; separates TOP from BOTTOM+MIDDLE.",
+    "Apex positions have no day-to-day superior; separates TOP from BOTTOM and MIDDLE."
+   ]
+  },
+  {
+   "id": "4.C.3.a.4",
+   "level": "BOTTOM",
+   "sign": "-",
+   "subset": 0,
+   "n": 3,
+   "why": [
+    "Supervised base positions rate low on unsupervised decision freedom; separates BOTTOM from FREE and TOP.",
+    "Supervised base-level work rates systematically low on unsupervised decision freedom; separates BOTTOM from FREE+TOP.",
+    "Supervised base positions rate systematically low on unsupervised decision freedom; the cleanest having-a-boss marker in this slice."
+   ]
+  },
+  {
+   "id": "4.C.3.b.7",
+   "level": "BOTTOM",
+   "sign": "+",
+   "subset": 3,
+   "n": 3,
+   "why": [
+    "Repetitive key-entry/ledger work marks the organisational base; separates BOTTOM from MIDDLE+TOP",
+    "Continuous repetitive tasks (key entry, ledger checking) mark base-level supervised work; separates BOTTOM from MIDDLE+TOP",
+    "Continuous repetitive tasks (key entry, ledger checking) characterize base positions; separates BOTTOM from MIDDLE and TOP"
+   ]
+  },
+  {
+   "id": "4.C.3.b.7",
+   "level": "TOP",
+   "sign": "-",
+   "subset": 3,
+   "n": 3,
+   "why": [
+    "Apex work is non-repetitive; separates TOP (and MIDDLE) from BOTTOM",
+    "Apex work is non-repetitive; weakly separates TOP from BOTTOM",
+    "Apex work is non-routine; low ratings help separate TOP from BOTTOM"
+   ]
+  },
+  {
+   "id": "4.C.3.b.8",
+   "level": "FREE",
+   "sign": "+",
+   "subset": 4,
+   "n": 3,
+   "why": [
+    "Freedom to set own tasks/priorities/goals is maximal outside any chain of command; separates FREE (and TOP) from BOTTOM",
+    "Answering to nobody means full freedom over one's own tasks and goals; separates FREE from BOTTOM and MIDDLE",
+    "Freedom to set own tasks/priorities/goals is maximal outside any chain of command; separates FREE+TOP from BOTTOM."
+   ]
+  },
+  {
+   "id": "4.C.3.b.8",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 4,
+   "n": 3,
+   "why": [
+    "The apex sets its own goals with no internal superior; separates TOP from BOTTOM and partly from MIDDLE",
+    "Freedom to set tasks/priorities/goals is maximal at the apex; separates TOP from BOTTOM and partially from MIDDLE",
+    "Apex positions have no internal superior constraining goals; separates TOP (and FREE) from BOTTOM+MIDDLE."
+   ]
+  },
+  {
+   "id": "4.C.3.b.8",
+   "level": "BOTTOM",
+   "sign": "-",
+   "subset": 4,
+   "n": 3,
+   "why": [
+    "Supervised base positions have their tasks set from above and rate low on autonomy; separates BOTTOM from FREE/TOP",
+    "Supervised base-level workers have their tasks set from above, so they rate LOW; separates BOTTOM from FREE and TOP",
+    "Supervised base workers have tasks set from above, so rate low on goal-setting freedom; separates BOTTOM from all others."
+   ]
+  },
+  {
+   "id": "4.C.3.d.8",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 3,
+   "n": 3,
+   "why": [
+    "Chief executives report the longest work weeks; separates TOP from MIDDLE and BOTTOM",
+    "Executives typically work well over 40 hours; separates TOP from BOTTOM",
+    "Executives typically work the longest weeks; separates TOP from BOTTOM and MIDDLE"
+   ]
+  },
+  {
+   "id": "4.C.3.d.8",
+   "level": "FREE",
+   "sign": "+",
+   "subset": 3,
+   "n": 3,
+   "why": [
+    "Farmers and proprietors work long self-set hours; separates FREE from BOTTOM",
+    "Farmers and proprietors work long weeks; weakly separates FREE from BOTTOM but confounds with TOP",
+    "Farmers and proprietors also work long weeks; weakens TOP-vs-FREE separation but separates FREE from BOTTOM"
+   ]
+  },
+  {
+   "id": "1.B.1.f",
+   "level": "BOTTOM",
+   "sign": "+",
+   "subset": 3,
+   "n": 2,
+   "why": [
+    "Conventional interest (procedures, records, office settings) marks clerical base positions; separates BOTTOM from FREE and TOP (interest rating, weak)",
+    "Conventional interest marks procedural clerical work; weakly separates BOTTOM from FREE and TOP; interest rating"
+   ]
+  },
+  {
+   "id": "1.B.3.ae",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 3,
+   "n": 2,
+   "why": [
+    "Some mid-level managers contribute to expansion plans; weakly separates MIDDLE from BOTTOM",
+    "Senior middle managers share strategic-expansion work; separates MIDDLE from BOTTOM+FREE but not from TOP"
+   ]
+  },
+  {
+   "id": "1.D.1.e",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 2,
+   "n": 2,
+   "why": [
+    "Proactivity beyond one's defined role is demanded most where the role is unbounded, at the apex; weakly separates TOP (and FREE proprietors) from BOTTOM, but work-style ratings are diffuse.",
+    "Initiative (proactively taking on responsibility beyond the role) is rated highest for executives and proprietors; separates TOP from BOTTOM"
+   ]
+  },
+  {
+   "id": "1.D.1.i",
+   "level": "BOTTOM",
+   "sign": "-",
+   "subset": 0,
+   "n": 2,
+   "why": [
+    "Positions with no subordinates rate lower on leading and directing; weakly separates BOTTOM from MIDDLE+TOP.",
+    "Base positions with no subordinates rate low on requirements to lead and direct; separates BOTTOM from MIDDLE+TOP."
+   ]
+  },
+  {
+   "id": "2.A.2.d",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 0,
+   "n": 2,
+   "why": [
+    "Assessing performance of other individuals/organizations for corrective action marks supervisory roles; separates MIDDLE+TOP from BOTTOM, diluted by the self-monitoring clause.",
+    "Assessing performance of other individuals or organizations to take corrective action is supervisory, but the element also covers self-monitoring; weakly separates MIDDLE and TOP from BOTTOM."
+   ]
+  },
+  {
+   "id": "2.A.2.d",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 0,
+   "n": 2,
+   "why": [
+    "Monitoring organizational performance is central at the apex; separates TOP (with MIDDLE) from BOTTOM.",
+    "Monitoring organizational performance for corrective action is apex work, diluted by the self-monitoring component; weakly separates TOP from BOTTOM."
+   ]
+  },
+  {
+   "id": "2.B.1.d",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 4,
+   "n": 2,
+   "why": [
+    "Reconciling differences and bringing parties together loads on executives, but also on lawyers and sales at the base; weak, noisy separator of TOP from BOTTOM",
+    "Reconciling differences and dealmaking loads on executive work, but also on sales and legal front-line roles; weak TOP-vs-BOTTOM separator"
+   ]
+  },
+  {
+   "id": "2.B.4.h",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 3,
+   "n": 2,
+   "why": [
+    "Evaluating system performance against organisational goals is what direction of an organisation involves; separates TOP from BOTTOM",
+    "Evaluating organizational performance against goals is directive work; separates TOP+MIDDLE from BOTTOM"
+   ]
+  },
+  {
+   "id": "2.B.4.h",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 3,
+   "n": 2,
+   "why": [
+    "Department heads also evaluate unit performance; weakly separates MIDDLE from BOTTOM",
+    "Managers monitor system performance for units they run; separates MIDDLE from BOTTOM"
+   ]
+  },
+  {
+   "id": "2.B.5.a",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 4,
+   "n": 2,
+   "why": [
+    "Explicitly includes managing the time of others \u2014 a supervisory requirement; separates MIDDLE+TOP from BOTTOM",
+    "Managing 'the time of others' is a supervisory task; separates MIDDLE+TOP from BOTTOM, but the element mixes in managing one's own time"
+   ]
+  },
+  {
+   "id": "2.B.5.a",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 4,
+   "n": 2,
+   "why": [
+    "Managing others' time applies at the apex too, but is diluted by delegation; weakly separates TOP from BOTTOM",
+    "Same others'-time component applies at the apex; separates MIDDLE+TOP from BOTTOM"
+   ]
+  },
+  {
+   "id": "2.B.5.b",
+   "level": "BOTTOM",
+   "sign": "-",
+   "subset": 5,
+   "n": 2,
+   "why": [
+    "Base workers spend no organisational money; separates BOTTOM from all budget-holding levels",
+    "Base workers control no budget; separates BOTTOM from MIDDLE+TOP+FREE"
+   ]
+  },
+  {
+   "id": "3.A.1",
+   "level": "BOTTOM",
+   "sign": "-",
+   "subset": 3,
+   "n": 2,
+   "why": [
+    "Entry-level organisational jobs need little prior experience; separates BOTTOM from MIDDLE+TOP",
+    "Entry-level supervised jobs require little prior experience; separates BOTTOM from MIDDLE+TOP"
+   ]
+  },
+  {
+   "id": "4.A.4.a.3",
+   "level": "FREE",
+   "sign": "+",
+   "subset": 4,
+   "n": 2,
+   "why": [
+    "Sole practitioners and proprietors face clients directly with no organisation between; weakly separates FREE from BOTTOM, but many BOTTOM service jobs also face the public",
+    "Sole practitioners and proprietors are their own external face (clients, suppliers, public); weakly separates FREE from BOTTOM."
+   ]
+  },
+  {
+   "id": "4.C.1.b.1.g",
+   "level": "MIDDLE",
+   "sign": "+",
+   "subset": 3,
+   "n": 2,
+   "why": [
+    "Coordinating/leading others is high for supervisory work even in its non-supervisor phrasing; separates MIDDLE+TOP from BOTTOM",
+    "Coordinating/leading others is central to supervisory work; separates MIDDLE+TOP from BOTTOM"
+   ]
+  },
+  {
+   "id": "4.C.1.b.1.g",
+   "level": "TOP",
+   "sign": "+",
+   "subset": 3,
+   "n": 2,
+   "why": [
+    "Directing the organisation rates high on leading others; separates TOP (with MIDDLE) from BOTTOM",
+    "Apex roles rate high on leading others; separates TOP from BOTTOM, not from MIDDLE"
+   ]
+  },
+  {
+   "id": "4.C.3.a.2.b",
+   "level": "FREE",
+   "sign": "+",
+   "subset": 5,
+   "n": 2,
+   "why": [
+    "Own-account workers make all consequential decisions for their enterprise; separates FREE from BOTTOM",
+    "Own-account workers make every consequential decision themselves; separates FREE from BOTTOM"
+   ]
+  }
+ ],
+ "singleton_pairs": [
+  {
+   "id": "4.C.3.d.3",
+   "level": "BOTTOM",
+   "sign": "+"
+  },
+  {
+   "id": "4.C.1.a.2.c",
+   "level": "TOP",
+   "sign": "+"
+  },
+  {
+   "id": "1.B.1.e",
+   "level": "FREE",
+   "sign": "+"
+  },
+  {
+   "id": "1.D.1.e",
+   "level": "FREE",
+   "sign": "+"
+  },
+  {
+   "id": "4.A.2.b.5",
+   "level": "BOTTOM",
+   "sign": "-"
+  },
+  {
+   "id": "4.C.3.d.8",
+   "level": "BOTTOM",
+   "sign": "-"
+  },
+  {
+   "id": "1.B.3.ak",
+   "level": "FREE",
+   "sign": "-"
+  },
+  {
+   "id": "2.B.1.c",
+   "level": "TOP",
+   "sign": "+"
+  },
+  {
+   "id": "2.C.1.c",
+   "level": "TOP",
+   "sign": "+"
+  },
+  {
+   "id": "4.A.4.b.1",
+   "level": "BOTTOM",
+   "sign": "-"
+  },
+  {
+   "id": "4.A.4.c.2",
+   "level": "FREE",
+   "sign": "-"
+  },
+  {
+   "id": "4.A.4.b.2",
+   "level": "BOTTOM",
+   "sign": "-"
+  },
+  {
+   "id": "4.C.3.a.2.b",
+   "level": "BOTTOM",
+   "sign": "-"
+  },
+  {
+   "id": "4.C.3.c.1",
+   "level": "TOP",
+   "sign": "+"
+  }
+ ]
+}
