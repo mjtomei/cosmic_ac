@@ -241,70 +241,86 @@ Others is the closest and is not a good fit, since influencing is as often
 lateral or downward. **M2a is therefore the weakest of the six and a null there
 is uninformative** — it must not be read as evidence against the pattern.
 
-### Models — the full specification lattice
+### Models — two stages
 
-**No predictor is privileged as a control (Matthew).** Rather than pick one
-covariate set and report coefficients conditional on it, every subset is fitted
-and each effect is reported as a *distribution* over all the ways the competing
-effects could be removed. This is specification-curve / multiverse analysis — both
-verified 2026-08-18: Uri Simonsohn, Joseph P. Simmons & Leif D. Nelson,
-"Specification curve analysis," *Nature Human Behaviour* 4, no. 11 (2020):
-1208–14, doi:10.1038/s41562-020-0912-z; and Sara Steegen, Francis Tuerlinckx,
-Andrew Gelman & Wolf Vanpaemel, "Increasing Transparency Through a Multiverse
-Analysis," *Perspectives on Psychological Science* 11, no. 5 (2016): 702–12,
-doi:10.1177/1745691616658637. The method replaces a defensible-but-arbitrary
-choice with a reported fact, and its own three steps are what this section
-implements: enumerate the valid specifications, display them, and conduct joint
-inference across all of them.
+The study runs in two stages, and conflating them was an error in an earlier
+draft (Matthew). **Stage 1 selects a measure. Stage 2 evaluates it properly
+against everything else the study already knows.**
 
-**Eight toggles**, each in or out:
+#### Stage 1 — which occupational measure, if any
 
-    M1a  M1b  M1c        account-giving, upward / lateral / downward
-    M2a  M2b  M2c        sociality,      upward / lateral / downward
-    birthdec             cohort
-    EGP                  the class dummies, as one block
+Small and focused. The question is whether any of the six cells carries signal,
+and what the sign pattern across them looks like.
 
-That is **2⁸ = 256 specifications**; each predictor appears in **128** of them.
-All are member-level with the canonical spec (one row per legislator, equal
-weight, z within chamber, HC1) and all are fitted on the same members, so
-nothing varies but the right-hand side. 256 OLS fits on ~5,000 rows is seconds
-of compute, so there is no reason to sample the lattice rather than enumerate it.
+    each of the six cells, alone            z ~ M1a            (x6)
+    the six jointly                         z ~ M1a+…+M2c
+    the combination, alone                  z ~ combined
+    the incumbent, for scale                z ~ EGP class dummies
 
-**What is reported per predictor**, over its 128 specifications:
+`combined` is the equally weighted mean of the six standardised cells. **It is
+reported in its own models and never alongside its components** — a composite
+and the terms it is built from are collinear by construction, and entering both
+is degenerate. Each of these is also fitted with `birthdec` added, giving the
+unconditional and cohort-adjusted reading of each, since establishing an effect
+absent the other covariates matters equally to establishing it net of them.
 
-- median coefficient, and the 5th–95th percentile range
+The six cells are collinear, so the joint fit is what says which *direction*
+carries the result; the alone-fits are for interpretation and for reading
+attenuation against each cell's own baseline.
+
+#### Stage 2 — the proper evaluation, with everything the study holds
+
+Whatever Stage 1 settles on enters the joint model **as one more covariate
+beside the study's existing member-level predictors** — cohort, EGP class,
+education and prominence (§4.6a) — and the whole set is run as a specification
+lattice so that no covariate is privileged as a control:
+
+    toggles:  <settled occupational measure>
+              birthdec        cohort
+              EGP             class dummies, as one block
+              education       the level categories, as one block
+              prominence      log article length
+
+Five toggles is 2⁵ = 32 specifications, each predictor appearing in 16. If
+Stage 1 settles on the six cells rather than a single summary, the toggle count
+rises accordingly (ten toggles, 1,024 specifications) — still seconds of
+compute, so the lattice is always enumerated rather than sampled.
+
+**What is reported per predictor**, over the specifications containing it:
+
+- median coefficient and 5th–95th percentile range
 - **share of specifications in the predicted direction** — the sign-stability
-  statistic, which is the one that matters for the drone pattern
-- share reaching nominal significance, stated as a descriptive count and *not*
-  as a p-value
-- the specifications at the extremes, named — which controls have to be present
-  or absent to move it most
+  statistic, which is what matters for a signed prediction
+- share reaching nominal significance, as a descriptive count and *not* as a
+  p-value
+- the extreme specifications named: which controls have to be in or out to move
+  it most
 
-**And the pattern as a whole.** The drone prediction is a joint claim about six
-signs, so the headline statistic is the **share of the 256 specifications in
-which the full pattern holds** (M1a+, M1b+, M1c−, M2b+, M2c−; M2a excluded as
-the declared thin cell). A pattern that holds in most of the lattice is a
-different kind of result from one that holds in a favourable corner of it.
+**The pattern statistic is counted over the specifications that can exhibit it.**
+A specification omitting M1c has no sign for M1c, so the full six-sign pattern is
+only checkable where all the pattern cells are present. That count is stated
+explicitly alongside the share, so a count like "holds in 8 of 8"
+is never mistaken for one out of the full lattice.
 
-**Inference under the lattice.** Reporting 256 fits invites the objection that
-some will look good by chance, so significance is not claimed from the curve.
-The inferential test is a **permutation**: shuffle the register outcome across
-members within chamber, re-run the entire lattice, and record how often the full
-sign pattern holds and how extreme the median coefficients are. 2,000 shuffles.
-That gives a p-value for the *pattern* rather than for any single specification,
-which is the quantity the hypothesis is actually about.
+**Inference is not taken from the curve.** Reporting many fits guarantees some
+will look good by chance. The test is a **permutation**: shuffle the register
+outcome across members within chamber, re-run the entire lattice, 2,000 times,
+and record how often the sign pattern arises and how extreme the median
+coefficients get under the null. That gives a p-value for the *pattern* rather
+than for any single specification.
 
-**`birthdec` is a toggle like any other.** It is expected to attenuate most —
-cohort is the strongest predictor in the study (t ≈ 27) and is confounded with
-occupation, since later cohorts hold different jobs — but that expectation is
-recorded as a prediction to be checked, not as grounds for building it into
-every model. The share of a cell's sign stability that survives conditioning on
-cohort is read off the lattice directly, by comparing its 64 with-cohort
-specifications against its 64 without.
+This is specification-curve / multiverse analysis — both verified 2026-08-18:
+Uri Simonsohn, Joseph P. Simmons & Leif D. Nelson, "Specification curve
+analysis," *Nature Human Behaviour* 4, no. 11 (2020): 1208–14,
+doi:10.1038/s41562-020-0912-z; and Sara Steegen, Francis Tuerlinckx, Andrew
+Gelman & Wolf Vanpaemel, "Increasing Transparency Through a Multiverse
+Analysis," *Perspectives on Psychological Science* 11, no. 5 (2016): 702–12,
+doi:10.1177/1745691616658637. Its three steps — enumerate, display, joint
+inference — are what Stage 2 implements.
 
-**Pre-specified subsets**, still fixed here and read off the lattice: M1a against
-M1c (does reporting up beat commanding down?); M1a+M2b (the drone profile
-proper); the six with the autonomy items removed from M1a.
+**Pre-specified subsets**, fixed here and read off Stage 1: M1a against M1c
+(does reporting up beat commanding down?); M1a+M2b (the drone profile proper);
+the six with the autonomy items removed from M1a.
 
 ## Pre-specified predictions
 
@@ -317,6 +333,51 @@ serves laterally, and commands nobody**. As signs on the six cells:
 |---|---|---|---|
 | **M1** account-giving | **+** | **+** | **−** |
 | **M2** sociality | **+** *(thin cell)* | **+** | **−** |
+
+### The ordinal prediction: free < managerial < drone (Matthew)
+
+The sign pattern says which direction of interaction goes with the register. A
+second, stronger claim is registered here: the three occupational **profiles**
+should order, on register use,
+
+    completely free   <   managerial   <   drone
+
+- **free** — answers to nobody: high autonomy, low on every reporting cell.
+  Farmers, sole practitioners, own-account tradespeople.
+- **managerial** — commands others: high on the downward cells, moderate
+  upward. Executives, general managers, senior administrators.
+- **drone** — reports up and serves sideways while directing nobody: high M1a
+  and M2b, low M1c and M2c. Teachers, nurses, social workers, caseworkers.
+
+**Why managerial is predicted intermediate rather than lowest**, on this study's
+own prior findings rather than on intuition:
+
+- **Farmers sit at the floor** of the class table (IVc, −0.44σ, the lowest of
+  seven categories) — the free profile's anchor, and lower than the manual
+  classes.
+- **Office-holders use less register than backbenchers** (33.69 against 35.11
+  per 1,000; Appendix D.4) — the managerial profile suppresses it, but modestly,
+  nowhere near the farmers' gap.
+- **Class II is the peak** (+0.02σ against class I's −0.09σ) and is populated by
+  precisely the drone occupations: ~300 teachers, 73 journalists, 63 nurses, 47
+  social workers.
+
+So managers are predicted to be pulled down by commanding but not to the floor,
+because they still report upward to boards, ministers and shareholders — the
+downward cell is negative but the upward cell is not zero for them. The free
+profile has neither.
+
+**How it is tested.** Each occupation is scored for similarity to the three
+profiles (its standardised cell values against each profile's predicted signs),
+assigned to whichever it most resembles, and the three groups' mean register z
+compared. The prediction is the **ordering**, tested with a Jonckheere–Terpstra
+trend test against the ordered alternative, not three pairwise comparisons.
+
+**What would refute it.** Managerial at or below free reverses the claim —
+commanding would then suppress the register as much as answering to nobody,
+which no version of the hypothesis predicts. Managerial at or above drone means
+direction does not matter in the way the sign pattern asserts, and Stage 1's
+result should be re-read accordingly.
 
 **The downward sign is what makes this falsifiable.** Every rival account
 predicts something different there:
@@ -340,15 +401,17 @@ right direction is not partial support, it is noise.
    specifications without them, EGP present or absent. If they do not,
    occupational structure adds nothing beyond class and the hypothesis fails on
    its own terms.
-2. **The sign pattern is stable across the lattice, not just present in it.**
-   The headline is the share of the 256 specifications in which the full pattern
-   holds. A pattern surviving most of the lattice is a different result from one
-   appearing in a favourable corner, and "some specification shows it" is not a
-   finding. Cohort is expected to attenuate most — it is the strongest predictor
-   in the study and is confounded with occupation — so the with-cohort half of
-   each cell's specifications is compared against the without-cohort half
-   directly, and a pattern that survives only where cohort is absent is reported
-   as a statement about generations rather than occupations.
+2. **The sign pattern is stable, not merely present.** The headline is the share
+   of the *pattern-eligible* specifications in which the full pattern holds —
+   those containing every pattern cell — with that count stated explicitly so it
+   is never confused with the size of the whole lattice. A pattern surviving
+   most of them is a different result from one appearing in a favourable corner,
+   and "some specification shows it" is not a finding. Cohort is expected to
+   attenuate most, being the strongest predictor in the study and confounded
+   with occupation, so each cell's with-cohort specifications are compared
+   against its without-cohort ones directly; a pattern surviving only where
+   cohort is absent is reported as a statement about generations rather than
+   occupations.
 3. **M1a is the strongest single cell.** If any one predictor carries the
    result it should be upward account-giving. If `combined` beats every
    individual cell by a wide margin, the construct is diffuse rather than
