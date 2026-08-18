@@ -2243,16 +2243,74 @@ not a fourth operationalisation of the same kind.
     clusters away from the evasion signature — would turn that assumption into
     a measurement.
 
-**F. What the legislator panel enables beyond the register (Matthew).**
+**F. Court transcripts, and the expert-witness problem (Matthew).**
 
-Collecting covariates for this study produced something with uses well outside
-it: birth year, education, prior occupation, EGP class and Wikipedia prominence
-for roughly five thousand legislators across twenty-two chambers, joined to
-every word each of them spoke. The register was the reason to build it; it is
-not the only thing it can answer. Two families of question follow, and they
-differ in how novel they are likely to be.
+Legislatures are one institution where speech is the work and provenance is
+unregulated. Courts are another, and there the question has already become
+live in a way it has not in parliament.
 
-18. **Class dynamics against proxies for power.** Whether the class structure
+In August 2026 an expert witness retained by 3M in a $61m suit over the 2020
+Watson Grinding explosion in Houston — three dead, some 200 homes destroyed —
+was found to have used ChatGPT to draft substantial parts of his expert report.
+The prompts surfaced in discovery; one asked the model to *"show how 3M is 0%
+at fault for the explosion at Watson Grinding"*.[^r86a] The doctrinal hook
+matters more than the anecdote: three months earlier, in *Conservation Law
+Foundation v. Shell Oil*, a federal magistrate held that **an expert's AI
+prompts are discoverable**, on the reasoning that "an expert witness's
+methodology is fair ground for discovery" and that prompting is part of the
+methodology.[^r86b] The legal literature has followed.[^r86c]
+
+That gives a second corpus and three arms, none of which needs anything this
+study has not already built.
+
+20. **Court transcripts and filed expert reports as a corpus.** Testimony and
+    reports are published, attributed, adversarial, and — unlike Hansard —
+    already subject to a disclosure fight about provenance. The prevalence
+    question transfers directly: how much filed expert opinion carries the
+    register, and does it differ between the two sides of a case.
+
+21. **Whose voice does an expert speak in?** The sharper version, and the one
+    the panel machinery already fits. An expert's report can read in their own
+    prior voice, in an assistant's voice, or — most interesting — in the voice
+    of *the firm that retained them*. The third is measurable the way this study
+    measures anything: score an expert's reports against their own earlier
+    published writing, against a machine baseline, and against the retaining
+    firm's other filings. An expert whose register tracks their client rather
+    than themselves across engagements is evidence of capture that does not
+    depend on proving anything about the content of the opinion. This is the
+    same instrument as §4.6a's, pointed at a different institution, and it has
+    the advantage that the ground truth — who paid — is on the docket.
+
+22. **The replacement argument, which we should state carefully.** If the
+    adversarial expert system already produces opinions shaped by who is paying,
+    a model that can be made to argue either side with *measurably equal effort*
+    is an argument for machine expert testimony rather than against it — the
+    bias becomes auditable rather than tacit. We should not make that argument
+    without the measurement: the testable claim is whether a model's argument
+    quality is symmetric across sides in a way human retained experts' is not,
+    and the DQI apparatus in §4.9 already grades argument quality on both sides
+    of a proposition. Note the honest tension with §8.2 — the case that
+    detection cannot protect deliberative quality applies here too, and an
+    "unbiased machine expert" claim would rest on symmetry, not on provenance.
+
+[^r86a]: Jason Koebler, "'Show How 3M Is 0% at Fault': Expert Witness Used
+    ChatGPT to Write Report Defending Company in Deadly Explosion Lawsuit,"
+    *404 Media*, 17 August 2026.
+
+[^r86b]: *Conservation Law Foundation, Inc. v. Shell Oil Co.*, No. 3:21-cv-00933
+    (D. Conn.), Magistrate Judge Thomas O. Farrish, order of 18 May 2026,
+    compelling disclosure of the prompts used by the plaintiff's expert. The
+    order was stayed pending objection filed 2 June 2026 and was still pending
+    at the time of writing — so it is cited as a live doctrinal development, not
+    as settled law.
+
+[^r86c]: Hon. John G. Browning, "Are You Your Expert's Keeper? Assessing the
+    Impact of Generative AI and Expert Testimony," *Nova Law Review* 50, no. 3
+    (2026), art. 2.
+
+**F2. What the legislator panel enables beyond the register (Matthew).**
+
+23. **Class dynamics against proxies for power.** Whether the class structure
     visible in speech also appears in outcomes: which members' bills pass, who
     sits on the prestigious committees (public accounts, finance, rules), who
     is called and who speaks longest, who reaches the frontbench and how fast.
@@ -2265,7 +2323,7 @@ differ in how novel they are likely to be.
     turns up. Committee rosters and division records are the collection cost;
     both are published, neither is in our corpus yet.
 
-19. **Speech classified by who it is addressed to — the dyadic turn.** The
+24. **Speech classified by who it is addressed to — the dyadic turn.** The
     more likely to be novel, precisely because of the effort. Every quality
     measure in this study scores a speech in isolation. The interesting
     question is relational: **does the quality and respect of a response depend
@@ -2290,6 +2348,30 @@ differ in how novel they are likely to be.
     the grading apparatus this study built, to answer a question about
     legislatures rather than about machines — which is a reason to treat it as
     its own study rather than a further section here.
+
+25. **The unconstrained occupational model**, deferred out of
+    `PREREG-occupational-accountability.md` on 2026-08-18 so the confirmatory
+    test can be run and closed on its own. Train a maximally free model over all
+    ~271 rated O\*NET elements and let it report which matter, rather than
+    testing a hand-built six-item composite. The constraints worked out for it
+    are the part worth keeping: every member-level row retained (element values
+    are constant within occupation, but birth decade, chamber, education and
+    prominence vary within it); a fixed training procedure repeated over many
+    random holdouts, reporting selection **frequencies** across runs rather than
+    one fit's chosen set, because regularised regression picks one member of a
+    correlated cluster arbitrarily and which one is not a finding; and a
+    secondary grouped-by-occupation holdout for the model-comparison leg alone,
+    where a 271-feature model can fingerprint an occupation in a way a six-item
+    composite cannot. Worth running whichever way the confirmatory test goes: if
+    it succeeds, this asks what the composite left on the table; if it fails, it
+    asks whether anything occupational predicts at all.
+
+Collecting covariates for this study produced something with uses well outside
+it: birth year, education, prior occupation, EGP class and Wikipedia prominence
+for roughly five thousand legislators across twenty-two chambers, joined to
+every word each of them spoke. The register was the reason to build it; it is
+not the only thing it can answer. Two families of question follow, and they
+differ in how novel they are likely to be.
 
 ---
 

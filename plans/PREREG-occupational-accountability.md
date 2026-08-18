@@ -261,65 +261,27 @@ nuisance.
    explain why education showed the same shape while being statistically
    inseparable from class.
 
-## The free model (Matthew, 2026-08-17) — exploratory by construction
+## Deferred to future work: the unconstrained model
 
-The composite above is a model built by hand. The complement is to let a model
-choose its own elements from the whole pool and report which ones it wants. Two
-rules keep the two from contaminating each other: the free model runs **only
-after** the confirmatory comparison above is computed and recorded, and **it can
-never revise the composite**. If the free model finds something the composite
-missed, that is a new hypothesis for a later study, not a correction to this one.
+An earlier draft carried a second arm here — train a maximally free model over
+all ~271 rated elements and let it report which ones matter. **Deferred
+2026-08-18 (Matthew)**, so this pre-registration covers only the confirmatory
+comparison above and the study can be run and closed without waiting on it.
 
-### Sampling and validation (Matthew, 2026-08-17)
+The design as worked out is kept in §8.6 of the write-up rather than discarded,
+because its constraints were the useful part: keep every member-level row
+(element values are constant within occupation, but birth decade, chamber,
+education and prominence vary within it); a fixed training procedure repeated
+over many random holdouts, reporting selection **frequencies** across runs
+rather than one fit's chosen set, since regularised regression picks one member
+of a correlated cluster arbitrarily; and a secondary grouped-by-occupation
+holdout for the model-comparison leg alone, where a 271-feature model can
+fingerprint an occupation in a way a six-item composite cannot.
 
-**Keep every member-level row.** O\*NET elements are constant within an
-occupation, but the model is not given occupation alone: member-level features
-(birth decade, chamber, education level, prominence) vary within occupation, so
-two teachers of different cohorts in different chambers are genuinely two
-observations and the model should be free to learn probabilistic structure from
-them. Aggregating to one row per SOC code would discard that.
-
-**Validation is repeated random holdout over members.** The question this study
-asks is descriptive — *which occupational properties travel with the register* —
-not predictive of occupations never seen. A model that predicts partly through
-an occupation's mean still answers the descriptive question, because the
-features are what describe the occupation. So the primary design holds out
-random subsets of members, repeatedly.
-
-**Fixed training process, repeated, findings must survive.** The procedure is
-specified once and not tuned per run: standardise on the training split, elastic
-net over the pool, hyperparameters by inner cross-validation. It is then
-repeated over many random holdout splits, and **only findings that survive
-across runs are reported**. The deliverable per element is a selection
-*frequency* across repetitions, not its presence in any one fit — regularised
-regression picks one member of a correlated cluster arbitrarily, and which one
-it picks is not a finding. Report clusters and frequencies; never a single
-winning set.
-
-**One secondary check, on one sub-question.** Random member holdout is neutral
-for feature importance but mildly favours the free model in the *model
-comparison*, because ~271 features can fingerprint an occupation and recall its
-mean in a way a four-term composite cannot. So the comparison of (A)–(D) and the
-free model is **additionally** run with whole occupations held out, and both
-numbers are reported. If they agree, the point is moot; if they disagree, the
-grouped number is the conservative one for that comparison only, and neither is
-used to revise feature selection.
-
-**Report what the free model costs.** If it beats a hand-built two-term model by
-a trivial margin while selecting fifty elements, say so; the near-match by the
-small model is then the more useful result.
-
-### What would count as each outcome
-
-- **Free model ≫ composite and ≫ class** — our hand-built theory is leaving
-  signal on the table; the selected clusters name what we missed.
-- **Free model ≈ composite** — the four hand-picked items captured what is
-  there, which is the strongest possible support for the hypothesis.
-- **Free model ≈ class, composite worse** — occupational structure predicts, but
-  not through accountability; the hypothesis is wrong and EGP was adequate.
-- **Nothing predicts out of sample** — the class U is chamber composition or
-  noise, and §4.6a should be weakened accordingly. This outcome is live and
-  should not be argued away.
+Nothing above depends on it. If the confirmatory test succeeds, the free model
+asks whether the hand-built composite left signal on the table; if it fails, the
+free model asks whether anything occupational predicts at all. Either is a
+better question once the pre-registered answer is on record.
 
 ## Exploratory follow-up, labelled as such
 
