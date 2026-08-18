@@ -3,7 +3,7 @@
 **Written to be readable by someone who has not done this kind of analysis
 before.** Each section says what we were trying to learn, what could have
 fooled us, what we did about it, and what the resulting number actually
-licenses you to claim. Numbers are as of 2026-08-17.
+licenses you to claim. Numbers are as of 2026-08-18.
 
 ---
 
@@ -1690,6 +1690,18 @@ effect on any estimate is negligible, but the size of the per-element gap is a
 warning about how much a coding choice can carry when the same choice is made at
 scale.
 
+**Addendum, 2026-08-18 — two join facts found when the mapping was first
+used.** (1) The SOC pool deduplicated titles case-insensitively (4,402
+distinct titles from 5,551 cased forms), so any consumer must join on the
+lower-cased title; the first join in `prereg_join.py` matched exactly and
+silently dropped ~525 members ("Architect" vs "architect") before the
+coverage decomposition caught it. (2) The pool's `n_members` counts SLOTS
+across whose-types — member-own, member, and ~1,300 parent-occupation slots
+— so pool-slot coverage (87.7%) and member-level own-occupation coverage
+(62.8% of the 7,581-member panel; the rest genuinely lack a codeable own
+occupation or hold an unrated SOC) are different denominators. Member-level
+numbers are the ones the run uses.
+
 ### 6.1a The OLMo-2 post-training ladder
 
 Added 2026-08-17. Three figures in §4.7 rested on `olmo_ladder.py` while this
@@ -1735,54 +1747,89 @@ argument does not rest on the connection. `python olmo_ladder.py report` prints
 the end-to-end row beside the three transitions so the write-up's figures are
 reproducible from the invocation cited for them.
 
-### 6.1c The registered occupational study, and why it has no single model
+### 6.1c The registered occupational study — instrument, run, and what it added to the joint model
 
-Added 2026-08-18. `plans/PREREG-occupational-accountability.md` registers a test
-of whether an occupation's *account-giving* profile predicts the register better
-than EGP class does, using the O\*NET-SOC mapping documented in §6.1b. The study
-has not been run; this records its analysis method, because that method is a
-departure from everything else in this file.
+Rewritten 2026-08-18 after the study ran; the pre-run version of this section
+described a six-cell instrument that no longer exists (git history). What
+follows is the method record; results live in the draft and in
+`prereg_stage1_results.txt` / `prereg_stage2_results.txt`.
 
-**The problem it solves.** Six candidate predictors (two base measures —
-account-giving and sociality — each split by direction of interaction: upward,
-lateral, downward), plus cohort, plus the class dummies. Any single regression
-requires choosing which of those to condition on, and the choice is
-consequential and arbitrary in equal measure. Conditioning on cohort is
-defensible, since cohort is the strongest predictor in the study and is
-confounded with occupation; so is not conditioning on it, since the
-unconditional effect is a separate question. Picking one and reporting it makes
-the analyst's judgement part of the finding.
+**The instrument was blind-derived, not hand-kept.** The hand-built cells
+were re-derived by three fable-medium workflows over all 295 O\*NET 30.3
+elements carrying per-occupation ratings (three coders per slice, 2-of-3 to
+carry): an anchored arm shown the draft, an unanchored control, and a
+four-cell arm after the undirected column N was added
+(`workflows/element_audit*.js`, results `element_audit_*.json`). Membership
+rule: unanimous in the four-cell run, one 2/3 exception by Matthew's explicit
+call, nothing without blind support (Realistic fell). Final: **64 elements in
+four components** — U upward ("advises but does not decide": consultation +
+four discretion items reverse-scored), L lateral (external service), D
+downward (command), N undirected (organisational account-giving and
+sociality) — and three profiles as signed 4-vectors: free (−,−,−,−),
+front-line (+,+,−,+), corporate (+,−,+,+). A parallel **uncharged
+instrument** exists for a registered horse race: four level scores
+(FREE/BOTTOM/MIDDLE/TOP) from coders who were never told the register or the
+hypothesis existed (`element_levels.json`, `level_scores.py`), plus the
+**apex delta** = MIDDLE − TOP, registered in words as "insulated command
+tracks more register than exposed command."
 
-**What is done instead.** All eight terms are treated as toggles and **every
-subset is fitted** — 2⁸ = 256 specifications, each predictor appearing in 128 —
-and each effect is reported as a distribution across them: median, 5th–95th
-range, and the share of specifications in the predicted direction. Because the
-hypothesis is a *signed pattern* across six cells rather than one coefficient,
-the headline statistic is the share of the 256 in which the whole pattern holds.
+**One join, many consumers.** `prereg_join.py` performs the entire join once
+— member → raw occupation string → cleaned title (lower-cased; §6.1b
+addendum) → SOC → standardised element scores → components, profiles, levels,
+delta, E/A, rung×ownership, and every registered subset variant — writes
+`prereg_member_table.json`, and asserts its member rows equivalent to the
+canonical builders before anything runs. Analysis scripts are pure consumers:
+`prereg_stage1.py` (every registered fit; n = 4,762), `prereg_stage2.py`
+(lattices + permutation), `prereg_synthesis_check.py`,
+`prereg_covariate_strength.py`, `prereg_strength_2526.py`.
 
-**Inference is not taken from the curve.** Reporting 256 fits guarantees some
-will look good by chance, so no p-value is read off them. The test is a
-permutation: shuffle the outcome within chamber, re-run the entire lattice,
-2,000 times, and ask how often the pattern arises under the null. That gives a
-p-value for the pattern, which is the quantity the hypothesis is about.
+**The lattice as run.** Stage 2 fits two lattices on the all-covariate panel
+(n = 3,594). Lattice A is the registered one: the component block × {birth
+decade, EGP class, education, prominence} = 32 specifications, carrying the
+registered four-sign permutation (2,000 within-chamber shuffles of z,
+statistic = share of pattern-eligible specifications matching U+ L− D+ N+;
+the entire lattice re-fit per shuffle via precomputed projectors). Lattice B
+adds the covariates Matthew named after Stage 1 — the **directional ladder**
+(free/bottom/middle/top composed from the components) and the **coded
+ladder** (the blind level scores) — as a dated post-unblinding amendment in
+the prereg. One design rule was learned the hard way and is now fixed: **a
+ladder's levels are contrasts over one space and are never entered together**
+— a first draft entered each ladder as a four-score joint block and the
+within-block partials were suppression artifacts (the coded pair correlate
+.99); the run version enters each level alone over the 16 covariate masks.
 
-**Source.** This is specification-curve analysis: Uri Simonsohn, Joseph P.
-Simmons & Leif D. Nelson, "Specification curve analysis," *Nature Human
-Behaviour* 4, no. 11 (2020): 1208–14, doi:10.1038/s41562-020-0912-z — whose
-three steps (enumerate the valid specifications, display them, conduct joint
-inference across all of them) the design follows directly. The wider practice of
-reporting results across all defensible analytic choices rather than one is
-multiverse analysis: Sara Steegen, Francis Tuerlinckx, Andrew Gelman & Wolf
-Vanpaemel, "Increasing Transparency Through a Multiverse Analysis,"
-*Perspectives on Psychological Science* 11, no. 5 (2016): 702–12,
-doi:10.1177/1745691616658637. Both verified 2026-08-18.
+**What the run added to the joint model.** The apex delta is the one
+occupational term that earns a standing seat: +0.067 (t 3.9) with cohort,
+class, education and prominence all present, 100% right-signed and 100%
+nominally significant across the 16 masks, and it **absorbs the directional
+middle entirely** when both enter (−0.031, t −1.1 vs delta +0.094, t 3.1) —
+so the joint model's occupational content compresses to one number. For
+scale, adjusted-R² lost when dropped from the grand model: cohort .1437, EGP
+block .0038, **delta .0033**, prominence .0005, education .0004. Education is
+spent once class and the delta are present. Era restriction (2025–26 outcome,
+member-year rates, 2,000-word floor, z within chamber against era-qualifying
+members; `prereg_strength_2526.py`) deflates cohort to its period-purged size
+(+0.138/sd, ~1.8%) and doubles the class-II contrast (+0.203, t 3.0) while
+the delta persists directionally at era power (+0.061, t 1.7).
 
-**Worth noting against this file's own history.** Several corrections recorded
-here — the per-transition pedestal in §6.1a, the unclustered-inference incidents
-in Appendix A, the education ladder that turned out to be class — were cases
-where a single defensible specification was reported and a different equally
-defensible one would have said something else. The lattice is the structural
-answer to that pattern rather than another instance of catching it afterwards.
+**Inference discipline, as registered.** No p-value is read off any curve;
+the pattern p comes from the permutation (observed share 25%, p = 0.087 —
+suggestive, unconfirmed). Prediction 1 — the occupational block adds to EGP —
+is the paired-specification contrast and confirmed in 16 of 16 masks (mean
+ΔR² +0.0065). The specification-curve and multiverse sources for all of this
+remain Simonsohn, Simmons & Nelson, *Nature Human Behaviour* 4 (2020):
+1208–14, doi:10.1038/s41562-020-0912-z, and Steegen, Tuerlinckx, Gelman &
+Vanpaemel, *Perspectives on Psychological Science* 11 (2016): 702–12,
+doi:10.1177/1745691616658637, both verified 2026-08-18.
+
+**Worth noting against this file's own history.** Several corrections
+recorded here — the per-transition pedestal in §6.1a, the unclustered
+incidents in Appendix A, the education ladder that turned out to be class —
+were cases where one defensible specification was reported and another would
+have said something else. The lattice is the structural answer to that
+pattern, and the run held to it: the revision it refuted (the corporate
+ordering) and the amendment it absorbed (the ladders) are both dated in the
+prereg rather than smoothed over.
 
 ## 6.2 Member-level covariate estimation (class, education, origin)
 
