@@ -810,11 +810,18 @@ the right direction is not partial support, it is noise.
    element for it, so it is absent from the instrument rather than measured
    badly. Nothing in the predictions above or below depends on it, and no result
    may be explained after the fact by appeal to it.
-5. **Farmers are an illustrative case, not a load-bearing one (Matthew).** EGP
-   ranks IVc mid-table; the observed register places it at the floor, and the
-   grid should agree — farmers score low on U (nobody to report to) and low on L
-   (working with land, not people), putting them at the `free` end. But **the
-   free/front-line/corporate result does not depend on them.** There are 251 farmer
+5. **Farmers are a registered headwind, not a confirmation, and are not
+   forced (Matthew, 2026-08-18).** The theory's farmer answers to nobody; the
+   *measured* farmer is an agricultural manager — the SOC title is Farmers,
+   Ranchers and Other Agricultural Managers, and on measured values (D +1.35,
+   corporate profile +0.22, blind-coded MIDDLE at +1.34 against FREE +0.45 in
+   the corporate-levels arm) every instrument buildable from O\*NET reads the
+   farm as a firm. An earlier draft placed farmers at the `free` end by
+   construction; that is withdrawn rather than patched with a bespoke rule.
+   Since their observed register sits at the floor (−0.44σ), farmers now drag
+   *against* the corporate slope, and the primary has to carry that
+   contradiction in the open. But **the free/front-line/corporate result does
+   not depend on them.** There are 251 farmer
    members, 3.6% of coded slots; a profile ordering that holds across the other
    96% is not weakened by a soft farmer showing, and an earlier draft calling
    this "the diagnostic case" overweighted a small cell. Reported as
