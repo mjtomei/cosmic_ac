@@ -349,3 +349,64 @@ the model comparison, and cannot be used to revise the composite.
   field rather than the raw Hansard strings.
 - **Accountability will correlate with class.** That is the point of the model
   comparison; a composite that merely reproduces EGP is a null result.
+
+---
+
+## Coverage check, run 2026-08-17 BEFORE any model was fitted
+
+As required above. SOC mapping completed by double-blind coding with
+adjudication (`workflows/soccode.js` on arch-home for the two votes,
+`workflows/socfinish.js` here for the remaining second votes and every
+adjudication), then validated against O\*NET 30.3's published occupation list.
+
+| quantity | value |
+|---|---|
+| occupations in pool | 4,402 |
+| with a valid SOC code | 4,263 (96.8%) |
+| member-occupation slots | 7,034 |
+| slots with a code | 6,829 (97.1%) |
+| **distinct SOC codes matched** | **470** of 1,016 in O\*NET 30.3 |
+| top-10 codes cover | 45.0% of coded slots |
+| top-50 / top-200 | 73% / 93% |
+
+**The study is not collapsed onto a few dozen occupations**, which was the
+failure mode this check existed to detect: 470 distinct occupations, with the
+top 200 needed to reach 93% of slots. Occupational variety is adequate for
+fitting occupation-level structure.
+
+Ten most common: Lawyers (1,051 members), Secondary School Teachers (458),
+General and Operations Managers (324), Chief Executives (286), Farmers/Ranchers
+(251), News Analysts and Reporters (226), Labor Relations Specialists (137),
+Military Officers (115), Public Relations Specialists (115), Accountants (109).
+Lawyers alone are 15% of coded slots, which is worth remembering when reading
+any class-I result — the higher service class is heavily one profession.
+
+### Coding quality, and one defect the design could not catch
+
+Raw double-blind agreement **90.41%** (3,980 of 4,402 before adjudication), 421
+adjudicated, 139 occupations honestly coded unknown. The two votes came from
+Fable (arch-home's session model, inherited because the workflow names no
+model); the second votes for the 727 singletons and **every adjudication** were
+Opus at high effort, per Matthew's call. Worth recording that the instrument is
+therefore not model-homogeneous.
+
+Validating all 4,402 codes against the published taxonomy found **18 records
+carrying codes that do not exist** — and **all 18 were in the AGREED set**.
+Double-blind coding catches independent error; it cannot catch *correlated*
+error, where both coders make the same mistake and the record never reaches
+adjudication. (The adjudicator separately caught 26 invalid codes among the
+disagreements, which is the same defect surfacing where the design could see
+it.) All were near-misses with unambiguous intent — a real occupation's code
+mistyped, or a retired 2010 SOC code — and were repaired by
+`repair_soc_coding.py`, which documents each mapping. Zero invalid codes remain.
+
+**The general lesson, which applies to the EGP coding too:** an external
+validity check against the source taxonomy is not redundant with double-blind
+agreement. It catches a different class of error, and it should be run on any
+coded instrument this study relies on.
+
+One inconsistency is recorded and deliberately NOT repaired: eight coal-mining
+records split between `47-5041.00` (Continuous Mining Machine Operators) and
+`47-5049.00` (Underground Mining Machine Operators, All Other). Both codes
+exist and both are defensible for a bare "coal miner", so merging them would be
+a re-coding rather than a repair.
