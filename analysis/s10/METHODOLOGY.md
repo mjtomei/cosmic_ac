@@ -1735,6 +1735,55 @@ argument does not rest on the connection. `python olmo_ladder.py report` prints
 the end-to-end row beside the three transitions so the write-up's figures are
 reproducible from the invocation cited for them.
 
+### 6.1c The registered occupational study, and why it has no single model
+
+Added 2026-08-18. `plans/PREREG-occupational-accountability.md` registers a test
+of whether an occupation's *account-giving* profile predicts the register better
+than EGP class does, using the O\*NET-SOC mapping documented in §6.1b. The study
+has not been run; this records its analysis method, because that method is a
+departure from everything else in this file.
+
+**The problem it solves.** Six candidate predictors (two base measures —
+account-giving and sociality — each split by direction of interaction: upward,
+lateral, downward), plus cohort, plus the class dummies. Any single regression
+requires choosing which of those to condition on, and the choice is
+consequential and arbitrary in equal measure. Conditioning on cohort is
+defensible, since cohort is the strongest predictor in the study and is
+confounded with occupation; so is not conditioning on it, since the
+unconditional effect is a separate question. Picking one and reporting it makes
+the analyst's judgement part of the finding.
+
+**What is done instead.** All eight terms are treated as toggles and **every
+subset is fitted** — 2⁸ = 256 specifications, each predictor appearing in 128 —
+and each effect is reported as a distribution across them: median, 5th–95th
+range, and the share of specifications in the predicted direction. Because the
+hypothesis is a *signed pattern* across six cells rather than one coefficient,
+the headline statistic is the share of the 256 in which the whole pattern holds.
+
+**Inference is not taken from the curve.** Reporting 256 fits guarantees some
+will look good by chance, so no p-value is read off them. The test is a
+permutation: shuffle the outcome within chamber, re-run the entire lattice,
+2,000 times, and ask how often the pattern arises under the null. That gives a
+p-value for the pattern, which is the quantity the hypothesis is about.
+
+**Source.** This is specification-curve analysis: Uri Simonsohn, Joseph P.
+Simmons & Leif D. Nelson, "Specification curve analysis," *Nature Human
+Behaviour* 4, no. 11 (2020): 1208–14, doi:10.1038/s41562-020-0912-z — whose
+three steps (enumerate the valid specifications, display them, conduct joint
+inference across all of them) the design follows directly. The wider practice of
+reporting results across all defensible analytic choices rather than one is
+multiverse analysis: Sara Steegen, Francis Tuerlinckx, Andrew Gelman & Wolf
+Vanpaemel, "Increasing Transparency Through a Multiverse Analysis,"
+*Perspectives on Psychological Science* 11, no. 5 (2016): 702–12,
+doi:10.1177/1745691616658637. Both verified 2026-08-18.
+
+**Worth noting against this file's own history.** Several corrections recorded
+here — the per-transition pedestal in §6.1a, the unclustered-inference incidents
+in Appendix A, the education ladder that turned out to be class — were cases
+where a single defensible specification was reported and a different equally
+defensible one would have said something else. The lattice is the structural
+answer to that pattern rather than another instance of catching it afterwards.
+
 ## 6.2 Member-level covariate estimation (class, education, origin)
 
 The §4.6a estimations went through three specifications, in order, each
