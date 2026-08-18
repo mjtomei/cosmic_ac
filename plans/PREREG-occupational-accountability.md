@@ -1,10 +1,11 @@
 # Pre-registration — what occupational property explains the register better than class?
 
-Two base measures (account-giving and sociality) resolved into three
-directional components; three occupational profiles built from them as
-continuous scores; and one prediction — that the **drone** profile tracks
-register use most strongly, with free < managerial < drone. The test is on the
-continuous scores throughout; the three-group shape is a display.
+Two base measures (account-giving and sociality) resolved into four
+components — three directed (U upward, L lateral, D downward) and one
+undirected (N); three occupational profiles built from them as continuous
+scores; and one prediction — that the **drone** profile tracks register use
+most strongly, with free < managerial < drone. The test is on the continuous
+scores throughout; the three-group shape is a display.
 
 **Written 2026-08-17; revised 2026-08-18. No O\*NET element has been joined to
 a member, and no relationship between any element and the register has been
@@ -16,9 +17,13 @@ unusually flexible unless fixed in advance.
 SOC coding (§6.1b of METHODOLOGY) three things touched O\*NET data: which codes
 carry ratings at all, used for the coverage check below; the element values of
 `47-5041.00`, `47-5049.00` and `47-5081.00`, used to decide a coal-mining coding
-question; and the O\*NET occupation list, used to validate codes. None of it
-involved the register outcome, and no element has been regressed on anything.
-Every revision logged in this file was made before any such fit.
+question; and the O\*NET occupation list, used to validate codes. The element
+audit of 2026-08-18 (logged in the Specification) additionally read element
+**names and descriptions** — the content model, not the ratings — and
+`onet_version_compare.py` compared element values *between O\*NET versions*,
+never joining them to members. None of it involved the register outcome, and no
+element has been regressed on anything. Every revision logged in this file was
+made before any such fit.
 
 ## The question
 
@@ -58,33 +63,44 @@ Memos; Documenting/Recording sits under technical activities rather than the
 communication block; and "Structured versus Unstructured Work" no longer exists
 in the taxonomy.
 
-### M1, the account-giving measure (FIXED — no item added, dropped or reweighted)
+### U, the upward component (revised 2026-08-18 by the element audit — logged in the Specification)
 
-The construct is **subordinate account-giving**: rendering your judgment into
-prose for someone above you *and* not holding the final say over it. Reporting
-and autonomy are two faces of one thing rather than two things (Matthew), so
-both enter the composite, with the autonomy items **reverse-scored**.
+The construct is **subordinate account-giving**: rendering your judgment to
+someone above you *and* not holding the final say over it. Reporting and
+autonomy are two faces of one thing rather than two things (Matthew), so both
+enter the composite, with the discretion items **reverse-scored**.
 
-Equally weighted mean of these six, each standardised across occupations. In
-the Specification these are the **upward component (U)** — M2 contributes no
-upward element, so U is built from M1's alone; the direction modifier splits the
-rest of M1 out into the lateral and downward components:
+The first draft of this cell was four documentation items plus two reverse-
+scored autonomy items. The blind element audit dissolved that: every
+documentation item is **undirected** — memos, records and administrative work
+go to clients and subordinates as readily as to superiors — and they now live
+in the undirected component N, where they are measured rather than discarded.
+What survives as genuinely *upward* is one positive element and discretion
+reversed — **"advises but does not decide"**:
 
 | element ID | name | sign | block |
 |---|---|---|---|
-| `4.C.1.a.2.j` | Written Letters and Memos | + | Work Context |
-| `4.A.3.b.6` | Documenting / Recording Information | + | Work Activities |
-| `4.A.4.a.2` | Communicating with Supervisors, Peers, or Subordinates | + | Work Activities |
-| `4.A.4.c.1` | Performing Administrative Activities | + | Work Activities |
+| `4.A.4.b.6` | Providing Consultation and Advice to Others | + | Work Activities |
 | `4.C.3.a.4` | Freedom to Make Decisions | **−** | Work Context |
 | `4.C.3.b.8` | Determine Tasks, Priorities and Goals | **−** | Work Context |
+| `4.A.2.b.4` | Developing Objectives and Strategies | **−** | Work Activities |
+| `4.C.3.a.2.b` | Frequency of Decision Making | **−** | Work Context |
 
-Including autonomy negatively is not a free parameter — it is a prediction, and
-it sharpens the case the hypothesis has to explain. Class I documents heavily
-(lawyers, physicians, senior administrators) but holds high discretion, so the
-reverse-scored terms pull it down; that is precisely the II-over-I crossover the
-composite must reproduce. It also keeps the farmer where the theory wants him:
-low reporting *and* high freedom, low on both halves.
+Equally weighted mean of the five, each standardised across occupations.
+Consultation is the single best positively-coded upward element O\*NET holds —
+"rendering one's judgment to a party above who can accept or overrule it" —
+and it was re-derived 3/3 by both blind arms. Developing Objectives (3/3
+reverse) and Frequency of Decision Making (2/3 reverse, admitted on Matthew's
+call) join the two original discretion items: setting long-range objectives and
+making frequent consequential decisions are what *holding* the final say looks
+like in O\*NET's vocabulary.
+
+Including discretion negatively is not a free parameter — it is a prediction,
+and it sharpens the case the hypothesis has to explain. Class I holds high
+discretion (lawyers, physicians, senior administrators), so the reverse-scored
+terms pull it down; that is precisely the II-over-I crossover the composite
+must reproduce. It also keeps the farmer where the theory wants him: nobody to
+advise *and* full freedom, low on both halves.
 
 **O\*NET's occupation-level education requirement is out.** An earlier version
 gave the models that term — Job Zone / Education Level Required — as the
@@ -134,12 +150,12 @@ prediction about **how to read the result**, and as two fixed secondary tests:
 
 **Pre-specified decomposition (secondary, not a re-definition).** The composite
 is reported first and is what the hypothesis stands or falls on. Alongside it,
-and fixed here, the two halves are also reported separately — the four
-accountability items as one score, the two autonomy items as another — so it is
+and fixed here, the two halves are also reported separately — Consultation as
+one score, the four reverse-scored discretion items as another — so it is
 visible which half carries the result. This is a decomposition of a fixed
-composite, not licence to re-weight it: if the autonomy half does all the work,
-that is reported as such and the hypothesis is revised in a later study, not
-here.
+composite, not licence to re-weight it: if the discretion half does all the
+work, that is reported as such and the hypothesis is revised in a later study,
+not here.
 
 ### The full element set
 
@@ -178,10 +194,14 @@ Media* `2.C.9.b`, *Sociology and Anthropology* `2.C.4.f`, *Therapy and
 Counseling* `2.C.5.b`, *Law and Government* `2.C.8.b`.
 
 **Deliberate negative controls**, already in the pool and flagged so their
-selection is interpretable: *Spend Time Sitting* `4.C.2.d.1.a`, *Indoors,
-Environmentally Controlled* `4.C.2.a.1.a`, *Physical Proximity* `4.C.2.a.3`. If
-these predict as well as the composite, the model has found "office job" rather
-than anything about language.
+selection is interpretable: *Spend Time Sitting* `4.C.2.d.1.a` and *Indoors,
+Environmentally Controlled* `4.C.2.a.1.a`. If these predict as well as the
+composite, the model has found "office job" rather than anything about
+language. An earlier draft listed *Physical Proximity* `4.C.2.a.3` as a third
+control; the blind audit placed it in N unanimously as undirected sociality
+(working near people is working with people), so it moved from control to
+instrument and this is logged rather than done silently. Sitting and Indoors
+remain controls — nothing about a chair or a roof is interaction.
 
 ### Coverage check (specified here; results at the end of this file)
 
@@ -223,9 +243,9 @@ not available and is not claimed.
 **Revised 2026-08-18, before any O\*NET data was joined**, and logged rather
 than applied silently. The first version fitted four competing models and gave
 one of them a covariate the incumbent lacked. The structure below is Matthew's:
-two base measures, each **varied by direction of interaction**, giving six
-predictors plus their combination — direction is a *modifier* of the proxies,
-not a rival construct.
+two base measures **resolved by direction of interaction** into four
+components, three directed and one undirected — direction is a *modifier* of
+the proxies, not a rival construct.
 
 Member-level, canonical spec (`member_level_estimation.py`): one observation per
 legislator, equal weight, register z-scored within chamber against the chamber's
@@ -250,12 +270,20 @@ choice this study should be making on the analyst's judgement.
 - **M2 — sociality.** Working with people rather than things (RIASEC Social
   against Realistic, and the people-serving activities).
 
-### Resolved by direction into three components
+### Resolved by direction into four components
 
-| | upward (U) | lateral (L) | downward (D) |
-|---|---|---|---|
-| **M1** account-giving | `4.C.1.a.2.j` Written Letters and Memos · `4.A.3.b.6` Documenting/Recording · `4.A.4.a.2` Communicating with Supervisors · `4.A.4.c.1` Administrative Activities · **+ `4.C.3.a.4` Freedom to Make Decisions and `4.C.3.b.8` Determine Tasks reverse-scored** | `4.A.4.a.3` Communicating with People Outside the Organization · `4.A.4.a.4` Establishing and Maintaining Interpersonal Relationships | `4.A.4.b.1` Coordinating the Work of Others · `4.A.4.c.2` Staffing Organizational Units · `4.A.4.c.3` Monitoring and Controlling Resources · **`1.B.3.al` Management/Administration** |
-| **M2** sociality | *(empty — no such element exists)* | `1.B.1.d` Social minus `1.B.1.a` Realistic · `4.A.4.a.5` Assisting and Caring for Others · `4.A.4.a.8` Working Directly with the Public | `4.A.4.b.3` Training and Teaching Others · `4.A.4.b.4` Guiding, Directing and Motivating Subordinates · `4.A.4.b.5` Coaching and Developing Others |
+Revised 2026-08-18 from the blind element audit (below); the previous
+three-component grid is in git history.
+
+| | upward (U) | lateral (L) | downward (D) | undirected (N) |
+|---|---|---|---|---|
+| **M1** account-giving | `4.A.4.b.6` Providing Consultation and Advice · **`4.C.3.a.4` Freedom to Make Decisions, `4.C.3.b.8` Determine Tasks, `4.A.2.b.4` Developing Objectives and Strategies, `4.C.3.a.2.b` Frequency of Decision Making, all reverse-scored** | `4.A.4.a.3` Communicating with People Outside the Organization | `4.A.4.b.1` Coordinating the Work of Others · `4.A.4.c.2` Staffing Organizational Units · `4.A.4.c.3` Monitoring and Controlling Resources | `4.A.3.b.6` Documenting/Recording · `4.A.4.c.1` Administrative Activities · `4.C.1.a.2.j` Written Letters and Memos · `4.C.1.a.2.h` E-Mail · `2.A.1.c` Writing · `4.A.2.a.2` Processing Information · `4.A.2.a.3` Evaluating Information for Compliance · `4.A.3.b.2` Drafting/Specifying Technical Documents · `2.C.1.b` Administrative knowledge · `1.B.3.ai` Accounting · `1.B.3.ak` Office Work · `1.B.1.f` Conventional |
+| **M2** sociality | *(empty — no such element exists)* | `1.B.1.d` Social minus `1.B.1.a` Realistic · `4.A.4.a.5` Assisting and Caring for Others · `4.A.4.a.8` Working Directly with the Public | `4.A.4.b.3` Training and Teaching Others · `4.A.4.b.4` Guiding, Directing and Motivating Subordinates · `4.A.4.b.5` Coaching and Developing Others · `1.B.3.al` Management/Administration | `4.A.4.a.4` Establishing and Maintaining Interpersonal Relationships · `4.C.1.a.4` Contact With Others · `4.C.1.a.2.l` Face-to-Face Discussions · `4.C.1.a.2.f` Telephone Conversations · `4.C.2.a.3` Physical Proximity · `4.C.1.d.1` Conflict Situations · `2.B.1.d` Negotiation · `2.B.1.b` Coordination · `1.D.2.d` Cooperation · `1.D.2.f` Social Orientation · `4.A.4.a.1` Interpreting Information for Others |
+| **both** | | | | `4.A.4.a.2` Communicating with Supervisors, Peers, or Subordinates *(pools all three directions — which is why it is here)* |
+
+`1.B.3.al` Management/Administration sits in M2's downward cell per the audit's
+measure votes (an earlier draft had it in M1's row); the row assignment matters
+only for the M1/M2 robustness splits, and the change is logged here.
 
 **The upward-sociality cell is empty, not weak (Matthew).** O\*NET has no
 element for sociality directed at a superior. An earlier draft filled the cell
@@ -264,12 +292,29 @@ rule for discounting it — which is to register a prediction about a quantity t
 study never computes. The cell is now simply empty, and it needs no rule
 anywhere: not in the scoring, not in the counting, not in the permutation test.
 
-**The three components are the full columns**, each the equally weighted mean of
+**The four components are the full columns**, each the equally weighted mean of
 its standardised elements across both base measures:
 
-    U  upward     M1's six upward elements                (M2 contributes none)
-    L  lateral    M1's two + M2's three                   (5 elements)
-    D  downward   M1's three + M2's three + Mgmt/Admin     (7 elements)
+    U  upward      consultation + four discretion items reversed   (5, all M1)
+    L  lateral     M1's one + M2's three                           (4 entries, 5 elements)
+    D  downward    M1's three + M2's four                          (7 elements)
+    N  undirected  M1's twelve + M2's eleven + one both            (24 elements)
+
+**N is the column Matthew added** when the audit rejected Written Letters and
+Memos for lacking direction: that exposed a hole in the structure, not the
+element. The study cares about undirected account-giving and sociality too — a
+job can be built around rendering account without O\*NET recording to whom.
+With N available, every documentation item that had been forced into U migrated
+there unanimously, and Letters and Memos itself, zero votes in both three-cell
+arms, returned 3/3. N's contents are the 24 elements unanimous in the four-cell
+blind run; its M1/M2 tags are the coders' own measure votes, near-all unanimous.
+
+**The writing-media cluster is quarantined in M1-N and declared circular-
+adjacent**: Writing, E-Mail, Letters and Memos, Documenting/Recording measure
+how writing-heavy a job is, and the outcome is a written register. **N without
+those four is a pre-specified split**, so whether N's result survives on
+non-writing elements (administration, compliance, contact, negotiation) is
+visible rather than absorbed.
 
 **`1.B.3.al` Management/Administration is added to D on Matthew's judgement that
 it belongs there**, and is the one element in the instrument drawn from O\*NET
@@ -285,47 +330,85 @@ they cut against each other:
   machine-generated register, a machine-generated predictor is not circular but
   is worth naming.
 
-It costs almost nothing in coverage: complete-on-all-elements falls from 894
-occupations to 862, but those 32 are occupations no member in the corpus held,
-so member-slot coverage moves 6,170 → 6,168, both 87.7%.
+Coverage of the full four-component instrument was measured, not assumed
+(`instrument_v2_coverage.py`): N's new descriptor families — Work Styles,
+Essential and Transferable Skills, Knowledge, the interest files — rate the
+same occupation set, so the 41-element instrument is complete on the same 862
+occupations and the same 6,168 member slots (87.7%) as the 19-element version.
 
-**D with and without it is a pre-specified split**, exactly as U is split on the
-autonomy items. If the element is doing real work the two agree; if D's result
+**D with and without `1.B.3.al` is a pre-specified split**, it being the one
+element Matthew placed by judgement before the audit (which then re-derived it
+3/3 in all three runs). If it is doing real work the two agree; if D's result
 depends on it, that is reported rather than absorbed.
 
 Nothing is missing from a column: the upward component is built from the
-elements that exist, which happen to be M1's. The autonomy items sit in **U**,
-reverse-scored, because not holding the final say is what makes reporting
-*upward* rather than merely frequent.
+elements that exist, which happen to be M1's. The discretion items sit in **U**,
+reverse-scored, because not holding the final say is what makes advice *upward*
+rather than merely frequent.
+
+### How the cells were fixed: three blind derivations (2026-08-18)
+
+The first draft of every cell was one person's hand assembly, and that process
+had already been caught wrong once (it left Management/Administration out of D
+until Matthew put it in). The contents above were therefore re-derived rather
+than defended: three workflow runs (`workflows/element_audit*.js`, results in
+`element_audit_*.json`, comparisons in `element_audit_compare.py` and
+`element_audit_4col_compare.py`), each showing three independent fable-medium
+coders the construct in plain language and a slice of **all 295 O\*NET 30.3
+elements carrying per-occupation ratings** — eleven descriptor families, not
+just the two the draft drew from — with an element carried at 2-of-3.
+
+  1. **anchored** — coders saw the draft cells and could challenge them;
+  2. **unanchored** — no draft shown, the anchoring control;
+  3. **four-cell** — no draft, N added, after Matthew diagnosed the structure.
+
+Coders read element names and descriptions only — never per-occupation values,
+never anything about the register. Decision rules, fixed before reading
+results: migrations agreed by the blind runs are applied; N's membership is the
+four-cell run's unanimous set; 2-of-3 elements enter only by Matthew's explicit
+call (one: Frequency of Decision Making). What the audit found beyond the cells
+— strong lateral and downward candidates like Selling or Influencing Others,
+Deal With External Customers, and the HR/resource-management cluster — is **not
+admitted**: the audit's job was to check the construct, not to widen it, and
+those candidates are parked with the free-model future work.
 
 ### The three versions: free, managerial, drone
 
-Each profile is a signed weighting of the same three components — which
-directions the occupation is engaged in, and which it is spared:
+Each profile is a signed weighting of the same four components — which kinds
+of interaction the occupation is engaged in, and which it is spared. **N's
+signs are Matthew's (2026-08-18): positive in managerial and drone, negative in
+free** — undirected interaction is organisational life, and the free profile is
+low on everything, paperwork and proximity included:
 
-| profile | U | L | D | the occupation |
-|---|---|---|---|---|
-| **free** | − | − | − | answers to nobody and commands nobody |
-| **managerial** | − | + | + | commands others; reports comparatively little |
-| **drone** | **+** | **+** | **−** | reports up, serves sideways, directs nobody |
+| profile | U | L | D | N | the occupation |
+|---|---|---|---|---|---|
+| **free** | − | − | − | − | answers to nobody, commands nobody, largely alone |
+| **managerial** | − | + | + | + | commands others; reports comparatively little |
+| **drone** | **+** | **+** | **−** | **+** | reports up, serves sideways, directs nobody |
 
 Each is the weighted mean of the standardised components, so all three are on a
-common scale and an occupation has a score on all of them.
+common scale and an occupation has a score on all of them. The three 4-vectors
+are linearly independent (rank 3), and the pairwise contrasts have a clean
+geometry worth registering so nobody discovers it as a surprise: **drone vs
+managerial is carried by U and D alone** (both are +L, +N); free vs managerial
+by L, D and N; free vs drone by U, L and N. Each pair shares exactly the
+components on which the two profiles agree.
 
 **Why the profiles are built on the pooled columns and not within M1 and M2
 separately.** The obvious alternative — three versions of M1 and three of M2,
 giving six — is unavailable for M2, and not as a matter of degree. With the
-upward cell empty, M2's profiles reduce to weightings over L and D alone:
+upward cell empty, M2's profiles reduce to weightings over L, D and N alone:
 
-    drone_M2       L +1,  D −1
-    managerial_M2  L +1,  D +1
-    free_M2        L −1,  D −1   ==  −1 × managerial_M2
+    drone_M2       L +1,  D −1,  N +1
+    managerial_M2  L +1,  D +1,  N +1
+    free_M2        L −1,  D −1,  N −1   ==  −1 × managerial_M2
 
-`free_M2` is the exact antipode of `managerial_M2`. Within M2 the three profiles
-span one axis with two poles, so "managerial intermediate between free and
-drone" is not merely unsupported there — it is algebraically impossible, and a
-model fitting all three within M2 is rank-deficient. Pooling the columns
-restores the third dimension (the three pooled profile vectors have rank 3).
+`free_M2` is still the exact antipode of `managerial_M2` — free and managerial
+differ only on components where M2 has elements, and they differ by pure sign
+flip. Within M2 the three profiles span two dimensions with an antipodal pair,
+so "managerial intermediate between free and drone" remains impossible there,
+and a model fitting all three within M2 is rank-deficient. Pooling the columns
+restores the third dimension (the three pooled profile 4-vectors have rank 3).
 
 **M1 alone is still reported, as a robustness split**, since M1 has all three
 components and supports all three profiles on its own. **M2 alone is reported
@@ -343,15 +426,15 @@ against everything else the study already knows.**
 Small and focused. The question is whether the occupational grid carries signal
 at all, and whether the profile that carries it is the drone.
 
-    each component, alone                   z ~ U               (x3)
-    the three components jointly            z ~ U + L + D
+    each component, alone                   z ~ U               (x4)
+    the four components jointly             z ~ U + L + D + N
     each profile, alone                     z ~ drone           (x3)
     the incumbent, for scale                z ~ EGP class dummies
 
 **The profiles are never entered together.** They are three contrasts over the
-same three components, so a model holding all three is the component model
-rewritten — no new information, and rank-deficient once the constant is in.
-`U + L + D` *is* the joint profile model; the profile fits are how it is read.
+same four components, so a model holding all three is a restriction of the
+component model — no new information beyond it. `U + L + D + N` *is* the joint
+model the profiles are read against; the profile fits are how it is read.
 For the same reason there is no separate `combined` term: the profiles are the
 combinations.
 
@@ -377,8 +460,8 @@ lattice so that no covariate is privileged as a control:
               prominence      log article length
 
 Five toggles is 2⁵ = 32 specifications, each predictor appearing in 16. If
-Stage 1 settles on the three components rather than a single profile score, the
-toggle count rises accordingly (seven toggles, 128 specifications) — still
+Stage 1 settles on the four components rather than a single profile score, the
+toggle count rises accordingly (eight toggles, 256 specifications) — still
 seconds of compute, so the lattice is always enumerated rather than sampled.
 
 **What is reported per predictor**, over the specifications containing it:
@@ -391,18 +474,20 @@ seconds of compute, so the lattice is always enumerated rather than sampled.
 - the extreme specifications named: which controls have to be in or out to move
   it most
 
-**The pattern statistic is three signs, and it is counted over the
+**The pattern statistic is four signs, and it is counted over the
 specifications that can exhibit it.** A specification omitting D has no sign for
-D, so the pattern is only checkable where all three components are present. That
+D, so the pattern is only checkable where all four components are present. That
 count is stated explicitly alongside the share, so a count like "holds in 8 of 8"
 is never mistaken for one out of the full lattice. The permutation test uses
-this same three-sign statistic, so the null distribution is the distribution of
+this same four-sign statistic, so the null distribution is the distribution of
 the statistic actually reported.
 
-**Three signs is a weaker conjunction than six, and deliberately so.** A
-six-cell pattern sounds more demanding but was not: two of its cells were thin
-or empty, so it bought its apparent stringency with noise. Three well-measured
-signs at a 1-in-8 null rate is the honest version of the same test.
+**Four signs is a weaker conjunction than the original six, and deliberately
+so.** The six-cell pattern sounded more demanding but was not: two of its cells
+were thin or empty, so it bought its apparent stringency with noise. Four
+audited signs at a 1-in-16 null rate is the honest version of the same test —
+and N's sign is the least secure of the four, resting partly on the quarantined
+writing cluster, which is why the N-without-writing split exists.
 
 **Inference is not taken from the curve.** Reporting many fits guarantees some
 will look good by chance. The test is a **permutation**: shuffle the register
@@ -421,29 +506,35 @@ doi:10.1177/1745691616658637. Its three steps — enumerate, display, joint
 inference — are what Stage 2 implements.
 
 **Pre-specified subsets**, fixed here and read off Stage 1: U against D (does
-reporting up beat commanding down?); the three components with the autonomy
-items removed from U, which separates *reporting to someone* from *lacking the
-final say* — the two are conflated in U by construction, and the manual classes
-are where they come apart (prediction 6); and **D without `1.B.3.al`**, which is
-the only AI-sourced element in the instrument.
+advising up beat commanding down?); U decomposed into Consultation alone and
+the discretion items alone, which separates *advising someone* from *lacking
+the final say* — the two are conflated in U by construction, and the manual
+classes are where they come apart (prediction 6); **D without `1.B.3.al`**;
+**N without the writing-media cluster** (Writing, E-Mail, Letters and Memos,
+Documenting/Recording), the circularity quarantine; and **N split into its M1
+and M2 halves**, with the one both-tagged element (`4.A.4.a.2`) appearing in
+each half and flagged as such.
 
 ## Pre-specified predictions
 
 ### The sign pattern (Matthew) — the drone profile
 
 The register is predicted to belong to the occupation that **reports upward,
-serves laterally, and commands nobody**. As signs on the three components, in
+serves laterally, and commands nobody**. As signs on the four components, in
 the joint fit:
 
 | component | predicted | reading |
 |---|---|---|
-| **U** upward | **+** | rendering judgment to someone above |
+| **U** upward | **+** | advising someone above, without the final say |
 | **L** lateral | **+** | serving people who are not superiors |
 | **D** downward | **−** | commanding suppresses it |
+| **N** undirected | **+** | undirected account-giving and contact — organisational life |
 
-**Three signs, all measured, none excluded.** Every component is built from
+**Four signs, all measured, none excluded.** Every component is built from
 elements that exist, so there is no cell to discount and no counting rule to
-write. The permutation test uses this same three-sign statistic.
+write. The permutation test uses this same four-sign statistic. N's + follows
+from its profile weights (positive in both organisational profiles, negative in
+free) and is the least secure of the four — see the writing quarantine.
 
 The signs are equivalent to the profile ordering below — `drone` is exactly the
 weighting (+, +, −) — and are stated separately because the component fit and
@@ -462,13 +553,14 @@ Each profile is a continuous score every occupation holds, so this is an
 ordering of slopes rather than of groups; the profiles below name the ends of
 each continuum, not bins that occupations fall into.
 
-- **free** (−U, −L, −D) — answers to nobody and commands nobody; high autonomy,
-  low on every directed component. Farmers, sole practitioners, own-account
-  tradespeople.
-- **managerial** (−U, +L, +D) — commands others and is comparatively spared
-  reporting. Executives, general managers, senior administrators.
-- **drone** (+U, +L, −D) — reports up and serves sideways while directing
-  nobody. Teachers, nurses, social workers, caseworkers.
+- **free** (−U, −L, −D, −N) — answers to nobody, commands nobody, works
+  largely alone; high discretion, low on every kind of interaction, directed or
+  not. Farmers, sole practitioners, own-account tradespeople.
+- **managerial** (−U, +L, +D, +N) — commands others, lives in the
+  organisational thick, and is comparatively spared answering upward.
+  Executives, general managers, senior administrators.
+- **drone** (+U, +L, −D, +N) — advises up, serves sideways, swims in paperwork
+  and contact, directs nobody. Teachers, nurses, social workers, caseworkers.
 
 **Why managerial is predicted intermediate rather than lowest**, on this study's
 own prior findings rather than on intuition:
@@ -489,14 +581,14 @@ downward cell is negative but the upward cell is not zero for them. The free
 profile has neither.
 
 **How it is tested — continuously (Matthew).** Every occupation carries a score
-on all three profiles: the weighted mean of its standardised U, L and D under
+on all three profiles: the weighted mean of its standardised U, L, D and N under
 that profile's signs. **These scores, not any grouping of them, are the test.**
-O\*NET rates the same elements for every occupation it rates — verified, and
-all-or-nothing rather than patchy: of the 923 occupations appearing in these
-files, 879 carry all sixteen activity and context elements and 44 carry none of
-them (only the machine-learning interest scores). No element is selectively
-missing for some occupations, so the three components are dense, continuous, and
-on a common footing across the whole occupation list.
+O\*NET's coverage is by family rather than by element — verified
+(`instrument_v2_coverage.py`): no element is selectively missing within a
+family, and the 41-element instrument is complete on 862 of the 923 occupations
+appearing in these files, exactly the set the 19-element version was complete
+on. The four components are dense, continuous, and on a common footing across
+the whole occupation list.
 
 The registered prediction is therefore an ordering of **continuous slopes**,
 each profile score entered alone and standardised, so the coefficients are
@@ -586,9 +678,10 @@ the right direction is not partial support, it is noise.
    cohort is absent is reported as a statement about generations rather than
    occupations.
 3. **U is the strongest single component.** If any one predictor carries the
-   result it should be upward account-giving. If the `drone` profile beats every
-   individual component by a wide margin, the construct is diffuse rather than
-   specific and should be described that way.
+   result it should be upward account-giving — registered before the audit
+   narrowed U to consultation-plus-discretion, and kept unchanged after it. If
+   the `drone` profile beats every individual component by a wide margin, the
+   construct is diffuse rather than specific and should be described that way.
 4. **Upward sociality is not tested and no claim rests on it.** O\*NET has no
    element for it, so it is absent from the instrument rather than measured
    badly. Nothing in the predictions above or below depends on it, and no result
@@ -609,11 +702,12 @@ the right direction is not partial support, it is noise.
    hold effective autonomy the nominal scales miss — but that reading was
    adopted *after* seeing them there, so it earns no credit unless the
    effective-autonomy score places them near farmers independently.
-7. **Police are predicted to be MISSED.** Police other-ranks write heavily, so
-   they score high on U, yet they sit at −0.200. Recorded as an expected
-   failure in advance; no component will be modified to accommodate them. A simple
-   grid that misses one occupation is more informative than a bespoke rule that
-   misses none.
+7. **Police are predicted to be MISSED.** Police other-ranks write heavily and
+   hold little recognised discretion, so they score high on N (the paperwork
+   cluster) and high on U (through reversal), yet they sit at −0.200. Recorded
+   as an expected failure in advance; no component will be modified to
+   accommodate them. A simple grid that misses one occupation is more
+   informative than a bespoke rule that misses none.
 8. **The two-factor account is NOT tested here.** It needs education in the
    model and education is deliberately out, so the components absorb whatever
    education would have explained. No result here bears on demand-versus-ability;
@@ -664,8 +758,9 @@ the model comparison, and cannot be used to revise the composite.
 **A second side study: the specific interest areas as an occupational map
 (Matthew).** O\*NET 30.3 adds 41 Specific Interest Areas — `1.B.3.f`
 Agriculture, `1.B.3.z` Social Service, `1.B.3.ao` Law, `1.B.3.an` Politics and
-the rest — on a 1–7 scale across 891 occupations. Only Management/Administration
-enters the instrument. The others are a far finer occupational description than
+the rest — on a 1–7 scale across 891 occupations. Four interest elements enter
+the instrument (Management/Administration in D; Accounting, Office Work and
+RIASEC Conventional in N). The others are a far finer occupational description than
 either EGP's seven classes or this study's three components, and asking what
 they say about the register is interesting in its own right rather than as a
 check on anything here. Agriculture in particular gives a direct read on the
@@ -699,6 +794,13 @@ more when the whole instrument rests on it.
 ---
 
 ## Coverage check, run 2026-08-17 BEFORE any model was fitted
+
+**Addendum 2026-08-18, after the element audit** (`instrument_v2_coverage.py`):
+the revised 41-element instrument draws on eight descriptor families, and every
+family added by N rates the same occupation set as the original two, so nothing
+below changes — complete on 862 occupations, 6,168 member slots, 87.7%. The
+figures in the table were computed against the 19-element draft and are
+retained as written.
 
 As required above. SOC mapping completed by double-blind coding with
 adjudication (`workflows/soccode.js` on arch-home for the two votes,
