@@ -95,6 +95,35 @@ def main():
             ("front_line", fl)):
         print(f"   {lab:<26s}n={len(v2):>5,}  mean z {np.mean(v2):+.3f}  "
               f"(se {np.std(v2)/math.sqrt(len(v2)):.3f})")
+    levels_table(rows)
+
+
+def levels_table(rows):
+    """Section 3: the four-level slopes under BOTH constructions (Matthew).
+    Charged ladder = the component-built free/bottom/middle/top from the
+    ladder exploration; uncharged = the blind level signatures. Same shape in
+    both: middle peak, top below it, free floor, bottom ~0."""
+    LAD = {"free": (-1, 0, -1, -1), "bottom": (+1, -1, -1, +1),
+           "middle": (+1, -1, +1, +1), "top": (-1, -1, +1, +1)}
+    for r in rows:
+        for k, w in LAD.items():
+            r["lad_" + k] = sum(wi * r["comp_" + c]
+                                for wi, c in zip(w, "ULDN")) / 4
+    print("\n3. four-level slopes, both constructions (each entered alone):")
+    print(f"   {'level':<9s}{'charged':>18s}{'uncharged':>18s}")
+    for lv in ("free", "bottom", "middle", "top"):
+        out = []
+        for key in ("lad_" + lv, "lvl_" + lv.upper()):
+            x = np.array([r[key] for r in rows])
+            x = (x - x.mean()) / x.std()
+            y = np.array([r["z"] for r in rows])
+            X = np.column_stack([np.ones(len(y)), x])
+            XtXi = np.linalg.pinv(X.T @ X)
+            b = XtXi @ (X.T @ y)
+            e = y - X @ b
+            V = (len(y) / (len(y) - 2)) * XtXi @ ((X * (e**2)[:, None]).T @ X) @ XtXi
+            out.append(f"{b[1]:+.3f} (t {b[1]/math.sqrt(V[1,1]):+.1f})")
+        print(f"   {lv:<9s}{out[0]:>18s}{out[1]:>18s}")
 
 
 if __name__ == "__main__":
