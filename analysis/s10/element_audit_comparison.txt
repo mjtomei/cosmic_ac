@@ -1,0 +1,99 @@
+                 noms  2-of-3  unanimous  singletons
+  anchored        141      48         42           3
+  unanchored      164      55         45           9
+
+========================================================================
+1. DOES EACH ARM RE-DERIVE THE HAND-BUILT INSTRUMENT?
+========================================================================
+  element                                                     anch  unanch
+  D 1.B.3.al    Management/Administration                        3       3
+  D 4.A.4.b.1   Coordinating the Work and Activities of Ot       3       3
+  D 4.A.4.b.3   Training and Teaching Others                     3       3
+  D 4.A.4.b.4   Guiding, Directing, and Motivating Subordi       3       3
+  D 4.A.4.b.5   Coaching and Developing Others                   3       3
+  D 4.A.4.c.2   Staffing Organizational Units                    3       3
+  D 4.A.4.c.3   Monitoring and Controlling Resources             3       3
+  L 1.B.1.a     Realistic                                        2       0   <- one arm
+  L 1.B.1.d     Social                                           3       3
+  L 4.A.4.a.3   Communicating with People Outside the Orga       3       3
+  L 4.A.4.a.4   Establishing and Maintaining Interpersonal       3       0   <- one arm
+  L 4.A.4.a.5   Assisting and Caring for Others                  3       3
+  L 4.A.4.a.8   Performing for or Working Directly with th       3       3
+  U 4.A.3.b.6   Documenting/Recording Information                3       3
+  U 4.A.4.a.2   Communicating with Supervisors, Peers, or        3       0   <- one arm
+  U 4.A.4.c.1   Performing Administrative Activities             3       2
+  U 4.C.1.a.2.j Written Letters and Memos                        0       0   <- neither
+  U 4.C.3.a.4   Freedom to Make Decisions                        3       3
+  U 4.C.3.b.8   Determine Tasks, Priorities and Goals            3       3
+
+  re-derived by anchored:   18 of 19
+  re-derived by unanchored: 15 of 19
+  re-derived by BOTH:       15 of 19
+
+========================================================================
+2. FOUND BY BOTH ARMS, NOT IN THE INSTRUMENT  <- strongest candidates
+========================================================================
+  D 1.D.1.i     Leadership Orientation                  3+3/6  [Work Styles]
+  D 1.B.3.aj    Human Resources                         3+3/6  [Specific Interest Areas]
+  D 4.C.1.c.2   Work Outcomes and Results of Other Wor  3+3/6  [Work Context]
+  D 4.A.4.b.2   Developing and Building Teams           3+3/6  [Work Activities]
+  D 2.B.5.b     Management of Financial Resources       3+3/6  [Transferable Skills]
+  D 2.C.6       Education and Training                  3+3/6  [Knowledge]
+  D 2.C.1.f     Personnel and Human Resources           3+3/6  [Knowledge]
+  D 2.B.5.c     Management of Material Resources        3+3/6  [Transferable Skills]
+  D 2.C.1.a     Administration and Management           3+3/6  [Knowledge]
+  D 4.A.2.b.5   Scheduling Work and Activities          3+3/6  [Work Activities]
+  D 4.C.1.b.1.g Coordinate or Lead Others in Accomplis  3+3/6  [Work Context]
+  D 2.B.5.d     Management of Personnel Resources       3+3/6  [Transferable Skills]
+  D 1.B.3.y     Teaching/Education                      3+2/6  [Specific Interest Areas]
+  D 2.B.1.e     Instructing                             2+3/6  [Transferable Skills]
+  L 4.A.4.a.7   Resolving Conflicts and Negotiating wi  3+3/6  [Work Activities]
+  L 4.A.4.a.6   Selling or Influencing Others           3+3/6  [Work Activities]
+  L 2.B.1.f     Service Orientation                     3+3/6  [Transferable Skills]
+  L 4.C.1.b.1.f Deal With External Customers or the Pu  3+3/6  [Work Context]
+  L 2.C.1.e     Customer and Personal Service           3+3/6  [Knowledge]
+  L 1.B.3.z     Social Service                          3+3/6  [Specific Interest Areas]
+  L 1.B.3.ac    Personal Service                        3+3/6  [Specific Interest Areas]
+  L 4.C.1.d.2   Dealing With Unpleasant, Angry, or Dis  3+3/6  [Work Context]
+  L 1.B.3.am    Public Speaking                         2+3/6  [Specific Interest Areas]
+  L 1.B.3.ad    Professional Advising                   2+3/6  [Specific Interest Areas]
+  L 1.B.3.aa    Health Care Service                     2+2/6  [Specific Interest Areas]
+  U 1.B.1.f     Conventional                            3+3/6  [Career Interest Types]
+  U 4.A.4.b.6   Providing Consultation and Advice to O  3+3/6  [Work Activities]
+  U 1.B.3.ak    Office Work                             3+2/6  [Specific Interest Areas]
+  (28 pairs)
+
+========================================================================
+3. UNANCHORED ONLY -- nothing pointed the coders at these
+========================================================================
+  D 1.B.3.ae    Business Initiatives                    2/3  [Specific Interest Areas]
+  D 2.A.2.d     Monitoring                              2/3  [Essential Skills]
+  D 4.A.2.b.4   Developing Objectives and Strategies    2/3  [Work Activities]
+  D 4.A.3.b.2   Drafting, Laying Out, and Specifying T  2/3  [Work Activities]
+  D 4.C.1.c.1   Health and Safety of Other Workers      3/3  [Work Context]
+  L 1.B.3.af    Sales                                   3/3  [Specific Interest Areas]
+  L 1.B.3.ag    Marketing/Advertising                   2/3  [Specific Interest Areas]
+  L 2.B.1.d     Negotiation                             3/3  [Transferable Skills]
+  L 2.C.1.d     Sales and Marketing                     3/3  [Knowledge]
+  L 4.C.1.b.1.e Work With or Contribute to a Work Grou  2/3  [Work Context]
+  U 1.B.3.ai    Accounting                              3/3  [Specific Interest Areas]
+  U 4.A.2.a.3   Evaluating Information to Determine Co  3/3  [Work Activities]
+
+========================================================================
+4. ANCHORED ONLY -- candidate anchoring artifacts
+========================================================================
+  U 2.C.1.b     Administrative                          3/3  [Knowledge]
+  U 4.A.2.b.4   Developing Objectives and Strategies    2/3  [Work Activities]
+
+========================================================================
+5. WHAT KIND OF ELEMENT IS EACH ARM REACHING FOR?
+========================================================================
+  descriptor family            in instrument  anchored  unanchored
+  Career Interest Types                    2         3           2
+  Essential Skills                         0         0           1
+  Knowledge                                0         5           5
+  Specific Interest Areas                  1         9          13
+  Transferable Skills                      0         5           6
+  Work Activities                         13        19          19
+  Work Context                             3         6           8
+  Work Styles                              0         1           1

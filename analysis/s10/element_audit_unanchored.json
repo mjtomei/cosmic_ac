@@ -1,0 +1,695 @@
+{
+ "nominations": 164,
+ "consensus": 55,
+ "singletons": 9,
+ "consensus_pairs": [
+  {
+   "id": "1.B.1.d",
+   "cell": "L",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Lateral: helping, advising, and providing service to others is serving sideways, but this is an interest rating (what incumbents are drawn to), so weaker evidence.",
+    "Helping, advising, and providing service to others is serving sideways, but as an interest type it reflects what incumbents are drawn to rather than what the work demands.",
+    "Social interest \u2014 helping, assisting, providing service to others \u2014 is service pointed at clients and the public, but it is an interest rating rather than a work demand."
+   ]
+  },
+  {
+   "id": "1.B.1.f",
+   "cell": "U",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Work defined by following procedures and regulations is the no-discretion face of upward accountability \u2014 rules, not the worker, hold the final say; interest rating, so weaker evidence.",
+    "Conventional work 'involves following procedures and regulations' \u2014 the no-discretion face of upward accountability; low confidence because it is an interest rating and partly topical.",
+    "'Following procedures and regulations to organize information' is the low-discretion, account-keeping pole of work \u2014 upward-facing subordination to rules \u2014 but it is an interest rating, hence weak evidence."
+   ]
+  },
+  {
+   "id": "1.B.3.ac",
+   "cell": "L",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Lateral: providing personal services to individual clients is sideways service; interest-area rating, so weak evidence of what the work demands.",
+    "Providing personal services to individuals is client-facing lateral service; interest-area rating, so weak evidence.",
+    "Personal Service is providing services directly to individual clients \u2014 sideways service \u2014 but as a specific interest area it reflects attraction rather than requirement."
+   ]
+  },
+  {
+   "id": "1.B.3.ad",
+   "cell": "L",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Lateral: expert advising and counseling of clients points sideways, but it shades into instruction and is only an interest rating.",
+    "Providing expert advice and counseling to clients on careers and development is serving sideways, but it is an interest rating and the recipients' relation is only implicit.",
+    "Providing expert advice and counseling to clients is serving sideways \u2014 but as an interest area it reflects attraction rather than demand."
+   ]
+  },
+  {
+   "id": "1.B.3.af",
+   "cell": "L",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Selling is inherently directed at customers \u2014 lateral service \u2014 but this is an interest rating.",
+    "Selling goods or services is directed at clients and the public, but as an interest rating it is weak evidence of what the work demands.",
+    "Selling goods or services is client-facing sideways service, but this is an interest rating, weaker evidence than an activity."
+   ]
+  },
+  {
+   "id": "1.B.3.ai",
+   "cell": "U",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Upward, weakly: maintaining and auditing records and accounts is literally account-rendering work whose output exists for review by others, but it is an interest area and auditing can also point the other way.",
+    "Accounting work consists of maintaining and preparing records subject to audit and review \u2014 producing account for oversight above \u2014 but it is an interest area and the auditing half points the other way.",
+    "Accounting work is literally maintaining and auditing records for external/superior review \u2014 account-rendering \u2014 but this is an interest rating, so weaker evidence."
+   ]
+  },
+  {
+   "id": "1.B.3.aj",
+   "cell": "D",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Downward: recruiting, selecting, training, and reviewing employees is staffing and controlling other people; interest-area rating, so slightly weaker evidence.",
+    "Recruiting, selecting, training, administering compensation, and conducting performance reviews is staffing and controlling personnel \u2014 downward; interest rating, so evidence is somewhat weaker.",
+    "Recruiting, selecting, training, and conducting performance reviews is staffing and personnel control \u2014 downward \u2014 but it is an interest rating, so weaker evidence."
+   ]
+  },
+  {
+   "id": "1.B.3.al",
+   "cell": "D",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Work involves directing operations and overseeing personnel \u2014 clearly downward, but an interest rating so weaker evidence.",
+    "Planning, directing and overseeing personnel and operations points downward; medium because it is an interest rating, not an activity demand.",
+    "Work involves planning, directing and overseeing personnel \u2014 clearly downward, but it is an interest-area rating rather than an activity demand."
+   ]
+  },
+  {
+   "id": "1.B.3.am",
+   "cell": "L",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Speaking before an audience is directed at outside publics, neither above nor below the speaker; interest rating, so weaker evidence.",
+    "Speaking before an audience points laterally at the public, but it is an interest rating and the audience relationship is not accountability",
+    "Speaking before an audience is outward-facing engagement with the public, a lateral direction; interest rating, so weak evidence."
+   ]
+  },
+  {
+   "id": "1.B.3.z",
+   "cell": "L",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Lateral: providing social services and assistance to the public is serving sideways; interest-area rating, so weaker than an activity rating.",
+    "Providing social services and assistance to the public is lateral service to non-superiors/non-subordinates; interest rating, so weaker evidence.",
+    "Providing social services and assistance to clients is lateral service to non-superiors/non-subordinates; interest rating, so weak evidence."
+   ]
+  },
+  {
+   "id": "1.D.1.i",
+   "cell": "D",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Tendency to lead, take charge, and provide direction points downward; work style rather than activity, so weaker evidence.",
+    "Work style: tendency to take charge and provide direction \u2014 downward command disposition, though a disposition rather than a job requirement.",
+    "Tendency to take charge and provide direction points explicitly downward; work-style rather than activity rating, so slightly weaker"
+   ]
+  },
+  {
+   "id": "2.B.1.d",
+   "cell": "L",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Reconciling differences among parties is typically dealing with peers or outside parties, but the item states no direction explicitly.",
+    "Reconciling differences between parties is typically dealing with peers or outside parties who are neither superiors nor subordinates, though the item names no direction explicitly.",
+    "Negotiation reconciles differences between parties treated as peers or outside counterparts \u2014 lateral in typical use, but the direction is not fixed by the definition."
+   ]
+  },
+  {
+   "id": "2.B.1.e",
+   "cell": "D",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Teaching others how to do something is instructing \u2014 directing the conduct of people below or under your guidance.",
+    "Teaching others how to do something is instructing \u2014 the D construct's own verb \u2014 though it is a skill rather than an activity rating",
+    "Teaching others how to do something points downward -- the instructor directs the learner's conduct; a skill rather than an activity, hence medium."
+   ]
+  },
+  {
+   "id": "2.B.1.f",
+   "cell": "L",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Actively looking for ways to help people is sideways service to clients and the public; direction is implicit but consistent.",
+    "Skill of actively seeking to help people \u2014 sideways service to clients/public; a skill rather than a context item, hence medium.",
+    "Actively looking for ways to help people describes service pointed sideways at clients and the public, not up or down"
+   ]
+  },
+  {
+   "id": "2.B.5.b",
+   "cell": "D",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Determining how money is spent is controlling resources \u2014 downward command over budgets; medium because 'accounting for expenditures' carries a secondary upward-reporting face.",
+    "Determining how money is spent is controlling resources (downward), though the 'accounting for expenditures' clause carries an upward-reporting flavor that muddies the direction",
+    "Determining how money is spent is command over resources (downward control), though the 'accounting for expenditures' clause carries a minor upward face."
+   ]
+  },
+  {
+   "id": "2.B.5.c",
+   "cell": "D",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Directing the acquisition and use of equipment and materials is downward control of resources.",
+    "Skill of obtaining and directing the use of equipment and materials \u2014 controlling resources, downward.",
+    "Obtaining and directing the use of equipment and materials is control over resources, the downward face of the construct"
+   ]
+  },
+  {
+   "id": "2.B.5.d",
+   "cell": "D",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Downward: motivating, developing, and directing people as they work is supervision itself; a skill element, but it names the directed activity rather than a capacity.",
+    "Motivating, developing, and directing people as they work is the downward-command activity; though filed as a skill, it names the directed activity rather than a capacity.",
+    "Management of personnel resources \u2014 motivating, developing, and directing people, staffing decisions \u2014 is directly the activity of commanding others, despite being filed as a skill."
+   ]
+  },
+  {
+   "id": "2.C.1.a",
+   "cell": "D",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Knowledge element, but knowledge of resource allocation, leadership technique, and coordination of people is required precisely of jobs that command \u2014 a direct indicator of downward-directed work.",
+    "Knowledge of leadership, resource allocation, and coordination of people is a direct indicator that the job involves commanding people and resources; knowledge rating, so weaker than an activity.",
+    "Administration and Management knowledge covers leadership, resource allocation, and coordination of people \u2014 a knowledge proxy for holding downward command, indirect because it measures knowing rather than doing."
+   ]
+  },
+  {
+   "id": "2.C.1.d",
+   "cell": "L",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Knowledge element, but selling and promoting is by nature directed at clients and the public, so the knowledge indicates lateral-facing work.",
+    "Selling to customers is client-facing sideways interaction, but this is a knowledge area rather than an activity requirement.",
+    "Sales and marketing knowledge is required only where the work faces customers laterally, so the knowledge proxies the client-facing activity \u2014 but it is knowledge, not the activity itself."
+   ]
+  },
+  {
+   "id": "2.C.1.e",
+   "cell": "L",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Knowledge element, but its content is entirely client-directed: assessing customer needs and serving customers is the sideways-serving activity itself, so possessing it directly indicates lateral service work.",
+    "Serving customers and clients \u2014 people who are neither superiors nor subordinates; knowledge element, but its content is precisely the sideways-service activity",
+    "Knowledge element, but it directly indexes serving clients and customers -- people who are neither superiors nor subordinates -- so it indicates lateral service."
+   ]
+  },
+  {
+   "id": "2.C.1.f",
+   "cell": "D",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Knowledge element, but recruitment, selection, compensation and labor relations are competencies exercised only by those staffing and supervising others \u2014 a direct indicator of downward direction.",
+    "Knowledge of staffing, selection, compensation and labor relations \u2014 a direct indicator of jobs that staff and manage subordinates; knowledge element, so medium.",
+    "Knowledge element, but staffing, selection, and compensation procedures are a direct indicator of supervising and staffing others"
+   ]
+  },
+  {
+   "id": "2.C.6",
+   "cell": "D",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Knowledge of teaching and curriculum design indicates jobs whose core is instructing others (downward), but it is knowledge, not the activity itself.",
+    "Knowledge of teaching and training design \u2014 proxies instructing others (downward), but is knowledge rather than activity.",
+    "Knowledge element, but curriculum design and instruction of others directly indicates the downward activity of teaching"
+   ]
+  },
+  {
+   "id": "4.A.2.a.3",
+   "cell": "U",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Work consisting of judging events against laws, regulations, and standards places the worker inside an external rule regime whose authority stands above their own judgment; direction is implied rather than stated, hence low.",
+    "Work whose judgments must be squared against laws, regulations, or standards \u2014 rule-bound justification rather than free discretion; low because the worker here is the evaluator, not necessarily the one overruled.",
+    "Judgment exercised against external laws, regulations, and standards \u2014 rule-bound work without final say \u2014 but the element does not name who overrules the worker, so direction is inferred."
+   ]
+  },
+  {
+   "id": "4.A.2.b.5",
+   "cell": "D",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Scheduling 'the work of others' is allocating and controlling other people's activity \u2014 downward direction; activity rating, though the item mixes in scheduling events generally.",
+    "Scheduling 'the work of others' is controlling other people's activity \u2014 downward direction; slightly diluted by scheduling of events generally.",
+    "Scheduling 'the work of others' is directing and allocating other people's activity \u2014 commanding, though the element also covers scheduling events generally."
+   ]
+  },
+  {
+   "id": "4.A.3.b.6",
+   "cell": "U",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Upward: entering, recording, and maintaining written records is the documentary face of rendering account \u2014 the paper trail exists so someone above can review it; direction to a superior is implied rather than stated, hence medium.",
+    "Documenting/recording information is the paper-trail act of rendering account \u2014 producing the written record someone above can inspect; direction to a superior is implicit rather than stated, hence medium.",
+    "Documenting/recording information is the paperwork face of rendering account \u2014 records exist to be reviewed and audited by the organisation above the worker; U names documenting explicitly."
+   ]
+  },
+  {
+   "id": "4.A.4.a.3",
+   "cell": "L",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Activity explicitly directed at people outside the organization \u2014 customers, public, government \u2014 the definition of serving sideways.",
+    "Activity explicitly directed at people outside the organization \u2014 customers, the public, external bodies \u2014 the definition of serving sideways.",
+    "Activity explicitly directed at people outside the organization \u2014 customers, the public, government \u2014 the definition of serving sideways."
+   ]
+  },
+  {
+   "id": "4.A.4.a.5",
+   "cell": "L",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Providing personal assistance and care to customers, patients, or coworkers is serving people who are neither superiors nor subordinates.",
+    "Activity of providing care and assistance to customers, patients, coworkers \u2014 serving people who are neither superiors nor subordinates.",
+    "Providing care and assistance to customers, patients, and others is serving people who are neither superiors nor subordinates"
+   ]
+  },
+  {
+   "id": "4.A.4.a.6",
+   "cell": "L",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Lateral: convincing customers and others to change their minds is persuasion of outsiders and clients, sideways-facing; the target is not a superior or subordinate.",
+    "Selling or influencing others points at customers and outside parties \u2014 persuading people over whom one has no authority, a lateral interaction activity.",
+    "Selling or influencing others points at customers and outside parties \u2014 neither superiors nor subordinates \u2014 so the interaction is sideways."
+   ]
+  },
+  {
+   "id": "4.A.4.a.7",
+   "cell": "L",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Lateral: handling complaints, settling disputes, and negotiating are interactions with clients, the public, or peers rather than up or down the hierarchy; direction is implied rather than stated.",
+    "Handling complaints, settling disputes, and negotiating is service to clients, the public, and outside parties \u2014 lateral interaction, not commanding or reporting.",
+    "Handling complaints, grievances, and negotiations is characteristically done with clients, the public, or outside parties \u2014 lateral \u2014 though the item leaves the counterpart unspecified."
+   ]
+  },
+  {
+   "id": "4.A.4.a.8",
+   "cell": "L",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Dealing directly with the public, customers, clients \u2014 serving sideways, the lateral construct verbatim; an activity rating, direction explicit.",
+    "Dealing directly with the public, customers, clients \u2014 interaction pointed sideways at people who are neither superiors nor subordinates.",
+    "Dealing directly with the public, customers, clients \u2014 serving sideways to people who are neither superiors nor subordinates; an activity rating with explicit direction."
+   ]
+  },
+  {
+   "id": "4.A.4.b.1",
+   "cell": "D",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Activity of getting group members to work together \u2014 directing others' work, downward.",
+    "Activity of getting group members to work together \u2014 directing others' work, pointing downward.",
+    "Activity of coordinating and directing the work of others \u2014 commanding downward."
+   ]
+  },
+  {
+   "id": "4.A.4.b.2",
+   "cell": "D",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Building and encouraging teams is a leadership/management activity done from above the team; medium because the wording stresses mutuality rather than command.",
+    "Building and encouraging a team is leadership work directed at people below or around you whom you shape and mobilize",
+    "Building and leading teams is directing others; the activity presumes a leadership position over the team members."
+   ]
+  },
+  {
+   "id": "4.A.4.b.3",
+   "cell": "D",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Teaching and instructing others is downward-directed activity \u2014 the worker directs learners.",
+    "Activity of instructing and developing training for others \u2014 instructing is downward direction per the construct.",
+    "Teaching and instructing others is directing people below or under one's guidance; activity rating"
+   ]
+  },
+  {
+   "id": "4.A.4.b.4",
+   "cell": "D",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Downward by definition: providing direction to subordinates, setting and monitoring their performance \u2014 a direct activity measure of commanding.",
+    "Directly measures supervising: guidance, performance standards, monitoring of subordinates \u2014 the commanding direction itself, as a work activity.",
+    "Guiding, directing, and motivating subordinates, setting and monitoring their performance standards, is the downward-command construct verbatim."
+   ]
+  },
+  {
+   "id": "4.A.4.b.5",
+   "cell": "D",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Downward: coaching, mentoring, and developing others is instructing subordinates/juniors \u2014 a directed activity rating.",
+    "Identifying others' developmental needs and coaching/mentoring them is instructing and developing people below or under one's charge \u2014 the downward face.",
+    "Activity of coaching, mentoring, and developing others \u2014 instructing people whose development you are responsible for, the downward face of interaction."
+   ]
+  },
+  {
+   "id": "4.A.4.b.6",
+   "cell": "U",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Providing expert advice 'to management' is rendering one's judgment to those who hold the decision \u2014 the adviser argues, the superior disposes; direction is upward though 'other groups' dilutes it.",
+    "Providing guidance and expert advice TO MANAGEMENT \u2014 rendering reasoned judgment upward to people who hold the final say and can accept or reject it.",
+    "Providing expert advice to management \u2014 presenting one's judgment in prose to people above who decide; advisory rather than deciding role points upward, though 'or other groups' dilutes the direction."
+   ]
+  },
+  {
+   "id": "4.A.4.c.2",
+   "cell": "D",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Recruiting, hiring, and promoting employees is staffing \u2014 commanding people, squarely downward.",
+    "Recruiting, hiring and promoting employees is staffing \u2014 commanding the composition of the organization beneath you",
+    "Recruiting, hiring and promoting employees is staffing -- controlling people and positions below you; a core downward activity."
+   ]
+  },
+  {
+   "id": "4.A.4.c.3",
+   "cell": "D",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Monitoring and controlling resources and overseeing spending is commanding resources, the downward face of the construct.",
+    "Activity of controlling resources and overseeing spending \u2014 commanding resources, the D construct directly.",
+    "Monitoring and controlling resources and overseeing spending is commanding resources downward; activity rating"
+   ]
+  },
+  {
+   "id": "4.C.1.b.1.f",
+   "cell": "L",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Lateral: dealing with external customers or the general public is serving sideways, explicitly directed, and a work-context rating.",
+    "Context rating that directly measures dealing with external customers and the general public \u2014 interaction pointed sideways at people who are neither superiors nor subordinates.",
+    "Work-context item explicitly about dealing with external customers and the general public \u2014 interaction pointed sideways, at people who are neither superiors nor subordinates."
+   ]
+  },
+  {
+   "id": "4.C.1.b.1.g",
+   "cell": "D",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Coordinating or leading others in accomplishing work is directing people \u2014 downward even without formal supervisory title; work-context rating with explicit direction.",
+    "Coordinating or leading others in accomplishing work is directing people below or beside you \u2014 commanding, even short of formal supervision.",
+    "Coordinating or leading others in accomplishing work is directing people; the 'not as a supervisor' qualifier softens but does not reverse the downward direction; context rating."
+   ]
+  },
+  {
+   "id": "4.C.1.c.1",
+   "cell": "D",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Context item on responsibility for other workers' health and safety \u2014 a supervisory charge over others, downward.",
+    "Responsibility for the health and safety of other workers usually accompanies supervisory charge over them, but the item does not state supervision directly.",
+    "Context rating of responsibility for other workers' health and safety \u2014 being in charge of others' welfare points downward, though it measures charge rather than command."
+   ]
+  },
+  {
+   "id": "4.C.1.c.2",
+   "cell": "D",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Responsibility for the work outcomes of other workers is the context signature of supervision \u2014 accountability pointing down through you at subordinates.",
+    "Responsibility for other workers' outcomes is the context signature of supervision \u2014 accountability pointing down at subordinates' work",
+    "Context rating of responsibility for other workers' outcomes -- direct measure of supervising and answering FOR subordinates, i.e. commanding downward."
+   ]
+  },
+  {
+   "id": "4.C.1.d.2",
+   "cell": "L",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Lateral: frequent dealing with unpleasant or angry individuals is a context measure of facing the public and clients \u2014 people who are neither superiors nor subordinates.",
+    "Dealing with unpleasant or angry individuals is face-to-face service to the public/clients \u2014 sideways interaction with people who are neither superiors nor subordinates, measured as work context.",
+    "Dealing with unpleasant, angry, or discourteous people is characteristically front-line contact with the public and clients \u2014 serving sideways, with no authority over them."
+   ]
+  },
+  {
+   "id": "4.C.3.a.4",
+   "cell": "U",
+   "subset": 0,
+   "n": 3,
+   "reverse": 3,
+   "why": [
+    "Decision-making freedom without supervision is the direct opposite of answering upward for one's judgment; context rating, reverse-scored per the construct.",
+    "Work-context item measuring decision freedom without supervision \u2014 the direct opposite of answering upward for one's judgment, so reverse-scored into U.",
+    "Decision-making freedom without supervision is autonomy, the stated opposite of upward accountability; context rating, reverse-scored into U"
+   ]
+  },
+  {
+   "id": "4.C.3.b.8",
+   "cell": "U",
+   "subset": 4,
+   "n": 3,
+   "reverse": 3,
+   "why": [
+    "Context item measuring freedom to set own tasks, priorities and goals \u2014 autonomy, the opposite of answering upward, so reverse-scored.",
+    "Context rating of freedom to set own tasks, priorities and goals \u2014 autonomy is the opposite of upward accountability, so reverse-scored into U.",
+    "Work-context rating of freedom to set own tasks, priorities and goals \u2014 autonomy is the stated opposite of answering upward, so it belongs in U reverse-scored."
+   ]
+  },
+  {
+   "id": "1.B.3.aa",
+   "cell": "L",
+   "subset": 5,
+   "n": 2,
+   "reverse": 0,
+   "why": [
+    "Providing care services to individuals is serving clients sideways; interest rating, so weak.",
+    "Providing services directly to individuals (patients/clients) is lateral serving; interest rating and topic-heavy, so weak evidence."
+   ]
+  },
+  {
+   "id": "1.B.3.ae",
+   "cell": "D",
+   "subset": 3,
+   "n": 2,
+   "reverse": 0,
+   "why": [
+    "Creating strategic plans to expand an organization is direction-setting with the final say \u2014 the commanding pole; interest rating with direction only implicit.",
+    "Creating strategic plans to expand an organization is controlling resources and setting direction \u2014 the holder of final say; interest rating and direction only implicit, hence low confidence."
+   ]
+  },
+  {
+   "id": "1.B.3.ag",
+   "cell": "L",
+   "subset": 5,
+   "n": 2,
+   "reverse": 0,
+   "why": [
+    "Promoting to an outside public points sideways at clients and markets; interest rating, so weak.",
+    "Promoting products or an image to the public is sideways-facing work toward outside audiences; interest rating, so weak evidence."
+   ]
+  },
+  {
+   "id": "1.B.3.ak",
+   "cell": "U",
+   "subset": 3,
+   "n": 2,
+   "reverse": 0,
+   "why": [
+    "Clerical/administrative support work is the archetypal low-discretion role executing tasks set from above; interest rating and direction only implicit, hence low.",
+    "Clerical/administrative record-keeping and documentation for an organization is support work rendered without final say; interest rating, so weak evidence."
+   ]
+  },
+  {
+   "id": "1.B.3.y",
+   "cell": "D",
+   "subset": 1,
+   "n": 2,
+   "reverse": 0,
+   "why": [
+    "Downward: teaching through lectures and demonstrations is instructing others, which the D definition names explicitly; low because it is an interest rating and pupils are not organisational subordinates.",
+    "Teaching is instructing others, which the D definition names, though students sit ambiguously between subordinates and clients and this is only an interest rating."
+   ]
+  },
+  {
+   "id": "2.A.2.d",
+   "cell": "D",
+   "subset": 0,
+   "n": 2,
+   "reverse": 0,
+   "why": [
+    "Assessing others' and organizations' performance to take corrective action is supervisory, but the element mixes in self-monitoring, blurring direction.",
+    "Assessing performance of other individuals/organizations to take corrective action leans supervisory, but the item mixes in self-monitoring, blurring direction."
+   ]
+  },
+  {
+   "id": "4.A.2.b.4",
+   "cell": "D",
+   "subset": 2,
+   "n": 2,
+   "reverse": 0,
+   "why": [
+    "Establishing long-range objectives and the strategies to achieve them is holding the final say and directing an organisation's course \u2014 the commanding rather than accounting end.",
+    "Establishing long-range objectives and strategies is the command side of work \u2014 setting direction others execute rather than justifying decisions upward \u2014 though the item does not name the people directed."
+   ]
+  },
+  {
+   "id": "4.A.3.b.2",
+   "cell": "D",
+   "subset": 4,
+   "n": 2,
+   "reverse": 0,
+   "why": [
+    "Documentation and instructions telling others how work is to be done \u2014 instructing points downward, though the recipients could be peers.",
+    "Providing documentation and detailed instructions to tell others how work is to be done \u2014 instructing others is downward, though the technical content dilutes it."
+   ]
+  },
+  {
+   "id": "4.A.4.c.1",
+   "cell": "U",
+   "subset": 4,
+   "n": 2,
+   "reverse": 0,
+   "why": [
+    "Paperwork and file-keeping is the documentary face of rendering account, though the item names no explicit superior.",
+    "Maintaining files and processing paperwork is the documenting face of rendering account, though the recipient's direction is only implied."
+   ]
+  },
+  {
+   "id": "4.C.1.b.1.e",
+   "cell": "L",
+   "subset": 1,
+   "n": 2,
+   "reverse": 0,
+   "why": [
+    "Lateral: importance of contributing to a work group measures peer-directed interaction, though it says nothing about the public or clients and mixes in hierarchy-neutral teamwork.",
+    "Working with or contributing to a work group or team is interaction with peers, whom the L definition names explicitly; context rating, though generic teamwork is a broad measure."
+   ]
+  }
+ ],
+ "singleton_pairs": [
+  {
+   "id": "1.B.3.ah",
+   "cell": "D"
+  },
+  {
+   "id": "4.C.1.a.2.c",
+   "cell": "L"
+  },
+  {
+   "id": "1.B.3.y",
+   "cell": "L"
+  },
+  {
+   "id": "2.B.4.e",
+   "cell": "U"
+  },
+  {
+   "id": "1.B.1.e",
+   "cell": "D"
+  },
+  {
+   "id": "4.A.2.b.4",
+   "cell": "U"
+  },
+  {
+   "id": "2.C.1.b",
+   "cell": "U"
+  },
+  {
+   "id": "4.A.2.b.6",
+   "cell": "U"
+  },
+  {
+   "id": "2.C.5.b",
+   "cell": "L"
+  }
+ ]
+}

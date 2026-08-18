@@ -1,0 +1,579 @@
+{
+ "nominations": 141,
+ "consensus": 48,
+ "singletons": 3,
+ "challenges_seconded": 3,
+ "consensus_pairs": [
+  {
+   "id": "1.B.1.d",
+   "cell": "L",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Social interest (helping, assisting, providing service to others) points sideways to clients and the public; interest rating, and its descriptor also includes teaching/advising which leans D, so weak.",
+    "Social interest -- helping, advising, providing service to others -- points sideways at clients and the public; interest rating, weaker evidence, and the draft's Realistic-subtraction partner is not in this slice.",
+    "Helping, advising, and providing service to others points sideways at clients and the public; an interest rating, so weaker than an activity, and it also bundles teaching, which the draft treats as downward."
+   ]
+  },
+  {
+   "id": "1.B.1.f",
+   "cell": "U",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Conventional interest is defined by following procedures and regulations to handle information \u2014 the positive face of low discretion that the draft captures via reverse-scored autonomy; interest rating, so weak evidence",
+    "Conventional work is defined as following procedures and regulations rather than exercising discretion \u2014 the no-final-say face of upward accountability; interest rating, so weaker evidence",
+    "Upward: work defined by following procedures and regulations set by others is the no-discretion face of upward accountability; interest rating and partly topical, so weak"
+   ]
+  },
+  {
+   "id": "1.B.3.ac",
+   "cell": "L",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Personal Service \u2014 providing services to individual clients \u2014 is serving sideways to people who are neither superiors nor subordinates; interest rating, so flagged weak per rule 5.",
+    "Personal Service interest -- providing services to individuals -- is sideways service to clients; interest rating, so weak evidence.",
+    "Providing personal services to individuals is serving sideways, but it is an interest rating and narrow in scope."
+   ]
+  },
+  {
+   "id": "1.B.3.aj",
+   "cell": "D",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Interest rating (weaker evidence, flagged); the described work \u2014 selecting, training, administering, and reviewing employees \u2014 is control of personnel, pointing downward.",
+    "Recruiting, selecting, training, and reviewing employees is staffing and controlling people \u2014 downward \u2014 but this is an interest rating, weaker than an activity",
+    "Interest rating (weaker evidence), but recruiting, selecting, training staff and conducting performance reviews is squarely staffing-and-supervising work pointed downward, matching 4.A.4.c.2 Staffing already in D."
+   ]
+  },
+  {
+   "id": "1.B.3.ak",
+   "cell": "U",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "clerical/administrative record-keeping and document-editing is the subordinate documentation work paralleling the draft's Performing Administrative Activities; interest rating, so weak evidence",
+    "Clerical/administrative record-keeping and document-editing work parallels the draft's Performing Administrative Activities; interest rating, so weaker evidence",
+    "Upward: clerical/administrative record-keeping and document work is subordinate procedural labor without final say; interest rating, so weaker evidence than an activity"
+   ]
+  },
+  {
+   "id": "1.B.3.al",
+   "cell": "D",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "planning, directing, coordinating operations and overseeing personnel points downward; confidence capped because it is an interest rating, not an activity or context rating",
+    "planning, directing, coordinating operations and overseeing personnel points downward; interest rating, so weaker than activity evidence",
+    "Interest rating (weaker evidence class), but the description is explicitly directional: planning, directing, coordinating operations and overseeing personnel \u2014 downward command."
+   ]
+  },
+  {
+   "id": "1.B.3.y",
+   "cell": "D",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Teaching/Education interest parallels the draft's Training and Teaching Others (D): instruction points downward to students; interest rating, so weaker evidence per rule 5.",
+    "Teaching/Education interest -- instructing learners through lectures parallels the draft's Training and Teaching Others in D; interest rating and only weakly directional, so low confidence.",
+    "Instructing students parallels the draft's placement of Training and Teaching Others in D, but it is an interest rating and teaching sits awkwardly between commanding and serving -- low confidence."
+   ]
+  },
+  {
+   "id": "1.B.3.z",
+   "cell": "L",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Interest rating (weaker evidence, flagged); providing social services and assistance to children and adults is serving sideways, parallel to Assisting and Caring for Others already in L.",
+    "Providing social services to improve others' well-being mirrors the draft's Assisting and Caring for Others \u2014 lateral service \u2014 but as an interest rating it is weak",
+    "Interest rating (weaker evidence), but providing social services and assistance to clients is serving sideways, the interest-level counterpart of 4.A.4.a.5 Assisting and Caring for Others in L."
+   ]
+  },
+  {
+   "id": "1.D.1.i",
+   "cell": "D",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "A tendency to lead, take charge and provide direction points explicitly downward, though as a work style it is disposition rather than task demand",
+    "Tendency to take charge and provide direction points downward, but it is a work-style disposition rather than a job requirement \u2014 weaker evidence, like the interest items.",
+    "tendency to take charge and provide direction at work is explicitly downward; a work style (disposition), so weaker than an activity rating"
+   ]
+  },
+  {
+   "id": "2.B.1.f",
+   "cell": "L",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Actively looking for ways to help people points at clients and the public \u2014 sideways service \u2014 though as a skill it is one step from a task rating",
+    "Actively looking for ways to help people is service directed at clients and the public, but as a skill it names no explicit counterpart, so direction is inferred.",
+    "actively looking for ways to help people is sideways service to clients/public; a skill rather than an activity, but its direction is explicit"
+   ]
+  },
+  {
+   "id": "2.B.5.b",
+   "cell": "D",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Determining how money is spent is controlling resources, parallel to Monitoring and Controlling Resources in D; the 'accounting for expenditures' clause has an upward tinge, hence medium.",
+    "determining how money is spent to get work done is controlling resources \u2014 the skill counterpart of the draft's Monitoring and Controlling Resources; skill not activity, hence medium",
+    "Determining how money is spent is controlling resources, parallel to 4.A.4.c.3; skill-file element but described as an activity of command over resources."
+   ]
+  },
+  {
+   "id": "2.B.5.c",
+   "cell": "D",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Obtaining and directing the use of equipment and materials is resource command, the skill twin of Monitoring and Controlling Resources",
+    "Obtaining and directing the use of equipment, facilities and materials is resource command, parallel to 4.A.4.c.3 but a skill rating rather than an activity.",
+    "skill of obtaining and directing use of equipment/facilities/materials \u2014 resource command, the skill counterpart of Monitoring and Controlling Resources"
+   ]
+  },
+  {
+   "id": "2.B.5.d",
+   "cell": "D",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Management of Personnel Resources \u2014 motivating, developing, directing people as they work \u2014 is a skill rating rather than an activity, but the capacity it names IS the directed downward activity, so it passes rule 3's exception.",
+    "Management of Personnel Resources -- motivating, developing, directing people -- is directionally downward; a skill rather than an activity, but the skill just IS the directed activity.",
+    "A skill rather than an activity, but its content is unambiguously downward -- motivating, developing, and directing people as they work is a direct indicator that the job involves supervising."
+   ]
+  },
+  {
+   "id": "2.C.1.a",
+   "cell": "D",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Administration and Management knowledge (leadership, resource allocation, coordination of people) indicates a commanding role, but it is knowledge rather than activity; direct parallel of the draft's Management/Administration interest.",
+    "Administration and Management knowledge (leadership, resource allocation, coordinating people) indicates jobs that command; knowledge rating, so weaker than the activity elements it shadows.",
+    "Knowledge, not activity, but the knowledge named (leadership technique, resource allocation, coordination of people) is specifically the knowledge of directing others; low because staff advisers can hold it without commanding anyone."
+   ]
+  },
+  {
+   "id": "2.C.1.b",
+   "cell": "U",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Knowledge element, so a capacity not a task; nominated anyway because knowledge of files, records, forms, and office procedure is a direct indicator of the documentary account-rendering that defines U (the paperwork through which one answers to the organisation above).",
+    "Knowledge element, but administrative/records/forms knowledge is a direct indicator of the documenting-and-paperwork face of upward accountability that the draft's Documenting and Administrative Activities items capture",
+    "Knowledge element, so weaker under rule 3, but knowledge of files, records, forms, and office procedure is a direct indicator of the documentary record-keeping work that constitutes upward accountability (companion to 4.A.4.c.1 Performing Administrative Activities already in U)."
+   ]
+  },
+  {
+   "id": "2.C.1.e",
+   "cell": "L",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Knowledge element, but customer-service knowledge is required only where the job consists of serving clients and the public sideways -- a direct indicator of the lateral activity; low per rule 3.",
+    "customer-service knowledge is a direct indicator of jobs that serve clients and the public sideways; knowledge element, so weaker than an activity rating",
+    "Customer-service knowledge is a direct indicator of a job built on serving clients and the public sideways; knowledge element, but the capacity exists only where the lateral activity does."
+   ]
+  },
+  {
+   "id": "2.C.1.f",
+   "cell": "D",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Knowledge of recruitment, selection, compensation and labor relations is held almost only by jobs that staff and supervise others \u2014 the knowledge twin of Staffing Organizational Units",
+    "Knowledge of recruitment, selection, compensation and labor relations is required only where the job staffs and manages people; a knowledge proxy for downward personnel authority.",
+    "HR knowledge (recruitment, selection, labor relations) is required precisely by jobs that staff and supervise others \u2014 knowledge proxy for the draft's Staffing element"
+   ]
+  },
+  {
+   "id": "2.C.6",
+   "cell": "D",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Curriculum and instruction knowledge indicates jobs that teach and train others (downward per the draft's Training and Teaching placement), but it is knowledge, not activity",
+    "Curriculum and instruction knowledge is demanded only where the job teaches others; knowledge proxy for the downward activity 4.A.4.b.3.",
+    "knowledge of teaching and training design is a direct indicator that the job involves instructing others; knowledge proxy for Training and Teaching Others"
+   ]
+  },
+  {
+   "id": "4.A.2.b.5",
+   "cell": "D",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "scheduling 'the work of others' is allocating and controlling other people's activity \u2014 commanding, not reporting",
+    "Scheduling 'the work of others' is controlling other people's activity \u2014 downward direction; the self-scheduling half of the item dilutes it slightly",
+    "Downward: scheduling the work of others is directing other people's time and activities"
+   ]
+  },
+  {
+   "id": "4.A.3.b.6",
+   "cell": "U",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Documenting/recording information is the paper trail by which work is rendered accountable to someone above; already the draft's core U activity and I independently agree.",
+    "Documenting/recording is the paper trail of rendering account -- producing the written record someone above can inspect; matches draft placement.",
+    "Documenting/recording is the prose face of rendering account -- records exist to be inspected by someone with authority over the work; direction is implicit rather than stated, hence medium."
+   ]
+  },
+  {
+   "id": "4.A.4.a.2",
+   "cell": "U",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "explicitly names providing information to supervisors \u2014 the clearest upward-reporting activity available, though the item bundles peers and subordinates into the same rating, diluting direction",
+    "Only element that names communication to supervisors as a job task; upward reporting is the construct, though the item pools supervisors with peers and subordinates, which dilutes direction",
+    "Upward: providing information to supervisors is the core rendering-account activity, though the item pools supervisors with peers and subordinates, diluting direction"
+   ]
+  },
+  {
+   "id": "4.A.4.a.3",
+   "cell": "L",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "explicitly directed at people outside the organization -- customers, the public, external bodies; the canonical sideways-serving activity",
+    "explicitly directed outside the organization \u2014 customers, the public, government \u2014 the definition of serving sideways",
+    "Activity explicitly directed outside the organisation \u2014 customers, public, government \u2014 the canonical sideways interaction."
+   ]
+  },
+  {
+   "id": "4.A.4.a.4",
+   "cell": "L",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Developing cooperative working relationships with 'others' generically -- the canonical sideways interaction; already in the draft and correctly placed.",
+    "developing cooperative relationships with others is sideways-facing interaction, neither commanding nor reporting; already the draft's L anchor and correctly so",
+    "Developing cooperative relationships with others is the sideways-relations activity; matches the draft L placement, though 'others' is not fully direction-specified."
+   ]
+  },
+  {
+   "id": "4.A.4.a.5",
+   "cell": "L",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Providing care and assistance to customers, patients, coworkers is serving people who are neither superiors nor subordinates",
+    "Providing care and assistance to customers, patients, coworkers is serving people who are neither superiors nor subordinates \u2014 sideways service.",
+    "providing care and assistance to customers, patients, coworkers \u2014 serving people who are neither superiors nor subordinates"
+   ]
+  },
+  {
+   "id": "4.A.4.a.6",
+   "cell": "L",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Selling or Influencing Others points at customers and outside parties \u2014 lateral counterparts \u2014 though it is persuasion rather than service, so not the purest L marker.",
+    "Selling or influencing others points at customers and outside parties -- persuasion of people who are neither superiors nor subordinates.",
+    "Selling and persuading are done to customers and outside parties -- people who are neither superiors nor subordinates -- so the interaction points sideways."
+   ]
+  },
+  {
+   "id": "4.A.4.a.7",
+   "cell": "L",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Handling complaints, settling disputes, negotiating with others is characteristically done with clients, the public, and outside parties \u2014 lateral in practice, though the wording does not name the counterpart.",
+    "Handling complaints, settling disputes, negotiating \u2014 interactions with parties who are neither superiors nor subordinates (complainants, counterparties, the public)",
+    "Handling complaints, settling disputes, negotiating with others \u2014 dealing with parties who are neither superiors nor subordinates (complainants, counterparties); sits in the same 4.A.4.a lateral-interaction family as the current L set."
+   ]
+  },
+  {
+   "id": "4.A.4.a.8",
+   "cell": "L",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "dealing directly with the public, customers, clients \u2014 serving sideways to people who are neither superiors nor subordinates",
+    "Dealing directly with the public, customers, clients \u2014 the definitional lateral-service activity; already in the draft and correctly so",
+    "Lateral: dealing directly with the public, clients, and guests is serving sideways by definition"
+   ]
+  },
+  {
+   "id": "4.A.4.b.1",
+   "cell": "D",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "getting members of a group to work together is directing others' work; points downward",
+    "getting others to work together is directing subordinate activity \u2014 points downward",
+    "Activity of getting others to work together \u2014 directing the work of other people, pointing downward."
+   ]
+  },
+  {
+   "id": "4.A.4.b.2",
+   "cell": "D",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Building and motivating a team is a supervisory act on the 4.A.4.b management branch, of a piece with Guiding/Directing Subordinates; medium because 'team members' could include peers.",
+    "building trust and cooperation among team members is a team-leadership activity in the 4.A.4.b supervisory cluster, pointing downward like its siblings",
+    "Building teams is leading people below you, of a piece with the 4.A.4.b guiding/coaching family already in D."
+   ]
+  },
+  {
+   "id": "4.A.4.b.3",
+   "cell": "D",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Instructing and developing others is directing people below you in the interaction; matches the draft's D placement",
+    "Instructing and developing others is interaction directed downward at the people being taught.",
+    "instructing and developing others points downward at trainees/students the worker directs"
+   ]
+  },
+  {
+   "id": "4.A.4.b.4",
+   "cell": "D",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Guiding, directing and motivating subordinates is the definitional downward activity \u2014 setting standards and monitoring performance of people below you.",
+    "Guiding, directing and motivating subordinates is explicitly downward command; matches draft placement.",
+    "Explicitly directed at subordinates -- setting standards and monitoring their performance is commanding, the prototypical downward activity."
+   ]
+  },
+  {
+   "id": "4.A.4.b.5",
+   "cell": "D",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Activity element; coaching/mentoring/developing others points downward toward juniors and subordinates \u2014 already in the draft D and rightly so.",
+    "Coaching, mentoring, and developing others is directing effort downward at people whose growth you are responsible for; already in the draft D and I confirm it",
+    "Coaching, mentoring, and developing others is directing effort downward at people one is responsible for; already in the draft D and correctly so."
+   ]
+  },
+  {
+   "id": "4.A.4.b.6",
+   "cell": "U",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "rendering expert judgment 'to management' points upward \u2014 the advisor argues a case to someone who can overrule it \u2014 but the element mixes in 'other groups' and the consultant framing is partly lateral",
+    "Providing expert advice TO MANAGEMENT is rendering judgment upward to people who hold the final say; the advisor recommends, the superior decides",
+    "Upward: rendering expert judgment in advice to management points up, but a consultant advises rather than answers, so the accountability component is weak"
+   ]
+  },
+  {
+   "id": "4.A.4.c.1",
+   "cell": "U",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "maintaining files and processing paperwork is the documenting/record-keeping face of answering to an organization above you; medium because the item states no explicit direction",
+    "day-to-day paperwork and file maintenance is the record-keeping face of organizational account-rendering, though the item itself names no direction",
+    "Maintaining files and processing paperwork is the record-keeping face of rendering account, but the item itself names no direction; kept as a weak U indicator only."
+   ]
+  },
+  {
+   "id": "4.A.4.c.2",
+   "cell": "D",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Recruiting, hiring and promoting employees is exercising authority over subordinates; already in the draft and correctly placed.",
+    "recruiting, hiring, and promoting employees is exercising authority over subordinates \u2014 canonical downward activity",
+    "Recruiting, hiring, and promoting employees is exercising authority over subordinates; matches draft D."
+   ]
+  },
+  {
+   "id": "4.A.4.c.3",
+   "cell": "D",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Monitoring and controlling resources and overseeing spending is command over resources, the downward face",
+    "Overseeing spending and controlling resources is command over resources, the downward face of authority.",
+    "overseeing spending and controlling resources is command over resources, the downward face"
+   ]
+  },
+  {
+   "id": "4.C.1.b.1.f",
+   "cell": "L",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Context rating explicitly directional: dealing with external customers or the public in general is serving sideways, neither superiors nor subordinates.",
+    "Work-context item that directly asks about dealing with external customers or the general public \u2014 the lateral direction stated explicitly",
+    "Work-context item that directly measures interaction with the public and external customers \u2014 sideways service, explicitly directional; parallels 4.A.4.a.8 already in L."
+   ]
+  },
+  {
+   "id": "4.C.1.b.1.g",
+   "cell": "D",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "coordinating or leading others in accomplishing work is directing people downward, even if informally (the 'not as a supervisor' clause weakens but does not reverse the direction)",
+    "Coordinating or leading others in accomplishing work points downward (directing other people), though the item explicitly excludes formal supervisory role, softening it",
+    "Downward: coordinating or leading others in accomplishing work is commanding in substance, though the item explicitly excludes formal supervisory roles, so some of it is peer-lateral"
+   ]
+  },
+  {
+   "id": "4.C.1.c.2",
+   "cell": "D",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Responsibility for the work outcomes of OTHER workers is a context rating that directly measures commanding downward -- arguably the cleanest D indicator in this slice.",
+    "being responsible for the work outcomes of other workers is a direct context measure of supervisory command over others",
+    "Responsibility for the work outcomes of other workers is a direct context measure of supervisory command; arguably the cleanest downward context item in the slice."
+   ]
+  },
+  {
+   "id": "4.C.1.d.2",
+   "cell": "L",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "why": [
+    "Dealing with unpleasant, angry or discourteous people as a job requirement overwhelmingly indexes public/client-facing contact, i.e. lateral interaction, though the item itself does not name the counterpart's position.",
+    "Dealing with unpleasant or angry people is a context marker for public/client-facing work -- interaction directed sideways at people you serve rather than command.",
+    "Angry or discourteous people encountered as a job requirement are almost always the public or clients, not one's chain of command -- a context marker of frontline sideways service."
+   ]
+  },
+  {
+   "id": "4.C.3.a.4",
+   "cell": "U",
+   "subset": 0,
+   "n": 3,
+   "reverse": 3,
+   "why": [
+    "Decision-making freedom without supervision is the direct opposite of answering upward; reverse-scored it measures supervised, accountable work",
+    "Decision-making freedom without supervision is the direct opposite of answering upward for one's judgment; reverse-scored it indexes upward accountability.",
+    "decision freedom without supervision is the opposite of answering upward for one's judgment; context rating, reverse-scored"
+   ]
+  },
+  {
+   "id": "4.C.3.b.8",
+   "cell": "U",
+   "subset": 4,
+   "n": 3,
+   "reverse": 3,
+   "why": [
+    "freedom to set one's own tasks, priorities and goals is the direct opposite of having them set from above; reverse-scored it indexes upward accountability",
+    "freedom to set own tasks/priorities is discretion, the opposite of answering upward \u2014 reverse-scored",
+    "Work-context autonomy item \u2014 freedom to set one's own tasks, priorities and goals is the direct opposite of answering upward for them."
+   ]
+  },
+  {
+   "id": "1.B.1.a",
+   "cell": "L",
+   "subset": 4,
+   "n": 2,
+   "reverse": 2,
+   "why": [
+    "appears in the draft only as the subtracted half of the Social-minus-Realistic composite; on its own it indexes working with things rather than people, which is at best a weak reverse proxy for lateral person-directed work, and it is an interest rating",
+    "Realistic interest (things/outdoors, not people) is the subtrahend of the draft's Social-minus-Realistic composite \u2014 meaningful only inside that composite, and an interest rating besides."
+   ]
+  },
+  {
+   "id": "1.B.3.aa",
+   "cell": "L",
+   "subset": 5,
+   "n": 2,
+   "reverse": 0,
+   "why": [
+    "Providing care to individuals points sideways at patients, echoing Assisting and Caring for Others in L; low because it is an interest rating, weaker than activity evidence.",
+    "providing care to individuals points laterally at patients/clients, paralleling Assisting and Caring for Others; interest rating, so weak evidence"
+   ]
+  },
+  {
+   "id": "1.B.3.ad",
+   "cell": "L",
+   "subset": 2,
+   "n": 2,
+   "reverse": 0,
+   "why": [
+    "Advising and counseling clients on careers/education is serving sideways to people outside a command relationship; interest rating, so weak evidence",
+    "Interest rating and directionally ambiguous (advice/coaching could read downward), but the advisees here are clients seeking career and educational counsel, not subordinates \u2014 serving sideways."
+   ]
+  },
+  {
+   "id": "1.B.3.am",
+   "cell": "L",
+   "subset": 5,
+   "n": 2,
+   "reverse": 0,
+   "why": [
+    "speaking before an audience faces the public sideways, close to Performing for or Working Directly with the Public; interest rating and the audience relation is diffuse, so low confidence",
+    "Speaking before an audience points at the public, neither superior nor subordinate; interest rating, so weaker evidence."
+   ]
+  },
+  {
+   "id": "2.B.1.e",
+   "cell": "D",
+   "subset": 5,
+   "n": 2,
+   "reverse": 0,
+   "why": [
+    "Instructing ('teaching others how to do something') is a directed activity pointing at learners below, parallel to Training and Teaching Others already in D; medium because it is a skill rating and teaching targets are not always subordinates.",
+    "teaching others how to do something points downward toward learners, mirroring the draft's Training and Teaching Others; nominated despite being a skill because the skill just IS the directed activity"
+   ]
+  },
+  {
+   "id": "4.A.2.b.4",
+   "cell": "U",
+   "subset": 2,
+   "n": 2,
+   "reverse": 2,
+   "why": [
+    "Establishing long-range objectives and strategies yourself is holding the final say \u2014 discretion, the opposite of rendering account upward \u2014 so reverse-scored like the autonomy items",
+    "Establishing long-range objectives and strategies means holding the final say over direction \u2014 the organizational-level analogue of Freedom to Make Decisions / Determine Tasks, so it measures the opposite of rendering account upward and belongs in U reverse-scored."
+   ]
+  }
+ ],
+ "report": "Report written to `/home/matt/performance_commons/analysis/s10/element_audit_report.md`.\n\n# S10 \u2014 blind re-derivation of the U/L/D instrument vs. the hand-built version\n\nThree coders saw each O*NET element independently and assigned it to a cell (U = upward accountability, L = lateral service, D = downward command) or to nothing. Elements reaching 2-of-3 are treated as the blind pass's result. The hand-built instrument holds 19 elements (6 U, 5 L + the subtracted Realistic half, 7 D).\n\nThe blind pass placed **48 elements**: 10 in U, 17 in L, 21 in D. It re-derived **18 of the 19** hand-built elements, and nominated **30** the hand-built version does not contain.\n\n## 1. CONFIRMED\n\nHand-built elements the blind pass independently put in the same cell.\n\n**U \u2014 5 of 6**\n\n| ID | Name | Votes |\n|---|---|---|\n| 4.A.3.b.6 | Documenting/Recording Information | 3/3 |\n| 4.A.4.a.2 | Communicating with Supervisors, Peers, or Subordinates | 3/3 (challenged, see \u00a74) |\n| 4.A.4.c.1 | Performing Administrative Activities | 3/3 |\n| 4.C.3.a.4 | Freedom to Make Decisions | 3/3, reverse-scored 3/3 |\n| 4.C.3.b.8 | Determine Tasks, Priorities and Goals | 3/3, reverse-scored 3/3 |\n\nBoth reverse-scorings were re-derived unanimously and for the stated reason (discretion is the inverse of answering upward). That is the least obvious design choice in the instrument and it survived a blind pass cleanly.\n\n**L \u2014 5 of 5, plus the composite's subtrahend**\n\n| ID | Name | Votes |\n|---|---|---|\n| 4.A.4.a.3 | Communicating with People Outside the Organization | 3/3 |\n| 4.A.4.a.4 | Establishing and Maintaining Interpersonal Relationships | 3/3 |\n| 4.A.4.a.5 | Assisting and Caring for Others | 3/3 |\n| 4.A.4.a.8 | Performing for or Working Directly with the Public | 3/3 |\n| 1.B.1.d | Social interest | 3/3 |\n| 1.B.1.a | Realistic interest | 2/3, reverse-scored 2/2 |\n\nThe Social-minus-Realistic composite is effectively reproduced: Social lands in L unanimously, and the two coders who nominated Realistic both wanted it negative and both said in as many words that it is only meaningful as the subtracted half.\n\n**D \u2014 7 of 7**\n\n| ID | Name | Votes |\n|---|---|---|\n| 4.A.4.b.1 | Coordinating the Work and Activities of Others | 3/3 |\n| 4.A.4.b.3 | Training and Teaching Others | 3/3 (challenged, see \u00a74) |\n| 4.A.4.b.4 | Guiding, Directing, and Motivating Subordinates | 3/3 |\n| 4.A.4.b.5 | Coaching and Developing Others | 3/3 |\n| 4.A.4.c.2 | Staffing Organizational Units | 3/3 |\n| 4.A.4.c.3 | Monitoring and Controlling Resources | 3/3 |\n| 1.B.3.al | Management/Administration interest | 3/3 |\n\n## 2. MISSED\n\nElements the blind pass placed that the hand-built instrument does not contain. Grouped by how seriously they should be taken, not by cell.\n\n### 2a. Worth adding\n\nSame measurement family as the existing instrument (Work Activities / Work Context), explicitly directional in the item text, 3/3, and not redundant with an element already in the cell.\n\n| ID | Name | What it measures | Cell | Votes |\n|---|---|---|---|---|\n| 4.C.1.c.2 | Work Outcomes and Results of Other Workers | Work Context: how responsible the worker is for other workers' outcomes | D | 3/3 |\n| 4.C.1.b.1.f | Deal With External Customers or the Public in General | Work Context: importance of dealing with external customers or the public | L | 3/3 |\n| 4.A.4.b.6 | Providing Consultation and Advice to Others | Activity: giving expert advice **to management** or other groups | U | 3/3 |\n\n4.C.1.c.2 is the single cleanest downward indicator in O*NET \u2014 it asks directly about responsibility for other people's work \u2014 and the hand-built D contains no Work Context item at all. 4.C.1.b.1.f is its lateral twin and states the direction in the item stem, which almost nothing else does. 4.A.4.b.6 is the only activity element besides 4.A.4.a.2 that names a superior as the counterpart; U is the thin cell, and it is about to get thinner (\u00a73).\n\n### 2b. Defensible but marginal\n\nDirectionally plausible, but direction is inferred rather than stated, or the item is largely covered by something already in the cell.\n\n| ID | Name | What it measures | Cell | Votes |\n|---|---|---|---|---|\n| 4.A.4.a.7 | Resolving Conflicts and Negotiating with Others | Handling complaints, disputes, grievances | L | 3/3 |\n| 4.A.4.a.6 | Selling or Influencing Others | Convincing others to buy or change their minds | L | 3/3 |\n| 4.A.4.b.2 | Developing and Building Teams | Building trust and cooperation among team members | D | 3/3 |\n| 4.C.1.b.1.g | Coordinate or Lead Others in Accomplishing Work Activities | Informal leading, explicitly *not* as supervisor | D | 3/3 |\n| 4.A.2.b.5 | Scheduling Work and Activities | Scheduling events and \"the work of others\" | D | 3/3 |\n| 4.A.2.b.4 | Developing Objectives and Strategies | Setting long-range objectives and strategies | U (reverse) | 2/3 |\n\nThe two L activity items name no counterpart; \"team members\" in 4.A.4.b.2 and the explicit non-supervisory clause in 4.C.1.b.1.g both point sideways as easily as down; 4.A.2.b.5 bundles scheduling your own work with scheduling others'. 4.A.2.b.4 is the interesting one conceptually \u2014 it is the organisation-level twin of the two reverse-scored autonomy items \u2014 but it reached only 2/3 and would make half of U reverse-scored discretion.\n\n### 2c. Not worth adding\n\n| ID | Name | Family | Cell | Votes |\n|---|---|---|---|---|\n| 2.C.1.a | Administration and Management | Knowledge | D | 3/3 |\n| 2.C.1.f | Personnel and Human Resources | Knowledge | D | 3/3 |\n| 2.C.6 | Education and Training | Knowledge | D | 3/3 |\n| 2.C.1.e | Customer and Personal Service | Knowledge | L | 3/3 |\n| 2.C.1.b | Administrative | Knowledge | U | 3/3 |\n| 2.B.5.d | Management of Personnel Resources | Skill | D | 3/3 |\n| 2.B.5.b | Management of Financial Resources | Skill | D | 3/3 |\n| 2.B.5.c | Management of Material Resources | Skill | D | 3/3 |\n| 2.B.1.f | Service Orientation | Skill | L | 3/3 |\n| 2.B.1.e | Instructing | Skill | D | 2/3 |\n| 1.D.1.i | Leadership Orientation | Work Style | D | 3/3 |\n| 1.B.3.aj | Human Resources | Interest | D | 3/3 |\n| 1.B.3.y | Teaching/Education | Interest | D | 3/3 |\n| 1.B.3.ac | Personal Service | Interest | L | 3/3 |\n| 1.B.3.z | Social Service | Interest | L | 3/3 |\n| 1.B.3.ak | Office Work | Interest | U | 3/3 |\n| 1.B.1.f | Conventional | Interest | U | 3/3 |\n| 1.B.3.aa | Health Care Service | Interest | L | 2/3 |\n| 1.B.3.ad | Professional Advising | Interest | L | 2/3 |\n| 1.B.3.am | Public Speaking | Interest | L | 2/3 |\n| 4.C.1.d.2 | Dealing With Unpleasant, Angry, or Discourteous People | Work Context | L | 3/3 |\n\nTwenty-one of the thirty misses are Knowledge, Skill, Interest, or Work Style ratings \u2014 capacities and dispositions, not what the job requires the incumbent to do. The coders flagged nearly all of them as weak evidence themselves. They are also near-duplicates of activity elements already in the instrument (2.C.1.f shadows Staffing Organizational Units; 2.C.6 shadows Training and Teaching; 2.B.5.d shadows Guiding/Directing Subordinates; 2.C.1.a shadows the Management/Administration interest already in D). Adding them would multiply collinear measures of the same underlying thing and silently reweight the composite toward D \u2014 which is already the cell the blind pass over-nominates (21 elements vs. 10 for U).\n\nTwo specific warnings. First, the three non-activity U nominations (Conventional interest, Office Work interest, Administrative knowledge) all measure clerical and paperwork content. That is exactly the confound the challenge to Letters and Memos names (\u00a74) \u2014 adding them would reimport through the back door the problem that dropping Letters and Memos is meant to remove. Second, 4.C.1.d.2 (angry people) indexes police and retail work, not the direction of an interaction; it would put occupational unpleasantness into a lateral-service score.\n\n## 3. NOT RE-DERIVED\n\n| ID | Name | Cell | Status |\n|---|---|---|---|\n| 4.C.1.a.2.j | Written Letters and Memos | U | Nominated by **1 of 3** coders \u2014 below threshold. Not unmentioned: it was seen and rejected, and separately drew the largest set of seconded objections in the audit (7). |\n\nThat is the only hand-built element the blind pass failed to reproduce. Every other element was placed, in the right cell, by at least two of three coders.\n\nTwo other below-threshold nominations, for context, were elements *not* in the hand-built instrument: 4.C.1.b.1.e (Work With or Contribute to a Work Group or Team, L) and 4.C.3.a.2.b (Frequency of Decision Making, U), each 1 of 3.\n\n## 4. CHALLENGED\n\n| ID | Name | Seconds | Objection | Recommendation |\n|---|---|---|---|---|\n| 4.C.1.a.2.j | Written Letters and Memos | 7 | Two distinct problems. (i) No direction: the item asks only how *often* the job requires written correspondence; memos go to clients, the public, and subordinates as readily as to superiors. (ii) Circularity: it measures how writing-heavy a job is, and the outcome is a written bureaucratic register \u2014 a hit would say wordy jobs breed wordy speech, not that upward accountability does. This is the confound the hypothesis explicitly disclaims. | **Drop.** It failed the blind re-derivation *and* drew the heaviest objection; both point the same way. |\n| 4.A.4.b.3 | Training and Teaching Others | 3 | The item does not specify who is taught. For teachers and nurses \u2014 occupations that matter in these chambers \u2014 the people instructed are students and patients served laterally, not subordinates commanded, so keeping it in D codes teachers as commanders. | **Keep in D, but test it.** It got 3/3 in D on blind coding, so the objection is a hypothesis, not a finding. Check empirically whether it loads with the supervisory D items or with L, and report the composite with it dropped as a robustness check. |\n| 4.A.4.a.2 | Communicating with Supervisors, Peers, or Subordinates | 2 | One rating pools all three directions, so a pure supervisor scores high on it; it cannot separate upward from downward communication. | **Keep, downweight.** Both objectors concede nothing cleaner exists in O*NET, and it is the only activity element that names supervisors at all. Treat it as diluted evidence and say so in the write-up. |\n\n## 5. Verdict\n\nThe hand-built instrument is substantially reproduced. Eighteen of nineteen elements came back in the same cell, and the two least obvious choices \u2014 the reverse-scored autonomy pair and the Social-minus-Realistic composite \u2014 were re-derived with their rationale intact. The single element that failed to reproduce is also the single most-objected-to element, which is convergent rather than coincidental. The blind pass is not evidence that the instrument should grow: three coders at 2-of-3 is weak evidence, most of what they added is a different kind of measurement, and thirty additions to nineteen elements would change what the instrument measures rather than measure it better.\n\nThree changes worth making:\n\n1. **Drop 4.C.1.a.2.j (Written Letters and Memos) from U.** Direction-free, and confounded with the outcome. This is the highest-value change in the audit.\n2. **Add the two directional Work Context items:** 4.C.1.c.2 (Work Outcomes and Results of Other Workers) to D and 4.C.1.b.1.f (Deal With External Customers or the Public) to L. Both state the direction in the item stem, which almost nothing else in O*NET does, and both cells currently rely entirely on self-reported activity frequencies.\n3. **Add 4.A.4.b.6 (Providing Consultation and Advice to Others) to U**, which keeps U at six elements after the drop and gives it a second item that names a superior as the recipient.\n\nEverything else is noise or construct-widening. The Knowledge, Skill, Interest, and Work Style nominations should stay out: they are dispositions and capacities rather than job demands, they duplicate activity items already present, and they would tilt the composite toward D. The one thing the blind pass surfaces that no single edit fixes is that U is thin in O*NET generally \u2014 the coders found 21 downward elements and 10 upward ones, and half the upward ones are reverse-scored discretion. That is a limitation to state in the write-up, not something to paper over by adding weak items."
+}
