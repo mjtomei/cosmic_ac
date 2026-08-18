@@ -559,6 +559,57 @@ admitted skills, knowledge, interest and work-style elements that describe the
 worker more than the work, and whether they change the answer should be
 visible.
 
+### The rival instrument: blind hierarchy levels, and the horse race (Matthew, 2026-08-18)
+
+Two instruments now exist over the same element universe, and both run.
+
+- **The charged instrument** — U/L/D/N and the three profiles above: built
+  from the accountability theory, cell contents audit-derived, signs revised
+  by the corporate hypothesis. Theory decided what to measure.
+- **The uncharged instrument** — the four blind level scores FREE / BOTTOM /
+  MIDDLE / TOP (signatures frozen in `element_levels.json`, scoring rule in
+  `level_scores.py`: mean of signed standardised elements, 2-of-3 consensus,
+  multi-label; `3.A.1` excluded as the one element whose file does not rate
+  the full occupation set). The coders who built it saw no draft, no prior
+  results, and **were never told the register or the hypothesis existed** —
+  the prompt asked only which elements mark hierarchy positions. Coverage is
+  identical: 6,168 member slots, 87.7%.
+
+Overlap, recorded in advance so the race is read correctly: MIDDLE shares 26
+of its 27 elements with TOP at the same sign (96%; 76% of TOP; Jaccard 74%),
+and MIDDLE/TOP correlate 0.97/0.95 with D. The sets are heavily collinear, so
+**the race is judged at the set level, never by coefficient significance in a
+combined fit.**
+
+**The criterion, fixed here.** Same member-level spec for both:
+
+1. **Primary — AIC (with adjusted R² reported) of the two joint fits:**
+   z ~ U+L+D+N against z ~ FREE+BOTTOM+MIDDLE+TOP. Lower AIC wins.
+2. **Headline against headline:** `corporate` alone against `MIDDLE` alone.
+3. **Encompassing:** each set added to the other's fit, joint F on the added
+   block — does either instrument explain register variation the other
+   misses, or does one subsume the other?
+
+The reading Matthew wants from this is explicit: does the **more charged**
+instrument (theory picked the elements and signs) or the **less charged** one
+(hierarchy description alone picked them) predict the register better? A win
+for uncharged says hierarchy position as such carries the register and the
+accountability theory adds nothing; a win for charged says the direction-of-
+accountability structure earns its assumptions.
+
+**The apex delta, one directional test bridging the two.** Δ = MIDDLE − TOP.
+Its content is exactly the eight TOP-only elements (discretion, judgment,
+initiative, negotiation, outward communication, non-routine, long weeks)
+reversed, plus HR: **command without discretion or external exposure**.
+Predictor-side, with no register involved, Δ orders management as the
+corporate story wants: HR +0.41 > financial +0.29 > first-line +0.27 >
+general +0.24 > chief executives +0.21, teachers and lawyers negative.
+Registered prediction: **β(Δ) > 0** — insulated command tracks more register
+than exposed command. The executive-register alternative predicts the
+opposite sign, so this is the sharpest single test of the revision's
+insulation mechanism, and it comes from the uncharged instrument's own
+materials.
+
 ## Pre-specified predictions
 
 ### The sign pattern (Matthew) — the corporate drone profile
