@@ -3,9 +3,16 @@
 Two base measures (account-giving and sociality) resolved into four
 components — three directed (U upward, L lateral, D downward) and one
 undirected (N); three occupational profiles built from them as continuous
-scores; and one prediction — that the **drone** profile tracks register use
-most strongly, with free < managerial < drone. The test is on the continuous
-scores throughout; the three-group shape is a display.
+scores; and one prediction — that the **corporate drone** profile tracks
+register use most strongly, with free < front-line < corporate. The test is on
+the continuous scores throughout; the group shapes are displays.
+
+**Primary revised 2026-08-18 (Matthew), before any element-register join**: the
+peak was moved from the front-line drone (serves the public, commands nobody)
+to the corporate drone (reports up inside the organisation, commands below,
+insulated from external feedback). The instrument is untouched by the revision
+— only the signs the theory predicts changed, and the old peak stays in the
+model as the named rival, so the data adjudicates between the two versions.
 
 **Written 2026-08-17; revised 2026-08-18. No O\*NET element has been joined to
 a member, and no relationship between any element and the register has been
@@ -38,10 +45,15 @@ are not explained by status rank, which is what EGP orders on:
 2. **Farmers at the floor.** EGP places IVc mid-table; the register places it
    last, below semi-skilled manual work.
 
-**Hypothesis (Matthew, 2026-08-17).** The register tracks *upward linguistic
-accountability* — how much an occupation consists of rendering one's own
-judgment into prose for a superior who can overrule it — rather than status,
-autonomy, or education.
+**Hypothesis (Matthew, 2026-08-17; sharpened 2026-08-18).** The register
+tracks *upward linguistic accountability* — how much an occupation consists of
+rendering one's own judgment into prose for a superior who can overrule it —
+rather than status, autonomy, or education. The sharpened form locates the peak
+**inside the organisation**: the fullest drone is the drone *with respect to
+the corporation* — the employed middle manager, with workers below and
+management above, divorced from almost any direct external feedback. Direct
+external feedback (customers, clients, the public, the market) disciplines
+language; insulation from it lets the register grow.
 
 Autonomy alone was rejected as the framing, for a reason that is itself part of
 the hypothesis: **a farmer and a miner are about equally unfree, but their
@@ -234,11 +246,11 @@ three directional components in the Specification are the shape of the test.
 
 The M1/M2 robustness splits are what tell three different papers apart. If the
 result rides on M2's elements, the finding is about working with people; if on
-M1's, it is about answering to them; if on both, the register belongs to the
-occupation that does both while directing nobody. The splits are reported
-whichever way they fall — but note that M2 alone can only carry the
-drone-vs-managerial contrast, so a clean M2-only reading of the free profile is
-not available and is not claimed.
+M1's, it is about answering to them; if on both, the two base measures are
+faces of one organisational condition. The splits are reported
+whichever way they fall. (M2 alone now carries the full profile set — the
+earlier M2 rank deficiency dissolved when the signs were revised; see the
+profile section — so both single-measure readings are available.)
 
 ## Specification
 
@@ -393,48 +405,54 @@ below unanimity. An earlier revision froze the cells and parked the audit's
 candidates with future work; Matthew reversed that, and the flip is logged
 here rather than silently.
 
-### The three versions: free, managerial, drone
+### The three versions: free, front-line, corporate
 
 Each profile is a signed weighting of the same four components — which kinds
-of interaction the occupation is engaged in, and which it is spared. **N's
-signs are Matthew's (2026-08-18): positive in managerial and drone, negative in
-free** — undirected interaction is organisational life, and the free profile is
-low on everything, paperwork and proximity included:
+of interaction the occupation is engaged in, and which it is spared. Revised
+2026-08-18 (Matthew): the corporate drone replaces the old drone as the
+predicted peak, and the old drone — renamed **front-line** — stays as the named
+rival. N's signs: positive in both organisational profiles, negative in free.
 
 | profile | U | L | D | N | the occupation |
 |---|---|---|---|---|---|
 | **free** | − | − | − | − | answers to nobody, commands nobody, largely alone |
-| **managerial** | − | + | + | + | commands others; reports comparatively little |
-| **drone** | **+** | **+** | **−** | **+** | reports up, serves sideways, directs nobody |
+| **front-line** | + | + | − | + | serves the public, reports up, commands nobody — the old drone |
+| **corporate** | **+** | **−** | **+** | **+** | reports up, faces inward, commands below — the middle of a hierarchy |
 
 Each is the weighted mean of the standardised components, so all three are on a
 common scale and an occupation has a score on all of them. The three 4-vectors
-are linearly independent (rank 3), and the pairwise contrasts have a clean
-geometry worth registering so nobody discovers it as a surprise: **drone vs
-managerial is carried by U and D alone** (both are +L, +N); free vs managerial
-by L, D and N; free vs drone by U, L and N. Each pair shares exactly the
-components on which the two profiles agree.
+are linearly independent (rank 3), and the pairwise contrasts are registered so
+nobody discovers them as a surprise: **front-line vs corporate is carried by L
+and D alone** (both are +U, +N) — the two versions of the drone disagree on
+exactly two things, whether external service feeds the register or starves it,
+and whether commanding suppresses it or marks the position; free vs front-line
+by U, L and N; free vs corporate by U, D and N.
+
+**What the corporate profile's archetypes are, on measured values** — checked
+predictor-side before registration, no register involved: internal-staff
+management. HR managers (E = U+D standardised sum +1.97), financial and
+compliance managers — high D, high N, low external L, U near the managerial
+ceiling. General managers and chief executives score lower on it: their D is
+higher still, but they are external-facing (high L) and hold the most measured
+discretion (lowest U). The profile finds the *inward-facing organisational
+middle*, which is the construct.
 
 **Why the profiles are built on the pooled columns and not within M1 and M2
-separately.** The obvious alternative — three versions of M1 and three of M2,
-giving six — is unavailable for M2, and not as a matter of degree. With the
-upward cell empty, M2's profiles reduce to weightings over L, D and N alone:
+separately.** The pooled columns are the registered instrument; the M1-only and
+M2-only fits are robustness splits. Under the revised signs the old M2
+degeneracy happens to vanish — within M2 (L, D, N) the three profiles are
 
-    drone_M2       L +1,  D −1,  N +1
-    managerial_M2  L +1,  D +1,  N +1
-    free_M2        L −1,  D −1,  N −1   ==  −1 × managerial_M2
+    free_M2        L −1,  D −1,  N −1
+    front_M2       L +1,  D −1,  N +1
+    corporate_M2   L −1,  D +1,  N +1
 
-`free_M2` is still the exact antipode of `managerial_M2` — free and managerial
-differ only on components where M2 has elements, and they differ by pure sign
-flip. Within M2 the three profiles span two dimensions with an antipodal pair,
-so "managerial intermediate between free and drone" remains impossible there,
-and a model fitting all three within M2 is rank-deficient. Pooling the columns
-restores the third dimension (the three pooled profile 4-vectors have rank 3).
+which are rank 3, no antipodal pair — so both splits now support all three
+profiles. (Under the previous signs free_M2 was exactly −managerial_M2; that
+degeneracy, and the earlier drafts' handling of it, are in git history.)
 
-**M1 alone is still reported, as a robustness split**, since M1 has all three
-components and supports all three profiles on its own. **M2 alone is reported
-only as the drone-vs-managerial contrast**, which is the single contrast it can
-carry, and is labelled as such.
+**M1 alone and M2 alone are both reported as robustness splits**, each now
+supporting all three profiles (M1 spans all four components; M2 spans L, D, N,
+which under the revised signs is enough for rank 3).
 
 ### Models — two stages
 
@@ -445,7 +463,7 @@ against everything else the study already knows.**
 #### Stage 1 — which occupational measure, if any
 
 Small and focused. The question is whether the occupational grid carries signal
-at all, and whether the profile that carries it is the drone.
+at all, and whether the profile that carries it is the corporate drone.
 
     each component, alone                   z ~ U               (x4)
     the four components jointly             z ~ U + L + D + N
@@ -464,8 +482,8 @@ cohort-adjusted reading of each, since establishing an effect absent the other
 covariates matters equally to establishing it net of them.
 
 **Robustness splits, reported beside the pooled fits and not in place of them:**
-the same profiles within M1 alone; and within M2, the drone-vs-managerial
-contrast only, for the rank reason given above.
+the same profiles within M1 alone and within M2 alone (both full-rank under the
+revised signs — see the profile section).
 
 #### Stage 2 — the proper evaluation, with everything the study holds
 
@@ -543,7 +561,7 @@ visible.
 
 ## Pre-specified predictions
 
-### The sign pattern (Matthew) — the drone profile
+### The sign pattern (Matthew) — the corporate drone profile
 
 The register is predicted to belong to the occupation that **reports upward,
 serves laterally, and commands nobody**. As signs on the four components, in
@@ -552,28 +570,36 @@ the joint fit:
 | component | predicted | reading |
 |---|---|---|
 | **U** upward | **+** | advising someone above, without the final say |
-| **L** lateral | **+** | serving people who are not superiors |
-| **D** downward | **−** | commanding suppresses it |
+| **L** lateral | **−** | external feedback disciplines the register away |
+| **D** downward | **+** | commanding marks the organisational middle and top |
 | **N** undirected | **+** | undirected account-giving and contact — organisational life |
 
-**Four signs, all measured, none excluded.** Every component is built from
-elements that exist, so there is no cell to discount and no counting rule to
-write. The permutation test uses this same four-sign statistic. N's + follows
-from its profile weights (positive in both organisational profiles, negative in
-free) and is the least secure of the four — see the writing side views.
+**Four signs, all measured, none excluded** — and two of them, L and D, are
+**revised** from the pre-revision registration (which had L+, D−). The flips
+are the revision: under the front-line story external service fed the register
+and commanding suppressed it; under the corporate story external feedback
+starves it and command is simply where the organisational middle and top sit.
+Both versions stay testable — the front-line profile carries the old signs —
+but the *pattern statistic* is scored on the corporate signs above. The
+permutation test uses this same four-sign statistic. N's + is unchanged and
+remains the least secure single sign — see the writing side views.
 
-The signs are equivalent to the profile ordering below — `drone` is exactly the
-weighting (+, +, −) — and are stated separately because the component fit and
-the profile fit answer different questions: which direction carries the effect,
-and which profile tracks it most strongly.
+The signs are the corporate profile's weighting (+, −, +, +), and are stated
+separately from the ordering because the component fit and the profile fit
+answer different questions: which direction carries the effect, and which
+profile tracks it most strongly. One warning, registered so the linear fit is
+read correctly: **a linear model cannot place the middle of a hierarchy above
+both its top and its bottom.** "Middle managers highest" is an interior-peak
+claim, and the linear signs above capture only its monotone shadow. The
+interior peak itself is tested in the hierarchy section below.
 
-### The ordinal prediction: free < managerial < drone (Matthew)
+### The ordinal prediction: free < front-line < corporate (Matthew)
 
 The sign pattern says which direction of interaction goes with the register. A
 second, stronger claim is registered here: the three occupational **profiles**
 should order, by how strongly each tracks register use,
 
-    completely free   <   managerial   <   drone
+    completely free   <   front-line   <   corporate
 
 Each profile is a continuous score every occupation holds, so this is an
 ordering of slopes rather than of groups; the profiles below name the ends of
@@ -582,29 +608,34 @@ each continuum, not bins that occupations fall into.
 - **free** (−U, −L, −D, −N) — answers to nobody, commands nobody, works
   largely alone; high discretion, low on every kind of interaction, directed or
   not. Farmers, sole practitioners, own-account tradespeople.
-- **managerial** (−U, +L, +D, +N) — commands others, lives in the
-  organisational thick, and is comparatively spared answering upward.
-  Executives, general managers, senior administrators.
-- **drone** (+U, +L, −D, +N) — advises up, serves sideways, swims in paperwork
-  and contact, directs nobody. Teachers, nurses, social workers, caseworkers.
+- **front-line** (+U, +L, −D, +N) — the old drone, now the named rival: serves
+  the public, reports up, commands nobody. Teachers, nurses, social workers,
+  caseworkers.
+- **corporate** (+U, −L, +D, +N) — the predicted peak: reports up, faces
+  inward, commands below, insulated from external feedback. HR, financial and
+  compliance managers; the employed organisational middle.
 
-**Why managerial is predicted intermediate rather than lowest**, on this study's
-own prior findings rather than on intuition:
+**Why front-line is predicted intermediate rather than lowest — and what this
+ordering risks (stated so the bet is legible):**
 
 - **Farmers sit at the floor** of the class table (IVc, −0.44σ, the lowest of
-  seven categories) — the free profile's anchor, and lower than the manual
-  classes.
-- **Office-holders use less register than backbenchers** (33.69 against 35.11
-  per 1,000; Appendix D.4) — the managerial profile suppresses it, but modestly,
-  nowhere near the farmers' gap.
-- **Class II is the peak** (+0.02σ against class I's −0.09σ) and is populated by
-  precisely the drone occupations: ~300 teachers, 73 journalists, 63 nurses, 47
-  social workers.
-
-So managers are predicted to be pulled down by commanding but not to the floor,
-because they still report upward to boards, ministers and shareholders — the
-downward cell is negative but the upward cell is not zero for them. The free
-profile has neither.
+  seven categories) — the free profile's anchor.
+- **Class II is the peak** (+0.02σ against class I's −0.09σ), populated by
+  teachers, journalists, nurses, social workers — the front-line profile's
+  anchors. That known result is *consistent with both drone stories* (those
+  occupations are employed organisational members too), which is exactly why it
+  cannot decide between them.
+- **The corporate profile's distinctive content is untested.** No prior arm
+  isolated employed middle managers or scored external insulation. Registering
+  corporate on top is therefore a genuine bet against the surface reading of
+  the study's own class table, made on the mechanism: the class II occupations
+  answer upward *and* face outward, and the revision says the answering, not
+  the facing, is what generates the register — so the purely inward-facing
+  middle should exceed them.
+- The **office-holder result** (ministers 33.69 vs backbenchers 35.11 per
+  1,000; Appendix D.4) is now ambiguous rather than supporting: office is both
+  command (D+, raises the corporate score) and the top of the visible hierarchy
+  (past the altitude peak). It is not cited as support for either version.
 
 **How it is tested — continuously (Matthew).** Every occupation carries a score
 on all three profiles: the weighted mean of its standardised U, L, D and N under
@@ -620,16 +651,17 @@ The registered prediction is therefore an ordering of **continuous slopes**,
 each profile score entered alone and standardised, so the coefficients are
 comparable:
 
-    beta(drone)  >  beta(managerial)  >  beta(free)          with beta(drone) > 0
+    beta(corporate)  >  beta(front-line)  >  beta(free)      with beta(corporate) > 0
 
-This is the same claim as "the peak is at drone" without discretising anything.
+This is the same claim as "the peak is the corporate drone" without
+discretising anything.
 It is not implied by the component signs: which profile vector best aligns with
 the register gradient depends on the components' relative magnitudes and on
 their covariance across occupations, so the ordering is a genuine additional
 test rather than a restatement. It is assessed by **bootstrap over members
 (2,000 resamples, clustered by member), reporting the share in which the full
-ordering holds and the share in which `drone` is top** — the second being the
-load-bearing one.
+ordering holds and the share in which `corporate` is top** — the second being
+the load-bearing one.
 
 **Secondary and descriptive: the three-group shape.** Each occupation is also
 assigned to its highest-scoring profile (argmax over the standardised scores;
@@ -645,44 +677,109 @@ shape, plotted the same way — so the occupational and class pictures can be re
 against each other directly. If the continuous ordering and the binned shape
 disagree, **the continuous result governs** and the disagreement is reported.
 
+### The hierarchy shape: middle managers as the interior peak (Matthew, 2026-08-18)
+
+The corporate profile is linear, and a linear model cannot place the middle of
+a hierarchy above both its top and its bottom. The claim "the highest reading
+comes from middle managers — workers below, management above, divorced from
+almost any direct external feedback" is an **interior-peak** claim, and it gets
+its own registered tests, fixed here.
+
+**The rotation.** Two derived scores, exact functions of the components:
+
+    E  =  U + D      embeddedness — engaged both ways in a chain of command
+    A  =  D − U      altitude — command minus accountability
+
+Predictor-side values (no register involved) confirm A orders the known rungs:
+chief executives +3.66, general managers +2.84, HR managers +2.28, financial
+managers +1.76, first-line supervisors ≈ +1.6, teachers +0.91, nurses +0.72,
+data-entry and retail floor negative. Two measurement facts are registered with
+it rather than discovered later:
+
+- **Measured U is blind to managerial upward accountability.** Every management
+  occupation scores U negative (O\*NET rates all managers high-discretion, and
+  no reports-to element exists), so A separates rungs through D and discretion,
+  not through observed reporting. It works — the ordering above — but for that
+  reason, not the ideal one.
+- **Farmers sit at A ≈ +1.9, E ≈ +0.8** — the code is Farmers, Ranchers and
+  Other Agricultural *Managers*, an operator who commands a holding and answers
+  to nobody. On the (E, A) marginal alone, farmers are neighbours of financial
+  managers; L and N are what separate the farm from the office. Any (E, A)
+  result is therefore read with the full component model beside it, never
+  alone.
+
+**The registered shape test.** Within the top tercile of E (the occupations
+genuinely embedded in hierarchies), fit register on A and A². The prediction:
+**the A² coefficient is negative and the implied peak lies strictly inside the
+observed A range** — an inverted U in hierarchy position, peaking below the
+top. Cluster-robust at the member level; the peak location reported with a
+bootstrap interval (2,000 member-clustered resamples, share of resamples
+placing the peak in the interior). Monotone-rising A within high E — no
+interior peak — is the *executive register* outcome and refutes the
+middle-manager claim specifically, whatever the linear signs did.
+
+**The taxonomy arm — no O\*NET elements involved.** SOC separates the rungs
+directly, and the corpus's occupation strings carry the ownership distinction
+the taxonomy discards. Fixed classification, applied verbatim:
+
+    executive     11-1011.00
+    middle        any other 11-xxxx code, excluding 11-9013.00 (farmers)
+    first-line    codes matching ^(33|35|37|39|41|43|45|47|49|51|53)-10\d\d
+    owner-op      any of the above whose occupation string matches
+                  owner|founder|proprietor|entrepreneur|self.?employed
+                  (case-insensitive) — split out of its rung
+
+Corpus counts, computed before any register join: employed executives 232,
+**employed middle managers 676**, employed first-line 95, owner-operators 344.
+The registered prediction: **employed middle managers are the highest of the
+management cells**, and owner-operators sit low despite holding the same
+nominal codes — they are the free profile wearing a manager's SOC code, and
+their external feedback is maximal. Group means of register z with
+cluster-robust SEs; the arm routes through no O\*NET rating, so it stands even
+if the instrument itself disappoints.
+
 **What would refute it, and what would not (Matthew).** The load-bearing claim
-is that **drone leads** — `beta(drone)` exceeds both other profile slopes. Only
-that can be refuted here:
+is that **corporate leads** — `beta(corporate)` exceeds both other profile
+slopes. Only that can be refuted here:
 
-- **beta(managerial) ≥ beta(drone), or beta(free) ≥ beta(drone)** — refuting.
-  Commanding others, or answering to nobody, would then track *more* register
-  than reporting upward, which no version of the hypothesis survives, and the
-  Stage 1 sign pattern should be re-read accordingly.
-- **beta(managerial) < beta(free)**, reversing the predicted order of the two
-  lower profiles, is **not** refuting. Both remain below the drone slope and the
-  shape is unchanged; what flips is only which of the two non-drone profiles
-  sits lower. Recorded as a prediction missed on the ordering, not a hypothesis
-  failed.
+- **beta(front-line) ≥ beta(corporate)** — refutes the *revision*: external
+  service would feed the register at least as well as insulation, and the
+  original front-line version stands. Reported as exactly that, not as a
+  general failure.
+- **beta(free) ≥ beta(corporate)** — refutes *both* versions: answering to
+  nobody would track the register as well as answering inside an organisation,
+  and no form of the accountability hypothesis survives it.
+- **beta(free) > beta(front-line)**, reversing the two lower profiles, is
+  **not** refuting for the peak. Recorded as a prediction missed on the
+  ordering, not a hypothesis failed.
 
-That second case is worth watching for its own sake rather than as a scoring
-question. Every U we have measured so far — class, education, prominence in the
-national chambers — has its peak one rung below the top, but we have never seen
-one *side* of a U fall below the other in a way that distinguishes them, because
-the two arms have always been the high-status and low-status ends of a single
-ranking. Free and managerial are different: both are "not drone", but one
-answers to nobody and the other commands. If the commanding side sits lower, the
-suppression is coming from directing others rather than from lacking someone to
-report to, which is a claim about mechanism that the class table cannot make and
+The middle of the ordering is worth watching for its own sake rather than as a
+scoring question. Free and front-line are different ways of being "not
+corporate": one answers to nobody, the other answers upward but faces outward.
+Where front-line lands between the poles measures how much of the register
+survives external exposure — a mechanism claim the class table cannot make and
 this profile split can.
 
-**The downward sign is what makes this falsifiable.** Every rival account
-predicts something different there:
+**The lateral sign is what now separates the two versions, and the component
+pattern is what makes the whole account falsifiable.** The rival readings, each
+with its signature:
 
-- **positive downward** → a *managerial* register: the form belongs to people
-  who direct others, and this hypothesis is wrong.
-- **flat across all three** → *sociality without hierarchy*: what matters is
-  working with people at all, and direction is decoration. This is hypothesis
-  (M2) winning over (M1) and is a different finding, not a weaker version of
-  this one.
-- **upward only, lateral null** → pure deference rather than the drone profile;
-  the service half is doing nothing and the construct should be narrowed.
+- **L positive** → external service *feeds* the register: the front-line
+  version wins and the revision is wrong. This is the revision's sharpest
+  exposure, since L+ is what the study itself registered before 2026-08-18.
+- **D negative** → commanding suppresses the register: again the front-line
+  version, from the other side.
+- **flat across all four** → *sociality without hierarchy*: what matters is
+  working with people at all, and direction is decoration — hypothesis (M2)
+  winning over (M1), a different finding rather than a weaker version of this
+  one.
+- **U positive, everything else null** → pure deference rather than any drone
+  profile; the construct should be narrowed.
+- **altitude rising monotonically** (hierarchy section below) → an *executive*
+  register that grows all the way to the top — the corporate version's peak
+  claim fails even if its signs hold.
 
-Confirmation requires the **pattern**, not any single component. Two of three in
+Confirmation requires the **pattern**, not any single component. Two of four in
 the right direction is not partial support, it is noise.
 
 ### The rest, in order
@@ -705,7 +802,8 @@ the right direction is not partial support, it is noise.
    occupations.
 3. **U is the strongest single component.** If any one predictor carries the
    result it should be upward account-giving — registered before the audit
-   narrowed U to consultation-plus-discretion, and kept unchanged after it. If
+   narrowed U to consultation-plus-discretion, and kept through the corporate
+   revision, whose mechanism still rests first on answering upward. If
    the `drone` profile beats every individual component by a wide margin, the
    construct is diffuse rather than specific and should be described that way.
 4. **Upward sociality is not tested and no claim rests on it.** O\*NET has no
@@ -716,7 +814,7 @@ the right direction is not partial support, it is noise.
    ranks IVc mid-table; the observed register places it at the floor, and the
    grid should agree — farmers score low on U (nobody to report to) and low on L
    (working with land, not people), putting them at the `free` end. But **the
-   free/managerial/drone result does not depend on them.** There are 251 farmer
+   free/front-line/corporate result does not depend on them.** There are 251 farmer
    members, 3.6% of coded slots; a profile ordering that holds across the other
    96% is not weakened by a soft farmer showing, and an earlier draft calling
    this "the diagnostic case" overweighted a small cell. Reported as
@@ -728,21 +826,27 @@ the right direction is not partial support, it is noise.
    hold effective autonomy the nominal scales miss — but that reading was
    adopted *after* seeing them there, so it earns no credit unless the
    effective-autonomy score places them near farmers independently.
-7. **Police are predicted to be MISSED.** Police other-ranks write heavily and
-   hold little recognised discretion, so they score high on N (the paperwork
-   cluster) and high on U (through reversal), yet they sit at −0.200. Recorded
-   as an expected failure in advance; no component will be modified to
-   accommodate them. A simple grid that misses one occupation is more
-   informative than a bespoke rule that misses none.
+7. **Police were the pre-revision version's registered miss, and the revision
+   happens to absorb them — which earns it nothing.** Under the old signs
+   (L+, D−) police other-ranks scored high — paperwork, low discretion, public
+   service — against their observed −0.200, and the miss was registered in
+   advance. Under the revised signs their heavy external exposure (patrol, the
+   public) pulls them down and −0.200 fits. **That fit is retrodiction**: the
+   number was known before the revision was made, so it cannot count as a
+   confirmation, and it is recorded here so it is never quietly claimed as one.
+   No component will be modified to accommodate any occupation either way.
 8. **The two-factor account is NOT tested here.** It needs education in the
    model and education is deliberately out, so the components absorb whatever
    education would have explained. No result here bears on demand-versus-ability;
    that becomes the follow-up if the grid succeeds.
-9. **The military absence caps what any success can claim.** Military officers
-   are the paradigm of U-high and D-low — the drone profile in its purest
-   institutional form — and O\*NET rates no military occupation, so they are
+9. **The military absence caps what any success can claim.** The mid-rank
+   officer is the corporate drone in its purest institutional form — reports up
+   a fixed chain, commands below, and is as insulated from external feedback as
+   an occupation can be — and O\*NET rates no military occupation, so they are
    structurally absent. A confirmed pattern cannot be said to hold "generally"
-   while omitting the occupation that instantiates it most sharply.
+   while omitting the occupation that instantiates it most sharply. (Under the
+   pre-revision signs the officer was already the paradigm case; the revision
+   makes the absence bite harder, not less.)
 
 ## Deferred to future work: the unconstrained model
 
@@ -800,6 +904,18 @@ components. It also inherits the AI/Expert sourcing noted above, which matters
 more when the whole instrument rests on it.
 
 ## Known limitations, stated in advance
+
+**The revision's timing, and what it may not claim.** The corporate-drone
+revision (2026-08-18) was made before any element-register join — the O\*NET
+side is clean — but *after* the study's group-level results were known: the
+class table, the office-holder split, the police mean. Its distinctive content
+is the parts those results do not determine: the L and D sign flips, the
+employed-middle-manager peak, the insulation slope, the interior peak in
+altitude. Where a known number now fits better than it did (police), that is
+retrodiction and is labelled so. The revision is a bet made against the surface
+reading of the class table, not a fit to it — and if front-line beats
+corporate, the pre-revision version was right and the document says exactly
+that.
 
 - **Prior occupation, not current.** Every member's present job is identical, so
   the claim is that formative occupational experience shapes register.
