@@ -575,3 +575,21 @@ ordering is in git history.)*
   whether-to-when template is the obvious calibration)? Does the externality
   half become its own study (measuring the externality-estimation cost curve
   the way S17 measures the imitation lag), or stay a cited structural argument?
+
+**2026-08-18 — S10 occupational pre-registration executed end to end.** The
+instrument was blind-derived (three element-audit workflows over all 295
+rated O\*NET 30.3 elements; final 64 elements, four components, three
+profiles + an uncharged rival and the apex delta), the corporate-drone
+revision of the primary was registered pre-join and REFUTED by the run
+(front-line restored; free at the floor), and the delta — insulated command
+over exposed — won at every level of pre-commitment (+0.067, t 3.9 under all
+covariates; ties the whole EGP block for second place behind cohort). Both
+hierarchy ladders reproduce the class inverted U with middle peaking and the
+gradient nests inside class II (t 3.3). Era restriction: cohort deflates to
+its period-purged +0.138/sd; class II doubles to +0.203. Prediction 1
+confirmed 16/16; the four-sign permutation lands at p = 0.087. Draft §4.6b,
+METHODOLOGY §6.1b-c, Appendices A18–21 / B8–9 all updated; effect-size
+calibration added to §5 with verified benchmarks. S20 (the search for the
+register itself) planned at `plans/S20-register-search.md`; draft future work
+26–28 added (signaling drag, the monitor, the register search).
+

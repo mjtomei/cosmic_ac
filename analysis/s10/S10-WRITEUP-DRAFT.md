@@ -1120,6 +1120,113 @@ contrast.
     `CLASS-REGISTER-LITERATURE.md`. None should reach a published version
     before the books are opened.
 
+### 4.6b What the class shape was: occupation, pre-registered and run
+
+The class arm left a shape (the II-over-I inverted U) without a mechanism.
+This arm registered one, built the instrument to measure it, and ran —
+`plans/PREREG-occupational-accountability.md` is the registration with every
+revision dated; METHODOLOGY §6.1c is the method record; every number below
+reproduces from a committed script on `prereg_member_table.json` (one join,
+n = 4,762 members with register and instrument, 3,594 with every covariate).
+
+**The instrument, in one paragraph.** Each legislator's prior occupation,
+double-blind coded to an O\*NET-SOC code, joins 64 O\*NET elements whose
+assignment to four components was itself blind-derived by three independent
+coding workflows over the full 295-element universe: **U** upward (advising
+without the final say; discretion reverse-scored), **L** lateral (external
+service), **D** downward (command), **N** undirected (organisational
+account-giving and contact). Three profiles are signed weightings: free
+(−,−,−,−), front-line (+,+,−,+ — serves the public, commands nobody),
+corporate (+,−,+,+ — reports up, faces inward, commands below). A parallel
+**uncharged** instrument — four hierarchy-level scores from coders never told
+the register or the hypothesis existed — ran beside it as a registered horse
+race, and supplies the **apex delta** (MIDDLE − TOP): insulated command
+against exposed command.
+
+**The registered peak was refuted, and the refutation restored the original
+claim.** The registration (revised, dated, before any element-register join)
+predicted the corporate profile on top. Observed: front-line +0.047 (t 3.3)
+above corporate +0.029 (t 2.0), corporate on top in 24% of 2,000 member
+resamples — the registered refutation clause fired, and the pre-revision
+front-line drone stands as written. Free is decisively the floor (−0.073,
+t −5.2), so the accountability construct survives; what failed is the
+revision's distinctive content (external service starving the register,
+command marking it). The component signs said the same: L arrived positive
+and D flat in the raw joint fit.
+
+**But the delta won, and it is the study's most covariate-robust
+occupational number.** Registered in words — insulated command tracks more
+register than exposed command — and observed +0.049 (t 3.3) raw, **+0.067
+(t 3.9)** with cohort, class, education and prominence all present, right-
+signed and nominally significant in 16 of 16 covariate specifications, and
+absorbing the component-built middle entirely when both enter. Dropped from
+the grand model it costs as much adjusted R² as the entire six-dummy class
+block (.0033 vs .0038); education is spent once class and the delta are
+present (.0004).
+
+**Both hierarchy ladders reproduce the class shape.** Each level entered
+alone (standardised, n = 4,762; full-covariate slopes n = 3,594):
+
+| level | directional ladder (components) | coded ladder (blind signatures) |
+|---|---|---|
+| free | −0.060 (t −4.2) | −0.066 (t −4.7) |
+| bottom | −0.021 (t −1.5) | +0.010 (t +0.7) |
+| **middle** | **+0.029 (t +2.0)** | **+0.028 (t +2.0)** |
+| top | +0.010 (t +0.7) | +0.021 (t +1.5) |
+
+Middle peak, top below it, free at the floor — the II-over-I crossover in
+occupational form, from two semi-independently built instruments agreeing to
+the third decimal, and both middles survive the full covariate set (+0.041
+and +0.042, t 2.6 each). The registered altitude quadratic found **no**
+interior peak (Appendix A), so the discrete-level and delta forms carry the
+middle-peak claim, not the continuous one.
+
+**The gradient nests inside class, which is what "the class U was occupation
+all along" requires.** The delta's slope within class II alone is +0.076
+(t 3.3) — the class peak's own interior carries the occupational gradient —
+and +0.066 (t 4.0) with class fixed effects. Prediction 1 (the occupational
+block adds to EGP) confirmed in 16 of 16 paired specifications. The
+group-mean form of the two-corporates reading — insulated-corporate +0.037
+above front-line −0.045 (t 2.1 on the gap) above exposed-corporate — uses
+registered machinery with one unregistered knob (the median split), and one
+of its legs is farmer-driven: remove the 199 farmers the instrument reads as
+agricultural managers and exposed-corporate rises above front-line. The
+registered farmer headwind did exactly what it was registered to do.
+
+**The horse race and the pattern.** The uncharged instrument wins the
+registered AIC comparison narrowly (−205.0 vs −198.6); encompassing tests
+are significant both directions — neither instrument subsumes the other. The
+registered four-sign pattern (U+ L− D+ N+) holds in 25% of pattern-eligible
+lattice specifications, permutation p = 0.087 across 2,000 within-chamber
+shuffles — suggestive, unconfirmed; the pre-revision signs hold in 0%
+because D never goes negative under covariates. Under the covariate lattice,
+L's raw positivity dissolves (median +0.012, direction-unstable): the
+external-service gradient was carrying class and education correlation
+rather than surviving it.
+
+**Era restriction** (2025–26 speech only, n = 1,000): cohort deflates to its
+period-purged size (+0.138/sd, t 4.3 — the career figure of +0.383 was
+mostly period mixing), the class-II contrast doubles to +0.203 (t 3.0), and
+the delta persists directionally at era power (+0.061, t 1.7; the career
+effect predicts t ≈ 2.0 at this n). In the spike window, class II is the
+strongest social-position covariate; the insulation contrast holds its size
+without independent confirmation.
+
+Failed registered predictions are in Appendix A (the altitude quadratic, the
+autonomy asymmetry, nominal-vs-effective autonomy); superseded instrument
+generations are in Appendix B. Scale for all of it: §5's calibration bullet
+— these are small effects by any benchmark, reliably estimated, structurally
+replicated, and floors rather than ceilings.[^r46f]
+
+[^r46f]: `python prereg_stage1.py`, `prereg_stage2.py`,
+    `prereg_synthesis_check.py`, `prereg_covariate_strength.py`,
+    `prereg_strength_2526.py`; results snapshots
+    `prereg_stage1_results.txt`, `prereg_stage2_results.txt`. The join and
+    its drift guard: `prereg_join.py` (METHODOLOGY §6.1b addendum for the
+    two join facts). Instrument derivation artifacts:
+    `element_audit_*.json`, `element_levels.json`,
+    `instrument_final_cells.json`.
+
 ### 4.7 The register is a post-training artifact
 
 OLMo-2 ladder, same prompts across the post-training stages. The stage values
@@ -2532,6 +2639,27 @@ exposure as we can measure it.** Items 9–12 say the same of composition at the
 *chamber* level: nothing about who a legislature recruits explains why it
 climbs. What does carry is measured on individuals, not on chambers.
 
+18. **The altitude quadratic (registered)** — null. Within the top tercile of
+    embeddedness (E = U+D), register on altitude (A = D−U) and A²: both terms
+    null (A −0.036, t −1.2; A² −0.003, t −0.2), implied peak outside the
+    observed range, concave-with-interior-peak in only 44.1% of 2,000 member
+    resamples. The registered interior-peak claim fails in its continuous
+    form; the middle-peak result is carried by the discrete level slopes and
+    the apex delta (§4.6b), not by this test.
+19. **The autonomy asymmetry test (registered)** — failed, informatively. The
+    registration predicted a negative slope on the high-autonomy half and a
+    flat low half (autonomy sufficient to suppress, not necessary). Observed:
+    high half +0.075 (t 1.9), low half +0.024 (t 1.0) — no negative anywhere.
+    Discretion alone is also dead (+0.001, t 0.1); U's carry is Consultation
+    (+0.031, t 2.2). The instrument's autonomy story did not survive contact.
+20. **Nominal vs effective autonomy (registered)** — both null (nominal
+    −0.009, t −0.6; effective −0.016, t −1.1). The registration's own clause
+    applies: the distinction is dropped, not rescued.
+21. **The ladder middles in the 2025–26 era window** — null at era power
+    (directional +0.006, coded −0.014, n = 1,000), while the career-panel
+    versions hold at t 2.6 under full covariates. Labelled power, not
+    reversal: the era window predicts t ≈ 1.2–1.4 for effects this size.
+
 ## Appendix B — Superseded analyses
 
 0a. **§4.7's stage ordering** — "the shift is largest at the preference
@@ -2604,6 +2732,24 @@ climbs. What does carry is measured on individuals, not on chambers.
    the total calendar drift (§4.6). The null was an underpowered window
    comparison, not a flat trend, and "cohort replacement, *not* incumbent
    conversion" was the wrong frame — both mechanisms operate.
+
+8. **Three instrument generations behind §4.6b.** The six-element
+    account-giving composite (four documentation items + two reverse-scored
+    autonomy items) and the 2×3 six-cell grid built on it were superseded by
+    the blind element audit: the documentation items proved undirected and
+    moved to N, Letters and Memos — zero votes in two audit arms — was
+    re-admitted by the four-cell arm as undirected account-giving, and the
+    final 64-element four-component instrument replaced both earlier forms.
+    Registered corporate-drone primary ordering (corporate above front-line)
+    is not superseded but *refuted*, and reported as such in §4.6b; the
+    pre-revision front-line ordering it displaced is restored by the data.
+9. **Lattice B, first draft** — superseded same-day. Each hierarchy ladder
+    was entered as a four-score joint block; the within-block partials were
+    suppression artifacts (the coded pair correlate .99; the directional
+    middle showed −0.102 conditional on its own siblings). Redesigned to
+    each-level-alone before anything was reported; the rule — a ladder's
+    levels are contrasts over one space and never enter together — is now in
+    METHODOLOGY §6.1c.
 
 ## Appendix C — Replication and reproducibility
 
