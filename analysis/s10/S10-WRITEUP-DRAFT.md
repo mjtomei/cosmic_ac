@@ -1729,6 +1729,38 @@ beat" is the whole of that apparatus.
   both sit at or above the published human inter-coder bar, but
   self-agreement is not inter-coder agreement; the human-coded subsample
   remains the real validation and is not done.
+- **The covariate effects are small, and small is what this kind of work
+  finds.** In the field's common currency the study's member-level effects
+  are correlations of r ≈ .07 (the insulation delta), r ≈ .10 (the class
+  block), r ≈ .14 (cohort in current speech), with a class-II era contrast
+  of d ≈ 0.2. Against empirical benchmarks for individual-differences
+  research — Gignac & Szodorai's pool of 708 meta-analytically derived
+  correlations puts the 25th/50th/75th percentiles at r = .10/.20/.30
+  (*Personality and Individual Differences* 102, 2016) — these sit at or
+  below the typical published effect. Funder & Ozer's guidelines read the
+  same numbers forward: r = .05 is "very small" for single events "but
+  potentially consequential in the not-very long run," r = .10 "small…
+  but potentially more ultimately consequential," r = .20 "medium"
+  (*Advances in Methods and Practices in Psychological Science* 2, 2019).
+  Three things keep the small sizes honest rather than damning. They are
+  reliably estimated — at n ≈ 3,600–4,800 the delta carries t ≈ 4 and holds
+  in 100% of covariate specifications, which is the "critical
+  consideration" Funder & Ozer's guidance is conditioned on. They are
+  floors, not ceilings — the register index is one thin lexical probe of
+  the behavior, and measurement error in a single index attenuates every
+  correlation toward zero. And the study's real claim is structural, not
+  variance-explained: the same peak-below-the-summit shape appears in
+  class, in education, and in two occupational ladders built by
+  semi-independent processes, with the occupational gradient nesting inside
+  the class rungs — replication across instruments of the kind
+  variance-share statistics do not measure. One benchmark cuts against us
+  and is kept: Funder & Ozer flag r ≥ .40 as "likely to be a gross
+  overestimate," and our career-outcome cohort estimate (R ≈ .39) was
+  exactly that — period mixing inflated it, and the era-restricted r ≈ .14
+  is the defensible number. Individual style is dominated by idiolect;
+  roughly five-sixths of within-chamber member variation stays unexplained
+  by everything we measure, which is the expected result in stylistic
+  variation, not a defect of the instrument.
 
 ---
 
