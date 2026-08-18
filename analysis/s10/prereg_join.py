@@ -222,6 +222,13 @@ def occupation_scores():
                 wi * comp[k] for wi, k in zip(w, "ULDN")) / 4, 4)
         rec["E"] = round(comp["U"] + comp["D"], 4)
         rec["A"] = round(comp["D"] - comp["U"], 4)
+        # the DIRECTIONAL LADDER (Matthew, 2026-08-18): four levels composed
+        # from the components; spans the same space as U/L/D/N, so it is a
+        # basis change, never co-entered with the raw components in one spec
+        for nm, w in (("free", (-1, 0, -1, -1)), ("bottom", (+1, -1, -1, +1)),
+                      ("middle", (+1, -1, +1, +1)), ("top", (-1, -1, +1, +1))):
+            rec["dir_" + nm] = round(sum(
+                wi * comp[k] for wi, k in zip(w, "ULDN")) / 4, 4)
         # registered subsets and splits, all from the same standardised values
         zc = lambda e: Zc[e][o] * (-1 if e in REV else 1)
         rec["sub_U_cons"] = round(zc("4.A.4.b.6"), 4)

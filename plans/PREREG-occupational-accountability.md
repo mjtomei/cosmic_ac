@@ -610,6 +610,34 @@ opposite sign, so this is the sharpest single test of the revision's
 insulation mechanism, and it comes from the uncharged instrument's own
 materials.
 
+### Amendment, 2026-08-18, AFTER Stage 1 was unblinded (Matthew)
+
+Logged with its timing because it changes Stage 2's covariate set after
+Stage-1 results were seen; Stage 2 itself has not run.
+
+Stage 1's four-level slope table showed the same shape under both level
+constructions — middle peak, top below it, free at the floor — and Matthew's
+ruling adds **both constructions to the Stage-2 covariate set**, under their
+working names:
+
+- **the directional ladder** — free/bottom/middle/top composed from the
+  U/L/D/N components (free −U·0L·−D·−N; bottom +U−L−D+N; middle +U−L+D+N;
+  top −U−L+D+N, each /4). It spans the same space as the components — a basis
+  change, so it is **never co-entered with the raw components** in a single
+  specification.
+- **the coded ladder** — the blind level signatures (FREE/BOTTOM/MIDDLE/TOP),
+  as registered for the horse race.
+
+Stage 2 therefore runs **two lattices**: (A) the registered one, unchanged —
+the component block beside birthdec, EGP, education and prominence, carrying
+the registered four-sign permutation; and (B) the amended one — the two
+ladder blocks beside the same four covariates (2⁶ = 64 specifications).
+Declared for (B) before it runs: **middle +** and **free −** are predictions;
+top and bottom are reported without declared signs; and in specifications
+containing both ladders the near-collinearity of the coded pair means
+per-coefficient values are unstable — block-level joint tests carry the
+weight there, per the horse-race rule already registered.
+
 ## Pre-specified predictions
 
 ### The sign pattern (Matthew) — the corporate drone profile
