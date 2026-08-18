@@ -317,11 +317,18 @@ compute, so the lattice is always enumerated rather than sampled.
 - the extreme specifications named: which controls have to be in or out to move
   it most
 
-**The pattern statistic is counted over the specifications that can exhibit it.**
-A specification omitting M1c has no sign for M1c, so the full six-sign pattern is
-only checkable where all the pattern cells are present. That count is stated
-explicitly alongside the share, so a count like "holds in 8 of 8"
-is never mistaken for one out of the full lattice.
+**The pattern statistic is five signs, not six.** M2a is pre-declared thin
+(below) and is excluded from the count: a cell whose null we have already agreed
+is uninformative cannot be allowed to vote on whether the pattern held. It is
+still reported, with its predicted sign, as an ordinary cell.
+
+**It is counted over the specifications that can exhibit it.** A specification
+omitting M1c has no sign for M1c, so the five-sign pattern is only checkable
+where all five pattern cells are present. That count is stated explicitly
+alongside the share, so a count like "holds in 8 of 8" is never mistaken for one
+out of the full lattice. The permutation test uses this same five-sign
+statistic, so the null distribution is the distribution of the statistic
+actually reported.
 
 **Inference is not taken from the curve.** Reporting many fits guarantees some
 will look good by chance. The test is a **permutation**: shuffle the register
