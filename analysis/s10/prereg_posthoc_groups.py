@@ -1,19 +1,33 @@
 #!/usr/bin/env python3
-"""POST-HOC: the two-corporates reading of the Stage-1 results.
+"""The two-corporates reading of the Stage-1 results, with its exact status.
 
-WHY THIS FILE EXISTS, AND ITS LABEL
+LABEL, CORRECTED (Matthew, 2026-08-18). An earlier version of this header
+called the whole reading post-unblinding. That was wrong, and the correction
+matters:
 
-After Stage 1 ran, Matthew asked where the "two corporate groups -- one above
-front-line, one below" prediction stood. That structure was discussed in
-design but was NOT registered as an ordering: the elements cannot separate
-middle from top (the corporate-levels arm), so the split entered the
-registration as the apex delta (MIDDLE - TOP, predicted +, WON at t 3.3), the
-rung arm, and the altitude quadratic -- not as two profiles around front-line.
+  REGISTERED AND WON (fd3f996, 13:05, before the first fit at 13:17):
+    - insulated command above exposed command -- the apex delta, in exactly
+      those words ("insulated command tracks more register than exposed
+      command"), beta(delta) +0.049, t 3.3.
+    - insulated-corporate above front-line -- this IS the registered primary
+      ordering (corporate > front-line). In the registered continuous-slope
+      form it FAILED (+0.029 vs +0.047; corporate top in 24% of resamples);
+      in the group form below it holds (+0.082, t 2.1).
+    - the argmax grouping itself -- registered, as a display.
 
-This script assembles the post-hoc reading: argmax profile groups with the
-corporate cell split at its own median apex delta. EVERYTHING HERE IS
-POST-UNBLINDING except where noted; the registered shadow of this ordering is
-the apex delta, and only that carries pre-registered weight.
+  THE ONE UNREGISTERED KNOB: splitting the corporate cell at its own median
+  apex delta. The ingredients are registered; that particular cut is not.
+
+  NOT PINNED EITHER WAY by the registration: exposed-corporate vs front-line
+  (observed -0.046, t -1.2, exposed below).
+
+So the finding is a registered prediction read through registered machinery
+with one unregistered knob -- not a post-hoc discovery. What the write-up must
+still say plainly: the PRIMARY registered form of "insulated above front-line"
+(continuous slopes) failed, and the group form succeeding while the slope form
+fails is itself informative -- the corporate profile's -L weight fights the
+population-wide positive L gradient, and binning frees the comparison from
+that fight.
 
 Usage: python prereg_posthoc_groups.py
 """
