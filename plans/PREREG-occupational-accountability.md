@@ -387,11 +387,38 @@ publishes ratings for 894 of its 1,016 occupations; the remainder are mostly
 | distinct codes, rated | 416 of 470 |
 
 **87.7% is the number any model must report**, and the unrated 10% is not
-missing at random — it is concentrated in residual categories and the military,
-so members whose occupation resisted specific coding are exactly the ones who
-drop out. Largest unrated: Military Officers, All Other (115 members),
-Postsecondary Teachers, All Other (101), Public Relations Managers (49),
-Community and Social Service Specialists, All Other (39).
+missing at random. Reviewed occupation by occupation on 2026-08-18, the losses
+fall into three kinds, and only the third is a coding question:
+
+| kind | slots | recoverable? |
+|---|---|---|
+| **military** (`55-xxxx`) | 203 | **no** — O\*NET rates 0 of its 19 military codes |
+| specific occupations O\*NET happens not to rate | 179 | no — Public Relations Managers, Financial and Investment Analysts, Taxi Drivers, Paramedics, and every surgeon code |
+| genuine "All Other" residuals | ~280 | no — the source strings name no discipline, branch or process |
+
+The residual codings were audited and stand. "Professor" and "lecturer" with no
+discipline really are *Postsecondary Teachers, All Other* against O\*NET's 25
+discipline-specific codes; "factory worker" with no process really is
+*Production Workers, All Other*; "professional engineer" with no branch really
+is *Engineers, All Other*. One case is arguable — `29-1229.00` Physicians, All
+Other (15 slots), where rated general codes do exist (`29-1216.00` General
+Internal Medicine, `29-1229.02` Hospitalists) — and it is **deliberately left
+alone**: re-coding an unspecified physician to General Internal Medicine because
+that code carries ratings would be choosing a code for having data rather than
+for being correct, which is fitting the instrument to the analysis.
+
+**THE MILITARY LOSS IS A DIRECT WEAKNESS IN THIS TEST, not just missing data.**
+Military officers are the paradigm case of the construct being measured —
+hierarchical rank, standing orders, written reporting to a named superior, and
+minimal nominal discretion. They are the occupation the accountability
+hypothesis should predict most confidently, and they are entirely absent from
+the instrument because O\*NET rates no military occupation at all. 203 member
+slots, the second-largest unrated block. Any result must be read as excluding
+the case that would have discriminated hardest, and a claim that accountability
+drives the register cannot be supported by evidence that structurally omits the
+most accountable occupation in the panel. If the composite succeeds, an
+independent check on military members — via a non-O\*NET rating source — is the
+obvious next test rather than an optional extra.
 
 Ten most common: Lawyers (1,051 members), Secondary School Teachers (458),
 General and Operations Managers (324), Chief Executives (286), Farmers/Ranchers
