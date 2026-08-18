@@ -1,8 +1,9 @@
 # Pre-registration — what occupational property explains the register better than class?
 
-Two base measures (account-giving and sociality), each varied by direction of
-interaction; a signed prediction across the resulting six cells; and an ordinal
-prediction across three occupational profiles.
+Two base measures (account-giving and sociality) resolved into three
+directional components; three occupational profiles built from them; and one
+prediction — that register use peaks at the **drone** profile, with
+free < managerial < drone.
 
 **Written 2026-08-17; revised 2026-08-18. No O\*NET element has been joined to
 a member, and no relationship between any element and the register has been
@@ -44,7 +45,7 @@ is predicted to generate the register. Autonomy is not discarded, though — the
 claim is about reporting *and* discretion together, so both enter the composite,
 autonomy reverse-scored. What is rejected is autonomy *on its own*, which is why
 direction enters as a modifier of both base measures rather than as a
-separate construct — see the six-cell grid in the Specification.
+separate construct — see the directional components in the Specification.
 
 ## The instrument
 
@@ -64,8 +65,9 @@ and autonomy are two faces of one thing rather than two things (Matthew), so
 both enter the composite, with the autonomy items **reverse-scored**.
 
 Equally weighted mean of these six, each standardised across occupations. In
-the Specification's grid these are **M1a**, the upward cell — the direction
-modifier splits the rest of M1 out into lateral and downward variants:
+the Specification these are the **upward component (U)** — M2 contributes no
+upward element, so U is built from M1's alone; the direction modifier splits the
+rest of M1 out into the lateral and downward components:
 
 | element ID | name | sign | block |
 |---|---|---|---|
@@ -205,13 +207,15 @@ interaction with an individual involves reporting to them in some sense, so the
 two overlap by construction. What separates them is not whether interaction
 happens but **which way it points** — which is why direction enters as a
 modifier of both measures rather than as a construct of its own, and why the
-six-cell grid in the Specification is the shape of the test.
+three directional components in the Specification are the shape of the test.
 
-If the sign pattern holds on M2's row but not M1's, the finding is about working
-with people; if it holds on M1's but not M2's, it is about answering to them; if
-it holds on both, the register belongs to the occupation that does both while
-directing nobody. Those are three different papers, and the grid is what tells
-them apart.
+The M1/M2 robustness splits are what tell three different papers apart. If the
+result rides on M2's elements, the finding is about working with people; if on
+M1's, it is about answering to them; if on both, the register belongs to the
+occupation that does both while directing nobody. The splits are reported
+whichever way they fall — but note that M2 alone can only carry the
+drone-vs-managerial contrast, so a clean M2-only reading of the free profile is
+not available and is not claimed.
 
 ## Specification
 
@@ -245,22 +249,65 @@ choice this study should be making on the analyst's judgement.
 - **M2 — sociality.** Working with people rather than things (RIASEC Social
   against Realistic, and the people-serving activities).
 
-### Varied by direction, giving six
+### Resolved by direction into three components
 
-| | upward (a) | lateral (b) | downward (c) |
+| | upward (U) | lateral (L) | downward (D) |
 |---|---|---|---|
 | **M1** account-giving | `4.C.1.a.2.j` Written Letters and Memos · `4.A.3.b.6` Documenting/Recording · `4.A.4.a.2` Communicating with Supervisors · `4.A.4.c.1` Administrative Activities · **+ `4.C.3.a.4` Freedom to Make Decisions and `4.C.3.b.8` Determine Tasks reverse-scored** | `4.A.4.a.3` Communicating with People Outside the Organization · `4.A.4.a.4` Establishing and Maintaining Interpersonal Relationships | `4.A.4.b.1` Coordinating the Work of Others · `4.A.4.c.2` Staffing Organizational Units · `4.A.4.c.3` Monitoring and Controlling Resources |
-| **M2** sociality | `4.A.4.a.6` Selling or Influencing Others *(thin — see below)* | `1.B.1.d` Social minus `1.B.1.a` Realistic · `4.A.4.a.5` Assisting and Caring for Others · `4.A.4.a.8` Working Directly with the Public | `4.A.4.b.3` Training and Teaching Others · `4.A.4.b.4` Guiding, Directing and Motivating Subordinates · `4.A.4.b.5` Coaching and Developing Others |
+| **M2** sociality | *(empty — no such element exists)* | `1.B.1.d` Social minus `1.B.1.a` Realistic · `4.A.4.a.5` Assisting and Caring for Others · `4.A.4.a.8` Working Directly with the Public | `4.A.4.b.3` Training and Teaching Others · `4.A.4.b.4` Guiding, Directing and Motivating Subordinates · `4.A.4.b.5` Coaching and Developing Others |
 
-Each cell is the equally weighted mean of its standardised elements. The
-autonomy items sit in **M1a** because not holding the final say is what makes
-reporting *upward* rather than merely frequent.
+**The upward-sociality cell is empty, not weak (Matthew).** O\*NET has no
+element for sociality directed at a superior. An earlier draft filled the cell
+with `4.A.4.a.6` Selling or Influencing Others, called it thin, and then wrote a
+rule for discounting it — which is to register a prediction about a quantity the
+study never computes. The cell is now simply empty, and it needs no rule
+anywhere: not in the scoring, not in the counting, not in the permutation test.
 
-**One cell is thin and is declared so in advance.** O\*NET has no clean
-"sociality directed at a superior" element; `4.A.4.a.6` Selling or Influencing
-Others is the closest and is not a good fit, since influencing is as often
-lateral or downward. **M2a is therefore the weakest of the six and a null there
-is uninformative** — it must not be read as evidence against the pattern.
+**The three components are the full columns**, each the equally weighted mean of
+its standardised elements across both base measures:
+
+    U  upward     M1's six upward elements                (M2 contributes none)
+    L  lateral    M1's two + M2's three                   (5 elements)
+    D  downward   M1's three + M2's three                 (6 elements)
+
+Nothing is missing from a column: the upward component is built from the
+elements that exist, which happen to be M1's. The autonomy items sit in **U**,
+reverse-scored, because not holding the final say is what makes reporting
+*upward* rather than merely frequent.
+
+### The three versions: free, managerial, drone
+
+Each profile is a signed weighting of the same three components — which
+directions the occupation is engaged in, and which it is spared:
+
+| profile | U | L | D | the occupation |
+|---|---|---|---|---|
+| **free** | − | − | − | answers to nobody and commands nobody |
+| **managerial** | − | + | + | commands others; reports comparatively little |
+| **drone** | **+** | **+** | **−** | reports up, serves sideways, directs nobody |
+
+Each is the weighted mean of the standardised components, so all three are on a
+common scale and an occupation has a score on all of them.
+
+**Why the profiles are built on the pooled columns and not within M1 and M2
+separately.** The obvious alternative — three versions of M1 and three of M2,
+giving six — is unavailable for M2, and not as a matter of degree. With the
+upward cell empty, M2's profiles reduce to weightings over L and D alone:
+
+    drone_M2       L +1,  D −1
+    managerial_M2  L +1,  D +1
+    free_M2        L −1,  D −1   ==  −1 × managerial_M2
+
+`free_M2` is the exact antipode of `managerial_M2`. Within M2 the three profiles
+span one axis with two poles, so "managerial intermediate between free and
+drone" is not merely unsupported there — it is algebraically impossible, and a
+model fitting all three within M2 is rank-deficient. Pooling the columns
+restores the third dimension (the three pooled profile vectors have rank 3).
+
+**M1 alone is still reported, as a robustness split**, since M1 has all three
+components and supports all three profiles on its own. **M2 alone is reported
+only as the drone-vs-managerial contrast**, which is the single contrast it can
+carry, and is labelled as such.
 
 ### Models — two stages
 
@@ -270,24 +317,28 @@ against everything else the study already knows.**
 
 #### Stage 1 — which occupational measure, if any
 
-Small and focused. The question is whether any of the six cells carries signal,
-and what the sign pattern across them looks like.
+Small and focused. The question is whether the occupational grid carries signal
+at all, and whether the profile that carries it is the drone.
 
-    each of the six cells, alone            z ~ M1a            (x6)
-    the six jointly                         z ~ M1a+…+M2c
-    the combination, alone                  z ~ combined
+    each component, alone                   z ~ U               (x3)
+    the three components jointly            z ~ U + L + D
+    each profile, alone                     z ~ drone           (x3)
     the incumbent, for scale                z ~ EGP class dummies
 
-`combined` is the equally weighted mean of the six standardised cells. **It is
-reported in its own models and never alongside its components** — a composite
-and the terms it is built from are collinear by construction, and entering both
-is degenerate. Each of these is also fitted with `birthdec` added, giving the
-unconditional and cohort-adjusted reading of each, since establishing an effect
-absent the other covariates matters equally to establishing it net of them.
+**The profiles are never entered together.** They are three contrasts over the
+same three components, so a model holding all three is the component model
+rewritten — no new information, and rank-deficient once the constant is in.
+`U + L + D` *is* the joint profile model; the profile fits are how it is read.
+For the same reason there is no separate `combined` term: the profiles are the
+combinations.
 
-The six cells are collinear, so the joint fit is what says which *direction*
-carries the result; the alone-fits are for interpretation and for reading
-attenuation against each cell's own baseline.
+Each of these is also fitted with `birthdec` added, giving the unconditional and
+cohort-adjusted reading of each, since establishing an effect absent the other
+covariates matters equally to establishing it net of them.
+
+**Robustness splits, reported beside the pooled fits and not in place of them:**
+the same profiles within M1 alone; and within M2, the drone-vs-managerial
+contrast only, for the rank reason given above.
 
 #### Stage 2 — the proper evaluation, with everything the study holds
 
@@ -303,9 +354,9 @@ lattice so that no covariate is privileged as a control:
               prominence      log article length
 
 Five toggles is 2⁵ = 32 specifications, each predictor appearing in 16. If
-Stage 1 settles on the six cells rather than a single summary, the toggle count
-rises accordingly (ten toggles, 1,024 specifications) — still seconds of
-compute, so the lattice is always enumerated rather than sampled.
+Stage 1 settles on the three components rather than a single profile score, the
+toggle count rises accordingly (seven toggles, 128 specifications) — still
+seconds of compute, so the lattice is always enumerated rather than sampled.
 
 **What is reported per predictor**, over the specifications containing it:
 
@@ -317,18 +368,18 @@ compute, so the lattice is always enumerated rather than sampled.
 - the extreme specifications named: which controls have to be in or out to move
   it most
 
-**The pattern statistic is five signs, not six.** M2a is pre-declared thin
-(below) and is excluded from the count: a cell whose null we have already agreed
-is uninformative cannot be allowed to vote on whether the pattern held. It is
-still reported, with its predicted sign, as an ordinary cell.
+**The pattern statistic is three signs, and it is counted over the
+specifications that can exhibit it.** A specification omitting D has no sign for
+D, so the pattern is only checkable where all three components are present. That
+count is stated explicitly alongside the share, so a count like "holds in 8 of 8"
+is never mistaken for one out of the full lattice. The permutation test uses
+this same three-sign statistic, so the null distribution is the distribution of
+the statistic actually reported.
 
-**It is counted over the specifications that can exhibit it.** A specification
-omitting M1c has no sign for M1c, so the five-sign pattern is only checkable
-where all five pattern cells are present. That count is stated explicitly
-alongside the share, so a count like "holds in 8 of 8" is never mistaken for one
-out of the full lattice. The permutation test uses this same five-sign
-statistic, so the null distribution is the distribution of the statistic
-actually reported.
+**Three signs is a weaker conjunction than six, and deliberately so.** A
+six-cell pattern sounds more demanding but was not: two of its cells were thin
+or empty, so it bought its apparent stringency with noise. Three well-measured
+signs at a 1-in-8 null rate is the honest version of the same test.
 
 **Inference is not taken from the curve.** Reporting many fits guarantees some
 will look good by chance. The test is a **permutation**: shuffle the register
@@ -346,27 +397,34 @@ Analysis," *Perspectives on Psychological Science* 11, no. 5 (2016): 702–12,
 doi:10.1177/1745691616658637. Its three steps — enumerate, display, joint
 inference — are what Stage 2 implements.
 
-**Pre-specified subsets**, fixed here and read off Stage 1: M1a against M1c
-(does reporting up beat commanding down?); M1a+M2b (the drone profile proper);
-the six with the autonomy items removed from M1a.
+**Pre-specified subsets**, fixed here and read off Stage 1: U against D (does
+reporting up beat commanding down?); the three components with the autonomy
+items removed from U, which separates *reporting to someone* from *lacking the
+final say* — the two are conflated in U by construction, and the manual classes
+are where they come apart (prediction 6).
 
 ## Pre-specified predictions
 
 ### The sign pattern (Matthew) — the drone profile
 
 The register is predicted to belong to the occupation that **reports upward,
-serves laterally, and commands nobody**. As signs on the six cells:
+serves laterally, and commands nobody**. As signs on the three components, in
+the joint fit:
 
-| | upward (a) | lateral (b) | downward (c) |
-|---|---|---|---|
-| **M1** account-giving | **+** | **+** | **−** |
-| **M2** sociality | (+) *thin — excluded from the pattern test* | **+** | **−** |
+| component | predicted | reading |
+|---|---|---|
+| **U** upward | **+** | rendering judgment to someone above |
+| **L** lateral | **+** | serving people who are not superiors |
+| **D** downward | **−** | commanding suppresses it |
 
-**M2a carries a predicted sign but is not counted.** The cell is thin by
-construction (no clean O\*NET element for sociality directed at a superior), so
-it is reported like any other cell and excluded from the five-sign pattern
-statistic. Including a cell we have already declared uninformative would let a
-coin-flip decide the headline.
+**Three signs, all measured, none excluded.** Every component is built from
+elements that exist, so there is no cell to discount and no counting rule to
+write. The permutation test uses this same three-sign statistic.
+
+The signs are equivalent to the profile ordering below — `drone` is exactly the
+weighting (+, +, −) — and are stated separately because the component fit and
+the profile fit answer different questions: which direction carries the effect,
+and which occupation sits at the peak.
 
 ### The ordinal prediction: free < managerial < drone (Matthew)
 
@@ -376,12 +434,13 @@ should order, on register use,
 
     completely free   <   managerial   <   drone
 
-- **free** — answers to nobody: high autonomy, low on every reporting cell.
-  Farmers, sole practitioners, own-account tradespeople.
-- **managerial** — commands others: high on the downward cells, moderate
-  upward. Executives, general managers, senior administrators.
-- **drone** — reports up and serves sideways while directing nobody: high M1a
-  and M2b, low M1c and M2c. Teachers, nurses, social workers, caseworkers.
+- **free** (−U, −L, −D) — answers to nobody and commands nobody; high autonomy,
+  low on every directed component. Farmers, sole practitioners, own-account
+  tradespeople.
+- **managerial** (−U, +L, +D) — commands others and is comparatively spared
+  reporting. Executives, general managers, senior administrators.
+- **drone** (+U, +L, −D) — reports up and serves sideways while directing
+  nobody. Teachers, nurses, social workers, caseworkers.
 
 **Why managerial is predicted intermediate rather than lowest**, on this study's
 own prior findings rather than on intuition:
@@ -401,10 +460,18 @@ because they still report upward to boards, ministers and shareholders — the
 downward cell is negative but the upward cell is not zero for them. The free
 profile has neither.
 
-**How it is tested.** Each occupation is scored for similarity to the three
-profiles (its standardised cell values against each profile's predicted signs),
-assigned to whichever it most resembles, and the three groups' mean register z
-compared. Two things are reported, and they answer different questions:
+**How it is tested.** Each occupation carries a score on all three profiles —
+the weighted mean of its standardised U, L and D under that profile's signs. It
+is **assigned to its highest**, and the three groups' mean register z is
+compared. The assignment rule is fixed here: argmax over the three profile
+scores, each first standardised across occupations so the comparison is not
+decided by one profile having more elements than another. Ties (exact, after
+standardisation) go unassigned and are counted.
+
+This yields the same object as the class arm of §4.6a — a three-position shape
+with means and standard errors, plotted the same way — so the occupational and
+class pictures can be read against each other directly rather than through
+coefficients. Two things are reported, and they answer different questions:
 
 - **the peak** — drone against each of the other two, which is the load-bearing
   claim and the only refutable one;
@@ -451,13 +518,13 @@ predicts something different there:
 - **upward only, lateral null** → pure deference rather than the drone profile;
   the service half is doing nothing and the construct should be narrowed.
 
-Confirmation requires the **pattern**, not any single cell. Two of six in the
-right direction is not partial support, it is noise.
+Confirmation requires the **pattern**, not any single component. Two of three in
+the right direction is not partial support, it is noise.
 
 ### The rest, in order
 
-1. **The occupational cells add to EGP class.** Across the lattice,
-   specifications containing the six cells outperform the otherwise-identical
+1. **The occupational components add to EGP class.** Across the lattice,
+   specifications containing them outperform the otherwise-identical
    specifications without them, EGP present or absent. If they do not,
    occupational structure adds nothing beyond class and the hypothesis fails on
    its own terms.
@@ -468,21 +535,23 @@ right direction is not partial support, it is noise.
    most of them is a different result from one appearing in a favourable corner,
    and "some specification shows it" is not a finding. Cohort is expected to
    attenuate most, being the strongest predictor in the study and confounded
-   with occupation, so each cell's with-cohort specifications are compared
+   with occupation, so each component's with-cohort specifications are compared
    against its without-cohort ones directly; a pattern surviving only where
    cohort is absent is reported as a statement about generations rather than
    occupations.
-3. **M1a is the strongest single cell.** If any one predictor carries the
-   result it should be upward account-giving. If `combined` beats every
-   individual cell by a wide margin, the construct is diffuse rather than
+3. **U is the strongest single component.** If any one predictor carries the
+   result it should be upward account-giving. If the `drone` profile beats every
+   individual component by a wide margin, the construct is diffuse rather than
    specific and should be described that way.
-4. **M2a is uninformative either way.** The cell is thin by construction
-   (no clean O\*NET element for sociality directed at a superior), so a null
-   there is a measurement gap, not evidence.
+4. **Upward sociality is not tested and no claim rests on it.** O\*NET has no
+   element for it, so it is absent from the instrument rather than measured
+   badly. Nothing in the predictions above or below depends on it, and no result
+   may be explained after the fact by appeal to it.
 5. **Farmers are the diagnostic case.** EGP ranks IVc mid-table; the observed
    register places it at the floor. If the grid beats EGP anywhere, it is here:
-   farmers should score low on M1a (nobody to report to) and low on M2b (working
-   with land, not people).
+   farmers should score low on U (nobody to report to) and low on L (working
+   with land, not people) — that is, they should land in the `free` profile,
+   which is predicted lowest.
 6. **The manual classes are not a counter-case, and that must not be claimed as
    a success.** V/VI and VIIab score low on measured autonomy yet sit at the
    floor. Under the sufficient-not-necessary reading this is expected — they
@@ -490,16 +559,16 @@ right direction is not partial support, it is noise.
    adopted *after* seeing them there, so it earns no credit unless the
    effective-autonomy score places them near farmers independently.
 7. **Police are predicted to be MISSED.** Police other-ranks write heavily, so
-   they score high on M1a, yet they sit at −0.200. Recorded as an expected
-   failure in advance; no cell will be modified to accommodate them. A simple
+   they score high on U, yet they sit at −0.200. Recorded as an expected
+   failure in advance; no component will be modified to accommodate them. A simple
    grid that misses one occupation is more informative than a bespoke rule that
    misses none.
 8. **The two-factor account is NOT tested here.** It needs education in the
-   model and education is deliberately out, so the cells absorb whatever
+   model and education is deliberately out, so the components absorb whatever
    education would have explained. No result here bears on demand-versus-ability;
    that becomes the follow-up if the grid succeeds.
 9. **The military absence caps what any success can claim.** Military officers
-   are the paradigm of M1a-high and M1c-low — the drone profile in its purest
+   are the paradigm of U-high and D-low — the drone profile in its purest
    institutional form — and O\*NET rates no military occupation, so they are
    structurally absent. A confirmed pattern cannot be said to hold "generally"
    while omitting the occupation that instantiates it most sharply.
