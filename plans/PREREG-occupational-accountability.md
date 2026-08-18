@@ -1,9 +1,10 @@
 # Pre-registration — what occupational property explains the register better than class?
 
 Two base measures (account-giving and sociality) resolved into three
-directional components; three occupational profiles built from them; and one
-prediction — that register use peaks at the **drone** profile, with
-free < managerial < drone.
+directional components; three occupational profiles built from them as
+continuous scores; and one prediction — that the **drone** profile tracks
+register use most strongly, with free < managerial < drone. The test is on the
+continuous scores throughout; the three-group shape is a display.
 
 **Written 2026-08-17; revised 2026-08-18. No O\*NET element has been joined to
 a member, and no relationship between any element and the register has been
@@ -49,7 +50,7 @@ separate construct — see the directional components in the Specification.
 
 ## The instrument
 
-O\*NET **30.3** (US Department of Labor), CC-BY 4.0, distributed as CSV at
+O\*NET **29.1** (US Department of Labor, November 2024 release), CC-BY 4.0, distributed as CSV at
 `onetcenter.org/dl_files/database/db_30_3_csv/`. Element IDs below were verified
 against `content_model_reference.csv` on 2026-08-17, which corrected three
 errors in the first draft of this file: the item is **Written** Letters and
@@ -424,15 +425,19 @@ write. The permutation test uses this same three-sign statistic.
 The signs are equivalent to the profile ordering below — `drone` is exactly the
 weighting (+, +, −) — and are stated separately because the component fit and
 the profile fit answer different questions: which direction carries the effect,
-and which occupation sits at the peak.
+and which profile tracks it most strongly.
 
 ### The ordinal prediction: free < managerial < drone (Matthew)
 
 The sign pattern says which direction of interaction goes with the register. A
 second, stronger claim is registered here: the three occupational **profiles**
-should order, on register use,
+should order, by how strongly each tracks register use,
 
     completely free   <   managerial   <   drone
+
+Each profile is a continuous score every occupation holds, so this is an
+ordering of slopes rather than of groups; the profiles below name the ends of
+each continuum, not bins that occupations fall into.
 
 - **free** (−U, −L, −D) — answers to nobody and commands nobody; high autonomy,
   low on every directed component. Farmers, sole practitioners, own-account
@@ -460,39 +465,57 @@ because they still report upward to boards, ministers and shareholders — the
 downward cell is negative but the upward cell is not zero for them. The free
 profile has neither.
 
-**How it is tested.** Each occupation carries a score on all three profiles —
-the weighted mean of its standardised U, L and D under that profile's signs. It
-is **assigned to its highest**, and the three groups' mean register z is
-compared. The assignment rule is fixed here: argmax over the three profile
-scores, each first standardised across occupations so the comparison is not
-decided by one profile having more elements than another. Ties (exact, after
-standardisation) go unassigned and are counted.
+**How it is tested — continuously (Matthew).** Every occupation carries a score
+on all three profiles: the weighted mean of its standardised U, L and D under
+that profile's signs. **These scores, not any grouping of them, are the test.**
+O\*NET rates the same elements for every occupation it rates — verified, and
+all-or-nothing rather than patchy: of the 923 occupations appearing in these
+files, 879 carry all sixteen activity and context elements and 44 carry none of
+them (only the machine-learning interest scores). No element is selectively
+missing for some occupations, so the three components are dense, continuous, and
+on a common footing across the whole occupation list.
 
-This yields the same object as the class arm of §4.6a — a three-position shape
-with means and standard errors, plotted the same way — so the occupational and
-class pictures can be read against each other directly rather than through
-coefficients. Two things are reported, and they answer different questions:
+The registered prediction is therefore an ordering of **continuous slopes**,
+each profile score entered alone and standardised, so the coefficients are
+comparable:
 
-- **the peak** — drone against each of the other two, which is the load-bearing
-  claim and the only refutable one;
-- **the ordering** — free < managerial < drone, by Jonckheere–Terpstra trend
-  test against the ordered alternative rather than three pairwise comparisons.
+    beta(drone)  >  beta(managerial)  >  beta(free)          with beta(drone) > 0
 
-The trend test is reported whichever way the two lower profiles fall, so a
-missed ordering is visible rather than absorbed into a null.
+This is the same claim as "the peak is at drone" without discretising anything.
+It is not implied by the component signs: which profile vector best aligns with
+the register gradient depends on the components' relative magnitudes and on
+their covariance across occupations, so the ordering is a genuine additional
+test rather than a restatement. It is assessed by **bootstrap over members
+(2,000 resamples, clustered by member), reporting the share in which the full
+ordering holds and the share in which `drone` is top** — the second being the
+load-bearing one.
+
+**Secondary and descriptive: the three-group shape.** Each occupation is also
+assigned to its highest-scoring profile (argmax over the standardised scores;
+exact ties unassigned and counted) and the three groups' mean register z is
+plotted with standard errors, with a Jonckheere–Terpstra trend test against the
+ordered alternative.
+
+**This is a display, not the test, and is labelled as such wherever it appears.**
+Binning three continuous scores into one categorical assignment discards the
+magnitudes and makes the result depend on an arbitrary cut rule; it is kept only
+because it yields the same object as the class arm of §4.6a — a three-position
+shape, plotted the same way — so the occupational and class pictures can be read
+against each other directly. If the continuous ordering and the binned shape
+disagree, **the continuous result governs** and the disagreement is reported.
 
 **What would refute it, and what would not (Matthew).** The load-bearing claim
-is that **drone is the peak** — free and managerial both sit below it. Only that
-can be refuted here:
+is that **drone leads** — `beta(drone)` exceeds both other profile slopes. Only
+that can be refuted here:
 
-- **managerial ≥ drone, or free ≥ drone** — refuting. Commanding others, or
-  answering to nobody, would then go with *more* register than reporting upward,
-  which no version of the hypothesis survives, and the Stage 1 sign pattern
-  should be re-read accordingly.
-- **managerial < free**, reversing the predicted order of the two lower
-  profiles, is **not** refuting. Both remain below the drone peak and the shape
-  is unchanged; what flips is only which of the two non-drone profiles sits
-  lower. Recorded as a prediction missed on the ordering, not a hypothesis
+- **beta(managerial) ≥ beta(drone), or beta(free) ≥ beta(drone)** — refuting.
+  Commanding others, or answering to nobody, would then track *more* register
+  than reporting upward, which no version of the hypothesis survives, and the
+  Stage 1 sign pattern should be re-read accordingly.
+- **beta(managerial) < beta(free)**, reversing the predicted order of the two
+  lower profiles, is **not** refuting. Both remain below the drone slope and the
+  shape is unchanged; what flips is only which of the two non-drone profiles
+  sits lower. Recorded as a prediction missed on the ordering, not a hypothesis
   failed.
 
 That second case is worth watching for its own sake rather than as a scoring
@@ -636,7 +659,7 @@ the model comparison, and cannot be used to revise the composite.
 As required above. SOC mapping completed by double-blind coding with
 adjudication (`workflows/soccode.js` on arch-home for the two votes,
 `workflows/socfinish.js` here for the remaining second votes and every
-adjudication), then validated against O\*NET 30.3's published occupation list.
+adjudication), then validated against O\*NET 29.1's published occupation list.
 
 | quantity | value |
 |---|---|
@@ -644,7 +667,7 @@ adjudication), then validated against O\*NET 30.3's published occupation list.
 | with a valid SOC code | 4,263 (96.8%) |
 | member-occupation slots | 7,034 |
 | slots with a code | 6,829 (97.1%) |
-| **distinct SOC codes matched** | **470** of 1,016 in O\*NET 30.3 |
+| **distinct SOC codes matched** | **470** of 1,016 in O\*NET 29.1 |
 | top-10 codes cover | 45.0% of coded slots |
 | top-50 / top-200 | 73% / 93% |
 
