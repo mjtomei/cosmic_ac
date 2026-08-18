@@ -370,14 +370,40 @@ profile has neither.
 **How it is tested.** Each occupation is scored for similarity to the three
 profiles (its standardised cell values against each profile's predicted signs),
 assigned to whichever it most resembles, and the three groups' mean register z
-compared. The prediction is the **ordering**, tested with a Jonckheere–Terpstra
-trend test against the ordered alternative, not three pairwise comparisons.
+compared. Two things are reported, and they answer different questions:
 
-**What would refute it.** Managerial at or below free reverses the claim —
-commanding would then suppress the register as much as answering to nobody,
-which no version of the hypothesis predicts. Managerial at or above drone means
-direction does not matter in the way the sign pattern asserts, and Stage 1's
-result should be re-read accordingly.
+- **the peak** — drone against each of the other two, which is the load-bearing
+  claim and the only refutable one;
+- **the ordering** — free < managerial < drone, by Jonckheere–Terpstra trend
+  test against the ordered alternative rather than three pairwise comparisons.
+
+The trend test is reported whichever way the two lower profiles fall, so a
+missed ordering is visible rather than absorbed into a null.
+
+**What would refute it, and what would not (Matthew).** The load-bearing claim
+is that **drone is the peak** — free and managerial both sit below it. Only that
+can be refuted here:
+
+- **managerial ≥ drone, or free ≥ drone** — refuting. Commanding others, or
+  answering to nobody, would then go with *more* register than reporting upward,
+  which no version of the hypothesis survives, and the Stage 1 sign pattern
+  should be re-read accordingly.
+- **managerial < free**, reversing the predicted order of the two lower
+  profiles, is **not** refuting. Both remain below the drone peak and the shape
+  is unchanged; what flips is only which of the two non-drone profiles sits
+  lower. Recorded as a prediction missed on the ordering, not a hypothesis
+  failed.
+
+That second case is worth watching for its own sake rather than as a scoring
+question. Every U we have measured so far — class, education, prominence in the
+national chambers — has its peak one rung below the top, but we have never seen
+one *side* of a U fall below the other in a way that distinguishes them, because
+the two arms have always been the high-status and low-status ends of a single
+ranking. Free and managerial are different: both are "not drone", but one
+answers to nobody and the other commands. If the commanding side sits lower, the
+suppression is coming from directing others rather than from lacking someone to
+report to, which is a claim about mechanism that the class table cannot make and
+this profile split can.
 
 **The downward sign is what makes this falsifiable.** Every rival account
 predicts something different there:
