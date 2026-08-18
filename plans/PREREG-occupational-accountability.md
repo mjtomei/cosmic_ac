@@ -209,10 +209,12 @@ full member population, HC1 errors.
 
 **No education term anywhere**, on either the occupation or the member
 (Matthew): occupations demanding account-giving also demand education, so
-conditioning is over-control on the causal path. And **`birthdec` is not
-assumed** — every predictor is reported raw before it is reported adjusted (see
-the ladder below), because establishing the effect absent all covariates matters
-equally to establishing it net of cohort.
+conditioning is over-control on the causal path. And **nothing is a
+privileged control** — not education, not cohort, not class. Every predictor is
+reported as a distribution across all subsets of the others (see the lattice
+below), because establishing an effect absent the other covariates matters
+equally to establishing it net of them, and which control set to prefer is not a
+choice this study should be making on the analyst's judgement.
 
 ### The two base measures
 
@@ -239,48 +241,70 @@ Others is the closest and is not a good fit, since influencing is as often
 lateral or downward. **M2a is therefore the weakest of the six and a null there
 is uninformative** — it must not be read as evidence against the pattern.
 
-### Models — a ladder, reported at every rung
+### Models — the full specification lattice
 
-Nothing is adjusted before its unconditional effect is on record. Each rung is
-reported for all seven predictors and for the incumbent, on the same members:
+**No predictor is privileged as a control (Matthew).** Rather than pick one
+covariate set and report coefficients conditional on it, every subset is fitted
+and each effect is reported as a *distribution* over all the ways the competing
+effects could be removed. This is specification-curve / multiverse analysis — both
+verified 2026-08-18: Uri Simonsohn, Joseph P. Simmons & Leif D. Nelson,
+"Specification curve analysis," *Nature Human Behaviour* 4, no. 11 (2020):
+1208–14, doi:10.1038/s41562-020-0912-z; and Sara Steegen, Francis Tuerlinckx,
+Andrew Gelman & Wolf Vanpaemel, "Increasing Transparency Through a Multiverse
+Analysis," *Perspectives on Psychological Science* 11, no. 5 (2016): 702–12,
+doi:10.1177/1745691616658637. The method replaces a defensible-but-arbitrary
+choice with a reported fact, and its own three steps are what this section
+implements: enumerate the valid specifications, display them, and conduct joint
+inference across all of them.
 
-    rung 0   z ~ <predictor>                                    [RAW, no covariates]
-    rung 1   z ~ <predictor> + birthdec                         [cohort-adjusted]
-    rung 2   z ~ M1a+M1b+M1c+M2a+M2b+M2c                        [JOINT, raw]
-    rung 3   z ~ M1a+M1b+M1c+M2a+M2b+M2c + birthdec             [JOINT, adjusted]
+**Eight toggles**, each in or out:
 
-    incumbent, at rungs 0 and 1:  z ~ EGP class dummies [+ birthdec]
-    summary,   at rungs 0 and 1:  z ~ combined          [+ birthdec]
+    M1a  M1b  M1c        account-giving, upward / lateral / downward
+    M2a  M2b  M2c        sociality,      upward / lateral / downward
+    birthdec             cohort
+    EGP                  the class dummies, as one block
 
-**Rung 0 is not a throat-clearing step.** Establishing whether an occupational
-property predicts the register *at all* is a separate question from whether it
-predicts net of cohort, and the answers can differ in both directions. Reporting
-only the adjusted figure would let a real unconditional effect vanish behind a
-covariate, which is the error §4.6a made in reverse when a genuine education
-ladder turned out to be class.
+That is **2⁸ = 256 specifications**; each predictor appears in **128** of them.
+All are member-level with the canonical spec (one row per legislator, equal
+weight, z within chamber, HC1) and all are fitted on the same members, so
+nothing varies but the right-hand side. 256 OLS fits on ~5,000 rows is seconds
+of compute, so there is no reason to sample the lattice rather than enumerate it.
 
-**Why `birthdec` is the only thing ever added, and only at rungs 1 and 3.**
-Cohort is by far the strongest predictor of the register in this study (t ≈ 27
-at member level), and it is confounded with occupation — later cohorts hold
-different jobs, with fewer farmers and miners and more communications work. So
-the adjusted rung is necessary to know whether an occupational effect is
-anything more than the occupational composition of generations. It is not,
-however, more trustworthy than rung 0 by default: which rung is the interesting
-one depends on what the two say.
+**What is reported per predictor**, over its 128 specifications:
 
-**The gap between rungs is itself reported.** If a cell is strong raw and
-vanishes at rung 1, the finding is that the occupation marks a generation. If it
-survives, the occupation is doing its own work. Both are results; neither is a
-failure of the other.
+- median coefficient, and the 5th–95th percentile range
+- **share of specifications in the predicted direction** — the sign-stability
+  statistic, which is the one that matters for the drone pattern
+- share reaching nominal significance, stated as a descriptive count and *not*
+  as a p-value
+- the specifications at the extremes, named — which controls have to be present
+  or absent to move it most
 
-Each predictor is also fitted **alone** at rungs 0 and 1 as well as inside the
-joint model, so attenuation is read against its own baseline. The joint fit is
-the discriminating test — the six cells are collinear, and six separate models
-would each come back positive off shared interaction variance.
+**And the pattern as a whole.** The drone prediction is a joint claim about six
+signs, so the headline statistic is the **share of the 256 specifications in
+which the full pattern holds** (M1a+, M1b+, M1c−, M2b+, M2c−; M2a excluded as
+the declared thin cell). A pattern that holds in most of the lattice is a
+different kind of result from one that holds in a favourable corner of it.
 
-**Pre-specified subsets**, fixed here, reported at every rung: M1a against M1c
-(does reporting up beat commanding down?); M1a+M2b (the drone profile proper);
-the six with the autonomy items removed from M1a (does M1 survive without them?).
+**Inference under the lattice.** Reporting 256 fits invites the objection that
+some will look good by chance, so significance is not claimed from the curve.
+The inferential test is a **permutation**: shuffle the register outcome across
+members within chamber, re-run the entire lattice, and record how often the full
+sign pattern holds and how extreme the median coefficients are. 2,000 shuffles.
+That gives a p-value for the *pattern* rather than for any single specification,
+which is the quantity the hypothesis is actually about.
+
+**`birthdec` is a toggle like any other.** It is expected to attenuate most —
+cohort is the strongest predictor in the study (t ≈ 27) and is confounded with
+occupation, since later cohorts hold different jobs — but that expectation is
+recorded as a prediction to be checked, not as grounds for building it into
+every model. The share of a cell's sign stability that survives conditioning on
+cohort is read off the lattice directly, by comparing its 64 with-cohort
+specifications against its 64 without.
+
+**Pre-specified subsets**, still fixed here and read off the lattice: M1a against
+M1c (does reporting up beat commanding down?); M1a+M2b (the drone profile
+proper); the six with the autonomy items removed from M1a.
 
 ## Pre-specified predictions
 
@@ -311,16 +335,20 @@ right direction is not partial support, it is noise.
 
 ### The rest, in order
 
-1. **The joint model beats the incumbent, at the same rung.** Rung 2 exceeds the
-   raw EGP model and rung 3 exceeds the adjusted one, on adjusted R², with the
-   blocks surviving. Comparisons are only ever made rung-for-rung. If the joint
-   model does not beat class at either rung, occupational structure adds nothing
-   beyond EGP and the hypothesis fails on its own terms.
-2. **The sign pattern is required at rung 3, and reported at rung 0.** Cohort is
-   confounded with occupation, so the adjusted rung is where the pattern has to
-   hold to mean anything about occupations rather than generations. But a
-   pattern that appears only after adjustment, with nothing at rung 0, is a
-   weaker result than one present in both, and is reported as such.
+1. **The occupational cells add to EGP class.** Across the lattice,
+   specifications containing the six cells outperform the otherwise-identical
+   specifications without them, EGP present or absent. If they do not,
+   occupational structure adds nothing beyond class and the hypothesis fails on
+   its own terms.
+2. **The sign pattern is stable across the lattice, not just present in it.**
+   The headline is the share of the 256 specifications in which the full pattern
+   holds. A pattern surviving most of the lattice is a different result from one
+   appearing in a favourable corner, and "some specification shows it" is not a
+   finding. Cohort is expected to attenuate most — it is the strongest predictor
+   in the study and is confounded with occupation — so the with-cohort half of
+   each cell's specifications is compared against the without-cohort half
+   directly, and a pattern that survives only where cohort is absent is reported
+   as a statement about generations rather than occupations.
 3. **M1a is the strongest single cell.** If any one predictor carries the
    result it should be upward account-giving. If `combined` beats every
    individual cell by a wide margin, the construct is diffuse rather than
