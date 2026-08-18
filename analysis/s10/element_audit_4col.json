@@ -1,0 +1,1125 @@
+{
+ "nominations": 217,
+ "consensus": 71,
+ "singletons": 12,
+ "consensus_pairs": [
+  {
+   "id": "1.B.1.d",
+   "cell": "L",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Helping, advising, and serving others is lateral service, but an interest rating measures attraction rather than job demand",
+    "Helping, advising, and providing service to others (clients, students, the public) is serving sideways; interest rating, so weaker evidence.",
+    "Helping, advising, and serving others is lateral service, but this is an interest rating (weaker evidence)."
+   ]
+  },
+  {
+   "id": "1.B.1.f",
+   "cell": "N",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M1",
+    "M1",
+    "M1"
+   ],
+   "why": [
+    "following procedures and regulations to organize information is procedural account-giving without direction; interest rating, so weaker evidence",
+    "Following procedures and regulations to organize information is procedure-bound clerical work, counterpart unnamed; interest rating",
+    "Following procedures and regulations to organize information \u2014 procedural account-keeping without a named counterpart; interest rating, so weaker evidence."
+   ]
+  },
+  {
+   "id": "1.B.3.ad",
+   "cell": "L",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Expert advising, coaching and counseling of clients is serving sideways to people who are neither superiors nor subordinates; interest rating, so weaker evidence.",
+    "Expert advising and counseling of clients points laterally, but coaching content shades toward instructing and it is an interest rating.",
+    "Providing expert advice and counseling to clients is sideways service; interest-area evidence, so low confidence."
+   ]
+  },
+  {
+   "id": "1.B.3.af",
+   "cell": "L",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Selling goods/services is dealing with clients who are neither superiors nor subordinates; interest rating, so weaker evidence",
+    "Selling goods or services is client-facing sideways service, but an interest rating and silent on the interaction itself.",
+    "Selling goods or services is customer-facing sideways interaction; interest rating, so weaker evidence."
+   ]
+  },
+  {
+   "id": "1.B.3.ai",
+   "cell": "N",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M1",
+    "M1",
+    "M1"
+   ],
+   "why": [
+    "Maintaining, auditing, and interpreting records and accounts is record-keeping/account-giving with no counterpart named; interest rating, so weak evidence",
+    "Examining, auditing, and maintaining records and accounts is squarely account-giving but names no counterpart; interest-area rating tempers confidence.",
+    "Maintaining, auditing, and evaluating records and accounts is record-keeping/justification work; interest-area rating tempers confidence."
+   ]
+  },
+  {
+   "id": "1.B.3.aj",
+   "cell": "D",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2"
+   ],
+   "why": [
+    "Recruiting, selecting, training, and performance-reviewing employees is staffing and controlling people downward; confidence lowered because it is an interest rating and also carries record-keeping content.",
+    "Recruiting, selecting, training, personnel records and performance reviews is staffing and evaluating others \u2014 downward \u2014 though as an interest area it is weaker evidence.",
+    "Recruiting, selecting, training, staffing and performance-reviewing employees is directing/staffing work; interest-area rating tempers confidence."
+   ]
+  },
+  {
+   "id": "1.B.3.ak",
+   "cell": "N",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M1",
+    "M1",
+    "M1"
+   ],
+   "why": [
+    "clerical/administrative work -- record-keeping, bookkeeping, document editing -- account-giving with no named counterpart; interest rating tempers confidence",
+    "Bookkeeping, updating records, editing documents is documentation and record-keeping with no counterpart named; interest rating so slightly weaker evidence",
+    "Bookkeeping, updating records, editing documents and files \u2014 squarely record-keeping/documentation with no counterpart named; interest area, so slightly weaker."
+   ]
+  },
+  {
+   "id": "1.B.3.al",
+   "cell": "D",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Planning, directing, coordinating operations and overseeing personnel is commanding; interest rating, hence not high",
+    "Planning, directing, coordinating operations and overseeing personnel is downward command; interest rating rather than activity lowers confidence.",
+    "Interest in planning, directing, and overseeing personnel \u2014 downward command; interest rating weakens it."
+   ]
+  },
+  {
+   "id": "1.B.3.am",
+   "cell": "L",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Speaking before an audience \u2014 the audience is a lateral counterpart (public), but interest rating and influence/entertainment framing weaken it",
+    "Public speaking is addressing outside audiences \u2014 sideways interaction with the public \u2014 but it is an interest rating, weaker evidence than activity or context.",
+    "Speaking before an audience is interaction with an outside/lateral counterpart, but it is an interest rating, so weaker evidence."
+   ]
+  },
+  {
+   "id": "1.B.3.z",
+   "cell": "L",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Providing social services and assistance to the public is lateral service to non-hierarchical counterparts; interest rating, so weaker evidence.",
+    "Providing social services and assistance to clients is serving sideways; interest-area evidence tempers confidence.",
+    "Providing social services and assistance to members of the public is lateral service; interest-area evidence."
+   ]
+  },
+  {
+   "id": "1.D.1.i",
+   "cell": "D",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Tendency to lead, take charge, and provide direction is the commanding pole; a work-style disposition rather than an activity, so weaker.",
+    "Tendency to lead, take charge and provide direction is downward command; work-style disposition, so weaker than an activity rating",
+    "Tendency to lead, take charge, and provide direction is squarely commanding, but a work-style disposition rather than a job requirement."
+   ]
+  },
+  {
+   "id": "1.D.2.d",
+   "cell": "N",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Being helpful and assisting others at work is sociality, undirected, but a dispositional work-style rating rather than a job requirement",
+    "Being helpful and willing to assist others is generic sociality with no direction; a disposition (work style) rather than a job requirement.",
+    "Cooperation \u2014 helping and assisting others is undirected sociality, but a work-style tendency rather than a work requirement."
+   ]
+  },
+  {
+   "id": "1.D.2.f",
+   "cell": "N",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Seeking and being energized by social interaction at work is undirected sociality, but as a work-style tendency rather than a job requirement.",
+    "Tendency to seek and enjoy social interaction at work is undirected sociality; work-style disposition rather than a demand of the job",
+    "Tendency to seek and enjoy social interaction at work measures sociality without direction; a disposition, so weaker than context."
+   ]
+  },
+  {
+   "id": "2.A.1.c",
+   "cell": "N",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M1",
+    "M1",
+    "M1"
+   ],
+   "why": [
+    "Writing for an audience's needs is prose account-giving with no counterpart named; skill (capacity) element, but the capacity directly indicates work built around written communication",
+    "Skill importance for audience-directed writing directly indexes how much the job consists of communicating in prose; no counterpart named, so undirected account-giving.",
+    "Writing for an audience's needs is the medium of account-giving in prose with no counterpart named; a skill rather than an activity, hence low confidence."
+   ]
+  },
+  {
+   "id": "2.A.2.d",
+   "cell": "D",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Assessing performance of other individuals or organizations for corrective action is supervisory oversight, but the descriptor also includes self-monitoring, blurring direction.",
+    "Assessing performance of other individuals or organizations to take corrective action leans supervisory, but the descriptor includes self-monitoring so direction is muddied",
+    "Assessing others' or an organization's performance to take corrective action is supervisory control, but the descriptor also covers self-monitoring, muddying direction."
+   ]
+  },
+  {
+   "id": "2.B.1.b",
+   "cell": "N",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Adjusting actions in relation to others' actions is working with and around people with no direction recorded; thin descriptor, hence low confidence.",
+    "Adjusting actions in relation to others' actions is sociality with no counterpart direction named.",
+    "Adjusting actions in relation to others' actions is general working-with-people (sociality) with no counterpart named."
+   ]
+  },
+  {
+   "id": "2.B.1.d",
+   "cell": "N",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Reconciling differences among parties is squarely people-work but names no counterpart direction; skill rating",
+    "Bringing others together and reconciling differences is sociality without a named counterpart; a skill rating rather than an activity, so low confidence.",
+    "Negotiation \u2014 reconciling differences among people is squarely sociality but names no counterpart direction."
+   ]
+  },
+  {
+   "id": "2.B.1.e",
+   "cell": "D",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Instructing/teaching others is direction pointed downward at learners; skill element but names the activity itself",
+    "Instructing \u2014 teaching others how to do something \u2014 is the downward face: directing and instructing other people.",
+    "Instructing (teaching others how to do something) matches the D definition's 'instructing'; skill element, but the skill directly indicates the activity."
+   ]
+  },
+  {
+   "id": "2.B.1.f",
+   "cell": "L",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Actively looking for ways to help people is service to clients/the public \u2014 lateral serving \u2014 though counterpart is loosely specified.",
+    "Actively looking for ways to help people is service to clients/the public, a lateral orientation; skill element with clear activity content",
+    "Actively looking for ways to help people is service to clients/public \u2014 lateral; a skill rating rather than an activity, so slightly weaker."
+   ]
+  },
+  {
+   "id": "2.B.5.b",
+   "cell": "D",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Determining how money is spent is controlling resources (downward), though the 'accounting for expenditures' clause has an upward face",
+    "Determining how money is spent is command over resources (downward), though the 'accounting for expenditures' clause carries an upward-accountability tinge that muddies direction.",
+    "Determining how money is spent is command over resources (D), though its 'accounting for expenditures' clause has an account-giving flavor \u2014 mixed, hence low confidence."
+   ]
+  },
+  {
+   "id": "2.B.5.c",
+   "cell": "D",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Seeing to the appropriate use of equipment and materials is controlling resources (D), as a skill rating.",
+    "Obtaining and directing the use of equipment, facilities and materials is controlling resources; skill with activity content",
+    "Obtaining and seeing to appropriate use of equipment/facilities/materials is directing resources \u2014 downward, though a skill rating."
+   ]
+  },
+  {
+   "id": "2.B.5.d",
+   "cell": "D",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Motivating, developing, and directing people as they work is supervision of subordinates; skill element but activity-worded",
+    "Motivating, developing, and directing people as they work is commanding; the skill descriptor names the activity directly.",
+    "Motivating, developing, and directing people as they work is squarely downward supervision."
+   ]
+  },
+  {
+   "id": "2.C.1.a",
+   "cell": "D",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Knowledge of leadership, resource allocation, and coordination of people indicates directing work, but it is knowledge rather than activity",
+    "Knowledge of leadership technique and coordination of people/resources indicates directing, but it is a knowledge element, an indirect indicator.",
+    "Knowledge element, but leadership technique and coordination of people/resources is a direct indicator of a commanding role."
+   ]
+  },
+  {
+   "id": "2.C.1.b",
+   "cell": "N",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M1",
+    "M1",
+    "M1"
+   ],
+   "why": [
+    "Knowledge of administrative and office procedures, files, records, forms and transcription is squarely documentation/record-keeping/procedure with no counterpart named; knowledge element, but the knowledge directly indicates a documentation-built job.",
+    "Knowledge area, but its content IS account-giving practice \u2014 office procedures, managing files and records, transcription, designing forms \u2014 a direct indicator of documentary/procedural work with no counterpart named.",
+    "Knowledge of office procedure, files, records, forms is a direct indicator of documentation/record-keeping work; account-giving with no named counterpart (knowledge element, but the knowledge is of the activity itself)."
+   ]
+  },
+  {
+   "id": "2.C.1.e",
+   "cell": "L",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Knowledge of serving customers/clients \u2014 interaction with people who are neither superiors nor subordinates; knowledge element but directly indexes customer-serving work",
+    "Customer/personal-service knowledge is a direct indicator that the work is serving clients and the public sideways; knowledge element, but the capacity maps one-to-one onto the client-facing activity.",
+    "Customer/personal-service knowledge directly indicates work serving clients and the public \u2014 sideways counterparts; knowledge element, but demand for it tracks client-facing work."
+   ]
+  },
+  {
+   "id": "2.C.1.f",
+   "cell": "D",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Knowledge of recruitment, selection, compensation, and labor relations indicates staffing/supervising work; knowledge element, so indirect (rule 4).",
+    "Knowledge of recruitment, selection, training and labor relations directly indicates staffing and supervising activity, hence downward",
+    "Knowledge of recruitment, selection, compensation and labor relations indicates staffing and supervising people; knowledge rather than activity, so weak."
+   ]
+  },
+  {
+   "id": "4.A.2.a.2",
+   "cell": "N",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M1",
+    "M1",
+    "M1"
+   ],
+   "why": [
+    "Compiling, coding, tabulating, auditing and verifying information is procedural record-work without a named counterpart; leans account-giving but is partly generic data processing.",
+    "Compiling, coding, tabulating, auditing and verifying information is procedural record-work squarely on the account-giving measure, with no direction of interaction named.",
+    "Compiling, coding, tabulating, auditing, verifying information is squarely record-keeping/account-preparing activity, silent on who receives it."
+   ]
+  },
+  {
+   "id": "4.A.2.a.3",
+   "cell": "N",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M1",
+    "M1",
+    "M1"
+   ],
+   "why": [
+    "work built around laws, regulations, and standards compliance -- procedure-centred account-giving, though the worker is checker rather than accountor and no counterpart is named",
+    "Judgment exercised against laws, regulations, and standards is procedure-bound work with no counterpart named; weaker because the worker checks others' compliance rather than rendering account",
+    "Judging events/processes against laws, regulations, and standards is procedure-bound justification work, but the descriptor names no counterpart the judgment is rendered to."
+   ]
+  },
+  {
+   "id": "4.A.2.b.4",
+   "cell": "U",
+   "subset": 2,
+   "n": 3,
+   "reverse": 3,
+   "measures": [],
+   "why": [
+    "Establishing long-range objectives and strategies implies holding the final say over direction \u2014 a discretion/autonomy indicator, the opposite of answering upward, so reverse-scored; low because it is inferential.",
+    "Establishing long-range objectives and strategies is holding the final say \u2014 discretion, the reverse of answering upward \u2014 but the item is only obliquely about accountability.",
+    "Establishing long-range objectives and strategies implies holding the final say \u2014 discretion, the opposite of answering upward \u2014 so reverse-scored for U."
+   ]
+  },
+  {
+   "id": "4.A.2.b.5",
+   "cell": "D",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2"
+   ],
+   "why": [
+    "scheduling the work of others is directing and controlling other people's activity",
+    "Scheduling 'the work of others' is controlling other people's activity, though the element mixes in non-personnel scheduling",
+    "Scheduling 'the work of others' is controlling other people's activity, but the element mixes in undirected event scheduling."
+   ]
+  },
+  {
+   "id": "4.A.3.b.2",
+   "cell": "N",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M1",
+    "M1",
+    "M1"
+   ],
+   "why": [
+    "Documentation and written specifications for others, but the counterpart is unspecified and the content is technical instruction rather than justification",
+    "Providing documentation, instructions, and specifications is written procedural documentation, but technical instruction rather than justification and no counterpart's rank named.",
+    "Providing documentation and written specifications is account-giving in form, though it instructs rather than justifies and names no superior."
+   ]
+  },
+  {
+   "id": "4.A.3.b.6",
+   "cell": "N",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M1",
+    "M1",
+    "M1"
+   ],
+   "why": [
+    "Documenting/recording/maintaining written information is account-giving squarely, with no counterpart named",
+    "Entering, transcribing, recording, and maintaining written information is documentation/record-keeping with no counterpart named \u2014 core account-giving, undirected.",
+    "Recording, transcribing, and maintaining written information is account-giving with no counterpart named."
+   ]
+  },
+  {
+   "id": "4.A.4.a.1",
+   "cell": "N",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Translating and explaining information to unspecified others is interactional communication work with no counterpart named; borders on account-giving but the audience direction is silent.",
+    "Explaining what information means to unspecified others is communicative people-work, though it borders on account-giving without clearly naming either direction.",
+    "Explaining what information means to others is communicative people-work, direction of the audience unnamed."
+   ]
+  },
+  {
+   "id": "4.A.4.a.2",
+   "cell": "N",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "both",
+    "both",
+    "both"
+   ],
+   "why": [
+    "providing information to supervisors, peers, and subordinates at once -- squarely communicative account-giving and sociality but pointing all three ways, so undirected",
+    "Providing information to supervisors, peers, AND subordinates is squarely account-giving/sociality but names all three directions at once, so no single direction can be read from it",
+    "Providing information to supervisors, peers, AND subordinates \u2014 squarely account-giving and sociality, but the direction is mixed across all three, so undirected."
+   ]
+  },
+  {
+   "id": "4.A.4.a.3",
+   "cell": "L",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Explicitly names the counterpart as outside the organization \u2014 customers, public, government \u2014 serving sideways; activity rating",
+    "Communicating with and representing the organization to customers, the public, and external bodies is squarely lateral service to non-superiors, non-subordinates.",
+    "Explicitly communicating with and representing the organization to outside parties \u2014 serving sideways."
+   ]
+  },
+  {
+   "id": "4.A.4.a.4",
+   "cell": "N",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Developing and maintaining working relationships is squarely sociality with no counterpart direction named",
+    "Developing and maintaining cooperative working relationships is squarely sociality with no stated counterpart direction.",
+    "Developing and maintaining cooperative working relationships is squarely sociality with no direction named."
+   ]
+  },
+  {
+   "id": "4.A.4.a.5",
+   "cell": "L",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Providing care and assistance to customers, patients, coworkers is serving sideways to non-hierarchical counterparts.",
+    "Providing assistance and care to customers, patients, coworkers is serving sideways to non-hierarchical counterparts; activity element",
+    "Providing assistance and care to customers, patients, coworkers is serving sideways \u2014 counterparts are neither superiors nor subordinates."
+   ]
+  },
+  {
+   "id": "4.A.4.a.6",
+   "cell": "L",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2"
+   ],
+   "why": [
+    "Convincing customers and others to change their minds is dealing with clients/the public \u2014 sideways, neither superiors nor subordinates",
+    "Convincing others to buy or change their minds targets customers and outsiders, neither superiors nor subordinates \u2014 serving/persuading sideways.",
+    "Convincing customers/others to change their minds is interaction with non-hierarchical outsiders."
+   ]
+  },
+  {
+   "id": "4.A.4.a.8",
+   "cell": "L",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2"
+   ],
+   "why": [
+    "dealing directly with the public, clients, guests -- serving sideways to non-hierarchical counterparts",
+    "Dealing directly with the public/clients is the lateral serving-sideways construct verbatim",
+    "Dealing directly with the public, customers, clients \u2014 serving sideways to non-superiors/non-subordinates."
+   ]
+  },
+  {
+   "id": "4.A.4.b.1",
+   "cell": "D",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Getting members of a group to accomplish tasks is directing/marshalling others' work; activity rating, though 'coordinating' is softer than supervising",
+    "Getting group members to work together to accomplish tasks is directing others' work \u2014 downward command.",
+    "Getting members of a group to work together \u2014 directing/coordinating others, commanding."
+   ]
+  },
+  {
+   "id": "4.A.4.b.2",
+   "cell": "D",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Building and leading teams is directing/managing others \u2014 downward",
+    "Building trust and cooperation among team members is a leadership/managerial activity directed at people one leads.",
+    "Building and leading teams is a leadership/directing activity aimed at people below or around the worker; the actor is the one shaping the team."
+   ]
+  },
+  {
+   "id": "4.A.4.b.3",
+   "cell": "D",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Instructing and teaching others is directing people downward; an activity rating.",
+    "Developing programs and instructing others is downward-directed instruction; activity element",
+    "Teaching and instructing others is directing people \u2014 the instructor holds the say over the instructed."
+   ]
+  },
+  {
+   "id": "4.A.4.b.4",
+   "cell": "D",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Guiding, directing, setting standards for and monitoring subordinates is the downward/commanding cell verbatim",
+    "Guidance, direction, performance standards, and monitoring of subordinates is the D construct verbatim.",
+    "Directing, monitoring, and setting standards for subordinates is the core downward-command activity."
+   ]
+  },
+  {
+   "id": "4.A.4.b.5",
+   "cell": "D",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Coaching, mentoring and developing others is instructing people below or under one's charge \u2014 the commanding/instructing face of downward interaction.",
+    "Coaching, mentoring and developing others is instructing people below or under one's charge \u2014 an activity rating in the downward cell.",
+    "Coaching, mentoring, developing others is instructing subordinates/juniors \u2014 the commanding/developing face of downward interaction."
+   ]
+  },
+  {
+   "id": "4.A.4.b.6",
+   "cell": "U",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "both",
+    "M1"
+   ],
+   "why": [
+    "providing expert advice to management: rendering one's judgment to a party above who can accept or overrule it, advisory not commanding",
+    "Providing advice to management is rendering expert judgment to a party above who holds the decision \u2014 the adviser does not have final say",
+    "Rendering expert advice and guidance to management \u2014 submitting one's judgment to those above who decide; some lateral consultation dilutes direction."
+   ]
+  },
+  {
+   "id": "4.A.4.c.1",
+   "cell": "N",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M1",
+    "M1",
+    "M1"
+   ],
+   "why": [
+    "Maintaining files and processing paperwork is record-keeping/procedure with no named counterpart \u2014 account-giving, undirected",
+    "Maintaining information files and processing paperwork is account-giving/record-keeping with no counterpart named.",
+    "Maintaining information files and processing paperwork \u2014 record-keeping/procedure with no named counterpart."
+   ]
+  },
+  {
+   "id": "4.A.4.c.2",
+   "cell": "D",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Recruiting, hiring, promoting employees is staffing \u2014 squarely the downward/commanding cell",
+    "Recruiting, hiring, and promoting employees is staffing \u2014 explicitly the downward command construct.",
+    "Recruiting, hiring, promoting employees is squarely staffing/commanding \u2014 the D definition names staffing explicitly."
+   ]
+  },
+  {
+   "id": "4.A.4.c.3",
+   "cell": "D",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Monitoring and controlling resources and overseeing spending is command over resources, squarely the D construct.",
+    "Monitoring and controlling resources and overseeing spending is commanding resources; activity element",
+    "Monitoring and controlling resources and overseeing spending is commanding resources \u2014 downward control."
+   ]
+  },
+  {
+   "id": "4.C.1.a.2.c",
+   "cell": "L",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2"
+   ],
+   "why": [
+    "Speaking to an audience is outward-facing interaction with people who are neither superiors nor subordinates, though direction is only implicit",
+    "Speaking to an audience is interaction with an outside public rather than superiors or subordinates; work-context frequency rating.",
+    "Speaking to an audience is outward-facing interaction with people who are neither superiors nor subordinates."
+   ]
+  },
+  {
+   "id": "4.C.1.a.2.f",
+   "cell": "N",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Frequency of telephone conversations measures interactional people-work squarely but records nothing about which way the interaction points.",
+    "Frequency of telephone conversations is interpersonal interaction in context form, silent on who is on the other end.",
+    "Frequency of telephone conversations measures interpersonal communication load without naming who is on the line."
+   ]
+  },
+  {
+   "id": "4.C.1.a.2.h",
+   "cell": "N",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M1",
+    "M1",
+    "M1"
+   ],
+   "why": [
+    "frequency of written correspondence at work -- documentation/correspondence with no direction recorded",
+    "E-mail frequency is written workplace correspondence \u2014 undirected account-giving in prose, but a coarse proxy",
+    "E-mail frequency is written workplace correspondence with no counterpart named; generic, so weak."
+   ]
+  },
+  {
+   "id": "4.C.1.a.2.j",
+   "cell": "N",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M1",
+    "M1",
+    "M1"
+   ],
+   "why": [
+    "Frequency of written letters and memos is written formal communication with no direction recorded; context rating",
+    "Frequency of written letters and memos is documentary written output \u2014 account-giving \u2014 with no direction recorded.",
+    "Frequency of written letters and memos \u2014 written account-giving/correspondence, direction unspecified."
+   ]
+  },
+  {
+   "id": "4.C.1.a.2.l",
+   "cell": "N",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Frequency of face-to-face discussion measures sociality of the work without specifying who the discussion is with",
+    "Frequency of face-to-face discussion measures how people-immersed the work is, silent on whether the counterpart is above, beside, or below.",
+    "Frequency of face-to-face discussion measures how people-built the work is, with the counterpart's direction unspecified."
+   ]
+  },
+  {
+   "id": "4.C.1.a.4",
+   "cell": "N",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Required contact with others is sociality itself, with no counterpart direction recorded; a context rating.",
+    "Required amount of contact with others is squarely sociality with no counterpart named; work-context item",
+    "Required contact with others is a direct context measure of sociality with no counterpart direction named."
+   ]
+  },
+  {
+   "id": "4.C.1.b.1.f",
+   "cell": "L",
+   "subset": 2,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Work-context item squarely about dealing with external customers and the general public \u2014 serving sideways, counterpart named and non-hierarchical.",
+    "Explicitly dealing with external customers or the public in general \u2014 the lateral cell's construct stated verbatim, and a context rating.",
+    "Work context explicitly about dealing with external customers and the general public \u2014 serving sideways to non-hierarchical counterparts."
+   ]
+  },
+  {
+   "id": "4.C.1.b.1.g",
+   "cell": "D",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2"
+   ],
+   "why": [
+    "coordinating or leading others in accomplishing work is commanding-direction even without formal supervisory title",
+    "Coordinating or leading others in accomplishing work is directing people, even without formal supervisory title",
+    "Coordinating or leading others in accomplishing work \u2014 directing people, though explicitly without supervisory authority, which weakens it."
+   ]
+  },
+  {
+   "id": "4.C.1.c.1",
+   "cell": "D",
+   "subset": 4,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Responsibility for other workers' health and safety implies being in charge of people, but only weakly names supervisory direction",
+    "Responsibility for other workers' health and safety implies charge over others, but responsibility is not the same as directing them.",
+    "Responsibility for the health and safety of other workers implies supervisory charge over others, though the relation is not explicit."
+   ]
+  },
+  {
+   "id": "4.C.1.c.2",
+   "cell": "D",
+   "subset": 5,
+   "n": 3,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Responsibility for other workers' outcomes is supervisory control over subordinates \u2014 downward",
+    "Responsibility for the outcomes and results of other workers is supervision of subordinates, the clearest downward context item in the slice.",
+    "Responsibility for other workers' outcomes is supervisory command over subordinates; a context rating of the downward relation itself."
+   ]
+  },
+  {
+   "id": "4.C.1.d.1",
+   "cell": "N",
+   "subset": 0,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Frequency of conflict situations indexes interpersonal exposure with no direction named; conflict is a narrow slice of sociality, hence low confidence.",
+    "Frequency of conflict situations is inherently interpersonal but only obliquely measures sociality and names no counterpart",
+    "Frequency of conflict situations implies interpersonal interaction with no direction named; only obliquely a sociality measure."
+   ]
+  },
+  {
+   "id": "4.C.1.d.2",
+   "cell": "L",
+   "subset": 1,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2"
+   ],
+   "why": [
+    "Dealing with unpleasant or angry individuals as a job requirement is characteristically public/client-facing service work",
+    "Dealing with unpleasant or angry people is typically front-line contact with the public or clients \u2014 lateral sociality; work-context rating.",
+    "Dealing with unpleasant/angry individuals is contact with the public or clients \u2014 serving sideways."
+   ]
+  },
+  {
+   "id": "4.C.2.a.3",
+   "cell": "N",
+   "subset": 3,
+   "n": 3,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "physical closeness to other people measures working around people (sociality) with no interactional direction",
+    "Physical proximity to other people measures working around people, though co-presence not interaction; weak sociality proxy",
+    "Working physically close to other people is a proxy for working around people, but measures proximity rather than interaction."
+   ]
+  },
+  {
+   "id": "4.C.3.a.4",
+   "cell": "U",
+   "subset": 0,
+   "n": 3,
+   "reverse": 3,
+   "measures": [
+    "M1"
+   ],
+   "why": [
+    "Decision-making freedom without supervision is the direct opposite of answering upward for one's judgment; the named reverse-scored autonomy case.",
+    "Decision-making freedom without supervision is autonomy, the direct opposite of upward accountability; work-context item, reverse-scored",
+    "Decision-making freedom without supervision is the direct opposite of upward accountability; explicitly named as the reverse-scored autonomy anchor."
+   ]
+  },
+  {
+   "id": "4.C.3.b.8",
+   "cell": "U",
+   "subset": 4,
+   "n": 3,
+   "reverse": 3,
+   "measures": [
+    "M1",
+    "M1"
+   ],
+   "why": [
+    "Freedom to determine own tasks/priorities/goals is autonomy \u2014 the direct opposite of answering upward for one's decisions; work-context rating, reverse-scored",
+    "Freedom to determine tasks/priorities/goals is discretion itself; its absence is answering upward, so it belongs in U reverse-scored.",
+    "Freedom to determine tasks/priorities/goals is autonomy \u2014 the declared opposite of upward accountability, reverse-scored."
+   ]
+  },
+  {
+   "id": "1.B.3.ac",
+   "cell": "L",
+   "subset": 1,
+   "n": 2,
+   "reverse": 0,
+   "measures": [
+    "M2"
+   ],
+   "why": [
+    "Providing personal services to individuals is lateral service to clients; interest-area rating, weaker evidence.",
+    "Providing personal services to individuals is serving clients sideways; interest-area rating keeps confidence low."
+   ]
+  },
+  {
+   "id": "2.A.1.b",
+   "cell": "N",
+   "subset": 4,
+   "n": 2,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Attending to and understanding other people is sociality without a named counterpart, but it is a skill/capacity rather than an activity",
+    "Active listening is squarely interpersonal interaction without a named counterpart, but it is a skill/capacity rather than an activity."
+   ]
+  },
+  {
+   "id": "2.B.1.a",
+   "cell": "N",
+   "subset": 1,
+   "n": 2,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Awareness of others' reactions indicates people-work with no named counterpart, but it is a capacity rather than an activity.",
+    "Awareness of others' reactions is sociality without a named counterpart, but it is a capacity rather than an activity."
+   ]
+  },
+  {
+   "id": "2.B.1.c",
+   "cell": "N",
+   "subset": 3,
+   "n": 2,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "persuading others to change minds is people-work with no counterpart named; skill rating, closer to capacity than task",
+    "Persuading others is people-work with no counterpart named; a skill rating, and persuasion cuts across directions"
+   ]
+  },
+  {
+   "id": "2.C.6",
+   "cell": "D",
+   "subset": 0,
+   "n": 2,
+   "reverse": 0,
+   "measures": [],
+   "why": [
+    "Knowledge of teaching and instruction indicates the downward activity of instructing others, but as a knowledge element it is indirect",
+    "Knowledge of teaching and instruction indicates the downward activity of instructing others; knowledge element, so weak."
+   ]
+  },
+  {
+   "id": "4.A.4.a.7",
+   "cell": "N",
+   "subset": 2,
+   "n": 2,
+   "reverse": 0,
+   "measures": [
+    "M2",
+    "M2"
+   ],
+   "why": [
+    "Handling complaints, disputes and negotiation is intensive people-work whose counterpart ('others') is unnamed.",
+    "Handling complaints, settling disputes, negotiating is intensive people-work; counterpart direction unspecified (could be public, peers, or staff)."
+   ]
+  },
+  {
+   "id": "4.C.1.b.1.e",
+   "cell": "L",
+   "subset": 1,
+   "n": 2,
+   "reverse": 0,
+   "measures": [
+    "M2"
+   ],
+   "why": [
+    "Working with a group or team is interaction with peers, one of L's named counterparts; work-context importance rating.",
+    "Working with/contributing to a team is peer-directed sociality, the lateral cell's peer face."
+   ]
+  },
+  {
+   "id": "4.C.3.a.2.b",
+   "cell": "U",
+   "subset": 5,
+   "n": 2,
+   "reverse": 2,
+   "measures": [],
+   "why": [
+    "Frequent consequential decision-making indicates holding discretion/final say, the opposite of upward accountability \u2014 reverse-scored, but it measures decision frequency rather than freedom, hence low confidence",
+    "Being the one required to make decisions that affect people, money, and the organization's reputation is holding the say \u2014 discretion \u2014 so it runs opposite to upward accountability; low because consequential decision-making also correlates with senior roles generally."
+   ]
+  }
+ ],
+ "singleton_pairs": [
+  {
+   "id": "2.A.1.d",
+   "cell": "N"
+  },
+  {
+   "id": "4.C.1.b.1.e",
+   "cell": "N"
+  },
+  {
+   "id": "1.B.3.y",
+   "cell": "L"
+  },
+  {
+   "id": "1.B.3.y",
+   "cell": "D"
+  },
+  {
+   "id": "4.A.4.a.7",
+   "cell": "L"
+  },
+  {
+   "id": "4.C.1.d.3",
+   "cell": "L"
+  },
+  {
+   "id": "1.B.1.e",
+   "cell": "D"
+  },
+  {
+   "id": "1.D.2.c",
+   "cell": "N"
+  },
+  {
+   "id": "1.A.1.a.4",
+   "cell": "N"
+  },
+  {
+   "id": "2.B.5.a",
+   "cell": "D"
+  },
+  {
+   "id": "2.C.1.d",
+   "cell": "L"
+  },
+  {
+   "id": "1.B.3.aa",
+   "cell": "L"
+  }
+ ]
+}

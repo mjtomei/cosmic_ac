@@ -1,0 +1,132 @@
+                 noms  2-of-3   cells
+  anchored        141      48   {'L': 17, 'U': 10, 'D': 21}
+  unanchored      164      55   {'L': 20, 'U': 9, 'D': 26}
+  4-col           217      71   {'L': 16, 'N': 28, 'D': 22, 'U': 5}
+
+==========================================================================
+1. MIGRATION — unanchored 3-cell result vs 4-cell result, same coders' setup
+==========================================================================
+  Elements directional at 2-of-3 in the UNANCHORED arm, and their 4-col fate:
+
+  KEPT their direction with N available (40):
+    D  1.B.3.aj     Human Resources                           3/3
+    D  1.B.3.al     Management/Administration                 3/3  *instrument*
+    D  1.D.1.i      Leadership Orientation                    3/3
+    D  2.A.2.d      Monitoring                                3/3
+    D  2.B.1.e      Instructing                               3/3
+    D  2.B.5.b      Management of Financial Resources         3/3
+    D  2.B.5.c      Management of Material Resources          3/3
+    D  2.B.5.d      Management of Personnel Resources         3/3
+    D  2.C.1.a      Administration and Management             3/3
+    D  2.C.1.f      Personnel and Human Resources             3/3
+    D  2.C.6        Education and Training                    2/3
+    D  4.A.2.b.5    Scheduling Work and Activities            3/3
+    D  4.A.4.b.1    Coordinating the Work and Activities of   3/3  *instrument*
+    D  4.A.4.b.2    Developing and Building Teams             3/3
+    D  4.A.4.b.3    Training and Teaching Others              3/3  *instrument*
+    D  4.A.4.b.4    Guiding, Directing, and Motivating Subor  3/3  *instrument*
+    D  4.A.4.b.5    Coaching and Developing Others            3/3  *instrument*
+    D  4.A.4.c.2    Staffing Organizational Units             3/3  *instrument*
+    D  4.A.4.c.3    Monitoring and Controlling Resources      3/3  *instrument*
+    D  4.C.1.b.1.g  Coordinate or Lead Others in Accomplishi  3/3
+    D  4.C.1.c.1    Health and Safety of Other Workers        3/3
+    D  4.C.1.c.2    Work Outcomes and Results of Other Worke  3/3
+    L  1.B.1.d      Social                                    3/3  *instrument*
+    L  1.B.3.ac     Personal Service                          2/3
+    L  1.B.3.ad     Professional Advising                     3/3
+    L  1.B.3.af     Sales                                     3/3
+    L  1.B.3.am     Public Speaking                           3/3
+    L  1.B.3.z      Social Service                            3/3
+    L  2.B.1.f      Service Orientation                       3/3
+    L  2.C.1.e      Customer and Personal Service             3/3
+    L  4.A.4.a.3    Communicating with People Outside the Or  3/3  *instrument*
+    L  4.A.4.a.5    Assisting and Caring for Others           3/3  *instrument*
+    L  4.A.4.a.6    Selling or Influencing Others             3/3
+    L  4.A.4.a.8    Performing for or Working Directly with   3/3  *instrument*
+    L  4.C.1.b.1.e  Work With or Contribute to a Work Group   2/3
+    L  4.C.1.b.1.f  Deal With External Customers or the Publ  3/3
+    L  4.C.1.d.2    Dealing With Unpleasant, Angry, or Disco  3/3
+    U  4.A.4.b.6    Providing Consultation and Advice to Oth  3/3
+    U  4.C.3.a.4    Freedom to Make Decisions                 3/3  *instrument*
+    U  4.C.3.b.8    Determine Tasks, Priorities and Goals     3/3  *instrument*
+
+  MOVED (10):
+    D -> U  4.A.2.b.4    Developing Objectives and Strategies      3/3
+    D -> N  4.A.3.b.2    Drafting, Laying Out, and Specifying Tec  3/3
+    L -> N  2.B.1.d      Negotiation                               3/3
+    L -> N  4.A.4.a.7    Resolving Conflicts and Negotiating with  2/3
+    U -> N  1.B.1.f      Conventional                              3/3
+    U -> N  1.B.3.ai     Accounting                                3/3
+    U -> N  1.B.3.ak     Office Work                               3/3
+    U -> N  4.A.2.a.3    Evaluating Information to Determine Comp  3/3
+    U -> N  4.A.3.b.6    Documenting/Recording Information         3/3  *instrument U*
+    U -> N  4.A.4.c.1    Performing Administrative Activities      3/3  *instrument U*
+
+  VANISHED in 4-col (5):
+    D -> none  1.B.3.ae     Business Initiatives                      
+    D -> none  1.B.3.y      Teaching/Education                        
+    L -> none  1.B.3.aa     Health Care Service                       
+    L -> none  1.B.3.ag     Marketing/Advertising                     
+    L -> none  2.C.1.d      Sales and Marketing                       
+
+==========================================================================
+2. THE 19 INSTRUMENT ELEMENTS across all three runs
+==========================================================================
+  cell element                                                   anch  unanch      4col
+  D    1.B.3.al      Management/Administration                      3       3     3/3 D
+  D    4.A.4.b.1     Coordinating the Work and Activities of        3       3     3/3 D
+  D    4.A.4.b.3     Training and Teaching Others                   3       3     3/3 D
+  D    4.A.4.b.4     Guiding, Directing, and Motivating Subor       3       3     3/3 D
+  D    4.A.4.b.5     Coaching and Developing Others                 3       3     3/3 D
+  D    4.A.4.c.2     Staffing Organizational Units                  3       3     3/3 D
+  D    4.A.4.c.3     Monitoring and Controlling Resources           3       3     3/3 D
+  L    1.B.1.a       Realistic                                      2       0        --   <-
+  L    1.B.1.d       Social                                         3       3     3/3 L
+  L    4.A.4.a.3     Communicating with People Outside the Or       3       3     3/3 L
+  L    4.A.4.a.4     Establishing and Maintaining Interperson       3       0     3/3 N   <-
+  L    4.A.4.a.5     Assisting and Caring for Others                3       3     3/3 L
+  L    4.A.4.a.8     Performing for or Working Directly with        3       3     3/3 L
+  U    4.A.3.b.6     Documenting/Recording Information              3       3     3/3 N   <-
+  U    4.A.4.a.2     Communicating with Supervisors, Peers, o       3       0     3/3 N   <-
+  U    4.A.4.c.1     Performing Administrative Activities           3       2     3/3 N   <-
+  U    4.C.1.a.2.j   Written Letters and Memos                      0       0     3/3 N   <-
+  U    4.C.3.a.4     Freedom to Make Decisions                      3       3     3/3 U
+  U    4.C.3.b.8     Determine Tasks, Priorities and Goals          3       3     3/3 U
+
+==========================================================================
+3. N AT 2-of-3 — the undirected cell's contents, with measure votes
+==========================================================================
+  3/3  1.B.1.f      Conventional                              M1x3        [Career Interest Types]
+  3/3  1.B.3.ai     Accounting                                M1x3        [Specific Interest Areas]
+  3/3  1.B.3.ak     Office Work                               M1x3        [Specific Interest Areas]
+  3/3  1.D.2.d      Cooperation                               M2x3        [Work Styles]
+  3/3  1.D.2.f      Social Orientation                        M2x3        [Work Styles]
+  3/3  2.A.1.c      Writing                                   M1x3        [Essential Skills]
+  3/3  2.B.1.b      Coordination                              M2x3        [Transferable Skills]
+  3/3  2.B.1.d      Negotiation                               M2x3        [Transferable Skills]
+  3/3  2.C.1.b      Administrative                            M1x3        [Knowledge]
+  3/3  4.A.2.a.2    Processing Information                    M1x3        [Work Activities]
+  3/3  4.A.2.a.3    Evaluating Information to Determine Comp  M1x3        [Work Activities]
+  3/3  4.A.3.b.2    Drafting, Laying Out, and Specifying Tec  M1x3        [Work Activities]
+  3/3  4.A.3.b.6    Documenting/Recording Information         M1x3        [Work Activities]  *instrument U*
+  3/3  4.A.4.a.1    Interpreting the Meaning of Information   M2x3        [Work Activities]
+  3/3  4.A.4.a.2    Communicating with Supervisors, Peers, o  BOTHx3      [Work Activities]  *instrument U*
+  3/3  4.A.4.a.4    Establishing and Maintaining Interperson  M2x3        [Work Activities]  *instrument L*
+  3/3  4.A.4.c.1    Performing Administrative Activities      M1x3        [Work Activities]  *instrument U*
+  3/3  4.C.1.a.2.f  Telephone Conversations                   M2x3        [Work Context]
+  3/3  4.C.1.a.2.h  E-Mail                                    M1x3        [Work Context]
+  3/3  4.C.1.a.2.j  Written Letters and Memos                 M1x3        [Work Context]  *instrument U*
+  3/3  4.C.1.a.2.l  Face-to-Face Discussions with Individual  M2x3        [Work Context]
+  3/3  4.C.1.a.4    Contact With Others                       M2x3        [Work Context]
+  3/3  4.C.1.d.1    Conflict Situations                       M2x3        [Work Context]
+  3/3  4.C.2.a.3    Physical Proximity                        M2x3        [Work Context]
+  2/3  2.A.1.b      Active Listening                          M2x2        [Essential Skills]
+  2/3  2.B.1.a      Social Perceptiveness                     M2x2        [Transferable Skills]
+  2/3  2.B.1.c      Persuasion                                M2x2        [Transferable Skills]
+  2/3  4.A.4.a.7    Resolving Conflicts and Negotiating with  M2x2        [Work Activities]
+
+==========================================================================
+4. DIRECTIONAL PAIRS NEW IN THE 4-COL RUN (not 2-of-3 in either earlier arm)
+==========================================================================
+  L  4.C.1.a.2.c  Public Speaking                           3/3  [Work Context]
+  U  4.C.3.a.2.b  Frequency of Decision Making              2/3  [Work Context]
