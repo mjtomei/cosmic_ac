@@ -374,6 +374,25 @@ failure mode this check existed to detect: 470 distinct occupations, with the
 top 200 needed to reach 93% of slots. Occupational variety is adequate for
 fitting occupation-level structure.
 
+**Correction, 2026-08-18 — the check as written asked the wrong question.** It
+tested whether a code is *valid*, not whether O\*NET *rates* it. O\*NET
+publishes ratings for 894 of its 1,016 occupations; the remainder are mostly
+"All Other" residual categories and the whole military block (`55-xxxx`). Of our
+470 codes, **55 are unrated and cover 680 member slots**, so:
+
+| coverage | value |
+|---|---|
+| slots with a valid code | 6,829 (97.1%) |
+| slots with a **rated** code | **6,170 (87.7%)** |
+| distinct codes, rated | 416 of 470 |
+
+**87.7% is the number any model must report**, and the unrated 10% is not
+missing at random — it is concentrated in residual categories and the military,
+so members whose occupation resisted specific coding are exactly the ones who
+drop out. Largest unrated: Military Officers, All Other (115 members),
+Postsecondary Teachers, All Other (101), Public Relations Managers (49),
+Community and Social Service Specialists, All Other (39).
+
 Ten most common: Lawyers (1,051 members), Secondary School Teachers (458),
 General and Operations Managers (324), Chief Executives (286), Farmers/Ranchers
 (251), News Analysts and Reporters (226), Labor Relations Specialists (137),

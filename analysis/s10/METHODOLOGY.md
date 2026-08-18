@@ -1629,6 +1629,67 @@ upper bound, and excluded from the Fisher combination.
 ---
 
 
+### 6.1b Occupation → O\*NET-SOC coding, and two things it exposed
+
+Added 2026-08-18. Every legislator's prior occupation was mapped to an
+O\*NET-SOC code so the accountability study (`plans/PREREG-occupational-
+accountability.md`) can join O\*NET's per-occupation ratings. 4,402 distinct
+occupations, double-blind coded with adjudication, 90.41% raw agreement.
+
+**Correlated error survives double-blind coding.** Validating all codes against
+O\*NET 30.3's published occupation list found 18 records carrying codes that do
+not exist — every one of them in the AGREED set. Two coders making the same
+mistake produce agreement, and agreement is what routes a record away from
+adjudication. (The adjudicator independently caught 26 invalid codes among the
+disagreements, which is the same error surfacing only where the design could
+see it.) All 18 were unambiguous near-misses and are repaired by
+`repair_soc_coding.py`. **The general point applies to every coded instrument
+in this study, including the EGP class coding, which has never had an external
+check: agreement between coders is not validity against the source.**
+
+**Ten per cent of coded members sit on occupations O\*NET does not rate.**
+O\*NET publishes ratings for 894 of its 1,016 occupations; the rest are mostly
+"All Other" residual categories and the entire military block (`55-xxxx`). Of
+our 470 distinct codes, **55 are unrated, covering 680 member slots — 10.0% of
+those otherwise coded**. The coverage check as first written asked whether a
+code was *valid*, not whether it was *rated*, and so reported 97.1% when the
+figure usable for analysis is about 87%. Any model fitted on O\*NET elements
+must report the rated-coverage number, not the coded-coverage number.
+
+**Coal mining: an example of the trade this forces.** Eight records split
+between `47-5041.00` (Continuous Mining Machine Operators) and `47-5049.00`
+(Underground Mining Machine Operators, All Other). Research resolved the
+substance in two steps and then ran into the ratings gap:
+
+1. O\*NET defines 47-5041.00 as operating machines that rip coal "in a
+   continuous operation" — room-and-pillar equipment, predominantly American.
+   British collieries used **longwall mining with shearers**, a different method
+   and machine, so a Durham or South Wales face worker is *not* technically a
+   continuous-miner operator.
+2. But `47-5049.00`, the technically-correct residual, **is unrated**, so coding
+   there would delete those members from the analysis rather than describe them.
+
+Resolution, recorded rather than silently applied: the six generic or
+face-working miners take **47-5041.00 as a rated proxy** — the two occupations
+differ in mining method but not appreciably in the work-context dimensions this
+study uses — and the caveat is logged in each record's `rubric_note`. Two
+records resolve differently on evidence: id 2144 says "coal miner/**labourer**"
+outright, and id 2279 is a **Bevin Boy**, the WWII conscripts who by historical
+record did haulage and conveyor work as colliers' assistants rather than face
+work. Both take **47-5081.00 Helpers—Extraction Workers**, which is both
+technically right and rated.
+
+That choice is not cosmetic. The two codes differ substantially on exactly the
+elements the accountability composite uses — Documenting/Recording 2.34 against
+3.75, Written Letters and Memos 1.96 against 2.82, Administrative Activities
+1.37 against 2.55, Communicating with Supervisors 3.89 against 4.46 — and in the
+direction that a *helper* scores higher on upward-reporting than a *machine
+operator*, which is worth noticing given the hypothesis under test. Autonomy
+barely moves (4.02 against 4.12). With eight records and twenty-five members the
+effect on any estimate is negligible, but the size of the per-element gap is a
+warning about how much a coding choice can carry when the same choice is made at
+scale.
+
 ### 6.1a The OLMo-2 post-training ladder
 
 Added 2026-08-17. Three figures in §4.7 rested on `olmo_ladder.py` while this

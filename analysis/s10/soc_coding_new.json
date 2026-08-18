@@ -1239,9 +1239,9 @@
    "UK",
    "US-SENATE"
   ],
-  "soc_code": "47-5049.00",
-  "soc_title": "Underground Mining Machine Operators, All Other",
-  "resolution": "agreed",
+  "soc_code": "47-5041.00",
+  "soc_title": "Continuous Mining Machine Operators",
+  "resolution": "repaired",
   "vote_a": {
    "soc_code": "47-5049.00",
    "soc_title": "Underground Mining Machine Operators, All Other",
@@ -1255,7 +1255,8 @@
    "rationale": "underground coal extraction worker, task unspecified; O*NET top match"
   },
   "confidence": "medium",
-  "rationale": "modal coal miner works underground; specific machine role unspecified"
+  "rationale": "modal coal miner works underground; specific machine role unspecified",
+  "rubric_note": "[coal-mining normalisation 2026-08-18: 47-5049.00 -> 47-5041.00; generic 'coal miner', UK+US aggregate; rated proxy for an underground coal machine operator]"
  },
  {
   "id": 40,
@@ -1296,9 +1297,9 @@
    "UK",
    "US-HOUSE"
   ],
-  "soc_code": "47-5049.00",
-  "soc_title": "Underground Mining Machine Operators, All Other",
-  "resolution": "agreed",
+  "soc_code": "47-5041.00",
+  "soc_title": "Continuous Mining Machine Operators",
+  "resolution": "repaired",
   "vote_a": {
    "soc_code": "47-5049.00",
    "soc_title": "Underground Mining Machine Operators, All Other",
@@ -1312,7 +1313,8 @@
    "rationale": "miner, mineral and task unspecified; underground extraction residual"
   },
   "confidence": "low",
-  "rationale": "mineral and role unspecified; modal miner in UK/CA corpus is an underground miner"
+  "rationale": "mineral and role unspecified; modal miner in UK/CA corpus is an underground miner",
+  "rubric_note": "[coal-mining normalisation 2026-08-18: 47-5049.00 -> 47-5041.00; generic 'miner', CA/UK/US aggregate; rated proxy]"
  },
  {
   "id": 42,
@@ -55488,9 +55490,9 @@
   "chambers": [
    "UK"
   ],
-  "soc_code": "47-5041.00",
-  "soc_title": "Continuous Mining Machine Operators",
-  "resolution": "agreed",
+  "soc_code": "47-5081.00",
+  "soc_title": "Helpers--Extraction Workers",
+  "resolution": "repaired",
   "vote_a": {
    "soc_code": "47-5041.00",
    "soc_title": "Continuous Mining Machine Operators",
@@ -55504,7 +55506,8 @@
    "rationale": "Underground coal miner; O*NET's coal-mining codes are all machine-specific, and 47-5041.00 is the substantive face-work code (the top search hit, 47-5049.00, is a data-free residual). Era mismatch between hand-era UK pit work and US machine categories is the source of the uncertainty."
   },
   "confidence": "low",
-  "rationale": "underground coal miner; modal face worker operates mining machinery, exact task unstated"
+  "rationale": "underground coal miner; modal face worker operates mining machinery, exact task unstated",
+  "rubric_note": "[coal-mining normalisation 2026-08-18: 47-5041.00 -> 47-5081.00; string says 'coal miner/LABOURER' \u2014 not a machine operator]"
  },
  {
   "id": 2145,
@@ -55557,7 +55560,8 @@
    "rationale": "Colliery miner; same taxonomy caveat as id 2144."
   },
   "confidence": "low",
-  "rationale": "colliery miner; modal face worker operates mining machinery, exact task unstated"
+  "rationale": "colliery miner; modal face worker operates mining machinery, exact task unstated",
+  "rubric_note": "[coal-mining normalisation 2026-08-18: 47-5041.00 -> 47-5041.00; Eppleton Colliery (Durham) face worker; British longwall, coded to the rated machine-operator proxy]"
  },
  {
   "id": 2147,
@@ -59006,9 +59010,9 @@
   "chambers": [
    "UK"
   ],
-  "soc_code": "47-5049.00",
-  "soc_title": "Underground Mining Machine Operators, All Other",
-  "resolution": "adjudicated",
+  "soc_code": "47-5081.00",
+  "soc_title": "Helpers--Extraction Workers",
+  "resolution": "repaired",
   "vote_a": {
    "soc_code": "47-5041.00",
    "soc_title": "Continuous Mining Machine Operators",
@@ -59023,7 +59027,8 @@
   },
   "confidence": null,
   "rationale": "'Bevin Boy coal miner'. O*NET's alternate-title table puts 'Coal Miner', 'Miner', 'Face Man' and 'Face Worker' under 47-5049.00, and the agreed corpus codes bare 'coal miner' (id 39) and 'miner' (id 41) there. 47-5041.00 (coder A) names a specific machine, the continuous miner, which is anachronistic for a WWII British conscript. 47-5099.00 (coder B) is the extraction residual for workers who are not mining-machine occupations at all. Neither coder's code. Note the agreed corpus is internally split (ids 2144/2562/3933/3940 sit at 47-5041.00); 47-5049.00 is the O*NET-supported reading.",
-  "note": "Departed from both coders; flagging that the agreed corpus itself is inconsistent on UK coal miners."
+  "note": "Departed from both coders; flagging that the agreed corpus itself is inconsistent on UK coal miners.",
+  "rubric_note": "[coal-mining normalisation 2026-08-18: 47-5049.00 -> 47-5081.00; Bevin Boy: WWII conscripts did haulage and conveyor work as colliers' assistants, not face work]"
  },
  {
   "id": 2280,
@@ -66391,7 +66396,8 @@
    "rationale": "underground coal miner; modal production role at a colliery"
   },
   "confidence": "low",
-  "rationale": "modal modern underground coal-mine production occupation"
+  "rationale": "modal modern underground coal-mine production occupation",
+  "rubric_note": "[coal-mining normalisation 2026-08-18: 47-5041.00 -> 47-5041.00; Betws Colliery (S Wales) face worker; British longwall, coded to the rated machine-operator proxy]"
  },
  {
   "id": 2563,
@@ -102103,7 +102109,8 @@
    "rationale": "generic coalminer; modal underground mining role, specific task unknown"
   },
   "confidence": "low",
-  "rationale": "coalminer; modal underground coal-face occupation, specific job unstated"
+  "rationale": "coalminer; modal underground coal-face occupation, specific job unstated",
+  "rubric_note": "[coal-mining normalisation 2026-08-18: 47-5041.00 -> 47-5041.00; Welsh colliery miner; rated proxy]"
  },
  {
   "id": 3934,
@@ -102285,7 +102292,8 @@
    "rationale": "coal miner; '(family)' noted but string names the occupation"
   },
   "confidence": "low",
-  "rationale": "coal miner; '(family)' qualifier ambiguous but occupation named"
+  "rationale": "coal miner; '(family)' qualifier ambiguous but occupation named",
+  "rubric_note": "[coal-mining normalisation 2026-08-18: 47-5041.00 -> 47-5041.00; Welsh colliery miner (parental); rated proxy]"
  },
  {
   "id": 3941,
