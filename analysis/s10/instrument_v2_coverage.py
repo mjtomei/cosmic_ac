@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Coverage of the v2 (post-audit) instrument: 41 elements, four components.
+"""Coverage of the FINAL (audit-criterion) instrument: 64 elements, four components.
 
 WHY THIS FILE EXISTS
 
@@ -29,17 +29,16 @@ import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 V30 = "/tmp/onet303/db_30_3_text"
 
-U = ["4.A.4.b.6", "4.C.3.a.4", "4.C.3.b.8", "4.A.2.b.4", "4.C.3.a.2.b"]
-L = ["4.A.4.a.3", "4.A.4.a.5", "4.A.4.a.8", "1.B.1.d", "1.B.1.a"]
-D = ["4.A.4.b.1", "4.A.4.c.2", "4.A.4.c.3", "4.A.4.b.3", "4.A.4.b.4",
-     "4.A.4.b.5", "1.B.3.al"]
-N = ["1.B.1.f", "1.B.3.ai", "1.B.3.ak", "1.D.2.d", "1.D.2.f", "2.A.1.c",
-     "2.B.1.b", "2.B.1.d", "2.C.1.b", "4.A.2.a.2", "4.A.2.a.3", "4.A.3.b.2",
-     "4.A.3.b.6", "4.A.4.a.1", "4.A.4.a.2", "4.A.4.a.4", "4.A.4.c.1",
-     "4.C.1.a.2.f", "4.C.1.a.2.h", "4.C.1.a.2.j", "4.C.1.a.2.l", "4.C.1.a.4",
-     "4.C.1.d.1", "4.C.2.a.3"]
+# The four rosters are the audit's: every element-cell pair unanimous in the
+# four-cell blind run, plus Frequency of Decision Making (2/3, Matthew's call),
+# minus Realistic (never blind-supported). Canonical copy, written by
+# instrument derivation: instrument_final_cells.json.
+import json as _json
+_cells = _json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                      "instrument_final_cells.json")))
+U, L, D, N = _cells["U"], _cells["L"], _cells["D"], _cells["N"]
 ALL = U + L + D + N
-assert len(ALL) == len(set(ALL)) == 41, len(ALL)
+assert len(ALL) == len(set(ALL)) == 64, len(ALL)
 
 FILES = [("Work Activities.txt", "IM"), ("Work Context.txt", "CX"),
          ("Career Interest Types.txt", "OI"), ("Specific Interest Areas.txt", "OI"),
@@ -68,9 +67,9 @@ for lbl, grp in (("U", U), ("L", L), ("D", D), ("N", N)):
     print(f"  {lbl:<11s}{len(grp):>9d}{len(s):>23d}")
 
 full = comp_occ["U"] & comp_occ["L"] & comp_occ["D"] & comp_occ["N"]
-print(f"\ncomplete on all 41 elements: {len(full)}")
-v1 = 862       # v1 instrument (19 elements incl. 1.B.3.al) complete set
-print(f"v1 instrument (19 elements): {v1}   change {len(full)-v1:+d}")
+print(f"\ncomplete on all {len(ALL)} elements: {len(full)}")
+v1 = 862       # 19- and 41-element drafts: both complete on 862
+print(f"19- and 41-element drafts:   {v1}   change {len(full)-v1:+d}")
 
 rows = json.load(open(os.path.join(HERE, "soc_coding_new.json")))
 total = sum(int(r.get("n_members") or 0) for r in rows)
@@ -81,8 +80,8 @@ for r in rows:
         slots[c] += int(r.get("n_members") or 0)
 cov = sum(n for c, n in slots.items() if c in full)
 print(f"\nmember slots with a codeable occupation  {total:>7d}")
-print(f"covered by the v2 instrument             {cov:>7d}  ({100*cov/total:.1f}%)")
-print("v1 figures: 6,168 (87.7%)")
+print(f"covered by the final instrument          {cov:>7d}  ({100*cov/total:.1f}%)")
+print("41-element draft: 6,168 (87.7%)")
 lost = sorted(((n, c) for c, n in slots.items() if c in comp_occ["U"] & comp_occ["L"] & comp_occ["D"] and c not in full), reverse=True)[:8]
 if lost:
     print("\nlargest member counts lost to N's new families:")

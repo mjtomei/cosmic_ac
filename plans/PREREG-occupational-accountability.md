@@ -191,7 +191,9 @@ Determine Compliance with Standards* `4.A.2.a.3`; *Writing* `2.A.1.c`,
 *Speaking* `2.A.1.d`, *Persuasion* `2.B.1.c`, *Instructing* `2.B.1.e`, *Social
 Perceptiveness* `2.B.1.a`; *English Language* `2.C.7.a`, *Communications and
 Media* `2.C.9.b`, *Sociology and Anthropology* `2.C.4.f`, *Therapy and
-Counseling* `2.C.5.b`, *Law and Government* `2.C.8.b`.
+Counseling* `2.C.5.b`, *Law and Government* `2.C.8.b`. (Several of these were
+independently re-derived by the element audit and now sit in the instrument;
+the rest stay in the free model's pool.)
 
 **Deliberate negative controls**, already in the pool and flagged so their
 selection is interpretable: *Spend Time Sitting* `4.C.2.d.1.a` and *Indoors,
@@ -268,22 +270,32 @@ choice this study should be making on the analyst's judgement.
   individuals: how much the job consists of rendering judgment into prose for
   someone else, and not holding the final say.
 - **M2 — sociality.** Working with people rather than things (RIASEC Social
-  against Realistic, and the people-serving activities).
+  and the people-serving activities).
 
 ### Resolved by direction into four components
 
-Revised 2026-08-18 from the blind element audit (below); the previous
-three-component grid is in git history.
+Revised 2026-08-18 from the blind element audit (below), twice: first the
+structure, then the full rosters once Matthew ruled that the audit is the
+membership criterion in both directions. Previous grids are in git history.
+Machine-readable rosters: `analysis/s10/instrument_final_cells.json`.
 
 | | upward (U) | lateral (L) | downward (D) | undirected (N) |
 |---|---|---|---|---|
-| **M1** account-giving | `4.A.4.b.6` Providing Consultation and Advice · **`4.C.3.a.4` Freedom to Make Decisions, `4.C.3.b.8` Determine Tasks, `4.A.2.b.4` Developing Objectives and Strategies, `4.C.3.a.2.b` Frequency of Decision Making, all reverse-scored** | `4.A.4.a.3` Communicating with People Outside the Organization | `4.A.4.b.1` Coordinating the Work of Others · `4.A.4.c.2` Staffing Organizational Units · `4.A.4.c.3` Monitoring and Controlling Resources | `4.A.3.b.6` Documenting/Recording · `4.A.4.c.1` Administrative Activities · `4.C.1.a.2.j` Written Letters and Memos · `4.C.1.a.2.h` E-Mail · `2.A.1.c` Writing · `4.A.2.a.2` Processing Information · `4.A.2.a.3` Evaluating Information for Compliance · `4.A.3.b.2` Drafting/Specifying Technical Documents · `2.C.1.b` Administrative knowledge · `1.B.3.ai` Accounting · `1.B.3.ak` Office Work · `1.B.1.f` Conventional |
-| **M2** sociality | *(empty — no such element exists)* | `1.B.1.d` Social minus `1.B.1.a` Realistic · `4.A.4.a.5` Assisting and Caring for Others · `4.A.4.a.8` Working Directly with the Public | `4.A.4.b.3` Training and Teaching Others · `4.A.4.b.4` Guiding, Directing and Motivating Subordinates · `4.A.4.b.5` Coaching and Developing Others · `1.B.3.al` Management/Administration | `4.A.4.a.4` Establishing and Maintaining Interpersonal Relationships · `4.C.1.a.4` Contact With Others · `4.C.1.a.2.l` Face-to-Face Discussions · `4.C.1.a.2.f` Telephone Conversations · `4.C.2.a.3` Physical Proximity · `4.C.1.d.1` Conflict Situations · `2.B.1.d` Negotiation · `2.B.1.b` Coordination · `1.D.2.d` Cooperation · `1.D.2.f` Social Orientation · `4.A.4.a.1` Interpreting Information for Others |
+| **M1** account-giving | `4.A.4.b.6` Providing Consultation and Advice · **`4.C.3.a.4` Freedom to Make Decisions, `4.C.3.b.8` Determine Tasks, `4.A.2.b.4` Developing Objectives and Strategies, `4.C.3.a.2.b` Frequency of Decision Making, all reverse-scored** | `4.A.4.a.3` Communicating with People Outside the Organization · `1.B.3.ad` Professional Advising | `4.A.4.b.1` Coordinating the Work of Others · `4.A.4.c.2` Staffing Organizational Units · `4.A.4.c.3` Monitoring and Controlling Resources · `4.A.2.b.5` Scheduling Work and Activities · `4.C.1.b.1.g` Coordinate or Lead Others · `4.C.1.c.2` Work Outcomes and Results of Other Workers · `2.A.2.d` Monitoring · `2.B.5.b` Management of Financial Resources · `2.B.5.c` Management of Material Resources · `2.C.1.a` Administration and Management | `4.A.3.b.6` Documenting/Recording · `4.A.4.c.1` Administrative Activities · `4.C.1.a.2.j` Written Letters and Memos · `4.C.1.a.2.h` E-Mail · `2.A.1.c` Writing · `4.A.2.a.2` Processing Information · `4.A.2.a.3` Evaluating Information for Compliance · `4.A.3.b.2` Drafting/Specifying Technical Documents · `2.C.1.b` Administrative knowledge · `1.B.3.ai` Accounting · `1.B.3.ak` Office Work · `1.B.1.f` Conventional |
+| **M2** sociality | *(empty — no such element exists)* | `1.B.1.d` Social · `4.A.4.a.5` Assisting and Caring for Others · `4.A.4.a.8` Working Directly with the Public · `4.A.4.a.6` Selling or Influencing Others · `4.C.1.b.1.f` Deal With External Customers or the Public · `4.C.1.d.2` Dealing With Unpleasant, Angry, or Discourteous People · `4.C.1.a.2.c` Public Speaking (context) · `2.B.1.f` Service Orientation · `2.C.1.e` Customer and Personal Service · `1.B.3.af` Sales · `1.B.3.am` Public Speaking (interest) · `1.B.3.z` Social Service | `4.A.4.b.3` Training and Teaching Others · `4.A.4.b.4` Guiding, Directing and Motivating Subordinates · `4.A.4.b.5` Coaching and Developing Others · `4.A.4.b.2` Developing and Building Teams · `4.C.1.c.1` Health and Safety of Other Workers · `2.B.1.e` Instructing · `2.B.5.d` Management of Personnel Resources · `2.C.1.f` Personnel and Human Resources · `1.D.1.i` Leadership Orientation · `1.B.3.aj` Human Resources · `1.B.3.al` Management/Administration | `4.A.4.a.4` Establishing and Maintaining Interpersonal Relationships · `4.C.1.a.4` Contact With Others · `4.C.1.a.2.l` Face-to-Face Discussions · `4.C.1.a.2.f` Telephone Conversations · `4.C.2.a.3` Physical Proximity · `4.C.1.d.1` Conflict Situations · `2.B.1.d` Negotiation · `2.B.1.b` Coordination · `1.D.2.d` Cooperation · `1.D.2.f` Social Orientation · `4.A.4.a.1` Interpreting Information for Others |
 | **both** | | | | `4.A.4.a.2` Communicating with Supervisors, Peers, or Subordinates *(pools all three directions — which is why it is here)* |
 
-`1.B.3.al` Management/Administration sits in M2's downward cell per the audit's
-measure votes (an earlier draft had it in M1's row); the row assignment matters
-only for the M1/M2 robustness splits, and the change is logged here.
+Row (M1/M2) assignments for the audited additions follow the coders' measure
+votes where cast and content otherwise; they matter only for the M1/M2
+robustness splits. `1.B.3.al` Management/Administration sits in M2's downward
+cell per the audit's measure votes (an earlier draft had it in M1's row).
+
+**`1.B.1.a` Realistic is dropped, and the change is the audit's.** The old L
+carried Social *minus* Realistic; no blind arm ever nominated Realistic for
+anything (only the anchored arm reached 2/3 with the draft in view — the
+anchoring pattern), while Social alone was unanimous everywhere. L carries
+Social straight. The people-versus-things contrast Realistic was subtracted to
+sharpen is carried instead by L's eleven other people-facing elements.
 
 **The upward-sociality cell is empty, not weak (Matthew).** O\*NET has no
 element for sociality directed at a superior. An earlier draft filled the cell
@@ -296,9 +308,11 @@ anywhere: not in the scoring, not in the counting, not in the permutation test.
 its standardised elements across both base measures:
 
     U  upward      consultation + four discretion items reversed   (5, all M1)
-    L  lateral     M1's one + M2's three                           (4 entries, 5 elements)
-    D  downward    M1's three + M2's four                          (7 elements)
+    L  lateral     M1's two + M2's twelve                          (14 elements)
+    D  downward    M1's ten + M2's eleven                          (21 elements)
     N  undirected  M1's twelve + M2's eleven + one both            (24 elements)
+
+64 elements in total, no element in two components.
 
 **N is the column Matthew added** when the audit rejected Written Letters and
 Memos for lacking direction: that exposed a hole in the structure, not the
@@ -309,12 +323,18 @@ there unanimously, and Letters and Memos itself, zero votes in both three-cell
 arms, returned 3/3. N's contents are the 24 elements unanimous in the four-cell
 blind run; its M1/M2 tags are the coders' own measure votes, near-all unanimous.
 
-**The writing-media cluster is quarantined in M1-N and declared circular-
-adjacent**: Writing, E-Mail, Letters and Memos, Documenting/Recording measure
-how writing-heavy a job is, and the outcome is a written register. **N without
-those four is a pre-specified split**, so whether N's result survives on
-non-writing elements (administration, compliance, contact, negotiation) is
-visible rather than absorbed.
+**The writing cluster is kept in the main study, and also read on its own
+(Matthew).** Writing, E-Mail, Letters and Memos, Documenting/Recording measure
+how writing-heavy a job was, and one *alternative* reading of any N result is
+style transfer — writing-heavy careers leaving written-language habits in
+speech, no accountability required. An earlier draft called this circularity
+and quarantined the four; that overstated it: **the register is measured in
+speech and has not been established to be specific to writing**, so style
+transfer is a hypothesis to examine, not a confound to excise. The four are
+full members of N in every main-study model. Alongside, two pre-specified side
+views: **N without the four**, and **the four as their own score** — if the two
+halves disagree, that is evidence about the style-transfer reading, and it is
+reported rather than absorbed either way.
 
 **`1.B.3.al` Management/Administration is added to D on Matthew's judgement that
 it belongs there**, and is the one element in the instrument drawn from O\*NET
@@ -363,14 +383,15 @@ just the two the draft drew from — with an element carried at 2-of-3.
   3. **four-cell** — no draft, N added, after Matthew diagnosed the structure.
 
 Coders read element names and descriptions only — never per-occupation values,
-never anything about the register. Decision rules, fixed before reading
-results: migrations agreed by the blind runs are applied; N's membership is the
-four-cell run's unanimous set; 2-of-3 elements enter only by Matthew's explicit
-call (one: Frequency of Decision Making). What the audit found beyond the cells
-— strong lateral and downward candidates like Selling or Influencing Others,
-Deal With External Customers, and the HR/resource-management cluster — is **not
-admitted**: the audit's job was to check the construct, not to widen it, and
-those candidates are parked with the free-model future work.
+never anything about the register. **The audit is the membership criterion in
+both directions (Matthew, 2026-08-18)**: every element-cell pair unanimous in
+the four-cell run is in — including the lateral and downward candidates the
+draft never contained — and nothing without blind support stays (Realistic,
+above). Sub-unanimous pairs are out, with one exception by Matthew's explicit
+call: Frequency of Decision Making, 2/3, the single element in the instrument
+below unanimity. An earlier revision froze the cells and parked the audit's
+candidates with future work; Matthew reversed that, and the flip is logged
+here rather than silently.
 
 ### The three versions: free, managerial, drone
 
@@ -486,8 +507,8 @@ the statistic actually reported.
 so.** The six-cell pattern sounded more demanding but was not: two of its cells
 were thin or empty, so it bought its apparent stringency with noise. Four
 audited signs at a 1-in-16 null rate is the honest version of the same test —
-and N's sign is the least secure of the four, resting partly on the quarantined
-writing cluster, which is why the N-without-writing split exists.
+and N's sign is the least secure of the four — the writing cluster inside it
+admits a style-transfer reading, examined in the pre-specified side views.
 
 **Inference is not taken from the curve.** Reporting many fits guarantees some
 will look good by chance. The test is a **permutation**: shuffle the register
@@ -510,10 +531,15 @@ advising up beat commanding down?); U decomposed into Consultation alone and
 the discretion items alone, which separates *advising someone* from *lacking
 the final say* — the two are conflated in U by construction, and the manual
 classes are where they come apart (prediction 6); **D without `1.B.3.al`**;
-**N without the writing-media cluster** (Writing, E-Mail, Letters and Memos,
-Documenting/Recording), the circularity quarantine; and **N split into its M1
-and M2 halves**, with the one both-tagged element (`4.A.4.a.2`) appearing in
-each half and flagged as such.
+**N without the writing cluster and the writing cluster alone** (Writing,
+E-Mail, Letters and Memos, Documenting/Recording) — the style-transfer side
+views; **N split into its M1 and M2 halves**, with the one both-tagged element
+(`4.A.4.a.2`) appearing in each half and flagged as such; and **each component
+restricted to its Work Activities and Work Context elements** — the
+requirement-not-aptitude core — against the full audited set, since the audit
+admitted skills, knowledge, interest and work-style elements that describe the
+worker more than the work, and whether they change the answer should be
+visible.
 
 ## Pre-specified predictions
 
@@ -534,7 +560,7 @@ the joint fit:
 elements that exist, so there is no cell to discount and no counting rule to
 write. The permutation test uses this same four-sign statistic. N's + follows
 from its profile weights (positive in both organisational profiles, negative in
-free) and is the least secure of the four — see the writing quarantine.
+free) and is the least secure of the four — see the writing side views.
 
 The signs are equivalent to the profile ordering below — `drone` is exactly the
 weighting (+, +, −) — and are stated separately because the component fit and
@@ -758,9 +784,10 @@ the model comparison, and cannot be used to revise the composite.
 **A second side study: the specific interest areas as an occupational map
 (Matthew).** O\*NET 30.3 adds 41 Specific Interest Areas — `1.B.3.f`
 Agriculture, `1.B.3.z` Social Service, `1.B.3.ao` Law, `1.B.3.an` Politics and
-the rest — on a 1–7 scale across 891 occupations. Four interest elements enter
-the instrument (Management/Administration in D; Accounting, Office Work and
-RIASEC Conventional in N). The others are a far finer occupational description than
+the rest — on a 1–7 scale across 891 occupations. Ten interest elements now
+sit in the instrument (eight specific areas across L, D and N, plus RIASEC
+Social and Conventional); the other thirty-three areas remain the side study's
+material. The others are a far finer occupational description than
 either EGP's seven classes or this study's three components, and asking what
 they say about the register is interesting in its own right rather than as a
 check on anything here. Agriculture in particular gives a direct read on the
