@@ -2366,6 +2366,45 @@ study has not already built.
     it succeeds, this asks what the composite left on the table; if it fails, it
     asks whether anything occupational predicts at all.
 
+26. **From register to cost: the signaling-drag hypothesis (Matthew,
+    2026-08-18).** The occupational study's conclusion names the register as
+    something like a **corporate-drone register** — the speech of the insulated
+    organizational middle, prose produced to demonstrate accountability rather
+    than to inform. If that is what it is, it is *signaling*, and signaling has
+    a cost: every word spent performing justification is a word not spent on
+    useful communication. Two testable claims follow. **Performance:** register
+    intensity should predict *worse* outcomes on metrics the speech is
+    nominally in service of — legislative productivity and amendment success
+    for members; delivery and error rates for organizations whose internal
+    corpora can be scored. **Clustering:** the register should co-occur with
+    the rest of the drone behavioral family — hedging and diffusion-of-agency
+    markers, boilerplate reuse, CC-everyone communication patterns, process
+    language displacing object language — because one underlying posture
+    (answering upward, insulated from outcomes) generates all of them. The
+    quality arm's DQI machinery is a starting point for the speech side;
+    detector-independent measures (§8.6 B) matter doubly here, since the claim
+    is about the behavior, not about any one detector's opinion of it.
+
+27. **The monitor: measurement as the aid, machine intelligence as the
+    measurer (Matthew, 2026-08-18).** If the signaling family is real and
+    detectable, a tool follows: an automated monitor that continuously scores
+    an organization's communication for signaling-over-substance behaviors and
+    surfaces the drift to decision makers — public or private — with two
+    design requirements doing the real work. **Too complicated to game:** the
+    measure must be a moving, many-dimensional ensemble (the way the Kobak
+    excess-word approach is invisible to the speaker), because any published
+    single score becomes a target the moment it matters — Goodhart is the
+    design constraint, not a footnote. **Zero effort for the decision maker:**
+    ambient and continuous, no self-reports, no reviews to conduct. The
+    connection to this study's own themes is direct: cheap, copyable machine
+    intelligence is exactly what makes measuring a diffuse behavioral family
+    affordable, and the monitor is the register study industrialized. The
+    honest flags belong in the design from the start: the tool must target
+    signaling behavior rather than AI-assisted drafting as such (the register
+    is one marker, not the offense), and a monitor of speech is surveillance
+    of workers by another name — deployment questions about consent and
+    who reads the dashboard are part of the design, not an afterthought.
+
 Collecting covariates for this study produced something with uses well outside
 it: birth year, education, prior occupation, EGP class and Wikipedia prominence
 for roughly five thousand legislators across twenty-two chambers, joined to
