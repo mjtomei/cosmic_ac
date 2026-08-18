@@ -50,7 +50,7 @@ separate construct — see the directional components in the Specification.
 
 ## The instrument
 
-O\*NET **29.1** (US Department of Labor, November 2024 release), CC-BY 4.0, distributed as CSV at
+O\*NET **30.3** (US Department of Labor, May 2026 release — the current production version), CC-BY 4.0, distributed as CSV at
 `onetcenter.org/dl_files/database/db_30_3_csv/`. Element IDs below were verified
 against `content_model_reference.csv` on 2026-08-17, which corrected three
 errors in the first draft of this file: the item is **Written** Letters and
@@ -659,7 +659,7 @@ the model comparison, and cannot be used to revise the composite.
 As required above. SOC mapping completed by double-blind coding with
 adjudication (`workflows/soccode.js` on arch-home for the two votes,
 `workflows/socfinish.js` here for the remaining second votes and every
-adjudication), then validated against O\*NET 29.1's published occupation list.
+adjudication), then validated against O\*NET 30.3's published occupation list.
 
 | quantity | value |
 |---|---|
@@ -667,7 +667,7 @@ adjudication), then validated against O\*NET 29.1's published occupation list.
 | with a valid SOC code | 4,263 (96.8%) |
 | member-occupation slots | 7,034 |
 | slots with a code | 6,829 (97.1%) |
-| **distinct SOC codes matched** | **470** of 1,016 in O\*NET 29.1 |
+| **distinct SOC codes matched** | **470** of 1,016 in O\*NET 30.3 |
 | top-10 codes cover | 45.0% of coded slots |
 | top-50 / top-200 | 73% / 93% |
 
