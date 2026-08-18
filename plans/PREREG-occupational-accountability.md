@@ -67,11 +67,12 @@ reverse-scored terms pull it down; that is precisely the II-over-I crossover the
 composite must reproduce. It also keeps the farmer where the theory wants him:
 low reporting *and* high freedom, low on both halves.
 
-**Only one separate covariate.** Required education (Job Zone, or Education
-Level Required) is not part of the construct — it is the *supply* side of the
-two-factor account, the resources needed to produce the register at all, as
-against the demand the composite measures. It therefore gets its own
-coefficient rather than being averaged in.
+**No covariates beyond birth decade.** An earlier version gave the models an
+education term — O\*NET's occupation-level requirement — as the *supply* side of
+the two-factor account, against the demand the composite measures. It is out
+(Matthew, 2026-08-18): occupations demanding upward account-giving also demand
+education, so conditioning on it is over-control on the causal path. See
+Specification for what that costs.
 
 **Autonomy is predicted SUFFICIENT but NOT NECESSARY (Matthew), and the
 composite's linear form does not capture that.** High autonomy should reliably
@@ -183,11 +184,17 @@ some sense, so the two constructs overlap by construction. What separates them
 is not whether interaction happens but **which way it points**, and O\*NET rates
 that separately:
 
-| direction | elements |
+| block | elements |
 |---|---|
-| **upward** — to someone who can overrule you | `4.A.4.a.2` Communicating with Supervisors, Peers, or Subordinates; the accountability composite above |
+| **upward** — accounting to someone who can overrule you | `4.C.1.a.2.j` Written Letters and Memos; `4.A.3.b.6` Documenting/Recording Information; `4.A.4.a.2` Communicating with Supervisors, Peers, or Subordinates; `4.A.4.c.1` Performing Administrative Activities |
+| **autonomy_rev** — not holding the final say (reverse-scored) | `4.C.3.a.4` Freedom to Make Decisions; `4.C.3.b.8` Determine Tasks, Priorities and Goals |
 | **lateral / public** — to people you serve rather than answer to | `4.A.4.a.4` Establishing and Maintaining Interpersonal Relationships; `4.A.4.a.5` Assisting and Caring for Others; `4.A.4.a.8` Performing for or Working Directly with the Public; `1.B.1.d` Social |
 | **downward** — to people who answer to you | `4.A.4.b.1` Coordinating the Work and Activities of Others; `4.A.4.b.4` Guiding, Directing, and Motivating Subordinates; `4.A.4.b.5` Coaching and Developing Others |
+
+The first two blocks are exactly the six items of the composite in (A), split
+back apart — **upward** is its four positive items, **autonomy_rev** its two
+reverse-scored ones. That is what makes (C) a decomposition of (A) rather than a
+competing model.
 
 **The three-way contrast is the discriminating test**, and each outcome names a
 different finding:
@@ -206,22 +213,57 @@ the same cross-sectional U, and only the direction split tells them apart.
 
 ## Specification
 
+**Revised 2026-08-18, before any O\*NET data was joined.** The revision is
+logged rather than applied silently: three defects were found in the first
+version — (i) model D lacked the covariates the others had, so the incumbent was
+handicapped in its own comparison; (ii) C was not a decomposition of A but a
+different model, since A carried the autonomy terms and C did not; (iii)
+"required education" named an O\*NET *occupation* property while the study also
+holds each member's *own* education, and the two were not distinguished. Nothing
+had been fitted, so this is a tightening of the instrument, not a response to
+results.
+
 Member-level, matching the canonical spec in `member_level_estimation.py`: one
 observation per legislator, equal weight, register z-scored within chamber
 against the chamber's full member population, HC1 errors.
 
-    (A) z ~ account_giving + required_education              (+ birth decade)
-    (B) z ~ social − realistic + required_education          (+ birth decade)
-    (C) z ~ upward + lateral + downward + required_education (+ birth decade)
-    (D) z ~ EGP class dummies                                (+ birth decade)
+**Education is out of these models entirely (Matthew, 2026-08-18).** Neither
+O\*NET's occupation-level requirement nor the member's own education level
+appears. Occupations demanding upward account-giving also tend to demand
+education, so conditioning on it is over-control on the causal path rather than
+a clean adjustment; and the member's own education belongs to the class arm in
+§4.6a, where §4.6a already found it inseparable from class. Leaving it out keeps
+this a clean occupational test. The cost is stated in the predictions: the
+composite's coefficient now absorbs whatever education would have explained, so
+this design cannot separate demand from ability.
 
-(A) is the accountability hypothesis, (B) sociality, (C) the direction split
-that discriminates them, (D) the incumbent. All four fitted on the **same
-members** and compared by adjusted R², by held-out performance on withheld
-occupations, and by whether each block survives the others' inclusion. (C) is
-what decides between (A) and (B); (A) and (B) are both reported whatever (C)
-says, because a sibling hypothesis that also predicts is a result, not a
-nuisance.
+    (A) z ~ account_giving + birthdec
+    (B) z ~ (social − realistic) + birthdec
+    (C) z ~ upward + lateral + downward + autonomy_rev + birthdec
+    (D) z ~ EGP class dummies + birthdec
+
+**A is exactly C with its blocks collapsed.** The six-item composite in A is the
+equally weighted mean of the upward items and the reverse-scored autonomy items;
+C separates them and adds the lateral and downward blocks. So C is a true
+decomposition of A, not a rival to it, and A's role is to test the construct as
+registered while C's is to say which part of it carries the result.
+
+**Every model carries the same single covariate** (`birthdec`), so no comparison
+is decided by one specification being given a predictor another was denied. The
+first version gave A, B and C an education term and withheld it from D, which
+would have flattered the hypothesis in its own headline test.
+
+**Each block is reported alone as well as jointly**, on the same members, so
+attenuation is read against its own baseline. Upward, lateral and downward are
+strongly collinear — jobs with much interaction have all three — which is
+precisely why the discriminating test is the JOINT fit: three separate models
+would each come back positive off shared interaction variance and separate
+nothing. The alone-fits are reported for interpretation, not for adjudication.
+
+Compared by adjusted R², by held-out performance, and by whether each block
+survives the others' inclusion. (C) decides between (A) and (B); (A) and (B) are
+both reported whatever (C) says, because a sibling hypothesis that also predicts
+is a result, not a nuisance.
 
 ## Pre-specified predictions
 
@@ -233,33 +275,39 @@ nuisance.
    construction — a job requiring interaction with an individual involves
    reporting to them in some sense. A positive result for (B) is expected and is
    **not** evidence against (A). The informative quantity is (C).
-3. **Upward outscores downward.** If the register is deference, the upward block
+3. **The comparison is like-for-like or it is nothing.** All four models carry
+   `birthdec` and nothing else beyond their own block, so no margin over the
+   incumbent can come from an extra covariate.
+4. **Upward outscores downward.** If the register is deference, the upward block
    carries (C) and the downward block does not. Roughly equal loadings across
    all three directions would favour sociality; a downward loading would
    indicate a managerial register, which neither hypothesis predicts and which
    would need its own account.
-4. **Farmers are the diagnostic case.** EGP ranks IVc mid-table; both composites
+5. **Farmers are the diagnostic case.** EGP ranks IVc mid-table; both composites
    and the observed value place it at the floor. If either beats EGP anywhere,
    it should be here.
-5. **The manual classes are no longer a counter-case, and that must not be
+6. **The manual classes are no longer a counter-case, and that must not be
    claimed as a success.** V/VI and VIIab score low on measured autonomy yet sit
    at the register's floor. Under the sufficient-not-necessary reading this is
    expected — they hold effective autonomy the nominal scales miss — but that
    reading was adopted *after* seeing them there, so it earns no credit unless
    the effective-autonomy score above independently places them near farmers.
    That is the test; the narrative is not.
-6. **Police are predicted to be MISSED.** Police other-ranks write heavily
+7. **Police are predicted to be MISSED.** Police other-ranks write heavily
    (incident reports, statements, court files), so they will score high on
    Documenting and Written Letters and Memos, but they are observed at −0.200.
    Recorded as an expected failure **in advance**; neither composite will be
    modified to accommodate it. A simple combination of existing scales that
    misses one occupation is more informative than a bespoke rule that misses
    none.
-7. **Two-factor outcome is the most likely.** An accountability or sociality
-   term negative-at-the-top with required education positive-at-the-bottom would
-   produce the observed U as the product of two crossed gradients, and would
-   explain why education showed the same shape while being statistically
-   inseparable from class.
+8. **The two-factor account is NOT tested by this design, and no result here
+   should be read as bearing on it.** The idea — that accountability creates the
+   demand for the register while education supplies the ability to produce it,
+   the two crossed gradients making the observed U — requires education in the
+   model, and it has deliberately been left out. Whatever education would have
+   explained is absorbed into the composite's coefficient. If (A) succeeds, the
+   two-factor question becomes the natural follow-up study, with the
+   over-control problem handled properly rather than by adding a term.
 
 ## Deferred to future work: the unconstrained model
 
