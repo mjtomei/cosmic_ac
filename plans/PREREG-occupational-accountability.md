@@ -1,9 +1,22 @@
-# Pre-registration — does upward linguistic accountability explain the register better than class?
+# Pre-registration — what occupational property explains the register better than class?
 
-**Written 2026-08-17, before any O\*NET data has been joined to the corpus.**
-Registered because the hypothesis and the composite were both formulated *after*
-seeing the class inverted U (§4.6a), which makes the instrument unusually
-flexible unless its definition is fixed in advance.
+Two base measures (account-giving and sociality), each varied by direction of
+interaction; a signed prediction across the resulting six cells; and an ordinal
+prediction across three occupational profiles.
+
+**Written 2026-08-17; revised 2026-08-18. No O\*NET element has been joined to
+a member, and no relationship between any element and the register has been
+examined.** Registered because the hypothesis and the measures were formulated
+*after* seeing the class inverted U (§4.6a), which makes the instrument
+unusually flexible unless fixed in advance.
+
+**Exactly what has been looked at, so the claim above is precise.** During the
+SOC coding (§6.1b of METHODOLOGY) three things touched O\*NET data: which codes
+carry ratings at all, used for the coverage check below; the element values of
+`47-5041.00`, `47-5049.00` and `47-5081.00`, used to decide a coal-mining coding
+question; and the O\*NET occupation list, used to validate codes. None of it
+involved the register outcome, and no element has been regressed on anything.
+Every revision logged in this file was made before any such fit.
 
 ## The question
 
@@ -70,12 +83,18 @@ reverse-scored terms pull it down; that is precisely the II-over-I crossover the
 composite must reproduce. It also keeps the farmer where the theory wants him:
 low reporting *and* high freedom, low on both halves.
 
-**No covariates beyond birth decade.** An earlier version gave the models an
-education term — O\*NET's occupation-level requirement — as the *supply* side of
-the two-factor account, against the demand the composite measures. It is out
-(Matthew, 2026-08-18): occupations demanding upward account-giving also demand
-education, so conditioning on it is over-control on the causal path. See
-Specification for what that costs.
+**O\*NET's occupation-level education requirement is out.** An earlier version
+gave the models that term — Job Zone / Education Level Required — as the
+*supply* side of the two-factor account, against the demand the composite
+measures. It is out (Matthew, 2026-08-18): occupations demanding upward
+account-giving also demand education, so conditioning on it is over-control on
+the causal path.
+
+Do not confuse it with the **member's own education level**, a different
+variable from the §4.6a class arm. That one is absent from Stage 1 for the same
+reason, but appears in Stage 2 as one toggle among the study's existing
+covariates — where its job is not to adjust the occupational measure but to sit
+beside it on equal terms in the lattice.
 
 **Autonomy is predicted SUFFICIENT but NOT NECESSARY (Matthew), and the
 composite's linear form does not capture that.** High autonomy should reliably
@@ -161,7 +180,7 @@ Environmentally Controlled* `4.C.2.a.1.a`, *Physical Proximity* `4.C.2.a.3`. If
 these predict as well as the composite, the model has found "office job" rather
 than anything about language.
 
-### Coverage check, to be reported before any model is fitted
+### Coverage check (specified here; results at the end of this file)
 
 O\*NET rates roughly 900 O\*NET-SOC occupations, and many of our 7,421 strings
 will map to the same code, so **distinct SOC codes — not member count — is what
@@ -207,9 +226,11 @@ Member-level, canonical spec (`member_level_estimation.py`): one observation per
 legislator, equal weight, register z-scored within chamber against the chamber's
 full member population, HC1 errors.
 
-**No education term anywhere**, on either the occupation or the member
+**No education term in Stage 1**, on either the occupation or the member
 (Matthew): occupations demanding account-giving also demand education, so
-conditioning is over-control on the causal path. And **nothing is a
+conditioning is over-control on the causal path. The member's own education
+level returns in Stage 2 as one lattice toggle among the study's existing
+covariates, not as a privileged control. And **nothing is a
 privileged control** — not education, not cohort, not class. Every predictor is
 reported as a distribution across all subsets of the others (see the lattice
 below), because establishing an effect absent the other covariates matters
@@ -332,7 +353,13 @@ serves laterally, and commands nobody**. As signs on the six cells:
 | | upward (a) | lateral (b) | downward (c) |
 |---|---|---|---|
 | **M1** account-giving | **+** | **+** | **−** |
-| **M2** sociality | **+** *(thin cell)* | **+** | **−** |
+| **M2** sociality | (+) *thin — excluded from the pattern test* | **+** | **−** |
+
+**M2a carries a predicted sign but is not counted.** The cell is thin by
+construction (no clean O\*NET element for sociality directed at a superior), so
+it is reported like any other cell and excluded from the five-sign pattern
+statistic. Including a cell we have already declared uninformative would let a
+coin-flip decide the headline.
 
 ### The ordinal prediction: free < managerial < drone (Matthew)
 
@@ -514,10 +541,15 @@ the model comparison, and cannot be used to revise the composite.
 - **O\*NET is US-coded**, applied here to Australian, Canadian, Irish and UK
   occupational titles. Standard practice in comparative work, but a mapping
   assumption.
-- **The mapping is a coding pass.** 7,421 occupation strings → SOC codes, via
-  the same double-blind-with-adjudication harness used for the EGP coding
-  (95.96% raw agreement), keyed off the coders' cleaned `coded_occupation`
-  field rather than the raw Hansard strings.
+- **The mapping is a coding pass, and its own instrument.** 4,402 distinct
+  occupations (deduplicated from 6,200 codeable strings) → O\*NET-SOC, via the
+  same double-blind-with-adjudication harness as the EGP coding, keyed off the
+  coders' cleaned `coded_occupation` field. **Raw agreement 90.41%** — lower
+  than the EGP pass's 95.96%, as expected against ~900 categories rather than
+  seven. Not model-homogeneous: most first votes were Fable, while the 727
+  singleton second votes and all 421 adjudications were Opus at high effort.
+  Eighteen invalid codes survived agreement and were caught only by validating
+  against the published taxonomy — see METHODOLOGY §6.1b on correlated error.
 - **Accountability will correlate with class.** That is the point of the model
   comparison; a composite that merely reproduces EGP is a null result.
 
