@@ -2437,6 +2437,19 @@ study has not already built.
     of workers by another name — deployment questions about consent and
     who reads the dashboard are part of the design, not an afterthought.
 
+28. **The search for the register itself (Matthew, 2026-08-18 — planned as
+    S20, `plans/S20-register-search.md`).** Everything above measures against
+    one register, and §5's calibration names the cost: a single thin index
+    attenuates every correlation. S20 inverts the search — for each
+    identifier (period, cohort, class II, the insulation delta, machine
+    generation), find the word set that carries its effect, searched over
+    the full vocabulary rather than decomposed from the existing list; then
+    measure the overlap structure among the found registers, and against the
+    register of LLM-generated speech derived by the same methodology. The
+    overlap matrix is the finding: one register with identifier-specific
+    weights, or several — and how much of the human-drone register IS the
+    machine register.
+
 Collecting covariates for this study produced something with uses well outside
 it: birth year, education, prior occupation, EGP class and Wikipedia prominence
 for roughly five thousand legislators across twenty-two chambers, joined to

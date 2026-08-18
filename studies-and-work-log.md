@@ -437,6 +437,17 @@ not a forecast.
 
 ---
 
+
+### S20. The search for the register itself — **PLANNED 2026-08-18**
+
+The register as object rather than instrument: for each identifier (period,
+cohort, class II, insulation delta, machine generation) search the full
+vocabulary for the word set that carries its effect — screen, stability
+selection, and guarded subset optimization — then measure the overlap
+structure among the found registers and against the register of LLM-generated
+speech derived by the same methodology. Plan: `plans/S20-register-search.md`
+(self-contained). Feeds S10 items 26–27 (signaling drag, the monitor) and
+answers §5's thin-probe attenuation directly.
 ## Work log
 
 | Date | What ran | Result |
