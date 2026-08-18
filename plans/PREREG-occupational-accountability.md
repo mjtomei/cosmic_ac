@@ -205,10 +205,14 @@ not a rival construct.
 
 Member-level, canonical spec (`member_level_estimation.py`): one observation per
 legislator, equal weight, register z-scored within chamber against the chamber's
-full member population, HC1 errors. Every model carries `birthdec` and nothing
-else — **no education term anywhere**, on either the occupation or the member
+full member population, HC1 errors.
+
+**No education term anywhere**, on either the occupation or the member
 (Matthew): occupations demanding account-giving also demand education, so
-conditioning is over-control on the causal path.
+conditioning is over-control on the causal path. And **`birthdec` is not
+assumed** — every predictor is reported raw before it is reported adjusted (see
+the ladder below), because establishing the effect absent all covariates matters
+equally to establishing it net of cohort.
 
 ### The two base measures
 
@@ -235,25 +239,48 @@ Others is the closest and is not a good fit, since influencing is as often
 lateral or downward. **M2a is therefore the weakest of the six and a null there
 is uninformative** — it must not be read as evidence against the pattern.
 
-### Models
+### Models — a ladder, reported at every rung
 
-    (0)  z ~ EGP class dummies                       + birthdec   [incumbent]
-    (1)  z ~ <one predictor>                         + birthdec   [x7, each alone]
-    (2)  z ~ M1a+M1b+M1c+M2a+M2b+M2c                 + birthdec   [JOINT — the test]
-    (3)  z ~ combined                                + birthdec   [all six pooled]
+Nothing is adjusted before its unconditional effect is on record. Each rung is
+reported for all seven predictors and for the incumbent, on the same members:
 
-`combined` is the equally weighted mean of the six cells, entered as a single
-summary covariate — the "everything at once" proxy.
+    rung 0   z ~ <predictor>                                    [RAW, no covariates]
+    rung 1   z ~ <predictor> + birthdec                         [cohort-adjusted]
+    rung 2   z ~ M1a+M1b+M1c+M2a+M2b+M2c                        [JOINT, raw]
+    rung 3   z ~ M1a+M1b+M1c+M2a+M2b+M2c + birthdec             [JOINT, adjusted]
 
-Each of the seven predictors is fitted **alone** as well as in the joint model,
-on the same members, so attenuation is read against its own baseline. The joint
-fit is the discriminating test: the six cells are collinear, and separate models
+    incumbent, at rungs 0 and 1:  z ~ EGP class dummies [+ birthdec]
+    summary,   at rungs 0 and 1:  z ~ combined          [+ birthdec]
+
+**Rung 0 is not a throat-clearing step.** Establishing whether an occupational
+property predicts the register *at all* is a separate question from whether it
+predicts net of cohort, and the answers can differ in both directions. Reporting
+only the adjusted figure would let a real unconditional effect vanish behind a
+covariate, which is the error §4.6a made in reverse when a genuine education
+ladder turned out to be class.
+
+**Why `birthdec` is the only thing ever added, and only at rungs 1 and 3.**
+Cohort is by far the strongest predictor of the register in this study (t ≈ 27
+at member level), and it is confounded with occupation — later cohorts hold
+different jobs, with fewer farmers and miners and more communications work. So
+the adjusted rung is necessary to know whether an occupational effect is
+anything more than the occupational composition of generations. It is not,
+however, more trustworthy than rung 0 by default: which rung is the interesting
+one depends on what the two say.
+
+**The gap between rungs is itself reported.** If a cell is strong raw and
+vanishes at rung 1, the finding is that the occupation marks a generation. If it
+survives, the occupation is doing its own work. Both are results; neither is a
+failure of the other.
+
+Each predictor is also fitted **alone** at rungs 0 and 1 as well as inside the
+joint model, so attenuation is read against its own baseline. The joint fit is
+the discriminating test — the six cells are collinear, and six separate models
 would each come back positive off shared interaction variance.
 
-**Pre-specified subsets**, fixed here, reported whatever the joint model says:
-M1a alone against M1c alone (does reporting up beat commanding down?); M1a+M2b
-(the drone profile proper); the six with the autonomy items removed from M1a
-(does the composite survive without them?).
+**Pre-specified subsets**, fixed here, reported at every rung: M1a against M1c
+(does reporting up beat commanding down?); M1a+M2b (the drone profile proper);
+the six with the autonomy items removed from M1a (does M1 survive without them?).
 
 ## Pre-specified predictions
 
@@ -284,36 +311,43 @@ right direction is not partial support, it is noise.
 
 ### The rest, in order
 
-1. **The joint model beats the incumbent.** Model (2) exceeds model (0) on
-   adjusted R² and its blocks survive. If it does not, occupational structure
-   adds nothing beyond EGP class and the hypothesis fails on its own terms.
-2. **M1a is the strongest single cell.** If any one predictor carries the
+1. **The joint model beats the incumbent, at the same rung.** Rung 2 exceeds the
+   raw EGP model and rung 3 exceeds the adjusted one, on adjusted R², with the
+   blocks surviving. Comparisons are only ever made rung-for-rung. If the joint
+   model does not beat class at either rung, occupational structure adds nothing
+   beyond EGP and the hypothesis fails on its own terms.
+2. **The sign pattern is required at rung 3, and reported at rung 0.** Cohort is
+   confounded with occupation, so the adjusted rung is where the pattern has to
+   hold to mean anything about occupations rather than generations. But a
+   pattern that appears only after adjustment, with nothing at rung 0, is a
+   weaker result than one present in both, and is reported as such.
+3. **M1a is the strongest single cell.** If any one predictor carries the
    result it should be upward account-giving. If `combined` beats every
    individual cell by a wide margin, the construct is diffuse rather than
    specific and should be described that way.
-3. **M2a is uninformative either way.** The cell is thin by construction
+4. **M2a is uninformative either way.** The cell is thin by construction
    (no clean O\*NET element for sociality directed at a superior), so a null
    there is a measurement gap, not evidence.
-4. **Farmers are the diagnostic case.** EGP ranks IVc mid-table; the observed
+5. **Farmers are the diagnostic case.** EGP ranks IVc mid-table; the observed
    register places it at the floor. If the grid beats EGP anywhere, it is here:
    farmers should score low on M1a (nobody to report to) and low on M2b (working
    with land, not people).
-5. **The manual classes are not a counter-case, and that must not be claimed as
+6. **The manual classes are not a counter-case, and that must not be claimed as
    a success.** V/VI and VIIab score low on measured autonomy yet sit at the
    floor. Under the sufficient-not-necessary reading this is expected — they
    hold effective autonomy the nominal scales miss — but that reading was
    adopted *after* seeing them there, so it earns no credit unless the
    effective-autonomy score places them near farmers independently.
-6. **Police are predicted to be MISSED.** Police other-ranks write heavily, so
+7. **Police are predicted to be MISSED.** Police other-ranks write heavily, so
    they score high on M1a, yet they sit at −0.200. Recorded as an expected
    failure in advance; no cell will be modified to accommodate them. A simple
    grid that misses one occupation is more informative than a bespoke rule that
    misses none.
-7. **The two-factor account is NOT tested here.** It needs education in the
+8. **The two-factor account is NOT tested here.** It needs education in the
    model and education is deliberately out, so the cells absorb whatever
    education would have explained. No result here bears on demand-versus-ability;
    that becomes the follow-up if the grid succeeds.
-8. **The military absence caps what any success can claim.** Military officers
+9. **The military absence caps what any success can claim.** Military officers
    are the paradigm of M1a-high and M1c-low — the drone profile in its purest
    institutional form — and O\*NET rates no military occupation, so they are
    structurally absent. A confirmed pattern cannot be said to hold "generally"
