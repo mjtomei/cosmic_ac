@@ -2243,6 +2243,54 @@ not a fourth operationalisation of the same kind.
     clusters away from the evasion signature — would turn that assumption into
     a measurement.
 
+**F. What the legislator panel enables beyond the register (Matthew).**
+
+Collecting covariates for this study produced something with uses well outside
+it: birth year, education, prior occupation, EGP class and Wikipedia prominence
+for roughly five thousand legislators across twenty-two chambers, joined to
+every word each of them spoke. The register was the reason to build it; it is
+not the only thing it can answer. Two families of question follow, and they
+differ in how novel they are likely to be.
+
+18. **Class dynamics against proxies for power.** Whether the class structure
+    visible in speech also appears in outcomes: which members' bills pass, who
+    sits on the prestigious committees (public accounts, finance, rules), who
+    is called and who speaks longest, who reaches the frontbench and how fast.
+    Most of these have literatures — legislative effectiveness, committee
+    assignment and floor-time allocation are all studied — so the contribution
+    here is coverage rather than method: the same class coding applied across
+    twenty-two chambers and four national systems, where the existing work is
+    usually one legislature at a time. The honest expectation is replication
+    with better external validity, plus whatever the cross-national contrast
+    turns up. Committee rosters and division records are the collection cost;
+    both are published, neither is in our corpus yet.
+
+19. **Speech classified by who it is addressed to — the dyadic turn.** The
+    more likely to be novel, precisely because of the effort. Every quality
+    measure in this study scores a speech in isolation. The interesting
+    question is relational: **does the quality and respect of a response depend
+    on the class of the member being responded to?** A DQI-style respect score
+    conditioned on the addressee's class, not just the speaker's, would measure
+    something the deliberation literature asserts but rarely observes — whether
+    the norm of reciprocal respect holds uniformly, or is extended more readily
+    to some members than others. The same design extends to gender, seniority,
+    party and prominence, and to the reverse direction: who gets interrupted,
+    who gets answered, whose questions draw substantive replies rather than
+    deflections.
+
+    What makes it costly is the addressee, not the scoring. Hansard identifies
+    the speaker reliably and the target only sometimes — questions-and-comments
+    periods, named interventions, "the member for X" forms. So the work is an
+    addressee-resolution pass before any grading can start, on a subset of
+    turns where the target is recoverable. That subset is smaller than the
+    corpus but not small, and it is the precondition for everything else in
+    this item.
+
+    Note this arm needs no AI-detection component at all. It uses the panel and
+    the grading apparatus this study built, to answer a question about
+    legislatures rather than about machines — which is a reason to treat it as
+    its own study rather than a further section here.
+
 ---
 
 ## Appendix A — Null results
