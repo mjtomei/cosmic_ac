@@ -1154,24 +1154,31 @@ revision's distinctive content (external service starving the register,
 command marking it). The component signs said the same: L arrived positive
 and D flat in the raw joint fit.
 
-**The registered display disagrees with the registered test — and the
-registration anticipated exactly this.** The argmax three-group means run
-**corporate −0.025 > front-line −0.045 > free −0.165**: the corporate
-ordering, before any split, and sharpened by the insulated/exposed split
-below. The registration pre-committed the resolution — *"if the continuous
-ordering and the binned shape disagree, the continuous result governs and
-the disagreement is reported"* — and this is that report. The disagreement
-has a geometry, not a mystery. A profile *slope* is a population-wide
-question: does register rise along this direction across everyone? The
-corporate direction's −L weight places the large, high-register,
-public-facing population at its **low** end — teachers and nurses steepen
-the front-line slope and flatten the corporate one without ever belonging to
-the corporate group. A *group* comparison asks only which kind of occupation
-sits highest, and there the corporate cell wins. Both are true of the same
-data: the corporate profile is a poor linear axis for the whole population,
-and the corporate-argmax cell is nonetheless the top group. The refutation
-above is the slope statement; the delta and the group form are where the
-corporate story lives.
+**The registered display disagrees with the registered test, and the
+disagreement is absolute-versus-relative, established by computing the
+registration's own gloss.** The argmax three-group means run **corporate
+−0.025 > front-line −0.045 > free −0.165** — the corporate ordering — while
+the slopes reverse it, and the registration pre-committed the slopes to
+govern with the disagreement reported. The first diagnosis considered
+(population weighting: the service population flattening the corporate
+axis) is **wrong**, and the test that killed it is the one the
+registration's gloss invites — it calls the slope ordering "the same claim
+as 'the peak is the corporate drone' without discretising anything," so the
+peak was computed directly: mean register at the top of each profile's own
+continuum, one member one vote, no grouping. Front-line's high end beats
+corporate's (top decile +0.095 vs −0.019, gap t −1.8; same at quintile),
+with **zero farmers involved** — corporate's top decile is high-discretion
+professionals (210 class I) and proprietors, mildly below average. So the
+individual-normalised peak reading agrees with the slopes, and the gloss's
+claimed equivalence fails in the other direction than suspected. What
+actually separates the display is algebra: the corporate-vs-front-line
+argmax boundary is the sign of (corporate − front-line score) = **(D − L)/2**
+— the display is a *relative* test of commanding-inwardness against
+service-outwardness within each member, not a test of absolute corporate
+position. Read that way, every result in the study says one thing: absolute
+corporate-ness does not mark the register; **inwardness relative to
+exposure does** — registered (the delta, t 3.9 under all covariates),
+grouped (t 2.1), and inside class rungs (t 4.0).
 
 **But the delta won, and it is the study's most covariate-robust
 occupational number.** Registered in words — insulated command tracks more
