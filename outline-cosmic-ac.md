@@ -1270,7 +1270,25 @@ actually being made worth reporting — which is one more reason the paper's
 constructive program and this section are one argument, not two.
 
 **V.3b The trustworthy firm — deploying preference-knowing intelligence without
-eroding freedom (Matthew, 2026-07-30).** This is the constructive answer to the
+eroding freedom (Matthew, 2026-07-30).** **Cross-project join (2026-08-19): the pm
+user-model program is close to an engineering plan for this firm's product.**
+Matthew's parallel line (`~/claude-work/project-manager/pm` — litreview +
+extension + plan-user-model-training, its own adversarially-reviewed corpus,
+now seeded into `reading/user-modeling/`) states V.3b's internality as an
+allocation mechanism: the model serves the user's *real* demand over the
+*performed* and *self-perceived* channels, and only exogenous outcome-grounding
+distinguishes them — the balance-sheet coupling requirement in training-loop
+form. Its constructive plan (continuous per-user training from discarded
+attention/affect signal; graduated emission control) is the mechanism behind
+V.3a(e)'s "legible at any competence level," and its bootstrap condition —
+useful data requires good-faith-as-equals collaboration — couples the two
+directions of the respect relation this section's thread has been assembling:
+Kim et al. (human→model: permitting self-attribution preserves values) and the
+user-model payoff (model→human: modeling the human's finitude makes
+intelligence legible). Respect, in both directions, is an accurate model of
+the other party held and acted on — and each direction is the other's
+training precondition. Cite the pm documents as Matthew's work-in-progress,
+not as published anchors. This is the constructive answer to the
 axiological/paternalism problem the whole Movement circles: suppose an
 intelligence knows a human's preferences — a *time series of utility functions*
 — uncertainly but better than the human knows them. The question is not whether
