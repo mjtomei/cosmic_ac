@@ -1128,6 +1128,21 @@ is not "sufficient **dissonance and conflict**" to generate it — which is the
 *coherence* work's suppression-of-idea-variance thesis stated independently by an
 economist, and useful precisely because it is not ours.
 
+**A second honest limit arrived 2026-08-19, and it is measured:** instructed
+adversarialism assumes the machine can actually *inhabit different viewpoints* —
+but Fu et al. (COLM 2026, arXiv:2604.20817) show different architectures trained
+differently converge on the same representations (mechanistic convergence, not
+anecdote), and the same group's diversity-bottleneck paper (arXiv:2605.11128)
+traces output collapse to miscalibration in the token distribution itself,
+across 14 models — "not merely a limitation of particular sampling heuristics."
+Together: N model-adversaries may be far fewer than N independent auditors, and
+the variance Loury's disputation requires cannot be assumed from instance count.
+This is simultaneously *support for the coherence thesis* and *an objection to
+our answer here* — carry both; the design consequence is that adversarial
+review must be engineered for diversity (different bases, different framings,
+different training lineages), not just multiplied. PDFs in
+`~/reading/model-behavior/`.
+
 **The honest limit is motive versus capability**, and it should be stated rather
 than finessed: Teles's adversary *wants* to find the error; a simulated adversary
 is instructed to. Whether instructed adversarialism is as searching as the
@@ -1708,7 +1723,14 @@ the corporate tulpa cannot is not a faithful introspective narrative but an
 **auditable record** — logged inputs, checkable intermediate claims, rerunnable
 reasoning — which is closer to what Hobbes's "evident inference" duty actually
 demands, and closer to what V.3a(d)'s citation-audit practice already is. If
-the paper adopts that refinement, say Caputo forced it.
+the paper adopts that refinement, say Caputo forced it. **Empirical anchor for
+both sides (added 2026-08-19):** Lindsey's concept-injection study (Anthropic,
+arXiv:2601.01828) finds models possess "functional introspective awareness"
+that is "highly unreliable and context-dependent" — the unreliability grounds
+Caputo's post-hoc-storytelling worry in measurement, while the method itself is
+the existence proof the refinement needs: a self-report *checked against
+measured internals* is audit at the activation level, exactly the auditable
+record rather than the trusted narrative. Cite it for both, never for one.
 
 **The bridge to the technical argument, assembled not claimed.** Teles's
 "Kludgeocracy in America" (*National Affairs* 17, Fall 2013) states our mechanism
