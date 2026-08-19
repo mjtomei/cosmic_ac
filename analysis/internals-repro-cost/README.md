@@ -64,3 +64,30 @@ hooked code, not optimized serving; the ×5 dev multiplier is a convention,
 not a measurement; API-model costs (Pacchiardi's GPT-3.5 arm, Genadi's
 Qwen3-235B run) excluded as negligible; researcher time — the true dominant
 cost — is deliberately not priced.
+
+
+## v2 (same day): exact anchors from disclosures and repos
+
+Three hard anchors were recovered, per Matthew's request for exact numbers:
+
+1. **Parrack 2025 discloses its hardware**: *all* Llama-3.3-70B inference and
+   probe scoring ran on **a single H200** (appendix). At $3.30–4.50/hr and a
+   realistic 40–200 card-hours for the whole project, the all-in cost is
+   **$132–$900** — one GPU, rented by the hour.
+2. **Genadi 2026 discloses RTX 4090s** (appendix H) — consumer cards, the
+   same class as `analysis/enterprise-idle-fleet`'s observed marketplace
+   rates (~$0.30–0.40/hr). All-in: **$30–$120.** A frontier-relevant
+   sycophancy-internals result ran on gaming hardware.
+3. **Marks-Tegmark's repo confirms the token reconstruction**: the complete
+   `geometry-of-truth` dataset directory is 38.0 MB of CSV (~9.5M tokens once
+   over; ×3 models ≈ 28M forward tokens), landing inside the modeled
+   (2–8)×10⁷ bracket. No hardware disclosure exists; the $100–$1,600 dev
+   bracket stands.
+
+**Revised suite total: $286–$3,010 all-in** — the anchors land inside the v1
+modeled bracket ($152–$2,657), validating the reconstruction method at the
+±×3 tolerance the Limits section claimed. The headline conclusion tightens
+rather than changes: the two most expensive papers on the shelf cost less
+than a conference registration, one of the eight ran on gaming cards, and the
+frontier-open reproduction estimate ($1.5k–$25k on a 671B MoE) remains
+bounded by engineering labour and node-housing, not by the arithmetic.

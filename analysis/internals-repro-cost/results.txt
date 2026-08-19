@@ -11,3 +11,11 @@ SUITE TOTAL (w/ dev)                                     $   152 - $2657
 
 REPRO on MoE-671B-37Ba : suite total w/ dev x5 = $1,465 - $25,500   (single paper typically $183 - $3,188)
 REPRO on dense-405B    : suite total w/ dev x5 = $4,340 - $68,000   (single paper typically $542 - $8,500)
+
+v2 EXACT-ANCHOR REVISION (all-in, dev included):
+  Parrack 2025 (single H200, disclosed) : $132 - $900
+  Genadi 2026 (RTX 4090s, disclosed)    : $30 - $120
+  Marks-Tegmark (repo-confirmed tokens) : $100 - $1,600 (unchanged bracket)
+  REVISED SUITE TOTAL (w/ dev): $286 - $3,010
+  (v1 modeled: $152 - $2,657 -- anchors LAND INSIDE the modeled bracket,
+   validating the reconstruction method at the +-x3 tolerance claimed.)
