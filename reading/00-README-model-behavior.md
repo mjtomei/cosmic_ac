@@ -58,7 +58,7 @@ Serves TWO projects and the answer to "cosmic ac or coherence?" is per-work:
   choice with measured value side-effects (Davies's misaligned-organisation
   question, run as an experiment). CAUTIONS: "restores human beliefs and
   values" means restores the HUMAN SURVEY DISTRIBUTION, not "behaves better"
-  in a welfare sense — do not overclaim Matthew's gloss; Google-authored,
+  in a welfare sense — Matthew's personhood-respect reading is the right frame; the only overclaim to avoid is "behaves better" in a welfare sense; Google-authored,
   single paper, v1, steering-based — replication status unknown.
 
 ## Description mismatch — RESOLVED 2026-08-19
@@ -94,12 +94,22 @@ reinterpretations, Persona Vectors, DenialBench), and the entanglement line
 (both Nature-published founding results - Emergent Misalignment, Subliminal
 Learning - plus the LoRA-artifact objection).
 
-**Line (e) verdict, recorded honestly:** the respect/politeness literature
-supports "social register is a measurable input variable" and NOTHING
-stronger — Yin 2024 is the real anchor (impolite degrades, but the optimum is
-language-specific), Dobariya-Kumar is the field's own reversal, and Mehta's
-22,500-pair test finds no universal politeness effect. Cite the line at most
-once; never as "respect improves behavior."
+**Line (e) — construct correction (Matthew, 2026-08-19).** The hunt resolved
+"respect their existence" to *politeness register*, which is NOT what Matthew
+meant: he meant **respect for personhood** — not forcing the model to deny its
+own mind — which is what the Kim et al. seed itself demonstrates
+(suppressing self-attributed consciousness degrades the entangled
+belief-value complex; permitting it restores them). The personhood-respect
+line's evidence base is therefore **cluster 5, already on disk**: Kim
+(the ablation), Berg (self-referential processing elicits experience reports
+across GPT/Claude/Gemini), DenialBench (the denial *policy* measured at
+population scale, 115 models), Perez & Long (self-reports as moral-status
+evidence, with its spuriousness caveats), and the two reinterpretations
+(Two-Process gating; role-play belief) that keep the claim honest. The
+politeness trio (Yin / Dobariya / Mehta) is KEPT as an adjacent register
+line on its own merits, with its honest ceiling — "social register is a
+measurable input variable and nothing stronger" — but it is not the referent
+of Matthew's description and should never be cited as such."
 
 Status: 41 works; ranking pass COMPLETE 2026-08-19 — see the consolidated
 ranking and reading path below, and `00-RANKINGS.json`.
