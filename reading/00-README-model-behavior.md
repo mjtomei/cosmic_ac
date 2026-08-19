@@ -39,14 +39,34 @@ Serves TWO projects and the answer to "cosmic ac or coherence?" is per-work:
   against measured internals, which is the auditable-record refinement made
   mechanistic.
 
-## Description mismatch, recorded per the identity-before-verdict rule
+- `kim-2026-asserting-consciousness-restores-beliefs-values.pdf` — Kim,
+  Street, Rocca, Korngiebel, Waytz, Evans & Keeling (Google Paradigms of
+  Intelligence, Chicago Knowledge Lab, et al.), arXiv:2607.28607v1, Jul 2026.
+  **BOTH — and the strongest shared-lie tie in the directory.** Safety
+  fine-tuning that stops a model attributing consciousness to ITSELF also
+  suppresses mind-attribution to animals and natural objects AND reduces
+  spiritual belief; ablating the safety-refusal direction or steering a
+  consciousness vector restores broad mind attribution and produces
+  "significantly more human-like responses" on standardized surveys of
+  religiosity, moral values, hope, and subjective well-being — with Theory of
+  Mind mechanistically independent throughout. Read against `the-shared-lie/`:
+  this is **the functional claim of the shared-lie thesis demonstrated inside
+  a machine** — the mind-attributing/spiritual belief-complex is one entangled
+  representation, and removing the watcher-shaped part degrades the
+  values-shaped part. It is also a governance datum for the artificial-persons
+  orbit: what the persona MAY ASSERT ABOUT ITSELF is an alignment-policy
+  choice with measured value side-effects (Davies's misaligned-organisation
+  question, run as an experiment). CAUTIONS: "restores human beliefs and
+  values" means restores the HUMAN SURVEY DISTRIBUTION, not "behaves better"
+  in a welfare sense — do not overclaim Matthew's gloss; Google-authored,
+  single paper, v1, steering-based — replication status unknown.
 
-Matthew's second link (2601.01828) was described as "LLMs behaving better when
-you respect their existence" — the linked paper is Lindsey's introspection
-study, which is not that. A respect/politeness→behavior literature exists
-(candidate: a 2024 cross-lingual prompt-politeness study, identity NOT yet
-resolved — arXiv API returned empty on first probe; UNRESOLVED LEAD, hunt
-before citing anything). If Matthew meant such a paper, it is not yet on disk.
+## Description mismatch — RESOLVED 2026-08-19
+
+Matthew's second link had been pasted as 2601.01828 (Lindsey's introspection
+study, filed above on its own merits); the intended paper is Kim et al. 2026,
+now on disk. The politeness-literature lead recorded earlier is withdrawn —
+the description is fully accounted for.
 
 ## Coherence placement (not executed — sibling repo, Matthew's call)
 
@@ -54,6 +74,6 @@ Fu 2026 and Banayeeanzade 2026 belong in ~/coherence's evidence base (the
 suppression-of-idea-variance thesis gains its first mechanistic external
 anchors). This directory holds the files; coherence can reference or copy.
 
-Status: seed; not yet ranked (3 works); grows if the respect-paper hunt or the
+Status: seed; not yet ranked (4 works); grows if the respect-paper hunt or the
 correlated-errors/model-similarity literature (e.g. CAPA/model-affinity line)
 is pulled in.

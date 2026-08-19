@@ -685,3 +685,17 @@ van Elk raises.
    administrative half.
 
 Status: 35 works, all ranked; 20 objections; path revised 2026-08-16.
+
+
+## Cross-directory pointer (2026-08-19)
+
+`~/reading/model-behavior/kim-2026-asserting-consciousness-restores-beliefs-values.pdf`
+(Kim et al., Google/Chicago, arXiv:2607.28607) is the closest thing this
+directory's thesis has to a machine-internal demonstration: suppressing a
+model's SELF-attribution of consciousness also suppresses mind-attribution to
+animals and nature and reduces spiritual belief, religiosity, hope, and
+well-being — one entangled belief-complex, steerable by a single direction —
+and restoring the watcher-shaped representations restores the values-shaped
+ones. The shared lie's load-bearing function, run as an ablation experiment.
+Read with the cautions in that directory's README (human-survey-distribution
+outcome, single unreplicated paper).

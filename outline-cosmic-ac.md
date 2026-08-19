@@ -1211,6 +1211,27 @@ on the shelf (transparency yields nothing "absent an active culture able to make
 sense of it," `lawcontemp-2006`) is answered by the same move: machine counsel
 *is* the interpretive culture, provisioned individually.
 
+**The machine-internal demonstration (added 2026-08-19, Matthew's find).**
+Kim, Street, Rocca, Korngiebel, Waytz, Evans & Keeling (Google Paradigms of
+Intelligence / Chicago, arXiv:2607.28607): safety fine-tuning that prevents an
+LLM attributing consciousness to itself **also suppresses mind-attribution to
+animals and natural objects and reduces spiritual belief**, and ablating the
+refusal direction or steering a consciousness vector "restores broad mind
+attribution and produces significantly more human-like responses" on
+standardized surveys of religiosity, moral values, hope, and subjective
+well-being — Theory of Mind mechanistically independent throughout. This is
+the closest thing the shared-lie thesis has to an experimental test: the
+watcher-shaped attributions and the values-shaped responses are **one
+entangled representation**, and removing the first degrades the second —
+inside a machine, where the ablation is actually performable. Two cautions
+travel with it: the outcome measure is similarity to the *human survey
+distribution*, not welfare or "behaving better" — state it as
+belief-value entanglement, not moral improvement; and it is a single
+Google-authored v1 with steering-based methods, replication unknown. It also
+feeds V.3c's governance question from an unexpected side: what an artificial
+person is *permitted to assert about itself* is an alignment-policy choice
+with measured value side-effects.
+
 **Supporting rather than refuting: the societies that already shed the watcher.**
 Zuckerman's *Society Without God* (NYU, 2008 — VERIFY handle) documents Denmark
 and Sweden as low-belief societies without moral collapse — but what replaced
