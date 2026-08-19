@@ -1414,6 +1414,18 @@ which is **excluded from means rather than scored as zero**. Folding it in
 would score "nothing to engage with" as worse than "engaged badly", and
 manufacture an engagement penalty wherever machine text is more monologic.
 
+That exclusion conditions on something the treatment moves, so the two claims
+are stated separately (review item Q1). **Applicability itself collapses at
+high screen scores**: respect_demands is applicable for 61.4% of segments
+scoring <10, 63.0% at 10–49, and **31.1%** at ≥50; respect_counterargs runs
+50.8% / 51.2% / **28.9%** (n = 498/297/45; `applicability_by_band.py`). So
+the engagement null below means *engages no worse when there is something to
+engage with*; separately, AI-flagged speech is about **half as likely to
+contain anything to engage with** — a real difference, not a null. Stage 6c
+locates its source: the collapse appears in raw text from weaker models and
+vanishes at the frontier, so in the wild it points at the tools actually in
+use rather than at machine text as such.
+
 Two pools were graded, 2026-08-10.
 
 The instrument was first checked for reproducibility on a different account
@@ -1447,6 +1459,17 @@ fixed.**
 finding. Holding genre fixed sends both to null, and counterargs flips sign.
 The genre-balanced pool existed to run exactly this test, and it answers
 negatively. **This supersedes "form up, deliberation down"** (Appendix B).
+
+**Length, stated as a channel rather than adjusted away (review item Q2).**
+Stage 2's AI/Mixed segments run about 29 words longer within chamber
+(t +5.4), and length predicts justification, so part of the form lift may
+travel through longer speech. It is reported, not partialled out: if the
+tool puts in more words and more complete inferences than the member would
+have, that is a quality increase, not a confound (Matthew, 2026-08-19) — and
+the strongest stage-2 dimension, respect_groups, has a *negative* length
+slope, so the lift is not length wearing a costume. A within-segment length
+control awaits segment identifiers in the stage-2 results file (the same
+schema gap that blocks speaker clustering; review items Q2/Q8/Q12).
 
 Three further observations, in descending order of how much they should
 change a reader's confidence:
@@ -1683,6 +1706,12 @@ set is not conditioned on failure. The complementary arm, graded ON the
 Pangram outcome (the successful reversals), is stage 5 below. Within-text pairing holds content, speaker and occasion fixed by
 construction, so these are the raw paired differences — the design's own
 estimand, needing no covariate. **Every dimension is null on both.**[^r49b]
+What the pairs can exclude is bounded and stated (review item Q3): at these
+ns the detectable effects are roughly ±0.12–0.26 per dimension for stage 3
+and larger for stage 4, so these nulls rule out *moderate* rewrite effects,
+not small ones — and none of the 28 paired cells reaches nominal
+significance, which under that many looks is itself the null behaving as a
+null should.
 
 | dimension | stage 3 (n=38) | stage 4 (n=25) |
 |---|---|---|
