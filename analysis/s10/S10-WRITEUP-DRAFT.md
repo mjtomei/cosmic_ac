@@ -1441,6 +1441,7 @@ sources, same answer.
 
 | dimension | stage 1, + genre & era FE | stage 2, + chamber FE |
 |---|---|---|
+| *segments (regressor)* | *840 (screen score, 0–100)* | *682 (Pangram verdict, binary)* |
 | justification | **+1.134** (t +4.1) ✱ | **+0.290** (t +4.4) ✱ |
 | common_good | **+0.583** (t +3.3) ✱ | **+0.229** (t +4.5) ✱ |
 | respect_groups | **+0.287** (t +2.0) ✱ | **+0.220** (t +6.1) ✱ |
