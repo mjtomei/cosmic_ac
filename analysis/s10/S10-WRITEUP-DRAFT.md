@@ -2581,7 +2581,17 @@ study has not already built.
     freedom. A behavior that spreads ambiently is governed at its source
     (training data, style guides, institutional environments); one that
     spreads person-to-person invites policing of persons. Knowing which is
-    which is itself the oversight product (see item 27).
+    which is itself the oversight product (see item 27). One note on the
+    word *policing* (Matthew, 2026-08-19): at the individual level, the
+    mechanism for imperceptible, minimal-control policing already exists —
+    **control over the LLM or otherwise computerized outputs the individual
+    consumes**. Person-targeted influence need not look like discipline; it
+    can be a quiet reweighting of each person's machine diet. That makes the
+    transmission question double as a map of the control surfaces: if the
+    register spreads through machine consumption, whoever controls the
+    models holds both the benign source-governance lever and the
+    per-individual steering one, and the difference between them is
+    consent and visibility, not capability.
 
 Collecting covariates for this study produced something with uses well outside
 it: birth year, education, prior occupation, EGP class and Wikipedia prominence
