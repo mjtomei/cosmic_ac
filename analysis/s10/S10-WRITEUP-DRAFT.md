@@ -2168,7 +2168,16 @@ so policing authorship does not protect quality, because the authorship
 detection would flag is not where the quality deficit is. That is the whole
 argument: **quality assessment is orthogonal to provenance, not a proxy for
 it.** Had DQI tracked authorship, it would merely be a worse detector; because
-it does not, it measures the thing anyone actually wanted to know. The paired
+it does not, it measures the thing anyone actually wanted to know. The
+reliability statistics cannot carry this claim by themselves — a consistently
+biased judge would also reproduce itself perfectly (review item Q5); what
+carries it is validity evidence: the judge reproduces the instrument authors'
+own published codings (Spearman 0.78–0.95, Appendix C.1), the one dimension
+where judge-suspicion moves the result is identified and quarantined rather
+than averaged in (respect_groups; Appendix D.1, §4.9), and across stages the
+judge's AI-guess and its quality scores move independently in both
+directions — higher form under suspicion in the wild pools, lower for weak
+models and higher for frontier ones in stage 6. The paired
 evasion arms add a separate, secondary reassurance for anyone worried about
 the arms race specifically: rewriting under evasion pressure did not move any
 of the seven dimensions across 63 within-text pairs, and neither did the 39
