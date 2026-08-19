@@ -1803,7 +1803,14 @@ against the human 1.39), while weak models collapse exactly as the wild
 AI-flagged text does. That leaves a live tension, recorded rather than
 resolved: wild flagged text shows the collapse (§Q1) while frontier raw text
 does not — weaker tools in actual use, instruction-mediated drafting
-differing from continuation, or selection. **Evidence is the dimension
+differing from continuation, or selection. **Respect-toward-groups has no raw-machine counterpart at any tier** —
+frontier arms tie the human 1.31 (fable +0.12, opus −0.12, n.s.) while every
+open-weight arm sits below — which cuts twice: against the judge-leakage
+reading of that dimension (the judge knows these arms are machine and still
+does not award it), and toward a deployment origin for the wild +0.220 lift —
+explicit group-praise is what members *ask* a drafting tool for, not what the
+tool volunteers under bare continuation. Both cuts support carrying that
+conjunct on stage 2. **Evidence is the dimension
 humans keep**: every machine arm sits below the human 2.07 on checkable
 specifics (opus-5 1.62) — formally competent, experientially hollow survives
 in the evidence channel only. **Post-training creates form** within a fixed
