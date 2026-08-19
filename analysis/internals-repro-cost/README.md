@@ -126,3 +126,24 @@ the Jacobian-lens runs) gains a frontier arm at marginal cost. Note the tie
 to S16/S18: these are precisely the burst, embarrassingly-schedulable jobs
 the idle-fleet/negotiated-cession world prices — the reproduction agenda is
 itself a workload profile for the paper's own economics.
+
+
+## v3 correction: rebuild, not reuse
+
+The prior SGLang/R1 white-box work was done inside a company — the artifact
+is enclosed IP and will not be reused. What carries over is the experience:
+where the hooks go, what MLA and MoE routing do to activation capture, what
+the data pipeline needs. So the true cost structure for the menu above is:
+**one-time clean rebuild of the instrumented serving layer (days-to-weeks of
+skilled time, de-risked by experience) + node-hours per experiment** — the
+rebuild amortizes across all four menu items and the pm J-lens frontier arm.
+
+Two things follow. First, the rebuild is itself the field's named gap: no
+public stack serves frontier MoEs white-box, which is why the literature
+stops at 70B — an open instrumented-SGLang would be citable infrastructure,
+not just a lab tool. Second, the situation is the paper's diagnosis applied
+to itself: the capability already exists, enclosed where it optimizes one
+firm's product; re-supplying it publicly is precisely the under-provided
+continuous-optimization good the paper is about. If the rebuild happens,
+building it open is the cure enacted, and the paper can say so in first
+person.
