@@ -1481,24 +1481,26 @@ schema gap that blocks speaker clustering; review items Q2/Q8/Q12).
 Three further observations, in descending order of how much they should
 change a reader's confidence:
 
-1. **The original run already contradicted itself on this dimension.** Its two
-   group-pairs disagreed in sign on respect_demands: candidate-AI minus
-   candidate-human = **−0.356**, but uniform-sample AI minus human =
-   **+0.650**. The engagement claim rested on the first; the second, drawn
-   without screen selection, pointed the other way. The genre control explains
-   why.
-2. **Justification is a suppression effect, not a new result.** It is null
+1. **Justification is a suppression effect, not a new result.** It is null
    uncontrolled (t −0.2) and strongly positive within genre (t +4.1), because
    machine drafting concentrates in SO31 and **SO31 has the lowest
    justification of any genre** (1.14, against 2.01 for government business).
    Pooling across genres hides an effect that is plainly there inside each.
-3. **The two independent AI-guesses correlate** (screen vs grading judge,
+2. **The two independent AI-guesses correlate** (screen vs grading judge,
    r = +0.758) — a shared style signal across two different models, which is a
    caveat on reading either judge's `ai_guess` as ground truth, not on the DQI
    scores. Its bearing on the quality claim is tested in Appendix D and does
    not overturn the external-label result; the genre/era fixed effects in the
    table above control confounds between cells, which is a separate matter from
    leakage within a text.
+3. **The original run's two group-pairs also disagreed in sign on
+   respect_demands** — candidate-AI minus candidate-human **−0.356** (Welch
+   t −1.47, n = 20 vs 32), uniform-sample AI minus human **+0.650**, resting
+   on **5** applicable AI segments. Both are noise-sized samples, and two
+   noisy nulls disagreeing in sign is the expected outcome, not independent
+   evidence of instrument failure (review item Q6): the retirement of
+   "deliberation down" is carried by the genre control above, and this is
+   listed only as consistent texture.
 
 **Bypass study.** Prevalence counts machine text a detector can see. If a
 member can defeat the detector cheaply, 9.0% is a floor and detection-based
