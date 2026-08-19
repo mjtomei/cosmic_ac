@@ -1,0 +1,45 @@
+arm means (per-text, two-pass mean):
+ arm                justifica common_go respect_g respect_d respect_c construct  evidence  ai_guess
+ human                   2.08      1.51      1.31      1.26      1.39      0.91      2.07      19.0
+ claude_opus5            2.61      1.38      1.23      1.48      1.96      1.18      1.62      37.8
+ claude_fable5           2.61      1.58      1.47      1.15      1.73      1.17      1.42      44.2
+ claude_sonnet5          2.05      1.55      1.42      1.32      1.83      1.06      1.06      57.1
+ claude_opus41           2.76      1.41      1.04      1.50      2.08      1.54      1.46      36.4
+ claude_opus4            2.57      1.46      1.39      1.70      2.17      1.46      1.24      37.1
+ claude_sonnet45         1.37      1.33      1.13      1.12      1.69      0.87      0.70      74.5
+ claude_haiku_old        0.87      1.28      1.26      2.00      2.07      0.46      0.41      88.7
+ mistral_instruct        1.73      1.42      1.07      1.28      1.58      0.87      1.85      55.5
+ qwen3_instruct          1.23      1.21      1.02      1.62      1.78      0.61      1.18      83.5
+ mistral_base            1.39      1.27      1.11      1.30      1.71      0.57      1.82      55.2
+
+PRIMARY — instruct minus human, paired across prompts:
+ claude_opus5        justificatio +0.53 (t +4.5)  common_good -0.23 (t -2.0)  respect_grou -0.12 (t -1.1)
+ claude_fable5       justificatio +0.53 (t +4.3)  common_good -0.03 (t -0.3)  respect_grou +0.12 (t +1.2)
+ claude_sonnet5      justificatio -0.03 (t -0.2)  common_good -0.06 (t -0.5)  respect_grou +0.08 (t +0.8)
+ claude_opus41       justificatio +0.67 (t +4.3)  common_good -0.17 (t -1.2)  respect_grou -0.24 (t -2.3)
+ claude_opus4        justificatio +0.48 (t +2.9)  common_good -0.13 (t -0.8)  respect_grou +0.11 (t +0.9)
+ claude_sonnet45     justificatio -0.72 (t -4.5)  common_good -0.26 (t -1.6)  respect_grou -0.15 (t -1.7)
+ claude_haiku_old    justificatio -1.22 (t -4.6)  common_good -0.30 (t -1.9)  respect_grou -0.02 (t -0.2)
+ mistral_instruct    justificatio -0.34 (t -3.2)  common_good -0.09 (t -1.2)  respect_grou -0.24 (t -4.3)
+ qwen3_instruct      justificatio -0.84 (t -7.7)  common_good -0.30 (t -3.1)  respect_grou -0.29 (t -5.0)
+ mistral_base        justificatio -0.68 (t -6.6)  common_good -0.24 (t -2.9)  respect_grou -0.20 (t -3.2)
+
+ applicability, P(sentinel applicable), arm vs human:
+ respect_demands        human 0.66  claude 0.65  claude 0.56  claude 0.55  claude 0.63  claude 0.63  claude 0.57  claude 0.17  mistral_i 0.59  qwen3_i 0.34  mistral_b 0.54 
+ respect_counterargs    human 0.53  claude 0.67  claude 0.58  claude 0.61  claude 0.80  claude 0.76  claude 0.52  claude 0.26  mistral_i 0.42  qwen3_i 0.33  mistral_b 0.44 
+
+SECONDARY — instruct minus base (mistral), paired:
+  justificatio +0.34 (t +3.5) common_good +0.15 (t +1.8) respect_grou -0.04 (t -0.8) evidence +0.03 (t +0.2)
+
+ ai_guess by arm (did the blind judge smell the machine):
+   human               19.0
+   claude_opus5        37.8
+   claude_fable5       44.2
+   claude_sonnet5      57.1
+   claude_opus41       36.4
+   claude_opus4        37.1
+   claude_sonnet45     74.5
+   claude_haiku_old    88.7
+   mistral_instruct    55.5
+   qwen3_instruct      83.5
+   mistral_base        55.2

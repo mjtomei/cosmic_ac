@@ -25,11 +25,16 @@ DIMS = ["justification", "common_good", "respect_groups", "respect_demands",
         "respect_counterargs", "constructive", "evidence"]
 SENT = {"respect_demands", "respect_counterargs"}
 FORM = ["justification", "common_good", "respect_groups"]
-ARMS = ["human", "mistral_instruct", "qwen3_instruct", "mistral_base"]
+ARMS = ["human", "claude_opus5", "claude_fable5", "claude_sonnet5",
+        "claude_opus41", "claude_opus4", "claude_sonnet45", "claude_haiku_old",
+        "mistral_instruct", "qwen3_instruct", "mistral_base"]
 
 
 def main():
     rows = json.load(open(os.path.join(HERE, "results_stage6.json")))
+    p6c = os.path.join(HERE, "results_stage6c.json")
+    if os.path.exists(p6c):                     # the Claude arms, graded 2026-08-19
+        rows += json.load(open(p6c))
     key = json.load(open(os.path.join(HERE, "key6.json")))
     per = defaultdict(list)
     for r in rows:
@@ -74,7 +79,7 @@ def main():
         print(f" {a:<18s}{cells}{ag:>10.1f}")
 
     print("\nPRIMARY — instruct minus human, paired across prompts:")
-    for a in ("mistral_instruct", "qwen3_instruct"):
+    for a in [a for a in ARMS if a != "human" and byarm.get(a)]:
         line = f" {a:<18s}"
         for d in FORM:
             m, t, n = paired(a, "human", d)
