@@ -1154,6 +1154,25 @@ revision's distinctive content (external service starving the register,
 command marking it). The component signs said the same: L arrived positive
 and D flat in the raw joint fit.
 
+**The registered display disagrees with the registered test — and the
+registration anticipated exactly this.** The argmax three-group means run
+**corporate −0.025 > front-line −0.045 > free −0.165**: the corporate
+ordering, before any split, and sharpened by the insulated/exposed split
+below. The registration pre-committed the resolution — *"if the continuous
+ordering and the binned shape disagree, the continuous result governs and
+the disagreement is reported"* — and this is that report. The disagreement
+has a geometry, not a mystery. A profile *slope* is a population-wide
+question: does register rise along this direction across everyone? The
+corporate direction's −L weight places the large, high-register,
+public-facing population at its **low** end — teachers and nurses steepen
+the front-line slope and flatten the corporate one without ever belonging to
+the corporate group. A *group* comparison asks only which kind of occupation
+sits highest, and there the corporate cell wins. Both are true of the same
+data: the corporate profile is a poor linear axis for the whole population,
+and the corporate-argmax cell is nonetheless the top group. The refutation
+above is the slope statement; the delta and the group form are where the
+corporate story lives.
+
 **But the delta won, and it is the study's most covariate-robust
 occupational number.** Registered in words — insulated command tracks more
 register than exposed command — and observed +0.049 (t 3.3) raw, **+0.067
