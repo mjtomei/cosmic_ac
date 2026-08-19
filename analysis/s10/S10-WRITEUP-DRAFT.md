@@ -1732,25 +1732,49 @@ member's actual continuation and three cached model continuations
 grading — blind, length-matched within prompt, frozen v2b rubric, two
 passes, judge pinned to the stage-1/2 model.[^r49s6]
 
-**Raw machine text loses to its human twin on every form dimension** —
-justification −0.34 (t −3.2) for mistral-instruct and −0.84 (t −7.7) for
-qwen3-instruct, respect toward groups −0.24 (t −4.3) and −0.29 (t −5.0). So
-the form lift in the wild is **not a property of machine text**; it is
-produced in the human-machine pipeline — selection of occasions, the
-instruction, the editing, or the vetting. Two further facts sharpen the
-picture. **The applicability collapse is intrinsic**: raw machine
-continuations carry less to engage with (sentinel applicability 0.34–0.59
-against the human 0.53–0.66), with no human anywhere in the loop — the
-thinness travels with the text. And **post-training creates form**:
-instruct-minus-base justification is +0.34 (t +3.5) within the same model,
-the quality-side echo of §4.7's register-is-a-post-training-artifact. One
-channel is named rather than excluded: the blind judge's own ai_guess
-separates the arms (human 19, machine 55–83), so judge suspicion could
-depress machine scores — though the same judge design gave *higher* form
-scores to suspected text in stages 1–2, so suspicion does not mechanically
-push down. And bare continuations are not deployed drafting — no
-instruction, no member editing — which is exactly the gap the comparison is
-designed to measure.
+**The answer is a capability ladder, not a constant** — established in two
+rounds the same day. The open-weight arms lose to their human twins on every
+form dimension (mistral-instruct justification −0.34, t −3.2;
+qwen3-instruct −0.84, t −7.7), which alone would say the wild form lift is
+made in the human-machine pipeline. But the Claude arms — the study's
+existing audited generation caches (the §4.6a family-signature traces),
+graded blind under the identical flow — invert that at the frontier:
+
+| arm | justification vs human | sentinel applicability |
+|---|---|---|
+| claude-opus-4.1 | **+0.67 (t +4.3)** | 0.63 / 0.80 |
+| claude-opus-5 | **+0.53 (t +4.5)** | 0.65 / 0.67 |
+| claude-fable-5 | **+0.53 (t +4.3)** | 0.56 / 0.58 |
+| claude-opus-4 | **+0.48 (t +2.9)** | 0.63 / 0.76 |
+| claude-sonnet-5 | −0.03 (t −0.2) | 0.55 / 0.61 |
+| mistral-instruct | −0.34 (t −3.2) | 0.59 / 0.42 |
+| claude-sonnet-4.5 | −0.72 (t −4.5) | 0.57 / 0.52 |
+| qwen3-instruct | −0.84 (t −7.7) | 0.34 / 0.33 |
+| old haiku | −1.22 (t −4.6) | 0.17 / 0.26 |
+| *(human twins)* | — | 0.66 / 0.53 |
+
+**Frontier models produce better-formed text than the member's own next
+words, unreviewed** — so the wild form lift does not require human vetting;
+frontier tooling alone can produce it. **The applicability collapse is a
+capability artifact, not a machine constant**: opus-class arms carry as much
+to engage with as the humans (and engage counterarguments *more*, 1.96–2.17
+against the human 1.39), while weak models collapse exactly as the wild
+AI-flagged text does. That leaves a live tension, recorded rather than
+resolved: wild flagged text shows the collapse (§Q1) while frontier raw text
+does not — weaker tools in actual use, instruction-mediated drafting
+differing from continuation, or selection. **Evidence is the dimension
+humans keep**: every machine arm sits below the human 2.07 on checkable
+specifics (opus-5 1.62) — formally competent, experientially hollow survives
+in the evidence channel only. **Post-training creates form** within a fixed
+model (mistral instruct-minus-base +0.34, t +3.5), the quality-side echo of
+§4.7. Two channels named rather than excluded: the judge is Opus grading its
+own family blind — against pure favoritism, sonnet-5 ties human and
+sonnet-4.5 loses badly, so the judge tracks capability tier rather than
+vendor, but a cross-family judge replication is the clean fix and is owed;
+and bare continuations are not deployed drafting — no instruction, no member
+editing — which is exactly the gap the comparison measures. The Claude arms
+are instruction-mediated continuations (chat models) where the open-weight
+arms are raw completions; that protocol difference is recorded.
 
 [^r49s6]: `quality_expansion/pool6.json` (blind), `key6.json` (never left
     the grading machine's counterpart — the key stayed local),
