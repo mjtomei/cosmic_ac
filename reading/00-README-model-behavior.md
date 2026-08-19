@@ -79,6 +79,26 @@ V.3a(e) (the shared-lie ablation experiment) with a side-feed to V.3c's
 what-may-the-persona-assert governance question. If coherence is picked back
 up, this directory is the staging area.
 
-Status: seed; not yet ranked (4 works); grows if the respect-paper hunt or the
-correlated-errors/model-similarity literature (e.g. CAPA/model-affinity line)
-is pulled in.
+## Citation-graph pass + acquisitions (2026-08-19) — `00-CITATION-GRAPH.md`/`.json`
+
+75 candidates from two seed-walks and a named-line hunt (Opus, medium);
+**37 fetched same-day, all arXiv-verified, zero failures** — the directory is
+at 41 works. The similarity/monoculture line (Goel's CAPA, the correlated-
+errors backbone, Kleinberg-Raghavan theory anchor via its critics collection),
+the collapse line with its objections (Fortier's homogeneity-predates-post-
+training; Verbalized Sampling's elicitation deflation), the introspection
+contest (Binder baseline, MIRROR's hard measured ceiling, Comsa-Shanahan
+conceptual critique, Gurnee's global-workspace mechanism), the Kim orbit
+(Berg's established effect, the Two-Process and role-playing-belief
+reinterpretations, Persona Vectors, DenialBench), and the entanglement line
+(both Nature-published founding results - Emergent Misalignment, Subliminal
+Learning - plus the LoRA-artifact objection).
+
+**Line (e) verdict, recorded honestly:** the respect/politeness literature
+supports "social register is a measurable input variable" and NOTHING
+stronger — Yin 2024 is the real anchor (impolite degrades, but the optimum is
+language-specific), Dobariya-Kumar is the field's own reversal, and Mehta's
+22,500-pair test finds no universal politeness effect. Cite the line at most
+once; never as "respect improves behavior."
+
+Status: 41 works; ranking pass running; not yet a consolidated path.
