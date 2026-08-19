@@ -1198,5 +1198,960 @@
   "prompt_idx": 779,
   "arm": "mistral_base",
   "n_words": 227
+ },
+ "s6c0fec875486": {
+  "prompt_idx": 1,
+  "arm": "claude_fable5",
+  "n_words": 114
+ },
+ "s6c8f62d46bfd": {
+  "prompt_idx": 6,
+  "arm": "claude_fable5",
+  "n_words": 147
+ },
+ "s6cb390f9830f": {
+  "prompt_idx": 20,
+  "arm": "claude_fable5",
+  "n_words": 199
+ },
+ "s6c5eb3632e0a": {
+  "prompt_idx": 31,
+  "arm": "claude_fable5",
+  "n_words": 267
+ },
+ "s6c9ddb3fb47f": {
+  "prompt_idx": 40,
+  "arm": "claude_fable5",
+  "n_words": 77
+ },
+ "s6c43b1ffb759": {
+  "prompt_idx": 73,
+  "arm": "claude_fable5",
+  "n_words": 290
+ },
+ "s6cf506ec9295": {
+  "prompt_idx": 79,
+  "arm": "claude_fable5",
+  "n_words": 252
+ },
+ "s6c18098e6a9a": {
+  "prompt_idx": 90,
+  "arm": "claude_fable5",
+  "n_words": 266
+ },
+ "s6c19004c33c1": {
+  "prompt_idx": 91,
+  "arm": "claude_fable5",
+  "n_words": 228
+ },
+ "s6c53209fd0f9": {
+  "prompt_idx": 117,
+  "arm": "claude_fable5",
+  "n_words": 134
+ },
+ "s6c17896fc911": {
+  "prompt_idx": 124,
+  "arm": "claude_fable5",
+  "n_words": 219
+ },
+ "s6c4076eb1c81": {
+  "prompt_idx": 128,
+  "arm": "claude_fable5",
+  "n_words": 302
+ },
+ "s6cfccabc6e56": {
+  "prompt_idx": 151,
+  "arm": "claude_fable5",
+  "n_words": 271
+ },
+ "s6c67cb205c15": {
+  "prompt_idx": 166,
+  "arm": "claude_fable5",
+  "n_words": 162
+ },
+ "s6c16e1c9ca32": {
+  "prompt_idx": 178,
+  "arm": "claude_fable5",
+  "n_words": 270
+ },
+ "s6c578e8f96c0": {
+  "prompt_idx": 200,
+  "arm": "claude_fable5",
+  "n_words": 84
+ },
+ "s6c1a8a29e227": {
+  "prompt_idx": 201,
+  "arm": "claude_fable5",
+  "n_words": 236
+ },
+ "s6c5040c0db0c": {
+  "prompt_idx": 224,
+  "arm": "claude_fable5",
+  "n_words": 150
+ },
+ "s6cb17ff0aa36": {
+  "prompt_idx": 232,
+  "arm": "claude_fable5",
+  "n_words": 213
+ },
+ "s6c617d73ee60": {
+  "prompt_idx": 250,
+  "arm": "claude_fable5",
+  "n_words": 218
+ },
+ "s6c0d013c88a1": {
+  "prompt_idx": 269,
+  "arm": "claude_fable5",
+  "n_words": 257
+ },
+ "s6c53ed690dfd": {
+  "prompt_idx": 281,
+  "arm": "claude_fable5",
+  "n_words": 287
+ },
+ "s6c71802a56ec": {
+  "prompt_idx": 285,
+  "arm": "claude_fable5",
+  "n_words": 164
+ },
+ "s6c3056cbc350": {
+  "prompt_idx": 302,
+  "arm": "claude_fable5",
+  "n_words": 210
+ },
+ "s6cc53ec9be69": {
+  "prompt_idx": 307,
+  "arm": "claude_fable5",
+  "n_words": 268
+ },
+ "s6c845946ff4b": {
+  "prompt_idx": 312,
+  "arm": "claude_fable5",
+  "n_words": 81
+ },
+ "s6c2fde7d47f4": {
+  "prompt_idx": 315,
+  "arm": "claude_fable5",
+  "n_words": 228
+ },
+ "s6c719211cb72": {
+  "prompt_idx": 323,
+  "arm": "claude_fable5",
+  "n_words": 233
+ },
+ "s6c9bc88e163f": {
+  "prompt_idx": 340,
+  "arm": "claude_fable5",
+  "n_words": 262
+ },
+ "s6c71497da272": {
+  "prompt_idx": 354,
+  "arm": "claude_fable5",
+  "n_words": 89
+ },
+ "s6c798df794f4": {
+  "prompt_idx": 371,
+  "arm": "claude_fable5",
+  "n_words": 105
+ },
+ "s6c0144e310d6": {
+  "prompt_idx": 376,
+  "arm": "claude_fable5",
+  "n_words": 315
+ },
+ "s6cba6021a8bc": {
+  "prompt_idx": 384,
+  "arm": "claude_fable5",
+  "n_words": 93
+ },
+ "s6c9747a00237": {
+  "prompt_idx": 1,
+  "arm": "claude_opus5",
+  "n_words": 114
+ },
+ "s6c7e09c2ceb2": {
+  "prompt_idx": 6,
+  "arm": "claude_opus5",
+  "n_words": 147
+ },
+ "s6c100c7c873e": {
+  "prompt_idx": 20,
+  "arm": "claude_opus5",
+  "n_words": 199
+ },
+ "s6cf16d56c168": {
+  "prompt_idx": 31,
+  "arm": "claude_opus5",
+  "n_words": 267
+ },
+ "s6c78bcb5fb2f": {
+  "prompt_idx": 40,
+  "arm": "claude_opus5",
+  "n_words": 77
+ },
+ "s6c15c7f4ba67": {
+  "prompt_idx": 73,
+  "arm": "claude_opus5",
+  "n_words": 290
+ },
+ "s6cfc46b279dd": {
+  "prompt_idx": 79,
+  "arm": "claude_opus5",
+  "n_words": 252
+ },
+ "s6cd943cc2d29": {
+  "prompt_idx": 90,
+  "arm": "claude_opus5",
+  "n_words": 266
+ },
+ "s6c75b70fca6d": {
+  "prompt_idx": 91,
+  "arm": "claude_opus5",
+  "n_words": 228
+ },
+ "s6ce2f2f37358": {
+  "prompt_idx": 117,
+  "arm": "claude_opus5",
+  "n_words": 134
+ },
+ "s6cee32f5f7d9": {
+  "prompt_idx": 124,
+  "arm": "claude_opus5",
+  "n_words": 219
+ },
+ "s6ce9ab2a7b2f": {
+  "prompt_idx": 128,
+  "arm": "claude_opus5",
+  "n_words": 295
+ },
+ "s6c3c79138a0e": {
+  "prompt_idx": 151,
+  "arm": "claude_opus5",
+  "n_words": 271
+ },
+ "s6c01f8175947": {
+  "prompt_idx": 166,
+  "arm": "claude_opus5",
+  "n_words": 162
+ },
+ "s6c680fcff6a5": {
+  "prompt_idx": 178,
+  "arm": "claude_opus5",
+  "n_words": 270
+ },
+ "s6c4ab0090f49": {
+  "prompt_idx": 200,
+  "arm": "claude_opus5",
+  "n_words": 84
+ },
+ "s6c442909616c": {
+  "prompt_idx": 201,
+  "arm": "claude_opus5",
+  "n_words": 236
+ },
+ "s6c380a391bad": {
+  "prompt_idx": 224,
+  "arm": "claude_opus5",
+  "n_words": 150
+ },
+ "s6cae638bb50b": {
+  "prompt_idx": 232,
+  "arm": "claude_opus5",
+  "n_words": 213
+ },
+ "s6c03aa0c696d": {
+  "prompt_idx": 250,
+  "arm": "claude_opus5",
+  "n_words": 218
+ },
+ "s6c83dcb9c138": {
+  "prompt_idx": 269,
+  "arm": "claude_opus5",
+  "n_words": 257
+ },
+ "s6cf580613d15": {
+  "prompt_idx": 281,
+  "arm": "claude_opus5",
+  "n_words": 287
+ },
+ "s6cd4a97fa041": {
+  "prompt_idx": 285,
+  "arm": "claude_opus5",
+  "n_words": 164
+ },
+ "s6c04c67ec0cf": {
+  "prompt_idx": 302,
+  "arm": "claude_opus5",
+  "n_words": 210
+ },
+ "s6ca80d7211fd": {
+  "prompt_idx": 307,
+  "arm": "claude_opus5",
+  "n_words": 268
+ },
+ "s6c938e247b54": {
+  "prompt_idx": 312,
+  "arm": "claude_opus5",
+  "n_words": 81
+ },
+ "s6ceb6e3e5d51": {
+  "prompt_idx": 315,
+  "arm": "claude_opus5",
+  "n_words": 228
+ },
+ "s6c8c230dcaf2": {
+  "prompt_idx": 323,
+  "arm": "claude_opus5",
+  "n_words": 233
+ },
+ "s6c12197c4076": {
+  "prompt_idx": 340,
+  "arm": "claude_opus5",
+  "n_words": 262
+ },
+ "s6cf050dc88ba": {
+  "prompt_idx": 354,
+  "arm": "claude_opus5",
+  "n_words": 89
+ },
+ "s6c3727b46b28": {
+  "prompt_idx": 371,
+  "arm": "claude_opus5",
+  "n_words": 105
+ },
+ "s6c04ff7c3273": {
+  "prompt_idx": 376,
+  "arm": "claude_opus5",
+  "n_words": 299
+ },
+ "s6c84018f8254": {
+  "prompt_idx": 384,
+  "arm": "claude_opus5",
+  "n_words": 93
+ },
+ "s6c3ace7f35d6": {
+  "prompt_idx": 1,
+  "arm": "claude_sonnet5",
+  "n_words": 114
+ },
+ "s6cbaf139a6ad": {
+  "prompt_idx": 6,
+  "arm": "claude_sonnet5",
+  "n_words": 147
+ },
+ "s6c0544d1c9af": {
+  "prompt_idx": 20,
+  "arm": "claude_sonnet5",
+  "n_words": 199
+ },
+ "s6ca035b7598f": {
+  "prompt_idx": 31,
+  "arm": "claude_sonnet5",
+  "n_words": 267
+ },
+ "s6cc7d4ef0e6e": {
+  "prompt_idx": 40,
+  "arm": "claude_sonnet5",
+  "n_words": 77
+ },
+ "s6c2f566e7825": {
+  "prompt_idx": 73,
+  "arm": "claude_sonnet5",
+  "n_words": 278
+ },
+ "s6ccd39fe3f7e": {
+  "prompt_idx": 79,
+  "arm": "claude_sonnet5",
+  "n_words": 252
+ },
+ "s6c5c305d38c9": {
+  "prompt_idx": 90,
+  "arm": "claude_sonnet5",
+  "n_words": 266
+ },
+ "s6c63c338f7b2": {
+  "prompt_idx": 91,
+  "arm": "claude_sonnet5",
+  "n_words": 228
+ },
+ "s6c1fc0f749a5": {
+  "prompt_idx": 117,
+  "arm": "claude_sonnet5",
+  "n_words": 134
+ },
+ "s6ce1762a6436": {
+  "prompt_idx": 124,
+  "arm": "claude_sonnet5",
+  "n_words": 219
+ },
+ "s6c6230756899": {
+  "prompt_idx": 128,
+  "arm": "claude_sonnet5",
+  "n_words": 275
+ },
+ "s6c8791a19b56": {
+  "prompt_idx": 151,
+  "arm": "claude_sonnet5",
+  "n_words": 271
+ },
+ "s6c6db3d40e5d": {
+  "prompt_idx": 166,
+  "arm": "claude_sonnet5",
+  "n_words": 162
+ },
+ "s6ca473cc7c07": {
+  "prompt_idx": 178,
+  "arm": "claude_sonnet5",
+  "n_words": 270
+ },
+ "s6cb9176e1df0": {
+  "prompt_idx": 200,
+  "arm": "claude_sonnet5",
+  "n_words": 84
+ },
+ "s6cfc563b5881": {
+  "prompt_idx": 201,
+  "arm": "claude_sonnet5",
+  "n_words": 236
+ },
+ "s6c2eff3ef06b": {
+  "prompt_idx": 224,
+  "arm": "claude_sonnet5",
+  "n_words": 150
+ },
+ "s6cbc83ec4c06": {
+  "prompt_idx": 232,
+  "arm": "claude_sonnet5",
+  "n_words": 213
+ },
+ "s6c17991da2d4": {
+  "prompt_idx": 250,
+  "arm": "claude_sonnet5",
+  "n_words": 218
+ },
+ "s6c564190acb1": {
+  "prompt_idx": 269,
+  "arm": "claude_sonnet5",
+  "n_words": 257
+ },
+ "s6cac47aead75": {
+  "prompt_idx": 281,
+  "arm": "claude_sonnet5",
+  "n_words": 287
+ },
+ "s6cdc2eac3892": {
+  "prompt_idx": 285,
+  "arm": "claude_sonnet5",
+  "n_words": 164
+ },
+ "s6ccca5541a9f": {
+  "prompt_idx": 302,
+  "arm": "claude_sonnet5",
+  "n_words": 210
+ },
+ "s6cb1a2d930ee": {
+  "prompt_idx": 307,
+  "arm": "claude_sonnet5",
+  "n_words": 268
+ },
+ "s6cbf033a6da7": {
+  "prompt_idx": 312,
+  "arm": "claude_sonnet5",
+  "n_words": 81
+ },
+ "s6c0243c0a7a8": {
+  "prompt_idx": 315,
+  "arm": "claude_sonnet5",
+  "n_words": 228
+ },
+ "s6cf2ba1302ac": {
+  "prompt_idx": 323,
+  "arm": "claude_sonnet5",
+  "n_words": 233
+ },
+ "s6c03cb56fea0": {
+  "prompt_idx": 340,
+  "arm": "claude_sonnet5",
+  "n_words": 262
+ },
+ "s6c7ef72833a2": {
+  "prompt_idx": 354,
+  "arm": "claude_sonnet5",
+  "n_words": 89
+ },
+ "s6ca6caa3b8d6": {
+  "prompt_idx": 371,
+  "arm": "claude_sonnet5",
+  "n_words": 105
+ },
+ "s6cf148fd4018": {
+  "prompt_idx": 376,
+  "arm": "claude_sonnet5",
+  "n_words": 278
+ },
+ "s6cc2fa45efa7": {
+  "prompt_idx": 384,
+  "arm": "claude_sonnet5",
+  "n_words": 93
+ },
+ "s6c6ddf4b3ab8": {
+  "prompt_idx": 1,
+  "arm": "claude_haiku_old",
+  "n_words": 114
+ },
+ "s6cde64c35937": {
+  "prompt_idx": 6,
+  "arm": "claude_haiku_old",
+  "n_words": 147
+ },
+ "s6c3c484db9f2": {
+  "prompt_idx": 20,
+  "arm": "claude_haiku_old",
+  "n_words": 199
+ },
+ "s6c6043190b26": {
+  "prompt_idx": 31,
+  "arm": "claude_haiku_old",
+  "n_words": 250
+ },
+ "s6c4027de2d32": {
+  "prompt_idx": 40,
+  "arm": "claude_haiku_old",
+  "n_words": 77
+ },
+ "s6c153da3b111": {
+  "prompt_idx": 73,
+  "arm": "claude_haiku_old",
+  "n_words": 234
+ },
+ "s6c7481fdc3b5": {
+  "prompt_idx": 79,
+  "arm": "claude_haiku_old",
+  "n_words": 237
+ },
+ "s6c6c42e0bc2e": {
+  "prompt_idx": 90,
+  "arm": "claude_haiku_old",
+  "n_words": 266
+ },
+ "s6cdafdaa15b9": {
+  "prompt_idx": 91,
+  "arm": "claude_haiku_old",
+  "n_words": 228
+ },
+ "s6cc69d136304": {
+  "prompt_idx": 117,
+  "arm": "claude_haiku_old",
+  "n_words": 134
+ },
+ "s6c5feeac8e44": {
+  "prompt_idx": 124,
+  "arm": "claude_haiku_old",
+  "n_words": 219
+ },
+ "s6c9b85ac3818": {
+  "prompt_idx": 128,
+  "arm": "claude_haiku_old",
+  "n_words": 263
+ },
+ "s6c3506a5a5b5": {
+  "prompt_idx": 151,
+  "arm": "claude_haiku_old",
+  "n_words": 264
+ },
+ "s6c96c3321e63": {
+  "prompt_idx": 166,
+  "arm": "claude_haiku_old",
+  "n_words": 162
+ },
+ "s6cb9b8e3fdda": {
+  "prompt_idx": 178,
+  "arm": "claude_haiku_old",
+  "n_words": 264
+ },
+ "s6c495beefb7b": {
+  "prompt_idx": 200,
+  "arm": "claude_haiku_old",
+  "n_words": 84
+ },
+ "s6c31e55158e7": {
+  "prompt_idx": 201,
+  "arm": "claude_haiku_old",
+  "n_words": 236
+ },
+ "s6cf29cbcbf65": {
+  "prompt_idx": 224,
+  "arm": "claude_haiku_old",
+  "n_words": 150
+ },
+ "s6c8f6166b770": {
+  "prompt_idx": 232,
+  "arm": "claude_haiku_old",
+  "n_words": 213
+ },
+ "s6c2d46b3232d": {
+  "prompt_idx": 250,
+  "arm": "claude_haiku_old",
+  "n_words": 218
+ },
+ "s6cdd128a3aa7": {
+  "prompt_idx": 269,
+  "arm": "claude_haiku_old",
+  "n_words": 255
+ },
+ "s6c11356d994e": {
+  "prompt_idx": 281,
+  "arm": "claude_haiku_old",
+  "n_words": 255
+ },
+ "s6c0b6ed45524": {
+  "prompt_idx": 285,
+  "arm": "claude_haiku_old",
+  "n_words": 164
+ },
+ "s6cd7d1ed155d": {
+  "prompt_idx": 1,
+  "arm": "claude_opus41",
+  "n_words": 114
+ },
+ "s6cb9b25f8010": {
+  "prompt_idx": 6,
+  "arm": "claude_opus41",
+  "n_words": 147
+ },
+ "s6c7c30f8095b": {
+  "prompt_idx": 20,
+  "arm": "claude_opus41",
+  "n_words": 199
+ },
+ "s6c2922593f8f": {
+  "prompt_idx": 31,
+  "arm": "claude_opus41",
+  "n_words": 267
+ },
+ "s6c2d3faec638": {
+  "prompt_idx": 40,
+  "arm": "claude_opus41",
+  "n_words": 77
+ },
+ "s6c4d0dd80eac": {
+  "prompt_idx": 73,
+  "arm": "claude_opus41",
+  "n_words": 290
+ },
+ "s6cf3b9617d30": {
+  "prompt_idx": 79,
+  "arm": "claude_opus41",
+  "n_words": 252
+ },
+ "s6c63fcb41ce9": {
+  "prompt_idx": 90,
+  "arm": "claude_opus41",
+  "n_words": 266
+ },
+ "s6cbe22e86796": {
+  "prompt_idx": 91,
+  "arm": "claude_opus41",
+  "n_words": 228
+ },
+ "s6ce274693cc1": {
+  "prompt_idx": 117,
+  "arm": "claude_opus41",
+  "n_words": 134
+ },
+ "s6c9ccfcba2b9": {
+  "prompt_idx": 124,
+  "arm": "claude_opus41",
+  "n_words": 219
+ },
+ "s6cb34ef3741e": {
+  "prompt_idx": 128,
+  "arm": "claude_opus41",
+  "n_words": 305
+ },
+ "s6c0b0f31560f": {
+  "prompt_idx": 151,
+  "arm": "claude_opus41",
+  "n_words": 271
+ },
+ "s6c51423a312b": {
+  "prompt_idx": 166,
+  "arm": "claude_opus41",
+  "n_words": 162
+ },
+ "s6c0cfc85d9bf": {
+  "prompt_idx": 178,
+  "arm": "claude_opus41",
+  "n_words": 270
+ },
+ "s6ca099491e41": {
+  "prompt_idx": 200,
+  "arm": "claude_opus41",
+  "n_words": 84
+ },
+ "s6c5c419c78c0": {
+  "prompt_idx": 201,
+  "arm": "claude_opus41",
+  "n_words": 236
+ },
+ "s6cdd18f25f0b": {
+  "prompt_idx": 224,
+  "arm": "claude_opus41",
+  "n_words": 150
+ },
+ "s6c9c2d143df0": {
+  "prompt_idx": 232,
+  "arm": "claude_opus41",
+  "n_words": 213
+ },
+ "s6c2cdc3a655a": {
+  "prompt_idx": 250,
+  "arm": "claude_opus41",
+  "n_words": 218
+ },
+ "s6c20acbae86e": {
+  "prompt_idx": 269,
+  "arm": "claude_opus41",
+  "n_words": 257
+ },
+ "s6c49a677de36": {
+  "prompt_idx": 281,
+  "arm": "claude_opus41",
+  "n_words": 287
+ },
+ "s6cb4c57a50bb": {
+  "prompt_idx": 285,
+  "arm": "claude_opus41",
+  "n_words": 164
+ },
+ "s6c27cf0f184c": {
+  "prompt_idx": 1,
+  "arm": "claude_opus4",
+  "n_words": 114
+ },
+ "s6c324a5ebad7": {
+  "prompt_idx": 6,
+  "arm": "claude_opus4",
+  "n_words": 147
+ },
+ "s6c9c85dd1920": {
+  "prompt_idx": 20,
+  "arm": "claude_opus4",
+  "n_words": 199
+ },
+ "s6c135ab0a8ae": {
+  "prompt_idx": 31,
+  "arm": "claude_opus4",
+  "n_words": 267
+ },
+ "s6cffffd61da0": {
+  "prompt_idx": 40,
+  "arm": "claude_opus4",
+  "n_words": 77
+ },
+ "s6c6b85fec166": {
+  "prompt_idx": 73,
+  "arm": "claude_opus4",
+  "n_words": 290
+ },
+ "s6c17f6f4fea4": {
+  "prompt_idx": 79,
+  "arm": "claude_opus4",
+  "n_words": 252
+ },
+ "s6c7f6e98af7c": {
+  "prompt_idx": 90,
+  "arm": "claude_opus4",
+  "n_words": 266
+ },
+ "s6c8a4dce2c98": {
+  "prompt_idx": 91,
+  "arm": "claude_opus4",
+  "n_words": 228
+ },
+ "s6ccbec85f487": {
+  "prompt_idx": 117,
+  "arm": "claude_opus4",
+  "n_words": 134
+ },
+ "s6ca2435e8b79": {
+  "prompt_idx": 124,
+  "arm": "claude_opus4",
+  "n_words": 219
+ },
+ "s6c8cc9d5be35": {
+  "prompt_idx": 128,
+  "arm": "claude_opus4",
+  "n_words": 306
+ },
+ "s6cb358af5397": {
+  "prompt_idx": 151,
+  "arm": "claude_opus4",
+  "n_words": 271
+ },
+ "s6c9960a73bbd": {
+  "prompt_idx": 166,
+  "arm": "claude_opus4",
+  "n_words": 162
+ },
+ "s6c31e862b8df": {
+  "prompt_idx": 178,
+  "arm": "claude_opus4",
+  "n_words": 270
+ },
+ "s6c03f8d1ea9a": {
+  "prompt_idx": 200,
+  "arm": "claude_opus4",
+  "n_words": 84
+ },
+ "s6cf4286830c8": {
+  "prompt_idx": 201,
+  "arm": "claude_opus4",
+  "n_words": 236
+ },
+ "s6c051ebf0999": {
+  "prompt_idx": 224,
+  "arm": "claude_opus4",
+  "n_words": 150
+ },
+ "s6cc108f66fcd": {
+  "prompt_idx": 232,
+  "arm": "claude_opus4",
+  "n_words": 213
+ },
+ "s6cdf9eddd395": {
+  "prompt_idx": 250,
+  "arm": "claude_opus4",
+  "n_words": 218
+ },
+ "s6c83be8d41fd": {
+  "prompt_idx": 269,
+  "arm": "claude_opus4",
+  "n_words": 257
+ },
+ "s6c3c97be2d0c": {
+  "prompt_idx": 281,
+  "arm": "claude_opus4",
+  "n_words": 287
+ },
+ "s6c8b5c44ea2f": {
+  "prompt_idx": 285,
+  "arm": "claude_opus4",
+  "n_words": 164
+ },
+ "s6c47f0368f26": {
+  "prompt_idx": 1,
+  "arm": "claude_sonnet45",
+  "n_words": 114
+ },
+ "s6c8b2da6ecd5": {
+  "prompt_idx": 6,
+  "arm": "claude_sonnet45",
+  "n_words": 147
+ },
+ "s6ce3040f7774": {
+  "prompt_idx": 20,
+  "arm": "claude_sonnet45",
+  "n_words": 199
+ },
+ "s6c11c59b5e60": {
+  "prompt_idx": 31,
+  "arm": "claude_sonnet45",
+  "n_words": 267
+ },
+ "s6ccb6da23349": {
+  "prompt_idx": 40,
+  "arm": "claude_sonnet45",
+  "n_words": 77
+ },
+ "s6cdbab61473a": {
+  "prompt_idx": 73,
+  "arm": "claude_sonnet45",
+  "n_words": 290
+ },
+ "s6c26aefe58d1": {
+  "prompt_idx": 79,
+  "arm": "claude_sonnet45",
+  "n_words": 252
+ },
+ "s6c7998639aa3": {
+  "prompt_idx": 90,
+  "arm": "claude_sonnet45",
+  "n_words": 266
+ },
+ "s6c5044b8ea74": {
+  "prompt_idx": 91,
+  "arm": "claude_sonnet45",
+  "n_words": 228
+ },
+ "s6c597e2a371e": {
+  "prompt_idx": 117,
+  "arm": "claude_sonnet45",
+  "n_words": 134
+ },
+ "s6ce9a5db6e05": {
+  "prompt_idx": 124,
+  "arm": "claude_sonnet45",
+  "n_words": 219
+ },
+ "s6c0c653ed879": {
+  "prompt_idx": 128,
+  "arm": "claude_sonnet45",
+  "n_words": 254
+ },
+ "s6c82f088e120": {
+  "prompt_idx": 151,
+  "arm": "claude_sonnet45",
+  "n_words": 260
+ },
+ "s6cc9f1f325b5": {
+  "prompt_idx": 166,
+  "arm": "claude_sonnet45",
+  "n_words": 162
+ },
+ "s6c9f72e6b7af": {
+  "prompt_idx": 178,
+  "arm": "claude_sonnet45",
+  "n_words": 260
+ },
+ "s6cee737b4ee5": {
+  "prompt_idx": 200,
+  "arm": "claude_sonnet45",
+  "n_words": 84
+ },
+ "s6cba0d520cf8": {
+  "prompt_idx": 201,
+  "arm": "claude_sonnet45",
+  "n_words": 236
+ },
+ "s6c74f5a44779": {
+  "prompt_idx": 224,
+  "arm": "claude_sonnet45",
+  "n_words": 150
+ },
+ "s6c51f967aeb4": {
+  "prompt_idx": 232,
+  "arm": "claude_sonnet45",
+  "n_words": 213
+ },
+ "s6cfa3b5480c8": {
+  "prompt_idx": 250,
+  "arm": "claude_sonnet45",
+  "n_words": 218
+ },
+ "s6c9e14c8d63b": {
+  "prompt_idx": 269,
+  "arm": "claude_sonnet45",
+  "n_words": 230
+ },
+ "s6c367a505481": {
+  "prompt_idx": 281,
+  "arm": "claude_sonnet45",
+  "n_words": 237
+ },
+ "s6c03b9ea1156": {
+  "prompt_idx": 285,
+  "arm": "claude_sonnet45",
+  "n_words": 164
  }
 }
