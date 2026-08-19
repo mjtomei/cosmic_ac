@@ -1706,12 +1706,17 @@ set is not conditioned on failure. The complementary arm, graded ON the
 Pangram outcome (the successful reversals), is stage 5 below. Within-text pairing holds content, speaker and occasion fixed by
 construction, so these are the raw paired differences — the design's own
 estimand, needing no covariate. **Every dimension is null on both.**[^r49b]
-What the pairs can exclude is bounded and stated (review item Q3): at these
-ns the detectable effects are roughly ±0.12–0.26 per dimension for stage 3
-and larger for stage 4, so these nulls rule out *moderate* rewrite effects,
-not small ones — and none of the 28 paired cells reaches nominal
-significance, which under that many looks is itself the null behaving as a
-null should.
+What the pairs can exclude is bounded and stated (review item Q3):
+detectable effects run roughly ±0.12–0.26 per dimension for stage 3 —
+commensurate with the study's own headline effects (+0.22 to +0.29, stage 2)
+— so these nulls say the evasion edit produces nothing dramatic, not that it
+produces nothing at the scale the study elsewhere reports. None of the 28
+paired cells reaches nominal significance, which is how a true null behaves
+under many looks. And the paper's quality conclusion does not rest on these
+arms: it is carried jointly by stages 1 and 2 (wild text, two label
+sources), stage 5 (successful evasions), and stage 6 (never-reviewed
+continuations, where frontier models *beat* the human twins on form) — four
+different contrasts agreeing.
 
 | dimension | stage 3 (n=38) | stage 4 (n=25) |
 |---|---|---|
