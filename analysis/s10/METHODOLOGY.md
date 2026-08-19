@@ -1910,6 +1910,9 @@ p = 0.53–0.59, n = 704. Reported as a robust null.
 
 ## 7. Quality measurement
 
+Rewritten 2026-08-19; the previous version of this section predated the
+2026-08-10 reframe and still carried the retired headline (git history).
+
 Instrument: the **Discourse Quality Index** (Steenbergen, Bächtiger,
 Spörndli & Steiner 2003) — the standard deliberation-quality scale for
 parliamentary debate, whose own worked examples come from a 1998 Commons
@@ -1921,39 +1924,62 @@ style metrics, and AI text differs in style by construction, so every
 measure carries a circularity grade and the judge separately reports
 P(AI-assisted) purely to detect leakage. **Genre**: AI-flagged segments
 concentrate in prepared statements, so comparisons run within
-selection-matched pools.
+selection-matched or genre-balanced pools, and the cross-chamber grading
+carries chamber fixed effects.
+
+**The gradings — six, plus one control** (scripts and caches in
+`quality_expansion/` unless noted):
+
+  stage 1   840 segments, federal Canada, genre-balanced, regressed on the
+            Opus screen's continuous 0–100 score (`analyze.py`,
+            `results_stage1.json`)
+  stage 2   682 segments across chambers, regressed on the Pangram verdict
+            with chamber fixed effects (`analyze_stage2.py`,
+            `results_stage2.json`; Mixed pooled with AI, sensitivity
+            --drop-mixed)
+  stages 3/4  within-text paired designs — a segment against its
+            evasion-directed rewrite (38 and 25 pairs; `analyze_stage3.py`,
+            `results_stage34.json`); selection by the Opus proxy, so NOT
+            conditioned on evasion success
+  stage 5   the complement, conditioned on success: every rewrite that
+            reached a Human verdict (39 variants / 15 targets) graded blind
+            against its original, two passes — pre-registered
+            (`PREREG-stage5-successful-evasion.md`, `stage5_scores.json`,
+            `workflows/stage5_grade.js`; added 2026-08-16, five days AFTER
+            the 2026-08-11 review, whose "five gradings" count was correct
+            when written)
+  C.1       cross-account reliability replication (draft Appendix C.1)
+  D.1       the judge-leakage control — documented, run, not adopted
+            (draft Appendix D.1)
+
+**Current findings** (draft §4.9 is authoritative): AI-flagged speech is
+**better-formed — more justification, more common-good framing, more respect
+toward groups — and shows no engagement penalty once genre or chamber is
+held fixed**; the paired arms bracket it with nulls on every dimension
+(evasion-directed rewriting null, evasion-achieving rewriting null). The
+earlier summary of this section, "form up, deliberation down," was the
+pre-2026-08-10 headline and is **superseded** (draft Appendix B item 5): the
+engagement deficit did not survive the genre control, which resolved rather
+than left open the confound this section previously called unsolved. Open
+findings against the arm are tracked as review items Q1–Q12
+(`REVIEW-2026-08-11-QBLOCK.md`), of which the applicability-collapse
+observation (Q1) is the substantive one.
 
 Reliability: repeat-pass Spearman 0.68–0.91 per dimension, at or above the
-published human inter-coder bar (their justification r = 0.716).
+published human inter-coder bar (their justification r = 0.716); stage 5's
+two independent passes agree exactly on 79–100% per dimension; the
+cross-account replication (C.1) reproduces the pattern from a separate
+account. Same-model agreement is reliability, not validity — a judge that
+systematically read AI register as quality would reproduce perfectly, which
+is why the leakage control (D.1) exists.
 
-Findings: AI-flagged speech scores **higher** on formal justification, ~3×
-**lower** on first-person witness, and **lower** on engaging opponents'
-demands. Blinded 2019 → 2026: justification +0.21 and evidence +0.19 up,
-**respect toward others' demands −0.36 (0.96 → 0.60)** and constructive
-politics −0.30 (0.54 → 0.24) down. Summary: **form up, deliberation down**.
-
-*(An earlier draft of this section gave the respect figure as 0.96 → 0.52.
-The anchored-v2 run's own record, `quality_methods.md`, says 0.60; 0.52 was
-a transcription error and the corrected value is above.)*
-
-**Genre remains the unsolved confound, and recent work makes it sharper.**
-The design compares within selection-matched Pangram strata, but full
-prepared-vs-spontaneous labels were always an open item. We now know from the
-unscripted-business analysis (§5.2c) that AI concentrates in scripted formats
-— Canada's Statements by Members carry a larger shift than Oral Questions. So
-"AI-flagged speech engages opponents less" may in part be "scripted speech
-engages opponents less". The provincial corpora built since carry business-
-rubric metadata that would let this be settled rather than stated; it has not
-been done.
-
-The pronoun result connects to a real literature — Pennebaker and
-colleagues found high-status speakers use fewer first-person singulars, and
-deception research found the same for fabricated accounts. Here it is
-neither: it is **authorship displacement**, because the drafting voice has
-no experience to reference. A corollary worth stating: pronoun-based
-psychological inference on post-2023 institutional text is now unsafe.
-
----
+**A finding from the original grading not carried forward, status
+unrevisited rather than retired:** the ~3× lower first-person-witness rate
+in AI-flagged speech (authorship displacement — the drafting voice has no
+experience to reference). It no longer appears in §4.9 and was never
+re-tested under the current staged design; the corollary (pronoun-based
+psychological inference on post-2023 institutional text is unsafe) likely
+still holds but presently rests on the superseded run.
 
 ## 8. What each headline number licenses you to say
 

@@ -6,6 +6,18 @@ session transcript (pre-compaction, 2026-08-17); each item was verified with
 confirmatory runs before that presentation. Nothing in the verbatim section
 has been edited.*
 
+## Correction, 2026-08-19 (Matthew's catch)
+
+The apparatus preamble below says "five gradings exist." That count was
+correct **at review time** and is now stale: **stage 5** (successful-evasion
+grading, pre-registered, all-null, 39 variants / 15 targets) was added
+2026-08-16 — five days after the review — so there are now SIX gradings plus
+the D.1 judge-leakage control. Stage 5 is fully recomputable
+(`stage5_scores.json`, `workflows/stage5_grade.js` committed), so Q12's
+"three of five cannot be recomputed" reads today as three of six.
+METHODOLOGY §7 was two generations stale on all of this and was rewritten
+2026-08-19; draft §4.9 was already current.
+
 ## Status as of 2026-08-19
 
 | item | status |
