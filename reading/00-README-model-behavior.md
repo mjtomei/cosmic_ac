@@ -68,11 +68,16 @@ study, filed above on its own merits); the intended paper is Kim et al. 2026,
 now on disk. The politeness-literature lead recorded earlier is withdrawn —
 the description is fully accounted for.
 
-## Coherence placement (not executed — sibling repo, Matthew's call)
+## Coherence placement — DEFERRED (Matthew, 2026-08-19)
 
-Fu 2026 and Banayeeanzade 2026 belong in ~/coherence's evidence base (the
-suppression-of-idea-variance thesis gains its first mechanistic external
-anchors). This directory holds the files; coherence can reference or copy.
+Coherence is left alone for now; the per-work "BOTH" assessments above stand as
+analysis, not as filing instructions. All four works are cited in
+`outline-cosmic-ac.md`, which is their operative home: Fu + Banayeeanzade in
+V.3a(d) (the engineered-diversity objection to instructed adversarialism),
+Lindsey in V.3c (the shows-its-work contest, cited for both sides), Kim in
+V.3a(e) (the shared-lie ablation experiment) with a side-feed to V.3c's
+what-may-the-persona-assert governance question. If coherence is picked back
+up, this directory is the staging area.
 
 Status: seed; not yet ranked (4 works); grows if the respect-paper hunt or the
 correlated-errors/model-similarity literature (e.g. CAPA/model-affinity line)
