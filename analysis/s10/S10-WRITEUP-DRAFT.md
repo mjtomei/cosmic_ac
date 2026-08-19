@@ -1720,6 +1720,44 @@ evaders 36/100 against 40 for the human originals — barely less AI-like — so
 the two detectors disagree on this set even as neither finds a quality
 difference. `stage5_scores.json`, `PREREG-stage5-successful-evasion.md`.)
 
+**Stage 6 inverts the question: machine text no human ever reviewed.** The
+in-the-wild finding — AI-flagged speech better-formed — is consistent with
+two stories: machine text is better-formed, or the humans deploying it vet
+what they submit (the ethics-conscious member reviews the machine draft
+harder than their own words — Matthew's hypothesis, from the applicability
+finding). Stage 6 separates them with text that skipped every human: 60
+pre-2023 prompts (45-word openings of real segments), each with its
+member's actual continuation and three cached model continuations
+(mistral-instruct, qwen3-instruct, mistral-base) that no person read before
+grading — blind, length-matched within prompt, frozen v2b rubric, two
+passes, judge pinned to the stage-1/2 model.[^r49s6]
+
+**Raw machine text loses to its human twin on every form dimension** —
+justification −0.34 (t −3.2) for mistral-instruct and −0.84 (t −7.7) for
+qwen3-instruct, respect toward groups −0.24 (t −4.3) and −0.29 (t −5.0). So
+the form lift in the wild is **not a property of machine text**; it is
+produced in the human-machine pipeline — selection of occasions, the
+instruction, the editing, or the vetting. Two further facts sharpen the
+picture. **The applicability collapse is intrinsic**: raw machine
+continuations carry less to engage with (sentinel applicability 0.34–0.59
+against the human 0.53–0.66), with no human anywhere in the loop — the
+thinness travels with the text. And **post-training creates form**:
+instruct-minus-base justification is +0.34 (t +3.5) within the same model,
+the quality-side echo of §4.7's register-is-a-post-training-artifact. One
+channel is named rather than excluded: the blind judge's own ai_guess
+separates the arms (human 19, machine 55–83), so judge suspicion could
+depress machine scores — though the same judge design gave *higher* form
+scores to suspected text in stages 1–2, so suspicion does not mechanically
+push down. And bare continuations are not deployed drafting — no
+instruction, no member editing — which is exactly the gap the comparison is
+designed to measure.
+
+[^r49s6]: `quality_expansion/pool6.json` (blind), `key6.json` (never left
+    the grading machine's counterpart — the key stayed local),
+    `results_stage6.json`, `analyze_stage6.py`;
+    `workflows/stage6_grade.js`; design registered before grading in
+    `plans/S10-stage6-unreviewed-continuations.md`. Run 2026-08-19.
+
 **On length, which we do not adjust away — and which does not replicate.**
 Stage 4's rewrites run about 29 words longer than their originals; stage 3's do
 not (mean −1.3). Within stage 4, justification does move with length, at
