@@ -91,3 +91,38 @@ rather than changes: the two most expensive papers on the shelf cost less
 than a conference registration, one of the eight ran on gaming cards, and the
 frontier-open reproduction estimate ($1.5k–$25k on a 671B MoE) remains
 bounded by engineering labour and node-housing, not by the arithmetic.
+
+
+## v3 (same day): the engineering barrier is held in-house
+
+Matthew: the white-box serving is not a barrier for this project — he has
+modified SGLang to serve DeepSeek R1 with activation access for exactly this
+kind of data generation. The conclusion therefore sharpens: **for us, the
+binding constraint on frontier-open reproduction is node-hours** (one 8×H200
+class node, ~$25–32/hr) **plus experiment design** — the $1.5k–$25k suite
+estimate stands, and targeted single-paper reproductions sit at its low end.
+
+Prioritized menu, by value to the paper (costs from the v1/v2 model,
+single-experiment, R1-class MoE, dev included):
+
+1. **Truth/deception probes at frontier** (Marks's geometry-of-truth datasets
+   + the Goldowsky-Dill/Parrack probe protocol, run on R1): does the audit
+   instrument V.3c's auditable-record refinement relies on exist at deployed
+   scale? ~$0.5–3k. Public datasets, trivial probes — the purest test of the
+   shelf's scale caution.
+2. **The Kim ablation on R1** (find/steer the consciousness-assertion
+   direction; measure the belief-value entanglement): the shared-lie ablation
+   at frontier, on an open model, where nobody has run it. ~$1–4k (steering
+   sweeps are the intervention-heavy case). Highest novelty; feeds V.3a(e)
+   directly and would be a publishable result on its own.
+3. **Withheld-cognition check at scale** (Gurnee-style workspace / Cao-style
+   know-but-don't-act on R1): does the deployed-vs-available gap grow or
+   shrink with scale? Feeds V.3c and the pm litreview's H2. ~$1–3k.
+4. **Sycophancy-heads at scale** (Genadi protocol): completes the cluster.
+   ~$0.3–1k.
+
+Also unlocked: the pm extension's locally-runnable experiment suite (§4.5,
+the Jacobian-lens runs) gains a frontier arm at marginal cost. Note the tie
+to S16/S18: these are precisely the burst, embarrassingly-schedulable jobs
+the idle-fleet/negotiated-cession world prices — the reproduction agenda is
+itself a workload profile for the paper's own economics.
