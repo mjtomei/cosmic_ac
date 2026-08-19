@@ -1439,16 +1439,22 @@ LLM screen; stage 2 is 682 segments across 22 chambers labelled by **Pangram
 verdict**, with chamber fixed effects. Different populations, different label
 sources, same answer.
 
-| dimension | stage 1, + genre & era FE | stage 2, + chamber FE |
-|---|---|---|
-| *segments (regressor)* | *840 (screen score, 0–100)* | *682 (Pangram verdict, binary)* |
-| justification | **+1.134** (t +4.1) ✱ | **+0.290** (t +4.4) ✱ |
-| common_good | **+0.583** (t +3.3) ✱ | **+0.229** (t +4.5) ✱ |
-| respect_groups | **+0.287** (t +2.0) ✱ | **+0.220** (t +6.1) ✱ |
-| respect_demands | −0.179 (t −0.5) | −0.029 (t −0.4) |
-| respect_counterargs | +0.143 (t +0.4) | +0.073 (t +1.0) |
-| constructive | −0.015 (t −0.1) | −0.041 (t −1.0) |
-| evidence | +0.350 (t +1.4) | +0.065 (t +1.1) |
+| dimension | stage 1, per 0→100 score | stage 1, per sd of score | stage 2, AI vs Human verdict |
+|---|---|---|---|
+| *segments (regressor)* | *840 (screen score; sd 15.3, max 70)* | *same fit, rescaled* | *682 (Pangram verdict, binary)* |
+| justification | **+1.134** (t +4.1) ✱ | +0.173 | **+0.290** (t +4.4) ✱ |
+| common_good | **+0.583** (t +3.3) ✱ | +0.089 | **+0.229** (t +4.5) ✱ |
+| respect_groups | **+0.287** (t +2.0) ✱ | +0.044 | **+0.220** (t +6.1) ✱ |
+| respect_demands | −0.179 (t −0.5) | −0.027 | −0.029 (t −0.4) |
+| respect_counterargs | +0.143 (t +0.4) | +0.022 | +0.073 (t +1.0) |
+| constructive | −0.015 (t −0.1) | −0.002 | −0.041 (t −1.0) |
+| evidence | +0.350 (t +1.4) | +0.054 | +0.065 (t +1.1) |
+
+*The middle column is the first column times sd/100 (review item Q4): the
+stage-1 regressor is a 0–100 score whose observed maximum is 70 and sd 15.3,
+so the left column's magnitudes are fitted 0→100 differences the data never
+spans — per sd, stage 1 sits beside stage 2's binary contrast rather than 4×
+above it. Same fits, same t's.*
 
 **The revised claim: AI-assisted legislative speech is better-formed — more
 justified, more common-good framed, more positive toward the groups a policy
