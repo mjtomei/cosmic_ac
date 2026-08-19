@@ -21,6 +21,8 @@ if (!args || !Array.isArray(args.targets) || args.targets.length === 0) {
   )
 }
 const TARGETS = args.targets
+const MODEL = args.model || 'opus'
+const EFFORT = args.effort || 'medium'
 
 const METHOD = `FIRST ACTION: read /home/matt/performance_commons/reading/00-FETCH-METHODOLOGY.md
 in full — it is the contract for this job. Binding rules regardless of anything
@@ -122,7 +124,7 @@ Report honestly: fetched (file+version) / located_needs_human (exact action,
 verified IDs) / nothing (state in checked_absent_basis which indexes and routes
 you confirmed absence on) / check_failed (an index or route was rate-limited or
 down — name it; infrastructure failure is NOT a negative).`,
-  { label: `fetch:t${i + 1}a${n + 1}`, phase: 'Fetch', schema: ATTEMPT_SCHEMA })
+  { label: `fetch:t${i + 1}a${n + 1}`, phase: 'Fetch', schema: ATTEMPT_SCHEMA, model: MODEL, effort: EFFORT })
 
 const mergeState = (attempts) => {
   const ok = attempts.filter(Boolean)
@@ -149,7 +151,7 @@ the publisher's records. If the hint is a URL, reverse-resolve it (publisher
 URLs encode journal/volume/page; JSTOR stables are 10.2307/<id>). Books and
 pre-DOI works: fullest citation the records support + no_doi_class.
 resolved=false ONLY if identity genuinely cannot be pinned down — say what blocked it.`,
-    { label: `resolve:${i + 1}`, phase: 'Resolve', schema: RESOLVE_SCHEMA, effort: 'low' })
+    { label: `resolve:${i + 1}`, phase: 'Resolve', schema: RESOLVE_SCHEMA, model: MODEL, effort: EFFORT })
     .then(ident => ({ ident: ident || { resolved: false, citation: t.want, notes: 'resolver died' } })),
 
   // three INDEPENDENT attempts, concurrently, no shared state between them
@@ -191,7 +193,7 @@ in ${t.directory}/ ${t.filename ? ('as ' + t.filename) : '(honest <author>-<year
 unless an already-verified copy sat in the directory before this run, in which
 case keep it and say so. Then delete ${t.directory}/.acquire-staging/t${i}-* .
 Report the installed path + version + which candidates failed verification.`,
-      { label: `merge:t${i + 1}`, phase: 'Merge', effort: 'low' })
+      { label: `merge:t${i + 1}`, phase: 'Merge', model: MODEL, effort: EFFORT })
       .then(m => { prev.installed = m; return prev })
   }
 )
@@ -216,7 +218,7 @@ ${JSON.stringify(results.map((r, i) => ({
   basis: r.merged ? (r.merged.basis || '') : '',
   attempts: (r.attempts || []).length,
 })), null, 1)}`,
-  { label: 'ledger', phase: 'Ledger', effort: 'low' })
+  { label: 'ledger', phase: 'Ledger', model: MODEL, effort: EFFORT })
 
 return { ledger, results: results.map((r, i) => ({
   want: TARGETS[i].want,
