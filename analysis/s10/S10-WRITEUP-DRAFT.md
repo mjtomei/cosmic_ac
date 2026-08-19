@@ -1437,7 +1437,7 @@ repeat-pass band, and the claim-bearing gaps keep their signs. Detail in
 Stage 1 is 840 genre-balanced federal-Canadian segments labelled by a blinded
 LLM screen; stage 2 is 682 segments across 22 chambers labelled by **Pangram
 verdict**, with chamber fixed effects. Different populations, different label
-sources, same answer.
+sources, same answer.[^r49q]
 
 | dimension | stage 1, per 0→100 score | stage 1, per sd of score | stage 2, AI vs Human verdict |
 |---|---|---|---|
@@ -1874,6 +1874,15 @@ and a multi-round search scoring three replicates per variant. A single
 Pangram's score, and human text pushed through the same ladder went from 11.7
 to 60.2. The gap between "a detector can be beaten" and "a detector is easy to
 beat" is the whole of that apparatus.
+
+[^r49q]: Stage 1: `cd quality_expansion && python analyze.py`. Stage 2:
+    `python analyze_stage2.py` — the column's own script (review item Q7),
+    reproducing it to three decimals. Coding disclosed at the table per the
+    same item: stage 2's regressor pools **Mixed verdicts with AI**;
+    `--drop-mixed` is the sensitivity, and the three starred cells barely
+    move under it (justification +0.263, common_good +0.283, respect_groups
+    +0.231). The applicability table above reproduces with
+    `python applicability_by_band.py`.
 
 [^r49a]: `python bypass_report.py`, which reads the four verdict files and
     prints every figure in this subsection, including the Wilson intervals and
