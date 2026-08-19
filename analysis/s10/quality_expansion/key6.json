@@ -1,0 +1,1202 @@
+{
+ "s6246df4eb65": {
+  "prompt_idx": 1,
+  "arm": "human",
+  "n_words": 114
+ },
+ "s6f7d5d7256a": {
+  "prompt_idx": 1,
+  "arm": "mistral_instruct",
+  "n_words": 114
+ },
+ "s67e68f4fe67": {
+  "prompt_idx": 1,
+  "arm": "qwen3_instruct",
+  "n_words": 114
+ },
+ "s68c32e2ce55": {
+  "prompt_idx": 1,
+  "arm": "mistral_base",
+  "n_words": 114
+ },
+ "s6b85a8953f3": {
+  "prompt_idx": 6,
+  "arm": "human",
+  "n_words": 147
+ },
+ "s6f501c55535": {
+  "prompt_idx": 6,
+  "arm": "mistral_instruct",
+  "n_words": 147
+ },
+ "s61aadadfb3d": {
+  "prompt_idx": 6,
+  "arm": "qwen3_instruct",
+  "n_words": 147
+ },
+ "s6d47ea6f323": {
+  "prompt_idx": 6,
+  "arm": "mistral_base",
+  "n_words": 147
+ },
+ "s66a53d8b98a": {
+  "prompt_idx": 20,
+  "arm": "human",
+  "n_words": 199
+ },
+ "s68a6908fce8": {
+  "prompt_idx": 20,
+  "arm": "mistral_instruct",
+  "n_words": 199
+ },
+ "s648357fa639": {
+  "prompt_idx": 20,
+  "arm": "qwen3_instruct",
+  "n_words": 199
+ },
+ "s66b9b4999a8": {
+  "prompt_idx": 20,
+  "arm": "mistral_base",
+  "n_words": 199
+ },
+ "s6bea9388ab2": {
+  "prompt_idx": 31,
+  "arm": "human",
+  "n_words": 267
+ },
+ "s6d87582b4c5": {
+  "prompt_idx": 31,
+  "arm": "mistral_instruct",
+  "n_words": 267
+ },
+ "s64508d7945f": {
+  "prompt_idx": 31,
+  "arm": "qwen3_instruct",
+  "n_words": 267
+ },
+ "s6a2b25c17e6": {
+  "prompt_idx": 31,
+  "arm": "mistral_base",
+  "n_words": 267
+ },
+ "s6ec3adb0bcd": {
+  "prompt_idx": 40,
+  "arm": "human",
+  "n_words": 77
+ },
+ "s6a0f76c9de9": {
+  "prompt_idx": 40,
+  "arm": "mistral_instruct",
+  "n_words": 77
+ },
+ "s6a47decfacd": {
+  "prompt_idx": 40,
+  "arm": "qwen3_instruct",
+  "n_words": 77
+ },
+ "s606c5427446": {
+  "prompt_idx": 40,
+  "arm": "mistral_base",
+  "n_words": 77
+ },
+ "s61218c38a6c": {
+  "prompt_idx": 73,
+  "arm": "human",
+  "n_words": 290
+ },
+ "s6993a814bbc": {
+  "prompt_idx": 73,
+  "arm": "mistral_instruct",
+  "n_words": 290
+ },
+ "s624e6d12321": {
+  "prompt_idx": 73,
+  "arm": "qwen3_instruct",
+  "n_words": 290
+ },
+ "s620f1358a1f": {
+  "prompt_idx": 73,
+  "arm": "mistral_base",
+  "n_words": 290
+ },
+ "s66a83eec030": {
+  "prompt_idx": 79,
+  "arm": "human",
+  "n_words": 252
+ },
+ "s6a5dad333b0": {
+  "prompt_idx": 79,
+  "arm": "mistral_instruct",
+  "n_words": 252
+ },
+ "s68ef6466cad": {
+  "prompt_idx": 79,
+  "arm": "qwen3_instruct",
+  "n_words": 252
+ },
+ "s62bacdb91d3": {
+  "prompt_idx": 79,
+  "arm": "mistral_base",
+  "n_words": 252
+ },
+ "s6d1ccfe3f50": {
+  "prompt_idx": 90,
+  "arm": "human",
+  "n_words": 266
+ },
+ "s6f612a0d11c": {
+  "prompt_idx": 90,
+  "arm": "mistral_instruct",
+  "n_words": 266
+ },
+ "s6d4ea98e1f0": {
+  "prompt_idx": 90,
+  "arm": "qwen3_instruct",
+  "n_words": 266
+ },
+ "s633e1139054": {
+  "prompt_idx": 90,
+  "arm": "mistral_base",
+  "n_words": 266
+ },
+ "s6cb85185c62": {
+  "prompt_idx": 91,
+  "arm": "human",
+  "n_words": 228
+ },
+ "s63959c8d710": {
+  "prompt_idx": 91,
+  "arm": "mistral_instruct",
+  "n_words": 228
+ },
+ "s68ae20b2967": {
+  "prompt_idx": 91,
+  "arm": "qwen3_instruct",
+  "n_words": 228
+ },
+ "s69249b612bf": {
+  "prompt_idx": 91,
+  "arm": "mistral_base",
+  "n_words": 228
+ },
+ "s6385e518f9b": {
+  "prompt_idx": 117,
+  "arm": "human",
+  "n_words": 134
+ },
+ "s677c2d01cc5": {
+  "prompt_idx": 117,
+  "arm": "mistral_instruct",
+  "n_words": 134
+ },
+ "s6c5776f0037": {
+  "prompt_idx": 117,
+  "arm": "qwen3_instruct",
+  "n_words": 134
+ },
+ "s6ce3cbb0449": {
+  "prompt_idx": 117,
+  "arm": "mistral_base",
+  "n_words": 134
+ },
+ "s61feb2258e4": {
+  "prompt_idx": 124,
+  "arm": "human",
+  "n_words": 219
+ },
+ "s6bec0b3398b": {
+  "prompt_idx": 124,
+  "arm": "mistral_instruct",
+  "n_words": 219
+ },
+ "s636d4862e8a": {
+  "prompt_idx": 124,
+  "arm": "qwen3_instruct",
+  "n_words": 219
+ },
+ "s6fc637f7252": {
+  "prompt_idx": 124,
+  "arm": "mistral_base",
+  "n_words": 219
+ },
+ "s66d5d7bbd99": {
+  "prompt_idx": 128,
+  "arm": "human",
+  "n_words": 306
+ },
+ "s6eb7c2d8700": {
+  "prompt_idx": 128,
+  "arm": "mistral_instruct",
+  "n_words": 306
+ },
+ "s6cd427dff85": {
+  "prompt_idx": 128,
+  "arm": "qwen3_instruct",
+  "n_words": 306
+ },
+ "s6125b7c126e": {
+  "prompt_idx": 128,
+  "arm": "mistral_base",
+  "n_words": 306
+ },
+ "s6fee7273f33": {
+  "prompt_idx": 151,
+  "arm": "human",
+  "n_words": 271
+ },
+ "s67cab7b075f": {
+  "prompt_idx": 151,
+  "arm": "mistral_instruct",
+  "n_words": 271
+ },
+ "s63e8d6557d3": {
+  "prompt_idx": 151,
+  "arm": "qwen3_instruct",
+  "n_words": 271
+ },
+ "s6828917b823": {
+  "prompt_idx": 151,
+  "arm": "mistral_base",
+  "n_words": 271
+ },
+ "s6ee30b78ff2": {
+  "prompt_idx": 166,
+  "arm": "human",
+  "n_words": 162
+ },
+ "s65ab65f1015": {
+  "prompt_idx": 166,
+  "arm": "mistral_instruct",
+  "n_words": 162
+ },
+ "s688cf885973": {
+  "prompt_idx": 166,
+  "arm": "qwen3_instruct",
+  "n_words": 162
+ },
+ "s6354700e2f6": {
+  "prompt_idx": 166,
+  "arm": "mistral_base",
+  "n_words": 162
+ },
+ "s622ec026e25": {
+  "prompt_idx": 178,
+  "arm": "human",
+  "n_words": 270
+ },
+ "s6c79e4f31b0": {
+  "prompt_idx": 178,
+  "arm": "mistral_instruct",
+  "n_words": 270
+ },
+ "s647b4c72943": {
+  "prompt_idx": 178,
+  "arm": "qwen3_instruct",
+  "n_words": 270
+ },
+ "s6cd18562aa9": {
+  "prompt_idx": 178,
+  "arm": "mistral_base",
+  "n_words": 270
+ },
+ "s6ffc05c00d2": {
+  "prompt_idx": 200,
+  "arm": "human",
+  "n_words": 84
+ },
+ "s626622fc889": {
+  "prompt_idx": 200,
+  "arm": "mistral_instruct",
+  "n_words": 84
+ },
+ "s604773ab332": {
+  "prompt_idx": 200,
+  "arm": "qwen3_instruct",
+  "n_words": 84
+ },
+ "s649a6b2b05a": {
+  "prompt_idx": 200,
+  "arm": "mistral_base",
+  "n_words": 84
+ },
+ "s6fcb5e89952": {
+  "prompt_idx": 201,
+  "arm": "human",
+  "n_words": 236
+ },
+ "s659666be93a": {
+  "prompt_idx": 201,
+  "arm": "mistral_instruct",
+  "n_words": 236
+ },
+ "s60379fa3c61": {
+  "prompt_idx": 201,
+  "arm": "qwen3_instruct",
+  "n_words": 236
+ },
+ "s63bdb1ace75": {
+  "prompt_idx": 201,
+  "arm": "mistral_base",
+  "n_words": 236
+ },
+ "s638ac2a0e2e": {
+  "prompt_idx": 224,
+  "arm": "human",
+  "n_words": 150
+ },
+ "s68229a99801": {
+  "prompt_idx": 224,
+  "arm": "mistral_instruct",
+  "n_words": 150
+ },
+ "s6b982cfaaae": {
+  "prompt_idx": 224,
+  "arm": "qwen3_instruct",
+  "n_words": 150
+ },
+ "s61b30e85f84": {
+  "prompt_idx": 224,
+  "arm": "mistral_base",
+  "n_words": 150
+ },
+ "s6674aaa9834": {
+  "prompt_idx": 232,
+  "arm": "human",
+  "n_words": 213
+ },
+ "s677ea8231aa": {
+  "prompt_idx": 232,
+  "arm": "mistral_instruct",
+  "n_words": 213
+ },
+ "s621232be8f0": {
+  "prompt_idx": 232,
+  "arm": "qwen3_instruct",
+  "n_words": 213
+ },
+ "s60fdfe0a44b": {
+  "prompt_idx": 232,
+  "arm": "mistral_base",
+  "n_words": 213
+ },
+ "s66f7dd3b580": {
+  "prompt_idx": 250,
+  "arm": "human",
+  "n_words": 218
+ },
+ "s64b044fda57": {
+  "prompt_idx": 250,
+  "arm": "mistral_instruct",
+  "n_words": 218
+ },
+ "s64b7174524c": {
+  "prompt_idx": 250,
+  "arm": "qwen3_instruct",
+  "n_words": 218
+ },
+ "s65f69c0852a": {
+  "prompt_idx": 250,
+  "arm": "mistral_base",
+  "n_words": 218
+ },
+ "s6902a49ab61": {
+  "prompt_idx": 269,
+  "arm": "human",
+  "n_words": 257
+ },
+ "s65012901bcb": {
+  "prompt_idx": 269,
+  "arm": "mistral_instruct",
+  "n_words": 257
+ },
+ "s6fc351f48e9": {
+  "prompt_idx": 269,
+  "arm": "qwen3_instruct",
+  "n_words": 257
+ },
+ "s64a0ebc55d0": {
+  "prompt_idx": 269,
+  "arm": "mistral_base",
+  "n_words": 257
+ },
+ "s666b978f052": {
+  "prompt_idx": 281,
+  "arm": "human",
+  "n_words": 287
+ },
+ "s6b06ef11461": {
+  "prompt_idx": 281,
+  "arm": "mistral_instruct",
+  "n_words": 287
+ },
+ "s6518c2e3d34": {
+  "prompt_idx": 281,
+  "arm": "qwen3_instruct",
+  "n_words": 287
+ },
+ "s6af5ff0ba6a": {
+  "prompt_idx": 281,
+  "arm": "mistral_base",
+  "n_words": 287
+ },
+ "s68c3ae1168a": {
+  "prompt_idx": 285,
+  "arm": "human",
+  "n_words": 164
+ },
+ "s62739732309": {
+  "prompt_idx": 285,
+  "arm": "mistral_instruct",
+  "n_words": 164
+ },
+ "s6fd0dd4048b": {
+  "prompt_idx": 285,
+  "arm": "qwen3_instruct",
+  "n_words": 164
+ },
+ "s6b89ea5c541": {
+  "prompt_idx": 285,
+  "arm": "mistral_base",
+  "n_words": 164
+ },
+ "s6f81fb2aaeb": {
+  "prompt_idx": 302,
+  "arm": "human",
+  "n_words": 210
+ },
+ "s6429ceaf1e6": {
+  "prompt_idx": 302,
+  "arm": "mistral_instruct",
+  "n_words": 210
+ },
+ "s6d97b399995": {
+  "prompt_idx": 302,
+  "arm": "qwen3_instruct",
+  "n_words": 210
+ },
+ "s64e3e807ce5": {
+  "prompt_idx": 302,
+  "arm": "mistral_base",
+  "n_words": 210
+ },
+ "s6bd0efbe331": {
+  "prompt_idx": 307,
+  "arm": "human",
+  "n_words": 268
+ },
+ "s60c83ea4ec5": {
+  "prompt_idx": 307,
+  "arm": "mistral_instruct",
+  "n_words": 268
+ },
+ "s6415d656e57": {
+  "prompt_idx": 307,
+  "arm": "qwen3_instruct",
+  "n_words": 268
+ },
+ "s6b8735949a2": {
+  "prompt_idx": 307,
+  "arm": "mistral_base",
+  "n_words": 268
+ },
+ "s6cd417f8c3d": {
+  "prompt_idx": 312,
+  "arm": "human",
+  "n_words": 81
+ },
+ "s6ea929fbe9c": {
+  "prompt_idx": 312,
+  "arm": "mistral_instruct",
+  "n_words": 81
+ },
+ "s67fb741dc19": {
+  "prompt_idx": 312,
+  "arm": "qwen3_instruct",
+  "n_words": 81
+ },
+ "s6eb95e02054": {
+  "prompt_idx": 312,
+  "arm": "mistral_base",
+  "n_words": 81
+ },
+ "s62df0e7ef70": {
+  "prompt_idx": 315,
+  "arm": "human",
+  "n_words": 228
+ },
+ "s69454488b44": {
+  "prompt_idx": 315,
+  "arm": "mistral_instruct",
+  "n_words": 228
+ },
+ "s6deecec6a29": {
+  "prompt_idx": 315,
+  "arm": "qwen3_instruct",
+  "n_words": 228
+ },
+ "s63e5f55f02a": {
+  "prompt_idx": 315,
+  "arm": "mistral_base",
+  "n_words": 228
+ },
+ "s6fc9a8e269a": {
+  "prompt_idx": 323,
+  "arm": "human",
+  "n_words": 233
+ },
+ "s61a8cfbff28": {
+  "prompt_idx": 323,
+  "arm": "mistral_instruct",
+  "n_words": 233
+ },
+ "s6ff45bec22f": {
+  "prompt_idx": 323,
+  "arm": "qwen3_instruct",
+  "n_words": 233
+ },
+ "s6435fd6bdf8": {
+  "prompt_idx": 323,
+  "arm": "mistral_base",
+  "n_words": 233
+ },
+ "s6dd8cf71ef5": {
+  "prompt_idx": 340,
+  "arm": "human",
+  "n_words": 262
+ },
+ "s63fb73b51c2": {
+  "prompt_idx": 340,
+  "arm": "mistral_instruct",
+  "n_words": 262
+ },
+ "s6bd1a727953": {
+  "prompt_idx": 340,
+  "arm": "qwen3_instruct",
+  "n_words": 262
+ },
+ "s68a22b0e35b": {
+  "prompt_idx": 340,
+  "arm": "mistral_base",
+  "n_words": 262
+ },
+ "s6e700dabee1": {
+  "prompt_idx": 354,
+  "arm": "human",
+  "n_words": 89
+ },
+ "s683a44f8da9": {
+  "prompt_idx": 354,
+  "arm": "mistral_instruct",
+  "n_words": 89
+ },
+ "s69b79a45f59": {
+  "prompt_idx": 354,
+  "arm": "qwen3_instruct",
+  "n_words": 89
+ },
+ "s67df0a028c6": {
+  "prompt_idx": 354,
+  "arm": "mistral_base",
+  "n_words": 89
+ },
+ "s6432f5c9d6e": {
+  "prompt_idx": 371,
+  "arm": "human",
+  "n_words": 105
+ },
+ "s63bf85ca2a6": {
+  "prompt_idx": 371,
+  "arm": "mistral_instruct",
+  "n_words": 105
+ },
+ "s6c3c06fa4bc": {
+  "prompt_idx": 371,
+  "arm": "qwen3_instruct",
+  "n_words": 105
+ },
+ "s699703ccf73": {
+  "prompt_idx": 371,
+  "arm": "mistral_base",
+  "n_words": 105
+ },
+ "s6699dcf560b": {
+  "prompt_idx": 376,
+  "arm": "human",
+  "n_words": 315
+ },
+ "s6da2e48f9b9": {
+  "prompt_idx": 376,
+  "arm": "mistral_instruct",
+  "n_words": 315
+ },
+ "s695066624a8": {
+  "prompt_idx": 376,
+  "arm": "qwen3_instruct",
+  "n_words": 315
+ },
+ "s68893bbb851": {
+  "prompt_idx": 376,
+  "arm": "mistral_base",
+  "n_words": 315
+ },
+ "s634df130cc8": {
+  "prompt_idx": 384,
+  "arm": "human",
+  "n_words": 93
+ },
+ "s601dabcaaf0": {
+  "prompt_idx": 384,
+  "arm": "mistral_instruct",
+  "n_words": 93
+ },
+ "s63e89707714": {
+  "prompt_idx": 384,
+  "arm": "qwen3_instruct",
+  "n_words": 93
+ },
+ "s65738262320": {
+  "prompt_idx": 384,
+  "arm": "mistral_base",
+  "n_words": 93
+ },
+ "s64616774fb7": {
+  "prompt_idx": 409,
+  "arm": "human",
+  "n_words": 134
+ },
+ "s640302bfa80": {
+  "prompt_idx": 409,
+  "arm": "mistral_instruct",
+  "n_words": 134
+ },
+ "s6730298dd82": {
+  "prompt_idx": 409,
+  "arm": "qwen3_instruct",
+  "n_words": 134
+ },
+ "s64d88271b4d": {
+  "prompt_idx": 409,
+  "arm": "mistral_base",
+  "n_words": 134
+ },
+ "s6191626e0ef": {
+  "prompt_idx": 419,
+  "arm": "human",
+  "n_words": 79
+ },
+ "s67404393884": {
+  "prompt_idx": 419,
+  "arm": "mistral_instruct",
+  "n_words": 79
+ },
+ "s6ae2694001f": {
+  "prompt_idx": 419,
+  "arm": "qwen3_instruct",
+  "n_words": 79
+ },
+ "s678689e20da": {
+  "prompt_idx": 419,
+  "arm": "mistral_base",
+  "n_words": 79
+ },
+ "s65693d8eb79": {
+  "prompt_idx": 429,
+  "arm": "human",
+  "n_words": 172
+ },
+ "s68c7a88dc86": {
+  "prompt_idx": 429,
+  "arm": "mistral_instruct",
+  "n_words": 172
+ },
+ "s6655d0674db": {
+  "prompt_idx": 429,
+  "arm": "qwen3_instruct",
+  "n_words": 172
+ },
+ "s65aba954ffa": {
+  "prompt_idx": 429,
+  "arm": "mistral_base",
+  "n_words": 172
+ },
+ "s6c061000d81": {
+  "prompt_idx": 433,
+  "arm": "human",
+  "n_words": 212
+ },
+ "s6c0117bc1df": {
+  "prompt_idx": 433,
+  "arm": "mistral_instruct",
+  "n_words": 212
+ },
+ "s60306d59861": {
+  "prompt_idx": 433,
+  "arm": "qwen3_instruct",
+  "n_words": 212
+ },
+ "s6d7cd596517": {
+  "prompt_idx": 433,
+  "arm": "mistral_base",
+  "n_words": 212
+ },
+ "s661c0a63e96": {
+  "prompt_idx": 446,
+  "arm": "human",
+  "n_words": 245
+ },
+ "s67bba01675d": {
+  "prompt_idx": 446,
+  "arm": "mistral_instruct",
+  "n_words": 245
+ },
+ "s65ecdcd7e50": {
+  "prompt_idx": 446,
+  "arm": "qwen3_instruct",
+  "n_words": 245
+ },
+ "s635be07bde3": {
+  "prompt_idx": 446,
+  "arm": "mistral_base",
+  "n_words": 245
+ },
+ "s6e98eb521c0": {
+  "prompt_idx": 460,
+  "arm": "human",
+  "n_words": 140
+ },
+ "s67087396347": {
+  "prompt_idx": 460,
+  "arm": "mistral_instruct",
+  "n_words": 140
+ },
+ "s6091a62af41": {
+  "prompt_idx": 460,
+  "arm": "qwen3_instruct",
+  "n_words": 140
+ },
+ "s612902b6a78": {
+  "prompt_idx": 460,
+  "arm": "mistral_base",
+  "n_words": 140
+ },
+ "s6f7372c4dc8": {
+  "prompt_idx": 471,
+  "arm": "human",
+  "n_words": 259
+ },
+ "s626385cfacb": {
+  "prompt_idx": 471,
+  "arm": "mistral_instruct",
+  "n_words": 259
+ },
+ "s64e28150d15": {
+  "prompt_idx": 471,
+  "arm": "qwen3_instruct",
+  "n_words": 259
+ },
+ "s62e0c7dfa42": {
+  "prompt_idx": 471,
+  "arm": "mistral_base",
+  "n_words": 259
+ },
+ "s6ffea4e70b7": {
+  "prompt_idx": 501,
+  "arm": "human",
+  "n_words": 190
+ },
+ "s6713fce4331": {
+  "prompt_idx": 501,
+  "arm": "mistral_instruct",
+  "n_words": 190
+ },
+ "s678d5f29b9d": {
+  "prompt_idx": 501,
+  "arm": "qwen3_instruct",
+  "n_words": 190
+ },
+ "s6866f4691ac": {
+  "prompt_idx": 501,
+  "arm": "mistral_base",
+  "n_words": 190
+ },
+ "s654e7729652": {
+  "prompt_idx": 522,
+  "arm": "human",
+  "n_words": 64
+ },
+ "s6a3efdc8f1c": {
+  "prompt_idx": 522,
+  "arm": "mistral_instruct",
+  "n_words": 64
+ },
+ "s63e7830e297": {
+  "prompt_idx": 522,
+  "arm": "qwen3_instruct",
+  "n_words": 64
+ },
+ "s651874d5f18": {
+  "prompt_idx": 522,
+  "arm": "mistral_base",
+  "n_words": 64
+ },
+ "s6959d55f5fb": {
+  "prompt_idx": 534,
+  "arm": "human",
+  "n_words": 141
+ },
+ "s69aced321fb": {
+  "prompt_idx": 534,
+  "arm": "mistral_instruct",
+  "n_words": 141
+ },
+ "s6100ed73bcd": {
+  "prompt_idx": 534,
+  "arm": "qwen3_instruct",
+  "n_words": 141
+ },
+ "s604cac408c6": {
+  "prompt_idx": 534,
+  "arm": "mistral_base",
+  "n_words": 141
+ },
+ "s67941716c9d": {
+  "prompt_idx": 548,
+  "arm": "human",
+  "n_words": 81
+ },
+ "s6a36b8f9e98": {
+  "prompt_idx": 548,
+  "arm": "mistral_instruct",
+  "n_words": 81
+ },
+ "s6466186b912": {
+  "prompt_idx": 548,
+  "arm": "qwen3_instruct",
+  "n_words": 81
+ },
+ "s6c20fdb8312": {
+  "prompt_idx": 548,
+  "arm": "mistral_base",
+  "n_words": 81
+ },
+ "s62f7839302e": {
+  "prompt_idx": 549,
+  "arm": "human",
+  "n_words": 64
+ },
+ "s6c985fc50d7": {
+  "prompt_idx": 549,
+  "arm": "mistral_instruct",
+  "n_words": 64
+ },
+ "s66d904b8b6c": {
+  "prompt_idx": 549,
+  "arm": "qwen3_instruct",
+  "n_words": 64
+ },
+ "s663d6a76a80": {
+  "prompt_idx": 549,
+  "arm": "mistral_base",
+  "n_words": 64
+ },
+ "s660aa2092fb": {
+  "prompt_idx": 552,
+  "arm": "human",
+  "n_words": 100
+ },
+ "s63baff22685": {
+  "prompt_idx": 552,
+  "arm": "mistral_instruct",
+  "n_words": 100
+ },
+ "s686a404f5af": {
+  "prompt_idx": 552,
+  "arm": "qwen3_instruct",
+  "n_words": 100
+ },
+ "s68e12790407": {
+  "prompt_idx": 552,
+  "arm": "mistral_base",
+  "n_words": 100
+ },
+ "s634181b2481": {
+  "prompt_idx": 562,
+  "arm": "human",
+  "n_words": 268
+ },
+ "s6e8f7da17b4": {
+  "prompt_idx": 562,
+  "arm": "mistral_instruct",
+  "n_words": 268
+ },
+ "s636a16c0cf4": {
+  "prompt_idx": 562,
+  "arm": "qwen3_instruct",
+  "n_words": 268
+ },
+ "s6327089788a": {
+  "prompt_idx": 562,
+  "arm": "mistral_base",
+  "n_words": 268
+ },
+ "s6c3d96f9f7f": {
+  "prompt_idx": 570,
+  "arm": "human",
+  "n_words": 93
+ },
+ "s6e89de31c60": {
+  "prompt_idx": 570,
+  "arm": "mistral_instruct",
+  "n_words": 93
+ },
+ "s6416dee0d99": {
+  "prompt_idx": 570,
+  "arm": "qwen3_instruct",
+  "n_words": 93
+ },
+ "s6c5a04e6e61": {
+  "prompt_idx": 570,
+  "arm": "mistral_base",
+  "n_words": 93
+ },
+ "s674058284ea": {
+  "prompt_idx": 577,
+  "arm": "human",
+  "n_words": 118
+ },
+ "s68e1755d14e": {
+  "prompt_idx": 577,
+  "arm": "mistral_instruct",
+  "n_words": 118
+ },
+ "s68db7d42c69": {
+  "prompt_idx": 577,
+  "arm": "qwen3_instruct",
+  "n_words": 118
+ },
+ "s620856c40db": {
+  "prompt_idx": 577,
+  "arm": "mistral_base",
+  "n_words": 118
+ },
+ "s6077569ed80": {
+  "prompt_idx": 580,
+  "arm": "human",
+  "n_words": 303
+ },
+ "s6a6253cd575": {
+  "prompt_idx": 580,
+  "arm": "mistral_instruct",
+  "n_words": 303
+ },
+ "s6544c289ec3": {
+  "prompt_idx": 580,
+  "arm": "qwen3_instruct",
+  "n_words": 303
+ },
+ "s62e3ac655f2": {
+  "prompt_idx": 580,
+  "arm": "mistral_base",
+  "n_words": 303
+ },
+ "s6a7d54a7ffb": {
+  "prompt_idx": 585,
+  "arm": "human",
+  "n_words": 286
+ },
+ "s6eabbee7847": {
+  "prompt_idx": 585,
+  "arm": "mistral_instruct",
+  "n_words": 286
+ },
+ "s6007ed7e462": {
+  "prompt_idx": 585,
+  "arm": "qwen3_instruct",
+  "n_words": 286
+ },
+ "s6d5e2b0cb90": {
+  "prompt_idx": 585,
+  "arm": "mistral_base",
+  "n_words": 286
+ },
+ "s6a5ff39717f": {
+  "prompt_idx": 604,
+  "arm": "human",
+  "n_words": 62
+ },
+ "s6bd3627d9ef": {
+  "prompt_idx": 604,
+  "arm": "mistral_instruct",
+  "n_words": 62
+ },
+ "s6cc23edf471": {
+  "prompt_idx": 604,
+  "arm": "qwen3_instruct",
+  "n_words": 62
+ },
+ "s6e7f0667e4b": {
+  "prompt_idx": 604,
+  "arm": "mistral_base",
+  "n_words": 62
+ },
+ "s6ac7ab6ac78": {
+  "prompt_idx": 628,
+  "arm": "human",
+  "n_words": 173
+ },
+ "s6c5b23680a5": {
+  "prompt_idx": 628,
+  "arm": "mistral_instruct",
+  "n_words": 173
+ },
+ "s6c2f5ae22d4": {
+  "prompt_idx": 628,
+  "arm": "qwen3_instruct",
+  "n_words": 173
+ },
+ "s6d5617e3453": {
+  "prompt_idx": 628,
+  "arm": "mistral_base",
+  "n_words": 173
+ },
+ "s68d2b5534db": {
+  "prompt_idx": 630,
+  "arm": "human",
+  "n_words": 76
+ },
+ "s6ce2335814e": {
+  "prompt_idx": 630,
+  "arm": "mistral_instruct",
+  "n_words": 76
+ },
+ "s6b6f0764ae3": {
+  "prompt_idx": 630,
+  "arm": "qwen3_instruct",
+  "n_words": 76
+ },
+ "s6bce7ee7987": {
+  "prompt_idx": 630,
+  "arm": "mistral_base",
+  "n_words": 76
+ },
+ "s6c5b13faedc": {
+  "prompt_idx": 634,
+  "arm": "human",
+  "n_words": 298
+ },
+ "s6dffff82af7": {
+  "prompt_idx": 634,
+  "arm": "mistral_instruct",
+  "n_words": 298
+ },
+ "s695757072ee": {
+  "prompt_idx": 634,
+  "arm": "qwen3_instruct",
+  "n_words": 298
+ },
+ "s698b1df455a": {
+  "prompt_idx": 634,
+  "arm": "mistral_base",
+  "n_words": 298
+ },
+ "s6f894c2095a": {
+  "prompt_idx": 659,
+  "arm": "human",
+  "n_words": 298
+ },
+ "s6c3cbd44b57": {
+  "prompt_idx": 659,
+  "arm": "mistral_instruct",
+  "n_words": 298
+ },
+ "s6be268544d2": {
+  "prompt_idx": 659,
+  "arm": "qwen3_instruct",
+  "n_words": 298
+ },
+ "s667cba13db0": {
+  "prompt_idx": 659,
+  "arm": "mistral_base",
+  "n_words": 298
+ },
+ "s6a4eec0a37f": {
+  "prompt_idx": 689,
+  "arm": "human",
+  "n_words": 92
+ },
+ "s66248d03a66": {
+  "prompt_idx": 689,
+  "arm": "mistral_instruct",
+  "n_words": 92
+ },
+ "s63f765e77bf": {
+  "prompt_idx": 689,
+  "arm": "qwen3_instruct",
+  "n_words": 92
+ },
+ "s67c89294555": {
+  "prompt_idx": 689,
+  "arm": "mistral_base",
+  "n_words": 92
+ },
+ "s6f3c79f873b": {
+  "prompt_idx": 715,
+  "arm": "human",
+  "n_words": 259
+ },
+ "s66f0923b297": {
+  "prompt_idx": 715,
+  "arm": "mistral_instruct",
+  "n_words": 259
+ },
+ "s6e80cca8df6": {
+  "prompt_idx": 715,
+  "arm": "qwen3_instruct",
+  "n_words": 259
+ },
+ "s6a4e6c215c2": {
+  "prompt_idx": 715,
+  "arm": "mistral_base",
+  "n_words": 259
+ },
+ "s609406fe340": {
+  "prompt_idx": 741,
+  "arm": "human",
+  "n_words": 276
+ },
+ "s6789b320264": {
+  "prompt_idx": 741,
+  "arm": "mistral_instruct",
+  "n_words": 276
+ },
+ "s62416940689": {
+  "prompt_idx": 741,
+  "arm": "qwen3_instruct",
+  "n_words": 276
+ },
+ "s69d6b9510d0": {
+  "prompt_idx": 741,
+  "arm": "mistral_base",
+  "n_words": 276
+ },
+ "s618da369916": {
+  "prompt_idx": 779,
+  "arm": "human",
+  "n_words": 227
+ },
+ "s63585328e7a": {
+  "prompt_idx": 779,
+  "arm": "mistral_instruct",
+  "n_words": 227
+ },
+ "s61b6f64c658": {
+  "prompt_idx": 779,
+  "arm": "qwen3_instruct",
+  "n_words": 227
+ },
+ "s6a8bb9ae28c": {
+  "prompt_idx": 779,
+  "arm": "mistral_base",
+  "n_words": 227
+ }
+}
