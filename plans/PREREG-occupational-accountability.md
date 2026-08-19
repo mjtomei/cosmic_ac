@@ -638,6 +638,33 @@ containing both ladders the near-collinearity of the coded pair means
 per-coefficient values are unstable — block-level joint tests carry the
 weight there, per the horse-race rule already registered.
 
+### Amendment, 2026-08-18, after the run — what the registration's primary
+### failed to carry, and the ruling on provenance (Matthew)
+
+An oversight in this document's drafting is recorded here rather than left to
+be discovered. **The design intent, stated repeatedly in the pre-run
+conversation — which carries the same provenance as this file — was the
+four-level inverted U: free and corporate-top low, corporate-middle the
+peak** ("I would actually expect the highest reading to come with middle
+managers with workers below them"; "three levels of corporate and a free";
+the pre-run run contract's "employed middle managers are the highest of the
+management cells"). The document registered that content — the apex delta
+("insulated command tracks more register than exposed command"), the rung
+arm (employed middle the highest management cell), the interior-peak
+altitude clause — **but wrote the primary as a linear three-profile rank**
+(beta(corporate) > beta(front-line) > beta(free)), which is a different and
+narrower claim than the U.
+
+The run refuted the linear rank and **confirmed the registered U content**:
+the delta at every level of adjustment, the rung ordering, the middle peak
+in both four-level slope tables (the continuous altitude quadratic failed;
+the discrete and relative forms carried it). The ruling, applied to every
+document: **no text may present the linear-profile refutation as a refutation
+of the middle-peak U, because the U was pre-registered — in this file's
+hierarchy section and in the conversation record.** The refutation is
+reported for exactly what it was: the failure of one operationalization the
+drafting elevated above the design intent it was meant to express.
+
 ## Pre-specified predictions
 
 ### The sign pattern (Matthew) — the corporate drone profile

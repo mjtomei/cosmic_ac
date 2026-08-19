@@ -1125,9 +1125,10 @@ contrast.
 The class arm left a shape (the II-over-I inverted U) without a mechanism.
 This arm registered one, built the instrument to measure it, and ran —
 `plans/PREREG-occupational-accountability.md` is the registration with every
-revision dated; METHODOLOGY §6.1c is the method record; every number below
-reproduces from a committed script on `prereg_member_table.json` (one join,
-n = 4,762 members with register and instrument, 3,594 with every covariate).
+revision and amendment dated; METHODOLOGY §6.1c is the method record; every
+number below reproduces from a committed script on
+`prereg_member_table.json` (one join; n = 4,762 members with register and
+instrument, 3,594 with every covariate).
 
 **The instrument, in one paragraph.** Each legislator's prior occupation,
 double-blind coded to an O\*NET-SOC code, joins 64 O\*NET elements whose
@@ -1135,114 +1136,87 @@ assignment to four components was itself blind-derived by three independent
 coding workflows over the full 295-element universe: **U** upward (advising
 without the final say; discretion reverse-scored), **L** lateral (external
 service), **D** downward (command), **N** undirected (organisational
-account-giving and contact). Three profiles are signed weightings: free
-(−,−,−,−), front-line (+,+,−,+ — serves the public, commands nobody),
-corporate (+,−,+,+ — reports up, faces inward, commands below). A parallel
-**uncharged** instrument — four hierarchy-level scores from coders never told
-the register or the hypothesis existed — ran beside it as a registered horse
-race, and supplies the **apex delta** (MIDDLE − TOP): insulated command
-against exposed command.
+account-giving and contact). From the components and from an independent
+blind coding of hierarchy positions come the study's registered structure —
+**four levels, built two semi-independent ways**: the *directional ladder*
+(free / bottom / middle / top composed from the components) and the *coded
+ladder* (the same four levels scored from element signatures produced by
+coders who were never told the register or the hypothesis existed) — plus
+the **apex delta** (MIDDLE − TOP), registered in words as "insulated command
+tracks more register than exposed command."
 
-**The registered peak was refuted, and the refutation restored the original
-claim.** The registration (revised, dated, before any element-register join)
-predicted the corporate profile on top. Observed: front-line +0.047 (t 3.3)
-above corporate +0.029 (t 2.0), corporate on top in 24% of 2,000 member
-resamples — the registered refutation clause fired, and the pre-revision
-front-line drone stands as written. Free is decisively the floor (−0.073,
-t −5.2), so the accountability construct survives; what failed is the
-revision's distinctive content (external service starving the register,
-command marking it). The component signs said the same: L arrived positive
-and D flat in the raw joint fit.
+**The registered four-level U is the result.** The design intent, registered
+in the document's hierarchy section and throughout the pre-run record
+(amendment of 2026-08-18): free and the top low, the middle the peak. Each
+level entered alone (standardised; n = 4,762, full-covariate slopes at
+n = 3,594):
 
-**The registered display disagrees with the registered test, and the
-disagreement is absolute-versus-relative, established by computing the
-registration's own gloss.** The argmax three-group means run **corporate
-−0.025 > front-line −0.045 > free −0.165** — the corporate ordering — while
-the slopes reverse it, and the registration pre-committed the slopes to
-govern with the disagreement reported. The first diagnosis considered
-(population weighting: the service population flattening the corporate
-axis) is **wrong**, and the test that killed it is the one the
-registration's gloss invites — it calls the slope ordering "the same claim
-as 'the peak is the corporate drone' without discretising anything," so the
-peak was computed directly: mean register at the top of each profile's own
-continuum, one member one vote, no grouping. Front-line's high end beats
-corporate's (top decile +0.095 vs −0.019, gap t −1.8; same at quintile),
-with **zero farmers involved** — corporate's top decile is high-discretion
-professionals (210 class I) and proprietors, mildly below average. So the
-individual-normalised peak reading agrees with the slopes, and the gloss's
-claimed equivalence fails in the other direction than suspected. What
-actually separates the display is algebra: the corporate-vs-front-line
-argmax boundary is the sign of (corporate − front-line score) = **(D − L)/2**
-— the display is a *relative* test of commanding-inwardness against
-service-outwardness within each member, not a test of absolute corporate
-position. Read that way, every result in the study says one thing: absolute
-corporate-ness does not mark the register; **inwardness relative to
-exposure does** — registered (the delta, t 3.9 under all covariates),
-grouped (t 2.1), and inside class rungs (t 4.0).
-
-**But the delta won, and it is the study's most covariate-robust
-occupational number.** Registered in words — insulated command tracks more
-register than exposed command — and observed +0.049 (t 3.3) raw, **+0.067
-(t 3.9)** with cohort, class, education and prominence all present, right-
-signed and nominally significant in 16 of 16 covariate specifications, and
-absorbing the component-built middle entirely when both enter. Dropped from
-the grand model it costs as much adjusted R² as the entire six-dummy class
-block (.0033 vs .0038); education is spent once class and the delta are
-present (.0004).
-
-**Both hierarchy ladders reproduce the class shape.** Each level entered
-alone (standardised, n = 4,762; full-covariate slopes n = 3,594):
-
-| level | directional ladder (components) | coded ladder (blind signatures) |
+| level | directional ladder | coded ladder |
 |---|---|---|
 | free | −0.060 (t −4.2) | −0.066 (t −4.7) |
 | bottom | −0.021 (t −1.5) | +0.010 (t +0.7) |
 | **middle** | **+0.029 (t +2.0)** | **+0.028 (t +2.0)** |
 | top | +0.010 (t +0.7) | +0.021 (t +1.5) |
 
-Middle peak, top below it, free at the floor — the II-over-I crossover in
-occupational form, from two semi-independently built instruments agreeing to
-the third decimal, and both middles survive the full covariate set (+0.041
-and +0.042, t 2.6 each). The registered altitude quadratic found **no**
-interior peak (Appendix A), so the discrete-level and delta forms carry the
-middle-peak claim, not the continuous one.
+Middle peak, top below it, free at the floor, bottom indistinguishable from
+zero — the II-over-I crossover in occupational form, from two instruments
+built by different processes, agreeing at the peak to the third decimal.
+Both middles survive the full covariate set (+0.041 and +0.042, t 2.6
+each); under covariates the shape sharpens (bottom mildly negative, top
+close behind middle), and the middle-over-top gap's powered test is the
+delta. The registered *continuous* form of the interior peak — the altitude
+quadratic — found nothing (Appendix A18); the discrete levels and the
+relative contrast carry the claim.
 
-**The gradient nests inside class, which is what "the class U was occupation
-all along" requires.** The delta's slope within class II alone is +0.076
-(t 3.3) — the class peak's own interior carries the occupational gradient —
-and +0.066 (t 4.0) with class fixed effects. Prediction 1 (the occupational
-block adds to EGP) confirmed in 16 of 16 paired specifications. The
-group-mean form of the two-corporates reading — insulated-corporate +0.037
-above front-line −0.045 (t 2.1 on the gap) above exposed-corporate — uses
-registered machinery with one unregistered knob (the median split), and one
-of its legs is farmer-driven: remove the 199 farmers the instrument reads as
-agricultural managers and exposed-corporate rises above front-line. The
-registered farmer headwind did exactly what it was registered to do.
+**The delta is the study's most covariate-robust occupational number.**
+Registered in words and observed +0.049 (t 3.3) raw; **+0.067 (t 3.9)**
+with cohort, class, education and prominence all present; right-signed and
+nominally significant in 16 of 16 covariate specifications; it absorbs the
+directional middle entirely when both enter. Dropped from the grand model
+it costs as much adjusted R² as the entire six-dummy class block (.0033 vs
+.0038); education is spent once class and the delta are present (.0004).
+Its group form — members split by relative inwardness, insulated against
+exposed — puts the insulated cell above the rest (t 2.1 on the gap), with
+one leg farmer-driven and reported as such: the 199 members the instrument
+reads as agricultural managers sit in the exposed cell and drag it, exactly
+the headwind the registration's prediction 5 named in advance.
 
-**The horse race and the pattern.** The uncharged instrument wins the
-registered AIC comparison narrowly (−205.0 vs −198.6); encompassing tests
-are significant both directions — neither instrument subsumes the other. The
-registered four-sign pattern (U+ L− D+ N+) holds in 25% of pattern-eligible
-lattice specifications, permutation p = 0.087 across 2,000 within-chamber
-shuffles — suggestive, unconfirmed; the pre-revision signs hold in 0%
-because D never goes negative under covariates. Under the covariate lattice,
-L's raw positivity dissolves (median +0.012, direction-unstable): the
-external-service gradient was carrying class and education correlation
-rather than surviving it.
+**The gradient nests inside class, which is what "the class U was
+occupation all along" requires.** The delta's slope within class II alone is
++0.076 (t 3.3) — the class peak's own interior carries the occupational
+gradient — and +0.066 (t 4.0) with class fixed effects. Prediction 1 (the
+occupational block adds to EGP) confirmed in 16 of 16 paired
+specifications.
 
-**Era restriction** (2025–26 speech only, n = 1,000): cohort deflates to its
-period-purged size (+0.138/sd, t 4.3 — the career figure of +0.383 was
+**The horse race and the pattern.** The uncharged (coded) instrument wins
+the registered AIC comparison narrowly (−205.0 vs −198.6); encompassing
+tests are significant in both directions — neither instrument subsumes the
+other. The registered four-sign component pattern (U+ L− D+ N+) holds in
+25% of pattern-eligible lattice specifications, permutation p = 0.087
+across 2,000 within-chamber shuffles — suggestive, unconfirmed. Under the
+covariate lattice, L's raw positivity dissolves (median +0.012,
+direction-unstable): the external-service gradient was carrying class and
+education correlation rather than surviving it, while U and N stay
+right-signed in 100% of specifications and D turns mildly positive
+throughout.
+
+**Era restriction** (2025–26 speech only, n = 1,000): cohort deflates to
+its period-purged size (+0.138/sd, t 4.3 — the career figure of +0.383 was
 mostly period mixing), the class-II contrast doubles to +0.203 (t 3.0), and
 the delta persists directionally at era power (+0.061, t 1.7; the career
 effect predicts t ≈ 2.0 at this n). In the spike window, class II is the
 strongest social-position covariate; the insulation contrast holds its size
 without independent confirmation.
 
-Failed registered predictions are in Appendix A (the altitude quadratic, the
-autonomy asymmetry, nominal-vs-effective autonomy); superseded instrument
-generations are in Appendix B. Scale for all of it: §5's calibration bullet
-— these are small effects by any benchmark, reliably estimated, structurally
-replicated, and floors rather than ceilings.[^r46f]
+One drafting generation of the registration expressed the peak claim as a
+linear three-profile rank; that operationalization failed its own test and
+the framing is retired — Appendix B8 preserves its numbers, and the
+registration's post-run amendment records the oversight and the provenance
+ruling. Failed registered predictions are in Appendix A (the altitude
+quadratic, the autonomy asymmetry, nominal-vs-effective autonomy). Scale
+for all of it: §5's calibration bullet — small effects by any benchmark,
+reliably estimated, structurally replicated, floors rather than
+ceilings.[^r46f]
 
 [^r46f]: `python prereg_stage1.py`, `prereg_stage2.py`,
     `prereg_synthesis_check.py`, `prereg_covariate_strength.py`,
@@ -2759,16 +2733,29 @@ climbs. What does carry is measured on individuals, not on chambers.
    comparison, not a flat trend, and "cohort replacement, *not* incumbent
    conversion" was the wrong frame — both mechanisms operate.
 
-8. **Three instrument generations behind §4.6b.** The six-element
-    account-giving composite (four documentation items + two reverse-scored
-    autonomy items) and the 2×3 six-cell grid built on it were superseded by
-    the blind element audit: the documentation items proved undirected and
-    moved to N, Letters and Memos — zero votes in two audit arms — was
-    re-admitted by the four-cell arm as undirected account-giving, and the
-    final 64-element four-component instrument replaced both earlier forms.
-    Registered corporate-drone primary ordering (corporate above front-line)
-    is not superseded but *refuted*, and reported as such in §4.6b; the
-    pre-revision front-line ordering it displaced is restored by the data.
+8. **Retired framings behind §4.6b, with their numbers.** Three instrument
+    generations: the six-element account-giving composite and the 2×3
+    six-cell grid were superseded by the blind element audit (documentation
+    items proved undirected and moved to N; Letters and Memos, zero votes in
+    two audit arms, was re-admitted by the four-cell arm; the 64-element
+    four-component instrument replaced both). A fourth retirement is the
+    **three-profile linear rank** (free / front-line / corporate as signed
+    component weightings) that one drafting generation of the registration
+    elevated to the primary. Its numbers, preserved: entered alone,
+    front-line +0.047 (t 3.3) above corporate +0.029 (t 2.0), free −0.073
+    (t −5.2); corporate on top in 24% of 2,000 member resamples — the linear
+    rank failed its own registered clause. The individually-normalised
+    check computed at Matthew's challenge agreed (top decile of each
+    profile's own continuum: front-line +0.095, corporate −0.019, free
+    −0.145, no farmers involved), while the argmax group display ran the
+    other way (corporate −0.025 > front-line −0.045 > free −0.165) because
+    its corporate/front-line boundary is algebraically sign((D−L)/2) — a
+    relative inwardness test, the delta's cousin, not absolute corporate
+    position. Per the registration's post-run amendment, the design intent
+    was always the four-level middle-peak U (pre-registered in the hierarchy
+    section and the conversation record), the linear rank was the drafting
+    oversight, and §4.6b reports the U as the registered result with this
+    entry holding the retired form's numbers.
 9. **Lattice B, first draft** — superseded same-day. Each hierarchy ladder
     was entered as a four-score joint block; the within-block partials were
     suppression artifacts (the coded pair correlate .99; the directional

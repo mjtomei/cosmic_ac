@@ -579,9 +579,11 @@ ordering is in git history.)*
 **2026-08-18 — S10 occupational pre-registration executed end to end.** The
 instrument was blind-derived (three element-audit workflows over all 295
 rated O\*NET 30.3 elements; final 64 elements, four components, three
-profiles + an uncharged rival and the apex delta), the corporate-drone
-revision of the primary was registered pre-join and REFUTED by the run
-(front-line restored; free at the floor), and the delta — insulated command
+profiles + an uncharged rival and the apex delta), a linear three-profile
+rank from one drafting generation failed its own registered clause and was
+retired post-run (prereg amendment: the pre-registered design intent — in the
+hierarchy section and the conversation record — was the four-level
+middle-peak U, which the run CONFIRMED), and the delta — insulated command
 over exposed — won at every level of pre-commitment (+0.067, t 3.9 under all
 covariates; ties the whole EGP block for second place behind cohort). Both
 hierarchy ladders reproduce the class inverted U with middle peaking and the

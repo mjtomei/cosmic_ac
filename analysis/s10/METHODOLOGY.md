@@ -1765,9 +1765,10 @@ call, nothing without blind support (Realistic fell). Final: **64 elements in
 four components** — U upward ("advises but does not decide": consultation +
 four discretion items reverse-scored), L lateral (external service), D
 downward (command), N undirected (organisational account-giving and
-sociality) — and three profiles as signed 4-vectors: free (−,−,−,−),
-front-line (+,+,−,+), corporate (+,−,+,+). A parallel **uncharged
-instrument** exists for a registered horse race: four level scores
+sociality) — From the components, the reported structure is the
+**four-level ladder** (free / bottom / middle / top; a three-profile linear
+rank from one drafting generation is retired — prereg amendment 2026-08-18,
+draft Appendix B8). A parallel **uncharged instrument** exists for a registered horse race: four level scores
 (FREE/BOTTOM/MIDDLE/TOP) from coders who were never told the register or the
 hypothesis existed (`element_levels.json`, `level_scores.py`), plus the
 **apex delta** = MIDDLE − TOP, registered in words as "insulated command
