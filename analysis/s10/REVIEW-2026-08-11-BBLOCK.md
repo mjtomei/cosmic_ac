@@ -1,253 +1,155 @@
-# Q block — the quality-arm findings of the 2026-08-11 adversarial review
+# B block — the bypass-arm findings of the 2026-08-11 adversarial review
 
-*This file is for Matthew's review. Below the status block is the ORIGINAL
-consolidated presentation of all twelve Q items, extracted verbatim from the
-session transcript (pre-compaction, 2026-08-17); each item was verified with
-confirmatory runs before that presentation. Nothing in the verbatim section
-has been edited.*
+*Self-contained review file for Matthew: apparatus context, then the review's
+eight findings verbatim, then the paper text they target. **Status: none of
+the B items has been adjudicated or independently verified yet** — the
+verdict labels (CONFIRMED/PARTIAL) are the review's own; I will run
+confirmations per item as you review, the same flow as the Q block.*
 
-## Status as of 2026-08-19
+## The apparatus these refer to
 
-| item | status |
-|---|---|
-| Q7 | **CLOSED** — `analyze_stage2.py` committed (6481d8d), reproduces the column |
-| Q3, Q5, Q6, Q11 | disclosure edits, will be applied as described unless vetoed |
-| **Q1** | **OPEN — ruling needed**: report the applicability collapse as its own finding? (recommended: yes, both claims) |
-| **Q4 + Q10** | **OPEN — ruling needed**: units row + per-sd figures; pooled genre means 1.10/2.09? (recommended: fix both) |
-| **Q9** | **OPEN — ruling needed**: drop the star on stage-1 respect-groups, carry the conjunct on stage 2? (recommended: yes) |
-| **Q2 + Q8 + Q12** | **OPEN — ruling needed**: one schema fix (segment IDs + word counts + per-grade records) unblocks all three; then run the length control and speaker clustering? (recommended: fix + run) |
-
----
-
-## Part 1 — My verified summaries (from the session transcript, verbatim)
-
-All confirmed. Here's the full Q block. **Shared context first**, since every item refers to the same apparatus.
-
-**The quality arm** grades legislative speech against the **DQI** (Discourse Quality Index — Steenbergen et al. 2003), a deliberation rubric scoring seven dimensions: *justification*, *common_good*, *respect_groups*, *respect_demands*, *respect_counterargs*, *constructive*, *evidence*. Two of those can be **inapplicable** — you can't score "respect toward others' demands" if nobody made one — and are coded **−1** and excluded from means.
-
-Five gradings exist. **Stage 1** (840 segments, federal Canada, genre-balanced) regresses DQI on the *Opus screen's continuous 0–100 score*. **Stage 2** (682 segments, cross-chamber) regresses on the *Pangram binary verdict* with chamber fixed effects. **Stages 3 and 4** are within-text paired designs (38 and 25 pairs) comparing a segment against its detector-evading rewrite. **Appendix C.1** is a cross-account reliability replication.
-
-The headline: **AI-flagged speech is better-formed and shows no engagement penalty once genre or chamber is held fixed** — which retired the earlier "form up, deliberation down."
+The **bypass arm** asks how evadable the study's detection is under directed
+effort. Flagged segments were rewritten by a frontier model with the explicit
+goal of preserving content while clearing **Pangram** (the commercial AI-text
+detector the study calibrates against); the study reports that the directed
+search clears the detector on **8.5% of rewrite variants and 22.5% of
+targets** (a target = an original flagged segment, attacked with multiple
+variants), across **four runs over two days**. This is why the 9.0% headline
+prevalence is presented as a floor. Supporting documents: draft §4.9 (the
+"evadable under effort" half), `BYPASS_METHODOLOGY.md` (the arm's own methods
+file), and per-run scripts. The eight findings below concern pooling across
+the four runs, denominators, what "no detector access" means, in-sample
+replication claims, power, and missing scripts.
 
 ---
 
-**Q1 — applicability is an outcome, and it moves.** *PARTIAL, but the substance is real.* Excluding the −1 cells conditions on something the treatment affects. **I measured it:** applicability collapses at high screen scores — respect_demands **61.4% → 63.0% → 31.1%** across ai<10 / 10–49 / ≥50, respect_counterargs **50.8% → 51.2% → 28.9%**. AI-flagged speech is about **half as likely to contain anything to engage with**. The review's own adjudication notes the composite coding (−1 = 0) is null in all four cells, so the *total* engagement effect is still zero — but that's a different claim. **Fix:** report P(applicable) by condition, and distinguish "engages worse when there is something to engage" (null) from "less likely to have anything to engage with" (not null).
+## Part 1 — The review's findings, verbatim (REVIEW-2026-08-11.md §2.4, Bypass arm)
 
-**Q2 — stage-2 length imbalance, uncontrolled.** *PARTIAL.* AI/Mixed segments run +29.4 words longer within chamber (t +5.4), and length predicts justification, so it could account for ~half the +0.290. **I verified the blocker:** `results_stage2.json` has no `n_words` and no segment id, so the control **cannot be run at all**. Note length is plausibly a *channel* rather than a confound — longer speeches having more room to justify is part of "better-formed" — and respect_groups, the strongest conjunct (t +6.1), has a length slope of −0.018, so at least one conjunct isn't length. **Fix:** report the imbalance, name length as a channel, add segment ids.
+#### Bypass arm
 
-**Q3 — the paired nulls are underpowered.** *PARTIAL.* Stages 3/4 can only exclude effects of 0.12–0.26 (stage 3) and 0.59–1.00 (stage 4's adjusted column). Twenty-eight tests, no multiplicity note. But the review concedes its MDEs are reconstructed from a rounded cache, gets one scale wrong, and the imprecision is mostly M2's already-retired length-adjustment artifact. Also: for a *null*, multiplicity cuts the other way — 0 of 28 significant is harder without correction. **Fix:** state what the paired arms can and cannot exclude; don't lean on stage 4's adjusted column.
+**B1. The four runs do not share a common rate, and the pooling weight is endogenous.**
+*PARTIAL.* Run rates 1/40 (2.5%), 29/212 (13.7%), 0/80 (0%), 9/129 (7.0%); Pearson χ² =
+17.05 on 3 df, p = 0.0007. Each run's weight in the pool is the number of variants that
+passed the Opus gate, and gate-passing measures how well the search went, so the most
+successful search gets the largest weight. The unweighted mean of run rates is 5.8%, not
+8.5%. *Accurate version:* heterogeneity is real and a Wilson interval on the mixture is not
+a clean estimand — but none of it is hidden. The per-run rows are printed side by side in
+both primary documents, `bypass_report.py` names the estimand descriptively, and the
+write-up says the pooled figure "keeps two superseded searches in the denominator, including
+the badly-seeded run that produced nothing". The proposed alternative is not obviously
+better: the unweighted mean gives the 40-variant v2 row (per-target bests, 19 of 40 failing
+the gate) equal weight to the 212-variant v3 row. And v3's larger share comes from a
+protocol change, not from the search having gone well. *Fix:* report the four run rates and
+the heterogeneity test; if one number is required, say it is a variant-weighted average
+over four incomparable designs.
 
-**Q4 — stage 1 and stage 2 aren't the same quantity.** *PARTIAL.* **Verified:** the stage-1 regressor is the screen's 0–100 score, but its observed max is **70**, sd **15.3**, IQR **18**, with **59% of values below 10**. So +1.134 is a fitted 0→100 difference on a variable that never reaches 100. Rescaled: **+0.173 per sd, +0.204 per IQR** — right next to stage 2's binary +0.290. The 4× ratio in the table is a units artifact. The text never claims a magnitude difference, but the table invites one. **Fix:** units row plus per-sd figures.
+**B2. "No detector access of any kind" is false.** *PARTIAL.* The contrastive search —
+responsible for 29 of 39 variant reversals and 10 of 16 target reversals — was built on
+Pangram's own labels: its exemplars are, in the script's words, "the two highest-scoring
+genuine Pangram-Human segments that still score BELOW it", and all 41 exemplars across the
+three contrast files are labelled Human in `pangram_p4_verdicts.csv`. *Accurate version:*
+Pangram's role is as a genuine-human *filter*, not a style oracle — the matching is entirely
+on Opus (median gap 3 for NB, 10 for GO) — and given this study's own 0/1,260 specificity,
+"Pangram says Human" among genuine Hansard is close to "is genuine human text", a property
+obtainable without any detector (e.g. pre-2022 Hansard). The load-bearing threat-model claim
+survives exactly: the search never queried the detector on the text it was attacking, no
+gradients, no fine-tuning, tested on Pangram only at the end. *Reproduce:* cross-reference
+every exemplar `seg_id` in `bypass_contrast.json`, `gov_contrast_all.json`,
+`gov_contrast.json` against `pangram_p4_verdicts.csv`. *Fix:* "no query access to the
+detector on the text under attack", plus one clause on the exemplar labels.
 
-**Q5 — reliability presented as validity.** *PARTIAL, mostly refuted.* Three sub-claims; the adjudicator kills two — the Spearmans are compared to the *human inter-coder* bar of 0.716, which all seven exceed, and the "anomalously low" evidence cites the wrong transcripts. What survives is real though: same-model cross-account agreement is **reliability**, and a judge that reads AI register as justification would reproduce perfectly, so high self-agreement is *predicted by* the leakage hypothesis. **Fix:** one sentence — qualify §8.3's "quality assessment is orthogonal to provenance."
+**B3. The effort paragraph switches the definition of success.** *CONFIRMED.* "The blind v2
+search flipped 10% of variants; the contrastive v3 search 28%" are *moved-off-AI* rates
+(Mixed or Human): 4/40 and 59/212. The comparable Human-reversal rates are 2.5% and 13.7%.
+Placed three lines after the 8.5% headline and framed as "both rates move with effort", the
+sentence invites a reader to take 28% as the per-variant reversal rate of the best search —
+a 2× overstatement. "flip" occurs exactly once in the bypass section and is never defined
+there, while the next sentence's "If 'soften off AI' rather than 'reach Human' is the bar"
+actively implies the preceding numbers were on the reach-Human bar.
+`BYPASS_METHODOLOGY.md`:84–91 itself warns the two are different events. *Mitigations:* the
+numbers are correct under the term as defined in BYPASS_METHODOLOGY, the comparison is
+internally like-for-like, and on the reach-Human definition the effort multiple is *larger*
+(5.5× vs 2.8×). *Reproduce:* tabulate verdicts per run from `bypass_report.load()`. *Fix:*
+state both quantities explicitly.
 
-**Q6 — the self-contradiction argument rests on n = 5.** *PARTIAL.* **Verified:** the candidate gap is **−0.356, Welch t −1.47, n = 20 vs 32**; the uniform gap rests on 5 applicable AI segments. Two noisy nulls disagreeing in sign is the expected outcome, not proof of instrument failure — and the write-up ranks it *first* among three observations. The retirement of "deliberation down" is carried by the genre control, which is sound. **Fix:** give n and t; don't rank this above the genre control.
+**B4. Each headline is computed on a different subset.** *PARTIAL.* 8.5% is all four runs;
+24.6% is the final search per chamber only. The internally consistent alternatives are
+final-two-run per-variant 11.1%, all-four per-target 12.3%, distinct-text 17.4%; on the
+final two runs the gap between the two rates is 2.3×, not threefold. *Accurate version:*
+"the asymmetry is not disclosed" does not hold — both subsets are named in the bold headings
+themselves ("8.5% per variant, all four runs"; "24.6% per target, best method only") with
+the rationale in the same sentences. And the charge of convenient subsetting is contradicted
+where it can be tested: the one place the subsets are combined into a ratio is the "3.7×"
+line, and the same-subset version is 11.1%/2.31% = **4.8×** — the study reported the number
+that makes its own instrument look *worse*. *Fix:* print all four cells of the
+(subset × estimand) table, and compute any single multiple on one subset.
 
-**Q7 — the stage-2 column has no committed script.** *PARTIAL, but a convention violation.* No `.py` in `quality_expansion/` puts chamber in a design matrix, and the documented command produces different numbers. The specification *is* stated in words and reproduces from that sentence, and dropping Mixed barely moves it (+0.263/+0.283/+0.231) — but this breaks the study's **one-script-per-claim** rule, the same class of defect as L1 and L9. **Fix:** add a `--chamber-fe` path; state the Mixed coding at the table.
+**B5. Half the pooled per-target estimate is in-sample for the replication claim.**
+*PARTIAL.* "This is the figure a fresh study replicating our best method should expect to
+reproduce" is said of 24.6%, but v3's design was derived from watching v2 fail on the same
+40 New Brunswick texts (`gov_bypass_all.js:15-35` lists three changes "each fixing a
+measured defect", one justified by "All four Pangram flips observed so far came from
+variants scoring under 34"). Only GO all-31 is a clean out-of-sample application.
+*Accurate version:* none of the three changes is fitted per text — contrastive exemplars and
+noise-aware early stopping are tuned on the Opus proxy, and keeping all sub-50 variants is a
+submission-budget change a replicating study would also make. The empirical answer is in the
+data: the clean out-of-sample run returns 22.2% against NB v3's 26.3% (19.4% vs 25.0%
+corrected), which is not what overfitting looks like. Appendix C.4 already calls GO all-31
+"an exploratory replication rather than an independent rate estimate". *Fix:* name GO
+all-31 as the only out-of-sample estimate and quote it (19–22%, wide interval) as the
+replication expectation; keep the pooled figure as a summary of what was achieved.
 
-**Q8 — SEs aren't clustered on speaker.** *PARTIAL.* HC1 is correctly implemented but has no cluster dimension. Stage 1 draws 840 segments from 418 speakers; a design effect of 1.2–1.4 would take stage-1 respect_groups (t 2.01) below significance. Stage 2 is nearly inert (mean cluster 1.28). **Blocked by the same missing segment id as Q2.**
+**B6. "The two chambers agree closely" is a comparison with no power.** *PARTIAL.* The
+difference is 4.1pp with a 95% CI of [−16.9, +25.1]pp; the data are equally consistent with
+the GO rate being half or double the NB rate. *Accurate version:* the concordance is
+evidence about a question the pooled interval does not address — the interval quantifies
+sampling error *under an assumed common rate*, and says nothing about whether one exists, so
+the sentence is not double-counting. It is also paired with a genuinely independent point:
+the two chambers' derived humanising hypotheses flatly contradict each other, which is what
+makes "the rate transfers; the playbook does not" more than a restatement. *Fix:* soften
+"more trustworthy than its interval suggests" to "consistent across two chambers, though
+with intervals too wide to establish that they agree".
 
-**Q9 — stage-1 respect_groups fails multiplicity.** ***CONFIRMED, and I reproduced it exactly.*** Benjamini-Hochberg across all 14 reported cells:
+**B7. Two of the four runs and the band tables have no script.** *PARTIAL.*
+`BYPASS_METHODOLOGY.md:5` says "Everything is reproducible from analysis/s10/". The New
+Brunswick v2 and v3 search scripts are absent (only `gov_bypass_v3.js` and
+`gov_bypass_all.js` exist), so the run contributing 29 of 39 variant reversals cannot be
+re-executed or inspected for its gate parameters; and the contrast-pair builders that
+produced `bypass_contrast.json` and `gov_contrast_all.json` exist nowhere. *Accurate
+version:* the third sub-claim — that the band tables are unreproducible — is wrong, and it
+is the one called "the entire basis of the organising hypothesis". The New Brunswick band
+table regenerates exactly from stored artifacts in about ten lines (join `opus_orig3x` from
+`pangram_bypass_key.json` onto `pangram_v3_key.json` and `bypass_v3_pangram.json`, then
+band): 46/54/56/56 variants with flip 57%/30%/23%/7% and clean Human 43%/7%/9%/0%, every
+cell to the digit. The missing-script gaps are also partly mitigated:
+`BYPASS_METHODOLOGY.md:242-244` records that the GO script was copied from the NB script and
+differs only in paths, seed count and one field name, verified by structural diff.
+*Reproduce:* `ls *.js && grep -rl 'human_exemplars' . && grep -n 'band' bypass_report.py`.
+*Fix:* commit the NB search scripts and the contrast-pair builders, or state in §4.9 and
+C.4 that two of the four runs are documented by their outputs only; add the band computation
+to `bypass_report.py`.
 
-| cell | t | q |
-|---|---|---|
-| s2 respect_groups | 6.1 | 0.0000 |
-| s2 common_good | 4.5 | 0.0000 |
-| s2 justification | 4.4 | 0.0001 |
-| s1 justification | 4.1 | 0.0001 |
-| s1 common_good | 3.3 | 0.0027 |
-| **s1 respect_groups** | **2.0** | **0.106 — fails** |
-
-It's the only nominally-significant cell that fails, and it's also the one that flips sign under the judge_ai control (+0.29 → −0.14). **Fix is clean rather than costly:** drop the star and attribute the conjunct to **stage 2**, where the same dimension is the strongest cell in the table (t +6.1, q < 0.0001) on an independent pool with an external label.
-
-**Q10 — two "genre means" are era cells.** ***CONFIRMED.*** **Verified:** the draft's 1.14 vs 2.01 are the **post-era** cells (1.136, 2.014). Pooled they're **1.096 vs 2.089** — marginally *more* favourable to the argument. The substantive point holds: SO31 is the lowest-justification genre and carries the highest mean screen score (**17.9** vs OQ 9.8, DEBATE 11.6). **Fix:** quote 1.10 vs 2.09.
-
-**Q11 — the stage-3 length motivation describes stage 4.** *PARTIAL.* The docstring's "~30 words longer at the median" is true of group medians but the *paired* shift — the only thing the model uses — is ~0 (median +4, mean −1.3, 42% shorter). That figure belongs to stage 4. The covariate is still warranted, for **precision** (within-pair sd is 37.9 words). **Fix:** say the paired shift is ~0 and the covariate is there for precision.
-
-**Q12 — three of five gradings can't be recomputed.** ***CONFIRMED.*** Stages 3/4 survive only as a rounded summary; Appendix C.1 has no cached output, so footnote r49b's reproduce line **cannot be executed**. The review's own headline overstates ("none of the five") — stages 1 and 2 do cache per-segment grades. **Fix:** commit per-grade records for all five stages.
-
----
-
-**One consolidation worth acting on:** **Q2, Q8 and Q12 are the same defect** — the results files lack segment ids and word counts. Adding those two fields unblocks the length control, the speaker clustering, and the reproducibility gap in one change rather than three.
-
-**And the honest count:** two CONFIRMED with real content (Q9, Q12), one CONFIRMED and trivial (Q10), Q1 substantive despite being PARTIAL, and the rest disclosure or units. Q9 is the only one that removes a claim — and it survives, just carried by better evidence.
-
----
-
-## Part 2 — The review's own findings, verbatim (REVIEW-2026-08-11.md §2.4, Quality / DQI arm)
-
-
-#### Quality / DQI arm
-
-**Q1. Applicability is an outcome, it moves with AI status after the fixed effects, and it
-is never reported.** *PARTIAL.* Two dimensions carry a −1 inapplicable code excluded from
-means. With genre and era FE, P(respect_demands applicable) falls −0.492 per unit screen
-score (t −3.6) and P(respect_counterargs applicable) −0.319 (t −2.3); with chamber FE,
-stage-2 respect_demands applicability is −0.141 (t −3.9) for AI/Mixed. That is the monologic
-property the exclusion rule was written to avoid "manufacturing", and it survives the
-control that retired "deliberation down". Excluding −1 conditions on a post-treatment
-variable and drops 40–50% of stage-1 rows. `analyze.py`'s own comment says the
-applicable-rate "is reported instead"; no script or table reports it. *Accurate version:*
-the composite coding (−1 = 0) is null in all four cells (stage 1 −0.272 t −1.6 and −0.251
-t −1.2; stage 2 −0.094 t −1.6 and +0.009 t +0.1), so the *total* engagement effect is
-indistinguishable from zero after genre or chamber — which is what the write-up claims. The
-headline applicability coefficients also carry Q4's unit problem (−0.492 is per 100 points
-of a 1–70 regressor, i.e. −7.5pp per sd); only the stage-2 −0.141 is on a binary contrast.
-The exclusion rule is the original run's documented convention, not an ad-hoc choice.
-*Fix:* report P(applicable) by condition with FE, add the composite row as a sensitivity,
-and distinguish "engages worse when there is something to engage" (null) from "is less
-likely to have anything to engage with".
-
-**Q2. Stage 2 has a large unreported length imbalance and no length control.** *PARTIAL.*
-AI/Mixed segments run +29.4 words longer than Human within chamber (t +5.4). The
-length-quality slope on this study's own 241-segment v2 pool with group FE is +0.481
-justification points per 100 words (t +7.0) and +0.204 common_good, so the imbalance could
-account for about half the reported +0.290 justification effect. It cannot be tested
-because `results_stage2.json` carries no segment id and no word count. *Accurate version:*
-length is plausibly a *channel* of the treatment (AI drafting producing longer speeches is
-part of "better-formed"), and the study's claim is descriptive, so conditioning on it would
-answer a different question. The alleged inconsistency with stages 3/4 is not one — those
-are within-text paired designs. The transported slope is an upper bound: the v2 pool has no
-genre field, so it is uncontrolled for the variation driving both length and justification.
-And respect_groups, the strongest stage-2 conjunct at t +6.1, has a length slope of −0.018
-(t −0.5), so at least one conjunct cannot be length. *Fix:* report the +29-word imbalance
-and name length as a plausible channel; add the segment id to the results files so the
-control can be run at all.
-
-**Q3. The stage-3/4 null is underpowered where it matters most.** *PARTIAL.* MDEs (80%
-power, two-sided .05) back-solved from the cached estimate/t pairs: stage 3's five
-non-sentinel dimensions are informative at 0.12–0.26; stage 3's two sentinel dimensions
-(n = 12) are 0.38–0.59; stage 4's *quoted* column is 0.59–0.68 for justification, 0.59–1.00
-for common_good, 0.93–1.57 for evidence. Twenty-eight tests with no multiplicity note.
-*Accurate version:* the MDEs are reconstructed from a cache rounded to 2–3 dp with t to 1
-dp, yielding ranges as wide as [0.93, 1.57] and leaving four cells unidentified; the scale
-column is wrong for two cells (`dqi_judge_v2b.js` sets respect_counterargs to max 3, not 2);
-and the imprecision is entirely M2's length-adjustment artifact — stage 4's *raw* MDEs are
-0.19–0.36 and the raw column is in the artifact, so this partly double-counts M2. The
-multiplicity complaint also cuts the wrong way for a null: 0 of 28 cells significant is
-harder to obtain without correction, not easier. *Fix:* state what effect sizes the paired
-arms can and cannot exclude, and do not lean on stage 4's adjusted column for a
-"nothing here" claim.
-
-**Q4. Stage-1 and stage-2 coefficients are not the same kind of quantity.** *PARTIAL.*
-Stage 1 regresses on the screen's continuous 0–100 `ai_guess`/100, so +1.134 is the fitted
-difference between ai_guess = 0 and 100 on a variable whose observed maximum is 70, sd 15.3,
-with 59% of values below 10. Per sd it is +0.173; over the IQR +0.204. Stage 2's +0.290 is a
-binary contrast. Presented in one table with no units row, the 4× ratio reads as a
-substantive difference. *Accurate version:* the mechanics are right and the fix is a units
-row, but the finding supplies the misreadings and then attributes them — the write-up's
-claim at that table is "Different populations, different label sources, same answer", which
-is about agreement in direction and significance pattern, not magnitude. Nowhere does the
-study call the federal effect four times larger or read +1.134 as 38% of the scale. *Fix:*
-report per-sd or per-IQR effects, add a units row, give the observed range in the caption.
-
-**Q5. Appendix C.1 reports test-retest reliability and §8.3 converts it into validity.**
-*PARTIAL.* Three sub-claims. (a) Five of the seven Spearmans (0.781–0.923) fall *inside*
-the stated 0.68–0.91 band rather than above it. (b) The 0.30 "shifted" flag is larger than
-every stage-2 effect it is being used to protect. (c) Same-model cross-account agreement is
-reliability; a judge that reads AI register as DQI justification reproduces perfectly, so
-high self-agreement is *predicted by* the leakage hypothesis. *Accurate version:* (a) is
-refuted — "at or above" means inside or above, which is `compare_replication.py`'s own
-criterion, and §8.3's comparison is to the *human inter-coder* bar of r = 0.716, which all
-seven values exceed. (b) is weakened — the 0.30 flag is a coarse check on group *levels*,
-and C.1 separately reports the sign test (12/14 gaps keep sign, including every
-claim-bearing one) and the per-segment Spearmans. (c) is real but disclosed in §5.
-Additionally, the two 2026-07-31 transcripts offered as evidence that the cross-account run
-is anomalously low do not support it: `wf_0aa63dc2` is the run that *produced*
-`fable_judge_v2_scores.csv`, so its 0.94–0.98 is self-comparison, and `wf_e2fe0a4b` is the
-retired 6-dimension paraphrase. *Fix:* one sentence — cut or qualify §8.3's "quality
-assessment is orthogonal to provenance", which sits in tension with §4.9's own gaps. See
-**X4**.
-
-**Q6. The self-contradiction argument, ranked first, rests on n = 5.** *PARTIAL.* Both gaps
-reproduce (cand −0.356, uniform +0.650) and neither is distinguishable from zero: the
-+0.650 rests on 5 applicable AI segments against 60 (Welch t = +1.30); the −0.356 is
-t = −1.47 on 20 vs 32. Two noisy nulls disagreeing in sign is the expected outcome, not
-evidence of instrument failure, and neither n nor t appears in the write-up. *Accurate
-version:* the write-up's assertion is literally true and the inference drawn is the modest
-one — the two pairs *did* disagree in sign, and the point is the fragility of the original
-finding, which two mutually-opposed nulls demonstrate. It is also explicitly corroborative:
-the retirement of "deliberation down" is carried by the genre control, which the finding
-concedes is sound. *Reproduce:* recompute both gaps and Welch t from
-`fable_judge_v2_scores.csv`. *Fix:* give n and t for both gaps and do not rank the
-observation above the genre control.
-
-**Q7. The stage-2 column has no committed script and an undisclosed coding.** *PARTIAL.* No
-`.py` in `quality_expansion/` puts chamber in a design matrix; the documented command
-(`python analyze.py --key key2.json`) regresses on the *screen's* ai_guess and produces
-different numbers. The published column is recoverable only under "AI or Mixed = 1,
-Human = 0" with 21 chamber dummies. Mixed pooling is stated once in §5 and never at the
-table. *Accurate version:* the traceability defect is real and is a violation of the
-study's one-script-per-claim convention, but three specifics are wrong: the specification
-*is* stated in words at the table ("labelled by Pangram verdict, with chamber fixed
-effects"), and reproduces exactly from that sentence alone; `key2.json` does carry genre for
-the 82 federal-Canadian rows, so the claim that all fixed effects collapse to nothing is
-false; and the quoted alternative numbers do not reproduce. Dropping Mixed gives +0.263 /
-+0.283 / +0.231, so the substance is unaffected. *Fix:* add a `--chamber-fe` path or a
-stage-2 script, note it in Appendix C.5, and state the Mixed coding at the table with the
-drop-Mixed sensitivity.
-
-**Q8. Standard errors are not clustered on speaker.** *PARTIAL.* HC1 is correctly
-implemented (validated to 1.1e-15 against a numpy reference) but has no cluster dimension.
-Stage 1 draws 840 segments from 418 speakers with 26% from speakers contributing ≥ 5; a
-design effect of 1.2–1.4 takes stage-1 respect_groups (t = 2.01) below significance. It
-cannot be recomputed because the results files omit the segment id. *Accurate version:*
-stage 2 draws 682 from 532 speakers (mean cluster 1.28, only 1.6% from speakers with ≥ 5),
-so clustering is nearly inert there — and all three headline conjuncts replicate in stage 2
-at t +4.4, +4.5 and +6.1. The only reachable cell is stage-1 respect_groups, which is
-carried by stage 2. *Fix:* add the segment id to the results files and report
-speaker-clustered SEs alongside HC1.
-
-**Q9. Stage-1 respect_groups does not survive multiplicity.** *CONFIRMED.* Fourteen
-coefficients are reported and starred at nominal .05 with no adjustment. Benjamini-Hochberg
-across the 14 leaves five of the six nominally significant cells at q ≤ 0.0031 and puts
-stage-1 respect_groups at q = 0.104. It is also the cell that flips sign under the
-judge_ai control. *Reproduce:* exact two-sided normal p-values and BH q-values for all 14
-cells (`/tmp/s10_quality_review.py` section H). *Fix:* drop the star and attribute the
-conjunct to stage 2, where it is the strongest cell in the table (t +6.1, q < 0.0001) on an
-independent pool with an external label.
-
-**Q10. Two "genre means" are era cells.** *CONFIRMED.* §4.9 line 447 says "SO31 has the
-lowest justification of any genre (1.14, against 2.01 for government business)". 1.136 and
-2.014 are the *post-era* cells; the genre means pooled over era are 1.096 and 2.089. The
-substantive point is unaffected — SO31 really is the lowest-justification genre and carries
-the highest mean screen score (17.9 vs 9.8 and 11.6) — and the pooled figures are marginally
-*more* favourable to the argument. *Reproduce:* mean `justification` by genre and by
-(genre, era) from `results_stage1.json`. *Fix:* quote 1.10 against 2.09, or label the
-figures as the 2025–26 cells.
-
-**Q11. The stage-3 length motivation is a difference of medians.** *PARTIAL.*
-`analyze_stage3.py`'s docstring says "Humanized versions run ~30 words longer at the median
-(200 vs 168)"; the *paired* difference — the only quantity the model uses — has median +4
-and mean −1.3, with 42% of pairs shorter after rewriting. The claim is true of stage 4
-(paired median +24, mean +29) and was imported into the stage-3 docstring. *Accurate
-version:* the docstring is not false (the group medians really are 168 and 200, "at the
-median"), and the conclusion drawn from the nuance fails: adjusted and raw do *not* agree on
-every stage-3 dimension (respect_demands −0.08 vs −0.144; respect_counterargs +0.33 t 1.8 vs
-+0.236 t 1.3), and within-pair length varies with sd 37.9 words, which is the variation
-identifying the slope and which tightens stage-3 evidence MDEs from 0.19–0.25 to 0.15–0.20.
-The covariate is warranted in stage 3 for precision. *Fix:* say the paired shift is ~0 and
-that the covariate is there for precision, not to correct a mean imbalance.
-
-**Q12. Three of the five gradings cannot be recomputed from the repository.** *CONFIRMED.*
-No workflow directory on this machine (all 129 searched, using both `analyze.py`'s and
-`analyze_stage3.py`'s own harvest functions) contains H-, G-, Q- or R-prefixed grades.
-Stages 3/4 survive only as the rounded summary in `results_stage34.json` (2–3 dp estimates,
-1 dp t, several cells with t = 0.0 or 0.1 leaving the SE unidentifiable); Appendix C.1's
-cross-account run has no cached output at all, so its table is unverifiable, and footnote
-r49b's reproduce line cannot be executed. *Two corrections:* the finding's own headline
-("none of the five") is contradicted three sentences later — stages 1 and 2 cache
-per-segment grades and reproduce exactly — and the 2026-07-31 transcripts it characterises
-as an independent pass are not (see Q5). *Fix:* commit the per-grade records for all five
-stages (id, condition, seven scores, ai_guess, n_words), as `results_stage1/2.json` nearly
-does, and add the segment id to the stage-1/2 files.
+**B8. BYPASS_METHODOLOGY and the write-up disagree about the zero-success run.** *PARTIAL.*
+BYPASS_METHODOLOGY calls "zero clean Human verdicts in 80 attempts at any band" the
+"strongest single fact in the arm"; Appendix C.4 says the same run's "zero successes test
+nothing about the band hypothesis". *Accurate version:* they are not opposite claims. The
+methodology document says, in order, "This sample does not replicate the gradient" → "The
+sample is range-restricted … A sample that cannot contain the effect cannot test it" → then
+the narrower high-band claim. It concedes the write-up's point two sentences earlier. And
+the write-up's blunt "test nothing" is the looser statement: against the arm's own 8.5%
+pooled rate, 0 successes in 80 has probability 0.915^80 ≈ 0.0009, so the run does
+discriminate the band hypothesis from a flat-rate alternative. *Sub-point that stands:* "80
+attempts" is 80 gate-passing variants out of ~513 generated across 35 seeds, 10 of which
+yielded nothing — the same denominator issue as **M12**. *Fix:* align the two passages and
+state the 80 as 80 of ~513.
 
 ---
 
 ---
 
-## Part 3 — The paper text under review: draft §4.9, verbatim
-
+## Part 2 — The paper text under review: draft §4.9, verbatim
+*(the bypass content lives in the same section as the quality arm; included in
+the Q-block file too — repeated here so this file stands alone)*
 
 ### 4.9 Quality: better-formed, not worse-engaged — and evadable under effort
 
