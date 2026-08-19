@@ -2557,6 +2557,32 @@ study has not already built.
     weights, or several — and how much of the human-drone register IS the
     machine register.
 
+29. **How does the register spread? (Matthew, 2026-08-19.)** Pin down the
+    transmission mechanism: does the register **arrive with individuals and
+    spread from there** (carriers seed local contagion — colleagues exposed
+    to them drift faster), or does **the rate of change in other individuals
+    stay near constant** (an ambient field — everyone drifts at a similar
+    rate regardless of local exposure, implying a diffuse societal source)?
+    The study already holds both raw forces — incumbents drift within career
+    (+0.51σ/decade) *and* cohorts arrive different — but has never tested
+    whether incumbent drift responds to local exposure. Designs the panel
+    supports: colleague-exposure gradients (does a member's next-period
+    change track the register level of those they share debates with),
+    arrival shocks (do incumbents accelerate when high-register entrants
+    join their chamber), and variance dynamics (contagion predicts variance
+    rises then falls as carriers spread; an ambient field shifts the mean at
+    stable variance). The prior exposure tests in this study (Appendix A
+    items 1–3) were about *external technology* exposure, not
+    colleague-register exposure — that test does not exist yet. **Why it
+    matters beyond linguistics (the Cosmic AC connection):** this is the
+    prototype question for tracking behaviors that no individual human is
+    fully responsible for — or backing the ones that are individual out into
+    their societal origins, where they can be influenced with less loss of
+    freedom. A behavior that spreads ambiently is governed at its source
+    (training data, style guides, institutional environments); one that
+    spreads person-to-person invites policing of persons. Knowing which is
+    which is itself the oversight product (see item 27).
+
 Collecting covariates for this study produced something with uses well outside
 it: birth year, education, prior occupation, EGP class and Wikipedia prominence
 for roughly five thousand legislators across twenty-two chambers, joined to
