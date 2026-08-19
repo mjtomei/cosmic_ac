@@ -406,8 +406,19 @@ def render_weekly(day, nsess, width=40):
     return header + "\n".join(lines) + "\n" + footer
 
 
-def summary_stats(day, windows=(7, 30, None)):
-    """Mean and SD of hours/day over trailing windows.
+def summary_stats(day, windows=(7, 30, None), include_today=False):
+    """Mean and SD of hours/day over trailing windows, ending yesterday.
+
+    Today is excluded by default because it is always a partial day: at 09:00
+    it contributes an hour or two against a full day's denominator and pulls
+    every mean down, and the size of that drag depends on nothing but when you
+    happen to run the script. Windows therefore end on the last COMPLETE day,
+    and "last 7" means the seven complete days before today. --include-today
+    restores the old behaviour.
+
+    The same cutoff applies to the "all" row, so the three rows stay
+    comparable; that makes this table's total slightly smaller than the
+    chart's TOTAL above, which still counts today.
 
     Two means, because they answer different questions and diverge a lot here:
     per CALENDAR day in the window (zero days included — the honest "how much
@@ -421,12 +432,15 @@ def summary_stats(day, windows=(7, 30, None)):
     if not day:
         return ""
     today = datetime.datetime.now(TZ).date()
+    end = today if include_today else today - datetime.timedelta(days=1)
     first = min(day)
+    if end < first:
+        return "\n         (no complete days yet — only today has activity)"
     rows = []
     for w in windows:
-        start = first if w is None else today - datetime.timedelta(days=w - 1)
+        start = first if w is None else end - datetime.timedelta(days=w - 1)
         start = max(start, first)
-        n_days = (today - start).days + 1
+        n_days = (end - start).days + 1
         vals = [day.get(start + datetime.timedelta(days=i), 0.0)
                 for i in range(n_days)]
         if not vals:
@@ -446,7 +460,9 @@ def summary_stats(day, windows=(7, 30, None)):
     for name, n, a, mean, sd, amean in rows:
         out.append(f"         {name:<10} {n:5d}  {a:6d}   {mean:8.2f}  {sd:6.2f}"
                    f"   {amean:13.2f}")
-    out.append("         mean and SD are per calendar day, zero days included")
+    out.append(f"         mean and SD are per calendar day, zero days included; "
+               f"windows end {'today' if include_today else 'yesterday'}"
+               f"{'' if include_today else ' (today is partial)'}")
     return "\n".join(out)
 
 
@@ -486,6 +502,10 @@ def main():
                          "reference this repo. Off by default: the test cannot "
                          "reliably tell working on this repo from mentioning "
                          "it, so candidates are listed and you decide")
+    ap.add_argument("--include-today", action="store_true",
+                    help="include today in the mean/SD windows; off by default "
+                         "because a partial day drags every mean down by an "
+                         "amount that depends only on when you run it")
     ap.add_argument("--weekly", action="store_true",
                     help="bucket by ISO week instead of by day")
     ap.add_argument("--per-session", action="store_true",
@@ -519,7 +539,7 @@ def main():
                       f"{n:3d} refs  [{mark}] {why}")
             print()
         print(render_weekly(day, nsess) if args.weekly else chart)
-        print(summary_stats(day))
+        print(summary_stats(day, include_today=args.include_today))
         if args.per_session:
             print("\nPer-session active hours (sums above the union — they overlap):")
             rows = []
