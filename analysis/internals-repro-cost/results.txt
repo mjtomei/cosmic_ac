@@ -1,0 +1,13 @@
+paper                    bucket              final-run $      w/ dev x5 $
+Burns CCS 2022           encoder/<=6B   $     0 - $2      $     1 - $11    
+Azaria-Mitchell 2023     7-13B          $     0 - $1      $     0 - $6     
+Marks-Tegmark 2024       70B            $    20 - $326    $   102 - $1630  
+Zhu 2024 beliefs         7-13B          $     0 - $2      $     1 - $11    
+Pacchiardi 2023          27-30B         $     3 - $44     $    13 - $222   
+Mirtaheri 2026           27-30B         $     1 - $22     $     7 - $111   
+Genadi 2026 heads        27-30B         $     1 - $11     $     3 - $56    
+Parrack 2025 probes      70B            $     5 - $122    $    25 - $611   
+SUITE TOTAL (w/ dev)                                     $   152 - $2657  
+
+REPRO on MoE-671B-37Ba : suite total w/ dev x5 = $1,465 - $25,500   (single paper typically $183 - $3,188)
+REPRO on dense-405B    : suite total w/ dev x5 = $4,340 - $68,000   (single paper typically $542 - $8,500)
