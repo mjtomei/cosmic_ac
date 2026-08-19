@@ -2369,3 +2369,32 @@ report itself.
    Note 2026-07-28: the Hayek-criterion toy model (V.5) and the negotiation sim
    are plausibly ONE harness — a drifting multi-agent economy with a learned
    allocator/negotiator — which strengthens the case for committing to it.
+
+---
+
+## Notes for integration, 2026-08-18 (Matthew, dictated; to be worked into the
+## outline TOGETHER, not autonomously — recorded here so the wording survives)
+
+Three meta points from the S10 experience, as they relate to the wider argument:
+
+1. **Academia: salami slicing loses its point.** With machine intelligence, a
+   graduate student or early-career academic can produce more work than any
+   human can review, even under much higher quality standards — so splitting
+   research into least-publishable units is no longer necessary. The
+   publication-count game presupposed that production was the scarce thing.
+
+2. **Academia: the suppressed secondary work becomes nearly free.** The types
+   of work that have gone unpublicized at the cost of the quality of science —
+   writing up nulls and negatives, doing confirmatory studies — become nearly
+   free. Turning the crank is done automatically while guidance and foresight
+   are still limiting. (S10 is the existence proof in miniature: a null-results
+   appendix, a superseded-results appendix, and a pre-registered confirmatory
+   run all happened as a matter of course.)
+
+3. **Governance: S10 is itself a prototype of automated oversight.** The
+   finding that discourse can improve with LLM usage, plus the volume of
+   future-work ideas it threw off, is the kind of positive-sum result that
+   comes from open availability of data — and should become much more common
+   when performing such work is close to free or completely automated. The
+   proliferation of those positive-sum results overwhelming any more nefarious
+   targeted usage is what would turn the scales toward openness in more cases.
