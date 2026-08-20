@@ -148,7 +148,12 @@ def main():
         k = key.get(sid)
         if not k:
             continue
-        r = {"genre": k.get("genre") or "n/a", "era": k.get("era") or "n/a",
+        # sid is the blind pool id; keeping it in the row is what makes the
+        # emitted results re-joinable to key*.json (seg_id, speaker, n_words).
+        # Its absence cost the study the Q2/Q8 controls when the source
+        # transcripts were pruned (2026-08-19) -- do not remove it again.
+        r = {"id": sid,
+             "genre": k.get("genre") or "n/a", "era": k.get("era") or "n/a",
              "chamber": k.get("chamber"), "verdict": k.get("verdict"),
              "ai": screen.get(sid, {}).get("ai_guess"),
              "judge_ai": g.get("ai_guess")}
