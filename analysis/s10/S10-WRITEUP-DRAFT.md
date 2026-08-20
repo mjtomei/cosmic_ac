@@ -1474,9 +1474,20 @@ travel through longer speech. It is reported, not partialled out: if the
 tool puts in more words and more complete inferences than the member would
 have, that is a quality increase, not a confound (Matthew, 2026-08-19) — and
 the strongest stage-2 dimension, respect_groups, has a *negative* length
-slope, so the lift is not length wearing a costume. A within-segment length
-control awaits segment identifiers in the stage-2 results file (the same
-schema gap that blocks speaker clustering; review items Q2/Q8/Q12).
+slope, so the lift is not length wearing a costume. The within-segment
+control now runs (the id-keyed grades were recovered from the grading
+machine's transcripts, 2026-08-20 — `q2_q8_controls.py`): with a
+within-chamber log-length term, justification is **+0.290 raw → +0.157
+(t 2.4) at fixed length** — about half the lift travels through longer
+speech and half survives without it, the channel decomposition, not a
+retraction; **respect_groups is length-free** (+0.220 → +0.222); common_good
+barely moves (+0.229 → +0.199, t 3.8); and evidence's marginal +0.065 is
+entirely length (→ −0.017) — flagged text has more checkable specifics only
+by being longer, consistent with stage 6's humans-keep-evidence result.
+Speaker-clustered errors (review item Q8) change nothing that carries a
+claim: stage 2 is nearly one-segment-per-speaker (respect_groups t 6.1 →
+5.8), and in stage 1 (418 speakers) the only casualty is the already-
+quarantined respect_groups cell (t 2.0 → 1.8).
 
 Three further observations, in descending order of how much they should
 change a reader's confidence:
@@ -1882,7 +1893,11 @@ beat" is the whole of that apparatus.
     `--drop-mixed` is the sensitivity, and the three starred cells barely
     move under it (justification +0.263, common_good +0.283, respect_groups
     +0.231). The applicability table above reproduces with
-    `python applicability_by_band.py`.
+    `python applicability_by_band.py`. Per-grade id-keyed rows for both
+    stages are committed (`stage{1,2}_grades_by_id.json`, recovered
+    2026-08-20 with exact multiset match to these tables), and
+    `q2_q8_controls.py` re-estimates every cell with speaker-clustered
+    errors — no claim-bearing t moves by more than 0.3.
 
 [^r49a]: `python bypass_report.py`, which reads the four verdict files and
     prints every figure in this subsection, including the Wilson intervals and
@@ -1894,9 +1909,12 @@ beat" is the whole of that apparatus.
 [^r49b]: `cd quality_expansion && python analyze_stage3.py [RUNDIR]` and
     `python analyze_stage3.py --key4 [RUNDIR]`; values cached in
     `results_stage34.json`, which now also caches `r_words` per dimension.
-    Grading transcripts live on the second machine (stage 3 run
-    `wf_b9bbcff8-1a7`, stage 4 `wf_7516f16c-386`); the script needs a run
-    directory, so pass one. Quoted column is the **raw paired difference**,
+    The grading transcripts (stage 3 run `wf_b9bbcff8-1a7`, stage 4
+    `wf_7516f16c-386`, on the grading machine) were recovered 2026-08-20 and
+    their id-keyed rows are committed as `stage3_grades_by_id.json` /
+    `stage4_grades_by_id.json` beside the raw archives, with the stage-3
+    table verified to reproduce digit-for-digit; the script needs a run
+    directory, so pass one (or rebuild from the committed rows). Quoted column is the **raw paired difference**,
     humanized − original, within text. `-1` (inapplicable) pairs are excluded,
     which is why the two sentinel dimensions have smaller n (12 and 12 in
     stage 3; 18 and 16 in stage 4).
