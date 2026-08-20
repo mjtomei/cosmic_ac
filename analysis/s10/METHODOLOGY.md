@@ -1927,7 +1927,7 @@ concentrate in prepared statements, so comparisons run within
 selection-matched or genre-balanced pools, and the cross-chamber grading
 carries chamber fixed effects.
 
-**The gradings — six, plus one control** (scripts and caches in
+**The gradings — six, plus one control** (a seventh, stage 6, was added 2026-08-19) (scripts and caches in
 `quality_expansion/` unless noted):
 
   stage 1   840 segments, federal Canada, genre-balanced, regressed on the
@@ -1948,7 +1948,6 @@ carries chamber fixed effects.
             `workflows/stage5_grade.js`; added 2026-08-16, five days AFTER
             the 2026-08-11 review, whose "five gradings" count was correct
             when written)
-  C.1       cross-account reliability replication (draft Appendix C.1)
   D.1       the judge-leakage control — documented, run, not adopted
             (draft Appendix D.1)
 
@@ -1967,9 +1966,12 @@ observation (Q1) is the substantive one.
 
 Reliability: repeat-pass Spearman 0.68–0.91 per dimension, at or above the
 published human inter-coder bar (their justification r = 0.716); stage 5's
-two independent passes agree exactly on 79–100% per dimension; the
-cross-account replication (C.1) reproduces the pattern from a separate
-account. Same-model agreement is reliability, not validity — a judge that
+two independent passes agree exactly on 79–100% per dimension. (A
+cross-account replication of the 241-segment pool existed as draft Appendix
+C.1 and was removed 2026-08-20 per Matthew — reproduction across accounts is
+not load-bearing and the framing is opaque to readers; its records remain in
+the repo and recompute exactly: `c1_reproduce.py`.) Same-model agreement is
+reliability, not validity — a judge that
 systematically read AI register as quality would reproduce perfectly, which
 is why the leakage control (D.1) exists.
 
