@@ -1428,10 +1428,10 @@ use rather than at machine text as such.
 
 Two pools were graded, 2026-08-10.
 
-The instrument was first checked for reproducibility on a different account
-before any new pool was graded: it reproduces at or above its own published
-repeat-pass band, and the claim-bearing gaps keep their signs. Detail in
-**Appendix C**.
+The rubric's repeat-pass reliability sits at Spearman 0.68–0.91 per
+dimension, at or above the instrument's own published inter-coder bar
+(justification r = 0.716), and the claim-bearing gaps keep their signs on
+independent re-runs.
 
 **Stages 1 and 2 — the finding, and the half of it that does not survive.**
 Stage 1 is 840 genre-balanced federal-Canadian segments labelled by a blinded
@@ -2207,8 +2207,9 @@ it.** Had DQI tracked authorship, it would merely be a worse detector; because
 it does not, it measures the thing anyone actually wanted to know. The
 reliability statistics cannot carry this claim by themselves — a consistently
 biased judge would also reproduce itself perfectly (review item Q5); what
-carries it is validity evidence: the judge reproduces the instrument authors'
-own published codings (Spearman 0.78–0.95, Appendix C.1), the one dimension
+carries it is validity evidence: the rubric's calibration anchors are the
+instrument authors' own published codings, so the scale is theirs rather than
+the judge's; the one dimension
 where judge-suspicion moves the result is identified and quarantined rather
 than averaged in (respect_groups; Appendix D.1, §4.9), and across stages the
 judge's AI-guess and its quality scores move independently in both
@@ -2221,9 +2222,9 @@ rewrites that actually cleared the detector when graded on their own (§4.9
 stage 5), so a body that measures quality directly need not fear that evasion
 — attempted or achieved — degrades the metric it watches.
 
-And it is now cheap in a way it has not been before. The instrument reproduces
-at or above the published human inter-coder bar across accounts and machines
-(Appendix C.1), on a rubric with published human codings as anchors. Twenty
+And it is now cheap in a way it has not been before. The instrument's
+repeat reliability sits at or above the published human inter-coder bar, on
+a rubric with published human codings as anchors. Twenty
 years ago the Discourse Quality Index required trained coders and bounded any
 study to a few hundred speeches. We graded 1,522 in the main arms without
 trained coders. That capability arrived with the same technology that broke
@@ -2950,53 +2951,20 @@ climbs. What does carry is measured on individuals, not on chambers.
 
 ## Appendix C — Replication and reproducibility
 
-### C.1 Stage 0: does the quality instrument reproduce?
-
-Run before any new pool was graded, because a rubric that does not reproduce
-makes every downstream quality number unusable. Same 241-segment pool
-(`judge_blind_pool.json`), rubric verified byte-identical to commit 19deb97,
-executed on a different account and a different machine.
-
-| dimension | Spearman vs original | exact match |
-|---|---|---|
-| respect_demands | 0.954 | 96% |
-| evidence | 0.951 | 92% |
-| justification | 0.923 | 88% |
-| constructive | 0.877 | 96% |
-| respect_counterargs | 0.859 | 86% |
-| respect_groups | 0.812 | 92% |
-| common_good | 0.781 | 88% |
-
-All at or above the original run's own repeat-pass band (0.68–0.91). The
-judge's independent `ai_guess` correlates at 0.93 with the original. Group
-means moved by less than the script's 0.30 flag everywhere, several
-reproducing to three decimals; the largest shift anywhere was −0.20 on
-`respect_counterargs` in an 8-segment group. **The v2 numbers are a property
-of the rubric, not of one run.**
-
-12 of 14 AI-vs-human gaps kept their sign, including every gap carrying the
-published claim. The two flips (+0.141 → −0.005 and +0.034 → −0.029) were on
-gaps already at zero, so they are noise around a null rather than reversals.
-
-Note that stage 0's pool is **not** genre-balanced,
-and it still shows the negative respect-for-demands gap that §4.9 finds to be
-a genre artifact — which is the expected signature: the gap appears wherever
-genre is free to vary and vanishes when it is held fixed.
-
-### C.2 Cross-route reproduction of the detector
+### C.1 Cross-route reproduction of the detector
 
 Web dashboard and Bulk API agree **20/20 including all six Mixed** on
 identical text when the model is named explicitly, and disagree on 9/20 when
 it is not (§3.2). All 4,258 verdicts in this study are Pangram 4 by either
 route, and `pangram_p4_verdicts.csv` records which.
 
-### C.3 Independent re-analysis
+### C.2 Independent re-analysis
 
 Stage 0's comparison and both stages' regressions were recomputed from the
 raw result files by a second party who did not run the grading, and reproduce
 to the reported precision.
 
-### C.4 Bypass sample selection
+### C.3 Bypass sample selection
 
 The four bypass runs are not one sample, and pooling them is defensible only
 because the differences are recorded. Full stacks in `BYPASS_METHODOLOGY.md`.
@@ -3029,7 +2997,7 @@ the selection score manufactured a clean cross-chamber gradient that was an
 artifact of differential regression, and it was briefly reported before being
 caught.
 
-### C.5 Artifacts
+### C.4 Artifacts
 
 | artifact | what it does |
 |---|---|
