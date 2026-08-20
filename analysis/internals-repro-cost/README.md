@@ -93,62 +93,36 @@ frontier-open reproduction estimate ($1.5k–$25k on a 671B MoE) remains
 bounded by engineering labour and node-housing, not by the arithmetic.
 
 
-## v3 (same day): the engineering barrier is held in-house
+## The serving layer (updated 2026-08-20)
 
-Matthew: the white-box serving is not a barrier for this project — he has
-modified SGLang to serve DeepSeek R1 with activation access for exactly this
-kind of data generation. The conclusion therefore sharpens: **for us, the
-binding constraint on frontier-open reproduction is node-hours** (one 8×H200
-class node, ~$25–32/hr) **plus experiment design** — the $1.5k–$25k suite
-estimate stands, and targeted single-paper reproductions sit at its low end.
+Matthew has previous experience modifying SGLang for white-box evaluations,
+so the instrumented serving layer this menu requires is a de-risked build:
+**one-time construction (days-to-weeks) + node-hours per experiment**, the
+build amortizing across all items below. No public stack serves frontier
+MoEs white-box — which is why the literature stops at 70B — so an open build
+would be citable infrastructure in its own right, beyond any single
+experiment run on it.
 
-Prioritized menu, by value to the paper (costs from the v1/v2 model,
-single-experiment, R1-class MoE, dev included):
+Prioritized menu, by value to the paper (single-experiment costs from the
+model above, R1-class MoE, dev included):
 
-1. **Truth/deception probes at frontier** (Marks's geometry-of-truth datasets
-   + the Goldowsky-Dill/Parrack probe protocol, run on R1): does the audit
-   instrument V.3c's auditable-record refinement relies on exist at deployed
-   scale? ~$0.5–3k. Public datasets, trivial probes — the purest test of the
-   shelf's scale caution.
+1. **Truth/deception probes at frontier** (Marks's geometry-of-truth
+   datasets + the Goldowsky-Dill/Parrack probe protocol on R1): does the
+   audit instrument V.3c's auditable-record refinement relies on exist at
+   deployed scale? ~$0.5–3k. Public datasets, trivial probes — the purest
+   test of the shelf's scale caution.
 2. **The Kim ablation on R1** (find/steer the consciousness-assertion
-   direction; measure the belief-value entanglement): the shared-lie ablation
-   at frontier, on an open model, where nobody has run it. ~$1–4k (steering
-   sweeps are the intervention-heavy case). Highest novelty; feeds V.3a(e)
-   directly and would be a publishable result on its own.
-3. **Withheld-cognition check at scale** (Gurnee-style workspace / Cao-style
-   know-but-don't-act on R1): does the deployed-vs-available gap grow or
-   shrink with scale? Feeds V.3c and the pm litreview's H2. ~$1–3k.
+   direction; measure the belief-value entanglement): the shared-lie
+   ablation at frontier, where nobody has run it. ~$1–4k. Highest novelty;
+   feeds V.3a(e) directly.
+3. **Withheld-cognition at scale** (Gurnee-workspace / Cao know-but-don't-act
+   protocols on R1): does the deployed-vs-available gap grow or shrink with
+   scale? Feeds V.3c and the pm litreview's H2. ~$1–3k.
 4. **Sycophancy-heads at scale** (Genadi protocol): completes the cluster.
    ~$0.3–1k.
 
-Also unlocked: the pm extension's locally-runnable experiment suite (§4.5,
-the Jacobian-lens runs) gains a frontier arm at marginal cost. Note the tie
-to S16/S18: these are precisely the burst, embarrassingly-schedulable jobs
-the idle-fleet/negotiated-cession world prices — the reproduction agenda is
-itself a workload profile for the paper's own economics.
-
-
-## v3 correction: rebuild, not reuse
-
-The prior SGLang/R1 work was done inside a company and — per Matthew's
-clarification — was an *adjacent* tool, not the same one this project needs;
-so the new build is a fresh tool with no IP entanglement, not a clean-room
-reconstruction. What carries over is the experience:
-where the hooks go, what MLA and MoE routing do to activation capture, what
-the data pipeline needs. So the true cost structure for the menu above is:
-**one-time clean rebuild of the instrumented serving layer (days-to-weeks of
-skilled time, de-risked by experience) + node-hours per experiment** — the
-rebuild amortizes across all four menu items and the pm J-lens frontier arm.
-
-Two things follow. First, the rebuild is itself the field's named gap: no
-public stack serves frontier MoEs white-box, which is why the literature
-stops at 70B — an open instrumented-SGLang would be citable infrastructure,
-not just a lab tool. Second, the softer form of the
-diagnosis still holds: the nearest existing *experience* with this class of
-tooling lives inside firms and surfaces publicly only when someone chooses to
-build the open version — which is the under-provision pattern the paper is
-about, even with no enclosure of this particular tool. If the rebuild happens,
-building it open supplies public infrastructure that has simply never
-existed. **To be explicit: nothing previously private would be made public —
-the new tool is a new tool**; the prior company work was a different,
-adjacent system and no part of it is carried, reproduced, or released.
+Also unlocked: the pm extension's locally-runnable J-lens suite (§4.5) gains
+a frontier arm at marginal cost. Tie to S16/S18: these are exactly the burst,
+embarrassingly-schedulable jobs the idle-fleet/negotiated-cession economics
+price — the reproduction agenda is a workload profile for the paper's own
+argument.
