@@ -148,5 +148,7 @@ diagnosis still holds: the nearest existing *experience* with this class of
 tooling lives inside firms and surfaces publicly only when someone chooses to
 build the open version — which is the under-provision pattern the paper is
 about, even with no enclosure of this particular tool. If the rebuild happens,
-building it open is the cure enacted, and the paper can say so in first
-person.
+building it open supplies public infrastructure that has simply never
+existed. **To be explicit: nothing previously private would be made public —
+the new tool is a new tool**; the prior company work was a different,
+adjacent system and no part of it is carried, reproduced, or released.
