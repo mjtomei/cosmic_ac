@@ -1829,6 +1829,115 @@ airline/trucking/telecom deregulation beat entrenched interests; the cure claim
 needs this precedent as much as the diagnosis needs Stigler 1971, which is also
 the seminal capture paper the shelf still lacks).
 
+**V.3d The metabolizing interface (Matthew, 2026-08-21).** A candidate
+component he wants to consider studying, measuring, and building tooling for.
+The claim, his wording preserved:
+
+⟨M⟩ As humans continue to move more of our interface to the digital world
+towards more inherently intelligent interfaces, **we have the increasing
+option to shape every bit that reaches us.** Many of the humans we recognize
+as having achieved great things or transcendent states of being have done so
+by isolating themselves — implying there is **a kind of contamination they
+need to heal or protect themselves from**. Not only spiritual masters, but
+even people recognized as great technologists, like Dijkstra. Spiritual
+masters come back with a kind of ability to **metabolize this contamination**,
+increasing the prevalence of things humans see as good in the world. **That is
+what the interfaces should be.** Not speaking for those masters, but it is
+something like **a complete understanding of all good and bad aspects of the
+input and their origins, which allows for the transmutation of anything a
+human would perceive as negative into something positive — as opposed to
+trying to quarantine the negative, which would require some intelligence in
+the line to suffer it.** ⟨/M⟩
+
+**The isolation observation has real anchors on both sides.** Contemplative:
+the retreat-and-return structure is canonical (the desert traditions;
+Plato's philosopher *returning to the cave* is the Western form — the return
+with metabolizing capacity is the point, not the withdrawal). Technologist:
+Dijkstra worked by fountain pen and kept the computer itself at arm's length;
+**Knuth has famously lived without email since 1990** — "Email is a wonderful
+thing for people whose role in life is to be on top of things… my role is to
+be on the bottom of things" (VERIFY exact wording from his own page). Both
+communities independently discovered that unshaped input is a cost worth
+paying heavily to control — which is the demand curve for the interface,
+already revealed.
+
+**Transmutation vs quarantine is a measured distinction, not a mystical one.**
+It maps exactly onto the emotion-regulation literature's central result:
+**cognitive reappraisal** (changing the meaning of the input before the
+response forms) reliably beats **suppression** (blocking the response to an
+unchanged input) on affect, memory, and social outcomes — James Gross's
+process model and two decades of replications (canonical-tier, from model
+knowledge — VERIFY before print). The interface claim is reappraisal
+*implemented in the interface* rather than trained into the person. And the
+quarantine arm's cost is not hypothetical: **industrial content moderation is
+quarantine run on human intelligences, and its documented result is
+moderator PTSD** (Roberts, *Behind the Screen*; the 2020 Facebook moderator
+settlement — VERIFY) — someone in the line suffers it. That grounds ⟨M⟩'s
+sharpest clause: quarantine requires a sufferer; transmutation-by-
+understanding is the design that does not. **Note what this does to the
+model-welfare thread (Kim, cluster 5):** if machine intelligence sits in the
+line, the question of whether the quarantine architecture merely *relocates*
+the suffering arrives immediately — the transmutation design claim (complete
+understanding of origins dissolves harm rather than absorbing it) is exactly
+the claim that it does not relocate, and it should be stated as a testable
+design property, not assumed.
+
+**The experiments (Matthew's sketch + the literature they'd extend):**
+⟨M⟩ measuring the impact of custom translation and filtering mechanisms, and
+tools for human-to-human messaging that better situate the incoming
+information in the person's life — moving the perceived speaker further into
+the role of a **maximally competent colleague, friend, or family member,
+which would engender more of that desirable role**. ⟨/M⟩ The engendering
+claim is the strong one: relational framing as self-fulfilling (the Pygmalion
+literature is the ancestor — VERIFY before leaning). There is a live
+published field to build on rather than claim: **AI-mediated communication**
+(Hancock et al.'s research agenda, JCMC 2020); **empathic rewriting measured**
+(Sharma et al., *Nature Machine Intelligence* 2023 — AI-assisted peer
+supporters produced measurably more empathic conversations); **consensus
+mediation measured** (Tessler et al., *Science* 2024 — the "Habermas
+machine" finding AI-mediated statements beat human mediators on group
+approval); and the caution from the same field: **suspected AI mediation
+degrades trust** (Hohenstein et al. — receivers judge senders more negatively
+when AI involvement is suspected; VERIFY all four handles). That last result
+is a design constraint, not a refutation: the tooling must be the
+*receiver's* instrument, disclosed or invisible-by-the-receiver's-choice —
+never the sender's covert polish.
+
+**Objections to carry, and the answers already in the architecture:**
+(1) **The echo-chamber objection** (Nguyen's epistemic bubbles vs echo
+chambers; Pariser's filter bubble — VERIFY handles): shaping every bit that
+reaches you is the bubble-maker's dream. The answer is the distinction itself:
+quarantine hides information (bubble); transmutation preserves **epistemic
+completeness** — everything arrives, with *more* context about origins, not
+less — and changes valence, not content. The design test: a transmuting
+interface must leave the receiver *better* calibrated about the sender and
+world than raw exposure would, and that is measurable. (2) **The experience-
+machine objection** (Nozick): transmuting all perceived negatives is
+reality-contact-preserving only if understanding-of-origins is genuinely
+deeper contact than raw suffering — the paper should state this as the
+design's load-bearing wager, kin to V.3a(e)'s supplies-the-seeing rather than
+restores-the-lie. (3) **Who controls the transmuter** is V.3b's governance
+question unchanged (user control, balance-sheet coupling) — an interface this
+intimate run by an advertiser is the extractive twin at its most dangerous.
+(4) **Autonomy/atrophy**: does outsourced reappraisal deskill the human
+capacity it imitates? The contemplative traditions built the capacity *in*
+the person; the interface builds it in the line. Carry as an open empirical
+question — the same emission-vs-cognition distinction the pm plan makes
+(govern what surfaces without stopping the thinking) applies on the reception
+side.
+
+**Structural connections:** this is the *inbound* half of the pm user-model
+program (outbound: graduated emission control conditioned on the user model;
+inbound: reception shaped by the same model — one user model, two directions,
+and the bootstrap condition is shared); the counsel arc's V.3a(e) in
+reception form (the interface supplies the seeing at the receivable
+bandwidth); III.2's moderation software generalized from the fleet to the
+person; and a natural Appendix-A candidate effort — the messaging-tool
+experiments are cheap, measurable (the AI-MC field's own instruments), and
+implementable without any new model training. *(Candidate study — Matthew
+decides whether it enters the register and at what priority against the econ
+queue.)*
+
 **V.4 The endgame: every device, any intelligence.** Once publicly available
 intelligence passes the competence bar and data is openly available, anyone's
 personal device can fully embody any intelligence in existence — and can therefore
