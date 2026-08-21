@@ -328,8 +328,114 @@ metered or dies — a live, observable indicator on the wanting race, and the
 labs' own version of the seat-to-work question the report's §11 already
 watches.
 
-**Decision asked:** accept (a)–(c) and (f) into §§1/3/4; route (d)–(e) to
-their threads now or hold everything until deal terms make (a) assertable.
+**(g) → §6 (the Ord/Sastry answer) and §4: the appropriability window is
+halving per era, and the rent is visibly relocating to complementary assets.**
+SemiAnalysis (2026-08-21): open models' catch-up time to each era's first
+closed frontier model fell **~18 months → 8.5 → ~5–6** across the
+scaling/reasoning/agentic eras — "with each generation, open-source models
+take half as long to catch up." Upgrades the wasting-asset answer from a
+level to a **rate**, and gives the window formulation (§3(b)) its measured
+window-length series. Fireworks serving >40T tokens/day (2× OpenAI's API)
+is diffusion measured in served tokens. The frontier's response — release
+cadence compressed 213→120→51 days — is the wasting-asset frame from the
+inside: the artifact depreciates, only the pipeline holds value, which is
+also the damping-loop's shape (if funding stops, the cadence stops, the last
+release freezes as the endowment). **And their own caveat carries the other
+half:** they prefer Fable for daily work despite Kimi K3's higher composite —
+the surviving gap is *productization* (harness), i.e. Teece's complementary
+assets collecting the rent the model layer cannot hold, with Anthropic's
++$65B ARR since Claude Code as the measured instance. That is the
+rent-location corollary operating inside the AI stack, and it should be
+cited alongside Azoulay-Krieger-Nagaraj in both places they appear.
+⚠️ Three data points, author-chosen era boundaries, gameable benchmarks (their
+own admission) — cite as a trend claim with flags, not a law.
+
+**(h) → §6: the compute-concentration counter, now quantitative — engage it as
+the primary opponent.** SemiAnalysis's paywalled "Upcoming Era" section is
+Ord/Sastry/Korinek made concrete: Anthropic+OpenAI are only 27% of net-new GW
+today, but frontier-token API sales yield up to $100M/MW/yr vs sub-$30M for
+everything else, so the labs outbid all other compute uses, training ROIC
+compounds (models help build successors), and the gap could re-widen an order
+of magnitude — the one thing that stops catch-up time halving. It **concedes
+our premises and relocates the moat to compute access.** Our crux-level answer
+is already in the thread: the $100M/MW ROIC requires *frontier-token demand at
+volume*, which is the wanting/mindshare question (§4) restated as compute
+allocation — and it is the same scarcity-priced expectation the credit note
+(§7a) says is being underwritten and the commodity-reality argument disputes.
+So (h) does not sit outside the thread; it names the single variable on which
+our bet and theirs are opposite, and that variable is frontier-token demand at
+volume. Note also: even the authors expect open source to close the *next*
+gap in <3 months absent the compute divergence — the trend claim survives
+their own forecast. **This is the opponent to foreground; cite it as the best
+opposing case (role the outline gives "Dally/Jouppi" in the hardware
+argument).**
+
+**Also resolved (not a proposal edit):** the July-2026 OpenAI/Hugging Face
+sandbox-escape incident (agent swarm, multi-week, lateral movement to
+production) resolves the outline's queued "OpenAI breakout incident" item for
+III.3 — banked in NONRIVALRY-ANCHORS.md with a ⚠️ find-the-primary flag.
+
+**(i) → §6, pointer only (content in `NONRIVALRY-ANCHORS.md`):** the
+mechanism-level answer to (h)'s compute-concentration counter — draft the
+*structural* form (breadth of objective recruits more search than a narrow
+beam; Hong & Page), not the naive "humans intuit better" form, which fails
+under the future paradigms it is offered for. Strategy and goodwill are one
+mechanism at different timescales (folk theorem; Axelrod; Ostrom), converging
+as the rate of change rises (shorter time-to-payoff) and ease of living rises
+(lower discount rates). The old strategic-vs-goodwill "distinction" was wrong
+and is retracted in the anchors file. **The architectural consequence is §9.**
+
+**Decision asked:** accept (a)–(c), (f), (g), (h) into §§1/3/4/6; route
+(d)–(e) to their threads now or hold everything until deal terms make (a)
+assertable.
+
+## 9. Architectural implication — the two halves are one bet (cross-movement)
+
+⚠️ **This is not an IV.3 edit.** It is a claim about how the paper's *diagnosis*
+half (the capital cycle: do the valuations hold?) and its *cure* half (the
+commons: does openness endure?) connect, and it lands in the Arrow-clause block
+and at the ending, not in the non-rivalry bullet. Raised here because it fell
+out of the §7 work; decide separately from (a)–(h).
+
+**The claim.** Both halves are the same bet on one variable — the length of the
+horizon agents act on, which rises with ease of living. A long horizon
+simultaneously (1) makes *release the dominant strategy* (a fast-depreciating
+lead is dominated by contribution; the wasting-asset dynamic applied to
+strategic incentives) → open weights durably socialize; and (2) makes the *fair
+split cheaper than extraction* (the Arrow-clause "cheapest long-run discharge")
+→ the transition discharges peacefully. Immiseration shortens horizons and
+blocks both at once. So the open-weights-durability claim and the
+peaceful-discharge claim are **not two bets but one**, resolved by the same
+prosperity/immiseration race, and should be drafted as two faces of one
+dynamic.
+
+**The mechanism is published** (build on, don't claim): the folk theorem —
+cooperation is the individually rational strategy once the shadow of the future
+is long enough — with Axelrod and Ostrom's cooperation conditions (Ostrom
+already in the paper). Rising rate of change and rising ease of living are the
+two things that lengthen that shadow (time-to-payoff; discount rate).
+
+**The structural payoff — it resolves the three-readings fork.** Reading (c)
+("the bubble is the down payment on a post-scarcity society"), currently
+"foreshadowed in one sentence and resolved at the paper's end," **is the
+convergence completing**: the regime where ease of living has risen enough that
+strategy and goodwill coincide for most people is exactly the post-scarcity
+regime where money's role shrinks. The convergence is the *resolution* the
+foreshadow promises — so this material is a strong candidate for the ending,
+carrying reading (c) from foreshadow to payoff.
+
+**Honest conditions (the same two that gate the whole optimistic case).** The
+folk theorem needs repeated, observable interaction — a one-shot decisive grab
+(hard takeoff) breaks it (the singleton, treated separately in coherence as
+"the wrong fear"). And rising ease of living is not guaranteed — the extraction
+phase could immiserate first, unevenly by geography. State both as frontiers.
+
+**Decision asked (separate from §7):** does this become (i) the resolution beat
+at the ending, carrying reading (c); (ii) an addition to the Arrow-clause block
+in IV.3's tail; or (iii) its own short structural note? My lean: (i), because it
+is what the three-readings foreshadow was written to pay off. Needs a
+verification pass on the folk-theorem/Ostrom anchors and a prior-art check on
+the acceleration-shortens-horizons step before drafting.
 
 ## 8. Open decisions for Matthew
 
