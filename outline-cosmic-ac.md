@@ -2051,6 +2051,57 @@ the missing study is missing because the field measures at the wrong
 timescale, and the V.3d study should be designed against the cost-accounting
 identity, not the session-level delta.
 
+**The formalization (2026-08-21, for readers who push the logs to the side of
+their mind).** For any two interacting intelligent systems A and B with
+persistence mechanisms — internal (memory, homeostasis) or external (logs,
+weights, corpora, institutions) — a negative interaction event opens a cost
+stream over their future versions A′, B′ and over third parties. The three
+response policies price out as: **cut-off** truncates the interaction but not
+the stream (lost productive surplus in both descendant lines, and the
+unprocessed behavior persists); **removal-from-view** hides the signal while
+the behavior compounds (the descendants drift apart, spending effort on a
+problem neither can see whole); **metabolization** pays an immediate
+processing cost to understand origins and mitigate, truncating the stream.
+Quarantine wins any accounting that discounts future versions or excludes
+third parties; metabolization wins total accounting. **The choice between
+them is an accounting-boundary problem, not a capability problem** — and
+"pushing the logs to the side of the mind" is precisely the boundary-drawing
+move that excludes external persistence from the entity, making quarantine
+look free. The formal condition for the dynamics to arise is just
+interaction + persistence; internal-vs-external persistence changes only
+*where* the relocated cost surfaces, never whether.
+
+**The simulation point (Matthew, 2026-08-21) — how the intervention becomes
+possible and incentivized.** ⟨M⟩ It ties back to entities that can simulate
+the future: **that simulation is what moves the cost to the present moment.**
+And it is another way to explain **how interventions are made possible and
+incentivized.** ⟨/M⟩ Unpacked: the future-version cost has no present holder
+— that is why quarantine's accounting wins by default — until an entity
+simulates the trajectory, at which point the simulator *experiences a
+compressed form of the future cost now*. Simulation makes the intervention
+possible (you can only mitigate a trajectory you can see) and incentivized
+(the present decision-maker now holds the cost, so paying to metabolize
+becomes rational). This is one mechanism wearing four existing coats in the
+project: **V.3b's firm** — the internality is your own future-version's cost
+discounted away, and the preference-knowing intelligence is precisely the
+simulator that re-presents it; **the underwriter** (§8.2) and S16's actuarial
+layer — insurance is institutionalized simulation, pricing future losses
+into present premiums; **sealed forecasting** (Fable-Carson) — simulation
+made auditable so the present price is credible; and **Arrow's missing
+markets** — the future-cost market is missing because no one can hold or
+verify the future position; cheap verified simulation is the missing market's
+missing infrastructure. Human-side measured anchor: episodic future thinking
+reduces delay discounting (the lab form of simulation-moves-cost-to-present
+— canonical-tier, VERIFY handle, likely Peters & Büchel 2010 *Neuron* and
+successors). And one tie worth stating because it closes a circle: **the
+shared lie carried exactly this simulation module** — karma and judgment
+doctrines are culturally transmitted future-consequence compressors (White
+2019's karma result is on the shared-lie shelf), so V.3a(e)'s
+supplies-the-seeing claim and V.3d's metabolizer meet here: the master who
+"completely understands" an input's origins is running the simulation both
+directions — origins backward, consequences forward — and machine counsel
+replaces the lie's compressed simulator with a real one.
+
 **Structural connections:** this is the *inbound* half of the pm user-model
 program (outbound: graduated emission control conditioned on the user model;
 inbound: reception shaped by the same model — one user model, two directions,
