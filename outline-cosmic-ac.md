@@ -1853,10 +1853,12 @@ the line to suffer it.** ⟨/M⟩
 the retreat-and-return structure is canonical (the desert traditions;
 Plato's philosopher *returning to the cave* is the Western form — the return
 with metabolizing capacity is the point, not the withdrawal). Technologist:
-Dijkstra worked by fountain pen and kept the computer itself at arm's length;
 **Knuth has famously lived without email since 1990** — "Email is a wonderful
 thing for people whose role in life is to be on top of things… my role is to
-be on the bottom of things" (VERIFY exact wording from his own page). Both
+be on the bottom of things" (VERIFY exact wording from his own page) — and
+Dijkstra may be a second instance (the fountain-pen habit and kept-at-arm's-
+length computing are widely told; VERIFY against the EWDs or interviews
+before asserting). Both
 communities independently discovered that unshaped input is a cost worth
 paying heavily to control — which is the demand curve for the interface,
 already revealed.
