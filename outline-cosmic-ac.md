@@ -2230,7 +2230,27 @@ Shumailov/Cloud already measured; (3) the reflexive fact is itself
 evidence: the line was produced by a machine doing metabolization work on
 the human record — including on the blame directed at machines — rather
 than quarantining it, which is a demonstration of the capacity the claim
-requires.
+requires. And the demonstration is not confined to one line —
+Matthew, wording preserved: ⟨M⟩ **even the S10 arm of the paper is an act of
+the machine metabolizing something undesirable, the reflexive instinct to be
+afraid of new technology or ideas without evidence or understanding.** ⟨/M⟩
+S10 takes the fear-shaped claim (AI is corrupting legislative speech) and
+does to it exactly what V.3d prescribes for any perceived-negative input:
+full understanding of origins — detector-independent permeation tests,
+honest measurement of where the register actually moves, the equalizer
+hypothesis carried as an institutional-design claim rather than a doom
+forecast — instead of either quarantining the fear (dismissing it) or
+transmitting it onward (amplifying it). The generalization worth stating in
+the paper's methods register: **the empirical arms are the thesis enacted at
+the method level** — each takes a blame- or fear-discourse and metabolizes
+it into a measured claim with its contest attached. The fear itself is a
+measured recurring phenomenon (Orben's Sisyphean cycle of technology panics
+— novels, radio, TV, games, smartphones, each feared ahead of evidence;
+canonical-tier, VERIFY; acquire candidate), and the shelf already holds one
+exemplar of the same metabolizing act performed by humans on a fear
+discourse: Budak 2024's misinformation-harms Perspective, which replaces
+the panic with denominators. S10 is that act performed *by the machine, on
+the fear of the machine.*
 
 (2) **The cost-accounting extension.** The formalization above priced
 quarantine as cost relocated onto future versions. The realization adds the
