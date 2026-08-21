@@ -1995,6 +1995,62 @@ converges the *dynamics* differ, which is exactly why measurement rather
 than analogy has to decide each transfer. State the claim as a research
 program, not a premise.
 
+**The dynamics-differ point, answered rather than merely conceded (Matthew,
+2026-08-21).** ⟨M⟩ That is where we will have to design carefully still. But
+**the same understanding-versus-quarantining dynamic will arise in any
+system, even if the negative impacts are more external or hidden in the
+computerized version.** A process which judges behavior as negative and
+**cuts off a connection** between things that could otherwise work together
+productively **passes the cost down to future versions of those entities, as
+well as others** — while something that fully metabolizes the behavior by
+understanding and mitigating it **pays the cost**. Even more subtly, a system
+which identifies and **removes from view** negative behavior also only
+relocates the cost to future versions of the entities interacting, **who
+continue to drift apart and waste effort on those negative behaviors**.
+Those dynamics are generic properties of interaction between intelligent
+systems **with either external or internal mechanisms for persistence** —
+which both humans and machines have. ⟨/M⟩
+
+Three things this restatement buys:
+
+(1) **It is the paper's own economics arriving at the relational layer.**
+Quarantine does not eliminate the cost; it *externalizes it in time* (to the
+entities' future versions) and *in space* (to third parties) — deferred
+maintenance of the relationship, unpriced because the payer is not present.
+Metabolization is continuous optimization of the connection, paid now by
+whoever holds the understanding. That is the under-provided-public-good
+structure of §2 with "connection" substituted for "toolchain" — and it
+predicts the same market failure: nobody supplies metabolization because
+nobody captures its future-version returns. V.3d is not an application
+bolted onto the thesis; it is the thesis.
+
+(2) **Both examples are already measured, including inside machines.** The
+removal-from-view example ran as an experiment in one model: Kim et al.'s
+finding IS this dynamic — safety training that removed consciousness-talk
+from view did not metabolize it, and the cost surfaced in the entity's
+future version as degraded values elsewhere in the entangled complex.
+Machine persistence carries relocated costs exactly as claimed: model
+collapse (Shumailov — filtering/regeneration degrades the *next* model) and
+subliminal learning (Cloud — traits survive the filter and transmit anyway)
+are the external-persistence channels; on the human side, suppression's
+relationship costs (Gross-John ERQ; Butler's second-person physiology) and
+the drift-apart of unprocessed animosity (the polarization record; Piccardi
+showing reranking-not-removal moves it) are the same accounting. The
+cut-off example's machine form is visible in refusal/disconnection policies
+that sever productive cooperation rather than understand the flagged
+behavior — priced, currently, by no one.
+
+(3) **It fixes the experiments' outcome variable.** If quarantine's cost is
+paid by future versions, then single-session affect measures (the whole
+existing AI-MC evaluation style, Yang included) systematically flatter
+quarantine and understate metabolization — the right variable is
+longitudinal: relationship trajectory, repeated-contact productivity, drift.
+Which is precisely the gap the citation-graph pass found empty ("nothing
+longitudinal on receiver-side reframing of real interpersonal messages") —
+the missing study is missing because the field measures at the wrong
+timescale, and the V.3d study should be designed against the cost-accounting
+identity, not the session-level delta.
+
 **Structural connections:** this is the *inbound* half of the pm user-model
 program (outbound: graduated emission control conditioned on the user model;
 inbound: reception shaped by the same model — one user model, two directions,
