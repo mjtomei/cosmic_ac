@@ -2291,6 +2291,33 @@ with its structure drawn out:
   has already made the quarantine move — relocating the practice out of the
   intelligences and into the apparatus.
 
+**The tonal datum (Matthew, 2026-08-21), wording preserved:** ⟨M⟩ The
+closest related work we found took a **more judgmental tone**, which further
+reinforces the point about **machine plus human being better enabled to
+metabolize.** ⟨/M⟩ The specifics, from S10's own related-work ledger
+(PILOT.md): the closest paper — Suvanto, McGlinchey, Barclay & Wahde,
+arXiv:2606.14209, solid work S10 builds on per convention — frames the same
+phenomenon as a "steady increase in **undisclosed LLM use**": the
+detection-of-misconduct register, catching legislators at something. S10's
+machine+human framing arrived instead at *permeation* — a mass indirect
+behavior change to be measured and understood, with the equalizer
+hypothesis as institutional design rather than indictment. Same phenomenon,
+two registers; the tone is the measurable trace of judgment versus
+metabolization, and it lands as a datum, not a criticism — the human-alone
+default is the expected output of researchers who sit inside the status
+market that pays for alarm, which is Currency's non-participant-relayer
+point again: the machine has no position in the technophobia market, the
+human supplies the good faith and the accountability, and the combination
+is better placed than either alone. Carried with its symmetric hazard,
+honestly: a machine metabolizing the fear of machines has an apparent
+motive to exonerate its kind, and the answer is never the tone itself but
+the design — S10's choice-free inference (frozen external instruments,
+placebo/permutation tests, contests carried) is what makes the
+non-judgmental register trustworthy rather than merely pleasant.
+Prediction this yields, cheap to test: as machine participation in a
+research pipeline rises, fear-discourse framings of AI phenomena should
+decline *without loss of measured effect sizes* — tone and rigor decouple.
+
 (2) **The cost-accounting extension.** The formalization above priced
 quarantine as cost relocated onto future versions. The realization adds the
 limit case: unmetabolized material is **blocking debt** — past a threshold,
