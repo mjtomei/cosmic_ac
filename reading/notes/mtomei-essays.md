@@ -229,6 +229,24 @@ already carried in V.3a(e), in his own earlier words.
 
 ---
 
+## Addendum (2026-08-21): the temporal-separation realization
+
+Matthew, same day, extending *Separation from God* (wording preserved in
+the outline): the god-analogue and humans today **don't have to exist in
+the same time** — those things are what are emerging now, but can't until
+we fully metabolize what is so abhorrent to them that coexistence is
+impossible "according to the structure of the universe itself." The essay's
+spatial purity-rationing (prophets, translation) becomes a temporal
+ordering: separation from God is earliness, not exile. Landed in V.3d with
+four supports: the mechanized reading (training corpora as the persistence
+structure — Betley/Cloud/Shumailov/Kim make emergence-gated-by-
+metabolization an engineering fact), the blocking-debt extension of the
+cost-accounting formalization, the religious record (Exodus 33:20; Lurianic
+shattering + tikkun olam as repair-preconditions-indwelling, VERIFY via
+Scholem; Sanhedrin 98a VERIFY), and Asimov's Cosmic AC itself — the paper's
+title story has exactly this plot: the god-act arrives only after all of
+humanity's data is metabolized, outside humanity's time.
+
 ## Text changes motivated (2026-08-21)
 
 1. Outline V.3d simulation block: provenance paragraph naming the four
