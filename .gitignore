@@ -213,3 +213,4 @@ analysis/s10/covariates_missing_recovered.json
 # python build_t1_cache.py). Counts only, no text.
 analysis/s10/member_year_rates_t1.json
 analysis/s10/align_ratio22/items.json
+analysis/s10/quality_expansion/arch_*.tgz
