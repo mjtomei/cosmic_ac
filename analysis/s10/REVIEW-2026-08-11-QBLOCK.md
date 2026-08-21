@@ -31,6 +31,111 @@ METHODOLOGY §7 was two generations stale on all of this and was rewritten
 
 ---
 
+## FULL BRIEFS FOR THE OPEN ITEMS (added 2026-08-21; self-contained, no prior knowledge assumed)
+
+### Q9 — one starred result fails multiple-testing correction
+
+**Context, from zero.** One arm of the study asks whether machine-drafted
+legislative speech is better or worse *quality* than the rest. Quality is
+scored by an LLM judge against the Discourse Quality Index (DQI), a standard
+political-science rubric with seven dimensions; the three that matter here
+are *justification* (are arguments reasoned), *common_good* (appeals beyond
+self-interest), and *respect_groups* (does the speaker say anything
+explicitly positive about the people the policy under discussion would
+help — scored 0/1/2). Two independent gradings exist: **stage 1** (840
+segments from federal Canada, balanced across speech genres, regressed on a
+0–100 "how machine-like" score from the study's own Opus-based screen, with
+genre and era fixed effects) and **stage 2** (682 segments across all 22
+chambers, regressed on the binary verdict of Pangram, a commercial AI-text
+detector, with chamber fixed effects). The paper's headline is that
+AI-flagged speech scores HIGHER on those three form dimensions in both
+stages; the results table stars every cell whose |t| exceeds 1.96 — six
+stars across the two stages.
+
+**The problem.** Fourteen cells were tested (7 dimensions x 2 stages).
+Testing many cells at the 1.96 bar means some stars arise by chance;
+the standard repair is the Benjamini-Hochberg (BH) procedure, which adjusts
+each cell's p-value for how many tests were run. Applying BH across all 14
+cells: five of the six starred cells survive easily (q < 0.003). **The
+sixth — stage-1 respect_groups, t 2.0 — fails, at q = 0.106.** It is the
+weakest star and the only one that does not survive correction.
+
+**Three independent strikes against the same cell, accumulated since the
+review.** (1) The judge also reports its own guess at whether each text is
+AI ("judge_ai"); re-running stage 1 with that guess controlled — a harsh
+diagnostic, not an estimator — flips this one dimension's sign (+0.29 to
+−0.14) while the other starred cells survive, so in stage 1 this cell
+cannot be separated from the judge reading AI-likeness as warmth. (2) With
+standard errors clustered on speaker (840 segments come from 418 speakers;
+run 2026-08-20 after the grading records were recovered), the cell drops to
+t 1.8 — below the 1.96 bar on its own. (3) In stage 6 (machine continuations
+no human ever reviewed, graded blind), NO machine arm at any capability
+tier scores elevated respect_groups — evidence that the wild lift on this
+dimension comes from what members ask drafting tools for, and that the
+judge does not award warmth to text it believes is machine.
+
+**Why nothing is lost.** The same dimension is stage 2's STRONGEST cell:
++0.220 at t 6.1, q < 0.0001, on an independent segment pool with an
+external label (Pangram decides what is AI, not the judge), surviving
+speaker clustering (t 5.8) and completely length-free (+0.220 raw, +0.222
+with a length control). The respect-groups conjunct of the headline is
+already carried by better evidence.
+
+**The decision.** Recommended: drop the star from stage-1 respect_groups,
+add one sentence noting it fails BH and is quarantined in stage 1, and
+attribute the conjunct to stage 2. Alternatives: keep the star with a BH
+footnote (leaves a star the correction kills — a reviewer's free shot), or
+drop the conjunct from the headline entirely (overkill: stage 2's version
+is bulletproof).
+
+### Q10 — two quoted "genre means" are actually era-subset cells
+
+**Context, from zero.** In Canada's House of Commons, "SO31" (Standing
+Order 31) statements are short prepared member statements — a genre. The
+paper's genre argument says: machine drafting concentrates in SO31; SO31
+happens to be the genre with the LOWEST justification scores; therefore,
+pooled across genres, the machine-vs-human justification difference looks
+like nothing, while within any single genre it is strongly positive (a
+"suppression effect"). To make that point the draft quotes two numbers:
+SO31's mean justification **1.14** against government business's **2.01**.
+
+**The problem (confirmed by recomputation).** Those two numbers are not the
+full-sample genre means — they are the means computed on the post-2023
+subset only (1.136 and 2.014). The full-sample genre means are **1.096 and
+2.089**. The mislabeling is real; the substance is untouched — the pooled
+gap is WIDER, i.e., marginally more favourable to the paper's own argument,
+and SO31 also carries the highest mean machine-score of any genre (17.9,
+against 9.8 for oral questions and 11.6 for debate).
+
+**The decision.** Quote the pooled figures, 1.10 vs 2.09, labelled as
+full-sample genre means. Pure figure hygiene at zero risk: a referee
+recomputing genre means from the released data gets the pooled numbers and
+would otherwise flag the mismatch.
+
+### Q11 — a docstring motivates a control with the wrong stage's numbers
+
+**Context, from zero.** Stages 3 and 4 are paired designs: a flagged
+segment against its own detector-evading rewrite, graded blind, 38 and 25
+pairs — the test of whether the evasion edit changes quality (it does not,
+on any dimension). The analysis script for these stages includes a
+word-count covariate, and its docstring justifies it by saying the rewrites
+run "~30 words longer at the median."
+
+**The problem.** That fact belongs to stage 4, whose rewrites do run ~29
+words longer. Stage 3's PAIRED length shift — the only thing a paired model
+sees — is approximately zero: median +4 words, mean −1.3, with 42% of
+rewrites shorter than their originals. The stated motivation describes the
+wrong stage. The covariate itself is still worth keeping in stage 3 — not
+against bias (there is no length shift to de-bias) but for PRECISION:
+within-pair word counts vary a lot (sd ~38 words), and absorbing that noise
+tightens the standard errors.
+
+**The decision.** A one-line documentation fix: state that stage 3's paired
+shift is ~0 and the covariate is retained for precision; the ~30-words
+figure moves to stage 4 where it is true. No number changes anywhere.
+
+---
+
 ## Part 1 — My verified summaries (from the session transcript, verbatim)
 
 All confirmed. Here's the full Q block. **Shared context first**, since every item refers to the same apparatus.
