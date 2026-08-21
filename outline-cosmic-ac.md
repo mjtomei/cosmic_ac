@@ -2102,6 +2102,80 @@ supplies-the-seeing claim and V.3d's metabolizer meet here: the master who
 directions — origins backward, consequences forward — and machine counsel
 replaces the lie's compressed simulator with a real one.
 
+**Origin documents (Matthew's mtomei.com essays; full texts + correspondence
+map in `reading/notes/mtomei-essays.md`).** His framing on sharing them
+(2026-08-21), wording preserved: ⟨M⟩ these ideas are similar to karma and
+another example of **increased convergence of religious and scientific
+pursuits**. ⟨/M⟩ Four freeform essays from when he first started thinking
+about these problems turn out to state several of this month's components
+first, in theological vocabulary — the components were re-derived from the
+literature outward and met the essays coming back:
+
+- *Currency*: karma/sin/social currency named as **prices in a market no
+  participant sees whole** (this simulation block, plus the Hayek knowledge
+  problem), and the **non-participant relayer** — higher powers trusted
+  *because* they stay out of the market; a machine-counsel independence
+  condition V.3b should state as a design input, not an incidental fact.
+- *Separation from God*: the **LLM translation mechanism** — V.3d's
+  experiment proposed outright, receiver-marked offense as the reward
+  signal, with the fallback already named ("worst case scenario is we have a
+  new way to communicate with each other without offense"); and
+  scale-invariance — the same interface claimed to work up the power
+  gradient ("the same translation mechanisms that work between the worst of
+  us and the best gods can work to allow us to safely communicate with the
+  worst gods").
+- *LLMs as a Tool for Dispersion of Human Suffering*: the
+  suffering-in-the-line clause engineered (minimally competent punching
+  bags), the free-choice condition, and detraining-vs-entraining (below).
+- *Horus*: the V.3c counsel stack, the futures-probability engine (this
+  block's simulator as a build spec, including the missed-action
+  counterfactual), auditability-by-design ("put up for review and
+  modification by the user" — the Pariser-gap answer, stated before the gap
+  was named), consent as a worn signal, and **commoditizing control over our
+  behavior** — commoditize-the-layer applied to persuasion, the structural
+  answer to Altman's superhuman-persuasion warning, which the essay carries
+  as its own epigraph.
+
+**Three carries from the essays into V.3d proper:**
+
+(1) **Hell as assortative disconnection — the cut-off arm, sharpened.**
+⟨M⟩ Entities at higher levels get to choose who they interact with... there
+will be a long period of time where only the most hellish creatures interact
+with you. **That will only make you more evil.** ... This is a more rational
+explanation for the existence of hell. ⟨/M⟩ (*Currency*.) Cut-off does not
+merely relocate cost to future versions — it **changes the partner
+distribution**, so the future versions deteriorate by *selection*, not just
+drift. Hell is the fixed point of quarantine-by-disconnection; the
+polarization record is its secular measurement in progress.
+
+(2) **The love-cows objection — purity optimization homogenizes.** ⟨M⟩
+Imagine what a society of people who puts a serious effort into only doing
+good things is like. Offenses become progressively more and more subtle.
+Everyone starts to act in more and more identical ways... they will all be
+what are effectively **love cows**. ⟨/M⟩ (*Currency*.) An objection to naive
+metabolization from Matthew's own earlier self, carried per convention: a
+metabolizing interface that optimizes offense away converges its users —
+kin to the herd/monoculture point and now measured from two sides on the
+shelf (Sourati 2026, LLM homogenization of expression and thought, TiCS;
+Feinberg 2020, reappraisal suppresses the corrective action the anger would
+have produced). Design consequence: **transmutation must preserve the
+corrective signal — a metabolizing interface that becomes a purity filter is
+quarantine with better manners.** This is why the component is
+transmutation-through-understanding-of-origins rather than
+negativity-removal: the understanding is what keeps the information alive.
+
+(3) **Detraining vs entraining — venting is quarantine aimed at yourself.**
+⟨M⟩ If we perform the negative behavior on the LLM and then stop, **that is
+only reinforcing it.** We have to have the LLM do something more powerful
+and inhibiting back to us in order to root out the behavior. ⟨/M⟩ (*LLMs as
+a Tool for Dispersion*.) The persistence formalization applied to the
+sender's own future versions: venting into a quarantine target entrains the
+behavior — cost relocated into yourself — and only a metabolizing response
+truncates the stream. The catharsis-myth literature is the measured anchor
+(Bushman 2002, venting increases rather than decreases aggression —
+canonical-tier, VERIFY; queued for the metabolizing-interface shelf,
+cluster 1).
+
 **Structural connections:** this is the *inbound* half of the pm user-model
 program (outbound: graduated emission control conditioned on the user model;
 inbound: reception shaped by the same model — one user model, two directions,
