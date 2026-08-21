@@ -1444,7 +1444,7 @@ sources, same answer.[^r49q]
 | *segments (regressor)* | *840 (screen score; sd 15.3, max 70)* | *same fit, rescaled* | *682 (Pangram verdict, binary)* |
 | justification | **+1.134** (t +4.1) ✱ | +0.173 | **+0.290** (t +4.4) ✱ |
 | common_good | **+0.583** (t +3.3) ✱ | +0.089 | **+0.229** (t +4.5) ✱ |
-| respect_groups | **+0.287** (t +2.0) ✱ | +0.044 | **+0.220** (t +6.1) ✱ |
+| respect_groups | **+0.287** (t +2.0) ✱[^r49m] | +0.044 | **+0.220** (t +6.1) ✱ |
 | respect_demands | −0.179 (t −0.5) | −0.027 | −0.029 (t −0.4) |
 | respect_counterargs | +0.143 (t +0.4) | +0.022 | +0.073 (t +1.0) |
 | constructive | −0.015 (t −0.1) | −0.002 | −0.041 (t −1.0) |
@@ -1495,7 +1495,9 @@ change a reader's confidence:
 1. **Justification is a suppression effect, not a new result.** It is null
    uncontrolled (t −0.2) and strongly positive within genre (t +4.1), because
    machine drafting concentrates in SO31 and **SO31 has the lowest
-   justification of any genre** (1.14, against 2.01 for government business).
+   justification of any genre** (1.10, against 2.09 for government business;
+   full-sample genre means — an earlier draft quoted the post-2023 cells,
+   1.14/2.01, review item Q10).
    Pooling across genres hides an effect that is plainly there inside each.
 2. **The two independent AI-guesses correlate** (screen vs grading judge,
    r = +0.758) — a shared style signal across two different models, which is a
@@ -1885,6 +1887,18 @@ and a multi-round search scoring three replicates per variant. A single
 Pangram's score, and human text pushed through the same ladder went from 11.7
 to 60.2. The gap between "a detector can be beaten" and "a detector is easy to
 beat" is the whole of that apparatus.
+
+[^r49m]: The one starred cell that does not survive multiple-testing
+    correction: Benjamini-Hochberg across the fourteen cells of this table
+    (Benjamini & Hochberg, *JRSS-B* 57, 1995, 289–300) leaves every other
+    starred cell at q < 0.003 and this one at **q = 0.106**. It is also the
+    cell that moves under the judge-suspicion diagnostic (Appendix D.1) and
+    under speaker clustering (t 2.0 → 1.8). The star is retained with this
+    disclosure; the conjunct's weight rests on stage 2's version — t +6.1,
+    q < 0.0001, external label, length-free — and on stage 6's independent
+    check that the blind judge does *not* award this dimension to text it
+    believes is machine, which argues the wild lift is real rather than
+    judge leakage.
 
 [^r49q]: Stage 1: `cd quality_expansion && python analyze.py`. Stage 2:
     `python analyze_stage2.py` — the column's own script (review item Q7),

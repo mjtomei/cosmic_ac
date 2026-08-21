@@ -23,7 +23,9 @@ pairing means content, speaker and occasion are held fixed by construction --
 the only thing varying is the rewrite.
 
 LENGTH: REPORTED, NOT PARTIALLED OUT -- AND IT DOES NOT REPLICATE. Humanized
-versions run longer in stage 4 (mean +29 words; stage 3's are flat at -1.3),
+versions run longer in stage 4 (mean +29 words; stage 3's PAIRED shift is
+~0: median +4, mean -1.3, 42% shorter -- the covariate is kept in stage 3
+for precision, not bias: within-pair word-count sd ~38 words),
 and within stage 4 justification tracks length at r = +0.33, the largest
 correlation in either table. In stage 3 the same correlation is r = -0.24:
 longer rewrites justify LESS. Neither is significant (p = 0.11, p = 0.15), and
