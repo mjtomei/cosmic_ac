@@ -212,3 +212,4 @@ analysis/s10/covariates_missing_recovered.json
 # Rebuildable member-year count cache for the tier-1 chambers (~25 min:
 # python build_t1_cache.py). Counts only, no text.
 analysis/s10/member_year_rates_t1.json
+analysis/s10/align_ratio22/items.json
