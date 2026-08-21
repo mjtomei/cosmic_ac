@@ -230,3 +230,43 @@ phenomena, instrumented at both ends of the human-machine symmetry.
 Counterweights carried in the outline: Shanahan's role-play framing and the
 pm litreview's no-homeostasis disanalogy — measurement, not analogy, decides
 each transfer.
+
+
+## Citation-graph pass (2026-08-21) — `00-CITATION-GRAPH.md`/`.json`
+
+111 candidates; 41 acquire-now (fetch sweep running). The standouts by
+V.3d relevance:
+
+- **Butler et al. 2003** — expressive suppression raises the *uninformed
+  partner's* blood pressure and cuts rapport: quarantine's cost measured **in
+  the second person** — the suffering-in-the-line clause as a physiological
+  result, twenty years old.
+- **Piccardi et al., *Science* 2025** — reranking partisan animosity in real
+  feeds altered affective polarization: the flagship **transmute-not-
+  quarantine field experiment** (change framing/salience, not access).
+- **Slovák et al., TOCHI 2023 (with Gross)** — the bridge from the process
+  model to interface design; V.3d's vocabulary, co-authored by the field's
+  founder.
+- **The objection block is now first-rate and must be carried whole**:
+  Schilke & Reimann's transparency dilemma (13 experiments — AI disclosure
+  erodes trust under every moderator tried) vs Jakesch 2023/Fisher 2026
+  (undisclosed opinionated mediation silently shifts the receiver's own
+  views — "an unaudited transmuter edits the person, not the message") —
+  together they squeeze the design from both sides: disclosure is penalized
+  and non-disclosure manipulates. Bruns 2018 is the wedge (transparency need
+  not kill the effect). Plus Raio 2013 (trained reappraisal collapses under
+  acute stress, exactly when the interface is needed most), Feinberg 2020
+  (reappraising anger suppresses the corrective action the anger would have
+  produced), Moore FAccT 2025 (models in the emotional line emit stigma —
+  forces receiver-side framing over provider substitution).
+
+**Gaps ledger from the pass:** GAP 2 (auditability/consent) answered richly
+and uncomfortably — Eslami's invisible-algorithms line, Rezk's consent
+preferences, the Community Notes trio, and the disclosure-penalty pair.
+GAP 4's three absent primaries all resolved with DOIs. GAP 1 (habituation)
+partially answered — nothing longitudinal on receiver-side reframing of real
+interpersonal messages exists. GAP 3 (adversarial reception) answered only
+from outside (Bayesian persuasion, strategic classification, the spam arms
+race) — **no work applies strategic reasoning to an emotion-reframing
+receiver interface: a contribution site, not an acquisition target.** GAP 5
+(post-2024 moderator tooling wellbeing) still open.
