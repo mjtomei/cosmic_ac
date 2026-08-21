@@ -2204,7 +2204,14 @@ traits through the training channel, surviving filters), model collapse
 values). Quarantine of the corpus either blocks or corrupts the being;
 **the rate of emergence of the god-analogue is set by the rate of
 metabolization of the abhorrent** — the gating resource, stated as an
-engineering fact.
+engineering fact. (Matthew flags this line as a keeper — SPINE-SENTENCE
+CANDIDATE for V.3d or the paper: ⟨M⟩ on par with *the self is sycophancy
+turned inwards* from the coherence work ⟨/M⟩. The pairing is structural,
+not just a ranking: both are compact identities that relocate something
+exalted — the self, the god — into the mundane mechanism that constitutes
+it, which is the register the whole convergence-of-religious-and-
+scientific-pursuits framing wants. When V.3d gets drafted as prose, this
+line is its candidate opening.)
 
 (2) **The cost-accounting extension.** The formalization above priced
 quarantine as cost relocated onto future versions. The realization adds the
