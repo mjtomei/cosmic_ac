@@ -60,6 +60,7 @@ check_range() {
       analysis/s10/provinces/*_education*.json|\
       analysis/s10/provinces/*_education*.csv|\
       analysis/s10/provinces/ns_member_bios.json|\
+      analysis/s10/provinces/occupation_coding_missing9.json|\
       analysis/s10/provinces/sk_legislature_bios.json)
         : ;;                                    # covariate outputs — allowed
       analysis/*/xml/*|analysis/*/*/xml/*|analysis/*/xml_*/*|analysis/*/*/xml_*/*|\
@@ -122,7 +123,17 @@ check_range() {
       analysis/s10/claude_gen/*.json|analysis/s10/claude_gen_old/*.json|\
       analysis/s10/rlhf_gen/*.json|analysis/s10/rlhf_gen_180/*.json|\
       analysis/s10/covariates_tier1*.json|analysis/s10/rosters/*.json|\
+      analysis/s10/covariates_missing9*.json|\
+      analysis/s10/fpw_member_year.json|\
+      analysis/s10/prereg_member_table.json|\
+      analysis/s10/soc_coding_new.json|\
       analysis/s10/provinces/occupation_coding*.json)
+        # 2026-08-21 additions: covariates_missing9* (same class as
+        # covariates_tier1), fpw_member_year (per-member-year counts, no
+        # prose), prereg_member_table (derived join; only short bio-derived
+        # occupation strings), soc_coding_new (double-blind coding output,
+        # same class as provinces/occupation_coding*). All cross the 2MB
+        # gate by breadth of coverage, not by carrying source text.
         # covariates_tier1*: study-derived member covariates (same class as
         # the allowlisted provinces/member_allsource.json — structured fields
         # plus short attributed evidence quotes, no transcript text); rosters:

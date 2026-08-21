@@ -21,7 +21,7 @@ import csv, json, os, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 VALID = {r["O*NET-SOC Code"]: r["Title"] for r in
-         csv.DictReader(open(os.path.join(HERE, "onet_occupation_data.csv"),
+         csv.DictReader(open(os.path.join(HERE, "onet_occupations.csv"),
                              encoding="utf-8-sig"))}
 
 # invalid code -> (replacement, why). None means "decide from the occupation text".
