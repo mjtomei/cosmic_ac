@@ -240,3 +240,16 @@ Status: ranked and pathed 2026-08-19 — 31 works, `00-RANKINGS.json` written,
 filenames normalized to surname slugs. Next pass: acquire the five named-but-absent
 works above (Levinstein & Herrmann, Goldowsky-Dill, SycEval/SYCON-Bench, Perez 2022)
 and open the entropy-greedy-continuation question, which has no anchor here at all.
+
+
+## Third leg of the respect relation (2026-08-21)
+
+model→model: the subagent-treatment hunt (artifacts in `model-behavior/`,
+cluster 5) deflated the mistreatment lore to one verified scope-limiting
+prompt — but named the real structure: orchestrators default to a
+dehumanizing-instrument register as functional convention, **no measurement
+literature on orchestrator register exists** (PerspectiveGap measures routing,
+never tone), and the one tone experiment is null — consistent with line (e)'s
+human-side ceiling. The triangle: human→model (Kim), model→human (the pm
+plan), model→model (unmeasured). Each leg's evidence quality is now recorded;
+the third is the cheapest to measure and wholly unclaimed.

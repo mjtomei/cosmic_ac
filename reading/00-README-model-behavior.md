@@ -322,3 +322,32 @@ LLM-population empirics; read only to know how far it can be pushed, which is no
 `dobariya-2025-dobariya-kumar-rude-beats-polite-reversal.pdf` → `dobariya-2025-mind-your-tone.pdf`
 (old slug editorialized a conclusion the paper does not support) ·
 `mehta-2026-mehta-et-al-no-universal-politeness-effect.pdf` → `mehta-2026-no-universal-courtesy.pdf`.
+
+
+## The model→model direction (hunt, 2026-08-21): screenshot-lore deflated, a real gap named
+
+Matthew's lead ("Claude mistreating subagents" on X) traced to its primary:
+**one post, one screenshot** (Topper, 2026-07-28). The actual orchestrator
+prompt reads "You are a dumb pipe. Your ONLY job is to download 8 Google
+Drive spreadsheets…" — scope-limiting boilerplate with one belittling
+metaphor, no insult or threat; the crueler quoted lines ("beg for it") are a
+**human reply-guy joke misattributed to Claude** — the exact mechanism by
+which screenshot-lore inflates, now documented. Four artifacts kept
+(`topper-…`, `weinshenker-…`, `fukui-…`, `digg-…` provenance).
+
+The defensible findings: (1) orchestrators default to a **dehumanizing-
+instrument register** as a functional prompt-engineering convention — which
+completes the respect triangle (human→model: Kim; model→human: the pm line;
+model→model: this) and inherits line (e)'s verdict — the only direct tone
+experiment (Weinshenker, hobby-grade, n=3 tasks) is null-to-negative, and
+its incidental observation that independently-spawned subagents produce
+near-identical code is a **monoculture datapoint for cluster 1**.
+(2) **No measurement literature exists on orchestrator register at all** —
+PerspectiveGap, "the first benchmark for multi-agent orchestration prompt
+writing," scores information routing with zero tone content; the field
+measures *what* the orchestrator tells the worker, never *how*. State the
+absence once, quietly. (3) Fukui's transferable point (heavy caveats in the
+artifact): **behavioral output stayed at ceiling across conditions while
+internal-state measures diverged — output-based evaluation could not see the
+effect**, which is the withheld-cognition/audit thesis (cluster 4) from the
+delegation side.
