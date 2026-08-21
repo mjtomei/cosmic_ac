@@ -214,3 +214,19 @@ Status: 41 works on disk; ranked 2026-08-21 (`00-RANKINGS.json`); 19 ★★★ /
 20 ★★ / 2 ★, 14 objections; 26-step reading path above; two filenames
 corrected (Knuth's page is not a 1990 document; Sharma's file is the 2022
 arXiv preprint, not the 2023 NMI record).
+
+
+## Post-ranking addition (2026-08-21): the anthropomorphism answer's anchor
+
+V.3d gained Matthew's anthropomorphism block (feelings/behaviors as
+downstream of complex intelligence; transmission and dealing-mechanisms
+carrying over to machines with iterable counterparts). Its empirical core is
+now on shelves at both ends: **Kramer 2014** (added here, ★★★ c3 — the
+human-side interface-modulated contagion experiment, N≈689k, with its
+consent scandal carried as the governance lesson and its tiny effect sizes
+flagged) pairs with **Betley's emergent misalignment and Cloud's subliminal
+learning** (model-behavior shelf, both *Nature*) — the same transmission
+phenomena, instrumented at both ends of the human-machine symmetry.
+Counterweights carried in the outline: Shanahan's role-play framing and the
+pm litreview's no-homeostasis disanalogy — measurement, not analogy, decides
+each transfer.

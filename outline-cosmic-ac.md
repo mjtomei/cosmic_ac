@@ -1948,6 +1948,53 @@ question — the same emission-vs-cognition distinction the pm plan makes
 (govern what surfaces without stopping the thinking) applies on the reception
 side.
 
+**The anthropomorphism objection, met head-on (Matthew, 2026-08-21; applies
+equally to the user-modeling thread).** ⟨M⟩ This framing does anthropomorphize
+the machine intelligence, which people will resist for cultural reasons. But
+the point to be made is that **our related feelings and behaviors are
+downstream of being complex intelligences** — and the machines are quickly
+becoming the same thing, interacting with us and each other in similar ways.
+So the same ways that negative behaviors and attitudes are **transmitted and
+dealt with in people** are likely to be applicable, and to have
+**machine-guided counterparts which can be more efficient and iterated on.**
+⟨/M⟩ Three things make this defensible rather than sentimental:
+
+(1) **The warrant is functionalist, and the paper already uses it.** The
+artificial-persons shelf grants corporations real agency on functionalist
+grounds (List 2018; Pettit) — convergent functional organization, not
+projection. The same argument form applies here: contamination, contagion,
+and metabolization are properties of complex intelligences in interaction,
+not of carbon.
+
+(2) **The transmission mechanism is measured on BOTH sides — this is the
+empirical core.** Human side: emotional contagion through mediated networks
+is experimentally established — Kramer, Guillory & Hancock's massive-scale
+Facebook experiment (PNAS 2014, N≈689k: modulating feed valence shifted
+users' own expressed affect; and its consent scandal is the governance
+lesson for V.3d's consent gap, already named). Machine side, all on the
+model-behavior shelf: **Betley's emergent misalignment** (*Nature* —
+training on one bad behavior spreads to others) and **Cloud's subliminal
+learning** (*Nature* — behavioral traits transmitted model-to-model through
+generated data) are negative-attitude transmission between machines,
+measured; the delusional-spiraling formal model covers the human↔machine
+direction; Krishna's persona convergence the population level. The
+anthropomorphism objection dissolves into a symmetry observation: the same
+transmission phenomena, instrumented at both ends.
+
+(3) **"Dealt with" carries over as engineering.** If transmission is
+symmetric, the human dealing-mechanisms (reappraisal, the contemplative
+metabolization) should have machine counterparts — and machine counterparts
+are *iterable* at machine timescales, which is the loop-size thesis applied
+to affect. Yang CHI'26 is iteration zero.
+
+Honest counterweights, carried: Shanahan's role-play framing (on the
+user-modeling shelf) — use careful language, these are "exotic mind-like
+entities," and naive projection misleads; and the pm litreview's own
+disanalogy — models lack homeostatic switching costs, so even where function
+converges the *dynamics* differ, which is exactly why measurement rather
+than analogy has to decide each transfer. State the claim as a research
+program, not a premise.
+
 **Structural connections:** this is the *inbound* half of the pm user-model
 program (outbound: graduated emission control conditioned on the user model;
 inbound: reception shaped by the same model — one user model, two directions,
