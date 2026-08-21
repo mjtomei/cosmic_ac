@@ -1852,13 +1852,20 @@ the line to suffer it.** ⟨/M⟩
 **The isolation observation has real anchors on both sides.** Contemplative:
 the retreat-and-return structure is canonical (the desert traditions;
 Plato's philosopher *returning to the cave* is the Western form — the return
-with metabolizing capacity is the point, not the withdrawal). Technologist:
-**Knuth has famously lived without email since 1990** — "Email is a wonderful
-thing for people whose role in life is to be on top of things… my role is to
-be on the bottom of things" (VERIFY exact wording from his own page) — and
-Dijkstra may be a second instance (the fountain-pen habit and kept-at-arm's-
-length computing are widely told; VERIFY against the EWDs or interviews
-before asserting). Both
+with metabolizing capacity is the point, not the withdrawal). Technologist —
+both now VERIFIED from primary sources (2026-08-21 sweep): **Knuth**, exact
+wording from his own Stanford page: "Email is a wonderful thing for people
+whose role in life is to be on top of things. But not for me; my role is to
+be **on** the bottom of things." (note *on*, not the commonly-misquoted
+*at*). And **Dijkstra is a confirmed second instance, in his own
+handwriting** — EWD1305, third bullet: "And I don't need to waste my time
+with a computer just because I am a computer scientist. **[Medical
+researchers are not required to suffer from the diseases they
+investigate.]**" — ⟨M⟩'s suffering-in-the-line clause, stated by Dijkstra
+about himself two decades early. Scope kept honest: EWD1000 shows he *typed*
+for years on Hermes machines (the fountain-pen-always retelling overclaims),
+and his 2001 CBI oral history contains nothing on the habits (negative
+recorded so nobody re-hunts it). Both
 communities independently discovered that unshaped input is a cost worth
 paying heavily to control — which is the demand curve for the interface,
 already revealed.
@@ -1903,7 +1910,20 @@ degrades trust** (Hohenstein et al. — receivers judge senders more negatively
 when AI involvement is suspected; VERIFY all four handles). That last result
 is a design constraint, not a refutation: the tooling must be the
 *receiver's* instrument, disclosed or invisible-by-the-receiver's-choice —
-never the sender's covert polish.
+never the sender's covert polish. **The receiver-side tool already exists as
+prior art (found 2026-08-21): Yang et al., "Can AI be a Social Buffer?"
+(CHI '26) — AI-assisted cognitive reappraisal of difficult workplace email,
+measured.** Reappraisal-in-the-interface is no longer a proposal; the
+experiments extend it (build on it, never claim it). Two more sweep results
+sharpen the section: **the displacement question is a named empirical gap** —
+four search framings found NO study measuring whether automating moderation
+reduced aggregate human moderator exposure, making it a candidate original
+measurement for the study — while the harm-relocation literature (Qian et
+al.: the same suffering relocated one layer up, into violent-content labeling
+and red-teaming for AI development) is the empirically-adjacent form of the
+suffering-in-the-line clause. And Tessler's *Science* 2024 Habermas-machine
+VoR is closed everywhere (buy/browser list); the team's later reflection
+piece is on disk but must never be cited as the Science paper's findings.
 
 **Objections to carry, and the answers already in the architecture:**
 (1) **The echo-chamber objection** (Nguyen's epistemic bubbles vs echo

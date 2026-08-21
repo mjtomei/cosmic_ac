@@ -22,7 +22,8 @@ mode or technique is proven.
    not a negative. Record `oa_status: unknown (rate-limited)` and retry later
    — never let an infrastructure failure become "no OA copy exists." Verify
    claimed-free hints too (a Beheim oa_hint asserted the Nature VoR was free;
-   it was not).
+   it was not; Unpaywall+S2 both claimed green OA for Webb 2012 at a Sussex
+   figshare record that is permanently embargoed and serves no file).
 4. **Author-side routes** when indexes say closed: institutional repository
    guessed from author affiliation (LSE eprints, ANU, DASH, eScholarship,
    DiVA, PURE instances), personal sites live AND via Wayback CDX (dead

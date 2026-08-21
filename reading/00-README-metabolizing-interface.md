@@ -50,4 +50,27 @@ sharpest clause of the claim and hands the model-welfare thread its testable
 design property (does transmutation-by-understanding avoid RELOCATING the
 suffering?).
 
-Status: opened 2026-08-21; acquisition sweep launching; ranking to follow.
+## Acquisition results (2026-08-21): 41 works, all verified on disk
+
+Highlights: **Knuth's exact wording verified** ("on the bottom", not "at");
+**Dijkstra confirmed from primary sources** — EWD1305's handwritten "[Medical
+researchers are not required to suffer from the diseases they investigate.]"
+is the suffering-in-the-line clause in his own words, while EWD1000 corrects
+the fountain-pen-always retelling (he typed on Hermes machines for years) and
+the CBI oral history is a recorded negative. **Yang et al. CHI '26 is the
+directory's exact object found in the wild** — receiver-side AI-assisted
+cognitive reappraisal of workplace email, measured. **The displacement
+question is a named empirical gap** (no study measures whether automation
+reduced moderator exposure; Qian et al.'s harm-relocation into AI-development
+labeling is the adjacent evidence). The Scola v. Facebook settlement AND the
+final-approval order are on disk as primary documents. Webb 2012 is a
+ReportLab RECONSTRUCTION from author-posted page coordinates (journal
+pagination verified; cite the printed pagination, never this file as a
+version) — and its indexes-claim-green-but-embargoed Sussex figshare record
+is another claimed-free-that-isn't for the methodology ledger. Troy 2013
+carries a 2016 corrigendum predating our copy — check before citing
+statistics. Tessler *Science* 2024: closed everywhere, buy/browser list; the
+team's later reflection piece is on disk as a de-risk companion, never
+citable as the Science findings.
+
+Status: 41 works on disk; ranking pass running.
