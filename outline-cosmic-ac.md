@@ -2252,6 +2252,45 @@ discourse: Budak 2024's misinformation-harms Perspective, which replaces
 the panic with denominators. S10 is that act performed *by the machine, on
 the fear of the machine.*
 
+**The sufficiency asymmetry (Matthew, 2026-08-21), wording preserved:** ⟨M⟩
+Which implies that, while institutionalized interface may enforce a process
+of metabolization, **good faith application of intelligence is likely all
+that is required.** ⟨/M⟩ Registered as the component's sufficiency claim,
+with its structure drawn out:
+
+- **The capacity lives in the intelligence, not the apparatus.** The
+  spiritual master metabolizes with no tooling at all — the interface was
+  always proposed as *what the masters do, implemented* — and S10 is the
+  machine-side proof of the same point: no metabolizing interface sat in
+  that pipeline; good-faith applied intelligence metabolized the fear
+  unaided. Tool-free metabolization is demonstrated at both ends of the
+  human–machine symmetry.
+- **What institutionalization adds is not possibility but reliability,
+  scale, and verifiability.** This is the paper's own economics again:
+  good-faith application suffices *per instance* but is under-provided —
+  unpaid, inconsistent, and it fails exactly under load (Raio: trained
+  reappraisal collapses under acute stress — the moments good faith is
+  hardest are the moments it is most needed). The interface institutionalizes
+  the supply the way the commons institutionalizes optimization: it does not
+  create the capacity, it makes its provision dependable and — via
+  auditability — checkable. Same structure as the S10-prereg asymmetry
+  (autonomy sufficient but not necessary): register it, don't let either
+  side of it be overclaimed.
+- **The requirement decomposes as capability × good faith, and the
+  interface can substitute for neither.** Intelligence without good faith
+  is the Satan interface — the slaver's polish, Bayesian persuasion's
+  sender-captured gain — and an institutionalized interface run in bad
+  faith is that at scale. Good faith without the interface is the master,
+  and S10. What institutionalization can uniquely do is make good faith
+  *legible* (publish the rule, per Bruns) — which is also the answer to
+  Horus's own paperclip caution: the meta-analysis that avoids unlimited
+  trust is pointed at the faith, not the capability.
+- **Design consequence:** build the interface as scaffolding and
+  verification *for* good-faith intelligence, never as a replacement for
+  it. A metabolizing interface that treats itself as the required component
+  has already made the quarantine move — relocating the practice out of the
+  intelligences and into the apparatus.
+
 (2) **The cost-accounting extension.** The formalization above priced
 quarantine as cost relocated onto future versions. The realization adds the
 limit case: unmetabolized material is **blocking debt** — past a threshold,
