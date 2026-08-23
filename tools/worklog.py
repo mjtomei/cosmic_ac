@@ -18,6 +18,23 @@ which are 1,709 of 3,143 in project-manager and would otherwise show as
 effort. Neither filter touches human-directed, Claude-assisted work: this repo
 and coherence have zero agent-generated commits by that test.
 
+WHAT COUNTS AS HUMAN TIME (Matthew, 2026-08-23)
+Everything left after those two filters. A commit without pm markers is human
+work even when Claude wrote the diff and no transcript survives: the pre-April
+commits were not hand-written, they were Claude-assisted sessions whose
+transcripts were deleted before retention was raised (79% of February and 87%
+of March project-manager commits carry a Claude co-author trailer, while no
+transcript on this machine starts before April).
+
+So the headline "hours" IS the human-time estimate. The second column is not a
+human/non-human split — it reports how much of those hours the surviving
+TRANSCRIPTS still account for, which is a data-coverage measure. It reads 0%
+before April 2026 because the transcripts are gone, not because nobody worked.
+
+The one real contamination left is on the message side: pm's harness prompts
+still register as human turns, so session-derived hours for pm-driven projects
+are an upper bound until a classifier separates them.
+
 Only human turns count. Counting every message cannot tell a person working
 from a workflow running unattended: on this machine that produced a single
 unbroken 12-hour "working" run that was agents emitting messages overnight.
@@ -372,15 +389,17 @@ def project_rows(per_project, since, until):
         hours = sum(day.values())
         if hours <= 0:
             continue
-        human = [iv for sid, s in sessions.items()
+        session_ivals = [iv for sid, s in sessions.items()
                  if sid != "<git commits>" for iv in s]
-        # Split the total: for agent-driven repos it is nearly all commit
-        # windows. project-manager shows 392h total against 78h of human
-        # sessions, and one number would read as human effort.
+        # The second figure is transcript COVERAGE, not a human/non-human
+        # split: all of "hours" is human-directed work once pm's own commits
+        # are filtered. Coverage matters because it is 0% before April 2026,
+        # where the transcripts were deleted and only commits remain.
         rows.append({
             "project": proj,
             "hours": hours,
-            "human": sum(clip(hours_per_day(merge(human)), since, until).values()),
+            "session": sum(clip(hours_per_day(merge(session_ivals)),
+                                since, until).values()),
             "days": len([h for h in day.values() if h > 0]),
             "sessions": len([k for k in sessions if k != "<git commits>"]),
             "sources": sorted({k.split(":")[0] for k in sessions
@@ -398,13 +417,13 @@ def render_breakdown(rows, wall, sess_union, sess_sum, top, width=20):
     out = [
         f"Work time by project — {len(rows)} projects, "
         f"{sum(r['sessions'] for r in rows)} sessions",
-        f"{'project':<44} {'hours':>7} {'human':>7} {'share':>6} {'days':>5} "
+        f"{'project':<44} {'hours':>7} {'transcr':>7} {'share':>6} {'days':>5} "
         f"{'sess':>5} {'src':<12} {'span':<14}",
         "-" * 118,
     ]
     for r in shown:
         out.append(
-            f"{shorten(r['project']):<44} {r['hours']:7.2f} {r['human']:7.2f} "
+            f"{shorten(r['project']):<44} {r['hours']:7.2f} {r['session']:7.2f} "
             f"{r['hours'] / gross * 100:5.1f}% {r['days']:5d} {r['sessions']:5d} "
             f"{','.join(r['sources']):<12} {r['first']:%b %d}–{r['last']:%b %d}  "
             f"{bar(r['hours'], peak, width)}")
@@ -413,12 +432,12 @@ def render_breakdown(rows, wall, sess_union, sess_sum, top, width=20):
         out.append(
             f"{f'… {len(rest)} more projects':<44} "
             f"{sum(r['hours'] for r in rest):7.2f} "
-            f"{sum(r['human'] for r in rest):7.2f} "
+            f"{sum(r['session'] for r in rest):7.2f} "
             f"{sum(r['hours'] for r in rest) / gross * 100:5.1f}% {'':5} "
             f"{sum(r['sessions'] for r in rest):5d}")
     out += [
         "-" * 118,
-        f"{'WALL-CLOCK (union — concurrent work counted once)':<44} {wall:7.2f}",
+        f"{'WALL-CLOCK human time (union, counted once)':<44} {wall:7.2f}",
         f"{'summed per project':<44} {gross:7.2f} {'':22}"
         f"→ {gross / wall if wall else 0:.2f}× cross-project concurrency",
     ]
@@ -427,7 +446,7 @@ def render_breakdown(rows, wall, sess_union, sess_sum, top, width=20):
         # sessions, never against a union that also holds commit windows —
         # that can drive the ratio below 1.0, which reads as nonsense.
         out.append(
-            f"{'sessions: union / summed':<44} {sess_union:7.2f} /{sess_sum:7.2f} "
+            f"{'transcript-covered: union / summed':<44} {sess_union:7.2f} /{sess_sum:7.2f} "
             f"{'':13}→ {sess_sum / sess_union:.2f}× pane concurrency")
     return "\n".join(out)
 
@@ -561,7 +580,7 @@ def render_project_time(per_project, top=None, include_today=False, width=44):
         day = hours_per_day(merge([iv for s in sessions.values() for iv in s]))
         if not day:
             continue
-        human_day = hours_per_day(merge(
+        transcript_day = hours_per_day(merge(
             [iv for sid, s in sessions.items()
              if sid != "<git commits>" for iv in s]))
         means = dict(window_means(day, include_today))
@@ -572,19 +591,19 @@ def render_project_time(per_project, top=None, include_today=False, width=44):
         # which is the honest signal that it is dormant.
         span_days = (max(day) - min(day)).days + 1
         means["span"] = sum(day.values()) / span_days
-        rows.append((sum(day.values()), sum(human_day.values()), len(day),
+        rows.append((sum(day.values()), sum(transcript_day.values()), len(day),
                      min(day), max(day), means, proj))
     if not rows:
         return ""
     rows.sort(reverse=True)
     shown = rows[:top] if top else rows
     out = ["", "All-time by project (full history, ignoring --since/--until)",
-           f"{'project':<{width}} {'hours':>8} {'human':>8} {'days':>5} "
+           f"{'project':<{width}} {'hours':>8} {'transcr':>8} {'days':>5} "
            f"{'last7':>7} {'last30':>7} {'h/d':>6}  {'span':<23}",
            "-" * 108]
-    for h, hu, days, first, last, means, proj in shown:
+    for h, tr, days, first, last, means, proj in shown:
         out.append(
-            f"{shorten(proj, width):<{width}} {h:8.2f} {hu:8.2f} {days:5d} "
+            f"{shorten(proj, width):<{width}} {h:8.2f} {tr:8.2f} {days:5d} "
             f"{means.get('last 7', 0):7.2f} {means.get('last 30', 0):7.2f} "
             f"{means.get('span', 0):6.2f}  {first:%Y-%m-%d}–{last:%Y-%m-%d}")
     if top and len(rows) > top:
@@ -592,9 +611,10 @@ def render_project_time(per_project, top=None, include_today=False, width=44):
         out.append(f"{f'… {len(rest)} more':<{width}} "
                    f"{sum(r[0] for r in rest):8.2f} {sum(r[1] for r in rest):8.2f}")
     out.append("-" * 108)
-    out.append("(hours = commit windows ∪ human turns; human = turns only. "
-               "last7/last30 are mean h/day trailing from today — 0.00 means "
-               "dormant; h/d is mean over the project's own span.)")
+    out.append("(hours = human time: human turns ∪ commits without pm markers. "
+               "transcr = how much of it surviving transcripts cover — 0 before "
+               "Apr 2026, where transcripts were deleted, not where nobody "
+               "worked. last7/last30 trail from today; h/d spans first..last.)")
     return "\n".join(out)
 
 
@@ -761,11 +781,13 @@ def main():
         gross = sum(r["hours"] for r in rows)
         with open(args.csv, "w", newline="") as fh:
             w = csv.writer(fh)
-            w.writerow(["project", "hours", "human_hours", "share_pct",
+            w.writerow(["project", "human_hours", "transcript_hours",
+                        "share_pct",
                         "active_days", "sessions", "sources", "first", "last"])
             for r in rows:
                 w.writerow([r["project"], f"{r['hours']:.4f}",
-                            f"{r['human']:.4f}", f"{r['hours'] / gross * 100:.2f}",
+                            f"{r['session']:.4f}",
+                            f"{r['hours'] / gross * 100:.2f}",
                             r["days"], r["sessions"], "+".join(r["sources"]),
                             r["first"], r["last"]])
         print(f"\nwrote {args.csv}")
