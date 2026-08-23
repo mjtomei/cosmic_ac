@@ -495,6 +495,76 @@ def render_tod(merged, bin_min, since, until, width=44):
             f"{best / total * 100:.0f}% of all activity")
 
 
+def window_means(day, include_today=False, windows=(7, 30, None)):
+    """[(label, mean h/calendar-day), ...] over trailing windows."""
+    if not day:
+        return []
+    today = datetime.datetime.now(TZ).date()
+    end = today if include_today else today - datetime.timedelta(days=1)
+    first = min(day)
+    if end < first:
+        return []
+    out = []
+    for w in windows:
+        start = max(first if w is None else end - datetime.timedelta(days=w - 1),
+                    first)
+        n = (end - start).days + 1
+        vals = [day.get(start + datetime.timedelta(days=i), 0.0) for i in range(n)]
+        out.append(("all" if w is None else f"last {w}",
+                    statistics.fmean(vals) if vals else 0.0))
+    return out
+
+
+def render_project_time(per_project, top=None, include_today=False, width=44):
+    """Per-project time summary, ALWAYS over full history.
+
+    Deliberately unfiltered by --since/--until: the tables above answer "what
+    happened in this window", and this one keeps the lifetime context that a
+    windowed run otherwise hides — total hours, how much of it was human, the
+    span, and the same trailing means the machine-wide block reports.
+    """
+    rows = []
+    for proj, sessions in per_project.items():
+        day = hours_per_day(merge([iv for s in sessions.values() for iv in s]))
+        if not day:
+            continue
+        human_day = hours_per_day(merge(
+            [iv for sid, s in sessions.items()
+             if sid != "<git commits>" for iv in s]))
+        means = dict(window_means(day, include_today))
+        # "all" over the project's OWN span, not since-its-start-until-today:
+        # a project that finished in May would otherwise be averaged across
+        # months of zeros and read as idle rather than finished. last7/last30
+        # stay trailing from today, so a dormant project shows 0.00 there —
+        # which is the honest signal that it is dormant.
+        span_days = (max(day) - min(day)).days + 1
+        means["span"] = sum(day.values()) / span_days
+        rows.append((sum(day.values()), sum(human_day.values()), len(day),
+                     min(day), max(day), means, proj))
+    if not rows:
+        return ""
+    rows.sort(reverse=True)
+    shown = rows[:top] if top else rows
+    out = ["", "All-time by project (full history, ignoring --since/--until)",
+           f"{'project':<{width}} {'hours':>8} {'human':>8} {'days':>5} "
+           f"{'last7':>7} {'last30':>7} {'h/d':>6}  {'span':<23}",
+           "-" * 108]
+    for h, hu, days, first, last, means, proj in shown:
+        out.append(
+            f"{shorten(proj, width):<{width}} {h:8.2f} {hu:8.2f} {days:5d} "
+            f"{means.get('last 7', 0):7.2f} {means.get('last 30', 0):7.2f} "
+            f"{means.get('span', 0):6.2f}  {first:%Y-%m-%d}–{last:%Y-%m-%d}")
+    if top and len(rows) > top:
+        rest = rows[top:]
+        out.append(f"{f'… {len(rest)} more':<{width}} "
+                   f"{sum(r[0] for r in rest):8.2f} {sum(r[1] for r in rest):8.2f}")
+    out.append("-" * 108)
+    out.append("(hours = commit windows ∪ human turns; human = turns only. "
+               "last7/last30 are mean h/day trailing from today — 0.00 means "
+               "dormant; h/d is mean over the project's own span.)")
+    return "\n".join(out)
+
+
 def render_summary(day, include_today=False):
     """Mean and SD over trailing windows, ending on the last COMPLETE day.
 
@@ -635,6 +705,8 @@ def main():
                       default=None)
         print(render_days(day, {d: len(v) for d, v in nsess.items()}, longest))
     print(render_summary(day, include_today=args.include_today))
+    print(render_project_time(per_project, top=args.top or None,
+                              include_today=args.include_today))
 
     if args.csv:
         gross = sum(r["hours"] for r in rows)
