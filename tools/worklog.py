@@ -8,9 +8,15 @@ replaced: velocity-analysis/scripts/hour_histogram.py counts code lines, which
 is a different measurement.)
 
 THE METRIC
-    commit windows (15 min before each commit, per repository)
+    commit windows (15 min before each commit, per repository, all refs)
   ∪ gaps under 30 min between consecutive HUMAN messages
 Overlapping intervals are unioned, so a minute is never counted twice.
+
+Both halves exclude work no person drove. On the message side that means
+harness turns; on the commit side it means the commits pm makes on its own,
+which are 1,709 of 3,143 in project-manager and would otherwise show as
+effort. Neither filter touches human-directed, Claude-assisted work: this repo
+and coherence have zero agent-generated commits by that test.
 
 Only human turns count. Counting every message cannot tell a person working
 from a workflow running unattended: on this machine that produced a single
@@ -37,6 +43,7 @@ Usage:
     python3 tools/worklog.py --tod --bin 60
     python3 tools/worklog.py --include-pm         # add pm branch workdirs
     python3 tools/worklog.py --source omp
+    python3 tools/worklog.py --all-time          # lifetime per-project table
     python3 tools/worklog.py --csv by-project.csv
 """
 import argparse
@@ -73,6 +80,20 @@ TZ = datetime.datetime.now().astimezone().tzinfo
 # the fallback for a session whose cwd was not recorded, where only the
 # project slug is available and its separators are already dashes.
 PM_WORKDIR_RE = re.compile(r"/\.pm/workdirs/|-pm-workdirs-")
+# Commits pm makes on its own. Author identity cannot separate these — pm
+# commits AS the user (3,016 of 3,143 in project-manager are authored
+# "Matthew Tomei"), and a Claude co-author trailer is on 2,493 of them
+# including the ones a person asked for. The subject line is what actually
+# discriminates, and this is the rule velocity-analysis/scripts/
+# working_hours.py already uses for the same job.
+#
+# Measured: 1,709 of 3,143 subjects in project-manager match; 0 of 690 in
+# performance_commons and 0 of 72 in coherence — so it targets pm's loop and
+# leaves human-directed, Claude-assisted work alone.
+AGENTIC_COMMIT_RE = re.compile(
+    r"^(merge pull request|start work on|review-loop|qa\b|pm: |pm:qa"
+    r"|plan-regression|watcher)", re.I)
+
 # /tmp/claude-<uid>/<slug>/<uuid>[/scratchpad] -> strip back toward the slug
 TMP_SESSION_RE = re.compile(r"/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-"
                             r"[0-9a-f]{4}-[0-9a-f]{12}$")
@@ -220,28 +241,39 @@ def fold_slug_dirs(per_project):
 
 
 # --- git ---------------------------------------------------------------------
-def commit_intervals(repo):
-    """[t - PRE_COMMIT_MIN, t] for every commit reachable from any ref."""
+def commit_intervals(repo, skip_agentic=True):
+    """[t - PRE_COMMIT_MIN, t] per commit. Returns (intervals, n_skipped).
+
+    --all covers every ref: branches, remote-tracking branches and tags, not
+    just the checked-out one (690 commits vs 495 for HEAD alone in this repo).
+    --reflog is deliberately NOT added; it resurrects orphaned and amended
+    commits, which would charge the same work twice.
+    """
     try:
         out = subprocess.run(
-            ["git", "-C", repo, "log", "--all", "--pretty=format:%ad",
+            ["git", "-C", repo, "log", "--all",
+             "--pretty=format:%ad%x00%s",
              "--date=format:%Y-%m-%dT%H:%M:%S"],
             capture_output=True, text=True, timeout=60)
         if out.returncode:
-            return []
+            return [], 0
     except (OSError, subprocess.SubprocessError):
-        return []
-    ivals = []
+        return [], 0
+    ivals, skipped = [], 0
     for line in out.stdout.splitlines():
-        line = line.strip()
-        if not line:
+        stamp, _, subject = line.partition("\0")
+        stamp = stamp.strip()
+        if not stamp:
+            continue
+        if skip_agentic and AGENTIC_COMMIT_RE.match(subject.strip()):
+            skipped += 1
             continue
         try:
-            t = datetime.datetime.fromisoformat(line).replace(tzinfo=TZ)
+            t = datetime.datetime.fromisoformat(stamp).replace(tzinfo=TZ)
         except ValueError:
             continue
         ivals.append((t - datetime.timedelta(minutes=PRE_COMMIT_MIN), t))
-    return ivals
+    return ivals, skipped
 
 
 def repo_identity(path):
@@ -262,8 +294,8 @@ def repo_identity(path):
         return None
 
 
-def add_commits(per_project):
-    seen = {}
+def add_commits(per_project, skip_agentic=True):
+    seen, skipped_total = {}, 0
     for proj in sorted(per_project, key=len):        # prefer the shortest path
         dotgit = os.path.join(proj, ".git")
         if not (os.path.isdir(dotgit) or os.path.isfile(dotgit)):
@@ -272,10 +304,11 @@ def add_commits(per_project):
         if ident is None or ident in seen:
             continue
         seen[ident] = proj
-        ivals = commit_intervals(proj)
+        ivals, skipped = commit_intervals(proj, skip_agentic=skip_agentic)
+        skipped_total += skipped
         if ivals:
             per_project[proj]["<git commits>"] = ivals
-    return seen
+    return seen, skipped_total
 
 
 # --- interval maths ----------------------------------------------------------
@@ -630,6 +663,13 @@ def main():
     ap.add_argument("--tod", action="store_true", help="time-of-day profile")
     ap.add_argument("--bin", type=int, default=15, metavar="MIN",
                     help="slot width for --tod; must divide 1440 (default 15)")
+    ap.add_argument("--all-time", action="store_true",
+                    help="also print the lifetime per-project table "
+                         "(hours, human hours, trailing means, span)")
+    ap.add_argument("--include-agentic-commits", action="store_true",
+                    help="count commits pm made on its own (review-loop/qa/"
+                         "start-work-on/merge subjects). Excluded by default: "
+                         "they are the harness committing, not a person")
     ap.add_argument("--no-commits", action="store_true",
                     help="human messages only; skip git commit windows")
     ap.add_argument("--include-agent", action="store_true",
@@ -657,8 +697,10 @@ def main():
         print("No matching sessions found.")
         return
 
+    skipped_commits = 0
     if not args.no_commits:
-        add_commits(per_project)
+        _, skipped_commits = add_commits(
+            per_project, skip_agentic=not args.include_agentic_commits)
 
     rows = project_rows(per_project, args.since, args.until)
     if not rows:
@@ -687,9 +729,15 @@ def main():
     sess_union = sum(clip(hours_per_day(merge(sess_ivals)),
                           args.since, args.until).values())
 
+    notes = []
     if dropped:
-        print(f"note: {dropped} pm branch-workdir project(s) excluded "
-              f"(--include-pm to add)\n")
+        notes.append(f"{dropped} pm branch-workdir project(s) excluded "
+                     f"(--include-pm to add)")
+    if skipped_commits:
+        notes.append(f"{skipped_commits} agent-generated commit(s) skipped "
+                     f"(--include-agentic-commits to add)")
+    if notes:
+        print("note: " + "\n      ".join(notes) + "\n")
     print(render_breakdown(rows, wall, sess_union, sess_sum,
                            top=args.top or None))
     print()
@@ -705,8 +753,9 @@ def main():
                       default=None)
         print(render_days(day, {d: len(v) for d, v in nsess.items()}, longest))
     print(render_summary(day, include_today=args.include_today))
-    print(render_project_time(per_project, top=args.top or None,
-                              include_today=args.include_today))
+    if args.all_time:
+        print(render_project_time(per_project, top=args.top or None,
+                                  include_today=args.include_today))
 
     if args.csv:
         gross = sum(r["hours"] for r in rows)
