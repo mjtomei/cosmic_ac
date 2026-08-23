@@ -82,8 +82,11 @@ SESSION_GLOB = " , ".join(SESSION_GLOBS)   # for the not-found message only
 TZ = datetime.datetime.now().astimezone().tzinfo
 
 
-def commit_intervals():
+def commit_intervals(repo=None):
     """[t - PRE_COMMIT_MIN, t] for every commit reachable from any ref.
+
+    `repo` defaults to this repo; worklog_all.py passes other checkouts so the
+    machine-wide report uses one implementation of the commit signal.
 
     --all sweeps the backup branches too. Their commits are pre-rewrite copies
     carrying the same author dates as the rewritten ones on master, so they
@@ -91,7 +94,7 @@ def commit_intervals():
     """
     try:
         out = subprocess.check_output(
-            ["git", "-C", REPO_DIR, "log", "--all",
+            ["git", "-C", repo or REPO_DIR, "log", "--all",
              "--pretty=format:%ad", "--date=format:%Y-%m-%dT%H:%M:%S"],
             stderr=subprocess.DEVNULL,
         ).decode()
