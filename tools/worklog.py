@@ -61,11 +61,18 @@ CLAUDE_GLOB = os.path.expanduser("~/.claude/projects/*/*.jsonl")
 OMP_GLOB = os.path.expanduser("~/.omp/agent/sessions/*/*.jsonl")
 TZ = datetime.datetime.now().astimezone().tzinfo
 
-# pm drives autonomous work from throwaway branch checkouts. Those sessions are
-# the harness prompting itself, not a person working, and they outnumber real
-# ones — excluded unless asked for.
-PM_WORKDIR_RE = re.compile(r"/\.pm/workdirs/|/--pm-workdirs/|/pm-workdirs/"
-                           r"|/pm-test-\d|/\.pm\.old/")
+# pm drives autonomous work from throwaway branch checkouts under .pm/workdirs.
+# Those sessions are the harness prompting itself, not a person working, and
+# they outnumber the real ones — excluded unless asked for.
+#
+# Scoped to workdirs ONLY, deliberately. pm's own repo (~/claude-work/
+# project-manager) is real development and stays in; so does anything else
+# merely named "pm". An earlier version also matched /pm-test-<n> and
+# .pm.old, which reached outside workdirs into scratch checkouts — dropped,
+# since the rule should mean what its name says. The second alternative is
+# the fallback for a session whose cwd was not recorded, where only the
+# project slug is available and its separators are already dashes.
+PM_WORKDIR_RE = re.compile(r"/\.pm/workdirs/|-pm-workdirs-")
 # /tmp/claude-<uid>/<slug>/<uuid>[/scratchpad] -> strip back toward the slug
 TMP_SESSION_RE = re.compile(r"/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-"
                             r"[0-9a-f]{4}-[0-9a-f]{12}$")
