@@ -211,21 +211,40 @@ def main():
         print(f"The two New Brunswick searches re-attack the same "
               f"{len(nb)} texts.\n")
 
-    print("PER-RUN\n")
-    print(f"{'run':<20s} {'seeds':>6s} {'var':>5s} {'AI':>4s} {'Mix':>4s} "
-          f"{'Hum':>4s} {'strict':>7s}")
-    for run in ["NB v2 blind", "NB v3 contrastive", "GO Opus-selected",
-                "GO all-31 uniform"]:
+    # B1 (Matthew 2026-08-24): the primary per-variant rate is computed on
+    # the two FINAL searches only. NB v2 blind and GO Opus-selected are the
+    # biased FIRST attempt in each chamber (v2 badly-seeded; Opus-selected
+    # chose which texts to attack by proxy score) -- they belong in the
+    # superseded appendix, not the denominator. Reported here separately so
+    # the split is auditable, never silently.
+    FINAL = ["NB v3 contrastive", "GO all-31 uniform"]
+    SUPERSEDED = ["NB v2 blind", "GO Opus-selected"]
+
+    def perrun(run):
         v = [r for r in rows if r["run"] == run]
         c = collections.Counter(r["verdict"] for r in v)
         st = sum(1 for r in v if r["strict"])
-        print(f"{run:<20s} {len(set(r['seg_id'] for r in v)):>6d} "
-              f"{len(v):>5d} {c['AI']:>4d} {c['Mixed']:>4d} {c['Human']:>4d} "
-              f"{st:>7d}")
+        return (len(set(r['seg_id'] for r in v)), len(v),
+                c['AI'], c['Mixed'], c['Human'], st)
 
-    n = len(rows)
-    h = sum(1 for r in rows if r["verdict"] == "Human")
-    s = sum(1 for r in rows if r["strict"])
+    print("PER-RUN\n")
+    print(f"{'run':<20s} {'seeds':>6s} {'var':>5s} {'AI':>4s} {'Mix':>4s} "
+          f"{'Hum':>4s} {'strict':>7s}")
+    print("  -- FINAL searches (primary) --")
+    for run in FINAL:
+        print(f"{run:<20s} " + " ".join(f"{x:>{w}d}" for x, w in
+              zip(perrun(run), (6, 5, 4, 4, 4, 7))))
+    print("  -- superseded first attempts (Appendix B) --")
+    for run in SUPERSEDED:
+        print(f"{run:<20s} " + " ".join(f"{x:>{w}d}" for x, w in
+              zip(perrun(run), (6, 5, 4, 4, 4, 7))))
+
+    final_rows = [r for r in rows if r["run"] in FINAL]
+    n = len(final_rows)
+    h = sum(1 for r in final_rows if r["verdict"] == "Human")
+    s = sum(1 for r in final_rows if r["strict"])
+    rows_all = rows          # keep the full set for the seed-verdict block
+    rows = final_rows        # per-variant stats below are FINAL-only
     # CLUSTER ON TEXT. Wilson would assume 461 independent trials; these are
     # up to 18 rewrites of each of 92 texts.
     hp, hlo, hhi, m, _, hdeff = cluster_boot(
@@ -250,6 +269,13 @@ def main():
     print(f"  not about whether a text is evadable. A different method on the "
           f"same text is")
     print(f"  untested; see the zero-yield block below.")
+
+    sup = [r for r in rows_all if r["run"] in SUPERSEDED]
+    sh = sum(1 for r in sup if r["verdict"] == "Human")
+    print(f"\n  SUPERSEDED first attempts, for the record (Appendix B): "
+          f"{sh}/{len(sup)} = {100*sh/len(sup):.1f}% Human -- the two biased")
+    print(f"  first samplings produced {sh} reversal in {len(sup)} variants; "
+          f"keeping them in the denominator was the old 8.5% figure.")
 
     ai = [r for r in rows if r["seed_verdict"] == "AI"]
     ah = sum(1 for r in ai if r["verdict"] == "Human")
@@ -395,6 +421,27 @@ def main():
             lo, hi = wilson(k, len(t))
             print(f"  {run:<20s} seed {sv:<6s} {k:>2d}/{len(t):<3d} = "
                   f"{100*k/len(t):>5.1f}% [{100*lo:.0f}, {100*hi:.0f}]")
+
+    # BAND CHECK (B7 reproducibility; EXPLORATORY per B8 -- no significance
+    # claim attaches). Does a text's own original Opus AI-score predict how
+    # evadable it is? Banded over the v3 contrastive run. The gradient is
+    # suggestive (low-scoring originals flip far more) but non-monotone, on
+    # ~53 variants per cell, and no test survives -- reported as texture, not
+    # a finding.
+    print("\nBAND CHECK -- evadability vs the original's Opus score (EXPLORATORY)")
+    v3 = json.load(open(os.path.join(HERE, "bypass_v3_pangram.json")))
+    items = list(v3.values()) if isinstance(v3, dict) else v3
+    br = sorted((float(r["opus_orig"]), r["pangram"]) for r in items
+                if r.get("opus_orig") not in (None, ""))
+    m = len(br)
+    print(f"  {'quartile of opus_orig':<22s}{'n':>4s}{'flip%':>7s}{'Human%':>8s}")
+    for i in range(4):
+        b = br[i * m // 4:(i + 1) * m // 4]
+        flip = sum(1 for _, p in b if p in ("Human", "Mixed"))
+        hum = sum(1 for _, p in b if p == "Human")
+        print(f"  Q{i+1} [{b[0][0]:.0f},{b[-1][0]:.0f}]".ljust(24)
+              + f"{len(b):>4d}{100*flip/len(b):>6.0f}%{100*hum/len(b):>7.0f}%")
+    print("  Non-monotone, ~53/cell, no surviving test -- see Appendix B.")
 
     print(f"\nSPECIFICITY FOR CONTRAST: 0 AI labels in 1,260 pre-AI controls")
     print(f"  (see prevalence_report.py). The reversals above are movements")
