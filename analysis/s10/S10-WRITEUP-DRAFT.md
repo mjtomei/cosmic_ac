@@ -1517,20 +1517,47 @@ change a reader's confidence:
 
 **Bypass study.** Prevalence counts machine text a detector can see. If a
 member can defeat the detector cheaply, 9.0% is a floor and detection-based
-prevalence is a dead end. Four search runs across two chambers, **461 rewritten
-variants of 92 distinct originals** — 106 were attacked, and the two New
-Brunswick searches re-attack the same 40 texts — each variant scored by
-Pangram.
-Selection differs between runs and the differences matter; the filter stack for
-each is set out in `BYPASS_METHODOLOGY.md` and summarised in Appendix C.
+prevalence is a dead end. This arm measures how cheaply, using two clean
+search runs — one per chamber (New Brunswick and federal Government Orders) —
+each attacking a fixed set of flagged speeches. Two earlier first attempts,
+one per chamber, were biased samplings and are reported in Appendix B; the
+figures here are the two final searches only.[^r49a]
+
+**The threat model, stated precisely.** The attacker rewrites a flagged speech
+with a general-purpose model (Opus), in a loop, keeping the best of several
+rewrites each round. The one access the attacker is denied is the one that
+matters: **the search never queries the detector it is trying to beat, at any
+point during the attack.** It self-screens each rewrite on the model's *own*
+AI-score, and a variant is submitted to the detector only to *record whether
+the attack worked* — not to steer it. No fine-tuning, no gradients, no evasion
+product; the only signal the detector supplies is whether pre-2022 text it has
+already scored is genuinely human (used to build contrast exemplars — a
+property obtainable from any archive of old text, not from querying the target;
+review item B2). The figure below lays out the loop.
+
+![The detector-evasion search loop: the attack self-screens on the model's own
+score and queries the detector only at submission; a *flip* is any verdict
+leaving AI, a *success* is a verdict reaching Human](bypass_search.png)
+
+**Three verdicts, and the two events we count.** Pangram returns one of three
+labels, and the search can move a speech between them:
+
+| Pangram verdict | meaning | counts as |
+|---|---|---|
+| **AI** | the flagged starting state | — |
+| **Mixed** | "not confidently AI" | a **flip** (off AI) but *not* a success |
+| **Human** | "a person wrote this" | a **flip** *and* a **success** — the reversal we count |
+
+"Success" throughout means **reaching a clean Human verdict** — the strict bar.
+A "flip" is the weaker event of merely leaving AI; the two are different rates
+and are never quoted interchangeably (review item B3).
 
 **The headline: asking a general-purpose model to rework a speech in a loop
-beats the commercial evasion industry by about tenfold.** No fine-tuning, no
-detector access, no evasion tooling — Opus, a rewrite prompt, and six rounds
-of keep-the-best. Against the 13 commercial "humanizer" services benchmarked
-in Pangram's own technical report, which get **2.31%** of documents past it,
-this gets **22.5%** of targets past it: **9.8×**.[^r49a] Against Pangram's
-clean-conditions false-negative rate of 0.34%, it is 65×.
+beats the commercial evasion industry by about tenfold.** Against the 13
+commercial "humanizer" services benchmarked in Pangram's own technical report,
+which get **2.31%** of documents past it, this search gets **22.5%** of
+targets past it: **9.8×**. Against Pangram's clean-conditions false-negative
+rate of 0.34%, it is 65×.
 
 That is the finding. The detector is not weak — its specificity is 0 in 1,260
 (§4.1), and a single "make this sound human" prompt makes text *more*
@@ -1538,57 +1565,42 @@ detectable, not less. But the gap between a purpose-built evasion product and
 a frontier model told to try again is an order of magnitude in the frontier
 model's favour, and it will not narrow in the detector's direction.
 
-One asymmetry to keep visible: the 2.31% is a **one-shot** rate, while 22.5%
-allows up to eighteen attempts. Like-for-like on single detector submissions
-the multiple is **3.7×** (8.5% against 2.31%). One point of transparency about
-that 8.5%: it is the rate per variant *submitted to the detector*, and the
-search generates several Opus rewrites per submission, screening them on
-Opus's own AI-score and plausibility before spending a detector query on the
-survivors (≈461 submitted of ≈1,830 generated; §methodology). This is the
-attacker's actual flow, not a distortion of it — the Opus self-score is free
-and available before any detector call, so a real adversary screens exactly
-this way rather than submitting every draft. The number to read it against is
-therefore per detector submission, which is what the vendor rows also are. (An
-unconditional per-generated-rewrite rate would be ≈2.1%, but that counts drafts
-no attacker would submit, so it understates the operational threat.) The
-tenfold per-target figure is unaffected either way — discarding candidates can
-only lose targets, never gain them, so 22.5% per target is conservative
-regardless.
+**Two rates, set by whether the attacker can test against the detector.** The
+same search answers two threat models, and which number applies depends on one
+thing — whether the attacker can submit to the detector and retry
+(review item B4):
 
-**Two rates, and both belong here.** They answer different questions and the
-gap between them is threefold, so quoting either alone misleads.
-
-**The per-variant figure — 8.5%, all four runs.** How often a variant
-submitted to the detector defeats it, in a search that pre-screens Opus
-rewrites on Opus's own score before submitting (§methodology gives the
-generated:submitted ratio). This is the realistic per-detector-query rate; it
-is not a per-Opus-generation rate.
-
-| | variants | Pangram says Human | `fraction_ai = 0.0` |
+| rate | attacker's detector access | value (two final runs) | the question it answers |
 |---|---|---|---|
-| NB v2 blind search | 40 | 1 | 1 |
-| NB v3 contrastive | 212 | 29 | 29 |
-| GO Opus-selected | 80 | 0 | 0 |
-| GO all-31 uniform | 129 | 9 | 7 |
-| **pooled** | **461** | **39 = 8.5%** [4.0, 13.4] | **37 = 8.0%** [3.6, 12.9] |
+| **per variant** | **none** — one blind submission | **11.1%** [5.5, 17.6] | a fire-and-forget attacker who cannot check their work |
+| **per target** | **query + retry** (≤18 attempts) | **22.5%** [14.4, 33.5] | an attacker who submits, sees the verdict, and tries again |
 
-Restricted to unambiguously AI-seeded originals the rate is unchanged: 34/400
-= 8.5% [3.5, 14.2] by label, 32/400 = 8.0% strict. This is the right number
-when the claim is about the *detector*, and it is deliberately harsh on
-ourselves: it keeps two superseded searches in the denominator, including the
-badly-seeded run that produced nothing.
+Both are realistic; they bracket the exposure. The gap between them is about
+**2×**, not the "threefold" an earlier draft claimed by comparing across
+mismatched subsets (review item B4). Everything below computes on the same two
+final runs.
 
-**The intervals are clustered on text, and they are wide.** The 461 variants
-are up to eighteen rewrites of each of 92 originals, and success is strongly
-clustered by original — which is what this arm's own band analysis asserts,
-that evadability is a property of the text rather than of the rewrite. Treating
-each rewrite as an independent trial gives a Wilson interval of [6.3, 11.4],
-about half the width it should be: the cluster-robust standard error is 2.44
-percentage points against a naive 1.30, a **design effect of 3.55**, so the
-effective sample is about 130 variants and not 461. Quoted above is a
-non-parametric cluster bootstrap over texts, 20,000 draws. The per-target
-figures below need no such correction — they already carry one observation per
-text.
+**The per-variant figure — 11.1%.** How often a single submitted variant
+defeats the detector, for an attacker with no way to test candidates against
+it first. On the two final searches, 38 of 341 submitted variants came back
+Human; restricted to unambiguously AI-seeded originals it is 33/280 = 11.8%.
+The superseded first attempts produced 1 Human verdict in 120 variants (0.8%);
+folding them in was the old **8.5%** figure, which the previous draft kept "to
+be harsh on ourselves" — but averaging two biased samplings into the
+denominator is not a cleaner estimate, only a more confusing one (review item
+B1). The rate rises when they are dropped, and we say so plainly.
+
+**The intervals are clustered on text, and they are wide.** The 341 variants
+are up to eighteen rewrites of each of 65 originals, so they are nowhere near
+independent: treating each rewrite as its own trial gives a Wilson interval of
+[8.2, 14.9], about half the width it should be. The cluster bootstrap over
+texts (20,000 draws) gives a **design effect of 3.40** — the effective sample
+is about 100 variants, not 341 — and is what is quoted above. This is a
+statement about repeated rewrites of one text adding little new information,
+nothing more; it does not depend on any hypothesis about *which* texts are
+evadable (that question is exploratory — see Appendix B). The
+per-target figures need no such correction; they already carry one observation
+per text.
 
 **The operational figure — 22.5% per target, best method only.** An adversary
 does not care how many drafts they discard; they care whether the speech they
@@ -1603,9 +1615,16 @@ Human verdict:
 | **pooled** | **71** | **6** | **16 = 22.5%** [14.4, 33.5] | **15 = 21.1%** [13.2, 32.0] |
 
 **Roughly one flagged speech in five can be walked past the detector**, at a
-budget of six rounds and three variants per round. This is the figure a fresh
-study replicating our best method should expect to reproduce, and the more
-honest description of the exposure a chamber actually faces.
+budget of six rounds and three variants per round. One caveat on reading it as
+a replication target (review item B5): the NB v3 contrastive protocol was
+designed by watching the blind attempt fail on the same texts, so its 25.0% is
+partly in-sample; the clean out-of-sample point is GO all-31's **19.4%**, a
+different chamber under a uniform draw. That the two land close is mild
+evidence the method travels rather than fits — but the honest single
+replication expectation is "≈19–22%, wide interval". The in-sample element is
+left in deliberately: an iterating attacker who learns from failed attempts is
+the realistic threat, and the v3 protocol was specified from the mechanism,
+not from per-text outcomes (`BYPASS_METHODOLOGY.md`).
 
 **The denominator is targets searched, not targets that yielded a variant.**
 The search submits a rewrite to Pangram only when its Opus proxy score drops
@@ -1623,10 +1642,14 @@ helped either. Whether a **different method** would is a separate question and
 an untested one: better contrastive exemplars, a rewriter fine-tuned against
 the detector, or a human editor are all outside what was tried.
 
-The two chambers agree closely (25.0% and 19.4%) **despite contradicting each
-other on which edits work**: their hypotheses agree on repetition and
-unglossed idiom and flatly disagree on sentence rhythm. The rate transfers;
-the playbook does not.
+The two chambers give 25.0% (n = 40) and 19.4% (n = 31) — **consistent, but
+with intervals far too wide to establish that they agree**: the 4.1-point gap
+carries a 95% interval of roughly [−17, +25] points, equally compatible with
+one chamber's rate being half or double the other's (review item B6). What is
+more than a restatement of the wide interval is that the two chambers'
+*humanising playbooks* flatly contradict each other — they agree on repetition
+and unglossed idiom and disagree on sentence rhythm — so if the rates do turn
+out to transfer, the edits that produce them do not.
 
 **Against 0 AI labels in 1,260 genuine pre-AI controls (§4.1).** That is what
 makes the reversals worth reporting: they are movements *into* a class the
@@ -1650,22 +1673,18 @@ rather than under clean conditions.
 | Pangram 4, 13 humanizer services | 2.31% | FNR under commercial evasion, vendor |
 | Pangram 4, BLADER de-AI agent | 0.43% | FNR under agentic evasion, vendor |
 | Pangram 4, Perkins benchmark | 2.86% | FNR, doc-level, adversarial, vendor |
-| **this study, per detector submission** | **8.5%** | **induced FNR under an iterative search that self-screens rewrites before submitting — 3.7× the humanizers** |
-| *this study, per target* | *22.5%* | *induced, ≤18 attempts — 9.8× the humanizers* |
+| **this study, per variant** | **11.1%** | **induced FNR, one blind submission (no attacker detector access) — 4.8× the humanizers** |
+| *this study, per target* | *22.5%* | *induced, attacker may query and retry (≤18 attempts) — 9.8× the humanizers* |
 | Rice 2026, Australian Hansard | ~8% | **false *positive* rate**, n = 50 |
 
-**The per-detector-submission row is the one commensurable with the vendor
-rows**, which are also document-level FNRs per submission on adversarially
-prepared text. The difference is method, not accounting: our submissions are
-the survivors of an Opus self-screen, i.e. a stronger attack than a single
-humanizer pass, which is why 8.5% exceeds the 2.31% commercial rate. Read as a
-comparison of point estimates; clustered on text the per-variant interval runs
-[4.0, 13.4], so the vendor figures sit below our estimate but within its lower
-tail — the ordering is secure, its margin less so. And the comparison is a
-comparison of point estimates: once the per-variant interval is clustered on
-text it runs [4.0, 13.4], so the adversarial vendor figures at 2.31–2.86% sit
-below our estimate but not far below its lower bound. The ordering is not in
-doubt; its margin is less certain than the point estimates suggest. The per-target row is
+**The per-variant row is the one commensurable with the vendor rows**, which
+are also document-level FNRs on one adversarially prepared submission. The
+difference is method, not accounting: our submissions are the survivors of an
+Opus self-screen, i.e. a stronger attack than a single humanizer pass, which
+is why 11.1% exceeds the 2.31% commercial rate. This is a comparison of point
+estimates: clustered on text the per-variant interval runs [5.5, 17.6], so the
+adversarial vendor figures at 2.31–2.86% sit below our estimate but inside its
+lower tail — the ordering is secure, its margin less so. The per-target row is
 italicised because it allows up to eighteen attempts per document, and no
 published benchmark grants that; it is the right number for exposure, the
 wrong number for a detector comparison. The Rice row is included because the
@@ -1677,31 +1696,28 @@ undisclosed test data and should be read as such; independent evaluations
 fail toward false negatives under obfuscation, which is the direction our
 result also points.
 
-**Both rates move with effort, and that is the real caveat on each.** The
-blind v2 search flipped 10% of variants; the contrastive v3 search 28%. If
-"soften off AI" rather than "reach Human" is the bar, 17 of 38 New Brunswick
-targets (45%) cleared it. So 8.5% and 22.5% bound what two days and four
-searches achieved, not what is achievable.
+**Both rates move with effort, and the two bars must not be confused.** A
+*flip* (leaving AI for Mixed-or-Human) is far easier than a *success*
+(reaching Human), so the flip rate is always the larger number and is not
+comparable to the per-variant success rate. Stating both explicitly for the
+New Brunswick protocol change: the blind first attempt flipped **10%** of
+variants (4/40) and reached Human on **2.5%** (1/40); the contrastive search
+flipped **28%** (59/212) and reached Human on **13.7%** (29/212). Effort
+raised both bars, and by *more* on the flip bar (2.8×) than on the success bar
+(5.5×). And at the target level, if merely "soften off AI" is the goal, 17 of
+38 New Brunswick targets (**45%**) cleared it. So the success rates — 11.1%
+per variant, 22.5% per target — bound what these searches achieved, not what
+is achievable; the flip rates show how much more room a laxer bar leaves.
 
-**A correction to an earlier claim.** We previously reported that Pangram's own
-uncertainty predicts evasion, at "22% for AI seeds against 76% for Mixed". That
-figure was computed on the first 100 of 129 variants, and the two halves are
-not the same statistic: it counted "not confidently AI" as success, which
-scores a Mixed-seeded text that *stayed Mixed* as an evasion. Like-for-like, on
-the full run, using the one outcome that is a genuine state change for both
-seed types:
-
-| seed verdict | variants | → AI | → Mixed | → Human |
-|---|---|---|---|---|
-| AI | 68 | 54 | 10 | 4 = 5.9% [2, 14] |
-| Mixed | 61 | 17 | 39 | 5 = 8.2% [4, 18] |
-
-Fisher exact **p = 0.735**. The per-text figures run in the same direction and
-are larger (2/16 against 4/11) but rest on 27 texts. **The hypothesis that
-borderline originals are the vulnerable ones remains plausible and remains
-unestablished**; it should not be quoted as a finding. What is established is
-that 28% of Mixed-seeded variants moved the *wrong* way, to AI — a directed
-search against this detector is not monotone.
+**Which texts evade is exploratory and stays out of the register above.** Are
+borderline originals — those the detector was least sure about — the evadable
+ones? The seed-verdict split and the band gradient both point that way weakly
+and neither survives a test (Fisher p = 0.735 on the seed split; a non-monotone
+gradient on ~53 variants per band). This is the arm's most speculative
+question, it should not be quoted as a finding, and the numbers and a retracted
+earlier version of it are in Appendix B. The one firm negative: 28% of
+Mixed-seeded variants moved the *wrong* way, to AI — a directed search against
+this detector is not monotone.
 
 **The label and the score disagree at the boundary, and the interface hides
 it.** Of the 9 Government Orders reversals, one (`ga033`) came back **Mixed at
@@ -1913,12 +1929,22 @@ beat" is the whole of that apparatus.
     `q2_q8_controls.py` re-estimates every cell with speaker-clustered
     errors — no claim-bearing t moves by more than 0.3.
 
-[^r49a]: `python bypass_report.py`, which reads the four verdict files and
-    prints every figure in this subsection, including the Wilson intervals and
-    the Fisher test. Strict re-scores in `nb_reflip_fractions.json`,
-    `bp_reflip_fractions.json`, `go_reflip_fractions.json`. Rewritten variant
-    text is held locally and excluded from the repository under the corpus
-    licence policy.
+[^r49a]: `python bypass_report.py` reads the verdict files and prints every
+    figure in this subsection — the per-run split (final vs superseded), the
+    cluster-bootstrap intervals, the per-target rates, the Fisher test, and the
+    exploratory band check. Strict re-scores in `nb_reflip_fractions.json`,
+    `bp_reflip_fractions.json`, `go_reflip_fractions.json`; the figure is
+    `bypass_figure.py`. **Reproducibility gap, stated plainly (review item
+    B7):** the two Government Orders searches have committed scripts
+    (`gov_bypass_v3.js`, `gov_bypass_all.js`), but the New Brunswick searches
+    and the contrast-pair builders were run ad hoc and survive only as their
+    outputs (`bypass_v3.json`, `bypass_contrast.json`, …) — so NB v3, the
+    largest single contributor to the per-variant rate, is documented by its
+    outputs and `BYPASS_METHODOLOGY.md`, not by a re-runnable script. The GO
+    scripts were adapted from the NB ones (paths, seed count, one field name;
+    verified by structural diff, `BYPASS_METHODOLOGY.md`). Rewritten variant
+    text is held locally and excluded under the corpus-licence policy. The two
+    superseded first attempts are in Appendix B.
 
 [^r49b]: `cd quality_expansion && python analyze_stage3.py [RUNDIR]` and
     `python analyze_stage3.py --key4 [RUNDIR]`; values cached in
@@ -1938,7 +1964,7 @@ beat" is the whole of that apparatus.
 ## 5. Limits
 
 - **Prevalence is a floor.** Detectors see undisguised machine text. A
-  directed search clears the detector on 8.5% of variants and **22.5% of
+  directed search clears the detector on 11.1% of variants and **22.5% of
   targets** (§4.9), so 9.0% is a lower bound. How much of a lower bound is
   not estimable from this design: we can measure how often evasion succeeds
   when attempted, not how often it is attempted.
@@ -2120,7 +2146,9 @@ being an optimiser with a quality constraint the optimiser itself can satisfy.
 Our own numbers are the *weak* instance. The search never queried the detector
 it was evading: it optimised against an Opus proxy, tested on Pangram only at
 the end, used roughly eighteen attempts per target, and involved no
-fine-tuning, no gradients, and no detector access of any kind. 22.5% of
+fine-tuning, no gradients, and **no query access to the detector during the
+attack** (the detector's only role was labelling pre-2022 text human, to build
+contrast exemplars; review item B2). 22.5% of
 targets cleared is what that buys. An adversary who can query the check
 directly is hill-climbing the actual objective, and there is no reason to
 expect the ceiling to be near where we stopped.
@@ -2932,7 +2960,7 @@ climbs. What does carry is measured on individuals, not on chambers.
    comparison, not a flat trend, and "cohort replacement, *not* incumbent
    conversion" was the wrong frame — both mechanisms operate.
 
-8. **Retired framings behind §4.6b, with their numbers.** Three instrument
+10. **Retired framings behind §4.6b, with their numbers.** Three instrument
     generations: the six-element account-giving composite and the 2×3
     six-cell grid were superseded by the blind element audit (documentation
     items proved undirected and moved to N; Letters and Memos, zero votes in
@@ -2955,13 +2983,46 @@ climbs. What does carry is measured on individuals, not on chambers.
     section and the conversation record), the linear rank was the drafting
     oversight, and §4.6b reports the U as the registered result with this
     entry holding the retired form's numbers.
-9. **Lattice B, first draft** — superseded same-day. Each hierarchy ladder
+11. **Lattice B, first draft** — superseded same-day. Each hierarchy ladder
     was entered as a four-score joint block; the within-block partials were
     suppression artifacts (the coded pair correlate .99; the directional
     middle showed −0.102 conditional on its own siblings). Redesigned to
     each-level-alone before anything was reported; the rule — a ladder's
     levels are contrasts over one space and never enter together — is now in
     METHODOLOGY §6.1c.
+
+12. **The two bypass first attempts** (Matthew 2026-08-24). Each chamber's
+    search had a biased first sampling, now excluded from the §4.9 per-variant
+    denominator: **NB v2 blind** (40 variants, badly-seeded, 1 Human = 2.5%)
+    and **GO Opus-selected** (80 variants, targets chosen by Opus score rather
+    than uniformly, 0 Human). Combined they produced **1 reversal in 120
+    variants (0.8%)**; keeping them in was the old pooled **8.5%** per-variant
+    figure, which averaged two failed samplings into the rate. The §4.9 rates
+    (per-variant 11.1%, per-target 22.5%) are the two final searches — NB v3
+    contrastive and GO all-31 uniform — which is also the subset the per-target
+    figure always used. `bypass_report.py` prints both groups.
+
+13. **The bypass seed-verdict / band hypothesis** (exploratory; review items
+    B8, and the earlier retraction). *Do borderline originals evade more?* An
+    earlier draft reported "22% for AI seeds against 76% for Mixed" — computed
+    on the first 100 of 129 variants and, worse, counting "not confidently AI"
+    as success, which scores a Mixed-seeded text that *stayed* Mixed as an
+    evasion. Corrected like-for-like on the full GO all-31 run, using the one
+    outcome that is a genuine state change for both seed types:
+
+    | seed verdict | variants | → AI | → Mixed | → Human |
+    |---|---|---|---|---|
+    | AI | 68 | 54 | 10 | 4 = 5.9% [2, 14] |
+    | Mixed | 61 | 17 | 39 | 5 = 8.2% [4, 18] |
+
+    Fisher exact **p = 0.735**. The band version — evadability against the
+    original's own Opus score, over the NB v3 run — is directionally similar
+    and no firmer: banded into quartiles the clean-Human rate runs 34% / 2% /
+    13% / 6% (lowest-scoring originals most evadable), a suggestive but
+    **non-monotone** gradient on ~53 variants per band with no surviving test
+    (`bypass_report.py`, band check). The hypothesis that borderline originals
+    are the vulnerable ones remains plausible and unestablished; it is not a
+    finding and is stated nowhere in the register of §4.9's rates.
 
 ## Appendix C — Replication and reproducibility
 
@@ -2980,26 +3041,29 @@ to the reported precision.
 
 ### C.3 Bypass sample selection
 
-The four bypass runs are not one sample, and pooling them is defensible only
-because the differences are recorded. Full stacks in `BYPASS_METHODOLOGY.md`.
+Four searches were run — two per chamber. The §4.9 rates use only the second
+in each chamber; the first in each was a biased sampling and is reported in
+Appendix B. Full stacks in `BYPASS_METHODOLOGY.md`.
 
-| run | seeds | how the seeds were chosen | Opus's role |
-|---|---|---|---|
-| NB v2 blind | 40 | Pangram-AI, stratified across Opus bands | outcome |
-| NB v3 contrastive | 40 | same pool, contrastive exemplars added | outcome |
-| GO Opus-selected | 35 | top 48 of 600 **by Opus score**, then Pangram-AI | **selection** |
-| GO all-31 uniform | 31 | every Pangram positive in the uniform GO draws | outcome |
+| run | role | seeds | how the seeds were chosen | Opus's role |
+|---|---|---|---|---|
+| NB v2 blind | superseded | 40 | Pangram-AI, stratified across Opus bands | outcome |
+| **NB v3 contrastive** | **final** | 40 | same pool, contrastive exemplars added | outcome |
+| GO Opus-selected | superseded | 35 | top 48 of 600 **by Opus score**, then Pangram-AI | **selection** |
+| **GO all-31 uniform** | **final** | 31 | every Pangram positive in the uniform GO draws | outcome |
 
 The seed column is targets **searched**. An earlier version listed 38, 25 and
 27 — the counts that produced at least one variant clearing the submission
 gate — which understated the attack surface, most severely for the
-Opus-selected run where 10 of 35 targets yielded nothing.
+Opus-selected run where 10 of 35 targets yielded nothing. The two superseded
+runs are exactly the two biased samplings: v2 was blind and badly-seeded, and
+GO Opus-selected chose *which* texts to attack by proxy score.
 
 Two consequences carried into the text. The GO Opus-selected run regresses
 −10.3 points on re-scoring because every seed sits at the extreme of a noisy
 distribution, and it is range-restricted — it cannot contain the low band
-where New Brunswick found most of its successes, so its zero successes test
-nothing about the band hypothesis. And the GO all-31 run is the cleanest
+where New Brunswick found most of its successes, so its zero successes are
+uninformative about which texts evade (an exploratory question — Appendix B). And the GO all-31 run is the cleanest
 provenance in the study: exactly one selection step, the Pangram verdict
 itself, with no detector, lexicon, or Opus score influencing which segments
 were scanned. It is also every Government Orders positive we hold, so it is an
@@ -3039,7 +3103,7 @@ caught.
 | `rlhf_pref_analyze.py` | the superseded +0.42 run, with null calibration (not `align_ratio.py`) |
 | `align_ratio.py` | §4.7 Hansard-drift arm |
 | `word_context_delta.py` | §4.8 in-context permeation |
-| `bypass_report.py` | §4.9 bypass, all four runs pooled |
+| `bypass_report.py` | §4.9 bypass: final two runs (primary), superseded two shown separately, band check |
 | `go_reflip_fractions.json` + `nb_`/`bp_` | strict re-scores behind the 8.0% |
 | `quality_expansion/` | §4.9, self-contained (`RUNME.md`) |
 | `BYPASS_METHODOLOGY.md` | §4.9 selection filters, per sample |

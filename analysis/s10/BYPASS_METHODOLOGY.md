@@ -361,3 +361,39 @@ re-scanned at exactly 0.0.
   sentences; GO: humans almost never do). Both measured against their own
   matched pairs. The evasion playbook appears to be chamber-specific register,
   not a universal property of human writing.
+
+## Addenda from the 2026-08-11 review (recorded 2026-08-24)
+
+- **In-sample derivation of v3, and why it is not treated as a bias to remove
+  (review item B5).** The New Brunswick contrastive search (v3) was designed by
+  watching the blind search (v2) fail on the same 40 texts, so v3 is not
+  out-of-sample with respect to those texts. This is deliberately left in place,
+  for two reasons Matthew states explicitly: an *iterating* attacker who learns
+  from failed attempts is the realistic threat, so a method tuned on prior
+  failures is the right thing to measure, not a confound to purge; and the one
+  design change that could most look like overfitting — the v3 protocol — was
+  specified by Matthew from the mechanism, without looking at any per-text
+  outcomes. The clean out-of-sample check is GO all-31 (a different chamber,
+  uniform draw): it returns 19.4% against NB v3's 25.0%, which is not the
+  signature of a method that only works on the texts it was built from. The
+  potential bias is real and is noted here across all versions rather than
+  denied; it is judged not to threaten the claim.
+
+- **Scripts that exist vs runs documented by outputs only (review item B7).**
+  The two Government Orders searches have committed scripts (`gov_bypass_v3.js`,
+  `gov_bypass_all.js`). The two New Brunswick searches and the contrast-pair
+  builders were run ad hoc and were not saved as scripts; they survive as their
+  committed outputs (`bypass_v3.json`, `bypass_contrast.json`, the
+  `bypass_v3_pangram*` verdict files, and `pangram_bypass_key.json`). NB v3 is
+  the largest single contributor to the per-variant rate, so this is a genuine
+  gap: it is reproducible from its outputs and this document, not re-runnable
+  from source. The GO scripts were adapted from the NB code (paths, seed count,
+  one field name), verified by structural diff.
+
+- **"No detector access" means no query access to the evaded detector during
+  the attack (review item B2).** The search never submits the text it is
+  attacking to Pangram to steer itself — it self-screens on Opus's own score,
+  and a variant reaches Pangram only to record the outcome. Pangram labels are
+  used in *building* the search only as a genuine-human filter on pre-2022
+  exemplar text (a property obtainable from any old-text archive), never as an
+  oracle on the target. The threat-model claim is exactly this, and no more.
