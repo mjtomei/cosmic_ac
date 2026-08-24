@@ -214,11 +214,22 @@ out of Human, 9 the other way). Earlier NB conclusions stand as conservative.
 Every figure below is the share of *what was said* that is machine-drafted,
 over the whole of the record Pangram will read.
 
-*Weighted by words, because a segment is not a natural unit.* `segment.py`
-packs speaker turns into windows of at most 360 words, so a long speech becomes
-three segments and a short interjection becomes one. A rate over segments is
-partly a measurement of our packer; a rate over words is invariant to how the
-text was cut up.
+*Weighted by words, because a segment is not a natural unit — and because the
+alternative would suppress the rate.* `segment.py` packs speaker turns into
+windows of at most 360 words, so a long speech becomes three segments and a
+short interjection becomes one. A rate over segments is partly a measurement of
+our packer; a rate over words is invariant to how the text was cut up. This is
+not cosmetic: prevalence sampling draws segments uniformly, which oversamples
+short pieces by count, and **longer pieces are markedly more machine-drafted**
+— across the pooled prevalence sample the longest quartile of segments runs
+9.4% against 5.8% for the shortest (review item X12). Segment-weighting would
+therefore understate the rate by about 0.6 points; word-weighting is exactly
+the correction, not an aesthetic choice, and every rate in this study is
+word-weighted for this reason. Two cross-checks that the pooled figure is not
+an artifact of how words distribute across chambers: the per-chamber rates are
+reported individually in the table below, and their **equal-weight mean matches
+the word-weighted pooled rate** (10.18% against 10.20% on the long band;
+`prevalence_report.py`), so no single large chamber drives the headline.
 
 *Weighted by AI fraction, because a flagged segment is not uniformly flagged.*
 The flagged segments are not one kind: of the 364 flagged prevalence segments,

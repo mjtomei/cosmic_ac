@@ -126,6 +126,7 @@ def main():
     print(f"{'chamber':<10s} {'control':>12s} {'Sp':>7s} {'prev n':>7s} "
           f"{'flagged':>9s} {'95% CI':>16s} {'calibrated':>11s}")
     pooled_rows = []
+    chamber_rates = []
     held = []
     for c in sorted(ch):
         ctl, prev = ch[c]["ctl"], ch[c]["prev"]
@@ -146,6 +147,14 @@ def main():
             held.append(c)
         else:
             pooled_rows += prev
+            chamber_rates.append(wr)
+
+    if chamber_rates:
+        import statistics as _st
+        print(f"\nMEAN of the {len(chamber_rates)} per-chamber word-weighted "
+              f"rates (equal chamber weight): {_st.mean(chamber_rates):.2%}")
+        print(f"  vs the pooled-by-words rate below -- close means the pooled "
+              f"figure is not driven by a few large chambers (review item X12).")
 
     if pooled_rows:
         kw, w, wr = wrate(pooled_rows)
