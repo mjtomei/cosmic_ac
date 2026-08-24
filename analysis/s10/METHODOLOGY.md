@@ -888,9 +888,10 @@ sampled a fixed 40 short segments per chamber and applied corpus weights
 afterwards. The study now samples the short and over-360 bands at the SAME rate
 as the long band, so the combined sample is self-weighting and needs no
 reweighting constants at all (`build_shortband.py`, `banded_prevalence.py`).
-The pooled result on that design is **11.73% of words [10.41, 13.08]** over 18
-chambers. The segment-weighted column that stood here has been removed rather
-than updated: the study reports one weighting.
+The pooled result on that design is **9.03% of words [8.00%, 10.08%]** (§4.2,
+word-weighted, split-corrected for Mixed; superseding an earlier 11.73%
+intermediate). The segment-weighted column that stood here has been removed
+rather than updated: the study reports one weighting.
 
 New Brunswick needed no such correction — its sample was 16% short segments
 against 13.9% in its pool, so it was already representative. **This is why
@@ -1927,7 +1928,7 @@ concentrate in prepared statements, so comparisons run within
 selection-matched or genre-balanced pools, and the cross-chamber grading
 carries chamber fixed effects.
 
-**The gradings — six, plus one control** (a seventh, stage 6, was added 2026-08-19) (scripts and caches in
+**The gradings — six, plus the D.1 leakage control** (stage 6 added 2026-08-19; stages 1, 2, 3, 4, 5, 6) (scripts and caches in
 `quality_expansion/` unless noted):
 
   stage 1   840 segments, federal Canada, genre-balanced, regressed on the
@@ -1948,6 +1949,11 @@ carries chamber fixed effects.
             `workflows/stage5_grade.js`; added 2026-08-16, five days AFTER
             the 2026-08-11 review, whose "five gradings" count was correct
             when written)
+  stage 6   never-human-reviewed machine continuations vs their human twins
+            (60 prompts x 4-11 model arms, blind, judge pinned to Opus;
+            `quality_expansion/analyze_stage6.py`, `results_stage6*.json`,
+            `workflows/stage6_grade.js`; added 2026-08-19 -- frontier models
+            beat the human twins on form, weak ones lose)
   D.1       the judge-leakage control — documented, run, not adopted
             (draft Appendix D.1)
 
@@ -1989,8 +1995,9 @@ still holds but presently rests on the superseded run.
 |---|---|---|
 | p = 2.4 × 10⁻⁷ (Fisher, 3 chambers) | the vocabulary shift is real and replicable | anything about *how much* text is AI |
 | excess +0.218 to +0.272 | consistent magnitude across parliaments | that it is large |
-| 8.3% prevalence (NB) | ~1 in 12 recent NB segments is AI-flagged | anything about other chambers *(pending)* |
-| Sp = 1.0 measured (423/423) | no inflation from false positives | that Se = 1 on *edited* AI — unmeasured, so 7.5% is a floor (§4.3) |
+| 9.03% pooled prevalence (word-weighted) | ~1 in 11 recent segments AI-flagged across the panel | a precise rate; it is a conservative floor (Se not estimated) |
+| 8.3% prevalence (NB pilot) | ~1 in 12 recent NB segments AI-flagged | the panel figure — see the pooled row above |
+| Sp = 1.0 measured (423/423) | no inflation from false positives | that Se = 1 on *edited* AI — unmeasured, so every rate is a floor; the pooled floor is 9.03%, the NB-pilot floor 7.5% |
 | 89.6% of 643 confirmed | the screen is a precise stratifier | a corpus-wide rate |
 | AUC 0.954 (Opus screen) | frontier LLMs track a commercial detector | that either tracks ground truth |
 

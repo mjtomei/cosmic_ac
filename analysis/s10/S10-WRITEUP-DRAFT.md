@@ -65,7 +65,9 @@ Per chamber, two strata:
 Segments are member-authored, English-original, non-chair, and 50 words or
 longer — the whole of the record Pangram will read. Sampling is at a uniform
 rate across segment lengths, so the sample reproduces the corpus's own length
-mix and the pooled estimate needs no length weights. Sampling is seeded per cell
+mix; rates are word-weighted (a ratio estimator applied after the uniform
+segment draw), which corrects the length/drafting bias without band-reweighting
+constants (§4.2). Sampling is seeded per cell
 and reproducible (`build_pangram_expansion.py`, `build_shortband.py`).
 
 ### 2.1 Two contamination hazards, both found by looking
@@ -1583,7 +1585,7 @@ beats the commercial evasion industry by about tenfold.** Against the 13
 commercial "humanizer" services benchmarked in Pangram's own technical report,
 which get **2.31%** of documents past it, this search gets **22.5%** of
 targets past it: **9.8×**. Against Pangram's clean-conditions false-negative
-rate of 0.34%, it is 65×.
+rate of 0.34%, it is 66×.
 
 That is the finding. The detector is not weak — its specificity is 0 in 1,260
 (§4.1), and a single "make this sound human" prompt makes text *more*
@@ -2046,10 +2048,10 @@ beat" is the whole of that apparatus.
   tail of each cell — works in the same conservative direction for the
   reported gradient, but it means the OQ figure is not an estimate of
   Question Period as a whole.
-- **The quality arm is LLM-graded.** Repeat-pass and cross-account agreement
-  both sit at or above the published human inter-coder bar, but
-  self-agreement is not inter-coder agreement; the human-coded subsample
-  remains the real validation and is not done.
+- **The quality arm is LLM-graded.** Repeat-pass reliability sits at or above
+  the published human inter-coder bar, but self-agreement is not inter-coder
+  agreement; the human-coded subsample remains the real validation and is not
+  done.
 - **The covariate effects are small, and small is what this kind of work
   finds.** In the field's common currency the study's member-level effects
   are correlations of r ≈ .07 (the insulation delta), r ≈ .10 (the class
@@ -3175,7 +3177,7 @@ caught.
 | `align_ratio.py` | §4.7 Hansard-drift arm |
 | `word_context_delta.py` | §4.8 in-context permeation |
 | `bypass_report.py` | §4.9 bypass: final two runs (primary), superseded two shown separately, band check |
-| `go_reflip_fractions.json` + `nb_`/`bp_` | strict re-scores behind the 8.0% |
+| `go_reflip_fractions.json` + `nb_`/`bp_` | strict re-scores behind the 11.1% |
 | `quality_expansion/` | §4.9, self-contained (`RUNME.md`) |
 | `BYPASS_METHODOLOGY.md` | §4.9 selection filters, per sample |
 | `PRIOR_ART.md`, `ai_policy_scan.md` | §6, §7 |
@@ -3194,7 +3196,8 @@ not interchangeable:
 |---|---|---|
 | Corpus-wide screen (§4.4), effort A/B | Claude Opus | low, and max in the A/B |
 | Bypass search: scoring / rewriting / hypotheses (§4.9) | Claude Opus | low / medium / high |
-| DQI grading, all four stages (§4.9) | **Claude Fable 5** | default |
+| DQI grading, stages 1-5 (§4.9) | **Claude Fable 5** | default |
+| DQI grading, stage 6 (§4.9) | **Claude Opus** | medium |
 | Synthetic sensitivity pilot (40 speeches, set aside — §4.1, Appendix B) | Mistral-7B | default |
 | Analysis, verification, adversarial review | Claude Opus | varies |
 

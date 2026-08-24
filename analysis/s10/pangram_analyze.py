@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+# QUARANTINED 2026-08-24 (review item X1): this script performs the Rogan-Gladen
+# Se correction using a home-grown sensitivity from the SET-ASIDE Mistral
+# synthetic corpus (se_segments.jsonl / stratum D-synthetic-se). The shipping
+# study does NOT use it: prevalence is a Sp-only floor (prevalence_report.py,
+# tau >= pi). Nothing in the paper divides by this Se. Kept for the pilot
+# record only; do not treat its tau-hat as a study figure.
 """S10 Tier-4: analyze Pangram results by stratum.
 
 - C-control-2019  -> Pangram's in-domain FPR (1-Sp), the parameter the

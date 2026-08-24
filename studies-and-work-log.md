@@ -127,48 +127,53 @@ the paper's best original empirical figure.
 *Findings.* Two arms, reported as separate claims because they are separate
 quantities.
 
-**Prevalence** (calibrated detector, Pangram 4, per-chamber pre-2022 controls):
-- **Specificity 1,260/1,260.** Zero false positives on genuine pre-AI speech,
-  measured chamber by chamber rather than transferred.
-- **Pooled 12.4% [11.1, 13.8]** across 19 chambers in 4 countries, 2025–26.
-- **A sevenfold spread is the finding, not noise.** US House **15.0%** against
-  US Senate **3.3%** — two chambers of one legislature, near-identical AI
-  policies, 4.5-fold apart. NSW 23.3% at the top, US Senate at the bottom.
-- **Drafting concentrates in scripted business**: SO31 one-minute set-pieces
-  **36.7%**, Government Orders 23.3%, Oral Questions (not on notice) 8.3%, all
-  three pre-AI controls **0.0%**.
+*This register carries current top-line figures only, with pointers to the
+canonical draft sections for the detailed breakdowns — an earlier version
+duplicated the per-chamber/genre tables and they drifted stale (review item
+X8, reconciled 2026-08-24). Numbers below are the committed values; the draft
+is authoritative.*
 
-**Register and permeation** (detector-independent instruments):
+**Prevalence** (calibrated detector, Pangram 4, per-chamber pre-2022 controls):
+- **Specificity 1,260/1,260** — zero false positives on genuine pre-AI speech,
+  chamber by chamber.
+- **Pooled 9.03% of words** (word-weighted, split-corrected for Mixed;
+  §4.2), an **elevenfold** spread across chambers. Sensitivity is not
+  estimated: with Sp = 1 the rate is a conservative floor (τ ≥ π). Per-chamber
+  and per-genre breakdowns: §4.2 / §4.3 (drafting concentrates in scripted
+  business).
+
+**Register and occupation** (detector-independent instruments):
 - The register shift **starts around 1994–96**, decades before any language
   model. LLMs did not start it.
-- The rise is **generational as well as period-wide**: regressing the
-  member-year register rate on spoken year and birth year together (chamber
-  FE, 13 chambers, 46,515 member-years), birth cohort predicts **+0.95 per
-  1,000 per decade (t 28)** net of calendar period (+1.24/decade), and is the
-  stronger organiser in 10 of 13 chambers. Within province and year the
-  gradient is +1.05/decade (t ≈ 8.5, clustered). Occupation and education run
-  the *wrong* way, refuting professionalisation and educational expansion.
-  Sitting members convert too: within-member (member FE) the register rises
-  **+0.51 per 1,000 per decade (t 6.0)**, ~40% of the total calendar drift, so
-  both cohort replacement and incumbent conversion operate.
-- The register is a **post-training artifact**: OLMo-2 ladder SFT +0.76,
-  DPO +0.86, RLVR +0.37, heaviest at the preference stage; pooled instruct-
-  over-base excess +0.88 on two further model families.
+- The rise is **generational as well as period-wide** (birth-vs-spoken-year,
+  22-chamber panel, 61,312 member-years; §4.6): cohort organises it net of
+  period, and sitting members convert too — within-member +0.51 per 1,000 per
+  decade (t 6.0), ~40% of the calendar drift, so both replacement and
+  conversion operate.
+- **What the class/education U is: occupation, pre-registered and run** (§4.6b).
+  The register tracks position in a hierarchy — a four-level middle-peak U
+  (free/bottom/middle/top), with the insulated-vs-exposed **apex delta** the
+  most covariate-robust occupational term (+0.067, t 3.9). It is not a simple
+  correlation with occupation or education in either direction; education is
+  spent once class and the delta are present.
+- The register is a **post-training artifact** (§4.7): SFT and DPO
+  indistinguishable, RLVR ~0 — no stage ordering; instruct-over-base excess
+  positive across model families.
 - **In-context permeation +0.0099** [+0.0007, +0.0196], positive in 9/10 cells
-  — small, but the only permeation evidence that routes through no detector.
+  — small, and the only permeation evidence routing through no detector.
 
 **Quality and evadability:**
 - AI-assisted speech is **better-formed and not worse-engaged**: justification,
-  common-good framing and respect toward groups all up; every engagement
-  dimension null once genre or chamber is held fixed. "Deliberation down" was
-  genre, and is superseded.
-- **The detector is evadable under effort.** An off-the-shelf model in a
-  rewrite loop — no fine-tuning, no detector access — clears Pangram on
-  **8.5% of variants** and **24.6% of targets**, about **10.6×** the 2.31%
-  that 13 commercial humanizer services achieve. Evasion costs **nothing** in
-  deliberative quality (7 DQI dimensions null across 63 paired grades), but it
-  is not cheap: a single "sound human" prompt *raises* the score.
-- So 12.4% is a **floor**, and detection is a norms instrument rather than a
+  common-good framing and respect toward groups up; engagement null once genre
+  or chamber is held fixed. "Deliberation down" was genre (superseded). Six
+  gradings plus stage 6 (never-reviewed continuations: frontier models beat
+  the human twins on form; §4.9).
+- **The detector is evadable under effort** (§4.9): an off-the-shelf model in a
+  rewrite loop — no query access to the evaded detector during the attack —
+  clears Pangram on **11.1% of variants** and **22.5% of targets**, ~4.8×
+  (per-variant) / 9.8× (per-target) the 2.31% of 13 commercial humanizers.
+  Evasion is quality-neutral across the paired grades.
+- So **9.03% is a floor**, and detection is a norms instrument rather than a
   security one.
 
 *Artifacts:* `analysis/s10/` — write-up `S10-WRITEUP-DRAFT.md` (§1–8 +
