@@ -68,6 +68,25 @@ def main():
         star = " *" if abs(b / se) > 1.96 else ""
         print(f"  {d:<22s}{b:>+9.3f}{se:>8.3f}{b/se:>7.2f}{len(sub):>7d}{star}")
 
+    # X12 transparency: the chamber-FE coefficient above is effectively an
+    # n-weighted average of the within-chamber AI-vs-human gaps. Print the
+    # equal-weight mean of the per-chamber raw gaps for the three headline
+    # dimensions, so the reader can see the effect is not carried by a few
+    # high-n chambers.
+    print("\n  per-chamber raw AI-vs-human gap, equal-weight mean of chambers")
+    print("  (>=8 segments each side), beside the FE coef above:")
+    for d in ("justification", "common_good", "respect_groups"):
+        gaps = []
+        for c in sorted({r["chamber"] for r in rows}):
+            ai = [r[d] for r in rows if r["chamber"] == c and r.get(d) is not None
+                  and r["verdict"] in ("AI", "Mixed")]
+            hu = [r[d] for r in rows if r["chamber"] == c and r.get(d) is not None
+                  and r["verdict"] == "Human"]
+            if len(ai) >= 8 and len(hu) >= 8:
+                gaps.append(sum(ai)/len(ai) - sum(hu)/len(hu))
+        if gaps:
+            print(f"    {d:<20s}{sum(gaps)/len(gaps):>+8.3f}  ({len(gaps)} chambers)")
+
     print("\n  Sentinel dimensions carry smaller n because inapplicable (-1) rows")
     print("  are dropped. That exclusion conditions on a post-treatment variable:")
     print("  applicability itself falls with AI status (review Q1), so the null on")

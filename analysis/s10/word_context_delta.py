@@ -230,7 +230,8 @@ def report(args):
             continue
         full = (itt - bt) / max(min(bn, itn), 1)
         rows[(it["chamber"], it["era"])].append(
-            {"raw": di / ni, "norm": di / ni - full, "turn": it["turn_id"]})
+            {"raw": di / ni, "norm": di / ni - full, "turn": it["turn_id"],
+             "n": ni})
         n_used += 1
 
     print(f"{n_used:,} segments with >=1 instrument occurrence")
@@ -304,7 +305,7 @@ def _cells(fam):
             continue
         fulld = (itt - bt) / max(min(bn, itn), 1)
         rows[(it["chamber"], it["era"])].append(
-            {"norm": di / ni - fulld, "turn": it["turn_id"]})
+            {"norm": di / ni - fulld, "turn": it["turn_id"], "n": ni})
     return rows
 
 
@@ -344,7 +345,22 @@ def pooled(args):
     print(f"{'cell':<16s}{'change':>10s}")
     for k in sorted(cells):
         print(f"  {k[0]+'/'+k[1]:<14s}{cells[k]:>+10.4f}")
-    print(f"\n  POOLED {point:+.4f}   positive in {npos}/{len(vals)} cells")
+    print(f"\n  POOLED {point:+.4f}   positive in {npos}/{len(vals)} cells"
+          f"   (equal weight per segment within cell, equal weight per cell)")
+    # Occurrence-weighted robustness check (review item X12): weight each
+    # segment by its style-word occurrence count n when forming the cell means.
+    # A per-token effect can be pooled either way; this shows the choice does
+    # not carry the result.
+    owc = {}
+    for (fam, ch), (pre, post) in cellrows.items():
+        wp = sum(x["norm"] * x["n"] for x in pre) / sum(x["n"] for x in pre)
+        wq = sum(x["norm"] * x["n"] for x in post) / sum(x["n"] for x in post)
+        owc[(fam, ch)] = wq - wp
+    ow = list(owc.values())
+    owpoint = sum(ow) / len(ow)
+    print(f"  OCCURRENCE-WEIGHTED pooled {owpoint:+.4f}   positive in "
+          f"{sum(1 for v in ow if v > 0)}/{len(ow)} cells "
+          f"(segments weighted by occurrence count)")
 
     def draw():
         tot = 0.0

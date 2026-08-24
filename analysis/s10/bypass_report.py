@@ -364,11 +364,24 @@ def main():
               f"{f'{st}/{n} = {100*st/n:.1f}%':>16s}")
     lo, hi = wilson(hh, tt)
     slo, shi = wilson(ss, tt)
-    print(f"  {'POOLED':<20s} {tt:>9d} {'':>11s} "
+    print(f"  {'POOLED (by target)':<20s} {tt:>9d} {'':>11s} "
           f"{f'{hh}/{tt} = {100*hh/tt:.1f}%':>16s} "
           f"{f'{ss}/{tt} = {100*ss/tt:.1f}%':>16s}")
     print(f"    label  [{100*lo:.1f}, {100*hi:.1f}]   "
-          f"strict [{100*slo:.1f}, {100*shi:.1f}]")
+          f"strict [{100*slo:.1f}, {100*shi:.1f}]   [target-count-weighted]")
+    # X12 transparency: equal-weight mean of the two chambers' rates, so the
+    # single pooled figure is not the only weighting the reader sees.
+    chrates = []
+    for run in ["NB v3 contrastive", "GO all-31 uniform"]:
+        tt2 = collections.defaultdict(list)
+        for r in rows_all:
+            if r["run"] == run:
+                tt2[r["seg_id"]].append(r)
+        nn = searched(run) or len(tt2)
+        kk = sum(1 for v in tt2.values() if any(x["verdict"] == "Human" for x in v))
+        chrates.append(kk / nn)
+    print(f"    mean of the two chambers' rates (equal weight): "
+          f"{100*sum(chrates)/len(chrates):.1f}%")
     print("  The two chambers agree within their intervals despite")
     print("  contradicting each other on WHICH edits work (see")
     print("  BYPASS_METHODOLOGY.md) -- the rate transfers, the playbook")

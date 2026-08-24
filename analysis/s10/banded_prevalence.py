@@ -301,7 +301,16 @@ def table(rows):
     n, k, sr, w, wk, wr = rate(pool)
     lo, hi = boot_ci(pool, seed=7)
     print(f"\n  POOLED {100*wr:.2f}% [{100*lo:.2f}, {100*hi:.2f}]  "
-          f"({wk:,.0f} of {w:,} words, {n:,} segments, {len(full)} chambers)")
+          f"({wk:,.0f} of {w:,} words, {n:,} segments, {len(full)} chambers) "
+          f"[pooled by words]")
+    # X12 transparency: equal-weight mean of the per-chamber word-weighted
+    # rates, so the reader can see the pooled figure is not driven by a few
+    # large chambers.
+    import statistics as _st
+    per = [rate([r for r in pool if r[0] == ch])[5] for ch in full]
+    print(f"  MEAN OF THE {len(per)} PER-CHAMBER RATES (equal chamber weight): "
+          f"{100*_st.mean(per):.2f}%  -- close to the pooled-by-words figure "
+          f"means no single chamber drives it")
     if part:
         print(f"  excluded from the pool, short/over band only: "
               f"{', '.join(part)}")
@@ -366,6 +375,7 @@ def main():
     print(f"  {'chamber':<10s} {'long only':>10s} {'combined':>10s} "
           f"{'ratio':>7s} {'short % of sampled words':>26s}")
     chs = sorted({r[0] for r in prev})
+    percham = []
     for ch in chs:
         c = [r for r in prev if r[0] == ch]
         cl = [r for r in c if r[2] == "long"]
@@ -381,6 +391,14 @@ def main():
         ratio = f"{r1/r2:.1f}x" if r2 else "inf"
         print(f"  {ch:<10s} {100*r1:>9.2f}% {100*r2:>9.2f}% {ratio:>7s} "
               f"{100*sw/w2:>25.1f}%")
+        percham.append(r2)
+    # X12 transparency: equal-weight mean of the per-chamber combined rates,
+    # beside the pooled-by-words headline, so the reader can see the pooled
+    # figure is not driven by a few large chambers.
+    import statistics as _st
+    print(f"\n  headline pooled-by-words: {100*awr:.2f}%   "
+          f"equal-weight mean of the {len(percham)} per-chamber rates: "
+          f"{100*_st.mean(percham):.2f}%")
 
 
 if __name__ == "__main__":
