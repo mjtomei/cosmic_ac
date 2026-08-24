@@ -96,7 +96,12 @@ TZ = datetime.datetime.now().astimezone().tzinfo
 # since the rule should mean what its name says. The second alternative is
 # the fallback for a session whose cwd was not recorded, where only the
 # project slug is available and its separators are already dashes.
-PM_WORKDIR_RE = re.compile(r"/\.pm/workdirs/|-pm-workdirs-")
+# /workspace is pm's container root, confirmed 2026-08-23: 1,245 session files
+# whose cwd is literally "/workspace", carrying QA-harness prompts ("You are
+# refining the test steps for QA scenario 1..."). Same class as the workdirs —
+# the harness prompting itself — so it is excluded on the same switch.
+PM_WORKDIR_RE = re.compile(r"/\.pm(\.old)?/workdirs/|-pm-workdirs-"
+                           r"|^/workspace(/|$)")
 # Commits pm makes on its own. Author identity cannot separate these — pm
 # commits AS the user (3,016 of 3,143 in project-manager are authored
 # "Matthew Tomei"), and a Claude co-author trailer is on 2,493 of them
@@ -258,6 +263,38 @@ def fold_slug_dirs(per_project):
 
 
 # --- git ---------------------------------------------------------------------
+# Repos are discovered under $HOME, not just where a session was recorded, so
+# that work whose transcripts are gone still counts. Omerta is the case that
+# forced this: its top-level transcripts were pruned (0 files survive, only
+# 202 subagent ones) while three checkouts still hold 514 commits from
+# 2026-01-27..02-02 — none of which appeared in the report at all.
+REPO_SCAN_ROOT = os.path.expanduser("~")
+REPO_SCAN_DEPTH = 5
+REPO_SCAN_PRUNE = ("node_modules", ".cache", ".venvs", ".nvm", ".bun",
+                   ".conda", ".mamba", ".local", ".git")
+# Only OUR commits count. A cloned third-party repo would otherwise contribute
+# its whole upstream history as if it were work done here.
+OUR_AUTHOR_RE = re.compile(r"matthewtomei@gmail\.com|mjtomei|Matthew Tomei", re.I)
+
+
+def find_repos():
+    """Git repos under $HOME, excluding pm workdirs and vendored trees."""
+    found = []
+    for dirpath, dirnames, _ in os.walk(REPO_SCAN_ROOT):
+        depth = dirpath[len(REPO_SCAN_ROOT):].count(os.sep)
+        if depth >= REPO_SCAN_DEPTH:
+            dirnames[:] = []
+            continue
+        dirnames[:] = [d for d in dirnames if d not in REPO_SCAN_PRUNE]
+        if PM_WORKDIR_RE.search(dirpath + "/"):
+            dirnames[:] = []
+            continue
+        if os.path.isdir(os.path.join(dirpath, ".git")):
+            found.append(dirpath)
+            dirnames[:] = []          # do not descend into a repo's subtree
+    return found
+
+
 def commit_intervals(repo, skip_agentic=True):
     """[t - PRE_COMMIT_MIN, t] per commit. Returns (intervals, n_skipped).
 
@@ -269,7 +306,7 @@ def commit_intervals(repo, skip_agentic=True):
     try:
         out = subprocess.run(
             ["git", "-C", repo, "log", "--all",
-             "--pretty=format:%ad%x00%s",
+             "--pretty=format:%ad%x00%s%x00%an <%ae>",
              "--date=format:%Y-%m-%dT%H:%M:%S"],
             capture_output=True, text=True, timeout=60)
         if out.returncode:
@@ -278,10 +315,14 @@ def commit_intervals(repo, skip_agentic=True):
         return [], 0
     ivals, skipped = [], 0
     for line in out.stdout.splitlines():
-        stamp, _, subject = line.partition("\0")
-        stamp = stamp.strip()
+        parts = line.split("\0")
+        if len(parts) < 3:
+            continue
+        stamp, subject, author = parts[0].strip(), parts[1], parts[2]
         if not stamp:
             continue
+        if not OUR_AUTHOR_RE.search(author):
+            continue                      # someone else's commit in a clone
         if skip_agentic and AGENTIC_COMMIT_RE.match(subject.strip()):
             skipped += 1
             continue
@@ -311,9 +352,18 @@ def repo_identity(path):
         return None
 
 
-def add_commits(per_project, skip_agentic=True):
-    seen, skipped_total = {}, 0
-    for proj in sorted(per_project, key=len):        # prefer the shortest path
+def add_commits(per_project, skip_agentic=True, scan_repos=True):
+    """Fold commit windows in, once per REPOSITORY.
+
+    Repos reached only by the filesystem scan (no surviving session) are added
+    as projects in their own right, so deleted transcripts do not erase the
+    work from the record.
+    """
+    seen, skipped_total, discovered = {}, 0, 0
+    candidates = list(per_project)
+    if scan_repos:
+        candidates += [r for r in find_repos() if r not in per_project]
+    for proj in sorted(candidates, key=len):         # prefer the shortest path
         dotgit = os.path.join(proj, ".git")
         if not (os.path.isdir(dotgit) or os.path.isfile(dotgit)):
             continue
@@ -324,8 +374,10 @@ def add_commits(per_project, skip_agentic=True):
         ivals, skipped = commit_intervals(proj, skip_agentic=skip_agentic)
         skipped_total += skipped
         if ivals:
+            if proj not in per_project:
+                discovered += 1
             per_project[proj]["<git commits>"] = ivals
-    return seen, skipped_total
+    return seen, skipped_total, discovered
 
 
 # --- interval maths ----------------------------------------------------------
@@ -690,6 +742,10 @@ def main():
                     help="count commits pm made on its own (review-loop/qa/"
                          "start-work-on/merge subjects). Excluded by default: "
                          "they are the harness committing, not a person")
+    ap.add_argument("--no-repo-scan", action="store_true",
+                    help="only count repos where a session was recorded; by "
+                         "default $HOME is scanned so repos whose transcripts "
+                         "were deleted (omerta) still count")
     ap.add_argument("--no-commits", action="store_true",
                     help="human messages only; skip git commit windows")
     ap.add_argument("--include-agent", action="store_true",
@@ -717,10 +773,17 @@ def main():
         print("No matching sessions found.")
         return
 
-    skipped_commits = 0
+    skipped_commits = discovered = 0
     if not args.no_commits:
-        _, skipped_commits = add_commits(
-            per_project, skip_agentic=not args.include_agentic_commits)
+        _, skipped_commits, discovered = add_commits(
+            per_project, skip_agentic=not args.include_agentic_commits,
+            scan_repos=not args.no_repo_scan)
+        if args.project:                 # re-apply after discovery adds repos
+            per_project = {k: v for k, v in per_project.items()
+                           if args.project in k}
+        for proj in list(per_project):   # pm workdirs can arrive via the scan
+            if not args.include_pm and PM_WORKDIR_RE.search(proj + "/"):
+                del per_project[proj]
 
     rows = project_rows(per_project, args.since, args.until)
     if not rows:
@@ -756,6 +819,9 @@ def main():
     if skipped_commits:
         notes.append(f"{skipped_commits} agent-generated commit(s) skipped "
                      f"(--include-agentic-commits to add)")
+    if discovered:
+        notes.append(f"{discovered} repo(s) found on disk with no surviving "
+                     f"transcript — counted from commits alone")
     if notes:
         print("note: " + "\n      ".join(notes) + "\n")
     print(render_breakdown(rows, wall, sess_union, sess_sum,
