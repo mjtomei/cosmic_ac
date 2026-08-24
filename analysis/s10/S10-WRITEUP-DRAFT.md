@@ -4,12 +4,14 @@
 2026-08-13.** All arms complete, including the detector-bypass study and both
 prior-art comparators. Everything is reproducible from `analysis/s10/`.
 
-**The 2026-08-13 additions carry UNVERIFIED citations.** §4.6a places its
-result against Labov, Simmel, Veblen, Jhering, Bourdieu and Lieberson, none of
-which has been checked against a primary text — one fetched entry was already
-wrong on both year and publisher. See `CLASS-REGISTER-LITERATURE.md`. That
-subsection also reports standard errors that are not clustered on member,
-which the study has been bitten by three times; both are flagged in place.
+**§4.6a's literature citations were web-verified 2026-08-24.** The result is
+placed against Labov (crossover/hypercorrection, *Sociolinguistic Patterns*,
+U. Pennsylvania Press, 1972), Simmel (1904), Veblen (1899), Jhering (1883)
+with Durkheim's summary supplying the quote, and Lieberson (*A Matter of
+Taste*, Yale, 2000); a fetched entry wrong on Labov's year and publisher has
+been corrected. That subsection also reports standard errors not clustered on
+member, which the study has been bitten by three times; it is flagged in
+place.
 
 **Numbers marked † are carried from earlier in the study.** All nine were
 re-derived from their artifacts on 2026-08-11 and reproduce; footnotes on each
@@ -1009,9 +1011,11 @@ Class I under-uses `primary` (2.35× lift), `advocating` (1.85×), `advocates`
 `broader`, `ultimately` — words that barely moved.
 
 That is chase-and-flight: a marker loses value as it is copied, so the group
-that holds it abandons the most conspicuous forms first. Jhering stated it in
-1883 — fashion, once universally adopted, "condemned by its very nature to
-renew itself continuously" — and Veblen and Simmel gave it its standard form.
+that holds it abandons the most conspicuous forms first. Jhering set out the
+diffusion mechanism in *Der Zweck im Recht* (1883); Durkheim's summary of it
+gives the phrase — fashion, once universally adopted, "condemned by its very
+nature to renew itself continuously" — and Veblen (1899) and Simmel (1904)
+gave it its standard form.
 Lieberson is the closest parallel to our case, because his markers are discrete
 lexical items: first names diffuse down the status ladder and are abandoned by
 higher-status parents once they become common.[^r46e]
@@ -1145,10 +1149,10 @@ contrast.
     forms, so rare risers are the wrong test set. A separate cross-sectional
     result — class I holding the lowest share of marked words overall — did
     not survive a year control and is not reported. **Citations in this
-    subsection are UNVERIFIED**: gathered from reference pages, not primary
-    texts, and one fetched entry was already wrong on year and publisher. See
-    `CLASS-REGISTER-LITERATURE.md`. None should reach a published version
-    before the books are opened.
+    subsection were web-verified 2026-08-24** (Simmel 1904, Veblen 1899,
+    Jhering 1883 with the quote traced to Durkheim's 1887 summary, Lieberson
+    2000, Labov 1972); the Labov year/publisher error the file flagged is
+    corrected. See `CLASS-REGISTER-LITERATURE.md`.
 
 ### 4.6b What the class shape was: occupation, pre-registered and run
 

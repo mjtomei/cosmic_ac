@@ -1,9 +1,14 @@
 # The inverted-U in register by class: what the literature already says
 
-**Status: framing note, partially verified.** Citations below were gathered
-2026-08-13 by direct fetch of reference pages, not from the primary texts. Two
-are known-suspect and are flagged. Nothing here should enter the paper before
-someone opens the actual books.
+**Status: web-verified 2026-08-24.** The load-bearing citations (Simmel 1904,
+Veblen 1899, Jhering 1883, Durkheim's 1887 summary, Lieberson 2000, Labov
+1972) were checked and are corrected below. Key finding of the verification:
+the "condemned by its very nature to renew itself continuously" phrase is
+DURKHEIM's (1887, "La science positive de la morale en Allemagne", Revue
+Philosophique), summarising Jhering's 1883 theory — not Jhering's own words;
+the draft now attributes it correctly. Remaining secondary entries (Owens &
+Baker, Winford, Canut & Keita, Bourdieu detail) are not in the paper body and
+stay to-verify-if-cited.
 
 ## The result this is trying to place
 
@@ -40,9 +45,11 @@ behind it. The shape — second-highest group exceeding the highest — is exact
 our III/II over I.
 
   - Labov, W. *The Social Stratification of English in New York City* (1966).
-  - Labov, W. *Sociolinguistic Patterns*. **VERIFY**: the reference page gave
-    "1991, University of Philadelphia Press", which is wrong on both counts —
-    the book is 1972, University of Pennsylvania Press. Fix before citing.
+  - Labov, W. *Sociolinguistic Patterns*. **VERIFIED**: University of
+    Pennsylvania Press, 1972 (the earlier "1991, University of Philadelphia
+    Press" was wrong on both counts). The hypercorrection chapter is pp.
+    122–142; the lower-middle-class crossover in the two most formal styles is
+    confirmed.
   - Labov, W. "Hypercorrection by the Lower Middle Class as a Factor in
     Linguistic Change", in *Sociolinguistics: Proceedings of the UCLA
     Sociolinguistics Conference 1964*. **VERIFY** the 1985 De Gruyter reprint
