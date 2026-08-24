@@ -225,10 +225,17 @@ short pieces by count, and **longer pieces are markedly more machine-drafted**
 9.4% against 5.8% for the shortest (review item X12). Segment-weighting would
 therefore understate the rate by about 0.6 points; word-weighting is exactly
 the correction, not an aesthetic choice, and every rate in this study is
-word-weighted for this reason. Two cross-checks that the pooled figure is not
-an artifact of how words distribute across chambers: the per-chamber rates are
-reported individually in the table below, and their **equal-weight mean matches
-the word-weighted pooled rate** (10.18% against 10.20% on the long band;
+word-weighted for this reason. The weighting is applied *after* a uniform
+draw over segments, not by sampling proportional to length, so the estimator
+is a ratio estimator rather than a mean of a size-weighted sample; its
+finite-sample bias is nil in practice (bootstrap mean 10.30% against a plug-in
+10.31%, a −0.005-point gap), and because the word-weight is not concentrated
+(the longest tenth of sampled segments hold only 14% of the words) uniform
+sampling costs a little variance, which the bootstrap interval already carries,
+not bias. Two further cross-checks that the pooled figure is not an artifact of
+how words distribute across chambers: the per-chamber rates are reported
+individually in the table below, and their **equal-weight mean matches the
+word-weighted pooled rate** (10.18% against 10.20% on the long band;
 `prevalence_report.py`), so no single large chamber drives the headline.
 
 *Weighted by AI fraction, because a flagged segment is not uniformly flagged.*
