@@ -298,7 +298,20 @@ bonus — these are the pages Arendt judged worth marking, marginalia visible,
 a reception document by a first-rank theorist of this directory's exact
 questions. Cautions: page continuity breaks without notice (never cite
 surrounding context unchecked); the full text **stays on the borrow list**
-per the de-risk-not-replace rule.
+per the de-risk-not-replace rule. **Full-text hunt closed (2026-08-24): KTB's
+copyright was RENEWED — Stanford Copyright Renewal Database RE258599
+(published 22 Nov 1957, renewed 9 Sep 1985, claimant Beate R. Salz, NK) — so
+it is in copyright through 2052 and no legitimate free full copy exists; the
+Internet Archive's downloadable copy is a user-uploaded PDFDrive file with a
+false public-domain mark (do not take it), and IA's legitimate 1997-printing
+scan is print-disabled lending only. Purchase routes: press.princeton.edu's
+ebook is Glassboxx-app DRM (PDF readable only inside their app — NOT a
+downloadable file; confirmed from their own about-ebook-purchases page);
+the candidate for an actual watermarked DRM-free PDF is De Gruyter
+(degruyterbrill.com, DOI 10.1515/9781400880782) — WAF-blocked from this
+host, check purchase format in a browser before buying. Otherwise: hoopla
+borrow to read, used print to own, Arendt pages to quote (with full-copy
+context checks).**
 
 **Library wins (SCCLD card, tonight):** Kantorowicz's *King's Two Bodies*
 (2016 ed.) and Norenzayan's *Big Gods* are **borrowable NOW as hoopla ebooks**
