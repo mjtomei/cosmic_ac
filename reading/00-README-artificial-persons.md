@@ -72,6 +72,7 @@ in governance must carry that critique.
 |---|---|---|
 | ★★★ | `beer-vsm-provenance.pdf` | Beer's five-subsystem model of viability, asserted to apply to a person and to the State not by analogy but by shared law, with System Five as the identity/self-awareness closure. |
 | ★★★ | `dartmouth-v-woodward-1819.pdf` | The American corporate-personhood doctrine in its founding words: an artificial being whose powers are exercised through natural members who rotate. |
+| — | `dartmouth-v-woodward-1819.md` | **Companion transcription (2026-08-24)**: full case as markdown from the public-domain CAP digitization, page-anchored `[*NNN*]` 519–715, all 129 footnotes reconciled (six mark placements verified from the scan images), headings audited. Quote-check load-bearing wording against the PDF scan. |
 | ★★★ | `french-1979-corporation-moral-person.pdf` | Corporations are Davidsonian agents and full moral persons because a CID Structure redescribes executives' votes as the corporation's own intentional act. |
 | ★★★ | `hobbes-1651-leviathan.pdf` | Founds the artificial-person doctrine: the commonwealth as "Artificiall Man", persons natural vs feigned, and counsellors as the commonwealth's memory. |
 | ★★★ ⚠ | `list-2018-group-agent-what-is-it-like.pdf` | Group agents are real agents with genuine awareness, but on integrated-information grounds there is (close to) nothing it is like to be one - which is why they get only derivative rights. |
