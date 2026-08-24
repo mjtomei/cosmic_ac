@@ -556,7 +556,7 @@ ordering is in git history.)*
    verification debt, and S16's after-hours census — the one cheap original
    measurement in the thread.
 2. **S10, measurement done, review outstanding.** The study is complete and
-   drafted (19 chambers, 4,258 verdicts, §1-8 + appendices); what it lacks is
+   drafted (22 chambers; prevalence on 20, covariates on 22; §1-8 + appendices); what it lacks is
    a fresh adversarial review and a decision on how much of it enters the
    paper. The per-year prevalence series remains the project's best original
    figure. Everything further is optional - §8.6 lists 17 items, of which the

@@ -855,7 +855,7 @@ That is deliberate. Matched-rate sampling keeps the pooled estimate
 self-weighting and unbiased by construction; the alternative — oversampling
 this stratum because we expect it to be interesting — would break
 self-weighting, require reweighting assumptions across the whole design, and
-leave the two US chambers non-comparable to the other nineteen. Six segments
+leave the two US chambers non-comparable to the other eighteen. Six segments
 will give the US chambers a visibly wide interval. That width is the honest
 statement of what the exclusion cost us, and the remedy for it is more
 sampling at matched rate throughout, not a patch on one stratum.

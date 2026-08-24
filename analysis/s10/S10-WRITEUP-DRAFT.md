@@ -43,8 +43,10 @@ one.
 
 ## 2. Data
 
-Nineteen chambers across four countries, extracted from official Hansard and
-the Congressional Record:
+Twenty-two chambers across four countries, extracted from official Hansard and
+the Congressional Record (the prevalence arm covers 20 of them — New Brunswick
+was the pilot and has no uniform prevalence sample, and Tasmania is
+regime-flagged and excluded; the covariate arms use all 22):
 
 | group | chambers |
 |---|---|
@@ -2009,11 +2011,11 @@ beat" is the whole of that apparatus.
   Four runs over two days with a frontier model. A staff tool refined over
   months, or a local model fine-tuned against the detector, is a different
   adversary and we did not test one.
-- **Tasmania is uninterpretable** and excluded. All twenty pooled chambers
-  are now screened (the diagnostic previously globbed only the provinces;
+- **Tasmania is uninterpretable** and excluded. All twenty-one screened
+  chambers now run the diagnostic (it previously globbed only the provinces;
   CA-FED, US House and US Senate were added — CA-FED flat, the two US chambers
-  a gradual multi-decade climb with no discrete step). Nineteen pass; Tasmania
-  is the sole exclusion. The diagnostic uses two convention-tracking markers,
+  a gradual multi-decade climb with no discrete step). The twenty pooled
+  chambers all pass; Tasmania, the twenty-first, is the sole exclusion. The diagnostic uses two convention-tracking markers,
   not all of them.
 - **Mixed is pooled with AI** throughout. Reported separately in the CSV.
 - **The permeation effect is small** and rests on one instrument.
