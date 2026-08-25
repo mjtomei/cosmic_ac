@@ -316,6 +316,43 @@ def inject_table_captions(t):
         sys.stderr.write("table captions injected: %d\n" % n)
     return "".join(out)
 
+
+# Inline citations -> \cite (numeric, scicite). Applied to the pandoc body; each
+# is a first-occurrence substitution matched on the author/venue prose the draft
+# already carries, so it survives markdown prose edits that keep those names.
+CITE_SUBS = [
+ (r'\(arXiv:2406\.07016; \\emph\{Sci Adv\}\s+11\(27\):eadt3813, 2025\)', r'\\cite{kobak2025}'),
+ (r'\(Steenbergen, Bächtiger, Spörndli\s+\\& Steiner 2003\)', r'\\cite{steenbergen2003}'),
+ (r'\(Benjamini \\& Hochberg, \\emph\{JRSS-B\} 57, 1995, 289--300\)', r'\\cite{benjamini1995}'),
+ (r'Suvanto, McGlinchey, Barclay \\&\s+Wahde \(arXiv:2606\.14209, 2026\)', r'Suvanto, McGlinchey, Barclay \\& Wahde\\cite{suvanto2026}'),
+ (r'Binoculars \(Hans et al\.\s+2024\)', r'Binoculars\\cite{hans2024}'),
+ (r'Fast-DetectGPT \(Bao et al\. 2024\)', r'Fast-DetectGPT\\cite{bao2024}'),
+ (r'ParliaBench \(Koniaris et al\., LREC 2026\)', r'ParliaBench\\cite{koniaris2026}'),
+ (r'Perkins benchmark', r'Perkins benchmark\\cite{perkins2024}'),
+ (r'Rice does not claim evidence of absence', r'Rice\\cite{rice2026} does not claim evidence of absence'),
+ (r'Pimlico\\textquotesingle s agreement is', r'Pimlico\\cite{pimlico2025}\\textquotesingle s agreement is'),
+ (r'Simmel 1904', r'Simmel 1904\\cite{simmel1904}'),
+ (r'Veblen 1899', r'Veblen 1899\\cite{veblen1899}'),
+ (r'Jhering 1883', r'Jhering 1883\\cite{jhering1883}'),
+ (r'Durkheim\\textquotesingle s 1887', r'Durkheim\\textquotesingle s 1887\\cite{durkheim1887}'),
+ (r'Lieberson\s+2000', r'Lieberson 2000\\cite{lieberson2000}'),
+ (r'Labov 1972', r'Labov 1972\\cite{labov1972}'),
+ (r'by Rogan--Gladen', r'by Rogan--Gladen\\cite{rogan1978}'),
+ (r'the whole of the record Pangram will read', r'the whole of the record Pangram\\cite{pangram2024} will read'),
+ (r'Pangram 4 report', r'Pangram 4 report\\cite{pangram4}'),
+ (r'Mann--Kendall\s+p', r'Mann--Kendall\\cite{mann1945,kendall1948} p'),
+ (r"Fisher\\textquotesingle s method over the", r"Fisher\\textquotesingle s method\\cite{fisher1925} over the"),
+]
+
+def cite_wire(t):
+    n_ok = 0
+    for pat, rep in CITE_SUBS:
+        t, n = re.subn(pat, rep, t, count=1)
+        if n == 1: n_ok += 1
+        else: sys.stderr.write("WARN: cite pattern unmatched: %s\n" % pat[:60])
+    sys.stderr.write("cite_wire: %d/%d citations wired\n" % (n_ok, len(CITE_SUBS)))
+    return t
+
 def main():
     t = open(SRC, encoding="utf-8").read()
     t = transform_headings(t)
@@ -323,6 +360,7 @@ def main():
     t = figure_ref_anchors(t)
     t = replace_section_refs(t)
     t = replace_appendix_refs(t)
+    t = cite_wire(t)
     t = inject_table_captions(t)
     t = insert_appendix(t)
     t = reorder(t)

@@ -30,6 +30,7 @@
 \captionsetup{font=small,labelfont=bf}
 % The body carries literal Unicode (Greek, math relations, arrows, accents);
 % map each to its LaTeX form so pdflatex sets them rather than dropping them.
+\usepackage{scicite} % superscript numeric \cite, AAAS style
 \usepackage{newunicodechar}
 \newunicodechar{−}{\ensuremath{-}}      % U+2212 minus
 \newunicodechar{×}{\ensuremath{\times}}
@@ -66,7 +67,11 @@
 \begin{document}
 \maketitle
 \input{body}
-% Citations are inline (author, venue, year) throughout, as in the draft; the
-% study has no separate reference list. A formal bibliography could be compiled
-% from the inline mentions if a submission required one.
+% References (refs.bib). erikson1992 (EGP class schema) and ouchi1980 are real
+% references used by the study but not yet wired to an inline \cite in the
+% current prose; \nocite keeps them in the list until the writing pass places
+% them. sciencemag.bst = numeric, cited-order.
+\nocite{erikson1992,ouchi1980}
+\bibliographystyle{sciencemag}
+\bibliography{refs}
 \end{document}
