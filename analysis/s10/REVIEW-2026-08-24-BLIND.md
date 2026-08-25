@@ -1702,6 +1702,8 @@
 
 **Counts.** 131 open (0 critical, 57 major, 74 minor; 108 CONFIRMED, 23 PARTIAL); 1 refuted; 0 unresolved.
 
+**For the next review cycle (Matthew, 2026-08-25).** The argument-logic lens was the most productive of the thirteen; next cycle, expand it to one AL worker per section (a 12-section fleet with refuters was drafted and briefly started this cycle, then stopped on Matthew's instruction to hold it for the next cycle — the script is committed at workflows/scripts/al-per-section-2026-08-25-*.js and its partial run is resumable).
+
 **Progress since the review ran (2026-08-24/25).** Both criticals closed by new analysis rather than rewording: (1) the floor's specificity-transfer assumption stated and bounded — a two-vote blind audit of all 316 flagged segments (277 prepared / 21 unclear / 11 both-vote spontaneous, 9 of them Mixed at fractions 0.11–0.58) puts the worst case at 9.03%→8.86% (§3.1, §4.1, Limits; flagged_hits_*). (2) The APC identification: per-legislature group-vs-individual gradients in one unit (apc_chamber_decomposition.py, new §4.6 figure) split the birth gradient into a standing juniority component (full-size among pre-drift cohorts — US Senate +105 [47,155], 1994–2004) and a cohort component (UK +30→+98, House +23→+85 as drift-formed cohorts enter); "organised generationally" retired paper-wide. Also applied: the mechanical batch (broken cross-refs, §8.6 renumbering, review-code and dagger conventions, external-table disambiguation, flip/success direction), the registration-timeline footnote, the Kobak contextualisation of the abstract, and the explanatory-power/iceberg passage at the joint model. Resolved items below; nothing deleted.
 
 
