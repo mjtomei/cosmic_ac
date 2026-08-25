@@ -2,7 +2,7 @@
 
 ## Abstract
 
-We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* built from the vocabulary language models overuse. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with an elevenfold spread across chambers and a concentration in scripted genres. This machine-drafted speech is not degraded: once genre is held fixed, AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, **predates the models by decades**: its rise begins in 1994–96, and it is organised generationally and by prior occupation, with position in an organisational hierarchy — the insulated middle using it most — predicting it beyond social class. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
+We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* built from the vocabulary language models overuse. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with an elevenfold spread across chambers and a concentration in scripted genres. This machine-drafted speech is not degraded: once genre is held fixed, AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, **predates the models by decades**: its rise begins in 1994–96; a juniority gradient in it predates even that, steepening as cohorts formed inside the drift arrive; and prior occupation — position in an organisational hierarchy, the insulated middle using it most — predicts it beyond social class. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
 
 ---
 
@@ -103,7 +103,9 @@ turned out to have a history: its rise begins in 1994–96, three decades
 before the models. On the machine side it is a post-training artifact,
 installed by the stages tuned toward human demonstrations and preferences
 and not by the stage tuned toward verifiable correctness. And when we went
-looking for who carried it, the dominant simple correlate is birth cohort; a
+looking for who carried it, the dominant simple correlate is birth year —
+a juniority gradient older than the drift itself, steepened by the cohorts
+formed inside it; a
 pre-registered occupational model adds weaker but real structure — the
 register peaks at the insulated middle of organisational hierarchies, the
 rungs that answer upward without the final say — and social class traces the
@@ -884,14 +886,18 @@ The climb has a floor. Even in the chambers that are flat over time, the registe
 
 [^r45cc]: `python cross_corpus.py`, reading each chamber's frozen `*_protocol.json` and `*_formality.json`; Fisher's method combines the per-corpus p-values over the confirmatory corpora only, per `replication_protocol.md`. The discovery corpus is excluded from the combination and reported separately.
 
-### 4.6 Birth cohort predicts the register, net of calendar drift
+### 4.6 Birth year predicts the register: a standing juniority gradient, steepened by drift-formed cohorts
 
-Every member-year of legislative speech carries two time-stamps: the year the
-words were **spoken** (calendar period) and the speaker's **birth year**
-(generation). If the register were only a period effect, everyone would drift
-up together and birth year would add nothing once the calendar year is held
-fixed; if it were generational, later-born members would use more of it even in
-the same year and chamber. Both hold, and they separate cleanly.
+Every member-year of legislative speech carries two time-stamps: the year
+the words were **spoken** (calendar period) and the speaker's **birth year**.
+Those two separate cleanly — members of different ages sit in the same year —
+and the accounting below holds regardless of what the birth gradient means.
+What means alone cannot separate is **cohort from age**: within any year,
+later-born and younger are the same people (age = year − birth), so a
+birth-plus-period model and an age-plus-period model reproduce each other's
+fits exactly, for every number in this section. The identification comes
+instead from comparing legislatures whose group histories differ, below.
+First the accounting, neutral between the readings:
 
 - **Birth cohort predicts the register net of calendar time.** Regressing the
   member-year rate on spoken year and birth year together, with chamber fixed
@@ -914,17 +920,48 @@ the same year and chamber. Both hold, and they separate cleanly.
   calendar drift, roughly **40% of the period rise happens inside continuing
   careers** and the rest arrives with the composition of the chamber. †[^r46c]
 
-Stated conclusion: **both mechanisms operate.** Later-born cohorts arrive using
-more of the register, a gradient that stands net of calendar drift; and members
-already sitting drift upward inside their own careers, at about half the
-aggregate rate. Neither displaces the other. The cohort gradient is not
-ministerial office: in the chambers whose record marks rank it *strengthens*
-when office years are removed, and office-holders use less of the register than
-backbenchers, not more (Appendix D.4). The mechanism behind the cohort
-gradient remains unidentified — three exposure tests failed to isolate it
-(Appendix A). Cohort is not the whole of who uses the register — §4.6a adds
-three predictors that survive it — but none of them identifies the cohort
-mechanism either.
+**Compared across legislatures, the gradient splits into a standing
+juniority component and a cohort component.** Group trends diverge enormously
+across chambers — −173 to +413 occurrences per 100k per decade — while the
+within-year birth gradient sits in one band (+49 to +109) in every chamber,
+including the two whose group trend is flat: the low-variance signature of an
+age effect. The sharpest single cell is the US Senate before any drift:
+among cohorts born 1917–1964, observed 1994–2004 — every one of them formed
+decades before the register began moving anywhere — the gradient is already
+full-size (+105 [+47, +155] per decade of birth). **A juniority gradient in
+this register predates the drift, the machines, and the web.** But the
+gradient is not era-stable everywhere: it roughly tripled where cohorts
+formed inside the drift entered — UK Commons +30 [+14, +46] → +98
+[+76, +120], US House +23 [−22, +64] → +85 [+37, +127] — arriving on the
+cohort schedule, and in the House against a flat chamber mean, so if the
+growth is formation, it is formation in the ambient written culture rather
+than the chamber. (Reading the growth as cohort assumes the juniority
+profile itself is era-stable; a profile steepening over time — juniors more
+staff-scripted now than in the 1990s — is the residual rival, stated rather
+than excluded.) The gradient is not ministerial office: in the chambers
+whose record marks rank it *strengthens* when office years are removed, and
+office-holders use less of the register than backbenchers, not more
+(Appendix D.4). The mechanism behind either component remains open — three
+exposure tests failed to isolate one (Appendix A) — and §4.6a's predictors
+survive the gradient without explaining it.[^r46apc]
+
+![](apc_gradients.png)
+
+*Group-level against individual-level gradients, one ruler (instrument
+occurrences per 100k words, per decade). Left: chamber trends diverge across
+legislatures while the within-year birth gradient sits in one band —
+full-size even where the trend is flat. Right: the birth gradient by era —
+full-size among pre-drift cohorts in the US Senate, roughly tripling in the
+UK Commons and US House as drift-formed cohorts enter. Error bars are
+member-cluster bootstrap 95% intervals.*
+
+[^r46apc]: `python apc_chamber_decomposition.py`, on the five chambers with
+    exact member birth years (37k member-years, ≥2,000 words each,
+    member-cluster bootstrap CIs); units are instrument occurrences per 100k
+    words per decade throughout — the same ruler as §4.5a. The all-22-chamber
+    bullets above are the story-neutral accounting at birth-decade
+    resolution; the five-chamber comparison is what separates the
+    components.
 
 [^r46a]: `python cohort_vs_period.py`. Member-year register rate regressed on
     spoken year and birth year with chamber fixed effects, word-weighted,
@@ -2295,9 +2332,12 @@ beat" is the whole of that apparatus.
   substance arm is buildable from materials we already hold (§8.6 item 1);
   until it exists, no claim in this study should be read as being about the
   content of legislative argument.
-- **Cohort mechanism is unidentified.** Three exposure tests null, and the
-  informative next evidence is a different kind rather than a fourth
-  operationalisation of the same kind (§8.6 items 8–10).
+- **The birth-year gradient's components are separated; its mechanism is
+  not.** §4.6 splits a standing juniority gradient from a cohort component
+  arriving with drift-formed cohorts, under an era-stable juniority profile
+  (stated there). Why either component exists is open — three exposure tests
+  null, and the informative next evidence is a different kind rather than a
+  fourth operationalisation of the same kind (§8.6 items 8–10).
 - **No chamber requires AI disclosure**, so no ground truth exists anywhere;
   every number rests on detector calibration rather than admission.
 - **Single detector.** Specificity is measured, but Pangram 4 is one vendor.
@@ -2488,7 +2528,7 @@ register run against placebo-matched counterfactuals — agree that **at
 least 9.0% of words** in current legislative speech are machine-drafted,
 spread elevenfold across chambers and concentrated where procedure permits
 preparation. The register behind the count is the older finding: rising
-since 1994–96, strongest in later birth cohorts, shaped like the office —
+since 1994–96, strongest in later-born members, shaped like the office —
 peaking at its insulated middle — and installed, on the machine side, at
 exactly the post-training stages tuned toward human demonstrations and
 preferences. Machine intelligence did not invent this register of

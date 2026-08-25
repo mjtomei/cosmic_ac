@@ -79,7 +79,7 @@ APPMAP = {
  "D.4":"sec:cohort-ministerial",
 }
 FIGLABEL = {"class_by_era_grouped.png":"fig:class-era","altitude_u.png":"fig:altitude",
-            "the-ai-lexicon-trend.png":"fig:trend","bypass_search.png":"fig:bypass"}
+            "the-ai-lexicon-trend.png":"fig:trend","apc_gradients.png":"fig:apc","bypass_search.png":"fig:bypass"}
 
 NUMSTRIP = re.compile(r'^(?:Appendix\s+[A-D]\s+---\s+|(?:[0-9]+(?:\.[0-9]+[a-z]?)?|[A-D]\.[0-9]+[a-z]?)\.?\s+)')
 
@@ -161,6 +161,8 @@ def figure_ref_anchors(t):
        r"the two instruments then part ways (\\cref{fig:trend})"),
       (r"The\s+figure\s+below\s+lays\s+out\s+the\s+loop\.",
        r"\\Cref{fig:bypass} lays out the loop."),
+      (r"comparing legislatures whose group histories\s+differ, below",
+       r"comparing legislatures whose group histories differ (\\cref{fig:apc}), below"),
       (r"reported\s+individually\s+in\s+the\s+table\s+below",
        r"reported individually in \\cref{tab:prevalence}"),
     ]

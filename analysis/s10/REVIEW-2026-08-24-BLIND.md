@@ -18,8 +18,8 @@ one cross-cutting consistency reviewer. Every finding was then handed to a
 separate refute-by-default adversary; only CONFIRMED and PARTIAL findings
 appear below, PARTIAL with the corrected version stated.
 
-**Counts.** 142 findings survived refutation of 157 raised:
-**1 critical, 65 major, 76 minor** (119 CONFIRMED, 23 PARTIAL);
+**Counts.** 141 findings survived refutation of 157 raised:
+**0 critical, 65 major, 76 minor** (118 CONFIRMED, 23 PARTIAL);
 1 refuted; none unresolved.
 
 Findings are ordered severity-first, CONFIRMED before PARTIAL, grouped by
@@ -31,26 +31,9 @@ another lens — adjudicate once, apply everywhere.
 
 ---
 
-## CRITICAL — CONFIRMED
-
-### AL1. [argument-logic] §2.8 (Birth cohort predicts the register) and Abstract
-
-> if it were generational, later-born members would use more of it even in the same year and chamber. Both hold, and they separate cleanly.
-
-**Problem.** Age-period-cohort non-identification. Within a fixed calendar year, birth year is a linear function of age, so a regression on spoken year + birth year cannot distinguish a cohort effect from an age effect: 'younger members use more register at every point in time' (age-grading, the standard sociolinguistic rival to apparent-time generational inference, well known in the Labov literature the paper cites) produces the identical fit, the identical within-member drift, and the identical era-restricted gradient of §2.10 (where 'cohort' is exactly age). 'They separate cleanly' is false as identification, and the abstract's headline claim that the register 'is organised generationally' is under-determined by every regression reported. The paper never mentions age or age-grading anywhere.
-
-**Reviewer's check.** Verified algebraically that any model rate = a(age) + p(period) reproduces the reported (birth, spoken-year) coefficients under reparameterization (age = period − birth); grepped the full render for 'age effect', 'age-grading', 'aging', 'younger members' — no discussion exists; confirmed D.4 tests office, not age, and that the exposure nulls (Appendix A) do not discriminate the two either.
-
-**Refuter's verification.** Re-derived the algebra: rate = c·birth + p·spoken is identical to rate = −c·age + (p+c)·spoken, so an age-grading+period model reproduces every reported number — the coefficients, the within-member +0.51 drift, and the era-restricted gradient (in a 2025–26 window birth year IS minus age). No mention of age or age-grading anywhere in the paper; METHODOLOGY's 'Cohort, not age' argument is absent from the paper and invalid as identification (flat mean chamber age only rules out age-with-no-period). 'They separate cleanly' fails as identification of generational organisation.
-
-**Suggested fix.** Acknowledge the APC problem explicitly; restate the finding as 'a birth-year gradient at fixed period, consistent with either cohort or age-grading'; attempt separation (e.g., nonlinear within-member age trajectories compared across cohorts, or the §3.8 B7 pre-political-writing test, which is the clean discriminator) before claiming generational organisation in the abstract.
-
-
----
-
 ## MAJOR — CONFIRMED
 
-### AL2. [argument-logic] §2.13 Permeation
+### AL1. [argument-logic] §2.13 Permeation
 
 > The register is permeating human speech independently of drafting: +0.0099, positive in 9 of 10 cells, permutation p = 0.017.
 
@@ -62,7 +45,7 @@ another lens — adjudicate once, apply everywhere.
 
 **Suggested fix.** Either restrict the post-era sample to segments Pangram scores Human (reporting the detector-dependence honestly as a robustness check), or bound the contamination arithmetically (show +0.0099 exceeds what the measured prevalence × the flagged-text delta could produce), or weaken the claim to 'the record is drifting' rather than 'human speech independently of drafting'.
 
-### AL3. [argument-logic] §2.2 / Table 2 / §5.1
+### AL2. [argument-logic] §2.2 / Table 2 / §5.1
 
 > A chamber's false-positive rate depends on its own editorial register, so specificity is not transferable — each chamber buys its own 60-segment pre-AI control.
 
@@ -74,7 +57,7 @@ another lens — adjudicate once, apply everywhere.
 
 **Suggested fix.** Either argue explicitly that specificity partially transfers (softening §5.1) and propagate a pooled-specificity term into per-chamber intervals, or add per-chamber specificity uncertainty to Table 2 and stop quoting low-end chamber rates and the elevenfold ratio as if calibration-exact.
 
-### AL4. [argument-logic] §2.14 Bypass study (headline)
+### AL3. [argument-logic] §2.14 Bypass study (headline)
 
 > The headline: asking a general-purpose model to rework a speech in a loop beats the commercial evasion industry by about tenfold. ... which get 2.31% of documents past it, this search gets 22.5% of targets past it: 9.8×.
 
@@ -86,7 +69,7 @@ another lens — adjudicate once, apply everywhere.
 
 **Suggested fix.** Make ~5× (per-variant vs humanizers) the headline ratio, and present 22.5% only as the exposure number it is defined to be.
 
-### AL5. [argument-logic] §2.6 (Other chambers converge on the level the United States already held)
+### AL4. [argument-logic] §2.6 (Other chambers converge on the level the United States already held)
 
 > So the picture is not a common shift. It is chambers converging upward on a level the United States already held before the consumer web, while the United States barely moves.
 
@@ -98,7 +81,7 @@ another lens — adjudicate once, apply everywhere.
 
 **Suggested fix.** Restate the section's conclusion in within-chamber terms (US flat, others rising) and explicitly mark the 'level the US already held' framing as unresolvable with a US-derived word list, deferring the level claim to the §3.8 1a register-feature instrument.
 
-### AL6. [argument-logic] §2.6 / Table 6 (constant-window trend)
+### AL5. [argument-logic] §2.6 / Table 6 (constant-window trend)
 
 > on that single ruler the pattern is convergence: the lower a chamber started, the faster it climbed (Spearman between 2006 level and growth −0.56, n = 19).
 
@@ -112,7 +95,7 @@ another lens — adjudicate once, apply everywhere.
 
 *Also flagged by: CB4, ST11.*
 
-### AL7. [argument-logic] §2.13 Permeation
+### AL6. [argument-logic] §2.13 Permeation
 
 > Small, but it is the only permeation evidence that does not route through a detector, and it survives the failure mode that demoted the lexicon arm.
 
@@ -124,7 +107,7 @@ another lens — adjudicate once, apply everywhere.
 
 **Suggested fix.** Run the in-time placebo the demotion standard requires (e.g., 2015-vs-2019 era pairs through the identical pipeline); until then state that the instrument shares the lexicon arm's exposure to the pre-existing drift rather than claiming it survives that failure mode.
 
-### AL8. [argument-logic] Abstract (and §1)
+### AL7. [argument-logic] Abstract (and §1)
 
 > This machine-drafted speech is not degraded: once genre is held fixed, AI-flagged contributions are better-formed and no less engaged.
 
@@ -138,7 +121,7 @@ another lens — adjudicate once, apply everywhere.
 
 *Also flagged by: CE1.*
 
-### AL9. [argument-logic] §2.14 (closing paragraph, 'What this means for the prevalence number')
+### AL8. [argument-logic] §2.14 (closing paragraph, 'What this means for the prevalence number')
 
 > Evasion is real, clears the detector on roughly one flagged speech in five under directed search, and is free in deliberative-quality terms — so 9.0% is a floor
 
@@ -150,7 +133,7 @@ another lens — adjudicate once, apply everywhere.
 
 **Suggested fix.** Replace 'free in deliberative-quality terms' with 'shows no detectable quality cost at the arms' power, which cannot exclude effects at the study's headline scale', and mirror that bound in §3.3.
 
-### AL11. [argument-logic] §3.3 (The substitution)
+### AL10. [argument-logic] §3.3 (The substitution)
 
 > machine-assisted text grades better-formed, not worse-engaged on the DQI — so policing authorship does not protect quality, because the authorship detection would flag is not where the quality deficit is.
 
@@ -162,7 +145,7 @@ another lens — adjudicate once, apply everywhere.
 
 **Suggested fix.** Qualify the substitution argument: detection is a poor proxy for quality on formation dimensions, but the measured machine-side deficits (engagement opportunity, checkable specifics) are exactly what a direct quality check must weight — which strengthens the 'check the work' proposal without the false 'no deficit where authorship is' premise.
 
-### AL12. [argument-logic] §3.2 (gut judgment anti-correlation)
+### AL11. [argument-logic] §3.2 (gut judgment anti-correlation)
 
 > Asked to judge AI-likeness by register, a frontier reader flagged 13 of 35 genuine human floor speeches and only 5 of 35 machine rewrites that had been optimised against a detector (§2.14 stage 5)
 
@@ -236,7 +219,7 @@ another lens — adjudicate once, apply everywhere.
 
 **Suggested fix.** In Abstract, Introduction, and §3.3, state both halves: e.g. "better-formed, and no worse-engaged where there is something to engage with — though flagged speech is about half as likely to contain anything to engage with, a difference §2.14 traces to weaker tools."
 
-*Also flagged by: AL8.*
+*Also flagged by: AL7.*
 
 ### CE2. [claims-vs-evidence] Discussion, §3 opening paragraph
 
@@ -742,7 +725,7 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Present the 13/35 and 5/35 counts (with the threshold used to call a text 'flagged') in §2.14's stage-5 subsection or an appendix, and make §3.2's pointer accurate.
 
-*Also flagged by: AL12.*
+*Also flagged by: AL11.*
 
 ### SL3. [storyline] §2.14 Quality (applicability paragraph) and Appendix C.2
 
@@ -775,7 +758,7 @@ segments as wholly machine had been flattering the middle rung.
 
 ## MAJOR — PARTIAL
 
-### AL10. [argument-logic] §3.1 (Any fixed check loses to an optimising attacker)
+### AL9. [argument-logic] §3.1 (Any fixed check loses to an optimising attacker)
 
 > Point a general-purpose model at its own output, tell it to try again, and it will defeat any check you can put in front of it. This is not a claim about Pangram. It follows from the check being a fixed function and the attacker being an optimiser
 
@@ -817,7 +800,7 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Correlate 2006 level with growth computed from non-overlapping data (e.g., level = 2004–08 mean, growth from 2010 onward), or fit the trend on all years rather than endpoints; report the endpoint-based Spearman only with the attenuation/artifact caveat.
 
-*Also flagged by: AL6, ST11.*
+*Also flagged by: AL5, ST11.*
 
 ### CB5. [comparability] §2.6 Other chambers converge on the level the United States already held
 
@@ -880,7 +863,7 @@ segments as wholly machine had been flattering the middle rung.
 
 ## MINOR — CONFIRMED
 
-### AL13. [argument-logic] §2.9.5 (Flight)
+### AL12. [argument-logic] §2.9.5 (Flight)
 
 > That is chase-and-flight: a marker loses value as it is copied, so the group that holds it abandons the most conspicuous forms first.
 
@@ -1586,7 +1569,7 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 **Suggested fix.** Recompute with multi-year endpoint means (e.g. 2006–08 vs 2024–26) and report that Spearman alongside; note the endpoint-noise bias in footnote r45cw.
 
-*Also flagged by: AL6, CB4.*
+*Also flagged by: AL5, CB4.*
 
 ### SL5. [storyline] §2.4 The Opus screen tracks Pangram
 
