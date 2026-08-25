@@ -1164,10 +1164,9 @@ bachelor):
 Bachelor and graduate form a plateau at the top; both arms fall away
 significantly, and the descending arm is the **professional** degree — law and
 medicine, the most elite credential in the table — measured on 991 members.
-An earlier draft reported this as an ascending "academic ladder" of
-+0.065σ/rung. That was a straight line fitted through a hump, and it excluded
-the professional degree as being off the ladder — dropping the one category
-that breaks monotonicity. The block is jointly significant on its own
+Read as a straight line, this would pass for an ascending "academic ladder"
+of +0.065σ per rung — but only by excluding the professional degree as off
+the ladder, the one category that breaks monotonicity. The block is jointly significant on its own
 (Wald p < 10⁻⁴ as level dummies).
 
 It is not, however, an independent channel. Put class and education in one
@@ -1249,11 +1248,10 @@ two opposite shapes that cancel when pooled (+0.020, t 2.05, and t 1.91
 beside the occupational block), and the honest reading is the bucket table
 in Appendix D.3, not this coefficient.
 
-An earlier version of this table, computed before the nine-chamber expansion
-(n = 2,989), showed class failing the joint test — the II-over-I contrast fell
-to t = 1.26 and the block to p = 0.0074. That was a power problem, not a
-result: cohort is collinear with both class and education, and the smaller
-sample could not separate them.
+Class needs the panel's full power: restricted to the thirteen
+pre-expansion chambers (n = 2,989), the II-over-I contrast falls to t = 1.26
+and the block to p = 0.0074 — cohort is collinear with both class and
+education, and the smaller sample cannot separate them.
 
 [^r46joint]: `python joint_predictors.py`. Canonical member-level spec — one
     observation per legislator, equal weight, register z-scored within chamber
@@ -1263,12 +1261,8 @@ sample could not separate them.
     covariates), so the columns read raw association → survives the other
     blocks → survives the occupational content too. Education enters as
     level dummies with bachelor baseline — the same coding as the education
-    table — and every EGP category present enters as a dummy (review CC3;
-    two earlier printed versions of this table erred: one mixed a ladder
-    coding and a cohort-conditioned "alone" column, the next showed only the
-    significant class contrasts, let sub-26-member classes fold into
-    baseline I, and printed a misindexed joint-prominence cell, −0.017 for
-    the true +0.020). The occupational block is §4.6b's dir middle + apex
+    table — and every EGP category present enters as a dummy. The
+    occupational block is §4.6b's dir middle + apex
     delta (grand model (ii)'s pair under the prereg's never-together rule)
     plus Indoors, each standardised per sd on the occ panel.
 
@@ -1744,8 +1738,8 @@ Pooled alignment effect **+0.387** on the scaled generation — three model
 families, 1,600 prompt pairs each, 1.19M base words.[^r47] SFT and DPO
 contribute **indistinguishably** (paired bootstrap over 800 shared prompts:
 DPO − SFT = −0.08, 95% CI [−0.31, +0.15]), so no stage ordering is supported —
-an earlier version leaned on "largest at the preference stage," and that
-ordering was the pedestal, not the data (Appendix B). What remains true, and
+"largest at the preference stage" was the control pedestal's artifact, not
+the data (Appendix B). What remains true, and
 is kept as a datapoint rather than a load-bearing link: the register is
 installed by the stages tuned toward human demonstrations and preferences, and
 not by the stage tuned toward verifiable correctness. That is consistent with
@@ -1779,9 +1773,7 @@ an unresolved flag, not a counter-result.
 
 [^r47]: Ladder stages: `python olmo_ladder.py report`, which prints the
     end-to-end base→instruct row (**+1.2412**) alongside the three adjacent
-    transitions. An earlier version of the script defined only the three
-    adjacent pairs, so this footnote quoted a figure its own invocation did not
-    produce. Note the three uncorrected stages sum to +1.99 against that +1.24;
+    transitions. Note the three uncorrected stages sum to +1.99 against that +1.24;
     the gap is the per-transition control pedestal described below, and closes
     to about 0.03 under the bias-free estimator — which is why the stages are
     reported as three separate measurements and not as a decomposition of one
@@ -1915,10 +1907,7 @@ a precision the estimator does not have, so the permutation test leads.
 
 [^r48]: `python word_context_delta.py pooled`, which prints the pooled figure,
     the ten chamber × family cells, the clustered bootstrap and the permutation
-    test. Earlier drafts cited `word_context_delta.py` alone, whose `report`
-    mode hardcodes the Qwen3 traces and prints five per-chamber rows with no
-    pooled statistic — the number in the sentence above was not reachable from
-    the invocation given for it. Defaults are B = 2,000 (at B = 400 the 2.5%
+    test. Defaults are B = 2,000 (at B = 400 the 2.5%
     percentile carries roughly one Monte-Carlo standard error, which is the
     whole distance of the lower bound from zero) and a recorded seed. The
     permutation test shuffles era labels within each chamber × family cell,
@@ -2019,8 +2008,7 @@ change a reader's confidence:
    uncontrolled (t −0.2) and strongly positive within genre (t +4.1), because
    machine drafting concentrates in SO31 and **SO31 has the lowest
    justification of any genre** (1.10, against 2.09 for government business;
-   full-sample genre means — an earlier draft quoted the post-2023 cells,
-   1.14/2.01, review item Q10).
+   full-sample genre means).
    Pooling across genres hides an effect that is plainly there inside each.
 2. **The two independent AI-guesses correlate** (screen vs grading judge,
    r = +0.758) — a shared style signal across two different models, which is a
@@ -2103,8 +2091,7 @@ thing — whether the attacker can submit to the detector and retry
 | **per target** | **query + retry** (≤18 attempts) | **22.5%** [14.4, 33.5] | an attacker who submits, sees the verdict, and tries again |
 
 Both are realistic; they bracket the exposure. The gap between them is about
-**2×**, not the "threefold" an earlier draft claimed by comparing across
-mismatched subsets (review item B4). Everything below computes on the same two
+**2×**. Everything below computes on the same two
 final runs.
 
 **The per-variant figure — 11.1%.** How often a single submitted variant
@@ -2409,16 +2396,14 @@ same way. Adding justification by adding words is a real strategy, not an
 artifact of one; partialling it out would treat a route to quality as a
 nuisance parameter.[^r49c]
 
-[^r49c]: An earlier version of this section reported a *length-adjusted*
-    column instead and used it to conclude that justification's apparent gain
-    "was length". That column is the regression intercept at a word delta of
-    zero, and 24 of the 25 stage-4 deltas are strictly positive — a zero delta
-    sits 2.1 sd outside the sample with one observation there, giving an
-    intercept VIF of 5.43 and inflating the standard error 2.3×. The +0.16 →
-    −0.173 sign flip was extrapolation. The column has been removed from the
-    script rather than repaired: the design is within-text paired, so content,
-    speaker and occasion are already fixed by construction and there was
-    nothing for a covariate to control.
+[^r49c]: A length-adjusted column would be the natural check here, and its
+    absence is deliberate: that column is the regression intercept at a word
+    delta of zero, and 24 of the 25 stage-4 deltas are strictly positive — a
+    zero delta sits 2.1 sd outside the sample with one observation there,
+    giving an intercept VIF of 5.43 and inflating the standard error 2.3×,
+    so any sign flip it showed would be extrapolation. The design is
+    within-text paired: content, speaker and occasion are already fixed by
+    construction, and there is nothing for a covariate to control.
 
 **What this means for the prevalence number.** Evasion is real and clears
 the detector on roughly one flagged speech in five under directed search —
@@ -2462,12 +2447,10 @@ beat" is the whole of that apparatus.
 
 [^r49x2]: Corrected 2026-08-24 (review item X2): 2.86% (17/594) is Pangram 4's
     document-level false-negative rate on the **Epoch AI Style Imitation**
-    benchmark (the Pangram 4 report's own Table 23), not the Perkins benchmark, which an
-    earlier draft named. The Perkins benchmark (their Table 22) is reported as a
-    mean-accuracy metric — a different unit — with Pangram at ~5.9% miss on the
-    manipulated set; it is not FNR-comparable and is not tabled here. The 2.86%
-    figure and the ordering (all vendor rows below our per-variant rate) are
-    unchanged.
+    benchmark (the Pangram 4 report's own Table 23). The Perkins benchmark
+    (their Table 22) reports mean accuracy — a different unit, with Pangram at
+    ~5.9% miss on the manipulated set — which is not FNR-comparable and is not
+    tabled here.
 
 [^r49a]: `python bypass_report.py` reads the verdict files and prints every
     figure in this subsection — the per-run split (final vs superseded), the
@@ -2866,9 +2849,9 @@ argument: **quality assessment is not a usable proxy for provenance.** If DQI
 tracked authorship it would merely be a worse detector; the associations it
 does carry are weak, partly leakage, and — where present — positive-signed, so
 it cannot stand in for the detector, which is what lets it measure the thing
-anyone actually wanted to know. (An earlier draft called the two "orthogonal";
-that overstates it — a referee holding the stage-2 table can point to real if
-small associations — so the weaker, accurate claim is used, review item X4.)
+anyone actually wanted to know. ("Orthogonal" would overstate it — a referee
+holding the stage-2 table can point to real if small associations — so the
+weaker claim is the accurate one.)
 Two dimensions do run lower on the machine side, and they are the right
 targets for improvement rather than counterexamples: wild flagged speech is
 about half as likely to contain anything to engage with (the applicability
