@@ -1,75 +1,4 @@
-# S10 — blind review, 2026-08-24
-
-**Reviewed state:** commit `66b508f` (the compiled paper and the committed
-artifacts as of that commit). **This review was run with no access to any
-prior review of this study**: reviewers were barred from files named
-REVIEW/AUDIT/RESPONSES, and in-text parentheticals like "(review item B4)"
-were treated as unverified author claims and audited directly.
-
-**Method.** Thirteen blind reviewers, one dimension each: seven data
-dimensions that reproduced numbers from the committed artifacts and read
-the estimator code (calibration+prevalence, genre+screen,
-series/trend/cross-chamber, cohort+class, occupational-prereg,
-post-training/coverage/permeation, quality+bypass), five
-narrative/argument dimensions reading the compiled publication-order paper
-(claims-vs-evidence, internal-consistency, argument-logic, comparability,
-storyline — the split Matthew requested, with the deepest scrutiny), and
-one cross-cutting consistency reviewer. Every finding was then handed to a
-separate refute-by-default adversary; only CONFIRMED and PARTIAL findings
-appear below, PARTIAL with the corrected version stated.
-
-**Counts.** 138 findings survived refutation of 157 raised:
-**0 critical, 64 major, 74 minor** (115 CONFIRMED, 23 PARTIAL);
-
----
-
-## RESOLVED since the review ran (moved to the back)
-
-- **[critical] [occupational-prereg]** Results 4.6b (headline framing): "The design intent, registered in the document's hierarchy section and throughout the pre-r..." — *adjudicated (Matthew): lead rewritten as a timeline; minute-level registration footnote added (12:04 transcript prediction → 13:05 prereg commit → 13:17 unblinding → 13:36 amendment → 17:21 ruling); meta-point on pervasive logging added*
-- **[minor] [occupational-prereg]** Results 4.6b (cross-reference): "that operationalization failed its own test and the framing is retired — Appendix B8 prese..." — *fixed: duplicate of the B8→B10 pointer correction (mechanical batch)*
-- **[major] [quality+bypass]** 4.9 Bypass study (flip vs success paragraph): "Effort raised both bars, and by *more* on the flip bar (2.8×) than on the success bar (5.5..." — *fixed: same direction correction*
-- **[major] [internal-consistency]** §2.14 Bypass study (flip vs success bars): "Effort raised both bars, and by more on the flip bar (2.8×) than on the success bar (5.5×)..." — *fixed: duplicate of the flip/success direction correction (mechanical batch)*
-- **[critical] [argument-logic]** §2.8 (Birth cohort predicts the register) and Abstract: "if it were generational, later-born members would use more of it even in the same year and..." — *resolved by new analysis per Matthew's design (apc_chamber_decomposition.py, apc_gradients.png): group vs individual gradients per legislature in one unit. The gradient splits into a standing juniority component (full-size among pre-drift cohorts, US Senate +105 [47,155], 1994-2004, births 1917-64) and a cohort component (UK +30->+98, House +23->+85 as drift-formed cohorts enter; House chamber mean flat -> ambient-culture formation). §4.6 rewritten around the two components with the identity stated and the era-stable-profile assumption named; abstract/intro/Discussion/Limits harmonized; 'organised generationally' retired.*
-- **[major] [argument-logic]** §2.10 (Pre-registered occupational test) with Appendices A18–20, B10: "The registered four-level U is the result. The design intent, registered in the document's..." — *adjudicated (Matthew): same timeline footnote fix*
-- **[minor] [argument-logic]** §2.1 / §5.1 (calibration and the floor claim): "with Sp = 1 and any real detector's Se ≤ 1, the observed flag rate is a conservative floor..." — *addressed per Matthew's direction: floor claim conditioned in §3.1; new §4.1 contemporary-specificity block — two-vote blind audit of all 316 hits (277 prepared / 21 unclear / 11 both-vote spontaneous, 9 of them Mixed at 0.11–0.58), worst-case bound 9.03%→8.86% (8.65% full-word); temporal-transfer bullet added to Limits; artifacts committed (flagged_hits_pool/audit/bound)*
-- **[minor] [comparability]** §2.4 The Opus screen tracks Pangram: "consistent with §5.4's finding that reasoning never closes the ˜0.25 AUC frontier gap, but..." — *fixed: duplicate of the removed §5.4/~0.25-AUC cross-reference (mechanical batch)*
-- **[major] [storyline]** §2.4 The Opus screen tracks Pangram: "consistent with §5.4's finding that reasoning never closes the ˜0.25 AUC frontier gap, but..." — *fixed: false cross-ref and unanchored ~0.25 AUC removed; sentence now self-contained*
-- **[major] [storyline]** §3.8 Future work (item numbering) and §3.5 Limits: "All three are first customers for the build-the-instrument-in-any-language method in item ..." — *fixed: §8.6 renumbered sequentially 1–35; all item refs updated (items 8–10, 11, 8, 33)*
-- **[major] [storyline]** Throughout (first use §2.2): "the longest quartile of segments runs 9.4% against 5.8% for the shortest (review item X12)..." — *fixed: review-code convention defined at first use (footnote) and in the provenance note*
-- **[minor] [storyline]** §2.14 (stage 6 discussion): "wild flagged text shows the collapse (§Q1) while frontier raw text does not..." — *fixed: dangling (§Q1) replaced with a prose pointer to the applicability result*
-- **[minor] [storyline]** §2.2 (first use) and §2.6 footnote: "65,795 machine-written words of 728,998 across 3,519 segments in 20 chambers, excluding re..." — *fixed: regime-flag first use now points at §2.1's diagnostic*
-- **[minor] [storyline]** §2.5 (first use) / Supplementary provenance note: "human register had been moving toward what instruct-tuning later selected for, for thirty ..." — *fixed: dagger convention footnote attached at first use; full key remains in provenance*
-- **[minor] [storyline]** §3.6 Related work / §2.14 footnote 32: "on the Sem-Detect peer-review benchmark reprinted in the Pangram 4 report (Table 27), both..." — *fixed: external table references disambiguated (their/its Table N)*
-- **[major] [cross-cutting]** §2.14 (bypass, flip vs success rates): "Effort raised both bars, and by more on the flip bar (2.8×) than on the success bar (5.5×)..." — *fixed: direction corrected — more on the success bar (5.5×) than the flip bar (2.8×)*
-- **[major] [cross-cutting]** §2.4 (Opus screen, effort A/B): "consistent with §5.4's finding that reasoning never closes the ˜0.25 AUC frontier gap..." — *fixed: same as storyline item — cross-ref removed*
-- **[minor] [cross-cutting]** §2.10 (pre-registered occupational test): "that operationalization failed its own test and the framing is retired — Appendix B8 prese..." — *fixed: pointer corrected to Appendix B10*
-
-1 refuted; none unresolved.
-
-**Progress since the review ran (2026-08-24/25).** Both criticals were
-closed by new analysis rather than rewording: (1) the floor's
-specificity-transfer assumption is now stated and bounded — a two-vote
-blind audit of all 316 flagged segments (277 prepared / 21 unclear / 11
-both-vote spontaneous, 9 of them Mixed at fractions 0.11–0.58) puts the
-worst case at 9.03%→8.86% (§3.1, §4.1, Limits; flagged_hits_*).
-(2) The APC identification: per-legislature group-vs-individual gradients
-in one unit (apc_chamber_decomposition.py, new §4.6 figure) split the
-birth gradient into a standing juniority component (full-size among
-pre-drift cohorts — US Senate +105 [47,155], 1994–2004) and a cohort
-component (UK +30→+98, House +23→+85 as drift-formed cohorts enter);
-"organised generationally" is retired paper-wide. Also applied: the
-mechanical batch (broken cross-refs, §8.6 renumbering, review-code and
-dagger conventions, external-table disambiguation, flip/success
-direction), the registration-timeline footnote, and the Kobak
-contextualisation of the abstract. All resolved items are moved to the
-back with one-line outcome notes; nothing was deleted.
-
-Findings are ordered severity-first, CONFIRMED before PARTIAL, grouped by
-dimension. Every item is self-contained: the quote, the defect, the check
-the reviewer performed, the refuter's independent verification, and a
-suggested fix. "Also flagged by" marks the same defect surfacing under
-another lens — adjudicate once, apply everywhere.
-
+# S10 — blind review, 2026-08-24 (open findings first; method, progress and resolved items at the end)
 
 ---
 
@@ -385,7 +314,7 @@ another lens — adjudicate once, apply everywhere.
 
 ### XC1. [cross-cutting] Table 28 (Materials and methods §4) vs Table 6 (§2.6), §3.7, Appendix A item 10
 
-> Canada       federal House of Commons, AB, BC, MB, NB, NL, NS, ON, SK
+> Canada federal House of Commons, AB, BC, MB, NB, NL, NS, ON, SK
 
 **Problem.** The paper's official 22-chamber roster (Table 28) includes New Brunswick and excludes Prince Edward Island, yet PEI appears throughout as a study chamber: it is one of Table 6's 'nineteen chambers' (1,589 -> 1,523), one of the 'only three chambers [that] decline at all', in the 22-chamber policy scan ('Coverage is partial for NI, Manitoba, PEI and South Australia'), and in Appendix A item 10 ('PE +2.19 on 87 member-years'). Meanwhile NB — the densest-sampled corpus — is absent from Table 6, and §2.6's footnote names only SA, Ireland and federal Canada as exclusions, so its 19+3=22 bookkeeping only works if PEI replaces NB. The paper thus uses two different 22-chamber sets (23 distinct chambers in total).
 
@@ -399,7 +328,7 @@ another lens — adjudicate once, apply everywhere.
 
 ### XC2. [cross-cutting] Appendix D.1 Table 34 vs §2.14 Table 19 (stage 2)
 
-> justification         +1.13 (t 4.1) → +0.83 (t 2.2)        +0.75 (t 4.1) → +1.17 (t 3.6)
+> justification +1.13 (t 4.1) → +0.83 (t 2.2) +0.75 (t 4.1) → +1.17 (t 3.6)
 
 **Problem.** Table 34's stage-2 baseline coefficients contradict Table 19's stage-2 column for the same associations: justification +0.75 (t 4.1) vs +0.290 (t 4.4); common good +0.89 (t 7.0) vs +0.229 (t 4.5); respect groups +0.64 (t 6.2) vs +0.220 (t 6.1); respect counterargs even flips sign (−0.14 vs +0.073). D.1's header says the regressor is 'the screen ai guess + genre/era fixed effects', which contradicts the column label 'stage 2 (external)' (Table 19's stage-2 regressor is the binary Pangram verdict with chamber fixed effects). No reconciliation is given.
 
@@ -435,8 +364,7 @@ another lens — adjudicate once, apply everywhere.
 
 ### GS1. [genre+screen] 4.3 Drafting concentrates in scripted business
 
-> Not one of the five flagged segments is spontaneous exchange.[^r43] Two are
-**eulogies** for a former member.
+> Not one of the five flagged segments is spontaneous exchange.[^r43] Two are **eulogies** for a former member.
 
 **Problem.** The categorical claim is contradicted by the writeup's own fifth item. I read all five flagged segment texts: the eulogies, the privilege response, and the unanimous-consent motion check out, but the fifth (Connie Cody, 'The Economy', 124w) is an ordinary QP supplementary question addressed to the Prime Minister mid-exchange — i.e., it IS spontaneous exchange on its face, excluded only by the unsourced assertion that backbench questions are 'routinely staff-written'. genre_oq_audit.py itself tags it (and the two eulogies and the UC motion) 'exchange?'. The follow-on claim 'the flags land exactly on the parts that were written in advance' is demonstrated for 4/5, asserted for the fifth.
 
@@ -448,8 +376,7 @@ another lens — adjudicate once, apply everywhere.
 
 ### GS2. [genre+screen] 4.4 The Opus screen tracks Pangram
 
-> A blinded LLM screen over the full corpus (37,801 segments, date-blind)
-separates Pangram's classes cleanly on the 618-segment overlap
+> A blinded LLM screen over the full corpus (37,801 segments, date-blind) separates Pangram's classes cleanly on the 618-segment overlap
 
 **Problem.** 'The full corpus' is the New Brunswick corpus only, not the study's 22-chamber corpus, and §4.4 never says so. opus_screen_full.js is named 'opus-screen-nb-full' with description 'Lean Opus screening of the full NB corpus', and opus_screen_auc.py's docstring says 'run over all 37,801 NB segments'. Nothing between §4.3 (federal Canada) and this sentence scopes 'the corpus' to NB, so a reader will take the screen — and its 'cheap stratifier' claim — as covering the whole multi-chamber study.
 
@@ -461,9 +388,7 @@ separates Pangram's classes cleanly on the 618-segment overlap
 
 ### GS3. [genre+screen] 4.3 Drafting concentrates in scripted business
 
-> Mixed verdicts are commoner in the mixed-format
-Government Orders than in the scripted SO31 set pieces, so counting Mixed
-segments as wholly machine had been flattering the middle rung.
+> Mixed verdicts are commoner in the mixed-format Government Orders than in the scripted SO31 set pieces, so counting Mixed segments as wholly machine had been flattering the middle rung.
 
 **Problem.** False as written: both 60-segment cells contain exactly 5 Mixed verdicts (SO31 5/60, Government Orders 5/60). The middle rung deflates most under fraction-weighting (25.7%→19.9%) because GO's Mixed segments carry much lower fraction_ai (mean ~0.38 vs ~0.61 for SO31's), not because Mixed verdicts are commoner there. Only as a share of flagged segments (5/14 vs 5/22) is Mixed 'commoner' in GO, which the sentence does not say. The same wrong mechanism appears in prevalence_report.py's wrate() docstring.
 
@@ -475,7 +400,7 @@ segments as wholly machine had been flattering the middle rung.
 
 ### IC1. [internal-consistency] §4 Data, Table 28 (and Abstract, §2.6 Table 6, §2.8, Appendix A)
 
-> Canada   federal House of Commons, AB, BC, MB, NB, NL, NS, ON, SK
+> Canada federal House of Commons, AB, BC, MB, NB, NL, NS, ON, SK
 
 **Problem.** The roster of 'The 22 chambers' contradicts the study's own tables. Table 6 has a Prince Edward Island row, Table 8's 'CA provinces' group includes it, and Appendix A items 9-11 report PE results (e.g. 'PE +2.19 on 87 member-years') — yet PEI is absent from Table 28 and never introduced in Data. The covariate panel's '22 chambers' includes PEI and excludes New Brunswick, while Table 28's 22 includes NB and excludes PEI, so the study actually spans 23 distinct chambers and 'all 22' names two different sets in different sections. The caption also promises 'the arms that use each' but the table has no arms column.
 
@@ -645,8 +570,7 @@ segments as wholly machine had been flattering the middle rung.
 
 ### QB2. [quality+bypass] 4.9 Stage 5 (successful evasions table)
 
-> | respect_demands | −0.01 (t −0.6) | 0.00 (t 0.0) |
-| respect_counterargs | +0.11 (t +0.9) | +0.10 (t +0.4) |
+> | respect_demands | −0.01 (t −0.6) | 0.00 (t 0.0) | | respect_counterargs | +0.11 (t +0.9) | +0.10 (t +0.4) |
 
 **Problem.** These sentinel cells reproduce from stage5_scores.json + stage5_grade_key.json ONLY when -1 (inapplicable) is included as a literal score of -1 in the paired differences — the practice the section's opening paragraph says is never used ('excluded from means rather than scored as zero') and that footnote r49b applies to stages 3/4 ('-1 (inapplicable) pairs are excluded, which is why the two sentinel dimensions have smaller n'). Under the stated exclusion rule respect_counterargs is −0.33 (t −1.0, n=3), a sign flip, and respect_demands is 0.00 (n=8). The table also shows no reduced n for these rows, silently implying n=35.
 
@@ -658,8 +582,7 @@ segments as wholly machine had been flattering the middle rung.
 
 ### QB3. [quality+bypass] 4.9 Stage 6 / Appendix C.4 (model attribution)
 
-> | DQI grading, stages 1-5 (§4.9) | **Claude Fable 5** | default |
-| DQI grading, stage 6 (§4.9) | **Claude Opus** | medium |
+> | DQI grading, stages 1-5 (§4.9) | **Claude Fable 5** | default | | DQI grading, stage 6 (§4.9) | **Claude Opus** | medium |
 
 **Problem.** Three mutually contradictory model attributions coexist. C.4 says stages 1–5 were graded by Fable 5 and stage 6 by Opus; §4.9's stage-6 paragraph says the stage-6 judge was 'pinned to the stage-1/2 model' (false if 1/2 were Fable and 6 is Opus); workflows/stage6_grade.js's own header says 'JUDGE MODEL IS PINNED to opus: stages 1-5 were graded in Opus sessions'; quality_expansion/grade_workflow.js says it 'sets no model' and that 'stages 3 and 4 were graded by claude-fable-5'. This also undercuts C.4's claim that the r=+0.758 screen-vs-judge correlation 'is a correlation between two different models': the stage-1 screen and grade phases run in the same no-model-pinned workflow, so both inherited the same session default.
 
@@ -1257,10 +1180,7 @@ segments as wholly machine had been flattering the middle rung.
 
 ### GS6. [genre+screen] 4.4 (footnote r44dep)
 
-> The deployed screen is
-    `opus_screen_full.js` (473 batches of 40), distinct from the lean
-    validation run used in the effort A/B below; the two differ in score level
-    (mean 34.3 vs 26.5) but not in discrimination.
+> The deployed screen is `opus_screen_full.js` (473 batches of 40), distinct from the lean validation run used in the effort A/B below; the two differ in score level (mean 34.3 vs 26.5) but not in discrimination.
 
 **Problem.** Two factual errors. (1) The means are swapped: on the shared 241-segment pool the lean run averages 34.3 and the deployed screen 26.5, while the sentence order (deployed first) implies the opposite; opus_screen_auc.py's docstring makes the same swap. (2) '473 batches of 40' is one half-run: 473×40 = 18,920 ≠ 37,801; screen_batches/ holds 946 batch files (37,803 slots) and the js itself says 'one half per run'. ('Not in discrimination' does hold: deployed AUC on the 241 pool is 0.954 vs lean 0.948.)
 
@@ -1272,9 +1192,7 @@ segments as wholly machine had been flattering the middle rung.
 
 ### GS7. [genre+screen] 4.4 The Opus screen tracks Pangram
 
-> The deployed screen — the run over all 37,801 segments — separates Pangram's
-AI and human classes at **AUC 0.954** [0.934, 0.971] on the 618-segment
-overlap
+> The deployed screen — the run over all 37,801 segments — separates Pangram's AI and human classes at **AUC 0.954** [0.934, 0.971] on the 618-segment overlap
 
 **Problem.** The positive class in that AUC is AI plus Mixed (104 = 78 + 26), not 'Pangram's AI class': opus_screen_auc.py labels 1 if verdict in (AI, Mixed). Since the table directly above lists Mixed as a separate class, 'AI and human classes' misdescribes the computation. The choice is conservative — AI-only vs Human gives 0.966 — but the reader cannot tell what was computed. The 2023+ figure (0.940) inherits the same labelling.
 
@@ -1286,8 +1204,7 @@ overlap
 
 ### GS9. [genre+screen] 4.4 The Opus screen tracks Pangram
 
-> Practically, the screen can be run for about **4× fewer reasoning
-tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
+> Practically, the screen can be run for about **4× fewer reasoning tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 **Problem.** The 4×/2× token-cost figures are attributed to two artifacts that contain no token accounting: opus_effort_ab.csv holds only blind_id/label/three scores, opus_effort_ab.py computes AUCs and correlations only, and opus_effort_raw.json holds only per-arm score maps. The AUC parity is fully supported; the specific cost multipliers are supported by nothing on disk.
 
@@ -1752,9 +1669,7 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 ### GS4. [genre+screen] 4.3 (footnote r43w)
 
-> `python prevalence_report.py` for the rates and bootstrap intervals;
-    the SO31-vs-OQ permutation is 50,000 label shuffles of the pooled
-    prevalence segments.
+> `python prevalence_report.py` for the rates and bootstrap intervals; the SO31-vs-OQ permutation is 50,000 label shuffles of the pooled prevalence segments.
 
 **Problem.** No committed script or artifact computes the headline permutation p = 0.0025, and the footnote also credits prevalence_report.py with 'adjacent-rung Fisher exacts' it does not print. The test's sidedness is unstated: my independent 50,000-shuffle reimplementation of the described test gives one-sided p ≈ 0.0015 and two-sided ≈ 0.0029, so 0.0025 is consistent only within Monte Carlo noise of the two-sided reading. (The Fisher values 0.16 and 0.043 and the Cochran–Armitage z = 3.70 do verify by independent computation.)
 
@@ -1768,9 +1683,7 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 ### GS8. [genre+screen] 4.4 The Opus screen tracks Pangram
 
-> restricting the negatives to 2023-and-later contemporary speech only *lowers*
-the AUC, to **0.940** [0.915, 0.961]. Contemporary human speech is the harder
-class to separate — as the permeation finding predicts
+> restricting the negatives to 2023-and-later contemporary speech only *lowers* the AUC, to **0.940** [0.915, 0.961]. Contemporary human speech is the harder class to separate — as the permeation finding predicts
 
 **Problem.** A directional corroboration ('as the permeation finding predicts') is drawn from a 0.014 AUC difference between nested samples with heavily overlapping CIs and no paired test, in the same section that declares 'Effects below ~0.03 AUC are outside this design's resolution' for a 0.009 difference. The two comparisons differ in n, but no resolution argument is given for the 0.014, so the section applies opposite evidentiary standards to same-order effects.
 
@@ -1865,6 +1778,43 @@ class to separate — as the permeation finding predicts
 **Accurate version.** The stage-2 header cell 'AI vs Human verdict / Pangram verdict, binary' misdescribes an AI+Mixed-vs-Human contrast when the cell is quoted alone; however, the pooling and the drop-mixed sensitivity are disclosed in footnote 29 anchored at the table itself (a placement chosen per review item Q7), so only the header wording — not the disclosure — needs fixing (e.g. 'AI+Mixed vs Human verdict' or a footnote marker on the cell).
 
 **Suggested fix.** Head the column 'AI+Mixed vs Human verdict' (or footnote-mark the header cell itself), keeping the drop-mixed sensitivity note.
+
+
+---
+
+## Notes: method, blinding, and progress (moved to the end)
+
+**Reviewed state:** commit `66b508f`. **Blinding:** run with no access to any prior review; reviewers were barred from files named REVIEW/AUDIT/RESPONSES, and in-text parentheticals like "(review item B4)" were treated as unverified author claims and audited directly.
+
+**Method.** Thirteen blind reviewers, one dimension each: seven data dimensions reproducing numbers from the committed artifacts and reading estimator code (calibration+prevalence, genre+screen, series/trend/cross-chamber, cohort+class, occupational-prereg, post-training/coverage/permeation, quality+bypass), five narrative/argument dimensions on the compiled publication-order paper (claims-vs-evidence, internal-consistency, argument-logic, comparability, storyline), and one cross-cutting consistency reviewer. Every finding was handed to a refute-by-default adversary; only CONFIRMED and PARTIAL findings appear, PARTIAL with the corrected version stated. "Also flagged by" marks the same defect under another lens — adjudicate once, apply everywhere.
+
+**Counts.** 138 open (0 critical, 64 major, 74 minor; 115 CONFIRMED, 23 PARTIAL); 1 refuted; 0 unresolved.
+
+**Progress since the review ran (2026-08-24/25).** Both criticals closed by new analysis rather than rewording: (1) the floor's specificity-transfer assumption stated and bounded — a two-vote blind audit of all 316 flagged segments (277 prepared / 21 unclear / 11 both-vote spontaneous, 9 of them Mixed at fractions 0.11–0.58) puts the worst case at 9.03%→8.86% (§3.1, §4.1, Limits; flagged_hits_*). (2) The APC identification: per-legislature group-vs-individual gradients in one unit (apc_chamber_decomposition.py, new §4.6 figure) split the birth gradient into a standing juniority component (full-size among pre-drift cohorts — US Senate +105 [47,155], 1994–2004) and a cohort component (UK +30→+98, House +23→+85 as drift-formed cohorts enter); "organised generationally" retired paper-wide. Also applied: the mechanical batch (broken cross-refs, §8.6 renumbering, review-code and dagger conventions, external-table disambiguation, flip/success direction), the registration-timeline footnote, the Kobak contextualisation of the abstract, and the explanatory-power/iceberg passage at the joint model. Resolved items below; nothing deleted.
+
+
+---
+
+## RESOLVED since the review ran
+
+- **[critical] [occupational-prereg]** Results 4.6b (headline framing): "The design intent, registered in the document's hierarchy section and throughout the pre-r..." — *adjudicated (Matthew): lead rewritten as a timeline; minute-level registration footnote added (12:04 transcript prediction → 13:05 prereg commit → 13:17 unblinding → 13:36 amendment → 17:21 ruling); meta-point on pervasive logging added*
+- **[minor] [occupational-prereg]** Results 4.6b (cross-reference): "that operationalization failed its own test and the framing is retired — Appendix B8 prese..." — *fixed: duplicate of the B8→B10 pointer correction (mechanical batch)*
+- **[major] [quality+bypass]** 4.9 Bypass study (flip vs success paragraph): "Effort raised both bars, and by *more* on the flip bar (2.8×) than on the success bar (5.5..." — *fixed: same direction correction*
+- **[major] [internal-consistency]** §2.14 Bypass study (flip vs success bars): "Effort raised both bars, and by more on the flip bar (2.8×) than on the success bar (5.5×)..." — *fixed: duplicate of the flip/success direction correction (mechanical batch)*
+- **[critical] [argument-logic]** §2.8 (Birth cohort predicts the register) and Abstract: "if it were generational, later-born members would use more of it even in the same year and..." — *resolved by new analysis per Matthew's design (apc_chamber_decomposition.py, apc_gradients.png): group vs individual gradients per legislature in one unit. The gradient splits into a standing juniority component (full-size among pre-drift cohorts, US Senate +105 [47,155], 1994-2004, births 1917-64) and a cohort component (UK +30->+98, House +23->+85 as drift-formed cohorts enter; House chamber mean flat -> ambient-culture formation). §4.6 rewritten around the two components with the identity stated and the era-stable-profile assumption named; abstract/intro/Discussion/Limits harmonized; 'organised generationally' retired.*
+- **[major] [argument-logic]** §2.10 (Pre-registered occupational test) with Appendices A18–20, B10: "The registered four-level U is the result. The design intent, registered in the document's..." — *adjudicated (Matthew): same timeline footnote fix*
+- **[minor] [argument-logic]** §2.1 / §5.1 (calibration and the floor claim): "with Sp = 1 and any real detector's Se ≤ 1, the observed flag rate is a conservative floor..." — *addressed per Matthew's direction: floor claim conditioned in §3.1; new §4.1 contemporary-specificity block — two-vote blind audit of all 316 hits (277 prepared / 21 unclear / 11 both-vote spontaneous, 9 of them Mixed at 0.11–0.58), worst-case bound 9.03%→8.86% (8.65% full-word); temporal-transfer bullet added to Limits; artifacts committed (flagged_hits_pool/audit/bound)*
+- **[minor] [comparability]** §2.4 The Opus screen tracks Pangram: "consistent with §5.4's finding that reasoning never closes the ˜0.25 AUC frontier gap, but..." — *fixed: duplicate of the removed §5.4/~0.25-AUC cross-reference (mechanical batch)*
+- **[major] [storyline]** §2.4 The Opus screen tracks Pangram: "consistent with §5.4's finding that reasoning never closes the ˜0.25 AUC frontier gap, but..." — *fixed: false cross-ref and unanchored ~0.25 AUC removed; sentence now self-contained*
+- **[major] [storyline]** §3.8 Future work (item numbering) and §3.5 Limits: "All three are first customers for the build-the-instrument-in-any-language method in item ..." — *fixed: §8.6 renumbered sequentially 1–35; all item refs updated (items 8–10, 11, 8, 33)*
+- **[major] [storyline]** Throughout (first use §2.2): "the longest quartile of segments runs 9.4% against 5.8% for the shortest (review item X12)..." — *fixed: review-code convention defined at first use (footnote) and in the provenance note*
+- **[minor] [storyline]** §2.14 (stage 6 discussion): "wild flagged text shows the collapse (§Q1) while frontier raw text does not..." — *fixed: dangling (§Q1) replaced with a prose pointer to the applicability result*
+- **[minor] [storyline]** §2.2 (first use) and §2.6 footnote: "65,795 machine-written words of 728,998 across 3,519 segments in 20 chambers, excluding re..." — *fixed: regime-flag first use now points at §2.1's diagnostic*
+- **[minor] [storyline]** §2.5 (first use) / Supplementary provenance note: "human register had been moving toward what instruct-tuning later selected for, for thirty ..." — *fixed: dagger convention footnote attached at first use; full key remains in provenance*
+- **[minor] [storyline]** §3.6 Related work / §2.14 footnote 32: "on the Sem-Detect peer-review benchmark reprinted in the Pangram 4 report (Table 27), both..." — *fixed: external table references disambiguated (their/its Table N)*
+- **[major] [cross-cutting]** §2.14 (bypass, flip vs success rates): "Effort raised both bars, and by more on the flip bar (2.8×) than on the success bar (5.5×)..." — *fixed: direction corrected — more on the success bar (5.5×) than the flip bar (2.8×)*
+- **[major] [cross-cutting]** §2.4 (Opus screen, effort A/B): "consistent with §5.4's finding that reasoning never closes the ˜0.25 AUC frontier gap..." — *fixed: same as storyline item — cross-ref removed*
+- **[minor] [cross-cutting]** §2.10 (pre-registered occupational test): "that operationalization failed its own test and the framing is retired — Appendix B8 prese..." — *fixed: pointer corrected to Appendix B10*
 
 
 ---
