@@ -18,8 +18,8 @@ one cross-cutting consistency reviewer. Every finding was then handed to a
 separate refute-by-default adversary; only CONFIRMED and PARTIAL findings
 appear below, PARTIAL with the corrected version stated.
 
-**Counts.** 156 findings survived refutation of 157 raised:
-**2 critical, 72 major, 82 minor** (130 CONFIRMED, 26 PARTIAL);
+**Counts.** 143 findings survived refutation of 157 raised:
+**1 critical, 65 major, 77 minor** (120 CONFIRMED, 23 PARTIAL);
 1 refuted; none unresolved.
 
 Findings are ordered severity-first, CONFIRMED before PARTIAL, grouped by
@@ -44,27 +44,6 @@ another lens — adjudicate once, apply everywhere.
 **Refuter's verification.** Re-derived the algebra: rate = c·birth + p·spoken is identical to rate = −c·age + (p+c)·spoken, so an age-grading+period model reproduces every reported number — the coefficients, the within-member +0.51 drift, and the era-restricted gradient (in a 2025–26 window birth year IS minus age). No mention of age or age-grading anywhere in the paper; METHODOLOGY's 'Cohort, not age' argument is absent from the paper and invalid as identification (flat mean chamber age only rules out age-with-no-period). 'They separate cleanly' fails as identification of generational organisation.
 
 **Suggested fix.** Acknowledge the APC problem explicitly; restate the finding as 'a birth-year gradient at fixed period, consistent with either cohort or age-grading'; attempt separation (e.g., nonlinear within-member age trajectories compared across cohorts, or the §3.8 B7 pre-political-writing test, which is the clean discriminator) before claiming generational organisation in the abstract.
-
-
----
-
-## CRITICAL — PARTIAL
-
-### OP1. [occupational-prereg] Results 4.6b (headline framing)
-
-> The design intent, registered in the document's hierarchy section and throughout the pre-run record (amendment of 2026-08-18): free and the top low, the middle the peak.
-
-**Problem.** The four-level ladders and the middle+/free− sign declarations are not pre-registered: they were added by the amendment the prereg itself labels 'AFTER Stage 1 was unblinded' (commit 53a02ff, 2026-08-18 13:36), and the level-alone slope table the section headlines already existed before that amendment (prereg_stage1_results.txt committed 13:17; the amendment says 'Stage 1's four-level slope table showed the same shape' and then adds the constructions). The 'registered result' status rests on a post-run provenance ruling (commit ccba83d, 17:21). Calling the table 'The registered four-level U' presents a post-unblinding construction as a registered prediction.
-
-**Reviewer's check.** git log --follow on plans/PREREG-occupational-accountability.md; compared amendment commit timestamps against the results-file commit; read both 2026-08-18 amendments; reran prereg_stage1.py (snapshot reproduces).
-
-**Refuter's verification.** The reviewer's timeline is fully verified: the level-alone slope table was committed post-unblinding (aa22c10 13:29, after stage-1 results at 13:17), the middle+/free− ladder declarations came in the amendment self-labeled 'AFTER Stage 1 was unblinded' (53a02ff 13:36), and 'registered result' status rests on the post-run provenance ruling (ccba83d 17:21), which itself leans on an uncommitted conversation record. But the finding overstates when it reserves 'registered' for the apex delta alone: the U's other load-bearing contrast, free-lowest, was also registered pre-run (the ordinal prediction free < front-line < corporate and its refutation clauses), the coded four-level ladder itself was registered pre-run as the uncharged horse-race instrument (f10d502 13:05), and the section discloses the dating — it cites the amendment inline, retires the linear-rank primary in the same section, and Appendix B10 spells out the oversight and ruling. So the reader is not shown an undisclosed post-hoc prediction; the defect is the headline label, not hidden provenance. Severity is major, not critical.
-
-**Accurate version.** The four-level slope table and the ladders' middle+/free− sign declarations are post-unblinding constructions (commits of 13:29 and 13:36 on 2026-08-18), and calling the table itself 'the registered four-level U' rests on a post-run provenance ruling; it should be labeled as the amended analysis. However, the U's constituent directional claims — the apex delta (middle > top, β>0, registered in words pre-run) and free-lowest (the pre-run ordinal prediction) — were genuinely pre-registered, and the section and Appendix B10 disclose the amendment's dating and the retired primary.
-
-**Suggested fix.** Label the four-level table as the amended, post-unblinding analysis (Lattice B); reserve 'registered' for the apex delta (β>0, declared pre-run) and describe the U as design intent confirmed post hoc, per the amendment's own dating.
-
-*Also flagged by: AL10.*
 
 
 ---
@@ -171,7 +150,7 @@ another lens — adjudicate once, apply everywhere.
 
 **Suggested fix.** Replace 'free in deliberative-quality terms' with 'shows no detectable quality cost at the arms' power, which cannot exclude effects at the study's headline scale', and mirror that bound in §3.3.
 
-### AL12. [argument-logic] §3.3 (The substitution)
+### AL11. [argument-logic] §3.3 (The substitution)
 
 > machine-assisted text grades better-formed, not worse-engaged on the DQI — so policing authorship does not protect quality, because the authorship detection would flag is not where the quality deficit is.
 
@@ -183,7 +162,7 @@ another lens — adjudicate once, apply everywhere.
 
 **Suggested fix.** Qualify the substitution argument: detection is a poor proxy for quality on formation dimensions, but the measured machine-side deficits (engagement opportunity, checkable specifics) are exactly what a direct quality check must weight — which strengthens the 'check the work' proposal without the false 'no deficit where authorship is' premise.
 
-### AL13. [argument-logic] §3.2 (gut judgment anti-correlation)
+### AL12. [argument-logic] §3.2 (gut judgment anti-correlation)
 
 > Asked to judge AI-likeness by register, a frontier reader flagged 13 of 35 genuine human floor speeches and only 5 of 35 machine rewrites that had been optimised against a detector (§2.14 stage 5)
 
@@ -195,7 +174,7 @@ another lens — adjudicate once, apply everywhere.
 
 **Suggested fix.** Move the claim fully to hypothesis status ('one lineage-correlated judge suggests...'), and let the §3.8 1c design carry it; delete or condition the 'any institution ... will manufacture false accusations' sentence until an independent judge measures it.
 
-*Also flagged by: SL4.*
+*Also flagged by: SL2.*
 
 ### CP1. [calibration+prevalence] 4.2 (flagged-segment composition)
 
@@ -232,8 +211,6 @@ another lens — adjudicate once, apply everywhere.
 **Refuter's verification.** Quote verbatim. On the committed pooled prevalence sample the quartile contrast is 15.2%/1.0% (binary segment rates) or 11.3%/0.7% (word-weighted); the long band alone gives 14.8%/5.8% binary — so the quoted 5.8% matches only the long band, and 9.4% reproduces nowhere on current data. The understatement is 0.05 points (seg-wtd binary 8.98% vs word-wtd 9.03%, both printed by banded_prevalence.py) or 2.2 points against the fraction-weighted segment mean (6.83%); nothing gives 0.6. The argument's direction (longer segments more machine-drafted, so segment-weighting understates) does survive — the specific figures do not.
 
 **Suggested fix.** Recompute the quartile contrast and the understatement on the current pooled sample and state which sample (all bands) it is computed on; commit the computation.
-
-*Also flagged by: SL7.*
 
 ### CP4. [calibration+prevalence] 4.2 (per-chamber CI table) / Results intro
 
@@ -407,7 +384,7 @@ another lens — adjudicate once, apply everywhere.
 
 **Suggested fix.** State Table 34's stage-2 regressor and fixed effects explicitly, and if they differ from Table 19's (score vs binary verdict, era/genre vs chamber FE) say so at the table; otherwise recompute so the baselines agree.
 
-### XC4. [cross-cutting] §2.14 (bypass, per-target chamber comparison)
+### XC3. [cross-cutting] §2.14 (bypass, per-target chamber comparison)
 
 > The two chambers give 25.0% (n = 40) and 19.4% (n = 31) — consistent, but with intervals far too wide to establish that they agree: the 4.1-point gap carries a 95% interval of roughly [−17, +25] points
 
@@ -419,7 +396,7 @@ another lens — adjudicate once, apply everywhere.
 
 **Suggested fix.** Change to the 5.6-point gap (and reconfirm the bootstrap interval was computed on the current rates).
 
-### XC5. [cross-cutting] §3.8 item 4 (and §2.3)
+### XC4. [cross-cutting] §3.8 item 4 (and §2.3)
 
 > the House runs far more one-minute floor speeches, the SO31-type format §2.3 measures at ˜37% machine
 
@@ -430,20 +407,6 @@ another lens — adjudicate once, apply everywhere.
 **Refuter's verification.** Table 3's SO31 rate is 32.3% [21.0, 44.1], word- and fraction-weighted — the weighting §2.2 declares applies to 'every rate in this study'; ~37% matches only the segment-weighted 36.7% that §2.3 itself deprecates as partly 'a measurement of our packer' (binary counting gives 35.8%, also not the canonical figure). The companion slip also verifies: §2.3's 'This makes the 8.3% a mislabelled row rather than a wrong one' calls 8.3% a row when Table 3's Oral Questions row reads 9.8%; 8.3% is the segment-weighted figure appearing only in the prose list 36.7/23.3/8.3, in no table. [verdict carried from the first refutation pass; this dimension's second-pass refuter hit the session limit]
 
 **Suggested fix.** Quote 32.3% (or '˜32%') in §3.8, and in §2.3 refer to 'the Oral Questions estimate' or the 9.8% row rather than the untabled segment-weighted 8.3%.
-
-### XC6. [cross-cutting] §2.4 (Opus screen, effort A/B)
-
-> consistent with §5.4's finding that reasoning never closes the ˜0.25 AUC frontier gap
-
-**Problem.** §5.4 ('Instruments retired, and why') contains no finding about reasoning effort or an AUC frontier gap; no ~0.25 AUC gap is stated anywhere in the paper. The cross-reference points to a section that does not support the claim.
-
-**Reviewer's check.** Read §5.4 and Table 29 in full and searched the whole render for '0.25' and 'frontier gap'.
-
-**Refuter's verification.** §5.4 ('Instruments retired, and why', Table 29) covers zero-shot detectors, likelihood deltas, and the content-word/Mistral instruments — nothing about reasoning effort or an AUC gap; searched the whole render and '0.25'/'frontier gap' appear nowhere else. The claim has a real basis in project artifacts outside the paper (PROGRESS-REPORT-20260801.md: gpt-oss-120b AUC 0.66–0.67 regardless of effort, Qwen3-32B 0.55–0.72, vs frontier ~0.95), but that comparison was never put into the paper, so the cross-reference points at a section that does not support it. [verdict carried from the first refutation pass; this dimension's second-pass refuter hit the session limit]
-
-**Suggested fix.** Point to wherever the open-model AUC comparison actually lives (or add the ~0.25 figure to §5.4's retired-detector discussion), or drop the cross-reference.
-
-*Also flagged by: CB14, SL1.*
 
 ### GS1. [genre+screen] 4.3 Drafting concentrates in scripted business
 
@@ -511,8 +474,6 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Swap the comparison: 'by more on the success bar (5.5×) than on the flip bar (2.8×)' — and check whether any downstream reasoning leaned on the inverted version.
 
-*Also flagged by: QB3, XC3.*
-
 ### IC4. [internal-consistency] §2.14 Stage 6 vs Table 33 (Materials)
 
 > blind, length-matched within prompt, frozen v2b rubric, two passes, judge pinned to the stage-1/2 model.
@@ -573,7 +534,7 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Reword the bullet: verdict-level counts (e.g. §2.3 flag counts, stage-2 regressor) pool Mixed with AI, but all word-share rates weight Mixed by its measured AI fraction.
 
-### OP2. [occupational-prereg] Results 4.6b / prereg refutation conditions
+### OP1. [occupational-prereg] Results 4.6b / prereg refutation conditions
 
 > One drafting generation of the registration expressed the peak claim as a linear three-profile rank; that operationalization failed its own test and the framing is retired
 
@@ -585,7 +546,7 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Report, per the registration's own clause, that beta(front-line) ≥ beta(corporate) refutes the corporate revision and the front-line version stands on the linear-profile test — alongside the retirement rationale.
 
-### OP3. [occupational-prereg] Results 4.6b / registered taxonomy rung arm
+### OP2. [occupational-prereg] Results 4.6b / registered taxonomy rung arm
 
 > Failed registered predictions are in Appendix A (the altitude quadratic, the autonomy asymmetry, nominal-vs-effective autonomy).
 
@@ -597,7 +558,7 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Report the rung × ownership table, state that middle-highest holds against executives but not against first-line (noisy cell, se 0.129), and that owner-op executives run against the owner-operators-sit-low prediction; add to the failed/mixed registered predictions list.
 
-### OP5. [occupational-prereg] Results 4.6b footnote [rnc] / Indoors conditioning
+### OP4. [occupational-prereg] Results 4.6b footnote [rnc] / Indoors conditioning
 
 > Entered jointly with Indoors, the apex delta reads +0.033 (t +2.2) and free −0.062 (t −4.4).
 
@@ -682,21 +643,7 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Recompute the two sentinel rows with the declared exclusion rule and report their reduced n (3 and 8 applicable pairs), or disclose that the stage-5 table folds -1 in and why; the null conclusion survives either way.
 
-### QB3. [quality+bypass] 4.9 Bypass study (flip vs success paragraph)
-
-> Effort raised both bars, and by *more* on the flip bar (2.8×) than on the success bar (5.5×).
-
-**Problem.** The sentence asserts the flip bar rose more while quoting ratios that say the opposite: 2.8x (flip, 10%→28%) is smaller than 5.5x (success, 2.5%→13.7%). In multiplicative terms effort raised the success bar more; only in absolute percentage points (+18 vs +11.2) did the flip bar rise more, and those are not the numbers cited.
-
-**Reviewer's check.** Recomputed both rates from bypass_report.py per-run counts: NB v2 4/40=10.0% flip, 1/40=2.5% Human; NB v3 59/212=27.8% flip, 29/212=13.7% Human; ratios 2.78 and 5.47 confirm the parentheticals and contradict the comparative 'more'.
-
-**Refuter's verification.** Quote verbatim. Rates reproduce from bypass_report.py per-run counts: NB v2 blind 4/40=10.0% flip, 1/40=2.5% Human; NB v3 contrastive 59/212=27.8% flip, 29/212=13.7% Human; ratios 2.78 and 5.47. The sentence's comparative 'more' is contradicted by its own parentheticals (2.8 < 5.5): multiplicatively the success bar rose more. Only in absolute points (+17.8 vs +11.2) did the flip bar rise more, and points are not the numbers cited. No nearby text rescues the sentence; it is self-contradictory as written.
-
-**Suggested fix.** Either swap the comparison ('by more on the success bar, 5.5x vs 2.8x') or restate in percentage points (+18 vs +11 points) so the claim matches its own numbers.
-
-*Also flagged by: IC2, XC3.*
-
-### QB4. [quality+bypass] 4.9 Stage 6 / Appendix C.4 (model attribution)
+### QB3. [quality+bypass] 4.9 Stage 6 / Appendix C.4 (model attribution)
 
 > | DQI grading, stages 1-5 (§4.9) | **Claude Fable 5** | default |
 | DQI grading, stage 6 (§4.9) | **Claude Opus** | medium |
@@ -771,21 +718,7 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Report the stratum results in the footnote: survives spelling-removal, ≥20 and ≥200 attestation (perm p < 0.005) but drops to +0.027, p = 0.11 when the most-skewed word deciles are trimmed — consistent with the two-ways reading already conceded in §8.
 
-### SL1. [storyline] §2.4 The Opus screen tracks Pangram
-
-> consistent with §5.4's finding that reasoning never closes the ˜0.25 AUC frontier gap, but sharper: the frontier model is not reasoning its way to 0.95
-
-**Problem.** §5.4 (Instruments retired, and why) contains no such finding — it is a five-row table of retired instruments with no mention of reasoning effort, AUC, or a frontier gap. The open-model effort results this paragraph leans on (Qwen3-32B +0.172, gpt-oss-120b +0.015, 'measured on the same pool') are likewise presented nowhere in the paper. The comparison that motivates the section's conclusion rests on results the paper never shows.
-
-**Reviewer's check.** Read §5.4 in the compiled text (Table 29 and surrounding prose) and grepped the full render and the source markdown for '0.25', 'frontier gap', 'Qwen3-32B', 'gpt-oss': the only occurrences are in §2.4 itself. Source §3.4 (compiled §5.4) confirmed to contain only the retired-instruments table.
-
-**Refuter's verification.** Printed §5.4 is solely the retired-instruments table — no reasoning/AUC/frontier content; the ~0.25 gap and effort numbers occur only inside §2.4 itself; no other section presents the open-model effort A/B. The citation points at a section that does not contain it.
-
-**Suggested fix.** Either add the open-model effort A/B results (the +0.172/+0.015 measurements and the ~0.25 frontier-gap comparison) to §5.4 or an appendix, or repoint the citation to wherever they actually live (opus_effort_ab.csv) and present the numbers in §2.4 as this paper's own measurement rather than as an already-established finding.
-
-*Also flagged by: CB14, XC6.*
-
-### SL2. [storyline] §3.8 Future work (closing paragraph)
+### SL1. [storyline] §3.8 Future work (closing paragraph)
 
 > Collecting covariates for this study produced something with uses well outside it ... Two families of question follow, and they differ in how novel they are likely to be.
 
@@ -797,19 +730,7 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Move the paragraph to just before the F2 header ('What the legislator panel enables beyond the register') so it introduces items 23–24 as intended.
 
-### SL3. [storyline] §3.8 Future work (item numbering) and §3.5 Limits
-
-> All three are first customers for the build-the-instrument-in-any-language method in item 2.
-
-**Problem.** The item numbering of §3.8 is broken and self-colliding: block A holds items 1, 1a–1e (no 2 or 3); block B holds 4–7; block C holds 4a, 4b, then 5–8, duplicating numbers 5–7 already used in B; block F jumps from 17 to 20. Consequently 'item 2' (cited from C item 8) does not exist — the method meant is B's item 5 — and §3.5's 'the informative next evidence is a different kind ... (§3.8 items 2–4)' points at items that also do not exist (the three exposure alternatives are B's items 5–7). B's own intro 'Three versions of one move' is followed by four items, the first of which (between-chamber spread) is not a version of that move.
-
-**Reviewer's check.** Enumerated every numbered item in the compiled §3.8 (1, 1a–1e, 4–7, 4a, 4b, 5–8, 9–17, 20–29) and resolved each internal reference ('item 2', '§3.8 items 2–4', '§3.8 B4', '§3.8 A.1b', '§3.8 item 1', 'item 4a') against it; B4, A.1b, item 1 and item 4a resolve, the others do not. Source markdown carries the same 'item 2' defect.
-
-**Refuter's verification.** Enumerated every §3.8 item in printed order: no 'item 2' exists; the language-instrument method lives in B's item 5; §3.5's '(§3.8 items 2–4)' likewise points at nonexistent items. The numbering scheme is internally broken (A holds 1,1a–1e; C reuses B's 5–7; 18–19 skipped).
-
-**Suggested fix.** Renumber §3.8 with unique, contiguous identifiers (e.g., B1–B4, C1–C6), fix the 'item 2' and '§3.5 items 2–4' references to the renumbered targets, and align B's intro sentence with its actual item count.
-
-### SL4. [storyline] §3.2 Where the norms argument actually lands
+### SL2. [storyline] §3.2 Where the norms argument actually lands
 
 > a frontier reader flagged 13 of 35 genuine human floor speeches and only 5 of 35 machine rewrites that had been optimised against a detector (§2.14 stage 5)
 
@@ -821,9 +742,9 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Present the 13/35 and 5/35 counts (with the threshold used to call a text 'flagged') in §2.14's stage-5 subsection or an appendix, and make §3.2's pointer accurate.
 
-*Also flagged by: AL13.*
+*Also flagged by: AL12.*
 
-### SL5. [storyline] §2.14 Quality (applicability paragraph) and Appendix C.2
+### SL3. [storyline] §2.14 Quality (applicability paragraph) and Appendix C.2
 
 > Stage 6c locates its source: the collapse appears in raw text from weaker models and vanishes at the frontier
 
@@ -835,7 +756,7 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Rename the reference to 'stage 6' (or define the 6a/6b/6c round structure where stage 6 is introduced), and define or rename 'Stage 0' in C.2.
 
-### SL6. [storyline] §2.12 Coverage
+### SL4. [storyline] §2.12 Coverage
 
 > so it is not exposed to the estimator defect that cost §2.11 its original +0.88
 
@@ -847,44 +768,14 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Replace '+0.88' with the figure §2.11 actually retired (or state it in §2.11's superseded record so the back-reference resolves).
 
-*Also flagged by: XC11.*
-
-### SL7. [storyline] Throughout (first use §2.2)
-
-> the longest quartile of segments runs 9.4% against 5.8% for the shortest (review item X12)
-
-**Problem.** The paper cites 'review item' codes roughly 25 times (X2–X12, Q1–Q10, B1–B8, plus M3/M9/M11 and 'the 2026-08-11 review') without ever introducing what review this is, who conducted it, or where the item list lives. The only hints are a table row ('Analysis, verification, adversarial review — Claude Opus') and Appendix D.1's 'flagged in review (M11)'. A first-time reader cannot resolve any of these codes, and several load-bearing corrections are justified solely by them.
-
-**Reviewer's check.** Grepped all 'review item' occurrences and searched the compiled text for any paragraph defining the review process or the code scheme (X/Q/B/M): none exists.
-
-**Refuter's verification.** Enumerated ~29 review-code citations (X/Q/B/M plus 'the 2026-08-11 review'); no passage defines the review, its conductor, or the code scheme; the only hints are Table 33's 'adversarial review' row and one 'flagged in review (M11)'. A first-time reader cannot resolve any code.
-
-**Suggested fix.** Add one or two sentences (e.g., in the reproducibility note or Methods) defining the adversarial review, its date(s), the code scheme, and where the item register is archived — or strip the codes from reader-facing text and keep them in the repo.
-
-*Also flagged by: CP3.*
+*Also flagged by: XC8.*
 
 
 ---
 
 ## MAJOR — PARTIAL
 
-### AL10. [argument-logic] §2.10 (Pre-registered occupational test) with Appendices A18–20, B10
-
-> The registered four-level U is the result. The design intent, registered in the document's hierarchy section and throughout the pre-run record (amendment of 2026-08-18): free and the top low, the middle the peak.
-
-**Problem.** Confirmatory status is claimed for an operationalization selected after the results. The registration's continuous form of the interior peak (the altitude quadratic) is null (A18); two further registered predictions failed (A19, A20); and one drafting generation of the registration made a linear three-profile rank the primary, which failed its own registered clause and was retired by a post-run amendment ruling the four-level U 'was always the design intent' (B10). Choosing among several registered operationalizations after seeing which succeeded forfeits the multiplicity protection preregistration exists to provide; the delta's '16 of 16 covariate specifications' addresses covariate robustness, not this cross-operationalization selection. The abstract's 'pre-registered occupational model' inherits the overclaim.
-
-**Reviewer's check.** Cross-read §2.10 against Appendix A items 18–20 and Appendix B item 10 (the post-run amendment and the retired primary), all within the compiled text; treated the provenance ruling as an author claim per the blind-review protocol.
-
-**Refuter's verification.** Cross-read §2.10 against A18–20 and B10, then checked the prereg's git history directly: the four-level coded ladder, the apex delta, and the middle-peak intent verifiably predate the run (f10d502, 13:05), so 'an operationalization selected after the results' is too strong; what is post-run is the primacy ruling (ccba83d, 17:21) and the level-sign declarations (53a02ff, 13:36, self-labelled after unblinding). A weaker version — registered-in-part, post-hoc primacy, missing multiplicity qualifier — survives.
-
-**Accurate version.** The middle-peak claim had one genuinely pre-run registered, direction-stated form that succeeded: the apex delta Δ=MIDDLE−TOP with β(Δ)>0, worded pre-run as 'insulated command tracks more register than exposed command' (prereg commit f10d502, 13:05, before Stage 1 unblinding; the 13:36 amendment and the 17:21 primacy ruling are post-run). The registered primary (linear three-profile rank) failed its registered clause; the altitude quadratic (A18) is null; the middle+/free− level signs entered post-unblinding. §2.10's lead sentence and the abstract's 'pre-registered occupational model' overstate confirmatory status for the U as a whole — its primacy was adjudicated post-run among several registered operationalizations, two of which failed, with no cross-operationalization multiplicity qualifier — though every failure is disclosed and the delta itself is a real pre-registered confirmation.
-
-**Suggested fix.** Report the occupational result as registered-in-part: state that the continuous registered form failed, that the discrete-levels framing was adjudicated primary post-run, and present the apex delta with a multiplicity qualifier across the registered operationalizations rather than as the registered confirmation.
-
-*Also flagged by: OP1.*
-
-### AL11. [argument-logic] §3.1 (Any fixed check loses to an optimising attacker)
+### AL10. [argument-logic] §3.1 (Any fixed check loses to an optimising attacker)
 
 > Point a general-purpose model at its own output, tell it to try again, and it will defeat any check you can put in front of it. This is not a claim about Pangram. It follows from the check being a fixed function and the attacker being an optimiser
 
@@ -942,22 +833,6 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Either demote the level-convergence framing to a caveated observation (title on trends, levels flagged as instrument-relative), or add an instrument-independent check (e.g., a UK-derived or domain-neutral word list) showing the US-high ordering survives a non-American yardstick.
 
-### XC3. [cross-cutting] §2.14 (bypass, flip vs success rates)
-
-> Effort raised both bars, and by more on the flip bar (2.8×) than on the success bar (5.5×).
-
-**Problem.** The comparison is stated backwards: 10%→28% is 2.8× on the flip bar and 2.5%→13.7% is 5.5× on the success bar, so effort raised the success bar by more, not the flip bar.
-
-**Reviewer's check.** Computed both ratios from the quoted counts (4/40→59/212 and 1/40→29/212).
-
-**Refuter's verification.** The counts verify: flip 4/40=10%→59/212=27.8% is 2.8×; success 1/40=2.5%→29/212=13.7% is 5.5×. On the multiplicative scale the sentence quotes, effort raised the success bar more, so 'by more on the flip bar (2.8×) than on the success bar (5.5×)' is self-contradictory as written. The one reading that rescues 'by more' is absolute points (flip +18.0pp vs success +11.2pp), but the sentence cites the ratios as its evidence, which contradict it. [verdict carried from the first refutation pass; this dimension's second-pass refuter hit the session limit]
-
-**Accurate version.** The sentence is internally inconsistent rather than simply reversed: in the ratio metric it quotes (2.8× vs 5.5×), effort raised the success bar by more; in absolute points (+18.0pp vs +11.2pp) the flip bar rose more. Either reverse the clause to match the quoted ratios, or restate the comparison in points if the flip bar is the intended winner.
-
-**Suggested fix.** Reverse the clause: effort raised the success bar (5.5×) by more than the flip bar (2.8×) — which also changes the sentence's implication about which bar is more effort-sensitive.
-
-*Also flagged by: IC2, QB3.*
-
 ### IC3. [internal-consistency] §2.11 Table 16 and footnote 26
 
 > Note the three uncorrected stages sum to +1.99 against that +1.24; the gap is the per-transition control pedestal described below, and closes to about 0.03 under the bias-free estimator
@@ -972,7 +847,7 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Print the corrected end-to-end value alongside the corrected stages, state which pair the ~0.03 gap refers to, and fix the Table 16 caption's correction label.
 
-### OP4. [occupational-prereg] Results 4.6b / prereg prediction 3
+### OP3. [occupational-prereg] Results 4.6b / prereg prediction 3
 
 > the register peaks at the insulated middle
 
@@ -986,7 +861,7 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Disclose that U entered alone is the weakest and null single component, note the joint-fit reading if the authors take prediction 3 to mean the joint model, and add the item to the failed-predictions list.
 
-### OP6. [occupational-prereg] Results 4.6b / registered negative-control rule
+### OP5. [occupational-prereg] Results 4.6b / registered negative-control rule
 
 > planted in the element pool as a deliberately atheoretical marker of office work — carries more register per standard deviation than any single instrument component (+0.101, t +7.4)
 
@@ -1005,7 +880,7 @@ segments as wholly machine had been flattering the middle rung.
 
 ## MINOR — CONFIRMED
 
-### AL14. [argument-logic] §2.1 / §5.1 (calibration and the floor claim)
+### AL13. [argument-logic] §2.1 / §5.1 (calibration and the floor claim)
 
 > with Sp = 1 and any real detector's Se ≤ 1, the observed flag rate is a conservative floor on true prevalence, so every §2.2 figure is if anything an underestimate of machine text.
 
@@ -1017,7 +892,7 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** State the floor claim as holding at the measured point estimate, note it can fail by ~0.2pp at the specificity interval's boundary, and propagate the specificity interval into the pooled CI.
 
-### AL15. [argument-logic] §2.9.5 (Flight)
+### AL14. [argument-logic] §2.9.5 (Flight)
 
 > That is chase-and-flight: a marker loses value as it is copied, so the group that holds it abandons the most conspicuous forms first.
 
@@ -1089,7 +964,7 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Replace with the current pair: bootstrap mean 9.02% vs plug-in 9.03%.
 
-*Also flagged by: CB8, SL12, XC15.*
+*Also flagged by: CB8, SL6, XC12.*
 
 ### CP10. [calibration+prevalence] 4.2 (word-weight concentration)
 
@@ -1271,7 +1146,7 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Report 17/40 = 42.5% for consistency with the per-target denominator rule.
 
-*Also flagged by: IC12, QB6, XC9.*
+*Also flagged by: IC12, QB5, XC6.*
 
 ### CB14. [comparability] §2.4 The Opus screen tracks Pangram
 
@@ -1285,23 +1160,7 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Point the cross-reference at the actual source of the 0.25 AUC gap (presumably the open-model band-screen work) and state the pool it was measured on, or drop the clause.
 
-*Also flagged by: SL1, XC6.*
-
-### XC7. [cross-cutting] §2.10 (pre-registered occupational test)
-
-> that operationalization failed its own test and the framing is retired — Appendix B8 preserves its numbers
-
-**Problem.** Appendix B item 8 is 'Two arrival-premium measures of cohort'; the retired three-profile linear rank's numbers are preserved at Appendix B item 10 ('Retired framings behind §2.10'). The pointer names the wrong item.
-
-**Reviewer's check.** Read every numbered item of Appendix B and matched contents to the pointer.
-
-**Refuter's verification.** Enumerated Appendix B's items in the render: item 8 is 'Two arrival-premium measures of cohort'; the retired §2.10 framings and their numbers are item 10 ('Retired framings behind §2.10, with their numbers. Three instrument generations: ...'). The pointer names the wrong item. (Item 13's 'review items B8' is a review-item id in a different namespace, not a defeater.) [verdict carried from the first refutation pass; this dimension's second-pass refuter hit the session limit]
-
-**Suggested fix.** Change 'Appendix B8' to 'Appendix B10' (or renumber B's items and re-check all pointers into it).
-
-*Also flagged by: OP8.*
-
-### XC8. [cross-cutting] §2.9.2 Table 13 (provincial class estimates)
+### XC5. [cross-cutting] §2.9.2 Table 13 (provincial class estimates)
 
 > gives 897 members and 5,294 member-years, 57.5% of the words
 
@@ -1315,7 +1174,7 @@ segments as wholly machine had been flattering the middle rung.
 
 *Also flagged by: IC13.*
 
-### XC9. [cross-cutting] §2.14 (bypass, flip-bar target rate)
+### XC6. [cross-cutting] §2.14 (bypass, flip-bar target rate)
 
 > if merely ”soften off AI” is the goal, 17 of 38 New Brunswick targets (45%) cleared it
 
@@ -1327,9 +1186,9 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Restate as 17 of 40 (42.5%), or explicitly say the flip count is conditional on yield if that is intended.
 
-*Also flagged by: CB9, IC12, QB6.*
+*Also flagged by: CB9, IC12, QB5.*
 
-### XC11. [cross-cutting] §2.12 (coverage)
+### XC8. [cross-cutting] §2.12 (coverage)
 
 > it is not exposed to the estimator defect that cost §2.11 its original +0.88
 
@@ -1341,9 +1200,9 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Name the figure that was actually retracted (+0.86? +0.42?) or cite the appendix entry that records it.
 
-*Also flagged by: SL6.*
+*Also flagged by: SL4.*
 
-### XC12. [cross-cutting] §2.4 footnote 8
+### XC9. [cross-cutting] §2.4 footnote 8
 
 > The deployed screen is opus screen full.js (473 batches of 40)
 
@@ -1355,7 +1214,7 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Correct the batch size (or count) so the product matches 37,801.
 
-### XC13. [cross-cutting] §2.14 stage 5 vs Table 25
+### XC10. [cross-cutting] §2.14 stage 5 vs Table 25
 
 > every rewrite that reached a Human verdict (39 variants across 15 targets, one target's original text unavailable and dropped) was graded blind
 
@@ -1367,9 +1226,9 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** State the accounting: e.g. '39 reversals; the 4 belonging to the dropped target leave 35 graded variants across 15 targets.'
 
-*Also flagged by: CB11, IC11, QB7.*
+*Also flagged by: CB11, IC11, QB6.*
 
-### XC14. [cross-cutting] §2.9.8 vs §2.9.5 (chase-and-flight thresholds)
+### XC11. [cross-cutting] §2.9.8 vs §2.9.5 (chase-and-flight thresholds)
 
 > What argues against an artifact is that the sign is negative at all six thresholds, including the widest and least significant.
 
@@ -1381,7 +1240,7 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Either list all six thresholds with their correlations in §2.9.5, or say 'all four reported thresholds.'
 
-### XC15. [cross-cutting] §2.2 (word-weighting / ratio estimator)
+### XC12. [cross-cutting] §2.2 (word-weighting / ratio estimator)
 
 > its finite-sample bias is nil in practice (bootstrap mean 10.30% against a plug-in 10.31%, a −0.005-point gap)
 
@@ -1393,7 +1252,7 @@ segments as wholly machine had been flattering the middle rung.
 
 **Suggested fix.** Re-run (or re-quote) the bootstrap-vs-plug-in check on the split-corrected 9.03% estimator, or label which estimand the 10.3% check belongs to.
 
-*Also flagged by: CB8, CP9, SL12.*
+*Also flagged by: CB8, CP9, SL6.*
 
 ### GS5. [genre+screen] 4.3 (genre table)
 
@@ -1487,7 +1346,7 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 **Suggested fix.** State '39 variants across 16 targets (38 from the final runs plus the superseded runs' one); one target's original was unavailable, leaving 35 variants over 15 targets'.
 
-*Also flagged by: CB11, QB7, XC13.*
+*Also flagged by: CB11, QB6, XC10.*
 
 ### IC12. [internal-consistency] §2.14 Bypass (flip-bar aside) vs Appendix C.3
 
@@ -1501,7 +1360,7 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 **Suggested fix.** Report 17 of 40 (42.5%), or justify why the flip-goal rate alone may condition on the submission gate.
 
-*Also flagged by: CB9, QB6, XC9.*
+*Also flagged by: CB9, QB5, XC6.*
 
 ### IC13. [internal-consistency] §2.9.2 Table 13
 
@@ -1515,7 +1374,7 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 **Suggested fix.** Reconcile the counts — state the 897 basis (e.g. members entering the regression) and why the per-class column sums higher, or correct whichever figure is wrong.
 
-*Also flagged by: XC8.*
+*Also flagged by: XC5.*
 
 ### IC14. [internal-consistency] §2.9.7 Word mix
 
@@ -1529,7 +1388,7 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 **Suggested fix.** Scope the first claim to the five-family base/instruct comparison ('the only sets among the five-family comparison...') or drop 'only'.
 
-### OP8. [occupational-prereg] Results 4.6b (cross-reference)
+### OP7. [occupational-prereg] Results 4.6b (cross-reference)
 
 > that operationalization failed its own test and the framing is retired — Appendix B8 preserves its numbers
 
@@ -1541,9 +1400,7 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 **Suggested fix.** Change 'Appendix B8' to the current item number (B10) or an anchor-stable name.
 
-*Also flagged by: XC7.*
-
-### OP9. [occupational-prereg] Results 4.6b (reproducibility claim)
+### OP8. [occupational-prereg] Results 4.6b (reproducibility claim)
 
 > right-signed and nominally significant in 16 of 16 covariate specifications
 
@@ -1555,7 +1412,7 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 **Suggested fix.** Add the apex-delta lattice to prereg_stage2.py (or prereg_covariate_strength.py) so the 16/16 claim has a committed source.
 
-### OP12. [occupational-prereg] Results 4.6b (four-level table)
+### OP11. [occupational-prereg] Results 4.6b (four-level table)
 
 > the study's registered structure — **four levels, built two semi-independent ways**: the *directional ladder*
 
@@ -1615,9 +1472,9 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 **Suggested fix.** Rename to 'Alignment effect +0.387 (well-measured)' or 'pooled across three families, restricted to well-measured words'.
 
-*Also flagged by: XC10.*
+*Also flagged by: XC7.*
 
-### QB5. [quality+bypass] 4.9 Bypass study (cross-chamber consistency paragraph)
+### QB4. [quality+bypass] 4.9 Bypass study (cross-chamber consistency paragraph)
 
 > The two chambers give 25.0% (n = 40) and 19.4% (n = 31) ... the 4.1-point gap carries a 95% interval of roughly [−17, +25] points
 
@@ -1629,7 +1486,7 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 **Suggested fix.** Quote the 5.6-point gap with an interval computed on the searched-target denominators (roughly [−14, +25]), or say explicitly which pair of rates the 4.1 refers to.
 
-### QB6. [quality+bypass] 4.9 Bypass study (flip vs success paragraph)
+### QB5. [quality+bypass] 4.9 Bypass study (flip vs success paragraph)
 
 > And at the target level, if merely "soften off AI" is the goal, 17 of 38 New Brunswick targets (**45%**) cleared it.
 
@@ -1641,9 +1498,9 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 **Suggested fix.** Report 17/40 = 42.5% (targets searched), or flag the conditional denominator explicitly.
 
-*Also flagged by: CB9, IC12, XC9.*
+*Also flagged by: CB9, IC12, XC6.*
 
-### QB7. [quality+bypass] 4.9 Stage 5 (successful evasions)
+### QB6. [quality+bypass] 4.9 Stage 5 (successful evasions)
 
 > every rewrite that reached a Human verdict (39 variants across 15 targets, one target's original text unavailable and dropped) was graded blind against its original
 
@@ -1655,9 +1512,9 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 **Suggested fix.** Rewrite as '39 variants across 16 targets; one target (4 variants) dropped for a missing original, leaving 35 pairs across 15 targets'.
 
-*Also flagged by: CB11, IC11, XC13.*
+*Also flagged by: CB11, IC11, XC10.*
 
-### QB8. [quality+bypass] 4.9 Stage 6 (respect_groups paragraph)
+### QB7. [quality+bypass] 4.9 Stage 6 (respect_groups paragraph)
 
 > frontier arms tie the human 1.31 (fable +0.12, opus −0.12, n.s.) while every open-weight arm sits below
 
@@ -1743,31 +1600,7 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 *Also flagged by: AL6, CB4.*
 
-### SL8. [storyline] §2.14 (stage 6 discussion)
-
-> wild flagged text shows the collapse (§Q1) while frontier raw text does not
-
-**Problem.** '§Q1' is not a section of this paper — the intended target is the earlier applicability paragraph tagged '(review item Q1)'. As printed it is a dangling cross-reference in the middle of the section's key unresolved tension.
-
-**Reviewer's check.** Grepped for 'Q1': the only candidates are '(review item Q1)' in §2.14's applicability paragraph and this '(§Q1)'. No section numbered Q1 exists.
-
-**Refuter's verification.** No section numbered Q1 exists; the intended target is the applicability paragraph tagged '(review item Q1)'. As printed, a dangling cross-reference at the section's key unresolved tension.
-
-**Suggested fix.** Replace '(§Q1)' with a real pointer, e.g. 'the applicability collapse above' or '(review item Q1, above)'.
-
-### SL9. [storyline] §2.2 (first use) and §2.6 footnote
-
-> 65,795 machine-written words of 728,998 across 3,519 segments in 20 chambers, excluding regime-flagged TAS
-
-**Problem.** 'Regime-flagged' is used at first occurrence with no definition and no pointer; the transcription-regime diagnostic that explains it is presented only in §4.1, at the very end of the paper. Table 6's note compounds it by pointing backwards — 'Tasmania carries §2.2's regime flag' — to a section that never explains the flag, so the reader is sent in a circle.
-
-**Reviewer's check.** Traced every occurrence of 'regime' in the compiled text: the concept is defined only in §4.1 (transcript_regime_check, contraction density step); §2.2, Table 6's note, and §3.5's Limits bullet all use it earlier with no forward pointer at first use.
-
-**Refuter's verification.** The transcription-regime diagnostic is defined only in §4.1 near the paper's end; §2.2's opening uses 'regime-flagged' with no definition or forward pointer, and Table 6's note points back to §2.2 — a circle. The Limits bullet also uses the concept without naming §4.1.
-
-**Suggested fix.** At first use in §2.2, add a pointer: 'excluding TAS, whose transcription regime changed mid-corpus (§4.1)', and repoint Table 6's note to §4.1.
-
-### SL10. [storyline] §2.4 The Opus screen tracks Pangram
+### SL5. [storyline] §2.4 The Opus screen tracks Pangram
 
 > Contemporary human speech is the harder class to separate — as the permeation finding predicts — so the era mix is not flattering the screen.
 
@@ -1779,19 +1612,7 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 **Suggested fix.** Add the pointer: 'as the permeation finding (§2.13) predicts' — the paper's own no-forward-reference conventions aside, an unlabelled forward dependency is worse than a labelled one.
 
-### SL11. [storyline] §2.5 (first use) / Supplementary provenance note
-
-> human register had been moving toward what instruct-tuning later selected for, for thirty years. †
-
-**Problem.** The dagger symbol is used from §2.5 onward (also §2.8's four bullets, §2.9.1, §2.13, Appendix B, D.3) but its meaning — 'Numbers marked † are carried from earlier in the study. All nine were re-derived...' — is given only in the Supplementary 'Provenance and reproducibility' note after the main text ends. For the whole main text the reader has no key for a recurring annotation; this first instance also dangles on a sentence with no number in it.
-
-**Reviewer's check.** Grepped all '†' occurrences: first at §2.5 (line 425 of the render), definition at line 2655 in the supplementary section.
-
-**Refuter's verification.** Nine † marks; the key ('Numbers marked † are carried from earlier in the study') appears only in the Supplementary provenance note after the main text; §2.5's instance is a bare † with no attached footnote, failing the key's own promise.
-
-**Suggested fix.** Define the dagger at first use (a footnote in §2.5) or in a notation note at the head of §2; remove it from the §2.5 sentence if no carried number is actually involved there.
-
-### SL12. [storyline] §2.2
+### SL6. [storyline] §2.2
 
 > its finite-sample bias is nil in practice (bootstrap mean 10.30% against a plug-in 10.31%, a −0.005-point gap)
 
@@ -1803,21 +1624,9 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 **Suggested fix.** State what the 10.3% quantity is (e.g., the pre-exclusion or binary-verdict pooled rate the check was run on) or rerun the check on the headline estimator; fix the gap arithmetic.
 
-*Also flagged by: CB8, CP9, XC15.*
+*Also flagged by: CB8, CP9, XC12.*
 
-### SL13. [storyline] §3.6 Related work / §2.14 footnote 32
-
-> on the Sem-Detect peer-review benchmark reprinted in the Pangram 4 report (Table 27), both fall to roughly 6% true-positive rate
-
-**Problem.** '(Table 27)' here means Table 27 of the Pangram 4 report, but the paper's own Table 27 ('This study against the two closest prior efforts') sits on the same page, so the bare reference reads as a self-citation to the wrong table. Footnote 32 has the same collision twice: '(Pangram 4 report (21), Table 23)' and 'The Perkins benchmark (Table 22)' are printed on the pages where the paper's own Tables 22–23 (the bypass tables) appear.
-
-**Reviewer's check.** Matched each parenthetical table number against the paper's own table numbering: paper Table 27 is in §3.6 itself; paper Tables 22–23 are in §2.14 adjacent to footnote 32.
-
-**Refuter's verification.** All three collisions verified: the paper's own Table 27 is captioned in §3.6 on the immediately preceding page to the external '(Table 27)' reference; footnote 32's 'Perkins benchmark (Table 22)' is genuinely bare while the paper's own Tables 22/23 sit on the same/facing page. External table references need 'their Table N' disambiguation.
-
-**Suggested fix.** Disambiguate every external table reference: 'their Table 27', 'Table 23 of the Pangram 4 report', etc.
-
-### SL14. [storyline] §2.3 Drafting concentrates in scripted business
+### SL7. [storyline] §2.3 Drafting concentrates in scripted business
 
 > it is the one place where the lexicon arm's inference is confirmed by an independent instrument. Two instruments agreeing is worth more than either alone.
 
@@ -1829,7 +1638,7 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 **Suggested fix.** Either name the specific lexicon-arm inference being confirmed with a pointer to where it is shown, or soften to a forward-looking remark ('the register arm's post-2022 rise, §2.5, points the same way'); pick one name for the instrument and use it throughout.
 
-### SL15. [storyline] §3.4 / §3.8 item 9
+### SL8. [storyline] §3.4 / §3.8 item 9
 
 > This moves for the same reason as S17's imitation lag, and is collapsing for the same reason (review item X11) — it is not literally the same quantity S17 measures.
 
@@ -1888,7 +1697,7 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 **Suggested fix.** Re-run the bootstrap-vs-plug-in check on the exact headline estimator (fraction-weighted, TAS excluded) and quote matching numbers, or state which estimator/sample the 10.3% check was computed on.
 
-*Also flagged by: CP9, SL12, XC15.*
+*Also flagged by: CP9, SL6, XC12.*
 
 ### CB10. [comparability] §3.6 Related work
 
@@ -1918,7 +1727,7 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 **Suggested fix.** State the derivation once: which runs contribute, how 38 becomes 39, and why 4 variants drop from 39 to the graded 35.
 
-*Also flagged by: IC11, QB7, XC13.*
+*Also flagged by: IC11, QB6, XC10.*
 
 ### CB12. [comparability] §2.1 / Table 1
 
@@ -1948,7 +1757,7 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 **Suggested fix.** Label the columns ('raw within-chamber mean' vs 'cohort-adjusted contrast'), or print means and contrasts from the same specification. The same raw-vs-adjusted mixture appears in Table 10 (class means vs class-I contrasts) and deserves the same labeling.
 
-### XC10. [cross-cutting] §2.11 (post-training artifact)
+### XC7. [cross-cutting] §2.11 (post-training artifact)
 
 > Pooled alignment effect +0.387 on the scaled generation — three model families, 1,600 prompt pairs each, 1.19M base words.
 
@@ -2010,7 +1819,7 @@ class to separate — as the permeation finding predicts
 
 **Suggested fix.** Qualify the provenance line: every reported number reproduces from committed artifacts, except the NB bypass searches, which are documented by outputs only (per footnote 31).
 
-### OP7. [occupational-prereg] Results 4.6b (delta group form)
+### OP6. [occupational-prereg] Results 4.6b (delta group form)
 
 > Its group form — members split by relative inwardness, insulated against exposed — puts the insulated cell above the rest (t 2.1 on the gap)
 
@@ -2024,7 +1833,7 @@ class to separate — as the permeation finding predicts
 
 **Suggested fix.** Name the contrast the t belongs to (insulated vs front-line), label the split post hoc, and state the insulated-vs-exposed gap with and without farmers.
 
-### OP10. [occupational-prereg] Results 4.6b (horse race)
+### OP9. [occupational-prereg] Results 4.6b (horse race)
 
 > The uncharged (coded) instrument wins the registered AIC comparison narrowly (−205.0 vs −198.6)
 
@@ -2038,7 +1847,7 @@ class to separate — as the permeation finding predicts
 
 **Suggested fix.** Drop 'narrowly' or quantify (ΔAIC 6.4), and state the registered reading of the uncharged win alongside the encompassing-test qualification.
 
-### OP11. [occupational-prereg] Results 4.6b (instrument description)
+### OP10. [occupational-prereg] Results 4.6b (instrument description)
 
 > whose assignment to four components was itself blind-derived by three independent coding workflows over the full 295-element universe
 
@@ -2066,7 +1875,7 @@ class to separate — as the permeation finding predicts
 
 **Suggested fix.** Quote the script's value (+0.019, sd 0.06) or, if +0.003 came from a different configuration, name and commit it.
 
-### QB9. [quality+bypass] 4.9 Stages 1 and 2 (main table header)
+### QB8. [quality+bypass] 4.9 Stages 1 and 2 (main table header)
 
 > | *segments (regressor)* | *840 (screen score; sd 15.3, max 70)* | *same fit, rescaled* | *682 (Pangram verdict, binary)* |
 
