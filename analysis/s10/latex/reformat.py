@@ -176,6 +176,8 @@ def figure_ref_anchors(t):
        r"carry the claim; \\cref{fig:altitude} plots both ladders."),
       (r"The\s+figure\s+below\s+lays\s+out\s+the\s+loop\.",
        r"\\Cref{fig:bypass} lays out the loop."),
+      (r"reported\s+individually\s+in\s+the\s+table\s+below",
+       r"reported individually in \\cref{tab:prevalence}"),
     ]
     for a, b in subs:
         t, n = re.subn(a, b, t, count=1)
@@ -223,6 +225,75 @@ def reorder(t):
     sys.stderr.write("reorder: %d sections -> publication order\n" % len(starts))
     return head + "".join(pieces) + tail
 
+
+# 35 tables in DRAFTING order: (header keyword for a safety check, label, caption).
+# longtable's own \caption auto-numbers and stays inline (no float drift).
+TABLE_CAPS = [
+ ("group & chambers", "tab:chambers", "The 22 chambers, grouped by country and regime, and the arms that use each."),
+ ("instrument & outcome", "tab:retired", "Instruments built and retired, with the result that dropped each."),
+ ("Pangram 3 & Pangram 4", "tab:calibration", "Calibration on pre-2022 speech: specificity of Pangram 3 versus Pangram 4."),
+ ("& & chamber", "tab:prevalence", "Prevalence of machine-drafted words by chamber, with 95\\% confidence intervals."),
+ ("genre, 2025--26", "tab:genre", "Machine-drafted share by genre of business, 2025--26."),
+ ("Pangram verdict & n & mean Opus", "tab:screen-by-verdict", "Mean Opus screen score by Pangram verdict on the 618-segment overlap."),
+ ("run & AUC", "tab:screen-auc", "Agreement of the Opus screen with Pangram across runs (AUC)."),
+ ("gap per 100k, first year", "tab:climb", "The register gap over time by chamber: first year, last year, and change."),
+ ("sd & vs US House", "tab:vs-ushouse", "Register level by chamber, 2020--26 means, benchmarked against the US House."),
+ ("contrast & Spearman", "tab:flight-corr", "Chase-and-flight correlations, raw and holding word frequency fixed."),
+ ("EGP class & mean z", "tab:egp", "Register by EGP social class (member-level means)."),
+ ("level & mean z & n & vs bachelor", "tab:education", "Register by education level, relative to a bachelor's degree."),
+ ("predictor & alone & joint", "tab:four-predictors", "The four predictors alone and jointly (cross-fitted)."),
+ ("class & & vs I & t & members", "tab:class-provincial", "Provincial class estimates relative to class I (discovery record)."),
+ ("quintile of article length", "tab:prominence-class", "Register by prominence (Wikipedia article-length quintile) across chamber groups."),
+ ("directional ladder & coded ladder", "tab:altitude", "The occupational altitude ladder: register by level on both instruments (plotted in \\cref{fig:altitude})."),
+ ("register shift (corrected)", "tab:posttraining", "Register shift by training stage (Rogan--Gladen corrected)."),
+ ("corpus & \\textbf{0}", "tab:coverage-occ", "Style-word coverage by number of occurrences, at matched volume."),
+ ("absent from generated only", "tab:coverage-partition", "Where the 407 style words fall: generated text versus Hansard 2025--26."),
+ ("stage 1, per 0", "tab:dqi", "Discourse Quality Index associations with machine authorship: stages 1 and 2."),
+ ("Pangram verdict & meaning & counts as", "tab:verdicts", "Pangram's three verdicts and the two events the search counts."),
+ ("attacker\\textquotesingle s detector access", "tab:bypass-rates", "Bypass rates by whether the attacker may query the detector."),
+ ("searched & zero-yield", "tab:bypass-yield", "Detector-evasion search yield per target."),
+ ("measurement & rate & what it is", "tab:bypass-summary", "The bypass rates, disambiguated."),
+ ("stage 3 (n=38)", "tab:quality-paired", "Paired within-text quality comparisons (stages 3 and 4)."),
+ ("variant (n=35) & target (n=15)", "tab:quality-evasion", "Quality of successful evasions versus their targets, by dimension."),
+ ("arm & justification vs human", "tab:continuations", "Machine continuations graded blind: justification and applicability by arm."),
+ ("Rice 2026 (Australian federal)", "tab:priorart", "This study against the two closest prior efforts."),
+ ("seed verdict & variants", "tab:superseded-bypass", "Superseded per-seed bypass transitions."),
+ ("run & role & seeds", "tab:bypass-sample", "Bypass sample selection across runs."),
+ ("artifact & what it does", "tab:artifacts", "Artifacts: the scripts and data behind each result."),
+ ("arm & model & effort", "tab:models", "Models and reasoning effort by arm."),
+ ("stage 1 (internal): AI+FE", "tab:judge-leakage", "The judge-leakage control: quality with the grading judge's own AI guess added."),
+ ("quintile & CA provinces", "tab:prominence-buckets", "Register by prominence quintile, by chamber group and pooled."),
+ ("cells & birth gradient", "tab:cohort-office", "The cohort gradient among office- and non-office-holders."),
+]
+
+def inject_table_captions(t):
+    parts = re.split(r'(\\begin\{longtable\}[^\n]*\n)', t)
+    out = [parts[0]]
+    for i, k in enumerate(range(1, len(parts), 2)):
+        delim = parts[k]
+        body = parts[k+1] if k+1 < len(parts) else ""
+        if i >= len(TABLE_CAPS):
+            sys.stderr.write("WARN: more longtables than captions (%d)\n" % i); out.append(delim+body); continue
+        kw, lab, cap = TABLE_CAPS[i]
+        m = re.match(r'(\\toprule\\noalign\{\}\n.*?\\midrule\\noalign\{\}\n)\\endhead\n', body, re.DOTALL)
+        capline = "\\caption{%s}\\label{%s}\\\\\n" % (cap, lab)
+        if m:
+            headblk = m.group(1)
+            if kw not in headblk:
+                sys.stderr.write("WARN: table %d keyword %r not in header: %r\n" % (i+1, kw, headblk[:90]))
+            # caption on the first page only; header repeats on continuation pages
+            newbody = capline + headblk + "\\endfirsthead\n" + headblk + "\\endhead\n" + body[m.end():]
+            out.append(delim + newbody)
+        else:
+            sys.stderr.write("WARN: table %d head block not matched; caption prepended\n" % (i+1))
+            out.append(delim + capline + body)
+    n = (len(parts)-1)//2
+    if n != len(TABLE_CAPS):
+        sys.stderr.write("WARN: %d longtables vs %d captions\n" % (n, len(TABLE_CAPS)))
+    else:
+        sys.stderr.write("table captions injected: %d\n" % n)
+    return "".join(out)
+
 def main():
     t = open(SRC, encoding="utf-8").read()
     t = transform_headings(t)
@@ -230,6 +301,7 @@ def main():
     t = figure_ref_anchors(t)
     t = replace_section_refs(t)
     t = replace_appendix_refs(t)
+    t = inject_table_captions(t)
     t = insert_appendix(t)
     t = reorder(t)
     open(DST, "w", encoding="utf-8").write(t)

@@ -74,6 +74,11 @@ Sensitivity on \emph{edited} machine text is the real unknown and is discussed i
 3 vs Pangram 4:
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{Calibration on pre-2022 speech: specificity of Pangram 3 versus Pangram 4.}\label{tab:calibration}\\
+\toprule\noalign{}
+& Pangram 3 & Pangram 4 \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 & Pangram 3 & Pangram 4 \\
 \midrule\noalign{}
@@ -118,8 +123,7 @@ finite-sample bias is nil in practice (bootstrap mean 10.30\% against a plug-in
 (the longest tenth of sampled segments hold only 14\% of the words) uniform
 sampling costs a little variance, which the bootstrap interval already carries,
 not bias. Two further cross-checks that the pooled figure is not an artifact of
-how words distribute across chambers: the per-chamber rates are reported
-individually in the table below, and their \textbf{equal-weight mean matches the
+how words distribute across chambers: the per-chamber rates are reported individually in \cref{tab:prevalence}, and their \textbf{equal-weight mean matches the
 word-weighted pooled rate} (9.12\% against the 9.03\% headline;
 \texttt{banded\_prevalence.py}), so no single large chamber drives the headline.
 
@@ -151,6 +155,11 @@ count.\footnote{Fractions live in \texttt{fraction\_ai\_harvested.json} (151 har
   mixed-format business in the middle of \cref{sec:genre}\textquotesingle s genre ladder.}
 
 \begin{longtable}[]{@{}lllllll@{}}
+\caption{Prevalence of machine-drafted words by chamber, with 95\% confidence intervals.}\label{tab:prevalence}\\
+\toprule\noalign{}
+chamber & rate & 95\% CI & & chamber & rate & 95\% CI \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 chamber & rate & 95\% CI & & chamber & rate & 95\% CI \\
 \midrule\noalign{}
@@ -258,6 +267,11 @@ procedure permits}, which is the mechanism under test:
 \end{itemize}
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{Machine-drafted share by genre of business, 2025--26.}\label{tab:genre}\\
+\toprule\noalign{}
+genre, 2025--26 & flagged words & 95\% CI \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 genre, 2025--26 & flagged words & 95\% CI \\
 \midrule\noalign{}
@@ -368,6 +382,11 @@ A blinded LLM screen over the full corpus (37,801 segments, date-blind)
 separates Pangram\textquotesingle s classes cleanly on the 618-segment overlap:
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{Mean Opus screen score by Pangram verdict on the 618-segment overlap.}\label{tab:screen-by-verdict}\\
+\toprule\noalign{}
+Pangram verdict & n & mean Opus score \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 Pangram verdict & n & mean Opus score \\
 \midrule\noalign{}
@@ -398,6 +417,11 @@ never been compared against anything. Re-run on the 241-segment labelled pool
 with the prompt and batching held byte-identical (all AUCs against Pangram 4):
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{Agreement of the Opus screen with Pangram across runs (AUC).}\label{tab:screen-auc}\\
+\toprule\noalign{}
+run & AUC & 95\% CI \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 run & AUC & 95\% CI \\
 \midrule\noalign{}
@@ -461,6 +485,11 @@ measured with the same ruler.\footnote{\texttt{python\ occurrence\_trends.py\ -\
   between the 2018--22 and 2024--26 windows.}
 
 \begin{longtable}[]{@{}lllll@{}}
+\caption{The register gap over time by chamber: first year, last year, and change.}\label{tab:climb}\\
+\toprule\noalign{}
+chamber & gap per 100k, first year & last year & change & \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 chamber & gap per 100k, first year & last year & change & \\
 \midrule\noalign{}
@@ -499,6 +528,11 @@ series --- a 25\% range, the widest here --- and 2026 catches it at 1,709, near 
 own floor. On 2020--26 means, with each series\textquotesingle{} standard deviation alongside:
 
 \begin{longtable}[]{@{}llll@{}}
+\caption{Register level by chamber, 2020--26 means, benchmarked against the US House.}\label{tab:vs-ushouse}\\
+\toprule\noalign{}
+& mean & sd & vs US House \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 & mean & sd & vs US House \\
 \midrule\noalign{}
@@ -556,6 +590,11 @@ specifically:\footnote{\texttt{python\ alignment\_vs\_american.py}. Three famili
   separate stratum, along with two harsher filters, as robustness only.}
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{Chase-and-flight correlations, raw and holding word frequency fixed.}\label{tab:flight-corr}\\
+\toprule\noalign{}
+contrast & Spearman & partial, holding frequency \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 contrast & Spearman & partial, holding frequency \\
 \midrule\noalign{}
@@ -685,6 +724,11 @@ within-chamber means so that every class stands on its own rather than against
 a baseline:
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{Register by EGP social class (member-level means).}\label{tab:egp}\\
+\toprule\noalign{}
+EGP class & mean z & n \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 EGP class & mean z & n \\
 \midrule\noalign{}
@@ -779,6 +823,11 @@ levels rather than as a ladder (22 chambers, cohort controlled, baseline
 bachelor):
 
 \begin{longtable}[]{@{}llll@{}}
+\caption{Register by education level, relative to a bachelor's degree.}\label{tab:education}\\
+\toprule\noalign{}
+level & mean z & n & vs bachelor \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 level & mean z & n & vs bachelor \\
 \midrule\noalign{}
@@ -821,6 +870,11 @@ against an estimate from a different set of members): †\footnote{\texttt{pytho
   each block\textquotesingle s term vector.}
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{The four predictors alone and jointly (cross-fitted).}\label{tab:four-predictors}\\
+\toprule\noalign{}
+predictor & alone & joint \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 predictor & alone & joint \\
 \midrule\noalign{}
@@ -875,6 +929,11 @@ Register rate against EGP class, year and province fixed effects, weighted by
 words, baseline class I:
 
 \begin{longtable}[]{@{}lllll@{}}
+\caption{Provincial class estimates relative to class I (discovery record).}\label{tab:class-provincial}\\
+\toprule\noalign{}
+class & & vs I & t & members \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 class & & vs I & t & members \\
 \midrule\noalign{}
@@ -969,6 +1028,11 @@ single slope, it splits the chambers into two shapes (Appendix~\ref{sec:prominen
 chambers, 6,896 members, 99\% coverage):
 
 \begin{longtable}[]{@{}llll@{}}
+\caption{Register by prominence (Wikipedia article-length quintile) across chamber groups.}\label{tab:prominence-class}\\
+\toprule\noalign{}
+quintile of article length & CA provinces & AU + UK-devolved & national \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 quintile of article length & CA provinces & AU + UK-devolved & national \\
 \midrule\noalign{}
@@ -1115,6 +1179,11 @@ level entered alone (standardised; n = 4,762, full-covariate slopes at
 n = 3,594):
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{The occupational altitude ladder: register by level on both instruments (plotted in \cref{fig:altitude}).}\label{tab:altitude}\\
+\toprule\noalign{}
+level & directional ladder & coded ladder \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 level & directional ladder & coded ladder \\
 \midrule\noalign{}
@@ -1211,6 +1280,11 @@ longest), and three independent corrected routes agree on the picture below
 (exact stratified estimator shown; audit values in the 2026-08-11 review, M9):
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{Register shift by training stage (Rogan--Gladen corrected).}\label{tab:posttraining}\\
+\toprule\noalign{}
+stage & register shift (corrected) & shipped, superseded \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 stage & register shift (corrected) & shipped, superseded \\
 \midrule\noalign{}
@@ -1303,6 +1377,11 @@ At matched volume, style words by number of occurrences:\footnote{\texttt{python
   version of \texttt{style\_coverage.py} did.}
 
 \begin{longtable}[]{@{}llllllll@{}}
+\caption{Style-word coverage by number of occurrences, at matched volume.}\label{tab:coverage-occ}\\
+\toprule\noalign{}
+corpus & \textbf{0} & 1--2 & 3--5 & 6--10 & 11--20 & 21--50 & 51+ \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 corpus & \textbf{0} & 1--2 & 3--5 & 6--10 & 11--20 & 21--50 & 51+ \\
 \midrule\noalign{}
@@ -1323,6 +1402,11 @@ coverage is a property of the generation rather than of the word list.
 than how many.} Partitioning the 407 against Hansard 2025--26:
 
 \begin{longtable}[]{@{}lllll@{}}
+\caption{Where the 407 style words fall: generated text versus Hansard 2025--26.}\label{tab:coverage-partition}\\
+\toprule\noalign{}
+& absent from both & absent from generated only & absent from Hansard only & present in both \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 & absent from both & absent from generated only & absent from Hansard only & present in both \\
 \midrule\noalign{}
@@ -1437,6 +1521,11 @@ sources, same answer.\footnote{Stage 1: \texttt{cd\ quality\_expansion\ \&\&\ py
   errors --- no claim-bearing t moves by more than 0.3.}
 
 \begin{longtable}[]{@{}llll@{}}
+\caption{Discourse Quality Index associations with machine authorship: stages 1 and 2.}\label{tab:dqi}\\
+\toprule\noalign{}
+dimension & stage 1, per 0→100 score & stage 1, per sd of score & stage 2, AI vs Human verdict \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 dimension & stage 1, per 0→100 score & stage 1, per sd of score & stage 2, AI vs Human verdict \\
 \midrule\noalign{}
@@ -1581,6 +1670,11 @@ review item B2). \Cref{fig:bypass} lays out the loop.
 labels, and the search can move a speech between them:
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{Pangram's three verdicts and the two events the search counts.}\label{tab:verdicts}\\
+\toprule\noalign{}
+Pangram verdict & meaning & counts as \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 Pangram verdict & meaning & counts as \\
 \midrule\noalign{}
@@ -1615,6 +1709,11 @@ thing --- whether the attacker can submit to the detector and retry
 (review item B4):
 
 \begin{longtable}[]{@{}llll@{}}
+\caption{Bypass rates by whether the attacker may query the detector.}\label{tab:bypass-rates}\\
+\toprule\noalign{}
+rate & attacker\textquotesingle s detector access & value (two final runs) & the question it answers \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 rate & attacker\textquotesingle s detector access & value (two final runs) & the question it answers \\
 \midrule\noalign{}
@@ -1659,6 +1758,11 @@ and asking on what fraction of \emph{targets} at least one variant reached a cle
 Human verdict:
 
 \begin{longtable}[]{@{}lllll@{}}
+\caption{Detector-evasion search yield per target.}\label{tab:bypass-yield}\\
+\toprule\noalign{}
+& searched & zero-yield & ≥1 Human & ≥1 at \texttt{fraction\_ai\ =\ 0.0} \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 & searched & zero-yield & ≥1 Human & ≥1 at \texttt{fraction\_ai\ =\ 0.0} \\
 \midrule\noalign{}
@@ -1724,6 +1828,11 @@ against a correlated proxy, so this is a rate under adversarial pressure
 rather than under clean conditions.
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{The bypass rates, disambiguated.}\label{tab:bypass-summary}\\
+\toprule\noalign{}
+measurement & rate & what it is \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 measurement & rate & what it is \\
 \midrule\noalign{}
@@ -1837,6 +1946,11 @@ continuations, where frontier models \emph{beat} the human twins on form) --- fo
 different contrasts agreeing.
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{Paired within-text quality comparisons (stages 3 and 4).}\label{tab:quality-paired}\\
+\toprule\noalign{}
+dimension & stage 3 (n=38) & stage 4 (n=25) \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 dimension & stage 3 (n=38) & stage 4 (n=25) \\
 \midrule\noalign{}
@@ -1860,6 +1974,11 @@ original on the same v2b rubric, two independent passes (inter-pass exact
 agreement 79--100\%). No dimension moves at either level:
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{Quality of successful evasions versus their targets, by dimension.}\label{tab:quality-evasion}\\
+\toprule\noalign{}
+dimension & variant (n=35) & target (n=15) \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 dimension & variant (n=35) & target (n=15) \\
 \midrule\noalign{}
@@ -1909,6 +2028,11 @@ existing audited generation caches (the \cref{sec:class} family-signature traces
 graded blind under the identical flow --- invert that at the frontier:
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{Machine continuations graded blind: justification and applicability by arm.}\label{tab:continuations}\\
+\toprule\noalign{}
+arm & justification vs human & sentinel applicability \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 arm & justification vs human & sentinel applicability \\
 \midrule\noalign{}
@@ -2842,6 +2966,11 @@ pseudonymous magazine piece. Details and primary-source verification in
 \texttt{PRIOR\_ART.md}.
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{This study against the two closest prior efforts.}\label{tab:priorart}\\
+\toprule\noalign{}
+& Rice 2026 (Australian federal) & Pimlico Journal 2025 (UK Commons) \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 & Rice 2026 (Australian federal) & Pimlico Journal 2025 (UK Commons) \\
 \midrule\noalign{}
@@ -2950,6 +3079,11 @@ was the pilot and has no uniform prevalence sample, and Tasmania is
 regime-flagged and excluded; the covariate arms use all 22):
 
 \begin{longtable}[]{@{}ll@{}}
+\caption{The 22 chambers, grouped by country and regime, and the arms that use each.}\label{tab:chambers}\\
+\toprule\noalign{}
+group & chambers \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 group & chambers \\
 \midrule\noalign{}
@@ -3094,6 +3228,11 @@ Named here because a reader needs to know what was tried and dropped, not to
 pad an appendix:
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{Instruments built and retired, with the result that dropped each.}\label{tab:retired}\\
+\toprule\noalign{}
+instrument & outcome & why dropped \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 instrument & outcome & why dropped \\
 \midrule\noalign{}
@@ -3378,6 +3517,7 @@ passes its own manipulation check.
   outcome that is a genuine state change for both seed types:
 
   \begin{longtable}[]{@{}lllll@{}}
+\caption{Superseded per-seed bypass transitions.}\label{tab:superseded-bypass}\\
   \toprule\noalign{}
   seed verdict & variants & → AI & → Mixed & → Human \\
   \midrule\noalign{}
@@ -3420,6 +3560,11 @@ in each chamber; the first in each was a biased sampling and is reported in
 Appendix~\ref{app:superseded}. Full stacks in \texttt{BYPASS\_METHODOLOGY.md}.
 
 \begin{longtable}[]{@{}lllll@{}}
+\caption{Bypass sample selection across runs.}\label{tab:bypass-sample}\\
+\toprule\noalign{}
+run & role & seeds & how the seeds were chosen & Opus\textquotesingle s role \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 run & role & seeds & how the seeds were chosen & Opus\textquotesingle s role \\
 \midrule\noalign{}
@@ -3458,6 +3603,11 @@ caught.
 \subsection{Artifacts}\label{sec:artifacts}
 
 \begin{longtable}[]{@{}ll@{}}
+\caption{Artifacts: the scripts and data behind each result.}\label{tab:artifacts}\\
+\toprule\noalign{}
+artifact & what it does \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 artifact & what it does \\
 \midrule\noalign{}
@@ -3506,6 +3656,11 @@ frontier model rather than a detector. Which model did what matters here and is
 not interchangeable:
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{Models and reasoning effort by arm.}\label{tab:models}\\
+\toprule\noalign{}
+arm & model & effort \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 arm & model & effort \\
 \midrule\noalign{}
@@ -3554,6 +3709,11 @@ DQI dimension regressed on the screen \texttt{ai\_guess} + genre/era fixed effec
 then with the grading judge\textquotesingle s own \texttt{ai\_guess} added (\texttt{analyze.py} \cref{sec:method}b):
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{The judge-leakage control: quality with the grading judge's own AI guess added.}\label{tab:judge-leakage}\\
+\toprule\noalign{}
+dimension & stage 1 (internal): AI+FE → +judge\_ai & stage 2 (external): AI+FE → +judge\_ai \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 dimension & stage 1 (internal): AI+FE → +judge\_ai & stage 2 (external): AI+FE → +judge\_ai \\
 \midrule\noalign{}
@@ -3631,6 +3791,11 @@ mean within-chamber register z show that the chambers split into two shapes, and
 that pooling them produces neither:
 
 \begin{longtable}[]{@{}lllll@{}}
+\caption{Register by prominence quintile, by chamber group and pooled.}\label{tab:prominence-buckets}\\
+\toprule\noalign{}
+quintile & CA provinces & AU + UK-devolved & national chambers & all 22 pooled \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 quintile & CA provinces & AU + UK-devolved & national chambers & all 22 pooled \\
 \midrule\noalign{}
@@ -3681,6 +3846,11 @@ minister contributes to both groups (\texttt{office\_split.py}, 8,289 member-yea
 with a birth year: 1,893 office, 6,396 non-office).
 
 \begin{longtable}[]{@{}lll@{}}
+\caption{The cohort gradient among office- and non-office-holders.}\label{tab:cohort-office}\\
+\toprule\noalign{}
+cells & birth gradient (per decade) & t \\
+\midrule\noalign{}
+\endfirsthead
 \toprule\noalign{}
 cells & birth gradient (per decade) & t \\
 \midrule\noalign{}
