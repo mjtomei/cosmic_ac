@@ -284,7 +284,7 @@
 
 *Also flagged by: XC1.*
 
-### IC3. [internal-consistency] §2.14 Stage 6 vs Table 33 (Materials)
+### IC2. [internal-consistency] §2.14 Stage 6 vs Table 33 (Materials)
 
 > blind, length-matched within prompt, frozen v2b rubric, two passes, judge pinned to the stage-1/2 model.
 
@@ -296,7 +296,7 @@
 
 **Suggested fix.** Correct the sentence (the stage-6 judge is Opus, not the stage-1/2 Fable judge), and state explicitly whether cross-judge comparability between stage 6 and stages 1/2 is assumed or tested.
 
-### IC4. [internal-consistency] Appendix D.1 Table 34 vs §2.14 Table 19
+### IC3. [internal-consistency] Appendix D.1 Table 34 vs §2.14 Table 19
 
 > On the stage-2 external label, the two largest conjuncts — justification and common good — survive the control (t 3.6, t 3.2); the headline is not an artifact of the judge smelling AI.
 
@@ -308,7 +308,7 @@
 
 **Suggested fix.** Rerun the leakage control on the actual stage-2 specification (Pangram verdict, chamber FE) or relabel the column and rewrite D.1's conclusion to match what was estimated.
 
-### IC5. [internal-consistency] §2.9 vs §2.9.4
+### IC4. [internal-consistency] §2.9 vs §2.9.4
 
 > The II-over-I crossover is established, by the test that needs no normalization at all.
 
@@ -320,7 +320,7 @@
 
 **Suggested fix.** Pick one verdict: either §2.9.4 should scope its disclaimer to the Labov-parallel interpretation (not the crossover's existence), or §2.9 should drop 'established'; state explicitly what the z = 3.50 meta does and does not license.
 
-### IC6. [internal-consistency] §3 Discussion (opening paragraph)
+### IC5. [internal-consistency] §3 Discussion (opening paragraph)
 
 > agree that at least 9.0% of words in current legislative speech are machine-drafted, spread elevenfold across chambers and concentrated where procedure permits preparation
 
@@ -332,7 +332,7 @@
 
 **Suggested fix.** Rewrite so the 9.0% and the spread are carried by the calibrated detector alone, with the register instrument corroborating only the genre concentration (and the permeation/history claims).
 
-### IC7. [internal-consistency] §3.5 Limits
+### IC6. [internal-consistency] §3.5 Limits
 
 > Mixed is pooled with AI throughout. Reported separately in the CSV.
 
@@ -368,7 +368,7 @@
 
 **Suggested fix.** Report the rung × ownership table, state that middle-highest holds against executives but not against first-line (noisy cell, se 0.129), and that owner-op executives run against the owner-operators-sit-low prediction; add to the failed/mixed registered predictions list.
 
-### OP4. [occupational-prereg] Results 4.6b footnote [rnc] / Indoors conditioning
+### OP3. [occupational-prereg] Results 4.6b footnote [rnc] / Indoors conditioning
 
 > Entered jointly with Indoors, the apex delta reads +0.033 (t +2.2) and free −0.062 (t −4.4).
 
@@ -514,7 +514,7 @@
 
 **Suggested fix.** Compute the AUS-states share over the four measured states (≈14.1%) or impute a peer value for TAS, and rewrite the sentence: the argument still holds cleanly for Ireland but only at parity for the Australian states.
 
-### ST6. [series+trend+cross-chamber] 4.5a (alignment-vs-American table + footnote r45b)
+### ST5. [series+trend+cross-chamber] 4.5a (alignment-vs-American table + footnote r45b)
 
 > Permutation p < 0.005. The **discrimination** carries more than the coefficient
 
@@ -574,14 +574,14 @@
 
 **Suggested fix.** Replace '+0.88' with the figure §2.11 actually retired (or state it in §2.11's superseded record so the back-reference resolves).
 
-*Also flagged by: XC8.*
+*Also flagged by: XC7.*
 
 
 ---
 
 ## MAJOR — PARTIAL
 
-### AL1. [argument-logic] §3.1 (Any fixed check loses to an optimising attacker)
+### AL11. [argument-logic] §3.1 (Any fixed check loses to an optimising attacker)
 
 > Point a general-purpose model at its own output, tell it to try again, and it will defeat any check you can put in front of it. This is not a claim about Pangram. It follows from the check being a fixed function and the attacker being an optimiser
 
@@ -639,7 +639,7 @@
 
 **Suggested fix.** Either demote the level-convergence framing to a caveated observation (title on trends, levels flagged as instrument-relative), or add an instrument-independent check (e.g., a UK-derived or domain-neutral word list) showing the US-high ordering survives a non-American yardstick.
 
-### IC2. [internal-consistency] §2.11 Table 16 and footnote 26
+### IC7. [internal-consistency] §2.11 Table 16 and footnote 26
 
 > Note the three uncorrected stages sum to +1.99 against that +1.24; the gap is the per-transition control pedestal described below, and closes to about 0.03 under the bias-free estimator
 
@@ -653,7 +653,7 @@
 
 **Suggested fix.** Print the corrected end-to-end value alongside the corrected stages, state which pair the ~0.03 gap refers to, and fix the Table 16 caption's correction label.
 
-### OP3. [occupational-prereg] Results 4.6b / prereg prediction 3
+### OP4. [occupational-prereg] Results 4.6b / prereg prediction 3
 
 > the register peaks at the insulated middle
 
@@ -686,7 +686,7 @@
 
 ## MINOR — CONFIRMED
 
-### AL2. [argument-logic] §2.9.5 (Flight)
+### AL12. [argument-logic] §2.9.5 (Flight)
 
 > That is chase-and-flight: a marker loses value as it is copied, so the group that holds it abandons the most conspicuous forms first.
 
@@ -758,7 +758,7 @@
 
 **Suggested fix.** Replace with the current pair: bootstrap mean 9.02% vs plug-in 9.03%.
 
-*Also flagged by: CB8, SL6, XC12.*
+*Also flagged by: CB9, SL6, XC11.*
 
 ### CP10. [calibration+prevalence] 4.2 (word-weight concentration)
 
@@ -796,7 +796,7 @@
 
 **Suggested fix.** Scope the dating: "in the one series long enough to see a turn (UK Commons), the rise begins in 1994–96; the US chambers already held the destination level in 1994."
 
-### CE6. [claims-vs-evidence] Introduction, instrument paragraph
+### CE5. [claims-vs-evidence] Introduction, instrument paragraph
 
 > their agreement, not either alone, carries the study's claims.
 
@@ -808,7 +808,7 @@
 
 **Suggested fix.** Replace with an accurate division of labour: the detector carries prevalence, the register carries history and social structure, and they corroborate each other where both can see (the genre ladder).
 
-### CE8. [claims-vs-evidence] Introduction, instrument paragraph
+### CE6. [claims-vs-evidence] Introduction, instrument paragraph
 
 > the register is transparent, cheap at corpus scale, and robust to the light editing that defeats detectors, but coarse
 
@@ -820,7 +820,7 @@
 
 **Suggested fix.** Either drop "robust to the light editing that defeats detectors" or downgrade to an expectation ("and, because it counts common vocabulary rather than statistical texture, plausibly less sensitive to light editing — untested here").
 
-### CE9. [claims-vs-evidence] Abstract, first sentence
+### CE7. [claims-vs-evidence] Abstract, first sentence
 
 > We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260)
 
@@ -928,7 +928,7 @@
 
 **Suggested fix.** Quote 32.3% (or '≈32%'), consistent with the study's own weighting rule.
 
-### CB9. [comparability] §2.14 Bypass study, flip-rate paragraph
+### CB8. [comparability] §2.14 Bypass study, flip-rate paragraph
 
 > if merely "soften off AI" is the goal, 17 of 38 New Brunswick targets (45%) cleared it
 
@@ -968,9 +968,9 @@
 
 **Suggested fix.** Restate as 17 of 40 (42.5%), or explicitly say the flip count is conditional on yield if that is intended.
 
-*Also flagged by: CB9, IC11, QB5.*
+*Also flagged by: CB8, IC11, QB5.*
 
-### XC8. [cross-cutting] §2.12 (coverage)
+### XC7. [cross-cutting] §2.12 (coverage)
 
 > it is not exposed to the estimator defect that cost §2.11 its original +0.88
 
@@ -984,7 +984,7 @@
 
 *Also flagged by: SL4.*
 
-### XC9. [cross-cutting] §2.4 footnote 8
+### XC8. [cross-cutting] §2.4 footnote 8
 
 > The deployed screen is opus screen full.js (473 batches of 40)
 
@@ -996,7 +996,7 @@
 
 **Suggested fix.** Correct the batch size (or count) so the product matches 37,801.
 
-### XC10. [cross-cutting] §2.14 stage 5 vs Table 25
+### XC9. [cross-cutting] §2.14 stage 5 vs Table 25
 
 > every rewrite that reached a Human verdict (39 variants across 15 targets, one target's original text unavailable and dropped) was graded blind
 
@@ -1010,7 +1010,7 @@
 
 *Also flagged by: CB11, IC10, QB6.*
 
-### XC11. [cross-cutting] §2.9.8 vs §2.9.5 (chase-and-flight thresholds)
+### XC10. [cross-cutting] §2.9.8 vs §2.9.5 (chase-and-flight thresholds)
 
 > What argues against an artifact is that the sign is negative at all six thresholds, including the widest and least significant.
 
@@ -1022,7 +1022,7 @@
 
 **Suggested fix.** Either list all six thresholds with their correlations in §2.9.5, or say 'all four reported thresholds.'
 
-### XC12. [cross-cutting] §2.2 (word-weighting / ratio estimator)
+### XC11. [cross-cutting] §2.2 (word-weighting / ratio estimator)
 
 > its finite-sample bias is nil in practice (bootstrap mean 10.30% against a plug-in 10.31%, a −0.005-point gap)
 
@@ -1034,9 +1034,9 @@
 
 **Suggested fix.** Re-run (or re-quote) the bootstrap-vs-plug-in check on the split-corrected 9.03% estimator, or label which estimand the 10.3% check belongs to.
 
-*Also flagged by: CB8, CP9, SL6.*
+*Also flagged by: CB9, CP9, SL6.*
 
-### GS5. [genre+screen] 4.3 (genre table)
+### GS4. [genre+screen] 4.3 (genre table)
 
 > | **SO31** — one-minute scripted set-pieces | **32.3%** | [21.0, 44.1] |
 
@@ -1048,7 +1048,7 @@
 
 **Suggested fix.** Seed from a stable digest (e.g. int(hashlib.sha1(...).hexdigest()[:8],16), as build_pangram_expansion.py already does) or set PYTHONHASHSEED, rerun, and re-quote.
 
-### GS6. [genre+screen] 4.4 (footnote r44dep)
+### GS5. [genre+screen] 4.4 (footnote r44dep)
 
 > The deployed screen is `opus_screen_full.js` (473 batches of 40), distinct from the lean validation run used in the effort A/B below; the two differ in score level (mean 34.3 vs 26.5) but not in discrimination.
 
@@ -1060,7 +1060,7 @@
 
 **Suggested fix.** Write '(mean 26.5 deployed vs 34.3 lean)' and '946 batch files of 40, run as two halves'.
 
-### GS7. [genre+screen] 4.4 The Opus screen tracks Pangram
+### GS6. [genre+screen] 4.4 The Opus screen tracks Pangram
 
 > The deployed screen — the run over all 37,801 segments — separates Pangram's AI and human classes at **AUC 0.954** [0.934, 0.971] on the 618-segment overlap
 
@@ -1072,7 +1072,7 @@
 
 **Suggested fix.** Say 'separates Pangram's flagged (AI + Mixed) segments from its human class', or report the AI-only 0.966 alongside.
 
-### GS9. [genre+screen] 4.4 The Opus screen tracks Pangram
+### GS7. [genre+screen] 4.4 The Opus screen tracks Pangram
 
 > Practically, the screen can be run for about **4× fewer reasoning tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
@@ -1122,7 +1122,7 @@
 
 **Suggested fix.** State '39 variants across 16 targets (38 from the final runs plus the superseded runs' one); one target's original was unavailable, leaving 35 variants over 15 targets'.
 
-*Also flagged by: CB11, QB6, XC10.*
+*Also flagged by: CB11, QB6, XC9.*
 
 ### IC11. [internal-consistency] §2.14 Bypass (flip-bar aside) vs Appendix C.3
 
@@ -1136,7 +1136,7 @@
 
 **Suggested fix.** Report 17 of 40 (42.5%), or justify why the flip-goal rate alone may condition on the submission gate.
 
-*Also flagged by: CB9, QB5, XC6.*
+*Also flagged by: CB8, QB5, XC6.*
 
 ### IC12. [internal-consistency] §2.9.2 Table 13
 
@@ -1164,7 +1164,7 @@
 
 **Suggested fix.** Scope the first claim to the five-family base/instruct comparison ('the only sets among the five-family comparison...') or drop 'only'.
 
-### OP7. [occupational-prereg] Results 4.6b (reproducibility claim)
+### OP6. [occupational-prereg] Results 4.6b (reproducibility claim)
 
 > right-signed and nominally significant in 16 of 16 covariate specifications
 
@@ -1176,7 +1176,7 @@
 
 **Suggested fix.** Add the apex-delta lattice to prereg_stage2.py (or prereg_covariate_strength.py) so the 16/16 claim has a committed source.
 
-### OP10. [occupational-prereg] Results 4.6b (four-level table)
+### OP7. [occupational-prereg] Results 4.6b (four-level table)
 
 > the study's registered structure — **four levels, built two semi-independent ways**: the *directional ladder*
 
@@ -1212,7 +1212,7 @@
 
 **Suggested fix.** Update to the scaled-run values: ~20% absent from base output, and 'about 60%' (or 'three-fifths') appearing in the generated corpus.
 
-### PT8. [posttraining+coverage+permeation] 4.8 (headline and footnote r48)
+### PT7. [posttraining+coverage+permeation] 4.8 (headline and footnote r48)
 
 > +0.0099, positive in 9 of 10 cells, permutation p = 0.017.
 
@@ -1224,7 +1224,7 @@
 
 **Suggested fix.** Quote the default-seed value (p = 0.022) or the range ('p = 0.015–0.022 across seeds') in the headline, and repair the METHODOLOGY.md line pointer.
 
-### PT9. [posttraining+coverage+permeation] 4.7 (opening of the pooled-effect paragraph)
+### PT8. [posttraining+coverage+permeation] 4.7 (opening of the pooled-effect paragraph)
 
 > Pooled alignment effect **+0.387** on the scaled generation — three model families, 1,600 prompt pairs each, 1.19M base words.
 
@@ -1236,7 +1236,7 @@
 
 **Suggested fix.** Rename to 'Alignment effect +0.387 (well-measured)' or 'pooled across three families, restricted to well-measured words'.
 
-*Also flagged by: XC7.*
+*Also flagged by: XC12.*
 
 ### QB4. [quality+bypass] 4.9 Bypass study (cross-chamber consistency paragraph)
 
@@ -1262,7 +1262,7 @@
 
 **Suggested fix.** Report 17/40 = 42.5% (targets searched), or flag the conditional denominator explicitly.
 
-*Also flagged by: CB9, IC11, XC6.*
+*Also flagged by: CB8, IC11, XC6.*
 
 ### QB6. [quality+bypass] 4.9 Stage 5 (successful evasions)
 
@@ -1276,7 +1276,7 @@
 
 **Suggested fix.** Rewrite as '39 variants across 16 targets; one target (4 variants) dropped for a missing original, leaving 35 pairs across 15 targets'.
 
-*Also flagged by: CB11, IC10, XC10.*
+*Also flagged by: CB11, IC10, XC9.*
 
 ### QB7. [quality+bypass] 4.9 Stage 6 (respect_groups paragraph)
 
@@ -1290,7 +1290,7 @@
 
 **Suggested fix.** Name opus-4.1's −0.24 (t −2.3) alongside the two quoted arms, e.g. 'frontier arms sit at or below the human 1.31 (fable +0.12 to opus-4.1 −0.24)'.
 
-### ST5. [series+trend+cross-chamber] 4.5a footnote r45f
+### ST6. [series+trend+cross-chamber] 4.5a footnote r45f
 
 > Machine-written text carries the instrument at 4,231 occurrences per 100k words against human text's 3,470, a ratio of 1.22×, so a chamber that is 9.0% machine by words is 10.6% machine by occurrences.
 
@@ -1388,7 +1388,7 @@
 
 **Suggested fix.** State what the 10.3% quantity is (e.g., the pre-exclusion or binary-verdict pooled rate the check was run on) or rerun the check on the headline estimator; fix the gap arithmetic.
 
-*Also flagged by: CB8, CP9, XC12.*
+*Also flagged by: CB9, CP9, XC11.*
 
 ### SL7. [storyline] §2.3 Drafting concentrates in scripted business
 
@@ -1419,7 +1419,7 @@
 
 ## MINOR — PARTIAL
 
-### CE5. [claims-vs-evidence] Abstract (also Introduction)
+### CE8. [claims-vs-evidence] Abstract (also Introduction)
 
 > with an elevenfold spread across chambers and a concentration in scripted genres
 
@@ -1433,7 +1433,7 @@
 
 **Suggested fix.** Add scope, e.g. "a concentration in scripted genres in the one chamber whose record permits the test."
 
-### CE7. [claims-vs-evidence] Introduction, second paragraph
+### CE9. [claims-vs-evidence] Introduction, second paragraph
 
 > Yet a 22-chamber policy scan finds no chamber requiring machine drafting to be disclosed and none forbidding it — the record is silent exactly where the change is happening.
 
@@ -1447,7 +1447,7 @@
 
 **Suggested fix.** Hedge to match §3.7: "a 22-chamber policy scan finds no disclosure requirement and no prohibition anywhere it could see (coverage partial in four chambers)."
 
-### CB8. [comparability] §2.2 word-weighting justification
+### CB9. [comparability] §2.2 word-weighting justification
 
 > its finite-sample bias is nil in practice (bootstrap mean 10.30% against a plug-in 10.31%, a −0.005-point gap)
 
@@ -1461,7 +1461,7 @@
 
 **Suggested fix.** Re-run the bootstrap-vs-plug-in check on the exact headline estimator (fraction-weighted, TAS excluded) and quote matching numbers, or state which estimator/sample the 10.3% check was computed on.
 
-*Also flagged by: CP9, SL6, XC12.*
+*Also flagged by: CP9, SL6, XC11.*
 
 ### CB10. [comparability] §3.6 Related work
 
@@ -1491,7 +1491,7 @@
 
 **Suggested fix.** State the derivation once: which runs contribute, how 38 becomes 39, and why 4 variants drop from 39 to the graded 35.
 
-*Also flagged by: IC10, QB6, XC10.*
+*Also flagged by: IC10, QB6, XC9.*
 
 ### CB12. [comparability] §2.1 / Table 1
 
@@ -1521,7 +1521,7 @@
 
 **Suggested fix.** Label the columns ('raw within-chamber mean' vs 'cohort-adjusted contrast'), or print means and contrasts from the same specification. The same raw-vs-adjusted mixture appears in Table 10 (class means vs class-I contrasts) and deserves the same labeling.
 
-### XC7. [cross-cutting] §2.11 (post-training artifact)
+### XC12. [cross-cutting] §2.11 (post-training artifact)
 
 > Pooled alignment effect +0.387 on the scaled generation — three model families, 1,600 prompt pairs each, 1.19M base words.
 
@@ -1535,9 +1535,9 @@
 
 **Suggested fix.** State the design once: which families enter the +0.387 pool, at what prompt counts, and which family/prompt extensions (MoE at 800, Qwen3 at 3,200) sit outside it.
 
-*Also flagged by: PT9.*
+*Also flagged by: PT8.*
 
-### GS4. [genre+screen] 4.3 (footnote r43w)
+### GS8. [genre+screen] 4.3 (footnote r43w)
 
 > `python prevalence_report.py` for the rates and bootstrap intervals; the SO31-vs-OQ permutation is 50,000 label shuffles of the pooled prevalence segments.
 
@@ -1551,7 +1551,7 @@
 
 **Suggested fix.** Commit the permutation (and Fisher) computation to prevalence_report.py or a named script, state one- or two-sided, and re-quote the p from that run.
 
-### GS8. [genre+screen] 4.4 The Opus screen tracks Pangram
+### GS9. [genre+screen] 4.4 The Opus screen tracks Pangram
 
 > restricting the negatives to 2023-and-later contemporary speech only *lowers* the AUC, to **0.940** [0.915, 0.961]. Contemporary human speech is the harder class to separate — as the permeation finding predicts
 
@@ -1579,7 +1579,7 @@
 
 **Suggested fix.** Qualify the provenance line: every reported number reproduces from committed artifacts, except the NB bypass searches, which are documented by outputs only (per footnote 31).
 
-### OP6. [occupational-prereg] Results 4.6b (delta group form)
+### OP8. [occupational-prereg] Results 4.6b (delta group form)
 
 > Its group form — members split by relative inwardness, insulated against exposed — puts the insulated cell above the rest (t 2.1 on the gap)
 
@@ -1593,7 +1593,7 @@
 
 **Suggested fix.** Name the contrast the t belongs to (insulated vs front-line), label the split post hoc, and state the insulated-vs-exposed gap with and without farmers.
 
-### OP8. [occupational-prereg] Results 4.6b (horse race)
+### OP9. [occupational-prereg] Results 4.6b (horse race)
 
 > The uncharged (coded) instrument wins the registered AIC comparison narrowly (−205.0 vs −198.6)
 
@@ -1607,7 +1607,7 @@
 
 **Suggested fix.** Drop 'narrowly' or quantify (ΔAIC 6.4), and state the registered reading of the uncharged win alongside the encompassing-test qualification.
 
-### OP9. [occupational-prereg] Results 4.6b (instrument description)
+### OP10. [occupational-prereg] Results 4.6b (instrument description)
 
 > whose assignment to four components was itself blind-derived by three independent coding workflows over the full 295-element universe
 
@@ -1621,7 +1621,7 @@
 
 **Suggested fix.** Say 'three coding workflows (one anchored as a control, two unanchored)' and note the single sub-unanimous element.
 
-### PT7. [posttraining+coverage+permeation] 4.7 footnote r47
+### PT9. [posttraining+coverage+permeation] 4.7 footnote r47
 
 > The estimator used here returns +0.003 on those same nulls, so the +0.387 sits on nothing.
 
