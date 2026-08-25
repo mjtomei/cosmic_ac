@@ -217,17 +217,19 @@ control; the blind audit placed it in N unanimously as undirected sociality
 instrument and this is logged rather than done silently. Sitting and Indoors
 remain controls — nothing about a chair or a roof is interaction.
 
-> **Result (added 2026-08-24; the check had not been run at analysis time —
-> logged here rather than silently).** `prereg_negative_controls.py`,
-> n = 4,762, estimator parity-guarded against stage 1. *Sitting* is null
-> (t +0.4). *Indoors* alone (t +7.4, adjR² 0.0103) predicts the register as
-> well as the full composite (charged 0.0087, uncharged 0.0100), so the
-> registered rule fires for the single-rung LEVELS: middle-alone and
-> top-alone are absorbed by Indoors (t +0.7, +0.2). The registered CONTRASTS
-> survive it: apex delta +0.033 (t +2.2), free −0.062 (t −4.4), U +0.037
-> (t +2.6). Reading: office work carries the register wholesale; within it,
-> insulated command still exceeds exposed command, and free work sits lower
-> than officeness predicts.
+> **Result and adjudication (added 2026-08-24; the check had not been run at
+> analysis time — logged here rather than silently).**
+> `prereg_negative_controls.py`, n = 4,762, estimator parity-guarded against
+> stage 1. *Sitting* is null (t +0.4). *Indoors* is the strongest single
+> occupational correlate in the study (+0.101 per sd, t +7.4, adjR² 0.0103,
+> comparable to the composite's fit). **Matthew's ruling on the registered
+> interpretation rule: rejected.** "The register is office language" is the
+> finding restated at coarser resolution, not a rival explanation — a high
+> correlation with office work does not stand as a control on the
+> occupational structure. The result is reported in §4.6b as description:
+> office work carries the register wholesale, and the measured structure —
+> insulated middle over exposed top (both office rungs), free work lowest —
+> is the shape inside the office.
 
 ### Coverage check (specified here; results at the end of this file)
 

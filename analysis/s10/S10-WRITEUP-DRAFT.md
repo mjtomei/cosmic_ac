@@ -1383,6 +1383,26 @@ ceilings.[^r46f]
     `element_audit_*.json`, `element_levels.json`,
     `instrument_final_cells.json`.
 
+**The coarsest cut is the strongest single correlate: the register is the
+language of the office.** O\*NET's *Indoors, Environmentally Controlled* —
+planted in the element pool as a deliberately atheoretical marker of office
+work — carries more register per standard deviation than any single
+instrument component (+0.101, t +7.4); *Spend Time Sitting*, the other
+planted marker, is null (t +0.4). This is the occupational finding at its
+coarsest resolution, a restatement rather than a rival: office work carries
+the register wholesale, and the structure this section measures is the shape
+inside the office — the insulated middle over the exposed top, both of them
+office rungs, and free work lowest.[^rnc]
+
+[^rnc]: `python prereg_negative_controls.py`; n = 4,762, estimator
+    parity-guarded against stage 1 (reproduces MIDDLE +0.028, t 2.0).
+    Entered jointly with Indoors, the apex delta reads +0.033 (t +2.2) and
+    free −0.062 (t −4.4). The pre-registration had planted these two
+    elements as negative controls with an office-job interpretation rule;
+    the adjudication (2026-08-24, logged in the prereg) rejects that rule's
+    implication — office language is the finding restated, not a control on
+    it — and the result is reported here as description.
+
 ### 4.7 The register is a post-training artifact
 
 The register is installed at post-training — by the stages tuned toward

@@ -23,3 +23,10 @@ comp_U + Indoors         U    +0.037 (t +2.6)  ind +0.107 (t +7.7)   SURVIVES
 reading: office work carries the register wholesale (Indoors t +7.4, Sitting null);
 the registered CONTRASTS survive it (apex delta; free-lowest); the single-rung
 levels were officeness. Sharpens, does not overturn, the occupational claims.
+
+ADJUDICATION (Matthew, 2026-08-24): the registered interpretation rule is
+REJECTED. Office language is the finding restated at coarser resolution, not
+a rival explanation; a high correlation with office work is not a control on
+the occupational structure. The auto-generated "office job concern stands"
+verdict above applies the registered rule and is superseded by this ruling.
+Report as description (see S10-WRITEUP-DRAFT §4.6b), without control language.
