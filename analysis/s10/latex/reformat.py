@@ -396,6 +396,94 @@ def breakable_tt(t):
         return "\\texttt{%s}" % a
     return re.sub(r'\\texttt\{([^{}]*)\}', fix, t)
 
+
+
+# ---------------------------------------------------------------------------
+# mathify: set superscripts, Greek and math expressions in proper LaTeX math
+# rather than leaning on the preamble's newunicodechar glyph fallbacks (which
+# remain as a safety net). Code spans (\texttt) and verbatim blocks are
+# protected -- except the Rogan-Gladen material, which IS math and is
+# converted first, the display equation included.
+SUPMAP = dict(zip("⁻⁰¹²³⁴⁵⁶⁷⁸⁹", "-0123456789"))
+
+RG_TEXTTT = {   # code-styled spans in the Rogan-Gladen passage that are math
+ r"\texttt{τ\ =\ π/Se\ ≥\ π}": r"\(\tau = \pi/\mathrm{Se} \geq \pi\)",
+ r"\texttt{τ\ =\ π/Se}": r"\(\tau = \pi/\mathrm{Se}\)",
+ r"\texttt{Sp\ =\ 1}": r"\(\mathrm{Sp} = 1\)",
+ r"\texttt{Se\ =\ 1}": r"\(\mathrm{Se} = 1\)",
+ r"\texttt{Se\ ≤\ 1}": r"\(\mathrm{Se} \leq 1\)",
+ r"\texttt{Se}": r"\(\mathrm{Se}\)",
+ r"\texttt{Sp}": r"\(\mathrm{Sp}\)",
+ r"\texttt{τ}": r"\(\tau\)",
+ r"\texttt{π}": r"\(\pi\)",
+}
+RG_VERBATIM = (
+ "\\begin{verbatim}\nπ = τ·Se + (1−τ)(1−Sp)      ⇒     "
+ "τ = (π − (1−Sp)) / (Se − (1−Sp))\n\\end{verbatim}")
+RG_DISPLAY = (
+ "\\[ \\pi = \\tau\\,\\mathrm{Se} + (1-\\tau)(1-\\mathrm{Sp})"
+ " \\;\\Rightarrow\\; \\tau = \\frac{\\pi - (1-\\mathrm{Sp})}"
+ "{\\mathrm{Se} - (1-\\mathrm{Sp})} \\]")
+
+
+def mathify(t):
+    # Rogan-Gladen first: this code-set material is math
+    assert t.count(RG_VERBATIM.replace("\\\\", "\\")) or True
+    t = t.replace(RG_VERBATIM.replace("\\begin", "\\begin"), RG_DISPLAY)
+    for a, b in RG_TEXTTT.items():
+        t = t.replace(a, b)
+    prot, math = [], []
+    def stash(m):
+        prot.append(m.group(0)); return "\x00%d\x01" % (len(prot) - 1)
+    def put(x):
+        math.append(x); return "\x02%d\x03" % (len(math) - 1)
+    t = re.sub(r"\\begin\{verbatim\}.*?\\end\{verbatim\}", stash, t, flags=re.S)
+    t = re.sub(r"\\texttt\{[^{}]*\}", stash, t)
+    sup = lambda x: "".join(SUPMAP[c] for c in x)
+    # p < 1.3x10^-83 molecules (relation may arrive as \textless{})
+    def pmol(m):
+        rel = {"≈": r"\approx", "=": "="}.get(m.group("rel"), "<")
+        num = "10^{%s}" % sup(m.group("sup"))
+        if m.group("mant"):
+            num = m.group("mant").replace("×", "").replace(",", "{,}").strip() \
+                  + r"\times " + num
+        return put(r"\(%s %s %s\)" % (m.group("p"), rel, num))
+    t = re.sub(r"(?P<p>[pP])\s*(?:\\textless\{\}|(?P<rel>[=≈<]))\s*"
+               r"(?P<mant>\d[\d.,]*\s*×\s*)?10(?P<sup>[⁻⁰¹²³⁴⁵⁶⁷⁸⁹]+)",
+               pmol, t)
+    t = re.sub(r"(\d[\d.,]*)\s*×\s*10([⁻⁰¹²³⁴⁵⁶⁷⁸⁹]+)",
+               lambda m: put(r"\(%s\times 10^{%s}\)"
+                             % (m.group(1).replace(",", "{,}"), sup(m.group(2)))), t)
+    t = re.sub(r"10([⁻⁰¹²³⁴⁵⁶⁷⁸⁹]+)",
+               lambda m: put(r"\(10^{%s}\)" % sup(m.group(1))), t)
+    # the R-squared family and other letter superscripts
+    t = t.replace("ΔadjR²", put(r"\(\Delta\text{adj}R^{2}\)"))
+    t = re.sub(r"adjR²", lambda m: put(r"\(\text{adj}R^{2}\)"), t)
+    t = re.sub(r"\b([RA])²", lambda m: put(r"\(%s^{2}\)" % m.group(1)), t)
+    t = re.sub(r"²", lambda m: put(r"\({}^{2}\)"), t)
+    # Greek with operands, then number-attached sigma
+    t = re.sub(r"ρ\s*=\s*([+−-]?[\d.]+)",
+               lambda m: put(r"\(\rho = %s\)" % m.group(1).replace("−", "-")), t)
+    t = re.sub(r"([+−-]?\d[\d.]*)σ",
+               lambda m: put(r"\(%s\sigma\)" % m.group(1).replace("−", "-")), t)
+    # multiplier and signed-number molecules
+    t = re.sub(r"(\d[\d,.]*)\s*×",
+               lambda m: put(r"\(%s\times\)" % m.group(1).replace(",", "{,}")), t)
+    t = re.sub(r"−(\d[\d.]*)", lambda m: put(r"\(-%s\)" % m.group(1)), t)
+    # lone symbols
+    for u, x in (("−", r"\(-\)"), ("×", r"\(\times\)"), ("≈", r"\(\approx\)"),
+                 ("≥", r"\(\geq\)"), ("≤", r"\(\leq\)"), ("±", r"\(\pm\)"),
+                 ("·", r"\(\cdot\)"), ("→", r"\(\rightarrow\)"),
+                 ("⇒", r"\(\Rightarrow\)"), ("σ", r"\(\sigma\)"),
+                 ("π", r"\(\pi\)"), ("τ", r"\(\tau\)"), ("ρ", r"\(\rho\)")):
+        t = t.replace(u, put(x))
+    for i, x in enumerate(math):
+        t = t.replace("\x02%d\x03" % i, x)
+    for i, x in enumerate(prot):
+        t = t.replace("\x00%d\x01" % i, x)
+    return t
+
+
 def main():
     t = open(SRC, encoding="utf-8").read()
     t = transform_headings(t)
@@ -408,6 +496,7 @@ def main():
     t = breakable_tt(t)
     t = insert_appendix(t)
     t = reorder(t)
+    t = mathify(t)
     open(DST, "w", encoding="utf-8").write(t)
     sys.stderr.write("wrote %s (%d chars)\n" % (DST, len(t)))
 
