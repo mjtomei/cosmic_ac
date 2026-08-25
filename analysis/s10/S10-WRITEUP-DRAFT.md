@@ -1171,8 +1171,8 @@ that breaks monotonicity. The block is jointly significant on its own
 (Wald p < 10⁻⁴ as level dummies).
 
 It is not, however, an independent channel. Put class and education in one
-model and the education block goes to **p = 0.22** while class holds at
-**p = 0.0000** — because the two instruments name the same stratum. Teachers,
+model and the education block goes to **p = 0.215** while class holds at
+**p < 10⁻⁴** — because the two instruments name the same stratum. Teachers,
 nurses and social workers hold bachelor's and master's degrees; lawyers and
 physicians hold professional ones. "Class II, not class I" and "bachelor or
 graduate, not professional" are two descriptions of one group, so whichever
@@ -1181,36 +1181,73 @@ independently measured; its apparent separate effect is not.
 
 #### All four predictors at once
 
-Cohort, class, education and prominence in a single member-level regression
-(n = 4,056 complete cases across 22 chambers; each block also fitted alone on
-this same sample, so attenuation is read against its own baseline rather than
-against an estimate from a different set of members): †[^r46joint]
+Every member-level predictor in one regression — every category of every
+block, none folded into a baseline for being small or dropped from the table
+for being null. Four blocks fit on the full panel (n = 4,056 complete cases
+across 22 chambers); the prereg's occupational-derivative block (dir middle +
+apex delta + Indoors, each per sd — §4.6b) then enters on the members with
+occupational-score coverage (n = 3,631). Each block is also fitted alone on
+the same sample, so attenuation is read against its own baseline; t in
+parentheses; the last column converts jointly-significant effects into years
+of cohort: †[^r46joint]
 
-| predictor | n | alone | joint | per affected member (joint) |
-|---|---|---|---|---|
-| **cohort** (per decade) | 4,056 | +0.276 (t 27.7) | **+0.270 (t 26.9)** | +0.27σ per decade of birth |
-| **class** (block Wald) | 4,056 | **p < 10⁻⁴** | **p < 10⁻⁴** | |
-|  · II over I | 1,691 | +0.122 (t 3.63) | +0.072 (t 2.10) | +0.07σ ≈ 3 years of cohort |
-|  · VIIab | 70 | −0.384 (t −3.70) | −0.299 (t −2.80) | **−0.30σ ≈ 11 years of cohort** |
-| **education** (block Wald) | 4,056 | p < 10⁻⁴ | **p = 0.215** | |
-| **prominence** (linear, *not* the right form — see D.3) | 4,056 | +0.037 (t 3.59) | −0.017 (t −0.46) | — |
+| term | n | alone | joint | + occ. block | ≈ yrs |
+|---|---|---|---|---|---|
+| **cohort** (per decade) | 4,056 | +0.276 (27.7) | **+0.270 (26.9)** | +0.264 (24.6) | *the scale* |
+|  — block Wald (1 df) | | p < 10⁻⁷⁰ | p < 10⁻⁶⁷ | p < 10⁻⁵⁹ | |
+| **class** (baseline I, *n* 1,660) | | | | | |
+|  · II lower service | 1,691 | +0.122 (3.63) | **+0.072 (2.10)** | +0.020 (0.47) | +3 |
+|  · III routine non-manual | 116 | +0.084 (0.95) | +0.018 (0.21) | −0.027 (−0.29) | — |
+|  · IVab petty bourgeoisie | 280 | +0.005 (0.08) | −0.011 (−0.18) | −0.061 (−0.83) | — |
+|  · IVc farmers | 109 | −0.339 (−3.48) | **−0.212 (−2.22)** | −0.199 (−1.90) | −8 |
+|  · V/VI skilled manual | 130 | −0.229 (−2.79) | **−0.247 (−3.14)** | −0.207 (−2.14) | −9 |
+|  · VIIab non-skilled manual | 70 | −0.384 (−3.70) | **−0.299 (−2.80)** | −0.147 (−1.01) | −11 |
+|  — block Wald (6 df) | | p < 10⁻⁴ | **p < 10⁻⁴** | **p = 0.21** | |
+| **education** (baseline bachelor, *n* 1,190) | | | | | |
+|  · secondary | 231 | −0.315 (−4.57) | −0.080 (−1.27) | −0.097 (−1.46) | — |
+|  · college | 367 | −0.204 (−3.61) | −0.080 (−1.51) | −0.107 (−1.87) | — |
+|  · graduate | 1,266 | −0.063 (−1.62) | −0.017 (−0.46) | −0.012 (−0.31) | — |
+|  · professional | 988 | −0.171 (−4.05) | −0.081 (−1.83) | −0.043 (−0.92) | — |
+|  — block Wald (4 df) | | p < 10⁻⁴ | **p = 0.215** | p = 0.27 | |
+| **prominence** (linear, *not* the right form — see D.3) | 4,056 | +0.037 (3.59) | +0.020 (2.05) | +0.020 (1.91) | — |
+|  — block Wald (1 df) | | p = 0.0004 | p = 0.038 | p = 0.053 | |
+| **occupational derivatives** (per sd, n 3,631) | | | | | |
+|  · dir middle | | +0.020 (0.78) | — | −0.022 (−0.80) | — |
+|  · apex delta | | +0.034 (1.31) | — | **+0.076 (2.52)** | +3/sd |
+|  · Indoors | | +0.084 (5.28) | — | +0.039 (1.95) | — |
+|  — block Wald (3 df) | | p < 10⁻⁴ | — | **p = 0.0002** | |
 
-**Why the largest coefficient carries the least variance.** A term's
+The + occupational column's changes come from the block, not the thinner
+sample: refit without it on the same 3,631 members, the four blocks are
+essentially unchanged (cohort +0.264, II +0.073, class block p = 0.0005) —
+except VIIab, which thins to 53 members and −0.200 (t −1.60) before the
+block ever enters.
+
+**Why the largest coefficients carry the least variance.** A term's
 variance share is per-member effect² × member share. VIIab moves each of
-its members more than a decade of cohort does — but 70 members are 1.7% of
-the panel, so the term carries ~0.25% of variance alone; class II's far
-smaller +0.122 on 42% of members carries more (~0.36%), and cohort's
-dominance comes from a modest slope applied to everyone across a two-decade
-spread. Coefficients answer "how much for whom"; variance shares answer
-"how much of the panel" — the table now shows both, and the explanatory-
-power accounting below should be read with that distinction.
+its members eleven cohort-years — but 70 members are 1.7% of the panel, so
+the term carries ~0.25% of variance alone; class II's far smaller +0.122 on
+42% of members carries more (~0.36%), and cohort's dominance comes from a
+modest slope applied to everyone across a two-decade spread. Coefficients
+answer "how much for whom"; variance shares answer "how much of the panel"
+— the table's n and years columns show the first, the explanatory-power
+accounting below the second, and neither substitutes for the other.
 
-**They do not deserve equal billing.** Cohort is untouched by the others and an
-order of magnitude better resolved than any of them. Class survives everything,
-barely moving. Education does not survive class. Prominence appears here only because a
-regression needs a number: the linear term is standing in for two opposite
-shapes that cancel when pooled, and the honest reading is the bucket table in
-Appendix D.3, not this coefficient.
+**They do not deserve equal billing.** Cohort is untouched by anything and an
+order of magnitude better resolved than the rest. Class shows a wider floor
+than the headline contrast: all three manual-and-rural categories sit
+significantly below the service classes jointly (V/VI −0.247, VIIab −0.299,
+IVc −0.212), and the block survives cohort, education and prominence — but
+not its own finer measurement: add the occupational derivatives and the
+class block falls to p = 0.21 while apex delta stands at +0.076 per sd,
+because the EGP label is a coarse coding of the same occupational content
+the derivatives measure directly. That is the joint model repeating what
+destination-not-origin already said: the register tracks what the work was,
+not what the label says. Education survives nothing. Prominence appears here
+only because a regression needs a number: the linear term is standing in for
+two opposite shapes that cancel when pooled (+0.020, t 2.05, and t 1.91
+beside the occupational block), and the honest reading is the bucket table
+in Appendix D.3, not this coefficient.
 
 An earlier version of this table, computed before the nine-chamber expansion
 (n = 2,989), showed class failing the joint test — the II-over-I contrast fell
@@ -1220,14 +1257,20 @@ sample could not separate them.
 
 [^r46joint]: `python joint_predictors.py`. Canonical member-level spec — one
     observation per legislator, equal weight, register z-scored within chamber
-    against the chamber's full member population, HC1 errors, joint Wald over
-    each block's term vector. "Alone" is the block fitted by itself on the
-    same sample (no other covariates), so the two columns read raw
-    association → survives everything; education enters as level dummies
-    with bachelor as baseline — the same coding as the education table —
-    with no ordering assumption (review CC3; an earlier printed version of
-    this table mixed a ladder coding and a cohort-conditioned "alone"
-    column).
+    against the chamber's full member population, HC1 errors, block Wald over
+    every block's term vector (1-df blocks included, where it is the t test).
+    "Alone" is the block fitted by itself on the same sample (no other
+    covariates), so the columns read raw association → survives the other
+    blocks → survives the occupational content too. Education enters as
+    level dummies with bachelor baseline — the same coding as the education
+    table — and every EGP category present enters as a dummy (review CC3;
+    two earlier printed versions of this table erred: one mixed a ladder
+    coding and a cohort-conditioned "alone" column, the next showed only the
+    significant class contrasts, let sub-26-member classes fold into
+    baseline I, and printed a misindexed joint-prominence cell, −0.017 for
+    the true +0.020). The occupational block is §4.6b's dir middle + apex
+    delta (grand model (ii)'s pair under the prereg's never-together rule)
+    plus Indoors, each standardised per sd on the occ panel.
 
 **Origin is null, and robustly so.** Parental class, 704 members, tested
 under both the panel and member-level specifications: joint p = 0.53–0.59,
@@ -1240,8 +1283,8 @@ the gradient, stated as interpretation.
 the member-year panel with year fixed effects — the citable figure, since
 career-level specifications absorb era of service into the cohort term — and
 survives every covariate this study has measured, in three countries and 22
-chambers. For scale: the whole class gradient spans ~0.36σ; cohort covers
-that in about thirteen years of birth date.
+chambers. For scale: the whole class gradient — II down to VIIab, jointly —
+spans ~0.37σ; cohort covers that in about fourteen years of birth date.
 
 **Together they explain about a sixth of the variance, and that is the
 honest headline.** The grand member-level model — cohort, class, education,
@@ -1268,7 +1311,8 @@ probe rather than ceilings of the phenomenon.
     prereg_indoors_joint.py` (n = 3,594, the full-covariate member panel):
     grand adjusted R² 0.1639 without and 0.1646 with the office cut; adjR²
     lost if dropped — birth decade 0.1444, apex delta 0.0011, Indoors
-    0.0007, EGP 0.0006, prominence 0.0005, education 0.0003.
+    0.0007, EGP 0.0006, prominence 0.0005, education 0.0003, dir middle
+    −0.0001 (the one block the model fits marginally better without).
 
 #### Class: the provincial estimates (retained as the discovery record; see the panel result above)
 

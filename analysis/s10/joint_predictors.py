@@ -15,19 +15,26 @@ register z-scored within each legislature against that chamber's full member
 population, HC1 errors, joint Wald over each predictor's term block.
 
   cohort      birth decade, centred at 1960
-  class       EGP category, baseline class I
-  education   ordered academic ladder (professional excluded -- it is off the
-              ladder, not a rung of it), plus a professional indicator
+  class       EGP category, baseline class I -- EVERY category present enters
+              as a dummy (no small-cell fold into baseline; the SEs speak)
+  education   level dummies, bachelor baseline (the education table's coding)
   prominence  log(Wikipedia article length)
+  occ         the prereg occupational-derivative block: dir_middle + apex
+              delta (grand model (ii)'s pair under the never-together rule)
+              + Indoors, each z-scored per sd on the estimation sample
   office      share of career words spoken under a rank marker ("Hon. <name>")
 
 COVERAGE IS THE BINDING CONSTRAINT, and it differs per predictor, so the model
 is reported as a ladder of nested samples rather than one number:
 
   full panel      cohort + class + education + prominence
-  provinces only  the same, plus office -- only the eight Canadian provinces
-                  mark rank in the record (UK Hansard prints ministers under
-                  their own names), so office cannot enter the panel model
+  occ panel       the same members intersected with occupational-score
+                  coverage; the four-block joint refit on this sample, then
+                  the occupational block added
+  provinces only  the full-panel four, plus office -- only the eight Canadian
+                  provinces mark rank in the record (UK Hansard prints
+                  ministers under their own names), so office cannot enter
+                  the panel model
 
 Each block is also shown alone on the SAME sample as the joint fit, so an
 attenuation is read against its own baseline rather than against a coefficient
@@ -111,6 +118,46 @@ def load_office():
 
 
 EDU_DUM = ["secondary", "college", "graduate", "professional"]  # vs bachelor
+OCC_TERMS = ["dir middle", "apex delta", "indoors"]
+INDOORS_ID = "4.C.2.a.1.a"          # O*NET Work Context: Indoors, Environmentally Controlled
+
+
+def load_occ():
+    """member key -> (dir_middle, apex_delta, indoors) raw values.
+
+    dir_middle and apex_delta come from the committed prereg member table;
+    Indoors is the O*NET Work Context value for the member's SOC code,
+    cached to indoors_by_soc.json so the model does not depend on the
+    /tmp O*NET extraction surviving."""
+    import csv
+    cache = os.path.join(HERE, "indoors_by_soc.json")
+    if os.path.exists(cache):
+        val = json.load(open(cache))
+    else:
+        val = {}
+        with open("/tmp/onet303/db_30_3_text/Work Context.txt",
+                  encoding="utf-8", errors="replace") as fh:
+            for r in csv.DictReader(fh, delimiter="\t"):
+                if r["Element ID"] == INDOORS_ID and r["Scale ID"] in {"CX", "CT"}:
+                    val[r["O*NET-SOC Code"]] = float(r["Data Value"])
+        json.dump(val, open(cache, "w"))
+    out = {}
+    for r in json.load(open(os.path.join(HERE, "prereg_member_table.json"))):
+        if r.get("dir_middle") is not None and r.get("apex_delta") is not None \
+                and r.get("soc") in val:
+            out[depth_key(r["member"])] = (
+                r["dir_middle"], r["apex_delta"], val[r["soc"]])
+    return out
+
+
+def zscore_occ(sample):
+    """attach per-sd occ columns, standardised on THIS estimation sample."""
+    for i in range(3):
+        v = np.array([r["occ_raw"][i] for r in sample], float)
+        m, sd = v.mean(), v.std() or 1.0
+        for r, x in zip(sample, v):
+            r.setdefault("occ_z", [0.0] * 3)[i] = (x - m) / sd
+
 
 def design(rows, blocks, cats):
     """(y, X, index map) for the requested predictor blocks."""
@@ -124,7 +171,12 @@ def design(rows, blocks, cats):
             # level dummies, bachelor baseline (review CC3: matches the
             # education table's own coding; no ordering assumption)
             idx["edu"] = list(range(col, col + len(EDU_DUM)))
-            col += 2
+            col += len(EDU_DUM)   # was += 2, a leftover of the 2-term ladder
+            # coding -- it shifted every later block's index one run (the
+            # misindexed joint-prominence cell corrected 2026-08-25)
+        elif b == "occ":
+            idx["occ"] = list(range(col, col + len(OCC_TERMS)))
+            col += len(OCC_TERMS)
         else:
             idx[b] = [col]
             col += 1
@@ -139,6 +191,8 @@ def design(rows, blocks, cats):
                 row += [1.0 if r["edu"] == e else 0.0 for e in EDU_DUM]
             elif b == "prominence":
                 row.append(r["logdepth"])
+            elif b == "occ":
+                row += r["occ_z"]
             elif b == "office":
                 row.append(r["office"])
         X.append(row)
@@ -162,14 +216,18 @@ def report(rows, blocks, cats, label):
                 bb, se = beta[j], math.sqrt(V[j, j])
                 print(f"    {nm:<16}{bb:>+8.3f}  t {bb/se:+.2f}"
                       f"{' *' if abs(bb/se) > 1.96 else ''}")
+        elif b == "occ":
+            for j, nm in zip(ii, OCC_TERMS):
+                bb, se = beta[j], math.sqrt(V[j, j])
+                print(f"    occ {nm:<12}{bb:>+8.3f}  t {bb/se:+.2f}"
+                      f"{' *' if abs(bb/se) > 1.96 else ''}")
         else:
             j = ii[0]
             bb, se = beta[j], math.sqrt(V[j, j])
             print(f"    {b:<16}{bb:>+8.3f}  t {bb/se:+.2f}"
                   f"{' *' if abs(bb/se) > 1.96 else ''}")
-        if len(ii) > 1:
-            W, k, p = MLE.wald(beta, V, ii)
-            print(f"      joint Wald chi2={W:.1f}, df={k}, p={p:.4f}")
+        W, k, p = MLE.wald(beta, V, ii)   # every block, 1-df included
+        print(f"      block Wald chi2={W:.1f}, df={k}, p={p:.4g}")
 
 
 def main():
@@ -189,14 +247,36 @@ def main():
     # ---- full panel: cohort + class + education + prominence -------------
     full = [r for r in ok if r["egp"] in PE.EGP_RANK and r["edu"] in LV
             and r["logdepth"] is not None]
+    # every class present enters as a dummy: a small-cell filter here would
+    # silently fold those members into baseline class I
     cats = {"class": [c for c in PE.EGP if c != "I"
-                      and sum(1 for r in full if r["egp"] == c) > 25]}
+                      and any(r["egp"] == c for r in full)]}
     print(f"\n{'='*66}\nFULL PANEL — complete cases on four predictors\n{'='*66}")
     print(f"class mix: {dict(Counter(r['egp'] for r in full))}")
+    print(f"edu mix:   {dict(Counter(r['edu'] for r in full))}")
     for b in (["cohort"], ["class"], ["edu"], ["prominence"]):
         report(full, b, cats, f"{b[0]} ALONE (same sample)")
     report(full, ["cohort", "class", "edu", "prominence"], cats,
            "JOINT — all four")
+
+    # ---- occ panel: the same, intersected with occupational coverage ----
+    occ = load_occ()
+    for r in ok:
+        r["occ_raw"] = occ.get(depth_key(r["member"]))
+    occp = [r for r in full if r.get("occ_raw") is not None]
+    zscore_occ(occp)
+    catso = {"class": [c for c in PE.EGP if c != "I"
+                       and any(r["egp"] == c for r in occp)]}
+    print(f"\n{'='*66}\nOCC PANEL — intersected with occupational-score "
+          f"coverage\n{'='*66}")
+    print(f"class mix: {dict(Counter(r['egp'] for r in occp))}")
+    print(f"edu mix:   {dict(Counter(r['edu'] for r in occp))}")
+    for b in (["cohort"], ["class"], ["edu"], ["prominence"], ["occ"]):
+        report(occp, b, catso, f"{b[0]} ALONE (same sample)")
+    report(occp, ["cohort", "class", "edu", "prominence"], catso,
+           "JOINT — four blocks (occ-panel sample)")
+    report(occp, ["cohort", "class", "edu", "prominence", "occ"], catso,
+           "JOINT — plus the occupational block")
 
     # ---- provinces: add office -------------------------------------------
     office = load_office()
@@ -205,7 +285,7 @@ def main():
     prov = [r for r in full if r.get("office") is not None]
     if len(prov) > 80:
         catsp = {"class": [c for c in PE.EGP if c != "I"
-                           and sum(1 for r in prov if r["egp"] == c) > 15]}
+                           and any(r["egp"] == c for r in prov)]}
         print(f"\n{'='*66}\nPROVINCES — the same, plus ministerial office"
               f"\n{'='*66}")
         print(f"class mix: {dict(Counter(r['egp'] for r in prov))}")
