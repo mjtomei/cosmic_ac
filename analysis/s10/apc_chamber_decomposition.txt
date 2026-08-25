@@ -1,0 +1,18 @@
+chamber          span  m-yrs   mean          X individual/dec             T group/dec
+US-HOUSE    1994-2026   9497   3484       +58.2 [+28.3,+88.6]       +67.1 [+27.2,+112.7]
+US-SENATE   1994-2026   3079   3239      +109.2 [+57.3,+139.3]       +27.0 [-24.6,+87.5]
+UK          1985-2026  20266   2645       +63.3 [+52.1,+76.7]      +292.4 [+283.9,+303.3]
+CA-FED      2015-2026   3033   3523       +49.4 [-5.3,+99.3]      -172.6 [-293.3,-54.8]
+IE          2018-2026   1243   3539       +57.3 [-18.0,+138.1]      +412.8 [+322.5,+492.1]
+
+WINDOWED individual gradients (the era evidence)
+chamber        window   mean          X individual/dec
+US-HOUSE    1994-2004   3413       +23.0 [-21.9,+63.5]
+US-HOUSE    2016-2026   3558       +85.0 [+36.7,+126.7]
+US-SENATE   1994-2004   3207      +104.6 [+46.8,+155.3]
+US-SENATE   2016-2026   3263      +112.7 [+19.9,+184.4]
+UK          1985-1995   2232       +29.6 [+14.1,+46.5]
+UK          2016-2026   3105       +97.6 [+76.0,+119.7]
+
+units: instrument occurrences per 100k words, per decade; word-weighted;
+member-cluster bootstrap CIs (300)
