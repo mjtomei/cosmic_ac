@@ -222,7 +222,13 @@ When `Sp = 1` this collapses to `τ = π/Se`. **`Se` is not estimated.** Since a
 detector's sensitivity cannot exceed 1, `τ = π/Se ≥ π`, so with `Sp = 1`
 measured (§4.1) the observed flag rate is a conservative floor on true
 prevalence — every prevalence figure below is thus conservative with respect
-to machine text the detector misses.
+to machine text the detector misses. The floor carries one condition worth
+stating: specificity is measured on each chamber's pre-2022 record, and the
+study's own permeation finding says contemporary human speech is drifting
+toward the register the detector keys on, so `Sp = 1` on 2025–26 human
+speech is a transfer assumption, not a measurement. §4.1 bounds what that
+assumption can cost — at most about 0.2 points on the harshest reading of
+the audited hits — and the Limits state it.
 
 ### 3.2 Detector, and a defect worth recording
 
@@ -321,6 +327,30 @@ Specificity is **identical**. The model-tier defect was an **undercount, not
 a false-positive problem** — disagreements run net upward (33 segments moved
 out of Human, 9 the other way). Earlier NB conclusions stand as conservative.
 (`nb_p3_vs_p4.py`)
+
+**Contemporary specificity cannot be measured directly — no 2025–26 ground
+truth exists — but it can be bounded from the hits.** The one contemporary
+stratum with near-certain human authorship is genuinely spontaneous exchange:
+answers engaging a question's specific words, heckle responses, repair and
+deixis to the room. A two-vote blind audit of **all 316 flagged prevalence
+segments** (each hit classified prepared / spontaneous / unclear from its
+text; every non-prepared call re-voted blind) finds the hits overwhelmingly
+confined to prepared text: **277 prepared, 21 unclear, 18 spontaneous on a
+first vote and 11 on both** — and §4.3's genre audit finds the same pattern
+within a genre, every flag landing on parts written in advance. Of the 11,
+nine are Mixed verdicts at fractions 0.11–0.58, consistent with spontaneous
+speech surrounding a machine-drafted fragment — which is what Mixed asserts —
+and two carry near-full fractions with visible spoken repair, the two best
+candidates for contemporary false positives in the study. Treating **all
+eleven** as false positives moves the headline from 9.03% to **8.86%**
+(fraction-weighted; 8.65% discounting their every word): the floor's
+transfer assumption, tested on the stratum where contemporary authorship is
+near-certain, costs at most about a fifth of a point.[^r41cs]
+
+[^r41cs]: `python build_flagged_hits_pool.py` assembles the 316 hits with
+    text (316/316 resolved); the two-vote classification is the committed
+    workflow output `flagged_hits_audit.json`; `python flagged_hits_bound.py`
+    prints the dissection and both bounds.
 
 ### 4.2 At least 9.0% of current words are machine-drafted, with an elevenfold spread
 
@@ -2271,6 +2301,11 @@ beat" is the whole of that apparatus.
 - **No chamber requires AI disclosure**, so no ground truth exists anywhere;
   every number rests on detector calibration rather than admission.
 - **Single detector.** Specificity is measured, but Pangram 4 is one vendor.
+- **Specificity is measured pre-2022, and applied to drifted speech.** The
+  floor claim needs `Sp = 1` on contemporary human speech; the controls end
+  at 2022, and §4.5/§4.8 say the human baseline is moving toward the
+  detected register. §4.1's audit of every hit bounds the worst case at
+  about 0.2 points; the assumption is stated rather than silent.
 - **Specificity is measured on the genres the controls happen to contain.**
   1,260/1,260 is strong, but no tribute or eulogy is among them, and tributes
   produced two of the five Oral Questions flags at maximal confidence (§4.3).

@@ -1,0 +1,2530 @@
+[
+ {
+  "id": "ansprev009",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I move: (1) That this House notes\" \u2014 formal enumerated motion",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev043",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"coppicing is not clearing. It is a regenerative practice\" \u2014 uninterrupted single-topic argument in written parallel syntax",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev094",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I congratulate everybody in our community who contributed to this win\" \u2014 congratulatory members' statement",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev044",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I rise today to offer my full support for the ... Bill 2025\" \u2014 second-reading speech",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev102",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I rise to speak on an issue ... I table a letter\" \u2014 prepared speech with pre-arranged tabled paper",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "asaprev050",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"Today, I rise in support of this motion\" \u2014 structured bulleted document list, written syntax",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aviprev069",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I also rise to speak on the Justice Legislation Amendment ... Bill 2025\" \u2014 long written-syntax second-reading speech",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "awaprev108",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"Calls to 1800RESPECT spike 17%\" \u2014 dense pre-researched statistics in continuous argument",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cabprev104",
+  "verdict": "prepared",
+  "confidence": "medium",
+  "marker": "\"That is not confidence; that is fear. That is not representation; that is manipulation.\" \u2014 scripted parallel constructions plus rehearsed 1812 history set-piece",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cbcprev044",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"They delay ... They deny ... They deflect\" \u2014 written parallel constructions, no deixis to the room",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cnlprev016",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I rise to recognize May 6 as Hope Air Day\" \u2014 members' statement with prepared program statistics",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cnsprev049",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I rise to recognize Nova Scotia author, Michelle H\u00e9bert\" \u2014 recognition statement in written syntax",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "conprev024",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"The review concluded that financial decision-making had become entangled\" \u2014 long uninterrupted briefing-style recitation of review findings",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "conprev098",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"Can the minister tell this House what our government is doing\" \u2014 scripted government backbench question read into the record",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev008",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I am glad to have secured the Adjournment debate\" \u2014 pre-composed adjournment speech, sustained rhetorical build",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev080",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I support the Bill's passage at Second Stage\" \u2014 structured written argument on the Bill's single clause",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uscprev038",
+  "verdict": "unclear",
+  "confidence": "medium",
+  "marker": "\"I thank the member for that intervention ... I will come to that\" \u2014 spontaneous engagement with an intervention, then resumes prepared text: genuinely mixed",
+  "second": "unclear",
+  "second_marker": "I recognise what he said at the end of his intervention, and I will come to that"
+ },
+ {
+  "id": "ushprev048",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I rise today in support of my resolution, H.J. Res. 75\" \u2014 floor speech in written syntax",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ussprev033",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"today I rise to welcome His All-Holiness Ecumenical Patriarch Bartholomew\" \u2014 biographical tribute read into the record",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ch079",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"This is not just an administrative oversight but a moral failure\" \u2014 sustained written-syntax argument with dated citation of 2020 commitment",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ch159",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"Our solar for all proposal is a five-point plan\" \u2014 party policy recitation in written syntax",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev024",
+  "verdict": "prepared",
+  "confidence": "medium",
+  "marker": "\"Since the 1970s, Canada has pursued modern treaties\" \u2014 uninterrupted historical exposition, no deixis to the room",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev053",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"over 17,000 young people lost their jobs just last month\" \u2014 prepared statistical litany; time-split announcement typical of a scripted opener",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev100",
+  "verdict": "prepared",
+  "confidence": "medium",
+  "marker": "\"That is why the bill was intentionally drafted as a framework bill\" \u2014 sponsor's composed explanation; only a minor ad-lib (\"I have gotten a few of those\")",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb192",
+  "verdict": "unclear",
+  "confidence": "medium",
+  "marker": "\"[interjection] ... members opposite continue to heckle across the way\" \u2014 live heckle response embedded in an otherwise prepared speech: genuinely mixed",
+  "second": "prepared",
+  "second_marker": "\"recirculated, reposted, captured, screen\u00adshotted, indexed, duplicated, deepfaked\" \u2014 long written parallel list; the lone heckle aside (\"members opposite continue to heckle\") is a momentary break in an otherwise scripted bill speech"
+ },
+ {
+  "id": "mb256",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I rise today to recognize three outstanding young athletes\" \u2014 congratulatory statement with pre-arranged gallery acknowledgements",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "sbiep009",
+  "verdict": "spontaneous",
+  "confidence": "high",
+  "marker": "\"It is great to hear of all the services the Government will provide\" \u2014 engages the specifics of the immediately preceding answer, with repair (\"I suppose\")",
+  "second": "spontaneous",
+  "second_marker": "It is great to hear of all the services the Government will provide"
+ },
+ {
+  "id": "ansprev010",
+  "verdict": "prepared",
+  "marker": "\"I begin with the animals who suffer out of sight\" \u2014 composed rhetorical opening, parallel imagery",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev051",
+  "verdict": "prepared",
+  "marker": "\"I speak in support of the Environmental Legislation Amendment Bill 2025\" + recited list of twelve Acts",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev100",
+  "verdict": "prepared",
+  "marker": "\"I move: That this House: (a) commends...\" \u2014 formal lettered motion text",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev048",
+  "verdict": "prepared",
+  "marker": "parallel refrain \"Writing letters, shining spotlights, monitoring\u2014it is not leadership, it is surrender\" \u2014 scripted attack, though with same-day deixis (\"today in the committee hearing\")",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev107",
+  "verdict": "prepared",
+  "marker": "budget-reply litany of figures: \"$4.9 million... $6.1 million... $44,607... $446 million\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "asaprev052",
+  "verdict": "prepared",
+  "marker": "long uninterrupted single-topic argument: \"where they can put down their roots, where they can grow their families, where they can create memories\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aviprev071",
+  "verdict": "prepared",
+  "marker": "\"I move, by leave: That this house: (a) expresses its deepest sorrow...\" \u2014 formal condolence motion",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cabprev015",
+  "verdict": "prepared",
+  "marker": "parallel construction \"If this government cared about fairness... If they cared about reconciliation... If they cared about public safety\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cabprev105",
+  "verdict": "prepared",
+  "marker": "anaphoric written syntax: \"Black entrepreneurs are driving... Black artists are shaping... Black educators are mentoring\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cbcprev054",
+  "verdict": "prepared",
+  "marker": "promotional written prose: \"let us look into the future with optimism... offering a bright future for generations to come\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cnlprev035",
+  "verdict": "spontaneous",
+  "marker": "\"So to your point... Hopefully that elaborates a little bit. That would be my interpretation\" \u2014 direct engagement with a preceding question, hedged repair",
+  "confidence": "high",
+  "second": "spontaneous",
+  "second_marker": "\"So to your point, delays could cause delays\" \u2014 direct engagement with the preceding speaker, plus \"this is my interpretation\" hedging"
+ },
+ {
+  "id": "cnsprev061",
+  "verdict": "prepared",
+  "marker": "\"I rise today to congratulate Chelsea Barnhill-Weatherbee\" \u2014 formal tribute statement",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "conprev025",
+  "verdict": "prepared",
+  "marker": "structured worked example with refrain \"it keeps poor people behind bars\" in written syntax",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "conprev107",
+  "verdict": "prepared",
+  "marker": "chained parallel logic: \"When projects are delayed, supply is constrained; when supply is constrained, prices remain elevated\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev018",
+  "verdict": "prepared",
+  "marker": "motion-opening framing with citation: \"a January 2026 report from Chatham House made it clear\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev081",
+  "verdict": "unclear",
+  "marker": "ad-libbed aside \"I thought until very recently that Daddy Winker's Park was called Daddy Winkler's Park, so there you go\" grafted onto scripted body (\"Let us be clear...\")",
+  "confidence": "medium",
+  "second": "prepared",
+  "second_marker": "It is about the young mother... It is about the older man... Those people are not statistics"
+ },
+ {
+  "id": "uscprev064",
+  "verdict": "prepared",
+  "marker": "scripted statistics (\"nearly 73 per cent of participants\") with read-aloud asides (\"I have probably not said that properly\") \u2014 text composed in advance",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ushprev053",
+  "verdict": "prepared",
+  "marker": "\"On behalf of the American people, I extend my deepest appreciation\" \u2014 formal tribute",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ussprev048",
+  "verdict": "prepared",
+  "marker": "\"And whereas... And whereas...\" \u2014 resolution text read into the record",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ch100",
+  "verdict": "prepared",
+  "marker": "composed peroration: \"rooted in truth, in empathy and in the significant area of unity\" \u2014 triadic written syntax",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ch169",
+  "verdict": "prepared",
+  "marker": "ministerial briefing language: \"drafting being led by the Office of Parliamentary Counsel... expected to be introduced to the D\u00e1il this term\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev027",
+  "verdict": "prepared",
+  "marker": "scripted maiden-speech thanks: \"I want to thank my campaign team, including Simon, Mona, Jordan, Wendy, Jim\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev056",
+  "verdict": "prepared",
+  "marker": "anaphoric written rhetoric: \"for a country that does not require... for policies that recognize... and for a government that recognizes\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev103",
+  "verdict": "prepared",
+  "marker": "enumerated budget critique with quoted citation: \"Third, the budget explodes bureaucracy instead of producing results\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb203",
+  "verdict": "prepared",
+  "marker": "reading-from-text artifact \"Thisthe legislation creates a form of leave known as attachment leave\" amid statutory detail",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb258",
+  "verdict": "prepared",
+  "marker": "read-aloud stumbles over drafted text: \"'semineres' of learning\", \"They arehowever, some important exemptions under section 23(1)\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "sbushop002",
+  "verdict": "prepared",
+  "marker": "\"SEC. 35__. ... is amended by inserting after subchapter III\" \u2014 verbatim statutory bill text, not speech",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev014",
+  "verdict": "prepared",
+  "marker": "\"I will not speak to each recommendation individually, but I will highlight several themes\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev054",
+  "verdict": "prepared",
+  "marker": "\"Today I acknowledge and celebrate the recipients of the 2026 Harrington Australia Day Awards\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev105",
+  "verdict": "prepared",
+  "marker": "\"I once again call on the Government to listen, abandon this proposal and go back to the drawing board\" \u2014 long single-topic argument in written syntax",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev051",
+  "verdict": "prepared",
+  "marker": "\"The Planning (State Facilitated Development) Amendment Regulation 2026 is about one thing\" \u2014 sustained written argument; the \"member for Woodridge tonight\" aside is a minor insertion",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev108",
+  "verdict": "prepared",
+  "marker": "\"Mr Speaker, let me return to the GC Surfer and complete the picture for my community\" \u2014 planned structure, polished parallelism",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "asaprev053",
+  "verdict": "prepared",
+  "marker": "\"I rise today to speak on the Nurse and Midwife to Patient Ratios Bill\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aviprev082",
+  "verdict": "prepared",
+  "marker": "\"It is not just a toolkit, it is a message\" \u2014 members'-statement rhetoric in written syntax",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cabprev023",
+  "verdict": "prepared",
+  "marker": "\"its first instinct isn't reflection; it's deflection\" \u2014 sustained parallel constructions",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cabprev117",
+  "verdict": "prepared",
+  "marker": "\"my speech will have quite a few alliterations in it\" \u2014 admits a written speech, though delivered with live asides",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cbcprev057",
+  "verdict": "prepared",
+  "marker": "\"I rise today in support of the Eligibility to Hold Public Office Act\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cnlprev036",
+  "verdict": "unclear",
+  "marker": "\"In any plan that we have ? any plan ?\" and \"that's a lifeline, really, for them\" \u2014 spoken repair/looseness atop a prepared bill summary",
+  "confidence": "medium",
+  "second": "prepared",
+  "second_marker": "\"It's about transparency, it's about fairness\" \u2014 parallel written constructions in an uninterrupted second-reading argument"
+ },
+ {
+  "id": "cnsprev065",
+  "verdict": "prepared",
+  "marker": "\"I urge my colleagues to support this resolution\" \u2014 prepared resolution speech; the \"she wasn't that young\" repair is one live aside",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "conprev032",
+  "verdict": "prepared",
+  "marker": "\"a commitment to Ontario workers, a commitment to businesses... a commitment to families\" \u2014 parallel peroration",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "conprev113",
+  "verdict": "prepared",
+  "marker": "\"The Tourism Industry Association said, ...\" \u2014 reading prepared quotations into the record",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev023",
+  "verdict": "prepared",
+  "marker": "\"brought to a close properly, responsibly and fairly\" \u2014 formal written syntax throughout",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev082",
+  "verdict": "prepared",
+  "marker": "\"For those reasons, I am supporting the Bill through its Second Stage\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uscprev079",
+  "verdict": "prepared",
+  "marker": "\"not simply to restore a building but to protect a vital piece of cultural infrastructure\" \u2014 written syntax; references to Marra/Melville are woven-in acknowledgments",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ushprev065",
+  "verdict": "prepared",
+  "marker": "\"Mr. Speaker, I rise today in strong support of the rule\" \u2014 set talking points after the thank-for-yielding formula",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ussprev064",
+  "verdict": "prepared",
+  "marker": "\"it is my privilege to honor Latimer Grocery... as the Senate Small Business of the Week\" \u2014 staff-written tribute read into the record",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ch101",
+  "verdict": "prepared",
+  "marker": "\"I am pleased to be here today... to share an update on school transport\" \u2014 ministerial statement dense with prepared statistics",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ch282",
+  "verdict": "prepared",
+  "marker": "\"I am here not simply to raise a problem, but to call for action\" \u2014 enumerated reform asks in written syntax",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev034",
+  "verdict": "prepared",
+  "marker": "\"The petitioners are calling on the Government of Canada to, number one...\" \u2014 formal petition presentation",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev060",
+  "verdict": "prepared",
+  "marker": "\"These investments... are therefore investments in consumer confidence\" \u2014 uninterrupted policy argument in written syntax",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev104",
+  "verdict": "prepared",
+  "marker": "\"trade slogans for strength, control for courage and Liberal wokeism for Conservative common sense\" \u2014 crafted parallel rhetoric",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb209",
+  "verdict": "prepared",
+  "marker": "\"I rise today to recognize Canadian agriculture safety week\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb259",
+  "verdict": "prepared",
+  "marker": "\"I rise today in support of this important resolution brought forward by the member for Borderland\" \u2014 sustained written rhetoric",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ovushop005",
+  "verdict": "prepared",
+  "marker": "\"(a) Repeal.-- (1) In general.--Subtitle C of title XVIII...\" \u2014 verbatim statutory bill text, not speech",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev015",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"Turning to the Upper Hunter\" \u2014 written signposting through an electorate-by-electorate argument with pre-gathered quotations",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev058",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I thank Amcal, Sigma and the Adventist Church\" \u2014 composed community tribute",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev114",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "quotes the Tech Council warning of \"significant uncertainty for industry\" \u2014 pre-assembled brief in written syntax",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev060",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"Tonight I would like to recognise four outstanding young local athletes\" \u2014 members' statement tribute",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev114",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"They voted for stronger leadership. They voted for safer communities.\" \u2014 parallel constructions of a budget speech",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "asaprev075",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"It is time to invest... It is time to restore\" \u2014 parallel peroration, no deixis to the room",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aviprev092",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"The Greens will vote against the Bail Further Amendment Bill 2025\" \u2014 scripted second-reading position statement",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cabprev024",
+  "verdict": "prepared",
+  "confidence": "medium",
+  "marker": "\"EDUC 450, diversity and learning\" \u2014 course numbers and reading lists recited; staff-researched answer despite the \"Well, thank you, Mr. Speaker\" opener",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cbcprev002",
+  "verdict": "prepared",
+  "confidence": "medium",
+  "marker": "\"$182 billion this year and $234.6 billion by 2028-2029\" \u2014 rehearsed statistics litany; only one live aside (\"like the member from the Green Party mentioned\")",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cbcprev065",
+  "verdict": "prepared",
+  "confidence": "medium",
+  "marker": "\"advanced conductor technologies and modern HVDC systems or next-generation insulated cables\" \u2014 long single technical question in written syntax, read into committee",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cnlprev068",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"They developed under the previous government, and they developed in a system that...\" \u2014 parallel written argument on a report",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cnsprev066",
+  "verdict": "prepared",
+  "confidence": "medium",
+  "marker": "\"They are using the Financial Measures (2026) Act to build a legal cage\" \u2014 composed rhetoric; the \"so stay tuned\" aside is a live flourish within a scripted speech",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "conprev054",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"Today, I rise in solidarity with community support workers\" \u2014 members' statement with prepared figures",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cskprev033",
+  "verdict": "prepared",
+  "confidence": "medium",
+  "marker": "\"invested $3.5 billion in exploration and development... valued at over 11.5 billion\" \u2014 staff-prepared statistics read as a QP answer",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev024",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"Oral health is not a luxury but a right\" \u2014 composed peroration of a party statement",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev085",
+  "verdict": "prepared",
+  "confidence": "medium",
+  "marker": "\"It entrenches regulatory divergence... imposes layers of bureaucracy, disrupts supply chains\" \u2014 written parallel syntax resuming after a live intervention (\"Thank you for your intervention\")",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uscprev108",
+  "verdict": "prepared",
+  "confidence": "medium",
+  "marker": "\"That is not a neutral technical term; it is a policy choice and an act of selective neglect\" \u2014 written antithesis; colleague references read as inserted acknowledgements",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ushprev066",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"This is exactly what Congress intended when we passed the Energy Policy and Conservation Act\" \u2014 sustained single-topic floor argument in written syntax",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uwaprev016",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I welcome the opportunity to speak in this debate and respond directly to Plaid Cymru's motion\" \u2014 scripted debate opening",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ch114",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I wish to touch on the issue of delivery\" \u2014 written signposting through a structured critique with memorised targets (\"50,000 pole replacements, 319 km\")",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ch323",
+  "verdict": "prepared",
+  "confidence": "medium",
+  "marker": "\"The Liberal Democrats are calling for a fair deal commission\" \u2014 scripted policy platform resuming after a live reply to an intervention (\"I am happy to send the hon. Member a briefing\")",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev035",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I have written to the Parliamentary Budget Officer to request one\" \u2014 structured cost enumeration in written syntax",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev061",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"They boast about supporting pipelines while key ministers work behind the scenes\" \u2014 sustained parallel indictment, no deixis to the room",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev106",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I am honoured to rise on behalf of the good people of Abbotsford\u2014South Langley\" \u2014 formal set-piece opening with prepared statistics",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb210",
+  "verdict": "prepared",
+  "confidence": "medium",
+  "marker": "\"Can the minister explain why, after so many years of the NDP promises\" \u2014 scripted lead-off QP question, engages no prior answer",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb268",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I rise today to speak to this resolution\" \u2014 formal opening followed by rehearsed 1870 history",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ovushop004",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"(a) In General.--Not later than January 1, 2027\" \u2014 statutory bill text read into the record",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev018",
+  "verdict": "prepared",
+  "marker": "\"I acknowledge the remarkable achievements of Manly's Diamond Squad\" \u2014 tribute with 14-name roster",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev062",
+  "verdict": "prepared",
+  "marker": "\"I commend the bill to the House\" \u2014 second-reading peroration in written syntax",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev003",
+  "verdict": "prepared",
+  "marker": "\"I rise to contribute to the debate\" + parallel \"They are asking for...\" litany",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev061",
+  "verdict": "prepared",
+  "marker": "\"The committee report was clear\" \u2014 uninterrupted clause-by-clause written argument",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev118",
+  "verdict": "unclear",
+  "marker": "\"As the government speakers have articulated tonight\" \u2014 room deixis inside polished prepared attack lines",
+  "confidence": "medium",
+  "second": "unclear",
+  "second_marker": "As the government speakers have articulated tonight"
+ },
+ {
+  "id": "asaprev078",
+  "verdict": "prepared",
+  "marker": "\"I rise to support the Fines Enforcement... Amendment Bill\" \u2014 written speech after brief ad-lib opener echoing previous speaker",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aviprev096",
+  "verdict": "prepared",
+  "marker": "\"Last weekend I had the pleasure of attending\" \u2014 polished congratulatory statement",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cabprev028",
+  "verdict": "prepared",
+  "marker": "\"the crown jewel of these investments\" \u2014 scripted budget boosterism with stacked figures",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cbcprev003",
+  "verdict": "unclear",
+  "marker": "\"noted by a member, the member for Skeena\" with verbatim quote \u2014 debate engagement in fully written syntax",
+  "confidence": "medium",
+  "second": "prepared",
+  "second_marker": "verbatim block quotation read into the record: \"It was also noted by a member, the member for Skeena, that 'we must recognize...'\" in uninterrupted written syntax"
+ },
+ {
+  "id": "cbcprev068",
+  "verdict": "spontaneous",
+  "marker": "\"How are you supposed?? If you have a dispute... at the time?.\" \u2014 abandoned sentence, visible repair",
+  "confidence": "high",
+  "second": "unclear",
+  "second_marker": "How are you supposed\u2014? If you have a dispute with your employer and you're supposed to go talk to the employer at the time\u2014."
+ },
+ {
+  "id": "cnlprev079",
+  "verdict": "prepared",
+  "marker": "\"I rise in this hon. House to recognize\" \u2014 formal tribute statement",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cnsprev080",
+  "verdict": "prepared",
+  "marker": "\"I rise today to recognize and to congratulate Wura Fakiyesi\" \u2014 congratulatory members' statement",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "conprev078",
+  "verdict": "unclear",
+  "marker": "\"I asked a question this morning, and the member from Scarborough-Rouge Park got up\" \u2014 same-day deixis spliced into prepared argument",
+  "confidence": "medium",
+  "second": "unclear",
+  "second_marker": "\"I asked a question this morning, and the member from Scarborough?Rouge Park got up... and all of them stood up and applauded\" \u2014 live digression on same-day chamber events embedded in an otherwise structured written speech"
+ },
+ {
+  "id": "cskprev036",
+  "verdict": "spontaneous",
+  "marker": "\"seen as a bit of a, you know . . .\" \u2014 filler and self-repair, admits unfamiliarity with the topic",
+  "confidence": "high",
+  "second": "unclear",
+  "second_marker": "a bit of a, you know . . . administrative or otherwise a challenge"
+ },
+ {
+  "id": "uniprev025",
+  "verdict": "prepared",
+  "marker": "\"The report estimates the wider costs... at ?96 million a year\" \u2014 briefing-note statistics in written syntax",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev089",
+  "verdict": "spontaneous",
+  "marker": "\"as soon as he is there, the crowds are screaming\" \u2014 loose spoken syntax reacting to last night's event",
+  "confidence": "medium",
+  "second": "prepared",
+  "second_marker": "\"I take a moment to recognise the extraordinary achievement of Rory McIlroy\" \u2014 tribute formula with parallel constructions (\"His humility, professionalism and quiet confidence\")"
+ },
+ {
+  "id": "uscprev117",
+  "verdict": "unclear",
+  "marker": "\"the Cabinet Secretary... in the earlier question session, were unable to answer\" \u2014 debate deixis inside a polished parallel peroration",
+  "confidence": "medium",
+  "second": "prepared",
+  "second_marker": "It is about mothers... It is about clinicians... It is about the babies"
+ },
+ {
+  "id": "ushprev075",
+  "verdict": "prepared",
+  "marker": "\"I rise in support of my bill, H.R. 6007\" \u2014 composed floor tribute",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uwaprev017",
+  "verdict": "prepared",
+  "marker": "\"No patient should... No family should... And no matter where\" \u2014 parallel written peroration",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ch119",
+  "verdict": "prepared",
+  "marker": "\"The Labour Party believes every child should have access\" \u2014 written policy statement, no room deixis",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ch328",
+  "verdict": "prepared",
+  "marker": "\"3,020 days\" and \"I urge the Government to continue raising this matter\" \u2014 composed advocacy address",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev039",
+  "verdict": "prepared",
+  "marker": "\"Canada would become only the second country in the world\" \u2014 structured bill-support speech in written syntax",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev068",
+  "verdict": "prepared",
+  "marker": "\"November 25 marks the start of 16 days of activism\" \u2014 scripted members' statement",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb094",
+  "verdict": "prepared",
+  "marker": "\"Did you know that small businesses make up 98 per cent\" \u2014 rehearsed statistics-laden statement",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb214",
+  "verdict": "prepared",
+  "marker": "\"Can the Premier (Mr. Kinew) tell Manitobans how many people\" \u2014 scripted opposition question in polished written syntax",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb269",
+  "verdict": "unclear",
+  "marker": "\"provides, again, transparency\" \u2014 garbled syntax and filler \"again\" over generic prepared content",
+  "confidence": "medium",
+  "second": "prepared",
+  "second_marker": "\"In this Chamber, we are occasionally asked to consider amendments to private or organization-specific legis\u00adlation\" \u2014 boilerplate written-register argument, no deixis or engagement; \"again\" fillers are delivery artifacts"
+ },
+ {
+  "id": "ansprev020",
+  "verdict": "prepared",
+  "marker": "\"This project represents what can be achieved when government listens, when communities are engaged\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev071",
+  "verdict": "prepared",
+  "marker": "\"it means a boost to regional economies and it means a safer, more accessible coastline\" (parallel written oratory)",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev006",
+  "verdict": "prepared",
+  "marker": "\"When pests damage cane, yield drops. When yields drop, families and local mills feel it.\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev064",
+  "verdict": "prepared",
+  "marker": "\"I would like to read a letter sent to me by a local businessman\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "asaprev009",
+  "verdict": "prepared",
+  "marker": "\"This bill ensures that victims and their families will no longer have to hear a verdict\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aviprev001",
+  "verdict": "prepared",
+  "marker": "numbered written question \"(2122) My question is for the Minister for Roads and Road Safety\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aviprev116",
+  "verdict": "prepared",
+  "marker": "\"incorporated the following:\" (written speech incorporated into Hansard)",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cabprev039",
+  "verdict": "prepared",
+  "marker": "\"I urge my colleagues in this House to support this motion\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cbcprev022",
+  "verdict": "prepared",
+  "marker": "\"I rise to speak on Bill M231\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cbcprev077",
+  "verdict": "prepared",
+  "marker": "\"Today I rise to recognize a remarkable achievement\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cnsprev012",
+  "verdict": "spontaneous",
+  "marker": "\"I'm not going to throw a number out there, because I don't know for sure\" (in-the-moment hedging/repair)",
+  "confidence": "medium",
+  "second": "spontaneous",
+  "second_marker": "I'm not going to throw a number out there, because I don't know for sure"
+ },
+ {
+  "id": "cnsprev083",
+  "verdict": "prepared",
+  "marker": "\"I rise today to honour the memory of Michael Haynes\" (tribute)",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "conprev079",
+  "verdict": "prepared",
+  "marker": "\"It aligns regulation with innovation, affordability with accountability and prosperity with sustainability\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cskprev058",
+  "verdict": "prepared",
+  "marker": "\"I will read the prayer\" (formal petition presentation)",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev051",
+  "verdict": "unclear",
+  "marker": "opens \"Yes. The Member is right...\" then shifts into fluent briefed text \u2014 mixed",
+  "confidence": "medium",
+  "second": "unclear",
+  "second_marker": "opens live (\"Yes. The Member is right in that it is a demand-led scheme\") then shifts to briefing-note register (\"there is a risk of raising expectations that cannot realistically be met\")"
+ },
+ {
+  "id": "uniprev091",
+  "verdict": "prepared",
+  "marker": "\"the key aims of the Bill are, first... secondly... thirdly\" (written wind-up structure)",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ushprev001",
+  "verdict": "prepared",
+  "marker": "\"choosing people over profits, workers over Wall Street, and families over special interests\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ushprev082",
+  "verdict": "unclear",
+  "marker": "\"It was said that this bill favors... No, it actually holds our communities accountable\" (live rebuttal inside otherwise polished argument)",
+  "confidence": "medium",
+  "second": "spontaneous",
+  "second_marker": "It was said that this bill favors the dirty production in manufacturing... No, it actually holds our communities accountable"
+ },
+ {
+  "id": "uwaprev019",
+  "verdict": "prepared",
+  "marker": "\"So, first, on the financial transparency, the committee has repeatedly called for...\" (structured committee-report speech)",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ch123",
+  "verdict": "unclear",
+  "marker": "\"As I have the floor, I raised more than a year ago\" (spontaneous pivot appended to prepared statement)",
+  "confidence": "medium",
+  "second": "unclear",
+  "second_marker": "\"As I have the floor, I raised more than a year ago\" \u2014 opportunistic live pivot appended to a scripted party statement (\"We insist... We demand...\")"
+ },
+ {
+  "id": "ch335",
+  "verdict": "prepared",
+  "marker": "\"true of the trade union movement, true of the suffragettes, and true of the civil rights tradition\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev040",
+  "verdict": "prepared",
+  "marker": "\"I rise today to honour the life of Donald Rickerd\" (tribute)",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev069",
+  "verdict": "prepared",
+  "marker": "\"Seniors who planned carefully... Workers who do everything right...\" (parallel written constructions)",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb124",
+  "verdict": "prepared",
+  "marker": "\"I look forward to the support of all members in passing this important legislation. Thank you. Merci. Miigwech.\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb216",
+  "verdict": "prepared",
+  "marker": "\"I wish to present the following petition\" (petition read verbatim)",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb271",
+  "verdict": "spontaneous",
+  "marker": "\"the junk food tax is one way\u2014one thing\" and \"they're not\u2014one of the biggest concerns\" (false starts/self-repair)",
+  "confidence": "high",
+  "second": "spontaneous",
+  "second_marker": "the junk food tax is one way\u2014one thing"
+ },
+ {
+  "id": "ansprev021",
+  "verdict": "prepared",
+  "marker": "\"The Shooters, Fishers and Farmers Party supports the bill\" \u2014 uninterrupted party position speech in written syntax",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev073",
+  "verdict": "prepared",
+  "marker": "\"Prior to the recent State budget, I calculated that the cumulative percentage...\" \u2014 long single-topic argument with figures, no deixis",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev017",
+  "verdict": "prepared",
+  "marker": "\"I rise to also contribute to the condolence motion\" \u2014 formal tribute with dates and quotations",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev066",
+  "verdict": "prepared",
+  "marker": "\"We promised Queenslanders a fresh start, and this bill is part of delivering that\" \u2014 second-reading argument in written syntax",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "asaprev010",
+  "verdict": "prepared",
+  "marker": "\"I thank the honourable member for his question\" followed by a polished narrative with dates and dollar figures \u2014 read-in Dorothy Dixer answer",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aviprev015",
+  "verdict": "prepared",
+  "marker": "\"I commend both these bills to the house\" \u2014 formal peroration of a bill speech",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "awaprev003",
+  "verdict": "prepared",
+  "marker": "\"That is where this bill comes in\" \u2014 structured single-topic bill advocacy with parallel constructions",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cabprev043",
+  "verdict": "spontaneous",
+  "marker": "\"as the members across the way will know because many of them protested strongly during COVID\" \u2014 deixis to the room plus \"You know what?\"",
+  "confidence": "medium",
+  "second": "spontaneous",
+  "second_marker": "\"as the members across the way will know because many of them protested strongly during COVID\" \u2014 deixis to the room, plus repair \"We should all be \u2014 and I think we all are \u2014\" and trailing \"You know what?\""
+ },
+ {
+  "id": "cbcprev025",
+  "verdict": "prepared",
+  "marker": "\"These legislative changes ? the seizure of zoning, the control over parking, the ministerial veto and the curtailment of due process ?\" \u2014 parallel written syntax with a planned Animal Farm set piece",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cbcprev093",
+  "verdict": "prepared",
+  "marker": "\"Second... Third... Fourth... Fifth\" \u2014 enumerated written argument structure",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cnsprev014",
+  "verdict": "prepared",
+  "marker": "\"today I rise to recognize Acadian Fish & Chips\" \u2014 member's statement tribute",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cnsprev090",
+  "verdict": "prepared",
+  "marker": "\"I move that Bill No. 251 be read a second time\" \u2014 second-reading speech with parallel \"cuts to...\" constructions",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "conprev081",
+  "verdict": "prepared",
+  "marker": "\"I think it?s worth some time to recall the facts: In 1995...\" \u2014 extended historical exposition with dates and report names",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cskprev059",
+  "verdict": "prepared",
+  "marker": "\"Every daffodil pin worn in this House today represents a life touched by cancer\" \u2014 composed members' statement with parallel rhetorical constructions",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev052",
+  "verdict": "prepared",
+  "marker": "\"Amendments Nos 2 and 3 focus on consultation by schools\" \u2014 systematic amendment-by-amendment walkthrough",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev093",
+  "verdict": "prepared",
+  "marker": "\"I rise this afternoon to address the recent court judgement\" \u2014 formal single-topic statement in written syntax",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ushprev007",
+  "verdict": "prepared",
+  "marker": "\"``(a) In General.--The Secretary of the Air Force shall...\" \u2014 statutory amendment text inserted into the Record",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ushprev083",
+  "verdict": "prepared",
+  "marker": "\"I rise today to introduce the Qualified Immunity Accountability Act\" \u2014 bill-introduction speech in written syntax",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uwaprev021",
+  "verdict": "prepared",
+  "marker": "\"let me finish with the core point... It's about... it's about...\" \u2014 parallel peroration of a set speech",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ch127",
+  "verdict": "prepared",
+  "marker": "\"On 31 October 2025, the Security Council adopted Resolution 2797 by 11 votes in favour\" \u2014 scripted parliamentary question dense with dates and citations",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ch350",
+  "verdict": "unclear",
+  "marker": "\"I thank my hon. Friend and could not agree with her more\" \u2014 live response to an intervention, then resumption of composed speech text",
+  "confidence": "medium",
+  "second": "prepared",
+  "second_marker": "politicians, journalists, broadcasters, online influencers and ordinary citizens alike"
+ },
+ {
+  "id": "caprev046",
+  "verdict": "prepared",
+  "marker": "\"This is the context in which Bill C-10 must be understood\" \u2014 structured debate speech with committee statistics, written syntax",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev076",
+  "verdict": "prepared",
+  "marker": "\"There are higher taxes, higher inflation and a rising burden on ordinary Canadians\" \u2014 sustained partisan argument in parallel written constructions",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb137",
+  "verdict": "unclear",
+  "marker": "\"they justthey need\" and \"the rapidthe success of the rapid\" \u2014 live self-repairs inside otherwise structured advocacy",
+  "confidence": "medium",
+  "second": "prepared",
+  "second_marker": "\"to invest in recovery, to invest in treatment and to give people a real chance\" \u2014 written parallel syntax throughout; the em-dash restarts (\"the rapid\u2014the success of the rapid\") read as reading stumbles, not composition"
+ },
+ {
+  "id": "mb221",
+  "verdict": "prepared",
+  "marker": "\"Budget 2026 is about focusing on what matters most to Manitobans. It's about... It's about...\" \u2014 budget-speech parallel constructions",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "sbukp045",
+  "verdict": "spontaneous",
+  "marker": "\"While I welcome the Minister's statement... Could she reassure me\" \u2014 short question engaging the statement just delivered",
+  "confidence": "medium",
+  "second": "unclear",
+  "second_marker": "While I welcome the Minister's statement"
+ },
+ {
+  "id": "ansprev022",
+  "verdict": "prepared",
+  "marker": "\"With deep sadness, I acknowledge the passing of\" \u2014 formal condolence tribute",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev081",
+  "verdict": "prepared",
+  "marker": "\"I speak in strong support of the ePetition\" \u2014 formal petition speech in written syntax",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev021",
+  "verdict": "prepared",
+  "marker": "\"To every volunteer in the Redlands... thank you\" \u2014 members' statement with parallel tribute constructions",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev068",
+  "verdict": "prepared",
+  "marker": "\"I rise tonight to speak in support of the motion\" \u2014 long uninterrupted procedural argument, enumerated points",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "asaprev015",
+  "verdict": "prepared",
+  "marker": "\"I commend the bill to the house\" \u2014 second-reading speech walking through numbered amendments",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aviprev024",
+  "verdict": "prepared",
+  "marker": "\"Congratulations, VASSI, on reaching this amazing, wonderful milestone\" \u2014 congratulatory members' statement",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "awaprev009",
+  "verdict": "prepared",
+  "marker": "\"To sum up, the bill is a significant milestone\" \u2014 structured bill speech in written syntax",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cabprev044",
+  "verdict": "prepared",
+  "marker": "\"Dr. Wesley has this to say\" \u2014 reading extended written quotations into the record",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cbcprev029",
+  "verdict": "spontaneous",
+  "marker": "\"229,000 EVs at last count, I guess it is, and that's great\" \u2014 hedges and spoken repair throughout",
+  "confidence": "medium",
+  "second": "spontaneous",
+  "second_marker": "\"229,000 EVs at last count, I guess it is\" \u2014 live hedge/repair; broken syntax (\"this greater uptake of electric vehicle gain\")"
+ },
+ {
+  "id": "cbcprev098",
+  "verdict": "spontaneous",
+  "marker": "\"They are outside right now cheering\" \u2014 live deixis to the room and improvised aside about the mascots",
+  "confidence": "low",
+  "second": "prepared",
+  "second_marker": "Please join me in welcoming Debbie and Gabriel to the Legislature"
+ },
+ {
+  "id": "cnsprev022",
+  "verdict": "prepared",
+  "marker": "\"I rise to recognize Joanna Wexler\" \u2014 members' statement tribute",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cnsprev094",
+  "verdict": "prepared",
+  "marker": "\"We thank you. We honour you, and we reaffirm\" \u2014 parallel constructions of a recognition address",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "conprev085",
+  "verdict": "prepared",
+  "marker": "\"They want to know... They want to know... They want to know\" \u2014 written parallel syntax; only brief live asides",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cskprev069",
+  "verdict": "prepared",
+  "marker": "\"I rise today to recognize the importance of Simpson Seeds\" \u2014 members' statement",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev053",
+  "verdict": "unclear",
+  "marker": "\"albeit it veered in many different directions\" \u2014 winding-up speech mixing debate engagement and this morning's prices with polished prepared prose",
+  "confidence": "medium",
+  "second": "unclear",
+  "second_marker": "\"I thank Members for engaging robustly in the debate, albeit it veered in many different directions\" \u2014 post-debate composition evidence (plus \"Energy prices here shot up this morning\") spliced into highly polished scripted prose"
+ },
+ {
+  "id": "uniprev098",
+  "verdict": "prepared",
+  "marker": "\"During Sexual Abuse and Sexual Violence Awareness Week, we reflect\" \u2014 composed narrative address",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ushprev010",
+  "verdict": "prepared",
+  "marker": "\"(a) Revision Requirement.--Not later than 180 days\" \u2014 statutory bill text read into the record",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ushprev090",
+  "verdict": "prepared",
+  "marker": "\"It shows up at... It shows up at... It shows up in\" \u2014 rhetorical parallel constructions of a written floor speech",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uwaprev051",
+  "verdict": "prepared",
+  "marker": "\"we have established a strengthened Cabinet office to oversee and regularly review\" \u2014 staff-drafted policy recitation, no engagement with the question's specifics",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ch130",
+  "verdict": "prepared",
+  "marker": "\"The Bill lacks guiding principles\" \u2014 structured clause-by-clause written critique",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ch353",
+  "verdict": "prepared",
+  "marker": "\"New clause 5\u2014Review of mental health support for veterans\u2014\" \u2014 amendment text read verbatim into the record",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev047",
+  "verdict": "prepared",
+  "marker": "\"I believe in innovation. I believe in technology. I believe in smart environmental policy.\" \u2014 written parallel rhetoric",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev078",
+  "verdict": "prepared",
+  "marker": "\"a two-tier tax code... one for the rich Liberal friends... and another for everyone else\" \u2014 composed partisan statement in written syntax",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb167",
+  "verdict": "spontaneous",
+  "marker": "\"heckling that is happening right now... the front bench of the PC caucus is deterring me from doing my job\" \u2014 live response to interjections",
+  "confidence": "high",
+  "second": "spontaneous",
+  "second_marker": "heckling that is happening right now"
+ },
+ {
+  "id": "mb222",
+  "verdict": "prepared",
+  "marker": "\"This budget misses the mark... This budget does not provide... It does not deliver\" \u2014 parallel written budget-reply constructions",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "sbcabp007",
+  "verdict": "prepared",
+  "marker": "\"Without housing, without wraparound supports, and without options\" \u2014 parallel written syntax, no deixis to the room",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev024",
+  "verdict": "prepared",
+  "marker": "\"I commend the bill to the House\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev082",
+  "verdict": "prepared",
+  "marker": "\"On behalf of the Shooters, Fishers and Farmers Party, I contribute to debate\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev024",
+  "verdict": "prepared",
+  "marker": "\"This bill delivers reforms across several key areas\" \u2014 sustained written syntax, semicolon lists",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev071",
+  "verdict": "prepared",
+  "marker": "\"it is with great pride that I rise today to speak in support\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "asaprev023",
+  "verdict": "prepared",
+  "marker": "\"In closing, the opposition absolutely understands\" \u2014 structured serial rhetorical questions",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aviprev025",
+  "verdict": "prepared",
+  "marker": "\"Not an accounting surplus, not an operating surplus \u2014 a genuine surplus\" (polished parallelism)",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "awaprev012",
+  "verdict": "prepared",
+  "marker": "recited budget-table figures: \"the Pilbara gets 462... the Goldfields gets 195\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cabprev071",
+  "verdict": "prepared",
+  "marker": "anaphora: \"You cannot prevent... You cannot improve... You cannot claim\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cbcprev034",
+  "verdict": "prepared",
+  "marker": "\"According to recent estimates... over 100,000 hectares\" \u2014 data and quotation woven into written syntax",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cbcprev111",
+  "verdict": "prepared",
+  "marker": "\"I rise today with deep pride and strong support for Bill M210\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cnsprev032",
+  "verdict": "prepared",
+  "marker": "long uninterrupted historical narrative: \"The previous NDP government led a deliberate effort\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cnsprev098",
+  "verdict": "spontaneous",
+  "marker": "visible repair/hedge: \"I can't recall the percentage\"",
+  "confidence": "medium",
+  "second": "spontaneous",
+  "second_marker": "\"I can't recall the percentage, but the vast majority...\" \u2014 in-the-moment memory-failure repair a prepared text would not contain"
+ },
+ {
+  "id": "conprev087",
+  "verdict": "spontaneous",
+  "marker": "\"I don't know what the 'bac' in English is\" \u2014 mid-speech repair and direct address",
+  "confidence": "high",
+  "second": "unclear",
+  "second_marker": "She passed her\u2014I don't know what the 'bac' in English is"
+ },
+ {
+  "id": "cskprev088",
+  "verdict": "prepared",
+  "marker": "\"today I rise to recognize our government's commitment of $200,000\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev057",
+  "verdict": "prepared",
+  "marker": "\"The financial implications are equally stark\" \u2014 written syntax, parallel constructions",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev106",
+  "verdict": "prepared",
+  "marker": "polished tricolon \"met with silence, with obstruction and with a cold, calculated refusal\" (the Gerry Kelly deixis reads scripted)",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ushprev012",
+  "verdict": "prepared",
+  "marker": "\"Today, I rise in support of the SAVE America Act\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ushprev101",
+  "verdict": "prepared",
+  "marker": "\"I urge my colleagues to vote 'no'\" \u2014 sustained single-topic written argument",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uwaprev073",
+  "verdict": "prepared",
+  "marker": "recited statistics \"627 km of roads and filled 203,000 potholes\" in written syntax",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ch133",
+  "verdict": "prepared",
+  "marker": "\"The Government is required by law to review the right to request remote working legislation\" \u2014 uninterrupted written argument",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev004",
+  "verdict": "prepared",
+  "marker": "\"I am pleased to rise today to celebrate Canada's bees\" \u2014 crafted imagery (\"a patriot in a veil\")",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev048",
+  "verdict": "prepared",
+  "marker": "scripted anticipation: \"Government members are going to rise today and tell us\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev080",
+  "verdict": "prepared",
+  "marker": "\"Let me explain what the bill would do\" \u2014 enumerated nine-area framework in written syntax",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb169",
+  "verdict": "prepared",
+  "marker": "\"Today, I urge this government to repeal the Manitoba jobs agreement\" \u2014 formal statement close (\"Thank you\")",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb228",
+  "verdict": "spontaneous",
+  "marker": "spoken fillers and repairs: \"you know, we're tackling\", \"theythat\", \"millionbillion\"",
+  "confidence": "medium",
+  "second": "prepared",
+  "second_marker": "\"They cut health, education, raised costs, skyrocketed crime\" \u2014 compressed parallel attack lines with no engagement of any preceding speaker's words"
+ },
+ {
+  "id": "sbuscp039",
+  "verdict": "unclear",
+  "marker": "\"Let me take a different tack\" engages the exchange, but the single question is in polished written syntax with a statutory citation",
+  "confidence": "low",
+  "second": "unclear",
+  "second_marker": "Let me take a different tack with the cabinet secretary"
+ },
+ {
+  "id": "ansprev026",
+  "verdict": "prepared",
+  "marker": "\"keep recognising and rewarding the everyday heroes behind the wheel\" \u2014 peroration in written syntax, no deixis",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev088",
+  "verdict": "prepared",
+  "marker": "\"It requires properly resourced policing. It requires intelligence-led disruption. It requires early intervention.\" \u2014 parallel written constructions",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev029",
+  "verdict": "prepared",
+  "marker": "\"I will now move on to corrective services\" \u2014 signposted budget-reply speech structure",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev082",
+  "verdict": "prepared",
+  "marker": "\"This bill was an opportunity... Instead, it is a missed opportunity\" \u2014 second-reading argument in written syntax (gallery welcome is a scripted insert)",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "asaprev033",
+  "verdict": "prepared",
+  "marker": "\"This bill empowers the coordinator with recovery powers activated by regulation\" \u2014 ministerial second-reading exposition",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aviprev042",
+  "verdict": "prepared",
+  "marker": "\"The adoptive family wrote to me and said:\" \u2014 pre-selected testimonial read into the record",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "awaprev040",
+  "verdict": "prepared",
+  "marker": "\"I move: That the bill be now read a second time\" \u2014 formal second-reading speech",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cabprev077",
+  "verdict": "prepared",
+  "marker": "\"Bill 46, with its Henry VIII clauses, is not only regressive, Mr. Chair; it is reckless\" \u2014 long single-topic argument in written syntax",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cbcprev036",
+  "verdict": "prepared",
+  "marker": "\"It led me to pursue my teaching English to speakers of other languages diploma\" \u2014 composed personal-narrative (maiden-style) speech",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cbcprev115",
+  "verdict": "prepared",
+  "marker": "\"In closing, Bill 31 is unnecessary, overreaching and poorly aligned\" \u2014 structured peroration of a set speech",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cnsprev033",
+  "verdict": "prepared",
+  "marker": "\"I rise today to talk about the Powering the Offshore Act\" \u2014 set speech (one ad-libbed quip aside: \"some Nova Scotians, too, but anyway\")",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cnsprev112",
+  "verdict": "prepared",
+  "marker": "\"Actions in the Clean Power Plan include phasing out coal by 2030\" \u2014 bullet-point document read into the record",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "conprev088",
+  "verdict": "prepared",
+  "marker": "\"At a record of $244 billion, this budget has every opportunity to make strategic investments\" \u2014 composed budget-response with bilingual scripted opening",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cskprev106",
+  "verdict": "prepared",
+  "marker": "\"The official government page on incentives lays out the tools available\" \u2014 recited program details (LPRP, multi-lat) from notes",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev059",
+  "verdict": "prepared",
+  "marker": "\"We will support the amendments and clauses that will provide councils with effective and workable powers\" \u2014 scripted voting-position winding-up (spontaneous only in the opening refusal to give way)",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev108",
+  "verdict": "prepared",
+  "marker": "\"There is another forgotten voice in the conversation: the siblings.\" \u2014 rhetorically structured written argument",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ushprev013",
+  "verdict": "prepared",
+  "marker": "\"Strike Sec. 4 and insert the following and redesignate the subsequent sections accordingly\" \u2014 verbatim amendment text read into the record",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ushprev103",
+  "verdict": "prepared",
+  "marker": "\"Second, my amendment would have... Third, my amendment would have... Fourth, my amendment would have\" \u2014 enumerated written parallel structure",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uwaprev088",
+  "verdict": "prepared",
+  "marker": "\"The British Soft Drinks Association has warned... by up to 50p\" \u2014 sourced figures in a set contribution (conversational asides like \"I don't know about you\" are flavor, not composition)",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ch136",
+  "verdict": "prepared",
+  "marker": "\"6,700 sexually abusive images are produced by AI every single hour, 99% of which target women and children\" \u2014 dense prepared statistics with scripted Irish opening",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev013",
+  "verdict": "prepared",
+  "marker": "\"This Christmas, let us come together to share kindness\" \u2014 members'-statement tribute in written syntax",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev050",
+  "verdict": "prepared",
+  "marker": "\"Let us listen to the warnings... Let us listen to the families... Let us remember\" \u2014 anaphoric written peroration",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev092",
+  "verdict": "spontaneous",
+  "marker": "\"as one of my colleagues on the other side said this morning\" \u2014 engaging remarks made in the room, with loose repairing syntax (\"doing something here... to make sure we are doing something\")",
+  "confidence": "high",
+  "second": "spontaneous",
+  "second_marker": "\"as one of my colleagues on the other side said this morning\" \u2014 deixis to same-day speeches, plus mid-sentence syntactic derailment inserting a second colleague reference"
+ },
+ {
+  "id": "mb180",
+  "verdict": "unclear",
+  "marker": "\"we gave the plan teeth by pressingby passing\" \u2014 visible repair and live partisan jab spliced into a recited record of achievements",
+  "confidence": "medium",
+  "second": "prepared",
+  "second_marker": "In 2018... It established a $40-million climate and green fund"
+ },
+ {
+  "id": "mb237",
+  "verdict": "unclear",
+  "marker": "\"that is what the minister should be acknowledging\" engages the preceding answer, but the Shawn Wood quote (\"That's Shawn Wood with the Construction Association\") is a scripted supplementary",
+  "confidence": "medium",
+  "second": "unclear",
+  "second_marker": "\"that is what the minister should be acknowledging\" \u2014 live rebuttal of the immediately preceding answer, but the body is a read-out prepared quote (\"That's Shawn Wood with the Construction Association of Rural Manitoba\")"
+ },
+ {
+  "id": "sbcnsp039",
+  "verdict": "prepared",
+  "marker": "\"I rise today to commend the inspiring advocacy of Esther Uhlman\" \u2014 formal members'-statement tribute",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev029",
+  "verdict": "prepared",
+  "marker": "\"I wholeheartedly commend it to the House\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev091",
+  "verdict": "prepared",
+  "marker": "\"When people understand the land, they respect it. When they respect it, they protect it.\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev033",
+  "verdict": "prepared",
+  "marker": "\"The bill has been drafted with due regard to fundamental legislative principles\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev098",
+  "verdict": "prepared",
+  "marker": "\"That is why this regulation should be disallowed\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "asaprev047",
+  "verdict": "prepared",
+  "marker": "\"I indicate that I will be the lead speaker for the opposition on this bill\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aviprev056",
+  "verdict": "prepared",
+  "marker": "\"$16.7 million over two years\" (detailed budget figures in written syntax)",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "awaprev042",
+  "verdict": "prepared",
+  "marker": "\"I want to put these questions on record\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cabprev085",
+  "verdict": "spontaneous",
+  "marker": "\"I can see the minister of transportation shaking his head\"",
+  "confidence": "medium",
+  "second": "spontaneous",
+  "second_marker": "I can see the minister of transportation shaking his head"
+ },
+ {
+  "id": "cbcprev040",
+  "verdict": "prepared",
+  "marker": "\"Clauses 10 through 22 introduce new tax credits\" (clause-by-clause written brief)",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cbcprev117",
+  "verdict": "prepared",
+  "marker": "\"The first concern is transparency\" (enumerated written structure)",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cnsprev037",
+  "verdict": "prepared",
+  "marker": "\"I move that Bill No. 3 ... be now read a second time\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "conprev001",
+  "verdict": "prepared",
+  "marker": "\"If passed, the measures in this package will save\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "conprev093",
+  "verdict": "prepared",
+  "marker": "\"Let's talk a little bit about what the motion proposes\" then quotes motion text verbatim",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cskprev119",
+  "verdict": "prepared",
+  "marker": "\"I rise to recognize the invaluable contribution\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev076",
+  "verdict": "prepared",
+  "marker": "\"Amendment No 25 will remove subsection (3) of clause 31\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev116",
+  "verdict": "unclear",
+  "marker": "opens engaging preceding speaker's words (\"'A very heavy heart': that is an admission\") but continues in composed Orwell argument",
+  "confidence": "medium",
+  "second": "prepared",
+  "second_marker": "crafted parallel oratory \"If digital ID cards are wrong for Belfast, they are equally wrong for Birmingham... Freedom does not stop at Larne\" \u2014 written set-piece despite the opening riposte quoting the previous speaker"
+ },
+ {
+  "id": "ushprev023",
+  "verdict": "prepared",
+  "marker": "\"Mr. Speaker, I rise to celebrate a true pillar of faith\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ushprev105",
+  "verdict": "prepared",
+  "marker": "\"women like Abigail Adams, Harriet Tubman, and Clara Barton\" (polished parallel tribute)",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uwaprev093",
+  "verdict": "unclear",
+  "marker": "live repair \"or for monitoring water pollution, not responsible for water pollution\" atop otherwise composed question",
+  "confidence": "medium",
+  "second": "unclear",
+  "second_marker": "or for monitoring water pollution, not responsible for water pollution"
+ },
+ {
+  "id": "ch155",
+  "verdict": "prepared",
+  "marker": "\"I support this motion and Deputy Gibney's proposed amendment\" (uninterrupted written argument)",
+  "confidence": "medium",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev017",
+  "verdict": "prepared",
+  "marker": "\"Before I forget, I will be splitting my time\" \u2014 ad-lib insert into scripted parallel \"We count...\" speech",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev051",
+  "verdict": "prepared",
+  "marker": "\"We have introduced several major bills: Bill C-2 ... C-12 ... C-14\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev093",
+  "verdict": "prepared",
+  "marker": "\"I rise today not only to acknowledge his continued contributions\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb186",
+  "verdict": "prepared",
+  "marker": "\"I rise today to speak on an issue that affects many vulnerable individuals\"",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb251",
+  "verdict": "prepared",
+  "marker": "\"It is the parent... It is a renter... It is the homeowner...\" (parallel written construction)",
+  "confidence": "high",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "sbavip015",
+  "verdict": "spontaneous",
+  "marker": "\"While I am at it, actually Elia's Trend Caf\u00e9\" plus \"Vicki Ward interjected\"",
+  "confidence": "high",
+  "second": "spontaneous",
+  "second_marker": "\"While I am at it, actually Elia's Trend Caf\u00e9 there\" \u2014 self-interrupting digression with room deixis and an interjection (\"Vicki Ward interjected\")"
+ },
+ {
+  "id": "ansprev042",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I call on this House to act decisively\" + uninterrupted statistics-laden argument",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ansprev093",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "parallel triad \"We are asking for honesty. We are asking for transparency. We are asking for accountability\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev043",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I rise tonight to speak on behalf of the hardworking people of the Mansfield electorate\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aqlprev099",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"That is why I support this bill and I commend it to the House\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "asaprev049",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "rhetorical parallel cascade \"Will this government commit to... Will it commit to...\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "aviprev058",
+  "verdict": "prepared",
+  "confidence": "medium",
+  "marker": "opens \"You did.\" (deixis to interjection) but then long written-syntax argument \"We called out Labor's deal... We said... We offered...\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "awaprev073",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I said at the beginning of this speech that this budget was a betrayal\" + anaphora \"This betrayal...\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cabprev092",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "composed narrative set-piece \"I want to take you into the kindergarten classroom in Edmonton-Ellerslie last month\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cbcprev043",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "parallel construction \"For young people... For families... For local governments... For workers, this bill means\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cnlprev014",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "long enumerated written-syntax argument \"improved concentration in classrooms; better sleep habits; more time spent outdoors\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "cnsprev041",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "crafted peroration \"Stand with community, stand on principle, stand in your power, and stand with us\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "conprev008",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "structured written enumeration \"first, that violence is not... The second truth was about structure\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "conprev097",
+  "verdict": "prepared",
+  "confidence": "medium",
+  "marker": "rehearsed metaphor \"taking a spoon to empty a bathtub while the tub is still running\" leading to a scripted QP question",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev000",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "dense cited statistics in written syntax \"almost 1,800 people were waiting... a four-week delay... increases the risk of death by 13% to 16%\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uniprev077",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "composed critique of the motion text: \"so detached, vague, hollow and bereft of real proposals that it reads like a grievance\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uscprev019",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "crafted closing \"My call to the Parliament is clear\" + quotation flourish \"stop the world?Scotland is getting on\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ushprev026",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"Madam Speaker, I rise today in honor of the life and legacy of Darlene Marcelle\" (tribute read into the record)",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ussprev009",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "Statement of Administration Policy read into record: \"The Administration strongly supports passage of H.J. Res. 131\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "uwaprev118",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "long single-topic written argument \"This settlement does nothing to address that cycle and leaves councils stuck in crisis management\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "ch156",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "prepared brief with figures \"its minor works grant is just over \u20ac8,700 but a basic project like painting the school costs over \u20ac21,000 plus VAT\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev019",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "uninterrupted written-syntax case \"In 2025, the special access program processed nearly 12,000 requests\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev052",
+  "verdict": "prepared",
+  "confidence": "medium",
+  "marker": "enumerated platform \"First, we should stop... Second, we should target...\" (though cut off mid-sentence)",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "caprev095",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I rise in the chamber today to address Bill C-9\" + parallel \"We stand against... We stand with... We also stand for\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb189",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "formulaic awareness-month statement close \"Thank you, Honourable Speaker\"",
+  "second": null,
+  "second_marker": null
+ },
+ {
+  "id": "mb254",
+  "verdict": "unclear",
+  "confidence": "low",
+  "marker": "rote procedural formula to the chair \"canvass the House for leave to not see the clock\" \u2014 too short/formulaic to tell",
+  "second": "prepared",
+  "second_marker": "canvass the House for leave to not see the clock"
+ },
+ {
+  "id": "sbansp009",
+  "verdict": "prepared",
+  "confidence": "high",
+  "marker": "\"I rise to speak on the Review of the 2023-2024 Annual Reports\" + statutory citation \"section 8 (2A)\"",
+  "second": null,
+  "second_marker": null
+ }
+]

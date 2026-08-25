@@ -18,8 +18,8 @@ one cross-cutting consistency reviewer. Every finding was then handed to a
 separate refute-by-default adversary; only CONFIRMED and PARTIAL findings
 appear below, PARTIAL with the corrected version stated.
 
-**Counts.** 143 findings survived refutation of 157 raised:
-**1 critical, 65 major, 77 minor** (120 CONFIRMED, 23 PARTIAL);
+**Counts.** 142 findings survived refutation of 157 raised:
+**1 critical, 65 major, 76 minor** (119 CONFIRMED, 23 PARTIAL);
 1 refuted; none unresolved.
 
 Findings are ordered severity-first, CONFIRMED before PARTIAL, grouped by
@@ -880,19 +880,7 @@ segments as wholly machine had been flattering the middle rung.
 
 ## MINOR — CONFIRMED
 
-### AL13. [argument-logic] §2.1 / §5.1 (calibration and the floor claim)
-
-> with Sp = 1 and any real detector's Se ≤ 1, the observed flag rate is a conservative floor on true prevalence, so every §2.2 figure is if anything an underestimate of machine text.
-
-**Problem.** The floor logic treats the specificity point estimate as exact while the paper quotes an interval. At the paper's own Wilson lower bound (Sp = 0.997) combined with its own preferred external sensitivity anchor (Se = 0.993), Rogan–Gladen gives τ = (0.0903 − 0.003)/(0.993 − 0.003) ≈ 8.8% < 9.03% — so 'if anything an underestimate' is not entailed by the paper's own numbers. Assuming Sp = 1 exactly is the anti-conservative direction, presented inside a passage framed as 'deliberately the most conservative choice' (and §5.1 is titled 'Calibration makes every estimate conservative').
-
-**Reviewer's check.** Recomputed Rogan–Gladen at the quoted specificity interval boundary and the quoted RAID recall; magnitude of the possible overstatement ≈ 0.2pp on the pooled headline.
-
-**Refuter's verification.** Quote verbatim in §2.1. All 1,260 specificity controls are dated ≤2022-06-30 (§4: 'control — 60 segments dated on or before 2022-06-30'; 21 chambers × 60), so Sp=1 is measured only on pre-2022 human speech while the floor claim needs Sp=1 on 2025-26 speech. The Rogan–Gladen derivation in §5.1 confirms τ=π/Se assumes Sp=1 on the measured population. The paper's own text concedes the mechanism: §2.4 'Contemporary human speech is the harder class to separate — as the permeation finding predicts' and §3.6 'detector methods get ambiguous because the human baseline is moving toward the thing being detected.' §3.5's specificity bullet names only the tribute-genre gap, never the temporal-transfer gap. No contemporary-human specificity bound exists anywhere in the study (no ground truth exists per §3.5). Best attack — that controls are drawn from 2018–2022, already 25 years into the drift, so the marginal post-2022 drift is small — mitigates magnitude but the unconditional 'floor' claim still rests on an unstated transfer assumption the study's own second headline makes non-trivial. [verdict carried from the first refutation pass; this dimension's second-pass refuter hit the session limit]
-
-**Suggested fix.** State the floor claim as holding at the measured point estimate, note it can fail by ~0.2pp at the specificity interval's boundary, and propagate the specificity interval into the pooled CI.
-
-### AL14. [argument-logic] §2.9.5 (Flight)
+### AL13. [argument-logic] §2.9.5 (Flight)
 
 > That is chase-and-flight: a marker loses value as it is copied, so the group that holds it abandons the most conspicuous forms first.
 

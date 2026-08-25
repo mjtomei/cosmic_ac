@@ -1,0 +1,5 @@
+classified 316: prepared 277, unclear 21, spontaneous first-vote 18, both votes 11
+of the 11: 9 are Mixed at fractions [0.11, 0.16, 0.2, 0.2, 0.38, 0.4, 0.41, 0.48, 0.58]; 2 near-full
+machine-word weight of the 11: 1176 (fraction) / 2757 (full)
+headline 9.03% -> 8.86% (fraction-weighted removal)
+headline 9.03% -> 8.65% (full-word removal)
