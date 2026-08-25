@@ -156,7 +156,12 @@ Per chamber, two strata:
 - **control** — 60 segments dated on or before **2022-06-30**. Not
   2022-12-31: ChatGPT shipped 2022-11-30, and a "pre-AI" control dated
   December 2022 is not pre-AI. Every chamber had ample earlier material, so
-  the tighter cutoff cost nothing.
+  the tighter cutoff cost nothing. One sampling difference across chambers,
+  disclosed: the four-chamber dashboard rescore that supplies the UK and
+  Ireland long-band controls drew to 2022-11-17, so seven of its 120 control
+  rows sit past the 2022-06-30 rule — all pre-ChatGPT, all reading Human.
+  CA-FED's seven late controls were redrawn to the rule (footnote r42ca);
+  every other chamber obeys 2022-06-30 as stated.
 - **prevalence** — segments dated 2025-01-01 or later, sampled uniformly at
   random with no detector-screen stratification.
 
@@ -385,8 +390,11 @@ our packer; a rate over words is invariant to how the text was cut up. This is
 not cosmetic: prevalence sampling draws segments uniformly, which oversamples
 short pieces by count, and **longer pieces are markedly more machine-drafted**
 — across the pooled prevalence sample the longest quartile of segments runs
-9.4% against 5.8% for the shortest (review item X12).[^revcodes] Segment-weighting would
-therefore understate the rate by about 0.6 points; word-weighting is exactly
+11.3% against 0.7% for the shortest, word-weighted — 15.2% against 1.0% as
+binary segment rates (pooled sample; review item X12).[^revcodes]
+Segment-weighting would therefore understate the word rate — by 0.05 points
+against the binary segment rate (8.98% vs 9.03%), and by 2.20 points against
+the fraction-weighted segment mean (6.83%); word-weighting is exactly
 the correction, not an aesthetic choice, and every rate in this study is
 word-weighted for this reason. The weighting is applied *after* a uniform
 draw over segments, not by sampling proportional to length, so the estimator
@@ -407,9 +415,12 @@ word-weighted pooled rate** (9.12% against the 9.03% headline;
     note in the Supplementary materials.
 
 *Weighted by AI fraction, because a flagged segment is not uniformly flagged.*
-The flagged segments are not one kind: of the 364 flagged prevalence segments,
-**217 are full AI verdicts and 147 (40%) are Mixed** — Pangram reporting that
-part of the segment is human. Counting a Mixed segment's words as fully machine
+The flagged segments are not one kind: of the estimator's 316 flagged
+prevalence segments, **182 are full AI verdicts and 134 (42%) are Mixed** —
+Pangram reporting that part of the segment is human. (Both numbers in this
+paragraph are computed on the same sample the headline uses; an earlier
+draft quoted a 364-segment count that mixed in the genre-arm rows and a
+superseded Manitoba draw.) Counting a Mixed segment's words as fully machine
 over-states the rate by a third — **12.03% against 9.03%** — so the split is
 not cosmetic, and folding Mixed in at full weight (as a naive AI+Mixed count
 would) is the single largest upward bias in the headline. Every flagged segment
@@ -423,16 +434,16 @@ count.[^r42f]
 
 | chamber | rate | 95% CI | | chamber | rate | 95% CI |
 |---|---|---|---|---|---|---|
-| NSW | **19.8%** | [13.2, 26.9] | | IE | 7.5% | [3.6, 12.2] |
-| CA-FED | 18.5% | [12.5, 24.6] | | VIC | 7.3% | [3.5, 11.7] |
-| QLD | 15.8% | [9.9, 22.1] | | SA | 6.8% | [2.9, 11.3] |
-| BC | 14.2% | [8.3, 20.4] | | WA | 4.9% | [1.4, 9.1] |
-| MB | 13.1% | [8.1, 18.6] | | WAL | 4.9% | [1.6, 8.9] |
-| NI | 13.1% | [8.1, 18.6] | | SK | 4.1% | [1.3, 7.5] |
+| NSW | **19.8%** | [13.1, 26.9] | | IE | 7.5% | [3.5, 12.3] |
+| CA-FED | 18.5% | [12.6, 24.6] | | VIC | 7.3% | [3.5, 11.7] |
+| QLD | 15.8% | [9.9, 21.9] | | SA | 6.8% | [2.9, 11.4] |
+| BC | 14.2% | [8.3, 20.4] | | WA | 4.9% | [1.3, 9.1] |
+| MB | 13.1% | [7.9, 18.8] | | WAL | 4.9% | [1.6, 8.9] |
+| NI | 13.1% | [8.0, 18.6] | | SK | 4.1% | [1.3, 7.5] |
 | **US House** | **12.1%** | [7.0, 17.7] | | SCO | 3.9% | [1.0, 7.4] |
 | ON | 11.1% | [6.1, 16.8] | | NL | 3.3% | [0.8, 6.6] |
-| NS | 10.0% | [5.4, 15.2] | | UK | 2.5% | [0.7, 4.8] |
-| AB | 7.8% | [3.9, 12.2] | | **US Senate** | **1.8%** | [0.1, 4.1] |
+| NS | 10.0% | [5.5, 15.1] | | UK | 2.5% | [0.7, 4.8] |
+| AB | 7.8% | [3.9, 12.3] | | **US Senate** | **1.8%** | [0.1, 4.1] |
 
 Intervals are cluster bootstraps over segments, not Wilson intervals: the
 estimator is a ratio of two random sums whose numerator and denominator move
@@ -544,9 +555,9 @@ procedure permits**, which is the mechanism under test:
 
 | genre, 2025–26 | flagged words | 95% CI |
 |---|---|---|
-| **SO31** — one-minute scripted set-pieces | **32.3%** | [21.0, 44.1] |
-| Government Orders — mixed prepared and spontaneous | 19.9% | [10.4, 30.3] |
-| **Oral Questions** — not on notice | **9.8%** | [2.3, 19.2] |
+| **SO31** — one-minute scripted set-pieces | **32.3%** | [21.5, 44.1] |
+| Government Orders — mixed prepared and spontaneous | 19.9% | [10.5, 30.5] |
+| **Oral Questions** — not on notice | **9.8%** | [2.2, 19.1] |
 | all three pre-AI controls (0/180) | **0.0%** | [0.0, 2.1] |
 
 **SO31 vs OQ: 3.29×, +22.5pp, permutation p = 0.0025.**

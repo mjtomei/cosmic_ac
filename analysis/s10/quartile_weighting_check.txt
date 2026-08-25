@@ -1,0 +1,3 @@
+shortest quartile: 0.7% word-weighted, 1.0% binary-segment
+longest quartile:  11.3% word-weighted, 15.2% binary-segment
+segment-weighted binary 8.98% | segment-weighted fraction 6.83% | word-weighted 9.03%

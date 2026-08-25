@@ -4,54 +4,6 @@
 
 ## MAJOR — CONFIRMED
 
-### CP1. [calibration+prevalence] 4.2 (flagged-segment composition)
-
-> of the 364 flagged prevalence segments, **217 are full AI verdicts and 147 (40%) are Mixed**
-
-**Problem.** These counts do not describe the sample behind the 9.03% headline. The committed estimator (banded_prevalence.load()) contains 316 flagged prevalence segments: 182 AI and 134 Mixed (42%). The 364/217/147 set is a different population — it includes the CA-FED genre-arm rows (217 AI / 146 Mixed = 363 when TAS is excluded but the genre arm included), which §4.2 itself says are excluded from the chamber/pooled prevalence. Meanwhile the 12.03%-vs-9.03% comparison in the same paragraph IS computed on the estimator's 316-segment set, so the paragraph mixes two populations.
-
-**Reviewer's check.** Ran banded_prevalence.py (prints 316 flagged of 3,519 prev segments); replicated load()'s exact filters over the five verdict CSVs to get the verdict split (182 AI / 134 Mixed); relaxing only the CA-FED genre exclusion reproduces 217 AI / 146 Mixed = 363; reproduced 12.031% as the full-weight rate on the estimator's own sample.
-
-**Refuter's verification.** Quote verbatim in S10-WRITEUP-DRAFT.md (§4.2) and the render. The committed estimator (banded_prevalence.py) prints 316 flagged of 3,519 prevalence segments; replicating load() with verdicts kept gives 182 AI / 134 Mixed. The 12.03%-vs-9.03% comparison in the same paragraph reproduces exactly on that 316-flag sample, so the paragraph does mix two populations. One correction to the reviewer's diagnosis: relaxing only the CA-FED genre exclusion gives 357 (212 AI / 145 Mixed), not 363; the writeup's 364 = 217 AI + 147 Mixed reproduces exactly only when the genre arm is included AND Manitoba is double-counted (superseded draw plus redraw) — an even less defensible population than the reviewer supposed. The defect as stated survives fully.
-
-**Suggested fix.** Quote the estimator's sample: 316 flagged segments, 182 AI and 134 Mixed (42%), or state explicitly that the 364 count spans the genre arm too and reconcile the residual off-by-one on Mixed.
-
-### CP2. [calibration+prevalence] 2. Data (control window) / 3.1
-
-> **control** — 60 segments dated on or before **2022-06-30**. Not 2022-12-31: ChatGPT shipped 2022-11-30, and a "pre-AI" control dated December 2022 is not pre-AI.
-
-**Problem.** Seven control segments loaded into the pooled control set violate the stated cutoff: pangram_ch_p4_verdicts.csv rows ch055–ch059 (Dáil, 2022-09-21 to 2022-11-17) and ch238–ch239 (UK Commons, 2022-09-08 and 2022-10-27). All are still pre-ChatGPT and all scored Human, so no number moves, but the design claim is false as written for the UK/IE arm — the same defect footnote r42ca says was repaired for CA-FED was left in place for UK and Ireland.
-
-**Reviewer's check.** Loaded banded_prevalence.load() with its META side table and listed every ctl row dated after 2022-06-30: exactly the 7 UK/IE rows above; all other files (p4 expansion, CA uniform ctl incl. cafedctl2*, shortband, MB redraw) have zero violations.
-
-**Refuter's verification.** Quote verbatim in the Data section. Loading banded_prevalence.load() with its META side table lists exactly seven control rows dated after 2022-06-30, all in pangram_ch_p4_verdicts.csv: IE ch055–ch059 (2022-09-21 to 2022-11-17) and UK ch238/ch239 (2022-09-08, 2022-10-27). All seven scored Human and all predate ChatGPT, so no number moves, but the stated design rule is violated for the UK/IE arm and nothing in the draft discloses it — while footnote r42ca documents that the identical defect in CA-FED was found and repaired on 2026-08-13. No other loaded file has violations.
-
-**Suggested fix.** Either replace/floor the seven UK/IE controls as was done for CA-FED, or amend the Data section to state the UK/IE long-band controls run to 2022-11-17 (pre-ChatGPT) and disclose the exception.
-
-### CP3. [calibration+prevalence] 4.2 (word-weighting rationale, X12)
-
-> the longest quartile of segments runs 9.4% against 5.8% for the shortest (review item X12). Segment-weighting would therefore understate the rate by about 0.6 points
-
-**Problem.** Neither figure reproduces on the committed pooled sample. Across the pooled prevalence sample the longest/shortest quartiles run 15.2%/1.0% (binary segment rates) or 11.3%/0.7% (word-weighted); the long band alone gives 14.8%/5.8% — the quoted 5.8% matches the long band only, so the numbers were computed on a different scope than the text states. And segment-weighting understates by 0.05 points (8.98% vs 9.03% binary) or 2.19 points (fraction-weighted segment mean 6.83%), not "about 0.6 points". The direction of the argument survives — the specific figures are wrong.
-
-**Reviewer's check.** Computed quartile rates (binary and word-weighted) and segment- vs word-weighted rates on banded_prevalence.load()'s prevalence rows, for all bands and for the long band alone; compared with banded_prevalence.py's own printed seg-wtd 8.98% vs word-wtd 9.03%.
-
-**Refuter's verification.** Quote verbatim. On the committed pooled prevalence sample the quartile contrast is 15.2%/1.0% (binary segment rates) or 11.3%/0.7% (word-weighted); the long band alone gives 14.8%/5.8% binary — so the quoted 5.8% matches only the long band, and 9.4% reproduces nowhere on current data. The understatement is 0.05 points (seg-wtd binary 8.98% vs word-wtd 9.03%, both printed by banded_prevalence.py) or 2.2 points against the fraction-weighted segment mean (6.83%); nothing gives 0.6. The argument's direction (longer segments more machine-drafted, so segment-weighting understates) does survive — the specific figures do not.
-
-**Suggested fix.** Recompute the quartile contrast and the understatement on the current pooled sample and state which sample (all bands) it is computed on; commit the computation.
-
-### CP4. [calibration+prevalence] 4.2 (per-chamber CI table) / Results intro
-
-> every number reproduces from a committed script
-
-**Problem.** The per-chamber bootstrap CIs do not reproduce: banded_prevalence.table() seeds each chamber's bootstrap with abs(hash(ch)) % 10000, and Python string hashing is randomized per process, so every run yields different CI bounds (e.g. NSW [13.17, 26.89] one run, [13.21, 26.79] the next). The table's printed bounds match the writeup only to within this jitter, and MB and NI carry the identical interval [8.1, 18.6] in the writeup, which no run I produced reproduces for NI. prevalence_report.py's wboot seeds (abs(hash(c)) % 9999) have the same defect.
-
-**Reviewer's check.** Ran the table twice in separate processes and diffed the CI bounds; read boot_ci()/wboot() seeding code; confirmed the pooled CI (seed=7) is deterministic and matches [8.00, 10.08] exactly.
-
-**Refuter's verification.** Quote verbatim (Results intro, draft line 286 / render line 111). boot_ci() is seeded with abs(hash(ch)) % 10000 and Python string hashing is per-process randomized, so the per-chamber CI bounds differ on every run (NSW [13.20, 27.02] then [13.15, 26.86] in consecutive processes); even PYTHONHASHSEED=0 does not recover the writeup's MB [8.1, 18.6] (gives [8.0, 18.8]). prevalence_report.py's wboot seeds (abs(hash(c)) % 9999) share the defect. The pooled CI uses seed=7, is deterministic, and matches the writeup's [8.00, 10.08] exactly — the defect is confined to the per-chamber (and per-genre) intervals.
-
-**Suggested fix.** Seed with a deterministic function of the chamber name (e.g. int(hashlib.sha1(ch.encode()).hexdigest(),16) % 10000) or a fixed map, rerun, and repaste the CI columns.
-
 ### CE1. [claims-vs-evidence] Abstract (repeated in Introduction and §3.3)
 
 > This machine-drafted speech is not degraded: once genre is held fixed, AI-flagged contributions are better-formed and no less engaged.
@@ -1632,7 +1584,7 @@
 
 **Method.** Thirteen blind reviewers, one dimension each: seven data dimensions reproducing numbers from the committed artifacts and reading estimator code (calibration+prevalence, genre+screen, series/trend/cross-chamber, cohort+class, occupational-prereg, post-training/coverage/permeation, quality+bypass), five narrative/argument dimensions on the compiled publication-order paper (claims-vs-evidence, internal-consistency, argument-logic, comparability, storyline), and one cross-cutting consistency reviewer. Every finding was handed to a refute-by-default adversary; only CONFIRMED and PARTIAL findings appear, PARTIAL with the corrected version stated. "Also flagged by" marks the same defect under another lens — adjudicate once, apply everywhere.
 
-**Counts.** 126 open (0 critical, 53 major, 73 minor; 104 CONFIRMED, 22 PARTIAL); 1 refuted; 0 unresolved.
+**Counts.** 122 open (0 critical, 49 major, 73 minor; 100 CONFIRMED, 22 PARTIAL); 1 refuted; 0 unresolved.
 
 **For the next review cycle (Matthew, 2026-08-25).** Matthew liked the argument-logic lens's points more than much of the previous review (having read that block first — not a ranking over unread lenses); next cycle, expand it to one AL worker per section (a 12-section fleet with refuters was drafted and briefly started this cycle, then stopped on Matthew's instruction to hold it for the next cycle — the script is committed at workflows/scripts/al-per-section-2026-08-25-*.js and its partial run is resumable).
 
@@ -1643,6 +1595,10 @@
 
 ## RESOLVED since the review ran
 
+- **[major] [calibration+prevalence]** 4.2 (flagged-segment composition): "of the 364 flagged prevalence segments, **217 are full AI verdicts and 147 (40%) are Mixed..." — *adjudicated (Matthew: both results on one set; pushback accepted on WHICH set): the unified sample is the estimator's 316 — the 364 'full set' would double-count Manitoba through a superseded known-buggy draw and pool the genre-arm's imposed 60/60/60 mix into a chamber sample. §4.2 now reports 182 AI / 134 Mixed (42%) on the estimator sample, with a parenthetical retiring the 364 count, and the 12.03-vs-9.03 comparison sits on the same rows*
+- **[major] [calibration+prevalence]** 2. Data (control window) / 3.1: "**control** — 60 segments dated on or before **2022-06-30**. Not 2022-12-31: ChatGPT shipp..." — *adjudicated (Matthew): Data section amended with the sampling difference disclosed — the UK/IE four-chamber rescore drew controls to 2022-11-17 (seven of 120 rows past the 2022-06-30 rule, all pre-ChatGPT, all Human), CA-FED's late controls were redrawn to the rule, every other chamber obeys it as stated*
+- **[major] [calibration+prevalence]** 4.2 (word-weighting rationale, X12): "the longest quartile of segments runs 9.4% against 5.8% for the shortest (review item X12)..." — *adjudicated (Matthew): recomputed on the pooled sample and committed (quartile_weighting_check.py): longest quartile 11.3% vs shortest 0.7% word-weighted (15.2% vs 1.0% binary); understatement 0.05pp vs the binary segment rate and 2.20pp vs the fraction-weighted mean. Band status confirmed to Matthew: no result is band-conditioned anymore — remaining mentions are sampling-strata descriptions, the labeled exploratory bypass note in the nulls appendix, and unrelated senses of the word*
+- **[major] [calibration+prevalence]** 4.2 (per-chamber CI table) / Results intro: "every number reproduces from a committed script..." — *adjudicated (Matthew, + repo sweep): banded_prevalence.table and prevalence_report's two wboot sites now seed from sha1 of the cell name — byte-identical across runs (verified by double-run diff). Table 2's twenty CI cells and the three genre CIs repasted from the deterministic rerun (shifts <=0.2pp; the MB/NI identical-interval oddity resolved). Sweep found no other uncontrolled seeds feeding reported numbers: prereg_stage1/2 seed 20260818, vector_analysis kmeans seed 0, long_trend bootstraps seeded, formation_summary has no RNG*
 - **[critical] [occupational-prereg]** Results 4.6b (headline framing): "The design intent, registered in the document's hierarchy section and throughout the pre-r..." — *adjudicated (Matthew): lead rewritten as a timeline; minute-level registration footnote added (12:04 transcript prediction → 13:05 prereg commit → 13:17 unblinding → 13:36 amendment → 17:21 ruling); meta-point on pervasive logging added*
 - **[minor] [occupational-prereg]** Results 4.6b (cross-reference): "that operationalization failed its own test and the framing is retired — Appendix B8 prese..." — *fixed: duplicate of the B8→B10 pointer correction (mechanical batch)*
 - **[major] [quality+bypass]** 4.9 Bypass study (flip vs success paragraph): "Effort raised both bars, and by *more* on the flip bar (2.8×) than on the success bar (5.5..." — *fixed: same direction correction*

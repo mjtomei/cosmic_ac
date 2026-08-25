@@ -39,6 +39,7 @@ distinguish machine drafting from a change in how the record is produced.
 Usage: python prevalence_report.py
 """
 import csv
+import hashlib
 import math
 import os
 from collections import Counter, defaultdict
@@ -136,7 +137,7 @@ def main():
         sp = (len(ctl) - fp) / len(ctl) if ctl else float("nan")
         kw, w, wr = wrate(prev)
         k, n = sum(r["pangram"] in FLAG for r in prev), len(prev)
-        lo, hi = wboot(prev, seed=abs(hash(c)) % 9999)
+        lo, hi = wboot(prev, seed=int(hashlib.sha1(c.encode()).hexdigest(), 16) % 9999)
         # Sp-only floor: with Se unestimated and <=1, tau >= wr-(1-sp).
         tau = f"{max(0.0, wr - (1 - sp)):.1%}" if ctl else ""
         flagreg = any(r.get("regime_flag") for r in prev)
@@ -194,7 +195,7 @@ def main():
                 if not sub:
                     continue
                 kw, w, wr = wrate(sub)
-                lo, hi = wboot(sub, seed=abs(hash(g + s)) % 9999)
+                lo, hi = wboot(sub, seed=int(hashlib.sha1((g + s).encode()).hexdigest(), 16) % 9999)
                 print(f"  {g:<7s} {s:<5s} {kw:>8,.0f} {w:>8,} {wr:>6.1%} "
                       f"{'[' + format(100*lo, '.1f') + ', ' + format(100*hi, '.1f') + ']':>16s} "
                       f"{len(sub):>5d}")

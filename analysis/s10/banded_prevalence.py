@@ -30,6 +30,7 @@ Usage: python banded_prevalence.py
 """
 import collections
 import csv
+import hashlib
 import json
 import os
 import sys
@@ -280,7 +281,7 @@ def table(rows):
     for ch in sorted({r[0] for r in prev}):
         c = [r for r in prev if r[0] == ch]
         n, k, sr, w, wk, wr = rate(c)
-        lo, hi = boot_ci(c, seed=abs(hash(ch)) % 10000)
+        lo, hi = boot_ci(c, seed=int(hashlib.sha1(ch.encode()).hexdigest(), 16) % 10000)
         out.append((ch, wr, lo, hi, n, w, wk))
     for ch, wr, lo, hi, n, w, wk in sorted(out, key=lambda x: -x[1]):
         print(f"  {ch:<11s} {wk:>11,.0f} {w:>10,} {100*wr:>6.1f}% "
