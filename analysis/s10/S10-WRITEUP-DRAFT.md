@@ -2,7 +2,7 @@
 
 ## Abstract
 
-We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* — the excess vocabulary language models overuse, derived in prior work from the post-2022 jump in scholarly text, run here as a fixed ruler across four decades of the parliamentary record. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with an elevenfold spread across chambers and a concentration in scripted genres. This machine-drafted speech is not degraded: once genre is held fixed, AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, **predates the models by decades** — history invisible to the excess-vocabulary designs that found the jump, which measure acceleration against a local trend in corpora reaching back roughly a decade. Run as a level series, its rise begins in 1994–96; a juniority gradient predates even that, steepening as cohorts formed inside the drift arrive; and prior occupation — the insulated middle of organisational hierarchies using it most — predicts it beyond social class. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
+We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* — the excess vocabulary language models overuse, derived in prior work from the post-2022 jump in scholarly text, run here as a fixed ruler across four decades of the parliamentary record. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with an elevenfold spread across chambers and a concentration in scripted genres. This machine-drafted speech is not degraded: once genre is held fixed, AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, **predates the models by decades** — history invisible to the excess-vocabulary designs that found the jump, which measure acceleration against a local trend in corpora reaching back roughly a decade. Run as a level series, its rise begins in 1994–96; a juniority gradient predates even that, steepening as cohorts formed inside the drift arrive; and prior occupation leaves a small, replicated signature beyond social class — the insulated middle of organisational hierarchies using it most. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
 
 ---
 
@@ -110,7 +110,8 @@ pre-registered occupational model adds weaker but real structure — the
 register peaks at the insulated middle of organisational hierarchies, the
 rungs that answer upward without the final say — and social class traces the
 same inverted-U. These correlations locate the rise without yet explaining
-it. Machine intelligence did not invent this register of accountability
+it — together they cover about a sixth of member-level variation, most of
+that birth year. Machine intelligence did not invent this register of accountability
 without authorship; it inherited it, automated it, and made it measurable.
 
 The pattern of findings opens more fields than it closes: machine-drafted
@@ -1196,9 +1197,9 @@ legislatures, an occupational shape built twice by blind processes, and a
 post-training signature, through a probe thin enough that five-sixths of
 member-level variation never enters it. The right reading is the tip of an
 iceberg. The mass below the waterline — the full register, and the web of
-relationships and effects it participates in — is too complicated for any
-human, or any organisation of humans, to track; it is precisely the kind of
-object machine intelligence turns searchable, which is why the register
+relationships and effects it participates in — has gone untracked, which
+suggests the ability or the coordination to track it has been missing; it is
+precisely the kind of object machine intelligence turns searchable, which is why the register
 itself is queued as a search target rather than a fixed list (§8.6 items
 33–34), and why the Limits read the small shares as floors of one thin
 probe rather than ceilings of the phenomenon.
