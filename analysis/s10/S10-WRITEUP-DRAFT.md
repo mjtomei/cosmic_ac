@@ -2,7 +2,7 @@
 
 ## Abstract
 
-We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* built from the vocabulary language models overuse. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with an elevenfold spread across chambers and a concentration in scripted genres. This machine-drafted speech is not degraded: once genre is held fixed, AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, **predates the models by decades**: its rise begins in 1994–96; a juniority gradient in it predates even that, steepening as cohorts formed inside the drift arrive; and prior occupation — position in an organisational hierarchy, the insulated middle using it most — predicts it beyond social class. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
+We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* — the excess vocabulary language models overuse, derived in prior work from the post-2022 jump in scholarly text, run here as a fixed ruler across four decades of the parliamentary record. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with an elevenfold spread across chambers and a concentration in scripted genres. This machine-drafted speech is not degraded: once genre is held fixed, AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, **predates the models by decades** — history invisible to the excess-vocabulary designs that found the jump, which measure acceleration against a local trend in corpora reaching back roughly a decade. Run as a level series, its rise begins in 1994–96; a juniority gradient predates even that, steepening as cohorts formed inside the drift arrive; and prior occupation — the insulated middle of organisational hierarchies using it most — predicts it beyond social class. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
 
 ---
 
@@ -2441,6 +2441,16 @@ register), and by time depth (a thirty-year baseline against the field's
 post-2020 windows). The 9.0% floor itself lands where the population-level
 literature already points for professional prose — 6.5–17.5% (Liang et al.,
 Gray) — which we read as corroboration, not coincidence.
+
+The relationship to the excess-vocabulary work is complementary by
+construction. Kobak et al. measure excess against a counterfactual
+extrapolated from each word's local pre-trend, so a steady drift produces
+zero excess in every year — the design sees the jump *through* the drift,
+and its corpus begins in 2010. Run instead as a level series across four
+decades of legislatures, the same vocabulary yields the history the jump
+detector cannot: the 1994–96 onset, the cross-chamber convergence on the
+American level, and the juniority and cohort structure of §4.6. Their
+history was the control; here it is the finding.
 
 Two prior efforts ran comparable designs on chambers in this corpus and
 reached opposite conclusions. **Neither used a calibrated commercial
