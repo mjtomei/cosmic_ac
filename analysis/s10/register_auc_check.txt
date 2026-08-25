@@ -1,0 +1,5 @@
+B. legislative only (flagged vs not, incl. controls)    AUC 0.609   (n+ 357, n- 5082)
+D. 2025-26 prevalence only (flagged vs not)             AUC 0.604   (n+ 357, n- 3241)
+C. ground truth: LLM variants vs pre-2022 controls      AUC 0.535   (n+ 292, n- 1841)
+A. everything (leg flagged+LLM vs leg unflagged)        AUC 0.572   (n+ 649, n- 5082)
+medians per 100k: controls 3150, unflagged prev 3226, flagged prev 3869, LLM variants 3327

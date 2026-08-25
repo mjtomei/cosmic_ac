@@ -88,8 +88,10 @@ language models overuse, run against each chamber's own placebo-matched
 counterfactual. The two instruments have different blind spots — the detector
 is a black box with a measured false-positive floor; the register is
 transparent, cheap at corpus scale, and robust to the light editing that
-defeats detectors, but coarse — and their agreement, not either alone,
-carries the study's claims. The corpus reaches back three decades, which is what lets the
+defeats detectors, but coarse — and the division of labour, not agreement
+on one number, carries the study's claims: prevalence from the calibrated
+detector, history and social structure from the register, with the genre
+ladder the one place their inferences demonstrably meet. The corpus reaches back three decades, which is what lets the
 second half of the question be asked at all.
 
 The question we came with gets its answer: at least 9.0% of words in current
@@ -707,6 +709,24 @@ detectors and does nothing for a strong one — and the sharper point is that
 the frontier model is not reasoning its way to 0.95; it is recognising
 something at a glance. Practically, the screen can be run for about **4× fewer reasoning
 tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
+
+**The register instrument is not a detector, and a direct test is why the
+roles are divided.** A simple threshold on the register score — the study's
+own 407-word occurrence rate — separates Pangram-flagged from unflagged
+legislative segments at **AUC 0.61** (0.60 restricted to the 2025–26
+prevalence sample, where both classes are drifted contemporary speech),
+against the screen's 0.95. On ground truth it does no better: **0.535**
+against known machine text — though that set is the evasion run's
+adversarially quietened rewrites rather than ordinary model output, which
+runs far hotter on these words (§4.7). One thin lexical rate carries
+population-level history well and instance-level detection barely above
+chance, which is the division of labour the study uses.[^r44auc]
+
+[^r44auc]: `python register_auc_check.py`: 5,439 text-resolved
+    Pangram-scored legislative segments (prevalence, controls, the genre
+    arm) plus the 292 final-run bypass variants; AUC by Mann–Whitney.
+    Everything pooled: 0.57. Medians per 100k: controls 3,150; unflagged
+    2025–26 prevalence 3,226; flagged 3,869; LLM variants 3,327.
 
 ### 4.5 The register shift starts in 1994–96, decades before the machines
 
@@ -2627,13 +2647,13 @@ baseline is moving toward the thing being detected.
 ## 8. Discussion
 
 This study set out to count machine-drafted speech and found, behind the
-count, a register with a thirty-year human history. The count stands: two
-instruments that fail differently — a detector calibrated to zero false
-positives on each chamber's own pre-2022 record, and a transparent lexical
-register run against placebo-matched counterfactuals — agree that **at
-least 9.0% of words** in current legislative speech are machine-drafted,
-spread elevenfold across chambers and concentrated where procedure permits
-preparation. The register behind the count is the older finding: rising
+count, a register with a thirty-year human history. The count stands, and
+it belongs to the calibrated detector alone: **at least 9.0% of words** in
+current legislative speech are machine-drafted, spread elevenfold across
+chambers and concentrated where procedure permits preparation — with the
+transparent lexical register corroborating it where the two instruments'
+inferences overlap (the genre ladder) and carrying what the detector
+cannot: the history and the social structure behind the count. The register behind the count is the older finding: rising
 since 1994–96, strongest in later-born members, shaped like the office —
 peaking at its insulated middle — and installed, on the machine side, at
 exactly the post-training stages tuned toward human demonstrations and
