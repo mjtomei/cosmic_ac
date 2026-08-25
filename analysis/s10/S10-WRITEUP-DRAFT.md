@@ -674,26 +674,61 @@ comparison. The instrument and the 200 matched placebo sets are built once, on
 UK Commons 2010–12, and applied unchanged everywhere, so the chambers are
 measured with the same ruler.[^r45a]
 
-| chamber | window | gap per 100k, first year | last year | change | per year |
-|---|---|---|---|---|---|
-| UK Commons | 1994–2026 | 380 | **1,444** | **×3.80** | **+4.3%/yr** |
-| **US House** | 1994–2026 | **1,515** | 1,709 | ×1.13 | +0.4%/yr |
-| **US Senate** | 1994–2026 | **1,314** | 1,562 | ×1.19 | +0.5%/yr |
-| Ireland | 2018–2026 | 1,603 | **1,975** | ×1.23 | +2.6%/yr |
-| CA federal | 2015–2026 | 1,865 | 1,735 | ×0.93 | −0.7%/yr |
+| chamber | gap 2006 | gap 2026 | change | per year |
+|---|---|---|---|---|
+| UK Commons | 655 | 1,444 | ×2.20 | **+4.0%/yr** |
+| Scotland | 605 | 1,058 | ×1.75 | +2.8%/yr |
+| Northern Ireland | 739 | 1,165 | ×1.58 | +2.3%/yr |
+| Wales | 1,276 | 1,961 | ×1.54 | +2.2%/yr |
+| Saskatchewan | 1,612 | 2,145 | ×1.33 | +1.4%/yr |
+| British Columbia | 1,542 | 2,049 | ×1.33 | +1.4%/yr |
+| Manitoba | 1,636 | 2,136 | ×1.31 | +1.3%/yr |
+| Western Australia | 1,366 | 1,751 | ×1.28 | +1.3%/yr |
+| Victoria | 1,619 | 2,043 | ×1.26 | +1.2%/yr |
+| Queensland | 1,746 | 2,199 | ×1.26 | +1.2%/yr |
+| Tasmania | 1,631 | 2,049 | ×1.26 | +1.1%/yr |
+| Nova Scotia | 1,811 | 2,265 | ×1.25 | +1.1%/yr |
+| New South Wales | 1,276 | 1,593 | ×1.25 | +1.1%/yr |
+| Alberta | 1,746 | 2,125 | ×1.22 | +1.0%/yr |
+| Ontario | 1,707 | 2,013 | ×1.18 | +0.8%/yr |
+| Newfoundland & Labrador | 1,436 | 1,532 | ×1.07 | +0.3%/yr |
+| **US Senate** | 1,590 | 1,562 | ×0.98 | −0.1%/yr |
+| Prince Edward Island | 1,589 | 1,523 | ×0.96 | −0.2%/yr |
+| **US House** | 1,794 | 1,709 | ×0.95 | −0.2%/yr |
 
-The windows are not comparable, and the comparison should be made where they
-are: only the UK and the two US chambers share the full 1994–2026 span — the
-longest this corpus supports — and on that common window the contrast is
-×3.80 against ×1.13–1.19, about +4.3%/yr against +0.4–0.5%/yr. Ireland and
-federal Canada enter late and already high (1,603 and 1,865 per 100k), so
-their windows begin near the ceiling; Ireland still climbs at +2.6%/yr,
-federal Canada is flat. The US chambers are near-flat across thirty-two
-years, and they start *above* where the UK still sits two decades later: US
-House 1,515 in 1994 against the UK's 1,444 in 2026. So the picture is not a
-common shift. It is chambers converging upward on a level the United States
-already held before the consumer web, while the United States barely
-moves.
+Nineteen chambers hold both endpoints of the longest window most of the
+corpus shares — 2006 to 2026 — and on that single ruler the pattern is
+convergence: **the lower a chamber started, the faster it climbed** (Spearman
+between 2006 level and growth −0.56, n = 19). The four lowest 2006 starters —
+UK Commons, Scotland, Northern Ireland, Wales — are the four fastest
+climbers; only three chambers decline at all (US House, US Senate, Prince
+Edward Island), and none of the nineteen approaches the UK's +4.0%/yr.[^r45cw]
+
+Three chambers reach further back, and the US point rests on that longer
+window:
+
+| chamber | gap 1994 | gap 2026 | change | per year |
+|---|---|---|---|---|
+| UK Commons | 380 | **1,444** | **×3.80** | **+4.3%/yr** |
+| **US House** | **1,515** | 1,709 | ×1.13 | +0.4%/yr |
+| **US Senate** | **1,314** | 1,562 | ×1.19 | +0.5%/yr |
+
+Only the UK and the two US chambers hold 1994 (the UK's own series extends
+to 1985, §4.5), and on that longest window the contrast sharpens — with the
+US chambers *starting* above where the UK still sits two decades later, US
+House at 1,515 per 100k in 1994 against the UK's 1,444 in 2026. Ireland and
+federal Canada, excluded from both tables for entering late (2018, 2015),
+enter high — 1,603 and 1,865 — and move like chambers already near the
+ceiling (+2.6%/yr and −0.7%/yr). So the picture is not a common shift. It is
+chambers converging upward on a level the United States already held before
+the consumer web, while the United States barely moves.
+
+[^r45cw]: `python constant_window_trend.py`, reading
+    `occurrence_trends.json`; endpoints 2006 and 2026, growth as the
+    geometric rate over the twenty years. South Australia is excluded for
+    missing the 2026 endpoint (its series ends 2025); Ireland and federal
+    Canada for entering late. Tasmania carries §4.2's regime flag; its row
+    is descriptive.
 
 The US series reaches back to 1994 only as of 2026-08-13. The Congressional
 Record is on GovInfo from 1994, which the study had not used: the original
