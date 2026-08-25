@@ -86,9 +86,11 @@ study of registers in open speech records generally --- of which this paper is
 itself a demonstration. One of those impacts can now be named precisely: the
 register the models were tuned to speak is, on our measurement, the register
 of the insulated organisational middle --- a weak effect, but a first
-quantitative trace of the widely-voiced worry that these systems are being
-developed to substitute for exactly that stratum of workers, and a template
-for the oversight measurements that worry calls for. Essentially every
+quantitative trace of what Brynjolfsson\cite{brynjolfsson2022} calls the Turing trap: the worry
+that human-imitating AI is developed to substitute for workers rather than
+augment them. We do not advance that reading; we note that it now has a
+measurable form, and a template for the oversight measurements it calls
+for. Essentially every
 measurement in it --- extraction,
 scoring, coding, grading, across 22 chambers and three decades --- was executed
 by machine intelligence, cheaply enough to repeat on any open record, and
@@ -99,7 +101,18 @@ free.
 
 \section{Results}\label{sec:results}
 
-\subsection{Calibration: 1,260 / 1,260}\label{sec:calibration}
+Two instruments, run separately, carry the results. \emph{Pangram} is a
+commercial AI-text detector, scored segment by segment and calibrated
+against each chamber\textquotesingle s own pre-2022 record; it answers the prevalence
+question. The \emph{register instrument} is a fixed list of machine-overused
+vocabulary --- Kobak\textquotesingle s excess-vocabulary style words --- counted against each
+chamber\textquotesingle s own placebo-matched counterfactual; it is detector-independent,
+transparent, and cheap enough to run across three decades, and it carries
+the historical and social results. Construction, calibration and estimators
+are specified in Materials and Methods; every number reproduces from a
+committed script.
+
+\subsection{The detector makes zero false positives on 1,260 pre-2022 speeches}\label{sec:calibration}
 
 \textbf{Zero false positives across every chamber\textquotesingle s own pre-AI control.}
 Specificity \textbf{100.00\% {[}99.7\%, 100.0\%{]}} (Wilson). Sensitivity is not
@@ -141,10 +154,13 @@ a false-positive problem} --- disagreements run net upward (33 segments moved
 out of Human, 9 the other way). Earlier NB conclusions stand as conservative.
 (\texttt{nb\_p3\_vs\_p4.py})
 
-\subsection{Prevalence: 9.0\% of words, with an elevenfold spread}\label{sec:prevalence}
+\subsection{At least 9.0\% of current words are machine-drafted, with an elevenfold spread}\label{sec:prevalence}
 
 \textbf{Pooled 9.03\% of words {[}8.00\%, 10.08\%{]}} --- 65,795 machine-written words of
 728,998 across 3,519 segments in 20 chambers, excluding regime-flagged TAS.
+The estimate is population-level throughout: it describes the corpus, not
+any individual speech or speaker --- a segment verdict is an instrument
+reading, not an attribution.
 
 Every figure below is the share of \emph{what was said} that is machine-drafted,
 over the whole of the record Pangram will read.
@@ -286,10 +302,11 @@ only thing that changed.\footnote{\texttt{python\ build\_mb\_redraw.py}, then \t
   reproducible --- 135 of the old 278 seg\_ids do not exist in the corrected
   file, because re-extraction shifts turn indices.}
 
-\subsection{Genre: drafting concentrates in scripted business}\label{sec:genre}
+\subsection{Drafting concentrates in scripted business}\label{sec:genre}
 
-Federal Canada is the only corpus carrying a business rubric, which makes
-this test possible at all.
+Machine drafting concentrates where the procedure permits advance
+preparation. Federal Canada is the only corpus carrying a business rubric,
+which makes the test possible at all.
 
 The three genres form a ladder in \textbf{how much advance preparation the
 procedure permits}, which is the mechanism under test:
@@ -502,10 +519,11 @@ tokens (\textasciitilde2× all-in)** with no loss. (\texttt{opus\_effort\_ab.py}
 
 \subsection{The register shift starts in 1994--96, decades before the machines}\label{sec:register-shift}
 
-Descriptive series (\cref{sec:freq-descriptive}), UK Commons extended back to 1985. The register
-\emph{declines} through the late 1980s and turns upward around \textbf{1994--96} ---
-before the consumer web, and long before any language model. Whatever this
-measures, LLMs did not start it.\footnote{\texttt{python\ long\_trend.py\ -\/-seg\ uk/segments\_uk\_deep.jsonl} for the annual
+The register\textquotesingle s rise begins around \textbf{1994--96} --- before the consumer web,
+and long before any language model. The descriptive series (\cref{sec:freq-descriptive}), with UK
+Commons extended back to 1985, shows the register \emph{declining} through the
+late 1980s before turning upward at that window. Whatever this measures,
+LLMs did not start it.\footnote{\texttt{python\ long\_trend.py\ -\/-seg\ uk/segments\_uk\_deep.jsonl} for the annual
   series; the turning point is the minimum of the annual
   instrument-minus-placebo gap (the script fits no curve), and it lands on
   1994. A day-clustered bootstrap (\texttt{python\ long\_trend\_bootstrap.py}, 2,000
@@ -517,7 +535,7 @@ Read together with \cref{sec:posttraining}, the interesting reading is not "LLMs
 parliamentary register" but that \textbf{human register had been moving toward what
 instruct-tuning later selected for, for thirty years.} †
 
-The machines then accelerated it, and left a fingerprint of their own suppression. In New Brunswick --- the one corpus sampled densely enough to resolve quarters --- an interrupted time series with the break pre-set at ChatGPT\textquotesingle s release finds a flat pre-2023 slope (−1.2\%/yr) turning to \textbf{+23.7\%/yr} afterward, significant against 1,000 frequency-matched placebo word sets (p = 0.007; Mann--Kendall\cite{mann1945,kendall1948} p = 0.014). But the two instruments then part ways (\cref{fig:trend}): the \emph{obvious} tells --- the Wikipedia "signs of AI writing" set --- peak around 2025 and fall back, while the subtler Kobak rare-style set keeps climbing. The natural reading is that the conspicuous words became notorious and were trained or edited away, while the register underneath kept rising. The peak-and-fall of the obvious tells shows in some other chambers too --- UK Commons and the US House both turn down after 2024 --- though it is not universal (Ireland\textquotesingle s keep rising), so this is a suggestive cross-chamber pattern rather than a law; the clean two-instrument contrast is sharpest in the densely-sampled discovery corpus.\footnote{\texttt{python\ fig\_trend.py} for New Brunswick --- the interrupted time series is weighted least squares on log quarterly rates with a break pre-specified at 2023.0, and the empirical p for the slope change comes from 1,000 frequency-matched placebo word sets run through the identical fit. The cross-chamber comparison is \texttt{python\ build\_trend\_cache.py\ \&\&\ python\ plot\_trend\_from\_cache.py}; indexed yearly rates for six chambers are in \texttt{trend\_multichamber.csv}.}
+The machines then accelerated it, and left a fingerprint of their own suppression. In New Brunswick --- the one corpus sampled densely enough to resolve quarters --- an interrupted time series with the break pre-set at ChatGPT\textquotesingle s release finds a flat pre-2023 slope (−1.2\%/yr) turning to \textbf{+23.7\%/yr} afterward, significant against 1,000 frequency-matched placebo word sets (p = 0.007; Mann--Kendall\cite{mann1945,kendall1948} p = 0.014). But the two instruments then part ways (\cref{fig:trend}): the \emph{obvious} tells --- the Wikipedia "signs of AI writing" set --- peak around 2025 and fall back, while the subtler Kobak rare-style set keeps climbing. The natural reading --- with published precedent in scholarly text, where Gray\cite{gray2025} documents distinctive marker words dropping in frequency once publicised --- is that the conspicuous words became notorious and were trained or edited away, while the register underneath kept rising. The peak-and-fall of the obvious tells shows in some other chambers too --- UK Commons and the US House both turn down after 2024 --- though it is not universal (Ireland\textquotesingle s keep rising), so this is a suggestive cross-chamber pattern rather than a law; the clean two-instrument contrast is sharpest in the densely-sampled discovery corpus.\footnote{\texttt{python\ fig\_trend.py} for New Brunswick --- the interrupted time series is weighted least squares on log quarterly rates with a break pre-specified at 2023.0, and the empirical p for the slope change comes from 1,000 frequency-matched placebo word sets run through the identical fit. The cross-chamber comparison is \texttt{python\ build\_trend\_cache.py\ \&\&\ python\ plot\_trend\_from\_cache.py}; indexed yearly rates for six chambers are in \texttt{trend\_multichamber.csv}.}
 
 \begin{figure}[htbp]
 \centering
@@ -678,7 +696,7 @@ names the instrument that would separate those two.
 
 The climb has a floor. Even in the chambers that are flat over time, the register is strongly present in \emph{level}: applied against each chamber\textquotesingle s own pre-2022 counterfactual, the machine-overused vocabulary is elevated in every confirmatory chamber, and Fisher\textquotesingle s method\cite{fisher1925} over the 47 corpus specifications combines to \textbf{p ≈ 1.3×10⁻⁸³} (the discovery corpus, New Brunswick, is held out and reported separately, at excess +0.55). The effect is not a relabelling of formality: where a data-defined formality control exists --- Ireland, federal Canada, the UK --- the register excess exceeds the formality gap in every case (for instance UK Commons +0.26 against +0.09). The instrument measures something more specific than "this chamber speaks formally."\footnote{\texttt{python\ cross\_corpus.py}, reading each chamber\textquotesingle s frozen \texttt{*\_protocol.json} and \texttt{*\_formality.json}; Fisher\textquotesingle s method combines the per-corpus p-values over the confirmatory corpora only, per \texttt{replication\_protocol.md}. The discovery corpus is excluded from the combination and reported separately.}
 
-\subsection{A generational gradient, net of calendar drift}\label{sec:generational}
+\subsection{Birth cohort predicts the register, net of calendar drift}\label{sec:generational}
 
 Every member-year of legislative speech carries two time-stamps: the year the
 words were \textbf{spoken} (calendar period) and the speaker\textquotesingle s \textbf{birth year}
@@ -749,7 +767,9 @@ mechanism either.
 
 \subsection{Class and the register: jointly significant, individually noisy --- and education is not it}\label{sec:class}
 
-The arc of this section is a correction applied twice, recorded because both
+Class predicts the register as a joint block, not as a single ladder ---
+and the apparent education gradient does not survive its controls. The arc
+of the analysis is a correction applied twice, recorded because both
 applications were the study\textquotesingle s own committed checks. On the eight provinces,
 class, education and prominence appeared to predict the register at t = 3--4.
 Clustering by member and replication then removed every INDIVIDUAL certainty
@@ -1170,7 +1190,7 @@ now be measured explicitly, a legislature with a stated goal of fair
 representation can control for them --- a fairness mechanism independent of the
 social dynamics this section documents, which are expected to persist.
 
-\subsubsection{Limits, and they are real}\label{sub:class-limits}
+\subsubsection{What the class analysis cannot rule out}\label{sub:class-limits}
 
 Article length is measured once, in 2026, and applied to every year of a
 member\textquotesingle s career. A backbencher who later became premier carries their eventual
@@ -1204,7 +1224,7 @@ Both effects leave cohort intact. Birth decade runs \textbf{+1.20 to +1.36 per
 decade} in every specification here, larger than any class or education
 contrast.
 
-\subsection{What the class shape was: occupation, pre-registered and run}\label{sec:occupation}
+\subsection{Pre-registered occupational test: the register peaks at the insulated middle}\label{sec:occupation}
 
 The class arm left a shape (the II-over-I inverted U) without a mechanism.
 This arm registered one, built the instrument to measure it, and ran ---
@@ -1261,7 +1281,7 @@ each); under covariates the shape sharpens (bottom mildly negative, top
 close behind middle), and the middle-over-top gap\textquotesingle s powered test is the
 delta. The registered \emph{continuous} form of the interior peak --- the altitude
 quadratic --- found nothing (Appendix~\ref{app:null}18); the discrete levels and the
-relative contrast carry the claim; \cref{fig:altitude} plots both ladders.
+relative contrast carry the claim (\cref{fig:altitude}).
 
 \begin{figure}[htbp]
 \centering
@@ -1329,8 +1349,11 @@ ceilings.\footnote{\texttt{python\ prereg\_stage1.py}, \texttt{prereg\_stage2.py
 
 \subsection{The register is a post-training artifact}\label{sec:posttraining}
 
-OLMo-2 ladder, same prompts across the post-training stages. The stage values
-are bias-corrected: the estimator as first shipped carried a per-transition
+The register is installed at post-training --- by the stages tuned toward
+human demonstrations and preferences, and not by the stage tuned toward
+verifiable correctness, which was registered as the arm\textquotesingle s negative control
+before the run. The evidence is an OLMo-2 ladder, same prompts across the
+post-training stages. The stage values are bias-corrected: the estimator as first shipped carried a per-transition
 pedestal (the M3 defect, per stage --- null calibration on random word lists
 returns +0.45/+0.56/+0.31, largest at DPO only because DPO\textquotesingle s generations are
 longest), and three independent corrected routes agree on the picture below
@@ -1496,10 +1519,8 @@ reproducing the thing \cref{sec:prevalence} detects.
 
 \subsection{Permeation: detector-independent and small but positive}\label{sec:permeation}
 
-In-context likelihood of the Kobak style words within Hansard traces,
-self-normalised, no placebo word list, no external control:
-
-\textbf{+0.0099, positive in 9 of 10 cells, permutation p = 0.017.} †\footnote{\texttt{python\ word\_context\_delta.py\ pooled}, which prints the pooled figure,
+\textbf{The register is permeating human speech independently of drafting:
++0.0099, positive in 9 of 10 cells, permutation p = 0.017.} †\footnote{\texttt{python\ word\_context\_delta.py\ pooled}, which prints the pooled figure,
   the ten chamber × family cells, the clustered bootstrap and the permutation
   test. Earlier drafts cited \texttt{word\_context\_delta.py} alone, whose \texttt{report}
   mode hardcodes the Qwen3 traces and prints five per-chamber rows with no
@@ -1508,7 +1529,9 @@ self-normalised, no placebo word list, no external control:
   percentile carries roughly one Monte-Carlo standard error, which is the
   whole distance of the lower bound from zero) and a recorded seed. The
   permutation test shuffles era labels within each chamber × family cell,
-  3,000 draws. Per-model cell table at \texttt{METHODOLOGY.md:1009}.}
+  3,000 draws. Per-model cell table at \texttt{METHODOLOGY.md:1009}.} The
+instrument is in-context likelihood of the Kobak style words within Hansard
+traces, self-normalised --- no placebo word list, no external control.
 
 The ten cells are five chambers scored by two model families, not ten
 replications: both families score the \emph{identical} segments at the \emph{identical}
@@ -1533,8 +1556,11 @@ a precision the estimator does not have, so the permutation test leads.
 
 \subsection{Quality: better-formed, not worse-engaged --- and evadable under effort}\label{sec:quality}
 
-Graded against the Discourse Quality Index \cite{steenbergen2003}, using the original authors\textquotesingle{} own codings of a 1998 UK Commons
-debate as in-context anchors. Two of the seven dimensions carry a \texttt{-1}
+Machine-involved speech is better-formed and no less engaged once genre or
+chamber is held fixed --- and the detector that finds it can be defeated by
+directed effort, which is why every prevalence figure is a floor. The
+grading is against the Discourse Quality Index \cite{steenbergen2003}, using the original authors\textquotesingle{} own codings of a 1998
+UK Commons debate as in-context anchors. Two of the seven dimensions carry a \texttt{-1}
 inapplicable code --- no other demand, or no counterargument, on the table ---
 which is \textbf{excluded from means rather than scored as zero}. Folding it in
 would score "nothing to engage with" as worse than "engaged badly", and

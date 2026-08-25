@@ -216,3 +216,36 @@ Results ordering and the Discussion's opening:
 - Gray, arXiv:2512.01560 (2025).
 - Rice, "Hunting for ChatGPT in Parliament," *Rice On Paper* (Substack), 2026.
 - "Apple Tokamak," *Pimlico Journal* (2025).
+
+
+## 6. Last-pass takeaways (2026-08-24, mined before the Results edits; all applied in pass 2 unless noted)
+
+1. **Results as an escalation ladder** (Kobak): signal → historical control →
+   characterise → lower bound → independent confirmation → subgroups. Our
+   existing order already climbs it; the claim headings now make it legible.
+2. **Conceptual scaffold at the top of Results** (Wei's move): with Methods now
+   trailing the Discussion, Results opens with one paragraph defining both
+   instruments operationally and pointing at Materials and Methods — fixes the
+   forward dependency the reorder created. APPLIED.
+3. **Population-level, not instance-level** (Liang's language; pre-empts
+   Suvanto §7.1's "penalizing valid words"): one explicit sentence in §4.2 —
+   the estimate describes the corpus, a segment verdict is an instrument
+   reading, not an attribution. APPLIED.
+4. **Name negative controls as negative controls** (Liang's Nature-reviews
+   move): RLVR now introduced as "registered as the arm's negative control
+   before the run." APPLIED (trend placebos already carry the word).
+5. **Gray as published precedent for marker decay**: our obvious-tells
+   peak-and-fall now cites Gray's observation that publicised marker words
+   dropped in scholarly text. APPLIED.
+6. **Parenthetical figure citations** ("… (Fig. 2)"), never narrative
+   "Figure 2 shows". Altitude anchor converted. APPLIED.
+7. **"(see Methods)" pointers** to slim inline method detail from Results —
+   partially applied (scaffold ¶); fuller sweep belongs to pass 4 (flow).
+8. **Question-as-opener** is a legitimate device (Kobak) — available for
+   pass 4, use sparingly.
+9. **Discussion: flowing arc** (restate → interpret → limitations → prior work
+   → implications → significance/future work), no labeled skeleton — for pass 3.
+10. **The worry citation**: Brynjolfsson's Turing trap (Daedalus 2022) is the
+    academic origin of the substitution worry; attributing it distances us —
+    "We do not advance that reading; we note that it now has a measurable
+    form." APPLIED in intro ¶7.

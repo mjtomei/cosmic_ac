@@ -116,9 +116,11 @@ study of registers in open speech records generally — of which this paper is
 itself a demonstration. One of those impacts can now be named precisely: the
 register the models were tuned to speak is, on our measurement, the register
 of the insulated organisational middle — a weak effect, but a first
-quantitative trace of the widely-voiced worry that these systems are being
-developed to substitute for exactly that stratum of workers, and a template
-for the oversight measurements that worry calls for. Essentially every
+quantitative trace of what Brynjolfsson calls the Turing trap: the worry
+that human-imitating AI is developed to substitute for workers rather than
+augment them. We do not advance that reading; we note that it now has a
+measurable form, and a template for the oversight measurements it calls
+for. Essentially every
 measurement in it — extraction,
 scoring, coding, grading, across 22 chambers and three decades — was executed
 by machine intelligence, cheaply enough to repeat on any open record, and
@@ -273,7 +275,18 @@ pad an appendix:
 
 ## 4. Results
 
-### 4.1 Calibration: 1,260 / 1,260
+Two instruments, run separately, carry the results. *Pangram* is a
+commercial AI-text detector, scored segment by segment and calibrated
+against each chamber's own pre-2022 record; it answers the prevalence
+question. The *register instrument* is a fixed list of machine-overused
+vocabulary — Kobak's excess-vocabulary style words — counted against each
+chamber's own placebo-matched counterfactual; it is detector-independent,
+transparent, and cheap enough to run across three decades, and it carries
+the historical and social results. Construction, calibration and estimators
+are specified in Materials and Methods; every number reproduces from a
+committed script.
+
+### 4.1 The detector makes zero false positives on 1,260 pre-2022 speeches
 
 **Zero false positives across every chamber's own pre-AI control.**
 Specificity **100.00% [99.7%, 100.0%]** (Wilson). Sensitivity is not
@@ -304,10 +317,13 @@ a false-positive problem** — disagreements run net upward (33 segments moved
 out of Human, 9 the other way). Earlier NB conclusions stand as conservative.
 (`nb_p3_vs_p4.py`)
 
-### 4.2 Prevalence: 9.0% of words, with an elevenfold spread
+### 4.2 At least 9.0% of current words are machine-drafted, with an elevenfold spread
 
 **Pooled 9.03% of words [8.00%, 10.08%]** — 65,795 machine-written words of
 728,998 across 3,519 segments in 20 chambers, excluding regime-flagged TAS.
+The estimate is population-level throughout: it describes the corpus, not
+any individual speech or speaker — a segment verdict is an instrument
+reading, not an attribution.
 
 Every figure below is the share of *what was said* that is machine-drafted,
 over the whole of the record Pangram will read.
@@ -447,10 +463,11 @@ only thing that changed.[^r42mb]
 
 [^r42]: `python -c "import banded_prevalence as B; B.table(B.load())"`.
 
-### 4.3 Genre: drafting concentrates in scripted business
+### 4.3 Drafting concentrates in scripted business
 
-Federal Canada is the only corpus carrying a business rubric, which makes
-this test possible at all.
+Machine drafting concentrates where the procedure permits advance
+preparation. Federal Canada is the only corpus carrying a business rubric,
+which makes the test possible at all.
 
 The three genres form a ladder in **how much advance preparation the
 procedure permits**, which is the mechanism under test:
@@ -624,10 +641,11 @@ tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
 
 ### 4.5 The register shift starts in 1994–96, decades before the machines
 
-Descriptive series (§3.3), UK Commons extended back to 1985. The register
-*declines* through the late 1980s and turns upward around **1994–96** —
-before the consumer web, and long before any language model. Whatever this
-measures, LLMs did not start it.[^r45]
+The register's rise begins around **1994–96** — before the consumer web,
+and long before any language model. The descriptive series (§3.3), with UK
+Commons extended back to 1985, shows the register *declining* through the
+late 1980s before turning upward at that window. Whatever this measures,
+LLMs did not start it.[^r45]
 
 [^r45]: `python long_trend.py --seg uk/segments_uk_deep.jsonl` for the annual
     series; the turning point is the minimum of the annual
@@ -641,7 +659,7 @@ Read together with §4.7, the interesting reading is not "LLMs changed
 parliamentary register" but that **human register had been moving toward what
 instruct-tuning later selected for, for thirty years.** †
 
-The machines then accelerated it, and left a fingerprint of their own suppression. In New Brunswick — the one corpus sampled densely enough to resolve quarters — an interrupted time series with the break pre-set at ChatGPT's release finds a flat pre-2023 slope (−1.2%/yr) turning to **+23.7%/yr** afterward, significant against 1,000 frequency-matched placebo word sets (p = 0.007; Mann–Kendall p = 0.014). But the two instruments then part ways: the *obvious* tells — the Wikipedia "signs of AI writing" set — peak around 2025 and fall back, while the subtler Kobak rare-style set keeps climbing. The natural reading is that the conspicuous words became notorious and were trained or edited away, while the register underneath kept rising. The peak-and-fall of the obvious tells shows in some other chambers too — UK Commons and the US House both turn down after 2024 — though it is not universal (Ireland's keep rising), so this is a suggestive cross-chamber pattern rather than a law; the clean two-instrument contrast is sharpest in the densely-sampled discovery corpus.[^rits]
+The machines then accelerated it, and left a fingerprint of their own suppression. In New Brunswick — the one corpus sampled densely enough to resolve quarters — an interrupted time series with the break pre-set at ChatGPT's release finds a flat pre-2023 slope (−1.2%/yr) turning to **+23.7%/yr** afterward, significant against 1,000 frequency-matched placebo word sets (p = 0.007; Mann–Kendall p = 0.014). But the two instruments then part ways: the *obvious* tells — the Wikipedia "signs of AI writing" set — peak around 2025 and fall back, while the subtler Kobak rare-style set keeps climbing. The natural reading — with published precedent in scholarly text, where Gray documents distinctive marker words dropping in frequency once publicised — is that the conspicuous words became notorious and were trained or edited away, while the register underneath kept rising. The peak-and-fall of the obvious tells shows in some other chambers too — UK Commons and the US House both turn down after 2024 — though it is not universal (Ireland's keep rising), so this is a suggestive cross-chamber pattern rather than a law; the clean two-instrument contrast is sharpest in the densely-sampled discovery corpus.[^rits]
 
 ![](the-ai-lexicon-trend.png)
 
@@ -780,7 +798,7 @@ The climb has a floor. Even in the chambers that are flat over time, the registe
 
 [^r45cc]: `python cross_corpus.py`, reading each chamber's frozen `*_protocol.json` and `*_formality.json`; Fisher's method combines the per-corpus p-values over the confirmatory corpora only, per `replication_protocol.md`. The discovery corpus is excluded from the combination and reported separately.
 
-### 4.6 A generational gradient, net of calendar drift
+### 4.6 Birth cohort predicts the register, net of calendar drift
 
 Every member-year of legislative speech carries two time-stamps: the year the
 words were **spoken** (calendar period) and the speaker's **birth year**
@@ -846,7 +864,9 @@ mechanism either.
 
 ### 4.6a Class and the register: jointly significant, individually noisy — and education is not it
 
-The arc of this section is a correction applied twice, recorded because both
+Class predicts the register as a joint block, not as a single ladder —
+and the apparent education gradient does not survive its controls. The arc
+of the analysis is a correction applied twice, recorded because both
 applications were the study's own committed checks. On the eight provinces,
 class, education and prominence appeared to predict the register at t = 3–4.
 Clustering by member and replication then removed every INDIVIDUAL certainty
@@ -1201,7 +1221,7 @@ now be measured explicitly, a legislature with a stated goal of fair
 representation can control for them — a fairness mechanism independent of the
 social dynamics this section documents, which are expected to persist.
 
-#### Limits, and they are real
+#### What the class analysis cannot rule out
 
 Article length is measured once, in 2026, and applied to every year of a
 member's career. A backbencher who later became premier carries their eventual
@@ -1252,7 +1272,7 @@ contrast.
     2000, Labov 1972); the Labov year/publisher error the file flagged is
     corrected. See `CLASS-REGISTER-LITERATURE.md`.
 
-### 4.6b What the class shape was: occupation, pre-registered and run
+### 4.6b Pre-registered occupational test: the register peaks at the insulated middle
 
 The class arm left a shape (the II-over-I inverted U) without a mechanism.
 This arm registered one, built the instrument to measure it, and ran —
@@ -1365,8 +1385,11 @@ ceilings.[^r46f]
 
 ### 4.7 The register is a post-training artifact
 
-OLMo-2 ladder, same prompts across the post-training stages. The stage values
-are bias-corrected: the estimator as first shipped carried a per-transition
+The register is installed at post-training — by the stages tuned toward
+human demonstrations and preferences, and not by the stage tuned toward
+verifiable correctness, which was registered as the arm's negative control
+before the run. The evidence is an OLMo-2 ladder, same prompts across the
+post-training stages. The stage values are bias-corrected: the estimator as first shipped carried a per-transition
 pedestal (the M3 defect, per stage — null calibration on random word lists
 returns +0.45/+0.56/+0.31, largest at DPO only because DPO's generations are
 longest), and three independent corrected routes agree on the picture below
@@ -1503,10 +1526,10 @@ reproducing the thing §4.2 detects.
 
 ### 4.8 Permeation: detector-independent and small but positive
 
-In-context likelihood of the Kobak style words within Hansard traces,
-self-normalised, no placebo word list, no external control:
-
-**+0.0099, positive in 9 of 10 cells, permutation p = 0.017.** †[^r48]
+**The register is permeating human speech independently of drafting:
++0.0099, positive in 9 of 10 cells, permutation p = 0.017.** †[^r48] The
+instrument is in-context likelihood of the Kobak style words within Hansard
+traces, self-normalised — no placebo word list, no external control.
 
 The ten cells are five chambers scored by two model families, not ten
 replications: both families score the *identical* segments at the *identical*
@@ -1542,9 +1565,12 @@ a precision the estimator does not have, so the permutation test leads.
 
 ### 4.9 Quality: better-formed, not worse-engaged — and evadable under effort
 
-Graded against the Discourse Quality Index (Steenbergen, Bächtiger, Spörndli
-& Steiner 2003), using the original authors' own codings of a 1998 UK Commons
-debate as in-context anchors. Two of the seven dimensions carry a `-1`
+Machine-involved speech is better-formed and no less engaged once genre or
+chamber is held fixed — and the detector that finds it can be defeated by
+directed effort, which is why every prevalence figure is a floor. The
+grading is against the Discourse Quality Index (Steenbergen, Bächtiger,
+Spörndli & Steiner 2003), using the original authors' own codings of a 1998
+UK Commons debate as in-context anchors. Two of the seven dimensions carry a `-1`
 inapplicable code — no other demand, or no counterargument, on the table —
 which is **excluded from means rather than scored as zero**. Folding it in
 would score "nothing to engage with" as worse than "engaged badly", and

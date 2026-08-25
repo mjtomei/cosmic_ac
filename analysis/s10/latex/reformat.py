@@ -21,26 +21,26 @@ import re, sys
 
 SRC, DST = "_body_pandoc.tex", "body.tex"
 
-# slug (pandoc's) -> semantic label
-LABELS = {
- "1-introduction":"sec:intro",
- "2-data":"sec:data",
- "21-two-contamination-hazards-both-found-by-looking":"sec:hazards",
- "3-method":"sec:method",
- "31-the-calibration-that-carries-the-argument":"sec:calibration-method",
- "32-detector-and-a-defect-worth-recording":"sec:detector",
- "33-why-the-frequency-arm-is-descriptive-not-inferential":"sec:freq-descriptive",
- "34-instruments-retired-and-why":"sec:retired",
- "4-results":"sec:results",
- "41-calibration-1260--1260":"sec:calibration",
- "42-prevalence-90-of-words-with-an-elevenfold-spread":"sec:prevalence",
- "43-genre-drafting-concentrates-in-scripted-business":"sec:genre",
- "44-the-opus-screen-tracks-pangram":"sec:screen-pangram",
- "45-the-register-shift-starts-in-199496-decades-before-the-machines":"sec:register-shift",
- "45a-the-climb-is-everywhere-except-the-united-states":"sec:climb-geography",
- "45b-the-register-signal-fires-in-every-chamber-and-it-is-not-formality":"sec:register-robust",
- "46-a-generational-gradient-net-of-calendar-drift":"sec:generational",
- "46a-class-and-the-register-jointly-significant-individually-noisy--and-education-is-not-it":"sec:class",
+# Heading labels. Numbered headings are keyed by their NUMERIC PREFIX in the
+# pandoc slug ("46b-..." -> sec:occupation), so heading TEXT can be rewritten
+# freely without touching this file. Unnumbered subsubsections keep exact slugs.
+PREFIX_LABELS = {
+ "1":"sec:intro","2":"sec:data","21":"sec:hazards","3":"sec:method",
+ "31":"sec:calibration-method","32":"sec:detector","33":"sec:freq-descriptive",
+ "34":"sec:retired","4":"sec:results","41":"sec:calibration","42":"sec:prevalence",
+ "43":"sec:genre","44":"sec:screen-pangram","45":"sec:register-shift",
+ "45a":"sec:climb-geography","45b":"sec:register-robust","46":"sec:generational",
+ "46a":"sec:class","46b":"sec:occupation","47":"sec:posttraining","47a":"sec:coverage",
+ "48":"sec:permeation","49":"sec:quality","5":"sec:limits","6":"sec:policy",
+ "7":"sec:related","8":"sec:discussion","81":"sec:disc-limit","82":"sec:disc-norms",
+ "83":"sec:disc-substitution","84":"sec:disc-proxy","85":"sec:disc-human","86":"sec:future",
+ "c1":"sec:cross-route","c2":"sec:reanalysis","c3":"sec:bypass-sample","c4":"sec:artifacts",
+ "d1":"sec:judge-leakage","d2":"sec:prominence-full","d3":"sec:prominence-buckets",
+ "d4":"sec:cohort-ministerial",
+}
+APPENDIX_LABELS = {"appendix-a":"app:null","appendix-b":"app:superseded",
+                   "appendix-c":"app:repro","appendix-d":"app:robustness"}
+LABELS = {   # unnumbered subsubsections: exact slug
  "all-four-predictors-at-once":"sub:four-predictors",
  "class-the-provincial-estimates-retained-as-the-discovery-record-see-the-panel-result-above":"sub:class-provincial",
  "education-the-provincial-ladder-did-not-replicate-see-above":"sub:education-provincial",
@@ -48,35 +48,17 @@ LABELS = {
  "flight-class-i-avoids-the-words-that-became-common":"sub:flight",
  "prominence-a-gradient-in-the-provinces-an-arc-in-the-national-chambers":"sub:prominence-class",
  "word-mix-the-effects-live-in-rate-not-vocabulary--and-machine-text-sits-outside-the-geometry":"sub:wordmix",
- "limits-and-they-are-real":"sub:class-limits",
- "46b-what-the-class-shape-was-occupation-pre-registered-and-run":"sec:occupation",
- "47-the-register-is-a-post-training-artifact":"sec:posttraining",
- "47a-coverage-post-training-moves-the-models-vocabulary-onto-hansards":"sec:coverage",
- "48-permeation-detector-independent-and-small-but-positive":"sec:permeation",
- "49-quality-better-formed-not-worse-engaged--and-evadable-under-effort":"sec:quality",
- "5-limits":"sec:limits",
- "6-policy-context":"sec:policy",
- "7-related-work":"sec:related",
- "8-discussion-detection-as-a-norms-instrument-and-what-to-measure-instead":"sec:discussion",
- "81-the-limit":"sec:disc-limit",
- "82-where-the-norms-argument-actually-lands":"sec:disc-norms",
- "83-the-substitution-and-why-our-null-is-the-argument-for-it":"sec:disc-substitution",
- "84-where-text-is-a-proxy-for-a-persons-internal-state":"sec:disc-proxy",
- "85-measuring-the-human-contribution-against-an-automated-counterpart":"sec:disc-human",
- "86-future-work":"sec:future",
- "appendix-a--null-results":"app:null",
- "appendix-b--superseded-analyses":"app:superseded",
- "appendix-c--replication-and-reproducibility":"app:repro",
- "c1-cross-route-reproduction-of-the-detector":"sec:cross-route",
- "c2-independent-re-analysis":"sec:reanalysis",
- "c3-bypass-sample-selection":"sec:bypass-sample",
- "c4-artifacts":"sec:artifacts",
- "appendix-d--robustness-and-sensitivity-checks":"app:robustness",
- "d1-the-judge-leakage-control-documented-run-not-adopted":"sec:judge-leakage",
- "d2-prominence-wikipedia-article-length-on-the-full-panel":"sec:prominence-full",
- "d3-prominence-in-buckets-which-is-how-it-should-be-read":"sec:prominence-buckets",
- "d4-is-the-cohort-gradient-ministerial-office":"sec:cohort-ministerial",
+ "what-the-class-analysis-cannot-rule-out":"sub:class-limits",
 }
+
+def label_for(slug):
+    m = re.match(r'^([0-9]+[a-z]?|[cd][0-9])-', slug)
+    if m and m.group(1) in PREFIX_LABELS:
+        return PREFIX_LABELS[m.group(1)]
+    for pre, lab in APPENDIX_LABELS.items():
+        if slug.startswith(pre):
+            return lab
+    return LABELS.get(slug)
 
 # §N / §N.M  ->  label   (only these resolve; anything else is left literal)
 NUMMAP = {
@@ -108,7 +90,7 @@ def transform_headings(t):
         title = NUMSTRIP.sub('', title)
         if slug == "abstract":
             return r'\section*{Abstract}'
-        lab = LABELS.get(slug)
+        lab = label_for(slug)
         if not lab:
             sys.stderr.write("WARN: no label for slug %r\n" % slug)
             return "\\%s{%s}" % (level, title)
@@ -174,7 +156,7 @@ def figure_ref_anchors(t):
       (r"sits\s+above\s+class\s+I\s+in\s+all\s+seven\s+half-decades",
        r"\g<0> (\\cref{fig:class-era})"),
       (r"carry\s+the\s+claim\.",
-       r"carry the claim; \\cref{fig:altitude} plots both ladders."),
+       r"carry the claim (\\cref{fig:altitude})."),
       (r"the two instruments then\s+part ways",
        r"the two instruments then part ways (\\cref{fig:trend})"),
       (r"The\s+figure\s+below\s+lays\s+out\s+the\s+loop\.",
@@ -322,6 +304,8 @@ def inject_table_captions(t):
 # already carries, so it survives markdown prose edits that keep those names.
 CITE_SUBS = [
  # --- introduction (first mentions; later sections re-cite where discussed) ---
+ (r'where Gray documents', r'where Gray\\cite{gray2025} documents'),
+ (r'what Brynjolfsson calls the Turing trap', r'what Brynjolfsson\\cite{brynjolfsson2022} calls the Turing trap'),
  (r'no post-ChatGPT rise\s+\(Rice\)', r'no post-ChatGPT rise (Rice\\cite{rice2026})'),
  (r'\(Pimlico Journal\)', r'(Pimlico Journal\\cite{pimlico2025})'),
  (r'\(Liang et al\.\)', r'(Liang et al.\\cite{liang2024monitoring,liang2025quantifying})'),
@@ -330,7 +314,7 @@ CITE_SUBS = [
  (r'Suvanto et al\.\s+detect undisclosed', r'Suvanto et al.\\cite{suvanto2026} detect undisclosed'),
  (r'with Pangram, a commercial detector\s+calibrated', r'with Pangram\\cite{pangram2024}, a commercial detector calibrated'),
  (r'\(arXiv:2406\.07016; \\emph\{Sci Adv\}\s+11\(27\):eadt3813, 2025\)', r'\\cite{kobak2025}'),
- (r'\(Steenbergen, Bächtiger, Spörndli\s+\\& Steiner 2003\)', r'\\cite{steenbergen2003}'),
+ (r'\(Steenbergen,\s+Bächtiger,\s+Spörndli\s+\\&\s+Steiner\s+2003\)', r'\\cite{steenbergen2003}'),
  (r'\(Benjamini \\& Hochberg, \\emph\{JRSS-B\} 57, 1995, 289--300\)', r'\\cite{benjamini1995}'),
  (r'Suvanto, McGlinchey, Barclay \\&\s+Wahde \(arXiv:2606\.14209, 2026\)', r'Suvanto, McGlinchey, Barclay \\& Wahde\\cite{suvanto2026}'),
  (r'Binoculars \(Hans et al\.\s+2024\)', r'Binoculars\\cite{hans2024}'),
