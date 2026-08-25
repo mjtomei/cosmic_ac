@@ -2,25 +2,7 @@
 
 ## Abstract
 
-How much recent legislative speech is machine-written, and what does the
-answer reveal? We measure machine-drafted speech across 22 legislative
-chambers in four countries with two independent instruments: a commercial
-AI-text detector (Pangram), calibrated against each chamber's own pre-2022
-record (specificity 1,260/1,260), and a detector-independent lexical
-*register* built from the vocabulary language models overuse. In current
-speech, **9.03% of words** are machine-drafted — a conservative floor — with an
-elevenfold spread across chambers and a concentration in scripted genres. The
-register, however, **predates the models by decades**: its rise begins in
-1994–96, and it is organised generationally and by prior occupation —
-position in an organisational hierarchy, the insulated middle using it most,
-predicts it beyond social class. Machine involvement does not degrade
-deliberative quality: AI-flagged speech is better-formed and no less engaged
-once genre is fixed. The detector is evadable under directed effort, so the
-prevalence figure is a floor and detection is better used to measure a norm
-than as a security control. The machine register is one visible edge of an
-older, human process — a register of
-accountability without authorship — that machine intelligence exposes rather
-than creates.
+We measure machine-drafted speech across 22 legislative chambers in four countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* built from the vocabulary language models overuse. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with an elevenfold spread across chambers and a concentration in scripted genres. This machine-drafted speech is not degraded: once genre is held fixed, AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, **predates the models by decades**: its rise begins in 1994–96, and it is organised generationally and by prior occupation, with position in an organisational hierarchy — the insulated middle using it most — predicting it beyond social class. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
 
 ---
 
@@ -1226,6 +1208,10 @@ delta. The registered *continuous* form of the interior peak — the altitude
 quadratic — found nothing (Appendix A18); the discrete levels and the
 relative contrast carry the claim.
 
+![](altitude_u.png)
+
+*The occupational register profile. Each legislator's prior occupation, coded to O\*NET, is scored on a four-level altitude ladder (free / bottom / middle / top of an organisational hierarchy) two semi-independent ways — the directional instrument and the coded corporate ladder — and both peak at the insulated middle, dipping at the exposed top. Points are each level's base slope entered alone (standardised, n = 4,762); bars ±1 se. The levels are individually noisy but jointly significant; the powered claim is the apex delta (middle − top), +0.049 (t 3.3), rising to +0.067 (t 3.9) under full covariates.*
+
 **The delta is the study's most covariate-robust occupational number.**
 Registered in words and observed +0.049 (t 3.3) raw; **+0.067 (t 3.9)**
 with cohort, class, education and prominence all present; right-signed and
@@ -1593,9 +1579,9 @@ already scored is genuinely human (used to build contrast exemplars — a
 property obtainable from any archive of old text, not from querying the target;
 review item B2). The figure below lays out the loop.
 
-![The detector-evasion search loop: the attack self-screens on the model's own
-score and queries the detector only at submission; a *flip* is any verdict
-leaving AI, a *success* is a verdict reaching Human](bypass_search.png)
+![](bypass_search.png)
+
+*The detector-evasion search loop: the attack self-screens on the model's own score and queries the detector only at submission; a **flip** is any verdict leaving AI, a **success** is a verdict reaching Human.*
 
 **Three verdicts, and the two events we count.** Pangram returns one of three
 labels, and the search can move a speech between them:

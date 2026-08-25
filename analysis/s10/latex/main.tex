@@ -4,6 +4,7 @@
 % uses unnumbered \subsection*; we use NUMBERED sections + cleveref so every
 % cross-reference is a working numbered hyperlink (the study has ~155 of them).
 % A one-line swap to \section* + \nameref restores strict Science styling.
+\usepackage{amsmath,amssymb,textcomp} % before newtxmath (avoids \Bbbk clash)
 \usepackage{newtxtext,newtxmath}
 \usepackage{graphicx}
 \graphicspath{{../}}
@@ -11,11 +12,48 @@
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
-\usepackage{amsmath,amssymb,textcomp}
 \usepackage{url}
 \usepackage[colorlinks=true,allcolors=blue]{hyperref}
 \usepackage{cleveref}
 \usepackage{caption}
+% cross-reference styling: keep the paper's "§N" for sections; "Figure N" / "Table N".
+\crefformat{section}{\S#2#1#3}
+\crefformat{subsection}{\S#2#1#3}
+\crefformat{subsubsection}{\S#2#1#3}
+\Crefformat{section}{\S#2#1#3}
+\Crefformat{subsection}{\S#2#1#3}
+\Crefformat{subsubsection}{\S#2#1#3}
+\crefname{figure}{figure}{figures}
+\Crefname{figure}{Figure}{Figures}
+\crefname{table}{table}{tables}
+\Crefname{table}{Table}{Tables}
+\captionsetup{font=small,labelfont=bf}
+% The body carries literal Unicode (Greek, math relations, arrows, accents);
+% map each to its LaTeX form so pdflatex sets them rather than dropping them.
+\usepackage{newunicodechar}
+\newunicodechar{−}{\ensuremath{-}}      % U+2212 minus
+\newunicodechar{×}{\ensuremath{\times}}
+\newunicodechar{→}{\ensuremath{\rightarrow}}
+\newunicodechar{⇒}{\ensuremath{\Rightarrow}}
+\newunicodechar{≈}{\ensuremath{\approx}}
+\newunicodechar{≥}{\ensuremath{\geq}}
+\newunicodechar{≤}{\ensuremath{\leq}}
+\newunicodechar{±}{\ensuremath{\pm}}
+\newunicodechar{·}{\ensuremath{\cdot}}
+\newunicodechar{τ}{\ensuremath{\tau}}
+\newunicodechar{σ}{\ensuremath{\sigma}}
+\newunicodechar{π}{\ensuremath{\pi}}
+\newunicodechar{ρ}{\ensuremath{\rho}}
+\newunicodechar{²}{\ensuremath{^{2}}}
+\newunicodechar{⁴}{\ensuremath{^{4}}}
+\newunicodechar{⁻}{\ensuremath{^{-}}}
+\newunicodechar{†}{\dag}
+\newunicodechar{✱}{\textasteriskcentered}
+\newunicodechar{§}{\S}
+\newunicodechar{É}{\'E}
+\newunicodechar{á}{\'a}
+\newunicodechar{ö}{\"o}
+\newunicodechar{ä}{\"a}
 % pandoc macros
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \providecommand{\passthrough}[1]{#1}
@@ -28,6 +66,7 @@
 \begin{document}
 \maketitle
 \input{body}
-\bibliographystyle{sciencemag}
-% \bibliography{refs}  % TODO: migrate the References section to a .bib
+% Citations are inline (author, venue, year) throughout, as in the draft; the
+% study has no separate reference list. A formal bibliography could be compiled
+% from the inline mentions if a submission required one.
 \end{document}

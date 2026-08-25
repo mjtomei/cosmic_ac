@@ -1,33 +1,14 @@
-\hypertarget{abstract}{%
-\section{Abstract}\label{abstract}}
+\section*{Abstract}
 
-How much recent legislative speech is machine-written, and what does the
-answer reveal? We measure machine-drafted speech across 22 legislative
-chambers in four countries with two independent instruments: a commercial
-AI-text detector (Pangram), calibrated against each chamber\textquotesingle s own pre-2022
-record (specificity 1,260/1,260), and a detector-independent lexical
-\emph{register} built from the vocabulary language models overuse. In current
-speech, \textbf{9.03\% of words} are machine-drafted --- a conservative floor --- with an
-elevenfold spread across chambers and a concentration in scripted genres. The
-register, however, \textbf{predates the models by decades}: its rise begins in
-1994--96, and it is organised generationally and by prior occupation ---
-position in an organisational hierarchy, the insulated middle using it most,
-predicts it beyond social class. Machine involvement does not degrade
-deliberative quality: AI-flagged speech is better-formed and no less engaged
-once genre is fixed. The detector is evadable under directed effort, so the
-prevalence figure is a floor and detection is better used to measure a norm
-than as a security control. The machine register is one visible edge of an
-older, human process --- a register of
-accountability without authorship --- that machine intelligence exposes rather
-than creates.
+We measure machine-drafted speech across 22 legislative chambers in four countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber\textquotesingle s own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical \emph{register} built from the vocabulary language models overuse. In current speech, \textbf{9.03\% of words} are machine-drafted --- a conservative estimate --- with an elevenfold spread across chambers and a concentration in scripted genres. This machine-drafted speech is not degraded: once genre is held fixed, AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, \textbf{predates the models by decades}: its rise begins in 1994--96, and it is organised generationally and by prior occupation, with position in an organisational hierarchy --- the insulated middle using it most --- predicting it beyond social class. The machine register is one visible edge of an older, human process --- a register of accountability without authorship --- that machine intelligence exposes rather than creates.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\textbf{S10 --- draft write-up, 2026-08-11; §4.6a and Appendix A extended
+\textbf{S10 --- draft write-up, 2026-08-11; \cref{sec:class} and Appendix~\ref{app:null} extended
 2026-08-13.} All arms complete, including the detector-bypass study and both
 prior-art comparators. Everything is reproducible from \texttt{analysis/s10/}.
 
-\textbf{§4.6a\textquotesingle s literature citations were web-verified 2026-08-24.} The result is
+\textbf{\cref{sec:class}\textquotesingle s literature citations were web-verified 2026-08-24.} The result is
 placed against Labov (crossover/hypercorrection, \emph{Sociolinguistic Patterns},
 U. Pennsylvania Press, 1972), Simmel (1904), Veblen (1899), Jhering (1883)
 with Durkheim\textquotesingle s summary supplying the quote, and Lieberson (\emph{A Matter of
@@ -38,7 +19,7 @@ place.
 
 \textbf{Numbers marked † are carried from earlier in the study.} All nine were
 re-derived from their artifacts on 2026-08-11 and reproduce; footnotes on each
-give the script and invocation. Two of the nine (§4.6\textquotesingle s cohort share, §4.7\textquotesingle s
+give the script and invocation. Two of the nine (\cref{sec:generational}\textquotesingle s cohort share, \cref{sec:posttraining}\textquotesingle s
 pooled alignment effect) were briefly and wrongly recorded as unsourced --- the
 verification pass had looked in the wrong script --- so their footnotes name the
 right one explicitly. Everything unmarked was computed or re-verified on
@@ -46,8 +27,7 @@ right one explicitly. Everything unmarked was computed or re-verified on
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{1-the-question-and-why-it-needs-two-instruments}{%
-\section{1. The question, and why it needs two instruments}\label{1-the-question-and-why-it-needs-two-instruments}}
+\section{The question, and why it needs two instruments}\label{sec:intro}
 
 How much legislative speech is machine-drafted, and what does its arrival do
 to deliberation?
@@ -72,8 +52,7 @@ one.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{2-data}{%
-\section{2. Data}\label{2-data}}
+\section{Data}\label{sec:data}
 
 Twenty-two chambers across four countries, extracted from official Hansard and
 the Congressional Record (the prevalence arm covers 20 of them --- New Brunswick
@@ -112,11 +91,10 @@ longer --- the whole of the record Pangram will read. Sampling is at a uniform
 rate across segment lengths, so the sample reproduces the corpus\textquotesingle s own length
 mix; rates are word-weighted (a ratio estimator applied after the uniform
 segment draw), which corrects the length/drafting bias without band-reweighting
-constants (§4.2). Sampling is seeded per cell
+constants (\cref{sec:prevalence}). Sampling is seeded per cell
 and reproducible (\texttt{build\_pangram\_expansion.py}, \texttt{build\_shortband.py}).
 
-\hypertarget{21-two-contamination-hazards-both-found-by-looking}{%
-\subsection{2.1 Two contamination hazards, both found by looking}\label{21-two-contamination-hazards-both-found-by-looking}}
+\subsection{Two contamination hazards, both found by looking}\label{sec:hazards}
 
 \textbf{Invisible characters.} Manitoba\textquotesingle s 2025-26 files carry soft hyphens
 (U+00AD) in 81.6\% of segments against 0.04\% of tokens in 2006-19. Left in,
@@ -158,17 +136,15 @@ Findings, and they cut against the received story:
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{3-method}{%
-\section{3. Method}\label{3-method}}
+\section{Method}\label{sec:method}
 
-\hypertarget{31-the-calibration-that-carries-the-argument}{%
-\subsection{3.1 The calibration that carries the argument}\label{31-the-calibration-that-carries-the-argument}}
+\subsection{The calibration that carries the argument}\label{sec:calibration-method}
 
 Prevalence is only meaningful against a measured false-positive rate. \textbf{A
 chamber\textquotesingle s false-positive rate depends on its own editorial register, so
 specificity is not transferable} --- each chamber buys its own 60-segment
 pre-AI control. This is the single most important design choice in the study
-and the reason its result differs from published comparators (§7).
+and the reason its result differs from published comparators (\cref{sec:related}).
 
 With specificity \texttt{Sp} and sensitivity \texttt{Se}, an observed flag rate \texttt{π} relates
 to true prevalence \texttt{τ} by Rogan--Gladen:
@@ -179,12 +155,11 @@ to true prevalence \texttt{τ} by Rogan--Gladen:
 
 When \texttt{Sp\ =\ 1} this collapses to \texttt{τ\ =\ π/Se}. \textbf{\texttt{Se} is not estimated.} Since a
 detector\textquotesingle s sensitivity cannot exceed 1, \texttt{τ\ =\ π/Se\ ≥\ π}, so with \texttt{Sp\ =\ 1}
-measured (§4.1) the observed flag rate is a conservative floor on true
+measured (\cref{sec:calibration}) the observed flag rate is a conservative floor on true
 prevalence --- every prevalence figure below is thus conservative with respect
 to machine text the detector misses.
 
-\hypertarget{32-detector-and-a-defect-worth-recording}{%
-\subsection{3.2 Detector, and a defect worth recording}\label{32-detector-and-a-defect-worth-recording}}
+\subsection{Detector, and a defect worth recording}\label{sec:detector}
 
 All verdicts are \textbf{Pangram 4}. This is not a detail. The Pangram API\textquotesingle s
 default model is \textbf{Pangram 3} (version 3.3.2), while the web dashboard runs
@@ -201,13 +176,12 @@ same instrument. Billing corroborates it independently: the dashboard\textquotes
 while the defaulted API billed per document at Pangram 3\textquotesingle s 1,000-word unit.
 
 The 2026-07 New Brunswick run passed no model parameter and silently took
-Pangram 3. It was rescored (§4.1).
+Pangram 3. It was rescored (\cref{sec:calibration}).
 
-\hypertarget{33-why-the-frequency-arm-is-descriptive-not-inferential}{%
-\subsection{3.3 Why the frequency arm is descriptive, not inferential}\label{33-why-the-frequency-arm-is-descriptive-not-inferential}}
+\subsection{Why the frequency arm is descriptive, not inferential}\label{sec:freq-descriptive}
 
 This belongs in methods rather than an appendix, because it explains the
-framing of §4.5.
+framing of \cref{sec:register-shift}.
 
 The Kobak et al. excess-vocabulary approach (arXiv:2406.07016; \emph{Sci Adv}
 11(27):eadt3813, 2025) compares observed word frequencies against a
@@ -220,12 +194,11 @@ construction. It fires there too. An estimator that reports a large effect on
 a period when nothing happened is measuring drift, not treatment.
 
 The arm is therefore reported as a \textbf{descriptive series}, not as evidence of
-LLM causation. This is what makes the 1994--96 onset (§4.5) interesting rather
+LLM causation. This is what makes the 1994--96 onset (\cref{sec:register-shift}) interesting rather
 than embarrassing: the register was already moving decades before the
 machines.
 
-\hypertarget{34-instruments-retired-and-why}{%
-\subsection{3.4 Instruments retired, and why}\label{34-instruments-retired-and-why}}
+\subsection{Instruments retired, and why}\label{sec:retired}
 
 Named here because a reader needs to know what was tried and dropped, not to
 pad an appendix:
@@ -246,24 +219,22 @@ Mistral synthetic sensitivity corpus & deleted & too few words to carry variance
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{4-results}{%
-\section{4. Results}\label{4-results}}
+\section{Results}\label{sec:results}
 
-\hypertarget{41-calibration-1260--1260}{%
-\subsection{4.1 Calibration: 1,260 / 1,260}\label{41-calibration-1260--1260}}
+\subsection{Calibration: 1,260 / 1,260}\label{sec:calibration}
 
 \textbf{Zero false positives across every chamber\textquotesingle s own pre-AI control.}
 Specificity \textbf{100.00\% {[}99.7\%, 100.0\%{]}} (Wilson). Sensitivity is not
 estimated from our own data: with \texttt{Sp\ =\ 1} and any real detector\textquotesingle s \texttt{Se\ ≤\ 1},
 the observed flag rate is a \textbf{conservative floor} on true prevalence, so every
-§4.2 figure is if anything an underestimate of machine text. Using \texttt{Se\ =\ 1}
+\cref{sec:prevalence} figure is if anything an underestimate of machine text. Using \texttt{Se\ =\ 1}
 (the floor) is deliberately the most conservative choice; the most defensible
 external anchor is Pangram\textquotesingle s independently-measured recall of 99.3\% on the RAID
 benchmark (Dugan et al., COLING shared task), which would raise every figure by
 about 0.7\%, and our own pilot points the same way --- of 40 synthetic legislative
 speeches generated by an open model, Pangram flagged \textbf{all 40} (a 100\% hit
 rate, set aside as underpowered but consistent with the published recall).
-Sensitivity on \emph{edited} machine text is the real unknown and is discussed in §5.
+Sensitivity on \emph{edited} machine text is the real unknown and is discussed in \cref{sec:limits}.
 (\texttt{prevalence\_report.py})
 
 \textbf{New Brunswick rescore.} 658 segments, byte-identical stored text, Pangram
@@ -287,8 +258,7 @@ a false-positive problem} --- disagreements run net upward (33 segments moved
 out of Human, 9 the other way). Earlier NB conclusions stand as conservative.
 (\texttt{nb\_p3\_vs\_p4.py})
 
-\hypertarget{42-prevalence-90-of-words-with-an-elevenfold-spread}{%
-\subsection{4.2 Prevalence: 9.0\% of words, with an elevenfold spread}\label{42-prevalence-90-of-words-with-an-elevenfold-spread}}
+\subsection{Prevalence: 9.0\% of words, with an elevenfold spread}\label{sec:prevalence}
 
 \textbf{Pooled 9.03\% of words {[}8.00\%, 10.08\%{]}} --- 65,795 machine-written words of
 728,998 across 3,519 segments in 20 chambers, excluding regime-flagged TAS.
@@ -345,7 +315,7 @@ count.\footnote{Fractions live in \texttt{fraction\_ai\_harvested.json} (151 har
   before 2026-08-13 counted a Mixed segment as wholly machine-written. The
   error is a factor of 1.33 on the headline and is not uniform across the
   study: it is largest where Mixed verdicts cluster, which is the
-  mixed-format business in the middle of §4.3\textquotesingle s genre ladder.}
+  mixed-format business in the middle of \cref{sec:genre}\textquotesingle s genre ladder.}
 
 \begin{longtable}[]{@{}lllllll@{}}
 \toprule\noalign{}
@@ -375,11 +345,11 @@ segment counts cannot express that.\footnote{\texttt{python\ -c\ "import\ banded
 The spread is the finding, not noise around a mean: chamber rates run from
 1.8\% to 19.8\%, an elevenfold range. What drives a chamber\textquotesingle s position is not
 established here --- even two chambers of one legislature can sit far apart
-(§8.6 B4), and the study does not attribute the between-chamber differences to
+(\cref{sec:future} B4), and the study does not attribute the between-chamber differences to
 any measured cause.
 
 \textbf{Federal Canada\textquotesingle s row comes from its own uniform draw}, not from the
-genre-stratified sample that answers §4.3. The genre arm takes 60 segments
+genre-stratified sample that answers \cref{sec:genre}. The genre arm takes 60 segments
 each from Statements by Members, Government Orders and Oral Questions, which
 imposes a genre mix rather than observing one and leaves 25.6\% of the chamber\textquotesingle s
 in-band record --- Private Members\textquotesingle{} Business, Adjournment Proceedings, Routine
@@ -400,7 +370,7 @@ to the headline and neither makes nor breaks it.\footnote{\texttt{pangram\_ch\_v
 rather than assumed: all 360 of their segments from the four-chamber arm, which
 recorded no model version, were rescored through the dashboard and agree with
 the original verdicts \textbf{360 out of 360}. That agreement is itself the largest
-Pangram 3-versus-4 comparison in the study (§3.2).
+Pangram 3-versus-4 comparison in the study (\cref{sec:detector}).
 
 \textbf{Manitoba\textquotesingle s 13.1\% depends on a repaired extractor}, and without it the
 chamber reads 5.3\%. The original extraction lost 42\% of the record: from
@@ -413,7 +383,7 @@ Speaker\textquotesingle s --- where it was discarded as chair voice. Chair share
 The loss was \textbf{not neutral}, which is why it matters so much. A frame missing
 42\% of text at random would leave the rate roughly unchanged. What was
 missing were the formatted, anchor-bearing speeches --- the prepared ones --- and
-prepared business is exactly where drafting concentrates (§4.3). The extractor
+prepared business is exactly where drafting concentrates (\cref{sec:genre}). The extractor
 was preferentially deleting the machine-drafted half of the chamber\textquotesingle s record.
 
 The controls are the check that this is a frame effect and not the detector
@@ -429,8 +399,7 @@ only thing that changed.\footnote{\texttt{python\ build\_mb\_redraw.py}, then \t
   reproducible --- 135 of the old 278 seg\_ids do not exist in the corrected
   file, because re-extraction shifts turn indices.}
 
-\hypertarget{43-genre-drafting-concentrates-in-scripted-business}{%
-\subsection{4.3 Genre: drafting concentrates in scripted business}\label{43-genre-drafting-concentrates-in-scripted-business}}
+\subsection{Genre: drafting concentrates in scripted business}\label{sec:genre}
 
 Federal Canada is the only corpus carrying a business rubric, which makes
 this test possible at all.
@@ -556,12 +525,11 @@ the CA-FED controls all read Human, inside the 1,260/1,260 overall.
 Extraction is paragraph-level throughout, so no genre loses whole speeches to
 the length cap; the differential retention above is a property of natural
 utterance length, not of truncation. Flag rate itself rises with segment length
-(§5), which cuts the same way: the filter keeps Oral Questions\textquotesingle{} longer segments,
+(\cref{sec:limits}), which cuts the same way: the filter keeps Oral Questions\textquotesingle{} longer segments,
 so the surviving cell is biased \emph{up}, and true Question-Period exchange sits
 lower still.
 
-\hypertarget{44-the-opus-screen-tracks-pangram}{%
-\subsection{4.4 The Opus screen tracks Pangram}\label{44-the-opus-screen-tracks-pangram}}
+\subsection{The Opus screen tracks Pangram}\label{sec:screen-pangram}
 
 A blinded LLM screen over the full corpus (37,801 segments, date-blind)
 separates Pangram\textquotesingle s classes cleanly on the 618-segment overlap:
@@ -624,16 +592,15 @@ readable.}
 This also cuts against the pattern in the open models, measured on the same
 pool: effort moved Qwen3-32B by \textbf{+0.172} and gpt-oss-120b by \textbf{+0.015},
 against \textbf{−0.007} for Opus. Reasoning closes part of the gap for weak
-detectors and does nothing for a strong one --- consistent with §3.4\textquotesingle s finding
+detectors and does nothing for a strong one --- consistent with \cref{sec:retired}\textquotesingle s finding
 that reasoning never closes the \textasciitilde0.25 AUC frontier gap, but sharper: the
 frontier model is not reasoning its way to 0.95, it is recognising something
 at a glance. Practically, the screen can be run for about **4× fewer reasoning
 tokens (\textasciitilde2× all-in)** with no loss. (\texttt{opus\_effort\_ab.py}, \texttt{opus\_effort\_ab.csv})
 
-\hypertarget{45-the-register-shift-starts-in-199496-decades-before-the-machines}{%
-\subsection{4.5 The register shift starts in 1994--96, decades before the machines}\label{45-the-register-shift-starts-in-199496-decades-before-the-machines}}
+\subsection{The register shift starts in 1994--96, decades before the machines}\label{sec:register-shift}
 
-Descriptive series (§3.3), UK Commons extended back to 1985. The register
+Descriptive series (\cref{sec:freq-descriptive}), UK Commons extended back to 1985. The register
 \emph{declines} through the late 1980s and turns upward around \textbf{1994--96} ---
 before the consumer web, and long before any language model. Whatever this
 measures, LLMs did not start it.\footnote{\texttt{python\ long\_trend.py\ -\/-seg\ uk/segments\_uk\_deep.jsonl} for the annual
@@ -644,12 +611,11 @@ measures, LLMs did not start it.\footnote{\texttt{python\ long\_trend.py\ -\/-se
   resamples, 1995 in 13.0\% and 1996 in 2.1\% --- so "1994--96" is a genuine
   {[}1994, 1996{]} interval, not a hedge.}
 
-Read together with §4.7, the interesting reading is not "LLMs changed
+Read together with \cref{sec:posttraining}, the interesting reading is not "LLMs changed
 parliamentary register" but that \textbf{human register had been moving toward what
 instruct-tuning later selected for, for thirty years.} †
 
-\hypertarget{45a-the-climb-is-everywhere-except-the-united-states}{%
-\subsection{4.5a The climb is everywhere except the United States}\label{45a-the-climb-is-everywhere-except-the-united-states}}
+\subsection{The climb is everywhere except the United States}\label{sec:climb-geography}
 
 Running the same series on every chamber turns the thirty-year drift into a
 comparison. The instrument and the 200 matched placebo sets are built once, on
@@ -779,11 +745,10 @@ States --- shows nothing.
 The effect is small: r = 0.081 is under one percent of variance. And the design
 establishes compatibility, not cause. A shared cause predicts the same
 correlation --- both the models and the global drift could be downstream of an
-American-dominated written corpus, with no common optimization involved. §8.6
+American-dominated written corpus, with no common optimization involved. \cref{sec:future}
 names the instrument that would separate those two.
 
-\hypertarget{46-a-generational-gradient-net-of-calendar-drift}{%
-\subsection{4.6 A generational gradient, net of calendar drift}\label{46-a-generational-gradient-net-of-calendar-drift}}
+\subsection{A generational gradient, net of calendar drift}\label{sec:generational}
 
 Every member-year of legislative speech carries two time-stamps: the year the
 words were \textbf{spoken} (calendar period) and the speaker\textquotesingle s \textbf{birth year}
@@ -817,13 +782,13 @@ the same year and chamber. Both hold, and they separate cleanly.
 \item
   \textbf{The gradient holds within year and province at +1.05 per 1,000 per decade}
   (t ≈ 8.5, clustered on member), unmoved by occupation and education controls,
-  which \emph{strengthen} it rather than explain it away (§4.6a). †\footnote{\texttt{python\ formation\_window.py}, clustered on member (CR1): birth-decade
+  which \emph{strengthen} it rather than explain it away (\cref{sec:class}). †\footnote{\texttt{python\ formation\_window.py}, clustered on member (CR1): birth-decade
     coefficient +1.05 per 1,000 words per decade, t = +8.46 unadjusted and
     +9.23 with occupation and education controls. The controls \emph{strengthen} the
     cohort term (coefficient +1.05 → +1.14), which is why they are reported as
     running the wrong way for a selection story. The member-year HC1 errors the
     script also prints inflate the t to +17.7 --- a third instance of the
-    unclustered-inference pattern flagged in Appendix A, though here, with 888
+    unclustered-inference pattern flagged in Appendix~\ref{app:null}, though here, with 888
     member clusters, the conclusion is unmoved.}
 \item
   \textbf{Sitting members convert too, at about half the pace.} With member fixed
@@ -846,14 +811,13 @@ already sitting drift upward inside their own careers, at about half the
 aggregate rate. Neither displaces the other. The cohort gradient is not
 ministerial office: in the chambers whose record marks rank it \emph{strengthens}
 when office years are removed, and office-holders use less of the register than
-backbenchers, not more (Appendix D.4). The mechanism behind the cohort
+backbenchers, not more (Appendix~\ref{sec:cohort-ministerial}). The mechanism behind the cohort
 gradient remains unidentified --- three exposure tests failed to isolate it
-(Appendix A). Cohort is not the whole of who uses the register --- §4.6a adds
+(Appendix~\ref{app:null}). Cohort is not the whole of who uses the register --- \cref{sec:class} adds
 three predictors that survive it --- but none of them identifies the cohort
 mechanism either.
 
-\hypertarget{46a-class-and-the-register-jointly-significant-individually-noisy--and-education-is-not-it}{%
-\subsection{4.6a Class and the register: jointly significant, individually noisy --- and education is not it}\label{46a-class-and-the-register-jointly-significant-individually-noisy--and-education-is-not-it}}
+\subsection{Class and the register: jointly significant, individually noisy --- and education is not it}\label{sec:class}
 
 The arc of this section is a correction applied twice, recorded because both
 applications were the study\textquotesingle s own committed checks. On the eight provinces,
@@ -913,31 +877,34 @@ not distinguishable from II.
 \textbf{The shape holds in every period, and does not migrate.} A chase-and-flight
 cycle predicts that the originating tier abandons the form first, so the peak
 should slide downward across eras. It does not: class II sits above class I in
-all seven half-decades, and the manual-and-farm tail stays at the floor
+all seven half-decades (\cref{fig:class-era}), and the manual-and-farm tail stays at the floor
 throughout.
 
-\includegraphics{class_by_era_grouped.png}
-
-\emph{The class profile of the register, 1995--2026. One point per class per period
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\linewidth]{class_by_era_grouped.png}
+\caption{The class profile of the register, 1995--2026. One point per class per period
 (≥25 members), member-level means over 22 chambers, z-scored within
 chamber × period so the overall era rise is removed and only the shape across
 classes remains. IVc, V/VI and VIIab are pooled because separately they run
 26--113 members per period and cross each other on noise; I and II are kept
 apart because the crossover between them is the claim under test. Error bars
 are ±1 se. Class III remains thin (26--81 members) and its late excursion is not
-readable as movement.} †\footnote{\texttt{python\ plot\_class\_by\_era\_grouped.py}, reading
+readable as movement. (\texttt{python\ plot\_class\_by\_era\_grouped.py}, reading
   \texttt{class\_by\_era\_grouped.csv} (per-point means, standard errors and member
   counts); the unpooled version is \texttt{class\_by\_era.csv} / \texttt{class\_by\_era.png}.
   An earlier member-\textbf{year} aggregation of the same data appeared to show the
   peak migrating downward; that was an artifact of counting long-serving
-  members repeatedly, and the member-level estimate above retracts it.}
+  members repeatedly, and the member-level estimate above retracts it.)}
+\label{fig:class-era}
+\end{figure}
 
 The era test cannot say who originated the form. Class I is never at the top,
 not even in 1995--99 --- but class coding only becomes substantial around 2005,
-and §4.5 dates the register\textquotesingle s turn to 1994--96. We are looking at a cycle
+and \cref{sec:register-shift} dates the register\textquotesingle s turn to 1994--96. We are looking at a cycle
 already in progress, with the crossover established before the first frame. The
 study that would discriminate is class-coded Commons speech from 1985--1996,
-where the deep archive reaches and occupations are recoverable (§8.6).
+where the deep archive reaches and occupations are recoverable (\cref{sec:future}).
 
 \textbf{Who the peak actually is.} The classes are coded from members\textquotesingle{} own prior
 occupations, so the peak has a concrete membership: class II is teachers (about
@@ -949,7 +916,7 @@ stock brokers --- is not elevated at all. The register is heaviest among the
 \textbf{salaried, credentialled semi-professions}: the teaching, caring and
 communicating occupations, credentialled but not elite-credentialled, employed
 but not propertied. That is a description of who speaks it, not a claim about
-where it came from --- §4.5 dates the shift to 1994--96, before anything measured
+where it came from --- \cref{sec:register-shift} dates the shift to 1994--96, before anything measured
 here could have produced it.
 
 \textbf{The II-over-I crossover is established, by the test that needs no
@@ -1010,8 +977,7 @@ graduate, not professional" are two descriptions of one group, so whichever
 enters the model first absorbs the other. Education\textquotesingle s shape is real and
 independently measured; its apparent separate effect is not.
 
-\hypertarget{all-four-predictors-at-once}{%
-\subsubsection{All four predictors at once}\label{all-four-predictors-at-once}}
+\subsubsection{All four predictors at once}\label{sub:four-predictors}
 
 Cohort, class, education and prominence in a single member-level regression
 (n = 4,056 complete cases across 22 chambers; each block also fitted alone on
@@ -1041,7 +1007,7 @@ order of magnitude better resolved than any of them. Class survives everything,
 barely moving. Education does not survive class. Prominence appears here only because a
 regression needs a number: the linear term is standing in for two opposite
 shapes that cancel when pooled, and the honest reading is the bucket table in
-Appendix D.3, not this coefficient.
+Appendix~\ref{sec:prominence-buckets}, not this coefficient.
 
 An earlier version of this table, computed before the nine-chamber expansion
 (n = 2,989), showed class failing the joint test --- the II-over-I contrast fell
@@ -1063,8 +1029,7 @@ survives every covariate this study has measured, in three countries and 22
 chambers. For scale: the whole class gradient spans \textasciitilde0.36σ; cohort covers
 that in about thirteen years of birth date.
 
-\hypertarget{class-the-provincial-estimates-retained-as-the-discovery-record-see-the-panel-result-above}{%
-\subsubsection{Class: the provincial estimates (retained as the discovery record; see the panel result above)}\label{class-the-provincial-estimates-retained-as-the-discovery-record-see-the-panel-result-above}}
+\subsubsection{Class: the provincial estimates (retained as the discovery record; see the panel result above)}\label{sub:class-provincial}
 
 Coding each member\textquotesingle s pre-political occupation into the
 Erikson--Goldthorpe--Portocarero schema --- two independent Claude passes over a
@@ -1109,8 +1074,7 @@ finding and nothing.\footnote{\texttt{python\ covariate\_study.py}, \texttt{pyth
   service/manual cuts the schema turns on, which is a caveat on the coding
   and not on the register measurement.}
 
-\hypertarget{education-the-provincial-ladder-did-not-replicate-see-above}{%
-\subsubsection{Education: the provincial ladder (did not replicate; see above)}\label{education-the-provincial-ladder-did-not-replicate-see-above}}
+\subsubsection{Education: the provincial ladder (did not replicate; see above)}\label{sub:education-provincial}
 
 Education behaves the same way once the ladder is separated from the
 professional track. On the academic rungs alone --- secondary, college,
@@ -1121,8 +1085,7 @@ law and medicine sit \textbf{−0.785 below bachelor\textquotesingle s} (t = −
 degree outranks a bachelor\textquotesingle s on any ordering, so that dip cannot be attainment;
 it is the same class-I effect arriving through a second instrument.
 
-\hypertarget{the-shape-has-a-name--held-now-as-hypothesis-not-finding}{%
-\subsubsection{The shape has a name --- held now as hypothesis, not finding}\label{the-shape-has-a-name--held-now-as-hypothesis-not-finding}}
+\subsubsection{The shape has a name --- held now as hypothesis, not finding}\label{sub:shape-name}
 
 The second-highest status group exceeding the highest is Labov\textquotesingle s crossover
 pattern, and the middle tier\textquotesingle s described disposition matches his linguistic
@@ -1134,8 +1097,7 @@ because the flight result below is measured on pooled text rather than
 member-level inference, but nothing in this subsection should be cited as
 established.
 
-\hypertarget{flight-class-i-avoids-the-words-that-became-common}{%
-\subsubsection{Flight: class I avoids the words that became common}\label{flight-class-i-avoids-the-words-that-became-common}}
+\subsubsection{Flight: class I avoids the words that became common}\label{sub:flight}
 
 What distinguishes class I is \emph{which} words it avoids. Across style words with
 enough volume in 2023--26, the correlation between a word\textquotesingle s post/pre lift and
@@ -1165,13 +1127,12 @@ higher-status parents once they become common.\footnote{\texttt{python\ class\_m
   2000, Labov 1972); the Labov year/publisher error the file flagged is
   corrected. See \texttt{CLASS-REGISTER-LITERATURE.md}.}
 
-\hypertarget{prominence-a-gradient-in-the-provinces-an-arc-in-the-national-chambers}{%
-\subsubsection{Prominence: a gradient in the provinces, an arc in the national chambers}\label{prominence-a-gradient-in-the-provinces-an-arc-in-the-national-chambers}}
+\subsubsection{Prominence: a gradient in the provinces, an arc in the national chambers}\label{sub:prominence-class}
 
 Each member\textquotesingle s Wikipedia article length --- a measured page property (wikitext
 bytes via the MediaWiki API), not a judgement --- is the third status marker
 available here, alongside class and office. Read in buckets rather than as a
-single slope, it splits the chambers into two shapes (Appendix D.3; all 22
+single slope, it splits the chambers into two shapes (Appendix~\ref{sec:prominence-buckets}; all 22
 chambers, 6,896 members, 99\% coverage):
 
 \begin{longtable}[]{@{}llll@{}}
@@ -1200,7 +1161,7 @@ slope describes them; the buckets are the result.
 \textbf{What the four markers share is not a peak but a retreat at the top.} Class
 peaks at II with class I below it. Education plateaus at bachelor and graduate
 with the professional degree below. Office-holders --- the highest-status
-\emph{positions} --- use less than backbenchers (Appendix D.4). Prominence arcs in the
+\emph{positions} --- use less than backbenchers (Appendix~\ref{sec:cohort-ministerial}). Prominence arcs in the
 national chambers and declines outright in the sub-national ones, but in both
 the most-written-about members are below the middle of their own distribution.
 Four markers, measured in completely different ways, agreeing that the top of
@@ -1214,7 +1175,7 @@ implies \textbf{has} now been run and does not support the cycle\textquotesingle
 the class profile holds its shape in every half-decade rather than migrating
 (figure above). A cycle already in progress before our first frame would look
 like this too, which is why the discriminating study is class-coded speech from
-before 1996 (§8.6).
+before 1996 (\cref{sec:future}).
 
 Depth was collected as a control on notability bias in the education covariate
 --- members whose education we know have \textbf{1.80× the median article length} of
@@ -1222,8 +1183,7 @@ those we do not, so that bias is real and measured --- and it survived as a smal
 result in its own right. WP:NPOL gives essentially every elected member an
 article, so existence discriminates nothing; depth is the usable instrument.
 
-\hypertarget{word-mix-the-effects-live-in-rate-not-vocabulary--and-machine-text-sits-outside-the-geometry}{%
-\subsubsection{Word mix: the effects live in rate, not vocabulary --- and machine text sits outside the geometry}\label{word-mix-the-effects-live-in-rate-not-vocabulary--and-machine-text-sits-outside-the-geometry}}
+\subsubsection{Word mix: the effects live in rate, not vocabulary --- and machine text sits outside the geometry}\label{sub:wordmix}
 
 A composition check (\texttt{vector\_analysis.py}, methodology and full results in
 \texttt{VECTOR-ANALYSIS.md}): normalising each member\textquotesingle s style-word vector to its own
@@ -1245,7 +1205,7 @@ signature}: all six Claude models are positive against the flagged pool
 stable across three model generations. Within-family ordering is not
 interpretable at these sample sizes, but the family split is clean --- the
 flagged text shares distinctive vocabulary with one lineage and not the
-other. This is register lineage, not attribution (§8.6 A.1b). Register
+other. This is register lineage, not attribution (\cref{sec:future} A.1b). Register
 \emph{rate} is also a lineage property: Opus sits at base-model rate across three
 generations (2,696--2,837 per 100k), Sonnet runs hot in both versions
 (4,639--5,116), and Fable 5, at 3,369, is the first model measured that lands
@@ -1256,8 +1216,7 @@ now be measured explicitly, a legislature with a stated goal of fair
 representation can control for them --- a fairness mechanism independent of the
 social dynamics this section documents, which are expected to persist.
 
-\hypertarget{limits-and-they-are-real}{%
-\subsubsection{Limits, and they are real}\label{limits-and-they-are-real}}
+\subsubsection{Limits, and they are real}\label{sub:class-limits}
 
 Article length is measured once, in 2026, and applied to every year of a
 member\textquotesingle s career. A backbencher who later became premier carries their eventual
@@ -1291,8 +1250,7 @@ Both effects leave cohort intact. Birth decade runs \textbf{+1.20 to +1.36 per
 decade} in every specification here, larger than any class or education
 contrast.
 
-\hypertarget{46b-what-the-class-shape-was-occupation-pre-registered-and-run}{%
-\subsection{4.6b What the class shape was: occupation, pre-registered and run}\label{46b-what-the-class-shape-was-occupation-pre-registered-and-run}}
+\subsection{What the class shape was: occupation, pre-registered and run}\label{sec:occupation}
 
 The class arm left a shape (the II-over-I inverted U) without a mechanism.
 This arm registered one, built the instrument to measure it, and ran ---
@@ -1343,8 +1301,15 @@ Both middles survive the full covariate set (+0.041 and +0.042, t 2.6
 each); under covariates the shape sharpens (bottom mildly negative, top
 close behind middle), and the middle-over-top gap\textquotesingle s powered test is the
 delta. The registered \emph{continuous} form of the interior peak --- the altitude
-quadratic --- found nothing (Appendix A18); the discrete levels and the
-relative contrast carry the claim.
+quadratic --- found nothing (Appendix~\ref{app:null}18); the discrete levels and the
+relative contrast carry the claim; \cref{fig:altitude} plots both ladders.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\linewidth]{altitude_u.png}
+\caption{The occupational register profile. Each legislator\textquotesingle s prior occupation, coded to O*NET, is scored on a four-level altitude ladder (free / bottom / middle / top of an organisational hierarchy) two semi-independent ways --- the directional instrument and the coded corporate ladder --- and both peak at the insulated middle, dipping at the exposed top. Points are each level\textquotesingle s base slope entered alone (standardised, n = 4,762); bars ±1 se. The levels are individually noisy but jointly significant; the powered claim is the apex delta (middle − top), +0.049 (t 3.3), rising to +0.067 (t 3.9) under full covariates.}
+\label{fig:altitude}
+\end{figure}
 
 \textbf{The delta is the study\textquotesingle s most covariate-robust occupational number.}
 Registered in words and observed +0.049 (t 3.3) raw; \textbf{+0.067 (t 3.9)}
@@ -1388,11 +1353,11 @@ without independent confirmation.
 
 One drafting generation of the registration expressed the peak claim as a
 linear three-profile rank; that operationalization failed its own test and
-the framing is retired --- Appendix B8 preserves its numbers, and the
+the framing is retired --- Appendix~\ref{app:superseded}8 preserves its numbers, and the
 registration\textquotesingle s post-run amendment records the oversight and the provenance
-ruling. Failed registered predictions are in Appendix A (the altitude
+ruling. Failed registered predictions are in Appendix~\ref{app:null} (the altitude
 quadratic, the autonomy asymmetry, nominal-vs-effective autonomy). Scale
-for all of it: §5\textquotesingle s calibration bullet --- small effects by any benchmark,
+for all of it: \cref{sec:limits}\textquotesingle s calibration bullet --- small effects by any benchmark,
 reliably estimated, structurally replicated, floors rather than
 ceilings.\footnote{\texttt{python\ prereg\_stage1.py}, \texttt{prereg\_stage2.py},
   \texttt{prereg\_synthesis\_check.py}, \texttt{prereg\_covariate\_strength.py},
@@ -1403,8 +1368,7 @@ ceilings.\footnote{\texttt{python\ prereg\_stage1.py}, \texttt{prereg\_stage2.py
   \texttt{element\_audit\_*.json}, \texttt{element\_levels.json},
   \texttt{instrument\_final\_cells.json}.}
 
-\hypertarget{47-the-register-is-a-post-training-artifact}{%
-\subsection{4.7 The register is a post-training artifact}\label{47-the-register-is-a-post-training-artifact}}
+\subsection{The register is a post-training artifact}\label{sec:posttraining}
 
 OLMo-2 ladder, same prompts across the post-training stages. The stage values
 are bias-corrected: the estimator as first shipped carried a per-transition
@@ -1459,11 +1423,11 @@ families, 1,600 prompt pairs each, 1.19M base words.\footnote{Ladder stages: \te
 contribute \textbf{indistinguishably} (paired bootstrap over 800 shared prompts:
 DPO − SFT = −0.08, 95\% CI {[}−0.31, +0.15{]}), so no stage ordering is supported ---
 an earlier version leaned on "largest at the preference stage," and that
-ordering was the pedestal, not the data (Appendix B). What remains true, and
+ordering was the pedestal, not the data (Appendix~\ref{app:superseded}). What remains true, and
 is kept as a datapoint rather than a load-bearing link: the register is
 installed by the stages tuned toward human demonstrations and preferences, and
 not by the stage tuned toward verifiable correctness. That is consistent with
-§4.5\textquotesingle s reading that alignment concentrates something humans already favoured ---
+\cref{sec:register-shift}\textquotesingle s reading that alignment concentrates something humans already favoured ---
 an association, not an identified mechanism, and the section\textquotesingle s argument no
 longer rests on it. The correction
 STRENGTHENS the arm\textquotesingle s design claim: \textbf{RLVR was the pre-registered placebo} ---
@@ -1491,10 +1455,9 @@ rather than one estimate. The 30B mixture-of-experts model is the weakest at
 passed 800 prompts, with just 37 style words clearing 20 occurrences. That is
 an unresolved flag, not a counter-result.
 
-\hypertarget{47a-coverage-post-training-moves-the-models-vocabulary-onto-hansards}{%
-\subsection{4.7a Coverage: post-training moves the model\textquotesingle s vocabulary onto Hansard\textquotesingle s}\label{47a-coverage-post-training-moves-the-models-vocabulary-onto-hansards}}
+\subsection{Coverage: post-training moves the model\textquotesingle s vocabulary onto Hansard\textquotesingle s}\label{sec:coverage}
 
-§4.7\textquotesingle s excess runs over Kobak\textquotesingle s 407 style words, and only about half appear in
+\cref{sec:posttraining}\textquotesingle s excess runs over Kobak\textquotesingle s 407 style words, and only about half appear in
 the generated corpus. The standing answer was a presence count --- real Hansard
 covers barely more of the list at the same volume, so the list is partly
 out-of-domain and 407 is the wrong denominator. That is a summary of a
@@ -1542,9 +1505,9 @@ share, well under what a presence count implied. And post-training moves the
 model onto Hansard\textquotesingle s vocabulary: the words real legislators use that the model
 does not fall from \textbf{86 to 55}, and the words both use rise from 236 to 267.
 
-This is §4.7\textquotesingle s claim arriving by a different route. It needs no control
+This is \cref{sec:posttraining}\textquotesingle s claim arriving by a different route. It needs no control
 matching, no frequency bucketing and no pseudocount --- it is a count of which
-words appear --- so it is not exposed to the estimator defect that cost §4.7 its
+words appear --- so it is not exposed to the estimator defect that cost \cref{sec:posttraining} its
 original +0.88. Two measurements of the same shift, one of which cannot fail in
 the way the other did.
 
@@ -1554,11 +1517,10 @@ ones: \emph{transformative, unlocking, enhances, groundbreaking, leveraging,
 pioneering, pivotal, amid}. Our 8B open models do not emit that register;
 whatever is putting it in the record is not them. So the base-versus-instruct
 contrast is a \textbf{directional proxy for what post-training does}, not a model of
-the register actually appearing in Hansard, and §4.7 should not be read as
-reproducing the thing §4.2 detects.
+the register actually appearing in Hansard, and \cref{sec:posttraining} should not be read as
+reproducing the thing \cref{sec:prevalence} detects.
 
-\hypertarget{48-permeation-detector-independent-and-small-but-positive}{%
-\subsection{4.8 Permeation: detector-independent and small but positive}\label{48-permeation-detector-independent-and-small-but-positive}}
+\subsection{Permeation: detector-independent and small but positive}\label{sec:permeation}
 
 In-context likelihood of the Kobak style words within Hansard traces,
 self-normalised, no placebo word list, no external control:
@@ -1595,8 +1557,7 @@ value moves by an order of magnitude with the resampling seed (+0.0001 to
 +0.0009 over five seeds at B = 2,000). Printing it to four decimals would claim
 a precision the estimator does not have, so the permutation test leads.
 
-\hypertarget{49-quality-better-formed-not-worse-engaged--and-evadable-under-effort}{%
-\subsection{4.9 Quality: better-formed, not worse-engaged --- and evadable under effort}\label{49-quality-better-formed-not-worse-engaged--and-evadable-under-effort}}
+\subsection{Quality: better-formed, not worse-engaged --- and evadable under effort}\label{sec:quality}
 
 Graded against the Discourse Quality Index (Steenbergen, Bächtiger, Spörndli
 \& Steiner 2003), using the original authors\textquotesingle{} own codings of a 1998 UK Commons
@@ -1656,7 +1617,7 @@ respect\_groups & \textbf{+0.287} (t +2.0) ✱\footnote{The one starred cell tha
   correction: Benjamini-Hochberg across the fourteen cells of this table
   (Benjamini \& Hochberg, \emph{JRSS-B} 57, 1995, 289--300) leaves every other
   starred cell at q \textless{} 0.003 and this one at \textbf{q = 0.106}. It is also the
-  cell that moves under the judge-suspicion diagnostic (Appendix D.1) and
+  cell that moves under the judge-suspicion diagnostic (Appendix~\ref{sec:judge-leakage}) and
   under speaker clustering (t 2.0 → 1.8). The star is retained with this
   disclosure; the conjunct\textquotesingle s weight rests on stage 2\textquotesingle s version --- t +6.1,
   q \textless{} 0.0001, external label, length-free --- and on stage 6\textquotesingle s independent
@@ -1684,7 +1645,7 @@ fixed.}
 −0.662 (t −2.4)✱ and respect\_counterargs −0.695 (t −2.4)✱ --- the original
 finding. Holding genre fixed sends both to null, and counterargs flips sign.
 The genre-balanced pool existed to run exactly this test, and it answers
-negatively. \textbf{This supersedes "form up, deliberation down"} (Appendix B).
+negatively. \textbf{This supersedes "form up, deliberation down"} (Appendix~\ref{app:superseded}).
 
 \textbf{Length, stated as a channel rather than adjusted away (review item Q2).}
 Stage 2\textquotesingle s AI/Mixed segments run about 29 words longer within chamber
@@ -1726,7 +1687,7 @@ change a reader\textquotesingle s confidence:
   \textbf{The two independent AI-guesses correlate} (screen vs grading judge,
   r = +0.758) --- a shared style signal across two different models, which is a
   caveat on reading either judge\textquotesingle s \texttt{ai\_guess} as ground truth, not on the DQI
-  scores. Its bearing on the quality claim is tested in Appendix D and does
+  scores. Its bearing on the quality claim is tested in Appendix~\ref{app:robustness} and does
   not overturn the external-label result; the genre/era fixed effects in the
   table above control confounds between cells, which is a separate matter from
   leakage within a text.
@@ -1746,7 +1707,7 @@ member can defeat the detector cheaply, 9.0\% is a floor and detection-based
 prevalence is a dead end. This arm measures how cheaply, using two clean
 search runs --- one per chamber (New Brunswick and federal Government Orders) ---
 each attacking a fixed set of flagged speeches. Two earlier first attempts,
-one per chamber, were biased samplings and are reported in Appendix B; the
+one per chamber, were biased samplings and are reported in Appendix~\ref{app:superseded}; the
 figures here are the two final searches only.\footnote{\texttt{python\ bypass\_report.py} reads the verdict files and prints every
   figure in this subsection --- the per-run split (final vs superseded), the
   cluster-bootstrap intervals, the per-target rates, the Fisher test, and the
@@ -1762,7 +1723,7 @@ figures here are the two final searches only.\footnote{\texttt{python\ bypass\_r
   scripts were adapted from the NB ones (paths, seed count, one field name;
   verified by structural diff, \texttt{BYPASS\_METHODOLOGY.md}). Rewritten variant
   text is held locally and excluded under the corpus-licence policy. The two
-  superseded first attempts are in Appendix B.}
+  superseded first attempts are in Appendix~\ref{app:superseded}.}
 
 \textbf{The threat model, stated precisely.} The attacker rewrites a flagged speech
 with a general-purpose model (Opus), in a loop, keeping the best of several
@@ -1774,9 +1735,14 @@ the attack worked} --- not to steer it. No fine-tuning, no gradients, no evasion
 product; the only signal the detector supplies is whether pre-2022 text it has
 already scored is genuinely human (used to build contrast exemplars --- a
 property obtainable from any archive of old text, not from querying the target;
-review item B2). The figure below lays out the loop.
+review item B2). \Cref{fig:bypass} lays out the loop.
 
-\includegraphics{bypass_search.png}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\linewidth]{bypass_search.png}
+\caption{The detector-evasion search loop: the attack self-screens on the model\textquotesingle s own score and queries the detector only at submission; a \textbf{flip} is any verdict leaving AI, a \textbf{success} is a verdict reaching Human.}
+\label{fig:bypass}
+\end{figure}
 
 \textbf{Three verdicts, and the two events we count.} Pangram returns one of three
 labels, and the search can move a speech between them:
@@ -1805,7 +1771,7 @@ targets past it: \textbf{9.8×}. Against Pangram\textquotesingle s clean-conditi
 rate of 0.34\%, it is 66×.
 
 That is the finding. The detector is not weak --- its specificity is 0 in 1,260
-(§4.1), and a single "make this sound human" prompt makes text \emph{more}
+(\cref{sec:calibration}), and a single "make this sound human" prompt makes text \emph{more}
 detectable, not less. But the gap between a purpose-built evasion product and
 a frontier model told to try again is an order of magnitude in the frontier
 model\textquotesingle s favour, and it will not narrow in the detector\textquotesingle s direction.
@@ -1849,7 +1815,7 @@ texts (20,000 draws) gives a \textbf{design effect of 3.40} --- the effective sa
 is about 100 variants, not 341 --- and is what is quoted above. This is a
 statement about repeated rewrites of one text adding little new information,
 nothing more; it does not depend on any hypothesis about \emph{which} texts are
-evadable (that question is exploratory --- see Appendix B). The
+evadable (that question is exploratory --- see Appendix~\ref{app:superseded}). The
 per-target figures need no such correction; they already carry one observation
 per text.
 
@@ -1908,7 +1874,7 @@ more than a restatement of the wide interval is that the two chambers\textquotes
 and unglossed idiom and disagree on sentence rhythm --- so if the rates do turn
 out to transfer, the edits that produce them do not.
 
-\textbf{Against 0 AI labels in 1,260 genuine pre-AI controls (§4.1).} That is what
+\textbf{Against 0 AI labels in 1,260 genuine pre-AI controls (\cref{sec:calibration}).} That is what
 makes the reversals worth reporting: they are movements \emph{into} a class the
 detector otherwise reaches zero times out of 1,260. This is not a detector
 that is merely noisy at the boundary --- it is one with a hard specificity floor
@@ -1960,7 +1926,7 @@ published benchmark grants that; it is the right number for exposure, the
 wrong number for a detector comparison. The Rice row is included because the
 numeric coincidence invites a comparison that does not exist: his \textasciitilde8\% is a
 false-positive rate on 50 pre-ChatGPT speeches, measured on an LLM judge
-rather than on Pangram (§7). The vendor rows are vendor-reported on
+rather than on Pangram (\cref{sec:related}). The vendor rows are vendor-reported on
 undisclosed test data and should be read as such; independent evaluations
 (RAID, Dugan et al. 2024; Weber-Wulff et al. 2023) consistently find detectors
 fail toward false negatives under obfuscation, which is the direction our
@@ -1985,7 +1951,7 @@ ones? The seed-verdict split and the band gradient both point that way weakly
 and neither survives a test (Fisher p = 0.735 on the seed split; a non-monotone
 gradient on \textasciitilde53 variants per band). This is the arm\textquotesingle s most speculative
 question, it should not be quoted as a finding, and the numbers and a retracted
-earlier version of it are in Appendix B. The one firm negative: 28\% of
+earlier version of it are in Appendix~\ref{app:superseded}. The one firm negative: 28\% of
 Mixed-seeded variants moved the \emph{wrong} way, to AI --- a directed search against
 this detector is not monotone.
 
@@ -2106,7 +2072,7 @@ rounds the same day. The open-weight arms lose to their human twins on every
 form dimension (mistral-instruct justification −0.34, t −3.2;
 qwen3-instruct −0.84, t −7.7), which alone would say the wild form lift is
 made in the human-machine pipeline. But the Claude arms --- the study\textquotesingle s
-existing audited generation caches (the §4.6a family-signature traces),
+existing audited generation caches (the \cref{sec:class} family-signature traces),
 graded blind under the identical flow --- invert that at the frontier:
 
 \begin{longtable}[]{@{}lll@{}}
@@ -2149,7 +2115,7 @@ humans keep}: every machine arm sits below the human 2.07 on checkable
 specifics (opus-5 1.62) --- formally competent, experientially hollow survives
 in the evidence channel only. \textbf{Post-training creates form} within a fixed
 model (mistral instruct-minus-base +0.34, t +3.5), the quality-side echo of
-§4.7. Two channels named rather than excluded: the judge is Opus grading its
+\cref{sec:posttraining}. Two channels named rather than excluded: the judge is Opus grading its
 own family blind --- against pure favoritism, sonnet-5 ties human and
 sonnet-4.5 loses badly, so the judge tracks capability tier rather than
 vendor, but a cross-family judge replication is the clean fix and is owed;
@@ -2201,15 +2167,14 @@ beat" is the whole of that apparatus.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{5-limits}{%
-\section{5. Limits}\label{5-limits}}
+\section{Limits}\label{sec:limits}
 
 \begin{itemize}
 \tightlist
 \item
   \textbf{Prevalence is a floor.} Detectors see undisguised machine text. A
   directed search clears the detector on 11.1\% of variants and \textbf{22.5\% of
-  targets} (§4.9), so 9.0\% is a lower bound. How much of a lower bound is
+  targets} (\cref{sec:quality}), so 9.0\% is a lower bound. How much of a lower bound is
   not estimable from this design: we can measure how often evasion succeeds
   when attempted, not how often it is attempted.
 \item
@@ -2231,17 +2196,17 @@ beat" is the whole of that apparatus.
 \item
   \textbf{This study measures register, not substance.} Whether machine assistance
   changes \emph{what} is argued, which evidence is cited, or which framings are
-  reached for is not measured anywhere in §4, and the frequency instrument
+  reached for is not measured anywhere in \cref{sec:results}, and the frequency instrument
   cannot measure it --- the Kobak style/content split is PubMed\textquotesingle s content and
-  does not transfer to a legislature. The quality arm (§4.9) is the closest
+  does not transfer to a legislature. The quality arm (\cref{sec:quality}) is the closest
   thing here, and it grades form rather than position. A domain-native
-  substance arm is buildable from materials we already hold (§8.6 item 1);
+  substance arm is buildable from materials we already hold (\cref{sec:future} item 1);
   until it exists, no claim in this study should be read as being about the
   content of legislative argument.
 \item
   \textbf{Cohort mechanism is unidentified.} Three exposure tests null, and the
   informative next evidence is a different kind rather than a fourth
-  operationalisation of the same kind (§8.6 items 2--4).
+  operationalisation of the same kind (\cref{sec:future} items 2--4).
 \item
   \textbf{No chamber requires AI disclosure}, so no ground truth exists anywhere;
   every number rests on detector calibration rather than admission.
@@ -2250,18 +2215,18 @@ beat" is the whole of that apparatus.
 \item
   \textbf{Specificity is measured on the genres the controls happen to contain.}
   1,260/1,260 is strong, but no tribute or eulogy is among them, and tributes
-  produced two of the five Oral Questions flags at maximal confidence (§4.3).
-  Until a pre-AI tribute control exists (§8.6 item 4a), the specificity claim
+  produced two of the five Oral Questions flags at maximal confidence (\cref{sec:genre}).
+  Until a pre-AI tribute control exists (\cref{sec:future} item 4a), the specificity claim
   does not extend to that register.
 \item
   \textbf{Judge leakage.} Screen and grading-judge AI guesses correlate at
-  r = +0.758. Controlling the judge\textquotesingle s own \texttt{ai\_guess} (Appendix D) leaves the
+  r = +0.758. Controlling the judge\textquotesingle s own \texttt{ai\_guess} (Appendix~\ref{app:robustness}) leaves the
   largest external-label conjuncts standing but over-attenuates others; the
   only clean fixes are a human-coded subsample or grading style-normalised
   text, neither yet done.
 \item
   \textbf{Genre cells are not equally representative.} The length filter retains
-  95\% of SO31 but 6\% of Oral Questions (§4.3). Flag rate also rises with
+  95\% of SO31 but 6\% of Oral Questions (\cref{sec:genre}). Flag rate also rises with
   segment length within a chamber, so the filter --- which keeps the longer
   tail of each cell --- works in the same conservative direction for the
   reported gradient, but it means the OQ figure is not an estimate of
@@ -2308,8 +2273,7 @@ beat" is the whole of that apparatus.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{6-policy-context}{%
-\section{6. Policy context}\label{6-policy-context}}
+\section{Policy context}\label{sec:policy}
 
 A 22-chamber scan found \textbf{zero chambers requiring AI-drafted text to be
 disclosed in the record, and none forbidding AI drafting.} Where rules
@@ -2332,8 +2296,7 @@ equally solid nulls --- no AI-specific rule found (review item X10).
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{7-related-work}{%
-\section{7. Related work}\label{7-related-work}}
+\section{Related work}\label{sec:related}
 
 Two prior efforts ran comparable designs on chambers in this corpus and
 reached opposite conclusions. \textbf{Neither used a calibrated commercial
@@ -2387,7 +2350,7 @@ Rice\textquotesingle s own numbers (Binoculars flagging 0.4\% of everything) loo
 that.
 
 Pimlico\textquotesingle s agreement is \textbf{not} corroboration. Its method is the same family as
-the arm we demoted in §3.3 for lacking a trend control, it reports no
+the arm we demoted in \cref{sec:freq-descriptive} for lacking a trend control, it reports no
 prevalence estimate, and its own author hedges the finding as
 "LinkedIn-ification" rather than drafting. A method that agrees with us while
 sharing the defect we found in our own version of it is weak support, and
@@ -2411,21 +2374,19 @@ classifier, we answer "how much, where, and what is it" with the better
 detector and the controls the answer needs.
 
 Both the lexical and detector literatures may be measuring something real and
-different. §4.8 predicts exactly this split: lexical methods fire on permeation
+different. \cref{sec:permeation} predicts exactly this split: lexical methods fire on permeation
 that is not drafting, while detector methods get ambiguous because the human
 baseline is moving toward the thing being detected.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{8-discussion-detection-as-a-norms-instrument-and-what-to-measure-instead}{%
-\section{8. Discussion: detection as a norms instrument, and what to measure instead}\label{8-discussion-detection-as-a-norms-instrument-and-what-to-measure-instead}}
+\section{Discussion: detection as a norms instrument, and what to measure instead}\label{sec:discussion}
 
-§4.9 is usually read as a result about one detector. It is better read as an
+\cref{sec:quality} is usually read as a result about one detector. It is better read as an
 instance of a general limit, and the generalisation changes what the rest of
 the study is for.
 
-\hypertarget{81-the-limit}{%
-\subsection{8.1 The limit}\label{81-the-limit}}
+\subsection{The limit}\label{sec:disc-limit}
 
 Point a general-purpose model at its own output, tell it to try again, and it
 will defeat any check you can put in front of it. This is not a claim about
@@ -2448,11 +2409,10 @@ against features you cannot anticipate. And the limit applies to \textbf{post-ho
 statistical detection of unmarked text}, which is a different problem from
 provenance asserted at generation time.
 
-\hypertarget{82-where-the-norms-argument-actually-lands}{%
-\subsection{8.2 Where the norms argument actually lands}\label{82-where-the-norms-argument-actually-lands}}
+\subsection{Where the norms argument actually lands}\label{sec:disc-norms}
 
 Detection fails against adversaries and works against everyone else. That is
-not a small residual: the 9.0\% in §4.2 exists precisely because nobody
+not a small residual: the 9.0\% in \cref{sec:prevalence} exists precisely because nobody
 currently bothers to evade, or the undisguised register signature would not be
 there to find. \textbf{Detection is a norms instrument, not a security instrument} ---
 locks, not vaults. It raises the cost of casual undisclosed use and does
@@ -2497,7 +2457,7 @@ budget, close to the setting we ran; paraphrase degrades token-level marks
 (Sadasivan et al. 2023, with Kirchenbauer et al. 2023b making survival a
 function of marked-token count). None of that refutes the instrument. It
 establishes that a watermark is a norms instrument and not a security
-primitive, which is the same thing §4.9 establishes about detection, and both
+primitive, which is the same thing \cref{sec:quality} establishes about detection, and both
 are still worth having for the same reason locks are.
 
 Two limits that do bite, and neither is about robustness:
@@ -2519,7 +2479,7 @@ sense of whether text "reads like a person" --- is worse than unreliable on
 adversarial input; it is anti-correlated with the truth. Asked to judge
 AI-likeness by register, a frontier reader flagged 13 of 35 genuine human
 floor speeches and only 5 of 35 machine rewrites that had been optimised
-against a detector (§4.9 stage 5): adversarial optimisation removes exactly the
+against a detector (\cref{sec:quality} stage 5): adversarial optimisation removes exactly the
 tells gut judgment keys on, so the errors of a vibes-based adjudicator
 concentrate on the \emph{unoptimised} --- ordinary speakers who ran their words
 through nothing. As machine-assisted text spreads, register ceases to carry
@@ -2529,14 +2489,13 @@ the people least equipped to contest them. (One unblinded, lineage-correlated
 judge on 35 texts; illustrative, not a measured effect --- see the future-work
 item below.)
 
-\hypertarget{83-the-substitution-and-why-our-null-is-the-argument-for-it}{%
-\subsection{8.3 The substitution, and why our null is the argument for it}\label{83-the-substitution-and-why-our-null-is-the-argument-for-it}}
+\subsection{The substitution, and why our null is the argument for it}\label{sec:disc-substitution}
 
 If provenance is the wrong thing to spend effort on, the question is what to
 spend it on instead. The answer available from this study is: \textbf{check the work
 directly.}
 
-The case rests on §4.9\textquotesingle s primary finding, and it is independent of evasion:
+The case rests on \cref{sec:quality}\textquotesingle s primary finding, and it is independent of evasion:
 machine-assisted text grades \textbf{better-formed, not worse-engaged} on the DQI ---
 so policing authorship does not protect quality, because the authorship
 detection would flag is not where the quality deficit is. That is the whole
@@ -2553,14 +2512,14 @@ carries it is validity evidence: the rubric\textquotesingle s calibration anchor
 instrument authors\textquotesingle{} own published codings, so the scale is theirs rather than
 the judge\textquotesingle s; the one dimension
 where judge-suspicion moves the result is identified and quarantined rather
-than averaged in (respect\_groups; Appendix D.1, §4.9), and across stages the
+than averaged in (respect\_groups; Appendix~\ref{sec:judge-leakage}, \cref{sec:quality}), and across stages the
 judge\textquotesingle s AI-guess and its quality scores move independently in both
 directions --- higher form under suspicion in the wild pools, lower for weak
 models and higher for frontier ones in stage 6. The paired
 evasion arms add a separate, secondary reassurance for anyone worried about
 the arms race specifically: rewriting under evasion pressure did not move any
 of the seven dimensions across 63 within-text pairs, and neither did the 39
-rewrites that actually cleared the detector when graded on their own (§4.9
+rewrites that actually cleared the detector when graded on their own (\cref{sec:quality}
 stage 5), so a body that measures quality directly need not fear that evasion
 --- attempted or achieved --- degrades the metric it watches.
 
@@ -2573,10 +2532,9 @@ trained coders. That capability arrived with the same technology that broke
 detection, which is the substitution in one sentence: the machine that made
 provenance unmeasurable made quality measurable.
 
-\hypertarget{84-where-text-is-a-proxy-for-a-persons-internal-state}{%
-\subsection{8.4 Where text is a proxy for a person\textquotesingle s internal state}\label{84-where-text-is-a-proxy-for-a-persons-internal-state}}
+\subsection{Where text is a proxy for a person\textquotesingle s internal state}\label{sec:disc-proxy}
 
-Deliberation is judged on the artifact, so §8.3 suffices. Education is not:
+Deliberation is judged on the artifact, so \cref{sec:disc-substitution} suffices. Education is not:
 there the text is a proxy for what is in someone\textquotesingle s head, and a proxy that can
 be generated is no proxy at all. That case needs a \textbf{more rigorous proof of
 understanding}, and machine intelligence supplies the means as well as the
@@ -2589,8 +2547,7 @@ entire corpus" is a surveillance instrument before it is an assessment
 instrument; the version worth building is the one that is legible to the person
 being assessed.
 
-\hypertarget{85-measuring-the-human-contribution-against-an-automated-counterpart}{%
-\subsection{8.5 Measuring the human contribution against an automated counterpart}\label{85-measuring-the-human-contribution-against-an-automated-counterpart}}
+\subsection{Measuring the human contribution against an automated counterpart}\label{sec:disc-human}
 
 The most promising direction, and the least developed. Generate what a fully
 automated system would produce given the same task and context; the human
@@ -2623,8 +2580,7 @@ workplaces, which will have to teach people to work productively with advanced
 intelligences and can use a continuously-recalibrated baseline to measure
 whether they are.
 
-\hypertarget{86-future-work}{%
-\subsection{8.6 Future work}\label{86-future-work}}
+\subsection{Future work}\label{sec:future}
 
 Grouped by what they would settle. Several were designed during the study and
 deferred rather than invented here; where a design was set aside deliberately,
@@ -2636,24 +2592,24 @@ that is recorded.
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{The substance channel.} §4 measures \emph{register}. Whether machine
+  \textbf{The substance channel.} \cref{sec:results} measures \emph{register}. Whether machine
   assistance changes what legislators argue, which evidence they cite, and
   which framings they reach for is unmeasured, and the Kobak instrument cannot
   answer it --- its style/content split is PubMed\textquotesingle s content, not a legislature\textquotesingle s,
   and does not transfer. The materials for a domain-native version already
-  exist: the base-versus-instruct generation that produced §4.7\textquotesingle s +0.387 yields
+  exist: the base-versus-instruct generation that produced \cref{sec:posttraining}\textquotesingle s +0.387 yields
   an empirically derived list of what post-training adds \emph{to legislative text
   specifically}. Split that list into register-like and substance-like by an
   independent rule and run both through the frozen protocol as separate arms,
   giving "did the register shift" and "did the substance shift" as two
   measurements instead of one. Estimated at a few hours. This is the single
   most valuable unrun item, and it is also a limit on the present study rather
-  than merely an extension (§5).
+  than merely an extension (\cref{sec:limits}).
 \end{enumerate}
 
-1a. \textbf{A register-feature instrument, and the test that would settle §4.5a.}
+1a. \textbf{A register-feature instrument, and the test that would settle \cref{sec:climb-geography}.}
 Every arm in this study measures register through a \emph{word list}, which is
-why §4.5a\textquotesingle s American result can be read two ways: the correlation is carried
+why \cref{sec:climb-geography}\textquotesingle s American result can be read two ways: the correlation is carried
 partly by managerial and topical vocabulary, and a word list cannot separate
 "models adopt American subject matter" from "models adopt the American way
 of arguing". The features that would are syntactic and stance-bearing, not
@@ -2664,7 +2620,7 @@ on-the-one-hand structure. None of them can be carried by \emph{senator} or
 \emph{dollars}.
 
 Run that instrument on two contrasts at once --- base against instruct, and
-US against UK in the pre-transformer window --- and the thesis behind §4.5a
+US against UK in the pre-transformer window --- and the thesis behind \cref{sec:climb-geography}
 becomes falsifiable. \textbf{If both contrasts move the same features in the same
 direction, alignment and the American public tradition are selecting for the
 same thing.} If post-training raises hedging and inclusiveness while the
@@ -2672,7 +2628,7 @@ US--UK difference sits somewhere else entirely, the lexical correlation was
 subject matter and the soft-power reading fails. Either outcome is
 informative, which the present measurement is not.
 
-1b. \textbf{Vendor attribution for the family signature.} §4.6a\textquotesingle s vector result ---
+1b. \textbf{Vendor attribution for the family signature.} \cref{sec:class}\textquotesingle s vector result ---
 every Claude model positive against the flagged legislature pool, every
 open model negative, across three Claude generations --- is \emph{consistent
 with} Claude drafting but cannot attribute, because the discriminative
@@ -2687,21 +2643,21 @@ similarity peaks on one vendor\textquotesingle s family and is flat or negative 
 others, the signature becomes evidence \emph{about} usage rather than
 consistency with it; if several vendors\textquotesingle{} models all match, the signature
 is a frontier-register commons and attribution is off the table --- which
-would itself bear on §4.5a\textquotesingle s homogenization reading. Two caveats bound
+would itself bear on \cref{sec:climb-geography}\textquotesingle s homogenization reading. Two caveats bound
 even the positive outcome: models train on one another\textquotesingle s output, so
 lineage blurs with each generation, and the flagged pool (126 segments,
-1,495 instrument occurrences) should be enlarged first --- the §4.2 sample
+1,495 instrument occurrences) should be enlarged first --- the \cref{sec:prevalence} sample
 grows it mechanically as more chambers are scored.
 
-This pairs directly with §8.5. A register-feature profile is a measurable
+This pairs directly with \cref{sec:disc-human}. A register-feature profile is a measurable
 \emph{automated counterpart}: it says what an aligned model\textquotesingle s stance profile
 looks like on the same task, so a speaker\textquotesingle s distance from it is the residual
-§8.5 asks for --- and unlike a detector score it decomposes into named
-features rather than one number. It also gives §8.6.1\textquotesingle s register/substance
+\cref{sec:disc-human} asks for --- and unlike a detector score it decomposes into named
+features rather than one number. It also gives \cref{sec:future}.1\textquotesingle s register/substance
 split a principled rule, since the two lists are constructed by different
 criteria rather than by splitting one list in half.
 
-1c. \textbf{The anti-correlation of gut judgment, measured properly.} §8.2\textquotesingle s
+1c. \textbf{The anti-correlation of gut judgment, measured properly.} \cref{sec:disc-norms}\textquotesingle s
 sharpest claim --- that register-based human judgment of authorship is
 anti-correlated with the truth on adversarial text, flagging real humans
 more than optimised machine rewrites --- currently rests on one unblinded,
@@ -2719,7 +2675,7 @@ a measured false-accusation rate attached --- the number a disclosure-norm
 policy would actually need.
 
 1d. \textbf{A search that targets the human judge, to measure the vulnerability\textquotesingle s
-ceiling.} The bypass arm (§4.9) optimises rewrites against a \emph{statistical}
+ceiling.} The bypass arm (\cref{sec:quality}) optimises rewrites against a \emph{statistical}
 detector; 1c shows human register-judgment is already anti-correlated with
 truth on that output as a side effect. The complement is a search whose
 objective IS a model of the human reviewer --- rewrite to minimise a
@@ -2730,7 +2686,7 @@ explicit target rather than a by-product, i.e. the ceiling of the
 false-accusation problem a disclosure regime would face. Framed and run as
 MEASUREMENT of an adversary\textquotesingle s reachable frontier, not as a deployable
 deception tool: the deliverable is the reachable rating gap and what text
-features drive it (pairing with the §8.6.1a register-feature instrument, so
+features drive it (pairing with the \cref{sec:future}.1a register-feature instrument, so
 the output is named features rather than a black-box rewrite), reported so
 that reviewers and disclosure policies can be built against the ceiling
 rather than the current floor. The obvious dual-use tension is real and is
@@ -2748,14 +2704,14 @@ One apparatus yields three curves: human detection accuracy over rounds
 (does it fall as models adapt?), the AI pass-rate ceiling by condition (1d,
 under consent), and the false-accusation rate on real humans (1c, at scale
 and with real raters rather than the single lineage-correlated judge behind
-§8.2). The game frame is what makes it practical --- participation is
+\cref{sec:disc-norms}). The game frame is what makes it practical --- participation is
 intrinsic --- and it is the ethical form of 1d, since the human-targeting
 search runs inside a disclosed, consented frame. Design detail in
 \texttt{plans/S10-detection-game.md}.
 
 \textbf{B. Getting outside the parliamentary archive.} Three versions of one move.
-§4.6\textquotesingle s mechanism is unidentified and three exposure tests inside the archive
-returned null (Appendix A); the informative next evidence is a different \emph{kind},
+\cref{sec:generational}\textquotesingle s mechanism is unidentified and three exposure tests inside the archive
+returned null (Appendix~\ref{app:null}); the informative next evidence is a different \emph{kind},
 not a fourth operationalisation of the same kind.
 
 \begin{enumerate}
@@ -2768,7 +2724,7 @@ not a fourth operationalisation of the same kind.
   legislature: US House 12.1\% vs US Senate 1.8\%, same country, same era, same
   authorship-and-disclosure rules, differing sevenfold. The leading untested
   candidate is genre composition --- the House runs far more one-minute floor
-  speeches, the SO31-type format §4.3 measures at \textasciitilde37\% machine --- but US genre
+  speeches, the SO31-type format \cref{sec:genre} measures at \textasciitilde37\% machine --- but US genre
   metadata was never recovered, so it cannot be netted out; chamber culture,
   staffing and turnover are equally untested. Recovering US per-segment genre
   (order-of-business tags in the Congressional Record) would let the House
@@ -2781,7 +2737,7 @@ not a fourth operationalisation of the same kind.
   five to ten years, which is a difference-in-differences on onset with far
   more leverage. The language barrier is now surmountable with our own method:
   generate paired base/instruct output in the target language and take the
-  words post-training adds --- the same procedure behind §4.7. ParlaMint is the
+  words post-training adds --- the same procedure behind \cref{sec:posttraining}. ParlaMint is the
   corpus vehicle. \textbf{Deferred by Matthew during the study} in favour of
   staying with the existing English word list; recorded here because the
   English fallbacks it was traded against have all since been run.
@@ -2805,7 +2761,7 @@ not a fourth operationalisation of the same kind.
 chamber bought a 60-segment pre-2022 control, and 1,260 of 1,260 read Human,
 including six ceremonial and procedural CA-FED segments. But \textbf{no tribute or
 eulogy is in any of them}, and two of the five Oral Questions flags are
-eulogies at \texttt{fraction\_ai} 1.0 (§4.3). Tribute register is elevated,
+eulogies at \texttt{fraction\_ai} 1.0 (\cref{sec:genre}). Tribute register is elevated,
 cadenced and heavy on parallel construction --- the surface features a
 detector keys on --- so it is the one genre where a false positive could hide
 behind our specificity claim. Score \textasciitilde40 pre-2022 tributes from the same
@@ -2813,15 +2769,15 @@ chamber. Same design as every control already bought, roughly \$5, and it
 either closes the gap or produces the most interesting result in the arm.
 
 4b. \textbf{An LLM genre classifier, to make the genre ladder a panel result.} The
-§4.3 ladder --- the more preparable the format, the more machine drafting --- is
+\cref{sec:genre} ladder --- the more preparable the format, the more machine drafting --- is
 measured in federal Canada alone, because it is the only chamber whose
 record carries order of business in a usable field. The \texttt{section} field is
 empty in 43 of 53 chamber files and holds topic titles in the rest
-(Appendix D.4). A classifier labelling segments by order of business
+(Appendix~\ref{sec:cohort-ministerial}). A classifier labelling segments by order of business
 (scripted statement / debate / question) from the text and its surrounding
 context would lift that constraint and turn a one-chamber ladder into a
 cross-chamber one --- and genre is the control the quality arm most wants
-(§4.9) and the one the panel currently cannot hold fixed. Validate against
+(\cref{sec:quality}) and the one the panel currently cannot hold fixed. Validate against
 federal Canada, where the true labels are known.
 
 \begin{enumerate}
@@ -2843,7 +2799,7 @@ federal Canada, where the true labels are known.
   right. Recoverable from the same PDFs as a separate stream.
 \item
   \textbf{Genre-resolved US prevalence.} Canada and the provinces carry genre
-  metadata and the US does not, which is why the US sits out §4.3. Recovering
+  metadata and the US does not, which is why the US sits out \cref{sec:genre}. Recovering
   One Minute Speeches, Special Orders and Morning Business needs re-extraction
   against CREC granule metadata.
 \item
@@ -2895,7 +2851,7 @@ federal Canada, where the true labels are known.
 \setcounter{enumi}{11}
 \tightlist
 \item
-  \textbf{Does the counterfactual residual behave?} Take the §4.9 pairs, generate
+  \textbf{Does the counterfactual residual behave?} Take the \cref{sec:quality} pairs, generate
   the automated counterpart for each, and check whether the residual
   separates segments we have independent reason to think were human-drafted.
   We already hold the pairs and the labels.
@@ -2918,10 +2874,10 @@ federal Canada, where the true labels are known.
   quantity from what Pangram misses on edited text, and worth having stated
   as its own number.
 \item
-  \textbf{Human-coded DQI subsample}, still the real validation of §8.3\textquotesingle s claim
-  that the instrument is cheap \emph{and} sound (§5).
+  \textbf{Human-coded DQI subsample}, still the real validation of \cref{sec:disc-substitution}\textquotesingle s claim
+  that the instrument is cheap \emph{and} sound (\cref{sec:limits}).
 \item
-  \textbf{Does anyone actually evade?} The norms argument in §8.2 rests on current
+  \textbf{Does anyone actually evade?} The norms argument in \cref{sec:disc-norms} rests on current
   prevalence being undisguised. A chamber-level test --- whether flagged text
   clusters away from the evasion signature --- would turn that assumption into
   a measurement.
@@ -2975,7 +2931,7 @@ study has not already built.
   firm\textquotesingle s other filings. An expert whose register tracks their client rather
   than themselves across engagements is evidence of capture that does not
   depend on proving anything about the content of the opinion. This is the
-  same instrument as §4.6a\textquotesingle s, pointed at a different institution, and it has
+  same instrument as \cref{sec:class}\textquotesingle s, pointed at a different institution, and it has
   the advantage that the ground truth --- who paid --- is on the docket.
 \item
   \textbf{The replacement argument, which we should state carefully.} If the
@@ -2985,8 +2941,8 @@ study has not already built.
   bias becomes auditable rather than tacit. We should not make that argument
   without the measurement: the testable claim is whether a model\textquotesingle s argument
   quality is symmetric across sides in a way human retained experts\textquotesingle{} is not,
-  and the DQI apparatus in §4.9 already grades argument quality on both sides
-  of a proposition. Note the honest tension with §8.2 --- the case that
+  and the DQI apparatus in \cref{sec:quality} already grades argument quality on both sides
+  of a proposition. Note the honest tension with \cref{sec:disc-norms} --- the case that
   detection cannot protect deliberative quality applies here too, and an
   "unbiased machine expert" claim would rest on symmetry, not on provenance.
 \end{enumerate}
@@ -3069,7 +3025,7 @@ study has not already built.
   language displacing object language --- because one underlying posture
   (answering upward, insulated from outcomes) generates all of them. The
   quality arm\textquotesingle s DQI machinery is a starting point for the speech side;
-  detector-independent measures (§8.6 B) matter doubly here, since the claim
+  detector-independent measures (\cref{sec:future} B) matter doubly here, since the claim
   is about the behavior, not about any one detector\textquotesingle s opinion of it.
 \item
   \textbf{The monitor: measurement as the aid, machine intelligence as the
@@ -3094,7 +3050,7 @@ study has not already built.
 \item
   \textbf{The search for the register itself (Matthew, 2026-08-18 --- planned as
   S20, \texttt{plans/S20-register-search.md}).} Everything above measures against
-  one register, and §5\textquotesingle s calibration names the cost: a single thin index
+  one register, and \cref{sec:limits}\textquotesingle s calibration names the cost: a single thin index
   attenuates every correlation. S20 inverts the search --- for each
   identifier (period, cohort, class II, the insulation delta, machine
   generation), find the word set that carries its effect, searched over
@@ -3119,7 +3075,7 @@ study has not already built.
   arrival shocks (do incumbents accelerate when high-register entrants
   join their chamber), and variance dynamics (contagion predicts variance
   rises then falls as carriers spread; an ambient field shifts the mean at
-  stable variance). The prior exposure tests in this study (Appendix A
+  stable variance). The prior exposure tests in this study (Appendix~\ref{app:null}
   items 1--3) were about \emph{external technology} exposure, not
   colleague-register exposure --- that test does not exist yet. \textbf{Why it
   matters beyond linguistics (the Cosmic AC connection):} this is the
@@ -3151,8 +3107,9 @@ differ in how novel they are likely to be.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{appendix-a--null-results}{%
-\section{Appendix A --- Null results}\label{appendix-a--null-results}}
+\appendix
+
+\section{Null results}\label{app:null}
 
 Reported because they bound what the study can claim.
 
@@ -3167,7 +3124,7 @@ Reported because they bound what the study can claim.
   t = +2.20; clustered on 10 birth provinces the CI is {[}−0.22, +0.33{]}.
   \textbf{Unclustered inference manufactured a hypothesis-flattering result twice
   in this study; both are recorded as cautionary.} A third instance is the
-  cohort t-statistic itself (§4.6): member-year HC1 errors report t ≈ 17.7,
+  cohort t-statistic itself (\cref{sec:generational}): member-year HC1 errors report t ≈ 17.7,
   clustering on member gives t ≈ 8--9. Unlike the two above it does not flip ---
   888 member clusters, not 10 provinces --- but it is the same failure mode and
   is corrected the same way.
@@ -3187,14 +3144,14 @@ Reported because they bound what the study can claim.
 \item
   \textbf{Province-level post-secondary share} --- ρ = −0.04 on levels, +0.11 on
   growth, n = 7. Note this is the \emph{aggregate} null; the member-level
-  education ladder in §4.6a does predict, which is the difference between
+  education ladder in \cref{sec:class} does predict, which is the difference between
   seven data points and three thousand.
 \item
   \textbf{Graduate/professional as a binary} --- null in every province (BC −0.25,
   MB −0.26, NL −0.24, ON −0.30, SK +0.23, none significant; PE +2.19 on 87
   member-years is one hit in six). The binary fails because it pools a
   graduate degree (+0.01) with a professional one (−0.79); the ordered
-  ladder in §4.6a is what recovers the effect.
+  ladder in \cref{sec:class} is what recovers the effect.
 \item
   \textbf{Cross-province education composition} --- ρ = 0.00 against graduate
   share, and ρ = 0.00 against source tier. Not usable in any case: coverage
@@ -3206,7 +3163,7 @@ Reported because they bound what the study can claim.
   is 0.22--0.25\% in every class, differences within ±0.02pp. The class effect
   is a uniform scaling of the instrument, not a re-weighting, when
   "conspicuous" is defined as rare \emph{before} the machines. Defining it
-  instead as \emph{risen} and \emph{common} is what produces §4.6a\textquotesingle s result.
+  instead as \emph{risen} and \emph{common} is what produces \cref{sec:class}\textquotesingle s result.
 \item
   \textbf{Class I avoiding marked words, cross-sectionally} --- did not survive a
   year control. Pooled, class I held the lowest share of the most-risen
@@ -3222,7 +3179,7 @@ Reported because they bound what the study can claim.
   whose is not. But controlling for depth moves the education coefficients by
   0.00 to 0.11, so the education results are not artifacts of who has a long
   article. Depth\textquotesingle s own strong negative effect on the register is \textbf{not} a
-  null and is reported in §4.6a.
+  null and is reported in \cref{sec:class}.
 \item
   \textbf{Class origin (parental EGP) against register} --- first measurement,
   704 members with a coded parental class across thirteen chambers:
@@ -3231,9 +3188,9 @@ Reported because they bound what the study can claim.
 \item
   \textbf{The education ladder at panel scale} --- provincial +0.32/rung fell to
   +0.26 (t = 0.78) under member clustering and to −0.13 (t = −1.4) on the
-  tier-1 chambers. The §4.6a provincial ladder was unclustered inference.
+  tier-1 chambers. The \cref{sec:class} provincial ladder was unclustered inference.
 \item
-  \textbf{Class contrasts at panel scale} --- every §4.6a class coefficient loses
+  \textbf{Class contrasts at panel scale} --- every \cref{sec:class} class coefficient loses
   conventional significance under clustering except VIIab (−0.79,
   t = −1.99). Point estimates keep their signs in both panels; magnitudes
   halve out of sample.
@@ -3255,7 +3212,7 @@ climbs. What does carry is measured on individuals, not on chambers.
   observed range, concave-with-interior-peak in only 44.1\% of 2,000 member
   resamples. The registered interior-peak claim fails in its continuous
   form; the middle-peak result is carried by the discrete level slopes and
-  the apex delta (§4.6b), not by this test.
+  the apex delta (\cref{sec:occupation}), not by this test.
 \item
   \textbf{The autonomy asymmetry test (registered)} --- failed, informatively. The
   registration predicted a negative slope on the high-autonomy half and a
@@ -3274,13 +3231,12 @@ climbs. What does carry is measured on individuals, not on chambers.
   reversal: the era window predicts t ≈ 1.2--1.4 for effects this size.
 \end{enumerate}
 
-\hypertarget{appendix-b--superseded-analyses}{%
-\section{Appendix B --- Superseded analyses}\label{appendix-b--superseded-analyses}}
+\section{Superseded analyses}\label{app:superseded}
 
-0a. \textbf{§4.7\textquotesingle s stage ordering} --- "the shift is largest at the preference
+0a. \textbf{\cref{sec:posttraining}\textquotesingle s stage ordering} --- "the shift is largest at the preference
 stage" rested on a per-transition estimator pedestal (M9; the M3 defect
 per stage). Corrected by three agreeing routes: SFT ≈ DPO, RLVR ≈ 0. The
-§4.5 connection is DE-EMPHASIZED rather than withdrawn (Matthew): the
+\cref{sec:register-shift} connection is DE-EMPHASIZED rather than withdrawn (Matthew): the
 preference-and-demonstration stages installing the register while the
 correctness stage does not remains an interesting association, but the
 text no longer relies on any stage ordering, and the RLVR placebo now
@@ -3290,7 +3246,7 @@ passes its own manipulation check.
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{-1}
 \item
-  \textbf{§4.6a, twice} --- first written as "standing predicts the register
+  \textbf{\cref{sec:class}, twice} --- first written as "standing predicts the register
   downward" at t = 3--4 (unclustered provincial estimates, the study\textquotesingle s third
   unclustered-inference incident); then over-corrected to "did not survive
   its own checks" on per-term t-tests alone. The joint Wald (p = 0.029
@@ -3307,7 +3263,7 @@ passes its own manipulation check.
   above its own floor; bound ≤ \textasciitilde0.4\% at measured Se. Superseded by Pangram;
   retained because it explains why edited AI needs a commercial detector.
 \item
-  \textbf{New Brunswick on Pangram 3} --- superseded by the §4.1 rescore. Kept
+  \textbf{New Brunswick on Pangram 3} --- superseded by the \cref{sec:calibration} rescore. Kept
   because the comparison is itself a result.
 \item
   \textbf{Deciles as frequency control} --- inadequate; redone with 2.0-wide
@@ -3316,20 +3272,20 @@ passes its own manipulation check.
 \item
   \textbf{"Form up, deliberation down"} --- the pre-2026-08-10 headline. The
   "form up" half survives and strengthens; the "deliberation down" half was
-  genre, and collapses to null under genre or chamber fixed effects (§4.9).
+  genre, and collapses to null under genre or chamber fixed effects (\cref{sec:quality}).
   Retained here because it was the operating claim for ten days and appears
   in the work log, and because \emph{how} it failed --- an artifact visible only
   once genre was balanced by construction --- is the argument for having built
   the balanced pool at all.
 \item
-  \textbf{Content-word control} and \textbf{Mistral synthetic corpus} --- cut (§3.4).
+  \textbf{Content-word control} and \textbf{Mistral synthetic corpus} --- cut (\cref{sec:retired}).
 \item
   \textbf{Pre-per-year prevalence point estimates} --- superseded by the per-year
   series and then by the 19-chamber panel.
 \item
   \textbf{Two arrival-premium measures of cohort} --- the pre-2026-08-17 basis for
   "cohort replacement, not incumbent conversion". Both are replaced by the
-  birth-vs-spoken-year split in §4.6, which reads the generational gradient
+  birth-vs-spoken-year split in \cref{sec:generational}, which reads the generational gradient
   directly instead of through arrival.
 
   \begin{itemize}
@@ -3353,7 +3309,7 @@ passes its own manipulation check.
   \item
     \emph{The \textasciitilde60\% arithmetic closure} (mean birth year advancing 13.8 years at
     +0.093/yr predicting +1.28 of an observed +2.06) rested on those windows
-    and on a province-only panel; the regression in §4.6 supersedes it.
+    and on a province-only panel; the regression in \cref{sec:generational} supersedes it.
     Retained here because the cohort claim itself survived all three and is now
     carried by a cleaner instrument --- what changed is the measurement, not the
     finding.
@@ -3363,11 +3319,11 @@ passes its own manipulation check.
   CI {[}−1.32, +0.49{]}) on the same retired window contrast, over 16 chambers.
   The full panel with member fixed effects contradicts it: sitting members\textquotesingle{}
   own register rises \textbf{+0.51 per 1,000 per decade (t = 6.0)}, about 40\% of
-  the total calendar drift (§4.6). The null was an underpowered window
+  the total calendar drift (\cref{sec:generational}). The null was an underpowered window
   comparison, not a flat trend, and "cohort replacement, \emph{not} incumbent
   conversion" was the wrong frame --- both mechanisms operate.
 \item
-  \textbf{Retired framings behind §4.6b, with their numbers.} Three instrument
+  \textbf{Retired framings behind \cref{sec:occupation}, with their numbers.} Three instrument
   generations: the six-element account-giving composite and the 2×3
   six-cell grid were superseded by the blind element audit (documentation
   items proved undirected and moved to N; Letters and Memos, zero votes in
@@ -3388,7 +3344,7 @@ passes its own manipulation check.
   position. Per the registration\textquotesingle s post-run amendment, the design intent
   was always the four-level middle-peak U (pre-registered in the hierarchy
   section and the conversation record), the linear rank was the drafting
-  oversight, and §4.6b reports the U as the registered result with this
+  oversight, and \cref{sec:occupation} reports the U as the registered result with this
   entry holding the retired form\textquotesingle s numbers.
 \item
   \textbf{Lattice B, first draft} --- superseded same-day. Each hierarchy ladder
@@ -3400,12 +3356,12 @@ passes its own manipulation check.
   METHODOLOGY §6.1c.
 \item
   \textbf{The two bypass first attempts} (Matthew 2026-08-24). Each chamber\textquotesingle s
-  search had a biased first sampling, now excluded from the §4.9 per-variant
+  search had a biased first sampling, now excluded from the \cref{sec:quality} per-variant
   denominator: \textbf{NB v2 blind} (40 variants, badly-seeded, 1 Human = 2.5\%)
   and \textbf{GO Opus-selected} (80 variants, targets chosen by Opus score rather
   than uniformly, 0 Human). Combined they produced \textbf{1 reversal in 120
   variants (0.8\%)}; keeping them in was the old pooled \textbf{8.5\%} per-variant
-  figure, which averaged two failed samplings into the rate. The §4.9 rates
+  figure, which averaged two failed samplings into the rate. The \cref{sec:quality} rates
   (per-variant 11.1\%, per-target 22.5\%) are the two final searches --- NB v3
   contrastive and GO all-31 uniform --- which is also the subset the per-target
   figure always used. \texttt{bypass\_report.py} prints both groups.
@@ -3436,33 +3392,29 @@ passes its own manipulation check.
   \textbf{non-monotone} gradient on \textasciitilde53 variants per band with no surviving test
   (\texttt{bypass\_report.py}, band check). The hypothesis that borderline originals
   are the vulnerable ones remains plausible and unestablished; it is not a
-  finding and is stated nowhere in the register of §4.9\textquotesingle s rates.
+  finding and is stated nowhere in the register of \cref{sec:quality}\textquotesingle s rates.
 \end{enumerate}
 
-\hypertarget{appendix-c--replication-and-reproducibility}{%
-\section{Appendix C --- Replication and reproducibility}\label{appendix-c--replication-and-reproducibility}}
+\section{Replication and reproducibility}\label{app:repro}
 
-\hypertarget{c1-cross-route-reproduction-of-the-detector}{%
-\subsection{C.1 Cross-route reproduction of the detector}\label{c1-cross-route-reproduction-of-the-detector}}
+\subsection{Cross-route reproduction of the detector}\label{sec:cross-route}
 
 Web dashboard and Bulk API agree \textbf{20/20 including all six Mixed} on
 identical text when the model is named explicitly, and disagree on 9/20 when
-it is not (§3.2). All 4,258 verdicts in this study are Pangram 4 by either
+it is not (\cref{sec:detector}). All 4,258 verdicts in this study are Pangram 4 by either
 route, and \texttt{pangram\_p4\_verdicts.csv} records which.
 
-\hypertarget{c2-independent-re-analysis}{%
-\subsection{C.2 Independent re-analysis}\label{c2-independent-re-analysis}}
+\subsection{Independent re-analysis}\label{sec:reanalysis}
 
 Stage 0\textquotesingle s comparison and both stages\textquotesingle{} regressions were recomputed from the
 raw result files by a second party who did not run the grading, and reproduce
 to the reported precision.
 
-\hypertarget{c3-bypass-sample-selection}{%
-\subsection{C.3 Bypass sample selection}\label{c3-bypass-sample-selection}}
+\subsection{Bypass sample selection}\label{sec:bypass-sample}
 
-Four searches were run --- two per chamber. The §4.9 rates use only the second
+Four searches were run --- two per chamber. The \cref{sec:quality} rates use only the second
 in each chamber; the first in each was a biased sampling and is reported in
-Appendix B. Full stacks in \texttt{BYPASS\_METHODOLOGY.md}.
+Appendix~\ref{app:superseded}. Full stacks in \texttt{BYPASS\_METHODOLOGY.md}.
 
 \begin{longtable}[]{@{}lllll@{}}
 \toprule\noalign{}
@@ -3488,7 +3440,7 @@ Two consequences carried into the text. The GO Opus-selected run regresses
 −10.3 points on re-scoring because every seed sits at the extreme of a noisy
 distribution, and it is range-restricted --- it cannot contain the low band
 where New Brunswick found most of its successes, so its zero successes are
-uninformative about which texts evade (an exploratory question --- Appendix B). And the GO all-31 run is the cleanest
+uninformative about which texts evade (an exploratory question --- Appendix~\ref{app:superseded}). And the GO all-31 run is the cleanest
 provenance in the study: exactly one selection step, the Pangram verdict
 itself, with no detector, lexicon, or Opus score influencing which segments
 were scanned. It is also every Government Orders positive we hold, so it is an
@@ -3500,8 +3452,7 @@ the selection score manufactured a clean cross-chamber gradient that was an
 artifact of differential regression, and it was briefly reported before being
 caught.
 
-\hypertarget{c4-artifacts}{%
-\subsection{C.4 Artifacts}\label{c4-artifacts}}
+\subsection{Artifacts}\label{sec:artifacts}
 
 \begin{longtable}[]{@{}ll@{}}
 \toprule\noalign{}
@@ -3511,34 +3462,34 @@ artifact & what it does \\
 \bottomrule\noalign{}
 \endlastfoot
 \texttt{pangram\_p4\_verdicts.csv} & 4,258 verdicts, all Pangram 4, with metadata \\
-\texttt{prevalence\_report.py} & §4.1--4.3, Wilson CIs, Rogan--Gladen \\
-\texttt{nb\_p3\_vs\_p4.py} & §4.1 model-tier comparison \\
+\texttt{prevalence\_report.py} & \cref{sec:calibration}--4.3, Wilson CIs, Rogan--Gladen \\
+\texttt{nb\_p3\_vs\_p4.py} & \cref{sec:calibration} model-tier comparison \\
 \texttt{api\_route\_check.py} & route/model equivalence test \\
-\texttt{transcript\_regime\_check.py} & §2.1, writes \texttt{transcript\_regime.csv} \\
+\texttt{transcript\_regime\_check.py} & \cref{sec:hazards}, writes \texttt{transcript\_regime.csv} \\
 \texttt{build\_pangram\_expansion.py} & sampling, cleaning, regime floors \\
-\texttt{in\_time\_placebo.py} & §3.3, the test that demoted the lexicon arm \\
-\texttt{long\_trend.py} & §4.5 series and its 1994 trough \\
-\texttt{cohort\_vs\_period.py}, \texttt{formation\_window.py} & §4.6 (birth vs period) \\
-\texttt{covariate\_study.py} & §4.6a class and education, member level (\texttt{-\/-build-cache} first, \textasciitilde10 min) \\
-\texttt{class\_origin.py} & §4.6a EGP/NS-SEC arithmetic over the checked-in coding \\
-\texttt{class\_markedness.py}, \texttt{build\_class\_word\_year.py} & §4.6a chase-and-flight \\
-\texttt{build\_member\_vectors.py}, \texttt{vector\_analysis.py} & §4.6a word-mix geometry; VECTOR-ANALYSIS.md is the full log \\
+\texttt{in\_time\_placebo.py} & \cref{sec:freq-descriptive}, the test that demoted the lexicon arm \\
+\texttt{long\_trend.py} & \cref{sec:register-shift} series and its 1994 trough \\
+\texttt{cohort\_vs\_period.py}, \texttt{formation\_window.py} & \cref{sec:generational} (birth vs period) \\
+\texttt{covariate\_study.py} & \cref{sec:class} class and education, member level (\texttt{-\/-build-cache} first, \textasciitilde10 min) \\
+\texttt{class\_origin.py} & \cref{sec:class} EGP/NS-SEC arithmetic over the checked-in coding \\
+\texttt{class\_markedness.py}, \texttt{build\_class\_word\_year.py} & \cref{sec:class} chase-and-flight \\
+\texttt{build\_member\_vectors.py}, \texttt{vector\_analysis.py} & \cref{sec:class} word-mix geometry; VECTOR-ANALYSIS.md is the full log \\
 \texttt{claude\_gen/}, \texttt{claude\_gen\_old/}, \texttt{rlhf\_gen\_180/} & generated traces behind the family-signature table (audited) \\
 \texttt{provinces/occupation\_coding.json} + \texttt{OCCUPATION\_CODING.md} & the coding itself, with its 96.4\% agreement rate \\
 \texttt{wiki\_depth.py} & article length via Wikidata QID → MediaWiki, the notability control \\
 \texttt{build\_allsource\_merge.py} & rebuilds \texttt{member\_allsource.json} from the workflow journal \\
-\texttt{CLASS-REGISTER-LITERATURE.md} & §4.6a citations, \textbf{unverified}, with the suspect entries flagged \\
+\texttt{CLASS-REGISTER-LITERATURE.md} & \cref{sec:class} citations, \textbf{unverified}, with the suspect entries flagged \\
 \texttt{band\_coverage\_check.py} & standing check that every length band is sampled at its chamber\textquotesingle s own rate \\
-\texttt{olmo\_ladder.py} & §4.7 ladder stages \\
-\texttt{rlhf\_pref\_compile.py} & §4.7 \textbf{+0.387} well-measured, 3 families at 1,600 prompts \\
+\texttt{olmo\_ladder.py} & \cref{sec:posttraining} ladder stages \\
+\texttt{rlhf\_pref\_compile.py} & \cref{sec:posttraining} \textbf{+0.387} well-measured, 3 families at 1,600 prompts \\
 \texttt{rlhf\_pref\_analyze.py} & the superseded +0.42 run, with null calibration (not \texttt{align\_ratio.py}) \\
-\texttt{align\_ratio.py} & §4.7 Hansard-drift arm \\
-\texttt{word\_context\_delta.py} & §4.8 in-context permeation \\
-\texttt{bypass\_report.py} & §4.9 bypass: final two runs (primary), superseded two shown separately, band check \\
+\texttt{align\_ratio.py} & \cref{sec:posttraining} Hansard-drift arm \\
+\texttt{word\_context\_delta.py} & \cref{sec:permeation} in-context permeation \\
+\texttt{bypass\_report.py} & \cref{sec:quality} bypass: final two runs (primary), superseded two shown separately, band check \\
 \texttt{go\_reflip\_fractions.json} + \texttt{nb\_}/\texttt{bp\_} & strict re-scores behind the 11.1\% \\
-\texttt{quality\_expansion/} & §4.9, self-contained (\texttt{RUNME.md}) \\
-\texttt{BYPASS\_METHODOLOGY.md} & §4.9 selection filters, per sample \\
-\texttt{PRIOR\_ART.md}, \texttt{ai\_policy\_scan.md} & §6, §7 \\
+\texttt{quality\_expansion/} & \cref{sec:quality}, self-contained (\texttt{RUNME.md}) \\
+\texttt{BYPASS\_METHODOLOGY.md} & \cref{sec:quality} selection filters, per sample \\
+\texttt{PRIOR\_ART.md}, \texttt{ai\_policy\_scan.md} & \cref{sec:policy}, \cref{sec:related} \\
 \end{longtable}
 
 \textbf{What this was run on.} Three resources, and the commercial detector is the
@@ -3558,15 +3509,15 @@ arm & model & effort \\
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-Corpus-wide screen (§4.4), effort A/B & Claude Opus & low, and max in the A/B \\
-Bypass search: scoring / rewriting / hypotheses (§4.9) & Claude Opus & low / medium / high \\
-DQI grading, stages 1-5 (§4.9) & \textbf{Claude Fable 5} & default \\
-DQI grading, stage 6 (§4.9) & \textbf{Claude Opus} & medium \\
-Synthetic sensitivity pilot (40 speeches, set aside --- §4.1, Appendix B) & Mistral-7B & default \\
+Corpus-wide screen (\cref{sec:screen-pangram}), effort A/B & Claude Opus & low, and max in the A/B \\
+Bypass search: scoring / rewriting / hypotheses (\cref{sec:quality}) & Claude Opus & low / medium / high \\
+DQI grading, stages 1-5 (\cref{sec:quality}) & \textbf{Claude Fable 5} & default \\
+DQI grading, stage 6 (\cref{sec:quality}) & \textbf{Claude Opus} & medium \\
+Synthetic sensitivity pilot (40 speeches, set aside --- \cref{sec:calibration}, Appendix~\ref{app:superseded}) & Mistral-7B & default \\
 Analysis, verification, adversarial review & Claude Opus & varies \\
 \end{longtable}
 
-The screen/grader split is load-bearing rather than incidental. §4.9 reports
+The screen/grader split is load-bearing rather than incidental. \cref{sec:quality} reports
 that the screen\textquotesingle s \texttt{ai\_guess} and the grading judge\textquotesingle s independent \texttt{ai\_guess}
 correlate at r = +0.758, and treats that as a leakage problem. It is one --- but
 it is a correlation between \textbf{two different models}, which makes it a fact
@@ -3575,19 +3526,17 @@ with itself.
 
 \emph{An NVIDIA DGX Spark (GB10)} for the open-weight work: the six-detector survey
 that established the free instruments do not work on this register, the OLMo-2
-post-training ladder, the paired base-versus-instruct generation behind §4.7,
-the in-context permeation scoring in §4.8, and the open-model band screens.
+post-training ladder, the paired base-versus-instruct generation behind \cref{sec:posttraining},
+the in-context permeation scoring in \cref{sec:permeation}, and the open-model band screens.
 
 Only the first is metered per document. The other two are the larger share of
 the work and are not substitutable by spending more with the detector vendor.
 Anyone holding all three can repeat the study; a Pangram subscription alone
 reproduces the prevalence arm and nothing else.
 
-\hypertarget{appendix-d--robustness-and-sensitivity-checks}{%
-\section{Appendix D --- Robustness and sensitivity checks}\label{appendix-d--robustness-and-sensitivity-checks}}
+\section{Robustness and sensitivity checks}\label{app:robustness}
 
-\hypertarget{d1-the-judge-leakage-control-documented-run-not-adopted}{%
-\subsection{D.1 The judge-leakage control (documented, run, not adopted)}\label{d1-the-judge-leakage-control-documented-run-not-adopted}}
+\subsection{The judge-leakage control (documented, run, not adopted)}\label{sec:judge-leakage}
 
 The grading rubric scores an \texttt{ai\_guess} alongside the seven DQI dimensions,
 and \texttt{README.md}/\texttt{RUNME.md} describe a test of it: \emph{if the quality differences
@@ -3599,7 +3548,7 @@ It is reported in this appendix rather than the main text because, run, it is a
 relied on.
 
 DQI dimension regressed on the screen \texttt{ai\_guess} + genre/era fixed effects,
-then with the grading judge\textquotesingle s own \texttt{ai\_guess} added (\texttt{analyze.py} §3b):
+then with the grading judge\textquotesingle s own \texttt{ai\_guess} added (\texttt{analyze.py} \cref{sec:method}b):
 
 \begin{longtable}[]{@{}lll@{}}
 \toprule\noalign{}
@@ -3644,15 +3593,14 @@ the negative coefficients it produces (respect\_demands −1.21, respect\_counte
 \end{enumerate}
 
 \textbf{Standing conclusion.} The leakage correlation is real and is disclosed
-(§4.9, §5); the external-label result is robust to the one control the
+(\cref{sec:quality}, \cref{sec:limits}); the external-label result is robust to the one control the
 documentation named; that control is nonetheless not a clean instrument, and
 the only unconfounded fixes --- a human-coded subsample, or grading
 style-normalised text --- remain future work.
 
-\hypertarget{d2-prominence-wikipedia-article-length-on-the-full-panel}{%
-\subsection{D.2 Prominence (Wikipedia article length) on the full panel}\label{d2-prominence-wikipedia-article-length-on-the-full-panel}}
+\subsection{Prominence (Wikipedia article length) on the full panel}\label{sec:prominence-full}
 
-The §4.6a prominence effect was first estimated from the Canadian provinces at
+The \cref{sec:class} prominence effect was first estimated from the Canadian provinces at
 member-year level (−0.75 per 1,000, t −6.2), which carried the same
 word-weighting and clustering inflation as the class arm. Re-tested at member
 level (one legislator, one observation; register z-scored within chamber
@@ -3673,8 +3621,7 @@ which is the only form in which this variable says anything. The provincial
 member-year estimate that started this arm (−0.75 per 1,000) was inflated by
 the same word-weighting as the class arm and is superseded.
 
-\hypertarget{d3-prominence-in-buckets-which-is-how-it-should-be-read}{%
-\subsection{D.3 Prominence in buckets, which is how it should be read}\label{d3-prominence-in-buckets-which-is-how-it-should-be-read}}
+\subsection{Prominence in buckets, which is how it should be read}\label{sec:prominence-buckets}
 
 A linear coefficient assumes a gradient. Quintiles of log article length against
 mean within-chamber register z show that the chambers split into two shapes, and
@@ -3710,17 +3657,16 @@ bending it into a hump, so it is not the whole story.
 
 \textbf{Pooled, the two shapes cancel.} The all-22 column has no ordering worth
 reading, and standard errors on each bucket are ±0.026--0.027, so the flatness is
-measured rather than merely noisy. This is why §4.6a reports prominence as
+measured rather than merely noisy. This is why \cref{sec:class} reports prominence as
 buckets and why no pooled coefficient is quoted anywhere. †\footnote{\texttt{python\ plot\_class\_by\_era.py}-adjacent computation; per-bucket means,
   standard errors and counts in \texttt{prominence\_buckets.csv}. Article lengths from
   the MediaWiki API via \texttt{build\_t1\_wiki\_depth.py}, run over the tier-1 set, the
   provincial fetch and the nine new chambers (2,310 of 2,315 resolved).}
 
-\hypertarget{d4-is-the-cohort-gradient-ministerial-office}{%
-\subsection{D.4 Is the cohort gradient ministerial office?}\label{d4-is-the-cohort-gradient-ministerial-office}}
+\subsection{Is the cohort gradient ministerial office?}\label{sec:cohort-ministerial}
 
 Ministers read departmental text, which is more prepared and more formal, so if
-later-born members were likelier to hold office the birth gradient in §4.6
+later-born members were likelier to hold office the birth gradient in \cref{sec:generational}
 could be office rather than generation. Chambers differ in whether the record
 lets this be tested: UK Hansard prints ministers under their own names (0.2\% of
 speaker strings carry a rank marker), so ministers sit in both groups there and
@@ -3749,7 +3695,7 @@ than weakening it, and office-holders use \textbf{less} of the register, not mor
 33.69 against 35.11 per 1,000 words. The gradient also survives inside the
 office group alone, attenuated but clearly resolved. Scope limit: this is the
 eight rank-marking provinces; the UK and Australian chambers cannot be tested
-this way, and §8.6 still lists a role-controlled UK specification as unrun.
+this way, and \cref{sec:future} still lists a role-controlled UK specification as unrun.
 
 Two related notes on what this panel can and cannot hold fixed. The \texttt{ROLE}
 pattern applied during extraction is \textbf{speaker-identity hygiene, not a role
@@ -3759,6 +3705,6 @@ segments) --- the right order for a name-parsing filter and no substitute for th
 office split above. And \textbf{genre cannot be controlled outside federal Canada}:
 the \texttt{section} field is empty in 43 of the 53 chamber files, and where it is
 populated it carries topic titles (\texttt{ONTARIO\ ECONOMY}, \texttt{PUBLIC\ BILLS\ FOR\ SECOND\ READING}) rather than order of business. Federal Canada\textquotesingle s \texttt{order} field is the
-exception, which is why the genre ladder in §4.3 is measured there and nowhere
+exception, which is why the genre ladder in \cref{sec:genre} is measured there and nowhere
 else --- a data constraint, not a choice of scope, and one an LLM genre classifier
-could lift (§8.6).
+could lift (\cref{sec:future}).
