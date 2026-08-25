@@ -113,7 +113,13 @@ speech in deliberative bodies, its prevalence now measurable and its impacts
 and biases barely touched; class and register markers in legislatures, for
 which the occupational structure above is a beginning; and the large-scale
 study of registers in open speech records generally — of which this paper is
-itself a demonstration. Essentially every measurement in it — extraction,
+itself a demonstration. One of those impacts can now be named precisely: the
+register the models were tuned to speak is, on our measurement, the register
+of the insulated organisational middle — a weak effect, but a first
+quantitative trace of the widely-voiced worry that these systems are being
+developed to substitute for exactly that stratum of workers, and a template
+for the oversight measurements that worry calls for. Essentially every
+measurement in it — extraction,
 scoring, coding, grading, across 22 chambers and three decades — was executed
 by machine intelligence, cheaply enough to repeat on any open record, and
 with the null results, replications and superseded analyses that usually go

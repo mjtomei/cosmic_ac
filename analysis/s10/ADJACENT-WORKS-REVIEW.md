@@ -148,6 +148,16 @@ Results ordering and the Discussion's opening:
 3. **The evidence that the register is a post-training artifact** — the causal
    pinpoint to post-training; §4.7. This is what turns "a register exists" into
    "the machines inherited and amplified it," and should anchor the Discussion.
+4. **The substitution-worry quantification (Matthew, 2026-08-24).** The
+   occupational result — weak as the effect is — may be the first quantitative
+   demonstration of the worry that LLMs are being developed primarily to
+   replace workers for the owners of capital: post-training installed the
+   register of the insulated organisational middle, exactly the stratum the
+   systems are positioned to substitute for. It raises the oversight question —
+   what measurements could attach there (whose register, whose work, a model
+   is tuned to reproduce) — which we may be the first to quantify. In the
+   intro's meta ¶ (softened phrasing, weakness flagged); expand in Discussion/
+   future work during pass 3.
 
 
 - **Abstract.** Already close (Matthew approved the beats). One addition: brand
