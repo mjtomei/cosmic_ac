@@ -581,20 +581,6 @@
 
 ## MAJOR — PARTIAL
 
-### AL11. [argument-logic] §3.1 (Any fixed check loses to an optimising attacker)
-
-> Point a general-purpose model at its own output, tell it to try again, and it will defeat any check you can put in front of it. This is not a claim about Pangram. It follows from the check being a fixed function and the attacker being an optimiser
-
-**Problem.** The universal claim does not follow from the premises and is contradicted twice by the paper itself. Deductively: fixed function + optimiser entails nothing without a correlated proxy the optimiser can query — and §3.2 concedes exactly this ('a secret-keyed mark cannot be hill-climbed without query access to the verifier'). Empirically: the study's own search failed on 77.5% of targets and converged at zero yield on six, so its data instantiate 'sometimes beatable', not 'will defeat any check'. The section's scoping notes narrow scope but do not repair the 'it follows' framing.
-
-**Reviewer's check.** Compared the deductive claim against §3.2's keyed-watermark argument and against §2.14's own per-target results (16/71 cleared; six zero-yield converged targets).
-
-**Refuter's verification.** Quote verbatim in §3.1 (continues 'with a quality constraint the optimiser itself can satisfy'). Two of the reviewer's three premises hold: the search failed on 77.5% of targets with six converged zero-yield targets (§2.14), so the paper's own numbers do not exhibit 'defeat' in the universal sense; and the deduction silently assumes a correlated proxy exists for any check — the one ingredient (the Opus proxy) that made this attack work. But the third premise fails: §3.2's secret-keyed mark is not an internal counterexample, because §3.1's own scoping note explicitly excludes it — 'the limit applies to post-hoc statistical detection of unmarked text, which is a different problem from provenance asserted at generation time' — and a keyed watermark is generation-time provenance on marked text. The scoping notes ('the argument can be overextended') also temper the universal, and read as a claim about checks-as-security-controls, 22.5% per-target without query access does support a strong weaker version. [verdict carried from the first refutation pass; this dimension's second-pass refuter hit the session limit]
-
-**Accurate version.** The deductive framing overclaims: 'it will defeat any check' does not follow from fixed-function + optimiser — the study's own search failed on 77.5% of targets and the argument assumes without support that a correlated proxy exists for any check. It should be an empirical scaling claim as the reviewer proposes. However, the keyed-verifier 'counterexample class' cited from §3.2 is explicitly outside §3.1's stated scope (generation-time provenance on marked text is excluded by the section's own scoping note), so the defect is overstatement relative to evidence, not internal contradiction.
-
-**Suggested fix.** Weaken to the supportable form: any check whose output (or a correlated proxy) the attacker can score against is optimisable, and the measured 22.5% is a lower bound on that adversary class — not a defeat theorem for fixed checks generally.
-
 ### CE3. [claims-vs-evidence] Introduction, penultimate paragraph
 
 > the register the models were tuned to speak is, on our measurement, the register of the insulated organisational middle — a weak effect, but a first quantitative trace of what Brynjolfsson (9) calls the Turing trap
@@ -685,18 +671,6 @@
 ---
 
 ## MINOR — CONFIRMED
-
-### AL12. [argument-logic] §2.9.5 (Flight)
-
-> That is chase-and-flight: a marker loses value as it is copied, so the group that holds it abandons the most conspicuous forms first.
-
-**Problem.** The mechanism is asserted flatly in a section whose own dynamic prediction failed: §2.9 reports the peak 'does not' migrate downward across eras, §2.9.6 concedes the era-resolved test 'does not support the cycle's dynamic half', and §2.9.4 says nothing in the vicinity should be cited as established. The rescue offered — 'a cycle already in progress before our first frame would look like this too' — renders the migration prediction unfalsifiable within the data, and §2.9.8 concedes the correlation's monotonicity-in-volume is equally consistent with noise attenuation. 'That is chase-and-flight' overstates a hypothesis the surrounding subsections carefully demote.
-
-**Reviewer's check.** Compared §2.9.5's declarative against §2.9's era test, §2.9.4's hypothesis framing, §2.9.6's concession, and §2.9.8's dual-reading caveat.
-
-**Refuter's verification.** Verified every cross-reference: §2.9 (the peak does not migrate), §2.9.4 (nothing should be cited as established), §2.9.6 (the era-resolved test does not support the cycle's dynamic half), §2.9.8 (monotonicity equally consistent with noise attenuation). The static correlation is real (ρ=−0.42, p=0.004) but 'That is chase-and-flight' asserts the mechanism identification the neighbouring subsections immediately demote to hypothesis.
-
-**Suggested fix.** Rephrase as 'consistent with chase-and-flight' and point forward to the pre-1996 class-coded Commons test (§3.8) as the discriminator, matching the register of §2.9.4/2.9.6.
 
 ### CP5. [calibration+prevalence] 4.1 (specificity denominator)
 
@@ -1658,7 +1632,7 @@
 
 **Method.** Thirteen blind reviewers, one dimension each: seven data dimensions reproducing numbers from the committed artifacts and reading estimator code (calibration+prevalence, genre+screen, series/trend/cross-chamber, cohort+class, occupational-prereg, post-training/coverage/permeation, quality+bypass), five narrative/argument dimensions on the compiled publication-order paper (claims-vs-evidence, internal-consistency, argument-logic, comparability, storyline), and one cross-cutting consistency reviewer. Every finding was handed to a refute-by-default adversary; only CONFIRMED and PARTIAL findings appear, PARTIAL with the corrected version stated. "Also flagged by" marks the same defect under another lens — adjudicate once, apply everywhere.
 
-**Counts.** 128 open (0 critical, 54 major, 74 minor; 105 CONFIRMED, 23 PARTIAL); 1 refuted; 0 unresolved.
+**Counts.** 126 open (0 critical, 53 major, 73 minor; 104 CONFIRMED, 22 PARTIAL); 1 refuted; 0 unresolved.
 
 **For the next review cycle (Matthew, 2026-08-25).** Matthew liked the argument-logic lens's points more than much of the previous review (having read that block first — not a ranking over unread lenses); next cycle, expand it to one AL worker per section (a 12-section fleet with refuters was drafted and briefly started this cycle, then stopped on Matthew's instruction to hold it for the next cycle — the script is committed at workflows/scripts/al-per-section-2026-08-25-*.js and its partial run is resumable).
 
@@ -1683,9 +1657,11 @@
 - **[major] [argument-logic]** Abstract (and §1): "This machine-drafted speech is not degraded: once genre is held fixed, AI-flagged contribu..." — *adjudicated (Matthew, overriding the reviewer's proposed conditional): the GENRE qualifier is removed and the claim stated plain — the extended cross-chamber arm and the Claude continuation results support it unconditionally; the applicability split stays fully stated in §4.9 and now also in §8.3's couching; intro grounds the plain claim in both arms*
 - **[major] [argument-logic]** §2.14 (closing paragraph, 'What this means for the prevalence number'): "Evasion is real, clears the detector on roughly one flagged speech in five under directed ..." — *fixed per ruling: the closing now disentangles the two claims — 9.0% is a floor on USE (undisguised drafting measured, disguised above it), and the quality clause is stated one-directionally (no measured arm shows a COST; paired nulls bound only headline-scale effects, review item Q3; every powered result runs favourable) — which is what the norms argument needs, without claiming the edit adds nothing*
 - **[major] [argument-logic]** §2.10 (Pre-registered occupational test) with Appendices A18–20, B10: "The registered four-level U is the result. The design intent, registered in the document's..." — *adjudicated (Matthew): same timeline footnote fix*
+- **[major] [argument-logic]** §3.1 (Any fixed check loses to an optimising attacker): "Point a general-purpose model at its own output, tell it to try again, and it will defeat ..." — *adjudicated (Matthew agreed with the proposed conditional form): §8.1's heading and opening weakened to the supportable claim — 'it will beat any check it can score against... a check whose output, or a correlated proxy for it, the attacker can query is an optimisation target' — with 22.5% stated as the lower bound on that adversary class, measured at its weakest member. No defeat theorem; the keyed-verifier case remains outside scope per the section's own scoping note*
 - **[major] [argument-logic]** §3.3 (The substitution): "machine-assisted text grades better-formed, not worse-engaged on the DQI — so policing aut..." — *adjudicated (Matthew): couched rather than retracted — §8.3 now names the two machine-side deficits as improvement targets (applicability split marked as a raw, not genre-adjusted, contrast; checkable specifics), attributes the applicability collapse to weaker tools via the opus-class continuation evidence, and states the equal-weight DQI composite as the index's conventional additive form rather than a measured optimum*
 - **[major] [argument-logic]** §3.2 (gut judgment anti-correlation): "Asked to judge AI-likeness by register, a frontier reader flagged 13 of 35 genuine human f..." — *adjudicated (Matthew): valid criticism allowed to stand — the conclusion is now explicitly one measured lineage-correlated instance PLUS a conjecture that stays a conjecture until it happens, stated because machines have overtaken human performance at task after task and this is not expected to be the exception*
 - **[minor] [argument-logic]** §2.1 / §5.1 (calibration and the floor claim): "with Sp = 1 and any real detector's Se ≤ 1, the observed flag rate is a conservative floor..." — *addressed per Matthew's direction: floor claim conditioned in §3.1; new §4.1 contemporary-specificity block — two-vote blind audit of all 316 hits (277 prepared / 21 unclear / 11 both-vote spontaneous, 9 of them Mixed at 0.11–0.58), worst-case bound 9.03%→8.86% (8.65% full-word); temporal-transfer bullet added to Limits; artifacts committed (flagged_hits_pool/audit/bound)*
+- **[minor] [argument-logic]** §2.9.5 (Flight): "That is chase-and-flight: a marker loses value as it is copied, so the group that holds it..." — *adjudicated via Matthew's proposed second signature, which was tested and came back null: the II-over-I separation is CONSTANT across thirty years (+0.152 in 1995-99 vs +0.153 in 2025-26, weighted trend -0.005/half-decade, t -0.4; class_gap_trend.py committed). §2.9.5 rewritten as the assembled inventory — flight observed statically (rho=-0.42) and dynamically at the word level (§4.5 tells decay); the class cycle's motion null on BOTH sufficient signatures — and §2.9.6's era-test sentence now names both nulls, keeping the equilibrium reading and the pre-1996 discriminator*
 - **[minor] [comparability]** §2.4 The Opus screen tracks Pangram: "consistent with §5.4's finding that reasoning never closes the ˜0.25 AUC frontier gap, but..." — *fixed: duplicate of the removed §5.4/~0.25-AUC cross-reference (mechanical batch)*
 - **[major] [storyline]** §2.4 The Opus screen tracks Pangram: "consistent with §5.4's finding that reasoning never closes the ˜0.25 AUC frontier gap, but..." — *fixed: false cross-ref and unanchored ~0.25 AUC removed; sentence now self-contained*
 - **[major] [storyline]** §3.8 Future work (item numbering) and §3.5 Limits: "All three are first customers for the build-the-instrument-in-any-language method in item ..." — *fixed: §8.6 renumbered sequentially 1–35; all item refs updated (items 8–10, 11, 8, 33)*

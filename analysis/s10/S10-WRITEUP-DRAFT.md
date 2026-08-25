@@ -1292,12 +1292,25 @@ Class I under-uses `primary` (2.35× lift), `advocating` (1.85×), `advocates`
 (1.57×), `outcomes` (1.54×); it over-uses `remarkable`, `individuals`,
 `broader`, `ultimately` — words that barely moved.
 
-That is chase-and-flight: a marker loses value as it is copied, so the group
-that holds it abandons the most conspicuous forms first. Jhering set out the
-diffusion mechanism in *Der Zweck im Recht* (1883); Durkheim's summary of it
-gives the phrase — fashion, once universally adopted, "condemned by its very
-nature to renew itself continuously" — and Veblen (1899) and Simmel (1904)
-gave it its standard form.
+That is the static signature of chase-and-flight — a marker loses value as
+it is copied, so the group that holds it abandons the most conspicuous forms
+first — and the pattern's components should be kept separate. The *flight*
+is observed twice: here, statically, in class I's avoidance of the words
+that became common; and dynamically at the word level, where the most
+conspicuous machine tells peak and fall back (§4.5). What is **not**
+observed is the class cycle in motion: the peak does not migrate across
+eras, and the second sufficient signature — a widening II-over-I separation
+— is also null (+0.152 in 1995–99 against +0.153 in 2025–26; weighted trend
+−0.005 per half-decade, t −0.4).[^rgap] Jhering set out the diffusion
+mechanism in *Der Zweck im Recht* (1883); Durkheim's summary of it gives the
+phrase — fashion, once universally adopted, "condemned by its very nature to
+renew itself continuously" — and Veblen (1899) and Simmel (1904) gave it its
+standard form.
+
+[^rgap]: `python class_gap_trend.py`, from `class_by_era_grouped.csv` (the
+    era figure's own per-period means within chamber × period z); the gap's
+    inverse-variance-weighted trend across the seven half-decades.
+
 Lieberson is the closest parallel to our case, because his markers are discrete
 lexical items: first names diffuse down the status ladder and are abandoned by
 higher-status parents once they become common.[^r46e]
@@ -1340,9 +1353,10 @@ varies by marker and by chamber, and should not be over-read.
 That is what a chase-and-flight cycle looks like from four angles at once, and
 it is recorded as a hypothesis rather than a finding: the shapes were noticed
 while reconciling estimates, not predicted in advance. The era-resolved test it
-implies **has** now been run and does not support the cycle's dynamic half —
-the class profile holds its shape in every half-decade rather than migrating
-(figure above). A cycle already in progress before our first frame would look
+implies **has** now been run and does not support the cycle's dynamic half
+on either sufficient signature — the class profile holds its shape in every
+half-decade rather than migrating (figure above), and the II-over-I
+separation is constant across thirty years (+0.152 → +0.153, trend t −0.4). A cycle already in progress before our first frame would look
 like this too, which is why the discriminating study is class-coded speech from
 before 1996 (§8.6).
 
@@ -2621,12 +2635,15 @@ usually read as a result about one detector. It is better read as an
 instance of a general limit, and the generalisation changes what the rest
 of the study is for.
 
-### 8.1 Any fixed check loses to an optimising attacker
+### 8.1 Any check the attacker can score against is an optimisation target
 
-Point a general-purpose model at its own output, tell it to try again, and it
-will defeat any check you can put in front of it. This is not a claim about
-Pangram. It follows from the check being a fixed function and the attacker
-being an optimiser with a quality constraint the optimiser itself can satisfy.
+Point a general-purpose model at its own output, tell it to try again, and
+it will beat any check it can score against. This is not a claim about
+Pangram, and it is not a defeat theorem for fixed checks: it is the
+supportable form — a check whose output, or a correlated proxy for it, the
+attacker can query is an optimisation target, and the attacker carries a
+quality constraint it can itself satisfy. The 22.5% below is a lower bound
+on that adversary class, measured at its weakest member.
 
 Our own numbers are the *weak* instance. The search never queried the detector
 it was evading: it optimised against an Opus proxy, tested on Pangram only at
