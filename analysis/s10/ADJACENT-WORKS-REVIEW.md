@@ -168,11 +168,24 @@ Results ordering and the Discussion's opening:
   generation/occupation (the U/apex), quality, evasion. Example rewrites:
   "Calibration: 1,260/1,260" → "A per-chamber-calibrated detector puts a floor
   under machine-drafted speech"; "Limits, and they are real" → move to Discussion.
-- **Discussion — adopt Kobak's skeleton.** Summary (restate contribution) ·
-  Interpretation and limitations (the merged Limits, corpus-anchored) · Related
-  work (positioning, not rebuttal) · Implications and policies (disclosure norms;
-  detection as a norms instrument). Open on the historical inversion: the
-  machines inherited and accelerated a pre-existing human register.
+- **Discussion — the standard arc, flowing prose.** (Matthew, 2026-08-24: the
+  labeled Kobak skeleton is not required — and it is not the field norm: both
+  PNAS exemplars run flowing Discussions with no subsection labels.) Arc:
+  restate the contribution → interpret → limitations candid and corpus-anchored
+  → relate to prior work (positioning, not rebuttal) → implications/policy →
+  close on significance. Open on the historical inversion: the machines
+  inherited and accelerated a pre-existing human register. Trim the current
+  pile of subsections toward this arc.
+- **Intro tells the honest discovery story** (Matthew, 2026-08-24): began from
+  the prevalence question after a news instance (the NB clip with prompt traces
+  visible); the register — borrowed as a lighter, edit-robust cross-check —
+  turned out to predate the machines and correlate with post-training; the
+  class/occupation correlations came from seeking an explanation and are
+  weaker than the simple birth-cohort correlate; they open three fields
+  (machine speech impacts/biases; class markers in legislatures; large-scale
+  register study on open data). The intro also carries the meta point: the
+  study itself demonstrates machine-executed measurement at near-zero cost,
+  nulls and replications included. APPLIED in writing pass 1.
 - **Materials and Methods.** Already at the end; keep tightening narrative→
   "(see Methods)" pointers.
 - **New moves worth adding** (from the broad-science template): a hero

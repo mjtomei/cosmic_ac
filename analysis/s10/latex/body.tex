@@ -8,10 +8,11 @@ Institutions speak in a register. Legislative speech has carried one for as
 long as there have been official reporters to transcribe it --- measured,
 procedural, deliberately impersonal --- and any regular reader of Hansard knows
 it on sight. When the conditions of producing that speech change, the register
-can move. Language models that write fluent institutional prose are exactly
-such a change, and they pose a question with two halves: how much legislative
-speech is now drafted by a machine --- and where did the register the machines
-write in come from?
+can move. This study began with a clip: a Canadian provincial member reading a
+speech to the chamber that still carried traces of the prompt used to generate
+it. The first question was the obvious one --- how much legislative speech is
+now drafted by a machine? The question the study ended on is one we did not
+set out to ask: where did the register the machines write in come from?
 
 With the release of ChatGPT in November 2022, fluent drafting became free to
 every legislative office at once. What that did to the record matters in a way
@@ -53,26 +54,42 @@ across 22 chambers in five countries: with Pangram\cite{pangram2024}, a commerci
 language models overuse, run against each chamber\textquotesingle s own placebo-matched
 counterfactual. The two instruments have different blind spots --- the detector
 is a black box with a measured false-positive floor; the register is
-transparent but coarse --- and their agreement, not either alone, carries the
-study\textquotesingle s claims. The corpus reaches back three decades, which is what lets the
+transparent, cheap at corpus scale, and robust to the light editing that
+defeats detectors, but coarse --- and their agreement, not either alone,
+carries the study\textquotesingle s claims. The corpus reaches back three decades, which is what lets the
 second half of the question be asked at all.
 
-The answers, in brief. At least 9.0\% of words in current legislative speech
-are machine-drafted --- a floor, because directed effort evades the detector ---
-with an elevenfold spread across chambers and a concentration in scripted
-genres. The drafted speech is not degraded: against a deliberation rubric
-with genre held fixed, flagged speech is better-formed and no less engaged.
-But the register itself is not new. Its rise begins in 1994--96, three decades
-before the models. It is socially organised: birth cohort predicts it, and a
-pre-registered occupational model finds it peaking at the insulated middle of
-organisational hierarchies --- the rungs that answer upward without the final
-say --- beyond what social class explains. And on the machine side it is a
-post-training artifact: it is installed by the stages tuned toward human
-demonstrations and preferences, and not by the stage tuned toward verifiable
-correctness. Machine intelligence did not invent this register of
-accountability without authorship. It inherited it, automated it, and made it
-measurable --- and detection is better used to measure that norm than to
-police it.
+The question we came with gets its answer: at least 9.0\% of words in current
+legislative speech are machine-drafted --- a floor, because directed effort
+evades the detector --- with an elevenfold spread across chambers, a
+concentration in scripted genres, and no quality penalty: against a
+deliberation rubric with genre held fixed, flagged speech is better-formed
+and no less engaged. The finding we did not come for is the paper\textquotesingle s centre
+of gravity. The register instrument, borrowed to cross-check the detector,
+turned out to have a history: its rise begins in 1994--96, three decades
+before the models. On the machine side it is a post-training artifact,
+installed by the stages tuned toward human demonstrations and preferences
+and not by the stage tuned toward verifiable correctness. And when we went
+looking for who carried it, the dominant simple correlate is birth cohort; a
+pre-registered occupational model adds weaker but real structure --- the
+register peaks at the insulated middle of organisational hierarchies, the
+rungs that answer upward without the final say --- and social class traces the
+same inverted-U. These correlations locate the rise without yet explaining
+it. Machine intelligence did not invent this register of accountability
+without authorship; it inherited it, automated it, and made it measurable.
+
+The pattern of findings opens more fields than it closes: machine-drafted
+speech in deliberative bodies, its prevalence now measurable and its impacts
+and biases barely touched; class and register markers in legislatures, for
+which the occupational structure above is a beginning; and the large-scale
+study of registers in open speech records generally --- of which this paper is
+itself a demonstration. Essentially every measurement in it --- extraction,
+scoring, coding, grading, across 22 chambers and three decades --- was executed
+by machine intelligence, cheaply enough to repeat on any open record, and
+with the null results, replications and superseded analyses that usually go
+unreported kept in the record rather than discarded. Detection is better
+used to measure a norm than to police it, and the measuring is now nearly
+free.
 
 \section{Results}\label{sec:results}
 
