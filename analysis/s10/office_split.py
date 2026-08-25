@@ -89,6 +89,7 @@ def main():
         if not b:
             continue
         rows.append({"prov": pv, "year": int(yr), "birth": b, "office": office,
+                     "member": f"{pv}|{nm}",
                      "rate": h / w * 1000, "words": w})
     off = [r for r in rows if r["office"]]
     non = [r for r in rows if not r["office"]]
@@ -125,13 +126,18 @@ def _fit(sub, label):
     if not f:
         print(f"  {label:<18s} singular")
         return
+    # CR1 member-clustered errors alongside HC (review CC4: a member's years
+    # are correlated evidence; both inferences are reported)
+    fc = _wls(Y, X, names, W, clusters=[r["member"] for r in sub])
     b, se = f["birth"]
-    s, sse = f["spoken"]
+    sp, sse = f["spoken"]
+    bc, sec = fc["birth"]
     print(f"  {label:<18s} n={len(sub):>6,}  birth {b:+.3f}/decade "
-          f"(t {b/se:+.2f})   spoken {s:+.3f} (t {s/sse:+.2f})")
+          f"(t {b/se:+.2f} HC; t {bc/sec:+.2f} CR1-member)   "
+          f"spoken {sp:+.3f} (t {sp/sse:+.2f})")
 
 
-def _wls(y, X, names, w):
+def _wls(y, X, names, w, clusters=None):
     n, k = len(y), len(X[0])
     A = [[sum(w[i] * X[i][a] * X[i][b] for i in range(n)) for b in range(k)]
          for a in range(k)]
@@ -154,8 +160,21 @@ def _wls(y, X, names, w):
                 I[r] = [I[r][j] - fct * I[c][j] for j in range(k)]
     beta = [sum(I[a][b] * v[b] for b in range(k)) for a in range(k)]
     res = [y[i] - sum(X[i][j] * beta[j] for j in range(k)) for i in range(n)]
-    meat = [[sum(w[i] ** 2 * X[i][a] * X[i][b] * res[i] ** 2 for i in range(n))
-             for b in range(k)] for a in range(k)]
+    if clusters is None:
+        meat = [[sum(w[i] ** 2 * X[i][a] * X[i][b] * res[i] ** 2
+                     for i in range(n)) for b in range(k)] for a in range(k)]
+    else:
+        groups = {}
+        for i, g in enumerate(clusters):
+            groups.setdefault(g, []).append(i)
+        us = []
+        for idxs in groups.values():
+            us.append([sum(w[i] * res[i] * X[i][a] for i in idxs)
+                       for a in range(k)])
+        G = len(us)
+        cf = G / max(G - 1, 1)
+        meat = [[cf * sum(u[a] * u[b] for u in us)
+                 for b in range(k)] for a in range(k)]
     V = [[sum(I[a][p] * meat[p][q] * I[b][q]
               for p in range(k) for q in range(k))
           for b in range(k)] for a in range(k)]

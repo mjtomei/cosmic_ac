@@ -1470,7 +1470,12 @@ contrast.
     service/manual cuts the schema turns on, which is a caveat on the coding
     and not on the register measurement.
 
-[^r46e]: `python class_markedness.py`, `build_class_word_year.py`. An earlier
+[^r46e]: `python flight_correlation.py` computes the threshold series from
+    `class_word_year.json` (built by `build_class_word_year.py`) and
+    reproduces it to the digit; the recovered spec is documented in the
+    script (lift over 2006–2022 vs 2023–26, I-vs-II relative use, thresholds
+    on I+II post-era occurrences). `python class_markedness.py` is the
+    separate cross-sectional test. An earlier
     version of this test used the *most-risen* words rather than the
     *most-used* ones and found nothing; the theory predicts flight from gross
     forms, so rare risers are the wrong test set. A separate cross-sectional
@@ -3833,11 +3838,15 @@ flag is per member-*year* rather than per member — a backbencher who becomes a
 minister contributes to both groups (`office_split.py`, 8,289 member-year cells
 with a birth year: 1,893 office, 6,396 non-office).
 
-| cells | birth gradient (per decade) | t |
-|---|---|---|
-| all | +1.19 | +18.4 |
-| **non-office only** | **+1.31** | **+17.9** |
-| office only | +0.62 | +4.9 |
+| cells | birth gradient (per decade) | t (HC) | t (member-clustered) |
+|---|---|---|---|
+| all | +1.19 | +18.4 | **+8.7** |
+| **non-office only** | **+1.31** | +18.0 | **+8.6** |
+| office only | +0.62 | +4.9 | +2.5 |
+
+*Both inferences shown: HC treats member-years as independent; CR1 clusters
+on member, halving the t's as it does elsewhere in the study. The split's
+conclusion is unchanged under either.*
 
 **The gradient is not office, and the premise runs backwards.** Restricting to
 non-office member-years *strengthens* the birth effect (+1.19 → +1.31) rather

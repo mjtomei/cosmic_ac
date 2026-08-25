@@ -1,0 +1,4 @@
+threshold   100: n=119  Spearman(lift, I-relative-use) = -0.13
+threshold   300: n= 68  Spearman(lift, I-relative-use) = -0.22
+threshold   800: n= 40  Spearman(lift, I-relative-use) = -0.42
+threshold  1500: n= 25  Spearman(lift, I-relative-use) = -0.46

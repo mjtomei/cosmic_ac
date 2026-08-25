@@ -40,18 +40,6 @@
 
 **Suggested fix.** Update joint_predictors.py to the specification the table actually uses (or regenerate the table from the committed script) and say in the footnote what 'alone' includes.
 
-### CC4. [cohort+class] Appendix D.4
-
-> | **non-office only** | **+1.31** | **+17.9** |
-
-**Problem.** office_split.py computes HC (sandwich) SEs on word-weighted member-year cells with NO clustering by member, so the printed t = +18.4/+17.9/+4.9 are the same unclustered-inference pattern the study itself flags three times; on the identical provincial panel, formation_window.py's same gradient falls from t 17.7 (HC1) to 8.5 (CR1), so these t's are roughly 2× inflated. D.4 presents them without any clustering caveat while §4.6a's headline correction is precisely about this.
-
-**Reviewer's check.** Ran `python3 office_split.py` (reproduces all printed values exactly) and read its _wls: weights are words, meat is per-observation, no cluster sums; compared with formation_window.py's HC1-vs-CR1 ratio on the same panel.
-
-**Refuter's verification.** Ran `office_split.py`: it reproduces the D.4 table exactly (+1.194 t +18.39 / +1.309 t +17.97 / +0.617 t +4.94). Its _wls computes an HC sandwich with per-observation meat (w[i]**2 * resid[i]**2) and no cluster sums, i.e. unclustered member-year inference. On the same provincial birth panel, formation_window.py's gradient falls t +17.72 (HC1) → +8.46 (CR1), so ~2× inflation is a fair estimate. D.4 carries no clustering caveat (its 'per member-year rather than per member' note is about group assignment, not SEs), and the study's unclustered-inference flags (fn19, §2.9, Appendix A item 3, supplementary note) all point at other subsections. The conclusion likely survives clustering, but the presentation defect is real. [verdict carried from the first refutation pass; this dimension's second-pass refuter hit the session limit]
-
-**Suggested fix.** Add CR1 member-clustered SEs to office_split.py (the conclusion survives: even halved, non-office t≈9 and office-only t≈2.3), or flag the t's as unclustered in the table.
-
 ### CC5. [cohort+class] 4.6a, 'Flight' + footnote r46e
 
 > ρ = −0.13 at 100+ occurrences, −0.22 at 300+, **−0.42 at 800+ (p = 0.004)**, −0.46 at 1,500+
@@ -63,6 +51,8 @@
 **Refuter's verification.** Ran the cited `class_markedness.py`: it prints only the rare/mid/common share table (the separate cross-sectional test the same footnote says is not reported). Read `build_class_word_year.py` end to end: it only writes the (class, year, style-word) count cache, and a repo-wide grep shows the only code referencing class_word_year.json is its own builder. No committed script computes a post/pre-lift vs class-relative-use correlation, so the subsection's headline flight result is not reproducible from the repository as cited. [verdict carried from the first refutation pass; this dimension's second-pass refuter hit the session limit]
 
 **Suggested fix.** Commit the script that reads class_word_year.json and computes the post/pre-lift vs class-I-relative-use Spearman series, and cite it.
+
+**Matthew's ruling (recorded; action pending).** Matthew: the framing half was addressed (AL12's most-common-words-avoided-by-the-top rewrite); reproducibility half now closed — flight_correlation.py recovers the exact spec and reproduces -0.13/-0.22/-0.42/-0.46 to the digit, cited at r46e. PENDING his two linked calls: whether to reproduce the flight test across the other U-ladders' tops (occupation top rung, oldest cohorts — a new group-word-year cache per ladder), and the CC2 noise-vs-inversion decision it depends on
 
 ### CC6. [cohort+class] 4.6a, 'Class: the provincial estimates' + footnote r46d
 
@@ -1560,7 +1550,7 @@
 
 **Method.** Thirteen blind reviewers, one dimension each: seven data dimensions reproducing numbers from the committed artifacts and reading estimator code (calibration+prevalence, genre+screen, series/trend/cross-chamber, cohort+class, occupational-prereg, post-training/coverage/permeation, quality+bypass), five narrative/argument dimensions on the compiled publication-order paper (claims-vs-evidence, internal-consistency, argument-logic, comparability, storyline), and one cross-cutting consistency reviewer. Every finding was handed to a refute-by-default adversary; only CONFIRMED and PARTIAL findings appear, PARTIAL with the corrected version stated. "Also flagged by" marks the same defect under another lens — adjudicate once, apply everywhere.
 
-**Counts.** 120 open (0 critical, 47 major, 73 minor; 98 CONFIRMED, 22 PARTIAL); 1 refuted; 0 unresolved.
+**Counts.** 119 open (0 critical, 46 major, 73 minor; 97 CONFIRMED, 22 PARTIAL); 1 refuted; 0 unresolved.
 
 **For the next review cycle (Matthew, 2026-08-25).** Matthew liked the argument-logic lens's points more than much of the previous review (having read that block first — not a ranking over unread lenses); next cycle, expand it to one AL worker per section (a 12-section fleet with refuters was drafted and briefly started this cycle, then stopped on Matthew's instruction to hold it for the next cycle — the script is committed at workflows/scripts/al-per-section-2026-08-25-*.js and its partial run is resumable).
 
@@ -1575,6 +1565,7 @@
 - **[major] [calibration+prevalence]** 2. Data (control window) / 3.1: "**control** — 60 segments dated on or before **2022-06-30**. Not 2022-12-31: ChatGPT shipp..." — *adjudicated (Matthew): Data section amended with the sampling difference disclosed — the UK/IE four-chamber rescore drew controls to 2022-11-17 (seven of 120 rows past the 2022-06-30 rule, all pre-ChatGPT, all Human), CA-FED's late controls were redrawn to the rule, every other chamber obeys it as stated*
 - **[major] [calibration+prevalence]** 4.2 (word-weighting rationale, X12): "the longest quartile of segments runs 9.4% against 5.8% for the shortest (review item X12)..." — *adjudicated (Matthew): recomputed on the pooled sample and committed (quartile_weighting_check.py): longest quartile 11.3% vs shortest 0.7% word-weighted (15.2% vs 1.0% binary); understatement 0.05pp vs the binary segment rate and 2.20pp vs the fraction-weighted mean. Band status confirmed to Matthew: no result is band-conditioned anymore — remaining mentions are sampling-strata descriptions, the labeled exploratory bypass note in the nulls appendix, and unrelated senses of the word*
 - **[major] [calibration+prevalence]** 4.2 (per-chamber CI table) / Results intro: "every number reproduces from a committed script..." — *adjudicated (Matthew, + repo sweep): banded_prevalence.table and prevalence_report's two wboot sites now seed from sha1 of the cell name — byte-identical across runs (verified by double-run diff). Table 2's twenty CI cells and the three genre CIs repasted from the deterministic rerun (shifts <=0.2pp; the MB/NI identical-interval oddity resolved). Sweep found no other uncontrolled seeds feeding reported numbers: prereg_stage1/2 seed 20260818, vector_analysis kmeans seed 0, long_trend bootstraps seeded, formation_summary has no RNG*
+- **[major] [cohort+class]** Appendix D.4: "| **non-office only** | **+1.31** | **+17.9** |..." — *adjudicated (Matthew: present both): office_split.py now computes CR1 member-clustered errors beside HC (cluster sums by province|member, G/(G-1) factor) and D.4's table shows both — all +1.19 (t 18.4 HC / 8.7 CR1), non-office +1.31 (18.0 / 8.6), office +0.62 (4.9 / 2.5) — with a note that clustering halves the t's as elsewhere and the split's conclusion is unchanged*
 - **[critical] [occupational-prereg]** Results 4.6b (headline framing): "The design intent, registered in the document's hierarchy section and throughout the pre-r..." — *adjudicated (Matthew): lead rewritten as a timeline; minute-level registration footnote added (12:04 transcript prediction → 13:05 prereg commit → 13:17 unblinding → 13:36 amendment → 17:21 ruling); meta-point on pervasive logging added*
 - **[minor] [occupational-prereg]** Results 4.6b (cross-reference): "that operationalization failed its own test and the framing is retired — Appendix B8 prese..." — *fixed: duplicate of the B8→B10 pointer correction (mechanical batch)*
 - **[major] [quality+bypass]** 4.9 Bypass study (flip vs success paragraph): "Effort raised both bars, and by *more* on the flip bar (2.8×) than on the success bar (5.5..." — *fixed: same direction correction*

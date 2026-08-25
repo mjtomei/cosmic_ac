@@ -1293,7 +1293,12 @@ standard form.
 
 Lieberson is the closest parallel to our case, because his markers are discrete
 lexical items: first names diffuse down the status ladder and are abandoned by
-higher-status parents once they become common.\footnote{\texttt{python\ class\_\allowbreak{}markedness.\allowbreak{}py}, \texttt{build\_\allowbreak{}class\_\allowbreak{}word\_\allowbreak{}year.\allowbreak{}py}. An earlier
+higher-status parents once they become common.\footnote{\texttt{python\ flight\_\allowbreak{}correlation.\allowbreak{}py} computes the threshold series from
+  \texttt{class\_word\_year.json} (built by \texttt{build\_\allowbreak{}class\_\allowbreak{}word\_\allowbreak{}year.\allowbreak{}py}) and
+  reproduces it to the digit; the recovered spec is documented in the
+  script (lift over 2006--2022 vs 2023--26, I-vs-II relative use, thresholds
+  on I+II post-era occurrences). \texttt{python\ class\_\allowbreak{}markedness.\allowbreak{}py} is the
+  separate cross-sectional test. An earlier
   version of this test used the \emph{most-risen} words rather than the
   \emph{most-used} ones and found nothing; the theory predicts flight from gross
   forms, so rare risers are the wrong test set. A separate cross-sectional
@@ -4359,23 +4364,27 @@ minister contributes to both groups (\texttt{office\_split.py}, 8,289 member-yea
 with a birth year: 1,893 office, 6,396 non-office).
 
 \begingroup\small
-\begin{longtable}[]{@{}lll@{}}
+\begin{longtable}[]{@{}llll@{}}
 \caption{The cohort gradient among office- and non-office-holders.}\label{tab:cohort-office}\\
 \toprule\noalign{}
-cells & birth gradient (per decade) & t \\
+cells & birth gradient (per decade) & t (HC) & t (member-clustered) \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-cells & birth gradient (per decade) & t \\
+cells & birth gradient (per decade) & t (HC) & t (member-clustered) \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-all & +1.19 & +18.4 \\
-\textbf{non-office only} & \textbf{+1.31} & \textbf{+17.9} \\
-office only & +0.62 & +4.9 \\
+all & +1.19 & +18.4 & \textbf{+8.7} \\
+\textbf{non-office only} & \textbf{+1.31} & +18.0 & \textbf{+8.6} \\
+office only & +0.62 & +4.9 & +2.5 \\
 \end{longtable}
 \endgroup
+
+\emph{Both inferences shown: HC treats member-years as independent; CR1 clusters
+on member, halving the t\textquotesingle s as it does elsewhere in the study. The split\textquotesingle s
+conclusion is unchanged under either.}
 
 \textbf{The gradient is not office, and the premise runs backwards.} Restricting to
 non-office member-years \emph{strengthens} the birth effect (+1.19 → +1.31) rather
