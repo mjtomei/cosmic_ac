@@ -131,6 +131,7 @@ Sensitivity on \emph{edited} machine text is the real unknown and is discussed i
 \textbf{New Brunswick rescore.} 658 segments, byte-identical stored text, Pangram
 3 vs Pangram 4:
 
+\begingroup\small
 \begin{longtable}[]{@{}lll@{}}
 \caption{Calibration on pre-2022 speech: specificity of Pangram 3 versus Pangram 4.}\label{tab:calibration}\\
 \toprule\noalign{}
@@ -148,6 +149,7 @@ pre-AI control (n=60) & 60/60 & 60/60 \\
 AI + Mixed, overall & 122 & \textbf{144} \\
 exact agreement & & 92\% \\
 \end{longtable}
+\endgroup
 
 Specificity is \textbf{identical}. The model-tier defect was an \textbf{undercount, not
 a false-positive problem} --- disagreements run net upward (33 segments moved
@@ -201,9 +203,9 @@ the API did not cover. Those harvested Mixed segments average \textbf{0.435} mac
 (n=132, sd 0.219, range 0.11--1.00); AI verdicts are effectively a constant at
 0.9965. Human verdicts are 0.0 in every one of the 1,246 recorded cases. The
 9.03\% headline is thus already the split-corrected figure, not an AI-or-Mixed
-count.\footnote{Fractions live in \texttt{fraction\_ai\_harvested.json} (151 harvested
+count.\footnote{Fractions live in \texttt{fraction\_\allowbreak{}ai\_\allowbreak{}harvested.\allowbreak{}json} (151 harvested
   individually) and in the \texttt{fraction\_ai} column of
-  \texttt{pangram\_p4\_verdicts.csv} (1,431 recorded by the API). The 154 AI verdicts
+  \texttt{pangram\_\allowbreak{}p4\_\allowbreak{}verdicts.\allowbreak{}csv} (1,431 recorded by the API). The 154 AI verdicts
   not harvested individually are carried at the measured constant; two
   independent samples put it at 0.9965 (n=148) and 1.0000 (n=19), and the
   lowest AI value anywhere is 0.81, so clicking them would move the pooled
@@ -215,6 +217,7 @@ count.\footnote{Fractions live in \texttt{fraction\_ai\_harvested.json} (151 har
   study: it is largest where Mixed verdicts cluster, which is the
   mixed-format business in the middle of \cref{sec:genre}\textquotesingle s genre ladder.}
 
+\begingroup\small
 \begin{longtable}[]{@{}lllllll@{}}
 \caption{Prevalence of machine-drafted words by chamber, with 95\% confidence intervals.}\label{tab:prevalence}\\
 \toprule\noalign{}
@@ -238,12 +241,13 @@ ON & 11.1\% & {[}6.1, 16.8{]} & & NL & 3.3\% & {[}0.8, 6.6{]} \\
 NS & 10.0\% & {[}5.4, 15.2{]} & & UK & 2.5\% & {[}0.7, 4.8{]} \\
 AB & 7.8\% & {[}3.9, 12.2{]} & & \textbf{US Senate} & \textbf{1.8\%} & {[}0.1, 4.1{]} \\
 \end{longtable}
+\endgroup
 
 Intervals are cluster bootstraps over segments, not Wilson intervals: the
 estimator is a ratio of two random sums whose numerator and denominator move
 together, so a chamber whose one flagged segment happens to run 900 words
 should read as less certain than one whose flag is 130 words, and a binomial on
-segment counts cannot express that.\footnote{\texttt{python\ -c\ "import\ banded\_prevalence\ as\ B;\ B.table(B.load())"}.}
+segment counts cannot express that.\footnote{\texttt{python\ -\allowbreak{}c\ "import\ banded\_\allowbreak{}prevalence\ as\ B;\ B.\allowbreak{}table(B.\allowbreak{}load())"}.}
 
 The spread is the finding, not noise around a mean: chamber rates run from
 1.8\% to 19.8\%, an elevenfold range. What drives a chamber\textquotesingle s position is not
@@ -260,12 +264,12 @@ Proceedings, the Throne Speech reply --- in no stratum at all. Read as a chamber
 rate it gives 16.5\%; the uniform draw of 120 prevalence segments gives \textbf{18.5\%},
 and the uniform draw is what the table reports. Dropping CA-FED entirely leaves
 the pool at 8.50\% against 9.03\%, so the chamber contributes about half a point
-to the headline and neither makes nor breaks it.\footnote{\texttt{pangram\_ch\_verdicts.csv}, rows \texttt{caprev*}/\texttt{cactl*}. Its short band
+to the headline and neither makes nor breaks it.\footnote{\texttt{pangram\_\allowbreak{}ch\_\allowbreak{}verdicts.\allowbreak{}csv}, rows \texttt{caprev*}/\texttt{cactl*}. Its short band
   already matched this draw: 120 × 15,236/18,029 = 101, and 101 short
   segments were scored at the matched rate. Seven controls dated after the
   2022-06-30 cutoff --- one of them after ChatGPT shipped --- were replaced on
   2026-08-13 from the same 2018--2022 window the survivors occupy
-  (\texttt{build\_cafed\_ctl\_redraw.py}); all seven replacements scored Human, as had
+  (\texttt{build\_\allowbreak{}cafed\_\allowbreak{}ctl\_\allowbreak{}redraw.\allowbreak{}py}); all seven replacements scored Human, as had
   all seven originals, so specificity is unchanged at 60/60 and only the
   design claim is repaired.}
 
@@ -293,7 +297,7 @@ The controls are the check that this is a frame effect and not the detector
 behaving differently: they were clean before the fix and remain clean after,
 \textbf{0 of 18,342 words}. 275 segments were redrawn from the corrected extraction
 and rescored, restricted to the original year windows so that the frame is the
-only thing that changed.\footnote{\texttt{python\ build\_mb\_redraw.py}, then \texttt{pangram\_mb\_redraw\_verdicts.csv}.
+only thing that changed.\footnote{\texttt{python\ build\_\allowbreak{}mb\_\allowbreak{}redraw.\allowbreak{}py}, then \texttt{pangram\_\allowbreak{}mb\_\allowbreak{}redraw\_\allowbreak{}verdicts.\allowbreak{}csv}.
   The redraw deliberately excludes the years backfilled in August 2026: a
   first draw from the corrected frame pulled 30 of its 90 controls from
   2011--14 and 2020--22, years no other chamber can draw from, which would have
@@ -328,6 +332,7 @@ procedure permits}, which is the mechanism under test:
   advance; both sides are held to roughly 35 seconds.
 \end{itemize}
 
+\begingroup\small
 \begin{longtable}[]{@{}lll@{}}
 \caption{Machine-drafted share by genre of business, 2025--26.}\label{tab:genre}\\
 \toprule\noalign{}
@@ -345,6 +350,7 @@ Government Orders --- mixed prepared and spontaneous & 19.9\% & {[}10.4, 30.3{]}
 \textbf{Oral Questions} --- not on notice & \textbf{9.8\%} & {[}2.3, 19.2{]} \\
 all three pre-AI controls (0/180) & \textbf{0.0\%} & {[}0.0, 2.1{]} \\
 \end{longtable}
+\endgroup
 
 \textbf{SO31 vs OQ: 3.29×, +22.5pp, permutation p = 0.0025.}
 
@@ -363,7 +369,7 @@ across genres alongside the drafting. On segments the same data reads 36.7\% /
 23.3\% / 8.3\% and a 4.40× ratio; word- and fraction-weighted the ordering is
 unchanged and \textbf{the gap settles at 3.29×}. The test is a label permutation rather than
 Fisher exact, because Fisher takes segment counts and the estimator is a ratio
-of summed words.\footnote{\texttt{python\ prevalence\_report.py} for the rates and bootstrap intervals;
+of summed words.\footnote{\texttt{python\ prevalence\_\allowbreak{}report.\allowbreak{}py} for the rates and bootstrap intervals;
   the SO31-vs-OQ permutation is 50,000 label shuffles of the pooled
   prevalence segments. Reported here rather than the old Fisher p = 0.00034,
   which tested a quantity the study no longer reports. The same script prints
@@ -378,7 +384,7 @@ agreeing is worth more than either alone.
 
 The monotone trend across all three rungs is the ladder\textquotesingle s proper test, and it
 holds: a Cochran--Armitage trend test on the segment counts (5, 14 and 22 flags
-of 60) gives z = 3.70, p = 2.2 × 10⁻⁴.\footnote{\texttt{python\ prevalence\_report.py} for the rates and bootstrap intervals;
+of 60) gives z = 3.70, p = 2.2 × 10⁻⁴.\footnote{\texttt{python\ prevalence\_\allowbreak{}report.\allowbreak{}py} for the rates and bootstrap intervals;
   the SO31-vs-OQ permutation is 50,000 label shuffles of the pooled
   prevalence segments. Reported here rather than the old Fisher p = 0.00034,
   which tested a quantity the study no longer reports. The same script prints
@@ -397,7 +403,7 @@ QP utterances are short. What survives is the long tail: procedural and
 ceremonial business filed under the QP rubric rather than question-and-answer
 exchange.
 
-Not one of the five flagged segments is spontaneous exchange.\footnote{\texttt{python\ genre\_oq\_audit.py}, which prints the five flags with their
+Not one of the five flagged segments is spontaneous exchange.\footnote{\texttt{python\ genre\_\allowbreak{}oq\_\allowbreak{}audit.\allowbreak{}py}, which prints the five flags with their
   order-of-business headings, the control composition, and the unmet tribute
   control. It also retires an argument this section previously made --- that
   the length floor leaves "prepared ministerial answers", the sub-population
@@ -443,6 +449,7 @@ lower still.
 A blinded LLM screen over the full corpus (37,801 segments, date-blind)
 separates Pangram\textquotesingle s classes cleanly on the 618-segment overlap:
 
+\begingroup\small
 \begin{longtable}[]{@{}lll@{}}
 \caption{Mean Opus screen score by Pangram verdict on the 618-segment overlap.}\label{tab:screen-by-verdict}\\
 \toprule\noalign{}
@@ -459,10 +466,11 @@ AI & 78 & 50.9 \\
 Mixed & 26 & 44.8 \\
 Human & 514 & \textbf{11.9} \\
 \end{longtable}
+\endgroup
 
 The deployed screen --- the run over all 37,801 segments --- separates Pangram\textquotesingle s
 AI and human classes at \textbf{AUC 0.954} {[}0.934, 0.971{]} on the 618-segment
-overlap, and it is a cheap stratifier for future work.\footnote{\texttt{python\ opus\_screen\_auc.py}. The deployed screen is
+overlap, and it is a cheap stratifier for future work.\footnote{\texttt{python\ opus\_\allowbreak{}screen\_\allowbreak{}auc.\allowbreak{}py}. The deployed screen is
   \texttt{opus\_screen\_full.js} (473 batches of 40), distinct from the lean
   validation run used in the effort A/B below; the two differ in score level
   (mean 34.3 vs 26.5) but not in discrimination. All labels are Pangram 4.} The pool is a
@@ -478,6 +486,7 @@ hiding.} The screen was tuned and validated at \texttt{effort=low}, and low had
 never been compared against anything. Re-run on the 241-segment labelled pool
 with the prompt and batching held byte-identical (all AUCs against Pangram 4):
 
+\begingroup\small
 \begin{longtable}[]{@{}lll@{}}
 \caption{Agreement of the Opus screen with Pangram across runs (AUC).}\label{tab:screen-auc}\\
 \toprule\noalign{}
@@ -494,6 +503,7 @@ archived low & 0.948 & {[}0.920, 0.973{]} \\
 fresh low (replicate) & 0.951 & {[}0.923, 0.974{]} \\
 \textbf{max} & \textbf{0.942} & {[}0.911, 0.968{]} \\
 \end{longtable}
+\endgroup
 
 The low-effort run was replicated so the effort comparison has a noise floor.
 A paired bootstrap of max − mean(low) gives \textbf{−0.007}, 95\% CI
@@ -523,10 +533,10 @@ The register\textquotesingle s rise begins around \textbf{1994--96} --- before t
 and long before any language model. The descriptive series (\cref{sec:freq-descriptive}), with UK
 Commons extended back to 1985, shows the register \emph{declining} through the
 late 1980s before turning upward at that window. Whatever this measures,
-LLMs did not start it.\footnote{\texttt{python\ long\_trend.py\ -\/-seg\ uk/segments\_uk\_deep.jsonl} for the annual
+LLMs did not start it.\footnote{\texttt{python\ long\_\allowbreak{}trend.\allowbreak{}py\ -\allowbreak{}\/\allowbreak{}-\allowbreak{}seg\ uk/\allowbreak{}segments\_\allowbreak{}uk\_\allowbreak{}deep.\allowbreak{}jsonl} for the annual
   series; the turning point is the minimum of the annual
   instrument-minus-placebo gap (the script fits no curve), and it lands on
-  1994. A day-clustered bootstrap (\texttt{python\ long\_trend\_bootstrap.py}, 2,000
+  1994. A day-clustered bootstrap (\texttt{python\ long\_\allowbreak{}trend\_\allowbreak{}bootstrap.\allowbreak{}py}, 2,000
   resamples of sitting days within year) puts the minimum at 1994 in 84.8\% of
   resamples, 1995 in 13.0\% and 1996 in 2.1\% --- so "1994--96" is a genuine
   {[}1994, 1996{]} interval, not a hedge.}
@@ -535,7 +545,7 @@ Read together with \cref{sec:posttraining}, the interesting reading is not "LLMs
 parliamentary register" but that \textbf{human register had been moving toward what
 instruct-tuning later selected for, for thirty years.} †
 
-The machines then accelerated it, and left a fingerprint of their own suppression. In New Brunswick --- the one corpus sampled densely enough to resolve quarters --- an interrupted time series with the break pre-set at ChatGPT\textquotesingle s release finds a flat pre-2023 slope (−1.2\%/yr) turning to \textbf{+23.7\%/yr} afterward, significant against 1,000 frequency-matched placebo word sets (p = 0.007; Mann--Kendall\cite{mann1945,kendall1948} p = 0.014). But the two instruments then part ways (\cref{fig:trend}): the \emph{obvious} tells --- the Wikipedia "signs of AI writing" set --- peak around 2025 and fall back, while the subtler Kobak rare-style set keeps climbing. The natural reading --- with published precedent in scholarly text, where Gray\cite{gray2025} documents distinctive marker words dropping in frequency once publicised --- is that the conspicuous words became notorious and were trained or edited away, while the register underneath kept rising. The peak-and-fall of the obvious tells shows in some other chambers too --- UK Commons and the US House both turn down after 2024 --- though it is not universal (Ireland\textquotesingle s keep rising), so this is a suggestive cross-chamber pattern rather than a law; the clean two-instrument contrast is sharpest in the densely-sampled discovery corpus.\footnote{\texttt{python\ fig\_trend.py} for New Brunswick --- the interrupted time series is weighted least squares on log quarterly rates with a break pre-specified at 2023.0, and the empirical p for the slope change comes from 1,000 frequency-matched placebo word sets run through the identical fit. The cross-chamber comparison is \texttt{python\ build\_trend\_cache.py\ \&\&\ python\ plot\_trend\_from\_cache.py}; indexed yearly rates for six chambers are in \texttt{trend\_multichamber.csv}.}
+The machines then accelerated it, and left a fingerprint of their own suppression. In New Brunswick --- the one corpus sampled densely enough to resolve quarters --- an interrupted time series with the break pre-set at ChatGPT\textquotesingle s release finds a flat pre-2023 slope (−1.2\%/yr) turning to \textbf{+23.7\%/yr} afterward, significant against 1,000 frequency-matched placebo word sets (p = 0.007; Mann--Kendall\cite{mann1945,kendall1948} p = 0.014). But the two instruments then part ways (\cref{fig:trend}): the \emph{obvious} tells --- the Wikipedia "signs of AI writing" set --- peak around 2025 and fall back, while the subtler Kobak rare-style set keeps climbing. The natural reading --- with published precedent in scholarly text, where Gray\cite{gray2025} documents distinctive marker words dropping in frequency once publicised --- is that the conspicuous words became notorious and were trained or edited away, while the register underneath kept rising. The peak-and-fall of the obvious tells shows in some other chambers too --- UK Commons and the US House both turn down after 2024 --- though it is not universal (Ireland\textquotesingle s keep rising), so this is a suggestive cross-chamber pattern rather than a law; the clean two-instrument contrast is sharpest in the densely-sampled discovery corpus.\footnote{\texttt{python\ fig\_trend.py} for New Brunswick --- the interrupted time series is weighted least squares on log quarterly rates with a break pre-specified at 2023.0, and the empirical p for the slope change comes from 1,000 frequency-matched placebo word sets run through the identical fit. The cross-chamber comparison is \texttt{python\ build\_\allowbreak{}trend\_\allowbreak{}cache.\allowbreak{}py\ \&\&\ python\ plot\_\allowbreak{}trend\_\allowbreak{}from\_\allowbreak{}cache.\allowbreak{}py}; indexed yearly rates for six chambers are in \texttt{trend\_multichamber.csv}.}
 
 \begin{figure}[htbp]
 \centering
@@ -544,49 +554,58 @@ The machines then accelerated it, and left a fingerprint of their own suppressio
 \label{fig:trend}
 \end{figure}
 
-\subsection{The climb is everywhere except the United States}\label{sec:climb-geography}
+\subsection{Other chambers converge on the level the United States already held}\label{sec:climb-geography}
 
 Running the same series on every chamber turns the thirty-year drift into a
 comparison. The instrument and the 200 matched placebo sets are built once, on
 UK Commons 2010--12, and applied unchanged everywhere, so the chambers are
-measured with the same ruler.\footnote{\texttt{python\ occurrence\_trends.py\ -\/-build\ -\/-report}. Word-weighted, pooled
+measured with the same ruler.\footnote{\texttt{python\ occurrence\_\allowbreak{}trends.\allowbreak{}py\ -\allowbreak{}\/\allowbreak{}-\allowbreak{}build\ -\allowbreak{}\/\allowbreak{}-\allowbreak{}report}. Word-weighted, pooled
   into fixed-composition panels; a pooled line whose membership changes
   between years is a picture of the download schedule, not a trend. Chamber
   coverage and every gap are tabulated in the output. 2023 is missing from
   most chambers because the study design excluded it as a washout year
   between the 2018--22 and 2024--26 windows.}
 
-\begin{longtable}[]{@{}lllll@{}}
+\begingroup\small
+\begin{longtable}[]{@{}llllll@{}}
 \caption{The register gap over time by chamber: first year, last year, and change.}\label{tab:climb}\\
 \toprule\noalign{}
-chamber & gap per 100k, first year & last year & change & \\
+chamber & window & gap per 100k, first year & last year & change & per year \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-chamber & gap per 100k, first year & last year & change & \\
+chamber & window & gap per 100k, first year & last year & change & per year \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-UK Commons & 380 (1994) & \textbf{1,444} (2026) & \textbf{×3.80} & rises \\
-Ireland & 1,603 (2018) & \textbf{1,975} (2026) & ×1.23 & rises \\
-CA federal & 1,865 (2015) & 1,735 (2026) & ×0.93 & flat \\
-\textbf{US House} & \textbf{1,515} (1994) & \textbf{1,709} (2026) & \textbf{×1.13} & \textbf{flat} \\
-\textbf{US Senate} & \textbf{1,314} (1994) & \textbf{1,562} (2026) & \textbf{×1.19} & \textbf{flat} \\
+UK Commons & 1994--2026 & 380 & \textbf{1,444} & \textbf{×3.80} & \textbf{+4.3\%/yr} \\
+\textbf{US House} & 1994--2026 & \textbf{1,515} & 1,709 & ×1.13 & +0.4\%/yr \\
+\textbf{US Senate} & 1994--2026 & \textbf{1,314} & 1,562 & ×1.19 & +0.5\%/yr \\
+Ireland & 2018--2026 & 1,603 & \textbf{1,975} & ×1.23 & +2.6\%/yr \\
+CA federal & 2015--2026 & 1,865 & 1,735 & ×0.93 & −0.7\%/yr \\
 \end{longtable}
+\endgroup
 
-The US chambers are flat across thirty-two years, and they start \emph{above} where
-the UK still sits two decades later: US House 1,515 in 1994 against the UK\textquotesingle s
-1,444 in 2026. So the picture is not a common shift. It is everyone else
-converging upward on a level the United States already held before the consumer
-web, while the United States does not move.
+The windows are not comparable, and the comparison should be made where they
+are: only the UK and the two US chambers share the full 1994--2026 span --- the
+longest this corpus supports --- and on that common window the contrast is
+×3.80 against ×1.13--1.19, about +4.3\%/yr against +0.4--0.5\%/yr. Ireland and
+federal Canada enter late and already high (1,603 and 1,865 per 100k), so
+their windows begin near the ceiling; Ireland still climbs at +2.6\%/yr,
+federal Canada is flat. The US chambers are near-flat across thirty-two
+years, and they start \emph{above} where the UK still sits two decades later: US
+House 1,515 in 1994 against the UK\textquotesingle s 1,444 in 2026. So the picture is not a
+common shift. It is chambers converging upward on a level the United States
+already held before the consumer web, while the United States barely
+moves.
 
 The US series reaches back to 1994 only as of 2026-08-13. The Congressional
 Record is on GovInfo from 1994, which the study had not used: the original
 download began at 2006 because that was where the state-exposure design needed
 it. Extending it was the decisive test, because a US series starting in 2006
 cannot distinguish "the United States was always there" from "the United States
-got there first and stopped". The 1994 values settle it.\footnote{\texttt{python\ us/fetch\_us\_hist.py\ -\/-years\ 1994-2005,2023\ -\/-per-year\ 60\ -\/-tag\ US\_DEEP\_DONE}, then re-extract with \texttt{us/us\_extract.py\ zips\ segments\_us.jsonl} and rebuild. 780 sitting-day zips at 60 days/year;
+got there first and stopped". The 1994 values settle it.\footnote{\texttt{python\ us/\allowbreak{}fetch\_\allowbreak{}us\_\allowbreak{}hist.\allowbreak{}py\ -\allowbreak{}\/\allowbreak{}-\allowbreak{}years\ 1994-\allowbreak{}2005,2023\ -\allowbreak{}\/\allowbreak{}-\allowbreak{}per-\allowbreak{}year\ 60\ -\allowbreak{}\/\allowbreak{}-\allowbreak{}tag\ US\_\allowbreak{}DEEP\_\allowbreak{}DONE}, then re-extract with \texttt{us/\allowbreak{}us\_\allowbreak{}extract.\allowbreak{}py\ zips\ segments\_\allowbreak{}us.\allowbreak{}jsonl} and rebuild. 780 sitting-day zips at 60 days/year;
   both chambers are now unbroken 1994-2026 with no missing year. The
   extraction nearly doubled the US corpus --- House 66.0M to 108.2M words,
   Senate 74.4M to 144.7M. Rates are per 100k words, so uniform within-year
@@ -599,6 +618,7 @@ contact with the variance. US House swings between 1,660 and 2,074 across the
 series --- a 25\% range, the widest here --- and 2026 catches it at 1,709, near its
 own floor. On 2020--26 means, with each series\textquotesingle{} standard deviation alongside:
 
+\begingroup\small
 \begin{longtable}[]{@{}llll@{}}
 \caption{Register level by chamber, 2020--26 means, benchmarked against the US House.}\label{tab:vs-ushouse}\\
 \toprule\noalign{}
@@ -619,6 +639,7 @@ CA federal & 1,816 & 134 & −84 (−0.69 sd) \\
 US Senate & 1,591 & 60 & −309 (−2.55 sd) \\
 UK Commons & 1,415 & 61 & −484 (−4.00 sd) \\
 \end{longtable}
+\endgroup
 
 Only the Canadian provinces are meaningfully above, and they are a standing
 exception this study does not explain. Ireland is at parity to within a
@@ -632,8 +653,8 @@ instrument occurrences} against Ireland\textquotesingle s 9.0\% and the Australi
 11.3\%, so removing machine text lowers the American benchmark by more than it
 lowers the challengers. Federal Canada is the one case it does explain, at
 21.7\% the most machine-written chamber in the study, dropping from
-apparently-above to clearly-below once corrected.\footnote{\texttt{python\ convergence\_check.py}, with shares from
-  \texttt{ai\_share\_of\_instrument.py}. Machine-written text carries the instrument at
+apparently-above to clearly-below once corrected.\footnote{\texttt{python\ convergence\_\allowbreak{}check.\allowbreak{}py}, with shares from
+  \texttt{ai\_\allowbreak{}share\_\allowbreak{}of\_\allowbreak{}instrument.\allowbreak{}py}. Machine-written text carries the instrument at
   4,231 occurrences per 100k words against human text\textquotesingle s 3,470, a ratio of
   1.22×, so a chamber that is 9.0\% machine by words is 10.6\% machine by
   occurrences. Note this is an overlap between two instruments and not a
@@ -653,7 +674,7 @@ usage.} If the two processes select for the same thing, the vocabulary shift
 instruct-tuning induces should line up with the difference that already
 separated American from British legislative speech before any model existed.
 Measured on 4,823 words in a 2006--10 window, it does, weakly and
-specifically:\footnote{\texttt{python\ alignment\_vs\_american.py}. Three families at 1,600 prompts;
+specifically:\footnote{\texttt{python\ alignment\_\allowbreak{}vs\_\allowbreak{}american.\allowbreak{}py}. Three families at 1,600 prompts;
   reference corpora US 37.6M, UK 44.2M, CA 74.8M, AU 88.8M words over
   2006--10 --- pre-transformer, and early enough that the UK\textquotesingle s own climb has
   barely begun, so the ratio compares two human traditions rather than two
@@ -661,6 +682,7 @@ specifically:\footnote{\texttt{python\ alignment\_vs\_american.py}. Three famili
   one-word orthographic forms (\texttt{percent} for "per cent") are reported as a
   separate stratum, along with two harsher filters, as robustness only.}
 
+\begingroup\small
 \begin{longtable}[]{@{}lll@{}}
 \caption{Chase-and-flight correlations, raw and holding word frequency fixed.}\label{tab:flight-corr}\\
 \toprule\noalign{}
@@ -678,6 +700,7 @@ vs log(Canada/UK) & +0.012 & +0.012 \\
 vs log(Australia/UK) & +0.018 & +0.004 \\
 vs log(US/Canada) & +0.083 & +0.088 \\
 \end{longtable}
+\endgroup
 
 Permutation p \textless{} 0.005. The \textbf{discrimination} carries more than the coefficient:
 Canada and Australia are anglophone parliamentary democracies too, and
@@ -713,7 +736,7 @@ the same year and chamber. Both hold, and they separate cleanly.
   effects (all 22 chambers, 61,312 member-years): birth \textbf{+0.88 per 1,000 words
   per decade} (t = 33.8) against spoken year \textbf{+1.25 per decade} (t = 29.2).
   A legislator born a decade later uses about +0.88/1,000 more of the register
-  \emph{in the same year and chamber}. †\footnote{\texttt{python\ cohort\_vs\_period.py}. Member-year register rate regressed on
+  \emph{in the same year and chamber}. †\footnote{\texttt{python\ cohort\_\allowbreak{}vs\_\allowbreak{}period.\allowbreak{}py}. Member-year register rate regressed on
     spoken year and birth year with chamber fixed effects, word-weighted,
     HC-robust; all 22 chambers now carry member birth years, 61,312
     member-years, after the nine Australian and UK-devolved chambers were
@@ -722,7 +745,7 @@ the same year and chamber. Both hold, and they separate cleanly.
   \textbf{Birth is the marginally stronger organiser.} On identical rows the
   within-chamber, word-weighted correlation of the register rate is \textbf{+0.325
   with birth year} against \textbf{+0.302 with spoken year}, and birth is the
-  stronger of the two in 15 of the 22 chambers. †\footnote{\texttt{python\ cohort\_vs\_period.py}. Member-year register rate regressed on
+  stronger of the two in 15 of the 22 chambers. †\footnote{\texttt{python\ cohort\_\allowbreak{}vs\_\allowbreak{}period.\allowbreak{}py}. Member-year register rate regressed on
     spoken year and birth year with chamber fixed effects, word-weighted,
     HC-robust; all 22 chambers now carry member birth years, 61,312
     member-years, after the nine Australian and UK-devolved chambers were
@@ -730,7 +753,7 @@ the same year and chamber. Both hold, and they separate cleanly.
 \item
   \textbf{The gradient holds within year and province at +1.05 per 1,000 per decade}
   (t ≈ 8.5, clustered on member), unmoved by occupation and education controls,
-  which \emph{strengthen} it rather than explain it away (\cref{sec:class}). †\footnote{\texttt{python\ formation\_window.py}, clustered on member (CR1): birth-decade
+  which \emph{strengthen} it rather than explain it away (\cref{sec:class}). †\footnote{\texttt{python\ formation\_\allowbreak{}window.\allowbreak{}py}, clustered on member (CR1): birth-decade
     coefficient +1.05 per 1,000 words per decade, t = +8.46 unadjusted and
     +9.23 with occupation and education controls. The controls \emph{strengthen} the
     cohort term (coefficient +1.05 → +1.14), which is why they are reported as
@@ -745,7 +768,7 @@ the same year and chamber. Both hold, and they separate cleanly.
   \textbf{+0.51 per 1,000 words per decade} within member (t = 6.0, clustered on
   member, 8,600 members with three or more years). Against the +1.24 total
   calendar drift, roughly \textbf{40\% of the period rise happens inside continuing
-  careers} and the rest arrives with the composition of the chamber. †\footnote{\texttt{python\ cohort\_vs\_period.py}, final block. Within-member (member fixed
+  careers} and the rest arrives with the composition of the chamber. †\footnote{\texttt{python\ cohort\_\allowbreak{}vs\_\allowbreak{}period.\allowbreak{}py}, final block. Within-member (member fixed
     effects) regression of the register rate on spoken year, word-weighted,
     over every chamber in the panel; members need three or more years to
     contribute. Standard errors cluster on member. Because the estimate is
@@ -793,7 +816,7 @@ provincial estimate, i.e. noise behaving like noise.
 The final specification --- one observation per legislator at equal weight,
 register z-scored within each legislature against its full member
 population, HC1 errors, joint Wald beside every table
-(\texttt{member\_level\_estimation.py}; the reasoning for each choice is in its
+(\texttt{member\_\allowbreak{}level\_\allowbreak{}estimation.\allowbreak{}py}; the reasoning for each choice is in its
 docstring) --- settles the section:
 
 \textbf{Class is an inverted U, peaking one rung below the top.} At member level
@@ -801,6 +824,7 @@ across 22 chambers (n = 4,896, joint Wald \textbf{p = 0.0000}), reading the raw
 within-chamber means so that every class stands on its own rather than against
 a baseline:
 
+\begingroup\small
 \begin{longtable}[]{@{}lll@{}}
 \caption{Register by EGP social class (member-level means).}\label{tab:egp}\\
 \toprule\noalign{}
@@ -821,6 +845,7 @@ V/VI skilled manual & −0.200 & 222 \\
 VIIab semi- and unskilled & −0.403 & 109 \\
 IVc farmers & −0.439 & 177 \\
 \end{longtable}
+\endgroup
 
 Class II sits above class I, and everything below the service classes falls
 away sharply. Against class I the contrasts are II \textbf{+0.073 (t = 2.49)}, IVc
@@ -845,8 +870,8 @@ classes remains. IVc, V/VI and VIIab are pooled because separately they run
 26--113 members per period and cross each other on noise; I and II are kept
 apart because the crossover between them is the claim under test. Error bars
 are ±1 se. Class III remains thin (26--81 members) and its late excursion is not
-readable as movement. (\texttt{python\ plot\_class\_by\_era\_grouped.py}, reading
-  \texttt{class\_by\_era\_grouped.csv} (per-point means, standard errors and member
+readable as movement. (\texttt{python\ plot\_\allowbreak{}class\_\allowbreak{}by\_\allowbreak{}era\_\allowbreak{}grouped.\allowbreak{}py}, reading
+  \texttt{class\_\allowbreak{}by\_\allowbreak{}era\_\allowbreak{}grouped.\allowbreak{}csv} (per-point means, standard errors and member
   counts); the unpooled version is \texttt{class\_by\_era.csv} / \texttt{class\_by\_era.png}.
   An earlier member-\textbf{year} aggregation of the same data appeared to show the
   peak migrating downward; that was an artifact of counting long-serving
@@ -900,6 +925,7 @@ structure (an era-resolved peak test is future work).
 levels rather than as a ladder (22 chambers, cohort controlled, baseline
 bachelor):
 
+\begingroup\small
 \begin{longtable}[]{@{}llll@{}}
 \caption{Register by education level, relative to a bachelor's degree.}\label{tab:education}\\
 \toprule\noalign{}
@@ -918,6 +944,7 @@ college & −0.161 & 371 & \textbf{−0.139 (t = −2.67)} \\
 graduate & −0.025 & 1,271 & −0.008 (t = −0.22) \\
 \textbf{professional} & −0.130 & 991 & \textbf{−0.091 (t = −2.29)} \\
 \end{longtable}
+\endgroup
 
 Bachelor and graduate form a plateau at the top; both arms fall away
 significantly, and the descending arm is the \textbf{professional} degree --- law and
@@ -942,11 +969,12 @@ independently measured; its apparent separate effect is not.
 Cohort, class, education and prominence in a single member-level regression
 (n = 4,056 complete cases across 22 chambers; each block also fitted alone on
 this same sample, so attenuation is read against its own baseline rather than
-against an estimate from a different set of members): †\footnote{\texttt{python\ joint\_predictors.py}. Canonical member-level spec --- one
+against an estimate from a different set of members): †\footnote{\texttt{python\ joint\_\allowbreak{}predictors.\allowbreak{}py}. Canonical member-level spec --- one
   observation per legislator, equal weight, register z-scored within chamber
   against the chamber\textquotesingle s full member population, HC1 errors, joint Wald over
   each block\textquotesingle s term vector.}
 
+\begingroup\small
 \begin{longtable}[]{@{}lll@{}}
 \caption{The four predictors alone and jointly (cross-fitted).}\label{tab:four-predictors}\\
 \toprule\noalign{}
@@ -966,6 +994,7 @@ predictor & alone & joint \\
 \textbf{education} (block Wald) & p = 0.0025 & \textbf{p = 0.2150} \\
 \textbf{prominence} (linear, \emph{not} the right form --- see D.3) & +0.035 (t 3.08) & +0.020 (t 2.05) \\
 \end{longtable}
+\endgroup
 
 \textbf{They do not deserve equal billing.} Cohort is untouched by the others and an
 order of magnitude better resolved than any of them. Class survives everything,
@@ -999,13 +1028,14 @@ that in about thirteen years of birth date.
 Coding each member\textquotesingle s pre-political occupation into the
 Erikson--Goldthorpe--Portocarero schema --- two independent Claude passes over a
 shared rubric, blind to each other, 96.4\% raw agreement, disagreements
-adjudicated (\texttt{provinces/OCCUPATION\_CODING.md}) --- gives 897 members and 5,294
+adjudicated (\texttt{provinces/\allowbreak{}OCCUPATION\_\allowbreak{}CODING.\allowbreak{}md}) --- gives 897 members and 5,294
 member-years, 57.5\% of the words that reach a named non-chair speaker in the
 eight Canadian provinces.
 
 Register rate against EGP class, year and province fixed effects, weighted by
 words, baseline class I:
 
+\begingroup\small
 \begin{longtable}[]{@{}lllll@{}}
 \caption{Provincial class estimates relative to class I (discovery record).}\label{tab:class-provincial}\\
 \toprule\noalign{}
@@ -1026,6 +1056,7 @@ V/VI & skilled manual & +0.21 & 0.34 & 45 \\
 IVc & farmers & −0.24 & −0.58 & 53 \\
 VIIab & semi- and unskilled manual & \textbf{−1.66} & −4.22 & 16 \\
 \end{longtable}
+\endgroup
 
 \textbf{The peak sits one to two rungs below the top.} Teachers, nurses,
 journalists, clerks and shopkeepers use the register more than lawyers,
@@ -1038,8 +1069,8 @@ stating because that collapse is the conventional reporting unit. NS-SEC pools
 III with IVc and V/VI with VIIab; the opposite signs cancel and the table reads
 professional 35.5 / intermediate 35.3 / working 34.9 --- a null. The
 seven-class schema is not a refinement here, it is the difference between a
-finding and nothing.\footnote{\texttt{python\ covariate\_study.py}, \texttt{python\ class\_origin.py\ -\/-dist}. Coding
-  workflow and rubric ambiguities in \texttt{provinces/OCCUPATION\_CODING.md}; the
+finding and nothing.\footnote{\texttt{python\ covariate\_\allowbreak{}study.\allowbreak{}py}, \texttt{python\ class\_\allowbreak{}origin.\allowbreak{}py\ -\allowbreak{}\/\allowbreak{}-\allowbreak{}dist}. Coding
+  workflow and rubric ambiguities in \texttt{provinces/\allowbreak{}OCCUPATION\_\allowbreak{}CODING.\allowbreak{}md}; the
   adjudicators\textquotesingle{} fifteen flagged ambiguities cluster on exactly the I/II and
   service/manual cuts the schema turns on, which is a caveat on the coding
   and not on the register measurement.}
@@ -1086,7 +1117,7 @@ nature to renew itself continuously" --- and Veblen (1899) and Simmel (1904)
 gave it its standard form.
 Lieberson is the closest parallel to our case, because his markers are discrete
 lexical items: first names diffuse down the status ladder and are abandoned by
-higher-status parents once they become common.\footnote{\texttt{python\ class\_markedness.py}, \texttt{build\_class\_word\_year.py}. An earlier
+higher-status parents once they become common.\footnote{\texttt{python\ class\_\allowbreak{}markedness.\allowbreak{}py}, \texttt{build\_\allowbreak{}class\_\allowbreak{}word\_\allowbreak{}year.\allowbreak{}py}. An earlier
   version of this test used the \emph{most-risen} words rather than the
   \emph{most-used} ones and found nothing; the theory predicts flight from gross
   forms, so rare risers are the wrong test set. A separate cross-sectional
@@ -1094,7 +1125,7 @@ higher-status parents once they become common.\footnote{\texttt{python\ class\_m
   not survive a year control and is not reported. \textbf{Citations in this
   subsection were web-verified 2026-08-24} (Simmel 1904\cite{simmel1904}, Veblen 1899\cite{veblen1899},
   Jhering 1883\cite{jhering1883} with the quote traced to Durkheim\textquotesingle s 1887\cite{durkheim1887} summary, Lieberson 2000\cite{lieberson2000}, Labov 1972\cite{labov1972}); the Labov year/publisher error the file flagged is
-  corrected. See \texttt{CLASS-REGISTER-LITERATURE.md}.}
+  corrected. See \texttt{CLASS-\allowbreak{}REGISTER-\allowbreak{}LITERATURE.\allowbreak{}md}.}
 
 \subsubsection{Prominence: a gradient in the provinces, an arc in the national chambers}\label{sub:prominence-class}
 
@@ -1104,6 +1135,7 @@ available here, alongside class and office. Read in buckets rather than as a
 single slope, it splits the chambers into two shapes (Appendix~\ref{sec:prominence-buckets}; all 22
 chambers, 6,896 members, 99\% coverage):
 
+\begingroup\small
 \begin{longtable}[]{@{}llll@{}}
 \caption{Register by prominence (Wikipedia article-length quintile) across chamber groups.}\label{tab:prominence-class}\\
 \toprule\noalign{}
@@ -1122,6 +1154,7 @@ Q3 & −0.17 & +0.04 & \textbf{+0.15} \\
 Q4 & −0.27 & +0.01 & +0.10 \\
 Q5 (most written about) & \textbf{−0.40} & \textbf{−0.17} & −0.06 \\
 \end{longtable}
+\endgroup
 
 The \textbf{seventeen sub-national chambers decline}: the more written about a
 member is, the less of the register they use. The eight Canadian provinces do
@@ -1228,10 +1261,10 @@ contrast.
 
 The class arm left a shape (the II-over-I inverted U) without a mechanism.
 This arm registered one, built the instrument to measure it, and ran ---
-\texttt{plans/PREREG-occupational-accountability.md} is the registration with every
+\texttt{plans/\allowbreak{}PREREG-\allowbreak{}occupational-\allowbreak{}accountability.\allowbreak{}md} is the registration with every
 revision and amendment dated; METHODOLOGY §6.1c is the method record; every
 number below reproduces from a committed script on
-\texttt{prereg\_member\_table.json} (one join; n = 4,762 members with register and
+\texttt{prereg\_\allowbreak{}member\_\allowbreak{}table.\allowbreak{}json} (one join; n = 4,762 members with register and
 instrument, 3,594 with every covariate).
 
 \textbf{The instrument, in one paragraph.} Each legislator\textquotesingle s prior occupation,
@@ -1255,6 +1288,7 @@ in the document\textquotesingle s hierarchy section and throughout the pre-run r
 level entered alone (standardised; n = 4,762, full-covariate slopes at
 n = 3,594):
 
+\begingroup\small
 \begin{longtable}[]{@{}lll@{}}
 \caption{The occupational altitude ladder: register by level on both instruments (plotted in \cref{fig:altitude}).}\label{tab:altitude}\\
 \toprule\noalign{}
@@ -1272,6 +1306,7 @@ bottom & −0.021 (t −1.5) & +0.010 (t +0.7) \\
 \textbf{middle} & \textbf{+0.029 (t +2.0)} & \textbf{+0.028 (t +2.0)} \\
 top & +0.010 (t +0.7) & +0.021 (t +1.5) \\
 \end{longtable}
+\endgroup
 
 Middle peak, top below it, free at the floor, bottom indistinguishable from
 zero --- the II-over-I crossover in occupational form, from two instruments
@@ -1338,14 +1373,14 @@ ruling. Failed registered predictions are in Appendix~\ref{app:null} (the altitu
 quadratic, the autonomy asymmetry, nominal-vs-effective autonomy). Scale
 for all of it: \cref{sec:limits}\textquotesingle s calibration bullet --- small effects by any benchmark,
 reliably estimated, structurally replicated, floors rather than
-ceilings.\footnote{\texttt{python\ prereg\_stage1.py}, \texttt{prereg\_stage2.py},
-  \texttt{prereg\_synthesis\_check.py}, \texttt{prereg\_covariate\_strength.py},
-  \texttt{prereg\_strength\_2526.py}; results snapshots
-  \texttt{prereg\_stage1\_results.txt}, \texttt{prereg\_stage2\_results.txt}. The join and
+ceilings.\footnote{\texttt{python\ prereg\_\allowbreak{}stage1.\allowbreak{}py}, \texttt{prereg\_stage2.py},
+  \texttt{prereg\_\allowbreak{}synthesis\_\allowbreak{}check.\allowbreak{}py}, \texttt{prereg\_\allowbreak{}covariate\_\allowbreak{}strength.\allowbreak{}py},
+  \texttt{prereg\_\allowbreak{}strength\_\allowbreak{}2526.\allowbreak{}py}; results snapshots
+  \texttt{prereg\_\allowbreak{}stage1\_\allowbreak{}results.\allowbreak{}txt}, \texttt{prereg\_\allowbreak{}stage2\_\allowbreak{}results.\allowbreak{}txt}. The join and
   its drift guard: \texttt{prereg\_join.py} (METHODOLOGY §6.1b addendum for the
   two join facts). Instrument derivation artifacts:
   \texttt{element\_audit\_*.json}, \texttt{element\_levels.json},
-  \texttt{instrument\_final\_cells.json}.}
+  \texttt{instrument\_\allowbreak{}final\_\allowbreak{}cells.\allowbreak{}json}.}
 
 \textbf{The coarsest cut is the strongest single correlate: the register is the
 language of the office.} O*NET\textquotesingle s \emph{Indoors, Environmentally Controlled} ---
@@ -1360,7 +1395,7 @@ office rungs, and free work lowest. In the joint model the office cut adds
 little that the existing covariates do not already carry (+0.039 per sd,
 t +1.9, ΔadjR² +0.0007), and the apex delta stays the strongest occupational
 term in that model (t +2.4, ΔadjR² +0.0011) --- birth decade remains the
-overwhelming axis (t +24.5, carrying 0.144 of the model\textquotesingle s 0.165).\footnote{\texttt{python\ prereg\_negative\_controls.py}; n = 4,762, estimator
+overwhelming axis (t +24.5, carrying 0.144 of the model\textquotesingle s 0.165).\footnote{\texttt{python\ prereg\_\allowbreak{}negative\_\allowbreak{}controls.\allowbreak{}py}; n = 4,762, estimator
   parity-guarded against stage 1 (reproduces MIDDLE +0.028, t 2.0).
   Entered jointly with Indoors, the apex delta reads +0.033 (t +2.2) and
   free −0.062 (t −4.4). The pre-registration had planted these two
@@ -1368,8 +1403,8 @@ overwhelming axis (t +24.5, carrying 0.144 of the model\textquotesingle s 0.165)
   the adjudication (2026-08-24, logged in the prereg) rejects that rule\textquotesingle s
   implication --- office language is the finding restated, not a control on
   it --- and the result is reported here as description. Joint-model numbers:
-  \texttt{python\ prereg\_indoors\_joint.py} (n = 3,594, the covariate panel; the
-  grand model mirrors \texttt{prereg\_covariate\_strength.py}).}
+  \texttt{python\ prereg\_\allowbreak{}indoors\_\allowbreak{}joint.\allowbreak{}py} (n = 3,594, the covariate panel; the
+  grand model mirrors \texttt{prereg\_\allowbreak{}covariate\_\allowbreak{}strength.\allowbreak{}py}).}
 
 \subsection{The register is a post-training artifact}\label{sec:posttraining}
 
@@ -1382,6 +1417,7 @@ returns +0.45/+0.56/+0.31, largest at DPO only because DPO\textquotesingle s gen
 longest), and three independent corrected routes agree on the picture below
 (exact stratified estimator shown; audit values in the 2026-08-11 review, M9):
 
+\begingroup\small
 \begin{longtable}[]{@{}lll@{}}
 \caption{Register shift by training stage (Rogan--Gladen corrected).}\label{tab:posttraining}\\
 \toprule\noalign{}
@@ -1398,9 +1434,10 @@ SFT & +0.32 & +0.76 \\
 DPO & +0.27 & +0.86 \\
 RLVR & \textbf{+0.06} (CI straddles 0) & +0.37 \\
 \end{longtable}
+\endgroup
 
 Pooled alignment effect \textbf{+0.387} on the scaled generation --- three model
-families, 1,600 prompt pairs each, 1.19M base words.\footnote{Ladder stages: \texttt{python\ olmo\_ladder.py\ report}, which prints the
+families, 1,600 prompt pairs each, 1.19M base words.\footnote{Ladder stages: \texttt{python\ olmo\_\allowbreak{}ladder.\allowbreak{}py\ report}, which prints the
   end-to-end base→instruct row (\textbf{+1.2412}) alongside the three adjacent
   transitions. An earlier version of the script defined only the three
   adjacent pairs, so this footnote quoted a figure its own invocation did not
@@ -1409,7 +1446,7 @@ families, 1,600 prompt pairs each, 1.19M base words.\footnote{Ladder stages: \te
   to about 0.03 under the bias-free estimator --- which is why the stages are
   reported as three separate measurements and not as a decomposition of one
   path. The \textbf{+0.387} is a \emph{separate} experiment on other model
-  families: \texttt{python\ rlhf\_pref\_compile.py}, reading the generation built by
+  families: \texttt{python\ rlhf\_\allowbreak{}pref\_\allowbreak{}compile.\allowbreak{}py}, reading the generation built by
   \texttt{rlhf\_pref\_scale.py} at 400 new tokens over 3 families at 1,600 prompt
   pairs each and 1.19M base words. It is not a pooling of the three OLMo
   stages, and it is not produced by \texttt{align\_ratio.py\ report}, which prints the
@@ -1473,12 +1510,13 @@ covers barely more of the list at the same volume, so the list is partly
 out-of-domain and 407 is the wrong denominator. That is a summary of a
 distribution, and the distribution says something the summary hides.
 
-At matched volume, style words by number of occurrences:\footnote{\texttt{python\ style\_word\_frequency.py}. Three families at 1,600 prompts;
+At matched volume, style words by number of occurrences:\footnote{\texttt{python\ style\_\allowbreak{}word\_\allowbreak{}frequency.\allowbreak{}py}. Three families at 1,600 prompts;
   every corpus truncated to 1,187,489 words, base and instruct counted
   separately --- pooling them doubles the generated volume against a
   volume-matched human corpus and manufactures parity, which an earlier
   version of \texttt{style\_coverage.py} did.}
 
+\begingroup\small
 \begin{longtable}[]{@{}llllllll@{}}
 \caption{Style-word coverage by number of occurrences, at matched volume.}\label{tab:coverage-occ}\\
 \toprule\noalign{}
@@ -1496,6 +1534,7 @@ generated instruct & \textbf{118} & 60 & 40 & 33 & 31 & 46 & 79 \\
 Hansard pre-2023 & \textbf{86} & 80 & 55 & 39 & 42 & 39 & 66 \\
 Hansard 2025--26 & \textbf{85} & 82 & 47 & 40 & 37 & 49 & 67 \\
 \end{longtable}
+\endgroup
 
 The shapes differ, so the defence only half holds: at equal volume the
 generated corpus has by far the fatter zero bin, and part of the missing
@@ -1504,7 +1543,8 @@ coverage is a property of the generation rather than of the word list.
 \textbf{The overlap is the result, because it says which words are missing rather
 than how many.} Partitioning the 407 against Hansard 2025--26:
 
-\begin{longtable}[]{@{}lllll@{}}
+\begingroup\small
+\begin{longtable}[]{@{}p{0.15\linewidth}p{0.16\linewidth}p{0.20\linewidth}p{0.20\linewidth}p{0.16\linewidth}@{}}
 \caption{Where the 407 style words fall: generated text versus Hansard 2025--26.}\label{tab:coverage-partition}\\
 \toprule\noalign{}
 & absent from both & absent from generated only & absent from Hansard only & present in both \\
@@ -1519,6 +1559,7 @@ than how many.} Partitioning the 407 against Hansard 2025--26:
 base & 72 & \textbf{86} & 13 & 236 \\
 instruct & 63 & \textbf{55} & 22 & \textbf{267} \\
 \end{longtable}
+\endgroup
 
 Only \textbf{72 words are absent from both} --- that is the genuine out-of-domain
 share, well under what a presence count implied. And post-training moves the
@@ -1543,7 +1584,7 @@ reproducing the thing \cref{sec:prevalence} detects.
 \subsection{Permeation: detector-independent and small but positive}\label{sec:permeation}
 
 \textbf{The register is permeating human speech independently of drafting:
-+0.0099, positive in 9 of 10 cells, permutation p = 0.017.} †\footnote{\texttt{python\ word\_context\_delta.py\ pooled}, which prints the pooled figure,
++0.0099, positive in 9 of 10 cells, permutation p = 0.017.} †\footnote{\texttt{python\ word\_\allowbreak{}context\_\allowbreak{}delta.\allowbreak{}py\ pooled}, which prints the pooled figure,
   the ten chamber × family cells, the clustered bootstrap and the permutation
   test. Earlier drafts cited \texttt{word\_context\_delta.py} alone, whose \texttt{report}
   mode hardcodes the Qwen3 traces and prints five per-chamber rows with no
@@ -1593,7 +1634,7 @@ That exclusion conditions on something the treatment moves, so the two claims
 are stated separately (review item Q1). \textbf{Applicability itself collapses at
 high screen scores}: respect\_demands is applicable for 61.4\% of segments
 scoring \textless10, 63.0\% at 10--49, and \textbf{31.1\%} at ≥50; respect\_counterargs runs
-50.8\% / 51.2\% / \textbf{28.9\%} (n = 498/297/45; \texttt{applicability\_by\_band.py}). So
+50.8\% / 51.2\% / \textbf{28.9\%} (n = 498/297/45; \texttt{applicability\_\allowbreak{}by\_\allowbreak{}band.\allowbreak{}py}). So
 the engagement null below means \emph{engages no worse when there is something to
 engage with}; separately, AI-flagged speech is about \textbf{half as likely to
 contain anything to engage with} --- a real difference, not a null. Stage 6c
@@ -1612,20 +1653,21 @@ independent re-runs.
 Stage 1 is 840 genre-balanced federal-Canadian segments labelled by a blinded
 LLM screen; stage 2 is 682 segments across 22 chambers labelled by \textbf{Pangram
 verdict}, with chamber fixed effects. Different populations, different label
-sources, same answer.\footnote{Stage 1: \texttt{cd\ quality\_expansion\ \&\&\ python\ analyze.py}. Stage 2:
-  \texttt{python\ analyze\_stage2.py} --- the column\textquotesingle s own script (review item Q7),
+sources, same answer.\footnote{Stage 1: \texttt{cd\ quality\_\allowbreak{}expansion\ \&\&\ python\ analyze.\allowbreak{}py}. Stage 2:
+  \texttt{python\ analyze\_\allowbreak{}stage2.\allowbreak{}py} --- the column\textquotesingle s own script (review item Q7),
   reproducing it to three decimals. Coding disclosed at the table per the
   same item: stage 2\textquotesingle s regressor pools \textbf{Mixed verdicts with AI};
   \texttt{-\/-drop-mixed} is the sensitivity, and the three starred cells barely
   move under it (justification +0.263, common\_good +0.283, respect\_groups
   +0.231). The applicability table above reproduces with
-  \texttt{python\ applicability\_by\_band.py}. Per-grade id-keyed rows for both
+  \texttt{python\ applicability\_\allowbreak{}by\_\allowbreak{}band.\allowbreak{}py}. Per-grade id-keyed rows for both
   stages are committed (\texttt{stage\{1,2\}\_grades\_by\_id.json}, recovered
   2026-08-20 with exact multiset match to these tables), and
   \texttt{q2\_q8\_controls.py} re-estimates every cell with speaker-clustered
   errors --- no claim-bearing t moves by more than 0.3.}
 
-\begin{longtable}[]{@{}llll@{}}
+\begingroup\small
+\begin{longtable}[]{@{}p{0.20\linewidth}p{0.22\linewidth}p{0.22\linewidth}p{0.24\linewidth}@{}}
 \caption{Discourse Quality Index associations with machine authorship: stages 1 and 2.}\label{tab:dqi}\\
 \toprule\noalign{}
 dimension & stage 1, per 0→100 score & stage 1, per sd of score & stage 2, AI vs Human verdict \\
@@ -1656,6 +1698,7 @@ respect\_counterargs & +0.143 (t +0.4) & +0.022 & +0.073 (t +1.0) \\
 constructive & −0.015 (t −0.1) & −0.002 & −0.041 (t −1.0) \\
 evidence & +0.350 (t +1.4) & +0.054 & +0.065 (t +1.1) \\
 \end{longtable}
+\endgroup
 
 \emph{The middle column is the first column times sd/100 (review item Q4): the
 stage-1 regressor is a 0--100 score whose observed maximum is 70 and sd 15.3,
@@ -1735,11 +1778,11 @@ prevalence is a dead end. This arm measures how cheaply, using two clean
 search runs --- one per chamber (New Brunswick and federal Government Orders) ---
 each attacking a fixed set of flagged speeches. Two earlier first attempts,
 one per chamber, were biased samplings and are reported in Appendix~\ref{app:superseded}; the
-figures here are the two final searches only.\footnote{\texttt{python\ bypass\_report.py} reads the verdict files and prints every
+figures here are the two final searches only.\footnote{\texttt{python\ bypass\_\allowbreak{}report.\allowbreak{}py} reads the verdict files and prints every
   figure in this subsection --- the per-run split (final vs superseded), the
   cluster-bootstrap intervals, the per-target rates, the Fisher test, and the
-  exploratory band check. Strict re-scores in \texttt{nb\_reflip\_fractions.json},
-  \texttt{bp\_reflip\_fractions.json}, \texttt{go\_reflip\_fractions.json}; the figure is
+  exploratory band check. Strict re-scores in \texttt{nb\_\allowbreak{}reflip\_\allowbreak{}fractions.\allowbreak{}json},
+  \texttt{bp\_\allowbreak{}reflip\_\allowbreak{}fractions.\allowbreak{}json}, \texttt{go\_\allowbreak{}reflip\_\allowbreak{}fractions.\allowbreak{}json}; the figure is
   \texttt{bypass\_figure.py}. \textbf{Reproducibility gap, stated plainly (review item
   B7):} the two Government Orders searches have committed scripts
   (\texttt{gov\_bypass\_v3.js}, \texttt{gov\_bypass\_all.js}), but the New Brunswick searches
@@ -1774,7 +1817,8 @@ review item B2). \Cref{fig:bypass} lays out the loop.
 \textbf{Three verdicts, and the two events we count.} Pangram returns one of three
 labels, and the search can move a speech between them:
 
-\begin{longtable}[]{@{}lll@{}}
+\begingroup\small
+\begin{longtable}[]{@{}lp{0.28\linewidth}p{0.44\linewidth}@{}}
 \caption{Pangram's three verdicts and the two events the search counts.}\label{tab:verdicts}\\
 \toprule\noalign{}
 Pangram verdict & meaning & counts as \\
@@ -1790,6 +1834,7 @@ Pangram verdict & meaning & counts as \\
 \textbf{Mixed} & "not confidently AI" & a \textbf{flip} (off AI) but \emph{not} a success \\
 \textbf{Human} & "a person wrote this" & a \textbf{flip} \emph{and} a \textbf{success} --- the reversal we count \\
 \end{longtable}
+\endgroup
 
 "Success" throughout means \textbf{reaching a clean Human verdict} --- the strict bar.
 A "flip" is the weaker event of merely leaving AI; the two are different rates
@@ -1813,7 +1858,8 @@ same search answers two threat models, and which number applies depends on one
 thing --- whether the attacker can submit to the detector and retry
 (review item B4):
 
-\begin{longtable}[]{@{}llll@{}}
+\begingroup\small
+\begin{longtable}[]{@{}lp{0.22\linewidth}p{0.16\linewidth}p{0.36\linewidth}@{}}
 \caption{Bypass rates by whether the attacker may query the detector.}\label{tab:bypass-rates}\\
 \toprule\noalign{}
 rate & attacker\textquotesingle s detector access & value (two final runs) & the question it answers \\
@@ -1828,6 +1874,7 @@ rate & attacker\textquotesingle s detector access & value (two final runs) & the
 \textbf{per variant} & \textbf{none} --- one blind submission & \textbf{11.1\%} {[}5.5, 17.6{]} & a fire-and-forget attacker who cannot check their work \\
 \textbf{per target} & \textbf{query + retry} (≤18 attempts) & \textbf{22.5\%} {[}14.4, 33.5{]} & an attacker who submits, sees the verdict, and tries again \\
 \end{longtable}
+\endgroup
 
 Both are realistic; they bracket the exposure. The gap between them is about
 \textbf{2×}, not the "threefold" an earlier draft claimed by comparing across
@@ -1862,6 +1909,7 @@ wanted through got through. Taking only the \textbf{final search in each chamber
 and asking on what fraction of \emph{targets} at least one variant reached a clean
 Human verdict:
 
+\begingroup\small
 \begin{longtable}[]{@{}lllll@{}}
 \caption{Detector-evasion search yield per target.}\label{tab:bypass-yield}\\
 \toprule\noalign{}
@@ -1878,6 +1926,7 @@ NB v3 contrastive & 40 & 2 & 10 = 25.0\% & 10 = 25.0\% \\
 GO all-31 uniform & 31 & 4 & 6 = 19.4\% & 5 = 16.1\% \\
 \textbf{pooled} & \textbf{71} & \textbf{6} & \textbf{16 = 22.5\%} {[}14.4, 33.5{]} & \textbf{15 = 21.1\%} {[}13.2, 32.0{]} \\
 \end{longtable}
+\endgroup
 
 \textbf{Roughly one flagged speech in five can be walked past the detector}, at a
 budget of six rounds and three variants per round. One caveat on reading it as
@@ -1932,7 +1981,8 @@ Second, the variants are the surviving output of a search that optimised
 against a correlated proxy, so this is a rate under adversarial pressure
 rather than under clean conditions.
 
-\begin{longtable}[]{@{}lll@{}}
+\begingroup\small
+\begin{longtable}[]{@{}p{0.22\linewidth}p{0.20\linewidth}p{0.50\linewidth}@{}}
 \caption{The bypass rates, disambiguated.}\label{tab:bypass-summary}\\
 \toprule\noalign{}
 measurement & rate & what it is \\
@@ -1959,6 +2009,7 @@ Pangram 4, Epoch AI Style Imitation & 2.86\% & FNR, doc-level, adversarial, vend
 \emph{this study, per target} & \emph{22.5\%} & \emph{induced, attacker may query and retry (≤18 attempts) --- 9.8× the humanizers} \\
 Rice 2026, Australian Hansard & \textasciitilde8\% & \textbf{false \emph{positive} rate}, n = 50 \\
 \end{longtable}
+\endgroup
 
 \textbf{The per-variant row is the one commensurable with the vendor rows}, which
 are also document-level FNRs on one adversarially prepared submission. The
@@ -2031,8 +2082,8 @@ estimand, needing no covariate. \textbf{Every dimension is null on both.}\footno
   \texttt{results\_stage34.json}, which now also caches \texttt{r\_words} per dimension.
   The grading transcripts (stage 3 run \texttt{wf\_b9bbcff8-1a7}, stage 4
   \texttt{wf\_7516f16c-386}, on the grading machine) were recovered 2026-08-20 and
-  their id-keyed rows are committed as \texttt{stage3\_grades\_by\_id.json} /
-  \texttt{stage4\_grades\_by\_id.json} beside the raw archives, with the stage-3
+  their id-keyed rows are committed as \texttt{stage3\_\allowbreak{}grades\_\allowbreak{}by\_\allowbreak{}id.\allowbreak{}json} /
+  \texttt{stage4\_\allowbreak{}grades\_\allowbreak{}by\_\allowbreak{}id.\allowbreak{}json} beside the raw archives, with the stage-3
   table verified to reproduce digit-for-digit; the script needs a run
   directory, so pass one (or rebuild from the committed rows). Quoted column is the \textbf{raw paired difference},
   humanized − original, within text. \texttt{-1} (inapplicable) pairs are excluded,
@@ -2050,6 +2101,7 @@ sources), stage 5 (successful evasions), and stage 6 (never-reviewed
 continuations, where frontier models \emph{beat} the human twins on form) --- four
 different contrasts agreeing.
 
+\begingroup\small
 \begin{longtable}[]{@{}lll@{}}
 \caption{Paired within-text quality comparisons (stages 3 and 4).}\label{tab:quality-paired}\\
 \toprule\noalign{}
@@ -2070,6 +2122,7 @@ respect\_counterargs & +0.33 (t +1.8) & +0.12 (t +1.0) \\
 constructive & 0.00 (t 0.0) & −0.12 (t −1.8) \\
 evidence & +0.03 (t +0.4) & +0.08 (t +0.7) \\
 \end{longtable}
+\endgroup
 
 \textbf{Stage 5 grades the successful evasions themselves, and finds the same
 null.} Conditioning on the outcome --- the complement of stages 3/4 --- every
@@ -2078,6 +2131,7 @@ target\textquotesingle s original text unavailable and dropped) was graded blind
 original on the same v2b rubric, two independent passes (inter-pass exact
 agreement 79--100\%). No dimension moves at either level:
 
+\begingroup\small
 \begin{longtable}[]{@{}lll@{}}
 \caption{Quality of successful evasions versus their targets, by dimension.}\label{tab:quality-evasion}\\
 \toprule\noalign{}
@@ -2098,6 +2152,7 @@ respect\_counterargs & +0.11 (t +0.9) & +0.10 (t +0.4) \\
 constructive & +0.03 (t +1.0) & +0.07 (t +1.0) \\
 evidence & −0.01 (t −0.2) & +0.04 (t +0.3) \\
 \end{longtable}
+\endgroup
 
 The lone lean --- justification at variant level (t −1.7) --- collapses on
 aggregation to targets (t −0.2), a within-target artifact of multiply-graded
@@ -2106,7 +2161,7 @@ rewriting is null (stages 3/4) and evasion-ACHIEVING rewriting is null (stage
 5).} (A note the DQI judge\textquotesingle s own \texttt{ai\_guess} adds: it rated the successful
 evaders 36/100 against 40 for the human originals --- barely less AI-like --- so
 the two detectors disagree on this set even as neither finds a quality
-difference. \texttt{stage5\_scores.json}, \texttt{PREREG-stage5-successful-evasion.md}.)
+difference. \texttt{stage5\_scores.json}, \texttt{PREREG-\allowbreak{}stage5-\allowbreak{}successful-\allowbreak{}evasion.\allowbreak{}md}.)
 
 \textbf{Stage 6 inverts the question: machine text no human ever reviewed.} The
 in-the-wild finding --- AI-flagged speech better-formed --- is consistent with
@@ -2118,11 +2173,11 @@ pre-2023 prompts (45-word openings of real segments), each with its
 member\textquotesingle s actual continuation and three cached model continuations
 (mistral-instruct, qwen3-instruct, mistral-base) that no person read before
 grading --- blind, length-matched within prompt, frozen v2b rubric, two
-passes, judge pinned to the stage-1/2 model.\footnote{\texttt{quality\_expansion/pool6.json} (blind), \texttt{key6.json} (never left
+passes, judge pinned to the stage-1/2 model.\footnote{\texttt{quality\_\allowbreak{}expansion/\allowbreak{}pool6.\allowbreak{}json} (blind), \texttt{key6.json} (never left
   the grading machine\textquotesingle s counterpart --- the key stayed local),
   \texttt{results\_stage6.json}, \texttt{analyze\_stage6.py};
-  \texttt{workflows/stage6\_grade.js}; design registered before grading in
-  \texttt{plans/S10-stage6-unreviewed-continuations.md}. Run 2026-08-19.}
+  \texttt{workflows/\allowbreak{}stage6\_\allowbreak{}grade.\allowbreak{}js}; design registered before grading in
+  \texttt{plans/\allowbreak{}S10-\allowbreak{}stage6-\allowbreak{}unreviewed-\allowbreak{}continuations.\allowbreak{}md}. Run 2026-08-19.}
 
 \textbf{The answer is a capability ladder, not a constant} --- established in two
 rounds the same day. The open-weight arms lose to their human twins on every
@@ -2132,7 +2187,8 @@ made in the human-machine pipeline. But the Claude arms --- the study\textquotes
 existing audited generation caches (the \cref{sec:class} family-signature traces),
 graded blind under the identical flow --- invert that at the frontier:
 
-\begin{longtable}[]{@{}lll@{}}
+\begingroup\small
+\begin{longtable}[]{@{}p{0.28\linewidth}p{0.32\linewidth}p{0.30\linewidth}@{}}
 \caption{Machine continuations graded blind: justification and applicability by arm.}\label{tab:continuations}\\
 \toprule\noalign{}
 arm & justification vs human & sentinel applicability \\
@@ -2155,6 +2211,7 @@ qwen3-instruct & −0.84 (t −7.7) & 0.34 / 0.33 \\
 old haiku & −1.22 (t −4.6) & 0.17 / 0.26 \\
 \emph{(human twins)} & --- & 0.66 / 0.53 \\
 \end{longtable}
+\endgroup
 
 \textbf{Frontier models produce better-formed text than the member\textquotesingle s own next
 words, unreviewed} --- so the wild form lift does not require human vetting;
@@ -2564,7 +2621,8 @@ detector, and neither is peer-reviewed} --- one is a Substack post, the other a
 pseudonymous magazine piece. Details and primary-source verification in
 \texttt{PRIOR\_ART.md}.
 
-\begin{longtable}[]{@{}lll@{}}
+\begingroup\small
+\begin{longtable}[]{@{}p{0.20\linewidth}p{0.38\linewidth}p{0.36\linewidth}@{}}
 \caption{This study against the two closest prior efforts.}\label{tab:priorart}\\
 \toprule\noalign{}
 & Rice 2026 (Australian federal) & Pimlico Journal 2025 (UK Commons) \\
@@ -2581,6 +2639,7 @@ corpus & 124,734 speeches, 2018-- & UK Commons \\
 result & \textbf{no} post-ChatGPT inflection & increase asserted \\
 calibration & 50 pre-ChatGPT / 50 Claude-written & none reported \\
 \end{longtable}
+\endgroup
 
 \textbf{Rice\cite{rice2026} does not claim evidence of absence, and should not be cited as
 though he does.} He measures his LLM judge at \textbf{20\% sensitivity} against
@@ -2801,7 +2860,7 @@ and with real raters rather than the single lineage-correlated judge behind
 \cref{sec:disc-norms}). The game frame is what makes it practical --- participation is
 intrinsic --- and it is the ethical form of 1d, since the human-targeting
 search runs inside a disclosed, consented frame. Design detail in
-\texttt{plans/S10-detection-game.md}.
+\texttt{plans/\allowbreak{}S10-\allowbreak{}detection-\allowbreak{}game.\allowbreak{}md}.
 
 \textbf{B. Getting outside the parliamentary archive.} Three versions of one move.
 \cref{sec:generational}\textquotesingle s mechanism is unidentified and three exposure tests inside the archive
@@ -3087,7 +3146,7 @@ study has not already built.
   its own study rather than a further section here.
 \item
   \textbf{The unconstrained occupational model}, deferred out of
-  \texttt{PREREG-occupational-accountability.md} on 2026-08-18 so the confirmatory
+  \texttt{PREREG-\allowbreak{}occupational-\allowbreak{}accountability.\allowbreak{}md} on 2026-08-18 so the confirmatory
   test can be run and closed on its own. Train a maximally free model over all
   \textasciitilde271 rated O*NET elements and let it report which matter, rather than
   testing a hand-built six-item composite. The constraints worked out for it
@@ -3143,7 +3202,7 @@ study has not already built.
   who reads the dashboard are part of the design, not an afterthought.
 \item
   \textbf{The search for the register itself (Matthew, 2026-08-18 --- planned as
-  S20, \texttt{plans/S20-register-search.md}).} Everything above measures against
+  S20, \texttt{plans/\allowbreak{}S20-\allowbreak{}register-\allowbreak{}search.\allowbreak{}md}).} Everything above measures against
   one register, and \cref{sec:limits}\textquotesingle s calibration names the cost: a single thin index
   attenuates every correlation. S20 inverts the search --- for each
   identifier (period, cohort, class II, the insulation delta, machine
@@ -3210,7 +3269,8 @@ the Congressional Record (the prevalence arm covers 20 of them --- New Brunswick
 was the pilot and has no uniform prevalence sample, and Tasmania is
 regime-flagged and excluded; the covariate arms use all 22):
 
-\begin{longtable}[]{@{}ll@{}}
+\begingroup\small
+\begin{longtable}[]{@{}lp{0.74\linewidth}@{}}
 \caption{The 22 chambers, grouped by country and regime, and the arms that use each.}\label{tab:chambers}\\
 \toprule\noalign{}
 group & chambers \\
@@ -3227,6 +3287,7 @@ Australia & NSW, QLD, SA, TAS, VIC, WA \\
 UK/Ireland & House of Commons, Scotland, Wales, Northern Ireland, Dáil Éireann \\
 US & House, Senate \\
 \end{longtable}
+\endgroup
 
 Per chamber, two strata:
 
@@ -3248,7 +3309,7 @@ rate across segment lengths, so the sample reproduces the corpus\textquotesingle
 mix; rates are word-weighted (a ratio estimator applied after the uniform
 segment draw), which corrects the length/drafting bias without band-reweighting
 constants (\cref{sec:prevalence}). Sampling is seeded per cell
-and reproducible (\texttt{build\_pangram\_expansion.py}, \texttt{build\_shortband.py}).
+and reproducible (\texttt{build\_\allowbreak{}pangram\_\allowbreak{}expansion.\allowbreak{}py}, \texttt{build\_shortband.py}).
 
 \subsection{Two contamination hazards, both found by looking}\label{sec:hazards}
 
@@ -3260,7 +3321,7 @@ do with drafting. Stripped at build time.
 \textbf{Transcription regime.} A chamber that moved from edited Hansard to
 verbatim or ASR-assisted transcription will shift on exactly the surface
 features a detector reads, with nobody having drafted anything by machine.
-\texttt{transcript\_regime\_check.py} measures two markers that track editorial
+\texttt{transcript\_\allowbreak{}regime\_\allowbreak{}check.\allowbreak{}py} measures two markers that track editorial
 convention rather than content --- words per sentence, and contraction density
 (traditional Hansard expands "don\textquotesingle t" to "do not"; verbatim transcription does
 not) --- random-sampled per chamber-year.
@@ -3294,7 +3355,7 @@ Findings, and they cut against the received story:
 
 \section{Method}\label{sec:method}
 
-\subsection{The calibration that carries the argument}\label{sec:calibration-method}
+\subsection{Calibration makes every estimate conservative}\label{sec:calibration-method}
 
 Prevalence is only meaningful against a measured false-positive rate. \textbf{A
 chamber\textquotesingle s false-positive rate depends on its own editorial register, so
@@ -3358,7 +3419,8 @@ machines.
 Named here because a reader needs to know what was tried and dropped, not to
 pad an appendix:
 
-\begin{longtable}[]{@{}lll@{}}
+\begingroup\small
+\begin{longtable}[]{@{}p{0.30\linewidth}p{0.33\linewidth}p{0.30\linewidth}@{}}
 \caption{Instruments built and retired, with the result that dropped each.}\label{tab:retired}\\
 \toprule\noalign{}
 instrument & outcome & why dropped \\
@@ -3376,6 +3438,7 @@ Frequency-weighted secondary & fired in 4/30 cells & indistinguishable from nois
 Content-word control & orthogonal to the claim & words rising elsewhere says nothing about here \\
 Mistral synthetic sensitivity corpus & deleted & too few words to carry variance; sensitivity not estimated \\
 \end{longtable}
+\endgroup
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -3597,7 +3660,7 @@ passes its own manipulation check.
     \emph{The rolling premium} (each year\textquotesingle s fresh intake against sitting members)
     was the version that could speak to change over time, and its trend is a
     null: pooled ≈ 0 across 21 chambers, chamber-heterogeneous, with no rise
-    during the 1994--96 onset (\texttt{panel\_arrival\_premium.py}). An earlier claim
+    during the 1994--96 onset (\texttt{panel\_\allowbreak{}arrival\_\allowbreak{}premium.\allowbreak{}py}). An earlier claim
     that the premium "grows" across intakes is not supported. It also carries
     a confound the replacement avoids --- the newest members have their own
     reasons to write differently, so a marginal newcomer gap is not cleanly a
@@ -3670,7 +3733,8 @@ passes its own manipulation check.
   evasion. Corrected like-for-like on the full GO all-31 run, using the one
   outcome that is a genuine state change for both seed types:
 
-  \begin{longtable}[]{@{}lllll@{}}
+  \begingroup\small
+\begin{longtable}[]{@{}lllll@{}}
 \caption{Superseded per-seed bypass transitions.}\label{tab:superseded-bypass}\\
   \toprule\noalign{}
   seed verdict & variants & → AI & → Mixed & → Human \\
@@ -3681,6 +3745,7 @@ passes its own manipulation check.
   AI & 68 & 54 & 10 & 4 = 5.9\% {[}2, 14{]} \\
   Mixed & 61 & 17 & 39 & 5 = 8.2\% {[}4, 18{]} \\
   \end{longtable}
+\endgroup
 
   Fisher exact \textbf{p = 0.735}. The band version --- evadability against the
   original\textquotesingle s own Opus score, over the NB v3 run --- is directionally similar
@@ -3699,7 +3764,7 @@ passes its own manipulation check.
 Web dashboard and Bulk API agree \textbf{20/20 including all six Mixed} on
 identical text when the model is named explicitly, and disagree on 9/20 when
 it is not (\cref{sec:detector}). All 4,258 verdicts in this study are Pangram 4 by either
-route, and \texttt{pangram\_p4\_verdicts.csv} records which.
+route, and \texttt{pangram\_\allowbreak{}p4\_\allowbreak{}verdicts.\allowbreak{}csv} records which.
 
 \subsection{Independent re-analysis}\label{sec:reanalysis}
 
@@ -3713,7 +3778,8 @@ Four searches were run --- two per chamber. The \cref{sec:quality} rates use onl
 in each chamber; the first in each was a biased sampling and is reported in
 Appendix~\ref{app:superseded}. Full stacks in \texttt{BYPASS\_METHODOLOGY.md}.
 
-\begin{longtable}[]{@{}lllll@{}}
+\begingroup\small
+\begin{longtable}[]{@{}lp{0.16\linewidth}lp{0.28\linewidth}p{0.24\linewidth}@{}}
 \caption{Bypass sample selection across runs.}\label{tab:bypass-sample}\\
 \toprule\noalign{}
 run & role & seeds & how the seeds were chosen & Opus\textquotesingle s role \\
@@ -3730,6 +3796,7 @@ NB v2 blind & superseded & 40 & Pangram-AI, stratified across Opus bands & outco
 GO Opus-selected & superseded & 35 & top 48 of 600 \textbf{by Opus score}, then Pangram-AI & \textbf{selection} \\
 \textbf{GO all-31 uniform} & \textbf{final} & 31 & every Pangram positive in the uniform GO draws & outcome \\
 \end{longtable}
+\endgroup
 
 The seed column is targets \textbf{searched}. An earlier version listed 38, 25 and
 27 --- the counts that produced at least one variant clearing the submission
@@ -3756,7 +3823,8 @@ caught.
 
 \subsection{Artifacts}\label{sec:artifacts}
 
-\begin{longtable}[]{@{}ll@{}}
+\begingroup\small
+\begin{longtable}[]{@{}p{0.36\linewidth}p{0.58\linewidth}@{}}
 \caption{Artifacts: the scripts and data behind each result.}\label{tab:artifacts}\\
 \toprule\noalign{}
 artifact & what it does \\
@@ -3768,24 +3836,24 @@ artifact & what it does \\
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-\texttt{pangram\_p4\_verdicts.csv} & 4,258 verdicts, all Pangram 4, with metadata \\
+\texttt{pangram\_\allowbreak{}p4\_\allowbreak{}verdicts.\allowbreak{}csv} & 4,258 verdicts, all Pangram 4, with metadata \\
 \texttt{prevalence\_report.py} & \cref{sec:calibration}--4.3, Wilson CIs, Rogan--Gladen \\
 \texttt{nb\_p3\_vs\_p4.py} & \cref{sec:calibration} model-tier comparison \\
 \texttt{api\_route\_check.py} & route/model equivalence test \\
-\texttt{transcript\_regime\_check.py} & \cref{sec:hazards}, writes \texttt{transcript\_regime.csv} \\
-\texttt{build\_pangram\_expansion.py} & sampling, cleaning, regime floors \\
+\texttt{transcript\_\allowbreak{}regime\_\allowbreak{}check.\allowbreak{}py} & \cref{sec:hazards}, writes \texttt{transcript\_regime.csv} \\
+\texttt{build\_\allowbreak{}pangram\_\allowbreak{}expansion.\allowbreak{}py} & sampling, cleaning, regime floors \\
 \texttt{in\_time\_placebo.py} & \cref{sec:freq-descriptive}, the test that demoted the lexicon arm \\
 \texttt{long\_trend.py} & \cref{sec:register-shift} series and its 1994 trough \\
 \texttt{cohort\_vs\_period.py}, \texttt{formation\_window.py} & \cref{sec:generational} (birth vs period) \\
 \texttt{covariate\_study.py} & \cref{sec:class} class and education, member level (\texttt{-\/-build-cache} first, \textasciitilde10 min) \\
 \texttt{class\_origin.py} & \cref{sec:class} EGP/NS-SEC arithmetic over the checked-in coding \\
-\texttt{class\_markedness.py}, \texttt{build\_class\_word\_year.py} & \cref{sec:class} chase-and-flight \\
-\texttt{build\_member\_vectors.py}, \texttt{vector\_analysis.py} & \cref{sec:class} word-mix geometry; VECTOR-ANALYSIS.md is the full log \\
+\texttt{class\_markedness.py}, \texttt{build\_\allowbreak{}class\_\allowbreak{}word\_\allowbreak{}year.\allowbreak{}py} & \cref{sec:class} chase-and-flight \\
+\texttt{build\_\allowbreak{}member\_\allowbreak{}vectors.\allowbreak{}py}, \texttt{vector\_analysis.py} & \cref{sec:class} word-mix geometry; VECTOR-ANALYSIS.md is the full log \\
 \texttt{claude\_gen/}, \texttt{claude\_gen\_old/}, \texttt{rlhf\_gen\_180/} & generated traces behind the family-signature table (audited) \\
-\texttt{provinces/occupation\_coding.json} + \texttt{OCCUPATION\_CODING.md} & the coding itself, with its 96.4\% agreement rate \\
+\texttt{provinces/\allowbreak{}occupation\_\allowbreak{}coding.\allowbreak{}json} + \texttt{OCCUPATION\_CODING.md} & the coding itself, with its 96.4\% agreement rate \\
 \texttt{wiki\_depth.py} & article length via Wikidata QID → MediaWiki, the notability control \\
-\texttt{build\_allsource\_merge.py} & rebuilds \texttt{member\_allsource.json} from the workflow journal \\
-\texttt{CLASS-REGISTER-LITERATURE.md} & \cref{sec:class} citations, \textbf{unverified}, with the suspect entries flagged \\
+\texttt{build\_\allowbreak{}allsource\_\allowbreak{}merge.\allowbreak{}py} & rebuilds \texttt{member\_allsource.json} from the workflow journal \\
+\texttt{CLASS-\allowbreak{}REGISTER-\allowbreak{}LITERATURE.\allowbreak{}md} & \cref{sec:class} citations, \textbf{unverified}, with the suspect entries flagged \\
 \texttt{band\_coverage\_check.py} & standing check that every length band is sampled at its chamber\textquotesingle s own rate \\
 \texttt{olmo\_ladder.py} & \cref{sec:posttraining} ladder stages \\
 \texttt{rlhf\_pref\_compile.py} & \cref{sec:posttraining} \textbf{+0.387} well-measured, 3 families at 1,600 prompts \\
@@ -3793,11 +3861,12 @@ artifact & what it does \\
 \texttt{align\_ratio.py} & \cref{sec:posttraining} Hansard-drift arm \\
 \texttt{word\_context\_delta.py} & \cref{sec:permeation} in-context permeation \\
 \texttt{bypass\_report.py} & \cref{sec:quality} bypass: final two runs (primary), superseded two shown separately, band check \\
-\texttt{go\_reflip\_fractions.json} + \texttt{nb\_}/\texttt{bp\_} & strict re-scores behind the 11.1\% \\
+\texttt{go\_\allowbreak{}reflip\_\allowbreak{}fractions.\allowbreak{}json} + \texttt{nb\_}/\texttt{bp\_} & strict re-scores behind the 11.1\% \\
 \texttt{quality\_expansion/} & \cref{sec:quality}, self-contained (\texttt{RUNME.md}) \\
 \texttt{BYPASS\_METHODOLOGY.md} & \cref{sec:quality} selection filters, per sample \\
 \texttt{PRIOR\_ART.md}, \texttt{ai\_policy\_scan.md} & \cref{sec:policy}, \cref{sec:related} \\
 \end{longtable}
+\endgroup
 
 \textbf{What this was run on.} Three resources, and the commercial detector is the
 smallest of them.
@@ -3809,7 +3878,8 @@ calibration, genre and bypass-outcome numbers.
 frontier model rather than a detector. Which model did what matters here and is
 not interchangeable:
 
-\begin{longtable}[]{@{}lll@{}}
+\begingroup\small
+\begin{longtable}[]{@{}p{0.50\linewidth}p{0.20\linewidth}p{0.22\linewidth}@{}}
 \caption{Models and reasoning effort by arm.}\label{tab:models}\\
 \toprule\noalign{}
 arm & model & effort \\
@@ -3828,6 +3898,7 @@ DQI grading, stage 6 (\cref{sec:quality}) & \textbf{Claude Opus} & medium \\
 Synthetic sensitivity pilot (40 speeches, set aside --- \cref{sec:calibration}, Appendix~\ref{app:superseded}) & Mistral-7B & default \\
 Analysis, verification, adversarial review & Claude Opus & varies \\
 \end{longtable}
+\endgroup
 
 The screen/grader split is load-bearing rather than incidental. \cref{sec:quality} reports
 that the screen\textquotesingle s \texttt{ai\_guess} and the grading judge\textquotesingle s independent \texttt{ai\_guess}
@@ -3862,7 +3933,8 @@ relied on.
 DQI dimension regressed on the screen \texttt{ai\_guess} + genre/era fixed effects,
 then with the grading judge\textquotesingle s own \texttt{ai\_guess} added (\texttt{analyze.py} \cref{sec:method}b):
 
-\begin{longtable}[]{@{}lll@{}}
+\begingroup\small
+\begin{longtable}[]{@{}lp{0.34\linewidth}p{0.34\linewidth}@{}}
 \caption{The judge-leakage control: quality with the grading judge's own AI guess added.}\label{tab:judge-leakage}\\
 \toprule\noalign{}
 dimension & stage 1 (internal): AI+FE → +judge\_ai & stage 2 (external): AI+FE → +judge\_ai \\
@@ -3882,6 +3954,7 @@ respect\_counterargs & +0.14 → −0.83 & −0.14 → −1.07 (t −2.8) \\
 constructive & −0.02 → +0.03 & −0.14 → −0.10 \\
 evidence & +0.35 → +0.12 & +0.39 (t 2.4) → +0.11 \\
 \end{longtable}
+\endgroup
 
 \textbf{What it shows.} On the stage-2 external label, the two largest conjuncts ---
 justification and common\_good --- survive the control (t 3.6, t 3.2); the
@@ -3922,7 +3995,7 @@ member-year level (−0.75 per 1,000, t −6.2), which carried the same
 word-weighting and clustering inflation as the class arm. Re-tested at member
 level (one legislator, one observation; register z-scored within chamber
 against the full member population; HC1), with article length fetched for the
-tier-1 chambers from their evidence-URL titles (\texttt{build\_t1\_wiki\_depth.py},
+tier-1 chambers from their evidence-URL titles (\texttt{build\_\allowbreak{}t1\_\allowbreak{}wiki\_\allowbreak{}depth.\allowbreak{}py},
 3,999 of 4,008 resolved) and joined to the provincial fetch:
 
 \textbf{There is no usable pooled slope, and the appendix no longer prints one.} An
@@ -3944,6 +4017,7 @@ A linear coefficient assumes a gradient. Quintiles of log article length against
 mean within-chamber register z show that the chambers split into two shapes, and
 that pooling them produces neither:
 
+\begingroup\small
 \begin{longtable}[]{@{}lllll@{}}
 \caption{Register by prominence quintile, by chamber group and pooled.}\label{tab:prominence-buckets}\\
 \toprule\noalign{}
@@ -3963,6 +4037,7 @@ Q4 & −0.269 & +0.006 & +0.104 & +0.023 \\
 Q5 (most written about) & \textbf{−0.401} & \textbf{−0.171} & −0.057 & −0.059 \\
 n & 1,286 & 2,257 & 3,353 & 6,896 \\
 \end{longtable}
+\endgroup
 
 The \textbf{seventeen sub-national chambers decline}: the more written about a member
 is, the less of the register they use. The eight Canadian provinces do so
@@ -3980,9 +4055,9 @@ bending it into a hump, so it is not the whole story.
 \textbf{Pooled, the two shapes cancel.} The all-22 column has no ordering worth
 reading, and standard errors on each bucket are ±0.026--0.027, so the flatness is
 measured rather than merely noisy. This is why \cref{sec:class} reports prominence as
-buckets and why no pooled coefficient is quoted anywhere. †\footnote{\texttt{python\ plot\_class\_by\_era.py}-adjacent computation; per-bucket means,
+buckets and why no pooled coefficient is quoted anywhere. †\footnote{\texttt{python\ plot\_\allowbreak{}class\_\allowbreak{}by\_\allowbreak{}era.\allowbreak{}py}-adjacent computation; per-bucket means,
   standard errors and counts in \texttt{prominence\_buckets.csv}. Article lengths from
-  the MediaWiki API via \texttt{build\_t1\_wiki\_depth.py}, run over the tier-1 set, the
+  the MediaWiki API via \texttt{build\_\allowbreak{}t1\_\allowbreak{}wiki\_\allowbreak{}depth.\allowbreak{}py}, run over the tier-1 set, the
   provincial fetch and the nine new chambers (2,310 of 2,315 resolved).}
 
 \subsection{Is the cohort gradient ministerial office?}\label{sec:cohort-ministerial}
@@ -3999,6 +4074,7 @@ flag is per member-\emph{year} rather than per member --- a backbencher who beco
 minister contributes to both groups (\texttt{office\_split.py}, 8,289 member-year cells
 with a birth year: 1,893 office, 6,396 non-office).
 
+\begingroup\small
 \begin{longtable}[]{@{}lll@{}}
 \caption{The cohort gradient among office- and non-office-holders.}\label{tab:cohort-office}\\
 \toprule\noalign{}
@@ -4015,6 +4091,7 @@ all & +1.19 & +18.4 \\
 \textbf{non-office only} & \textbf{+1.31} & \textbf{+17.9} \\
 office only & +0.62 & +4.9 \\
 \end{longtable}
+\endgroup
 
 \textbf{The gradient is not office, and the premise runs backwards.} Restricting to
 non-office member-years \emph{strengthens} the birth effect (+1.19 → +1.31) rather

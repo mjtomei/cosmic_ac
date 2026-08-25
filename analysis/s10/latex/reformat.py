@@ -270,6 +270,26 @@ TABLE_CAPS = [
 ]
 
 
+
+# Column-spec overrides for prose-heavy tables (pandoc emits natural-width l
+# columns; longtable's fill glue hides the overflow, so wide tables silently
+# run off the measure). Keyed by table label.
+COLSPECS = {
+ "tab:chambers":       r"@{}lp{0.74\linewidth}@{}",
+ "tab:retired":        r"@{}p{0.30\linewidth}p{0.33\linewidth}p{0.30\linewidth}@{}",
+ "tab:verdicts":       r"@{}lp{0.28\linewidth}p{0.44\linewidth}@{}",
+ "tab:bypass-rates":   r"@{}lp{0.22\linewidth}p{0.16\linewidth}p{0.36\linewidth}@{}",
+ "tab:bypass-summary": r"@{}p{0.22\linewidth}p{0.20\linewidth}p{0.50\linewidth}@{}",
+ "tab:priorart":       r"@{}p{0.20\linewidth}p{0.38\linewidth}p{0.36\linewidth}@{}",
+ "tab:bypass-sample":  r"@{}lp{0.16\linewidth}lp{0.28\linewidth}p{0.24\linewidth}@{}",
+ "tab:artifacts":      r"@{}p{0.36\linewidth}p{0.58\linewidth}@{}",
+ "tab:judge-leakage":  r"@{}lp{0.34\linewidth}p{0.34\linewidth}@{}",
+ "tab:coverage-partition": r"@{}p{0.15\linewidth}p{0.16\linewidth}p{0.20\linewidth}p{0.20\linewidth}p{0.16\linewidth}@{}",
+ "tab:dqi":            r"@{}p{0.20\linewidth}p{0.22\linewidth}p{0.22\linewidth}p{0.24\linewidth}@{}",
+ "tab:continuations":  r"@{}p{0.28\linewidth}p{0.32\linewidth}p{0.30\linewidth}@{}",
+ "tab:models":        r"@{}p{0.50\linewidth}p{0.20\linewidth}p{0.22\linewidth}@{}",
+}
+
 def inject_table_captions(t):
     parts = re.split(r'(\\begin\{longtable\}[^\n]*\n)', t)
     out = [parts[0]]
@@ -279,6 +299,9 @@ def inject_table_captions(t):
         if i >= len(TABLE_CAPS):
             sys.stderr.write("WARN: more longtables than captions (%d)\n" % i); out.append(delim+body); continue
         kw, lab, cap = TABLE_CAPS[i]
+        if lab in COLSPECS:
+            delim = re.sub(r'\\begin\{longtable\}\[\]\{[^\n]*\}',
+                           lambda m: "\\begin{longtable}[]{%s}" % COLSPECS[lab], delim)
         m = re.match(r'(\\toprule\\noalign\{\}\n.*?\\midrule\\noalign\{\}\n)\\endhead\n', body, re.DOTALL)
         capline = "\\caption{%s}\\label{%s}\\\\\n" % (cap, lab)
         if m:
@@ -296,7 +319,11 @@ def inject_table_captions(t):
         sys.stderr.write("WARN: %d longtables vs %d captions\n" % (n, len(TABLE_CAPS)))
     else:
         sys.stderr.write("table captions injected: %d\n" % n)
-    return "".join(out)
+    body = "".join(out)
+    # tables are data-dense; set them all in \small so they fit the measure
+    body = body.replace("\\begin{longtable}", "\\begingroup\\small\n\\begin{longtable}")
+    body = body.replace("\\end{longtable}", "\\end{longtable}\n\\endgroup")
+    return body
 
 
 # Inline citations -> \cite (numeric, scicite). Applied to the pandoc body; each
@@ -346,6 +373,19 @@ def cite_wire(t):
     sys.stderr.write("cite_wire: %d/%d citations wired\n" % (n_ok, len(CITE_SUBS)))
     return t
 
+
+def breakable_tt(t):
+    """Long \\texttt{} arguments (paths, script names) are single unbreakable
+    boxes and silently overflow the measure; allow breaks after / . _ - ."""
+    def fix(m):
+        a = m.group(1)
+        if len(a) < 25:
+            return m.group(0)
+        a = a.replace("/", "/\\allowbreak{}").replace("\\_", "\\_\\allowbreak{}")
+        a = a.replace(".", ".\\allowbreak{}").replace("-", "-\\allowbreak{}")
+        return "\\texttt{%s}" % a
+    return re.sub(r'\\texttt\{([^{}]*)\}', fix, t)
+
 def main():
     t = open(SRC, encoding="utf-8").read()
     t = transform_headings(t)
@@ -355,6 +395,7 @@ def main():
     t = replace_appendix_refs(t)
     t = cite_wire(t)
     t = inject_table_captions(t)
+    t = breakable_tt(t)
     t = insert_appendix(t)
     t = reorder(t)
     open(DST, "w", encoding="utf-8").write(t)

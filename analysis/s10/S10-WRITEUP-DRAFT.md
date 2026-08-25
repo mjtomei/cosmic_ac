@@ -198,7 +198,7 @@ Findings, and they cut against the received story:
 
 ## 3. Method
 
-### 3.1 The calibration that carries the argument
+### 3.1 Calibration makes every estimate conservative
 
 Prevalence is only meaningful against a measured false-positive rate. **A
 chamber's false-positive rate depends on its own editorial register, so
@@ -667,26 +667,33 @@ The machines then accelerated it, and left a fingerprint of their own suppressio
 
 [^rits]: `python fig_trend.py` for New Brunswick — the interrupted time series is weighted least squares on log quarterly rates with a break pre-specified at 2023.0, and the empirical p for the slope change comes from 1,000 frequency-matched placebo word sets run through the identical fit. The cross-chamber comparison is `python build_trend_cache.py && python plot_trend_from_cache.py`; indexed yearly rates for six chambers are in `trend_multichamber.csv`.
 
-### 4.5a The climb is everywhere except the United States
+### 4.5a Other chambers converge on the level the United States already held
 
 Running the same series on every chamber turns the thirty-year drift into a
 comparison. The instrument and the 200 matched placebo sets are built once, on
 UK Commons 2010–12, and applied unchanged everywhere, so the chambers are
 measured with the same ruler.[^r45a]
 
-| chamber | gap per 100k, first year | last year | change | |
-|---|---|---|---|---|
-| UK Commons | 380 (1994) | **1,444** (2026) | **×3.80** | rises |
-| Ireland | 1,603 (2018) | **1,975** (2026) | ×1.23 | rises |
-| CA federal | 1,865 (2015) | 1,735 (2026) | ×0.93 | flat |
-| **US House** | **1,515** (1994) | **1,709** (2026) | **×1.13** | **flat** |
-| **US Senate** | **1,314** (1994) | **1,562** (2026) | **×1.19** | **flat** |
+| chamber | window | gap per 100k, first year | last year | change | per year |
+|---|---|---|---|---|---|
+| UK Commons | 1994–2026 | 380 | **1,444** | **×3.80** | **+4.3%/yr** |
+| **US House** | 1994–2026 | **1,515** | 1,709 | ×1.13 | +0.4%/yr |
+| **US Senate** | 1994–2026 | **1,314** | 1,562 | ×1.19 | +0.5%/yr |
+| Ireland | 2018–2026 | 1,603 | **1,975** | ×1.23 | +2.6%/yr |
+| CA federal | 2015–2026 | 1,865 | 1,735 | ×0.93 | −0.7%/yr |
 
-The US chambers are flat across thirty-two years, and they start *above* where
-the UK still sits two decades later: US House 1,515 in 1994 against the UK's
-1,444 in 2026. So the picture is not a common shift. It is everyone else
-converging upward on a level the United States already held before the consumer
-web, while the United States does not move.
+The windows are not comparable, and the comparison should be made where they
+are: only the UK and the two US chambers share the full 1994–2026 span — the
+longest this corpus supports — and on that common window the contrast is
+×3.80 against ×1.13–1.19, about +4.3%/yr against +0.4–0.5%/yr. Ireland and
+federal Canada enter late and already high (1,603 and 1,865 per 100k), so
+their windows begin near the ceiling; Ireland still climbs at +2.6%/yr,
+federal Canada is flat. The US chambers are near-flat across thirty-two
+years, and they start *above* where the UK still sits two decades later: US
+House 1,515 in 1994 against the UK's 1,444 in 2026. So the picture is not a
+common shift. It is chambers converging upward on a level the United States
+already held before the consumer web, while the United States barely
+moves.
 
 The US series reaches back to 1994 only as of 2026-08-13. The Congressional
 Record is on GovInfo from 1994, which the study had not used: the original
