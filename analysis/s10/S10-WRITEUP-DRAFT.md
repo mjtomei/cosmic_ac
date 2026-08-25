@@ -2,7 +2,7 @@
 
 ## Abstract
 
-We measure machine-drafted speech across 22 legislative chambers in four countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* built from the vocabulary language models overuse. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with an elevenfold spread across chambers and a concentration in scripted genres. This machine-drafted speech is not degraded: once genre is held fixed, AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, **predates the models by decades**: its rise begins in 1994–96, and it is organised generationally and by prior occupation, with position in an organisational hierarchy — the insulated middle using it most — predicting it beyond social class. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
+We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* built from the vocabulary language models overuse. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with an elevenfold spread across chambers and a concentration in scripted genres. This machine-drafted speech is not degraded: once genre is held fixed, AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, **predates the models by decades**: its rise begins in 1994–96, and it is organised generationally and by prior occupation, with position in an organisational hierarchy — the insulated middle using it most — predicting it beyond social class. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
 
 ---
 
@@ -29,29 +29,84 @@ right one explicitly. Everything unmarked was computed or re-verified on
 
 ---
 
-## 1. The question, and why it needs two instruments
+## 1. Introduction
 
-How much legislative speech is machine-drafted, and what does its arrival do
-to deliberation?
+Institutions speak in a register. Legislative speech has carried one for as
+long as there have been official reporters to transcribe it — measured,
+procedural, deliberately impersonal — and any regular reader of Hansard knows
+it on sight. When the conditions of producing that speech change, the register
+can move. Language models that write fluent institutional prose are exactly
+such a change, and they pose a question with two halves: how much legislative
+speech is now drafted by a machine — and where did the register the machines
+write in come from?
 
-The question splits in two, and conflating them is the main error available
-here:
+With the release of ChatGPT in November 2022, fluent drafting became free to
+every legislative office at once. What that did to the record matters in a way
+it does not for most text: a floor speech is the official act of
+representation, consulted by constituents, journalists and historians, and it
+enters the record under the member's own name. Yet a 22-chamber policy scan
+finds no chamber requiring machine drafting to be disclosed and none
+forbidding it — the record is silent exactly where the change is happening.
 
-- **Prevalence** — how much text in the record was drafted by a machine. This
-  needs a calibrated detector.
-- **Permeation** — whether human speech is drifting toward machine register
-  independent of drafting. This needs instruments that do *not* depend on a
-  detector, because the human baseline is itself the thing moving.
+Attempts to measure machine text in institutional corpora fall into three
+families. Instance detectors score one text at a time; applied naively to
+parliamentary speech they have produced a null — off-the-shelf detectors run
+over 124,000 Australian federal speeches returning no post-ChatGPT rise
+(Rice) — and a phrase-spike claim in the UK Commons with no prevalence
+estimate behind it (Pimlico Journal). Population-level methods estimate the
+machine-modified fraction of a whole corpus distributionally, and put
+post-2022 figures between 6.5% and 17.5% on peer reviews and scientific
+papers (Liang et al.). Marker-vocabulary instruments track the words models
+overuse — excess vocabulary in biomedical abstracts (Kobak et al.) and in
+scholarly writing at large (Gray). Closest to this study, Suvanto et al.
+detect undisclosed LLM text in UK and Swedish parliamentary motions with a
+glass-box classifier and find a steady rise from 2022 — two chambers, written
+motions rather than transcribed speech.
 
-S10 runs both, and reports them as separate claims. The prevalence arm is the
-headline; the permeation arm is the more surprising result, and the weaker
-one.
+Each family answers part of the question. But the parliamentary studies cover
+one or two chambers; the detector and classifier approaches need ground
+truth — labelled or synthetic training text — and inherit its blind spots;
+and, most importantly, all of this work treats the machine register as a new
+arrival: something to detect, dating from 2022. None asks whether the
+register the detectors key on existed before the machines, or which speakers
+already used it.
 
----
+The question also splits along a second line, and conflating the halves is
+the main error available here. *Prevalence* — how much of the record a
+machine drafted — needs a calibrated detector. *Permeation* — whether human
+speech is drifting toward the machine register independent of drafting —
+needs instruments that do not depend on a detector, because the human
+baseline is itself the thing moving. We therefore measure both, separately,
+across 22 chambers in five countries: with Pangram, a commercial detector
+calibrated against each chamber's own pre-2022 record (specificity 1,260 of
+1,260), and with a lexical register instrument built from the vocabulary
+language models overuse, run against each chamber's own placebo-matched
+counterfactual. The two instruments have different blind spots — the detector
+is a black box with a measured false-positive floor; the register is
+transparent but coarse — and their agreement, not either alone, carries the
+study's claims. The corpus reaches back three decades, which is what lets the
+second half of the question be asked at all.
+
+The answers, in brief. At least 9.0% of words in current legislative speech
+are machine-drafted — a floor, because directed effort evades the detector —
+with an elevenfold spread across chambers and a concentration in scripted
+genres. The drafted speech is not degraded: against a deliberation rubric
+with genre held fixed, flagged speech is better-formed and no less engaged.
+But the register itself is not new. Its rise begins in 1994–96, three decades
+before the models. It is socially organised: birth cohort predicts it, and a
+pre-registered occupational model finds it peaking at the insulated middle of
+organisational hierarchies — the rungs that answer upward without the final
+say — beyond what social class explains. And on the machine side it is a
+post-training artifact: it is installed by the stages tuned toward human
+demonstrations and preferences, and not by the stage tuned toward verifiable
+correctness. Machine intelligence did not invent this register of
+accountability without authorship. It inherited it, automated it, and made it
+measurable — and detection is better used to measure that norm than to
+police it.
 
 ## 2. Data
 
-Twenty-two chambers across four countries, extracted from official Hansard and
+Twenty-two chambers across five countries, extracted from official Hansard and
 the Congressional Record (the prevalence arm covers 20 of them — New Brunswick
 was the pilot and has no uniform prevalence sample, and Tasmania is
 regime-flagged and excluded; the covariate arms use all 22):

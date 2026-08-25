@@ -23,7 +23,7 @@ SRC, DST = "_body_pandoc.tex", "body.tex"
 
 # slug (pandoc's) -> semantic label
 LABELS = {
- "1-the-question-and-why-it-needs-two-instruments":"sec:intro",
+ "1-introduction":"sec:intro",
  "2-data":"sec:data",
  "21-two-contamination-hazards-both-found-by-looking":"sec:hazards",
  "3-method":"sec:method",
@@ -321,6 +321,14 @@ def inject_table_captions(t):
 # is a first-occurrence substitution matched on the author/venue prose the draft
 # already carries, so it survives markdown prose edits that keep those names.
 CITE_SUBS = [
+ # --- introduction (first mentions; later sections re-cite where discussed) ---
+ (r'no post-ChatGPT rise\s+\(Rice\)', r'no post-ChatGPT rise (Rice\\cite{rice2026})'),
+ (r'\(Pimlico Journal\)', r'(Pimlico Journal\\cite{pimlico2025})'),
+ (r'\(Liang et al\.\)', r'(Liang et al.\\cite{liang2024monitoring,liang2025quantifying})'),
+ (r'biomedical abstracts \(Kobak et al\.\)', r'biomedical abstracts (Kobak et al.\\cite{kobak2025})'),
+ (r'scholarly writing at large \(Gray\)', r'scholarly writing at large (Gray\\cite{gray2025})'),
+ (r'Suvanto et al\.\s+detect undisclosed', r'Suvanto et al.\\cite{suvanto2026} detect undisclosed'),
+ (r'with Pangram, a commercial detector\s+calibrated', r'with Pangram\\cite{pangram2024}, a commercial detector calibrated'),
  (r'\(arXiv:2406\.07016; \\emph\{Sci Adv\}\s+11\(27\):eadt3813, 2025\)', r'\\cite{kobak2025}'),
  (r'\(Steenbergen, Bächtiger, Spörndli\s+\\& Steiner 2003\)', r'\\cite{steenbergen2003}'),
  (r'\(Benjamini \\& Hochberg, \\emph\{JRSS-B\} 57, 1995, 289--300\)', r'\\cite{benjamini1995}'),
