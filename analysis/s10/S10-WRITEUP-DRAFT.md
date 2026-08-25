@@ -1739,10 +1739,27 @@ reproducing the thing §4.2 detects.
 
 ### 4.8 Permeation: detector-independent and small but positive
 
-**The register is permeating human speech independently of drafting:
-+0.0099, positive in 9 of 10 cells, permutation p = 0.017.** †[^r48] The
+**The register is permeating human speech independently of drafting — and
+the drift predates the models.** Run on the pre-LLM window alone — 2018–19
+against 2021 to November 2022, where no machine text is possible in either
+cell — the same instrument moves **+0.0150** (positive in 7 of 10
+chamber × family cells, permutation p = 0.017), reusing the identical
+scored occurrences.[^r48pre] The full pre-vs-post contrast is **+0.0099**
+(9 of 10 cells, p = 0.017)†[^r48]; its post-era cells contain
+machine-drafted text (~9% of words) and cannot separate continued human
+drift from that contamination — which the pre-LLM window makes moot for the
+claim: the permeation is demonstrated where drafting could not exist. The
 instrument is in-context likelihood of the Kobak style words within Hansard
 traces, self-normalised — no placebo word list, no external control.
+
+[^r48pre]: `python word_context_prellm.py`, reusing the committed occurrence
+    log-probs (a parity guard reproduces the published +0.0099 from the same
+    code path first). Early = 2018–19; late = 2021-01 to 2022-11-29
+    (December 2022 excluded as post-ChatGPT); 2020 dropped as a buffer.
+    Per family: qwen 4 of 5 cells positive, mistral 3 of 5; the one chamber
+    negative in both families is the US House, consistent with §4.5a's
+    at-the-ceiling reading. Per year the pre-LLM rate (~+0.0045/yr) runs
+    about twice the pre-to-post rate (~+0.0022/yr).
 
 The ten cells are five chambers scored by two model families, not ten
 replications: both families score the *identical* segments at the *identical*
@@ -1755,7 +1772,12 @@ inference. The two families agree on sign, on magnitude (+0.0118 Qwen3 against
 the result does not depend on which model judges likelihood.
 
 Small, but it is the only permeation evidence that does not route through a
-detector, and it survives the failure mode that demoted the lexicon arm.
+detector — and the in-time test whose failure demoted the lexicon arm was
+run here and reads differently: on pre-LLM era pairs this instrument
+*fires* (+0.0150 above), which for a claim about pre-existing human drift
+is the confirmation, not the artifact. The lexicon arm was demoted for
+firing while attributing the effect to an LLM cause; this arm claims the
+drift itself, in windows where no other cause was available.
 
 The interval is quoted as approximately **[0.000, +0.020]** deliberately. The
 point estimate and the sign count are exact, and every inferential route agrees

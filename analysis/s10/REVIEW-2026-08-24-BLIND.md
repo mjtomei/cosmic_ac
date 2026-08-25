@@ -4,34 +4,6 @@
 
 ## MAJOR — CONFIRMED
 
-### AL1. [argument-logic] §2.13 Permeation
-
-> The register is permeating human speech independently of drafting: +0.0099, positive in 9 of 10 cells, permutation p = 0.017.
-
-**Problem.** The 'independently of drafting' clause is unsupported: the era samples behind this arm are drawn uniformly within (chamber, era) cells with no filtering of machine-drafted text, so the post-2023 cells contain the very machine-drafted text §2.2 measures at ~9% of words (higher in some of these chambers). A small pooled shift of +0.0099 in assistant-likeness at instrument-word positions is exactly what a ~9% admixture of strongly assistant-like drafted text would produce with zero change in human speech. Detector-independence of the instrument is precisely what prevents it from excluding drafting as the source.
-
-**Reviewer's check.** Read align_ratio.py (item selection: 'uniform at random within each (chamber, era) cell', era = pre if date ≤ 2022-12-31 else post; no Pangram/human filter) and word_context_delta.py (scores those same items); confirmed METHODOLOGY §5.2d-bis and the draft make no exclusion or sensitivity analysis for drafted-text contamination.
-
-**Refuter's verification.** Quote verbatim in §2.13. Verified in code: align_ratio/items.json holds 1,500 segments per (chamber, era) cell drawn 'uniform at random within each (chamber, era) cell' (align_ratio.py), with fields {chamber, era, seg_id, turn_id, date, n_words, text} — no Pangram field, no flag exclusion — and word_context_delta.py consumes those items unfiltered. METHODOLOGY §5.2d-bis says only 'text selected identically in both eras'; neither it nor §2.13 claims drafted text was removed or bounded. The post-era cells therefore contain machine-drafted text at the chambers' measured prevalences (ca ~18.5%, ush 12.1%), and contamination of that size times a plausible per-position likelihood advantage for machine text can carry a material share of +0.0099, so 'independently of drafting' does not follow from detector-independence. The strongest defeater I found — the UK cell (2.5% machine) is positive on both scorers (+0.011, +0.017), arguing against 'wholly' carried by contamination — is an argument the paper never makes and does not bound the pooled headline; §5.2d's 'speech that could not have been drafted' claim belongs to the other (lexicon/unscripted) permeation arms, not this one. [verdict carried from the first refutation pass; this dimension's second-pass refuter hit the session limit]
-
-**Suggested fix.** Either restrict the post-era sample to segments Pangram scores Human (reporting the detector-dependence honestly as a robustness check), or bound the contamination arithmetically (show +0.0099 exceeds what the measured prevalence × the flagged-text delta could produce), or weaken the claim to 'the record is drifting' rather than 'human speech independently of drafting'.
-
-**Matthew's ruling (recorded; action pending).** Matthew: agreed — generate the result excluding 2023-and-after (a pre-LLM era contrast, where no machine text is possible, carries the 'independently of drafting' clause directly). QUEUED: requires a fresh GPU scoring pass over new era samples through the identical word_context pipeline; will run with the in-time placebo below as one job
-
-### AL2. [argument-logic] §2.13 Permeation
-
-> Small, but it is the only permeation evidence that does not route through a detector, and it survives the failure mode that demoted the lexicon arm.
-
-**Problem.** The failure mode that demoted the lexicon arm (§5.3) was the absence of a trend control — the estimator fires on pre-LLM periods. No equivalent test (an in-time placebo on pre-LLM era pairs) is reported for the word-context instrument; its self-normalisation controls segment-global drift, not register-specific drift. And the paper's own §2.5 finding — human register moving toward what instruct-tuning later selected for, for thirty years — predicts a positive pre-vs-post contrast in exactly this quantity with no post-2022 cause. The survival claim is asserted, not demonstrated.
-
-**Reviewer's check.** Searched METHODOLOGY.md §5.2d-bis and word_context_delta.py for any pre-LLM window-pair placebo of this instrument — none exists; confirmed the permutation test shuffles era labels (testing for any era difference, not for excess over the standing trend).
-
-**Refuter's verification.** Read word_context_delta.py in full: the pooled inference is a raw pre-vs-post era contrast (pre 2018–22, post 2024–26); the permutation shuffles era labels within chamber×family cells — testing for ANY era difference, not excess over a standing trend; self-normalisation cancels only segment-global drift. No in-time placebo on pre-LLM era pairs exists for this instrument (in_time_placebo.py serves the lexicon arm; the matched placebo words are recorded and deliberately unused). §5.3's demotion standard was precisely that the lexicon estimator fires on pre-LLM pairs, and the paper's own thirty-year-drift reading predicts a positive pre/post contrast here with no post-2022 cause. 'Survives the failure mode' is asserted, never demonstrated.
-
-**Suggested fix.** Run the in-time placebo the demotion standard requires (e.g., 2015-vs-2019 era pairs through the identical pipeline); until then state that the instrument shares the lexicon arm's exposure to the pre-existing drift rather than claiming it survives that failure mode.
-
-**Matthew's ruling (recorded; action pending).** Matthew: agreed with the suggested evaluation — run the in-time placebo on pre-LLM era pairs through the identical pipeline. Note the interpretive fork stated in advance: under the paper's drift reading, a pre-LLM firing is not a demotion but confirmation that the instrument tracks the pre-existing drift; the §4.8 'survives the failure mode' sentence will be rewritten to whichever result obtains
-
 ### CP1. [calibration+prevalence] 4.2 (flagged-segment composition)
 
 > of the 364 flagged prevalence segments, **217 are full AI verdicts and 147 (40%) are Mixed**
@@ -609,7 +581,7 @@
 
 ## MAJOR — PARTIAL
 
-### AL3. [argument-logic] §3.1 (Any fixed check loses to an optimising attacker)
+### AL1. [argument-logic] §3.1 (Any fixed check loses to an optimising attacker)
 
 > Point a general-purpose model at its own output, tell it to try again, and it will defeat any check you can put in front of it. This is not a claim about Pangram. It follows from the check being a fixed function and the attacker being an optimiser
 
@@ -714,7 +686,7 @@
 
 ## MINOR — CONFIRMED
 
-### AL4. [argument-logic] §2.9.5 (Flight)
+### AL2. [argument-logic] §2.9.5 (Flight)
 
 > That is chase-and-flight: a marker loses value as it is copied, so the group that holds it abandons the most conspicuous forms first.
 
@@ -1686,7 +1658,7 @@
 
 **Method.** Thirteen blind reviewers, one dimension each: seven data dimensions reproducing numbers from the committed artifacts and reading estimator code (calibration+prevalence, genre+screen, series/trend/cross-chamber, cohort+class, occupational-prereg, post-training/coverage/permeation, quality+bypass), five narrative/argument dimensions on the compiled publication-order paper (claims-vs-evidence, internal-consistency, argument-logic, comparability, storyline), and one cross-cutting consistency reviewer. Every finding was handed to a refute-by-default adversary; only CONFIRMED and PARTIAL findings appear, PARTIAL with the corrected version stated. "Also flagged by" marks the same defect under another lens — adjudicate once, apply everywhere.
 
-**Counts.** 130 open (0 critical, 56 major, 74 minor; 107 CONFIRMED, 23 PARTIAL); 1 refuted; 0 unresolved.
+**Counts.** 128 open (0 critical, 54 major, 74 minor; 105 CONFIRMED, 23 PARTIAL); 1 refuted; 0 unresolved.
 
 **For the next review cycle (Matthew, 2026-08-25).** Matthew liked the argument-logic lens's points more than much of the previous review (having read that block first — not a ranking over unread lenses); next cycle, expand it to one AL worker per section (a 12-section fleet with refuters was drafted and briefly started this cycle, then stopped on Matthew's instruction to hold it for the next cycle — the script is committed at workflows/scripts/al-per-section-2026-08-25-*.js and its partial run is resumable).
 
@@ -1702,10 +1674,12 @@
 - **[major] [quality+bypass]** 4.9 Bypass study (flip vs success paragraph): "Effort raised both bars, and by *more* on the flip bar (2.8×) than on the success bar (5.5..." — *fixed: same direction correction*
 - **[major] [internal-consistency]** §2.14 Bypass study (flip vs success bars): "Effort raised both bars, and by more on the flip bar (2.8×) than on the success bar (5.5×)..." — *fixed: duplicate of the flip/success direction correction (mechanical batch)*
 - **[critical] [argument-logic]** §2.8 (Birth cohort predicts the register) and Abstract: "if it were generational, later-born members would use more of it even in the same year and..." — *resolved by new analysis per Matthew's design (apc_chamber_decomposition.py, apc_gradients.png): group vs individual gradients per legislature in one unit. The gradient splits into a standing juniority component (full-size among pre-drift cohorts, US Senate +105 [47,155], 1994-2004, births 1917-64) and a cohort component (UK +30->+98, House +23->+85 as drift-formed cohorts enter; House chamber mean flat -> ambient-culture formation). §4.6 rewritten around the two components with the identity stated and the era-stable-profile assumption named; abstract/intro/Discussion/Limits harmonized; 'organised generationally' retired.*
+- **[major] [argument-logic]** §2.13 Permeation: "The register is permeating human speech independently of drafting: +0.0099, positive in 9 ..." — *resolved by reuse, no GPU needed (Matthew's question exposed it): every scored item carries a date, so word_context_prellm.py re-reads the committed occurrence log-probs and contrasts 2018-19 vs 2021..2022-11 — windows where no machine text is possible. Result +0.0150, 7/10 cells positive, permutation p=0.017 (parity guard reproduces the published +0.0099 first). 'Independently of drafting' now carried by the pre-LLM window; §4.8 states the post-era contamination and why it is moot for the claim*
 - **[major] [argument-logic]** §2.2 / Table 2 / §5.1: "A chamber's false-positive rate depends on its own editorial register, so specificity is n..." — *adjudicated (Matthew): keep current results, REMOVE the independence framing — §3.1 now states specificity is measured in-domain at two grains (per-chamber heterogeneity check + pooled statistical weight; 'not an independence claim: no 60/60 cell could stand alone, and none is asked to') and pre-empts the independence criticism by comparing to field practice (Suvanto: one pre-LLM hold-out per parliament in two parliaments; Liang: per-venue semi-synthetic validation; Rice: a single fifty-speech calibration). The §4.2 low-row slack note stands. No control expansion.*
 - **[major] [argument-logic]** §2.14 Bypass study (headline): "The headline: asking a general-purpose model to rework a speech in a loop beats the commer..." — *adjudicated (Matthew, 3rd recurrence): the fix is the threat model made explicit AT the headline — rewritten to state the target detector is never in the loop (Opus self-score generates/screens; Pangram sees only submissions), with the attack figure referenced; the tenfold comparison stands as fair-to-conservative given the attacker is blind to the target while humanizers are built against detectors*
 - **[major] [argument-logic]** §2.6 (Other chambers converge on the level the United States already held): "So the picture is not a common shift. It is chambers converging upward on a level the Unit..." — *adjudicated (Matthew): the US-derived-yardstick caveat DELETED rather than patched — the instrument is from a global scholarly literature, not US speech, and even a US-derived ruler would still show others converging on the US; the headline stands without the self-undercutting paragraph*
 - **[major] [argument-logic]** §2.6 / Table 6 (constant-window trend): "on that single ruler the pattern is convergence: the lower a chamber started, the faster i..." — *fixed per ruling: RTM-decoupled recompute added (2006-08 baseline means vs disjoint 2010-2026 growth: Spearman -0.51, n=18, vs -0.56 naive) and the framing now leans on the shared direction — sixteen of nineteen chambers rise; constant_window_trend.py prints both*
+- **[major] [argument-logic]** §2.13 Permeation: "Small, but it is the only permeation evidence that does not route through a detector, and ..." — *same run: the in-time placebo WAS run and fires pre-LLM — which for a claim about pre-existing human drift is confirmation, not artifact; §4.8's failure-mode sentence rewritten to state the distinction from the lexicon arm's demotion (which fired while attributing an LLM cause). Per-family and US-House-negative detail in footnote r48pre*
 - **[major] [argument-logic]** Abstract (and §1): "This machine-drafted speech is not degraded: once genre is held fixed, AI-flagged contribu..." — *adjudicated (Matthew, overriding the reviewer's proposed conditional): the GENRE qualifier is removed and the claim stated plain — the extended cross-chamber arm and the Claude continuation results support it unconditionally; the applicability split stays fully stated in §4.9 and now also in §8.3's couching; intro grounds the plain claim in both arms*
 - **[major] [argument-logic]** §2.14 (closing paragraph, 'What this means for the prevalence number'): "Evasion is real, clears the detector on roughly one flagged speech in five under directed ..." — *fixed per ruling: the closing now disentangles the two claims — 9.0% is a floor on USE (undisguised drafting measured, disguised above it), and the quality clause is stated one-directionally (no measured arm shows a COST; paired nulls bound only headline-scale effects, review item Q3; every powered result runs favourable) — which is what the norms argument needs, without claiming the edit adds nothing*
 - **[major] [argument-logic]** §2.10 (Pre-registered occupational test) with Appendices A18–20, B10: "The registered four-level U is the result. The design intent, registered in the document's..." — *adjudicated (Matthew): same timeline footnote fix*
