@@ -1713,8 +1713,9 @@ defect below would have been caught before it reached the write-up.
 
 **The design.** OLMo-2 publishes its post-training checkpoints separately, so
 the same prompts can be scored at base, SFT, DPO and instruct, and each
-transition measured on its own. The pre-registered logic is that **RLVR is a
-placebo stage**: tuning on verifiable maths and code correctness has no reason
+transition measured on its own. The design logic — contemporaneous with the run (work-log 2026-08-04) but
+not registered in a dated pre-run document — is that **RLVR is a placebo
+stage**: tuning on verifiable maths and code correctness has no reason
 to install a speech register, so a healthy estimator should return roughly zero
 there and the two human-facing stages should carry whatever is carried.
 

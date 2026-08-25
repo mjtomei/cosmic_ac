@@ -1387,8 +1387,7 @@ ceilings.[^r46f]
 
 The register is installed at post-training — by the stages tuned toward
 human demonstrations and preferences, and not by the stage tuned toward
-verifiable correctness, which was registered as the arm's negative control
-before the run. The evidence is an OLMo-2 ladder, same prompts across the
+verifiable correctness, which the design built in as its placebo stage. The evidence is an OLMo-2 ladder, same prompts across the
 post-training stages. The stage values are bias-corrected: the estimator as first shipped carried a per-transition
 pedestal (the M3 defect, per stage — null calibration on random word lists
 returns +0.45/+0.56/+0.31, largest at DPO only because DPO's generations are
@@ -1413,7 +1412,7 @@ not by the stage tuned toward verifiable correctness. That is consistent with
 §4.5's reading that alignment concentrates something humans already favoured —
 an association, not an identified mechanism, and the section's argument no
 longer rests on it. The correction
-STRENGTHENS the arm's design claim: **RLVR was the pre-registered placebo** —
+STRENGTHENS the arm's design claim: **RLVR was designed as the placebo stage** (a design intent contemporaneous with the run, though not registered in a dated document) —
 tuning on verifiable math/code correctness should not install a speech
 register — and corrected it behaves exactly as the placebo it was designed to
 be, where the shipped +0.37 (p = 0.000) had it failing its own manipulation
