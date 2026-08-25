@@ -185,10 +185,43 @@ def figure_ref_anchors(t):
 def insert_appendix(t):
     needle = "\\section{Null results}\\label{app:null}"
     if needle in t:
-        t = t.replace(needle, "\\appendix\n\n" + needle, 1)
+        t = t.replace(needle, "\\appendix\n\\section*{Supplementary materials}\n\n" + needle, 1)
     else:
         sys.stderr.write("WARN: app:null heading not found for \\appendix\n")
     return t
+
+PUB_ORDER = ["sec:intro","sec:results","sec:discussion","sec:limits",
+             "sec:related","sec:policy","sec:data","sec:method"]
+
+def reorder(t):
+    """Drafting order (markdown) -> publication order (Science: Methods last).
+
+    Head (abstract + provenance preamble) stays first; the eight body sections
+    are reordered into PUB_ORDER; the \\appendix..EOF tail (Supplementary)
+    stays last. Cross-references are labels, so numbering follows automatically.
+    """
+    intro = re.search(r'\\section\{[^{}]*\}\\label\{sec:intro\}', t)
+    app = re.search(r'\\appendix', t)
+    if not (intro and app):
+        sys.stderr.write("WARN: reorder skipped (intro/appendix not found)\n"); return t
+    head, middle, tail = t[:intro.start()], t[intro.start():app.start()], t[app.start():]
+    starts = [(m.start(), m.group(1)) for m in
+              re.finditer(r'\\section\{[^{}]*\}\\label\{(sec:[a-z-]+)\}', middle)]
+    blocks = {}
+    for i,(pos,lab) in enumerate(starts):
+        end = starts[i+1][0] if i+1 < len(starts) else len(middle)
+        blocks[lab] = middle[pos:end]
+    if set(PUB_ORDER) != set(blocks):
+        sys.stderr.write("WARN: reorder section set mismatch: %r\n" %
+                         (set(PUB_ORDER) ^ set(blocks))); return t
+    # a Materials-and-Methods divider before the Data section
+    pieces = []
+    for lab in PUB_ORDER:
+        if lab == "sec:data":
+            pieces.append("\\section*{Materials and methods}\n\n")
+        pieces.append(blocks[lab])
+    sys.stderr.write("reorder: %d sections -> publication order\n" % len(starts))
+    return head + "".join(pieces) + tail
 
 def main():
     t = open(SRC, encoding="utf-8").read()
@@ -198,6 +231,7 @@ def main():
     t = replace_section_refs(t)
     t = replace_appendix_refs(t)
     t = insert_appendix(t)
+    t = reorder(t)
     open(DST, "w", encoding="utf-8").write(t)
     sys.stderr.write("wrote %s (%d chars)\n" % (DST, len(t)))
 
