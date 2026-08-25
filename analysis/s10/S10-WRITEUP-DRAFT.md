@@ -2,27 +2,23 @@
 
 ## Abstract
 
-Large language models can draft legislative speech, but how much of the
-recent record is machine-written, and what does the answer reveal about
-language and institutions? We measure machine-drafted speech across 22
-legislative chambers in four countries with two independent instruments: a
-commercial AI-text detector (Pangram) calibrated chamber-by-chamber against
-each chamber's own pre-2022 record (specificity 1,260/1,260), and a
-detector-independent lexical *register* built from the vocabulary language
-models overuse. In current speech, **9.03% of words** are machine-drafted
-(word-weighted, a conservative floor since detector sensitivity is not
-estimated), with an elevenfold spread across chambers and a concentration in
-scripted genres. The register, however, **predates the language models by
-decades** — its rise begins in 1994–96 — and is organised generationally and
-by a speaker's prior occupation: position in an organisational hierarchy, with
-the *insulated* middle using it most, predicts it beyond social class. Machine
-involvement does not degrade deliberative quality: AI-flagged speech is
-better-formed and no less engaged once genre is held fixed, and frontier-model
-continuations of real speeches out-score the members' own words on form. The
-detector is evadable under directed effort (11.1% of rewrites, 22.5% of
-targets), so the prevalence figure is a floor and detection is better used as
-an instrument for measuring a norm than as a security control. The machine
-register is thus one visible edge of an older, human process — a register of
+How much recent legislative speech is machine-written, and what does the
+answer reveal? We measure machine-drafted speech across 22 legislative
+chambers in four countries with two independent instruments: a commercial
+AI-text detector (Pangram), calibrated against each chamber's own pre-2022
+record (specificity 1,260/1,260), and a detector-independent lexical
+*register* built from the vocabulary language models overuse. In current
+speech, **9.03% of words** are machine-drafted — a conservative floor — with an
+elevenfold spread across chambers and a concentration in scripted genres. The
+register, however, **predates the models by decades**: its rise begins in
+1994–96, and it is organised generationally and by prior occupation —
+position in an organisational hierarchy, the insulated middle using it most,
+predicts it beyond social class. Machine involvement does not degrade
+deliberative quality: AI-flagged speech is better-formed and no less engaged
+once genre is fixed. The detector is evadable under directed effort, so the
+prevalence figure is a floor and detection is better used to measure a norm
+than as a security control. The machine register is one visible edge of an
+older, human process — a register of
 accountability without authorship — that machine intelligence exposes rather
 than creates.
 
