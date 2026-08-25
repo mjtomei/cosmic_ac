@@ -1168,7 +1168,7 @@ An earlier draft reported this as an ascending "academic ladder" of
 +0.065σ/rung. That was a straight line fitted through a hump, and it excluded
 the professional degree as being off the ladder — dropping the one category
 that breaks monotonicity. The block is jointly significant on its own
-(Wald p = 0.0025).
+(Wald p < 10⁻⁴ as level dummies).
 
 It is not, however, an independent channel. Put class and education in one
 model and the education block goes to **p = 0.22** while class holds at
@@ -1188,12 +1188,12 @@ against an estimate from a different set of members): †[^r46joint]
 
 | predictor | alone | joint |
 |---|---|---|
-| **cohort** (per decade) | +0.280 (t 24.3) | **+0.270 (t 26.9)** |
-| **class** (block Wald) | **p = 0.0000** | **p = 0.0000** |
-|  · II over I | +0.093 (t 3.02) | +0.072 (t 2.10) |
-|  · VIIab | −0.300 (t −2.90) | −0.299 (t −2.80) |
-| **education** (block Wald) | p = 0.0025 | **p = 0.2150** |
-| **prominence** (linear, *not* the right form — see D.3) | +0.035 (t 3.08) | +0.020 (t 2.05) |
+| **cohort** (per decade) | +0.276 (t 27.7) | **+0.270 (t 26.9)** |
+| **class** (block Wald) | **p < 10⁻⁴** | **p < 10⁻⁴** |
+|  · II over I | +0.122 (t 3.63) | +0.072 (t 2.10) |
+|  · VIIab | −0.384 (t −3.70) | −0.299 (t −2.80) |
+| **education** (block Wald) | p < 10⁻⁴ | **p = 0.215** |
+| **prominence** (linear, *not* the right form — see D.3) | +0.037 (t 3.59) | −0.017 (t −0.46) |
 
 **They do not deserve equal billing.** Cohort is untouched by the others and an
 order of magnitude better resolved than any of them. Class survives everything,
@@ -1211,7 +1211,13 @@ sample could not separate them.
 [^r46joint]: `python joint_predictors.py`. Canonical member-level spec — one
     observation per legislator, equal weight, register z-scored within chamber
     against the chamber's full member population, HC1 errors, joint Wald over
-    each block's term vector.
+    each block's term vector. "Alone" is the block fitted by itself on the
+    same sample (no other covariates), so the two columns read raw
+    association → survives everything; education enters as level dummies
+    with bachelor as baseline — the same coding as the education table —
+    with no ordering assumption (review CC3; an earlier printed version of
+    this table mixed a ladder coding and a cohort-conditioned "alone"
+    column).
 
 **Origin is null, and robustly so.** Parental class, 704 members, tested
 under both the panel and member-level specifications: joint p = 0.53–0.59,

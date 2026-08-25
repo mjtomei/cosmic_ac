@@ -110,6 +110,8 @@ def load_office():
     return share
 
 
+EDU_DUM = ["secondary", "college", "graduate", "professional"]  # vs bachelor
+
 def design(rows, blocks, cats):
     """(y, X, index map) for the requested predictor blocks."""
     y, X, idx = [], [], {}
@@ -119,7 +121,9 @@ def design(rows, blocks, cats):
             idx["class"] = list(range(col, col + len(cats["class"])))
             col += len(cats["class"])
         elif b == "edu":
-            idx["edu"] = [col, col + 1]        # ladder rung + professional
+            # level dummies, bachelor baseline (review CC3: matches the
+            # education table's own coding; no ordering assumption)
+            idx["edu"] = list(range(col, col + len(EDU_DUM)))
             col += 2
         else:
             idx[b] = [col]
@@ -132,9 +136,7 @@ def design(rows, blocks, cats):
             elif b == "class":
                 row += [1.0 if r["egp"] == c else 0.0 for c in cats["class"]]
             elif b == "edu":
-                row += [float(LV.index(r["edu"]))
-                        if r["edu"] != "professional" else 0.0,
-                        1.0 if r["edu"] == "professional" else 0.0]
+                row += [1.0 if r["edu"] == e else 0.0 for e in EDU_DUM]
             elif b == "prominence":
                 row.append(r["logdepth"])
             elif b == "office":
@@ -156,7 +158,7 @@ def report(rows, blocks, cats, label):
                 print(f"    class {c:<10}{bb:>+8.3f}  t {bb/se:+.2f}"
                       f"{' *' if abs(bb/se) > 1.96 else ''}")
         elif b == "edu":
-            for j, nm in zip(ii, ("edu ladder/rung", "edu professional")):
+            for j, nm in zip(ii, [f"edu {e}" for e in EDU_DUM]):
                 bb, se = beta[j], math.sqrt(V[j, j])
                 print(f"    {nm:<16}{bb:>+8.3f}  t {bb/se:+.2f}"
                       f"{' *' if abs(bb/se) > 1.96 else ''}")
