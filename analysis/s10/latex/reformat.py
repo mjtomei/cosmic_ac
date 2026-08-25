@@ -338,6 +338,9 @@ CITE_SUBS = [
  # --- introduction (first mentions; later sections re-cite where discussed) ---
  (r'\(Liang et al\.,\s+Gray\)', r'(Liang et al.\\cite{liang2024monitoring,liang2025quantifying}, Gray\\cite{gray2025})'),
  (r'construction[.] Kobak et al[.] measure excess', r'construction. Kobak et al.\\cite{kobak2025} measure excess'),
+ (r'closest\s+parliamentary study measures false positives', r'closest parliamentary study\\cite{suvanto2026} measures false positives'),
+ (r'population-level studies validate per venue', r'population-level studies\\cite{liang2024monitoring} validate per venue'),
+ (r'a single fifty-speech calibration', r'a single fifty-speech calibration\\cite{rice2026}'),
  (r'where Gray documents', r'where Gray\\cite{gray2025} documents'),
  (r'what Brynjolfsson calls the Turing trap', r'what Brynjolfsson\\cite{brynjolfsson2022} calls the Turing trap'),
  (r'no post-ChatGPT rise\s+\(Rice\)', r'no post-ChatGPT rise (Rice\\cite{rice2026})'),

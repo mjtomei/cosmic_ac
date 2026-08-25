@@ -208,12 +208,21 @@ Findings, and they cut against the received story:
 
 ### 3.1 Calibration makes every estimate conservative
 
-Prevalence is only meaningful against a measured false-positive rate. **A
-chamber's false-positive rate depends on its own editorial register, so
-specificity is not assumed to transfer** — each chamber buys its own
-60-segment pre-AI control, and the pooled 1,260 then bounds how far any one
-chamber can sit from the family. This is the single most important design choice in the study
-and the reason its result differs from published comparators (§7).
+Prevalence is only meaningful against a measured false-positive rate.
+**Specificity is measured in-domain at two grains at once**: each chamber
+carries its own 60-segment pre-AI control — a check that chamber-specific
+editorial registers do not manufacture false positives — while the pooled
+1,260 carries the statistical weight (§4.1). The per-chamber controls are a
+heterogeneity check, not an independence claim: no 60/60 cell could stand
+alone, and none is asked to. This is the single most important design
+choice in the study and the reason its result differs from published
+comparators (§7). It also exceeds the field's practice: the closest
+parliamentary study measures false positives on one pre-LLM hold-out per
+parliament, in two parliaments; population-level studies validate per venue
+against semi-synthetic ground truth; and commercial-detector exercises have
+leaned on a single fifty-speech calibration or on vendor benchmarks alone.
+Twenty-one chambers with in-domain controls each is the same idea carried
+to the grain this corpus allows.
 
 With specificity `Sp` and sensitivity `Se`, an observed flag rate `π` relates
 to true prevalence `τ` by Rogan–Gladen:

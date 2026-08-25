@@ -18,21 +18,7 @@
 
 **Matthew's ruling (recorded; action pending).** Matthew: agreed — generate the result excluding 2023-and-after (a pre-LLM era contrast, where no machine text is possible, carries the 'independently of drafting' clause directly). QUEUED: requires a fresh GPU scoring pass over new era samples through the identical word_context pipeline; will run with the in-time placebo below as one job
 
-### AL2. [argument-logic] §2.2 / Table 2 / §5.1
-
-> A chamber's false-positive rate depends on its own editorial register, so specificity is not transferable — each chamber buys its own 60-segment pre-AI control.
-
-**Problem.** Internal contradiction between the calibration premise and the per-chamber conclusions. If specificity is chamber-specific (the stated reason for per-chamber controls), then each chamber's specificity is known only from its own 60/60, whose Wilson lower bound is ~94% — so a chamber-level false-positive rate of several percent cannot be excluded, and the low-end rows of Table 2 (US Senate 1.8%, UK 2.5%, SCO 3.9%, SK 4.1%) are not distinguishable from calibration error under the paper's own premise. The elevenfold-spread headline's denominator inherits this. The quoted pooled interval [99.7%, 100%] is only usable per-chamber by transferring specificity across chambers — exactly what §5.1 says cannot be done.
-
-**Reviewer's check.** Computed Wilson lower bound for 60/60 ≈ 94.0%; confirmed Table 2's per-chamber CIs are cluster bootstraps of the flag rate that carry no specificity uncertainty; confirmed §2.1 quotes the [99.7, 100] interval only for the pooled 1,260.
-
-**Refuter's verification.** Recomputed the Wilson lower bound for a 60/60 control: 93.98% — under the paper's own no-transfer premise (§5.1's quoted sentence), a chamber-level FPR up to ~6% is not excluded by that chamber's own control. Table 2's intervals are cluster bootstraps over prevalence segments carrying zero specificity uncertainty; Rogan–Gladen is applied with Sp fixed at 1. US Senate 1.8%, UK 2.5%, SCO 3.9%, SK 4.1% all sit below the per-chamber calibration slack, so those rows and the elevenfold ratio's denominator are not calibration-exact under the stated premise. No caveat near Table 2 or in the Limits addresses per-chamber specificity uncertainty; the only rescue (pooling specificity across chambers) is exactly what §5.1 disclaims.
-
-**Suggested fix.** Either argue explicitly that specificity partially transfers (softening §5.1) and propagate a pooled-specificity term into per-chamber intervals, or add per-chamber specificity uncertainty to Table 2 and stop quoting low-end chamber rates and the elevenfold ratio as if calibration-exact.
-
-**Matthew's ruling (recorded; action pending).** Matthew: agreed — never claim only-own-chamber inference; PARTIALLY APPLIED: §3.1 softened to 'not assumed to transfer' with the pooled 1,260 as the family bound, and §4.2 gains the low-row slack note (60/60 Wilson floor 94%; pooled floor caps FP at 0.3pp). PENDING: survey prior work for the standard calibration methodology (per-corpus vs pooled), and expand per-chamber controls if per-legislature independence is the standard — a Pangram-credit spend decision
-
-### AL3. [argument-logic] §2.13 Permeation
+### AL2. [argument-logic] §2.13 Permeation
 
 > Small, but it is the only permeation evidence that does not route through a detector, and it survives the failure mode that demoted the lexicon arm.
 
@@ -623,7 +609,7 @@
 
 ## MAJOR — PARTIAL
 
-### AL4. [argument-logic] §3.1 (Any fixed check loses to an optimising attacker)
+### AL3. [argument-logic] §3.1 (Any fixed check loses to an optimising attacker)
 
 > Point a general-purpose model at its own output, tell it to try again, and it will defeat any check you can put in front of it. This is not a claim about Pangram. It follows from the check being a fixed function and the attacker being an optimiser
 
@@ -728,7 +714,7 @@
 
 ## MINOR — CONFIRMED
 
-### AL5. [argument-logic] §2.9.5 (Flight)
+### AL4. [argument-logic] §2.9.5 (Flight)
 
 > That is chase-and-flight: a marker loses value as it is copied, so the group that holds it abandons the most conspicuous forms first.
 
@@ -1700,9 +1686,9 @@
 
 **Method.** Thirteen blind reviewers, one dimension each: seven data dimensions reproducing numbers from the committed artifacts and reading estimator code (calibration+prevalence, genre+screen, series/trend/cross-chamber, cohort+class, occupational-prereg, post-training/coverage/permeation, quality+bypass), five narrative/argument dimensions on the compiled publication-order paper (claims-vs-evidence, internal-consistency, argument-logic, comparability, storyline), and one cross-cutting consistency reviewer. Every finding was handed to a refute-by-default adversary; only CONFIRMED and PARTIAL findings appear, PARTIAL with the corrected version stated. "Also flagged by" marks the same defect under another lens — adjudicate once, apply everywhere.
 
-**Counts.** 131 open (0 critical, 57 major, 74 minor; 108 CONFIRMED, 23 PARTIAL); 1 refuted; 0 unresolved.
+**Counts.** 130 open (0 critical, 56 major, 74 minor; 107 CONFIRMED, 23 PARTIAL); 1 refuted; 0 unresolved.
 
-**For the next review cycle (Matthew, 2026-08-25).** The argument-logic lens was the most productive of the thirteen; next cycle, expand it to one AL worker per section (a 12-section fleet with refuters was drafted and briefly started this cycle, then stopped on Matthew's instruction to hold it for the next cycle — the script is committed at workflows/scripts/al-per-section-2026-08-25-*.js and its partial run is resumable).
+**For the next review cycle (Matthew, 2026-08-25).** Matthew liked the argument-logic lens's points more than much of the previous review (having read that block first — not a ranking over unread lenses); next cycle, expand it to one AL worker per section (a 12-section fleet with refuters was drafted and briefly started this cycle, then stopped on Matthew's instruction to hold it for the next cycle — the script is committed at workflows/scripts/al-per-section-2026-08-25-*.js and its partial run is resumable).
 
 **Progress since the review ran (2026-08-24/25).** Both criticals closed by new analysis rather than rewording: (1) the floor's specificity-transfer assumption stated and bounded — a two-vote blind audit of all 316 flagged segments (277 prepared / 21 unclear / 11 both-vote spontaneous, 9 of them Mixed at fractions 0.11–0.58) puts the worst case at 9.03%→8.86% (§3.1, §4.1, Limits; flagged_hits_*). (2) The APC identification: per-legislature group-vs-individual gradients in one unit (apc_chamber_decomposition.py, new §4.6 figure) split the birth gradient into a standing juniority component (full-size among pre-drift cohorts — US Senate +105 [47,155], 1994–2004) and a cohort component (UK +30→+98, House +23→+85 as drift-formed cohorts enter); "organised generationally" retired paper-wide. Also applied: the mechanical batch (broken cross-refs, §8.6 renumbering, review-code and dagger conventions, external-table disambiguation, flip/success direction), the registration-timeline footnote, the Kobak contextualisation of the abstract, and the explanatory-power/iceberg passage at the joint model. Resolved items below; nothing deleted.
 
@@ -1716,6 +1702,7 @@
 - **[major] [quality+bypass]** 4.9 Bypass study (flip vs success paragraph): "Effort raised both bars, and by *more* on the flip bar (2.8×) than on the success bar (5.5..." — *fixed: same direction correction*
 - **[major] [internal-consistency]** §2.14 Bypass study (flip vs success bars): "Effort raised both bars, and by more on the flip bar (2.8×) than on the success bar (5.5×)..." — *fixed: duplicate of the flip/success direction correction (mechanical batch)*
 - **[critical] [argument-logic]** §2.8 (Birth cohort predicts the register) and Abstract: "if it were generational, later-born members would use more of it even in the same year and..." — *resolved by new analysis per Matthew's design (apc_chamber_decomposition.py, apc_gradients.png): group vs individual gradients per legislature in one unit. The gradient splits into a standing juniority component (full-size among pre-drift cohorts, US Senate +105 [47,155], 1994-2004, births 1917-64) and a cohort component (UK +30->+98, House +23->+85 as drift-formed cohorts enter; House chamber mean flat -> ambient-culture formation). §4.6 rewritten around the two components with the identity stated and the era-stable-profile assumption named; abstract/intro/Discussion/Limits harmonized; 'organised generationally' retired.*
+- **[major] [argument-logic]** §2.2 / Table 2 / §5.1: "A chamber's false-positive rate depends on its own editorial register, so specificity is n..." — *adjudicated (Matthew): keep current results, REMOVE the independence framing — §3.1 now states specificity is measured in-domain at two grains (per-chamber heterogeneity check + pooled statistical weight; 'not an independence claim: no 60/60 cell could stand alone, and none is asked to') and pre-empts the independence criticism by comparing to field practice (Suvanto: one pre-LLM hold-out per parliament in two parliaments; Liang: per-venue semi-synthetic validation; Rice: a single fifty-speech calibration). The §4.2 low-row slack note stands. No control expansion.*
 - **[major] [argument-logic]** §2.14 Bypass study (headline): "The headline: asking a general-purpose model to rework a speech in a loop beats the commer..." — *adjudicated (Matthew, 3rd recurrence): the fix is the threat model made explicit AT the headline — rewritten to state the target detector is never in the loop (Opus self-score generates/screens; Pangram sees only submissions), with the attack figure referenced; the tenfold comparison stands as fair-to-conservative given the attacker is blind to the target while humanizers are built against detectors*
 - **[major] [argument-logic]** §2.6 (Other chambers converge on the level the United States already held): "So the picture is not a common shift. It is chambers converging upward on a level the Unit..." — *adjudicated (Matthew): the US-derived-yardstick caveat DELETED rather than patched — the instrument is from a global scholarly literature, not US speech, and even a US-derived ruler would still show others converging on the US; the headline stands without the self-undercutting paragraph*
 - **[major] [argument-logic]** §2.6 / Table 6 (constant-window trend): "on that single ruler the pattern is convergence: the lower a chamber started, the faster i..." — *fixed per ruling: RTM-decoupled recompute added (2006-08 baseline means vs disjoint 2010-2026 growth: Spearman -0.51, n=18, vs -0.56 naive) and the framing now leans on the shared direction — sixteen of nineteen chambers rise; constant_window_trend.py prints both*
