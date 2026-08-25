@@ -1122,26 +1122,36 @@ against an estimate from a different set of members): †\footnote{\texttt{pytho
   column).}
 
 \begingroup\small
-\begin{longtable}[]{@{}lll@{}}
+\begin{longtable}[]{@{}lllll@{}}
 \caption{The four predictors alone and jointly (cross-fitted).}\label{tab:four-predictors}\\
 \toprule\noalign{}
-predictor & alone & joint \\
+predictor & n & alone & joint & per affected member (joint) \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-predictor & alone & joint \\
+predictor & n & alone & joint & per affected member (joint) \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-\textbf{cohort} (per decade) & +0.276 (t 27.7) & \textbf{+0.270 (t 26.9)} \\
-\textbf{class} (block Wald) & \textbf{p \textless{} 10⁻⁴} & \textbf{p \textless{} 10⁻⁴} \\
-· II over I & +0.122 (t 3.63) & +0.072 (t 2.10) \\
-· VIIab & −0.384 (t −3.70) & −0.299 (t −2.80) \\
-\textbf{education} (block Wald) & p \textless{} 10⁻⁴ & \textbf{p = 0.215} \\
-\textbf{prominence} (linear, \emph{not} the right form --- see D.3) & +0.037 (t 3.59) & −0.017 (t −0.46) \\
+\textbf{cohort} (per decade) & 4,056 & +0.276 (t 27.7) & \textbf{+0.270 (t 26.9)} & +0.27σ per decade of birth \\
+\textbf{class} (block Wald) & 4,056 & \textbf{p \textless{} 10⁻⁴} & \textbf{p \textless{} 10⁻⁴} & \\
+· II over I & 1,691 & +0.122 (t 3.63) & +0.072 (t 2.10) & +0.07σ ≈ 3 years of cohort \\
+· VIIab & 70 & −0.384 (t −3.70) & −0.299 (t −2.80) & \textbf{−0.30σ ≈ 11 years of cohort} \\
+\textbf{education} (block Wald) & 4,056 & p \textless{} 10⁻⁴ & \textbf{p = 0.215} & \\
+\textbf{prominence} (linear, \emph{not} the right form --- see D.3) & 4,056 & +0.037 (t 3.59) & −0.017 (t −0.46) & --- \\
 \end{longtable}
 \endgroup
+
+\textbf{Why the largest coefficient carries the least variance.} A term\textquotesingle s
+variance share is per-member effect² × member share. VIIab moves each of
+its members more than a decade of cohort does --- but 70 members are 1.7\% of
+the panel, so the term carries \textasciitilde0.25\% of variance alone; class II\textquotesingle s far
+smaller +0.122 on 42\% of members carries more (\textasciitilde0.36\%), and cohort\textquotesingle s
+dominance comes from a modest slope applied to everyone across a two-decade
+spread. Coefficients answer "how much for whom"; variance shares answer
+"how much of the panel" --- the table now shows both, and the explanatory-
+power accounting below should be read with that distinction.
 
 \textbf{They do not deserve equal billing.} Cohort is untouched by the others and an
 order of magnitude better resolved than any of them. Class survives everything,

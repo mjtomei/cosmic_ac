@@ -1186,14 +1186,24 @@ Cohort, class, education and prominence in a single member-level regression
 this same sample, so attenuation is read against its own baseline rather than
 against an estimate from a different set of members): †[^r46joint]
 
-| predictor | alone | joint |
-|---|---|---|
-| **cohort** (per decade) | +0.276 (t 27.7) | **+0.270 (t 26.9)** |
-| **class** (block Wald) | **p < 10⁻⁴** | **p < 10⁻⁴** |
-|  · II over I | +0.122 (t 3.63) | +0.072 (t 2.10) |
-|  · VIIab | −0.384 (t −3.70) | −0.299 (t −2.80) |
-| **education** (block Wald) | p < 10⁻⁴ | **p = 0.215** |
-| **prominence** (linear, *not* the right form — see D.3) | +0.037 (t 3.59) | −0.017 (t −0.46) |
+| predictor | n | alone | joint | per affected member (joint) |
+|---|---|---|---|---|
+| **cohort** (per decade) | 4,056 | +0.276 (t 27.7) | **+0.270 (t 26.9)** | +0.27σ per decade of birth |
+| **class** (block Wald) | 4,056 | **p < 10⁻⁴** | **p < 10⁻⁴** | |
+|  · II over I | 1,691 | +0.122 (t 3.63) | +0.072 (t 2.10) | +0.07σ ≈ 3 years of cohort |
+|  · VIIab | 70 | −0.384 (t −3.70) | −0.299 (t −2.80) | **−0.30σ ≈ 11 years of cohort** |
+| **education** (block Wald) | 4,056 | p < 10⁻⁴ | **p = 0.215** | |
+| **prominence** (linear, *not* the right form — see D.3) | 4,056 | +0.037 (t 3.59) | −0.017 (t −0.46) | — |
+
+**Why the largest coefficient carries the least variance.** A term's
+variance share is per-member effect² × member share. VIIab moves each of
+its members more than a decade of cohort does — but 70 members are 1.7% of
+the panel, so the term carries ~0.25% of variance alone; class II's far
+smaller +0.122 on 42% of members carries more (~0.36%), and cohort's
+dominance comes from a modest slope applied to everyone across a two-decade
+spread. Coefficients answer "how much for whom"; variance shares answer
+"how much of the panel" — the table now shows both, and the explanatory-
+power accounting below should be read with that distinction.
 
 **They do not deserve equal billing.** Cohort is untouched by the others and an
 order of magnitude better resolved than any of them. Class survives everything,
