@@ -1327,7 +1327,23 @@ threshold and strengthens monotonically with volume: ρ = −0.13 at 100+
 occurrences, −0.22 at 300+, **−0.42 at 800+ (p = 0.004)**, −0.46 at 1,500+.
 Class I under-uses `primary` (2.35× lift), `advocating` (1.85×), `advocates`
 (1.57×), `outcomes` (1.54×); it over-uses `remarkable`, `individuals`,
-`broader`, `ultimately` — words that barely moved.
+`broader`, `ultimately` — words that barely moved. And the signature is not
+class I's alone: run identically for the top of each ladder against its
+peak, it reproduces wherever the top is a status-top — professional degrees
+against the bachelor peak (−0.06/−0.16/−0.27/−0.33 across the same volume
+thresholds), executive rungs against the middle (−0.23/−0.25/−0.37/−0.13),
+office-holders against backbenchers (−0.11/−0.12/−0.20/−0.20) — and fails
+at exactly the one top that is not one: graduate degrees run flat to
+positive (+0.08 to +0.11). These are not independent replications — the
+same corpus, the same words, and the tops overlap heavily — but as a
+robustness family they say the avoidance belongs to status-tops generally,
+not to one coding of class.[^rladders]
+
+[^rladders]: `python build_ladder_word_year.py` (one provincial scan;
+    education and rung membership from `prereg_member_table.json`, office
+    from the rank-marked speaker form as in `office_split.py`) then
+    `python flight_ladders.py` — same lift, same thresholds, same estimator
+    as the class test.
 
 That is the static signature of chase-and-flight — a marker loses value as
 it is copied, so the group that holds it abandons the most conspicuous forms
