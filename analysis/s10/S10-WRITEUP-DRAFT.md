@@ -2267,9 +2267,25 @@ high-confidence, Saskatchewan, Nova Scotia and Newfoundland & Labrador are
 equally solid nulls — no AI-specific rule found (review item X10).
 (`ai_policy_scan.md`; figures unverified against primary sources.)
 
+The rules will lag; the measurement need not. What this study prototypes —
+a standing, machine-executed audit of an open record, cheap enough to rerun
+every sitting — is the natural complement to whatever disclosure rule a
+chamber does adopt. And it generalises: the same instruments that measure
+how much machine text enters a record can measure whose register a model
+was tuned to reproduce, which is the form of oversight the substitution
+worry (§1) actually calls for.
+
 ---
 
 ## 7. Related work
+
+Position first: this study differs from the prior work by scale (22
+chambers against the next parliamentary study's two), by triangulation (a
+calibrated commercial detector crossed with a detector-independent
+register), and by time depth (a thirty-year baseline against the field's
+post-2020 windows). The 9.0% floor itself lands where the population-level
+literature already points for professional prose — 6.5–17.5% (Liang et al.,
+Gray) — which we read as corroboration, not coincidence.
 
 Two prior efforts ran comparable designs on chambers in this corpus and
 reached opposite conclusions. **Neither used a calibrated commercial
@@ -2347,13 +2363,29 @@ baseline is moving toward the thing being detected.
 
 ---
 
-## 8. Discussion: detection as a norms instrument, and what to measure instead
+## 8. Discussion
 
-§4.9 is usually read as a result about one detector. It is better read as an
-instance of a general limit, and the generalisation changes what the rest of
-the study is for.
+This study set out to count machine-drafted speech and found, behind the
+count, a register with a thirty-year human history. The count stands: two
+instruments that fail differently — a detector calibrated to zero false
+positives on each chamber's own pre-2022 record, and a transparent lexical
+register run against placebo-matched counterfactuals — agree that **at
+least 9.0% of words** in current legislative speech are machine-drafted,
+spread elevenfold across chambers and concentrated where procedure permits
+preparation. The register behind the count is the older finding: rising
+since 1994–96, strongest in later birth cohorts, shaped like the office —
+peaking at its insulated middle — and installed, on the machine side, at
+exactly the post-training stages tuned toward human demonstrations and
+preferences. Machine intelligence did not invent this register of
+accountability without authorship — it inherited it, and this study
+measures the inheritance.
 
-### 8.1 The limit
+What follows from that depends on what detection can actually do. §4.9 is
+usually read as a result about one detector. It is better read as an
+instance of a general limit, and the generalisation changes what the rest
+of the study is for.
+
+### 8.1 Any fixed check loses to an optimising attacker
 
 Point a general-purpose model at its own output, tell it to try again, and it
 will defeat any check you can put in front of it. This is not a claim about
@@ -2494,11 +2526,9 @@ trained coders. That capability arrived with the same technology that broke
 detection, which is the substitution in one sentence: the machine that made
 provenance unmeasurable made quality measurable.
 
-### 8.4 Where text is a proxy for a person's internal state
-
-Deliberation is judged on the artifact, so §8.3 suffices. Education is not:
-there the text is a proxy for what is in someone's head, and a proxy that can
-be generated is no proxy at all. That case needs a **more rigorous proof of
+Deliberation is judged on the artifact, so checking the artifact suffices.
+Education is not judged on the artifact: there the text is a proxy for what
+is in someone's head, and a proxy that can be generated is no proxy at all. That case needs a **more rigorous proof of
 understanding**, and machine intelligence supplies the means as well as the
 problem — adaptive examination against a person's *entire* corpus of work, with
 provenance and time-on-task as evidence rather than the text alone.

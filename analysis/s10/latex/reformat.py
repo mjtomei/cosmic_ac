@@ -304,6 +304,7 @@ def inject_table_captions(t):
 # already carries, so it survives markdown prose edits that keep those names.
 CITE_SUBS = [
  # --- introduction (first mentions; later sections re-cite where discussed) ---
+ (r'\(Liang et al\.,\s+Gray\)', r'(Liang et al.\\cite{liang2024monitoring,liang2025quantifying}, Gray\\cite{gray2025})'),
  (r'where Gray documents', r'where Gray\\cite{gray2025} documents'),
  (r'what Brynjolfsson calls the Turing trap', r'what Brynjolfsson\\cite{brynjolfsson2022} calls the Turing trap'),
  (r'no post-ChatGPT rise\s+\(Rice\)', r'no post-ChatGPT rise (Rice\\cite{rice2026})'),
