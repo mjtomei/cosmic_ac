@@ -2,31 +2,6 @@
 
 We measure machine-drafted speech across 22 legislative chambers in four countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber\textquotesingle s own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical \emph{register} built from the vocabulary language models overuse. In current speech, \textbf{9.03\% of words} are machine-drafted --- a conservative estimate --- with an elevenfold spread across chambers and a concentration in scripted genres. This machine-drafted speech is not degraded: once genre is held fixed, AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, \textbf{predates the models by decades}: its rise begins in 1994--96, and it is organised generationally and by prior occupation, with position in an organisational hierarchy --- the insulated middle using it most --- predicting it beyond social class. The machine register is one visible edge of an older, human process --- a register of accountability without authorship --- that machine intelligence exposes rather than creates.
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\textbf{S10 --- draft write-up, 2026-08-11; \cref{sec:class} and Appendix~\ref{app:null} extended
-2026-08-13.} All arms complete, including the detector-bypass study and both
-prior-art comparators. Everything is reproducible from \texttt{analysis/s10/}.
-
-\textbf{\cref{sec:class}\textquotesingle s literature citations were web-verified 2026-08-24.} The result is
-placed against Labov (crossover/hypercorrection, \emph{Sociolinguistic Patterns},
-U. Pennsylvania Press, 1972), Simmel (1904), Veblen (1899), Jhering (1883)
-with Durkheim\textquotesingle s summary supplying the quote, and Lieberson (\emph{A Matter of
-Taste}, Yale, 2000); a fetched entry wrong on Labov\textquotesingle s year and publisher has
-been corrected. That subsection also reports standard errors not clustered on
-member, which the study has been bitten by three times; it is flagged in
-place.
-
-\textbf{Numbers marked † are carried from earlier in the study.} All nine were
-re-derived from their artifacts on 2026-08-11 and reproduce; footnotes on each
-give the script and invocation. Two of the nine (\cref{sec:generational}\textquotesingle s cohort share, \cref{sec:posttraining}\textquotesingle s
-pooled alignment effect) were briefly and wrongly recorded as unsourced --- the
-verification pass had looked in the wrong script --- so their footnotes name the
-right one explicitly. Everything unmarked was computed or re-verified on
-2026-08-09/11 and names its source file.
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
 \section{The question, and why it needs two instruments}\label{sec:intro}
 
 How much legislative speech is machine-drafted, and what does its arrival do
@@ -472,6 +447,15 @@ Read together with \cref{sec:posttraining}, the interesting reading is not "LLMs
 parliamentary register" but that \textbf{human register had been moving toward what
 instruct-tuning later selected for, for thirty years.} †
 
+The machines then accelerated it, and left a fingerprint of their own suppression. In New Brunswick --- the one corpus sampled densely enough to resolve quarters --- an interrupted time series with the break pre-set at ChatGPT\textquotesingle s release finds a flat pre-2023 slope (−1.2\%/yr) turning to \textbf{+23.7\%/yr} afterward, significant against 1,000 frequency-matched placebo word sets (p = 0.007; Mann--Kendall p = 0.014). But the two instruments then part ways (\cref{fig:trend}): the \emph{obvious} tells --- the Wikipedia "signs of AI writing" set --- peak around 2025 and fall back, while the subtler Kobak rare-style set keeps climbing. The natural reading is that the conspicuous words became notorious and were trained or edited away, while the register underneath kept rising. The peak-and-fall of the obvious tells shows in some other chambers too --- UK Commons and the US House both turn down after 2024 --- though it is not universal (Ireland\textquotesingle s keep rising), so this is a suggestive cross-chamber pattern rather than a law; the clean two-instrument contrast is sharpest in the densely-sampled discovery corpus.\footnote{\texttt{python\ fig\_trend.py} for New Brunswick --- the interrupted time series is weighted least squares on log quarterly rates with a break pre-specified at 2023.0, and the empirical p for the slope change comes from 1,000 frequency-matched placebo word sets run through the identical fit. The cross-chamber comparison is \texttt{python\ build\_trend\_cache.py\ \&\&\ python\ plot\_trend\_from\_cache.py}; indexed yearly rates for six chambers are in \texttt{trend\_multichamber.csv}.}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\linewidth]{the-ai-lexicon-trend.png}
+\caption{The recent acceleration, New Brunswick Hansard. Panel A: yearly rates on both instruments --- the Wikipedia "signs of AI writing" set and Kobak rare-style words --- each indexed to its own pre-2023 mean = 100. The obvious tells peak around 2025 and fall back; the subtler set keeps climbing. Panel B: the quarterly Kobak rare-style rate per 100k with Poisson 95\% whiskers, ChatGPT\textquotesingle s release marked and the interrupted-time-series break set there. The decades-long rise established above predates this jump.}
+\label{fig:trend}
+\end{figure}
+
 \subsection{The climb is everywhere except the United States}\label{sec:climb-geography}
 
 Running the same series on every chamber turns the thirty-year drift into a
@@ -619,6 +603,10 @@ establishes compatibility, not cause. A shared cause predicts the same
 correlation --- both the models and the global drift could be downstream of an
 American-dominated written corpus, with no common optimization involved. \cref{sec:future}
 names the instrument that would separate those two.
+
+\subsection{The register signal fires in every chamber, and it is not formality}\label{sec:register-robust}
+
+The climb has a floor. Even in the chambers that are flat over time, the register is strongly present in \emph{level}: applied against each chamber\textquotesingle s own pre-2022 counterfactual, the machine-overused vocabulary is elevated in every confirmatory chamber, and Fisher\textquotesingle s method over the 47 corpus specifications combines to \textbf{p ≈ 1.3×10⁻⁸³} (the discovery corpus, New Brunswick, is held out and reported separately, at excess +0.55). The effect is not a relabelling of formality: where a data-defined formality control exists --- Ireland, federal Canada, the UK --- the register excess exceeds the formality gap in every case (for instance UK Commons +0.26 against +0.09). The instrument measures something more specific than "this chamber speaks formally."\footnote{\texttt{python\ cross\_corpus.py}, reading each chamber\textquotesingle s frozen \texttt{*\_protocol.json} and \texttt{*\_formality.json}; Fisher\textquotesingle s method combines the per-corpus p-values over the confirmatory corpora only, per \texttt{replication\_protocol.md}. The discovery corpus is excluded from the combination and reported separately.}
 
 \subsection{A generational gradient, net of calendar drift}\label{sec:generational}
 
@@ -2324,6 +2312,224 @@ workplaces, which will have to teach people to work productively with advanced
 intelligences and can use a continuously-recalibrated baseline to measure
 whether they are.
 
+\subsection{Limits}\label{sec:limits}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Prevalence is a floor.} Detectors see undisguised machine text. A
+  directed search clears the detector on 11.1\% of variants and \textbf{22.5\% of
+  targets} (\cref{sec:quality}), so 9.0\% is a lower bound. How much of a lower bound is
+  not estimable from this design: we can measure how often evasion succeeds
+  when attempted, not how often it is attempted.
+\item
+  \textbf{The evasion rate is an upper bound on our own effort, not on anyone\textquotesingle s.}
+  Four runs over two days with a frontier model. A staff tool refined over
+  months, or a local model fine-tuned against the detector, is a different
+  adversary and we did not test one.
+\item
+  \textbf{Tasmania is uninterpretable} and excluded. All twenty-one screened
+  chambers now run the diagnostic (it previously globbed only the provinces;
+  CA-FED, US House and US Senate were added --- CA-FED flat, the two US chambers
+  a gradual multi-decade climb with no discrete step). The twenty pooled
+  chambers all pass; Tasmania, the twenty-first, is the sole exclusion. The diagnostic uses two convention-tracking markers,
+  not all of them.
+\item
+  \textbf{Mixed is pooled with AI} throughout. Reported separately in the CSV.
+\item
+  \textbf{The permeation effect is small} and rests on one instrument.
+\item
+  \textbf{This study measures register, not substance.} Whether machine assistance
+  changes \emph{what} is argued, which evidence is cited, or which framings are
+  reached for is not measured anywhere in \cref{sec:results}, and the frequency instrument
+  cannot measure it --- the Kobak style/content split is PubMed\textquotesingle s content and
+  does not transfer to a legislature. The quality arm (\cref{sec:quality}) is the closest
+  thing here, and it grades form rather than position. A domain-native
+  substance arm is buildable from materials we already hold (\cref{sec:future} item 1);
+  until it exists, no claim in this study should be read as being about the
+  content of legislative argument.
+\item
+  \textbf{Cohort mechanism is unidentified.} Three exposure tests null, and the
+  informative next evidence is a different kind rather than a fourth
+  operationalisation of the same kind (\cref{sec:future} items 2--4).
+\item
+  \textbf{No chamber requires AI disclosure}, so no ground truth exists anywhere;
+  every number rests on detector calibration rather than admission.
+\item
+  \textbf{Single detector.} Specificity is measured, but Pangram 4 is one vendor.
+\item
+  \textbf{Specificity is measured on the genres the controls happen to contain.}
+  1,260/1,260 is strong, but no tribute or eulogy is among them, and tributes
+  produced two of the five Oral Questions flags at maximal confidence (\cref{sec:genre}).
+  Until a pre-AI tribute control exists (\cref{sec:future} item 4a), the specificity claim
+  does not extend to that register.
+\item
+  \textbf{Judge leakage.} Screen and grading-judge AI guesses correlate at
+  r = +0.758. Controlling the judge\textquotesingle s own \texttt{ai\_guess} (Appendix~\ref{app:robustness}) leaves the
+  largest external-label conjuncts standing but over-attenuates others; the
+  only clean fixes are a human-coded subsample or grading style-normalised
+  text, neither yet done.
+\item
+  \textbf{Genre cells are not equally representative.} The length filter retains
+  95\% of SO31 but 6\% of Oral Questions (\cref{sec:genre}). Flag rate also rises with
+  segment length within a chamber, so the filter --- which keeps the longer
+  tail of each cell --- works in the same conservative direction for the
+  reported gradient, but it means the OQ figure is not an estimate of
+  Question Period as a whole.
+\item
+  \textbf{The quality arm is LLM-graded.} Repeat-pass reliability sits at or above
+  the published human inter-coder bar, but self-agreement is not inter-coder
+  agreement; the human-coded subsample remains the real validation and is not
+  done.
+\item
+  \textbf{The covariate effects are small, and small is what this kind of work
+  finds.} In the field\textquotesingle s common currency the study\textquotesingle s member-level effects
+  are correlations of r ≈ .07 (the insulation delta), r ≈ .10 (the class
+  block), r ≈ .14 (cohort in current speech), with a class-II era contrast
+  of d ≈ 0.2. Against empirical benchmarks for individual-differences
+  research --- Gignac \& Szodorai\textquotesingle s pool of 708 meta-analytically derived
+  correlations puts the 25th/50th/75th percentiles at r = .10/.20/.30
+  (\emph{Personality and Individual Differences} 102, 2016) --- these sit at or
+  below the typical published effect. Funder \& Ozer\textquotesingle s guidelines read the
+  same numbers forward: r = .05 is "very small" for single events "but
+  potentially consequential in the not-very long run," r = .10 "small\ldots{}
+  but potentially more ultimately consequential," r = .20 "medium"
+  (\emph{Advances in Methods and Practices in Psychological Science} 2, 2019).
+  Three things keep the small sizes honest rather than damning. They are
+  reliably estimated --- at n ≈ 3,600--4,800 the delta carries t ≈ 4 and holds
+  in 100\% of covariate specifications, which is the "critical
+  consideration" Funder \& Ozer\textquotesingle s guidance is conditioned on. They are
+  floors, not ceilings --- the register index is one thin lexical probe of
+  the behavior, and measurement error in a single index attenuates every
+  correlation toward zero. And the study\textquotesingle s real claim is structural, not
+  variance-explained: the same peak-below-the-summit shape appears in
+  class, in education, and in two occupational ladders built by
+  semi-independent processes, with the occupational gradient nesting inside
+  the class rungs --- replication across instruments of the kind
+  variance-share statistics do not measure. One benchmark cuts against us
+  and is kept: Funder \& Ozer flag r ≥ .40 as "likely to be a gross
+  overestimate," and our career-outcome cohort estimate (R ≈ .39) was
+  exactly that --- period mixing inflated it, and the era-restricted r ≈ .14
+  is the defensible number. Individual style is dominated by idiolect;
+  roughly five-sixths of within-chamber member variation stays unexplained
+  by everything we measure, which is the expected result in stylistic
+  variation, not a defect of the instrument.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Related work}\label{sec:related}
+
+Two prior efforts ran comparable designs on chambers in this corpus and
+reached opposite conclusions. \textbf{Neither used a calibrated commercial
+detector, and neither is peer-reviewed} --- one is a Substack post, the other a
+pseudonymous magazine piece. Details and primary-source verification in
+\texttt{PRIOR\_ART.md}.
+
+\begin{longtable}[]{@{}lll@{}}
+\caption{This study against the two closest prior efforts.}\label{tab:priorart}\\
+\toprule\noalign{}
+& Rice 2026 (Australian federal) & Pimlico Journal 2025 (UK Commons) \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+& Rice 2026 (Australian federal) & Pimlico Journal 2025 (UK Commons) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+instrument & Binoculars, Fast-DetectGPT, LLM judge, per-MP stylometry & z-score excess vocabulary \\
+corpus & 124,734 speeches, 2018-- & UK Commons \\
+result & \textbf{no} post-ChatGPT inflection & increase asserted \\
+calibration & 50 pre-ChatGPT / 50 Claude-written & none reported \\
+\end{longtable}
+
+\textbf{Rice does not claim evidence of absence, and should not be cited as
+though he does.} He measures his LLM judge at \textbf{20\% sensitivity} against
+known-AI speeches, and his own calibration script prints a verdict string for
+that case --- \emph{detector blind}. His stated reading is that no threshold
+separates the classes in parliamentary register, and that
+"it is inconceivable that only three or four federal politicians have used AI
+to draft a speech in the past three years." His null is a sensitivity failure
+he diagnoses himself.
+
+\textbf{One correction to how we previously answered him.} We wrote that his
+false-positive rate exceeded his detection rate, making the null
+uninformative. Rice does say this, but the two figures are measured at
+different thresholds --- the 8\% FPR at "highly likely AI" (≥8/10), the 7.1\%
+corpus rate at "possibly AI" (≥6/10) --- so the comparison does not hold as
+stated, and we should not have repeated it. The FPR itself is real but thin:
+\textbf{4 of 50}, Wilson CI {[}3.2\%, 18.8\%{]}, and it characterises a Haiku-class judge
+rather than the Sonnet-class judge behind his headline run. Our corresponding
+specificity is 0 in 1,260, measured chamber by chamber.
+
+The substantive answer to Rice is therefore about \textbf{sensitivity, not
+specificity}, and it generalises beyond his study. Binoculars (Hans et al.
+2024) and Fast-DetectGPT (Bao et al. 2024) are sound published methods that
+degrade severely on formal institutional prose: on the Sem-Detect
+peer-review benchmark reprinted in the Pangram 4 report (Table 27), both fall
+to roughly 6\% true-positive rate at 1\% FPR --- false-negative rates above 90\% ---
+where a calibrated commercial detector holds above 95\% (review item X3: this
+is one named benchmark, not several; on the easier Saha split Fast-DetectGPT
+does far better, so the claim is about hard institutional prose specifically). Hansard is the same kind of register. A null
+recovered with those instruments on this genre is close to uninformative, and
+Rice\textquotesingle s own numbers (Binoculars flagging 0.4\% of everything) look like exactly
+that.
+
+Pimlico\textquotesingle s agreement is \textbf{not} corroboration. Its method is the same family as
+the arm we demoted in \cref{sec:freq-descriptive} for lacking a trend control, it reports no
+prevalence estimate, and its own author hedges the finding as
+"LinkedIn-ification" rather than drafting. A method that agrees with us while
+sharing the defect we found in our own version of it is weak support, and
+should be treated as a third result to explain.
+
+\textbf{The closest prior work is parliamentary and recent, and we differ from it
+by instrument and scope, not conclusion.} Suvanto, McGlinchey, Barclay \&
+Wahde (arXiv:2606.14209, 2026) detect undisclosed LLM use in the UK and Swedish
+parliaments and find, as we do, a steady rise from 2022 --- but on \emph{written}
+motions rather than transcribed speech, in two chambers, with a bespoke
+glass-box classifier trained on pre-2022 text rather than a calibrated
+commercial detector, and without the register, cohort, occupational or quality
+arms here. ParliaBench (Koniaris et al., LREC 2026) is a generation-and-
+evaluation benchmark for parliamentary LLM text, not a prevalence study. Our
+contribution is not the existence of the phenomenon --- that is now independently
+established --- but measuring it at scale (22 chambers) with a detector whose
+specificity we verify chamber by chamber (0 in 1,260), calibrating prevalence,
+and separating the machine signal from a human register that predates the
+machines. Where Suvanto answers "is it happening" with a purpose-built
+classifier, we answer "how much, where, and what is it" with the better
+detector and the controls the answer needs.
+
+Both the lexical and detector literatures may be measuring something real and
+different. \cref{sec:permeation} predicts exactly this split: lexical methods fire on permeation
+that is not drafting, while detector methods get ambiguous because the human
+baseline is moving toward the thing being detected.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Policy context}\label{sec:policy}
+
+A 22-chamber scan found \textbf{zero chambers requiring AI-drafted text to be
+disclosed in the record, and none forbidding AI drafting.} Where rules
+exist they are IT-security instruments issued by Clerks and CIOs, not rules
+of authorship. The structural pattern: \textbf{where a Clerk governs staff, rules
+are detailed; where members govern themselves, there is nothing.}
+
+Strictest is the US House (HITPOL 8). The UK is the only chamber to address
+the question directly, and resolves it permissively --- AI-generated content in
+proceedings is the member\textquotesingle s own, "protected by privilege regardless of the
+tools used to produce that material." The only Speaker\textquotesingle s ruling anywhere in
+scope is Alberta, 2 December 2025: asked to extend the anti-staff-written-
+speeches rule to AI, Speaker Cooper ruled \textbf{"ChatGPT is not staff."}
+
+Coverage is partial for NI, Manitoba, PEI and South Australia --- absence of
+evidence, not evidence of absence. Among the six chambers where the scan is
+high-confidence, Saskatchewan, Nova Scotia and Newfoundland \& Labrador are
+equally solid nulls --- no AI-specific rule found (review item X10).
+(\texttt{ai\_policy\_scan.md}; figures unverified against primary sources.)
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
 \subsection{Future work}\label{sec:future}
 
 Grouped by what they would settle. Several were designed during the study and
@@ -2851,224 +3057,6 @@ differ in how novel they are likely to be.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\section{Limits}\label{sec:limits}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Prevalence is a floor.} Detectors see undisguised machine text. A
-  directed search clears the detector on 11.1\% of variants and \textbf{22.5\% of
-  targets} (\cref{sec:quality}), so 9.0\% is a lower bound. How much of a lower bound is
-  not estimable from this design: we can measure how often evasion succeeds
-  when attempted, not how often it is attempted.
-\item
-  \textbf{The evasion rate is an upper bound on our own effort, not on anyone\textquotesingle s.}
-  Four runs over two days with a frontier model. A staff tool refined over
-  months, or a local model fine-tuned against the detector, is a different
-  adversary and we did not test one.
-\item
-  \textbf{Tasmania is uninterpretable} and excluded. All twenty-one screened
-  chambers now run the diagnostic (it previously globbed only the provinces;
-  CA-FED, US House and US Senate were added --- CA-FED flat, the two US chambers
-  a gradual multi-decade climb with no discrete step). The twenty pooled
-  chambers all pass; Tasmania, the twenty-first, is the sole exclusion. The diagnostic uses two convention-tracking markers,
-  not all of them.
-\item
-  \textbf{Mixed is pooled with AI} throughout. Reported separately in the CSV.
-\item
-  \textbf{The permeation effect is small} and rests on one instrument.
-\item
-  \textbf{This study measures register, not substance.} Whether machine assistance
-  changes \emph{what} is argued, which evidence is cited, or which framings are
-  reached for is not measured anywhere in \cref{sec:results}, and the frequency instrument
-  cannot measure it --- the Kobak style/content split is PubMed\textquotesingle s content and
-  does not transfer to a legislature. The quality arm (\cref{sec:quality}) is the closest
-  thing here, and it grades form rather than position. A domain-native
-  substance arm is buildable from materials we already hold (\cref{sec:future} item 1);
-  until it exists, no claim in this study should be read as being about the
-  content of legislative argument.
-\item
-  \textbf{Cohort mechanism is unidentified.} Three exposure tests null, and the
-  informative next evidence is a different kind rather than a fourth
-  operationalisation of the same kind (\cref{sec:future} items 2--4).
-\item
-  \textbf{No chamber requires AI disclosure}, so no ground truth exists anywhere;
-  every number rests on detector calibration rather than admission.
-\item
-  \textbf{Single detector.} Specificity is measured, but Pangram 4 is one vendor.
-\item
-  \textbf{Specificity is measured on the genres the controls happen to contain.}
-  1,260/1,260 is strong, but no tribute or eulogy is among them, and tributes
-  produced two of the five Oral Questions flags at maximal confidence (\cref{sec:genre}).
-  Until a pre-AI tribute control exists (\cref{sec:future} item 4a), the specificity claim
-  does not extend to that register.
-\item
-  \textbf{Judge leakage.} Screen and grading-judge AI guesses correlate at
-  r = +0.758. Controlling the judge\textquotesingle s own \texttt{ai\_guess} (Appendix~\ref{app:robustness}) leaves the
-  largest external-label conjuncts standing but over-attenuates others; the
-  only clean fixes are a human-coded subsample or grading style-normalised
-  text, neither yet done.
-\item
-  \textbf{Genre cells are not equally representative.} The length filter retains
-  95\% of SO31 but 6\% of Oral Questions (\cref{sec:genre}). Flag rate also rises with
-  segment length within a chamber, so the filter --- which keeps the longer
-  tail of each cell --- works in the same conservative direction for the
-  reported gradient, but it means the OQ figure is not an estimate of
-  Question Period as a whole.
-\item
-  \textbf{The quality arm is LLM-graded.} Repeat-pass reliability sits at or above
-  the published human inter-coder bar, but self-agreement is not inter-coder
-  agreement; the human-coded subsample remains the real validation and is not
-  done.
-\item
-  \textbf{The covariate effects are small, and small is what this kind of work
-  finds.} In the field\textquotesingle s common currency the study\textquotesingle s member-level effects
-  are correlations of r ≈ .07 (the insulation delta), r ≈ .10 (the class
-  block), r ≈ .14 (cohort in current speech), with a class-II era contrast
-  of d ≈ 0.2. Against empirical benchmarks for individual-differences
-  research --- Gignac \& Szodorai\textquotesingle s pool of 708 meta-analytically derived
-  correlations puts the 25th/50th/75th percentiles at r = .10/.20/.30
-  (\emph{Personality and Individual Differences} 102, 2016) --- these sit at or
-  below the typical published effect. Funder \& Ozer\textquotesingle s guidelines read the
-  same numbers forward: r = .05 is "very small" for single events "but
-  potentially consequential in the not-very long run," r = .10 "small\ldots{}
-  but potentially more ultimately consequential," r = .20 "medium"
-  (\emph{Advances in Methods and Practices in Psychological Science} 2, 2019).
-  Three things keep the small sizes honest rather than damning. They are
-  reliably estimated --- at n ≈ 3,600--4,800 the delta carries t ≈ 4 and holds
-  in 100\% of covariate specifications, which is the "critical
-  consideration" Funder \& Ozer\textquotesingle s guidance is conditioned on. They are
-  floors, not ceilings --- the register index is one thin lexical probe of
-  the behavior, and measurement error in a single index attenuates every
-  correlation toward zero. And the study\textquotesingle s real claim is structural, not
-  variance-explained: the same peak-below-the-summit shape appears in
-  class, in education, and in two occupational ladders built by
-  semi-independent processes, with the occupational gradient nesting inside
-  the class rungs --- replication across instruments of the kind
-  variance-share statistics do not measure. One benchmark cuts against us
-  and is kept: Funder \& Ozer flag r ≥ .40 as "likely to be a gross
-  overestimate," and our career-outcome cohort estimate (R ≈ .39) was
-  exactly that --- period mixing inflated it, and the era-restricted r ≈ .14
-  is the defensible number. Individual style is dominated by idiolect;
-  roughly five-sixths of within-chamber member variation stays unexplained
-  by everything we measure, which is the expected result in stylistic
-  variation, not a defect of the instrument.
-\end{itemize}
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\section{Related work}\label{sec:related}
-
-Two prior efforts ran comparable designs on chambers in this corpus and
-reached opposite conclusions. \textbf{Neither used a calibrated commercial
-detector, and neither is peer-reviewed} --- one is a Substack post, the other a
-pseudonymous magazine piece. Details and primary-source verification in
-\texttt{PRIOR\_ART.md}.
-
-\begin{longtable}[]{@{}lll@{}}
-\caption{This study against the two closest prior efforts.}\label{tab:priorart}\\
-\toprule\noalign{}
-& Rice 2026 (Australian federal) & Pimlico Journal 2025 (UK Commons) \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-& Rice 2026 (Australian federal) & Pimlico Journal 2025 (UK Commons) \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-instrument & Binoculars, Fast-DetectGPT, LLM judge, per-MP stylometry & z-score excess vocabulary \\
-corpus & 124,734 speeches, 2018-- & UK Commons \\
-result & \textbf{no} post-ChatGPT inflection & increase asserted \\
-calibration & 50 pre-ChatGPT / 50 Claude-written & none reported \\
-\end{longtable}
-
-\textbf{Rice does not claim evidence of absence, and should not be cited as
-though he does.} He measures his LLM judge at \textbf{20\% sensitivity} against
-known-AI speeches, and his own calibration script prints a verdict string for
-that case --- \emph{detector blind}. His stated reading is that no threshold
-separates the classes in parliamentary register, and that
-"it is inconceivable that only three or four federal politicians have used AI
-to draft a speech in the past three years." His null is a sensitivity failure
-he diagnoses himself.
-
-\textbf{One correction to how we previously answered him.} We wrote that his
-false-positive rate exceeded his detection rate, making the null
-uninformative. Rice does say this, but the two figures are measured at
-different thresholds --- the 8\% FPR at "highly likely AI" (≥8/10), the 7.1\%
-corpus rate at "possibly AI" (≥6/10) --- so the comparison does not hold as
-stated, and we should not have repeated it. The FPR itself is real but thin:
-\textbf{4 of 50}, Wilson CI {[}3.2\%, 18.8\%{]}, and it characterises a Haiku-class judge
-rather than the Sonnet-class judge behind his headline run. Our corresponding
-specificity is 0 in 1,260, measured chamber by chamber.
-
-The substantive answer to Rice is therefore about \textbf{sensitivity, not
-specificity}, and it generalises beyond his study. Binoculars (Hans et al.
-2024) and Fast-DetectGPT (Bao et al. 2024) are sound published methods that
-degrade severely on formal institutional prose: on the Sem-Detect
-peer-review benchmark reprinted in the Pangram 4 report (Table 27), both fall
-to roughly 6\% true-positive rate at 1\% FPR --- false-negative rates above 90\% ---
-where a calibrated commercial detector holds above 95\% (review item X3: this
-is one named benchmark, not several; on the easier Saha split Fast-DetectGPT
-does far better, so the claim is about hard institutional prose specifically). Hansard is the same kind of register. A null
-recovered with those instruments on this genre is close to uninformative, and
-Rice\textquotesingle s own numbers (Binoculars flagging 0.4\% of everything) look like exactly
-that.
-
-Pimlico\textquotesingle s agreement is \textbf{not} corroboration. Its method is the same family as
-the arm we demoted in \cref{sec:freq-descriptive} for lacking a trend control, it reports no
-prevalence estimate, and its own author hedges the finding as
-"LinkedIn-ification" rather than drafting. A method that agrees with us while
-sharing the defect we found in our own version of it is weak support, and
-should be treated as a third result to explain.
-
-\textbf{The closest prior work is parliamentary and recent, and we differ from it
-by instrument and scope, not conclusion.} Suvanto, McGlinchey, Barclay \&
-Wahde (arXiv:2606.14209, 2026) detect undisclosed LLM use in the UK and Swedish
-parliaments and find, as we do, a steady rise from 2022 --- but on \emph{written}
-motions rather than transcribed speech, in two chambers, with a bespoke
-glass-box classifier trained on pre-2022 text rather than a calibrated
-commercial detector, and without the register, cohort, occupational or quality
-arms here. ParliaBench (Koniaris et al., LREC 2026) is a generation-and-
-evaluation benchmark for parliamentary LLM text, not a prevalence study. Our
-contribution is not the existence of the phenomenon --- that is now independently
-established --- but measuring it at scale (22 chambers) with a detector whose
-specificity we verify chamber by chamber (0 in 1,260), calibrating prevalence,
-and separating the machine signal from a human register that predates the
-machines. Where Suvanto answers "is it happening" with a purpose-built
-classifier, we answer "how much, where, and what is it" with the better
-detector and the controls the answer needs.
-
-Both the lexical and detector literatures may be measuring something real and
-different. \cref{sec:permeation} predicts exactly this split: lexical methods fire on permeation
-that is not drafting, while detector methods get ambiguous because the human
-baseline is moving toward the thing being detected.
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\section{Policy context}\label{sec:policy}
-
-A 22-chamber scan found \textbf{zero chambers requiring AI-drafted text to be
-disclosed in the record, and none forbidding AI drafting.} Where rules
-exist they are IT-security instruments issued by Clerks and CIOs, not rules
-of authorship. The structural pattern: \textbf{where a Clerk governs staff, rules
-are detailed; where members govern themselves, there is nothing.}
-
-Strictest is the US House (HITPOL 8). The UK is the only chamber to address
-the question directly, and resolves it permissively --- AI-generated content in
-proceedings is the member\textquotesingle s own, "protected by privilege regardless of the
-tools used to produce that material." The only Speaker\textquotesingle s ruling anywhere in
-scope is Alberta, 2 December 2025: asked to extend the anti-staff-written-
-speeches rule to AI, Speaker Cooper ruled \textbf{"ChatGPT is not staff."}
-
-Coverage is partial for NI, Manitoba, PEI and South Australia --- absence of
-evidence, not evidence of absence. Among the six chambers where the scan is
-high-confidence, Saskatchewan, Nova Scotia and Newfoundland \& Labrador are
-equally solid nulls --- no AI-specific rule found (review item X10).
-(\texttt{ai\_policy\_scan.md}; figures unverified against primary sources.)
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
 \section*{Materials and methods}
 
 \section{Data}\label{sec:data}
@@ -3250,6 +3238,29 @@ Mistral synthetic sensitivity corpus & deleted & too few words to carry variance
 
 \appendix
 \section*{Supplementary materials}
+
+\subsection*{Provenance and reproducibility}
+
+\textbf{S10 --- draft write-up, 2026-08-11; \cref{sec:class} and Appendix~\ref{app:null} extended
+2026-08-13.} All arms complete, including the detector-bypass study and both
+prior-art comparators. Everything is reproducible from \texttt{analysis/s10/}.
+
+\textbf{\cref{sec:class}\textquotesingle s literature citations were web-verified 2026-08-24.} The result is
+placed against Labov (crossover/hypercorrection, \emph{Sociolinguistic Patterns},
+U. Pennsylvania Press, 1972), Simmel (1904), Veblen (1899), Jhering (1883)
+with Durkheim\textquotesingle s summary supplying the quote, and Lieberson (\emph{A Matter of
+Taste}, Yale, 2000); a fetched entry wrong on Labov\textquotesingle s year and publisher has
+been corrected. That subsection also reports standard errors not clustered on
+member, which the study has been bitten by three times; it is flagged in
+place.
+
+\textbf{Numbers marked † are carried from earlier in the study.} All nine were
+re-derived from their artifacts on 2026-08-11 and reproduce; footnotes on each
+give the script and invocation. Two of the nine (\cref{sec:generational}\textquotesingle s cohort share, \cref{sec:posttraining}\textquotesingle s
+pooled alignment effect) were briefly and wrongly recorded as unsourced --- the
+verification pass had looked in the wrong script --- so their footnotes name the
+right one explicitly. Everything unmarked was computed or re-verified on
+2026-08-09/11 and names its source file.
 
 \section{Null results}\label{app:null}
 

@@ -38,6 +38,7 @@ LABELS = {
  "44-the-opus-screen-tracks-pangram":"sec:screen-pangram",
  "45-the-register-shift-starts-in-199496-decades-before-the-machines":"sec:register-shift",
  "45a-the-climb-is-everywhere-except-the-united-states":"sec:climb-geography",
+ "45b-the-register-signal-fires-in-every-chamber-and-it-is-not-formality":"sec:register-robust",
  "46-a-generational-gradient-net-of-calendar-drift":"sec:generational",
  "46a-class-and-the-register-jointly-significant-individually-noisy--and-education-is-not-it":"sec:class",
  "all-four-predictors-at-once":"sub:four-predictors",
@@ -96,7 +97,7 @@ APPMAP = {
  "D.4":"sec:cohort-ministerial",
 }
 FIGLABEL = {"class_by_era_grouped.png":"fig:class-era","altitude_u.png":"fig:altitude",
-            "bypass_search.png":"fig:bypass"}
+            "the-ai-lexicon-trend.png":"fig:trend","bypass_search.png":"fig:bypass"}
 
 NUMSTRIP = re.compile(r'^(?:Appendix\s+[A-D]\s+---\s+|(?:[0-9]+(?:\.[0-9]+[a-z]?)?|[A-D]\.[0-9]+[a-z]?)\.?\s+)')
 
@@ -174,6 +175,8 @@ def figure_ref_anchors(t):
        r"\g<0> (\\cref{fig:class-era})"),
       (r"carry\s+the\s+claim\.",
        r"carry the claim; \\cref{fig:altitude} plots both ladders."),
+      (r"the two instruments then\s+part ways",
+       r"the two instruments then part ways (\\cref{fig:trend})"),
       (r"The\s+figure\s+below\s+lays\s+out\s+the\s+loop\.",
        r"\\Cref{fig:bypass} lays out the loop."),
       (r"reported\s+individually\s+in\s+the\s+table\s+below",
@@ -192,16 +195,13 @@ def insert_appendix(t):
         sys.stderr.write("WARN: app:null heading not found for \\appendix\n")
     return t
 
-PUB_ORDER = ["sec:intro","sec:results","sec:discussion","sec:limits",
-             "sec:related","sec:policy","sec:data","sec:method"]
+PUB_ORDER = ["sec:intro","sec:results","sec:discussion","sec:data","sec:method"]
+MERGE_INTO_DISCUSSION = ["sec:limits","sec:related","sec:policy"]  # demoted to subsections
 
 def reorder(t):
-    """Drafting order (markdown) -> publication order (Science: Methods last).
-
-    Head (abstract + provenance preamble) stays first; the eight body sections
-    are reordered into PUB_ORDER; the \\appendix..EOF tail (Supplementary)
-    stays last. Cross-references are labels, so numbering follows automatically.
-    """
+    """Drafting order (markdown) -> publication order (Science: Methods last),
+    merging Limits/Related/Policy into Discussion as subsections and relocating
+    the post-abstract provenance block to Supplementary materials."""
     intro = re.search(r'\\section\{[^{}]*\}\\label\{sec:intro\}', t)
     app = re.search(r'\\appendix', t)
     if not (intro and app):
@@ -210,21 +210,42 @@ def reorder(t):
     starts = [(m.start(), m.group(1)) for m in
               re.finditer(r'\\section\{[^{}]*\}\\label\{(sec:[a-z-]+)\}', middle)]
     blocks = {}
-    for i,(pos,lab) in enumerate(starts):
+    for i, (pos, lab) in enumerate(starts):
         end = starts[i+1][0] if i+1 < len(starts) else len(middle)
         blocks[lab] = middle[pos:end]
-    if set(PUB_ORDER) != set(blocks):
-        sys.stderr.write("WARN: reorder section set mismatch: %r\n" %
-                         (set(PUB_ORDER) ^ set(blocks))); return t
-    # a Materials-and-Methods divider before the Data section
+    expected = set(PUB_ORDER) | set(MERGE_INTO_DISCUSSION)
+    if expected != set(blocks):
+        sys.stderr.write("WARN: reorder section set mismatch: %r\n" % (expected ^ set(blocks))); return t
+
+    # merge Limits/Related/Policy into Discussion, before the Future work subsection
+    disc = blocks["sec:discussion"]
+    demoted = "".join(re.sub(r'\\section\{', r'\\subsection{', blocks[lab], count=1)
+                      for lab in MERGE_INTO_DISCUSSION)
+    mfut = re.search(r'\\subsection\{[^{}]*\}\\label\{sec:future\}', disc)
+    disc = (disc[:mfut.start()] + demoted + disc[mfut.start():]) if mfut else (disc + demoted)
+    blocks["sec:discussion"] = disc
+
+    # relocate the provenance block (between the two thematic-break rules in head)
+    RULE = "\\begin{center}\\rule{0.5\\linewidth}{0.5pt}\\end{center}"
+    prov = ""
+    if head.count(RULE) >= 2:
+        hp = head.split(RULE)
+        head = hp[0].rstrip() + "\n\n"
+        prov = hp[1].strip()
+
     pieces = []
     for lab in PUB_ORDER:
         if lab == "sec:data":
             pieces.append("\\section*{Materials and methods}\n\n")
         pieces.append(blocks[lab])
-    sys.stderr.write("reorder: %d sections -> publication order\n" % len(starts))
-    return head + "".join(pieces) + tail
-
+    tail_out = tail
+    if prov:
+        marker = "\\section*{Supplementary materials}\n\n"
+        note = marker + "\\subsection*{Provenance and reproducibility}\n\n" + prov + "\n\n"
+        tail_out = tail_out.replace(marker, note, 1)
+    sys.stderr.write("reorder: merged %d sections into Discussion; provenance moved=%s\n"
+                     % (len(MERGE_INTO_DISCUSSION), bool(prov)))
+    return head + "".join(pieces) + tail_out
 
 # 35 tables in DRAFTING order: (header keyword for a safety check, label, caption).
 # longtable's own \caption auto-numbers and stays inline (no float drift).
@@ -265,6 +286,7 @@ TABLE_CAPS = [
  ("quintile & CA provinces", "tab:prominence-buckets", "Register by prominence quintile, by chamber group and pooled."),
  ("cells & birth gradient", "tab:cohort-office", "The cohort gradient among office- and non-office-holders."),
 ]
+
 
 def inject_table_captions(t):
     parts = re.split(r'(\\begin\{longtable\}[^\n]*\n)', t)

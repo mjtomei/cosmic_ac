@@ -563,6 +563,14 @@ Read together with §4.7, the interesting reading is not "LLMs changed
 parliamentary register" but that **human register had been moving toward what
 instruct-tuning later selected for, for thirty years.** †
 
+The machines then accelerated it, and left a fingerprint of their own suppression. In New Brunswick — the one corpus sampled densely enough to resolve quarters — an interrupted time series with the break pre-set at ChatGPT's release finds a flat pre-2023 slope (−1.2%/yr) turning to **+23.7%/yr** afterward, significant against 1,000 frequency-matched placebo word sets (p = 0.007; Mann–Kendall p = 0.014). But the two instruments then part ways: the *obvious* tells — the Wikipedia "signs of AI writing" set — peak around 2025 and fall back, while the subtler Kobak rare-style set keeps climbing. The natural reading is that the conspicuous words became notorious and were trained or edited away, while the register underneath kept rising. The peak-and-fall of the obvious tells shows in some other chambers too — UK Commons and the US House both turn down after 2024 — though it is not universal (Ireland's keep rising), so this is a suggestive cross-chamber pattern rather than a law; the clean two-instrument contrast is sharpest in the densely-sampled discovery corpus.[^rits]
+
+![](the-ai-lexicon-trend.png)
+
+*The recent acceleration, New Brunswick Hansard. Panel A: yearly rates on both instruments — the Wikipedia "signs of AI writing" set and Kobak rare-style words — each indexed to its own pre-2023 mean = 100. The obvious tells peak around 2025 and fall back; the subtler set keeps climbing. Panel B: the quarterly Kobak rare-style rate per 100k with Poisson 95% whiskers, ChatGPT's release marked and the interrupted-time-series break set there. The decades-long rise established above predates this jump.*
+
+[^rits]: `python fig_trend.py` for New Brunswick — the interrupted time series is weighted least squares on log quarterly rates with a break pre-specified at 2023.0, and the empirical p for the slope change comes from 1,000 frequency-matched placebo word sets run through the identical fit. The cross-chamber comparison is `python build_trend_cache.py && python plot_trend_from_cache.py`; indexed yearly rates for six chambers are in `trend_multichamber.csv`.
+
 ### 4.5a The climb is everywhere except the United States
 
 Running the same series on every chamber turns the thirty-year drift into a
@@ -687,6 +695,12 @@ names the instrument that would separate those two.
     stages of one drift. Reported on all words. US/UK spelling pairs and
     one-word orthographic forms (`percent` for "per cent") are reported as a
     separate stratum, along with two harsher filters, as robustness only.
+
+### 4.5b The register signal fires in every chamber, and it is not formality
+
+The climb has a floor. Even in the chambers that are flat over time, the register is strongly present in *level*: applied against each chamber's own pre-2022 counterfactual, the machine-overused vocabulary is elevated in every confirmatory chamber, and Fisher's method over the 47 corpus specifications combines to **p ≈ 1.3×10⁻⁸³** (the discovery corpus, New Brunswick, is held out and reported separately, at excess +0.55). The effect is not a relabelling of formality: where a data-defined formality control exists — Ireland, federal Canada, the UK — the register excess exceeds the formality gap in every case (for instance UK Commons +0.26 against +0.09). The instrument measures something more specific than "this chamber speaks formally."[^r45cc]
+
+[^r45cc]: `python cross_corpus.py`, reading each chamber's frozen `*_protocol.json` and `*_formality.json`; Fisher's method combines the per-corpus p-values over the confirmatory corpora only, per `replication_protocol.md`. The discovery corpus is excluded from the combination and reported separately.
 
 ### 4.6 A generational gradient, net of calendar drift
 
