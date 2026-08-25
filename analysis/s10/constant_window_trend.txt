@@ -1,0 +1,24 @@
+chamber                    2006   2026  change   %/yr
+UK Commons                  655   1444   2.20x  +4.0
+Scotland                    605   1058   1.75x  +2.8
+Northern Ireland            739   1165   1.58x  +2.3
+Wales                      1276   1961   1.54x  +2.2
+Saskatchewan               1612   2145   1.33x  +1.4
+British Columbia           1542   2049   1.33x  +1.4
+Manitoba                   1636   2136   1.31x  +1.3
+Western Australia          1366   1751   1.28x  +1.3
+Victoria                   1619   2043   1.26x  +1.2
+Queensland                 1746   2199   1.26x  +1.2
+Tasmania                   1631   2049   1.26x  +1.1
+Nova Scotia                1811   2265   1.25x  +1.1
+New South Wales            1276   1593   1.25x  +1.1
+Alberta                    1746   2125   1.22x  +1.0
+Ontario                    1707   2013   1.18x  +0.8
+Newfoundland & Labrador    1436   1532   1.07x  +0.3
+US Senate                  1590   1562   0.98x  -0.1
+Prince Edward Island       1589   1523   0.96x  -0.2
+US House                   1794   1709   0.95x  -0.2
+
+Spearman(2006 level, growth) = -0.56  (n=19)
+RTM-robust: Spearman(2006-08 mean level, 2010-2026 growth) = -0.51 (n=18)
+chambers rising on the constant window: 16 of 19

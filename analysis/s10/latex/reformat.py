@@ -163,6 +163,8 @@ def figure_ref_anchors(t):
        r"\\Cref{fig:bypass} lays out the loop."),
       (r"comparing legislatures whose group histories\s+differ, below",
        r"comparing legislatures whose group histories differ (\\cref{fig:apc}), below"),
+      (r"The\s+search\s+loop\s+generates\s+and\s+screens\s+variants",
+       r"The search loop (\\cref{fig:bypass}) generates and screens variants"),
       (r"reported\s+individually\s+in\s+the\s+table\s+below",
        r"reported individually in \\cref{tab:prevalence}"),
     ]

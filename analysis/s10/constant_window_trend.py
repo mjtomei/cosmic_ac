@@ -44,3 +44,23 @@ with open(os.path.join(HERE,"constant_window_trend.csv"),"w",newline="") as f:
 print(f"{'chamber':24s}{'2006':>7s}{'2026':>7s}{'change':>8s}{'%/yr':>7s}")
 for nm,g0,g1,r,p in rows: print(f"{nm:24s}{g0:7.0f}{g1:7.0f}{r:7.2f}x{p:+6.1f}")
 print(f"\nSpearman(2006 level, growth) = {rho:+.2f}  (n={n})")
+
+# RTM-robust variant (review AL5): baseline level from 2006-08 means, growth
+# measured on the DISJOINT 2010-2026 span, so endpoint noise cannot couple.
+rows2=[]
+for ch, ser in d.items():
+    if ch.startswith("_") or ch in ("CA-FED","IE"): continue
+    by={r["year"]: r for r in ser}
+    base=[by[y]["gap"] for y in (2006,2007,2008) if y in by]
+    if base and 2010 in by and 2026 in by:
+        lvl=sum(base)/len(base)
+        g=(math.exp(math.log(by[2026]["gap"]/by[2010]["gap"])/16)-1)*100
+        rows2.append((NAME.get(ch,ch),lvl,g))
+xs2=[r[1] for r in rows2]; ys2=[r[2] for r in rows2]
+rx,ry=rank(xs2),rank(ys2); n2=len(rows2)
+mx=sum(rx)/n2; my=sum(ry)/n2
+rho2=sum((a-mx)*(b-my) for a,b in zip(rx,ry))/math.sqrt(
+    sum((a-mx)**2 for a in rx)*sum((b-my)**2 for b in ry))
+rise=sum(1 for r in rows if r[4]>0)
+print(f"RTM-robust: Spearman(2006-08 mean level, 2010-2026 growth) = {rho2:+.2f} (n={n2})")
+print(f"chambers rising on the constant window: {rise} of {len(rows)}")

@@ -16,6 +16,8 @@
 
 **Suggested fix.** Either restrict the post-era sample to segments Pangram scores Human (reporting the detector-dependence honestly as a robustness check), or bound the contamination arithmetically (show +0.0099 exceeds what the measured prevalence × the flagged-text delta could produce), or weaken the claim to 'the record is drifting' rather than 'human speech independently of drafting'.
 
+**Matthew's ruling (recorded; action pending).** Matthew: agreed — generate the result excluding 2023-and-after (a pre-LLM era contrast, where no machine text is possible, carries the 'independently of drafting' clause directly). QUEUED: requires a fresh GPU scoring pass over new era samples through the identical word_context pipeline; will run with the in-time placebo below as one job
+
 ### AL2. [argument-logic] §2.2 / Table 2 / §5.1
 
 > A chamber's false-positive rate depends on its own editorial register, so specificity is not transferable — each chamber buys its own 60-segment pre-AI control.
@@ -28,45 +30,9 @@
 
 **Suggested fix.** Either argue explicitly that specificity partially transfers (softening §5.1) and propagate a pooled-specificity term into per-chamber intervals, or add per-chamber specificity uncertainty to Table 2 and stop quoting low-end chamber rates and the elevenfold ratio as if calibration-exact.
 
-### AL3. [argument-logic] §2.14 Bypass study (headline)
+**Matthew's ruling (recorded; action pending).** Matthew: agreed — never claim only-own-chamber inference; PARTIALLY APPLIED: §3.1 softened to 'not assumed to transfer' with the pooled 1,260 as the family bound, and §4.2 gains the low-row slack note (60/60 Wilson floor 94%; pooled floor caps FP at 0.3pp). PENDING: survey prior work for the standard calibration methodology (per-corpus vs pooled), and expand per-chamber controls if per-legislature independence is the standard — a Pangram-credit spend decision
 
-> The headline: asking a general-purpose model to rework a speech in a loop beats the commercial evasion industry by about tenfold. ... which get 2.31% of documents past it, this search gets 22.5% of targets past it: 9.8×.
-
-**Problem.** The paper's own Table 23 note declares this exact comparison invalid: 'The per-target row is italicised because it allows up to eighteen attempts per document, and no published benchmark grants that; it is ... the wrong number for a detector comparison.' The commensurable comparison the paper itself identifies is per-variant 11.1% vs 2.31% ≈ 4.8×, not 'about tenfold'; the 66× against clean FNR compounds the same mismatch. The headline leads with a ratio the paper later proves is between incommensurable quantities.
-
-**Reviewer's check.** Compared the headline paragraph against Table 23 and its accompanying text within the same section; recomputed the commensurable ratio (11.1/2.31 = 4.8).
-
-**Refuter's verification.** Quote verbatim in §2.14. Recomputed: 22.5/2.31 = 9.7×, 11.1/2.31 = 4.8× — both match, and Table 23 itself prints '4.8× the humanizers' on the per-variant row and '9.8× the humanizers' on the italicised per-target row. The same subsection's commensurability note reads: 'The per-variant row is the one commensurable with the vendor rows, which are also document-level FNRs on one adversarially prepared submission... The per-target row is italicised because it allows up to eighteen attempts per document, and no published benchmark grants that; it is the right number for exposure, the wrong number for a detector comparison.' The bolded headline compares against the humanizers' single-submission 2.31% using the ≤18-attempt per-target rate — exactly the comparison the section's own rule disqualifies. Best defense — reading the headline as an attack-pipeline (exposure) comparison — fails because the humanizer figure contains no retries, so the ratio is inflated by the retry budget regardless of framing; the paper's own text says per-variant exceeds 2.31% 'because... a stronger attack,' making 4.8× the internally consistent headline. [verdict carried from the first refutation pass; this dimension's second-pass refuter hit the session limit]
-
-**Suggested fix.** Make ~5× (per-variant vs humanizers) the headline ratio, and present 22.5% only as the exposure number it is defined to be.
-
-### AL4. [argument-logic] §2.6 (Other chambers converge on the level the United States already held)
-
-> So the picture is not a common shift. It is chambers converging upward on a level the United States already held before the consumer web, while the United States barely moves.
-
-**Problem.** The section's own caveat destroys its headline: 'Chamber levels are therefore partly definitional: a US-derived yardstick will score US speech high whatever is happening. The defensible comparison is the within-chamber trend.' The convergence-toward-the-US-level story (Tables 7–8, 'They caught up; they did not pass') is a cross-chamber level comparison — the exact comparison the caveat rules indefensible. If the US sits high by construction of the Kobak instrument, 'other chambers converging on the US level' is partly an artifact of the ruler, and the Americanization reading built on it (feeding Table 9's interpretation) is not established.
-
-**Reviewer's check.** Compared the section's headline and Tables 7–8 against its own instrument caveat paragraph; confirmed no US-independent level instrument is used anywhere in the section.
-
-**Refuter's verification.** Quote verbatim in §2.6. Read the section end-to-end: Tables 6–8, the 1994-values-settle-it paragraph, and 'They caught up; they did not pass' are all cross-chamber level comparisons on a US-derived (PubMed/Kobak) yardstick, and the section's own caveat then states: 'Chamber levels are therefore partly definitional: a US-derived yardstick will score US speech high whatever is happening. The defensible comparison is the within-chamber trend, and that is where the finding sits.' The headline's distinctive content — 'a level the United States already held' — is irreducibly a level claim, so the caveat names the artifact the headline relies on, and the caveat's closing sentence is false of the section's actual finding. Best defense — the within-chamber trends (US flat since 1994, UK climbing 4%/yr) are unconfounded and carry part of the picture — supports a downgraded reading ('consistent with a US ceiling') but cannot carry 'on a level the US already held,' which requires exactly the cross-chamber level comparability the section disclaims. [verdict carried from the first refutation pass; this dimension's second-pass refuter hit the session limit]
-
-**Suggested fix.** Restate the section's conclusion in within-chamber terms (US flat, others rising) and explicitly mark the 'level the US already held' framing as unresolvable with a US-derived word list, deferring the level claim to the §3.8 1a register-feature instrument.
-
-### AL5. [argument-logic] §2.6 / Table 6 (constant-window trend)
-
-> on that single ruler the pattern is convergence: the lower a chamber started, the faster it climbed (Spearman between 2006 level and growth −0.56, n = 19).
-
-**Problem.** Regression-to-the-mean coupling: growth is computed as (gap2026/gap2006)^(1/20), so the noisy 2006 endpoint enters the level positively and the growth negatively, mechanically inducing a negative correlation with no true convergence. Endpoint values rest on one sampled year per chamber, so this noise is material. Additionally the 19 chambers are treated as independent while the four fastest climbers are exactly the four UK-family chambers — one polity cluster (and the polity the placebo sets were built on), so a single shared-country factor is an unexamined alternative to convergence.
-
-**Reviewer's check.** Verified from footnote 12 and constant_window_trend.py's description that both variables are computed from the same 2006 endpoint; verified no split-sample or independent-baseline check (e.g., 2006–08 mean level vs later growth) is reported; noted the country clustering of the top four rows in Table 6.
-
-**Refuter's verification.** Quote verbatim in §2.6. Footnote 12 confirms growth is the geometric rate between the 2006 and 2026 endpoint values, so the −0.56 correlates growth against its own 2006 denominator — the classic Friedman/regression-to-the-mean coupling: endpoint noise enters level and growth with opposite signs, biasing the correlation negative. Endpoint values are single-year gaps estimated from sampled sitting days (Table 8's series sds run 36–134 on multi-year means, so single-year noise is nontrivial). Searched the section: no acknowledgment, no placebo (2006-level vs 2026-level), no split-sample baseline. Best defense — the four lowest starters (UK, SCO, NI, WAL at 605–1,276 vs 1,276–1,811) sit hundreds of points below the rest, far beyond plausible endpoint noise, so the qualitative convergence likely survives — shows the bias probably does not produce −0.56 entirely, but the finding claims bias-plus-no-acknowledgment, not fabrication, and both halves are accurate; the paper states the four-lowest-starters fact without framing it as robustness to the coupling. [verdict carried from the first refutation pass; this dimension's second-pass refuter hit the session limit]
-
-**Suggested fix.** Recompute with the baseline estimated from years disjoint from those defining growth (e.g., 2006–08 mean level vs 2010–2026 growth), report the correlation with country-cluster-robust inference, and soften 'the pattern is convergence' accordingly.
-
-*Also flagged by: CB4, ST11.*
-
-### AL6. [argument-logic] §2.13 Permeation
+### AL3. [argument-logic] §2.13 Permeation
 
 > Small, but it is the only permeation evidence that does not route through a detector, and it survives the failure mode that demoted the lexicon arm.
 
@@ -78,57 +44,7 @@
 
 **Suggested fix.** Run the in-time placebo the demotion standard requires (e.g., 2015-vs-2019 era pairs through the identical pipeline); until then state that the instrument shares the lexicon arm's exposure to the pre-existing drift rather than claiming it survives that failure mode.
 
-### AL7. [argument-logic] Abstract (and §1)
-
-> This machine-drafted speech is not degraded: once genre is held fixed, AI-flagged contributions are better-formed and no less engaged.
-
-**Problem.** The abstract states only the favorable half of a pair §2.14 says must be 'stated separately': the engagement null holds only conditional on there being something to engage with, and 'separately, AI-flagged speech is about half as likely to contain anything to engage with — a real difference, not a null' (applicability falls from ~61–63% to ~31% at high screen scores). 'No less engaged' as an unconditional abstract-level claim contradicts the paper's own conceded engagement-opportunity deficit.
-
-**Reviewer's check.** Compared the abstract and §1's 'no quality penalty' against §2.14's applicability paragraph, which explicitly separates the two claims and calls the collapse 'a real difference, not a null'.
-
-**Refuter's verification.** Quote verbatim in the abstract; §3.3 echoes it ('better-formed, not worse-engaged on the DQI'). §2.14 states the null is conditional and insists the two claims 'are stated separately (review item Q1)': applicability collapses at high screen scores (61.4%/63.0% vs 31.1% for respect demands), and 'AI-flagged speech is about half as likely to contain anything to engage with — a real difference, not a null.' Stage 6 additionally finds 'every machine arm sits below the human 2.07 on checkable specifics.' The abstract drops exactly the conditional the body establishes as required. Best defense — stage 6c attributes the collapse to weak tools rather than machine text as such — reframes the mechanism but does not undo the wild-text fact, and the abstract's unconditional conjunct remains contradicted by the body's own applicability finding. [verdict carried from the first refutation pass; this dimension's second-pass refuter hit the session limit]
-
-**Suggested fix.** Carry the conditional into the abstract: 'no less engaged where there is something to engage with, though flagged speech is about half as likely to contain anything to engage with'.
-
-*Also flagged by: CE1.*
-
-### AL8. [argument-logic] §2.14 (closing paragraph, 'What this means for the prevalence number')
-
-> Evasion is real, clears the detector on roughly one flagged speech in five under directed search, and is free in deliberative-quality terms — so 9.0% is a floor
-
-**Problem.** 'Free in deliberative-quality terms' overstates the paper's own stated power: the same section says the paired nulls have detectable-effect bounds of ±0.12–0.26 per dimension, 'commensurate with the study's own headline effects (+0.22 to +0.29)', so 'these nulls say the evasion edit produces nothing dramatic, not that it produces nothing at the scale the study elsewhere reports.' Stage 5's target-level n is 15. A conclusion of 'free' does not follow from nulls the section concedes cannot exclude headline-scale effects; §3.3 then compounds it ('need not fear that evasion ... degrades the metric it watches').
-
-**Reviewer's check.** Compared the closing claim against the section's own review-item-Q3 power statement and stage-5 sample sizes.
-
-**Refuter's verification.** The same section's power statement bounds detectable effects at ±0.12–0.26 per dimension and calls that commensurate with the study's own headline effects (+0.22 to +0.29); stage 5 aggregates to n=15 targets. The closing paragraph qualifies 'free' only on effort, never on power, and §3.3 mirrors the unqualified form. A set of nulls whose conceded detectable-effect floor sits at the study's own headline effect sizes cannot support 'free'.
-
-**Suggested fix.** Replace 'free in deliberative-quality terms' with 'shows no detectable quality cost at the arms' power, which cannot exclude effects at the study's headline scale', and mirror that bound in §3.3.
-
-### AL10. [argument-logic] §3.3 (The substitution)
-
-> machine-assisted text grades better-formed, not worse-engaged on the DQI — so policing authorship does not protect quality, because the authorship detection would flag is not where the quality deficit is.
-
-**Problem.** The premise 'not where the quality deficit is' is contradicted by two quality deficits the paper itself locates in machine/flagged text: the applicability collapse (flagged speech about half as likely to contain anything to engage with, §2.14) and the evidence channel (stage 6: 'every machine arm sits below the human 2.07 on checkable specifics'; the wild evidence lift is 'entirely length'). Given those, authorship is associated with real quality deficits on at least two dimensions, and the argument that authorship policing has no quality-protective content does not go through as stated.
-
-**Reviewer's check.** Traced the §3.3 premise against §2.14's applicability paragraph and the stage-6 evidence result within the compiled text.
-
-**Refuter's verification.** Traced both cited deficits: §2.14's Q1 paragraph states 'AI-flagged speech is about half as likely to contain anything to engage with — a real difference, not a null' (applicability 61.4/63.0 → 31.1 at screen ≥50), and stage 6 puts every machine arm below the human 2.07 on checkable specifics with the wild evidence lift 'entirely length'. §3.3's 'not worse-engaged' silently drops the paper's own conjunct split, and 'not where the quality deficit is' is contradicted by the paper's own located deficits.
-
-**Suggested fix.** Qualify the substitution argument: detection is a poor proxy for quality on formation dimensions, but the measured machine-side deficits (engagement opportunity, checkable specifics) are exactly what a direct quality check must weight — which strengthens the 'check the work' proposal without the false 'no deficit where authorship is' premise.
-
-### AL11. [argument-logic] §3.2 (gut judgment anti-correlation)
-
-> Asked to judge AI-likeness by register, a frontier reader flagged 13 of 35 genuine human floor speeches and only 5 of 35 machine rewrites that had been optimised against a detector (§2.14 stage 5)
-
-**Problem.** Near-circular evidence presented ahead of a strong unconditional conclusion ('any institution still adjudicating authenticity by feel will manufacture false accusations'). The rewrites were the surviving output of a search that optimised against an Opus self-screen, and the 'frontier reader' is an Opus-family judge — so a low flag rate on the rewrites is close to guaranteed by construction, and the comparison shows only that optimisation removed the tells this correlated judge keys on, not that human gut judgment is 'anti-correlated with the truth'. §3.8 1c concedes the paired effect is not significant (t = −1.15). The parenthetical flags the sample but the assertion and its policy conclusion are stated as established.
-
-**Reviewer's check.** Cross-checked the optimisation target (Opus self-screen, §2.14 threat model) against the judge's lineage (Table 33; §3.8 1c calls it 'lineage-correlated' with the search's own proxy) and the conceded t-statistic.
-
-**Refuter's verification.** Verified the lineage circle (the search self-screens on Opus's own score; the stage-5 grader is Fable — Table 33) and recomputed the counts from stage5_scores.json: originals 13/35 at ai_guess≥50 (exact), variants 7/35 (paper says 5). Strengthened the defect: per the stage-5 prereg, the '35 genuine human floor speeches' are the stage-5 ORIGINALS — Pangram-flagged attack targets the study itself counts as machine-drafted — so the 13 flags are not demonstrably false accusations on ordinary speakers. The 'illustrative' parenthetical hedges the evidence but leaves the declaratives unconditioned.
-
-**Suggested fix.** Move the claim fully to hypothesis status ('one lineage-correlated judge suggests...'), and let the §3.8 1c design carry it; delete or condition the 'any institution ... will manufacture false accusations' sentence until an independent judge measures it.
-
-*Also flagged by: SL2.*
+**Matthew's ruling (recorded; action pending).** Matthew: agreed with the suggested evaluation — run the in-time placebo on pre-LLM era pairs through the identical pipeline. Note the interpretive fork stated in advance: under the paper's drift reading, a pre-LLM firing is not a demotion but confirmation that the instrument tracks the pre-existing drift; the §4.8 'survives the failure mode' sentence will be rewritten to whichever result obtains
 
 ### CP1. [calibration+prevalence] 4.2 (flagged-segment composition)
 
@@ -189,8 +105,6 @@
 **Refuter's verification.** Quote verbatim in the abstract; merged forms also verified in the Introduction ("no quality penalty ... better-formed and no less engaged") and §3.3 ("grades better-formed, not worse-engaged on the DQI"). §2.14 states, as review item Q1, that "the two claims are stated separately" and gives the applicability collapse (respect_demands 61.4%/63.0% applicable below screen 50 vs 31.1% at ≥50; respect_counterargs 50.8%/51.2% vs 28.9%), calling the halved engagement-opportunity "a real difference, not a null." My best attack fails: the applicability figures come from the genre-balanced stage-1 pool (n=498/297/45 sums to the 840 stage-1 segments), so the abstract's "once genre is held fixed" clause does not cover the deficit — genre-fixing rescues the DQI engagement null but not the something-to-engage-with gap. Stage 6c's attribution of the collapse to weaker tools mitigates interpretation but is equally absent from all three merged statements. The defect survives.
 
 **Suggested fix.** In Abstract, Introduction, and §3.3, state both halves: e.g. "better-formed, and no worse-engaged where there is something to engage with — though flagged speech is about half as likely to contain anything to engage with, a difference §2.14 traces to weaker tools."
-
-*Also flagged by: AL7.*
 
 ### CE2. [claims-vs-evidence] Discussion, §3 opening paragraph
 
@@ -678,8 +592,6 @@
 
 **Suggested fix.** Present the 13/35 and 5/35 counts (with the threshold used to call a text 'flagged') in §2.14's stage-5 subsection or an appendix, and make §3.2's pointer accurate.
 
-*Also flagged by: AL11.*
-
 ### SL3. [storyline] §2.14 Quality (applicability paragraph) and Appendix C.2
 
 > Stage 6c locates its source: the collapse appears in raw text from weaker models and vanishes at the frontier
@@ -711,7 +623,7 @@
 
 ## MAJOR — PARTIAL
 
-### AL9. [argument-logic] §3.1 (Any fixed check loses to an optimising attacker)
+### AL4. [argument-logic] §3.1 (Any fixed check loses to an optimising attacker)
 
 > Point a general-purpose model at its own output, tell it to try again, and it will defeat any check you can put in front of it. This is not a claim about Pangram. It follows from the check being a fixed function and the attacker being an optimiser
 
@@ -753,7 +665,7 @@
 
 **Suggested fix.** Correlate 2006 level with growth computed from non-overlapping data (e.g., level = 2004–08 mean, growth from 2010 onward), or fit the trend on all years rather than endpoints; report the endpoint-based Spearman only with the attenuation/artifact caveat.
 
-*Also flagged by: AL5, ST11.*
+*Also flagged by: ST11.*
 
 ### CB5. [comparability] §2.6 Other chambers converge on the level the United States already held
 
@@ -816,7 +728,7 @@
 
 ## MINOR — CONFIRMED
 
-### AL12. [argument-logic] §2.9.5 (Flight)
+### AL5. [argument-logic] §2.9.5 (Flight)
 
 > That is chase-and-flight: a marker loses value as it is copied, so the group that holds it abandons the most conspicuous forms first.
 
@@ -1492,7 +1404,7 @@
 
 **Suggested fix.** Recompute with multi-year endpoint means (e.g. 2006–08 vs 2024–26) and report that Spearman alongside; note the endpoint-noise bias in footnote r45cw.
 
-*Also flagged by: AL5, CB4.*
+*Also flagged by: CB4.*
 
 ### SL5. [storyline] §2.4 The Opus screen tracks Pangram
 
@@ -1788,7 +1700,7 @@
 
 **Method.** Thirteen blind reviewers, one dimension each: seven data dimensions reproducing numbers from the committed artifacts and reading estimator code (calibration+prevalence, genre+screen, series/trend/cross-chamber, cohort+class, occupational-prereg, post-training/coverage/permeation, quality+bypass), five narrative/argument dimensions on the compiled publication-order paper (claims-vs-evidence, internal-consistency, argument-logic, comparability, storyline), and one cross-cutting consistency reviewer. Every finding was handed to a refute-by-default adversary; only CONFIRMED and PARTIAL findings appear, PARTIAL with the corrected version stated. "Also flagged by" marks the same defect under another lens — adjudicate once, apply everywhere.
 
-**Counts.** 138 open (0 critical, 64 major, 74 minor; 115 CONFIRMED, 23 PARTIAL); 1 refuted; 0 unresolved.
+**Counts.** 131 open (0 critical, 57 major, 74 minor; 108 CONFIRMED, 23 PARTIAL); 1 refuted; 0 unresolved.
 
 **Progress since the review ran (2026-08-24/25).** Both criticals closed by new analysis rather than rewording: (1) the floor's specificity-transfer assumption stated and bounded — a two-vote blind audit of all 316 flagged segments (277 prepared / 21 unclear / 11 both-vote spontaneous, 9 of them Mixed at fractions 0.11–0.58) puts the worst case at 9.03%→8.86% (§3.1, §4.1, Limits; flagged_hits_*). (2) The APC identification: per-legislature group-vs-individual gradients in one unit (apc_chamber_decomposition.py, new §4.6 figure) split the birth gradient into a standing juniority component (full-size among pre-drift cohorts — US Senate +105 [47,155], 1994–2004) and a cohort component (UK +30→+98, House +23→+85 as drift-formed cohorts enter); "organised generationally" retired paper-wide. Also applied: the mechanical batch (broken cross-refs, §8.6 renumbering, review-code and dagger conventions, external-table disambiguation, flip/success direction), the registration-timeline footnote, the Kobak contextualisation of the abstract, and the explanatory-power/iceberg passage at the joint model. Resolved items below; nothing deleted.
 
@@ -1802,7 +1714,14 @@
 - **[major] [quality+bypass]** 4.9 Bypass study (flip vs success paragraph): "Effort raised both bars, and by *more* on the flip bar (2.8×) than on the success bar (5.5..." — *fixed: same direction correction*
 - **[major] [internal-consistency]** §2.14 Bypass study (flip vs success bars): "Effort raised both bars, and by more on the flip bar (2.8×) than on the success bar (5.5×)..." — *fixed: duplicate of the flip/success direction correction (mechanical batch)*
 - **[critical] [argument-logic]** §2.8 (Birth cohort predicts the register) and Abstract: "if it were generational, later-born members would use more of it even in the same year and..." — *resolved by new analysis per Matthew's design (apc_chamber_decomposition.py, apc_gradients.png): group vs individual gradients per legislature in one unit. The gradient splits into a standing juniority component (full-size among pre-drift cohorts, US Senate +105 [47,155], 1994-2004, births 1917-64) and a cohort component (UK +30->+98, House +23->+85 as drift-formed cohorts enter; House chamber mean flat -> ambient-culture formation). §4.6 rewritten around the two components with the identity stated and the era-stable-profile assumption named; abstract/intro/Discussion/Limits harmonized; 'organised generationally' retired.*
+- **[major] [argument-logic]** §2.14 Bypass study (headline): "The headline: asking a general-purpose model to rework a speech in a loop beats the commer..." — *adjudicated (Matthew, 3rd recurrence): the fix is the threat model made explicit AT the headline — rewritten to state the target detector is never in the loop (Opus self-score generates/screens; Pangram sees only submissions), with the attack figure referenced; the tenfold comparison stands as fair-to-conservative given the attacker is blind to the target while humanizers are built against detectors*
+- **[major] [argument-logic]** §2.6 (Other chambers converge on the level the United States already held): "So the picture is not a common shift. It is chambers converging upward on a level the Unit..." — *adjudicated (Matthew): the US-derived-yardstick caveat DELETED rather than patched — the instrument is from a global scholarly literature, not US speech, and even a US-derived ruler would still show others converging on the US; the headline stands without the self-undercutting paragraph*
+- **[major] [argument-logic]** §2.6 / Table 6 (constant-window trend): "on that single ruler the pattern is convergence: the lower a chamber started, the faster i..." — *fixed per ruling: RTM-decoupled recompute added (2006-08 baseline means vs disjoint 2010-2026 growth: Spearman -0.51, n=18, vs -0.56 naive) and the framing now leans on the shared direction — sixteen of nineteen chambers rise; constant_window_trend.py prints both*
+- **[major] [argument-logic]** Abstract (and §1): "This machine-drafted speech is not degraded: once genre is held fixed, AI-flagged contribu..." — *adjudicated (Matthew, overriding the reviewer's proposed conditional): the GENRE qualifier is removed and the claim stated plain — the extended cross-chamber arm and the Claude continuation results support it unconditionally; the applicability split stays fully stated in §4.9 and now also in §8.3's couching; intro grounds the plain claim in both arms*
+- **[major] [argument-logic]** §2.14 (closing paragraph, 'What this means for the prevalence number'): "Evasion is real, clears the detector on roughly one flagged speech in five under directed ..." — *fixed per ruling: the closing now disentangles the two claims — 9.0% is a floor on USE (undisguised drafting measured, disguised above it), and the quality clause is stated one-directionally (no measured arm shows a COST; paired nulls bound only headline-scale effects, review item Q3; every powered result runs favourable) — which is what the norms argument needs, without claiming the edit adds nothing*
 - **[major] [argument-logic]** §2.10 (Pre-registered occupational test) with Appendices A18–20, B10: "The registered four-level U is the result. The design intent, registered in the document's..." — *adjudicated (Matthew): same timeline footnote fix*
+- **[major] [argument-logic]** §3.3 (The substitution): "machine-assisted text grades better-formed, not worse-engaged on the DQI — so policing aut..." — *adjudicated (Matthew): couched rather than retracted — §8.3 now names the two machine-side deficits as improvement targets (applicability split marked as a raw, not genre-adjusted, contrast; checkable specifics), attributes the applicability collapse to weaker tools via the opus-class continuation evidence, and states the equal-weight DQI composite as the index's conventional additive form rather than a measured optimum*
+- **[major] [argument-logic]** §3.2 (gut judgment anti-correlation): "Asked to judge AI-likeness by register, a frontier reader flagged 13 of 35 genuine human f..." — *adjudicated (Matthew): valid criticism allowed to stand — the conclusion is now explicitly one measured lineage-correlated instance PLUS a conjecture that stays a conjecture until it happens, stated because machines have overtaken human performance at task after task and this is not expected to be the exception*
 - **[minor] [argument-logic]** §2.1 / §5.1 (calibration and the floor claim): "with Sp = 1 and any real detector's Se ≤ 1, the observed flag rate is a conservative floor..." — *addressed per Matthew's direction: floor claim conditioned in §3.1; new §4.1 contemporary-specificity block — two-vote blind audit of all 316 hits (277 prepared / 21 unclear / 11 both-vote spontaneous, 9 of them Mixed at 0.11–0.58), worst-case bound 9.03%→8.86% (8.65% full-word); temporal-transfer bullet added to Limits; artifacts committed (flagged_hits_pool/audit/bound)*
 - **[minor] [comparability]** §2.4 The Opus screen tracks Pangram: "consistent with §5.4's finding that reasoning never closes the ˜0.25 AUC frontier gap, but..." — *fixed: duplicate of the removed §5.4/~0.25-AUC cross-reference (mechanical batch)*
 - **[major] [storyline]** §2.4 The Opus screen tracks Pangram: "consistent with §5.4's finding that reasoning never closes the ˜0.25 AUC frontier gap, but..." — *fixed: false cross-ref and unanchored ~0.25 AUC removed; sentence now self-contained*
