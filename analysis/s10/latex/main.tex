@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+% Built on the AAAS Science-family template (science_template_v1): its fonts,
+% scicite.sty and sciencemag.bst. Deviation from the template, deliberate: it
+% uses unnumbered \subsection*; we use NUMBERED sections + cleveref so every
+% cross-reference is a working numbered hyperlink (the study has ~155 of them).
+% A one-line swap to \section* + \nameref restores strict Science styling.
+\usepackage{newtxtext,newtxmath}
+\usepackage{graphicx}
+\graphicspath{{../}}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{amsmath,amssymb,textcomp}
+\usepackage{url}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\usepackage{cleveref}
+\usepackage{caption}
+% pandoc macros
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\pandocbounded}[1]{#1}
+\setlength{\parskip}{0.4em}
+\def\scititle{Machine-drafted speech in legislatures: prevalence, concentration, and a register that predates the machines}
+\title{\bfseries \boldmath \scititle}
+\author{Matthew Tomei}
+\date{}
+\begin{document}
+\maketitle
+\input{body}
+\bibliographystyle{sciencemag}
+% \bibliography{refs}  % TODO: migrate the References section to a .bib
+\end{document}
