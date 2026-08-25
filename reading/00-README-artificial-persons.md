@@ -298,8 +298,13 @@ to substantial primary text across the arc, and the selection principle is a
 bonus — these are the pages Arendt judged worth marking, marginalia visible,
 a reception document by a first-rank theorist of this directory's exact
 questions. Cautions: page continuity breaks without notice (never cite
-surrounding context unchecked); the full text **stays on the borrow list**
-per the de-risk-not-replace rule. **Full-text hunt closed (2026-08-24): KTB's
+surrounding context unchecked). **RESOLVED 2026-08-25: the full text is now
+on disk** — `kantorowicz-1957-kings-two-bodies-2016-princeton-classics-full.pdf`
+(632 pp, complete through the index, Leyser introduction + Jordan preface,
+ABBYY text layer; copyright page independently confirms the RE258599
+renewal). The marginalia scan's role narrows to the reception document; the
+sample-introduction and Leyser preview captures are superseded for content;
+KTB comes off the borrow/buy list. **Full-text hunt closed (2026-08-24): KTB's
 copyright was RENEWED — Stanford Copyright Renewal Database RE258599
 (published 22 Nov 1957, renewed 9 Sep 1985, claimant Beate R. Salz, NK) — so
 it is in copyright through 2052 and no legitimate free full copy exists; the
@@ -378,7 +383,8 @@ in `00-RANKINGS.json` on 2026-08-16** — table and JSON now agree.
 | ★★★ | `hobbes-1651-leviathan.pdf` | Founds the artificial-person doctrine: the commonwealth as "Artificiall Man", persons natural vs feigned, and counsellors as the commonwealth's memory. |
 | ★★★ | `kahn-2009-political-theology-fiction-kings-two-bodies.pdf` | The two-bodies doctrine read as an AUTHORED, maintained legal-poetic artifact — the closest scholarly kin to the tulpa thesis. |
 | ★★★ | `kantorowicz-1951-pro-patria-mori-ahr-mgh-scan.pdf` | The corpus mysticum migrating from church to secular state, and Innocent IV's *persona ficta* — the genealogy of the state as an artificial person, in Kantorowicz's own primary words. |
-| ★★★ | `kantorowicz-1957-kings-two-bodies-arendt-marginalia-pages-bard.pdf` | KTB primary text across every major chapter — **the ~90 pages Hannah Arendt annotated in her own copy** (Bard Digital Commons scan). PARTIAL: not the full book; check context against a full copy before citing. |
+| ★★★ | `kantorowicz-1957-kings-two-bodies-2016-princeton-classics-full.pdf` | **The full text (2016 Princeton Classics ed., 632 pp, arrived 2026-08-25)** — the doctrine cluster's head primary, complete; quote-check authority for every KTB stand-in. |
+| ★★★ | `kantorowicz-1957-kings-two-bodies-arendt-marginalia-pages-bard.pdf` | KTB primary text across every major chapter — **the ~90 pages Hannah Arendt annotated in her own copy** (Bard Digital Commons scan). PARTIAL: not the full book; now primarily the RECEPTION document (Arendt's markings); full copy on disk for context. |
 | ★★★ | `lefort-permanence-theologico-political.pdf` | Modern democracy is the disincorporation of the king's body: power becomes an empty place that no one occupies, possesses or embodies, held only by periodic contest. |
 | ★★★ | `maitland-1903-moral-legal-personality.pdf` | The seminal root: if the law tolerates an organised group it must count it as a person, because common moral sentiment already does — n men organised make n+1 persons. |
 | ★★★ | `rogin-1979-kings-two-bodies-presidential-self-sacrifice.pdf` | Kantorowicz applied to the American presidency directly — the presidency-persona article the tulpa thesis needed. |
