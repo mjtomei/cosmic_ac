@@ -249,7 +249,7 @@ TABLE_CAPS = [
  ("contrast & Spearman", "tab:flight-corr", "Chase-and-flight correlations, raw and holding word frequency fixed."),
  ("EGP class & mean z", "tab:egp", "Register by EGP social class (member-level means)."),
  ("level & mean z & n & vs bachelor", "tab:education", "Register by education level, relative to a bachelor's degree."),
- ("term & n & alone & joint", "tab:four-predictors", "Every member-level predictor in one model: each block alone, the four-block joint fit (n = 4{,}056), and the occupational-derivative block added (n = 3{,}631); t in parentheses; the last column converts jointly significant effects into years of cohort."),
+ ("term & n & alone & joint", "tab:four-predictors", "Every member-level predictor in one model: each block alone, the joint fit of cohort, all EGP classes, all education levels and prominence quintiles (n = 4{,}056), and the occupational blocks — both altitude ladders and Indoors — added (n = 3{,}631); t in parentheses; the last column converts jointly significant effects into years of cohort."),
  ("class & & vs I & t & members", "tab:class-provincial", "Provincial class estimates relative to class I (discovery record)."),
  ("quintile of article length", "tab:prominence-class", "Register by prominence (Wikipedia article-length quintile) across chamber groups."),
  ("directional ladder & coded ladder", "tab:altitude", "The occupational altitude ladder: register by level on both instruments (plotted in \\cref{fig:altitude})."),

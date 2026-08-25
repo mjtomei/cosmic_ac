@@ -3,25 +3,32 @@
 
 WHY
 
-Cohort, class, education, prominence and ministerial office have each been
-estimated in their own subsection, each defended against one or two of the
-others pairwise. Nobody has put them in a single regression, so "which of these
-survives the others" has never been answered directly and the text has no
-principled basis for how much weight to give each.
+Cohort, class, education, prominence and the occupational ladders have each
+been estimated in their own subsection, each defended against one or two of
+the others pairwise. Nobody has put them in a single regression, so "which of
+these survives the others" has never been answered directly and the text has
+no principled basis for how much weight to give each.
 
 SPECIFICATION — the canonical member-level one (member_level_estimation.py):
 one observation per legislator (career rate over >= 8,000 words), EQUAL weight,
 register z-scored within each legislature against that chamber's full member
-population, HC1 errors, joint Wald over each predictor's term block.
+population, HC1 errors, block Wald over every predictor's term vector (1-df
+blocks included, where it is the t test).
 
   cohort      birth decade, centred at 1960
   class       EGP category, baseline class I -- EVERY category present enters
               as a dummy (no small-cell fold into baseline; the SEs speak)
   education   level dummies, bachelor baseline (the education table's coding)
-  prominence  log(Wikipedia article length)
-  occ         the prereg occupational-derivative block: dir_middle + apex
-              delta (grand model (ii)'s pair under the never-together rule)
-              + Indoors, each z-scored per sd on the estimation sample
+  prominence  quintiles of Wikipedia article length, Q1 baseline -- the bins,
+              not a line, because the shape is not linear (Appendix D.3)
+  dir ladder  the directional altitude ladder, all four levels (free, bottom,
+              middle, top), each per sd on the estimation sample
+  coded ladder the coded altitude ladder, all four levels likewise. NOTE
+              apex_delta == lvl_MIDDLE - lvl_TOP exactly (verified corr -1.0),
+              so the prereg's apex term is subsumed by this block and must
+              not enter beside it
+  indoors     O*NET Work Context "Indoors, Environmentally Controlled" for
+              the member's SOC code, per sd
   office      share of career words spoken under a rank marker ("Hon. <name>")
 
 COVERAGE IS THE BINDING CONSTRAINT, and it differs per predictor, so the model
@@ -30,7 +37,7 @@ is reported as a ladder of nested samples rather than one number:
   full panel      cohort + class + education + prominence
   occ panel       the same members intersected with occupational-score
                   coverage; the four-block joint refit on this sample, then
-                  the occupational block added
+                  the two ladder blocks and indoors added
   provinces only  the full-panel four, plus office -- only the eight Canadian
                   provinces mark rank in the record (UK Hansard prints
                   ministers under their own names), so office cannot enter
@@ -42,13 +49,14 @@ estimated on a different set of members.
 
 Usage: python joint_predictors.py
 """
+import csv
 import glob
 import json
 import math
 import os
 import re
 import sys
-from collections import Counter, defaultdict
+from collections import Counter
 
 import numpy as np
 
@@ -64,6 +72,12 @@ RANK_RE = re.compile(
     r"^\s*(premier|minister|attorney general|speaker|president of the)", re.I)
 MARKING = ("ab", "bc", "mb", "nl", "ns", "on", "pe", "sk")
 LV = PE.LV
+
+EDU_DUM = ["secondary", "college", "graduate", "professional"]   # vs bachelor
+PROM_DUM = ["Q2", "Q3", "Q4", "Q5"]                              # vs Q1
+DIR_KEYS = ["dir_free", "dir_bottom", "dir_middle", "dir_top"]
+LVL_KEYS = ["lvl_FREE", "lvl_BOTTOM", "lvl_MIDDLE", "lvl_TOP"]
+INDOORS_ID = "4.C.2.a.1.a"   # O*NET Work Context: Indoors, Env. Controlled
 
 
 def depth_key(member):
@@ -117,19 +131,13 @@ def load_office():
     return share
 
 
-EDU_DUM = ["secondary", "college", "graduate", "professional"]  # vs bachelor
-OCC_TERMS = ["dir middle", "apex delta", "indoors"]
-INDOORS_ID = "4.C.2.a.1.a"          # O*NET Work Context: Indoors, Environmentally Controlled
-
-
 def load_occ():
-    """member key -> (dir_middle, apex_delta, indoors) raw values.
+    """member key -> the 8 ladder levels + indoors, raw.
 
-    dir_middle and apex_delta come from the committed prereg member table;
-    Indoors is the O*NET Work Context value for the member's SOC code,
-    cached to indoors_by_soc.json so the model does not depend on the
-    /tmp O*NET extraction surviving."""
-    import csv
+    Ladder levels from the committed prereg member table; Indoors is the
+    O*NET Work Context value for the member's SOC code, cached to
+    indoors_by_soc.json so the model does not depend on the /tmp O*NET
+    extraction surviving."""
     cache = os.path.join(HERE, "indoors_by_soc.json")
     if os.path.exists(cache):
         val = json.load(open(cache))
@@ -143,43 +151,40 @@ def load_occ():
         json.dump(val, open(cache, "w"))
     out = {}
     for r in json.load(open(os.path.join(HERE, "prereg_member_table.json"))):
-        if r.get("dir_middle") is not None and r.get("apex_delta") is not None \
-                and r.get("soc") in val:
+        if r.get("dir_middle") is not None and r.get("soc") in val:
             out[depth_key(r["member"])] = (
-                r["dir_middle"], r["apex_delta"], val[r["soc"]])
+                [r[k] for k in DIR_KEYS] + [r[k] for k in LVL_KEYS]
+                + [val[r["soc"]]])
     return out
 
 
 def zscore_occ(sample):
     """attach per-sd occ columns, standardised on THIS estimation sample."""
-    for i in range(3):
+    for i in range(9):
         v = np.array([r["occ_raw"][i] for r in sample], float)
         m, sd = v.mean(), v.std() or 1.0
         for r, x in zip(sample, v):
-            r.setdefault("occ_z", [0.0] * 3)[i] = (x - m) / sd
+            r.setdefault("occ_z", [0.0] * 9)[i] = (x - m) / sd
+
+
+def assign_quintiles(sample):
+    """attach r['promq'] in 0..4: quintile of logdepth on THIS sample."""
+    order = sorted(range(len(sample)), key=lambda i: sample[i]["logdepth"])
+    for rank, i in enumerate(order):
+        sample[i]["promq"] = min(4, rank * 5 // len(sample))
 
 
 def design(rows, blocks, cats):
     """(y, X, index map) for the requested predictor blocks."""
     y, X, idx = [], [], {}
     col = 1
+    widths = {"class": lambda: len(cats["class"]), "edu": lambda: len(EDU_DUM),
+              "prominence": lambda: len(PROM_DUM), "dirlad": lambda: 4,
+              "codlad": lambda: 4}
     for b in blocks:
-        if b == "class":
-            idx["class"] = list(range(col, col + len(cats["class"])))
-            col += len(cats["class"])
-        elif b == "edu":
-            # level dummies, bachelor baseline (review CC3: matches the
-            # education table's own coding; no ordering assumption)
-            idx["edu"] = list(range(col, col + len(EDU_DUM)))
-            col += len(EDU_DUM)   # was += 2, a leftover of the 2-term ladder
-            # coding -- it shifted every later block's index one run (the
-            # misindexed joint-prominence cell corrected 2026-08-25)
-        elif b == "occ":
-            idx["occ"] = list(range(col, col + len(OCC_TERMS)))
-            col += len(OCC_TERMS)
-        else:
-            idx[b] = [col]
-            col += 1
+        w = widths[b]() if b in widths else 1
+        idx[b] = list(range(col, col + w))
+        col += w
     for r in rows:
         row = [1.0]
         for b in blocks:
@@ -190,14 +195,25 @@ def design(rows, blocks, cats):
             elif b == "edu":
                 row += [1.0 if r["edu"] == e else 0.0 for e in EDU_DUM]
             elif b == "prominence":
-                row.append(r["logdepth"])
-            elif b == "occ":
-                row += r["occ_z"]
+                row += [1.0 if r["promq"] == q else 0.0 for q in (1, 2, 3, 4)]
+            elif b == "dirlad":
+                row += r["occ_z"][0:4]
+            elif b == "codlad":
+                row += r["occ_z"][4:8]
+            elif b == "indoors":
+                row.append(r["occ_z"][8])
             elif b == "office":
                 row.append(r["office"])
         X.append(row)
         y.append(r["z"])
     return y, X, idx
+
+
+NAMES = {"class": lambda cats: [f"class {c}" for c in cats["class"]],
+         "edu": lambda cats: [f"edu {e}" for e in EDU_DUM],
+         "prominence": lambda cats: [f"prom {q}" for q in PROM_DUM],
+         "dirlad": lambda cats: [f"dir {k.split('_')[1]}" for k in DIR_KEYS],
+         "codlad": lambda cats: [f"lvl {k.split('_')[1]}" for k in LVL_KEYS]}
 
 
 def report(rows, blocks, cats, label):
@@ -206,25 +222,10 @@ def report(rows, blocks, cats, label):
     print(f"\n{label}   n = {len(rows):,}")
     for b in blocks:
         ii = idx[b]
-        if b == "class":
-            for j, c in zip(ii, cats["class"]):
-                bb, se = beta[j], math.sqrt(V[j, j])
-                print(f"    class {c:<10}{bb:>+8.3f}  t {bb/se:+.2f}"
-                      f"{' *' if abs(bb/se) > 1.96 else ''}")
-        elif b == "edu":
-            for j, nm in zip(ii, [f"edu {e}" for e in EDU_DUM]):
-                bb, se = beta[j], math.sqrt(V[j, j])
-                print(f"    {nm:<16}{bb:>+8.3f}  t {bb/se:+.2f}"
-                      f"{' *' if abs(bb/se) > 1.96 else ''}")
-        elif b == "occ":
-            for j, nm in zip(ii, OCC_TERMS):
-                bb, se = beta[j], math.sqrt(V[j, j])
-                print(f"    occ {nm:<12}{bb:>+8.3f}  t {bb/se:+.2f}"
-                      f"{' *' if abs(bb/se) > 1.96 else ''}")
-        else:
-            j = ii[0]
+        names = NAMES[b](cats) if b in NAMES else [b]
+        for j, nm in zip(ii, names):
             bb, se = beta[j], math.sqrt(V[j, j])
-            print(f"    {b:<16}{bb:>+8.3f}  t {bb/se:+.2f}"
+            print(f"    {nm:<16}{bb:>+8.3f}  t {bb/se:+.2f}"
                   f"{' *' if abs(bb/se) > 1.96 else ''}")
         W, k, p = MLE.wald(beta, V, ii)   # every block, 1-df included
         print(f"      block Wald chi2={W:.1f}, df={k}, p={p:.4g}")
@@ -247,6 +248,7 @@ def main():
     # ---- full panel: cohort + class + education + prominence -------------
     full = [r for r in ok if r["egp"] in PE.EGP_RANK and r["edu"] in LV
             and r["logdepth"] is not None]
+    assign_quintiles(full)
     # every class present enters as a dummy: a small-cell filter here would
     # silently fold those members into baseline class I
     cats = {"class": [c for c in PE.EGP if c != "I"
@@ -254,6 +256,9 @@ def main():
     print(f"\n{'='*66}\nFULL PANEL — complete cases on four predictors\n{'='*66}")
     print(f"class mix: {dict(Counter(r['egp'] for r in full))}")
     print(f"edu mix:   {dict(Counter(r['edu'] for r in full))}")
+    print("prominence quintile bounds (log length): "
+          + ", ".join(f"Q{q+1}<={max(r['logdepth'] for r in full if r['promq']==q):.2f}"
+                      for q in range(5)))
     for b in (["cohort"], ["class"], ["edu"], ["prominence"]):
         report(full, b, cats, f"{b[0]} ALONE (same sample)")
     report(full, ["cohort", "class", "edu", "prominence"], cats,
@@ -265,18 +270,21 @@ def main():
         r["occ_raw"] = occ.get(depth_key(r["member"]))
     occp = [r for r in full if r.get("occ_raw") is not None]
     zscore_occ(occp)
+    assign_quintiles(occp)
     catso = {"class": [c for c in PE.EGP if c != "I"
                        and any(r["egp"] == c for r in occp)]}
     print(f"\n{'='*66}\nOCC PANEL — intersected with occupational-score "
           f"coverage\n{'='*66}")
     print(f"class mix: {dict(Counter(r['egp'] for r in occp))}")
     print(f"edu mix:   {dict(Counter(r['edu'] for r in occp))}")
-    for b in (["cohort"], ["class"], ["edu"], ["prominence"], ["occ"]):
+    for b in (["cohort"], ["class"], ["edu"], ["prominence"],
+              ["dirlad"], ["codlad"], ["indoors"]):
         report(occp, b, catso, f"{b[0]} ALONE (same sample)")
     report(occp, ["cohort", "class", "edu", "prominence"], catso,
            "JOINT — four blocks (occ-panel sample)")
-    report(occp, ["cohort", "class", "edu", "prominence", "occ"], catso,
-           "JOINT — plus the occupational block")
+    report(occp, ["cohort", "class", "edu", "prominence",
+                  "dirlad", "codlad", "indoors"], catso,
+           "JOINT — plus both ladders and indoors")
 
     # ---- provinces: add office -------------------------------------------
     office = load_office()
@@ -284,6 +292,7 @@ def main():
         r["office"] = office.get(depth_key(r["member"]))
     prov = [r for r in full if r.get("office") is not None]
     if len(prov) > 80:
+        assign_quintiles(prov)
         catsp = {"class": [c for c in PE.EGP if c != "I"
                            and any(r["egp"] == c for r in prov)]}
         print(f"\n{'='*66}\nPROVINCES — the same, plus ministerial office"

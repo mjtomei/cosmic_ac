@@ -1090,14 +1090,13 @@ graduate & −0.025 & 1,271 & −0.008 (t = −0.22) \\
 Bachelor and graduate form a plateau at the top; both arms fall away
 significantly, and the descending arm is the \textbf{professional} degree --- law and
 medicine, the most elite credential in the table --- measured on 991 members.
-An earlier draft reported this as an ascending "academic ladder" of
-+0.065σ/rung. That was a straight line fitted through a hump, and it excluded
-the professional degree as being off the ladder --- dropping the one category
-that breaks monotonicity. The block is jointly significant on its own
+Read as a straight line, this would pass for an ascending "academic ladder"
+of +0.065σ per rung --- but only by excluding the professional degree as off
+the ladder, the one category that breaks monotonicity. The block is jointly significant on its own
 (Wald p \textless{} 10⁻⁴ as level dummies).
 
 It is not, however, an independent channel. Put class and education in one
-model and the education block goes to \textbf{p = 0.215} while class holds at
+model and the education block goes to \textbf{p = 0.28} while class holds at
 \textbf{p \textless{} 10⁻⁴} --- because the two instruments name the same stratum. Teachers,
 nurses and social workers hold bachelor\textquotesingle s and master\textquotesingle s degrees; lawyers and
 physicians hold professional ones. "Class II, not class I" and "bachelor or
@@ -1110,12 +1109,14 @@ independently measured; its apparent separate effect is not.
 Every member-level predictor in one regression --- every category of every
 block, none folded into a baseline for being small or dropped from the table
 for being null. Four blocks fit on the full panel (n = 4,056 complete cases
-across 22 chambers); the prereg\textquotesingle s occupational-derivative block (dir middle +
-apex delta + Indoors, each per sd --- \cref{sec:occupation}) then enters on the members with
-occupational-score coverage (n = 3,631). Each block is also fitted alone on
-the same sample, so attenuation is read against its own baseline; t in
-parentheses; the last column converts jointly-significant effects into years
-of cohort: †\footnote{\texttt{python\ joint\_\allowbreak{}predictors.\allowbreak{}py}. Canonical member-level spec --- one
+across 22 chambers): cohort, all seven EGP classes, all education levels,
+and prominence as article-length quintiles --- the bins, not a line, because
+Appendix~\ref{sec:prominence-buckets} shows the shape is not linear. The occupational blocks then
+enter on the members with occupational-score coverage (n = 3,631): \cref{sec:occupation}\textquotesingle s
+two altitude ladders, each with all four levels per sd, plus Indoors. Each
+block is also fitted alone on the same sample, so attenuation is read
+against its own baseline; t in parentheses; the last column converts
+jointly-significant effects into years of cohort: †\footnote{\texttt{python\ joint\_\allowbreak{}predictors.\allowbreak{}py}. Canonical member-level spec --- one
   observation per legislator, equal weight, register z-scored within chamber
   against the chamber\textquotesingle s full member population, HC1 errors, block Wald over
   every block\textquotesingle s term vector (1-df blocks included, where it is the t test).
@@ -1123,59 +1124,73 @@ of cohort: †\footnote{\texttt{python\ joint\_\allowbreak{}predictors.\allowbre
   covariates), so the columns read raw association → survives the other
   blocks → survives the occupational content too. Education enters as
   level dummies with bachelor baseline --- the same coding as the education
-  table --- and every EGP category present enters as a dummy (review CC3;
-  two earlier printed versions of this table erred: one mixed a ladder
-  coding and a cohort-conditioned "alone" column, the next showed only the
-  significant class contrasts, let sub-26-member classes fold into
-  baseline I, and printed a misindexed joint-prominence cell, −0.017 for
-  the true +0.020). The occupational block is \cref{sec:occupation}\textquotesingle s dir middle + apex
-  delta (grand model (ii)\textquotesingle s pair under the prereg\textquotesingle s never-together rule)
-  plus Indoors, each standardised per sd on the occ panel.}
+  table --- and every EGP category present enters as a dummy. Prominence quintiles are cut on each estimation sample\textquotesingle s log article
+  lengths (Q1 baseline). The occupational blocks are \cref{sec:occupation}\textquotesingle s two altitude
+  ladders --- directional and coded, all four levels each, standardised per
+  sd on the occ panel --- plus Indoors. The prereg\textquotesingle s apex delta is
+  identically lvl MIDDLE − lvl TOP (verified to machine precision), so the
+  coded-ladder block subsumes it and must not enter beside it; the
+  prereg\textquotesingle s never-together rule for the twin ladders is deliberately
+  relaxed here, and the price is visible in the widened joint SEs on the
+  twinned levels.}
 
 \begingroup\small
 \begin{longtable}[]{@{}p{0.255\linewidth}rp{0.135\linewidth}p{0.135\linewidth}p{0.135\linewidth}l@{}}
-\caption{Every member-level predictor in one model: each block alone, the four-block joint fit (n = 4{,}056), and the occupational-derivative block added (n = 3{,}631); t in parentheses; the last column converts jointly significant effects into years of cohort.}\label{tab:four-predictors}\\
+\caption{Every member-level predictor in one model: each block alone, the joint fit of cohort, all EGP classes, all education levels and prominence quintiles (n = 4{,}056), and the occupational blocks — both altitude ladders and Indoors — added (n = 3{,}631); t in parentheses; the last column converts jointly significant effects into years of cohort.}\label{tab:four-predictors}\\
 \toprule\noalign{}
-term & n & alone & joint & + occ. block & ≈ yrs \\
+term & n & alone & joint & + occ. blocks & ≈ yrs \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-term & n & alone & joint & + occ. block & ≈ yrs \\
+term & n & alone & joint & + occ. blocks & ≈ yrs \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-\textbf{cohort} (per decade) & 4,056 & +0.276 (27.7) & \textbf{+0.270 (26.9)} & +0.264 (24.6) & \emph{the scale} \\
---- block Wald (1 df) & & p \textless{} 10⁻⁷⁰ & p \textless{} 10⁻⁶⁷ & p \textless{} 10⁻⁵⁹ & \\
+\textbf{cohort} (per decade) & 4,056 & +0.276 (27.7) & \textbf{+0.271 (27.1)} & +0.265 (24.7) & \emph{the scale} \\
+--- block Wald (1 df) & & p \textless{} 10⁻⁷⁰ & p \textless{} 10⁻⁶⁸ & p \textless{} 10⁻⁵⁹ & \\
 \textbf{class} (baseline I, \emph{n} 1,660) & & & & & \\
-· II lower service & 1,691 & +0.122 (3.63) & \textbf{+0.072 (2.10)} & +0.020 (0.47) & +3 \\
-· III routine non-manual & 116 & +0.084 (0.95) & +0.018 (0.21) & −0.027 (−0.29) & --- \\
-· IVab petty bourgeoisie & 280 & +0.005 (0.08) & −0.011 (−0.18) & −0.061 (−0.83) & --- \\
-· IVc farmers & 109 & −0.339 (−3.48) & \textbf{−0.212 (−2.22)} & −0.199 (−1.90) & −8 \\
-· V/VI skilled manual & 130 & −0.229 (−2.79) & \textbf{−0.247 (−3.14)} & −0.207 (−2.14) & −9 \\
-· VIIab non-skilled manual & 70 & −0.384 (−3.70) & \textbf{−0.299 (−2.80)} & −0.147 (−1.01) & −11 \\
---- block Wald (6 df) & & p \textless{} 10⁻⁴ & \textbf{p \textless{} 10⁻⁴} & \textbf{p = 0.21} & \\
+· II lower service & 1,691 & +0.122 (3.63) & \textbf{+0.080 (2.33)} & +0.017 (0.39) & +3 \\
+· III routine non-manual & 116 & +0.084 (0.95) & +0.029 (0.34) & +0.021 (0.19) & --- \\
+· IVab petty bourgeoisie & 280 & +0.005 (0.08) & −0.006 (−0.10) & +0.007 (0.09) & --- \\
+· IVc farmers & 109 & −0.339 (−3.48) & \textbf{−0.209 (−2.19)} & −0.090 (−0.76) & −8 \\
+· V/VI skilled manual & 130 & −0.229 (−2.79) & \textbf{−0.244 (−3.14)} & −0.209 (−1.95) & −9 \\
+· VIIab non-skilled manual & 70 & −0.384 (−3.70) & \textbf{−0.301 (−2.76)} & −0.041 (−0.26) & −11 \\
+--- block Wald (6 df) & & p \textless{} 10⁻⁴ & \textbf{p \textless{} 10⁻⁴} & \textbf{p = 0.55} & \\
 \textbf{education} (baseline bachelor, \emph{n} 1,190) & & & & & \\
-· secondary & 231 & −0.315 (−4.57) & −0.080 (−1.27) & −0.097 (−1.46) & --- \\
-· college & 367 & −0.204 (−3.61) & −0.080 (−1.51) & −0.107 (−1.87) & --- \\
-· graduate & 1,266 & −0.063 (−1.62) & −0.017 (−0.46) & −0.012 (−0.31) & --- \\
-· professional & 988 & −0.171 (−4.05) & −0.081 (−1.83) & −0.043 (−0.92) & --- \\
---- block Wald (4 df) & & p \textless{} 10⁻⁴ & \textbf{p = 0.215} & p = 0.27 & \\
-\textbf{prominence} (linear, \emph{not} the right form --- see D.3) & 4,056 & +0.037 (3.59) & +0.020 (2.05) & +0.020 (1.91) & --- \\
---- block Wald (1 df) & & p = 0.0004 & p = 0.038 & p = 0.053 & \\
-\textbf{occupational derivatives} (per sd, n 3,631) & & & & & \\
-· dir middle & & +0.020 (0.78) & --- & −0.022 (−0.80) & --- \\
-· apex delta & & +0.034 (1.31) & --- & \textbf{+0.076 (2.52)} & +3/sd \\
-· Indoors & & +0.084 (5.28) & --- & +0.039 (1.95) & --- \\
---- block Wald (3 df) & & p \textless{} 10⁻⁴ & --- & \textbf{p = 0.0002} & \\
+· secondary & 231 & −0.315 (−4.57) & −0.046 (−0.73) & −0.045 (−0.67) & --- \\
+· college & 367 & −0.204 (−3.61) & −0.059 (−1.11) & −0.086 (−1.50) & --- \\
+· graduate & 1,266 & −0.063 (−1.62) & −0.020 (−0.55) & −0.017 (−0.44) & --- \\
+· professional & 988 & −0.171 (−4.05) & −0.090 (−2.04) & −0.095 (−1.96) & --- \\
+--- block Wald (4 df) & & p \textless{} 10⁻⁴ & \textbf{p = 0.28} & p = 0.23 & \\
+\textbf{prominence} (article-length quintile, baseline Q1) & & & & & \\
+· Q2 & 812 & −0.018 (−0.37) & −0.069 (−1.62) & −0.059 (−1.32) & --- \\
+· Q3 & 812 & +0.228 (4.68) & \textbf{+0.164 (3.74)} & +0.171 (3.65) & +6 \\
+· Q4 & 812 & +0.210 (4.39) & \textbf{+0.146 (3.25)} & +0.185 (3.84) & +5 \\
+· Q5 & 812 & +0.131 (2.77) & \textbf{+0.145 (3.22)} & +0.164 (3.36) & +5 \\
+--- block Wald (4 df) & & p \textless{} 10⁻⁴ & \textbf{p \textless{} 10⁻⁴} & \textbf{p \textless{} 10⁻⁴} & \\
+\textbf{directional ladder} (per sd, n 3,631) & & & & & \\
+· free & & −0.243 (−4.80) & --- & −0.127 (−1.25) & --- \\
+· bottom & & +0.084 (2.18) & --- & +0.082 (0.98) & --- \\
+· middle & & −0.136 (−2.64) & --- & −0.169 (−1.56) & --- \\
+· top & & +0.008 (0.21) & --- & +0.132 (2.13) & +5/sd \\
+--- block Wald (4 df) & & p \textless{} 10⁻⁴ & --- & \textbf{p = 0.26} & \\
+\textbf{coded ladder} (per sd, n 3,631) & & & & & \\
+· FREE & & −0.109 (−4.70) & --- & \textbf{−0.090 (−3.07)} & −3/sd \\
+· BOTTOM & & +0.115 (3.21) & --- & −0.040 (−0.62) & --- \\
+· MIDDLE & & −0.156 (−1.35) & --- & +0.146 (0.70) & --- \\
+· TOP & & +0.356 (2.72) & --- & −0.163 (−0.75) & --- \\
+--- block Wald (4 df) & & p \textless{} 10⁻⁴ & --- & \textbf{p = 0.0008} & \\
+\textbf{Indoors} (per sd, n 3,631) & & +0.091 (5.88) & --- & +0.032 (1.48) & --- \\
+--- block Wald (1 df) & & p \textless{} 10⁻⁴ & --- & p = 0.13 & \\
 \end{longtable}
 \endgroup
 
-The + occupational column\textquotesingle s changes come from the block, not the thinner
-sample: refit without it on the same 3,631 members, the four blocks are
-essentially unchanged (cohort +0.264, II +0.073, class block p = 0.0005) ---
-except VIIab, which thins to 53 members and −0.200 (t −1.60) before the
-block ever enters.
+The + occupational column\textquotesingle s changes come from the blocks, not the thinner
+sample: refit without them on the same 3,631 members, the four blocks are
+essentially unchanged (cohort +0.265, II +0.083, class block p = 0.0003) ---
+except VIIab, which thins to 53 members and −0.188 (t −1.48) before the
+blocks ever enter.
 
 \textbf{Why the largest coefficients carry the least variance.} A term\textquotesingle s
 variance share is per-member effect² × member share. VIIab moves each of
@@ -1187,27 +1202,33 @@ answer "how much for whom"; variance shares answer "how much of the panel"
 --- the table\textquotesingle s n and years columns show the first, the explanatory-power
 accounting below the second, and neither substitutes for the other.
 
-\textbf{They do not deserve equal billing.} Cohort is untouched by anything and an
-order of magnitude better resolved than the rest. Class shows a wider floor
-than the headline contrast: all three manual-and-rural categories sit
-significantly below the service classes jointly (V/VI −0.247, VIIab −0.299,
-IVc −0.212), and the block survives cohort, education and prominence --- but
-not its own finer measurement: add the occupational derivatives and the
-class block falls to p = 0.21 while apex delta stands at +0.076 per sd,
-because the EGP label is a coarse coding of the same occupational content
-the derivatives measure directly. That is the joint model repeating what
-destination-not-origin already said: the register tracks what the work was,
-not what the label says. Education survives nothing. Prominence appears here
-only because a regression needs a number: the linear term is standing in for
-two opposite shapes that cancel when pooled (+0.020, t 2.05, and t 1.91
-beside the occupational block), and the honest reading is the bucket table
-in Appendix~\ref{sec:prominence-buckets}, not this coefficient.
+\textbf{They do not deserve equal billing, and the full model says which is
+which.} Cohort is untouched by anything and an order of magnitude better
+resolved than the rest. Prominence, entered as the bins D.3 says it is,
+survives everything at p \textless{} 10⁻⁴ in every column --- the hump sits inside the
+joint model: flat through Q2, +0.16 to +0.19σ across Q3--Q5 with the top
+quintile easing off the Q4 peak (entered as a line instead, the block
+prints +0.020 per log-unit, t 2.05, and the shape disappears --- the line was
+the wrong form, not the predictor). Class shows a wider floor than the
+headline contrast --- all three manual-and-rural categories sit significantly
+below the service classes jointly (V/VI −0.244, VIIab −0.301, IVc −0.209) ---
+and survives cohort, education and prominence, but not its own finer
+measurement: beside the two altitude ladders the class block falls to
+p = 0.55, because the EGP label is a coarse coding of the occupational
+content the ladders measure directly. That is the joint model repeating
+what destination-not-origin already said: the register tracks what the work
+was, not what the label says. The same absorption runs inside the
+occupational blocks themselves --- each is strong alone, and jointly the
+coded ladder (p = 0.0008, its FREE level −0.090 per sd) absorbs its
+directional near-twin (p = 0.26) and Indoors (p = 0.13). Education survives
+nothing, in any column. What the full model keeps, then, is cohort, the
+prominence bins, and one occupational ladder; what it retires is the class
+label, education, and every occupational term the ladder already encodes.
 
-An earlier version of this table, computed before the nine-chamber expansion
-(n = 2,989), showed class failing the joint test --- the II-over-I contrast fell
-to t = 1.26 and the block to p = 0.0074. That was a power problem, not a
-result: cohort is collinear with both class and education, and the smaller
-sample could not separate them.
+Class needs the panel\textquotesingle s full power: restricted to the thirteen
+pre-expansion chambers (n = 2,989), the II-over-I contrast falls to t = 1.26
+and the block to p = 0.0074 --- cohort is collinear with both class and
+education, and the smaller sample cannot separate them.
 
 \textbf{Origin is null, and robustly so.} Parental class, 704 members, tested
 under both the panel and member-level specifications: joint p = 0.53--0.59,
@@ -1717,9 +1738,7 @@ RLVR & \textbf{+0.06} (CI straddles 0) & +0.37 \\
 Pooled alignment effect \textbf{+0.387} on the scaled generation --- three model
 families, 1,600 prompt pairs each, 1.19M base words.\footnote{Ladder stages: \texttt{python\ olmo\_\allowbreak{}ladder.\allowbreak{}py\ report}, which prints the
   end-to-end base→instruct row (\textbf{+1.2412}) alongside the three adjacent
-  transitions. An earlier version of the script defined only the three
-  adjacent pairs, so this footnote quoted a figure its own invocation did not
-  produce. Note the three uncorrected stages sum to +1.99 against that +1.24;
+  transitions. Note the three uncorrected stages sum to +1.99 against that +1.24;
   the gap is the per-transition control pedestal described below, and closes
   to about 0.03 under the bias-free estimator --- which is why the stages are
   reported as three separate measurements and not as a decomposition of one
@@ -1747,8 +1766,8 @@ families, 1,600 prompt pairs each, 1.19M base words.\footnote{Ladder stages: \te
   approaches the whole model. Active-parameter arithmetic describes batch 1.} SFT and DPO
 contribute \textbf{indistinguishably} (paired bootstrap over 800 shared prompts:
 DPO − SFT = −0.08, 95\% CI {[}−0.31, +0.15{]}), so no stage ordering is supported ---
-an earlier version leaned on "largest at the preference stage," and that
-ordering was the pedestal, not the data (Appendix~\ref{app:superseded}). What remains true, and
+"largest at the preference stage" was the control pedestal\textquotesingle s artifact, not
+the data (Appendix~\ref{app:superseded}). What remains true, and
 is kept as a datapoint rather than a load-bearing link: the register is
 installed by the stages tuned toward human demonstrations and preferences, and
 not by the stage tuned toward verifiable correctness. That is consistent with
@@ -1876,10 +1895,7 @@ scored occurrences.\footnote{\texttt{python\ word\_\allowbreak{}context\_\allowb
   about twice the pre-to-post rate (\textasciitilde+0.0022/yr).} The full pre-vs-post contrast is \textbf{+0.0099}
 (9 of 10 cells, p = 0.017)†\footnote{\texttt{python\ word\_\allowbreak{}context\_\allowbreak{}delta.\allowbreak{}py\ pooled}, which prints the pooled figure,
   the ten chamber × family cells, the clustered bootstrap and the permutation
-  test. Earlier drafts cited \texttt{word\_context\_delta.py} alone, whose \texttt{report}
-  mode hardcodes the Qwen3 traces and prints five per-chamber rows with no
-  pooled statistic --- the number in the sentence above was not reachable from
-  the invocation given for it. Defaults are B = 2,000 (at B = 400 the 2.5\%
+  test. Defaults are B = 2,000 (at B = 400 the 2.5\%
   percentile carries roughly one Monte-Carlo standard error, which is the
   whole distance of the lower bound from zero) and a recorded seed. The
   permutation test shuffles era labels within each chamber × family cell,
@@ -2048,8 +2064,7 @@ change a reader\textquotesingle s confidence:
   uncontrolled (t −0.2) and strongly positive within genre (t +4.1), because
   machine drafting concentrates in SO31 and \textbf{SO31 has the lowest
   justification of any genre} (1.10, against 2.09 for government business;
-  full-sample genre means --- an earlier draft quoted the post-2023 cells,
-  1.14/2.01, review item Q10).
+  full-sample genre means).
   Pooling across genres hides an effect that is plainly there inside each.
 \item
   \textbf{The two independent AI-guesses correlate} (screen vs grading judge,
@@ -2178,8 +2193,7 @@ rate & attacker\textquotesingle s detector access & value (two final runs) & the
 \endgroup
 
 Both are realistic; they bracket the exposure. The gap between them is about
-\textbf{2×}, not the "threefold" an earlier draft claimed by comparing across
-mismatched subsets (review item B4). Everything below computes on the same two
+\textbf{2×}. Everything below computes on the same two
 final runs.
 
 \textbf{The per-variant figure --- 11.1\%.} How often a single submitted variant
@@ -2300,12 +2314,10 @@ Pangram 4, 13 humanizer services & 2.31\% & FNR under commercial evasion, vendor
 Pangram 4, BLADER de-AI agent & 0.43\% & FNR under agentic evasion, vendor \\
 Pangram 4, Epoch AI Style Imitation & 2.86\% & FNR, doc-level, adversarial, vendor\footnote{Corrected 2026-08-24 (review item X2): 2.86\% (17/594) is Pangram 4\textquotesingle s
   document-level false-negative rate on the \textbf{Epoch AI Style Imitation}
-  benchmark (the Pangram 4 report\cite{pangram4}\textquotesingle s own Table 23), not the Perkins benchmark\cite{perkins2024}, which an
-  earlier draft named. The Perkins benchmark (their Table 22) is reported as a
-  mean-accuracy metric --- a different unit --- with Pangram at \textasciitilde5.9\% miss on the
-  manipulated set; it is not FNR-comparable and is not tabled here. The 2.86\%
-  figure and the ordering (all vendor rows below our per-variant rate) are
-  unchanged.} \\
+  benchmark (the Pangram 4 report\cite{pangram4}\textquotesingle s own Table 23). The Perkins benchmark\cite{perkins2024}
+  (their Table 22) reports mean accuracy --- a different unit, with Pangram at
+  \textasciitilde5.9\% miss on the manipulated set --- which is not FNR-comparable and is not
+  tabled here.} \\
 \textbf{this study, per variant} & \textbf{11.1\%} & \textbf{induced FNR, one blind submission (no attacker detector access) --- 4.8× the humanizers} \\
 \emph{this study, per target} & \emph{22.5\%} & \emph{induced, attacker may query and retry (≤18 attempts) --- 9.8× the humanizers} \\
 Rice 2026, Australian Hansard & \textasciitilde8\% & \textbf{false \emph{positive} rate}, n = 50 \\
@@ -2563,16 +2575,14 @@ confound here in any case. On this rubric a longer passage genuinely has room
 to justify more, and a member with a longer slot could earn the same points the
 same way. Adding justification by adding words is a real strategy, not an
 artifact of one; partialling it out would treat a route to quality as a
-nuisance parameter.\footnote{An earlier version of this section reported a \emph{length-adjusted}
-  column instead and used it to conclude that justification\textquotesingle s apparent gain
-  "was length". That column is the regression intercept at a word delta of
-  zero, and 24 of the 25 stage-4 deltas are strictly positive --- a zero delta
-  sits 2.1 sd outside the sample with one observation there, giving an
-  intercept VIF of 5.43 and inflating the standard error 2.3×. The +0.16 →
-  −0.173 sign flip was extrapolation. The column has been removed from the
-  script rather than repaired: the design is within-text paired, so content,
-  speaker and occasion are already fixed by construction and there was
-  nothing for a covariate to control.}
+nuisance parameter.\footnote{A length-adjusted column would be the natural check here, and its
+  absence is deliberate: that column is the regression intercept at a word
+  delta of zero, and 24 of the 25 stage-4 deltas are strictly positive --- a
+  zero delta sits 2.1 sd outside the sample with one observation there,
+  giving an intercept VIF of 5.43 and inflating the standard error 2.3×,
+  so any sign flip it showed would be extrapolation. The design is
+  within-text paired: content, speaker and occasion are already fixed by
+  construction, and there is nothing for a covariate to control.}
 
 \textbf{What this means for the prevalence number.} Evasion is real and clears
 the detector on roughly one flagged speech in five under directed search ---
@@ -2737,9 +2747,9 @@ argument: \textbf{quality assessment is not a usable proxy for provenance.} If D
 tracked authorship it would merely be a worse detector; the associations it
 does carry are weak, partly leakage, and --- where present --- positive-signed, so
 it cannot stand in for the detector, which is what lets it measure the thing
-anyone actually wanted to know. (An earlier draft called the two "orthogonal";
-that overstates it --- a referee holding the stage-2 table can point to real if
-small associations --- so the weaker, accurate claim is used, review item X4.)
+anyone actually wanted to know. ("Orthogonal" would overstate it --- a referee
+holding the stage-2 table can point to real if small associations --- so the
+weaker claim is the accurate one.)
 Two dimensions do run lower on the machine side, and they are the right
 targets for improvement rather than counterexamples: wild flagged speech is
 about half as likely to contain anything to engage with (the applicability
