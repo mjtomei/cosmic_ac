@@ -1392,7 +1392,11 @@ planted marker, is null (t +0.4). This is the occupational finding at its
 coarsest resolution, a restatement rather than a rival: office work carries
 the register wholesale, and the structure this section measures is the shape
 inside the office — the insulated middle over the exposed top, both of them
-office rungs, and free work lowest.[^rnc]
+office rungs, and free work lowest. In the joint model the office cut adds
+little that the existing covariates do not already carry (+0.039 per sd,
+t +1.9, ΔadjR² +0.0007), and the apex delta stays the strongest occupational
+term in that model (t +2.4, ΔadjR² +0.0011) — birth decade remains the
+overwhelming axis (t +24.5, carrying 0.144 of the model's 0.165).[^rnc]
 
 [^rnc]: `python prereg_negative_controls.py`; n = 4,762, estimator
     parity-guarded against stage 1 (reproduces MIDDLE +0.028, t 2.0).
@@ -1401,7 +1405,9 @@ office rungs, and free work lowest.[^rnc]
     elements as negative controls with an office-job interpretation rule;
     the adjudication (2026-08-24, logged in the prereg) rejects that rule's
     implication — office language is the finding restated, not a control on
-    it — and the result is reported here as description.
+    it — and the result is reported here as description. Joint-model numbers:
+    `python prereg_indoors_joint.py` (n = 3,594, the covariate panel; the
+    grand model mirrors `prereg_covariate_strength.py`).
 
 ### 4.7 The register is a post-training artifact
 

@@ -1,0 +1,14 @@
+prereg_indoors_joint.py -- run 2026-08-24
+
+grand model (ii), no Indoors:   adjR2 0.1639   (n=3594)
+grand model (ii) + Indoors:     adjR2 0.1646   gain +0.0007
+Indoors in-model: +0.039 (t +1.9) per sd
+
+block          in-model (strongest term)   adjR2 lost if dropped
+birthdec                +0.377 (t +24.5)                  0.1444
+EGP class                -0.197 (t -2.0)                  0.0006
+education                -0.115 (t -1.9)                  0.0003
+prominence               +0.027 (t +1.8)                  0.0005
+dir middle               -0.021 (t -0.7)                 -0.0001
+apex delta               +0.076 (t +2.4)                  0.0011
+Indoors                  +0.039 (t +1.9)                  0.0007
