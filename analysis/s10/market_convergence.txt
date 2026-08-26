@@ -1,0 +1,36 @@
+351 scored occupations, 4762 members
+
+=== 1. CROSS-TABS: folk argmax level x anchor (member-weighted) ===
+  Job Zone       Cramer's V = 0.351  (members 4762)
+  edu category   Cramer's V = 0.419  (members 4241)
+  ISEI quartile  Cramer's V = 0.441  (members 4358)
+  SIOPS quartile Cramer's V = 0.470  (members 4358)
+  wage quartile  Cramer's V = 0.309  (members 4685)
+
+  companion member-weighted Spearman of level scores vs anchors:
+  ISEI   FREE +0.16  BOTTOM -0.13  MIDDLE -0.03  TOP -0.00
+  SIOPS  FREE +0.26  BOTTOM -0.41  MIDDLE +0.21  TOP +0.23
+  wage   FREE +0.43  BOTTOM -0.65  MIDDLE +0.53  TOP +0.55
+
+=== 2. HAUSER-WARREN: level score ~ occ. education + log wage (occupation-level, member-weighted) ===
+  FREE     R^2 = 0.32
+  BOTTOM   R^2 = 0.45
+  MIDDLE   R^2 = 0.43
+  TOP      R^2 = 0.45
+
+=== 3. KNOWN GROUPS: extremes per level ===
+  FREE high: Craft Artists; History Teachers, Postsecondary; Fine Artists, Including Painters, Sculptors, and Illustrators; Arbitrators, Mediators, and Conciliators; Naturopathic Physicians; Pest Control Workers
+  FREE  low: Actors; Musicians and Singers; Nursing Assistants; Food Preparation Workers; Waiters and Waitresses; Dancers
+
+  BOTTOM high: Postal Service Mail Carriers; Word Processors and Typists; Insurance Claims and Policy Processing Clerks; Legal Secretaries and Administrative Assistants; Office Clerks, General; Secretaries and Administrative Assistants, Except Legal, Medical, and Executive
+  BOTTOM  low: Chief Executives; Education Administrators, Kindergarten through Secondary; Sales Managers; Dentists, General; General and Operations Managers; Training and Development Managers
+
+  MIDDLE high: Chief Executives; Medical and Health Services Managers; Human Resources Managers; Education Administrators, Kindergarten through Secondary; General and Operations Managers; Lodging Managers
+  MIDDLE  low: Models; Postal Service Mail Carriers; Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic; Fine Artists, Including Painters, Sculptors, and Illustrators; Couriers and Messengers; Judicial Law Clerks
+
+  TOP high: Chief Executives; Education Administrators, Kindergarten through Secondary; Sales Managers; Medical and Health Services Managers; General and Operations Managers; Human Resources Managers
+  TOP  low: Models; Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic; Postal Service Mail Carriers; Dancers; Passenger Attendants; Welders, Cutters, Solderers, and Brazers
+
+=== 4. FREE vs self-employment (EGP IVab/IVc) ===
+  free-argmax members: 37 petty-bourgeois/farmer, 561 not (6% PB)
+  other levels:        578 PB, 3583 not (14% PB)

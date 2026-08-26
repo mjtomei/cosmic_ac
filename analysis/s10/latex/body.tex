@@ -1123,6 +1123,40 @@ group: the nine 2026 additions (meta z \(-4.1\)), the eight Canadian provinces
   member z on the folk free level (per sd within chamber, HC1),
   inverse-variance pooled; the apex-delta meta from the same cells.}
 
+\textbf{Against the market-fitted measures.} The classical anchors join at
+occupation level through the study\textquotesingle s existing SOC coding --- no new member
+placement anywhere --- via the BLS crosswalk to ISCO-08 for Ganzeboom\textquotesingle s ISEI
+and Treiman\textquotesingle s SIOPS prestige scale, OES national median wages, and O*NET\textquotesingle s
+Job Zone and required-education categories.\footnote{\texttt{python\ build\_\allowbreak{}market\_\allowbreak{}join.\allowbreak{}py} then
+  \texttt{python\ market\_\allowbreak{}convergence.\allowbreak{}py}; source files and fetch provenance in
+  \texttt{market\_\allowbreak{}anchors/\allowbreak{}PROVENANCE.\allowbreak{}md}. Coverage: 351 of 401 study occupations
+  carry level scores; ISEI misses 15\% of codes because the official
+  crosswalk is 2010-SOC-vintage against the study\textquotesingle s 2018-based O*NET
+  codes; SOC codes mapping to several ISCO-08 codes (63) take the mean
+  of the mapped scores.} Convergently, the
+ladder sits inside the socioeconomic family without being any member of
+it: member-weighted Cramér\textquotesingle s V between the folk argmax level and each
+anchor runs 0.31 (wage quartiles) to 0.47 (SIOPS quartiles). Discriminantly,
+it is not the old ingredients recombined: regressing each level score on
+occupational education and log wage leaves \(R^{2}\) at 0.32--0.45, so more than
+half of every level\textquotesingle s variance lies off the education--earnings plane --- and
+the free level is not self-employment in disguise (free-argmax members are
+petty bourgeois or farmers at 6\%, against the panel\textquotesingle s 14\%). The extremes
+are face-valid and occasionally sharper than the schemas: painters and
+craft artists score free-high while actors and dancers --- performers, who
+work under direction --- score free-low, a distinction no market category
+draws. And in the joint model the asymmetry is complete: entered as
+member-weighted quartile dummies beside the committed blocks, \textbf{ISEI and
+wage collapse (block p = 0.31 and 0.35) while the folk ladder stands
+(p = 0.017, its free level \(-0.089\), t \(-3.08\), with both anchors in)} ---
+alone on the same 3,276 members all three are strong (folk \(p < 10^{-7}\), ISEI
+\(p < 10^{-6}\), wage p = 0.003). The fitted scales are absorbed by the study\textquotesingle s
+covariates; the blind measure is not absorbed by the fitted
+scales.\footnote{\texttt{python\ market\_joint.py} --- the committed member-level spec
+  (z within chamber, equal weight, HC1, block Walds) on the 3,276
+  members carrying every block, with ISEI and log-wage entered as
+  member-weighted quartile dummies, Q1 baseline.}
+
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.85\linewidth]{ladder_by_era_panels.png}
@@ -3006,8 +3040,12 @@ categorical schemas were validated against employment relations --- while
 the folk ladder was built blind: model-elicited from aggregated human
 expression, no outcome visible, its ordering registered before any join.
 On this outcome the blind measure absorbs the categorical schema in the
-joint model (\cref{sec:class}): a classification built blind recovered
-social-structural information the market-fitted scales do not carry. That
+joint model (\cref{sec:class}) --- and, with the anchors joined, holds against the
+fitted continuous scales too: beside the study\textquotesingle s covariates, ISEI and wage
+quartiles collapse while the folk block stands, and more than half of each
+level\textquotesingle s variance lies off the education--earnings plane entirely (\cref{sec:occupation}).
+A classification built blind recovered social-structural information the
+market-fitted scales demonstrably do not carry. That
 is the live instance of the change this paper keeps meeting --- structure
 that institutions summarised lossily, because tracking it was uneconomic,
 becoming directly measurable.

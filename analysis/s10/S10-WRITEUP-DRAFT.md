@@ -1278,6 +1278,44 @@ is **−0.070 per sd, z = −5.0**; the apex delta pools at **+0.059, z =
 group: the nine 2026 additions (meta z −4.1), the eight Canadian provinces
 (z −2.5), and the five tier-1 national chambers (z −2.2).[^s-lmeta]
 
+**Against the market-fitted measures.** The classical anchors join at
+occupation level through the study's existing SOC coding — no new member
+placement anywhere — via the BLS crosswalk to ISCO-08 for Ganzeboom's ISEI
+and Treiman's SIOPS prestige scale, OES national median wages, and O\*NET's
+Job Zone and required-education categories.[^rmarket] Convergently, the
+ladder sits inside the socioeconomic family without being any member of
+it: member-weighted Cramér's V between the folk argmax level and each
+anchor runs 0.31 (wage quartiles) to 0.47 (SIOPS quartiles). Discriminantly,
+it is not the old ingredients recombined: regressing each level score on
+occupational education and log wage leaves R² at 0.32–0.45, so more than
+half of every level's variance lies off the education–earnings plane — and
+the free level is not self-employment in disguise (free-argmax members are
+petty bourgeois or farmers at 6%, against the panel's 14%). The extremes
+are face-valid and occasionally sharper than the schemas: painters and
+craft artists score free-high while actors and dancers — performers, who
+work under direction — score free-low, a distinction no market category
+draws. And in the joint model the asymmetry is complete: entered as
+member-weighted quartile dummies beside the committed blocks, **ISEI and
+wage collapse (block p = 0.31 and 0.35) while the folk ladder stands
+(p = 0.017, its free level −0.089, t −3.08, with both anchors in)** —
+alone on the same 3,276 members all three are strong (folk p < 10⁻⁷, ISEI
+p < 10⁻⁶, wage p = 0.003). The fitted scales are absorbed by the study's
+covariates; the blind measure is not absorbed by the fitted
+scales.[^rmjoint]
+
+[^rmarket]: `python build_market_join.py` then
+    `python market_convergence.py`; source files and fetch provenance in
+    `market_anchors/PROVENANCE.md`. Coverage: 351 of 401 study occupations
+    carry level scores; ISEI misses 15% of codes because the official
+    crosswalk is 2010-SOC-vintage against the study's 2018-based O\*NET
+    codes; SOC codes mapping to several ISCO-08 codes (63) take the mean
+    of the mapped scores.
+
+[^rmjoint]: `python market_joint.py` — the committed member-level spec
+    (z within chamber, equal weight, HC1, block Walds) on the 3,276
+    members carrying every block, with ISEI and log-wage entered as
+    member-weighted quartile dummies, Q1 baseline.
+
 [^s-lmeta]: `python ladder_chamber_meta.py` — per-chamber OLS slope of
     member z on the folk free level (per sd within chamber, HC1),
     inverse-variance pooled; the apex-delta meta from the same cells.
@@ -3259,8 +3297,12 @@ categorical schemas were validated against employment relations — while
 the folk ladder was built blind: model-elicited from aggregated human
 expression, no outcome visible, its ordering registered before any join.
 On this outcome the blind measure absorbs the categorical schema in the
-joint model (§4.6b): a classification built blind recovered
-social-structural information the market-fitted scales do not carry. That
+joint model (§4.6b) — and, with the anchors joined, holds against the
+fitted continuous scales too: beside the study's covariates, ISEI and wage
+quartiles collapse while the folk block stands, and more than half of each
+level's variance lies off the education–earnings plane entirely (§4.6a).
+A classification built blind recovered social-structural information the
+market-fitted scales demonstrably do not carry. That
 is the live instance of the change this paper keeps meeting — structure
 that institutions summarised lossily, because tracking it was uneconomic,
 becoming directly measurable.

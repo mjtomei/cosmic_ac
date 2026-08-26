@@ -1,0 +1,119 @@
+graduate split on panel: {'master': 659, 'unrecorded': 625, 'doctorate': 194}
+panel: 3276 members with every block incl. ISEI and wage
+
+folk ALONE (same sample)   n=3,276
+    folk FREE       -0.099  t -4.00 *
+    folk BOTTOM     +0.145  t +3.90 *
+    folk MIDDLE     -0.145  t -1.26
+    folk TOP        +0.371  t +2.85 *
+      block Wald chi2=46.2, df=4, p=1.182e-08
+
+iseiq ALONE (same sample)   n=3,276
+    ISEI Q2         +0.196  t +4.14 *
+    ISEI Q3         -0.041  t -0.99
+    ISEI Q4         +0.080  t +0.61
+      block Wald chi2=33.4, df=3, p=7.886e-07
+
+wageq ALONE (same sample)   n=3,276
+    wage Q2         +0.143  t +2.99 *
+    wage Q3         +0.027  t +0.66
+    wage Q4         +0.174  t +2.64 *
+      block Wald chi2=14.4, df=3, p=0.002538
+
+JOINT — the committed five (this sample)   n=3,276
+    cohort          +0.260  t +23.09 *
+      block Wald chi2=533.2, df=1, p=7.683e-55
+    class II        +0.063  t +1.44
+    class III       +0.027  t +0.24
+    class IVab      +0.032  t +0.45
+    class IVc       -0.173  t -1.69
+    class V/VI      -0.221  t -2.35 *
+    class VIIab     -0.174  t -1.11
+      block Wald chi2=14.6, df=6, p=0.02316
+    edu none        -0.197  t -1.00
+    edu secondary   -0.033  t -0.46
+    edu college     -0.105  t -1.70
+    edu master      -0.045  t -0.85
+    edu doctorate   -0.017  t -0.20
+    edu graduate    +0.002  t +0.05
+    edu professional  -0.103  t -2.13 *
+      block Wald chi2=8.6, df=7, p=0.2794
+    prom Q2         -0.068  t -1.45
+    prom Q3         +0.168  t +3.39 *
+    prom Q4         +0.193  t +3.81 *
+    prom Q5         +0.179  t +3.53 *
+      block Wald chi2=47.9, df=4, p=5.976e-09
+    folk FREE       -0.068  t -2.60 *
+    folk BOTTOM     +0.013  t +0.34
+    folk MIDDLE     +0.032  t +0.24
+    folk TOP        +0.036  t +0.24
+      block Wald chi2=14.6, df=4, p=0.00581
+
+JOINT — market anchors instead of the folk ladder   n=3,276
+    cohort          +0.259  t +22.72 *
+      block Wald chi2=516.3, df=1, p=1.351e-53
+    class II        +0.099  t +1.89
+    class III       -0.003  t -0.03
+    class IVab      +0.015  t +0.17
+    class IVc       -0.269  t -2.32 *
+    class V/VI      -0.251  t -2.26 *
+    class VIIab     -0.186  t -1.16
+      block Wald chi2=25.7, df=6, p=0.0002979
+    edu none        -0.177  t -0.90
+    edu secondary   -0.046  t -0.64
+    edu college     -0.112  t -1.82
+    edu master      -0.049  t -0.93
+    edu doctorate   -0.030  t -0.35
+    edu graduate    +0.006  t +0.12
+    edu professional  -0.093  t -1.89
+      block Wald chi2=7.8, df=7, p=0.346
+    prom Q2         -0.068  t -1.45
+    prom Q3         +0.164  t +3.31 *
+    prom Q4         +0.185  t +3.65 *
+    prom Q5         +0.163  t +3.22 *
+      block Wald chi2=43.8, df=4, p=3.04e-08
+    ISEI Q2         -0.024  t -0.41
+    ISEI Q3         -0.071  t -1.20
+    ISEI Q4         +0.136  t +0.92
+      block Wald chi2=3.6, df=3, p=0.3099
+    wage Q2         +0.071  t +1.36
+    wage Q3         -0.008  t -0.14
+    wage Q4         +0.075  t +0.95
+      block Wald chi2=3.3, df=3, p=0.3494
+
+JOINT — folk ladder AND the market anchors   n=3,276
+    cohort          +0.258  t +22.65 *
+      block Wald chi2=512.8, df=1, p=2.425e-53
+    class II        +0.050  t +0.88
+    class III       +0.015  t +0.12
+    class IVab      +0.031  t +0.35
+    class IVc       -0.245  t -1.95
+    class V/VI      -0.278  t -2.35 *
+    class VIIab     -0.187  t -1.10
+      block Wald chi2=15.7, df=6, p=0.01542
+    edu none        -0.189  t -0.96
+    edu secondary   -0.041  t -0.56
+    edu college     -0.112  t -1.81
+    edu master      -0.047  t -0.91
+    edu doctorate   -0.019  t -0.22
+    edu graduate    +0.007  t +0.14
+    edu professional  -0.101  t -2.05 *
+      block Wald chi2=8.7, df=7, p=0.2714
+    prom Q2         -0.067  t -1.44
+    prom Q3         +0.164  t +3.31 *
+    prom Q4         +0.189  t +3.73 *
+    prom Q5         +0.171  t +3.36 *
+      block Wald chi2=45.2, df=4, p=1.734e-08
+    folk FREE       -0.089  t -3.08 *
+    folk BOTTOM     +0.004  t +0.08
+    folk MIDDLE     -0.185  t -1.11
+    folk TOP        +0.231  t +1.31
+      block Wald chi2=12.0, df=4, p=0.01744
+    ISEI Q2         -0.044  t -0.69
+    ISEI Q3         -0.095  t -1.33
+    ISEI Q4         +0.096  t +0.59
+      block Wald chi2=3.5, df=3, p=0.3168
+    wage Q2         +0.082  t +1.52
+    wage Q3         +0.015  t +0.24
+    wage Q4         +0.110  t +1.01
+      block Wald chi2=3.2, df=3, p=0.364
