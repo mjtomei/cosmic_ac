@@ -1014,32 +1014,37 @@ not distinguishable from II.
 
 \textbf{The shape holds in every period, and does not migrate.} A chase-and-flight
 cycle predicts that the originating tier abandons the form first, so the peak
-should slide downward across eras. It does not: class II sits above class I in
-all seven half-decades (\cref{fig:class-era}), and the manual-and-farm tail sits at the floor in six
-of seven. The seventh is the 2025--26 bin, where the pooled tail rises to
-+0.02, level with class I --- a composition artifact of thin cells, not a
-movement: farmers stay at the floor (\(-0.22\)), VIIab is too thin to plot at
-all (n \textless{} 25), and the rise is a single 55-member V/VI cell at +0.17 \(\pm\) 0.12,
-one bin after that series\textquotesingle{} own minimum, with no preceding trend. It is
-watched as a candidate inversion, and read as noise.
+should slide downward across eras. It does not: class II sits above class I
+in all six complete half-decades (\cref{fig:class-era}) --- and in the partial 2025--26 bin too
+(II +0.06 against I \(-0.07\)) --- and the manual-and-farm tail holds the floor in
+every complete bin, visibly from 1995 once the thin early cells are drawn
+rather than filtered. The partial 2025--26 bin --- two years against every
+other bin\textquotesingle s five, cells at half size, VIIab down to 17 members --- is excluded
+from the figure and the trend test; its cells are tabulated in
+\texttt{class\_by\_era\_all.csv}, and none of them changes a conclusion. The one cell
+that moves, V/VI at +0.14 \(\pm\) 0.11 on 56 members, is a one-bin bounce with no
+preceding trend, watched as a candidate inversion and read as noise.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.85\linewidth]{class_by_era_grouped.png}
-\caption{The class profile of the register, 1995--2026. One point per class per period
-(\(\geq\)25 members), member-level means over 22 chambers, z-scored within
-chamber \(\times\) period so the overall era rise is removed and only the shape across
-classes remains. IVc, V/VI and VIIab are pooled because separately they run
-26--113 members per period and cross each other on noise; I and II are kept
-apart because the crossover between them is the claim under test. Error bars
-are \(\pm\)1 se. Class III remains thin (26--81 members) and its late excursion is not
-readable as movement; the pooled tail\textquotesingle s last-bin rise is a 55-member V/VI
-wobble with farmers still at the floor and VIIab too thin to plot. (\texttt{python\ plot\_\allowbreak{}class\_\allowbreak{}by\_\allowbreak{}era\_\allowbreak{}grouped.\allowbreak{}py}, reading
-  \texttt{class\_\allowbreak{}by\_\allowbreak{}era\_\allowbreak{}grouped.\allowbreak{}csv} (per-point means, standard errors and member
-  counts); the unpooled version is \texttt{class\_by\_era.csv} / \texttt{class\_by\_era.png}.
-  An earlier member-\textbf{year} aggregation of the same data appeared to show the
-  peak migrating downward; that was an artifact of counting long-serving
-  members repeatedly, and the member-level estimate above retracts it.)}
+\includegraphics[width=0.85\linewidth]{class_by_era_panels.png}
+\caption{The class profile of the register, 1995--2024, one panel per class:
+member-level means over 22 chambers, z-scored within chamber \(\times\) period, so
+the overall era rise is removed and each panel reads as that class\textquotesingle s
+position against its chamber-and-period average --- a rising panel is a class
+gaining relative to its peers, not the register rising absolutely. Every
+cell with any members is drawn; open markers carry fewer than 25 members
+(count annotated). Error bars are \(\pm\)1 se. Class II holds above class I
+throughout; the manual and farm classes hold the floor; III --- thin at 26--81
+members --- is persistently elevated and the only series that climbs. (\texttt{python\ build\_\allowbreak{}class\_\allowbreak{}by\_\allowbreak{}era.\allowbreak{}py} --- the committed generator
+  (review CC10): member-year panel rates z-scored against all member-years
+  of their chamber \(\times\) half-decade, word-weighted to one value per member
+  per bin, cells over the 5,523 class-coded members with any 1995+ speech;
+  writes \texttt{class\_by\_era\_all.csv} (every cell) and the complete-bin paper
+  files --- then \texttt{python\ plot\_\allowbreak{}class\_\allowbreak{}by\_\allowbreak{}era\_\allowbreak{}panels.\allowbreak{}py}. A member-\textbf{year}
+  aggregation of the same data would show the peak migrating downward --- an
+  artifact of counting long-serving members once per year --- which is why
+  the estimate is member-level.)}
 \label{fig:class-era}
 \end{figure}
 
@@ -1439,10 +1444,12 @@ that became common; and dynamically at the word level, where the most
 conspicuous machine tells peak and fall back (\cref{sec:register-shift}). What is \textbf{not}
 observed is the class cycle in motion: the peak does not migrate across
 eras, and the second sufficient signature --- a widening II-over-I separation
---- is also null (+0.152 in 1995--99 against +0.153 in 2025--26; weighted trend
-\(-0.005\) per half-decade, t \(-0.4\)).\footnote{\texttt{python\ class\_\allowbreak{}gap\_\allowbreak{}trend.\allowbreak{}py}, from \texttt{class\_\allowbreak{}by\_\allowbreak{}era\_\allowbreak{}grouped.\allowbreak{}csv} (the
-  era figure\textquotesingle s own per-period means within chamber \(\times\) period z); the gap\textquotesingle s
-  inverse-variance-weighted trend across the seven half-decades.} Jhering set out the diffusion
+--- is also null (+0.155 in 1995--99 against +0.137 in 2020--24; weighted trend
+\(-0.010\) per half-decade, t \(-0.7\)).\footnote{\texttt{python\ class\_\allowbreak{}gap\_\allowbreak{}trend.\allowbreak{}py}, from \texttt{class\_\allowbreak{}by\_\allowbreak{}era\_\allowbreak{}grouped.\allowbreak{}csv} (the
+  era data\textquotesingle s own per-period means within chamber \(\times\) period z, regenerated by
+  \texttt{build\_class\_by\_era.py}); the gap\textquotesingle s inverse-variance-weighted trend
+  across the six complete half-decades --- the partial 2025--26 bin is
+  excluded throughout.} Jhering set out the diffusion
 mechanism in \emph{Der Zweck im Recht} (1883); Durkheim\textquotesingle s summary of it gives the
 phrase --- fashion, once universally adopted, "condemned by its very nature to
 renew itself continuously" --- and Veblen (1899) and Simmel (1904) gave it its
@@ -1519,7 +1526,7 @@ while reconciling estimates, not predicted in advance. The era-resolved test it
 implies \textbf{has} now been run and does not support the cycle\textquotesingle s dynamic half
 on either sufficient signature --- the class profile holds its shape in every
 half-decade rather than migrating (figure above), and the II-over-I
-separation is constant across thirty years (+0.152 \(\rightarrow\) +0.153, trend t \(-0.4\)). A cycle already in progress before our first frame would look
+separation is constant across thirty years (+0.155 \(\rightarrow\) +0.137, trend t \(-0.7\)). A cycle already in progress before our first frame would look
 like this too, which is why the discriminating study is class-coded speech from
 before 1996 (\cref{sec:future}).
 

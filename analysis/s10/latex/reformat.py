@@ -78,7 +78,7 @@ APPMAP = {
  "D.1":"sec:judge-leakage","D.2":"sec:prominence-full","D.3":"sec:prominence-buckets",
  "D.4":"sec:cohort-ministerial",
 }
-FIGLABEL = {"class_by_era_grouped.png":"fig:class-era","altitude_u.png":"fig:altitude",
+FIGLABEL = {"class_by_era_panels.png":"fig:class-era","altitude_u.png":"fig:altitude",
             "the-ai-lexicon-trend.png":"fig:trend","apc_gradients.png":"fig:apc","bypass_search.png":"fig:bypass"}
 
 NUMSTRIP = re.compile(r'^(?:Appendix\s+[A-D]\s+---\s+|(?:[0-9]+(?:\.[0-9]+[a-z]?)?|[A-D]\.[0-9]+[a-z]?)\.?\s+)')
@@ -153,7 +153,7 @@ def replace_appendix_refs(t):
 
 def figure_ref_anchors(t):
     subs = [
-      (r"sits\s+above\s+class\s+I\s+in\s+all\s+seven\s+half-decades",
+      (r"sits\s+above\s+class\s+I\s+in\s+all\s+six\s+complete\s+half-decades",
        r"\g<0> (\\cref{fig:class-era})"),
       (r"carry\s+the\s+claim\.",
        r"carry the claim (\\cref{fig:altitude})."),
