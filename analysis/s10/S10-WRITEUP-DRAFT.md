@@ -3286,6 +3286,19 @@ favours the lossy-summary reading. Either way, the measurement point
 survives: the structure was there, untracked, and a blind machine measure
 picked it up.
 
+And a weaker form of the larger point survives the dispute between
+readings entirely, because it does not depend on what the register refers
+to. The standing defence of the market as social oracle has never been
+that it measures well; it is that nothing measures better — the best of
+bad options. What this result demonstrates is the arrival of another kind
+of option: a bespoke measure, elicited blind from aggregated human
+experience at trivial cost, preregistered, and better than the fitted
+schemas on the first outcome it was pointed at. Whether it found referent
+or veil, the capability generalises — measures like this can now be built
+per question, blinded by construction, and checked — and every one built
+weakens "best of bad options" as an argument for reading social structure
+off prices alone.
+
 ### 8.5 Measuring the human contribution against an automated counterpart
 
 The most promising direction, and the least developed. Generate what a fully
