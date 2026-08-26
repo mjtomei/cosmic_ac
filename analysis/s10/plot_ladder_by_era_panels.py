@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """The coded-ladder-by-era figure: the surviving occupational instrument, era-resolved.
 
-One panel per level of the coded altitude ladder — the joint model's
+One panel per level of the folk ladder — the joint model's
 surviving occupational block — each showing that level's base slope entered
 alone (per sd, HC1) across the six equal bins, on the class-era machinery's
 member-bin values. Same styling as the class panels.

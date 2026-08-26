@@ -29,8 +29,8 @@ DIR = {"free": (-0.060, -4.2), "bottom": (-0.021, -1.5), "middle": (+0.029, 2.0)
 LVL = {"free": (-0.066, -4.7), "bottom": (+0.010, 0.7), "middle": (+0.028, 2.0), "top": (+0.021, 1.5)}
 
 # Okabe-Ito colourblind-safe pair; distinct markers for redundant encoding
-SERIES = [("directional instrument", DIR, "#0072B2", "o", -0.05),
-          ("coded corporate ladder", LVL, "#D55E00", "s", +0.05)]
+SERIES = [("theoretical ladder", DIR, "#0072B2", "o", -0.05),
+          ("folk ladder", LVL, "#D55E00", "s", +0.05)]
 
 fig, ax = plt.subplots(figsize=(8.2, 5.6))
 ax.axhline(0, color="#c7c7c7", lw=1, zorder=1)

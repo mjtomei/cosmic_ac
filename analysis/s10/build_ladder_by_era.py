@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""The coded altitude ladder, era-resolved (Matthew, 2026-08-26).
+"""The folk ladder, era-resolved (Matthew, 2026-08-26).
 
-The joint model's occupational survivor is the coded ladder (block
+The joint model's occupational survivor is the folk ladder (block
 p = 0.0008 beside everything else), so the era question the class panels
 answer gets asked of it directly: does the instrument's shape hold across
 half-decades? Levels are continuous per-member scores, so the era series

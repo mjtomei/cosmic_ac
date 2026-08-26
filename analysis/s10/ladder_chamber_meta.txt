@@ -1,0 +1,32 @@
+chamber        n   FREE slope      t
+AB            57       -0.193  -1.85
+BC           130       -0.063  -0.84
+CA-FED       370       -0.038  -0.73
+IE           166       -0.061  -0.72
+MB           112       -0.024  -0.29
+NI           105       +0.066  +0.73
+NL            62       -0.206  -1.90
+NS           115       -0.006  -0.09
+NSW          240       -0.032  -0.50
+ON           149       -0.092  -1.30
+PE            30       -0.211  -1.11
+QLD          173       -0.214  -2.90 *
+SA           116       -0.169  -1.85
+SCO          216       -0.146  -2.04 *
+SK            89       -0.049  -0.49
+TAS           59       -0.170  -1.23
+UK          1024       -0.023  -0.74
+US-HOUSE     721       -0.074  -1.94
+US-SENATE    219       -0.063  -0.91
+VIC          295       -0.101  -1.90
+WA           219       -0.101  -1.70
+WAL          104       -0.087  -0.79
+
+FREE, 22 chambers: negative in 21, individually significant in 2
+  inverse-variance meta: -0.0696 per sd  (z = -5.00)
+apex delta (MIDDLE − TOP) meta: +0.0587 per sd  (z = +4.15)
+
+FREE by chamber group:
+  2026-additions    9 chambers, 8 negative, meta -0.1020 (z -4.14)
+  provinces         8 chambers, 8 negative, meta -0.0781 (z -2.50)
+  tier-1            5 chambers, 5 negative, meta -0.0446 (z -2.23)

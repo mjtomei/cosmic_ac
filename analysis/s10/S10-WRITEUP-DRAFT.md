@@ -118,7 +118,9 @@ argument about states, and the class schemas are a mild case of it. Machine
 intelligence lowers the cost of the alternative: bespoke, current
 classifications, blind-derived from the full descriptor universe and
 preregistered so they stay verifiable, carrying the spirit of the classical
-schemas while keeping what those schemas flatten. These correlations locate
+schemas while keeping what those schemas flatten — and, in the event, the
+measure's best-performing form is exactly that: a folk category,
+concretized. These correlations locate
 the rise without yet explaining it — together they cover about a sixth of member-level variation, most of
 that birth year. Machine intelligence did not invent this register of accountability
 without authorship; it inherited it, automated it, and made it measurable.
@@ -318,8 +320,11 @@ universe — all 295 rated descriptors — in two semi-independent
 constructions, both **blind-derived**: the coders who produced them were
 never shown the register, the hypothesis, or any outcome.
 
-**The coded ladder** (the measure's primary form). Eighteen blind coding
-passes nominated, multi-label, the elements that mark the **free / bottom /
+**The folk ladder** (the measure's primary form — named for its origin:
+it starts from the folk image of a corporate hierarchy, the ladder as
+everyday speech has it, and asks machine coders to concretize that
+stereotype into measurable elements). Eighteen blind coding passes
+nominated, multi-label, the elements that mark the **free / bottom /
 middle / top** of a corporate hierarchy; elements nominated by more than
 one coder form the consensus signature — 85 elements: 11 free, 13 bottom,
 27 middle, 34 top, each with a consensus sign. A level score is the mean of
@@ -331,9 +336,11 @@ missing ratings for farmers are the subject of a committed sensitivity
 run).[^m34b] The complete signature — every element id, name, level, sign
 and coder count — is Appendix C's first table.
 
-**The directional ladder** (the semi-independent check). Three independent
-blind coding workflows assigned elements to four accountability
-components — **U** upward (advising without the final say, discretion
+**The theoretical ladder** (the semi-independent check — named for the
+opposite origin: it is built from the registration's theory of
+accountability relations, composed rather than pictured). Three
+independent blind coding workflows assigned elements to four
+accountability components — **U** upward (advising without the final say, discretion
 reverse-scored), **L** lateral (external service), **D** downward
 (command), **N** undirected (organisational account-giving and contact) —
 yielding 71 consensus elements (Appendix C's second table); the free /
@@ -1158,18 +1165,19 @@ without the final say; discretion reverse-scored), **L** lateral (external
 service), **D** downward (command), **N** undirected (organisational
 account-giving and contact). From the components and from an independent
 blind coding of hierarchy positions come the study's registered structure —
-**four levels, built two semi-independent ways**: the *directional ladder*
-(free / bottom / middle / top composed from the components) and the *coded
-ladder* (the same four levels scored from element signatures produced by
-coders who were never told the register or the hypothesis existed) — plus
+**four levels, built two semi-independent ways**: the *theoretical ladder*
+(free / bottom / middle / top composed from the components) and the *folk
+ladder* (the same four levels scored from the element signatures of coders
+asked to concretize the everyday image of a corporate hierarchy, never told
+the register or the hypothesis existed) — plus
 the **apex delta** (MIDDLE − TOP), registered in words as "insulated command
 tracks more register than exposed command."
 
 **The four-level U is the result, and its registration is a timeline.** The
 middle-peak prediction — free and the top low, the middle the peak — was
-stated in the session log an hour before the first fit; the coded ladder and
+stated in the session log an hour before the first fit; the folk ladder and
 the apex delta entered the committed pre-registration twelve minutes before
-it; the directional ladder's explicit sign declarations were formalised in
+it; the theoretical ladder's explicit sign declarations were formalised in
 the post-Stage-1 amendment. The exact record, to the minute, is in the
 footnote.[^regts] Each
 level entered alone (standardised; n = 4,762, full-covariate slopes at
@@ -1181,10 +1189,10 @@ n = 3,594):
     with middle managers with workers below them" (Matthew). **12:41**: the
     four-level structure directed ("three levels of corporate and a free").
     **13:03**: the charged/uncharged horse race directed. **13:05**, commit
-    `f10d502`: the coded ladder and the apex delta ("insulated command
+    `f10d502`: the folk ladder and the apex delta ("insulated command
     tracks more register than exposed command") committed to the prereg.
     **13:17**, `ad303ad`: Stage 1 run and unblinded. **13:36**, `53a02ff`:
-    amendment adding the directional ladder and the explicit middle+/free−
+    amendment adding the theoretical ladder and the explicit middle+/free−
     sign declarations, self-labelled as post-unblinding. **17:21**,
     `ccba83d`: the ruling recording the U as the design intent. So the
     prediction precedes the data by 73 minutes in the log, and the formal
@@ -1195,7 +1203,7 @@ n = 3,594):
     spirit of the practice — predictions verifiably preceding data — is
     checkable to the minute without the formal document as the only witness.
 
-| level | directional ladder | coded ladder |
+| level | theoretical ladder | folk ladder |
 |---|---|---|
 | free | −0.060 (t −4.2) | −0.066 (t −4.7) |
 | bottom | −0.021 (t −1.5) | +0.010 (t +0.7) |
@@ -1214,13 +1222,13 @@ relative contrast carry the claim.
 
 ![](altitude_u.png)
 
-*The occupational register profile. Each legislator's prior occupation, coded to O\*NET, is scored on a four-level altitude ladder (free / bottom / middle / top of an organisational hierarchy) two semi-independent ways — the directional instrument and the coded corporate ladder — and both peak at the insulated middle, dipping at the exposed top. Points are each level's base slope entered alone (standardised, n = 4,762); bars ±1 se. The levels are individually noisy but jointly significant; the powered claim is the apex delta (middle − top), +0.049 (t 3.3), rising to +0.067 (t 3.9) under full covariates.*
+*The occupational register profile. Each legislator's prior occupation, coded to O\*NET, is scored on a four-level altitude ladder (free / bottom / middle / top of an organisational hierarchy) two semi-independent ways — the theoretical ladder and the folk ladder — and both peak at the insulated middle, dipping at the exposed top. Points are each level's base slope entered alone (standardised, n = 4,762); bars ±1 se. The levels are individually noisy but jointly significant; the powered claim is the apex delta (middle − top), +0.049 (t 3.3), rising to +0.067 (t 3.9) under full covariates.*
 
 **The delta is the study's most covariate-robust occupational number.**
 Registered in words and observed +0.049 (t 3.3) raw; **+0.067 (t 3.9)**
 with cohort, class, education and prominence all present; right-signed and
 nominally significant in 16 of 16 covariate specifications; it absorbs the
-directional middle entirely when both enter. Dropped from the grand model
+theoretical middle entirely when both enter. Dropped from the grand model
 it costs as much adjusted R² as the entire six-dummy class block (.0033 vs
 .0038); education is spent once class and the delta are present (.0004).
 Its group form — members split by relative inwardness, insulated against
@@ -1230,7 +1238,7 @@ reads as agricultural managers sit in the exposed cell and drag it, exactly
 the headwind the registration's prediction 5 named in advance.
 
 **Era-resolved, the instrument's carrying level is stable.** The joint
-model's surviving occupational block is the coded ladder, and its standing
+model's surviving occupational block is the folk ladder, and its standing
 term is the free level; asked era by era — each level's slope entered
 alone, the figure above's own estimand, on the same member-bin values and
 six equal bins as §4.6b's class-era panels — free professionals sit below their
@@ -1240,7 +1248,7 @@ era, while bottom, middle and top stay small and flat. Like the class
 shape, the occupational shape was in place decades before the
 machines.[^s-ladderera]
 
-![The coded ladder by era, one panel per level](ladder_by_era_panels.png)
+![The folk ladder by era, one panel per level](ladder_by_era_panels.png)
 
 *The coded altitude ladder across eras: each level's slope entered alone
 (per sd, HC1 errors), on the same member-bin values and six equal five-year
@@ -1556,13 +1564,13 @@ jointly-significant effects into years of cohort: †[^r46joint]
 |  · Q4 | 812 | +0.210 (4.39) | **+0.146 (3.24)** | +0.184 (3.82) | +5 |
 |  · Q5 | 812 | +0.131 (2.77) | **+0.145 (3.22)** | +0.164 (3.36) | +5 |
 |  — block Wald (4 df) | | p < 10⁻⁴ | **p < 10⁻⁴** | **p < 10⁻⁴** | |
-| **directional ladder** (per sd, n 3,631) | | | | | |
+| **theoretical ladder** (per sd, n 3,631) | | | | | |
 |  · free | | −0.243 (−4.80) | — | −0.123 (−1.21) | — |
 |  · bottom | | +0.084 (2.18) | — | +0.082 (0.97) | — |
 |  · middle | | −0.136 (−2.64) | — | −0.166 (−1.53) | — |
 |  · top | | +0.008 (0.21) | — | +0.130 (2.09) | +5/sd |
 |  — block Wald (4 df) | | p < 10⁻⁴ | — | **p = 0.28** | |
-| **coded ladder** (per sd, n 3,631) | | | | | |
+| **folk ladder** (per sd, n 3,631) | | | | | |
 |  · FREE | | −0.109 (−4.70) | — | **−0.090 (−3.07)** | −3/sd |
 |  · BOTTOM | | +0.115 (3.21) | — | −0.039 (−0.61) | — |
 |  · MIDDLE | | −0.156 (−1.35) | — | +0.151 (0.72) | — |
@@ -1578,11 +1586,11 @@ sample: refit without them, the four blocks are essentially unchanged
 thins to 53 members and −0.183 (t −1.43) before the blocks ever enter.
 Second, no block's fate hangs on which ladder twin entered — the fit is
 simultaneous, not sequential, and the leave-one-out variants confirm it:
-with only the directional ladder present, class is p = 0.62 (ladder
-p = 0.037, Indoors +0.056, t 2.77); with only the coded ladder, class is
+with only the theoretical ladder present, class is p = 0.62 (ladder
+p = 0.037, Indoors +0.056, t 2.77); with only the folk ladder, class is
 p = 0.54 (ladder p < 10⁻⁴, Indoors +0.047, t 2.30). Either ladder alone
 retires class; Indoors stays marginally alive beside either single ladder
-and is absorbed only by the pair; the coded ladder is the stronger carrier
+and is absorbed only by the pair; the folk ladder is the stronger carrier
 and takes the credit when both enter.
 
 **Why the largest coefficients carry the least variance.** A term's
@@ -1612,11 +1620,15 @@ p = 0.54), because the EGP label is a coarse coding of the occupational
 content the ladders measure directly. That is the joint model repeating
 what destination-not-origin already said: the register tracks what the work
 was, not what the label says. The same absorption runs inside the
-occupational blocks themselves — each is strong alone; the coded ladder is
+occupational blocks themselves — each is strong alone; the folk ladder is
 the stronger carrier (p = 0.0008 with both in, its FREE level −0.090 per
-sd) and takes the credit from its directional near-twin, while Indoors
+sd) and takes the credit from its theoretical near-twin, while Indoors
 stays marginally alive beside either single ladder and is absorbed only by
-the pair. Education survives nothing, in any column — and with the
+the pair. That the folk ladder beats the theoretical one is itself a datum
+for the introduction's classification point: take the stereotype — the
+everyday picture of a corporate ladder — have machine coders concretize it
+blind, and the concretized folk category measures better than the
+theory-built alternative. Education survives nothing, in any column — and with the
 graduate rung split, master's and doctorate both sit at the bachelor
 plateau, so the null is not a lumping artifact. What the full model keeps,
 then, is cohort, the prominence bins, and one occupational ladder; what it
@@ -3868,7 +3880,7 @@ climbs. What does carry is measured on individuals, not on chambers.
 
 #### The classification's element signatures
 
-The coded ladder's consensus signature (§3.4): every O\*NET element, its
+The folk ladder's consensus signature (§3.4): every O\*NET element, its
 level, consensus sign, and how many of the eighteen blind coders nominated
 it.
 
@@ -3960,7 +3972,7 @@ it.
 | Determine Tasks, Priorities and Goals | `4.C.3.b.8` | TOP | + | 3 |
 | Duration of Typical Work Week | `4.C.3.d.8` | TOP | + | 3 |
 
-The directional ladder's component assignments (three blind workflows;
+The theoretical ladder's component assignments (three blind workflows;
 consensus elements only):
 
 | O\*NET element | id | component | rev. | coders |
