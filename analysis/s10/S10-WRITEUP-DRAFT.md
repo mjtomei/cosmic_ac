@@ -2,7 +2,7 @@
 
 ## Abstract
 
-We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* — the excess vocabulary language models overuse, derived in prior work from the post-2022 jump in scholarly text, run here as a fixed ruler across four decades of the parliamentary record. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with an elevenfold spread across chambers and a concentration in scripted genres. This machine-drafted speech is not degraded: AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, **predates the models by decades** — history invisible to the excess-vocabulary designs that found the jump, which measure acceleration against a local trend in corpora reaching back roughly a decade. Run as a level series, its rise begins in 1994–96; a juniority gradient predates even that, steepening as cohorts formed inside the drift arrive; and prior occupation leaves a small, replicated signature that absorbs social class — scored on a preregistered organisational-altitude measure whose insulated middle sits highest and whose off-hierarchy level, free work, sits lowest. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
+We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* — the excess vocabulary language models overuse, derived in prior work from the post-2022 jump in scholarly text, run here as a fixed ruler across four decades of the parliamentary record. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with a fourfold spread across chambers (after shrinkage) and a concentration in scripted genres. This machine-drafted speech is not degraded: AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, **predates the models by decades** — history invisible to the excess-vocabulary designs that found the jump, which measure acceleration against a local trend in corpora reaching back roughly a decade. Run as a level series, its rise begins in 1994–96; a juniority gradient predates even that, steepening as cohorts formed inside the drift arrive; and prior occupation leaves a small, replicated signature that absorbs social class — scored on a preregistered organisational-altitude measure whose insulated middle sits highest and whose off-hierarchy level, free work, sits lowest. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
 
 ---
 
@@ -93,7 +93,7 @@ second half of the question be asked at all.
 
 The question we came with gets its answer: at least 9.0% of words in current
 legislative speech are machine-drafted — a floor, because directed effort
-evades the detector — with an elevenfold spread across chambers, a
+evades the detector — with a fourfold spread across chambers, a
 concentration in scripted genres, and no quality penalty: against a
 deliberation rubric, flagged speech is better-formed and no less engaged —
 in the cross-chamber arm and in controlled model continuations alike. The finding we did not come for is the paper's centre
@@ -452,7 +452,7 @@ near-certain, costs at most about a fifth of a point.[^r41cs]
     workflow output `flagged_hits_audit.json`; `python flagged_hits_bound.py`
     prints the dissection and both bounds.
 
-### 4.2 At least 9.0% of current words are machine-drafted, with an elevenfold spread
+### 4.2 At least 9.0% of current words are machine-drafted, with a fourfold spread
 
 **Pooled 9.03% of words [8.00%, 10.08%]** — 65,795 machine-written words of
 728,998 across 3,519 segments in 20 chambers, excluding regime-flagged TAS (a
@@ -550,13 +550,16 @@ under the pooled floor (≥99.7%) at most 0.3 points of any chamber's rate
 could be false positives — slack that matters only for the lowest rows
 (US Senate 1.8%, UK 2.5%) and not for the spread.
 
-The spread is the finding, not noise around a mean: chamber rates run from
-1.8% to 19.8%, an elevenfold range — and it survives shrinkage: a
-random-effects fit across the twenty chambers (logit-scale τ = 0.56,
-I² = 0.78) leaves the empirical-Bayes range at 4.3% to 18.3%, still
-better than fourfold after every chamber is pulled toward the pool, so the
-raw extremes overstate the spread but the heterogeneity itself is real.
-What drives a chamber's position is not established here — even two chambers of one legislature can sit far apart
+The spread is the finding, not noise around a mean. A random-effects fit
+across the twenty chambers (logit-scale τ = 0.56, I² = 0.78 — 78% of the
+observed between-chamber variance is true heterogeneity, not sampling
+noise) puts the chambers' rates at **4.3% to 18.3%, a better-than-fourfold
+range**, after every chamber is pulled toward the pool in proportion to
+its own noise. The per-chamber table reports the raw estimates; the
+shrunken range is the honest spread claim, since the extremes of twenty
+noisy cells overstate their own separation (the raw-extremes version is
+retired to Appendix B). What drives a chamber's position is not
+established here — even two chambers of one legislature can sit far apart
 (§8.6 B4), and the study does not attribute the between-chamber differences to
 any measured cause.
 
@@ -3036,7 +3039,7 @@ baseline is moving toward the thing being detected.
 This study set out to count machine-drafted speech and found, behind the
 count, a register with a thirty-year human history. The count stands, and
 it belongs to the calibrated detector alone: **at least 9.0% of words** in
-current legislative speech are machine-drafted, spread elevenfold across
+current legislative speech are machine-drafted, spread fourfold across
 chambers and concentrated where procedure permits preparation — with the
 transparent lexical register corroborating it where the two instruments'
 inferences overlap (the genre ladder) and carrying what the detector
@@ -3412,7 +3415,7 @@ returned null (Appendix A); the informative next evidence is a different *kind*,
 not a fourth operationalisation of the same kind.
 
 7. **What drives the between-chamber spread — currently unexplained.** Chamber
-   prevalence ranges elevenfold (US Senate 1.8% to NSW 19.8%), and the gaps are
+   prevalence ranges better than fourfold (shrunken 4.3% to 18.3%), and the gaps are
    not attributed to any measured cause. The sharpest case is within one
    legislature: US House 12.1% vs US Senate 1.8%, same country, same era, same
    authorship-and-disclosure rules, differing sevenfold. The leading untested
@@ -3867,6 +3870,17 @@ climbs. What does carry is measured on individuals, not on chambers.
     reversal: the era window predicts t ≈ 1.2–1.4 for effects this size.
 
 ## Appendix B — Superseded analyses
+
+**The elevenfold spread.** Earlier versions stated the cross-chamber
+spread as the raw range of the twenty per-chamber rates, 1.8% to 19.8% —
+elevenfold. Superseded by the random-effects treatment in §4.2: the
+extremes of twenty noisy estimates are extreme partly by sampling luck, so
+a raw max/min ratio overstates true separation. Under empirical-Bayes
+shrinkage (logit τ = 0.56, I² = 0.78) the range is 4.3% to 18.3% —
+better than fourfold — which is the figure the paper now
+reports.[^rshrink]
+
+[^rshrink]: `python prevalence_robustness.py`, the random-effects section.
 
 0a. **§4.7's stage ordering** — "the shift is largest at the preference
    stage" rested on a per-transition estimator pedestal (M9; the M3 defect
