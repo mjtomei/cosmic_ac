@@ -1,10 +1,16 @@
 
-stage 1: first factor explains 26% of the Spearman matrix
+stage 1 [Spearman]: first factor explains 26%
   loadings: justification +0.31, common_good +0.20, respect_groups -0.00, respect_demands +0.63, respect_counterargs +0.60, constructive +0.33, evidence +0.00
-  per sd of screen score on equal-weight composite   +0.041  t +2.39  (n 840)
-  per sd of screen score on factor-weighted latent   -0.034  t -1.43  (n 840)
 
-stage 2: first factor explains 29% of the Spearman matrix
+stage 1 [polychoric]: first factor explains 32%
+  loadings: justification +0.32, common_good +0.18, respect_groups -0.02, respect_demands +0.61, respect_counterargs +0.55, constructive +0.44, evidence -0.04
+  per sd of screen score on equal-weight composite   +0.041  t +2.39  (n 840)
+  per sd of screen score on factor-weighted latent   -0.038  t -1.71  (n 840)
+
+stage 2 [Spearman]: first factor explains 29%
   loadings: justification +0.30, common_good +0.10, respect_groups +0.06, respect_demands +0.60, respect_counterargs +0.60, constructive +0.41, evidence -0.08
+
+stage 2 [polychoric]: first factor explains 33%
+  loadings: justification +0.32, common_good +0.09, respect_groups +0.05, respect_demands +0.58, respect_counterargs +0.57, constructive +0.47, evidence -0.10
   AI/Mixed vs Human on equal-weight composite   +0.195  t +5.65  (n 682)
-  AI/Mixed vs Human on factor-weighted latent   +0.087  t +1.97  (n 682)
+  AI/Mixed vs Human on factor-weighted latent   +0.076  t +1.71  (n 682)

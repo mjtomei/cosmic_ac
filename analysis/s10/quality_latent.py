@@ -7,11 +7,12 @@ principal factor of the dimensions' Spearman correlation matrix (pairwise
 complete, sentinel -1s treated as missing) — and re-runs the stage-1 and
 stage-2 AI-vs-human contrasts on the factor-weighted latent score beside
 the equal-weight composite, same estimator as the committed columns
-(chamber FE where the stage has chambers, HC1). A full polychoric/IRT
-graded-response fit needs scipy (absent in this environment); the
-principal-factor weighting answers the substantive question — do the
-conclusions survive non-equal weights? — and the upgrade is noted as
-nice-to-have.
+(chamber FE where the stage has chambers, HC1). With scipy installed
+(Matthew, 2026-08-27) the POLYCHORIC matrix is computed too — two-step
+estimation, thresholds from the marginals, pairwise rho by ML over
+bivariate-normal rectangle probabilities — with factor and contrast
+reported from it; a full graded-response IRT is the remaining refinement,
+not run.
 
 Usage: python quality_latent.py
 """
@@ -22,6 +23,40 @@ HERE=os.path.join(os.path.dirname(os.path.abspath(__file__)),"quality_expansion"
 DIMS=["justification","common_good","respect_groups","respect_demands",
       "respect_counterargs","constructive","evidence"]
 SENT={"respect_demands","respect_counterargs"}
+
+def polychoric_pairwise(cols, n_rows):
+    """two-step polychoric: thresholds from marginals, rho by pairwise ML."""
+    import collections
+    from scipy.stats import norm, multivariate_normal
+    from scipy.optimize import minimize_scalar
+    ths={}
+    for d,v in cols.items():
+        xs=sorted(x for x in v if x is not None)
+        cnt=collections.Counter(xs); cats=sorted(cnt)
+        cum=0; t=[]
+        for c in cats[:-1]:
+            cum+=cnt[c]; t.append(float(norm.ppf(cum/len(xs))))
+        ths[d]=(cats,t)
+    def cell_prob(rho,ta,tb,i,j):
+        lo_a=ta[i-1] if i>0 else -9; hi_a=ta[i] if i<len(ta) else 9
+        lo_b=tb[j-1] if j>0 else -9; hi_b=tb[j] if j<len(tb) else 9
+        mvn=multivariate_normal([0,0],[[1,rho],[rho,1]])
+        return max(1e-12, mvn.cdf([hi_a,hi_b])-mvn.cdf([lo_a,hi_b])
+                   -mvn.cdf([hi_a,lo_b])+mvn.cdf([lo_a,lo_b]))
+    dims=list(cols)
+    C=np.eye(len(dims))
+    for a in range(len(dims)):
+        for b in range(a+1,len(dims)):
+            va,vb=cols[dims[a]],cols[dims[b]]
+            (ca,ta),(cb,tb)=ths[dims[a]],ths[dims[b]]
+            tab=collections.Counter((ca.index(va[i]),cb.index(vb[i]))
+                for i in range(n_rows) if va[i] is not None and vb[i] is not None)
+            def nll(r):
+                return -sum(n*math.log(cell_prob(r,ta,tb,i,j)) for (i,j),n in tab.items())
+            r=minimize_scalar(nll,bounds=(-0.95,0.95),method="bounded").x
+            C[a,b]=C[b,a]=float(r)
+    return C
+
 
 def spearman_pairwise(rows):
     def vals(d):
@@ -78,12 +113,16 @@ for stage,fn,chfe in (("stage 1","results_stage1.json",False),
         print(f"{stage}: {fn} not found — skipped"); continue
     rows=json.load(open(p))
     C,cols=spearman_pairwise(rows)
-    w,v=np.linalg.eigh(C)
+    Cp=polychoric_pairwise(cols,len(rows))
+    for label,M in (("Spearman",C),("polychoric",Cp)):
+        w,v=np.linalg.eigh(M)
+        ld=v[:,-1]
+        if ld.sum()<0: ld=-ld
+        print(f"\n{stage} [{label}]: first factor explains {w[-1]/len(DIMS):.0%}")
+        print("  loadings: "+", ".join(f"{d} {l:+.2f}" for d,l in zip(DIMS,ld)))
+    w,v=np.linalg.eigh(Cp)          # score and contrast from the polychoric factor
     load=v[:,-1]
     if load.sum()<0: load=-load
-    share=w[-1]/len(DIMS)
-    print(f"\n{stage}: first factor explains {share:.0%} of the Spearman matrix")
-    print("  loadings: "+", ".join(f"{d} {l:+.2f}" for d,l in zip(DIMS,load)))
     # z-score each dim over applicable, latent = loading-weighted mean of available z's
     zs={}
     for d in DIMS:
