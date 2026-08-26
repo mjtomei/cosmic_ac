@@ -1,0 +1,437 @@
+cache: 11,894 members, 6,144 speaking in 2018-2026, 22 chambers, 407 style words
+windows: 2018-2022 vs 2023-2026; a member qualifies in a window with >= 2,000 tokens there
+rare subset (< 5 per 100k in 2018-2022): 350 of 407 words
+
+panel-wide yearly rates (all 22 chambers; chamber mix varies, so read the shape, not the level)
+  year     Mwords  all 407 /1k  rare /100k
+  2010       57.9        31.94      247.85
+  2011       51.9        31.73      243.85
+  2012       53.9        32.16      246.48
+  2013       55.6        32.37      243.23
+  2014       52.0        32.56      251.29
+  2015       57.4        32.84      249.14
+  2016       64.7        33.54      250.27
+  2017       60.1        33.80      244.99
+  2018       78.7        33.78      251.17
+  2019       69.6        33.83      254.67
+  2020       66.6        35.23      260.03
+  2021       74.3        35.31      259.11
+  2022       74.5        34.72      259.27
+  2023       60.3        34.93      270.56
+  2024       72.1        34.68      290.59
+  2025       77.1        35.20      289.58
+  2026       46.4        35.00      282.33
+
+==========================================================================
+SPEAKER-KEY CARRYOVER ACROSS THE WINDOW BOUNDARY (2022 -> 2023)
+  A chamber whose Hansard changes its printed-name format at the
+  boundary shows near-zero carryover, and its members read as
+  leavers plus entrants rather than as stayers.
+  chamber     n 2022  n 2023  carried   share
+  AB              84      97       65    0.77
+  BC              88      88       86    0.98
+  CA-FED         321     314      301    0.96
+  MB             109     134       98    0.90
+  NL              40      39       38    0.97
+  NS              53      53       52    0.98
+  NSW            136     131       95    0.73
+  ON             147     122      118    0.97
+  PE              22      13        5    0.38   <-- format break
+  QLD             91      90       90    1.00
+  SA              71      68       63    0.93
+  SCO            127     126      126    1.00
+  SK              61      59       55    0.93
+  TAS             25      25       23    0.92
+  UK             604     566      540    0.95
+  US-HOUSE       326     173      126    0.73
+  US-SENATE       99      82       78    0.95
+  VIC            127     128        2    0.02   <-- format break
+  WA              94      97       92    0.98
+  WAL             57      58       57    1.00
+  chambers with clean carryover (>= 0.50): 18 of 20
+  not shown, no qualifying members in one of the two boundary years: IE, NI
+    NI: the Assembly was suspended (no 2023 sittings) -- real.
+    IE: the store itself has a COMPLETE 2023 HOLE. Both ie/segments_ie_en.jsonl
+    and ie/segments_ie.jsonl jump 2022 -> 2024, so every Irish series in this
+    study is missing the first full machine-era year. Flagged, not patched here.
+
+##########################################################################
+INSTRUMENT: all 407 style words
+
+==========================================================================
+AGGREGATE REGISTER RATE, token-weighted
+  2018-2022: 34.5596 per 1,000 words   (363M words, 4,335 members)
+  2023-2026: 34.9544 per 1,000 words   (256M words, 4,249 members)
+  change  : +0.3948  (+1.1%)
+  members : 2,688 in both windows, 1,561 entrants, 1,647 leavers
+
+==========================================================================
+AGGREGATE REGISTER RATE, equal member weight
+  2018-2022: 35.2135 per 1,000 words   (363M words, 4,335 members)
+  2023-2026: 35.5097 per 1,000 words   (256M words, 4,249 members)
+  change  : +0.2962  (+0.8%)
+  members : 2,688 in both windows, 1,561 entrants, 1,647 leavers
+
+==========================================================================
+FHK DECOMPOSITION, token-weighted   (total change +0.3948 per 1,000)
+  term           value    share   95% CI (member bootstrap) what it is
+  WITHIN       -0.3765   -0.954   [-0.4965, -0.2596]       stayers' own change
+  BETWEEN      +0.1381    0.350   [+0.0062, +0.2854]       reallocation among stayers
+  CROSS        -0.0248   -0.063   [-0.1433, +0.0876]       the interaction
+  ENTRY        +0.6675    1.691   [+0.5500, +0.7911]       arrivals vs the base-window aggregate
+  EXIT         -0.0095   -0.024   [-0.0943, +0.0819]       departures vs the base-window aggregate
+  ----------------------------------------------------------------------
+  three-term grouping (composition = between + entry + exit):
+  WITHIN           -0.3765   share  -0.954 [-2.684, -0.464]   abs CI [-0.4965, -0.2596]
+  COMPOSITION      +0.7961   share  +2.016 [+1.461, +4.009]   abs CI [+0.5990, +1.0117]
+  INTERACTION      -0.0248   share  -0.063 [-0.566, +0.248]   abs CI [-0.1433, +0.0876]
+  TOTAL            +0.3948   abs CI [+0.1621, +0.6514]
+
+==========================================================================
+FHK DECOMPOSITION, equal member weight   (total change +0.2962 per 1,000)
+  term           value    share   95% CI (member bootstrap) what it is
+  WITHIN       -0.3224   -1.088   [-0.4135, -0.2377]       stayers' own change
+  BETWEEN      +0.0012    0.004   [-0.0007, +0.0043]       reallocation among stayers
+  CROSS        -0.0065   -0.022   [-0.0156, +0.0016]       the interaction
+  ENTRY        +0.5623    1.898   [+0.4486, +0.6810]       arrivals vs the base-window aggregate
+  EXIT         +0.0615    0.208   [-0.0180, +0.1386]       departures vs the base-window aggregate
+  ----------------------------------------------------------------------
+  three-term grouping (composition = between + entry + exit):
+  WITHIN           -0.3224   share  -1.088 [-3.181, -0.547]   abs CI [-0.4135, -0.2377]
+  COMPOSITION      +0.6251   share  +2.110 [+1.557, +4.228]   abs CI [+0.4787, +0.7753]
+  INTERACTION      -0.0065   share  -0.022 [-0.084, +0.006]   abs CI [-0.0156, +0.0016]
+  TOTAL            +0.2962   abs CI [+0.1202, +0.4793]
+
+==========================================================================
+PER CHAMBER, token-weighted (no CIs; ordered by total change)
+  chamber     R 18-22  R 23-26   change   within     comp    cross  w share    nS    nE    nL
+  NS           37.008   39.161   +2.153   +0.554   +1.213   +0.386     0.26    53    22    64
+  BC           35.688   37.469   +1.781   -0.180   +2.107   -0.146    -0.10    87    94    34
+  SA           36.441   38.191   +1.750   +0.456   +0.898   +0.396     0.26    65     8    45
+  QLD          36.260   37.772   +1.512   +0.422   +1.117   -0.027     0.28    90    27    14
+  IE           34.891   36.393   +1.502   +0.376   +1.351   -0.225     0.25   163    73    57
+  TAS          36.057   37.540   +1.483   +0.663   +0.686   +0.134     0.45    25    33    10
+  SK           36.854   38.265   +1.411   -0.620   +1.824   +0.207    -0.44    56    64    27
+  WAL          36.207   37.609   +1.402   -0.522   +1.919   +0.005    -0.37    58    35    23
+  PE           30.830   32.149   +1.319   +0.413   +1.262   -0.356     0.31     7    30    30
+  VIC          37.430   38.500   +1.070   -0.001   +1.178   -0.107    -0.00     2   132   177
+  WA           32.797   33.845   +1.048   -0.155   +1.073   +0.130    -0.15    93    81    41
+  AB           39.322   40.301   +0.979   -0.685   +2.119   -0.455    -0.70    68    35    64
+  UK           31.474   32.074   +0.600   -0.416   +0.793   +0.224    -0.69   608   354   205
+  SCO          28.829   29.217   +0.388   -0.073   +0.649   -0.188    -0.19   127    49    46
+  MB           35.710   35.934   +0.223   -1.547   +1.169   +0.601    -6.94   100    80    44
+  ON           37.773   37.928   +0.155   -0.582   +0.247   +0.491    -3.75   119    32    93
+  NSW          33.676   33.426   -0.251   -0.899   +0.285   +0.363     3.58   101    43    73
+  NI           30.871   30.435   -0.436   -0.404   -0.174   +0.141     0.93    68    33    29
+  US-HOUSE     36.001   35.224   -0.777   -0.446   +1.181   -1.512     0.57   332   165   296
+  NL           33.320   32.519   -0.801   -0.147   -0.348   -0.306     0.18    41    20    54
+  US-SENATE    32.953   31.790   -1.164   -1.067   +0.193   -0.289     0.92    93    24    61
+  CA-FED       35.932   34.384   -1.548   -1.188   -0.108   -0.252     0.77   332   127   160
+  within positive in 6/22 chambers; composition positive in 19/22
+
+##########################################################################
+INSTRUMENT: rare subset, 350 words (< 5/100k pre)
+
+==========================================================================
+AGGREGATE REGISTER RATE, token-weighted
+  2018-2022: 2.5675 per 1,000 words   (363M words, 4,335 members)
+  2023-2026: 2.8407 per 1,000 words   (256M words, 4,249 members)
+  change  : +0.2732  (+10.6%)
+  members : 2,688 in both windows, 1,561 entrants, 1,647 leavers
+
+==========================================================================
+AGGREGATE REGISTER RATE, equal member weight
+  2018-2022: 2.7163 per 1,000 words   (363M words, 4,335 members)
+  2023-2026: 3.0270 per 1,000 words   (256M words, 4,249 members)
+  change  : +0.3107  (+11.4%)
+  members : 2,688 in both windows, 1,561 entrants, 1,647 leavers
+
+==========================================================================
+FHK DECOMPOSITION, token-weighted   (total change +0.2732 per 1,000)
+  term           value    share   95% CI (member bootstrap) what it is
+  WITHIN       +0.0714    0.261   [+0.0451, +0.0987]       stayers' own change
+  BETWEEN      +0.0423    0.155   [+0.0171, +0.0637]       reallocation among stayers
+  CROSS        +0.0445    0.163   [+0.0207, +0.0699]       the interaction
+  ENTRY        +0.1087    0.398   [+0.0832, +0.1347]       arrivals vs the base-window aggregate
+  EXIT         +0.0063    0.023   [-0.0084, +0.0214]       departures vs the base-window aggregate
+  ----------------------------------------------------------------------
+  three-term grouping (composition = between + entry + exit):
+  WITHIN           +0.0714   share  +0.261 [+0.172, +0.352]   abs CI [+0.0451, +0.0987]
+  COMPOSITION      +0.1573   share  +0.576 [+0.482, +0.665]   abs CI [+0.1206, +0.1961]
+  INTERACTION      +0.0445   share  +0.163 [+0.075, +0.249]   abs CI [+0.0207, +0.0699]
+  TOTAL            +0.2732   abs CI [+0.2268, +0.3210]
+
+==========================================================================
+FHK DECOMPOSITION, equal member weight   (total change +0.3107 per 1,000)
+  term           value    share   95% CI (member bootstrap) what it is
+  WITHIN       +0.1138    0.366   [+0.0868, +0.1381]       stayers' own change
+  BETWEEN      +0.0004    0.001   [-0.0001, +0.0012]       reallocation among stayers
+  CROSS        +0.0023    0.007   [-0.0005, +0.0054]       the interaction
+  ENTRY        +0.1749    0.563   [+0.1479, +0.2015]       arrivals vs the base-window aggregate
+  EXIT         +0.0193    0.062   [+0.0046, +0.0353]       departures vs the base-window aggregate
+  ----------------------------------------------------------------------
+  three-term grouping (composition = between + entry + exit):
+  WITHIN           +0.1138   share  +0.366 [+0.296, +0.426]   abs CI [+0.0868, +0.1381]
+  COMPOSITION      +0.1946   share  +0.626 [+0.563, +0.698]   abs CI [+0.1627, +0.2292]
+  INTERACTION      +0.0023   share  +0.007 [-0.002, +0.017]   abs CI [-0.0005, +0.0054]
+  TOTAL            +0.3107   abs CI [+0.2682, +0.3502]
+
+==========================================================================
+PER CHAMBER, token-weighted (no CIs; ordered by total change)
+  chamber     R 18-22  R 23-26   change   within     comp    cross  w share    nS    nE    nL
+  SA            2.727    3.534   +0.807   +0.358   +0.229   +0.220     0.44    65     8    45
+  AB            1.987    2.680   +0.693   +0.066   +0.585   +0.042     0.10    68    35    64
+  NSW           2.993    3.558   +0.565   +0.135   +0.298   +0.132     0.24   101    43    73
+  BC            2.292    2.775   +0.483   +0.065   +0.427   -0.008     0.13    87    94    34
+  ON            2.220    2.611   +0.391   +0.194   +0.221   -0.024     0.50   119    32    93
+  NI            2.791    3.176   +0.386   +0.283   -0.031   +0.133     0.73    68    33    29
+  WA            2.570    2.891   +0.321   +0.143   +0.169   +0.009     0.44    93    81    41
+  NS            2.446    2.728   +0.283   +0.216   +0.173   -0.107     0.76    53    22    64
+  WAL           2.681    2.942   +0.261   +0.015   +0.186   +0.059     0.06    58    35    23
+  US-HOUSE      3.245    3.501   +0.256   -0.007   +0.084   +0.179    -0.03   332   165   296
+  TAS           2.596    2.847   +0.251   +0.209   +0.015   +0.027     0.83    25    33    10
+  QLD           2.718    2.955   +0.237   +0.110   +0.142   -0.015     0.47    90    27    14
+  UK            2.443    2.667   +0.223   +0.048   +0.126   +0.050     0.21   608   354   205
+  SK            2.088    2.310   +0.221   -0.003   +0.275   -0.051    -0.01    56    64    27
+  MB            2.062    2.274   +0.212   -0.080   +0.151   +0.141    -0.38   100    80    44
+  PE            1.577    1.788   +0.211   +0.066   +0.172   -0.026     0.31     7    30    30
+  IE            2.440    2.572   +0.131   +0.105   +0.028   -0.001     0.80   163    73    57
+  SCO           3.025    3.137   +0.112   -0.040   +0.094   +0.058    -0.36   127    49    46
+  VIC           2.681    2.778   +0.098   -0.000   +0.108   -0.010    -0.00     2   132   177
+  CA-FED        2.395    2.493   +0.098   +0.090   +0.044   -0.036     0.92   332   127   160
+  NL            1.940    1.919   -0.021   +0.033   -0.084   +0.030    -1.59    41    20    54
+  US-SENATE     2.801    2.656   -0.145   -0.031   +0.038   -0.152     0.21    93    24    61
+  within positive in 16/22 chambers; composition positive in 20/22
+
+##########################################################################
+ROBUSTNESS 1 -- SURNAME RECONCILIATION: 54 window-split key pairs merged
+    BC|s. gibson  +  BC|diana gibson
+    BC|j. wilson  +  BC|donegal wilson
+    CA-FED|andrew leslie  +  CA-FED|branden leslie
+    CA-FED|jim carr  +  CA-FED|ben carr
+    CA-FED|david anderson  +  CA-FED|scott anderson
+    CA-FED|paul lefebvre  +  CA-FED|eric lefebvre
+    CA-FED|raj saini  +  CA-FED|gurbux saini
+    IE|deputy tom neville  +  IE|deputy joe neville
+    ... and 46 more (chambers: BC, CA-FED, IE, PE, SCO, UK, US-HOUSE, US-SENATE, VIC, WA, WAL)
+
+##########################################################################
+INSTRUMENT: all 407 style words, surname-reconciled
+
+==========================================================================
+AGGREGATE REGISTER RATE, token-weighted
+  2018-2022: 34.5596 per 1,000 words   (363M words, 4,335 members)
+  2023-2026: 34.9544 per 1,000 words   (256M words, 4,249 members)
+  change  : +0.3948  (+1.1%)
+  members : 2,738 in both windows, 1,511 entrants, 1,597 leavers
+
+==========================================================================
+AGGREGATE REGISTER RATE, equal member weight
+  2018-2022: 35.2135 per 1,000 words   (363M words, 4,335 members)
+  2023-2026: 35.5097 per 1,000 words   (256M words, 4,249 members)
+  change  : +0.2962  (+0.8%)
+  members : 2,738 in both windows, 1,511 entrants, 1,597 leavers
+
+==========================================================================
+FHK DECOMPOSITION, token-weighted   (total change +0.3948 per 1,000)
+  term           value    share   95% CI (member bootstrap) what it is
+  WITHIN       -0.3810   -0.965   [-0.4979, -0.2642]       stayers' own change
+  BETWEEN      +0.1607    0.407   [+0.0223, +0.3018]       reallocation among stayers
+  CROSS        -0.0157   -0.040   [-0.1336, +0.0946]       the interaction
+  ENTRY        +0.6142    1.556   [+0.4928, +0.7398]       arrivals vs the base-window aggregate
+  EXIT         +0.0166    0.042   [-0.0718, +0.1025]       departures vs the base-window aggregate
+  ----------------------------------------------------------------------
+  three-term grouping (composition = between + entry + exit):
+  WITHIN           -0.3810   share  -0.965 [-2.869, -0.462]   abs CI [-0.4979, -0.2642]
+  COMPOSITION      +0.7914   share  +2.005 [+1.463, +4.159]   abs CI [+0.5907, +0.9964]
+  INTERACTION      -0.0157   share  -0.040 [-0.537, +0.266]   abs CI [-0.1336, +0.0946]
+  TOTAL            +0.3948   abs CI [+0.1561, +0.6461]
+
+==========================================================================
+FHK DECOMPOSITION, equal member weight   (total change +0.2962 per 1,000)
+  term           value    share   95% CI (member bootstrap) what it is
+  WITHIN       -0.3174   -1.072   [-0.4014, -0.2322]       stayers' own change
+  BETWEEN      +0.0015    0.005   [-0.0005, +0.0050]       reallocation among stayers
+  CROSS        -0.0064   -0.022   [-0.0162, +0.0015]       the interaction
+  ENTRY        +0.5468    1.846   [+0.4388, +0.6603]       arrivals vs the base-window aggregate
+  EXIT         +0.0718    0.242   [-0.0091, +0.1495]       departures vs the base-window aggregate
+  ----------------------------------------------------------------------
+  three-term grouping (composition = between + entry + exit):
+  WITHIN           -0.3174   share  -1.072 [-3.106, -0.550]   abs CI [-0.4014, -0.2322]
+  COMPOSITION      +0.6200   share  +2.093 [+1.555, +4.207]   abs CI [+0.4795, +0.7643]
+  INTERACTION      -0.0064   share  -0.022 [-0.101, +0.005]   abs CI [-0.0162, +0.0015]
+  TOTAL            +0.2962   abs CI [+0.1266, +0.4669]
+
+==========================================================================
+PER CHAMBER, token-weighted (no CIs; ordered by total change)
+  chamber     R 18-22  R 23-26   change   within     comp    cross  w share    nS    nE    nL
+  NS           37.008   39.161   +2.153   +0.554   +1.213   +0.386     0.26    53    22    64
+  BC           35.688   37.469   +1.781   -0.135   +2.065   -0.149    -0.08    88    93    33
+  SA           36.441   38.191   +1.750   +0.456   +0.898   +0.396     0.26    65     8    45
+  QLD          36.260   37.772   +1.512   +0.422   +1.117   -0.027     0.28    90    27    14
+  IE           34.891   36.393   +1.502   +0.383   +1.336   -0.216     0.25   165    71    55
+  TAS          36.057   37.540   +1.483   +0.663   +0.686   +0.134     0.45    25    33    10
+  SK           36.854   38.265   +1.411   -0.620   +1.824   +0.207    -0.44    56    64    27
+  WAL          36.207   37.609   +1.402   -0.532   +1.920   +0.014    -0.38    59    34    22
+  PE           30.830   32.149   +1.319   +0.347   +1.231   -0.258     0.26    10    27    27
+  VIC          37.430   38.500   +1.070   -0.120   +1.147   +0.043    -0.11    34   100   145
+  WA           32.797   33.845   +1.048   -0.161   +1.079   +0.130    -0.15    94    80    40
+  AB           39.322   40.301   +0.979   -0.685   +2.119   -0.455    -0.70    68    35    64
+  UK           31.474   32.074   +0.600   -0.415   +0.790   +0.225    -0.69   611   351   202
+  SCO          28.829   29.217   +0.388   -0.038   +0.646   -0.220    -0.10   129    47    44
+  MB           35.710   35.934   +0.223   -1.547   +1.169   +0.601    -6.94   100    80    44
+  ON           37.773   37.928   +0.155   -0.582   +0.247   +0.491    -3.75   119    32    93
+  NSW          33.676   33.426   -0.251   -0.899   +0.285   +0.363     3.58   101    43    73
+  NI           30.871   30.435   -0.436   -0.404   -0.174   +0.141     0.93    68    33    29
+  US-HOUSE     36.001   35.224   -0.777   -0.446   +1.181   -1.512     0.57   332   165   296
+  NL           33.320   32.519   -0.801   -0.147   -0.348   -0.306     0.18    41    20    54
+  US-SENATE    32.953   31.790   -1.164   -1.067   +0.193   -0.289     0.92    93    24    61
+  CA-FED       35.932   34.384   -1.548   -1.194   -0.097   -0.257     0.77   337   122   155
+  within positive in 6/22 chambers; composition positive in 19/22
+
+##########################################################################
+INSTRUMENT: rare subset, 350 words (< 5/100k pre), surname-reconciled
+
+==========================================================================
+AGGREGATE REGISTER RATE, token-weighted
+  2018-2022: 2.5675 per 1,000 words   (363M words, 4,335 members)
+  2023-2026: 2.8407 per 1,000 words   (256M words, 4,249 members)
+  change  : +0.2732  (+10.6%)
+  members : 2,738 in both windows, 1,511 entrants, 1,597 leavers
+
+==========================================================================
+AGGREGATE REGISTER RATE, equal member weight
+  2018-2022: 2.7163 per 1,000 words   (363M words, 4,335 members)
+  2023-2026: 3.0270 per 1,000 words   (256M words, 4,249 members)
+  change  : +0.3107  (+11.4%)
+  members : 2,738 in both windows, 1,511 entrants, 1,597 leavers
+
+==========================================================================
+FHK DECOMPOSITION, token-weighted   (total change +0.2732 per 1,000)
+  term           value    share   95% CI (member bootstrap) what it is
+  WITHIN       +0.0739    0.270   [+0.0456, +0.0993]       stayers' own change
+  BETWEEN      +0.0421    0.154   [+0.0198, +0.0652]       reallocation among stayers
+  CROSS        +0.0445    0.163   [+0.0206, +0.0687]       the interaction
+  ENTRY        +0.1071    0.392   [+0.0841, +0.1319]       arrivals vs the base-window aggregate
+  EXIT         +0.0056    0.021   [-0.0086, +0.0196]       departures vs the base-window aggregate
+  ----------------------------------------------------------------------
+  three-term grouping (composition = between + entry + exit):
+  WITHIN           +0.0739   share  +0.270 [+0.178, +0.357]   abs CI [+0.0456, +0.0993]
+  COMPOSITION      +0.1549   share  +0.567 [+0.484, +0.656]   abs CI [+0.1189, +0.1901]
+  INTERACTION      +0.0445   share  +0.163 [+0.079, +0.248]   abs CI [+0.0206, +0.0687]
+  TOTAL            +0.2732   abs CI [+0.2214, +0.3159]
+
+==========================================================================
+FHK DECOMPOSITION, equal member weight   (total change +0.3107 per 1,000)
+  term           value    share   95% CI (member bootstrap) what it is
+  WITHIN       +0.1161    0.374   [+0.0917, +0.1383]       stayers' own change
+  BETWEEN      +0.0004    0.001   [-0.0001, +0.0011]       reallocation among stayers
+  CROSS        +0.0023    0.008   [-0.0006, +0.0056]       the interaction
+  ENTRY        +0.1740    0.560   [+0.1485, +0.2010]       arrivals vs the base-window aggregate
+  EXIT         +0.0180    0.058   [+0.0044, +0.0335]       departures vs the base-window aggregate
+  ----------------------------------------------------------------------
+  three-term grouping (composition = between + entry + exit):
+  WITHIN           +0.1161   share  +0.374 [+0.306, +0.430]   abs CI [+0.0917, +0.1383]
+  COMPOSITION      +0.1923   share  +0.619 [+0.560, +0.689]   abs CI [+0.1640, +0.2253]
+  INTERACTION      +0.0023   share  +0.008 [-0.002, +0.019]   abs CI [-0.0006, +0.0056]
+  TOTAL            +0.3107   abs CI [+0.2696, +0.3505]
+
+==========================================================================
+PER CHAMBER, token-weighted (no CIs; ordered by total change)
+  chamber     R 18-22  R 23-26   change   within     comp    cross  w share    nS    nE    nL
+  SA            2.727    3.534   +0.807   +0.358   +0.229   +0.220     0.44    65     8    45
+  AB            1.987    2.680   +0.693   +0.066   +0.585   +0.042     0.10    68    35    64
+  NSW           2.993    3.558   +0.565   +0.135   +0.298   +0.132     0.24   101    43    73
+  BC            2.292    2.775   +0.483   +0.079   +0.413   -0.009     0.16    88    93    33
+  ON            2.220    2.611   +0.391   +0.194   +0.221   -0.024     0.50   119    32    93
+  NI            2.791    3.176   +0.386   +0.283   -0.031   +0.133     0.73    68    33    29
+  WA            2.570    2.891   +0.321   +0.140   +0.172   +0.009     0.44    94    80    40
+  NS            2.446    2.728   +0.283   +0.216   +0.173   -0.107     0.76    53    22    64
+  WAL           2.681    2.942   +0.261   +0.013   +0.186   +0.061     0.05    59    34    22
+  US-HOUSE      3.245    3.501   +0.256   -0.007   +0.084   +0.179    -0.03   332   165   296
+  TAS           2.596    2.847   +0.251   +0.209   +0.015   +0.027     0.83    25    33    10
+  QLD           2.718    2.955   +0.237   +0.110   +0.142   -0.015     0.47    90    27    14
+  UK            2.443    2.667   +0.223   +0.048   +0.124   +0.051     0.22   611   351   202
+  SK            2.088    2.310   +0.221   -0.003   +0.275   -0.051    -0.01    56    64    27
+  MB            2.062    2.274   +0.212   -0.080   +0.151   +0.141    -0.38   100    80    44
+  PE            1.577    1.788   +0.211   +0.063   +0.192   -0.043     0.30    10    27    27
+  IE            2.440    2.572   +0.131   +0.105   +0.028   -0.002     0.80   165    71    55
+  SCO           3.025    3.137   +0.112   -0.039   +0.094   +0.056    -0.34   129    47    44
+  VIC           2.681    2.778   +0.098   +0.032   +0.080   -0.014     0.33    34   100   145
+  CA-FED        2.395    2.493   +0.098   +0.089   +0.046   -0.037     0.91   337   122   155
+  NL            1.940    1.919   -0.021   +0.033   -0.084   +0.030    -1.59    41    20    54
+  US-SENATE     2.801    2.656   -0.145   -0.031   +0.038   -0.152     0.21    93    24    61
+  within positive in 17/22 chambers; composition positive in 20/22
+
+##########################################################################
+ROBUSTNESS 2 -- ONLY THE 18 CHAMBERS WITH CLEAN BOUNDARY CARRYOVER
+
+##########################################################################
+INSTRUMENT: rare subset, 350 words (< 5/100k pre), 18 clean chambers
+
+==========================================================================
+AGGREGATE REGISTER RATE, token-weighted
+  2018-2022: 2.5713 per 1,000 words   (299M words, 3,802 members)
+  2023-2026: 2.8633 per 1,000 words   (210M words, 3,741 members)
+  change  : +0.2920  (+11.4%)
+  members : 2,448 in both windows, 1,293 entrants, 1,354 leavers
+
+==========================================================================
+AGGREGATE REGISTER RATE, equal member weight
+  2018-2022: 2.7350 per 1,000 words   (299M words, 3,802 members)
+  2023-2026: 3.0544 per 1,000 words   (210M words, 3,741 members)
+  change  : +0.3194  (+11.7%)
+  members : 2,448 in both windows, 1,293 entrants, 1,354 leavers
+
+==========================================================================
+FHK DECOMPOSITION, token-weighted   (total change +0.2920 per 1,000)
+  term           value    share   95% CI (member bootstrap) what it is
+  WITHIN       +0.0680    0.233   [+0.0386, +0.0996]       stayers' own change
+  BETWEEN      +0.0444    0.152   [+0.0162, +0.0744]       reallocation among stayers
+  CROSS        +0.0494    0.169   [+0.0231, +0.0772]       the interaction
+  ENTRY        +0.1122    0.384   [+0.0885, +0.1355]       arrivals vs the base-window aggregate
+  EXIT         +0.0180    0.062   [+0.0029, +0.0337]       departures vs the base-window aggregate
+  ----------------------------------------------------------------------
+  three-term grouping (composition = between + entry + exit):
+  WITHIN           +0.0680   share  +0.233 [+0.145, +0.322]   abs CI [+0.0386, +0.0996]
+  COMPOSITION      +0.1746   share  +0.598 [+0.510, +0.692]   abs CI [+0.1368, +0.2138]
+  INTERACTION      +0.0494   share  +0.169 [+0.082, +0.255]   abs CI [+0.0231, +0.0772]
+  TOTAL            +0.2920   abs CI [+0.2415, +0.3453]
+
+==========================================================================
+FHK DECOMPOSITION, equal member weight   (total change +0.3194 per 1,000)
+  term           value    share   95% CI (member bootstrap) what it is
+  WITHIN       +0.1110    0.348   [+0.0830, +0.1391]       stayers' own change
+  BETWEEN      +0.0003    0.001   [-0.0002, +0.0011]       reallocation among stayers
+  CROSS        +0.0018    0.006   [-0.0010, +0.0050]       the interaction
+  ENTRY        +0.1861    0.583   [+0.1572, +0.2157]       arrivals vs the base-window aggregate
+  EXIT         +0.0201    0.063   [+0.0039, +0.0353]       departures vs the base-window aggregate
+  ----------------------------------------------------------------------
+  three-term grouping (composition = between + entry + exit):
+  WITHIN           +0.1110   share  +0.348 [+0.277, +0.419]   abs CI [+0.0830, +0.1391]
+  COMPOSITION      +0.2065   share  +0.647 [+0.575, +0.718]   abs CI [+0.1713, +0.2412]
+  INTERACTION      +0.0018   share  +0.006 [-0.003, +0.016]   abs CI [-0.0010, +0.0050]
+  TOTAL            +0.3194   abs CI [+0.2775, +0.3628]
+
+==========================================================================
+PER CHAMBER, token-weighted (no CIs; ordered by total change)
+  chamber     R 18-22  R 23-26   change   within     comp    cross  w share    nS    nE    nL
+  SA            2.727    3.534   +0.807   +0.358   +0.229   +0.220     0.44    65     8    45
+  AB            1.987    2.680   +0.693   +0.066   +0.585   +0.042     0.10    68    35    64
+  NSW           2.993    3.558   +0.565   +0.135   +0.298   +0.132     0.24   101    43    73
+  BC            2.292    2.775   +0.483   +0.065   +0.427   -0.008     0.13    87    94    34
+  ON            2.220    2.611   +0.391   +0.194   +0.221   -0.024     0.50   119    32    93
+  WA            2.570    2.891   +0.321   +0.143   +0.169   +0.009     0.44    93    81    41
+  NS            2.446    2.728   +0.283   +0.216   +0.173   -0.107     0.76    53    22    64
+  WAL           2.681    2.942   +0.261   +0.015   +0.186   +0.059     0.06    58    35    23
+  US-HOUSE      3.245    3.501   +0.256   -0.007   +0.084   +0.179    -0.03   332   165   296
+  TAS           2.596    2.847   +0.251   +0.209   +0.015   +0.027     0.83    25    33    10
+  QLD           2.718    2.955   +0.237   +0.110   +0.142   -0.015     0.47    90    27    14
+  UK            2.443    2.667   +0.223   +0.048   +0.126   +0.050     0.21   608   354   205
+  SK            2.088    2.310   +0.221   -0.003   +0.275   -0.051    -0.01    56    64    27
+  MB            2.062    2.274   +0.212   -0.080   +0.151   +0.141    -0.38   100    80    44
+  SCO           3.025    3.137   +0.112   -0.040   +0.094   +0.058    -0.36   127    49    46
+  CA-FED        2.395    2.493   +0.098   +0.090   +0.044   -0.036     0.92   332   127   160
+  NL            1.940    1.919   -0.021   +0.033   -0.084   +0.030    -1.59    41    20    54
+  US-SENATE     2.801    2.656   -0.145   -0.031   +0.038   -0.152     0.21    93    24    61
+  within positive in 13/18 chambers; composition positive in 17/18

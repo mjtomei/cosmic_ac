@@ -1,0 +1,81 @@
+instrument,weighting,term,value_per_1000,share,ci_lo,ci_hi
+all 407 style words,token-weighted,WITHIN,-0.376481,-0.9536,-0.496541,-0.259612
+all 407 style words,token-weighted,BETWEEN,0.138065,0.3497,0.006229,0.285418
+all 407 style words,token-weighted,CROSS,-0.024773,-0.0627,-0.143316,0.087557
+all 407 style words,token-weighted,ENTRY,0.667462,1.6906,0.549973,0.791143
+all 407 style words,token-weighted,EXIT,-0.009474,-0.0240,-0.094341,0.081935
+all 407 style words,token-weighted,WITHIN,-0.376481,-0.9536,-0.496541,-0.259612
+all 407 style words,token-weighted,COMPOSITION,0.796053,2.0163,0.598985,1.011741
+all 407 style words,token-weighted,INTERACTION,-0.024773,-0.0627,-0.143316,0.087557
+all 407 style words,equal member weight,WITHIN,-0.322367,-1.0884,-0.413541,-0.237676
+all 407 style words,equal member weight,BETWEEN,0.001245,0.0042,-0.000696,0.004349
+all 407 style words,equal member weight,CROSS,-0.006525,-0.0220,-0.015566,0.001637
+all 407 style words,equal member weight,ENTRY,0.562298,1.8985,0.448630,0.681045
+all 407 style words,equal member weight,EXIT,0.061532,0.2077,-0.018008,0.138583
+all 407 style words,equal member weight,WITHIN,-0.322367,-1.0884,-0.413541,-0.237676
+all 407 style words,equal member weight,COMPOSITION,0.625076,2.1104,0.478720,0.775305
+all 407 style words,equal member weight,INTERACTION,-0.006525,-0.0220,-0.015566,0.001637
+"rare subset, 350 words (< 5/100k pre)",token-weighted,WITHIN,0.071403,0.2614,0.045135,0.098708
+"rare subset, 350 words (< 5/100k pre)",token-weighted,BETWEEN,0.042307,0.1549,0.017099,0.063667
+"rare subset, 350 words (< 5/100k pre)",token-weighted,CROSS,0.044496,0.1629,0.020668,0.069902
+"rare subset, 350 words (< 5/100k pre)",token-weighted,ENTRY,0.108715,0.3979,0.083193,0.134737
+"rare subset, 350 words (< 5/100k pre)",token-weighted,EXIT,0.006283,0.0230,-0.008423,0.021413
+"rare subset, 350 words (< 5/100k pre)",token-weighted,WITHIN,0.071403,0.2614,0.045135,0.098708
+"rare subset, 350 words (< 5/100k pre)",token-weighted,COMPOSITION,0.157305,0.5758,0.120553,0.196100
+"rare subset, 350 words (< 5/100k pre)",token-weighted,INTERACTION,0.044496,0.1629,0.020668,0.069902
+"rare subset, 350 words (< 5/100k pre)",equal member weight,WITHIN,0.113837,0.3663,0.086765,0.138054
+"rare subset, 350 words (< 5/100k pre)",equal member weight,BETWEEN,0.000392,0.0013,-0.000104,0.001229
+"rare subset, 350 words (< 5/100k pre)",equal member weight,CROSS,0.002304,0.0074,-0.000533,0.005412
+"rare subset, 350 words (< 5/100k pre)",equal member weight,ENTRY,0.174863,0.5627,0.147939,0.201462
+"rare subset, 350 words (< 5/100k pre)",equal member weight,EXIT,0.019345,0.0623,0.004610,0.035252
+"rare subset, 350 words (< 5/100k pre)",equal member weight,WITHIN,0.113837,0.3663,0.086765,0.138054
+"rare subset, 350 words (< 5/100k pre)",equal member weight,COMPOSITION,0.194599,0.6262,0.162695,0.229166
+"rare subset, 350 words (< 5/100k pre)",equal member weight,INTERACTION,0.002304,0.0074,-0.000533,0.005412
+"all 407 style words, surname-reconciled",token-weighted,WITHIN,-0.380967,-0.9650,-0.497884,-0.264196
+"all 407 style words, surname-reconciled",token-weighted,BETWEEN,0.160670,0.4070,0.022344,0.301781
+"all 407 style words, surname-reconciled",token-weighted,CROSS,-0.015666,-0.0397,-0.133611,0.094553
+"all 407 style words, surname-reconciled",token-weighted,ENTRY,0.614153,1.5556,0.492802,0.739838
+"all 407 style words, surname-reconciled",token-weighted,EXIT,0.016609,0.0421,-0.071780,0.102465
+"all 407 style words, surname-reconciled",token-weighted,WITHIN,-0.380967,-0.9650,-0.497884,-0.264196
+"all 407 style words, surname-reconciled",token-weighted,COMPOSITION,0.791432,2.0046,0.590650,0.996417
+"all 407 style words, surname-reconciled",token-weighted,INTERACTION,-0.015666,-0.0397,-0.133611,0.094553
+"all 407 style words, surname-reconciled",equal member weight,WITHIN,-0.317398,-1.0716,-0.401402,-0.232237
+"all 407 style words, surname-reconciled",equal member weight,BETWEEN,0.001453,0.0049,-0.000496,0.005019
+"all 407 style words, surname-reconciled",equal member weight,CROSS,-0.006424,-0.0217,-0.016164,0.001514
+"all 407 style words, surname-reconciled",equal member weight,ENTRY,0.546778,1.8461,0.438793,0.660309
+"all 407 style words, surname-reconciled",equal member weight,EXIT,0.071775,0.2423,-0.009060,0.149522
+"all 407 style words, surname-reconciled",equal member weight,WITHIN,-0.317398,-1.0716,-0.401402,-0.232237
+"all 407 style words, surname-reconciled",equal member weight,COMPOSITION,0.620006,2.0933,0.479480,0.764256
+"all 407 style words, surname-reconciled",equal member weight,INTERACTION,-0.006424,-0.0217,-0.016164,0.001514
+"rare subset, 350 words (< 5/100k pre), surname-reconciled",token-weighted,WITHIN,0.073868,0.2704,0.045626,0.099301
+"rare subset, 350 words (< 5/100k pre), surname-reconciled",token-weighted,BETWEEN,0.042125,0.1542,0.019752,0.065161
+"rare subset, 350 words (< 5/100k pre), surname-reconciled",token-weighted,CROSS,0.044460,0.1627,0.020647,0.068737
+"rare subset, 350 words (< 5/100k pre), surname-reconciled",token-weighted,ENTRY,0.107133,0.3921,0.084060,0.131945
+"rare subset, 350 words (< 5/100k pre), surname-reconciled",token-weighted,EXIT,0.005618,0.0206,-0.008590,0.019626
+"rare subset, 350 words (< 5/100k pre), surname-reconciled",token-weighted,WITHIN,0.073868,0.2704,0.045626,0.099301
+"rare subset, 350 words (< 5/100k pre), surname-reconciled",token-weighted,COMPOSITION,0.154876,0.5669,0.118882,0.190092
+"rare subset, 350 words (< 5/100k pre), surname-reconciled",token-weighted,INTERACTION,0.044460,0.1627,0.020647,0.068737
+"rare subset, 350 words (< 5/100k pre), surname-reconciled",equal member weight,WITHIN,0.116063,0.3735,0.091669,0.138334
+"rare subset, 350 words (< 5/100k pre), surname-reconciled",equal member weight,BETWEEN,0.000363,0.0012,-0.000083,0.001098
+"rare subset, 350 words (< 5/100k pre), surname-reconciled",equal member weight,CROSS,0.002349,0.0076,-0.000560,0.005617
+"rare subset, 350 words (< 5/100k pre), surname-reconciled",equal member weight,ENTRY,0.174007,0.5600,0.148492,0.201025
+"rare subset, 350 words (< 5/100k pre), surname-reconciled",equal member weight,EXIT,0.017957,0.0578,0.004425,0.033499
+"rare subset, 350 words (< 5/100k pre), surname-reconciled",equal member weight,WITHIN,0.116063,0.3735,0.091669,0.138334
+"rare subset, 350 words (< 5/100k pre), surname-reconciled",equal member weight,COMPOSITION,0.192328,0.6189,0.164013,0.225298
+"rare subset, 350 words (< 5/100k pre), surname-reconciled",equal member weight,INTERACTION,0.002349,0.0076,-0.000560,0.005617
+"rare subset, 350 words (< 5/100k pre), 18 clean chambers",token-weighted,WITHIN,0.068035,0.2330,0.038591,0.099578
+"rare subset, 350 words (< 5/100k pre), 18 clean chambers",token-weighted,BETWEEN,0.044402,0.1520,0.016243,0.074438
+"rare subset, 350 words (< 5/100k pre), 18 clean chambers",token-weighted,CROSS,0.049441,0.1693,0.023093,0.077225
+"rare subset, 350 words (< 5/100k pre), 18 clean chambers",token-weighted,ENTRY,0.112188,0.3842,0.088484,0.135489
+"rare subset, 350 words (< 5/100k pre), 18 clean chambers",token-weighted,EXIT,0.017965,0.0615,0.002912,0.033656
+"rare subset, 350 words (< 5/100k pre), 18 clean chambers",token-weighted,WITHIN,0.068035,0.2330,0.038591,0.099578
+"rare subset, 350 words (< 5/100k pre), 18 clean chambers",token-weighted,COMPOSITION,0.174554,0.5977,0.136812,0.213755
+"rare subset, 350 words (< 5/100k pre), 18 clean chambers",token-weighted,INTERACTION,0.049441,0.1693,0.023093,0.077225
+"rare subset, 350 words (< 5/100k pre), 18 clean chambers",equal member weight,WITHIN,0.111035,0.3477,0.082989,0.139116
+"rare subset, 350 words (< 5/100k pre), 18 clean chambers",equal member weight,BETWEEN,0.000328,0.0010,-0.000179,0.001074
+"rare subset, 350 words (< 5/100k pre), 18 clean chambers",equal member weight,CROSS,0.001811,0.0057,-0.000995,0.005007
+"rare subset, 350 words (< 5/100k pre), 18 clean chambers",equal member weight,ENTRY,0.186099,0.5827,0.157188,0.215726
+"rare subset, 350 words (< 5/100k pre), 18 clean chambers",equal member weight,EXIT,0.020107,0.0630,0.003913,0.035279
+"rare subset, 350 words (< 5/100k pre), 18 clean chambers",equal member weight,WITHIN,0.111035,0.3477,0.082989,0.139116
+"rare subset, 350 words (< 5/100k pre), 18 clean chambers",equal member weight,COMPOSITION,0.206534,0.6467,0.171258,0.241177
+"rare subset, 350 words (< 5/100k pre), 18 clean chambers",equal member weight,INTERACTION,0.001811,0.0057,-0.000995,0.005007

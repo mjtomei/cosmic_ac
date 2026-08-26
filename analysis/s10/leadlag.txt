@@ -1,0 +1,102 @@
+cache: 11,894 members, 10,948 in the 20 continuous-coverage chambers
+members with 2006-2026 speech: 8,308  (counts array 284 MB)
+style words in the cache: 407; with >= 800 occurrences 2018-2026 here: 282
+panel tokens 2006-2026: 1.19B
+
+takeoff (3yr MA > 2x the 2006-2019 mean, first year 2010-2026): 47/282 words cross
+  takeoff years: median 2022, 21 of 47 in 2023-2026
+    2017:   1  impactful
+    2018:   2  foundational, transformative
+    2019:   3  easing, midst, nuanced
+    2020:   6  affirming, amid, hardest, overwhelmed, surged, unlocking
+    2021:   9  aligns, amidst, bolster, bolstering, elucidate, essentials, exacerbating, grappling, swiftly
+    2022:   5  align, alongside, elevate, impacting, insights
+    2023:   7  aligning, expediting, fostering, pivotal, showcasing, underscores, upholding
+    2024:   6  advancements, fosters, multifaceted, shaping, showcases, spanning
+    2025:   5  capabilities, empowers, escalating, evolving, uphold
+    2026:   3  advancing, enduring, introduces
+
+==========================================================================
+EGP TIERS
+  I (higher service)     1,391 members     313.9M tokens 2006-2026
+  IVc+V/VI+VIIab           438 members      85.7M tokens 2006-2026
+
+  words tested: 282 (>= 30 occurrences in BOTH tiers)
+  cumulative half-point, all words:
+    d = bottom - top, in years. mean +0.270  median +0.268  sd 1.140
+    top precedes in 177 words, bottom in 105, tied in 0  (n = 282)
+    Wilcoxon signed-rank, one-sided (top precedes), ties dropped: W 26349, p = 0.0000
+    paired t (same H1): t +3.97, p = 0.0000
+  cumulative half-point, the 47 words with a takeoff:
+    d = bottom - top, in years. mean +0.435  median +0.110  sd 1.202
+    top precedes in 28 words, bottom in 19, tied in 0  (n = 47)
+    Wilcoxon signed-rank, one-sided (top precedes), ties dropped: W 751, p = 0.0239
+    paired t (same H1): t +2.48, p = 0.0084
+  level half-of-2026 (many ties: both tiers already above half in 2006):
+    d = bottom - top, in years. mean +0.846  median +0.000  sd 3.913
+    top precedes in 63 words, bottom in 21, tied in 198  (n = 282)
+    Wilcoxon signed-rank, one-sided (top precedes), ties dropped: W 2728, p = 0.0000
+    paired t (same H1): t +3.63, p = 0.0002
+  member bootstrap (300 draws, seed 13) on the median d: [-0.046, +0.535]  (share > 0: 0.937)
+
+  WITHIN-CHAMBER (chamber mix held fixed): 11 chambers qualify
+    chamber     nTop  nBot  words  median d
+    BC            32    12    134    -0.177
+    NS            25    16    114    +1.390
+    NSW           90    29    232    +0.145
+    QLD           60    38    211    +0.561
+    SA            39    16    132    -0.351
+    VIC           73    57    244    +0.670
+    WA            65    44    228    +0.151
+    NI            23    16    173    -0.346
+    SCO           79    22    163    +0.107
+    UK           316    50    196    +0.035
+    US-HOUSE     313    32    161    -0.442
+    pooled over 1988 chamber-word pairs: mean +0.214  median +0.181  Wilcoxon p = 0.0000
+    chambers with a positive median: 7/11  (sign test p = 0.2744)
+
+==========================================================================
+FOLK TIERS
+  top                    1,427 members     324.8M tokens 2006-2026
+  bottom                   340 members      62.5M tokens 2006-2026
+
+  words tested: 282 (>= 30 occurrences in BOTH tiers)
+  cumulative half-point, all words:
+    d = bottom - top, in years. mean +0.145  median +0.175  sd 1.163
+    top precedes in 164 words, bottom in 118, tied in 0  (n = 282)
+    Wilcoxon signed-rank, one-sided (top precedes), ties dropped: W 23690, p = 0.0032
+    paired t (same H1): t +2.09, p = 0.0189
+  cumulative half-point, the 47 words with a takeoff:
+    d = bottom - top, in years. mean +0.312  median +0.403  sd 1.422
+    top precedes in 33 words, bottom in 14, tied in 0  (n = 47)
+    Wilcoxon signed-rank, one-sided (top precedes), ties dropped: W 776, p = 0.0121
+    paired t (same H1): t +1.51, p = 0.0696
+  level half-of-2026 (many ties: both tiers already above half in 2006):
+    d = bottom - top, in years. mean +0.591  median +0.000  sd 3.604
+    top precedes in 55 words, bottom in 20, tied in 207  (n = 282)
+    Wilcoxon signed-rank, one-sided (top precedes), ties dropped: W 2047, p = 0.0005
+    paired t (same H1): t +2.75, p = 0.0031
+  member bootstrap (300 draws, seed 13) on the median d: [-0.156, +0.520]  (share > 0: 0.837)
+
+  WITHIN-CHAMBER (chamber mix held fixed): 11 chambers qualify
+    chamber     nTop  nBot  words  median d
+    MB            39    15    146    -0.180
+    NS            29    24    117    +2.262
+    ON            53    14    145    -1.427
+    NSW           95    27    203    +0.551
+    QLD           67    18    165    -1.200
+    VIC          110    25    197    +1.572
+    WA            73    18    184    +0.135
+    NI            36    16    149    -0.184
+    SCO           79    19    182    +0.064
+    UK           242    61    206    -0.163
+    US-HOUSE     284    37    175    +0.460
+    pooled over 1869 chamber-word pairs: mean +0.175  median +0.140  Wilcoxon p = 0.0008
+    chambers with a positive median: 6/11  (sign test p = 0.5000)
+
+==========================================================================
+READING. d > 0 means the bottom tier's centre of mass falls LATER than the
+top tier's -- the top reached the word first, the chase direction. d < 0
+means the bottom got there first. The test is across words; with a few
+hundred words and one shared corpus behind both tiers, treat a p near
+0.05 as suggestive, not as a diffusion measurement.

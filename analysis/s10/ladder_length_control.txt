@@ -1,0 +1,171 @@
+OLMo-2 ladder, length control
+  407 style words (kobak_excess_words.csv, type=style, alpha)
+  generations: /home/matt/performance_commons/analysis/s10/olmo_ladder/<stage>_gen.json, 800 prompts x 4 stages
+
+=== 1. corpus shape and the raw (already length-normalised) rate ===
+  FULL text
+    stage       prompts      words  w/prompt  style/1k
+    base            800     82,160     102.7    27.167
+    sft             800     63,261      79.1    34.935
+    dpo             800     83,627     104.5    42.415
+    instruct        800     85,165     106.5    43.985
+    rate deltas per 1,000 words: base->sft +7.768   sft->dpo +7.480   dpo->instruct +1.571   END base->instruct +16.819
+
+  TRUNCATED to the per-prompt 4-stage minimum (mean L = 62.2 tokens, 18 empty groups)
+    stage       prompts      words  w/prompt  style/1k
+    base            800     49,780      62.2    27.541
+    sft             800     49,780      62.2    35.014
+    dpo             800     49,780      62.2    41.442
+    instruct        800     49,780      62.2    42.909
+    rate deltas per 1,000 words: base->sft +7.473   sft->dpo +6.428   dpo->instruct +1.466   END base->instruct +15.368
+
+  TRUNCATED to a fixed 50 tokens, balanced panel (419 of 800 prompts qualify)
+    stage       prompts      words  w/prompt  style/1k
+    base            419     20,950      50.0    28.353
+    sft             419     20,950      50.0    35.752
+    dpo             419     20,950      50.0    41.098
+    instruct        419     20,950      50.0    42.387
+    rate deltas per 1,000 words: base->sft +7.399   sft->dpo +5.346   dpo->instruct +1.289   END base->instruct +14.033
+
+=== 2. stage deltas: log-ratio excess, full vs truncated ===
+    'orig' = the shipped asymmetric estimator (olmo_ladder.py report,
+    superseded M3/M9 defect); 'sym' = the corrected symmetric one.
+
+  transition                   orig/full    orig/group     orig/pair  orig/fixed50      sym/full     sym/group      sym/pair   sym/fixed50
+  base->instruct                 +1.2412       +1.0785       +1.1414       +1.0846       +0.6187       +0.4658       +0.5253       +0.4730   END-TO-END base->instruct
+  base->sft                      +0.7663       +0.7201       +0.7589       +0.8501       +0.3181       +0.1919       +0.2421       +0.3121   instruction demonstrations
+  sft->dpo                       +0.8584       +0.7127       +0.7198       +0.6143       +0.2703       +0.2085       +0.2055       +0.1193   PREFERENCE OPTIMISATION
+  dpo->instruct                  +0.3635       +0.3940       +0.3342       +0.3333       +0.0553       +0.1211       +0.0481       +0.1095   RLVR (placebo stage)
+
+  p-values (fraction of 1,000 control draws at or above the real value)
+  base->instruct                   0.000         0.000         0.000         0.000         0.000         0.000         0.000         0.000
+  base->sft                        0.000         0.000         0.000         0.000         0.000         0.007         0.001         0.001
+  sft->dpo                         0.000         0.000         0.000         0.000         0.000         0.004         0.000         0.077
+  dpo->instruct                    0.000         0.000         0.000         0.000         0.134         0.024         0.183         0.046
+
+  style words present in the pair's two corpora (the n each mean is taken over)
+  base->instruct                     200           170           191           118           200           170           191           118
+  base->sft                          159           141           145           103           159           141           145           103
+  sft->dpo                           196           164           179           114           196           164           179           114
+  dpo->instruct                      214           172           211           117           214           172           211           117
+
+  null pedestal of the SYMMETRIC estimator (20 random frequency-matched lists):
+  base->instruct                 +0.0009       -0.0026       -0.0088       -0.0137
+  base->sft                      +0.0249       -0.0077       +0.0354       -0.0093
+  sft->dpo                       +0.0226       +0.0224       -0.0254       +0.0210
+  dpo->instruct                  +0.0131       +0.0050       +0.0033       +0.0244
+
+=== 2b. is the full-vs-truncated move bigger than word noise? ===
+    paired bootstrap over the style words (seed 5, 2,000 draws):
+    the SAME words are resampled for both corpora, so the interval
+    is on the DIFFERENCE truncated - full, not on two separate ones.
+    The point estimates differ slightly from section 2's because a
+    paired test can only use words present in BOTH corpora (n below)
+    and draws its own control median.
+  transition                 sym/full  sym/group      diff         95% CI on diff
+  base->instruct              +0.6452    +0.4716   -0.1737   [-0.2482, -0.1002]  n=170
+  base->sft                   +0.3106    +0.1883   -0.1223   [-0.1907, -0.0510]  n=141
+  sft->dpo                    +0.2489    +0.2099   -0.0390   [-0.1108, +0.0267]  n=164
+  dpo->instruct               +0.0872    +0.1170   +0.0298   [-0.0378, +0.0935]  n=172
+
+=== 3. per-prompt regressions: register on stage, length as covariate ===
+  FULL text: n = 3106 prompt-stage rows, 795 prompts, control list of 236 frequency-matched words (mean of 20 draws)
+    style rate /1k ~ stage(linear) + log(tokens)   [prompt-clustered SE]
+      term                             coef        SE       t
+      const                        +20.8754    6.4748   +3.22
+      stage (0..3 linear)           +4.9607    0.4450  +11.15
+      log(tokens)                   +1.7545    1.4171   +1.24
+    style rate /1k ~ stage dummies + log(tokens)   [base = reference]
+      term                             coef        SE       t
+      const                        +18.6970    6.8796   +2.72
+      sft                           +7.4426    1.3787   +5.40
+      dpo                          +12.8465    1.2238  +10.50
+      instruct                     +14.6898    1.2816  +11.46
+      log(tokens)                   +1.9547    1.4678   +1.33
+    style rate /1k ~ stage dummies, NO length term
+      term                             coef        SE       t
+      const                        +27.5013    0.8851  +31.07
+      sft                           +6.7416    1.3267   +5.08
+      dpo                          +12.9165    1.2175  +10.61
+      instruct                     +14.7914    1.2626  +11.72
+    style rate /1k ~ stage dummies + log(tokens) + PROMPT FIXED EFFECTS
+      term                             coef        SE       t
+      sft                           +6.7332    1.3637   +4.94
+      dpo                          +12.5863    1.2016  +10.47
+      instruct                     +14.5123    1.2594  +11.52
+      log(tokens)                   +0.3575    1.4628   +0.24
+
+    EXCESS over controls /1k ~ stage(linear) + log(tokens)   [prompt-clustered SE]
+      term                             coef        SE       t
+      const                         -7.4352    7.2854   -1.02
+      stage (0..3 linear)           +6.4368    0.4918  +13.09
+      log(tokens)                   -0.4480    1.5876   -0.28
+    EXCESS over controls /1k ~ stage dummies + log(tokens)   [base = reference]
+      term                             coef        SE       t
+      const                         -6.9138    7.7148   -0.90
+      sft                           +5.6700    1.6224   +3.49
+      dpo                          +15.6743    1.3726  +11.42
+      instruct                     +18.1725    1.4317  +12.69
+      log(tokens)                   -0.6182    1.6396   -0.38
+    EXCESS over controls /1k ~ stage dummies, NO length term
+      term                             coef        SE       t
+      const                         -9.6982    1.0582   -9.17
+      sft                           +5.8917    1.5697   +3.75
+      dpo                          +15.6521    1.3680  +11.44
+      instruct                     +18.1404    1.4210  +12.77
+    EXCESS over controls /1k ~ stage dummies + log(tokens) + PROMPT FIXED EFFECTS
+      term                             coef        SE       t
+      sft                           +5.5242    1.6010   +3.45
+      dpo                          +15.3675    1.3523  +11.36
+      instruct                     +17.8973    1.4140  +12.66
+      log(tokens)                   -0.9255    1.6187   -0.57
+
+  TRUNCATED (per-prompt 4-stage minimum): n = 2980 prompt-stage rows, 745 prompts, control list of 198 frequency-matched words (mean of 20 draws)
+    style rate /1k ~ stage(linear) + log(tokens)   [prompt-clustered SE]
+      term                             coef        SE       t
+      const                        +22.4845    5.4255   +4.14
+      stage (0..3 linear)           +4.4810    0.5492   +8.16
+      log(tokens)                   +1.7132    1.2843   +1.33
+    style rate /1k ~ stage dummies + log(tokens)   [base = reference]
+      term                             coef        SE       t
+      const                        +21.6075    5.4160   +3.99
+      sft                           +6.0110    1.5917   +3.78
+      dpo                          +11.1641    1.5812   +7.06
+      instruct                     +13.2189    1.6408   +8.06
+      log(tokens)                   +1.7132    1.2848   +1.33
+    style rate /1k ~ stage dummies, NO length term
+      term                             coef        SE       t
+      const                        +28.2281    1.1733  +24.06
+      sft                           +6.0110    1.5914   +3.78
+      dpo                          +11.1641    1.5809   +7.06
+      instruct                     +13.2189    1.6405   +8.06
+    style rate /1k ~ stage dummies + PROMPT FIXED EFFECTS (log(tokens) dropped: zero within-prompt variance after truncation -- perfectly collinear with the prompt effect)
+      term                             coef        SE       t
+      sft                           +6.0110    1.5912   +3.78
+      dpo                          +11.1641    1.5806   +7.06
+      instruct                     +13.2189    1.6402   +8.06
+
+    EXCESS over controls /1k ~ stage(linear) + log(tokens)   [prompt-clustered SE]
+      term                             coef        SE       t
+      const                         -9.2737    5.7167   -1.62
+      stage (0..3 linear)           +5.0648    0.5958   +8.50
+      log(tokens)                   +0.9201    1.3568   +0.68
+    EXCESS over controls /1k ~ stage dummies + log(tokens)   [base = reference]
+      term                             coef        SE       t
+      const                        -10.0017    5.6905   -1.76
+      sft                           +6.0584    1.7642   +3.43
+      dpo                          +12.5105    1.7139   +7.30
+      instruct                     +14.7319    1.7977   +8.19
+      log(tokens)                   +0.9201    1.3573   +0.68
+    EXCESS over controls /1k ~ stage dummies, NO length term
+      term                             coef        SE       t
+      const                         -6.4458    1.2678   -5.08
+      sft                           +6.0584    1.7639   +3.43
+      dpo                          +12.5105    1.7136   +7.30
+      instruct                     +14.7319    1.7974   +8.20
+    EXCESS over controls /1k ~ stage dummies + PROMPT FIXED EFFECTS (log(tokens) dropped: zero within-prompt variance after truncation -- perfectly collinear with the prompt effect)
+      term                             coef        SE       t
+      sft                           +6.0584    1.7636   +3.44
+      dpo                          +12.5105    1.7133   +7.30
+      instruct                     +14.7319    1.7971   +8.20
+

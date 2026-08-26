@@ -1,0 +1,160 @@
+preference-pair register scan
+  407 style words (kobak_excess_words.csv, type=style)
+  cache: /home/matt/performance_commons/analysis/s10/tulu_prefs
+
+  olmo2: 6 shards, 378,341 rows on disk
+    49,716 pairs dropped (a side under 5 tokens): 20,119 both sides, 9,696 chosen only, 19,901 rejected only
+
+==============================================================================
+olmo2   allenai/olmo-2-1124-7b-preference-mix
+==============================================================================
+  328,625 pairs scored, 405 of the 407 style words present in the corpus
+  193,514,506 response tokens scored (chosen 95,881,395 + rejected 97,633,111)
+
+=== (a) the headline: within-pair difference in register RATE ===
+    a rate is per-1,000-words, so it is already length-normalised
+  ALL PAIRS
+    n = 328,625 pairs   chosen 37.835 vs rejected 36.757 style words per 1,000
+    mean within-pair delta +1.0785 per 1,000  95% pair-bootstrap CI [+0.9538, +1.2141]
+    win-rate of the higher-register member (chosen higher): 48.78%   ties 10.01%   excluding ties 54.21%  CI [54.03%, 54.39%]
+    mean tokens: chosen 291.8  rejected 297.1  (chosen longer in 57.9% of pairs)
+
+=== placebo: the same statistic on frequency-matched controls ===
+  10 control lists, each matched to the style words' frequency profile
+  mean control delta -0.2542 per 1,000  [-0.3434, -0.1658]   per-list range -1.8047 .. +1.2284, 3/10 positive
+  -> style-word delta MINUS control pedestal: +1.3327 per 1,000
+
+=== (c1) length control I: near-equal-length pairs only ===
+  median |token difference| = 90; keeping the 163,790 pairs strictly below it
+  |len diff| BELOW MEDIAN
+    n = 163,790 pairs   chosen 36.095 vs rejected 34.913 style words per 1,000
+    mean within-pair delta +1.1820 per 1,000  95% pair-bootstrap CI [+1.0197, +1.3450]
+    win-rate of the higher-register member (chosen higher): 44.80%   ties 14.78%   excluding ties 52.57%  CI [52.31%, 52.83%]
+    mean tokens: chosen 190.8  rejected 185.5  (chosen longer in 54.5% of pairs)
+  |log-length ratio| < 0.05 (within 5% on length)
+    n = 21,962 pairs   chosen 39.743 vs rejected 39.597 style words per 1,000
+    mean within-pair delta +0.1463 per 1,000  95% pair-bootstrap CI [-0.1844, +0.4883]
+    win-rate of the higher-register member (chosen higher): 43.72%   ties 14.12%   excluding ties 50.91%  CI [50.19%, 51.61%]
+    mean tokens: chosen 294.7  rejected 294.7  (chosen longer in 43.3% of pairs)
+
+=== (c2) length control II: truncate both sides to the shorter ===
+    both responses cut to their first min(n_chosen, n_rejected) tokens, so lengths are identical pair by pair
+  TRUNCATED TO COMMON LENGTH
+    n = 328,625 pairs   chosen 37.198 vs rejected 36.411 style words per 1,000
+    mean within-pair delta +0.7879 per 1,000  95% pair-bootstrap CI [+0.6456, +0.9265]
+    win-rate of the higher-register member (chosen higher): 40.16%   ties 24.42%   excluding ties 53.14%  CI [52.94%, 53.33%]
+    mean tokens: chosen 199.3  rejected 199.3  (chosen longer in 0.0% of pairs)
+    control placebo on the truncated text: -0.2718 per 1,000
+
+=== (c3) length control III: regress the pair difference on the pair's log-length difference ===
+  delta_rate_i = a + b * (log n_chosen - log n_rejected)
+    a (intercept: length-neutral difference) -0.1124  SE 0.0673  t -1.7
+    b (slope on log-length difference)       +5.7853  SE 0.0614  t +94.2
+    R^2 = 0.0263   -> length explains 2.6% of the within-pair register difference
+    mean log-length difference +0.2059; the part of the raw delta attributable to it: +1.1909 of +1.0785
+
+=== the model-identity confound ===
+  19,372 pairs have chosen_model == rejected_model (5.9%) -- two samples from ONE model, one preferred. This is the figure to quote.
+  SAME MODEL both sides
+    n = 19,372 pairs   chosen 61.199 vs rejected 63.005 style words per 1,000
+    mean within-pair delta -1.8061 per 1,000  95% pair-bootstrap CI [-2.2287, -1.3766]
+    win-rate of the higher-register member (chosen higher): 45.91%   ties 5.99%   excluding ties 48.83%  CI [48.07%, 49.53%]
+    mean tokens: chosen 233.5  rejected 249.0  (chosen longer in 39.7% of pairs)
+    control placebo on the same-model subset: -1.1686 [-1.4605, -0.8857]
+  SAME MODEL, |len diff| below its median
+    n = 9,551 pairs   chosen 59.735 vs rejected 61.422 style words per 1,000
+    mean within-pair delta -1.6869 per 1,000  95% pair-bootstrap CI [-2.3414, -1.0510]
+    win-rate of the higher-register member (chosen higher): 43.68%   ties 10.74%   excluding ties 48.94%  CI [47.92%, 49.99%]
+    mean tokens: chosen 185.0  rejected 186.9  (chosen longer in 43.4% of pairs)
+  SAME MODEL, truncated to common length
+    n = 19,372 pairs   chosen 60.977 vs rejected 62.238 style words per 1,000
+    mean within-pair delta -1.2614 per 1,000  95% pair-bootstrap CI [-1.7351, -0.7869]
+    win-rate of the higher-register member (chosen higher): 41.01%   ties 17.72%   excluding ties 49.84%  CI [49.04%, 50.58%]
+    mean tokens: chosen 205.7  rejected 205.7  (chosen longer in 0.0% of pairs)
+    same-model regression: intercept -1.1966 (SE 0.2283), slope +4.6407 (SE 0.3968), R^2 0.0070
+  DIFFERENT models
+    n = 309,253 pairs   chosen 36.372 vs rejected 35.113 style words per 1,000
+    mean within-pair delta +1.2592 per 1,000  95% pair-bootstrap CI [+1.1228, +1.3994]
+    win-rate of the higher-register member (chosen higher): 48.96%   ties 10.27%   excluding ties 54.56%  CI [54.38%, 54.75%]
+    mean tokens: chosen 295.4  rejected 300.1  (chosen longer in 59.0% of pairs)
+
+  reciprocal model-pair balance: 254 ordered model pairs (>=20 each way, self-pairs excluded), 291,945 pairs total
+    A-over-B mean delta +1.5796; B-over-A mean delta +0.1669
+    direction-balanced (average of the two directions): mean over cells -0.1485, median +0.6608, weighted by min(n) +0.2918; 171/254 cells positive
+    -> if the difference were model identity, the two directions would be opposite in sign and cancel
+
+=== by source subset (largest first) ===
+  source                                                    n     delta     trunc    win%
+  ai2-adapt-dev/sft_v3.9_used_on_policy_p1_olmo2_7b    87,048    -2.786    -2.744   48.69
+  ai2-adapt-dev/wildchat_v3.9_unused_on_policy_olmo2   69,064    +2.125    +1.594   46.26
+  ai2-adapt-dev/sft_v3.9_if_taxonomy_olmo2_7b          55,237    +3.791    +3.008   49.07
+  ai2-adapt-dev/ultrafeedback_cleaned_olmo2_7b         53,695    +3.407    +3.008   52.55
+  (unlabelled)                                         19,329    -1.810    -1.264   46.01
+  ai2-adapt-dev/sft_v3.9_used_on_policy_p0_olmo2_7b    17,643    +1.673    +1.672   48.89
+  ai2-adapt-dev/wildchat_v3.9_used_on_policy_olmo2_7   14,611    +2.588    +2.047   47.23
+  ai2-adapt-dev/WildChat-prefs-280824_olmo2_7b         10,429    +2.324    +2.268   52.46
+  ai2-adapt-dev/DaringAnteater-prefs_olmo2_7b           1,569    +0.801    +0.894   47.67
+
+  tulu3: 4 shards, 272,898 rows on disk
+    34,331 pairs dropped (a side under 5 tokens): 12,887 both sides, 7,915 chosen only, 13,529 rejected only
+
+==============================================================================
+tulu3   allenai/llama-3.1-tulu-3-8b-preference-mixture
+==============================================================================
+  238,567 pairs scored, 403 of the 407 style words present in the corpus
+  130,257,728 response tokens scored (chosen 64,036,976 + rejected 66,220,752)
+
+=== (a) the headline: within-pair difference in register RATE ===
+    a rate is per-1,000-words, so it is already length-normalised
+  ALL PAIRS
+    n = 238,567 pairs   chosen 37.955 vs rejected 37.260 style words per 1,000
+    mean within-pair delta +0.6954 per 1,000  95% pair-bootstrap CI [+0.5397, +0.8489]
+    win-rate of the higher-register member (chosen higher): 48.25%   ties 9.41%   excluding ties 53.26%  CI [53.05%, 53.47%]
+    mean tokens: chosen 268.4  rejected 277.6  (chosen longer in 55.2% of pairs)
+
+=== placebo: the same statistic on frequency-matched controls ===
+  10 control lists, each matched to the style words' frequency profile
+  mean control delta -0.3363 per 1,000  [-0.4184, -0.2534]   per-list range -1.5533 .. +1.0061, 4/10 positive
+  -> style-word delta MINUS control pedestal: +1.0317 per 1,000
+
+=== (c1) length control I: near-equal-length pairs only ===
+  median |token difference| = 78; keeping the 118,365 pairs strictly below it
+  |len diff| BELOW MEDIAN
+    n = 118,365 pairs   chosen 36.372 vs rejected 35.314 style words per 1,000
+    mean within-pair delta +1.0571 per 1,000  95% pair-bootstrap CI [+0.8714, +1.2415]
+    win-rate of the higher-register member (chosen higher): 44.48%   ties 14.66%   excluding ties 52.12%  CI [51.81%, 52.42%]
+    mean tokens: chosen 175.8  rejected 172.5  (chosen longer in 52.8% of pairs)
+  |log-length ratio| < 0.05 (within 5% on length)
+    n = 17,473 pairs   chosen 39.685 vs rejected 39.598 style words per 1,000
+    mean within-pair delta +0.0874 per 1,000  95% pair-bootstrap CI [-0.3002, +0.4939]
+    win-rate of the higher-register member (chosen higher): 42.75%   ties 15.58%   excluding ties 50.64%  CI [49.82%, 51.48%]
+    mean tokens: chosen 272.4  rejected 272.5  (chosen longer in 42.5% of pairs)
+
+=== (c2) length control II: truncate both sides to the shorter ===
+    both responses cut to their first min(n_chosen, n_rejected) tokens, so lengths are identical pair by pair
+  TRUNCATED TO COMMON LENGTH
+    n = 238,567 pairs   chosen 37.456 vs rejected 36.885 style words per 1,000
+    mean within-pair delta +0.5714 per 1,000  95% pair-bootstrap CI [+0.3997, +0.7363]
+    win-rate of the higher-register member (chosen higher): 39.70%   ties 24.43%   excluding ties 52.54%  CI [52.31%, 52.77%]
+    mean tokens: chosen 190.3  rejected 190.3  (chosen longer in 0.0% of pairs)
+    control placebo on the truncated text: -0.6135 per 1,000
+
+=== (c3) length control III: regress the pair difference on the pair's log-length difference ===
+  delta_rate_i = a + b * (log n_chosen - log n_rejected)
+    a (intercept: length-neutral difference) +0.0488  SE 0.0798  t +0.6
+    b (slope on log-length difference)       +5.3656  SE 0.0751  t +71.5
+    R^2 = 0.0210   -> length explains 2.1% of the within-pair register difference
+    mean log-length difference +0.1205; the part of the raw delta attributable to it: +0.6467 of +0.6954
+
+=== the model-identity confound ===
+  this mixture does not record chosen_model/rejected_model, so the same-model control cannot be run here
+
+=== by source subset (largest first) ===
+  source                                                    n     delta     trunc    win%
+  allenai/tulu-3-sft-reused-off-policy-8b              86,537    -2.214    -2.118   47.96
+  allenai/tulu-3-sft-reused-if                         55,433    +3.387    +2.811   47.68
+  allenai/tulu-3-ultrafeedback-cleaned-on-policy-8b    34,602    +3.281    +3.055   50.77
+  allenai/tulu-3-persona-if                            19,329    -1.810    -1.265   46.01
+  allenai/tulu-3-sft-reused-on-policy-8b               17,545    +1.956    +2.096   48.68
+  allenai/tulu-3-wildchat-reused-on-policy-8b          14,683    +2.098    +1.546   45.94
+  allenai/tulu-3-wildchat-if                           10,438    +2.501    +2.208   52.07

@@ -1,0 +1,151 @@
+vocab: 48,557 words at >= 200 corpus-wide, 22 chambers
+ANGLO3 balanced panel: 1994-2026 (33 years)
+dispersion measured across 19 chambers with >=1M tokens in 2006-2010: AB AUS_NSW AUS_QLD AUS_SA AUS_TAS AUS_VIC AUS_WA BC MB NI NL NS ON SCOT SK UK US-House US-Senate WALES
+donor pool before feature screen: 43,445 words (excluded 900 Kobak entries, 0 commonest, len<4)
+style words inside the corpus-wide top 120 -- the ones the committed placebo pool cannot match: 8  ['into', 'like', 'need', 'their', 'these', 'this', 'through', 'were']
+donor pool with all three features: 40,332
+style words carried: 389 of 407  (18 dropped: below the corpus-wide floor, below 20 hits in 2006-2010, or no pre-slope)
+matching on freq, cv   (pre-slope EXCLUDED: the difference series is free to show an onset inside 1994-2010)
+
+matched 389 style words to distinct donors, seed 13, without replacement
+  exact match on every matched decile: 389 (100.0%)
+  |decile difference| freq       mean 0.000  max 0
+  |decile difference| cv         mean 0.000  max 0
+
+  feature                 style mean  donor mean  style sd  donor sd
+  log10 freq 2006-10         -5.2963     -5.2965    0.9328    0.9326
+  chamber CV                  0.6453      0.6455    0.3893    0.3902
+  pre-slope 1994-2010 log/yr      0.0087     -0.0013    0.0377    0.0439
+
+  ten pairs (seeded order):
+    enhanced         -> multiple         want (9, 0) got (9, 0)
+    spanning         -> faceless         want (5, 1) got (5, 1)
+    evaluates        -> defray           want (4, 3) got (4, 3)
+    emerged          -> enormously       want (8, 2) got (8, 2)
+    encompassing     -> smiling          want (7, 0) got (7, 0)
+    pioneering       -> suppression      want (7, 3) got (7, 3)
+    consolidates     -> baths            want (5, 4) got (5, 4)
+    innovative       -> somewhat         want (9, 0) got (9, 0)
+    overlooking      -> learns           want (6, 0) got (6, 0)
+    complicates      -> comedian         want (3, 1) got (3, 1)
+
+  the ten commonest style words, where the aggregate lives:
+    style            donor              log10 f  donor log10 f     gap
+    this             have                -2.058         -2.074  -0.015
+    their            been                -2.522         -2.522  -0.000
+    were             time                -2.736         -2.736  +0.000
+    these            should              -2.824         -2.808  +0.015
+    need             public              -2.891         -2.899  -0.008
+    into             work                -2.894         -2.884  +0.010
+    through          could               -2.982         -3.000  -0.018
+    like             committee           -3.005         -3.017  -0.012
+    however          thank               -3.154         -3.149  +0.006
+    between          case                -3.292         -3.290  +0.003
+
+  style counts from vocab_year_counts vs exact: worst-year shortfall 0.00% (the count>=2 within-chamber prune)
+
+  year     register      donor  difference   ratio
+  1994       2629.0     3132.5      -503.5   0.839
+  1995       2647.3     3186.2      -538.9   0.831  <- difference trough
+  1996       2697.1     3149.7      -452.7   0.856
+  1997       2780.9     3001.6      -220.8   0.926
+  1998       2754.8     3096.8      -342.1   0.890
+  1999       2840.5     3064.1      -223.6   0.927
+  2000       2816.8     3139.8      -323.0   0.897
+  2001       2854.1     3058.8      -204.6   0.933
+  2002       2838.4     3110.4      -271.9   0.913
+  2003       2881.6     3041.0      -159.5   0.948
+  2004       2902.3     3095.7      -193.5   0.938
+  2005       2894.4     2967.4       -73.0   0.975
+  2006       2923.1     3072.6      -149.5   0.951
+  2007       2960.9     3062.7      -101.8   0.967
+  2008       2949.4     3110.8      -161.4   0.948
+  2009       3010.3     3080.6       -70.3   0.977
+  2010       3011.7     3108.3       -96.6   0.969
+  2011       2921.4     3129.5      -208.1   0.934
+  2012       2946.3     3148.8      -202.6   0.936
+  2013       2975.8     3216.9      -241.1   0.925
+  2014       3058.9     3238.3      -179.4   0.945
+  2015       3087.1     3114.1       -27.0   0.991
+  2016       3111.3     3149.8       -38.5   0.988
+  2017       3077.6     3099.4       -21.9   0.993
+  2018       3261.4     3048.2       213.1   1.070
+  2019       3250.8     2990.0       260.8   1.087
+  2020       3335.6     3076.5       259.1   1.084
+  2021       3360.2     3050.1       310.1   1.102
+  2022       3266.3     2978.9       287.3   1.096
+  2023       3185.6     3077.6       108.0   1.035
+  2024       3256.2     2936.3       319.9   1.109
+  2025       3326.7     2852.2       474.4   1.166
+  2026       3288.7     2869.9       418.8   1.146
+
+==============================================================================
+ONSET TEST ON THE DIFFERENCE SERIES (ANGLO3, 1994-2026)
+==============================================================================
+  argmin (committed statistic)   register 1994   donor 2025   DIFFERENCE 1995   ratio 1995
+  era means of the difference (per 100k):
+    1994-2005    -292.3   (register/donor ratio 0.906)
+    2006-2013    -153.9   (register/donor ratio 0.951)
+    2014-2017     -66.7   (register/donor ratio 0.979)
+    2018-2022    +266.1   (register/donor ratio 1.088)
+    2023-2026    +330.3   (register/donor ratio 1.114)
+  an argmin on a series that is flat-with-noise before the break picks the noisiest low year, not an onset; the two-segment fit below is the statistic to read.
+  two-segment fit  register    break 2021   slope before +21.71/yr  after +7.88/yr
+  two-segment fit  donor       break 2016   slope before +2.44/yr  after -24.28/yr
+  two-segment fit  difference  break 2014   slope before +15.83/yr  after +43.24/yr
+
+  chamber bootstrap, 2000 usable resamples of 3 chambers, seed 17  [ANGLO3 1994-2026]
+    difference-series argmin : 1995 71.7%  1994 28.3%
+    two-segment breakpoint   : 2014 42.8%  2013 23.0%  1998 15.6%  1999 11.5%  2000 3.8%
+    (only 3 chambers reach 1994; this interval is coarse by construction, not by choice)
+
+  chamber bootstrap, 2000 usable resamples of 17 chambers, seed 17  [WIDE-17 2006-2026]
+    difference-series argmin : 2006 94.9%  2007 2.6%  2012 1.3%  2011 0.7%  2013 0.2%
+    two-segment breakpoint   : 2013 17.0%  2008 16.8%  2023 15.2%  2014 12.4%  2012 11.8%
+
+  UK alone 1985-2026: register trough 1994, donor trough 2025, difference trough 1994
+  year     register      donor  difference
+  1985       2314.2     3387.1     -1072.9
+  1986       2343.4     3396.9     -1053.6
+  1987       2323.4     3315.2      -991.8
+  1988       2248.6     3375.9     -1127.3
+  1989       2274.9     3406.9     -1132.0
+  1990       2203.5     3350.6     -1147.1
+  1991       2213.2     3312.9     -1099.7
+  1992       2218.6     3279.9     -1061.3
+  1993       2201.9     3292.5     -1090.6
+  1994       2168.3     3390.7     -1222.4
+  1995       2205.5     3372.6     -1167.2
+  1996       2222.0     3359.1     -1137.1
+  1997       2272.8     3234.2      -961.3
+  1998       2267.4     3253.5      -986.1
+  1999       2348.3     3348.2      -999.9
+  2000       2332.1     3370.0     -1037.9
+  2001       2381.7     3374.7      -993.0
+  2002       2432.7     3302.6      -869.9
+  2003       2419.7     3298.7      -879.0
+  2004       2467.8     3310.4      -842.5
+  2005       2473.0     3268.1      -795.2
+  2006       2471.9     3307.7      -835.8
+  2007       2526.2     3344.0      -817.8
+  2008       2617.9     3352.6      -734.7
+  2009       2708.0     3399.5      -691.5
+  2010       2741.4     3279.3      -537.9
+  2011       2734.4     3296.2      -561.8
+  2012       2780.6     3279.1      -498.4
+  2013       2801.1     3333.6      -532.6
+  2014       2868.2     3337.6      -469.4
+  2015       2895.1     3223.7      -328.6
+  2016       2968.0     3210.4      -242.4
+  2017       2974.8     3206.1      -231.3
+  2018       3057.7     3235.4      -177.7
+  2019       3040.1     3247.4      -207.3
+  2020       3258.1     3298.8       -40.6
+  2021       3267.0     3283.4       -16.4
+  2022       3107.4     3187.0       -79.6
+  2023       3136.6     3203.8       -67.2
+  2024       3126.5     3129.6        -3.1
+  2025       3297.2     3044.8       252.4
+  2026       3270.4     3161.8       108.6
+
+wrote donor_series_fc.json

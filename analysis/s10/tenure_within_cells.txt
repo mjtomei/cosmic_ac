@@ -1,0 +1,100 @@
+==============================================================================
+TENURE NET OF AGE, PERIOD AND COHORT  (S10 §4.6 career-stage rival)
+rates: register occurrences per 1,000 words (cohort_vs_period.py's ruler)
+==============================================================================
+  member-years: 37,548  (>= 2,000 words, birth year known, entry year known)
+  members dropped to entry-year censoring (entry <= chamber's first covered year + 0): 4,254
+  member-years dropped for no birth year: 5,893 members
+  tenure: range 0-39 years, word-weighted mean 6.59, median 5
+    deciles/quartiles (10/25/50/75/90/99): 1/2/5/9/15/26
+    NOTE the censoring truncates the long-tenure tail at the left edge of each
+    chamber's coverage, so this is the range the slope is fitted over.
+
+------------------------------------------------------------------------------
+WITHIN-CELL TENURE SLOPES
+------------------------------------------------------------------------------
+
+  DECADE cells  (birth-decade x spoken year x chamber) -- the specified cell; age held to within a decade
+    rows 37,548   members 4,418   cells 2,188 (1,627 carry tenure variation; 309 singletons)
+    rows inside a cell with tenure variation: 36,016 (96%)
+    max rows per member within one cell: 1  -> the contrast is BETWEEN members only
+    tenure slope -1.004 per 1,000 words per DECADE of tenure
+      clustered on member: se 0.136, t -7.36   *
+      member-block bootstrap (400 draws): 95% CI [-1.319, -0.711], se 0.154
+
+  EXACT cells   (birth-YEAR x spoken year x chamber) -- age held exactly; net of all three clocks with nothing left
+    rows 37,548   members 4,418   cells 11,628 (5,256 carry tenure variation; 4,851 singletons)
+    rows inside a cell with tenure variation: 28,804 (77%)
+    max rows per member within one cell: 1  -> the contrast is BETWEEN members only
+    tenure slope -0.953 per 1,000 words per DECADE of tenure
+      clustered on member: se 0.113, t -8.40   *
+      member-block bootstrap (400 draws): 95% CI [-1.157, -0.621], se 0.138
+
+  5-YEAR cells  (5y birth bin x spoken year x chamber) -- midpoint between the two
+    rows 37,548   members 4,418   cells 3,763 (2,570 carry tenure variation; 695 singletons)
+    rows inside a cell with tenure variation: 34,870 (93%)
+    max rows per member within one cell: 1  -> the contrast is BETWEEN members only
+    tenure slope -1.008 per 1,000 words per DECADE of tenure
+      clustered on member: se 0.130, t -7.77   *
+      member-block bootstrap (400 draws): 95% CI [-1.286, -0.695], se 0.150
+
+  NO CELLS      (pooled, no fixed effects at all) -- benchmark only: confounded with age, period and chamber
+    rows 37,548   members 4,418   cells 1 (1 carry tenure variation; 0 singletons)
+    rows inside a cell with tenure variation: 37,548 (100%)
+    max rows per member within one cell: 37  -> the contrast is partly within member
+    tenure slope -2.111 per 1,000 words per DECADE of tenure
+      clustered on member: se 0.135, t -15.61   *
+
+------------------------------------------------------------------------------
+ROBUSTNESS: drop the 271 tier-1 surname keys flagged ambiguous
+  (411 of 37,548 rows, 1.1%). A collision merges two
+  people into one member and manufactures tenure, so this is the cut
+  that matters most for THIS test. Province and 2026-08-17 chambers
+  carry no such flag, so the cut is partial.
+------------------------------------------------------------------------------
+
+  EXACT cells, ambiguous keys dropped 
+    rows 37,137   members 4,365   cells 11,610 (5,243 carry tenure variation; 4,855 singletons)
+    rows inside a cell with tenure variation: 28,417 (77%)
+    max rows per member within one cell: 1  -> the contrast is BETWEEN members only
+    tenure slope -0.961 per 1,000 words per DECADE of tenure
+      clustered on member: se 0.116, t -8.30   *
+
+==============================================================================
+READING
+==============================================================================
+  THE TENURE SLOPE IS NOT NULL. On the strict cell -- same birth YEAR,
+  same spoken year, same chamber, so age, period and cohort are all
+  exactly held -- a decade of extra service is worth -0.953 per 1,000
+  words (t -8.4 clustered on member; bootstrap CI excludes 0).
+  That is the same order of magnitude as §4.6's entire birth gradient
+  (+0.876 per decade) and as the pre-drift Senate age slope (-0.892).
+  By the decision rule this test was set up with, that outcome favours
+  the CAREER-STAGE rival, not the cohort reading.
+
+  BUT READ THE CONTRAST CORRECTLY. Within a (birth year x year x
+  chamber) cell each member appears at most once -- verified above --
+  so this is a purely BETWEEN-member comparison. It cannot be members
+  drifting down as they serve. Indeed within member, tenure and calendar
+  year move one-for-one (entry is fixed), so a within-member tenure
+  slope does not exist at all: it is the APC problem again one level
+  down, tenure/period/entry in place of age/period/cohort. And
+  cohort_vs_period.py's within-member trend is POSITIVE (+0.51 per
+  decade): sitting members' register rises. So the negative tenure slope
+  is a statement about WHO ARRIVED WHEN, not about what service does to
+  a person.
+
+  WHICH MEANS THIS IS NOT A CLEAN TEST OF THE RIVAL. With year, chamber
+  and birth year all held, tenure is exactly minus entry year, so the
+  slope reported here is the ENTRY-COHORT gradient with a sign flip --
+  it reproduces cohort_vs_period.py's three-stamp entry term (+1.055 per
+  decade of entry on these same 37,548 rows). §4.6's own footnote calls
+  entry year 'a second cohort clock, not a confounder'. Both readings
+  fit this number, and nothing in this design separates them: a
+  career-stage effect and an entry-cohort effect are the same
+  coefficient. What the test does establish is that the number is large,
+  and that §4.6 cannot claim tenure is null.
+
+  CAVEAT: censoring drops 4,254 members and truncates the long-tenure
+  tail at each chamber's coverage edge, so the slope is fitted mostly
+  over 1-15 years of service.

@@ -1,0 +1,13 @@
+speakers recovered for 14,644/15,000 traced segments (26 stores scanned)
+
+qwen: 998 members with >=30 instrument occurrences in an era; stayers 280, entrants 352, leavers 366
+  pooled post-pre change:   +0.0053
+  within-member (stayers):  +0.0054
+  composition share:        -2% of the total
+  within-member 95% CI (member bootstrap): [-0.0280, +0.0459]
+
+mistral: 1001 members with >=30 instrument occurrences in an era; stayers 282, entrants 351, leavers 368
+  pooled post-pre change:   +0.0003
+  within-member (stayers):  -0.0011
+  composition share:        464% of the total
+  within-member 95% CI (member bootstrap): [-0.0096, +0.0091]
