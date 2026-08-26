@@ -6,11 +6,11 @@ We measure machine-drafted speech across 22 legislative chambers in five countri
 
 ---
 
-**S10 — draft write-up, 2026-08-11; §4.6a and Appendix A extended
+**S10 — draft write-up, 2026-08-11; §4.6b and Appendix A extended
 2026-08-13.** All arms complete, including the detector-bypass study and both
 prior-art comparators. Everything is reproducible from `analysis/s10/`.
 
-**§4.6a's literature citations were web-verified 2026-08-24.** The result is
+**§4.6b's literature citations were web-verified 2026-08-24.** The result is
 placed against Labov (crossover/hypercorrection, *Sociolinguistic Patterns*,
 U. Pennsylvania Press, 1972), Simmel (1904), Veblen (1899), Jhering (1883)
 with Durkheim's summary supplying the quote, and Lieberson (*A Matter of
@@ -975,7 +975,7 @@ First the accounting, neutral between the readings:
   stronger of the two in 15 of the 22 chambers. †[^r46a]
 - **The gradient holds within year and province at +1.05 per 1,000 per decade**
   (t ≈ 8.5, clustered on member), unmoved by occupation and education controls,
-  which *strengthen* it rather than explain it away (§4.6a). †[^r46b]
+  which *strengthen* it rather than explain it away (§4.6b). †[^r46b]
 - **Sitting members convert too, at about half the pace.** With member fixed
   effects — so the slope is identified only off a member's own movement, and
   every fixed difference between members drops out — the register rises
@@ -1006,7 +1006,7 @@ than excluded.) The gradient is not ministerial office: in the chambers
 whose record marks rank it *strengthens* when office years are removed, and
 office-holders use less of the register than backbenchers, not more
 (Appendix D.4). The mechanism behind either component remains open — three
-exposure tests failed to isolate one (Appendix A) — and §4.6a's predictors
+exposure tests failed to isolate one (Appendix A) — and §4.6b's predictors
 survive the gradient without explaining it.[^r46apc]
 
 ![](apc_gradients.png)
@@ -1057,16 +1057,221 @@ member-cluster bootstrap 95% intervals.*
     identified only off a member's own change, cohort, chamber, seat safety and
     every other fixed attribute of the member drop out by construction.
 
-### 4.6a Class and the register: jointly significant, individually noisy — and education is not it
+### 4.6a Socioeconomic position as organisational altitude: the register peaks at the insulated middle, and free work sits lowest
 
-Class predicts the register as a joint block, not as a single ladder —
-and the apparent education gradient does not survive its controls. The arc
-of the analysis is a correction applied twice, recorded because both
-applications were the study's own committed checks. On the eight provinces,
-class, education and prominence appeared to predict the register at t = 3–4.
-Clustering by member and replication then removed every INDIVIDUAL certainty
-— and an over-hasty first rewrite of this section called that a reversal. The
-joint tests say otherwise:
+What this section reports is best read as a proposal for a **measure**:
+socioeconomic position scored not by a categorical class schema but by the
+occupational content the schema summarises. Each legislator's prior
+occupation, coded to O\*NET, is scored on an organisational-**altitude**
+ladder — bottom, middle, top of a hierarchy — plus a level the categorical
+schemas do not carry: **free work**, occupations that sit outside the
+organisational hierarchy altogether. That off-ladder level is the measure's
+distinctive axis, and it is not a post-hoc reading: the ordering **free <
+front-line < corporate** was preregistered before any occupational element
+was joined to the register, and found. What follows are the measure's
+results — the U over its levels, the off-ladder level's stability across
+three decades, and, in the joint model below, the absorption of the class
+label the measure refines.
+
+**The measure follows the discovery in reverse order.** The register's
+occupational shape was first seen through the class coding (§4.6b): an
+inverted U, peak one rung below the top, with no mechanism attached. This
+arm registered one, built the instrument to measure it, and ran — the
+registration carries every revision and amendment dated,[^s-prereg] and every
+number below reproduces from a committed script on a single member table
+(one join; n = 4,762 members with register and
+instrument, 3,594 with every covariate).
+
+[^s-prereg]: `plans/PREREG-occupational-accountability.md` is the
+    registration; METHODOLOGY §6.1c is the method record; the member table
+    is `prereg_member_table.json`.
+
+**The instrument, in one paragraph.** Each legislator's prior occupation,
+double-blind coded to an O\*NET-SOC code, joins 64 O\*NET elements whose
+assignment to four components was itself blind-derived by three independent
+coding workflows over the full 295-element universe: **U** upward (advising
+without the final say; discretion reverse-scored), **L** lateral (external
+service), **D** downward (command), **N** undirected (organisational
+account-giving and contact). From the components and from an independent
+blind coding of hierarchy positions come the study's registered structure —
+**four levels, built two semi-independent ways**: the *directional ladder*
+(free / bottom / middle / top composed from the components) and the *coded
+ladder* (the same four levels scored from element signatures produced by
+coders who were never told the register or the hypothesis existed) — plus
+the **apex delta** (MIDDLE − TOP), registered in words as "insulated command
+tracks more register than exposed command."
+
+**The four-level U is the result, and its registration is a timeline.** The
+middle-peak prediction — free and the top low, the middle the peak — was
+stated in the session log an hour before the first fit; the coded ladder and
+the apex delta entered the committed pre-registration twelve minutes before
+it; the directional ladder's explicit sign declarations were formalised in
+the post-Stage-1 amendment. The exact record, to the minute, is in the
+footnote.[^regts] Each
+level entered alone (standardised; n = 4,762, full-covariate slopes at
+n = 3,594):
+
+[^regts]: The registration record, all times 2026-08-18 US-Pacific, from the
+    session transcript and git. **12:04**, session log, before any fit or
+    instrument freeze: "I would actually expect the highest reading to come
+    with middle managers with workers below them" (Matthew). **12:41**: the
+    four-level structure directed ("three levels of corporate and a free").
+    **13:03**: the charged/uncharged horse race directed. **13:05**, commit
+    `f10d502`: the coded ladder and the apex delta ("insulated command
+    tracks more register than exposed command") committed to the prereg.
+    **13:17**, `ad303ad`: Stage 1 run and unblinded. **13:36**, `53a02ff`:
+    amendment adding the directional ladder and the explicit middle+/free−
+    sign declarations, self-labelled as post-unblinding. **17:21**,
+    `ccba83d`: the ruling recording the U as the design intent. So the
+    prediction precedes the data by 73 minutes in the log, and the formal
+    document carries the apex delta pre-run; what is post-run is
+    formalisation, not prediction. The meta-point is worth naming: under
+    machine execution with pervasive logging, the timestamped record that
+    pre-registration exists to create is produced continuously, and the
+    spirit of the practice — predictions verifiably preceding data — is
+    checkable to the minute without the formal document as the only witness.
+
+| level | directional ladder | coded ladder |
+|---|---|---|
+| free | −0.060 (t −4.2) | −0.066 (t −4.7) |
+| bottom | −0.021 (t −1.5) | +0.010 (t +0.7) |
+| **middle** | **+0.029 (t +2.0)** | **+0.028 (t +2.0)** |
+| top | +0.010 (t +0.7) | +0.021 (t +1.5) |
+
+Middle peak, top below it, free at the floor, bottom indistinguishable from
+zero — the II-over-I crossover in occupational form, from two instruments
+built by different processes, agreeing at the peak to the third decimal.
+Both middles survive the full covariate set (+0.041 and +0.042, t 2.6
+each); under covariates the shape sharpens (bottom mildly negative, top
+close behind middle), and the middle-over-top gap's powered test is the
+delta. The registered *continuous* form of the interior peak — the altitude
+quadratic — found nothing (Appendix A18); the discrete levels and the
+relative contrast carry the claim.
+
+![](altitude_u.png)
+
+*The occupational register profile. Each legislator's prior occupation, coded to O\*NET, is scored on a four-level altitude ladder (free / bottom / middle / top of an organisational hierarchy) two semi-independent ways — the directional instrument and the coded corporate ladder — and both peak at the insulated middle, dipping at the exposed top. Points are each level's base slope entered alone (standardised, n = 4,762); bars ±1 se. The levels are individually noisy but jointly significant; the powered claim is the apex delta (middle − top), +0.049 (t 3.3), rising to +0.067 (t 3.9) under full covariates.*
+
+**The delta is the study's most covariate-robust occupational number.**
+Registered in words and observed +0.049 (t 3.3) raw; **+0.067 (t 3.9)**
+with cohort, class, education and prominence all present; right-signed and
+nominally significant in 16 of 16 covariate specifications; it absorbs the
+directional middle entirely when both enter. Dropped from the grand model
+it costs as much adjusted R² as the entire six-dummy class block (.0033 vs
+.0038); education is spent once class and the delta are present (.0004).
+Its group form — members split by relative inwardness, insulated against
+exposed — puts the insulated cell above the rest (t 2.1 on the gap), with
+one leg farmer-driven and reported as such: the 199 members the instrument
+reads as agricultural managers sit in the exposed cell and drag it, exactly
+the headwind the registration's prediction 5 named in advance.
+
+**Era-resolved, the instrument's carrying level is stable.** The joint
+model's surviving occupational block is the coded ladder, and its standing
+term is the free level; asked era by era — each level's slope entered
+alone, the figure above's own estimand, on the same member-bin values and
+six equal bins as §4.6b's class-era panels — free professionals sit below their
+chamber-and-period peers in every half-decade (−0.07 to −0.11 per sd,
+individually significant in all six bins), with no trend into the machine
+era, while bottom, middle and top stay small and flat. Like the class
+shape, the occupational shape was in place decades before the
+machines.[^s-ladderera]
+
+![The coded ladder by era, one panel per level](ladder_by_era_panels.png)
+
+*The coded altitude ladder across eras: each level's slope entered alone
+(per sd, HC1 errors), on the same member-bin values and six equal five-year
+bins as the class panels; ±1 se bands, dotted member-weighted linear
+trends. The free level — professionals off the organisational ladder —
+carries the instrument in every half-decade; the three on-ladder levels
+stay small and flat.*
+
+[^s-ladderera]: `python build_ladder_by_era.py`, then
+    `python plot_ladder_by_era_panels.py`.
+
+**The gradient nests inside class, which is what "the class U was
+occupation all along" requires.** The delta's slope within class II alone is
++0.076 (t 3.3) — the class peak's own interior carries the occupational
+gradient — and +0.066 (t 4.0) with class fixed effects. Prediction 1 (the
+occupational block adds to EGP) confirmed in 16 of 16 paired
+specifications.
+
+**The horse race and the pattern.** The uncharged (coded) instrument wins
+the registered AIC comparison narrowly (−205.0 vs −198.6); encompassing
+tests are significant in both directions — neither instrument subsumes the
+other. The registered four-sign component pattern (U+ L− D+ N+) holds in
+25% of pattern-eligible lattice specifications, permutation p = 0.087
+across 2,000 within-chamber shuffles — suggestive, unconfirmed. Under the
+covariate lattice, L's raw positivity dissolves (median +0.012,
+direction-unstable): the external-service gradient was carrying class and
+education correlation rather than surviving it, while U and N stay
+right-signed in 100% of specifications and D turns mildly positive
+throughout.
+
+**Era restriction** (2025–26 speech only, n = 1,000): cohort deflates to
+its period-purged size (+0.138/sd, t 4.3 — the career figure of +0.383 was
+mostly period mixing), the class-II contrast doubles to +0.203 (t 3.0), and
+the delta persists directionally at era power (+0.061, t 1.7; the career
+effect predicts t ≈ 2.0 at this n). In the spike window, class II is the
+strongest social-position covariate; the insulation contrast holds its size
+without independent confirmation.
+
+One drafting generation of the registration expressed the peak claim as a
+linear three-profile rank; that operationalization failed its own test and
+the framing is retired — Appendix B10 preserves its numbers, and the
+registration's post-run amendment records the oversight and the provenance
+ruling. Failed registered predictions are in Appendix A (the altitude
+quadratic, the autonomy asymmetry, nominal-vs-effective autonomy). Scale
+for all of it: §5's calibration bullet — small effects by any benchmark,
+reliably estimated, structurally replicated, floors rather than
+ceilings.[^r46f]
+
+[^r46f]: `python prereg_stage1.py`, `prereg_stage2.py`,
+    `prereg_synthesis_check.py`, `prereg_covariate_strength.py`,
+    `prereg_strength_2526.py`; results snapshots
+    `prereg_stage1_results.txt`, `prereg_stage2_results.txt`. The join and
+    its drift guard: `prereg_join.py` (METHODOLOGY §6.1b addendum for the
+    two join facts). Instrument derivation artifacts:
+    `element_audit_*.json`, `element_levels.json`,
+    `instrument_final_cells.json`.
+
+**The coarsest cut is the strongest single correlate: the register is the
+language of the office.** O\*NET's *Indoors, Environmentally Controlled* —
+planted in the element pool as a deliberately atheoretical marker of office
+work — carries more register per standard deviation than any single
+instrument component (+0.101, t +7.4); *Spend Time Sitting*, the other
+planted marker, is null (t +0.4). This is the occupational finding at its
+coarsest resolution, a restatement rather than a rival: office work carries
+the register wholesale, and the structure this section measures is the shape
+inside the office — the insulated middle over the exposed top, both of them
+office rungs, and free work lowest. In the joint model the office cut adds
+little that the existing covariates do not already carry (+0.039 per sd,
+t +1.9, ΔadjR² +0.0007), and the apex delta stays the strongest occupational
+term in that model (t +2.4, ΔadjR² +0.0011) — birth decade remains the
+overwhelming axis (t +24.5, carrying 0.144 of the model's 0.165).[^rnc]
+
+[^rnc]: `python prereg_negative_controls.py`; n = 4,762, estimator
+    parity-guarded against stage 1 (reproduces MIDDLE +0.028, t 2.0).
+    Entered jointly with Indoors, the apex delta reads +0.033 (t +2.2) and
+    free −0.062 (t −4.4). The pre-registration had planted these two
+    elements as negative controls with an office-job interpretation rule;
+    the adjudication (2026-08-24, logged in the prereg) rejects that rule's
+    implication — office language is the finding restated, not a control on
+    it — and the result is reported here as description. Joint-model numbers:
+    `python prereg_indoors_joint.py` (n = 3,594, the covariate panel; the
+    grand model mirrors `prereg_covariate_strength.py`).
+
+### 4.6b The class coding: the same shape at coarser grain — and the other member-level gradients
+
+The categorical schema that first revealed the gradient is kept here in
+abbreviated form: it shows the same shape as §4.6a's measure at coarser
+grain, and in the joint model below the measure absorbs it. Class predicts
+the register as a joint block, not as a single ladder — and the apparent
+education gradient does not survive its controls. The arc of the analysis
+is a correction applied twice, recorded because both applications were the
+study's own committed checks. On the eight provinces, class, education and
+prominence appeared to predict the register at t = 3–4; clustering by
+member and replication then removed every INDIVIDUAL certainty. The joint
+tests say otherwise:
 
 **Clustering the standard errors by member** (the study's third encounter
 with unclustered inference flattering a result) leaves the provincial point
@@ -1254,7 +1459,7 @@ for being null. Four blocks fit on the full panel (n = 4,056 complete cases
 across 22 chambers): cohort, all seven EGP classes, all education levels,
 and prominence as article-length quintiles — the bins, not a line, because
 Appendix D.3 shows the shape is not linear. The occupational blocks then
-enter on the members with occupational-score coverage (n = 3,631): §4.6b's
+enter on the members with occupational-score coverage (n = 3,631): §4.6a's
 two altitude ladders, each with all four levels per sd, plus Indoors. Each
 block is also fitted alone on the same sample, so attenuation is read
 against its own baseline; t in parentheses; the last column converts
@@ -1370,7 +1575,7 @@ education, and the smaller sample cannot separate them.
     graduate rung split by recorded degree (`edu_split_graduate.py`) —
     and every category present enters as a dummy, education's "none" and
     every EGP class included. Prominence quintiles are cut on each estimation sample's log article
-    lengths (Q1 baseline). The occupational blocks are §4.6b's two altitude
+    lengths (Q1 baseline). The occupational blocks are §4.6a's two altitude
     ladders — directional and coded, all four levels each, standardised per
     sd on the occ panel — plus Indoors. The prereg's apex delta is
     identically lvl MIDDLE − lvl TOP (verified to machine precision), so the
@@ -1395,7 +1600,7 @@ spans ~0.37σ; cohort covers that in about fourteen years of birth date.
 
 **Together they explain about a sixth of the variance, and that is the
 honest headline.** The grand member-level model — cohort, class, education,
-prominence, with §4.6b's occupational ladder and office cut added — reaches
+prominence, with §4.6a's occupational ladder and office cut added — reaches
 adjusted R² ≈ 0.16, and 0.14 of it is cohort alone; no other block
 contributes more than a few thousandths.[^r46var] So this is not a
 discovered instrument for identifying machine text by its company, or for
@@ -1420,56 +1625,6 @@ probe rather than ceilings of the phenomenon.
     lost if dropped — birth decade 0.1444, apex delta 0.0011, Indoors
     0.0007, EGP 0.0006, prominence 0.0005, education 0.0003, dir middle
     −0.0001 (the one block the model fits marginally better without).
-
-#### Class: the provincial estimates (retained as the discovery record; see the panel result above)
-
-Coding each member's pre-political occupation into the
-Erikson–Goldthorpe–Portocarero schema — two independent Claude passes over a
-shared rubric, blind to each other, 96.4% raw agreement, disagreements
-adjudicated[^s-coding] — gives 897 members and 5,294
-
-[^s-coding]: `provinces/OCCUPATION_CODING.md` records the workflow and every
-    rubric ambiguity.
-
-member-years, 57.5% of the words that reach a named non-chair speaker in the
-eight Canadian provinces.
-
-Register rate against EGP class, year and province fixed effects, weighted by
-words, baseline class I:
-
-| class | | vs I | t | members |
-|---|---|---|---|---|
-| III | routine non-manual | **+2.00** | 4.98 | 29 |
-| II | lower service | **+0.84** | 4.23 | 435 |
-| IVab | petty bourgeoisie | **+0.80** | 3.24 | 180 |
-| I | higher service | — | — | 186 |
-| V/VI | skilled manual | +0.21 | 0.34 | 45 |
-| IVc | farmers | −0.24 | −0.58 | 53 |
-| VIIab | semi- and unskilled manual | **−1.66** | −4.22 | 16 |
-
-**The peak sits one to two rungs below the top.** Teachers, nurses,
-journalists, clerks and shopkeepers use the register more than lawyers,
-physicians and professors do, and the manual classes use it least. Lawyers are
-the single largest occupation in the corpus (40 members) and they sit *below*
-teachers.
-
-**The standard three-class collapse destroys this result**, which is worth
-stating because that collapse is the conventional reporting unit. NS-SEC pools
-III with IVc and V/VI with VIIab; the opposite signs cancel and the table reads
-professional 35.5 / intermediate 35.3 / working 34.9 — a null. The
-seven-class schema is not a refinement here, it is the difference between a
-finding and nothing.[^r46d]
-
-#### Education: the provincial ladder (did not replicate; see above)
-
-Education behaves the same way once the ladder is separated from the
-professional track. On the academic rungs alone — secondary, college,
-bachelor, graduate — register rises **+0.366 per rung** (t = 3.30), and
-**+0.315** with birth cohort controlled (t = 2.96). Treating a professional
-degree as a rung above a master's zeroes the linear term entirely, because
-law and medicine sit **−0.785 below bachelor's** (t = −3.49). A professional
-degree outranks a bachelor's on any ordering, so that dip cannot be attainment;
-it is the same class-I effect arriving through a second instrument.
 
 #### The shape has a name — held now as hypothesis, not finding
 
@@ -1679,193 +1834,6 @@ contrast.
     Jhering 1883 with the quote traced to Durkheim's 1887 summary, Lieberson
     2000, Labov 1972); the Labov year/publisher error the file flagged is
     corrected. See `CLASS-REGISTER-LITERATURE.md`.
-
-### 4.6b Pre-registered occupational test: the register peaks at the insulated middle
-
-The class arm left a shape (the II-over-I inverted U) without a mechanism.
-This arm registered one, built the instrument to measure it, and ran — the
-registration carries every revision and amendment dated,[^s-prereg] and every
-number below reproduces from a committed script on a single member table
-(one join; n = 4,762 members with register and
-instrument, 3,594 with every covariate).
-
-[^s-prereg]: `plans/PREREG-occupational-accountability.md` is the
-    registration; METHODOLOGY §6.1c is the method record; the member table
-    is `prereg_member_table.json`.
-
-**The instrument, in one paragraph.** Each legislator's prior occupation,
-double-blind coded to an O\*NET-SOC code, joins 64 O\*NET elements whose
-assignment to four components was itself blind-derived by three independent
-coding workflows over the full 295-element universe: **U** upward (advising
-without the final say; discretion reverse-scored), **L** lateral (external
-service), **D** downward (command), **N** undirected (organisational
-account-giving and contact). From the components and from an independent
-blind coding of hierarchy positions come the study's registered structure —
-**four levels, built two semi-independent ways**: the *directional ladder*
-(free / bottom / middle / top composed from the components) and the *coded
-ladder* (the same four levels scored from element signatures produced by
-coders who were never told the register or the hypothesis existed) — plus
-the **apex delta** (MIDDLE − TOP), registered in words as "insulated command
-tracks more register than exposed command."
-
-**The four-level U is the result, and its registration is a timeline.** The
-middle-peak prediction — free and the top low, the middle the peak — was
-stated in the session log an hour before the first fit; the coded ladder and
-the apex delta entered the committed pre-registration twelve minutes before
-it; the directional ladder's explicit sign declarations were formalised in
-the post-Stage-1 amendment. The exact record, to the minute, is in the
-footnote.[^regts] Each
-level entered alone (standardised; n = 4,762, full-covariate slopes at
-n = 3,594):
-
-[^regts]: The registration record, all times 2026-08-18 US-Pacific, from the
-    session transcript and git. **12:04**, session log, before any fit or
-    instrument freeze: "I would actually expect the highest reading to come
-    with middle managers with workers below them" (Matthew). **12:41**: the
-    four-level structure directed ("three levels of corporate and a free").
-    **13:03**: the charged/uncharged horse race directed. **13:05**, commit
-    `f10d502`: the coded ladder and the apex delta ("insulated command
-    tracks more register than exposed command") committed to the prereg.
-    **13:17**, `ad303ad`: Stage 1 run and unblinded. **13:36**, `53a02ff`:
-    amendment adding the directional ladder and the explicit middle+/free−
-    sign declarations, self-labelled as post-unblinding. **17:21**,
-    `ccba83d`: the ruling recording the U as the design intent. So the
-    prediction precedes the data by 73 minutes in the log, and the formal
-    document carries the apex delta pre-run; what is post-run is
-    formalisation, not prediction. The meta-point is worth naming: under
-    machine execution with pervasive logging, the timestamped record that
-    pre-registration exists to create is produced continuously, and the
-    spirit of the practice — predictions verifiably preceding data — is
-    checkable to the minute without the formal document as the only witness.
-
-| level | directional ladder | coded ladder |
-|---|---|---|
-| free | −0.060 (t −4.2) | −0.066 (t −4.7) |
-| bottom | −0.021 (t −1.5) | +0.010 (t +0.7) |
-| **middle** | **+0.029 (t +2.0)** | **+0.028 (t +2.0)** |
-| top | +0.010 (t +0.7) | +0.021 (t +1.5) |
-
-Middle peak, top below it, free at the floor, bottom indistinguishable from
-zero — the II-over-I crossover in occupational form, from two instruments
-built by different processes, agreeing at the peak to the third decimal.
-Both middles survive the full covariate set (+0.041 and +0.042, t 2.6
-each); under covariates the shape sharpens (bottom mildly negative, top
-close behind middle), and the middle-over-top gap's powered test is the
-delta. The registered *continuous* form of the interior peak — the altitude
-quadratic — found nothing (Appendix A18); the discrete levels and the
-relative contrast carry the claim.
-
-![](altitude_u.png)
-
-*The occupational register profile. Each legislator's prior occupation, coded to O\*NET, is scored on a four-level altitude ladder (free / bottom / middle / top of an organisational hierarchy) two semi-independent ways — the directional instrument and the coded corporate ladder — and both peak at the insulated middle, dipping at the exposed top. Points are each level's base slope entered alone (standardised, n = 4,762); bars ±1 se. The levels are individually noisy but jointly significant; the powered claim is the apex delta (middle − top), +0.049 (t 3.3), rising to +0.067 (t 3.9) under full covariates.*
-
-**The delta is the study's most covariate-robust occupational number.**
-Registered in words and observed +0.049 (t 3.3) raw; **+0.067 (t 3.9)**
-with cohort, class, education and prominence all present; right-signed and
-nominally significant in 16 of 16 covariate specifications; it absorbs the
-directional middle entirely when both enter. Dropped from the grand model
-it costs as much adjusted R² as the entire six-dummy class block (.0033 vs
-.0038); education is spent once class and the delta are present (.0004).
-Its group form — members split by relative inwardness, insulated against
-exposed — puts the insulated cell above the rest (t 2.1 on the gap), with
-one leg farmer-driven and reported as such: the 199 members the instrument
-reads as agricultural managers sit in the exposed cell and drag it, exactly
-the headwind the registration's prediction 5 named in advance.
-
-**Era-resolved, the instrument's carrying level is stable.** The joint
-model's surviving occupational block is the coded ladder, and its standing
-term is the free level; asked era by era — each level's slope entered
-alone, the figure above's own estimand, on the same member-bin values and
-six equal bins as the class panels — free professionals sit below their
-chamber-and-period peers in every half-decade (−0.07 to −0.11 per sd,
-individually significant in all six bins), with no trend into the machine
-era, while bottom, middle and top stay small and flat. Like the class
-shape, the occupational shape was in place decades before the
-machines.[^s-ladderera]
-
-![The coded ladder by era, one panel per level](ladder_by_era_panels.png)
-
-*The coded altitude ladder across eras: each level's slope entered alone
-(per sd, HC1 errors), on the same member-bin values and six equal five-year
-bins as the class panels; ±1 se bands, dotted member-weighted linear
-trends. The free level — professionals off the organisational ladder —
-carries the instrument in every half-decade; the three on-ladder levels
-stay small and flat.*
-
-[^s-ladderera]: `python build_ladder_by_era.py`, then
-    `python plot_ladder_by_era_panels.py`.
-
-**The gradient nests inside class, which is what "the class U was
-occupation all along" requires.** The delta's slope within class II alone is
-+0.076 (t 3.3) — the class peak's own interior carries the occupational
-gradient — and +0.066 (t 4.0) with class fixed effects. Prediction 1 (the
-occupational block adds to EGP) confirmed in 16 of 16 paired
-specifications.
-
-**The horse race and the pattern.** The uncharged (coded) instrument wins
-the registered AIC comparison narrowly (−205.0 vs −198.6); encompassing
-tests are significant in both directions — neither instrument subsumes the
-other. The registered four-sign component pattern (U+ L− D+ N+) holds in
-25% of pattern-eligible lattice specifications, permutation p = 0.087
-across 2,000 within-chamber shuffles — suggestive, unconfirmed. Under the
-covariate lattice, L's raw positivity dissolves (median +0.012,
-direction-unstable): the external-service gradient was carrying class and
-education correlation rather than surviving it, while U and N stay
-right-signed in 100% of specifications and D turns mildly positive
-throughout.
-
-**Era restriction** (2025–26 speech only, n = 1,000): cohort deflates to
-its period-purged size (+0.138/sd, t 4.3 — the career figure of +0.383 was
-mostly period mixing), the class-II contrast doubles to +0.203 (t 3.0), and
-the delta persists directionally at era power (+0.061, t 1.7; the career
-effect predicts t ≈ 2.0 at this n). In the spike window, class II is the
-strongest social-position covariate; the insulation contrast holds its size
-without independent confirmation.
-
-One drafting generation of the registration expressed the peak claim as a
-linear three-profile rank; that operationalization failed its own test and
-the framing is retired — Appendix B10 preserves its numbers, and the
-registration's post-run amendment records the oversight and the provenance
-ruling. Failed registered predictions are in Appendix A (the altitude
-quadratic, the autonomy asymmetry, nominal-vs-effective autonomy). Scale
-for all of it: §5's calibration bullet — small effects by any benchmark,
-reliably estimated, structurally replicated, floors rather than
-ceilings.[^r46f]
-
-[^r46f]: `python prereg_stage1.py`, `prereg_stage2.py`,
-    `prereg_synthesis_check.py`, `prereg_covariate_strength.py`,
-    `prereg_strength_2526.py`; results snapshots
-    `prereg_stage1_results.txt`, `prereg_stage2_results.txt`. The join and
-    its drift guard: `prereg_join.py` (METHODOLOGY §6.1b addendum for the
-    two join facts). Instrument derivation artifacts:
-    `element_audit_*.json`, `element_levels.json`,
-    `instrument_final_cells.json`.
-
-**The coarsest cut is the strongest single correlate: the register is the
-language of the office.** O\*NET's *Indoors, Environmentally Controlled* —
-planted in the element pool as a deliberately atheoretical marker of office
-work — carries more register per standard deviation than any single
-instrument component (+0.101, t +7.4); *Spend Time Sitting*, the other
-planted marker, is null (t +0.4). This is the occupational finding at its
-coarsest resolution, a restatement rather than a rival: office work carries
-the register wholesale, and the structure this section measures is the shape
-inside the office — the insulated middle over the exposed top, both of them
-office rungs, and free work lowest. In the joint model the office cut adds
-little that the existing covariates do not already carry (+0.039 per sd,
-t +1.9, ΔadjR² +0.0007), and the apex delta stays the strongest occupational
-term in that model (t +2.4, ΔadjR² +0.0011) — birth decade remains the
-overwhelming axis (t +24.5, carrying 0.144 of the model's 0.165).[^rnc]
-
-[^rnc]: `python prereg_negative_controls.py`; n = 4,762, estimator
-    parity-guarded against stage 1 (reproduces MIDDLE +0.028, t 2.0).
-    Entered jointly with Indoors, the apex delta reads +0.033 (t +2.2) and
-    free −0.062 (t −4.4). The pre-registration had planted these two
-    elements as negative controls with an office-job interpretation rule;
-    the adjudication (2026-08-24, logged in the prereg) rejects that rule's
-    implication — office language is the finding restated, not a control on
-    it — and the result is reported here as description. Joint-model numbers:
-    `python prereg_indoors_joint.py` (n = 3,594, the covariate panel; the
-    grand model mirrors `prereg_covariate_strength.py`).
 
 ### 4.7 The register is a post-training artifact
 
@@ -2480,7 +2448,7 @@ rounds the same day. The open-weight arms lose to their human twins on every
 form dimension (mistral-instruct justification −0.34, t −3.2;
 qwen3-instruct −0.84, t −7.7), which alone would say the wild form lift is
 made in the human-machine pipeline. But the Claude arms — the study's
-existing audited generation caches (the §4.6a family-signature traces),
+existing audited generation caches (the §4.6b family-signature traces),
 graded blind under the identical flow — invert that at the frontier:
 
 | arm | justification vs human | sentinel applicability |
@@ -3139,7 +3107,7 @@ that is recorded.
    subject matter and the soft-power reading fails. Either outcome is
    informative, which the present measurement is not.
 
-3. **Vendor attribution for the family signature.** §4.6a's vector result —
+3. **Vendor attribution for the family signature.** §4.6b's vector result —
    every Claude model positive against the flagged legislature pool, every
    open model negative, across three Claude generations — is *consistent
    with* Claude drafting but cannot attribute, because the discriminative
@@ -3396,7 +3364,7 @@ study has not already built.
     firm's other filings. An expert whose register tracks their client rather
     than themselves across engagements is evidence of capture that does not
     depend on proving anything about the content of the opinion. This is the
-    same instrument as §4.6a's, pointed at a different institution, and it has
+    same instrument as §4.6b's, pointed at a different institution, and it has
     the advantage that the ground truth — who paid — is on the docket.
 
 28. **The replacement argument, which we should state carefully.** If the
@@ -3612,13 +3580,13 @@ Reported because they bound what the study can claim.
 8. **Skilled-immigration share** — ρ = +0.26 on levels, +0.09 on growth, n = 6.
 9. **Province-level post-secondary share** — ρ = −0.04 on levels, +0.11 on
     growth, n = 7. Note this is the *aggregate* null; the member-level
-    education ladder in §4.6a does predict, which is the difference between
+    education ladder in §4.6b does predict, which is the difference between
     seven data points and three thousand.
 10. **Graduate/professional as a binary** — null in every province (BC −0.25,
     MB −0.26, NL −0.24, ON −0.30, SK +0.23, none significant; PE +2.19 on 87
     member-years is one hit in six). The binary fails because it pools a
     graduate degree (+0.01) with a professional one (−0.79); the ordered
-    ladder in §4.6a is what recovers the effect.
+    ladder in §4.6b is what recovers the effect.
 11. **Cross-province education composition** — ρ = 0.00 against graduate
     share, and ρ = 0.00 against source tier. Not usable in any case: coverage
     runs 5% to 81% across provinces and the two best-covered provinces are the
@@ -3628,7 +3596,7 @@ Reported because they bound what the study can claim.
     is 0.22–0.25% in every class, differences within ±0.02pp. The class effect
     is a uniform scaling of the instrument, not a re-weighting, when
     "conspicuous" is defined as rare *before* the machines. Defining it
-    instead as *risen* and *common* is what produces §4.6a's result.
+    instead as *risen* and *common* is what produces §4.6b's result.
 13. **Class I avoiding marked words, cross-sectionally** — did not survive a
     year control. Pooled, class I held the lowest share of the most-risen
     words (−1.76pp against VIIab); within era it is level with class II
@@ -3642,7 +3610,7 @@ Reported because they bound what the study can claim.
     whose is not. But controlling for depth moves the education coefficients by
     0.00 to 0.11, so the education results are not artifacts of who has a long
     article. Depth's own strong negative effect on the register is **not** a
-    null and is reported in §4.6a.
+    null and is reported in §4.6b.
 
 15. **Class origin (parental EGP) against register** — first measurement,
     704 members with a coded parental class across thirteen chambers:
@@ -3650,8 +3618,8 @@ Reported because they bound what the study can claim.
     professional-origin, t ≈ 0.2. Nothing.
 16. **The education ladder at panel scale** — provincial +0.32/rung fell to
     +0.26 (t = 0.78) under member clustering and to −0.13 (t = −1.4) on the
-    tier-1 chambers. The §4.6a provincial ladder was unclustered inference.
-17. **Class contrasts at panel scale** — every §4.6a class coefficient loses
+    tier-1 chambers. The §4.6b provincial ladder was unclustered inference.
+17. **Class contrasts at panel scale** — every §4.6b class coefficient loses
     conventional significance under clustering except VIIab (−0.79,
     t = −1.99). Point estimates keep their signs in both panels; magnitudes
     halve out of sample.
@@ -3667,7 +3635,7 @@ climbs. What does carry is measured on individuals, not on chambers.
     observed range, concave-with-interior-peak in only 44.1% of 2,000 member
     resamples. The registered interior-peak claim fails in its continuous
     form; the middle-peak result is carried by the discrete level slopes and
-    the apex delta (§4.6b), not by this test.
+    the apex delta (§4.6a), not by this test.
 19. **The autonomy asymmetry test (registered)** — failed, informatively. The
     registration predicted a negative slope on the high-autonomy half and a
     flat low half (autonomy sufficient to suppress, not necessary). Observed:
@@ -3693,7 +3661,7 @@ climbs. What does carry is measured on individuals, not on chambers.
    text no longer relies on any stage ordering, and the RLVR placebo now
    passes its own manipulation check.
 
-0. **§4.6a, twice** — first written as "standing predicts the register
+0. **§4.6b, twice** — first written as "standing predicts the register
    downward" at t = 3–4 (unclustered provincial estimates, the study's third
    unclustered-inference incident); then over-corrected to "did not survive
    its own checks" on per-term t-tests alone. The joint Wald (p = 0.029
@@ -3755,7 +3723,7 @@ climbs. What does carry is measured on individuals, not on chambers.
    comparison, not a flat trend, and "cohort replacement, *not* incumbent
    conversion" was the wrong frame — both mechanisms operate.
 
-10. **Retired framings behind §4.6b, with their numbers.** Three instrument
+10. **Retired framings behind §4.6a, with their numbers.** Three instrument
     generations: the six-element account-giving composite and the 2×3
     six-cell grid were superseded by the blind element audit (documentation
     items proved undirected and moved to N; Letters and Memos, zero votes in
@@ -3776,7 +3744,7 @@ climbs. What does carry is measured on individuals, not on chambers.
     position. Per the registration's post-run amendment, the design intent
     was always the four-level middle-peak U (pre-registered in the hierarchy
     section and the conversation record), the linear rank was the drafting
-    oversight, and §4.6b reports the U as the registered result with this
+    oversight, and §4.6a reports the U as the registered result with this
     entry holding the retired form's numbers.
 11. **Lattice B, first draft** — superseded same-day. Each hierarchy ladder
     was entered as a four-score joint block; the within-block partials were
@@ -3883,15 +3851,15 @@ caught.
 | `in_time_placebo.py` | §3.3, the test that demoted the lexicon arm |
 | `long_trend.py` | §4.5 series and its 1994 trough |
 | `cohort_vs_period.py`, `formation_window.py` | §4.6 (birth vs period) |
-| `covariate_study.py` | §4.6a class and education, member level (`--build-cache` first, ~10 min) |
-| `class_origin.py` | §4.6a EGP/NS-SEC arithmetic over the checked-in coding |
-| `class_markedness.py`, `build_class_word_year.py` | §4.6a chase-and-flight |
-| `build_member_vectors.py`, `vector_analysis.py` | §4.6a word-mix geometry; VECTOR-ANALYSIS.md is the full log |
+| `covariate_study.py` | §4.6b class and education, member level (`--build-cache` first, ~10 min) |
+| `class_origin.py` | §4.6b EGP/NS-SEC arithmetic over the checked-in coding |
+| `class_markedness.py`, `build_class_word_year.py` | §4.6b chase-and-flight |
+| `build_member_vectors.py`, `vector_analysis.py` | §4.6b word-mix geometry; VECTOR-ANALYSIS.md is the full log |
 | `claude_gen/`, `claude_gen_old/`, `rlhf_gen_180/` | generated traces behind the family-signature table (audited) |
 | `provinces/occupation_coding.json` + `OCCUPATION_CODING.md` | the coding itself, with its 96.4% agreement rate |
 | `wiki_depth.py` | article length via Wikidata QID → MediaWiki, the notability control |
 | `build_allsource_merge.py` | rebuilds `member_allsource.json` from the workflow journal |
-| `CLASS-REGISTER-LITERATURE.md` | §4.6a citations, **unverified**, with the suspect entries flagged |
+| `CLASS-REGISTER-LITERATURE.md` | §4.6b citations, **unverified**, with the suspect entries flagged |
 | `band_coverage_check.py` | standing check that every length band is sampled at its chamber's own rate |
 | `olmo_ladder.py` | §4.7 ladder stages |
 | `rlhf_pref_compile.py` | §4.7 **+0.387** well-measured, 3 families at 1,600 prompts |
@@ -3941,6 +3909,57 @@ Anyone holding all three can repeat the study; a Pangram subscription alone
 reproduces the prevalence arm and nothing else.
 
 ## Appendix D — Robustness and sensitivity checks
+
+#### The provincial class estimates (the discovery record)
+
+Coding each member's pre-political occupation into the
+Erikson–Goldthorpe–Portocarero schema — two independent Claude passes over a
+shared rubric, blind to each other, 96.4% raw agreement, disagreements
+adjudicated[^s-coding] — gives 897 members and 5,294
+
+[^s-coding]: `provinces/OCCUPATION_CODING.md` records the workflow and every
+    rubric ambiguity.
+
+member-years, 57.5% of the words that reach a named non-chair speaker in the
+eight Canadian provinces.
+
+Register rate against EGP class, year and province fixed effects, weighted by
+words, baseline class I:
+
+| class | | vs I | t | members |
+|---|---|---|---|---|
+| III | routine non-manual | **+2.00** | 4.98 | 29 |
+| II | lower service | **+0.84** | 4.23 | 435 |
+| IVab | petty bourgeoisie | **+0.80** | 3.24 | 180 |
+| I | higher service | — | — | 186 |
+| V/VI | skilled manual | +0.21 | 0.34 | 45 |
+| IVc | farmers | −0.24 | −0.58 | 53 |
+| VIIab | semi- and unskilled manual | **−1.66** | −4.22 | 16 |
+
+**The peak sits one to two rungs below the top.** Teachers, nurses,
+journalists, clerks and shopkeepers use the register more than lawyers,
+physicians and professors do, and the manual classes use it least. Lawyers are
+the single largest occupation in the corpus (40 members) and they sit *below*
+teachers.
+
+**The standard three-class collapse destroys this result**, which is worth
+stating because that collapse is the conventional reporting unit. NS-SEC pools
+III with IVc and V/VI with VIIab; the opposite signs cancel and the table reads
+professional 35.5 / intermediate 35.3 / working 34.9 — a null. The
+seven-class schema is not a refinement here, it is the difference between a
+finding and nothing.[^r46d]
+
+#### Education: the provincial ladder (did not replicate; see above)
+
+Education behaves the same way once the ladder is separated from the
+professional track. On the academic rungs alone — secondary, college,
+bachelor, graduate — register rises **+0.366 per rung** (t = 3.30), and
+**+0.315** with birth cohort controlled (t = 2.96). Treating a professional
+degree as a rung above a master's zeroes the linear term entirely, because
+law and medicine sit **−0.785 below bachelor's** (t = −3.49). A professional
+degree outranks a bachelor's on any ordering, so that dip cannot be attainment;
+it is the same class-I effect arriving through a second instrument.
+
 
 ### D.1 The judge-leakage control (documented, run, not adopted)
 
@@ -3994,7 +4013,7 @@ style-normalised text — remain future work.
 
 ### D.2 Prominence (Wikipedia article length) on the full panel
 
-The §4.6a prominence effect was first estimated from the Canadian provinces at
+The §4.6b prominence effect was first estimated from the Canadian provinces at
 member-year level (−0.75 per 1,000, t −6.2), which carried the same
 word-weighting and clustering inflation as the class arm. Re-tested at member
 level (one legislator, one observation; register z-scored within chamber
@@ -4045,7 +4064,7 @@ bending it into a hump, so it is not the whole story.
 
 **Pooled, the two shapes cancel.** The all-22 column has no ordering worth
 reading, and standard errors on each bucket are ±0.026–0.027, so the flatness is
-measured rather than merely noisy. This is why §4.6a reports prominence as
+measured rather than merely noisy. This is why §4.6b reports prominence as
 buckets and why no pooled coefficient is quoted anywhere. †[^rpb]
 
 [^rpb]: `python plot_class_by_era.py`-adjacent computation; per-bucket means,
