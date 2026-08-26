@@ -1730,39 +1730,56 @@ because the flight result below is measured on pooled text rather than
 member-level inference, but nothing in this subsection should be cited as
 established.
 
-#### Flight: class I avoids the words that became common
+#### Flight: the groups at the top avoid the words that became common
 
-What distinguishes class I is *which* words it avoids. Across style words with
-enough volume in 2023–26, the correlation between a word's post/pre lift and
-class I's relative use of it against class II is negative at every volume
-threshold and strengthens monotonically with volume: ρ = −0.13 at 100+
-occurrences, −0.22 at 300+, **−0.42 at 800+ (p = 0.004)**, −0.46 at 1,500+.
-Class I under-uses `primary` (2.35× lift), `advocating` (1.85×), `advocates`
-(1.57×), `outcomes` (1.54×); it over-uses `remarkable`, `individuals`,
-`broader`, `ultimately` — words that barely moved. And the signature is not
-class I's alone: run identically for the top of each ladder against its
-peak, it reproduces wherever the top is a status-top — professional degrees
-against the bachelor peak (−0.06/−0.16/−0.27/−0.33 across the same volume
-thresholds), executive rungs against the middle (−0.23/−0.25/−0.37/−0.13),
-office-holders against backbenchers (−0.11/−0.12/−0.20/−0.20) — and fails
-at exactly the one top that is not one: graduate degrees run flat to
-positive (+0.08 to +0.11). These are not independent replications — the
-same corpus, the same words, and the tops overlap heavily — but as a
-robustness family they say the avoidance belongs to status-tops generally,
-not to one coding of class.[^rladders]
+These are **group-level** signatures — which strata's pooled speech moved
+away from which words — not individual adoption histories; over a cycle
+this long, careers are shorter than the trend, so composition is the
+phenomenon (the within-member evidence of §4.6 shows sitting members do
+move, at about half the pace of replacement). What distinguishes the top
+strata is *which* words they avoid. **The lift is decoupled by
+construction**: a word's rise is computed from the classes outside both
+comparison strata, so a word cannot be high-lift *because* the compared
+groups moved it.[^rdecouple] Under that spec, the correlation between a
+word's rise and class I's relative use of it against class II is negative
+at every volume threshold: ρ = −0.13 at 100+ occurrences, −0.13 at 300+,
+**−0.23 at 800+**, −0.23 at 1,500+. Class I under-uses `primary` (2.35×
+lift), `advocating` (1.85×), `advocates` (1.57×), `outcomes` (1.54×); it
+over-uses `remarkable`, `individuals`, `broader`, `ultimately` — words that
+barely moved. And the signature is not class I's alone: run identically for
+the top of each ladder against its peak, it reproduces wherever the top is
+a status-top — professional degrees against the bachelor peak
+(−0.11/−0.22/−0.39/−0.46 across the same volume thresholds), executive
+rungs against the middle (−0.24/−0.29/−0.36/−0.15), office-holders against
+backbenchers (−0.14/−0.14/−0.20/−0.20) — and fails at exactly the one top
+that is not one: graduate degrees run flat to positive (+0.02 to +0.11).
+These are not independent replications — the same corpus, the same words,
+and the tops overlap heavily — but as a robustness family they say the
+avoidance belongs to status-tops generally, not to one coding of
+class.[^rladders]
 
 **The folk ladder adds the cycle's other half.** Run for its own levels —
 members grouped by their highest-scoring level — the top flees
-(−0.05/−0.10/−0.19/−0.19 across the same thresholds), the **bottom
+(−0.12/−0.14/−0.26/−0.23 across the same thresholds), the **bottom
 chases**, differentially adopting exactly the words that became common
-(+0.15/+0.28/+0.41/+0.29 — the battery's only positive series,
-strengthening with volume), and **free work sits out of the game
-entirely**, flat against the middle at every threshold
-(−0.04/−0.00/+0.00/−0.01): neither chasing nor fleeing, which is what
-sitting outside the hierarchy predicts — its low register level (§4.6a) is
-uniform abstention, not word-selective avoidance. Chase below the peak,
-flight above it, indifference off the ladder: the full fashion-cycle
-geometry, read from one instrument's levels.
+(+0.11/+0.25/+0.43/+0.28 — the battery's only positive series,
+strengthening with volume), and **free work barely plays**: −0.07 to −0.10
+against the middle, far shy of any status-top's avoidance — mostly out of
+the game, which is what sitting outside the hierarchy predicts, its low
+register level (§4.6a) being closer to uniform abstention than to
+word-selective avoidance. Chase below the peak, flight above it, near-
+indifference off the ladder: the full fashion-cycle geometry, read from
+one instrument's levels, at group level.
+
+[^rdecouple]: The original specification computed lift from the all-class
+    pooled corpus, which contains the compared strata: a word risen through
+    class II is then mechanically both high-lift and low-I/II, so part of a
+    negative ρ is built in. Decoupling — lift from III/IVab/IVc/V/VI/VIIab
+    only — roughly halves the class series at depth (−0.13/−0.22/−0.42/
+    −0.46 becomes the values above) and *strengthens* the professional and
+    folk-top series, whose comparison groups had sat inside the old lift
+    pool. The coupled values are reproduced by `flight_correlation.py`,
+    kept as the record of the earlier spec.
 
 [^rladders]: `python build_ladder_word_year.py` (one provincial scan;
     education and rung membership from `prereg_member_table.json`, office

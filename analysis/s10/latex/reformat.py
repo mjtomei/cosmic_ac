@@ -47,7 +47,7 @@ LABELS = {   # unnumbered subsubsections: exact slug
  "the-classifications-element-signatures":"sub:element-signatures",
  "education-the-provincial-ladder-did-not-replicate-see-above":"sub:education-provincial",
  "the-shape-has-a-name--held-now-as-hypothesis-not-finding":"sub:shape-name",
- "flight-class-i-avoids-the-words-that-became-common":"sub:flight",
+ "flight-the-groups-at-the-top-avoid-the-words-that-became-common":"sub:flight",
  "prominence-a-gradient-in-the-provinces-an-arc-in-the-national-chambers":"sub:prominence-class",
  "word-mix-the-effects-live-in-rate-not-vocabulary--and-machine-text-sits-outside-the-geometry":"sub:wordmix",
  "what-the-class-analysis-cannot-rule-out":"sub:class-limits",
