@@ -1772,6 +1772,29 @@ one leg farmer-driven and reported as such: the 199 members the instrument
 reads as agricultural managers sit in the exposed cell and drag it, exactly
 the headwind the registration's prediction 5 named in advance.
 
+**Era-resolved, the instrument's carrying level is stable.** The joint
+model's surviving occupational block is the coded ladder, and its standing
+term is the free level; asked era by era — each level's slope entered
+alone, the figure above's own estimand, on the same member-bin values and
+six equal bins as the class panels — free professionals sit below their
+chamber-and-period peers in every half-decade (−0.07 to −0.11 per sd,
+individually significant in all six bins), with no trend into the machine
+era, while bottom, middle and top stay small and flat. Like the class
+shape, the occupational shape was in place decades before the
+machines.[^s-ladderera]
+
+![The coded ladder by era, one panel per level](ladder_by_era_panels.png)
+
+*The coded altitude ladder across eras: each level's slope entered alone
+(per sd, HC1 errors), on the same member-bin values and six equal five-year
+bins as the class panels; ±1 se bands, dotted member-weighted linear
+trends. The free level — professionals off the organisational ladder —
+carries the instrument in every half-decade; the three on-ladder levels
+stay small and flat.*
+
+[^s-ladderera]: `python build_ladder_by_era.py`, then
+    `python plot_ladder_by_era_panels.py`.
+
 **The gradient nests inside class, which is what "the class U was
 occupation all along" requires.** The delta's slope within class II alone is
 +0.076 (t 3.3) — the class peak's own interior carries the occupational
