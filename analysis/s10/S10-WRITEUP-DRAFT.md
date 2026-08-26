@@ -1782,7 +1782,8 @@ strengthening with volume), and **free work barely plays**: −0.07 to −0.10
 against the middle, far shy of any status-top's avoidance — mostly out of
 the game, which is what sitting outside the hierarchy predicts, its low
 register level (§4.6a) being closer to uniform abstention than to
-word-selective avoidance. Chase below the peak, flight above it, near-
+word-selective avoidance (a directional reading: at these word counts,
+equivalence within |ρ| < 0.15 is not formally establishable). Chase below the peak, flight above it, near-
 indifference off the ladder: the full fashion-cycle geometry, read from
 one instrument's levels, at group level.
 
@@ -2257,7 +2258,17 @@ above it. Same fits, same t's.*
 **The revised claim: AI-assisted legislative speech is better-formed — more
 justified, more common-good framed, more positive toward the groups a policy
 would help — and shows no engagement penalty once genre or chamber is held
-fixed.**
+fixed.** The engagement half is now an equivalence, not just a null: by
+TOST against ±0.22 — the study's own smallest substantive effect — the four
+dimensions read as null (respect toward demands and counterarguments,
+constructiveness, evidence) are formally equivalent to zero at that bound
+(p = 0.008, 0.029, <0.0001, 0.005), while the three claimed positives, as
+they should, fail equivalence.[^rtost]
+
+[^rtost]: `python tost_equivalence.py` — SESOI fixed at ±0.22 raw points,
+    the low end of the stage-2 headline range, chosen once and applied to
+    every equivalence statement in the paper; two one-sided tests on the
+    committed estimators.
 
 **"Deliberation down" was genre.** Uncontrolled, stage 1 gives respect_demands
 −0.662 (t −2.4)✱ and respect_counterargs −0.695 (t −2.4)✱ — the original
@@ -2550,7 +2561,11 @@ What the pairs can exclude is bounded and stated:
 detectable effects run roughly ±0.12–0.26 per dimension for stage 3 —
 commensurate with the study's own headline effects (+0.22 to +0.29, stage 2)
 — so these nulls say the evasion edit produces nothing dramatic, not that it
-produces nothing at the scale the study elsewhere reports. None of the 28
+produces nothing at the scale the study elsewhere reports. Made formal, the
+bound holds where the n does: stage 3 shows TOST equivalence within ±0.22
+on five of seven dimensions (the two applicability-gated respect dimensions
+run too thin at n = 12), stage 4 on three of seven — the rest are bounded
+only at headline scale, exactly as the MDE statement says.[^rtost] None of the 28
 paired cells reaches nominal significance, which is how a true null behaves
 under many looks. And the paper's quality conclusion does not rest on these
 arms: it is carried jointly by stages 1 and 2 (wild text, two label

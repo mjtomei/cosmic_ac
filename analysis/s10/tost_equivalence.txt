@@ -1,0 +1,34 @@
+SESOI = ±0.22 raw points (the smallest stage-2 headline effect)
+
+=== A. stage-2 null dimensions (committed estimator) ===
+  justification         +0.290 (se 0.065)  TOST p 0.8587  -> not shown equivalent
+  common_good           +0.229 (se 0.051)  TOST p 0.5678  -> not shown equivalent
+  respect_groups        +0.220 (se 0.036)  TOST p 0.4994  -> not shown equivalent
+  respect_demands       -0.029 (se 0.080)  TOST p 0.0083  -> EQUIVALENT
+  respect_counterargs   +0.073 (se 0.077)  TOST p 0.0287  -> EQUIVALENT
+  constructive          -0.041 (se 0.043)  TOST p 0.0000  -> EQUIVALENT
+  evidence              +0.065 (se 0.060)  TOST p 0.0048  -> EQUIVALENT
+
+=== B. evasion pairs, per dimension (paired within-text) ===
+  stage 3: 38 pairs, conditions ['humanized', 'original']
+    justification         -0.053 (se 0.084, n 38)  TOST p 0.0230  -> EQUIVALENT
+    common_good           +0.053 (se 0.065, n 38)  TOST p 0.0049  -> EQUIVALENT
+    respect_groups        +0.079 (se 0.044, n 38)  TOST p 0.0007  -> EQUIVALENT
+    respect_demands       +0.083 (se 0.149, n 12)  TOST p 0.1789  -> not shown equivalent
+    respect_counterargs   -0.333 (se 0.188, n 12)  TOST p 0.7267  -> not shown equivalent
+    constructive          +0.000 (se 0.038, n 38)  TOST p 0.0000  -> EQUIVALENT
+    evidence              -0.026 (se 0.059, n 38)  TOST p 0.0006  -> EQUIVALENT
+  stage 4: 25 pairs, conditions ['humanized', 'original']
+    justification         -0.160 (se 0.095, n 25)  TOST p 0.2628  -> not shown equivalent
+    common_good           +0.000 (se 0.100, n 25)  TOST p 0.0139  -> EQUIVALENT
+    respect_groups        -0.040 (se 0.040, n 25)  TOST p 0.0000  -> EQUIVALENT
+    respect_demands       +0.000 (se 0.081, n 18)  TOST p 0.0033  -> EQUIVALENT
+    respect_counterargs   -0.125 (se 0.125, n 16)  TOST p 0.2236  -> not shown equivalent
+    constructive          +0.120 (se 0.066, n 25)  TOST p 0.0658  -> not shown equivalent
+    evidence              -0.080 (se 0.114, n 25)  TOST p 0.1103  -> not shown equivalent
+
+=== C. free-vs-middle abstention (Fisher-z TOST, |rho| < 0.15) ===
+    100+  rho -0.07 (n 259)  TOST p 0.0974  -> not shown equivalent
+    300+  rho -0.07 (n 178)  TOST p 0.1419  -> not shown equivalent
+    800+  rho -0.10 (n 113)  TOST p 0.2971  -> not shown equivalent
+   1500+  rho -0.06 (n 77)  TOST p 0.2167  -> not shown equivalent
