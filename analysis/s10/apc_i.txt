@@ -2,35 +2,35 @@
 APC-I: IDENTIFIED NONLINEAR COHORT DEVIATIONS  (S10 §4.6)
 rates: register occurrences per 1,000 words (cohort_vs_period.py's ruler)
 ==============================================================================
-  panel: 61,227 member-years with a birth year, >= 2,000 words, age 20-89
-  dropped for age outside 20-89: 85 (of which 49 are impossible ages from surname-key birth-year collisions)
+  panel: 60,104 member-years with a birth year, >= 2,000 words, age 20-89
+  dropped for age outside 20-89: 82 (of which 49 are impossible ages from surname-key birth-year collisions)
 
 ------------------------------------------------------------------------------
 SYNTHETIC CHECK 1 -- known nonlinear cohort term
 ------------------------------------------------------------------------------
   DGP: age -0.90, period +2.10, cohort-linear +0.30 per decade, member RE sd 1.5,
        noise sd 6.0*sqrt(2000/words), nonlinear cohort term = step(+1.5 at birth>=1985) + 0.5*cos((b-1950)/12)
-  global Wald 78.8 on 14 df, chi2 p = 4.8e-11   -> REJECTS linearity (correct)
-  recovery vs the detrended truth: word-weighted rmse 0.096, corr 0.9461, max |err| 0.685 (max |err|/se 2.34)
-  95% CI coverage of the truth across 16 cohort groups: 94%
-  the quoted invariant contrast (post-1985 elevation): truth +0.535, estimate +0.374 (se 0.117, err/se -1.37)
+  global Wald 93.3 on 14 df, chi2 p = 8.91e-14   -> REJECTS linearity (correct)
+  recovery vs the detrended truth: word-weighted rmse 0.081, corr 0.9799, max |err| 0.246 (max |err|/se 1.83)
+  95% CI coverage of the truth across 16 cohort groups: 100%
+  the quoted invariant contrast (post-1985 elevation): truth +0.549, estimate +0.437 (se 0.111, err/se -1.01)
         cohort    truth      est      se  err/se
-          1920   -0.955   -0.269   0.370   +1.85
-          1925   -0.795   -0.741   0.264   +0.21
-          1930   -0.501   -0.403   0.142   +0.69
-          1935   -0.293   -0.255   0.132   +0.29
-          1940   -0.055   -0.097   0.100   -0.42
-          1945   +0.095   +0.095   0.078   -0.00
-          1950   +0.180   +0.168   0.085   -0.14
-          1955   +0.185   +0.100   0.066   -1.29
-          1960   +0.111   +0.068   0.067   -0.65
-          1965   -0.010   -0.027   0.070   -0.25
-          1970   -0.168   +0.002   0.072   +2.34
-          1975   -0.306   -0.179   0.070   +1.83
-          1980   -0.414   -0.492   0.089   -0.88
-          1985   +0.258   +0.098   0.132   -1.22
-          1990   +1.070   +0.886   0.193   -0.95
-          1995   +1.176   +1.098   0.307   -0.25
+          1920   -0.947   -1.038   0.449   -0.20
+          1925   -0.790   -0.887   0.240   -0.41
+          1930   -0.496   -0.250   0.217   +1.13
+          1935   -0.289   -0.453   0.160   -1.02
+          1940   -0.051   +0.093   0.114   +1.26
+          1945   +0.097   +0.068   0.094   -0.31
+          1950   +0.181   +0.143   0.073   -0.52
+          1955   +0.185   +0.103   0.065   -1.25
+          1960   +0.109   +0.126   0.061   +0.29
+          1965   -0.012   -0.001   0.066   +0.17
+          1970   -0.172   -0.049   0.067   +1.83
+          1975   -0.312   -0.289   0.069   +0.32
+          1980   -0.421   -0.463   0.085   -0.50
+          1985   +0.289   +0.187   0.135   -0.75
+          1990   +1.061   +0.932   0.182   -0.71
+          1995   +1.166   +1.017   0.299   -0.50
   SYNTHETIC CHECK PASSED
 
 ------------------------------------------------------------------------------
@@ -38,10 +38,10 @@ SYNTHETIC CHECK 2 -- NULL (size check)
 ------------------------------------------------------------------------------
   DGP: age -0.90, period +2.10, cohort-linear +0.30 per decade, member RE sd 1.5,
        noise sd 6.0*sqrt(2000/words), nonlinear cohort term = NONE (pure linear cohort -- size check)
-  global Wald 13.9 on 14 df, chi2 p = 0.456   -> should NOT reject
-  max |deviation| 0.691 (max |dev|/se 2.25; truth is 0 everywhere)
-  95% CI coverage of the truth across 16 cohort groups: 94%
-  the quoted invariant contrast (post-1985 elevation): truth +0.000, estimate -0.140 (se 0.112, err/se -1.26)
+  global Wald 12.5 on 14 df, chi2 p = 0.569   -> should NOT reject
+  max |deviation| 0.252 (max |dev|/se 1.74; truth is 0 everywhere)
+  95% CI coverage of the truth across 16 cohort groups: 100%
+  the quoted invariant contrast (post-1985 elevation): truth +0.000, estimate -0.088 (se 0.102, err/se -0.87)
   SYNTHETIC CHECK PASSED
 
 SYNTHETIC VERIFICATION: recovery PASS, size PASS
@@ -49,93 +49,93 @@ SYNTHETIC VERIFICATION: recovery PASS, size PASS
 ==============================================================================
 REAL / PRIMARY: PRIMARY (2y age, 2y period, 5y birth bins)
 ==============================================================================
-  rows 61,146   members 7,010   chambers 22   age groups 35   period groups 22   cohort groups 16
+  rows 60,023   members 6,897   chambers 22   age groups 35   period groups 22   cohort groups 16
   cohort groups dropped as too thin (< 50 rows or < 10 members): 1905[5r/1m], 1910[23r/3m], 1915[46r/7m], 2000[7r/3m]
-  design conditioning: constrained min-eig 8.464e-05 (cond 4.70e+04);  UNCONSTRAINED min-eig 7.593e-05 (cond 6.54e+04)
+  design conditioning: constrained min-eig 7.294e-05 (cond 5.45e+04);  UNCONSTRAINED min-eig 6.652e-05 (cond 7.47e+04)
     -> unconstrained min-eig at machine zero means the linear dependency is exact and
        only the constraint identifies the model; a merely small value means the bin
        edges are supplying part of the identification.
-  constraint-invariance check: rel. RSS gap 1.10e-05; max |second-difference gap| between the cohort-constrained and age-constrained fits 5.17e-02
+  constraint-invariance check: rel. RSS gap 1.00e-04; max |second-difference gap| between the cohort-constrained and age-constrained fits 4.68e-02
     -> dependency NOT exact here, so the two constraints are genuinely different models
        and the gaps need not vanish. This is the diagnostic, not a failure; it is why the
        ALIGNED grouping below is the one to quote.
 
   GLOBAL TEST -- H0: cohort effects are exactly linear in birth (no nonlinear deviations)
-    Wald (CR1, clustered on 7,010 members) = 55.0 on 14 df   chi2 p = 8.7e-07
-    F = Wald/df = 3.93 on (14, 7009) df   p = 9.3e-07   REJECT at 5%
+    Wald (CR1, clustered on 6,897 members) = 50.0 on 14 df   chi2 p = 6.22e-06
+    F = Wald/df = 3.57 on (14, 6896) df   p = 6.56e-06   REJECT at 5%
 
   COHORT DEVIATIONS from the fitted linear cohort trend (per 1,000 words)
   [constraint-dependent representative: the profile is pinned by sum W g = 0 and
    sum W c g = 0. Differences and curvature are invariant; single levels are not.]
           cohort         words      dev   CR1 se       t   HC1 se   95% CI (CR1)
-            1920     8,022,004   +2.567    0.689   +3.73    0.333   [+1.217, +3.917] *
-            1925     7,809,447   +1.417    0.387   +3.66    0.192   [+0.658, +2.175] *
-            1930    34,931,991   +1.242    0.319   +3.89    0.150   [+0.616, +1.868] *
-            1935    38,502,629   +0.422    0.253   +1.67    0.116   [-0.073, +0.917]
-            1940    94,724,848   -0.035    0.189   -0.18    0.081   [-0.406, +0.336]
-            1945   125,804,276   +0.100    0.153   +0.65    0.067   [-0.200, +0.399]
-            1950   187,465,182   -0.288    0.141   -2.04    0.062   [-0.565, -0.011] *
-            1955   179,832,541   -0.422    0.147   -2.87    0.067   [-0.710, -0.134] *
-            1960   187,931,829   -0.319    0.159   -2.01    0.068   [-0.631, -0.007] *
-            1965   155,348,832   -0.172    0.158   -1.08    0.068   [-0.482, +0.139]
-            1970   147,212,043   +0.069    0.144   +0.48    0.063   [-0.212, +0.351]
-            1975    91,343,484   +0.531    0.206   +2.58    0.091   [+0.127, +0.934] *
-            1980    58,729,496   +0.361    0.236   +1.53    0.107   [-0.102, +0.824]
-            1985    29,668,963   +0.675    0.312   +2.16    0.162   [+0.064, +1.286] *  <<< post-1985
-            1990     8,596,098   +1.322    0.550   +2.40    0.307   [+0.244, +2.400] *  <<< post-1985
-            1995     2,369,633   +1.947    0.940   +2.07    0.621   [+0.105, +3.790] *  <<< post-1985
+            1920     8,022,004   +2.540    0.700   +3.63    0.336   [+1.168, +3.911] *
+            1925     7,540,158   +1.377    0.404   +3.41    0.200   [+0.585, +2.169] *
+            1930    33,578,996   +1.230    0.335   +3.68    0.157   [+0.574, +1.885] *
+            1935    36,386,720   +0.435    0.268   +1.63    0.124   [-0.089, +0.960]
+            1940    93,416,168   -0.052    0.192   -0.27    0.083   [-0.429, +0.325]
+            1945   120,923,525   +0.096    0.158   +0.61    0.069   [-0.214, +0.407]
+            1950   185,729,616   -0.304    0.143   -2.13    0.062   [-0.584, -0.025] *
+            1955   176,476,462   -0.433    0.150   -2.89    0.068   [-0.727, -0.139] *
+            1960   183,959,194   -0.283    0.161   -1.76    0.069   [-0.598, +0.032]
+            1965   154,351,688   -0.127    0.160   -0.79    0.068   [-0.440, +0.186]
+            1970   147,046,077   +0.086    0.146   +0.59    0.064   [-0.199, +0.372]
+            1975    91,177,761   +0.556    0.209   +2.66    0.092   [+0.146, +0.966] *
+            1980    58,670,975   +0.376    0.239   +1.57    0.108   [-0.093, +0.845]
+            1985    32,385,011   +0.263    0.424   +0.62    0.191   [-0.567, +1.093]  <<< post-1985
+            1990     8,596,098   +1.330    0.554   +2.40    0.313   [+0.245, +2.416] *  <<< post-1985
+            1995     2,369,633   +1.876    0.946   +1.98    0.626   [+0.021, +3.731] *  <<< post-1985
 
   INVARIANT CONTRASTS (projected off span{1, cohort}; free of the constraint choice)
-    birth >= 1985: elevation above the all-cohort linear trend = +0.886 per 1,000 (se 0.280, z +3.16, two-sided p 0.00158)
-    birth >= 1975: elevation above the all-cohort linear trend = +0.554 per 1,000 (se 0.114, z +4.84, two-sided p 1.27e-06)
-    local cohort slope, born >= 1975 MINUS born < 1975 = +0.532 per 1,000 per decade (se 0.320, z +1.66, two-sided p 0.0967)
+    birth >= 1985: elevation above the all-cohort linear trend = +0.563 per 1,000 (se 0.350, z +1.61, two-sided p 0.108)
+    birth >= 1975: elevation above the all-cohort linear trend = +0.503 per 1,000 (se 0.117, z +4.31, two-sided p 1.64e-05)
+    local cohort slope, born >= 1975 MINUS born < 1975 = +0.305 per 1,000 per decade (se 0.360, z +0.85, two-sided p 0.397)
       -> this is the 'steepening' claim in its identification-free form.
-    joint test, post-1985 cohorts all on the linear trend: Wald 12.30 on 3 df, p 0.00641
+    joint test, post-1985 cohorts all on the linear trend: Wald 9.03 on 3 df, p 0.0289
 
 ==============================================================================
 REAL / ALIGNED: ALIGNED (5y age, 5y period, cohort = period - age exactly)
 ==============================================================================
-  rows 61,131   members 7,010   chambers 22   age groups 14   period groups 9   cohort groups 16
+  rows 60,008   members 6,897   chambers 22   age groups 14   period groups 9   cohort groups 16
   cohort groups dropped as too thin (< 50 rows or < 10 members): 1905[1r/1m], 1910[9r/4m], 1915[42r/10m], 2000[41r/20m], 2005[3r/2m]
-  design conditioning: constrained min-eig 3.118e-04 (cond 1.27e+04);  UNCONSTRAINED min-eig 6.457e-16 (cond 7.68e+15)
+  design conditioning: constrained min-eig 2.949e-04 (cond 1.34e+04);  UNCONSTRAINED min-eig 2.045e-16 (cond 2.42e+16)
     -> unconstrained min-eig at machine zero means the linear dependency is exact and
        only the constraint identifies the model; a merely small value means the bin
        edges are supplying part of the identification.
-  constraint-invariance check: rel. RSS gap 0.00e+00; max |second-difference gap| between the cohort-constrained and age-constrained fits 1.44e-11
+  constraint-invariance check: rel. RSS gap 0.00e+00; max |second-difference gap| between the cohort-constrained and age-constrained fits 1.43e-11
     -> exact dependency, so the two constraints span the same column space: both gaps
        must be numerical zero, and are. The curvature reported below is constraint-free.
 
   GLOBAL TEST -- H0: cohort effects are exactly linear in birth (no nonlinear deviations)
-    Wald (CR1, clustered on 7,010 members) = 65.0 on 14 df   chi2 p = 1.51e-08
-    F = Wald/df = 4.64 on (14, 7009) df   p = 1.67e-08   REJECT at 5%
+    Wald (CR1, clustered on 6,897 members) = 59.4 on 14 df   chi2 p = 1.51e-07
+    F = Wald/df = 4.24 on (14, 6896) df   p = 1.64e-07   REJECT at 5%
 
   COHORT DEVIATIONS from the fitted linear cohort trend (per 1,000 words)
   [constraint-dependent representative: the profile is pinned by sum W g = 0 and
    sum W c g = 0. Differences and curvature are invariant; single levels are not.]
           cohort         words      dev   CR1 se       t   HC1 se   95% CI (CR1)
-            1920     4,437,690   +2.390    0.674   +3.55    0.428   [+1.069, +3.711] *
-            1925     8,613,240   +1.893    0.455   +4.16    0.267   [+1.000, +2.786] *
-            1930    21,162,944   +1.292    0.335   +3.85    0.180   [+0.635, +1.948] *
-            1935    36,503,530   +1.025    0.250   +4.10    0.145   [+0.535, +1.514] *
-            1940    71,770,206   +0.088    0.149   +0.59    0.090   [-0.203, +0.380]
-            1945   111,316,390   +0.141    0.143   +0.99    0.075   [-0.139, +0.420]
-            1950   168,999,589   -0.107    0.125   -0.85    0.066   [-0.353, +0.139]
-            1955   187,250,074   -0.483    0.116   -4.17    0.063   [-0.710, -0.256] *
-            1960   180,041,945   -0.444    0.125   -3.55    0.070   [-0.690, -0.199] *
-            1965   166,928,081   -0.262    0.122   -2.14    0.068   [-0.501, -0.022] *
-            1970   157,695,905   -0.008    0.118   -0.07    0.065   [-0.239, +0.223]
-            1975   106,720,614   +0.191    0.135   +1.42    0.079   [-0.073, +0.455]
-            1980    75,695,547   +0.638    0.174   +3.67    0.096   [+0.297, +0.979] *
-            1985    40,843,371   +0.698    0.245   +2.85    0.141   [+0.218, +1.178] *  <<< post-1985
-            1990    16,056,173   +0.845    0.344   +2.45    0.217   [+0.170, +1.520] *  <<< post-1985
-            1995     4,247,728   +2.130    0.717   +2.97    0.534   [+0.726, +3.535] *  <<< post-1985
+            1920     4,437,690   +2.387    0.683   +3.50    0.431   [+1.049, +3.725] *
+            1925     8,490,399   +1.880    0.470   +4.00    0.272   [+0.959, +2.802] *
+            1930    20,512,732   +1.253    0.349   +3.59    0.187   [+0.568, +1.937] *
+            1935    34,718,170   +1.033    0.264   +3.92    0.154   [+0.516, +1.549] *
+            1940    69,786,569   +0.100    0.155   +0.65    0.092   [-0.203, +0.403]
+            1945   107,965,605   +0.130    0.147   +0.89    0.077   [-0.158, +0.417]
+            1950   166,124,084   -0.117    0.128   -0.91    0.067   [-0.368, +0.134]
+            1955   184,213,991   -0.500    0.118   -4.24    0.064   [-0.732, -0.269] *
+            1960   175,318,902   -0.416    0.126   -3.31    0.071   [-0.662, -0.170] *
+            1965   165,620,956   -0.244    0.124   -1.97    0.069   [-0.487, -0.001] *
+            1970   157,443,509   +0.011    0.119   +0.09    0.065   [-0.223, +0.245]
+            1975   106,544,495   +0.208    0.138   +1.51    0.080   [-0.062, +0.479]
+            1980    75,637,916   +0.664    0.179   +3.72    0.097   [+0.314, +1.014] *
+            1985    42,858,431   +0.475    0.289   +1.65    0.159   [-0.091, +1.041]  <<< post-1985
+            1990    16,698,640   +0.722    0.348   +2.08    0.251   [+0.041, +1.403] *  <<< post-1985
+            1995     4,247,728   +2.159    0.720   +3.00    0.537   [+0.748, +3.570] *  <<< post-1985
 
   INVARIANT CONTRASTS (projected off span{1, cohort}; free of the constraint choice)
-    birth >= 1985: elevation above the all-cohort linear trend = +0.836 per 1,000 (se 0.216, z +3.86, two-sided p 0.000112)
-    birth >= 1975: elevation above the all-cohort linear trend = +0.492 per 1,000 (se 0.089, z +5.53, two-sided p 3.17e-08)
-    local cohort slope, born >= 1975 MINUS born < 1975 = +0.840 per 1,000 per decade (se 0.236, z +3.56, two-sided p 0.000376)
+    birth >= 1985: elevation above the all-cohort linear trend = +0.652 per 1,000 (se 0.250, z +2.61, two-sided p 0.00906)
+    birth >= 1975: elevation above the all-cohort linear trend = +0.464 per 1,000 (se 0.090, z +5.14, two-sided p 2.7e-07)
+    local cohort slope, born >= 1975 MINUS born < 1975 = +0.700 per 1,000 per decade (se 0.261, z +2.68, two-sided p 0.00732)
       -> this is the 'steepening' claim in its identification-free form.
-    joint test, post-1985 cohorts all on the linear trend: Wald 17.49 on 3 df, p 0.000561
+    joint test, post-1985 cohorts all on the linear trend: Wald 12.07 on 3 df, p 0.00715
 
 ==============================================================================
 READING

@@ -4,37 +4,37 @@ rates: register occurrences per 1,000 words (cohort_vs_period.py's ruler)
 ==============================================================================
 
 (0) TWO-STAMP, re-derived by running the committed machinery:
-TWO-STAMP HEADLINE — spoken + birth, chamber FE, word-weighted  (n=61,312 member-years, 7,027 members):
-    spoken   +1.254 per decade   t +29.2 (HC, member-year)   t +13.9 (clustered on member)
-    birth    +0.876 per decade   t +33.8 (HC, member-year)   t +15.7 (clustered on member)
+TWO-STAMP HEADLINE — spoken + birth, chamber FE, word-weighted  (n=60,186 member-years, 6,913 members):
+    spoken   +1.257 per decade   t +28.2 (HC, member-year)   t +13.4 (clustered on member)
+    birth    +0.857 per decade   t +31.9 (HC, member-year)   t +14.7 (clustered on member)
 
-    full-precision refit: spoken +1.254278  birth +0.875800   n=61,312  members=7,027
+    full-precision refit: spoken +1.256943  birth +0.856615   n=60,186  members=6,913
     agrees with committed cohort_vs_period.two_stamp print: True
 
 ==============================================================================
 (a) SOLUTION LINE  --  every (age, period, cohort) triple below fits
     the data identically.  period = b_spoken - age;  cohort = b_birth + age
-    b_spoken = a + p = +1.2543   b_birth = c - a = +0.8758
+    b_spoken = a + p = +1.2569   b_birth = c - a = +0.8566
     units: register occurrences per 1,000 words, per decade
 ==============================================================================
  age slope    period    cohort  cohort/period    same-age, decade on  note
-    -2.000    +3.254    -1.124          -0.35                  2.130  
-    -1.750    +3.004    -0.874          -0.29                  2.130  
-    -1.500    +2.754    -0.624          -0.23                  2.130  
-    -1.250    +2.504    -0.374          -0.15                  2.130  
-    -1.000    +2.254    -0.124          -0.06                  2.130  
-    -0.876    +2.130    +0.000          +0.00                  2.130  <-- COHORT = 0 (all of the birth gradient is age)
-    -0.750    +2.004    +0.126          +0.06                  2.130  
-    -0.500    +1.754    +0.376          +0.21                  2.130  
-    -0.250    +1.504    +0.626          +0.42                  2.130  
-    +0.000    +1.254    +0.876          +0.70                  2.130  
-    +0.250    +1.004    +1.126          +1.12                  2.130  
-    +0.500    +0.754    +1.376          +1.82                  2.130  
-    +1.254    +0.000    +2.130           +nan                  2.130  <-- PERIOD = 0 (all of the calendar drift is cohort)
+    -2.000    +3.257    -1.143          -0.35                  2.114  
+    -1.750    +3.007    -0.893          -0.30                  2.114  
+    -1.500    +2.757    -0.643          -0.23                  2.114  
+    -1.250    +2.507    -0.393          -0.16                  2.114  
+    -1.000    +2.257    -0.143          -0.06                  2.114  
+    -0.857    +2.114    +0.000          +0.00                  2.114  <-- COHORT = 0 (all of the birth gradient is age)
+    -0.750    +2.007    +0.107          +0.05                  2.114  
+    -0.500    +1.757    +0.357          +0.20                  2.114  
+    -0.250    +1.507    +0.607          +0.40                  2.114  
+    +0.000    +1.257    +0.857          +0.68                  2.114  
+    +0.250    +1.007    +1.107          +1.10                  2.114  
+    +0.500    +0.757    +1.357          +1.79                  2.114  
+    +1.257    +0.000    +2.114           +nan                  2.114  <-- PERIOD = 0 (all of the calendar drift is cohort)
 
     invariants (true anywhere on the line):
-      period + cohort = b_spoken + b_birth = +2.130   <- the same-age decade-on total, free of the age slope
-      cohort - period = b_birth - b_spoken + 2*age = -0.378 + 2*age   <- needs the age slope
+      period + cohort = b_spoken + b_birth = +2.114   <- the same-age decade-on total, free of the age slope
+      cohort - period = b_birth - b_spoken + 2*age = -0.400 + 2*age   <- needs the age slope
     a = 0 is an ASSUMPTION, not a reading of the data: it is the row
     that reproduces §4.6's headline numbers as period and cohort.
 
@@ -47,13 +47,13 @@ TWO-STAMP HEADLINE — spoken + birth, chamber FE, word-weighted  (n=61,312 memb
 
   AS SPECIFIED (all keys)
     cell: US-SENATE member-years 1994-2004, birth < 1965, >= 2,000 words
-    n = 1,107 member-years   members = 160   words = 61,648,403
-    birth 1902-1964   age 31-100   mean rate 32.05 per 1,000
-    SPEC  rate ~ age            a = -0.892 per decade  (HC1 se 0.136, t -6.57;  CR1 se 0.234, t -3.82)
-    JOINT rate ~ age + year     a = -0.955 per decade  (HC1 se 0.146, t -6.55;  CR1 se 0.244, t -3.92)
-          local period in-cell  p = +2.186 per decade  (CR1 se 0.465, t +4.70)
-    aux slope cov(year,age)/var(age) = +0.0288   -> SPEC carries +0.0288 x (in-cell period) of contamination;
-       SPEC - aux*p_joint = -0.955  (should track JOINT)
+    n = 1,043 member-years   members = 148   words = 59,192,506
+    birth 1902-1964   age 37-100   mean rate 32.05 per 1,000
+    SPEC  rate ~ age            a = -0.883 per decade  (HC1 se 0.144, t -6.14;  CR1 se 0.249, t -3.54)
+    JOINT rate ~ age + year     a = -0.934 per decade  (HC1 se 0.153, t -6.12;  CR1 se 0.258, t -3.62)
+          local period in-cell  p = +1.978 per decade  (CR1 se 0.461, t +4.29)
+    aux slope cov(year,age)/var(age) = +0.0258   -> SPEC carries +0.0258 x (in-cell period) of contamination;
+       SPEC - aux*p_joint = -0.934  (should track JOINT)
 
   ROBUSTNESS (drop surname keys flagged ambiguous)
     cell: US-SENATE member-years 1994-2004, birth < 1965, >= 2,000 words
@@ -69,25 +69,25 @@ TWO-STAMP HEADLINE — spoken + birth, chamber FE, word-weighted  (n=61,312 memb
 PROPAGATION ALONG THE SOLUTION LINE
 ------------------------------------------------------------------------------
 
-    [SPEC / all keys] age slope a = -0.892 per decade (se 0.234; 95% CI [-1.350, -0.435])
-        -> PERIOD p = b_spoken - a = +2.147 per 1,000 per decade   bound [+1.689, +2.604]   (+two-stamp se in quadrature: +/-0.491)
-        -> COHORT c = b_birth  + a = -0.017 per 1,000 per decade   bound [-0.474, +0.441]   (+two-stamp se in quadrature: +/-0.471)
-        -> cohort share of the same-age decade-on total (+2.130): -1%  [-22%, 21%]
+    [SPEC / all keys] age slope a = -0.883 per decade (se 0.249; 95% CI [-1.372, -0.395])
+        -> PERIOD p = b_spoken - a = +2.140 per 1,000 per decade   bound [+1.652, +2.629]   (+two-stamp se in quadrature: +/-0.522)
+        -> COHORT c = b_birth  + a = -0.027 per 1,000 per decade   bound [-0.515, +0.462]   (+two-stamp se in quadrature: +/-0.502)
+        -> cohort share of the same-age decade-on total (+2.114): -1%  [-24%, 22%]
 
-    [JOINT / all keys] age slope a = -0.955 per decade (se 0.244; 95% CI [-1.433, -0.478])
-        -> PERIOD p = b_spoken - a = +2.210 per 1,000 per decade   bound [+1.732, +2.687]   (+two-stamp se in quadrature: +/-0.509)
-        -> COHORT c = b_birth  + a = -0.080 per 1,000 per decade   bound [-0.557, +0.398]   (+two-stamp se in quadrature: +/-0.490)
-        -> cohort share of the same-age decade-on total (+2.130): -4%  [-26%, 19%]
+    [JOINT / all keys] age slope a = -0.934 per decade (se 0.258; 95% CI [-1.440, -0.429])
+        -> PERIOD p = b_spoken - a = +2.191 per 1,000 per decade   bound [+1.686, +2.697]   (+two-stamp se in quadrature: +/-0.538)
+        -> COHORT c = b_birth  + a = -0.078 per 1,000 per decade   bound [-0.583, +0.428]   (+two-stamp se in quadrature: +/-0.518)
+        -> cohort share of the same-age decade-on total (+2.114): -4%  [-28%, 20%]
 
     [SPEC / no-ambiguous] age slope a = -0.883 per decade (se 0.249; 95% CI [-1.372, -0.395])
-        -> PERIOD p = b_spoken - a = +2.138 per 1,000 per decade   bound [+1.649, +2.626]   (+two-stamp se in quadrature: +/-0.520)
-        -> COHORT c = b_birth  + a = -0.008 per 1,000 per decade   bound [-0.496, +0.481]   (+two-stamp se in quadrature: +/-0.501)
-        -> cohort share of the same-age decade-on total (+2.130): -0%  [-23%, 23%]
+        -> PERIOD p = b_spoken - a = +2.140 per 1,000 per decade   bound [+1.652, +2.629]   (+two-stamp se in quadrature: +/-0.522)
+        -> COHORT c = b_birth  + a = -0.027 per 1,000 per decade   bound [-0.515, +0.462]   (+two-stamp se in quadrature: +/-0.502)
+        -> cohort share of the same-age decade-on total (+2.114): -1%  [-24%, 22%]
 
     [JOINT / no-ambiguous] age slope a = -0.934 per decade (se 0.258; 95% CI [-1.440, -0.429])
-        -> PERIOD p = b_spoken - a = +2.189 per 1,000 per decade   bound [+1.683, +2.694]   (+two-stamp se in quadrature: +/-0.536)
-        -> COHORT c = b_birth  + a = -0.058 per 1,000 per decade   bound [-0.564, +0.447]   (+two-stamp se in quadrature: +/-0.517)
-        -> cohort share of the same-age decade-on total (+2.130): -3%  [-26%, 21%]
+        -> PERIOD p = b_spoken - a = +2.191 per 1,000 per decade   bound [+1.686, +2.697]   (+two-stamp se in quadrature: +/-0.538)
+        -> COHORT c = b_birth  + a = -0.078 per 1,000 per decade   bound [-0.583, +0.428]   (+two-stamp se in quadrature: +/-0.518)
+        -> cohort share of the same-age decade-on total (+2.114): -4%  [-28%, 20%]
 
 ------------------------------------------------------------------------------
 READING
@@ -98,9 +98,9 @@ READING
   on the age clock instead of the birth clock (in-cell, year barely
   moves, so age is very nearly minus birth).
   It lands almost exactly on the COHORT = 0 landmark: a = -0.892 against
-  the landmark a = -0.876. So the Senate bound says the panel-wide
+  the landmark a = -0.857. So the Senate bound says the panel-wide
   birth gradient is AGE, and the whole same-age decade-on total
-  (+2.130) is PERIOD. That is not a new assumption; it is what
+  (+2.114) is PERIOD. That is not a new assumption; it is what
   §4.6's own sentence -- 'a juniority gradient in this register predates
   the drift' -- implies once it is carried to the solution line.
 

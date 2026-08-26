@@ -100,8 +100,8 @@ in the cross-chamber arm and in controlled model continuations alike. The findin
 of gravity. The register instrument, borrowed to cross-check the detector,
 turned out to have a history: a rise spanning three decades, dated 1994–96
 on the longest series. On the machine side it is a post-training artifact,
-installed by the stages tuned toward human demonstrations and preferences
-and not by the stage tuned toward verifiable correctness. And when we went
+installed by the stages trained on human demonstrations and preferences
+and not by the stage trained on verifiable math and code. And when we went
 looking for who carried it, the dominant simple correlate is birth year —
 a juniority gradient older than the drift itself, steepened by the cohorts
 formed inside it; a
@@ -1101,10 +1101,11 @@ First the accounting, neutral between the readings:
 
 - **Birth cohort predicts the register net of calendar time.** Regressing the
   member-year rate on spoken year and birth year together, with chamber fixed
-  effects (all 22 chambers, 61,312 member-years, 7,027 members): birth
-  **+0.88 per 1,000 words per decade** (t = 15.7 clustered on member, 33.8 on
-  raw member-years) against spoken year **+1.25 per decade** (t = 13.9
-  clustered, 29.2 raw). A legislator born a decade later uses about +0.88/1,000
+  effects (all 22 chambers, 60,186 member-years, 6,913 members after the
+  ambiguous-surname filter): birth **+0.86 per 1,000 words per decade**
+  (t = 14.7 clustered on member, 31.9 on raw member-years) against spoken
+  year **+1.26 per decade** (t = 13.4 clustered, 28.2 raw). A legislator
+  born a decade later uses about +0.86/1,000
   more of the register *in the same year and chamber*. †[^r46a]
 - **Birth is the marginally stronger organiser.** On identical rows the
   within-chamber, word-weighted correlation of the register rate is **+0.325
@@ -1150,17 +1151,18 @@ survive the gradient without explaining it.[^r46apc]
 claim lands on the identified side.** Age, period and cohort admit no joint
 identification, so the two-stamp fit is one point on a line; what is
 invariant along the whole line is the same-age decade-on total, **period +
-cohort = +2.13 per 1,000 per decade**.[^rapcid] Reading the pre-drift
+cohort = +2.11 per 1,000 per decade**.[^rapcid] Reading the pre-drift
 Senate cell the other way around — those cohorts formed before the register
 moved, so their gradient IS the age profile — pins the age slope at
-**−0.89/decade** (clustered t −3.8) and propagates to a *linear* cohort
-slope of **−0.02 [−0.47, +0.44]**: under the paper's own predates premise,
+**−0.88/decade** (clustered t −3.5) and propagates to a *linear* cohort
+slope of **−0.03 [−0.52, +0.46]**: under the paper's own predates premise,
 the standing level of the juniority gradient is an age-or-career clock, not
 a birth-cohort effect. What is cohort-specific is the **bend**: the
 nonlinear cohort deviations — identified with no assumption at all — reject
-linearity outright (Wald p ≈ 10⁻⁸), and the constraint-invariant contrasts
-put the **post-1985 cohorts +0.84 above the linear profile (z = 3.9)** with
-a late-minus-early local slope difference of **+0.84/decade (z = 3.6)**:
+linearity outright (Wald p ≈ 10⁻⁷), and the constraint-invariant contrasts
+put the cohorts born **1975 onward +0.46 above the linear profile
+(z = 5.1)** — those born 1985 onward +0.65 (z = 2.6) — with a
+late-minus-early local slope difference of **+0.70/decade (z = 2.7)**:
 the steepening claim, in identification-free form, landing exactly where
 drift-formed cohorts arrive. Stated with its complication: the deviation
 profile bends up at *both* ends — the 1920s–30s cohorts also sit above the
@@ -1168,7 +1170,7 @@ line, on the panel's thinnest cells — so the identified fact is "nonlinear,
 rising at the recent end," not "rising only there." And the career-clock
 reading cannot be evicted from the level term by any regression here:
 within birth-year × year × chamber cells the tenure slope is large
-(−0.95/decade of tenure, clustered t −8.4), but in those cells tenure is
+(−0.95/decade of tenure, clustered t −8.3), but in those cells tenure is
 algebraically minus entry year — a career-stage effect and an entry-cohort
 effect are the same coefficient, and only the within-member trend (+0.51,
 positive, §4.6's fourth bullet) distinguishes their predictions at all.
@@ -1206,13 +1208,15 @@ member-cluster bootstrap 95% intervals.*
     fit: member-year register rate on spoken year and birth year together,
     chamber fixed effects, word-weighted, with errors both ways — member-year
     HC, and clustered on member, the honest form since member-years are
-    repeated draws of the same 7,027 people. All 22 chambers carry member
-    birth years (61,312 member-years, after the nine Australian and
-    UK-devolved chambers were collected on 2026-08-17); within-chamber
-    correlations are on the same rows. The script's three-stamp fit adds
-    entry year — a second cohort clock, not a confounder — and it splits the
-    cohort credit rather than removing it (birth +0.69, t 19.4, on the
-    37,548 entry-censored rows); reported once here and not as the headline,
+    repeated draws of the same 6,913 people. All 22 chambers carry member
+    birth years (60,186 member-years after tier-1 keys flagged ambiguous —
+    two members sharing a surname — are excluded from the birth join, a
+    filter added 2026-08-26 that also removed 49 impossible-age rows);
+    within-chamber correlations are on the same rows. The script's
+    three-stamp fit adds entry year — a second cohort clock, not a
+    confounder — and it splits the cohort credit rather than removing it
+    (birth +0.69, t 19.3, on the 37,255 entry-censored rows); reported
+    once here and not as the headline,
     because a career clock absorbing part of a birth clock is re-description,
     not explanation.
 

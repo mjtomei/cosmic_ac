@@ -53,7 +53,11 @@ def load_birth():
     birth = {}
     # tier-1: covariates_tier1.json keyed (chamber, key); panel member is CH|key
     for r in json.load(open(os.path.join(HERE, "covariates_tier1.json"))):
-        if r.get("birth_year"):
+        # ambiguity filter (2026-08-26): keys flagged ambiguous carry another
+        # sitting member's identity (e.g. two senators named Pryor born 29
+        # years apart) and produced 49 impossible-age member-years; skip them
+        # as apc_chamber_decomposition.py always did
+        if r.get("birth_year") and not r.get("ambiguous"):
             birth[f'{r["chamber"]}|{r["key"]}'] = int(r["birth_year"])
     # provinces: member_bios.json keyed (prov, norm(name)); panel member is PROV|nm
     for b in json.load(open(os.path.join(HERE, "provinces", "member_bios.json"))):
