@@ -2,7 +2,7 @@
 
 ## Abstract
 
-We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* — the excess vocabulary language models overuse, derived in prior work from the post-2022 jump in scholarly text, run here as a fixed ruler across four decades of the parliamentary record. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with a fourfold spread across chambers (after shrinkage) and a concentration in scripted genres. This machine-drafted speech is not degraded: AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, **predates the models by decades** — history invisible to the excess-vocabulary designs that found the jump, which measure acceleration against a local trend in corpora reaching back roughly a decade. Run as a level series, its rise begins in 1994–96; a juniority gradient predates even that, steepening as cohorts formed inside the drift arrive; and prior occupation leaves a small, replicated signature that absorbs social class — scored on a preregistered organisational-altitude measure whose insulated middle sits highest and whose off-hierarchy level, free work, sits lowest. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
+We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* — the excess vocabulary language models overuse, derived in prior work from the post-2022 jump in scholarly text, run here as a fixed ruler across four decades of the parliamentary record. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with a fourfold spread across chambers (after shrinkage) and a concentration in scripted genres. This machine-drafted speech is not degraded: AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, **predates the models by decades** — history invisible to the excess-vocabulary designs that found the jump, which measure acceleration against a local trend in corpora reaching back roughly a decade. Run as a level series, its rise spans three decades and two instruments — dated to 1994–96 on the longest-reaching series — concentrated in a few common connectives over a broad shallow widening; a juniority gradient predates even that, steepening as cohorts formed inside the drift arrive; and prior occupation leaves a small, replicated signature that absorbs social class — scored on a preregistered organisational-altitude measure whose insulated middle sits highest and whose off-hierarchy level, free work, sits lowest. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
 
 ---
 
@@ -98,8 +98,8 @@ concentration in scripted genres, and no quality penalty: against a
 deliberation rubric, flagged speech is better-formed and no less engaged —
 in the cross-chamber arm and in controlled model continuations alike. The finding we did not come for is the paper's centre
 of gravity. The register instrument, borrowed to cross-check the detector,
-turned out to have a history: its rise begins in 1994–96, three decades
-before the models. On the machine side it is a post-training artifact,
+turned out to have a history: a rise spanning three decades, dated 1994–96
+on the longest series. On the machine side it is a post-training artifact,
 installed by the stages tuned toward human demonstrations and preferences
 and not by the stage tuned toward verifiable correctness. And when we went
 looking for who carried it, the dominant simple correlate is birth year —
@@ -833,10 +833,12 @@ chance, which is the division of labour the study uses.[^r44auc]
 ### 4.5 The register shift starts in 1994–96, decades before the machines
 
 The register's rise begins around **1994–96** — before the consumer web,
-and long before any language model. The descriptive series (§3.3), with UK
-Commons extended back to 1985, shows the register *declining* through the
-late 1980s before turning upward at that window. Whatever this measures,
-LLMs did not start it.[^r45]
+and long before any language model. The dated onset is a property of the
+one series that reaches behind it: UK Commons extended back to 1985, where
+the register *declines* through the late 1980s before turning upward at
+that window (only three chambers reach 1994 at all; the cross-chamber
+evidence for the drift itself is the nineteen-chamber comparison of
+§4.5a). Whatever this measures, LLMs did not start it.[^r45]
 
 [^r45]: `python long_trend.py --seg uk/segments_uk_deep.jsonl` for the annual
     series; the turning point is the minimum of the annual
@@ -846,9 +848,49 @@ LLMs did not start it.[^r45]
     resamples, 1995 in 13.0% and 1996 in 2.1% — so "1994–96" is a genuine
     [1994, 1996] interval, not a hedge.
 
+**The ruler, audited — what the thirty-year rise is made of.** Selected on
+the post-2022 jump and run backwards, the marker list invites two
+objections — that the rise is a few words, and that a list selected on an
+endpoint would trend by construction — so both were tested.[^raudit] The
+rise is concentrated: **ten common connectives carry 92.5% of the 1994–96
+→ 2024–26 climb** (`this` alone 35%), and with those ten removed the
+aggregate is nearly flat (×1.03 pooled, ×1.10 UK). What rises beneath them
+is **breadth**: the expected distinct style words per 1,000 tokens climbs
+×1.26 on the UK series (14.4 → 18.2), and 60.4% of the 407 words trend
+positive (z = +4.2) at a median of only +0.5%/yr — a shallow, broad
+widening under a few surging function words, not a 407-word chorus. The
+rise is not a composition artifact: post-stratifying every chamber-year to
+a fixed segment-length distribution — the measurable proxy for the genre
+drift §4.3 makes threatening — leaves the onset in place and slightly
+*strengthens* the UK climb (×1.49 → ×1.54). It is not a one-ruler artifact
+either: the independent Wikipedia signs-of-AI-writing patterns, built by
+different people for a different purpose, rise across the whole pre-LLM
+record and *faster* (+2.7%/yr against +1.4%/yr, UK 1994–2019) — though
+their UK trough sits in 1987, so the decades-long pre-LLM rise is a
+cross-instrument fact while the specific 1994–96 date belongs to this
+ruler's UK series. And against donors matched on frequency and dispersion,
+the UK series' interior minimum at 1994 survives; matched additionally on
+pre-2010 trend — a control that by construction absorbs any onset inside
+its own window — the register's *distinctive* excess over ordinary
+same-shaped vocabulary dates to roughly **2014–2018**, and the style words
+sit below their matched donors in level for the entire record until 2025.
+The honest summary: the drift is real, broad-based, composition-robust and
+instrument-robust; its dated 1994–96 turn is the UK ruler's; and its
+excess over matched controls is younger than the turn.
+
 Read together with §4.7, the interesting reading is not "LLMs changed
 parliamentary register" but that **human register had been moving toward what
 instruct-tuning later selected for, for thirty years.** †[^dag]
+
+[^raudit]: `python build_word_year_counts.py` (one scan, 1.62B tokens;
+    reproduces the committed series to 0.00 per 100k at the worst year)
+    then `python ruler_audit.py`, `python donor_series.py` (trend-matched
+    donors, 389/407 matched, 99.7% exact on all three deciles; the
+    freq+dispersion variant is `donor_series_fc.json`) and
+    `python length_poststrat.py`. The audit also caught a defect in the
+    committed placebo builder: its top-120-frequency exclusion leaves
+    eight style words — `this` among them — matched far below their own
+    frequency; the donor pool here does not exclude them.
 
 [^dag]: Daggered numbers are carried from earlier in the study and were
     re-derived from their artifacts; the full key and per-number sources are
