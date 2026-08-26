@@ -1120,8 +1120,8 @@ members is drawn; open markers carry fewer than 25 members (count
 annotated). Error bars are ±1 se; the dotted line is each panel's
 member-weighted linear trend. Class II holds above class I in every
 bin; farmers and VIIab hold the floor; III — thin at 26–85 members — stays
-elevated; V/VI climbs slowly toward zero, the one tail series that
-moves.* †[^r46cls]
+elevated and tilts higher; V/VI climbs slowly toward zero, the one tail
+series that moves.* †[^r46cls]
 
 The era test cannot say who originated the form. Class I is never at the top,
 not even in 1997–2001 — but class coding only becomes substantial around 2005,
