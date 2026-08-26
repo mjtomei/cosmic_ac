@@ -1151,26 +1151,43 @@ structure (an era-resolved peak test is future work).
 
 **Education makes the same inverted U, and it is the same people.** Read as
 levels rather than as a ladder (22 chambers, cohort controlled, baseline
-bachelor):
+bachelor), with the graduate rung split by recorded degree — master's versus
+doctorate — where any source names one (61% of graduate codings; the rest
+stay a "graduate, degree unrecorded" level rather than being guessed or
+dropped):[^redusplit]
 
 | level | mean z | n | vs bachelor |
 |---|---|---|---|
-| secondary | −0.281 | 234 | **−0.166 (t = −2.69)** |
-| college | −0.161 | 371 | **−0.139 (t = −2.67)** |
-| **bachelor** | **+0.042** | 1,194 | baseline |
-| graduate | −0.025 | 1,271 | −0.008 (t = −0.22) |
-| **professional** | −0.130 | 991 | **−0.091 (t = −2.29)** |
+| none | −0.256 | 14 | −0.232 (t = −1.27) |
+| secondary | −0.289 | 287 | **−0.157 (t = −2.81)** |
+| college | −0.174 | 478 | **−0.153 (t = −3.25)** |
+| **bachelor** | **+0.048** | 1,517 | baseline |
+| master | +0.037 | 659 | −0.029 (t = −0.68) |
+| doctorate | +0.010 | 194 | +0.043 (t = +0.65) |
+| graduate, degree unrecorded | −0.032 | 625 | +0.053 (t = +1.31) |
+| **professional** | −0.134 | 1,046 | **−0.081 (t = −2.16)** |
 
-Bachelor and graduate form a plateau at the top; both arms fall away
-significantly, and the descending arm is the **professional** degree — law and
-medicine, the most elite credential in the table — measured on 991 members.
-Read as a straight line, this would pass for an ascending "academic ladder"
-of +0.065σ per rung — but only by excluding the professional degree as off
-the ladder, the one category that breaks monotonicity. The block is jointly significant on its own
-(Wald p < 10⁻⁴ as level dummies).
+The plateau at the top is three levels wide — bachelor, master and
+doctorate sit within 0.05σ of one another, so the graduate null is not an
+artifact of lumping two credentials — and both arms fall away
+significantly: secondary and college by ~0.15σ, and on the descending side
+the **professional** degree — law and medicine, the most elite credential
+in the table — at −0.081 on 1,046 members. Read as a straight line, this
+would pass for an ascending "academic ladder" — but only by excluding the
+professional degree as off the ladder, the one category that breaks
+monotonicity. The block is jointly significant on its own (Wald p = 0.0002
+as level dummies).
+
+[^redusplit]: `python edu_split_graduate.py` — degree markers (PhD/DPhil/
+    EdD/ScD/ThD versus MA/MSc/MS/MBA/MEd/MPA/MPP/MSW/MPhil/LLM/MDiv/STM)
+    regex-matched in each member's recorded evidence quotes, education
+    field and styled name, honorary-degree sentences stripped first;
+    doctorate wins where both appear. A JD is deliberately not a doctorate
+    here — law belongs to the professional level. The script also prints
+    this table.
 
 It is not, however, an independent channel. Put class and education in one
-model and the education block goes to **p = 0.28** while class holds at
+model and the education block goes to **p = 0.27** while class holds at
 **p < 10⁻⁴** — because the two instruments name the same stratum. Teachers,
 nurses and social workers hold bachelor's and master's degrees; lawyers and
 physicians hold professional ones. "Class II, not class I" and "bachelor or
@@ -1194,52 +1211,63 @@ jointly-significant effects into years of cohort: †[^r46joint]
 
 | term | n | alone | joint | + occ. blocks | ≈ yrs |
 |---|---|---|---|---|---|
-| **cohort** (per decade) | 4,056 | +0.276 (27.7) | **+0.271 (27.1)** | +0.265 (24.7) | *the scale* |
-|  — block Wald (1 df) | | p < 10⁻⁷⁰ | p < 10⁻⁶⁸ | p < 10⁻⁵⁹ | |
+| **cohort** (per decade) | 4,056 | +0.276 (27.7) | **+0.272 (26.9)** | +0.266 (24.5) | *the scale* |
+|  — block Wald (1 df) | | p < 10⁻⁷⁰ | p < 10⁻⁶⁷ | p < 10⁻⁵⁹ | |
 | **class** (baseline I, *n* 1,660) | | | | | |
-|  · II lower service | 1,691 | +0.122 (3.63) | **+0.080 (2.33)** | +0.017 (0.39) | +3 |
-|  · III routine non-manual | 116 | +0.084 (0.95) | +0.029 (0.34) | +0.021 (0.19) | — |
-|  · IVab petty bourgeoisie | 280 | +0.005 (0.08) | −0.006 (−0.10) | +0.007 (0.09) | — |
-|  · IVc farmers | 109 | −0.339 (−3.48) | **−0.209 (−2.19)** | −0.090 (−0.76) | −8 |
-|  · V/VI skilled manual | 130 | −0.229 (−2.79) | **−0.244 (−3.14)** | −0.209 (−1.95) | −9 |
-|  · VIIab non-skilled manual | 70 | −0.384 (−3.70) | **−0.301 (−2.76)** | −0.041 (−0.26) | −11 |
-|  — block Wald (6 df) | | p < 10⁻⁴ | **p < 10⁻⁴** | **p = 0.55** | |
+|  · II lower service | 1,691 | +0.122 (3.63) | **+0.084 (2.44)** | +0.018 (0.41) | +3 |
+|  · III routine non-manual | 116 | +0.084 (0.95) | +0.036 (0.42) | +0.024 (0.22) | — |
+|  · IVab petty bourgeoisie | 280 | +0.005 (0.08) | +0.002 (0.03) | +0.009 (0.12) | — |
+|  · IVc farmers | 109 | −0.339 (−3.48) | **−0.201 (−2.10)** | −0.089 (−0.75) | −7 |
+|  · V/VI skilled manual | 130 | −0.229 (−2.79) | **−0.235 (−3.02)** | −0.204 (−1.90) | −9 |
+|  · VIIab non-skilled manual | 70 | −0.384 (−3.70) | **−0.286 (−2.60)** | −0.037 (−0.23) | −11 |
+|  — block Wald (6 df) | | p < 10⁻⁴ | **p < 10⁻⁴** | **p = 0.56** | |
 | **education** (baseline bachelor, *n* 1,190) | | | | | |
-|  · secondary | 231 | −0.315 (−4.57) | −0.046 (−0.73) | −0.045 (−0.67) | — |
-|  · college | 367 | −0.204 (−3.61) | −0.059 (−1.11) | −0.086 (−1.50) | — |
-|  · graduate | 1,266 | −0.063 (−1.62) | −0.020 (−0.55) | −0.017 (−0.44) | — |
-|  · professional | 988 | −0.171 (−4.05) | −0.090 (−2.04) | −0.095 (−1.96) | — |
-|  — block Wald (4 df) | | p < 10⁻⁴ | **p = 0.28** | p = 0.23 | |
+|  · none | 14 | −0.301 (−1.70) | −0.161 (−0.95) | −0.103 (−0.53) | — |
+|  · secondary | 231 | −0.318 (−4.61) | −0.049 (−0.78) | −0.047 (−0.70) | — |
+|  · college | 367 | −0.207 (−3.67) | −0.062 (−1.16) | −0.088 (−1.52) | — |
+|  · master | 552 | −0.042 (−0.85) | −0.066 (−1.42) | −0.043 (−0.87) | — |
+|  · doctorate | 173 | −0.054 (−0.65) | +0.017 (0.24) | −0.016 (−0.20) | — |
+|  · graduate, unrecorded | 541 | −0.097 (−1.93) | +0.015 (0.32) | +0.008 (0.17) | — |
+|  · professional | 988 | −0.174 (−4.11) | −0.088 (−1.98) | −0.094 (−1.92) | — |
+|  — block Wald (7 df) | | p < 10⁻⁴ | **p = 0.27** | p = 0.45 | |
 | **prominence** (article-length quintile, baseline Q1) | | | | | |
-|  · Q2 | 812 | −0.018 (−0.37) | −0.069 (−1.62) | −0.059 (−1.32) | — |
-|  · Q3 | 812 | +0.228 (4.68) | **+0.164 (3.74)** | +0.171 (3.65) | +6 |
-|  · Q4 | 812 | +0.210 (4.39) | **+0.146 (3.25)** | +0.185 (3.84) | +5 |
+|  · Q2 | 812 | −0.018 (−0.37) | −0.069 (−1.62) | −0.059 (−1.31) | — |
+|  · Q3 | 812 | +0.228 (4.68) | **+0.163 (3.70)** | +0.170 (3.62) | +6 |
+|  · Q4 | 812 | +0.210 (4.39) | **+0.146 (3.24)** | +0.184 (3.82) | +5 |
 |  · Q5 | 812 | +0.131 (2.77) | **+0.145 (3.22)** | +0.164 (3.36) | +5 |
 |  — block Wald (4 df) | | p < 10⁻⁴ | **p < 10⁻⁴** | **p < 10⁻⁴** | |
 | **directional ladder** (per sd, n 3,631) | | | | | |
-|  · free | | −0.243 (−4.80) | — | −0.127 (−1.25) | — |
-|  · bottom | | +0.084 (2.18) | — | +0.082 (0.98) | — |
-|  · middle | | −0.136 (−2.64) | — | −0.169 (−1.56) | — |
-|  · top | | +0.008 (0.21) | — | +0.132 (2.13) | +5/sd |
-|  — block Wald (4 df) | | p < 10⁻⁴ | — | **p = 0.26** | |
+|  · free | | −0.243 (−4.80) | — | −0.123 (−1.21) | — |
+|  · bottom | | +0.084 (2.18) | — | +0.082 (0.97) | — |
+|  · middle | | −0.136 (−2.64) | — | −0.166 (−1.53) | — |
+|  · top | | +0.008 (0.21) | — | +0.130 (2.09) | +5/sd |
+|  — block Wald (4 df) | | p < 10⁻⁴ | — | **p = 0.28** | |
 | **coded ladder** (per sd, n 3,631) | | | | | |
 |  · FREE | | −0.109 (−4.70) | — | **−0.090 (−3.07)** | −3/sd |
-|  · BOTTOM | | +0.115 (3.21) | — | −0.040 (−0.62) | — |
-|  · MIDDLE | | −0.156 (−1.35) | — | +0.146 (0.70) | — |
-|  · TOP | | +0.356 (2.72) | — | −0.163 (−0.75) | — |
+|  · BOTTOM | | +0.115 (3.21) | — | −0.039 (−0.61) | — |
+|  · MIDDLE | | −0.156 (−1.35) | — | +0.151 (0.72) | — |
+|  · TOP | | +0.356 (2.72) | — | −0.164 (−0.75) | — |
 |  — block Wald (4 df) | | p < 10⁻⁴ | — | **p = 0.0008** | |
-| **Indoors** (per sd, n 3,631) | | +0.091 (5.88) | — | +0.032 (1.48) | — |
+| **Indoors** (per sd, n 3,631) | | +0.091 (5.88) | — | +0.033 (1.50) | — |
 |  — block Wald (1 df) | | p < 10⁻⁴ | — | p = 0.13 | |
 
-The + occupational column's changes come from the blocks, not the thinner
-sample: refit without them on the same 3,631 members, the four blocks are
-essentially unchanged (cohort +0.265, II +0.083, class block p = 0.0003) —
-except VIIab, which thins to 53 members and −0.188 (t −1.48) before the
-blocks ever enter.
+Two robustness reads, both on the same 3,631 members. First, the
++ occupational column's changes come from the blocks, not the thinner
+sample: refit without them, the four blocks are essentially unchanged
+(cohort +0.266, II +0.084, class block p = 0.0004) — except VIIab, which
+thins to 53 members and −0.183 (t −1.43) before the blocks ever enter.
+Second, no block's fate hangs on which ladder twin entered — the fit is
+simultaneous, not sequential, and the leave-one-out variants confirm it:
+with only the directional ladder present, class is p = 0.62 (ladder
+p = 0.037, Indoors +0.056, t 2.77); with only the coded ladder, class is
+p = 0.54 (ladder p < 10⁻⁴, Indoors +0.047, t 2.30). Either ladder alone
+retires class; Indoors stays marginally alive beside either single ladder
+and is absorbed only by the pair; the coded ladder is the stronger carrier
+and takes the credit when both enter.
 
 **Why the largest coefficients carry the least variance.** A term's
 variance share is per-member effect² × member share. VIIab moves each of
-its members eleven cohort-years — but 70 members are 1.7% of the panel, so
+its members more than ten cohort-years — but 70 members are 1.7% of the panel, so
 the term carries ~0.25% of variance alone; class II's far smaller +0.122 on
 42% of members carries more (~0.36%), and cohort's dominance comes from a
 modest slope applied to everyone across a two-decade spread. Coefficients
@@ -1256,19 +1284,24 @@ quintile easing off the Q4 peak (entered as a line instead, the block
 prints +0.020 per log-unit, t 2.05, and the shape disappears — the line was
 the wrong form, not the predictor). Class shows a wider floor than the
 headline contrast — all three manual-and-rural categories sit significantly
-below the service classes jointly (V/VI −0.244, VIIab −0.301, IVc −0.209) —
+below the service classes jointly (V/VI −0.235, VIIab −0.286, IVc −0.201) —
 and survives cohort, education and prominence, but not its own finer
-measurement: beside the two altitude ladders the class block falls to
-p = 0.55, because the EGP label is a coarse coding of the occupational
+measurement: beside the altitude ladders the class block falls to p = 0.56,
+and the leave-one-out fits show either ladder alone does it (p = 0.62 and
+p = 0.54), because the EGP label is a coarse coding of the occupational
 content the ladders measure directly. That is the joint model repeating
 what destination-not-origin already said: the register tracks what the work
 was, not what the label says. The same absorption runs inside the
-occupational blocks themselves — each is strong alone, and jointly the
-coded ladder (p = 0.0008, its FREE level −0.090 per sd) absorbs its
-directional near-twin (p = 0.26) and Indoors (p = 0.13). Education survives
-nothing, in any column. What the full model keeps, then, is cohort, the
-prominence bins, and one occupational ladder; what it retires is the class
-label, education, and every occupational term the ladder already encodes.
+occupational blocks themselves — each is strong alone; the coded ladder is
+the stronger carrier (p = 0.0008 with both in, its FREE level −0.090 per
+sd) and takes the credit from its directional near-twin, while Indoors
+stays marginally alive beside either single ladder and is absorbed only by
+the pair. Education survives nothing, in any column — and with the
+graduate rung split, master's and doctorate both sit at the bachelor
+plateau, so the null is not a lumping artifact. What the full model keeps,
+then, is cohort, the prominence bins, and one occupational ladder; what it
+retires is the class label, education, and every occupational term the
+ladders already encode.
 
 Class needs the panel's full power: restricted to the thirteen
 pre-expansion chambers (n = 2,989), the II-over-I contrast falls to t = 1.26
@@ -1282,8 +1315,10 @@ education, and the smaller sample cannot separate them.
     "Alone" is the block fitted by itself on the same sample (no other
     covariates), so the columns read raw association → survives the other
     blocks → survives the occupational content too. Education enters as
-    level dummies with bachelor baseline — the same coding as the education
-    table — and every EGP category present enters as a dummy. Prominence quintiles are cut on each estimation sample's log article
+    level dummies with bachelor baseline — the education table's coding,
+    graduate rung split by recorded degree (`edu_split_graduate.py`) —
+    and every category present enters as a dummy, education's "none" and
+    every EGP class included. Prominence quintiles are cut on each estimation sample's log article
     lengths (Q1 baseline). The occupational blocks are §4.6b's two altitude
     ladders — directional and coded, all four levels each, standardised per
     sd on the occ panel — plus Indoors. The prereg's apex delta is

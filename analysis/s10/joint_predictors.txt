@@ -1,11 +1,12 @@
+graduate split on panel: {'master': 659, 'unrecorded': 625, 'doctorate': 194}
 6,279 legislators with birth year and a z score, 22 chambers
-coverage among them: class 4,896, education 4,820, prominence 6,238
+coverage among them: class 4,896, education 3,967, prominence 6,238
 
 ==================================================================
 FULL PANEL — complete cases on four predictors
 ==================================================================
 class mix: {'II': 1691, 'I': 1660, 'IVab': 280, 'V/VI': 130, 'VIIab': 70, 'III': 116, 'IVc': 109}
-edu mix:   {'bachelor': 1190, 'professional': 988, 'college': 367, 'graduate': 1266, 'secondary': 231, 'none': 14}
+edu mix:   {'bachelor': 1190, 'professional': 988, 'college': 367, 'master': 552, 'graduate': 541, 'secondary': 231, 'doctorate': 173, 'none': 14}
 prominence quintile bounds (log length): Q1<=8.98, Q2<=9.54, Q3<=10.08, Q4<=10.71, Q5<=13.13
 
 cohort ALONE (same sample)   n = 4,056
@@ -22,11 +23,14 @@ class ALONE (same sample)   n = 4,056
       block Wald chi2=60.5, df=6, p=2.43e-10
 
 edu ALONE (same sample)   n = 4,056
-    edu secondary     -0.315  t -4.57 *
-    edu college       -0.204  t -3.61 *
-    edu graduate      -0.063  t -1.62
-    edu professional  -0.171  t -4.05 *
-      block Wald chi2=35.7, df=4, p=8.273e-07
+    edu none          -0.301  t -1.70
+    edu secondary     -0.318  t -4.61 *
+    edu college       -0.207  t -3.67 *
+    edu master        -0.042  t -0.85
+    edu doctorate     -0.054  t -0.65
+    edu graduate      -0.097  t -1.93
+    edu professional  -0.174  t -4.11 *
+      block Wald chi2=38.5, df=7, p=3.795e-06
 
 prominence ALONE (same sample)   n = 4,056
     prom Q2           -0.018  t -0.37
@@ -36,31 +40,34 @@ prominence ALONE (same sample)   n = 4,056
       block Wald chi2=45.1, df=4, p=1.821e-08
 
 JOINT — all four   n = 4,056
-    cohort            +0.271  t +27.11 *
-      block Wald chi2=734.8, df=1, p=8.124e-69
-    class II          +0.080  t +2.33 *
-    class III         +0.029  t +0.34
-    class IVab        -0.006  t -0.10
-    class IVc         -0.209  t -2.19 *
-    class V/VI        -0.244  t -3.14 *
-    class VIIab       -0.301  t -2.76 *
-      block Wald chi2=36.6, df=6, p=3.561e-06
-    edu secondary     -0.046  t -0.73
-    edu college       -0.059  t -1.11
-    edu graduate      -0.020  t -0.55
-    edu professional  -0.090  t -2.04 *
-      block Wald chi2=5.1, df=4, p=0.277
+    cohort            +0.272  t +26.94 *
+      block Wald chi2=726.0, df=1, p=3.155e-68
+    class II          +0.084  t +2.44 *
+    class III         +0.036  t +0.42
+    class IVab        +0.002  t +0.03
+    class IVc         -0.201  t -2.10 *
+    class V/VI        -0.235  t -3.02 *
+    class VIIab       -0.286  t -2.60 *
+      block Wald chi2=35.3, df=6, p=5.921e-06
+    edu none          -0.161  t -0.95
+    edu secondary     -0.049  t -0.78
+    edu college       -0.062  t -1.16
+    edu master        -0.066  t -1.42
+    edu doctorate     +0.017  t +0.24
+    edu graduate      +0.015  t +0.32
+    edu professional  -0.088  t -1.98 *
+      block Wald chi2=8.8, df=7, p=0.2687
     prom Q2           -0.069  t -1.62
-    prom Q3           +0.164  t +3.74 *
-    prom Q4           +0.146  t +3.25 *
+    prom Q3           +0.163  t +3.70 *
+    prom Q4           +0.146  t +3.24 *
     prom Q5           +0.145  t +3.22 *
-      block Wald chi2=45.9, df=4, p=1.339e-08
+      block Wald chi2=45.5, df=4, p=1.57e-08
 
 ==================================================================
 OCC PANEL — intersected with occupational-score coverage
 ==================================================================
 class mix: {'II': 1464, 'I': 1527, 'IVab': 253, 'V/VI': 112, 'VIIab': 53, 'III': 113, 'IVc': 109}
-edu mix:   {'bachelor': 1070, 'professional': 937, 'college': 329, 'graduate': 1075, 'secondary': 209, 'none': 11}
+edu mix:   {'bachelor': 1070, 'professional': 937, 'college': 329, 'master': 466, 'graduate': 479, 'secondary': 209, 'doctorate': 130, 'none': 11}
 
 cohort ALONE (same sample)   n = 3,631
     cohort            +0.270  t +25.47 *
@@ -76,11 +83,14 @@ class ALONE (same sample)   n = 3,631
       block Wald chi2=45.9, df=6, p=8.292e-08
 
 edu ALONE (same sample)   n = 3,631
-    edu secondary     -0.315  t -4.37 *
-    edu college       -0.221  t -3.70 *
-    edu graduate      -0.074  t -1.78
-    edu professional  -0.169  t -3.85 *
-      block Wald chi2=32.8, df=4, p=2.755e-06
+    edu none          -0.185  t -0.94
+    edu secondary     -0.317  t -4.39 *
+    edu college       -0.223  t -3.72 *
+    edu master        -0.027  t -0.51
+    edu doctorate     -0.102  t -1.08
+    edu graduate      -0.116  t -2.24 *
+    edu professional  -0.171  t -3.87 *
+      block Wald chi2=35.3, df=7, p=1.41e-05
 
 prominence ALONE (same sample)   n = 3,631
     prom Q2           -0.013  t -0.26
@@ -108,58 +118,126 @@ indoors ALONE (same sample)   n = 3,631
       block Wald chi2=34.6, df=1, p=7.13e-08
 
 JOINT — four blocks (occ-panel sample)   n = 3,631
-    cohort            +0.265  t +24.99 *
-      block Wald chi2=624.4, df=1, p=2.513e-61
-    class II          +0.083  t +2.25 *
-    class III         +0.054  t +0.61
-    class IVab        +0.040  t +0.61
-    class IVc         -0.185  t -1.93
-    class V/VI        -0.233  t -2.74 *
-    class VIIab       -0.188  t -1.48
-      block Wald chi2=25.7, df=6, p=0.0002945
-    edu secondary     -0.052  t -0.78
-    edu college       -0.082  t -1.43
-    edu graduate      -0.019  t -0.49
-    edu professional  -0.077  t -1.67
-      block Wald chi2=4.4, df=4, p=0.3535
-    prom Q2           -0.063  t -1.40
-    prom Q3           +0.165  t +3.52 *
-    prom Q4           +0.167  t +3.47 *
-    prom Q5           +0.135  t +2.82 *
-      block Wald chi2=41.5, df=4, p=7.767e-08
+    cohort            +0.266  t +24.80 *
+      block Wald chi2=615.2, df=1, p=1.103e-60
+    class II          +0.084  t +2.28 *
+    class III         +0.057  t +0.65
+    class IVab        +0.043  t +0.65
+    class IVc         -0.183  t -1.89
+    class V/VI        -0.229  t -2.69 *
+    class VIIab       -0.183  t -1.43
+      block Wald chi2=25.3, df=6, p=0.0003526
+    edu none          -0.087  t -0.48
+    edu secondary     -0.053  t -0.80
+    edu college       -0.083  t -1.45
+    edu master        -0.042  t -0.84
+    edu doctorate     -0.015  t -0.18
+    edu graduate      +0.002  t +0.05
+    edu professional  -0.077  t -1.65
+      block Wald chi2=5.3, df=7, p=0.6218
+    prom Q2           -0.063  t -1.39
+    prom Q3           +0.165  t +3.49 *
+    prom Q4           +0.167  t +3.46 *
+    prom Q5           +0.135  t +2.81 *
+      block Wald chi2=41.0, df=4, p=9.343e-08
 
 JOINT — plus both ladders and indoors   n = 3,631
-    cohort            +0.265  t +24.69 *
-      block Wald chi2=609.6, df=1, p=2.712e-60
-    class II          +0.017  t +0.39
-    class III         +0.021  t +0.19
-    class IVab        +0.007  t +0.09
-    class IVc         -0.090  t -0.76
-    class V/VI        -0.209  t -1.95
-    class VIIab       -0.041  t -0.26
-      block Wald chi2=5.0, df=6, p=0.5479
-    edu secondary     -0.045  t -0.67
-    edu college       -0.086  t -1.50
-    edu graduate      -0.017  t -0.44
-    edu professional  -0.095  t -1.96
-      block Wald chi2=5.6, df=4, p=0.2325
-    prom Q2           -0.059  t -1.32
-    prom Q3           +0.171  t +3.65 *
-    prom Q4           +0.185  t +3.84 *
+    cohort            +0.266  t +24.53 *
+      block Wald chi2=601.9, df=1, p=9.422e-60
+    class II          +0.018  t +0.41
+    class III         +0.024  t +0.22
+    class IVab        +0.009  t +0.12
+    class IVc         -0.089  t -0.75
+    class V/VI        -0.204  t -1.90
+    class VIIab       -0.037  t -0.23
+      block Wald chi2=4.9, df=6, p=0.5631
+    edu none          -0.103  t -0.53
+    edu secondary     -0.047  t -0.70
+    edu college       -0.088  t -1.52
+    edu master        -0.043  t -0.87
+    edu doctorate     -0.016  t -0.20
+    edu graduate      +0.008  t +0.17
+    edu professional  -0.094  t -1.92
+      block Wald chi2=6.8, df=7, p=0.4461
+    prom Q2           -0.059  t -1.31
+    prom Q3           +0.170  t +3.62 *
+    prom Q4           +0.184  t +3.82 *
     prom Q5           +0.164  t +3.36 *
-      block Wald chi2=46.3, df=4, p=1.136e-08
-    dir free          -0.127  t -1.25
-    dir bottom        +0.082  t +0.98
-    dir middle        -0.169  t -1.56
-    dir top           +0.132  t +2.13 *
-      block Wald chi2=5.2, df=4, p=0.2633
+      block Wald chi2=45.7, df=4, p=1.463e-08
+    dir free          -0.123  t -1.21
+    dir bottom        +0.082  t +0.97
+    dir middle        -0.166  t -1.53
+    dir top           +0.130  t +2.09 *
+      block Wald chi2=5.0, df=4, p=0.2821
     lvl FREE          -0.090  t -3.07 *
-    lvl BOTTOM        -0.040  t -0.62
-    lvl MIDDLE        +0.146  t +0.70
-    lvl TOP           -0.163  t -0.75
-      block Wald chi2=19.3, df=4, p=0.0007908
-    indoors           +0.032  t +1.48
-      block Wald chi2=2.2, df=1, p=0.1337
+    lvl BOTTOM        -0.039  t -0.61
+    lvl MIDDLE        +0.151  t +0.72
+    lvl TOP           -0.164  t -0.75
+      block Wald chi2=19.2, df=4, p=0.000818
+    indoors           +0.033  t +1.50
+      block Wald chi2=2.2, df=1, p=0.1298
+
+VARIANT — directional ladder only (coded absent)   n = 3,631
+    cohort            +0.265  t +24.65 *
+      block Wald chi2=607.8, df=1, p=3.632e-60
+    class II          +0.054  t +1.28
+    class III         +0.077  t +0.83
+    class IVab        -0.001  t -0.01
+    class IVc         -0.063  t -0.54
+    class V/VI        -0.088  t -0.89
+    class VIIab       +0.094  t +0.59
+      block Wald chi2=4.4, df=6, p=0.6226
+    edu none          -0.083  t -0.45
+    edu secondary     -0.046  t -0.69
+    edu college       -0.077  t -1.34
+    edu master        -0.043  t -0.86
+    edu doctorate     -0.010  t -0.12
+    edu graduate      +0.010  t +0.22
+    edu professional  -0.064  t -1.35
+      block Wald chi2=4.5, df=7, p=0.7181
+    prom Q2           -0.059  t -1.32
+    prom Q3           +0.168  t +3.57 *
+    prom Q4           +0.175  t +3.64 *
+    prom Q5           +0.152  t +3.14 *
+      block Wald chi2=43.5, df=4, p=3.451e-08
+    dir free          -0.102  t -1.71
+    dir bottom        +0.023  t +0.52
+    dir middle        -0.051  t -0.80
+    dir top           +0.004  t +0.09
+      block Wald chi2=10.2, df=4, p=0.03702
+    indoors           +0.056  t +2.77 *
+      block Wald chi2=7.7, df=1, p=0.005561
+
+VARIANT — coded ladder only (directional absent)   n = 3,631
+    cohort            +0.265  t +24.64 *
+      block Wald chi2=607.3, df=1, p=3.898e-60
+    class II          +0.012  t +0.29
+    class III         +0.036  t +0.35
+    class IVab        +0.009  t +0.13
+    class IVc         -0.123  t -1.14
+    class V/VI        -0.190  t -1.88
+    class VIIab       -0.073  t -0.45
+      block Wald chi2=5.1, df=6, p=0.5363
+    edu none          -0.100  t -0.54
+    edu secondary     -0.039  t -0.59
+    edu college       -0.080  t -1.40
+    edu master        -0.043  t -0.87
+    edu doctorate     -0.020  t -0.24
+    edu graduate      +0.013  t +0.29
+    edu professional  -0.068  t -1.44
+      block Wald chi2=5.1, df=7, p=0.6475
+    prom Q2           -0.060  t -1.33
+    prom Q3           +0.169  t +3.60 *
+    prom Q4           +0.178  t +3.72 *
+    prom Q5           +0.160  t +3.30 *
+      block Wald chi2=45.4, df=4, p=1.648e-08
+    lvl FREE          -0.086  t -3.63 *
+    lvl BOTTOM        +0.002  t +0.04
+    lvl MIDDLE        -0.003  t -0.02
+    lvl TOP           +0.066  t +0.44
+      block Wald chi2=25.3, df=4, p=6.209e-05
+    indoors           +0.047  t +2.30 *
+      block Wald chi2=5.3, df=1, p=0.02026
 
 ==================================================================
 PROVINCES — the same, plus ministerial office
@@ -167,45 +245,49 @@ PROVINCES — the same, plus ministerial office
 class mix: {'II': 181, 'I': 102, 'IVab': 53, 'V/VI': 15, 'VIIab': 5, 'IVc': 13, 'III': 8}
 
 JOINT without office (same sample)   n = 377
-    cohort            +0.299  t +8.21 *
-      block Wald chi2=67.4, df=1, p=1.458e-12
-    class II          -0.181  t -1.31
-    class III         -0.860  t -4.42 *
-    class IVab        -0.202  t -1.17
-    class IVc         -0.033  t -0.13
-    class V/VI        -0.638  t -2.62 *
-    class VIIab       -0.425  t -1.08
-      block Wald chi2=27.8, df=6, p=0.0001273
-    edu secondary     -0.263  t -0.90
-    edu college       +0.032  t +0.27
-    edu graduate      -0.185  t -1.77
-    edu professional  -0.425  t -2.62 *
-      block Wald chi2=10.1, df=4, p=0.03831
-    prom Q2           +0.023  t +0.18
-    prom Q3           -0.228  t -1.78
-    prom Q4           -0.111  t -0.85
-    prom Q5           -0.500  t -3.58 *
-      block Wald chi2=18.9, df=4, p=0.0009439
+    cohort            +0.299  t +8.26 *
+      block Wald chi2=68.2, df=1, p=1.119e-12
+    class II          -0.244  t -1.75
+    class III         -0.918  t -4.72 *
+    class IVab        -0.258  t -1.48
+    class IVc         -0.106  t -0.41
+    class V/VI        -0.698  t -2.85 *
+    class VIIab       -0.467  t -1.18
+      block Wald chi2=29.4, df=6, p=6.62e-05
+    edu secondary     -0.250  t -0.85
+    edu college       +0.040  t +0.33
+    edu master        -0.170  t -1.50
+    edu doctorate     -0.456  t -2.16 *
+    edu graduate      +0.032  t +0.18
+    edu professional  -0.479  t -2.91 *
+      block Wald chi2=13.3, df=6, p=0.03801
+    prom Q2           +0.039  t +0.30
+    prom Q3           -0.203  t -1.55
+    prom Q4           -0.083  t -0.62
+    prom Q5           -0.468  t -3.23 *
+      block Wald chi2=16.7, df=4, p=0.002359
 
 JOINT with office   n = 377
-    cohort            +0.288  t +7.77 *
-      block Wald chi2=60.3, df=1, p=1.289e-11
-    class II          -0.172  t -1.22
-    class III         -0.816  t -3.82 *
-    class IVab        -0.198  t -1.15
-    class IVc         -0.024  t -0.09
-    class V/VI        -0.621  t -2.53 *
-    class VIIab       -0.434  t -1.10
-      block Wald chi2=20.3, df=6, p=0.002614
-    edu secondary     -0.277  t -0.97
-    edu college       +0.007  t +0.06
-    edu graduate      -0.199  t -1.91
-    edu professional  -0.408  t -2.49 *
-      block Wald chi2=9.5, df=4, p=0.04907
-    prom Q2           +0.033  t +0.25
-    prom Q3           -0.210  t -1.64
-    prom Q4           -0.072  t -0.55
-    prom Q5           -0.435  t -3.00 *
-      block Wald chi2=14.5, df=4, p=0.00591
-    office            -0.229  t -1.90
-      block Wald chi2=3.6, df=1, p=0.05438
+    cohort            +0.288  t +7.81 *
+      block Wald chi2=61.0, df=1, p=1.034e-11
+    class II          -0.241  t -1.70
+    class III         -0.878  t -4.09 *
+    class IVab        -0.260  t -1.50
+    class IVc         -0.103  t -0.40
+    class V/VI        -0.687  t -2.77 *
+    class VIIab       -0.482  t -1.22
+      block Wald chi2=21.4, df=6, p=0.001666
+    edu secondary     -0.264  t -0.92
+    edu college       +0.013  t +0.11
+    edu master        -0.181  t -1.62
+    edu doctorate     -0.500  t -2.36 *
+    edu graduate      +0.029  t +0.16
+    edu professional  -0.467  t -2.81 *
+      block Wald chi2=13.1, df=6, p=0.04108
+    prom Q2           +0.050  t +0.38
+    prom Q3           -0.183  t -1.39
+    prom Q4           -0.040  t -0.30
+    prom Q5           -0.397  t -2.64 *
+      block Wald chi2=12.7, df=4, p=0.01265
+    office            -0.244  t -2.02 *
+      block Wald chi2=4.1, df=1, p=0.04088

@@ -18,7 +18,9 @@ blocks included, where it is the t test).
   cohort      birth decade, centred at 1960
   class       EGP category, baseline class I -- EVERY category present enters
               as a dummy (no small-cell fold into baseline; the SEs speak)
-  education   level dummies, bachelor baseline (the education table's coding)
+  education   level dummies, bachelor baseline (the education table's
+              coding), with the graduate rung split by recorded degree into
+              master's / doctorate / graduate-unrecorded (edu_split_graduate)
   prominence  quintiles of Wikipedia article length, Q1 baseline -- the bins,
               not a line, because the shape is not linear (Appendix D.3)
   dir ladder  the directional altitude ladder, all four levels (free, bottom,
@@ -73,7 +75,15 @@ RANK_RE = re.compile(
 MARKING = ("ab", "bc", "mb", "nl", "ns", "on", "pe", "sk")
 LV = PE.LV
 
-EDU_DUM = ["secondary", "college", "graduate", "professional"]   # vs bachelor
+# vs bachelor; "graduate" = a graduate degree whose kind no source records
+# (edu_split_graduate.py splits the rest into master's and doctorate);
+# "none" enters as its own dummy -- folding its 14 members into the
+# bachelor baseline would repeat the class small-cell mistake. LV_OK is
+# the post-split membership filter (the split renames graduate members,
+# so filtering on LV alone would silently drop them).
+EDU_DUM = ["none", "secondary", "college", "master", "doctorate",
+           "graduate", "professional"]
+LV_OK = set(LV) | {"master", "doctorate"}
 PROM_DUM = ["Q2", "Q3", "Q4", "Q5"]                              # vs Q1
 DIR_KEYS = ["dir_free", "dir_bottom", "dir_middle", "dir_top"]
 LVL_KEYS = ["lvl_FREE", "lvl_BOTTOM", "lvl_MIDDLE", "lvl_TOP"]
@@ -131,6 +141,24 @@ def load_office():
     return share
 
 
+def apply_edu_split(rows):
+    """refine edu == graduate into master / doctorate where a source records
+    the degree (graduate_degree_split.json); the rest stay graduate."""
+    p = os.path.join(HERE, "graduate_degree_split.json")
+    sp = json.load(open(p))
+    n = Counter()
+    for r in rows:
+        if r.get("edu") != "graduate":
+            continue
+        parts = r["member"].split("|")
+        c = sp["provkey"].get("|".join(parts[:2])) or \
+            (sp["t1key"].get(parts[1]) if len(parts) > 1 else None)
+        if c:
+            r["edu"] = c
+        n[c or "unrecorded"] += 1
+    print("graduate split on panel:", dict(n))
+
+
 def load_occ():
     """member key -> the 8 ladder levels + indoors, raw.
 
@@ -178,7 +206,8 @@ def design(rows, blocks, cats):
     """(y, X, index map) for the requested predictor blocks."""
     y, X, idx = [], [], {}
     col = 1
-    widths = {"class": lambda: len(cats["class"]), "edu": lambda: len(EDU_DUM),
+    widths = {"class": lambda: len(cats["class"]),
+              "edu": lambda: len(cats["edu"]),
               "prominence": lambda: len(PROM_DUM), "dirlad": lambda: 4,
               "codlad": lambda: 4}
     for b in blocks:
@@ -193,7 +222,8 @@ def design(rows, blocks, cats):
             elif b == "class":
                 row += [1.0 if r["egp"] == c else 0.0 for c in cats["class"]]
             elif b == "edu":
-                row += [1.0 if r["edu"] == e else 0.0 for e in EDU_DUM]
+                row += [1.0 if r["edu"] == e else 0.0
+                        for e in cats["edu"]]
             elif b == "prominence":
                 row += [1.0 if r["promq"] == q else 0.0 for q in (1, 2, 3, 4)]
             elif b == "dirlad":
@@ -210,7 +240,7 @@ def design(rows, blocks, cats):
 
 
 NAMES = {"class": lambda cats: [f"class {c}" for c in cats["class"]],
-         "edu": lambda cats: [f"edu {e}" for e in EDU_DUM],
+         "edu": lambda cats: [f"edu {e}" for e in cats["edu"]],
          "prominence": lambda cats: [f"prom {q}" for q in PROM_DUM],
          "dirlad": lambda cats: [f"dir {k.split('_')[1]}" for k in DIR_KEYS],
          "codlad": lambda cats: [f"lvl {k.split('_')[1]}" for k in LVL_KEYS]}
@@ -238,6 +268,7 @@ def main():
         r["logdepth"] = depth.get(depth_key(r["member"]))
     ok = [r for r in rows
           if r["bd"] is not None and r.get("z") is not None]
+    apply_edu_split(ok)
     print(f"{len(ok):,} legislators with birth year and a z score, "
           f"{len({r['chamber'] for r in ok})} chambers")
     print("coverage among them: "
@@ -246,13 +277,15 @@ def main():
           f"prominence {sum(1 for r in ok if r['logdepth'] is not None):,}")
 
     # ---- full panel: cohort + class + education + prominence -------------
-    full = [r for r in ok if r["egp"] in PE.EGP_RANK and r["edu"] in LV
+    full = [r for r in ok if r["egp"] in PE.EGP_RANK and r["edu"] in LV_OK
             and r["logdepth"] is not None]
     assign_quintiles(full)
     # every class present enters as a dummy: a small-cell filter here would
     # silently fold those members into baseline class I
     cats = {"class": [c for c in PE.EGP if c != "I"
-                      and any(r["egp"] == c for r in full)]}
+                      and any(r["egp"] == c for r in full)],
+            "edu": [e for e in EDU_DUM
+                    if any(r["edu"] == e for r in full)]}
     print(f"\n{'='*66}\nFULL PANEL — complete cases on four predictors\n{'='*66}")
     print(f"class mix: {dict(Counter(r['egp'] for r in full))}")
     print(f"edu mix:   {dict(Counter(r['edu'] for r in full))}")
@@ -272,7 +305,9 @@ def main():
     zscore_occ(occp)
     assign_quintiles(occp)
     catso = {"class": [c for c in PE.EGP if c != "I"
-                       and any(r["egp"] == c for r in occp)]}
+                       and any(r["egp"] == c for r in occp)],
+             "edu": [e for e in EDU_DUM
+                     if any(r["edu"] == e for r in occp)]}
     print(f"\n{'='*66}\nOCC PANEL — intersected with occupational-score "
           f"coverage\n{'='*66}")
     print(f"class mix: {dict(Counter(r['egp'] for r in occp))}")
@@ -285,6 +320,14 @@ def main():
     report(occp, ["cohort", "class", "edu", "prominence",
                   "dirlad", "codlad", "indoors"], catso,
            "JOINT — plus both ladders and indoors")
+    # leave-one-out twins: is the surviving ladder an artifact of which twin
+    # entered? and does class still die with only one ladder present?
+    report(occp, ["cohort", "class", "edu", "prominence",
+                  "dirlad", "indoors"], catso,
+           "VARIANT — directional ladder only (coded absent)")
+    report(occp, ["cohort", "class", "edu", "prominence",
+                  "codlad", "indoors"], catso,
+           "VARIANT — coded ladder only (directional absent)")
 
     # ---- provinces: add office -------------------------------------------
     office = load_office()
@@ -294,7 +337,9 @@ def main():
     if len(prov) > 80:
         assign_quintiles(prov)
         catsp = {"class": [c for c in PE.EGP if c != "I"
-                           and any(r["egp"] == c for r in prov)]}
+                           and any(r["egp"] == c for r in prov)],
+                 "edu": [e for e in EDU_DUM
+                         if any(r["edu"] == e for r in prov)]}
         print(f"\n{'='*66}\nPROVINCES — the same, plus ministerial office"
               f"\n{'='*66}")
         print(f"class mix: {dict(Counter(r['egp'] for r in prov))}")
