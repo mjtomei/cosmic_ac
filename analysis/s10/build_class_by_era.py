@@ -2,17 +2,22 @@
 """Class-by-era cells: the committed generator (review CC10, CC2 follow-up).
 
 Supersedes the uncommitted in-session computation behind the previous
-class_by_era*.csv (whose exact recipe was not recoverable; this documented
-spec reproduces it to within hundredths of a z on every cell, with identical
-membership up to one member, and every qualitative claim unchanged).
+class_by_era*.csv (whose exact recipe was not recoverable; run under that
+recipe's own 1995-anchored binning, this documented spec reproduced it to
+within hundredths of a z on every cell, with identical membership up to one
+member and every qualitative claim unchanged — the binning has since moved
+to end-anchored equal bins, below).
 
 SPEC
   rows        the committed member-year panel (panel_estimation:
               provincial_rows + tier1_rows, their own >=8k-words-per-year
               and ambiguity filters), 1995 onward
-  bins        complete half-decades 1995-99 .. 2020-24, plus the PARTIAL
-              two-year bin 2025-26 (kept in the _all file, excluded from
-              the paper files -- half-sized cells, VIIab absent)
+  bins        six EQUAL five-year bins anchored at the data's end --
+              1997-2001 .. 2022-2026 -- so every bin has the same span and
+              the newest years are never the ones cut (Matthew, 2026-08-26:
+              equal sizes; drop the earliest remainder, 1995-96, not the
+              most recent). The last bin, 2022-2026, spans the machine era
+              exactly
   year z      each member-year's rate is z-scored against ALL member-years
               of its chamber x bin (unweighted mean/sd, coded or not), so
               the era rise and chamber levels are removed and only the
@@ -24,11 +29,11 @@ SPEC
               (sd/sqrt n), n
 
 WRITES
-  class_by_era_all.csv      every cell, no filters, partial bin included
-                            (column `partial` marks it)
-  class_by_era.csv          complete bins only, cells with n >= 25
-  class_by_era_grouped.csv  same, with IVc + V/VI + VIIab pooled as
-                            manual+farm (the paper figure's input)
+  class_by_era_all.csv      every cell, no n filter (the panel figure's
+                            input)
+  class_by_era.csv          cells with n >= 25
+  class_by_era_grouped.csv  IVc + V/VI + VIIab pooled as manual+farm (the
+                            gap-trend's input)
 Also prints coverage: coded members contributing vs coded members total.
 
 Usage: python build_class_by_era.py
@@ -44,17 +49,15 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import panel_estimation as PE                     # noqa: E402
 
-BINS_END = 2024          # last complete half-decade ends here
 POOL = {"IVc", "V/VI", "VIIab"}
 
 
 def era(y):
-    if y >= 2025:
-        return "2025-2026"
-    if y < 1995:
+    """five-year bins anchored to end at 2026; years before 1997 drop."""
+    if y > 2026 or y < 1997:
         return None
-    lo = 1995 + ((y - 1995) // 5) * 5
-    return f"{lo}-{lo + 4}"
+    hi = 2026 - ((2026 - y) // 5) * 5
+    return f"{hi - 4}-{hi}"
 
 
 def main():
@@ -99,26 +102,24 @@ def main():
     bins = sorted({e for e, _ in cells})
     out_all, out_paper, grouped = [], [], defaultdict(list)
     for e in bins:
-        partial = int(e) if False else (1 if e == "2025-2026" else 0)
         for c in ("I", "II", "III", "IVab", "IVc", "V/VI", "VIIab"):
             v = cells.get((e, c))
             if not v:
                 continue
             m, se, n = stat(v)
-            out_all.append((e, c, m, se, n, partial))
-            if not partial and n >= 25:
+            out_all.append((e, c, m, se, n))
+            if n >= 25:
                 out_paper.append((e, c, m, se, n))
-            if not partial:
-                if c in POOL:
-                    grouped[(e, "manual+farm")] += v
-                elif n >= 25:
-                    grouped[(e, c)] = v
+            if c in POOL:
+                grouped[(e, "manual+farm")] += v
+            elif n >= 25:
+                grouped[(e, c)] = v
 
     with open(os.path.join(HERE, "class_by_era_all.csv"), "w", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["half_decade", "egp", "mean_z", "se", "n_members", "partial"])
-        for e, c, m, se, n, p in out_all:
-            w.writerow([e, c, f"{m:.4f}", f"{se:.4f}", n, p])
+        w.writerow(["half_decade", "egp", "mean_z", "se", "n_members"])
+        for e, c, m, se, n in out_all:
+            w.writerow([e, c, f"{m:.4f}", f"{se:.4f}", n])
     with open(os.path.join(HERE, "class_by_era.csv"), "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["half_decade", "egp", "mean_z", "se", "n_members"])
@@ -139,9 +140,9 @@ def main():
     print(f"coded members with 1995+ panel years:  {in_window:,}")
     print(f"coded members contributing a cell:     {len(contributing):,}")
     print(f"cells written: all={len(out_all)}, paper={len(out_paper)}")
-    for e, c, m, se, n, p in out_all:
-        if p or n < 25:
-            print(f"  thin/partial: {e} {c:<6} {m:+.3f} se {se:.3f} n {n}")
+    for e, c, m, se, n in out_all:
+        if n < 25:
+            print(f"  thin: {e} {c:<6} {m:+.3f} se {se:.3f} n {n}")
 
 
 if __name__ == "__main__":

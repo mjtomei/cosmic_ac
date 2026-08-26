@@ -3,9 +3,9 @@
 
 Replaces the pooled single-axes figure (Matthew, 2026-08-26): same data,
 contextualised — each class carries its own se band, thin cells (n < 25,
-open markers) are shown rather than filtered, and the partial 2025-26 bin
-(two years, half-sized cells) is excluded from the figure entirely; its
-cells live in class_by_era_all.csv and none of them changes a conclusion.
+open markers) are shown rather than filtered, and the bins are six EQUAL
+five-year spans anchored at the data's end (1997-2001 .. 2022-2026), so the
+machine era arrives whole as the final bin.
 
 Reads class_by_era_all.csv (build_class_by_era.py). Writes
 class_by_era_panels.png.
@@ -25,8 +25,7 @@ LABEL = {"I": "I higher service", "II": "II lower service",
          "VIIab": "VIIab semi- and unskilled"}
 BLUE = "#1f77b4"
 
-rows = [r for r in csv.DictReader(open(os.path.join(HERE, "class_by_era_all.csv")))
-        if r["partial"] == "0"]
+rows = list(csv.DictReader(open(os.path.join(HERE, "class_by_era_all.csv"))))
 eras = sorted({r["half_decade"] for r in rows})
 ex = {e: i for i, e in enumerate(eras)}
 

@@ -153,7 +153,7 @@ def replace_appendix_refs(t):
 
 def figure_ref_anchors(t):
     subs = [
-      (r"sits\s+above\s+class\s+I\s+in\s+all\s+six\s+complete\s+half-decades",
+      (r"sits\s+above\s+class\s+I\s+in\s+every\s+bin",
        r"\g<0> (\\cref{fig:class-era})"),
       (r"carry\s+the\s+claim\.",
        r"carry the claim (\\cref{fig:altitude})."),
