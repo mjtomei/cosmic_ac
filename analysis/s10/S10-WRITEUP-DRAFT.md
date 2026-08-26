@@ -1556,8 +1556,29 @@ inside the stable shape, and they run in the same direction: the II-over-I
 gap is narrowest in the machine-era bin (+0.08, against a series high of
 +0.23), and V/VI drifts from −0.28 toward zero across the series. That is
 compression — the lower tiers closing on the peak — which is the chase
-direction, not the flight direction, and it is not yet significant (the gap
-trend is −0.022 per bin, t −1.67). The peak itself never moves.†[^r46cls]
+direction, not the flight direction, and it is neither significant (the gap
+trend is −0.022 per bin, t −1.67) nor aggregation-robust: weighting
+member-years instead of members, the machine-era gap holds at +0.121
+[+0.037, +0.202] and the trend flattens (−0.006 per bin, t −0.4), so the
+compression reading is the member-level view's and is held lightly. The
+peak itself never moves — under either aggregation.†[^r46cls]
+
+**And the stable profile hides a renewal engine.** Decomposing each
+class's movement across the six bins into continuing members against
+composition, **sitting members drift down relative to their chamber-and-
+period peers in every transition** (the within term is negative in all ten
+class-transitions, CIs excluding zero; class II stayers −0.75 summed
+across the series) **while entrants arrive above the stayers**, almost
+exactly offsetting — the register's class profile is renewed by entry, not
+maintained by incumbents. What II-over-I compression exists is a
+within-member movement (−0.18 [−0.32, −0.03]); its composition term is
+indistinguishable from zero.[^rfhk]
+
+[^rfhk]: `python build_member_cache_panel.py` (the panel-wide member ×
+    word × year cache, validated cell-for-cell against the committed
+    member-year panel) then `python peak_decomposition.py` — both gap
+    series with member-bootstrap CIs and the Firebaugh within/composition
+    split, seed 7.
 
 ![Register by EGP class, one panel per class](class_by_era_panels.png)
 
@@ -1589,9 +1610,12 @@ where the deep archive reaches and occupations are recoverable (§8.6).
     per bin, cells over the 5,391 class-coded members with any 1997+ speech;
     writes `class_by_era_all.csv` (every cell) and the complete-bin paper
     files — then `python plot_class_by_era_panels.py`. A member-**year**
-    aggregation of the same data would show the peak migrating downward — an
-    artifact of counting long-serving members once per year — which is why
-    the estimate is member-level.
+    aggregation of the same data was checked directly
+    (`peak_decomposition.py`): the peak is II or III in every bin under
+    member-level and member-year weighting alike — class I is never the
+    peak — so the shape claim is aggregation-proof; the two weightings
+    disagree only about how much the machine-era gap narrows, and that
+    disagreement is reported above.
 
 **Who the peak actually is.** The classes are coded from members' own prior
 occupations, so the peak has a concrete membership: class II is teachers (about
@@ -1927,7 +1951,20 @@ II indistinguishably (+0.011 against +0.012 — the class contrast at this
 horizon is composition, not individual switching), while the folk ladder
 shows a within-member **chase gradient**: sitting bottom members moved
 toward the risen words at nearly twice the top's rate (+0.019 against
-+0.010), middle and free between.
++0.010), middle and free between. The word level adds the first
+direction-of-diffusion evidence: fitting each word's adoption-crossing
+date per tier, **the top tier's crossing precedes the bottom's** — by
++0.27 years on the class coding (Wilcoxon p < 10⁻⁴ over 282 words; +0.15
+on the folk ladder, p = 0.003) — the order a top-originating cascade
+predicts. Held to its measurement: the lead is fractions of a year, the
+member-bootstrap interval on the median spans zero, and only seven of
+eleven individually-qualifying chambers agree — a consistent direction,
+not yet a diffusion measurement.[^rleadlag]
+
+[^rleadlag]: `python leadlag.py`, on the panel member cache: takeoff =
+    first year a word's three-year moving average exceeds twice its
+    2006–2019 mean; crossing dates per tier from cumulative adoption;
+    paired Wilcoxon across words; per-word dates in `leadlag_words.csv`.
 
 [^rperm]: `python build_flight_member_cache.py` then
     `python flight_permutation.py` (seed committed). The member-aggregated
