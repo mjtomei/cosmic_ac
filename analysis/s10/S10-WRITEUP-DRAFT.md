@@ -3250,6 +3250,32 @@ entire corpus" is a surveillance instrument before it is an assessment
 instrument; the version worth building is the one that is legible to the person
 being assessed.
 
+### 8.4 The measure against the market's measure
+
+The classification result carries a point beyond stratification. The
+classical scales are the market's own summaries of occupational position —
+ISEI is fitted to the education–income path by construction, and the
+categorical schemas were validated against employment relations — while
+the folk ladder was built blind: model-elicited from aggregated human
+expression, no outcome visible, its ordering registered before any join.
+On this outcome the blind measure absorbs the categorical schema in the
+joint model (§4.6b). Read as measurement, that is machine aggregation of
+human experience outperforming market-derived aggregation at the market's
+own kind of task — valuing position — and it is a live instance of the
+change this paper keeps meeting: structure that institutions summarised
+lossily, because tracking it was uneconomic, becoming directly measurable.
+
+The assumption doing the work should be named: this reads the register as
+reflecting something at least as real as what the market prices. We take
+that to be the safe side of the bet — a market has no physical existence
+of its own; it is itself an aggregation mechanism whose claim is to
+reflect the social structure, which is what the register instruments
+directly — but the bet is checkable, and the check is already registered
+(§8.6, item 32): tie the register, and registers like it, to productivity
+and success measures. If register intensity predicts real outcomes that
+the market's summaries miss, the point stands on measurement rather than
+argument.
+
 ### 8.5 Measuring the human contribution against an automated counterpart
 
 The most promising direction, and the least developed. Generate what a fully
@@ -3765,6 +3791,16 @@ study has not already built.
     models holds both the benign source-governance lever and the
     per-individual steering one, and the difference between them is
     consent and visibility, not capability.
+
+36. **Human-rater elicitation of the folk image (Matthew, 2026-08-27; gated
+    on a journal-submission decision).** The folk ladder's element
+    signatures came from machine coders — aggregates of human expression,
+    queried as such. A Prolific-style panel (200–400 quota-matched raters
+    assigning elements or occupations to the free / bottom / middle / top
+    image; several hundred pounds all-in) would turn the name into a
+    finding either way: high model–human agreement is direct evidence for
+    the aggregation argument, and disagreement would localise what the
+    models add beyond the population image. Deliberately not run now.
 
 Collecting covariates for this study produced something with uses well outside
 it: birth year, education, prior occupation, EGP class and Wikipedia prominence

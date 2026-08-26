@@ -72,7 +72,7 @@ NUMMAP = {
  "4.6b":"sec:class","4.7":"sec:posttraining","4.7a":"sec:coverage",
  "4.8":"sec:permeation","4.9":"sec:quality","5":"sec:limits","6":"sec:policy",
  "7":"sec:related","8":"sec:discussion","8.1":"sec:disc-limit","8.2":"sec:disc-norms",
- "8.3":"sec:disc-substitution","8.4":"sec:disc-proxy","8.5":"sec:disc-human","8.6":"sec:future",
+ "8.3":"sec:disc-substitution","8.4":"sec:disc-proxy","8.4":"sec:market-measure","8.5":"sec:disc-human","8.6":"sec:future",
 }
 APPMAP = {
  "A":"app:null","B":"app:superseded","C":"app:repro","D":"app:robustness",
