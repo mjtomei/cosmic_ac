@@ -2680,6 +2680,30 @@ not from per-text outcomes.[^s-bmeth]
 
 [^s-bmeth]: `BYPASS_METHODOLOGY.md`.
 
+**The evasion is not Pangram-specific — but the alternatives barely detect
+this genre to begin with.** Scoring the 341 final variants and their 65
+originals on three open detectors it never targeted — Fast-DetectGPT,
+Binoculars, and the DetectLLM log-rank ratio, each thresholded at the 5%
+false-positive point on 1,255 pre-2022 human controls — **79% of the
+Pangram-evading variants evade all four detectors at once**, and each open
+detector individually flags only 6–10% of them. The transfer is nearly
+complete, but the honest reason is two-sided: these zero-shot detectors are
+weak on institutional prose in the first place, catching just 26%
+(Fast-DetectGPT), 17% (log-rank) and 6% (Binoculars) of the un-rewritten
+machine text Pangram flagged — the same collapse §7 documents on this
+register. So the multi-detector test cannot show a *strong* evader
+defeating *strong* alternatives; what it shows is that the one calibrated
+detector's verdict is not idiosyncratic — a rewrite tuned past it is past
+the others too — and that no detector available to us holds this genre
+under directed effort.[^strans]
+
+[^strans]: `python score_multistat.py` (Fast-DetectGPT, Binoculars and LRR
+    from one committed Falcon-pair pass) on the assembled variants and
+    controls, then `python detector_transfer.py`. Thresholds are each
+    detector's 95th control percentile; the per-run split is in the output
+    (the uniform GO run evades harder — 1–4% open-detector flags — than the
+    contrastively-seeded NB run at 9–14%).
+
 
 **The denominator is targets searched, not targets that yielded a variant.**
 The search submits a rewrite to Pangram only when its Opus proxy score drops

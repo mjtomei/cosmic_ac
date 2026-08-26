@@ -1,0 +1,17 @@
+controls 1255, variants 341, originals 65
+
+detector           thresh(95%ctl)  orig flagged variant flagged
+Fast-DetectGPT             1.6585        26.2%            7.0%
+log-rank ratio             2.1715        16.9%            5.9%
+Binoculars                 1.0741         6.2%           10.3%
+
+Transfer — a rewrite that beat Pangram, still caught by the open detector:
+  Fast-DetectGPT     still flags   7.0% of the Pangram-evading variants
+  log-rank ratio     still flags   5.9% of the Pangram-evading variants
+  Binoculars         still flags  10.3% of the Pangram-evading variants
+
+  any of the three still flags 21.1% of variants; 78.9% evade all four detectors at once
+
+by run (variant flag rate per detector):
+  go_all     n=129  Fast-DetectGPT 1%  log-rank ratio 0%  Binoculars 4%
+  nb_v3      n=212  Fast-DetectGPT 11%  log-rank ratio 9%  Binoculars 14%
