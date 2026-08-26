@@ -1771,6 +1771,34 @@ word-selective avoidance. Chase below the peak, flight above it, near-
 indifference off the ladder: the full fashion-cycle geometry, read from
 one instrument's levels, at group level.
 
+**Calibrated, and checked within members at the horizon where that makes
+sense.** Because the compared groups differ in size, even the decoupled
+statistic needs a calibrated null: shuffling the class labels across the
+682 class-I-and-II members within their provinces, text held fixed, the
+null runs mildly negative on its own — and the observed member-aggregated
+series clears it at **p = 0.021 / 0.022 / 0.002** for the 300+/800+/1500+
+thresholds (not at 100+, p = 0.12), with split halves agreeing in
+sign.[^rperm] The within-member check is scoped to the takeoff window —
+over a thirty-year cycle careers are shorter than the trend, so the
+standing claim is compositional — and at that horizon it sharpens the
+geometry: among members speaking in both 2018–22 and 2023–26, everyone's
+share of style usage on high-lift words rose (the era rise), classes I and
+II indistinguishably (+0.011 against +0.012 — the class contrast at this
+horizon is composition, not individual switching), while the folk ladder
+shows a within-member **chase gradient**: sitting bottom members moved
+toward the risen words at nearly twice the top's rate (+0.019 against
++0.010), middle and free between.
+
+[^rperm]: `python build_flight_member_cache.py` then
+    `python flight_permutation.py` (seed committed). The member-aggregated
+    universe (members with class coding and 2023–26 speech) runs somewhat
+    stronger than the group-cache series quoted above (−0.17/−0.28/−0.34/
+    −0.46); the permutation p-values are computed within that universe,
+    observed against its own null. The takeoff check is the change in each
+    member's share of style-word usage falling on top-tercile-lift words,
+    2018–22 → 2023–26, ≥200 style tokens in each window, member-bootstrap
+    CIs.
+
 [^rdecouple]: The original specification computed lift from the all-class
     pooled corpus, which contains the compared strata: a word risen through
     class II is then mechanically both high-lift and low-I/II, so part of a

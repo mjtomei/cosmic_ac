@@ -1,0 +1,23 @@
+I/II members with 2023-26 speech: 682 (I 246, II 436)
+
+observed (member-aggregated, decoupled lift):
+    100+  rho -0.174 (n 283)
+    300+  rho -0.284 (n 208)
+    800+  rho -0.338 (n 143)
+   1500+  rho -0.462 (n 107)
+
+permutation null (1000 draws, labels shuffled within province):
+    100+  null 95% [-0.235,+0.125]  mean -0.059   p(rho<=obs) = 0.121
+    300+  null 95% [-0.273,+0.183]  mean -0.056   p(rho<=obs) = 0.021
+    800+  null 95% [-0.332,+0.188]  mean -0.075   p(rho<=obs) = 0.022
+   1500+  null 95% [-0.364,+0.161]  mean -0.104   p(rho<=obs) = 0.002
+split-half even: -0.05(n286)  -0.15(n209)  -0.20(n141)
+split-half  odd: -0.18(n283)  -0.29(n214)  -0.35(n146)
+
+TAKEOFF WITHIN-MEMBER (change in high-lift share of style usage, 2018-22 -> 2023-26; members in both windows):
+  class I      n  180  Δshare +0.0108  [+0.0076,+0.0140]
+  class II     n  304  Δshare +0.0116  [+0.0091,+0.0143]
+  folk bottom  n   59  Δshare +0.0187  [+0.0125,+0.0248]
+  folk free    n   77  Δshare +0.0130  [+0.0086,+0.0178]
+  folk middle  n  271  Δshare +0.0132  [+0.0100,+0.0165]
+  folk top     n  189  Δshare +0.0102  [+0.0073,+0.0132]
