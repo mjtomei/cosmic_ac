@@ -28,13 +28,20 @@ LABEL = {"I": "I higher service", "II": "II lower service",
 BLUE = "#1f77b4"
 
 rows = list(csv.DictReader(open(os.path.join(HERE, "class_by_era_all.csv"))))
+grows = [r for r in csv.DictReader(open(os.path.join(HERE, "class_by_era_grouped.csv")))
+         if r["group"] == "manual+farm"]
 eras = sorted({r["half_decade"] for r in rows})
 ex = {e: i for i, e in enumerate(eras)}
 
 fig, axes = plt.subplots(2, 4, figsize=(11.8, 5.2), sharey=True, sharex=True)
-for ax, cls in zip(axes.flat, ORDER):
-    pts = sorted((ex[r["half_decade"]], float(r["mean_z"]), float(r["se"]),
-                  int(r["n_members"])) for r in rows if r["egp"] == cls)
+panels = [(cls, LABEL[cls],
+           sorted((ex[r["half_decade"]], float(r["mean_z"]), float(r["se"]),
+                   int(r["n_members"])) for r in rows if r["egp"] == cls))
+          for cls in ORDER]
+panels.append(("pool", "IVc + V/VI + VIIab pooled",
+               sorted((ex[r["half_decade"]], float(r["mean_z"]), float(r["se"]),
+                       int(r["n_members"])) for r in grows)))
+for ax, (cls, label, pts) in zip(axes.flat, panels):
     xs = [p[0] for p in pts]
     ys = [p[1] for p in pts]
     ses = [p[2] for p in pts]
@@ -61,12 +68,11 @@ for ax, cls in zip(axes.flat, ORDER):
             ax.annotate(f"{n}", (x, y), textcoords="offset points",
                         xytext=(0, 5), fontsize=6.5, color="0.4",
                         ha="center")
-    ax.set_title(LABEL[cls], fontsize=10.5, loc="left")
+    ax.set_title(label, fontsize=10.5, loc="left")
     ax.set_xticks(range(len(eras)))
     ax.set_xticklabels([e[2:4] + "–" + e[7:] for e in eras],
                        fontsize=7.5)
     ax.tick_params(labelsize=8)
-axes.flat[-1].axis("off")
 fig.supylabel("register, z within chamber × period", fontsize=10)
 # no suptitle: the paper caption carries the description
 fig.tight_layout(rect=(0.012, 0, 1, 1))

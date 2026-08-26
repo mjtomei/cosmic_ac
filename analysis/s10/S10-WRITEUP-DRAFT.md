@@ -1110,8 +1110,9 @@ trend is −0.022 per bin, t −1.67). The peak itself never moves.
 
 ![Register by EGP class, one panel per class](class_by_era_panels.png)
 
-*The class profile of the register, 1997–2026, one panel per class, in six
-equal five-year bins whose last is the machine era (2022–26): member-level
+*The class profile of the register, 1997–2026, one panel per class plus
+the pooled tail, in six equal five-year bins whose last is the machine era
+(2022–26): member-level
 means over 22 chambers, z-scored within chamber × period, so the overall
 era rise is removed and each panel reads as that class's position against
 its chamber-and-period average — a rising panel is a class gaining relative
@@ -1121,7 +1122,8 @@ annotated). Error bars are ±1 se; the dotted line is each panel's
 member-weighted linear trend. Class II holds above class I in every
 bin; farmers and VIIab hold the floor; III — thin at 26–85 members — stays
 elevated and tilts higher; V/VI climbs slowly toward zero, the one tail
-series that moves.* †[^r46cls]
+series that moves; and the pooled tail (last panel) sits below the pack in
+every bin.* †[^r46cls]
 
 The era test cannot say who originated the form. Class I is never at the top,
 not even in 1997–2001 — but class coding only becomes substantial around 2005,
