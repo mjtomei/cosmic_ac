@@ -1117,7 +1117,8 @@ era rise is removed and each panel reads as that class's position against
 its chamber-and-period average — a rising panel is a class gaining relative
 to its peers, not the register rising absolutely. Every cell with any
 members is drawn; open markers carry fewer than 25 members (count
-annotated). Error bars are ±1 se. Class II holds above class I in every
+annotated). Error bars are ±1 se; the dotted line is each panel's
+member-weighted linear trend. Class II holds above class I in every
 bin; farmers and VIIab hold the floor; III — thin at 26–85 members — stays
 elevated; V/VI climbs slowly toward zero, the one tail series that
 moves.* †[^r46cls]

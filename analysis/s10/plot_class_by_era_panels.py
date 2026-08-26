@@ -5,7 +5,9 @@ Replaces the pooled single-axes figure (Matthew, 2026-08-26): same data,
 contextualised — each class carries its own se band, thin cells (n < 25,
 open markers) are shown rather than filtered, and the bins are six EQUAL
 five-year spans anchored at the data's end (1997-2001 .. 2022-2026), so the
-machine era arrives whole as the final bin.
+machine era arrives whole as the final bin. Each panel carries a dotted
+member-weighted linear trend (WLS of the bin means on bin index, weights =
+cell member counts).
 
 Reads class_by_era_all.csv (build_class_by_era.py). Writes
 class_by_era_panels.png.
@@ -41,6 +43,16 @@ for ax, cls in zip(axes.flat, ORDER):
                     [y + s for y, s in zip(ys, ses)],
                     color=BLUE, alpha=0.16, lw=0, zorder=2)
     ax.plot(xs, ys, "-", color=BLUE, lw=1.5, zorder=3)
+    ns = [p[3] for p in pts]
+    W = sum(ns)
+    xw = sum(n * x for n, x in zip(ns, xs)) / W
+    yw = sum(n * y for n, y in zip(ns, ys)) / W
+    den = sum(n * (x - xw) ** 2 for n, x in zip(ns, xs))
+    if den:
+        b = sum(n * (x - xw) * (y - yw) for n, x, y in zip(ns, xs, ys)) / den
+        x0, x1 = min(xs), max(xs)
+        ax.plot([x0, x1], [yw + b * (x0 - xw), yw + b * (x1 - xw)],
+                ":", color=BLUE, lw=1.3, alpha=0.85, zorder=2.5)
     for x, y, s, n in pts:
         thin = n < 25
         ax.plot([x], [y], "o", ms=4.2, zorder=4, color=BLUE,
