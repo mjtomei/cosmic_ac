@@ -1,0 +1,23 @@
+regime-flagged chambers held out (as in the headline): ['TAS']
+=== 0. YEAR SPLIT AT THE HEADLINE ESTIMAND (banded, all bands) ===
+   2025: n= 2162   7.36%  [6.13%,8.62%]
+   2026: n= 1357  11.70%  [9.86%,13.67%]
+ pooled: n= 3519   9.03%  [7.99%,10.09%]
+
+=== RANDOM EFFECTS ON THE BANDED CHAMBER RATES ===
+20 chambers: tau=0.561, I2=0.78; raw spread 11.1x (1.8%-19.8%); EB-shrunken 4.3x (4.3%-18.3%)
+
+=== 1. YEAR SPLIT, LONG BAND (companion) ===
+headline estimand: fraction-weighted word rate = sum(fraction_ai x n_words)/sum(n_words) over the prevalence draw;
+binary companion: flagged-word rate = share of words in AI/Mixed-flagged segments.
+
+   2025: n= 1361  fraction-weighted  8.53% [7.09%,10.04%]   binary 11.04% [9.23%,12.84%]
+   2026: n=  859  fraction-weighted 12.91% [10.70%,15.28%]   binary 16.76% [14.00%,19.54%]
+ pooled: n= 2220  fraction-weighted 10.20% [8.86%,11.48%]   binary 13.22% [11.78%,14.64%]
+
+=== 2. SPEAKER-CLUSTERED BOOTSTRAP (pooled, fraction-weighted) ===
+2,340 segments from 1089 chamber-speaker clusters
+segment-resampled: [8.96%,11.46%]
+speaker-resampled: [8.83%,11.60%]   design effect 1.23
+
+=== 3. RANDOM-EFFECTS ACROSS CHAMBERS ===

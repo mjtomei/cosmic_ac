@@ -202,7 +202,18 @@ near-certain, costs at most about a fifth of a point.\footnote{\texttt{python\ b
 transcription-convention shift caught by \cref{sec:hazards}\textquotesingle s diagnostic).
 The estimate is population-level throughout: it describes the corpus, not
 any individual speech or speaker --- a segment verdict is an instrument
-reading, not an attribution.
+reading, not an attribution. Nor is the window one regime: split by year at
+the same estimand, \textbf{2025 runs 7.36\% {[}6.13\%, 8.62\%{]} and 2026 runs 11.70\%
+{[}9.86\%, 13.67\%{]}} --- the scalar is the average of a still-rising series, not
+a steady state, and comparisons against it should say which year they
+mean.\footnote{\texttt{python\ prevalence\_\allowbreak{}robustness.\allowbreak{}py} --- the year split at the
+  banded headline estimand, the speaker-clustered bootstrap, and the
+  random-effects fit behind the shrunken spread below.} The interval is robust to the clustering unit: the 2,340
+long-band segments come from 1,089 chamber-speaker clusters, and resampling
+speakers instead of segments moves the pooled interval imperceptibly
+(design effect 1.23).\footnote{\texttt{python\ prevalence\_\allowbreak{}robustness.\allowbreak{}py} --- the year split at the
+  banded headline estimand, the speaker-clustered bootstrap, and the
+  random-effects fit behind the shrunken spread below.}
 
 Every figure below is the share of \emph{what was said} that is machine-drafted,
 over the whole of the record Pangram will read.
@@ -302,8 +313,12 @@ could be false positives --- slack that matters only for the lowest rows
 (US Senate 1.8\%, UK 2.5\%) and not for the spread.
 
 The spread is the finding, not noise around a mean: chamber rates run from
-1.8\% to 19.8\%, an elevenfold range. What drives a chamber\textquotesingle s position is not
-established here --- even two chambers of one legislature can sit far apart
+1.8\% to 19.8\%, an elevenfold range --- and it survives shrinkage: a
+random-effects fit across the twenty chambers (logit-scale \(\tau\) = 0.56,
+I\({}^{2}\) = 0.78) leaves the empirical-Bayes range at 4.3\% to 18.3\%, still
+better than fourfold after every chamber is pulled toward the pool, so the
+raw extremes overstate the spread but the heterogeneity itself is real.
+What drives a chamber\textquotesingle s position is not established here --- even two chambers of one legislature can sit far apart
 (\cref{sec:future} B4), and the study does not attribute the between-chamber differences to
 any measured cause.
 
