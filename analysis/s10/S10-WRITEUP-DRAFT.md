@@ -892,6 +892,17 @@ instruct-tuning later selected for, for thirty years.** †[^dag]
     eight style words — `this` among them — matched far below their own
     frequency; the donor pool here does not exclude them.
 
+[^rptchecks]: `python ladder_length_control.py` (reproduces the shipped
+    +1.2412 exactly, then re-runs every stage delta under three truncation
+    rules with paired word-bootstraps) and `python pref_pairs_register.py`
+    (the full public OLMo-2 and Tulu-3 preference mixtures, 601k pairs;
+    pair-bootstrap CIs; the length regression puts the equal-length
+    intercept at −0.11 (t −1.7) and +0.05 (t 0.6) on the two mixtures, and
+    the within-pair log-length slope explains the raw gap in full; the
+    reversal is on 19k same-model pairs and carries its own caveat, being
+    the constraint-compliance subset). The prompting arms are
+    `python olmo_urial_arms.py`.
+
 [^dag]: Daggered numbers are carried from earlier in the study and were
     re-derived from their artifacts; the full key and per-number sources are
     in the Supplementary provenance note.
@@ -2187,8 +2198,32 @@ DPO − SFT = −0.08, 95% CI [−0.31, +0.15]), so no stage ordering is support
 "largest at the preference stage" was the control pedestal's artifact, not
 the data (Appendix B). What remains true, and
 is kept as a datapoint rather than a load-bearing link: the register is
-installed by the stages tuned toward human demonstrations and preferences, and
-not by the stage tuned toward verifiable correctness. That is consistent with
+installed by the stages trained on human demonstrations and preferences, and
+not by the stage trained on verifiable math and code — stated as a *data*
+claim, not an objective claim, because on this ladder the two are
+confounded: the SFT and DPO stages train on chat while RLVR trains on a
+different domain, so "the RLVR objective doesn't install it" and "the RLVR
+data isn't chat" cannot be separated here. Three checks tighten what can
+be said.[^rptchecks] The stage pattern is **length-robust**: truncating
+every generation to its prompt-group's common length shaves 13–40% off the
+two real stages and nothing off the placebo, leaving RLVR ~5× smaller at
+every truncation, and under prompt fixed effects log-length carries none
+of the signal (t = 0.2) while stage carries all of it — with one honest
+flag, that on the strictest fixed-length panel the DPO stage's log-ratio
+metric becomes indistinguishable from the placebo's, and only the rate
+metric keeps it clearly ahead. The **prompting arms** bound the surface
+share directly (the committed ladder used raw prompts at every stage, so
+the +1.24 was never a chat-template artifact; the base-with-stylistic-
+prefix and instruct-with-template arms are reported with the ladder's
+files). And the tempting stronger story — *that the preference data itself
+prefers the register* — was tested on the two public mixtures and **does
+not survive its controls**: across 601k chosen-vs-rejected pairs the raw
+register tilt toward the chosen response (+1.08 and +0.70 per 1,000) is
+fully accounted for by chosen responses being longer and coming from
+stronger models — at equal length the gap is statistically zero, and
+within same-model pairs it reverses — so the labels-read-the-register
+mechanism is not supported, and the on-model ladder carries the stage
+claim alone. That is consistent with
 §4.5's reading that alignment concentrates something humans already favoured —
 an association, not an identified mechanism, and the section's argument no
 longer rests on it. The correction
