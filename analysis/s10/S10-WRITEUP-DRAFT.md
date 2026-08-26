@@ -1159,8 +1159,9 @@ as the top tier's abandonment propagates, so peak location is dynamics, not
 structure (an era-resolved peak test is future work).
 
 **Education makes the same inverted U, and it is the same people.** Read as
-levels rather than as a ladder (22 chambers, cohort controlled, baseline
-bachelor), with the graduate rung split by recorded degree — master's versus
+levels rather than as a ladder (22 chambers, n = 4,820 — every member with
+an education level, a birth year and a register score; cohort controlled,
+baseline bachelor), with the graduate rung split by recorded degree — master's versus
 doctorate — where any source names one (61% of graduate codings; the rest
 stay a "graduate, degree unrecorded" level rather than being guessed or
 dropped):[^redusplit]
