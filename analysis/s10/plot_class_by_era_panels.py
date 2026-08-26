@@ -33,10 +33,10 @@ grows = [r for r in csv.DictReader(open(os.path.join(HERE, "class_by_era_grouped
 eras = sorted({r["half_decade"] for r in rows})
 ex = {e: i for i, e in enumerate(eras)}
 
-# 8 stacked rows, not a 2x4 grid (Matthew, 2026-08-26): at the PDF's 0.85
-# linewidth a grid shrinks panel text below readability; full-width strips
-# keep fonts near native size
-fig, axes = plt.subplots(8, 1, figsize=(6.4, 6.9), sharey=True, sharex=True)
+# 4 rows x 2 columns (Matthew, 2026-08-26): at the PDF's 0.85 linewidth the
+# old 2x4 grid shrank panel text below readability; 4x2 keeps fonts ~8pt
+# effective with panels wide enough for six labelled bins
+fig, axes = plt.subplots(4, 2, figsize=(7.2, 7.8), sharey=True, sharex=True)
 panels = [(cls, LABEL[cls],
            sorted((ex[r["half_decade"]], float(r["mean_z"]), float(r["se"]),
                    int(r["n_members"])) for r in rows if r["egp"] == cls))
@@ -71,14 +71,14 @@ for ax, (cls, label, pts) in zip(axes.flat, panels):
             ax.annotate(f"{n}", (x, y), textcoords="offset points",
                         xytext=(0, 5), fontsize=6.5, color="0.4",
                         ha="center")
-    ax.text(0.008, 0.80, label, transform=ax.transAxes, fontsize=8.5)
+    ax.set_title(label, fontsize=10.5, loc="left")
     ax.set_xticks(range(len(eras)))
-    ax.set_xticklabels([e.replace("-", "–") for e in eras], fontsize=8)
-    ax.set_yticks([-0.4, 0.0])
-    ax.tick_params(labelsize=7.5)
-fig.supylabel("register, z within chamber × period", fontsize=9)
+    ax.set_xticklabels([e[2:4] + "–" + e[7:] for e in eras], fontsize=8.5)
+    ax.set_yticks([-0.4, 0.0, 0.4])
+    ax.tick_params(labelsize=8.5)
+fig.supylabel("register, z within chamber × period", fontsize=10)
 # no suptitle: the paper caption carries the description
-fig.tight_layout(rect=(0.015, 0, 1, 1), h_pad=0.3)
+fig.tight_layout(rect=(0.015, 0, 1, 1))
 out = os.path.join(HERE, "class_by_era_panels.png")
 fig.savefig(out, dpi=160)
 print("wrote", out)
