@@ -51,7 +51,8 @@ ax.set_xticks(range(len(ORDER)))
 ax.set_xticklabels([LABEL[c] for c in ORDER], fontsize=8.5)
 ax.set_ylabel("register, z within chamber × period", fontsize=10)
 ax.set_title("The crossover holds in every half-decade: class II above class I, "
-             "manual and farm below both", fontsize=11.5, loc="left", pad=26)
+             "manual and farm at the floor (one small-cell wobble, 2025\u201326)",
+             fontsize=11.5, loc="left", pad=26)
 ax.text(0, 1.035, "error bars are ±1 se — the manual and farm classes are pooled, as §4.6a "
         "already treats them; III remains thin at 26–81 members",
         transform=ax.transAxes, fontsize=8.6, color="#777")

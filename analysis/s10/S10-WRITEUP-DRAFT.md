@@ -1095,8 +1095,13 @@ not distinguishable from II.
 **The shape holds in every period, and does not migrate.** A chase-and-flight
 cycle predicts that the originating tier abandons the form first, so the peak
 should slide downward across eras. It does not: class II sits above class I in
-all seven half-decades, and the manual-and-farm tail stays at the floor
-throughout.
+all seven half-decades, and the manual-and-farm tail sits at the floor in six
+of seven. The seventh is the 2025–26 bin, where the pooled tail rises to
++0.02, level with class I — a composition artifact of thin cells, not a
+movement: farmers stay at the floor (−0.22), VIIab is too thin to plot at
+all (n < 25), and the rise is a single 55-member V/VI cell at +0.17 ± 0.12,
+one bin after that series' own minimum, with no preceding trend. It is
+watched as a candidate inversion, and read as noise.
 
 ![Register by EGP class, one line per half-decade](class_by_era_grouped.png)
 
@@ -1107,7 +1112,8 @@ classes remains. IVc, V/VI and VIIab are pooled because separately they run
 26–113 members per period and cross each other on noise; I and II are kept
 apart because the crossover between them is the claim under test. Error bars
 are ±1 se. Class III remains thin (26–81 members) and its late excursion is not
-readable as movement.* †[^r46cls]
+readable as movement; the pooled tail's last-bin rise is a 55-member V/VI
+wobble with farmers still at the floor and VIIab too thin to plot.* †[^r46cls]
 
 The era test cannot say who originated the form. Class I is never at the top,
 not even in 1995–99 — but class coding only becomes substantial around 2005,
