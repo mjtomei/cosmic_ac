@@ -2216,10 +2216,18 @@ of the signal (t = 0.2) while stage carries all of it — with one honest
 flag, that on the strictest fixed-length panel the DPO stage's log-ratio
 metric becomes indistinguishable from the placebo's, and only the rate
 metric keeps it clearly ahead. The **prompting arms** bound the surface
-share directly (the committed ladder used raw prompts at every stage, so
-the +1.24 was never a chat-template artifact; the base-with-stylistic-
-prefix and instruct-with-template arms are reported with the ladder's
-files). And the tempting stronger story — *that the preference data itself
+share directly, and the bound is striking. The committed ladder used raw
+prompts at every stage, so the +1.24 was never a chat-template artifact —
+but a three-shot stylistic prefix on the *raw base model* elicits more
+register (46.7 per 1,000) than the whole post-training pipeline installs
+as a default (base 27.2 → instruct 44.0 on identical raw prompts): **116%
+of the base→instruct span, from conditioning alone**. And the instruct
+model under its own chat template — no stylistic exemplars, just the
+deployment format — runs at 75.0, nearly twice its raw-prompt level. The
+honest restatement: the register is a mode the base model already carries;
+what post-training moves is the *default* of unconditioned generation, and
+deployment conditions select far above that default. The stage ladder
+measures the default's installation; the ceiling was always promptable. And the tempting stronger story — *that the preference data itself
 prefers the register* — was tested on the two public mixtures and **does
 not survive its controls**: across 601k chosen-vs-rejected pairs the raw
 register tilt toward the chosen response (+1.08 and +0.70 per 1,000) is
