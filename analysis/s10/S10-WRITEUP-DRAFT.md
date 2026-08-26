@@ -946,10 +946,11 @@ First the accounting, neutral between the readings:
 
 - **Birth cohort predicts the register net of calendar time.** Regressing the
   member-year rate on spoken year and birth year together, with chamber fixed
-  effects (all 22 chambers, 61,312 member-years): birth **+0.88 per 1,000 words
-  per decade** (t = 33.8) against spoken year **+1.25 per decade** (t = 29.2).
-  A legislator born a decade later uses about +0.88/1,000 more of the register
-  *in the same year and chamber*. †[^r46a]
+  effects (all 22 chambers, 61,312 member-years, 7,027 members): birth
+  **+0.88 per 1,000 words per decade** (t = 15.7 clustered on member, 33.8 on
+  raw member-years) against spoken year **+1.25 per decade** (t = 13.9
+  clustered, 29.2 raw). A legislator born a decade later uses about +0.88/1,000
+  more of the register *in the same year and chamber*. †[^r46a]
 - **Birth is the marginally stronger organiser.** On identical rows the
   within-chamber, word-weighted correlation of the register rate is **+0.325
   with birth year** against **+0.302 with spoken year**, and birth is the
@@ -1008,11 +1009,19 @@ member-cluster bootstrap 95% intervals.*
     resolution; the five-chamber comparison is what separates the
     components.
 
-[^r46a]: `python cohort_vs_period.py`. Member-year register rate regressed on
-    spoken year and birth year with chamber fixed effects, word-weighted,
-    HC-robust; all 22 chambers now carry member birth years, 61,312
-    member-years, after the nine Australian and UK-devolved chambers were
-    collected on 2026-08-17. Within-chamber correlations are on the same rows.
+[^r46a]: `python cohort_vs_period.py`. The headline pair is the two-stamp
+    fit: member-year register rate on spoken year and birth year together,
+    chamber fixed effects, word-weighted, with errors both ways — member-year
+    HC, and clustered on member, the honest form since member-years are
+    repeated draws of the same 7,027 people. All 22 chambers carry member
+    birth years (61,312 member-years, after the nine Australian and
+    UK-devolved chambers were collected on 2026-08-17); within-chamber
+    correlations are on the same rows. The script's three-stamp fit adds
+    entry year — a second cohort clock, not a confounder — and it splits the
+    cohort credit rather than removing it (birth +0.69, t 19.4, on the
+    37,548 entry-censored rows); reported once here and not as the headline,
+    because a career clock absorbing part of a birth clock is re-description,
+    not explanation.
 
 [^r46b]: `python formation_window.py`, clustered on member (CR1): birth-decade
     coefficient +1.05 per 1,000 words per decade, t = +8.46 unadjusted and

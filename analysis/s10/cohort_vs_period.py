@@ -150,6 +150,8 @@ def main():
         if p:
             print(f"  r_{s:<7s} = {p[0]:+.3f}   (over {p[1]} chambers)")
 
+    two_stamp(panel, birth)
+
     # APC-style regression, chamber fixed effects, rate on the stamps together.
     # spoken, entry and tenure=spoken-entry are collinear, so only spoken+entry
     # go in as the period/cohort pair; birth enters as an independent 4th axis.
@@ -159,6 +161,57 @@ def main():
          "period vs cohort vs generation (birth known)")
 
     within_member(panel)
+
+
+def two_stamp(panel, birth):
+    """THE HEADLINE PAIR (review CC1): spoken year + birth year alone,
+    chamber FE, word-weighted. No entry censoring -- entry is not in this
+    model, so no member need be dropped for an unknowable true entry year.
+    Errors both ways: member-year HC1, and clustered on member (CR1) --
+    member-years are repeated draws of the same people, so the clustered t
+    is the honest one. The three-stamp APC fit below is the attenuation
+    read: adding entry year splits the cohort credit between birth cohort
+    and entry cohort."""
+    import numpy as np
+    rows = []
+    for ch, ms in panel.items():
+        for m, ys in ms.items():
+            b = birth.get(f"{ch}|{m}")
+            if not b:
+                continue
+            for y, (w, h) in ys.items():
+                if w < MIN_MEMBER_YEAR_WORDS:
+                    continue
+                rows.append((h / w * 1000, y, b, ch, w, f"{ch}|{m}"))
+    chambers = sorted({r[3] for r in rows})[1:]
+    X = np.array([[1.0, (r[1] - 1990) / 10.0, (r[2] - 1990) / 10.0]
+                  + [1.0 if r[3] == c else 0.0 for c in chambers]
+                  for r in rows])
+    y = np.array([r[0] for r in rows])
+    w = np.array([r[4] for r in rows], float)
+    n, k = X.shape
+    Xw = X * w[:, None]
+    XtXi = np.linalg.pinv(X.T @ Xw)
+    beta = XtXi @ (Xw.T @ y)
+    e = y - X @ beta
+    S = Xw * e[:, None]                      # per-row scores
+    V_hc = XtXi @ (S.T @ S) @ XtXi * n / (n - k)
+    groups = {}
+    for i, r in enumerate(rows):
+        groups.setdefault(r[5], []).append(i)
+    G = len(groups)
+    meat = np.zeros((k, k))
+    for ii in groups.values():
+        sg = S[ii].sum(axis=0)
+        meat += np.outer(sg, sg)
+    V_cr = XtXi @ meat @ XtXi * G / (G - 1) * (n - 1) / (n - k)
+    print(f"\nTWO-STAMP HEADLINE — spoken + birth, chamber FE, word-weighted"
+          f"  (n={n:,} member-years, {G:,} members):")
+    for j, nm in ((1, "spoken"), (2, "birth")):
+        b_, th, tc = beta[j], beta[j] / math.sqrt(V_hc[j, j]), \
+            beta[j] / math.sqrt(V_cr[j, j])
+        print(f"    {nm:<8s} {b_:+.3f} per decade   "
+              f"t {th:+.1f} (HC, member-year)   t {tc:+.1f} (clustered on member)")
 
 
 def within_member(panel):
