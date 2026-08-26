@@ -15,12 +15,17 @@ from office_split import RANK_RE
 style={r["word"].lower() for r in csv.DictReader(open(os.path.join(HERE,"kobak_excess_words.csv")))
        if r["type"]=="style" and r["word"].isalpha()}
 tab=json.load(open(os.path.join(HERE,"prereg_member_table.json")))
-edu={}; rung={}
+edu={}; rung={}; lvl={}
+LVK=["lvl_FREE","lvl_BOTTOM","lvl_MIDDLE","lvl_TOP"]
 for r in tab:
     if r.get("edu") in ("professional","graduate","bachelor"):
         edu[r["member"]]="edu_"+r["edu"]
     if r.get("rung") in ("executive","middle"):
         rung[r["member"]]="rung_"+r["rung"]
+    if r.get("lvl_MIDDLE") is not None:
+        # folk-ladder group = the member's highest-scoring level (argmax)
+        vals=[r[k] for k in LVK]
+        lvl[r["member"]]="lvl_"+LVK[vals.index(max(vals))].split("_")[1].lower()
 tot=Counter(); per=defaultdict(Counter)
 def add(group, yr, toks):
     tot[f"{group}|{yr}"]+=len(toks)
@@ -40,6 +45,7 @@ for path in sorted(glob.glob(os.path.join(HERE,"provinces","segments_*.jsonl")))
         groups=[]
         if key in edu: groups.append(edu[key])
         if key in rung: groups.append(rung[key])
+        if key in lvl: groups.append(lvl[key])
         groups.append("office" if RANK_RE.match(raw) else "nonoffice")
         if groups:
             toks=FW.TOKEN_RE.findall(d["text"].lower())

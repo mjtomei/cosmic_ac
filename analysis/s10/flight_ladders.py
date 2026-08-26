@@ -52,3 +52,6 @@ battery("education: professional vs bachelor", "edu_professional","edu_bachelor"
 battery("education: graduate vs bachelor", "edu_graduate","edu_bachelor")
 battery("occupation: executive vs middle", "rung_executive","rung_middle")
 battery("office vs non-office", "office","nonoffice")
+battery("folk ladder: top vs middle", "lvl_top","lvl_middle")
+battery("folk ladder: free vs middle", "lvl_free","lvl_middle")
+battery("folk ladder: bottom vs middle", "lvl_bottom","lvl_middle")

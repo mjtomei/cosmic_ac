@@ -1086,10 +1086,24 @@ alone, the figure above\textquotesingle s own estimand, on the same member-bin v
 six equal bins as \cref{sec:class}\textquotesingle s class-era panels --- free professionals sit below their
 chamber-and-period peers in every half-decade (\(-0.07\) to \(-0.11\) per sd,
 individually significant in all six bins), with no trend into the machine
-era, while bottom, middle and top stay small and flat. Like the class
-shape, the occupational shape was in place decades before the
-machines.\footnote{\texttt{python\ build\_\allowbreak{}ladder\_\allowbreak{}by\_\allowbreak{}era.\allowbreak{}py}, then
+era, while bottom, middle and top stay small and flat (formally: no
+level\textquotesingle s era trend approaches significance --- free z +1.2, middle \(-1.0\),
+top \(-0.8\), apex delta \(-0.2\)). Like the class shape, the occupational shape
+was in place decades before the machines.\footnote{\texttt{python\ build\_\allowbreak{}ladder\_\allowbreak{}by\_\allowbreak{}era.\allowbreak{}py}, then
   \texttt{python\ plot\_\allowbreak{}ladder\_\allowbreak{}by\_\allowbreak{}era\_\allowbreak{}panels.\allowbreak{}py}.}
+
+\textbf{And it holds chamber by chamber, by the test that needs no
+normalization.} The class arm\textquotesingle s crossover claim rests on a within-chamber
+meta-analysis; the measure gets the same test. Within each chamber --- each
+legislature its own control --- the member-level slope of the register on the
+free level is \textbf{negative in 21 of 22 chambers} (individually significant
+in Queensland and Scotland), and the inverse-variance meta across chambers
+is \textbf{\(-0.070\) per sd, z = \(-5.0\)}; the apex delta pools at \textbf{+0.059, z =
++4.2}. Split by chamber group the replication is a sweep --- negative in every
+group: the nine 2026 additions (meta z \(-4.1\)), the eight Canadian provinces
+(z \(-2.5\)), and the five tier-1 national chambers (z \(-2.2\)).\footnote{\texttt{python\ ladder\_\allowbreak{}chamber\_\allowbreak{}meta.\allowbreak{}py} --- per-chamber OLS slope of
+  member z on the folk free level (per sd within chamber, HC1),
+  inverse-variance pooled; the apex-delta meta from the same cells.}
 
 \begin{figure}[htbp]
 \centering
@@ -1609,9 +1623,23 @@ same corpus, the same words, and the tops overlap heavily --- but as a
 robustness family they say the avoidance belongs to status-tops generally,
 not to one coding of class.\footnote{\texttt{python\ build\_\allowbreak{}ladder\_\allowbreak{}word\_\allowbreak{}year.\allowbreak{}py} (one provincial scan;
   education and rung membership from \texttt{prereg\_\allowbreak{}member\_\allowbreak{}table.\allowbreak{}json}, office
-  from the rank-marked speaker form as in \texttt{office\_split.py}) then
-  \texttt{python\ flight\_\allowbreak{}ladders.\allowbreak{}py} --- same lift, same thresholds, same estimator
-  as the class test.}
+  from the rank-marked speaker form as in \texttt{office\_split.py}, folk-ladder
+  levels by each member\textquotesingle s highest-scoring level --- a display grouping of
+  the continuous scores) then \texttt{python\ flight\_\allowbreak{}ladders.\allowbreak{}py} --- same lift,
+  same thresholds, same estimator as the class test throughout.}
+
+\textbf{The folk ladder adds the cycle\textquotesingle s other half.} Run for its own levels ---
+members grouped by their highest-scoring level --- the top flees
+(\(-0.05\)/\(-0.10\)/\(-0.19\)/\(-0.19\) across the same thresholds), the \textbf{bottom
+chases}, differentially adopting exactly the words that became common
+(+0.15/+0.28/+0.41/+0.29 --- the battery\textquotesingle s only positive series,
+strengthening with volume), and \textbf{free work sits out of the game
+entirely}, flat against the middle at every threshold
+(\(-0.04\)/\(-0.00\)/+0.00/\(-0.01\)): neither chasing nor fleeing, which is what
+sitting outside the hierarchy predicts --- its low register level (\cref{sec:occupation}) is
+uniform abstention, not word-selective avoidance. Chase below the peak,
+flight above it, indifference off the ladder: the full fashion-cycle
+geometry, read from one instrument\textquotesingle s levels.
 
 That is the static signature of chase-and-flight --- a marker loses value as
 it is copied, so the group that holds it abandons the most conspicuous forms

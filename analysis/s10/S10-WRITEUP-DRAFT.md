@@ -1244,9 +1244,25 @@ alone, the figure above's own estimand, on the same member-bin values and
 six equal bins as §4.6b's class-era panels — free professionals sit below their
 chamber-and-period peers in every half-decade (−0.07 to −0.11 per sd,
 individually significant in all six bins), with no trend into the machine
-era, while bottom, middle and top stay small and flat. Like the class
-shape, the occupational shape was in place decades before the
-machines.[^s-ladderera]
+era, while bottom, middle and top stay small and flat (formally: no
+level's era trend approaches significance — free z +1.2, middle −1.0,
+top −0.8, apex delta −0.2). Like the class shape, the occupational shape
+was in place decades before the machines.[^s-ladderera]
+
+**And it holds chamber by chamber, by the test that needs no
+normalization.** The class arm's crossover claim rests on a within-chamber
+meta-analysis; the measure gets the same test. Within each chamber — each
+legislature its own control — the member-level slope of the register on the
+free level is **negative in 21 of 22 chambers** (individually significant
+in Queensland and Scotland), and the inverse-variance meta across chambers
+is **−0.070 per sd, z = −5.0**; the apex delta pools at **+0.059, z =
++4.2**. Split by chamber group the replication is a sweep — negative in every
+group: the nine 2026 additions (meta z −4.1), the eight Canadian provinces
+(z −2.5), and the five tier-1 national chambers (z −2.2).[^s-lmeta]
+
+[^s-lmeta]: `python ladder_chamber_meta.py` — per-chamber OLS slope of
+    member z on the folk free level (per sd within chamber, HC1),
+    inverse-variance pooled; the apex-delta meta from the same cells.
 
 ![The folk ladder by era, one panel per level](ladder_by_era_panels.png)
 
@@ -1735,11 +1751,25 @@ same corpus, the same words, and the tops overlap heavily — but as a
 robustness family they say the avoidance belongs to status-tops generally,
 not to one coding of class.[^rladders]
 
+**The folk ladder adds the cycle's other half.** Run for its own levels —
+members grouped by their highest-scoring level — the top flees
+(−0.05/−0.10/−0.19/−0.19 across the same thresholds), the **bottom
+chases**, differentially adopting exactly the words that became common
+(+0.15/+0.28/+0.41/+0.29 — the battery's only positive series,
+strengthening with volume), and **free work sits out of the game
+entirely**, flat against the middle at every threshold
+(−0.04/−0.00/+0.00/−0.01): neither chasing nor fleeing, which is what
+sitting outside the hierarchy predicts — its low register level (§4.6a) is
+uniform abstention, not word-selective avoidance. Chase below the peak,
+flight above it, indifference off the ladder: the full fashion-cycle
+geometry, read from one instrument's levels.
+
 [^rladders]: `python build_ladder_word_year.py` (one provincial scan;
     education and rung membership from `prereg_member_table.json`, office
-    from the rank-marked speaker form as in `office_split.py`) then
-    `python flight_ladders.py` — same lift, same thresholds, same estimator
-    as the class test.
+    from the rank-marked speaker form as in `office_split.py`, folk-ladder
+    levels by each member's highest-scoring level — a display grouping of
+    the continuous scores) then `python flight_ladders.py` — same lift,
+    same thresholds, same estimator as the class test throughout.
 
 That is the static signature of chase-and-flight — a marker loses value as
 it is copied, so the group that holds it abandons the most conspicuous forms
