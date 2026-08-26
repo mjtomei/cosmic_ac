@@ -337,6 +337,8 @@ def inject_table_captions(t):
 # already carries, so it survives markdown prose edits that keep those names.
 CITE_SUBS = [
  # --- introduction (first mentions; later sections re-cite where discussed) ---
+ (r"Weeden and\s+Grusky\\textquotesingle s case", r"Weeden and Grusky\\textquotesingle s\\cite{weeden2005} case"),
+ (r"Kohn and Schooler\\textquotesingle s occupational self-direction", r"Kohn and Schooler\\textquotesingle s\\cite{kohn1983} occupational self-direction"),
  (r'\(Liang et al\.,\s+Gray\)', r'(Liang et al.\\cite{liang2024monitoring,liang2025quantifying}, Gray\\cite{gray2025})'),
  (r'construction[.] Kobak et al[.] measure excess', r'construction. Kobak et al.\\cite{kobak2025} measure excess'),
  (r'closest\s+parliamentary study measures false positives', r'closest parliamentary study\\cite{suvanto2026} measures false positives'),

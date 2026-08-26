@@ -1065,10 +1065,15 @@ occupational content the schema summarises. Each legislator's prior
 occupation, coded to O\*NET, is scored on an organisational-**altitude**
 ladder — bottom, middle, top of a hierarchy — plus a level the categorical
 schemas do not carry: **free work**, occupations that sit outside the
-organisational hierarchy altogether. That off-ladder level is the measure's
-distinctive axis, and it is not a post-hoc reading: the ordering **free <
-front-line < corporate** was preregistered before any occupational element
-was joined to the register, and found. What follows are the measure's
+organisational hierarchy altogether. The move has ancestry: Weeden and
+Grusky's case for measuring class at the disaggregated occupation level,
+and Kohn and Schooler's occupational self-direction, where closeness of
+supervision explained class differences in psychology, are the two nearest
+lines. What this measure adds is the off-ladder level — position scored not
+only as altitude within the hierarchy but as distance from it — and that
+axis is not a post-hoc reading: the ordering **free < front-line <
+corporate** was preregistered before any occupational element was joined
+to the register, and found. What follows are the measure's
 results — the U over its levels, the off-ladder level's stability across
 three decades, and, in the joint model below, the absorption of the class
 label the measure refines.
