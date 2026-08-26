@@ -10,6 +10,18 @@ outcome, and the effort or spend. Items are ordered by my suggested
 priority; the last three are gated on spends and are independent of the
 rest.
 
+**How to read the Implementation blocks.** Effort is stated as what has to
+exist, not human time. Compute classes: **CPU** = numpy/counting analyses
+on held files — effectively free at our scales, seconds to minutes;
+**CPU scan** = one pass over a segment corpus (the provinces scan runs
+~10 minutes in background; panel-wide over all 22 chambers is the largest,
+under an hour); **local LLM** = GPU inference on this machine (the study's
+Qwen/OLMo pipelines) — the only real compute cost, measured in GPU-hours;
+**API/credits** = external spend (judge gradings, Pangram verdicts,
+third-party services); **workflow** = a multi-pass coding/grading
+orchestration like the study's existing ones. "New data" means anything
+not already on disk.
+
 ---
 
 ## 1. The cohort claim's identification package (survey rec 6)
@@ -54,7 +66,16 @@ rescope is "a juniority gradient — cohort or career clock — steepened in
 the drift era," which is still the paper's story. Either way the +0.88
 sentence gains a "one point on this line" companion.
 
-**Effort.** Held data only. (a)+(b) half a day; (c)+(d) 3–5 days.
+**Implementation.** Four small scripts, all CPU on held files, no new
+data, no workflows, no LLM runs:
+`apc_solution_line.py` (reads the committed two-/three-stamp fits, prints
+the (age, period, cohort) table — arithmetic); the Senate bound is a
+filtered OLS inside the same script (US-SENATE member-years 1994–2004,
+birth < 1965; one ruler-conversion constant to put the per-1,000 and
+per-100k scales together); `apc_i.py` (the Luo–Hodges estimator is OLS
+with the linear cohort trend constrained out — ~100 lines of numpy on the
+member-year panel `cohort_vs_period.py` already loads); the tenure test
+extends `cohort_vs_period.py` (entry year is already computed there).
 
 ---
 
@@ -102,8 +123,21 @@ the result becomes aggregation-proof either way. Lead–lag: top-first
 supports the cycle's direction; simultaneous take-off supports a common
 external source (also informative — it points at the tools).
 
-**Effort.** Held data; ~1 week. The cache exists; the analyses are new
-scripts.
+**Implementation.** One cache extension plus three CPU analysis scripts —
+with a fork in the permeation branch:
+extend `build_flight_member_cache.py` panel-wide (add the tier-1 and
+2026-addition segment stores to its glob — one CPU scan, the largest we
+run, under an hour in background). Then `permeation_decompose.py`,
+`peak_decomposition.py` (Firebaugh with bootstrap SEs), `leadlag.py` (per-
+word tier crossing dates) — all CPU on the cache.
+**The fork:** the frequency-side permeation decomposition is pure CPU. The
+*log-prob* (word-context) measure cannot be member-decomposed from held
+files — `word_context/*.json` store flat log-prob arrays with no member
+keys — so decomposing THAT measure means re-running the trace pipeline
+with member attribution: **local LLM** (Qwen family on this machine,
+comparable to one committed word-context run per model family). The
+frequency version answers the turnover objection; the log-prob rerun is
+the completionist upgrade.
 
 ---
 
@@ -144,8 +178,18 @@ generic vocabulary drift and the claim rescopes to "the register rides a
 broader drift the models then amplified" — a real finding, differently
 framed.
 
-**Effort.** Held data; (a)–(c) CPU only, 2–3 days; (d) needs GPU
-rescoring, ~1–2 days more.
+**Implementation.** `occurrence_trends.json` is aggregate-only (chamber ×
+year totals), so (a)–(c) start with one **CPU scan** building per-word ×
+chamber × year counts — for the 407 markers plus the full candidate
+vocabulary needed for donor matching (the vocabulary-wide pass is the
+heaviest CPU item in this document; counters fit in memory). Then
+`ruler_audit.py` (per-word slopes, fraction positive, trimmed aggregate,
+breadth series — CPU) and `donor_series.py` (match on frequency ×
+dispersion × pre-2010 slope; register-minus-donor series — CPU). (c) reuses
+the held Wikipedia marker set against the same counts — CPU. (d), the
+permeation donor rescoring, is **local LLM**: a donor word list pushed
+through `word_context_delta.py`'s pipeline, one run per model family —
+the same GPU shape as the committed runs. No new data, no workflows.
 
 ---
 
@@ -179,7 +223,17 @@ data itself prefers the register" (a stronger and cleaner claim than the
 stage attribution). Base-prompting recovers a large share → the +1.24
 softens to a conditioning result, which the honest sentence absorbs.
 
-**Effort.** Public data + inference on models already run; a few days.
+**Implementation.** (a) is a **public download** (the Tulu-3 preference
+mixture from HuggingFace, gigabytes) plus a CPU counting script
+(`pref_pairs_register.py`: within-pair register excess, length-
+residualised — no model runs; it is word counting on text pairs). (b) is
+CPU on the held generations (truncate to common within-pair length,
+re-run the committed stage deltas). (c) is the one **local LLM** item: new
+generation runs on the base and instruct OLMo checkpoints under four
+prompting arms (base raw / base + 3-shot stylistic prefix / instruct with
+template / without) — checkpoints already used by `olmo_ladder.py`, so no
+new model acquisition; GPU-hours proportional to prompts × arms. No
+workflows.
 
 ---
 
@@ -212,8 +266,17 @@ composition confound close together. Onset moves → major, honest rescope.
 The flight split adjudicates between two readings the paper currently
 cannot separate.
 
-**Effort.** Held text; new labels. Tier (a) a day; (b) ~3 days; (c) an
-LLM-classifier run over the corpus (compute spend, bounded).
+**Implementation.** (a) is CPU on held segment metadata (length
+post-stratification — a reweighting function, no new files). (b) is a
+**CPU scan** of the raw transcript stores to extract order-of-business /
+debate-title headings, plus a hand-built heading→category rubric (I write
+the rubric; odd headings can fall to an LLM tie-breaker, API or local,
+small volume). (c) is the genuinely expensive tier and the one item here
+best run as a **workflow**: classify segments by genre with an LLM — at
+full corpus scale this is either a large **API spend** or a long **local
+LLM** run; the practical design is sampled (e.g., ~100 segments per
+chamber-year ≈ 60–70k classifications), which is registered future-work
+item 12's scope. New data: the labels themselves.
 
 ---
 
@@ -242,7 +305,16 @@ vendor. Humanizers land near Pangram's tables → the 10× stands on our own
 data. Judge range tight → the quality claims shed the family-circularity
 objection.
 
-**Effort.** ~$100–300 of subscriptions/API + ~1 week.
+**Implementation.** (a) is **local LLM** at small n: Binoculars and
+Fast-DetectGPT scores for 412 texts (341 variants + 71 originals) — the
+log-prob machinery exists (`bench_binoculars.py`), GPU-minutes; the open
+supervised detector (RoBERTa-class) is a small local model run. (b) is
+**external spend**: 2–4 commercial humanizer subscriptions (~$100–300),
+71 targets each, then ~150–300 **Pangram credits** to score the outputs.
+(c) is a **workflow adaptation**: the frozen grading rubric pointed at two
+non-Anthropic judge APIs (new API integration in the grade workflow, then
+~1,500 segments × 2 judges of **API spend**). New data: humanizer outputs
+and the new judges' grades.
 
 ---
 
@@ -272,7 +344,16 @@ p; re-report the headline under raw / calibrated / binary weightings.
 leads with. Fraction mis-calibrated → the paper switches its headline
 weighting with a stated correction — better now than in review.
 
-**Effort.** Generation spend (low hundreds of dollars) + ~1 week.
+**Implementation.** Generation of ~200–600 legislative-style speeches —
+**local LLM** (free on this machine) or frontier **API** (better matches
+the drafting the estimand targets; low hundreds of dollars); splicing into
+pre-2022 controls is CPU. The binding constraint is neither: it is
+**Pangram credits** — the spiked pseudo-chambers and fraction-calibration
+sets total roughly 2–3k fresh verdicts. The held known-authorship
+continuations (your point) cover part of the machine-text need without
+new generation. Extending the known-authorship evasion seeds additionally
+means re-running the frozen bypass **workflow** on ~60 new seeds (attacker
+API + Pangram credits per round).
 
 ---
 
@@ -291,6 +372,10 @@ Projected t at the current point estimate: ≈ 2.1.
 **Outcomes.** Clears → the qualifying sentence reverts. Doesn't → the
 current sentence was the true one. **Gated on your grading spend.**
 
+**Implementation.** No new code beyond a pool-assembly script; the
+existing grade **workflow** re-run over ~1,710 segments (**API spend**,
+judge calls only); analysis is the committed estimator unchanged.
+
 ---
 
 ## 9. GATED: the detector-side selection placebo (cheapest high-value quality test)
@@ -307,9 +392,13 @@ effects. Any form–score association among pure humans is the selection
 effect, measured; subtract it from the headline.
 
 **Outcomes.** Null → the first objection every referee raises is
-pre-answered. Positive → the honest correction is applied, sized. API
-cost only (~1,260 gradings); no human time. **Gated on your grading
-spend.**
+pre-answered. Positive → the honest correction is applied, sized.
+**Gated on your grading spend.**
+
+**Implementation.** The existing grade **workflow** over the 1,260 held
+control segments (**API spend**, judge calls only); then one CPU
+regression script (DQI dimensions on continuous Pangram and screen scores,
+genre + chamber FE). No new data beyond the grades.
 
 ---
 
@@ -329,6 +418,13 @@ designed before grading.
 with no computational alternative: judge reliability statistics cannot
 distinguish a consistent judge from a consistently biased one; only human
 anchors can. **Gated on recruiting coders.**
+
+**Implementation.** One CPU sampling script now (stratified probability
+draw with logged inclusion probabilities — must exist *before* any
+grading); the coding itself is **human work** (two coders, 150–200
+segments, the frozen rubric); then a DSL/PPI estimation script (CPU,
+scipy now available). The only item in this document whose cost is
+people.
 
 ---
 
