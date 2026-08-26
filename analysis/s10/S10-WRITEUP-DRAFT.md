@@ -3170,7 +3170,18 @@ to machine assistance as such (opus-class continuations carry as much to
 engage with as the humans). Both deficits are visible only because the work
 is checked directly, which is the argument. And the composite weights the
 seven DQI dimensions equally — the index's conventional additive form —
-rather than by any measured optimum. The
+rather than by any measured optimum; tested, the weighting matters and the
+direction survives it. The seven dimensions are not one factor (the first
+principal factor of their Spearman matrix carries 26–29%), and that factor
+loads on the respect dimensions rather than on the well-formedness
+dimensions that carry the machine advantage — so re-running the stage-2
+contrast on the factor-weighted latent score cuts it from +0.195 (t 5.65)
+to +0.087 (t 1.97): still positive, no longer emphatic. The honest
+statement is that "better-formed" is dimension-specific — justification
+and evidence carry it — and any weighting that emphasises engagement over
+form puts the composite contrast at the margin, which is one more reason
+the paper's claims are stated per dimension rather than from the
+index.[^rlatent] The
 reliability statistics cannot carry this claim by themselves — a consistently
 biased judge would also reproduce itself perfectly; what
 carries it is validity evidence: the rubric's calibration anchors are the
@@ -3187,6 +3198,15 @@ of the seven dimensions across 63 within-text pairs, and neither did the 39
 rewrites that actually cleared the detector when graded on their own (§4.9
 stage 5), so a body that measures quality directly need not fear that evasion
 — attempted or achieved — degrades the metric it watches.
+
+[^rlatent]: `python quality_latent.py` — Spearman matrix on the seven
+    dimensions (sentinel −1s as missing), first principal factor, latent =
+    loading-weighted mean of available standardised dimensions, contrast
+    re-run with the committed columns' own estimators (stage 1 per sd of
+    screen score, where the factor weighting flips the weak positive to a
+    weak negative; stage 2 AI/Mixed vs Human with chamber FE, HC1). A full
+    polychoric graded-response fit is the upgrade path; it needs an
+    environment with scipy and is noted as future work.
 
 And it is now cheap in a way it has not been before. The instrument's
 repeat reliability sits at or above the published human inter-coder bar, on
