@@ -1135,6 +1135,44 @@ office-holders use less of the register than backbenchers, not more
 exposure tests failed to isolate one (Appendix A) — and §4.6b's predictors
 survive the gradient without explaining it.[^r46apc]
 
+**Formally identified, the two components separate — and each half of the
+claim lands on the identified side.** Age, period and cohort admit no joint
+identification, so the two-stamp fit is one point on a line; what is
+invariant along the whole line is the same-age decade-on total, **period +
+cohort = +2.13 per 1,000 per decade**.[^rapcid] Reading the pre-drift
+Senate cell the other way around — those cohorts formed before the register
+moved, so their gradient IS the age profile — pins the age slope at
+**−0.89/decade** (clustered t −3.8) and propagates to a *linear* cohort
+slope of **−0.02 [−0.47, +0.44]**: under the paper's own predates premise,
+the standing level of the juniority gradient is an age-or-career clock, not
+a birth-cohort effect. What is cohort-specific is the **bend**: the
+nonlinear cohort deviations — identified with no assumption at all — reject
+linearity outright (Wald p ≈ 10⁻⁸), and the constraint-invariant contrasts
+put the **post-1985 cohorts +0.84 above the linear profile (z = 3.9)** with
+a late-minus-early local slope difference of **+0.84/decade (z = 3.6)**:
+the steepening claim, in identification-free form, landing exactly where
+drift-formed cohorts arrive. Stated with its complication: the deviation
+profile bends up at *both* ends — the 1920s–30s cohorts also sit above the
+line, on the panel's thinnest cells — so the identified fact is "nonlinear,
+rising at the recent end," not "rising only there." And the career-clock
+reading cannot be evicted from the level term by any regression here:
+within birth-year × year × chamber cells the tenure slope is large
+(−0.95/decade of tenure, clustered t −8.4), but in those cells tenure is
+algebraically minus entry year — a career-stage effect and an entry-cohort
+effect are the same coefficient, and only the within-member trend (+0.51,
+positive, §4.6's fourth bullet) distinguishes their predictions at all.
+
+[^rapcid]: `python apc_solution_line.py` (re-derives the committed
+    two-stamp fit exactly, prints the solution line and the Senate-cell
+    bound: n = 1,107 member-years, 160 senators, ages 31–100),
+    `python apc_i.py` (the Luo–Hodges APC-I estimator with a synthetic
+    recovery-and-size check run first: recovery passes, and a pure-linear
+    null yields p = 0.46, no false rejection; the aligned 5-year grouping
+    is exactly collinear, so the reported curvature is constraint-free),
+    and `python tenure_within_cells.py`. The identification-free contrasts
+    are projections off the span of the linear cohort term, so they do not
+    depend on the constraint choice.
+
 ![](apc_gradients.png)
 
 *Group-level against individual-level gradients, one ruler (instrument
@@ -1781,9 +1819,12 @@ destination, not class origin** — what a legislator did, not where they came
 from — which favours occupational practice over inherited-status accounts of
 the gradient, stated as interpretation.
 
-**Cohort towers over all of it.** Birth decade is **+1.01 (t = 10.96)** in
-the member-year panel with year fixed effects — the citable figure, since
-career-level specifications absorb era of service into the cohort term — and
+**The juniority gradient towers over all of it.** Birth decade is
+**+0.92 (t = 12.5)** in the member-year panel with year fixed effects on
+the current 22 chambers — the citable figure, since career-level
+specifications absorb era of service into the term — read throughout as
+the identified cohort−age combination (§4.6: its level is an age-or-career
+clock under the Senate bound; its post-1985 bend is cohort) — and
 survives every covariate this study has measured, in three countries and 22
 chambers. For scale: the whole class gradient — II down to VIIab, jointly —
 spans ~0.37σ; cohort covers that in about fourteen years of birth date.

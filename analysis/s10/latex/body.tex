@@ -999,6 +999,42 @@ survive the gradient without explaining it.\footnote{\texttt{python\ apc\_\allow
   resolution; the five-chamber comparison is what separates the
   components.}
 
+\textbf{Formally identified, the two components separate --- and each half of the
+claim lands on the identified side.} Age, period and cohort admit no joint
+identification, so the two-stamp fit is one point on a line; what is
+invariant along the whole line is the same-age decade-on total, \textbf{period +
+cohort = +2.13 per 1,000 per decade}.\footnote{\texttt{python\ apc\_\allowbreak{}solution\_\allowbreak{}line.\allowbreak{}py} (re-derives the committed
+  two-stamp fit exactly, prints the solution line and the Senate-cell
+  bound: n = 1,107 member-years, 160 senators, ages 31--100),
+  \texttt{python\ apc\_i.py} (the Luo--Hodges APC-I estimator with a synthetic
+  recovery-and-size check run first: recovery passes, and a pure-linear
+  null yields p = 0.46, no false rejection; the aligned 5-year grouping
+  is exactly collinear, so the reported curvature is constraint-free),
+  and \texttt{python\ tenure\_\allowbreak{}within\_\allowbreak{}cells.\allowbreak{}py}. The identification-free contrasts
+  are projections off the span of the linear cohort term, so they do not
+  depend on the constraint choice.} Reading the pre-drift
+Senate cell the other way around --- those cohorts formed before the register
+moved, so their gradient IS the age profile --- pins the age slope at
+\textbf{\(-0.89\)/decade} (clustered t \(-3.8\)) and propagates to a \emph{linear} cohort
+slope of \textbf{\(-0.02\) {[}\(-0.47\), +0.44{]}}: under the paper\textquotesingle s own predates premise,
+the standing level of the juniority gradient is an age-or-career clock, not
+a birth-cohort effect. What is cohort-specific is the \textbf{bend}: the
+nonlinear cohort deviations --- identified with no assumption at all --- reject
+linearity outright (Wald \(p \approx 10^{-8}\)), and the constraint-invariant contrasts
+put the \textbf{post-1985 cohorts +0.84 above the linear profile (z = 3.9)} with
+a late-minus-early local slope difference of \textbf{+0.84/decade (z = 3.6)}:
+the steepening claim, in identification-free form, landing exactly where
+drift-formed cohorts arrive. Stated with its complication: the deviation
+profile bends up at \emph{both} ends --- the 1920s--30s cohorts also sit above the
+line, on the panel\textquotesingle s thinnest cells --- so the identified fact is "nonlinear,
+rising at the recent end," not "rising only there." And the career-clock
+reading cannot be evicted from the level term by any regression here:
+within birth-year \(\times\) year \(\times\) chamber cells the tenure slope is large
+(\(-0.95\)/decade of tenure, clustered t \(-8.4\)), but in those cells tenure is
+algebraically minus entry year --- a career-stage effect and an entry-cohort
+effect are the same coefficient, and only the within-member trend (+0.51,
+positive, \cref{sec:generational}\textquotesingle s fourth bullet) distinguishes their predictions at all.
+
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.85\linewidth]{apc_gradients.png}
@@ -1650,9 +1686,12 @@ destination, not class origin} --- what a legislator did, not where they came
 from --- which favours occupational practice over inherited-status accounts of
 the gradient, stated as interpretation.
 
-\textbf{Cohort towers over all of it.} Birth decade is \textbf{+1.01 (t = 10.96)} in
-the member-year panel with year fixed effects --- the citable figure, since
-career-level specifications absorb era of service into the cohort term --- and
+\textbf{The juniority gradient towers over all of it.} Birth decade is
+\textbf{+0.92 (t = 12.5)} in the member-year panel with year fixed effects on
+the current 22 chambers --- the citable figure, since career-level
+specifications absorb era of service into the term --- read throughout as
+the identified cohort\(-\)age combination (\cref{sec:generational}: its level is an age-or-career
+clock under the Senate bound; its post-1985 bend is cohort) --- and
 survives every covariate this study has measured, in three countries and 22
 chambers. For scale: the whole class gradient --- II down to VIIab, jointly ---
 spans \textasciitilde\(0.37\sigma\); cohort covers that in about fourteen years of birth date.
