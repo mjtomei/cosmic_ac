@@ -3259,22 +3259,32 @@ categorical schemas were validated against employment relations — while
 the folk ladder was built blind: model-elicited from aggregated human
 expression, no outcome visible, its ordering registered before any join.
 On this outcome the blind measure absorbs the categorical schema in the
-joint model (§4.6b). Read as measurement, that is machine aggregation of
-human experience outperforming market-derived aggregation at the market's
-own kind of task — valuing position — and it is a live instance of the
-change this paper keeps meeting: structure that institutions summarised
-lossily, because tracking it was uneconomic, becoming directly measurable.
+joint model (§4.6b): a classification built blind recovered
+social-structural information the market-fitted scales do not carry. That
+is the live instance of the change this paper keeps meeting — structure
+that institutions summarised lossily, because tracking it was uneconomic,
+becoming directly measurable.
 
-The assumption doing the work should be named: this reads the register as
-reflecting something at least as real as what the market prices. We take
-that to be the safe side of the bet — a market has no physical existence
-of its own; it is itself an aggregation mechanism whose claim is to
-reflect the social structure, which is what the register instruments
-directly — but the bet is checkable, and the check is already registered
-(§8.6, item 32): tie the register, and registers like it, to productivity
-and success measures. If register intensity predicts real outcomes that
-the market's summaries miss, the point stands on measurement rather than
-argument.
+What the comparison does not establish should be stated with the same
+care, because a further reading is tempting and rests on an assumption:
+that the recovered structure is *more useful* than what the market prices
+— that position, as the register instruments it, is the referent the
+market's scales summarise lossily. One reading supports that: a market
+has no physical existence of its own; it is itself an aggregation
+mechanism whose claim is to reflect the social structure, which the
+register instruments directly. But there is a counter-reading, and it is
+the paper's own hypothesis: social structures — spoken registers among
+them — often function to **mask** disparities in productivity, and on
+that reading the register instruments the veil rather than the referent,
+so the measure and the market are pricing different things. The two
+readings disagree about what was measured and agree that it was measured
+— and the check that discriminates them is already registered (§8.6,
+item 32): tie register intensity to productivity and success measures.
+Signaling drag — register predicting *worse* real outcomes — favours the
+masking reading; register tracking outcomes the market's summaries miss
+favours the lossy-summary reading. Either way, the measurement point
+survives: the structure was there, untracked, and a blind machine measure
+picked it up.
 
 ### 8.5 Measuring the human contribution against an automated counterpart
 
