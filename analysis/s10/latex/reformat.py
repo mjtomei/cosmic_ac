@@ -43,6 +43,8 @@ APPENDIX_LABELS = {"appendix-a":"app:null","appendix-b":"app:superseded",
 LABELS = {   # unnumbered subsubsections: exact slug
  "all-four-predictors-at-once":"sub:four-predictors",
  "the-provincial-class-estimates-the-discovery-record":"sub:class-provincial",
+ "35-instruments-retired-and-why":"sec:retired-h",
+ "the-classifications-element-signatures":"sub:element-signatures",
  "education-the-provincial-ladder-did-not-replicate-see-above":"sub:education-provincial",
  "the-shape-has-a-name--held-now-as-hypothesis-not-finding":"sub:shape-name",
  "flight-class-i-avoids-the-words-that-became-common":"sub:flight",
@@ -64,7 +66,7 @@ def label_for(slug):
 NUMMAP = {
  "1":"sec:intro","2":"sec:data","2.1":"sec:hazards","3":"sec:method",
  "3.1":"sec:calibration-method","3.2":"sec:detector","3.3":"sec:freq-descriptive",
- "3.4":"sec:retired","4":"sec:results","4.1":"sec:calibration","4.2":"sec:prevalence",
+ "3.4":"sec:occ-classification","3.5":"sec:retired","4":"sec:results","4.1":"sec:calibration","4.2":"sec:prevalence",
  "4.3":"sec:genre","4.4":"sec:screen-pangram","4.5":"sec:register-shift",
  "4.5a":"sec:climb-geography","4.6":"sec:generational","4.6a":"sec:occupation",
  "4.6b":"sec:class","4.7":"sec:posttraining","4.7a":"sec:coverage",
@@ -265,6 +267,8 @@ TABLE_CAPS = [
  ("arm & justification vs human", "tab:continuations", "Machine continuations graded blind: justification and applicability by arm."),
  ("Rice 2026 (Australian federal)", "tab:priorart", "This study against the two closest prior efforts."),
  ("seed verdict & variants", "tab:superseded-bypass", "Superseded per-seed bypass transitions."),
+ ("element & id & level & sign", "tab:elements-levels", "The coded ladder's consensus element signature: 85 elements over four levels, with consensus sign and coder count."),
+ ("element & id & component", "tab:elements-components", "The directional ladder's component assignments: 71 consensus elements over U/L/D/N."),
  ("run & role & seeds", "tab:bypass-sample", "Bypass sample selection across runs."),
  ("artifact & what it does", "tab:artifacts", "Artifacts: the scripts and data behind each result."),
  ("arm & model & effort", "tab:models", "Models and reasoning effort by arm."),
@@ -294,6 +298,8 @@ COLSPECS = {
  "tab:continuations":  r"@{}p{0.28\linewidth}p{0.32\linewidth}p{0.30\linewidth}@{}",
  "tab:models":        r"@{}p{0.50\linewidth}p{0.20\linewidth}p{0.22\linewidth}@{}",
  "tab:four-predictors": r"@{}p{0.255\linewidth}rp{0.135\linewidth}p{0.135\linewidth}p{0.135\linewidth}l@{}",
+ "tab:elements-levels": r"@{}p{0.40\linewidth}p{0.15\linewidth}llr@{}",
+ "tab:elements-components": r"@{}p{0.36\linewidth}p{0.15\linewidth}p{0.15\linewidth}cr@{}",
 }
 
 def inject_table_captions(t):
@@ -337,6 +343,10 @@ def inject_table_captions(t):
 # already carries, so it survives markdown prose edits that keep those names.
 CITE_SUBS = [
  # --- introduction (first mentions; later sections re-cite where discussed) ---
+ (r"Scott made that\s+argument about states", r"Scott\\cite{scott1998} made that argument about states"),
+ (r"Erikson and Goldthorpe\\textquotesingle s EGP schema", r"Erikson and Goldthorpe\\textquotesingle s\\cite{erikson1992} EGP schema"),
+ (r"Weeden and Grusky argued class", r"Weeden and Grusky\\cite{weeden2005} argued class"),
+ (r"Kohn and Schooler located", r"Kohn and Schooler\\cite{kohn1983} located"),
  (r"Weeden and\s+Grusky\\textquotesingle s case", r"Weeden and Grusky\\textquotesingle s\\cite{weeden2005} case"),
  (r"Kohn and Schooler\\textquotesingle s occupational self-direction", r"Kohn and Schooler\\textquotesingle s\\cite{kohn1983} occupational self-direction"),
  (r'\(Liang et al\.,\s+Gray\)', r'(Liang et al.\\cite{liang2024monitoring,liang2025quantifying}, Gray\\cite{gray2025})'),

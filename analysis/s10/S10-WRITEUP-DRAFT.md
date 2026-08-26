@@ -2,7 +2,7 @@
 
 ## Abstract
 
-We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* — the excess vocabulary language models overuse, derived in prior work from the post-2022 jump in scholarly text, run here as a fixed ruler across four decades of the parliamentary record. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with an elevenfold spread across chambers and a concentration in scripted genres. This machine-drafted speech is not degraded: AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, **predates the models by decades** — history invisible to the excess-vocabulary designs that found the jump, which measure acceleration against a local trend in corpora reaching back roughly a decade. Run as a level series, its rise begins in 1994–96; a juniority gradient predates even that, steepening as cohorts formed inside the drift arrive; and prior occupation leaves a small, replicated signature beyond social class — the insulated middle of organisational hierarchies using it most. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
+We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* — the excess vocabulary language models overuse, derived in prior work from the post-2022 jump in scholarly text, run here as a fixed ruler across four decades of the parliamentary record. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with an elevenfold spread across chambers and a concentration in scripted genres. This machine-drafted speech is not degraded: AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, **predates the models by decades** — history invisible to the excess-vocabulary designs that found the jump, which measure acceleration against a local trend in corpora reaching back roughly a decade. Run as a level series, its rise begins in 1994–96; a juniority gradient predates even that, steepening as cohorts formed inside the drift arrive; and prior occupation leaves a small, replicated signature that absorbs social class — scored on a preregistered organisational-altitude measure whose insulated middle sits highest and whose off-hierarchy level, free work, sits lowest. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
 
 ---
 
@@ -108,15 +108,25 @@ formed inside it; a
 pre-registered occupational model adds weaker but real structure — the
 register peaks at the insulated middle of organisational hierarchies, the
 rungs that answer upward without the final say — and social class traces the
-same inverted-U. These correlations locate the rise without yet explaining
-it — together they cover about a sixth of member-level variation, most of
+same inverted-U at coarser grain. Chasing that ordering produced a
+by-product worth naming: a measure of socioeconomic position scored from
+occupational content rather than from a categorical schema, whose
+distinctive level — free work, outside the organisational hierarchy
+altogether — carried a preregistered, confirmed prediction. Rigid
+classification buys legibility by discarding information; Scott made that
+argument about states, and the class schemas are a mild case of it. Machine
+intelligence lowers the cost of the alternative: bespoke, current
+classifications, blind-derived from the full descriptor universe and
+preregistered so they stay verifiable, carrying the spirit of the classical
+schemas while keeping what those schemas flatten. These correlations locate
+the rise without yet explaining it — together they cover about a sixth of member-level variation, most of
 that birth year. Machine intelligence did not invent this register of accountability
 without authorship; it inherited it, automated it, and made it measurable.
 
 The pattern of findings opens more fields than it closes: machine-drafted
 speech in deliberative bodies, its prevalence now measurable and its impacts
 and biases barely touched; class and register markers in legislatures, for
-which the occupational structure above is a beginning; and the large-scale
+which the occupational measure above is a beginning; and the large-scale
 study of registers in open speech records generally — of which this paper is
 itself a demonstration. One of those impacts can now be named precisely: the
 register the models were tuned to speak is, on our measurement, the register
@@ -298,7 +308,56 @@ LLM causation. This is what makes the 1994–96 onset (§4.5) interesting rather
 than embarrassing: the register was already moving decades before the
 machines.
 
-### 3.4 Instruments retired, and why
+### 3.4 The occupational classification, in full
+
+Each legislator's prior occupation was coded to an O\*NET-SOC code by two
+independent Claude passes over a shared rubric, blind to each other (96.4%
+raw agreement; disagreements adjudicated; the coding record is a committed
+artifact[^m34a]). The classification is then built on O\*NET's element
+universe — all 295 rated descriptors — in two semi-independent
+constructions, both **blind-derived**: the coders who produced them were
+never shown the register, the hypothesis, or any outcome.
+
+**The coded ladder** (the measure's primary form). Eighteen blind coding
+passes nominated, multi-label, the elements that mark the **free / bottom /
+middle / top** of a corporate hierarchy; elements nominated by more than
+one coder form the consensus signature — 85 elements: 11 free, 13 bottom,
+27 middle, 34 top, each with a consensus sign. A level score is the mean of
+its consensus elements' standardised per-occupation values under the
+consensus sign, with rating scales resolved per element family and two
+special cases recorded (one Work Context item rated CT rather than CX, and
+element 3.A.1, a category distribution collapsed to its expectation, whose
+missing ratings for farmers are the subject of a committed sensitivity
+run).[^m34b] The complete signature — every element id, name, level, sign
+and coder count — is Appendix C's first table.
+
+**The directional ladder** (the semi-independent check). Three independent
+blind coding workflows assigned elements to four accountability
+components — **U** upward (advising without the final say, discretion
+reverse-scored), **L** lateral (external service), **D** downward
+(command), **N** undirected (organisational account-giving and contact) —
+yielding 71 consensus elements (Appendix C's second table); the free /
+bottom / middle / top levels are composed from the components. The two
+ladders' levels correlate +0.75 to +0.92, which is why the registration's
+never-together rule treats them as near-twins; where both enter a model the
+widened errors are shown rather than hidden (§4.6b).
+
+**Registration.** The ordering **free < front-line < corporate** and the
+apex delta (middle − top, "insulated command tracks more register than
+exposed command") were committed before any element was joined to the
+register; the timeline, to the minute, is in §4.6a's registration
+footnote.
+
+[^m34a]: `provinces/OCCUPATION_CODING.md` and
+    `provinces/occupation_coding.json`.
+
+[^m34b]: The nomination workflow and consensus are `element_levels.json`
+    (built by `workflows/element_levels.js`); scoring is
+    `level_scores.py`, including the scale-family resolution and the
+    `--drop-3a1` sensitivity; the component construction is
+    `element_audit_4col.json`.
+
+### 3.5 Instruments retired, and why
 
 Named here because a reader needs to know what was tried and dropped, not to
 pad an appendix:
@@ -2754,6 +2813,19 @@ post-2020 windows). The 9.0% floor itself lands where the population-level
 literature already points for professional prose — 6.5–17.5% (Liang et al.,
 Gray) — which we read as corroboration, not coincidence.
 
+On the measurement of position itself, the classification of §4.6a sits in
+a short lineage. Erikson and Goldthorpe's EGP schema is the categorical
+standard the class arm uses; Weeden and Grusky argued class is better
+measured at the disaggregated occupation level, where it outpredicts the
+big-class schemas; Kohn and Schooler located the class–psychology link in
+occupational self-direction, closeness of supervision above all. The
+measure here keeps that direction of travel — position read from
+occupational content — and differs in two ways: it is blind-derived from
+the full descriptor universe by coders never shown the outcome, and it
+scores a level the categorical maps do not draw, distance from the
+organisational hierarchy itself — the free-work level whose preregistered
+ordering was confirmed (§4.6a).
+
 The relationship to the excess-vocabulary work is complementary by
 construction. Kobak et al. measure excess against a counterfactual
 extrapolated from each word's local pre-trend, so a steady drift produces
@@ -3693,7 +3765,7 @@ climbs. What does carry is measured on individuals, not on chambers.
    in the work log, and because *how* it failed — an artifact visible only
    once genre was balanced by construction — is the argument for having built
    the balanced pool at all.
-6. **Content-word control** and **Mistral synthetic corpus** — cut (§3.4).
+6. **Content-word control** and **Mistral synthetic corpus** — cut (§3.5).
 7. **Pre-per-year prevalence point estimates** — superseded by the per-year
    series and then by the 19-chamber panel.
 8. **Two arrival-premium measures of cohort** — the pre-2026-08-17 basis for
@@ -3793,6 +3865,178 @@ climbs. What does carry is measured on individuals, not on chambers.
     finding and is stated nowhere in the register of §4.9's rates.
 
 ## Appendix C — Replication and reproducibility
+
+#### The classification's element signatures
+
+The coded ladder's consensus signature (§3.4): every O\*NET element, its
+level, consensus sign, and how many of the eighteen blind coders nominated
+it.
+
+| O\*NET element | id | level | sign | coders |
+|---|---|---|---|---|
+| Management of Financial Resources | `2.B.5.b` | FREE | + | 3 |
+| Communicating with Supervisors, Peers, or Subordinates | `4.A.4.a.2` | FREE | - | 3 |
+| Communicating with People Outside the Organization | `4.A.4.a.3` | FREE | + | 2 |
+| Guiding, Directing, and Motivating Subordinates | `4.A.4.b.4` | FREE | - | 3 |
+| Monitoring and Controlling Resources | `4.A.4.c.3` | FREE | + | 3 |
+| Work With or Contribute to a Work Group or Team | `4.C.1.b.1.e` | FREE | - | 3 |
+| Work Outcomes and Results of Other Workers | `4.C.1.c.2` | FREE | - | 3 |
+| Frequency of Decision Making | `4.C.3.a.2.b` | FREE | + | 2 |
+| Freedom to Make Decisions | `4.C.3.a.4` | FREE | + | 3 |
+| Determine Tasks, Priorities and Goals | `4.C.3.b.8` | FREE | + | 3 |
+| Duration of Typical Work Week | `4.C.3.d.8` | FREE | + | 3 |
+| Conventional | `1.B.1.f` | BOTTOM | + | 2 |
+| Office Work | `1.B.3.ak` | BOTTOM | + | 3 |
+| Leadership Orientation | `1.D.1.i` | BOTTOM | - | 2 |
+| Management of Financial Resources | `2.B.5.b` | BOTTOM | - | 2 |
+| Management of Personnel Resources | `2.B.5.d` | BOTTOM | - | 3 |
+| Administrative | `2.C.1.b` | BOTTOM | + | 3 |
+| Related Work Experience | `3.A.1` | BOTTOM | - | 2 |
+| Guiding, Directing, and Motivating Subordinates | `4.A.4.b.4` | BOTTOM | - | 3 |
+| Staffing Organizational Units | `4.A.4.c.2` | BOTTOM | - | 3 |
+| Work Outcomes and Results of Other Workers | `4.C.1.c.2` | BOTTOM | - | 3 |
+| Freedom to Make Decisions | `4.C.3.a.4` | BOTTOM | - | 3 |
+| Importance of Repeating Same Tasks | `4.C.3.b.7` | BOTTOM | + | 3 |
+| Determine Tasks, Priorities and Goals | `4.C.3.b.8` | BOTTOM | - | 3 |
+| Enterprising | `1.B.1.e` | MIDDLE | + | 3 |
+| Business Initiatives | `1.B.3.ae` | MIDDLE | + | 2 |
+| Human Resources | `1.B.3.aj` | MIDDLE | + | 3 |
+| Management/Administration | `1.B.3.al` | MIDDLE | + | 3 |
+| Leadership Orientation | `1.D.1.i` | MIDDLE | + | 3 |
+| Monitoring | `2.A.2.d` | MIDDLE | + | 2 |
+| Systems Evaluation | `2.B.4.h` | MIDDLE | + | 2 |
+| Time Management | `2.B.5.a` | MIDDLE | + | 2 |
+| Management of Financial Resources | `2.B.5.b` | MIDDLE | + | 3 |
+| Management of Material Resources | `2.B.5.c` | MIDDLE | + | 3 |
+| Management of Personnel Resources | `2.B.5.d` | MIDDLE | + | 3 |
+| Administration and Management | `2.C.1.a` | MIDDLE | + | 3 |
+| Personnel and Human Resources | `2.C.1.f` | MIDDLE | + | 3 |
+| Related Work Experience | `3.A.1` | MIDDLE | + | 3 |
+| Developing Objectives and Strategies | `4.A.2.b.4` | MIDDLE | + | 3 |
+| Scheduling Work and Activities | `4.A.2.b.5` | MIDDLE | + | 3 |
+| Resolving Conflicts and Negotiating with Others | `4.A.4.a.7` | MIDDLE | + | 3 |
+| Coordinating the Work and Activities of Others | `4.A.4.b.1` | MIDDLE | + | 3 |
+| Developing and Building Teams | `4.A.4.b.2` | MIDDLE | + | 3 |
+| Guiding, Directing, and Motivating Subordinates | `4.A.4.b.4` | MIDDLE | + | 3 |
+| Coaching and Developing Others | `4.A.4.b.5` | MIDDLE | + | 3 |
+| Staffing Organizational Units | `4.A.4.c.2` | MIDDLE | + | 3 |
+| Monitoring and Controlling Resources | `4.A.4.c.3` | MIDDLE | + | 3 |
+| Coordinate or Lead Others in Accomplishing Work Activities | `4.C.1.b.1.g` | MIDDLE | + | 2 |
+| Work Outcomes and Results of Other Workers | `4.C.1.c.2` | MIDDLE | + | 3 |
+| Impact of Decisions on Co-workers or Company Results | `4.C.3.a.2.a` | MIDDLE | + | 3 |
+| Frequency of Decision Making | `4.C.3.a.2.b` | MIDDLE | + | 3 |
+| Enterprising | `1.B.1.e` | TOP | + | 3 |
+| Business Initiatives | `1.B.3.ae` | TOP | + | 3 |
+| Management/Administration | `1.B.3.al` | TOP | + | 3 |
+| Initiative | `1.D.1.e` | TOP | + | 2 |
+| Leadership Orientation | `1.D.1.i` | TOP | + | 3 |
+| Monitoring | `2.A.2.d` | TOP | + | 2 |
+| Negotiation | `2.B.1.d` | TOP | + | 2 |
+| Judgment and Decision Making | `2.B.4.e` | TOP | + | 3 |
+| Systems Evaluation | `2.B.4.h` | TOP | + | 2 |
+| Time Management | `2.B.5.a` | TOP | + | 2 |
+| Management of Financial Resources | `2.B.5.b` | TOP | + | 3 |
+| Management of Material Resources | `2.B.5.c` | TOP | + | 3 |
+| Management of Personnel Resources | `2.B.5.d` | TOP | + | 3 |
+| Administration and Management | `2.C.1.a` | TOP | + | 3 |
+| Personnel and Human Resources | `2.C.1.f` | TOP | + | 3 |
+| Related Work Experience | `3.A.1` | TOP | + | 3 |
+| Developing Objectives and Strategies | `4.A.2.b.4` | TOP | + | 3 |
+| Scheduling Work and Activities | `4.A.2.b.5` | TOP | + | 3 |
+| Communicating with People Outside the Organization | `4.A.4.a.3` | TOP | + | 3 |
+| Resolving Conflicts and Negotiating with Others | `4.A.4.a.7` | TOP | + | 3 |
+| Coordinating the Work and Activities of Others | `4.A.4.b.1` | TOP | + | 3 |
+| Developing and Building Teams | `4.A.4.b.2` | TOP | + | 3 |
+| Guiding, Directing, and Motivating Subordinates | `4.A.4.b.4` | TOP | + | 3 |
+| Coaching and Developing Others | `4.A.4.b.5` | TOP | + | 3 |
+| Staffing Organizational Units | `4.A.4.c.2` | TOP | + | 3 |
+| Monitoring and Controlling Resources | `4.A.4.c.3` | TOP | + | 3 |
+| Coordinate or Lead Others in Accomplishing Work Activities | `4.C.1.b.1.g` | TOP | + | 2 |
+| Work Outcomes and Results of Other Workers | `4.C.1.c.2` | TOP | + | 3 |
+| Impact of Decisions on Co-workers or Company Results | `4.C.3.a.2.a` | TOP | + | 3 |
+| Frequency of Decision Making | `4.C.3.a.2.b` | TOP | + | 3 |
+| Freedom to Make Decisions | `4.C.3.a.4` | TOP | + | 3 |
+| Importance of Repeating Same Tasks | `4.C.3.b.7` | TOP | - | 3 |
+| Determine Tasks, Priorities and Goals | `4.C.3.b.8` | TOP | + | 3 |
+| Duration of Typical Work Week | `4.C.3.d.8` | TOP | + | 3 |
+
+The directional ladder's component assignments (three blind workflows;
+consensus elements only):
+
+| O\*NET element | id | component | rev. | coders |
+|---|---|---|---|---|
+| Human Resources | `1.B.3.aj` | D downward |  | 3 |
+| Management/Administration | `1.B.3.al` | D downward |  | 3 |
+| Leadership Orientation | `1.D.1.i` | D downward |  | 3 |
+| Monitoring | `2.A.2.d` | D downward |  | 3 |
+| Instructing | `2.B.1.e` | D downward |  | 3 |
+| Management of Financial Resources | `2.B.5.b` | D downward |  | 3 |
+| Management of Material Resources | `2.B.5.c` | D downward |  | 3 |
+| Management of Personnel Resources | `2.B.5.d` | D downward |  | 3 |
+| Administration and Management | `2.C.1.a` | D downward |  | 3 |
+| Personnel and Human Resources | `2.C.1.f` | D downward |  | 3 |
+| Education and Training | `2.C.6` | D downward |  | 2 |
+| Scheduling Work and Activities | `4.A.2.b.5` | D downward |  | 3 |
+| Coordinating the Work and Activities of Others | `4.A.4.b.1` | D downward |  | 3 |
+| Developing and Building Teams | `4.A.4.b.2` | D downward |  | 3 |
+| Training and Teaching Others | `4.A.4.b.3` | D downward |  | 3 |
+| Guiding, Directing, and Motivating Subordinates | `4.A.4.b.4` | D downward |  | 3 |
+| Coaching and Developing Others | `4.A.4.b.5` | D downward |  | 3 |
+| Staffing Organizational Units | `4.A.4.c.2` | D downward |  | 3 |
+| Monitoring and Controlling Resources | `4.A.4.c.3` | D downward |  | 3 |
+| Coordinate or Lead Others in Accomplishing Work Activities | `4.C.1.b.1.g` | D downward |  | 3 |
+| Health and Safety of Other Workers | `4.C.1.c.1` | D downward |  | 3 |
+| Work Outcomes and Results of Other Workers | `4.C.1.c.2` | D downward |  | 3 |
+| Social | `1.B.1.d` | L lateral |  | 3 |
+| Personal Service | `1.B.3.ac` | L lateral |  | 2 |
+| Professional Advising | `1.B.3.ad` | L lateral |  | 3 |
+| Sales | `1.B.3.af` | L lateral |  | 3 |
+| Public Speaking | `1.B.3.am` | L lateral |  | 3 |
+| Social Service | `1.B.3.z` | L lateral |  | 3 |
+| Service Orientation | `2.B.1.f` | L lateral |  | 3 |
+| Customer and Personal Service | `2.C.1.e` | L lateral |  | 3 |
+| Communicating with People Outside the Organization | `4.A.4.a.3` | L lateral |  | 3 |
+| Assisting and Caring for Others | `4.A.4.a.5` | L lateral |  | 3 |
+| Selling or Influencing Others | `4.A.4.a.6` | L lateral |  | 3 |
+| Performing for or Working Directly with the Public | `4.A.4.a.8` | L lateral |  | 3 |
+| Public Speaking | `4.C.1.a.2.c` | L lateral |  | 3 |
+| Work With or Contribute to a Work Group or Team | `4.C.1.b.1.e` | L lateral |  | 2 |
+| Deal With External Customers or the Public in General | `4.C.1.b.1.f` | L lateral |  | 3 |
+| Dealing With Unpleasant, Angry, or Discourteous People | `4.C.1.d.2` | L lateral |  | 3 |
+| Conventional | `1.B.1.f` | N undirected |  | 3 |
+| Accounting | `1.B.3.ai` | N undirected |  | 3 |
+| Office Work | `1.B.3.ak` | N undirected |  | 3 |
+| Cooperation | `1.D.2.d` | N undirected |  | 3 |
+| Social Orientation | `1.D.2.f` | N undirected |  | 3 |
+| Active Listening | `2.A.1.b` | N undirected |  | 2 |
+| Writing | `2.A.1.c` | N undirected |  | 3 |
+| Social Perceptiveness | `2.B.1.a` | N undirected |  | 2 |
+| Coordination | `2.B.1.b` | N undirected |  | 3 |
+| Persuasion | `2.B.1.c` | N undirected |  | 2 |
+| Negotiation | `2.B.1.d` | N undirected |  | 3 |
+| Administrative | `2.C.1.b` | N undirected |  | 3 |
+| Processing Information | `4.A.2.a.2` | N undirected |  | 3 |
+| Evaluating Information to Determine Compliance with Standards | `4.A.2.a.3` | N undirected |  | 3 |
+| Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment | `4.A.3.b.2` | N undirected |  | 3 |
+| Documenting/Recording Information | `4.A.3.b.6` | N undirected |  | 3 |
+| Interpreting the Meaning of Information for Others | `4.A.4.a.1` | N undirected |  | 3 |
+| Communicating with Supervisors, Peers, or Subordinates | `4.A.4.a.2` | N undirected |  | 3 |
+| Establishing and Maintaining Interpersonal Relationships | `4.A.4.a.4` | N undirected |  | 3 |
+| Resolving Conflicts and Negotiating with Others | `4.A.4.a.7` | N undirected |  | 2 |
+| Performing Administrative Activities | `4.A.4.c.1` | N undirected |  | 3 |
+| Telephone Conversations | `4.C.1.a.2.f` | N undirected |  | 3 |
+| E-Mail | `4.C.1.a.2.h` | N undirected |  | 3 |
+| Written Letters and Memos | `4.C.1.a.2.j` | N undirected |  | 3 |
+| Face-to-Face Discussions with Individuals and Within Teams | `4.C.1.a.2.l` | N undirected |  | 3 |
+| Contact With Others | `4.C.1.a.4` | N undirected |  | 3 |
+| Conflict Situations | `4.C.1.d.1` | N undirected |  | 3 |
+| Physical Proximity | `4.C.2.a.3` | N undirected |  | 3 |
+| Developing Objectives and Strategies | `4.A.2.b.4` | U upward | yes | 3 |
+| Providing Consultation and Advice to Others | `4.A.4.b.6` | U upward |  | 3 |
+| Frequency of Decision Making | `4.C.3.a.2.b` | U upward | yes | 2 |
+| Freedom to Make Decisions | `4.C.3.a.4` | U upward | yes | 3 |
+| Determine Tasks, Priorities and Goals | `4.C.3.b.8` | U upward | yes | 3 |
+
 
 ### C.1 Cross-route reproduction of the detector
 
