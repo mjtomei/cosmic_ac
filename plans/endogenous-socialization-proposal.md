@@ -375,6 +375,20 @@ sandbox-escape incident (agent swarm, multi-week, lateral movement to
 production) resolves the outline's queued "OpenAI breakout incident" item for
 III.3 — banked in NONRIVALRY-ANCHORS.md with a ⚠️ find-the-primary flag.
 
+**(j) → §6, the strongest form of the answer to (h) (content in
+`NONRIVALRY-ANCHORS.md`):** composability defeats the compute-concentration
+counter at its own strongest point. RSI is decomposable; the external loop is
+frontier-as-inference-oracle + open trainable substrate, assembled at zero
+integration cost. **The revenue mechanism is the leak mechanism** — collecting
+$100M/MW requires serving the tokens that supply everyone's distillation-RSI
+oracle (Arrow 1962; same structure as the subscription finding), so the counter
+self-defeats. This is where "collective action applies here": the last redoubt
+of excludable optimization (internal RSI) is punctured by the frontier's own
+business model, and the commons forms *out of* it. Mechanizes the halving gap.
+Real bound: interface access (inference-only → distills outputs, not the
+frontier model itself); the labs' API restrictions are evidence-of-leak, and
+the restrict-vs-sell tradeoff is the erosion made concrete.
+
 **(i) → §6, pointer only (content in `NONRIVALRY-ANCHORS.md`):** the
 mechanism-level answer to (h)'s compute-concentration counter — draft the
 *structural* form (breadth of objective recruits more search than a narrow
@@ -385,7 +399,7 @@ as the rate of change rises (shorter time-to-payoff) and ease of living rises
 (lower discount rates). The old strategic-vs-goodwill "distinction" was wrong
 and is retracted in the anchors file. **The architectural consequence is §9.**
 
-**Decision asked:** accept (a)–(c), (f), (g), (h) into §§1/3/4/6; route
+**Decision asked:** accept (a)–(c), (f), (g), (h), (j) into §§1/3/4/6; route
 (d)–(e) to their threads now or hold everything until deal terms make (a)
 assertable.
 

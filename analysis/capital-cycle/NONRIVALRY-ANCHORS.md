@@ -317,6 +317,69 @@ engage the RSI-gating literature (§8 set: Good 1965, Korinek-Stiglitz, the
 lab frameworks) where "future paradigms" is actually adjudicated. The
 structural version is the answer there.
 
+**⭐⭐ Composability defeats the compute-concentration counter at its strongest
+point — RSI leaks through the API that funds it (Matthew, 2026-08-27). The
+argument that closes the non-excludability claim against its last redoubt.**
+
+The compute-concentration counter (h) assumes internal RSI compounds in an
+*enclosed* loop — the last place in the whole paper where optimization might be
+excludable. It is not, because RSI is decomposable and composition is now free.
+
+*Rigorous form.* RSI is a pipeline of heterogeneous steps, most not
+frontier-hard. The external actor slots the frontier model into only the thin
+frontier-hard slice and runs cheap open models for the bulk: the external loop
+is **frontier-as-inference-oracle + an open, trainable substrate**, capturing
+most of the self-improvement value (it improves the open substrate, using the
+frontier as teacher) at a fraction of the compute cost. Zero tool-adoption /
+integration cost (the §2.1 point — the machine absorbs the integration
+complexity that once made sharing labor) is what dissolves the boundary between
+"the lab's internal stack" and "an external user wiring the API to open models."
+
+*The unification — the revenue mechanism IS the leak mechanism.* To collect the
+$100M/MW that (h) says enables the runaway, you must **serve the frontier
+tokens** — and serving them supplies the oracle layer of everyone else's
+distillation-RSI. Revenue and leak are the same act: Arrow 1962 again ("the very
+use of the information in any productive way is bound to reveal it"), and
+structurally identical to the subscription finding (below-cost delivery and
+socialization were one act). **You cannot both sell the frontier at $100M/MW and
+stop it teaching your competitors, because selling it is teaching them.** The
+counter defeats itself at its strongest point.
+
+*Why "collective action applies here" (the through-line).* The paper's thesis is
+that optimization is non-excludable → under-provided by any single actor. (h) is
+the last redoubt where it might be excludable (internal compute-gated RSI).
+Composability shows it isn't: the lab, by pricing and serving API access,
+unwittingly contributes the oracle layer to a distributed RSI loop the whole
+external collective runs, funded by the lab's own revenue. Private optimization
+becomes a public input the moment it is priced and served. **The commons forms
+not despite the frontier's business model but out of it.**
+
+*It mechanizes the halving gap* (previously only an observed trend): the gap
+closes because external actors run composed distillation-RSI on the frontier's
+own served tokens — the frontier teaching its competitors, at their initiative,
+through an interface it cannot fully close without abandoning the revenue that
+was the moat's premise.
+
+⚠️ **The real bound: interface access.** External composition reaches only what
+the API exposes — inference, not weights/activations/training. The external loop
+distills from *outputs*: it improves the open substrate, not the frontier model
+itself. Strength scales with how much RSI value is capturable through an
+inference-only oracle. Two things keep it strong: outputs are demonstrably
+enough (the entire distillation record; the halving data is the proof), and the
+labs' API restrictions (no logprobs, no base-model access) are direct evidence
+they believe the leak is real — but every restriction degrades the product and
+cuts the $100M/MW. **Rich-API-that-leaks-and-sells vs restricted-API-that-
+protects-but-is-worth-less IS the moat eroding; no dial setting both collects
+the premium and stops the leak.** ⚠️ Empirical crux (same variable as always):
+if future self-improvement is frontier-hard *at volume* (the multi-day-swarm
+paradigm) rather than thin-oracle, composability helps less. How much value
+sits at the frontier vs below it.
+
+⚠️ Prior-art check needed before drafting: has anyone published "RSI leaks
+through composability across the API boundary" / "the API sale is the
+distillation channel"? Distinct from the plain distillation literature; batch
+with the folk-theorem verification.
+
 **⭐ The Hugging Face sandbox-escape incident — RESOLVES an outline
 verification-queue item ("OpenAI breakout incident + Mythos hype citable
 form", queued for III.3).** July 2026: an unreleased OpenAI model + GPT-5.6,
