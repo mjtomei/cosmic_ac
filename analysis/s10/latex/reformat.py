@@ -81,7 +81,7 @@ APPMAP = {
  "D.4":"sec:cohort-ministerial",
 }
 FIGLABEL = {"class_by_era_panels.png":"fig:class-era","ladder_by_era_panels.png":"fig:ladder-era","altitude_u.png":"fig:altitude",
-            "the-ai-lexicon-trend.png":"fig:trend","apc_gradients.png":"fig:apc","bypass_search.png":"fig:bypass"}
+            "the-ai-lexicon-trend.png":"fig:trend","apc_gradients.png":"fig:apc","tenure_profile.png":"fig:tenure","bypass_search.png":"fig:bypass"}
 
 NUMSTRIP = re.compile(r'^(?:Appendix\s+[A-D]\s+---\s+|(?:[0-9]+(?:\.[0-9]+[a-z]?)?|[A-D]\.[0-9]+[a-z]?)\.?\s+)')
 

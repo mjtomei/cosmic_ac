@@ -1204,6 +1204,38 @@ member-cluster bootstrap 95% intervals.*
     resolution; the five-chamber comparison is what separates the
     components.
 
+**The same knot, along the tenure axis, pre-empts the seniority reading.**
+Because tenure = spoken year − entry year, register plotted against length
+of service splits into two curves that cross. Within a member — each
+legislator's rate against their own career mean — register **rises** with
+tenure (to +2.35 per 1,000 at 30+ years), which is the calendar drift
+redrawn: serving longer means serving later. Measured against same-year
+colleagues instead — rate minus its chamber × year mean — it **falls**,
+monotonically, from +0.6 among members in their first years to −2.3 among
+the longest-serving. That decline is not a career losing the register: at a
+fixed year, more tenure means an earlier entry cohort, so the downward
+curve is §4.6's cohort gradient seen sideways, not seniority wearing it
+down. The figure makes the crossing visible.
+
+![](tenure_profile.png)
+
+*Register by length of service, two readings. Blue: within-member, each
+legislator's rate minus their own career mean — rises with tenure because
+within a career, years served and calendar year are one clock (its slope
+reproduces the +0.51 within-member drift). Orange: period-adjusted, rate
+minus its chamber × year mean — falls with tenure, but this is the
+entry-cohort gradient (longer tenure at a fixed year = earlier cohort), not
+a within-career decline. Left-censored members dropped; error bars
+member-cluster bootstrap 95% intervals.* †[^r46ten]
+
+[^r46ten]: `python tenure_profile.py`. Entry is a member's first observed
+    year in a chamber; members present in the chamber's first covered year
+    are dropped as left-censored (mirrors `cohort_vs_period.py --censor 1`).
+    Word-weighted; tenure binned 0–2 / 3–5 / 6–9 / 10–14 / 15–19 / 20–29 /
+    30+; the within-member slope on tenure is +0.36/decade and the
+    period-adjusted slope −1.03/decade — the −0.95 tenure test of §4.6,
+    drawn.
+
 [^r46a]: `python cohort_vs_period.py`. The headline pair is the two-stamp
     fit: member-year register rate on spoken year and birth year together,
     chamber fixed effects, word-weighted, with errors both ways — member-year
