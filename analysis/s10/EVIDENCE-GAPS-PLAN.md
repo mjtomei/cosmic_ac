@@ -22,6 +22,11 @@ third-party services); **workflow** = a multi-pass coding/grading
 orchestration like the study's existing ones. "New data" means anything
 not already on disk.
 
+**RESULT / STATUS blocks were added 2026-08-27** after the four-agent CPU
+wave and the GPU jobs ran: each executed item carries what was found and
+where it landed in the paper (with the git commit); items still needing
+spend or human work carry a STATUS note instead.
+
 ---
 
 ## 1. The cohort claim's identification package (survey rec 6)
@@ -76,6 +81,28 @@ per-100k scales together); `apc_i.py` (the Luo–Hodges estimator is OLS
 with the linear cohort trend constrained out — ~100 lines of numpy on the
 member-year panel `cohort_vs_period.py` already loads); the tenure test
 extends `cohort_vs_period.py` (entry year is already computed there).
+
+**RESULT (commits bfbee4b, 791fe16 — §4.6).** The claim split exactly as the
+outcome branch predicted, and *both halves landed on the identified side.*
+Solution line: the same-age decade-on invariant is **period + cohort =
++2.11/decade**. Senate bound: the pre-drift cell (1,107 member-years, 160
+senators) estimates **age = −0.88/decade** (clustered t −3.5), propagating
+to a *linear* cohort slope of **−0.03 [−0.52, +0.46]** — under the paper's
+own predates premise the gradient's **level is an age-or-career clock, not
+cohort.** APC-I (with a synthetic recovery-and-size check that passed):
+**linearity rejected, Wald p ≈ 1.5×10⁻⁷**; the constraint-invariant
+contrasts put cohorts **born 1975+ at +0.46 above the linear profile
+(z = 5.1)**, born 1985+ at +0.65 (z = 2.6), late-minus-early local slope
+**+0.70/decade (z = 2.7)** — the steepening confirmed identification-free.
+Complication carried into the text: the profile is **U-shaped**, the
+1920s–30s cohorts also elevated (thinnest cells). Tenure: **−0.95/decade
+(t −8.3)**, but algebraically minus entry year in these cells, so
+career-stage and entry-cohort are one coefficient — only the positive
+within-member trend separates them. **Byproduct defect fixed at source:**
+`load_birth` joined tier-1 births on bare surnames (one senator's year
+taken from another Pryor; 49 impossible-age rows); the ambiguity filter is
+now applied and every dependent number requoted (two-stamp birth **+0.86,
+t 14.7** clustered, n 60,186). **Closed blind-review CC9.**
 
 ---
 
@@ -139,6 +166,31 @@ comparable to one committed word-context run per model family). The
 frequency version answers the turnover objection; the log-prob rerun is
 the completionist upgrade.
 
+**RESULT (commits 625e123, d83e5a0, 99e85c3 — §4.6b, §4.8, Flight).** The
+panel cache built and **validated cell-for-cell (502/502)** against the
+committed member-year panel. (i) *Peak:* the paper's own footnote was wrong
+— the peak is II or III in **every bin under both aggregations** (member-
+year keeps the machine-era gap at **+0.121, CI excludes 0**), so the shape
+claim is aggregation-proof and the r46cls "would migrate" note is
+corrected. (ii) *New finding:* the near-flat class profile hides a
+**renewal engine** — sitting members drift *down* relative to peers in
+**10/10 class-transitions** (CIs excluding 0) while entrants arrive above;
+the class advantage is **renewed by entry, not maintained by incumbents.**
+(iii) *Lead–lag:* the top tier's adoption crossing **precedes** the
+bottom's — **+0.27 yr (class, Wilcoxon p < 10⁻⁴)**, +0.15 (folk,
+p = 0.003) — chase-consistent, honestly hedged (median bootstrap CI spans
+0, 7/11 chambers). (iv) *Permeation, frequency side:* the rare-word rise
+splits **within-member 26% [17, 35], composition 58%, interaction 16%**;
+the pooled 407-word rate's within term is **negative** (stayers fall,
+entrants carry), flagged because §4.6's regressions run on that pooled
+rate. **Bonus (no GPU needed):** the *log-prob* member split — the survey's
+GPU-classed item — was recoverable from cache via the seg-id join; on the
+stronger family the era change is **carried within members** (+0.0054 of
++0.0053 pooled, composition ≈ 0), wide member-level CI stated. Measurement
+caveats surfaced and bounded: Hansard **name-format breaks** (VIC 2022/23,
+WA 2024/25) bias within-member joins low by <4 points; **Ireland has no
+2023 sittings** (flagged for the data appendix).
+
 ---
 
 ## 3. The ruler audit: per-word decomposition and trend-matched donors (survey rec 7)
@@ -191,6 +243,27 @@ permeation donor rescoring, is **local LLM**: a donor word list pushed
 through `word_context_delta.py`'s pipeline, one run per model family —
 the same GPU shape as the committed runs. No new data, no workflows.
 
+**RESULT (commit 62129bf — §4.5, abstract, intro).** The 1.62B-token scan
+reproduced the committed series to **0.00 per 100k at the worst year**. The
+rise is **concentrated: ten common connectives carry 92.5%** of the
+1994–96 → 2024–26 climb (`this` alone 35%); trimmed of them the aggregate
+is nearly flat (×1.03 pooled, ×1.10 UK); what rises beneath is **breadth**
+(×1.26 UK) over **60.4% of words positive (z = +4.2)** at a shallow
++0.5%/yr median. **Composition-robust:** length post-stratification leaves
+the onset and *slightly strengthens* the UK climb (×1.49 → ×1.54).
+**Instrument-robust for the drift, not the date:** the independent
+Wikipedia signs-of-AI patterns rise across the whole pre-LLM record and
+**faster** (+2.7 vs +1.4 %/yr) — so the decades-long rise is a
+cross-instrument fact — but their trough is **1987**, so the specific
+1994–96 date belongs to the Kobak ruler's UK series. **Donor test:** against
+frequency+dispersion-matched donors the UK interior 1994 minimum survives;
+matched *also* on pre-2010 trend the register's **distinctive excess over
+same-shaped vocabulary dates to ~2014–2018**, with style words below their
+donors in level until 2025. §4.5's opening now scopes the date to the UK
+series and a new audited passage carries all of this. **Byproduct defect
+noted:** the committed placebo builder's top-120 exclusion mismatches 8
+style words (`this` among them) to far rarer donors.
+
 ---
 
 ## 4. Post-training: from data claim to attribution (survey rec 2)
@@ -235,6 +308,26 @@ template / without) — checkpoints already used by `olmo_ladder.py`, so no
 new model acquisition; GPU-hours proportional to prompts × arms. No
 workflows.
 
+**RESULT (commits 704a419, 79ce78c — §4.7).** The tempting stronger story
+was **refuted** — the honest and useful outcome. (a) *Preference data:*
+across **601k chosen-vs-rejected pairs** (full public OLMo-2 and Tulu-3
+mixtures) the raw register tilt toward the chosen response (+1.08/+0.70 per
+1,000) is **fully explained by length and chosen-model strength** — the
+equal-length intercept is ≈0 (t −1.7 / +0.6), the within-pair log-length
+slope carries the whole gap, and **same-model pairs reverse the sign.** So
+"DPO read the register off the labels" is not supported; the on-model
+ladder carries the stage claim alone. (b) *Length:* the ladder reproduces
+**+1.2412 exactly**; under three truncation rules the stage pattern is
+unchanged, RLVR stays ~5× smaller, and log-length carries **none** of the
+signal under prompt FE (t = 0.2) — honest flag that the strictest panel
+puts DPO's log-ratio beside the placebo. (c) *URIAL arms:* the register was
+**always promptable** — base + a 3-shot stylistic prefix reaches **116% of
+the base→instruct span** from conditioning alone, and the instruct model
+under its own chat template runs at **285%**. §4.7 now frames the ladder as
+measuring the installation of a *default* and states the stage sentence as
+a *data* claim (SFT/DPO train on chat, RLVR on math/code — confounded on
+this ladder).
+
 ---
 
 ## 5. Genre and scriptedness labels, panel-wide (survey rec 9)
@@ -278,6 +371,15 @@ LLM** run; the practical design is sampled (e.g., ~100 segments per
 chamber-year ≈ 60–70k classifications), which is registered future-work
 item 12's scope. New data: the labels themselves.
 
+**STATUS — partly done, the classifier not run.** Tier (a), the
+length-post-stratification proxy, ran as part of item 3 and is in §4.5 (the
+onset and jump survive fixed-composition weighting). Tiers (b) and (c) —
+parsing headings and the LLM genre classifier — are **not run**: (c) needs
+either a bounded API spend or a long local-LLM pass to label ~60–70k
+segments. Awaiting your go; the length proxy already answers the
+composition-drift threat for the series, so this is now a strengthening
+step, not a gap.
+
 ---
 
 ## 6. Instrument breadth for the evasion and quality arms (survey rec 4)
@@ -315,6 +417,23 @@ supervised detector (RoBERTa-class) is a small local model run. (b) is
 non-Anthropic judge APIs (new API integration in the grade workflow, then
 ~1,500 segments × 2 judges of **API spend**). New data: humanizer outputs
 and the new judges' grades.
+
+**RESULT for (a), the transfer table (commit 55a53ae — §4.9); (b) and (c)
+not run.** The 341 final variants + 65 originals were scored on three open
+detectors the attack never targeted — **Fast-DetectGPT, Binoculars, and
+the DetectLLM log-rank ratio** (one Falcon-pair pass), each thresholded at
+the **5% false-positive point on 1,255 pre-2022 human controls**. Headline:
+**79% of the Pangram-evading variants evade all four detectors at once**;
+each open detector individually flags only 6–10%. Reported two-sided,
+because the honest reason is: these zero-shot detectors have **weak base
+recall on this genre** (26% / 17% / 6% on the un-rewritten machine
+originals — the §7 collapse), so this shows the calibrated verdict is *not
+idiosyncratic* and that **no detector available to us holds the genre under
+directed effort** — not a strong evader beating strong alternatives.
+Per-run: the uniform GO run evades harder (1–4% open flags) than the
+contrastive NB run (9–14%). **(b) commercial humanizers and (c)
+non-Anthropic judges are not run** — both need external spend. Awaiting
+your go.
 
 ---
 
@@ -355,6 +474,13 @@ new generation. Extending the known-authorship evasion seeds additionally
 means re-running the frozen bypass **workflow** on ~60 new seeds (attacker
 API + Pangram credits per round).
 
+**STATUS — not run; needs generation + Pangram credits.** No held-data
+substitute exists for the known-α recovery curve or the fraction
+calibration: both require synthesising machine speeches, splicing them into
+controls, and scoring through Pangram (~2–3k fresh verdicts). The held
+known-authorship continuations cover part of the machine-text need.
+Awaiting your go on the credit spend.
+
 ---
 
 ## 8. GATED: the stage-2 human-comparator grading census
@@ -375,6 +501,11 @@ current sentence was the true one. **Gated on your grading spend.**
 **Implementation.** No new code beyond a pool-assembly script; the
 existing grade **workflow** re-run over ~1,710 segments (**API spend**,
 judge calls only); analysis is the committed estimator unchanged.
+
+**STATUS — gated on your grading spend; not run.** The text carries the
+qualified sentence (factor-weighted contrast +0.076, t 1.71). The census
+would settle it (projected t ≈ 2.1) with the whole-pool endpoint
+pre-committed.
 
 ---
 
@@ -399,6 +530,10 @@ pre-answered. Positive → the honest correction is applied, sized.
 control segments (**API spend**, judge calls only); then one CPU
 regression script (DQI dimensions on continuous Pangram and screen scores,
 genre + chamber FE). No new data beyond the grades.
+
+**STATUS — gated on your grading spend; not run.** Cheapest high-value
+quality test (API only, no human time); pre-answers the first objection
+any referee raises about the quality arm's design.
 
 ---
 
@@ -425,6 +560,10 @@ grading); the coding itself is **human work** (two coders, 150–200
 segments, the frozen rubric); then a DSL/PPI estimation script (CPU,
 scipy now available). The only item in this document whose cost is
 people.
+
+**STATUS — gated on recruiting human coders; not run.** The survey's one
+blocking gap with no computational substitute. The sampling script must
+exist and draw before any grading.
 
 ---
 
