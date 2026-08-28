@@ -1,573 +1,165 @@
 # Remaining evidence-gap evaluations — the reviewable plan
 
-The evidence-standards survey (`EVIDENCE-STANDARDS-SURVEY.md`, nine
-adjacent-literature reviews) produced a recommendation list; the
-measure-centered items and everything zero-cost are done and in the paper.
-This document is the decision sheet for what remains: per item, the exact
-result in the paper it concerns, the gap in plain terms, what the
-evaluation would concretely be, what changes in the text under each
-outcome, and the effort or spend. Items are ordered by my suggested
-priority; the last three are gated on spends and are independent of the
-rest.
+The evidence-standards survey (`EVIDENCE-STANDARDS-SURVEY.md`, nine adjacent-literature reviews) produced a recommendation list; the measure-centered items and everything zero-cost are done and in the paper. This document is the decision sheet for what remains: per item, the exact result in the paper it concerns, the gap in plain terms, what the evaluation would concretely be, what changes in the text under each outcome, and the effort or spend. Items are ordered by my suggested priority; the last three are gated on spends and are independent of the rest.
 
-**How to read the Implementation blocks.** Effort is stated as what has to
-exist, not human time. Compute classes: **CPU** = numpy/counting analyses
-on held files — effectively free at our scales, seconds to minutes;
-**CPU scan** = one pass over a segment corpus (the provinces scan runs
-~10 minutes in background; panel-wide over all 22 chambers is the largest,
-under an hour); **local LLM** = GPU inference on this machine (the study's
-Qwen/OLMo pipelines) — the only real compute cost, measured in GPU-hours;
-**API/credits** = external spend (judge gradings, Pangram verdicts,
-third-party services); **workflow** = a multi-pass coding/grading
-orchestration like the study's existing ones. "New data" means anything
-not already on disk.
+**How to read the Implementation blocks.** Effort is stated as what has to exist, not human time. Compute classes: **CPU** = numpy/counting analyses on held files — effectively free at our scales, seconds to minutes; **CPU scan** = one pass over a segment corpus (the provinces scan runs ~10 minutes in background; panel-wide over all 22 chambers is the largest, under an hour); **local LLM** = GPU inference on this machine (the study's Qwen/OLMo pipelines) — the only real compute cost, measured in GPU-hours; **API/credits** = external spend (judge gradings, Pangram verdicts, third-party services); **workflow** = a multi-pass coding/grading orchestration like the study's existing ones. "New data" means anything not already on disk.
 
-**RESULT / STATUS blocks were added 2026-08-27** after the four-agent CPU
-wave and the GPU jobs ran: each executed item carries what was found and
-where it landed in the paper (with the git commit); items still needing
-spend or human work carry a STATUS note instead.
+**RESULT / STATUS blocks were added 2026-08-27** after the four-agent CPU wave and the GPU jobs ran: each executed item carries what was found and where it landed in the paper (with the git commit); items still needing spend or human work carry a STATUS note instead.
 
 ---
 
 ## 1. The cohort claim's identification package (survey rec 6)
 
-**The results concerned.** §4.6's headline bullet — birth **+0.88 per
-1,000 words per decade** (t 15.7 clustered) net of spoken year — and the
-claim that the gradient **steepens as drift-formed cohorts arrive**; also
-the within-member **+0.51σ/decade** and the era figure.
+**The results concerned.** §4.6's headline bullet — birth **+0.88 per 1,000 words per decade** (t 15.7 clustered) net of spoken year — and the claim that the gradient **steepens as drift-formed cohorts arrive**; also the within-member **+0.51σ/decade** and the era figure.
 
-**The gap, plainly.** Age, period, and cohort satisfy age = year − birth,
-so no data can identify all three slopes; only two combinations are
-identified, and the +0.88 is one point on a line of equally-fitting
-(age, period, cohort) combinations. The paper *names* the limit but still
-quotes the point as if estimated. The steepening claim — the half that
-ties the gradient to the drift — is currently read off a figure, not
-tested. And the live rival is career-stage age-grading: juniors may write
-differently because they are junior-in-career, not because of when they
-were born; the test that separates these sits in a footnote.
+**The gap, plainly.** Age, period, and cohort satisfy age = year − birth, so no data can identify all three slopes; only two combinations are identified, and the +0.88 is one point on a line of equally-fitting (age, period, cohort) combinations. The paper *names* the limit but still quotes the point as if estimated. The steepening claim — the half that ties the gradient to the drift — is currently read off a figure, not tested. And the live rival is career-stage age-grading: juniors may write differently because they are junior-in-career, not because of when they were born; the test that separates these sits in a footnote.
 
-**The evaluation.**
-(a) *Publish the solution line*: tabulate the implied period and cohort
-slopes across the plausible range of age slopes — one small table, pure
-arithmetic on the committed fit.
-(b) *Bound it with the pre-drift Senate cell*: US senators born 1917–1964
-observed 1994–2004 are a cell where the cohort effect is ~zero by
-construction (all pre-drift cohorts), so their age slope is directly
-estimable (≈ −1.05/decade on current data) and caps the line.
-(c) *APC-I (Luo & Hodges)*: the **nonlinear** inter-cohort deviations are
-identified with no assumptions at all; fit them on member-year cells and
-test the post-1985 cohort deviations — this is the formal version of the
-steepening claim, which is exactly a nonlinearity claim.
-(d) *Promote the tenure test*: within (birth × year × chamber) cells,
-regress rate on tenure — net of all three clocks simultaneously; this is
-the one regression that discriminates career-stage from cohort, and it
-currently lives in footnote r46a.
+**The evaluation.** (a) *Publish the solution line*: tabulate the implied period and cohort slopes across the plausible range of age slopes — one small table, pure arithmetic on the committed fit. (b) *Bound it with the pre-drift Senate cell*: US senators born 1917–1964 observed 1994–2004 are a cell where the cohort effect is ~zero by construction (all pre-drift cohorts), so their age slope is directly estimable (≈ −1.05/decade on current data) and caps the line. (c) *APC-I (Luo & Hodges)*: the **nonlinear** inter-cohort deviations are identified with no assumptions at all; fit them on member-year cells and test the post-1985 cohort deviations — this is the formal version of the steepening claim, which is exactly a nonlinearity claim. (d) *Promote the tenure test*: within (birth × year × chamber) cells, regress rate on tenure — net of all three clocks simultaneously; this is the one regression that discriminates career-stage from cohort, and it currently lives in footnote r46a.
 
-**Outcomes.** If the bounded line keeps the cohort slope positive and
-APC-I confirms the post-1985 deviations, the claim upgrades from
-"identified via an assumption we name" to "bounded and nonlinearly
-confirmed." If the tenure test carries the load instead, the honest
-rescope is "a juniority gradient — cohort or career clock — steepened in
-the drift era," which is still the paper's story. Either way the +0.88
-sentence gains a "one point on this line" companion.
+**Outcomes.** If the bounded line keeps the cohort slope positive and APC-I confirms the post-1985 deviations, the claim upgrades from "identified via an assumption we name" to "bounded and nonlinearly confirmed." If the tenure test carries the load instead, the honest rescope is "a juniority gradient — cohort or career clock — steepened in the drift era," which is still the paper's story. Either way the +0.88 sentence gains a "one point on this line" companion.
 
-**Implementation.** Four small scripts, all CPU on held files, no new
-data, no workflows, no LLM runs:
-`apc_solution_line.py` (reads the committed two-/three-stamp fits, prints
-the (age, period, cohort) table — arithmetic); the Senate bound is a
-filtered OLS inside the same script (US-SENATE member-years 1994–2004,
-birth < 1965; one ruler-conversion constant to put the per-1,000 and
-per-100k scales together); `apc_i.py` (the Luo–Hodges estimator is OLS
-with the linear cohort trend constrained out — ~100 lines of numpy on the
-member-year panel `cohort_vs_period.py` already loads); the tenure test
-extends `cohort_vs_period.py` (entry year is already computed there).
+**Implementation.** Four small scripts, all CPU on held files, no new data, no workflows, no LLM runs: `apc_solution_line.py` (reads the committed two-/three-stamp fits, prints the (age, period, cohort) table — arithmetic); the Senate bound is a filtered OLS inside the same script (US-SENATE member-years 1994–2004, birth < 1965; one ruler-conversion constant to put the per-1,000 and per-100k scales together); `apc_i.py` (the Luo–Hodges estimator is OLS with the linear cohort trend constrained out — ~100 lines of numpy on the member-year panel `cohort_vs_period.py` already loads); the tenure test extends `cohort_vs_period.py` (entry year is already computed there).
 
-**RESULT (commits bfbee4b, 791fe16 — §4.6).** The claim split exactly as the
-outcome branch predicted, and *both halves landed on the identified side.*
-Solution line: the same-age decade-on invariant is **period + cohort =
-+2.11/decade**. Senate bound: the pre-drift cell (1,107 member-years, 160
-senators) estimates **age = −0.88/decade** (clustered t −3.5), propagating
-to a *linear* cohort slope of **−0.03 [−0.52, +0.46]** — under the paper's
-own predates premise the gradient's **level is an age-or-career clock, not
-cohort.** APC-I (with a synthetic recovery-and-size check that passed):
-**linearity rejected, Wald p ≈ 1.5×10⁻⁷**; the constraint-invariant
-contrasts put cohorts **born 1975+ at +0.46 above the linear profile
-(z = 5.1)**, born 1985+ at +0.65 (z = 2.6), late-minus-early local slope
-**+0.70/decade (z = 2.7)** — the steepening confirmed identification-free.
-Complication carried into the text: the profile is **U-shaped**, the
-1920s–30s cohorts also elevated (thinnest cells). Tenure: **−0.95/decade
-(t −8.3)**, but algebraically minus entry year in these cells, so
-career-stage and entry-cohort are one coefficient — only the positive
-within-member trend separates them. **Byproduct defect fixed at source:**
-`load_birth` joined tier-1 births on bare surnames (one senator's year
-taken from another Pryor; 49 impossible-age rows); the ambiguity filter is
-now applied and every dependent number requoted (two-stamp birth **+0.86,
-t 14.7** clustered, n 60,186). **Closed blind-review CC9.**
+**RESULT (commits bfbee4b, 791fe16 — §4.6).** The claim split exactly as the outcome branch predicted, and *both halves landed on the identified side.* Solution line: the same-age decade-on invariant is **period + cohort = +2.11/decade**. Senate bound: the pre-drift cell (1,107 member-years, 160 senators) estimates **age = −0.88/decade** (clustered t −3.5), propagating to a *linear* cohort slope of **−0.03 [−0.52, +0.46]** — under the paper's own predates premise the gradient's **level is an age-or-career clock, not cohort.** APC-I (with a synthetic recovery-and-size check that passed): **linearity rejected, Wald p ≈ 1.5×10⁻⁷**; the constraint-invariant contrasts put cohorts **born 1975+ at +0.46 above the linear profile (z = 5.1)**, born 1985+ at +0.65 (z = 2.6), late-minus-early local slope **+0.70/decade (z = 2.7)** — the steepening confirmed identification-free. Complication carried into the text: the profile is **U-shaped**, the 1920s–30s cohorts also elevated (thinnest cells). Tenure: **−0.95/decade (t −8.3)**, but algebraically minus entry year in these cells, so career-stage and entry-cohort are one coefficient — only the positive within-member trend separates them. **Byproduct defect fixed at source:** `load_birth` joined tier-1 births on bare surnames (one senator's year taken from another Pryor; 49 impossible-age rows); the ambiguity filter is now applied and every dependent number requoted (two-stamp birth **+0.86, t 14.7** clustered, n 60,186). **Closed blind-review CC9.**
 
 ---
 
 ## 2. Member-panel decomposition, ported to three arms (survey rec 8, remainder)
 
-**The results concerned.**
-(i) Permeation's pre-LLM delta (§4.8: the detector-independent +0.01-range
-in-context shift, and the pre-LLM window parity);
-(ii) chase-and-flight's "**the peak does not migrate**" (§4.6b) — which
-footnote r46cls concedes is adjudicated by an aggregation choice
-(member-year aggregation *would* show migration; member-level does not);
-(iii) the unexplained factor-of-two between the between-member cohort
-gradient (+1.25/decade, member-year panel) and the within-member drift
-(+0.51/decade).
+**The results concerned.** (i) Permeation's pre-LLM delta (§4.8: the detector-independent +0.01-range in-context shift, and the pre-LLM window parity); (ii) chase-and-flight's "**the peak does not migrate**" (§4.6b) — which footnote r46cls concedes is adjudicated by an aggregation choice (member-year aggregation *would* show migration; member-level does not); (iii) the unexplained factor-of-two between the between-member cohort gradient (+1.25/decade, member-year panel) and the within-member drift (+0.51/decade).
 
-**The gap, plainly.** Every arm with a time dimension faces the same
-question — is the aggregate movement *people changing* or *people being
-replaced*? — and the study has answered it properly exactly once (§4.6's
-within-member fixed-effects drift). The other arms either don't split it
-(permeation: the era contrast pools sitting members with turnover, and
-§4.6's own cohort result says turnover is large), or split it informally
-(the peak-migration "40%" replacement share has no SE and the two
-aggregations disagree).
+**The gap, plainly.** Every arm with a time dimension faces the same question — is the aggregate movement *people changing* or *people being replaced*? — and the study has answered it properly exactly once (§4.6's within-member fixed-effects drift). The other arms either don't split it (permeation: the era contrast pools sitting members with turnover, and §4.6's own cohort result says turnover is large), or split it informally (the peak-migration "40%" replacement share has no SE and the two aggregations disagree).
 
-**The evaluation.** One asset serves all three: the member × word × year
-cache (already built for the flight work, `flight_member_cache.json.gz`,
-extended panel-wide).
-(i) Recompute the permeation era contrast on the balanced sub-panel
-(members present in both windows) with member fixed effects; decompose the
-aggregate delta into within-member change, entrant-minus-leaver
-composition, and interaction.
-(ii) Run the Firebaugh decomposition of the peak's movement with proper
-SEs — report both components as *the* result instead of choosing an
-aggregation; add per-word lead–lag (fit each word's tier crossing dates;
-does the top's date precede the bottom's?), which is the direction-of-
-diffusion evidence the fashion literature runs on.
-(iii) Reconcile 1.25 vs 0.51 explicitly: the gap *is* the composition
-share, and one paragraph can say so with the decomposition's numbers.
+**The evaluation.** One asset serves all three: the member × word × year cache (already built for the flight work, `flight_member_cache.json.gz`, extended panel-wide). (i) Recompute the permeation era contrast on the balanced sub-panel (members present in both windows) with member fixed effects; decompose the aggregate delta into within-member change, entrant-minus-leaver composition, and interaction. (ii) Run the Firebaugh decomposition of the peak's movement with proper SEs — report both components as *the* result instead of choosing an aggregation; add per-word lead–lag (fit each word's tier crossing dates; does the top's date precede the bottom's?), which is the direction-of- diffusion evidence the fashion literature runs on. (iii) Reconcile 1.25 vs 0.51 explicitly: the gap *is* the composition share, and one paragraph can say so with the decomposition's numbers.
 
-**Outcomes.** Permeation: if the within-member component survives, the
-diffusion claim strengthens sharply (it is currently vulnerable to "it's
-all turnover"); if it's all composition, the claim rescopes to
-cohort-borne diffusion — still real, differently worded. Peak migration:
-the result becomes aggregation-proof either way. Lead–lag: top-first
-supports the cycle's direction; simultaneous take-off supports a common
-external source (also informative — it points at the tools).
+**Outcomes.** Permeation: if the within-member component survives, the diffusion claim strengthens sharply (it is currently vulnerable to "it's all turnover"); if it's all composition, the claim rescopes to cohort-borne diffusion — still real, differently worded. Peak migration: the result becomes aggregation-proof either way. Lead–lag: top-first supports the cycle's direction; simultaneous take-off supports a common external source (also informative — it points at the tools).
 
-**Implementation.** One cache extension plus three CPU analysis scripts —
-with a fork in the permeation branch:
-extend `build_flight_member_cache.py` panel-wide (add the tier-1 and
-2026-addition segment stores to its glob — one CPU scan, the largest we
-run, under an hour in background). Then `permeation_decompose.py`,
-`peak_decomposition.py` (Firebaugh with bootstrap SEs), `leadlag.py` (per-
-word tier crossing dates) — all CPU on the cache.
-**The fork:** the frequency-side permeation decomposition is pure CPU. The
-*log-prob* (word-context) measure cannot be member-decomposed from held
-files — `word_context/*.json` store flat log-prob arrays with no member
-keys — so decomposing THAT measure means re-running the trace pipeline
-with member attribution: **local LLM** (Qwen family on this machine,
-comparable to one committed word-context run per model family). The
-frequency version answers the turnover objection; the log-prob rerun is
-the completionist upgrade.
+**Implementation.** One cache extension plus three CPU analysis scripts — with a fork in the permeation branch: extend `build_flight_member_cache.py` panel-wide (add the tier-1 and 2026-addition segment stores to its glob — one CPU scan, the largest we run, under an hour in background). Then `permeation_decompose.py`, `peak_decomposition.py` (Firebaugh with bootstrap SEs), `leadlag.py` (per- word tier crossing dates) — all CPU on the cache. **The fork:** the frequency-side permeation decomposition is pure CPU. The *log-prob* (word-context) measure cannot be member-decomposed from held files — `word_context/*.json` store flat log-prob arrays with no member keys — so decomposing THAT measure means re-running the trace pipeline with member attribution: **local LLM** (Qwen family on this machine, comparable to one committed word-context run per model family). The frequency version answers the turnover objection; the log-prob rerun is the completionist upgrade.
 
-**RESULT (commits 625e123, d83e5a0, 99e85c3 — §4.6b, §4.8, Flight).** The
-panel cache built and **validated cell-for-cell (502/502)** against the
-committed member-year panel. (i) *Peak:* the paper's own footnote was wrong
-— the peak is II or III in **every bin under both aggregations** (member-
-year keeps the machine-era gap at **+0.121, CI excludes 0**), so the shape
-claim is aggregation-proof and the r46cls "would migrate" note is
-corrected. (ii) *New finding:* the near-flat class profile hides a
-**renewal engine** — sitting members drift *down* relative to peers in
-**10/10 class-transitions** (CIs excluding 0) while entrants arrive above;
-the class advantage is **renewed by entry, not maintained by incumbents.**
-(iii) *Lead–lag:* the top tier's adoption crossing **precedes** the
-bottom's — **+0.27 yr (class, Wilcoxon p < 10⁻⁴)**, +0.15 (folk,
-p = 0.003) — chase-consistent, honestly hedged (median bootstrap CI spans
-0, 7/11 chambers). (iv) *Permeation, frequency side:* the rare-word rise
-splits **within-member 26% [17, 35], composition 58%, interaction 16%**;
-the pooled 407-word rate's within term is **negative** (stayers fall,
-entrants carry), flagged because §4.6's regressions run on that pooled
-rate. **Bonus (no GPU needed):** the *log-prob* member split — the survey's
-GPU-classed item — was recoverable from cache via the seg-id join; on the
-stronger family the era change is **carried within members** (+0.0054 of
-+0.0053 pooled, composition ≈ 0), wide member-level CI stated. Measurement
-caveats surfaced and bounded: Hansard **name-format breaks** (VIC 2022/23,
-WA 2024/25) bias within-member joins low by <4 points; **Ireland has no
-2023 sittings** (flagged for the data appendix).
+**RESULT (commits 625e123, d83e5a0, 99e85c3 — §4.6b, §4.8, Flight).** The panel cache built and **validated cell-for-cell (502/502)** against the committed member-year panel. (i) *Peak:* the paper's own footnote was wrong — the peak is II or III in **every bin under both aggregations** (member- year keeps the machine-era gap at **+0.121, CI excludes 0**), so the shape claim is aggregation-proof and the r46cls "would migrate" note is corrected. (ii) *New finding:* the near-flat class profile hides a **renewal engine** — sitting members drift *down* relative to peers in **10/10 class-transitions** (CIs excluding 0) while entrants arrive above; the class advantage is **renewed by entry, not maintained by incumbents.** (iii) *Lead–lag:* the top tier's adoption crossing **precedes** the bottom's — **+0.27 yr (class, Wilcoxon p < 10⁻⁴)**, +0.15 (folk, p = 0.003) — chase-consistent, honestly hedged (median bootstrap CI spans 0, 7/11 chambers). (iv) *Permeation, frequency side:* the rare-word rise splits **within-member 26% [17, 35], composition 58%, interaction 16%**; the pooled 407-word rate's within term is **negative** (stayers fall, entrants carry), flagged because §4.6's regressions run on that pooled rate. **Bonus (no GPU needed):** the *log-prob* member split — the survey's GPU-classed item — was recoverable from cache via the seg-id join; on the stronger family the era change is **carried within members** (+0.0054 of +0.0053 pooled, composition ≈ 0), wide member-level CI stated. Measurement caveats surfaced and bounded: Hansard **name-format breaks** (VIC 2022/23, WA 2024/25) bias within-member joins low by <4 points; **Ireland has no 2023 sittings** (flagged for the data appendix).
 
 ---
 
 ## 3. The ruler audit: per-word decomposition and trend-matched donors (survey rec 7)
 
-**The results concerned.** The paper's second headline: the register
-**rise begins 1994–96** and the marker list "predates the models by
-decades" (§4.5); also permeation's lack of a control word set (its
-footnote admits "no placebo word list").
+**The results concerned.** The paper's second headline: the register **rise begins 1994–96** and the marker list "predates the models by decades" (§4.5); also permeation's lack of a control word set (its footnote admits "no placebo word list").
 
-**The gap, plainly.** The 407 markers were selected because they jumped
-after 2022, then run backwards thirty years. Words that jumped post-2022
-could disproportionately be words that were *already rising* — selection
-on the endpoint of a trending series. The committed placebos match
-frequency and dispersion but **not pre-period trend**, which is the one
-dimension this objection travels through. Separately, the 30-year rise is
-only ever shown as a pooled aggregate — no reader can see whether it is
-broad (many words drifting) or narrow (a few words exploding).
+**The gap, plainly.** The 407 markers were selected because they jumped after 2022, then run backwards thirty years. Words that jumped post-2022 could disproportionately be words that were *already rising* — selection on the endpoint of a trending series. The committed placebos match frequency and dispersion but **not pre-period trend**, which is the one dimension this objection travels through. Separately, the 30-year rise is only ever shown as a pooled aggregate — no reader can see whether it is broad (many words drifting) or narrow (a few words exploding).
 
-**The evaluation.**
-(a) *Per-word decomposition*: 1994–2026 slope for every marker; fraction
-positive; the aggregate recomputed with the ten largest contributors
-removed; a types-per-speech breadth series.
-(b) *Trend-matched donors*: rebuild the placebo pool matched on frequency,
-dispersion **and pre-2010 slope**; report the register series minus the
-donor series (a difference-in-differences against selection).
-(c) *The second marker set*: the study already holds the Wikipedia-control
-set — test whether the 1994–96 onset appears on it too (currently the two
-sets are only compared post-2023).
-(d) For permeation: a donor word set matched on frequency decile, length
-and part-of-speech, rescored through the committed pipeline — its missing
-control.
+**The evaluation.** (a) *Per-word decomposition*: 1994–2026 slope for every marker; fraction positive; the aggregate recomputed with the ten largest contributors removed; a types-per-speech breadth series. (b) *Trend-matched donors*: rebuild the placebo pool matched on frequency, dispersion **and pre-2010 slope**; report the register series minus the donor series (a difference-in-differences against selection). (c) *The second marker set*: the study already holds the Wikipedia-control set — test whether the 1994–96 onset appears on it too (currently the two sets are only compared post-2023). (d) For permeation: a donor word set matched on frequency decile, length and part-of-speech, rescored through the committed pipeline — its missing control.
 
-**Outcomes.** Onset survives trend-matched donors and shows breadth → the
-endogeneity objection is answered in its own coin, and "predates" gains
-its strongest support. Donors show the same 1994 rise → the onset is
-generic vocabulary drift and the claim rescopes to "the register rides a
-broader drift the models then amplified" — a real finding, differently
-framed.
+**Outcomes.** Onset survives trend-matched donors and shows breadth → the endogeneity objection is answered in its own coin, and "predates" gains its strongest support. Donors show the same 1994 rise → the onset is generic vocabulary drift and the claim rescopes to "the register rides a broader drift the models then amplified" — a real finding, differently framed.
 
-**Implementation.** `occurrence_trends.json` is aggregate-only (chamber ×
-year totals), so (a)–(c) start with one **CPU scan** building per-word ×
-chamber × year counts — for the 407 markers plus the full candidate
-vocabulary needed for donor matching (the vocabulary-wide pass is the
-heaviest CPU item in this document; counters fit in memory). Then
-`ruler_audit.py` (per-word slopes, fraction positive, trimmed aggregate,
-breadth series — CPU) and `donor_series.py` (match on frequency ×
-dispersion × pre-2010 slope; register-minus-donor series — CPU). (c) reuses
-the held Wikipedia marker set against the same counts — CPU. (d), the
-permeation donor rescoring, is **local LLM**: a donor word list pushed
-through `word_context_delta.py`'s pipeline, one run per model family —
-the same GPU shape as the committed runs. No new data, no workflows.
+**Implementation.** `occurrence_trends.json` is aggregate-only (chamber × year totals), so (a)–(c) start with one **CPU scan** building per-word × chamber × year counts — for the 407 markers plus the full candidate vocabulary needed for donor matching (the vocabulary-wide pass is the heaviest CPU item in this document; counters fit in memory). Then `ruler_audit.py` (per-word slopes, fraction positive, trimmed aggregate, breadth series — CPU) and `donor_series.py` (match on frequency × dispersion × pre-2010 slope; register-minus-donor series — CPU). (c) reuses the held Wikipedia marker set against the same counts — CPU. (d), the permeation donor rescoring, is **local LLM**: a donor word list pushed through `word_context_delta.py`'s pipeline, one run per model family — the same GPU shape as the committed runs. No new data, no workflows.
 
-**RESULT (commit 62129bf — §4.5, abstract, intro).** The 1.62B-token scan
-reproduced the committed series to **0.00 per 100k at the worst year**. The
-rise is **concentrated: ten common connectives carry 92.5%** of the
-1994–96 → 2024–26 climb (`this` alone 35%); trimmed of them the aggregate
-is nearly flat (×1.03 pooled, ×1.10 UK); what rises beneath is **breadth**
-(×1.26 UK) over **60.4% of words positive (z = +4.2)** at a shallow
-+0.5%/yr median. **Composition-robust:** length post-stratification leaves
-the onset and *slightly strengthens* the UK climb (×1.49 → ×1.54).
-**Instrument-robust for the drift, not the date:** the independent
-Wikipedia signs-of-AI patterns rise across the whole pre-LLM record and
-**faster** (+2.7 vs +1.4 %/yr) — so the decades-long rise is a
-cross-instrument fact — but their trough is **1987**, so the specific
-1994–96 date belongs to the Kobak ruler's UK series. **Donor test:** against
-frequency+dispersion-matched donors the UK interior 1994 minimum survives;
-matched *also* on pre-2010 trend the register's **distinctive excess over
-same-shaped vocabulary dates to ~2014–2018**, with style words below their
-donors in level until 2025. §4.5's opening now scopes the date to the UK
-series and a new audited passage carries all of this. **Byproduct defect
-noted:** the committed placebo builder's top-120 exclusion mismatches 8
-style words (`this` among them) to far rarer donors.
+**RESULT (commit 62129bf — §4.5, abstract, intro).** The 1.62B-token scan reproduced the committed series to **0.00 per 100k at the worst year**. The rise is **concentrated: ten common connectives carry 92.5%** of the 1994–96 → 2024–26 climb (`this` alone 35%); trimmed of them the aggregate is nearly flat (×1.03 pooled, ×1.10 UK); what rises beneath is **breadth** (×1.26 UK) over **60.4% of words positive (z = +4.2)** at a shallow +0.5%/yr median. **Composition-robust:** length post-stratification leaves the onset and *slightly strengthens* the UK climb (×1.49 → ×1.54). **Instrument-robust for the drift, not the date:** the independent Wikipedia signs-of-AI patterns rise across the whole pre-LLM record and **faster** (+2.7 vs +1.4 %/yr) — so the decades-long rise is a cross-instrument fact — but their trough is **1987**, so the specific 1994–96 date belongs to the Kobak ruler's UK series. **Donor test:** against frequency+dispersion-matched donors the UK interior 1994 minimum survives; matched *also* on pre-2010 trend the register's **distinctive excess over same-shaped vocabulary dates to ~2014–2018**, with style words below their donors in level until 2025. §4.5's opening now scopes the date to the UK series and a new audited passage carries all of this. **Byproduct defect noted:** the committed placebo builder's top-120 exclusion mismatches 8 style words (`this` among them) to far rarer donors.
 
 ---
 
 ## 4. Post-training: from data claim to attribution (survey rec 2)
 
-**The results concerned.** §4.7: base→instruct **+1.24** on the OLMo
-ladder; SFT and DPO indistinguishable; **RLVR ≈ 0**; the cross-family
-preference compile **+0.387**; and the abstract's sentence "installed by
-the stages tuned toward human demonstrations and preferences, and not by
-the stage tuned toward verifiable correctness."
+**The results concerned.** §4.7: base→instruct **+1.24** on the OLMo ladder; SFT and DPO indistinguishable; **RLVR ≈ 0**; the cross-family preference compile **+0.387**; and the abstract's sentence "installed by the stages tuned toward human demonstrations and preferences, and not by the stage tuned toward verifiable correctness."
 
-**The gap, plainly.** On the OLMo/Tulu ladder, SFT and DPO train on chat
-data while RLVR trains on math and code — so "the RLVR *objective* doesn't
-install it" is confounded with "the RLVR *data* isn't chat." The sentence
-as written is an objective claim; the design supports a data claim. And
-the +1.24 is confounded with the chat template and decoding regime.
+**The gap, plainly.** On the OLMo/Tulu ladder, SFT and DPO train on chat data while RLVR trains on math and code — so "the RLVR *objective* doesn't install it" is confounded with "the RLVR *data* isn't chat." The sentence as written is an objective claim; the design supports a data claim. And the +1.24 is confounded with the chat template and decoding regime.
 
-**The evaluation.**
-(a) *Score the preference data itself*: register excess on chosen-vs-
-rejected pairs in the public Tulu-3 preference mixture — within-pair
-deltas, length-residualised. If the preference data prefers the register,
-the mechanism is located in the data without any training run.
-(b) *Length control*: truncate generations to common within-pair length
-and re-run every stage delta.
-(c) *Base-prompting arm* (URIAL-style): base model with a 3-shot stylistic
-prefix vs instruct with and without template — what share of the +1.24 is
-weights vs surface conditioning.
+**The evaluation.** (a) *Score the preference data itself*: register excess on chosen-vs- rejected pairs in the public Tulu-3 preference mixture — within-pair deltas, length-residualised. If the preference data prefers the register, the mechanism is located in the data without any training run. (b) *Length control*: truncate generations to common within-pair length and re-run every stage delta. (c) *Base-prompting arm* (URIAL-style): base model with a 3-shot stylistic prefix vs instruct with and without template — what share of the +1.24 is weights vs surface conditioning.
 
-**Outcomes.** Preference pairs positive → upgrade: "the human-preference
-data itself prefers the register" (a stronger and cleaner claim than the
-stage attribution). Base-prompting recovers a large share → the +1.24
-softens to a conditioning result, which the honest sentence absorbs.
+**Outcomes.** Preference pairs positive → upgrade: "the human-preference data itself prefers the register" (a stronger and cleaner claim than the stage attribution). Base-prompting recovers a large share → the +1.24 softens to a conditioning result, which the honest sentence absorbs.
 
-**Implementation.** (a) is a **public download** (the Tulu-3 preference
-mixture from HuggingFace, gigabytes) plus a CPU counting script
-(`pref_pairs_register.py`: within-pair register excess, length-
-residualised — no model runs; it is word counting on text pairs). (b) is
-CPU on the held generations (truncate to common within-pair length,
-re-run the committed stage deltas). (c) is the one **local LLM** item: new
-generation runs on the base and instruct OLMo checkpoints under four
-prompting arms (base raw / base + 3-shot stylistic prefix / instruct with
-template / without) — checkpoints already used by `olmo_ladder.py`, so no
-new model acquisition; GPU-hours proportional to prompts × arms. No
-workflows.
+**Implementation.** (a) is a **public download** (the Tulu-3 preference mixture from HuggingFace, gigabytes) plus a CPU counting script (`pref_pairs_register.py`: within-pair register excess, length- residualised — no model runs; it is word counting on text pairs). (b) is CPU on the held generations (truncate to common within-pair length, re-run the committed stage deltas). (c) is the one **local LLM** item: new generation runs on the base and instruct OLMo checkpoints under four prompting arms (base raw / base + 3-shot stylistic prefix / instruct with template / without) — checkpoints already used by `olmo_ladder.py`, so no new model acquisition; GPU-hours proportional to prompts × arms. No workflows.
 
-**RESULT (commits 704a419, 79ce78c — §4.7).** The tempting stronger story
-was **refuted** — the honest and useful outcome. (a) *Preference data:*
-across **601k chosen-vs-rejected pairs** (full public OLMo-2 and Tulu-3
-mixtures) the raw register tilt toward the chosen response (+1.08/+0.70 per
-1,000) is **fully explained by length and chosen-model strength** — the
-equal-length intercept is ≈0 (t −1.7 / +0.6), the within-pair log-length
-slope carries the whole gap, and **same-model pairs reverse the sign.** So
-"DPO read the register off the labels" is not supported; the on-model
-ladder carries the stage claim alone. (b) *Length:* the ladder reproduces
-**+1.2412 exactly**; under three truncation rules the stage pattern is
-unchanged, RLVR stays ~5× smaller, and log-length carries **none** of the
-signal under prompt FE (t = 0.2) — honest flag that the strictest panel
-puts DPO's log-ratio beside the placebo. (c) *URIAL arms:* the register was
-**always promptable** — base + a 3-shot stylistic prefix reaches **116% of
-the base→instruct span** from conditioning alone, and the instruct model
-under its own chat template runs at **285%**. §4.7 now frames the ladder as
-measuring the installation of a *default* and states the stage sentence as
-a *data* claim (SFT/DPO train on chat, RLVR on math/code — confounded on
-this ladder).
+**RESULT (commits 704a419, 79ce78c — §4.7).** The tempting stronger story was **refuted** — the honest and useful outcome. (a) *Preference data:* across **601k chosen-vs-rejected pairs** (full public OLMo-2 and Tulu-3 mixtures) the raw register tilt toward the chosen response (+1.08/+0.70 per 1,000) is **fully explained by length and chosen-model strength** — the equal-length intercept is ≈0 (t −1.7 / +0.6), the within-pair log-length slope carries the whole gap, and **same-model pairs reverse the sign.** So "DPO read the register off the labels" is not supported; the on-model ladder carries the stage claim alone. (b) *Length:* the ladder reproduces **+1.2412 exactly**; under three truncation rules the stage pattern is unchanged, RLVR stays ~5× smaller, and log-length carries **none** of the signal under prompt FE (t = 0.2) — honest flag that the strictest panel puts DPO's log-ratio beside the placebo. (c) *URIAL arms:* the register was **always promptable** — base + a 3-shot stylistic prefix reaches **116% of the base→instruct span** from conditioning alone, and the instruct model under its own chat template runs at **285%**. §4.7 now frames the ladder as measuring the installation of a *default* and states the stage sentence as a *data* claim (SFT/DPO train on chat, RLVR on math/code — confounded on this ladder).
 
 ---
 
 ## 5. Genre and scriptedness labels, panel-wide (survey rec 9)
 
-**The results concerned.** Four at once: the prevalence spread and its
-year comparison (§4.2), the 30-year register series and its 1994–96 onset
-(§4.5), permeation's window contrasts (§4.8), and the flight test's
-interpretation (status display vs drafting practice).
+**The results concerned.** Four at once: the prevalence spread and its year comparison (§4.2), the 30-year register series and its 1994–96 onset (§4.5), permeation's window contrasts (§4.8), and the flight test's interpretation (status display vs drafting practice).
 
-**The gap, plainly.** §4.3 shows a **3.29×** genre gradient — and genre is
-labelled in exactly one of 22 chambers. Any rate compared across time,
-chamber, or group is exposed to composition drift in the one dimension the
-study has proven matters most.
+**The gap, plainly.** §4.3 shows a **3.29×** genre gradient — and genre is labelled in exactly one of 22 chambers. Any rate compared across time, chamber, or group is exposed to composition drift in the one dimension the study has proven matters most.
 
-**The evaluation.** Three tiers, cheapest first: (a) post-stratify each
-chamber-year to a fixed segment-length distribution (a measurable proxy);
-(b) parse order-of-business and debate-title headings from the raw
-transcripts into a coarse 3–5-way rubric and reweight; (c) the scoped LLM
-genre classifier (already registered as future-work item 12) over held
-text. Then re-run: the 30-year series and onset under fixed composition;
-the permeation contrast within genre; the chamber spread
-direct-standardised; and the flight correlation split
-scripted/unscripted — a discriminating test, since status display predicts
-flight strongest in the most-monitored speech and drafting practice
-predicts the opposite.
+**The evaluation.** Three tiers, cheapest first: (a) post-stratify each chamber-year to a fixed segment-length distribution (a measurable proxy); (b) parse order-of-business and debate-title headings from the raw transcripts into a coarse 3–5-way rubric and reweight; (c) the scoped LLM genre classifier (already registered as future-work item 12) over held text. Then re-run: the 30-year series and onset under fixed composition; the permeation contrast within genre; the chamber spread direct-standardised; and the flight correlation split scripted/unscripted — a discriminating test, since status display predicts flight strongest in the most-monitored speech and drafting practice predicts the opposite.
 
-**Outcomes.** Series robust → the standing "informalization" rival and the
-composition confound close together. Onset moves → major, honest rescope.
-The flight split adjudicates between two readings the paper currently
-cannot separate.
+**Outcomes.** Series robust → the standing "informalization" rival and the composition confound close together. Onset moves → major, honest rescope. The flight split adjudicates between two readings the paper currently cannot separate.
 
-**Implementation.** (a) is CPU on held segment metadata (length
-post-stratification — a reweighting function, no new files). (b) is a
-**CPU scan** of the raw transcript stores to extract order-of-business /
-debate-title headings, plus a hand-built heading→category rubric (I write
-the rubric; odd headings can fall to an LLM tie-breaker, API or local,
-small volume). (c) is the genuinely expensive tier and the one item here
-best run as a **workflow**: classify segments by genre with an LLM — at
-full corpus scale this is either a large **API spend** or a long **local
-LLM** run; the practical design is sampled (e.g., ~100 segments per
-chamber-year ≈ 60–70k classifications), which is registered future-work
-item 12's scope. New data: the labels themselves.
+**Implementation.** (a) is CPU on held segment metadata (length post-stratification — a reweighting function, no new files). (b) is a **CPU scan** of the raw transcript stores to extract order-of-business / debate-title headings, plus a hand-built heading→category rubric (I write the rubric; odd headings can fall to an LLM tie-breaker, API or local, small volume). (c) is the genuinely expensive tier and the one item here best run as a **workflow**: classify segments by genre with an LLM — at full corpus scale this is either a large **API spend** or a long **local LLM** run; the practical design is sampled (e.g., ~100 segments per chamber-year ≈ 60–70k classifications), which is registered future-work item 12's scope. New data: the labels themselves.
 
-**STATUS — partly done, the classifier not run.** Tier (a), the
-length-post-stratification proxy, ran as part of item 3 and is in §4.5 (the
-onset and jump survive fixed-composition weighting). Tiers (b) and (c) —
-parsing headings and the LLM genre classifier — are **not run**: (c) needs
-either a bounded API spend or a long local-LLM pass to label ~60–70k
-segments. Awaiting your go; the length proxy already answers the
-composition-drift threat for the series, so this is now a strengthening
-step, not a gap.
+**STATUS — partly done, the classifier not run.** Tier (a), the length-post-stratification proxy, ran as part of item 3 and is in §4.5 (the onset and jump survive fixed-composition weighting). Tiers (b) and (c) — parsing headings and the LLM genre classifier — are **not run**: (c) needs either a bounded API spend or a long local-LLM pass to label ~60–70k segments. Awaiting your go; the length proxy already answers the composition-drift threat for the series, so this is now a strengthening step, not a gap.
 
 ---
 
 ## 6. Instrument breadth for the evasion and quality arms (survey rec 4)
 
-**The results concerned.** §4.9: "**roughly one flagged speech in five**
-can be walked past the detector" (19.4–22.5%), "**~10× the commercial
-evasion baseline**", and every quality number's single-judge provenance.
+**The results concerned.** §4.9: "**roughly one flagged speech in five** can be walked past the detector" (19.4–22.5%), "**~10× the commercial evasion baseline**", and every quality number's single-judge provenance.
 
-**The gap, plainly.** One target detector (every accepted evasion paper
-attacks 4–12); the 10× compares our measurement on our corpus against
-Pangram's self-reported benchmarks on other corpora; and the attacker and
-both graders are the same model family.
+**The gap, plainly.** One target detector (every accepted evasion paper attacks 4–12); the 10× compares our measurement on our corpus against Pangram's self-reported benchmarks on other corpora; and the attacker and both graders are the same model family.
 
-**The evaluation.** (a) Rescore all 341 variants + 71 originals with
-Binoculars and Fast-DetectGPT (computable from held log-probs; a bench
-script exists) plus one open supervised detector — a per-detector evasion
-table and a transfer statement (did evading Pangram evade the others?).
-(b) Run 2–4 commercial humanizers over the same 71 targets, scored by
-Pangram — converts the 10× into a within-experiment ratio with an
-interval. (c) Re-grade both quality pools with two non-Anthropic judges on
-the frozen rubric; report headline contrasts as a range across judges.
+**The evaluation.** (a) Rescore all 341 variants + 71 originals with Binoculars and Fast-DetectGPT (computable from held log-probs; a bench script exists) plus one open supervised detector — a per-detector evasion table and a transfer statement (did evading Pangram evade the others?). (b) Run 2–4 commercial humanizers over the same 71 targets, scored by Pangram — converts the 10× into a within-experiment ratio with an interval. (c) Re-grade both quality pools with two non-Anthropic judges on the frozen rubric; report headline contrasts as a range across judges.
 
-**Outcomes.** Transfer high → the evasion claim generalises beyond one
-vendor. Humanizers land near Pangram's tables → the 10× stands on our own
-data. Judge range tight → the quality claims shed the family-circularity
-objection.
+**Outcomes.** Transfer high → the evasion claim generalises beyond one vendor. Humanizers land near Pangram's tables → the 10× stands on our own data. Judge range tight → the quality claims shed the family-circularity objection.
 
-**Implementation.** (a) is **local LLM** at small n: Binoculars and
-Fast-DetectGPT scores for 412 texts (341 variants + 71 originals) — the
-log-prob machinery exists (`bench_binoculars.py`), GPU-minutes; the open
-supervised detector (RoBERTa-class) is a small local model run. (b) is
-**external spend**: 2–4 commercial humanizer subscriptions (~$100–300),
-71 targets each, then ~150–300 **Pangram credits** to score the outputs.
-(c) is a **workflow adaptation**: the frozen grading rubric pointed at two
-non-Anthropic judge APIs (new API integration in the grade workflow, then
-~1,500 segments × 2 judges of **API spend**). New data: humanizer outputs
-and the new judges' grades.
+**Implementation.** (a) is **local LLM** at small n: Binoculars and Fast-DetectGPT scores for 412 texts (341 variants + 71 originals) — the log-prob machinery exists (`bench_binoculars.py`), GPU-minutes; the open supervised detector (RoBERTa-class) is a small local model run. (b) is **external spend**: 2–4 commercial humanizer subscriptions (~$100–300), 71 targets each, then ~150–300 **Pangram credits** to score the outputs. (c) is a **workflow adaptation**: the frozen grading rubric pointed at two non-Anthropic judge APIs (new API integration in the grade workflow, then ~1,500 segments × 2 judges of **API spend**). New data: humanizer outputs and the new judges' grades.
 
-**RESULT for (a), the transfer table (commit 55a53ae — §4.9); (b) and (c)
-not run.** The 341 final variants + 65 originals were scored on three open
-detectors the attack never targeted — **Fast-DetectGPT, Binoculars, and
-the DetectLLM log-rank ratio** (one Falcon-pair pass), each thresholded at
-the **5% false-positive point on 1,255 pre-2022 human controls**. Headline:
-**79% of the Pangram-evading variants evade all four detectors at once**;
-each open detector individually flags only 6–10%. Reported two-sided,
-because the honest reason is: these zero-shot detectors have **weak base
-recall on this genre** (26% / 17% / 6% on the un-rewritten machine
-originals — the §7 collapse), so this shows the calibrated verdict is *not
-idiosyncratic* and that **no detector available to us holds the genre under
-directed effort** — not a strong evader beating strong alternatives.
-Per-run: the uniform GO run evades harder (1–4% open flags) than the
-contrastive NB run (9–14%). **(b) commercial humanizers and (c)
-non-Anthropic judges are not run** — both need external spend. Awaiting
-your go.
+**RESULT for (a), the transfer table (commit 55a53ae — §4.9); (b) and (c) not run.** The 341 final variants + 65 originals were scored on three open detectors the attack never targeted — **Fast-DetectGPT, Binoculars, and the DetectLLM log-rank ratio** (one Falcon-pair pass), each thresholded at the **5% false-positive point on 1,255 pre-2022 human controls**. Headline: **79% of the Pangram-evading variants evade all four detectors at once**; each open detector individually flags only 6–10%. Reported two-sided, because the honest reason is: these zero-shot detectors have **weak base recall on this genre** (26% / 17% / 6% on the un-rewritten machine originals — the §7 collapse), so this shows the calibrated verdict is *not idiosyncratic* and that **no detector available to us holds the genre under directed effort** — not a strong evader beating strong alternatives. Per-run: the uniform GO run evades harder (1–4% open flags) than the contrastive NB run (9–14%). **(b) commercial humanizers and (c) non-Anthropic judges are not run** — both need external spend. Awaiting your go.
 
 ---
 
 ## 7. Known-α recovery and fraction calibration (survey rec 10, trimmed by held assets)
 
-**The results concerned.** The headline **9.03%** — specifically two of
-its joints: the pipeline has never been shown to recover a *known*
-prevalence end-to-end, and the fraction-weighting (12.03% → 9.03%) rides
-the vendor's `fraction_ai`, which has never been calibrated against known
-mixtures.
+**The results concerned.** The headline **9.03%** — specifically two of its joints: the pipeline has never been shown to recover a *known* prevalence end-to-end, and the fraction-weighting (12.03% → 9.03%) rides the vendor's `fraction_ai`, which has never been calibrated against known mixtures.
 
-**The gap, plainly.** The strongest comparator works all show an
-estimator-recovery exhibit: seed a corpus at known α, run the unmodified
-pipeline, plot α̂ against α. We show calibration of the *negative* class
-(1,260/1,260) but nothing on recovery of a positive rate.
+**The gap, plainly.** The strongest comparator works all show an estimator-recovery exhibit: seed a corpus at known α, run the unmodified pipeline, plot α̂ against α. We show calibration of the *negative* class (1,260/1,260) but nothing on recovery of a positive rate.
 
-**The evaluation.** Build one synthetic asset and spend it twice:
-machine speeches generated the way an office would prompt them, spliced
-into pre-2022 control segments (your point stands and trims the work — the
-study's known-authorship continuations already supply machine text for
-part of this). (a) Pseudo-chambers at α ∈ {0, 2.5, 5, 10, 15, 20}%,
-unmodified pipeline, α̂-vs-α curve with the 45° line. (b) ~400 segments
-spliced at known word-fraction p; regress reported `fraction_ai` on true
-p; re-report the headline under raw / calibrated / binary weightings.
+**The evaluation.** Build one synthetic asset and spend it twice: machine speeches generated the way an office would prompt them, spliced into pre-2022 control segments (your point stands and trims the work — the study's known-authorship continuations already supply machine text for part of this). (a) Pseudo-chambers at α ∈ {0, 2.5, 5, 10, 15, 20}%, unmodified pipeline, α̂-vs-α curve with the 45° line. (b) ~400 segments spliced at known word-fraction p; regress reported `fraction_ai` on true p; re-report the headline under raw / calibrated / binary weightings.
 
-**Outcomes.** Recovery clean → the 9.03% gains the exhibit its literature
-leads with. Fraction mis-calibrated → the paper switches its headline
-weighting with a stated correction — better now than in review.
+**Outcomes.** Recovery clean → the 9.03% gains the exhibit its literature leads with. Fraction mis-calibrated → the paper switches its headline weighting with a stated correction — better now than in review.
 
-**Implementation.** Generation of ~200–600 legislative-style speeches —
-**local LLM** (free on this machine) or frontier **API** (better matches
-the drafting the estimand targets; low hundreds of dollars); splicing into
-pre-2022 controls is CPU. The binding constraint is neither: it is
-**Pangram credits** — the spiked pseudo-chambers and fraction-calibration
-sets total roughly 2–3k fresh verdicts. The held known-authorship
-continuations (your point) cover part of the machine-text need without
-new generation. Extending the known-authorship evasion seeds additionally
-means re-running the frozen bypass **workflow** on ~60 new seeds (attacker
-API + Pangram credits per round).
+**Implementation.** Generation of ~200–600 legislative-style speeches — **local LLM** (free on this machine) or frontier **API** (better matches the drafting the estimand targets; low hundreds of dollars); splicing into pre-2022 controls is CPU. The binding constraint is neither: it is **Pangram credits** — the spiked pseudo-chambers and fraction-calibration sets total roughly 2–3k fresh verdicts. The held known-authorship continuations (your point) cover part of the machine-text need without new generation. Extending the known-authorship evasion seeds additionally means re-running the frozen bypass **workflow** on ~60 new seeds (attacker API + Pangram credits per round).
 
-**STATUS — not run; needs generation + Pangram credits.** No held-data
-substitute exists for the known-α recovery curve or the fraction
-calibration: both require synthesising machine speeches, splicing them into
-controls, and scoring through Pangram (~2–3k fresh verdicts). The held
-known-authorship continuations cover part of the machine-text need.
-Awaiting your go on the credit spend.
+**STATUS — not run; needs generation + Pangram credits.** No held-data substitute exists for the known-α recovery curve or the fraction calibration: both require synthesising machine speeches, splicing them into controls, and scoring through Pangram (~2–3k fresh verdicts). The held known-authorship continuations cover part of the machine-text need. Awaiting your go on the credit spend.
 
 ---
 
 ## 8. GATED: the stage-2 human-comparator grading census
 
-**The result concerned.** The composite-weighting check: factor-weighted
-AI-vs-human contrast **+0.076 (t 1.71)** — direction survives,
-significance doesn't — beside the equal-weight +0.195 (t 5.65).
+**The result concerned.** The composite-weighting check: factor-weighted AI-vs-human contrast **+0.076 (t 1.71)** — direction survives, significance doesn't — beside the equal-weight +0.195 (t 5.65).
 
-**The evaluation.** Every Pangram hit is already graded; the margin is
-human comparators (341 graded of 2,051 in the pool). Grade the remaining
-~1,710 under the frozen rubric with the **census endpoint pre-committed**
-(the whole pool — a principled stopping rule, not grade-until-significant).
-Projected t at the current point estimate: ≈ 2.1.
+**The evaluation.** Every Pangram hit is already graded; the margin is human comparators (341 graded of 2,051 in the pool). Grade the remaining ~1,710 under the frozen rubric with the **census endpoint pre-committed** (the whole pool — a principled stopping rule, not grade-until-significant). Projected t at the current point estimate: ≈ 2.1.
 
-**Outcomes.** Clears → the qualifying sentence reverts. Doesn't → the
-current sentence was the true one. **Gated on your grading spend.**
+**Outcomes.** Clears → the qualifying sentence reverts. Doesn't → the current sentence was the true one. **Gated on your grading spend.**
 
-**Implementation.** No new code beyond a pool-assembly script; the
-existing grade **workflow** re-run over ~1,710 segments (**API spend**,
-judge calls only); analysis is the committed estimator unchanged.
+**Implementation.** No new code beyond a pool-assembly script; the existing grade **workflow** re-run over ~1,710 segments (**API spend**, judge calls only); analysis is the committed estimator unchanged.
 
-**STATUS — gated on your grading spend; not run.** The text carries the
-qualified sentence (factor-weighted contrast +0.076, t 1.71). The census
-would settle it (projected t ≈ 2.1) with the whole-pool endpoint
-pre-committed.
+**STATUS — gated on your grading spend; not run.** The text carries the qualified sentence (factor-weighted contrast +0.076, t 1.71). The census would settle it (projected t ≈ 2.1) with the whole-pool endpoint pre-committed.
 
 ---
 
 ## 9. GATED: the detector-side selection placebo (cheapest high-value quality test)
 
-**The result concerned.** The entire quality arm's design: treatment =
-Pangram verdict, outcome = textual form — and detectors key on form. If
-Pangram preferentially flags well-formed text, the **justification +0.29**
-could be partly selection, not machine assistance.
+**The result concerned.** The entire quality arm's design: treatment = Pangram verdict, outcome = textual form — and detectors key on form. If Pangram preferentially flags well-formed text, the **justification +0.29** could be partly selection, not machine assistance.
 
-**The evaluation.** Grade the 1,260 pre-2022 controls (all human by
-construction) on the frozen rubric; regress each DQI dimension on the
-continuous Pangram and screen scores with genre and chamber fixed
-effects. Any form–score association among pure humans is the selection
-effect, measured; subtract it from the headline.
+**The evaluation.** Grade the 1,260 pre-2022 controls (all human by construction) on the frozen rubric; regress each DQI dimension on the continuous Pangram and screen scores with genre and chamber fixed effects. Any form–score association among pure humans is the selection effect, measured; subtract it from the headline.
 
-**Outcomes.** Null → the first objection every referee raises is
-pre-answered. Positive → the honest correction is applied, sized.
-**Gated on your grading spend.**
+**Outcomes.** Null → the first objection every referee raises is pre-answered. Positive → the honest correction is applied, sized. **Gated on your grading spend.**
 
-**Implementation.** The existing grade **workflow** over the 1,260 held
-control segments (**API spend**, judge calls only); then one CPU
-regression script (DQI dimensions on continuous Pangram and screen scores,
-genre + chamber FE). No new data beyond the grades.
+**Implementation.** The existing grade **workflow** over the 1,260 held control segments (**API spend**, judge calls only); then one CPU regression script (DQI dimensions on continuous Pangram and screen scores, genre + chamber FE). No new data beyond the grades.
 
-**STATUS — gated on your grading spend; not run.** Cheapest high-value
-quality test (API only, no human time); pre-answers the first objection
-any referee raises about the quality arm's design.
+**STATUS — gated on your grading spend; not run.** Cheapest high-value quality test (API only, no human time); pre-answers the first objection any referee raises about the quality arm's design.
 
 ---
 
 ## 10. GATED: the human DQI gold subsample
 
-**The result concerned.** Every quality number in the paper is
-LLM-judged; there is no human-coded DQI anywhere.
+**The result concerned.** Every quality number in the paper is LLM-judged; there is no human-coded DQI anywhere.
 
-**The evaluation.** Two trained human coders, 150–200 segments,
-stratified probability sample (verdict × genre × chamber) with logged
-inclusion probabilities; then DSL/PPI re-estimation of the headline
-contrasts on the surrogate labels — the standard correction for
-LLM-labelled outcomes. The sampling rule must be a recorded random draw,
-designed before grading.
+**The evaluation.** Two trained human coders, 150–200 segments, stratified probability sample (verdict × genre × chamber) with logged inclusion probabilities; then DSL/PPI re-estimation of the headline contrasts on the surrogate labels — the standard correction for LLM-labelled outcomes. The sampling rule must be a recorded random draw, designed before grading.
 
-**Why it can't be substituted.** This is the survey's one blocking gap
-with no computational alternative: judge reliability statistics cannot
-distinguish a consistent judge from a consistently biased one; only human
-anchors can. **Gated on recruiting coders.**
+**Why it can't be substituted.** This is the survey's one blocking gap with no computational alternative: judge reliability statistics cannot distinguish a consistent judge from a consistently biased one; only human anchors can. **Gated on recruiting coders.**
 
-**Implementation.** One CPU sampling script now (stratified probability
-draw with logged inclusion probabilities — must exist *before* any
-grading); the coding itself is **human work** (two coders, 150–200
-segments, the frozen rubric); then a DSL/PPI estimation script (CPU,
-scipy now available). The only item in this document whose cost is
-people.
+**Implementation.** One CPU sampling script now (stratified probability draw with logged inclusion probabilities — must exist *before* any grading); the coding itself is **human work** (two coders, 150–200 segments, the frozen rubric); then a DSL/PPI estimation script (CPU, scipy now available). The only item in this document whose cost is people.
 
-**STATUS — gated on recruiting human coders; not run.** The survey's one
-blocking gap with no computational substitute. The sampling script must
-exist and draw before any grading.
+**STATUS — gated on recruiting human coders; not run.** The survey's one blocking gap with no computational substitute. The sampling script must exist and draw before any grading.
 
 ---
 
-*Also outstanding, from the blind review rather than the survey: CC6–CC11
-(commit-the-script/refresh-the-number mechanics in the class sections,
-including the stale crossover meta and the stale "+1.01 citable figure"),
-awaiting rulings.*
+*Also outstanding, from the blind review rather than the survey: CC6–CC11 (commit-the-script/refresh-the-number mechanics in the class sections, including the stale crossover meta and the stale "+1.01 citable figure"), awaiting rulings.*
