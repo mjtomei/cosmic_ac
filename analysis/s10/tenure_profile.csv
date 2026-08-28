@@ -1,0 +1,15 @@
+series,tenure_lo,tenure_hi,mean,lo,hi,n_members
+raw_within_member,0,2,0.0067,-0.0390,0.0519,7266
+raw_within_member,3,5,-0.1613,-0.2204,-0.1015,5170
+raw_within_member,6,9,-0.1569,-0.2313,-0.0833,3225
+raw_within_member,10,14,0.1100,-0.0095,0.2263,1816
+raw_within_member,15,19,0.3359,0.0891,0.5672,746
+raw_within_member,20,29,1.2521,0.9854,1.5215,314
+raw_within_member,30,99,2.3485,1.0521,3.3326,38
+period_adjusted,0,2,0.5913,0.4580,0.7158,7266
+period_adjusted,3,5,0.1533,0.0072,0.3111,5170
+period_adjusted,6,9,-0.2325,-0.4152,-0.0499,3225
+period_adjusted,10,14,-0.6262,-0.8889,-0.3715,1816
+period_adjusted,15,19,-0.9897,-1.5066,-0.5373,746
+period_adjusted,20,29,-1.6030,-2.2889,-0.9502,314
+period_adjusted,30,99,-2.2906,-3.2090,-1.5059,38
