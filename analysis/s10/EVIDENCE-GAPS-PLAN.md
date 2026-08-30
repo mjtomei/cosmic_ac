@@ -6,11 +6,32 @@ The evidence-standards survey (`EVIDENCE-STANDARDS-SURVEY.md`, nine adjacent-lit
 
 **RESULT / STATUS blocks were added 2026-08-27** after the four-agent CPU wave and the GPU jobs ran: each executed item carries what was found and where it landed in the paper (with the git commit); items still needing spend or human work carry a STATUS note instead.
 
+## The study, and the terms used below
+
+**What S10 is.** It measures how much of the speech in 22 legislative chambers across five countries (Canada + provinces, the UK + devolved parliaments, Australia + states, Ireland, the US) is written with help from language models, and what that speech looks like, over the record from 1994 to 2026. Findings come from two independent instruments plus several analytic "arms"; each item below tests one claim.
+
+**Recurring terms** (the items assume these; here they are in plain form):
+
+- **Pangram** — the commercial AI-text detector the study uses to flag machine-drafted passages. Calibrated on each chamber's pre-2022 record, where no machine text can exist, so its false-positive rate is known.
+- **the register** (or *excess-vocabulary instrument*) — a fixed list of 407 "style" words that language models overuse, taken from Kobak et al.'s study of post-2022 scientific writing. The study measures the *rate* of these words (per 1,000) as a second, detector-independent signal, run as a fixed ruler back to 1994. A rising rate is the register "present."
+- **prevalence** — the headline figure: the share of words in current speech that are machine-drafted (**9.03%**).
+- **fraction_ai** — Pangram's estimate, for a flagged passage, of what fraction of it is machine-written (used to weight the prevalence figure down from a raw 12.03% to 9.03%).
+- **the quality arm / DQI** — the Discourse Quality Index, a rubric scoring deliberative quality (justification, respect for other groups, engagement with counter-arguments, evidence…). The study grades speech on an adapted DQI with an LLM judge to ask whether machine-drafted speech is *worse*; the finding is that it is not.
+- **the evasion / bypass arm** — tests whether a rewrite can walk a Pangram-flagged speech back past the detector to a "human" verdict.
+- **the cohort / juniority gradient** — the finding that a legislator's birth year predicts register use (younger-born use more), net of calendar time. **Drift** = the register's slow rise across the whole record; **drift-formed cohorts** = people who came of age while it was rising.
+- **APC** — age-period-cohort: the standard identification problem that age, calendar period, and birth cohort cannot all be separated, because age = year − birth.
+- **chase-and-flight / the flight test** — a fashion-cycle idea: high-status speakers abandon ("flee") words once they become common lower down. Tested word by word.
+- **the occupational measure (folk ladder / theoretical ladder)** — members' pre-politics occupations scored on an "organisational altitude" scale (free / bottom / middle / top of a hierarchy), built two ways; it tracks social position more finely than the categorical class schema and, in the paper, absorbs it.
+- **the post-training arm** — which stage of language-model training installs the register, tested on the OLMo open-model "ladder": base → SFT → DPO → RLVR. SFT and DPO train on human demonstrations and preferences; **RLVR** (reinforcement learning from verifiable rewards) trains on math and code.
+- **the permeation arm** — whether the register is spreading into *human* speech itself, not merely appearing through machine drafting.
+- **member-year panel** — the data as one row per legislator per year. *Within-member* = following one person over time; *between-member* = comparing different people.
+- **§-numbers** (e.g. §4.6) point to sections of the paper; the plain-language lead on each item means you do not need the paper open.
+
 ---
 
 ## 1. The cohort claim's identification package (survey rec 6)
 
-**The results concerned.** §4.6's headline bullet — birth **+0.88 per 1,000 words per decade** (t 15.7 clustered) net of spoken year — and the claim that the gradient **steepens as drift-formed cohorts arrive**; also the within-member **+0.51σ/decade** and the era figure.
+**The results concerned.** *The cohort / juniority finding: younger-born legislators use more of the register, net of calendar time — and the gradient gets steeper for people who came of age as the register was rising.* Concretely: §4.6's headline bullet — birth **+0.88 per 1,000 words per decade** (t 15.7 clustered) net of spoken year — and the claim that the gradient **steepens as drift-formed cohorts arrive**; also the within-member **+0.51σ/decade** and the era figure.
 
 **The gap, plainly.** Age, period, and cohort satisfy age = year − birth, so no data can identify all three slopes; only two combinations are identified, and the +0.88 is one point on a line of equally-fitting (age, period, cohort) combinations. The paper *names* the limit but still quotes the point as if estimated. The steepening claim — the half that ties the gradient to the drift — is currently read off a figure, not tested. And the live rival is career-stage age-grading: juniors may write differently because they are junior-in-career, not because of when they were born; the test that separates these sits in a footnote.
 
@@ -26,7 +47,7 @@ The evidence-standards survey (`EVIDENCE-STANDARDS-SURVEY.md`, nine adjacent-lit
 
 ## 2. Member-panel decomposition, ported to three arms (survey rec 8, remainder)
 
-**The results concerned.** (i) Permeation's pre-LLM delta (§4.8: the detector-independent +0.01-range in-context shift, and the pre-LLM window parity); (ii) chase-and-flight's "**the peak does not migrate**" (§4.6b) — which footnote r46cls concedes is adjudicated by an aggregation choice (member-year aggregation *would* show migration; member-level does not); (iii) the unexplained factor-of-two between the between-member cohort gradient (+1.25/decade, member-year panel) and the within-member drift (+0.51/decade).
+**The results concerned.** *Three time-trend results that each turn on the same unanswered question — is a change over time people changing, or the membership being replaced by different people?* (i) Permeation's pre-LLM delta (§4.8: the detector-independent +0.01-range in-context shift, and the pre-LLM window parity); (ii) chase-and-flight's "**the peak does not migrate**" (§4.6b) — which footnote r46cls concedes is adjudicated by an aggregation choice (member-year aggregation *would* show migration; member-level does not); (iii) the unexplained factor-of-two between the between-member cohort gradient (+1.25/decade, member-year panel) and the within-member drift (+0.51/decade).
 
 **The gap, plainly.** Every arm with a time dimension faces the same question — is the aggregate movement *people changing* or *people being replaced*? — and the study has answered it properly exactly once (§4.6's within-member fixed-effects drift). The other arms either don't split it (permeation: the era contrast pools sitting members with turnover, and §4.6's own cohort result says turnover is large), or split it informally (the peak-migration "40%" replacement share has no SE and the two aggregations disagree).
 
@@ -42,7 +63,7 @@ The evidence-standards survey (`EVIDENCE-STANDARDS-SURVEY.md`, nine adjacent-lit
 
 ## 3. The ruler audit: per-word decomposition and trend-matched donors (survey rec 7)
 
-**The results concerned.** The paper's second headline: the register **rise begins 1994–96** and the marker list "predates the models by decades" (§4.5); also permeation's lack of a control word set (its footnote admits "no placebo word list").
+**The results concerned.** *The claim that the register was already rising decades before language models existed — so the models inherited a human trend rather than starting one.* The paper's second headline: the register **rise begins 1994–96** and the marker list "predates the models by decades" (§4.5); also permeation's lack of a control word set (its footnote admits "no placebo word list").
 
 **The gap, plainly.** The 407 markers were selected because they jumped after 2022, then run backwards thirty years. Words that jumped post-2022 could disproportionately be words that were *already rising* — selection on the endpoint of a trending series. The committed placebos match frequency and dispersion but **not pre-period trend**, which is the one dimension this objection travels through. Separately, the 30-year rise is only ever shown as a pooled aggregate — no reader can see whether it is broad (many words drifting) or narrow (a few words exploding).
 
@@ -58,7 +79,7 @@ The evidence-standards survey (`EVIDENCE-STANDARDS-SURVEY.md`, nine adjacent-lit
 
 ## 4. Post-training: from data claim to attribution (survey rec 2)
 
-**The results concerned.** §4.7: base→instruct **+1.24** on the OLMo ladder; SFT and DPO indistinguishable; **RLVR ≈ 0**; the cross-family preference compile **+0.387**; and the abstract's sentence "installed by the stages tuned toward human demonstrations and preferences, and not by the stage tuned toward verifiable correctness."
+**The results concerned.** *Which stage of language-model training installs the register — the finding is that it comes from the stages trained on human writing and preferences (SFT, DPO), not the math-and-code reinforcement stage (RLVR).* §4.7: base→instruct **+1.24** on the OLMo ladder; SFT and DPO indistinguishable; **RLVR ≈ 0**; the cross-family preference compile **+0.387**; and the abstract's sentence "installed by the stages tuned toward human demonstrations and preferences, and not by the stage tuned toward verifiable correctness."
 
 **The gap, plainly.** On the OLMo/Tulu ladder, SFT and DPO train on chat data while RLVR trains on math and code — so "the RLVR *objective* doesn't install it" is confounded with "the RLVR *data* isn't chat." The sentence as written is an objective claim; the design supports a data claim. And the +1.24 is confounded with the chat template and decoding regime.
 
@@ -74,7 +95,7 @@ The evidence-standards survey (`EVIDENCE-STANDARDS-SURVEY.md`, nine adjacent-lit
 
 ## 5. Genre and scriptedness labels, panel-wide (survey rec 9)
 
-**The results concerned.** Four at once: the prevalence spread and its year comparison (§4.2), the 30-year register series and its 1994–96 onset (§4.5), permeation's window contrasts (§4.8), and the flight test's interpretation (status display vs drafting practice).
+**The results concerned.** *One missing control — genre, i.e. the type of business being spoken (a scripted ministerial statement vs a spontaneous question) — threatens four results at once, because machine drafting and the register both concentrate in scripted genres.* The four: the prevalence spread and its year comparison (§4.2), the 30-year register series and its 1994–96 onset (§4.5), permeation's window contrasts (§4.8), and the flight test's interpretation (status display vs drafting practice).
 
 **The gap, plainly.** §4.3 shows a **3.29×** genre gradient — and genre is labelled in exactly one of 22 chambers. Any rate compared across time, chamber, or group is exposed to composition drift in the one dimension the study has proven matters most.
 
@@ -90,7 +111,7 @@ The evidence-standards survey (`EVIDENCE-STANDARDS-SURVEY.md`, nine adjacent-lit
 
 ## 6. Instrument breadth for the evasion and quality arms (survey rec 4)
 
-**The results concerned.** §4.9: "**roughly one flagged speech in five** can be walked past the detector" (19.4–22.5%), "**~10× the commercial evasion baseline**", and every quality number's single-judge provenance.
+**The results concerned.** *The evasion result — that a determined rewrite can walk a flagged speech past the detector — rests on one detector and one comparison, and the quality scores all come from a single LLM judge.* §4.9: "**roughly one flagged speech in five** can be walked past the detector" (19.4–22.5%), "**~10× the commercial evasion baseline**", and every quality number's single-judge provenance.
 
 **The gap, plainly.** One target detector (every accepted evasion paper attacks 4–12); the 10× compares our measurement on our corpus against Pangram's self-reported benchmarks on other corpora; and the attacker and both graders are the same model family.
 
@@ -106,7 +127,7 @@ The evidence-standards survey (`EVIDENCE-STANDARDS-SURVEY.md`, nine adjacent-lit
 
 ## 7. Known-α recovery and fraction calibration (survey rec 10, trimmed by held assets)
 
-**The results concerned.** The headline **9.03%** — specifically two of its joints: the pipeline has never been shown to recover a *known* prevalence end-to-end, and the fraction-weighting (12.03% → 9.03%) rides the vendor's `fraction_ai`, which has never been calibrated against known mixtures.
+**The results concerned.** *The 9.03% prevalence figure has never been checked by feeding the pipeline text with a KNOWN machine share to see if it recovers it, and the down-weighting that produced 9.03% relies on an uncalibrated vendor number.* Two joints specifically: the pipeline has never been shown to recover a *known* prevalence end-to-end, and the fraction-weighting (12.03% → 9.03%) rides the vendor's `fraction_ai`, which has never been calibrated against known mixtures.
 
 **The gap, plainly.** The strongest comparator works all show an estimator-recovery exhibit: seed a corpus at known α, run the unmodified pipeline, plot α̂ against α. We show calibration of the *negative* class (1,260/1,260) but nothing on recovery of a positive rate.
 
@@ -122,7 +143,7 @@ The evidence-standards survey (`EVIDENCE-STANDARDS-SURVEY.md`, nine adjacent-lit
 
 ## 8. GATED: the stage-2 human-comparator grading census
 
-**The result concerned.** The composite-weighting check: factor-weighted AI-vs-human contrast **+0.076 (t 1.71)** — direction survives, significance doesn't — beside the equal-weight +0.195 (t 5.65).
+**The result concerned.** *Whether machine-drafted speech scores higher on the quality rubric depends a little on how the seven rubric dimensions are weighted; on the data-driven weighting the effect is positive but no longer clearly significant.* The check: factor-weighted AI-vs-human contrast **+0.076 (t 1.71)** — direction survives, significance doesn't — beside the equal-weight +0.195 (t 5.65).
 
 **The evaluation.** Every Pangram hit is already graded; the margin is human comparators (341 graded of 2,051 in the pool). Grade the remaining ~1,710 under the frozen rubric with the **census endpoint pre-committed** (the whole pool — a principled stopping rule, not grade-until-significant). Projected t at the current point estimate: ≈ 2.1.
 
@@ -136,7 +157,7 @@ The evidence-standards survey (`EVIDENCE-STANDARDS-SURVEY.md`, nine adjacent-lit
 
 ## 9. GATED: the detector-side selection placebo (cheapest high-value quality test)
 
-**The result concerned.** The entire quality arm's design: treatment = Pangram verdict, outcome = textual form — and detectors key on form. If Pangram preferentially flags well-formed text, the **justification +0.29** could be partly selection, not machine assistance.
+**The result concerned.** *A design worry for the whole quality arm: the "treatment" is Pangram's flag and the outcome is how well-formed the text is — but detectors partly key on well-formedness, so Pangram might be flagging good writing rather than machine writing.* Stated formally: treatment = Pangram verdict, outcome = textual form — and detectors key on form. If Pangram preferentially flags well-formed text, the **justification +0.29** could be partly selection, not machine assistance.
 
 **The evaluation.** Grade the 1,260 pre-2022 controls (all human by construction) on the frozen rubric; regress each DQI dimension on the continuous Pangram and screen scores with genre and chamber fixed effects. Any form–score association among pure humans is the selection effect, measured; subtract it from the headline.
 
@@ -150,7 +171,7 @@ The evidence-standards survey (`EVIDENCE-STANDARDS-SURVEY.md`, nine adjacent-lit
 
 ## 10. GATED: the human DQI gold subsample
 
-**The result concerned.** Every quality number in the paper is LLM-judged; there is no human-coded DQI anywhere.
+**The result concerned.** *Every quality score in the paper comes from an LLM judge; not one has been checked against a human coder — so there is no anchor proving the judge measures deliberative quality rather than its own consistent bias.* Every quality number in the paper is LLM-judged; there is no human-coded DQI anywhere.
 
 **The evaluation.** Two trained human coders, 150–200 segments, stratified probability sample (verdict × genre × chamber) with logged inclusion probabilities; then DSL/PPI re-estimation of the headline contrasts on the surrogate labels — the standard correction for LLM-labelled outcomes. The sampling rule must be a recorded random draw, designed before grading.
 
