@@ -548,7 +548,7 @@ case-control mixture whose human class is drawn partly from pre-2023 text,
 which is \emph{provably} pre-LLM and therefore the cleanest available negative;
 restricting the negatives to 2023-and-later contemporary speech only \emph{lowers}
 the AUC, to \textbf{0.940} {[}0.915, 0.961{]}. Contemporary human speech is the harder
-class to separate --- as the permeation finding predicts --- so the era mix is not
+class to separate --- as the permeation finding (\cref{sec:permeation}) predicts --- so the era mix is not
 flattering the screen.
 
 \textbf{Reasoning effort buys nothing here, and that is worth stating rather than
@@ -594,7 +594,7 @@ against \textbf{\(-0.007\)} for Opus. Reasoning closes part of the gap for weak
 detectors and does nothing for a strong one --- and the sharper point is that
 the frontier model is not reasoning its way to 0.95; it is recognising
 something at a glance. Practically, the screen can be run for about \textbf{\(4\times\) fewer reasoning
-tokens (\textasciitilde\(2\times\) all-in)} with no loss.\footnote{\texttt{opus\_effort\_ab.py}, \texttt{opus\_effort\_ab.csv}.}
+tokens (\textasciitilde\(2\times\) all-in)} with no loss --- a saving observed in the run logs rather than recorded in the committed AUC artifacts.\footnote{\texttt{opus\_effort\_ab.py}, \texttt{opus\_effort\_ab.csv}.}
 
 \textbf{The register instrument is not a detector, and a direct test is why the
 roles are divided.} A simple threshold on the register score --- the study\textquotesingle s
@@ -829,7 +829,7 @@ the others past --- fails on the arithmetic: US House is \textbf{14.3\% machine 
 instrument occurrences} against Ireland\textquotesingle s 9.0\% and the Australian states\textquotesingle{}
 11.3\%, so removing machine text lowers the American benchmark by more than it
 lowers the challengers. Federal Canada is the one case it does explain, at
-21.7\% the most machine-written chamber in the study, dropping from
+21.7\% the most machine-written of the national chambers (second only to New South Wales, \cref{sec:prevalence}), dropping from
 apparently-above to clearly-below once corrected.\footnote{\texttt{python\ convergence\_\allowbreak{}check.\allowbreak{}py}, with shares from
   \texttt{ai\_\allowbreak{}share\_\allowbreak{}of\_\allowbreak{}instrument.\allowbreak{}py}. Machine-written text carries the instrument at
   4,231 occurrences per 100k words against human text\textquotesingle s 3,470, a ratio of
@@ -2129,7 +2129,7 @@ scored occurrences.\footnote{\texttt{python\ word\_\allowbreak{}context\_\allowb
   negative in both families is the US House, consistent with \cref{sec:climb-geography}\textquotesingle s
   at-the-ceiling reading. Per year the pre-LLM rate (\textasciitilde+0.0045/yr) runs
   about twice the pre-to-post rate (\textasciitilde+0.0022/yr).} The full pre-vs-post contrast is \textbf{+0.0099}
-(9 of 10 cells, p = 0.017)†\footnote{\texttt{python\ word\_\allowbreak{}context\_\allowbreak{}delta.\allowbreak{}py\ pooled}, which prints the pooled figure,
+(9 of 10 cells, permutation p = 0.022)†\footnote{\texttt{python\ word\_\allowbreak{}context\_\allowbreak{}delta.\allowbreak{}py\ pooled}, which prints the pooled figure,
   the ten chamber \(\times\) family cells, the clustered bootstrap and the permutation
   test. Defaults are B = 2,000 (at B = 400 the 2.5\%
   percentile carries roughly one Monte-Carlo standard error, which is the
@@ -2217,7 +2217,7 @@ scoring \textless10, 63.0\% at 10--49, and \textbf{31.1\%} at \(\geq\)50; respec
 50.8\% / 51.2\% / \textbf{28.9\%} (n = 498/297/45\footnote{\texttt{applicability\_\allowbreak{}by\_\allowbreak{}band.\allowbreak{}py}.}). So the engagement null below means *engages no worse when there is something to
 
 engage with*; separately, AI-flagged speech is about \textbf{half as likely to
-contain anything to engage with} --- a real difference, not a null. Stage 6c
+contain anything to engage with} --- a real difference, not a null. Stage 6 (the never-reviewed continuations, below)
 locates its source: the collapse appears in raw text from weaker models and
 vanishes at the frontier, so in the wild it points at the tools actually in
 use rather than at machine text as such.
@@ -2564,7 +2564,7 @@ an untested one: better contrastive exemplars, a rewriter fine-tuned against
 the detector, or a human editor are all outside what was tried.
 
 The two chambers give 25.0\% (n = 40) and 19.4\% (n = 31) --- \textbf{consistent, but
-with intervals far too wide to establish that they agree}: the 4.1-point gap
+with intervals far too wide to establish that they agree}: the 5.6-point gap
 carries a 95\% interval of roughly {[}\(-17\), +25{]} points, equally compatible with
 one chamber\textquotesingle s rate being half or double the other\textquotesingle s. What is
 more than a restatement of the wide interval is that the two chambers\textquotesingle{}
@@ -3833,6 +3833,13 @@ study has not already built.
   "unbiased machine expert" claim would rest on symmetry, not on provenance.
 \end{enumerate}
 
+Collecting covariates for this study produced something with uses well outside
+it: birth year, education, prior occupation, EGP class and Wikipedia prominence
+for roughly five thousand legislators across twenty-two chambers, joined to
+every word each of them spoke. The register was the reason to build it; it is
+not the only thing it can answer. Two families of question follow, and they
+differ in how novel they are likely to be.
+
 \textbf{F2. What the legislator panel enables beyond the register (Matthew).}
 
 \begin{enumerate}
@@ -3999,13 +4006,6 @@ study has not already built.
   the aggregation argument, and disagreement would localise what the
   models add beyond the population image. Deliberately not run now.
 \end{enumerate}
-
-Collecting covariates for this study produced something with uses well outside
-it: birth year, education, prior occupation, EGP class and Wikipedia prominence
-for roughly five thousand legislators across twenty-two chambers, joined to
-every word each of them spoke. The register was the reason to build it; it is
-not the only thing it can answer. Two families of question follow, and they
-differ in how novel they are likely to be.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 

@@ -78,18 +78,6 @@
 
 **Suggested fix.** State Table 34's stage-2 regressor and fixed effects explicitly, and if they differ from Table 19's (score vs binary verdict, era/genre vs chamber FE) say so at the table; otherwise recompute so the baselines agree.
 
-### XC3. [cross-cutting] §2.14 (bypass, per-target chamber comparison)
-
-> The two chambers give 25.0% (n = 40) and 19.4% (n = 31) — consistent, but with intervals far too wide to establish that they agree: the 4.1-point gap carries a 95% interval of roughly [−17, +25] points
-
-**Problem.** 25.0% − 19.4% = 5.6 points, not 4.1. The quoted gap matches neither the ≥1-Human rates nor the fraction-ai=0.0 rates (25.0 vs 16.1 = 8.9); it appears to be a stale number from an earlier version of the table.
-
-**Reviewer's check.** Recomputed 10/40 − 6/31 = 5.65 points; checked the alternative (strict) column too.
-
-**Refuter's verification.** 10/40 − 6/31 = 5.65 points, not 4.1. The staleness is documented in the repo itself: REVIEW-2026-08-11-BBLOCK.md's B6 entry records that the 4.1pp difference and its [−16.9, +25.1] interval were the review's computation on the OLD per-chamber figures (26.3% and 22.2%, before the M4 fix in commit 487f313 updated them to 25.0/19.4), and states explicitly 'on the current figures the difference is 5.6pp.' The paper adopted the softened B6 language but carried the stale gap and interval. [verdict carried from the first refutation pass; this dimension's second-pass refuter hit the session limit]
-
-**Suggested fix.** Change to the 5.6-point gap (and reconfirm the bootstrap interval was computed on the current rates).
-
 ### XC4. [cross-cutting] §3.8 item 4 (and §2.3)
 
 > the House runs far more one-minute floor speeches, the SO31-type format §2.3 measures at ˜37% machine
@@ -356,20 +344,6 @@
 
 **Suggested fix.** Either drop the superlative ('one of the widest', or 'wide for a flat series') or say explicitly that US House has the widest variation among the chambers with no trend; the low-year argument survives without the superlative.
 
-### ST3. [series+trend+cross-chamber] 4.5a (exported-machine-text paragraph)
-
-> Federal Canada is the one case it does explain, at 21.7% the most machine-written chamber in the study
-
-**Problem.** Per the cited artifact, New South Wales is more machine-written than federal Canada on both metrics: 23.1% vs 21.7% by instrument occurrences, 19.8% vs 18.5% by words (ai_share_by_chamber.json). The writeup's own §4.2 table and §8 both name NSW 19.8% as the top of the prevalence range, so the superlative contradicts the paper's own numbers.
-
-**Reviewer's check.** Read ai_share_by_chamber.json (NSW share_occurrences 0.2315 > CA-FED 0.2165; share_words 0.1981 > 0.1848) and grepped the writeup's §4.2 table (NSW 19.8% highest).
-
-**Refuter's verification.** ai_share_by_chamber.json: NSW share_occurrences 0.2315 > CA-FED 0.2165 and share_words 0.1981 > 0.1848, so NSW beats federal Canada on both metrics. The writeup's own §4.2 table (NSW 19.8% highest) and §8 ('US Senate 1.8% to NSW 19.8%') contradict the superlative. CA-FED is second only to NSW (next is QLD 18.6%), so 'most machine-written of the national chambers' would be accurate; 'in the study' as written is false. convergence_check.py's docstring carries the same error.
-
-**Suggested fix.** Say 'the most machine-written of the national chambers' or 'second only to NSW'.
-
-*Also flagged by: IC9.*
-
 ### ST4. [series+trend+cross-chamber] 4.5a (exported-machine-text paragraph)
 
 > US House is **14.3% machine by instrument occurrences** against Ireland's 9.0% and the Australian states' 11.3%, so removing machine text lowers the American benchmark by more than it lowers the challengers.
@@ -394,18 +368,6 @@
 
 **Suggested fix.** Report the stratum results in the footnote: survives spelling-removal, ≥20 and ≥200 attestation (perm p < 0.005) but drops to +0.027, p = 0.11 when the most-skewed word deciles are trimmed — consistent with the two-ways reading already conceded in §8.
 
-### SL1. [storyline] §3.8 Future work (closing paragraph)
-
-> Collecting covariates for this study produced something with uses well outside it ... Two families of question follow, and they differ in how novel they are likely to be.
-
-**Problem.** This paragraph is the last text of §3.8, immediately before 'Materials and methods'. Nothing follows it — the promise 'Two families of question follow' is never delivered in printed order. It is plainly the stranded introduction to block F2 (items 23–24), printed ~5 pages after the items it introduces; item 24 even opens 'The more likely to be novel, precisely because of the effort', invoking the two-families framing before the reader has seen it.
-
-**Reviewer's check.** Read §3.8 end-to-end in the compiled text; confirmed the paragraph sits after item 29 and before the Materials and methods header, and that item 24's opening sentence presupposes the novelty framing established only in this later-printed paragraph.
-
-**Refuter's verification.** Both sentences verbatim in §3.8's final paragraph. Verified position: it prints after item 29, immediately before the 'Materials and methods' heading, while the F2 block heading and items 23–24 — the two families it introduces (23 framed as likely replication, 24 as 'the more likely to be novel') — precede it by several pages. In printed order the paragraph's promise is never delivered; it is the F2 intro stranded at the section's end. [verdict carried from the first refutation pass; this dimension's second-pass refuter hit the session limit]
-
-**Suggested fix.** Move the paragraph to just before the F2 header ('What the legislator panel enables beyond the register') so it introduces items 23–24 as intended.
-
 ### SL2. [storyline] §3.2 Where the norms argument actually lands
 
 > a frontier reader flagged 13 of 35 genuine human floor speeches and only 5 of 35 machine rewrites that had been optimised against a detector (§2.14 stage 5)
@@ -417,18 +379,6 @@
 **Refuter's verification.** §2.14's stage-5 subsection presents only the paired DQI nulls and the judge's mean ai_guess (36 vs 40) — no flag counts, no threshold; '13 of 35'/'5 of 35' appear only in §3.2, and the counts cannot be derived from the means given. The '(§2.14 stage 5)' pointer directs the reader to a result never presented there.
 
 **Suggested fix.** Present the 13/35 and 5/35 counts (with the threshold used to call a text 'flagged') in §2.14's stage-5 subsection or an appendix, and make §3.2's pointer accurate.
-
-### SL3. [storyline] §2.14 Quality (applicability paragraph) and Appendix C.2
-
-> Stage 6c locates its source: the collapse appears in raw text from weaker models and vanishes at the frontier
-
-**Problem.** 'Stage 6c' is never defined anywhere in the paper — the stages introduced are 1–6, and stage 6 itself is presented only many pages later ('established in two rounds the same day' hints at sub-rounds but never names 6b/6c). A load-bearing resolution of the applicability collapse is attributed to an arm the reader cannot identify. Appendix C.2 has the twin defect: 'Stage 0's comparison ... recomputed' invokes a 'Stage 0' that appears nowhere else.
-
-**Reviewer's check.** Grepped the compiled text for '6c', '6b', 'Stage 0': 'Stage 6c' occurs once (this sentence), no stage 6b/6c is ever defined, stage 6 is presented ~400 lines later, and 'Stage 0' occurs only in C.2. Source markdown has the same 'Stage 6c' orphan.
-
-**Refuter's verification.** Quote verbatim in §2.14's third paragraph. '6c' occurs exactly once in the render, before stages 1 and 2 are introduced (three paragraphs later) and roughly 380 lines before stage 6 itself is presented; stage 6 is described as run 'in two rounds' but no 6a/6b/6c sub-arm is ever named. Line 1385 cites 'stage 6's humans-keep-evidence result' pages before stage 6 appears, and line 1741's '(§Q1)' matches no section heading — Q1 is a review-item code. All three sub-claims verified. [verdict carried from the first refutation pass; this dimension's second-pass refuter hit the session limit]
-
-**Suggested fix.** Rename the reference to 'stage 6' (or define the 6a/6b/6c round structure where stage 6 is introduced), and define or rename 'Stage 0' in C.2.
 
 ### SL4. [storyline] §2.12 Coverage
 
@@ -854,18 +804,6 @@
 
 *Also flagged by: CB9, CP9, SL6.*
 
-### GS4. [genre+screen] 4.3 (genre table)
-
-> | **SO31** — one-minute scripted set-pieces | **32.3%** | [21.0, 44.1] |
-
-**Problem.** The bootstrap CIs in this table are not reproducible: wboot() is seeded with abs(hash(genre+stratum)) % 9999, and Python string hashing is randomized per process, so every run prints different intervals. Two runs gave SO31 [21.4, 43.9] and [21.2, 44.0] against the quoted [21.0, 44.1]; DEBATE and OQ drift similarly (the per-chamber CIs from the same script share the defect). Differences are small, but no run can regenerate the published intervals.
-
-**Reviewer's check.** Ran prevalence_report.py twice and compared the printed genre CIs to each other and to the writeup; read the seeding code (abs(hash(g+s)) % 9999, same pattern for chambers).
-
-**Refuter's verification.** Reproduced: wboot() is seeded with abs(hash(genre+stratum)) % 9999 (and abs(hash(chamber)) % 9999 for the per-chamber table), and Python string hashing is salted per process. I ran prevalence_report.py twice: SO31 printed [21.3, 43.8] then [21.2, 43.9] against the published [21.0, 44.1]; DEBATE and OQ drifted the same way ([10.4,30.4]/[10.5,30.4]; [1.9,19.1]/[2.3,19.3]). The point rates, word totals and CA trend are stable, and the drift is ~0.1–0.4pp — immaterial — but no run can regenerate the published intervals, exactly as stated. build_pangram_expansion.py's stable-digest seeding shows the fix pattern already exists in the repo.
-
-**Suggested fix.** Seed from a stable digest (e.g. int(hashlib.sha1(...).hexdigest()[:8],16), as build_pangram_expansion.py already does) or set PYTHONHASHSEED, rerun, and re-quote.
-
 ### GS5. [genre+screen] 4.4 (footnote r44dep)
 
 > The deployed screen is `opus_screen_full.js` (473 batches of 40), distinct from the lean validation run used in the effort A/B below; the two differ in score level (mean 34.3 vs 26.5) but not in discrimination.
@@ -890,18 +828,6 @@
 
 **Suggested fix.** Say 'separates Pangram's flagged (AI + Mixed) segments from its human class', or report the AI-only 0.966 alongside.
 
-### GS7. [genre+screen] 4.4 The Opus screen tracks Pangram
-
-> Practically, the screen can be run for about **4× fewer reasoning tokens (~2× all-in)** with no loss. (`opus_effort_ab.py`, `opus_effort_ab.csv`)
-
-**Problem.** The 4×/2× token-cost figures are attributed to two artifacts that contain no token accounting: opus_effort_ab.csv holds only blind_id/label/three scores, opus_effort_ab.py computes AUCs and correlations only, and opus_effort_raw.json holds only per-arm score maps. The AUC parity is fully supported; the specific cost multipliers are supported by nothing on disk.
-
-**Reviewer's check.** Read opus_effort_ab.py end to end, inspected opus_effort_ab.csv columns and opus_effort_raw.json structure, grepped the s10 tree for token counts tied to the effort A/B — none found.
-
-**Refuter's verification.** Verified by reading all three cited/adjacent artifacts end to end: opus_effort_ab.csv holds only blind_id/label/archived_low/fresh_low/max scores; opus_effort_ab.py computes AUCs, a paired bootstrap of max−mean(low), and correlations, with no token fields anywhere (its harvest() extracts only effort tags and ai_guess scores from transcripts); opus_effort_raw.json is two {blind_id: score} maps. A grep of the s10 tree for token accounting tied to the effort A/B finds nothing — the only token mentions are unrelated (generation caps, projections). The AUC-parity half of the sentence is fully supported; the specific 4×/2× cost multipliers are supported by nothing on disk and are attributed to artifacts that cannot substantiate them.
-
-**Suggested fix.** Record the per-arm token usage from the workflow transcripts into the CSV (or a small JSON) and cite that, or hedge the multipliers as an uncommitted observation from the run logs.
-
 ### IC8. [internal-consistency] §2.1 New Brunswick rescore, Table 1
 
 > The model-tier defect was an undercount, not a false-positive problem — disagreements run net upward (33 segments moved out of Human, 9 the other way).
@@ -925,8 +851,6 @@
 **Refuter's verification.** Quote at lines 555-556. The study's own committed ai_share_by_chamber.json puts NSW at 19.81% of words and 23.15% of instrument occurrences against CA-FED's 18.48% / 21.65% — NSW exceeds federal Canada on both metrics, so CA-FED is not the most machine-written chamber in the study on either unit. Table 2 two pages earlier prints NSW 19.8% above CA-FED 18.5%. The 21.7% superlative holds only among the aggregated units of the §2.6 comparison, where NSW is submerged in the 11.3% 'AUS states' pool. The proposed scoping fix is exactly right.
 
 **Suggested fix.** Scope the superlative: 'the most machine-written of the chamber groups compared here' or 'the most machine-written national chamber'.
-
-*Also flagged by: ST3.*
 
 ### IC10. [internal-consistency] §2.14 Stage 5
 
@@ -1029,18 +953,6 @@
 **Refuter's verification.** Both numbers are from the superseded 800-prompt/180-token configuration, presented as facts about the scaled run. On the scaled headline corpus (3 families, 1,600 prompts) rlhf_pref_final.json records 61 of 310 present style words (19.7%) with zero base count, and rlhf_pref_analyze.py prints '66 of 313 style words (21%) are ABSENT from base output' on its own 2-family configuration; presence is 310/407 = 76% in the analysis and 249/407 = 61% in the generated base corpus (style_word_frequency: 407−158), so '27%' and 'only about half appear' are wrong for the run being described. The old values 57/212 = 26.9% and 212/407 = 52% appear verbatim in the rlhf_pref_analyze.py docstring and METHODOLOGY.md's corrected-2026-08-12 passage — the stale source of both figures.
 
 **Suggested fix.** Update to the scaled-run values: ~20% absent from base output, and 'about 60%' (or 'three-fifths') appearing in the generated corpus.
-
-### PT7. [posttraining+coverage+permeation] 4.8 (headline and footnote r48)
-
-> +0.0099, positive in 9 of 10 cells, permutation p = 0.017.
-
-**Problem.** The point estimate and sign count reproduce exactly, but the headline p-value does not come from the documented invocation: `python word_context_delta.py pooled` at its recorded defaults (B=2,000, seed 6, 3,000 permutation draws) prints one-sided p = 0.0217 and P(<=0) = 0.020. The footnote honestly gives the cross-seed range (0.015–0.022), but the bolded headline picks a value the stated defaults do not produce. Additionally the footnote's pointer 'Per-model cell table at METHODOLOGY.md:1009' is stale — the two-family cell material now sits near METHODOLOGY.md:1142.
-
-**Reviewer's check.** Ran word_context_delta.py pooled (reproducing +0.0099, 9/10 cells, per-family +0.0118/+0.0081, CI [+0.0009,+0.0195]); read the pooled() code to confirm defaults; grepped METHODOLOGY.md for the cell table location.
-
-**Refuter's verification.** Re-ran `python3 word_context_delta.py pooled` at the recorded defaults (B=2,000, seed 6, 3,000 permutation draws): it reproduces +0.0099, 9/10 cells, per-family +0.0118/+0.0081, CI [+0.0009, +0.0195] — but prints one-sided p = 0.0217 and P(≤0) = 0.020, not 0.017. The bolded headline (and METHODOLOGY.md's bold summary line) quotes a value the stated default invocation does not produce; the footnote's honest cross-seed range (0.015–0.022) contains it but does not make the specific headline value reachable from the documented command. Also verified the stale pointer: METHODOLOGY.md:1009 is band-screen prose; the chamber×family cell table now sits at METHODOLOGY.md:1139-1148.
-
-**Suggested fix.** Quote the default-seed value (p = 0.022) or the range ('p = 0.015–0.022 across seeds') in the headline, and repair the METHODOLOGY.md line pointer.
 
 ### PT8. [posttraining+coverage+permeation] 4.7 (opening of the pooled-effect paragraph)
 
@@ -1182,18 +1094,6 @@
 
 *Also flagged by: CB4.*
 
-### SL5. [storyline] §2.4 The Opus screen tracks Pangram
-
-> Contemporary human speech is the harder class to separate — as the permeation finding predicts — so the era mix is not flattering the screen.
-
-**Problem.** 'The permeation finding' is invoked as established, but it is presented nine subsections later (§2.13), and no section pointer is given. In printed order the reader has met 'permeation' only as a definition in the Introduction, not as a finding that can predict anything.
-
-**Reviewer's check.** Confirmed the permeation result first appears in §2.13; 'the permeation finding' at §2.4 carries no cross-reference.
-
-**Refuter's verification.** Quote verbatim in §2.4, with no cross-reference, and the permeation result first appears at §2.13 in printed order — both checks reproduce. One detail of the reviewer's framing is off: the abstract does not mention permeation at all; it is the Introduction that defines it ('Permeation — whether human speech is drifting toward the machine register…') — but only as a measurement target, not a finding, so a first-time reader still has no positive result to anchor 'as the permeation finding predicts'. The minor forward-reference defect survives. [verdict carried from the first refutation pass; this dimension's second-pass refuter hit the session limit]
-
-**Suggested fix.** Add the pointer: 'as the permeation finding (§2.13) predicts' — the paper's own no-forward-reference conventions aside, an unlabelled forward dependency is worse than a labelled one.
-
 ### SL6. [storyline] §2.2
 
 > its finite-sample bias is nil in practice (bootstrap mean 10.30% against a plug-in 10.31%, a −0.005-point gap)
@@ -1207,18 +1107,6 @@
 **Suggested fix.** State what the 10.3% quantity is (e.g., the pre-exclusion or binary-verdict pooled rate the check was run on) or rerun the check on the headline estimator; fix the gap arithmetic.
 
 *Also flagged by: CB9, CP9, XC11.*
-
-### SL7. [storyline] §2.3 Drafting concentrates in scripted business
-
-> it is the one place where the lexicon arm's inference is confirmed by an independent instrument. Two instruments agreeing is worth more than either alone.
-
-**Problem.** 'The lexicon arm' first appears here (the instrument has so far been called 'the register instrument'), and no lexicon-arm inference has been presented yet in printed order — the register results begin at §2.5, and none of them concerns genre. The sentence asserts a two-instrument agreement whose first half the reader has not seen and cannot locate; the terminology also drifts across 'register instrument' / 'lexicon arm' / 'frequency arm' (§5.3) with no mapping.
-
-**Reviewer's check.** Searched the compiled text preceding §2.3 for any lexicon/register-arm result: none exists; grepped 'lexicon' — it next appears at §2.13 and §5.3. No register-instrument genre analysis appears anywhere.
-
-**Refuter's verification.** Quote verbatim in §2.3. I searched the full render for any genre/scripted-vs-unscripted stratification of the lexicon instrument (grep for scripted/unscripted/prepared/Topical/Leaders' Questions across §2.5–2.7, §2.13, appendices): none exists — Table 3's ladder is entirely Pangram-based. The design that would supply the lexicon half exists only as uncompiled repo artifacts (analysis/s10/unscripted_strata.py, permeation_strata.py, whose docstring frames exactly this prepared-vs-unscripted register test). No reading of 'the lexicon arm's inference' rescues the sentence: any reading requires a lexicon-arm counterpart result at the ladder, which the compiled paper never delivers. [verdict carried from the first refutation pass; this dimension's second-pass refuter hit the session limit]
-
-**Suggested fix.** Either name the specific lexicon-arm inference being confirmed with a pointer to where it is shown, or soften to a forward-looking remark ('the register arm's post-2022 rise, §2.5, points the same way'); pick one name for the instrument and use it throughout.
 
 ### SL8. [storyline] §3.4 / §3.8 item 9
 
@@ -1476,7 +1364,7 @@
 
 **Method.** Thirteen blind reviewers, one dimension each: seven data dimensions reproducing numbers from the committed artifacts and reading estimator code (calibration+prevalence, genre+screen, series/trend/cross-chamber, cohort+class, occupational-prereg, post-training/coverage/permeation, quality+bypass), five narrative/argument dimensions on the compiled publication-order paper (claims-vs-evidence, internal-consistency, argument-logic, comparability, storyline), and one cross-cutting consistency reviewer. Every finding was handed to a refute-by-default adversary; only CONFIRMED and PARTIAL findings appear, PARTIAL with the corrected version stated. "Also flagged by" marks the same defect under another lens — adjudicate once, apply everywhere.
 
-**Counts.** 113 open (0 critical, 42 major, 71 minor; 91 CONFIRMED, 22 PARTIAL); 1 refuted; 0 unresolved.
+**Counts.** 104 open (0 critical, 38 major, 66 minor; 82 CONFIRMED, 22 PARTIAL); 1 refuted; 0 unresolved.
 
 **For the next review cycle (Matthew, 2026-08-25).** Matthew liked the argument-logic lens's points more than much of the previous review (having read that block first — not a ranking over unread lenses); next cycle, expand it to one AL worker per section (a 12-section fleet with refuters was drafted and briefly started this cycle, then stopped on Matthew's instruction to hold it for the next cycle — the script is committed at workflows/scripts/al-per-section-2026-08-25-*.js and its partial run is resumable).
 
@@ -1491,6 +1379,9 @@
 - **[major] [calibration+prevalence]** 2. Data (control window) / 3.1: "**control** — 60 segments dated on or before **2022-06-30**. Not 2022-12-31: ChatGPT shipp..." — *adjudicated (Matthew): Data section amended with the sampling difference disclosed — the UK/IE four-chamber rescore drew controls to 2022-11-17 (seven of 120 rows past the 2022-06-30 rule, all pre-ChatGPT, all Human), CA-FED's late controls were redrawn to the rule, every other chamber obeys it as stated*
 - **[major] [calibration+prevalence]** 4.2 (word-weighting rationale, X12): "the longest quartile of segments runs 9.4% against 5.8% for the shortest (review item X12)..." — *adjudicated (Matthew): recomputed on the pooled sample and committed (quartile_weighting_check.py): longest quartile 11.3% vs shortest 0.7% word-weighted (15.2% vs 1.0% binary); understatement 0.05pp vs the binary segment rate and 2.20pp vs the fraction-weighted mean. Band status confirmed to Matthew: no result is band-conditioned anymore — remaining mentions are sampling-strata descriptions, the labeled exploratory bypass note in the nulls appendix, and unrelated senses of the word*
 - **[major] [calibration+prevalence]** 4.2 (per-chamber CI table) / Results intro: "every number reproduces from a committed script..." — *adjudicated (Matthew, + repo sweep): banded_prevalence.table and prevalence_report's two wboot sites now seed from sha1 of the cell name — byte-identical across runs (verified by double-run diff). Table 2's twenty CI cells and the three genre CIs repasted from the deterministic rerun (shifts <=0.2pp; the MB/NI identical-interval oddity resolved). Sweep found no other uncontrolled seeds feeding reported numbers: prereg_stage1/2 seed 20260818, vector_analysis kmeans seed 0, long_trend bootstraps seeded, formation_summary has no RNG*
+- **[minor] [genre+screen]** 4.3 (genre table): "| **SO31** — one-minute scripted set-pieces | **32.3%** | [21.0, 44.1] |..." — *already resolved by the earlier uncontrolled-seed sweep: no abs(hash( remains; the genre table's CIs are sha1-seeded and deterministic, and the printed SO31 [21.5,44.1]/DEBATE [10.5,30.5]/OQ [2.2,19.1] reproduce exactly*
+- **[minor] [genre+screen]** 4.4 The Opus screen tracks Pangram: "Practically, the screen can be run for about **4× fewer reasoning tokens (~2× all-in)** wi..." — *the 4x/2x token multipliers hedged as 'a saving observed in the run logs rather than recorded in the committed AUC artifacts'*
+- **[major] [series+trend+cross-chamber]** 4.5a (exported-machine-text paragraph): "Federal Canada is the one case it does explain, at 21.7% the most machine-written chamber ..." — *superlative corrected to match the study's own §4.2 table: CA-FED is 'the most machine-written of the national chambers (second only to New South Wales)' — NSW 0.231 > CA-FED 0.217 on occurrences, verified in ai_share_by_chamber.json*
 - **[major] [cohort+class]** 4.6, first bullet + footnote r46a: "birth **+0.88 per 1,000 words per decade** (t = 33.8) against spoken year **+1.25 per deca..." — *adjudicated (Matthew: keep the simpler two-stamp headline, do not lead with the entry-attenuated number) and implemented: cohort_vs_period.py gains two_stamp() — spoken+birth, chamber FE, word-weighted, n=61,312/7,027 members — which reproduces the quoted +0.88/+1.25 exactly and prints both member-year HC t's (33.8/29.2) and member-clustered t's (15.7/13.9); the bullet now presents both and r46a states the spec, with the three-stamp entry attenuation (birth +0.69 t 19.4) footnoted once as a second cohort clock splitting credit, not a confounder*
 - **[major] [cohort+class]** 4.6a, era figure + text: "class II sits above class I in all seven half-decades, and the manual-and-farm tail stays ..." — *Matthew asked whether the inversion looks like noise when charted; the per-class small-multiples (scratchpad class_by_era_smallmultiples.png) say yes: V/VI 2025-26 is +0.166 +/- 0.118 on 55 members, ~1.4 se from its own series mean, one bin after the series minimum, with no preceding trend; IVc stays at the floor (-0.22) and VIIab has no 2025-26 cell (n<25), so the pooled tail's rise to +0.02 is composition, not movement. The floor sentence, figure title and caption now state exactly that (six of seven at the floor; the seventh a small-cell wobble, watched as a candidate inversion, read as noise). The class_by_era generating-script half of the finding lives on in CC10 ADDENDUM (Matthew, final, 2026-08-26): binning settled as six EQUAL five-year bins anchored at the data's end (1997-2001..2022-2026) — equal spans, the machine era whole as the final bin, the earliest two years cut rather than the newest; the 2025-26 partial bin no longer exists as a concept. The paper figure is per-class small-multiple panels drawing every cell incl. n<25 (open markers); the reviewer's complained-about pooled table is superseded. Under the new bins the old wobble is absorbed (V/VI 2022-26 = -0.003), II>I in every bin, the pooled tail below the pack throughout, and the II-I gap trend requoted honestly: +0.141 -> +0.079, narrowest in the machine-era bin, t -1.67 — compression (chase direction), short of significance. build_class_by_era.py is the committed generator (CC10's class half)*
 - **[major] [cohort+class]** 4.6a, 'All four predictors at once' + footnote r46joint: "| **education** (block Wald) | p = 0.0025 | **p = 0.2150** |..." — *adjudicated (Matthew: dummies + truly-alone) and then CORRECTED 2026-08-25: the dummies edit introduced an index-offset bug (edu block advanced col by 2, not 4), so the first regenerated table's joint-prominence cell (-0.017, t -0.46) was actually the graduate dummy — the reviewer's +0.020 (t 2.05) was right all along. Bug fixed in joint_predictors.py (comment marks it); table regenerated a second time at Matthew's direction showing EVERY term: all seven EGP classes (the old >25 filter silently folded small classes into baseline I — IVc -0.212 t-2.22 and V/VI -0.247 t-3.14 were hidden and jointly significant), all education dummies, block Walds for every block incl. 1-df, plus the prereg occupational-derivative block (dir middle + apex delta + Indoors) as a fifth rung: occ block survives (p=0.0002, apex delta +0.076 t2.52) and absorbs the class label (class block p=0.21). Footnote r46joint records both erratum generations; explanatory-power footnote r46var gains the omitted dir-middle row (-0.0001)*
@@ -1500,6 +1391,7 @@
 - **[minor] [cohort+class]** 4.6a, education levels table: "Read as levels rather than as a ladder (22 chambers, cohort controlled, baseline bachelor)..." — *closed by the graduate-split rebuild (2026-08-25/26): the education table is now generated by the committed edu_split_graduate.py on the full education-arm sample (n=4,820, per-level ns printed and matching), the Wald restated from that run (p=0.0002), and the prose now labels the sample explicitly. The old complete-case table the finding described no longer exists*
 - **[critical] [occupational-prereg]** Results 4.6b (headline framing): "The design intent, registered in the document's hierarchy section and throughout the pre-r..." — *adjudicated (Matthew): lead rewritten as a timeline; minute-level registration footnote added (12:04 transcript prediction → 13:05 prereg commit → 13:17 unblinding → 13:36 amendment → 17:21 ruling); meta-point on pervasive logging added*
 - **[minor] [occupational-prereg]** Results 4.6b (cross-reference): "that operationalization failed its own test and the framing is retired — Appendix B8 prese..." — *fixed: duplicate of the B8→B10 pointer correction (mechanical batch)*
+- **[minor] [posttraining+coverage+permeation]** 4.8 (headline and footnote r48): "+0.0099, positive in 9 of 10 cells, permutation p = 0.017...." — *headline permeation p refreshed to the committed default: permutation p = 0.022 (verified `word_context_delta.py pooled` prints 0.0217; the seed range 0.015–0.022 is already stated at the section's robustness line)*
 - **[major] [quality+bypass]** 4.9 Bypass study (flip vs success paragraph): "Effort raised both bars, and by *more* on the flip bar (2.8×) than on the success bar (5.5..." — *fixed: same direction correction*
 - **[major] [claims-vs-evidence]** Abstract (repeated in Introduction and §3.3): "This machine-drafted speech is not degraded: once genre is held fixed, AI-flagged contribu..." — *adjudicated as the cross-lens duplicate of AL7/AL9 (Matthew: already addressed): the abstract states the plain claim per his AL7 ruling, the applicability split is fully stated in §4.9 and in §8.3's couching, and the quoted abstract text no longer exists*
 - **[major] [claims-vs-evidence]** Discussion, §3 opening paragraph: "two instruments that fail differently — a detector calibrated to zero false positives ... ..." — *adjudicated (Matthew): no independent register-based prevalence estimator; sentences implying register-agrees-with-Pangram rewritten — the Discussion opener now attributes the 9.0% and elevenfold spread to the calibrated detector alone with the register credited for the genre corroboration and the history/structure, and the intro's 'their agreement carries the claims' became 'the division of labour, not agreement on one number'. Plus the quick test he asked for, committed (register_auc_check.py) and reported at §4.4's end: a register threshold detects at AUC 0.61 legislative / 0.60 within 2025-26 / 0.535 on ground truth (the adversarially quietened bypass variants — caveat stated) / 0.57 pooled, against the screen's 0.95 — the instrument carries population history, not instance detection, which is the division the study uses*
@@ -1521,13 +1413,18 @@
 - **[minor] [argument-logic]** §2.9.5 (Flight): "That is chase-and-flight: a marker loses value as it is copied, so the group that holds it..." — *adjudicated via Matthew's proposed second signature, which was tested and came back null: the II-over-I separation is CONSTANT across thirty years (+0.152 in 1995-99 vs +0.153 in 2025-26, weighted trend -0.005/half-decade, t -0.4; class_gap_trend.py committed). §2.9.5 rewritten as the assembled inventory — flight observed statically (rho=-0.42) and dynamically at the word level (§4.5 tells decay); the class cycle's motion null on BOTH sufficient signatures — and §2.9.6's era-test sentence now names both nulls, keeping the equilibrium reading and the pre-1996 discriminator*
 - **[minor] [comparability]** §2.4 The Opus screen tracks Pangram: "consistent with §5.4's finding that reasoning never closes the ˜0.25 AUC frontier gap, but..." — *fixed: duplicate of the removed §5.4/~0.25-AUC cross-reference (mechanical batch)*
 - **[major] [storyline]** §2.4 The Opus screen tracks Pangram: "consistent with §5.4's finding that reasoning never closes the ˜0.25 AUC frontier gap, but..." — *fixed: false cross-ref and unanchored ~0.25 AUC removed; sentence now self-contained*
+- **[major] [storyline]** §3.8 Future work (closing paragraph): "Collecting covariates for this study produced something with uses well outside it ... Two ..." — *moved the stranded 'two families of question' paragraph to just before the F2 future-work header, where it introduces items 29+*
 - **[major] [storyline]** §3.8 Future work (item numbering) and §3.5 Limits: "All three are first customers for the build-the-instrument-in-any-language method in item ..." — *fixed: §8.6 renumbered sequentially 1–35; all item refs updated (items 8–10, 11, 8, 33)*
+- **[major] [storyline]** §2.14 Quality (applicability paragraph) and Appendix C.2: "Stage 6c locates its source: the collapse appears in raw text from weaker models and vanis..." — *'Stage 6c' (undefined) renamed to 'Stage 6 (the never-reviewed continuations, below)'*
 - **[major] [storyline]** Throughout (first use §2.2): "the longest quartile of segments runs 9.4% against 5.8% for the shortest (review item X12)..." — *fixed: review-code convention defined at first use (footnote) and in the provenance note*
 - **[minor] [storyline]** §2.14 (stage 6 discussion): "wild flagged text shows the collapse (§Q1) while frontier raw text does not..." — *fixed: dangling (§Q1) replaced with a prose pointer to the applicability result*
 - **[minor] [storyline]** §2.2 (first use) and §2.6 footnote: "65,795 machine-written words of 728,998 across 3,519 segments in 20 chambers, excluding re..." — *fixed: regime-flag first use now points at §2.1's diagnostic*
+- **[minor] [storyline]** §2.4 The Opus screen tracks Pangram: "Contemporary human speech is the harder class to separate — as the permeation finding pred..." — *forward reference given its pointer: 'the permeation finding (§4.8) predicts'*
 - **[minor] [storyline]** §2.5 (first use) / Supplementary provenance note: "human register had been moving toward what instruct-tuning later selected for, for thirty ..." — *fixed: dagger convention footnote attached at first use; full key remains in provenance*
 - **[minor] [storyline]** §3.6 Related work / §2.14 footnote 32: "on the Sem-Detect peer-review benchmark reprinted in the Pangram 4 report (Table 27), both..." — *fixed: external table references disambiguated (their/its Table N)*
+- **[minor] [storyline]** §2.3 Drafting concentrates in scripted business: "it is the one place where the lexicon arm's inference is confirmed by an independent instr..." — *already resolved: the 'lexicon arm's inference is confirmed' sentence no longer exists; remaining 'lexicon arm' mentions are legitimate references to the retired arm*
 - **[major] [cross-cutting]** §2.14 (bypass, flip vs success rates): "Effort raised both bars, and by more on the flip bar (2.8×) than on the success bar (5.5×)..." — *fixed: direction corrected — more on the success bar (5.5×) than the flip bar (2.8×)*
+- **[major] [cross-cutting]** §2.14 (bypass, per-target chamber comparison): "The two chambers give 25.0% (n = 40) and 19.4% (n = 31) — consistent, but with intervals f..." — *arithmetic fixed: 25.0 − 19.4 = 5.6-point gap (was printed 4.1)*
 - **[major] [cross-cutting]** §2.4 (Opus screen, effort A/B): "consistent with §5.4's finding that reasoning never closes the ˜0.25 AUC frontier gap..." — *fixed: same as storyline item — cross-ref removed*
 - **[minor] [cross-cutting]** §2.10 (pre-registered occupational test): "that operationalization failed its own test and the framing is retired — Appendix B8 prese..." — *fixed: pointer corrected to Appendix B10*
 

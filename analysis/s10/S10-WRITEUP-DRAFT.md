@@ -769,7 +769,7 @@ case-control mixture whose human class is drawn partly from pre-2023 text,
 which is *provably* pre-LLM and therefore the cleanest available negative;
 restricting the negatives to 2023-and-later contemporary speech only *lowers*
 the AUC, to **0.940** [0.915, 0.961]. Contemporary human speech is the harder
-class to separate — as the permeation finding predicts — so the era mix is not
+class to separate — as the permeation finding (§4.8) predicts — so the era mix is not
 flattering the screen.
 
 [^r44dep]: `python opus_screen_auc.py`. The deployed screen is
@@ -807,7 +807,7 @@ against **−0.007** for Opus. Reasoning closes part of the gap for weak
 detectors and does nothing for a strong one — and the sharper point is that
 the frontier model is not reasoning its way to 0.95; it is recognising
 something at a glance. Practically, the screen can be run for about **4× fewer reasoning
-tokens (~2× all-in)** with no loss.[^s-effort]
+tokens (~2× all-in)** with no loss — a saving observed in the run logs rather than recorded in the committed AUC artifacts.[^s-effort]
 
 [^s-effort]: `opus_effort_ab.py`, `opus_effort_ab.csv`.
 
@@ -1017,7 +1017,7 @@ the others past — fails on the arithmetic: US House is **14.3% machine by
 instrument occurrences** against Ireland's 9.0% and the Australian states'
 11.3%, so removing machine text lowers the American benchmark by more than it
 lowers the challengers. Federal Canada is the one case it does explain, at
-21.7% the most machine-written chamber in the study, dropping from
+21.7% the most machine-written of the national chambers (second only to New South Wales, §4.2), dropping from
 apparently-above to clearly-below once corrected.[^r45f]
 
 [^r45f]: `python convergence_check.py`, with shares from
@@ -2252,7 +2252,7 @@ against 2021 to November 2022, where no machine text is possible in either
 cell — the same instrument moves **+0.0150** (positive in 7 of 10
 chamber × family cells, permutation p = 0.017), reusing the identical
 scored occurrences.[^r48pre] The full pre-vs-post contrast is **+0.0099**
-(9 of 10 cells, p = 0.017)†[^r48]; its post-era cells contain
+(9 of 10 cells, permutation p = 0.022)†[^r48]; its post-era cells contain
 machine-drafted text (~9% of words) and cannot separate continued human
 drift from that contamination — which the pre-LLM window makes moot for the
 claim: the permeation is demonstrated where drafting could not exist. The
@@ -2358,7 +2358,7 @@ scoring <10, 63.0% at 10–49, and **31.1%** at ≥50; respect_counterargs runs
 [^s-appband]: `applicability_by_band.py`.
 
 engage with*; separately, AI-flagged speech is about **half as likely to
-contain anything to engage with** — a real difference, not a null. Stage 6c
+contain anything to engage with** — a real difference, not a null. Stage 6 (the never-reviewed continuations, below)
 locates its source: the collapse appears in raw text from weaker models and
 vanishes at the frontier, so in the wild it points at the tools actually in
 use rather than at machine text as such.
@@ -2618,7 +2618,7 @@ an untested one: better contrastive exemplars, a rewriter fine-tuned against
 the detector, or a human editor are all outside what was tried.
 
 The two chambers give 25.0% (n = 40) and 19.4% (n = 31) — **consistent, but
-with intervals far too wide to establish that they agree**: the 4.1-point gap
+with intervals far too wide to establish that they agree**: the 5.6-point gap
 carries a 95% interval of roughly [−17, +25] points, equally compatible with
 one chamber's rate being half or double the other's. What is
 more than a restatement of the wide interval is that the two chambers'
@@ -3825,6 +3825,13 @@ study has not already built.
     Impact of Generative AI and Expert Testimony," *Nova Law Review* 50, no. 3
     (2026), art. 2.
 
+Collecting covariates for this study produced something with uses well outside
+it: birth year, education, prior occupation, EGP class and Wikipedia prominence
+for roughly five thousand legislators across twenty-two chambers, joined to
+every word each of them spoke. The register was the reason to build it; it is
+not the only thing it can answer. Two families of question follow, and they
+differ in how novel they are likely to be.
+
 **F2. What the legislator panel enables beyond the register (Matthew).**
 
 29. **Class dynamics against proxies for power.** Whether the class structure
@@ -3987,13 +3994,6 @@ study has not already built.
     finding either way: high model–human agreement is direct evidence for
     the aggregation argument, and disagreement would localise what the
     models add beyond the population image. Deliberately not run now.
-
-Collecting covariates for this study produced something with uses well outside
-it: birth year, education, prior occupation, EGP class and Wikipedia prominence
-for roughly five thousand legislators across twenty-two chambers, joined to
-every word each of them spoke. The register was the reason to build it; it is
-not the only thing it can answer. Two families of question follow, and they
-differ in how novel they are likely to be.
 
 ---
 
