@@ -81,7 +81,7 @@ APPMAP = {
  "D.4":"sec:cohort-ministerial",
 }
 FIGLABEL = {"class_by_era_panels.png":"fig:class-era","ladder_by_era_panels.png":"fig:ladder-era","altitude_u.png":"fig:altitude",
-            "the-ai-lexicon-trend.png":"fig:trend","apc_gradients.png":"fig:apc","tenure_profile.png":"fig:tenure","bypass_search.png":"fig:bypass"}
+            "the-ai-lexicon-trend.png":"fig:trend","apc_gradients.png":"fig:apc","tenure_profile.png":"fig:tenure","lifetime_drift_by_cohort.png":"fig:lifedrift","bypass_search.png":"fig:bypass"}
 
 NUMSTRIP = re.compile(r'^(?:Appendix\s+[A-D]\s+---\s+|(?:[0-9]+(?:\.[0-9]+[a-z]?)?|[A-D]\.[0-9]+[a-z]?)\.?\s+)')
 
@@ -163,8 +163,8 @@ def figure_ref_anchors(t):
        r"the two instruments then part ways (\\cref{fig:trend})"),
       (r"The\s+figure\s+below\s+lays\s+out\s+the\s+loop\.",
        r"\\Cref{fig:bypass} lays out the loop."),
-      (r"comparing legislatures whose group histories\s+differ, below",
-       r"comparing legislatures whose group histories differ (\\cref{fig:apc}), below"),
+      (r"the low-variance signature of an individual-level effect",
+       r"the low-variance signature of an individual-level effect (\\cref{fig:apc})"),
       (r"The\s+search\s+loop\s+generates\s+and\s+screens\s+variants",
        r"The search loop (\\cref{fig:bypass}) generates and screens variants"),
       (r"reported\s+individually\s+in\s+the\s+table\s+below",
