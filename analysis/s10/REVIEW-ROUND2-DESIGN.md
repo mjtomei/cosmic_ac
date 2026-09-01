@@ -36,6 +36,39 @@ never see authorship.
 
 ## Track B — writing quality (runs first)
 
+### Generation members — reference-primed Fable 5.1 (propose-only)
+
+In addition to the 7 review-panel members, two **generation members**:
+both Fable 5.1, each primed with a specific craft reference, contributing
+proposals only (they do not vote).
+
+- **Prose generator** — Fable 5.1 + `writing_refs/gopen_swan_principles.md`
+  (distilled from the fetched Gopen & Swan article) + the house voice memory
+  (`writing-voice-challenge-not-apology`) + Williams/Pinker clarity
+  principles from weights. Proposes prose and flow changes.
+- **Data-presentation generator** — Fable 5.1 +
+  `dataviz_refs/data_presentation_principles.md` + the loadable `dataviz`
+  skill. Proposes table/figure/number-presentation changes.
+
+**On the canonical texts (the honest state):** we do NOT have the primary
+books on disk (Tufte, Cleveland, Williams, Few, Pinker). The workaround,
+built here: (a) Gopen & Swan fetched and distilled (`writing_refs/`);
+(b) the free downstream canon — Wilke's *Fundamentals of Data
+Visualization* (fetched/distilled) and Healy's *Data Visualization* (both
+full books, free online), plus Cleveland–McGill's graphical-perception
+ranking via the open Heer–Bostock replication — distilled into
+`dataviz_refs/`; (c) the models' in-weights knowledge of the full canon;
+(d) the bundled `dataviz` skill. The generators are primed with the briefs,
+not with reproduced copyrighted text.
+
+**Self-exclusion (accepted, Matthew 2026-09-01):** the generators are
+Fable 5.1 and the Anthropic *voting* seat is also Fable 5.1, so — per "no
+model votes on its own proposal" — **every Fable instance is excluded from
+voting on any Fable-authored candidate.** Consequence, accepted: candidates
+that originate from the Fable generators (or the Anthropic seat) are judged
+by the 6 non-Anthropic labs. The provenance map enforces this at dispatch;
+the Anthropic Fable seat still votes on all non-Fable candidates.
+
 ### Stage 1 — Propose (one holistic ask per panel member)
 Not per subsection. Each of the 7 models sees the **whole paper** + the
 voice guide (confident and plain; no defensive hedging or self-
@@ -48,7 +81,7 @@ Each returns a structured changelist; every entry:
       action: reorder|merge|split|move|rewrite,
       proposed_text_or_move, rationale }
 
-7 calls. (Fallback if a whole-paper ask overflows a model's context: one
+7 review-member calls + 2 generation-member calls, all into the same pool. (Fallback if a whole-paper ask overflows a model's context: one
 ask per top-level section or group of related sections — ~8, not 40.)
 
 ### Stage 2 — Aggregate & mix (blind, de-authored)
