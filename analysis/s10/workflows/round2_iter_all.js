@@ -27,23 +27,14 @@ const DRAFT = (args && args.draft) || 'analysis/s10/S10-WRITEUP-DRAFT.md'
 // architecture than one headless session per scope). args.scopes is a list of
 // {id, scope}; the full-paper scope is 'all' and is the only one that can see
 // cross-section structural moves.
-
-// SCOPE INDEX (Matthew, 2026-09-02). The section groups used to live in a
-// hand-maintained section_groups.json, which silently went stale the moment a
-// structural reorganization renumbered the paper: iteration 1's agents were
-// handed scopes naming a "§8 Discussion" that no longer existed, and five real
-// sections belonged to no group at all. The tiling is now derived at the top of
-// every run from the draft's own headings, so it cannot drift from the text.
-//
-// The workflow sandbox has no filesystem access, so an agent supplies the facts
-// (heading lines + total line count) and this script does the arithmetic. The
-// packing stays deterministic and assertable here rather than being left to a
-// model's judgment.
-// Every workflow worker runs on the work subscription; only this orchestrating
-// session sits on the personal one.
+// MODELS FOR THE NON-VOTING WORK. Fable is the most capable model here and the
+// most expensive, so it is spent on exactly one thing: the faithfulness gate.
+// That gate is the only hard stop in the pipeline — it decides whether a change
+// moved a datum, and a miss there puts a wrong number into the paper, which no
+// amount of downstream voting recovers. Everything else that is not a panel seat
+// — indexing headings, reading back a saved result, applying and verifying — is
+// judgment or mechanics that Opus does well, so it goes there.
 const FAITH_MODEL = 'work/claude-fable-5'
-// Applying structure is the judgment-heaviest job in the run; it gets the
-// strongest seat, on the work account like every other worker.
 const WORKER_MODEL = 'work/claude-opus-5'
 
 const READ_CAP_TOKENS = 25000   // the Read tool's hard per-call cap, measured
@@ -164,7 +155,7 @@ let SCOPES = (args && args.scopes) || null
 let SCOPE_INDEX = null
 if (!SCOPES && !RESUME) {
   SCOPE_INDEX = await agent(SCOPE_PROMPT, { label: 'scope:index', phase: 'Scope',
-                                            model: FAITH_MODEL, schema: SCOPE_SCHEMA })
+                                            model: WORKER_MODEL, schema: SCOPE_SCHEMA })
   if (!SCOPE_INDEX || !SCOPE_INDEX.total_lines) throw new Error('scope index failed; cannot tile the draft')
   const N = SCOPE_INDEX.total_lines
   const groups = packGroups(SCOPE_INDEX.headings, N)
@@ -552,17 +543,17 @@ const VERIFY_SCHEMA = {
 
 const loadSaved = async () => parallel(RESUME.map(path => () =>
   agent(`ROLE: LOAD SAVED RESULT. Mechanical, no judgment.
-Read the saved workflow result at ${EB}${path}${EB} and report its changes.
+Read the saved workflow result at \`${path}\` and report its changes.
 
-For each entry in its ${EB}changes${EB} array report: the id; whether it is prose or
-structural; its action and locus; the first 120 characters of its ${EB}current${EB}
+For each entry in its \`changes\` array report: the id; whether it is prose or
+structural; its action and locus; the first 120 characters of its \`current\`
 text with runs of whitespace collapsed to single spaces (this is only used to
 recognise rival rewrites of the same passage, so it need not be exact beyond
 that); its support count; and from its verdict, accepted, keeps, n and composite.
 
-Report the largest ${EB}n${EB} any change in the file received as seats_max, and the
+Report the largest \`n\` any change in the file received as seats_max, and the
 file's scope id. Do not summarise, judge, or omit entries.`,
-        { model: FAITH_MODEL, phase: 'Propose', label: `load:${path.split('/').pop()}`, schema: LOAD_SCHEMA })
+        { model: WORKER_MODEL, phase: 'Propose', label: `load:${path.split('/').pop()}`, schema: LOAD_SCHEMA })
     .then(r => r && ({ scope_id: r.scope_id, source: path, seats_max: r.seats_max,
       n_proposals: 0, n_candidates: r.changes.length, n_faith_pass: r.changes.length,
       n_faith_dropped: 0, accepted: r.changes.filter(c => c.accepted).length, self_preference: {},
