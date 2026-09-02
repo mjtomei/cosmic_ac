@@ -353,29 +353,34 @@ const FAITH_SCHEMA = { type: 'object',
   properties: { locatable: { type: 'boolean' }, current_matches: { type: 'boolean' },
     data_faithful: { enum: ['pass', 'fail'] }, note: { type: 'string' } } }
 
-// APPLICATION (runs AFTER this workflow returns; see analysis/s10/apply_changes.py):
+// APPLICATION happens in this workflow's own Apply and Verify phases, below.
+// The rules it follows, gathered here because they are easy to get wrong:
 //   1. Only UNANIMOUS changes that cleared the data-faithfulness gate are applied.
 //   2. HIGHEST SCORING FIRST. When several accepted proposals contend for the same
 //      target, only one can land, so the best-scoring variant wins — never list
 //      order. Prose: grouped by the exact passage being replaced. Structural:
 //      grouped by (section, action), since rival takes on one reorganization share
 //      both, while different actions on a section may be complementary.
-//   3. Everything else — non-unanimous, and rival takes that lost — goes to a
-//      review queue rather than the draft.
-//   3b. PROSE IS APPLIED BEFORE STRUCTURAL, and the order matters: mechanical
-//      prose application needs `current` verbatim, while structural changes
-//      renumber sections and so rewrite the §N references inside prose
-//      passages. Structural-first would silently break every prose anchor
-//      containing a section reference. Brittle exact-match step first, tolerant
-//      judgment step second.
-//   4. Structural changes are executed by an agent, not by string replacement —
-//      see analysis/s10/apply_structural_brief.md for its brief, which includes
-//      the mandatory hygiene pass (LaTeX label map, moved-material references,
-//      stale titles, orphaned pronouns).
-//   5. analysis/s10/check_manuscript.py then runs, and the fix/re-check loop
-//      repeats UNTIL IT REPORTS CLEAN — one pass is not enough, since a fix can
-//      expose the next problem.
-//   6. Each iteration is committed, so every round is separately revertible.
+//   3. Everything else — non-unanimous, and rival takes that lost — is reported
+//      for review rather than written to the draft.
+//   3b. PROSE IS APPLIED BEFORE STRUCTURAL, and the order matters: prose applies
+//      by exact match on `current`, while structural changes renumber sections
+//      and so rewrite the §N references inside those very passages.
+//      Structural-first would silently break every prose anchor containing a
+//      section reference. Brittle exact-match step first, judgment step second.
+//   4. Prose goes through Edit, one call per change: it requires an exact unique
+//      match and fails otherwise, and that failure is the safety property. A
+//      change that no longer matches is reported, never fuzzy-matched onto a
+//      passage that merely looks close.
+//   5. Structural changes are executed by judgment — see
+//      analysis/s10/apply_structural_brief.md, which includes the mandatory
+//      hygiene pass (LaTeX label map, moved-material references, stale titles,
+//      orphaned pronouns).
+//   6. check_manuscript.py then runs, and the fix/re-check loop repeats UNTIL IT
+//      REPORTS CLEAN — one pass is not enough, since a fix can expose the next
+//      problem. The checker stays a fixed script on purpose: the loop only means
+//      something if every pass applies the identical test.
+//   7. Each iteration is committed, so every round is separately revertible.
 
 // ============================== ORCHESTRATION ==============================
 // One workflow, every scope. Each scope runs the full pipeline independently and
