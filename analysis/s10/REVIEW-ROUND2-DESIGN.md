@@ -84,22 +84,22 @@ Each returns a structured changelist; every entry:
 7 review-member calls + 2 generation-member calls, all into the same pool. (Fallback if a whole-paper ask overflows a model's context: one
 ask per top-level section or group of related sections — ~8, not 40.)
 
-### Stage 2 — Aggregate & mix (blind, de-authored)
-The proposals are pooled and **stripped of authorship**. Deterministic
-clustering by (locus, action) groups near-duplicate proposals, so
-"5 of 7 want to merge §X into §Y" becomes one candidate with a support
-count. Where several models rewrote the same locus, an **aggregator**
-(the orchestrator, neutral) **mixes** them into 1–3 de-authored candidate
-variants per locus. A **provenance map** (candidate → contributing models)
-is kept out of band — used only to exclude authors from voting and for
-later analysis, never shown to voters. Output: one anonymized ballot of
-distinct candidate changes.
+### Stage 2 — De-author (no mix, no clustering)
+Proposals are pooled and stripped of authorship; each becomes its own
+candidate. **No consolidation and no semantic clustering** (an earlier
+design merged overlapping proposals into variants — dropped as over-built).
+The only collapse is **byte-identical** proposals for the same locus+action,
+which merge into one candidate with a `support` count and unioned
+provenance. The proposer supplies the exact `current` text it replaces, so
+voters compare current-vs-proposed directly (the workflow JS sandbox cannot
+read the draft). A provenance map (candidate → contributing model families)
+is kept out of band for self-exclusion and later analysis, never shown to
+voters.
 
 ### Stage 3 — Vote (blind, no self-vote, multi-factor)
 Each candidate is scored only by the panel members who did **not** propose
 or co-author it (self-exclusion via the provenance map), blind to
-authorship. Each voter returns a **multi-factor** ballot, not just a
-keep/discard:
+authorship. Each voter returns a **multi-factor** ballot (two rubrics — one for prose changes, one for structural moves), not just a keep/discard:
 
 - `faithfulness` — hard gate: does it change a claim/number/hedge? (fail = discard regardless of the rest)
 - `clarity` — reader comprehension improvement
