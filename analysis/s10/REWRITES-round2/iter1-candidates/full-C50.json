@@ -1,0 +1,12 @@
+{
+ "id": "full-C50",
+ "scope": "full",
+ "member": "grok-4.6",
+ "family": "xai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a77.4 The case rests on \u00a74.9's primary",
+ "current": "The case rests on \u00a74.9's primary finding and is independent of evasion: speech classified as machine-involved grades **better-formed, not worse-engaged** on the DQI. Policing authorship therefore does not protect quality, because the text flagged for machine involvement is not where this rubric finds a quality deficit. The narrower conclusion is the useful one: **quality assessment is not a usable proxy for provenance, and provenance is not a usable proxy for quality.** The DQI associations with the machine label are real but small, partly exposed to judge leakage, and positive where they survive; they neither identify authorship nor support treating machine involvement as a quality failure.",
+ "proposed": "The case rests on \u00a74.9's primary finding and is independent of evasion: speech classified as machine-involved grades **better-formed, not worse-engaged** on the DQI. Policing authorship therefore does not protect quality, because the text flagged for machine involvement is not where this rubric finds a quality deficit. The DQI associations with the machine label are real but small, partly exposed to judge leakage, and positive where they survive; they neither identify authorship nor support treating machine involvement as a quality failure. The narrower conclusion is the useful one: **quality assessment is not a usable proxy for provenance, and provenance is not a usable proxy for quality.**",
+ "rationale": "The stress position (principle 3): the banger \u2014 quality and provenance are not proxies for each other \u2014 currently sits in the middle of the paragraph, and the sentence that follows it is a hedge occupying the end-slot. Moving the hedge before the conclusion puts the claim the section is for in the position readers already emphasise."
+}

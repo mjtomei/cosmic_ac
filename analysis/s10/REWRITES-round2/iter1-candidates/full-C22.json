@@ -1,0 +1,12 @@
+{
+ "id": "full-C22",
+ "scope": "full",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "structural",
+ "action": "move",
+ "locus": "\u00a74.6a, \"The coarsest cut is the strongest single correlate\"",
+ "current": "\u00a74.6a, final paragraph: \"**The coarsest cut is the strongest single correlate: the register is the language of the office.**\" \u2014 the planted-marker Indoors result and its place in the joint model, currently sitting after the paragraph that retires superseded framings and hands the reader off to \u00a76's calibration bullet.",
+ "proposed": "move to before the paragraph beginning \"One drafting generation of the registration expressed the peak claim as a linear three-profile rank\" (carrying its footnote [^rnc] with it)",
+ "rationale": "A substantive result is currently placed after the section's housekeeping \u2014 the retired framings, the failed registered predictions, and the closing pointer to \u00a76's calibration. Moving it above that block ends the section on scope and scale, as intended, and lets \"Scale for all of it\" cover the office cut too."
+}

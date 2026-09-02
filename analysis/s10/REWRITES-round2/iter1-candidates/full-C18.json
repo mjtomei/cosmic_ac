@@ -1,0 +1,12 @@
+{
+ "id": "full-C18",
+ "scope": "full",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a77.1 \u201cPoint a general-purpose model at its own output\u201d",
+ "current": "Point a general-purpose model at its own output, tell it to try again, and it will beat any check it can score against. This is not a claim about Pangram, and it is not a defeat theorem for fixed checks: it is the supportable form \u2014 a check whose output, or a correlated proxy for it, the attacker can query is an optimisation target, and the attacker carries a quality constraint it can itself satisfy. The 22.5% in \u00a74.10 is a lower bound on that adversary class, measured at its weakest member.",
+ "proposed": "Point a general-purpose model at its own output, give it a score correlated with a check, and the check becomes an optimisation target. In \u00a74.10, that procedure moved 22.5% of targeted speeches to a Human verdict without querying Pangram during the search and without a measured quality loss. This is evidence about an attack surface, not a defeat theorem for fixed checks: systems remain harder to optimise against when attackers cannot observe or approximate their criteria, and the experiment does not establish the ceiling of either attack or defence.",
+ "rationale": "The opening claim that a model \u201cwill beat any check\u201d outruns a 22.5% success rate and conflicts with the paragraph's own disclaimer. The replacement leads with the measured result and draws the general lesson at the level the experiment supports."
+}

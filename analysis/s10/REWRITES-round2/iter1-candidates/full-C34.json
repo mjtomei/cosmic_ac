@@ -1,0 +1,12 @@
+{
+ "id": "full-C34",
+ "scope": "full",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.9, \"That exclusion conditions on something the treatment moves\"",
+ "current": "That exclusion conditions on something the treatment moves, so the two claims\nare stated separately. **Applicability itself collapses at\nhigh screen scores**: respect_demands is applicable for 61.4% of segments\nscoring <10, 63.0% at 10\u201349, and **31.1%** at \u226550; respect_counterargs runs\n50.8% / 51.2% / **28.9%** (n = 498/297/45[^s-appband]). So the engagement null below means *engages no worse when there is something to\n\n[^s-appband]: `applicability_by_band.py`.\n\nengage with*; separately, AI-flagged speech is about **half as likely to\ncontain anything to engage with** \u2014 a real difference, not a null. Stage 6 (the never-reviewed continuations, below)\nlocates its source: the collapse appears in raw text from weaker models and\nvanishes at the frontier, so in the wild it points at the tools actually in\nuse rather than at machine text as such.",
+ "proposed": "That exclusion conditions on something the treatment moves, so the two claims\nare stated separately. **Applicability itself collapses at high screen\nscores**: respect_demands is applicable for 61.4% of segments scoring <10,\n63.0% at 10\u201349, and **31.1%** at \u226550; respect_counterargs runs 50.8% / 51.2% /\n**28.9%** (n = 498/297/45).[^s-appband] So the engagement null below means\n*engages no worse when there is something to engage with*; separately,\nAI-flagged speech is about **half as likely to contain anything to engage\nwith** \u2014 a real difference, not a null.\n\n[^s-appband]: `applicability_by_band.py`.\n\nStage 6 (the never-reviewed continuations, below) locates its source: the\ncollapse appears in raw text from weaker models and vanishes at the frontier,\nso in the wild it points at the tools actually in use rather than at machine\ntext as such.",
+ "rationale": "The footnote definition currently interrupts the sentence between \"something to\" and \"engage with\", breaking the phrase readers must hold intact. Splitting the attribution of the collapse into its own paragraph also separates the measurement from its explanation (one unit, one point)."
+}

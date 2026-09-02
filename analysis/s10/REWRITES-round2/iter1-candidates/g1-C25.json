@@ -1,0 +1,12 @@
+{
+ "id": "g1-C25",
+ "scope": "g1",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "merge",
+ "locus": "\u00a73.3 \"This belongs in methods rather than an appendix\"",
+ "current": "This belongs in methods rather than an appendix, because it explains the\nframing of \u00a74.5.\n\nThe Kobak et al. excess-vocabulary approach (arXiv:2406.07016; *Sci Adv*\n11(27):eadt3813, 2025) compares observed word frequencies against a\ncounterfactual built from prior years. Applied naively to Hansard it produces\na large, confident-looking post-2022 signal.",
+ "proposed": "The Kobak et al. excess-vocabulary approach (arXiv:2406.07016; *Sci Adv*\n11(27):eadt3813, 2025) compares observed word frequencies against a\ncounterfactual built from prior years. Applied naively to Hansard it produces\na large, confident-looking post-2022 signal.",
+ "rationale": "The opening sentence defends the section's placement to the reader instead of doing work; the heading already states the claim, and \u00a74.5 is cross-referenced two paragraphs down. House voice: no defensive throat-clearing."
+}

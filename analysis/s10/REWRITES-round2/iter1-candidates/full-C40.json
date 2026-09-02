@@ -1,0 +1,12 @@
+{
+ "id": "full-C40",
+ "scope": "full",
+ "member": "grok-4.6",
+ "family": "xai",
+ "type": "structural",
+ "action": "move",
+ "locus": "\u00a74.8 The register is a post-training artifact",
+ "current": "### 4.8 The register is a post-training artifact\nOLMo-2 stage ladder (SFT/DPO install the register; RLVR is the placebo) plus the \u00a74.8a coverage tables (post-training moves model vocabulary onto Hansard's).\n\n### 4.8a Coverage: post-training moves the model's vocabulary onto Hansard's",
+ "proposed": "Move \u00a74.8 and \u00a74.8a to immediately after \u00a74.5a (before the present \u00a74.5b). Companion edit: renumber the inserted block as \u00a74.5b\u2013\u00a74.5c and the present \u00a74.5b as \u00a74.5d (and \u00a74.5c as \u00a74.5e if that subsection is not merged), and update the handful of \u00a74.8 / \u00a74.5b cross-references that the move displaces.",
+ "rationale": "Context before interpretation, and old-before-new: \u00a74.5b argues that 'what post-training does resembles what already distinguished American usage,' but the reader has not yet been shown that post-training installs the register. After \u00a74.5a's American ceiling, the stage ladder is the missing antecedent; \u00a74.5b then opens on old information rather than a jump."
+}

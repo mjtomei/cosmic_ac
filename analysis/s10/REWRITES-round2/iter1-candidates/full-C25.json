@@ -1,0 +1,12 @@
+{
+ "id": "full-C25",
+ "scope": "full",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "structural",
+ "action": "move",
+ "locus": "Front matter, \"**S10 \u2014 draft write-up, 2026-08-11; \u00a74.6b and Appendix A extended\"",
+ "current": "The dated status block between the abstract and \u00a71 \u2014 draft date and extension dates, the note that \u00a74.6c's citations were web-verified on 2026-08-24, the flag about unclustered standard errors in \u00a74.6b, and the key explaining that daggered numbers were re-derived from their artifacts.",
+ "proposed": "move to Appendix D \u2014 Replication and reproducibility, as the block immediately under that heading",
+ "rationale": "This is production and verification metadata about the draft, and a reader currently meets it before the introduction, between the abstract and the argument. Appendix D is where the reproduction record already lives, and the [^dag] footnote already sends readers to a provenance note; the cross-reference in that footnote should be updated to name Appendix D."
+}

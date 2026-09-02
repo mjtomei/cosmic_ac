@@ -1,0 +1,12 @@
+{
+ "id": "g2-C10",
+ "scope": "g2",
+ "member": "grok-4.6",
+ "family": "xai",
+ "type": "structural",
+ "action": "reorder",
+ "locus": "4.2: At least 9.0% of current words",
+ "current": "### 4.2 At least 9.0% of current words are machine-drafted, with a fourfold spread\nHeadline pooled 9.03% with year-split and clustering; then two weighting essays; then the twenty-chamber table, dotplot, cluster-bootstrap interval note, and shrunken fourfold spread.",
+ "proposed": "Move the chamber-rate table, the chamber_prevalence_dotplot figure with its caption, the cluster-bootstrap interval paragraph (\"Intervals are cluster bootstraps over segments...\"), and the random-effects spread paragraph (\"The spread is the finding, not noise around a mean.\") to immediately after the estimand sentence (\"Every figure below is the share of *what was said*...\"), before the word-weighting paragraph.",
+ "rationale": "Findings-first: the fourfold spread is the subsection's second result, but two methods essays currently sit between the 9.03% headline and the table that carries it. Companion edits: the figure travels with the table; if the word-weighting paragraph still says \"the table below,\" update that deictic (the companion prose rewrite below already drops it)."
+}

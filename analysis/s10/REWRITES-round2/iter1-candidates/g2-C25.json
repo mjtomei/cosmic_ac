@@ -1,0 +1,12 @@
+{
+ "id": "g2-C25",
+ "scope": "g2",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.4 \u2014 \u201cReasoning effort buys nothing here\u201d",
+ "current": "**Reasoning effort buys nothing here, and that is worth stating rather than\nhiding.** The screen was tuned and validated at `effort=low`, and low had\nnever been compared against anything. Re-run on the 241-segment labelled pool\nwith the prompt and batching held byte-identical (all AUCs against Pangram 4):",
+ "proposed": "**Higher reasoning effort produces no detectable gain here.** The screen was\ntuned and validated at `effort=low`, but that setting had not been compared\nwith another effort level. We therefore re-ran the screen on the 241-segment\nlabelled pool with the prompt and batching held byte-identical; all AUCs are\nmeasured against Pangram 4:",
+ "rationale": "The replacement aligns the lead claim with the later confidence interval and stated resolution limit. It also removes defensive meta-commentary while preserving the experimental setup and sample size."
+}

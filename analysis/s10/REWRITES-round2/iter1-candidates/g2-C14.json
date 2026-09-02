@@ -1,0 +1,12 @@
+{
+ "id": "g2-C14",
+ "scope": "g2",
+ "member": "grok-4.6",
+ "family": "xai",
+ "type": "structural",
+ "action": "reorder",
+ "locus": "4.3: The ordering is exactly what the",
+ "current": "### 4.3 Drafting concentrates in scripted business\nAfter the genre-ladder table and the 3.29\u00d7 contrast, a fraction-weighting paragraph and a word-weighting paragraph precede the mechanism reading and the Cochran\u2013Armitage trend.",
+ "proposed": "Move the two paragraphs starting \"The ordering is exactly what the mechanism predicts\" and \"The monotone trend across all three rungs\" to immediately after the fraction-weighting paragraph (after \"On binary counting the three read 35.8% / 25.7% / 11.8% and a 3.03\u00d7 ratio.\"), before the word-weighting paragraph (\"The word-weighting choice matters more in this table...\").",
+ "rationale": "Match structural weight to substantive weight: the mechanism and the ladder's proper test are the finding; the segment-versus-word comparison is robustness, and currently delays both. The 3.29\u00d7 line and the fraction-weighting note that explains it stay put, so the contrast is still defined before it is interpreted."
+}

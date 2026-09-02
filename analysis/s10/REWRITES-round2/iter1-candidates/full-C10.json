@@ -1,0 +1,12 @@
+{
+ "id": "full-C10",
+ "scope": "full",
+ "member": "sol",
+ "family": "openai",
+ "type": "structural",
+ "action": "merge",
+ "locus": "\u00a73.5 \u201cInstruments retired, and why\u201d",
+ "current": "### 3.5 Instruments retired, and why\n\nNamed here because a reader needs to know what was tried and dropped, not to\npad an appendix:",
+ "proposed": "Merge into Appendix A \u2014 Null results, consolidating the five-row table with the corresponding null and retired-instrument entries there.",
+ "rationale": "Failed and retired instruments are audit material, not part of the main methodological sequence. Consolidation also removes repetition between \u00a73.5 and Appendix A while preserving the full record."
+}

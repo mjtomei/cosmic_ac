@@ -1,0 +1,12 @@
+{
+ "id": "full-C12",
+ "scope": "full",
+ "member": "sol",
+ "family": "openai",
+ "type": "structural",
+ "action": "split",
+ "locus": "\u00a74.4 \u201cReasoning effort buys nothing here\u201d",
+ "current": "### 4.4 The Opus screen tracks Pangram\n\nA blinded LLM screen over the full corpus (37,801 segments, date-blind) separates Pangram's classes cleanly on the 618-segment overlap; the remainder of the section reports an effort-level A/B test and token-cost comparison.",
+ "proposed": "Split before \u201c**Reasoning effort buys nothing here, and that is worth stating rather than hiding.**\u201d Keep the detector-agreement result in \u00a74.4 and move the effort A/B test, its table, and its supporting footnote to Appendix D after \u00a7D.2.",
+ "rationale": "The AUC result validates the screen and belongs in Results; the low-versus-max effort experiment is implementation validation. Moving it to reproducibility material shortens the results arc without losing any datum."
+}

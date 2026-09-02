@@ -1,0 +1,12 @@
+{
+ "id": "full-C39",
+ "scope": "full",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a76, \"**Tasmania is uninterpretable** and excluded.\"",
+ "current": "- **Tasmania is uninterpretable** and excluded. All twenty-one screened\n  chambers now run the diagnostic (it previously globbed only the provinces;\n  CA-FED, US House and US Senate were added \u2014 CA-FED flat, the two US chambers\n  a gradual multi-decade climb with no discrete step). The twenty pooled\n  chambers all pass; Tasmania, the twenty-first, is the sole exclusion. The diagnostic uses two convention-tracking markers,\n  not all of them.",
+ "proposed": "- **Tasmania is uninterpretable** and excluded. The transcription-regime\n  diagnostic now runs on all twenty-one screened chambers \u2014 it previously\n  globbed only the provinces, and CA-FED, US House and US Senate were added,\n  the first flat and the two US chambers a gradual multi-decade climb with no\n  discrete step. Twenty chambers pass and enter the pool; Tasmania, the\n  twenty-first, is the sole exclusion. What bounds the check is its\n  resolution: it reads two convention-tracking markers, not all of them.",
+ "rationale": "The bullet ends on a fragment appended after the conclusion, wasting the stress position that should carry the limit this bullet exists to state; naming it as a bound on resolution puts the caveat where readers emphasise. Recasting the parenthesis as a dashed clause also keeps the diagnostic as the sentence's subject rather than burying it."
+}

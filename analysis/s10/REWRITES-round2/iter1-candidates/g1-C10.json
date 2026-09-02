@@ -1,0 +1,12 @@
+{
+ "id": "g1-C10",
+ "scope": "g1",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a73.4 \u2014 \u201cThe theoretical ladder (the semi-independent check\u201d",
+ "current": "**The theoretical ladder** (the semi-independent check \u2014 named for the\nopposite origin: it is built from the registration's theory of\naccountability relations, composed rather than pictured). Three\nindependent blind coding workflows assigned elements to four\naccountability components \u2014 **U** upward (advising without the final say, discretion\nreverse-scored), **L** lateral (external service), **D** downward\n(command), **N** undirected (organisational account-giving and contact) \u2014\nyielding 71 consensus elements (Appendix D's second table); the free /\nbottom / middle / top levels are composed from the components. The two\nladders' levels correlate +0.75 to +0.92, which is why the registration's\nnever-together rule treats them as near-twins; where both enter a model the\nwidened errors are shown rather than hidden (\u00a74.6b).",
+ "proposed": "**The theoretical ladder** is the semi-independent check. Unlike the folk ladder, it begins with the registration's theory of accountability relations and composes the levels rather than picturing them. Three independent blind coding workflows assigned elements to four accountability components: **U**, upward (advising without the final say, with discretion reverse-scored); **L**, lateral (external service); **D**, downward (command); and **N**, undirected (organisational account-giving and contact). This process yielded 71 consensus elements (Appendix D's second table), from which the free, bottom, middle, and top levels are composed.\n\nThe corresponding levels of the two ladders correlate from +0.75 to +0.92. The registration's never-together rule therefore treats them as near-twins; when both enter a model, \u00a74.6b reports the resulting wider errors.",
+ "rationale": "The original asks one parenthetical sentence to carry the measure's origin, construction, components, element count, correlation, and modeling rule. Breaking the construction from the dependence check makes the method auditable without dropping any specification."
+}

@@ -1,0 +1,12 @@
+{
+ "id": "g1-C7",
+ "scope": "g1",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a73.1 \u2014 \u201cWhen `Sp = 1` this collapses\u201d",
+ "current": "When `Sp = 1` this collapses to `\u03c4 = \u03c0/Se`. **`Se` is not estimated.** Since a\ndetector's sensitivity cannot exceed 1, `\u03c4 = \u03c0/Se \u2265 \u03c0`, so with `Sp = 1`\nmeasured (\u00a74.1) the observed flag rate is a conservative floor on true\nprevalence \u2014 every prevalence figure below is thus conservative with respect\nto machine text the detector misses. The floor carries one condition worth\nstating: specificity is measured on each chamber's pre-2022 record, and the\nstudy's own permeation finding says contemporary human speech is drifting\ntoward the register the detector keys on, so `Sp = 1` on 2025\u201326 human\nspeech is a transfer assumption, not a measurement. \u00a74.1 bounds what that\nassumption can cost \u2014 at most about 0.2 points on the harshest reading of\nthe audited hits \u2014 and the Limits state it.",
+ "proposed": "When `Sp = 1`, the expression reduces to `\u03c4 = \u03c0/Se`. **`Se` is not estimated.** Because detector sensitivity cannot exceed 1, `\u03c4 = \u03c0/Se \u2265 \u03c0`; under the specificity measured in \u00a74.1, the observed flag rate is therefore a conservative floor on true prevalence with respect to machine text the detector misses.\n\nThat conclusion requires a transfer assumption. Specificity is measured on each chamber's pre-2022 record, while the permeation result shows contemporary human speech drifting toward the register on which the detector relies. Thus, `Sp = 1` for human speech in 2025\u201326 is assumed rather than measured. Section 4.1 bounds the cost of that assumption at no more than about 0.2 points under the harshest reading of the audited hits; the Limits return to it.",
+ "rationale": "The current paragraph states the caveat only after a categorical claim that every estimate is conservative. Moving the transfer condition into its own paragraph preserves the lower-bound argument while making its scope immediately clear."
+}

@@ -1,0 +1,12 @@
+{
+ "id": "g2-C4",
+ "scope": "g2",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "structural",
+ "action": "move",
+ "locus": "\u00a74.3 \"Extraction is paragraph-level throughout, so no genre loses\"",
+ "current": "\u00a74.3, closing paragraph beginning \"Extraction is paragraph-level throughout, so no genre loses whole speeches to the length cap\" \u2014 the argument that differential retention is natural utterance length and biases the Oral Questions cell upward.",
+ "proposed": "move to immediately after the paragraph ending \"\u2026the true rate for genuine exchange is lower \u2014 possibly zero.\"",
+ "rationale": "This paragraph completes the upward-bias argument about the Oral Questions cell and currently sits after an unrelated caveat about uncontrolled tribute register; moving it makes the bias argument contiguous and leaves the subsection ending on its strongest honest caveat."
+}

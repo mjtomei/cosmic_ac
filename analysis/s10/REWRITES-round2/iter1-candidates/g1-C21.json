@@ -1,0 +1,12 @@
+{
+ "id": "g1-C21",
+ "scope": "g1",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "structural",
+ "action": "split",
+ "locus": "Abstract \u2014 \"The register, however, **predates the models by decades**.\"",
+ "current": "## Abstract \u2014 single ~330-word paragraph running from \"We measure machine-drafted speech across 22 legislative chambers...\" through \"...that machine intelligence exposes rather than creates.\"",
+ "proposed": "split after \"...detection is better used to measure a norm than as a security control.\" so that the abstract runs as two paragraphs, the second beginning \"The register, however, **predates the models by decades**.\"",
+ "rationale": "The abstract has two halves \u2014 the prevalence result and the register's history \u2014 and the paper itself says the second is its centre of gravity. A paragraph break makes the structure visible at a glance without touching a word or a number."
+}

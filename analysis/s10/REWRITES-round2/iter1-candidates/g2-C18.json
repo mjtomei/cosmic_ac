@@ -1,0 +1,12 @@
+{
+ "id": "g2-C18",
+ "scope": "g2",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74 intro \u2014 \u201cTwo instruments, run separately, carry the results.\u201d",
+ "current": "Two instruments, run separately, carry the results. *Pangram* is a\ncommercial AI-text detector, scored segment by segment and calibrated\nagainst each chamber's own pre-2022 record; it answers the prevalence\nquestion. The *register instrument* is a fixed list of machine-overused\nvocabulary \u2014 Kobak's excess-vocabulary style words \u2014 counted against each\nchamber's own placebo-matched counterfactual; it is detector-independent,\ntransparent, and cheap enough to run across three decades, and it carries\nthe historical and social results. Construction, calibration and estimators\nare specified in Materials and Methods; every number reproduces from a\ncommitted script.",
+ "proposed": "Two instruments carry distinct parts of the analysis. *Pangram* is a\ncommercial AI-text detector, scored segment by segment and calibrated\nagainst each chamber's own pre-2022 record; it estimates current prevalence.\nThe *register instrument* counts a fixed list of machine-overused vocabulary\n\u2014 Kobak's excess-vocabulary style words \u2014 against each chamber's own\nplacebo-matched counterfactual. Because it is detector-independent,\ntransparent and cheap enough to run across three decades, it carries the\nhistorical and social analyses. Materials and Methods specifies both\ninstruments, their calibration and the estimators; committed scripts\nreproduce every reported number.",
+ "rationale": "This version states the division of labor between the instruments immediately and replaces the vague phrase \u201ccarries the results\u201d with the questions each instrument answers. It preserves the reproducibility statement without making it the paragraph's emphasis."
+}

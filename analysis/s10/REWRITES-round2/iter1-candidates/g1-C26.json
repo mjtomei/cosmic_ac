@@ -1,0 +1,12 @@
+{
+ "id": "g1-C26",
+ "scope": "g1",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a73.5 \"Named here because a reader needs to know what was tried\"",
+ "current": "Named here because a reader needs to know what was tried and dropped, not to\npad an appendix:",
+ "proposed": "The instruments that were tried and dropped, and the reason in each case:",
+ "rationale": "\"not to pad an appendix\" argues with an imagined critic rather than informing the reader. Plain statement of what the table contains is stronger and shorter."
+}

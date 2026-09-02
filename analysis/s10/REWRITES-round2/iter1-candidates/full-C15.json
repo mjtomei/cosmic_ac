@@ -1,0 +1,12 @@
+{
+ "id": "full-C15",
+ "scope": "full",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.10 \u201cand, later in the same paragraph\u201d",
+ "current": "(and, later in the same paragraph, replace the Rice sentence with:) Rice 2026's Australian-Hansard ~8% is deliberately *not* a row in this table, though the numeric coincidence invites it: that figure is a false-*positive* rate on 50 pre-ChatGPT speeches, measured on an LLM judge rather than on Pangram (\u00a75) \u2014 a column of false-negative rates is no place for it.",
+ "proposed": "Rice 2026's Australian-Hansard ~8% is deliberately *not* a row in this table, though the numeric coincidence invites comparison: that figure is a false-*positive* rate on 50 pre-ChatGPT speeches, measured on an LLM judge rather than on Pangram (\u00a75), whereas every row in the table reports a false-negative rate.",
+ "rationale": "The current sentence contains a production instruction inside the manuscript. The replacement converts it into reader-facing prose while preserving every datum and the reason for exclusion."
+}

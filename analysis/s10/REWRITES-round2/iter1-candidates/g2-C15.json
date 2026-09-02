@@ -1,0 +1,12 @@
+{
+ "id": "g2-C15",
+ "scope": "g2",
+ "member": "grok-4.6",
+ "family": "xai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "4.3: The ordering is exactly what the",
+ "current": "The ordering is exactly what the mechanism predicts \u2014 the more preparable the\nformat, the more machine drafting \u2014 and it is the one place where the lexicon\narm's inference is confirmed by an independent instrument. Two instruments\nagreeing is worth more than either alone.",
+ "proposed": "The ordering is exactly what the mechanism predicts \u2014 the more preparable the format, the more machine drafting \u2014 and it is the one place where the lexicon arm's inference is confirmed by an independent instrument.",
+ "rationale": "House voice: the last sentence is self-congratulation. The clause it repeats \u2014 that this is the one place the lexicon arm is independently confirmed \u2014 already stands."
+}

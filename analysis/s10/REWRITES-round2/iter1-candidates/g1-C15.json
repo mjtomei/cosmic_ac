@@ -1,0 +1,12 @@
+{
+ "id": "g1-C15",
+ "scope": "g1",
+ "member": "grok-4.6",
+ "family": "xai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a71: \"The pattern of findings opens more fields\"",
+ "current": "The pattern of findings opens more fields than it closes: machine-drafted speech in deliberative bodies, its prevalence now measurable and its impacts and biases barely touched; class and register markers in legislatures, for which the occupational measure above is a beginning; and the large-scale study of registers in open speech records generally \u2014 of which this paper is itself a demonstration. One of those impacts can now be named precisely: the register the models were tuned to speak is, on our measurement, the register of the insulated organisational middle \u2014 a weak effect, but a first quantitative trace of what Brynjolfsson calls the Turing trap: the worry that human-imitating AI is developed to substitute for workers rather than augment them. We do not advance that reading; we note that it now has a measurable form, and a template for the oversight measurements it calls for.",
+ "proposed": "The pattern of findings opens more fields than it closes: machine-drafted speech in deliberative bodies, its prevalence now measurable and its impacts and biases barely touched; class and register markers in legislatures, for which the occupational measure above is a beginning; and the large-scale study of registers in open speech records generally \u2014 of which this paper is itself a demonstration. One of those impacts can now be named precisely: post-training elevates the same marker vocabulary that, among humans, peaks at the insulated organisational middle \u2014 a shared word-list rate, not a shared mix, and a weak effect, but a first quantitative trace of what Brynjolfsson calls the Turing trap: the worry that human-imitating AI is developed to substitute for workers rather than augment them. We do not advance that reading; we note that it now has a measurable form, and a template for the oversight measurements it calls for.",
+ "rationale": "'Is the register of' reads as a mix-level identity the paper's own word-mix results reject. The rate-level conjunction \u2014 post-training installs the marker rate; that rate peaks at the insulated middle \u2014 is what the measurement supports, and the hedges already in the sentence stay."
+}

@@ -1,0 +1,12 @@
+{
+ "id": "g2-C11",
+ "scope": "g2",
+ "member": "grok-4.6",
+ "family": "xai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "4.2: Every figure below is the share",
+ "current": "Every figure below is the share of *what was said* that is machine-drafted,\nover the whole of the record Pangram will read.",
+ "proposed": "Every estimate that follows is the share of *what was said* that is machine-drafted, over the whole of the record Pangram will read.",
+ "rationale": "\"Figure\" collides with the plot that sits in this subsection. The estimand sentence is defining the numbers, so say so. No datum changed."
+}

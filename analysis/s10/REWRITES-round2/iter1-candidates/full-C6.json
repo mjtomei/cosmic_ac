@@ -1,0 +1,12 @@
+{
+ "id": "full-C6",
+ "scope": "full",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.3, \"| genre, 2025\u201326 | flagged words | 95% CI |\"",
+ "current": "| genre, 2025\u201326 | flagged words | 95% CI |\n|---|---|---|\n| **SO31** \u2014 one-minute scripted set-pieces | **32.3%** | [21.5, 44.1] |\n| Government Orders \u2014 mixed prepared and spontaneous | 19.9% | [10.5, 30.5] |\n| **Oral Questions** \u2014 not on notice | **9.8%** | [2.2, 19.1] |\n| all three pre-AI controls (0/180) | **0.0%** | [0.0, 2.1] |",
+ "proposed": "| genre | window | machine-drafted share of words | 95% CI |\n|---|---|---|---|\n| **SO31** \u2014 one-minute scripted set-pieces | 2025\u201326 | **32.3%** | [21.5, 44.1] |\n| Government Orders \u2014 mixed prepared and spontaneous | 2025\u201326 | 19.9% | [10.5, 30.5] |\n| **Oral Questions** \u2014 not on notice | 2025\u201326 | **9.8%** | [2.2, 19.1] |\n| all three genres, pre-AI controls (0/180) | pre-AI | **0.0%** | [0.0, 2.1] |",
+ "rationale": "The column head \"flagged words\" names a count while the cells hold word shares, and the head pins the column to 2025\u201326 while its last row is a pre-AI control \u2014 one column carrying two windows. Splitting the window into its own column keeps the estimand column homogeneous and names the unit."
+}

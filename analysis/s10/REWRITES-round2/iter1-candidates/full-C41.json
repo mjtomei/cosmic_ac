@@ -1,0 +1,12 @@
+{
+ "id": "full-C41",
+ "scope": "full",
+ "member": "grok-4.6",
+ "family": "xai",
+ "type": "structural",
+ "action": "merge",
+ "locus": "\u00a74.5c The register signal fires in every",
+ "current": "### 4.5c The register signal fires in every chamber, and it is not formality\nOne-paragraph confirmation that the register is elevated in level in every confirmatory chamber (Fisher p \u2248 1.3\u00d710\u207b\u2078\u00b3) and is not a relabelling of formality.",
+ "proposed": "Merge into the end of \u00a74.5a, after the paragraph that begins 'Exported machine text does not account for the rest.' Keep the present opening as a bold lead-in ('The climb has a floor') rather than a subsection heading. Companion edit: drop the \u00a74.5c number and retarget the \u00a74.5c cross-reference (if any) to \u00a74.5a.",
+ "rationale": "One unit, one point: \u00a74.5a already closes on 'not a common shift but chambers converging on a level the United States already held.' The floor-in-level and not-formality checks are the same cross-chamber picture, not a new claim, and a one-paragraph subsection is a heading without a section."
+}

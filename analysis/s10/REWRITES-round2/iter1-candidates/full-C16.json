@@ -1,0 +1,12 @@
+{
+ "id": "full-C16",
+ "scope": "full",
+ "member": "sol",
+ "family": "openai",
+ "type": "structural",
+ "action": "move",
+ "locus": "\u00a74.10 \u201cWhich texts evade is exploratory\u201d",
+ "current": "**Which texts evade is exploratory and stays out of the register above.** Are\nborderline originals \u2014 those the detector was least sure about \u2014 the evadable\nones?",
+ "proposed": "Move this paragraph and the following paragraph beginning \u201c**The label and the score disagree at the boundary**\u201d to Appendix E, after \u00a7E.1.",
+ "rationale": "These are sensitivity and interface-stability checks, not part of the main evasion estimate. Relocating them keeps \u00a74.10 focused on the threat model, attack rates, and quality result while preserving the exploratory negatives."
+}

@@ -1,0 +1,12 @@
+{
+ "id": "g1-C16",
+ "scope": "g1",
+ "member": "grok-4.6",
+ "family": "xai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a72: \"Twenty-two chambers across five countries\"",
+ "current": "Twenty-two chambers across five countries, extracted from official Hansard and\nthe Congressional Record (the prevalence arm covers 20 of them \u2014 New Brunswick\nwas the pilot and has no uniform prevalence sample, and Tasmania is\nregime-flagged and excluded; the covariate arms use all 22):",
+ "proposed": "Twenty-two chambers across five countries, extracted from official Hansard and\nthe Congressional Record (the prevalence arm covers 20 of them \u2014 New Brunswick\nwas the pilot and has no uniform prevalence sample, and Tasmania is\nregime-flagged and excluded; the detector is calibrated on 21 chambers' own\npre-2022 records, 1,260/1,260; the covariate arms use all 22):",
+ "rationale": "The parenthetical already lists prevalence and covariate coverage and omits calibration, which is the arm whose 1,260/1,260 the abstract and introduction cite. Putting the 21-chamber control there makes the roster match \u00a73.1 without changing any count."
+}

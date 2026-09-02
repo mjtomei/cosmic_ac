@@ -1,0 +1,12 @@
+{
+ "id": "full-C7",
+ "scope": "full",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.5a, \"| | mean | sd | vs US House |\"",
+ "current": "| | mean | sd | vs US House |\n|---|---|---|---|\n| CA provinces | 2,054 | 61 | **+155 (+1.28 sd)** |\n| Ireland | 1,901 | 52 | +2 (+0.02 sd) |\n| **US House** | **1,899** | **121** | \u2014 |\n| AUS states | 1,861 | 36 | \u221239 (\u22120.32 sd) |\n| CA federal | 1,816 | 134 | \u221284 (\u22120.69 sd) |\n| US Senate | 1,591 | 60 | \u2212309 (\u22122.55 sd) |\n| UK Commons | 1,415 | 61 | \u2212484 (\u22124.00 sd) |",
+ "proposed": "| group | mean, per 100k | sd | vs US House, per 100k | vs US House, in US House sd |\n|---|---|---|---|---|\n| CA provinces | 2,054 | 61 | **+155** | **+1.28** |\n| Ireland | 1,901 | 52 | +2 | +0.02 |\n| **US House** | **1,899** | **121** | \u2014 | \u2014 |\n| AUS states | 1,861 | 36 | \u221239 | \u22120.32 |\n| CA federal | 1,816 | 134 | \u221284 | \u22120.69 |\n| US Senate | 1,591 | 60 | \u2212309 | \u22122.55 |\n| UK Commons | 1,415 | 61 | \u2212484 | \u22124.00 |",
+ "rationale": "One column currently holds two estimands \u2014 a raw gap and a standardised one \u2014 and the standardising denominator is unnamed, which invites the reader to divide by each row's own sd (61 for CA provinces would give +2.54, not +1.28). Splitting the columns, labelling the units, and naming the first column costs nothing and changes no value."
+}

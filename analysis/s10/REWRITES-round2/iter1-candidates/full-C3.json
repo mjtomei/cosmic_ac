@@ -1,0 +1,12 @@
+{
+ "id": "full-C3",
+ "scope": "full",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.9, \"That exclusion conditions on something the treatment moves\"",
+ "current": "That exclusion conditions on something the treatment moves, so the two claims\nare stated separately. **Applicability itself collapses at\nhigh screen scores**: respect_demands is applicable for 61.4% of segments\nscoring <10, 63.0% at 10\u201349, and **31.1%** at \u226550; respect_counterargs runs\n50.8% / 51.2% / **28.9%** (n = 498/297/45[^s-appband]). So the engagement null below means *engages no worse when there is something to",
+ "proposed": "That exclusion conditions on something the treatment moves, so the two claims\nare stated separately. **Applicability itself collapses at high screen\nscores** \u2014 the share of segments on which each sentinel dimension can be\nscored at all, by band of the blinded screen score:[^s-appband]\n\n| screen score | segments | respect_demands applicable | respect_counterargs applicable |\n|---|---|---|---|\n| < 10 | 498 | 61.4% | 50.8% |\n| 10\u201349 | 297 | 63.0% | 51.2% |\n| **\u2265 50** | **45** | **31.1%** | **28.9%** |\n\nSo the engagement null below means *engages no worse when there is something to",
+ "rationale": "Six rates keyed to three bands by slash-list, with the three n's collected at the end, forces the reader to re-pair values by counting position; a 3\u00d72 table makes the collapse in the top band readable at a glance (right form for the comparison; a small table beats prose here). All eight numbers are carried unchanged."
+}

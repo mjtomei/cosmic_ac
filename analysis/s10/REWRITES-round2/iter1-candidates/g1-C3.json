@@ -1,0 +1,12 @@
+{
+ "id": "g1-C3",
+ "scope": "g1",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a71 Introduction \u2014 \u201cThe question we came with gets its answer\u201d",
+ "current": "The question we came with gets its answer: at least 9.0% of words in current legislative speech are machine-drafted \u2014 a floor, because directed effort evades the detector \u2014 with a fourfold spread across chambers, a concentration in scripted genres, and no quality penalty: against a deliberation rubric, flagged speech is better-formed and no less engaged, in the cross-chamber arm and in controlled model continuations alike.",
+ "proposed": "The question we came with gets its answer: at least 9.0% of words in current legislative speech are machine-drafted. This is a floor because directed effort evades the detector. Prevalence varies fourfold across chambers and concentrates in scripted genres. It carries no quality penalty: against a deliberation rubric, flagged speech is better-formed and no less engaged, both in the cross-chamber arm and in controlled model continuations.",
+ "rationale": "The original makes four principal results subordinate to one colon-heavy sentence. Short declarative sentences give each result appropriate weight without changing any finding."
+}

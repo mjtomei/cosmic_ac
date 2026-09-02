@@ -1,0 +1,12 @@
+{
+ "id": "g2-C16",
+ "scope": "g2",
+ "member": "grok-4.6",
+ "family": "xai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "4.4: A blinded LLM screen over the",
+ "current": "A blinded LLM screen over the full corpus (37,801 segments, date-blind)\nseparates Pangram's classes cleanly on the 618-segment overlap:\n\n| Pangram verdict | n | mean Opus score |\n|---|---|---|\n| AI | 78 | 50.9 |\n| Mixed | 26 | 44.8 |\n| Human | 514 | **11.9** |\n\nThe deployed screen \u2014 the run over all 37,801 segments \u2014 separates Pangram's\nAI and human classes at **AUC 0.954** [0.934, 0.971] on the 618-segment\noverlap, and it is a cheap stratifier for future work.[^r44dep] The pool is a\ncase-control mixture whose human class is drawn partly from pre-2023 text,\nwhich is *provably* pre-LLM and therefore the cleanest available negative;\nrestricting the negatives to 2023-and-later contemporary speech only *lowers*\nthe AUC, to **0.940** [0.915, 0.961]. Contemporary human speech is the harder\nclass to separate \u2014 as the permeation finding (\u00a74.7) predicts \u2014 so the era mix is not\nflattering the screen.",
+ "proposed": "A blinded LLM screen, run date-blind over the full corpus (37,801 segments), separates Pangram's AI and human classes at **AUC 0.954** [0.934, 0.971] on the 618-segment overlap, and it is a cheap stratifier for future work.[^r44dep]\n\n| Pangram verdict | n | mean Opus score |\n|---|---|---|\n| AI | 78 | 50.9 |\n| Mixed | 26 | 44.8 |\n| Human | 514 | **11.9** |\n\nThe pool is a case-control mixture whose human class is drawn partly from pre-2023 text, which is *provably* pre-LLM and therefore the cleanest available negative; restricting the negatives to 2023-and-later contemporary speech only *lowers* the AUC, to **0.940** [0.915, 0.961]. Contemporary human speech is the harder class to separate \u2014 as the permeation finding (\u00a74.7) predicts \u2014 so the era mix is not flattering the screen.",
+ "rationale": "Findings-first and old-before-new: the subsection currently opens on a qualitative \"cleanly\" and restates the 37,801-segment run before giving the AUC, which is the result. Lead with 0.954; keep the class-mean table as the scores that produce it. The duplicate \"deployed screen\" sentence is folded in, not dropped as a claim \u2014 every n, mean, and interval is retained."
+}

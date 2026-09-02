@@ -1,0 +1,12 @@
+{
+ "id": "g1-C13",
+ "scope": "g1",
+ "member": "grok-4.6",
+ "family": "xai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a71: \"Yet a 22-chamber policy scan finds\"",
+ "current": "With the release of ChatGPT in November 2022, fluent drafting became free to\nevery legislative office at once. What that did to the record matters in a way\nit does not for most text: a floor speech is the official act of\nrepresentation, consulted by constituents, journalists and historians, and it\nenters the record under the member's own name. Yet a 22-chamber policy scan\nfinds no chamber requiring machine drafting to be disclosed and none\nforbidding it \u2014 the record is silent exactly where the change is happening.",
+ "proposed": "With the release of ChatGPT in November 2022, fluent drafting became free to\nevery legislative office at once. What that did to the record matters in a way\nit does not for most text: a floor speech is the official act of\nrepresentation, consulted by constituents, journalists and historians, and it\nenters the record under the member's own name. Yet a 22-chamber policy scan\nfinds no chamber requiring machine drafting to be disclosed and none\nforbidding it, anywhere the scan could see.",
+ "rationale": "The scan finding is the body's own topline and should stay unhedged as a report of what was found. The gloss 'the record is silent exactly where the change is happening' asserts silence as fact in four chambers the scan itself flags as partial coverage."
+}

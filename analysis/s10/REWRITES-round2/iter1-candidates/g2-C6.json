@@ -1,0 +1,12 @@
+{
+ "id": "g2-C6",
+ "scope": "g2",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.4 \"**Reasoning effort buys nothing here, and that is worth stating\"",
+ "current": "**Reasoning effort buys nothing here, and that is worth stating rather than\nhiding.** The screen was tuned and validated at `effort=low`, and low had\nnever been compared against anything. Re-run on the 241-segment labelled pool\nwith the prompt and batching held byte-identical (all AUCs against Pangram 4):",
+ "proposed": "**Reasoning effort buys nothing here.** The screen was tuned and validated at\n`effort=low`, and low had never been compared against anything. Re-run on the\n241-segment labelled pool with the prompt and batching held byte-identical (all\nAUCs against Pangram 4):",
+ "rationale": "\"worth stating rather than hiding\" credits the authors for reporting a null instead of stating it; the plain claim is stronger, and the paragraph three lines below already makes the methodological point about why the null is readable."
+}

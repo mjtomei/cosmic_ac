@@ -1,0 +1,12 @@
+{
+ "id": "g2-C23",
+ "scope": "g2",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.3 \u2014 \u201cThe ordering is exactly what the mechanism predicts\u201d",
+ "current": "The ordering is exactly what the mechanism predicts \u2014 the more preparable the\nformat, the more machine drafting \u2014 and it is the one place where the lexicon\narm's inference is confirmed by an independent instrument. Two instruments\nagreeing is worth more than either alone.",
+ "proposed": "The ordering matches the proposed mechanism: machine drafting rises with the\nadvance preparation that a format permits. It also independently confirms the\nsame genre pattern found by the lexicon instrument, so the result does not\ndepend on either instrument alone.",
+ "rationale": "This keeps the triangulation claim while replacing the conversational and imprecise \u201cworth more\u201d formulation with the specific inferential benefit of agreement between instruments."
+}

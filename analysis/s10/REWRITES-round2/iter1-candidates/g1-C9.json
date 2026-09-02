@@ -1,0 +1,12 @@
+{
+ "id": "g1-C9",
+ "scope": "g1",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a73.3 \u2014 \u201cThis belongs in methods rather than an appendix\u201d",
+ "current": "This belongs in methods rather than an appendix, because it explains the\nframing of \u00a74.5.\n\nThe Kobak et al. excess-vocabulary approach (arXiv:2406.07016; *Sci Adv*\n11(27):eadt3813, 2025) compares observed word frequencies against a\ncounterfactual built from prior years. Applied naively to Hansard it produces\na large, confident-looking post-2022 signal.\n\n**It has no trend control.** An in-time placebo[^s-placebo] runs the identical estimator on *pre-LLM* window pairs, where the true effect is zero by construction. It fires there too. An estimator that reports a large effect on a period when nothing happened is measuring drift, not treatment.\n\n[^s-placebo]: `in_time_placebo.py`.\n\nThe arm is therefore reported as a **descriptive series**, not as evidence of\nLLM causation. This is what makes the 1994\u201396 onset (\u00a74.5) interesting rather\nthan embarrassing: the register was already moving decades before the\nmachines.",
+ "proposed": "The Kobak et al. excess-vocabulary approach (arXiv:2406.07016; *Sci Adv* 11(27):eadt3813, 2025) compares observed word frequencies with a counterfactual built from prior years. Applied without a trend control to Hansard, it produces a large, confident-looking post-2022 signal.\n\nAn in-time placebo[^s-placebo] applies the identical estimator to *pre-LLM* window pairs, where the true effect is zero by construction. The estimator fires there too, showing that it measures drift rather than treatment. We therefore report the frequency arm as a **descriptive series**, not as evidence of LLM causation. Its 1994\u201396 onset (\u00a74.5) establishes that the register was already moving decades before the machines.\n\n[^s-placebo]: `in_time_placebo.py`.",
+ "rationale": "The original opens with an editorial defense of section placement and ends by calling the result potentially \u201cembarrassing.\u201d The revision leads with the estimator, placebo, and inferential consequence in that order."
+}

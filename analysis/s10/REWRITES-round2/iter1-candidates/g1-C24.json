@@ -1,0 +1,12 @@
+{
+ "id": "g1-C24",
+ "scope": "g1",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a72 \"Twenty-two chambers across five countries, extracted from official\"",
+ "current": "Twenty-two chambers across five countries, extracted from official Hansard and\nthe Congressional Record (the prevalence arm covers 20 of them \u2014 New Brunswick\nwas the pilot and has no uniform prevalence sample, and Tasmania is\nregime-flagged and excluded; the covariate arms use all 22):",
+ "proposed": "Twenty-two chambers across five countries, extracted from official Hansard\nand the Congressional Record. The covariate arms use all 22. The prevalence\narm covers 20: New Brunswick was the pilot and has no uniform prevalence\nsample, and Tasmania's transcription regime shifted mid-corpus, which leaves\nit with no usable control (\u00a72.1).",
+ "rationale": "A three-clause parenthesis carries the corpus's most consequential exclusions, and \"regime-flagged\" is opaque on first encounter \u2014 the reason only arrives a page later. Promoting the exclusions to plain sentences and naming the reason in-line costs nothing and pre-empts the obvious reader question. Dependency: the sentence no longer ends in a colon, so the table that follows needs an introductory line such as a plain \"Chambers:\" or none at all if the table is left to stand on its own heading row."
+}

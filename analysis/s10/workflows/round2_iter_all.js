@@ -122,6 +122,37 @@ const packGroups = (headings, totalLines) => {
 // single-seat result would pass everything.
 const RESUME = (args && args.resume_from) || null
 
+// RESUME AT FAITHFULNESS. args.resume_proposals is a list of manifest files
+// listing proposals that were made but never judged — iteration 1 lost four
+// scopes to a usage limit after the proposers had done their work, and the
+// propose stage is by far the most expensive one to repeat. Each manifest row
+// carries only what selection needs plus a `path`; the change's full text lives
+// in its own small file, because 111 changes is 240KB and every agent needs
+// exactly one of them.
+const RESUME_PROPOSALS = (args && args.resume_proposals) || null
+
+const CANDIDATE_SCHEMA = {
+  type: 'object',
+  properties: {
+    candidates: {
+      type: 'array',
+      items: {
+        type: 'object',
+        properties: {
+          id: { type: 'string' }, scope: { type: 'string' },
+          type: { type: 'string', description: 'prose or structural' },
+          action: { type: 'string' }, locus: { type: 'string' },
+          current_key: { type: 'string' }, member: { type: 'string' },
+          family: { type: 'string' },
+          path: { type: 'string', description: 'file holding this change in full' },
+        },
+        required: ['id', 'scope', 'type', 'action', 'locus', 'path'],
+      },
+    },
+  },
+  required: ['candidates'],
+}
+
 const LOAD_SCHEMA = {
   type: 'object',
   properties: {
@@ -153,7 +184,7 @@ const LOAD_SCHEMA = {
 phase('Scope')
 let SCOPES = (args && args.scopes) || null
 let SCOPE_INDEX = null
-if (!SCOPES && !RESUME) {
+if (!SCOPES && !RESUME && !RESUME_PROPOSALS) {
   SCOPE_INDEX = await agent(SCOPE_PROMPT, { label: 'scope:index', phase: 'Scope',
                                             model: WORKER_MODEL, schema: SCOPE_SCHEMA })
   if (!SCOPE_INDEX || !SCOPE_INDEX.total_lines) throw new Error('scope index failed; cannot tile the draft')
@@ -298,14 +329,22 @@ was not found. You MAY revise interpretation, framing, and emphasis — that
 is what a rewrite legitimately improves, and voters weigh it. If a passage
 is already good, do not propose a change — silence is a valid answer.`
 
-const VOTE_PROSE = (c) => `ROLE: VOTE (prose change), authorship removed.
-
-CURRENT (§${c.locus}):
+// A resumed candidate's text is in its own file rather than inline. Everything
+// else about judging it is unchanged, so the prompts differ only in where the
+// change comes from.
+const changeBody = (c, curLabel, propLabel) => c.path
+  ? `The change is recorded at \`${c.path}\` — read it. The record holds the locus,
+the ${curLabel} text, the ${propLabel}, and the rationale.`
+  : `${curLabel} (§${c.locus}):
 ${c.current}
 
-PROPOSED rewrite:
+${propLabel}:
 ${c.proposed}
-RATIONALE: ${c.rationale}
+RATIONALE: ${c.rationale}`
+
+const VOTE_PROSE = (c) => `ROLE: VOTE (prose change), authorship removed.
+
+${changeBody(c, 'CURRENT', 'PROPOSED rewrite')}
 
 Return an object:
 - data_faithful: "pass" | "fail" — FAIL only if it alters the DATA (a number,
@@ -325,12 +364,7 @@ Return an object:
 
 const VOTE_STRUCTURAL = (c) => `ROLE: VOTE (structural change), authorship removed.
 
-CURRENT PLACEMENT (§${c.locus}):
-${c.current}
-
-PROPOSED MOVE (${c.action}):
-${c.proposed}
-RATIONALE: ${c.rationale}
+${changeBody(c, 'CURRENT PLACEMENT', 'PROPOSED MOVE (' + c.action + ')')}
 
 Return an object:
 - data_faithful: "pass" | "fail" — FAIL only if the move would require
@@ -367,11 +401,7 @@ Manuscript file: \`${DRAFT}\`. Open it and find the passage at the locus below.
 Verify against the TRUE manuscript text in the file, not the CURRENT text shown.
 
 LOCUS: §${c.locus}
-CURRENT (as supplied by the proposer — verify it matches the file):
-${c.current}
-
-PROPOSED:
-${c.proposed}
+${changeBody(c, 'CURRENT (as supplied by the proposer — verify it matches the manuscript)', 'PROPOSED')}
 
 Return { locatable, current_matches, data_faithful: "pass"|"fail", note }.
 
@@ -427,14 +457,17 @@ const FAITH_SCHEMA = { type: 'object',
 // concurrently; the workflow's own concurrency cap (min(16, cpus-2)) throttles
 // the fan-out, which is what a shell-level job limiter failed to do.
 
-const runScope = async (sc) => {
+// `preset` re-enters the pipeline at Faithfulness with proposals that were made
+// in an earlier run but never judged. Everything downstream — the data gate, the
+// ballot, selection — is the same code; only the proposing is skipped.
+const runScope = async (sc, preset) => {
   const { id, scope } = sc
-  const variants = variantsFor(scope)
+  const variants = preset ? [] : variantsFor(scope)
   const SEATS = PANEL
   const jobs = []
   for (const m of SEATS) for (const v of variants) jobs.push({ m, v })
 
-  const raw = await parallel(jobs.map(({ m, v }) => () =>
+  const raw = preset ? [] : await parallel(jobs.map(({ m, v }) => () =>
     agent(PROPOSE_PROMPT(v.id, sc),
           { agentType: m.type, model: m.model, label: `propose:${id}:${m.id}:${v.id}`, phase: 'Propose',
             schema: PROPOSAL_SCHEMA, ...(m.effort ? { effort: m.effort } : {}) })
@@ -456,9 +489,14 @@ const runScope = async (sc) => {
     byKey[k].author_seats.add(c.member)
     byKey[k].author_families.add(c.family)
   }
-  const candidates = Object.values(byKey).map((c, i) =>
-    ({ ...c, id: `${id}-C${i + 1}`, author_seats: [...c.author_seats], author_families: [...c.author_families] }))
-  log(`${id}: ${proposals.length} proposals -> ${candidates.length} candidates`)
+  const candidates = preset
+    ? preset.map(c => ({ ...c, current: c.current_key, support: 1,
+                         author_seats: [c.member], author_families: [c.family] }))
+    : Object.values(byKey).map((c, i) =>
+        ({ ...c, id: `${id}-C${i + 1}`, author_seats: [...c.author_seats], author_families: [...c.author_families] }))
+  log(preset
+    ? `${id}: ${candidates.length} candidates resumed from saved proposals — judging from Faithfulness`
+    : `${id}: ${proposals.length} proposals -> ${candidates.length} candidates`)
 
   const faiths = await parallel(candidates.map(c => () =>
     agent(FAITH_PROMPT(c), { agentType: 'check-faithfulness', model: FAITH_MODEL, label: `faith:${c.id}`,
@@ -579,11 +617,38 @@ file's scope id. Do not summarise, judge, or omit entries.`,
         verdict: { accepted: c.accepted, keeps: c.keeps, n: c.n, composite: c.composite } })) }))
     .catch(e => { log(`load failed for ${path}: ${String(e).slice(0, 120)}`); return null })))
 
+const loadCandidates = async () => parallel(RESUME_PROPOSALS.map(path => () =>
+  agent(`ROLE: LOAD CANDIDATE MANIFEST. Mechanical, no judgment.
+Read the manifest at \`${path}\` and report every row in it.
+
+Each row describes one proposal that was made but never judged. Report all of
+its fields: id, scope, type, action, locus, current_key, member, family, and
+path. Copy them; do not summarise, judge, reword, or omit any row — an omitted
+row is a proposal silently dropped from the whole run.`,
+        { model: WORKER_MODEL, phase: 'Propose', label: `manifest:${path.split('/').pop()}`,
+          schema: CANDIDATE_SCHEMA })
+    .then(r => r && r.candidates && r.candidates.length
+      ? { scope_id: r.candidates[0].scope, source: path, candidates: r.candidates }
+      : null)
+    .catch(e => { log(`manifest load failed for ${path}: ${String(e).slice(0, 120)}`); return null })))
+
 phase('Propose')
 log(RESUME
   ? `iteration ${ITER}: resuming from ${RESUME.length} saved scope result(s) — no proposing, straight to Select`
+  : RESUME_PROPOSALS
+  ? `iteration ${ITER}: resuming ${RESUME_PROPOSALS.length} manifest(s) of unjudged proposals — re-entering at Faithfulness with ${PANEL.length} seats`
   : `iteration ${ITER}, phase ${PHASE}: ${SCOPES.length} scope(s), ${PANEL.length} seats — ${PANEL.map(m => `${m.id}=${m.model}`).join(', ')}`)
-const perScope = RESUME ? await loadSaved() : await parallel(SCOPES.map(s => () => runScope(s)))
+let perScope
+if (RESUME) {
+  perScope = await loadSaved()
+} else if (RESUME_PROPOSALS) {
+  const loaded = (await loadCandidates()).filter(Boolean)
+  log(`resumed ${loaded.reduce((n, g) => n + g.candidates.length, 0)} unjudged proposal(s) across ${loaded.length} scope(s)`)
+  perScope = await parallel(loaded.map(g => () =>
+    runScope({ id: g.scope_id, scope: g.scope_id }, g.candidates)))
+} else {
+  perScope = await parallel(SCOPES.map(s => () => runScope(s)))
+}
 if (RESUME) {
   const thin = perScope.filter(Boolean).filter(r => (r.seats_max || 0) < 2)
   for (const r of thin)
@@ -658,16 +723,25 @@ if (APPLY_OFF || (!selection.prose.length && !selection.structural.length)) {
 // id, a truncated passage key, the verdict. The full text stays in the saved
 // result file, so the applier is pointed at the file and the winning ids rather
 // than handed text the workflow never loaded.
-const payloadFor = (items, fields) => RESUME
-  ? 'Each is recorded in a saved result file, listed below as\n' +
-    '  <file>  <id in that file>  (<locus>)\n\n' +
-    'Take each one\'s text verbatim from its own file. Candidate ids are only\n' +
-    'unique within a file — C2 exists in every one of them — so never match an id\n' +
-    'without also matching the file it is listed against. Ignore every other entry\n' +
-    'in those files: selection has already happened.\n\n' +
-    items.map(c => '  ' + c.source + '  ' + String(c.id).split('/').pop() +
-                   '  (' + c.locus + ')').join('\n')
-  : JSON.stringify(items.map(fields), null, 1)
+const payloadFor = (items, fields) => {
+  // Whether the applier is handed text or pointed at files depends on the
+  // candidates, not on which resume flag was set: a resumed candidate's text
+  // lives on disk and was never loaded, so there is nothing to inline.
+  const fileOf = (c) => c.path || c.source
+  if (!items.length || !items.every(fileOf)) return JSON.stringify(items.map(fields), null, 1)
+  const single = items.every(c => c.path)     // one change per file
+  return 'Each is recorded in a file, listed below as\n' +
+    (single ? '  <file>  (<locus>)\n\nEach file holds exactly one change: its locus, the\n' +
+              'text to replace, the replacement, and the rationale.\n\n'
+            : '  <file>  <id in that file>  (<locus>)\n\n' +
+              'Take each one\'s text verbatim from its own file. Candidate ids are only\n' +
+              'unique within a file — C2 exists in every one of them — so never match an id\n' +
+              'without also matching the file it is listed against. Ignore every other entry\n' +
+              'in those files: selection has already happened.\n\n') +
+    items.map(c => single
+      ? '  ' + fileOf(c) + '  (' + c.locus + ')'
+      : '  ' + fileOf(c) + '  ' + String(c.id).split('/').pop() + '  (' + c.locus + ')').join('\n')
+}
 
 // ============================== APPLY ======================================
 // Sequential by necessity. Prose applies by exact match on verbatim `current`

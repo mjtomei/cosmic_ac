@@ -1,0 +1,12 @@
+{
+ "id": "full-C5",
+ "scope": "full",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.2, \"| chamber | rate | 95% CI | | chamber | rate | 95% CI |\"",
+ "current": "| chamber | rate | 95% CI | | chamber | rate | 95% CI |\n|---|---|---|---|---|---|---|\n| NSW | **19.8%** | [13.1, 26.9] | | IE | 7.5% | [3.5, 12.3] |\n| CA-FED | 18.5% | [12.6, 24.6] | | VIC | 7.3% | [3.5, 11.7] |\n| QLD | 15.8% | [9.9, 21.9] | | SA | 6.8% | [2.9, 11.4] |\n| BC | 14.2% | [8.3, 20.4] | | WA | 4.9% | [1.3, 9.1] |\n| MB | 13.1% | [7.9, 18.8] | | WAL | 4.9% | [1.6, 8.9] |\n| NI | 13.1% | [8.0, 18.6] | | SK | 4.1% | [1.3, 7.5] |\n| **US House** | **12.1%** | [7.0, 17.7] | | SCO | 3.9% | [1.0, 7.4] |\n| ON | 11.1% | [6.1, 16.8] | | NL | 3.3% | [0.8, 6.6] |\n| NS | 10.0% | [5.5, 15.1] | | UK | 2.5% | [0.7, 4.8] |\n| AB | 7.8% | [3.9, 12.3] | | **US Senate** | **1.8%** | [0.1, 4.1] |",
+ "proposed": "| chamber | machine-drafted share of 2025\u201326 words | 95% CI |\n|---|---|---|\n| NSW | **19.8%** | [13.1, 26.9] |\n| CA-FED | 18.5% | [12.6, 24.6] |\n| QLD | 15.8% | [9.9, 21.9] |\n| BC | 14.2% | [8.3, 20.4] |\n| MB | 13.1% | [7.9, 18.8] |\n| NI | 13.1% | [8.0, 18.6] |\n| **US House** | **12.1%** | [7.0, 17.7] |\n| ON | 11.1% | [6.1, 16.8] |\n| NS | 10.0% | [5.5, 15.1] |\n| AB | 7.8% | [3.9, 12.3] |\n| IE | 7.5% | [3.5, 12.3] |\n| VIC | 7.3% | [3.5, 11.7] |\n| SA | 6.8% | [2.9, 11.4] |\n| WA | 4.9% | [1.3, 9.1] |\n| WAL | 4.9% | [1.6, 8.9] |\n| SK | 4.1% | [1.3, 7.5] |\n| SCO | 3.9% | [1.0, 7.4] |\n| NL | 3.3% | [0.8, 6.6] |\n| UK | 2.5% | [0.7, 4.8] |\n| **US Senate** | **1.8%** | [0.1, 4.1] |",
+ "rationale": "The rows are sorted by rate, but the two-block layout breaks the ranking in the middle and makes the reader jump columns to continue it \u2014 the ordering is the encoding, so it should run down one column; \"rate\" is also replaced by the estimand the section defines. Same twenty values, same order, same intervals."
+}

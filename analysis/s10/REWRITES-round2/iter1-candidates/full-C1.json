@@ -1,0 +1,12 @@
+{
+ "id": "full-C1",
+ "scope": "full",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.10, \"(and, later in the same paragraph, replace the Rice sentence with:)\"",
+ "current": "(and, later in the same paragraph, replace the Rice sentence with:) Rice 2026's Australian-Hansard ~8% is deliberately *not* a row in this table, though the numeric coincidence invites it: that figure is a false-*positive* rate on 50 pre-ChatGPT speeches, measured on an LLM judge rather than on Pangram (\u00a75) \u2014 a column of false-negative rates is no place for it.",
+ "proposed": "Rice 2026's Australian-Hansard ~8% is deliberately *not* a row in this table, though the numeric coincidence invites it: that figure is a false-*positive* rate on 50 pre-ChatGPT speeches, measured on an LLM judge rather than on Pangram (\u00a75) \u2014 a column of false-negative rates is no place for it.",
+ "rationale": "The editorial instruction \"(and, later in the same paragraph, replace the Rice sentence with:)\" is a note about how to edit the text, not text; stripping it leaves a correct table note. No mixed estimands in one column is the principle the note itself enforces \u2014 every row of that table is a false-negative rate, so a false-positive rate stays out."
+}

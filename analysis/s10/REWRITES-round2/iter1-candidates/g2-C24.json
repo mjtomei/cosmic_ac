@@ -1,0 +1,12 @@
+{
+ "id": "g2-C24",
+ "scope": "g2",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.3 \u2014 \u201cThis makes the Oral Questions rate\u201d",
+ "current": "This makes the Oral Questions rate a **mislabelled row rather than a wrong one** \u2014 9.8% word-weighted in the table, 8.3% on segments. It is not an estimate of Question Period; it is an estimate of long-tail business carrying the QP heading, and the true rate for genuine exchange is lower \u2014 possibly zero.",
+ "proposed": "The Oral Questions row is therefore **mislabelled rather than incorrectly\ncalculated**: 9.8% word-weighted in the table and 8.3% on segments. It estimates\nlong-tail business carrying the QP heading, not Question Period exchange. The\naudit indicates that the rate for genuine exchange is lower and remains\nconsistent with zero, but this filtered sample does not estimate it directly.",
+ "rationale": "The rewrite separates correct calculation from incorrect population labeling and avoids presenting \u201cpossibly zero\u201d as an estimate. It preserves both rates and the observed direction while stating the sampling limit directly."
+}

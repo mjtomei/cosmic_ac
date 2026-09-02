@@ -1,0 +1,12 @@
+{
+ "id": "full-C35",
+ "scope": "full",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.6c, \"A composition check[^s-vec]: normalising each member's style-word vector\"",
+ "current": "A composition check[^s-vec]: normalising each member's style-word vector to its own\n\n[^s-vec]: `vector_analysis.py`; methodology and full results in\n    `VECTOR-ANALYSIS.md`.\n\nsum and z-scoring across 1,356 members, there are no prior-free clusters\n(silhouettes fall monotonically in k; PC1 carries 71% of variance), and class,\neducation and cohort correlate with the mix at |r| \u2264 0.20 \u2014 **the standing\neffects above are about how much register a member uses, not which words**.",
+ "proposed": "A composition check normalises each member's style-word vector to its own sum\nand z-scores it across 1,356 members.[^s-vec] No prior-free clusters emerge\n(silhouettes fall monotonically in k; PC1 carries 71% of variance), and class,\neducation and cohort correlate with the mix at |r| \u2264 0.20 \u2014 **the standing\neffects above are about how much register a member uses, not which words**.\n\n[^s-vec]: `vector_analysis.py`; methodology and full results in\n    `VECTOR-ANALYSIS.md`.",
+ "rationale": "Three defects in one sentence: the footnote block splits it mid-clause, the opening is a verbless fragment, and \"normalising\u2026 there are no clusters\" dangles its participle. Locating the action in a verb with the check as subject fixes all three."
+}

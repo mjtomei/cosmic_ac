@@ -1,0 +1,12 @@
+{
+ "id": "g1-C19",
+ "scope": "g1",
+ "member": "grok-4.6",
+ "family": "xai",
+ "type": "structural",
+ "action": "move",
+ "locus": "\u00a73.5: \"Instruments retired, and why\"",
+ "current": "### 3.5 Instruments retired, and why \u2014 table of five dropped instruments (zero-shot detectors, corpus-wide likelihood delta, frequency-weighted secondary, content-word control, Mistral synthetic sensitivity corpus).",
+ "proposed": "move to after \u00a73.2 (Detector, and a defect worth recording); renumber \u00a73.5 \u2192 \u00a73.3, current \u00a73.3 \u2192 \u00a73.4, current \u00a73.4 \u2192 \u00a73.5",
+ "rationale": "Retired detectors and the frequency-weighted secondary sit next to the detector they failed against and immediately before the frequency-arm demotion they motivate. Occupation is the odd section out in the present order and becomes the close."
+}

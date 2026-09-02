@@ -1,0 +1,12 @@
+{
+ "id": "full-C13",
+ "scope": "full",
+ "member": "sol",
+ "family": "openai",
+ "type": "structural",
+ "action": "move",
+ "locus": "\u00a74.6c \u201cChase and flight: an exploratory interpretation\u201d",
+ "current": "### 4.6c Chase and flight: an exploratory interpretation of the social gradients\n\n#### The shape has a name \u2014 held now as hypothesis, not finding",
+ "proposed": "Move the whole subsection to \u00a77, immediately before \u00a77.5 \u201cThe measure against the market's measure.\u201d",
+ "rationale": "The subsection explicitly labels itself an exploratory interpretation and develops a sociolinguistic mechanism rather than reporting the core estimates. Moving it to Discussion restores the Results/interpretation boundary and makes \u00a74 proceed from covariates to permeation without a long theoretical interruption."
+}

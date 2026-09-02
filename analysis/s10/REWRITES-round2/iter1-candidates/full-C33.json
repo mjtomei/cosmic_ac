@@ -1,0 +1,12 @@
+{
+ "id": "full-C33",
+ "scope": "full",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.2, \"*Weighted by words, because a segment is not a natural unit\"",
+ "current": "*Weighted by words, because a segment is not a natural unit \u2014 and because the\nalternative would suppress the rate.* The segmenter[^s-seg] packs speaker\nturns into windows of at most 360 words, so a long speech becomes three segments and a\n\n[^s-seg]: `segment.py`.\n\nshort interjection becomes one. A rate over segments is partly a measurement of\nour packer; a rate over words is invariant to how the text was cut up.",
+ "proposed": "*Weighted by words, because a segment is not a natural unit \u2014 and because the\nalternative would suppress the rate.* The segmenter packs speaker turns into\nwindows of at most 360 words, so a long speech becomes three segments and a\nshort interjection becomes one.[^s-seg] A rate over segments is partly a\nmeasurement of our packer; a rate over words is invariant to how the text was\ncut up.\n\n[^s-seg]: `segment.py`.",
+ "rationale": "The footnote definition is currently spliced into the middle of a sentence, between \"and a\" and \"short interjection\" \u2014 the reader loses the clause across a block interruption. Moving the marker to the sentence's close and the definition below the paragraph restores subject\u2013verb\u2013object continuity and leaves the stress position on \"becomes one.\""
+}

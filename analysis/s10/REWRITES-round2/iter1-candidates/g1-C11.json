@@ -1,0 +1,12 @@
+{
+ "id": "g1-C11",
+ "scope": "g1",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a73.5 \u2014 \u201cNamed here because a reader needs to know\u201d",
+ "current": "Named here because a reader needs to know what was tried and dropped, not to\npad an appendix:",
+ "proposed": "Five candidate instruments were tested and retired:",
+ "rationale": "The existing sentence defensively justifies inclusion. The replacement states the table's function directly and gives the reader an immediate count."
+}

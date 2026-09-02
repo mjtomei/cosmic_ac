@@ -1,0 +1,12 @@
+{
+ "id": "g2-C3",
+ "scope": "g2",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "structural",
+ "action": "reorder",
+ "locus": "\u00a74.3 \"The ordering is exactly what the mechanism predicts\"",
+ "current": "\u00a74.3, paragraph beginning \"The ordering is exactly what the mechanism predicts \u2014 the more preparable the format, the more machine drafting\" \u2014 the interpretive claim that the ladder confirms the lexicon arm, currently placed before the Cochran\u2013Armitage trend test paragraph that establishes the ladder statistically.",
+ "proposed": "move to after the paragraph ending \"\u2026not any single step between neighbours, that the data establish.\"",
+ "rationale": "Evidence before interpretation: the trend test is what licenses the claim that the ordering is real, so the interpretation should follow it rather than precede it and then be re-argued."
+}

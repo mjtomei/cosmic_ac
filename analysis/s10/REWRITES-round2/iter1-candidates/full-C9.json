@@ -1,0 +1,12 @@
+{
+ "id": "full-C9",
+ "scope": "full",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.6c, \"| quintile of article length | CA provinces | AU + UK-devolved | national |\"",
+ "current": "| quintile of article length | CA provinces | AU + UK-devolved | national |\n|---|---|---|---|\n| Q1 (least written about) | +0.00 | **+0.11** | \u22120.15 |\n| Q2 | \u22120.13 | +0.01 | \u22120.02 |\n| Q3 | \u22120.17 | +0.04 | **+0.15** |\n| Q4 | \u22120.27 | +0.01 | +0.10 |\n| Q5 (most written about) | **\u22120.40** | **\u22120.17** | \u22120.06 |",
+ "proposed": "| quintile of article length | CA provinces | AU + UK-devolved | national chambers |\n|---|---|---|---|\n| Q1 (least written about) | +0.00 | **+0.11** | \u22120.15 |\n| Q2 | \u22120.13 | +0.01 | \u22120.02 |\n| Q3 | \u22120.17 | +0.04 | **+0.15** |\n| Q4 | \u22120.27 | +0.01 | +0.10 |\n| Q5 (most written about) | **\u22120.40** | **\u22120.17** | \u22120.06 |\n| *members* | *1,286* | *2,257* | *3,353* |\n\nCells are mean within-chamber register z; standard errors run \u00b10.026\u20130.027 per\nbucket.",
+ "rationale": "Three group means are compared with no group sizes and no error scale shown, so the reader cannot tell that the weakly-reproducing middle column rests on 2,257 members or that the bucket differences clear their standard errors. The n's and the \u00b10.026\u20130.027 are already reported for the identical cells in Appendix E.3; nothing is recomputed."
+}

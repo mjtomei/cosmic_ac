@@ -1,0 +1,12 @@
+{
+ "id": "g2-C21",
+ "scope": "g2",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.2 \u2014 \u201cPooled 9.03% of words\u201d",
+ "current": "**Pooled 9.03% of words [8.00%, 10.08%]** \u2014 65,795 machine-written words of\n728,998 across 3,519 segments in 20 chambers, excluding regime-flagged TAS (a\ntranscription-convention shift caught by \u00a72.1's diagnostic).\nThe estimate is population-level throughout: it describes the corpus, not\nany individual speech or speaker \u2014 a segment verdict is an instrument\nreading, not an attribution. Nor is the window one regime: split by year at\nthe same estimand, **2025 runs 7.36% [6.13%, 8.62%] and 2026 runs 11.70%\n[9.86%, 13.67%]** \u2014 the scalar is the average of a still-rising series, not\na steady state, and comparisons against it should say which year they\nmean.[^ryearsplit] The interval is robust to the clustering unit: the 2,340\nlong-band segments come from 1,089 chamber-speaker clusters, and resampling\nspeakers instead of segments moves the pooled interval imperceptibly\n(design effect 1.23).[^ryearsplit]",
+ "proposed": "Across the pooled corpus, an estimated **9.03% of words [8.00%, 10.08%]**\nwere machine-written: 65,795 of 728,998 words across 3,519 segments in 20\nchambers, excluding regime-flagged TAS, where \u00a72.1's diagnostic identified a\ntranscription-convention shift. This is a population estimate for the corpus,\nnot an attribution to any speech or speaker; each segment verdict is an\ninstrument reading. The pooled value also averages a rising series rather\nthan a steady state. At the same estimand, **2025 runs 7.36% [6.13%, 8.62%]\nand 2026 runs 11.70% [9.86%, 13.67%]**, so comparisons should specify the\nyear.[^ryearsplit] The interval is robust to the clustering unit: the 2,340\nlong-band segments come from 1,089 chamber-speaker clusters, and resampling\nspeakers rather than segments changes the pooled interval imperceptibly\n(design effect 1.23).[^ryearsplit]",
+ "rationale": "This is a findings-first rewrite: it converts the opening fragment into a complete result, then separates estimand, time trend and robustness. It preserves all quantities and the warning against speaker-level attribution."
+}

@@ -1,0 +1,12 @@
+{
+ "id": "g2-C22",
+ "scope": "g2",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.2 \u2014 \u201cThe spread is the finding, not noise\u201d",
+ "current": "The spread is the finding, not noise around a mean. A random-effects fit\nacross the twenty chambers (logit-scale \u03c4 = 0.56, I\u00b2 = 0.78 \u2014 78% of the\nobserved between-chamber variance is true heterogeneity, not sampling\nnoise) puts the chambers' rates at **4.3% to 18.3%, a better-than-fourfold\nrange**, after every chamber is pulled toward the pool in proportion to\nits own noise. The per-chamber table reports the raw estimates; the\nshrunken range is the honest spread claim, since the extremes of twenty\nnoisy cells overstate their own separation (the raw-extremes version is\nretired to Appendix B). What drives a chamber's position is not\nestablished here \u2014 even two chambers of one legislature can sit far apart\n(Appendix C item 7), and the study does not attribute the between-chamber differences to\nany measured cause.",
+ "proposed": "Between-chamber variation is a result, not merely noise around the pooled\nmean. In a random-effects fit across the twenty chambers, logit-scale \u03c4 =\n0.56 and I\u00b2 = 0.78, attributing 78% of the observed between-chamber variance\nto heterogeneity rather than sampling noise. After each estimate is shrunk\ntoward the pool in proportion to its uncertainty, chamber rates span **4.3%\nto 18.3%, a better-than-fourfold range**. The table reports raw estimates;\nthe shrunken range supports the spread claim without treating the noisiest\nextremes among twenty cells as exact (the raw-extremes version is in Appendix\nB). The analysis does not establish what drives a chamber's position or\nattribute the differences to any measured cause. Even the two chambers of one\nlegislature can sit far apart (Appendix C item 7).",
+ "rationale": "The revision replaces \u201ctrue heterogeneity\u201d and \u201chonest spread\u201d with standard random-effects language and makes the distinction between raw and shrunken estimates easier to follow. It keeps the causal limit prominent and all statistics unchanged."
+}

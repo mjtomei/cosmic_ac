@@ -1,0 +1,12 @@
+{
+ "id": "g2-C5",
+ "scope": "g2",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.4 \"The deployed screen \u2014 the run over all 37,801 segments\"",
+ "current": "The deployed screen \u2014 the run over all 37,801 segments \u2014 separates Pangram's\nAI and human classes at **AUC 0.954** [0.934, 0.971] on the 618-segment\noverlap, and it is a cheap stratifier for future work.[^r44dep] The pool is a\ncase-control mixture whose human class is drawn partly from pre-2023 text,\nwhich is *provably* pre-LLM and therefore the cleanest available negative;\nrestricting the negatives to 2023-and-later contemporary speech only *lowers*\nthe AUC, to **0.940** [0.915, 0.961]. Contemporary human speech is the harder\nclass to separate \u2014 as the permeation finding (\u00a74.7) predicts \u2014 so the era mix is not\nflattering the screen.",
+ "proposed": "On that overlap the deployed run separates Pangram's AI and human classes at\n**AUC 0.954** [0.934, 0.971], which makes the screen a cheap stratifier for\nfuture work.[^r44dep] The pool is a case-control mixture whose human class is\ndrawn partly from pre-2023 text, which is *provably* pre-LLM and therefore the\ncleanest available negative; restricting the negatives to 2023-and-later\ncontemporary speech only *lowers* the AUC, to **0.940** [0.915, 0.961].\nContemporary human speech is the harder class to separate \u2014 as the permeation\nfinding (\u00a74.7) predicts \u2014 so the era mix is not flattering the screen.",
+ "rationale": "The sentence immediately above already establishes the full-corpus run (37,801 segments) and the 618-segment overlap; repeating both two lines later slows the paragraph without adding anything. All figures preserved."
+}

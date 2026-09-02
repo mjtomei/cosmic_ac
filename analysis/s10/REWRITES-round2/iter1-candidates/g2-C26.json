@@ -1,0 +1,12 @@
+{
+ "id": "g2-C26",
+ "scope": "g2",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.4 \u2014 \u201cThis also cuts against the pattern\u201d",
+ "current": "This also cuts against the pattern in the open models, measured on the same\npool: effort moved Qwen3-32B by **+0.172** and gpt-oss-120b by **+0.015**,\nagainst **\u22120.007** for Opus. Reasoning closes part of the gap for weak\ndetectors and does nothing for a strong one \u2014 and the sharper point is that\nthe frontier model is not reasoning its way to 0.95; it is recognising\nsomething at a glance. Practically, the screen can be run for about **4\u00d7 fewer reasoning\ntokens (~2\u00d7 all-in)** with no loss \u2014 a saving observed in the run logs rather than recorded in the committed AUC artifacts.[^s-effort]",
+ "proposed": "The same-pool open-model results differ: effort moved Qwen3-32B by **+0.172**\nand gpt-oss-120b by **+0.015**, against **\u22120.007** for Opus. In this comparison,\nadditional reasoning closes part of the discrimination gap for Qwen3-32B,\nchanges gpt-oss-120b only slightly and does not improve Opus. Opus reaches its\napproximately 0.95 AUC at low effort rather than reasoning its way there at\nmaximum effort. Practically, the screen can use about **4\u00d7 fewer reasoning\ntokens (~2\u00d7 all-in)** with no detectable loss. That saving appears in the run\nlogs but is not recorded in the committed AUC artifacts.[^s-effort]",
+ "rationale": "The current text generalizes from three models to weak and strong detectors and describes low-effort classification as recognition \u201cat a glance.\u201d The rewrite confines interpretation to the measured systems, preserves every effect and cost figure, and matches \u201cno loss\u201d to the experiment's resolution."
+}

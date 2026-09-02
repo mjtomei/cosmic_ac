@@ -1,0 +1,12 @@
+{
+ "id": "full-C31",
+ "scope": "full",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a77.1, \"Point a general-purpose model at its own output\"",
+ "current": "Point a general-purpose model at its own output, tell it to try again, and it will beat any check it can score against. This is not a claim about Pangram, and it is not a defeat theorem for fixed checks: it is the supportable form \u2014 a check whose output, or a correlated proxy for it, the attacker can query is an optimisation target, and the attacker carries a quality constraint it can itself satisfy. The 22.5% in \u00a74.10 is a lower bound on that adversary class, measured at its weakest member.",
+ "proposed": "Point a general-purpose model at its own output, tell it to try again, and it will beat any check it can score against. This is not a claim about Pangram, and it is not a defeat theorem for fixed checks. The supportable form is narrower: a check becomes an optimisation target as soon as the attacker can query its output, or a proxy correlated with it, and the attacker can satisfy the quality constraint itself. The 22.5% in \u00a74.10 is a lower bound on that adversary class, measured at its weakest member.",
+ "rationale": "\"a check whose output, or a correlated proxy for it, the attacker can query is an optimisation target\" puts fifteen words between subject and verb and garden-paths the reader (subject\u2013verb proximity). Splitting the scoping disclaimer from the positive statement also gives each sentence one job."
+}

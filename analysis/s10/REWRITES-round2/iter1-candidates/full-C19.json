@@ -1,0 +1,12 @@
+{
+ "id": "full-C19",
+ "scope": "full",
+ "member": "sol",
+ "family": "openai",
+ "type": "structural",
+ "action": "move",
+ "locus": "\u00a77.6 \u201cMeasuring the human contribution\u201d",
+ "current": "### 7.6 Measuring the human contribution against an automated counterpart\n\nThe most promising direction, and the least developed. Generate what a fully automated system would produce given the same task and context; the human contribution is the residual.",
+ "proposed": "Move the whole subsection to Appendix C \u2014 Future work, as a new opening item under \u201cA. The measurement this study does not make.\u201d",
+ "rationale": "The subsection is explicitly undeveloped and proposes a future measurement that the study did not run. Moving it out of Discussion prevents the manuscript from ending on a speculative education-and-assessment program unrelated to the reported legislative evidence."
+}

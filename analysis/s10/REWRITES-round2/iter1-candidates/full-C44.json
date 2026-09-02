@@ -1,0 +1,12 @@
+{
+ "id": "full-C44",
+ "scope": "full",
+ "member": "grok-4.6",
+ "family": "xai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a71 The question we came with gets",
+ "current": "The question we came with gets its answer: at least 9.0% of words in current legislative speech are machine-drafted \u2014 a floor, because directed effort evades the detector \u2014 with a fourfold spread across chambers, a concentration in scripted genres, and no quality penalty: against a deliberation rubric, flagged speech is better-formed and no less engaged, in the cross-chamber arm and in controlled model continuations alike.",
+ "proposed": "The question we came with gets its answer. At least 9.0% of words in current legislative speech are machine-drafted \u2014 a floor, because directed effort evades the detector. The share spreads fourfold across chambers and concentrates in scripted genres, with no quality penalty: against a deliberation rubric, flagged speech is better-formed and no less engaged, in the cross-chamber arm and in controlled model continuations alike.",
+ "rationale": "The stress position (principle 3): the original is one sentence whose syntactic closure lands on 'controlled model continuations alike,' so the 9.0% floor and the quality result never receive end-weight. Three sentences give each claim its own closure \u2014 the floor, then the spread-and-quality package \u2014 without adding or dropping a datum."
+}

@@ -1,0 +1,12 @@
+{
+ "id": "full-C17",
+ "scope": "full",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a75 \u201cPosition first: this study differs\u201d",
+ "current": "Position first: this study differs from the prior work by scale (22\nchambers against the next parliamentary study's two), by triangulation (a\ncalibrated commercial detector crossed with a detector-independent\nregister), and by time depth (a thirty-year baseline against the field's\npost-2020 windows). The 9.0% floor itself lands where the population-level\nliterature already points for professional prose \u2014 6.5\u201317.5% (Liang et al.,\nGray) \u2014 which we read as corroboration, not coincidence.",
+ "proposed": "This study extends prior work in three dimensions: scale (22 chambers against the next parliamentary study's two), triangulation (a calibrated commercial detector crossed with a detector-independent register), and time depth (a thirty-year baseline against the field's post-2020 windows). Its 9.0% floor also falls within the 6.5\u201317.5% range reported by population-level studies of professional prose (Liang et al.; Gray), providing external corroboration for the prevalence estimate.",
+ "rationale": "\u201cPosition first\u201d and \u201cnot coincidence\u201d sound like notes from an argument plan. The revision states the comparison directly and keeps the contribution grounded in prior work."
+}

@@ -1,0 +1,12 @@
+{
+ "id": "full-C56",
+ "scope": "full",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a75 \u201cPosition first: this study differs from the prior\u201d",
+ "current": "Position first: this study differs from the prior work by scale (22\nchambers against the next parliamentary study's two), by triangulation (a\ncalibrated commercial detector crossed with a detector-independent\nregister), and by time depth (a thirty-year baseline against the field's\npost-2020 windows). The 9.0% floor itself lands where the population-level\nliterature already points for professional prose \u2014 6.5\u201317.5% (Liang et al.,\nGray) \u2014 which we read as corroboration, not coincidence.",
+ "proposed": "This study extends prior work along three dimensions: scale (22 chambers against the next parliamentary study's two), triangulation (a calibrated commercial detector crossed with a detector-independent register), and time depth (a thirty-year baseline against the field's post-2020 windows). Its 9.0% floor also falls within the 6.5\u201317.5% range that population-level studies report for professional prose (Liang et al., Gray), providing external corroboration.",
+ "rationale": "\u201cPosition first\u201d is a note about rhetorical process rather than the subject of the paragraph. The rewrite applies \u201clocate the action in the verb, the agent in the subject\u201d by making the study the subject and \u201cextends\u201d the verb, then reserves the stress position for external corroboration."
+}

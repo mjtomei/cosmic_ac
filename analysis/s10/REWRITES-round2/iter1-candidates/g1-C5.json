@@ -1,0 +1,12 @@
+{
+ "id": "g1-C5",
+ "scope": "g1",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a72.1 \u2014 \u201cFindings, and they cut against the received story\u201d",
+ "current": "Findings, and they cut against the received story:",
+ "proposed": "The check produced three findings:",
+ "rationale": "The existing transition is fragmentary and frames the result against an unspecified \u201creceived story.\u201d The replacement moves directly to the evidence."
+}

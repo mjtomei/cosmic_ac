@@ -1,0 +1,12 @@
+{
+ "id": "full-C14",
+ "scope": "full",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.10 \u201cThe detector is not weak\u201d",
+ "current": "That is the finding. The detector is not weak \u2014 its specificity is 0 in 1,260\n(\u00a74.1), and a single \"make this sound human\" prompt makes text *more*\ndetectable, not less. But the gap between a purpose-built evasion product and\na frontier model told to try again is an order of magnitude in the frontier\nmodel's favour, and it will not narrow in the detector's direction.",
+ "proposed": "That is the finding. The detector is not weak \u2014 it produced 0 false positives in 1,260 pre-2022 controls (\u00a74.1), and a single \u201cmake this sound human\u201d prompt makes text *more* detectable, not less. Yet in this comparison, the gap between a purpose-built evasion product and a frontier model told to try again is an order of magnitude in the frontier model's favour. The experiment establishes that gap under the tested attacks; it does not estimate how either side will improve.",
+ "rationale": "The current last clause turns a measured comparison into an unsupported forecast. The replacement keeps every result and states the empirical boundary plainly."
+}

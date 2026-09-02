@@ -1,0 +1,12 @@
+{
+ "id": "g1-C27",
+ "scope": "g1",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a73.4 \"**The folk ladder** (the measure's primary form\"",
+ "current": "**The folk ladder** (the measure's primary form \u2014 named for its origin:\nit starts from the folk image of a corporate hierarchy, the ladder as\neveryday speech has it, and asks machine coders to concretize that\nstereotype into measurable elements). Eighteen blind coding passes\nnominated, multi-label, the elements that mark the **free / bottom /\nmiddle / top** of a corporate hierarchy; elements nominated by more than\none coder form the consensus signature \u2014 85 elements: 11 free, 13 bottom,\n27 middle, 34 top, each with a consensus sign.",
+ "proposed": "**The folk ladder** is the measure's primary form. It is named for its\norigin: it starts from the folk image of a corporate hierarchy \u2014 the ladder\nas everyday speech has it \u2014 and asks machine coders to concretize that\nstereotype into measurable elements. Eighteen blind coding passes nominated,\nmulti-label, the elements that mark the **free / bottom / middle / top** of a\ncorporate hierarchy; elements nominated by more than one coder form the\nconsensus signature \u2014 85 elements: 11 free, 13 bottom, 27 middle, 34 top,\neach with a consensus sign.",
+ "rationale": "The construction's name and rationale are currently buried in a parenthesis that has no main verb, so the reader meets a sentence fragment before the method. Same words, promoted to declarative sentences."
+}

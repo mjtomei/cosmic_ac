@@ -1,0 +1,12 @@
+{
+ "id": "g1-C20",
+ "scope": "g1",
+ "member": "grok-4.6",
+ "family": "xai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a73.5: \"Named here because a reader needs\"",
+ "current": "Named here because a reader needs to know what was tried and dropped, not to\npad an appendix:",
+ "proposed": "Five instruments were tried and dropped:",
+ "rationale": "The heading already says what the table is. The lead-in explains why the subsection exists, which the reader did not ask."
+}

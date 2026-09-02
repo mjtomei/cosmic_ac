@@ -1,0 +1,12 @@
+{
+ "id": "full-C11",
+ "scope": "full",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a73.3 \u201cThis belongs in methods rather than an appendix\u201d",
+ "current": "This belongs in methods rather than an appendix, because it explains the\nframing of \u00a74.5.",
+ "proposed": "The frequency arm is descriptive rather than inferential because its central identifying assumption fails an in-time placebo.",
+ "rationale": "Replace an editorial note about where text belongs with the substantive methodological claim. The revised opening also gives the subsection a direct argument."
+}

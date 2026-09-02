@@ -1,0 +1,12 @@
+{
+ "id": "full-C45",
+ "scope": "full",
+ "member": "grok-4.6",
+ "family": "xai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.2 Pooled 9.03% of words [8.00%,",
+ "current": "**Pooled 9.03% of words [8.00%, 10.08%]** \u2014 65,795 machine-written words of\n728,998 across 3,519 segments in 20 chambers, excluding regime-flagged TAS (a\ntranscription-convention shift caught by \u00a72.1's diagnostic).\nThe estimate is population-level throughout: it describes the corpus, not\nany individual speech or speaker \u2014 a segment verdict is an instrument\nreading, not an attribution. Nor is the window one regime: split by year at\nthe same estimand, **2025 runs 7.36% [6.13%, 8.62%] and 2026 runs 11.70%\n[9.86%, 13.67%]** \u2014 the scalar is the average of a still-rising series, not\na steady state, and comparisons against it should say which year they\nmean.[^ryearsplit] The interval is robust to the clustering unit: the 2,340\nlong-band segments come from 1,089 chamber-speaker clusters, and resampling\nspeakers instead of segments moves the pooled interval imperceptibly\n(design effect 1.23).[^ryearsplit]",
+ "proposed": "**Pooled 9.03% of words [8.00%, 10.08%]** \u2014 65,795 machine-written words of\n728,998 across 3,519 segments in 20 chambers, excluding regime-flagged TAS (a\ntranscription-convention shift caught by \u00a72.1's diagnostic).\nThe estimate is population-level throughout: it describes the corpus, not\nany individual speech or speaker \u2014 a segment verdict is an instrument\nreading, not an attribution.\n\nThe window is not one regime. Split by year at the same estimand, the rate\nrises from **7.36% [6.13%, 8.62%] in 2025 to 11.70% [9.86%, 13.67%] in 2026**\n\u2014 the 9.03% scalar averages a still-rising series, not a steady state, and\ncomparisons against it should say which year they mean.[^ryearsplit]\n\nThe interval is robust to the clustering unit: the 2,340 long-band segments\ncome from 1,089 chamber-speaker clusters, and resampling speakers instead of\nsegments moves the pooled interval imperceptibly (design effect 1.23).[^ryearsplit]",
+ "rationale": "One unit, one point: the original paragraph asks one block to carry the pooled rate, the year split, and the clustering robustness. Splitting gives each job its own unit; putting 2026's 11.70% in the year-split sentence's stress position (principle 3) emphasises the rise the original buried between two dashes."
+}

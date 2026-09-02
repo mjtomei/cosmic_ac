@@ -1,0 +1,12 @@
+{
+ "id": "full-C38",
+ "scope": "full",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "structural",
+ "action": "split",
+ "locus": "\u00a74.5, \"**The ruler, audited \u2014 what the thirty-year rise is made of.**\"",
+ "current": "\u00a74.5 \u2014 the single paragraph beginning \"**The ruler, audited \u2014 what the thirty-year rise is made of.**\", which states the two objections, the concentration-in-ten-connectives result, the breadth result, the composition post-stratification, the Wikipedia cross-instrument check, the matched-donor result, and the closing honest summary.",
+ "proposed": "split after \"not a 407-word chorus.\" \u2014 the composition, cross-instrument and matched-donor checks plus the honest summary become a second paragraph.",
+ "rationale": "The unit currently makes two distinct points \u2014 what the rise is made of, and how robust it is to composition, instrument and matched controls \u2014 and runs long enough that the closing summary has to re-list them. Splitting gives each paragraph one point, and the second opens on \"The rise is not a composition artifact,\" which links back to the first paragraph's subject (old before new)."
+}

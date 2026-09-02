@@ -1,0 +1,12 @@
+{
+ "id": "full-C27",
+ "scope": "full",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.3 \u201c| genre, 2025\u201326 | flagged words |\u201d",
+ "current": "| genre, 2025\u201326 | flagged words | 95% CI |\n|---|---|---|\n| **SO31** \u2014 one-minute scripted set-pieces | **32.3%** | [21.5, 44.1] |\n| Government Orders \u2014 mixed prepared and spontaneous | 19.9% | [10.5, 30.5] |\n| **Oral Questions** \u2014 not on notice | **9.8%** | [2.2, 19.1] |\n| all three pre-AI controls (0/180) | **0.0%** | [0.0, 2.1] |",
+ "proposed": "| genre, 2025\u201326 | machine-drafted share of words | 95% CI |\n|---|---:|---:|\n| **SO31** \u2014 one-minute scripted set-pieces | **32.3%** | [21.5, 44.1] |\n| Government Orders \u2014 mixed prepared and spontaneous | 19.9% | [10.5, 30.5] |\n| **Oral Questions** \u2014 not on notice | **9.8%** | [2.2, 19.1] |\n| all three pre-AI controls (0/180) | **0.0%** | [0.0, 2.1] |",
+ "rationale": "\u201cFlagged words\u201d can be read as a count, while the cells are fraction-weighted percentages. Naming the estimand and unit in the header makes the ladder interpretable without relying on surrounding prose."
+}

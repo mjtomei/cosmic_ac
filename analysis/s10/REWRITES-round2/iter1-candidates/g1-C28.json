@@ -1,0 +1,12 @@
+{
+ "id": "g1-C28",
+ "scope": "g1",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a73.4 \"**The theoretical ladder** (the semi-independent check\"",
+ "current": "**The theoretical ladder** (the semi-independent check \u2014 named for the\nopposite origin: it is built from the registration's theory of\naccountability relations, composed rather than pictured). Three\nindependent blind coding workflows assigned elements to four\naccountability components",
+ "proposed": "**The theoretical ladder** is the semi-independent check, named for the\nopposite origin: it is built from the registration's theory of\naccountability relations, composed rather than pictured. Three independent\nblind coding workflows assigned elements to four accountability components",
+ "rationale": "Parallel fix to the folk-ladder paragraph: the two constructions should be introduced the same way, and neither should open with a verbless parenthesis."
+}

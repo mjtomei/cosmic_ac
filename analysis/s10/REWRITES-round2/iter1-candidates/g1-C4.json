@@ -1,0 +1,12 @@
+{
+ "id": "g1-C4",
+ "scope": "g1",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a72.1 \u2014 \u201cInvisible characters. Manitoba's 2025-26 files\u201d",
+ "current": "**Invisible characters.** Manitoba's 2025-26 files carry soft hyphens\n(U+00AD) in 81.6% of segments against 0.04% of tokens in 2006-19. Left in,\nthat is period-correlated noise a detector could latch onto with nothing to\ndo with drafting. Stripped at build time.",
+ "proposed": "**Invisible characters.** Manitoba's 2025-26 files carry soft hyphens (U+00AD) in 81.6% of segments, compared with 0.04% of tokens in 2006-19. Left intact, these characters would create period-correlated noise that a detector could mistake for evidence of drafting. We therefore stripped them at build time.",
+ "rationale": "The rewrite repairs the sentence fragment and makes the contamination mechanism and corrective action explicit while retaining both reported rates."
+}

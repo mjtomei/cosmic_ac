@@ -1,0 +1,12 @@
+{
+ "id": "full-C8",
+ "scope": "full",
+ "member": "opus-5-med",
+ "family": "anthropic",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a74.5a, \"| chamber | gap 2006 | gap 2026 | change | per year |\"",
+ "current": "| chamber | gap 2006 | gap 2026 | change | per year |\n|---|---|---|---|---|",
+ "proposed": "| chamber | gap 2006, per 100k words | gap 2026, per 100k words | change | per year |\n|---|---|---|---|---|",
+ "rationale": "The gap columns carry no units anywhere in the table; per-100k appears only in the figure caption and a footnote, so the table cannot be read on its own (state units). The companion edit is the same header fix on the 1994-endpoint table a few paragraphs below."
+}

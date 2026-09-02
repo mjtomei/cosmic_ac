@@ -1,0 +1,12 @@
+{
+ "id": "g2-C7",
+ "scope": "g2",
+ "member": "grok-4.6",
+ "family": "xai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "4 intro: Two instruments, run separately, carry",
+ "current": "Two instruments, run separately, carry the results. *Pangram* is a\ncommercial AI-text detector, scored segment by segment and calibrated\nagainst each chamber's own pre-2022 record; it answers the prevalence\nquestion. The *register instrument* is a fixed list of machine-overused\nvocabulary \u2014 Kobak's excess-vocabulary style words \u2014 counted against each\nchamber's own placebo-matched counterfactual; it is detector-independent,\ntransparent, and cheap enough to run across three decades, and it carries\nthe historical and social results. Construction, calibration and estimators\nare specified in Materials and Methods; every number reproduces from a\ncommitted script.",
+ "proposed": "Two instruments, run separately, carry the results. *Pangram* is a commercial AI-text detector, scored segment by segment and calibrated against each chamber's own pre-2022 record; it answers the prevalence question. The *register instrument* is a fixed list of machine-overused vocabulary \u2014 Kobak's excess-vocabulary style words \u2014 counted against each chamber's own placebo-matched counterfactual; it is detector-independent, transparent, and cheap enough to run across three decades, and it carries the historical and social results. Detector results come first: calibration, prevalence, the genre ladder, and a corroborating screen. The register's history and social structure occupy the rest of the section. Construction, calibration and estimators are specified in Materials and Methods; every number reproduces from a committed script.",
+ "rationale": "Context before interpretation (Gopen & Swan): the intro already names the two instruments but does not map the Results that follow, so the reader enters \u00a74.1 without a route. Two sentences of old-before-new, no data changed."
+}

@@ -1,0 +1,12 @@
+{
+ "id": "g1-C8",
+ "scope": "g1",
+ "member": "sol",
+ "family": "openai",
+ "type": "prose",
+ "action": "rewrite",
+ "locus": "\u00a73.2 \u2014 \u201cAll verdicts are Pangram 4\u201d",
+ "current": "All verdicts are **Pangram 4**. This is not a detail. The Pangram API's\ndefault model is **Pangram 3** (version 3.3.2), while the web dashboard runs\nPangram 4. On a 20-segment sample deliberately enriched for AI and Mixed, the\ntwo agreed on **11/20** \u2014 the default called Human on 3 of 8 web-AI segments\nand 5 of 6 web-Mixed, and never returned Mixed at all. Passing\n`model: \"pangram-4\"` gave **20/20 exact agreement including all six\nMixed**.[^s-route]",
+ "proposed": "All verdicts use **Pangram 4**. The Pangram API defaults to **Pangram 3** (version 3.3.2), while the web dashboard uses Pangram 4. In a 20-segment sample deliberately enriched for AI and Mixed verdicts, the default API and dashboard agreed on **11/20**: the default API labelled 3 of 8 dashboard-AI segments and 5 of 6 dashboard-Mixed segments Human, and it returned no Mixed verdicts. Passing `model: \"pangram-4\"` produced **20/20 exact agreement, including all six Mixed verdicts**.[^s-route]",
+ "rationale": "The replacement removes the admonitory aside and identifies each route at every comparison point, making a consequential implementation distinction easier to follow while retaining all validation counts."
+}
