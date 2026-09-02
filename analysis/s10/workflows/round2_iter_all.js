@@ -70,11 +70,13 @@ const SCOPE_SCHEMA = {
 const SCOPE_PROMPT = `ROLE: SCOPE INDEX. Mechanical indexing task, no judgment.
 Index \`${DRAFT}\` so the run can be split into section groups.
 
-Use Grep with a line-number output mode to find every line that begins with
-"## " or "### " (markdown headings at level 2 and 3). Report each one as its
-1-based line number, its level (2 or 3), and its heading text with the leading
-"#" characters and spaces stripped. Keep them in document order.
-Also report the file's total line count.
+Report every markdown heading at level 2 or 3 — every line beginning "## " or
+"### " — as its 1-based line number, its level (2 or 3), and its heading text
+with the leading "#" characters and spaces stripped, in document order. Also
+report the file's total line count.
+
+Search for them rather than reading the body; you need the headings and the
+line count, nothing else.
 
 Do not read the body text, do not summarize, do not omit any heading — an
 omitted heading silently drops that part of the paper from the whole run.`
@@ -223,14 +225,14 @@ const readingNote = (sc) => {
   const [a, b] = sc.lines
   const n = b - a + 1
   if (sc.scope === 'all') return `Read the whole manuscript at \`${DRAFT}\` — lines ${a}-${b}.
-Read it in ${Math.ceil(n / MAX_GROUP_LINES)} successive calls of ${MAX_GROUP_LINES} lines: offset=${a}, then
-offset=${a + MAX_GROUP_LINES}, and so on until you reach line ${b}. Cover all of it — do not
-stop after the first chunk.`
+It is too long to take in at once — about ${MAX_GROUP_LINES} lines is as much as one read
+returns — so work through it in ${Math.ceil(n / MAX_GROUP_LINES)} successive stretches until you reach line ${b}.
+Cover all of it; do not stop after the first stretch.`
   return `Your scope is lines ${a}-${b} of \`${DRAFT}\` (${n} lines), which covers:
 ${sc.headings ? sc.headings.map(h => '  - ' + h).join('\n') : '  ' + sc.scope}
-Read exactly that range in one call: Read with offset=${a}, limit=${n}. Read
-outside the range only to check a specific cross-reference, and propose changes
-only within the range.`
+That range is small enough to take in as one piece, so read it in one go. Look
+outside it only to check a specific cross-reference, and propose changes only
+within it.`
 }
 
 const PROPOSE_PROMPT = (variant, sc) => `ROLE: PROPOSE.
@@ -368,18 +370,17 @@ const FAITH_SCHEMA = { type: 'object',
 //      and so rewrite the §N references inside those very passages.
 //      Structural-first would silently break every prose anchor containing a
 //      section reference. Brittle exact-match step first, judgment step second.
-//   4. Prose goes through Edit, one call per change: it requires an exact unique
-//      match and fails otherwise, and that failure is the safety property. A
-//      change that no longer matches is reported, never fuzzy-matched onto a
-//      passage that merely looks close.
+//   4. Prose is applied by exact, unique replacement of the passage. A change
+//      whose text no longer matches, or matches twice, is reported rather than
+//      placed by judgment — a near match is how a silent corruption enters.
 //   5. Structural changes are executed by judgment — see
 //      analysis/s10/apply_structural_brief.md, which includes the mandatory
 //      hygiene pass (LaTeX label map, moved-material references, stale titles,
 //      orphaned pronouns).
-//   6. check_manuscript.py then runs, and the fix/re-check loop repeats UNTIL IT
-//      REPORTS CLEAN — one pass is not enough, since a fix can expose the next
-//      problem. The checker stays a fixed script on purpose: the loop only means
-//      something if every pass applies the identical test.
+//   6. Verify then checks the draft's integrity and repeats the fix/re-check
+//      cycle UNTIL A FULL PASS IS CLEAN — one pass is not enough, since a fix
+//      can expose the next problem. The checks are stated in the prompt rather
+//      than held in a script; there is no standing tooling in this loop.
 //   7. Each iteration is committed, so every round is separately revertible.
 
 // ============================== ORCHESTRATION ==============================
@@ -503,7 +504,7 @@ const APPLY_SCHEMA = {
 const VERIFY_SCHEMA = {
   type: 'object',
   properties: {
-    clean: { type: 'boolean', description: 'true ONLY if the final check_manuscript.py run reported no issues' },
+    clean: { type: 'boolean', description: 'true ONLY if a complete final pass found no issues' },
     fixed: { type: 'array', items: { type: 'string' }, description: 'issues found and fixed this pass' },
     remaining: { type: 'string', description: 'issues still outstanding, or empty when clean' },
   },
@@ -586,22 +587,23 @@ const applyResults = {}
 applyResults.prose = await agent(`ROLE: APPLY PROSE.
 Apply these ${selection.prose.length} unanimously accepted prose rewrites to \`${DRAFT}\`.
 
-Use the Edit tool, ONE CALL PER CHANGE, passing \`current\` as old_string and
-\`proposed\` as new_string, both verbatim. Edit requires an exact, unique match
-and fails otherwise — that failure is the safety property this stage relies on,
-so never work around it:
+Each is a replacement of an exact passage. Replace the passage given as
+\`current\` with the one given as \`proposed\`, both verbatim, in the order listed.
 
-- If a change's \`current\` does not match, report it as skipped with the reason.
-  Do NOT hunt for a passage that looks close and edit that instead. A near match
-  is how a silent corruption enters a manuscript whose numbers must not move.
-- If Edit reports the text is not unique, report it as ambiguous and skip it.
-  Do not disambiguate by picking one.
-- Do not adjust, re-wrap, or "clean up" either string to make an edit land.
-- Apply them in the order given.
+The match must be exact and unambiguous, and that requirement is the safety
+property this stage rests on:
 
-Some changes may legitimately fail to match because an earlier change in this
-same list already rewrote overlapping text. That is expected and is exactly what
-you should report, not repair.
+- If a change's \`current\` text no longer appears in the draft, report it as
+  skipped and say so. Do not look for a passage that reads similarly and change
+  that instead — a near match is how a silent corruption enters a manuscript
+  whose numbers must not move.
+- If it appears more than once, report it as ambiguous and skip it. Do not pick
+  one occurrence.
+- Do not adjust, re-wrap or tidy either passage to make a replacement land.
+
+Some changes may legitimately fail because an earlier change in this same list
+already rewrote overlapping text. That is expected, and is exactly what you
+should report rather than repair.
 
 Return the ids applied, the ids skipped each with its reason, and nothing else.
 
@@ -647,38 +649,56 @@ that was not requested.`,
   { agentType: 'apply-integrator', phase: 'Apply', label: 'apply:figures', schema: APPLY_SCHEMA })
 
 // ============================== VERIFY =====================================
-// One pass is not enough: fixing one problem routinely exposes the next, which
-// is how a desynchronized LaTeX label map survived the last round. Loop until
-// the checker reports clean, and say so plainly if it never does.
+// The checks live in the prompt, not in a standing script (Matthew, 2026-09-02:
+// no tooling in the iteration loop — give the model room to do the work). The
+// agent re-checks itself until a full pass is clean.
 phase('Verify')
-let clean = false
-const verifyPasses = []
-for (let pass = 1; pass <= 5 && !clean; pass++) {
-  const r = await agent(`ROLE: VERIFY AND FIX (pass ${pass}).
-Run: python3 analysis/s10/check_manuscript.py
+const verify = await agent(`ROLE: VERIFY AND FIX.
+Changes have just been applied to \`${DRAFT}\`. Check the manuscript's integrity,
+fix what is broken, then check again — and keep repeating until a complete pass
+finds nothing. One pass is never enough: fixing one problem routinely exposes
+the next, which is how a desynchronised LaTeX label map survived a past round.
 
-It checks that every §-reference and appendix reference resolves, every footnote
-is defined, headings and numbers are unique, every numbered heading and appendix
-letter has a label-map entry in \`analysis/s10/latex/reformat.py\`, every asset
-referenced by the draft exists on disk, and every figure has a FIGLABEL entry.
+What has to hold, every pass:
 
-If it reports issues, fix them at the source and run it again. Two rules:
-- Never hard-code a number or a letter to satisfy a reference. Sections and
-  appendices are numbered by LaTeX from labels; add or correct the label and let
-  it resolve. A hard-coded "§4.7" silently rots the next time anything moves.
-- Never delete a reference to make the check pass unless the thing it points to
-  genuinely should not exist.
+1. Every section reference (\`§N\`, \`§N.M\`) resolves to a heading that exists.
+   Footnote definition lines do not count as body text. A few references point
+   at other documents (METHODOLOGY, README, analysis scripts) — those are fine,
+   and worth saying so rather than "fixing".
+2. Every "Appendix X" reference resolves to an appendix that exists.
+3. Every footnote used has a definition. One defined but never used is worth a
+   note, not a fix.
+4. No heading text is duplicated, and no section number is used twice.
+5. Every image the draft references exists on disk. A reference to a file that
+   was never created is a broken build, and it is the failure this stage most
+   exists to catch: a proposal can add a figure reference and pass the data gate
+   untouched, because no datum changed, while the file never came into being.
+6. Every referenced figure is wired into the LaTeX transform in
+   \`analysis/s10/latex/reformat.py\` — it needs a figure-label entry, or it
+   renders as a bare image with no float, caption or cross-reference.
+7. Every numbered heading and every appendix letter has an entry in that file's
+   label maps. A heading missing from them cannot be labelled, so nothing can
+   reference it.
+8. That file's appendix character ranges still span every appendix letter the
+   draft uses. Adding an Appendix E while a range stops at D drops it silently.
 
-Set clean=true ONLY if the checker's final run reported no issues. If you cannot
-get it clean, set clean=false and report precisely what remains — an honest
-report of a residual problem is worth more than a forced pass.`,
-    { agentType: 'apply-integrator', phase: 'Verify', label: `verify:pass${pass}`, schema: VERIFY_SCHEMA })
-  verifyPasses.push(r)
-  clean = !!(r && r.clean)
-  log(`verify pass ${pass}: ${clean ? 'clean' : 'issues remain — ' + ((r && r.remaining) || 'no detail returned')}`)
-  if (!r) break
-}
-if (!clean) log('VERIFY DID NOT REACH CLEAN — the draft needs a look before this iteration is trusted')
+Two rules while fixing:
+- Never hard-code a section or appendix number to make a reference resolve.
+  They are numbered from labels; add or correct the label. A literal "§4.7"
+  rots the next time anything moves.
+- Never delete a reference to make a check pass, unless its target genuinely
+  should not exist.
+
+Report honestly. Set clean=true only if a complete final pass found nothing. If
+you cannot get there, set clean=false and say precisely what remains — an exact
+account of a residual problem is worth far more than a forced pass, because
+everything downstream trusts this report.`,
+  { agentType: 'apply-integrator', phase: 'Verify', label: 'verify', schema: VERIFY_SCHEMA })
+
+const clean = !!(verify && verify.clean)
+log(clean
+  ? 'verify: clean' + ((verify.fixed || []).length ? ' after fixing ' + verify.fixed.length : '')
+  : 'VERIFY DID NOT REACH CLEAN — ' + ((verify && verify.remaining) || 'no detail returned'))
 
 return { iteration: ITER, phase: PHASE, scopes: ok.map(r => r.scope_id), totals, selection,
-         applied: applyResults, verify: { clean, passes: verifyPasses }, by_scope: ok }
+         applied: applyResults, verify, by_scope: ok }

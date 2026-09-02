@@ -1,7 +1,7 @@
 # Applying structural changes — the protocol
 
-Prose rewrites apply mechanically through Edit: `current` as old_string,
-`proposed` as new_string, one call per change. Structural changes cannot — they
+Prose rewrites apply mechanically: replace the verbatim `current` passage
+with `proposed`, exactly and unambiguously or not at all. Structural changes cannot — they
 are natural-language instructions ("move to after §Y", "split before
 '<quote>'"), so an agent executes them by judgment. This file is that agent's
 brief, and the Apply phase of `workflows/round2_iter_all.js` points it at the
@@ -26,13 +26,14 @@ Consequences worth knowing when you edit this protocol:
   hand-maintained `section_groups.json` went stale the moment a reorganization
   renumbered the paper, and iteration 1's agents were handed scopes naming a
   section that no longer existed. Do not reintroduce a stored copy.
-- **Prose applies through Edit, one call per change.** Edit requires an exact,
-  unique match and fails otherwise, which is the safety property the stage rests
-  on: a change whose `current` no longer matches is reported unapplied, never
-  fuzzy-matched onto a passage that looks close. There is deliberately no
-  applier script — an earlier one carried a whitespace-tolerant fallback, and a
-  near match is exactly how a silent corruption enters a manuscript whose
-  numbers must not move.
+- **Prose applies by exact, unique replacement**, and a change that no longer
+  matches — or matches twice — is reported rather than placed by judgment. An
+  earlier applier script carried a whitespace-tolerant fallback; a near match is
+  exactly how a silent corruption enters a manuscript whose numbers must not move.
+- **No standing tooling in the loop.** There is no runner, no stored section
+  map, no applier and no checker script. The integrity checks live in the Verify
+  prompt and the agent re-checks until a full pass is clean. Prompts say what
+  must hold, not which tool to reach for.
 - **Which changes land is decided in the workflow script**, not by a separate
   tool: unanimity among whoever voted on that change, then best-composite wins
   among rival takes on the same passage or reorganization.
@@ -158,11 +159,13 @@ or name a figure number, because floats drift. For each new figure:
 
 ## Iterate until clean
 
-Run `python check_manuscript.py` after applying. It verifies that every §N and
-Appendix reference resolves, every footnote use is defined, no heading or
-section number is duplicated, every numbered heading and appendix has a LaTeX
-label, and the transform's appendix regexes cover the range in use. It exits
-non-zero when anything is wrong.
+After applying, check the draft's integrity: every §N and Appendix reference
+resolves to something that exists, every footnote use is defined, no heading or
+section number is duplicated, every referenced image is on disk, every figure is
+wired into the LaTeX transform, every numbered heading and appendix letter has a
+label there, and the transform's appendix ranges still span the letters in use.
+There is no checker script and deliberately so — write whatever throwaway checks
+you need.
 
 **Fix, re-run, repeat until it reports clean** — a fix can expose or create the
 next problem, so a single pass is not enough. Escalate to the author only what
