@@ -2,7 +2,7 @@
 
 ## Abstract
 
-We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* — the excess vocabulary language models overuse, derived in prior work from the post-2022 jump in scholarly text, run here as a fixed ruler across four decades of the parliamentary record. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with a fourfold spread across chambers (after shrinkage) and a concentration in scripted genres. This machine-drafted speech is not degraded: AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, **predates the models by decades** — history invisible to the excess-vocabulary designs that found the jump, which measure acceleration against a local trend in corpora reaching back roughly a decade. Run as a level series, its rise spans three decades and two instruments — dated to 1994–96 on the longest-reaching series — concentrated in a few common connectives over a broad shallow widening; a juniority gradient predates even that, steepening as cohorts formed inside the drift arrive; and prior occupation leaves a small, replicated signature that absorbs social class — scored on a preregistered organisational-altitude measure whose insulated middle sits highest and whose off-hierarchy level, free work, sits lowest. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
+We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* — the excess vocabulary language models overuse, derived in prior work from the post-2022 jump in scholarly text, run here as a fixed ruler across four decades of the parliamentary record. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with a fourfold spread across chambers (after shrinkage) and a concentration in scripted genres. This machine-drafted speech is not degraded: AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, **predates the models by decades**. That history is invisible to the excess-vocabulary designs that found the jump, which measure acceleration against a local trend in corpora reaching back roughly a decade. Run as a level series, the register's rise spans three decades and two instruments — dated to 1994–96 on the longest-reaching series — and is concentrated in a few common connectives over a broad shallow widening. A juniority gradient predates even that, steepening as cohorts formed inside the drift arrive. Prior occupation leaves a small, replicated signature that absorbs social class, scored on a preregistered organisational-altitude measure whose insulated middle sits highest and whose off-hierarchy level, free work, sits lowest. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
 
 ---
 
@@ -91,62 +91,15 @@ detector, history and social structure from the register, with the genre
 ladder the one place their inferences demonstrably meet. The corpus reaches back three decades, which is what lets the
 second half of the question be asked at all.
 
-The question we came with gets its answer: at least 9.0% of words in current
-legislative speech are machine-drafted — a floor, because directed effort
-evades the detector — with a fourfold spread across chambers, a
-concentration in scripted genres, and no quality penalty: against a
-deliberation rubric, flagged speech is better-formed and no less engaged —
-in the cross-chamber arm and in controlled model continuations alike. The finding we did not come for is the paper's centre
-of gravity. The register instrument, borrowed to cross-check the detector,
-turned out to have a history: a rise spanning three decades, dated 1994–96
-on the longest series. On the machine side it is a post-training artifact,
-installed by the stages trained on human demonstrations and preferences
-and not by the stage trained on verifiable math and code. And when we went
-looking for who carried it, the dominant simple correlate is birth year —
-a juniority gradient older than the drift itself, steepened by the cohorts
-formed inside it; a
-pre-registered occupational model adds weaker but real structure — the
-register peaks at the insulated middle of organisational hierarchies, the
-rungs that answer upward without the final say — and social class traces the
-same inverted-U at coarser grain. Chasing that ordering produced a
-by-product worth naming: a measure of socioeconomic position scored from
-occupational content rather than from a categorical schema, whose
-distinctive level — free work, outside the organisational hierarchy
-altogether — carried a preregistered, confirmed prediction. Rigid
-classification buys legibility by discarding information; Scott made that
-argument about states, and the class schemas are a mild case of it. Machine
-intelligence lowers the cost of the alternative: bespoke, current
-classifications, blind-derived from the full descriptor universe and
-preregistered so they stay verifiable, carrying the spirit of the classical
-schemas while keeping what those schemas flatten — and, in the event, the
-measure's best-performing form is exactly that: a folk category,
-concretized. These correlations locate
-the rise without yet explaining it — together they cover about a sixth of member-level variation, most of
-that birth year. Machine intelligence did not invent this register of accountability
-without authorship; it inherited it, automated it, and made it measurable.
+The question we came with gets its answer: at least 9.0% of words in current legislative speech are machine-drafted — a floor, because directed effort evades the detector — with a fourfold spread across chambers, a concentration in scripted genres, and no quality penalty: against a deliberation rubric, flagged speech is better-formed and no less engaged, in the cross-chamber arm and in controlled model continuations alike.
 
-The pattern of findings opens more fields than it closes: machine-drafted
-speech in deliberative bodies, its prevalence now measurable and its impacts
-and biases barely touched; class and register markers in legislatures, for
-which the occupational measure above is a beginning; and the large-scale
-study of registers in open speech records generally — of which this paper is
-itself a demonstration. One of those impacts can now be named precisely: the
-register the models were tuned to speak is, on our measurement, the register
-of the insulated organisational middle — a weak effect, but a first
-quantitative trace of what Brynjolfsson calls the Turing trap: the worry
-that human-imitating AI is developed to substitute for workers rather than
-augment them. We do not advance that reading; we note that it now has a
-measurable form, and a template for the oversight measurements it calls
-for. Essentially every
-measurement in it — extraction,
-scoring, coding, grading, across 22 chambers and three decades — was executed
-by machine intelligence, cheaply enough to repeat on any open record, and
-with the null results, replications and superseded analyses that usually go
-unreported kept in the record rather than discarded — and with pervasive
-logging supplying the substance of pre-registration, timestamped predictions
-verifiably preceding the data, without the formal document as sole witness. Detection is better
-used to measure a norm than to police it, and the measuring is now nearly
-free.
+The finding we did not come for is the paper's centre of gravity. The register instrument, borrowed to cross-check the detector, turned out to have a history: a rise spanning three decades, dated 1994–96 on the longest series. On the machine side it is a post-training artifact, installed by the stages trained on human demonstrations and preferences and not by the stage trained on verifiable math and code. And when we went looking for who carried it, the dominant simple correlate is birth year — a juniority gradient older than the drift itself, steepened by the cohorts formed inside it. A pre-registered occupational model adds weaker but real structure — the register peaks at the insulated middle of organisational hierarchies, the rungs that answer upward without the final say — and social class traces the same inverted-U at coarser grain. These correlations locate the rise without yet explaining it; together they cover about a sixth of member-level variation, most of that birth year. Machine intelligence did not invent this register of accountability without authorship; it inherited it, automated it, and made it measurable.
+
+Chasing the occupational ordering produced a by-product worth naming: a measure of socioeconomic position scored from occupational content rather than from a categorical schema, whose distinctive level — free work, outside the organisational hierarchy altogether — carried a preregistered, confirmed prediction. Rigid classification buys legibility by discarding information; Scott made that argument about states, and the class schemas are a mild case of it. Machine intelligence lowers the cost of the alternative: bespoke, current classifications, blind-derived from the full descriptor universe and preregistered so they stay verifiable, keeping what the classical schemas flatten. In the event, the measure's best-performing form is exactly that: a folk category, concretized.
+
+The pattern of findings opens more fields than it closes: machine-drafted speech in deliberative bodies, its prevalence now measurable and its impacts and biases barely touched; class and register markers in legislatures, for which the occupational measure above is a beginning; and the large-scale study of registers in open speech records generally — of which this paper is itself a demonstration. One of those impacts can now be named precisely: the register the models were tuned to speak is, on our measurement, the register of the insulated organisational middle — a weak effect, but a first quantitative trace of what Brynjolfsson calls the Turing trap: the worry that human-imitating AI is developed to substitute for workers rather than augment them. We do not advance that reading; we note that it now has a measurable form, and a template for the oversight measurements it calls for.
+
+The demonstration is worth stating as such. Essentially every measurement in this study — extraction, scoring, coding, grading, across 22 chambers and three decades — was executed by machine intelligence, cheaply enough to repeat on any open record. The null results, replications and superseded analyses that usually go unreported are kept in the record rather than discarded, and pervasive logging supplies the substance of pre-registration — timestamped predictions verifiably preceding the data, without the formal document as sole witness. Detection is better used to measure a norm than to police it, and the measuring is now nearly free.
 
 ## 2. Data
 
@@ -194,16 +147,9 @@ and reproducible.[^s-sampling]
 that is period-correlated noise a detector could latch onto with nothing to
 do with drafting. Stripped at build time.
 
-**Transcription regime.** A chamber that moved from edited Hansard to
-verbatim or ASR-assisted transcription will shift on exactly the surface
-features a detector reads, with nobody having drafted anything by machine.
-A transcript-regime check[^s-regime] measures two markers that track
-editorial convention rather than content — words per sentence, and contraction density
+**Transcription regime.** A chamber that moved from edited Hansard to verbatim or ASR-assisted transcription will shift on exactly the surface features a detector reads, with nobody having drafted anything by machine. A transcript-regime check[^s-regime] measures two markers that track editorial convention rather than content, random-sampled per chamber-year: words per sentence, and contraction density (traditional Hansard expands "don't" to "do not"; verbatim transcription does not).
 
 [^s-regime]: `transcript_regime_check.py`.
-
-(traditional Hansard expands "don't" to "do not"; verbatim transcription does
-not) — random-sampled per chamber-year.
 
 Findings, and they cut against the received story:
 
@@ -297,13 +243,9 @@ The Kobak et al. excess-vocabulary approach (arXiv:2406.07016; *Sci Adv*
 counterfactual built from prior years. Applied naively to Hansard it produces
 a large, confident-looking post-2022 signal.
 
-**It has no trend control.** An in-time placebo[^s-placebo] runs the
-identical estimator on *pre-LLM* window pairs, where the true effect is zero
-by construction. It fires there too. An estimator that reports a large effect on
+**It has no trend control.** An in-time placebo[^s-placebo] runs the identical estimator on *pre-LLM* window pairs, where the true effect is zero by construction. It fires there too. An estimator that reports a large effect on a period when nothing happened is measuring drift, not treatment.
 
 [^s-placebo]: `in_time_placebo.py`.
-
-a period when nothing happened is measuring drift, not treatment.
 
 The arm is therefore reported as a **descriptive series**, not as evidence of
 LLM causation. This is what makes the 1994–96 onset (§4.5) interesting rather
@@ -414,13 +356,13 @@ Sensitivity on *edited* machine text is the real unknown and is discussed in
 **New Brunswick rescore.** 658 segments, byte-identical stored text, Pangram
 3 vs Pangram 4:
 
-| | Pangram 3 | Pangram 4 |
+| quantity | Pangram 3 | Pangram 4 |
 |---|---|---|
-| pre-AI control (n=60) | 60/60 | 60/60 |
-| 2020 / 2021 / 2022 | 0% flagged | 0% flagged |
-| AI + Mixed, overall | 122 | **144** |
-| exact agreement | | 92% |
+| pre-AI control not flagged (of 60) | 60/60 | 60/60 |
+| flag rate, 2020 / 2021 / 2022 | 0% | 0% |
+| segments flagged AI + Mixed (of 658) | 122 | **144** |
 
+The two versions return the identical verdict on 92% of segments.
 Specificity is **identical**. The model-tier defect was an **undercount, not
 a false-positive problem** — disagreements run net upward (33 segments moved
 out of Human, 9 the other way). Earlier NB conclusions stand as conservative.[^s-nb34]
@@ -538,6 +480,12 @@ count.[^r42f]
 | ON | 11.1% | [6.1, 16.8] | | NL | 3.3% | [0.8, 6.6] |
 | NS | 10.0% | [5.5, 15.1] | | UK | 2.5% | [0.7, 4.8] |
 | AB | 7.8% | [3.9, 12.3] | | **US Senate** | **1.8%** | [0.1, 4.1] |
+
+![](chamber_prevalence_dotplot.png)
+
+*The twenty chamber rates, drawn: each point is the chamber's word-weighted, fraction-weighted machine-drafted share of 2025–26 words (values exactly as in the table); whiskers are the cluster-bootstrap 95% CIs; chambers sorted by rate, direct-labelled, with the two US chambers emphasised and the pooled 9.03% marked as a reference line. Axis starts at zero.*
+
+[build note, not manuscript text: a small plotting script renders the twenty committed rate/CI triples from `banded_prevalence.py` output — plotting existing values only, no new computation.]
 
 Intervals are cluster bootstraps over segments, not Wilson intervals: the
 estimator is a ratio of two random sums whose numerator and denominator move
@@ -717,10 +665,7 @@ question of the routinely staff-written kind. The genre claim therefore holds
 segment by segment and not only in aggregate: within the genre nominated as
 unscripted, the flags land exactly on the parts that were written in advance.
 
-This makes the 8.3% a **mislabelled row rather than a wrong one**. It is not
-an estimate of Question Period; it is an estimate of long-tail business
-carrying the QP heading, and the true rate for genuine exchange is lower —
-possibly zero.
+This makes the Oral Questions rate a **mislabelled row rather than a wrong one** — 9.8% word-weighted in the table, 8.3% on segments. It is not an estimate of Question Period; it is an estimate of long-tail business carrying the QP heading, and the true rate for genuine exchange is lower — possibly zero.
 
 **One flag type has no control, and it should not be leaned on.** Two of the
 five are tributes, both at `fraction_ai` 1.0, and **no pre-AI tribute exists
@@ -907,7 +852,9 @@ instruct-tuning later selected for, for thirty years.** †[^dag]
     re-derived from their artifacts; the full key and per-number sources are
     in the Supplementary provenance note.
 
-The machines then accelerated it, and left a fingerprint of their own suppression. In New Brunswick — the one corpus sampled densely enough to resolve quarters — an interrupted time series with the break pre-set at ChatGPT's release finds a flat pre-2023 slope (−1.2%/yr) turning to **+23.7%/yr** afterward, significant against 1,000 frequency-matched placebo word sets (p = 0.007; Mann–Kendall p = 0.014). But the two instruments then part ways: the *obvious* tells — the Wikipedia "signs of AI writing" set — peak around 2025 and fall back, while the subtler Kobak rare-style set keeps climbing. The natural reading — with published precedent in scholarly text, where Gray documents distinctive marker words dropping in frequency once publicised — is that the conspicuous words became notorious and were trained or edited away, while the register underneath kept rising. The peak-and-fall of the obvious tells shows in some other chambers too — UK Commons and the US House both turn down after 2024 — though it is not universal (Ireland's keep rising), so this is a suggestive cross-chamber pattern rather than a law; the clean two-instrument contrast is sharpest in the densely-sampled discovery corpus.[^rits]
+The machines then accelerated it, and left a fingerprint of their own suppression. In New Brunswick — the one corpus sampled densely enough to resolve quarters — an interrupted time series with the break pre-set at ChatGPT's release finds a flat pre-2023 slope (−1.2%/yr) turning to **+23.7%/yr** afterward, significant against 1,000 frequency-matched placebo word sets (p = 0.007; Mann–Kendall p = 0.014).
+
+But the two instruments then part ways: the *obvious* tells — the Wikipedia "signs of AI writing" set — peak around 2025 and fall back, while the subtler Kobak rare-style set keeps climbing. The natural reading — with published precedent in scholarly text, where Gray documents distinctive marker words dropping in frequency once publicised — is that the conspicuous words became notorious and were trained or edited away, while the register underneath kept rising. The peak-and-fall of the obvious tells shows in some other chambers too — UK Commons and the US House both turn down after 2024 — though it is not universal (Ireland's keep rising), so this is a suggestive cross-chamber pattern rather than a law; the clean two-instrument contrast is sharpest in the densely-sampled discovery corpus.[^rits]
 
 ![](the-ai-lexicon-trend.png)
 
@@ -943,6 +890,12 @@ measured with the same ruler.[^r45a]
 | **US Senate** | 1,590 | 1,562 | ×0.98 | −0.1%/yr |
 | Prince Edward Island | 1,589 | 1,523 | ×0.96 | −0.2%/yr |
 | **US House** | 1,794 | 1,709 | ×0.95 | −0.2%/yr |
+
+![](convergence_slopegraph.png)
+
+*The convergence, drawn as a slopegraph: one line per chamber from its 2006 to its 2026 gap-vocabulary rate (occurrences per 100k words; values exactly as in the table), direct-labelled at both ends, the UK-group climbers and the two flat US chambers emphasised. The fan closes upward: the lowest 2006 starters climb steepest toward the level the United States already held.*
+
+[build note, not manuscript text: the slopegraph plots the 19 committed 2006/2026 pairs from `constant_window_trend.py` output — existing values only, no new computation.]
 
 Nineteen chambers hold both endpoints of the longest window most of the
 corpus shares — 2006 to 2026 — and on that single ruler the pattern is
@@ -1106,7 +1059,9 @@ That single slope is where the question starts, not where it ends. What we want 
 
 ![](tenure_profile.png)
 
-*Register by length of service, two readings. Blue: within-member, each legislator's rate minus their own career mean — rises with tenure because within a career, years served and calendar year are one clock (its slope reproduces the +0.51 within-member drift). Orange: period-adjusted, rate minus its chamber × year mean — falls with tenure, but this is the entry-cohort gradient (longer tenure at a fixed year = earlier cohort), not a within-career decline. Left-censored members dropped; error bars member-cluster bootstrap 95% intervals.*
+*Register by length of service, two readings, each curve labelled in the panel. The within-member curve (blue) — each legislator's rate minus their own career mean — rises with tenure, because within a career years served and calendar year are one clock (its slope reproduces the +0.51 within-member drift). The period-adjusted curve (orange) — rate minus its chamber × year mean — falls with tenure, but that fall is the entry-cohort gradient (longer tenure at a fixed year = earlier cohort), not a within-career decline. Left-censored members dropped; error bars member-cluster bootstrap 95% intervals.*
+
+[build note, not manuscript text: regenerate tenure_profile.png via `tenure_profile.py` with each curve direct-labelled at its right end — 'within-member', 'period-adjusted' — so identity is not carried by color alone; no data change.]
 
 **Splitting that career drift by birth cohort, every cohort rides the tide up — but not in every chamber.** Running the same within-member estimator separately within each birth cohort (so the cohort numbers decompose the pooled +0.57 rather than averaging noisy per-member slopes) gives a positive-or-flat lifetime drift for every cohort, a shallow hump peaking at the 1950s-born (+0.88) and tapering at both thin tails. So the gain a member makes over their career barely depends on when they were born — nearly everyone absorbs the drift they serve through. Interesting for the caveat it forces: the drift is **positive within members in only 10 of the 22 chambers**, carried by the two largest (UK +1.9, US House +0.5) while most of the smaller chambers — the Canadian provinces especially — run negative, so "sitting members convert" is a pooled, large-chamber statement rather than a universal one. And it is calendar drift ridden inside a career, not proven personal conversion: a member serving 2006–2026 gains register partly because the register rose under everyone. †[^r46life]
 
@@ -2376,9 +2331,8 @@ LLM screen; stage 2 is 682 segments across 22 chambers labelled by **Pangram
 verdict**, with chamber fixed effects. Different populations, different label
 sources, same answer.[^r49q]
 
-| dimension | stage 1, per 0→100 score | stage 1, per sd of score | stage 2, AI vs Human verdict |
+| dimension | stage 1, per 0→100 score (n = 840) | stage 1, per sd of score | stage 2, AI vs Human verdict (n = 682) |
 |---|---|---|---|
-| *segments (regressor)* | *840 (screen score; sd 15.3, max 70)* | *same fit, rescaled* | *682 (Pangram verdict, binary)* |
 | justification | **+1.134** (t +4.1) ✱ | +0.173 | **+0.290** (t +4.4) ✱ |
 | common_good | **+0.583** (t +3.3) ✱ | +0.089 | **+0.229** (t +4.5) ✱ |
 | respect_groups | **+0.287** (t +2.0) ✱[^r49m] | +0.044 | **+0.220** (t +6.1) ✱ |
@@ -2650,7 +2604,8 @@ rather than under clean conditions.
 | Pangram 4, Epoch AI Style Imitation | 2.86% | FNR, doc-level, adversarial, vendor[^r49x2] |
 | **this study, per variant** | **11.1%** | **induced FNR, one blind submission (no attacker detector access) — 4.8× the humanizers** |
 | *this study, per target* | *22.5%* | *induced, attacker may query and retry (≤18 attempts) — 9.8× the humanizers* |
-| Rice 2026, Australian Hansard | ~8% | **false *positive* rate**, n = 50 |
+
+(and, later in the same paragraph, replace the Rice sentence with:) Rice 2026's Australian-Hansard ~8% is deliberately *not* a row in this table, though the numeric coincidence invites it: that figure is a false-*positive* rate on 50 pre-ChatGPT speeches, measured on an LLM judge rather than on Pangram (§7) — a column of false-negative rates is no place for it.
 
 **The per-variant row is the one commensurable with the vendor rows**, which
 are also document-level FNRs on one adversarially prepared submission. The
@@ -2968,7 +2923,7 @@ beat" is the whole of that apparatus.
   a gradual multi-decade climb with no discrete step). The twenty pooled
   chambers all pass; Tasmania, the twenty-first, is the sole exclusion. The diagnostic uses two convention-tracking markers,
   not all of them.
-- **Mixed is pooled with AI** throughout. Reported separately in the CSV.
+- **Mixed is not counted as wholly machine-written in prevalence.** Each Mixed segment is weighted by its reported AI fraction. In analyses that require a binary label, Mixed is pooled with AI and reported separately in the CSV.
 - **The permeation effect is small** and rests on one instrument.
 - **This study measures register, not substance.** Whether machine assistance
   changes *what* is argued, which evidence is cited, or which framings are
@@ -3195,20 +3150,7 @@ baseline is moving toward the thing being detected.
 
 ## 8. Discussion
 
-This study set out to count machine-drafted speech and found, behind the
-count, a register with a thirty-year human history. The count stands, and
-it belongs to the calibrated detector alone: **at least 9.0% of words** in
-current legislative speech are machine-drafted, spread fourfold across
-chambers and concentrated where procedure permits preparation — with the
-transparent lexical register corroborating it where the two instruments'
-inferences overlap (the genre ladder) and carrying what the detector
-cannot: the history and the social structure behind the count. The register behind the count is the older finding: rising
-since 1994–96, strongest in later-born members, shaped like the office —
-peaking at its insulated middle — and installed, on the machine side, at
-exactly the post-training stages tuned toward human demonstrations and
-preferences. Machine intelligence did not invent this register of
-accountability without authorship — it inherited it, and this study
-measures the inheritance.
+This study set out to count machine-drafted speech and found, behind the count, a register with a thirty-year human history. The count stands, and it belongs to the calibrated detector alone: **at least 9.0% of words** in current legislative speech are machine-drafted, spread fourfold across chambers and concentrated where procedure permits preparation. The transparent lexical register corroborates it where the two instruments' inferences overlap — the genre ladder — and carries what the detector cannot: the history and the social structure. That register is the older finding: rising since 1994–96, strongest in later-born members, shaped like the office — peaking at its insulated middle — and installed, on the machine side, at exactly the post-training stages tuned toward human demonstrations and preferences. Machine intelligence did not invent this register of accountability without authorship — it inherited it, and this study measures the inheritance.
 
 What follows from that depends on what detection can actually do. §4.9 is
 usually read as a result about one detector. It is better read as an
@@ -3217,13 +3159,7 @@ of the study is for.
 
 ### 8.1 Any check the attacker can score against is an optimisation target
 
-Point a general-purpose model at its own output, tell it to try again, and
-it will beat any check it can score against. This is not a claim about
-Pangram, and it is not a defeat theorem for fixed checks: it is the
-supportable form — a check whose output, or a correlated proxy for it, the
-attacker can query is an optimisation target, and the attacker carries a
-quality constraint it can itself satisfy. The 22.5% below is a lower bound
-on that adversary class, measured at its weakest member.
+Point a general-purpose model at its own output, tell it to try again, and it will beat any check it can score against. This is not a claim about Pangram, and it is not a defeat theorem for fixed checks: it is the supportable form — a check whose output, or a correlated proxy for it, the attacker can query is an optimisation target, and the attacker carries a quality constraint it can itself satisfy. The 22.5% in §4.9 is a lower bound on that adversary class, measured at its weakest member.
 
 Our own numbers are the *weak* instance. The search never queried the detector
 it was evading: it optimised against an Opus proxy, tested on Pangram only at
@@ -3301,24 +3237,7 @@ Two limits that do bite, and neither is about robustness:
   which means watermarking can support a disclosure norm but can never
   underwrite an accusation.
 
-And the fallback people reach for when a detector is unavailable — their own
-sense of whether text "reads like a person" — is worse than unreliable on
-adversarial input; it is anti-correlated with the truth. Asked to judge
-AI-likeness by register, a frontier reader flagged 13 of 35 genuine human
-floor speeches and only 5 of 35 machine rewrites that had been optimised
-against a detector (§4.9 stage 5): adversarial optimisation removes exactly the
-tells gut judgment keys on, so the errors of a vibes-based adjudicator
-concentrate on the *unoptimised* — ordinary speakers who ran their words
-through nothing. As machine-assisted text spreads, register stops carrying authorship
-information, and an institution still adjudicating authenticity by feel is
-grading noise. That the errors then fall hardest on the unassisted — that
-machines will overtake humans at seeming human to humans — is one measured,
-lineage-correlated instance plus a conjecture, and it stays a conjecture
-until it happens; we state it because, after watching machines overtake
-human performance at task after task, we do not expect this one to be the
-exception. (One unblinded, lineage-correlated
-judge on 35 texts; illustrative, not a measured effect — see the future-work
-item below.)
+And the fallback people reach for when a detector is unavailable — their own sense of whether text "reads like a person" — is worse than unreliable on adversarial input; it is anti-correlated with the truth. Asked to judge AI-likeness by register, a frontier reader flagged 13 of 35 genuine human floor speeches and only 5 of 35 machine rewrites that had been optimised against a detector (§4.9 stage 5): adversarial optimisation removes exactly the tells gut judgment keys on, so the errors of a vibes-based adjudicator concentrate on the *unoptimised* — ordinary speakers who ran their words through nothing. As machine-assisted text spreads, register stops carrying authorship information, and an institution still adjudicating authenticity by feel is grading noise. The stronger reading — that machines will overtake humans at seeming human to humans, with the errors falling hardest on the unassisted — is a conjecture resting on one illustrative instance: a single unblinded, lineage-correlated judge on 35 texts, not a measured effect (the future-work item below is the test). We state the conjecture because, after watching machines overtake human performance at task after task, we do not expect this one to be the exception.
 
 ### 8.3 The substitution, and why our null is the argument for it
 
@@ -3326,55 +3245,14 @@ If provenance is the wrong thing to spend effort on, the question is what to
 spend it on instead. The answer available from this study is: **check the work
 directly.**
 
-The case rests on §4.9's primary finding, and it is independent of evasion:
-machine-assisted text grades **better-formed, not worse-engaged** on the DQI —
-so policing authorship does not protect quality, because the authorship
-detection would flag is not where the quality deficit is. That is the whole
-argument: **quality assessment is not a usable proxy for provenance.** If DQI
-tracked authorship it would merely be a worse detector; the associations it
-does carry are weak, partly leakage, and — where present — positive-signed, so
-it cannot stand in for the detector, which is what lets it measure the thing
-anyone actually wanted to know. ("Orthogonal" would overstate it — a referee
-holding the stage-2 table can point to real if small associations — so the
-weaker claim is the accurate one.)
-Two dimensions do run lower on the machine side, and they are the right
-targets for improvement rather than counterexamples: wild flagged speech is
-about half as likely to contain anything to engage with (the applicability
-split, §4.9 — a raw contrast, not genre-adjusted), and machine text sits
-below humans on checkable specifics (stage 6) — with the continuation
-evidence attributing the applicability collapse to weaker tools in use, not
-to machine assistance as such (opus-class continuations carry as much to
-engage with as the humans). Both deficits are visible only because the work
-is checked directly, which is the argument. And the composite weights the
-seven DQI dimensions equally — the index's conventional additive form —
-rather than by any measured optimum; tested, the weighting matters and the
-direction survives it. The seven dimensions are not one factor (the first
-principal factor of their polychoric matrix carries 32–33%), and that
-factor loads on the respect dimensions rather than on the well-formedness
-dimensions that carry the machine advantage — so re-running the stage-2
-contrast on the factor-weighted latent score cuts it from +0.195 (t 5.65)
-to +0.076 (t 1.71): still positive, no longer significant. The honest
-statement is that "better-formed" is dimension-specific — justification
-and evidence carry it — and any weighting that emphasises engagement over
-form puts the composite contrast at the margin, which is one more reason
-the paper's claims are stated per dimension rather than from the
-index.[^rlatent] The
-reliability statistics cannot carry this claim by themselves — a consistently
-biased judge would also reproduce itself perfectly; what
-carries it is validity evidence: the rubric's calibration anchors are the
-instrument authors' own published codings, so the scale is theirs rather than
-the judge's; the one dimension
-where judge-suspicion moves the result is identified and quarantined rather
-than averaged in (respect_groups; Appendix D.1, §4.9), and across stages the
-judge's AI-guess and its quality scores move independently in both
-directions — higher form under suspicion in the wild pools, lower for weak
-models and higher for frontier ones in stage 6. The paired
-evasion arms add a separate, secondary reassurance for anyone worried about
-the arms race specifically: rewriting under evasion pressure did not move any
-of the seven dimensions across 63 within-text pairs, and neither did the 39
-rewrites that actually cleared the detector when graded on their own (§4.9
-stage 5), so a body that measures quality directly need not fear that evasion
-— attempted or achieved — degrades the metric it watches.
+The case rests on §4.9's primary finding and is independent of evasion: speech classified as machine-involved grades **better-formed, not worse-engaged** on the DQI. Policing authorship therefore does not protect quality, because the text flagged for machine involvement is not where this rubric finds a quality deficit. The narrower conclusion is the useful one: **quality assessment is not a usable proxy for provenance, and provenance is not a usable proxy for quality.** The DQI associations with the machine label are real but small, partly exposed to judge leakage, and positive where they survive; they neither identify authorship nor support treating machine involvement as a quality failure.
+Two dimensions do run lower on the machine side, and they are the right targets for improvement rather than counterexamples: wild flagged speech is about half as likely to contain anything to engage with (the applicability split, §4.9 — a raw contrast, not genre-adjusted), and machine text sits below humans on checkable specifics (stage 6) — with the continuation evidence attributing the applicability collapse to weaker tools in use, not to machine assistance as such (opus-class continuations carry as much to engage with as the humans). Both deficits are visible only because the work is checked directly, which is the argument.
+
+The composite weights the seven DQI dimensions equally — the index's conventional additive form — rather than by any measured optimum; tested, the weighting matters and the direction survives it. The seven dimensions are not one factor (the first principal factor of their polychoric matrix carries 32–33%), and that factor loads on the respect dimensions rather than on the well-formedness dimensions that carry the machine advantage — so re-running the stage-2 contrast on the factor-weighted latent score cuts it from +0.195 (t 5.65) to +0.076 (t 1.71): still positive, no longer significant. The honest statement is that "better-formed" is dimension-specific — justification and evidence carry it — and any weighting that emphasises engagement over form puts the composite contrast at the margin, which is one more reason the paper's claims are stated per dimension rather than from the index.[^rlatent]
+
+The reliability statistics cannot carry this claim by themselves — a consistently biased judge would also reproduce itself perfectly. What carries it is validity evidence: the rubric's calibration anchors are the instrument authors' own published codings, so the scale is theirs rather than the judge's; the one dimension where judge-suspicion moves the result is identified and quarantined rather than averaged in (respect_groups; Appendix D.1, §4.9); and across stages the judge's AI-guess and its quality scores move independently in both directions — higher form under suspicion in the wild pools, lower for weak models and higher for frontier ones in stage 6.
+
+The paired evasion arms add a separate, secondary reassurance for anyone worried about the arms race specifically: rewriting under evasion pressure did not move any of the seven dimensions across 63 within-text pairs, and neither did the 39 rewrites that actually cleared the detector when graded on their own (§4.9 stage 5). A body that measures quality directly need not fear that evasion — attempted or achieved — degrades the metric it watches.
 
 [^rlatent]: `python quality_latent.py` — polychoric matrix on the seven
     dimensions (two-step: thresholds from the marginals, pairwise ρ by ML
@@ -3479,11 +3357,7 @@ what contribution means: what you added over the best available alternative. A
 shrinking residual is correct measurement, not measurement decay. Nobody
 credits long division done by hand.
 
-The one thing worth recording is *which* baseline a given measurement was taken
-against — metadata that keeps an old measurement interpretable, not a fixed
-target. This moves for the same reason as S17's imitation lag, and is
-collapsing for the same reason — it is not literally the same
-quantity S17 measures.
+The one thing worth recording is *which* baseline a given measurement was taken against — metadata that keeps an old measurement interpretable, not a fixed target. The baseline moves for the same reason as the measured imitation lag between frontier models and their imitators (our companion study S17), and is collapsing for the same reason — though it is not literally the same quantity that lag measures.
 
 A scope condition worth stating, because the whole moving-baseline proposal
 assumes it: the measure is affordable only where the cost of reproducing an
@@ -3708,15 +3582,7 @@ not a fourth operationalisation of the same kind.
 
 **D. Rivals for the register trend that remain live.**
 
-17. **Staff age as the exposure measure.** Members read what staff write, so a
-   70-year-old member with 24-year-old staff has young exposure — which is why
-   the member-age design is not the right one. Legislative staff are young and
-   short-tenured, so office exposure tracks the cohort entering staff work, and
-   that cohort turned computer-native in the mid-2000s, where the UK curve
-   starts climbing. Data is thin but two routes exist: Legistorm's US
-   congressional staff records (paid) and House Statements of Disbursements
-   (names, salaries, tenure and salary as seniority proxies). Neither has been
-   pursued. This is also the natural companion to S15.
+17. **Staff age as the exposure measure.** Members read what staff write, so a 70-year-old member with 24-year-old staff has young exposure — which is why the member-age design is not the right one. Legislative staff are young and short-tenured, so office exposure tracks the cohort entering staff work, and that cohort turned computer-native in the mid-2000s, where the UK curve starts climbing. Data is thin but two routes exist: Legistorm's US congressional staff records (paid) and House Statements of Disbursements (names, salaries, tenure and salary as seniority proxies). Neither has been pursued.
 18. **A role-controlled UK specification.** The two UK specs fail in opposite
     directions — the full corpus has a composition problem, and the
     within-speaker subset has a role problem, since those MPs lived through a
