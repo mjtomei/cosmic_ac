@@ -374,6 +374,15 @@ PROPOSED:
 ${c.proposed}
 
 Return { locatable, current_matches, data_faithful: "pass"|"fail", note }.
+
+current_matches asks ONE mechanical question: does the CURRENT text below appear
+in the manuscript, allowing only for differences in line wrapping? Search the
+file for it and answer from what you find. Do not infer it from whether the
+change reads like a sensible edit, and do not reason forward from CURRENT to
+PROPOSED to decide it — a proposer can quote a passage that was true of an
+earlier draft, or was never there at all. If the manuscript already reads the
+way PROPOSED describes, current_matches is false: the passage the proposer
+meant to replace is not there.
 data_faithful is "fail" if any number, statistic, CI/error bar, sample size,
 p-value, sign or direction of a measured effect, unit, estimand label, or a
 claim of what was/wasn't found changes, is added, or is dropped. Changes to
@@ -456,10 +465,19 @@ const runScope = async (sc) => {
                              phase: 'Faithfulness', schema: FAITH_SCHEMA }).catch(() => null)))
   const withFaith = candidates.map((c, i) => {
     const f = faiths[i]
-    const gate = !!f && f.locatable !== false && f.data_faithful === 'pass'
+    // current_matches is a HARD gate for prose and advisory for structural. A
+    // prose rewrite is applied by replacing the exact passage it quotes, so a
+    // quote that is not in the manuscript cannot apply — it either silently does
+    // nothing or, worse, lands somewhere that merely looks similar. A structural
+    // change names a section and the applier locates it, so a loose quote there
+    // is survivable. Iteration 1 shipped one prose change whose quoted text had
+    // never been in the draft; it was reported applied and changed nothing.
+    const quoteBad = c.type === 'prose' && f && f.current_matches === false
+    const gate = !!f && f.locatable !== false && f.data_faithful === 'pass' && !quoteBad
     return { ...c, scope: id, faith: f, faith_gate: gate,
              faith_reason: !f ? 'faith_check_errored' : f.locatable === false ? 'not_locatable'
-               : f.data_faithful !== 'pass' ? 'data_changed' : null }
+               : f.data_faithful !== 'pass' ? 'data_changed'
+               : quoteBad ? 'quoted_current_not_in_draft' : null }
   })
   const survivors = withFaith.filter(c => c.faith_gate)
 
@@ -680,6 +698,12 @@ property this stage rests on:
 Some changes may legitimately fail because an earlier change in this same list
 already rewrote overlapping text. That is expected, and is exactly what you
 should report rather than repair.
+
+Report as applied ONLY what you actually changed. If the draft already reads the
+way a change proposes — the passage is already in its target state, so there is
+nothing to replace — that is a skip with the reason "already in the desired
+state", not an application. Counting a no-op as done overstates what the run did
+and hides a stale proposal.
 
 Return the ids applied, the ids skipped each with its reason, and nothing else.
 
