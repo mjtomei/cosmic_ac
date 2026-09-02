@@ -1,8 +1,0 @@
-[
- {"id":"g1","label":"Front matter, Data and Method","scope":"Abstract, §1 Introduction, §2 Data (incl. §2.1), §3 Method (§3.1–§3.5)","lines":381},
- {"id":"g2","label":"Results: prevalence and the detector","scope":"§4 intro, §4.1, §4.2, §4.3, §4.4","lines":451},
- {"id":"g3","label":"Results: the register and who uses it","scope":"§4.5, §4.5a, §4.5b, §4.6, §4.6a, §4.6b","lines":1244},
- {"id":"g4","label":"Results: mechanism, permeation and quality","scope":"§4.7, §4.7a, §4.8, §4.9","lines":877},
- {"id":"g5","label":"Limits, context, related work and discussion","scope":"§5 Limits, §6 Policy context, §7 Related work, §8 Discussion (§8.1–§8.5)","lines":544},
- {"id":"g6","label":"Future work and appendices","scope":"§8.6 Future work, Appendix A, Appendix B, Appendix C (C.1–C.4), Appendix D (D.1–D.4)","lines":1244}
-]

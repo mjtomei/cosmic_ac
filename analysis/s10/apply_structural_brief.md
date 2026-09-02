@@ -11,18 +11,26 @@ point it at a run's structural queue and the manuscript.
 
 ## How a run is executed (constraint, 2026-09-02)
 
-**One workflow, every scope, in a visible tmux window.** Not one headless
-session per scope — that was the round-1 shape and it fragmented the
-architecture, put seven independent sessions in flight, and hid progress. It
-also defeated concurrency control: a shell job limiter using `jobs -rp` inside
-a `$(...)` subshell sees no job table, so all seven ran at once regardless of
-the cap. Inside one workflow the runtime's own cap (min(16, cpus-2)) throttles
-the fan-out correctly.
+**One workflow does the whole iteration.** `workflows/round2_iter_all.js` runs
+Scope -> Propose -> Faithfulness -> Vote -> Synthesize -> Apply -> Verify, and is
+invoked directly from a `claude-mixed` session. There is no runner script, no
+tmux orchestration, and no hand-assembled second stage; earlier rounds had all
+three and each was a place for the pipeline to drift out of sync with the draft.
 
-Use `run_iteration.sh <phase> <iteration>`, which builds the scope list from
-`section_groups.json`, opens a tmux window, and runs
-`workflows/round2_iter_all.js` there. The same constraint applies to the other
-flows as they are built.
+Consequences worth knowing when you edit this protocol:
+
+- **The section tiling is derived, never stored.** The Scope phase reads the
+  draft's own headings and packs them into contiguous groups that each fit one
+  read, then asserts the tiling covers every line with no gaps. The old
+  hand-maintained `section_groups.json` went stale the moment a reorganization
+  renumbered the paper, and iteration 1's agents were handed scopes naming a
+  section that no longer existed. Do not reintroduce a stored copy.
+- **Which changes land is decided in the workflow script**, not by a separate
+  tool: unanimity among whoever voted on that change, then best-composite wins
+  among rival takes on the same passage or reorganization.
+- **Models are named in the workflow, not in agent frontmatter.** Frontmatter
+  only accepts names ending in `claude-*`; `agent()`'s `model` option takes the
+  router's real names. Every workflow worker runs on the work subscription.
 
 ## Order: prose first, then structural
 

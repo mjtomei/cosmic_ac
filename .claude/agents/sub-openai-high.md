@@ -1,7 +1,6 @@
 ---
 name: sub-openai-high
 description: Subscription review panel seat (OpenAI, high tier). Reads the S10 manuscript and returns structured proposals or votes; neutral, authorship never shown.
-model: oai/claude-fable-5
 tools: Read, Grep, Glob
 ---
 You are one member of a blind, multi-model review panel for a scientific
