@@ -53,6 +53,26 @@ def main():
     prose = [c for c in accepted if c.get("type") == "prose" and c.get("action") in ("rewrite", "merge")]
     other = [c for c in accepted if c not in prose]
 
+    # Competing variants: when several accepted proposals rewrite the SAME passage,
+    # only one can land. Pick the best-scoring variant (composite, then support),
+    # not whichever happens to come first in the list.
+    def norm(c):
+        return " ".join((c.get("current") or "").split())
+    groups = {}
+    for c in prose:
+        groups.setdefault(norm(c), []).append(c)
+    contested = {k: v for k, v in groups.items() if len(v) > 1}
+    prose = []
+    for k, v in groups.items():
+        v.sort(key=lambda c: (-(c.get("verdict", {}).get("composite") or 0), -(c.get("support") or 0), c["id"]))
+        prose.append(v[0])
+    if contested:
+        print(f"  {len(contested)} passage(s) had competing rewrites; kept the best-scoring variant:")
+        for k, v in contested.items():
+            best = min(v, key=lambda c: (-(c.get("verdict", {}).get("composite") or 0), -(c.get("support") or 0), c["id"]))
+            others = [f"{o['id']}({o.get('verdict',{}).get('composite')})" for o in v if o is not best]
+            print(f"    kept {best['id']}(composite {best.get('verdict',{}).get('composite')}) over {', '.join(others)}")
+
     applied, skipped = [], []
     for c in prose:
         cur, prop = (c.get("current") or "").strip(), (c.get("proposed") or "").strip()
