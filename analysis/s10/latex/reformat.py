@@ -156,7 +156,11 @@ def replace_section_refs(t):
         num = m.group(1)
         lab = NUMMAP.get(num)
         return ("\\cref{%s}" % lab) if lab else m.group(0)
-    return re.sub(r'§(\d+(?:\.\d+[a-z]?)?)', repl, t)
+    # a trailing letter is part of the reference (§4.5a), and it is also what
+    # distinguishes an external locator (`analyze.py` §3b) from §3 of this paper:
+    # consume it, so an unmapped reference is left literal instead of resolving
+    # to the section whose number happens to be its prefix.
+    return re.sub(r'§(\d+[a-z]?(?:\.\d+[a-z]?)?)', repl, t)
 
 def replace_appendix_refs(t):
     def repl(m):
@@ -179,8 +183,8 @@ def figure_ref_anchors(t):
        r"the low-variance signature of an individual-level effect (\\cref{fig:apc})"),
       (r"The\s+search\s+loop\s+generates\s+and\s+screens\s+variants",
        r"The search loop (\\cref{fig:bypass}) generates and screens variants"),
-      (r"reported\s+individually\s+in\s+the\s+table\s+below",
-       r"reported individually in \\cref{tab:prevalence} and drawn in \\cref{fig:prevalence-dots}"),
+      (r"reported\s+individually,\s+and\s+their",
+       r"reported individually in \\cref{tab:prevalence} and drawn in \\cref{fig:prevalence-dots}, and their"),
       (r"half-decade rather than migrating \(figure above\)",
        r"half-decade rather than migrating (\\cref{fig:class-era})"),
       (r"Nineteen\s+chambers\s+hold\s+both\s+endpoints",
