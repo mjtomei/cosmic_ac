@@ -579,15 +579,26 @@ phase('Apply')
 const applyResults = {}
 
 applyResults.prose = await agent(`ROLE: APPLY PROSE.
-${selection.prose.length} unanimously accepted prose rewrites are to be applied to
-\`${DRAFT}\`. Do NOT edit the draft by hand — the substitution is mechanical and
-must stay that way.
+Apply these ${selection.prose.length} unanimously accepted prose rewrites to \`${DRAFT}\`.
 
-1. Write the JSON array below verbatim to a scratch file.
-2. Run: python3 analysis/s10/apply_prose.py <that file>
-3. Report exactly what it printed. A non-zero exit means some change could not be
-   located; that is information to report, NOT something to fix by hand-editing
-   the draft. Never rewrite a passage yourself to make a change apply.
+Use the Edit tool, ONE CALL PER CHANGE, passing \`current\` as old_string and
+\`proposed\` as new_string, both verbatim. Edit requires an exact, unique match
+and fails otherwise — that failure is the safety property this stage relies on,
+so never work around it:
+
+- If a change's \`current\` does not match, report it as skipped with the reason.
+  Do NOT hunt for a passage that looks close and edit that instead. A near match
+  is how a silent corruption enters a manuscript whose numbers must not move.
+- If Edit reports the text is not unique, report it as ambiguous and skip it.
+  Do not disambiguate by picking one.
+- Do not adjust, re-wrap, or "clean up" either string to make an edit land.
+- Apply them in the order given.
+
+Some changes may legitimately fail to match because an earlier change in this
+same list already rewrote overlapping text. That is expected and is exactly what
+you should report, not repair.
+
+Return the ids applied, the ids skipped each with its reason, and nothing else.
 
 ${JSON.stringify(selection.prose.map(c => ({ id: c.id, current: c.current, proposed: c.proposed })), null, 1)}`,
   { agentType: 'apply-integrator', phase: 'Apply', label: 'apply:prose', schema: APPLY_SCHEMA })

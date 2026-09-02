@@ -25,6 +25,13 @@ Consequences worth knowing when you edit this protocol:
   hand-maintained `section_groups.json` went stale the moment a reorganization
   renumbered the paper, and iteration 1's agents were handed scopes naming a
   section that no longer existed. Do not reintroduce a stored copy.
+- **Prose applies through Edit, one call per change.** Edit requires an exact,
+  unique match and fails otherwise, which is the safety property the stage rests
+  on: a change whose `current` no longer matches is reported unapplied, never
+  fuzzy-matched onto a passage that looks close. There is deliberately no
+  applier script — an earlier one carried a whitespace-tolerant fallback, and a
+  near match is exactly how a silent corruption enters a manuscript whose
+  numbers must not move.
 - **Which changes land is decided in the workflow script**, not by a separate
   tool: unanimity among whoever voted on that change, then best-composite wins
   among rival takes on the same passage or reorganization.
