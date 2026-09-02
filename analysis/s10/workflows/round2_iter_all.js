@@ -34,7 +34,7 @@ const DRAFT = (args && args.draft) || 'analysis/s10/S10-WRITEUP-DRAFT.md'
 // amount of downstream voting recovers. Everything else that is not a panel seat
 // — indexing headings, reading back a saved result, applying and verifying — is
 // judgment or mechanics that Opus does well, so it goes there.
-const FAITH_MODEL = 'work/claude-fable-5'
+const FAITH_MODEL = 'work/claude-fable-5-1'
 const WORKER_MODEL = 'work/claude-opus-5'
 
 const READ_CAP_TOKENS = 25000   // the Read tool's hard per-call cap, measured
@@ -188,13 +188,13 @@ const PANELS = {
   ],
   // intermediate: full paper
   '2': [
-    { id: 'fable-5.1-hi', type: 'sub-anthropic-fable', family: 'anthropic', model: 'work/claude-fable-5',     effort: 'high' },
+    { id: 'fable-5.1-hi', type: 'sub-anthropic-fable', family: 'anthropic', model: 'work/claude-fable-5-1',     effort: 'high' },
     { id: 'sol-high',     type: 'sub-openai-high',     family: 'openai',    model: 'chatgpt/gpt-5.6-sol-high' },
     { id: 'grok-4.6-hi',  type: 'sub-xai-high',        family: 'xai',       model: 'grok/grok-4.6-high' },
   ],
   // final: the metered labs join the three subscription seats
   '3': [
-    { id: 'fable-5.1-hi', type: 'sub-anthropic-fable', family: 'anthropic', model: 'work/claude-fable-5',     effort: 'high' },
+    { id: 'fable-5.1-hi', type: 'sub-anthropic-fable', family: 'anthropic', model: 'work/claude-fable-5-1',     effort: 'high' },
     { id: 'sol-high',     type: 'sub-openai-high',     family: 'openai',    model: 'chatgpt/gpt-5.6-sol-high' },
     { id: 'grok-4.6-hi',  type: 'sub-xai-high',        family: 'xai',       model: 'grok/grok-4.6-high' },
     { id: 'gemini',       type: 'panel-google',        family: 'google',    model: 'google/gemini-3.1-pro-preview' },
@@ -554,10 +554,11 @@ that); its support count; and from its verdict, accepted, keeps, n and composite
 Report the largest \`n\` any change in the file received as seats_max, and the
 file's scope id. Do not summarise, judge, or omit entries.`,
         { model: WORKER_MODEL, phase: 'Propose', label: `load:${path.split('/').pop()}`, schema: LOAD_SCHEMA })
-    .then(r => r && ({ scope_id: r.scope_id, source: path, seats_max: r.seats_max,
+    .then(r => r && ({ scope_id: path.split('/').pop().replace(/\.json$/, ''), source: path, seats_max: r.seats_max,
       n_proposals: 0, n_candidates: r.changes.length, n_faith_pass: r.changes.length,
       n_faith_dropped: 0, accepted: r.changes.filter(c => c.accepted).length, self_preference: {},
-      changes: r.changes.map(c => ({ id: c.id, type: c.type, action: c.action, locus: c.locus,
+      changes: r.changes.map(c => ({ id: path.split('/').pop().replace(/\.json$/, '') + '/' + c.id,
+        type: c.type, action: c.action, locus: c.locus,
         current: c.current_key, support: c.support || 1, source: path,
         verdict: { accepted: c.accepted, keeps: c.keeps, n: c.n, composite: c.composite } })) }))
     .catch(e => { log(`load failed for ${path}: ${String(e).slice(0, 120)}`); return null })))
@@ -642,11 +643,14 @@ if (APPLY_OFF || (!selection.prose.length && !selection.structural.length)) {
 // result file, so the applier is pointed at the file and the winning ids rather
 // than handed text the workflow never loaded.
 const payloadFor = (items, fields) => RESUME
-  ? 'They are recorded in these saved result files:\n' +
-    [...new Set(items.map(c => c.source))].map(f => '  ' + f).join('\n') +
-    '\n\nApply the entries with these ids, taking each one\'s text verbatim from the\n' +
-    'file. Ignore every other entry in those files — selection has already happened.\n\n' +
-    items.map(c => '  ' + c.id + '  (' + c.locus + ')').join('\n')
+  ? 'Each is recorded in a saved result file, listed below as\n' +
+    '  <file>  <id in that file>  (<locus>)\n\n' +
+    'Take each one\'s text verbatim from its own file. Candidate ids are only\n' +
+    'unique within a file — C2 exists in every one of them — so never match an id\n' +
+    'without also matching the file it is listed against. Ignore every other entry\n' +
+    'in those files: selection has already happened.\n\n' +
+    items.map(c => '  ' + c.source + '  ' + String(c.id).split('/').pop() +
+                   '  (' + c.locus + ')').join('\n')
   : JSON.stringify(items.map(fields), null, 1)
 
 // ============================== APPLY ======================================
