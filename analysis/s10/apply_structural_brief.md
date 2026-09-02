@@ -1,7 +1,7 @@
 # Applying structural changes — the protocol
 
-Prose rewrites apply mechanically: replace the verbatim `current` passage
-with `proposed`, exactly and unambiguously or not at all. Structural changes cannot — they
+Prose rewrites replace a quoted `current` passage with `proposed`, located by
+locus and quote together rather than by exact match. Structural changes cannot — they
 are natural-language instructions ("move to after §Y", "split before
 '<quote>'"), so an agent executes them by judgment. This file is that agent's
 brief, and the Apply phase of `workflows/round2_iter_all.js` points it at the
@@ -26,10 +26,12 @@ Consequences worth knowing when you edit this protocol:
   hand-maintained `section_groups.json` went stale the moment a reorganization
   renumbered the paper, and iteration 1's agents were handed scopes naming a
   section that no longer existed. Do not reintroduce a stored copy.
-- **Prose applies by exact, unique replacement**, and a change that no longer
-  matches — or matches twice — is reported rather than placed by judgment. An
-  earlier applier script carried a whitespace-tolerant fallback; a near match is
-  exactly how a silent corruption enters a manuscript whose numbers must not move.
+- **Prose applies by judgment from the locus and the quote together.** The
+  quoted `current` may be re-wrapped or drawn from a slightly earlier state of
+  the draft, so it is read as a pointer to the passage rather than matched
+  character by character. What must not move is the content: no number,
+  statistic, sample size, interval or finding changes to make anything fit. Where
+  the target is genuinely ambiguous, the change is skipped and reported.
 - **No standing tooling in the loop.** There is no runner, no stored section
   map, no applier and no checker script. The integrity checks live in the Verify
   prompt and the agent re-checks until a full pass is clean. Prompts say what

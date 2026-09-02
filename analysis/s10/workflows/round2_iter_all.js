@@ -465,19 +465,17 @@ const runScope = async (sc) => {
                              phase: 'Faithfulness', schema: FAITH_SCHEMA }).catch(() => null)))
   const withFaith = candidates.map((c, i) => {
     const f = faiths[i]
-    // current_matches is a HARD gate for prose and advisory for structural. A
-    // prose rewrite is applied by replacing the exact passage it quotes, so a
-    // quote that is not in the manuscript cannot apply — it either silently does
-    // nothing or, worse, lands somewhere that merely looks similar. A structural
-    // change names a section and the applier locates it, so a loose quote there
-    // is survivable. Iteration 1 shipped one prose change whose quoted text had
-    // never been in the draft; it was reported applied and changed nothing.
-    const quoteBad = c.type === 'prose' && f && f.current_matches === false
-    const gate = !!f && f.locatable !== false && f.data_faithful === 'pass' && !quoteBad
+    // current_matches is recorded and reported, but does NOT gate: the applier
+    // works from the locus and the quote together rather than matching character
+    // by character, so a re-wrapped or slightly stale quote is something it can
+    // resolve. Gating on it here would drop changes that are perfectly
+    // applicable. What still gates is the data check and locatability.
+    const gate = !!f && f.locatable !== false && f.data_faithful === 'pass'
     return { ...c, scope: id, faith: f, faith_gate: gate,
              faith_reason: !f ? 'faith_check_errored' : f.locatable === false ? 'not_locatable'
                : f.data_faithful !== 'pass' ? 'data_changed'
-               : quoteBad ? 'quoted_current_not_in_draft' : null }
+               : null,
+             quote_stale: !!f && f.current_matches === false }
   })
   const survivors = withFaith.filter(c => c.faith_gate)
 
@@ -681,19 +679,20 @@ const applyResults = {}
 applyResults.prose = await agent(`ROLE: APPLY PROSE.
 Apply these ${selection.prose.length} unanimously accepted prose rewrites to \`${DRAFT}\`.
 
-Each is a replacement of an exact passage. Replace the passage given as
-\`current\` with the one given as \`proposed\`, both verbatim, in the order listed.
+Each replaces a passage. \`current\` is the passage as the proposer quoted it and
+\`proposed\` is what should stand in its place. Work from the locus and the quote
+together to find the passage the change is actually about, and put the proposed
+text there.
 
-The match must be exact and unambiguous, and that requirement is the safety
-property this stage rests on:
+The quote may not be word-perfect — it can be re-wrapped, or drawn from a
+slightly earlier state of the draft — so judge what it refers to rather than
+matching it character by character. What must not move is the content: apply the
+change as written, and never adjust a number, a statistic, a sample size, an
+interval, or a statement of what was or was not found to make anything fit.
 
-- If a change's \`current\` text no longer appears in the draft, report it as
-  skipped and say so. Do not look for a passage that reads similarly and change
-  that instead — a near match is how a silent corruption enters a manuscript
-  whose numbers must not move.
-- If it appears more than once, report it as ambiguous and skip it. Do not pick
-  one occurrence.
-- Do not adjust, re-wrap or tidy either passage to make a replacement land.
+Where you genuinely cannot tell which passage is meant, or the quote could
+plausibly mean either of two places, say so and skip it. An honest skip is a
+good outcome; a change placed on a guess is not.
 
 Some changes may legitimately fail because an earlier change in this same list
 already rewrote overlapping text. That is expected, and is exactly what you

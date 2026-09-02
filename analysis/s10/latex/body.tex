@@ -556,6 +556,20 @@ tokens (\textasciitilde\(2\times\) all-in)} with no loss --- a saving observed i
 
 \subsection{The register shift starts in 1994--96, decades before the machines}\label{sec:register-shift}
 
+The register\textquotesingle s rise begins around \textbf{1994--96} --- before the consumer web,
+and long before any language model. The dated onset is a property of the
+one series that reaches behind it: UK Commons extended back to 1985, where
+the register \emph{declines} through the late 1980s before turning upward at
+that window (only three chambers reach 1994 at all; the cross-chamber
+evidence for the drift itself is the nineteen-chamber comparison of
+\cref{sec:climb-geography}). Whatever this measures, LLMs did not start it.\footnote{\texttt{python\ long\_\allowbreak{}trend.\allowbreak{}py\ -\allowbreak{}\/\allowbreak{}-\allowbreak{}seg\ uk/\allowbreak{}segments\_\allowbreak{}uk\_\allowbreak{}deep.\allowbreak{}jsonl} for the annual
+  series; the turning point is the minimum of the annual
+  instrument-minus-placebo gap (the script fits no curve), and it lands on
+  1994. A day-clustered bootstrap (\texttt{python\ long\_\allowbreak{}trend\_\allowbreak{}bootstrap.\allowbreak{}py}, 2,000
+  resamples of sitting days within year) puts the minimum at 1994 in 84.8\% of
+  resamples, 1995 in 13.0\% and 1996 in 2.1\% --- so "1994--96" is a genuine
+  {[}1994, 1996{]} interval, not a hedge.}
+
 \textbf{The register instrument is not a detector, and a direct test is why the
 roles are divided.} A simple threshold on the register score --- the study\textquotesingle s
 own 407-word occurrence rate --- separates Pangram-flagged from unflagged
@@ -571,20 +585,6 @@ chance, which is the division of labour the study uses.\footnote{\texttt{python\
   arm) plus the 292 final-run bypass variants; AUC by Mann--Whitney.
   Everything pooled: 0.57. Medians per 100k: controls 3,150; unflagged
   2025--26 prevalence 3,226; flagged 3,869; LLM variants 3,327.}
-
-The register\textquotesingle s rise begins around \textbf{1994--96} --- before the consumer web,
-and long before any language model. The dated onset is a property of the
-one series that reaches behind it: UK Commons extended back to 1985, where
-the register \emph{declines} through the late 1980s before turning upward at
-that window (only three chambers reach 1994 at all; the cross-chamber
-evidence for the drift itself is the nineteen-chamber comparison of
-\cref{sec:climb-geography}). Whatever this measures, LLMs did not start it.\footnote{\texttt{python\ long\_\allowbreak{}trend.\allowbreak{}py\ -\allowbreak{}\/\allowbreak{}-\allowbreak{}seg\ uk/\allowbreak{}segments\_\allowbreak{}uk\_\allowbreak{}deep.\allowbreak{}jsonl} for the annual
-  series; the turning point is the minimum of the annual
-  instrument-minus-placebo gap (the script fits no curve), and it lands on
-  1994. A day-clustered bootstrap (\texttt{python\ long\_\allowbreak{}trend\_\allowbreak{}bootstrap.\allowbreak{}py}, 2,000
-  resamples of sitting days within year) puts the minimum at 1994 in 84.8\% of
-  resamples, 1995 in 13.0\% and 1996 in 2.1\% --- so "1994--96" is a genuine
-  {[}1994, 1996{]} interval, not a hedge.}
 
 \textbf{The ruler, audited --- what the thirty-year rise is made of.} Selected on the post-2022 jump and run backwards, the marker list invites two objections --- that the rise is a few words, and that a list selected on an endpoint would trend by construction --- so both were tested.\footnote{\texttt{python\ build\_\allowbreak{}word\_\allowbreak{}year\_\allowbreak{}counts.\allowbreak{}py} (one scan, 1.62B tokens;
   reproduces the committed series to 0.00 per 100k at the worst year)
@@ -629,6 +629,23 @@ measured with the same ruler.\footnote{\texttt{python\ occurrence\_\allowbreak{}
   most chambers because the study design excluded it as a washout year
   between the 2018--22 and 2024--26 windows.}
 
+\Cref{fig:convergence} draws it: nineteen chambers hold both endpoints of the longest window most of the
+corpus shares --- 2006 to 2026 --- and on that single ruler the pattern is
+convergence: \textbf{the lower a chamber started, the faster it climbed} (Spearman
+between 2006 level and growth \(-0.56\), n = 19; taking the baseline from
+2006--08 means and measuring growth on the disjoint 2010--2026 span --- the
+split that removes regression-to-the-mean coupling --- gives \(-0.51\), n = 18).
+And the convergence sits on a shared direction, not a see-saw: sixteen of
+the nineteen chambers rise on the constant window. The four lowest 2006 starters ---
+UK Commons, Scotland, Northern Ireland, Wales --- are the four fastest
+climbers; only three chambers decline at all (US House, US Senate, Prince
+Edward Island), and none of the nineteen approaches the UK\textquotesingle s +4.0\%/yr.\footnote{\texttt{python\ constant\_\allowbreak{}window\_\allowbreak{}trend.\allowbreak{}py}, reading
+  \texttt{occurrence\_trends.json}; endpoints 2006 and 2026, growth as the
+  geometric rate over the twenty years. South Australia is excluded for
+  missing the 2026 endpoint (its series ends 2025); Ireland and federal
+  Canada for entering late. Tasmania carries \cref{sec:prevalence}\textquotesingle s regime flag; its row
+  is descriptive.}
+
 \begingroup\small
 \begin{longtable}[]{@{}lllll@{}}
 \caption{The constant-window register trend: nineteen chambers, 2006--2026, ordered by growth.}\label{tab:climb}\\
@@ -670,23 +687,6 @@ Prince Edward Island & 1,589 & 1,523 & \(\times\)0.96 & \(-0.2\)\%/yr \\
 \caption{The convergence, drawn as a slopegraph: one line per chamber from its 2006 to its 2026 gap-vocabulary rate (occurrences per 100k words; values exactly as in the table), direct-labelled at both ends, the UK-group climbers and the two flat US chambers emphasised. The fan closes upward: the lowest 2006 starters climb steepest toward the level the United States already held.}
 \label{fig:convergence}
 \end{figure}
-
-\Cref{fig:convergence} draws it: nineteen chambers hold both endpoints of the longest window most of the
-corpus shares --- 2006 to 2026 --- and on that single ruler the pattern is
-convergence: \textbf{the lower a chamber started, the faster it climbed} (Spearman
-between 2006 level and growth \(-0.56\), n = 19; taking the baseline from
-2006--08 means and measuring growth on the disjoint 2010--2026 span --- the
-split that removes regression-to-the-mean coupling --- gives \(-0.51\), n = 18).
-And the convergence sits on a shared direction, not a see-saw: sixteen of
-the nineteen chambers rise on the constant window. The four lowest 2006 starters ---
-UK Commons, Scotland, Northern Ireland, Wales --- are the four fastest
-climbers; only three chambers decline at all (US House, US Senate, Prince
-Edward Island), and none of the nineteen approaches the UK\textquotesingle s +4.0\%/yr.\footnote{\texttt{python\ constant\_\allowbreak{}window\_\allowbreak{}trend.\allowbreak{}py}, reading
-  \texttt{occurrence\_trends.json}; endpoints 2006 and 2026, growth as the
-  geometric rate over the twenty years. South Australia is excluded for
-  missing the 2026 endpoint (its series ends 2025); Ireland and federal
-  Canada for entering late. Tasmania carries \cref{sec:prevalence}\textquotesingle s regime flag; its row
-  is descriptive.}
 
 Three chambers reach further back, and the US point rests on that longer
 window:
@@ -834,7 +834,11 @@ The climb has a floor. Even in the chambers that are flat over time, the registe
 
 Every member-year of speech carries two clocks --- the year the words were \textbf{spoken} and the speaker\textquotesingle s \textbf{birth year} --- and birth predicts the register net of calendar time. Regressing the member-year rate on both together with chamber fixed effects, across all 22 chambers (60,186 member-years, 6,913 members): birth \textbf{+0.86 per 1,000 words per decade} (t = 14.7 clustered on member, 31.9 on raw member-years) against spoken year \textbf{+1.26} (t = 13.4 clustered). A legislator born a decade later uses about +0.86/1,000 more of the register in the same year and chamber; on identical rows the within-chamber correlation is marginally higher with birth (+0.325) than with spoken year (+0.302), and birth is the stronger of the two in 15 of the 22 chambers. †\footnote{\texttt{python\ cohort\_\allowbreak{}vs\_\allowbreak{}period.\allowbreak{}py}. The headline pair is the two-stamp fit: member-year register rate on spoken year and birth year together, chamber fixed effects, word-weighted, with errors both ways --- member-year HC, and clustered on member, the honest form since member-years are repeated draws of the same 6,913 people. All 22 chambers carry member birth years (60,186 member-years after tier-1 keys flagged ambiguous --- two members sharing a surname --- are excluded from the birth join, a filter added 2026-08-26 that also removed 49 impossible-age rows); within-chamber correlations are on the same rows. The script\textquotesingle s three-stamp fit adds entry year --- a second cohort clock, not a confounder --- and it splits the cohort credit rather than removing it (birth +0.69, t 19.3, on the 37,255 entry-censored rows); reported once here and not as the headline, because a career clock absorbing part of a birth clock is re-description, not explanation.}
 
-That single slope is where the question starts, not where it ends. What we want from it is a \textbf{decomposition --- across space, and across time.} Across space: is one gradient shared by every legislature, or is it an average over chambers that behave differently? Across time: is "born later, uses more" about \emph{when a person was born} (cohort), \emph{what year it is} (period), or \emph{how long they have served} (career)? The time question runs into a wall no data removes: age = year \(-\) birth, so age, period and cohort cannot be jointly separated --- a birth-plus-period model and an age-plus-period model reproduce each other\textquotesingle s fits exactly, for every number in this section. There is therefore no single conclusive estimate to report. What there is instead is a family of \textbf{views} --- weighting members equally or by words, following people within their own careers or comparing across them, restricting to the chambers or the cohorts where one clock happens to be pinned. None settles the age/cohort split on its own; taken together they locate the gradient. The rest of this section is that family, each view named for what it is interesting for.
+That single slope is where the question starts, not where it ends. What we want from it is a \textbf{decomposition --- across space, and across time.} Across space: is one gradient shared by every legislature, or is it an average over chambers that behave differently? Across time: is "born later, uses more" about \emph{when a person was born} (cohort), \emph{what year it is} (period), or \emph{how long they have served} (career)?
+
+The time question runs into a wall no data removes: age = year \(-\) birth, so age, period and cohort cannot be jointly separated --- a birth-plus-period model and an age-plus-period model reproduce each other\textquotesingle s fits exactly, for every number in this section. There is therefore no single conclusive estimate to report.
+
+What there is instead is a family of \textbf{views} --- weighting members equally or by words, following people within their own careers or comparing across them, restricting to the chambers or the cohorts where one clock happens to be pinned. None settles the age/cohort split on its own; taken together they locate the gradient. The rest of this section is that family, each view named for what it is interesting for.
 
 \textbf{Across legislatures, the individual gradient is steady where the chamber trend is not.} Group trends diverge enormously across chambers --- \(-173\) to +413 occurrences per 100k per decade --- while the within-year birth gradient sits in one narrow band (+49 to +109) in every chamber, including the two whose group trend is flat. That contrast is the low-variance signature of an individual-level effect (\cref{fig:apc}): the thing that swings wildly at the chamber level barely moves at the person level. †\footnote{\texttt{python\ apc\_\allowbreak{}chamber\_\allowbreak{}decomposition.\allowbreak{}py}, on the five chambers with exact member birth years (37k member-years, \(\geq\)2,000 words each, member-cluster bootstrap CIs); units are instrument occurrences per 100k words per decade throughout --- the same ruler as \cref{sec:climb-geography}. The all-22-chamber figures are the story-neutral accounting at birth-decade resolution; the five-chamber comparison is what separates the components.}
 
@@ -849,7 +853,7 @@ That single slope is where the question starts, not where it ends. What we want 
 \label{fig:apc}
 \end{figure}
 
-\textbf{Following members over their own careers, the register rises --- but that is the calendar tide, not aging.} With member fixed effects, so only a member\textquotesingle s own movement counts, the register rises \textbf{+0.51 per 1,000 per decade} within member (t = 6.0, clustered on member, 8,600 members with three or more years) --- roughly \textbf{40\% of the total calendar rise happens inside continuing careers}, the rest arriving with the composition of the chamber. This view shows sitting members\textquotesingle{} rates rising, not merely that they are replaced. But it comes with a trap: within one career tenure = spoken year \(-\) entry year, so plotting register against length of service splits into two curves that cross. Within a member --- rate against their own career mean --- it \textbf{rises} with tenure (to +2.35 per 1,000 at 30+ years), which is exactly the calendar drift redrawn. Measured against same-year colleagues instead --- rate minus its chamber \(\times\) year mean --- it \textbf{falls}, monotonically, from +0.6 in the first years to \(-2.3\) among the longest-serving. The fall is not seniority wearing the register down: at a fixed year more tenure means an earlier entry cohort, so the downward curve is the cohort gradient seen sideways. †\footnote{\texttt{python\ cohort\_\allowbreak{}vs\_\allowbreak{}period.\allowbreak{}py}, final block. Within-member (member fixed effects) regression of the register rate on spoken year, word-weighted, over every chamber in the panel; members need three or more years to contribute. Standard errors cluster on member. Because the estimate is identified only off a member\textquotesingle s own change, cohort, chamber, seat safety and every other fixed attribute of the member drop out by construction.} †\footnote{\texttt{python\ tenure\_\allowbreak{}profile.\allowbreak{}py}. Entry is a member\textquotesingle s first observed year in a chamber; members present in the chamber\textquotesingle s first covered year are dropped as left-censored (mirrors \texttt{cohort\_\allowbreak{}vs\_\allowbreak{}period.\allowbreak{}py\ -\allowbreak{}\/\allowbreak{}-\allowbreak{}censor\ 1}). Word-weighted; tenure binned 0--2 / 3--5 / 6--9 / 10--14 / 15--19 / 20--29 / 30+; the within-member slope on tenure is +0.36/decade and the period-adjusted slope \(-1.03\)/decade --- the \(-0.95\) tenure test above, drawn.}
+\textbf{Following members over their own careers, the register rises --- but that is the calendar tide, not aging.}~(\cref{fig:tenure}) With member fixed effects, so only a member\textquotesingle s own movement counts, the register rises \textbf{+0.51 per 1,000 per decade} within member (t = 6.0, clustered on member, 8,600 members with three or more years) --- roughly \textbf{40\% of the total calendar rise happens inside continuing careers}, the rest arriving with the composition of the chamber. This view shows sitting members\textquotesingle{} rates rising, not merely that they are replaced. But it comes with a trap: within one career tenure = spoken year \(-\) entry year, so plotting register against length of service splits into two curves that cross. Within a member --- rate against their own career mean --- it \textbf{rises} with tenure (to +2.35 per 1,000 at 30+ years), which is exactly the calendar drift redrawn. Measured against same-year colleagues instead --- rate minus its chamber \(\times\) year mean --- it \textbf{falls}, monotonically, from +0.6 in the first years to \(-2.3\) among the longest-serving. The fall is not seniority wearing the register down: at a fixed year more tenure means an earlier entry cohort, so the downward curve is the cohort gradient seen sideways. †\footnote{\texttt{python\ cohort\_\allowbreak{}vs\_\allowbreak{}period.\allowbreak{}py}, final block. Within-member (member fixed effects) regression of the register rate on spoken year, word-weighted, over every chamber in the panel; members need three or more years to contribute. Standard errors cluster on member. Because the estimate is identified only off a member\textquotesingle s own change, cohort, chamber, seat safety and every other fixed attribute of the member drop out by construction.} †\footnote{\texttt{python\ tenure\_\allowbreak{}profile.\allowbreak{}py}. Entry is a member\textquotesingle s first observed year in a chamber; members present in the chamber\textquotesingle s first covered year are dropped as left-censored (mirrors \texttt{cohort\_\allowbreak{}vs\_\allowbreak{}period.\allowbreak{}py\ -\allowbreak{}\/\allowbreak{}-\allowbreak{}censor\ 1}). Word-weighted; tenure binned 0--2 / 3--5 / 6--9 / 10--14 / 15--19 / 20--29 / 30+; the within-member slope on tenure is +0.36/decade and the period-adjusted slope \(-1.03\)/decade --- the \(-0.95\) tenure test above, drawn.}
 
 \begin{figure}[htbp]
 \centering
@@ -858,7 +862,7 @@ That single slope is where the question starts, not where it ends. What we want 
 \label{fig:tenure}
 \end{figure}
 
-\textbf{Splitting that career drift by birth cohort, every cohort rides the tide up --- but not in every chamber.} Running the same within-member estimator separately within each birth cohort (so the cohort numbers decompose the pooled +0.57 rather than averaging noisy per-member slopes) gives a positive-or-flat lifetime drift for every cohort, a shallow hump peaking at the 1950s-born (+0.88) and tapering at both thin tails. So the gain a member makes over their career barely depends on when they were born --- nearly everyone absorbs the drift they serve through. Interesting for the caveat it forces: the drift is \textbf{positive within members in only 10 of the 22 chambers}, carried by the two largest (UK +1.9, US House +0.5) while most of the smaller chambers --- the Canadian provinces especially --- run negative, so "sitting members convert" is a pooled, large-chamber statement rather than a universal one. And it is calendar drift ridden inside a career, not proven personal conversion: a member serving 2006--2026 gains register partly because the register rose under everyone. †\footnote{\texttt{python\ lifetime\_\allowbreak{}drift\_\allowbreak{}by\_\allowbreak{}cohort.\allowbreak{}py}. The committed within-member estimator (\texttt{cohort\_\allowbreak{}vs\_\allowbreak{}period.\allowbreak{}within\_\allowbreak{}member}) restricted to each birth cohort\textquotesingle s members --- demean rate and spoken year within each member, word-weighted, pool, per decade --- so each cohort is a decomposition of the pooled slope, not a mean of per-member slopes. Members need \(\geq\)3 years at \(\geq\)2,000 words; member-bootstrap CIs, seed 29. Pooled +0.57 reproduces the committed within-member figure; positive within-member drift in 10 of 22 chambers (per-chamber tally in the script output).}
+\textbf{Splitting that career drift by birth cohort, every cohort rides the tide up --- but not in every chamber.}~(\cref{fig:lifedrift}) Running the same within-member estimator separately within each birth cohort (so the cohort numbers decompose the pooled +0.57 rather than averaging noisy per-member slopes) gives a positive-or-flat lifetime drift for every cohort, a shallow hump peaking at the 1950s-born (+0.88) and tapering at both thin tails. So the gain a member makes over their career barely depends on when they were born --- nearly everyone absorbs the drift they serve through. Interesting for the caveat it forces: the drift is \textbf{positive within members in only 10 of the 22 chambers}, carried by the two largest (UK +1.9, US House +0.5) while most of the smaller chambers --- the Canadian provinces especially --- run negative, so "sitting members convert" is a pooled, large-chamber statement rather than a universal one. And it is calendar drift ridden inside a career, not proven personal conversion: a member serving 2006--2026 gains register partly because the register rose under everyone. †\footnote{\texttt{python\ lifetime\_\allowbreak{}drift\_\allowbreak{}by\_\allowbreak{}cohort.\allowbreak{}py}. The committed within-member estimator (\texttt{cohort\_\allowbreak{}vs\_\allowbreak{}period.\allowbreak{}within\_\allowbreak{}member}) restricted to each birth cohort\textquotesingle s members --- demean rate and spoken year within each member, word-weighted, pool, per decade --- so each cohort is a decomposition of the pooled slope, not a mean of per-member slopes. Members need \(\geq\)3 years at \(\geq\)2,000 words; member-bootstrap CIs, seed 29. Pooled +0.57 reproduces the committed within-member figure; positive within-member drift in 10 of 22 chambers (per-chamber tally in the script output).}
 
 \begin{figure}[htbp]
 \centering
@@ -867,260 +871,11 @@ That single slope is where the question starts, not where it ends. What we want 
 \label{fig:lifedrift}
 \end{figure}
 
-\textbf{What the gradient is not.} It is not ministerial office: in the chambers whose record marks rank it \emph{strengthens} when office years are removed, and office-holders use less of the register than backbenchers, not more (Appendix~\ref{sec:cohort-ministerial}). It holds within year and province at \textbf{+1.05 per 1,000 per decade} (t \(\approx\) 8.5, clustered on member), unmoved by occupation and education controls --- which \emph{strengthen} it rather than explain it away (\cref{sec:class}). And the mechanism behind any component stays open: three exposure tests failed to isolate one (Appendix~\ref{app:null}). †\footnote{\texttt{python\ formation\_\allowbreak{}window.\allowbreak{}py}, clustered on member (CR1): birth-decade coefficient +1.05 per 1,000 words per decade, t = +8.46 unadjusted and +9.23 with occupation and education controls. The controls \emph{strengthen} the cohort term (coefficient +1.05 \(\rightarrow\) +1.14), which is why they are reported as running the wrong way for a selection story. The member-year HC1 errors the script also prints inflate the t to +17.7 --- a third instance of the unclustered-inference pattern flagged in Appendix~\ref{app:null}, though here, with 888 member clusters, the conclusion is unmoved.}
+\textbf{What the gradient is not.} It is not ministerial office: in the chambers whose record marks rank it \emph{strengthens} when office years are removed, and office-holders use less of the register than backbenchers, not more (Appendix~\ref{sec:cohort-ministerial}). It holds within year and province at \textbf{+1.05 per 1,000 per decade} (t \(\approx\) 8.5, clustered on member), unmoved by occupation and education controls --- which \emph{strengthen} it rather than explain it away (\cref{sec:four-predictors}). And the mechanism behind any component stays open: three exposure tests failed to isolate one (Appendix~\ref{app:null}). †\footnote{\texttt{python\ formation\_\allowbreak{}window.\allowbreak{}py}, clustered on member (CR1): birth-decade coefficient +1.05 per 1,000 words per decade, t = +8.46 unadjusted and +9.23 with occupation and education controls. The controls \emph{strengthen} the cohort term (coefficient +1.05 \(\rightarrow\) +1.14), which is why they are reported as running the wrong way for a selection story. The member-year HC1 errors the script also prints inflate the t to +17.7 --- a third instance of the unclustered-inference pattern flagged in Appendix~\ref{app:null}, though here, with 888 member clusters, the conclusion is unmoved.}
 
-\textbf{What the family supports, and what it cannot.} No view settles the age-versus-cohort split; the identification wall stands, and the paper does not pretend otherwise. But the views are consistent and mutually reinforcing: a juniority gradient that is steady across legislatures at the individual level (space), exists before the models (pre-drift), bends upward exactly as drift-formed cohorts arrive (the one identification-free time statement), and is one members ride up within their own careers rather than only through replacement. The single citable figure --- stated as the identified cohort\(-\)age combination, not a pure cohort effect --- is birth-decade \textbf{+0.92 (t = 12.5)} in the member-year panel with year fixed effects, carried in \cref{sec:class} beside the other member-level predictors.
+\textbf{What the family supports, and what it cannot.} No view settles the age-versus-cohort split; the identification wall stands, and the paper does not pretend otherwise. But the views are consistent and mutually reinforcing: a juniority gradient that is steady across legislatures at the individual level (space), exists before the models (pre-drift), bends upward exactly as drift-formed cohorts arrive (the one identification-free time statement), and is one members ride up within their own careers rather than only through replacement. The single citable figure --- stated as the identified cohort\(-\)age combination, not a pure cohort effect --- is birth-decade \textbf{+0.92 (t = 12.5)} in the member-year panel with year fixed effects, carried in \cref{sec:four-predictors} beside the other member-level predictors.
 
-\subsection{Socioeconomic position as organisational altitude: the register peaks at the insulated middle, and free work sits lowest}\label{sec:occupation}
-
-The register peaks at the insulated middle of the organisational hierarchy and sits lowest among occupations that stand outside it. Each legislator\textquotesingle s prior occupation, coded to O*NET, is scored on an organisational-\textbf{altitude} ladder --- bottom, middle, top --- plus \textbf{free work}, the off-ladder level categorical class schemas do not carry. The ordering \textbf{free \textless{} front-line \textless{} corporate} was preregistered before any occupational element was joined to the register, and found. The ancestry is Weeden and Grusky\textquotesingle s\cite{weeden2005} case for measuring class at the disaggregated occupation, and Kohn and Schooler\textquotesingle s\cite{kohn1983} occupational self-direction, where closeness of supervision explained class differences in psychology; what the measure adds is distance from the hierarchy, not only altitude within it. What follows is the U over those levels, the off-ladder level\textquotesingle s stability across three decades, and, in the joint model below, the absorption of the class label the measure refines.
-
-\textbf{The measure follows the discovery in reverse order.} The register\textquotesingle s
-occupational shape was first seen through the class coding (\cref{sec:class}): an
-inverted U, peak one rung below the top, with no mechanism attached. This
-arm registered one, built the instrument to measure it, and ran --- the
-registration carries every revision and amendment dated,\footnote{\texttt{plans/\allowbreak{}PREREG-\allowbreak{}occupational-\allowbreak{}accountability.\allowbreak{}md} is the
-  registration; METHODOLOGY §6.1c is the method record; the member table
-  is \texttt{prereg\_\allowbreak{}member\_\allowbreak{}table.\allowbreak{}json}.} and every
-number below reproduces from a committed script on a single member table
-(one join; n = 4,762 members with register and
-instrument, 3,594 with every covariate).
-
-\textbf{The instrument, in one paragraph.} Each legislator\textquotesingle s prior occupation,
-double-blind coded to an O*NET-SOC code, joins 64 O*NET elements whose
-assignment to four components was itself blind-derived by three independent
-coding workflows over the full 295-element universe: \textbf{U} upward (advising
-without the final say; discretion reverse-scored), \textbf{L} lateral (external
-service), \textbf{D} downward (command), \textbf{N} undirected (organisational
-account-giving and contact). From the components and from an independent
-blind coding of hierarchy positions come the study\textquotesingle s registered structure ---
-\textbf{four levels, built two semi-independent ways}: the \emph{theoretical ladder}
-(free / bottom / middle / top composed from the components) and the \emph{folk
-ladder} (the same four levels scored from the element signatures of coders
-asked to concretize the everyday image of a corporate hierarchy, never told
-the register or the hypothesis existed) --- plus
-the \textbf{apex delta} (MIDDLE \(-\) TOP), registered in words as "insulated command
-tracks more register than exposed command."
-
-\textbf{The four-level U is the result, and its registration is a timeline.} The
-middle-peak prediction --- free and the top low, the middle the peak --- was
-stated in the session log an hour before the first fit; the folk ladder and
-the apex delta entered the committed pre-registration twelve minutes before
-it; the theoretical ladder\textquotesingle s explicit sign declarations were formalised in
-the post-Stage-1 amendment. The exact record, to the minute, is in the
-footnote.\footnote{The registration record, all times 2026-08-18 US-Pacific, from the
-  session transcript and git. \textbf{12:04}, session log, before any fit or
-  instrument freeze: "I would actually expect the highest reading to come
-  with middle managers with workers below them" (Matthew). \textbf{12:41}: the
-  four-level structure directed ("three levels of corporate and a free").
-  \textbf{13:03}: the charged/uncharged horse race directed. \textbf{13:05}, commit
-  \texttt{f10d502}: the folk ladder and the apex delta ("insulated command
-  tracks more register than exposed command") committed to the prereg.
-  \textbf{13:17}, \texttt{ad303ad}: Stage 1 run and unblinded. \textbf{13:36}, \texttt{53a02ff}:
-  amendment adding the theoretical ladder and the explicit middle+/free\(-\)
-  sign declarations, self-labelled as post-unblinding. \textbf{17:21},
-  \texttt{ccba83d}: the ruling recording the U as the design intent. So the
-  prediction precedes the data by 73 minutes in the log, and the formal
-  document carries the apex delta pre-run; what is post-run is
-  formalisation, not prediction. The meta-point is worth naming: under
-  machine execution with pervasive logging, the timestamped record that
-  pre-registration exists to create is produced continuously, and the
-  spirit of the practice --- predictions verifiably preceding data --- is
-  checkable to the minute without the formal document as the only witness.} Each
-level entered alone (standardised; n = 4,762, full-covariate slopes at
-n = 3,594):
-
-\begingroup\small
-\begin{longtable}[]{@{}lll@{}}
-\caption{The occupational altitude ladder: register by level on both constructions (plotted in \cref{fig:altitude}).}\label{tab:altitude}\\
-\toprule\noalign{}
-level & theoretical ladder & folk ladder \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-level & theoretical ladder & folk ladder \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-free & \(-0.060\) (t \(-4.2\)) & \(-0.066\) (t \(-4.7\)) \\
-bottom & \(-0.021\) (t \(-1.5\)) & +0.010 (t +0.7) \\
-\textbf{middle} & \textbf{+0.029 (t +2.0)} & \textbf{+0.028 (t +2.0)} \\
-top & +0.010 (t +0.7) & +0.021 (t +1.5) \\
-\end{longtable}
-\endgroup
-
-Middle peak, top below it, free at the floor, bottom indistinguishable from
-zero --- the II-over-I crossover in occupational form, from two instruments
-built by different processes, agreeing at the peak to the third decimal.
-Both middles survive the full covariate set (+0.041 and +0.042, t 2.6
-each); under covariates the shape sharpens (bottom mildly negative, top
-close behind middle), and the middle-over-top gap\textquotesingle s powered test is the
-delta. The registered \emph{continuous} form of the interior peak --- the altitude
-quadratic --- found nothing (Appendix~\ref{app:null}18); the discrete levels and the
-relative contrast carry the claim (\cref{fig:altitude}).
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.85\linewidth]{altitude_u.png}
-\caption{The occupational register profile. Each legislator\textquotesingle s prior occupation, coded to O*NET, is scored on a four-level altitude ladder (free / bottom / middle / top of an organisational hierarchy) two semi-independent ways --- the theoretical ladder and the folk ladder --- and both peak at the insulated middle, dipping at the exposed top. Points are each level\textquotesingle s base slope entered alone (standardised, n = 4,762); bars \(\pm\)1 se. The levels are individually noisy but jointly significant; the powered claim is the apex delta (middle \(-\) top), +0.049 (t 3.3), rising to +0.067 (t 3.9) under full covariates.}
-\label{fig:altitude}
-\end{figure}
-
-\textbf{The delta is the study\textquotesingle s most covariate-robust occupational number.}
-Registered in words and observed +0.049 (t 3.3) raw; \textbf{+0.067 (t 3.9)}
-with cohort, class, education and prominence all present; right-signed and
-nominally significant in 16 of 16 covariate specifications; it absorbs the
-theoretical middle entirely when both enter. Dropped from the grand model
-it costs as much adjusted \(R^{2}\) as the entire six-dummy class block (.0033 vs
-.0038); education is spent once class and the delta are present (.0004).
-Its group form --- members split by relative inwardness, insulated against
-exposed --- puts the insulated cell above the rest (t 2.1 on the gap), with
-one leg farmer-driven and reported as such: the 199 members the instrument
-reads as agricultural managers sit in the exposed cell and drag it, exactly
-the headwind the registration\textquotesingle s prediction 5 named in advance.
-
-\textbf{Era-resolved, the instrument\textquotesingle s carrying level is stable.} The joint
-model\textquotesingle s surviving occupational block is the folk ladder, and its standing
-term is the free level; asked era by era --- each level\textquotesingle s slope entered
-alone, the figure above\textquotesingle s own estimand, on the same member-bin values and
-six equal bins as \cref{sec:class}\textquotesingle s class-era panels --- free professionals sit below their
-chamber-and-period peers in every half-decade (\(-0.07\) to \(-0.11\) per sd,
-individually significant in all six bins), with no trend into the machine
-era, while bottom, middle and top stay small and flat (formally: no
-level\textquotesingle s era trend approaches significance --- free z +1.2, middle \(-1.0\),
-top \(-0.8\), apex delta \(-0.2\)). Like the class shape, the occupational shape
-was in place decades before the machines.\footnote{\texttt{python\ build\_\allowbreak{}ladder\_\allowbreak{}by\_\allowbreak{}era.\allowbreak{}py}, then
-  \texttt{python\ plot\_\allowbreak{}ladder\_\allowbreak{}by\_\allowbreak{}era\_\allowbreak{}panels.\allowbreak{}py}.}
-
-\textbf{And it holds chamber by chamber, by the test that needs no
-normalization.} The class arm\textquotesingle s crossover claim rests on a within-chamber
-meta-analysis; the measure gets the same test. Within each chamber --- each
-legislature its own control --- the member-level slope of the register on the
-free level is \textbf{negative in 21 of 22 chambers} (individually significant
-in Queensland and Scotland), and the inverse-variance meta across chambers
-is \textbf{\(-0.070\) per sd, z = \(-5.0\)}; the apex delta pools at \textbf{+0.059, z =
-+4.2}. Split by chamber group the replication is a sweep --- negative in every
-group: the nine 2026 additions (meta z \(-4.1\)), the eight Canadian provinces
-(z \(-2.5\)), and the five tier-1 national chambers (z \(-2.2\)).\footnote{\texttt{python\ ladder\_\allowbreak{}chamber\_\allowbreak{}meta.\allowbreak{}py} --- per-chamber OLS slope of
-  member z on the folk free level (per sd within chamber, HC1),
-  inverse-variance pooled; the apex-delta meta from the same cells.}
-
-\textbf{Against the market-fitted measures.} The classical anchors join at
-occupation level through the study\textquotesingle s existing SOC coding --- no new member
-placement anywhere --- via the BLS crosswalk to ISCO-08 for Ganzeboom\textquotesingle s ISEI
-and Treiman\textquotesingle s SIOPS prestige scale, OES national median wages, and O*NET\textquotesingle s
-Job Zone and required-education categories.\footnote{\texttt{python\ build\_\allowbreak{}market\_\allowbreak{}join.\allowbreak{}py} then
-  \texttt{python\ market\_\allowbreak{}convergence.\allowbreak{}py}; source files and fetch provenance in
-  \texttt{market\_\allowbreak{}anchors/\allowbreak{}PROVENANCE.\allowbreak{}md}. Coverage: 351 of 401 study occupations
-  carry level scores; ISEI misses 15\% of codes because the official
-  crosswalk is 2010-SOC-vintage against the study\textquotesingle s 2018-based O*NET
-  codes; SOC codes mapping to several ISCO-08 codes (63) take the mean
-  of the mapped scores.} Convergently, the
-ladder sits inside the socioeconomic family without being any member of
-it: member-weighted Cramér\textquotesingle s V between the folk argmax level and each
-anchor runs 0.31 (wage quartiles) to 0.47 (SIOPS quartiles). Discriminantly,
-it is not the old ingredients recombined: regressing each level score on
-occupational education and log wage leaves \(R^{2}\) at 0.32--0.45, so more than
-half of every level\textquotesingle s variance lies off the education--earnings plane --- and
-the free level is not self-employment in disguise (free-argmax members are
-petty bourgeois or farmers at 6\%, against the panel\textquotesingle s 14\%). The extremes
-are face-valid and occasionally sharper than the schemas: painters and
-craft artists score free-high while actors and dancers --- performers, who
-work under direction --- score free-low, a distinction no market category
-draws. And in the joint model the asymmetry is complete: entered as
-member-weighted quartile dummies beside the committed blocks, \textbf{ISEI and
-wage collapse (block p = 0.31 and 0.35) while the folk ladder stands
-(p = 0.017, its free level \(-0.089\), t \(-3.08\), with both anchors in)} ---
-alone on the same 3,276 members all three are strong (folk \(p < 10^{-7}\), ISEI
-\(p < 10^{-6}\), wage p = 0.003). The fitted scales are absorbed by the study\textquotesingle s
-covariates; the blind measure is not absorbed by the fitted
-scales.\footnote{\texttt{python\ market\_joint.py} --- the committed member-level spec
-  (z within chamber, equal weight, HC1, block Walds) on the 3,276
-  members carrying every block, with ISEI and log-wage entered as
-  member-weighted quartile dummies, Q1 baseline.}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.85\linewidth]{ladder_by_era_panels.png}
-\caption{The coded altitude ladder across eras: each level\textquotesingle s slope entered alone
-(per sd, HC1 errors), on the same member-bin values and six equal five-year
-bins as the class panels; \(\pm\)1 se bands, dotted member-weighted linear
-trends. The free level --- professionals off the organisational ladder ---
-carries the instrument in every half-decade; the three on-ladder levels
-stay small and flat.}
-\label{fig:ladder-era}
-\end{figure}
-
-\textbf{The gradient nests inside class, which is what "the class U was
-occupation all along" requires.} The delta\textquotesingle s slope within class II alone is
-+0.076 (t 3.3) --- the class peak\textquotesingle s own interior carries the occupational
-gradient --- and +0.066 (t 4.0) with class fixed effects. Prediction 1 (the
-occupational block adds to EGP) confirmed in 16 of 16 paired
-specifications.
-
-\textbf{The horse race and the pattern.} The uncharged (coded) instrument wins
-the registered AIC comparison narrowly (\(-205.0\) vs \(-198.6\)); encompassing
-tests are significant in both directions --- neither instrument subsumes the
-other. The registered four-sign component pattern (U+ L\(-\) D+ N+) holds in
-25\% of pattern-eligible lattice specifications, permutation p = 0.087
-across 2,000 within-chamber shuffles --- suggestive, unconfirmed. Under the
-covariate lattice, L\textquotesingle s raw positivity dissolves (median +0.012,
-direction-unstable): the external-service gradient was carrying class and
-education correlation rather than surviving it, while U and N stay
-right-signed in 100\% of specifications and D turns mildly positive
-throughout.
-
-\textbf{Era restriction} (2025--26 speech only, n = 1,000): cohort deflates to
-its period-purged size (+0.138/sd, t 4.3 --- the career figure of +0.383 was
-mostly period mixing), the class-II contrast doubles to +0.203 (t 3.0), and
-the delta persists directionally at era power (+0.061, t 1.7; the career
-effect predicts t \(\approx\) 2.0 at this n). In the spike window, class II is the
-strongest social-position covariate; the insulation contrast holds its size
-without independent confirmation.
-
-One drafting generation of the registration expressed the peak claim as a
-linear three-profile rank; that operationalization failed its own test and
-the framing is retired --- Appendix~\ref{app:superseded}10 preserves its numbers, and the
-registration\textquotesingle s post-run amendment records the oversight and the provenance
-ruling. Failed registered predictions are in Appendix~\ref{app:null} (the altitude
-quadratic, the autonomy asymmetry, nominal-vs-effective autonomy). Scale
-for all of it: \cref{sec:limits}\textquotesingle s calibration bullet --- small effects by any benchmark,
-reliably estimated, structurally replicated, floors rather than
-ceilings.\footnote{\texttt{python\ prereg\_\allowbreak{}stage1.\allowbreak{}py}, \texttt{prereg\_stage2.py},
-  \texttt{prereg\_\allowbreak{}synthesis\_\allowbreak{}check.\allowbreak{}py}, \texttt{prereg\_\allowbreak{}covariate\_\allowbreak{}strength.\allowbreak{}py},
-  \texttt{prereg\_\allowbreak{}strength\_\allowbreak{}2526.\allowbreak{}py}; results snapshots
-  \texttt{prereg\_\allowbreak{}stage1\_\allowbreak{}results.\allowbreak{}txt}, \texttt{prereg\_\allowbreak{}stage2\_\allowbreak{}results.\allowbreak{}txt}. The join and
-  its drift guard: \texttt{prereg\_join.py} (METHODOLOGY §6.1b addendum for the
-  two join facts). Instrument derivation artifacts:
-  \texttt{element\_audit\_*.json}, \texttt{element\_levels.json},
-  \texttt{instrument\_\allowbreak{}final\_\allowbreak{}cells.\allowbreak{}json}.}
-
-\textbf{The coarsest cut is the strongest single correlate: the register is the
-language of the office.} O*NET\textquotesingle s \emph{Indoors, Environmentally Controlled} ---
-planted in the element pool as a deliberately atheoretical marker of office
-work --- carries more register per standard deviation than any single
-instrument component (+0.101, t +7.4); \emph{Spend Time Sitting}, the other
-planted marker, is null (t +0.4). This is the occupational finding at its
-coarsest resolution, a restatement rather than a rival: office work carries
-the register wholesale, and the structure this section measures is the shape
-inside the office --- the insulated middle over the exposed top, both of them
-office rungs, and free work lowest. In the joint model the office cut adds
-little that the existing covariates do not already carry (+0.039 per sd,
-t +1.9, \(\Delta\text{adj}R^{2}\) +0.0007), and the apex delta stays the strongest occupational
-term in that model (t +2.4, \(\Delta\text{adj}R^{2}\) +0.0011) --- birth decade remains the
-overwhelming axis (t +24.5, carrying 0.144 of the model\textquotesingle s 0.165).\footnote{\texttt{python\ prereg\_\allowbreak{}negative\_\allowbreak{}controls.\allowbreak{}py}; n = 4,762, estimator
-  parity-guarded against stage 1 (reproduces MIDDLE +0.028, t 2.0).
-  Entered jointly with Indoors, the apex delta reads +0.033 (t +2.2) and
-  free \(-0.062\) (t \(-4.4\)). The pre-registration had planted these two
-  elements as negative controls with an office-job interpretation rule;
-  the adjudication (2026-08-24, logged in the prereg) rejects that rule\textquotesingle s
-  implication --- office language is the finding restated, not a control on
-  it --- and the result is reported here as description. Joint-model numbers:
-  \texttt{python\ prereg\_\allowbreak{}indoors\_\allowbreak{}joint.\allowbreak{}py} (n = 3,594, the covariate panel; the
-  grand model mirrors \texttt{prereg\_\allowbreak{}covariate\_\allowbreak{}strength.\allowbreak{}py}).}
-
-\subsection{The class coding: the same shape at coarser grain --- education, and the joint model}\label{sec:class}
+\subsection{The class coding: the same shape at coarser grain --- education}\label{sec:class}
 
 The categorical schema that first revealed the gradient is kept here in abbreviated form: it shows the same shape as the altitude measure at coarser grain, and in the joint model below the measure absorbs it. Class predicts the register as a joint block --- an inverted U, peaking one rung below the top --- and the apparent education gradient does not survive its controls. On the eight provinces, class, education and prominence appeared to predict the register at t = 3--4; clustering by member and replication then removed every individual certainty. The joint tests say otherwise:
 
@@ -1326,7 +1081,256 @@ graduate, not professional" are two descriptions of one group, so whichever
 enters the model first absorbs the other. Education\textquotesingle s shape is real and
 independently measured; its apparent separate effect is not.
 
-\subsubsection{All four predictors at once}\label{sub:four-predictors}
+\subsection{Socioeconomic position as organisational altitude: the register peaks at the insulated middle, and free work sits lowest}\label{sec:occupation}
+
+The register peaks at the insulated middle of the organisational hierarchy and sits lowest among occupations that stand outside it. Each legislator\textquotesingle s prior occupation, coded to O*NET, is scored on an organisational-\textbf{altitude} ladder --- bottom, middle, top --- plus \textbf{free work}, the off-ladder level categorical class schemas do not carry. The ordering \textbf{free \textless{} front-line \textless{} corporate} was preregistered before any occupational element was joined to the register, and found. The ancestry is Weeden and Grusky\textquotesingle s\cite{weeden2005} case for measuring class at the disaggregated occupation, and Kohn and Schooler\textquotesingle s\cite{kohn1983} occupational self-direction, where closeness of supervision explained class differences in psychology; what the measure adds is distance from the hierarchy, not only altitude within it. What follows is the U over those levels, the off-ladder level\textquotesingle s stability across three decades, and, in the joint model below, the absorption of the class label the measure refines.
+
+\textbf{The measure follows the discovery.} The register\textquotesingle s
+occupational shape was first seen through the class coding (\cref{sec:class}): an
+inverted U, peak one rung below the top, with no mechanism attached. This
+arm registered one, built the instrument to measure it, and ran --- the
+registration carries every revision and amendment dated,\footnote{\texttt{plans/\allowbreak{}PREREG-\allowbreak{}occupational-\allowbreak{}accountability.\allowbreak{}md} is the
+  registration; METHODOLOGY §6.1c is the method record; the member table
+  is \texttt{prereg\_\allowbreak{}member\_\allowbreak{}table.\allowbreak{}json}.} and every
+number below reproduces from a committed script on a single member table
+(one join; n = 4,762 members with register and
+instrument, 3,594 with every covariate).
+
+\textbf{The instrument, in one paragraph.} Each legislator\textquotesingle s prior occupation,
+double-blind coded to an O*NET-SOC code, joins 64 O*NET elements whose
+assignment to four components was itself blind-derived by three independent
+coding workflows over the full 295-element universe: \textbf{U} upward (advising
+without the final say; discretion reverse-scored), \textbf{L} lateral (external
+service), \textbf{D} downward (command), \textbf{N} undirected (organisational
+account-giving and contact). From the components and from an independent
+blind coding of hierarchy positions come the study\textquotesingle s registered structure ---
+\textbf{four levels, built two semi-independent ways}: the \emph{theoretical ladder}
+(free / bottom / middle / top composed from the components) and the \emph{folk
+ladder} (the same four levels scored from the element signatures of coders
+asked to concretize the everyday image of a corporate hierarchy, never told
+the register or the hypothesis existed) --- plus
+the \textbf{apex delta} (MIDDLE \(-\) TOP), registered in words as "insulated command
+tracks more register than exposed command."
+
+\textbf{The four-level U is the result, and its registration is a timeline.} The
+middle-peak prediction --- free and the top low, the middle the peak --- was
+stated in the session log an hour before the first fit; the folk ladder and
+the apex delta entered the committed pre-registration twelve minutes before
+it; the theoretical ladder\textquotesingle s explicit sign declarations were formalised in
+the post-Stage-1 amendment. The exact record, to the minute, is in the
+footnote.\footnote{The registration record, all times 2026-08-18 US-Pacific, from the
+  session transcript and git. \textbf{12:04}, session log, before any fit or
+  instrument freeze: "I would actually expect the highest reading to come
+  with middle managers with workers below them" (Matthew). \textbf{12:41}: the
+  four-level structure directed ("three levels of corporate and a free").
+  \textbf{13:03}: the charged/uncharged horse race directed. \textbf{13:05}, commit
+  \texttt{f10d502}: the folk ladder and the apex delta ("insulated command
+  tracks more register than exposed command") committed to the prereg.
+  \textbf{13:17}, \texttt{ad303ad}: Stage 1 run and unblinded. \textbf{13:36}, \texttt{53a02ff}:
+  amendment adding the theoretical ladder and the explicit middle+/free\(-\)
+  sign declarations, self-labelled as post-unblinding. \textbf{17:21},
+  \texttt{ccba83d}: the ruling recording the U as the design intent. So the
+  prediction precedes the data by 73 minutes in the log, and the formal
+  document carries the apex delta pre-run; what is post-run is
+  formalisation, not prediction. The meta-point is worth naming: under
+  machine execution with pervasive logging, the timestamped record that
+  pre-registration exists to create is produced continuously, and the
+  spirit of the practice --- predictions verifiably preceding data --- is
+  checkable to the minute without the formal document as the only witness.} Each
+level entered alone (standardised; n = 4,762, full-covariate slopes at
+n = 3,594):
+
+\begingroup\small
+\begin{longtable}[]{@{}lll@{}}
+\caption{The occupational altitude ladder: register by level on both constructions (plotted in \cref{fig:altitude}).}\label{tab:altitude}\\
+\toprule\noalign{}
+level & theoretical ladder & folk ladder \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+level & theoretical ladder & folk ladder \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+free & \(-0.060\) (t \(-4.2\)) & \(-0.066\) (t \(-4.7\)) \\
+bottom & \(-0.021\) (t \(-1.5\)) & +0.010 (t +0.7) \\
+\textbf{middle} & \textbf{+0.029 (t +2.0)} & \textbf{+0.028 (t +2.0)} \\
+top & +0.010 (t +0.7) & +0.021 (t +1.5) \\
+\end{longtable}
+\endgroup
+
+Middle peak, top below it, free at the floor, bottom indistinguishable from
+zero --- the II-over-I crossover in occupational form, from two instruments
+built by different processes, agreeing at the peak to the third decimal.
+Both middles survive the full covariate set (+0.041 and +0.042, t 2.6
+each); under covariates the shape sharpens (bottom mildly negative, top
+close behind middle), and the middle-over-top gap\textquotesingle s powered test is the
+delta. The registered \emph{continuous} form of the interior peak --- the altitude
+quadratic --- found nothing (Appendix~\ref{app:null}18); the discrete levels and the
+relative contrast carry the claim (\cref{fig:altitude}).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\linewidth]{altitude_u.png}
+\caption{The occupational register profile. Each legislator\textquotesingle s prior occupation, coded to O*NET, is scored on a four-level altitude ladder (free / bottom / middle / top of an organisational hierarchy) two semi-independent ways --- the theoretical ladder and the folk ladder --- and both peak at the insulated middle, dipping at the exposed top. Points are each level\textquotesingle s base slope entered alone (standardised, n = 4,762); bars \(\pm\)1 se. The levels are individually noisy but jointly significant; the powered claim is the apex delta (middle \(-\) top), +0.049 (t 3.3), rising to +0.067 (t 3.9) under full covariates.}
+\label{fig:altitude}
+\end{figure}
+
+\textbf{The delta is the study\textquotesingle s most covariate-robust occupational number.}
+Registered in words and observed +0.049 (t 3.3) raw; \textbf{+0.067 (t 3.9)}
+with cohort, class, education and prominence all present; right-signed and
+nominally significant in 16 of 16 covariate specifications; it absorbs the
+theoretical middle entirely when both enter. Dropped from the grand model
+it costs as much adjusted \(R^{2}\) as the entire six-dummy class block (.0033 vs
+.0038); education is spent once class and the delta are present (.0004).
+Its group form --- members split by relative inwardness, insulated against
+exposed --- puts the insulated cell above the rest (t 2.1 on the gap), with
+one leg farmer-driven and reported as such: the 199 members the instrument
+reads as agricultural managers sit in the exposed cell and drag it, exactly
+the headwind the registration\textquotesingle s prediction 5 named in advance.
+
+\textbf{Era-resolved, the instrument\textquotesingle s carrying level is stable.} The joint
+model\textquotesingle s surviving occupational block is the folk ladder, and its standing
+term is the free level; asked era by era --- each level\textquotesingle s slope entered
+alone, the figure above\textquotesingle s own estimand, on the same member-bin values and
+six equal bins as \cref{sec:class}\textquotesingle s class-era panels --- free professionals sit below their
+chamber-and-period peers in every half-decade (\(-0.07\) to \(-0.11\) per sd,
+individually significant in all six bins), with no trend into the machine
+era, while bottom, middle and top stay small and flat (formally: no
+level\textquotesingle s era trend approaches significance --- free z +1.2, middle \(-1.0\),
+top \(-0.8\), apex delta \(-0.2\)). Like the class shape, the occupational shape
+was in place decades before the machines.~(\cref{fig:ladder-era})\footnote{\texttt{python\ build\_\allowbreak{}ladder\_\allowbreak{}by\_\allowbreak{}era.\allowbreak{}py}, then
+  \texttt{python\ plot\_\allowbreak{}ladder\_\allowbreak{}by\_\allowbreak{}era\_\allowbreak{}panels.\allowbreak{}py}.}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\linewidth]{ladder_by_era_panels.png}
+\caption{The coded altitude ladder across eras: each level\textquotesingle s slope entered alone
+(per sd, HC1 errors), on the same member-bin values and six equal five-year
+bins as the class panels; \(\pm\)1 se bands, dotted member-weighted linear
+trends. The free level --- professionals off the organisational ladder ---
+carries the instrument in every half-decade; the three on-ladder levels
+stay small and flat.}
+\label{fig:ladder-era}
+\end{figure}
+
+\textbf{And it holds chamber by chamber, by the test that needs no
+normalization.} The class arm\textquotesingle s crossover claim rests on a within-chamber
+meta-analysis; the measure gets the same test. Within each chamber --- each
+legislature its own control --- the member-level slope of the register on the
+free level is \textbf{negative in 21 of 22 chambers} (individually significant
+in Queensland and Scotland), and the inverse-variance meta across chambers
+is \textbf{\(-0.070\) per sd, z = \(-5.0\)}; the apex delta pools at \textbf{+0.059, z =
++4.2}. Split by chamber group the replication is a sweep --- negative in every
+group: the nine 2026 additions (meta z \(-4.1\)), the eight Canadian provinces
+(z \(-2.5\)), and the five tier-1 national chambers (z \(-2.2\)).\footnote{\texttt{python\ ladder\_\allowbreak{}chamber\_\allowbreak{}meta.\allowbreak{}py} --- per-chamber OLS slope of
+  member z on the folk free level (per sd within chamber, HC1),
+  inverse-variance pooled; the apex-delta meta from the same cells.}
+
+\textbf{Against the market-fitted measures.} The classical anchors join at
+occupation level through the study\textquotesingle s existing SOC coding --- no new member
+placement anywhere --- via the BLS crosswalk to ISCO-08 for Ganzeboom\textquotesingle s ISEI
+and Treiman\textquotesingle s SIOPS prestige scale, OES national median wages, and O*NET\textquotesingle s
+Job Zone and required-education categories.\footnote{\texttt{python\ build\_\allowbreak{}market\_\allowbreak{}join.\allowbreak{}py} then
+  \texttt{python\ market\_\allowbreak{}convergence.\allowbreak{}py}; source files and fetch provenance in
+  \texttt{market\_\allowbreak{}anchors/\allowbreak{}PROVENANCE.\allowbreak{}md}. Coverage: 351 of 401 study occupations
+  carry level scores; ISEI misses 15\% of codes because the official
+  crosswalk is 2010-SOC-vintage against the study\textquotesingle s 2018-based O*NET
+  codes; SOC codes mapping to several ISCO-08 codes (63) take the mean
+  of the mapped scores.} Convergently, the
+ladder sits inside the socioeconomic family without being any member of
+it: member-weighted Cramér\textquotesingle s V between the folk argmax level and each
+anchor runs 0.31 (wage quartiles) to 0.47 (SIOPS quartiles). Discriminantly,
+it is not the old ingredients recombined: regressing each level score on
+occupational education and log wage leaves \(R^{2}\) at 0.32--0.45, so more than
+half of every level\textquotesingle s variance lies off the education--earnings plane --- and
+the free level is not self-employment in disguise (free-argmax members are
+petty bourgeois or farmers at 6\%, against the panel\textquotesingle s 14\%). The extremes
+are face-valid and occasionally sharper than the schemas: painters and
+craft artists score free-high while actors and dancers --- performers, who
+work under direction --- score free-low, a distinction no market category
+draws. And in the joint model the asymmetry is complete: entered as
+member-weighted quartile dummies beside the committed blocks, \textbf{ISEI and
+wage collapse (block p = 0.31 and 0.35) while the folk ladder stands
+(p = 0.017, its free level \(-0.089\), t \(-3.08\), with both anchors in)} ---
+alone on the same 3,276 members all three are strong (folk \(p < 10^{-7}\), ISEI
+\(p < 10^{-6}\), wage p = 0.003). The fitted scales are absorbed by the study\textquotesingle s
+covariates; the blind measure is not absorbed by the fitted
+scales.\footnote{\texttt{python\ market\_joint.py} --- the committed member-level spec
+  (z within chamber, equal weight, HC1, block Walds) on the 3,276
+  members carrying every block, with ISEI and log-wage entered as
+  member-weighted quartile dummies, Q1 baseline.}
+
+\textbf{The gradient nests inside class, which is what "the class U was
+occupation all along" requires.} The delta\textquotesingle s slope within class II alone is
++0.076 (t 3.3) --- the class peak\textquotesingle s own interior carries the occupational
+gradient --- and +0.066 (t 4.0) with class fixed effects. Prediction 1 (the
+occupational block adds to EGP) confirmed in 16 of 16 paired
+specifications.
+
+\textbf{The horse race and the pattern.} The uncharged (coded) instrument wins
+the registered AIC comparison narrowly (\(-205.0\) vs \(-198.6\)); encompassing
+tests are significant in both directions --- neither instrument subsumes the
+other. The registered four-sign component pattern (U+ L\(-\) D+ N+) holds in
+25\% of pattern-eligible lattice specifications, permutation p = 0.087
+across 2,000 within-chamber shuffles --- suggestive, unconfirmed. Under the
+covariate lattice, L\textquotesingle s raw positivity dissolves (median +0.012,
+direction-unstable): the external-service gradient was carrying class and
+education correlation rather than surviving it, while U and N stay
+right-signed in 100\% of specifications and D turns mildly positive
+throughout.
+
+\textbf{Era restriction} (2025--26 speech only, n = 1,000): cohort deflates to
+its period-purged size (+0.138/sd, t 4.3 --- the career figure of +0.383 was
+mostly period mixing), the class-II contrast doubles to +0.203 (t 3.0), and
+the delta persists directionally at era power (+0.061, t 1.7; the career
+effect predicts t \(\approx\) 2.0 at this n). In the spike window, class II is the
+strongest social-position covariate; the insulation contrast holds its size
+without independent confirmation.
+
+One drafting generation of the registration expressed the peak claim as a
+linear three-profile rank; that operationalization failed its own test and
+the framing is retired --- Appendix~\ref{app:superseded}13 preserves its numbers, and the
+registration\textquotesingle s post-run amendment records the oversight and the provenance
+ruling. Failed registered predictions are in Appendix~\ref{app:null} (the altitude
+quadratic, the autonomy asymmetry, nominal-vs-effective autonomy). Scale
+for all of it: \cref{sec:limits}\textquotesingle s calibration bullet --- small effects by any benchmark,
+reliably estimated, structurally replicated, floors rather than
+ceilings.\footnote{\texttt{python\ prereg\_\allowbreak{}stage1.\allowbreak{}py}, \texttt{prereg\_stage2.py},
+  \texttt{prereg\_\allowbreak{}synthesis\_\allowbreak{}check.\allowbreak{}py}, \texttt{prereg\_\allowbreak{}covariate\_\allowbreak{}strength.\allowbreak{}py},
+  \texttt{prereg\_\allowbreak{}strength\_\allowbreak{}2526.\allowbreak{}py}; results snapshots
+  \texttt{prereg\_\allowbreak{}stage1\_\allowbreak{}results.\allowbreak{}txt}, \texttt{prereg\_\allowbreak{}stage2\_\allowbreak{}results.\allowbreak{}txt}. The join and
+  its drift guard: \texttt{prereg\_join.py} (METHODOLOGY §6.1b addendum for the
+  two join facts). Instrument derivation artifacts:
+  \texttt{element\_audit\_*.json}, \texttt{element\_levels.json},
+  \texttt{instrument\_\allowbreak{}final\_\allowbreak{}cells.\allowbreak{}json}.}
+
+\textbf{The coarsest cut is the strongest single correlate: the register is the
+language of the office.} O*NET\textquotesingle s \emph{Indoors, Environmentally Controlled} ---
+planted in the element pool as a deliberately atheoretical marker of office
+work --- carries more register per standard deviation than any single
+instrument component (+0.101, t +7.4); \emph{Spend Time Sitting}, the other
+planted marker, is null (t +0.4). This is the occupational finding at its
+coarsest resolution, a restatement rather than a rival: office work carries
+the register wholesale, and the structure this section measures is the shape
+inside the office --- the insulated middle over the exposed top, both of them
+office rungs, and free work lowest. In the joint model the office cut adds
+little that the existing covariates do not already carry (+0.039 per sd,
+t +1.9, \(\Delta\text{adj}R^{2}\) +0.0007), and the apex delta stays the strongest occupational
+term in that model (t +2.4, \(\Delta\text{adj}R^{2}\) +0.0011) --- birth decade remains the
+overwhelming axis (t +24.5, carrying 0.144 of the model\textquotesingle s 0.165).\footnote{\texttt{python\ prereg\_\allowbreak{}negative\_\allowbreak{}controls.\allowbreak{}py}; n = 4,762, estimator
+  parity-guarded against stage 1 (reproduces MIDDLE +0.028, t 2.0).
+  Entered jointly with Indoors, the apex delta reads +0.033 (t +2.2) and
+  free \(-0.062\) (t \(-4.4\)). The pre-registration had planted these two
+  elements as negative controls with an office-job interpretation rule;
+  the adjudication (2026-08-24, logged in the prereg) rejects that rule\textquotesingle s
+  implication --- office language is the finding restated, not a control on
+  it --- and the result is reported here as description. Joint-model numbers:
+  \texttt{python\ prereg\_\allowbreak{}indoors\_\allowbreak{}joint.\allowbreak{}py} (n = 3,594, the covariate panel; the
+  grand model mirrors \texttt{prereg\_\allowbreak{}covariate\_\allowbreak{}strength.\allowbreak{}py}).}
+
+\subsection{All four predictors at once}\label{sec:four-predictors}
 
 Every member-level predictor in one regression --- every category of every
 block, none folded into a baseline for being small or dropped from the table
@@ -1698,7 +1702,7 @@ it is recorded as a hypothesis rather than a finding: the shapes were noticed
 while reconciling estimates, not predicted in advance. The era-resolved test it
 implies \textbf{has} now been run and does not support the cycle\textquotesingle s dynamic half
 on either sufficient signature --- the class profile holds its shape in every
-half-decade rather than migrating (figure above), and the II-over-I
+half-decade rather than migrating (\cref{fig:class-era}), and the II-over-I
 separation never widens across thirty years (+0.141 \(\rightarrow\) +0.079, trend
 t \(-1.7\) --- drifting narrower, not wider). A cycle already in progress before our first frame would look
 like this too, which is why the discriminating study is class-coded speech from
@@ -1932,7 +1936,9 @@ not by the stage trained on verifiable math and code --- stated as a \emph{data}
 claim, not an objective claim, because on this ladder the two are
 confounded: the SFT and DPO stages train on chat while RLVR trains on a
 different domain, so "the RLVR objective doesn\textquotesingle t install it" and "the RLVR
-data isn\textquotesingle t chat" cannot be separated here. Three checks tighten what can
+data isn\textquotesingle t chat" cannot be separated here.
+
+Three checks tighten what can
 be said.\footnote{\texttt{python\ ladder\_\allowbreak{}length\_\allowbreak{}control.\allowbreak{}py} (reproduces the shipped
   +1.2412 exactly, then re-runs every stage delta under three truncation
   rules with paired word-bootstraps) and \texttt{python\ pref\_\allowbreak{}pairs\_\allowbreak{}register.\allowbreak{}py}
@@ -1949,7 +1955,9 @@ every truncation, and under prompt fixed effects log-length carries none
 of the signal (t = 0.2) while stage carries all of it --- with one honest
 flag, that on the strictest fixed-length panel the DPO stage\textquotesingle s log-ratio
 metric becomes indistinguishable from the placebo\textquotesingle s, and only the rate
-metric keeps it clearly ahead. The \textbf{prompting arms} bound the surface
+metric keeps it clearly ahead.
+
+The \textbf{prompting arms} bound the surface
 share directly, and the bound is striking. The committed ladder used raw
 prompts at every stage, so the +1.24 was never a chat-template artifact ---
 but a three-shot stylistic prefix on the \emph{raw base model} elicits more
@@ -1961,7 +1969,9 @@ deployment format --- runs at 75.0, nearly twice its raw-prompt level. The
 honest restatement: the register is a mode the base model already carries;
 what post-training moves is the \emph{default} of unconditioned generation, and
 deployment conditions select far above that default. The stage ladder
-measures the default\textquotesingle s installation; the ceiling was always promptable. And the tempting stronger story --- \emph{that the preference data itself
+measures the default\textquotesingle s installation; the ceiling was always promptable.
+
+And the tempting stronger story --- \emph{that the preference data itself
 prefers the register} --- was tested on the two public mixtures and \textbf{does
 not survive its controls}: across 601k chosen-vs-rejected pairs the raw
 register tilt toward the chosen response (+1.08 and +0.70 per 1,000) is
@@ -1972,7 +1982,9 @@ mechanism is not supported, and the on-model ladder carries the stage
 claim alone. That is consistent with
 \cref{sec:register-shift}\textquotesingle s reading that alignment concentrates something humans already favoured ---
 an association, not an identified mechanism, and the section\textquotesingle s argument no
-longer rests on it. The correction strengthens the arm\textquotesingle s design claim. \textbf{RLVR was designed as the
+longer rests on it.
+
+The bias correction strengthens the arm\textquotesingle s design claim. \textbf{RLVR was designed as the
 placebo stage} --- a design intent contemporaneous with the run, though not
 registered in a dated document --- on the reasoning that tuning for verifiable
 math and code correctness should not install a speech register. Corrected, it
@@ -2101,9 +2113,8 @@ continuations, locates its source: the collapse appears in raw text from
 weaker models and vanishes at the frontier. In the wild, it therefore points
 at the tools actually in use rather than at machine text as such.
 
-Two pools were graded, 2026-08-10.
-
-The rubric\textquotesingle s repeat-pass reliability sits at Spearman 0.68--0.91 per
+Two pools were graded, 2026-08-10. The rubric\textquotesingle s repeat-pass reliability
+sits at Spearman 0.68--0.91 per
 dimension, at or above the instrument\textquotesingle s own published inter-coder bar
 (justification r = 0.716), and the claim-bearing gaps keep their signs on
 independent re-runs.
@@ -2235,6 +2246,8 @@ change a reader\textquotesingle s confidence:
   "deliberation down" is carried by the genre control above, and this is
   listed only as consistent texture.
 \end{enumerate}
+
+\subsection{Unreviewed continuations reveal a capability ladder}\label{sec:stage6}
 
 \textbf{Stage 6 inverts the question: machine text no human ever reviewed.} The
 in-the-wild finding --- AI-flagged speech better-formed --- is consistent with
@@ -2963,7 +2976,7 @@ categorical schemas were validated against employment relations --- while
 the folk ladder was built blind: model-elicited from aggregated human
 expression, no outcome visible, its ordering registered before any join.
 On this outcome the blind measure absorbs the categorical schema in the
-joint model (\cref{sec:class}) --- and, with the anchors joined, holds against the
+joint model (\cref{sec:four-predictors}) --- and, with the anchors joined, holds against the
 fitted continuous scales too: beside the study\textquotesingle s covariates, ISEI and wage
 quartiles collapse while the folk block stands, and more than half of each
 level\textquotesingle s variance lies off the education--earnings plane entirely (\cref{sec:occupation}).
@@ -3476,7 +3489,7 @@ yielding 71 consensus elements (Appendix~\ref{app:repro}\textquotesingle s secon
 bottom / middle / top levels are composed from the components. The two
 ladders\textquotesingle{} levels correlate +0.75 to +0.92, which is why the registration\textquotesingle s
 never-together rule treats them as near-twins; where both enter a model the
-widened errors are shown rather than hidden (\cref{sec:class}).
+widened errors are shown rather than hidden (\cref{sec:four-predictors}).
 
 \textbf{Registration.} The ordering \textbf{free \textless{} front-line \textless{} corporate} and the
 apex delta (middle \(-\) top, "insulated command tracks more register than
@@ -3592,7 +3605,7 @@ Reported because they bound what the study can claim.
   is 0.22--0.25\% in every class, differences within \(\pm\)0.02pp. The class effect
   is a uniform scaling of the instrument, not a re-weighting, when
   "conspicuous" is defined as rare \emph{before} the machines. Defining it
-  instead as \emph{risen} and \emph{common} is what produces \cref{sec:class}\textquotesingle s result.
+  instead as \emph{risen} and \emph{common} is what produces \cref{sec:chase-flight}\textquotesingle s result.
 \item
   \textbf{Class I avoiding marked words, cross-sectionally} --- did not survive a
   year control. Pooled, class I held the lowest share of the most-risen
@@ -3608,7 +3621,7 @@ Reported because they bound what the study can claim.
   whose is not. But controlling for depth moves the education coefficients by
   0.00 to 0.11, so the education results are not artifacts of who has a long
   article. Depth\textquotesingle s own strong negative effect on the register is \textbf{not} a
-  null and is reported in \cref{sec:class}.
+  null and is reported in \cref{sec:chase-flight}.
 \item
   \textbf{Class origin (parental EGP) against register} --- first measurement,
   704 members with a coded parental class across thirteen chambers:
@@ -3662,27 +3675,26 @@ climbs. What does carry is measured on individuals, not on chambers.
 
 \section{Superseded analyses}\label{app:superseded}
 
-\textbf{The elevenfold spread.} Earlier versions stated the cross-chamber
-spread as the raw range of the twenty per-chamber rates, 1.8\% to 19.8\% ---
-elevenfold. Superseded by the random-effects treatment in \cref{sec:prevalence}: the
-extremes of twenty noisy estimates are extreme partly by sampling luck, so
-a raw max/min ratio overstates true separation. Under empirical-Bayes
-shrinkage (logit \(\tau\) = 0.56, I\({}^{2}\) = 0.78) the range is 4.3\% to 18.3\% ---
-better than fourfold --- which is the figure the paper now
-reports.\footnote{\texttt{python\ prevalence\_\allowbreak{}robustness.\allowbreak{}py}, the random-effects section.}
-
-0a. \textbf{\cref{sec:posttraining}\textquotesingle s stage ordering} --- "the shift is largest at the preference
-stage" rested on a per-transition estimator pedestal (M9; the M3 defect
-per stage). Corrected by three agreeing routes: SFT \(\approx\) DPO, RLVR \(\approx\) 0. The
-\cref{sec:register-shift} connection is DE-EMPHASIZED rather than withdrawn (Matthew): the
-preference-and-demonstration stages installing the register while the
-correctness stage does not remains an interesting association, but the
-text no longer relies on any stage ordering, and the RLVR placebo now
-passes its own manipulation check.
-
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{-1}
+\item
+  \textbf{The elevenfold spread.} Earlier versions stated the cross-chamber
+  spread as the raw range of the twenty per-chamber rates, 1.8\% to 19.8\% ---
+  elevenfold. Superseded by the random-effects treatment in \cref{sec:prevalence}: the
+  extremes of twenty noisy estimates are extreme partly by sampling luck, so
+  a raw max/min ratio overstates true separation. Under empirical-Bayes
+  shrinkage (logit \(\tau\) = 0.56, I\({}^{2}\) = 0.78) the range is 4.3\% to 18.3\% ---
+  better than fourfold --- which is the figure the paper now
+  reports.\footnote{\texttt{python\ prevalence\_\allowbreak{}robustness.\allowbreak{}py}, the random-effects section.}
+\item
+  \textbf{\cref{sec:posttraining}\textquotesingle s stage ordering} --- "the shift is largest at the preference
+  stage" rested on a per-transition estimator pedestal (M9; the M3 defect
+  per stage). Corrected by three agreeing routes: SFT \(\approx\) DPO, RLVR \(\approx\) 0. The
+  \cref{sec:register-shift} connection is DE-EMPHASIZED rather than withdrawn (Matthew): the
+  preference-and-demonstration stages installing the register while the
+  correctness stage does not remains an interesting association, but the
+  text no longer relies on any stage ordering, and the RLVR placebo now
+  passes its own manipulation check.
 \item
   \textbf{\cref{sec:class}, twice} --- first written as "standing predicts the register
   downward" at t = 3--4 (unclustered provincial estimates, the study\textquotesingle s third
@@ -4202,14 +4214,14 @@ study has not already built.
   "unbiased machine expert" claim would rest on symmetry, not on provenance.
 \end{enumerate}
 
+\textbf{G. What the legislator panel enables beyond the register (Matthew).}
+
 Collecting covariates for this study produced something with uses well outside
 it: birth year, education, prior occupation, EGP class and Wikipedia prominence
 for roughly five thousand legislators across twenty-two chambers, joined to
 every word each of them spoke. The register was the reason to build it; it is
 not the only thing it can answer. Two families of question follow, and they
 differ in how novel they are likely to be.
-
-\textbf{F2. What the legislator panel enables beyond the register (Matthew).}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4710,7 +4722,7 @@ arm & model & effort \\
 Corpus-wide screen (\cref{sec:screen-pangram}), effort A/B & Claude Opus & low, and max in the A/B \\
 Bypass search: scoring / rewriting / hypotheses (\cref{sec:evasion}) & Claude Opus & low / medium / high \\
 DQI grading, stages 1-5 (\cref{sec:quality}, \cref{sec:evasion}) & \textbf{Claude Fable 5} & default \\
-DQI grading, stage 6 (\cref{sec:quality}) & \textbf{Claude Opus} & medium \\
+DQI grading, stage 6 (\cref{sec:stage6}) & \textbf{Claude Opus} & medium \\
 Synthetic sensitivity pilot (40 speeches, set aside --- \cref{sec:calibration}, Appendix~\ref{app:superseded}) & Mistral-7B & default \\
 Analysis, verification, adversarial review & Claude Opus & varies \\
 \end{longtable}
