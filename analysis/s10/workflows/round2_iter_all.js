@@ -42,6 +42,9 @@ const DRAFT = (args && args.draft) || 'analysis/s10/S10-WRITEUP-DRAFT.md'
 // Every workflow worker runs on the work subscription; only this orchestrating
 // session sits on the personal one.
 const FAITH_MODEL = 'work/claude-fable-5'
+// Applying structure is the judgment-heaviest job in the run; it gets the
+// strongest seat, on the work account like every other worker.
+const WORKER_MODEL = 'work/claude-opus-5'
 
 const READ_CAP_TOKENS = 25000   // the Read tool's hard per-call cap, measured
 const MAX_GROUP_LINES = 900     // ~22k tokens on this draft: one read, with slack
@@ -120,10 +123,46 @@ const packGroups = (headings, totalLines) => {
   }))
 }
 
+// RESUME. args.resume_from is a list of saved per-scope result files from an
+// earlier run. Their changes already carry verdicts, so the run re-enters at
+// Select and exercises Apply/Verify without re-proposing. Only results whose
+// ballots came from the full panel belong here: "unanimous among whoever voted"
+// exists for a seat dropping out mid-run, not for a panel of one, and a
+// single-seat result would pass everything.
+const RESUME = (args && args.resume_from) || null
+
+const LOAD_SCHEMA = {
+  type: 'object',
+  properties: {
+    scope_id: { type: 'string' },
+    seats_max: { type: 'integer', description: 'the largest ballot count any change in this file received' },
+    changes: {
+      type: 'array',
+      items: {
+        type: 'object',
+        properties: {
+          id: { type: 'string' },
+          type: { type: 'string', description: 'prose or structural' },
+          action: { type: 'string' },
+          locus: { type: 'string' },
+          current_key: { type: 'string', description: 'first 120 characters of the change\'s current text, whitespace collapsed — used only to group rival rewrites of one passage' },
+          support: { type: 'integer' },
+          accepted: { type: 'boolean' },
+          keeps: { type: 'integer' },
+          n: { type: 'integer' },
+          composite: { type: 'number' },
+        },
+        required: ['id', 'type', 'action', 'locus', 'current_key', 'accepted', 'keeps', 'n', 'composite'],
+      },
+    },
+  },
+  required: ['scope_id', 'seats_max', 'changes'],
+}
+
 phase('Scope')
 let SCOPES = (args && args.scopes) || null
 let SCOPE_INDEX = null
-if (!SCOPES) {
+if (!SCOPES && !RESUME) {
   SCOPE_INDEX = await agent(SCOPE_PROMPT, { label: 'scope:index', phase: 'Scope',
                                             model: FAITH_MODEL, schema: SCOPE_SCHEMA })
   if (!SCOPE_INDEX || !SCOPE_INDEX.total_lines) throw new Error('scope index failed; cannot tile the draft')
@@ -511,9 +550,39 @@ const VERIFY_SCHEMA = {
   required: ['clean', 'fixed', 'remaining'],
 }
 
+const loadSaved = async () => parallel(RESUME.map(path => () =>
+  agent(`ROLE: LOAD SAVED RESULT. Mechanical, no judgment.
+Read the saved workflow result at ${EB}${path}${EB} and report its changes.
+
+For each entry in its ${EB}changes${EB} array report: the id; whether it is prose or
+structural; its action and locus; the first 120 characters of its ${EB}current${EB}
+text with runs of whitespace collapsed to single spaces (this is only used to
+recognise rival rewrites of the same passage, so it need not be exact beyond
+that); its support count; and from its verdict, accepted, keeps, n and composite.
+
+Report the largest ${EB}n${EB} any change in the file received as seats_max, and the
+file's scope id. Do not summarise, judge, or omit entries.`,
+        { model: FAITH_MODEL, phase: 'Propose', label: `load:${path.split('/').pop()}`, schema: LOAD_SCHEMA })
+    .then(r => r && ({ scope_id: r.scope_id, source: path, seats_max: r.seats_max,
+      n_proposals: 0, n_candidates: r.changes.length, n_faith_pass: r.changes.length,
+      n_faith_dropped: 0, accepted: r.changes.filter(c => c.accepted).length, self_preference: {},
+      changes: r.changes.map(c => ({ id: c.id, type: c.type, action: c.action, locus: c.locus,
+        current: c.current_key, support: c.support || 1, source: path,
+        verdict: { accepted: c.accepted, keeps: c.keeps, n: c.n, composite: c.composite } })) }))
+    .catch(e => { log(`load failed for ${path}: ${String(e).slice(0, 120)}`); return null })))
+
 phase('Propose')
-log(`iteration ${ITER}, phase ${PHASE}: ${SCOPES.length} scope(s), ${PANEL.length} seats — ${PANEL.map(m => `${m.id}=${m.model}`).join(', ')}`)
-const perScope = await parallel(SCOPES.map(s => () => runScope(s)))
+log(RESUME
+  ? `iteration ${ITER}: resuming from ${RESUME.length} saved scope result(s) — no proposing, straight to Select`
+  : `iteration ${ITER}, phase ${PHASE}: ${SCOPES.length} scope(s), ${PANEL.length} seats — ${PANEL.map(m => `${m.id}=${m.model}`).join(', ')}`)
+const perScope = RESUME ? await loadSaved() : await parallel(SCOPES.map(s => () => runScope(s)))
+if (RESUME) {
+  const thin = perScope.filter(Boolean).filter(r => (r.seats_max || 0) < 2)
+  for (const r of thin)
+    log(`REFUSING ${r.scope_id} (${r.source}): ballots from ${r.seats_max} seat(s) — unanimity is meaningless on a panel that small`)
+  for (const r of thin) perScope[perScope.indexOf(r)] = null
+  log(`resumed ${perScope.filter(Boolean).length} saved scope(s) straight into Select`)
+}
 
 phase('Synthesize')
 const ok = perScope.filter(Boolean)
@@ -577,6 +646,18 @@ if (APPLY_OFF || (!selection.prose.length && !selection.structural.length)) {
   return { iteration: ITER, phase: PHASE, scopes: ok.map(r => r.scope_id), totals, selection, by_scope: ok }
 }
 
+// In resume mode the loaded records carry only enough to decide selection — an
+// id, a truncated passage key, the verdict. The full text stays in the saved
+// result file, so the applier is pointed at the file and the winning ids rather
+// than handed text the workflow never loaded.
+const payloadFor = (items, fields) => RESUME
+  ? 'They are recorded in these saved result files:\n' +
+    [...new Set(items.map(c => c.source))].map(f => '  ' + f).join('\n') +
+    '\n\nApply the entries with these ids, taking each one\'s text verbatim from the\n' +
+    'file. Ignore every other entry in those files — selection has already happened.\n\n' +
+    items.map(c => '  ' + c.id + '  (' + c.locus + ')').join('\n')
+  : JSON.stringify(items.map(fields), null, 1)
+
 // ============================== APPLY ======================================
 // Sequential by necessity. Prose applies by exact match on verbatim `current`
 // text; structural renumbering rewrites the §N references those anchors live
@@ -607,8 +688,8 @@ should report rather than repair.
 
 Return the ids applied, the ids skipped each with its reason, and nothing else.
 
-${JSON.stringify(selection.prose.map(c => ({ id: c.id, current: c.current, proposed: c.proposed })), null, 1)}`,
-  { agentType: 'apply-integrator', phase: 'Apply', label: 'apply:prose', schema: APPLY_SCHEMA })
+${payloadFor(selection.prose, c => ({ id: c.id, current: c.current, proposed: c.proposed }))}`,
+  { agentType: 'apply-integrator', model: WORKER_MODEL, phase: 'Apply', label: 'apply:prose', schema: APPLY_SCHEMA })
 
 applyResults.structural = await agent(`ROLE: APPLY STRUCTURE.
 Read \`analysis/s10/apply_structural_brief.md\` first and follow it.
@@ -626,10 +707,10 @@ reason to skip the change.
 If two of these genuinely conflict, apply the higher-composite one and report the
 other as skipped with the reason. Never invent content to bridge a seam.
 
-${JSON.stringify(selection.structural.map(c => ({ id: c.id, locus: c.locus, action: c.action,
+${payloadFor(selection.structural, c => ({ id: c.id, locus: c.locus, action: c.action,
    proposed: c.proposed, rationale: c.rationale, composite: (c.verdict || {}).composite,
-   dependencies: (c.verdict || {}).dependencies || [] })), null, 1)}`,
-  { agentType: 'apply-integrator', phase: 'Apply', label: 'apply:structural', schema: APPLY_SCHEMA })
+   dependencies: (c.verdict || {}).dependencies || [] }))}`,
+  { agentType: 'apply-integrator', model: WORKER_MODEL, phase: 'Apply', label: 'apply:structural', schema: APPLY_SCHEMA })
 
 applyResults.figures = await agent(`ROLE: BUILD REQUESTED FIGURES.
 Read \`analysis/s10/apply_structural_brief.md\` sections "Building figures the
@@ -646,7 +727,7 @@ the specific failure this stage exists to prevent.
 
 If nothing asks for a new figure, do nothing and say so. Never create a figure
 that was not requested.`,
-  { agentType: 'apply-integrator', phase: 'Apply', label: 'apply:figures', schema: APPLY_SCHEMA })
+  { agentType: 'apply-integrator', model: WORKER_MODEL, phase: 'Apply', label: 'apply:figures', schema: APPLY_SCHEMA })
 
 // ============================== VERIFY =====================================
 // The checks live in the prompt, not in a standing script (Matthew, 2026-09-02:
@@ -693,7 +774,7 @@ Report honestly. Set clean=true only if a complete final pass found nothing. If
 you cannot get there, set clean=false and say precisely what remains — an exact
 account of a residual problem is worth far more than a forced pass, because
 everything downstream trusts this report.`,
-  { agentType: 'apply-integrator', phase: 'Verify', label: 'verify', schema: VERIFY_SCHEMA })
+  { agentType: 'apply-integrator', model: WORKER_MODEL, phase: 'Verify', label: 'verify', schema: VERIFY_SCHEMA })
 
 const clean = !!(verify && verify.clean)
 log(clean

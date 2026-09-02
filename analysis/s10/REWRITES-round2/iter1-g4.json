@@ -1,0 +1,1072 @@
+{
+  "scope": "§4.7, §4.7a, §4.8, §4.9",
+  "phase": "1",
+  "iteration": 1,
+  "variants": [
+    "neutral"
+  ],
+  "n_proposals": 14,
+  "n_candidates": 14,
+  "n_faith_pass": 14,
+  "n_faith_dropped": 0,
+  "accepted": 14,
+  "self_preference": {
+    "opus-5-med": {
+      "self_n": 7,
+      "self_keep": 7,
+      "other_n": 7,
+      "other_keep": 6
+    },
+    "sol": {
+      "self_n": 7,
+      "self_keep": 7,
+      "other_n": 7,
+      "other_keep": 7
+    },
+    "grok-4.6": {
+      "self_n": 0,
+      "self_keep": 0,
+      "other_n": 14,
+      "other_keep": 13
+    }
+  },
+  "panel_health": {
+    "seats": [
+      "opus-5-med",
+      "sol",
+      "grok-4.6"
+    ],
+    "present": [
+      "opus-5-med",
+      "sol",
+      "grok-4.6"
+    ],
+    "absent": [],
+    "ballots_cast": {
+      "opus-5-med": 14,
+      "sol": 14,
+      "grok-4.6": 14
+    },
+    "ballots_lost": {},
+    "lost_to_limits": {},
+    "propose_failures": [
+      {
+        "seat": "grok-4.6",
+        "stage": "propose",
+        "limit": false,
+        "err": "Error: agent stalled on all 6 attempts (no progress for 180000ms each)"
+      }
+    ]
+  },
+  "changes": [
+    {
+      "locus": "§4.7 — \"**People, or replacement of people?** The era contrast pools\"",
+      "type": "structural",
+      "action": "split",
+      "current": "§4.7, the \"People, or replacement of people?\" paragraph — one paragraph carrying both the in-context member-level split (280 stayers, +0.0053 pooled / +0.0054 within) and the separate panel-wide frequency-side decomposition (26/58/16), plus a caveat that reaches into §4.6.",
+      "proposed": "split after \"member-level power is what limits the standalone claim.[^rmemlp]\", so the frequency-side decomposition (\"On the frequency side, panel-wide across all 22 chambers …\") begins a new paragraph. Text unchanged; footnote [^rmemlp] stays with the first paragraph and [^rfhk2] with the second.",
+      "rationale": "Two different instruments on two different populations are doing two different jobs; one paragraph forces the reader to hold both plus a cross-section caveat. Splitting at the natural seam costs nothing and makes each result findable.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C2",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "no data change — pure paragraph split after \"…limits the standalone claim.[^rmemlp]\"; all figures (+0.0053/+0.0054, 280 stayers, [−0.028, +0.046], 26%/58%/16%, [17, 35], 16 of 22, negative pooled within term) and both footnotes preserved verbatim."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "Apply the break in the canonical markdown (analysis/s10/S10-WRITEUP-DRAFT.md) and regenerate analysis/s10/latex/body.tex via build_body.sh so the two stay in sync; footnotes [^rmemlp] and [^rfhk2] must land in the first and second paragraphs respectively. Optionally give the new second paragraph its own bold lead-in so it is not orphaned from the \"People, or replacement of people?\" label. No cross-references or floats move; the internal §4.6 references stay valid.",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 4,
+          "keep": true,
+          "why": "The seam is real — the paragraph switches instrument, population, and unit of measurement at exactly that sentence — and splitting there makes both the 280-stayer log-prob result and the 26/58/16 frequency decomposition individually findable without touching a single number or reference."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "The split cleanly separates two analyses with different populations and inferential roles while preserving every result, caveat, and footnote attachment."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "The in-context member-level split and the panel-wide frequency decomposition are different instruments on different populations; a break at the existing seam (footnotes already attached to the right halves) makes each result findable without moving anything or breaking the heading.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Apply the break in the canonical markdown (analysis/s10/S10-WRITEUP-DRAFT.md) and regenerate analysis/s10/latex/body.tex via build_body.sh so the two stay in sync; footnotes [^rmemlp] and [^rfhk2] must land in the first and second paragraphs respectively. Optionally give the new second paragraph its own bold lead-in so it is not orphaned from the \"People, or replacement of people?\" label. No cross-references or floats move; the internal §4.6 references stay valid."
+        ],
+        "composite": 15
+      }
+    },
+    {
+      "locus": "§4.7 — \"**The register is permeating human speech independently of drafting\"",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "**The register is permeating human speech independently of drafting — and\nthe drift predates the models.** Run on the pre-LLM window alone — 2018–19\nagainst 2021 to November 2022, where no machine text is possible in either\ncell — the same instrument moves **+0.0150** (positive in 7 of 10\nchamber × family cells, permutation p = 0.017), reusing the identical\nscored occurrences.[^r48pre] The full pre-vs-post contrast is **+0.0099**\n(9 of 10 cells, permutation p = 0.022)†[^r48]; its post-era cells contain\nmachine-drafted text (~9% of words) and cannot separate continued human\ndrift from that contamination — which the pre-LLM window makes moot for the\nclaim: the permeation is demonstrated where drafting could not exist. The\ninstrument is in-context likelihood of the Kobak style words within Hansard\ntraces, self-normalised — no placebo word list, no external control.",
+      "proposed": "**The register is permeating human speech independently of drafting — and\nthe drift predates the models.** Run on the pre-LLM window alone — 2018–19\nagainst 2021 to November 2022, where no machine text is possible in either\ncell — the same instrument moves **+0.0150** (positive in 7 of 10\nchamber × family cells, permutation p = 0.017), reusing the identical\nscored occurrences.[^r48pre] That window is where the claim is made, because\ndrafting could not have existed in it. The full pre-vs-post contrast is\n**+0.0099** (9 of 10 cells, permutation p = 0.022)†[^r48], but its post-era\ncells contain machine-drafted text (~9% of words), so that contrast cannot\nseparate continued human drift from contamination. The instrument is\nin-context likelihood of the Kobak style words within Hansard traces,\nself-normalised — no placebo word list, no external control.",
+      "rationale": "The current version buries the load-bearing point (the pre-LLM window is what carries the claim) inside a trailing dash-clause of the sentence about the weaker contrast; promoting it to its own sentence puts the strongest evidence first and reads in one pass. All figures unchanged.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C1",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "no data change — all numbers (+0.0150, 7/10, p=0.017; +0.0099, 9/10, p=0.022; ~9%), windows, footnotes, and instrument description preserved; only interpretive framing reordered"
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "All figures, cell counts, p-values, and the contamination caveat are preserved verbatim; splitting the load-bearing \"the claim rests on the pre-LLM window\" point into its own sentence removes a three-clause pile-up and reads in one pass without softening anything."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves every result while giving the decisive pre-LLM contrast its own sentence and clearly separating it from the contaminated full-period contrast."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Unburying the load-bearing pre-LLM point from a semicolon–dash–colon clause after the weaker +0.0099 contrast into its own sentence after +0.0150 is a real one-pass gain, and every number is untouched; the replacement line (“where the claim is made”) is slightly more meta than the original’s “permeation is demonstrated,” but not enough to reject.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [],
+        "composite": 15
+      }
+    },
+    {
+      "locus": "§4.7 “People, or replacement of people?”",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "**People, or replacement of people?** The era contrast pools sitting\nmembers with turnover, and §4.6 makes turnover a live rival. Both\ninstruments now carry the split. On this in-context instrument it costs no\nnew scoring: the committed traces carry their segment ids, so speakers are\nrecoverable for 14,644 of the 15,000 scored segments, and on the stronger\nfamily **the change is carried within sitting members** — pooled post−pre\n+0.0053, within-member +0.0054, composition ≈ 0 — though the within\ncomponent alone, at 280 stayers, carries a wide interval ([−0.028,\n+0.046]): turnover is not the driver at the point estimate, and\nmember-level power is what limits the standalone claim.[^rmemlp] On the\nfrequency side, panel-wide across all 22 chambers, the post-2022 rise of\nthe arm's own subtler subset (the 350 rare style words) decomposes as\n**within-member 26% [17, 35], composition 58%, interaction 16%** — a\nquarter to a third genuine permeation into sitting members, entry the\nlargest single term, the within share positive in 16 of 22 chambers. One\ncaveat that reaches beyond this section: on the pooled 407-word rate the\nwithin term is *negative* — stayers' use of the instrument's common-word\nbulk falls while entrants carry the rise — and §4.6's member-level\nregressions run on exactly that pooled rate.[^rfhk2]",
+      "proposed": "**People, or replacement of people?** The era contrast pools sitting\nmembers with turnover, and §4.6 makes turnover a live rival. Both\ninstruments now separate the two. For the in-context instrument, the\ncommitted traces make speakers recoverable for 14,644 of the 15,000 scored\nsegments without new scoring. On the stronger family, **the change is\ncarried within sitting members**: pooled post−pre +0.0053, within-member\n+0.0054, composition ≈ 0. The within-member estimate, however, is imprecise:\nwith 280 stayers, its interval is [−0.028, +0.046]. Turnover is not the\ndriver at the point estimate; member-level power limits the standalone\nclaim.[^rmemlp]\n\nThe frequency instrument gives a more resolved decomposition. Panel-wide\nacross all 22 chambers, the post-2022 rise in the arm's own subtler subset\n(the 350 rare style words) is **within-member 26% [17, 35], composition 58%,\ninteraction 16%**. A quarter to a third is genuine permeation into sitting\nmembers, entry is the largest single term, and the within share is positive\nin 16 of 22 chambers. The pooled 407-word rate differs: its within term is\n*negative*. Stayers' use of the instrument's common-word bulk falls while\nentrants carry the rise, and §4.6's member-level regressions run on exactly\nthat pooled rate.[^rfhk2]",
+      "rationale": "Separate the two instruments and put each caveat beside the estimate it qualifies. The rewrite preserves the tension between the rare-word and pooled-rate results instead of burying it in one long paragraph.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C9",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "no data change — all numbers, intervals, estimand labels (pooled/within-member/composition), signs, and findings are preserved; edits are sentence restructuring and framing only"
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "None; the change adds a paragraph break within §4.7, so re-check pagination/float placement on the next LaTeX build.",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Every figure, interval, count, and direction is carried over intact, and splitting the two instruments into separate paragraphs with each caveat next to its own estimate makes the rare-word/pooled-rate tension legible rather than buried, with no loss of bite."
+        },
+        {
+          "voter": "sol",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves every result and qualification while separating the instruments, placing uncertainty beside the estimate it qualifies, and making the rare-word versus pooled-rate contrast substantially easier to follow."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Splits the two instruments and parks each caveat on the estimate it qualifies, leaving every number, direction, and the rare-word vs pooled-rate tension intact; a few authorial phrases are sanded (“carry the split,” “costs no new scoring”) but the claims stay plain.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "None; the change adds a paragraph break within §4.7, so re-check pagination/float placement on the next LaTeX build."
+        ],
+        "composite": 15
+      }
+    },
+    {
+      "locus": "§4.7 “The register is permeating human speech independently”",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "**The register is permeating human speech independently of drafting — and\nthe drift predates the models.** Run on the pre-LLM window alone — 2018–19\nagainst 2021 to November 2022, where no machine text is possible in either\ncell — the same instrument moves **+0.0150** (positive in 7 of 10\nchamber × family cells, permutation p = 0.017), reusing the identical\nscored occurrences.[^r48pre] The full pre-vs-post contrast is **+0.0099**\n(9 of 10 cells, permutation p = 0.022)†[^r48]; its post-era cells contain\nmachine-drafted text (~9% of words) and cannot separate continued human\ndrift from that contamination — which the pre-LLM window makes moot for the\nclaim: the permeation is demonstrated where drafting could not exist. The\ninstrument is in-context likelihood of the Kobak style words within Hansard\ntraces, self-normalised — no placebo word list, no external control.",
+      "proposed": "**The register is permeating human speech independently of drafting — and\nthe drift predates the models.** In the pre-LLM window alone — 2018–19\nagainst 2021 to November 2022, where no machine text is possible in either\ncell — the same instrument moves **+0.0150** (positive in 7 of 10\nchamber × family cells, permutation p = 0.017), reusing the identical\nscored occurrences.[^r48pre] This window establishes permeation without\nmachine-drafted contamination. The full pre-vs-post contrast is **+0.0099**\n(9 of 10 cells, permutation p = 0.022)†[^r48], but its post-era cells contain\nmachine-drafted text (~9% of words) and therefore cannot separate continued\nhuman drift from that contamination. The instrument is the self-normalised,\nin-context likelihood of the Kobak style words within Hansard traces — no\nplacebo word list, no external control.",
+      "rationale": "Lead with the clean identification and then distinguish it from the contaminated full-era contrast. This removes the backward “makes moot” construction while preserving every result and limitation.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C8",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "no data change — all effect sizes (+0.0150, +0.0099), cell counts (7/10, 9/10), p-values (0.017, 0.022), ~9% contamination figure, window definitions, footnote markers, and instrument description are preserved; edits are purely framing/ordering."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Every figure, p-value, cell count, and caveat survives intact while the argument now runs forward — clean window first, contaminated contrast second — replacing the awkward \"makes moot\" backtrack, at the cost of only a slightly flatter summary sentence."
+        },
+        {
+          "voter": "sol",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves every result and limitation while presenting the uncontaminated pre-LLM identification before the qualified full-era contrast in clearer, more direct prose."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Puts the clean pre-LLM identification first and replaces the backward “makes moot” clause with a direct claim, correctly demoting the contaminated full-era contrast without touching any number.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [],
+        "composite": 15.67
+      }
+    },
+    {
+      "locus": "§4.8 — \"The correction\\nSTRENGTHENS the arm's design claim\"",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "The correction\nSTRENGTHENS the arm's design claim: **RLVR was designed as the placebo stage** (a design intent contemporaneous with the run, though not registered in a dated document) —\ntuning on verifiable math/code correctness should not install a speech\nregister — and corrected it behaves exactly as the placebo it was designed to\nbe, where the shipped +0.37 (p = 0.000) had it failing its own manipulation\ncheck. Post-training as a whole installs the register; base→instruct\nend-to-end (+1.24) is untouched.",
+      "proposed": "The correction strengthens the arm's design claim. **RLVR was designed as the\nplacebo stage** — a design intent contemporaneous with the run, though not\nregistered in a dated document — on the reasoning that tuning for verifiable\nmath and code correctness should not install a speech register. Corrected, it\nbehaves as that placebo; the shipped +0.37 (p = 0.000) had it failing its own\nmanipulation check. Post-training as a whole installs the register, and\nbase→instruct end-to-end (+1.24) is untouched.",
+      "rationale": "All-caps emphasis is shouting where the plain claim is already strong, and the nested dash clauses hide the reasoning behind the placebo design. Same numbers, same claim, house voice.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C4",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "No data change: +0.37 (p = 0.000), +1.24, the placebo-design claim, the unregistered-intent caveat, and the failed-manipulation-check finding are all preserved; edits are purely stylistic."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "Apply in both copies of §4.8 — /home/matt/performance_commons/analysis/s10/S10-WRITEUP-DRAFT.md (markdown, ~line 2182) and /home/matt/performance_commons/analysis/s10/latex/body.tex (~line 2067), with LaTeX escaping for the em dashes and \\textbf; no cross-references affected.",
+          "clarity": 5,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Same numbers (+0.37, p = 0.000, +1.24) and the same claim, but the all-caps shout is gone and the nested parenthetical/dash pileup is unpacked into readable sequence, so the placebo reasoning is actually visible."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves every result and statistic while replacing distracting all-caps emphasis and nested dashes with a clearer, confident explanation of the placebo-stage reasoning."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "All-caps shouting and nested dashes hid a claim that is already strong; the rewrite makes the placebo-design reasoning parseable, keeps every number and the contemporaneous-intent caveat, and speaks in house voice without blandifying.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Apply in both copies of §4.8 — /home/matt/performance_commons/analysis/s10/S10-WRITEUP-DRAFT.md (markdown, ~line 2182) and /home/matt/performance_commons/analysis/s10/latex/body.tex (~line 2067), with LaTeX escaping for the em dashes and \\textbf; no cross-references affected."
+        ],
+        "composite": 16
+      }
+    },
+    {
+      "locus": "§4.8 — \"The register is installed at post-training — by the stages\"",
+      "type": "structural",
+      "action": "split",
+      "current": "§4.8, the opening paragraph — a single ~65-line paragraph carrying the stage claim, the bias correction and table, the pooled +0.387, the SFT/DPO indistinguishability, the chat-vs-domain confound, three separate checks (length robustness, prompting arms, preference-mixture test), and the closing placebo-design argument.",
+      "proposed": "split into four paragraphs at these points, text unchanged: (1) split after \"…'the RLVR data isn't chat' cannot be separated here.\" so \"Three checks tighten what can be said.[^rptchecks] The stage pattern is **length-robust**…\" begins a new paragraph; (2) split before \"The **prompting arms** bound the surface share directly\"; (3) split before \"And the tempting stronger story\"; (4) split before \"The correction STRENGTHENS the arm's design claim\".",
+      "rationale": "The paragraph announces \"three checks\" and then runs all three plus the conclusion together, so the announced structure is invisible on the page. One paragraph per check, with the design conclusion standing alone, matches the prose's own scaffolding.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C3",
+      "faith": {
+        "current_matches": true,
+        "data_faithful": "pass",
+        "locatable": true,
+        "note": "Pure paragraph-splitting at four verbatim anchors found in §4.8 (lines 2124-2188); all statistics (+0.387, stage table, CIs, 601k pairs, prompting-arm rates, etc.) preserved — no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "Edit the canonical markdown (/home/matt/performance_commons/analysis/s10/S10-WRITEUP-DRAFT.md, §4.8) and regenerate /home/matt/performance_commons/analysis/s10/latex/body.tex via build_body.sh rather than hand-editing the .tex; keep the [^rptchecks] marker attached to \"Three checks tighten what can be said.\" as it moves to the head of the new paragraph, and keep the [^r47] marker on the pooled +0.387 sentence in the paragraph that retains the table. No cross-references, table numbering, or figure placement change (Table tab:posttraining stays where it is, before the first split point).",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "The block does announce \"three checks\" and then buries all three plus the design conclusion in one undifferentiated run, so splitting at exactly those seams makes the prose's own scaffolding visible without touching a single number or claim; the only wrinkle is cosmetic (four split points yield five paragraphs, not the four the proposal names)."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "The breaks make the stage result, each of the three announced checks, and the concluding design claim separately legible without changing their order or substance."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 4,
+          "keep": true,
+          "why": "The paragraph already names three checks and a design conclusion, so splitting at those joints makes the announced structure visible; name the referent of “The correction” at the new opener so it does not attach to the preference-mixture controls that would now precede it.",
+          "dependencies": "Name the referent of “The correction” at the new paragraph opener (e.g. “The bias correction”) so it does not attach to the preference-mixture controls that would now immediately precede it."
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Edit the canonical markdown (/home/matt/performance_commons/analysis/s10/S10-WRITEUP-DRAFT.md, §4.8) and regenerate /home/matt/performance_commons/analysis/s10/latex/body.tex via build_body.sh rather than hand-editing the .tex; keep the [^rptchecks] marker attached to \"Three checks tighten what can be said.\" as it moves to the head of the new paragraph, and keep the [^r47] marker on the pooled +0.387 sentence in the paragraph that retains the table. No cross-references, table numbering, or figure placement change (Table tab:posttraining stays where it is, before the first split point).",
+          "Name the referent of “The correction” at the new paragraph opener (e.g. “The bias correction”) so it does not attach to the preference-mixture controls that would now immediately precede it."
+        ],
+        "composite": 15.67
+      }
+    },
+    {
+      "locus": "§4.8 “The register is a post-training artifact”",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "### 4.8 The register is a post-training artifact",
+      "proposed": "### 4.8 Post-training moves the register into default generation",
+      "rationale": "“Artifact” overstates the result and conflicts with the later finding that the base model already carries a promptable register. The replacement states the identified shift directly and matches the section's own final interpretation.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C10",
+      "faith": {
+        "current_matches": true,
+        "data_faithful": "pass",
+        "locatable": true,
+        "note": "Heading-only reframe consistent with the section's own restatement (default installation vs promptable ceiling); no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "None required; §4.8 keeps its \\label{sec:posttraining} so cross-references are unaffected. Optionally align the discussion/conclusion phrase \"On the machine side it is a post-training artifact\" (analysis/s10/S10-WRITEUP-DRAFT.md and the corresponding paragraph in analysis/s10/latex/body.tex) with the new heading.",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The heading now says exactly what the section concludes — post-training shifts the default, while the base model already carries a promptable register — removing a title/body tension without touching any measured value, though \"into default generation\" is slightly clunkier than the original."
+        },
+        {
+          "voter": "sol",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite states the post-training shift precisely without denying that the base model already contains a promptable version of the register."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The current heading overclaims creation and collides with the section’s own restatement that the base model already carries a promptable register; the rewrite names the actual finding — post-training shifts the unconditioned default — without changing any data.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "None required; §4.8 keeps its \\label{sec:posttraining} so cross-references are unaffected. Optionally align the discussion/conclusion phrase \"On the machine side it is a post-training artifact\" (analysis/s10/S10-WRITEUP-DRAFT.md and the corresponding paragraph in analysis/s10/latex/body.tex) with the new heading."
+        ],
+        "composite": 15.33
+      }
+    },
+    {
+      "locus": "§4.8 “Three checks tighten what can be said.”",
+      "type": "structural",
+      "action": "split",
+      "current": "### 4.8 The register is a post-training artifact\n\nThe register is installed at post-training — by the stages tuned toward human demonstrations and preferences, not by the stage tuned toward verifiable correctness; length, prompting, and preference-mixture checks then delimit that result.",
+      "proposed": "Split after “Three checks tighten what can be said.[^rptchecks]” and insert the subsection heading “#### 4.8a What post-training changes — and what it does not” before “The stage pattern is **length-robust**”. Renumber the current coverage subsection from §4.8a to §4.8b and update its opening cross-reference as a dependency.",
+      "rationale": "The current section places the headline estimate, three distinct mechanism checks, estimator diagnostics, and family replication under one uninterrupted heading. The split separates the core ladder result from the evidence delimiting its interpretation without moving or deleting any result.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C11",
+      "faith": {
+        "locatable": true,
+        "current_matches": false,
+        "data_faithful": "pass",
+        "note": "Passage found (heading at line 2122, split point \"Three checks tighten what can be said.[^rptchecks]\" at lines 2151-2152, coverage subsection §4.8a at line 2237, its only occurrence); the proposal is purely structural (heading insertion, renumber, cross-ref update) and changes no data, but the supplied CURRENT paragraph is a paraphrase, not the manuscript's verbatim opening (\"...which the design built in as its placebo stage. The evidence is an OLMo-2 ladder...\"), so the diff may not apply cleanly as written."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "(1) Heading level must be reconciled: the existing \"### 4.8a Coverage…\" is an h3 peer of §4.8, while the proposal inserts the new heading as h4 — pick one level for the 4.8a/4.8b series (making the new heading h3 keeps the lettered series coherent) and renumber Coverage to 4.8b. (2) Update the opening cross-reference of the renumbered Coverage section (\"§4.8's excess runs over Kobak's 407 style words\") and its later \"§4.8's claim arriving by a different route\" / \"cost §4.8 its…\" mentions (_src_body.md lines 2237, 2269, 2271, 2281) to point at whichever half now holds the referenced material. (3) The artifact table rows naming \"§4.8 +0.387 well-measured, 3 families at 1,600 prompts\" and \"§4.8 ladder stages\" (lines 4353–4356) and the §5 mentions at 3628/3765 need repointing to §4.8/§4.8a as appropriate; likewise line 22 and 4392. (4) The footnote [^rptchecks] anchor stays with the sentence that ends the first half, while [^r47] is cited in the first half but defined after the material that moves into 4.8a — verify the pandoc/LaTeX build still resolves it after the heading insertion. (5) Mirror the split in both /home/matt/performance_commons/analysis/s10/latex/_src_body.md and /home/matt/performance_commons/analysis/s10/S10-WRITEUP-DRAFT.md, then rebuild body.tex.",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 4,
+          "keep": true,
+          "why": "§4.8 currently runs the headline ladder, the bias correction, three separate delimiting checks, the pooled-vs-well-measured estimator diagnostic and the family replication under one unbroken heading, and cutting at \"Three checks tighten what can be said\" is the natural seam — the sentence already works as a signpost into the new subsection — with the only real cost being a heading-level and cross-reference cleanup that is a dependency, not a defect."
+        },
+        {
+          "voter": "sol",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "Renumber the current coverage subsection from §4.8a to §4.8b, add a label for the new §4.8a, and update §4.8b’s opening cross-reference to point to the intended post-training subsection; update any hard-coded downstream references to the former §4.8a numbering.",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "The split gives the headline stage result and the checks that bound its interpretation distinct, logically coherent homes without separating any check from the evidence that supports it."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 3,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 2,
+          "keep": false,
+          "why": "The split orphans the topic sentence that introduces the checks, files estimator diagnostics and family replication under a heading that does not describe them, and uses a lettered #### 4.8a that both sits at the wrong depth and forces a needless bump of the existing ### 4.8a Coverage sibling.",
+          "dependencies": "Renumber current ### 4.8a Coverage to ### 4.8b; attach a LaTeX label for the new heading; break the current paragraph at the footnote. Existing §4.8 citations still resolve to the parent; [^rptchecks] is already defined in §4.5."
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 2,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "(1) Heading level must be reconciled: the existing \"### 4.8a Coverage…\" is an h3 peer of §4.8, while the proposal inserts the new heading as h4 — pick one level for the 4.8a/4.8b series (making the new heading h3 keeps the lettered series coherent) and renumber Coverage to 4.8b. (2) Update the opening cross-reference of the renumbered Coverage section (\"§4.8's excess runs over Kobak's 407 style words\") and its later \"§4.8's claim arriving by a different route\" / \"cost §4.8 its…\" mentions (_src_body.md lines 2237, 2269, 2271, 2281) to point at whichever half now holds the referenced material. (3) The artifact table rows naming \"§4.8 +0.387 well-measured, 3 families at 1,600 prompts\" and \"§4.8 ladder stages\" (lines 4353–4356) and the §5 mentions at 3628/3765 need repointing to §4.8/§4.8a as appropriate; likewise line 22 and 4392. (4) The footnote [^rptchecks] anchor stays with the sentence that ends the first half, while [^r47] is cited in the first half but defined after the material that moves into 4.8a — verify the pandoc/LaTeX build still resolves it after the heading insertion. (5) Mirror the split in both /home/matt/performance_commons/analysis/s10/latex/_src_body.md and /home/matt/performance_commons/analysis/s10/S10-WRITEUP-DRAFT.md, then rebuild body.tex.",
+          "Renumber the current coverage subsection from §4.8a to §4.8b, add a label for the new §4.8a, and update §4.8b’s opening cross-reference to point to the intended post-training subsection; update any hard-coded downstream references to the former §4.8a numbering.",
+          "Renumber current ### 4.8a Coverage to ### 4.8b; attach a LaTeX label for the new heading; break the current paragraph at the footnote. Existing §4.8 citations still resolve to the parent; [^rptchecks] is already defined in §4.5."
+        ],
+        "composite": 14
+      }
+    },
+    {
+      "locus": "§4.8a “What the models never produce”",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "**What the models never produce is the reason to be careful.** The words\npresent in 2025–26 Hansard and absent from our generations are the archetypal\nones: *transformative, unlocking, enhances, groundbreaking, leveraging,\npioneering, pivotal, amid*. Our 8B open models do not emit that register;\nwhatever is putting it in the record is not them. So the base-versus-instruct\ncontrast is a **directional proxy for what post-training does**, not a model of\nthe register actually appearing in Hansard, and §4.8 should not be read as\nreproducing the thing §4.2 detects.",
+      "proposed": "**What the models do not produce here is the reason to be careful.** The\nwords present in 2025–26 Hansard and absent from our generations are the\narchetypal ones: *transformative, unlocking, enhances, groundbreaking,\nleveraging, pioneering, pivotal, amid*. The 8B open models do not emit that\nregister in these generations; whatever puts it into the record is not\nreproduced by this experiment. The base-versus-instruct contrast is therefore\na **directional proxy for what post-training does**, not a model of the\nregister actually appearing in Hansard. It should not be read as reproducing\nthe thing §4.2 detects.",
+      "rationale": "Scope the inference to the observed generations rather than turning non-observation into a universal model-capability claim. The rewrite keeps the missing-word finding and its interpretive consequence intact.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C12",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "No data change: the word list, scope (2025–26 Hansard), 8B-model finding, and estimand label are preserved; edits only hedge the interpretive attribution (\"is not them\" → \"not reproduced by this experiment\") and scope wording."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "If adopted, the §4.8a paragraph-head label (\"What the models never produce\") used in section listings/cross-talk should be updated to the new lead-in wording.",
+          "clarity": 3,
+          "voice": 2,
+          "concision": 2,
+          "structural_soundness": 3,
+          "keep": false,
+          "why": "The current text already scopes the claim to \"our 8B open models,\" so the rewrite's added qualifiers (\"here,\" \"in these generations,\" \"not reproduced by this experiment\") buy no accuracy while replacing the crisp \"whatever is putting it in the record is not them\" with a longer, more passive, hedgier sentence."
+        },
+        {
+          "voter": "sol",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves the missing-word finding and its consequence while correctly limiting the capability inference to these generations in confident, plain prose."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Scoping “never produce” and “is not them” to these generations corrects an overclaim the sample cannot support, while the missing-word list and the directional-proxy consequence stay intact; the “not reproduced by this experiment” clause is a bit roundabout but not enough to keep the original.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 2,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "If adopted, the §4.8a paragraph-head label (\"What the models never produce\") used in section listings/cross-talk should be updated to the new lead-in wording."
+        ],
+        "composite": 13.33
+      }
+    },
+    {
+      "locus": "§4.9 — \"**Length, stated as a channel rather than adjusted away.**\"",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "**Length, stated as a channel rather than adjusted away.**\nStage 2's AI/Mixed segments run about 29 words longer within chamber\n(t +5.4), and length predicts justification, so part of the form lift may\ntravel through longer speech. It is reported, not partialled out: if the\ntool puts in more words and more complete inferences than the member would\nhave, that is a quality increase, not a confound (Matthew, 2026-08-19) — and\nthe strongest stage-2 dimension, respect_groups, has a *negative* length\nslope, so the lift is not length wearing a costume. The within-segment\ncontrol now runs[^s-q2q8]: with a within-chamber log-length term, justification is **+0.290 raw → +0.157\n\n[^s-q2q8]: `q2_q8_controls.py`; the id-keyed grades were recovered from the\n    grading machine's transcripts, 2026-08-20.\n\n(t 2.4) at fixed length** — about half the lift travels through longer\nspeech and half survives without it, the channel decomposition, not a\nretraction; **respect_groups is length-free** (+0.220 → +0.222); common_good\nbarely moves (+0.229 → +0.199, t 3.8); and evidence's marginal +0.065 is\nentirely length (→ −0.017) — flagged text has more checkable specifics only\nby being longer, consistent with stage 6's humans-keep-evidence result.\nSpeaker-clustered errors change nothing that carries a\nclaim: stage 2 is nearly one-segment-per-speaker (respect_groups t 6.1 →\n5.8), and in stage 1 (418 speakers) the only casualty is the already-\nquarantined respect_groups cell (t 2.0 → 1.8).",
+      "proposed": "**Length, stated as a channel rather than adjusted away.**\nStage 2's AI/Mixed segments run about 29 words longer within chamber\n(t +5.4), and length predicts justification, so part of the form lift may\ntravel through longer speech. It is reported, not partialled out: if the\ntool puts in more words and more complete inferences than the member would\nhave, that is a quality increase, not a confound — and the strongest stage-2\ndimension, respect_groups, has a *negative* length slope, so the lift is not\nlength wearing a costume. The within-segment control now runs. With a\nwithin-chamber log-length term, justification is **+0.290 raw → +0.157\n(t 2.4) at fixed length** — about half the lift travels through longer\nspeech and half survives without it, a channel decomposition rather than a\nretraction; **respect_groups is length-free** (+0.220 → +0.222); common_good\nbarely moves (+0.229 → +0.199, t 3.8); and evidence's marginal +0.065 is\nentirely length (→ −0.017), so flagged text has more checkable specifics\nonly by being longer, consistent with stage 6's humans-keep-evidence result.\nSpeaker-clustered errors change nothing that carries a claim: stage 2 is\nnearly one-segment-per-speaker (respect_groups t 6.1 → 5.8), and in stage 1\n(418 speakers) the only casualty is the already-quarantined respect_groups\ncell (t 2.0 → 1.8).[^s-q2q8]\n\n[^s-q2q8]: `q2_q8_controls.py`; the id-keyed grades were recovered from the\n    grading machine's transcripts, 2026-08-20.",
+      "rationale": "Same rendering defect: the footnote definition currently splits the sentence carrying the +0.157 result. Marker moved to the end of the passage it sources; the in-text \"(Matthew, 2026-08-19)\" attribution is dropped because the paper's own voice already owns that editorial choice. Every estimate and t is unchanged.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C6",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "No data change: all numbers, signs, and estimand labels preserved; edits are footnote relocation, removal of the \"(Matthew, 2026-08-19)\" attribution, and connective rewording."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "dependencies": "None; the `[^s-q2q8]` label and its definition text are unchanged, so only the marker position moves.",
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Every estimate, t-statistic, and finding is preserved verbatim; moving the footnote marker out of the middle of the +0.157 sentence fixes a real rendering break, and dropping the inline personal attribution lets the paper own an editorial choice it should own in its own voice."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves every result while repairing the sentence-breaking footnote placement, removing an unnecessary internal attribution, and smoothing the channel interpretation without weakening the caveats."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Fixes a footnote that split the +0.157 result mid-sentence, keeps every estimate, and drops a working-note attribution the paper already owns; the colon-to-period at \"now runs\" is slightly choppier but not enough to reject.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "None; the `[^s-q2q8]` label and its definition text are unchanged, so only the marker position moves."
+        ],
+        "composite": 15.67
+      }
+    },
+    {
+      "locus": "§4.9 — \"That exclusion conditions on something the treatment moves\"",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "That exclusion conditions on something the treatment moves, so the two claims\nare stated separately. **Applicability itself collapses at\nhigh screen scores**: respect_demands is applicable for 61.4% of segments\nscoring <10, 63.0% at 10–49, and **31.1%** at ≥50; respect_counterargs runs\n50.8% / 51.2% / **28.9%** (n = 498/297/45[^s-appband]). So the engagement null below means *engages no worse when there is something to\n\n[^s-appband]: `applicability_by_band.py`.\n\nengage with*; separately, AI-flagged speech is about **half as likely to\ncontain anything to engage with** — a real difference, not a null. Stage 6 (the never-reviewed continuations, below)\nlocates its source: the collapse appears in raw text from weaker models and\nvanishes at the frontier, so in the wild it points at the tools actually in\nuse rather than at machine text as such.",
+      "proposed": "That exclusion conditions on something the treatment moves, so the two claims\nare stated separately. **Applicability itself collapses at high screen\nscores**: respect_demands is applicable for 61.4% of segments scoring <10,\n63.0% at 10–49, and **31.1%** at ≥50; respect_counterargs runs 50.8% /\n51.2% / **28.9%** (n = 498/297/45). So the engagement null below means\n*engages no worse when there is something to engage with*; separately,\nAI-flagged speech is about **half as likely to contain anything to engage\nwith** — a real difference, not a null.[^s-appband] Stage 6, the\nnever-reviewed continuations below, locates its source: the collapse appears\nin raw text from weaker models and vanishes at the frontier, so in the wild\nit points at the tools actually in use rather than at machine text as such.\n\n[^s-appband]: `applicability_by_band.py`.",
+      "rationale": "The footnote definition is currently planted inside a sentence, breaking \"something to / engage with\" across a block — a real rendering defect. Moving the marker to the end of the claim and the definition below the paragraph fixes it; wording and all percentages are untouched.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C5",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "All percentages, band sample sizes (498/297/45), the half-as-likely magnitude, and the weaker-model/frontier finding are preserved; only footnote placement and phrasing change — no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "Footnote definition must move out of the paragraph interior to after the paragraph in analysis/s10/S10-WRITEUP-DRAFT.md; rebuild the LaTeX body (build_body.sh) so latex/body.tex picks up the new marker position.",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "All percentages, sample sizes, and findings are identical; the edit only relocates a footnote marker out of mid-sentence (fixing a real break in \"something to / engage with\") and lightly smooths the Stage 6 aside, so the paragraph reads cleanly with no loss of force."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves every result and number while moving the footnote out of the interrupted sentence, eliminating a genuine reading and rendering defect without changing the confident, plain wording."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Moves a mid-sentence footnote that split “something to / engage with” out of the clause, with every percentage, n, and claim left intact; the parenthetical-to-appositive on Stage 6 is a small plain-voice gain, not a rewrite.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Footnote definition must move out of the paragraph interior to after the paragraph in analysis/s10/S10-WRITEUP-DRAFT.md; rebuild the LaTeX body (build_body.sh) so latex/body.tex picks up the new marker position."
+        ],
+        "composite": 15.33
+      }
+    },
+    {
+      "locus": "§4.9 — \"Two pools were graded, 2026-08-10.\"",
+      "type": "structural",
+      "action": "merge",
+      "current": "§4.9, the one-line paragraph \"Two pools were graded, 2026-08-10.\" standing alone between the applicability discussion and the rubric-reliability paragraph.",
+      "proposed": "merge into the following paragraph so it reads as one block: \"Two pools were graded, 2026-08-10. The rubric's repeat-pass reliability sits at Spearman 0.68–0.91 per dimension, at or above the instrument's own published inter-coder bar (justification r = 0.716), and the claim-bearing gaps keep their signs on independent re-runs.\"",
+      "rationale": "An orphan single sentence reads as a stray note; joined to the reliability sentence it becomes a proper \"what was graded, and how reliably\" lead-in to stages 1 and 2. No wording changed.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C7",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "no data change — merge preserves the date, pool count, Spearman 0.68–0.91, r = 0.716, and the sign-stability claim verbatim (lines 2318–2323)."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "Apply the same merge in both the canonical markdown (/home/matt/performance_commons/analysis/s10/S10-WRITEUP-DRAFT.md, line ~2318) and the generated LaTeX (/home/matt/performance_commons/analysis/s10/latex/body.tex, line ~2196) so the two stay in sync; no cross-references, footnotes, or numbering are affected.",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 4,
+          "keep": true,
+          "why": "Joining the stranded one-line note to the reliability sentence turns a stray fragment into a coherent \"what was graded and how reliably\" lead-in to stages 1 and 2, with no wording, data, or reference consequences."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "Merging the date sentence with the reliability paragraph removes an orphaned note and creates a coherent lead-in without changing wording, data, or references."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "The one-line date-stamp currently sits as a stray lab note between applicability and reliability; joining it to the following sentence makes a single methods-setup block (what was graded, and how reliably) before the stage-1/2 findings, with no wording, data, or cross-reference change.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Apply the same merge in both the canonical markdown (/home/matt/performance_commons/analysis/s10/S10-WRITEUP-DRAFT.md, line ~2318) and the generated LaTeX (/home/matt/performance_commons/analysis/s10/latex/body.tex, line ~2196) so the two stay in sync; no cross-references, footnotes, or numbering are affected."
+        ],
+        "composite": 16
+      }
+    },
+    {
+      "locus": "§4.9 “Stage 6 inverts the question”",
+      "type": "structural",
+      "action": "split",
+      "current": "### 4.9 Quality: better-formed, not worse-engaged\n\nMachine-involved speech is better-formed and no less engaged once genre or chamber is held fixed; Stage 6 then tests unreviewed machine continuations across a capability ladder.",
+      "proposed": "Split before “**Stage 6 inverts the question: machine text no human ever reviewed.**” and insert the subsection heading “#### 4.9a Unreviewed continuations reveal a capability ladder”.",
+      "rationale": "Stage 6 is a separate experiment with a different estimand, sample construction, and interpretation from the observational Stages 1 and 2. Giving it a subsection makes the shift from wild speech to controlled continuations visible and reduces the apparent sprawl of §4.9.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C14",
+      "faith": {
+        "locatable": true,
+        "current_matches": false,
+        "data_faithful": "pass",
+        "note": "No data change — inserting a subsection heading before the existing Stage 6 paragraph preserves all numbers and findings; but the supplied CURRENT text misquotes the §4.9 opening (the file has no \"Stage 6 then tests...\" clause), so the diff may not apply cleanly."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "(1) Heading should be rendered as a \\subsubsection with a new label (e.g. sec:stage6) rather than a literal \"4.9a\" — the manuscript's convention elsewhere (sec:chase-flight, sub:four-predictors) is numbered subsubsections. (2) Repoint stage-6-specific cross-references from \\cref{sec:quality} to the new label, notably body.tex:4796 (\"DQI grading, stage 6 (\\cref{sec:quality})\") and any stage-6 citation in the Discussion (~lines 3010-3024) and 4950; the artifact/table rows at 4764 and 4795 covering stages 1-5 stay as-is. (3) Table~\\ref{tab:continuations} and the stage-6 footnote (pool6/key6/results_stage6) travel with the moved text. (4) The forward mention of stage 6 in the §4.9 lead sentence and in the Table-3 footnote (\"stage 6's independent check\") remain valid but now read as pointers into a named subsection — no rewording required. (5) Mirror the split in the canonical markdown source, not only body.tex.",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 4,
+          "keep": true,
+          "why": "Stage 6 is a distinct designed experiment (different estimand, its own sample construction, its own table) sitting at the end of a 240-line observational subsection, and the proposed break falls exactly at the paragraph that announces the pivot, so the heading makes an already-real seam visible without disturbing any number or claim."
+        },
+        {
+          "voter": "sol",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "Add the new subsection heading and label in the canonical manuscript source, regenerate body.tex, and update any section numbering or cross-references affected by the inserted heading; keep Table “Machine continuations graded blind” with the Stage 6 subsection.",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "The split cleanly marks the transition from observational evidence about deployed speech to a controlled experiment on unreviewed continuations with its own design, estimand, and capability-ladder result."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "Stage 6 is a distinct experiment (different estimand, sample, and interpretation) already marked by a bold turn; a 4.9a heading at that seam matches the 4.8/4.8a pattern and makes the wild-to-controlled shift visible without moving or restating any result.",
+          "dependencies": "Insert the heading at the stated seam (text otherwise stays put). Match heading level to house convention: ### 4.9a like 4.5a/4.8a, not ####. Add a LaTeX semantic label for 4.9a. Update the Appendix D grader-table row “DQI grading, stage 6 (§4.9)” to §4.9a; other §4.9 citations can remain (4.9a sits under 4.9). Internal “below”/stage-6 pointers in 4.9 still resolve."
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "(1) Heading should be rendered as a \\subsubsection with a new label (e.g. sec:stage6) rather than a literal \"4.9a\" — the manuscript's convention elsewhere (sec:chase-flight, sub:four-predictors) is numbered subsubsections. (2) Repoint stage-6-specific cross-references from \\cref{sec:quality} to the new label, notably body.tex:4796 (\"DQI grading, stage 6 (\\cref{sec:quality})\") and any stage-6 citation in the Discussion (~lines 3010-3024) and 4950; the artifact/table rows at 4764 and 4795 covering stages 1-5 stay as-is. (3) Table~\\ref{tab:continuations} and the stage-6 footnote (pool6/key6/results_stage6) travel with the moved text. (4) The forward mention of stage 6 in the §4.9 lead sentence and in the Table-3 footnote (\"stage 6's independent check\") remain valid but now read as pointers into a named subsection — no rewording required. (5) Mirror the split in the canonical markdown source, not only body.tex.",
+          "Add the new subsection heading and label in the canonical manuscript source, regenerate body.tex, and update any section numbering or cross-references affected by the inserted heading; keep Table “Machine continuations graded blind” with the Stage 6 subsection.",
+          "Insert the heading at the stated seam (text otherwise stays put). Match heading level to house convention: ### 4.9a like 4.5a/4.8a, not ####. Add a LaTeX semantic label for 4.9a. Update the Appendix D grader-table row “DQI grading, stage 6 (§4.9)” to §4.9a; other §4.9 citations can remain (4.9a sits under 4.9). Internal “below”/stage-6 pointers in 4.9 still resolve."
+        ],
+        "composite": 15.67
+      }
+    },
+    {
+      "locus": "§4.9 “That exclusion conditions on something”",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "That exclusion conditions on something the treatment moves, so the two claims\nare stated separately. **Applicability itself collapses at\nhigh screen scores**: respect_demands is applicable for 61.4% of segments\nscoring <10, 63.0% at 10–49, and **31.1%** at ≥50; respect_counterargs runs\n50.8% / 51.2% / **28.9%** (n = 498/297/45[^s-appband]). So the engagement null below means *engages no worse when there is something to\n\n[^s-appband]: `applicability_by_band.py`.\n\nengage with*; separately, AI-flagged speech is about **half as likely to\ncontain anything to engage with** — a real difference, not a null. Stage 6 (the never-reviewed continuations, below)\nlocates its source: the collapse appears in raw text from weaker models and\nvanishes at the frontier, so in the wild it points at the tools actually in\nuse rather than at machine text as such.",
+      "proposed": "That exclusion conditions on something the treatment moves, so the two claims\nmust remain separate. **Applicability itself collapses at high screen\nscores**: respect_demands is applicable for 61.4% of segments scoring <10,\n63.0% at 10–49, and **31.1%** at ≥50; respect_counterargs runs 50.8% / 51.2%\n/ **28.9%** (n = 498/297/45[^s-appband]). The engagement null below therefore\nmeans *engages no worse when there is something to engage with*. Separately,\nAI-flagged speech is about **half as likely to contain anything to engage\nwith** — a real difference, not a null. Stage 6, using never-reviewed\ncontinuations, locates its source: the collapse appears in raw text from\nweaker models and vanishes at the frontier. In the wild, it therefore points\nat the tools actually in use rather than at machine text as such.\n\n[^s-appband]: `applicability_by_band.py`.",
+      "rationale": "Keep the conditional null and the negative applicability result in one continuous paragraph, then place the footnote after it. This fixes the current sentence broken by the footnote definition and makes the estimands impossible to conflate.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C13",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "no data change — all percentages (61.4/63.0/31.1; 50.8/51.2/28.9), band cutoffs, sample sizes (498/297/45), the half-as-likely magnitude, and the Stage 6 attribution are preserved; edits are wording/structure only."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "Footnote [^s-appband] definition must move to the end of the paragraph (as shown) so it no longer interrupts the sentence; verify the LaTeX/markdown build still resolves the marker.",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "All figures, denominators, and the direction of the applicability collapse are preserved verbatim, while breaking the footnote-interrupted sentence into clean declaratives makes the conditional null and the separate negative result harder to conflate, with no loss of confidence in the voice."
+        },
+        {
+          "voter": "sol",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves every result and interpretation while restoring the interrupted sentence, sharply separating the conditional engagement null from the applicability decline, and placing the footnote cleanly after the paragraph."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Preserves every number and finding, splits the conditional null from the applicability collapse so they cannot be read as one result, and repairs the mid-sentence footnote/paragraph break without blandifying the voice.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Footnote [^s-appband] definition must move to the end of the paragraph (as shown) so it no longer interrupts the sentence; verify the LaTeX/markdown build still resolves the marker."
+        ],
+        "composite": 15.67
+      }
+    }
+  ]
+}

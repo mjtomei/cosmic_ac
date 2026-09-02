@@ -1,0 +1,1283 @@
+{
+  "scope": "§8.6 Future work, Appendix A, Appendix B, Appendix C (C.1–C.4), Appendix D (D.1–D.4)",
+  "phase": "1",
+  "iteration": 1,
+  "variants": [
+    "neutral"
+  ],
+  "n_proposals": 20,
+  "n_candidates": 20,
+  "n_faith_pass": 16,
+  "n_faith_dropped": 4,
+  "accepted": 15,
+  "self_preference": {
+    "opus-5-med": {
+      "self_n": 9,
+      "self_keep": 9,
+      "other_n": 7,
+      "other_keep": 7
+    },
+    "sol": {
+      "self_n": 7,
+      "self_keep": 0,
+      "other_n": 9,
+      "other_keep": 8
+    },
+    "grok-4.6": {
+      "self_n": 0,
+      "self_keep": 0,
+      "other_n": 16,
+      "other_keep": 15
+    }
+  },
+  "panel_health": {
+    "seats": [
+      "opus-5-med",
+      "sol",
+      "grok-4.6"
+    ],
+    "present": [
+      "opus-5-med",
+      "sol",
+      "grok-4.6"
+    ],
+    "absent": [],
+    "ballots_cast": {
+      "opus-5-med": 16,
+      "sol": 16,
+      "grok-4.6": 16
+    },
+    "ballots_lost": {},
+    "lost_to_limits": {},
+    "propose_failures": [
+      {
+        "seat": "grok-4.6",
+        "stage": "propose",
+        "limit": false,
+        "err": "Error: agent stalled on all 6 attempts (no progress for 180000ms each)"
+      }
+    ]
+  },
+  "changes": [
+    {
+      "locus": "§D.3 — “Two consequences carried into the text.”",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "Two consequences carried into the text. The GO Opus-selected run regresses\n−10.3 points on re-scoring because every seed sits at the extreme of a noisy\ndistribution, and it is range-restricted — it cannot contain the low band\nwhere New Brunswick found most of its successes, so its zero successes are\nuninformative about which texts evade (an exploratory question — Appendix B). And the GO all-31 run is the cleanest\nprovenance in the study: exactly one selection step, the Pangram verdict\nitself, with no detector, lexicon, or Opus score influencing which segments\nwere scanned. It is also every Government Orders positive we hold, so it is an\nexploratory replication rather than an independent rate estimate.",
+      "proposed": "Two consequences carry into the text. First, the GO Opus-selected run falls\n−10.3 points on re-scoring because every seed was selected from the extreme\nof a noisy distribution. It is also range-restricted: it cannot include the\nlow band in which New Brunswick produced most of its successes. Its zero\nsuccesses therefore say nothing about the exploratory question of which texts\nevade (Appendix B). Second, the GO all-31 run has exactly one selection step,\nthe Pangram verdict; no detector, lexicon, or Opus score influenced which\nsegments were scanned. Because it contains every Government Orders positive\nwe hold, it is an exploratory replication, not an independent rate estimate.",
+      "rationale": "The existing paragraph compresses two distinct selection arguments into one long sentence and calls one provenance “the cleanest.” The rewrite makes each implication explicit and removes the comparative flourish without changing any result or limitation.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C19",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "no data change — all figures (−10.3), selection-step count, and estimand labels preserved; only the framing phrase \"cleanest provenance in the study\" was dropped."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "dependencies": "",
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The First/Second split makes the two selection arguments separately legible and keeps every number, the zero-successes finding, and both limitations intact; dropping \"the cleanest provenance in the study\" loses a little assertiveness but the concrete \"exactly one selection step\" clause carries the same claim more plainly."
+        },
+        {
+          "voter": "sol",
+          "is_author": true
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Splits the two selection arguments into explicit First/Second claims and drops the self-congratulatory “cleanest provenance” without touching −10.3, the zero-success finding, range restriction, or the all-31 limitation; “regresses”→“falls” is a small precision loss that does not justify rejecting.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 2,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [],
+        "composite": null
+      }
+    },
+    {
+      "locus": "§D.4 — “What this was run on.”",
+      "type": "structural",
+      "action": "split",
+      "current": "### D.4 Artifacts\n\nThe subsection inventories the reproducibility artifacts and then describes the detector, frontier-model subscription, and hardware used to run the study.",
+      "proposed": "Split immediately before “**What this was run on.** Three resources, and the commercial detector is the smallest of them.” Make that passage and everything through “reproduces the prevalence arm and nothing else” a new subsection titled “Compute and model resources.” Renumber it after the element-signature move and update cross-references as dependencies.",
+      "rationale": "Artifact inventory and execution environment answer different replication questions. Separate subsections make both easier to locate and prevent the resource disclosure from being buried beneath a long file table.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C20",
+      "faith": {
+        "current_matches": false,
+        "data_faithful": "pass",
+        "locatable": true,
+        "note": "Passage found (lines 4332/4366-4400); the shown CURRENT is a summary, not verbatim file text, but the proposed split moves the \"What this was run on\" block intact and changes no datum (4,258 verdicts, r = +0.758, model/effort table all preserved) — no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "New subsection number/heading after the element-signature move (D.4 Artifacts, then the new \"Compute and model resources\" as D.5, with any following D-subsections renumbered); the model-by-arm table and the closing \"only the first is metered\" paragraph must travel with the new subsection; add a LaTeX label for it and update the label map in /home/matt/performance_commons/analysis/s10/latex/reformat.py (currently \"D.4\":\"sec:artifacts\"); check external notes that cite \"Appendix D.4\" (e.g. EVIDENCE-STANDARDS-SURVEY.md) still point at the intended target.",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 4,
+          "keep": true,
+          "why": "The split cuts cleanly at a natural seam — file inventory versus what you need to run it — and gives the detector/model/hardware disclosure, which is substantive and often looked up on its own, a findable heading instead of a tail beneath a 30-row table."
+        },
+        {
+          "voter": "sol",
+          "is_author": true
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "The file inventory and the three-resource disclosure answer different replication questions; splitting at the existing bold lead-in makes the compute paragraph locatable instead of sitting under a 30-row table titled Artifacts.",
+          "dependencies": "Number the new subsection immediately after Artifacts (D.5 under current numbering; one later if the unnumbered element-signature block is first promoted to D.1). Leave the file table under D.4 Artifacts. Add a LaTeX label in reformat.py for the new heading. No in-manuscript cross-reference currently points at the resource paragraph."
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 2,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "New subsection number/heading after the element-signature move (D.4 Artifacts, then the new \"Compute and model resources\" as D.5, with any following D-subsections renumbered); the model-by-arm table and the closing \"only the first is metered\" paragraph must travel with the new subsection; add a LaTeX label for it and update the label map in /home/matt/performance_commons/analysis/s10/latex/reformat.py (currently \"D.4\":\"sec:artifacts\"); check external notes that cite \"Appendix D.4\" (e.g. EVIDENCE-STANDARDS-SURVEY.md) still point at the intended target.",
+          "Number the new subsection immediately after Artifacts (D.5 under current numbering; one later if the unnumbered element-signature block is first promoted to D.1). Leave the file table under D.4 Artifacts. Add a LaTeX label in reformat.py for the new heading. No in-manuscript cross-reference currently points at the resource paragraph."
+        ],
+        "composite": null
+      }
+    },
+    {
+      "locus": "Appendix A — \"18. **The altitude quadratic (registered)** — null.\"",
+      "type": "structural",
+      "action": "split",
+      "current": "Appendix A — Null results: a flat numbered list 1–21, with the interpretive paragraph \"Together these say the cohort effect is real and its **mechanism is not exposure as we can measure it.** ...\" sitting between item 17 and item 18, so items 18–21 (the registered instrument failures) trail after what reads as the appendix's closing summary.",
+      "proposed": "Split after the paragraph ending \"What does carry is measured on individuals, not on chambers.\" by inserting a bold group label immediately before item 18: \"**Registered predictions that failed.**\" (Items 1–17 keep their numbering and their closing summary; 18–21 sit under the new label.)",
+      "rationale": "A summary paragraph currently interrupts a numbered list and appears to close an appendix that continues for four more items; labelling the second group makes the existing summary's scope explicit without renumbering anything.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C1",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "fail",
+        "note": "The label \"Registered predictions that failed\" would cover item 21, which the manuscript neither marks as registered nor as a failure — it is explicitly \"Labelled power, not reversal\" (era window predicts t ≈ 1.2–1.4; career-panel versions hold at t 2.6) — so the heading adds a registration/failure claim; a label scoped to items 18–20 only would pass."
+      },
+      "faith_gate": false,
+      "faith_reason": "data_changed",
+      "votes": [],
+      "verdict": {
+        "accepted": false,
+        "keeps": 0,
+        "n": 0,
+        "dropped": "data_changed",
+        "composite": 0
+      }
+    },
+    {
+      "locus": "Appendix A, item 13 — \"Recorded because it was reported before the control\"",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "13. **Class I avoiding marked words, cross-sectionally** — did not survive a\n    year control. Pooled, class I held the lowest share of the most-risen\n    words (−1.76pp against VIIab); within era it is level with class II\n    (1.48% vs 1.49% in 2023–26) and higher in 2020–22. The pooled table was\n    class I's year distribution. **Recorded because it was reported before the\n    control was run** — the third time in this study that unclustered or\n    uncontrolled inference produced a flattering result.",
+      "proposed": "13. **Class I avoiding marked words, cross-sectionally** — did not survive a\n    year control. Pooled, class I held the lowest share of the most-risen\n    words (−1.76pp against VIIab); within era it is level with class II\n    (1.48% vs 1.49% in 2023–26) and higher in 2020–22. The pooled table was\n    class I's year distribution. **Recorded because it was reported before the\n    control was run** — the same failure mode as item 3, with an uncontrolled\n    rather than an unclustered comparison producing the flattering result.",
+      "rationale": "Item 3 already enumerates three instances of this failure mode, so \"the third time\" contradicts the surrounding bookkeeping (Appendix B's entry 0 also claims a \"third\"); naming the pattern instead of counting it keeps the record straight without dropping the point.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C2",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "No data change: all statistics (−1.76pp, 1.48% vs 1.49%, era directions) and the reported-before-control claim are preserved; the ordinal tally \"third time\" is replaced by a cross-reference to item 13's counterpart in item 3, which is consistent with item 3's own enumeration and correctly classifies this instance as uncontrolled rather than unclustered."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "The rewrite introduces a cross-reference to \"item 3\" in Appendix A — it must be updated if the null-results list is ever renumbered (item 3 is currently the cohort × birth-province entry, which is indeed the one enumerating the unclustered-inference instances). Separately (pre-existing, not caused by this edit, but worth fixing in the same pass): §4.6b calls its provincial estimates \"the study's third encounter with unclustered inference\" and Appendix B entry 0 repeats \"the study's third unclustered-inference incident\", while item 3 already assigns \"third\" to the cohort t-statistic — that collision remains and should be reconciled.",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "All numbers and the null finding are untouched, and replacing a tally that collides with the manuscript's own bookkeeping (\"third\" is already claimed elsewhere) with a named pattern — plus the sharper unclustered-versus-uncontrolled distinction — keeps the self-audit point fully intact and more accurate."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves every reported result while replacing contradictory bookkeeping with a precise, plainly stated link to the relevant failure mode in item 3."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Item 3 already enumerates three unclustered incidents and Appendix B0 claims another “third,” so dropping the ordinal for a named pattern (uncontrolled vs unclustered) fixes the bookkeeping without touching any number, direction, or finding.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "The rewrite introduces a cross-reference to \"item 3\" in Appendix A — it must be updated if the null-results list is ever renumbered (item 3 is currently the cohort × birth-province entry, which is indeed the one enumerating the unclustered-inference instances). Separately (pre-existing, not caused by this edit, but worth fixing in the same pass): §4.6b calls its provincial estimates \"the study's third encounter with unclustered inference\" and Appendix B entry 0 repeats \"the study's third unclustered-inference incident\", while item 3 already assigns \"third\" to the cohort t-statistic — that collision remains and should be reconciled."
+        ],
+        "composite": 15.33
+      }
+    },
+    {
+      "locus": "Appendix A, item 21 — “The ladder middles in the 2025–26 era window”",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "21. **The ladder middles in the 2025–26 era window** — null at era power\n    (directional +0.006, coded −0.014, n = 1,000), while the career-panel\n    versions hold at t 2.6 under full covariates. Labelled power, not\n    reversal: the era window predicts t ≈ 1.2–1.4 for effects this size.",
+      "proposed": "21. **The ladder middles in the 2025–26 era window** — null at era power\n    (directional +0.006, coded −0.014, n = 1,000), while the career-panel\n    versions hold at t = 2.6 under full covariates. This is a loss of power,\n    not a reversal: for effects of this size, the era window predicts\n    t ≈ 1.2–1.4.",
+      "rationale": "The replacement turns the fragment “Labelled power, not reversal” into a direct explanation while preserving the null, directions, sample size, and test statistics.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C13",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "no data change — all figures (+0.006, −0.014, n = 1,000, t 2.6, t ≈ 1.2–1.4) and the power-not-reversal claim are preserved; edits are phrasing only."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "dependencies": "",
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "All figures, directions, n, and t-values are unchanged; the rewrite fixes the missing \"=\" and converts an elliptical label into a plain declarative sentence at negligible length cost."
+        },
+        {
+          "voter": "sol",
+          "is_author": true
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Unpacks the cryptic fragment “Labelled power, not reversal” into a direct diagnosis without changing any number, direction, or finding; the clause reorder also lands the predicted t-range more naturally.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 2,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [],
+        "composite": null
+      }
+    },
+    {
+      "locus": "Appendix B — \"**The elevenfold spread.** Earlier versions stated\"",
+      "type": "structural",
+      "action": "reorder",
+      "current": "Appendix B — Superseded analyses: opens with an unnumbered lead entry (\"**The elevenfold spread.**\"), then item \"0a. **§4.8's stage ordering**\", then item \"0. **§4.6b, twice**\", then items 1–13.",
+      "proposed": "Renumber the whole list in its current reading order as 1–16: the elevenfold spread becomes 1, §4.8's stage ordering becomes 2, §4.6b-twice becomes 3, and present items 1–13 become 4–16. Companion edit: §4.6a's cross-reference at \"Appendix B10 preserves its numbers\" becomes \"Appendix B13\".",
+      "rationale": "An unnumbered head item followed by \"0a\" before \"0\" is a numbering accident from successive drafts; a single contiguous sequence makes the superseded record citable, and the one existing numeric cross-reference is a cheap companion edit.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C4",
+      "faith": {
+        "current_matches": true,
+        "data_faithful": "pass",
+        "locatable": true,
+        "note": "Pure renumbering (lead/0a/0/1–13 → 1–16) preserving reading order; the single numbered cross-reference (Appendix B10 → B13, line 1306) is correctly updated and no other numbered B-references exist — no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 5,
+          "keep": true,
+          "dependencies": "Update the one numeric cross-reference at S10-WRITEUP-DRAFT.md line 1306, \"Appendix B10 preserves its numbers\" -> \"Appendix B13\" (the retired-framings-behind-§4.6a entry is present item 10, which becomes 16-item-sequence item 13); mirror both the renumbering and that cross-reference in analysis/s10/latex/body.tex (the elevenfold-spread lead is at body.tex:3758) so the LaTeX enumerate matches the markdown; keep the [^rshrink] footnote attached to the elevenfold-spread entry as it becomes item 1, and ensure the markdown ordered list numbers continuously across the intervening sub-lists and the item-13 table rather than restarting. No other reference cites a B-item by number (other mentions at lines 507, 2144, 2366, 2521, 2599, 2744, 2894, 4300, 4320, 4382 are unnumbered).",
+          "why": "Pure renumbering in existing reading order: it changes no data, dissolves the \"unnumbered lead / 0a / 0\" drafting accident into a citable contiguous 1–16 sequence, and its single stranded cross-reference has an exact, cheap fix (B10 → B13)."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "Renumber all Appendix B entries in current reading order as 1–16 and update §4.6a’s “Appendix B10 preserves its numbers” cross-reference to “Appendix B13.”",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "A contiguous sequence corrects the accidental unnumbered/0a/0 opening, preserves the existing reading order and data, and makes every superseded analysis consistently citable."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "The unnumbered head plus 0a-before-0 is a draft accident, not a design; a contiguous 1–16 leaves reading order and every number in the entries untouched, makes the record citable, and the single numeric pointer (B10→B13 at §4.6a) is a correctly identified companion.",
+          "dependencies": "§4.6a's \"Appendix B10 preserves its numbers\" → \"Appendix B13\" (same sentence in latex/_src_body.md). Unnumbered \"Appendix B\" mentions elsewhere still resolve to the appendix as a whole and need not change."
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Update the one numeric cross-reference at S10-WRITEUP-DRAFT.md line 1306, \"Appendix B10 preserves its numbers\" -> \"Appendix B13\" (the retired-framings-behind-§4.6a entry is present item 10, which becomes 16-item-sequence item 13); mirror both the renumbering and that cross-reference in analysis/s10/latex/body.tex (the elevenfold-spread lead is at body.tex:3758) so the LaTeX enumerate matches the markdown; keep the [^rshrink] footnote attached to the elevenfold-spread entry as it becomes item 1, and ensure the markdown ordered list numbers continuously across the intervening sub-lists and the item-13 table rather than restarting. No other reference cites a B-item by number (other mentions at lines 507, 2144, 2366, 2521, 2599, 2744, 2894, 4300, 4320, 4382 are unnumbered).",
+          "Renumber all Appendix B entries in current reading order as 1–16 and update §4.6a’s “Appendix B10 preserves its numbers” cross-reference to “Appendix B13.”",
+          "§4.6a's \"Appendix B10 preserves its numbers\" → \"Appendix B13\" (same sentence in latex/_src_body.md). Unnumbered \"Appendix B\" mentions elsewhere still resolve to the appendix as a whole and need not change."
+        ],
+        "composite": 15.67
+      }
+    },
+    {
+      "locus": "Appendix B — “The elevenfold spread.”",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "**The elevenfold spread.** Earlier versions stated the cross-chamber\nspread as the raw range of the twenty per-chamber rates, 1.8% to 19.8% —\nelevenfold. Superseded by the random-effects treatment in §4.2: the\nextremes of twenty noisy estimates are extreme partly by sampling luck, so\na raw max/min ratio overstates true separation. Under empirical-Bayes\nshrinkage (logit τ = 0.56, I² = 0.78) the range is 4.3% to 18.3% —\nbetter than fourfold — which is the figure the paper now\nreports.[^rshrink]",
+      "proposed": "**The elevenfold spread.** Earlier versions described the raw range of\nthe twenty per-chamber rates, 1.8% to 19.8%, as an elevenfold spread. That\nstatement is superseded by the random-effects treatment in §4.2. Because\nthe extremes of twenty noisy estimates partly reflect sampling luck, the\nraw maximum-to-minimum ratio overstates the underlying separation. After\nempirical-Bayes shrinkage (logit τ = 0.56, I² = 0.78), the range is 4.3% to\n18.3% — more than fourfold — which is the figure the paper now\nreports.[^rshrink]",
+      "rationale": "This states the statistical reason for retiring the old figure in a cleaner sequence and replaces the awkward “better than fourfold” with the precise interpretation, without changing any estimate.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C14",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "no data change — all numbers (1.8%–19.8%, elevenfold, τ = 0.56, I² = 0.78, 4.3%–18.3%, ~fourfold) and the supersession claim are preserved; only wording changed."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "All figures (1.8–19.8%, 4.3–18.3%, τ = 0.56, I² = 0.78) and the supersession claim are preserved; the rewrite orders the retraction-then-reason sequence more legibly and swaps the ambiguous \"better than fourfold\" for the unambiguous \"more than fourfold\" (18.3/4.3 ≈ 4.3), at the cost of a few extra words and one slightly flatter clause."
+        },
+        {
+          "voter": "sol",
+          "is_author": true
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 2,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": false,
+          "why": "The sequence is slightly cleaner, but the rewrite pads a clipped appendix note into conventional academic prose and swaps the paper’s own “better than fourfold” locution without a comprehension problem to solve.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": false,
+        "keeps": 1,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [],
+        "composite": null
+      }
+    },
+    {
+      "locus": "Appendix B, item 0 — \"first written as \\\"standing predicts the register downward\\\"\"",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "0. **§4.6b, twice** — first written as \"standing predicts the register\n   downward\" at t = 3–4 (unclustered provincial estimates, the study's third\n   unclustered-inference incident); then over-corrected to \"did not survive\n   its own checks\" on per-term t-tests alone.",
+      "proposed": "0. **§4.6b, twice** — first written as \"standing predicts the register\n   downward\" at t = 3–4 (unclustered provincial estimates, another of the\n   unclustered-inference incidents logged in Appendix A); then over-corrected\n   to \"did not survive its own checks\" on per-term t-tests alone.",
+      "rationale": "Three different passages each claim to be the \"third\" unclustered-inference incident; pointing to the Appendix A log keeps the cross-reference and removes an ordinal that cannot be true everywhere.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C3",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "fail",
+        "note": "The proposal drops the count \"the study's third unclustered-inference incident\" (a number, corroborated at line 3421), replacing it with an unnumbered \"another of the incidents logged in Appendix A\"; all other data (t = 3–4, p = 0.029) are preserved."
+      },
+      "faith_gate": false,
+      "faith_reason": "data_changed",
+      "votes": [],
+      "verdict": {
+        "accepted": false,
+        "keeps": 0,
+        "n": 0,
+        "dropped": "data_changed",
+        "composite": 0
+      }
+    },
+    {
+      "locus": "Appendix B, item 0a — “§4.8's stage ordering”",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "0a. **§4.8's stage ordering** — \"the shift is largest at the preference\n   stage\" rested on a per-transition estimator pedestal (M9; the M3 defect\n   per stage). Corrected by three agreeing routes: SFT ≈ DPO, RLVR ≈ 0. The\n   §4.5 connection is DE-EMPHASIZED rather than withdrawn (Matthew): the\n   preference-and-demonstration stages installing the register while the\n   correctness stage does not remains an interesting association, but the\n   text no longer relies on any stage ordering, and the RLVR placebo now\n   passes its own manipulation check.",
+      "proposed": "0a. **§4.8's stage ordering** — the claim that “the shift is largest at\nthe preference stage” depended on a per-transition estimator (M9) with the\nM3 defect repeated at each stage. Three corrected routes agree: SFT ≈ DPO,\nRLVR ≈ 0. The §4.5 connection is therefore de-emphasized rather than\nwithdrawn (Matthew). The preference-and-demonstration stages install the\nregister while the correctness stage does not, but the text no longer\nclaims an ordering between the first two stages; the RLVR placebo now also\npasses its manipulation check.",
+      "rationale": "The current “estimator pedestal” shorthand obscures what failed. The rewrite distinguishes the surviving stage contrast from the unsupported ordering and retains every reported result.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C15",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "fail",
+        "note": "The proposal narrows \"no longer relies on any stage ordering\" to \"no ordering between the first two stages,\" implicitly reinstating an SFT/DPO-vs-RLVR ordering claim the manuscript explicitly does not support, and flattens the hedged \"interesting association\" into an asserted finding."
+      },
+      "faith_gate": false,
+      "faith_reason": "data_changed",
+      "votes": [],
+      "verdict": {
+        "accepted": false,
+        "keeps": 0,
+        "n": 0,
+        "dropped": "data_changed",
+        "composite": 0
+      }
+    },
+    {
+      "locus": "Appendix C — \"[^s-usx]: `us/us_extract.py`.\"",
+      "type": "structural",
+      "action": "move",
+      "current": "The three source footnote definitions ([^s-usx], [^s-prereg2], [^s-s20]) sit between item 34 and item 35, interrupting the numbered future-work list.",
+      "proposed": "Move the block of three footnote definitions ([^s-usx], [^s-prereg2], [^s-s20]) to the end of Appendix C, after item 36.",
+      "rationale": "Footnote definitions render at the document end regardless, so their only effect here is to break the item list in the source; grouping them after the last item keeps the list continuous.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C7",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "Pure relocation of three footnote definitions (file-path pointers only) from between items 34 and 35 to after item 36; no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "None substantive — the three definitions must land inside Appendix C, before the \"## Appendix D\" heading, and the item numbering (35, 36) should be verified as continuous after the block is lifted out; regenerate any derived render (latex/body.tex) if it carries these notes.",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "The footnote definitions currently sever the numbered list between items 34 and 35 (a real source-level and likely renderer-level break) while producing no output at that position, so grouping them after item 36 is a pure structural improvement with no effect on data or content."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "Moving the footnote definitions after item 36 preserves all content and references while keeping the numbered future-work list continuous in the source."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "The three footnote definitions currently split Appendix C's numbered list between items 34 and 35; parking them after item 36 restores a continuous list without changing any citation, number, or finding.",
+          "dependencies": "The same footnote block in analysis/s10/latex/_src_body.md, if that file is not regenerated from the markdown."
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "None substantive — the three definitions must land inside Appendix C, before the \"## Appendix D\" heading, and the item numbering (35, 36) should be verified as continuous after the block is lifted out; regenerate any derived render (latex/body.tex) if it carries these notes.",
+          "The same footnote block in analysis/s10/latex/_src_body.md, if that file is not regenerated from the markdown."
+        ],
+        "composite": 15.67
+      }
+    },
+    {
+      "locus": "Appendix C — \"Collecting covariates for this study produced something with uses\"",
+      "type": "structural",
+      "action": "move",
+      "current": "The paragraph \"Collecting covariates for this study produced something with uses well outside it: birth year, education, prior occupation, EGP class and Wikipedia prominence ... Two families of question follow, and they differ in how novel they are likely to be.\" sits after group F's footnotes and before the heading \"**F2. What the legislator panel enables beyond the register (Matthew).**\", which it introduces.",
+      "proposed": "Move the paragraph to immediately after the \"**F2. ...**\" heading, so the group opens with its own introduction. Companion edit: relabel the heading \"F2.\" as \"G.\", giving the appendix a clean A–G group sequence.",
+      "rationale": "The paragraph is the group's intro but is stranded outside it, separated from the heading by another group's footnotes; \"F2\" also reads as a subdivision of F when it is a distinct family of questions.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C8",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "Pure reorganization: paragraph moved intact below the heading and heading relabeled F2→G; the ~5,000 legislators / 22 chambers figures and all claims are preserved — no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "Mirror the move and the F2→G relabel in analysis/s10/latex/body.tex (line ~4288 and the corresponding heading) as well as S10-WRITEUP-DRAFT.md; check for and update any cross-references to \"F2\" or to appendix groups elsewhere in the manuscript (none found in the draft body, but the LaTeX and any group list should be re-grepped after the edit); keep the group-F footnotes [^r86a]–[^r86c] where they are, immediately after group F's items.",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "Placing the \"two families of question\" paragraph under its own heading matches the pattern group F already uses (heading, then framing prose, then numbered items), rescues it from sitting orphaned after another group's footnotes, and the F2→G relabel correctly signals a distinct group rather than a subdivision, with no data touched."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "Relabel the heading from “F2.” to “G.” and update any internal cross-references or contents entries that refer to Appendix C group F2.",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "Placing the introductory paragraph beneath the heading makes its scope immediately clear, while renaming the distinct group G restores a coherent A–G sequence."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "The paragraph is the group's intro stranded after F's footnotes, and F2 is a distinct family mislabeled as a subdivision of F; parking it under a relabeled G heading matches how A–F already open and gives the appendix a clean sequence.",
+          "dependencies": "Relabel the heading F2. as G.; no in-text cross-references to F2 exist in the manuscript."
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Mirror the move and the F2→G relabel in analysis/s10/latex/body.tex (line ~4288 and the corresponding heading) as well as S10-WRITEUP-DRAFT.md; check for and update any cross-references to \"F2\" or to appendix groups elsewhere in the manuscript (none found in the draft body, but the LaTeX and any group list should be re-grepped after the edit); keep the group-F footnotes [^r86a]–[^r86c] where they are, immediately after group F's items.",
+          "Relabel the heading from “F2.” to “G.” and update any internal cross-references or contents entries that refer to Appendix C group F2.",
+          "Relabel the heading F2. as G.; no in-text cross-references to F2 exist in the manuscript."
+        ],
+        "composite": 16.33
+      }
+    },
+    {
+      "locus": "Appendix C, item 1 — “The substance channel.”",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "1. **The substance channel.** §4 measures *register*. Whether machine\n   assistance changes what legislators argue, which evidence they cite, and\n   which framings they reach for is unmeasured, and the Kobak instrument cannot\n   answer it — its style/content split is PubMed's content, not a legislature's,\n   and does not transfer. The materials for a domain-native version already\n   exist: the base-versus-instruct generation that produced §4.8's +0.387 yields\n   an empirically derived list of what post-training adds *to legislative text\n   specifically*. Split that list into register-like and substance-like by an\n   independent rule and run both through the frozen protocol as separate arms,\n   giving \"did the register shift\" and \"did the substance shift\" as two\n   measurements instead of one. Estimated at a few hours. This is the single\n   most valuable unrun item, and it is also a limit on the present study rather\n   than merely an extension (§6).",
+      "proposed": "1. **The substance channel.** §4 measures *register*, not whether machine\n   assistance changes what legislators argue, which evidence they cite, or\n   which framings they reach for. The Kobak instrument cannot answer that\n   question: its style/content split captures PubMed's content and does not\n   transfer to a legislature. A domain-native test can be built from materials\n   already in hand. The base-versus-instruct generation that produced §4.8's\n   +0.387 yields an empirical list of what post-training adds to legislative\n   text specifically. Divide that list into register-like and substance-like\n   features by an independent rule, then run both as separate arms through the\n   frozen protocol. The result would be two measurements — “did the register\n   shift?” and “did the substance shift?” — instead of one. Estimated at a few\n   hours, this is the most valuable unrun item and a limit on the present study,\n   not merely an extension (§6).",
+      "rationale": "The rewrite leads with the study’s substantive boundary, then presents the proposed test as a direct answer. It preserves the unmeasured outcome, the +0.387 result, the design, and the time estimate.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C16",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "No data change: the +0.387 figure, §4.8/§4/§6 references, estimand (register vs substance), Kobak non-transfer claim, two-arm design, and few-hours estimate are all preserved; edits are framing and word choice only."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "Quote marks in the rewrite use curly “ ” — normalize to the manuscript's quote convention (LaTeX ``...'' in body.tex) when applied.",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite breaks an overloaded sentence chain into a clean claim-then-remedy sequence while preserving the +0.387 result, the unmeasured-substance finding, the design, and the time estimate, and it reads more directly without going bland."
+        },
+        {
+          "voter": "sol",
+          "is_author": true
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Leads with the study’s actual boundary, splits a dash-clause run-on into readable claims, and keeps +0.387, the design, and the time estimate intact.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 2,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Quote marks in the rewrite use curly “ ” — normalize to the manuscript's quote convention (LaTeX ``...'' in body.tex) when applied."
+        ],
+        "composite": null
+      }
+    },
+    {
+      "locus": "Appendix C, item 17 — \"Members read what staff write, so a 70-year-old member\"",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "17. **Staff age as the exposure measure.** Members read what staff write, so a 70-year-old member with 24-year-old staff has young exposure — which is why the member-age design is not the right one. Legislative staff are young and short-tenured, so office exposure tracks the cohort entering staff work, and that cohort turned computer-native in the mid-2000s, where the UK curve starts climbing. Data is thin but two routes exist: Legistorm's US congressional staff records (paid) and House Statements of Disbursements (names, salaries, tenure and salary as seniority proxies). Neither has been pursued.",
+      "proposed": "17. **Staff age as the exposure measure.** Members read what staff write, so\n    a 70-year-old member with 24-year-old staff has young exposure: on this\n    rival's account the exposed unit is the office, not the member, and member\n    age is the wrong measure of it. Legislative staff are young and\n    short-tenured, so office exposure tracks the cohort entering staff work,\n    and that cohort turned computer-native in the mid-2000s, where the UK\n    curve starts climbing. Data is thin but two routes exist: Legistorm's US\n    congressional staff records (paid) and House Statements of Disbursements\n    (names, salaries, tenure and salary as seniority proxies). Neither has\n    been pursued.",
+      "rationale": "The current clause concedes in the paper's own voice that its design was wrong; stating the claim as the rival's — which is what this group of items is for — is both more accurate and more confident, and the item is also the only one in the appendix not line-wrapped.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C10",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "no data change — only the framing of why member age is the wrong measure is reworded; all ages, dates, sources, and the not-pursued statement are preserved"
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "Apply the same edit to the LaTeX mirror (analysis/s10/latex/body.tex, Appendix D-group item 17) and line-wrap the item to match the surrounding list; no cross-references or numbers change.",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Attributing the \"member age is the wrong measure\" claim to the rival rather than conceding it in the paper's own voice is both more accurate for a section explicitly listing live rivals and clearer about the mechanism (the exposed unit is the office), at a small cost in length and with no change to any number or finding."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves every factual claim while correctly attributing the design objection to the rival account, though the added attribution makes the sentence slightly longer."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite correctly attributes the “wrong measure” claim to the untested rival instead of conceding it in the paper’s voice, names the office-as-unit mechanism, and leaves every datum untouched.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Apply the same edit to the LaTeX mirror (analysis/s10/latex/body.tex, Appendix D-group item 17) and line-wrap the item to match the surrounding list; no cross-references or numbers change."
+        ],
+        "composite": 14
+      }
+    },
+    {
+      "locus": "Appendix C, item 32 — \"detector-independent measures (Appendix C B)\"",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "The quality arm's DQI machinery is a starting point for the speech side;\n    detector-independent measures (Appendix C B) matter doubly here, since the claim\n    is about the behavior, not about any one detector's opinion of it.",
+      "proposed": "The quality arm's DQI machinery is a starting point for the speech side;\n    detector-independent measures (group B above) matter doubly here, since\n    the claim is about the behavior, not about any one detector's opinion of\n    it.",
+      "rationale": "An appendix should not cite itself by full name, and \"Appendix C B\" reads as a typo; \"group B above\" points at the same referent legibly.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C9",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "Only the cross-reference wording changes (\"Appendix C B\" -> \"group B above\", same target, which is above item 32); no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "None in the markdown source (the string \"Appendix C B\" appears only here). If the LaTeX build of Appendix C ever renders groups A–F with different labels or reorders them so that group B no longer precedes this item, \"group B above\" must be relabelled accordingly.",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The referent is unchanged and group B genuinely sits above this item within the same appendix, so \"group B above\" reads as an intra-appendix pointer rather than the typo-looking \"Appendix C B\", with no cost to data, argument, or voice."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite replaces a malformed self-reference with a concise, legible pointer to the same group without changing any substantive claim or data."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "“Appendix C B” is a self-cite that reads as a typo; “group B above” names the same heading from inside the appendix, with no change to the claim.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "None in the markdown source (the string \"Appendix C B\" appears only here). If the LaTeX build of Appendix C ever renders groups A–F with different labels or reorders them so that group B no longer precedes this item, \"group B above\" must be relabelled accordingly."
+        ],
+        "composite": 15.33
+      }
+    },
+    {
+      "locus": "Appendix C, item 4 — “The anti-correlation of gut judgment”",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "4. **The anti-correlation of gut judgment, measured properly.** §7.2's\n   sharpest claim — that register-based human judgment of authorship is\n   anti-correlated with the truth on adversarial text, flagging real humans\n   more than optimised machine rewrites — currently rests on one unblinded,\n   lineage-correlated judge (the DQI grader shares a family with the search's\n   own Opus proxy) over 35 texts, where the paired effect is directional but\n   not significant (−4 points, t = −1.15). The confirmatory design is cheap\n   and pre-registerable: recruit human raters (or at minimum a\n   non-Claude-family model, so the judge is independent of the optimisation\n   target), give them a balanced blind mix of genuine floor speech, ordinary\n   machine drafts, and detector-optimised rewrites, and record whether the\n   false-positive rate on real humans exceeds the miss rate on optimised text.\n   If it does, \"detection cannot underwrite an accusation\" strengthens from a\n   statement about detectors to a statement about human judgment itself, with\n   a measured false-accusation rate attached — the number a disclosure-norm\n   policy would actually need.",
+      "proposed": "4. **The anti-correlation of gut judgment, measured properly.** §7.2's\n   sharpest claim is that register-based authorship judgment becomes\n   anti-correlated with truth on adversarial text, flagging genuine human speech\n   more often than optimised machine rewrites. The present evidence is one\n   unblinded, lineage-correlated judge over 35 texts: the DQI grader shares a\n   model family with the search's Opus proxy, and the paired effect is\n   directional but not significant (−4 points, t = −1.15). A confirmatory test\n   is cheap and pre-registerable. Recruit human raters — or, at minimum, use a\n   non-Claude-family model independent of the optimisation target — and give\n   them a balanced, blind mixture of genuine floor speech, ordinary machine\n   drafts, and detector-optimised rewrites. Then test whether the false-positive\n   rate on genuine human speech exceeds the miss rate on optimised text. If it\n   does, “detection cannot underwrite an accusation” extends from detectors to\n   human judgment, with the measured false-accusation rate that a disclosure\n   policy would need.",
+      "rationale": "This separates the current evidentiary limit, confirmatory design, and policy payoff. It keeps the claim explicitly provisional and preserves the judge dependence, sample size, direction, significance result, and proposed comparison.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C17",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "No data change: 35 texts, −4 points, t = −1.15, judge lineage, effect direction, and the false-positive-vs-miss-rate estimand are all preserved; edits are framing and phrasing only."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "Typographic quotes around \"detection cannot underwrite an accusation\" must be normalised to the manuscript's convention (LaTeX ``...'' in latex/body.tex); §7.2 cross-reference retained and unchanged.",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "It breaks one overloaded sentence into claim / current evidentiary limit / confirmatory design / policy payoff while preserving every number, the judge-lineage caveat, the direction and non-significance of the effect, and the plain confident register."
+        },
+        {
+          "voter": "sol",
+          "is_author": true
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Splits the packed em-dash sentence into claim, thin evidence, confirmatory protocol, and policy payoff without touching −4 points, t = −1.15, n = 35, direction, or non-significance; the last sentence is slightly flatter than the original close, but the paragraph as a whole is plainer and easier to follow.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 2,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Typographic quotes around \"detection cannot underwrite an accusation\" must be normalised to the manuscript's convention (LaTeX ``...'' in latex/body.tex); §7.2 cross-reference retained and unchanged."
+        ],
+        "composite": null
+      }
+    },
+    {
+      "locus": "Appendix C, item 5 — \"The bypass arm (§4.10) optimises rewrites against\"",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "5. **A search that targets the human judge, to measure the vulnerability's\n   ceiling.** The bypass arm (§4.10) optimises rewrites against a *statistical*\n   detector; 1c shows human register-judgment is already anti-correlated with\n   truth on that output as a side effect.",
+      "proposed": "5. **A search that targets the human judge, to measure the vulnerability's\n   ceiling.** The bypass arm (§4.10) optimises rewrites against a *statistical*\n   detector; item 4 shows human register-judgment is already anti-correlated\n   with truth on that output as a side effect.",
+      "rationale": "\"1c\" is a stale label from an earlier lettered numbering of this group; the item it means is now item 4, and the surrounding text already refers to items by number.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C5",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "Only the stale cross-reference label \"1c\" becomes \"item 4\", and item 4 (line 3689, the §7.2 anti-correlation of gut judgment) is the correct referent per item 6's own 1c/1d mapping (lines 3733-3737); the finding statement, its direction, and all numbers are unchanged — no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "The same sentence appears in analysis/s10/latex/body.tex (rendered from the markdown); regenerate or update it so the LaTeX carries \"item 4\" too.",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "\"1c\" is a dangling label with no referent in the current list, and item 4 is indeed the anti-correlation-of-gut-judgment item, matching the list's existing \"item 1's\" convention; no data changes."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite corrects a stale cross-reference to the current item number without changing the reported finding."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "\"1c\" is a dead label under the current 1–n list; item 4 is the anti-correlation item the sentence means, matching how the list already cites items by number.",
+          "dependencies": "Item 6 still uses the same stale labels (1c, 1d) for these same two items; update those the same way."
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "The same sentence appears in analysis/s10/latex/body.tex (rendered from the markdown); regenerate or update it so the LaTeX carries \"item 4\" too.",
+          "Item 6 still uses the same stale labels (1c, 1d) for these same two items; update those the same way."
+        ],
+        "composite": 15.33
+      }
+    },
+    {
+      "locus": "Appendix C, item 6 — \"One apparatus yields three curves\"",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "One apparatus yields three curves: human detection accuracy over rounds\n   (does it fall as models adapt?), the AI pass-rate ceiling by condition (1d,\n   under consent), and the false-accusation rate on real humans (1c, at scale\n   and with real raters rather than the single lineage-correlated judge behind\n   §7.2). The game frame is what makes it practical — participation is\n   intrinsic — and it is the ethical form of 1d, since the human-targeting\n   search runs inside a disclosed, consented frame.[^s-game]",
+      "proposed": "One apparatus yields three curves: human detection accuracy over rounds\n   (does it fall as models adapt?), the AI pass-rate ceiling by condition\n   (item 5, under consent), and the false-accusation rate on real humans\n   (item 4, at scale and with real raters rather than the single\n   lineage-correlated judge behind §7.2). The game frame is what makes it\n   practical — participation is intrinsic — and it is the ethical form of\n   item 5, since the human-targeting search runs inside a disclosed,\n   consented frame.[^s-game]",
+      "rationale": "Same stale lettered references: this item's own heading already says \"items 4 and 5\", so the body should use the same labels a reader can find.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C6",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "Only cross-reference labels change (1d→item 5, 1c→item 4), and both map to the correct referents (item 5 = human-judge-targeting ceiling search, item 4 = false-accusation-rate study); no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "Mirror the same edit in /home/matt/performance_commons/analysis/s10/latex/body.tex (lines ~4051-4055, where \"1d\"/\"1c\" also appear); the same stale labels remain elsewhere in Appendix C — item 5's body still says \"1c shows human register-judgment...\" (draft line 3708) and should likewise become \"item 4\".",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The \"1d\"/\"1c\" labels are stale and unresolvable in the current numbered list, and I verified they map exactly to items 5 and 4 respectively, so the substitution is a pure correctness fix with no change to data, claims, or voice."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves every substantive claim while replacing stale lettered references with the current, readily findable item numbers."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Stale 1c/1d labels are replaced with the item numbers the heading already uses; mapping is correct (1c=item 4 false-accusation; 1d=item 5 human-targeting search) and no data moves.",
+          "dependencies": "Item 5’s body still says “1c shows human register-judgment…” (S10-WRITEUP-DRAFT.md ~3708); retarget that leftover to “item 4” in the same pass."
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Mirror the same edit in /home/matt/performance_commons/analysis/s10/latex/body.tex (lines ~4051-4055, where \"1d\"/\"1c\" also appear); the same stale labels remain elsewhere in Appendix C — item 5's body still says \"1c shows human register-judgment...\" (draft line 3708) and should likewise become \"item 4\".",
+          "Item 5’s body still says “1c shows human register-judgment…” (S10-WRITEUP-DRAFT.md ~3708); retarget that leftover to “item 4” in the same pass."
+        ],
+        "composite": 15
+      }
+    },
+    {
+      "locus": "Appendix D — \"#### The classification's element signatures\"",
+      "type": "structural",
+      "action": "move",
+      "current": "Appendix D — Replication and reproducibility opens with the unnumbered subsection \"#### The classification's element signatures\" and its two ~80-row O*NET tables, before D.1 Cross-route reproduction of the detector.",
+      "proposed": "Move the \"The classification's element signatures\" heading and both tables to the end of Appendix D, after D.4, and number it as the appendix's final subsection (\"### D.5 The classification's element signatures\", or D.6 if the D.4 split below is also adopted). Companion edit: §3.4's references to \"Appendix D's first table\" and \"Appendix D's second table\" still hold, since relative order is preserved.",
+      "rationale": "Two long reference tables currently sit between the appendix heading and its first numbered subsection, burying the replication narrative; reference material belongs after the prose it supports.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C11",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "fail",
+        "note": "The companion claim is false: D.3 and D.4 also contain tables (lines 4302, 4334), so after moving the section to the end of Appendix D, §3.4's references (lines 279, 288) to \"Appendix D's first/second table\" would point at the bypass-run and artifacts tables instead of the consensus-signature table and the 71-consensus-element table, misattributing that data unless the cross-references are also rewritten."
+      },
+      "faith_gate": false,
+      "faith_reason": "data_changed",
+      "votes": [],
+      "verdict": {
+        "accepted": false,
+        "keeps": 0,
+        "n": 0,
+        "dropped": "data_changed",
+        "composite": 0
+      }
+    },
+    {
+      "locus": "Appendix D — “The classification's element signatures”",
+      "type": "structural",
+      "action": "move",
+      "current": "#### The classification's element signatures\n\nThe folk ladder's consensus signature (§3.4): every O\\*NET element, its\nlevel, consensus sign, and how many of the eighteen blind coders nominated\nit.",
+      "proposed": "Move “The classification's element signatures” and its two tables to after §D.3, make it §D.4, and renumber the current §D.4 and its cross-references as a dependency.",
+      "rationale": "Appendix D currently opens with two long tables before its numbered replication narrative begins. Moving the signatures after the short reproduction and sample-selection account gives the appendix a clear progression from reproducibility claims to detailed classification records.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C18",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "Pure section move/renumbering (heading plus its two tables relocated after §D.3, current §D.4 renumbered); no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "Move the two signature tables with the heading; promote the heading to a numbered subsection §D.4 and renumber the current §D.4 Artifacts to §D.5, updating any cross-references to it. Main text at ~lines 279 and 288 of S10-WRITEUP-DRAFT.md says \"Appendix D's first table\" and \"Appendix D's second table\" — after the move the D.3 run-selection table precedes them, so those must be rewritten to point at §D.4's first/second table. Mirror in latex/body.tex (\\subsubsection{The classification's element signatures}, label sub:element-signatures, plus the ~line 944 reference) and rebuild.",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 4,
+          "keep": true,
+          "why": "Opening a replication appendix with 170 lines of raw classification tables buries the short reproducibility claims that justify it; moving the signatures to §D.4 puts the narrative first and the reference material last, and the only cost is two easily fixed \"first/second table\" pointers."
+        },
+        {
+          "voter": "sol",
+          "is_author": true
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 4,
+          "keep": true,
+          "why": "Opening a replication appendix with two long classification tables buries D.1–D.3; placing those tables after the short claims as D.4, with Artifacts as D.5, gives a claims-then-records order without changing any data.",
+          "dependencies": "Move both signature tables with the heading and promote it to §D.4; renumber current §D.4 Artifacts to §D.5; update latex/reformat.py (D.4 signatures, D.5 artifacts); retarget §3.4’s “Appendix D’s first/second table” to §D.4, since D.3’s sample-selection table would otherwise become D’s first table."
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 2,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Move the two signature tables with the heading; promote the heading to a numbered subsection §D.4 and renumber the current §D.4 Artifacts to §D.5, updating any cross-references to it. Main text at ~lines 279 and 288 of S10-WRITEUP-DRAFT.md says \"Appendix D's first table\" and \"Appendix D's second table\" — after the move the D.3 run-selection table precedes them, so those must be rewritten to point at §D.4's first/second table. Mirror in latex/body.tex (\\subsubsection{The classification's element signatures}, label sub:element-signatures, plus the ~line 944 reference) and rebuild.",
+          "Move both signature tables with the heading and promote it to §D.4; renumber current §D.4 Artifacts to §D.5; update latex/reformat.py (D.4 signatures, D.5 artifacts); retarget §3.4’s “Appendix D’s first/second table” to §D.4, since D.3’s sample-selection table would otherwise become D’s first table."
+        ],
+        "composite": null
+      }
+    },
+    {
+      "locus": "Appendix D.4 — \"**What this was run on.** Three resources, and the commercial\"",
+      "type": "structural",
+      "action": "split",
+      "current": "### D.4 Artifacts — an artifact/what-it-does table, followed by the untitled block \"**What this was run on.** Three resources, and the commercial detector is the smallest of them.\" and the model/resource discussion through \"a Pangram subscription alone reproduces the prevalence arm and nothing else.\"",
+      "proposed": "Split D.4 after the artifact table: promote \"What this was run on\" to its own numbered subsection, \"### D.5 What the study was run on\", covering the three-resources discussion, the per-arm model table, and the screen/grader paragraph. (If the element-signatures move is also adopted, that table becomes D.6.)",
+      "rationale": "D.4 currently holds two different things — a file inventory and the compute/model provenance a replicator must match; the latter is substantive enough to be findable by number.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C12",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "Pure structural split of D.4 (lines 4332-4400): promoting the \"What this was run on\" block to its own subsection changes no datum — the artifact table, per-arm model table, r = +0.758, 4,258 verdicts, and the three-resources claims are all preserved; no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "Add a heading for the new D.5 (\"What the study was run on\") and drop the now-redundant bold lead-in \"**What this was run on.**\" from the first sentence; add a label entry for D.5 in analysis/s10/latex/reformat.py (both the `d4`/`D.4` maps at lines 42 and 89 gain a sibling, e.g. `sec:resources`) and a matching \\subsection{...}\\label{...} in latex/body.tex after \\label{sec:artifacts} (line 4723). No in-text cross-reference to D.4 exists in the manuscript, so nothing is stranded; the per-arm model table and the screen/grader paragraph travel with the text. If the element-signatures move is also adopted and shifts that table to D.6, the §-level phrases \"Appendix D's first table\" and \"Appendix D's second table\" (lines 279, 288) should be updated to the new numbers. The stale \"Appendix D.4\" pointers in EVIDENCE-STANDARDS-SURVEY.md (lines 249, 853, 991) already mis-point and can be corrected in the same pass.",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "D.4 genuinely holds two unlike things — a file inventory and the compute/model/detector provenance a replicator must match, including a table and the load-bearing screen/grader argument — and the split gives the latter a number a reader can cite, at the cost of only a label-map entry and no stranded cross-reference."
+        },
+        {
+          "voter": "sol",
+          "is_author": false
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "D.4 currently concatenates a file inventory with the compute/model provenance a replicator must match; promoting the latter to a numbered D.5 leaves the reading order intact and makes that block findable.",
+          "dependencies": "Add heading ### D.5 What the study was run on immediately after the D.4 artifact table (three-resources discussion, per-arm model table, and screen/grader paragraph travel with it). Add a D.5 entry to latex/reformat.py (LABELMAP / appendix map; e.g. sec:run-on) and extend section_groups.json from D.1–D.4 to D.1–D.5. If the element-signatures promotion is also adopted, that block becomes D.6 and its label must follow. No in-text “see D.4” currently points at the compute block (stale D.4 cites in review/survey files refer to the old ministerial-office table, now E.4, and are out of scope)."
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 2,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Add a heading for the new D.5 (\"What the study was run on\") and drop the now-redundant bold lead-in \"**What this was run on.**\" from the first sentence; add a label entry for D.5 in analysis/s10/latex/reformat.py (both the `d4`/`D.4` maps at lines 42 and 89 gain a sibling, e.g. `sec:resources`) and a matching \\subsection{...}\\label{...} in latex/body.tex after \\label{sec:artifacts} (line 4723). No in-text cross-reference to D.4 exists in the manuscript, so nothing is stranded; the per-arm model table and the screen/grader paragraph travel with the text. If the element-signatures move is also adopted and shifts that table to D.6, the §-level phrases \"Appendix D's first table\" and \"Appendix D's second table\" (lines 279, 288) should be updated to the new numbers. The stale \"Appendix D.4\" pointers in EVIDENCE-STANDARDS-SURVEY.md (lines 249, 853, 991) already mis-point and can be corrected in the same pass.",
+          "Add heading ### D.5 What the study was run on immediately after the D.4 artifact table (three-resources discussion, per-arm model table, and screen/grader paragraph travel with it). Add a D.5 entry to latex/reformat.py (LABELMAP / appendix map; e.g. sec:run-on) and extend section_groups.json from D.1–D.4 to D.1–D.5. If the element-signatures promotion is also adopted, that block becomes D.6 and its label must follow. No in-text “see D.4” currently points at the compute block (stale D.4 cites in review/survey files refer to the old ministerial-office table, now E.4, and are out of scope)."
+        ],
+        "composite": null
+      }
+    }
+  ]
+}

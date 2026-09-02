@@ -1,0 +1,1726 @@
+{
+  "scope": "§4.5, §4.5a, §4.5b, §4.6, §4.6a, §4.6b",
+  "phase": "1",
+  "iteration": 1,
+  "variants": [
+    "neutral"
+  ],
+  "n_proposals": 25,
+  "n_candidates": 25,
+  "n_faith_pass": 22,
+  "n_faith_dropped": 3,
+  "accepted": 19,
+  "self_preference": {
+    "opus-5-med": {
+      "self_n": 5,
+      "self_keep": 5,
+      "other_n": 17,
+      "other_keep": 12
+    },
+    "sol": {
+      "self_n": 5,
+      "self_keep": 5,
+      "other_n": 17,
+      "other_keep": 17
+    },
+    "grok-4.6": {
+      "self_n": 12,
+      "self_keep": 11,
+      "other_n": 10,
+      "other_keep": 8
+    }
+  },
+  "panel_health": {
+    "seats": [
+      "opus-5-med",
+      "sol",
+      "grok-4.6"
+    ],
+    "present": [
+      "opus-5-med",
+      "sol",
+      "grok-4.6"
+    ],
+    "absent": [],
+    "ballots_cast": {
+      "opus-5-med": 22,
+      "sol": 22,
+      "grok-4.6": 22
+    },
+    "ballots_lost": {},
+    "lost_to_limits": {},
+    "propose_failures": []
+  },
+  "changes": [
+    {
+      "locus": "§4.5 \"**The ruler, audited — what the thirty-year rise is made of.**\"",
+      "type": "prose",
+      "action": "split",
+      "current": "**The ruler, audited — what the thirty-year rise is made of.** Selected on\nthe post-2022 jump and run backwards, the marker list invites two\nobjections — that the rise is a few words, and that a list selected on an\nendpoint would trend by construction — so both were tested.[^raudit] The\nrise is concentrated: **ten common connectives carry 92.5% of the 1994–96\n→ 2024–26 climb** (`this` alone 35%), and with those ten removed the\naggregate is nearly flat (×1.03 pooled, ×1.10 UK). What rises beneath them\nis **breadth**: the expected distinct style words per 1,000 tokens climbs\n×1.26 on the UK series (14.4 → 18.2), and 60.4% of the 407 words trend\npositive (z = +4.2) at a median of only +0.5%/yr — a shallow, broad\nwidening under a few surging function words, not a 407-word chorus. The\nrise is not a composition artifact: post-stratifying every chamber-year to\na fixed segment-length distribution — the measurable proxy for the genre\ndrift §4.3 makes threatening — leaves the onset in place and slightly\n*strengthens* the UK climb (×1.49 → ×1.54). It is not a one-ruler artifact\neither: the independent Wikipedia signs-of-AI-writing patterns, built by\ndifferent people for a different purpose, rise across the whole pre-LLM\nrecord and *faster* (+2.7%/yr against +1.4%/yr, UK 1994–2019) — though\ntheir UK trough sits in 1987, so the decades-long pre-LLM rise is a\ncross-instrument fact while the specific 1994–96 date belongs to this\nruler's UK series. And against donors matched on frequency and dispersion,\nthe UK series' interior minimum at 1994 survives; matched additionally on\npre-2010 trend — a control that by construction absorbs any onset inside\nits own window — the register's *distinctive* excess over ordinary\nsame-shaped vocabulary dates to roughly **2014–2018**, and the style words\nsit below their matched donors in level for the entire record until 2025.\nThe honest summary: the drift is real, broad-based, composition-robust and\ninstrument-robust; its dated 1994–96 turn is the UK ruler's; and its\nexcess over matched controls is younger than the turn.",
+      "proposed": "**The ruler, audited — what the thirty-year rise is made of.** Selected on\nthe post-2022 jump and run backwards, the marker list invites two\nobjections — that the rise is a few words, and that a list selected on an\nendpoint would trend by construction — so both were tested.[^raudit] The\nrise is concentrated: **ten common connectives carry 92.5% of the 1994–96\n→ 2024–26 climb** (`this` alone 35%), and with those ten removed the\naggregate is nearly flat (×1.03 pooled, ×1.10 UK). What rises beneath them\nis **breadth**: the expected distinct style words per 1,000 tokens climbs\n×1.26 on the UK series (14.4 → 18.2), and 60.4% of the 407 words trend\npositive (z = +4.2) at a median of only +0.5%/yr — a shallow, broad\nwidening under a few surging function words, not a 407-word chorus.\n\nThe rise is not a composition artifact: post-stratifying every chamber-year to\na fixed segment-length distribution — the measurable proxy for the genre\ndrift §4.3 makes threatening — leaves the onset in place and slightly\n*strengthens* the UK climb (×1.49 → ×1.54). It is not a one-ruler artifact\neither: the independent Wikipedia signs-of-AI-writing patterns, built by\ndifferent people for a different purpose, rise across the whole pre-LLM\nrecord and *faster* (+2.7%/yr against +1.4%/yr, UK 1994–2019) — though\ntheir UK trough sits in 1987, so the decades-long pre-LLM rise is a\ncross-instrument fact while the specific 1994–96 date belongs to this\nruler's UK series. And against donors matched on frequency and dispersion,\nthe UK series' interior minimum at 1994 survives; matched additionally on\npre-2010 trend — a control that by construction absorbs any onset inside\nits own window — the register's *distinctive* excess over ordinary\nsame-shaped vocabulary dates to roughly **2014–2018**, and the style words\nsit below their matched donors in level for the entire record until 2025.\n\nThe honest summary: the drift is real, broad-based, composition-robust and\ninstrument-robust; its dated 1994–96 turn is the UK ruler's; and its\nexcess over matched controls is younger than the turn.",
+      "rationale": "One 300-word block currently carries three distinct jobs — what the rise is made of, whether it is an artifact, and the summary verdict. Splitting on those seams (text otherwise verbatim, no numbers touched) makes the audit's structure visible and gives the summary the standing of a conclusion.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C2",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "Proposal only splits the single paragraph into three; all numbers, signs, estimands, and findings are preserved verbatim — no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "None. If the rendering pipeline treats the bolded lead-in as a run-in heading for a single block, confirm the two new paragraphs still render as continuation body text and not as new headed units.",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The text is verbatim and every number untouched; the split falls on real seams (composition/instrument robustness, then verdict) and gives a dense 300-word block breathing room without diluting the voice."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The paragraph breaks expose the audit’s three-part logic and give the concluding synthesis appropriate emphasis without changing any wording, data, or interpretation."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 5,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Splitting the audit block on its three jobs (what the rise is made of, whether it is an artifact, the verdict) makes the structure visible without touching any number or wording, and gives the summary the standing of a conclusion.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "None. If the rendering pipeline treats the bolded lead-in as a run-in heading for a single block, confirm the two new paragraphs still render as continuation body text and not as new headed units."
+        ],
+        "composite": 14.67
+      }
+    },
+    {
+      "locus": "§4.5 \"The register instrument is not a detector, and a direct test\"",
+      "type": "structural",
+      "action": "move",
+      "current": "§4.5 The register shift starts in 1994–96, decades before the machines — opening paragraph: \"**The register instrument is not a detector, and a direct test is why the roles are divided.** A simple threshold on the register score … which is the division of labour the study uses.[^r44auc]\" (the AUC 0.61 / 0.535 instrument caveat, currently the section's first paragraph, ahead of the dated onset).",
+      "proposed": "Move the AUC paragraph (with its footnote [^r44auc]) to immediately after the paragraph ending \"Whatever this measures, LLMs did not start it.[^r45]\" (and its footnote), so the section runs: onset finding → instrument's division of labour → ruler audit.",
+      "rationale": "Findings-first: the section's title claim is the 1994–96 onset, but the reader currently meets three sentences of detector-performance caveat before any result. Placed second, the same caveat reads as the reason the register is used for population history rather than detection, which is what it argues.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C1",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "Pure reordering: the AUC 0.61/0.60/0.535-vs-0.95 paragraph and footnote [^r44auc] move intact to after the [^r45] onset paragraph; all numbers, footnotes, and estimand labels are preserved — no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "None in the prose: the footnotes [^r44auc] and [^r45] travel with their paragraphs and the internal refs (§4.5a, §4.8) still resolve in either order. The LaTeX body in analysis/s10/latex/ must be regenerated from the markdown after the reorder.",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 4,
+          "keep": true,
+          "why": "Leading with the section's titular 1994–96 onset and then giving the AUC caveat as the reason the register is used for population history rather than detection matches the findings-first convention, sits the instrument discussion next to the ruler audit it belongs with, and strands no reference."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "Leading with the dated onset finding makes the section findings-first, while the unchanged AUC paragraph then naturally explains why the register supports population history rather than individual detection before the ruler audit."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 4,
+          "keep": true,
+          "why": "The section’s title is the 1994–96 onset, so leading with that finding and letting the AUC caveat follow as the reason the register is a population-history ruler rather than a detector is the right order; footnotes travel with their paragraphs and no figure or cross-reference is stranded.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "None in the prose: the footnotes [^r44auc] and [^r45] travel with their paragraphs and the internal refs (§4.5a, §4.8) still resolve in either order. The LaTeX body in analysis/s10/latex/ must be regenerated from the markdown after the reorder."
+        ],
+        "composite": 15
+      }
+    },
+    {
+      "locus": "§4.5 Read together with §4.8, the interesting",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "Read together with §4.8, the interesting reading is not \"LLMs changed\nparliamentary register\" but that **human register had been moving toward what\ninstruct-tuning later selected for, for thirty years.** †[^dag]",
+      "proposed": "The interesting reading is not \"LLMs changed parliamentary register\" but that **human register had been moving toward what instruct-tuning later selected for, for thirty years.** †[^dag]",
+      "rationale": "Same claim without a forward section reference. The thirty-year reading is this section's; post-training evidence arrives when it arrives.",
+      "support": 1,
+      "author_seats": [
+        "grok-4.6/neutral"
+      ],
+      "author_families": [
+        "xai"
+      ],
+      "id": "C16",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "No data change; only the \"Read together with §4.8,\" cross-reference framing is dropped, with the thirty-year claim and footnote intact."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 2,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": false,
+          "why": "The cut buys a few words but strips the pointer that tells the reader where the \"instruct-tuning later selected for\" half of the claim is established, and the no-forward-reference premise does not hold here since the same section is already cross-referenced forward earlier in the manuscript."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves the claim and its thirty-year timespan while removing an awkward forward reference, making the sentence cleaner and self-contained."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": true,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Cutting the forward pointer lets this section own the thirty-year reading it has just earned; the joint claim is recovered by §4.8’s existing backward reference, and the sentence is more direct for it.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 2,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [],
+        "composite": 15
+      }
+    },
+    {
+      "locus": "§4.5 The register instrument is not a detector",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "**The register instrument is not a detector, and a direct test is why the\nroles are divided.** A simple threshold on the register score — the study's\nown 407-word occurrence rate — separates Pangram-flagged from unflagged\nlegislative segments at **AUC 0.61** (0.60 restricted to the 2025–26\nprevalence sample, where both classes are drifted contemporary speech),\nagainst the screen's 0.95. On ground truth it does no better: **0.535**\nagainst known machine text — though that set is the evasion run's\nadversarially quietened rewrites rather than ordinary model output, which\nruns far hotter on these words (§4.8). One thin lexical rate carries\npopulation-level history well and instance-level detection barely above\nchance, which is the division of labour the study uses.[^r44auc]",
+      "proposed": "**The register instrument is not a detector, and a direct test is why the roles are divided.** A simple threshold on the register score — the study's own 407-word occurrence rate — separates Pangram-flagged from unflagged legislative segments at **AUC 0.61** (0.60 restricted to the 2025–26 prevalence sample, where both classes are drifted contemporary speech), against the screen's 0.95. On ground truth it does no better: **0.535** against known machine text — though that set is the evasion run's adversarially quietened rewrites rather than ordinary model output. One thin lexical rate carries population-level history well and instance-level detection barely above chance, which is the division of labour the study uses.[^r44auc]",
+      "rationale": "The paper's no-forward-section-reference convention. The 0.535 caveat still names the evasion set; the hotter-output comparison is a later result and does not belong here as a pointer.",
+      "support": 1,
+      "author_seats": [
+        "grok-4.6/neutral"
+      ],
+      "author_families": [
+        "xai"
+      ],
+      "id": "C14",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "fail",
+        "note": "The proposal drops the measured directional claim \"which runs far hotter on these words (§4.8)\" — a finding that ordinary model output has a much higher register-word rate than the evasion rewrites, which contextualizes the 0.535 AUC."
+      },
+      "faith_gate": false,
+      "faith_reason": "data_changed",
+      "votes": [],
+      "verdict": {
+        "accepted": false,
+        "keeps": 0,
+        "n": 0,
+        "dropped": "data_changed",
+        "composite": 0
+      }
+    },
+    {
+      "locus": "§4.5 The register's rise begins around",
+      "type": "structural",
+      "action": "reorder",
+      "current": "### 4.5 The register shift starts in 1994–96, decades before the machines\nOpens with the AUC division-of-labour paragraph (register is not a detector), then the 1994–96 onset.",
+      "proposed": "move the 1994–96 onset paragraph (\"The register's rise begins around **1994–96**\") to the start of §4.5, before the AUC division-of-labour paragraph",
+      "rationale": "Findings-first, and the heading already promises the dated onset. §3.3 has already framed the frequency arm as descriptive, so the section should deliver the date rather than open on a methods caveat.",
+      "support": 1,
+      "author_seats": [
+        "grok-4.6/neutral"
+      ],
+      "author_families": [
+        "xai"
+      ],
+      "id": "C13",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "Pure reordering: moving the 1994–96 onset paragraph ahead of the AUC division-of-labour paragraph in §4.5 preserves every datum (AUC 0.61/0.95/0.535, 1994–96 interval, bootstrap shares); no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "None required. Optional polish: the onset paragraph becomes the section opener, so it may want a bold lead-in clause to match the paper's paragraph-topic convention; no numbers, cross-references (§4.5a, §4.8, §3.3) or footnote anchors ([^r44auc], [^r45]) change, and both LaTeX body.tex and the markdown draft must be reordered together.",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 4,
+          "keep": true,
+          "why": "The heading and §3.3 both promise the dated onset, so leading with it is findings-first, and the demoted AUC paragraph then sits adjacent to the \"ruler, audited\" paragraph, grouping the two instrument-scrutiny passages behind the claim they qualify."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "Move the [^r45] footnote call and its definition with the 1994–96 onset paragraph.",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "Opening with the dated finding fulfills the section heading immediately, while the following AUC paragraph still supplies the necessary division of labour without changing any result."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": true,
+          "data_faithful": "pass",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "The heading already names the 1994–96 onset and §3.3 has already framed the frequency arm as descriptive, so the section should open on that dated finding rather than on the AUC methods caveat.",
+          "dependencies": "Footnotes [^r45] and [^r44auc] travel with their respective paragraphs; no figure, table, or section-number change."
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "None required. Optional polish: the onset paragraph becomes the section opener, so it may want a bold lead-in clause to match the paper's paragraph-topic convention; no numbers, cross-references (§4.5a, §4.8, §3.3) or footnote anchors ([^r44auc], [^r45]) change, and both LaTeX body.tex and the markdown draft must be reordered together.",
+          "Move the [^r45] footnote call and its definition with the 1994–96 onset paragraph.",
+          "Footnotes [^r45] and [^r44auc] travel with their respective paragraphs; no figure, table, or section-number change."
+        ],
+        "composite": 16.33
+      }
+    },
+    {
+      "locus": "§4.5 The ruler, audited — what the thirty-year",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "**The ruler, audited — what the thirty-year rise is made of.** Selected on\nthe post-2022 jump and run backwards, the marker list invites two\nobjections — that the rise is a few words, and that a list selected on an\nendpoint would trend by construction — so both were tested.[^raudit] The\nrise is concentrated: **ten common connectives carry 92.5% of the 1994–96\n→ 2024–26 climb** (`this` alone 35%), and with those ten removed the\naggregate is nearly flat (×1.03 pooled, ×1.10 UK). What rises beneath them\nis **breadth**: the expected distinct style words per 1,000 tokens climbs\n×1.26 on the UK series (14.4 → 18.2), and 60.4% of the 407 words trend\npositive (z = +4.2) at a median of only +0.5%/yr — a shallow, broad\nwidening under a few surging function words, not a 407-word chorus. The\nrise is not a composition artifact: post-stratifying every chamber-year to\na fixed segment-length distribution — the measurable proxy for the genre\ndrift §4.3 makes threatening — leaves the onset in place and slightly\n*strengthens* the UK climb (×1.49 → ×1.54). It is not a one-ruler artifact\neither: the independent Wikipedia signs-of-AI-writing patterns, built by\ndifferent people for a different purpose, rise across the whole pre-LLM\nrecord and *faster* (+2.7%/yr against +1.4%/yr, UK 1994–2019) — though\ntheir UK trough sits in 1987, so the decades-long pre-LLM rise is a\ncross-instrument fact while the specific 1994–96 date belongs to this\nruler's UK series. And against donors matched on frequency and dispersion,\nthe UK series' interior minimum at 1994 survives; matched additionally on\npre-2010 trend — a control that by construction absorbs any onset inside\nits own window — the register's *distinctive* excess over ordinary\nsame-shaped vocabulary dates to roughly **2014–2018**, and the style words\nsit below their matched donors in level for the entire record until 2025.\nThe honest summary: the drift is real, broad-based, composition-robust and\ninstrument-robust; its dated 1994–96 turn is the UK ruler's; and its\nexcess over matched controls is younger than the turn.",
+      "proposed": "**The ruler, audited — what the thirty-year rise is made of.** Selected on the post-2022 jump and run backwards, the marker list invites two objections — that the rise is a few words, and that a list selected on an endpoint would trend by construction — so both were tested.[^raudit] The rise is concentrated: **ten common connectives carry 92.5% of the 1994–96 → 2024–26 climb** (`this` alone 35%), and with those ten removed the aggregate is nearly flat (×1.03 pooled, ×1.10 UK). What rises beneath them is **breadth**: the expected distinct style words per 1,000 tokens climbs ×1.26 on the UK series (14.4 → 18.2), and 60.4% of the 407 words trend positive (z = +4.2) at a median of only +0.5%/yr — a shallow, broad widening under a few surging function words, not a 407-word chorus.\n\nThe rise is not a composition artifact: post-stratifying every chamber-year to a fixed segment-length distribution — the measurable proxy for the genre drift §4.3 makes threatening — leaves the onset in place and slightly *strengthens* the UK climb (×1.49 → ×1.54). It is not a one-ruler artifact either: the independent Wikipedia signs-of-AI-writing patterns, built by different people for a different purpose, rise across the whole pre-LLM record and *faster* (+2.7%/yr against +1.4%/yr, UK 1994–2019) — though their UK trough sits in 1987, so the decades-long pre-LLM rise is a cross-instrument fact while the specific 1994–96 date belongs to this ruler's UK series.\n\nAgainst donors matched on frequency and dispersion, the UK series' interior minimum at 1994 survives; matched additionally on pre-2010 trend — a control that by construction absorbs any onset inside its own window — the register's *distinctive* excess over ordinary same-shaped vocabulary dates to roughly **2014–2018**, and the style words sit below their matched donors in level for the entire record until 2025. The drift is real, broad-based, composition-robust and instrument-robust; its dated 1994–96 turn is the UK ruler's; and its excess over matched controls is younger than the turn.",
+      "rationale": "One paragraph currently carries concentration, breadth, composition, a second instrument, and the donor test. Splitting on those seams lets each check land; cutting the 'honest summary' label keeps the caveats and drops the apology.",
+      "support": 1,
+      "author_seats": [
+        "grok-4.6/neutral"
+      ],
+      "author_families": [
+        "xai"
+      ],
+      "id": "C15",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "No data change — proposal only re-paragraphs the block and trims connective phrasing (\"And against\" → \"Against\", drops \"The honest summary:\"); all numbers, dates, directions, and robustness claims are preserved."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Every figure, direction and caveat is preserved verbatim; the three-way split falls on natural seams (concentration/breadth, composition/instrument, donor controls) so each robustness check lands separately, and dropping the \"honest summary\" label removes a self-conscious tag while keeping the summary's substance."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The paragraph breaks separate the audit’s distinct tests, while removing the apologetic summary label sharpens the close without changing any result or caveat."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": true,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Splitting the five-check wall into three paragraphs lets concentration/breadth, robustness, and the donor test each land, and cutting \"The honest summary\" drops the apology without touching a number or finding.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [],
+        "composite": 15.67
+      }
+    },
+    {
+      "locus": "§4.5a \"The US series reaches back to 1994 only as of 2026-08-13.\"",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "The US series reaches back to 1994 only as of 2026-08-13. The Congressional\nRecord is on GovInfo from 1994, which the study had not used: the original\ndownload began at 2006 because that was where the state-exposure design needed\nit. Extending it was the decisive test, because a US series starting in 2006\ncannot distinguish \"the United States was always there\" from \"the United States\ngot there first and stopped\". The 1994 values settle it.[^r45c]",
+      "proposed": "A US series starting in 2006 cannot distinguish \"the United States was always\nthere\" from \"the United States got there first and stopped\", so reaching\nfurther back was the decisive test. The Congressional Record is on GovInfo from\n1994; the study's original download began at 2006 because that was where the\nstate-exposure design needed it, and the series was extended back to 1994 on\n2026-08-13. The 1994 values settle it.[^r45c]",
+      "rationale": "Findings-first: the paragraph currently opens with a work-log fact and reaches the reason for the extension in its fourth sentence. Reordering puts the identification question first and keeps the provenance (including the date) intact as support.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C3",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "no data change — all dates (1994, 2006, 2026-08-13), provenance, and the settling claim are preserved; only sentence order and framing differ."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Same facts, dates and footnote preserved, but the identification problem now leads and the provenance follows as support, which reads clearer and matches the findings-first convention without blandening the prose."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves every factual and temporal detail while leading with the identification problem, making the extension’s purpose immediately clear and its provenance appropriately supporting."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Finds-first reorder: the identification contrast leads, GovInfo/2006/2026-08-13 provenance stays intact as support, and no number or finding moves.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [],
+        "composite": 16
+      }
+    },
+    {
+      "locus": "§4.5a “They caught up; they did not pass.”",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "**They caught up; they did not pass.** A single recent year appears to\ncontradict that: in 2026 the Canadian provinces, Ireland, the Australian states\nand federal Canada all sit above US House. The comparison does not survive\ncontact with the variance. US House swings between 1,660 and 2,074 across the\nseries — a 25% range, the widest here — and 2026 catches it at 1,709, near its\nown floor. On 2020–26 means, with each series' standard deviation alongside:",
+      "proposed": "**The 2026 endpoint overstates the overshoot.** In that year the Canadian provinces, Ireland, the Australian states and federal Canada all sit above the US House. But the House swings between 1,660 and 2,074 across the series — a 25% range, the widest here — and its 2026 value of 1,709 is near its own floor. The 2020–26 means, shown with each series' standard deviation, provide the more stable comparison:",
+      "rationale": "The replacement leads with the comparison the following table actually supports and avoids announcing “they did not pass” before immediately identifying the Canadian provinces as a standing exception. It preserves every endpoint and variability datum.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C8",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "fail",
+        "note": "All numbers preserved, but the finding statement \"they did not pass\" (the conclusion of the 1994-series test) is dropped and replaced with \"overstates the overshoot,\" which presupposes a pass occurred — a change in the asserted direction of the measured effect."
+      },
+      "faith_gate": false,
+      "faith_reason": "data_changed",
+      "votes": [],
+      "verdict": {
+        "accepted": false,
+        "keeps": 0,
+        "n": 0,
+        "dropped": "data_changed",
+        "composite": 0
+      }
+    },
+    {
+      "locus": "§4.5a Nineteen chambers hold both endpoints",
+      "type": "structural",
+      "action": "move",
+      "current": "### 4.5a Other chambers converge on the level the United States already held\nMethod intro, then the 2006–2026 table and slopegraph, then the convergence-finding paragraph (Spearman −0.56, 16 of 19 rise).",
+      "proposed": "move the paragraph beginning \"Nineteen chambers hold both endpoints of the longest window\" to before the 2006–2026 chamber table",
+      "rationale": "Findings-first: state the convergence, then show the table that carries it. The slopegraph stays with the table it draws; no companion figure edit.",
+      "support": 1,
+      "author_seats": [
+        "grok-4.6/neutral"
+      ],
+      "author_families": [
+        "xai"
+      ],
+      "id": "C17",
+      "faith": {
+        "current_matches": true,
+        "data_faithful": "pass",
+        "locatable": true,
+        "note": "Pure reordering: the \"Nineteen chambers\" paragraph (Spearman −0.56 n=19, −0.51 n=18 split, 16/19 rising) moves before the 2006–2026 table with all data intact; no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "None substantive; the LaTeX body (analysis/s10/latex/, built via build_body.sh) must be regenerated so the reordered block carries through, and the slopegraph caption's \"values exactly as in the table\" must stay after the table (it does under this move).",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 4,
+          "keep": true,
+          "why": "Stating the convergence finding before the table that evidences it matches the findings-first convention and gives the reader a reason to read the 19 rows, while the slopegraph stays adjacent to the table whose values it redraws and the following \"Three chambers reach further back\" paragraph still follows cleanly."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "The move gives readers the convergence result before its tabular and graphical evidence, while the method paragraph supplies the needed setup and all references remain resolved."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": true,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "Findings-first: the 19-row table currently lands before the reader knows n, the window, or the Spearman; stating the convergence first gives the table and its paired slopegraph a job, without touching any number or moving the figure.",
+          "dependencies": "Footnote r45cw travels with the paragraph (definition already later in the section, still resolves). The 2006–2026 table and slopegraph stay paired immediately after the moved paragraph; no figure edit, no renumbering."
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "None substantive; the LaTeX body (analysis/s10/latex/, built via build_body.sh) must be regenerated so the reordered block carries through, and the slopegraph caption's \"values exactly as in the table\" must stay after the table (it does under this move).",
+          "Footnote r45cw travels with the paragraph (definition already later in the section, still resolves). The 2006–2026 table and slopegraph stay paired immediately after the moved paragraph; no figure edit, no renumbering."
+        ],
+        "composite": 15.33
+      }
+    },
+    {
+      "locus": "§4.5a The US series reaches back to 1994",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "The US series reaches back to 1994 only as of 2026-08-13. The Congressional\nRecord is on GovInfo from 1994, which the study had not used: the original\ndownload began at 2006 because that was where the state-exposure design needed\nit. Extending it was the decisive test, because a US series starting in 2006\ncannot distinguish \"the United States was always there\" from \"the United States\ngot there first and stopped\". The 1994 values settle it.[^r45c]",
+      "proposed": "A US series that starts in 2006 cannot distinguish \"the United States was always there\" from \"the United States got there first and stopped.\" Extending the Congressional Record to its 1994 beginning settles it.[^r45c]",
+      "rationale": "Findings-first. The epistemic point is load-bearing; the dated download diary is not. Fetch details and corpus sizes stay in the existing footnote.",
+      "support": 1,
+      "author_seats": [
+        "grok-4.6/neutral"
+      ],
+      "author_families": [
+        "xai"
+      ],
+      "id": "C18",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "The measured facts (Congressional Record available from 1994, original series starting 2006, extension to 1994 settling the always-there vs got-there-first question) are preserved; only provenance narrative (the 2026-08-13 as-of date and the state-exposure-design rationale for the 2006 start) is dropped, which is framing, not a measurement — no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "Consider wording the extension as \"to GovInfo's 1994 start\" (or similar) so \"its 1994 beginning\" is not read as the Congressional Record itself beginning in 1994; footnote r45c already carries the fetch invocation, 60 days/year, 780 day-zips and the unbroken 1994-2026 coverage, so no other companion edit is needed.",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "It keeps the load-bearing epistemic point and both dates while cutting the dated procurement diary that belongs in the footnote, with no change to any number or finding; the only nit is the ambiguous \"its 1994 beginning.\""
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves the 1994 extent and the test's finding while foregrounding the identification problem in substantially tighter, confident prose."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": true,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 5,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Leads with the load-bearing 2006/1994 fork, parks the dated download diary in the existing footnote, and leaves every year, quoted alternative, and finding untouched.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Consider wording the extension as \"to GovInfo's 1994 start\" (or similar) so \"its 1994 beginning\" is not read as the Congressional Record itself beginning in 1994; footnote r45c already carries the fetch invocation, 60 days/year, 780 day-zips and the unbroken 1994-2026 coverage, so no other companion edit is needed."
+        ],
+        "composite": 17
+      }
+    },
+    {
+      "locus": "§4.5b “Permutation p < 0.005.”",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "Permutation p < 0.005. The **discrimination** carries more than the coefficient:\nCanada and Australia are anglophone parliamentary democracies too, and\npost-training moves models toward none of what distinguishes *them* from\nWestminster. It is not drift away from British usage; it is drift toward\nAmerican usage specifically, and Canada — nearest neighbour to the United\nStates — shows nothing.",
+      "proposed": "Permutation p < 0.005. The contrast pattern is more informative than the small coefficient: post-training preference aligns with what distinguished American from British legislative usage, but not with what distinguished Canadian or Australian usage from British usage. Canada and Australia are anglophone parliamentary democracies too, yet their correlations are near zero; even Canada, the United States' nearest neighbour, shows no corresponding alignment. The result is therefore specific to the American contrast rather than a general drift away from British usage.",
+      "rationale": "This states the table's discrimination directly and replaces the awkward claim that post-training “moves models toward none of what distinguishes” Canada or Australia. It retains the direction and interpretation of all measured contrasts without inflating their size.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C9",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "No data change: p < 0.005 kept, \"near zero\" and \"small coefficient\" faithfully summarize the adjacent table (+0.012/+0.018) and r = 0.081, and the direction/specificity claims (US contrast yes, CA/AU no) are preserved."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 4,
+          "voice": 2,
+          "concision": 2,
+          "structural_soundness": 3,
+          "keep": false,
+          "why": "The rewrite is marginally more precise (\"near zero\" fits the +0.012/+0.018 rows better than \"shows nothing\") but it costs about 50% more words, repeats \"British usage\" three times, and trades the current passage's sharp closing contrast for a flat summary sentence — a net blandification for a small accuracy gain the existing text could get with a two-word tweak."
+        },
+        {
+          "voter": "sol",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 4,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite states the contrast cleanly and preserves the American-specific result and near-zero Canadian and Australian contrasts, though it is somewhat longer than necessary."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 2,
+          "concision": 2,
+          "structural_soundness": 3,
+          "keep": false,
+          "why": "Clearer about which table rows matter, but it restates those rows, blandifies the original antithesis and “shows nothing,” and front-loads a smallness caveat the next sentence already makes.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": false,
+        "keeps": 1,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [],
+        "composite": 12.33
+      }
+    },
+    {
+      "locus": "§4.6 \"That single slope is where the question starts, not where it ends.\"",
+      "type": "prose",
+      "action": "split",
+      "current": "That single slope is where the question starts, not where it ends. What we want from it is a **decomposition — across space, and across time.** Across space: is one gradient shared by every legislature, or is it an average over chambers that behave differently? Across time: is \"born later, uses more\" about *when a person was born* (cohort), *what year it is* (period), or *how long they have served* (career)? The time question runs into a wall no data removes: age = year − birth, so age, period and cohort cannot be jointly separated — a birth-plus-period model and an age-plus-period model reproduce each other's fits exactly, for every number in this section. There is therefore no single conclusive estimate to report. What there is instead is a family of **views** — weighting members equally or by words, following people within their own careers or comparing across them, restricting to the chambers or the cohorts where one clock happens to be pinned. None settles the age/cohort split on its own; taken together they locate the gradient. The rest of this section is that family, each view named for what it is interesting for.",
+      "proposed": "That single slope is where the question starts, not where it ends. What we want from it is a **decomposition — across space, and across time.** Across space: is one gradient shared by every legislature, or is it an average over chambers that behave differently? Across time: is \"born later, uses more\" about *when a person was born* (cohort), *what year it is* (period), or *how long they have served* (career)?\n\nThe time question runs into a wall no data removes: age = year − birth, so age, period and cohort cannot be jointly separated — a birth-plus-period model and an age-plus-period model reproduce each other's fits exactly, for every number in this section. There is therefore no single conclusive estimate to report.\n\nWhat there is instead is a family of **views** — weighting members equally or by words, following people within their own careers or comparing across them, restricting to the chambers or the cohorts where one clock happens to be pinned. None settles the age/cohort split on its own; taken together they locate the gradient. The rest of this section is that family, each view named for what it is interesting for.",
+      "rationale": "This paragraph sets up the whole section and does three separable things — pose the decomposition, state the identification wall, introduce the views. Breaking it into three short paragraphs (text verbatim) makes the reading contract for the rest of §4.6 legible at a glance.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C4",
+      "faith": {
+        "current_matches": true,
+        "data_faithful": "pass",
+        "locatable": true,
+        "note": "Proposal only splits the paragraph into three; text is otherwise verbatim identical — no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Word-for-word identical text split into three paragraphs that match its three distinct moves (decomposition, identification wall, family of views), improving legibility of a dense section-opening block at zero cost to data or voice."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The three-paragraph structure cleanly separates the section’s question, identification limit, and analytical plan without changing any wording or result."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 5,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The split is verbatim and data-faithful, and it makes the section's three-part contract — the two questions, the identification wall, then the family of views — scannable without touching the wording or the voice.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [],
+        "composite": 14.67
+      }
+    },
+    {
+      "locus": "§4.6 “That single slope is where the question starts”",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "That single slope is where the question starts, not where it ends. What we want from it is a **decomposition — across space, and across time.** Across space: is one gradient shared by every legislature, or is it an average over chambers that behave differently? Across time: is \"born later, uses more\" about *when a person was born* (cohort), *what year it is* (period), or *how long they have served* (career)? The time question runs into a wall no data removes: age = year − birth, so age, period and cohort cannot be jointly separated — a birth-plus-period model and an age-plus-period model reproduce each other's fits exactly, for every number in this section. There is therefore no single conclusive estimate to report. What there is instead is a family of **views** — weighting members equally or by words, following people within their own careers or comparing across them, restricting to the chambers or the cohorts where one clock happens to be pinned. None settles the age/cohort split on its own; taken together they locate the gradient. The rest of this section is that family, each view named for what it is interesting for.",
+      "proposed": "That single slope begins a decomposition across space and time. Across space, the question is whether every legislature shares the gradient or whether the pooled estimate averages chambers that behave differently. Across time, “born later, uses more” can describe cohort, period or career. Age = year − birth, so age, period and cohort cannot be estimated jointly: birth-plus-period and age-plus-period models reproduce exactly the same fits for every number in this section. No single estimate resolves that identification problem. The analysis therefore combines complementary views — equal weighting by member or weighting by words, within-career and between-member comparisons, and restrictions to chambers or cohorts where one clock is pinned. No view alone separates age from cohort; together they locate the gradient and define what remains unidentified.",
+      "rationale": "The rewrite removes repeated signposting while keeping the identification problem and every analytical view explicit. It also replaces “a wall no data removes” with a precise statement of the linear dependency.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C10",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "no data change — identification identity, exact model-equivalence claim, and all estimand labels (cohort/period/career, within-career vs between-member, weighting schemes, pinned-clock restrictions) are preserved; edits are framing/compression only."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 3,
+          "voice": 2,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": false,
+          "why": "It buys real concision but pays for it by dropping the plain-English gloss of cohort/period/career that makes the identification problem legible to a non-APC reader, flattening the voice into passive report-speak (\"The analysis therefore combines...\"), and losing the signpost that the following bolded views are the promised family — while its stated gain, \"a precise statement of the linear dependency,\" is already present verbatim in the current text."
+        },
+        {
+          "voter": "sol",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves the identification constraint and all analytical views while stating the logic more directly, reducing repetition, and ending with a sharper account of what the combined views can and cannot establish."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 2,
+          "voice": 2,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": false,
+          "why": "Faithful and shorter, but it blandifies a working roadmap: it drops the ordinary-language glosses that first introduce cohort, period and career, replaces “a wall no data removes” with textbook phrasing, and swaps the section’s reading instruction for generic “the analysis therefore combines complementary views.”",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": false,
+        "keeps": 1,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [],
+        "composite": 13.67
+      }
+    },
+    {
+      "locus": "§4.6 Following members over their own careers, the register rises",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "**Following members over their own careers, the register rises — but that is the calendar tide, not aging.** With member fixed effects, so only a member's own movement counts, the register rises **+0.51 per 1,000 per decade** within member (t = 6.0, clustered on member, 8,600 members with three or more years) — roughly **40% of the total calendar rise happens inside continuing careers**, the rest arriving with the composition of the chamber. This view establishes that members convert, not merely that they are replaced. But it comes with the section's neatest trap: within one career tenure = spoken year − entry year, so plotting register against length of service splits into two curves that cross. Within a member — rate against their own career mean — it **rises** with tenure (to +2.35 per 1,000 at 30+ years), which is exactly the calendar drift redrawn. Measured against same-year colleagues instead — rate minus its chamber × year mean — it **falls**, monotonically, from +0.6 in the first years to −2.3 among the longest-serving. The fall is not seniority wearing the register down: at a fixed year more tenure means an earlier entry cohort, so the downward curve is the cohort gradient seen sideways. †[^r46c] †[^r46ten]",
+      "proposed": "**Following members over their own careers, the register rises — but that is the calendar tide, not aging.** With member fixed effects, so only a member's own movement counts, the register rises **+0.51 per 1,000 per decade** within member (t = 6.0, clustered on member, 8,600 members with three or more years) — roughly **40% of the total calendar rise happens inside continuing careers**, the rest arriving with the composition of the chamber. This view shows sitting members' rates rising, not merely that they are replaced. But it comes with a trap: within one career tenure = spoken year − entry year, so plotting register against length of service splits into two curves that cross. Within a member — rate against their own career mean — it **rises** with tenure (to +2.35 per 1,000 at 30+ years), which is exactly the calendar drift redrawn. Measured against same-year colleagues instead — rate minus its chamber × year mean — it **falls**, monotonically, from +0.6 in the first years to −2.3 among the longest-serving. The fall is not seniority wearing the register down: at a fixed year more tenure means an earlier entry cohort, so the downward curve is the cohort gradient seen sideways. †[^r46c] †[^r46ten]",
+      "rationale": "The next view already states that this is calendar drift, not proven personal conversion, and that the rise is positive in only 10 of 22 chambers. 'Establishes that members convert' overclaims; 'neatest trap' is self-congratulation.",
+      "support": 1,
+      "author_seats": [
+        "grok-4.6/neutral"
+      ],
+      "author_families": [
+        "xai"
+      ],
+      "id": "C19",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "no data change — edits are framing only (\"members convert\" → \"sitting members' rates rising\"; \"the section's neatest trap\" → \"a trap\"); all numbers, signs, sample sizes, and estimand labels preserved."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 3,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Two small surgical edits: every number and effect direction is untouched, an interpretive overclaim (\"establishes that members convert\") is replaced by the precise measured statement the rest of the section supports, and \"the section's neatest trap\" loses its self-admiring flourish while the paragraph keeps its bite."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves every reported result while replacing an unsupported conversion claim and a self-congratulatory flourish with precise, plain descriptions of what the fixed-effects result establishes."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": true,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Drops an overclaim the next view immediately retracts (“establishes that members convert”) and cuts self-congratulatory “neatest,” while leaving every number, direction, and the identification trap intact.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [],
+        "composite": 15.33
+      }
+    },
+    {
+      "locus": "§4.6a \"**The coarsest cut is the strongest single correlate\"",
+      "type": "structural",
+      "action": "move",
+      "current": "§4.6a — the *Indoors, Environmentally Controlled* paragraph (\"**The coarsest cut is the strongest single correlate: the register is the language of the office.**\" … \"birth decade remains the overwhelming axis (t +24.5, carrying 0.144 of the model's 0.165).[^rnc]\", plus footnote [^rnc]) currently sits last, after the paragraph retiring the old linear-rank framing and pointing to the failed registered predictions and §6's calibration bullet.",
+      "proposed": "Move the Indoors paragraph and its footnote [^rnc] to immediately before the paragraph beginning \"One drafting generation of the registration expressed the peak claim as a linear three-profile rank\", so the section ends on the retired framing, failed predictions and scale note.",
+      "rationale": "The section's substantive results should finish before the bookkeeping. As it stands the housekeeping paragraph (retired operationalization, failed predictions, calibration pointer) reads as a closer and is then followed by the strongest single occupational correlate, which strands both.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C5",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "Pure reordering: the Indoors paragraph and footnote [^rnc] move intact ahead of the retired-framing paragraph; no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "Mirror the same reordering in analysis/s10/latex/body.tex (paragraph plus its \\footnote/note for [^rnc]) so the markdown and LaTeX stay in sync; footnote [^rnc] must travel with the paragraph. No cross-references or figures break — the \"Scale for all of it: §6's calibration bullet\" sentence now also covers the Indoors result, which is correct and needs no rewording.",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 4,
+          "keep": true,
+          "why": "Ending §4.6a on the retired operationalization, failed predictions and the scale pointer is a proper section closer, and moving the Indoors result up puts the strongest single occupational correlate among the substantive findings it restates instead of stranding it after the bookkeeping."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "The move groups the final substantive occupational result with the other findings and lets the retired operationalization, failed predictions, and scale guidance close the section as coherent methodological bookkeeping."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "The Indoors finding is a substantive result currently stranded after a closer that already retires a framing, lists failed predictions, and points to the scale note; placing it immediately before that paragraph lets the section finish its results and then close on the bookkeeping, with the footnote travelling and no cross-references broken.",
+          "dependencies": "Footnote [^rnc] (and the matching LaTeX \\footnote on the Indoors paragraph) must travel with the moved block; no figure or cross-reference update is required. The bookkeeping paragraph's \"Scale for all of it\" will then correctly scope over Indoors as well."
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Mirror the same reordering in analysis/s10/latex/body.tex (paragraph plus its \\footnote/note for [^rnc]) so the markdown and LaTeX stay in sync; footnote [^rnc] must travel with the paragraph. No cross-references or figures break — the \"Scale for all of it: §6's calibration bullet\" sentence now also covers the Indoors result, which is correct and needs no rewording.",
+          "Footnote [^rnc] (and the matching LaTeX \\footnote on the Indoors paragraph) must travel with the moved block; no figure or cross-reference update is required. The bookkeeping paragraph's \"Scale for all of it\" will then correctly scope over Indoors as well."
+        ],
+        "composite": 15.33
+      }
+    },
+    {
+      "locus": "§4.6a “What this section reports is best read”",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "What this section reports is best read as a proposal for a **measure**:\nsocioeconomic position scored not by a categorical class schema but by the\noccupational content the schema summarises. Each legislator's prior\noccupation, coded to O\\*NET, is scored on an organisational-**altitude**\nladder — bottom, middle, top of a hierarchy — plus a level the categorical\nschemas do not carry: **free work**, occupations that sit outside the\norganisational hierarchy altogether. The move has ancestry: Weeden and\nGrusky's case for measuring class at the disaggregated occupation level,\nand Kohn and Schooler's occupational self-direction, where closeness of\nsupervision explained class differences in psychology, are the two nearest\nlines. What this measure adds is the off-ladder level — position scored not\nonly as altitude within the hierarchy but as distance from it — and that\naxis is not a post-hoc reading: the ordering **free < front-line <\ncorporate** was preregistered before any occupational element was joined\nto the register, and found. What follows are the measure's\nresults — the U over its levels, the off-ladder level's stability across\nthree decades, and, in the joint model below, the absorption of the class\nlabel the measure refines.",
+      "proposed": "This section proposes a **measure** of socioeconomic position based on the occupational content that categorical class schemas summarise. Each legislator's prior occupation, coded to O\\*NET, receives a place on an organisational-**altitude** ladder — bottom, middle or top — or in a fourth category the schemas do not carry: **free work**, outside the organisational hierarchy altogether. The measure builds on Weeden and Grusky's case for measuring class at the disaggregated occupation level and on Kohn and Schooler's occupational self-direction, in which closeness of supervision explained class differences in psychology. Its addition is the off-ladder level: position reflects both altitude within a hierarchy and distance from hierarchy. This axis was not read back from the result. The ordering **free < front-line < corporate** was preregistered before any occupational element was joined to the register, and the analysis found it. The results are a U across the four levels, stability of the off-ladder level across three decades, and, in the joint model below, absorption of the class label that the measure refines.",
+      "rationale": "The rewrite makes the construct, its intellectual ancestry and its incremental contribution sequential and explicit. It preserves the preregistered ordering and the reported findings while removing meta-language such as “best read as.”",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C11",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "No data change: preregistered ordering free < front-line < corporate, O*NET coding, U shape, three-decade stability, and class-label absorption all preserved; \"four levels\" merely makes explicit the count already implied (bottom/middle/top plus free work)."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "Apply to the canonical markdown (analysis/s10/S10-WRITEUP-DRAFT.md §4.6a) and mirror into analysis/s10/latex/body.tex (~line 905) via build_body.sh, preserving the \\cite{weeden2005} and Kohn/Schooler citation keys that the current sentence carries.",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "It keeps every reported result — the preregistered free &lt; front-line &lt; corporate ordering and that it was found, the four-level U, the three-decade stability, the joint-model absorption — while replacing \"best read as a proposal for a measure\" with a direct claim and putting construct, ancestry and contribution in a cleaner sequence; the only cost is a slightly flatter closing sentence."
+        },
+        {
+          "voter": "sol",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves the preregistered ordering and all reported findings while presenting the construct, intellectual lineage, contribution, and results in a clearer, more direct sequence."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Cuts the defensive “best read as” hedge and sequences construct, ancestry, increment, preregistration, and findings without moving any result, though “builds on” and “the analysis found it” slightly blandify the current’s sharper ancestry line and terse “and found.”",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Apply to the canonical markdown (analysis/s10/S10-WRITEUP-DRAFT.md §4.6a) and mirror into analysis/s10/latex/body.tex (~line 905) via build_body.sh, preserving the \\cite{weeden2005} and Kohn/Schooler citation keys that the current sentence carries."
+        ],
+        "composite": 16
+      }
+    },
+    {
+      "locus": "§4.6a The folk ladder by era, one panel",
+      "type": "structural",
+      "action": "move",
+      "current": "### 4.6a Socioeconomic position as organisational altitude\nThe era-resolved paragraph sits above; the folk-ladder-by-era figure currently follows the market-fitted-measures block.",
+      "proposed": "move to after the era-resolved paragraph (\"Era-resolved, the instrument's carrying level is stable\")",
+      "rationale": "The figure illustrates that paragraph and is stranded after a different result. 'The figure above's own estimand' still points at altitude_u, which remains above.",
+      "support": 1,
+      "author_seats": [
+        "grok-4.6/neutral"
+      ],
+      "author_families": [
+        "xai"
+      ],
+      "id": "C22",
+      "faith": {
+        "current_matches": true,
+        "data_faithful": "pass",
+        "locatable": true,
+        "note": "Pure figure-placement move within §4.6a (line 1265 figure to after the era-resolved paragraph at lines 1200-1210); caption and all statistics unchanged — no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "Move the caption block and the [^s-ladderera] footnote definition together with the image (currently at S10-WRITEUP-DRAFT.md lines 1265-1275); regenerate the LaTeX body from the markdown (analysis/s10/latex/_src_body.md and body.tex, where the \\includegraphics for ladder_by_era_panels.png sits at body.tex:1090) rather than hand-editing; verify the intervening \"the figure above's own estimand\" (draft line 1203 / body.tex:1031) still resolves to altitude_u.png, which it does since that figure remains above the era paragraph; re-rasterize pages after rebuild since figure floats retune pagination.",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 4,
+          "keep": true,
+          "why": "The by-era panels are the direct illustration of the era-resolved paragraph and currently sit two results later, after the chamber meta-analysis and the market-anchor comparison, so pulling them up puts figure next to claim without breaking any cross-reference — \"the figure above\" still points at the altitude-U plot, which stays upstream."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "Placing the folk-ladder-by-era figure immediately after the era-resolved paragraph aligns the illustration with the result it explains without disrupting the altitude_u reference."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": true,
+          "data_faithful": "pass",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "The era-panel figure illustrates the era-resolved paragraph and is stranded after a different result; moving it to sit immediately after that paragraph collocates claim and evidence, while altitude_u remains above so “the figure above’s own estimand” still resolves.",
+          "dependencies": "Move the figure block (ladder_by_era_panels.png + caption; LaTeX fig:ladder-era) with the era-resolved paragraph; take the nearby markdown footnote definition [^s-ladderera] along so it stays adjacent. No other cross-references point at fig:ladder-era, and no section renumbering is required."
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Move the caption block and the [^s-ladderera] footnote definition together with the image (currently at S10-WRITEUP-DRAFT.md lines 1265-1275); regenerate the LaTeX body from the markdown (analysis/s10/latex/_src_body.md and body.tex, where the \\includegraphics for ladder_by_era_panels.png sits at body.tex:1090) rather than hand-editing; verify the intervening \"the figure above's own estimand\" (draft line 1203 / body.tex:1031) still resolves to altitude_u.png, which it does since that figure remains above the era paragraph; re-rasterize pages after rebuild since figure floats retune pagination.",
+          "Move the figure block (ladder_by_era_panels.png + caption; LaTeX fig:ladder-era) with the era-resolved paragraph; take the nearby markdown footnote definition [^s-ladderera] along so it stays adjacent. No other cross-references point at fig:ladder-era, and no section renumbering is required."
+        ],
+        "composite": 16
+      }
+    },
+    {
+      "locus": "§4.6a The measure follows the discovery in reverse",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "**The measure follows the discovery in reverse order.** The register's\noccupational shape was first seen through the class coding (§4.6b): an\ninverted U, peak one rung below the top, with no mechanism attached. This\narm registered one, built the instrument to measure it, and ran — the\nregistration carries every revision and amendment dated,[^s-prereg] and every\nnumber below reproduces from a committed script on a single member table\n(one join; n = 4,762 members with register and\ninstrument, 3,594 with every covariate).",
+      "proposed": "Every number below reproduces from a committed script on a single member table (one join; n = 4,762 members with register and instrument, 3,594 with every covariate). The registration carries every revision and amendment dated.[^s-prereg] The class coding shows the same inverted U at coarser grain, peak one rung below the top; this arm registered a mechanism, built the instrument, and ran.",
+      "rationale": "Drops the lab-order framing and the forward section reference. Sample sizes, the preregistration, and the class-U parallel stay.",
+      "support": 1,
+      "author_seats": [
+        "grok-4.6/neutral"
+      ],
+      "author_families": [
+        "xai"
+      ],
+      "id": "C21",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "no data change — sample sizes (4,762 / 3,594), one-join provenance, inverted-U shape with peak one rung below the top, and the dated prereg claim are all preserved; only ordering, the §4.6b cross-reference, and framing (\"at coarser grain\") change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "If adopted, the subsection heading \"§4.6a The measure follows the discovery in reverse\" no longer describes the paragraph and would need retitling; the now-implicit link to the class-coding section (§4.6b, \"the same shape at coarser grain\") should be checked so the reader can still find it.",
+          "clarity": 3,
+          "voice": 2,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": false,
+          "why": "All the data survives and the forward-reference fix is worth having, but the rewrite guts the reverse-order framing that the subsection heading is built on and drops the \"no mechanism attached\" contrast that makes \"registered a mechanism\" mean anything, leaving a flatter paragraph when a minimal deletion of the \"(§4.6b)\" pointer would have solved the stated problem."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "Revise the subsection title “The measure follows the discovery in reverse order,” because the rewrite removes the discovery-order framing that supports it.",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves the sample sizes, reproducibility and preregistration claims, and inverted-U finding while stating the evidence more directly, provided the now-mismatched subsection title is revised."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": true,
+          "data_faithful": "pass",
+          "clarity": 2,
+          "voice": 2,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": false,
+          "why": "Faithful on the numbers and right to drop the forward §4.6b pointer, but it leads with script-hygiene, blandifies the author's cadence, and leaves the class-U parallel without the sentence that told the reader why it is here.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": false,
+        "keeps": 1,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "If adopted, the subsection heading \"§4.6a The measure follows the discovery in reverse\" no longer describes the paragraph and would need retitling; the now-implicit link to the class-coding section (§4.6b, \"the same shape at coarser grain\") should be checked so the reader can still find it.",
+          "Revise the subsection title “The measure follows the discovery in reverse order,” because the rewrite removes the discovery-order framing that supports it."
+        ],
+        "composite": 13
+      }
+    },
+    {
+      "locus": "§4.6a What this section reports is best read",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "What this section reports is best read as a proposal for a **measure**:\nsocioeconomic position scored not by a categorical class schema but by the\noccupational content the schema summarises. Each legislator's prior\noccupation, coded to O\\*NET, is scored on an organisational-**altitude**\nladder — bottom, middle, top of a hierarchy — plus a level the categorical\nschemas do not carry: **free work**, occupations that sit outside the\norganisational hierarchy altogether. The move has ancestry: Weeden and\nGrusky's case for measuring class at the disaggregated occupation level,\nand Kohn and Schooler's occupational self-direction, where closeness of\nsupervision explained class differences in psychology, are the two nearest\nlines. What this measure adds is the off-ladder level — position scored not\nonly as altitude within the hierarchy but as distance from it — and that\naxis is not a post-hoc reading: the ordering **free < front-line <\ncorporate** was preregistered before any occupational element was joined\nto the register, and found. What follows are the measure's\nresults — the U over its levels, the off-ladder level's stability across\nthree decades, and, in the joint model below, the absorption of the class\nlabel the measure refines.",
+      "proposed": "The register peaks at the insulated middle of the organisational hierarchy and sits lowest among occupations that stand outside it. Each legislator's prior occupation, coded to O\\*NET, is scored on an organisational-**altitude** ladder — bottom, middle, top — plus **free work**, the off-ladder level categorical class schemas do not carry. The ordering **free < front-line < corporate** was preregistered before any occupational element was joined to the register, and found. The ancestry is Weeden and Grusky's case for measuring class at the disaggregated occupation, and Kohn and Schooler's occupational self-direction, where closeness of supervision explained class differences in psychology; what the measure adds is distance from the hierarchy, not only altitude within it. What follows is the U over those levels, the off-ladder level's stability across three decades, and, in the joint model below, the absorption of the class label the measure refines.",
+      "rationale": "Findings-first. The heading already states the U; the body should not open by asking to be read as a proposal for a measure.",
+      "support": 1,
+      "author_seats": [
+        "grok-4.6/neutral"
+      ],
+      "author_families": [
+        "xai"
+      ],
+      "id": "C20",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "No data change: the preregistered ordering (free < front-line < corporate), the U/peak-at-middle direction (already asserted in the section heading), the three-decade stability, and the joint-model absorption claim are all preserved; only framing and compression differ."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite opens on the result (matching the section heading's peak-at-the-middle, free-lowest claim), keeps the preregistered ordering, the O*NET coding, the ancestry citations and the forward pointer to the U, stability and joint model intact while cutting the meta-framing and roughly a third of the words; no number, direction or finding changes, and its only cost is a mild echo of the heading in the first sentence."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite leads with the finding, preserves the preregistered ordering and all reported results, and explains the measure’s lineage and contribution more directly with substantially less metadiscourse."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": true,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Findings-first opening replaces the hedging “read this as a proposal” with the U the heading already names, keeps the preregistered free < front-line < corporate ordering and the Weeden–Grusky/Kohn–Schooler ancestry, and shortens without moving any result.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [],
+        "composite": 16.33
+      }
+    },
+    {
+      "locus": "§4.6b \"**They do not deserve equal billing, and the full model says which is\"",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "**They do not deserve equal billing, and the full model says which is\nwhich.** Cohort is untouched by anything and an order of magnitude better\nresolved than the rest. Prominence, entered as the bins E.3 says it is,\nsurvives everything at p < 10⁻⁴ in every column — the hump sits inside the\njoint model: flat through Q2, +0.16 to +0.19σ across Q3–Q5 with the top\nquintile easing off the Q4 peak (entered as a line instead, the block\nprints +0.020 per log-unit, t 2.05, and the shape disappears — the line was\nthe wrong form, not the predictor). Class shows a wider floor than the\nheadline contrast — all three manual-and-rural categories sit significantly\nbelow the service classes jointly (V/VI −0.235, VIIab −0.286, IVc −0.201) —\nand survives cohort, education and prominence, but not its own finer\nmeasurement: beside the altitude ladders the class block falls to p = 0.56,\nand the leave-one-out fits show either ladder alone does it (p = 0.62 and\np = 0.54), because the EGP label is a coarse coding of the occupational\ncontent the ladders measure directly. That is the joint model repeating\nwhat destination-not-origin already said: the register tracks what the work\nwas, not what the label says. The same absorption runs inside the\noccupational blocks themselves — each is strong alone; the folk ladder is\nthe stronger carrier (p = 0.0008 with both in, its FREE level −0.090 per\nsd) and takes the credit from its theoretical near-twin, while Indoors\nstays marginally alive beside either single ladder and is absorbed only by\nthe pair. That the folk ladder beats the theoretical one is itself a datum\nfor the introduction's classification point: take the stereotype — the\neveryday picture of a corporate ladder — have machine coders concretize it\nblind, and the concretized folk category measures better than the\ntheory-built alternative. Education survives nothing, in any column — and with the\ngraduate rung split, master's and doctorate both sit at the bachelor\nplateau, so the null is not a lumping artifact. What the full model keeps,\nthen, is cohort, the prominence bins, and one occupational ladder; what it\nretires is the class label, education, and every occupational term the\nladders already encode.",
+      "proposed": "**They do not deserve equal billing, and the full model says which is\nwhich.** Cohort is untouched by anything and an order of magnitude better\nresolved than the rest. Prominence, entered as the bins E.3 says it is,\nsurvives everything at p < 10⁻⁴ in every column — the hump sits inside the\njoint model: flat through Q2, +0.16 to +0.19σ across Q3–Q5 with the top\nquintile easing off the Q4 peak (entered as a line instead, the block\nprints +0.020 per log-unit, t 2.05, and the shape disappears — the line was\nthe wrong form, not the predictor). Class shows a wider floor than the\nheadline contrast — all three manual-and-rural categories sit significantly\nbelow the service classes jointly (V/VI −0.235, VIIab −0.286, IVc −0.201) —\nand survives cohort, education and prominence, but not its own finer\nmeasurement: beside the altitude ladders the class block falls to p = 0.56,\nand either ladder alone is enough to retire it, because the EGP label is a\ncoarse coding of the occupational content the ladders measure directly.\nThat is the joint model repeating what destination-not-origin already said:\nthe register tracks what the work was, not what the label says. The same\nabsorption runs inside the occupational blocks themselves: the folk ladder\nis the stronger carrier (p = 0.0008 with both in, its FREE level −0.090 per\nsd) and takes the credit from its theoretical near-twin. That the folk\nladder beats the theoretical one is itself a datum for the introduction's\nclassification point: take the stereotype — the everyday picture of a\ncorporate ladder — have machine coders concretize it blind, and the\nconcretized folk category measures better than the theory-built\nalternative. Education survives nothing, in any column — and with the\ngraduate rung split, master's and doctorate both sit at the bachelor\nplateau, so the null is not a lumping artifact. What the full model keeps,\nthen, is cohort, the prominence bins, and one occupational ladder; what it\nretires is the class label, education, and every occupational term the\nladders already encode.",
+      "rationale": "The leave-one-out p-values (0.62 / 0.54) and the Indoors-absorbed-only-by-the-pair clause are stated verbatim two paragraphs earlier in \"Two robustness reads\"; repeating them here dilutes the ranking argument. Both numbers and both facts remain in the manuscript at their first, fuller statement — nothing is dropped from the record.",
+      "support": 1,
+      "author_seats": [
+        "opus-5-med/neutral"
+      ],
+      "author_families": [
+        "anthropic"
+      ],
+      "id": "C6",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "fail",
+        "note": "Proposal drops the leave-one-out p-values (p = 0.62, p = 0.54), the \"each is strong alone\" finding, and the entire Indoors result (marginally alive beside either single ladder, absorbed only by the pair) — all data/findings removed."
+      },
+      "faith_gate": false,
+      "faith_reason": "data_changed",
+      "votes": [],
+      "verdict": {
+        "accepted": false,
+        "keeps": 0,
+        "n": 0,
+        "dropped": "data_changed",
+        "composite": 0
+      }
+    },
+    {
+      "locus": "§4.6b “The class coding: the same shape”",
+      "type": "structural",
+      "action": "split",
+      "current": "### 4.6b The class coding: the same shape at coarser grain — education, and the joint model\n\nThe categorical schema that first revealed the gradient is kept here in abbreviated form: it shows the same shape as §4.6a's measure at coarser grain, and in the joint model below the measure absorbs it.",
+      "proposed": "Split at “#### All four predictors at once”. Move the pre-split class-and-education analysis to immediately before current §4.6a; keep “All four predictors at once” and everything after it immediately after current §4.6a as a separate subsection.",
+      "rationale": "The manuscript says the class coding revealed the gradient first, but presents that discovery only after the derived occupational measure. Presenting discovery, refined measure, then joint adjudication restores chronological and argumentative order; section numbering and cross-references are dependencies to update.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C7",
+      "faith": {
+        "current_matches": true,
+        "data_faithful": "pass",
+        "locatable": true,
+        "note": "Pure reorder: §4.6b split at the existing \"All four predictors at once\" h4 with both halves preserved around §4.6a; no datum changed, though the intro sentence's \"§4.6a's\" and \"below\" cross-references will need cosmetic updating after the move."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "Renumber the subsections and every cross-reference: class-and-education becomes the new first subsection, the occupational measure second, \"All four predictors at once\" third (as its own §), and current §4.6c (\"Chase and flight\") shifts down; ~38 \"§4.6a/§4.6b\" references in S10-WRITEUP-DRAFT.md plus mentions in METHODOLOGY.md, the LaTeX body/reformat.py, section_groups.json and the plotting/analysis scripts' docstrings must be updated. Figures travel with their text: class_by_era_panels.png with the class block, altitude_u.png and ladder_by_era_panels.png with the measure. Rewrite the two framing passages that assume the old order — §4.6b's opening (\"kept here in abbreviated form ... the measure absorbs it\") and §4.6a's \"The measure follows the discovery in reverse order\" paragraph, whose forward pointer to §4.6b becomes a backward one — and flip the direction of §4.6a's \"same six equal bins as §4.6b's class-era panels\", \"The class arm's crossover claim rests on a within-chamber meta-analysis\", and §4.6's \"unmoved by occupation and education controls (§4.6b)\". The joint-model subsection's references to §4.6a's two ladders still resolve since it now sits after the measure.",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 4,
+          "keep": true,
+          "why": "Discovery (class) → refined measure (altitude ladder) → joint adjudication is the order the argument actually runs, and the split lets the joint model — which adjudicates between both blocks — sit after both instead of being buried inside the one it retires, removing the \"follows the discovery in reverse order\" scaffolding and the abbreviated-kept apology at the cost of purely mechanical renumbering."
+        },
+        {
+          "voter": "sol",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "Move the class-era figure and its caption, the class and education tables, and their associated footnotes with the pre-split text; create and renumber the resulting subsections; update all §4.6a/§4.6b and later-subsection cross-references, including the occupational section’s discovery/joint-model signposts and the split section’s opening language.",
+          "clarity": 5,
+          "voice": 3,
+          "concision": 3,
+          "structural_soundness": 5,
+          "keep": true,
+          "why": "Discovery through class and education, refinement through the occupational measure, and adjudication in the joint model form a substantially clearer evidentiary sequence without changing any result."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 4,
+          "keep": true,
+          "why": "Discovery → refined measure → joint adjudication is the argument the manuscript already names, and splitting the overloaded 4.6b at the joint-model heading puts each job in that order; the class block’s sequel-shaped opening and 4.6a’s reverse-order sentence are companion repairs, not reasons to keep the inverted presentation.",
+          "dependencies": "Renumber 4.6a/b/c (class+education before the occupational measure; joint model its own subsection after that measure; chase-and-flight shifts). Update every in-text §4.6a (currently the occupational measure) and §4.6b (currently class/education/joint) citation in the body, front matter, appendix, and artifact table. class_by_era_panels.png travels with the class block; the joint table stays with “All four predictors at once.” Rewrite the moved 4.6b opening (now a retrospective “abbreviated form / same shape as 4.6a / joint model below”) so it can lead; invert or drop 4.6a’s “follows the discovery in reverse order” and retarget its §4.6b class citations to the new preceding section. Split the current 4.6b title, which names class, education, and the joint model together. Refresh the LaTeX label map after renumbering."
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Renumber the subsections and every cross-reference: class-and-education becomes the new first subsection, the occupational measure second, \"All four predictors at once\" third (as its own §), and current §4.6c (\"Chase and flight\") shifts down; ~38 \"§4.6a/§4.6b\" references in S10-WRITEUP-DRAFT.md plus mentions in METHODOLOGY.md, the LaTeX body/reformat.py, section_groups.json and the plotting/analysis scripts' docstrings must be updated. Figures travel with their text: class_by_era_panels.png with the class block, altitude_u.png and ladder_by_era_panels.png with the measure. Rewrite the two framing passages that assume the old order — §4.6b's opening (\"kept here in abbreviated form ... the measure absorbs it\") and §4.6a's \"The measure follows the discovery in reverse order\" paragraph, whose forward pointer to §4.6b becomes a backward one — and flip the direction of §4.6a's \"same six equal bins as §4.6b's class-era panels\", \"The class arm's crossover claim rests on a within-chamber meta-analysis\", and §4.6's \"unmoved by occupation and education controls (§4.6b)\". The joint-model subsection's references to §4.6a's two ladders still resolve since it now sits after the measure.",
+          "Move the class-era figure and its caption, the class and education tables, and their associated footnotes with the pre-split text; create and renumber the resulting subsections; update all §4.6a/§4.6b and later-subsection cross-references, including the occupational section’s discovery/joint-model signposts and the split section’s opening language.",
+          "Renumber 4.6a/b/c (class+education before the occupational measure; joint model its own subsection after that measure; chase-and-flight shifts). Update every in-text §4.6a (currently the occupational measure) and §4.6b (currently class/education/joint) citation in the body, front matter, appendix, and artifact table. class_by_era_panels.png travels with the class block; the joint table stays with “All four predictors at once.” Rewrite the moved 4.6b opening (now a retrospective “abbreviated form / same shape as 4.6a / joint model below”) so it can lead; invert or drop 4.6a’s “follows the discovery in reverse order” and retarget its §4.6b class citations to the new preceding section. Split the current 4.6b title, which names class, education, and the joint model together. Refresh the LaTeX label map after renumbering."
+        ],
+        "composite": 15.33
+      }
+    },
+    {
+      "locus": "§4.6b “Together they explain about a sixth”",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "**Together they explain about a sixth of the variance, and that is the\nhonest headline.** The grand member-level model — cohort, class, education,\nprominence, with §4.6a's occupational ladder and office cut added — reaches\nadjusted R² ≈ 0.16, and 0.14 of it is cohort alone; no other block\ncontributes more than a few thousandths.[^r46var] So this is not a\ndiscovered instrument for identifying machine text by its company, or for\nreading a person's history off their vocabulary, and the study should not\nbe cited as one. What it is, is evidence that such structure exists: one\nborrowed 407-word ruler — built from a different corpus for a different\npurpose — carries a juniority gradient across forty years and five\nlegislatures, an occupational shape built twice by blind processes, and a\npost-training signature, through a probe thin enough that five-sixths of\nmember-level variation never enters it. The right reading is the tip of an\niceberg. The mass below the waterline — the full register, and the web of\nrelationships and effects it participates in — has gone untracked, which\nsuggests the ability or the coordination to track it has been missing; it is\nprecisely the kind of object machine intelligence turns searchable, which is why the register\nitself is queued as a search target rather than a fixed list (Appendix C items\n33–34), and why the Limits read the small shares as floors of one thin\nprobe rather than ceilings of the phenomenon.",
+      "proposed": "**Together, the measured predictors explain about a sixth of member-level variance.** The grand model — cohort, class, education and prominence, plus §4.6a's occupational ladder and office cut — reaches adjusted R² ≈ 0.16; cohort alone contributes 0.14, and no other block contributes more than a few thousandths.[^r46var] These shares do not support using the instrument to identify machine text from its company or to infer a person's history from vocabulary. They establish a narrower result: a borrowed 407-word ruler, built from another corpus for another purpose, carries a juniority gradient across forty years and five legislatures, an occupational shape constructed twice by blind processes, and a post-training signature, while leaving five-sixths of member-level variation unexplained. The measured shares are therefore floors for this thin probe, not ceilings for the wider register. The full register and its relationships remain unmeasured; Appendix C items 33–34 accordingly treat the register as a search target rather than a fixed list.",
+      "rationale": "The replacement keeps the variance accounting, scope limitation and forward implication, but removes the iceberg metaphor and speculation about missing “ability or coordination.” It states plainly what the model establishes and what it cannot support.",
+      "support": 1,
+      "author_seats": [
+        "sol/neutral"
+      ],
+      "author_families": [
+        "openai"
+      ],
+      "id": "C12",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "no data change — R² ≈ 0.16, cohort 0.14, few-thousandths blocks, 407-word ruler, forty years, five legislatures, five-sixths unexplained, Appendix C items 33–34, and the not-an-identifier claim are all preserved; only interpretive framing (iceberg/searchability) was dropped."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "dependencies": "If adopted, the dropped pointer to the Limits section (\"why the Limits read the small shares as floors\") should be re-anchored so §9's floors-not-ceilings framing still has an antecedent.",
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 2,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": false,
+          "why": "Every number survives and the sentences are tighter, but the rewrite strips the load-bearing argument — the untracked mass, the missing ability-or-coordination, and machine intelligence making it searchable — leaving the Appendix C search-target move unmotivated and the paragraph merely correct rather than plainly confident."
+        },
+        {
+          "voter": "sol",
+          "is_author": true,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 4,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves every reported quantity and finding while making the inferential boundary much clearer, though it loses some of the current passage's force by trimming the broader coordination argument."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": false,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Faithful on every number and finding; it replaces the overloaded iceberg-and-speculation close with a plain floors-not-ceilings reading and drops the self-praising “honest headline,” at the acceptable cost of softening “should not be cited as one” and cutting the machine-intelligence-searchable clause.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 2,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "If adopted, the dropped pointer to the Limits section (\"why the Limits read the small shares as floors\") should be re-anchored so §9's floors-not-ceilings framing still has an antecedent."
+        ],
+        "composite": 14.67
+      }
+    },
+    {
+      "locus": "§4.6b The categorical schema that first revealed",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "The categorical schema that first revealed the gradient is kept here in\nabbreviated form: it shows the same shape as §4.6a's measure at coarser\ngrain, and in the joint model below the measure absorbs it. Class predicts\nthe register as a joint block, not as a single ladder — and the apparent\neducation gradient does not survive its controls. The arc of the analysis\nis a correction applied twice, recorded because both applications were the\nstudy's own committed checks. On the eight provinces, class, education and\nprominence appeared to predict the register at t = 3–4; clustering by\nmember and replication then removed every INDIVIDUAL certainty. The joint\ntests say otherwise:",
+      "proposed": "The categorical schema that first revealed the gradient is kept here in abbreviated form: it shows the same shape as the altitude measure at coarser grain, and in the joint model below the measure absorbs it. Class predicts the register as a joint block — an inverted U, peaking one rung below the top — and the apparent education gradient does not survive its controls. On the eight provinces, class, education and prominence appeared to predict the register at t = 3–4; clustering by member and replication then removed every individual certainty. The joint tests say otherwise:",
+      "rationale": "Lead with the shape, not the correction diary. Appendix B already records the two superseded framings; the provincial t = 3–4 and the clustering/replication paragraphs that follow keep those data in the main text.",
+      "support": 1,
+      "author_seats": [
+        "grok-4.6/neutral"
+      ],
+      "author_families": [
+        "xai"
+      ],
+      "id": "C23",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "No data change: \"altitude measure\" is the manuscript's own name for §4.6a's measure, and \"inverted U, peaking one rung below the top\" restates the section's own asserted finding (line 1386); the dropped \"correction applied twice\" sentence is framing whose substance remains in the surrounding text."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "The rewrite replaces the cross-reference to §4.6a (\\cref{sec:occupation} in body.tex line 1171) with the bare phrase \"the altitude measure\" — confirm that §4.6a's measure is named \"occupational altitude\" at first use so the pointer is not lost, or restore the \\cref. Also confirm Appendix B (B8) still carries the two superseded framings the deleted \"correction applied twice\" sentence used to flag.",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "It states the section's actual result (the inverted U peaking one rung below the top, exactly as the headline table reports) up front instead of a meta-narrative about the study's correction history, while keeping the provincial t = 3–4 finding and the clustering/replication reversal verbatim, so nothing measured is altered and the paragraph reads shorter and plainer."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite states the categorical pattern directly, preserves every reported result, and removes process narration that obscured the substantive finding."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": true,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Puts the inverted-U shape already in this section in the lead and cuts a process-diary sentence Appendix B already records, without moving any number or dropping the provincial t = 3–4 facts.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "The rewrite replaces the cross-reference to §4.6a (\\cref{sec:occupation} in body.tex line 1171) with the bare phrase \"the altitude measure\" — confirm that §4.6a's measure is named \"occupational altitude\" at first use so the pointer is not lost, or restore the \\cref. Also confirm Appendix B (B8) still carries the two superseded framings the deleted \"correction applied twice\" sentence used to flag."
+        ],
+        "composite": 16
+      }
+    },
+    {
+      "locus": "§4.6b The II-over-I crossover is established, by the test",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "**The II-over-I crossover is established, by the test that needs no\nnormalization at all.** Comparing class II to class I WITHIN each chamber —\neach legislature its own control, cohort-adjusted, equal member weights —\nthe contrast is positive in 9 of 12 chambers, individually significant in\neach of the three with the power to detect it (UK +0.68, t = 2.48; US House\n+0.82, t = 2.10; Manitoba +2.26, t = 2.21), and the inverse-variance\nmeta-analysis across chambers gives **+0.59 per 1,000, z = 3.50**. One\nregression variant (full-population z-scoring) reads +0.054σ at t = 1.57 — a\ndiluted positive, not a contrary result: same sign as every other view,\nwithin 1.2 se of its sibling regression, short of the threshold because that\nscaling down-weights exactly the large low-variance chambers where the\ncontrast is largest. Under heterogeneous per-chamber effects, differently\nweighted estimators answer differently weighted questions; no specification\nat any point estimated the contrast negative. (The within-chamber meta was\ncomputed after the variants diverged; it corroborates rather than\nadjudicates.) Teachers, nurses and journalists out-use lawyers, physicians and\nprofessors, within their own chambers, on both sides of the Atlantic —\nLabov's crossover, in this register. The exact location of any peak remains\na non-claim: under a chase-and-flight cycle the peak SHOULD migrate downward\nas the top tier's abandonment propagates, so peak location is dynamics, not\nstructure (an era-resolved peak test is future work).",
+      "proposed": "**The II-over-I crossover is established, by the test that needs no normalization at all.** Comparing class II to class I WITHIN each chamber — each legislature its own control, cohort-adjusted, equal member weights — the contrast is positive in 9 of 12 chambers, individually significant in each of the three with the power to detect it (UK +0.68, t = 2.48; US House +0.82, t = 2.10; Manitoba +2.26, t = 2.21), and the inverse-variance meta-analysis across chambers gives **+0.59 per 1,000, z = 3.50**. One regression variant (full-population z-scoring) reads +0.054σ at t = 1.57 — a diluted positive, not a contrary result: same sign as every other view, within 1.2 se of its sibling regression, short of the threshold because that scaling down-weights exactly the large low-variance chambers where the contrast is largest. Under heterogeneous per-chamber effects, differently weighted estimators answer differently weighted questions; no specification at any point estimated the contrast negative. (The within-chamber meta was computed after the variants diverged; it corroborates rather than adjudicates.) Teachers, nurses and journalists out-use lawyers, physicians and professors, within their own chambers, on both sides of the Atlantic. The exact location of any peak remains a non-claim: if the form is in flight the peak should migrate, so peak location is dynamics, not structure.",
+      "rationale": "§4.6c holds the Labov parallel as hypothesis, not finding, so planting the flag here is a miscitation risk. The era panels already test peak location in-sample and find it does not move; calling an era-resolved peak test 'future work' contradicts that result.",
+      "support": 1,
+      "author_seats": [
+        "grok-4.6/neutral"
+      ],
+      "author_families": [
+        "xai"
+      ],
+      "id": "C24",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "All numbers, signs, and estimand labels preserved; only interpretive framing changed (Labov attribution dropped, theoretical peak-migration prediction reworded losing the unmeasured \"downward\" direction, future-work aside removed) — no data change."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "Apply in the canonical markdown (/home/matt/performance_commons/analysis/s10/S10-WRITEUP-DRAFT.md, ~line 1515) and rebuild body.tex (~line 1343); optionally update the stale docstring in /home/matt/performance_commons/analysis/s10/member_level_estimation.py line 47 (\"the era-resolved peak-location test it implies has not been run\"), which carries the same contradiction. The Labov attribution is not lost — §4.6c (\"The shape has a name — held now as hypothesis, not finding\") still carries it.",
+          "clarity": 4,
+          "voice": 3,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "It removes a real internal contradiction — the manuscript elsewhere states the era-resolved peak test \"has now been run\" and that the peak never moves under either aggregation, while this passage calls it future work — and it stops asserting the Labov parallel as a finding where a later subsection explicitly holds it as hypothesis, all without touching a single number or the direction of any measured effect; the cost is a modest loss of the Labov punchline, which survives at its proper place."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 5,
+          "voice": 5,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves every reported result while removing a premature Labov identification and the erroneous future-work claim, yielding a cleaner and more accurate distinction between the established crossover and the unresolved dynamic interpretation."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": true,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Cutting the Labov tag from an “established” results paragraph matches §4.6c’s hypothesis-not-finding stance, and dropping “era-resolved peak test is future work” removes a contradiction with the era panels two paragraphs earlier that already found the peak does not move; every number and the II-over-I contrast stay intact.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [
+          "Apply in the canonical markdown (/home/matt/performance_commons/analysis/s10/S10-WRITEUP-DRAFT.md, ~line 1515) and rebuild body.tex (~line 1343); optionally update the stale docstring in /home/matt/performance_commons/analysis/s10/member_level_estimation.py line 47 (\"the era-resolved peak-location test it implies has not been run\"), which carries the same contradiction. The Labov attribution is not lost — §4.6c (\"The shape has a name — held now as hypothesis, not finding\") still carries it."
+        ],
+        "composite": 15.67
+      }
+    },
+    {
+      "locus": "§4.6b Together they explain about a sixth",
+      "type": "prose",
+      "action": "rewrite",
+      "current": "**Together they explain about a sixth of the variance, and that is the\nhonest headline.** The grand member-level model — cohort, class, education,\nprominence, with §4.6a's occupational ladder and office cut added — reaches\nadjusted R² ≈ 0.16, and 0.14 of it is cohort alone; no other block\ncontributes more than a few thousandths.[^r46var] So this is not a\ndiscovered instrument for identifying machine text by its company, or for\nreading a person's history off their vocabulary, and the study should not\nbe cited as one. What it is, is evidence that such structure exists: one\nborrowed 407-word ruler — built from a different corpus for a different\npurpose — carries a juniority gradient across forty years and five\nlegislatures, an occupational shape built twice by blind processes, and a\npost-training signature, through a probe thin enough that five-sixths of\nmember-level variation never enters it. The right reading is the tip of an\niceberg. The mass below the waterline — the full register, and the web of\nrelationships and effects it participates in — has gone untracked, which\nsuggests the ability or the coordination to track it has been missing; it is\nprecisely the kind of object machine intelligence turns searchable, which is why the register\nitself is queued as a search target rather than a fixed list (Appendix C items\n33–34), and why the Limits read the small shares as floors of one thin\nprobe rather than ceilings of the phenomenon.",
+      "proposed": "**Together they explain about a sixth of the variance.** The grand member-level model — cohort, class, education, prominence, with §4.6a's occupational ladder and office cut added — reaches adjusted R² ≈ 0.16, and 0.14 of it is cohort alone; no other block contributes more than a few thousandths.[^r46var] So this is not a discovered instrument for identifying machine text by its company, or for reading a person's history off their vocabulary, and the study should not be cited as one. What it is, is evidence that such structure exists: one borrowed 407-word ruler — built from a different corpus for a different purpose — carries a juniority gradient across forty years and five legislatures, an occupational shape built twice by blind processes, and a post-training signature, through a probe thin enough that five-sixths of member-level variation never enters it. The full register, and the web of relationships it participates in, has gone untracked; it is the kind of object machine intelligence turns searchable, which is why the register itself is queued as a search target rather than a fixed list (Appendix C items 33–34), and why the Limits read the small shares as floors of one thin probe rather than ceilings of the phenomenon.",
+      "rationale": "Keeps the variance shares, the not-an-instrument warning, and the Appendix C pointer. Cuts the 'honest headline' label and the iceberg metaphor, which are apology and flourish on a result that already says what it is.",
+      "support": 1,
+      "author_seats": [
+        "grok-4.6/neutral"
+      ],
+      "author_families": [
+        "xai"
+      ],
+      "id": "C25",
+      "faith": {
+        "locatable": true,
+        "current_matches": true,
+        "data_faithful": "pass",
+        "note": "No data change: R² ≈ 0.16, 0.14 cohort share, 407-word ruler, five-sixths, forty years/five legislatures, and Appendix C items 33–34 all preserved; only framing (headline phrase, iceberg metaphor, untracked-ability speculation) was trimmed."
+      },
+      "faith_gate": true,
+      "faith_reason": null,
+      "votes": [
+        {
+          "voter": "opus-5-med",
+          "is_author": false,
+          "dependencies": "",
+          "data_faithful": "pass",
+          "clarity": 3,
+          "voice": 4,
+          "concision": 4,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "All figures, the not-an-instrument warning, and the Appendix C pointer survive intact, while the \"honest headline\" self-labelling and the iceberg image go — a net gain in plainness, at the small cost of the dropped \"ability or coordination to track it has been missing\" clause, which the surviving searchability sentence mostly carries."
+        },
+        {
+          "voter": "sol",
+          "is_author": false,
+          "data_faithful": "pass",
+          "dependencies": "",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "The rewrite preserves every quantitative and substantive finding while removing defensive labeling and a stock metaphor, leaving a tighter, plainer interpretation with the warning and research-program link intact."
+        },
+        {
+          "voter": "grok-4.6",
+          "is_author": true,
+          "data_faithful": "pass",
+          "clarity": 4,
+          "voice": 4,
+          "concision": 5,
+          "structural_soundness": 3,
+          "keep": true,
+          "why": "Cuts the apologetic “honest headline” and the iceberg flourish without touching any number, the not-an-instrument warning, or the floors-not-ceilings reading; the dropped ability-or-coordination clause is interpretation, not data, and the remaining sentence still does the paragraph’s job.",
+          "dependencies": ""
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "keeps": 3,
+        "n": 3,
+        "voter_data_fail": false,
+        "dependencies": [],
+        "composite": 15.33
+      }
+    }
+  ]
+}
