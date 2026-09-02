@@ -1258,7 +1258,7 @@ number below reproduces from a committed script on a single member table
 instrument, 3,594 with every covariate).
 
 [^s-prereg]: `plans/PREREG-occupational-accountability.md` is the
-    registration; METHODOLOGY §6.1c is the method record; the member table
+    registration; `METHODOLOGY.md` §6.1c is the method record; the member table
     is `prereg_member_table.json`.
 
 **The instrument, in one paragraph.** Each legislator's prior occupation,
@@ -1459,7 +1459,7 @@ ceilings.[^r46f]
     `prereg_synthesis_check.py`, `prereg_covariate_strength.py`,
     `prereg_strength_2526.py`; results snapshots
     `prereg_stage1_results.txt`, `prereg_stage2_results.txt`. The join and
-    its drift guard: `prereg_join.py` (METHODOLOGY §6.1b addendum for the
+    its drift guard: `prereg_join.py` (`METHODOLOGY.md` §6.1b addendum for the
     two join facts). Instrument derivation artifacts:
     `element_audit_*.json`, `element_levels.json`,
     `instrument_final_cells.json`.
@@ -3496,7 +3496,7 @@ climbs. What does carry is measured on individuals, not on chambers.
     middle showed −0.102 conditional on its own siblings). Redesigned to
     each-level-alone before anything was reported; the rule — a ladder's
     levels are contrasts over one space and never enter together — is now in
-    METHODOLOGY §6.1c.
+    `METHODOLOGY.md` §6.1c.
 
 15. **The two bypass first attempts** (Matthew 2026-08-24). Each chamber's
     search had a biased first sampling, now excluded from the §4.10 per-variant
