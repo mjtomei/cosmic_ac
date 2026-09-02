@@ -1,10 +1,11 @@
 # Applying structural changes — the protocol
 
-Prose rewrites apply mechanically (`apply_changes.py`): find the verbatim
-`current`, replace with `proposed`. Structural changes cannot — they are
-natural-language instructions ("move to after §Y", "split before '<quote>'"),
-so an agent executes them. This file is that agent's brief. It is reusable:
-point it at a run's structural queue and the manuscript.
+Prose rewrites apply mechanically through Edit: `current` as old_string,
+`proposed` as new_string, one call per change. Structural changes cannot — they
+are natural-language instructions ("move to after §Y", "split before
+'<quote>'"), so an agent executes them by judgment. This file is that agent's
+brief, and the Apply phase of `workflows/round2_iter_all.js` points it at the
+selected changes and the manuscript.
 
 **Model:** run this on a strong model. The 2026-09-02 pass ran on
 `claude-opus-5` and applied 10 reorganizations with no prose lost.
