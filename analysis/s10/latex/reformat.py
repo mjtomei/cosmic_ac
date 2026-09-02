@@ -194,6 +194,28 @@ def figure_ref_anchors(t):
      r"\g<0>~(\\cref{fig:lifedrift})"),
     (r"occupational\s+shape\s+was\s+in\s+place\s+decades\s+before\s+the\s+machines\.",
      r"\g<0>~(\\cref{fig:ladder-era})"),
+    # Prose that referred to a table or figure in words ("as in the table",
+    # "the figure above") rather than by reference. In markdown that reads fine
+    # because the table is right there; in the compiled document it leaves the
+    # reader with no way to find what is meant.
+    (r"values\s+exactly\s+as\s+in\s+the\s+table\);\s+whiskers",
+     r"values exactly as in \\cref{tab:prevalence}); whiskers"),
+    (r"is\s+what\s+the\s+table\s+reports",
+     r"is what \\cref{tab:prevalence} reports"),
+    (r"word-weighted\s+in\s+the\s+table,\s+8\.3",
+     r"word-weighted in \\cref{tab:genre}, 8.3"),
+    (r"values\s+exactly\s+as\s+in\s+the\s+table\),\s+direct-labelled",
+     r"values exactly as in \\cref{tab:climb}), direct-labelled"),
+    (r"most\s+elite\s+credential\s+in\s+the\s+table",
+     r"most elite credential in \\cref{tab:education}"),
+    (r"the\s+figure\s+above\\textquotesingle\s*s\s+own\s+estimand",
+     r"\\cref{fig:altitude}\\textquotesingle s own estimand"),
+    (r"the\s+table\\textquotesingle\s*s\s+n\s+and\s+years\s+columns",
+     r"\\cref{tab:four-predictors}\\textquotesingle s n and years columns"),
+    (r"fixed\s+effects\s+in\s+the\s+table\s+above\s+control",
+     r"fixed effects in \\cref{tab:dqi} control"),
+    (r"and\s+the\s+table\s+reads\s+professional",
+     r"and \\cref{tab:class-provincial} reads professional"),
     ]
     for a, b in subs:
         t, n = re.subn(a, b, t, count=1)

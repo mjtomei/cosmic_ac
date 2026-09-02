@@ -258,7 +258,7 @@ AB & 7.8\% & {[}3.9, 12.3{]} & & \textbf{US Senate} & \textbf{1.8\%} & {[}0.1, 4
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.85\linewidth]{chamber_prevalence_dotplot.png}
-\caption{The twenty chamber rates, drawn: each point is the chamber\textquotesingle s word-weighted, fraction-weighted machine-drafted share of 2025--26 words (values exactly as in the table); whiskers are the cluster-bootstrap 95\% CIs; chambers sorted by rate, direct-labelled, with the two US chambers emphasised and the pooled 9.03\% marked as a reference line. Axis starts at zero.}
+\caption{The twenty chamber rates, drawn: each point is the chamber\textquotesingle s word-weighted, fraction-weighted machine-drafted share of 2025--26 words (values exactly as in \cref{tab:prevalence}); whiskers are the cluster-bootstrap 95\% CIs; chambers sorted by rate, direct-labelled, with the two US chambers emphasised and the pooled 9.03\% marked as a reference line. Axis starts at zero.}
 \label{fig:prevalence-dots}
 \end{figure}
 
@@ -293,7 +293,7 @@ imposes a genre mix rather than observing one and leaves 25.6\% of the chamber\t
 in-band record --- Private Members\textquotesingle{} Business, Adjournment Proceedings, Routine
 Proceedings, the Throne Speech reply --- in no stratum at all. Read as a chamber
 rate it gives 16.5\%; the uniform draw of 120 prevalence segments gives \textbf{18.5\%},
-and the uniform draw is what the table reports. Dropping CA-FED entirely leaves
+and the uniform draw is what \cref{tab:prevalence} reports. Dropping CA-FED entirely leaves
 the pool at 8.50\% against 9.03\%, so the chamber contributes about half a point
 to the headline and neither makes nor breaks it.\footnote{\texttt{pangram\_\allowbreak{}ch\_\allowbreak{}verdicts.\allowbreak{}csv}, rows \texttt{caprev*}/\texttt{cactl*}. Its short band
   already matched this draw: \(120\times\) 15,236/18,029 = 101, and 101 short
@@ -453,7 +453,7 @@ question of the routinely staff-written kind. The genre claim therefore holds
 segment by segment and not only in aggregate: within the genre nominated as
 unscripted, the flags land exactly on the parts that were written in advance.
 
-This makes the Oral Questions rate a \textbf{mislabelled row rather than a wrong one} --- 9.8\% word-weighted in the table, 8.3\% on segments. It is not an estimate of Question Period; it is an estimate of long-tail business carrying the QP heading, and the true rate for genuine exchange is lower --- possibly zero.
+This makes the Oral Questions rate a \textbf{mislabelled row rather than a wrong one} --- 9.8\% word-weighted in \cref{tab:genre}, 8.3\% on segments. It is not an estimate of Question Period; it is an estimate of long-tail business carrying the QP heading, and the true rate for genuine exchange is lower --- possibly zero.
 
 \textbf{One flag type has no control, and it should not be leaned on.} Two of the
 five are tributes, both at \texttt{fraction\_ai} 1.0, and \textbf{no pre-AI tribute exists
@@ -684,7 +684,7 @@ Prince Edward Island & 1,589 & 1,523 & \(\times\)0.96 & \(-0.2\)\%/yr \\
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.85\linewidth]{convergence_slopegraph.png}
-\caption{The convergence, drawn as a slopegraph: one line per chamber from its 2006 to its 2026 gap-vocabulary rate (occurrences per 100k words; values exactly as in the table), direct-labelled at both ends, the UK-group climbers and the two flat US chambers emphasised. The fan closes upward: the lowest 2006 starters climb steepest toward the level the United States already held.}
+\caption{The convergence, drawn as a slopegraph: one line per chamber from its 2006 to its 2026 gap-vocabulary rate (occurrences per 100k words; values exactly as in \cref{tab:climb}), direct-labelled at both ends, the UK-group climbers and the two flat US chambers emphasised. The fan closes upward: the lowest 2006 starters climb steepest toward the level the United States already held.}
 \label{fig:convergence}
 \end{figure}
 
@@ -1065,8 +1065,7 @@ The plateau at the top is three levels wide --- bachelor, master and
 doctorate sit within \(0.05\sigma\) of one another, so the graduate null is not an
 artifact of lumping two credentials --- and both arms fall away
 significantly: secondary and college by \textasciitilde\(0.15\sigma\), and on the descending side
-the \textbf{professional} degree --- law and medicine, the most elite credential
-in the table --- at \(-0.081\) on 1,046 members. Read as a straight line, this
+the \textbf{professional} degree --- law and medicine, the most elite credential in \cref{tab:education} --- at \(-0.081\) on 1,046 members. Read as a straight line, this
 would pass for an ascending "academic ladder" --- but only by excluding the
 professional degree as off the ladder, the one category that breaks
 monotonicity. The block is jointly significant on its own (Wald p = 0.0002
@@ -1193,7 +1192,7 @@ the headwind the registration\textquotesingle s prediction 5 named in advance.
 \textbf{Era-resolved, the instrument\textquotesingle s carrying level is stable.} The joint
 model\textquotesingle s surviving occupational block is the folk ladder, and its standing
 term is the free level; asked era by era --- each level\textquotesingle s slope entered
-alone, the figure above\textquotesingle s own estimand, on the same member-bin values and
+alone, \cref{fig:altitude}\textquotesingle s own estimand, on the same member-bin values and
 six equal bins as \cref{sec:class}\textquotesingle s class-era panels --- free professionals sit below their
 chamber-and-period peers in every half-decade (\(-0.07\) to \(-0.11\) per sd,
 individually significant in all six bins), with no trend into the machine
@@ -1443,7 +1442,7 @@ the term carries \textasciitilde0.25\% of variance alone; class II\textquotesing
 42\% of members carries more (\textasciitilde0.36\%), and cohort\textquotesingle s dominance comes from a
 modest slope applied to everyone across a two-decade spread. Coefficients
 answer "how much for whom"; variance shares answer "how much of the panel"
---- the table\textquotesingle s n and years columns show the first, the explanatory-power
+--- \cref{tab:four-predictors}\textquotesingle s n and years columns show the first, the explanatory-power
 accounting below the second, and neither substitutes for the other.
 
 \textbf{They do not deserve equal billing, and the full model says which is
@@ -2233,8 +2232,7 @@ change a reader\textquotesingle s confidence:
   r = +0.758) --- a shared style signal across two different models, which is a
   caveat on reading either judge\textquotesingle s \texttt{ai\_guess} as ground truth, not on the DQI
   scores. Its bearing on the quality claim is tested in Appendix~\ref{app:robustness} and does
-  not overturn the external-label result; the genre/era fixed effects in the
-  table above control confounds between cells, which is a separate matter from
+  not overturn the external-label result; the genre/era fixed effects in \cref{tab:dqi} control confounds between cells, which is a separate matter from
   leakage within a text.
 \item
   \textbf{The original run\textquotesingle s two group-pairs also disagreed in sign on
@@ -4792,8 +4790,7 @@ teachers.
 
 \textbf{The standard three-class collapse destroys this result}, which is worth
 stating because that collapse is the conventional reporting unit. NS-SEC pools
-III with IVc and V/VI with VIIab; the opposite signs cancel and the table reads
-professional 35.5 / intermediate 35.3 / working 34.9 --- a null. The
+III with IVc and V/VI with VIIab; the opposite signs cancel and \cref{tab:class-provincial} reads professional 35.5 / intermediate 35.3 / working 34.9 --- a null. The
 seven-class schema is not a refinement here, it is the difference between a
 finding and nothing.\footnote{\texttt{python\ covariate\_\allowbreak{}study.\allowbreak{}py}, \texttt{python\ class\_\allowbreak{}origin.\allowbreak{}py\ -\allowbreak{}\/\allowbreak{}-\allowbreak{}dist}. Coding
   workflow and rubric ambiguities in \texttt{provinces/\allowbreak{}OCCUPATION\_\allowbreak{}CODING.\allowbreak{}md}; the
