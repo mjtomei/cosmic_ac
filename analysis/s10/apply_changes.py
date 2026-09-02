@@ -47,6 +47,9 @@ def main():
     # vote sends a change to the review queue instead of the draft.
     def unanimous(c):
         v = c.get("verdict", {})
+        # Unanimous among whoever voted on THIS change. Quota can run out mid-run,
+        # so n varies between changes; that is fine, and thin decisions are
+        # flagged in the report so they can be revisited after the iteration.
         return v.get("accepted") and v.get("n", 0) > 0 and v.get("keeps") == v["n"]
     accepted = [c for c in res.get("changes", []) if unanimous(c)]
     split = [c for c in res.get("changes", []) if c.get("verdict", {}).get("accepted") and not unanimous(c)]
@@ -87,6 +90,27 @@ def main():
         text = text[:s] + prop + text[e:]
         applied.append(c["id"])
 
+    # STRUCTURAL CONTENTION (same rule as prose: highest composite wins).
+    # Proposals acting on the same section with the same action are rival takes on
+    # one reorganization; keep the best-scoring and drop the rest. Different
+    # actions on one section can be complementary (e.g. a move that another
+    # proposal's split builds on), so those are kept and the applier is
+    # responsible for skipping any residual conflict it meets.
+    def sec(c):
+        m = re.search(r"(\d+(?:\.\d+[a-z]?)?)", str(c.get("locus") or ""))
+        return m.group(1) if m else str(c.get("locus"))[:12]
+    sgroups = {}
+    for c in other:
+        sgroups.setdefault((sec(c), c.get("action")), []).append(c)
+    other_kept, structural_dropped = [], []
+    for k, v in sgroups.items():
+        v.sort(key=lambda c: (-(c.get("verdict", {}).get("composite") or 0), c["id"]))
+        other_kept.append(v[0]); structural_dropped += v[1:]
+    if structural_dropped:
+        print(f"  structural contention: dropped {len(structural_dropped)} rival take(s) "
+              f"-> {[c['id'] for c in structural_dropped]}")
+    other = other_kept
+
     queue = [{"id": c["id"], "locus": c.get("locus"), "type": c.get("type"), "action": c.get("action"),
               "proposed": c.get("proposed"), "rationale": c.get("rationale"),
               "keeps": c.get("verdict", {}).get("keeps"), "n": c.get("verdict", {}).get("n"),
@@ -96,6 +120,12 @@ def main():
 
     print(f"unanimous {len(accepted)}: {len(prose)} prose-appliable, {len(other)} structural/queued")
     print(f"  majority-but-not-unanimous (queued, not applied): {len(split)}")
+    thin = [c for c in accepted if c.get("verdict", {}).get("thin")]
+    if thin:
+        detail = ", ".join("{} {}/{}".format(c["id"], c["verdict"]["keeps"], c["verdict"]["n"])
+                           for c in thin[:8])
+        print("  {} change(s) decided by a reduced panel (ballots lost mid-run) — "
+              "revisit if desired: {}".format(len(thin), detail))
     print(f"  applied: {len(applied)}  skipped: {len(skipped)}")
     for i, why in skipped:
         print(f"    - {i}: {why}")

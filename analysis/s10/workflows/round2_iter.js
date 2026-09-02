@@ -52,16 +52,48 @@ const PANELS = {
     { id: 'deepseek',     type: 'panel-deepseek',      family: 'deepseek' },
   ],
 }
+// USAGE LIMITS. Quota can run out mid-run, so ballot counts legitimately differ
+// from one candidate to the next. That is fine: a change is judged unanimous
+// among the seats that actually voted on IT. No quorum, no minimum — every
+// verdict carries its ballot count, and any thin decision can be revisited after
+// the iteration, since each round is committed separately.
+const isLimit = (e) => /rate.?limit|quota|usage limit|429|overload|capacity|exhaust/i.test(String(e || ''))
+
 const PANEL = PANELS[PHASE]
 const PROPOSERS = PANEL
 
 // ======================= STAGE PROMPTS (review these) =======================
 
-const PROPOSE_PROMPT = (isGen) => `ROLE: PROPOSE.
+// Role variants (Matthew, 2026-09-02): the three the first run had — a neutral
+// reviewer plus two brief-primed specialists — now available to EVERY seat, but
+// only on full-text runs, where a global view of prose flow and of the tables and
+// figures is what the briefs are for. Section runs use the neutral variant alone.
+// The primed variants are propose-only; voting stays with the neutral seats, so
+// ballot cost does not triple.
+const VARIANTS = SCOPE === 'all'
+  ? [
+      { id: 'neutral', brief: null },
+      { id: 'prose',   brief: 'analysis/s10/writing_refs/gopen_swan_principles.md' },
+      { id: 'dataviz', brief: 'analysis/s10/dataviz_refs/data_presentation_principles.md' },
+    ]
+  : [{ id: 'neutral', brief: null }]
+
+const BRIEF_NOTE = {
+  prose: `Before proposing, read \`analysis/s10/writing_refs/gopen_swan_principles.md\`
+— the reader-expectation brief (subject-verb proximity, topic and stress
+positions, old-before-new, one-unit-one-point). Propose prose and flow changes
+that those principles actually justify, and name the principle in each rationale.`,
+  dataviz: `Before proposing, read \`analysis/s10/dataviz_refs/data_presentation_principles.md\`
+— the data-presentation brief (proportional ink, encoding by decodability, direct
+labels over legends, small multiples, honest axes, no mixed estimands in one
+column). Propose changes to how quantities are presented: tables, figures, and
+the in-text presentation of numbers. If a change would require recomputing a
+value, say so and skip it — never invent a number.`,
+}
+
+const PROPOSE_PROMPT = (variant) => `ROLE: PROPOSE.
 Read the manuscript at \`${DRAFT}\`${SCOPE === 'all' ? '' : `, section ${SCOPE} only`}.
-${isGen
-  ? 'Follow your reference brief exactly (read it first, as your definition instructs).'
-  : 'Propose writing and structure improvements on the merits.'}
+${BRIEF_NOTE[variant] || 'Propose writing and structure improvements on the merits.'}
 
 Return a changelist. Each entry is ONE concrete, self-contained change:
 - type: "structural" (reorder / merge / split / move a section or subsection)
@@ -75,6 +107,15 @@ Return a changelist. Each entry is ONE concrete, self-contained change:
 - proposed: for prose, the full replacement text; for structural, the exact
   move ("move to before §Y", "merge into §Y", "split after '<quote>'").
 - rationale: one or two sentences; name the principle if you apply one.
+
+What you write is MANUSCRIPT TEXT ONLY. Never insert notes to the author,
+build instructions, TODOs, or bracketed asides about how a change should be
+produced — if a change needs work outside the text, say so in `rationale`,
+which is not part of the manuscript. Never reference a figure, image, table,
+or file that does not already exist: proposing `![](new_figure.png)` puts a
+broken reference into the paper, because nothing downstream creates the file.
+To argue for a figure that does not yet exist, describe it in `rationale`
+instead of inserting a reference to it.
 
 Faithfulness constraint — about DATA, not interpretation. You must not alter,
 add, or drop any DATUM: a number, statistic, sample size, confidence
@@ -170,17 +211,46 @@ const FAITH_SCHEMA = { type: 'object',
   properties: { locatable: { type: 'boolean' }, current_matches: { type: 'boolean' },
     data_faithful: { enum: ['pass', 'fail'] }, note: { type: 'string' } } }
 
+// APPLICATION (runs AFTER this workflow returns; see analysis/s10/apply_changes.py):
+//   1. Only UNANIMOUS changes that cleared the data-faithfulness gate are applied.
+//   2. HIGHEST SCORING FIRST. When several accepted proposals contend for the same
+//      target, only one can land, so the best-scoring variant wins — never list
+//      order. Prose: grouped by the exact passage being replaced. Structural:
+//      grouped by (section, action), since rival takes on one reorganization share
+//      both, while different actions on a section may be complementary.
+//   3. Everything else — non-unanimous, and rival takes that lost — goes to a
+//      review queue rather than the draft.
+//   3b. PROSE IS APPLIED BEFORE STRUCTURAL, and the order matters: mechanical
+//      prose application needs `current` verbatim, while structural changes
+//      renumber sections and so rewrite the §N references inside prose
+//      passages. Structural-first would silently break every prose anchor
+//      containing a section reference. Brittle exact-match step first, tolerant
+//      judgment step second.
+//   4. Structural changes are executed by an agent, not by string replacement —
+//      see analysis/s10/apply_structural_brief.md for its brief, which includes
+//      the mandatory hygiene pass (LaTeX label map, moved-material references,
+//      stale titles, orphaned pronouns).
+//   5. analysis/s10/check_manuscript.py then runs, and the fix/re-check loop
+//      repeats UNTIL IT REPORTS CLEAN — one pass is not enough, since a fix can
+//      expose the next problem.
+//   6. Each iteration is committed, so every round is separately revertible.
+
 // ============================== ORCHESTRATION ==============================
 
 phase('Propose')
-const raw = await parallel(PROPOSERS.map(m => () =>
-  agent(PROPOSE_PROMPT(false), { agentType: m.type, label: `propose:${m.id}`, schema: PROPOSAL_SCHEMA, ...(m.effort ? { effort: m.effort } : {}) })
-    .then(r => ({ member: m.id, family: m.family, changes: (r && r.changes) || [] }))
-    .catch(() => ({ member: m.id, family: m.family, changes: [] }))))
+const JOBS = []
+for (const m of PROPOSERS) for (const v of VARIANTS) JOBS.push({ m, v })
+const raw = await parallel(JOBS.map(({ m, v }) => () =>
+  agent(PROPOSE_PROMPT(v.id), { agentType: m.type, label: `propose:${m.id}:${v.id}`,
+                                schema: PROPOSAL_SCHEMA, ...(m.effort ? { effort: m.effort } : {}) })
+    .then(r => ({ member: `${m.id}/${v.id}`, family: m.family, changes: (r && r.changes) || [] }))
+    .catch(e => ({ member: `${m.id}/${v.id}`, family: m.family, changes: [],
+                   failed: { seat: m.id, stage: 'propose', limit: isLimit(e), err: String(e).slice(0, 160) } }))))
+const failures = raw.filter(Boolean).filter(r => r.failed).map(r => r.failed)
 const proposals = []
 for (const p of raw.filter(Boolean))
   for (const c of p.changes) proposals.push({ ...c, member: p.member, family: p.family })
-log(`iter ${ITER} phase ${PHASE} scope=${SCOPE}: ${proposals.length} proposals from ${PANEL.length} seats`)
+log(`iter ${ITER} phase ${PHASE} scope=${SCOPE}: ${proposals.length} proposals from ${PANEL.length} seats x ${VARIANTS.length} variant(s)`)
 
 const byKey = {}
 for (const c of proposals) {
@@ -215,11 +285,30 @@ const scored = await parallel(survivors.map(cand => async () => {
   const prompt = cand.type === 'structural' ? VOTE_STRUCTURAL(cand) : VOTE_PROSE(cand)
   const ballots = await parallel(PANEL.map(v => () =>
     agent(prompt, { agentType: v.type, label: `vote:${cand.id}:${v.id}`, schema: VOTE_SCHEMA, ...(v.effort ? { effort: v.effort } : {}) })
-      .then(s => ({ voter: v.id, is_author: cand.author_seats.includes(v.id), ...s })).catch(() => null)))
-  return { id: cand.id, votes: ballots.filter(Boolean) }
+      .then(s => ({ voter: v.id, is_author: cand.author_seats.some(a => String(a).split('/')[0] === v.id), ...s }))
+      .catch(e => ({ voter: v.id, failed: true, limit: isLimit(e), err: String(e).slice(0, 160) }))))
+  return { id: cand.id,
+           votes: ballots.filter(b => b && !b.failed),
+           lost: ballots.filter(b => b && b.failed) }
 }))
-const votesById = {}
-for (const s of scored) votesById[s.id] = s.votes
+const votesById = {}, lostById = {}
+for (const s of scored) { votesById[s.id] = s.votes; lostById[s.id] = s.lost || [] }
+
+// Which seats were actually present? A seat that never returned a single ballot
+// is treated as absent for the whole run; unanimity is then judged among the rest.
+const cast = {}, lostBy = {}, limitBy = {}
+for (const s of scored) {
+  for (const b of s.votes) cast[b.voter] = (cast[b.voter] || 0) + 1
+  for (const b of (s.lost || [])) {
+    lostBy[b.voter] = (lostBy[b.voter] || 0) + 1
+    if (b.limit) limitBy[b.voter] = (limitBy[b.voter] || 0) + 1
+  }
+}
+const present = PANEL.filter(m => (cast[m.id] || 0) > 0).map(m => m.id)
+const absent = PANEL.filter(m => (cast[m.id] || 0) === 0).map(m => m.id)
+const lostTotal = Object.values(lostBy).reduce((a, b) => a + b, 0)
+if (absent.length) log(`seats absent this run: ${absent.join(', ')} — judged among ${present.join(', ')}`)
+if (lostTotal) log(`${lostTotal} ballot(s) lost mid-run (${Object.values(limitBy).reduce((a, b) => a + b, 0)} to quota); affected changes carry a smaller n`)
 
 phase('Synthesize')
 const decide = (v) => {
@@ -229,8 +318,11 @@ const decide = (v) => {
   const composite = v.length
     ? Math.round((v.reduce((s, x) => s + x.clarity + x.voice + x.concision + x.structural_soundness, 0) / v.length) * 100) / 100
     : 0
-  return { accepted: !voter_data_fail && v.length > 0 && keeps > v.length / 2,
-           keeps, n: v.length, voter_data_fail, dependencies: deps, composite }
+  // Judged among whoever voted on this candidate. `thin` just flags that fewer
+  // seats weighed in than were present in the run, so it can be revisited.
+  return { accepted: v.length > 0 && !voter_data_fail && keeps > v.length / 2,
+           keeps, n: v.length, voter_data_fail, dependencies: deps, composite,
+           ...(v.length < present.length ? { thin: true, seats_present: present.length } : {}) }
 }
 const results = withFaith.map(c => {
   const votes = votesById[c.id] || []
@@ -248,9 +340,13 @@ for (const r of results) for (const b of r.votes) {
 }
 return {
   scope: SCOPE, phase: PHASE, iteration: ITER,
+  variants: VARIANTS.map(v => v.id),
   n_proposals: proposals.length, n_candidates: candidates.length,
   n_faith_pass: survivors.length, n_faith_dropped: candidates.length - survivors.length,
   accepted: results.filter(r => r.verdict.accepted).length,
   self_preference: sp,
+  panel_health: { seats: PANEL.map(m => m.id), present, absent,
+                  ballots_cast: cast, ballots_lost: lostBy, lost_to_limits: limitBy,
+                  propose_failures: failures },
   changes: results,
 }

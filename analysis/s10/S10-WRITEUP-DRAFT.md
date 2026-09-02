@@ -10,12 +10,12 @@ We measure machine-drafted speech across 22 legislative chambers in five countri
 2026-08-13.** All arms complete, including the detector-bypass study and both
 prior-art comparators. Everything is reproducible from `analysis/s10/`.
 
-**§4.6b's literature citations were web-verified 2026-08-24.** The result is
+**§4.6c's literature citations were web-verified 2026-08-24.** The result is
 placed against Labov (crossover/hypercorrection, *Sociolinguistic Patterns*,
 U. Pennsylvania Press, 1972), Simmel (1904), Veblen (1899), Jhering (1883)
 with Durkheim's summary supplying the quote, and Lieberson (*A Matter of
 Taste*, Yale, 2000); a fetched entry wrong on Labov's year and publisher has
-been corrected. That subsection also reports standard errors not clustered on
+been corrected. §4.6b also reports standard errors not clustered on
 member, which the study has been bitten by three times; it is flagged in
 place.
 
@@ -485,8 +485,6 @@ count.[^r42f]
 
 *The twenty chamber rates, drawn: each point is the chamber's word-weighted, fraction-weighted machine-drafted share of 2025–26 words (values exactly as in the table); whiskers are the cluster-bootstrap 95% CIs; chambers sorted by rate, direct-labelled, with the two US chambers emphasised and the pooled 9.03% marked as a reference line. Axis starts at zero.*
 
-[build note, not manuscript text: a small plotting script renders the twenty committed rate/CI triples from `banded_prevalence.py` output — plotting existing values only, no new computation.]
-
 Intervals are cluster bootstraps over segments, not Wilson intervals: the
 estimator is a ratio of two random sums whose numerator and denominator move
 together, so a chamber whose one flagged segment happens to run 900 words
@@ -508,7 +506,7 @@ shrunken range is the honest spread claim, since the extremes of twenty
 noisy cells overstate their own separation (the raw-extremes version is
 retired to Appendix B). What drives a chamber's position is not
 established here — even two chambers of one legislature can sit far apart
-(Appendix C B4), and the study does not attribute the between-chamber differences to
+(Appendix C item 7), and the study does not attribute the between-chamber differences to
 any measured cause.
 
 **Federal Canada's row comes from its own uniform draw**, not from the
@@ -894,8 +892,6 @@ measured with the same ruler.[^r45a]
 
 *The convergence, drawn as a slopegraph: one line per chamber from its 2006 to its 2026 gap-vocabulary rate (occurrences per 100k words; values exactly as in the table), direct-labelled at both ends, the UK-group climbers and the two flat US chambers emphasised. The fan closes upward: the lowest 2006 starters climb steepest toward the level the United States already held.*
 
-[build note, not manuscript text: the slopegraph plots the 19 committed 2006/2026 pairs from `constant_window_trend.py` output — existing values only, no new computation.]
-
 Nineteen chambers hold both endpoints of the longest window most of the
 corpus shares — 2006 to 2026 — and on that single ruler the pattern is
 convergence: **the lower a chamber started, the faster it climbed** (Spearman
@@ -1062,8 +1058,6 @@ That single slope is where the question starts, not where it ends. What we want 
 ![](tenure_profile.png)
 
 *Register by length of service, two readings, each curve labelled in the panel. The within-member curve (blue) — each legislator's rate minus their own career mean — rises with tenure, because within a career years served and calendar year are one clock (its slope reproduces the +0.51 within-member drift). The period-adjusted curve (orange) — rate minus its chamber × year mean — falls with tenure, but that fall is the entry-cohort gradient (longer tenure at a fixed year = earlier cohort), not a within-career decline. Left-censored members dropped; error bars member-cluster bootstrap 95% intervals.*
-
-[build note, not manuscript text: regenerate tenure_profile.png via `tenure_profile.py` with each curve direct-labelled at its right end — 'within-member', 'period-adjusted' — so identity is not carried by color alone; no data change.]
 
 **Splitting that career drift by birth cohort, every cohort rides the tide up — but not in every chamber.** Running the same within-member estimator separately within each birth cohort (so the cohort numbers decompose the pooled +0.57 rather than averaging noisy per-member slopes) gives a positive-or-flat lifetime drift for every cohort, a shallow hump peaking at the 1950s-born (+0.88) and tapering at both thin tails. So the gain a member makes over their career barely depends on when they were born — nearly everyone absorbs the drift they serve through. Interesting for the caveat it forces: the drift is **positive within members in only 10 of the 22 chambers**, carried by the two largest (UK +1.9, US House +0.5) while most of the smaller chambers — the Canadian provinces especially — run negative, so "sitting members convert" is a pooled, large-chamber statement rather than a universal one. And it is calendar drift ridden inside a career, not proven personal conversion: a member serving 2006–2026 gains register partly because the register rose under everyone. †[^r46life]
 
@@ -1352,7 +1346,7 @@ overwhelming axis (t +24.5, carrying 0.144 of the model's 0.165).[^rnc]
     `python prereg_indoors_joint.py` (n = 3,594, the covariate panel; the
     grand model mirrors `prereg_covariate_strength.py`).
 
-### 4.6b The class coding: the same shape at coarser grain — and the other member-level gradients
+### 4.6b The class coding: the same shape at coarser grain — education, and the joint model
 
 The categorical schema that first revealed the gradient is kept here in
 abbreviated form: it shows the same shape as §4.6a's measure at coarser
@@ -1966,7 +1960,7 @@ signature**: all six Claude models are positive against the flagged pool
 stable across three model generations. Within-family ordering is not
 interpretable at these sample sizes, but the family split is clean — the
 flagged text shares distinctive vocabulary with one lineage and not the
-other. This is register lineage, not attribution (Appendix C A.1b). Register
+other. This is register lineage, not attribution (Appendix C item 3). Register
 *rate* is also a lineage property: Opus sits at base-model rate across three
 generations (2,696–2,837 per 100k), Sonnet runs hot in both versions
 (4,639–5,116), and Fable 5, at 3,369, is the first model measured that lands
@@ -2489,10 +2483,35 @@ arms are raw completions; that protocol difference is recorded.
     `workflows/stage6_grade.js`; design registered before grading in
     `plans/S10-stage6-unreviewed-continuations.md`. Run 2026-08-19.
 
+[^r49m]: The one starred cell that does not survive multiple-testing
+    correction: Benjamini-Hochberg across the fourteen cells of this table
+    (Benjamini & Hochberg, *JRSS-B* 57, 1995, 289–300) leaves every other
+    starred cell at q < 0.003 and this one at **q = 0.106**. It is also the
+    cell that moves under the judge-suspicion diagnostic (Appendix E.1) and
+    under speaker clustering (t 2.0 → 1.8). The star is retained with this
+    disclosure; the conjunct's weight rests on stage 2's version — t +6.1,
+    q < 0.0001, external label, length-free — and on stage 6's independent
+    check that the blind judge does *not* award this dimension to text it
+    believes is machine, which argues the wild lift is real rather than
+    judge leakage.
+
+[^r49q]: Stage 1: `cd quality_expansion && python analyze.py`. Stage 2:
+    `python analyze_stage2.py` — the column's own script,
+    reproducing it to three decimals. Coding disclosed at the table: stage
+    2's regressor pools **Mixed verdicts with AI**;
+    `--drop-mixed` is the sensitivity, and the three starred cells barely
+    move under it (justification +0.263, common_good +0.283, respect_groups
+    +0.231). The applicability table above reproduces with
+    `python applicability_by_band.py`. Per-grade id-keyed rows for both
+    stages are committed (`stage{1,2}_grades_by_id.json`, recovered
+    2026-08-20 with exact multiset match to these tables), and
+    `q2_q8_controls.py` re-estimates every cell with speaker-clustered
+    errors — no claim-bearing t moves by more than 0.3.
+
 ### 4.10 Directed effort evades the detector, and the evasion leaves quality unchanged
 
-The detector that finds it can be defeated by directed effort, which is why
-every prevalence figure is a floor.
+The detector that finds machine-involved speech can be defeated by directed
+effort, which is why every prevalence figure is a floor.
 
 **Bypass study.** Prevalence counts machine text a detector can see. If a
 member can defeat the detector cheaply, 9.0% is a floor and detection-based
@@ -2850,31 +2869,6 @@ and a multi-round search scoring three replicates per variant. A single
 Pangram's score, and human text pushed through the same ladder went from 11.7
 to 60.2. The gap between "a detector can be beaten" and "a detector is easy to
 beat" is the whole of that apparatus.
-
-[^r49m]: The one starred cell that does not survive multiple-testing
-    correction: Benjamini-Hochberg across the fourteen cells of this table
-    (Benjamini & Hochberg, *JRSS-B* 57, 1995, 289–300) leaves every other
-    starred cell at q < 0.003 and this one at **q = 0.106**. It is also the
-    cell that moves under the judge-suspicion diagnostic (Appendix E.1) and
-    under speaker clustering (t 2.0 → 1.8). The star is retained with this
-    disclosure; the conjunct's weight rests on stage 2's version — t +6.1,
-    q < 0.0001, external label, length-free — and on stage 6's independent
-    check that the blind judge does *not* award this dimension to text it
-    believes is machine, which argues the wild lift is real rather than
-    judge leakage.
-
-[^r49q]: Stage 1: `cd quality_expansion && python analyze.py`. Stage 2:
-    `python analyze_stage2.py` — the column's own script,
-    reproducing it to three decimals. Coding disclosed at the table: stage
-    2's regressor pools **Mixed verdicts with AI**;
-    `--drop-mixed` is the sensitivity, and the three starred cells barely
-    move under it (justification +0.263, common_good +0.283, respect_groups
-    +0.231). The applicability table above reproduces with
-    `python applicability_by_band.py`. Per-grade id-keyed rows for both
-    stages are committed (`stage{1,2}_grades_by_id.json`, recovered
-    2026-08-20 with exact multiset match to these tables), and
-    `q2_q8_controls.py` re-estimates every cell with speaker-clustered
-    errors — no claim-bearing t moves by more than 0.3.
 
 [^r49x2]: 2.86% (17/594) is Pangram 4's
     document-level false-negative rate on the **Epoch AI Style Imitation**
@@ -3688,7 +3682,7 @@ that is recorded.
    *automated counterpart*: it says what an aligned model's stance profile
    looks like on the same task, so a speaker's distance from it is the residual
    §7.6 asks for — and unlike a detector score it decomposes into named
-   features rather than one number. It also gives Appendix C.1's register/substance
+   features rather than one number. It also gives item 1's register/substance
    split a principled rule, since the two lists are constructed by different
    criteria rather than by splitting one list in half.
 
@@ -3721,7 +3715,7 @@ that is recorded.
    false-accusation problem a disclosure regime would face. Framed and run as
    MEASUREMENT of an adversary's reachable frontier, not as a deployable
    deception tool: the deliverable is the reachable rating gap and what text
-   features drive it (pairing with the Appendix C.1a register-feature instrument, so
+   features drive it (pairing with the register-feature instrument in item 2, so
    the output is named features rather than a black-box rewrite), reported so
    that reviewers and disclosure policies can be built against the ceiling
    rather than the current floor. The obvious dual-use tension is real and is
@@ -4340,7 +4334,7 @@ caught.
 | artifact | what it does |
 |---|---|
 | `pangram_p4_verdicts.csv` | 4,258 verdicts, all Pangram 4, with metadata |
-| `prevalence_report.py` | §4.1–4.3, Wilson CIs, Rogan–Gladen |
+| `prevalence_report.py` | §4.1–§4.3, Wilson CIs, Rogan–Gladen |
 | `nb_p3_vs_p4.py` | §4.1 model-tier comparison |
 | `api_route_check.py` | route/model equivalence test |
 | `transcript_regime_check.py` | §2.1, writes `transcript_regime.csv` |
@@ -4356,7 +4350,7 @@ caught.
 | `provinces/occupation_coding.json` + `OCCUPATION_CODING.md` | the coding itself, with its 96.4% agreement rate |
 | `wiki_depth.py` | article length via Wikidata QID → MediaWiki, the notability control |
 | `build_allsource_merge.py` | rebuilds `member_allsource.json` from the workflow journal |
-| `CLASS-REGISTER-LITERATURE.md` | §4.6b citations, **unverified**, with the suspect entries flagged |
+| `CLASS-REGISTER-LITERATURE.md` | §4.6c citations, **unverified**, with the suspect entries flagged |
 | `band_coverage_check.py` | standing check that every length band is sampled at its chamber's own rate |
 | `olmo_ladder.py` | §4.8 ladder stages |
 | `rlhf_pref_compile.py` | §4.8 **+0.387** well-measured, 3 families at 1,600 prompts |
@@ -4365,7 +4359,7 @@ caught.
 | `word_context_delta.py` | §4.7 in-context permeation |
 | `bypass_report.py` | §4.10 bypass: final two runs (primary), superseded two shown separately, band check |
 | `go_reflip_fractions.json` + `nb_`/`bp_` | strict re-scores behind the 11.1% |
-| `quality_expansion/` | §4.9, self-contained (`RUNME.md`) |
+| `quality_expansion/` | §4.9 and §4.10, self-contained (`RUNME.md`) |
 | `BYPASS_METHODOLOGY.md` | §4.10 selection filters, per sample |
 | `PRIOR_ART.md`, `ai_policy_scan.md` | §5, §7.3 |
 
@@ -4383,7 +4377,7 @@ not interchangeable:
 |---|---|---|
 | Corpus-wide screen (§4.4), effort A/B | Claude Opus | low, and max in the A/B |
 | Bypass search: scoring / rewriting / hypotheses (§4.10) | Claude Opus | low / medium / high |
-| DQI grading, stages 1-5 (§4.9) | **Claude Fable 5** | default |
+| DQI grading, stages 1-5 (§4.9, §4.10) | **Claude Fable 5** | default |
 | DQI grading, stage 6 (§4.9) | **Claude Opus** | medium |
 | Synthetic sensitivity pilot (40 speeches, set aside — §4.1, Appendix B) | Mistral-7B | default |
 | Analysis, verification, adversarial review | Claude Opus | varies |

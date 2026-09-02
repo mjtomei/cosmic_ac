@@ -58,6 +58,11 @@ Return a changelist. Each entry is ONE concrete, self-contained change:
   move ("move to before §Y", "merge into §Y", "split after '<quote>'").
 - rationale: one or two sentences; name the principle if you apply one.
 
+What you write is MANUSCRIPT TEXT ONLY: no notes to the author, build
+instructions, or bracketed asides about how to produce a change — put those in
+`rationale`. Never reference a figure or file that does not already exist;
+nothing downstream creates it, so the reference lands in the paper broken.
+
 Faithfulness constraint — about DATA, not interpretation. You must not alter,
 add, or drop any DATUM: a number, statistic, sample size, confidence
 interval, the direction of a measured effect, or a statement of what was or

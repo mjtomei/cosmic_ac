@@ -13,7 +13,7 @@ number is wrong, so this:
      external "Table 23" of the Pangram report are left as literal text);
   3. wraps the three figures in float environments with captions and labels,
      and points prose at them with \cref;
-  4. inserts \appendix before the first appendix so A-D number as letters.
+  4. inserts \appendix before the first appendix so A-E number as letters.
 
 Idempotence is not required: it always runs on fresh pandoc output.
 """
@@ -27,23 +27,28 @@ SRC, DST = "_body_pandoc.tex", "body.tex"
 PREFIX_LABELS = {
  "1":"sec:intro","2":"sec:data","21":"sec:hazards","3":"sec:method",
  "31":"sec:calibration-method","32":"sec:detector","33":"sec:freq-descriptive",
- "34":"sec:retired","4":"sec:results","41":"sec:calibration","42":"sec:prevalence",
+ "34":"sec:occ-classification","35":"sec:retired",
+ "4":"sec:results","41":"sec:calibration","42":"sec:prevalence",
  "43":"sec:genre","44":"sec:screen-pangram","45":"sec:register-shift",
- "45a":"sec:climb-geography","45b":"sec:register-robust","46":"sec:generational",
- "46a":"sec:class","46b":"sec:occupation","47":"sec:posttraining","47a":"sec:coverage",
- "48":"sec:permeation","49":"sec:quality","5":"sec:limits","6":"sec:policy",
- "7":"sec:related","8":"sec:discussion","81":"sec:disc-limit","82":"sec:disc-norms",
- "83":"sec:disc-substitution","84":"sec:disc-proxy","85":"sec:disc-human","86":"sec:future",
- "c1":"sec:cross-route","c2":"sec:reanalysis","c3":"sec:bypass-sample","c4":"sec:artifacts",
- "d1":"sec:judge-leakage","d2":"sec:prominence-full","d3":"sec:prominence-buckets",
- "d4":"sec:cohort-ministerial",
+ "45a":"sec:climb-geography","45b":"sec:american-alignment",
+ "45c":"sec:register-robust","46":"sec:generational",
+ "46a":"sec:occupation","46b":"sec:class","46c":"sec:chase-flight",
+ "47":"sec:permeation","48":"sec:posttraining","48a":"sec:coverage",
+ "49":"sec:quality","410":"sec:evasion",
+ "5":"sec:related","6":"sec:limits","7":"sec:discussion",
+ "71":"sec:disc-limit","72":"sec:disc-norms","73":"sec:policy",
+ "74":"sec:disc-substitution","75":"sec:market-measure","76":"sec:disc-human",
+ "d1":"sec:cross-route","d2":"sec:reanalysis","d3":"sec:bypass-sample",
+ "d4":"sec:artifacts",
+ "e1":"sec:judge-leakage","e2":"sec:prominence-full","e3":"sec:prominence-buckets",
+ "e4":"sec:cohort-ministerial",
 }
 APPENDIX_LABELS = {"appendix-a":"app:null","appendix-b":"app:superseded",
-                   "appendix-c":"app:repro","appendix-d":"app:robustness"}
+                   "appendix-c":"app:future","appendix-d":"app:repro",
+                   "appendix-e":"app:robustness"}
 LABELS = {   # unnumbered subsubsections: exact slug
  "all-four-predictors-at-once":"sub:four-predictors",
  "the-provincial-class-estimates-the-discovery-record":"sub:class-provincial",
- "35-instruments-retired-and-why":"sec:retired-h",
  "the-classifications-element-signatures":"sub:element-signatures",
  "education-the-provincial-ladder-did-not-replicate-see-above":"sub:education-provincial",
  "the-shape-has-a-name--held-now-as-hypothesis-not-finding":"sub:shape-name",
@@ -54,7 +59,7 @@ LABELS = {   # unnumbered subsubsections: exact slug
 }
 
 def label_for(slug):
-    m = re.match(r'^([0-9]+[a-z]?|[cd][0-9])-', slug)
+    m = re.match(r'^([0-9]+[a-z]?|[a-z][0-9])-', slug)
     if m and m.group(1) in PREFIX_LABELS:
         return PREFIX_LABELS[m.group(1)]
     for pre, lab in APPENDIX_LABELS.items():
@@ -66,24 +71,31 @@ def label_for(slug):
 NUMMAP = {
  "1":"sec:intro","2":"sec:data","2.1":"sec:hazards","3":"sec:method",
  "3.1":"sec:calibration-method","3.2":"sec:detector","3.3":"sec:freq-descriptive",
- "3.4":"sec:occ-classification","3.5":"sec:retired","4":"sec:results","4.1":"sec:calibration","4.2":"sec:prevalence",
+ "3.4":"sec:occ-classification","3.5":"sec:retired",
+ "4":"sec:results","4.1":"sec:calibration","4.2":"sec:prevalence",
  "4.3":"sec:genre","4.4":"sec:screen-pangram","4.5":"sec:register-shift",
- "4.5a":"sec:climb-geography","4.6":"sec:generational","4.6a":"sec:occupation",
- "4.6b":"sec:class","4.7":"sec:posttraining","4.7a":"sec:coverage",
- "4.8":"sec:permeation","4.9":"sec:quality","5":"sec:limits","6":"sec:policy",
- "7":"sec:related","8":"sec:discussion","8.1":"sec:disc-limit","8.2":"sec:disc-norms",
- "8.3":"sec:disc-substitution","8.4":"sec:disc-proxy","8.4":"sec:market-measure","8.5":"sec:disc-human","8.6":"sec:future",
+ "4.5a":"sec:climb-geography","4.5b":"sec:american-alignment",
+ "4.5c":"sec:register-robust","4.6":"sec:generational","4.6a":"sec:occupation",
+ "4.6b":"sec:class","4.6c":"sec:chase-flight",
+ "4.7":"sec:permeation","4.8":"sec:posttraining","4.8a":"sec:coverage",
+ "4.9":"sec:quality","4.10":"sec:evasion",
+ "5":"sec:related","6":"sec:limits","7":"sec:discussion",
+ "7.1":"sec:disc-limit","7.2":"sec:disc-norms","7.3":"sec:policy",
+ "7.4":"sec:disc-substitution","7.5":"sec:market-measure","7.6":"sec:disc-human",
 }
 APPMAP = {
- "A":"app:null","B":"app:superseded","C":"app:repro","D":"app:robustness",
- "C.1":"sec:cross-route","C.2":"sec:reanalysis","C.3":"sec:bypass-sample","C.4":"sec:artifacts",
- "D.1":"sec:judge-leakage","D.2":"sec:prominence-full","D.3":"sec:prominence-buckets",
- "D.4":"sec:cohort-ministerial",
+ "A":"app:null","B":"app:superseded","C":"app:future","D":"app:repro",
+ "E":"app:robustness",
+ "D.1":"sec:cross-route","D.2":"sec:reanalysis","D.3":"sec:bypass-sample","D.4":"sec:artifacts",
+ "E.1":"sec:judge-leakage","E.2":"sec:prominence-full","E.3":"sec:prominence-buckets",
+ "E.4":"sec:cohort-ministerial",
 }
 FIGLABEL = {"class_by_era_panels.png":"fig:class-era","ladder_by_era_panels.png":"fig:ladder-era","altitude_u.png":"fig:altitude",
-            "the-ai-lexicon-trend.png":"fig:trend","apc_gradients.png":"fig:apc","tenure_profile.png":"fig:tenure","lifetime_drift_by_cohort.png":"fig:lifedrift","bypass_search.png":"fig:bypass"}
+            "the-ai-lexicon-trend.png":"fig:trend","apc_gradients.png":"fig:apc","tenure_profile.png":"fig:tenure","lifetime_drift_by_cohort.png":"fig:lifedrift","bypass_search.png":"fig:bypass",
+            "chamber_prevalence_dotplot.png":"fig:prevalence-dots",
+            "convergence_slopegraph.png":"fig:convergence"}
 
-NUMSTRIP = re.compile(r'^(?:Appendix\s+[A-D]\s+---\s+|(?:[0-9]+(?:\.[0-9]+[a-z]?)?|[A-D]\.[0-9]+[a-z]?)\.?\s+)')
+NUMSTRIP = re.compile(r'^(?:Appendix\s+[A-E]\s+---\s+|(?:[0-9]+(?:\.[0-9]+[a-z]?)?|[A-E]\.[0-9]+[a-z]?)\.?\s+)')
 
 def transform_headings(t):
     pat = re.compile(r'\\hypertarget\{([^}]*)\}\{%\n\\(section|subsection|subsubsection)\{((?:[^{}]|\{[^{}]*\})*)\}\\label\{\1\}\}')
@@ -151,7 +163,7 @@ def replace_appendix_refs(t):
         key = m.group(1) + (m.group(2) or "")
         lab = APPMAP.get(key)
         return ("Appendix~\\ref{%s}" % lab) if lab else m.group(0)
-    return re.sub(r'Appendix~?\s*([A-D])((?:\.[0-9]+[a-z]?))?', repl, t)
+    return re.sub(r'Appendix~?\s*([A-E])((?:\.[0-9]+[a-z]?))?', repl, t)
 
 def figure_ref_anchors(t):
     subs = [
@@ -168,7 +180,9 @@ def figure_ref_anchors(t):
       (r"The\s+search\s+loop\s+generates\s+and\s+screens\s+variants",
        r"The search loop (\\cref{fig:bypass}) generates and screens variants"),
       (r"reported\s+individually\s+in\s+the\s+table\s+below",
-       r"reported individually in \\cref{tab:prevalence}"),
+       r"reported individually in \\cref{tab:prevalence} and drawn in \\cref{fig:prevalence-dots}"),
+      (r"Nineteen\s+chambers\s+hold\s+both\s+endpoints",
+       r"\\Cref{fig:convergence} draws it: nineteen chambers hold both endpoints"),
     ]
     for a, b in subs:
         t, n = re.subn(a, b, t, count=1)
@@ -184,11 +198,12 @@ def insert_appendix(t):
     return t
 
 PUB_ORDER = ["sec:intro","sec:results","sec:discussion","sec:data","sec:method"]
-MERGE_INTO_DISCUSSION = ["sec:limits","sec:related","sec:policy"]  # demoted to subsections
+MERGE_INTO_DISCUSSION = ["sec:limits","sec:related"]  # demoted to subsections
+                        # (Policy context is already a subsection of Discussion)
 
 def reorder(t):
     """Drafting order (markdown) -> publication order (Science: Methods last),
-    merging Limits/Related/Policy into Discussion as subsections and relocating
+    merging Limits/Related into Discussion as subsections and relocating
     the post-abstract provenance block to Supplementary materials."""
     intro = re.search(r'\\section\{[^{}]*\}\\label\{sec:intro\}', t)
     app = re.search(r'\\appendix', t)
@@ -205,7 +220,8 @@ def reorder(t):
     if expected != set(blocks):
         sys.stderr.write("WARN: reorder section set mismatch: %r\n" % (expected ^ set(blocks))); return t
 
-    # merge Limits/Related/Policy into Discussion, before the Future work subsection
+    # merge Limits/Related into Discussion, before a Future work subsection if one
+    # is still there (it is now Appendix C, so they land at the end of Discussion)
     disc = blocks["sec:discussion"]
     demoted = "".join(re.sub(r'\\section\{', r'\\subsection{', blocks[lab], count=1)
                       for lab in MERGE_INTO_DISCUSSION)
@@ -258,13 +274,13 @@ TABLE_CAPS = [
  ("corpus & \\textbf{0}", "tab:coverage-occ", "Style-word coverage by number of occurrences, at matched volume."),
  ("absent from generated only", "tab:coverage-partition", "Where the 407 style words fall: generated text versus Hansard 2025--26."),
  ("stage 1, per 0", "tab:dqi", "Discourse Quality Index associations with machine authorship: stages 1 and 2."),
+ ("arm & justification vs human", "tab:continuations", "Machine continuations graded blind: justification and applicability by arm."),
  ("Pangram verdict & meaning & counts as", "tab:verdicts", "Pangram's three verdicts and the two events the search counts."),
  ("attacker\\textquotesingle s detector access", "tab:bypass-rates", "Bypass rates by whether the attacker may query the detector."),
  ("searched & zero-yield", "tab:bypass-yield", "Detector-evasion search yield per target."),
  ("measurement & rate & what it is", "tab:bypass-summary", "The bypass rates, disambiguated."),
  ("stage 3 (n=38)", "tab:quality-paired", "Paired within-text quality comparisons (stages 3 and 4)."),
  ("variant (n=35) & target (n=15)", "tab:quality-evasion", "Quality of successful evasions versus their targets, by dimension."),
- ("arm & justification vs human", "tab:continuations", "Machine continuations graded blind: justification and applicability by arm."),
  ("Rice 2026 (Australian federal)", "tab:priorart", "This study against the two closest prior efforts."),
  ("seed verdict & variants", "tab:superseded-bypass", "Superseded per-seed bypass transitions."),
  ("element & id & level & sign", "tab:elements-levels", "The folk ladder's consensus element signature: 85 elements over four levels, with consensus sign and coder count."),
