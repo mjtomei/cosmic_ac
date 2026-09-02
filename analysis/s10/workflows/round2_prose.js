@@ -40,7 +40,11 @@ const PROPOSERS = [...PANEL, ...GENERATORS]
 // ======================= STAGE PROMPTS (review these) =======================
 
 const PROPOSE_PROMPT = (isGen) => `ROLE: PROPOSE.
-Read the manuscript at \`${DRAFT}\`${SCOPE === 'all' ? '' : `, section ${SCOPE} only`}.
+Read the manuscript at \`${DRAFT}\`${SCOPE === 'all' ? '' : `, and propose changes only within ${SCOPE}`}.
+The file is larger than one read returns (~300KB against a 256KB cap), so the
+first whole-file read WILL fail. Page through it with offset/limit, or grep to
+what you need, until you have covered your whole scope — do not stop after the
+first chunk you manage to read.
 ${isGen
   ? 'Follow your reference brief exactly (read it first, as your definition instructs).'
   : 'Propose writing and structure improvements on the merits.'}
