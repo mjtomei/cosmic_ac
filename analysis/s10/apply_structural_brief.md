@@ -9,6 +9,21 @@ point it at a run's structural queue and the manuscript.
 **Model:** run this on a strong model. The 2026-09-02 pass ran on
 `claude-opus-5` and applied 10 reorganizations with no prose lost.
 
+## How a run is executed (constraint, 2026-09-02)
+
+**One workflow, every scope, in a visible tmux window.** Not one headless
+session per scope — that was the round-1 shape and it fragmented the
+architecture, put seven independent sessions in flight, and hid progress. It
+also defeated concurrency control: a shell job limiter using `jobs -rp` inside
+a `$(...)` subshell sees no job table, so all seven ran at once regardless of
+the cap. Inside one workflow the runtime's own cap (min(16, cpus-2)) throttles
+the fan-out correctly.
+
+Use `run_iteration.sh <phase> <iteration>`, which builds the scope list from
+`section_groups.json`, opens a tmux window, and runs
+`workflows/round2_iter_all.js` there. The same constraint applies to the other
+flows as they are built.
+
 ## Order: prose first, then structural
 
 Not a convenience — the two steps fail differently, so the order is load-bearing.
