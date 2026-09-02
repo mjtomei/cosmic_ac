@@ -1,6 +1,6 @@
 export const meta = {
-  name: 'round2-prose',
-  description: 'Track B: blind multi-model writing-quality pass over S10 — propose, de-author, ground-truth data-faithfulness gate, no-self-vote multi-factor ballot (prose + structural rubrics), synthesize into gated per-change records',
+  name: 'round2-iter',
+  description: 'Iterating subscription panel pass over S10 — tiered seats propose, ground-truth data-faithfulness gate, blind all-seats ballot (incl. own proposals), synthesize with self-preference stats',
   phases: [
     { title: 'Propose' },
     { title: 'Faithfulness' },
@@ -22,20 +22,38 @@ export const meta = {
 const DRAFT = (args && args.draft) || 'analysis/s10/S10-WRITEUP-DRAFT.md'
 const SCOPE = (args && args.scope) || 'all'
 
-const PANEL = [
-  { id: 'anthropic', type: 'panel-anthropic', family: 'fable' },
-  { id: 'openai',    type: 'panel-openai',    family: 'openai' },
-  { id: 'google',    type: 'panel-google',    family: 'google' },
-  { id: 'xai',       type: 'panel-xai',       family: 'xai' },
-  { id: 'moonshot',  type: 'panel-moonshot',  family: 'moonshot' },
-  { id: 'alibaba',   type: 'panel-alibaba',   family: 'alibaba' },
-  { id: 'deepseek',  type: 'panel-deepseek',  family: 'deepseek' },
-]
-const GENERATORS = [
-  { id: 'gen-prose',   type: 'gen-prose',   family: 'fable' },
-  { id: 'gen-dataviz', type: 'gen-dataviz', family: 'fable' },
-]
-const PROPOSERS = [...PANEL, ...GENERATORS]
+const PHASE = String((args && args.phase) || 1)
+const ITER = (args && args.iteration) || 1
+// Panels per phase (Matthew, 2026-09-02). Every seat proposes AND votes on
+// every candidate including its own — no self-exclusion — while staying blind
+// to authorship; provenance is kept out of band so self-preference is
+// measurable. `effort` is passed through to the agent call.
+const PANELS = {
+  // wide sweep: full paper + section groups
+  '1': [
+    { id: 'opus-5-med',   type: 'sub-anthropic-high', family: 'anthropic', effort: 'medium' },
+    { id: 'sol',          type: 'sub-openai-mid',     family: 'openai' },
+    { id: 'grok-4.6',     type: 'sub-xai-mid',        family: 'xai' },
+  ],
+  // intermediate: full paper
+  '2': [
+    { id: 'fable-5.1-hi', type: 'sub-anthropic-fable', family: 'anthropic', effort: 'high' },
+    { id: 'sol-high',     type: 'sub-openai-high',     family: 'openai' },
+    { id: 'grok-4.6-hi',  type: 'sub-xai-high',        family: 'xai' },
+  ],
+  // final: the metered labs join the three subscription seats
+  '3': [
+    { id: 'fable-5.1-hi', type: 'sub-anthropic-fable', family: 'anthropic', effort: 'high' },
+    { id: 'sol-high',     type: 'sub-openai-high',     family: 'openai' },
+    { id: 'grok-4.6-hi',  type: 'sub-xai-high',        family: 'xai' },
+    { id: 'gemini',       type: 'panel-google',        family: 'google' },
+    { id: 'kimi',         type: 'panel-moonshot',      family: 'moonshot' },
+    { id: 'qwen-max',     type: 'panel-alibaba',       family: 'alibaba' },
+    { id: 'deepseek',     type: 'panel-deepseek',      family: 'deepseek' },
+  ],
+}
+const PANEL = PANELS[PHASE]
+const PROPOSERS = PANEL
 
 // ======================= STAGE PROMPTS (review these) =======================
 
@@ -156,91 +174,83 @@ const FAITH_SCHEMA = { type: 'object',
 
 phase('Propose')
 const raw = await parallel(PROPOSERS.map(m => () =>
-  agent(PROPOSE_PROMPT(m.type.startsWith('gen-')),
-        { agentType: m.type, label: `propose:${m.id}`, schema: PROPOSAL_SCHEMA })
-    .then(r => ({ member: m.id, family: m.family, changes: (r && r.changes) || [] }))))
+  agent(PROPOSE_PROMPT(false), { agentType: m.type, label: `propose:${m.id}`, schema: PROPOSAL_SCHEMA, ...(m.effort ? { effort: m.effort } : {}) })
+    .then(r => ({ member: m.id, family: m.family, changes: (r && r.changes) || [] }))
+    .catch(() => ({ member: m.id, family: m.family, changes: [] }))))
 const proposals = []
 for (const p of raw.filter(Boolean))
   for (const c of p.changes) proposals.push({ ...c, member: p.member, family: p.family })
-log(`${proposals.length} proposals from ${raw.filter(Boolean).length} proposers`)
+log(`iter ${ITER} phase ${PHASE} scope=${SCOPE}: ${proposals.length} proposals from ${PANEL.length} seats`)
 
-// de-author -> candidates. Collapse only byte-identical (locus, action, proposed).
 const byKey = {}
 for (const c of proposals) {
   const k = `${c.locus}|${c.action}|${c.proposed}`
-  if (!byKey[k]) byKey[k] = { locus: c.locus, type: c.type, action: c.action,
-    current: c.current, proposed: c.proposed, rationale: c.rationale,
-    support: 0, author_families: new Set() }
+  if (!byKey[k]) byKey[k] = { locus: c.locus, type: c.type, action: c.action, current: c.current,
+    proposed: c.proposed, rationale: c.rationale, support: 0, author_seats: new Set(), author_families: new Set() }
   byKey[k].support += 1
+  byKey[k].author_seats.add(c.member)
   byKey[k].author_families.add(c.family)
 }
 const candidates = Object.values(byKey).map((c, i) =>
-  ({ ...c, id: `C${i + 1}`, author_families: [...c.author_families] }))
-log(`${candidates.length} de-authored candidates (from ${proposals.length} proposals)`)
+  ({ ...c, id: `C${i + 1}`, author_seats: [...c.author_seats], author_families: [...c.author_families] }))
+log(`${candidates.length} candidates`)
 
 phase('Faithfulness')
-// Dedicated data-faithfulness gate. A checker reads the ACTUAL draft as ground
-// truth and rules whether the proposal alters any datum — stronger than the
-// per-voter self-report, which only ever sees the proposer's quoted `current`.
-// Fail-closed: a dead check, an unlocatable passage, or an altered datum drops
-// the candidate before it costs a single vote. Interpretation may change; data
-// may not.
 const faiths = await parallel(candidates.map(c => () =>
-  agent(FAITH_PROMPT(c),
-        { agentType: 'check-faithfulness', label: `faith:${c.id}`, schema: FAITH_SCHEMA })
+  agent(FAITH_PROMPT(c), { agentType: 'check-faithfulness', label: `faith:${c.id}`, schema: FAITH_SCHEMA })
     .catch(() => null)))
 const withFaith = candidates.map((c, i) => {
   const f = faiths[i]
   const gate = !!f && f.locatable !== false && f.data_faithful === 'pass'
-  const reason = !f ? 'faith_check_errored'
-    : f.locatable === false ? 'not_locatable'
-    : f.data_faithful !== 'pass' ? 'data_changed' : null
-  return { ...c, faith: f, faith_gate: gate, faith_reason: reason }
+  return { ...c, faith: f, faith_gate: gate,
+           faith_reason: !f ? 'faith_check_errored' : f.locatable === false ? 'not_locatable'
+             : f.data_faithful !== 'pass' ? 'data_changed' : null }
 })
 const survivors = withFaith.filter(c => c.faith_gate)
-const dropped = withFaith.filter(c => !c.faith_gate)
-log(`faithfulness: ${survivors.length}/${candidates.length} pass; ${dropped.length} dropped` +
-    (dropped.length ? ` (${dropped.map(d => d.faith_reason).join(', ')})` : ''))
+log(`faithfulness: ${survivors.length}/${candidates.length} pass`)
 
 phase('Vote')
+// No self-exclusion: every seat votes on every surviving candidate.
 const scored = await parallel(survivors.map(cand => async () => {
-  const eligible = PANEL.filter(m => !cand.author_families.includes(m.family))
   const prompt = cand.type === 'structural' ? VOTE_STRUCTURAL(cand) : VOTE_PROSE(cand)
-  const ballots = await parallel(eligible.map(v => () =>
-    agent(prompt, { agentType: v.type, label: `vote:${cand.id}:${v.id}`, schema: VOTE_SCHEMA })
-      .then(s => ({ voter: v.id, ...s })).catch(() => null)))
+  const ballots = await parallel(PANEL.map(v => () =>
+    agent(prompt, { agentType: v.type, label: `vote:${cand.id}:${v.id}`, schema: VOTE_SCHEMA, ...(v.effort ? { effort: v.effort } : {}) })
+      .then(s => ({ voter: v.id, is_author: cand.author_seats.includes(v.id), ...s })).catch(() => null)))
   return { id: cand.id, votes: ballots.filter(Boolean) }
 }))
 const votesById = {}
 for (const s of scored) votesById[s.id] = s.votes
 
 phase('Synthesize')
-const decide = (votes) => {
-  const v = votes
-  // Backstop is DATA-only. A companion edit a change needs (move the figure,
-  // update the cross-ref) is a dependency to carry out, never a disqualifier.
+const decide = (v) => {
   const voter_data_fail = v.some(x => x.data_faithful === 'fail')
   const deps = v.map(x => x.dependencies).filter(d => d && d.trim())
   const keeps = v.filter(x => x.keep).length
   const composite = v.length
     ? Math.round((v.reduce((s, x) => s + x.clarity + x.voice + x.concision + x.structural_soundness, 0) / v.length) * 100) / 100
     : 0
-  return { accepted: !voter_data_fail && keeps > v.length / 2, keeps, n: v.length,
-           voter_data_fail, dependencies: deps, composite }
+  return { accepted: !voter_data_fail && v.length > 0 && keeps > v.length / 2,
+           keeps, n: v.length, voter_data_fail, dependencies: deps, composite }
 }
 const results = withFaith.map(c => {
   const votes = votesById[c.id] || []
-  const verdict = c.faith_gate
-    ? decide(votes)
-    : { accepted: false, keeps: 0, n: 0, dropped: c.faith_reason, composite: 0 }
-  return { ...c, votes, verdict }
-}).sort((a, b) => String(a.locus).localeCompare(String(b.locus)))   // report order = document order
+  return { ...c, votes,
+    verdict: c.faith_gate ? decide(votes)
+      : { accepted: false, keeps: 0, n: 0, dropped: c.faith_reason, composite: 0 } }
+}).sort((a, b) => String(a.locus).localeCompare(String(b.locus)))
+
+// self-preference: does a seat treat its own (unlabelled) proposal more kindly?
+const sp = {}
+for (const r of results) for (const b of r.votes) {
+  const k = b.voter; sp[k] = sp[k] || { self_n: 0, self_keep: 0, other_n: 0, other_keep: 0 }
+  const s = sp[k]
+  if (b.is_author) { s.self_n++; if (b.keep) s.self_keep++ } else { s.other_n++; if (b.keep) s.other_keep++ }
+}
 return {
-  scope: SCOPE,
-  n_proposals: proposals.length,
-  n_candidates: candidates.length,
-  n_faith_pass: survivors.length,
-  n_faith_dropped: dropped.length,
+  scope: SCOPE, phase: PHASE, iteration: ITER,
+  n_proposals: proposals.length, n_candidates: candidates.length,
+  n_faith_pass: survivors.length, n_faith_dropped: candidates.length - survivors.length,
   accepted: results.filter(r => r.verdict.accepted).length,
-  changes: results,   // full per-change record: current/proposed, faith verdict, every voter's factors, provenance
+  self_preference: sp,
+  changes: results,
 }

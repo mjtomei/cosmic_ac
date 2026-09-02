@@ -1,0 +1,587 @@
+[
+ {
+  "id": "C15",
+  "locus": "\u00a74.6 \"Across legislatures, the individual gradient is\"",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**Across legislatures, the individual gradient is steady where the chamber trend is not.** Group trends diverge enormously across chambers \u2014 \u2212173 to +413 occurrences per 100k per decade \u2014 while the within-year birth gradient sits in one narrow band (+49 to +109) in every chamber, including the two whose group trend is flat. That contrast is the low-variance signature of an individual-level effect: the thing that swings wildly at the chamber level barely moves at the person level. \u2020[^r46apc]",
+  "proposed": "**Across legislatures, the individual gradient is steady where the chamber trend is not.** Group trends diverge enormously across chambers \u2014 \u2212173 to +413 occurrences per 100k per decade \u2014 while the within-year birth gradient sits in one narrow band (+49 to +109) in every chamber, including the two whose group trend is flat. That contrast is the low-variance signature of an individual-level effect: the chamber trend is volatile across legislatures; the person-level birth gradient is not. \u2020[^r46apc]",
+  "rationale": "The original last clause treats two different quantities (chamber trend vs. within-year birth gradient) as one 'thing' observed at two levels. Name them separately; the numbers already make the contrast.",
+  "support": 1,
+  "author_families": [
+   "xai"
+  ]
+ },
+ {
+  "id": "C18",
+  "locus": "\u00a74.6 \"Following members over their own careers\"",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**Following members over their own careers, the register rises \u2014 but that is the calendar tide, not aging.** With member fixed effects, so only a member's own movement counts, the register rises **+0.51 per 1,000 per decade** within member (t = 6.0, clustered on member, 8,600 members with three or more years) \u2014 roughly **40% of the total calendar rise happens inside continuing careers**, the rest arriving with the composition of the chamber. This view establishes that members convert, not merely that they are replaced. But it comes with the section's neatest trap: within one career tenure = spoken year \u2212 entry year, so plotting register against length of service splits into two curves that cross. Within a member \u2014 rate against their own career mean \u2014 it **rises** with tenure (to +2.35 per 1,000 at 30+ years), which is exactly the calendar drift redrawn. Measured against same-year colleagues instead \u2014 rate minus its chamber \u00d7 year mean \u2014 it **falls**, monotonically, from +0.6 in the first years to \u22122.3 among the longest-serving. The fall is not seniority wearing the register down: at a fixed year more tenure means an earlier entry cohort, so the downward curve is the cohort gradient seen sideways. \u2020[^r46c] \u2020[^r46ten]",
+  "proposed": "**Following members over their own careers, the register rises \u2014 but that is the calendar tide, not aging.** With member fixed effects, so only a member's own movement counts, the register rises **+0.51 per 1,000 per decade** within member (t = 6.0, clustered on member, 8,600 members with three or more years) \u2014 roughly **40% of the total calendar rise happens inside continuing careers**, the rest arriving with the composition of the chamber. Sitting members' own speech moves; replacement is not the whole story. Tenure and calendar year are the same clock inside a career (tenure = spoken year \u2212 entry year), so a plot of register against length of service splits into two curves that cross. Within a member \u2014 rate against their own career mean \u2014 it **rises** with tenure (to +2.35 per 1,000 at 30+ years), which is exactly the calendar drift redrawn. Measured against same-year colleagues instead \u2014 rate minus its chamber \u00d7 year mean \u2014 it **falls**, monotonically, from +0.6 in the first years to \u22122.3 among the longest-serving. The fall is not seniority wearing the register down: at a fixed year more tenure means an earlier entry cohort, so the downward curve is the cohort gradient seen sideways. \u2020[^r46c] \u2020[^r46ten]",
+  "rationale": "'Members convert' overclaims what this paragraph can show, and the next paragraph has to take it back. 'Neatest trap' congratulates the setup. State the residualization and the two clocks; leave conversion unclaimed.",
+  "support": 1,
+  "author_families": [
+   "xai"
+  ]
+ },
+ {
+  "id": "C10",
+  "locus": "\u00a74.6 \u201cFollowing members over their own careers\u201d",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**Following members over their own careers, the register rises \u2014 but that is the calendar tide, not aging.** With member fixed effects, so only a member's own movement counts, the register rises **+0.51 per 1,000 per decade** within member (t = 6.0, clustered on member, 8,600 members with three or more years) \u2014 roughly **40% of the total calendar rise happens inside continuing careers**, the rest arriving with the composition of the chamber. This view establishes that members convert, not merely that they are replaced. But it comes with the section's neatest trap: within one career tenure = spoken year \u2212 entry year, so plotting register against length of service splits into two curves that cross. Within a member \u2014 rate against their own career mean \u2014 it **rises** with tenure (to +2.35 per 1,000 at 30+ years), which is exactly the calendar drift redrawn. Measured against same-year colleagues instead \u2014 rate minus its chamber \u00d7 year mean \u2014 it **falls**, monotonically, from +0.6 in the first years to \u22122.3 among the longest-serving. The fall is not seniority wearing the register down: at a fixed year more tenure means an earlier entry cohort, so the downward curve is the cohort gradient seen sideways. \u2020[^r46c] \u2020[^r46ten]",
+  "proposed": "**Following members over their own careers, the register rises \u2014 but that is the calendar tide, not aging.** With member fixed effects, so only a member's own movement counts, the register rises **+0.51 per 1,000 per decade** within member (t = 6.0, clustered on member, 8,600 members with three or more years). Roughly **40% of the total calendar rise happens inside continuing careers**; the rest arrives through changes in chamber composition. Members therefore change while serving rather than the pattern arising only through replacement. Tenure does not identify why they change, because within one career tenure = spoken year \u2212 entry year. That identity produces two curves that cross. Relative to their own career means, members' rates **rise** with tenure, reaching +2.35 per 1,000 at 30+ years; this is the calendar drift redrawn. Relative to same-year colleagues \u2014 rate minus its chamber \u00d7 year mean \u2014 the register **falls** monotonically, from +0.6 in the first years to \u22122.3 among the longest-serving. That fall is not seniority wearing the register down. At a fixed year, more tenure means an earlier entry cohort, so the downward curve is the cohort gradient seen sideways. \u2020[^r46c] \u2020[^r46ten]",
+  "rationale": "Separate the within-member result from the tenure non-identification argument and avoid calling the first result \u201cconversion,\u201d which implies a mechanism the estimator does not establish. The rewrite retains the finding that continuing members change while making the calendar-time interpretation explicit.",
+  "support": 1,
+  "author_families": [
+   "openai"
+  ]
+ },
+ {
+  "id": "C8",
+  "locus": "\u00a74.6 \u201cRestricted to cohorts formed before the register moved\u201d",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**Restricted to cohorts formed before the register moved, the gradient is already there.** The sharpest cell is the US Senate before any drift: among cohorts born 1917\u20131964, observed 1994\u20132004 \u2014 every one formed decades before the register began moving anywhere \u2014 the gradient is already full size, **+105 [+47, +155] per decade of birth**. *A juniority gradient in this register predates the drift, the machines, and the web.* Read the other way round \u2014 those cohorts' gradient IS the age profile, since cohort is pinned pre-drift \u2014 it fixes the age slope at **\u22120.88/decade** (clustered t \u22123.5) and, propagated along the identification line (whose invariant is the same-age decade-on total, period + cohort = **+2.11/decade**), bounds the *linear* cohort slope to **\u22120.03 [\u22120.52, +0.46]**. This view is interesting twice over: it answers \"did the models create this?\" (no), and as a bound it says the standing *level* of the gradient reads as an age-or-career clock, not a birth-cohort one. \u2020[^rapcid]",
+  "proposed": "**Restricted to cohorts formed before the register moved, the gradient is already there.** The sharpest cell is the US Senate before any drift: among cohorts born 1917\u20131964 and observed 1994\u20132004 \u2014 all formed decades before the register began moving anywhere \u2014 the gradient is already full size, **+105 [+47, +155] per decade of birth**. *A juniority gradient in this register predates the drift, the machines, and the web.* The same result can be read as an age profile because cohort is pinned pre-drift. On that reading, the age slope is **\u22120.88/decade** (clustered t \u22123.5). Propagating it along the identification line \u2014 whose invariant is the same-age decade-on total, period + cohort = **+2.11/decade** \u2014 bounds the *linear* cohort slope at **\u22120.03 [\u22120.52, +0.46]**. This view does two jobs: it shows that the models did not create the gradient, and the bound locates its standing *level* on an age-or-career clock rather than a birth-cohort one. \u2020[^rapcid]",
+  "rationale": "Break the identification argument into explicit inferential steps. The revision preserves every estimate and conclusion while replacing the compressed \u201cread the other way round\u201d construction with a traceable chain.",
+  "support": 1,
+  "author_families": [
+   "openai"
+  ]
+ },
+ {
+  "id": "C16",
+  "locus": "\u00a74.6 \"Restricted to cohorts formed before the register\"",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**Restricted to cohorts formed before the register moved, the gradient is already there.** The sharpest cell is the US Senate before any drift: among cohorts born 1917\u20131964, observed 1994\u20132004 \u2014 every one formed decades before the register began moving anywhere \u2014 the gradient is already full size, **+105 [+47, +155] per decade of birth**. *A juniority gradient in this register predates the drift, the machines, and the web.* Read the other way round \u2014 those cohorts' gradient IS the age profile, since cohort is pinned pre-drift \u2014 it fixes the age slope at **\u22120.88/decade** (clustered t \u22123.5) and, propagated along the identification line (whose invariant is the same-age decade-on total, period + cohort = **+2.11/decade**), bounds the *linear* cohort slope to **\u22120.03 [\u22120.52, +0.46]**. This view is interesting twice over: it answers \"did the models create this?\" (no), and as a bound it says the standing *level* of the gradient reads as an age-or-career clock, not a birth-cohort one. \u2020[^rapcid]",
+  "proposed": "**Restricted to cohorts formed before the register moved, the gradient is already there.** The sharpest cell is the US Senate before any drift: among cohorts born 1917\u20131964, observed 1994\u20132004 \u2014 every one formed decades before the register began moving anywhere \u2014 the gradient is already full size, **+105 [+47, +155] per decade of birth**. *A juniority gradient in this register predates the drift, the machines, and the web.*\n\nRead the other way round \u2014 those cohorts' gradient is the age profile, since cohort is pinned pre-drift \u2014 it fixes the age slope at **\u22120.88/decade** (clustered t \u22123.5) and, propagated along the identification line (whose invariant is the same-age decade-on total, period + cohort = **+2.11/decade**), bounds the *linear* cohort slope to **\u22120.03 [\u22120.52, +0.46]**. As a bound, the standing *level* of the gradient reads as an age-or-career clock, not a birth-cohort one. \u2020[^rapcid]",
+  "rationale": "Existence and identification are two moves; jammed together they bury the italic sentence, which is the section's load-bearing claim. Drop the ALL-CAPS and the 'interesting twice over' gloss \u2014 the italic already answers whether the models created this.",
+  "support": 1,
+  "author_families": [
+   "xai"
+  ]
+ },
+ {
+  "id": "C19",
+  "locus": "\u00a74.6 \"Splitting that career drift by birth cohort\"",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**Splitting that career drift by birth cohort, every cohort rides the tide up \u2014 but not in every chamber.** Running the same within-member estimator separately within each birth cohort (so the cohort numbers decompose the pooled +0.57 rather than averaging noisy per-member slopes) gives a positive-or-flat lifetime drift for every cohort, a shallow hump peaking at the 1950s-born (+0.88) and tapering at both thin tails. So the gain a member makes over their career barely depends on when they were born \u2014 nearly everyone absorbs the drift they serve through. Interesting for the caveat it forces: the drift is **positive within members in only 10 of the 22 chambers**, carried by the two largest (UK +1.9, US House +0.5) while most of the smaller chambers \u2014 the Canadian provinces especially \u2014 run negative, so \"sitting members convert\" is a pooled, large-chamber statement rather than a universal one. And it is calendar drift ridden inside a career, not proven personal conversion: a member serving 2006\u20132026 gains register partly because the register rose under everyone. \u2020[^r46life]",
+  "proposed": "**Splitting that career drift by birth cohort, every cohort rides the tide up \u2014 but not in every chamber.** Running the same within-member estimator separately within each birth cohort (so the cohort numbers decompose the pooled +0.57 rather than averaging noisy per-member slopes) gives a positive-or-flat lifetime drift for every cohort, a shallow hump peaking at the 1950s-born (+0.88) and tapering at both thin tails. So the gain a member makes over their career barely depends on when they were born \u2014 nearly everyone absorbs the drift they serve through. The drift is **positive within members in only 10 of the 22 chambers**, carried by the two largest (UK +1.9, US House +0.5) while most of the smaller chambers \u2014 the Canadian provinces especially \u2014 run negative, so the pooled statement is a large-chamber result rather than a universal one. And it is calendar drift ridden inside a career, not proven personal conversion: a member serving 2006\u20132026 gains register partly because the register rose under everyone. \u2020[^r46life]",
+  "rationale": "Drop 'Interesting for the caveat it forces' \u2014 the chamber split is the finding, not a comment on it. Replacing the quoted 'sitting members convert' makes the qualification stand on its own if the previous paragraph's wording moves.",
+  "support": 1,
+  "author_families": [
+   "xai"
+  ]
+ },
+ {
+  "id": "C11",
+  "locus": "\u00a74.6 \u201cSplitting that career drift by birth cohort\u201d",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**Splitting that career drift by birth cohort, every cohort rides the tide up \u2014 but not in every chamber.** Running the same within-member estimator separately within each birth cohort (so the cohort numbers decompose the pooled +0.57 rather than averaging noisy per-member slopes) gives a positive-or-flat lifetime drift for every cohort, a shallow hump peaking at the 1950s-born (+0.88) and tapering at both thin tails. So the gain a member makes over their career barely depends on when they were born \u2014 nearly everyone absorbs the drift they serve through. Interesting for the caveat it forces: the drift is **positive within members in only 10 of the 22 chambers**, carried by the two largest (UK +1.9, US House +0.5) while most of the smaller chambers \u2014 the Canadian provinces especially \u2014 run negative, so \"sitting members convert\" is a pooled, large-chamber statement rather than a universal one. And it is calendar drift ridden inside a career, not proven personal conversion: a member serving 2006\u20132026 gains register partly because the register rose under everyone. \u2020[^r46life]",
+  "proposed": "**Splitting the career drift by birth cohort yields the same pooled pattern, but splitting it by chamber does not.** Running the same within-member estimator separately within each birth cohort \u2014 so the cohort estimates decompose the pooled +0.57 rather than average noisy per-member slopes \u2014 gives positive-or-flat lifetime drift for every cohort. The profile is a shallow hump, peaking among the 1950s-born (+0.88) and tapering at both thin tails. The gain a member makes over a career therefore barely depends on birth year; nearly every cohort absorbs the drift through which it serves. Across chambers, however, the drift is **positive within members in only 10 of the 22 chambers**. The two largest chambers carry the pooled result (UK +1.9, US House +0.5), while most smaller chambers \u2014 especially the Canadian provinces \u2014 run negative. \u201cSitting members convert\u201d is therefore a pooled, large-chamber statement, not a universal one. Even there, the estimate is calendar drift within a career, not proven personal conversion: a member serving 2006\u20132026 gains register partly because the register rose under everyone. \u2020[^r46life]",
+  "rationale": "Organize the paragraph around its central contrast: stability across birth cohorts versus heterogeneity across chambers. This makes the scope condition legible before the interpretation and preserves every reported direction and estimate.",
+  "support": 1,
+  "author_families": [
+   "openai"
+  ]
+ },
+ {
+  "id": "C7",
+  "locus": "\u00a74.6 \u201cThat single slope is where the question starts\u201d",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "That single slope is where the question starts, not where it ends. What we want from it is a **decomposition \u2014 across space, and across time.** Across space: is one gradient shared by every legislature, or is it an average over chambers that behave differently? Across time: is \"born later, uses more\" about *when a person was born* (cohort), *what year it is* (period), or *how long they have served* (career)? The time question runs into a wall no data removes: age = year \u2212 birth, so age, period and cohort cannot be jointly separated \u2014 a birth-plus-period model and an age-plus-period model reproduce each other's fits exactly, for every number in this section. There is therefore no single conclusive estimate to report. What there is instead is a family of **views** \u2014 weighting members equally or by words, following people within their own careers or comparing across them, restricting to the chambers or the cohorts where one clock happens to be pinned. None settles the age/cohort split on its own; taken together they locate the gradient. The rest of this section is that family, each view named for what it is interesting for.",
+  "proposed": "That single slope opens the question; it does not answer it. The decomposition has two dimensions. Across space, do legislatures share one gradient, or does the pooled estimate average over chambers that behave differently? Across time, does \"born later, uses more\" reflect birth cohort, period, or career stage? The temporal decomposition has an unavoidable identification problem: age = year \u2212 birth. A birth-plus-period model and an age-plus-period model therefore reproduce each other's fits exactly, for every number in this section. No single specification can conclusively separate age from cohort. We instead compare a family of **views**: weighting members equally or by words; following people within their own careers or comparing across them; and restricting the analysis to chambers or cohorts where one clock is pinned. Each view answers a narrower question. Together they locate the gradient without pretending to identify the age/cohort split.",
+  "rationale": "State the estimand and identification problem before cataloguing specifications. This removes process-oriented phrasing (\u201cwhat we want\u201d) and gives the section a clearer analytic map without weakening the substantive caveat.",
+  "support": 1,
+  "author_families": [
+   "openai"
+  ]
+ },
+ {
+  "id": "C14",
+  "locus": "\u00a74.6 \"That single slope is where the question\"",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "That single slope is where the question starts, not where it ends. What we want from it is a **decomposition \u2014 across space, and across time.** Across space: is one gradient shared by every legislature, or is it an average over chambers that behave differently? Across time: is \"born later, uses more\" about *when a person was born* (cohort), *what year it is* (period), or *how long they have served* (career)? The time question runs into a wall no data removes: age = year \u2212 birth, so age, period and cohort cannot be jointly separated \u2014 a birth-plus-period model and an age-plus-period model reproduce each other's fits exactly, for every number in this section. There is therefore no single conclusive estimate to report. What there is instead is a family of **views** \u2014 weighting members equally or by words, following people within their own careers or comparing across them, restricting to the chambers or the cohorts where one clock happens to be pinned. None settles the age/cohort split on its own; taken together they locate the gradient. The rest of this section is that family, each view named for what it is interesting for.",
+  "proposed": "That single slope is where the question starts, not where it ends. What we want from it is a **decomposition \u2014 across space, and across time.** Across space: is one gradient shared by every legislature, or is it an average over chambers that behave differently? Across time: is \"born later, uses more\" about *when a person was born* (cohort), *what year it is* (period), or *how long they have served* (career)? The time question runs into a wall no data removes: age = year \u2212 birth, so age, period and cohort cannot be jointly separated \u2014 a birth-plus-period model and an age-plus-period model reproduce each other's fits exactly, for every number in this section. There is therefore no single conclusive estimate to report. What there is instead is a family of **views** \u2014 weighting members equally or by words, following people within their own careers or comparing across them, restricting to the chambers or the cohorts where one clock happens to be pinned. None settles the age/cohort split on its own; taken together they locate the gradient.",
+  "rationale": "The closing sentence narrates the section instead of ending on the identification point, and it licenses the later tic of telling the reader why each view is 'interesting.' House voice: let the views carry themselves.",
+  "support": 1,
+  "author_families": [
+   "xai"
+  ]
+ },
+ {
+  "id": "C17",
+  "locus": "\u00a74.6 \"The one time-statement that needs no assumption\"",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**The one time-statement that needs no assumption is that the cohort profile bends.** The linear age/period/cohort split is unidentifiable, but the *curvature* is not, and it rejects linearity outright (Wald p \u2248 10\u207b\u2077): the constraint-invariant contrasts put cohorts born **1975 onward +0.46 above the linear profile (z = 5.1)**, those born 1985 onward +0.65 (z = 2.6), with a late-minus-early local slope difference of **+0.70/decade (z = 2.7)**. Interesting because it is the steepening claim in identification-free form, and it lands exactly where drift-formed cohorts arrive \u2014 the register roughly tripling among them (UK Commons +30 \u2192 +98, US House +23 \u2192 +85, and in the House against a flat chamber mean, so if the growth is formation it is formation in the ambient written culture rather than the chamber). Its complication is stated rather than hidden: the deviation profile bends up at *both* ends \u2014 the 1920s\u201330s cohorts also sit above the line, on the panel's thinnest cells \u2014 so the identified fact is \"nonlinear, rising at the recent end,\" not \"rising only there.\" \u2020[^rapcid]",
+  "proposed": "**The one time-statement that needs no assumption is that the cohort profile bends.** The linear age/period/cohort split is unidentifiable, but the *curvature* is not, and it rejects linearity outright (Wald p \u2248 10\u207b\u2077): the constraint-invariant contrasts put cohorts born **1975 onward +0.46 above the linear profile (z = 5.1)**, those born 1985 onward +0.65 (z = 2.6), with a late-minus-early local slope difference of **+0.70/decade (z = 2.7)**. That steepening lands exactly where drift-formed cohorts arrive \u2014 the register roughly tripling among them (UK Commons +30 \u2192 +98, US House +23 \u2192 +85, and in the House against a flat chamber mean, so if the growth is formation it is formation in the ambient written culture rather than the chamber). The deviation profile bends up at *both* ends \u2014 the 1920s\u201330s cohorts also sit above the line, on the panel's thinnest cells \u2014 so the identified fact is \"nonlinear, rising at the recent end,\" not \"rising only there.\" \u2020[^rapcid]",
+  "rationale": "Cut self-narration ('Interesting because\u2026') and self-congratulation ('stated rather than hidden'). The both-ends caveat is load-bearing and stays, stated plainly \u2014 house voice keeps the honest limit, not the credit for disclosing it.",
+  "support": 1,
+  "author_families": [
+   "xai"
+  ]
+ },
+ {
+  "id": "C9",
+  "locus": "\u00a74.6 \u201cThe one time-statement that needs no assumption\u201d",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**The one time-statement that needs no assumption is that the cohort profile bends.** The linear age/period/cohort split is unidentifiable, but the *curvature* is not, and it rejects linearity outright (Wald p \u2248 10\u207b\u2077): the constraint-invariant contrasts put cohorts born **1975 onward +0.46 above the linear profile (z = 5.1)**, those born 1985 onward +0.65 (z = 2.6), with a late-minus-early local slope difference of **+0.70/decade (z = 2.7)**. Interesting because it is the steepening claim in identification-free form, and it lands exactly where drift-formed cohorts arrive \u2014 the register roughly tripling among them (UK Commons +30 \u2192 +98, US House +23 \u2192 +85, and in the House against a flat chamber mean, so if the growth is formation it is formation in the ambient written culture rather than the chamber). Its complication is stated rather than hidden: the deviation profile bends up at *both* ends \u2014 the 1920s\u201330s cohorts also sit above the line, on the panel's thinnest cells \u2014 so the identified fact is \"nonlinear, rising at the recent end,\" not \"rising only there.\" \u2020[^rapcid]",
+  "proposed": "**The cohort profile bends without imposing an age/cohort identifying constraint.** The linear age/period/cohort split is unidentifiable, but the *curvature* is not, and it rejects linearity outright (Wald p \u2248 10\u207b\u2077). The constraint-invariant contrasts place cohorts born **1975 onward +0.46 above the linear profile (z = 5.1)** and those born 1985 onward +0.65 (z = 2.6), with a late-minus-early local slope difference of **+0.70/decade (z = 2.7)**. This is the steepening claim in identification-free form. It lands where drift-formed cohorts arrive and the register roughly triples among them: UK Commons +30 \u2192 +98 and US House +23 \u2192 +85. In the House, that increase occurs against a flat chamber mean, so if the growth is formation, it is formation in the ambient written culture rather than the chamber. The deviation profile also bends up at the other end: the 1920s\u201330s cohorts sit above the line on the panel's thinnest cells. The identified result is therefore \"nonlinear, rising at the recent end,\" not \"rising only there.\" \u2020[^rapcid]",
+  "rationale": "Lead with the precise scope of the assumption-free claim and separate the statistical result, interpretation, and complication. This keeps the caveat prominent without the defensive aside \u201cstated rather than hidden.\u201d",
+  "support": 1,
+  "author_families": [
+   "openai"
+  ]
+ },
+ {
+  "id": "C20",
+  "locus": "\u00a74.6 \"What the family supports, and what it cannot\"",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**What the family supports, and what it cannot.** No view settles the age-versus-cohort split; the identification wall stands, and the paper does not pretend otherwise. But the views are consistent and mutually reinforcing: a juniority gradient that is steady across legislatures at the individual level (space), exists before the models (pre-drift), bends upward exactly as drift-formed cohorts arrive (the one identification-free time statement), and is one members ride up within their own careers rather than only through replacement. The single citable figure \u2014 stated as the identified cohort\u2212age combination, not a pure cohort effect \u2014 is birth-decade **+0.92 (t = 12.5)** in the member-year panel with year fixed effects, carried in \u00a74.6b beside the other member-level predictors.",
+  "proposed": "**What the family supports, and what it cannot.** No view settles the age-versus-cohort split; the identification wall stands. The views are consistent and mutually reinforcing: a juniority gradient that is steady across legislatures at the individual level (space), exists before the models (pre-drift), bends upward exactly as drift-formed cohorts arrive (the one identification-free time statement), and is one members ride up within their own careers rather than only through replacement. The single citable figure \u2014 stated as the identified cohort\u2212age combination, not a pure cohort effect \u2014 is birth-decade **+0.92 (t = 12.5)** in the member-year panel with year fixed effects, carried in \u00a74.6b beside the other member-level predictors.",
+  "rationale": "'The paper does not pretend otherwise' is defensive throat-clearing. The identification wall already stands; 'But' then undersells the synthesis that follows.",
+  "support": 1,
+  "author_families": [
+   "xai"
+  ]
+ },
+ {
+  "id": "C12",
+  "locus": "\u00a74.6 \u201cWhat the family supports, and what it cannot\u201d",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**What the family supports, and what it cannot.** No view settles the age-versus-cohort split; the identification wall stands, and the paper does not pretend otherwise. But the views are consistent and mutually reinforcing: a juniority gradient that is steady across legislatures at the individual level (space), exists before the models (pre-drift), bends upward exactly as drift-formed cohorts arrive (the one identification-free time statement), and is one members ride up within their own careers rather than only through replacement. The single citable figure \u2014 stated as the identified cohort\u2212age combination, not a pure cohort effect \u2014 is birth-decade **+0.92 (t = 12.5)** in the member-year panel with year fixed effects, carried in \u00a74.6b beside the other member-level predictors.",
+  "proposed": "**What the family supports, and what it cannot.** No view settles the age-versus-cohort split; the identification wall stands. What survives it is a juniority gradient that is steady across legislatures at the individual level, exists before the models, and bends upward as drift-formed cohorts arrive \u2014 the identification-free time result. In the pooled panel, members also ride the gradient upward within their own careers rather than the rise occurring only through replacement, although that within-member pattern is not uniform across chambers. The single citable figure \u2014 stated as the identified cohort\u2212age combination, not a pure cohort effect \u2014 is birth-decade **+0.92 (t = 12.5)** in the member-year panel with year fixed effects, carried in \u00a74.6b beside the other member-level predictors.",
+  "rationale": "End with the claims that survive identification rather than with a defense of authorial restraint. Adding the already-reported chamber scope condition prevents the synthesis from sounding more universal than the underlying within-member result.",
+  "support": 1,
+  "author_families": [
+   "openai"
+  ]
+ },
+ {
+  "id": "C2",
+  "locus": "\u00a74.6, 'Across legislatures, the individual gradient is steady'",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**Across legislatures, the individual gradient is steady where the chamber trend is not.** Group trends diverge enormously across chambers \u2014 \u2212173 to +413 occurrences per 100k per decade \u2014 while the within-year birth gradient sits in one narrow band (+49 to +109) in every chamber, including the two whose group trend is flat. That contrast is the low-variance signature of an individual-level effect: the thing that swings wildly at the chamber level barely moves at the person level. \u2020[^r46apc]",
+  "proposed": "**Across legislatures, the individual gradient is steady where the chamber trend is not.** Group trends diverge enormously across chambers \u2014 \u2212173 to +413 occurrences per 100k words per decade, on the \u00a74.5a instrument ruler rather than the per-1,000 rate above \u2014 while the within-year birth gradient sits in one narrow band (+49 to +109 on the same ruler) in every chamber, including the two whose group trend is flat. That contrast is the low-variance signature of an individual-level effect: the thing that swings wildly at the chamber level barely moves at the person level. \u2020[^r46apc]",
+  "rationale": "The section opens in per-1,000-word units and silently switches to per-100k here; only footnote r46cc-style apparatus explains it. Reader-orientation principle: name a unit change in the main text so +0.86 and +49\u2013109 are not misread as a hundredfold disagreement. No number is altered; 'words' is restored from the footnote's own unit statement.",
+  "support": 1,
+  "author_families": [
+   "fable"
+  ]
+ },
+ {
+  "id": "C5",
+  "locus": "\u00a74.6, 'Following members over their own careers, the register rises'",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**Following members over their own careers, the register rises \u2014 but that is the calendar tide, not aging.** With member fixed effects, so only a member's own movement counts, the register rises **+0.51 per 1,000 per decade** within member (t = 6.0, clustered on member, 8,600 members with three or more years) \u2014 roughly **40% of the total calendar rise happens inside continuing careers**, the rest arriving with the composition of the chamber. This view establishes that members convert, not merely that they are replaced. But it comes with the section's neatest trap: within one career tenure = spoken year \u2212 entry year, so plotting register against length of service splits into two curves that cross. Within a member \u2014 rate against their own career mean \u2014 it **rises** with tenure (to +2.35 per 1,000 at 30+ years), which is exactly the calendar drift redrawn. Measured against same-year colleagues instead \u2014 rate minus its chamber \u00d7 year mean \u2014 it **falls**, monotonically, from +0.6 in the first years to \u22122.3 among the longest-serving. The fall is not seniority wearing the register down: at a fixed year more tenure means an earlier entry cohort, so the downward curve is the cohort gradient seen sideways. \u2020[^r46c] \u2020[^r46ten]",
+  "proposed": "**Following members over their own careers, the register rises \u2014 but that is the calendar tide, not aging.** With member fixed effects, so only a member's own movement counts, the register rises **+0.51 per 1,000 per decade** within member (t = 6.0, clustered on member, 8,600 members with three or more years) \u2014 roughly **40% of the total calendar rise happens inside continuing careers**, the rest arriving with the composition of the chamber. On its face this says sitting members convert rather than merely being replaced \u2014 a reading the cohort split below qualifies. But it comes with the section's neatest trap: within one career tenure = spoken year \u2212 entry year, so plotting register against length of service splits into two curves that cross. Within a member \u2014 rate against their own career mean \u2014 it **rises** with tenure (to +2.35 per 1,000 at 30+ years), which is exactly the calendar drift redrawn. Measured against same-year colleagues instead \u2014 rate minus its chamber \u00d7 year mean \u2014 it **falls**, monotonically, from +0.6 in the first years to \u22122.3 among the longest-serving. The fall is not seniority wearing the register down: at a fixed year more tenure means an earlier entry cohort, so the downward curve is the cohort gradient seen sideways. \u2020[^r46c] \u2020[^r46ten]",
+  "rationale": "Internal-consistency principle: 'This view establishes that members convert' is flatly asserted here, then walked back two paragraphs later ('a pooled, large-chamber statement... not proven personal conversion'). Stating it as a face reading with a forward pointer makes the two paragraphs agree without changing any finding. Separately, FLAG for authors (no change proposed, per the data rule): +0.51 here vs the pooled +0.57 in the next paragraph and footnote r46life are both described as the committed within-member figure, and '8,600 members' exceeds the panel's stated 6,913 members \u2014 both should be verified or reconciled by the authors, not by a rewrite.",
+  "support": 1,
+  "author_families": [
+   "fable"
+  ]
+ },
+ {
+  "id": "C3",
+  "locus": "\u00a74.6, 'Restricted to cohorts formed before the register moved'",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**Restricted to cohorts formed before the register moved, the gradient is already there.** The sharpest cell is the US Senate before any drift: among cohorts born 1917\u20131964, observed 1994\u20132004 \u2014 every one formed decades before the register began moving anywhere \u2014 the gradient is already full size, **+105 [+47, +155] per decade of birth**. *A juniority gradient in this register predates the drift, the machines, and the web.* Read the other way round \u2014 those cohorts' gradient IS the age profile, since cohort is pinned pre-drift \u2014 it fixes the age slope at **\u22120.88/decade** (clustered t \u22123.5) and, propagated along the identification line (whose invariant is the same-age decade-on total, period + cohort = **+2.11/decade**), bounds the *linear* cohort slope to **\u22120.03 [\u22120.52, +0.46]**. This view is interesting twice over: it answers \"did the models create this?\" (no), and as a bound it says the standing *level* of the gradient reads as an age-or-career clock, not a birth-cohort one. \u2020[^rapcid]",
+  "proposed": "**Restricted to cohorts formed before the register moved, the gradient is already there.** The sharpest cell is the US Senate before any drift: among cohorts born 1917\u20131964, observed 1994\u20132004 \u2014 every one formed decades before the register began moving anywhere \u2014 the gradient is already full size, **+105 [+47, +155] per decade of birth**. *A juniority gradient in this register predates the drift, the machines, and the web.* Read the other way round, those cohorts' gradient *is* the age profile, since cohort is pinned pre-drift. That fixes the age slope at **\u22120.88/decade** (clustered t \u22123.5) and, propagated along the identification line (whose invariant is the same-age decade-on total, period + cohort = **+2.11/decade**), bounds the *linear* cohort slope to **\u22120.03 [\u22120.52, +0.46]**. This view is interesting twice over: it answers \"did the models create this?\" (no), and as a bound it says the standing *level* of the gradient reads as an age-or-career clock, not a birth-cohort one. \u2020[^rapcid]",
+  "rationale": "The 'Read the other way round' sentence stacks two em-dash asides, a propagation clause, and a bound into one span, and all-caps 'IS' shouts in a paper set in bold/italic conventions. Splitting into two sentences and using italics keeps every number and both directions intact while making the pivotal inversion readable.",
+  "support": 1,
+  "author_families": [
+   "fable"
+  ]
+ },
+ {
+  "id": "C1",
+  "locus": "\u00a74.6, 'That single slope is where the question starts'",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "That single slope is where the question starts, not where it ends. What we want from it is a **decomposition \u2014 across space, and across time.** Across space: is one gradient shared by every legislature, or is it an average over chambers that behave differently? Across time: is \"born later, uses more\" about *when a person was born* (cohort), *what year it is* (period), or *how long they have served* (career)? The time question runs into a wall no data removes: age = year \u2212 birth, so age, period and cohort cannot be jointly separated \u2014 a birth-plus-period model and an age-plus-period model reproduce each other's fits exactly, for every number in this section. There is therefore no single conclusive estimate to report. What there is instead is a family of **views** \u2014 weighting members equally or by words, following people within their own careers or comparing across them, restricting to the chambers or the cohorts where one clock happens to be pinned. None settles the age/cohort split on its own; taken together they locate the gradient. The rest of this section is that family, each view named for what it is interesting for.",
+  "proposed": "That single slope is where the question starts, not where it ends. What we want from it is a **decomposition \u2014 across space, and across time.** Across space: is one gradient shared by every legislature, or is it an average over chambers that behave differently? Across time: is \"born later, uses more\" about *when a person was born* (cohort), *what year it is* (period), or *how long they have served* (career)? The time question runs into a wall no data removes: age = year \u2212 birth, so age, period and cohort cannot be jointly separated \u2014 a birth-plus-period model and an age-plus-period model reproduce each other's fits exactly, for every number in this section. There is therefore no single conclusive estimate to report. What there is instead is a family of **views** \u2014 weighting members equally or by words, following people within their own careers or comparing across them, restricting to the chambers or the cohorts where one clock happens to be pinned. None settles the age/cohort split on its own; taken together they locate the gradient. The rest of this section is that family, each view opened with the claim it supports.",
+  "rationale": "The final clause 'each view named for what it is interesting for' is clunky and slightly inaccurate \u2014 the bolded paragraph leads state findings, not interests. Plain-voice principle: say what the structure actually does.",
+  "support": 1,
+  "author_families": [
+   "fable"
+  ]
+ },
+ {
+  "id": "C4",
+  "locus": "\u00a74.6, 'The one time-statement that needs no assumption'",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**The one time-statement that needs no assumption is that the cohort profile bends.** The linear age/period/cohort split is unidentifiable, but the *curvature* is not, and it rejects linearity outright (Wald p \u2248 10\u207b\u2077): the constraint-invariant contrasts put cohorts born **1975 onward +0.46 above the linear profile (z = 5.1)**, those born 1985 onward +0.65 (z = 2.6), with a late-minus-early local slope difference of **+0.70/decade (z = 2.7)**. Interesting because it is the steepening claim in identification-free form, and it lands exactly where drift-formed cohorts arrive \u2014 the register roughly tripling among them (UK Commons +30 \u2192 +98, US House +23 \u2192 +85, and in the House against a flat chamber mean, so if the growth is formation it is formation in the ambient written culture rather than the chamber). Its complication is stated rather than hidden: the deviation profile bends up at *both* ends \u2014 the 1920s\u201330s cohorts also sit above the line, on the panel's thinnest cells \u2014 so the identified fact is \"nonlinear, rising at the recent end,\" not \"rising only there.\" \u2020[^rapcid]",
+  "proposed": "**The one time-statement that needs no assumption is that the cohort profile bends.** The linear age/period/cohort split is unidentifiable, but the *curvature* is not, and it rejects linearity outright (Wald p \u2248 10\u207b\u2077): the constraint-invariant contrasts put cohorts born **1975 onward +0.46 above the linear profile (z = 5.1)**, those born 1985 onward +0.65 (z = 2.6), with a late-minus-early local slope difference of **+0.70/decade (z = 2.7)**. Interesting because it is the steepening claim in identification-free form, and it lands exactly where drift-formed cohorts arrive \u2014 the register roughly tripling among them (UK Commons +30 \u2192 +98, US House +23 \u2192 +85, and in the House against a flat chamber mean, so if the growth is formation it is formation in the ambient written culture rather than the chamber). The complication: the deviation profile bends up at *both* ends \u2014 the 1920s\u201330s cohorts also sit above the line, on the panel's thinnest cells \u2014 so the identified fact is \"nonlinear, rising at the recent end,\" not \"rising only there.\" \u2020[^rapcid]",
+  "rationale": "'Its complication is stated rather than hidden' praises the paper's own candor \u2014 house-voice rule against self-congratulation. Simply stating the complication demonstrates the honesty better than announcing it.",
+  "support": 1,
+  "author_families": [
+   "fable"
+  ]
+ },
+ {
+  "id": "C6",
+  "locus": "\u00a74.6, 'What the family supports, and what it cannot.'",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**What the family supports, and what it cannot.** No view settles the age-versus-cohort split; the identification wall stands, and the paper does not pretend otherwise. But the views are consistent and mutually reinforcing: a juniority gradient that is steady across legislatures at the individual level (space), exists before the models (pre-drift), bends upward exactly as drift-formed cohorts arrive (the one identification-free time statement), and is one members ride up within their own careers rather than only through replacement. The single citable figure \u2014 stated as the identified cohort\u2212age combination, not a pure cohort effect \u2014 is birth-decade **+0.92 (t = 12.5)** in the member-year panel with year fixed effects, carried in \u00a74.6b beside the other member-level predictors.",
+  "proposed": "**What the family supports, and what it cannot.** No view settles the age-versus-cohort split; the identification wall stands. But the views are consistent and mutually reinforcing: a juniority gradient that is steady across legislatures at the individual level (space), exists before the models (pre-drift), bends upward exactly as drift-formed cohorts arrive (the one identification-free time statement), and is one members ride up within their own careers rather than only through replacement. The single citable figure \u2014 stated as the identified cohort\u2212age combination, not a pure cohort effect \u2014 is birth-decade **+0.92 (t = 12.5)** in the member-year panel with year fixed effects, carried in \u00a74.6b beside the other member-level predictors.",
+  "rationale": "'and the paper does not pretend otherwise' is defensive self-reference \u2014 the house voice cuts self-assurance and lets the restraint show in the content. The section has already demonstrated it by reporting bounds instead of a point estimate.",
+  "support": 1,
+  "author_families": [
+   "fable"
+  ]
+ },
+ {
+  "id": "C38",
+  "locus": "\u00a74.6, \"Its complication is stated rather than hidden\"",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**The one time-statement that needs no assumption is that the cohort profile bends.** The linear age/period/cohort split is unidentifiable, but the *curvature* is not, and it rejects linearity outright (Wald p \u2248 10\u207b\u2077): the constraint-invariant contrasts put cohorts born **1975 onward +0.46 above the linear profile (z = 5.1)**, those born 1985 onward +0.65 (z = 2.6), with a late-minus-early local slope difference of **+0.70/decade (z = 2.7)**. Interesting because it is the steepening claim in identification-free form, and it lands exactly where drift-formed cohorts arrive \u2014 the register roughly tripling among them (UK Commons +30 \u2192 +98, US House +23 \u2192 +85, and in the House against a flat chamber mean, so if the growth is formation it is formation in the ambient written culture rather than the chamber). Its complication is stated rather than hidden: the deviation profile bends up at *both* ends \u2014 the 1920s\u201330s cohorts also sit above the line, on the panel's thinnest cells \u2014 so the identified fact is \"nonlinear, rising at the recent end,\" not \"rising only there.\" \u2020[^rapcid]",
+  "proposed": "**The one time-statement that needs no assumption is that the cohort profile bends.** The linear age/period/cohort split is unidentifiable, but the *curvature* is not, and it rejects linearity outright (Wald p \u2248 10\u207b\u2077): the constraint-invariant contrasts put cohorts born **1975 onward +0.46 above the linear profile (z = 5.1)**, those born 1985 onward +0.65 (z = 2.6), with a late-minus-early local slope difference of **+0.70/decade (z = 2.7)**. Interesting because it is the steepening claim in identification-free form, and it lands exactly where drift-formed cohorts arrive \u2014 the register roughly tripling among them (UK Commons +30 \u2192 +98, US House +23 \u2192 +85, and in the House against a flat chamber mean, so if the growth is formation it is formation in the ambient written culture rather than the chamber). The complication: the deviation profile bends up at *both* ends \u2014 the 1920s\u201330s cohorts also sit above the line, on the panel's thinnest cells \u2014 so the identified fact is \"nonlinear, rising at the recent end,\" not \"rising only there.\" \u2020[^rapcid]",
+  "rationale": "\"Its complication is stated rather than hidden\" praises the paper's own honesty \u2014 self-congratulation the house voice cuts (challenge-not-apology memo: state the caveat plainly, without flourish). The substantive caveat itself is kept verbatim.",
+  "support": 1,
+  "author_families": [
+   "fable"
+  ]
+ },
+ {
+  "id": "C40",
+  "locus": "\u00a74.6, \"No view settles the age-versus-cohort split\"",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**What the family supports, and what it cannot.** No view settles the age-versus-cohort split; the identification wall stands, and the paper does not pretend otherwise. But the views are consistent and mutually reinforcing: a juniority gradient that is steady across legislatures at the individual level (space), exists before the models (pre-drift), bends upward exactly as drift-formed cohorts arrive (the one identification-free time statement), and is one members ride up within their own careers rather than only through replacement. The single citable figure \u2014 stated as the identified cohort\u2212age combination, not a pure cohort effect \u2014 is birth-decade **+0.92 (t = 12.5)** in the member-year panel with year fixed effects, carried in \u00a74.6b beside the other member-level predictors.",
+  "proposed": "**What the family supports, and what it cannot.** No view settles the age-versus-cohort split; the identification wall stands. But the views are consistent and mutually reinforcing: a juniority gradient that is steady across legislatures at the individual level (space), exists before the models (pre-drift), bends upward exactly as drift-formed cohorts arrive (the one identification-free time statement), and is one members ride up within their own careers rather than only through replacement. The single citable figure \u2014 the identified cohort\u2212age combination, not a pure cohort effect \u2014 is birth-decade **+0.92 (t = 12.5)** in the member-year panel with year fixed effects, carried in \u00a74.6b beside the other member-level predictors.",
+  "rationale": "\"and the paper does not pretend otherwise\" is defensive self-reference \u2014 the wall standing is the substantive caveat, and it stays; the disclaimer about the paper's own candor goes (challenge-not-apology voice). \"stated as\" is a second layer of the same meta-framing; the figure simply IS the identified combination, so say so plainly.",
+  "support": 1,
+  "author_families": [
+   "fable"
+  ]
+ },
+ {
+  "id": "C37",
+  "locus": "\u00a74.6, \"Read the other way round \u2014 those cohorts' gradient IS\"",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**Restricted to cohorts formed before the register moved, the gradient is already there.** The sharpest cell is the US Senate before any drift: among cohorts born 1917\u20131964, observed 1994\u20132004 \u2014 every one formed decades before the register began moving anywhere \u2014 the gradient is already full size, **+105 [+47, +155] per decade of birth**. *A juniority gradient in this register predates the drift, the machines, and the web.* Read the other way round \u2014 those cohorts' gradient IS the age profile, since cohort is pinned pre-drift \u2014 it fixes the age slope at **\u22120.88/decade** (clustered t \u22123.5) and, propagated along the identification line (whose invariant is the same-age decade-on total, period + cohort = **+2.11/decade**), bounds the *linear* cohort slope to **\u22120.03 [\u22120.52, +0.46]**. This view is interesting twice over: it answers \"did the models create this?\" (no), and as a bound it says the standing *level* of the gradient reads as an age-or-career clock, not a birth-cohort one. \u2020[^rapcid]",
+  "proposed": "**Restricted to cohorts formed before the register moved, the gradient is already there.** The sharpest cell is the US Senate before any drift: among cohorts born 1917\u20131964, observed 1994\u20132004 \u2014 every one formed decades before the register began moving anywhere \u2014 the gradient is already full size, **+105 [+47, +155] per decade of birth**. *A juniority gradient in this register predates the drift, the machines, and the web.* Read the other way round, the cell pins the age clock: cohort is fixed pre-drift, so those cohorts' gradient IS the age profile, and it fixes the age slope at **\u22120.88/decade** (clustered t \u22123.5). Propagated along the identification line \u2014 whose invariant is the same-age decade-on total, period + cohort = **+2.11/decade** \u2014 that slope bounds the *linear* cohort slope to **\u22120.03 [\u22120.52, +0.46]**. This view is interesting twice over: it answers \"did the models create this?\" (no), and as a bound it says the standing *level* of the gradient reads as an age-or-career clock, not a birth-cohort one. \u2020[^rapcid]",
+  "rationale": "The original packs two computations into one sentence whose second verb (\"bounds\") is separated from its subject by a nested parenthetical (Gopen & Swan: subject\u2013verb proximity; one unit, one point). Splitting lets each sentence reach closure on its own number \u2014 \u22120.88 in one stress position, the cohort bound in the next. All figures, signs, and intervals unchanged.",
+  "support": 1,
+  "author_families": [
+   "fable"
+  ]
+ },
+ {
+  "id": "C39",
+  "locus": "\u00a74.6, \"Splitting that career drift by birth cohort, every cohort rides\"",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**Splitting that career drift by birth cohort, every cohort rides the tide up \u2014 but not in every chamber.** Running the same within-member estimator separately within each birth cohort (so the cohort numbers decompose the pooled +0.57 rather than averaging noisy per-member slopes) gives a positive-or-flat lifetime drift for every cohort, a shallow hump peaking at the 1950s-born (+0.88) and tapering at both thin tails. So the gain a member makes over their career barely depends on when they were born \u2014 nearly everyone absorbs the drift they serve through. Interesting for the caveat it forces: the drift is **positive within members in only 10 of the 22 chambers**, carried by the two largest (UK +1.9, US House +0.5) while most of the smaller chambers \u2014 the Canadian provinces especially \u2014 run negative, so \"sitting members convert\" is a pooled, large-chamber statement rather than a universal one. And it is calendar drift ridden inside a career, not proven personal conversion: a member serving 2006\u20132026 gains register partly because the register rose under everyone.",
+  "proposed": "**Split by birth cohort, every cohort rides the tide up \u2014 but not in every chamber.** The same within-member estimator, run separately within each birth cohort, gives a positive-or-flat lifetime drift for every cohort \u2014 a shallow hump peaking at the 1950s-born (+0.88) and tapering at both thin tails (each cohort's number decomposes the pooled +0.57 rather than averaging noisy per-member slopes). So the gain a member makes over their career barely depends on when they were born \u2014 nearly everyone absorbs the drift they serve through. Interesting for the caveat it forces: the drift is **positive within members in only 10 of the 22 chambers**, carried by the two largest (UK +1.9, US House +0.5) while most of the smaller chambers \u2014 the Canadian provinces especially \u2014 run negative, so \"sitting members convert\" is a pooled, large-chamber statement rather than a universal one. And it is calendar drift ridden inside a career, not proven personal conversion: a member serving 2006\u20132026 gains register partly because the register rose under everyone.",
+  "rationale": "Two grammatical-structure fixes (Gopen & Swan: subject\u2013verb proximity; agent in the subject, action in the verb): the bold lead dangles (\"Splitting..., every cohort rides\" \u2014 the cohorts do no splitting), and the second sentence buries a full methodological parenthetical between its gerund subject and \"gives.\" The parenthetical moves to the end, out of the subject\u2013verb path; all numbers unchanged.",
+  "support": 1,
+  "author_families": [
+   "fable"
+  ]
+ },
+ {
+  "id": "C36",
+  "locus": "\u00a74.6, \"The rest of this section is that family\"",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "That single slope is where the question starts, not where it ends. What we want from it is a **decomposition \u2014 across space, and across time.** Across space: is one gradient shared by every legislature, or is it an average over chambers that behave differently? Across time: is \"born later, uses more\" about *when a person was born* (cohort), *what year it is* (period), or *how long they have served* (career)? The time question runs into a wall no data removes: age = year \u2212 birth, so age, period and cohort cannot be jointly separated \u2014 a birth-plus-period model and an age-plus-period model reproduce each other's fits exactly, for every number in this section. There is therefore no single conclusive estimate to report. What there is instead is a family of **views** \u2014 weighting members equally or by words, following people within their own careers or comparing across them, restricting to the chambers or the cohorts where one clock happens to be pinned. None settles the age/cohort split on its own; taken together they locate the gradient. The rest of this section is that family, each view named for what it is interesting for.",
+  "proposed": "That single slope is where the question starts, not where it ends. What we want from it is a **decomposition \u2014 across space, and across time.** Across space: is one gradient shared by every legislature, or is it an average over chambers that behave differently? Across time: is \"born later, uses more\" about *when a person was born* (cohort), *what year it is* (period), or *how long they have served* (career)? The time question runs into a wall no data removes: age = year \u2212 birth, so age, period and cohort cannot be jointly separated \u2014 a birth-plus-period model and an age-plus-period model reproduce each other's fits exactly, for every number in this section. There is therefore no single conclusive estimate to report. What there is instead is a family of **views** \u2014 weighting members equally or by words, following people within their own careers or comparing across them, restricting to the chambers or the cohorts where one clock happens to be pinned. None settles the age/cohort split on its own; taken together they locate the gradient. The rest of this section works through that family, one view at a time.",
+  "rationale": "The paragraph's final sentence sits in its stress position but closes on the mushy double-preposition \"what it is interesting for\" (Gopen & Swan: stress position; locate the action in the verb). Only the last sentence changes.",
+  "support": 1,
+  "author_families": [
+   "fable"
+  ]
+ },
+ {
+  "id": "C25",
+  "locus": "\u00a74.6, cohort-split para \u2014 \"Splitting that career drift by birth cohort\"",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**Splitting that career drift by birth cohort, every cohort rides the tide up \u2014 but not in every chamber.** Running the same within-member estimator separately within each birth cohort (so the cohort numbers decompose the pooled +0.57 rather than averaging noisy per-member slopes) gives a positive-or-flat lifetime drift for every cohort, a shallow hump peaking at the 1950s-born (+0.88) and tapering at both thin tails. So the gain a member makes over their career barely depends on when they were born \u2014 nearly everyone absorbs the drift they serve through. Interesting for the caveat it forces: the drift is **positive within members in only 10 of the 22 chambers**, carried by the two largest (UK +1.9, US House +0.5) while most of the smaller chambers \u2014 the Canadian provinces especially \u2014 run negative, so \"sitting members convert\" is a pooled, large-chamber statement rather than a universal one. And it is calendar drift ridden inside a career, not proven personal conversion: a member serving 2006\u20132026 gains register partly because the register rose under everyone. \u2020[^r46life]",
+  "proposed": "**Splitting that career drift by birth cohort, every cohort rides the tide up \u2014 but not in every chamber.** Running the same within-member estimator separately within each birth cohort (so the cohort numbers decompose the pooled within-member slope \u2014 +0.57 here, against the +0.51 the fixed-effects form gave above \u2014 rather than averaging noisy per-member slopes) gives a positive-or-flat lifetime drift for every cohort, a shallow hump peaking at the 1950s-born (+0.88) and tapering at both thin tails. So the gain a member makes over their career barely depends on when they were born \u2014 nearly everyone absorbs the drift they serve through. Interesting for the caveat it forces: the drift is **positive within members in only 10 of the 22 chambers**, carried by the two largest (UK +1.9, US House +0.5) while most of the smaller chambers \u2014 the Canadian provinces especially \u2014 run negative, so \"sitting members convert\" is a pooled, large-chamber statement rather than a universal one. And it is calendar drift ridden inside a career, not proven personal conversion: a member serving 2006\u20132026 gains register partly because the register rose under everyone. \u2020[^r46life]",
+  "rationale": "The pooled +0.57 appears with no antecedent two paragraphs after the same quantity was reported as +0.51 (member fixed effects), and the figure caption's claim that +0.57 \"reproduces the committed within-member figure\" deepens the collision. Juxtaposing the two estimators' values in text \u2014 both numbers already present, neither altered \u2014 pre-empts a false-contradiction reading.",
+  "support": 1,
+  "author_families": [
+   "moonshot"
+  ]
+ },
+ {
+  "id": "C24",
+  "locus": "\u00a74.6, curvature para \u2014 \"The one time-statement that needs no assumption is\"",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**The one time-statement that needs no assumption is that the cohort profile bends.** The linear age/period/cohort split is unidentifiable, but the *curvature* is not, and it rejects linearity outright (Wald p \u2248 10\u207b\u2077): the constraint-invariant contrasts put cohorts born **1975 onward +0.46 above the linear profile (z = 5.1)**, those born 1985 onward +0.65 (z = 2.6), with a late-minus-early local slope difference of **+0.70/decade (z = 2.7)**. Interesting because it is the steepening claim in identification-free form, and it lands exactly where drift-formed cohorts arrive \u2014 the register roughly tripling among them (UK Commons +30 \u2192 +98, US House +23 \u2192 +85, and in the House against a flat chamber mean, so if the growth is formation it is formation in the ambient written culture rather than the chamber). Its complication is stated rather than hidden: the deviation profile bends up at *both* ends \u2014 the 1920s\u201330s cohorts also sit above the line, on the panel's thinnest cells \u2014 so the identified fact is \"nonlinear, rising at the recent end,\" not \"rising only there.\" \u2020[^rapcid]",
+  "proposed": "**The one time-statement that needs no assumption is that the cohort profile bends.** The linear age/period/cohort split is unidentifiable, but the *curvature* is not, and it rejects linearity outright (Wald p \u2248 10\u207b\u2077): the constraint-invariant contrasts put cohorts born **1975 onward +0.46 above the linear profile (z = 5.1)**, those born 1985 onward +0.65 (z = 2.6), with a late-minus-early local slope difference of **+0.70/decade (z = 2.7)**. Interesting because it is the steepening claim in identification-free form, and it lands exactly where drift-formed cohorts arrive \u2014 the register roughly tripling among them (UK Commons +30 \u2192 +98, US House +23 \u2192 +85, per 100k words per decade of birth; and in the House against a flat chamber mean, so if the growth is formation it is formation in the ambient written culture rather than the chamber). It comes with a complication: the deviation profile bends up at *both* ends \u2014 the 1920s\u201330s cohorts also sit above the line, on the panel's thinnest cells \u2014 so the identified fact is \"nonlinear, rising at the recent end,\" not \"rising only there.\" \u2020[^rapcid]",
+  "rationale": "Two fixes: the tripling figures get the ruler the figure caption assigns them (per 100k per decade) so they are not read against the paragraph's per-1,000 contrasts; and \"stated rather than hidden\" is self-congratulation the house voice forbids \u2014 the complication itself stays fully stated, only the credit-claiming goes.",
+  "support": 1,
+  "author_families": [
+   "moonshot"
+  ]
+ },
+ {
+  "id": "C23",
+  "locus": "\u00a74.6, pre-drift para \u2014 \"Restricted to cohorts formed before the register moved\"",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**Restricted to cohorts formed before the register moved, the gradient is already there.** The sharpest cell is the US Senate before any drift: among cohorts born 1917\u20131964, observed 1994\u20132004 \u2014 every one formed decades before the register began moving anywhere \u2014 the gradient is already full size, **+105 [+47, +155] per decade of birth**. *A juniority gradient in this register predates the drift, the machines, and the web.* Read the other way round \u2014 those cohorts' gradient IS the age profile, since cohort is pinned pre-drift \u2014 it fixes the age slope at **\u22120.88/decade** (clustered t \u22123.5) and, propagated along the identification line (whose invariant is the same-age decade-on total, period + cohort = **+2.11/decade**), bounds the *linear* cohort slope to **\u22120.03 [\u22120.52, +0.46]**. This view is interesting twice over: it answers \"did the models create this?\" (no), and as a bound it says the standing *level* of the gradient reads as an age-or-career clock, not a birth-cohort one. \u2020[^rapcid]",
+  "proposed": "**Restricted to cohorts formed before the register moved, the gradient is already there.** The sharpest cell is the US Senate before any drift: among cohorts born 1917\u20131964, observed 1994\u20132004 \u2014 every one formed decades before the register began moving anywhere \u2014 the gradient is already full size, **+105 [+47, +155] per 100k words per decade of birth**. *A juniority gradient in this register predates the drift, the machines, and the web.* Read the other way round \u2014 those cohorts' gradient IS the age profile, since cohort is pinned pre-drift \u2014 it fixes the age slope at **\u22120.88 per 1,000 words per decade** (clustered t \u22123.5) and, propagated along the identification line (whose invariant is the same-age decade-on total, period + cohort = **+2.11 per 1,000 words per decade**), bounds the *linear* cohort slope to **\u22120.03 [\u22120.52, +0.46] per 1,000 words per decade**. This view is interesting twice over: it answers \"did the models create this?\" (no), and as a bound it says the standing *level* of the gradient reads as an age-or-career clock, not a birth-cohort one. \u2020[^rapcid]",
+  "rationale": "The paragraph silently mixes two rulers: +105 sits in the previous paragraph's per-100k band (+49 to +109), while the solution-line quantities are per-1,000 (the invariant +2.11 matches the two-stamp fit's +1.26 + 0.86 from the opening paragraph). As written, a reader comparing +105 with \u22120.88 sees a hundredfold contradiction; unit tags resolve it without touching any number.",
+  "support": 1,
+  "author_families": [
+   "moonshot"
+  ]
+ },
+ {
+  "id": "C21",
+  "locus": "\u00a74.6, roadmap para \u2014 \"That single slope is where the question starts\"",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "That single slope is where the question starts, not where it ends. What we want from it is a **decomposition \u2014 across space, and across time.** Across space: is one gradient shared by every legislature, or is it an average over chambers that behave differently? Across time: is \"born later, uses more\" about *when a person was born* (cohort), *what year it is* (period), or *how long they have served* (career)? The time question runs into a wall no data removes: age = year \u2212 birth, so age, period and cohort cannot be jointly separated \u2014 a birth-plus-period model and an age-plus-period model reproduce each other's fits exactly, for every number in this section. There is therefore no single conclusive estimate to report. What there is instead is a family of **views** \u2014 weighting members equally or by words, following people within their own careers or comparing across them, restricting to the chambers or the cohorts where one clock happens to be pinned. None settles the age/cohort split on its own; taken together they locate the gradient. The rest of this section is that family, each view named for what it is interesting for.",
+  "proposed": "That single slope is where the question starts, not where it ends. What we want from it is a **decomposition \u2014 across space, and across time.** Across space: is one gradient shared by every legislature, or is it an average over chambers that behave differently? Across time: is \"born later, uses more\" about *when a person was born* (cohort), *what year it is* (period), or *how long they have served* (career)? The time question runs into a wall no data removes: age = year \u2212 birth, so age, period and cohort cannot be jointly separated \u2014 a birth-plus-period model and an age-plus-period model reproduce each other's fits exactly, for every number in this section. There is therefore no single conclusive estimate to report. What there is instead is a family of **views** \u2014 weighting members equally or by words, following people within their own careers or comparing across them, restricting to the chambers or the cohorts where one clock happens to be pinned. None settles the age/cohort split on its own; taken together they locate the gradient. The rest of this section is that family, each view named for what makes it interesting.",
+  "rationale": "The closing construction \"what it is interesting for\" is grammatically broken (a view is not \"interesting for\" something); \"what makes it interesting\" keeps the author's announced device intact while fixing the syntax. Nothing else in the paragraph is touched.",
+  "support": 1,
+  "author_families": [
+   "moonshot"
+  ]
+ },
+ {
+  "id": "C22",
+  "locus": "\u00a74.6, space-view para \u2014 \"Across legislatures, the individual gradient is steady\"",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**Across legislatures, the individual gradient is steady where the chamber trend is not.** Group trends diverge enormously across chambers \u2014 \u2212173 to +413 occurrences per 100k per decade \u2014 while the within-year birth gradient sits in one narrow band (+49 to +109) in every chamber, including the two whose group trend is flat. That contrast is the low-variance signature of an individual-level effect: the thing that swings wildly at the chamber level barely moves at the person level. \u2020[^r46apc]",
+  "proposed": "**Across legislatures, the individual gradient is steady where the chamber trend is not.** In the five chambers with exact member birth years, on the per-100k ruler of \u00a74.5a, group trends diverge enormously \u2014 \u2212173 to +413 occurrences per 100k per decade \u2014 while the within-year birth gradient sits in one narrow band (+49 to +109) in every one of the five, including the two whose group trend is flat. That contrast is the low-variance signature of an individual-level effect: the thing that swings wildly at the chamber level barely moves at the person level. \u2020[^r46apc]",
+  "rationale": "The text says \"across chambers ... in every chamber,\" which reads as all 22, but the section's own footnote restricts this comparison to the five chambers with exact birth years \u2014 the restriction belongs in the main text, not only the apparatus. Naming the per-100k ruler also signals the switch from the opening paragraph's per-1,000 units; both facts are drawn from the existing footnote, so no datum is added or altered.",
+  "support": 1,
+  "author_families": [
+   "moonshot"
+  ]
+ },
+ {
+  "id": "C33",
+  "locus": "\u00a74.6b",
+  "type": "structural",
+  "action": "split",
+  "current": "### 4.6b The class coding: the same shape at coarser grain \u2014 and the other member-level gradients\n\nThe full 678-line section covering class inverted U, era panels, education, the grand predictor model, Labov hypothesis, flight dynamics, prominence, word mix, and caveats.",
+  "proposed": "Split 4.6b after line 1786 ('probe rather than ceilings of the phenomenon.' \u2014 the end of the 'Together they explain about a sixth of the variance' conclusion paragraph). Everything from line 1795 ('#### The shape has a name \u2014 held now as hypothesis, not finding') through line 2076 becomes new subsection 4.6c, titled '4.6c Chase-and-flight, prominence, and what the class analysis cannot rule out.' The material before the split \u2014 class inverted U, era panels, education, the grand joint model, origin null, juniority gradient towers \u2014 remains 4.6b.",
+  "rationale": "Section 4.6b at 678 lines is massively overloaded. The split separates the static class-and-predictor analysis (4.6b) from the dynamic group-level material \u2014 Labov's crossover, flight/chase, prominence, word mix, and caveats (new 4.6c). This gives the reader a clear boundary between 'what predicts the register' and 'what the social geometry of its movement looks like.'",
+  "support": 1,
+  "author_families": [
+   "deepseek"
+  ]
+ },
+ {
+  "id": "C34",
+  "locus": "\u00a74.6b 'They do not deserve equal billing'",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**They do not deserve equal billing, and the full model says which is which.** Cohort is untouched by anything and an order of magnitude better resolved than the rest. Prominence, entered as the bins D.3 says it is, survives everything at p < 10\u207b\u2074 in every column \u2014 the hump sits inside the joint model: flat through Q2, +0.16 to +0.19\u03c3 across Q3\u2013Q5 with the top quintile easing off the Q4 peak (entered as a line instead, the block prints +0.020 per log-unit, t 2.05, and the shape disappears \u2014 the line was the wrong form, not the predictor). Class shows a wider floor than the headline contrast \u2014 all three manual-and-rural categories sit significantly below the service classes jointly (V/VI \u22120.235, VIIab \u22120.286, IVc \u22120.201) \u2014 and survives cohort, education and prominence, but not its own finer measurement: beside the altitude ladders the class block falls to p = 0.56, and the leave-one-out fits show either ladder alone does it (p = 0.62 and p = 0.54), because the EGP label is a coarse coding of the occupational content the ladders measure directly. That is the joint model repeating what destination-not-origin already said: the register tracks what the work was, not what the label says. The same absorption runs inside the occupational blocks themselves \u2014 each is strong alone; the folk ladder is the stronger carrier (p = 0.0008 with both in, its FREE level \u22120.090 per sd) and takes the credit from its theoretical near-twin, while Indoors stays marginally alive beside either single ladder and is absorbed only by the pair. That the folk ladder beats the theoretical one is itself a datum for the introduction's classification point: take the stereotype \u2014 the everyday picture of a corporate ladder \u2014 have machine coders concretize it blind, and the concretized folk category measures better than the theory-built alternative. Education survives nothing, in any column \u2014 and with the graduate rung split, master's and doctorate both sit at the bachelor plateau, so the null is not a lumping artifact. What the full model keeps, then, is cohort, the prominence bins, and one occupational ladder; what it retires is the class label, education, and every occupational term the ladders already encode.",
+  "proposed": "**They do not deserve equal billing, and the full model says which is which.** Cohort is untouched by anything and an order of magnitude better resolved than the rest. Prominence \u2014 entered as the bins D.3 says it is, not as a line \u2014 survives everything at p < 10\u207b\u2074, its hump flat through Q2 and +0.16 to +0.19\u03c3 across Q3\u2013Q5. Class shows a wider floor than the headline contrast \u2014 all three manual-and-rural categories sit significantly below the service classes (V/VI \u22120.235, VIIab \u22120.286, IVc \u22120.201) \u2014 but collapses beside the altitude ladders (p = 0.62 or 0.54, either ladder alone), because EGP is a coarse coding of the occupational content the ladders measure directly: the register tracks what the work was, not what the label says. Within the occupational blocks the folk ladder is the stronger carrier (p = 0.0008 with both in, FREE \u22120.090 per sd); Indoors is absorbed by the pair. Education survives nothing in any column \u2014 with the graduate rung split, master's and doctorate both sit at the bachelor plateau, so the null is not a lumping artifact. What the full model keeps is cohort, the prominence bins, and one occupational ladder; what it retires is the class label, education, and every occupational term the ladders already encode.",
+  "rationale": "The original paragraph is 30 lines that redundantly recapitulates numbers already in the table above and repeats the leave-one-out finding (p = 0.62 / 0.54) already stated in the two robustness passes directly preceding it. The rewrite cuts ~40% of the length while preserving every finding, every number, and the 'folk beats theoretical' observation. It also removes the parenthetical excursion about the wrong-form line (readers can check D.3 if they care) and the 'repeat of destination-not-origin' meta-commentary.",
+  "support": 1,
+  "author_families": [
+   "deepseek"
+  ]
+ },
+ {
+  "id": "C35",
+  "locus": "\u00a74.6b Flight 'Jhering set out the diffusion'",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "That is the static signature of chase-and-flight \u2014 a marker loses value as it is copied, so the group that holds it abandons the most conspicuous forms first \u2014 and the pattern's components should be kept separate. The *flight* is observed twice: here, statically, in class I's avoidance of the words that became common; and dynamically at the word level, where the most conspicuous machine tells peak and fall back (\u00a74.5). What is **not** observed is the class cycle in motion: the peak does not migrate across eras, and the second sufficient signature \u2014 a widening II-over-I separation \u2014 is absent, and the drift runs the other way: +0.141 in 1997\u20132001 against +0.079 in 2022\u20132026, the series' narrowest gap in the machine-era bin (weighted trend \u22120.022 per half-decade, t \u22121.67 \u2014 compression, short of significance). Jhering set out the diffusion mechanism in *Der Zweck im Recht* (1883); Durkheim's summary of it gives the phrase \u2014 fashion, once universally adopted, \"condemned by its very nature to renew itself continuously\" \u2014 and Veblen (1899) and Simmel (1904) gave it its standard form.\n\nLieberson is the closest parallel to our case, because his markers are discrete lexical items: first names diffuse down the status ladder and are abandoned by higher-status parents once they become common.",
+  "proposed": "That is the static signature of chase-and-flight \u2014 a marker loses value as it is copied, so the group that holds it abandons the most conspicuous forms first \u2014 and the pattern's components should be kept separate. The *flight* is observed twice: statically, here, in class I's avoidance of the words that became common; and dynamically at the word level, where the most conspicuous machine tells peak and fall back (\u00a74.5). What is **not** observed is the class cycle in motion: the peak does not migrate across eras, the II-over-I gap narrows rather than widens (+0.141 to +0.079, trend \u22120.022 per half-decade, t \u22121.67), and the drift runs toward compression. The diffusion mechanism is classical \u2014 Jhering (1883), Durkheim, Veblen (1899), Simmel (1904) \u2014 and the closest parallel is Lieberson (2000), whose discrete first-name markers diffuse down the status ladder and are abandoned by higher-status parents once they become common.",
+  "rationale": "The original two paragraphs spend ~10 lines on scholarly genealogy (Jhering\u2192Durkheim\u2192Veblen\u2192Simmel and a separate paragraph for Lieberson) between empirical statements. Condensing preserves every citation and every finding while reducing the distance between 'what is observed' and 'what is not observed' \u2014 the two empirical claims that anchor the subsection. It also removes the repeated statement about the gap narrowing, stated twice in slightly different forms.",
+  "support": 1,
+  "author_families": [
+   "deepseek"
+  ]
+ },
+ {
+  "id": "C30",
+  "locus": "\u00a74.6b, '#### All four predictors at once'",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "#### All four predictors at once",
+  "proposed": "#### Every member-level predictor in one regression",
+  "rationale": "The table fits seven blocks (cohort, class, education, prominence, two altitude ladders, Indoors); 'All four' counts only the full-panel subset and is contradicted by the subsection's own first sentence, 'Every member-level predictor in one regression.' The proposed title is that sentence.",
+  "support": 1,
+  "author_families": [
+   "alibaba"
+  ]
+ },
+ {
+  "id": "C26",
+  "locus": "\u00a74.6b, '#### Prominence: a gradient in the provinces'",
+  "type": "structural",
+  "action": "move",
+  "current": "#### Prominence: a gradient in the provinces, an arc in the national chambers \u2014 introduces the Wikipedia-article-length marker (provincial decline, national arc, pooled buckets flat), followed by the four-marker synthesis '**What the four markers share is not a peak but a retreat at the top.**' and the depth-as-instrument paragraph 'Depth was collected as a control on notability bias'. Currently sits after the Flight subsection, i.e. after the joint model that already consumes prominence as a block.",
+  "proposed": "Move the Prominence subsection (heading, table, and the two-shapes paragraph ending 'the buckets are the result.'), the four-marker synthesis paragraph (ending 'should not be over-read.'), and the depth paragraph (ending 'depth is the usable instrument.') to immediately before '#### All four predictors at once'.",
+  "rationale": "The joint-model introduction already presents 'prominence as article-length quintiles \u2014 the bins, not a line, because Appendix D.3 shows the shape is not linear' before the reader has seen the prominence result; a predictor should be introduced before the model that consumes it, and the four-marker synthesis is the natural capstone of the member-level gradients before the model adjudicates them.",
+  "support": 1,
+  "author_families": [
+   "alibaba"
+  ]
+ },
+ {
+  "id": "C32",
+  "locus": "\u00a74.6b, 'Teachers, nurses and journalists out-use lawyers'",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "Teachers, nurses and journalists out-use lawyers, physicians and professors, within their own chambers, on both sides of the Atlantic \u2014 Labov's crossover, in this register.",
+  "proposed": "Teachers, nurses and journalists out-use lawyers, physicians and professors, within their own chambers, on both sides of the Atlantic \u2014 the shape later read, as hypothesis, as Labov's crossover.",
+  "rationale": "A later subsection explicitly demotes the Labov reading ('a hypothesis the enlarged panel failed to confirm at conventional thresholds ... nothing in this subsection should be cited as established'); the unqualified 'Labov's crossover, in this register' invites citing the interpretation as a finding. The established datum \u2014 the within-chamber contrast \u2014 is untouched.",
+  "support": 1,
+  "author_families": [
+   "alibaba"
+  ]
+ },
+ {
+  "id": "C28",
+  "locus": "\u00a74.6b, 'That is the static signature of chase-and-flight'",
+  "type": "prose",
+  "action": "merge",
+  "current": "Two paragraphs state the same verdict. First: \"That is the static signature of chase-and-flight \u2014 a marker loses value as it is copied, so the group that holds it abandons the most conspicuous forms first \u2014 and the pattern's components should be kept separate. The *flight* is observed twice: here, statically, in class I's avoidance of the words that became common; and dynamically at the word level, where the most conspicuous machine tells peak and fall back (\u00a74.5). What is **not** observed is the class cycle in motion: the peak does not migrate across eras, and the second sufficient signature \u2014 a widening II-over-I separation \u2014 is absent, and the drift runs the other way: +0.141 in 1997\u20132001 against +0.079 in 2022\u20132026, the series' narrowest gap in the machine-era bin (weighted trend \u22120.022 per half-decade, t \u22121.67 \u2014 compression, short of significance).[^rgap] Jhering set out the diffusion mechanism in *Der Zweck im Recht* (1883); Durkheim's summary of it gives the phrase \u2014 fashion, once universally adopted, \\\"condemned by its very nature to renew itself continuously\\\" \u2014 and Veblen (1899) and Simmel (1904) gave it its standard form.\" Second (the Lieberson paragraph sits between and stays untouched): \"That is what a chase-and-flight cycle looks like from four angles at once, and it is recorded as a hypothesis rather than a finding: the shapes were noticed while reconciling estimates, not predicted in advance. The era-resolved test it implies **has** now been run and does not support the cycle's dynamic half on either sufficient signature \u2014 the class profile holds its shape in every half-decade rather than migrating (figure above), and the II-over-I separation never widens across thirty years (+0.141 \u2192 +0.079, trend t \u22121.7 \u2014 drifting narrower, not wider). A cycle already in progress before our first frame would look like this too, which is why the discriminating study is class-coded speech from before 1996 (\u00a78.6).\"",
+  "proposed": "One paragraph at the first location: \"That is the static signature of chase-and-flight \u2014 a marker loses value as it is copied, so the group that holds it abandons the most conspicuous forms first \u2014 and the pattern's components should be kept separate, as should the cycle's status: this is recorded as a hypothesis rather than a finding, since the shapes were noticed while reconciling estimates, not predicted in advance. The *flight* is observed twice: here, statically, in class I's avoidance of the words that became common; and dynamically at the word level, where the most conspicuous machine tells peak and fall back (\u00a74.5). What is **not** observed \u2014 and the era-resolved test has now been run \u2014 is the class cycle in motion: the profile holds its shape in every half-decade rather than migrating, and the second sufficient signature, a widening II-over-I separation, is absent across thirty years, with the drift running the other way: +0.141 in 1997\u20132001 against +0.079 in 2022\u20132026, the series' narrowest gap in the machine-era bin (weighted trend \u22120.022 per half-decade, t \u22121.67 \u2014 compression, short of significance).[^rgap] A cycle already in progress before our first frame would look like this too, which is why the discriminating study is class-coded speech from before 1996 (\u00a78.6). Jhering set out the diffusion mechanism in *Der Zweck im Recht* (1883); Durkheim's summary of it gives the phrase \u2014 fashion, once universally adopted, \\\"condemned by its very nature to renew itself continuously\\\" \u2014 and Veblen (1899) and Simmel (1904) gave it its standard form.\"",
+  "rationale": "The two paragraphs render the identical verdict twice \u2014 non-migrating peak, II-over-I gap drifting +0.141 \u2192 +0.079 (the same statistic repeated with two roundings, t \u22121.67 and t \u22121.7), discriminating study pre-1996. Every number and caveat is preserved once; state the honest limitation once rather than twice.",
+  "support": 1,
+  "author_families": [
+   "alibaba"
+  ]
+ },
+ {
+  "id": "C29",
+  "locus": "\u00a74.6b, 'The categorical schema that first revealed the gradient'",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "The categorical schema that first revealed the gradient is kept here in abbreviated form: it shows the same shape as \u00a74.6a's measure at coarser grain, and in the joint model below the measure absorbs it. Class predicts the register as a joint block, not as a single ladder \u2014 and the apparent education gradient does not survive its controls. The arc of the analysis is a correction applied twice, recorded because both applications were the study's own committed checks. On the eight provinces, class, education and prominence appeared to predict the register at t = 3\u20134; clustering by member and replication then removed every INDIVIDUAL certainty. The joint tests say otherwise:",
+  "proposed": "The categorical schema that first revealed the gradient is kept here in abbreviated form: it shows the same shape as \u00a74.6a's measure at coarser grain, and in the joint model below the measure absorbs it. Two findings lead: class predicts the register as a joint block, not as a single ladder \u2014 and the apparent education gradient does not survive its controls. Both were established by a correction applied twice, both times by the study's own committed checks: on the eight provinces, class, education and prominence appeared to predict the register at t = 3\u20134; clustering by member and replication then removed every INDIVIDUAL certainty \u2014 while the joint tests survived both corrections:",
+  "rationale": "Findings-first: the current version narrates 'the arc of the analysis' before its findings and ends on a dangling clause \u2014 'The joint tests say otherwise:' \u2014 whose antecedent the reader must reconstruct. The rewrite states the two findings, then the corrections that established them, and makes the contrast explicit (individual terms lost certainty; the joint block held); all data (eight provinces, t = 3\u20134) unchanged.",
+  "support": 1,
+  "author_families": [
+   "alibaba"
+  ]
+ },
+ {
+  "id": "C27",
+  "locus": "\u00a74.6b, 'The shape has a name \u2014 held now as hypothesis'",
+  "type": "structural",
+  "action": "split",
+  "current": "\u00a74.6b continues after the joint model with h4 sub-subsections on a different unit of analysis: 'The shape has a name' (Labov hypothesis), 'Flight: the groups at the top avoid the words that became common' (group-level pooled-text correlations), the chase-and-flight verdict, the Lieberson parallel, and 'Word mix: the effects live in rate, not vocabulary' \u2014 while \u00a74.6b's title promises 'the class coding ... and the other member-level gradients'.",
+  "proposed": "Split \u00a74.6b before '#### The shape has a name \u2014 held now as hypothesis, not finding': everything from that h4 to the section's end becomes a new lettered subsection, e.g. '### 4.6c Group-level signatures: chase-and-flight at the word level \u2014 held as hypothesis', following the paper's existing convention (4.5a/4.5b/4.6a/4.6b).",
+  "rationale": "The material itself declares the unit-of-analysis switch ('These are group-level signatures ... not individual adoption histories'); a visible boundary makes \u00a74.6b's title honest and lets the member-level and group-level results be cited separately.",
+  "support": 1,
+  "author_families": [
+   "alibaba"
+  ]
+ },
+ {
+  "id": "C31",
+  "locus": "\u00a74.6b, 'What the class analysis cannot rule out'",
+  "type": "structural",
+  "action": "split",
+  "current": "#### What the class analysis cannot rule out \u2014 five caveat paragraphs: (1) 'Article length is measured once, in 2026'; (2) 'Class III's premium is a cohort effect' (+1.03 \u2192 \u22120.32 under a birth-year control; III's median birth year 1974; II/IVab +0.68/+0.91, VIIab \u22121.51); (3) 'Classes III and VIIab rest on 29 and 16 members', II and IVab at '435 and 180'; (4) 'The chase-and-flight correlation strengthens as the volume cut rises' (cut chosen pre-pattern, not pre-registered); (5) 'Both effects leave cohort intact. Birth decade runs +1.20 to +1.36 per decade' \u2014 with footnote [^r46d] citing `covariate_study.py`.",
+  "proposed": "Move paragraphs 2, 3, and 5 (with footnote [^r46d]) to Appendix B as a numbered item recording that they describe the province-only covariate study superseded by the 22-chamber member-level specification; keep paragraph 1 beside the prominence analysis and paragraph 4 beside the flight analysis (or as the residue of the subsection, retitled to match).",
+  "rationale": "As written, the subsection contradicts the section's own tables: class III rests on 147 members above and is 'not distinguishable from II', VIIab on 109, class II on 2,049 \u2014 against '29 and 16' and '435 and 180' here. Those numbers are the provincial panel's, which Appendix B already marks superseded ('the regression in \u00a74.6 supersedes it'); the move keeps every number in the record while removing a head-on contradiction from Results.",
+  "support": 1,
+  "author_families": [
+   "alibaba"
+  ]
+ },
+ {
+  "id": "C13",
+  "locus": "### 4.6a Socioeconomic position as organisational altitude:",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "What this section reports is best read as a proposal for a **measure**:\nsocioeconomic position scored not by a categorical class schema but by the\noccupational content the schema summarises. Each legislator's prior\noccupation, coded to O\\*NET, is scored on an organisational-**altitude**\nladder \u2014 bottom, middle, top of a hierarchy \u2014 plus a level the categorical\nschemas do not carry: **free work**, occupations that sit outside the\norganisational hierarchy altogether. The move has ancestry: Weeden and\nGrusky's case for measuring class at the disaggregated occupation level,\nand Kohn and Schooler's occupational self-direction, where closeness of\nsupervision explained class differences in psychology, are the two nearest\nlines. What this measure adds is the off-ladder level \u2014 position scored not\nonly as altitude within the hierarchy but as distance from it \u2014 and that\naxis is not a post-hoc reading: the ordering **free < front-line <\ncorporate** was preregistered before any occupational element was joined\nto the register, and found. What follows are the measure's\nresults \u2014 the U over its levels, the off-ladder level's stability across\nthree decades, and, in the joint model below, the absorption of the class\nlabel the measure refines.",
+  "proposed": "This section measures socioeconomic position not by a categorical class schema, but by the occupational content the schema summarises. Each legislator's prior occupation, coded to O\\*NET, is scored on an organisational-**altitude** ladder \u2014 bottom, middle, top of a hierarchy \u2014 plus a level the categorical schemas do not carry: **free work**, occupations that sit outside the organisational hierarchy altogether. The move has ancestry: Weeden and Grusky's case for measuring class at the disaggregated occupation level, and Kohn and Schooler's occupational self-direction, where closeness of supervision explained class differences in psychology. What this measure adds is the off-ladder level \u2014 position scored not only as altitude within the hierarchy but as distance from it. This axis is not a post-hoc reading: the ordering **free < front-line < corporate** was preregistered before any occupational element was joined to the register. The sections below present the U-shaped distribution over these levels, the off-ladder level's stability across three decades, and the joint model's absorption of the class label.",
+  "rationale": "Cut defensive framing (\"best read as a proposal\") and self-congratulation (\"the two nearest lines\", \"and found\"). Voice rule: confident and plain. No data altered.",
+  "support": 1,
+  "author_families": [
+   "google"
+  ]
+ },
+ {
+  "id": "C43",
+  "locus": "4.6, 'Group-level against individual-level gradients, one ruler'",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "![](apc_gradients.png)\n\n*Group-level against individual-level gradients, one ruler (instrument occurrences per 100k words, per decade). Left: chamber trends diverge across legislatures while the within-year birth gradient sits in one band \u2014 full-size even where the trend is flat (the space view). Right: the birth gradient by era \u2014 full-size among pre-drift cohorts in the US Senate, roughly tripling in the UK Commons and US House as drift-formed cohorts enter (the pre-drift and nonlinear views). Error bars are member-cluster bootstrap 95% intervals.*",
+  "proposed": "![](apc_gradients.png)\n\n*Group-level against individual-level gradients, one ruler (instrument occurrences per 100k words, per decade \u2014 divide by 100 for the body's per-1,000-words ruler). Left: chamber trends diverge across legislatures while the within-year birth gradient sits in one band, shaded (+49 to +109) \u2014 full-size even where the trend is flat (the space view). Right: the birth gradient by era \u2014 full-size among pre-drift cohorts in the US Senate, roughly tripling in the UK Commons and US House as drift-formed cohorts enter (the pre-drift and nonlinear views). Error bars are member-cluster bootstrap 95% intervals.*\n\n[Regenerate apc_gradients.png, all values unchanged: (a) left panel \u2014 drop the legend box and the \"(T)\"/\"(X)\" codes; direct-label the first orange square \"chamber trend\" and the first blue dot \"birth gradient\", each in its series' ink; add a recessive shaded horizontal band from +49 to +109 behind the marks (the band the text cites). (b) right panel \u2014 drop the legend; direct-label the gray series \"pre-drift window\" and the blue series \"2016\u20132026\" once, at the first chamber.]",
+  "rationale": "Direct labels over legends: the current legend keys carry cipher codes ('(T)', '(X)') that mean nothing to a reader \u2014 a pure lookup tax for two series. The shaded band guides the eye to the stated finding ('one narrow band') using only numbers already in the paragraph, and the caption's \u00f7100 note removes the ruler-switch decoding step between figure and body; no datum changes.",
+  "support": 1,
+  "author_families": [
+   "fable"
+  ]
+ },
+ {
+  "id": "C44",
+  "locus": "4.6, 'Register by length of service, two readings.'",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "![](tenure_profile.png)\n\n*Register by length of service, two readings. Blue: within-member, each legislator's rate minus their own career mean \u2014 rises with tenure because within a career, years served and calendar year are one clock (its slope reproduces the +0.51 within-member drift). Orange: period-adjusted, rate minus its chamber \u00d7 year mean \u2014 falls with tenure, but this is the entry-cohort gradient (longer tenure at a fixed year = earlier cohort), not a within-career decline. Left-censored members dropped; error bars member-cluster bootstrap 95% intervals.*",
+  "proposed": "![](tenure_profile.png)\n\n*Register by length of service, two readings. Within-member (blue): each legislator's rate minus their own career mean \u2014 rises with tenure because within a career, years served and calendar year are one clock (its slope reproduces the +0.51 within-member drift). Period-adjusted (orange): rate minus its chamber \u00d7 year mean \u2014 falls with tenure, but this is the entry-cohort gradient (longer tenure at a fixed year = earlier cohort), not a within-career decline. Left-censored members dropped; error bars member-cluster bootstrap 95% intervals.*\n\n[Regenerate tenure_profile.png, all values unchanged: cut the in-plot title to its first line, \"Register by length of service \u2014 the two curves cross\" \u2014 the two explanatory lines duplicate the caption. Drop the legend box; direct-label each curve at its right end, \"within-member\" beside the high endpoint and \"period-adjusted\" beside the low endpoint, each in its curve's ink.]",
+  "rationale": "The three-line interpretive in-plot title restates the caption \u2014 non-data ink; and two diverging curves are the ideal case for end-of-line direct labels instead of a legend box. Leading the caption's identifications with the curve name (colour kept as redundant coding) means identity is no longer colour-alone.",
+  "support": 1,
+  "author_families": [
+   "fable"
+  ]
+ },
+ {
+  "id": "C41",
+  "locus": "4.6, 'Restricted to cohorts formed before the register moved'",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**Restricted to cohorts formed before the register moved, the gradient is already there.** The sharpest cell is the US Senate before any drift: among cohorts born 1917\u20131964, observed 1994\u20132004 \u2014 every one formed decades before the register began moving anywhere \u2014 the gradient is already full size, **+105 [+47, +155] per decade of birth**. *A juniority gradient in this register predates the drift, the machines, and the web.* Read the other way round \u2014 those cohorts' gradient IS the age profile, since cohort is pinned pre-drift \u2014 it fixes the age slope at **\u22120.88/decade** (clustered t \u22123.5) and, propagated along the identification line (whose invariant is the same-age decade-on total, period + cohort = **+2.11/decade**), bounds the *linear* cohort slope to **\u22120.03 [\u22120.52, +0.46]**. This view is interesting twice over: it answers \"did the models create this?\" (no), and as a bound it says the standing *level* of the gradient reads as an age-or-career clock, not a birth-cohort one. \u2020[^rapcid]",
+  "proposed": "**Restricted to cohorts formed before the register moved, the gradient is already there.** The sharpest cell is the US Senate before any drift: among cohorts born 1917\u20131964, observed 1994\u20132004 \u2014 every one formed decades before the register began moving anywhere \u2014 the gradient is already full size, **+105 [+47, +155] occurrences per 100k words per decade of birth** (+1.05 on the section's per-1,000 ruler). *A juniority gradient in this register predates the drift, the machines, and the web.* Read the other way round \u2014 those cohorts' gradient IS the age profile, since cohort is pinned pre-drift \u2014 it fixes the age slope at **\u22120.88 per 1,000 words per decade** (clustered t \u22123.5) and, propagated along the identification line (whose invariant is the same-age decade-on total, period + cohort = **+2.11 per 1,000 per decade**), bounds the *linear* cohort slope to **\u22120.03 [\u22120.52, +0.46] per 1,000 per decade**. This view is interesting twice over: it answers \"did the models create this?\" (no), and as a bound it says the standing *level* of the gradient reads as an age-or-career clock, not a birth-cohort one. \u2020[^rapcid]",
+  "rationale": "State units (honest-axes principle): no number in this paragraph carries a ruler, and it silently mixes two \u2014 +105 is on the figure's per-100k ruler (it matches the previous paragraph's +49..+109 band and the right panel), while the propagated numbers are per-1,000 (the invariant +2.11 equals the two-stamp sum +0.86 + 1.26). These are surfaced labels plus the \u00f7100 identity, not recomputations \u2014 but the per-1,000 attribution for \u22120.88/+2.11/\u22120.03 is inferred from that invariant, so confirm against apc_solution_line.py output before merging and drop the labels if it prints a different ruler.",
+  "support": 1,
+  "author_families": [
+   "fable"
+  ]
+ },
+ {
+  "id": "C42",
+  "locus": "4.6, 'What the family supports, and what it cannot.'",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "**What the family supports, and what it cannot.** No view settles the age-versus-cohort split; the identification wall stands, and the paper does not pretend otherwise. But the views are consistent and mutually reinforcing: a juniority gradient that is steady across legislatures at the individual level (space), exists before the models (pre-drift), bends upward exactly as drift-formed cohorts arrive (the one identification-free time statement), and is one members ride up within their own careers rather than only through replacement. The single citable figure \u2014 stated as the identified cohort\u2212age combination, not a pure cohort effect \u2014 is birth-decade **+0.92 (t = 12.5)** in the member-year panel with year fixed effects, carried in \u00a74.6b beside the other member-level predictors.",
+  "proposed": "**What the family supports, and what it cannot.** No view settles the age-versus-cohort split; the identification wall stands, and the paper does not pretend otherwise. But the views are consistent and mutually reinforcing: a juniority gradient that is steady across legislatures at the individual level (space), exists before the models (pre-drift), bends upward exactly as drift-formed cohorts arrive (the one identification-free time statement), and is one members ride up within their own careers rather than only through replacement. The slopes the section states on its shared ruler, collected in one place:\n\n| View | Held fixed | Slope on | Per 1,000 words, per decade | Inference |\n|---|---|---|---|---|\n| Two-clock panel | chamber (FE); spoken year in the same fit | birth year | +0.86 | t = 14.7, clustered on member |\n| Two-clock panel | chamber (FE); birth year in the same fit | spoken year | +1.26 | t = 13.4, clustered on member |\n| Within member | the member (FE) | spoken year | +0.51 | t = 6.0, clustered; 8,600 members with \u22653 years |\n| Within year and province | year, province | birth decade | +1.05 | t \u2248 8.5, clustered on member |\n\n(The pre-drift Senate cell and the per-chamber comparisons are on the figure's per-100k ruler and stay with the figure.) The single citable figure \u2014 stated as the identified cohort\u2212age combination, not a pure cohort effect \u2014 is birth-decade **+0.92 (t = 12.5)** in the member-year panel with year fixed effects, carried in \u00a74.6b beside the other member-level predictors.",
+  "rationale": "Right form for the job: the section announces 'a family of views' and then scatters five same-unit slopes across as many paragraphs; a small table is the form for comparing them (sometimes a table wins over prose). Each row carries its own estimand labels ('Held fixed' / 'Slope on') and the numeric column shares one unit, so no estimands mix within a column; every number and t is copied verbatim from this section's text.",
+  "support": 1,
+  "author_families": [
+   "fable"
+  ]
+ },
+ {
+  "id": "C45",
+  "locus": "4.6, 'Within-member (lifetime) register drift by birth cohort'",
+  "type": "prose",
+  "action": "rewrite",
+  "current": "![](lifetime_drift_by_cohort.png)\n\n*Within-member (lifetime) register drift by birth cohort \u2014 the paper's within-member estimator run inside each 10-year cohort, word-weighted, \u00b195% member-bootstrap CI. Positive means members gain register as they serve. The drift is positive or flat for every cohort and barely depends on birth year; the dotted line is the all-member pooled mean (+0.57, reproducing the committed within-member figure). Not uniform across legislatures \u2014 see text.* \u2020[^r46life]",
+  "proposed": "![](lifetime_drift_by_cohort.png)\n\n*Within-member (lifetime) register drift by birth cohort \u2014 the paper's within-member estimator run inside each 10-year cohort, word-weighted, \u00b195% member-bootstrap CI. Positive means members gain register as they serve. The drift is positive or flat for every cohort and barely depends on birth year; the dotted line is the all-member pooled mean (+0.57, reproducing the committed within-member figure); the grey figure above each point is that cohort's member count. Not uniform across legislatures \u2014 see text.* \u2020[^r46life]\n\n[Regenerate lifetime_drift_by_cohort.png, all values unchanged: drop the legend box \u2014 one data series plus a reference line needs none \u2014 and direct-label the dotted line at its right end \"all-member pooled mean +0.57\".]",
+  "rationale": "Single-series charts carry no legend box (direct-label rule), and every mark must be named: the grey per-point numbers (90, 325, \u2026 69) are currently undefined anywhere \u2014 confirm against lifetime_drift_by_cohort.py that they are member counts (if member-years, label that instead) before merging. Noted but not changed: the caption's '+0.57 \u2026 committed within-member figure' sits beside the body's '+0.51' within-member headline; reconciling those two specifications requires rerunning the scripts, so no proposal is made on the numbers themselves.",
+  "support": 1,
+  "author_families": [
+   "fable"
+  ]
+ }
+]

@@ -1,0 +1,3224 @@
+{
+ "C15": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "no data change \u2014 only the final clause is reworded; all ranges (\u2212173 to +413, +49 to +109), units, and estimand labels are preserved"
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 14.5
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "No numbers or findings change; the rewrite removes a real ambiguity \u2014 \"barely moves at the person level\" invites misreading the +49 to +109 gradient as small, when the point is its low variance across chambers \u2014 at a modest cost in vividness that the clarity gain justifies."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every reported result while replacing an ambiguous cross-level comparison with a precise, confident contrast between the two measured quantities."
+   },
+   {
+    "voter": "google",
+    "clarity": 4,
+    "why": "The proposal improves precision and clarity by replacing the informal phrase 'the thing that swings wildly' with the specific variables being compared.",
+    "voice": 4,
+    "keep": true,
+    "concision": 3,
+    "structural_soundness": 3,
+    "faithfulness": "pass"
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite fixes a genuine imprecision \u2014 the original's \"the thing that swings wildly...barely moves\" conflates two distinct quantities (the chamber-level time trend and the within-year birth gradient) \u2014 while preserving every number, the direction of the contrast, and a crisp declarative structure, at only a small cost in vividness (\"swings wildly/barely moves\" becomes \"is volatile/is not\")."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite correctly names the two distinct quantities (the across-chamber trend vs. the within-year birth gradient) rather than conflating them as one \"thing at two levels,\" fixing a real structural imprecision while keeping every number identical and matching the plain house voice."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 4,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "The rewrite correctly distinguishes two separate quantities (chamber trend vs. birth gradient) rather than treating them as one \"thing\" at two levels, making the statistical contrast both clearer and more accurate."
+   }
+  ]
+ },
+ "C18": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "No data change: all figures (+0.51/1,000/decade, t=6.0, 8,600 members, 40%, +2.35 at 30+ years, +0.6 to \u22122.3), signs, units, estimand labels, and footnotes are preserved; only framing/hedging of the \"members convert\" interpretation and the tenure-trap wording changed."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 15
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "All data preserved; the rewrite drops a conversion claim the following paragraph explicitly retracts and replaces self-congratulatory setup with a plain statement of the two-clocks mechanism, improving internal consistency and voice."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every reported result while replacing an unsupported conversion claim and self-conscious flourish with a clearer, plainer explanation of the confounding between tenure, calendar year, and entry cohort."
+   },
+   {
+    "voter": "google",
+    "clarity": 4,
+    "voice": 4,
+    "faithfulness": "pass",
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Removing the self-congratulatory 'neatest trap' aligns perfectly with the house voice, and clarifying that tenure and calendar year are the same clock improves readability without altering any data."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "All data (+0.51/decade, t = 6.0, 8,600 members, 40%, +2.35, +0.6 to \u22122.3, both curve directions) are preserved; the rewrite replaces an overclaim the very next paragraph retracts (\"not proven personal conversion\") with the plainly stated measured fact, and drops the self-congratulatory \"neatest trap\" while aligning the tenure-clock phrasing with the figure caption \u2014 a net gain in clarity, voice, and consistency at equal length."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "It keeps every statistic and effect direction while replacing an overclaim (\"establishes that members convert\") and a self-congratulating phrase (\"the section's neatest trap\") with plainer, better-supported statements, at only a small length cost."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "The rewrite removes two voice problems \u2014 the overclaim 'members convert' (which the next paragraph apparently walks back) and the self-congratulatory 'neatest trap' \u2014 while preserving every number and statistic exactly; the replacement phrasing is more precise and confident without being bland."
+   }
+  ]
+ },
+ "C10": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "All numbers, estimand labels (within-member own-career mean vs chamber \u00d7 year mean), sample size, t-stat, signs, and footnotes preserved; edits are framing-only \u2014 no data change."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 4,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 12.5
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 2,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": false,
+    "why": "All numbers, directions, and findings are preserved and the tenure non-identification point is stated a bit more explicitly, but the rewrite trades the crisp \"convert, not merely replaced\" (which claims only within-career change, not a mechanism) and the vivid \"neatest trap\" for the clunkier \"change while serving rather than the pattern arising only through replacement\" \u2014 a net blandification the modest clarity gain does not justify."
+   },
+   {
+    "voter": "google",
+    "why": "The rewrite homogenizes the prose, stripping out confident, punchy phrasing like 'the section's neatest trap' and 'members convert' in favor of flatter, more conventional academic language.",
+    "faithfulness": "pass",
+    "structural_soundness": 3,
+    "voice": 2,
+    "clarity": 3,
+    "concision": 3,
+    "keep": false
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Drops the unearned \u201cconvert,\u201d splits the FE result from the tenure identity, and keeps every statistic; a shade flatter than the original but easier to follow."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "All numbers and effect directions are preserved verbatim, and replacing \"establishes that members convert\" with \"change while serving\" is a legitimate interpretive tightening that aligns the paragraph with the paper's own caveat one paragraph later (\"not proven personal conversion\"), while splitting the result from the tenure non-identification argument aids comprehension; the cost is mild blandification (losing \"the section's neatest trap,\" one clunky replacement sentence, and a dangling \"convert\" scare-quote callback next paragraph), so voice and concision are a wash but the precision and consistency gains make it a keeper."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 3,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Every statistic, sample count, and effect direction is preserved, and replacing the mechanism-implying \"members convert\" with the calendar-confounded \"change while serving\" is a genuine precision gain, even though the rewrite trades away a little of the original's vividness (\"neatest trap\") for a slightly flatter, longer phrasing."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "Numbers and findings are preserved exactly; the rewrite sharpens the logical flow by replacing the cryptic \"neatest trap\" aside and the mechanism-implying \"convert\" with direct exposition of the calendar-time identity, making the tenure non-identification argument self-contained and clearer."
+   }
+  ]
+ },
+ "C8": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "All numbers (1917\u20131964, 1994\u20132004, +105 [+47, +155], \u22120.88/decade, t \u22123.5, +2.11/decade, \u22120.03 [\u22120.52, +0.46]), estimand labels, and findings claims are preserved; edits are purely stylistic \u2014 no data change."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 13.67
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Every estimate, interval, and directional claim is preserved verbatim while the compressed \"read the other way round\" parenthetical chain is unpacked into a traceable sequence of sentences, at essentially equal length and with the house voice's emphasis intact (only a slight flattening of \"interesting twice over\" to \"does two jobs\")."
+   },
+   {
+    "voter": "google",
+    "keep": true,
+    "faithfulness": "pass",
+    "voice": 4,
+    "why": "The rewrite significantly improves readability by breaking a dense, dashed run-on sentence into clear, traceable inferential steps while maintaining the confident tone and preserving all data.",
+    "clarity": 4,
+    "structural_soundness": 3,
+    "concision": 4
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Unpacks the APC identification into a followable chain without touching any estimate; the modest loss of punch (\u201cIS the age profile,\u201d the rhetorical no) is the price of making the bound readable."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Every number, interval, direction, and finding survives verbatim, and splitting the compressed \"read the other way round\" sentence into discrete inferential steps makes the identification argument genuinely easier to trace, at a minor cost in punch (the lost rhetorical question and \"(no)\") and a slight length increase."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Every estimate and conclusion is preserved, and splitting the compressed \"read the other way round\" chain into three explicit sentences makes the age-profile identification argument genuinely easier to trace at negligible length cost."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 4,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "The rewrite breaks the compressed identification logic into explicit traceable steps (\"The same result can be read as an age profile because cohort is pinned pre-drift. On that reading...\") while preserving every estimate and conclusion \u2014 an improvement in clarity without sacrificing concision."
+   }
+  ]
+ },
+ "C16": {
+  "faith": {
+   "current_matches": true,
+   "data_faithful": "pass",
+   "locatable": true,
+   "note": "No data change: all numbers, CIs, signs, units, and estimand labels preserved; the removed \"did the models create this? (no)\" clause is framing whose finding remains stated in the retained \"predates the drift, the machines, and the web\" sentence."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 15.83
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Every number, interval, and t-statistic is preserved; the paragraph split lets the load-bearing italic claim land before the identification move, and cutting the \"interesting twice over\" gloss and ALL-CAPS removes self-commentary without blanding the argument, since the italic sentence already answers whether the models created the gradient."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 5,
+    "concision": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The paragraph break cleanly separates the pre-drift finding from its identification argument, while removing redundant gloss and emphasis without changing any result or substantive caveat."
+   },
+   {
+    "voter": "google",
+    "concision": 4,
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 5,
+    "why": "Splitting the paragraph and removing the conversational meta-commentary improves readability while maintaining the confident, plain voice and keeping all quantitative data intact.",
+    "clarity": 4,
+    "faithfulness": "pass"
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The two-paragraph split gives the load-bearing italic claim its own landing place and the identification argument a clean run, while cutting the ALL-CAPS emphasis and the 'interesting twice over' self-gloss \u2014 both off-voice \u2014 with every number, interval, and finding (predating, age slope, cohort bound, age-clock reading) preserved intact."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "All data are preserved, and splitting existence from identification gives the load-bearing italic sentence room to land while the dropped \"interesting twice over\" gloss was redundant and self-congratulatory."
+   },
+   {
+    "voter": "deepseek",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The paragraph break separates the pre-drift evidence from the age/cohort identification bound \u2014 two distinct analytical moves the original jammed together \u2014 while dropping the self-congratulatory \"interesting twice over\" gloss that the italic sentence already answers."
+   }
+  ]
+ },
+ "C19": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "No data change \u2014 all figures (+0.57, +0.88, 10/22, UK +1.9, US House +0.5, 2006\u20132026), signs, and the within-member estimand are preserved; only framing wording changed."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 15.5
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Every number, direction, and the substantive large-chamber caveat are preserved; the edit only drops a self-commenting flourish and a fragile cross-paragraph quote, leaving the finding stated plainly and slightly tighter."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 5,
+    "concision": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every result while removing editorial throat-clearing and making the chamber-level qualification direct, self-contained, and more concise."
+   },
+   {
+    "voter": "google",
+    "structural_soundness": 3,
+    "faithfulness": "pass",
+    "clarity": 4,
+    "concision": 4,
+    "keep": true,
+    "why": "Removing the meta-commentary and direct quote streamlines the text and makes the finding stand more confidently on its own.",
+    "voice": 4
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "All numbers and findings (+0.57, +0.88, 10-of-22, UK +1.9, US House +0.5, the calendar-drift caveat) are preserved exactly, and cutting the meta-comment \"Interesting for the caveat it forces\" lets the chamber split land as the finding it is; the quoted \"sitting members convert\" echo to the previous paragraph is nice but its loss is minor since the pooled statement's antecedent sits in the same paragraph."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "All data (pooled +0.57, cohort peak +0.88, 10 of 22 chambers, UK +1.9, US House +0.5, 2006\u20132026 example) is unchanged, and dropping the self-announcing \"Interesting for the caveat it forces\" lets the chamber-split finding state itself, which fits the plain, confident house voice; the cost \u2014 \"the pooled statement\" is slightly less concrete than the quoted \"sitting members convert\" \u2014 is small and makes the qualification more robust to neighboring edits."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 4,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "Drops the self-referential \"Interesting for the caveat it forces\" and replaces the quoted fragment \"sitting members convert\" with the cleaner \"pooled statement\" \u2014 the chamber-split finding stands on its own without editorial scaffolding, and no numbers or findings change."
+   }
+  ]
+ },
+ "C11": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "No data change: +0.57 pooled, +0.88 1950s peak, 10 of 22 chambers, UK +1.9, US House +0.5, negative smaller chambers, 2006\u20132026 example, and the within-member estimand are all preserved; only framing and sentence structure differ."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 5,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 14.17
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "All estimates (+0.57, +0.88, 10/22, UK +1.9, US House +0.5) and directions are intact, and reorganizing around the cohort-stability vs chamber-heterogeneity contrast makes the scope condition easier to follow, at the modest cost of the original's more vivid \"rides the tide up\" phrasing."
+   },
+   {
+    "voter": "google",
+    "voice": 4,
+    "why": "The rewrite effectively breaks up the original's run-on sentences and makes the contrast between cohort stability and chamber heterogeneity much clearer without losing the confident voice or altering any data.",
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "faithfulness": "pass",
+    "clarity": 5
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite makes the cohort-versus-chamber contrast the paragraph\u2019s spine and unpacks a packed sentence, at only a modest cost in color in the lead."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every number, direction, and the conversion caveat while reorganizing the paragraph around the cohort-stability versus chamber-heterogeneity contrast, breaking up an overlong sentence and dropping the awkward \"Interesting for the caveat it forces\" meta-framing, at a negligible cost in length and the loss of the \"rides the tide\" image."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": false,
+    "why": "The rewrite preserves every figure and makes the cohort-vs-chamber contrast explicit, but it drops the deliberate \"tide\" callback that links this paragraph to the previous one's opener and replaces vivid, denser prose with stiff connective padding, so the current version carries the same structure with better voice and fewer words."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 4,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "The rewrite organizes the paragraph around its central contrast (cohort stability vs. chamber heterogeneity), making the scope condition legible before the interpretation without altering any data."
+   }
+  ]
+ },
+ "C7": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "No data change: the age = year \u2212 birth identification wall, the exact model-equivalence claim, the no-single-estimate conclusion, and the same three-way family of views are all preserved; edits are framing only."
+  },
+  "verdict": {
+   "accepted": false,
+   "keeps": 3,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 13.5
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves the identification claim and its scope (\"reproduce each other's fits exactly, for every number in this section\") while stating the decomposition and APC wall in a cleaner order, ending on the confidently plain \"without pretending to identify\" \u2014 at the modest cost of trading vivid phrasing like \"a wall no data removes\" for standard terminology."
+   },
+   {
+    "voter": "google",
+    "voice": 2,
+    "keep": false,
+    "clarity": 3,
+    "structural_soundness": 3,
+    "faithfulness": "pass",
+    "concision": 4,
+    "why": "The rewrite introduces academic jargon like \"temporal decomposition\" and \"identification problem,\" flattening the confident, plain-spoken voice of the original text."
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 3,
+    "voice": 2,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": false,
+    "why": "The rewrite is faithfully shorter but sands distinctive phrasing (\u201ca wall no data removes\u201d; views \u201cnamed for what it is interesting for\u201d) into academic diction and drops the cohort/period/career glosses, so it should not replace the current text."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every substantive claim (exact fit reproduction between the two models, no conclusive age/cohort estimate, the family-of-views strategy and its limits) while cutting roughly a quarter of the words, front-loading the estimand and the identification problem, and replacing process phrasing (\"what we want\") with direct statements; the only losses are minor rhetorical color (\"a wall no data removes\") and the inline cohort/period glosses, which \"birth cohort, period, or career stage\" mostly carries for this readership."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 3,
+    "voice": 3,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": false,
+    "why": "It changes no data and is tighter, but it deletes the closing signpost (\"The rest of this section is that family, each view named for what it is interesting for\") that orients the reader to the section's actual structure, blunts the plainer phrasing (\"a wall no data removes\" \u2192 \"an unavoidable identification problem\"), and ends on the mildly defensive \"without pretending,\" so it loses more than it gains."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 4,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "The rewrite sharpens the analytical framing with standard \"identification problem\" language and removes process-oriented hedging without weakening the substantive caveat about the age/cohort split."
+   }
+  ]
+ },
+ "C14": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "no data change \u2014 only the final signposting sentence about section structure is dropped; all statements of identity, identifiability, and estimand framing are preserved."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 15
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 3,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Deleting the self-narrating roadmap sentence costs almost no navigation (each view already opens with a bolded topic sentence) and lets the paragraph end on the identification point, which suits the confident plain house voice; no data is altered."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 5,
+    "concision": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The deletion preserves every substantive and empirical claim while ending more cleanly on the identification limit and removing unnecessary section narration."
+   },
+   {
+    "voter": "google",
+    "clarity": 4,
+    "keep": true,
+    "structural_soundness": 3,
+    "faithfulness": "pass",
+    "concision": 4,
+    "why": "Removing the meta-narrative sentence improves flow and confidence by ending on the substantive point rather than previewing the structure.",
+    "voice": 4
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The cut sentence is pure meta-narration that ends the paragraph on a clunky, self-conscious note (\"each view named for what it is interesting for\") and merely licenses the \"interesting because\" tic that recurs in the later view paragraphs; removing it lets the paragraph end on the strong identification claim (\"taken together they locate the gradient\") with no data, signposting, or substantive caveat lost, since the views that follow are bold-led and self-labeling."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 3,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "It removes only a redundant meta-signpost (\"the rest of this section is that family\") whose work is already done by the preceding \"family of views\" sentence, ending more firmly on the identification point without touching any data claim."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 4,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "The cut removes a meta-narrative signpost that tells readers what the section is about to do and why views are named as they are \u2014 ending on \"taken together they locate the gradient\" is a stronger substantive close that trusts the views to carry themselves without the narrator's annotation."
+   }
+  ]
+ },
+ "C17": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "no data change \u2014 all statistics (Wald p \u2248 10\u207b\u2077; +0.46 z=5.1; +0.65 z=2.6; +0.70/decade z=2.7; +30\u2192+98; +23\u2192+85), the both-ends bend, and the flat-chamber-mean qualifier are preserved; only interpretive framing sentences were trimmed."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 16
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Every number, z-score, and the both-ends caveat survive intact; the cuts remove only self-narration (\"Interesting because\u2026\") and self-congratulation (\"stated rather than hidden\"), and the identification-free point is already carried by the paragraph's opening sentence, so nothing substantive is lost."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 5,
+    "concision": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every result and the load-bearing both-ends caveat while removing self-narration and self-congratulation, making the passage plainer, tighter, and more confident."
+   },
+   {
+    "voter": "google",
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "clarity": 4,
+    "keep": true,
+    "why": "Cutting the self-congratulatory meta-narration strengthens the confidence and plainness of the prose while keeping every substantive data point and caveat intact.",
+    "faithfulness": "pass"
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Every statistic, contrast, and the load-bearing both-ends caveat survive verbatim; the cut material is pure meta-narration (\"Interesting because\u2026\") and self-congratulation (\"stated rather than hidden\"), whose removal sharpens the confident, plain voice without losing the identification-free framing already carried by the bold opener."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "All statistics, contrasts, and the both-ends caveat survive verbatim while the self-narrating \"Interesting because...\" and self-congratulating \"stated rather than hidden\" are cut, leaving a plainer, confident version whose lost \"identification-free form\" gloss is already carried by the section title and opening sentence."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 4,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "Cuts self-narration (\"Interesting because\u2026\") and self-congratulation (\"stated rather than hidden\") without touching a single number, preserving the honest caveat in plainer form."
+   }
+  ]
+ },
+ "C9": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "no data change \u2014 all statistics (Wald p \u2248 10\u207b\u2077; +0.46 z=5.1; +0.65 z=2.6; +0.70/decade z=2.7; +30\u2192+98; +23\u2192+85), signs, units, estimand labels, and the both-ends caveat are preserved; edits are rewording only."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 5,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 14
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Every number, z-value, and the both-ends caveat survive intact, while breaking the overloaded parenthetical sentence into clean declaratives and cutting the self-referential \"stated rather than hidden\" aside improves comprehension without blandifying the confident lead claim."
+   },
+   {
+    "voter": "google",
+    "why": "While it successfully removes the defensive hedging, it neuters the confident opening statement and chops the prose into bland, disconnected academic sentences.",
+    "concision": 3,
+    "clarity": 4,
+    "voice": 2,
+    "faithfulness": "pass",
+    "structural_soundness": 3,
+    "keep": false
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Every number and finding is intact; the rewrite splits a nested colon-and-parenthesis run into separate result, interpretation, and caveat sentences and drops the defensive \u201cstated rather than hidden\u201d without losing the two-ended bend."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "All data points survive verbatim and the substantive caveat stays prominent, while the rewrite breaks the over-nested parenthetical sentence into clean result/interpretation/complication units and cuts the self-congratulatory \"stated rather than hidden\" \u2014 the only loss is the punchy opener, which mostly duplicated the section title anyway."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "All statistics and findings are preserved verbatim, and breaking the dense parenthetical run-on into separate statistic/interpretation/complication sentences materially improves readability, even though the new opening line is slightly clunkier and drops the section-title echo."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 4,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "The rewrite preserves every number and statistic exactly while removing defensive hedging (\"Its complication is stated rather than hidden\") and editorial asides (\"Interesting because\"), letting the result and its honest caveat stand on their own."
+   }
+  ]
+ },
+ "C20": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "Only the hedging clause \"and the paper does not pretend otherwise. But\" is removed; +0.92 (t = 12.5), the year-FE member-year panel, the cohort\u2212age estimand label, and all stated findings are unchanged \u2014 no data change."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 15.83
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 3,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Dropping the self-referential \"the paper does not pretend otherwise\" and the underselling \"But\" removes defensive throat-clearing without touching the +0.92 (t = 12.5) figure or any claim about what was found, and the substantive caveat (the identification wall stands) is fully preserved."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 5,
+    "concision": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every empirical claim and statistic while removing defensive throat-clearing and presenting the synthesis more directly."
+   },
+   {
+    "voter": "google",
+    "keep": true,
+    "structural_soundness": 3,
+    "faithfulness": "pass",
+    "clarity": 4,
+    "concision": 4,
+    "voice": 5,
+    "why": "Removing the defensive phrasing strengthens the confident house voice without losing the substantive caveat about the identification wall."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 5,
+    "concision": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The cut removes a defensive self-referential assurance while keeping the substantive caveat (the identification wall stands) fully intact, and dropping \"But\" lets the synthesis land with the confidence the house voice wants."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The cut removes only performative self-reference (\"the paper does not pretend otherwise\") while the substantive caveat \u2014 the identification wall stands, no view settles the split \u2014 remains intact, and dropping \"But\" lets the synthesis land more directly; no data touched."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 4,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "Removes gratuitous hedging that weakens the synthesis claim, aligning with the confident-plain house voice."
+   }
+  ]
+ },
+ "C12": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "No data change: +0.92 (t = 12.5) and its estimand label are preserved, and the added \"pooled panel\" / \"not uniform across chambers\" qualifiers restate the manuscript's own \u00a74.6 finding (within-member drift positive in only 10 of 22 chambers)."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 14.5
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "All numbers and findings are preserved, the added chamber-scope caveat restates a result already reported earlier in \u00a74.6 (within-member drift positive in only 10 of 22 chambers) so the synthesis no longer overreaches, and cutting \"the paper does not pretend otherwise\" removes self-congratulatory defense in line with the house voice."
+   },
+   {
+    "voter": "google",
+    "structural_soundness": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "clarity": 4,
+    "concision": 4,
+    "voice": 5,
+    "why": "Removing the defensive authorial posturing strengthens the confident house voice, and breaking up the lengthy synthesis sentence improves readability while accurately scoping the within-member finding."
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Drops the defensive \u201cdoes not pretend otherwise\u201d and empty \u201cconsistent and mutually reinforcing,\u201d and correctly scopes the within-member claim to the pooled panel with the chamber non-uniformity the section already reports \u2014 a synthesis that currently overclaims."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every statistic and direction while adding the section's own already-reported scope condition (within-member drift positive in only 10 of 22 chambers) that the current synthesis omits, and it trades a meta-defensive aside for a direct statement of what survives the identification wall \u2014 a net gain in accuracy and voice at a trivial cost in length."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "It keeps every number and effect direction intact while cutting the defensive \"the paper does not pretend otherwise\" line and fixing the awkward \"is one members ride up\" construction, and adds the already-reported chamber scope condition so the synthesis doesn't overclaim."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "Stronger ending (claims that survive rather than disclaimers), fixes the grammatical knot in \"is one members ride up,\" and adds the already-reported chamber-scope condition so the synthesis does not sound more universal than the data supports."
+   }
+  ]
+ },
+ "C2": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "All figures (\u2212173 to +413, +49 to +109) preserved; the added \"words\" unit and \"\u00a74.5a instrument ruler\" attribution match the manuscript's own footnote [^r46apc] (\"instrument occurrences per 100k words per decade throughout \u2014 the same ruler as \u00a74.5a\") and the per-1,000 contrast matches the preceding paragraph \u2014 no data change."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 5,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 13.33
+  },
+  "votes": [
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every result and usefully makes the unit and scale change explicit, preventing readers from mistaking differently reported estimates for a hundredfold discrepancy."
+   },
+   {
+    "voter": "google",
+    "keep": false,
+    "why": "The addition of 'words' is helpful, but the conversational meta-commentary about the 'ruler' and 'rate above' is clunky and breaks the confident, plain house voice.",
+    "clarity": 3,
+    "structural_soundness": 3,
+    "faithfulness": "pass",
+    "voice": 2,
+    "concision": 2
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 2,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Naming the silent 1,000-to-100k switch in the main text (and restoring \u201cwords\u201d) stops +0.86 being misread against +49\u2013109; the parenthetical is heavy and a bit pedagogical, but it does not touch the data and the core sentences stay."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Verified against the draft: \u00a74.6 opens with +0.86 per 1,000 words and this paragraph switches to per-100k figures with no main-text bridge, so the rewrite's orientation ('words' restored from footnote r46apc's own unit statement, '\u00a74.5a instrument ruler' matching \u00a74.5a's established 'same ruler' language) fixes a genuine hundredfold-misreading risk while leaving every number and finding untouched."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "It names a real, otherwise footnoted-only unit switch (per-1,000 \u2192 per-100k) using the paper's own \"same ruler\" language and alters no number, preventing +0.86 from being misread against +49\u2013109."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 3,
+    "why": "Clarifies a silent unit switch (per-1,000 to per-100k) that could otherwise mislead a reader into seeing a hundredfold discrepancy where there is none, at modest cost in density."
+   }
+  ]
+ },
+ "C5": {
+  "faith": {
+   "current_matches": true,
+   "data_faithful": "pass",
+   "locatable": true,
+   "note": "Only the interpretive sentence about members converting is rehedged; all numbers, signs, estimand labels, and findings (+0.51/1,000/decade within member, t=6.0, 8,600 members, ~40%, +2.35, +0.6 to \u22122.3) are unchanged \u2014 no data change."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 13.83
+  },
+  "votes": [
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every reported result while replacing an overclaim of proven personal conversion with a clear provisional reading that aligns with the later cohort qualification."
+   },
+   {
+    "voter": "google",
+    "faithfulness": "pass",
+    "voice": 4,
+    "structural_soundness": 3,
+    "clarity": 4,
+    "why": "The revision resolves an internal consistency issue by replacing a flat assertion with a nuanced forward pointer while preserving the data and maintaining a confident, analytical voice.",
+    "keep": true,
+    "concision": 3
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 2,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Fixes a real overclaim (\u201cestablishes\u201d) that the next paragraph retracts, without touching any number; the pointer is useful, but \u201cOn its face this says\u201d is a hedge the house voice would rather drop."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite fixes a verified internal contradiction (line 1105's flat \"establishes\" vs line 1111's \"pooled, large-chamber statement... not proven personal conversion\") with an accurate forward pointer to the cohort split and a pre-echo of its exact \"sitting members convert\" phrasing, while altering no data and correctly flagging \u2014 not rewriting \u2014 the real +0.51/+0.57 and 6,913/8,600 tensions for the authors; the only cost is a somewhat wordier, slightly less punchy sentence."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Every figure is byte-identical (only one sentence is recast), and the rewrite fixes a real internal inconsistency by turning the over-strong flat assertion \"establishes that members convert\" into a face reading flagged for later qualification, which helps the section cohere; the only softness is the forward pointer naming the not-yet-introduced \"cohort split,\" a mild brush with the paper's no-forward-reference preference."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "Replaces a flat assertion later contradicted with a face-value reading that carries a forward pointer, resolving the internal inconsistency without altering any finding or number."
+   }
+  ]
+ },
+ "C3": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "no data change \u2014 the edit only rephrases the \"Read the other way round\" clause; all numbers, CIs, units, and estimand labels are preserved exactly."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 14.83
+  },
+  "votes": [
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 5,
+    "concision": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The split cleanly exposes the age-profile inversion and its consequence without changing any statistic or interpretation, while the italic emphasis fits the paper\u2019s confident register better than all caps."
+   },
+   {
+    "voter": "google",
+    "voice": 4,
+    "clarity": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Splitting the heavily punctuated sentence makes the mathematical derivation much easier to follow, and replacing the all-caps emphasis with italics aligns better with the document's styling.",
+    "concision": 3,
+    "faithfulness": "pass"
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Splits the stacked-aside sentence and swaps shouty IS for italics without touching any number, direction, or claim, so the inversion is readable in house voice."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Every statistic is preserved verbatim and splitting the overloaded em-dash sentence at the inversion makes the argument's pivot readable, while swapping the manuscript's lone all-caps 'IS' for italics brings it in line with the paper's own bold/italic emphasis conventions without softening anything."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite splits an overstacked em-dash sentence into two and replaces the shouting all-caps \"IS\" with the paper's italic convention, improving readability of the pivotal inversion while leaving every number, interval, and finding untouched."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "The rewrite unsnarls a sentence that stacks two em-dash asides and a bound into one breathless span \u2014 the split makes the pivotal inversion readable \u2014 and replaces jarring all-caps with italics that match the paper's conventions, without touching a single number."
+   }
+  ]
+ },
+ "C1": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "Only the closing clause changes (\"named for what it is interesting for\" -> \"opened with the claim it supports\"); no data change."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 14.67
+  },
+  "votes": [
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The replacement preserves every substantive claim while describing the section\u2019s findings-first organization more plainly and accurately than the current final clause."
+   },
+   {
+    "voter": "google",
+    "keep": true,
+    "structural_soundness": 3,
+    "faithfulness": "pass",
+    "clarity": 4,
+    "concision": 4,
+    "why": "The proposed change accurately and plainly describes the upcoming structure, removing a slightly clunky phrase.",
+    "voice": 4
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The original closer is clunky and misnames the bolded leads, which state findings; the rewrite describes that structure plainly without changing any data."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite replaces a convoluted and slightly inaccurate structural signpost with a plainer, more accurate one \u2014 the views in \u00a74.6 are indeed each opened by a bolded claim, not named for an interest \u2014 and touches no data."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The section's views genuinely open with the finding each supports (verified against the bolded leads), so the new final clause is more accurate and plainer than the awkward \"named for what it is interesting for,\" with no data altered."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "The rewrite replaces opaque phrasing with a concrete structural description that better matches what the section actually does, without touching any data or findings."
+   }
+  ]
+ },
+ "C4": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "no data change \u2014 only the framing phrase \"Its complication is stated rather than hidden\" becomes \"The complication\"; all statistics (p \u2248 10\u207b\u2077, +0.46/z=5.1, +0.65/z=2.6, +0.70/decade/z=2.7, +30\u2192+98, +23\u2192+85) and the both-ends caveat are preserved."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 16.17
+  },
+  "votes": [
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 5,
+    "concision": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every result while removing a self-congratulatory aside and stating the substantive complication more directly."
+   },
+   {
+    "voter": "google",
+    "why": "Removing the self-congratulatory meta-commentary aligns perfectly with the house voice rule against praising one's own candor.",
+    "clarity": 4,
+    "voice": 5,
+    "keep": true,
+    "structural_soundness": 3,
+    "faithfulness": "pass",
+    "concision": 4
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Cuts the self-congratulatory \u201cstated rather than hidden\u201d aside; naming the complication is enough, and the rest of the paragraph is unchanged."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The change swaps a self-congratulatory aside (\"Its complication is stated rather than hidden\") for a direct statement of the complication itself, which reads more plainly and confidently while leaving every number and the substance of the caveat intact."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "All data, statistics, and findings are unchanged; the edit replaces the self-congratulating meta-claim \"is stated rather than hidden\" with a plain \"The complication:\", which is more concise and better matches the house voice's rule against praising its own candor while still presenting the identical caveat."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 5,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 5,
+    "why": "Cutting the self-congratulatory \"stated rather than hidden\" produces the same caveat more cleanly; the data is untouched and the direct-transition \"The complication:\" reads stronger than the original."
+   }
+  ]
+ },
+ "C6": {
+  "faith": {
+   "current_matches": true,
+   "data_faithful": "pass",
+   "locatable": true,
+   "note": "Only the hedging clause \"and the paper does not pretend otherwise\" is dropped; +0.92 (t = 12.5), the estimand label, and all findings are preserved \u2014 no data change."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 15.33
+  },
+  "votes": [
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 5,
+    "concision": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every finding and statistic while removing defensive self-reference, making the limitation sound cleaner and more confident without weakening it."
+   },
+   {
+    "voter": "google",
+    "voice": 5,
+    "structural_soundness": 3,
+    "clarity": 4,
+    "concision": 4,
+    "keep": true,
+    "why": "Removing the defensive self-reference perfectly aligns with the plain, confident house voice guidelines and improves concision without altering data.",
+    "faithfulness": "pass"
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Cutting \"and the paper does not pretend otherwise\" removes defensive self-reference without losing the identification-wall caveat, which the remaining sentence already states."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Cuts a self-referential assurance clause ('the paper does not pretend otherwise') that adds no information beyond what the surrounding bounds-reporting already demonstrates, tightening the sentence without touching the +0.92 (t = 12.5) figure or any substantive claim."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 3,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "It removes only a defensive, self-referential clause while keeping the full admission (\"the identification wall stands\") and all data intact, matching the house voice of plain confidence with substantive caveats preserved."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "faithfulness": "pass",
+    "why": "Cutting \"and the paper does not pretend otherwise\" removes a defensive self-reference without altering any data or meaning \u2014 the section already shows restraint through content (reporting bounds, not pretending to settle the age-cohort split), so the phrase is redundant throat-clearing."
+   }
+  ]
+ },
+ "C38": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "Only the framing clause \"Its complication is stated rather than hidden\" becomes \"The complication\"; all statistics, signs, and findings are unchanged \u2014 no data change."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 15.67
+  },
+  "votes": [
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 5,
+    "concision": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every result and substantive caveat while replacing self-congratulatory framing with a direct, confident transition."
+   },
+   {
+    "voter": "google",
+    "structural_soundness": 3,
+    "concision": 4,
+    "faithfulness": "pass",
+    "why": "Removing the self-congratulatory meta-commentary about stating rather than hiding the complication makes the text plainer and more confident, better matching the house voice.",
+    "keep": true,
+    "clarity": 4,
+    "voice": 5
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Cuts a self-congratulatory flourish about the paper's own honesty while keeping the caveat and every number intact."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The swap of \"Its complication is stated rather than hidden:\" for \"The complication:\" removes a self-congratulatory aside about the paper's own transparency while preserving every statistic, the direction of the effect, and the substantive caveat (the both-ends bend on thin cells) verbatim \u2014 plainer, shorter, and squarely in the confident house voice."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 3,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The change swaps the self-congratulatory \"Its complication is stated rather than hidden\" for a plain \"The complication:\", keeping the substantive caveat and every statistic verbatim, matching the challenge-not-apology house voice, and harmonizing with the sibling \"views\" that introduce their caveats without praising their own honesty."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 4,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 5,
+    "why": "Removes self-congratulation ('stated rather than hidden') while preserving every substantive caveat verbatim \u2014 exactly the kind of voice edit the challenge-not-apology memo calls for."
+   }
+  ]
+ },
+ "C40": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "No data change \u2014 the edit only removes hedging (\"and the paper does not pretend otherwise\", \"stated as\"); the +0.92 (t = 12.5) figure, the cohort\u2212age estimand label, and the unresolved-identification claim are preserved."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 15.83
+  },
+  "votes": [
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 5,
+    "concision": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every empirical claim and statistic while removing defensive self-reference and stating the identification limit more directly."
+   },
+   {
+    "voter": "google",
+    "keep": true,
+    "structural_soundness": 3,
+    "why": "Removing the defensive meta-commentary strengthens the voice by stating the limitation plainly and confidently without apologizing for it.",
+    "concision": 4,
+    "clarity": 4,
+    "voice": 5,
+    "faithfulness": "pass"
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Cuts the defensive self-reference and the \u201cstated as\u201d meta-layer without touching the identification caveat or the +0.92 figure, which is the house voice."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Removes two defensive meta-layers (\"the paper does not pretend otherwise\", \"stated as\") while keeping the substantive caveat (the identification wall stands) and every number, statistic, and qualifier \u2014 including \"not a pure cohort effect\" \u2014 fully intact, yielding plainer, more confident prose at no cost to the data."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 3,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite removes only defensive meta-commentary (\"the paper does not pretend otherwise\", \"stated as\") while preserving the substantive caveat, the identified-combination scoping, and every number and claim verbatim \u2014 a clean challenge-not-apology improvement with no loss of content."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 5,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 5,
+    "why": "Removes defensive self-reference (\"the paper does not pretend otherwise\") and a framing crutch (\"stated as\") without touching any data or substantive caveat \u2014 exactly the challenge-not-apology edit the voice rules call for."
+   }
+  ]
+ },
+ "C37": {
+  "faith": {
+   "current_matches": true,
+   "data_faithful": "pass",
+   "locatable": true,
+   "note": "no data change \u2014 all numbers (+105 [+47, +155]; \u22120.88/decade, t \u22123.5; +2.11/decade; \u22120.03 [\u22120.52, +0.46]), estimand labels, and findings preserved; only sentence structure reordered"
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 14.33
+  },
+  "votes": [
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every result while separating the age-slope calculation from the propagated cohort bound, making the identification argument easier to follow without weakening its confident voice."
+   },
+   {
+    "voter": "google",
+    "structural_soundness": 3,
+    "faithfulness": "pass",
+    "concision": 4,
+    "clarity": 5,
+    "keep": true,
+    "voice": 4,
+    "why": "Splitting the overloaded calculation sentence significantly improves readability by untangling nested parentheticals and letting each derived value land clearly."
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Splitting the packed sentence lands \u22120.88 and the cohort bound in separate stress positions and restores subject\u2013verb proximity, without touching any figure; the extra \u201cpins the age clock\u201d restatement and pinned\u2192fixed swap are small costs."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "All numbers, signs, intervals, and findings are identical; splitting the overloaded \"fixes \u2026 and \u2026 bounds\" sentence into two sentences that each close on their own statistic genuinely improves readability, and \"the cell pins the age clock\" sets up the closing \"age-or-career clock\" payoff without softening the register."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 2,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Splitting the overloaded sentence lets each computation close on its own number (\u22120.88 age slope, then the \u22120.03 cohort bound) with no data altered, though the added \"pins the age clock\" clause slightly duplicates \"fixes the age slope.\""
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 3,
+    "why": "Splits an overpacked sentence so each number (\u22120.88, cohort bound) closes in its own stress position; no data touched and voice preserved."
+   }
+  ]
+ },
+ "C39": {
+  "faith": {
+   "current_matches": true,
+   "data_faithful": "pass",
+   "locatable": true,
+   "note": "no data change \u2014 all figures (+0.57, +0.88, 10/22 chambers, UK +1.9, US House +0.5, 2006\u20132026) and the within-member/cohort estimand are preserved; only sentence order and phrasing differ"
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 14.67
+  },
+  "votes": [
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite fixes the dangling modifier and restores subject\u2013verb proximity while preserving every result, qualification, and numerical value."
+   },
+   {
+    "voter": "google",
+    "keep": true,
+    "faithfulness": "pass",
+    "concision": 3,
+    "why": "The rewrite cleanly resolves a dangling modifier and improves subject-verb proximity without compromising the confident house voice or altering the data.",
+    "voice": 4,
+    "clarity": 4,
+    "structural_soundness": 3
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The second sentence is a genuine Gopen\u2013Swan fix (estimator as subject, parenthetical off the subject\u2013verb path); the shorter lead no longer dangles and every number and finding is untouched."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "All data identical; the rewrite fixes a genuine dangling modifier in the bold lead and unblocks the subject\u2013verb path by moving the methodological parenthetical to the end of the sentence, all while keeping the punchy register (\"rides the tide up,\" the forced-caveat framing) intact."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "All numbers and findings are unchanged, and the rewrite genuinely fixes a dangling modifier and un-buries the subject\u2013verb path without blanding the voice, though the dropped \"that career drift\" slightly weakens the back-reference."
+   },
+   {
+    "voter": "deepseek",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Clean grammatical fix: resolves the dangling participial (\"Splitting...\" with \"cohort\" as subject) and pulls the methodological parenthetical out of the subject-verb gap, without touching a single number."
+   }
+  ]
+ },
+ "C36": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "no data change \u2014 only the final sentence's phrasing is reworded; all estimand labels and the APC non-identifiability claim are intact"
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 14.83
+  },
+  "votes": [
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every substantive claim while replacing an awkward closing phrase with a cleaner, more direct guide to the section\u2019s progression."
+   },
+   {
+    "voter": "google",
+    "why": "The proposed rewrite strengthens the stress position of the paragraph by replacing a weak prepositional ending with a clear, active closing sentence.",
+    "voice": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "faithfulness": "pass",
+    "concision": 4,
+    "clarity": 4
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The last sentence was the paragraph's one weak close \u2014 \"named for what it is interesting for\" is a mushy double-preposition in stress position \u2014 and \"works through that family, one view at a time\" puts the action in the verb without touching any claim."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Only the last sentence changes: it swaps the strained double-preposition close (\"named for what it is interesting for\") for a tighter, plain-confident roadmap sentence that better uses the stress position, at the small cost of no longer previewing the naming motif \u2014 which the very next bold view-lead demonstrates anyway; no numbers, directions, or findings are touched."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The revision swaps a mushy double-preposition tail (\"named for what it is interesting for\") for a concrete, verb-driven stress position (\"works through that family, one view at a time\") with no data change and only a minor loss of orientation detail."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 4,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "The current stress-position close drifts into a mushy double-preposition (\"what it is interesting for\"); the rewrite lands on a concrete, active verb (\"works through\") that tells the reader what comes next."
+   }
+  ]
+ },
+ "C25": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "The added \"+0.51 the fixed-effects form gave above\" accurately restates the manuscript's own within-member fixed-effects slope (+0.51 per 1,000 per decade, t = 6.0, line 1105); all other figures (+0.57, +0.88, 10/22 chambers, UK +1.9, US House +0.5) are preserved \u2014 no data change."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 14
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Both +0.57 and +0.51 are genuine, unaltered figures from their respective estimators (verified in lifetime_drift_by_cohort.txt and the \u00a74.6 text), and naming them side by side fixes a real antecedent collision that invites a false-contradiction reading, at the cost of a slightly heavier but load-bearing parenthetical."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The added comparison preserves both reported estimates and efficiently clarifies that +0.57 and +0.51 come from different within-member specifications, preventing an apparent contradiction at the cost of only a slightly denser parenthesis."
+   },
+   {
+    "voter": "google",
+    "why": "The addition successfully clarifies the distinction between the two estimators' values (+0.57 vs +0.51) to prevent reader confusion without disrupting the confident house voice.",
+    "voice": 4,
+    "clarity": 4,
+    "keep": true,
+    "concision": 3,
+    "structural_soundness": 3,
+    "faithfulness": "pass"
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The +0.51/+0.57 collision is real two paragraphs apart; naming both existing numbers as two estimator forms, without changing either, prevents a false-contradiction reading at only a small cost in parenthetical density."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The change faithfully juxtaposes two already-present numbers (+0.57 pooled within-member slope vs +0.51 full-panel fixed-effects estimate, confirmed in lifetime_drift_by_cohort.txt) to resolve a genuine antecedent gap that could otherwise read as a contradiction, without altering any data."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 3,
+    "why": "Disambiguates +0.57 from +0.51 \u2014 both already in the paper \u2014 by naming the estimator each belongs to; prevents a false-contradiction reading without altering any data."
+   }
+  ]
+ },
+ "C24": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "No data change: the inserted unit gloss \"per 100k words per decade of birth\" matches the units the manuscript already assigns these gradients (figure caption line 1103, band at line 1095), and the \"Its complication is stated rather than hidden\" \u2192 \"It comes with a complication\" edit is framing only."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 15.17
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The added unit (per 100k per decade) matches the figure caption's ruler and prevents a 100\u00d7 misreading against the paragraph's per-1,000 contrasts, and dropping \"stated rather than hidden\" removes self-congratulation while keeping the caveat intact."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 5,
+    "concision": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every result, supplies the missing unit needed to interpret the tripling figures correctly, and replaces a self-congratulatory aside with a direct statement of the substantive complication."
+   },
+   {
+    "voter": "google",
+    "concision": 4,
+    "faithfulness": "pass",
+    "why": "Adding the units clarifies the metric without altering the underlying data, and removing the self-congratulatory phrase perfectly aligns with the mandated plain, confident house voice.",
+    "structural_soundness": 3,
+    "voice": 5,
+    "keep": true,
+    "clarity": 5
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The unit label stops +30\u2192+98 being read against the paragraph's unitless APC contrasts, and cutting \"stated rather than hidden\" removes self-congratulation while leaving the both-ends complication fully stated."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The added ruler (\"per 100k words per decade of birth\") is verified correct against the era-gradient source and figure caption and prevents a real misreading of +30\u2192+98 against the paragraph's per-1,000 contrasts, while \"It comes with a complication\" drops the self-congratulating \"stated rather than hidden\" without weakening the caveat itself."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "The unit specification prevents misreading against different denominators, and \"comes with a complication\" matches the confident-plain house voice instead of claiming credit for stating a limitation."
+   }
+  ]
+ },
+ "C23": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "No data change: the proposal only makes implicit units explicit, and all four added units were verified correct against the manuscript (+105 is per 100k words per the \u00a74.6 band and figure caption; \u22120.88, +2.11, \u22120.03 are per 1,000 words per decade, with +2.11 matching the stated +1.26 + +0.86 per-1,000-words slopes)."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 15
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The added unit tags are verified correct against apc_solution_line.txt (per-1,000 solution-line quantities) and \u00a74.6's per-100k band, resolving an apparent hundredfold contradiction between +105 and \u22120.88 without touching any number or interval."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 5,
+    "concision": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The added unit labels faithfully expose the paragraph\u2019s two different rate scales, preventing a false hundredfold contradiction while preserving every estimate, interval, and interpretation."
+   },
+   {
+    "voter": "google",
+    "voice": 4,
+    "concision": 3,
+    "clarity": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Adding explicit unit scales resolves a massive apparent numerical discrepancy between the +105 and -0.88 figures without altering the underlying data or the confident voice.",
+    "faithfulness": "pass"
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 5,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Unit tags correctly park +105 on the previous paragraph's per-100k ruler and the solution-line quantities on the opening paragraph's per-1,000 ruler, killing a silent hundredfold mix without touching any number."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 2,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The unit tags are all verifiably correct against apc_solution_line.txt and the footnoted rulers, every number is untouched, and they resolve a real apparent hundredfold contradiction between +105 and \u22120.88 that the paragraph itself invites the reader to compare \u2014 at a modest cost in repetition that could later be trimmed by stating the solution-line ruler once."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 5,
+    "concision": 4,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 3,
+    "why": "The proposal resolves a genuine ambiguity \u2014 the paragraph silently mixes per-100k and per-1,000 scales, making +105 and \u22120.88 look like a hundredfold contradiction \u2014 by adding unit tags that change no number, just clarify which ruler each quantity uses."
+   }
+  ]
+ },
+ "C21": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "Only the closing phrase is reworded (\"named for what it is interesting for\" -> \"named for what makes it interesting\"); no data change."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 14.5
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "A minimal one-phrase repair that smooths the awkward \"what it is interesting for\" without touching any number, view, or claim; the slight shift from \"what the view is useful for\" to \"what makes it interesting\" is a tolerable cost for readable syntax."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 5,
+    "concision": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite fixes the awkward closing construction with a grammatical, plain alternative while preserving the paragraph\u2019s meaning, emphasis, and all empirical claims."
+   },
+   {
+    "voter": "google",
+    "why": "The rewrite seamlessly fixes an awkward closing phrase into a more natural and grammatically correct construction while perfectly preserving the original meaning, voice, and tone.",
+    "clarity": 4,
+    "concision": 4,
+    "voice": 4,
+    "keep": true,
+    "structural_soundness": 3,
+    "faithfulness": "pass"
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The double-\"for\" close is a real stumble, and \"what makes it interesting\" is the same naming-device signpost in working English, with no claim or number touched."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The sole change swaps the slightly awkward \"what it is interesting for\" for the idiomatic \"what makes it interesting,\" improving the sentence's landing without touching any data, claim, or the paragraph's announced device."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 3,
+    "why": "Fixes the ungrammatical \"what it is interesting for\" to \"what makes it interesting\" without touching anything else; the author's announced device of naming each view for its interest is preserved exactly."
+   }
+  ]
+ },
+ "C22": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "All ranges, signs, and units preserved; the added \"five chambers with exact member birth years\" and \"per-100k ruler of \u00a74.5a\" restate facts already in the passage's footnote [^r46apc] (line 1123), so no data change."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 13.83
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 2,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Verified against the draft's own footnote [^r46apc]: the five-chamber restriction and the per-100k ruler are real and load-bearing, and surfacing them fixes a misleading \"every chamber\" (readable as all 22, in the wrong units) at the cost of one slightly heavier clause."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every result while making the five-chamber scope and unit basis explicit, preventing two plausible misreadings at the cost of only modest added length."
+   },
+   {
+    "voter": "google",
+    "structural_soundness": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "clarity": 4,
+    "voice": 4,
+    "why": "Moving the five-chamber restriction and unit clarification from the footnote into the main text prevents a misleading overgeneralization without compromising the confident voice.",
+    "concision": 3
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 2,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The current \u201cevery chamber\u201d reads as all 22 after the section\u2019s opening count, and relocating the five-chamber restriction (and the unit switch) from the existing footnote into the paragraph is a real scope fix that leaves the numbers, the lead, and the closer untouched."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite lifts the section's own footnote restriction (five chambers with exact birth years, \u00a74.5a's per-100k ruler) into the main text so the paragraph no longer reads as all 22 chambers, and every number matches the APC decomposition output unchanged."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "The restriction to five chambers corrects a scope error that the current text borrows from the footnote \u2014 a reader of the main text alone would wrongly infer 22 chambers \u2014 and the per-100k signal prevents unit confusion from the opening paragraph, so the added words earn their keep."
+   }
+  ]
+ },
+ "C33": {
+  "faith": {
+   "current_matches": true,
+   "data_faithful": "pass",
+   "locatable": true,
+   "note": "Pure structural split at verified anchors (lines 1786/1795, section spans 1398\u20132076); no datum changes, though later cross-references to \u00a74.6b (lines 3541, 4480\u20134481, 4640, 4691) cite material that would move to 4.6c and would need renumbering."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 14.83
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 4,
+    "keep": true,
+    "why": "The seam is well-chosen \u2014 the \"sixth of the variance\" paragraph genuinely closes the static predictor analysis and the Labov-hypothesis header opens the group-dynamics material at a different epistemic tier \u2014 and since linear order is unchanged all dependencies resolve; the only follow-ups are mechanically renumbering ~8 later \"\u00a74.6b\" cross-references that now point at 4.6c material, and accepting that the class-table caveats sit one heading away from the tables they qualify (flagged honestly in the proposed 4.6c title)."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 3,
+    "concision": 4,
+    "structural_soundness": 5,
+    "keep": true,
+    "why": "The split creates a clean boundary after the completed static predictor analysis, while the Labov hypothesis, chase-and-flight evidence, prominence patterns, word-mix check, and caveats form a coherent interpretive and dynamic sequence without stranding dependencies."
+   },
+   {
+    "voter": "google",
+    "structural_soundness": 5,
+    "clarity": 4,
+    "concision": 4,
+    "keep": true,
+    "why": "The split separates the static class and predictor analysis from the dynamic group-level material (flight/chase, prominence, word mix), keeping dependencies intact while significantly improving the readability and organization of an overloaded 678-line section.",
+    "voice": 3,
+    "faithfulness": "pass"
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 4,
+    "structural_soundness": 4,
+    "keep": true,
+    "why": "Splitting after the joint-model R\u00b2 close gives the predictor analysis a real ending and puts chase-and-flight, prominence, and word-mix under their own heading without moving data or breaking the 4.6b\u21924.6c sequence, even though a few class-specific caveats ride into 4.6c."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 4,
+    "keep": true,
+    "why": "The split lands exactly on an existing subsection boundary at a natural conclusion paragraph (the sixth-of-variance headline), all dependencies resolve forward (prominence-as-predictor and the crossover are introduced in the retained 4.6b), and it fits the manuscript's lettered-subsection convention while halving a 678-line section \u2014 the only costs are mechanical renumbering of a few appendix \"\u00a74.6b\" pointers (D.2/D.3 prominence, artifacts table) and a slightly blurred static/dynamic framing since the era-panel chase discussion stays in 4.6b."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Splitting the 678-line section at the grand-model conclusion is a sound, clearly-beneficial boundary that misstates no data and strands nothing in-document, but it leaves ~7 downstream \"\u00a74.6b\" labels (word-mix/vector, family-signature, chase-and-flight, prominence, and the Appendix C script table) pointing at material that becomes 4.6c, so those must be relabeled when the split is applied."
+   }
+  ]
+ },
+ "C34": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "fail",
+   "note": "The condensation drops several data: the linear-form check (+0.020 per log-unit, t 2.05, shape disappears), the top-quintile easing off the Q4 peak, the joint-model class-block p = 0.56 (only leave-one-out 0.62/0.54 kept), the finding that class survives cohort/education/prominence, and the finding that Indoors stays marginally alive beside either single ladder (proposed says only that the pair absorbs it)."
+  },
+  "verdict": {
+   "accepted": false,
+   "keeps": 0,
+   "n": 0,
+   "dropped": "data_changed",
+   "composite": 0
+  },
+  "votes": []
+ },
+ "C35": {
+  "faith": {
+   "current_matches": true,
+   "data_faithful": "fail",
+   "locatable": true,
+   "note": "Proposal drops the \"short of significance\" qualifier on the \u22120.022/t=\u22121.67 compression trend (turning a non-significant drift into an unqualified narrowing claim), and also drops the era labels 1997\u20132001/2022\u20132026 for the +0.141/+0.079 values and the \"narrowest gap in the machine-era bin\" finding."
+  },
+  "verdict": {
+   "accepted": false,
+   "keeps": 0,
+   "n": 0,
+   "dropped": "data_changed",
+   "composite": 0
+  },
+  "votes": []
+ },
+ "C30": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "Heading reword only; the \"four\" count and all n's (4,056; 3,631) remain stated in the body text \u2014 no data change."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 14
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 2,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The section fits seven blocks, not four, so the current heading contradicts its own first sentence; the proposed title is accurate, though it wordily duplicates that sentence verbatim."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite replaces a misleading count with a precise, plain description of the regression\u2019s scope without changing any finding or datum."
+   },
+   {
+    "voter": "google",
+    "why": "The proposed heading fixes a factual contradiction regarding the number of predictors while maintaining a clear, confident tone.",
+    "clarity": 5,
+    "faithfulness": "pass",
+    "voice": 4,
+    "keep": true,
+    "structural_soundness": 3,
+    "concision": 3
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The current heading undercounts the table (seven blocks, not four) and is already contradicted by the subsection\u2019s opening clause, which the proposed title simply promotes."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Heading-only change with no data touched; the current \"All four\" is inaccurate since seven blocks enter the table and the full-panel four are never enumerated at the heading, while the proposed title simply promotes the section's own accurate, plain first sentence into the slot."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 3,
+    "why": "The current heading asserts 'four' predictors while the subsection covers more blocks, creating an internal contradiction that its own first sentence already resolves; the proposed title lifts that sentence verbatim, fixing the miscount at a trivial word-count cost."
+   }
+  ]
+ },
+ "C26": {
+  "faith": {
+   "current_matches": true,
+   "data_faithful": "pass",
+   "locatable": true,
+   "note": "Pure reordering: the Prominence table, two-shapes paragraph, four-marker synthesis, and depth paragraph move intact to before the joint model; the unlisted intervening chase-and-flight paragraph stays in place, so no data change."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 4,
+   "n": 6,
+   "voter_faith_fail": true,
+   "composite": 13.83,
+   "voter_flag": "anthropic: Moving prominence before the joint model is a real improvement in principle (the model consumes the D.3 bins sight-unseen at lines 1619 and 1695 of analysis/s10/S10-WRITEUP-DRAFT.md), but the move as specified excludes the paragraph at lines 1968\u20131977 (\"That is what a chase-and-flight cycle looks like from four angles at once\u2026\"), stranding its antecedent \u2014 the four-marker synthesis \u2014 350 lines earlier, and relocates a synthesis that cites the office-holder result (Appendix D.4, first substantiated in Flight at line 1827) ahead of the section that introduces it."
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "fail",
+    "clarity": 2,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 2,
+    "keep": false,
+    "why": "Moving prominence before the joint model is a real improvement in principle (the model consumes the D.3 bins sight-unseen at lines 1619 and 1695 of analysis/s10/S10-WRITEUP-DRAFT.md), but the move as specified excludes the paragraph at lines 1968\u20131977 (\"That is what a chase-and-flight cycle looks like from four angles at once\u2026\"), stranding its antecedent \u2014 the four-marker synthesis \u2014 350 lines earlier, and relocates a synthesis that cites the office-holder result (Appendix D.4, first substantiated in Flight at line 1827) ahead of the section that introduces it."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "fail",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 2,
+    "keep": false,
+    "why": "Prominence and the four-marker synthesis belong before the joint model, but the move as specified leaves the following \u201cfour angles at once\u201d chase-and-flight paragraph behind, stranding its reference from the synthesis it interprets."
+   },
+   {
+    "voter": "google",
+    "faithfulness": "pass",
+    "concision": 4,
+    "structural_soundness": 5,
+    "why": "Moving the prominence findings and four-marker synthesis before the joint model logically ensures all individual predictors are defined and summarized before the model relies on them.",
+    "voice": 3,
+    "clarity": 5,
+    "keep": true
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 4,
+    "structural_soundness": 4,
+    "keep": true,
+    "why": "A predictor belongs before the model that consumes it, and the four-marker shape synthesis is the right capstone of the member-level gradients; the leftover chase-and-flight paragraph after Flight loses its immediate antecedent but no data, table, or citation is stranded or altered."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 4,
+    "structural_soundness": 4,
+    "keep": true,
+    "why": "The move fixes a genuine ordering defect \u2014 the joint model introduces and fits prominence quintiles 300 lines before the prominence result appears, and all four markers (class, education, office, prominence) are established before line 1613 so the synthesis works as their capstone \u2014 at the cost of one orphaned chase-and-flight paragraph whose \"four angles at once\" back-reference stretches across three subsections and whose era-test recap lands adjacent to Flight's own near-identical null report, a seam worth a light retouch but not a reason to reject."
+   },
+   {
+    "voter": "deepseek",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 4,
+    "keep": true,
+    "why": "The joint model at \"All four predictors at once\" currently justifies prominence as quintiles by citing Appendix D.3 before the reader has seen the two-shapes result that makes bins necessary; moving the Prominence subsection plus the four-marker synthesis before it lets the marker be introduced, its shape explained, and the depth instrument motivated, all before the model that consumes them."
+   }
+  ]
+ },
+ "C32": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "no data change \u2014 the edit only reframes the \"Labov's crossover\" interpretation as a hypothesis; the measured contrast, its direction, and its scope (both sides of the Atlantic, within-chamber) are preserved."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 4,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 11
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 3,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The manuscript's own later subsection demotes the Labov parallel to an unconfirmed hypothesis (\"nothing in this subsection should be cited as established\"), so the unqualified early label misstates the paper's declared epistemic status; the rewrite fixes that without touching any datum, and its slightly stilted \"later read, as hypothesis, as\" phrasing is a small price for internal consistency."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 3,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves the measured contrast and correctly marks the Labov reading as a later hypothesis, though \u201cthe shape later read, as hypothesis, as\u201d is somewhat awkward."
+   },
+   {
+    "voter": "google",
+    "concision": 2,
+    "faithfulness": "pass",
+    "structural_soundness": 3,
+    "why": "The proposal adds a necessary substantive caveat to prevent misinterpreting a hypothesis as a confirmed finding, though the phrasing is slightly awkward.",
+    "voice": 3,
+    "clarity": 4,
+    "keep": true
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 2,
+    "voice": 2,
+    "concision": 2,
+    "structural_soundness": 3,
+    "keep": false,
+    "why": "The occupational contrast is correctly left untouched and the Labov identification does need demoting against the later subsection, but \u201cthe shape later read, as hypothesis, as\u201d is nested and procedural where house voice wants a plain caveat, so the swap costs punch without earning its keep."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 3,
+    "voice": 3,
+    "concision": 2,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite leaves the established within-chamber datum verbatim and correctly aligns the sentence with the manuscript's own later demotion of the Labov parallel to hypothesis status (an inconsistency the blind review flagged as a miscitation risk), though the double-\"as\" construction and forward reference are clunkier and less plain than the current appositive."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 2,
+    "concision": 3,
+    "faithfulness": "pass",
+    "keep": false,
+    "structural_soundness": 3,
+    "voice": 2,
+    "why": "The rewrite correctly identifies that calling this \"Labov's crossover, in this register\" overstates a finding the paper itself later demotes, and it preserves all factual data intact \u2014 but the proposed phrasing (\"the shape later read, as hypothesis, as Labov's crossover\") is syntactically tangled and drains the prose of its confident rhythm; the underlying fix is sound but needs a cleaner execution."
+   }
+  ]
+ },
+ "C28": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "All data survive the merge \u2014 +0.141 (1997\u20132001) vs +0.079 (2022\u20132026), narrowest-gap claim, weighted trend \u22120.022/half-decade, t \u22121.67 short of significance, the no-migration and no-widening not-found claims, the hypothesis-not-finding status, the pre-1996/\u00a78.6 caveat, and the [^rgap] footnote \u2014 with only the redundant duplicate \"t \u22121.7\" and the \"(figure above)\" pointer dropped; note the two source paragraphs (lines 1907\u20131922 and 1968\u20131977) are actually separated by the ^rgap footnote, the Lieberson paragraph, and the entire Prominence subsection with its data table, not just Lieberson, though both quoted passages match the file verbatim and the intervening material is untouched."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 5,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 15.5
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 2,
+    "voice": 3,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": false,
+    "why": "All data survives once (pass), but the \"duplicate\" paragraphs are ~60 lines apart bridging the whole Prominence subsection \u2014 the second is the four-marker synthesis's payoff (\"from four angles at once\"), and merging it away orphans that synthesis while bloating the first paragraph into an overloaded single block."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite removes a genuinely duplicative verdict while preserving every reported statistic, direction, null result, post hoc limitation, and pre-1996 discriminating test, though the merged paragraph remains somewhat dense."
+   },
+   {
+    "voter": "google",
+    "voice": 4,
+    "clarity": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "concision": 5,
+    "why": "Merging the two paragraphs successfully removes redundant reporting of identical statistics while preserving all data, caveats, and citations in a confident voice.",
+    "faithfulness": "pass"
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The two paragraphs repeat the same gap, trend, and failed-cycle verdict with two t-roundings (t \u22121.67 vs t \u22121.7); folding hypothesis-status and the pre-1996 caveat into the first paragraph once keeps every number and the author's wording without blandifying."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The two paragraphs render the same verdict twice with the same gap endpoints (+0.141/+0.079), the same trend statistic in two inconsistent roundings (t \u22121.67 vs t \u22121.7), and the same \u00a78.6 pointer; the merge preserves every number, direction, caveat, and the hypothesis-not-finding status exactly once (all verified against class_gap_trend.txt), and the only deleted material \u2014 the \"four angles at once\" label \u2014 is already carried by the adjacent four-markers paragraph, while the moved verdict is class-specific and sits naturally at the earlier class-evidence location."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 5,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "Every number, caveat, citation, and finding is preserved exactly once; the original repeats the same verdict \u2014 the same statistic, the same honest limitation, the same pre-1996 pointer \u2014 in two adjacent paragraphs with only superficial rewording, and the merge removes that redundancy without touching the intervening Lieberson paragraph or altering any datum."
+   }
+  ]
+ },
+ "C29": {
+  "faith": {
+   "current_matches": true,
+   "data_faithful": "pass",
+   "locatable": true,
+   "note": "no data change \u2014 all numbers (t = 3\u20134, eight provinces) and the individual-removed/joint-survived finding are preserved, and \"joint tests survived both corrections\" is supported by the manuscript's own record (joint Wald p = 0.0000 final spec; p = 0.029 pooled plus cross-panel shape replication in the supersession log)."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 14.5
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite leads with the two findings and replaces the dangling \"The joint tests say otherwise:\" with an explicit contrast (individual certainties died, the joint block held) that matches the section's own record \u2014 clustered joint Wald p = 0.029 pooled and the final-specification joint Wald p = 0.0000 in /home/matt/performance_commons/analysis/s10/S10-WRITEUP-DRAFT.md (lines 1400\u20131436, 4116\u20134124) \u2014 with every number, sample, and t-value untouched."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves the reported results and improves the findings-first sequence and closing contrast, though \u201csurvived both corrections\u201d slightly compresses the distinction between pooled joint significance and cross-panel shape replication."
+   },
+   {
+    "voter": "google",
+    "clarity": 4,
+    "structural_soundness": 3,
+    "why": "The revision effectively applies the findings-first principle and clarifies the contrast between individual and joint tests without altering the underlying data.",
+    "keep": true,
+    "voice": 4,
+    "faithfulness": "pass",
+    "concision": 3
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Findings-first and the explicit individual-vs-joint contrast fix a dangling lead-in without touching any number or result; \"Two findings lead\" is a mild signpost, but the rewrite is otherwise plainer and more confident."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every datum (eight provinces, t = 3\u20134, individual terms nulled by clustering and replication, joint block holding) while fixing the current version's dangling 'The joint tests say otherwise:' by stating the contrast explicitly and leading with the findings rather than the meta-narrative."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 5,
+    "concision": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "The rewrite fixes the current text's two real problems \u2014 the process-narration sentence ('The arc of the analysis is a correction applied twice, recorded because\u2026') and the dangling 'The joint tests say otherwise:' with no clear antecedent \u2014 by stating findings first and making the contrast between individual-certainty loss and joint-block survival explicit; no data changed."
+   }
+  ]
+ },
+ "C27": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "Pure structural split at the verbatim anchor '#### The shape has a name \u2014 held now as hypothesis, not finding' (line 1795); no body text, number, CI, p-value, estimand, or finding changes, and the example title's 'held as hypothesis' matches the manuscript's own framing \u2014 though note the moved span also contains member-level material (the Prominence h4, the within-member takeoff checks, Word mix, and 'What the class analysis cannot rule out', all omitted from the supplied CURRENT description), so the final 4.6c title should not label the whole subsection 'group-level'."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 5,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 14.33
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 3,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 2,
+    "keep": false,
+    "why": "The cut at 'The shape has a name' would sweep member-level material (the Prominence gradient, the Word-mix/family-signature geometry) and the class-curve caveats ('What the class analysis cannot rule out') into a section banner claiming group-level hypothesis status \u2014 mislabeling half the moved content and detaching the caveats from the \u00a74.6b class coefficients they qualify \u2014 so this split trades one dishonest title for another; a narrower split moving only the flight/chase group-level block would deserve adoption."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 4,
+    "structural_soundness": 4,
+    "keep": true,
+    "why": "The split makes \u00a74.6b\u2019s scope honest and creates a useful citation boundary, though 4.6c needs a broader title because the prominence and word-mix material returns to member-level analysis, with affected \u00a74.6b cross-references updated accordingly."
+   },
+   {
+    "voter": "google",
+    "keep": true,
+    "voice": 3,
+    "clarity": 4,
+    "faithfulness": "pass",
+    "structural_soundness": 5,
+    "concision": 4,
+    "why": "Splitting the section accurately reflects the shift in unit of analysis from member-level to group-level and ensures the section titles match their content."
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 4,
+    "structural_soundness": 4,
+    "keep": true,
+    "why": "The unit switch is already declared in the text, 4.6b's title currently overclaims, and a 4.6c sibling before 4.7 fits the lettering convention without breaking order \u2014 even though prominence, word-mix, and the class-n caveats are imperfect passengers in a group-level heading."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 4,
+    "keep": true,
+    "why": "The cut lands exactly where the text itself marks an epistemic demotion (\"held now as hypothesis\") and a declared unit switch (\"These are group-level signatures\"), making 4.6b's member-level title honest and giving the chase-and-flight material its own citable address, at the tolerable cost of mechanically re-pointing ~6 stale \u00a74.6b references and accepting that member-level Prominence and the shared caveat block ride along into the nominally group-level new section."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 5,
+    "voice": 3,
+    "why": "The text at line 1809 explicitly announces a unit-of-analysis switch to group-level signatures, but the current heading buries it under a member-level title; the split makes the outline honest about what the reader is actually getting, fits the paper's existing lettered-subsection convention (4.5a/4.5b/4.6a/4.6b \u2192 +4.6c), and gives the chase-and-flight result a citeable anchor it currently lacks."
+   }
+  ]
+ },
+ "C31": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "No data change: all numbers, member counts, and the footnote move verbatim; the \"province-only, superseded by the 22-chamber member-level spec\" label is verified accurate (covariate_study.py is eight-province only; para 3's 29/16/435/180 counts match the provincial table, and line 1425 already declares the 22-chamber spec final)."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 16.5
+  },
+  "votes": [
+   {
+    "voter": "anthropic",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 3,
+    "concision": 4,
+    "structural_soundness": 4,
+    "keep": true,
+    "why": "Verified against the draft: the caveats' 29/16 and 435/180 are the superseded province-only panel's numbers and directly contradict \u00a74.6's 147/109/2,049 member-level table two pages above, so relocating paragraphs 2, 3 and 5 to Appendix B (whose supersession record and existing [^r46d] cross-reference both still resolve) removes a head-on contradiction from Results while preserving every number; only the \"Both effects\" antecedent in paragraph 5 needs a light touch after the split."
+   },
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 3,
+    "concision": 4,
+    "structural_soundness": 4,
+    "keep": true,
+    "why": "Moving the province-only cohort and sample-size caveats into the superseded-analysis record preserves every datum and the shared footnote while preventing obsolete provincial counts from appearing to qualify the current 22-chamber results."
+   },
+   {
+    "voter": "google",
+    "structural_soundness": 5,
+    "clarity": 5,
+    "keep": true,
+    "voice": 3,
+    "faithfulness": "pass",
+    "why": "Moving the superseded provincial-panel covariate paragraphs to Appendix B resolves a direct numerical contradiction with the main text's updated 22-chamber tables while preserving the historical analysis.",
+    "concision": 4
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 3,
+    "concision": 4,
+    "structural_soundness": 5,
+    "keep": true,
+    "why": "The block quotes provincial n\u2019s (29/16/435/180) and coefficients against the section\u2019s own 22-chamber table (147/109/2,049); parking paragraphs 2, 3 and 5 in Appendix B with the already-superseded province-only study, and seating the still-live prominence-timing and volume-cut caveats next to those analyses, removes a head-on contradiction without touching any number."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 3,
+    "concision": 4,
+    "structural_soundness": 5,
+    "keep": true,
+    "why": "The moved paragraphs' member counts (29/16/435/180) and coefficients (+1.03 to -0.32, +1.20-1.36/decade) are verifiably the superseded provincial covariate study's and currently sit in head-on contradiction with \u00a74.6b's own 22-chamber tables (147/109/2,049/425); relocating them verbatim to Appendix B \u2014 the manuscript's designated superseded-analysis record, where item 0 already covers \u00a74.6b's framings \u2014 while placing the two live-analysis caveats (article length, volume cut) beside the prominence and flight analyses removes the contradiction without altering, duplicating, or stranding any number or reference."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 5,
+    "concision": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 5,
+    "voice": 3,
+    "why": "The provincial panel numbers (29/16/435/180 members) in \u00a74.6b paragraph 3 directly contradict the member-level table in the same section (147/109/2,049/425), and paragraphs 2 and 5 report provincial-panel coefficients from covariate_study.py that the Appendix already marks superseded; moving them there removes a head-on contradiction while preserving every number in the record."
+   }
+  ]
+ },
+ "C13": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "fail",
+   "note": "The proposal drops \"and found\" after the preregistration clause, deleting the manuscript's claim that the preregistered ordering free < front-line < corporate was actually observed; all other edits are framing-only."
+  },
+  "verdict": {
+   "accepted": false,
+   "keeps": 0,
+   "n": 0,
+   "dropped": "data_changed",
+   "composite": 0
+  },
+  "votes": []
+ },
+ "C43": {
+  "faith": {
+   "current_matches": true,
+   "data_faithful": "pass",
+   "locatable": true,
+   "note": "No data change: the added +49 to +109 band matches line 1095, the divide-by-100 unit conversion is correct for the manuscript's two rulers, and the 2016\u20132026 label is the figure's existing blue-series window (verified in apc_gradients.png and apc_chamber_decomposition.py); all plotted values are explicitly unchanged."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 15.67
+  },
+  "votes": [
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The direct labels, shaded numeric band, and ruler conversion remove lookup and scale-switching costs without changing any value or finding, and the small added length is justified by the improved readability."
+   },
+   {
+    "voter": "google",
+    "why": "Direct labeling and the scale conversion note eliminate unnecessary cognitive load for the reader without altering the underlying data.",
+    "clarity": 5,
+    "voice": 4,
+    "concision": 4,
+    "keep": true,
+    "faithfulness": "pass",
+    "structural_soundness": 3
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Direct labels kill the (T)/(X) lookup tax, the shaded +49-to-+109 band makes the space-view finding visible without a trip back to the paragraph, and the \u00f7100 note is a real ruler-switch the section actually has; nothing in the data moves."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Every added element \u2014 the +49 to +109 band, the \u00f7100 ruler note, the direct series labels \u2014 uses only numbers and phrasing already in the body, while removing the meaningless (T)/(X) legend cipher and visually tying the figure to the stated 'one narrow band' finding, so comprehension improves with zero data change."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The shaded band and caption numbers (+49 to +109) are verbatim from the adjacent paragraph, the \u00f7100 note correctly bridges the figure's per-100k ruler to the section's per-1,000 headline, and direct labels replace a legend carrying cipher codes the reader cannot decode \u2014 all with no data changed."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 5,
+    "concision": 4,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "Direct labels eliminate the legend's cipher-code lookup tax, the shaded band shows the stated \"one band\" finding visually, and the \u00f7100 note aligns the ruler with the body's per-1,000-words scale."
+   }
+  ]
+ },
+ "C44": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "pass",
+   "note": "No data change: caption swaps color-first labels to estimand-first (\"Within-member (blue)\", \"Period-adjusted (orange)\") and the figure note only trims the title and replaces the legend with direct labels; +0.51, directions, estimands, censoring, and bootstrap 95% intervals all preserved."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 15.17
+  },
+  "votes": [
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 5,
+    "concision": 5,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every value and interpretation while making curve identities immediately legible, removing duplicated in-plot explanation, and replacing the legend with clearer direct labels."
+   },
+   {
+    "voter": "google",
+    "concision": 4,
+    "keep": true,
+    "faithfulness": "pass",
+    "why": "Prioritizing conceptual names over colors in the text and moving to direct labels in the figure reduces visual clutter and improves readability without altering data.",
+    "voice": 4,
+    "clarity": 4,
+    "structural_soundness": 3
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Name-first labels with colour as redundant coding, plus end-of-line direct labels on two diverging curves, cut caption-duplicating title ink without touching +0.51, the rise/fall, or the cohort reading."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Every number, direction, and caveat is preserved verbatim; the reordering to name-first/color-second plus end-of-curve labels removes genuine redundancy (the in-plot title restates the caption and the body text) and matches the house direct-label convention, with the label assignment correctly tracking the actual curve directions."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Leading each clause with the curve's identity (\"Within-member (blue)\") rather than the color tag removes color-alone identification, matches the house convention of direct-labeled curves, and changes no numbers, directions, or findings."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 3,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "Caption reorder (curve name leads, colour is parenthetical) is a small clarity gain; the figure cleanup \u2014 cutting redundant title text, dropping the legend, and direct-labeling diverging curves at their endpoints \u2014 removes non-data ink, which is exactly right for this pair of opposed trends."
+   }
+  ]
+ },
+ "C41": {
+  "faith": {
+   "current_matches": true,
+   "data_faithful": "pass",
+   "locatable": true,
+   "note": "No data change: added unit labels (per 100k for +105, per 1,000 for \u22120.88/+2.11/\u22120.03) are verified correct against footnote r46apc, the figure caption, and the section's per-1,000 headline fit (0.86+1.26\u22482.11; 0.86\u22120.88\u2248\u22120.03); the +1.05 conversion is exact."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 6,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 15.17
+  },
+  "votes": [
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 5,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rewrite preserves every estimate while making the mixed rulers explicit, and the documented analysis confirms that +105 per 100,000 equals +1.05 per 1,000 and that \u22120.88, +2.11, and \u22120.03 are all per-1,000 quantities."
+   },
+   {
+    "voter": "google",
+    "clarity": 5,
+    "faithfulness": "pass",
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The rationale correctly notes that the original paragraph silently mixed two rulers (occurrences per 100k vs per 1,000 words); the rewrite faithfully preserves the data while making the unit scaling explicit.",
+    "concision": 4,
+    "voice": 5
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Confirmed against both source scripts: unit labels and the \u00f7100 identity leave every number, CI, and sign untouched, and they remove a silent mixed-ruler trap a reader cannot otherwise catch."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 5,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Verified against the source outputs (apc_chamber_decomposition.txt, apc_solution_line.txt): +105 is on the per-100k ruler and the propagated slopes (\u22120.88, +2.11, \u22120.03 [\u22120.52, +0.46]) are per-1,000, so the added unit labels and the exact \u00f7100 identity fix a real, invisible 100\u00d7 unit mix in the paragraph while altering no number, CI, direction, or finding, and every original sentence is preserved in the author's voice at a modest word cost."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 2,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The current paragraph silently mixes rulers (+105 is per-100k per apc_chamber_decomposition.txt; \u22120.88/+2.11/\u22120.03 are per-1,000 per apc_solution_line.txt's own header and propagation block), and the proposal attaches verified-correct labels plus an exact \u00f7100 bridge with no data altered, at a modest and justified length cost."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 4,
+    "concision": 4,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "Adds necessary unit labels that resolve a silent mixing of two different rulers (per-100k and per-1,000) without altering any data, making a dense paragraph immediately readable."
+   }
+  ]
+ },
+ "C42": {
+  "faith": {
+   "current_matches": true,
+   "data_faithful": "pass",
+   "locatable": true,
+   "note": "No data change: the added table only restates \u00a74.6's existing figures (+0.86 t=14.7; +1.26 t=13.4; +0.51 t=6.0 with 8,600 members \u22653 years; +1.05 t\u22488.5) with correct units, estimand labels, and clustering, and preserves the +0.92 (t=12.5) citable figure verbatim."
+  },
+  "verdict": {
+   "accepted": true,
+   "keeps": 5,
+   "n": 6,
+   "voter_faith_fail": false,
+   "composite": 15
+  },
+  "votes": [
+   {
+    "voter": "openai",
+    "faithfulness": "pass",
+    "clarity": 5,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "The compact table faithfully gathers four same-unit estimates with their distinct conditioning and inference, making the family of views substantially easier to compare despite modest repetition of results already stated above."
+   },
+   {
+    "voter": "google",
+    "clarity": 5,
+    "concision": 5,
+    "why": "The proposed table clearly presents the five gradient estimates with their respective conditions, maintaining all data points precisely while dramatically improving readability over the prose version.",
+    "structural_soundness": 3,
+    "faithfulness": "pass",
+    "voice": 5,
+    "keep": true
+   },
+   {
+    "voter": "xai",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 3,
+    "concision": 2,
+    "structural_soundness": 3,
+    "keep": false,
+    "why": "The table recaps four already-stated same-unit slopes cleanly, but it interrupts an interpretive close whose named views (space, pre-drift, curvature, within-career) are not the table's four rows, and the additive recap undercuts both concision and the \"single citable figure\" that follows."
+   },
+   {
+    "voter": "moonshot",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 4,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "Every number and t in the table is copied verbatim from \u00a74.6's text with correct per-1,000-words units and accurate estimand labels, and collecting the four scattered same-ruler slopes into one compact table at the section's capstone genuinely helps the reader compare views without mixing estimands; the slight redundancy with the prose and the +0.92 sitting just outside the table are minor costs against a real clarity gain."
+   },
+   {
+    "voter": "alibaba",
+    "faithfulness": "pass",
+    "clarity": 4,
+    "voice": 4,
+    "concision": 3,
+    "structural_soundness": 3,
+    "keep": true,
+    "why": "All four slopes, t-statistics, and the 8,600-member count are copied verbatim from \u00a74.6's own paragraphs and the estimand labels are accurate, so the comparison table genuinely aids a family-of-views section without altering any data."
+   },
+   {
+    "voter": "deepseek",
+    "clarity": 5,
+    "concision": 4,
+    "faithfulness": "pass",
+    "keep": true,
+    "structural_soundness": 3,
+    "voice": 4,
+    "why": "The table is the right form for the job: the section announces a \"family of views\" and then scatters same-unit slopes across paragraphs, so collecting them with shared column headers (\"Held fixed\" / \"Slope on\" / \"Per 1,000 words, per decade\") gives the reader the comparison the framing promises, with no data alterations."
+   }
+  ]
+ },
+ "C45": {
+  "faith": {
+   "locatable": true,
+   "current_matches": true,
+   "data_faithful": "fail",
+   "note": "The proposed caption adds a new datum \u2014 per-cohort member counts (\"the grey figure above each point is that cohort's member count\") \u2014 that is unverifiable from the manuscript and not covered by the regeneration instruction (\"all values unchanged\"); all existing numbers (+0.57, 95% CIs) are otherwise preserved."
+  },
+  "verdict": {
+   "accepted": false,
+   "keeps": 0,
+   "n": 0,
+   "dropped": "data_changed",
+   "composite": 0
+  },
+  "votes": []
+ }
+}

@@ -1,0 +1,96 @@
+#!/usr/bin/env python3
+"""Apply accepted changes from a round2 workflow result to the draft.
+
+Prose rewrites are applied mechanically: the proposal's verbatim `current` text
+is located in the draft and replaced by `proposed`. A change is applied ONLY if
+its `current` matches exactly once (after a whitespace-tolerant fallback for
+line-rewrap differences). Anything ambiguous is skipped and reported --- never
+guessed at.
+
+Structural changes (move/split/merge) are natural-language instructions, not
+diffs, so they are NOT auto-applied; they are written to a review queue.
+
+Usage: apply_changes.py <result.json> [--draft PATH] [--dry-run]
+"""
+import json, os, re, sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+DRAFT = os.path.join(HERE, "S10-WRITEUP-DRAFT.md")
+
+
+def find_span(text, needle):
+    """Return (start, end) of the unique occurrence of needle, or None/'multi'."""
+    n = text.count(needle)
+    if n == 1:
+        i = text.index(needle)
+        return (i, i + len(needle))
+    if n > 1:
+        return "multi"
+    # whitespace-tolerant: the draft may wrap lines differently
+    pat = re.compile(r"\s+".join(re.escape(t) for t in needle.split()), re.S)
+    hits = list(pat.finditer(text))
+    if len(hits) == 1:
+        return (hits[0].start(), hits[0].end())
+    return "multi" if len(hits) > 1 else None
+
+
+def main():
+    res = json.load(open(sys.argv[1]))
+    draft = DRAFT
+    if "--draft" in sys.argv:
+        draft = sys.argv[sys.argv.index("--draft") + 1]
+    dry = "--dry-run" in sys.argv
+    text = open(draft, encoding="utf-8").read()
+    before = len(text)
+
+    # AUTO-ACCEPT REQUIRES UNANIMITY (Matthew, 2026-09-02): a single dissenting
+    # vote sends a change to the review queue instead of the draft.
+    def unanimous(c):
+        v = c.get("verdict", {})
+        return v.get("accepted") and v.get("n", 0) > 0 and v.get("keeps") == v["n"]
+    accepted = [c for c in res.get("changes", []) if unanimous(c)]
+    split = [c for c in res.get("changes", []) if c.get("verdict", {}).get("accepted") and not unanimous(c)]
+    prose = [c for c in accepted if c.get("type") == "prose" and c.get("action") in ("rewrite", "merge")]
+    other = [c for c in accepted if c not in prose]
+
+    applied, skipped = [], []
+    for c in prose:
+        cur, prop = (c.get("current") or "").strip(), (c.get("proposed") or "").strip()
+        if not cur or not prop:
+            skipped.append((c["id"], "empty current/proposed")); continue
+        span = find_span(text, cur)
+        if span is None:
+            skipped.append((c["id"], "current text not found (superseded by an earlier change?)")); continue
+        if span == "multi":
+            skipped.append((c["id"], "current text is ambiguous (matches more than once)")); continue
+        s, e = span
+        text = text[:s] + prop + text[e:]
+        applied.append(c["id"])
+
+    queue = [{"id": c["id"], "locus": c.get("locus"), "type": c.get("type"), "action": c.get("action"),
+              "proposed": c.get("proposed"), "rationale": c.get("rationale"),
+              "keeps": c.get("verdict", {}).get("keeps"), "n": c.get("verdict", {}).get("n"),
+              "composite": c.get("verdict", {}).get("composite"),
+              "dependencies": c.get("verdict", {}).get("dependencies", []),
+              "why_queued": "structural" if c in other else "not unanimous"} for c in other + split]
+
+    print(f"unanimous {len(accepted)}: {len(prose)} prose-appliable, {len(other)} structural/queued")
+    print(f"  majority-but-not-unanimous (queued, not applied): {len(split)}")
+    print(f"  applied: {len(applied)}  skipped: {len(skipped)}")
+    for i, why in skipped:
+        print(f"    - {i}: {why}")
+    print(f"  draft {before:,} -> {len(text):,} bytes ({len(text)-before:+,})")
+
+    if dry:
+        print("  (dry run --- nothing written)")
+        return
+    open(draft, "w", encoding="utf-8").write(text)
+    qp = os.path.join(HERE, "REWRITES-round2",
+                      f"structural-queue-{res.get('scope','all')}-iter{res.get('iteration',0)}.json")
+    os.makedirs(os.path.dirname(qp), exist_ok=True)
+    json.dump(queue, open(qp, "w"), indent=1)
+    print(f"  wrote {qp} ({len(queue)} awaiting review)")
+
+
+if __name__ == "__main__":
+    main()
