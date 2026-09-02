@@ -2610,6 +2610,8 @@ itself on text it had flagged, not that a machine demonstrably wrote it.
 Second, the variants are the surviving output of a search that optimised
 against a correlated proxy, so this is a rate under adversarial pressure
 rather than under clean conditions.
+The false-negative rates in play, and what each one is measured on:
+
 
 | measurement | rate | what it is |
 |---|---|---|
@@ -2704,6 +2706,8 @@ arms: it is carried jointly by stages 1 and 2 (wild text, two label
 sources), stage 5 (successful evasions), and stage 6 (never-reviewed
 continuations, where frontier models *beat* the human twins on form) — four
 different contrasts agreeing.
+The paired cells, dimension by dimension:
+
 
 | dimension | stage 3 (n=38) | stage 4 (n=25) |
 |---|---|---|
@@ -2866,6 +2870,8 @@ detector, and neither is peer-reviewed** — one is a Substack post, the other a
 pseudonymous magazine piece.[^s-prior]
 
 [^s-prior]: Details and primary-source verification in `PRIOR_ART.md`.
+
+The two studies side by side:
 
 
 | | Rice 2026 (Australian federal) | Pimlico Journal 2025 (UK Commons) |
@@ -3495,8 +3501,8 @@ climbs. What does carry is measured on individuals, not on chambers.
     suppression artifacts (the coded pair correlate .99; the directional
     middle showed −0.102 conditional on its own siblings). Redesigned to
     each-level-alone before anything was reported; the rule — a ladder's
-    levels are contrasts over one space and never enter together — is now in
-    `METHODOLOGY.md` §6.1c.
+    levels are contrasts over one space and never enter together — is now recorded in
+      `METHODOLOGY.md`.
 
 15. **The two bypass first attempts** (Matthew 2026-08-24). Each chamber's
     search had a biased first sampling, now excluded from the §4.10 per-variant
@@ -4041,7 +4047,7 @@ differ in how novel they are likely to be.
 
 The folk ladder's consensus signature (§3.4): every O\*NET element, its
 level, consensus sign, and how many of the eighteen blind coders nominated
-it.
+it:
 
 | O\*NET element | id | level | sign | coders |
 |---|---|---|---|---|
@@ -4227,6 +4233,8 @@ to the reported precision.
 Four searches were run — two per chamber. The §4.10 rates use only the second
 in each chamber; the first in each was a biased sampling and is reported in
 Appendix B. Full stacks in `BYPASS_METHODOLOGY.md`.
+The four runs, and how each was seeded:
+
 
 | run | role | seeds | how the seeds were chosen | Opus's role |
 |---|---|---|---|---|
@@ -4259,6 +4267,8 @@ artifact of differential regression, and it was briefly reported before being
 caught.
 
 ### D.4 Artifacts
+The committed artifacts, and what each does:
+
 
 | artifact | what it does |
 |---|---|
@@ -4505,6 +4515,8 @@ honorific, one member appears both with and without it across a career, and the
 flag is per member-*year* rather than per member — a backbencher who becomes a
 minister contributes to both groups (`office_split.py`, 8,289 member-year cells
 with a birth year: 1,893 office, 6,396 non-office).
+The gradient within each split:
+
 
 | cells | birth gradient (per decade) | t (HC) | t (member-clustered) |
 |---|---|---|---|
