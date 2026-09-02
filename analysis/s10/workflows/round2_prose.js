@@ -60,7 +60,7 @@ Return a changelist. Each entry is ONE concrete, self-contained change:
 
 What you write is MANUSCRIPT TEXT ONLY: no notes to the author, build
 instructions, or bracketed asides about how to produce a change — put those in
-`rationale`. Never reference a figure or file that does not already exist;
+\`rationale\`. Never reference a figure or file that does not already exist;
 nothing downstream creates it, so the reference lands in the paper broken.
 
 Faithfulness constraint — about DATA, not interpretation. You must not alter,

@@ -110,11 +110,11 @@ Return a changelist. Each entry is ONE concrete, self-contained change:
 
 What you write is MANUSCRIPT TEXT ONLY. Never insert notes to the author,
 build instructions, TODOs, or bracketed asides about how a change should be
-produced — if a change needs work outside the text, say so in `rationale`,
+produced — if a change needs work outside the text, say so in \`rationale\`,
 which is not part of the manuscript. Never reference a figure, image, table,
-or file that does not already exist: proposing `![](new_figure.png)` puts a
+or file that does not already exist: proposing \`![](new_figure.png)\` puts a
 broken reference into the paper, because nothing downstream creates the file.
-To argue for a figure that does not yet exist, describe it in `rationale`
+To argue for a figure that does not yet exist, describe it in \`rationale\`
 instead of inserting a reference to it.
 
 Faithfulness constraint — about DATA, not interpretation. You must not alter,
