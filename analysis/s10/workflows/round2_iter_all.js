@@ -522,7 +522,13 @@ const runScope = async (sc, preset) => {
     const ballots = await parallel(SEATS.map(v => () =>
       agent(prompt, { agentType: v.type, model: v.model, label: `vote:${cand.id}:${v.id}`, phase: 'Vote',
                       schema: VOTE_SCHEMA, ...(v.effort ? { effort: v.effort } : {}) })
-        .then(s => ({ voter: v.id, is_author: cand.author_seats.some(a => String(a).split('/')[0] === v.id), ...s }))
+        // agent() RETURNS NULL on a terminal API error after retries — it does not
+        // reject, so .catch below never sees it. Spreading a null yields a ballot
+        // with no `keep`, which reads as a vote against and still counts toward n.
+        // That silently destroyed unanimity for 47 throttled ballots in iteration 2.
+        .then(s => (s && s.keep !== undefined)
+          ? { voter: v.id, is_author: cand.author_seats.some(a => String(a).split('/')[0] === v.id), ...s }
+          : { voter: v.id, failed: true, limit: false, err: 'agent returned no ballot (null or malformed)' })
         .catch(e => ({ voter: v.id, failed: true, limit: isLimit(e), err: String(e).slice(0, 160) }))))
     return { id: cand.id, votes: ballots.filter(b => b && !b.failed), lost: ballots.filter(b => b && b.failed) }
   }))
