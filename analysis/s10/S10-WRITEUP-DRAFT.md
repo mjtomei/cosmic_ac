@@ -4,31 +4,6 @@
 
 We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* — the excess vocabulary language models overuse, derived in prior work from the post-2022 jump in scholarly text, run here as a fixed ruler across four decades of the parliamentary record. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with a fourfold spread across chambers (after shrinkage) and a concentration in scripted genres. This machine-drafted speech is not degraded: AI-flagged contributions are better-formed and no less engaged. But the detector is evadable under directed effort, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control. The register, however, **predates the models by decades**. That history is invisible to the excess-vocabulary designs that found the jump, which measure acceleration against a local trend in corpora reaching back roughly a decade. Run as a level series, the register's rise spans three decades and two instruments — dated to 1994–96 on the longest-reaching series — and is concentrated in a few common connectives over a broad shallow widening. A juniority gradient predates even that, steepening as cohorts formed inside the drift arrive. Prior occupation leaves a small, replicated signature that absorbs social class, scored on a preregistered organisational-altitude measure whose insulated middle sits highest and whose off-hierarchy level, free work, sits lowest. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
 
----
-
-**S10 — draft write-up, 2026-08-11; §4.6a and Appendix A extended
-2026-08-13.** All arms complete, including the detector-bypass study and both
-prior-art comparators. Everything is reproducible from `analysis/s10/`.
-
-**§4.6d's literature citations were web-verified 2026-08-24.** The result is
-placed against Labov (crossover/hypercorrection, *Sociolinguistic Patterns*,
-U. Pennsylvania Press, 1972), Simmel (1904), Veblen (1899), Jhering (1883)
-with Durkheim's summary supplying the quote, and Lieberson (*A Matter of
-Taste*, Yale, 2000); a fetched entry wrong on Labov's year and publisher has
-been corrected. §4.6a also reports standard errors not clustered on
-member, which the study has been bitten by three times; it is flagged in
-place.
-
-**Numbers marked † are carried from earlier in the study.** All nine were
-re-derived from their artifacts on 2026-08-11 and reproduce; footnotes on each
-give the script and invocation. Two of the nine (§4.6's cohort share, §4.8's
-pooled alignment effect) were briefly and wrongly recorded as unsourced — the
-verification pass had looked in the wrong script — so their footnotes name the
-right one explicitly. Everything unmarked was computed or re-verified on
-2026-08-09/11.
-
----
-
 ## 1. Introduction
 
 Institutions speak in a register. Legislative speech has carried one for as
@@ -235,8 +210,7 @@ Pangram 3. It was rescored (§4.1).
 
 ### 3.3 Why the frequency arm is descriptive, not inferential
 
-This belongs in methods rather than an appendix, because it explains the
-framing of §4.5.
+The frequency arm is descriptive rather than inferential because its central identifying assumption fails an in-time placebo.
 
 The Kobak et al. excess-vocabulary approach (arXiv:2406.07016; *Sci Adv*
 11(27):eadt3813, 2025) compares observed word frequencies against a
@@ -468,18 +442,28 @@ the API did not cover. Those harvested Mixed segments average **0.435** machine
 9.03% headline is thus already the split-corrected figure, not an AI-or-Mixed
 count.[^r42f]
 
-| chamber | rate | 95% CI | | chamber | rate | 95% CI |
-|---|---|---|---|---|---|---|
-| NSW | **19.8%** | [13.1, 26.9] | | IE | 7.5% | [3.5, 12.3] |
-| CA-FED | 18.5% | [12.6, 24.6] | | VIC | 7.3% | [3.5, 11.7] |
-| QLD | 15.8% | [9.9, 21.9] | | SA | 6.8% | [2.9, 11.4] |
-| BC | 14.2% | [8.3, 20.4] | | WA | 4.9% | [1.3, 9.1] |
-| MB | 13.1% | [7.9, 18.8] | | WAL | 4.9% | [1.6, 8.9] |
-| NI | 13.1% | [8.0, 18.6] | | SK | 4.1% | [1.3, 7.5] |
-| **US House** | **12.1%** | [7.0, 17.7] | | SCO | 3.9% | [1.0, 7.4] |
-| ON | 11.1% | [6.1, 16.8] | | NL | 3.3% | [0.8, 6.6] |
-| NS | 10.0% | [5.5, 15.1] | | UK | 2.5% | [0.7, 4.8] |
-| AB | 7.8% | [3.9, 12.3] | | **US Senate** | **1.8%** | [0.1, 4.1] |
+| chamber | machine-drafted share of words | 95% CI |
+|---|---:|---:|
+| NSW | **19.8%** | [13.1, 26.9] |
+| CA-FED | 18.5% | [12.6, 24.6] |
+| QLD | 15.8% | [9.9, 21.9] |
+| BC | 14.2% | [8.3, 20.4] |
+| MB | 13.1% | [7.9, 18.8] |
+| NI | 13.1% | [8.0, 18.6] |
+| **US House** | **12.1%** | [7.0, 17.7] |
+| ON | 11.1% | [6.1, 16.8] |
+| NS | 10.0% | [5.5, 15.1] |
+| AB | 7.8% | [3.9, 12.3] |
+| IE | 7.5% | [3.5, 12.3] |
+| VIC | 7.3% | [3.5, 11.7] |
+| SA | 6.8% | [2.9, 11.4] |
+| WA | 4.9% | [1.3, 9.1] |
+| WAL | 4.9% | [1.6, 8.9] |
+| SK | 4.1% | [1.3, 7.5] |
+| SCO | 3.9% | [1.0, 7.4] |
+| NL | 3.3% | [0.8, 6.6] |
+| UK | 2.5% | [0.7, 4.8] |
+| **US Senate** | **1.8%** | [0.1, 4.1] |
 
 ![](chamber_prevalence_dotplot.png)
 
@@ -600,8 +584,8 @@ procedure permits**, which is the mechanism under test:
   on notice**, so neither question nor answer can be fully drafted in
   advance; both sides are held to roughly 35 seconds.
 
-| genre, 2025–26 | flagged words | 95% CI |
-|---|---|---|
+| genre, 2025–26 | machine-drafted share of words | 95% CI |
+|---|---:|---:|
 | **SO31** — one-minute scripted set-pieces | **32.3%** | [21.5, 44.1] |
 | Government Orders — mixed prepared and spontaneous | 19.9% | [10.5, 30.5] |
 | **Oral Questions** — not on notice | **9.8%** | [2.2, 19.1] |
@@ -715,42 +699,9 @@ era mix is not flattering the screen.
 
 [^r44dep]: `python opus_screen_auc.py`. The deployed screen is
     `opus_screen_full.js` (473 batches of 40), distinct from the lean
-    validation run used in the effort A/B below; the two differ in score level
-    (mean 34.3 vs 26.5) but not in discrimination. All labels are Pangram 4.
-
-**Reasoning effort buys nothing here.** The screen was tuned and validated at
-`effort=low`, and low had never been compared against anything. Re-run on the
-241-segment labelled pool with the prompt and batching held byte-identical (all
-AUCs against Pangram 4):
-
-| run | AUC | 95% CI |
-|---|---|---|
-| archived low | 0.948 | [0.920, 0.973] |
-| fresh low (replicate) | 0.951 | [0.923, 0.974] |
-| **max** | **0.942** | [0.911, 0.968] |
-
-The low-effort run was replicated so the effort comparison has a noise floor.
-A paired bootstrap of max − mean(low) gives **−0.007**, 95% CI
-**[−0.023, +0.007]**: centred below zero, and the whole interval sits below
-even the +0.015 the weaker open model gains from reasoning, let alone Qwen's
-+0.172. Effects below ~0.03 AUC are outside this design's resolution.
-Per-segment correlations agree: low-vs-low r = +0.976, low-vs-max +0.959 and
-+0.960 — max ranks the same and is *more decisive on the human class* (it
-sends more clear negatives to the floor), not a different scorer.
-
-Against a single low run, max would have looked like a small decline and been
-tempting to report as an effect. **The replicate is what makes the null
-readable.**
-
-This also cuts against the pattern in the open models, measured on the same
-pool: effort moved Qwen3-32B by **+0.172** and gpt-oss-120b by **+0.015**,
-against **−0.007** for Opus. Reasoning closes part of the gap for weak
-detectors and does nothing for a strong one — and the sharper point is that
-the frontier model is not reasoning its way to 0.95; it is recognising
-something at a glance. Practically, the screen can be run for about **4× fewer reasoning
-tokens (~2× all-in)** with no loss — a saving observed in the run logs rather than recorded in the committed AUC artifacts.[^s-effort]
-
-[^s-effort]: `opus_effort_ab.py`, `opus_effort_ab.csv`.
+    validation run used in the effort A/B in Appendix D; the two differ in
+    score level (mean 34.3 vs 26.5) but not in discrimination. All labels are
+    Pangram 4.
 
 ### 4.5 The register shift starts in 1994–96, decades before the machines
 
@@ -821,7 +772,7 @@ instruct-tuning later selected for, for thirty years.** †[^dag]
 
 [^dag]: Daggered numbers are carried from earlier in the study and were
     re-derived from their artifacts; the full key and per-number sources are
-    in the Supplementary provenance note.
+    in the provenance note in Appendix D.
 
 The machines then accelerated it, and left a fingerprint of their own suppression. In New Brunswick — the one corpus sampled densely enough to resolve quarters — an interrupted time series with the break pre-set at ChatGPT's release finds a flat pre-2023 slope (−1.2%/yr) turning to **+23.7%/yr** afterward, significant against 1,000 frequency-matched placebo word sets (p = 0.007; Mann–Kendall p = 0.014).
 
@@ -852,7 +803,7 @@ UK Commons, Scotland, Northern Ireland, Wales — are the four fastest
 climbers; only three chambers decline at all (US House, US Senate, Prince
 Edward Island), and none of the nineteen approaches the UK's +4.0%/yr.[^r45cw]
 
-| chamber | gap 2006 | gap 2026 | change | per year |
+| chamber | gap 2006, per 100k words | gap 2026, per 100k words | change | per year |
 |---|---|---|---|---|
 | UK Commons | 655 | 1,444 | ×2.20 | **+4.0%/yr** |
 | Scotland | 605 | 1,058 | ×1.75 | +2.8%/yr |
@@ -913,15 +864,15 @@ contact with the variance. US House swings between 1,660 and 2,074 across the
 series — a 25% range, the widest here — and 2026 catches it at 1,709, near its
 own floor. On 2020–26 means, with each series' standard deviation alongside:
 
-| | mean | sd | vs US House |
-|---|---|---|---|
-| CA provinces | 2,054 | 61 | **+155 (+1.28 sd)** |
-| Ireland | 1,901 | 52 | +2 (+0.02 sd) |
-| **US House** | **1,899** | **121** | — |
-| AUS states | 1,861 | 36 | −39 (−0.32 sd) |
-| CA federal | 1,816 | 134 | −84 (−0.69 sd) |
-| US Senate | 1,591 | 60 | −309 (−2.55 sd) |
-| UK Commons | 1,415 | 61 | −484 (−4.00 sd) |
+| group | mean, per 100k | sd | vs US House, per 100k | vs US House, in US House sd |
+|---|---|---|---|---|
+| CA provinces | 2,054 | 61 | **+155** | **+1.28** |
+| Ireland | 1,901 | 52 | +2 | +0.02 |
+| **US House** | **1,899** | **121** | — | — |
+| AUS states | 1,861 | 36 | −39 | −0.32 |
+| CA federal | 1,816 | 134 | −84 | −0.69 |
+| US Senate | 1,591 | 60 | −309 | −2.55 |
+| UK Commons | 1,415 | 61 | −484 | −4.00 |
 
 Only the Canadian provinces are meaningfully above, and they are a standing
 exception this study does not explain. Ireland is at parity to within a
@@ -1443,25 +1394,6 @@ effect predicts t ≈ 2.0 at this n). In the spike window, class II is the
 strongest social-position covariate; the insulation contrast holds its size
 without independent confirmation.
 
-One drafting generation of the registration expressed the peak claim as a
-linear three-profile rank; that operationalization failed its own test and
-the framing is retired — Appendix B13 preserves its numbers, and the
-registration's post-run amendment records the oversight and the provenance
-ruling. Failed registered predictions are in Appendix A (the altitude
-quadratic, the autonomy asymmetry, nominal-vs-effective autonomy). Scale
-for all of it: §6's calibration bullet — small effects by any benchmark,
-reliably estimated, structurally replicated, floors rather than
-ceilings.[^r46f]
-
-[^r46f]: `python prereg_stage1.py`, `prereg_stage2.py`,
-    `prereg_synthesis_check.py`, `prereg_covariate_strength.py`,
-    `prereg_strength_2526.py`; results snapshots
-    `prereg_stage1_results.txt`, `prereg_stage2_results.txt`. The join and
-    its drift guard: `prereg_join.py` (`METHODOLOGY.md` §6.1b addendum for the
-    two join facts). Instrument derivation artifacts:
-    `element_audit_*.json`, `element_levels.json`,
-    `instrument_final_cells.json`.
-
 **The coarsest cut is the strongest single correlate: the register is the
 language of the office.** O\*NET's *Indoors, Environmentally Controlled* —
 planted in the element pool as a deliberately atheoretical marker of office
@@ -1487,6 +1419,25 @@ overwhelming axis (t +24.5, carrying 0.144 of the model's 0.165).[^rnc]
     it — and the result is reported here as description. Joint-model numbers:
     `python prereg_indoors_joint.py` (n = 3,594, the covariate panel; the
     grand model mirrors `prereg_covariate_strength.py`).
+
+One drafting generation of the registration expressed the peak claim as a
+linear three-profile rank; that operationalization failed its own test and
+the framing is retired — Appendix B13 preserves its numbers, and the
+registration's post-run amendment records the oversight and the provenance
+ruling. Failed registered predictions are in Appendix A (the altitude
+quadratic, the autonomy asymmetry, nominal-vs-effective autonomy). Scale
+for all of it: §6's calibration bullet — small effects by any benchmark,
+reliably estimated, structurally replicated, floors rather than
+ceilings.[^r46f]
+
+[^r46f]: `python prereg_stage1.py`, `prereg_stage2.py`,
+    `prereg_synthesis_check.py`, `prereg_covariate_strength.py`,
+    `prereg_strength_2526.py`; results snapshots
+    `prereg_stage1_results.txt`, `prereg_stage2_results.txt`. The join and
+    its drift guard: `prereg_join.py` (`METHODOLOGY.md` §6.1b addendum for the
+    two join facts). Instrument derivation artifacts:
+    `element_audit_*.json`, `element_levels.json`,
+    `instrument_final_cells.json`.
 
 ### 4.6c All four predictors at once
 
@@ -2057,10 +2008,10 @@ not by the stage trained on verifiable math and code — stated as a *data*
 claim, not an objective claim, because on this ladder the two are
 confounded: the SFT and DPO stages train on chat while RLVR trains on a
 different domain, so "the RLVR objective doesn't install it" and "the RLVR
-data isn't chat" cannot be separated here.
+data isn't chat" cannot be separated here. Three checks tighten what can
+be said.[^rptchecks]
 
-Three checks tighten what can
-be said.[^rptchecks] The stage pattern is **length-robust**: truncating
+The stage pattern is **length-robust**: truncating
 every generation to its prompt-group's common length shaves 13–40% off the
 two real stages and nothing off the placebo, leaving RLVR ~5× smaller at
 every truncation, and under prompt fixed effects log-length carries none
@@ -2220,9 +2171,16 @@ text is more monologic.
 
 That exclusion conditions on something the treatment moves, so the two claims
 must remain separate. **Applicability itself collapses at high screen
-scores**: respect_demands is applicable for 61.4% of segments scoring <10,
-63.0% at 10–49, and **31.1%** at ≥50; respect_counterargs runs 50.8% / 51.2%
-/ **28.9%** (n = 498/297/45[^s-appband]). The engagement null below therefore
+scores** — the share of segments on which each sentinel dimension can be
+scored at all, by band of the blinded screen score:[^s-appband]
+
+| screen score | segments | respect_demands applicable | respect_counterargs applicable |
+|---|---|---|---|
+| < 10 | 498 | 61.4% | 50.8% |
+| 10–49 | 297 | 63.0% | 51.2% |
+| **≥ 50** | **45** | **31.1%** | **28.9%** |
+
+The engagement null below therefore
 means *engages no worse when there is something to engage with*. Separately,
 AI-flagged speech is about **half as likely to contain anything to engage
 with** — a real difference, not a null. Stage 6, using never-reviewed
@@ -2244,21 +2202,17 @@ LLM screen; stage 2 is 682 segments across 22 chambers labelled by **Pangram
 verdict**, with chamber fixed effects. Different populations, different label
 sources, same answer.[^r49q]
 
-| dimension | stage 1, per 0→100 score (n = 840) | stage 1, per sd of score | stage 2, AI vs Human verdict (n = 682) |
-|---|---|---|---|
-| justification | **+1.134** (t +4.1) ✱ | +0.173 | **+0.290** (t +4.4) ✱ |
-| common_good | **+0.583** (t +3.3) ✱ | +0.089 | **+0.229** (t +4.5) ✱ |
-| respect_groups | **+0.287** (t +2.0) ✱[^r49m] | +0.044 | **+0.220** (t +6.1) ✱ |
-| respect_demands | −0.179 (t −0.5) | −0.027 | −0.029 (t −0.4) |
-| respect_counterargs | +0.143 (t +0.4) | +0.022 | +0.073 (t +1.0) |
-| constructive | −0.015 (t −0.1) | −0.002 | −0.041 (t −1.0) |
-| evidence | +0.350 (t +1.4) | +0.054 | +0.065 (t +1.1) |
+| dimension | stage 1, per sd of score (n = 840) | stage 2, AI vs Human verdict (n = 682) | stage 1, fitted 0→100 difference |
+|---|---:|---:|---:|
+| justification | +0.173 (t +4.1) ✱ | **+0.290** (t +4.4) ✱ | **+1.134** |
+| common_good | +0.089 (t +3.3) ✱ | **+0.229** (t +4.5) ✱ | **+0.583** |
+| respect_groups | +0.044 (t +2.0) ✱[^r49m] | **+0.220** (t +6.1) ✱ | **+0.287** |
+| respect_demands | −0.027 (t −0.5) | −0.029 (t −0.4) | −0.179 |
+| respect_counterargs | +0.022 (t +0.4) | +0.073 (t +1.0) | +0.143 |
+| constructive | −0.002 (t −0.1) | −0.041 (t −1.0) | −0.015 |
+| evidence | +0.054 (t +1.4) | +0.065 (t +1.1) | +0.350 |
 
-*The middle column is the first column times sd/100: the
-stage-1 regressor is a 0–100 score whose observed maximum is 70 and sd 15.3,
-so the left column's magnitudes are fitted 0→100 differences the data never
-spans — per sd, stage 1 sits beside stage 2's binary contrast rather than 4×
-above it. Same fits, same t's.*
+*The first and last stage-1 columns report the same fits and the same t statistics at different scales. The stage-1 regressor has sd 15.3 on a 0–100 scale and an observed maximum of 70; the fitted 0→100 difference therefore extrapolates beyond the data. The per-sd column is the fitted 0→100 difference times sd/100 and is the commensurable comparison with stage 2's binary contrast.*
 
 **The revised claim: AI-assisted legislative speech is better-formed — more
 justified, more common-good framed, more positive toward the groups a policy
@@ -2477,11 +2431,7 @@ blind-to-the-target search gets **22.5%** of targets past it: **9.8×**.
 Against Pangram's clean-conditions false-negative rate of 0.34%, it is
 66×.
 
-That is the finding. The detector is not weak — its specificity is 0 in 1,260
-(§4.1), and a single "make this sound human" prompt makes text *more*
-detectable, not less. But the gap between a purpose-built evasion product and
-a frontier model told to try again is an order of magnitude in the frontier
-model's favour, and it will not narrow in the detector's direction.
+That is the finding. The detector is not weak — it produced 0 false positives in 1,260 pre-2022 controls (§4.1), and a single "make this sound human" prompt makes text *more* detectable, not less. Yet in this comparison, the gap between a purpose-built evasion product and a frontier model told to try again is an order of magnitude in the frontier model's favour. The experiment establishes that gap under the tested attacks; it does not estimate how either side will improve.
 
 **Two rates, set by whether the attacker can test against the detector.** The
 same search answers two threat models, and which number applies depends on one
@@ -2611,35 +2561,21 @@ rather than under clean conditions.
 The false-negative rates in play, and what each one is measured on:
 
 
-| measurement | rate | what it is |
-|---|---|---|
-| Pangram 4, clean | 0.34% | FNR, known-AI text, vendor-reported |
-| Pangram 4, 13 humanizer services | 2.31% | FNR under commercial evasion, vendor |
-| Pangram 4, BLADER de-AI agent | 0.43% | FNR under agentic evasion, vendor |
-| Pangram 4, Epoch AI Style Imitation | 2.86% | FNR, doc-level, adversarial, vendor[^r49x2] |
-| **this study, per variant** | **11.1%** | **induced FNR, one blind submission (no attacker detector access) — 4.8× the humanizers** |
-| *this study, per target* | *22.5%* | *induced, attacker may query and retry (≤18 attempts) — 9.8× the humanizers* |
+| one-submission measurement | false-negative rate | conditions |
+|---|---:|---|
+| Pangram 4, clean | 0.34% | known-AI text, vendor-reported |
+| Pangram 4, 13 humanizer services | 2.31% | commercial evasion, vendor |
+| Pangram 4, BLADER de-AI agent | 0.43% | agentic evasion, vendor |
+| Pangram 4, Epoch AI Style Imitation | 2.86% | document-level adversarial benchmark, vendor[^r49x2] |
+| **this study, per variant** | **11.1%** | **induced FNR, one blind submission; no attacker detector access — 4.8× the humanizers** |
 
-(and, later in the same paragraph, replace the Rice sentence with:) Rice 2026's Australian-Hansard ~8% is deliberately *not* a row in this table, though the numeric coincidence invites it: that figure is a false-*positive* rate on 50 pre-ChatGPT speeches, measured on an LLM judge rather than on Pangram (§5) — a column of false-negative rates is no place for it.
+| retry-enabled exposure | success rate | conditions |
+|---|---:|---|
+| **this study, per target** | **22.5%** | **induced; attacker may query and retry, ≤18 attempts — 9.8× the humanizers** |
 
-**The per-variant row is the one commensurable with the vendor rows**, which
-are also document-level FNRs on one adversarially prepared submission. The
-difference is method, not accounting: our submissions are the survivors of an
-Opus self-screen, i.e. a stronger attack than a single humanizer pass, which
-is why 11.1% exceeds the 2.31% commercial rate. This is a comparison of point
-estimates: clustered on text the per-variant interval runs [5.5, 17.6], so the
-adversarial vendor figures at 2.31–2.86% sit below our estimate but inside its
-lower tail — the ordering is secure, its margin less so. The per-target row is
-italicised because it allows up to eighteen attempts per document, and no
-published benchmark grants that; it is the right number for exposure, the
-wrong number for a detector comparison. The Rice row is included because the
-numeric coincidence invites a comparison that does not exist: his ~8% is a
-false-positive rate on 50 pre-ChatGPT speeches, measured on an LLM judge
-rather than on Pangram (§5). The vendor rows are vendor-reported on
-undisclosed test data and should be read as such; independent evaluations
-(RAID, Dugan et al. 2024; Weber-Wulff et al. 2023) consistently find detectors
-fail toward false negatives under obfuscation, which is the direction our
-result also points.
+**The per-variant rate is the one commensurable with the vendor rates**, which are also document-level FNRs on one adversarially prepared submission. The difference is method, not accounting: our submissions are the survivors of an Opus self-screen, a stronger attack than a single humanizer pass, which is why 11.1% exceeds the 2.31% commercial rate. This is a comparison of point estimates: clustered on text, the per-variant interval runs [5.5, 17.6], so the adversarial vendor figures at 2.31–2.86% sit below our estimate but inside its lower tail — the ordering is secure, its margin less so. The per-target rate is separated because it allows up to eighteen attempts per document, and no published benchmark grants that; it is the right number for exposure, the wrong number for a detector comparison.
+
+Rice 2026's Australian-Hansard ~8% is deliberately not tabled: that figure is a false-positive rate on 50 pre-ChatGPT speeches, measured on an LLM judge rather than on Pangram (§5), so it belongs in neither a false-negative benchmark nor a retry-enabled exposure comparison. The vendor rates are vendor-reported on undisclosed test data and should be read as such; independent evaluations (RAID, Dugan et al. 2024; Weber-Wulff et al. 2023) consistently find detectors fail toward false negatives under obfuscation, which is the direction our result also points.
 
 **Both rates move with effort, and the two bars must not be confused.** A
 *flip* (leaving AI for Mixed-or-Human) is far easier than a *success*
@@ -3051,7 +2987,7 @@ of the study is for.
 
 ### 7.1 Any check the attacker can score against is an optimisation target
 
-Point a general-purpose model at its own output, tell it to try again, and it will beat any check it can score against. This is not a claim about Pangram, and it is not a defeat theorem for fixed checks: it is the supportable form — a check whose output, or a correlated proxy for it, the attacker can query is an optimisation target, and the attacker carries a quality constraint it can itself satisfy. The 22.5% in §4.10 is a lower bound on that adversary class, measured at its weakest member.
+Point a general-purpose model at its own output, tell it to try again, and it will beat any check it can score against. This is not a claim about Pangram, and it is not a defeat theorem for fixed checks. The supportable form is narrower: a check becomes an optimisation target as soon as the attacker can query its output, or a proxy correlated with it, and the attacker can satisfy the quality constraint itself. The 22.5% in §4.10 is a lower bound on that adversary class, measured at its weakest member.
 
 Our own numbers are the *weak* instance. The search never queried the detector
 it was evading: it optimised against an Opus proxy, tested on Pangram only at
@@ -3129,7 +3065,9 @@ Two limits that do bite, and neither is about robustness:
   which means watermarking can support a disclosure norm but can never
   underwrite an accusation.
 
-And the fallback people reach for when a detector is unavailable — their own sense of whether text "reads like a person" — is worse than unreliable on adversarial input; it is anti-correlated with the truth. Asked to judge AI-likeness by register, a frontier reader flagged 13 of 35 genuine human floor speeches and only 5 of 35 machine rewrites that had been optimised against a detector (§4.10 stage 5): adversarial optimisation removes exactly the tells gut judgment keys on, so the errors of a vibes-based adjudicator concentrate on the *unoptimised* — ordinary speakers who ran their words through nothing. As machine-assisted text spreads, register stops carrying authorship information, and an institution still adjudicating authenticity by feel is grading noise. That the errors then fall hardest on the unassisted — that machines will overtake humans at seeming human to humans — is a conjecture resting on one unblinded, lineage-correlated judge on 35 texts, and it stays a conjecture until it happens (see the future-work item below). We state it because, after watching machines overtake human performance at task after task, we do not expect this one to be the exception.
+The fallback people reach for when no detector is available — their own sense of whether text "reads like a person" — is worse than unreliable on adversarial input. It is anti-correlated with the truth. Asked to judge AI-likeness by register, a frontier reader flagged 13 of 35 genuine human floor speeches and only 5 of 35 machine rewrites that had been optimised against a detector (§4.10 stage 5). Adversarial optimisation removes exactly the tells gut judgment keys on, so a vibes-based adjudicator concentrates its errors on the *unoptimised* — ordinary speakers who ran their words through nothing.
+
+As machine-assisted text spreads, register stops carrying authorship information, and an institution still adjudicating authenticity by feel is grading noise. That the errors then fall hardest on the unassisted — that machines will overtake humans at seeming human to humans — is a conjecture resting on one unblinded, lineage-correlated judge on 35 texts, and it stays a conjecture until it happens (see the future-work item below). We state it because, after watching machines overtake human performance at task after task, we do not expect this one to be the exception.
 
 ### 7.3 Policy context
 
@@ -4041,6 +3979,27 @@ differ in how novel they are likely to be.
 
 ## Appendix D — Replication and reproducibility
 
+**S10 — draft write-up, 2026-08-11; §4.6a and Appendix A extended
+2026-08-13.** All arms complete, including the detector-bypass study and both
+prior-art comparators. Everything is reproducible from `analysis/s10/`.
+
+**§4.6d's literature citations were web-verified 2026-08-24.** The result is
+placed against Labov (crossover/hypercorrection, *Sociolinguistic Patterns*,
+U. Pennsylvania Press, 1972), Simmel (1904), Veblen (1899), Jhering (1883)
+with Durkheim's summary supplying the quote, and Lieberson (*A Matter of
+Taste*, Yale, 2000); a fetched entry wrong on Labov's year and publisher has
+been corrected. §4.6a also reports standard errors not clustered on
+member, which the study has been bitten by three times; it is flagged in
+place.
+
+**Numbers marked † are carried from earlier in the study.** All nine were
+re-derived from their artifacts on 2026-08-11 and reproduce; footnotes on each
+give the script and invocation. Two of the nine (§4.6's cohort share, §4.8's
+pooled alignment effect) were briefly and wrongly recorded as unsourced — the
+verification pass had looked in the wrong script — so their footnotes name the
+right one explicitly. Everything unmarked was computed or re-verified on
+2026-08-09/11.
+
 #### The classification's element signatures
 
 The folk ladder's consensus signature (§3.4): every O\*NET element, its
@@ -4226,7 +4185,43 @@ Stage 0's comparison and both stages' regressions were recomputed from the
 raw result files by a second party who did not run the grading, and reproduce
 to the reported precision.
 
-### D.3 Bypass sample selection
+### D.3 Reasoning effort in the Opus screen
+
+**Reasoning effort buys nothing here.** The screen was tuned and validated at
+`effort=low`, and low had never been compared against anything. Re-run on the
+241-segment labelled pool with the prompt and batching held byte-identical (all
+AUCs against Pangram 4):
+
+| run | AUC | 95% CI |
+|---|---|---|
+| archived low | 0.948 | [0.920, 0.973] |
+| fresh low (replicate) | 0.951 | [0.923, 0.974] |
+| **max** | **0.942** | [0.911, 0.968] |
+
+The low-effort run was replicated so the effort comparison has a noise floor.
+A paired bootstrap of max − mean(low) gives **−0.007**, 95% CI
+**[−0.023, +0.007]**: centred below zero, and the whole interval sits below
+even the +0.015 the weaker open model gains from reasoning, let alone Qwen's
++0.172. Effects below ~0.03 AUC are outside this design's resolution.
+Per-segment correlations agree: low-vs-low r = +0.976, low-vs-max +0.959 and
++0.960 — max ranks the same and is *more decisive on the human class* (it
+sends more clear negatives to the floor), not a different scorer.
+
+Against a single low run, max would have looked like a small decline and been
+tempting to report as an effect. **The replicate is what makes the null
+readable.**
+
+This also cuts against the pattern in the open models, measured on the same
+pool: effort moved Qwen3-32B by **+0.172** and gpt-oss-120b by **+0.015**,
+against **−0.007** for Opus. Reasoning closes part of the gap for weak
+detectors and does nothing for a strong one — and the sharper point is that
+the frontier model is not reasoning its way to 0.95; it is recognising
+something at a glance. Practically, the screen can be run for about **4× fewer reasoning
+tokens (~2× all-in)** with no loss — a saving observed in the run logs rather than recorded in the committed AUC artifacts.[^s-effort]
+
+[^s-effort]: `opus_effort_ab.py`, `opus_effort_ab.csv`.
+
+### D.4 Bypass sample selection
 
 Four searches were run — two per chamber. The §4.10 rates use only the second
 in each chamber; the first in each was a biased sampling and is reported in
@@ -4264,7 +4259,7 @@ the selection score manufactured a clean cross-chamber gradient that was an
 artifact of differential regression, and it was briefly reported before being
 caught.
 
-### D.4 Artifacts
+### D.5 Artifacts
 The committed artifacts, and what each does:
 
 
@@ -4312,7 +4307,7 @@ not interchangeable:
 
 | arm | model | effort |
 |---|---|---|
-| Corpus-wide screen (§4.4), effort A/B | Claude Opus | low, and max in the A/B |
+| Corpus-wide screen (§4.4), effort A/B (Appendix D) | Claude Opus | low, and max in the A/B |
 | Bypass search: scoring / rewriting / hypotheses (§4.10) | Claude Opus | low / medium / high |
 | DQI grading, stages 1-5 (§4.9, §4.10) | **Claude Fable 5** | default |
 | DQI grading, stage 6 (§4.9a) | **Claude Opus** | medium |

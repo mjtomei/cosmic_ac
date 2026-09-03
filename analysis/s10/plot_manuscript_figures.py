@@ -48,25 +48,24 @@ def table_after(text, header_snippet):
 
 
 def prevalence(text):
-    """20 chambers laid out two-per-row: (name, rate, lo, hi)."""
+    """20 chambers, one per row: (name, rate, lo, hi)."""
     out = []
-    for line in table_after(text, "| chamber | rate | 95% CI |"):
+    for line in table_after(text, "| chamber | machine-drafted share of words |"):
         c = cells(line)
-        for part in (c[0:3], c[4:7]):
-            if len(part) < 3 or not part[0]:
-                continue
-            name, rate, ci = unbold(part[0]), unbold(part[1]), unbold(part[2])
-            m = re.match(r"\[([\d.]+),\s*([\d.]+)\]", ci)
-            if not m:
-                continue
-            out.append((name, float(rate.rstrip("%")), float(m.group(1)), float(m.group(2))))
+        if len(c) < 3 or not c[0]:
+            continue
+        name, rate, ci = unbold(c[0]), unbold(c[1]), unbold(c[2])
+        m = re.match(r"\[([\d.]+),\s*([\d.]+)\]", ci)
+        if not m:
+            continue
+        out.append((name, float(rate.rstrip("%")), float(m.group(1)), float(m.group(2))))
     return out
 
 
 def convergence(text):
     """19 chambers: (name, gap2006, gap2026)."""
     out = []
-    for line in table_after(text, "| chamber | gap 2006 | gap 2026 |"):
+    for line in table_after(text, "| chamber | gap 2006"):
         c = cells(line)
         if len(c) < 3:
             continue

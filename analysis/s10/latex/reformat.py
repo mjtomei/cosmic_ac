@@ -39,8 +39,8 @@ PREFIX_LABELS = {
  "5":"sec:related","6":"sec:limits","7":"sec:discussion",
  "71":"sec:disc-limit","72":"sec:disc-norms","73":"sec:policy",
  "74":"sec:disc-substitution","75":"sec:market-measure","76":"sec:disc-human",
- "d1":"sec:cross-route","d2":"sec:reanalysis","d3":"sec:bypass-sample",
- "d4":"sec:artifacts",
+ "d1":"sec:cross-route","d2":"sec:reanalysis","d3":"sec:screen-effort",
+ "d4":"sec:bypass-sample","d5":"sec:artifacts",
  "e1":"sec:judge-leakage","e2":"sec:prominence-full","e3":"sec:prominence-buckets",
  "e4":"sec:cohort-ministerial",
 }
@@ -86,7 +86,8 @@ NUMMAP = {
 APPMAP = {
  "A":"app:null","B":"app:superseded","C":"app:future","D":"app:repro",
  "E":"app:robustness",
- "D.1":"sec:cross-route","D.2":"sec:reanalysis","D.3":"sec:bypass-sample","D.4":"sec:artifacts",
+ "D.1":"sec:cross-route","D.2":"sec:reanalysis","D.3":"sec:screen-effort",
+ "D.4":"sec:bypass-sample","D.5":"sec:artifacts",
  "E.1":"sec:judge-leakage","E.2":"sec:prominence-full","E.3":"sec:prominence-buckets",
  "E.4":"sec:cohort-ministerial",
 }
@@ -240,8 +241,9 @@ MERGE_INTO_DISCUSSION = ["sec:limits","sec:related"]  # demoted to subsections
 
 def reorder(t):
     """Drafting order (markdown) -> publication order (Science: Methods last),
-    merging Limits/Related into Discussion as subsections and relocating
-    the post-abstract provenance block to Supplementary materials."""
+    merging Limits/Related into Discussion as subsections. The provenance and
+    reproducibility note lives in Appendix D in the markdown, so it needs no
+    relocation here."""
     intro = re.search(r'\\section\{[^{}]*\}\\label\{sec:intro\}', t)
     app = re.search(r'\\appendix', t)
     if not (intro and app):
@@ -266,27 +268,14 @@ def reorder(t):
     disc = (disc[:mfut.start()] + demoted + disc[mfut.start():]) if mfut else (disc + demoted)
     blocks["sec:discussion"] = disc
 
-    # relocate the provenance block (between the two thematic-break rules in head)
-    RULE = "\\begin{center}\\rule{0.5\\linewidth}{0.5pt}\\end{center}"
-    prov = ""
-    if head.count(RULE) >= 2:
-        hp = head.split(RULE)
-        head = hp[0].rstrip() + "\n\n"
-        prov = hp[1].strip()
-
     pieces = []
     for lab in PUB_ORDER:
         if lab == "sec:data":
             pieces.append("\\section*{Materials and methods}\n\n")
         pieces.append(blocks[lab])
-    tail_out = tail
-    if prov:
-        marker = "\\section*{Supplementary materials}\n\n"
-        note = marker + "\\subsection*{Provenance and reproducibility}\n\n" + prov + "\n\n"
-        tail_out = tail_out.replace(marker, note, 1)
-    sys.stderr.write("reorder: merged %d sections into Discussion; provenance moved=%s\n"
-                     % (len(MERGE_INTO_DISCUSSION), bool(prov)))
-    return head + "".join(pieces) + tail_out
+    sys.stderr.write("reorder: merged %d sections into Discussion\n"
+                     % len(MERGE_INTO_DISCUSSION))
+    return head + "".join(pieces) + tail
 
 # 35 tables in DRAFTING order: (header keyword for a safety check, label, caption).
 # longtable's own \caption auto-numbers and stays inline (no float drift).
@@ -294,10 +283,9 @@ TABLE_CAPS = [
  ("group & chambers", "tab:chambers", "The 22 chambers, grouped by country and regime, and the arms that use each."),
  ("instrument & outcome", "tab:retired", "Instruments built and retired, with the result that dropped each."),
  ("Pangram 3 & Pangram 4", "tab:calibration", "Calibration on pre-2022 speech: specificity of Pangram 3 versus Pangram 4."),
- ("& & chamber", "tab:prevalence", "Prevalence of machine-drafted words by chamber, with 95\\% confidence intervals."),
+ ("chamber & machine-drafted share of words", "tab:prevalence", "Prevalence of machine-drafted words by chamber, with 95\\% confidence intervals."),
  ("genre, 2025--26", "tab:genre", "Machine-drafted share by genre of business, 2025--26."),
  ("Pangram verdict & n & mean Opus", "tab:screen-by-verdict", "Mean Opus screen score by Pangram verdict on the 618-segment overlap."),
- ("run & AUC", "tab:screen-auc", "Agreement of the Opus screen with Pangram across runs (AUC)."),
  ("gap 2006", "tab:climb", "The constant-window register trend: nineteen chambers, 2006--2026, ordered by growth."),
  ("gap 1994", "tab:climb-long", "The longest window: the three chambers whose series reach 1994."),
  ("sd & vs US House", "tab:vs-ushouse", "Register level by chamber, 2020--26 means, benchmarked against the US House."),
@@ -310,18 +298,21 @@ TABLE_CAPS = [
  ("register shift (corrected)", "tab:posttraining", "Register shift by training stage (Rogan--Gladen corrected)."),
  ("corpus & \\textbf{0}", "tab:coverage-occ", "Style-word coverage by number of occurrences, at matched volume."),
  ("absent from generated only", "tab:coverage-partition", "Where the 407 style words fall: generated text versus Hansard 2025--26."),
- ("stage 1, per 0", "tab:dqi", "Discourse Quality Index associations with machine authorship: stages 1 and 2."),
+ ("screen score & segments", "tab:applicability", "Applicability of the two sentinel dimensions, by band of the blinded screen score."),
+ ("stage 1, per sd of score", "tab:dqi", "Discourse Quality Index associations with machine authorship: stages 1 and 2."),
  ("arm & justification vs human", "tab:continuations", "Machine continuations graded blind: justification and applicability by arm."),
  ("Pangram verdict & meaning & counts as", "tab:verdicts", "Pangram's three verdicts and the two events the search counts."),
  ("attacker\\textquotesingle s detector access", "tab:bypass-rates", "Bypass rates by whether the attacker may query the detector."),
  ("searched & zero-yield", "tab:bypass-yield", "Detector-evasion search yield per target."),
- ("measurement & rate & what it is", "tab:bypass-summary", "The bypass rates, disambiguated."),
+ ("one-submission measurement & false-negative rate", "tab:bypass-summary", "One-submission false-negative rates: the vendor-reported rates and this study's per-variant rate."),
+ ("retry-enabled exposure & success rate", "tab:bypass-exposure", "Retry-enabled exposure: the per-target success rate when the attacker may query the detector and retry."),
  ("stage 3 (n=38)", "tab:quality-paired", "Paired within-text quality comparisons (stages 3 and 4)."),
  ("variant (n=35) & target (n=15)", "tab:quality-evasion", "Quality of successful evasions versus their targets, by dimension."),
  ("Rice 2026 (Australian federal)", "tab:priorart", "This study against the two closest prior efforts."),
  ("seed verdict & variants", "tab:superseded-bypass", "Superseded per-seed bypass transitions."),
  ("element & id & level & sign", "tab:elements-levels", "The folk ladder's consensus element signature: 85 elements over four levels, with consensus sign and coder count."),
  ("element & id & component", "tab:elements-components", "The theoretical ladder's component assignments: 71 consensus elements over U/L/D/N."),
+ ("run & AUC", "tab:screen-auc", "Agreement of the Opus screen with Pangram across runs (AUC)."),
  ("run & role & seeds", "tab:bypass-sample", "Bypass sample selection across runs."),
  ("artifact & what it does", "tab:artifacts", "Artifacts: the scripts and data behind each result."),
  ("arm & model & effort", "tab:models", "Models and reasoning effort by arm."),
@@ -342,6 +333,8 @@ COLSPECS = {
  "tab:verdicts":       r"@{}lp{0.28\linewidth}p{0.44\linewidth}@{}",
  "tab:bypass-rates":   r"@{}lp{0.22\linewidth}p{0.16\linewidth}p{0.36\linewidth}@{}",
  "tab:bypass-summary": r"@{}p{0.22\linewidth}p{0.20\linewidth}p{0.50\linewidth}@{}",
+ "tab:bypass-exposure": r"@{}p{0.22\linewidth}p{0.20\linewidth}p{0.50\linewidth}@{}",
+ "tab:applicability":  r"@{}lrp{0.26\linewidth}p{0.26\linewidth}@{}",
  "tab:priorart":       r"@{}p{0.20\linewidth}p{0.38\linewidth}p{0.36\linewidth}@{}",
  "tab:bypass-sample":  r"@{}lp{0.16\linewidth}lp{0.28\linewidth}p{0.24\linewidth}@{}",
  "tab:artifacts":      r"@{}p{0.36\linewidth}p{0.58\linewidth}@{}",
