@@ -38,7 +38,12 @@ const FAITH_MODEL = 'work/claude-fable-5-1'
 const WORKER_MODEL = 'work/claude-opus-5'
 
 const READ_CAP_TOKENS = 25000   // the Read tool's hard per-call cap, measured
-const MAX_GROUP_LINES = 900     // ~22k tokens on this draft: one read, with slack
+const LINES_PER_READ = 900      // ~22k tokens of this draft: what one read returns
+// How big a section group is, which is NOT the same question as how much fits in
+// one read. args.groups asks for a target number of groups; a group larger than
+// LINES_PER_READ simply takes more than one read, and the propose prompt says so.
+const TARGET_GROUPS = (args && args.groups) || null
+let GROUP_LINES = LINES_PER_READ
 
 const SCOPE_SCHEMA = {
   type: 'object',
@@ -78,7 +83,7 @@ omitted heading silently drops that part of the paper from the whole run.`
 // Pack the heading blocks into contiguous groups that each fit in ONE read.
 // Break at a top-level (##) heading once past ~55% of the budget, so groups
 // land on section boundaries instead of mid-section wherever possible.
-const packGroups = (headings, totalLines) => {
+const packGroups = (headings, totalLines, maxLines) => {
   const hs = (headings || []).filter(h => h && h.line >= 1 && h.line <= totalLines)
                              .sort((a, b) => a.line - b.line)
   if (!hs.length) return [{ id: 'g1', lines: [1, totalLines], headings: [] }]
@@ -92,7 +97,7 @@ const packGroups = (headings, totalLines) => {
   let cur = []
   for (const b of blocks) {
     const span = b.b - (cur.length ? cur[0].a : b.a) + 1
-    if (cur.length && (span > MAX_GROUP_LINES || (b.level === 2 && span > MAX_GROUP_LINES * 0.55))) {
+    if (cur.length && (span > maxLines || (b.level === 2 && span > maxLines * 0.55))) {
       out.push(cur); cur = [b]
     } else cur.push(b)
   }
@@ -104,7 +109,7 @@ const packGroups = (headings, totalLines) => {
   const merged = []
   for (const g of out) {
     const prev = merged[merged.length - 1]
-    if (prev && g[g.length - 1].b - prev[0].a + 1 <= MAX_GROUP_LINES) prev.push(...g)
+    if (prev && g[g.length - 1].b - prev[0].a + 1 <= maxLines) prev.push(...g)
     else merged.push([...g])
   }
   return merged.map((g, i) => ({
@@ -189,7 +194,15 @@ if (!SCOPES && !RESUME && !RESUME_PROPOSALS) {
                                             model: WORKER_MODEL, schema: SCOPE_SCHEMA })
   if (!SCOPE_INDEX || !SCOPE_INDEX.total_lines) throw new Error('scope index failed; cannot tile the draft')
   const N = SCOPE_INDEX.total_lines
-  const groups = packGroups(SCOPE_INDEX.headings, N)
+  // Solve for the requested group count rather than guessing a budget. The
+  // packer prefers to break at a top-level heading once past ~55% of budget, so
+  // a budget of N/target alone overshoots; widen it until the count is met.
+  if (TARGET_GROUPS) {
+    GROUP_LINES = Math.ceil(N / TARGET_GROUPS)
+    while (packGroups(SCOPE_INDEX.headings, N, GROUP_LINES).length > TARGET_GROUPS && GROUP_LINES < N)
+      GROUP_LINES = Math.ceil(GROUP_LINES * 1.05)
+  }
+  const groups = packGroups(SCOPE_INDEX.headings, N, GROUP_LINES)
   // Assert the tiling before anything expensive runs on it. A gap here means a
   // whole stretch of the paper goes unreviewed while the run still looks clean.
   if (groups[0].lines[0] !== 1) throw new Error(`tiling does not start at line 1 (starts ${groups[0].lines[0]})`)
@@ -285,15 +298,24 @@ const readingNote = (sc) => {
   if (!sc || !sc.lines) return `Read the manuscript at \`${DRAFT}\`.`
   const [a, b] = sc.lines
   const n = b - a + 1
-  if (sc.scope === 'all') return `Read the whole manuscript at \`${DRAFT}\` — lines ${a}-${b}.
-It is too long to take in at once — about ${MAX_GROUP_LINES} lines is as much as one read
-returns — so work through it in ${Math.ceil(n / MAX_GROUP_LINES)} successive stretches until you reach line ${b}.
-Cover all of it; do not stop after the first stretch.`
-  return `Your scope is lines ${a}-${b} of \`${DRAFT}\` (${n} lines), which covers:
-${sc.headings ? sc.headings.map(h => '  - ' + h).join('\n') : '  ' + sc.scope}
-That range is small enough to take in as one piece, so read it in one go. Look
-outside it only to check a specific cross-reference, and propose changes only
-within it.`
+  const reads = Math.ceil(n / LINES_PER_READ)
+  const where = sc.scope === 'all'
+    ? `Your scope is the whole manuscript at \`${DRAFT}\` — lines ${a}-${b}.`
+    : `Your scope is lines ${a}-${b} of \`${DRAFT}\` (${n} lines), which covers:
+${sc.headings ? sc.headings.map(h => '  - ' + h).join('\n') : '  ' + sc.scope}`
+  const how = reads <= 1
+    ? `That range is small enough to take in as one piece, so read it in one go.`
+    : `It is too long to take in at once — about ${LINES_PER_READ} lines is as much as one
+read returns — so work through it in ${reads} successive stretches, starting at line
+${a} and continuing until you reach line ${b}. Cover all of it; do not stop after
+the first stretch.`
+  const bound = sc.scope === 'all'
+    ? `Propose changes anywhere in it.`
+    : `Look outside the range only to check a specific cross-reference, and propose
+changes only within it.`
+  return `${where}
+${how}
+${bound}`
 }
 
 const PROPOSE_PROMPT = (variant, sc) => `ROLE: PROPOSE.
