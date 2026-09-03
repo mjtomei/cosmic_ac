@@ -2,9 +2,9 @@
 
 ## Abstract
 
-We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* — the excess vocabulary language models overuse, derived in prior work from the post-2022 jump in scholarly text, run here as a fixed ruler across four decades of the parliamentary record. In current speech, **9.03% of words** are machine-drafted — a conservative estimate — with a fourfold spread across chambers (after shrinkage) and a concentration in scripted genres. This machine-drafted speech is not degraded: AI-flagged contributions are better-formed and no less engaged. Directed effort evades the detector, so the prevalence figure is a floor, and detection is better used to measure a norm than as a security control.
+We measure machine-drafted speech across 22 legislative chambers in five countries with two independent instruments: a commercial AI-text detector (Pangram), calibrated against each chamber's own pre-2022 record (specificity 1,260/1,260), and a detector-independent lexical *register* — the excess vocabulary language models overuse, derived in prior work from the post-2022 jump in scholarly text, run here as a fixed ruler across four decades of the parliamentary record. In current speech, **9.03% of words** are machine-drafted — a conservative estimate, averaging a still-rising series from 7.36% in 2025 to 11.70% in 2026 — with a fourfold spread across chambers (after shrinkage) and a concentration in scripted genres. This machine-drafted speech is not degraded: AI-flagged contributions are better-formed and no less engaged. Directed effort evades the detector, so the prevalence figure is a floor. Detection is better used to measure a norm than as a security control.
 
-The register, however, **predates the models by decades**. That history is invisible to the excess-vocabulary designs that found the jump, which measure acceleration against a local trend in corpora reaching back roughly a decade. Run as a level series, the register's rise spans three decades and two instruments — dated to 1994–96 on the longest-reaching series — and is concentrated in a few common connectives over a broad shallow widening. A juniority gradient predates even that, steepening as cohorts formed inside the drift arrive. Prior occupation leaves a small, replicated signature that absorbs social class, scored on a preregistered organisational-altitude measure whose insulated middle sits highest and whose off-hierarchy level, free work, sits lowest. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
+The register, however, **predates the models by decades**. That history is invisible to the excess-vocabulary designs that found the jump, which measure acceleration against a local trend in corpora reaching back roughly a decade. Run as a level series, the register's rise spans three decades and two instruments, dated to 1994–96 on the longest-reaching series. The climb is concentrated in a few common connectives over a broad shallow widening. A juniority gradient predates even that, steepening as cohorts formed inside the drift arrive. Prior occupation leaves a small, replicated signature that absorbs social class: a preregistered organisational-altitude measure peaks at the insulated middle and sits lowest at free work, off the hierarchy. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
 
 ## 1. Introduction
 
@@ -41,17 +41,19 @@ detect undisclosed LLM text in UK and Swedish parliamentary motions with a
 glass-box classifier and find a steady rise from 2022 — two chambers, written
 motions rather than transcribed speech.
 
-Each family answers part of the question. But the parliamentary studies cover
-one or two chambers; the detector and classifier approaches need ground
-truth — labelled or synthetic training text — and inherit its blind spots;
-and, most importantly, all of this work treats the machine register as a new
-arrival: something to detect, dating from 2022. None asks whether the
+Each family answers part of the question. The parliamentary studies cover one
+or two chambers, and the detector and classifier approaches need ground
+truth — labelled or synthetic training text — and inherit its blind spots.
+The deeper gap is what all of this work assumes: that the machine register is
+a new arrival, something to detect, dating from 2022. None asks whether the
 register the detectors key on existed before the machines, or which speakers
 already used it.
 
 The question also splits along a second line, and conflating the halves is the main error available here. *Prevalence* — how much of the record a machine drafted — needs a calibrated detector. *Permeation* — whether human speech is drifting toward the machine register independent of drafting — needs an instrument independent of the detector, because the human baseline is itself moving.
 
-We therefore measure both, separately, across 22 chambers in five countries. Pangram, a commercial detector calibrated against each chamber's own pre-2022 record (specificity 1,260 of 1,260), measures prevalence. A lexical register instrument built from the vocabulary language models overuse, run against each chamber's own placebo-matched counterfactual, measures permeation. The detector is a black box with a measured false-positive floor. The register is transparent, cheap at corpus scale, and robust to the light editing that defeats detectors, but coarse. Their division of labour, not agreement on one number, carries the study's claims: prevalence from the calibrated detector; history and social structure from the register; and the genre ladder as the one place their inferences demonstrably meet. The corpus reaches back three decades, making that second question possible.
+We therefore measure both, separately, across 22 chambers in five countries, on a corpus reaching back three decades — the depth that makes the second question askable at all. Pangram, a commercial detector calibrated against each chamber's own pre-2022 record (specificity 1,260 of 1,260), measures prevalence. A lexical register instrument built from the vocabulary language models overuse, run against each chamber's own placebo-matched counterfactual, measures permeation.
+
+The two differ in what they can be trusted with. The detector is a black box with a measured false-positive floor. The register is transparent, cheap at corpus scale, and robust to the light editing that defeats detectors, but coarse. Their division of labour, not agreement on one number, carries the study's claims: prevalence from the calibrated detector; history and social structure from the register; and the genre ladder as the one place their inferences demonstrably meet.
 
 The question we came with gets its answer. At least 9.0% of words in current legislative speech are machine-drafted — a floor, because directed effort evades the detector. The share spreads fourfold across chambers and concentrates in scripted genres, with no quality penalty: against a deliberation rubric, flagged speech is better-formed and no less engaged, in the cross-chamber arm and in controlled model continuations alike.
 
@@ -59,9 +61,11 @@ The finding we did not come for is the paper's centre of gravity. The register i
 
 When we went looking for who carried it, the dominant simple correlate is birth year — a juniority gradient older than the drift itself, steepened by the cohorts formed inside it. A pre-registered occupational model adds weaker but real structure — the register peaks at the insulated middle of organisational hierarchies, the rungs that answer upward without the final say — and social class traces the same inverted-U at coarser grain. These correlations locate the rise without yet explaining it; together they cover about a sixth of member-level variation, most of that birth year. Machine intelligence did not invent this register of accountability without authorship; it inherited it, automated it, and made it measurable.
 
-Chasing the occupational ordering produced a by-product worth naming: a measure of socioeconomic position scored from occupational content rather than from a categorical schema, whose distinctive level — free work, outside the organisational hierarchy altogether — carried a preregistered, confirmed prediction. Rigid classification buys legibility by discarding information; Scott made that argument about states, and the class schemas are a mild case of it. Machine intelligence lowers the cost of the alternative: bespoke, current classifications, blind-derived from the full descriptor universe and preregistered so they stay verifiable, keeping what the classical schemas flatten. In the event, the measure's best-performing form is exactly that: a folk category, concretized.
+Chasing the occupational ordering produced a by-product worth naming: a measure of socioeconomic position scored from occupational content rather than from a categorical schema, whose distinctive level — free work, outside the organisational hierarchy altogether — carried a preregistered, confirmed prediction. The best-performing form is a folk category, concretized: machine coders, blind to the outcome, turned the everyday picture of a corporate ladder into a scored instrument. Bespoke classifications of that kind are now cheap enough to preregister and check.
 
-The pattern of findings opens more fields than it closes: machine-drafted speech in deliberative bodies, its prevalence now measurable and its impacts and biases barely touched; class and register markers in legislatures, for which the occupational measure above is a beginning; and the large-scale study of registers in open speech records generally — of which this paper is itself a demonstration. One of those impacts can now be named precisely: post-training elevates the same marker vocabulary that, among humans, peaks at the insulated organisational middle — a shared word-list rate, not a shared mix, and a weak effect, but a first quantitative trace of what Brynjolfsson calls the Turing trap: the worry that human-imitating AI is developed to substitute for workers rather than augment them. We do not advance that reading; we note that it now has a measurable form, and a template for the oversight measurements it calls for.
+The pattern of findings opens more fields than it closes: machine-drafted speech in deliberative bodies, its prevalence now measurable and its impacts and biases barely touched; class and register markers in legislatures, for which the occupational measure above is a beginning; and the large-scale study of registers in open speech records generally — of which this paper is itself a demonstration.
+
+One of those impacts can now be named precisely: post-training elevates the same marker vocabulary that, among humans, peaks at the insulated organisational middle — a shared word-list rate, not a shared mix, and a weak effect, but a first quantitative trace of what Brynjolfsson calls the Turing trap: the worry that human-imitating AI is developed to substitute for workers rather than augment them. We do not advance that reading; we note that it now has a measurable form, and a template for the oversight measurements it calls for.
 
 That template is the study itself. Essentially every measurement in it — extraction, scoring, coding, grading, across 22 chambers and three decades — was executed by machine intelligence, cheaply enough to repeat on any open record. The null results, replications and superseded analyses that usually go unreported are kept in the record rather than discarded, and pervasive logging supplies the substance of pre-registration: timestamped predictions verifiably preceding the data, without the formal document as sole witness. Detection is better used to measure a norm than to police it, and the measuring is now nearly free.
 
@@ -71,7 +75,8 @@ Twenty-two chambers across five countries, extracted from official Hansard
 and the Congressional Record. The covariate arms use all 22. The prevalence
 arm covers 20: New Brunswick was the pilot and has no uniform prevalence
 sample, and Tasmania's transcription regime shifted mid-corpus, which leaves
-it with no usable control (§2.1).
+it with no usable control (§2.1). The register series in §4.5a additionally
+includes Prince Edward Island.
 
 | group | chambers |
 |---|---|
@@ -79,6 +84,10 @@ it with no usable control (§2.1).
 | Australia | NSW, QLD, SA, TAS, VIC, WA |
 | UK/Ireland | House of Commons, Scotland, Wales, Northern Ireland, Dáil Éireann |
 | US | House, Senate |
+
+The constant-window register series in §4.5a additionally includes Prince
+Edward Island; New Brunswick, the discovery corpus of §4.5, is not in that
+nineteen-chamber table.
 
 Per chamber, two strata:
 
@@ -147,13 +156,13 @@ carries its own 60-segment pre-AI control — a check that chamber-specific
 editorial registers do not manufacture false positives — while the pooled
 1,260 carries the statistical weight (§4.1). The per-chamber controls are a
 heterogeneity check, not an independence claim: no 60/60 cell could stand
-alone, and none is asked to. This is the single most important design
-choice in the study and the reason its result differs from published
-comparators (§5). It also exceeds the field's practice: the closest
-parliamentary study measures false positives on one pre-LLM hold-out per
-parliament, in two parliaments; population-level studies validate per venue
-against semi-synthetic ground truth; and commercial-detector exercises have
-leaned on a single fifty-speech calibration or on vendor benchmarks alone.
+alone, and none is asked to. This is the study's most consequential design
+choice and the reason its result differs from published comparators (§5).
+The comparators calibrate more coarsely: the closest parliamentary study
+measures false positives on one pre-LLM hold-out per parliament, in two
+parliaments; population-level studies validate per venue against
+semi-synthetic ground truth; and commercial-detector exercises have leaned
+on a single fifty-speech calibration or on vendor benchmarks alone.
 Twenty-one chambers with in-domain controls each is the same idea carried
 to the grain this corpus allows.
 
@@ -232,7 +241,7 @@ special cases recorded (one Work Context item rated CT rather than CX, and
 element 3.A.1, a category distribution collapsed to its expectation, whose
 missing ratings for farmers are the subject of a committed sensitivity
 run).[^m34b] The complete signature — every element id, name, level, sign
-and coder count — is Appendix D's first table.
+and coder count — is the first table of Appendix D.8.
 
 **The theoretical ladder** is the semi-independent check, named for the
 opposite origin: it is built from the registration's theory of
@@ -240,7 +249,7 @@ accountability relations, composed rather than pictured. Three independent
 blind coding workflows assigned elements to four accountability components — **U** upward (advising without the final say, discretion
 reverse-scored), **L** lateral (external service), **D** downward
 (command), **N** undirected (organisational account-giving and contact) —
-yielding 71 consensus elements (Appendix D's second table); the free /
+yielding 71 consensus elements (the second table of Appendix D.8); the free /
 bottom / middle / top levels are composed from the components. The two
 ladders' levels correlate +0.75 to +0.92, which is why the registration's
 never-together rule treats them as near-twins; where both enter a model the
@@ -376,54 +385,6 @@ segments moves the pooled interval imperceptibly (design effect 1.23).[^ryearspl
 Every estimate that follows is the share of *what was said* that is
 machine-drafted, over the whole of the record Pangram will read.
 
-*Weighted by words, because a segment is not a natural unit — and because the
-alternative would suppress the rate.* The segmenter packs speaker turns into
-windows of at most 360 words, so a long speech becomes three segments and a
-short interjection becomes one.[^s-seg] A rate over segments is partly a
-measurement of our packer; a rate over words is invariant to how the text was
-cut up. Prevalence sampling draws segments uniformly, which oversamples short
-pieces by count, and **longer pieces are markedly more machine-drafted** —
-across the pooled prevalence sample the longest quartile of segments runs 11.3%
-against 0.7% for the shortest, word-weighted — 15.2% against 1.0% as binary
-segment rates (pooled sample). Segment-weighting would therefore understate the
-word rate — by 0.05 points against the binary segment rate (8.98% vs 9.03%),
-and by 2.20 points against the fraction-weighted segment mean (6.83%). Every
-rate in this study is word-weighted for this reason.
-
-The weighting is applied *after* a uniform draw over segments, not by sampling
-proportional to length, so the estimator is a ratio estimator rather than a
-mean of a size-weighted sample; its finite-sample bias is nil in practice
-(bootstrap mean 10.30% against a plug-in 10.31%, a −0.005-point gap), and
-because the word-weight is not concentrated (the longest tenth of sampled
-segments hold only 14% of the words) uniform sampling costs a little variance,
-which the bootstrap interval already carries, not bias. The per-chamber rates
-are reported individually, and their **equal-weight mean matches the
-word-weighted pooled rate** (9.12% against the 9.03% headline[^s-banded]), so
-no single large chamber drives the headline.
-
-[^s-seg]: `segment.py`.
-
-[^s-banded]: `banded_prevalence.py`.
-
-
-*Weighted by AI fraction, because a flagged segment is not uniformly flagged.*
-The flagged segments are not one kind: of the estimator's 316 flagged
-prevalence segments, **182 are full AI verdicts and 134 (42%) are Mixed** —
-Pangram reporting that part of the segment is human. (Both numbers in this
-paragraph are computed on the same sample the headline uses; an earlier
-draft quoted a 364-segment count that mixed in the genre-arm rows and a
-superseded Manitoba draw.) Counting a Mixed segment's words as fully machine
-over-states the rate by a third — **12.03% against 9.03%** — so the split is
-not cosmetic, and folding Mixed in at full weight (as a naive AI+Mixed count
-would) is the single largest upward bias in the headline. Every flagged segment
-is therefore weighted by its own AI share: recorded directly for the API-scored
-rows, and read off the dashboard result by result for all 132 Mixed segments
-the API did not cover. Those harvested Mixed segments average **0.435** machine
-(n=132, sd 0.219, range 0.11–1.00); AI verdicts are effectively a constant at
-0.9965. Human verdicts are 0.0 in every one of the 1,246 recorded cases. The
-9.03% headline is thus already the split-corrected figure, not an AI-or-Mixed
-count.[^r42f]
-
 | chamber | machine-drafted share of words | 95% CI |
 |---|---:|---:|
 | NSW | **19.8%** | [13.1, 26.9] |
@@ -451,6 +412,51 @@ count.[^r42f]
 
 *The twenty chamber rates, drawn: each point is the chamber's word-weighted, fraction-weighted machine-drafted share of 2025–26 words (values exactly as in the table); whiskers are the cluster-bootstrap 95% CIs; chambers sorted by rate, direct-labelled, with the two US chambers emphasised and the pooled 9.03% marked as a reference line. Axis starts at zero.*
 
+*Rates are weighted by words because a segment is not a natural unit.* The
+segmenter packs speaker turns into windows of at most 360 words, so a long
+speech becomes three segments and a short interjection becomes one.[^s-seg] A
+segment rate therefore partly measures the packer; a word rate is invariant to
+where the text was cut.
+
+Length also predicts drafting. In the pooled prevalence sample, the longest
+quartile of segments is 11.3% machine-drafted by words against 0.7% for the
+shortest; as binary segment rates, the same comparison is 15.2% against 1.0%.
+Segment-weighting would lower the 9.03% word rate by 0.05 points against the
+binary segment rate (8.98%) and by 2.20 points against the fraction-weighted
+segment mean (6.83%). Every rate in this study is therefore word-weighted.
+
+Segments were nevertheless sampled uniformly, not proportional to length. The
+resulting ratio estimator has nil finite-sample bias in practice: its
+bootstrap mean is 10.30% against a plug-in estimate of 10.31%, a −0.005-point
+gap. The weights are not concentrated — the longest tenth of sampled segments
+contain only 14% of the words — so uniform sampling adds a little variance,
+already carried by the bootstrap interval, rather than bias. Nor does one
+large chamber drive the result: the equal-weight mean of the chamber rates is
+9.12%, against the 9.03% word-weighted pooled rate.[^s-banded]
+
+[^s-seg]: `segment.py`.
+
+[^s-banded]: `banded_prevalence.py`.
+
+
+*Weighted by AI fraction, because a flagged segment is not uniformly flagged.*
+The flagged segments are not one kind: of the estimator's 316 flagged
+prevalence segments, **182 are full AI verdicts and 134 (42%) are Mixed** —
+Pangram reporting that part of the segment is human. (Both numbers in this
+paragraph are computed on the same sample the headline uses; an earlier
+draft quoted a 364-segment count that mixed in the genre-arm rows and a
+superseded Manitoba draw.) Counting a Mixed segment's words as fully machine
+over-states the rate by a third — **12.03% against 9.03%** — so the split is
+not cosmetic, and folding Mixed in at full weight (as a naive AI+Mixed count
+would) is the single largest upward bias in the headline. Every flagged segment
+is therefore weighted by its own AI share: recorded directly for the API-scored
+rows, and read off the dashboard result by result for all 132 Mixed segments
+the API did not cover. Those harvested Mixed segments average **0.435** machine
+(n=132, sd 0.219, range 0.11–1.00); AI verdicts are effectively a constant at
+0.9965. Human verdicts are 0.0 in every one of the 1,246 recorded cases. The
+9.03% headline is thus already the split-corrected figure, not an AI-or-Mixed
+count.[^r42f]
+
 Intervals are cluster bootstraps over segments, not Wilson intervals: the
 estimator is a ratio of two random sums whose numerator and denominator move
 together, so a chamber whose one flagged segment happens to run 900 words
@@ -472,8 +478,26 @@ shrunken range is the honest spread claim, since the extremes of twenty
 noisy cells overstate their own separation (the raw-extremes version is
 retired to Appendix B). What drives a chamber's position is not
 established here — even two chambers of one legislature can sit far apart
-(Appendix C item 7), and the study does not attribute the between-chamber differences to
+(Appendix C item 8), and the study does not attribute the between-chamber differences to
 any measured cause.
+
+[^r42f]: Fractions live in `fraction_ai_harvested.json` (151 harvested
+    individually) and in the `fraction_ai` column of
+    `pangram_p4_verdicts.csv` (1,431 recorded by the API). The 154 AI verdicts
+    not harvested individually are carried at the measured constant; two
+    independent samples put it at 0.9965 (n=148) and 1.0000 (n=19), and the
+    lowest AI value anywhere is 0.81, so clicking them would move the pooled
+    figure by under 0.01pp.
+
+    **This is a correction, not a refinement.** Every rate this study reported
+    before 2026-08-13 counted a Mixed segment as wholly machine-written. The
+    error is a factor of 1.33 on the headline and is not uniform across the
+    study: it is largest where Mixed verdicts cluster, which is the
+    mixed-format business in the middle of §4.3's genre ladder.
+
+[^r42]: `python -c "import banded_prevalence as B; B.table(B.load())"`.
+
+### 4.2a Estimate-specific audits
 
 **Federal Canada's row comes from its own uniform draw**, not from the
 genre-stratified sample that answers §4.3. The genre arm takes 60 segments
@@ -530,22 +554,6 @@ only thing that changed.[^r42mb]
     reproducible — 135 of the old 278 seg_ids do not exist in the corrected
     file, because re-extraction shifts turn indices.
 
-[^r42f]: Fractions live in `fraction_ai_harvested.json` (151 harvested
-    individually) and in the `fraction_ai` column of
-    `pangram_p4_verdicts.csv` (1,431 recorded by the API). The 154 AI verdicts
-    not harvested individually are carried at the measured constant; two
-    independent samples put it at 0.9965 (n=148) and 1.0000 (n=19), and the
-    lowest AI value anywhere is 0.81, so clicking them would move the pooled
-    figure by under 0.01pp.
-
-    **This is a correction, not a refinement.** Every rate this study reported
-    before 2026-08-13 counted a Mixed segment as wholly machine-written. The
-    error is a factor of 1.33 on the headline and is not uniform across the
-    study: it is largest where Mixed verdicts cluster, which is the
-    mixed-format business in the middle of §4.3's genre ladder.
-
-[^r42]: `python -c "import banded_prevalence as B; B.table(B.load())"`.
-
 ### 4.3 Drafting concentrates in scripted business
 
 Machine drafting concentrates where the procedure permits advance
@@ -571,7 +579,8 @@ procedure permits**, which is the mechanism under test:
 | **SO31** — one-minute scripted set-pieces | **32.3%** | [21.5, 44.1] |
 | Government Orders — mixed prepared and spontaneous | 19.9% | [10.5, 30.5] |
 | **Oral Questions** — not on notice | **9.8%** | [2.2, 19.1] |
-| all three pre-AI controls (0/180) | **0.0%** | [0.0, 2.1] |
+
+All three pre-AI controls, pooled across genres: 0/180, **0.0%** [0.0, 2.1].
 
 **SO31 vs OQ: 3.29×, +22.5pp, permutation p = 0.0025.**
 
@@ -609,9 +618,9 @@ trend across the ladder, not any single step between neighbours, that the data
 establish.
 
 The ordering is exactly what the mechanism predicts — the more preparable the
-format, the more machine drafting — and it is the one place where the lexicon
-arm's inference is confirmed by an independent instrument. Two instruments
-agreeing is worth more than either alone.
+format, the more machine drafting — and it is the one place the detector and
+the register instrument meet on the same inference. Two instruments agreeing
+is worth more than either alone.
 
 **The Oral Questions cell is not Question Period, and reading its flags
 individually says more than the rate does.** The 120–360-word filter retains
@@ -660,31 +669,6 @@ the CA-FED controls all read Human, inside the 1,260/1,260 overall.
     conclusion that the cell is biased upward survives; that mechanism does
     not.
 
-### 4.4 The Opus screen tracks Pangram
-
-A blinded LLM screen, run date-blind over the full corpus (37,801 segments),
-separates Pangram's AI and human classes at **AUC 0.954** [0.934, 0.971] on
-the 618-segment overlap, and it is a cheap stratifier for future work.[^r44dep]
-
-| Pangram verdict | n | mean Opus score |
-|---|---|---|
-| AI | 78 | 50.9 |
-| Mixed | 26 | 44.8 |
-| Human | 514 | **11.9** |
-
-The pool is a case-control mixture whose human class is drawn partly from
-pre-2023 text, which is *provably* pre-LLM and therefore the cleanest available
-negative; restricting the negatives to 2023-and-later contemporary speech only
-*lowers* the AUC, to **0.940** [0.915, 0.961]. Contemporary human speech is the
-harder class to separate — as the permeation finding (§4.7) predicts — so the
-era mix is not flattering the screen.
-
-[^r44dep]: `python opus_screen_auc.py`. The deployed screen is
-    `opus_screen_full.js` (473 batches of 40), distinct from the lean
-    validation run used in the effort A/B in Appendix D; the two differ in
-    score level (mean 34.3 vs 26.5) but not in discrimination. All labels are
-    Pangram 4.
-
 ### 4.5 The register shift starts in 1994–96, decades before the machines
 
 The register's rise begins around **1994–96** — before the consumer web,
@@ -703,12 +687,20 @@ evidence for the drift itself is the nineteen-chamber comparison of
     resamples, 1995 in 13.0% and 1996 in 2.1% — so "1994–96" is a genuine
     [1994, 1996] interval, not a hedge.
 
+**The ruler, audited — what the thirty-year rise is made of.** Because the marker list was selected on the post-2022 jump and then run backwards, it invites two objections: that a few words carry the rise, and that selection on the endpoint creates a trend by construction. We tested both.[^raudit]
+
+A few words do carry most of the level change. **Ten common connectives carry 92.5% of the 1994–96 → 2024–26 climb** (`this` alone 35%); with those ten removed, the aggregate is nearly flat (×1.03 pooled, ×1.10 UK). Beneath that concentration lies **breadth**: the expected number of distinct style words per 1,000 tokens climbs ×1.26 on the UK series (14.4 → 18.2), while 60.4% of the 407 words trend positive (z = +4.2) at a median of only +0.5%/yr. The result is a shallow, broad widening beneath a few surging function words, not a 407-word chorus.
+
+Composition does not produce the rise. Post-stratifying every chamber-year to a fixed segment-length distribution — the measurable proxy for the genre drift §4.3 makes threatening — leaves the onset in place and slightly *strengthens* the UK climb (×1.49 → ×1.54). Nor does one ruler produce it. The independent Wikipedia signs-of-AI-writing patterns, built by different people for a different purpose, rise across the whole pre-LLM record and *faster* (+2.7%/yr against +1.4%/yr, UK 1994–2019). Their UK trough sits in 1987, however, so the decades-long pre-LLM rise is a cross-instrument fact while the specific 1994–96 date belongs to this ruler's UK series.
+
+Matched donors narrow the dated claim further. Against donors matched on frequency and dispersion, the UK series' interior minimum at 1994 survives. When donors are also matched on pre-2010 trend — a control that by construction absorbs any onset inside its own window — the register's *distinctive* excess over ordinary same-shaped vocabulary dates to roughly **2014–2018**, and the style words remain below their matched donors in level throughout the record until 2025. The drift is real, broad-based, composition-robust and instrument-robust; its dated 1994–96 turn belongs to the UK ruler, while its excess over matched controls is younger than the turn.
+
 **The register instrument is not a detector, and a direct test is why the
 roles are divided.** A simple threshold on the register score — the study's
 own 407-word occurrence rate — separates Pangram-flagged from unflagged
 legislative segments at **AUC 0.61** (0.60 restricted to the 2025–26
 prevalence sample, where both classes are drifted contemporary speech),
-against the screen's 0.95. On ground truth it does no better: **0.535**
+against the screen's 0.95 (Appendix D.3). On ground truth it does no better: **0.535**
 against known machine text — though that set is the evasion run's
 adversarially quietened rewrites rather than ordinary model output, which
 runs far hotter on these words (§4.8). One thin lexical rate carries
@@ -720,18 +712,6 @@ chance, which is the division of labour the study uses.[^r44auc]
     arm) plus the 292 final-run bypass variants; AUC by Mann–Whitney.
     Everything pooled: 0.57. Medians per 100k: controls 3,150; unflagged
     2025–26 prevalence 3,226; flagged 3,869; LLM variants 3,327.
-
-**The ruler, audited — what the thirty-year rise is made of.** Because the marker list was selected on the post-2022 jump and then run backwards, it invites two objections: that a few words carry the rise, and that selection on the endpoint creates a trend by construction. We tested both.[^raudit]
-
-A few words do carry most of the level change. **Ten common connectives carry 92.5% of the 1994–96 → 2024–26 climb** (`this` alone 35%); with those ten removed, the aggregate is nearly flat (×1.03 pooled, ×1.10 UK). Beneath that concentration lies **breadth**: the expected number of distinct style words per 1,000 tokens climbs ×1.26 on the UK series (14.4 → 18.2), while 60.4% of the 407 words trend positive (z = +4.2) at a median of only +0.5%/yr. The result is a shallow, broad widening beneath a few surging function words, not a 407-word chorus.
-
-Composition does not produce the rise. Post-stratifying every chamber-year to a fixed segment-length distribution — the measurable proxy for the genre drift §4.3 makes threatening — leaves the onset in place and slightly *strengthens* the UK climb (×1.49 → ×1.54). Nor does one ruler produce it. The independent Wikipedia signs-of-AI-writing patterns, built by different people for a different purpose, rise across the whole pre-LLM record and *faster* (+2.7%/yr against +1.4%/yr, UK 1994–2019). Their UK trough sits in 1987, however, so the decades-long pre-LLM rise is a cross-instrument fact while the specific 1994–96 date belongs to this ruler's UK series.
-
-Matched donors narrow the dated claim further. Against donors matched on frequency and dispersion, the UK series' interior minimum at 1994 survives. When donors are also matched on pre-2010 trend — a control that by construction absorbs any onset inside its own window — the register's *distinctive* excess over ordinary same-shaped vocabulary dates to roughly **2014–2018**, and the style words remain below their matched donors in level throughout the record until 2025. The drift is real, broad-based, composition-robust and instrument-robust; its dated 1994–96 turn belongs to the UK ruler, while its excess over matched controls is younger than the turn.
-
-Read together with §4.8, the interesting reading is not "LLMs changed
-parliamentary register" but that **human register had been moving toward what
-instruct-tuning later selected for, for thirty years.** †[^dag]
 
 [^raudit]: `python build_word_year_counts.py` (one scan, 1.62B tokens;
     reproduces the committed series to 0.00 per 100k at the worst year)
@@ -768,6 +748,10 @@ But the two instruments then part ways: the *obvious* tells — the Wikipedia "s
 
 [^rits]: `python fig_trend.py` for New Brunswick — the interrupted time series is weighted least squares on log quarterly rates with a break pre-specified at 2023.0, and the empirical p for the slope change comes from 1,000 frequency-matched placebo word sets run through the identical fit. The cross-chamber comparison is `python build_trend_cache.py && python plot_trend_from_cache.py`; indexed yearly rates for six chambers are in `trend_multichamber.csv`.
 
+Read together with §4.8, the interesting reading is not "LLMs changed
+parliamentary register" but that **human register had been moving toward what
+instruct-tuning later selected for, for thirty years.** †[^dag]
+
 ### 4.5a Other chambers converge on the level the United States already held
 
 Running the same series on every chamber turns the thirty-year drift into a
@@ -787,37 +771,17 @@ UK Commons, Scotland, Northern Ireland, Wales — are the four fastest
 climbers; only three chambers decline at all (US House, US Senate, Prince
 Edward Island), and none of the nineteen approaches the UK's +4.0%/yr.[^r45cw]
 
-| chamber | gap 2006, per 100k words | gap 2026, per 100k words | change | per year |
-|---|---|---|---|---|
-| UK Commons | 655 | 1,444 | ×2.20 | **+4.0%/yr** |
-| Scotland | 605 | 1,058 | ×1.75 | +2.8%/yr |
-| Northern Ireland | 739 | 1,165 | ×1.58 | +2.3%/yr |
-| Wales | 1,276 | 1,961 | ×1.54 | +2.2%/yr |
-| Saskatchewan | 1,612 | 2,145 | ×1.33 | +1.4%/yr |
-| British Columbia | 1,542 | 2,049 | ×1.33 | +1.4%/yr |
-| Manitoba | 1,636 | 2,136 | ×1.31 | +1.3%/yr |
-| Western Australia | 1,366 | 1,751 | ×1.28 | +1.3%/yr |
-| Victoria | 1,619 | 2,043 | ×1.26 | +1.2%/yr |
-| Queensland | 1,746 | 2,199 | ×1.26 | +1.2%/yr |
-| Tasmania | 1,631 | 2,049 | ×1.26 | +1.1%/yr |
-| Nova Scotia | 1,811 | 2,265 | ×1.25 | +1.1%/yr |
-| New South Wales | 1,276 | 1,593 | ×1.25 | +1.1%/yr |
-| Alberta | 1,746 | 2,125 | ×1.22 | +1.0%/yr |
-| Ontario | 1,707 | 2,013 | ×1.18 | +0.8%/yr |
-| Newfoundland & Labrador | 1,436 | 1,532 | ×1.07 | +0.3%/yr |
-| **US Senate** | 1,590 | 1,562 | ×0.98 | −0.1%/yr |
-| Prince Edward Island | 1,589 | 1,523 | ×0.96 | −0.2%/yr |
-| **US House** | 1,794 | 1,709 | ×0.95 | −0.2%/yr |
-
 ![](convergence_slopegraph.png)
 
-*The convergence, drawn as a slopegraph: one line per chamber from its 2006 to its 2026 gap-vocabulary rate (occurrences per 100k words; values exactly as in the table), direct-labelled at both ends, the UK-group climbers and the two flat US chambers emphasised. The fan closes upward: the lowest 2006 starters climb steepest toward the level the United States already held.*
+*The convergence, drawn as a slopegraph: one line per chamber from its 2006 to its 2026 gap-vocabulary rate (occurrences per 100k words; values exactly as in the table in Appendix E.1), direct-labelled at both ends, the UK-group climbers and the two flat US chambers emphasised. The fan closes upward: the lowest 2006 starters climb steepest toward the level the United States already held.*
+
+A US series that starts in 2006 cannot distinguish "the United States was always there" from "the United States got there first and stopped." Extending the Congressional Record to its 1994 beginning settles it.[^r45c]
 
 Three chambers reach further back, and the US point rests on that longer
 window:
 
-| chamber | gap 1994 | gap 2026 | change | per year |
-|---|---|---|---|---|
+| chamber | gap 1994, per 100k words | gap 2026, per 100k words | 1994→2026 ratio | annual change |
+|---|---:|---:|---:|---:|
 | UK Commons | 380 | **1,444** | **×3.80** | **+4.3%/yr** |
 | **US House** | **1,515** | 1,709 | ×1.13 | +0.4%/yr |
 | **US Senate** | **1,314** | 1,562 | ×1.19 | +0.5%/yr |
@@ -826,7 +790,7 @@ Only the UK and the two US chambers hold 1994 (the UK's own series extends
 to 1985, §4.5), and on that longest window the contrast sharpens — with the
 US chambers *starting* above where the UK still sits two decades later, US
 House at 1,515 per 100k in 1994 against the UK's 1,444 in 2026. Ireland and
-federal Canada, excluded from both tables for entering late (2018, 2015),
+federal Canada, excluded from both windows for entering late (2018, 2015),
 enter high — 1,603 and 1,865 — and move like chambers already near the
 ceiling (+2.6%/yr and −0.7%/yr). So the picture is not a common shift. It is
 chambers converging upward on a level the United States already held before
@@ -837,9 +801,7 @@ the consumer web, while the United States barely moves.
     geometric rate over the twenty years. South Australia is excluded for
     missing the 2026 endpoint (its series ends 2025); Ireland and federal
     Canada for entering late. Tasmania carries §4.2's regime flag; its row
-    is descriptive.
-
-A US series that starts in 2006 cannot distinguish "the United States was always there" from "the United States got there first and stopped." Extending the Congressional Record to its 1994 beginning settles it.[^r45c]
+    in Appendix E.1's table is descriptive.
 
 **They caught up; they did not pass.** A single recent year appears to
 contradict that: in 2026 the Canadian provinces, Ireland, the Australian states
@@ -848,8 +810,8 @@ contact with the variance. US House swings between 1,660 and 2,074 across the
 series — a 25% range, the widest here — and 2026 catches it at 1,709, near its
 own floor. On 2020–26 means, with each series' standard deviation alongside:
 
-| group | mean, per 100k | sd | vs US House, per 100k | vs US House, in US House sd |
-|---|---|---|---|---|
+| group | mean, per 100k | sd of own series | gap to US House, per 100k | gap ÷ US House's sd |
+|---|---:|---:|---:|---:|
 | CA provinces | 2,054 | 61 | **+155** | **+1.28** |
 | Ireland | 1,901 | 52 | +2 | +0.02 |
 | **US House** | **1,899** | **121** | — | — |
@@ -865,12 +827,14 @@ below. Three of the four apparent overshoots are US House having a low year.
 
 **Exported machine text does not account for the rest, and cuts the wrong
 way.** The natural rescue — that AI drafting, American-inflected, is pushing
-the others past — fails on the arithmetic: US House is **14.3% machine by
-instrument occurrences** against Ireland's 9.0% and the Australian states'
-11.3%, so removing machine text lowers the American benchmark by more than it
-lowers the challengers. Federal Canada is the one case it does explain, at
-21.7% the most machine-written of the national chambers (second only to New South Wales, §4.2), dropping from
-apparently-above to clearly-below once corrected.[^r45f]
+the others past — fails on the arithmetic. The shares here are of *instrument
+occurrences*, not of words, so they do not sit on the same scale as §4.2's
+prevalence figures: US House is **14.3% machine by instrument occurrences**
+against Ireland's 9.0% and the Australian states' 11.3%, so removing machine
+text lowers the American benchmark by more than it lowers the challengers.
+Federal Canada is the one case it does explain, at 21.7% the most
+machine-written of the national chambers (second only to New South Wales,
+§4.2), dropping from apparently-above to clearly-below once corrected.[^r45f]
 
 [^r45f]: `python convergence_check.py`, with shares from
     `ai_share_of_instrument.py`. Machine-written text carries the instrument at
@@ -902,46 +866,9 @@ apparently-above to clearly-below once corrected.[^r45f]
     sampling costs precision and not validity.
 
 
-### 4.5b Post-training aligns weakly with pre-model American usage
-
-**What post-training does resembles what already distinguished American
-usage.** If the two processes select for the same thing, the vocabulary shift
-instruct-tuning induces should line up with the difference that already
-separated American from British legislative speech before any model existed.
-Measured on 4,823 words in a 2006–10 window, it does, weakly and
-specifically:[^r45b]
-
-| contrast | Spearman | partial, holding frequency |
-|---|---|---|
-| post-training preference vs log(US/UK) | **+0.081** | **+0.086** |
-| vs log(Canada/UK) | +0.012 | +0.012 |
-| vs log(Australia/UK) | +0.018 | +0.004 |
-| vs log(US/Canada) | +0.083 | +0.088 |
-
-Permutation p < 0.005. The **discrimination** carries more than the coefficient:
-Canada and Australia are anglophone parliamentary democracies too, and
-post-training moves models toward none of what distinguishes *them* from
-Westminster. It is not drift away from British usage; it is drift toward
-American usage specifically, and Canada — nearest neighbour to the United
-States — shows nothing.
-
-The effect is small: r = 0.081 is under one percent of variance. And the design
-establishes compatibility, not cause. A shared cause predicts the same
-correlation — both the models and the global drift could be downstream of an
-American-dominated written corpus, with no common optimization involved. Appendix C
-names the instrument that would separate those two.
-
-[^r45b]: `python alignment_vs_american.py`. Three families at 1,600 prompts;
-    reference corpora US 37.6M, UK 44.2M, CA 74.8M, AU 88.8M words over
-    2006–10 — pre-transformer, and early enough that the UK's own climb has
-    barely begun, so the ratio compares two human traditions rather than two
-    stages of one drift. Reported on all words. US/UK spelling pairs and
-    one-word orthographic forms (`percent` for "per cent") are reported as a
-    separate stratum, along with two harsher filters, as robustness only.
-
 ### 4.6 Birth year predicts the register: decomposing a juniority gradient across space and time
 
-Every member-year of speech carries two clocks — the year the words were **spoken** and the speaker's **birth year** — and birth predicts the register net of calendar time. Regressing the member-year rate on both together with chamber fixed effects, across all 22 chambers (60,186 member-years, 6,913 members): birth **+0.86 per 1,000 words per decade** (t = 14.7 clustered on member, 31.9 on raw member-years) against spoken year **+1.26** (t = 13.4 clustered). A legislator born a decade later uses about +0.86/1,000 more of the register in the same year and chamber; on identical rows the within-chamber correlation is marginally higher with birth (+0.325) than with spoken year (+0.302), and birth is the stronger of the two in 15 of the 22 chambers. †[^r46a]
+Every member-year of speech carries two clocks — the year the words were **spoken** and the speaker's **birth year** — and birth predicts the register net of calendar time. Regressing the member-year rate on both together with chamber fixed effects, across all 22 chambers (60,186 member-years, 6,913 members): birth **+0.86 per 1,000 words per decade** (+86 per 100k, the unit of §4.5a; t = 14.7 clustered on member, 31.9 on raw member-years) against spoken year **+1.26 per 1,000** (+126 per 100k; t = 13.4 clustered). A legislator born a decade later uses about +0.86/1,000 more of the register in the same year and chamber; on identical rows the within-chamber correlation is marginally higher with birth (+0.325) than with spoken year (+0.302), and birth is the stronger of the two in 15 of the 22 chambers. †[^r46a]
 
 That single slope is where the question starts, not where it ends. What we want from it is a **decomposition — across space, and across time.** Across space: is one gradient shared by every legislature, or is it an average over chambers that behave differently? Across time: is "born later, uses more" about *when a person was born* (cohort), *what year it is* (period), or *how long they have served* (career)?
 
@@ -959,7 +886,9 @@ What there is instead is a family of **views** — weighting members equally or 
 
 *Group-level against individual-level gradients, one ruler (instrument occurrences per 100k words, per decade). Left: chamber trends diverge across legislatures while the within-year birth gradient sits in one band — full-size even where the trend is flat (the space view). Right: the birth gradient by era — full-size among pre-drift cohorts in the US Senate, roughly tripling in the UK Commons and US House as drift-formed cohorts enter (the pre-drift and nonlinear views). Error bars are member-cluster bootstrap 95% intervals.*
 
-**Following members over their own careers, the register rises — but that is the calendar tide, not aging.** With member fixed effects, so only a member's own movement counts, the register rises **+0.51 per 1,000 per decade** within member (t = 6.0, clustered on member, 8,600 members with three or more years) — roughly **40% of the total calendar rise happens inside continuing careers**, the rest arriving with the composition of the chamber. This view shows sitting members' rates rising, not merely that they are replaced. But it comes with a trap: within one career tenure = spoken year − entry year, so plotting register against length of service splits into two curves that cross. Within a member — rate against their own career mean — it **rises** with tenure (to +2.35 per 1,000 at 30+ years), which is exactly the calendar drift redrawn. Measured against same-year colleagues instead — rate minus its chamber × year mean — it **falls**, monotonically, from +0.6 in the first years to −2.3 among the longest-serving. The fall is not seniority wearing the register down: at a fixed year more tenure means an earlier entry cohort, so the downward curve is the cohort gradient seen sideways. †[^r46c] †[^r46ten]
+**Following members over their own careers, the register rises — but that is the calendar tide, not aging.** With member fixed effects, so only a member's own movement counts, the register rises **+0.51 per 1,000 per decade** within member (t = 6.0, clustered on member, 8,600 members with three or more years) — roughly **40% of the total calendar rise happens inside continuing careers**, the rest arriving with the composition of the chamber. Sitting members' rates rise, then; they are not merely replaced. †[^r46c]
+
+**Length of service is a trap, because within one career tenure = spoken year − entry year.** Plotting register against tenure therefore splits into two curves that cross. Within a member — rate against their own career mean — it **rises** with tenure (to +2.35 per 1,000 at 30+ years), which is exactly the calendar drift redrawn. Measured against same-year colleagues instead — rate minus its chamber × year mean — it **falls**, monotonically, from +0.6 in the first years to −2.3 among the longest-serving. That fall is not seniority wearing the register down: at a fixed year more tenure means an earlier entry cohort, so the downward curve is the cohort gradient seen sideways. †[^r46ten]
 
 ![](tenure_profile.png)
 
@@ -971,7 +900,7 @@ What there is instead is a family of **views** — weighting members equally or 
 
 *Within-member (lifetime) register drift by birth cohort — the paper's within-member estimator run inside each 10-year cohort, word-weighted, ±95% member-bootstrap CI. Positive means members gain register as they serve. The drift is positive or flat for every cohort and barely depends on birth year; the dotted line is the all-member pooled mean (+0.57, reproducing the committed within-member figure). Not uniform across legislatures — see text.* †[^r46life]
 
-**What the gradient is not.** It is not ministerial office: in the chambers whose record marks rank it *strengthens* when office years are removed, and office-holders use less of the register than backbenchers, not more (Appendix E.4). It holds within year and province at **+1.05 per 1,000 per decade** (t ≈ 8.5, clustered on member), unmoved by occupation and education controls — which *strengthen* it rather than explain it away (§4.6c). And the mechanism behind any component stays open: three exposure tests failed to isolate one (Appendix A). †[^r46b]
+**What the gradient is not.** It is not ministerial office: in the chambers whose record marks rank it *strengthens* when office years are removed, and office-holders use less of the register than backbenchers, not more (Appendix E.7). It holds within year and province at **+1.05 per 1,000 per decade** (t ≈ 8.5, clustered on member), unmoved by occupation and education controls — which *strengthen* it rather than explain it away (§4.6c). And the mechanism behind any component stays open: three exposure tests failed to isolate one (Appendix A). †[^r46b]
 
 **What the family supports, and what it cannot.** No view settles the age-versus-cohort split; the identification wall stands, and the paper does not pretend otherwise. But the views are consistent and mutually reinforcing: a juniority gradient that is steady across legislatures at the individual level (space), exists before the models (pre-drift), bends upward exactly as drift-formed cohorts arrive (the one identification-free time statement), and is one members ride up within their own careers rather than only through replacement. The single citable figure — stated as the identified cohort−age combination, not a pure cohort effect — is birth-decade **+0.92 (t = 12.5)** in the member-year panel with year fixed effects, carried in §4.6c beside the other member-level predictors.
 
@@ -989,23 +918,9 @@ What there is instead is a family of **views** — weighting members equally or 
 
 [^r46c]: `python cohort_vs_period.py`, final block. Within-member (member fixed effects) regression of the register rate on spoken year, word-weighted, over every chamber in the panel; members need three or more years to contribute. Standard errors cluster on member. Because the estimate is identified only off a member's own change, cohort, chamber, seat safety and every other fixed attribute of the member drop out by construction.
 
-### 4.6a The class coding: the same shape at coarser grain — education
+### 4.6a Class and education: the same shape at coarser grain
 
-The categorical schema that first revealed the gradient is kept here in abbreviated form: it shows the same shape as the altitude measure at coarser grain, and in the joint model below the measure absorbs it. Class predicts the register as a joint block — an inverted U, peaking one rung below the top — and the apparent education gradient does not survive its controls. On the eight provinces, class, education and prominence appeared to predict the register at t = 3–4; clustering by member and replication then removed every individual certainty. The joint tests say otherwise:
-
-**Clustering the standard errors by member** (the study's third encounter
-with unclustered inference flattering a result) leaves the provincial point
-estimates untouched and doubles to triples their errors: class II falls from
-t = 3.40 to 1.48, IVab from 3.51 to 1.49, VIIab from −4.04 to −1.84, the
-education ladder from 2.96 to 0.78. Member-years are not independent draws,
-and treating them as such had manufactured the significance.
-
-**Replication on the tier-1 panel** (US House, US Senate, UK Commons, federal
-Canada, Dáil Éireann — 18,178 member-years, 2,742 members, clustered) finds
-the same qualitative shape at smaller magnitude — II +0.24 and IVab +0.28
-above class I, VIIab −0.51 below — with nothing individually significant
-except class III, which is significant with the OPPOSITE sign to its
-provincial estimate, i.e. noise behaving like noise.
+Class predicts the register as a joint block — an inverted U, peaking one rung below the top. It is the same shape as the altitude measure at coarser grain, and in the joint model below the measure absorbs it. The apparent education gradient does not survive its controls. On the eight provinces, class, education and prominence appeared to predict the register at t = 3–4; clustering by member and replication then removed every individual certainty, which is why what follows reports joint tests and a member-level specification.
 
 The final specification — one observation per legislator at equal weight,
 register z-scored within each legislature against its full member
@@ -1038,6 +953,20 @@ away sharply. Against class I the contrasts are II **+0.073 (t = 2.49)**, IVc
 chamber fixed effects on raw rates the crossover is larger still, +0.650
 (t = 5.17). III is nominally the highest cell but rests on 147 members and is
 not distinguishable from II.
+
+**Clustering the standard errors by member** (the study's third encounter
+with unclustered inference flattering a result) leaves the provincial point
+estimates untouched and doubles to triples their errors: class II falls from
+t = 3.40 to 1.48, IVab from 3.51 to 1.49, VIIab from −4.04 to −1.84, the
+education ladder from 2.96 to 0.78. Member-years are not independent draws,
+and treating them as such had manufactured the significance.
+
+**Replication on the tier-1 panel** (US House, US Senate, UK Commons, federal
+Canada, Dáil Éireann — 18,178 member-years, 2,742 members, clustered) finds
+the same qualitative shape at smaller magnitude — II +0.24 and IVab +0.28
+above class I, VIIab −0.51 below — with nothing individually significant
+except class III, which is significant with the OPPOSITE sign to its
+provincial estimate, i.e. noise behaving like noise.
 
 **The shape holds in every period, and does not migrate.** A chase-and-flight
 cycle predicts that the originating tier abandons the form first, so the peak
@@ -1177,7 +1106,9 @@ independently measured; its apparent separate effect is not.
 
 ### 4.6b Socioeconomic position as organisational altitude: the register peaks at the insulated middle, and free work sits lowest
 
-The register peaks at the insulated middle of the organisational hierarchy and sits lowest among occupations that stand outside it. Each legislator's prior occupation, coded to O\*NET, is scored on an organisational-**altitude** ladder — bottom, middle, top — plus **free work**, the off-ladder level categorical class schemas do not carry. The ordering **free < front-line < corporate** was preregistered before any occupational element was joined to the register, and found. The ancestry is Weeden and Grusky's case for measuring class at the disaggregated occupation, and Kohn and Schooler's occupational self-direction, where closeness of supervision explained class differences in psychology; what the measure adds is distance from the hierarchy, not only altitude within it. What follows is the U over those levels, the off-ladder level's stability across three decades, and, in the joint model below, the absorption of the class label the measure refines.
+The register peaks at the insulated middle of the organisational hierarchy and sits lowest among occupations that stand outside it. Each legislator's prior occupation, coded to O\*NET, is scored on an organisational-**altitude** ladder — bottom, middle, top — plus **free work**, the off-ladder level categorical class schemas do not carry. The ordering **free < front-line < corporate** was preregistered before any occupational element was joined to the register, and found.
+
+The ancestry is Weeden and Grusky's case for measuring class at the disaggregated occupation, and Kohn and Schooler's occupational self-direction, where closeness of supervision explained class differences in psychology; what the measure adds is distance from the hierarchy, not only altitude within it. What follows is the U over those levels, the off-ladder level's stability across three decades, and, in the joint model below, the absorption of the class label the measure refines.
 
 **The measure follows the discovery.** The register's
 occupational shape was first seen through the class coding (§4.6a): an
@@ -1208,35 +1139,8 @@ the register or the hypothesis existed) — plus
 the **apex delta** (MIDDLE − TOP), registered in words as "insulated command
 tracks more register than exposed command."
 
-**The four-level U is the result, and its registration is a timeline.** The
-middle-peak prediction — free and the top low, the middle the peak — was
-stated in the session log an hour before the first fit; the folk ladder and
-the apex delta entered the committed pre-registration twelve minutes before
-it; the theoretical ladder's explicit sign declarations were formalised in
-the post-Stage-1 amendment. The exact record, to the minute, is in the
-footnote.[^regts] Each
-level entered alone (standardised; n = 4,762, full-covariate slopes at
-n = 3,594):
-
-[^regts]: The registration record, all times 2026-08-18 US-Pacific, from the
-    session transcript and git. **12:04**, session log, before any fit or
-    instrument freeze: "I would actually expect the highest reading to come
-    with middle managers with workers below them" (Matthew). **12:41**: the
-    four-level structure directed ("three levels of corporate and a free").
-    **13:03**: the charged/uncharged horse race directed. **13:05**, commit
-    `f10d502`: the folk ladder and the apex delta ("insulated command
-    tracks more register than exposed command") committed to the prereg.
-    **13:17**, `ad303ad`: Stage 1 run and unblinded. **13:36**, `53a02ff`:
-    amendment adding the theoretical ladder and the explicit middle+/free−
-    sign declarations, self-labelled as post-unblinding. **17:21**,
-    `ccba83d`: the ruling recording the U as the design intent. So the
-    prediction precedes the data by 73 minutes in the log, and the formal
-    document carries the apex delta pre-run; what is post-run is
-    formalisation, not prediction. The meta-point is worth naming: under
-    machine execution with pervasive logging, the timestamped record that
-    pre-registration exists to create is produced continuously, and the
-    spirit of the practice — predictions verifiably preceding data — is
-    checkable to the minute without the formal document as the only witness.
+**The four-level U is the result.** Each level entered alone
+(standardised; n = 4,762, full-covariate slopes at n = 3,594):
 
 | level | theoretical ladder | folk ladder |
 |---|---|---|
@@ -1259,6 +1163,34 @@ relative contrast carry the claim.
 
 *The occupational register profile. Each legislator's prior occupation, coded to O\*NET, is scored on a four-level altitude ladder (free / bottom / middle / top of an organisational hierarchy) two semi-independent ways — the theoretical ladder and the folk ladder — and both peak at the insulated middle, dipping at the exposed top. Points are each level's base slope entered alone (standardised, n = 4,762); bars ±1 se. The levels are individually noisy but jointly significant; the powered claim is the apex delta (middle − top), +0.049 (t 3.3), rising to +0.067 (t 3.9) under full covariates.*
 
+**Its registration is a timeline.** The middle-peak prediction — free and
+the top low, the middle the peak — was stated in the session log an hour
+before the first fit; the folk ladder and
+the apex delta entered the committed pre-registration twelve minutes before
+it; the theoretical ladder's explicit sign declarations were formalised in
+the post-Stage-1 amendment. The exact record, to the minute, is in the
+footnote.[^regts]
+
+[^regts]: The registration record, all times 2026-08-18 US-Pacific, from the
+    session transcript and git. **12:04**, session log, before any fit or
+    instrument freeze: "I would actually expect the highest reading to come
+    with middle managers with workers below them" (Matthew). **12:41**: the
+    four-level structure directed ("three levels of corporate and a free").
+    **13:03**: the charged/uncharged horse race directed. **13:05**, commit
+    `f10d502`: the folk ladder and the apex delta ("insulated command
+    tracks more register than exposed command") committed to the prereg.
+    **13:17**, `ad303ad`: Stage 1 run and unblinded. **13:36**, `53a02ff`:
+    amendment adding the theoretical ladder and the explicit middle+/free−
+    sign declarations, self-labelled as post-unblinding. **17:21**,
+    `ccba83d`: the ruling recording the U as the design intent. So the
+    prediction precedes the data by 73 minutes in the log, and the formal
+    document carries the apex delta pre-run; what is post-run is
+    formalisation, not prediction. The meta-point is worth naming: under
+    machine execution with pervasive logging, the timestamped record that
+    pre-registration exists to create is produced continuously, and the
+    spirit of the practice — predictions verifiably preceding data — is
+    checkable to the minute without the formal document as the only witness.
+
 **The delta is the study's most covariate-robust occupational number.**
 Registered in words and observed +0.049 (t 3.3) raw; **+0.067 (t 3.9)**
 with cohort, class, education and prominence all present; right-signed and
@@ -1271,6 +1203,32 @@ exposed — puts the insulated cell above the rest (t 2.1 on the gap), with
 one leg farmer-driven and reported as such: the 199 members the instrument
 reads as agricultural managers sit in the exposed cell and drag it, exactly
 the headwind the registration's prediction 5 named in advance.
+
+**The coarsest cut is the strongest single correlate: the register is the
+language of the office.** O\*NET's *Indoors, Environmentally Controlled* —
+planted in the element pool as a deliberately atheoretical marker of office
+work — carries more register per standard deviation than any single
+instrument component (+0.101, t +7.4); *Spend Time Sitting*, the other
+planted marker, is null (t +0.4). This is the occupational finding at its
+coarsest resolution, a restatement rather than a rival: office work carries
+the register wholesale, and the structure this section measures is the shape
+inside the office — the insulated middle over the exposed top, both of them
+office rungs, and free work lowest. In the joint model the office cut adds
+little that the existing covariates do not already carry (+0.039 per sd,
+t +1.9, ΔadjR² +0.0007), and the apex delta stays the strongest occupational
+term in that model (t +2.4, ΔadjR² +0.0011) — birth decade remains the
+overwhelming axis (t +24.5, carrying 0.144 of the model's 0.165).[^rnc]
+
+[^rnc]: `python prereg_negative_controls.py`; n = 4,762, estimator
+    parity-guarded against stage 1 (reproduces MIDDLE +0.028, t 2.0).
+    Entered jointly with Indoors, the apex delta reads +0.033 (t +2.2) and
+    free −0.062 (t −4.4). The pre-registration had planted these two
+    elements as negative controls with an office-job interpretation rule;
+    the adjudication (2026-08-24, logged in the prereg) rejects that rule's
+    implication — office language is the finding restated, not a control on
+    it — and the result is reported here as description. Joint-model numbers:
+    `python prereg_indoors_joint.py` (n = 3,594, the covariate panel; the
+    grand model mirrors `prereg_covariate_strength.py`).
 
 **Era-resolved, the instrument's carrying level is stable.** The joint
 model's surviving occupational block is the folk ladder, and its standing
@@ -1376,32 +1334,6 @@ effect predicts t ≈ 2.0 at this n). In the spike window, class II is the
 strongest social-position covariate; the insulation contrast holds its size
 without independent confirmation.
 
-**The coarsest cut is the strongest single correlate: the register is the
-language of the office.** O\*NET's *Indoors, Environmentally Controlled* —
-planted in the element pool as a deliberately atheoretical marker of office
-work — carries more register per standard deviation than any single
-instrument component (+0.101, t +7.4); *Spend Time Sitting*, the other
-planted marker, is null (t +0.4). This is the occupational finding at its
-coarsest resolution, a restatement rather than a rival: office work carries
-the register wholesale, and the structure this section measures is the shape
-inside the office — the insulated middle over the exposed top, both of them
-office rungs, and free work lowest. In the joint model the office cut adds
-little that the existing covariates do not already carry (+0.039 per sd,
-t +1.9, ΔadjR² +0.0007), and the apex delta stays the strongest occupational
-term in that model (t +2.4, ΔadjR² +0.0011) — birth decade remains the
-overwhelming axis (t +24.5, carrying 0.144 of the model's 0.165).[^rnc]
-
-[^rnc]: `python prereg_negative_controls.py`; n = 4,762, estimator
-    parity-guarded against stage 1 (reproduces MIDDLE +0.028, t 2.0).
-    Entered jointly with Indoors, the apex delta reads +0.033 (t +2.2) and
-    free −0.062 (t −4.4). The pre-registration had planted these two
-    elements as negative controls with an office-job interpretation rule;
-    the adjudication (2026-08-24, logged in the prereg) rejects that rule's
-    implication — office language is the finding restated, not a control on
-    it — and the result is reported here as description. Joint-model numbers:
-    `python prereg_indoors_joint.py` (n = 3,594, the covariate panel; the
-    grand model mirrors `prereg_covariate_strength.py`).
-
 One drafting generation of the registration expressed the peak claim as a
 linear three-profile rank; that operationalization failed its own test and
 the framing is retired — Appendix B13 preserves its numbers, and the
@@ -1428,12 +1360,16 @@ block, none folded into a baseline for being small or dropped from the table
 for being null. Four blocks fit on the full panel (n = 4,056 complete cases
 across 22 chambers): cohort, all seven EGP classes, all education levels,
 and prominence as article-length quintiles — the bins, not a line, because
-Appendix E.3 shows the shape is not linear. The occupational blocks then
+Appendix E.6 shows the shape is not linear. The occupational blocks then
 enter on the members with occupational-score coverage (n = 3,631): §4.6b's
 two altitude ladders, each with all four levels per sd, plus Indoors. Each
 block is also fitted alone on the same sample, so attenuation is read
-against its own baseline; t in parentheses; the last column converts
-jointly-significant effects into years of cohort: †[^r46joint]
+against its own baseline; t in parentheses. The last column converts
+jointly-significant effects into years of cohort, and it carries two units
+rather than one: for the categorical blocks it is years per category against
+that block's baseline, and for the continuous ladder terms, marked `/sd`, it
+is years per standard deviation. Those two are not on the same footing and
+should not be read down the column as one scale: †[^r46joint]
 
 | term | n | alone | joint | + occ. blocks | ≈ yrs |
 |---|---|---|---|---|---|
@@ -1503,12 +1439,14 @@ accounting below the second, and neither substitutes for the other.
 
 **They do not deserve equal billing, and the full model says which is
 which.** Cohort is untouched by anything and an order of magnitude better
-resolved than the rest. Prominence, entered as the bins E.3 says it is,
+resolved than the rest. Prominence, entered as the bins E.6 says it is,
 survives everything at p < 10⁻⁴ in every column — the hump sits inside the
 joint model: flat through Q2, +0.16 to +0.19σ across Q3–Q5 with the top
 quintile easing off the Q4 peak (entered as a line instead, the block
 prints +0.020 per log-unit, t 2.05, and the shape disappears — the line was
-the wrong form, not the predictor). Class shows a wider floor than the
+the wrong form, not the predictor).
+
+Class shows a wider floor than the
 headline contrast — all three manual-and-rural categories sit significantly
 below the service classes jointly (V/VI −0.235, VIIab −0.286, IVc −0.201) —
 and survives cohort, education and prominence, but not its own finer
@@ -1566,16 +1504,18 @@ from — which favours occupational practice over inherited-status accounts of
 the gradient, stated as interpretation.
 
 **The juniority gradient towers over all of it.** Birth decade is
-**+0.92 (t = 12.5)** in the member-year panel with year fixed effects on
-the current 22 chambers — the citable figure, since career-level
-specifications absorb era of service into the term — read throughout as
-the identified cohort−age combination (§4.6: its level is an age-or-career
-clock under the Senate bound; its post-1985 bend is cohort) — and
-survives every covariate this study has measured, in three countries and 22
-chambers. For scale: the whole class gradient — II down to VIIab, jointly —
+**+0.92 per 1,000 words per decade (t = 12.5)** in the member-year panel with
+year fixed effects on the current 22 chambers — the citable figure, since
+career-level specifications absorb era of service into the term — read
+throughout as the identified cohort−age combination (§4.6: its level is an
+age-or-career clock under the Senate bound; its post-1985 bend is cohort) —
+and survives every covariate this study has measured, in three countries and
+22 chambers. For scale: the whole class gradient — II down to VIIab, jointly —
 spans ~0.37σ; cohort covers that in about fourteen years of birth date.
 
-**Together they explain about a sixth of the variance.** The grand member-level model — cohort, class, education, prominence, with §4.6b's occupational ladder and office cut added — reaches adjusted R² ≈ 0.16, and 0.14 of it is cohort alone; no other block contributes more than a few thousandths.[^r46var] So this is not a discovered instrument for identifying machine text by its company, or for reading a person's history off their vocabulary, and the study should not be cited as one. What it is, is evidence that such structure exists: one borrowed 407-word ruler — built from a different corpus for a different purpose — carries a juniority gradient across forty years and five legislatures, an occupational shape built twice by blind processes, and a post-training signature, through a probe thin enough that five-sixths of member-level variation never enters it. The full register, and the web of relationships it participates in, has gone untracked; it is the kind of object machine intelligence turns searchable, which is why the register itself is queued as a search target rather than a fixed list (Appendix C items 33–34), and why the Limits read the small shares as floors of one thin probe rather than ceilings of the phenomenon.
+**Together they explain about a sixth of the variance.** The grand member-level model — cohort, class, education, prominence, with §4.6b's occupational ladder and office cut added — reaches adjusted R² ≈ 0.16, and 0.14 of it is cohort alone; no other block contributes more than a few thousandths.[^r46var]
+
+So this is not a discovered instrument for identifying machine text by its company, or for reading a person's history off their vocabulary, and the study should not be cited as one. What it is, is evidence that such structure exists: one borrowed 407-word ruler — built from a different corpus for a different purpose — carries a juniority gradient across forty years and five legislatures, an occupational shape built twice by blind processes, and a post-training signature, through a probe thin enough that five-sixths of member-level variation never enters it. The full register, and the web of relationships it participates in, has gone untracked; it is the kind of object machine intelligence turns searchable, which is why the register itself is queued as a search target rather than a fixed list (Appendix C items 34–35), and why the Limits read the small shares as floors of one thin probe rather than ceilings of the phenomenon.
 
 [^r46var]: `python prereg_covariate_strength.py` and `python
     prereg_indoors_joint.py` (n = 3,594, the full-covariate member panel):
@@ -1586,17 +1526,13 @@ spans ~0.37σ; cohort covers that in about fourteen years of birth date.
 
 ### 4.6d Chase and flight: an exploratory interpretation of the social gradients
 
-#### The shape has a name — held now as hypothesis, not finding
-
 The second-highest status group exceeding the highest is Labov's crossover
 pattern, and the middle tier's described disposition matches his linguistic
 insecurity. After clustering, the crossover here is a recurring direction in
-two panels rather than a demonstrated effect, so the parallel is a hypothesis
-the enlarged panel failed to confirm at conventional thresholds — not a
-replication of Labov. It stays because the shape recurred independently and
-because the flight result below is measured on pooled text rather than
-member-level inference, but nothing in this subsection should be cited as
-established.
+two panels rather than a demonstrated effect: a hypothesis the enlarged panel
+failed to confirm at conventional thresholds, not a replication of Labov. It
+stays because the shape recurred independently and because the flight result
+below is measured on pooled text rather than member-level inference.
 
 #### Flight: the groups at the top avoid the words that became common
 
@@ -1609,36 +1545,36 @@ strata is *which* words they avoid. **The lift is decoupled by
 construction**: a word's rise is computed from the classes outside both
 comparison strata, so a word cannot be high-lift *because* the compared
 groups moved it.[^rdecouple] Under that spec, the correlation between a
-word's rise and class I's relative use of it against class II is negative
-at every volume threshold: ρ = −0.13 at 100+ occurrences, −0.13 at 300+,
-**−0.23 at 800+**, −0.23 at 1,500+. Class I under-uses `primary` (2.35×
-lift), `advocating` (1.85×), `advocates` (1.57×), `outcomes` (1.54×); it
-over-uses `remarkable`, `individuals`, `broader`, `ultimately` — words that
-barely moved. And the signature is not class I's alone: run identically for
-the top of each ladder against its peak, it reproduces wherever the top is
-a status-top — professional degrees against the bachelor peak
-(−0.11/−0.22/−0.39/−0.46 across the same volume thresholds), executive
-rungs against the middle (−0.24/−0.29/−0.36/−0.15), office-holders against
-backbenchers (−0.14/−0.14/−0.20/−0.20) — and fails at exactly the one top
-that is not one: graduate degrees run flat to positive (+0.02 to +0.11).
-These are not independent replications — the same corpus, the same words,
-and the tops overlap heavily — but as a robustness family they say the
-avoidance belongs to status-tops generally, not to one coding of
+word's rise and class I's relative use of it against class II is negative at
+every volume threshold. Class I under-uses `primary` (2.35× lift),
+`advocating` (1.85×), `advocates` (1.57×), `outcomes` (1.54×); it over-uses
+`remarkable`, `individuals`, `broader`, `ultimately` — words that barely
+moved. Run identically for the top of each ladder against its peak, the sign
+reproduces wherever the top is a status-top, and fails at exactly the one top
+that is not one. These are not independent replications — the same corpus, the
+same words, and the tops overlap heavily — but as a robustness family they say
+the avoidance belongs to status-tops generally, not to one coding of
 class.[^rladders]
 
-**The folk ladder adds the cycle's other half.** Run for its own levels —
-members grouped by their highest-scoring level — the top flees
-(−0.12/−0.14/−0.26/−0.23 across the same thresholds), the **bottom
-chases**, differentially adopting exactly the words that became common
-(+0.11/+0.25/+0.43/+0.28 — the battery's only positive series,
-strengthening with volume), and **free work barely plays**: −0.07 to −0.10
-against the middle, far shy of any status-top's avoidance — mostly out of
-the game, which is what sitting outside the hierarchy predicts, its low
-register level (§4.6b) being closer to uniform abstention than to
-word-selective avoidance (a directional reading: at these word counts,
-equivalence within |ρ| < 0.15 is not formally establishable). Chase below the peak, flight above it, near-
-indifference off the ladder: the full fashion-cycle geometry, read from
-one instrument's levels, at group level.
+| contrast (top vs peak) | 100+ | 300+ | 800+ | 1,500+ |
+|---|---:|---:|---:|---:|
+| class I vs II | −0.13 | −0.13 | **−0.23** | −0.23 |
+| professional vs bachelor | −0.11 | −0.22 | −0.39 | −0.46 |
+| executive vs middle | −0.24 | −0.29 | −0.36 | −0.15 |
+| office vs backbench | −0.14 | −0.14 | −0.20 | −0.20 |
+| folk top vs middle | −0.12 | −0.14 | −0.26 | −0.23 |
+| **folk bottom vs middle (chase)** | **+0.11** | **+0.25** | **+0.43** | **+0.28** |
+
+Graduate degrees, not a status-top, run flat to positive (+0.02 to +0.11).
+Free work against the middle: −0.07 to −0.10, far shy of any status-top's
+avoidance — mostly out of the game, which is what sitting outside the
+hierarchy predicts, its low register level (§4.6b) being closer to uniform
+abstention than to word-selective avoidance (a directional reading: at these
+word counts, equivalence within |ρ| < 0.15 is not formally establishable). The
+folk-bottom series is the battery's only positive one, strengthening with
+volume. Chase below the peak, flight above it, near-indifference off the
+ladder: the full fashion-cycle geometry, read from one instrument's levels, at
+group level.
 
 **Calibrated, and checked within members at the horizon where that makes
 sense.** Because the compared groups differ in size, even the decoupled
@@ -1698,21 +1634,19 @@ not yet a diffusion measurement.[^rleadlag]
     the continuous scores) then `python flight_ladders.py` — same lift,
     same thresholds, same estimator as the class test throughout.
 
-That is the static signature of chase-and-flight — a marker loses value as
-it is copied, so the group that holds it abandons the most conspicuous forms
-first — and the pattern's components should be kept separate. The *flight*
-is observed twice: here, statically, in class I's avoidance of the words
-that became common; and dynamically at the word level, where the most
-conspicuous machine tells peak and fall back (§4.5). What is **not**
-observed is the class cycle in motion: the peak does not migrate across
-eras, and the second sufficient signature — a widening II-over-I separation
-— is absent, and the drift runs the other way: +0.141 in 1997–2001 against
-+0.079 in 2022–2026, the series' narrowest gap in the machine-era bin
-(weighted trend −0.022 per half-decade, t −1.67 — compression, short of
-significance).[^rgap] Jhering set out the diffusion
-mechanism in *Der Zweck im Recht* (1883); Durkheim's summary of it gives the
-phrase — fashion, once universally adopted, "condemned by its very nature to
-renew itself continuously" — and Veblen (1899) and Simmel (1904) gave it its
+The static pattern fits chase-and-flight: as a marker is copied, the group
+that holds it abandons the most conspicuous forms first. *Flight* appears here
+in class I's avoidance of words that became common, and dynamically at the
+word level, where the most conspicuous machine tells peak and then recede
+(§4.5). The class cycle itself is **not** observed in motion. Its peak does
+not migrate across eras, and the other sufficient signature — a widening
+II-over-I separation — is absent. The gap instead narrows from +0.141 in
+1997–2001 to +0.079 in 2022–2026, its smallest value in the machine-era bin
+(weighted trend −0.022 per half-decade, t −1.67; short of
+significance).[^rgap] Jhering set out the diffusion mechanism in *Der Zweck im
+Recht* (1883); Durkheim's summary supplied the phrase — fashion, once
+universally adopted, is "condemned by its very nature to renew itself
+continuously" — and Veblen (1899) and Simmel (1904) gave the mechanism its
 standard form.
 
 [^rgap]: `python class_gap_trend.py`, from `class_by_era_grouped.csv` (the
@@ -1724,115 +1658,6 @@ Lieberson is the closest parallel to our case, because his markers are discrete
 lexical items: first names diffuse down the status ladder and are abandoned by
 higher-status parents once they become common.[^r46e]
 
-#### Prominence: a gradient in the provinces, an arc in the national chambers
-
-Each member's Wikipedia article length — a measured page property (wikitext
-bytes via the MediaWiki API), not a judgement — is the third status marker
-available here, alongside class and office. Read in buckets rather than as a
-single slope, it splits the chambers into two shapes (Appendix E.3; all 22
-chambers, 6,896 members, 99% coverage):
-
-| quintile of article length | CA provinces | AU + UK-devolved | national |
-|---|---|---|---|
-| Q1 (least written about) | +0.00 | **+0.11** | −0.15 |
-| Q2 | −0.13 | +0.01 | −0.02 |
-| Q3 | −0.17 | +0.04 | **+0.15** |
-| Q4 | −0.27 | +0.01 | +0.10 |
-| Q5 (most written about) | **−0.40** | **−0.17** | −0.06 |
-
-The **seventeen sub-national chambers decline**: the more written about a
-member is, the less of the register they use. The eight Canadian provinces do
-so steeply, and the nine Australian and UK-devolved chambers reproduce the
-direction more weakly — a replication in chambers collected afterwards, not a
-restatement. The **five national chambers arc** instead, peaking in the middle
-and falling at both ends. Pooled over all 22 the buckets are flat
-(+0.00, −0.07, −0.07, +0.02, −0.06), so the two shapes cancel and no single
-slope describes them; the buckets are the result.
-
-**What the four markers share is not a peak but a retreat at the top.** Class
-peaks at II with class I below it. Education plateaus at bachelor and graduate
-with the professional degree below. Office-holders — the highest-status
-*positions* — use less than backbenchers (Appendix E.4). Prominence arcs in the
-national chambers and declines outright in the sub-national ones, but in both
-the most-written-about members are below the middle of their own distribution.
-Four markers, measured in completely different ways, agreeing that the top of
-each pulls back from the form; whether a distinct interior peak also appears
-varies by marker and by chamber, and should not be over-read.
-
-That is what a chase-and-flight cycle looks like from four angles at once, and
-it is recorded as a hypothesis rather than a finding: the shapes were noticed
-while reconciling estimates, not predicted in advance. The era-resolved test it
-implies **has** now been run and does not support the cycle's dynamic half
-on either sufficient signature — the class profile holds its shape in every
-half-decade rather than migrating (figure above), and the II-over-I
-separation never widens across thirty years (+0.141 → +0.079, trend
-t −1.7 — drifting narrower, not wider). A cycle already in progress before our first frame would look
-like this too, which is why the discriminating study is class-coded speech from
-before 1996 (Appendix C).
-
-Depth was collected as a control on notability bias in the education covariate
-— members whose education we know have **1.80× the median article length** of
-those we do not, so that bias is real and measured — and it survived as a small
-result in its own right. WP:NPOL gives essentially every elected member an
-article, so existence discriminates nothing; depth is the usable instrument.
-
-#### Word mix: the effects live in rate, not vocabulary — and machine text sits outside the geometry
-
-A composition check normalises each member's style-word vector to its own sum
-and z-scores it across 1,356 members.[^s-vec] No prior-free clusters emerge
-(silhouettes fall monotonically in k; PC1 carries 71% of variance), and class,
-education and cohort correlate with the mix at |r| ≤ 0.20 — **the standing
-effects above are about how much register a member uses, not which words**.
-Machine-flagged speech resembles no class tier (peak z-cosine +0.12 against a
-human control's +0.47), and in the one clean base/instruct pair available,
-post-training moves the model's mix **out of the human class geometry**:
-Sonnet 5, Opus 5 and Fable 5 traces are negative against every human class
-and education centroid and are the only text sets positively similar to the
-machine-flagged legislature pool. qwen3's move *up* (class II/bachelor to
-I/graduate) is the outlier among five measurable families. Extending the
-comparison to the older Claude versions still serving (Sonnet 4.5, Opus 4.1,
-Opus 4; 300 audited continuations each) sharpens this into a **family
-signature**: all six Claude models are positive against the flagged pool
-(+0.016 to +0.186) and all five open-model sets negative (−0.024 to −0.063),
-stable across three model generations. Within-family ordering is not
-interpretable at these sample sizes, but the family split is clean — the
-flagged text shares distinctive vocabulary with one lineage and not the
-other. This is register lineage, not attribution (Appendix C item 3). Register
-*rate* is also a lineage property: Opus sits at base-model rate across three
-generations (2,696–2,837 per 100k), Sonnet runs hot in both versions
-(4,639–5,116), and Fable 5, at 3,369, is the first model measured that lands
-inside the human class range at all. Scored AI use itself runs *highest* in class I
-(11.3% vs II's 5.7%, 27-segment cell, suggestive only). Interpretation,
-recorded as such in VECTOR-ANALYSIS.md: because register and prevalence can
-now be measured explicitly, a legislature with a stated goal of fair
-representation can control for them — a fairness mechanism independent of the
-social dynamics this section documents, which are expected to persist.
-
-[^s-vec]: `vector_analysis.py`; methodology and full results in
-    `VECTOR-ANALYSIS.md`.
-
-#### What the class analysis cannot rule out
-
-Article length is measured once, in 2026, and applied to every year of a
-member's career. A backbencher who later became premier carries their eventual
-prominence backwards through the series. That biases toward finding nothing
-rather than something, since it adds noise to the regressor, but it means the
-coefficient is not a clean within-career estimate.
-
-Class III's premium is a cohort effect and should not be read as class.
-Controlling birth year alone moves it from +1.03 to −0.32, and the mechanism
-is compositional: III's median birth year is 1974 against 1956–1960 for every
-other class — routine non-manual members are the chamber's young class, by
-sixteen years. The rest of the curve is age-robust on the same subsample: II
-and IVab strengthen slightly under the control (+0.68, +0.91), VIIab holds at
-−1.51, so the peak sits at IVab/II rather than III and the crossover reading
-is unchanged.
-
-Classes III and VIIab rest on 29 and 16 members. Their standard errors treat
-repeated years of the same person as independent, so the true intervals are
-wider than shown and those two rows should not be quoted as significant. II and
-IVab, at 435 and 180 members, carry the finding.
-
 The chase-and-flight correlation strengthens as the volume cut rises, and that
 cut was chosen before the pattern was seen but not pre-registered. Two readings
 are consistent with the monotonicity — flight genuinely concentrates on the
@@ -1840,16 +1665,6 @@ common forms, as the theory says, or low-volume words are noisier and
 attenuate the correlation — and this data cannot separate them. What argues
 against an artifact is that the sign is negative at all six thresholds,
 including the widest and least significant.
-
-Both effects leave cohort intact. Birth decade runs **+1.20 to +1.36 per
-decade** in every specification here, larger than any class or education
-contrast.
-
-[^r46d]: `python covariate_study.py`, `python class_origin.py --dist`. Coding
-    workflow and rubric ambiguities in `provinces/OCCUPATION_CODING.md`; the
-    adjudicators' fifteen flagged ambiguities cluster on exactly the I/II and
-    service/manual cuts the schema turns on, which is a caveat on the coding
-    and not on the register measurement.
 
 [^r46e]: `python flight_correlation.py` computes the threshold series from
     `class_word_year.json` (built by `build_class_word_year.py`) and
@@ -1867,20 +1682,115 @@ contrast.
     2000, Labov 1972); the Labov year/publisher error the file flagged is
     corrected. See `CLASS-REGISTER-LITERATURE.md`.
 
+#### Prominence: a gradient in the provinces, an arc in the national chambers
+
+Each member's Wikipedia article length — a measured page property (wikitext
+bytes via the MediaWiki API), not a judgement — is the third status marker
+available here, alongside class and office. Read in buckets rather than as a
+single slope, it splits the chambers into two shapes (Appendix E.6; all 22
+chambers, 6,896 members, 99% coverage):
+
+| quintile of article length | CA provinces | AU + UK-devolved | national chambers | all 22 pooled |
+|---|---|---|---|---|
+| Q1 (least written about) | +0.001 | **+0.111** | −0.151 | +0.003 |
+| Q2 | −0.125 | +0.010 | −0.023 | −0.067 |
+| Q3 | −0.169 | +0.035 | **+0.154** | −0.070 |
+| Q4 | −0.269 | +0.006 | +0.104 | +0.023 |
+| Q5 (most written about) | **−0.401** | **−0.171** | −0.057 | −0.059 |
+| n | 1,286 | 2,257 | 3,353 | 6,896 |
+
+The **seventeen sub-national chambers decline**: the more written about a
+member is, the less of the register they use. The eight Canadian provinces do
+so steeply, and the nine Australian and UK-devolved chambers reproduce the
+direction more weakly — a replication in chambers collected afterwards, not a
+restatement. The **five national chambers arc** instead, peaking in the middle
+and falling at both ends. Pooled over all 22 the buckets are flat
+(+0.00, −0.07, −0.07, +0.02, −0.06), so the two shapes cancel and no single
+slope describes them; the buckets are the result.
+
+Depth was collected as a control on notability bias in the education covariate
+— members whose education we know have **1.80× the median article length** of
+those we do not, so that bias is real and measured — and it survived as a small
+result in its own right. WP:NPOL gives essentially every elected member an
+article, so existence discriminates nothing; depth is the usable instrument.
+
+**What the four markers share is not a peak but a retreat at the top.** Class
+peaks at II with class I below it. Education plateaus at bachelor and graduate
+with the professional degree below. Office-holders — the highest-status
+*positions* — use less than backbenchers (Appendix E.7). Prominence arcs in the
+national chambers and declines outright in the sub-national ones, but in both
+the most-written-about members are below the middle of their own distribution.
+Four markers, measured in completely different ways, agreeing that the top of
+each pulls back from the form; whether a distinct interior peak also appears
+varies by marker and by chamber, and should not be over-read.
+
+That is what a chase-and-flight cycle looks like from four angles at once,
+recorded as a hypothesis rather than a finding. The era-resolved test does not
+support the cycle's dynamic half on either sufficient signature: the class
+profile holds its shape in every half-decade rather than migrating (the
+class-by-era panels of §4.6a), and the II-over-I separation never widens
+across thirty years (+0.141 → +0.079, trend t −1.7 — drifting narrower, not
+wider). A cycle already in progress before our first frame would look like
+this too, which is why the discriminating study is class-coded speech from
+before 1996 (Appendix C).
+
+Article length is measured once, in 2026, and applied to every year of a
+member's career. A backbencher who later became premier carries their eventual
+prominence backwards through the series. That biases toward finding nothing
+rather than something, since it adds noise to the regressor, but it means the
+prominence estimate is not a clean within-career one.
+
+#### Word mix: the effects live in rate, not vocabulary — and machine text sits outside the geometry
+
+A composition check normalises each member's style-word vector to its own sum
+and z-scores it across 1,356 members.[^s-vec] No prior-free clusters emerge
+(silhouettes fall monotonically in k; PC1 carries 71% of variance), and class,
+education and cohort correlate with the mix at |r| ≤ 0.20 — **the standing
+effects above are about how much register a member uses, not which words**.
+
+Machine-flagged speech resembles no class tier (peak z-cosine +0.12 against a
+human control's +0.47), and in the one clean base/instruct pair available,
+post-training moves the model's mix **out of the human class geometry**:
+Sonnet 5, Opus 5 and Fable 5 traces are negative against every human class
+and education centroid and are the only text sets positively similar to the
+machine-flagged legislature pool. qwen3's move *up* (class II/bachelor to
+I/graduate) is the outlier among five measurable families. Extending the
+comparison to the older Claude versions still serving (Sonnet 4.5, Opus 4.1,
+Opus 4; 300 audited continuations each) sharpens this into a **family
+signature**: all six Claude models are positive against the flagged pool
+(+0.016 to +0.186) and all five open-model sets negative (−0.024 to −0.063),
+stable across three model generations. Within-family ordering is not
+interpretable at these sample sizes, but the family split is clean — the
+flagged text shares distinctive vocabulary with one lineage and not the
+other. This is register lineage, not attribution (Appendix C item 3).
+
+Register *rate* is also a lineage property: Opus sits at base-model rate
+across three generations (2,696–2,837 per 100k), Sonnet runs hot in both
+versions
+(4,639–5,116), and Fable 5, at 3,369, is the first model measured that lands
+inside the human class range at all. Scored AI use itself runs *highest* in class I
+(11.3% vs II's 5.7%, 27-segment cell, suggestive only). Because register and
+prevalence can now be measured explicitly, a legislature with a stated goal of fair
+representation can control for them — a fairness mechanism independent of the
+social dynamics this section documents, which are expected to persist.
+
+[^s-vec]: `vector_analysis.py`; methodology and full results in
+    `VECTOR-ANALYSIS.md`.
+
 ### 4.7 Permeation: detector-independent and small but positive
 
 **The register is permeating human speech independently of drafting — and
-the drift predates the models.** In the pre-LLM window alone — 2018–19
+the drift predates the models.** The instrument here is the self-normalised,
+in-context likelihood of the Kobak style words within Hansard traces — no
+placebo word list, no external control. In the pre-LLM window alone — 2018–19
 against 2021 to November 2022, where no machine text is possible in either
-cell — the same instrument moves **+0.0150** (positive in 7 of 10
+cell — it moves **+0.0150** (positive in 7 of 10
 chamber × family cells, permutation p = 0.017), reusing the identical
-scored occurrences.[^r48pre] This window establishes permeation without
+scored occurrences.[^r48pre] That window establishes permeation without
 machine-drafted contamination. The full pre-vs-post contrast is **+0.0099**
 (9 of 10 cells, permutation p = 0.022)†[^r48], but its post-era cells contain
 machine-drafted text (~9% of words) and therefore cannot separate continued
-human drift from that contamination. The instrument is the self-normalised,
-in-context likelihood of the Kobak style words within Hansard traces — no
-placebo word list, no external control.
+human drift from that contamination.
 
 [^r48pre]: `python word_context_prellm.py`, reusing the committed occurrence
     log-probs (a parity guard reproduces the published +0.0099 from the same
@@ -1936,13 +1846,11 @@ that pooled rate.[^rfhk2]
     and the Irish stores carry no 2023 sittings at all, a hole flagged for
     the data appendix.
 
-Small, but it is the only permeation evidence that does not route through a
-detector — and the in-time test whose failure demoted the lexicon arm was
-run here and reads differently: on pre-LLM era pairs this instrument
-*fires* (+0.0150 above), which for a claim about pre-existing human drift
-is the confirmation, not the artifact. The lexicon arm was demoted for
-firing while attributing the effect to an LLM cause; this arm claims the
-drift itself, in windows where no other cause was available.
+The effect is small, but it is the only permeation evidence independent of a
+detector. It also passes the in-time test that demoted the lexicon arm: on
+pre-LLM era pairs, this instrument registers +0.0150. That pre-model movement
+contradicts an LLM-causal interpretation but supports the claim tested here —
+pre-existing human drift in a window with no machine-drafted contamination.
 
 The interval is quoted as approximately **[0.000, +0.020]** deliberately. The
 point estimate and the sign count are exact, and every inferential route agrees
@@ -1962,14 +1870,17 @@ a precision the estimator does not have, so the permutation test leads.
 
 ### 4.8 Post-training moves the register into default generation
 
-The register is installed at post-training — by the stages tuned toward
-human demonstrations and preferences, and not by the stage tuned toward
-verifiable correctness, which the design built in as its placebo stage. The evidence is an OLMo-2 ladder, same prompts across the
-post-training stages. The stage values are bias-corrected: the estimator as first shipped carried a per-transition
-pedestal (the M3 defect, per stage — null calibration on random word lists
-returns +0.45/+0.56/+0.31, largest at DPO only because DPO's generations are
-longest), and three independent corrected routes agree on the picture below
-(exact stratified estimator shown; audit values in the 2026-08-11 review, M9):
+The register is installed at post-training: by the stages tuned toward human
+demonstrations and preferences, and not by the stage tuned toward verifiable
+correctness — the design's placebo. The evidence is an OLMo-2 ladder run on
+the same prompts at each post-training stage.
+
+The stage values below are bias-corrected. The estimator as first shipped
+carried a per-transition pedestal (the M3 defect: null calibration on random
+word lists returns +0.45/+0.56/+0.31 per stage, largest at DPO only because
+DPO's generations are longest). Three independent corrected routes agree on
+the picture below (exact stratified estimator shown; audit values in the
+2026-08-11 review, M9):
 
 | stage | register shift (corrected) | shipped, superseded |
 |---|---|---|
@@ -1982,13 +1893,14 @@ families, 1,600 prompt pairs each, 1.19M base words.[^r47] SFT and DPO
 contribute **indistinguishably** (paired bootstrap over 800 shared prompts:
 DPO − SFT = −0.08, 95% CI [−0.31, +0.15]), so no stage ordering is supported —
 "largest at the preference stage" was the control pedestal's artifact, not
-the data (Appendix B). What remains true, and
-is kept as a datapoint rather than a load-bearing link: the register is
-installed by the stages trained on human demonstrations and preferences, and
-not by the stage trained on verifiable math and code — stated as a *data*
-claim, not an objective claim, because on this ladder the two are
-confounded: the SFT and DPO stages train on chat while RLVR trains on a
-different domain, so "the RLVR objective doesn't install it" and "the RLVR
+the data (Appendix B).
+
+What remains is kept as a datapoint rather than a load-bearing link: the
+register is installed by the stages trained on human demonstrations and
+preferences, and not by the stage trained on verifiable math and code. That
+is a *data* claim, not an objective claim. On this ladder the two are
+confounded — the SFT and DPO stages train on chat while RLVR trains on a
+different domain — so "the RLVR objective doesn't install it" and "the RLVR
 data isn't chat" cannot be separated here. Three checks tighten what can
 be said.[^rptchecks]
 
@@ -2107,8 +2019,8 @@ coverage is a property of the generation rather than of the word list.
 **The overlap is the result, because it says which words are missing rather
 than how many.** Partitioning the 407 against Hansard 2025–26:
 
-| | absent from both | absent from generated only | absent from Hansard only | present in both |
-|---|---|---|---|---|
+| generated corpus | absent from both | absent from generated only | absent from Hansard only | present in both |
+|---|---:|---:|---:|---:|
 | base | 72 | **86** | 13 | 236 |
 | instruct | 63 | **55** | 22 | **267** |
 
@@ -2138,6 +2050,43 @@ reproducing the thing §4.2 detects.
     volume-matched human corpus and manufactures parity, which an earlier
     version of `style_coverage.py` did.
 
+### 4.8b Post-training aligns weakly with pre-model American usage
+
+**What post-training does resembles what already distinguished American
+usage.** If the two processes select for the same thing, the vocabulary shift
+instruct-tuning induces should line up with the difference that already
+separated American from British legislative speech before any model existed.
+Measured on 4,823 words in a 2006–10 window, it does, weakly and
+specifically:[^r45b]
+
+| contrast | Spearman | partial, holding frequency |
+|---|---|---|
+| post-training preference vs log(US/UK) | **+0.081** | **+0.086** |
+| vs log(Canada/UK) | +0.012 | +0.012 |
+| vs log(Australia/UK) | +0.018 | +0.004 |
+| vs log(US/Canada) | +0.083 | +0.088 |
+
+Permutation p < 0.005. The **discrimination** carries more than the coefficient:
+Canada and Australia are anglophone parliamentary democracies too, and
+post-training moves models toward none of what distinguishes *them* from
+Westminster. It is not drift away from British usage; it is drift toward
+American usage specifically, and Canada — nearest neighbour to the United
+States — shows nothing.
+
+The effect is small: r = 0.081 is under one percent of variance. And the design
+establishes compatibility, not cause. A shared cause predicts the same
+correlation — both the models and the global drift could be downstream of an
+American-dominated written corpus, with no common optimization involved. Appendix C
+names the instrument that would separate those two.
+
+[^r45b]: `python alignment_vs_american.py`. Three families at 1,600 prompts;
+    reference corpora US 37.6M, UK 44.2M, CA 74.8M, AU 88.8M words over
+    2006–10 — pre-transformer, and early enough that the UK's own climb has
+    barely begun, so the ratio compares two human traditions rather than two
+    stages of one drift. Reported on all words. US/UK spelling pairs and
+    one-word orthographic forms (`percent` for "per cent") are reported as a
+    separate stratum, along with two harsher filters, as robustness only.
+
 ### 4.9 Quality: better-formed, not worse-engaged
 
 Machine-involved speech is better-formed and no less engaged once genre or
@@ -2151,7 +2100,13 @@ than "engaged badly", and manufacture an engagement penalty wherever machine
 text is more monologic.
 
 That exclusion conditions on something the treatment moves, so the two claims
-must remain separate. **Applicability itself collapses at high screen
+must remain separate.
+
+A blinded, date-blind LLM screen of 37,801 segments separates Pangram's
+classes at AUC 0.954 [0.934, 0.971] on the 618-segment overlap
+(Appendix D.3).
+
+**Applicability itself collapses at high screen
 scores** — the share of segments on which each sentinel dimension can be
 scored at all, by band of the blinded screen score:[^s-appband]
 
@@ -2161,13 +2116,13 @@ scored at all, by band of the blinded screen score:[^s-appband]
 | 10–49 | 297 | 63.0% | 51.2% |
 | **≥ 50** | **45** | **31.1%** | **28.9%** |
 
-The engagement null below therefore
-means *engages no worse when there is something to engage with*. Separately,
-AI-flagged speech is about **half as likely to contain anything to engage
-with** — a real difference, not a null. Stage 6, using never-reviewed
-continuations, locates its source: the collapse appears in raw text from
-weaker models and vanishes at the frontier. In the wild, it therefore points
-at the tools actually in use rather than at machine text as such.
+The engagement null below is conditional: AI-flagged speech *engages no worse
+when there is something to engage with*. Applicability is a separate outcome,
+and there the groups differ: AI-flagged speech is about **half as likely to
+contain anything to engage with**. Stage 6, using never-reviewed
+continuations, locates that collapse in raw text from weaker models; it
+vanishes at the frontier. In the wild, the collapse therefore points to the
+tools actually in use rather than to machine text as such.
 
 [^s-appband]: `applicability_by_band.py`.
 
@@ -2185,9 +2140,9 @@ sources, same answer.[^r49q]
 
 | dimension | stage 1, per sd of score (n = 840) | stage 2, AI vs Human verdict (n = 682) | stage 1, fitted 0→100 difference |
 |---|---:|---:|---:|
-| justification | +0.173 (t +4.1) ✱ | **+0.290** (t +4.4) ✱ | **+1.134** |
-| common_good | +0.089 (t +3.3) ✱ | **+0.229** (t +4.5) ✱ | **+0.583** |
-| respect_groups | +0.044 (t +2.0) ✱[^r49m] | **+0.220** (t +6.1) ✱ | **+0.287** |
+| justification | **+0.173** (t +4.1) ✱ | **+0.290** (t +4.4) ✱ | +1.134 |
+| common_good | **+0.089** (t +3.3) ✱ | **+0.229** (t +4.5) ✱ | +0.583 |
+| respect_groups | **+0.044** (t +2.0) ✱[^r49m] | **+0.220** (t +6.1) ✱ | +0.287 |
 | respect_demands | −0.027 (t −0.5) | −0.029 (t −0.4) | −0.179 |
 | respect_counterargs | +0.022 (t +0.4) | +0.073 (t +1.0) | +0.143 |
 | constructive | −0.002 (t −0.1) | −0.041 (t −1.0) | −0.015 |
@@ -2219,18 +2174,21 @@ negatively. **This supersedes "form up, deliberation down"** (Appendix B).
 **Length, stated as a channel rather than adjusted away.**
 Stage 2's AI/Mixed segments run about 29 words longer within chamber
 (t +5.4), and length predicts justification, so part of the form lift may
-travel through longer speech. It is reported, not partialled out: if the
+travel through longer speech. We report that rather than partialling it out: if the
 tool puts in more words and more complete inferences than the member would
 have, that is a quality increase, not a confound — and the strongest stage-2
 dimension, respect_groups, has a *negative* length slope, so the lift is not
-length wearing a costume. The within-segment control now runs. With a
-within-chamber log-length term, justification is **+0.290 raw → +0.157
-(t 2.4) at fixed length** — about half the lift travels through longer
-speech and half survives without it, a channel decomposition rather than a
-retraction; **respect_groups is length-free** (+0.220 → +0.222); common_good
-barely moves (+0.229 → +0.199, t 3.8); and evidence's marginal +0.065 is
-entirely length (→ −0.017), so flagged text has more checkable specifics
-only by being longer, consistent with stage 6's humans-keep-evidence result.
+length wearing a costume.
+
+The within-segment control now runs, and it decomposes the lift rather than
+retracting it. With a within-chamber log-length term, justification is
+**+0.290 raw → +0.157 (t 2.4) at fixed length** — about half the lift travels
+through longer speech and half survives without it; **respect_groups is
+length-free** (+0.220 → +0.222); common_good barely moves (+0.229 → +0.199,
+t 3.8); and evidence's marginal +0.065 is entirely length (→ −0.017), so
+flagged text has more checkable specifics only by being longer, consistent
+with stage 6's humans-keep-evidence result.
+
 Speaker-clustered errors change nothing that carries a claim: stage 2 is
 nearly one-segment-per-speaker (respect_groups t 6.1 → 5.8), and in stage 1
 (418 speakers) the only casualty is the already-quarantined respect_groups
@@ -2268,7 +2226,7 @@ change a reader's confidence:
     correction: Benjamini-Hochberg across the fourteen cells of this table
     (Benjamini & Hochberg, *JRSS-B* 57, 1995, 289–300) leaves every other
     starred cell at q < 0.003 and this one at **q = 0.106**. It is also the
-    cell that moves under the judge-suspicion diagnostic (Appendix E.1) and
+    cell that moves under the judge-suspicion diagnostic (Appendix E.4) and
     under speaker clustering (t 2.0 → 1.8). The star is retained with this
     disclosure; the conjunct's weight rests on stage 2's version — t +6.1,
     q < 0.0001, external label, length-free — and on stage 6's independent
@@ -2294,35 +2252,34 @@ change a reader's confidence:
 **Stage 6 inverts the question: machine text no human ever reviewed.** The
 in-the-wild finding — AI-flagged speech better-formed — is consistent with
 two stories: machine text is better-formed, or the humans deploying it vet
-what they submit (the ethics-conscious member reviews the machine draft
-harder than their own words — Matthew's hypothesis, from the applicability
-finding). Stage 6 separates them with text that skipped every human: 60
-pre-2023 prompts (45-word openings of real segments), each with its
-member's actual continuation and three cached model continuations
-(mistral-instruct, qwen3-instruct, mistral-base) that no person read before
-grading — blind, length-matched within prompt, frozen v2b rubric, two
-passes, judge pinned to the stage-1/2 model.[^r49s6]
+what they submit, reviewing a machine draft harder than their own words.
+Stage 6 separates them with text that skipped every human: 60 pre-2023
+prompts (45-word openings of real segments), each with its member's actual
+continuation and three cached model continuations (mistral-instruct,
+qwen3-instruct, mistral-base) that no person read before grading — blind,
+length-matched within prompt, frozen v2b rubric, two passes, judge pinned to
+the stage-1/2 model.[^r49s6]
 
-**The answer is a capability ladder, not a constant** — established in two
-rounds the same day. The open-weight arms lose to their human twins on every
-form dimension (mistral-instruct justification −0.34, t −3.2;
-qwen3-instruct −0.84, t −7.7), which alone would say the wild form lift is
-made in the human-machine pipeline. But the Claude arms — the study's
-existing audited generation caches (the §4.6d family-signature traces),
-graded blind under the identical flow — invert that at the frontier:
+**The answer is a capability ladder, not a constant.** The open-weight arms
+lose to their human twins on every form dimension (mistral-instruct
+justification −0.34, t −3.2; qwen3-instruct −0.84, t −7.7), which alone would
+say the wild form lift is made in the human-machine pipeline. But the Claude
+arms — the study's existing audited generation caches (the §4.6d
+family-signature traces), graded blind under the identical flow — invert that
+at the frontier:
 
-| arm | justification vs human | sentinel applicability |
-|---|---|---|
-| claude-opus-4.1 | **+0.67 (t +4.3)** | 0.63 / 0.80 |
-| claude-opus-5 | **+0.53 (t +4.5)** | 0.65 / 0.67 |
-| claude-fable-5 | **+0.53 (t +4.3)** | 0.56 / 0.58 |
-| claude-opus-4 | **+0.48 (t +2.9)** | 0.63 / 0.76 |
-| claude-sonnet-5 | −0.03 (t −0.2) | 0.55 / 0.61 |
-| mistral-instruct | −0.34 (t −3.2) | 0.59 / 0.42 |
-| claude-sonnet-4.5 | −0.72 (t −4.5) | 0.57 / 0.52 |
-| qwen3-instruct | −0.84 (t −7.7) | 0.34 / 0.33 |
-| old haiku | −1.22 (t −4.6) | 0.17 / 0.26 |
-| *(human twins)* | — | 0.66 / 0.53 |
+| arm | justification vs human | demands applicable | counterarguments applicable |
+|---|---:|---:|---:|
+| claude-opus-4.1 | **+0.67 (t +4.3)** | 0.63 | 0.80 |
+| claude-opus-5 | **+0.53 (t +4.5)** | 0.65 | 0.67 |
+| claude-fable-5 | **+0.53 (t +4.3)** | 0.56 | 0.58 |
+| claude-opus-4 | **+0.48 (t +2.9)** | 0.63 | 0.76 |
+| claude-sonnet-5 | −0.03 (t −0.2) | 0.55 | 0.61 |
+| mistral-instruct | −0.34 (t −3.2) | 0.59 | 0.42 |
+| claude-sonnet-4.5 | −0.72 (t −4.5) | 0.57 | 0.52 |
+| qwen3-instruct | −0.84 (t −7.7) | 0.34 | 0.33 |
+| old haiku | −1.22 (t −4.6) | 0.17 | 0.26 |
+| *(human twins)* | — | 0.66 | 0.53 |
 
 **Frontier models produce better-formed text than the member's own next
 words, unreviewed** — so the wild form lift does not require human vetting;
@@ -2353,14 +2310,16 @@ experientially hollow survives in the evidence channel only.
 **Post-training creates form** within a fixed model (mistral instruct-minus-base
 +0.34, t +3.5), the quality-side echo of §4.8.
 
-Two channels named rather than excluded. The judge is Opus grading its own
-family blind — against pure favoritism, sonnet-5 ties human and sonnet-4.5
-loses badly, so the judge tracks capability tier rather than vendor, but a
-cross-family judge replication is the clean fix and is owed. Bare
-continuations are not deployed drafting — no instruction, no member editing —
-which is exactly the gap the comparison measures. The Claude arms are
-instruction-mediated continuations (chat models) where the open-weight arms
-are raw completions; that protocol difference is recorded.
+Two channels remain unresolved. First, the judge is Opus grading its own
+family blind. Pure family favoritism does not fit sonnet-5 tying the human
+continuation while sonnet-4.5 loses badly, but only replication with a
+cross-family judge can remove that concern. Second, bare continuation is not
+deployed drafting: there is no drafting instruction and no member editing. The
+protocol also differs across families, because the Claude arms are
+instruction-mediated continuations from chat models while the open-weight arms
+are raw completions. The comparison therefore identifies a capability ladder
+under these generation conditions, not the effect of a single standardized
+drafting protocol.
 
 [^r49s6]: `quality_expansion/pool6.json` (blind), `key6.json` (never left
     the grading machine's counterpart — the key stayed local),
@@ -2368,7 +2327,7 @@ are raw completions; that protocol difference is recorded.
     `workflows/stage6_grade.js`; design registered before grading in
     `plans/S10-stage6-unreviewed-continuations.md`. Run 2026-08-19.
 
-### 4.10 Directed effort evades the detector, and the evasion leaves quality unchanged
+### 4.10 Directed effort evades the detector
 
 The detector that finds machine-involved speech can be defeated by directed
 effort, which is why every prevalence figure is a floor.
@@ -2410,17 +2369,18 @@ A "flip" is the weaker event of merely leaving AI; the two are different rates
 and are never quoted interchangeably.
 
 **The headline: a general-purpose model that is never shown the target
-detector beats the commercial evasion industry by about tenfold.** The
-search loop generates and screens variants against an *Opus* self-score —
-a general intelligence, not the target — and **Pangram is not in the loop**:
-it sees only final submissions. Against the 13 commercial "humanizer"
-services benchmarked in Pangram's own technical report — products built and
-tuned *against* detectors — which get **2.31%** of documents past it, this
-blind-to-the-target search gets **22.5%** of targets past it: **9.8×**.
-Against Pangram's clean-conditions false-negative rate of 0.34%, it is
-66×.
+detector beats purpose-built humanizers, and the gap widens if the attacker
+can retry.** The search loop generates and screens variants against an *Opus*
+self-score — a general intelligence, not the target — and **Pangram is not in
+the loop**: it sees only final submissions. Against the 13 commercial
+"humanizer" services benchmarked in Pangram's own technical report — products
+built and tuned *against* detectors — which get **2.31%** of documents past
+it, this search's commensurable one-submission rate is **11.1%** of variants
+(**4.8×**); with query-and-retry it gets **22.5%** of targets past it
+(**9.8×**). Against Pangram's clean-conditions false-negative rate of 0.34%,
+the retry-enabled rate is 66×.
 
-That is the finding. The detector is not weak — it produced 0 false positives in 1,260 pre-2022 controls (§4.1), and a single "make this sound human" prompt makes text *more* detectable, not less. Yet in this comparison, the gap between a purpose-built evasion product and a frontier model told to try again is an order of magnitude in the frontier model's favour. The experiment establishes that gap under the tested attacks; it does not estimate how either side will improve.
+The result does not arise from a weak detector or a trivial prompt. Pangram produced 0 false positives in 1,260 pre-2022 controls (§4.1), and a single "make this sound human" prompt makes text *more* detectable, not less. That is what makes the reversals worth reporting: they are movements *into* a class the detector otherwise reaches zero times out of 1,260. This is not a detector that is merely noisy at the boundary — it is one with a hard specificity floor that a directed search nevertheless walks text across. Under the tested attacks, the frontier-model search has a 4.8-fold advantage over purpose-built evasion products on one submission and a 9.8-fold arithmetic advantage when retries are allowed. The experiment does not estimate how either attack will improve.
 
 **Two rates, set by whether the attacker can test against the detector.** The
 same search answers two threat models, and which number applies depends on one
@@ -2462,11 +2422,11 @@ wanted through got through. Taking only the **final search in each chamber**
 and asking on what fraction of *targets* at least one variant reached a clean
 Human verdict:
 
-| | searched | zero-yield | ≥1 Human | ≥1 at `fraction_ai = 0.0` |
-|---|---|---|---|---|
-| NB v3 contrastive | 40 | 2 | 10 = 25.0% | 10 = 25.0% |
-| GO all-31 uniform | 31 | 4 | 6 = 19.4% | 5 = 16.1% |
-| **pooled** | **71** | **6** | **16 = 22.5%** [14.4, 33.5] | **15 = 21.1%** [13.2, 32.0] |
+| run | searched | zero-yield | ≥1 Human | rate | ≥1 at `fraction_ai = 0.0` | rate |
+|---|---:|---:|---:|---:|---:|---:|
+| NB v3 contrastive | 40 | 2 | 10 | 25.0% | 10 | 25.0% |
+| GO all-31 uniform | 31 | 4 | 6 | 19.4% | 5 | 16.1% |
+| **pooled** | **71** | **6** | **16** | **22.5%** [14.4, 33.5] | **15** | **21.1%** [13.2, 32.0] |
 
 **Roughly one flagged speech in five can be walked past the detector**, at a
 budget of six rounds and three variants per round. One caveat on reading it as
@@ -2481,31 +2441,6 @@ the realistic threat, and the v3 protocol was specified from the mechanism,
 not from per-text outcomes.[^s-bmeth]
 
 [^s-bmeth]: `BYPASS_METHODOLOGY.md`.
-
-**The evasion is not Pangram-specific — but the alternatives barely detect
-this genre to begin with.** Scoring the 341 final variants and their 65
-originals on three open detectors it never targeted — Fast-DetectGPT,
-Binoculars, and the DetectLLM log-rank ratio, each thresholded at the 5%
-false-positive point on 1,255 pre-2022 human controls — **79% of the
-Pangram-evading variants evade all four detectors at once**, and each open
-detector individually flags only 6–10% of them. The transfer is nearly
-complete, but the honest reason is two-sided: these zero-shot detectors are
-weak on institutional prose in the first place, catching just 26%
-(Fast-DetectGPT), 17% (log-rank) and 6% (Binoculars) of the un-rewritten
-machine text Pangram flagged — the same collapse §5 documents on this
-register. So the multi-detector test cannot show a *strong* evader
-defeating *strong* alternatives; what it shows is that the one calibrated
-detector's verdict is not idiosyncratic — a rewrite tuned past it is past
-the others too — and that no detector available to us holds this genre
-under directed effort.[^strans]
-
-[^strans]: `python score_multistat.py` (Fast-DetectGPT, Binoculars and LRR
-    from one committed Falcon-pair pass) on the assembled variants and
-    controls, then `python detector_transfer.py`. Thresholds are each
-    detector's 95th control percentile; the per-run split is in the output
-    (the uniform GO run evades harder — 1–4% open-detector flags — than the
-    contrastively-seeded NB run at 9–14%).
-
 
 **The denominator is targets searched, not targets that yielded a variant.**
 The search submits a rewrite to Pangram only when its Opus proxy score drops
@@ -2532,11 +2467,28 @@ more than a restatement of the wide interval is that the two chambers'
 and unglossed idiom and disagree on sentence rhythm — so if the rates do turn
 out to transfer, the edits that produce them do not.
 
-**Against 0 AI labels in 1,260 genuine pre-AI controls (§4.1).** That is what
-makes the reversals worth reporting: they are movements *into* a class the
-detector otherwise reaches zero times out of 1,260. This is not a detector
-that is merely noisy at the boundary — it is one with a hard specificity floor
-that a directed search nevertheless walks text across.
+**Pangram-evading variants also pass the available alternative detectors,
+although those detectors are weak on this genre.** The 341 final variants and
+their 65 originals were scored by three untargeted open detectors —
+Fast-DetectGPT, Binoculars, and the DetectLLM log-rank ratio — each
+thresholded at a 5% false-positive rate on 1,255 pre-2022 human controls.
+**Seventy-nine percent of the Pangram-evading variants evade all four
+detectors at once**, and each open detector flags only 6–10% of them. This
+near-complete transfer has a two-sided explanation: on the unrevised machine
+text Pangram flagged, the open detectors catch only 26% (Fast-DetectGPT), 17%
+(log-rank), and 6% (Binoculars), reproducing the collapse §5 documents for
+this register. The test therefore does not demonstrate a strong evader
+defeating strong alternative detectors. It shows that Pangram's reversals are
+not rescued by any detector available here: variants that pass Pangram
+generally pass the weaker alternatives as well.[^strans]
+
+[^strans]: `python score_multistat.py` (Fast-DetectGPT, Binoculars and LRR
+    from one committed Falcon-pair pass) on the assembled variants and
+    controls, then `python detector_transfer.py`. Thresholds are each
+    detector's 95th control percentile; the per-run split is in the output
+    (the uniform GO run evades harder — 1–4% open-detector flags — than the
+    contrastively-seeded NB run at 9–14%).
+
 
 **Naming the quantity precisely, because the comparison is easy to get wrong.**
 Ours is an **induced false-negative rate** under attack, and it is *not* the
@@ -2600,35 +2552,64 @@ underneath sometimes says something weaker. Both numbers are therefore reported
 throughout this study, and the gap between them — half a percentage point
 pooled — changes no conclusion here.
 
+[^r49x2]: 2.86% (17/594) is Pangram 4's
+    document-level false-negative rate on the **Epoch AI Style Imitation**
+    benchmark (the Pangram 4 report's own Table 23). The Perkins benchmark
+    (their Table 22) reports mean accuracy — a different unit, with Pangram at
+    ~5.9% miss on the manipulated set — which is not FNR-comparable and is not
+    tabled here.
+
+[^r49a]: `python bypass_report.py` reads the verdict files and prints every
+    figure in this subsection — the per-run split (final vs superseded), the
+    cluster-bootstrap intervals, the per-target rates, the Fisher test, and the
+    exploratory band check. Strict re-scores in `nb_reflip_fractions.json`,
+    `bp_reflip_fractions.json`, `go_reflip_fractions.json`; the figure is
+    `bypass_figure.py`. **Reproducibility gap, stated plainly:** the two Government Orders searches have committed scripts
+    (`gov_bypass_v3.js`, `gov_bypass_all.js`), but the New Brunswick searches
+    and the contrast-pair builders were run ad hoc and survive only as their
+    outputs (`bypass_v3.json`, `bypass_contrast.json`, …) — so NB v3, the
+    largest single contributor to the per-variant rate, is documented by its
+    outputs and `BYPASS_METHODOLOGY.md`, not by a re-runnable script. The GO
+    scripts were adapted from the NB ones (paths, seed count, one field name;
+    verified by structural diff, `BYPASS_METHODOLOGY.md`). Rewritten variant
+    text is held locally and excluded under the corpus-licence policy. The two
+    superseded first attempts are in Appendix B.
+
+### 4.10a Evasion rewriting leaves deliberative quality unchanged
+
 **Evasion-directed rewriting does not measurably change deliberative
 quality.** Two paired arms, 63 within-text pairs, blinded and interleaved,
 graded on the same v2b DQI rubric: stage 3 is 38 New Brunswick pairs (the v3
 ladder variants), stage 4 is 25 Government Orders pairs from the **GO
 Opus-selected run** — not the GO all-31 arm of the bypass section above, with
-which it shares no segments. Named precisely because of what the verdicts
-show: **61 of the 63 graded rewrites did not clear the detector** (stage 3:
-AI 29 / Mixed 7 / Human 2; stage 4: AI 23 / Mixed 2). What is measured is the
-effect of rewriting *under an evasion instruction*, not of successful evasion
-— the selection was by the Opus proxy, not the Pangram outcome, so this graded
-set is not conditioned on failure. The complementary arm, graded ON the
-Pangram outcome (the successful reversals), is stage 5 below. Within-text pairing holds content, speaker and occasion fixed by
-construction, so these are the raw paired differences — the design's own
-estimand, needing no covariate. **Every dimension is null on both.**[^r49b]
-What the pairs can exclude is bounded and stated:
-detectable effects run roughly ±0.12–0.26 per dimension for stage 3 —
-commensurate with the study's own headline effects (+0.22 to +0.29, stage 2)
-— so these nulls say the evasion edit produces nothing dramatic, not that it
-produces nothing at the scale the study elsewhere reports. Made formal, the
-bound holds where the n does: stage 3 shows TOST equivalence within ±0.22
-on five of seven dimensions (the two applicability-gated respect dimensions
-run too thin at n = 12), stage 4 on three of seven — the rest are bounded
-only at headline scale, exactly as the MDE statement says.[^rtost] None of the 28
-paired cells reaches nominal significance, which is how a true null behaves
-under many looks. And the paper's quality conclusion does not rest on these
-arms: it is carried jointly by stages 1 and 2 (wild text, two label
-sources), stage 5 (successful evasions), and stage 6 (never-reviewed
-continuations, where frontier models *beat* the human twins on form) — four
-different contrasts agreeing.
+which it shares no segments. What these arms measure is the effect of
+rewriting *under an evasion instruction*, not of successful evasion: selection
+was by the Opus proxy, not the Pangram outcome, so the graded set is not
+conditioned on failure — and in the event **61 of the 63 graded rewrites did
+not clear the detector** (stage 3: AI 29 / Mixed 7 / Human 2; stage 4: AI 23 /
+Mixed 2). The complementary arm, graded ON the Pangram outcome (the successful
+reversals), is stage 5 below.
+
+**Every dimension is null on both.**[^r49b] Within-text pairing holds content,
+speaker and occasion fixed by construction, so these are the raw paired
+differences — the design's own estimand, needing no covariate. What the pairs
+can exclude is bounded and stated: detectable effects run roughly ±0.12–0.26
+per dimension for stage 3 — commensurate with the study's own headline effects
+(+0.22 to +0.29, stage 2) — so these nulls say the evasion edit produces
+nothing dramatic, not that it produces nothing at the scale the study
+elsewhere reports. Made formal, the bound holds where the n does: stage 3
+shows TOST equivalence within ±0.22 on five of seven dimensions (the two
+applicability-gated respect dimensions run too thin at n = 12), stage 4 on
+three of seven — the rest are bounded only at headline scale, exactly as the
+MDE statement says.[^rtost] None of the 28 paired cells reaches nominal
+significance, which is how a true null behaves under many looks.
+
+The paper's quality conclusion does not rest on these arms in any case. It is
+carried jointly by stages 1 and 2 (wild text, two label sources), stage 5
+(successful evasions), and stage 6 (never-reviewed continuations, where
+frontier models *beat* the human twins on form) — four different contrasts
+agreeing.
+
 The paired cells, dimension by dimension:
 
 
@@ -2701,43 +2682,24 @@ nuisance parameter.[^r49c]
     within-text paired: content, speaker and occasion are already fixed by
     construction, and there is nothing for a covariate to control.
 
-**What this means for the prevalence number.** Evasion is real and clears
-the detector on roughly one flagged speech in five under directed search —
-so 9.0% is a floor on *use*: it measures undisguised machine drafting, and
-disguised drafting exists above it. The quality clause is a separate claim,
-and one-directional: no measured arm shows a deliberative-quality *cost* to
-the evading rewrite — the paired nulls bound only headline-scale effects
-(their minimum detectable effects), but every powered result runs favourable — which is
-what the norms argument needs; it does not claim the edit adds nothing. But it is not free in effort:
-it took a frontier model, contrastive exemplars mined from matched human text,
-and a multi-round search scoring three replicates per variant. A single
-"make this sound human" prompt does the opposite — instructed rewriting *raises*
-Pangram's score, and human text pushed through the same ladder went from 11.7
-to 60.2. The gap between "a detector can be beaten" and "a detector is easy to
-beat" is the whole of that apparatus.
+**What this means for the prevalence number.** Evasion is real and clears the
+detector on roughly one flagged speech in five under directed search, so 9.0%
+is a floor on *use*: it measures undisguised machine drafting, and disguised
+drafting exists above it.
 
-[^r49x2]: 2.86% (17/594) is Pangram 4's
-    document-level false-negative rate on the **Epoch AI Style Imitation**
-    benchmark (the Pangram 4 report's own Table 23). The Perkins benchmark
-    (their Table 22) reports mean accuracy — a different unit, with Pangram at
-    ~5.9% miss on the manipulated set — which is not FNR-comparable and is not
-    tabled here.
+The quality clause is a separate claim, and one-directional. No measured arm
+shows a deliberative-quality *cost* to the evading rewrite — the paired nulls
+bound only headline-scale effects (their minimum detectable effects), but
+every powered result runs favourable — which is what the norms argument needs;
+it does not claim the edit adds nothing.
 
-[^r49a]: `python bypass_report.py` reads the verdict files and prints every
-    figure in this subsection — the per-run split (final vs superseded), the
-    cluster-bootstrap intervals, the per-target rates, the Fisher test, and the
-    exploratory band check. Strict re-scores in `nb_reflip_fractions.json`,
-    `bp_reflip_fractions.json`, `go_reflip_fractions.json`; the figure is
-    `bypass_figure.py`. **Reproducibility gap, stated plainly:** the two Government Orders searches have committed scripts
-    (`gov_bypass_v3.js`, `gov_bypass_all.js`), but the New Brunswick searches
-    and the contrast-pair builders were run ad hoc and survive only as their
-    outputs (`bypass_v3.json`, `bypass_contrast.json`, …) — so NB v3, the
-    largest single contributor to the per-variant rate, is documented by its
-    outputs and `BYPASS_METHODOLOGY.md`, not by a re-runnable script. The GO
-    scripts were adapted from the NB ones (paths, seed count, one field name;
-    verified by structural diff, `BYPASS_METHODOLOGY.md`). Rewritten variant
-    text is held locally and excluded under the corpus-licence policy. The two
-    superseded first attempts are in Appendix B.
+The evasion is not free in effort. It took a frontier model, contrastive
+exemplars mined from matched human text, and a multi-round search scoring
+three replicates per variant. A single "make this sound human" prompt does the
+opposite — instructed rewriting *raises* Pangram's score, and human text
+pushed through the same ladder went from 11.7 to 60.2. The gap between "a
+detector can be beaten" and "a detector is easy to beat" is the whole of that
+apparatus.
 
 [^r49b]: `cd quality_expansion && python analyze_stage3.py [RUNDIR]` and
     `python analyze_stage3.py --key4 [RUNDIR]`; values cached in
@@ -2756,26 +2718,13 @@ beat" is the whole of that apparatus.
 
 ## 5. Related work
 
-Position first: this study differs from the prior work by scale (22
-chambers against the next parliamentary study's two), by triangulation (a
-calibrated commercial detector crossed with a detector-independent
-register), and by time depth (a thirty-year baseline against the field's
-post-2020 windows). The 9.0% floor itself lands where the population-level
-literature already points for professional prose — 6.5–17.5% (Liang et al.,
-Gray) — which we read as corroboration, not coincidence.
-
-On the measurement of position itself, the classification of §4.6b sits in
-a short lineage. Erikson and Goldthorpe's EGP schema is the categorical
-standard the class arm uses; Weeden and Grusky argued class is better
-measured at the disaggregated occupation level, where it outpredicts the
-big-class schemas; Kohn and Schooler located the class–psychology link in
-occupational self-direction, closeness of supervision above all. The
-measure here keeps that direction of travel — position read from
-occupational content — and differs in two ways: it is blind-derived from
-the full descriptor universe by coders never shown the outcome, and it
-scores a level the categorical maps do not draw, distance from the
-organisational hierarchy itself — the free-work level whose preregistered
-ordering was confirmed (§4.6b).
+Three design differences place this study relative to prior work: scale (22
+chambers against two in the next parliamentary study), triangulation (a
+calibrated commercial detector crossed with a detector-independent register),
+and time depth (a thirty-year baseline against the field's post-2020
+windows). Its 9.0% floor also falls within the 6.5–17.5% range that Liang et
+al. and Gray report for professional prose, providing population-level
+corroboration.
 
 The relationship to the excess-vocabulary work is complementary by
 construction. Kobak et al. measure excess against a counterfactual
@@ -2786,6 +2735,23 @@ decades of legislatures, the same vocabulary yields the history the jump
 detector cannot: the 1994–96 onset, the cross-chamber convergence on the
 American level, and the juniority and cohort structure of §4.6. Their
 history was the control; here it is the finding.
+
+**The closest prior work is parliamentary and recent, and we differ from it
+by instrument and scope, not conclusion.** Suvanto, McGlinchey, Barclay &
+Wahde (arXiv:2606.14209, 2026) detect undisclosed LLM use in the UK and Swedish
+parliaments and find, as we do, a steady rise from 2022 — but on *written*
+motions rather than transcribed speech, in two chambers, with a bespoke
+glass-box classifier trained on pre-2022 text rather than a calibrated
+commercial detector, and without the register, cohort, occupational or quality
+arms here. ParliaBench (Koniaris et al., LREC 2026) is a generation-and-
+evaluation benchmark for parliamentary LLM text, not a prevalence study. Our
+contribution is not the existence of the phenomenon — that is now independently
+established — but measuring it at scale (22 chambers) with a detector whose
+specificity we verify chamber by chamber (0 in 1,260), calibrating prevalence,
+and separating the machine signal from a human register that predates the
+machines. Where Suvanto answers "is it happening" with a purpose-built
+classifier, we answer "how much, where, and what is it" with the better
+detector and the controls the answer needs.
 
 Two prior efforts ran comparable designs on chambers in this corpus and
 reached opposite conclusions. **Neither used a calibrated commercial
@@ -2813,28 +2779,26 @@ separates the classes in parliamentary register, and that
 to draft a speech in the past three years." His null is a sensitivity failure
 he diagnoses himself.
 
-**One correction to how we previously answered him.** We wrote that his
-false-positive rate exceeded his detection rate, making the null
-uninformative. Rice does say this, but the two figures are measured at
-different thresholds — the 8% FPR at "highly likely AI" (≥8/10), the 7.1%
-corpus rate at "possibly AI" (≥6/10) — so the comparison does not hold as
-stated, and we should not have repeated it. The FPR itself is real but thin:
-**4 of 50**, Wilson CI [3.2%, 18.8%], and it characterises a Haiku-class judge
-rather than the Sonnet-class judge behind his headline run. Our corresponding
-specificity is 0 in 1,260, measured chamber by chamber.
+Rice's own calibration is thin on specificity: **4 of 50** pre-ChatGPT
+speeches flagged, Wilson CI [3.2%, 18.8%], at the "highly likely AI"
+threshold (≥8/10), and it characterises a Haiku-class judge rather than the
+Sonnet-class judge behind his headline run. The 8% FPR and the 7.1% corpus
+rate at "possibly AI" (≥6/10) are measured at different thresholds and are
+not directly comparable. Our corresponding specificity is 0 in 1,260,
+measured chamber by chamber.
 
 The substantive answer to Rice is therefore about **sensitivity, not
 specificity**, and it generalises beyond his study. Binoculars (Hans et al.
 2024) and Fast-DetectGPT (Bao et al. 2024) are sound published methods that
-degrade severely on formal institutional prose: on the Sem-Detect
-peer-review benchmark reprinted in the Pangram 4 report (its Table 27), both fall
-to roughly 6% true-positive rate at 1% FPR — false-negative rates above 90% —
-where a calibrated commercial detector holds above 95% (one named benchmark,
-not several; on the easier Saha split Fast-DetectGPT
-does far better, so the claim is about hard institutional prose specifically). Hansard is the same kind of register. A null
-recovered with those instruments on this genre is close to uninformative, and
-Rice's own numbers (Binoculars flagging 0.4% of everything) look like exactly
-that.
+degrade severely on formal institutional prose. On the Sem-Detect peer-review
+benchmark reprinted in the Pangram 4 report (its Table 27), both fall to
+roughly 6% true-positive rate at 1% FPR — false-negative rates above 90% —
+where a calibrated commercial detector holds above 95%. That is one named
+benchmark rather than several, and on the easier Saha split Fast-DetectGPT does
+far better, so the claim is about hard institutional prose specifically.
+Hansard is the same kind of register. A null recovered with those instruments
+on this genre is close to uninformative, and Rice's own numbers (Binoculars
+flagging 0.4% of everything) look like exactly that.
 
 Pimlico's agreement is **not** corroboration. Its method is the same family as
 the arm we demoted in §3.3 for lacking a trend control, it reports no
@@ -2842,23 +2806,6 @@ prevalence estimate, and its own author hedges the finding as
 "LinkedIn-ification" rather than drafting. A method that agrees with us while
 sharing the defect we found in our own version of it is weak support, and
 should be treated as a third result to explain.
-
-**The closest prior work is parliamentary and recent, and we differ from it
-by instrument and scope, not conclusion.** Suvanto, McGlinchey, Barclay &
-Wahde (arXiv:2606.14209, 2026) detect undisclosed LLM use in the UK and Swedish
-parliaments and find, as we do, a steady rise from 2022 — but on *written*
-motions rather than transcribed speech, in two chambers, with a bespoke
-glass-box classifier trained on pre-2022 text rather than a calibrated
-commercial detector, and without the register, cohort, occupational or quality
-arms here. ParliaBench (Koniaris et al., LREC 2026) is a generation-and-
-evaluation benchmark for parliamentary LLM text, not a prevalence study. Our
-contribution is not the existence of the phenomenon — that is now independently
-established — but measuring it at scale (22 chambers) with a detector whose
-specificity we verify chamber by chamber (0 in 1,260), calibrating prevalence,
-and separating the machine signal from a human register that predates the
-machines. Where Suvanto answers "is it happening" with a purpose-built
-classifier, we answer "how much, where, and what is it" with the better
-detector and the controls the answer needs.
 
 Both the lexical and detector literatures may be measuring something real and
 different. §4.7 predicts exactly this split: lexical methods fire on permeation
@@ -2879,12 +2826,11 @@ baseline is moving toward the thing being detected.
   months, or a local model fine-tuned against the detector, is a different
   adversary and we did not test one.
 - **Tasmania is uninterpretable** and excluded. The transcription-regime
-  diagnostic now runs on all twenty-one screened chambers — it previously
-  globbed only the provinces, and CA-FED, US House and US Senate were added,
-  the first flat and the two US chambers a gradual multi-decade climb with no
-  discrete step. Twenty chambers pass and enter the pool; Tasmania, the
-  twenty-first, is the sole exclusion. What bounds the check is its
-  resolution: it reads two convention-tracking markers, not all of them.
+  diagnostic runs on all twenty-one screened chambers: CA-FED is flat; the US
+  House and US Senate show a gradual multi-decade climb with no discrete step.
+  Twenty chambers pass and enter the pool; Tasmania, the twenty-first, is the
+  sole exclusion. What bounds the check is its resolution: it reads two
+  convention-tracking markers, not all of them.
 - **Mixed is not counted as wholly machine-written in prevalence.** Each Mixed segment is weighted by its reported AI fraction. In analyses that require a binary label, Mixed is pooled with AI and reported separately in the CSV.
 - **The permeation effect is small** and rests on one instrument.
 - **This study measures register, not substance.** Whether machine assistance
@@ -2901,7 +2847,7 @@ baseline is moving toward the thing being detected.
   arriving with drift-formed cohorts, under an era-stable juniority profile
   (stated there). Why either component exists is open — three exposure tests
   null, and the informative next evidence is a different kind rather than a
-  fourth operationalisation of the same kind (Appendix C items 8–10).
+  fourth operationalisation of the same kind (Appendix C items 9–11).
 - **No chamber requires AI disclosure**, so no ground truth exists anywhere;
   every number rests on detector calibration rather than admission.
 - **Single detector.** Specificity is measured, but Pangram 4 is one vendor.
@@ -2913,7 +2859,7 @@ baseline is moving toward the thing being detected.
 - **Specificity is measured on the genres the controls happen to contain.**
   1,260/1,260 is strong, but no tribute or eulogy is among them, and tributes
   produced two of the five Oral Questions flags at maximal confidence (§4.3).
-  Until a pre-AI tribute control exists (Appendix C item 11), the specificity claim
+  Until a pre-AI tribute control exists (Appendix C item 12), the specificity claim
   does not extend to that register.
 - **Judge leakage.** Screen and grading-judge AI guesses correlate at
   r = +0.758. Controlling the judge's own `ai_guess` (Appendix E) leaves the
@@ -2955,8 +2901,9 @@ variance-explained: the same peak-below-the-summit shape appears in
 class, in education, and in two occupational ladders built by
 semi-independent processes, with the occupational gradient nesting inside
 the class rungs — replication across instruments of the kind
-variance-share statistics do not measure. One benchmark cuts against us
-and is kept: Funder & Ozer flag r ≥ .40 as "likely to be a gross
+variance-share statistics do not measure.
+
+One benchmark cuts against us and is kept: Funder & Ozer flag r ≥ .40 as "likely to be a gross
 overestimate," and our career-outcome cohort estimate (R ≈ .39) was
 exactly that — period mixing inflated it, and the era-restricted r ≈ .14
 is the defensible number. Individual style is dominated by idiolect;
@@ -2968,7 +2915,9 @@ variation, not a defect of the instrument.
 
 ## 7. Discussion
 
-This study set out to count machine-drafted speech and found, behind the count, a register with a thirty-year human history. The count stands, and it belongs to the calibrated detector alone: **at least 9.0% of words** in current legislative speech are machine-drafted, spread fourfold across chambers and concentrated where procedure permits preparation. The transparent lexical register corroborates it where the two instruments' inferences overlap — the genre ladder — and carries what the detector cannot: the history and the social structure. That register is the older finding: rising since 1994–96, strongest in later-born members, shaped like the office — peaking at its insulated middle — and installed, on the machine side, at exactly the post-training stages tuned toward human demonstrations and preferences. Machine intelligence did not invent this register of accountability without authorship — it inherited it, and this study measures the inheritance.
+This study set out to count machine-drafted speech and found, behind the count, a register with a thirty-year human history. The count stands, and it belongs to the calibrated detector alone: **at least 9.0% of words** in current legislative speech are machine-drafted, spread fourfold across chambers and concentrated where procedure permits preparation. The transparent lexical register corroborates it where the two instruments' inferences overlap — the genre ladder — and carries what the detector cannot: the history and the social structure.
+
+That register is the older finding: rising since 1994–96, strongest in later-born members, shaped like the office — peaking at its insulated middle — and installed, on the machine side, at exactly the post-training stages tuned toward human demonstrations and preferences. Machine intelligence did not invent this register of accountability without authorship — it inherited it, and this study measures the inheritance.
 
 What follows from that depends on what detection can actually do. §4.10 is
 usually read as a result about one detector. It is better read as an
@@ -2977,7 +2926,7 @@ of the study is for.
 
 ### 7.1 Any check the attacker can score against is an optimisation target
 
-Point a general-purpose model at its own output, tell it to try again, and it will beat any check it can score against. This is not a claim about Pangram, and it is not a defeat theorem for fixed checks. The supportable form is narrower: a check becomes an optimisation target as soon as the attacker can query its output, or a proxy correlated with it, and the attacker can satisfy the quality constraint itself. The 22.5% in §4.10 is a lower bound on that adversary class, measured at its weakest member.
+A check becomes an optimisation target as soon as an attacker can query its output — or a correlated proxy — while satisfying the quality constraint. §4.10 demonstrates the weak form of that adversary: a general-purpose model repeatedly rewrote its own output against a proxy and cleared the target detector on 22.5% of texts. That result is a lower bound on the tested adversary class, not a defeat theorem for fixed checks or a claim specific to Pangram.
 
 Our own numbers are the *weak* instance. The search never queried the detector
 it was evading: it optimised against an Opus proxy, tested on Pangram only at
@@ -3003,8 +2952,8 @@ currently bothers to evade, or the undisguised register signature would not be
 there to find. **Detection is a norms instrument, not a security instrument** —
 locks, not vaults. It raises the cost of casual undisclosed use and does
 nothing against motivated use, and that is a coherent thing for a chamber to
-want. It is also what lets 9.0% stand as a measurement of disclosed-by-default
-behaviour while conceding the limit above entirely.
+want. It is also what lets 9.0% stand as a measurement of the undisguised default
+while conceding the limit above entirely.
 
 The better version of the norms instrument is not a sharper detector but a
 **signature the generator puts there on purpose**. Anthropic began embedding
@@ -3055,9 +3004,9 @@ Two limits that do bite, and neither is about robustness:
   which means watermarking can support a disclosure norm but can never
   underwrite an accusation.
 
-The fallback people reach for when no detector is available — their own sense of whether text "reads like a person" — is worse than unreliable on adversarial input. It is anti-correlated with the truth. Asked to judge AI-likeness by register, a frontier reader flagged 13 of 35 genuine human floor speeches and only 5 of 35 machine rewrites that had been optimised against a detector (§4.10 stage 5). Adversarial optimisation removes exactly the tells gut judgment keys on, so a vibes-based adjudicator concentrates its errors on the *unoptimised* — ordinary speakers who ran their words through nothing.
+When no detector is available, people fall back on their own sense of whether a text "reads like a person". On adversarial input that fallback is worse than unreliable: it is anti-correlated with the truth. Asked to judge AI-likeness by register, a frontier reader flagged 13 of 35 genuine human floor speeches and only 5 of 35 machine rewrites that had been optimised against a detector (§4.10a stage 5). Adversarial optimisation removes exactly the tells gut judgment keys on, so a vibes-based adjudicator concentrates its errors on the *unoptimised* — ordinary speakers who ran their words through nothing.
 
-As machine-assisted text spreads, register stops carrying authorship information, and an institution still adjudicating authenticity by feel is grading noise. That the errors then fall hardest on the unassisted — that machines will overtake humans at seeming human to humans — is a conjecture resting on one unblinded, lineage-correlated judge on 35 texts, and it stays a conjecture until it happens (see the future-work item below). We state it because, after watching machines overtake human performance at task after task, we do not expect this one to be the exception.
+As machine-assisted text spreads, register stops carrying authorship information, and an institution still adjudicating authenticity by feel is grading noise. That the errors then fall hardest on the unassisted — that machines will overtake humans at seeming human to humans — is a conjecture resting on one unblinded, lineage-correlated judge on 35 texts, and it stays a conjecture until it happens; the confirmatory design is Appendix C item 4. We state it because, after watching machines overtake human performance at task after task, we do not expect this one to be the exception.
 
 ### 7.3 Policy context
 
@@ -3091,20 +3040,21 @@ how much machine text enters a record can measure whose register a model
 was tuned to reproduce, which is the form of oversight the substitution
 worry (§1) actually calls for.
 
-### 7.4 The substitution, and why our null is the argument for it
+### 7.4 Check the work, not the author
 
 If provenance is the wrong thing to spend effort on, the question is what to
 spend it on instead. The answer available from this study is: **check the work
 directly.**
 
 The case rests on §4.9's primary finding and is independent of evasion: speech classified as machine-involved grades **better-formed, not worse-engaged** on the DQI. Policing authorship therefore does not protect quality, because the text flagged for machine involvement is not where this rubric finds a quality deficit. The DQI associations with the machine label are real but small, partly exposed to judge leakage, and positive where they survive; they neither identify authorship nor support treating machine involvement as a quality failure. The narrower conclusion is the useful one: **quality assessment is not a usable proxy for provenance, and provenance is not a usable proxy for quality.**
+
 Two dimensions do run lower on the machine side, and they are the right targets for improvement rather than counterexamples: wild flagged speech is about half as likely to contain anything to engage with (the applicability split, §4.9 — a raw contrast, not genre-adjusted), and machine text sits below humans on checkable specifics (stage 6) — with the continuation evidence attributing the applicability collapse to weaker tools in use, not to machine assistance as such (opus-class continuations carry as much to engage with as the humans). Both deficits are visible only because the work is checked directly, which is the argument.
 
 The composite weights the seven DQI dimensions equally — the index's conventional additive form — rather than by any measured optimum; tested, the weighting matters and the direction survives it. The seven dimensions are not one factor (the first principal factor of their polychoric matrix carries 32–33%), and that factor loads on the respect dimensions rather than on the well-formedness dimensions that carry the machine advantage — so re-running the stage-2 contrast on the factor-weighted latent score cuts it from +0.195 (t 5.65) to +0.076 (t 1.71): still positive, no longer significant. The honest statement is that "better-formed" is dimension-specific — justification and evidence carry it — and any weighting that emphasises engagement over form puts the composite contrast at the margin, which is one more reason the paper's claims are stated per dimension rather than from the index.[^rlatent]
 
-The reliability statistics cannot carry this claim by themselves — a consistently biased judge would also reproduce itself perfectly. What carries it is validity evidence: the rubric's calibration anchors are the instrument authors' own published codings, so the scale is theirs rather than the judge's; the one dimension where judge-suspicion moves the result is identified and quarantined rather than averaged in (respect_groups; Appendix E.1, §4.9); and across stages the judge's AI-guess and its quality scores move independently in both directions — higher form under suspicion in the wild pools, lower for weak models and higher for frontier ones in stage 6.
+The reliability statistics cannot carry this claim by themselves — a consistently biased judge would also reproduce itself perfectly. What carries it is validity evidence: the rubric's calibration anchors are the instrument authors' own published codings, so the scale is theirs rather than the judge's; the one dimension where judge-suspicion moves the result is identified and quarantined rather than averaged in (respect_groups; Appendix E.4, §4.9); and across stages the judge's AI-guess and its quality scores move independently in both directions — higher form under suspicion in the wild pools, lower for weak models and higher for frontier ones in stage 6.
 
-The paired evasion arms add a separate, secondary reassurance for anyone worried about the arms race specifically: rewriting under evasion pressure did not move any of the seven dimensions across 63 within-text pairs, and neither did the 39 rewrites that actually cleared the detector when graded on their own (§4.10 stage 5). A body that measures quality directly need not fear that evasion — attempted or achieved — degrades the metric it watches.
+The paired evasion arms add a separate, secondary reassurance for anyone worried about the arms race specifically: rewriting under evasion pressure did not move any of the seven dimensions across 63 within-text pairs, and neither did the 39 rewrites that actually cleared the detector when graded on their own (§4.10a stage 5). A body that measures quality directly need not fear that evasion — attempted or achieved — degrades the metric it watches.
 
 [^rlatent]: `python quality_latent.py` — polychoric matrix on the seven
     dimensions (two-step: thresholds from the marginals, pairwise ρ by ML
@@ -3117,14 +3067,13 @@ The paired evasion arms add a separate, secondary reassurance for anyone worried
     AI/Mixed vs Human with chamber FE, HC1). A full graded-response IRT
     is the remaining refinement.
 
-And it is now cheap in a way it has not been before. The instrument's
-repeat reliability sits at or above the published human inter-coder bar, on
-a rubric with published human codings as anchors. Twenty
-years ago the Discourse Quality Index required trained coders and bounded any
-study to a few hundred speeches. We graded 1,522 in the main arms without
-trained coders. That capability arrived with the same technology that broke
-detection, which is the substitution in one sentence: the machine that made
-provenance unmeasurable made quality measurable.
+Direct quality measurement is now cheap in a way it was not before. The
+instrument's repeat reliability sits at or above the published human
+inter-coder bar, and its rubric is anchored to published human codings.
+Twenty years ago the Discourse Quality Index required trained coders and
+limited studies to a few hundred speeches; the main arms here graded 1,522
+without trained coders. The same technology that weakens post-hoc provenance
+detection therefore makes quality assessment feasible at corpus scale.
 
 Deliberation is judged on the artifact, so checking the artifact suffices.
 Education is not judged on the artifact: there the text is a proxy for what
@@ -3140,6 +3089,19 @@ instrument; the version worth building is the one that is legible to the person
 being assessed.
 
 ### 7.5 The measure against the market's measure
+
+On the measurement of position itself, the classification of §4.6b sits in
+a short lineage. Erikson and Goldthorpe's EGP schema is the categorical
+standard the class arm uses; Weeden and Grusky argued class is better
+measured at the disaggregated occupation level, where it outpredicts the
+big-class schemas; Kohn and Schooler located the class–psychology link in
+occupational self-direction, closeness of supervision above all. The
+measure here keeps that direction of travel — position read from
+occupational content — and differs in two ways: it is blind-derived from
+the full descriptor universe by coders never shown the outcome, and it
+scores a level the categorical maps do not draw, distance from the
+organisational hierarchy itself — the free-work level whose preregistered
+ordering was confirmed (§4.6b).
 
 The classification result carries a point beyond stratification. The
 classical scales are the market's own summaries of occupational position —
@@ -3172,7 +3134,7 @@ that reading the register instruments the veil rather than the referent,
 so the measure and the market are pricing different things. The two
 readings disagree about what was measured and agree that it was measured
 — and the check that discriminates them is already registered (Appendix C,
-item 32): tie register intensity to productivity and success measures.
+item 33): tie register intensity to productivity and success measures.
 Signaling drag — register predicting *worse* real outcomes — favours the
 masking reading; register tracking outcomes the market's summaries miss
 favours the lossy-summary reading. Either way, the measurement point
@@ -3191,35 +3153,6 @@ or veil, the capability generalises — measures like this can now be built
 per question, blinded by construction, and checked — and every one built
 weakens "best of bad options" as an argument for reading social structure
 off prices alone.
-
-### 7.6 Measuring the human contribution against an automated counterpart
-
-The most promising direction, and the least developed. Generate what a fully
-automated system would produce given the same task and context; the human
-contribution is the residual. This is the marginal-product definition done
-properly, and it is measurable today.
-
-**The baseline must move.** The obvious objection is that the residual shrinks
-as models improve, and the obvious fix — freeze a model vintage — is wrong. It
-reproduces the error the current debate already makes, where contributions
-relative to dumb computers are treated as obviously legitimate and anything
-touching an LLM as obviously suspect. **The goalpost should move by
-construction, always incorporating the latest technology**, because that is
-what contribution means: what you added over the best available alternative. A
-shrinking residual is correct measurement, not measurement decay. Nobody
-credits long division done by hand.
-
-The one thing worth recording is *which* baseline a given measurement was taken against — metadata that keeps an old measurement interpretable, not a fixed target. This moves for the same reason measured imitation lags collapse, and is collapsing for the same reason — it is not literally the same quantity those lag measurements capture.
-
-A scope condition worth stating, because the whole moving-baseline proposal
-assumes it: the measure is affordable only where the cost of reproducing an
-intellectual result under it is close to zero. Frontier models and
-frontier-grade processes may always sit out of its reach, or be sampled only
-sparsely. But the majority of *average* human intellectual activity is well
-within it — and the case that matters most is education, in schools and
-workplaces, which will have to teach people to work productively with advanced
-intelligences and can use a continuously-recalibrated baseline to measure
-whether they are.
 
 ---
 
@@ -3291,10 +3224,12 @@ Reported because they bound what the study can claim.
     t = −1.99). Point estimates keep their signs in both panels; magnitudes
     halve out of sample.
 
-Together these say the cohort effect is real and its **mechanism is not
-exposure as we can measure it.** Items 9–12 say the same of composition at the
-*chamber* level: nothing about who a legislature recruits explains why it
-climbs. What does carry is measured on individuals, not on chambers.
+Together these results show that the cohort effect is real while its
+**mechanism is not exposure as we can measure it.** Items 8, 9 and 11 reject
+the tested composition explanations at the *chamber* level:
+skilled-immigration share, post-secondary share and cross-province education
+composition do not explain why a legislature climbs. The effects that do carry
+are measured on individuals, not chambers.
 
 18. **The altitude quadratic (registered)** — null. Within the top tercile of
     embeddedness (E = U+D), register on altitude (A = D−U) and A²: both terms
@@ -3328,14 +3263,13 @@ climbs. What does carry is measured on individuals, not on chambers.
    better than fourfold — which is the figure the paper now
    reports.[^rshrink]
 
-2. **§4.8's stage ordering** — "the shift is largest at the preference
-   stage" rested on a per-transition estimator pedestal (M9; the M3 defect
-   per stage). Corrected by three agreeing routes: SFT ≈ DPO, RLVR ≈ 0. The
-   §4.5 connection is DE-EMPHASIZED rather than withdrawn (Matthew): the
-   preference-and-demonstration stages installing the register while the
-   correctness stage does not remains an interesting association, but the
-   text no longer relies on any stage ordering, and the RLVR placebo now
-   passes its own manipulation check.
+2. **§4.8's stage ordering** — The claim that "the shift is largest at the
+   preference stage" rested on a per-transition estimator pedestal (M9; the
+   M3 defect applied separately at each stage). Three corrected routes agree:
+   SFT ≈ DPO, RLVR ≈ 0. The association with §4.5 remains, but no inference
+   now depends on ordering the stages: preference and demonstration stages
+   install the register while the correctness stage does not, and the RLVR
+   placebo passes its own manipulation check.
 
 3. **§4.6a, twice** — first written as "standing predicts the register
    downward" at t = 3–4 (unclustered provincial estimates, the study's third
@@ -3487,9 +3421,9 @@ that is recorded.
    most valuable unrun item, and it is also a limit on the present study rather
    than merely an extension (§6).
 
-2. **A register-feature instrument, and the test that would settle §4.5b.**
+2. **A register-feature instrument, and the test that would settle §4.8b.**
    Every arm in this study measures register through a *word list*, which is
-   why §4.5b's American result can be read two ways: the correlation is carried
+   why §4.8b's American result can be read two ways: the correlation is carried
    partly by managerial and topical vocabulary, and a word list cannot separate
    "models adopt American subject matter" from "models adopt the American way
    of arguing". The features that would are syntactic and stance-bearing, not
@@ -3500,7 +3434,7 @@ that is recorded.
    *dollars*.
 
    Run that instrument on two contrasts at once — base against instruct, and
-   US against UK in the pre-transformer window — and the thesis behind §4.5b
+   US against UK in the pre-transformer window — and the thesis behind §4.8b
    becomes falsifiable. **If both contrasts move the same features in the same
    direction, alignment and the American public tradition are selecting for the
    same thing.** If post-training raises hedging and inclusiveness while the
@@ -3529,10 +3463,10 @@ that is recorded.
    1,495 instrument occurrences) should be enlarged first — the §4.2 sample
    grows it mechanically as more chambers are scored.
 
-   This pairs directly with §7.6. A register-feature profile is a measurable
+   This pairs directly with item 7. A register-feature profile is a measurable
    *automated counterpart*: it says what an aligned model's stance profile
    looks like on the same task, so a speaker's distance from it is the residual
-   §7.6 asks for — and unlike a detector score it decomposes into named
+   item 7 asks for — and unlike a detector score it decomposes into named
    features rather than one number. It also gives item 1's register/substance
    split a principled rule, since the two lists are constructed by different
    criteria rather than by splitting one list in half.
@@ -3589,6 +3523,34 @@ that is recorded.
    item 5, since the human-targeting search runs inside a disclosed,
    consented frame.[^s-game]
 
+7. **Measuring the human contribution against an automated counterpart.**
+   The most promising direction, and the least developed. Generate what a fully
+   automated system would produce given the same task and context; the human
+   contribution is the residual. This is the marginal-product definition done
+   properly, and it is measurable today.
+
+   **The baseline must move.** The obvious objection is that the residual shrinks
+   as models improve, and the obvious fix — freeze a model vintage — is wrong. It
+   reproduces the error the current debate already makes, where contributions
+   relative to dumb computers are treated as obviously legitimate and anything
+   touching an LLM as obviously suspect. **The goalpost should move by
+   construction, always incorporating the latest technology**, because that is
+   what contribution means: what you added over the best available alternative. A
+   shrinking residual is correct measurement, not measurement decay. Nobody
+   credits long division done by hand.
+
+   The one thing worth recording is *which* baseline a given measurement was taken against — metadata that keeps an old measurement interpretable, not a fixed target. This moves for the same reason measured imitation lags collapse, and is collapsing for the same reason — it is not literally the same quantity those lag measurements capture.
+
+   A scope condition worth stating, because the whole moving-baseline proposal
+   assumes it: the measure is affordable only where the cost of reproducing an
+   intellectual result under it is close to zero. Frontier models and
+   frontier-grade processes may always sit out of its reach, or be sampled only
+   sparsely. But the majority of *average* human intellectual activity is well
+   within it — and the case that matters most is education, in schools and
+   workplaces, which will have to teach people to work productively with advanced
+   intelligences and can use a continuously-recalibrated baseline to measure
+   whether they are.
+
 [^s-game]: Design detail in `plans/S10-detection-game.md`.
 
 
@@ -3597,7 +3559,7 @@ that is recorded.
 returned null (Appendix A); the informative next evidence is a different *kind*,
 not a fourth operationalisation of the same kind.
 
-7. **What drives the between-chamber spread — currently unexplained.** Chamber
+8. **What drives the between-chamber spread — currently unexplained.** Chamber
    prevalence ranges better than fourfold (shrunken 4.3% to 18.3%), and the gaps are
    not attributed to any measured cause. The sharpest case is within one
    legislature: US House 12.1% vs US Senate 1.8%, same country, same era, same
@@ -3609,7 +3571,7 @@ not a fourth operationalisation of the same kind.
    (order-of-business tags in the Congressional Record) would let the House
    rate be decomposed and is the concrete next step.
 
-8. **Cross-country onset timing.** Within-country geography is exhausted — by
+9. **Cross-country onset timing.** Within-country geography is exhausted — by
    2006 everywhere in Canada and the US was past the inflection, leaving about
    five points of spread. If the climb tracks immersion it should *start later*
    in late-adopting countries; Poland, Romania, Brazil and Mexico lag the UK by
@@ -3620,20 +3582,20 @@ not a fourth operationalisation of the same kind.
    corpus vehicle. **Deferred by Matthew during the study** in favour of
    staying with the existing English word list; recorded here because the
    English fallbacks it was traded against have all since been run.
-9. **A population-wide, age-stratified corpus outside politics.** The
+10. **A population-wide, age-stratified corpus outside politics.** The
    generational-language-change rival predicts the same shift in *any*
    age-stratified corpus, with politics incidental. The within-legislature leg
    of that test was run — birth decade survives occupation and education, both
    of which run the wrong way — but the external leg has never been attempted
    and no such corpus has been named.
-10. **The same people's non-parliamentary writing before they entered
+11. **The same people's non-parliamentary writing before they entered
    politics.** Directly tests whether the register is acquired before political
    life. Not reachable from parliamentary archives, which is why it was set
    aside; it remains the cleanest available test of the cohort story.
 
 **C. Corpora and arms already within reach.**
 
-11. **A pre-AI tribute control — the one specificity gap we know about.** Every
+12. **A pre-AI tribute control — the one specificity gap we know about.** Every
    chamber bought a 60-segment pre-2022 control, and 1,260 of 1,260 read Human,
    including six ceremonial and procedural CA-FED segments. But **no tribute or
    eulogy is in any of them**, and two of the five Oral Questions flags are
@@ -3644,42 +3606,42 @@ not a fourth operationalisation of the same kind.
    chamber. Same design as every control already bought, roughly $5, and it
    either closes the gap or produces the most interesting result in the arm.
 
-12. **An LLM genre classifier, to make the genre ladder a panel result.** The
+13. **An LLM genre classifier, to make the genre ladder a panel result.** The
    §4.3 ladder — the more preparable the format, the more machine drafting — is
    measured in federal Canada alone, because it is the only chamber whose
    record carries order of business in a usable field. The `section` field is
    empty in 43 of 53 chamber files and holds topic titles in the rest
-   (Appendix E.4). A classifier labelling segments by order of business
+   (Appendix E.7). A classifier labelling segments by order of business
    (scripted statement / debate / question) from the text and its surrounding
    context would lift that constraint and turn a one-chamber ladder into a
    cross-chamber one — and genre is the control the quality arm most wants
    (§4.9) and the one the panel currently cannot hold fixed. Validate against
    federal Canada, where the true labels are known.
 
-13. **The written arm of the US Congressional Record.** Extensions of Remarks
+14. **The written arm of the US Congressional Record.** Extensions of Remarks
    is separable from floor speech and is currently dropped at
    extraction.[^s-usx] It mirrors the closest prior work directly — Suvanto
    et al. studied *written* parliamentary text and explicitly avoided
    transcribed speech — so running it turns a contrast of methods into a
    head-to-head on comparable material.
-14. **NSW Written Community Recognition Statements**, currently excluded to keep
+15. **NSW Written Community Recognition Statements**, currently excluded to keep
    the corpus spoken-only. Short, formulaic, offline-drafted text is exactly
    where machine writing should surface first, and the section grew from 4.7%
    of raw words in 2018 to 29–32% in 2025-26 — an uncollected datum in its own
    right. Recoverable from the same PDFs as a separate stream.
-15. **Genre-resolved US prevalence.** Canada and the provinces carry genre
+16. **Genre-resolved US prevalence.** Canada and the provinces carry genre
    metadata and the US does not, which is why the US sits out §4.3. Recovering
    One Minute Speeches, Special Orders and Morning Business needs re-extraction
    against CREC granule metadata.
-16. **Coverage gaps that need a non-English instrument**: 199k words of
+17. **Coverage gaps that need a non-English instrument**: 199k words of
    French-original New Brunswick debate, never scored by anything; Quebec,
    dropped from the province gradient for the same reason; and New Zealand,
    ranked as tractable but never built. All three are first customers for the
-   build-the-instrument-in-any-language method in item 8.
+   build-the-instrument-in-any-language method in item 9.
 
 **D. Rivals for the register trend that remain live.**
 
-17. **Staff age as the exposure measure.** Members read what staff write, so
+18. **Staff age as the exposure measure.** Members read what staff write, so
     a 70-year-old member with 24-year-old staff has young exposure: on this
     rival's account the exposed unit is the office, not the member, and member
     age is the wrong measure of it. Legislative staff are young and
@@ -3689,14 +3651,14 @@ not a fourth operationalisation of the same kind.
     congressional staff records (paid) and House Statements of Disbursements
     (names, salaries, tenure and salary as seniority proxies). Neither has
     been pursued.
-18. **A role-controlled UK specification.** The two UK specs fail in opposite
+19. **A role-controlled UK specification.** The two UK specs fail in opposite
     directions — the full corpus has a composition problem, and the
     within-speaker subset has a role problem, since those MPs lived through a
     change of government and frontbench speech is more formal and more scripted
     by function. The fix is a formality set defined by function rather than
     hand-picked (words that rise with frontbench status *in the pre-period
     only*), restricted to MPs whose frontbench status did not change.
-19. **Candidate selection for media performance**, named as a compositional
+20. **Candidate selection for media performance**, named as a compositional
     rival and never given a test or a data source. And the
     **professionalised-communications** rival — message discipline and
     clip-ready speech over the same years — has only ever been tested
@@ -3706,11 +3668,11 @@ not a fourth operationalisation of the same kind.
 
 **E. The detector and evasion arm.**
 
-20. **Does the counterfactual residual behave?** Take the §4.10 pairs, generate
+21. **Does the counterfactual residual behave?** Take the §4.10a pairs, generate
     the automated counterpart for each, and check whether the residual
     separates segments we have independent reason to think were human-drafted.
     We already hold the pairs and the labels.
-21. **Do watermarks survive our search?** The v3 contrastive attack targeted
+22. **Do watermarks survive our search?** The v3 contrastive attack targeted
     structural features — rhythm, tricolons, anticlimactic endings — and
     Anthropic's own stated limit is that marks may not survive text "heavily
     edited, paraphrased, translated, or mixed". Our rewrites are exactly that,
@@ -3718,21 +3680,21 @@ not a fourth operationalisation of the same kind.
     sharper test than generic paraphrase. **Blocked until third-party detection
     publishes**; no query access to the verifier is what makes it the honest
     threat model when it does.
-22. **Detector access as a variable.** Re-run the search with Pangram in the
+23. **Detector access as a variable.** Re-run the search with Pangram in the
     loop rather than an Opus proxy. Our 22.5% is a floor on adversary
     capability and the gap is unmeasured.
-23. **The below-threshold residual sample** — roughly 150 segments, 33–54k
+24. **The below-threshold residual sample** — roughly 150 segments, 33–54k
     words, about $5. It bounds what the *screen* misses, which is a different
     quantity from what Pangram misses on edited text, and worth having stated
     as its own number.
-24. **Human-coded DQI subsample**, still the real validation of §7.4's claim
+25. **Human-coded DQI subsample**, still the real validation of §7.4's claim
     that the instrument is cheap *and* sound (§6).
-25. **Does anyone actually evade?** The norms argument in §7.2 rests on current
+26. **Does anyone actually evade?** The norms argument in §7.2 rests on current
     prevalence being undisguised. A chamber-level test — whether flagged text
     clusters away from the evasion signature — would turn that assumption into
     a measurement.
 
-**F. Court transcripts, and the expert-witness problem (Matthew).**
+**F. Court transcripts, and the expert-witness problem.**
 
 Legislatures are one institution where speech is the work and provenance is
 unregulated. Courts are another, and there the question has already become
@@ -3752,13 +3714,13 @@ methodology.[^r86b] The legal literature has followed.[^r86c]
 That gives a second corpus and three arms, none of which needs anything this
 study has not already built.
 
-26. **Court transcripts and filed expert reports as a corpus.** Testimony and
+27. **Court transcripts and filed expert reports as a corpus.** Testimony and
     reports are published, attributed, adversarial, and — unlike Hansard —
     already subject to a disclosure fight about provenance. The prevalence
     question transfers directly: how much filed expert opinion carries the
     register, and does it differ between the two sides of a case.
 
-27. **Whose voice does an expert speak in?** The sharper version, and the one
+28. **Whose voice does an expert speak in?** The sharper version, and the one
     the panel machinery already fits. An expert's report can read in their own
     prior voice, in an assistant's voice, or — most interesting — in the voice
     of *the firm that retained them*. The third is measurable the way this study
@@ -3770,7 +3732,7 @@ study has not already built.
     same instrument as §4.6a's, pointed at a different institution, and it has
     the advantage that the ground truth — who paid — is on the docket.
 
-28. **The replacement argument, which we should state carefully.** If the
+29. **The replacement argument, which we should state carefully.** If the
     adversarial expert system already produces opinions shaped by who is paying,
     a model that can be made to argue either side with *measurably equal effort*
     is an argument for machine expert testimony rather than against it — the
@@ -3797,7 +3759,7 @@ study has not already built.
     Impact of Generative AI and Expert Testimony," *Nova Law Review* 50, no. 3
     (2026), art. 2.
 
-**G. What the legislator panel enables beyond the register (Matthew).**
+**G. What the legislator panel enables beyond the register.**
 
 Collecting covariates for this study produced something with uses well outside
 it: birth year, education, prior occupation, EGP class and Wikipedia prominence
@@ -3806,7 +3768,7 @@ every word each of them spoke. The register was the reason to build it; it is
 not the only thing it can answer. Two families of question follow, and they
 differ in how novel they are likely to be.
 
-29. **Class dynamics against proxies for power.** Whether the class structure
+30. **Class dynamics against proxies for power.** Whether the class structure
     visible in speech also appears in outcomes: which members' bills pass, who
     sits on the prestigious committees (public accounts, finance, rules), who
     is called and who speaks longest, who reaches the frontbench and how fast.
@@ -3819,7 +3781,7 @@ differ in how novel they are likely to be.
     turns up. Committee rosters and division records are the collection cost;
     both are published, neither is in our corpus yet.
 
-30. **Speech classified by who it is addressed to — the dyadic turn.** The
+31. **Speech classified by who it is addressed to — the dyadic turn.** The
     more likely to be novel, precisely because of the effort. Every quality
     measure in this study scores a speech in isolation. The interesting
     question is relational: **does the quality and respect of a response depend
@@ -3845,7 +3807,7 @@ differ in how novel they are likely to be.
     legislatures rather than about machines — which is a reason to treat it as
     its own study rather than a further section here.
 
-31. **The unconstrained occupational model**, deferred out of the
+32. **The unconstrained occupational model**, deferred out of the
     occupational preregistration on 2026-08-18 so the confirmatory
     test can be run and closed on its own.[^s-prereg2] Train a maximally
     free model over all
@@ -3863,7 +3825,7 @@ differ in how novel they are likely to be.
     it succeeds, this asks what the composite left on the table; if it fails, it
     asks whether anything occupational predicts at all.
 
-32. **From register to cost: the signaling-drag hypothesis (Matthew,
+33. **From register to cost: the signaling-drag hypothesis (Matthew,
     2026-08-18).** The occupational study's conclusion names the register as
     something like a **corporate-drone register** — the speech of the insulated
     organizational middle, prose produced to demonstrate accountability rather
@@ -3879,10 +3841,10 @@ differ in how novel they are likely to be.
     language displacing object language — because one underlying posture
     (answering upward, insulated from outcomes) generates all of them. The
     quality arm's DQI machinery is a starting point for the speech side;
-    detector-independent measures (Appendix C B) matter doubly here, since the claim
-    is about the behavior, not about any one detector's opinion of it.
+    the detector-independent moves in group B above matter doubly here, since
+    the claim is about the behavior, not about any one detector's opinion of it.
 
-33. **The monitor: measurement as the aid, machine intelligence as the
+34. **The monitor: measurement as the aid, machine intelligence as the
     measurer (Matthew, 2026-08-18).** If the signaling family is real and
     detectable, a tool follows: an automated monitor that continuously scores
     an organization's communication for signaling-over-substance behaviors and
@@ -3902,7 +3864,7 @@ differ in how novel they are likely to be.
     of workers by another name — deployment questions about consent and
     who reads the dashboard are part of the design, not an afterthought.
 
-34. **The search for the register itself (Matthew, 2026-08-18 — planned as
+35. **The search for the register itself (Matthew, 2026-08-18 — planned as
     S20[^s-s20]).** Everything above measures against
     one register, and §6's calibration names the cost: a single thin index
     attenuates every correlation. S20 inverts the search — for each
@@ -3921,7 +3883,7 @@ differ in how novel they are likely to be.
 
 [^s-s20]: `plans/S20-register-search.md`.
 
-35. **How does the register spread? (Matthew, 2026-08-19.)** Pin down the
+36. **How does the register spread? (Matthew, 2026-08-19.)** Pin down the
     transmission mechanism: does the register **arrive with individuals and
     spread from there** (carriers seed local contagion — colleagues exposed
     to them drift faster), or does **the rate of change in other individuals
@@ -3945,7 +3907,7 @@ differ in how novel they are likely to be.
     freedom. A behavior that spreads ambiently is governed at its source
     (training data, style guides, institutional environments); one that
     spreads person-to-person invites policing of persons. Knowing which is
-    which is itself the oversight product (see item 33). One note on the
+    which is itself the oversight product (see item 34). One note on the
     word *policing* (Matthew, 2026-08-19): at the individual level, the
     mechanism for imperceptible, minimal-control policing already exists —
     **control over the LLM or otherwise computerized outputs the individual
@@ -3957,7 +3919,7 @@ differ in how novel they are likely to be.
     per-individual steering one, and the difference between them is
     consent and visibility, not capability.
 
-36. **Human-rater elicitation of the folk image (Matthew, 2026-08-27; gated
+37. **Human-rater elicitation of the folk image (Matthew, 2026-08-27; gated
     on a journal-submission decision).** The folk ladder's element
     signatures came from machine coders — aggregates of human expression,
     queried as such. A Prolific-style panel (200–400 quota-matched raters
@@ -3990,7 +3952,195 @@ verification pass had looked in the wrong script — so their footnotes name the
 right one explicitly. Everything unmarked was computed or re-verified on
 2026-08-09/11.
 
-#### The classification's element signatures
+### D.1 Cross-route reproduction of the detector
+
+Web dashboard and Bulk API agree **20/20 including all six Mixed** on
+identical text when the model is named explicitly, and disagree on 9/20 when
+it is not (§3.2). All 4,258 verdicts in this study are Pangram 4 by either
+route, and `pangram_p4_verdicts.csv` records which.
+
+### D.2 Independent re-analysis
+
+Stage 0's comparison and both stages' regressions were recomputed from the
+raw result files by a second party who did not run the grading, and reproduce
+to the reported precision.
+
+### D.3 The Opus screen tracks Pangram
+
+A blinded LLM screen, run date-blind over the full corpus (37,801 segments),
+separates Pangram's AI and human classes at **AUC 0.954** [0.934, 0.971] on
+the 618-segment overlap.[^r44dep]
+
+| Pangram verdict | n | mean Opus score |
+|---|---|---|
+| AI | 78 | 50.9 |
+| Mixed | 26 | 44.8 |
+| Human | 514 | **11.9** |
+
+The pool is a case-control mixture whose human class is drawn partly from
+pre-2023 text. Those observations are *provably* pre-LLM and therefore clean
+negatives, but they are also easier to distinguish from current machine text.
+Restricting the negatives to 2023-and-later contemporary speech lowers the AUC
+to **0.940** [0.915, 0.961]. Contemporary human speech is the harder and more
+operationally relevant class to separate, as the permeation finding (§4.7)
+predicts; the restricted estimate therefore gives the more demanding
+assessment of the screen.
+
+[^r44dep]: `python opus_screen_auc.py`. The deployed screen is
+    `opus_screen_full.js` (473 batches of 40), distinct from the lean
+    validation run used in the effort A/B in Appendix D.4; the two differ in
+    score level (mean 34.3 vs 26.5) but not in discrimination. All labels are
+    Pangram 4.
+
+### D.4 Reasoning effort in the Opus screen
+
+**Reasoning effort buys nothing here.** The screen was tuned and validated at
+`effort=low`, and low had never been compared against anything. Re-run on the
+241-segment labelled pool with the prompt and batching held byte-identical (all
+AUCs against Pangram 4):
+
+| run | AUC | 95% CI |
+|---|---|---|
+| archived low | 0.948 | [0.920, 0.973] |
+| fresh low (replicate) | 0.951 | [0.923, 0.974] |
+| **max** | **0.942** | [0.911, 0.968] |
+
+The low-effort run was replicated so the effort comparison has a noise floor.
+A paired bootstrap of max − mean(low) gives **−0.007**, 95% CI
+**[−0.023, +0.007]**: centred below zero, and the whole interval sits below
+even the +0.015 the weaker open model gains from reasoning, let alone Qwen's
++0.172. Effects below ~0.03 AUC are outside this design's resolution.
+Per-segment correlations agree: low-vs-low r = +0.976, low-vs-max +0.959 and
++0.960 — max ranks the same and is *more decisive on the human class* (it
+sends more clear negatives to the floor), not a different scorer.
+
+Against a single low run, max would have looked like a small decline and been
+tempting to report as an effect. **The replicate is what makes the null
+readable.**
+
+This also cuts against the pattern in the open models, measured on the same
+pool: effort moved Qwen3-32B by **+0.172** and gpt-oss-120b by **+0.015**,
+against **−0.007** for Opus. Reasoning closes part of the gap for weak
+detectors and does nothing for a strong one — and the sharper point is that
+the frontier model is not reasoning its way to 0.95; it is recognising
+something at a glance. Practically, the screen can be run for about **4× fewer reasoning
+tokens (~2× all-in)** with no loss — a saving observed in the run logs rather than recorded in the committed AUC artifacts.[^s-effort]
+
+[^s-effort]: `opus_effort_ab.py`, `opus_effort_ab.csv`.
+
+### D.5 Bypass sample selection
+
+Four searches were run — two per chamber. The §4.10 rates use only the second
+in each chamber; the first in each was a biased sampling and is reported in
+Appendix B. Full stacks in `BYPASS_METHODOLOGY.md`.
+The four runs, and how each was seeded:
+
+
+| run | role | seeds | how the seeds were chosen | Opus's role |
+|---|---|---|---|---|
+| NB v2 blind | superseded | 40 | Pangram-AI, stratified across Opus bands | outcome |
+| **NB v3 contrastive** | **final** | 40 | same pool, contrastive exemplars added | outcome |
+| GO Opus-selected | superseded | 35 | top 48 of 600 **by Opus score**, then Pangram-AI | **selection** |
+| **GO all-31 uniform** | **final** | 31 | every Pangram positive in the uniform GO draws | outcome |
+
+The seed column is targets **searched**. An earlier version listed 38, 25 and
+27 — the counts that produced at least one variant clearing the submission
+gate — which understated the attack surface, most severely for the
+Opus-selected run where 10 of 35 targets yielded nothing. The two superseded
+runs are exactly the two biased samplings: v2 was blind and badly-seeded, and
+GO Opus-selected chose *which* texts to attack by proxy score.
+
+Two consequences carried into the text. The GO Opus-selected run regresses
+−10.3 points on re-scoring because every seed sits at the extreme of a noisy
+distribution, and it is range-restricted — it cannot contain the low band
+where New Brunswick found most of its successes, so its zero successes are
+uninformative about which texts evade (an exploratory question — Appendix B). And the GO all-31 run is the cleanest
+provenance in the study: exactly one selection step, the Pangram verdict
+itself, with no detector, lexicon, or Opus score influencing which segments
+were scanned. It is also every Government Orders positive we hold, so it is an
+exploratory replication rather than an independent rate estimate.
+
+Banding, where it appears, is always on the **mean of three independent
+re-scores**, never on the single noisy measurement used to select. Banding on
+the selection score manufactured a clean cross-chamber gradient that was an
+artifact of differential regression, and it was briefly reported before being
+caught.
+
+### D.6 Artifacts
+The committed artifacts, and what each does:
+
+
+| artifact | what it does |
+|---|---|
+| `pangram_p4_verdicts.csv` | 4,258 verdicts, all Pangram 4, with metadata |
+| `prevalence_report.py` | §4.1–§4.3, Wilson CIs, Rogan–Gladen |
+| `nb_p3_vs_p4.py` | §4.1 model-tier comparison |
+| `api_route_check.py` | route/model equivalence test |
+| `transcript_regime_check.py` | §2.1, writes `transcript_regime.csv` |
+| `build_pangram_expansion.py` | sampling, cleaning, regime floors |
+| `in_time_placebo.py` | §3.3, the test that demoted the lexicon arm |
+| `long_trend.py` | §4.5 series and its 1994 trough |
+| `cohort_vs_period.py`, `formation_window.py` | §4.6 (birth vs period) |
+| `covariate_study.py` | §4.6a class and education, member level (`--build-cache` first, ~10 min) |
+| `class_origin.py` | §4.6a EGP/NS-SEC arithmetic over the checked-in coding |
+| `class_markedness.py`, `build_class_word_year.py` | §4.6d chase-and-flight |
+| `build_member_vectors.py`, `vector_analysis.py` | §4.6d word-mix geometry; VECTOR-ANALYSIS.md is the full log |
+| `claude_gen/`, `claude_gen_old/`, `rlhf_gen_180/` | generated traces behind the family-signature table (audited) |
+| `provinces/occupation_coding.json` + `OCCUPATION_CODING.md` | the coding itself, with its 96.4% agreement rate |
+| `wiki_depth.py` | article length via Wikidata QID → MediaWiki, the notability control |
+| `build_allsource_merge.py` | rebuilds `member_allsource.json` from the workflow journal |
+| `CLASS-REGISTER-LITERATURE.md` | §4.6d citation and verification ledger, with suspect entries flagged |
+| `band_coverage_check.py` | standing check that every length band is sampled at its chamber's own rate |
+| `olmo_ladder.py` | §4.8 ladder stages |
+| `rlhf_pref_compile.py` | §4.8 **+0.387** well-measured, 3 families at 1,600 prompts |
+| `rlhf_pref_analyze.py` | the superseded +0.42 run, with null calibration (not `align_ratio.py`) |
+| `align_ratio.py` | §4.8 Hansard-drift arm |
+| `word_context_delta.py` | §4.7 in-context permeation |
+| `bypass_report.py` | §4.10 bypass: final two runs (primary), superseded two shown separately, band check |
+| `go_reflip_fractions.json` + `nb_`/`bp_` | strict re-scores behind the 11.1% |
+| `quality_expansion/` | §4.9 and §4.10a, self-contained (`RUNME.md`) |
+| `BYPASS_METHODOLOGY.md` | §4.10 selection filters, per sample |
+| `PRIOR_ART.md`, `ai_policy_scan.md` | §5, §7.3 |
+
+### D.7 What this was run on
+
+Three resources, and the commercial detector is the
+smallest of them.
+
+*Pangram*, a commercial detector, for all 4,258 verdicts — the prevalence,
+calibration, genre and bypass-outcome numbers.
+
+*A frontier-model subscription* (Claude Code) for everything that needed a
+frontier model rather than a detector. Which model did what matters here and is
+not interchangeable:
+
+| arm | model | effort |
+|---|---|---|
+| Corpus-wide screen (Appendix D.3), effort A/B (Appendix D.4) | Claude Opus | low, and max in the A/B |
+| Bypass search: scoring / rewriting / hypotheses (§4.10) | Claude Opus | low / medium / high |
+| DQI grading, stages 1-5 (§4.9, §4.10a) | **Claude Fable 5** | default |
+| DQI grading, stage 6 (§4.9a) | **Claude Opus** | medium |
+| Synthetic sensitivity pilot (40 speeches, set aside — §4.1, Appendix B) | Mistral-7B | default |
+| Analysis, verification, adversarial review | Claude Opus | varies |
+
+The screen/grader split is load-bearing rather than incidental. §4.9 reports
+that the screen's `ai_guess` and the grading judge's independent `ai_guess`
+correlate at r = +0.758, and treats that as a leakage problem. It is one — but
+it is a correlation between **two different models**, which makes it a fact
+about the shared style signal rather than an artifact of one model agreeing
+with itself.
+
+*An NVIDIA DGX Spark (GB10)* for the open-weight work: the six-detector survey
+that established the free instruments do not work on this register, the OLMo-2
+post-training ladder, the paired base-versus-instruct generation behind §4.8,
+the in-context permeation scoring in §4.7, and the open-model band screens.
+
+Only the first is metered per document. The other two are the larger share of
+the work and are not substitutable by spending more with the detector vendor.
+Anyone holding all three can repeat the study; a Pangram subscription alone
+reproduces the prevalence arm and nothing else.
+
+### D.8 The classification's element signatures
 
 The folk ladder's consensus signature (§3.4): every O\*NET element, its
 level, consensus sign, and how many of the eighteen blind coders nominated
@@ -4161,186 +4311,49 @@ consensus elements only):
 | Freedom to Make Decisions | `4.C.3.a.4` | U upward | yes | 3 |
 | Determine Tasks, Priorities and Goals | `4.C.3.b.8` | U upward | yes | 3 |
 
-
-### D.1 Cross-route reproduction of the detector
-
-Web dashboard and Bulk API agree **20/20 including all six Mixed** on
-identical text when the model is named explicitly, and disagree on 9/20 when
-it is not (§3.2). All 4,258 verdicts in this study are Pangram 4 by either
-route, and `pangram_p4_verdicts.csv` records which.
-
-### D.2 Independent re-analysis
-
-Stage 0's comparison and both stages' regressions were recomputed from the
-raw result files by a second party who did not run the grading, and reproduce
-to the reported precision.
-
-### D.3 Reasoning effort in the Opus screen
-
-**Reasoning effort buys nothing here.** The screen was tuned and validated at
-`effort=low`, and low had never been compared against anything. Re-run on the
-241-segment labelled pool with the prompt and batching held byte-identical (all
-AUCs against Pangram 4):
-
-| run | AUC | 95% CI |
-|---|---|---|
-| archived low | 0.948 | [0.920, 0.973] |
-| fresh low (replicate) | 0.951 | [0.923, 0.974] |
-| **max** | **0.942** | [0.911, 0.968] |
-
-The low-effort run was replicated so the effort comparison has a noise floor.
-A paired bootstrap of max − mean(low) gives **−0.007**, 95% CI
-**[−0.023, +0.007]**: centred below zero, and the whole interval sits below
-even the +0.015 the weaker open model gains from reasoning, let alone Qwen's
-+0.172. Effects below ~0.03 AUC are outside this design's resolution.
-Per-segment correlations agree: low-vs-low r = +0.976, low-vs-max +0.959 and
-+0.960 — max ranks the same and is *more decisive on the human class* (it
-sends more clear negatives to the floor), not a different scorer.
-
-Against a single low run, max would have looked like a small decline and been
-tempting to report as an effect. **The replicate is what makes the null
-readable.**
-
-This also cuts against the pattern in the open models, measured on the same
-pool: effort moved Qwen3-32B by **+0.172** and gpt-oss-120b by **+0.015**,
-against **−0.007** for Opus. Reasoning closes part of the gap for weak
-detectors and does nothing for a strong one — and the sharper point is that
-the frontier model is not reasoning its way to 0.95; it is recognising
-something at a glance. Practically, the screen can be run for about **4× fewer reasoning
-tokens (~2× all-in)** with no loss — a saving observed in the run logs rather than recorded in the committed AUC artifacts.[^s-effort]
-
-[^s-effort]: `opus_effort_ab.py`, `opus_effort_ab.csv`.
-
-### D.4 Bypass sample selection
-
-Four searches were run — two per chamber. The §4.10 rates use only the second
-in each chamber; the first in each was a biased sampling and is reported in
-Appendix B. Full stacks in `BYPASS_METHODOLOGY.md`.
-The four runs, and how each was seeded:
-
-
-| run | role | seeds | how the seeds were chosen | Opus's role |
-|---|---|---|---|---|
-| NB v2 blind | superseded | 40 | Pangram-AI, stratified across Opus bands | outcome |
-| **NB v3 contrastive** | **final** | 40 | same pool, contrastive exemplars added | outcome |
-| GO Opus-selected | superseded | 35 | top 48 of 600 **by Opus score**, then Pangram-AI | **selection** |
-| **GO all-31 uniform** | **final** | 31 | every Pangram positive in the uniform GO draws | outcome |
-
-The seed column is targets **searched**. An earlier version listed 38, 25 and
-27 — the counts that produced at least one variant clearing the submission
-gate — which understated the attack surface, most severely for the
-Opus-selected run where 10 of 35 targets yielded nothing. The two superseded
-runs are exactly the two biased samplings: v2 was blind and badly-seeded, and
-GO Opus-selected chose *which* texts to attack by proxy score.
-
-Two consequences carried into the text. The GO Opus-selected run regresses
-−10.3 points on re-scoring because every seed sits at the extreme of a noisy
-distribution, and it is range-restricted — it cannot contain the low band
-where New Brunswick found most of its successes, so its zero successes are
-uninformative about which texts evade (an exploratory question — Appendix B). And the GO all-31 run is the cleanest
-provenance in the study: exactly one selection step, the Pangram verdict
-itself, with no detector, lexicon, or Opus score influencing which segments
-were scanned. It is also every Government Orders positive we hold, so it is an
-exploratory replication rather than an independent rate estimate.
-
-Banding, where it appears, is always on the **mean of three independent
-re-scores**, never on the single noisy measurement used to select. Banding on
-the selection score manufactured a clean cross-chamber gradient that was an
-artifact of differential regression, and it was briefly reported before being
-caught.
-
-### D.5 Artifacts
-The committed artifacts, and what each does:
-
-
-| artifact | what it does |
-|---|---|
-| `pangram_p4_verdicts.csv` | 4,258 verdicts, all Pangram 4, with metadata |
-| `prevalence_report.py` | §4.1–§4.3, Wilson CIs, Rogan–Gladen |
-| `nb_p3_vs_p4.py` | §4.1 model-tier comparison |
-| `api_route_check.py` | route/model equivalence test |
-| `transcript_regime_check.py` | §2.1, writes `transcript_regime.csv` |
-| `build_pangram_expansion.py` | sampling, cleaning, regime floors |
-| `in_time_placebo.py` | §3.3, the test that demoted the lexicon arm |
-| `long_trend.py` | §4.5 series and its 1994 trough |
-| `cohort_vs_period.py`, `formation_window.py` | §4.6 (birth vs period) |
-| `covariate_study.py` | §4.6a class and education, member level (`--build-cache` first, ~10 min) |
-| `class_origin.py` | §4.6a EGP/NS-SEC arithmetic over the checked-in coding |
-| `class_markedness.py`, `build_class_word_year.py` | §4.6d chase-and-flight |
-| `build_member_vectors.py`, `vector_analysis.py` | §4.6d word-mix geometry; VECTOR-ANALYSIS.md is the full log |
-| `claude_gen/`, `claude_gen_old/`, `rlhf_gen_180/` | generated traces behind the family-signature table (audited) |
-| `provinces/occupation_coding.json` + `OCCUPATION_CODING.md` | the coding itself, with its 96.4% agreement rate |
-| `wiki_depth.py` | article length via Wikidata QID → MediaWiki, the notability control |
-| `build_allsource_merge.py` | rebuilds `member_allsource.json` from the workflow journal |
-| `CLASS-REGISTER-LITERATURE.md` | §4.6d citations, **unverified**, with the suspect entries flagged |
-| `band_coverage_check.py` | standing check that every length band is sampled at its chamber's own rate |
-| `olmo_ladder.py` | §4.8 ladder stages |
-| `rlhf_pref_compile.py` | §4.8 **+0.387** well-measured, 3 families at 1,600 prompts |
-| `rlhf_pref_analyze.py` | the superseded +0.42 run, with null calibration (not `align_ratio.py`) |
-| `align_ratio.py` | §4.8 Hansard-drift arm |
-| `word_context_delta.py` | §4.7 in-context permeation |
-| `bypass_report.py` | §4.10 bypass: final two runs (primary), superseded two shown separately, band check |
-| `go_reflip_fractions.json` + `nb_`/`bp_` | strict re-scores behind the 11.1% |
-| `quality_expansion/` | §4.9 and §4.10, self-contained (`RUNME.md`) |
-| `BYPASS_METHODOLOGY.md` | §4.10 selection filters, per sample |
-| `PRIOR_ART.md`, `ai_policy_scan.md` | §5, §7.3 |
-
-**What this was run on.** Three resources, and the commercial detector is the
-smallest of them.
-
-*Pangram*, a commercial detector, for all 4,258 verdicts — the prevalence,
-calibration, genre and bypass-outcome numbers.
-
-*A frontier-model subscription* (Claude Code) for everything that needed a
-frontier model rather than a detector. Which model did what matters here and is
-not interchangeable:
-
-| arm | model | effort |
-|---|---|---|
-| Corpus-wide screen (§4.4), effort A/B (Appendix D) | Claude Opus | low, and max in the A/B |
-| Bypass search: scoring / rewriting / hypotheses (§4.10) | Claude Opus | low / medium / high |
-| DQI grading, stages 1-5 (§4.9, §4.10) | **Claude Fable 5** | default |
-| DQI grading, stage 6 (§4.9a) | **Claude Opus** | medium |
-| Synthetic sensitivity pilot (40 speeches, set aside — §4.1, Appendix B) | Mistral-7B | default |
-| Analysis, verification, adversarial review | Claude Opus | varies |
-
-The screen/grader split is load-bearing rather than incidental. §4.9 reports
-that the screen's `ai_guess` and the grading judge's independent `ai_guess`
-correlate at r = +0.758, and treats that as a leakage problem. It is one — but
-it is a correlation between **two different models**, which makes it a fact
-about the shared style signal rather than an artifact of one model agreeing
-with itself.
-
-*An NVIDIA DGX Spark (GB10)* for the open-weight work: the six-detector survey
-that established the free instruments do not work on this register, the OLMo-2
-post-training ladder, the paired base-versus-instruct generation behind §4.8,
-the in-context permeation scoring in §4.7, and the open-model band screens.
-
-Only the first is metered per document. The other two are the larger share of
-the work and are not substitutable by spending more with the detector vendor.
-Anyone holding all three can repeat the study; a Pangram subscription alone
-reproduces the prevalence arm and nothing else.
-
 ## Appendix E — Robustness and sensitivity checks
 
-#### The provincial class estimates (the discovery record)
+### E.1 The constant-window register trend, chamber by chamber
+
+| chamber | gap 2006, per 100k words | gap 2026, per 100k words | change | per year |
+|---|---|---|---|---|
+| UK Commons | 655 | 1,444 | ×2.20 | **+4.0%/yr** |
+| Scotland | 605 | 1,058 | ×1.75 | +2.8%/yr |
+| Northern Ireland | 739 | 1,165 | ×1.58 | +2.3%/yr |
+| Wales | 1,276 | 1,961 | ×1.54 | +2.2%/yr |
+| Saskatchewan | 1,612 | 2,145 | ×1.33 | +1.4%/yr |
+| British Columbia | 1,542 | 2,049 | ×1.33 | +1.4%/yr |
+| Manitoba | 1,636 | 2,136 | ×1.31 | +1.3%/yr |
+| Western Australia | 1,366 | 1,751 | ×1.28 | +1.3%/yr |
+| Victoria | 1,619 | 2,043 | ×1.26 | +1.2%/yr |
+| Queensland | 1,746 | 2,199 | ×1.26 | +1.2%/yr |
+| Tasmania | 1,631 | 2,049 | ×1.26 | +1.1%/yr |
+| Nova Scotia | 1,811 | 2,265 | ×1.25 | +1.1%/yr |
+| New South Wales | 1,276 | 1,593 | ×1.25 | +1.1%/yr |
+| Alberta | 1,746 | 2,125 | ×1.22 | +1.0%/yr |
+| Ontario | 1,707 | 2,013 | ×1.18 | +0.8%/yr |
+| Newfoundland & Labrador | 1,436 | 1,532 | ×1.07 | +0.3%/yr |
+| **US Senate** | 1,590 | 1,562 | ×0.98 | −0.1%/yr |
+| Prince Edward Island | 1,589 | 1,523 | ×0.96 | −0.2%/yr |
+| **US House** | 1,794 | 1,709 | ×0.95 | −0.2%/yr |
+
+### E.2 The provincial class estimates (the discovery record)
 
 Coding each member's pre-political occupation into the
 Erikson–Goldthorpe–Portocarero schema — two independent Claude passes over a
 shared rubric, blind to each other, 96.4% raw agreement, disagreements
-adjudicated[^s-coding] — gives 897 members and 5,294
+adjudicated[^s-coding] — gives 897 members and 5,294 member-years, 57.5% of
+the words that reach a named non-chair speaker in the eight Canadian
+provinces.
 
 [^s-coding]: `provinces/OCCUPATION_CODING.md` records the workflow and every
     rubric ambiguity.
 
-member-years, 57.5% of the words that reach a named non-chair speaker in the
-eight Canadian provinces.
-
 Register rate against EGP class, year and province fixed effects, weighted by
 words, baseline class I:
 
-| class | | vs I | t | members |
-|---|---|---|---|---|
+| EGP class | description | contrast vs class I | t | members |
+|---|---|---:|---:|---:|
 | III | routine non-manual | **+2.00** | 4.98 | 29 |
 | II | lower service | **+0.84** | 4.23 | 435 |
 | IVab | petty bourgeoisie | **+0.80** | 3.24 | 180 |
@@ -4362,7 +4375,29 @@ professional 35.5 / intermediate 35.3 / working 34.9 — a null. The
 seven-class schema is not a refinement here, it is the difference between a
 finding and nothing.[^r46d]
 
-#### Education: the provincial ladder (did not replicate; see above)
+Class III's premium is a cohort effect and should not be read as class.
+Controlling birth year alone moves it from +1.03 to −0.32, and the mechanism
+is compositional: III's median birth year is 1974 against 1956–1960 for every
+other class — routine non-manual members are the chamber's young class, by
+sixteen years. The rest of the curve is age-robust on the same subsample: II
+and IVab strengthen slightly under the control (+0.68, +0.91), VIIab holds at
+−1.51, so the peak sits at IVab/II rather than III and the crossover reading
+is unchanged.
+
+In the provincial discovery table above, classes III and VIIab rest on
+29 and 16 members. Their standard errors treat repeated years of the same
+person as independent, so the true intervals are wider than shown and those
+two rows should not be quoted as significant. II and IVab, at 435 and 180
+members, carry that provincial table. The panel table in §4.6a is a different
+estimand: III 147, VIIab 109, II 2,049.
+
+[^r46d]: `python covariate_study.py`, `python class_origin.py --dist`. Coding
+    workflow and rubric ambiguities in `provinces/OCCUPATION_CODING.md`; the
+    adjudicators' fifteen flagged ambiguities cluster on exactly the I/II and
+    service/manual cuts the schema turns on, which is a caveat on the coding
+    and not on the register measurement.
+
+### E.3 Education: the provincial ladder (did not replicate at panel scale; Appendix A item 16)
 
 Education behaves the same way once the ladder is separated from the
 professional track. On the academic rungs alone — secondary, college,
@@ -4374,7 +4409,11 @@ degree outranks a bachelor's on any ordering, so that dip cannot be attainment;
 it is the same class-I effect arriving through a second instrument.
 
 
-### E.1 The judge-leakage control (documented, run, not adopted)
+Both effects leave cohort intact. Birth decade runs **+1.20 to +1.36 per
+decade** in every specification here, larger than any class or education
+contrast.
+
+### E.4 The judge-leakage control (documented, run, not adopted)
 
 The grading rubric scores an `ai_guess` alongside the seven DQI dimensions,
 and `README.md`/`RUNME.md` describe a test of it: *if the quality differences
@@ -4424,7 +4463,7 @@ documentation named; that control is nonetheless not a clean instrument, and
 the only unconfounded fixes — a human-coded subsample, or grading
 style-normalised text — remain future work.
 
-### E.2 Prominence (Wikipedia article length) on the full panel
+### E.5 Prominence (Wikipedia article length) on the full panel
 
 The §4.6d prominence effect was first estimated from the Canadian provinces at
 member-year level (−0.75 per 1,000, t −6.2), which carried the same
@@ -4434,20 +4473,19 @@ against the full member population; HC1), with article length fetched for the
 tier-1 chambers from their evidence-URL titles (`build_t1_wiki_depth.py`,
 3,999 of 4,008 resolved) and joined to the provincial fetch:
 
-**There is no usable pooled slope, and the appendix no longer prints one.** An
-earlier version of this section reported prominence as −0.033σ per log-byte
-across 13 chambers and concluded that the effect "replicates" with the same sign
-everywhere. Both the tier-1 and pooled figures had the wrong sign, and the
-deeper problem was the estimand: a single slope assumes a gradient, and only
-some chambers have one. With all 22 chambers now carrying article lengths
+**There is no usable pooled slope.** An earlier estimate of −0.033σ per
+log-byte across 13 chambers, taken to show that the effect replicates with the
+same sign everywhere, is the wrong estimand: a single slope assumes a
+gradient, and only some chambers have one. Both the tier-1 and pooled figures
+had the wrong sign. With all 22 chambers carrying article lengths
 (6,896 members, 99% coverage after the 2026-08-17 fetch) the pooled quintiles
 are flat noise — +0.003, −0.067, −0.070, +0.023, −0.059 — so a linear
-coefficient over the pooled panel summarises nothing. E.3 gives the buckets,
+coefficient over the pooled panel summarises nothing. E.6 gives the buckets,
 which is the only form in which this variable says anything. The provincial
 member-year estimate that started this arm (−0.75 per 1,000) was inflated by
 the same word-weighting as the class arm and is superseded.
 
-### E.3 Prominence in buckets, which is how it should be read
+### E.6 Prominence in buckets, which is how it should be read
 
 A linear coefficient assumes a gradient. Quintiles of log article length against
 mean within-chamber register z show that the chambers split into two shapes, and
@@ -4485,7 +4523,7 @@ buckets and why no pooled coefficient is quoted anywhere. †[^rpb]
     the MediaWiki API via `build_t1_wiki_depth.py`, run over the tier-1 set, the
     provincial fetch and the nine new chambers (2,310 of 2,315 resolved).
 
-### E.4 Is the cohort gradient ministerial office?
+### E.7 Is the cohort gradient ministerial office?
 
 Ministers read departmental text, which is more prepared and more formal, so if
 later-born members were likelier to hold office the birth gradient in §4.6
