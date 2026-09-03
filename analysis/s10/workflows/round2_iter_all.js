@@ -224,11 +224,19 @@ const ITER = (args && args.iteration) || 1
 // to authorship; provenance is kept out of band so self-preference is
 // measurable. `effort` is passed through to the agent call.
 const PANELS = {
-  // wide sweep: full paper + section groups
+  // wide sweep: full paper + section groups.
+  // 2026-09-03: grok and sol are OUT, glm and muse are IN. Both departures are
+  // operational rather than about judgment. sol kept exhausting its ChatGPT Plus
+  // cap mid-run — three separate runs lost ballots to it, and in two scopes it
+  // never voted at all. grok was 64% of iteration 3's total output at 10,134
+  // tokens per ballot against sol's 486, and took 7 of that run's 14
+  // data-gate rejections on 48% of the proposals. The replacements route through
+  // OpenRouter, which is metered credits with no session cap, so a run cannot be
+  // cut in half by a quota resetting three hours out.
   '1': [
     { id: 'opus-5-med',   type: 'sub-anthropic-high',  family: 'anthropic', model: 'work/claude-opus-5',      effort: 'medium' },
-    { id: 'sol',          type: 'sub-openai-mid',      family: 'openai',    model: 'chatgpt/gpt-5.6-sol' },
-    { id: 'grok-4.6',     type: 'sub-xai-mid',         family: 'xai',       model: 'grok/grok-4.6' },
+    { id: 'glm-5.3',      type: 'panel-zai',           family: 'zai',       model: 'z-ai/glm-5.3-flash' },
+    { id: 'muse-spark',   type: 'panel-meta',          family: 'meta',      model: 'meta/muse-spark-1.3-contributor' },
   ],
   // intermediate: full paper
   '2': [
