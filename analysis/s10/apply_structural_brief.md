@@ -61,6 +61,12 @@ Executing one:
 4. If the proposal did not supply the receiving text, **skip it and say so**. A
    cut without its appendix half is a deletion wearing a cut's name, and the
    data gate should already have caught it.
+5. Creating Appendix F has a LaTeX tail that will not announce itself: add its
+   entry to `APPENDIX_LABELS` in `latex/reformat.py`, and widen the appendix
+   character ranges there — the `[A-E]` patterns — to `[A-F]`. A range that
+   stops at E drops the new appendix silently, which is the same failure the
+   draft hit when Appendix E was added. Verify's checks cover both; do not wait
+   for them to find it.
 
 Appendix F is not a graveyard for weak results. A result that did not survive
 belongs in Appendix A, one that was superseded in Appendix B. F is for sound
