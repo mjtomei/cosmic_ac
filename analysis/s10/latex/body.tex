@@ -67,7 +67,7 @@ That template is the study itself. Essentially every measurement in it --- extra
 \section{Introduction}\label{sec:a-intro}
 
 Part A defines and validates the occupational altitude measure --- socioeconomic
-position scored from what a job involves rather than from a categorical schema ---
+position scored from occupational content rather than from a categorical schema ---
 and reports its one substantive result: the machine register peaks at the
 insulated middle of the organisational hierarchy and sits lowest among
 occupations outside it. Part B tells the study\textquotesingle s story --- prevalence, the
@@ -84,8 +84,8 @@ is better measured at the disaggregated occupation, where it outpredicts the
 big-class schemas; Kohn and Schooler\cite{kohn1983} located the class--psychology link in
 occupational self-direction, closeness of supervision above all. Part A keeps
 that direction of travel --- position read from occupational content --- and
-takes it a step further: the content is scored from O*NET\textquotesingle s descriptors of
-what a job involves, by coders who were never shown the outcome or the
+takes it a step further: the occupational content is scored from O*NET\textquotesingle s full descriptor
+universe, by coders who were never shown the outcome or the
 hypothesis, on a level the categorical maps do not draw.
 
 The construction is in \cref{sec:occ-classification}. Each legislator\textquotesingle s prior occupation is
@@ -107,14 +107,14 @@ the middle is the peak and free work the floor, with middle slopes that differ
 by 0.001; the free level is negative in 21 of 22 chambers; and the registered
 middle-over-top contrast, the apex delta, pools at z = 4.2.
 
-\textbf{What the measure is, and is not.} Against the market-fitted scales it is
+\textbf{What the measure is, and is not.} Against the market-fitted measures it is
 convergent without being any of them: member-weighted Cramér\textquotesingle s V between the
-folk level and each anchor runs 0.31 to 0.47, while regressing each level on
+folk argmax level and each anchor runs 0.31 to 0.47, while regressing each level on
 occupational education and log wage leaves more than half of every level\textquotesingle s
 variance unexplained (\(R^{2}\) 0.32--0.45). In the joint model the asymmetry is
-complete: entered beside the study\textquotesingle s covariates, ISEI and wage collapse while
+complete: entered beside the committed blocks, ISEI and wage collapse while
 the folk ladder stands, and the EGP class block --- significant on its own ---
-falls to p = 0.56 once the ladders enter, because the class label is a coarse
+falls to p = 0.56 once the ladders enter, because the EGP label is a coarse
 coding of the occupational content the ladders score at finer grain (\cref{sec:four-predictors}).
 
 \textbf{Order.} \cref{sec:a-method} gives the construction and the estimation specification, and
@@ -178,12 +178,12 @@ item 24.
 
 \subsection{The member-level specification}\label{sec:member-spec}
 
-\textbf{The outcome.} The dependent variable throughout Part A is the register
-instrument of Part B (\cref{sec:freq-descriptive}): a member\textquotesingle s rate of occurrence, per 100k words,
+\textbf{The outcome.} The dependent variable throughout Part A is the register --- measured by
+the register instrument of Part B (\cref{sec:freq-descriptive}): a member\textquotesingle s rate of occurrence, per 100k words,
 of the 407 style words that Kobak et al.\textquotesingle s excess-vocabulary method identifies
 as the vocabulary language models overuse, computed over the member\textquotesingle s own
 speech. It is a descriptive series, not a detector --- it fails an in-time
-placebo test, and it separates machine-flagged from unflagged segments only at
+placebo test, and it separates Pangram-flagged from unflagged segments only at
 AUC 0.61 --- and it is used here as a measure of how far a member\textquotesingle s speech sits
 toward the machine register, not as evidence that any of it was
 machine-drafted. For estimation the rate is z-scored within each legislature
@@ -1097,7 +1097,7 @@ is exploratory and labelled as such.
 
 \textbf{Coverage is not complete.} 4,762 members carry both register and
 instrument; 3,594 carry every covariate, and the joint model runs on the 3,631
-with occupational-score coverage. An occupation missing a signature element
+with occupational-score coverage. An occupation missing an element of a level\textquotesingle s signature
 cannot be scored at all (\cref{sec:occ-classification}).
 
 \section{Discussion}\label{sec:a-discussion}
@@ -1172,7 +1172,7 @@ calibration and the prevalence it measures: no false positives on 1,260
 pre-2022 speeches, a floor of 9.0\% of current words, a fourfold spread across
 chambers, and a concentration in scripted business. \cref{sec:register-shift}--\cref{sec:generational} turn to the
 register: a rise dated 1994--96 on the longest series, other chambers
-converging on a level the United States already held, and a birth-year
+converging on a level the United States already held, and a juniority
 gradient older than the drift. \cref{sec:social-structure} states what Part A establishes about who
 carries it. \cref{sec:permeation}--\cref{sec:evasion} close on the machines: permeation into human speech,
 small but positive; post-training as the stage that installs the register;
@@ -1980,8 +1980,8 @@ Who carries the register is the subject of Part A. In brief: scored from
 occupational content rather than from a class schema, socioeconomic position
 predicts the register as an inverted U --- peaking at the insulated middle of the
 organisational hierarchy, lowest among occupations outside it --- on two
-independently built constructions, and it absorbs the class and education
-contrasts once entered beside them (\cref{sec:occupation}, \cref{sec:four-predictors}). The birth-year gradient of
+semi-independent constructions, and it absorbs the class and education
+contrasts once entered beside them (\cref{sec:occupation}, \cref{sec:four-predictors}). The juniority gradient of
 \cref{sec:generational} survives all of it.
 
 \subsection{Permeation: detector-independent and small but positive}\label{sec:permeation}
