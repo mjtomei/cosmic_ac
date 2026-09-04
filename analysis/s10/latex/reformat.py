@@ -29,11 +29,11 @@ PREFIX_LABELS = {
  "31":"sec:calibration-method","32":"sec:detector","33":"sec:freq-descriptive",
  "34":"sec:occ-classification","35":"sec:retired",
  "4":"sec:results","41":"sec:calibration","42":"sec:prevalence",
- "42a":"sec:prevalence-audits","43":"sec:genre","45":"sec:register-shift",
- "45a":"sec:climb-geography",
+ "42a":"sec:prevalence-audits","43":"sec:genre","44":"sec:register-shift",
+ "44a":"sec:climb-geography",
  "46":"sec:generational",
  "46a":"sec:class","46b":"sec:occupation","46c":"sec:four-predictors",
- "46d":"sec:chase-flight",
+ "46d":"sec:chase-flight","46e":"sub:wordmix",
  "47":"sec:permeation","48":"sec:posttraining","48a":"sec:coverage",
  "48b":"sec:american-alignment",
  "49":"sec:quality","49a":"sec:stage6","410":"sec:evasion",
@@ -45,8 +45,8 @@ PREFIX_LABELS = {
  "d4":"sec:screen-effort","d5":"sec:bypass-sample","d6":"sec:artifacts",
  "d7":"sec:run-on","d8":"sub:element-signatures",
  "e1":"sec:climb-table","e2":"sub:class-provincial","e3":"sub:education-provincial",
- "e4":"sec:judge-leakage","e5":"sec:prominence-full","e6":"sec:prominence-buckets",
- "e7":"sec:cohort-ministerial",
+ "e4":"sec:judge-leakage","e5":"sec:prominence-full","e6":"sec:cohort-ministerial",
+ "e7":"sec:panel-limits",
 }
 APPENDIX_LABELS = {"appendix-a":"app:null","appendix-b":"app:superseded",
                    "appendix-c":"app:future","appendix-d":"app:repro",
@@ -54,7 +54,6 @@ APPENDIX_LABELS = {"appendix-a":"app:null","appendix-b":"app:superseded",
 LABELS = {   # unnumbered subsubsections: exact slug
  "flight-the-groups-at-the-top-avoid-the-words-that-became-common":"sub:flight",
  "prominence-a-gradient-in-the-provinces-an-arc-in-the-national-chambers":"sub:prominence-class",
- "word-mix-the-effects-live-in-rate-not-vocabulary--and-machine-text-sits-outside-the-geometry":"sub:wordmix",
 }
 
 def label_for(slug):
@@ -72,10 +71,11 @@ NUMMAP = {
  "3.1":"sec:calibration-method","3.2":"sec:detector","3.3":"sec:freq-descriptive",
  "3.4":"sec:occ-classification","3.5":"sec:retired",
  "4":"sec:results","4.1":"sec:calibration","4.2":"sec:prevalence",
- "4.2a":"sec:prevalence-audits","4.3":"sec:genre","4.5":"sec:register-shift",
- "4.5a":"sec:climb-geography",
+ "4.2a":"sec:prevalence-audits","4.3":"sec:genre","4.4":"sec:register-shift",
+ "4.4a":"sec:climb-geography",
  "4.6":"sec:generational","4.6a":"sec:class",
  "4.6b":"sec:occupation","4.6c":"sec:four-predictors","4.6d":"sec:chase-flight",
+ "4.6e":"sub:wordmix",
  "4.7":"sec:permeation","4.8":"sec:posttraining","4.8a":"sec:coverage",
  "4.8b":"sec:american-alignment",
  "4.9":"sec:quality","4.9a":"sec:stage6","4.10":"sec:evasion",
@@ -91,8 +91,8 @@ APPMAP = {
  "D.4":"sec:screen-effort","D.5":"sec:bypass-sample","D.6":"sec:artifacts",
  "D.7":"sec:run-on","D.8":"sub:element-signatures",
  "E.1":"sec:climb-table","E.2":"sub:class-provincial","E.3":"sub:education-provincial",
- "E.4":"sec:judge-leakage","E.5":"sec:prominence-full","E.6":"sec:prominence-buckets",
- "E.7":"sec:cohort-ministerial",
+ "E.4":"sec:judge-leakage","E.5":"sec:prominence-full",
+ "E.6":"sec:cohort-ministerial","E.7":"sec:panel-limits",
 }
 FIGLABEL = {"class_by_era_panels.png":"fig:class-era","ladder_by_era_panels.png":"fig:ladder-era","altitude_u.png":"fig:altitude",
             "the-ai-lexicon-trend.png":"fig:trend","apc_gradients.png":"fig:apc","tenure_profile.png":"fig:tenure","lifetime_drift_by_cohort.png":"fig:lifedrift","bypass_search.png":"fig:bypass",
@@ -208,7 +208,7 @@ def figure_ref_anchors(t):
      r"values exactly as in \\cref{tab:prevalence}); whiskers"),
     (r"is\s+what\s+the\s+table\s+reports",
      r"is what \\cref{tab:prevalence} reports"),
-    (r"word-weighted\s+in\s+the\s+table,\s+8\.3",
+    (r"word-weighted,\s+8\.3",
      r"word-weighted in \\cref{tab:genre}, 8.3"),
     (r"values\s+exactly\s+as\s+in\s+the\s+table\s+in\s+Appendix",
      r"values exactly as in \\cref{tab:climb} in Appendix"),
@@ -216,8 +216,8 @@ def figure_ref_anchors(t):
      r"most elite credential in \\cref{tab:education}"),
     (r"the\s+figure\s+above\\textquotesingle\s*s\s+own\s+estimand",
      r"\\cref{fig:altitude}\\textquotesingle s own estimand"),
-    (r"the\s+table\\textquotesingle\s*s\s+n\s+and\s+years\s+columns",
-     r"\\cref{tab:four-predictors}\\textquotesingle s n and years columns"),
+    (r"The\s+table\\textquotesingle\s*s\s+n\s+and\s+years\s+columns",
+     r"\\Cref{tab:four-predictors}\\textquotesingle s n and years columns"),
     (r"fixed\s+effects\s+in\s+the\s+table\s+above\s+control",
      r"fixed effects in \\cref{tab:dqi} control"),
     (r"and\s+the\s+table\s+reads\s+professional",
@@ -291,21 +291,23 @@ TABLE_CAPS = [
  ("instrument & outcome", "tab:retired", "Instruments built and retired, with the result that dropped each."),
  ("Pangram 3 & Pangram 4", "tab:calibration", "Calibration on pre-2022 speech: specificity of Pangram 3 versus Pangram 4."),
  ("chamber & machine-drafted share of words", "tab:prevalence", "Prevalence of machine-drafted words by chamber, with 95\\% confidence intervals."),
+ ("pooled rate weighted by & value", "tab:weighting", "What the weighting choice is worth: the pooled prevalence rate under three weightings."),
  ("genre, 2025--26", "tab:genre", "Machine-drafted share by genre of business, 2025--26."),
  ("gap 1994", "tab:climb-long", "The longest window: the three chambers whose series reach 1994."),
  ("sd of own series", "tab:vs-ushouse", "Register level by chamber, 2020--26 means, benchmarked against the US House."),
  ("EGP class & mean z", "tab:egp", "Register by EGP social class (member-level means)."),
  ("level & mean z & n & vs bachelor", "tab:education", "Register by education level, relative to a bachelor's degree."),
  ("theoretical ladder & folk ladder", "tab:altitude", "The occupational altitude ladder: register by level on both constructions (plotted in \\cref{fig:altitude})."),
- ("term & n & alone & joint", "tab:four-predictors", "Every member-level predictor in one model: each block alone, the joint fit of cohort, all EGP classes, all education levels and prominence quintiles (n = 4{,}056), and the occupational blocks — both altitude ladders and Indoors — added (n = 3{,}631); t in parentheses; the last column converts jointly significant effects into years of cohort."),
+ ("term & n & alone & joint", "tab:four-predictors", "Every member-level categorical predictor in one model: each block alone, the joint fit of cohort, all EGP classes, all education levels and prominence quintiles (n = 4{,}056), and the same fit with the occupational blocks added (n = 3{,}631); t in parentheses; the last column converts jointly significant effects into years of cohort, per category."),
+ ("term & alone & + occ", "tab:four-predictors-occ", "The occupational blocks of the same simultaneous fit — both altitude ladders and Indoors — each alone and in the joint model with the categorical blocks (n = 3{,}631); t in parentheses. Their terms are per standard deviation, so the last column converts jointly significant effects into years of cohort per standard deviation."),
  ("contrast (top vs peak)", "tab:flight-thresholds", "Flight and chase by minimum-occurrence threshold: the correlation between a word\'s rise and each group\'s relative use of it against its comparison group."),
  ("quintile of article length", "tab:prominence-class", "Register by prominence (Wikipedia article-length quintile) across chamber groups."),
  ("register shift (corrected)", "tab:posttraining", "Register shift by training stage (Rogan--Gladen corrected)."),
  ("corpus & \\textbf{0}", "tab:coverage-occ", "Style-word coverage by number of occurrences, at matched volume."),
  ("absent from generated only", "tab:coverage-partition", "Where the 407 style words fall: generated text versus Hansard 2025--26."),
  ("contrast & Spearman", "tab:american-alignment", "Post-training preference against the contrasts that separated national usage before the models: Spearman correlations, raw and holding word frequency fixed."),
- ("screen score & segments", "tab:applicability", "Applicability of the two sentinel dimensions, by band of the blinded screen score."),
  ("stage 1, per sd of score", "tab:dqi", "Discourse Quality Index associations with machine authorship: stages 1 and 2."),
+ ("screen score (0--100) & segments", "tab:applicability", "Applicability of the two sentinel dimensions, by band of the blinded screen score."),
  ("arm & justification vs human", "tab:continuations", "Machine continuations graded blind: justification and applicability by arm."),
  ("Pangram verdict & meaning & counts as", "tab:verdicts", "Pangram's three verdicts and the two events the search counts."),
  ("attacker\\textquotesingle s detector access", "tab:bypass-rates", "Bypass rates by whether the attacker may query the detector."),
@@ -326,7 +328,6 @@ TABLE_CAPS = [
  ("gap 2006", "tab:climb", "The constant-window register trend: nineteen chambers, 2006--2026, ordered by growth."),
  ("EGP class & description & contrast vs class I", "tab:class-provincial", "Provincial class estimates relative to class I (discovery record)."),
  ("stage 1 (internal): AI+FE", "tab:judge-leakage", "The judge-leakage control: quality with the grading judge's own AI guess added."),
- ("quintile & CA provinces", "tab:prominence-buckets", "Register by prominence quintile, by chamber group and pooled."),
  ("cells & birth gradient", "tab:cohort-office", "The cohort gradient among office- and non-office-holders."),
 ]
 
@@ -342,7 +343,8 @@ COLSPECS = {
  "tab:bypass-rates":   r"@{}lp{0.22\linewidth}p{0.16\linewidth}p{0.36\linewidth}@{}",
  "tab:bypass-summary": r"@{}p{0.22\linewidth}p{0.20\linewidth}p{0.50\linewidth}@{}",
  "tab:bypass-exposure": r"@{}p{0.22\linewidth}p{0.20\linewidth}p{0.50\linewidth}@{}",
- "tab:applicability":  r"@{}lrp{0.26\linewidth}p{0.26\linewidth}@{}",
+ "tab:applicability":  (r"@{}lr>{\raggedleft\arraybackslash}p{0.26\linewidth}"
+                        r">{\raggedleft\arraybackslash}p{0.26\linewidth}@{}"),
  # the per-100k column headers do not fit on one line at natural width
  "tab:climb-long":     (r"@{}l>{\raggedright\arraybackslash}p{0.19\linewidth}"
                         r">{\raggedright\arraybackslash}p{0.19\linewidth}"
@@ -366,7 +368,12 @@ COLSPECS = {
                         r">{\raggedright\arraybackslash}p{0.20\linewidth}"
                         r">{\raggedright\arraybackslash}p{0.24\linewidth}@{}"),
  "tab:models":        r"@{}p{0.50\linewidth}p{0.20\linewidth}p{0.22\linewidth}@{}",
- "tab:four-predictors": r"@{}p{0.255\linewidth}rp{0.135\linewidth}p{0.135\linewidth}p{0.135\linewidth}l@{}",
+ "tab:four-predictors": (r"@{}p{0.27\linewidth}@{\hspace{5pt}}r@{\hspace{9pt}}"
+                        r"p{0.145\linewidth}@{\hspace{5pt}}p{0.145\linewidth}@{\hspace{5pt}}"
+                        r"p{0.145\linewidth}@{\hspace{5pt}}l@{}"),
+ "tab:four-predictors-occ": (r"@{}p{0.34\linewidth}@{\hspace{7pt}}"
+                        r"p{0.18\linewidth}@{\hspace{7pt}}p{0.18\linewidth}"
+                        r"@{\hspace{7pt}}l@{}"),
  "tab:elements-levels": r"@{}p{0.40\linewidth}p{0.15\linewidth}llr@{}",
  "tab:elements-components": r"@{}p{0.36\linewidth}p{0.15\linewidth}p{0.15\linewidth}cr@{}",
 }
