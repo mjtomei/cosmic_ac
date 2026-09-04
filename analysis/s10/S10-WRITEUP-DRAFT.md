@@ -1333,7 +1333,7 @@ parentheses. The last column converts jointly-significant effects into years
 of cohort, one unit throughout: years per category against that block's own
 baseline. †[^r46joint]
 
-| term | n | alone | joint | + occ. blocks | ≈ yrs per category |
+| term | n | alone | joint − occ. blocks | joint | ≈ yrs per category |
 |---|---|---|---|---|---|
 | **cohort** (per decade) | 4,056 | +0.276 (27.7) | **+0.272 (26.9)** | +0.266 (24.5) | *the scale* |
 |  — block Wald (1 df) | | p < 10⁻⁷⁰ | p < 10⁻⁶⁷ | p < 10⁻⁵⁹ | |
@@ -1368,11 +1368,11 @@ plus Indoors. The occ-coverage sample is thinner than §4.6b's (3,631 against
 restatements of §4.6b's table. They are tabled apart because their terms are per standard
 deviation, which is not the same unit as a category contrast and does not
 belong in the same column. The fit is the same simultaneous one — the
-"+ occ. blocks" column is the identical model in both tables; the
-occupational blocks have no "joint" column because "joint" names the fit
-they are absent from:
+"joint" column is the identical model in both tables; the occupational
+blocks have no "joint − occ. blocks" column because that is the fit they
+are absent from:
 
-| term | alone | + occ. blocks | ≈ yrs per sd |
+| term | alone | joint | ≈ yrs per sd |
 |---|---|---|---|
 | **theoretical ladder** (per sd, n 3,631) | | | |
 |  · free | −0.243 (−4.80) | −0.123 (−1.21) | — |

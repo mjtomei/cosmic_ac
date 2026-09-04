@@ -1167,11 +1167,11 @@ baseline. †\footnote{\texttt{python\ joint\_\allowbreak{}predictors.\allowbrea
 \begin{longtable}[]{@{}p{0.27\linewidth}@{\hspace{5pt}}r@{\hspace{9pt}}p{0.145\linewidth}@{\hspace{5pt}}p{0.145\linewidth}@{\hspace{5pt}}p{0.145\linewidth}@{\hspace{5pt}}l@{}}
 \caption{Every member-level categorical predictor in one model: each block alone, the joint fit of cohort, all EGP classes, all education levels and prominence quintiles (n = 4{,}056), and the same fit with the occupational blocks added (n = 3{,}631); t in parentheses; the last column converts jointly significant effects into years of cohort, per category.}\label{tab:four-predictors}\\
 \toprule\noalign{}
-term & n & alone & joint & + occ. blocks & \(\approx\) yrs per category \\
+term & n & alone & joint \(-\) occ. blocks & joint & \(\approx\) yrs per category \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-term & n & alone & joint & + occ. blocks & \(\approx\) yrs per category \\
+term & n & alone & joint \(-\) occ. blocks & joint & \(\approx\) yrs per category \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -1211,19 +1211,19 @@ plus Indoors. The occ-coverage sample is thinner than \cref{sec:occupation}\text
 restatements of \cref{sec:occupation}\textquotesingle s table. They are tabled apart because their terms are per standard
 deviation, which is not the same unit as a category contrast and does not
 belong in the same column. The fit is the same simultaneous one --- the
-"+ occ. blocks" column is the identical model in both tables; the
-occupational blocks have no "joint" column because "joint" names the fit
-they are absent from:
+"joint" column is the identical model in both tables; the occupational
+blocks have no "joint \(-\) occ. blocks" column because that is the fit they
+are absent from:
 
 \begingroup\small
 \begin{longtable}[]{@{}p{0.34\linewidth}@{\hspace{7pt}}p{0.18\linewidth}@{\hspace{7pt}}p{0.18\linewidth}@{\hspace{7pt}}l@{}}
 \caption{The occupational blocks of the same simultaneous fit — both altitude ladders and Indoors — each alone and in the joint model with the categorical blocks (n = 3{,}631); t in parentheses. Their terms are per standard deviation, so the last column converts jointly significant effects into years of cohort per standard deviation.}\label{tab:four-predictors-occ}\\
 \toprule\noalign{}
-term & alone & + occ. blocks & \(\approx\) yrs per sd \\
+term & alone & joint & \(\approx\) yrs per sd \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-term & alone & + occ. blocks & \(\approx\) yrs per sd \\
+term & alone & joint & \(\approx\) yrs per sd \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
