@@ -43,6 +43,10 @@ const LINES_PER_READ = 900      // ~22k tokens of this draft: what one read retu
 // one read. args.groups asks for a target number of groups; a group larger than
 // LINES_PER_READ simply takes more than one read, and the propose prompt says so.
 const TARGET_GROUPS = (args && args.groups) || null
+// Cutting is the one action that removes material from the reader's path, and
+// the mechanism is untested. It stays behind an explicit flag rather than
+// arriving by default in an unattended run.
+const ALLOW_CUTS = !!(args && args.allow_cuts)
 let GROUP_LINES = LINES_PER_READ
 
 const SCOPE_SCHEMA = {
@@ -335,7 +339,29 @@ Return a changelist. Each entry is ONE concrete, self-contained change:
         or "prose" (rewrite a specific passage).
 - locus: the section number plus a short verbatim quote (<=12 words) of where
   the change starts, so it can be located exactly.
-- action: reorder | merge | split | move | rewrite.
+- action: reorder | merge | split | move | rewrite${ALLOW_CUTS ? ' | cut' : ''}.
+${ALLOW_CUTS ? `
+CUTTING. Every other action leaves the paper the same length or longer, so the
+main text can only accrete. A cut is how it gets shorter — but nothing is ever
+deleted. Cut material moves to "Appendix F — Cut for length", which exists for
+exactly this and is created on first use.
+
+A cut proposal must carry BOTH halves or it is not a cut, it is a deletion:
+- what leaves the main text, quoted in \`current\`; and
+- in \`proposed\`, the appendix entry that receives it — the full text to be
+  placed there, carrying every number, interval, sample size and finding out of
+  the removed passage, plus one sentence saying what it is and why it left.
+Say in \`proposed\` which half is which.
+
+Do not propose a cut whose \`proposed\` merely asserts that the material "moves to
+an appendix" without supplying that appendix text. A promise to relocate is how
+a datum gets lost: iteration 4 dropped a change whose rationale said its counts
+moved to a footnote while the proposal contained no footnote edit.
+
+Cut for length and readability, not to hide a weak result — a result that does
+not survive is Appendix A's business, and one that was superseded is Appendix
+B's. Appendix F is for material that is sound and simply does not earn its place` : ''}
+in the reader's path.
 - current: the exact current text you are changing — the full paragraph for a
   prose change, or the section as it stands (heading + one-line gist) for a
   structural change. Copy it verbatim; a voter will compare against it.
@@ -434,6 +460,14 @@ LOCUS: §${c.locus}
 ${changeBody(c, 'CURRENT (as supplied by the proposer — verify it matches the manuscript)', 'PROPOSED')}
 
 Return { locatable, current_matches, data_faithful: "pass"|"fail", note }.
+
+RELOCATION IS NOT A DROP. If the change is a cut, the datum is not lost when it
+moves to an appendix — it is still in the document. So judge a cut on whether
+the PROPOSED text actually carries the material: read the removed passage, list
+every number, interval, sample size and finding in it, and confirm each one
+appears in the appendix entry the proposal supplies. If the proposal only
+promises a relocation without supplying the receiving text, that is a dropped
+datum and data_faithful is "fail".
 
 current_matches asks ONE mechanical question: does the CURRENT text below appear
 in the manuscript, allowing only for differences in line wrapping? Search the

@@ -43,6 +43,30 @@ Consequences worth knowing when you edit this protocol:
   only accepts names ending in `claude-*`; `agent()`'s `model` option takes the
   router's real names. Every workflow worker runs on the work subscription.
 
+## Cuts, and the appendix that receives them
+
+A cut is a **move**, never a delete. The material leaves the main text and
+lands in `## Appendix F — Cut for length`, which is created on first use with a
+one-line framing sentence and otherwise looks like the other appendices.
+
+Executing one:
+
+1. Remove the passage from the body.
+2. Add its entry to Appendix F, carrying **every** number, interval, sample
+   size and finding out of the removed passage verbatim, plus the proposal's
+   one-sentence note on what it is and why it left.
+3. Repair what the removal disturbs — a `§N` reference into the cut passage now
+   points at Appendix F, a footnote defined inside it moves with it, and a
+   transition sentence that leaned on it needs its seam closed.
+4. If the proposal did not supply the receiving text, **skip it and say so**. A
+   cut without its appendix half is a deletion wearing a cut's name, and the
+   data gate should already have caught it.
+
+Appendix F is not a graveyard for weak results. A result that did not survive
+belongs in Appendix A, one that was superseded in Appendix B. F is for sound
+material that does not earn its place in the reader's path — and the reader is
+told where it went.
+
 ## Order: prose first, then structural
 
 Not a convenience — the two steps fail differently, so the order is load-bearing.
