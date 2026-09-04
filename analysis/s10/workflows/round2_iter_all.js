@@ -449,6 +449,56 @@ claim of what was/wasn't found changes, is added, or is dropped. Changes to
 interpretation, framing, emphasis, hedging, or order are "pass". Fail closed
 if you cannot locate the passage or verify a number.`
 
+// REPAIR (Matthew, 2026-09-03). Most gate failures are a sloppy execution of a
+// sound idea rather than a bad idea: of the 16 changes iteration 4 dropped, 13
+// either deleted a number the rest of the manuscript does not carry, or moved a
+// qualifier so it scoped over a statistic it does not describe. Both are one
+// small edit from faithful. So before a candidate is discarded, the model that
+// caught the problem is asked whether a minimal repair saves it -- and told
+// plainly that refusing is expected whenever repair would mean inventing,
+// guessing, or gutting the change.
+const REPAIR_PROMPT = (c) => `ROLE: REPAIR A CHANGE THAT FAILED THE DATA CHECK.
+
+Manuscript: \`${DRAFT}\`. Open it and read the passage at the locus.
+
+LOCUS: §${c.locus}
+${changeBody(c, 'CURRENT', 'PROPOSED')}
+
+WHY IT FAILED: ${(c.faith || {}).note}
+
+The change's INTENT is worth keeping — a panel would not have seen it otherwise.
+Your question is narrow: is there a small edit to the PROPOSED text that fixes
+the fault named above while leaving the change recognisably the same change?
+
+The two faults that are usually repairable:
+- A datum was dropped that appears nowhere else in the manuscript. Put it back,
+  in the proposed text's own phrasing, where it naturally belongs.
+- A qualifier or scope-setting phrase was moved or added so that it now covers a
+  statistic it does not describe. Narrow it to what the manuscript supports.
+
+Refuse — repaired false — whenever fixing it would mean any of:
+- inventing a number, a citation, or a claim not already in the manuscript;
+- guessing which of several readings the proposer meant;
+- rewriting so much that it is no longer the change that was proposed;
+- the quoted CURRENT text not being in the manuscript at all, leaving nothing to
+  anchor a repair to.
+
+Refusing is a good answer and the expected one in a fair share of cases. A
+repair that quietly disturbs a different datum is far worse than a drop.
+
+If you repair it, return the COMPLETE repaired replacement text — not a diff,
+not a description — and one sentence saying what you restored or narrowed.`
+
+const REPAIR_SCHEMA = {
+  type: 'object',
+  properties: {
+    repaired: { type: 'boolean', description: 'true only if a minimal faithful repair exists' },
+    proposed: { type: 'string', description: 'the complete repaired replacement text; empty when repaired is false' },
+    note: { type: 'string', description: 'one sentence: what was restored or narrowed, or why no repair is possible' },
+  },
+  required: ['repaired', 'proposed', 'note'],
+}
+
 const FAITH_SCHEMA = { type: 'object',
   required: ['locatable', 'current_matches', 'data_faithful', 'note'],
   properties: { locatable: { type: 'boolean' }, current_matches: { type: 'boolean' },
@@ -545,6 +595,41 @@ const runScope = async (sc, preset) => {
                : null,
              quote_stale: !!f && f.current_matches === false }
   })
+  // REPAIR PASS. Only for a data_changed failure on a passage that was
+  // locatable: if the checker could not find the text there is nothing to anchor
+  // a repair to, and an errored check is not evidence of a fault. A repaired
+  // candidate is re-checked through the SAME gate, so a repair that does not
+  // actually fix it is dropped exactly as it would have been.
+  const repairable = withFaith.filter(c => !c.faith_gate && c.faith_reason === 'data_changed')
+  let n_repaired = 0
+  if (repairable.length) {
+    const fixes = await parallel(repairable.map(c => () =>
+      agent(REPAIR_PROMPT(c), { agentType: 'check-faithfulness', model: FAITH_MODEL,
+                                label: `repair:${c.id}`, phase: 'Faithfulness', schema: REPAIR_SCHEMA })
+        .catch(() => null)))
+    const patched = []
+    repairable.forEach((c, i) => {
+      const f = fixes[i]
+      if (f && f.repaired && f.proposed && f.proposed.trim())
+        patched.push({ ...c, proposed: f.proposed, repaired: true, repair_note: f.note })
+    })
+    const rechecks = patched.length ? await parallel(patched.map(c => () =>
+      agent(FAITH_PROMPT(c), { agentType: 'check-faithfulness', model: FAITH_MODEL,
+                               label: `recheck:${c.id}`, phase: 'Faithfulness', schema: FAITH_SCHEMA })
+        .catch(() => null))) : []
+    patched.forEach((c, i) => {
+      const f = rechecks[i]
+      if (!(f && f.locatable !== false && f.data_faithful === 'pass')) return
+      const k = withFaith.findIndex(x => x.id === c.id)
+      if (k >= 0) {
+        withFaith[k] = { ...c, faith: f, faith_gate: true, faith_reason: null,
+                         quote_stale: f.current_matches === false }
+        n_repaired += 1
+      }
+    })
+    log(`${id}: ${repairable.length} failed the data gate — ${patched.length} repair(s) attempted, ${n_repaired} passed re-check`)
+  }
+
   const survivors = withFaith.filter(c => c.faith_gate)
 
   const scored = await parallel(survivors.map(cand => async () => {
@@ -604,7 +689,7 @@ const runScope = async (sc, preset) => {
   log(`${id}: ${accepted} accepted of ${candidates.length} (${candidates.length - survivors.length} failed the data gate)`)
   return { scope_id: id, scope, variants: variants.map(v => v.id),
            n_proposals: proposals.length, n_candidates: candidates.length,
-           n_faith_pass: survivors.length, n_faith_dropped: candidates.length - survivors.length,
+           n_faith_pass: survivors.length, n_faith_dropped: candidates.length - survivors.length, n_repaired,
            accepted, self_preference: sp,
            panel_health: { present, absent, ballots_cast: cast, ballots_lost: lostBy,
                            lost_to_limits: limitBy, propose_failures: failures },
