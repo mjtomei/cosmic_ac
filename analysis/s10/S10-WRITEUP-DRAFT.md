@@ -527,7 +527,7 @@ between-chamber differences to any measured cause.
 
 [^r42]: `python -c "import banded_prevalence as B; B.table(B.load())"`.
 
-### 4.2a Estimate-specific audits
+#### 4.2a Estimate-specific audits
 
 **Federal Canada's row comes from its own uniform draw**, not from the
 genre-stratified sample that answers §4.3. The genre arm takes 60 segments
@@ -760,7 +760,7 @@ Read together with §4.8, the interesting reading is not "LLMs changed
 parliamentary register" but that **human register had been moving toward what
 instruct-tuning later selected for, for thirty years.** †[^dag]
 
-### 4.4a Other chambers converge on the level the United States already held
+#### 4.4a Other chambers converge on the level the United States already held
 
 Running the same series on every chamber turns the thirty-year drift into a
 comparison. The instrument and the 200 matched placebo sets are built once, on
@@ -930,7 +930,7 @@ The same cell reads a second way. Because cohort is pinned pre-drift, those coho
 
 ### 4.6 Social structure
 
-### 4.6a Class and education: the same shape at coarser grain
+#### 4.6a Class and education: the same shape at coarser grain
 
 Class predicts the register as a joint block — an inverted U, peaking one rung below the top. It is the same shape as the altitude measure at coarser grain, and in the joint model below the measure absorbs it. The apparent education gradient does not survive its controls.
 
@@ -1120,7 +1120,7 @@ graduate, not professional" are two descriptions of one group, so whichever
 enters the model first absorbs the other. Education's shape is real and
 independently measured; its apparent separate effect is not.
 
-### 4.6b Socioeconomic position as organisational altitude: the register peaks at the insulated middle, and free work sits lowest
+#### 4.6b Socioeconomic position as organisational altitude: the register peaks at the insulated middle, and free work sits lowest
 
 The register peaks at the insulated middle of the organisational hierarchy and sits lowest among occupations that stand outside it. Each legislator's prior occupation, coded to O\*NET, is scored on an organisational-**altitude** ladder — bottom, middle, top — plus **free work**, the off-ladder level categorical class schemas do not carry. The ordering **free < front-line < corporate** was preregistered before any occupational element was joined to the register, and found.
 
@@ -1367,7 +1367,7 @@ ceilings.[^r46f]
     `element_audit_*.json`, `element_levels.json`,
     `instrument_final_cells.json`.
 
-### 4.6c All four predictors at once
+#### 4.6c All four predictors at once
 
 Every member-level predictor in one regression — every category of every
 block, none folded into a baseline for being small or dropped from the table
@@ -1544,7 +1544,7 @@ So this is not a discovered instrument for identifying machine text by its compa
     0.0007, EGP 0.0006, prominence 0.0005, education 0.0003, dir middle
     −0.0001 (the one block the model fits marginally better without).
 
-### 4.6d Chase and flight: an exploratory interpretation of the social gradients
+#### 4.6d Chase and flight: an exploratory interpretation of the social gradients
 
 The shape has a name in sociolinguistics: the second-highest status group
 out-using the highest is Labov's crossover pattern, and the middle tier's
@@ -1761,7 +1761,7 @@ prominence backwards through the series. That biases toward finding nothing
 rather than something, since it adds noise to the regressor, but it means the
 prominence estimate is not a clean within-career one.
 
-### 4.6e Word mix: the effects live in rate, not vocabulary — and machine text sits outside the geometry
+#### 4.6e Word mix: the effects live in rate, not vocabulary — and machine text sits outside the geometry
 
 A composition check normalises each member's style-word vector to its own sum
 and z-scores it across 1,356 members.[^s-vec] No prior-free clusters emerge
@@ -2022,7 +2022,7 @@ an unresolved flag, not a counter-result.
     sequences route to different experts and the union touched per step
     approaches the whole model. Active-parameter arithmetic describes batch 1.
 
-### 4.8a Coverage: post-training moves the model's vocabulary onto Hansard's
+#### 4.8a Coverage: post-training moves the model's vocabulary onto Hansard's
 
 §4.8's excess runs over Kobak's 407 style words, and only about half appear in
 the generated corpus. The standing answer was a presence count — real Hansard
@@ -2077,7 +2077,7 @@ reproducing the thing §4.2 detects.
     volume-matched human corpus and manufactures parity, which an earlier
     version of `style_coverage.py` did.
 
-### 4.8b Post-training aligns weakly with pre-model American usage
+#### 4.8b Post-training aligns weakly with pre-model American usage
 
 **What post-training does resembles what already distinguished American
 usage.** If the two processes select for the same thing, the vocabulary shift
@@ -2255,7 +2255,7 @@ change a reader's confidence:
     `q2_q8_controls.py` re-estimates every cell with speaker-clustered
     errors — no claim-bearing t moves by more than 0.3.
 
-### 4.9a Applicability: less to engage with
+#### 4.9a Applicability: less to engage with
 
 **Applicability itself collapses at high screen
 scores** — the share of segments on which each sentinel dimension can be
@@ -2277,7 +2277,7 @@ tools actually in use rather than to machine text as such.
 
 [^s-appband]: `applicability_by_band.py`.
 
-### 4.9b Unreviewed continuations reveal a capability ladder
+#### 4.9b Unreviewed continuations reveal a capability ladder
 
 **Stage 6 inverts the question: machine text no human ever reviewed.** The
 in-the-wild finding — AI-flagged speech better-formed — is consistent with
@@ -2614,7 +2614,7 @@ apparatus.
     text is held locally and excluded under the corpus-licence policy. The two
     superseded first attempts are in Appendix B.
 
-### 4.10a Evasion rewriting does not measurably change deliberative quality
+#### 4.10a Evasion rewriting does not measurably change deliberative quality
 
 **Two paired arms price the evasion edit.** 63 within-text pairs, blinded and
 interleaved, graded on the same v2b DQI rubric: stage 3 is 38 New Brunswick
