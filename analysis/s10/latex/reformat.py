@@ -38,7 +38,8 @@ PREFIX_LABELS = {
  "48b":"sec:american-alignment","48c":"sec:model-lineage",
  "49":"sec:quality","49a":"sec:applicability","49b":"sec:stage6",
  "410":"sec:evasion",
- "410a":"sec:evasion-quality",
+ "410a":"sec:evasion-accounting",
+ "410b":"sec:evasion-quality",
  "5":"sec:related","6":"sec:limits","7":"sec:discussion",
  "71":"sec:disc-limit","72":"sec:disc-norms","72a":"sec:gut-judgment",
  "73":"sec:disc-substitution","74":"sec:market-measure","75":"sec:policy",
@@ -83,7 +84,8 @@ NUMMAP = {
  "4.8b":"sec:american-alignment","4.8c":"sec:model-lineage",
  "4.9":"sec:quality","4.9a":"sec:applicability","4.9b":"sec:stage6",
  "4.10":"sec:evasion",
- "4.10a":"sec:evasion-quality",
+ "4.10a":"sec:evasion-accounting",
+ "4.10b":"sec:evasion-quality",
  "5":"sec:related","6":"sec:limits","7":"sec:discussion",
  "7.1":"sec:disc-limit","7.2":"sec:disc-norms","7.2a":"sec:gut-judgment",
  "7.3":"sec:disc-substitution","7.4":"sec:market-measure","7.5":"sec:policy",
@@ -191,8 +193,8 @@ def figure_ref_anchors(t):
        r"the low-variance signature of an individual-level effect (\\cref{fig:apc})"),
       (r"the\s+equal-weight\s+mean\s+of\s+the\s+twenty\s+chamber\s+rates\s+is",
        r"the equal-weight mean of the twenty per-chamber rates (\\cref{tab:prevalence}, drawn in \\cref{fig:prevalence-dots}) is"),
-      (r"Nineteen\s+chambers\s+hold\s+both\s+endpoints",
-       r"\\Cref{fig:convergence} draws it: nineteen chambers hold both endpoints"),
+      (r"nineteen\s+chambers\s+hold\s+both\s+endpoints",
+       r"\g<0>~(\\cref{fig:convergence})"),
     # The three panels below sat unanchored. They are real floats ([htbp]), so
     # unlike the longtables they drift away from the prose that discusses them
     # unless something points at them.
@@ -206,10 +208,8 @@ def figure_ref_anchors(t):
     # "the figure above") rather than by reference. In markdown that reads fine
     # because the table is right there; in the compiled document it leaves the
     # reader with no way to find what is meant.
-    (r"values\s+exactly\s+as\s+in\s+the\s+table\);\s+whiskers",
-     r"values exactly as in \\cref{tab:prevalence}); whiskers"),
-    (r"is\s+what\s+the\s+table\s+reports",
-     r"is what \\cref{tab:prevalence} reports"),
+    (r"is\s+what\s+the\s+table\s+in\s+Appendix",
+     r"is what \\cref{tab:prevalence} in Appendix"),
     (r"word-weighted,\s+8\.3",
      r"word-weighted in \\cref{tab:genre}, 8.3"),
     (r"values\s+exactly\s+as\s+in\s+the\s+table\s+in\s+Appendix",
@@ -218,8 +218,8 @@ def figure_ref_anchors(t):
      r"most elite credential in \\cref{tab:education}"),
     (r"the\s+figure\s+above\\textquotesingle\s*s\s+own\s+estimand",
      r"\\cref{fig:altitude}\\textquotesingle s own estimand"),
-    (r"The\s+table\\textquotesingle\s*s\s+n\s+and\s+years\s+columns",
-     r"\\Cref{tab:four-predictors}\\textquotesingle s n and years columns"),
+    (r"the\s+joint\s+table\s+already\s+carries",
+     r"the joint table (\\cref{tab:four-predictors}) already carries"),
     (r"fixed\s+effects\s+in\s+the\s+table\s+above\s+control",
      r"fixed effects in \\cref{tab:dqi} control"),
     (r"buckets\s+are\s+flat\s+---\s+the\n?\s*table\\textquotesingle\s*s\s+last\s+column",
@@ -293,8 +293,6 @@ def reorder(t):
 TABLE_CAPS = [
  ("group & chamber", "tab:chambers", "The 22 chambers, grouped by country and regime, and the arms that use each."),
  ("instrument & outcome", "tab:retired", "Instruments built and retired, with the result that dropped each."),
- ("Pangram 3 & Pangram 4", "tab:calibration", "Calibration on pre-2022 speech: specificity of Pangram 3 versus Pangram 4."),
- ("chamber & machine-drafted share of words", "tab:prevalence", "Prevalence of machine-drafted words by chamber, with 95\\% confidence intervals."),
  ("genre, 2025--26", "tab:genre", "Machine-drafted share by genre of business, 2025--26."),
  ("gap 1994", "tab:climb-long", "The longest window: the three chambers whose series reach 1994."),
  ("sd of own series", "tab:vs-ushouse", "Register level by chamber, 2020--26 means, benchmarked against the US House."),
@@ -316,7 +314,6 @@ TABLE_CAPS = [
  ("attacker\\textquotesingle s detector access", "tab:bypass-rates", "Bypass rates by whether the attacker may query the detector."),
  ("measurement & rate", "tab:bypass-summary", "Measured rates by attacker model: the vendor-reported one-submission false-negative rates, this study's per-variant rate, and its retry-enabled per-target rate."),
  ("searched & zero-yield", "tab:bypass-yield", "Detector-evasion search yield per target."),
- ("stage 5 variant (n=35)", "tab:quality-paired", "Paired within-text quality comparisons, all four graded contrasts: evasion-directed rewriting (stages 3 and 4) and successful evasions against their targets (stage 5, at variant and target level), by dimension."),
  ("Rice 2026 (Australian federal)", "tab:priorart", "This study against the two closest prior efforts."),
  ("seed verdict & variants", "tab:superseded-bypass", "Superseded per-seed bypass transitions."),
  ("arm & model & effort", "tab:models", "Models and reasoning effort by arm."),
@@ -330,6 +327,9 @@ TABLE_CAPS = [
  ("EGP class & description & contrast vs class I", "tab:class-provincial", "Provincial class estimates relative to class I (discovery record)."),
  ("stage 1 (internal): AI+FE", "tab:judge-leakage", "The judge-leakage control: quality with the grading judge's own AI guess added."),
  ("cells & birth gradient", "tab:cohort-office", "The cohort gradient among office- and non-office-holders."),
+ ("stage 5 variant (n=35)", "tab:quality-paired", "Paired within-text quality comparisons, all four graded contrasts: evasion-directed rewriting (stages 3 and 4) and successful evasions against their targets (stage 5, at variant and target level), by dimension."),
+ ("Pangram 3 & Pangram 4", "tab:calibration", "Calibration on pre-2022 speech: specificity of Pangram 3 versus Pangram 4."),
+ ("chamber & machine-drafted share of words", "tab:prevalence", "Prevalence of machine-drafted words by chamber, with 95\\% confidence intervals."),
 ]
 
 
@@ -341,7 +341,10 @@ COLSPECS = {
  "tab:chambers":       r"@{}lp{0.74\linewidth}@{}",
  "tab:retired":        r"@{}p{0.30\linewidth}p{0.33\linewidth}p{0.30\linewidth}@{}",
  "tab:bypass-rates":   r"@{}lp{0.19\linewidth}p{0.24\linewidth}p{0.30\linewidth}@{}",
- "tab:bypass-summary": r"@{}p{0.22\linewidth}p{0.20\linewidth}p{0.50\linewidth}@{}",
+ "tab:bypass-summary": (r"@{}p{0.21\linewidth}@{\hspace{5pt}}"
+                        r">{\raggedleft\arraybackslash}p{0.09\linewidth}@{\hspace{5pt}}"
+                        r">{\raggedleft\arraybackslash}p{0.13\linewidth}@{\hspace{5pt}}"
+                        r"p{0.42\linewidth}@{}"),
  "tab:applicability":  (r"@{}lr>{\raggedleft\arraybackslash}p{0.26\linewidth}"
                         r">{\raggedleft\arraybackslash}p{0.26\linewidth}@{}"),
  # the per-100k column headers do not fit on one line at natural width
@@ -357,6 +360,13 @@ COLSPECS = {
                         r">{\raggedright\arraybackslash}p{0.245\linewidth}@{\hspace{3pt}}"
                         r">{\raggedright\arraybackslash}p{0.115\linewidth}@{}"),
  "tab:priorart":       r"@{}p{0.20\linewidth}p{0.38\linewidth}p{0.36\linewidth}@{}",
+ # the genre table now carries the two alternative weightings beside the
+ # headline rate: five columns run 149pt off the measure at natural width
+ "tab:genre":          (r"@{}>{\raggedright\arraybackslash}p{0.27\linewidth}@{\hspace{5pt}}"
+                        r">{\raggedleft\arraybackslash}p{0.18\linewidth}@{\hspace{5pt}}"
+                        r">{\raggedleft\arraybackslash}p{0.13\linewidth}@{\hspace{5pt}}"
+                        r">{\raggedleft\arraybackslash}p{0.16\linewidth}@{\hspace{5pt}}"
+                        r">{\raggedleft\arraybackslash}p{0.13\linewidth}@{}"),
  # the quintile table carries its group sizes in the headers, which no longer
  # fit at natural width
  "tab:prominence-class": (r"@{}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{5pt}}"
@@ -412,7 +422,12 @@ def inject_table_captions(t):
         if lab in COLSPECS:
             delim = re.sub(r'\\begin\{longtable\}\[\]\{[^\n]*\}',
                            lambda m: "\\begin{longtable}[]{%s}" % COLSPECS[lab], delim)
-        m = re.match(r'(\\toprule\\noalign\{\}\n.*?\\midrule\\noalign\{\}\n)\\endhead\n', body, re.DOTALL)
+        # pandoc indents a longtable that sits inside a list item, so the head
+        # block is matched allowing leading whitespace on each of its lines. An
+        # unmatched head puts the caption in the REPEATED head, which prints the
+        # caption and defines the label once per page the table spans.
+        m = re.match(r'([ \t]*\\toprule\\noalign\{\}\n.*?[ \t]*\\midrule\\noalign\{\}\n)[ \t]*\\endhead\n',
+                     body, re.DOTALL)
         capline = "\\caption{%s}\\label{%s}\\\\\n" % (cap, lab)
         if m:
             headblk = m.group(1)
@@ -455,9 +470,9 @@ CITE_SUBS = [
  (r'what Brynjolfsson calls the Turing trap', r'what Brynjolfsson\\cite{brynjolfsson2022} calls the Turing trap'),
  (r'no post-ChatGPT\s+rise\s+\(Rice\)', r'no post-ChatGPT rise (Rice\\cite{rice2026})'),
  (r'\(Pimlico Journal\)', r'(Pimlico Journal\\cite{pimlico2025})'),
- (r'\(Liang et al\.\)', r'(Liang et al.\\cite{liang2024monitoring,liang2025quantifying})'),
+ (r'\(Liang et\s+al\.\)', r'(Liang et al.\\cite{liang2024monitoring,liang2025quantifying})'),
  (r'biomedical abstracts \(Kobak et al\.\)', r'biomedical abstracts (Kobak et al.\\cite{kobak2025})'),
- (r'scholarly writing at large \(Gray\)', r'scholarly writing at large (Gray\\cite{gray2025})'),
+ (r'scholarly writing at\s+large \(Gray\)', r'scholarly writing at large (Gray\\cite{gray2025})'),
  (r'Suvanto et al\.\s+detect undisclosed', r'Suvanto et al.\\cite{suvanto2026} detect undisclosed'),
  (r'(?<!\()Pangram, a commercial detector\s+calibrated', r'Pangram\\cite{pangram2024}, a commercial detector calibrated'),
  (r'\(arXiv:2406\.07016; \\emph\{Sci Adv\}\s+11\(27\):eadt3813, 2025\)', r'\\cite{kobak2025}'),
