@@ -24,31 +24,31 @@ SRC, DST = "_body_pandoc.tex", "body.tex"
 # Heading labels. Numbered headings are keyed by their NUMERIC PREFIX in the
 # pandoc slug ("46b-..." -> sec:occupation), so heading TEXT can be rewritten
 # freely without touching this file. Unnumbered subsubsections keep exact slugs.
-PREFIX_LABELS = {
- "1":"sec:intro","2":"sec:data","21":"sec:hazards","3":"sec:method",
- "31":"sec:calibration-method","32":"sec:detector","33":"sec:freq-descriptive",
- "34":"sec:occ-classification","35":"sec:retired",
- "4":"sec:results","41":"sec:calibration","42":"sec:prevalence",
- "42a":"sec:prevalence-audits","43":"sec:genre","44":"sec:register-shift",
- "44a":"sec:climb-geography","44b":"sec:acceleration",
- "45":"sec:generational","45a":"sec:careers","46":"sec:social-structure",
- "46a":"sec:class","46b":"sec:occupation","46c":"sec:prominence",
- "46d":"sec:four-predictors","46e":"sec:chase-flight",
- "47":"sec:permeation","48":"sec:posttraining","48a":"sec:coverage",
- "48b":"sec:american-alignment","48c":"sec:model-lineage",
- "49":"sec:quality","49a":"sec:applicability","49b":"sec:stage6",
- "410":"sec:evasion",
- "410a":"sec:evasion-accounting",
- "410b":"sec:evasion-quality",
- "5":"sec:related","6":"sec:limits","7":"sec:discussion",
- "8":"sec:conclusion",
- "71":"sec:disc-limit","72":"sec:disc-norms","72a":"sec:gut-judgment",
- "73":"sec:disc-substitution","74":"sec:market-measure","75":"sec:policy",
- "d1":"sec:run-on","d2":"sec:cross-route","d3":"sec:reanalysis",
- "d4":"sec:screen-pangram","d5":"sec:screen-effort","d6":"sec:bypass-sample",
- "d7":"sec:artifacts","d8":"sub:element-signatures",
- "e1":"sec:climb-table","e2":"sub:class-provincial","e3":"sub:education-provincial",
- "e4":"sec:judge-leakage","e5":"sec:prominence-full","e6":"sec:cohort-ministerial",
+PREFIX_LABELS = {   # keys are the pandoc slug prefix: a21 = "A2.1 ...", b46 = "B4.6 ...", d1 = "D.1 ..."
+ "a1":"sec:a-intro","a2":"sec:a-method","a3":"sec:a-results",
+ "a4":"sec:a-discussion","a21":"sec:occ-classification",
+ "a22":"sec:member-spec","a31":"sec:class","a32":"sec:occupation",
+ "a33":"sec:prominence","a34":"sec:four-predictors","a35":"sec:chase-flight",
+ "a41":"sec:market-measure","b1":"sec:intro","b2":"sec:data",
+ "b3":"sec:method","b4":"sec:results","b5":"sec:related","b6":"sec:limits",
+ "b7":"sec:discussion","b8":"sec:conclusion","b21":"sec:hazards",
+ "b31":"sec:calibration-method","b32":"sec:detector",
+ "b33":"sec:freq-descriptive","b34":"sec:retired","b41":"sec:calibration",
+ "b42":"sec:prevalence","b43":"sec:genre","b44":"sec:register-shift",
+ "b45":"sec:generational","b46":"sec:social-structure",
+ "b47":"sec:permeation","b48":"sec:posttraining","b49":"sec:quality",
+ "b71":"sec:disc-limit","b72":"sec:disc-norms","b73":"sec:disc-substitution",
+ "b74":"sec:policy","b410":"sec:evasion","b42a":"sec:prevalence-audits",
+ "b44a":"sec:climb-geography","b44b":"sec:acceleration","b45a":"sec:careers",
+ "b48a":"sec:coverage","b48b":"sec:american-alignment",
+ "b48c":"sec:model-lineage","b49a":"sec:applicability","b49b":"sec:stage6",
+ "b72a":"sec:gut-judgment","b410a":"sec:evasion-accounting",
+ "b410b":"sec:evasion-quality","d1":"sec:run-on","d2":"sec:cross-route",
+ "d3":"sec:reanalysis","d4":"sec:screen-pangram","d5":"sec:screen-effort",
+ "d6":"sec:bypass-sample","d7":"sec:artifacts","d8":"sub:element-signatures",
+ "e1":"sec:climb-table","e2":"sub:class-provincial",
+ "e3":"sub:education-provincial","e4":"sec:judge-leakage",
+ "e5":"sec:prominence-full","e6":"sec:cohort-ministerial",
  "e7":"sec:panel-limits",
 }
 APPENDIX_LABELS = {"appendix-a":"app:null","appendix-b":"app:superseded",
@@ -61,7 +61,7 @@ LABELS = {   # unnumbered subsubsections: exact slug
 }
 
 def label_for(slug):
-    m = re.match(r'^([0-9]+[a-z]?|[a-z][0-9])-', slug)
+    m = re.match(r'^([ab][0-9]+[a-z]?|[0-9]+[a-z]?|[a-z][0-9])-', slug)
     if m and m.group(1) in PREFIX_LABELS:
         return PREFIX_LABELS[m.group(1)]
     for pre, lab in APPENDIX_LABELS.items():
@@ -71,25 +71,25 @@ def label_for(slug):
 
 # §N / §N.M  ->  label   (only these resolve; anything else is left literal)
 NUMMAP = {
- "1":"sec:intro","2":"sec:data","2.1":"sec:hazards","3":"sec:method",
- "3.1":"sec:calibration-method","3.2":"sec:detector","3.3":"sec:freq-descriptive",
- "3.4":"sec:occ-classification","3.5":"sec:retired",
- "4":"sec:results","4.1":"sec:calibration","4.2":"sec:prevalence",
- "4.2a":"sec:prevalence-audits","4.3":"sec:genre","4.4":"sec:register-shift",
- "4.4a":"sec:climb-geography","4.4b":"sec:acceleration",
- "4.5":"sec:generational","4.5a":"sec:careers",
- "4.6":"sec:social-structure","4.6a":"sec:class",
- "4.6b":"sec:occupation","4.6c":"sec:prominence","4.6d":"sec:four-predictors",
- "4.6e":"sec:chase-flight",
- "4.7":"sec:permeation","4.8":"sec:posttraining","4.8a":"sec:coverage",
- "4.8b":"sec:american-alignment","4.8c":"sec:model-lineage",
- "4.9":"sec:quality","4.9a":"sec:applicability","4.9b":"sec:stage6",
- "4.10":"sec:evasion",
- "4.10a":"sec:evasion-accounting",
- "4.10b":"sec:evasion-quality",
- "5":"sec:related","6":"sec:limits","7":"sec:discussion","8":"sec:conclusion",
- "7.1":"sec:disc-limit","7.2":"sec:disc-norms","7.2a":"sec:gut-judgment",
- "7.3":"sec:disc-substitution","7.4":"sec:market-measure","7.5":"sec:policy",
+ "A1":"sec:a-intro","A2":"sec:a-method","A3":"sec:a-results",
+ "A4":"sec:a-discussion","A2.1":"sec:occ-classification",
+ "A2.2":"sec:member-spec","A3.1":"sec:class","A3.2":"sec:occupation",
+ "A3.3":"sec:prominence","A3.4":"sec:four-predictors",
+ "A3.5":"sec:chase-flight","A4.1":"sec:market-measure","B1":"sec:intro",
+ "B2":"sec:data","B3":"sec:method","B4":"sec:results","B5":"sec:related",
+ "B6":"sec:limits","B7":"sec:discussion","B8":"sec:conclusion",
+ "B2.1":"sec:hazards","B3.1":"sec:calibration-method","B3.2":"sec:detector",
+ "B3.3":"sec:freq-descriptive","B3.4":"sec:retired","B4.1":"sec:calibration",
+ "B4.2":"sec:prevalence","B4.3":"sec:genre","B4.4":"sec:register-shift",
+ "B4.5":"sec:generational","B4.6":"sec:social-structure",
+ "B4.7":"sec:permeation","B4.8":"sec:posttraining","B4.9":"sec:quality",
+ "B7.1":"sec:disc-limit","B7.2":"sec:disc-norms",
+ "B7.3":"sec:disc-substitution","B7.4":"sec:policy","B4.10":"sec:evasion",
+ "B4.2a":"sec:prevalence-audits","B4.4a":"sec:climb-geography",
+ "B4.4b":"sec:acceleration","B4.5a":"sec:careers","B4.8a":"sec:coverage",
+ "B4.8b":"sec:american-alignment","B4.8c":"sec:model-lineage",
+ "B4.9a":"sec:applicability","B4.9b":"sec:stage6","B7.2a":"sec:gut-judgment",
+ "B4.10a":"sec:evasion-accounting","B4.10b":"sec:evasion-quality",
 }
 APPMAP = {
  "A":"app:null","B":"app:superseded","C":"app:future","D":"app:repro",
@@ -106,7 +106,7 @@ FIGLABEL = {"class_by_era_panels.png":"fig:class-era","ladder_by_era_panels.png"
             "chamber_prevalence_dotplot.png":"fig:prevalence-dots",
             "convergence_slopegraph.png":"fig:convergence"}
 
-NUMSTRIP = re.compile(r'^(?:Appendix\s+[A-F]\s+---\s+|(?:[0-9]+(?:\.[0-9]+[a-z]?)?|[A-F]\.[0-9]+[a-z]?)\.?\s+)')
+NUMSTRIP = re.compile(r'^(?:Appendix\s+[A-F]\s+---\s+|(?:[AB][0-9]+(?:\.[0-9]+[a-z]?)?|[0-9]+(?:\.[0-9]+[a-z]?)?|[A-F]\.[0-9]+[a-z]?)\.?\s+)')
 
 def transform_headings(t):
     pat = re.compile(r'\\hypertarget\{([^}]*)\}\{%\n\\(section|subsection|subsubsection)\{((?:[^{}]|\{[^{}]*\})*)\}\\label\{\1\}\}')
@@ -115,6 +115,13 @@ def transform_headings(t):
         title = NUMSTRIP.sub('', title)
         if slug == "abstract":
             return r'\section*{Abstract}'
+        mp = re.match(r'^Part ([AB])\b', title)
+        if mp:
+            # a chapter break: unnumbered part heading, section counter reset, and
+            # sections numbered A1, A2.1, ... within it so \cref prints what the
+            # markdown says
+            return ("\\part*{%s}\\setcounter{section}{0}"
+                    "\\renewcommand{\\thesection}{%s\\arabic{section}}" % (title, mp.group(1)))
         lab = label_for(slug)
         if not lab:
             sys.stderr.write("WARN: no label for slug %r\n" % slug)
@@ -171,7 +178,7 @@ def replace_section_refs(t):
     # distinguishes an external locator (`analyze.py` §3b) from §3 of this paper:
     # consume it, so an unmapped reference is left literal instead of resolving
     # to the section whose number happens to be its prefix.
-    return re.sub(r'§(\d+[a-z]?(?:\.\d+[a-z]?)?)', repl, t)
+    return re.sub(r'§([AB]?\d+[a-z]?(?:\.\d+[a-z]?)?)', repl, t)
 
 def replace_appendix_refs(t):
     def repl(m):
@@ -256,6 +263,8 @@ def reorder(t):
     merging Limits/Related into Discussion as subsections. The provenance and
     reproducibility note lives in Appendix D in the markdown, so it needs no
     relocation here."""
+    if '\\part*{' in t:
+        sys.stderr.write("reorder: skipped -- two-part layout keeps the markdown order\n"); return t
     intro = re.search(r'\\section\{[^{}]*\}\\label\{sec:intro\}', t)
     app = re.search(r'\\appendix', t)
     if not (intro and app):
@@ -428,7 +437,16 @@ def inject_table_captions(t):
         body = parts[k+1] if k+1 < len(parts) else ""
         if i >= len(TABLE_CAPS):
             sys.stderr.write("WARN: more longtables than captions (%d)\n" % i); out.append(delim+body); continue
-        kw, lab, cap = TABLE_CAPS[i]
+        # Match by header keyword first: moving a section reorders the tables,
+        # and an index-matched caption would land on the wrong one silently.
+        m0 = re.match(r'([ \t]*\\toprule\\noalign\{\}\n.*?[ \t]*\\midrule\\noalign\{\}\n)', body, re.DOTALL)
+        hb = m0.group(1) if m0 else ""
+        cands = [e for e in TABLE_CAPS if e[0] in hb]
+        if len(cands) == 1:
+            kw, lab, cap = cands[0]
+        else:
+            sys.stderr.write("WARN: table %d matched %d caption keywords; falling back to position\n" % (i+1, len(cands)))
+            kw, lab, cap = TABLE_CAPS[i]
         if lab in COLSPECS:
             delim = re.sub(r'\\begin\{longtable\}\[\]\{[^\n]*\}',
                            lambda m: "\\begin{longtable}[]{%s}" % COLSPECS[lab], delim)
