@@ -26,10 +26,10 @@ SRC, DST = "_body_pandoc.tex", "body.tex"
 # freely without touching this file. Unnumbered subsubsections keep exact slugs.
 PREFIX_LABELS = {   # keys are the pandoc slug prefix: a21 = "A2.1 ...", b46 = "B4.6 ...", d1 = "D.1 ..."
  "a1":"sec:a-intro","a2":"sec:a-method","a3":"sec:a-results",
- "a4":"sec:a-discussion","a21":"sec:occ-classification",
+ "a4":"sec:a-limits","a5":"sec:a-discussion","a21":"sec:occ-classification",
  "a22":"sec:member-spec","a31":"sec:class","a32":"sec:occupation",
  "a33":"sec:prominence","a34":"sec:four-predictors","a35":"sec:chase-flight",
- "a41":"sec:market-measure","b1":"sec:intro","b2":"sec:data",
+ "a51":"sec:market-measure","1":"sec:intro","b1":"sec:b-intro","b2":"sec:data",
  "b3":"sec:method","b4":"sec:results","b5":"sec:related","b6":"sec:limits",
  "b7":"sec:discussion","b8":"sec:conclusion","b21":"sec:hazards",
  "b31":"sec:calibration-method","b32":"sec:detector",
@@ -72,10 +72,10 @@ def label_for(slug):
 # §N / §N.M  ->  label   (only these resolve; anything else is left literal)
 NUMMAP = {
  "A1":"sec:a-intro","A2":"sec:a-method","A3":"sec:a-results",
- "A4":"sec:a-discussion","A2.1":"sec:occ-classification",
+ "A4":"sec:a-limits","A5":"sec:a-discussion","A2.1":"sec:occ-classification",
  "A2.2":"sec:member-spec","A3.1":"sec:class","A3.2":"sec:occupation",
  "A3.3":"sec:prominence","A3.4":"sec:four-predictors",
- "A3.5":"sec:chase-flight","A4.1":"sec:market-measure","B1":"sec:intro",
+ "A3.5":"sec:chase-flight","A5.1":"sec:market-measure","1":"sec:intro","B1":"sec:b-intro",
  "B2":"sec:data","B3":"sec:method","B4":"sec:results","B5":"sec:related",
  "B6":"sec:limits","B7":"sec:discussion","B8":"sec:conclusion",
  "B2.1":"sec:hazards","B3.1":"sec:calibration-method","B3.2":"sec:detector",

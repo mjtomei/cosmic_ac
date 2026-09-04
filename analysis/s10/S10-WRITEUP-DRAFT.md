@@ -8,6 +8,65 @@ The register, however, **predates the models by decades**. That history is invis
 
 A juniority gradient predates even that, steepening as cohorts formed inside the drift arrive. Prior occupation leaves a small, replicated signature that absorbs the class schema: a preregistered organisational-altitude measure peaks at the insulated middle and sits lowest at free work, off the hierarchy. The machine register is one visible edge of an older, human process — a register of accountability without authorship — that machine intelligence exposes rather than creates.
 
+## 1. Introduction
+
+Institutions speak in a register. Legislative speech has carried one as long
+as official reporters have transcribed it — measured, procedural, deliberately
+impersonal — and any regular reader of Hansard knows it on sight. When the
+conditions of production change, the register can move. This study began with
+a clip: a Canadian provincial member reading a speech that still carried
+traces of the prompt used to generate it. The first question was the obvious
+one — how much legislative speech is now drafted by a machine? The question it
+ended on was unplanned: where did the register the machines write in come
+from?
+
+With the release of ChatGPT in November 2022, fluent drafting became free to
+every legislative office at once. What that did to the record matters in a way
+it does not for most text: a floor speech is the official act of
+representation, consulted by constituents, journalists and historians, and it
+enters the record under the member's own name. Yet a 22-chamber policy scan
+finds no chamber requiring machine drafting to be disclosed and none
+forbidding it — the record is silent exactly where the change is happening.
+
+Attempts to measure machine text in institutional corpora fall into three
+families. *Instance detectors* score one text at a time, and applied naively to
+parliamentary speech they have produced two unsatisfying results: off-the-shelf
+detectors, run over 124,000 Australian federal speeches, found no post-ChatGPT
+rise (Rice), and a phrase-spike claim in the UK Commons came with no prevalence
+estimate behind it (Pimlico Journal). *Population-level methods* estimate the
+machine-modified fraction of a whole corpus distributionally, and put post-2022
+figures between 6.5% and 17.5% on peer reviews and scientific papers (Liang et
+al.). *Marker-vocabulary instruments* track the words models overuse — excess
+vocabulary in biomedical abstracts (Kobak et al.) and in scholarly writing at
+large (Gray). Closest to this study, Suvanto et al. detect undisclosed LLM
+text in UK and Swedish parliamentary motions with a glass-box classifier and
+find a steady rise from 2022 — two chambers, written motions rather than
+transcribed speech.
+
+Each family answers part of the question. The parliamentary studies cover one
+or two chambers, and the detector and classifier approaches need ground
+truth — labelled or synthetic training text — and inherit its blind spots.
+The deeper gap is what all of this work assumes: that the machine register is
+a new arrival, something to detect, dating from 2022. None asks whether the
+register the detectors key on existed before the machines, or which speakers
+already used it.
+
+The question splits in two. *Prevalence* — how much of the record a machine drafted — needs a calibrated detector. *Permeation* — whether human speech drifts toward the machine register independent of drafting — needs an instrument independent of the detector, because the human baseline is itself moving. Conflating the halves is the main error available here.
+
+We therefore measure both, separately, across 22 chambers in five countries (twenty of them in the prevalence arm), on a corpus reaching back three decades — the depth that makes the second question askable at all. Pangram, a commercial detector calibrated against each chamber's own pre-2022 record (specificity 1,260 of 1,260), measures prevalence. A lexical register instrument built from the vocabulary language models overuse, run against each chamber's own placebo-matched counterfactual, measures permeation.
+
+The two instruments differ in what they can be trusted with. The detector is a black box with a measured false-positive floor. The register is transparent, cheap at corpus scale, and robust to the light editing that defeats detectors, but coarse. The claims therefore rest on a division of labour rather than on the two instruments agreeing on one number: the calibrated detector carries prevalence, the register carries history and social structure. They meet at one point, the genre ladder, where both face the same confound — drift in what kind of business the record contains. Each meets it in the open: the detector's flags are audited inside the unscripted genre, and the register's trend is post-stratified against the drift.
+
+The question we came with gets its answer. At least 9.0% of words in current legislative speech are machine-drafted — a floor, because directed effort evades the detector. The share spreads fourfold across chambers and concentrates in scripted genres; against a deliberation rubric, flagged speech is better-formed and, once genre or chamber is held fixed, no less engaged, in the cross-chamber arm and in controlled model continuations alike.
+
+The finding we did not come for is the paper's centre of gravity. The register instrument, borrowed to cross-check the detector, turned out to have a history: a rise spanning three decades, dated 1994–96 on the longest series. On the machine side the register itself is a post-training artifact, installed by the stages trained on human demonstrations and preferences and not by the stage trained on verifiable math and code.
+
+When we went looking for who carried it, the dominant simple correlate is birth year — a juniority gradient older than the drift itself, steepened by the cohorts formed inside it. A pre-registered occupational model adds weaker but real structure — the register peaks at the insulated middle of organisational hierarchies, the rungs that answer upward without the final say — and social class traces the same inverted-U at coarser grain. These correlations locate the rise without yet explaining it; together they cover about a sixth of member-level variation, most of that birth year. Machine intelligence did not invent this register of accountability without authorship; it inherited it, automated it, and made it measurable.
+
+The two halves of the study meet at one measurable point. Post-training elevates the same marker vocabulary that, among humans, peaks at the insulated organisational middle — a shared rate on one word list, not a shared mix, and a weak effect. That overlap is a quantitative handle on what Brynjolfsson calls the Turing trap: the worry that human-imitating AI is developed to substitute for workers rather than augment them. We do not argue the case. We supply a way to measure it, and a template for the oversight measurements the worry calls for.
+
+That template is the study itself. Essentially every measurement in it — extraction, scoring, coding, grading, across 22 chambers and three decades — was executed by machine intelligence, cheaply enough to repeat on any open record. The null results, replications and superseded analyses that usually go unreported are kept in the record rather than discarded, and pervasive logging supplies the substance of pre-registration: timestamped predictions verifiably preceding the data, without the formal document as sole witness. Detection is better used to measure a norm than to police it, and the measuring is now nearly free.
+
 ## Part A — The occupational altitude measure
 
 ## A1. Introduction
@@ -22,11 +81,53 @@ the measure as one instrument among several. A reader with no interest in
 measure design can start at Part B; where it draws on the measure it says so
 and points here.
 
-<!-- SPLIT NOTE (2026-09-04, deterministic move; nothing below is new prose):
-     A1 still needs the measure's positioning for a stratification-methods
-     reader (Weeden–Grusky microclass, Kohn–Schooler, ISEI/SIOPS) and a
-     statement of the claim. A2.2 still needs the register outcome restated
-     from B3.3 so Part A stands alone. Part A has no Limits section yet. -->
+**The measure.** Socioeconomic position is usually read off a categorical
+map — Erikson and Goldthorpe's EGP schema for class — or off a fitted scale
+such as Ganzeboom's ISEI or Treiman's SIOPS, which place an occupation by the
+education and earnings of its incumbents. Weeden and Grusky argued that class
+is better measured at the disaggregated occupation, where it outpredicts the
+big-class schemas; Kohn and Schooler located the class–psychology link in
+occupational self-direction, closeness of supervision above all. Part A keeps
+that direction of travel — position read from occupational content — and
+takes it a step further: the content is scored from O\*NET's descriptors of
+what a job involves, by coders who were never shown the outcome or the
+hypothesis, on a level the categorical maps do not draw.
+
+The construction is in §A2.1. Each legislator's prior occupation is
+double-blind coded to an O\*NET-SOC code (96.4% raw agreement), and the code's
+element ratings are averaged, under blind-derived signatures, into four levels
+of organisational altitude — free work outside any hierarchy, then bottom,
+middle and top — built two semi-independent ways: a *theoretical ladder*
+composed from four accountability components, and a *folk ladder* scored from
+the element signatures that eighteen blind coders assigned to the everyday
+image of a corporate hierarchy.
+
+**The claim.** The legislative register — a member's rate of use of the
+vocabulary language models overuse, defined in §A2.2 — peaks at the insulated
+middle of the organisational hierarchy and sits lowest among occupations that
+stand outside it. The prediction was registered before the first fit, with its
+timeline recorded to the minute (§A3.2), and it held: on both constructions
+the middle is the peak and free work the floor, with middle slopes that differ
+by 0.001; the free level is negative in 21 of 22 chambers; and the registered
+middle-over-top contrast, the apex delta, pools at z = 4.2.
+
+**What the measure is, and is not.** Against the market-fitted scales it is
+convergent without being any of them: member-weighted Cramér's V between the
+folk level and each anchor runs 0.31 to 0.47, while regressing each level on
+occupational education and log wage leaves more than half of every level's
+variance unexplained (R² 0.32–0.45). In the joint model the asymmetry is
+complete: entered beside the study's covariates, ISEI and wage collapse while
+the folk ladder stands, and the EGP class block — significant on its own —
+falls to p = 0.56 once the ladders enter, because the class label is a coarse
+coding of the occupational content the ladders score at finer grain (§A3.4).
+
+**Order.** §A2 gives the construction and the estimation specification, and
+restates the outcome so this part can be read on its own. §A3 reports the
+results in the order the arm developed: the class and education contrasts
+that first showed the shape (§A3.1), the measure built to explain it (§A3.2),
+prominence as a separate gradient (§A3.3), every member-level predictor in
+one model (§A3.4), and an exploratory reading of the gradients (§A3.5). §A4
+states the measure's limits; §A5 sets it against the market's measures.
 
 ## A2. Data and method
 
@@ -86,6 +187,18 @@ item 24.
 
 ### A2.2 The member-level specification
 
+
+**The outcome.** The dependent variable throughout Part A is the register
+instrument of Part B (§B3.3): a member's rate of occurrence, per 100k words,
+of the 407 style words that Kobak et al.'s excess-vocabulary method identifies
+as the vocabulary language models overuse, computed over the member's own
+speech. It is a descriptive series, not a detector — it fails an in-time
+placebo test, and it separates machine-flagged from unflagged segments only at
+AUC 0.61 — and it is used here as a measure of how far a member's speech sits
+toward the machine register, not as evidence that any of it was
+machine-drafted. For estimation the rate is z-scored within each legislature
+against its full member population, so a member's score is a position among
+that chamber's own speakers.
 
 The final specification governs every subsection below: one observation per legislator
 at equal weight, register z-scored within each legislature against its full
@@ -904,9 +1017,58 @@ deep archive reaches that far, and occupations are recoverable (Appendix C).
     2000, Labov 1972); the Labov year/publisher error the file flagged is
     corrected. See `CLASS-REGISTER-LITERATURE.md`.
 
-## A4. Discussion
+## A4. Limits
 
-### A4.1 The measure against the market's measure
+**The unit is the occupation, not the member.** Every level score is a
+property of an O\*NET-SOC code, so members who share a prior occupation share
+a score exactly, and legislators come from a narrow band of occupations. The
+effective sample for the occupational contrasts is the number of distinct
+occupations represented, weighted by how many members hold each, and it is far
+smaller than the member count; the largest single occupation supplies a
+substantial share of the panel on its own. Errors are HC1 on one observation
+per member; nothing clusters on occupation. A check clustered on occupation is
+the natural next step and has not been run.
+
+<!-- From a scratch computation on the committed member table (2026-09-04,
+     not yet a committed artifact): 4,742 scored members fall on 351 distinct
+     folk-ladder score vectors; the five most common hold 41% of members and
+     the single most common 908 (19%). Commit as a script + CSV before citing
+     the numbers in the text. -->
+
+**The levels of one ladder cannot be read one at a time inside a joint fit.**
+The four level scores of a ladder are contrasts over one descriptor space —
+the folk middle and top are built from almost the same elements with the same
+signs — so entered together they are near-collinear, and a level's partial
+coefficient measures only the sliver its siblings leave unexplained. The
+preregistration's rule that a ladder's levels never enter together (Appendix
+B, item 14) governs every level-wise result in §A3.2; where §A3.4 enters a
+ladder as a block, only the block test is interpretable, and the per-level
+rows there are not.
+
+<!-- Same provenance: from element_levels.json, folk MIDDLE has 27 consensus
+     elements, TOP 34, and they share 26 with identical sign; the two scores
+     correlate +0.985 across members. Commit the derivation before citing. -->
+
+**The effects are small.** In the field's common currency the insulation
+delta is a correlation of r ≈ .07 and the class block r ≈ .10 — at or below
+the typical published effect in individual-differences research. §B6
+calibrates what that size means; nothing in Part A depends on any one effect
+being large, and the claim is about shape and replication, not magnitude.
+
+**The measure explains destination, not origin.** It scores the job a member
+held before entering the chamber, and it absorbs class and education because
+those are coarser codings of the same job. It says nothing about why members
+from those occupations speak as they do; the interpretation offered in §A3.5
+is exploratory and labelled as such.
+
+**Coverage is not complete.** 4,762 members carry both register and
+instrument; 3,594 carry every covariate, and the joint model runs on the 3,631
+with occupational-score coverage. An occupation missing a signature element
+cannot be scored at all (§A2.1).
+
+## A5. Discussion
+
+### A5.1 The measure against the market's measure
 
 On the measurement of position itself, the classification of §A3.2 sits in
 a short lineage. Erikson and Goldthorpe's EGP schema is the categorical
@@ -964,63 +1126,31 @@ blind machine measure picked it up.
 
 ## B1. Introduction
 
-Institutions speak in a register. Legislative speech has carried one as long
-as official reporters have transcribed it — measured, procedural, deliberately
-impersonal — and any regular reader of Hansard knows it on sight. When the
-conditions of production change, the register can move. This study began with
-a clip: a Canadian provincial member reading a speech that still carried
-traces of the prompt used to generate it. The first question was the obvious
-one — how much legislative speech is now drafted by a machine? The question it
-ended on was unplanned: where did the register the machines write in come
-from?
+Part B asks two questions of the same record. How much of what legislators
+now say was drafted by a machine — and where did the register the machines
+write in come from? The first is a prevalence question and needs a calibrated
+detector. The second is a history question and needs an instrument that does
+not depend on the detector, because the human baseline is itself moving. §1
+sets out both instruments and the division of labour between them; this part
+reports what they found.
 
-With the release of ChatGPT in November 2022, fluent drafting became free to
-every legislative office at once. What that did to the record matters in a way
-it does not for most text: a floor speech is the official act of
-representation, consulted by constituents, journalists and historians, and it
-enters the record under the member's own name. Yet a 22-chamber policy scan
-finds no chamber requiring machine drafting to be disclosed and none
-forbidding it — the record is silent exactly where the change is happening.
+The order follows the evidence. §B4.1–§B4.3 establish the detector's
+calibration and the prevalence it measures: no false positives on 1,260
+pre-2022 speeches, a floor of 9.0% of current words, a fourfold spread across
+chambers, and a concentration in scripted business. §B4.4–§B4.5 turn to the
+register: a rise dated 1994–96 on the longest series, other chambers
+converging on a level the United States already held, and a birth-year
+gradient older than the drift. §B4.6 states what Part A establishes about who
+carries it. §B4.7–§B4.10 close on the machines: permeation into human speech,
+small but positive; post-training as the stage that installs the register;
+deliberative quality, better-formed and not worse-engaged; and directed effort
+that evades the detector while leaving that quality unchanged.
 
-Attempts to measure machine text in institutional corpora fall into three
-families. *Instance detectors* score one text at a time, and applied naively to
-parliamentary speech they have produced two unsatisfying results: off-the-shelf
-detectors, run over 124,000 Australian federal speeches, found no post-ChatGPT
-rise (Rice), and a phrase-spike claim in the UK Commons came with no prevalence
-estimate behind it (Pimlico Journal). *Population-level methods* estimate the
-machine-modified fraction of a whole corpus distributionally, and put post-2022
-figures between 6.5% and 17.5% on peer reviews and scientific papers (Liang et
-al.). *Marker-vocabulary instruments* track the words models overuse — excess
-vocabulary in biomedical abstracts (Kobak et al.) and in scholarly writing at
-large (Gray). Closest to this study, Suvanto et al. detect undisclosed LLM
-text in UK and Swedish parliamentary motions with a glass-box classifier and
-find a steady rise from 2022 — two chambers, written motions rather than
-transcribed speech.
-
-Each family answers part of the question. The parliamentary studies cover one
-or two chambers, and the detector and classifier approaches need ground
-truth — labelled or synthetic training text — and inherit its blind spots.
-The deeper gap is what all of this work assumes: that the machine register is
-a new arrival, something to detect, dating from 2022. None asks whether the
-register the detectors key on existed before the machines, or which speakers
-already used it.
-
-The question splits in two. *Prevalence* — how much of the record a machine drafted — needs a calibrated detector. *Permeation* — whether human speech drifts toward the machine register independent of drafting — needs an instrument independent of the detector, because the human baseline is itself moving. Conflating the halves is the main error available here.
-
-We therefore measure both, separately, across 22 chambers in five countries (twenty of them in the prevalence arm), on a corpus reaching back three decades — the depth that makes the second question askable at all. Pangram, a commercial detector calibrated against each chamber's own pre-2022 record (specificity 1,260 of 1,260), measures prevalence. A lexical register instrument built from the vocabulary language models overuse, run against each chamber's own placebo-matched counterfactual, measures permeation.
-
-The two instruments differ in what they can be trusted with. The detector is a black box with a measured false-positive floor. The register is transparent, cheap at corpus scale, and robust to the light editing that defeats detectors, but coarse. The claims therefore rest on a division of labour rather than on the two instruments agreeing on one number: the calibrated detector carries prevalence, the register carries history and social structure. They meet at one point, the genre ladder, where both face the same confound — drift in what kind of business the record contains. Each meets it in the open: the detector's flags are audited inside the unscripted genre, and the register's trend is post-stratified against the drift.
-
-The question we came with gets its answer. At least 9.0% of words in current legislative speech are machine-drafted — a floor, because directed effort evades the detector. The share spreads fourfold across chambers and concentrates in scripted genres; against a deliberation rubric, flagged speech is better-formed and, once genre or chamber is held fixed, no less engaged, in the cross-chamber arm and in controlled model continuations alike.
-
-The finding we did not come for is the paper's centre of gravity. The register instrument, borrowed to cross-check the detector, turned out to have a history: a rise spanning three decades, dated 1994–96 on the longest series. On the machine side the register itself is a post-training artifact, installed by the stages trained on human demonstrations and preferences and not by the stage trained on verifiable math and code.
-
-When we went looking for who carried it, the dominant simple correlate is birth year — a juniority gradient older than the drift itself, steepened by the cohorts formed inside it. A pre-registered occupational model adds weaker but real structure — the register peaks at the insulated middle of organisational hierarchies, the rungs that answer upward without the final say — and social class traces the same inverted-U at coarser grain. These correlations locate the rise without yet explaining it; together they cover about a sixth of member-level variation, most of that birth year. Machine intelligence did not invent this register of accountability without authorship; it inherited it, automated it, and made it measurable.
-
-The two halves of the study meet at one measurable point. Post-training elevates the same marker vocabulary that, among humans, peaks at the insulated organisational middle — a shared rate on one word list, not a shared mix, and a weak effect. That overlap is a quantitative handle on what Brynjolfsson calls the Turing trap: the worry that human-imitating AI is developed to substitute for workers rather than augment them. We do not argue the case. We supply a way to measure it, and a template for the oversight measurements the worry calls for.
-
-That template is the study itself. Essentially every measurement in it — extraction, scoring, coding, grading, across 22 chambers and three decades — was executed by machine intelligence, cheaply enough to repeat on any open record. The null results, replications and superseded analyses that usually go unreported are kept in the record rather than discarded, and pervasive logging supplies the substance of pre-registration: timestamped predictions verifiably preceding the data, without the formal document as sole witness. Detection is better used to measure a norm than to police it, and the measuring is now nearly free.
-
+Part A's measure enters this part twice: as the occupational structure
+summarised at §B4.6, and where the post-training results compare the
+vocabulary the training stages install with the one the human organisational
+middle overuses. Where a claim here rests on that measure, the text says so
+and points to Part A.
 ## B2. Data
 
 The corpus is twenty-two chambers across five countries, extracted from
@@ -2994,7 +3124,7 @@ every sitting — is the natural complement to whatever disclosure rule a
 chamber does adopt. And it generalises: the same instruments that measure
 how much machine text enters a record can measure whose register a model
 was tuned to reproduce, which is the form of oversight the substitution
-worry (§B1) actually calls for. Because register and prevalence can now be
+worry (§1) actually calls for. Because register and prevalence can now be
 measured explicitly, a legislature with a stated goal of fair representation
 can control for them — a fairness mechanism independent of the social
 dynamics §A3.5 documents, which are expected to persist.
@@ -4518,9 +4648,9 @@ Material sound enough to keep but not needed in the reader's path.
    assessment instrument; the version worth building is the one that is legible
    to the person being assessed.
 
-6. **The introduction's prospectus paragraph** (cut from §B1). A statement of
+6. **The introduction's prospectus paragraph** (cut from §1). A statement of
    which research fields the pattern of findings opens. It carries no
-   measurement, and it left the reader's path because §B1 already previews the
+   measurement, and it left the reader's path because §1 already previews the
    findings over five consecutive paragraphs while Appendix C names the
    specific follow-on studies, with designs and costs, in far more detail.
 
@@ -4700,12 +4830,12 @@ Material sound enough to keep but not needed in the reader's path.
     two-decade spread. Coefficients answer "how much for whom"; variance
     shares answer "how much of the panel".
 
-18. **The introduction's classification by-product paragraph** (cut from §B1).
+18. **The introduction's classification by-product paragraph** (cut from §1).
     A preview of the measurement by-product — that the occupational instrument
     is a socioeconomic measure scored from occupational content rather than
-    from a categorical schema — which §A3.2 establishes in full and §A4.1 argues
+    from a categorical schema — which §A3.2 establishes in full and §A5.1 argues
     at length. It carries no measurement of its own, and it left the reader's
-    path because §B1 already previews the study's findings over five consecutive
+    path because §1 already previews the study's findings over five consecutive
     paragraphs.
 
     > Chasing the occupational ordering produced a by-product worth naming: a measure of socioeconomic position scored from occupational content rather than from a categorical schema. Its distinctive level — free work, outside the organisational hierarchy altogether — carried a preregistered, confirmed prediction. The best-performing form is a folk category, concretized: machine coders, blind to the outcome, turned the everyday picture of a corporate ladder into a scored instrument. Bespoke classifications of that kind are now cheap enough to preregister and check.
@@ -4854,13 +4984,13 @@ Material sound enough to keep but not needed in the reader's path.
     families at 1,600 prompts, every corpus truncated to 1,187,489 words, base
     and instruct counted separately.
 
-26. **The market-as-social-oracle generalisation** (cut from §A4.1). The
-    broadest form of §A4.1's argument — that cheap blind bespoke measures weaken
+26. **The market-as-social-oracle generalisation** (cut from §A5.1). The
+    broadest form of §A5.1's argument — that cheap blind bespoke measures weaken
     the standing defence of prices as the best available reading of social
-    structure. It carries no measurement of its own beyond what §A4.1 already
+    structure. It carries no measurement of its own beyond what §A5.1 already
     reports (the blind folk ladder absorbing the categorical schema in the joint
     model, §A3.4, and standing beside ISEI and wage quartiles, §A3.2), and it
-    left the reader's path because §A4.1 already lands its measurement point one
+    left the reader's path because §A5.1 already lands its measurement point one
     paragraph earlier and the extension is about markets rather than about
     legislative speech.
 
