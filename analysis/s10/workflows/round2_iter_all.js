@@ -483,6 +483,26 @@ claim of what was/wasn't found changes, is added, or is dropped. Changes to
 interpretation, framing, emphasis, hedging, or order are "pass". Fail closed
 if you cannot locate the passage or verify a number.`
 
+// FABLE FALLBACK (Matthew, 2026-09-03). Fable is metered separately on the work
+// account and can run out part-way through a long run. If the data gate goes
+// dark, every remaining candidate drops as faith_check_errored — safe, since
+// nothing unchecked is applied, but it wastes the rest of the run. So any
+// failed or empty gate call is retried once on work/claude-opus-5.
+//
+// The retry catches BOTH failure shapes: agent() rejects on some errors and
+// returns null on a terminal one after retries, and only the first reaches a
+// .catch(). Retrying every failure rather than only quota errors costs at most
+// one extra call and needs no guess about which error means exhausted.
+const faithCall = async (prompt, label, schema) => {
+  const opts = { agentType: 'check-faithfulness', phase: 'Faithfulness', schema }
+  const first = await agent(prompt, { ...opts, model: FAITH_MODEL, label })
+    .catch(() => null)
+  if (first) return first
+  log(`${label}: gate call failed on ${FAITH_MODEL}; retrying on ${WORKER_MODEL}`)
+  return agent(prompt, { ...opts, model: WORKER_MODEL, label: `${label}:fallback` })
+    .catch(() => null)
+}
+
 // REPAIR (Matthew, 2026-09-03). Most gate failures are a sloppy execution of a
 // sound idea rather than a bad idea: of the 16 changes iteration 4 dropped, 13
 // either deleted a number the rest of the manuscript does not carry, or moved a
@@ -613,8 +633,7 @@ const runScope = async (sc, preset) => {
     : `${id}: ${proposals.length} proposals -> ${candidates.length} candidates`)
 
   const faiths = await parallel(candidates.map(c => () =>
-    agent(FAITH_PROMPT(c), { agentType: 'check-faithfulness', model: FAITH_MODEL, label: `faith:${c.id}`,
-                             phase: 'Faithfulness', schema: FAITH_SCHEMA }).catch(() => null)))
+    faithCall(FAITH_PROMPT(c), `faith:${c.id}`, FAITH_SCHEMA)))
   const withFaith = candidates.map((c, i) => {
     const f = faiths[i]
     // current_matches is recorded and reported, but does NOT gate: the applier
@@ -638,9 +657,7 @@ const runScope = async (sc, preset) => {
   let n_repaired = 0
   if (repairable.length) {
     const fixes = await parallel(repairable.map(c => () =>
-      agent(REPAIR_PROMPT(c), { agentType: 'check-faithfulness', model: FAITH_MODEL,
-                                label: `repair:${c.id}`, phase: 'Faithfulness', schema: REPAIR_SCHEMA })
-        .catch(() => null)))
+      faithCall(REPAIR_PROMPT(c), `repair:${c.id}`, REPAIR_SCHEMA)))
     const patched = []
     repairable.forEach((c, i) => {
       const f = fixes[i]
@@ -648,9 +665,7 @@ const runScope = async (sc, preset) => {
         patched.push({ ...c, proposed: f.proposed, repaired: true, repair_note: f.note })
     })
     const rechecks = patched.length ? await parallel(patched.map(c => () =>
-      agent(FAITH_PROMPT(c), { agentType: 'check-faithfulness', model: FAITH_MODEL,
-                               label: `recheck:${c.id}`, phase: 'Faithfulness', schema: FAITH_SCHEMA })
-        .catch(() => null))) : []
+      faithCall(FAITH_PROMPT(c), `recheck:${c.id}`, FAITH_SCHEMA))) : []
     patched.forEach((c, i) => {
       const f = rechecks[i]
       if (!(f && f.locatable !== false && f.data_faithful === 'pass')) return
