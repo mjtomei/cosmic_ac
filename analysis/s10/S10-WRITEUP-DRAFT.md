@@ -1096,7 +1096,7 @@ fitted continuous scales too: beside the study's covariates, ISEI and wage
 quartiles collapse while the folk block stands, and more than half of each
 level's variance lies off the education–earnings plane entirely (§A3.2).
 A classification built blind recovered social-structural information the
-market-fitted scales demonstrably do not carry. That
+market-fitted measures demonstrably do not carry. That
 is the live instance of the change this paper keeps meeting — structure
 that institutions summarised lossily, because tracking it was uneconomic,
 becoming directly measurable.
@@ -2925,7 +2925,7 @@ baseline is moving toward the thing being detected.
   substance arm is buildable from materials we already hold (Appendix C item 1);
   until it exists, no claim in this study should be read as being about the
   content of legislative argument.
-- **The birth-year gradient's components are separated; its mechanism is
+- **The juniority gradient's components are separated; its mechanism is
   not.** §B4.5 splits a standing juniority gradient from a cohort component
   arriving with drift-formed cohorts, under an era-stable juniority profile
   (stated there). Why either component exists is open — three exposure tests
