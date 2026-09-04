@@ -30,7 +30,7 @@ PREFIX_LABELS = {
  "34":"sec:occ-classification","35":"sec:retired",
  "4":"sec:results","41":"sec:calibration","42":"sec:prevalence",
  "42a":"sec:prevalence-audits","43":"sec:genre","44":"sec:register-shift",
- "44a":"sec:climb-geography",
+ "44a":"sec:climb-geography","44b":"sec:acceleration",
  "45":"sec:generational","45a":"sec:careers","46":"sec:social-structure",
  "46a":"sec:class","46b":"sec:occupation","46c":"sec:prominence",
  "46d":"sec:four-predictors","46e":"sec:chase-flight",
@@ -41,6 +41,7 @@ PREFIX_LABELS = {
  "410a":"sec:evasion-accounting",
  "410b":"sec:evasion-quality",
  "5":"sec:related","6":"sec:limits","7":"sec:discussion",
+ "8":"sec:conclusion",
  "71":"sec:disc-limit","72":"sec:disc-norms","72a":"sec:gut-judgment",
  "73":"sec:disc-substitution","74":"sec:market-measure","75":"sec:policy",
  "d1":"sec:run-on","d2":"sec:cross-route","d3":"sec:reanalysis",
@@ -75,7 +76,7 @@ NUMMAP = {
  "3.4":"sec:occ-classification","3.5":"sec:retired",
  "4":"sec:results","4.1":"sec:calibration","4.2":"sec:prevalence",
  "4.2a":"sec:prevalence-audits","4.3":"sec:genre","4.4":"sec:register-shift",
- "4.4a":"sec:climb-geography",
+ "4.4a":"sec:climb-geography","4.4b":"sec:acceleration",
  "4.5":"sec:generational","4.5a":"sec:careers",
  "4.6":"sec:social-structure","4.6a":"sec:class",
  "4.6b":"sec:occupation","4.6c":"sec:prominence","4.6d":"sec:four-predictors",
@@ -86,7 +87,7 @@ NUMMAP = {
  "4.10":"sec:evasion",
  "4.10a":"sec:evasion-accounting",
  "4.10b":"sec:evasion-quality",
- "5":"sec:related","6":"sec:limits","7":"sec:discussion",
+ "5":"sec:related","6":"sec:limits","7":"sec:discussion","8":"sec:conclusion",
  "7.1":"sec:disc-limit","7.2":"sec:disc-norms","7.2a":"sec:gut-judgment",
  "7.3":"sec:disc-substitution","7.4":"sec:market-measure","7.5":"sec:policy",
 }
@@ -246,7 +247,7 @@ def insert_appendix(t):
         sys.stderr.write("WARN: app:null heading not found for \\appendix\n")
     return t
 
-PUB_ORDER = ["sec:intro","sec:results","sec:discussion","sec:data","sec:method"]
+PUB_ORDER = ["sec:intro","sec:results","sec:discussion","sec:conclusion","sec:data","sec:method"]
 MERGE_INTO_DISCUSSION = ["sec:limits","sec:related"]  # demoted to subsections
                         # (Policy context is already a subsection of Discussion)
 
@@ -273,8 +274,14 @@ def reorder(t):
     # merge Limits/Related into Discussion, before a Future work subsection if one
     # is still there (it is now Appendix C, so they land at the end of Discussion)
     disc = blocks["sec:discussion"]
-    demoted = "".join(re.sub(r'\\section\{', r'\\subsection{', blocks[lab], count=1)
-                      for lab in MERGE_INTO_DISCUSSION)
+    def demote(b):
+        # a demoted section's own children have to move down with it, or a
+        # subsection of Limits ends up a sibling of Limits.
+        if "\\subsubsection{" in b:
+            sys.stderr.write("WARN: demoted section carries subsubsections\n")
+        b = b.replace("\\subsection{", "\\subsubsection{")
+        return re.sub(r'\\section\{', r'\\subsection{', b, count=1)
+    demoted = "".join(demote(blocks[lab]) for lab in MERGE_INTO_DISCUSSION)
     mfut = re.search(r'\\subsection\{[^{}]*\}\\label\{sec:future\}', disc)
     disc = (disc[:mfut.start()] + demoted + disc[mfut.start():]) if mfut else (disc + demoted)
     blocks["sec:discussion"] = disc
@@ -296,22 +303,19 @@ TABLE_CAPS = [
  ("genre, 2025--26", "tab:genre", "Machine-drafted share by genre of business, 2025--26."),
  ("gap 1994", "tab:climb-long", "The longest window: the three chambers whose series reach 1994."),
  ("sd of own series", "tab:vs-ushouse", "Register level by chamber, 2020--26 means, benchmarked against the US House."),
- ("clock, per decade", "tab:two-clocks", "The two clocks in one fit: the member-year register rate on birth year and spoken year together, with chamber fixed effects, across all 22 chambers."),
- ("EGP class & mean z", "tab:egp", "Register by EGP social class (member-level means)."),
+ ("clock & slope, instrument occurrences", "tab:two-clocks", "The two clocks in one fit: the member-year register rate on birth year and spoken year together, with chamber fixed effects, across all 22 chambers."),
+ ("EGP class & mean register z", "tab:egp", "Register by EGP social class (member-level means)."),
  ("level & mean z, raw & n & vs bachelor", "tab:education", "Register by education level, relative to a bachelor's degree."),
  ("theoretical ladder & folk ladder", "tab:altitude", "The occupational altitude ladder: register by level on both constructions (plotted in \\cref{fig:altitude})."),
  ("quintile of article length", "tab:prominence-class", "Register by prominence (Wikipedia article-length quintile) across chamber groups."),
  ("term & n & alone & joint", "tab:four-predictors", "Every member-level categorical predictor in one model: each block alone, the joint fit of cohort, all EGP classes, all education levels and prominence quintiles (n = 4{,}056), and the same fit with the occupational blocks added (n = 3{,}631); t in parentheses; the last column converts jointly significant effects into years of cohort, per category."),
  ("term & alone & + occ", "tab:four-predictors-occ", "The occupational blocks of the same simultaneous fit — both altitude ladders and Indoors — each alone and in the joint model with the categorical blocks (n = 3{,}631); t in parentheses. Their terms are per standard deviation, so the last column converts jointly significant effects into years of cohort per standard deviation."),
  ("contrast (top vs peak)", "tab:flight-thresholds", "Flight and chase by minimum-occurrence threshold: the correlation between a word\'s rise and each group\'s relative use of it against its comparison group."),
- ("register shift (corrected)", "tab:posttraining", "Register shift by training stage (Rogan--Gladen corrected)."),
- ("corpus & \\textbf{0}", "tab:coverage-occ", "Style-word coverage by number of occurrences, at matched volume."),
  ("absent from generated only", "tab:coverage-partition", "Where the 407 style words fall: generated text versus Hansard 2025--26."),
  ("contrast & Spearman", "tab:american-alignment", "Post-training preference against the contrasts that separated national usage before the models: Spearman correlations, raw and holding word frequency fixed."),
  ("stage 1, per sd of screen score", "tab:dqi", "Discourse Quality Index associations with machine authorship: stages 1 and 2."),
  ("screen score (0--100) & segments", "tab:applicability", "Applicability of the two sentinel dimensions, by band of the blinded screen score."),
  ("arm & justification difference vs human twins", "tab:continuations", "Machine continuations graded blind: justification and applicability by arm."),
- ("attacker\\textquotesingle s detector access", "tab:bypass-rates", "Bypass rates by whether the attacker may query the detector."),
  ("measurement & rate", "tab:bypass-summary", "Measured rates by attacker model: the vendor-reported one-submission false-negative rates, this study's per-variant rate, and its retry-enabled per-target rate."),
  ("searched & zero-yield", "tab:bypass-yield", "Detector-evasion search yield per target."),
  ("Rice 2026 (Australian federal)", "tab:priorart", "This study against the two closest prior efforts."),
@@ -330,6 +334,7 @@ TABLE_CAPS = [
  ("stage 5 variant (n=35)", "tab:quality-paired", "Paired within-text quality comparisons, all four graded contrasts: evasion-directed rewriting (stages 3 and 4) and successful evasions against their targets (stage 5, at variant and target level), by dimension."),
  ("Pangram 3 & Pangram 4", "tab:calibration", "Calibration on pre-2022 speech: specificity of Pangram 3 versus Pangram 4."),
  ("chamber & machine-drafted share of words", "tab:prevalence", "Prevalence of machine-drafted words by chamber, with 95\\% confidence intervals."),
+ ("corpus --- all 407 style words", "tab:coverage-occ", "Style-word coverage by number of occurrences, at matched volume."),
 ]
 
 
@@ -340,11 +345,11 @@ TABLE_CAPS = [
 COLSPECS = {
  "tab:chambers":       r"@{}lp{0.74\linewidth}@{}",
  "tab:retired":        r"@{}p{0.30\linewidth}p{0.33\linewidth}p{0.30\linewidth}@{}",
- "tab:bypass-rates":   r"@{}lp{0.19\linewidth}p{0.24\linewidth}p{0.30\linewidth}@{}",
- "tab:bypass-summary": (r"@{}p{0.21\linewidth}@{\hspace{5pt}}"
-                        r">{\raggedleft\arraybackslash}p{0.09\linewidth}@{\hspace{5pt}}"
+ "tab:bypass-summary": (r"@{}p{0.24\linewidth}@{\hspace{5pt}}"
+                        r">{\raggedleft\arraybackslash}p{0.07\linewidth}@{\hspace{5pt}}"
                         r">{\raggedleft\arraybackslash}p{0.13\linewidth}@{\hspace{5pt}}"
-                        r"p{0.42\linewidth}@{}"),
+                        r">{\raggedleft\arraybackslash}p{0.12\linewidth}@{\hspace{5pt}}"
+                        r"p{0.31\linewidth}@{}"),
  "tab:applicability":  (r"@{}lr>{\raggedleft\arraybackslash}p{0.26\linewidth}"
                         r">{\raggedleft\arraybackslash}p{0.26\linewidth}@{}"),
  # the per-100k column headers do not fit on one line at natural width
@@ -403,9 +408,14 @@ COLSPECS = {
                         r"@{\hspace{8pt}}>{\raggedleft\arraybackslash}p{0.17\linewidth}"
                         r"@{\hspace{8pt}}>{\raggedleft\arraybackslash}p{0.17\linewidth}"
                         r"@{\hspace{8pt}}>{\raggedleft\arraybackslash}p{0.13\linewidth}@{}"),
- "tab:two-clocks":     (r"@{}l@{\hspace{8pt}}>{\raggedleft\arraybackslash}p{0.16\linewidth}"
+ "tab:two-clocks":     (r"@{}l@{\hspace{8pt}}>{\raggedleft\arraybackslash}p{0.26\linewidth}"
                         r"@{\hspace{8pt}}>{\raggedleft\arraybackslash}p{0.20\linewidth}"
                         r"@{\hspace{8pt}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}"),
+ # the coverage table's first two headers name the denominator and the unit,
+ # which do not fit at natural width beside seven count columns
+ "tab:coverage-occ":   (r"@{}>{\raggedright\arraybackslash}p{0.17\linewidth}@{\hspace{5pt}}"
+                        r">{\raggedleft\arraybackslash}p{0.145\linewidth}@{\hspace{5pt}}"
+                        r"rrrrrr@{}"),
  "tab:elements-levels": r"@{}p{0.40\linewidth}p{0.15\linewidth}llr@{}",
  "tab:elements-components": r"@{}p{0.36\linewidth}p{0.15\linewidth}p{0.15\linewidth}cr@{}",
 }

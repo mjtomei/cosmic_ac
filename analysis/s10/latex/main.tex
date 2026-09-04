@@ -32,6 +32,12 @@
 % map each to its LaTeX form so pdflatex sets them rather than dropping them.
 \usepackage{scicite} % superscript numeric \cite, AAAS style
 \usepackage{newunicodechar}
+% Footnotes rendered as endnotes (Matthew, 2026-09-04): 97 of them, mostly script
+% names and provenance, which interrupt the reading without adding to it. The
+% markdown keeps its [^tag] syntax untouched; only the rendering moves.
+\usepackage{endnotes}
+\renewcommand{\enoteheading}{\section*{Notes}\mbox{}\par\vskip 0.5em}
+\renewcommand{\enotesize}{\normalsize}
 \newunicodechar{−}{\ensuremath{-}}      % U+2212 minus
 \newunicodechar{×}{\ensuremath{\times}}
 \newunicodechar{→}{\ensuremath{\rightarrow}}
@@ -75,7 +81,9 @@
 \date{}
 \begin{document}
 \maketitle
+\let\footnote\endnote
 \input{body}
+\theendnotes
 % References (refs.bib). erikson1992 (EGP class schema) and ouchi1980 are real
 % references used by the study but not yet wired to an inline \cite in the
 % current prose; \nocite keeps them in the list until the writing pass places
