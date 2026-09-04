@@ -73,7 +73,7 @@ That template is the study itself. Essentially every measurement in it — extra
 
 Part A defines and validates the occupational altitude measure — socioeconomic
 position scored from what a job involves rather than from a categorical schema —
-and reports its one substantive result: the legislative register peaks at the
+and reports its one substantive result: the machine register peaks at the
 insulated middle of the organisational hierarchy and sits lowest among
 occupations outside it. Part B tells the study's story — prevalence, the
 register's thirty-year history, and post-training as its mechanism — and uses
@@ -102,8 +102,9 @@ composed from four accountability components, and a *folk ladder* scored from
 the element signatures that eighteen blind coders assigned to the everyday
 image of a corporate hierarchy.
 
-**The claim.** The legislative register — a member's rate of use of the
-vocabulary language models overuse, defined in §A2.2 — peaks at the insulated
+**The claim.** The machine register — a member's rate of use of the
+vocabulary language models overuse, measured in that member's own speech and
+defined in §A2.2 — peaks at the insulated
 middle of the organisational hierarchy and sits lowest among occupations that
 stand outside it. The prediction was registered before the first fit, with its
 timeline recorded to the minute (§A3.2), and it held: on both constructions
