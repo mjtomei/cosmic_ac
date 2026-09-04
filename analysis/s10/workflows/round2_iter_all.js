@@ -442,7 +442,12 @@ Return an object:
 const PROPOSAL_SCHEMA = { type: 'object', required: ['changes'], properties: { changes: { type: 'array', items: {
   type: 'object', required: ['type', 'locus', 'action', 'current', 'proposed', 'rationale'],
   properties: { type: { enum: ['structural', 'prose'] }, locus: { type: 'string' },
-    action: { enum: ['reorder', 'merge', 'split', 'move', 'rewrite'] },
+    // 'cut' is offered in the prompt only when ALLOW_CUTS, and this enum has to
+    // agree with it. Iterations 6 and 7 were told they could cut and then had
+    // the label rejected here, so they smuggled cuts through as 'move' and
+    // 'rewrite'; one proposer noted the workaround in its own rationale. The
+    // behaviour survived, the accounting did not.
+    action: { enum: ['reorder', 'merge', 'split', 'move', 'rewrite'].concat(ALLOW_CUTS ? ['cut'] : []) },
     current: { type: 'string' }, proposed: { type: 'string' }, rationale: { type: 'string' } } } } } }
 
 const VOTE_SCHEMA = { type: 'object',

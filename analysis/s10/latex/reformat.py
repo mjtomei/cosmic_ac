@@ -31,9 +31,9 @@ PREFIX_LABELS = {
  "4":"sec:results","41":"sec:calibration","42":"sec:prevalence",
  "42a":"sec:prevalence-audits","43":"sec:genre","44":"sec:register-shift",
  "44a":"sec:climb-geography",
- "45":"sec:generational","46":"sec:social-structure",
- "46a":"sec:class","46b":"sec:occupation","46c":"sec:four-predictors",
- "46d":"sec:chase-flight","46e":"sub:wordmix",
+ "45":"sec:generational","45a":"sec:careers","46":"sec:social-structure",
+ "46a":"sec:class","46b":"sec:occupation","46c":"sec:prominence",
+ "46d":"sec:four-predictors","46e":"sec:chase-flight",
  "47":"sec:permeation","48":"sec:posttraining","48a":"sec:coverage",
  "48b":"sec:american-alignment","48c":"sec:model-lineage",
  "49":"sec:quality","49a":"sec:applicability","49b":"sec:stage6",
@@ -41,10 +41,10 @@ PREFIX_LABELS = {
  "410a":"sec:evasion-quality",
  "5":"sec:related","6":"sec:limits","7":"sec:discussion",
  "71":"sec:disc-limit","72":"sec:disc-norms","72a":"sec:gut-judgment",
- "73":"sec:disc-substitution","74":"sec:policy","75":"sec:market-measure",
- "d1":"sec:cross-route","d2":"sec:reanalysis","d3":"sec:screen-pangram",
- "d4":"sec:screen-effort","d5":"sec:bypass-sample","d6":"sec:artifacts",
- "d7":"sec:run-on","d8":"sub:element-signatures",
+ "73":"sec:disc-substitution","74":"sec:market-measure","75":"sec:policy",
+ "d1":"sec:run-on","d2":"sec:cross-route","d3":"sec:reanalysis",
+ "d4":"sec:screen-pangram","d5":"sec:screen-effort","d6":"sec:bypass-sample",
+ "d7":"sec:artifacts","d8":"sub:element-signatures",
  "e1":"sec:climb-table","e2":"sub:class-provincial","e3":"sub:education-provincial",
  "e4":"sec:judge-leakage","e5":"sec:prominence-full","e6":"sec:cohort-ministerial",
  "e7":"sec:panel-limits",
@@ -75,9 +75,10 @@ NUMMAP = {
  "4":"sec:results","4.1":"sec:calibration","4.2":"sec:prevalence",
  "4.2a":"sec:prevalence-audits","4.3":"sec:genre","4.4":"sec:register-shift",
  "4.4a":"sec:climb-geography",
- "4.5":"sec:generational","4.6":"sec:social-structure","4.6a":"sec:class",
- "4.6b":"sec:occupation","4.6c":"sec:four-predictors","4.6d":"sec:chase-flight",
- "4.6e":"sub:wordmix",
+ "4.5":"sec:generational","4.5a":"sec:careers",
+ "4.6":"sec:social-structure","4.6a":"sec:class",
+ "4.6b":"sec:occupation","4.6c":"sec:prominence","4.6d":"sec:four-predictors",
+ "4.6e":"sec:chase-flight",
  "4.7":"sec:permeation","4.8":"sec:posttraining","4.8a":"sec:coverage",
  "4.8b":"sec:american-alignment","4.8c":"sec:model-lineage",
  "4.9":"sec:quality","4.9a":"sec:applicability","4.9b":"sec:stage6",
@@ -85,14 +86,14 @@ NUMMAP = {
  "4.10a":"sec:evasion-quality",
  "5":"sec:related","6":"sec:limits","7":"sec:discussion",
  "7.1":"sec:disc-limit","7.2":"sec:disc-norms","7.2a":"sec:gut-judgment",
- "7.3":"sec:disc-substitution","7.4":"sec:policy","7.5":"sec:market-measure",
+ "7.3":"sec:disc-substitution","7.4":"sec:market-measure","7.5":"sec:policy",
 }
 APPMAP = {
  "A":"app:null","B":"app:superseded","C":"app:future","D":"app:repro",
  "E":"app:robustness","F":"app:cut",
- "D.1":"sec:cross-route","D.2":"sec:reanalysis","D.3":"sec:screen-pangram",
- "D.4":"sec:screen-effort","D.5":"sec:bypass-sample","D.6":"sec:artifacts",
- "D.7":"sec:run-on","D.8":"sub:element-signatures",
+ "D.1":"sec:run-on","D.2":"sec:cross-route","D.3":"sec:reanalysis",
+ "D.4":"sec:screen-pangram","D.5":"sec:screen-effort","D.6":"sec:bypass-sample",
+ "D.7":"sec:artifacts","D.8":"sub:element-signatures",
  "E.1":"sec:climb-table","E.2":"sub:class-provincial","E.3":"sub:education-provincial",
  "E.4":"sec:judge-leakage","E.5":"sec:prominence-full",
  "E.6":"sec:cohort-ministerial","E.7":"sec:panel-limits",
@@ -195,7 +196,7 @@ def figure_ref_anchors(t):
     # The three panels below sat unanchored. They are real floats ([htbp]), so
     # unlike the longtables they drift away from the prose that discusses them
     # unless something points at them.
-    (r"not\s+aging\.\}",
+    (r"the\s+cohort\s+gradient\s+seen\s+sideways\.",
      r"\g<0>~(\\cref{fig:tenure})"),
     (r"not\s+in\s+every\s+chamber\.\}",
      r"\g<0>~(\\cref{fig:lifedrift})"),
@@ -294,13 +295,12 @@ TABLE_CAPS = [
  ("instrument & outcome", "tab:retired", "Instruments built and retired, with the result that dropped each."),
  ("Pangram 3 & Pangram 4", "tab:calibration", "Calibration on pre-2022 speech: specificity of Pangram 3 versus Pangram 4."),
  ("chamber & machine-drafted share of words", "tab:prevalence", "Prevalence of machine-drafted words by chamber, with 95\\% confidence intervals."),
- ("pooled rate weighted by & value", "tab:weighting", "What the weighting choice is worth: the pooled prevalence rate under three weightings."),
  ("genre, 2025--26", "tab:genre", "Machine-drafted share by genre of business, 2025--26."),
  ("gap 1994", "tab:climb-long", "The longest window: the three chambers whose series reach 1994."),
  ("sd of own series", "tab:vs-ushouse", "Register level by chamber, 2020--26 means, benchmarked against the US House."),
  ("clock, per decade", "tab:two-clocks", "The two clocks in one fit: the member-year register rate on birth year and spoken year together, with chamber fixed effects, across all 22 chambers."),
  ("EGP class & mean z", "tab:egp", "Register by EGP social class (member-level means)."),
- ("level & mean z & n & vs bachelor", "tab:education", "Register by education level, relative to a bachelor's degree."),
+ ("level & mean z, raw & n & vs bachelor", "tab:education", "Register by education level, relative to a bachelor's degree."),
  ("theoretical ladder & folk ladder", "tab:altitude", "The occupational altitude ladder: register by level on both constructions (plotted in \\cref{fig:altitude})."),
  ("quintile of article length", "tab:prominence-class", "Register by prominence (Wikipedia article-length quintile) across chamber groups."),
  ("term & n & alone & joint", "tab:four-predictors", "Every member-level categorical predictor in one model: each block alone, the joint fit of cohort, all EGP classes, all education levels and prominence quintiles (n = 4{,}056), and the same fit with the occupational blocks added (n = 3{,}631); t in parentheses; the last column converts jointly significant effects into years of cohort, per category."),
@@ -310,22 +310,20 @@ TABLE_CAPS = [
  ("corpus & \\textbf{0}", "tab:coverage-occ", "Style-word coverage by number of occurrences, at matched volume."),
  ("absent from generated only", "tab:coverage-partition", "Where the 407 style words fall: generated text versus Hansard 2025--26."),
  ("contrast & Spearman", "tab:american-alignment", "Post-training preference against the contrasts that separated national usage before the models: Spearman correlations, raw and holding word frequency fixed."),
- ("stage 1, per sd of score", "tab:dqi", "Discourse Quality Index associations with machine authorship: stages 1 and 2."),
+ ("stage 1, per sd of screen score", "tab:dqi", "Discourse Quality Index associations with machine authorship: stages 1 and 2."),
  ("screen score (0--100) & segments", "tab:applicability", "Applicability of the two sentinel dimensions, by band of the blinded screen score."),
- ("arm & justification vs human", "tab:continuations", "Machine continuations graded blind: justification and applicability by arm."),
- ("Pangram verdict & meaning & counts as", "tab:verdicts", "Pangram's three verdicts and the two events the search counts."),
+ ("arm & justification difference vs human twins", "tab:continuations", "Machine continuations graded blind: justification and applicability by arm."),
  ("attacker\\textquotesingle s detector access", "tab:bypass-rates", "Bypass rates by whether the attacker may query the detector."),
  ("measurement & rate", "tab:bypass-summary", "Measured rates by attacker model: the vendor-reported one-submission false-negative rates, this study's per-variant rate, and its retry-enabled per-target rate."),
  ("searched & zero-yield", "tab:bypass-yield", "Detector-evasion search yield per target."),
- ("stage 3 (n=38)", "tab:quality-paired", "Paired within-text quality comparisons (stages 3 and 4)."),
- ("variant (n=35) & target (n=15)", "tab:quality-evasion", "Quality of successful evasions versus their targets, by dimension."),
+ ("stage 5 variant (n=35)", "tab:quality-paired", "Paired within-text quality comparisons, all four graded contrasts: evasion-directed rewriting (stages 3 and 4) and successful evasions against their targets (stage 5, at variant and target level), by dimension."),
  ("Rice 2026 (Australian federal)", "tab:priorart", "This study against the two closest prior efforts."),
  ("seed verdict & variants", "tab:superseded-bypass", "Superseded per-seed bypass transitions."),
+ ("arm & model & effort", "tab:models", "Models and reasoning effort by arm."),
  ("Pangram verdict & n & mean Opus", "tab:screen-by-verdict", "Mean Opus screen score by Pangram verdict on the 618-segment overlap."),
  ("run & AUC", "tab:screen-auc", "Agreement of the Opus screen with Pangram across runs (AUC)."),
  ("run & role & seeds", "tab:bypass-sample", "Bypass sample selection across runs."),
  ("artifact & what it does", "tab:artifacts", "Artifacts: the scripts and data behind each result."),
- ("arm & model & effort", "tab:models", "Models and reasoning effort by arm."),
  ("element & id & level & sign", "tab:elements-levels", "The folk ladder's consensus element signature: 85 elements over four levels, with consensus sign and coder count."),
  ("element & id & component", "tab:elements-components", "The theoretical ladder's component assignments: 71 consensus elements over U/L/D/N."),
  ("gap 2006", "tab:climb", "The constant-window register trend: nineteen chambers, 2006--2026, ordered by growth."),
@@ -342,7 +340,6 @@ TABLE_CAPS = [
 COLSPECS = {
  "tab:chambers":       r"@{}lp{0.74\linewidth}@{}",
  "tab:retired":        r"@{}p{0.30\linewidth}p{0.33\linewidth}p{0.30\linewidth}@{}",
- "tab:verdicts":       r"@{}lp{0.28\linewidth}p{0.44\linewidth}@{}",
  "tab:bypass-rates":   r"@{}lp{0.19\linewidth}p{0.24\linewidth}p{0.30\linewidth}@{}",
  "tab:bypass-summary": r"@{}p{0.22\linewidth}p{0.20\linewidth}p{0.50\linewidth}@{}",
  "tab:applicability":  (r"@{}lr>{\raggedleft\arraybackslash}p{0.26\linewidth}"
@@ -360,9 +357,23 @@ COLSPECS = {
                         r">{\raggedright\arraybackslash}p{0.245\linewidth}@{\hspace{3pt}}"
                         r">{\raggedright\arraybackslash}p{0.115\linewidth}@{}"),
  "tab:priorart":       r"@{}p{0.20\linewidth}p{0.38\linewidth}p{0.36\linewidth}@{}",
+ # the quintile table carries its group sizes in the headers, which no longer
+ # fit at natural width
+ "tab:prominence-class": (r"@{}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{5pt}}"
+                        r">{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{5pt}}"
+                        r">{\raggedright\arraybackslash}p{0.19\linewidth}@{\hspace{5pt}}"
+                        r">{\raggedright\arraybackslash}p{0.19\linewidth}@{\hspace{5pt}}"
+                        r">{\raggedright\arraybackslash}p{0.18\linewidth}@{}"),
  "tab:bypass-sample":  r"@{}lp{0.16\linewidth}lp{0.28\linewidth}p{0.24\linewidth}@{}",
  "tab:artifacts":      r"@{}p{0.36\linewidth}p{0.58\linewidth}@{}",
  "tab:judge-leakage":  r"@{}lp{0.34\linewidth}p{0.34\linewidth}@{}",
+ # the merged four-contrast quality table: five columns at natural width run
+ # off the measure, so the dimension name wraps and the four cells are tight
+ "tab:quality-paired": (r"@{}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{5pt}}"
+                        r">{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{5pt}}"
+                        r">{\raggedright\arraybackslash}p{0.16\linewidth}@{\hspace{5pt}}"
+                        r">{\raggedright\arraybackslash}p{0.17\linewidth}@{\hspace{5pt}}"
+                        r">{\raggedright\arraybackslash}p{0.17\linewidth}@{}"),
  "tab:coverage-partition": r"@{}p{0.15\linewidth}p{0.16\linewidth}p{0.20\linewidth}p{0.20\linewidth}p{0.16\linewidth}@{}",
  "tab:dqi":            r"@{}p{0.24\linewidth}p{0.30\linewidth}p{0.34\linewidth}@{}",
  "tab:continuations":  (r"@{}>{\raggedright\arraybackslash}p{0.20\linewidth}"
@@ -382,10 +393,9 @@ COLSPECS = {
                         r"@{\hspace{8pt}}>{\raggedleft\arraybackslash}p{0.17\linewidth}"
                         r"@{\hspace{8pt}}>{\raggedleft\arraybackslash}p{0.17\linewidth}"
                         r"@{\hspace{8pt}}>{\raggedleft\arraybackslash}p{0.13\linewidth}@{}"),
- "tab:two-clocks":     (r"@{}l@{\hspace{8pt}}>{\raggedleft\arraybackslash}p{0.13\linewidth}"
-                        r"@{\hspace{8pt}}>{\raggedleft\arraybackslash}p{0.12\linewidth}"
-                        r"@{\hspace{8pt}}>{\raggedleft\arraybackslash}p{0.16\linewidth}"
-                        r"@{\hspace{8pt}}>{\raggedleft\arraybackslash}p{0.20\linewidth}@{}"),
+ "tab:two-clocks":     (r"@{}l@{\hspace{8pt}}>{\raggedleft\arraybackslash}p{0.16\linewidth}"
+                        r"@{\hspace{8pt}}>{\raggedleft\arraybackslash}p{0.20\linewidth}"
+                        r"@{\hspace{8pt}}>{\raggedleft\arraybackslash}p{0.24\linewidth}@{}"),
  "tab:elements-levels": r"@{}p{0.40\linewidth}p{0.15\linewidth}llr@{}",
  "tab:elements-components": r"@{}p{0.36\linewidth}p{0.15\linewidth}p{0.15\linewidth}cr@{}",
 }
@@ -436,7 +446,7 @@ CITE_SUBS = [
  (r"Kohn and Schooler located", r"Kohn and Schooler\\cite{kohn1983} located"),
  (r"Weeden and\s+Grusky\\textquotesingle s case", r"Weeden and Grusky\\textquotesingle s\\cite{weeden2005} case"),
  (r"Kohn and Schooler\\textquotesingle s occupational self-direction", r"Kohn and Schooler\\textquotesingle s\\cite{kohn1983} occupational self-direction"),
- (r'range that Liang et\s+al\. and Gray report', r'range that Liang et al.\\cite{liang2024monitoring,liang2025quantifying} and Gray\\cite{gray2025} report'),
+ (r'Liang et\s+al\. and\s+Gray report for professional prose', r'Liang et al.\\cite{liang2024monitoring,liang2025quantifying} and Gray\\cite{gray2025} report for professional prose'),
  (r'construction[.] Kobak et al[.] measure excess', r'construction. Kobak et al.\\cite{kobak2025} measure excess'),
  (r'closest\s+parliamentary study\s+measures false positives', r'closest parliamentary study\\cite{suvanto2026} measures false positives'),
  (r'population-level studies validate per venue', r'population-level studies\\cite{liang2024monitoring} validate per venue'),
