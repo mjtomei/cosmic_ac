@@ -1354,7 +1354,7 @@ decades, and it carries the historical and social results. The section runs in
 that order: calibration and prevalence (§B4.1–§B4.2) and the genre ladder
 (§B4.3); the register's thirty-year history and its cross-chamber convergence
 (§B4.4–§B4.4b); the people who carry it — birth year, then social structure
-(§B4.5–§A3); permeation into human speech (§B4.7); the machine side of the
+(§B4.5–§B4.6); permeation into human speech (§B4.7); the machine side of the
 register (§B4.8); deliberative quality (§B4.9); and directed evasion (§B4.10).
 Estimators are specified alongside each result below; every number reproduces
 from a committed script.
