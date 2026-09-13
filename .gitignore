@@ -214,3 +214,12 @@ analysis/s10/covariates_missing_recovered.json
 analysis/s10/member_year_rates_t1.json
 analysis/s10/align_ratio22/items.json
 analysis/s10/quality_expansion/arch_*.tgz
+
+# Bulk derived caches, purged from the unpushed range 2026-09-13: counts only,
+# no prose, but 56MB and 14MB against the guard's 10MB gate. Rebuild with
+# `python build_word_year_counts.py` and `python build_member_cache_panel.py`;
+# their downstream results (kobak_excess_words.csv, peak_gap_series.csv,
+# permeation_components.csv, leadlag_words.csv) are all tracked. Pointers in
+# analysis/s10/REPRODUCTION-PURGED.md.
+analysis/s10/vocab_year_counts.json.gz
+analysis/s10/member_cache_panel.json.gz
