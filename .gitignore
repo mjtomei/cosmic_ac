@@ -99,9 +99,13 @@ analysis/s10/word_context/
 # (scores only) carry no source text and are tracked, so the quality arm is
 # reproducible from the repo given the corpora.
 analysis/s10/quality_expansion/pool*.json
-# Rewritten variants: not verbatim Hansard, but close paraphrases preserving
-# every argument and claim, so they inherit the same licence question. Held
-# locally; tracked result files keep ids, scores and hypotheses.
+# Rewritten variants, the raw rewrite store. Close paraphrases of Hansard
+# rather than fresh text, so the working store stays out. NOTE (2026-09-13):
+# the SAMPLE the published detector results were computed on is now committed
+# on purpose -- detector_bench_input/_scored_input, plus the control and
+# flagged pools -- because no committed script can regenerate it and without
+# it the arm can be recomputed but not checked. See DATA-NOTICE.md and
+# SOURCE-LICENCES.md; this directory is the unpublished remainder.
 analysis/s10/bypass_text/
 analysis/s10/quality_expansion/judge_blind_pool*.json
 analysis/s10/band_screen_pool.json
