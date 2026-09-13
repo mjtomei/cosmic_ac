@@ -403,6 +403,26 @@ and is retracted in the anchors file. **The architectural consequence is §9.**
 (d)–(e) to their threads now or hold everything until deal terms make (a)
 assertable.
 
+## 8. Open decisions for Matthew
+
+1. **Where the inversion lives** — inside the three-readings block as a
+   refinement of reading (a), or as its own bullet before it?
+2. **Does the wanting argument enter IV.3, or stay in II.4/coherence territory
+   with a backward reference?** It currently does economic work in IV.3 that it
+   was not written for.
+3. **The two-tier question in §4** — name it as an open question in IV.3, or
+   defer it to the ending, where it may belong?
+4. **The window formulation** — keep as an explicit model, or fold into prose?
+5. **Dated-material policy.** July 2026 is already ⟨agreed⟩ as a dated case
+   study. The Aug 2026 exemption has the same aging problem and is weaker
+   evidence. Same treatment, lighter, or cut?
+6. **Agriculture placement** ⟨agreed⟩: IV.1 primary, IV.3 one-line contrast,
+   and the Bessen–Nuvolari answer in the limits section — the enclosure
+   mechanism there was **institutional, not technological**, which answers their
+   objection without needing to win the technological argument. Still to decide:
+   does the OSSI/copyleft-propagation material go with it in IV.1, or with the
+   legal layer in §5 above?
+
 ## 9. Architectural implication — the two halves are one bet (cross-movement)
 
 ⚠️ **This is not an IV.3 edit.** It is a claim about how the paper's *diagnosis*
@@ -450,23 +470,3 @@ in IV.3's tail; or (iii) its own short structural note? My lean: (i), because it
 is what the three-readings foreshadow was written to pay off. Needs a
 verification pass on the folk-theorem/Ostrom anchors and a prior-art check on
 the acceleration-shortens-horizons step before drafting.
-
-## 8. Open decisions for Matthew
-
-1. **Where the inversion lives** — inside the three-readings block as a
-   refinement of reading (a), or as its own bullet before it?
-2. **Does the wanting argument enter IV.3, or stay in II.4/coherence territory
-   with a backward reference?** It currently does economic work in IV.3 that it
-   was not written for.
-3. **The two-tier question in §4** — name it as an open question in IV.3, or
-   defer it to the ending, where it may belong?
-4. **The window formulation** — keep as an explicit model, or fold into prose?
-5. **Dated-material policy.** July 2026 is already ⟨agreed⟩ as a dated case
-   study. The Aug 2026 exemption has the same aging problem and is weaker
-   evidence. Same treatment, lighter, or cut?
-6. **Agriculture placement** ⟨agreed⟩: IV.1 primary, IV.3 one-line contrast,
-   and the Bessen–Nuvolari answer in the limits section — the enclosure
-   mechanism there was **institutional, not technological**, which answers their
-   objection without needing to win the technological argument. Still to decide:
-   does the OSSI/copyleft-propagation material go with it in IV.1, or with the
-   legal layer in §5 above?
