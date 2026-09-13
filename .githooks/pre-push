@@ -63,6 +63,28 @@ check_range() {
       analysis/s10/provinces/occupation_coding_missing9.json|\
       analysis/s10/provinces/sk_legislature_bios.json)
         : ;;                                    # covariate outputs — allowed
+      # Reproduction substrate (2026-09-13, Matthew's call): the text a third
+      # party needs to CHECK our scoring, which no committed script can
+      # regenerate for them.
+      #   detector_bench_input / _scored_input — bypass variants. Model
+      #     rewrites; bypass_rewrite.py seeds only its example choice, not the
+      #     sampling, so re-running produces different strings and the arm
+      #     becomes uncheckable without these.
+      #   detector_bench_controls — the 1,255 pre-2022 human controls. Each row
+      #     carries its seg_id, but re-extracting them needs all 20 chambers'
+      #     corpora, so in practice the arm ships with them or not at all.
+      #   flagged_hits_pool — the estimator's 316 hits. Its builder reads the
+      #     pangram_* RTF submissions, which are gitignored, so nobody
+      #     off-repo can rebuild it either.
+      # Licence: verbatim rows are accurate, non-official, non-commercial
+      # reproduction, which is what the Canadian Speaker's Permission and the
+      # NB research clause permit; the modified rows rely on fair dealing and
+      # are labelled as adaptations in DATA-NOTICE.md. See SOURCE-LICENCES.md.
+      analysis/s10/detector_bench_input.jsonl|\
+      analysis/s10/detector_bench_scored_input.jsonl|\
+      analysis/s10/detector_bench_controls.jsonl|\
+      analysis/s10/flagged_hits_pool.json)
+        : ;;                                    # reproduction substrate — allowed
       analysis/*/xml/*|analysis/*/*/xml/*|analysis/*/xml_*/*|analysis/*/*/xml_*/*|\
       analysis/*/zips/*|analysis/*/*/zips/*|\
       analysis/s10/us/*|analysis/s10/provinces/*|analysis/s10/permeation/*|\
@@ -127,7 +149,17 @@ check_range() {
       analysis/s10/fpw_member_year.json|\
       analysis/s10/prereg_member_table.json|\
       analysis/s10/soc_coding_new.json|\
-      analysis/s10/provinces/occupation_coding*.json)
+      analysis/s10/provinces/occupation_coding*.json|\
+      analysis/s10/detector_bench_input.jsonl|\
+      analysis/s10/detector_bench_scored_input.jsonl|\
+      analysis/s10/detector_bench_controls.jsonl|\
+      analysis/s10/flagged_hits_pool.json|\
+      analysis/s10/market_anchors/occupation_titles.txt)
+        # 2026-09-13: the reproduction substrate allowlisted in 1a must clear
+        # the size gate and the prose backstop as well, or the path rule alone
+        # never takes effect. occupation_titles.txt is O*NET-SOC 30.3 (CC-BY
+        # 4.0) and trips the backstop on its occupation DESCRIPTIONS — a
+        # standing false positive, recorded in SOURCE-LICENCES.md.
         # 2026-08-21 additions: covariates_missing9* (same class as
         # covariates_tier1), fpw_member_year (per-member-year counts, no
         # prose), prereg_member_table (derived join; only short bio-derived

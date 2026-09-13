@@ -17,7 +17,7 @@ Three classes, and the test for each.
 |---|---|---|
 | **Our own code and derived results** | yes | carries no source text: scripts, scores, verdicts, counts, codings, ids. This is nearly everything. |
 | **Our own model output** | yes | text a model produced *from a prompt*, not *from a passage* — `claude_gen/`, `rlhf_gen*/`. 34 files, explicitly exempted in the hook. |
-| **Source text, and anything embedding it** | no | verbatim transcripts, extracted-speech pools, and close paraphrases that retain the original's expression. Held locally, rebuildable — see `REPRODUCTION-PURGED.md`. |
+| **Source text, and anything embedding it** | no, with one named exception | verbatim transcripts and extracted-speech pools stay out, rebuildable — see `REPRODUCTION-PURGED.md`. The exception is the **reproduction substrate**: the four files a replicator needs to check our scoring, allowlisted by name and covered by `DATA-NOTICE.md`. |
 
 The guard enforces this three ways, because no single test catches everything:
 a **path rule** (corpus directories), a **size gate** (10 MB any file, 2 MB for
@@ -49,35 +49,48 @@ Both verified permissions cover our use: non-commercial academic research. Both
 are permissions to **reproduce**, and neither is a licence to redistribute a
 whole corpus, which is the separate reason the segment stores stay out.
 
-## The case the permissions do not settle
+## The variants: adaptations, published deliberately
 
 The bypass **variants** (`detector_bench_input.jsonl`,
-`detector_bench_scored_input.jsonl`, `bypass_text/`) are model rewrites of
-specific NB and CA-FED segments. Measured against their sources across the 180
-variants that pair: median similarity **56.9%** (max 91.7%), median longest
-verbatim run **20 words** (max 111), and **94 of 180 carry a 20+ word verbatim
-stretch**. They are not clean model output; they embed the source.
+`detector_bench_scored_input.jsonl`) are model rewrites of specific NB and
+CA-FED segments. Measured across the 180 that pair with a source: median
+similarity **56.9%** (max 91.7%), median longest verbatim run **20 words** (max
+111), and **94 of 180 carry a 20+ word verbatim stretch**. They embed the
+source rather than replacing it.
 
-Two things follow, and the second is the reason they stay out:
+**Decision, 2026-09-13 (Matthew): they ship.** They are required to reproduce
+the result. `bypass_rewrite.py` seeds only its choice of in-context examples,
+not the model's sampling, so re-running produces different strings — nobody,
+including us, can regenerate them. Without them a reader can recompute our
+numbers from the scores CSVs but cannot check that those scores belong to that
+text, which is trust rather than replication. The same reasoning admits
+`detector_bench_controls.jsonl` and `flagged_hits_pool.json`: recoverable in
+principle from their `seg_id`s, but only by someone who has rebuilt all twenty
+corpora, and the flagged pool's builder additionally reads gitignored RTF
+submissions.
 
-1. Canada's Speaker's Permission conditions reproduction on being **accurate**.
-   A paraphrase is not an accurate reproduction, so the permission is not
-   obviously the instrument that covers a modified version — that is an
-   adaptation question, not a reproduction one. NB's wording ("reproduced for
-   ... research") is broader but has the same shape.
-2. The fallback in Canada is **fair dealing**, which is not the US
-   "transformative use" test. Fair dealing asks first whether the purpose is
-   one of the enumerated ones — research and private study are — and then
-   whether the dealing is fair on the *CCH* factors: purpose, character, amount,
-   alternatives, nature of the work, and effect on the market. "Transformative"
-   is a US fair-use concept and does not map onto those factors directly.
-   Research use weighs well on purpose; publishing 341 near-copies of specific
-   speeches weighs less well on character and amount.
+Note which half is the harder case, because it is the reverse of the intuition.
+The **verbatim** rows are the easy ones: accurate, non-official, non-commercial
+reproduction is exactly what the Canadian Speaker's Permission and the NB
+research clause describe. The **modified** rows are the ones those permissions
+do not obviously reach, since both condition on reproduction being *accurate*,
+and a paraphrase is not — that is an adaptation question.
 
-Nothing is lost by holding them: `detector_transfer.py` reads only the scores
-CSVs, which keep every `seg_id` and all four detector metrics, so the arm
-reproduces exactly. Private copies are kept off-repo so a future detector can
-still be run against the same strings.
+The fallback there is Canadian **fair dealing**, which is not the US
+"transformative use" test. Fair dealing asks first whether the purpose is
+enumerated — research and private study are — and then whether the dealing is
+fair on the *CCH* factors: purpose, character, amount, alternatives, nature of
+the work, and effect on the market. Research purpose weighs well; 341
+near-copies of identifiable speeches weigh least well on amount and character.
+What reduces the exposure is that the set is a bounded research sample rather
+than a corpus, that it competes with nothing (the chambers give the originals
+away), and that every row is labelled an adaptation and marked not-official in
+`DATA-NOTICE.md`, so no reader can mistake a rewrite for something a member
+said.
+
+This is a considered call, not a settled legal answer. If it ever needs to be
+firm, the route is a written application to the Office of the Speaker, which
+the Canadian notice provides for.
 
 ## If this becomes load-bearing
 
