@@ -399,7 +399,42 @@ as the rate of change rises (shorter time-to-payoff) and ease of living rises
 (lower discount rates). The old strategic-vs-goodwill "distinction" was wrong
 and is retracted in the anchors file. **The architectural consequence is §9.**
 
-**Decision asked:** accept (a)–(c), (f), (g), (h), (j) into §§1/3/4/6; route
+**(k) → §1 (the frame) and the report's closing: the internal contradiction,
+named (Matthew, 2026-09-13).** The labs' stated mission is intelligence
+approaching free — cost of a given capability falling ~10×/year is their own
+number; "too cheap to meter" is their own register. The capitalization against
+them (~$17T of capitalized rent, durable-moat pricing per the report's decay
+row) is a bet on the **scarcity** of intelligence — and scarcity is the only
+way intellectual property ever pays, since IP is the legal manufacture of
+excludability on a non-rival good. **The mission and the balance sheet price
+opposite worlds.** Precision that keeps it honest: the contradiction is between
+the *capitalization* and the mission, not between profit and abundance — Intel
+profited for forty years while making compute exponentially cheaper, because
+its moat was manufacturing on a rival good, not rent on the idea of computation.
+Transitional, product-margin, first-mover profit is fully compatible with the
+mission; **durable rent on intelligence itself is not**, and durable rent is
+what the multiples assume. Anchors — build, don't claim: Arrow 1962 p. 616
+states it exactly ("precisely to the extent that it is successful, there is an
+underutilization of the information" — success of appropriation *is* the
+underuse); Romer 1990 ("partially excludable" — excludability is what IP
+manufactures); Boldrin & Levine, *Against Intellectual Monopoly* (2008), the
+canonical IP-as-monopoly-on-a-non-rival-good statement [handle to verify].
+*The contradiction as lived:* the labs' product behaviour is abundance
+behaviour — subscriptions delivering 40–70× face value, distillation defended
+as legitimate in the July letter — while the lobbying and the API restrictions
+are scarcity behaviour; the restrict-vs-sell dial (item j) is the contradiction
+enacted quarterly. **Who holds which belief:** the labs act as if the mission
+is true; the capitalization prices as if it is false — the balance sheets are
+the last to find out. *Resolution, stated as a fork like the water fork:* either
+the mission is marketing and scarcity rent holds, or the mission is true and
+the rents evaporate into product margins — naming which you believe is the
+argument, and the market's own naming was the July 2026 rotation (repricing
+from IP-rent multiples toward product-company multiples). ⚠️ Verify the
+mission quotes before use (Altman "Three Observations" Feb 2025 for the
+10×/12-months figure; "too cheap to meter" attribution; Amodei "Machines of
+Loving Grace" Oct 2024) — none are verified in this repo yet.
+
+**Decision asked:** accept (a)–(c), (f), (g), (h), (j), (k) into §§1/3/4/6; route
 (d)–(e) to their threads now or hold everything until deal terms make (a)
 assertable.
 
