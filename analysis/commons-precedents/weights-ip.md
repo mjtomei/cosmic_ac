@@ -750,3 +750,49 @@ set by the firms it would bind; and it asks the state to extend the leading
 firms' current practices to unwilling parties. That structure raises rivals'
 costs irrespective of the sincerity of its safety rationale.* — effects, not
 motives, and every clause is from the proposal's own text.
+
+**⭐ RETRIEVED — the endpoints post, primary (X syndication endpoint, verbatim,
+2026-09-13).** roon (@tszzl), **2026-09-12T20:44:29Z, status
+2098875417373634944**, replying to @sean_from_earth (status
+2098853078170738955):
+
+> "@sean_from_earth i won't lie to you, i think open source will be banned
+> before too long after some major disaster. and when the day comes, you'll
+> agree with me. i hope kimi and deepseek etc keep making models but **keep
+> them monitored on an api where they should be**"
+
+The parent post, verbatim — and it is the capture argument stated in full:
+
+> "@tszzl The only possible way to pace it is to ban open source, which can
+> only be done with some regulatory framework that inevitably creates a
+> duopoly or cartel that can then set prices however they like."
+
+**Read (effects, not motive):** (i) the instrument is named — open models
+"monitored on an api" — i.e. open weights re-gated behind hosted endpoints,
+which manufactures the excludability no current right supplies and places the
+chokepoints with whoever runs the endpoints; (ii) it is stated as prediction
+*and* preference ("where they should be"); (iii) the parent post laid out
+pacing → open-source ban → framework → duopoly/cartel pricing, and the reply
+does not dispute the mechanism — it accepts the ban as coming "after some major
+disaster" and adds that the critic "will agree"; (iv) **sequence, by snowflake
+ID:** this post (…875…, 20:44Z Sep 12) *precedes* the "i love them… offense
+dominates the defense" / "this isn't my preferred outcome, just my prediction…
+i'm not trying to ban them" pair (…020654…/…020655…, ~06:21Z Sep 13). The
+retreat followed the statement. That ordering is what makes the later pair a
+deniability wrapper rather than the position. **This is the sharpest entry in
+the probe ledger:** a lab-affiliated voice, answering the capture argument
+directly, naming the endpoint-gating regime as where open models "should be."
+
+**Second post, reported (Brave snippet; archive.is/s6NwT is unreachable from
+here; ID pending):** replying to @jd_pressman and @zetalyrae — "i'll say it
+straightforwardly… i can't imagine a world a year from now in which open
+source models aren't harshly regulated." ⚠️ pin the ID before quoting.
+
+**Adjacent, verified (PYMNTS):** on **2026-06-26** OpenAI limited release of
+the GPT-5.6 series "to a small group of trusted partners" whose identities were
+shared with the US government, at the government's request — "the strongest
+path to broader availability in the coming weeks, while we work with the
+Administration to develop the cyber Executive Order framework and repeatable
+process for future model releases." The gated-access regime already operates
+for closed frontier models under EO 14409; the endpoints post describes
+extending its logic to open weights.

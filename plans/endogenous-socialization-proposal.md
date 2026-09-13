@@ -441,8 +441,11 @@ opposite direction of capture. So (k)'s "scarcity behaviour" leg is one CEO's
 competitor-binding ask-set and the executive-branch record — with the duopoly
 plus xAI now publicly converged on the *self-binding* half (Altman, 09-12:
 "a primary topic of discussions we've had at OpenAI in recent weeks… we will
-do the same"), and a lab-affiliated voice floating a controlled-distribution
-regime for open weights as forecast, not advocacy (roon, 09-12) — not the
+do the same"), and a lab-affiliated voice naming the endpoint-gating regime for open
+weights — "keep them monitored on an api where they should be" (roon,
+2026-09-12, status 2098875417373634944, answering the pacing→ban→cartel
+argument directly; the "just my prediction… not trying to ban them" posts came
+~10 hours later) — not the
 industry's incident reporting. **Register (corrected 2026-09-13): analyse the
 proposed regime's *effects* in its own terms — fixed compliance/access costs
 that fall inversely with firm size and are undefined for non-corporate open
