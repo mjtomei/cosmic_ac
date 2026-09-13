@@ -438,8 +438,12 @@ side with Sacks on record accusing "the leading closed labs" — press-reported.
 Cite via Yandle (AEI 1983) and Metcalf (*AI & Society* 2026), and **always
 alongside Wei et al. (AIES 2024)**, the peer-reviewed study finding the
 opposite direction of capture. So (k)'s "scarcity behaviour" leg is one CEO's
-ask-set and the executive-branch record — not the industry's incident
-reporting.
+competitor-binding ask-set and the executive-branch record — with the duopoly
+plus xAI now publicly converged on the *self-binding* half (Altman, 09-12:
+"a primary topic of discussions we've had at OpenAI in recent weeks… we will
+do the same"), and a lab-affiliated voice floating a controlled-distribution
+regime for open weights as forecast, not advocacy (roon, 09-12) — not the
+industry's incident reporting.
 
 *The contradiction as lived:* the labs' product behaviour is abundance
 behaviour — subscriptions delivering 40–70× face value, distillation defended

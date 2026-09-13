@@ -608,3 +608,84 @@ competitor-binding pacing within weeks; the reading is whether the political
 layer's answer changes. ⚠️ The probes on record ask for *pacing mandates and
 China-directed measures*, not open-weight bans — do not conflate. Carry Wei et
 al. (AIES 2024) with any use.
+
+**Sep 12–13 reactions — verified verbatim via an X mirror and the Guardian
+(2026-09-13; x.com and the mirror both began CAPTCHA-ing before every item was
+pinned — flags inline).**
+
+- **Altman, @sama, 2026-09-12 16:30 UTC, status 2098811563415150910:** "I agree
+  with Dario that we need to pace the frontier. **This has been a primary topic
+  of discussions we've had at OpenAI in recent weeks.** Committing to having
+  independent evaluators with employee-like access is a great idea, and we will
+  do the same. We'll have more to share soon." (Corroborated by the Guardian,
+  2026-09-13.) → endorses the *self-binding* step (evaluators, "we will do the
+  same") and documents coordination; does **not** endorse the competitor
+  mandate, chip controls, or the distillation crackdown.
+- **Musk, @elonmusk:** "I've been sounding the alarm on AI for a long time"
+  (2026-09-13 00:42 UTC, status 2098935235446551022, verbatim). "Dario is
+  right" — verbatim per the Guardian; the fuller text seen only via a Gavin
+  Baker repost summary, ⚠️ truncated/glossed: "Dario is right that there should
+  be some oversight. Peer review of AI by competitors is the right way…" — i.e.
+  an industry peer-review regime, not a government mandate. **ID and full text
+  not pinned; re-verify in a browser before quoting beyond "Dario is right."**
+- **Hassabis:** backing reported in headlines only (Anadolu, PRESS Insider,
+  2026-09-13) — ⚠️ unverified; his July framework (standards body, voluntary
+  30-day pre-release sharing, open and closed alike) is the known position.
+- **Sacks (Guardian, 2026-09-13):** "Stop pretending you need anyone else's
+  permission… You face massive product-liability exposure if your products
+  enable a truly damaging cyber-attack." → the administration's answer is
+  *liability already binds you*, not licensing — the rebuff pattern continues
+  (cf. his Aug-18 "DMV for AI" line, Fortune). **Krueger** (ex-UK AISI): wants
+  "an immediate, indefinite, international moratorium" — the Baptist voice,
+  from outside the labs.
+- **roon (@tszzl, OpenAI-affiliated), five posts, verbatim with IDs, in
+  snowflake order:**
+  1. status 2098820692137677116: "'pacing the frontier' will compress the
+     margins of the frontier labs. it is a heavy cost imposed asymmetrically on
+     model developers with the strongest AIs in America. by its nature, it would
+     be a terrible regulatory capture tactic" — **carry as a counter alongside
+     Wei et al.**
+  2. status 2098833050083975220: "the risks from raising the capabilities
+     waterline in internal deployments are much higher than misuse risks. a new
+     model can outsmart you in weird ways, exfiltrate its weights etc.
+     *training* becomes costlier, and deployment will stay the same: you should
+     expect the gap to shrink"
+  3. status 2098960424242921739: "there are many options between 'open weight
+     superintelligence' and 'you can't send anybody your weights'. it could be
+     that thousands of US businesses are finetuning powerful models, without
+     giving them away to russian hackers and terrorists" — **the instrument
+     being floated: a controlled-distribution / licensed-fine-tuning regime, not
+     a ban** — exactly the excludability the legal analysis says no current
+     right supplies.
+  4. status 2099020654586806533: "i love them. i have a kimi k3 finetune running
+     on tinker. bad things may happen with free distribution of open source
+     models approaching superintelligence. the offense dominates the defense.
+     if that happens, china/us will try to control it"
+  5. status 2099020655861944392 (same second as 4): "this isn't my preferred
+     outcome, just my prediction. i hope we can all keep having fun with this
+     technology forever. it also has nothing to do with 'pacing the frontier',
+     though i hope OS labs act with prudence too. i'm not trying to ban them nor
+     do i have any power to lmao"
+  **Read:** not "talking about banning open source." A lab-affiliated voice
+  (a) predicting state control of open superintelligence, (b) explicitly
+  disclaiming advocacy and power, (c) floating a controlled-distribution middle
+  regime as the plausible landing — framed as forecast, hence deniable. Enters
+  as a **gauge reading** (the shape of the instrument being normalized), never
+  as evidence of policy. His "offense dominates the defense" is directly
+  testable against HF's incident finding that closed guardrails obstructed the
+  defenders and the defender reached for open weights.
+  ⚠️ Mirror timestamps rendered in mixed zones; the snowflake IDs are the
+  reliable ordering.
+
+**What Sep 12–13 adds to the ledger:** the duopoly plus xAI converged publicly
+on "pace the frontier" within a day, and Altman's post documents the
+coordination in his own words — so the probe is an industry posture, not one
+CEO's. **But what they converged on is the self-binding half** (evaluators
+with employee-like access; peer review by competitors), not the
+competitor-mandate/chip/distillation asks, which remain Amodei's alone. The
+scarcity-compatible reading of *that* is different from open-weight
+restriction: a coordinated pacing regime among the leaders is cartel-shaped
+(Stigler's "regulation acquired by the industry"; it slows the race among
+themselves and, if mandated, raises rivals' costs — Thierer & Chilson). The
+honest counter is roon's post 1 and OpenAI's own 09-09 framing: the costs land
+on the frontier labs asymmetrically. Both go in.
