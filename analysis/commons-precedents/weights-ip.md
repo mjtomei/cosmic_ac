@@ -580,3 +580,31 @@ operational and self-binding throughout, and not as a legislative trend, which
 runs toward exemption. The strongest new datapoint is the victim's own: closed
 guardrails obstructed incident response and the defender reached for open
 weights.
+
+**The probe ledger — "testing the waters" as a gauge (Matthew's reading,
+2026-09-13).** Register: a dated series of probes and rebuffs, each scored by
+stated cause → remedy asked → whom it binds; no motive attributed. This is the
+political-layer enclosure attempt as a *process* — an actor without a right
+petitions repeatedly until the answer changes — and each rebuff is the political
+layer declining, so far. Sacks's press-reported "every 3–5 months" is the
+nearest direct statement of the cadence.
+
+| Date | Probe / event | Stated cause | Remedy asked | Binds | Score |
+|---|---|---|---|---|---|
+| 2026-02-12 | OpenAI memo to House Select Cmte | DeepSeek distillation | bans, export controls | PRC labs | asymmetric (competitor-binding) |
+| 2026-06-10 | Anthropic Senate Banking letter | Alibaba distillation | export controls, sanctions, antitrust clarification | PRC labs | asymmetric |
+| 2026-07-16→08-26 | HF / OpenAI / METR incident disclosures | package proxy, unisolated sandboxes, disabled safeguards, impossible eval targets | isolation, hygiene, monitoring; OpenAI self-pause | self | **clean** |
+| 2026-07-20 | Axios: exec-branch deliberations; Sacks accusation | — | entity-listing, hosting EO, supply-chain rules (considered) | PRC open labs | press-reported probe |
+| 2026-07-24 | Open Weights & American AI Leadership letter (~250) | — | no premature restrictions; distillation legitimate | — | **rebuff** |
+| 2026-07-27 | Amodei, open-weights position | distillation, PRC state backing | chip controls, distillation crackdown, mandatory testing above thresholds | PRC labs / frontier labs | asymmetric on 1–2; universal on 3 |
+| 2026-07-30, 08-31 | Anthropic incident posts | CTF reachability, sandbox egress, RL env hygiene | hardened sandboxes, self-pauses | self | **clean** |
+| 2026-08-04 | Unpublished framework exempts open weights | — | — | — | **rebuff** |
+| 2026-09-08 | NSA/CISA/FBI AA26-251A | PRC distillation | detect, attenuate, correlate | operational | clean |
+| 2026-09-09 | OpenAI "policy window" post | — | capability-based rules; "not open-weights policy by another name" | frontier labs | **rebuff (from a lab)** |
+| 2026-09-12 | Amodei, "We Must Pace the Frontier" | "imperfect filtering of broken RL environments… sandboxing, training environment hygiene" | govt to *require* competitors to match embedded evaluators; regulation covering "those unwilling to cooperate"; chip controls; distillation crackdown | all US frontier labs + PRC | **asymmetric** |
+
+Prediction the gauge makes: after the next disclosed incident, a call for
+competitor-binding pacing within weeks; the reading is whether the political
+layer's answer changes. ⚠️ The probes on record ask for *pacing mandates and
+China-directed measures*, not open-weight bans — do not conflate. Carry Wei et
+al. (AIES 2024) with any use.
