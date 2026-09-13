@@ -492,3 +492,83 @@ argument should acknowledge rather than a clean runaway.
   original; Widder, Whittaker & West *Nature* 2024 quotes (gated; DOI
   10.1038/s41586-024-08141-1 confirmed); Hoffmann–Nagle–Zhou OSS valuation (SSRN
   403); the Perez/Janeway crash-as-mechanism sentence.
+
+## Lab abundance-mission quotes — verified verbatim (2026-09-13)
+
+For proposal item (k), the mission/capitalization contradiction. All read in
+the primary documents (raw HTML fetched and stripped); cached texts in the
+session scratchpad. Dates from the blog Atom feed where pages carry none.
+
+- **Altman, "Three Observations," blog.samaltman.com, 2025-02-09.** Obs. 1:
+  "The intelligence of an AI model roughly equals the log of the resources used
+  to train and run it." Obs. 2: "The cost to use a given level of AI falls about
+  10x every 12 months, and lower prices lead to much more use… Moore's law
+  changed the world at 2x every 18 months; this is unbelievably stronger."
+  Also: "relentlessly driving the cost of intelligence as low as possible";
+  "Anyone in 2035 should be able to marshall the intellectual capacity
+  equivalent to everyone in 2025; everyone should have access to unlimited
+  genius." Opens: "Our mission is to ensure that AGI… benefits all of humanity."
+  ⚠️ Note for our rate discipline: obs. 2 is the price-per-fixed-capability
+  series (our class C — compound, posted prices) — cite as *his* abundance
+  claim, not as our technology rate; obs. 1 vs obs. 2 is exactly the
+  log-capability / falling-price pair the wanting argument rides on.
+- **Altman, "The Gentle Singularity," 2025-06-10.** "Intelligence too cheap to
+  meter is well within grasp." "As datacenter production gets automated, the
+  cost of intelligence should eventually converge to near the cost of
+  electricity." "In the 2030s, intelligence and energy… are going to become
+  wildly abundant." "Then focus on making superintelligence cheap, widely
+  available, and not too concentrated with any person, company, or country."
+  (He does not attribute "too cheap to meter"; the 1954 Strauss provenance was
+  not verified here.)
+- **Altman, "Abundant Intelligence," 2025-09-23.** "access to AI will be a
+  fundamental driver of the economy, and maybe eventually something we
+  consider a fundamental human right"; "a factory that can produce a gigawatt
+  of new AI infrastructure every week."
+- **Altman, "Moore's Law for Everything," 2021-03-16.** "The price of many
+  kinds of labor… will fall toward zero once sufficiently powerful AI 'joins
+  the workforce.'" "Imagine a world where, for decades, everything… became half
+  as expensive every two years."
+- **Altman, "The Intelligence Age," 2024-09-23.** ⚠️ Does NOT contain "too
+  cheap to meter." Has: "we need to drive down the cost of compute and make it
+  abundant… If we don't build enough infrastructure, AI will be a very limited
+  resource that wars get fought over and that becomes mostly a tool for rich
+  people."
+- **Amodei, "Machines of Loving Grace," Oct 2024.** "a 'country of geniuses in
+  a datacenter'"; "compress the progress that human biologists would have
+  achieved over the next 50-100 years into 5-10 years"; "in the long run AI
+  will become so broadly effective and so cheap that this will no longer
+  apply. At that point our current economic setup will no longer make sense."
+  **Counterweight (friendly source for §3(b)/§9):** "Intelligence may be very
+  powerful, but it isn't magic fairy dust"; "we should be talking about the
+  marginal returns to intelligence, and trying to figure out what the other
+  factors are that are complementary to intelligence and that become limiting
+  factors when intelligence is very high." Also "The Adolescence of
+  Technology" (Jan 2026): "a century of scientific and economic progress
+  compressed into a decade."
+- **OpenAI Charter (2018-04-09; live page is a JS shell — read via the
+  Internet Archive snapshot).** Mission "benefits all of humanity"; "Broadly
+  distributed benefits — We commit to use any influence we obtain over AGI's
+  deployment to ensure it is used for the benefit of all, and to avoid
+  enabling uses of AI or AGI that harm humanity or unduly concentrate power";
+  "Our primary fiduciary duty is to humanity."
+- **Anthropic (anthropic.com/company):** "a Public Benefit Corporation, whose
+  purpose is the responsible development and maintenance of advanced AI for
+  the long-term benefit of humanity." ⚠️ The often-quoted "safely makes the
+  transition through transformative AI" wording was NOT found on the company,
+  careers, Core Views, LTBT, or RSP pages — use the PBC sentence.
+- **Hassabis — "radical abundance"** exists only in the Lex Fridman #475
+  transcript (2025-07-23, human-generated, self-flagged for errors): "this kind
+  of radical abundance era, where there's plenty of resources to go around."
+  Use the clean fragment or find a DeepMind text first.
+- ⚠️ **Do not cite:** Jensen Huang "intelligence… cheap as tap water" — appears
+  only on Wikiquote, uncited; no NVIDIA primary located. Zuckerberg's "Open
+  Source AI Is the Path Forward" (2024-07-23) makes a structural Unix→Linux
+  argument and a 50%-cheaper-than-GPT-4o inference claim, not a near-free-
+  intelligence claim.
+
+**Why it sharpens (k):** the mission side does not merely promise cheapness —
+it disavows *concentration* in as many words (Charter: "unduly concentrate
+power"; Altman: "not too concentrated with any person, company, or country"),
+and durable scarcity rent on a non-rival good is concentration by definition.
+The contradiction is between the charter and the cap table, not between profit
+and abundance.

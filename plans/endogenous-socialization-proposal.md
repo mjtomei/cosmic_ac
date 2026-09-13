@@ -429,10 +429,36 @@ the last to find out. *Resolution, stated as a fork like the water fork:* either
 the mission is marketing and scarcity rent holds, or the mission is true and
 the rents evaporate into product margins — naming which you believe is the
 argument, and the market's own naming was the July 2026 rotation (repricing
-from IP-rent multiples toward product-company multiples). ⚠️ Verify the
-mission quotes before use (Altman "Three Observations" Feb 2025 for the
-10×/12-months figure; "too cheap to meter" attribution; Amodei "Machines of
-Loving Grace" Oct 2024) — none are verified in this repo yet.
+from IP-rent multiples toward product-company multiples). **Mission side — VERIFIED verbatim from the primary essays (2026-09-13;
+full texts cached in the session scratchpad; ledger in
+`NONRIVALRY-ANCHORS.md`).** Altman, *Three Observations* (2025-02-09): "The
+cost to use a given level of AI falls about 10x every 12 months… Moore's law
+changed the world at 2x every 18 months; this is unbelievably stronger"; "just
+relentlessly driving the cost of intelligence as low as possible"; "everyone
+should have access to unlimited genius." Altman, *The Gentle Singularity*
+(2025-06-10): **"Intelligence too cheap to meter is well within grasp"**; "the
+cost of intelligence should eventually converge to near the cost of
+electricity"; and — the sharpest line for the contradiction — "making
+superintelligence cheap, widely available, **and not too concentrated with any
+person, company, or country**." Altman, *Abundant Intelligence* (2025-09-23):
+access to AI "maybe eventually something we consider a fundamental human
+right." OpenAI Charter (2018): the mission "benefits all of humanity," a
+commitment "to avoid enabling uses of AI or AGI that harm humanity **or unduly
+concentrate power**," and "Our primary fiduciary duty is to humanity." Amodei,
+*Machines of Loving Grace* (Oct 2024): "in the long run AI will become so
+broadly effective and so cheap that… **our current economic setup will no
+longer make sense**." Anthropic's stated PBC purpose: "the responsible
+development and maintenance of advanced AI for the long-term benefit of
+humanity." So the mission side disavows *concentration* in as many words —
+and durable scarcity rent on intelligence is concentration by definition.
+⚠️ Do not cite: Jensen Huang's "cheap as tap water" (uncited Wikiquote only);
+"The Intelligence Age" does **not** contain "too cheap to meter"; Zuckerberg's
+essay makes a structural Linux argument, not a near-free claim; Hassabis's
+"radical abundance" exists only in a podcast transcript (use the clean
+fragment or find a DeepMind text). **Friendly-source counterweight worth
+carrying in §3(b):** Amodei's own "Intelligence may be very powerful, but it
+isn't magic fairy dust" and his "marginal returns to intelligence" frame — a
+lab leader stating the complementary-bottleneck (wanting/absorption) point.
 
 **Decision asked:** accept (a)–(c), (f), (g), (h), (j), (k) into §§1/3/4/6; route
 (d)–(e) to their threads now or hold everything until deal terms make (a)
