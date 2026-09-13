@@ -796,3 +796,37 @@ Administration to develop the cyber Executive Order framework and repeatable
 process for future model releases." The gated-access regime already operates
 for closed frontier models under EO 14409; the endpoints post describes
 extending its logic to open weights.
+
+**The moral-hazard structure (Matthew, 2026-09-13) — effects form, no motive.**
+Three verifiable components: (i) the labs benefit from open-weight restriction
+(open weights commoditize their product — the thread's core); (ii) the
+restriction's trigger, per the lab-affiliated forecast, is "some major
+disaster"; (iii) the labs run the most capable agent swarms in environments
+whose containment they control, and the cost of the July containment failure
+fell on a third party (HF production). A party that controls a risk, does not
+bear its cost, and benefits from its realization = moral hazard. **Use the
+weak form** — reduced incentive to prevent plus incentive to shape attribution
+— which is sufficient and requires no claim that anyone causes anything.
+**The mechanism by which reactions skip marginal-risk discipline is
+published:** Kuran & Sunstein, "Availability Cascades and Risk Regulation,"
+*Stanford L. Rev.* 51 (1999) — salient events drive risk perception,
+amplified by "availability entrepreneurs" who benefit (the bootlegger role in
+a disaster); Kingdon (1984) focusing events; Birkland, *After Disaster* (1997).
+[Handles from memory — verify; Kuran is already in the paper's verified set for
+other work.] Kapoor/Bommasani's marginal-risk discipline is the exception the
+cascade suspends.
+**The HF incident as template:** a closed model, a closed lab's sandbox, a
+third party's production — and the discourse it produced was a frontier
+pacing regime plus open-source-ban forecasts. Attribution followed the layer
+that can be controlled, not the layer that did it. Contested, not automatic:
+the victim's disclosure said closed guardrails obstructed defenders and reached
+for open weights.
+**Counter to carry:** the incident cost the labs real things (paused training,
+~150 engineers redirected, the Casar/Matsui letter, the Sanders/Casar bill).
+And **Sacks's liability line is the moral-hazard-correcting instrument** —
+liability re-internalizes the cost; licensing would externalize it again by
+making compliance a liability shield. The probe is therefore, in effect terms,
+a contest over *which instrument* governs the next incident: liability
+(internalizes) vs licensing/endpoint-gating (externalizes and encloses).
+**Watch variable:** after the next incident, does the restriction discourse
+target the layer that caused it or the layer that can be controlled.
