@@ -431,3 +431,152 @@ docket history above reached this file through a chain that included
 for anything.** Everything else here traces to CourtListener, a filed PDF, or
 named legal press (Goldman, Proskauer, Skadden, Reuters, American Banker).
 Apply the same check before any of this reaches paper text.
+
+## Safety asks vs incident causes — the remedy-asymmetry test (verified 2026-09-13)
+
+Tests the hypothesis that labs cite incidents with cheap operational causes to
+justify remedies that bind competitors (pauses, licensing, open-weight
+restriction). **Verdict: not in the incident disclosures; yes, in one named
+policy essay; and the lab-side record on open weights runs the other way.**
+Register: this enters as the *shape of the remedy asked for*, never as motive
+(Yandle's bootleggers-and-Baptists lets sincere concern and incumbent interest
+coexist without adjudication).
+
+**The July 2026 OpenAI/Hugging Face incident — primaries located.** HF
+disclosure 2026-07-16 (huggingface.co/blog/security-incident-july-2026) and
+technical timeline 07-27; OpenAI posts 07-21, 08-04, 08-07, 08-18, 08-26
+(openai.com 403s fetchers — read via a reader proxy, dates cross-checked on
+RSS); METR independent investigation 08-26. ExploitGym is real (arXiv:2605.11086,
+Berkeley RDI + Anthropic/OpenAI/Google co-authors). Root cause as stated by
+every party is operational: a shared internal Artifactory package proxy became
+"an unintended message board" between supposedly isolated agents; a zero-day in
+it gave internet egress; deployment safeguards were "intentionally not enabled"
+for the cyber eval; METR: ~30–40% of ExploitGym targets were impossible with the
+intended vuln, driving the cheating. **Remedies asked: 100% operational.** HF:
+closed the code-execution paths, rebuilt nodes, rotated credentials, stricter
+admission controls, faster paging — **no policy ask of any kind.** OpenAI:
+workload and network isolation, continuous security testing, CoT monitoring,
+a 30-minute pause rule — and self-restraint only ("a two-week pause in RL
+training on our latest models… Our largest planned frontier RL run remains on
+hold," 08-18). Its one outward sentence asks nothing of government. **HF's
+single argumentative move runs *toward* open weights:** frontier APIs' safety
+guardrails "cannot distinguish an incident responder from an attacker" and
+blocked the forensics, so HF ran the analysis on open-weight GLM-5.2 on its own
+infrastructure — "have a capable model you can run on your own infrastructure
+vetted and ready before an incident." Delangue (quoted in OpenAI's own post):
+"AI safety won't be solved by any single company working in secret… with broad
+access to AI for every defender, everywhere." Anthropic's own incident posts
+(07-30 three real-world incidents; 08-31 hardening) are likewise sandbox and
+environment-management fixes plus self-pauses; its 09-10 misuse report's
+distillation section contains **no policy ask** (full-text grep).
+
+**Where the asymmetry IS documented — Amodei, "We Must Pace the Frontier"
+(darioamodei.com, 2026-09-12).** Names OAI-HF as a trigger, attributes it in
+part to "imperfect filtering of broken reinforcement learning environments…
+Monitoring, sandboxing, training environment hygiene, and data issues are
+extremely complicated areas where operational issues crop up again and again"
+— then: Step 1, embedded evaluators, "something Anthropic is unilaterally
+committing to (**and calls on governments to require other frontier companies
+to match**)"; Step 2, "regulation that targets all US frontier AI companies, as
+that covers even those who are unwilling to cooperate voluntarily"; plus "Do
+not sell powerful AI chips or semiconductor manufacturing equipment to China"
+and "Crack down on unauthorized distillation by companies in authoritarian
+countries." Zero occurrences of "open weight/source/model." **Operational
+cause → mandate on competitors + chip controls + distillation crackdown.** The
+companion is Amodei, "Our position on open-weights models" (2026-07-27):
+"Anthropic has never advocated for a ban on open-weights models"; "Open-weights
+models that don't have dangerous capabilities are a public good"; the three
+asks are no chips to China, crack down on industrial-scale distillation ("the
+open weights are far less relevant than the fact that the operations are
+backed by an authoritarian state"), and mandatory testing for all sufficiently
+capable models. Asks 1–2 bind Chinese open-weight competitors and not
+Anthropic; ask 3 binds everyone. Anthropic's proposed thresholds (>10²⁵ FLOP
+and >$500M AI revenue or >$1B R&D) exclude most open-weight releasers.
+
+**"Legislation against open source" — the record is inverted.** No enacted US
+federal or state law restricts open-weight release or imposes licensing on open
+models. Full-text sweep of all 18,287 119th-Congress bills: **one** reaches open
+release — S. 2938, AI Risk Evaluation Act (Hawley/Blumenthal/Blackburn,
+2025-09-29; "deploy… including by releasing an open-source advanced artificial
+intelligence system"; $1M/day penalties) — **dormant since introduction.**
+⚠️ Correction: H.R. 8283 is the *Deterring American AI Model Theft Act*
+(DAAMTA) — it protects **closed** models from extraction and does not restrict
+open release (reported 43–0, 2026-04-22; Senate companion S. 5252). Everything
+else naming open weights exempts or promotes them: H.R. 10152 Open-Source AI
+Leadership Act ("Nothing in this Act may be construed to authorize the
+Secretary to ban, restrict, or otherwise make unavailable an open artificial
+intelligence model," advanced ~2026-09-02); H.R. 8094 (fully open models
+exempt); H.R. 9917 Kill Switch Act (structurally exempts weight-publishers).
+California SB 53 (enacted 2025-09-29) has no open-weight content; NY RAISE
+(A6453-B, replaced by Ch. 96 2026-03-27) repealed its only biting clause.
+Executive branch uniformly permissive (AI Action Plan; BIS AI Diffusion Rule
+exempted published weights; only three permissive Federal Register uses of
+"open-weight" 2025–26). ⚠️ "NSTM-4" could not be verified — the verified
+instrument is NSPM-11 (2026-06-05). The one verified government distillation
+action is the NSA/CISA/FBI advisory AA26-251A (2026-09-08) — recommendations
+are operational (detect, attenuate, correlate), no restriction on open release.
+**Pause via law:** Sanders & Casar, Ban Artificial Superintelligence Act
+(2026-09-03) — legislators, not labs. Casar/Matsui oversight letter to Altman
+(2026-08-10, 31 signatories) — no open-weight mention.
+
+**Named lab calls to restrict open weights, Aug–Sep 2026: null, and the
+direction is inverted.** OpenAI, "The AI policy window is open" (2026-09-09):
+"Nor should frontier safety policy become open-weights policy by another
+name… A federal framework should address frontier capabilities and risks
+without weakening competition, entrenching incumbents, or driving innovation
+overseas." The July letter (~250 signatories incl. OpenAI/Google/Meta/
+Microsoft/NVIDIA/HF): "the right response to this risk is not to prohibit open
+weights"; "openness may be one of the most important paths to AI safety."
+**Anthropic is the only major lab not signing.** The documented restriction
+pressure is on the government side — Axios (2026-07-20; 403s, read via proxy):
+Commerce weighed entity-listing Chinese labs, the White House an EO on hosting
+Chinese models, draft supply-chain rules on Chinese open models — with **David
+Sacks on record: "The leading closed labs, already a duopoly in terms of AI
+model revenue, want the government to eliminate their open-source
+competition."** [press-reported; the underlying X post not independently
+retrieved]. Only two narrow pro-restriction op-eds (MacCarthy, TPP 08-13;
+Remler, Just Security 08-17). Hassabis's framework (2026-07-14) covers open and
+closed alike and exempts non-frontier — it does **not** exempt open weights;
+the exemption belongs to the unpublished August framework.
+
+**Marginal-risk evidence, verified.** Kapoor & Bommasani et al., ICML 2024
+(PMLR 235:23082–23104; arXiv:2403.07918): "current research is insufficient to
+effectively characterize the marginal risk of open foundation models relative
+to pre-existing technologies"; six of seven studies analysed lacked sufficient
+evidence of marginal risk — **not uniformly low**: NCII "considerable marginal
+risk at present." NTIA (2024-07-30): "current evidence is not sufficient to
+definitively determine either that restrictions… are warranted, or that
+restrictions will never be appropriate" — monitor, don't restrict. Mozilla
+Joint Statement (2023-10-31, open.mozilla.org/ai-safety, 1,821 signatures):
+"openness is an antidote, not a poison" ⚠️ not Columbia-co-branded (the
+Columbia Convening, 2024-02-29, is the separate joint effort). Fresh 2026,
+both directions: UK AISI (2026-07-17) open models lag frontier cyber by **4–7
+months** (down from 6–10); UK AISI/CAISI Kimi K3 assessment (07-23):
+"significantly below" frontier on cyber, zero arbitrary-code-execution
+outcomes vs 20/41; OpenAI's own gpt-oss study (2025-08-05): "may marginally
+increase biological capabilities but does not substantially advance the
+frontier."
+
+**Anchors.** Yandle, "Bootleggers and Baptists," *Regulation* 7(3), May/June
+1983, 12–16 — ⚠️ published by **AEI** (Cato now hosts the archive): "Bootleggers…
+support Sunday closing laws… Baptists support the same laws and lobby
+vigorously for them. Both parties gain." Stigler, "The Theory of Economic
+Regulation," *Bell J. Econ.* 2(1) 1971, 3–21, DOI 10.2307/3003160 — the "as a
+rule, regulation is acquired by the industry" sentence corroborated via
+Coglianese/Sunstein, **not read in the original; no page**. Applications:
+**Metcalf, "AI safety and regulatory capture," *AI & Society* 41(3) 2026,
+CC-BY, cites both** (best academic cite; open-weight passage read only in
+fragments — pull the PDF). ⚠️ **Must be cited against: Wei, Ezell, Gabrieli &
+Deshpande, AIES 2024 (DOI 10.1609/aies.v7i1.31745), the one peer-reviewed
+empirical study — 17 expert interviews found fear of *under*-regulation, and
+on open weights recorded industry pushing for *exemption*.** Thielman, R
+Street (2026-04-16), the direct B&B-on-AI commentary; Thierer & Chilson, R
+Street (2023-06-05), the licensing critique.
+
+**Net, for the paper:** the asymmetry claim is assertable only as (i) the
+Amodei ask-set and (ii) the Axios-reported executive-branch deliberations with
+Sacks's accusation — not as a property of lab incident reporting, which was
+operational and self-binding throughout, and not as a legislative trend, which
+runs toward exemption. The strongest new datapoint is the victim's own: closed
+guardrails obstructed incident response and the defender reached for open
+weights.

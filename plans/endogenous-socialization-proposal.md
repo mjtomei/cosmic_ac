@@ -419,6 +419,28 @@ underutilization of the information" — success of appropriation *is* the
 underuse); Romer 1990 ("partially excludable" — excludability is what IP
 manufactures); Boldrin & Levine, *Against Intellectual Monopoly* (2008), the
 canonical IP-as-monopoly-on-a-non-rival-good statement [handle to verify].
+*Safety asks — verified 2026-09-13, and it narrows the claim (ledger in
+`weights-ip.md`):* the hypothesis that labs report incidents with cheap
+operational causes and ask for competitor-binding remedies **does not hold for
+the incident disclosures** — HF, OpenAI, METR and Anthropic's own posts all
+named sandbox/package-proxy/environment causes and prescribed exactly those
+fixes, OpenAI pausing only its own training; HF even argued closed-model
+guardrails obstructed forensics and ran the analysis on open-weight GLM-5.2.
+It **holds in one named source**: Amodei, "We Must Pace the Frontier"
+(2026-09-12) — operational cause stated, then "calls on governments to require
+other frontier companies to match" plus chip controls and a distillation
+crackdown; Anthropic is also the one major lab not signing the July
+open-weights letter. **No enacted law restricts open weights; one dormant bill
+(S. 2938) reaches them; H.R. 8283 protects *closed* models from extraction;
+OpenAI's 09-09 policy post explicitly disclaims "open-weights policy by
+another name."** The restriction pressure is documented on the government
+side with Sacks on record accusing "the leading closed labs" — press-reported.
+Cite via Yandle (AEI 1983) and Metcalf (*AI & Society* 2026), and **always
+alongside Wei et al. (AIES 2024)**, the peer-reviewed study finding the
+opposite direction of capture. So (k)'s "scarcity behaviour" leg is one CEO's
+ask-set and the executive-branch record — not the industry's incident
+reporting.
+
 *The contradiction as lived:* the labs' product behaviour is abundance
 behaviour — subscriptions delivering 40–70× face value, distillation defended
 as legitimate in the July letter — while the lobbying and the API restrictions
