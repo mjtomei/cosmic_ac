@@ -443,7 +443,15 @@ plus xAI now publicly converged on the *self-binding* half (Altman, 09-12:
 "a primary topic of discussions we've had at OpenAI in recent weeks… we will
 do the same"), and a lab-affiliated voice floating a controlled-distribution
 regime for open weights as forecast, not advocacy (roon, 09-12) — not the
-industry's incident reporting.
+industry's incident reporting. **Register (corrected 2026-09-13): analyse the
+proposed regime's *effects* in its own terms — fixed compliance/access costs
+that fall inversely with firm size and are undefined for non-corporate open
+projects; thresholds written by the parties bound; a request that the state
+extend the leaders' practice to "those unwilling to cooperate" — and do not
+let participants' denials of capture do evidentiary work. Three CEOs
+converging within a day, with coordination documented in Altman's own post, is
+the form in which an industry acquires its regulation, not an alternative to
+it.**
 
 *The contradiction as lived:* the labs' product behaviour is abundance
 behaviour — subscriptions delivering 40–70× face value, distillation defended

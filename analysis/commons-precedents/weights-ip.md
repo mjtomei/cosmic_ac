@@ -689,3 +689,64 @@ restriction: a coordinated pacing regime among the leaders is cartel-shaped
 themselves and, if mandated, raises rivals' costs — Thierer & Chilson). The
 honest counter is roon's post 1 and OpenAI's own 09-09 framing: the costs land
 on the frontier labs asymmetrically. Both go in.
+
+**⚠️ Register correction (Matthew, 2026-09-13): do not take the participants'
+characterizations at face value — analyse the regime's effects.** The entries
+above let denials do evidentiary work they cannot do. Under
+bootleggers-and-Baptists the stated reason and the regulatory effect are
+*expected* to diverge, so a participant saying "this would be a terrible
+regulatory capture tactic" is evidence that the accusation was live enough to
+require an answer, not evidence about the regime. The paper's claim rests on
+**effects, stated in the proposal's own terms**, and needs no motive:
+
+1. **The call is, at face value, a call for power.** Amodei asks for
+   "regulation that targets all US frontier AI companies, as that covers even
+   those who are unwilling to cooperate voluntarily," and "calls on governments
+   to require other frontier companies to match" what Anthropic adopts
+   voluntarily. That is a request for the state to bind rivals to the leader's
+   current practice — the leaders' practice becomes the compliance floor. No
+   attribution required; it is the text.
+2. **Implementation complexity is the mechanism, and it is asymmetric by
+   construction.** Embedded evaluators with employee-like access, mandatory
+   testing above thresholds, and a coordination body impose *fixed* costs and
+   *access obligations*: trivial at >$500M AI revenue, heavy for a small lab,
+   and **undefined for a non-corporate open project** (who grants "employee-like
+   access" to a Kimi-K3 finetune community?). The thresholds that decide who is
+   "frontier" are written by the parties they would bind. This is
+   raising-rivals'-costs (Stigler 1971; Thierer & Chilson 2023; Metcalf 2026):
+   the leaders can pay *and* the regime excludes challengers — those are
+   compatible, and roon's margin-compression post conflates absolute cost to
+   the leaders with relative burden, which is the quantity capture is about.
+3. **Coordination is documented, in the leaders' own words.** Altman: "a
+   primary topic of discussions we've had at OpenAI in recent weeks"; three
+   CEOs converging within a day on the same regime. A voluntarily adopted
+   practice among an oligopoly, then requested as a mandate on all — that is
+   the form in which an industry acquires its regulation. My earlier "only the
+   self-binding half" softening missed that self-binding-then-mandated is the
+   capture pattern, not an alternative to it.
+4. **Wei et al. (AIES 2024) is time-mismatched.** Its interviews date from a
+   period when industry pushed for *exemptions*; the 2026 posture is a request
+   for *mandates*. It stays in the ledger as the peer-reviewed prior, with the
+   note that it does not describe the 2026 asks.
+5. **roon's posts, re-read as effects rather than statements:** the
+   "many options between open-weight superintelligence and you can't send
+   anybody your weights" post names the instrument (controlled distribution);
+   the capture-denial post answers a criticism already in circulation (Sacks
+   08-18 "DMV for AI"; Fortune; multiple 09-13 pieces); the "just my
+   prediction… i'm not trying to ban them" post is the deniability wrapper.
+   Read together they are a lab-affiliated voice normalizing a
+   licensed-distribution regime while disclaiming it — the shape of a probe.
+   ⚠️ Matthew reports a further post predicting regulation of open source
+   **by requiring provision through licensed endpoints** — the instrument named
+   explicitly (open weights re-gated behind licensed serving, i.e. excludability
+   manufactured and chokepoints created, operated by the incumbents). **Not yet
+   retrieved (mirror CAPTCHA); verify and pin the ID.** If confirmed it is the
+   sharpest entry in the ledger.
+
+**Paper-safe statement of the claim:** *As specified, the proposed pacing regime
+imposes fixed compliance and access costs that fall inversely with firm size and
+are undefined for non-corporate open projects; its capability thresholds are
+set by the firms it would bind; and it asks the state to extend the leading
+firms' current practices to unwilling parties. That structure raises rivals'
+costs irrespective of the sincerity of its safety rationale.* — effects, not
+motives, and every clause is from the proposal's own text.
