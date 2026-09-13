@@ -46,24 +46,52 @@ without a date have **not** been checked; do not rely on the guess column.
 | **NSW** (Parliament of NSW) | May copy, distribute, display and download, provided the use is not for "advertising, satire or ridicule, or to misrepresent members of Parliament", and provided the notice "© State of New South Wales through the Parliament of New South Wales" is included. **Permission is required to charge for access, or to modify the material.** | conditional — notice required | 2026-09-13 |
 | **VIC** (Parliament of Victoria) | The Creative Commons licence covers only Library research publications. "All other material on the Parliament of Victoria website is copyright." No general reuse grant found for Hansard. | not clearly permitted | 2026-09-13 |
 | **BC** (Legislative Assembly of BC) | "The copyright in all material contained herein is claimed by the Legislative Assembly and the King's Printer ... and rests with His Majesty the King in Right of the Province of British Columbia." Reproduction "by any means for financial gain, or other than **personal use**" requires "the express written consent of the Speaker". | **restrictive** | 2026-09-13 |
-| MB | Manitoba publishes a copyright page (gov.mb.ca/legislature/copyright.html) that reads as the BC-style Speaker-consent model. **Not read directly — do not rely on this row.** | unverified | — |
-| AB, NL, NS, SK | not checked | unverified | — |
-| QLD, SA, TAS, WA | not checked. Queensland publishes a copyright page but it refused automated fetch; read it by hand. | unverified | — |
-| WAL (Senedd Cymru) | not checked; the copyright page moved and was not located. UK-wide practice is OGL, but that is an assumption, not a reading. | unverified | — |
+| **NS** (Nova Scotia) | "Users of this site may download, display, print, and reproduce material on this site for non-commercial use only." Commercial publication needs the Speaker's approval. Third-party material is identified and must be cleared separately. | permissive | 2026-09-13 |
+| **NL** (Newfoundland & Labrador) | The Speaker grants permission "to excerpt and cite the publications or web content ... for use in educational institutions and for other purposes, such as private study, academic papers, research, criticism, review or journalistic fair comment." Source should be acknowledged; commercial use needs the Speaker's express written approval. | permissive | 2026-09-13 |
+| **MB** (Manitoba) | May "download, reproduce, display or distribute material ... for non-commercial use only", with source acknowledged. **Material must remain unaltered** (except for length), and must not be placed in "undignified association". Commercial use or modification needs the Speaker's written permission. | conditional — no alteration | 2026-09-13 |
+| **WA** (Western Australia) | State copyright material on the Parliament site is licensed **CC BY 4.0** with certain exceptions: reuse freely, display the copyright notice, attribute the State of Western Australia. | permissive | 2026-09-13 |
+| **WAL** (Senedd Cymru) | Commits to allowing re-use "wherever it is possible and reasonable"; published information and datasets are offered under the Open Government Licence. Requests may be refused where third-party IP subsists. Not a blanket grant naming the Record of Proceedings. | permissive, not explicit | 2026-09-13 |
+| **QLD** (Queensland Parliament) | Material on the Parliament website, **including Hansard, "may not be reproduced or reused without prior written consent of the Clerk of Parliament"**. (Queensland *legislation* is CC BY 4.0 — a different site with different terms; do not confuse them.) | **restrictive** | 2026-09-13 |
+| AB (Alberta) | No published reuse policy found. The site carries Audio-Video Terms of Use but no general copyright grant; enquiries go to webmaster@assembly.ab.ca. | unverified | 2026-09-13 (searched, none found) |
+| SK (Saskatchewan) | No published reuse policy found. Records are subject to Crown copyright with only a footer notice; enquiries go to hansard@legassembly.sk.ca. | unverified | 2026-09-13 (searched, none found) |
+| SA, TAS | No published reuse terms found on either parliament's site. (Note, on a different question: these are the two Australian parliaments without statutory protection for publishers of parliamentary papers — that concerns defamation, not copyright, and does not bear on reuse.) | unverified | 2026-09-13 (searched, none found) |
 | **O\*NET-SOC 30.3** (occupation anchors) | CC-BY 4.0, redistributable with attribution, which the pre-registration and METHODOLOGY carry. This is why `market_anchors/occupation_titles.txt` and `onet_occupation_data.csv` are committed despite tripping the prose backstop — a standing false positive. | permissive | 2026-08-21 |
+
+### Where the permissions cluster
+
+The Canadian provinces converge on one model — non-commercial reuse permitted,
+alteration and commercial use reserved to the Speaker — with **BC** the
+outlier, allowing personal use only. The UK bodies are Open Government Licence
+or an OGL-aligned equivalent, and the most liberal of the set: Scotland
+permits commercial reuse outright. Australia is the split case: **WA** is CC BY
+4.0, **NSW** permits copying with a required notice, while **QLD** and **VIC**
+reserve Hansard entirely. The US chambers are public domain.
+
+Three chambers — **BC, VIC, QLD** — do not permit republication of their
+Hansard without written consent. Four more — **AB, SK, SA, TAS** — publish
+nothing to rely on, which is not the same as permission.
 
 ### What this means for what we published
 
 The **variants** — the files this was really about — draw only on NB and CA-FED,
 both permissive. That half is sound.
 
-The **verbatim** files are the problem, and it is the reverse of where I
-expected it. `detector_bench_controls.jsonl` carries 60 segments from each of
+The **verbatim** pools were the problem, and it was the reverse of where I
+expected it: `detector_bench_controls.jsonl` carried 60 segments from each of
 twenty chambers and `flagged_hits_pool.json` another 316 across the same
-spread, so they include **60 + 20 rows of British Columbia Hansard**, whose
-terms permit personal use only absent the Speaker's written consent, and
-**35 + 14 rows of Victoria**, which publishes no general reuse grant. NSW rows
-are permitted but require a copyright notice we do not yet carry.
+spread — including BC, VIC and QLD, all three of which reserve Hansard reuse,
+and four chambers that publish no terms at all.
+
+**Resolved 2026-09-13 by replacing the text with pointers.** Each row now
+carries `text_sha256` instead of `text`, so a reader verifies against the
+chamber's own archive rather than against a copy from us. No chamber's
+permission is needed to publish a hash, which makes the whole table above
+documentation rather than a constraint on what ships — the reason to finish it
+is that the paper quotes segments, and quotation is a separate question from
+redistribution.
+
+One residue: the text versions were pushed before the conversion, so they
+remain readable in earlier revisions of this repo's history.
 
 Most of these cover non-commercial academic research. All are permissions to
 **reproduce**, and none is a licence to redistribute a whole corpus, which is
