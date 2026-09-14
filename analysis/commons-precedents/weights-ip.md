@@ -870,6 +870,26 @@ suspends. **The chain for "reactions skip marginal-risk discipline" now has
 three independently read anchors: K&S 1999 (cost disproportion, entrepreneurs
 "including… the business sector"), Kingdon (pre-existing proposals attach to
 the event), Birkland 2006 p. 10 (attention moves while risk does not).**
+**⭐ The "actors who benefit can manufacture the trigger" move is already
+published, peer-reviewed, in an AI context — cite it, don't claim it.**
+Khanal, Zhang & Taeihagh, "Why and how is the power of Big Tech increasing in
+the policy process? The case of generative AI," *Policy and Society* 44(1)
+(2025): 52–69, DOI 10.1093/polsoc/puae012 (CC BY; read in the advance-article
+PDF — page numbers not verifiable from it): "The recent launch of ChatGPT…
+act[s] as a focusing event to further accelerate the concentration of power in
+the hands of the Big Tech" (abstract); and — the load-bearing sentence —
+Big Tech are "'super policy entrepreneurs.' They possess the resources and the
+technological prowess not only to shape and exploit but also to **potentially
+create focusing events, thereby dictating the timing and nature of policy
+windows**." Also Rauchfleisch, Suarez, Sales & Jungherr, *Telematics and
+Informatics* 103 (2025) art. 102344, DOI 10.1016/j.tele.2025.102344 (read as
+arXiv:2507.06876), built on Birkland: focusing events "may include naturally
+occurring incidents, such as accidents or system failures, or carefully staged
+moments, such as press conferences or product launches." So the moral-hazard
+structure is a straightforward extension of the published super-policy-
+entrepreneur framing to the *incident* rather than the *launch* as the
+manufactured focusing event — an extension, stated as such.
+
 **The HF incident as template:** a closed model, a closed lab's sandbox, a
 third party's production — and the discourse it produced was a frontier
 pacing regime plus open-source-ban forecasts. Attribution followed the layer
