@@ -812,9 +812,64 @@ published:** Kuran & Sunstein, "Availability Cascades and Risk Regulation,"
 *Stanford L. Rev.* 51 (1999) — salient events drive risk perception,
 amplified by "availability entrepreneurs" who benefit (the bootlegger role in
 a disaster); Kingdon (1984) focusing events; Birkland, *After Disaster* (1997).
-[Handles from memory — verify; Kuran is already in the paper's verified set for
-other work.] Kapoor/Bommasani's marginal-risk discipline is the exception the
-cascade suspends.
+**All three anchors VERIFIED at source (2026-09-13; JSTOR scan of K&S with
+star pagination cross-checked against the ACOEL clean text; Kingdon 2nd ed.
+full text; Birkland via Google Books page index).**
+- **Kuran & Sunstein, *Stanford L. Rev.* 51 (1999) 683–768.** Definition
+  (p. 683): "An availability cascade is a self-reinforcing process of
+  collective belief formation by which an expressed perception triggers a
+  chain reaction that gives the perception increasing plausibility through its
+  rising availability in public discourse." The load-bearing clause (p. 687):
+  the composite process "is generally triggered by a salient event."
+  Entrepreneurs (p. 687): "Social agents who understand the dynamics of
+  availability cascades and seek to exploit their insights may be
+  characterized as availability entrepreneurs. Located anywhere in the social
+  system, including the government, the media, nonprofit organizations, the
+  business sector, and even households, these entrepreneurs attempt to trigger
+  availability cascades likely to advance their own agendas." Disproportion
+  stated directly: Love Canal (p. 697, "$13.6 billion… Yet it remains unproven
+  that the contamination… ever posed a significant risk to anyone"); TWA 800
+  (p. 702, "sometimes a single event will trigger a rapid availability
+  cascade"); p. 742 ("A program to wipe out a minuscule risk cannot be
+  particularly effective…"); p. 747 (an upsurge of interest costs the
+  government "its ability to set sensible priorities"). Beneficiary structure
+  at pp. 733, 736 ("stands to benefit disproportionately from resources
+  allocated to solving the problem"). They pre-empt cherry-picking at n.101.
+- **Kingdon, *Agendas, Alternatives, and Public Policies*, 2nd ed.** Policy
+  window (p. 165): "advocates lie in wait in and around government with their
+  solutions at hand, waiting for problems to float by to which they can attach
+  their solutions." Focusing events (p. 169): "An airplane crash, for instance,
+  opens a window for advocates of initiatives in aviation safety. If they have
+  their proposals ready, the crash provides an opportunity to argue that the
+  proposal should be enacted." p. 204: "When a window opens, problems and
+  proposals flock to it." Pre-aggregation (pp. 95–96): "An airplane goes down,
+  killing hundreds of people at once rather than killing one patient at a
+  time" — attention tracks aggregation and visibility, not statistical
+  magnitude. (Kingdon does not make an explicit marginal-risk claim.)
+- **Birkland.** Definition, *After Disaster* (Georgetown UP, 1997) **p. 22**
+  (not p. 3): "a potential focusing event as an event that is sudden,
+  relatively rare, can be reasonably defined as harmful or revealing the
+  possibility of potentially greater future harms… and that is known to policy
+  makers and the public virtually simultaneously." ⚠️ The 1998 *JPP* article's
+  wording differs (semicolons, "relatively uncommon", no "virtually") and is
+  unverified from the article — do not cross-cite. **The disproportionality
+  sentence is in *Lessons of Disaster* (Georgetown UP, 2006), p. 10** — add
+  this to the citation set: "a sudden event will lead to a disproportionate
+  amount of attention to the issues revealed by the most recent disaster. This
+  is because the fact that an event has occurred generally does not change the
+  overall risk of any future event happening; rather, what has changed is the
+  level of interest in, attention to, and perhaps appreciation of the
+  possibility of an event's recurrence." (He extends Bryan Jones 2001 on
+  "disproportionate information processors" — build-on-published-work.) Also
+  *After Disaster* p. 119 (dread risk → "regulation… out of proportion to the
+  potential or actual harms" — Slovic-style, don't conflate) and *Lessons*
+  p. 54 (9/11: the probability "did not change suddenly on September 11").
+Kuran is already in the paper's verified set for other work.
+Kapoor/Bommasani's marginal-risk discipline is the exception the cascade
+suspends. **The chain for "reactions skip marginal-risk discipline" now has
+three independently read anchors: K&S 1999 (cost disproportion, entrepreneurs
+"including… the business sector"), Kingdon (pre-existing proposals attach to
+the event), Birkland 2006 p. 10 (attention moves while risk does not).**
 **The HF incident as template:** a closed model, a closed lab's sandbox, a
 third party's production — and the discourse it produced was a frontier
 pacing regime plus open-source-ban forecasts. Attribution followed the layer
