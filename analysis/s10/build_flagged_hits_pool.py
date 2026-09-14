@@ -7,10 +7,12 @@ date); texts from the per-id RTF submission files (pangram_x/, pangram_ch/
 etc.) and, for the UK/IE dashboard-rescore ids (chNNN), from the chamber
 segment jsonls via the verdict CSV's seg_id. Writes flagged_hits_pool.json.
 """
-import csv, glob, json, os, re
+import csv, glob, hashlib, json, os, re
 import banded_prevalence as B
 
 HERE=os.path.dirname(os.path.abspath(__file__))
+import sys
+WITH_TEXT = "--with-text" in sys.argv   # local inspection copy; never commit it
 def rtf_text(path):
     s=open(path, encoding="utf-8", errors="replace").read()
     s=re.sub(r"\\par[d]?", "\n", s)
@@ -64,7 +66,17 @@ for r,m in fl:
     elif m["id"] in extra_seg and extra_seg[m["id"]] in seg_text:
         t=seg_text[extra_seg[m["id"]]]
     if t: out.append({"id":m["id"],"chamber":ch,"band":band,"date":m["date"],
-                      "n_words":nw,"fraction_ai":frac,"text":t})
+                      "n_words":nw,"fraction_ai":frac,
+                      # Pointer, not text. Three of the twenty chambers (BC,
+                      # VIC, QLD) reserve Hansard reuse and four publish no
+                      # terms, so the committed pool carries the SHA-256 of the
+                      # scored string and a reader verifies against the
+                      # chamber's own archive. Writing "text" here again would
+                      # silently undo that on the next rebuild. Pass
+                      # --with-text for a local copy, which stays untracked.
+                      **({"text": t} if WITH_TEXT else
+                         {"text_sha256": hashlib.sha256(t.encode("utf-8")).hexdigest(),
+                          "n_chars": len(t)})})
     else: miss.append(m["id"])
 print(f"assembled {len(out)} of {len(fl)}; missing {len(miss)}: {miss[:10]}")
 json.dump(out, open(os.path.join(HERE,"flagged_hits_pool.json"),"w"))

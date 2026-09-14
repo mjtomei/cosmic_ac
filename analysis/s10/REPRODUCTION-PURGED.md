@@ -47,7 +47,7 @@ regardless of the guard.
 
 | file | rebuild | source of truth | results that survive |
 |---|---|---|---|
-| `flagged_hits_pool.json` | `python build_flagged_hits_pool.py` | the 316 flagged ids from `banded_prevalence.load()`, texts from the per-id RTF submissions and, for UK/IE rescore ids, from the chamber jsonls via each verdict's `seg_id` | `flagged_hits_audit.json` (tracked) via `flagged_hits_bound.py` |
+| `flagged_hits_pool.json` | `python build_flagged_hits_pool.py` (emits pointers; `--with-text` for a local copy, which must stay untracked) | the 316 flagged ids from `banded_prevalence.load()`, texts from the per-id RTF submissions and, for UK/IE rescore ids, from the chamber jsonls via each verdict's `seg_id` | `flagged_hits_audit.json` (tracked) via `flagged_hits_bound.py` |
 | `detector_bench_controls.jsonl` | re-extract by `seg_id` from the chamber stores | every row carries its id (`ctl|SAHA2007-03-07#t112w0` = South Australia, 2007-03-07, turn 112, word-window 0) | `detector_bench_ctl_scores.csv` (tracked) |
 
 `detector_transfer.py` — the analysis — reads **only** the two scores CSVs, never
