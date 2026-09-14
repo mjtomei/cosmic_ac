@@ -70,5 +70,9 @@ The corpora themselves. What is here is the sample the published detector
 results were computed on, in the least redistributive form that still lets a
 reader check them.
 
-See `SOURCE-LICENCES.md` for each publisher's terms, chamber by chamber, and
-`REPRODUCTION-PURGED.md` for rebuilding anything held back.
+Two caches are held back for size rather than licence — `vocab_year_counts
+.json.gz` and `member_cache_panel.json.gz`, counts with no prose. Rebuild them
+with `build_word_year_counts.py` and `build_member_cache_panel.py`; their
+downstream results are all tracked.
+
+See `SOURCE-LICENCES.md` for each publisher's terms, chamber by chamber.

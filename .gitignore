@@ -223,7 +223,6 @@ analysis/s10/quality_expansion/arch_*.tgz
 # no prose, but 56MB and 14MB against the guard's 10MB gate. Rebuild with
 # `python build_word_year_counts.py` and `python build_member_cache_panel.py`;
 # their downstream results (kobak_excess_words.csv, peak_gap_series.csv,
-# permeation_components.csv, leadlag_words.csv) are all tracked. Pointers in
-# analysis/s10/REPRODUCTION-PURGED.md.
+# permeation_components.csv, leadlag_words.csv) are all tracked.
 analysis/s10/vocab_year_counts.json.gz
 analysis/s10/member_cache_panel.json.gz

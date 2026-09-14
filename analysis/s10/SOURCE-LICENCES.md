@@ -17,7 +17,7 @@ Three classes, and the test for each.
 |---|---|---|
 | **Our own code and derived results** | yes | carries no source text: scripts, scores, verdicts, counts, codings, ids. This is nearly everything. |
 | **Our own model output** | yes | text a model produced *from a prompt*, not *from a passage* — `claude_gen/`, `rlhf_gen*/`. 34 files, explicitly exempted in the hook. |
-| **Source text, and anything embedding it** | no, with one named exception | verbatim transcripts and extracted-speech pools stay out, rebuildable — see `REPRODUCTION-PURGED.md`. The exception is the **reproduction substrate**: the four files a replicator needs to check our scoring, allowlisted by name and covered by `DATA-NOTICE.md`. |
+| **Source text, and anything embedding it** | no, with one named exception | verbatim transcripts and extracted-speech pools stay out, rebuildable from the committed builders. The exception is the **reproduction substrate**: the four files a replicator needs to check our scoring, allowlisted by name and covered by `DATA-NOTICE.md`. |
 
 The guard enforces this three ways, because no single test catches everything:
 a **path rule** (corpus directories), a **size gate** (10 MB any file, 2 MB for
