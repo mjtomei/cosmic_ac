@@ -1,55 +1,74 @@
-# Notice for the parliamentary text in this directory
+# Notice for the parliamentary material in this directory
 
-Four files carry parliamentary text so that the detector arms can be checked
-rather than taken on trust:
+Four files let the detector arms be checked rather than taken on trust. Two
+carry text; two carry pointers to it.
 
-| file | what it holds |
-|---|---|
-| `detector_bench_controls.jsonl` | 1,255 pre-2022 human control segments, verbatim |
-| `flagged_hits_pool.json` | the estimator's 316 flagged segments, verbatim |
-| `detector_bench_input.jsonl` | 341 machine-rewritten **variants** of NB and CA-FED segments |
-| `detector_bench_scored_input.jsonl` | the same variants as submitted for scoring |
+| file | rows | what it holds |
+|---|---|---|
+| `detector_bench_input.jsonl` | 406 | **text** — 341 machine-rewritten **variants** plus the 65 unmodified segments they derive from, all from NB and CA-FED |
+| `detector_bench_scored_input.jsonl` | 406 | **text** — the same set as submitted for scoring |
+| `detector_bench_controls.jsonl` | 1,255 | **pointers** — pre-2022 human controls across twenty chambers, as `text_sha256` + `n_chars` |
+| `flagged_hits_pool.json` | 316 | **pointers** — the estimator's flagged hits, same form |
 
-## Attribution and status
+## Why two of them are pointers
 
-Source proceedings are from the legislatures named in each row's `seg_id`,
-principally the **House of Commons of Canada** and the **Legislative Assembly
-of New Brunswick**, with control segments drawn from the twenty chambers listed
-in `SOURCE-LICENCES.md`.
+The control and flagged pools draw on all twenty chambers, and the terms differ
+by chamber. British Columbia permits reproduction "other than personal use"
+only with the Speaker's express written consent; Victoria publishes no general
+reuse grant for Hansard; Queensland reserves it to the Clerk; and four more
+chambers publish no terms at all. Republishing those rows was not ours to do.
+
+So each row carries the SHA-256 of the exact string that was scored instead of
+the string. A replicator fetches the segment from the chamber's own archive,
+hashes it, and gets a yes/no answer on whether they hold the same text we
+scored — a stricter check than comparing against a copy we supply, and one that
+needs no licence from anyone. `build_text_pointers.py --check` re-verifies the
+hashes against local text; `build_flagged_hits_pool.py` emits pointers by
+default.
+
+Earlier revisions of this repository carried those rows as text. They were
+removed from the published history on 2026-09-13.
+
+## The two that do carry text
+
+`detector_bench_input.jsonl` and `detector_bench_scored_input.jsonl` hold text
+because no committed script can regenerate it: `bypass_rewrite.py` seeds only
+its choice of in-context examples, not the model's sampling, so re-running it
+yields different strings — nobody, including us, can reproduce these. A hash
+would point at something no reader could obtain.
+
+Both draw only on the **House of Commons of Canada** and the **Legislative
+Assembly of New Brunswick**. Canada's Speaker's Permission allows reproduction
+"in whole or in part and in any medium ... provided that the reproduction is
+accurate and is not presented as official", excluding commercial use; New
+Brunswick permits reproduction "for educational purposes, private study,
+research, reporting ... without charge or request for permission".
 
 **These reproductions are not official.** They are not published under the
 authority of any House, and the absolute privilege attaching to proceedings
 does not extend to them. They are reproduced for **non-commercial academic
-research**. Where a chamber's own record differs from anything here, the
-chamber's record governs.
+research**. Where a chamber's own record differs, that record governs.
 
-## The variants are adaptations, not reproductions
+### The variants are adaptations, not reproductions
 
-`detector_bench_input.jsonl` and `detector_bench_scored_input.jsonl` contain
-text that a language model **rewrote**. Every row in them is a modification of
-a real speech and must not be read, quoted, or cited as anything a member said.
-Rows are marked `"kind": "variant"` and carry a run label (`nb_v3`, `go_all`);
-the `seg_id` ends in a variant suffix (`...|r1v3`) distinguishing it from the
-segment it was derived from.
+341 of the 406 rows in each file are text a language model **rewrote**. Every
+one is a modification of a real speech and must not be read, quoted, or cited
+as anything a member said. They are marked `"kind": "variant"`, carry a run
+label (`nb_v3`, `go_all`), and their `seg_id` ends in a variant suffix
+(`...|r1v3`) distinguishing them from the segment they came from. The remaining
+65 rows are marked `"kind": "original"` and are unmodified.
 
 Measured against their sources, the variants retain a median 56.9% of the
 original wording, and 94 of 180 keep a verbatim run of 20 words or more (max
-111). They are close paraphrases, not fresh compositions.
+111). They are close paraphrases, not fresh compositions — which is why the
+reproduction permissions above, both of which condition on accuracy, are not
+the instrument that covers them; that rests on fair dealing for research.
 
-## Why they are here rather than held back
+## What is not here
 
-They are what makes the arm checkable. `bypass_rewrite.py` seeds only its
-choice of in-context examples, not the model's sampling, so re-running it
-yields different strings — nobody, including us, can regenerate these. The
-control and flagged pools are recoverable in principle from their `seg_id`s,
-but only by someone who has rebuilt all twenty chamber corpora, and
-`flagged_hits_pool.json`'s builder additionally reads the gitignored Pangram
-RTF submissions. Without these four files a reader can recompute our published
-numbers from the scores CSVs but cannot verify that those scores belong to that
-text.
+The corpora themselves. What is here is the sample the published detector
+results were computed on, in the least redistributive form that still lets a
+reader check them.
 
-The corpora themselves remain out of this repo. What is here is the sample the
-published detector results were computed on — the minimum a replicator needs.
-
-See `SOURCE-LICENCES.md` for each publisher's terms and the reasoning behind
-what is and is not committed.
+See `SOURCE-LICENCES.md` for each publisher's terms, chamber by chamber, and
+`REPRODUCTION-PURGED.md` for rebuilding anything held back.
