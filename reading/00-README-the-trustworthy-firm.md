@@ -217,6 +217,43 @@ agarwal-2023; the path now ends honestly on the two cautions):
 
 
 
+## The disclosure-unraveling trio (2026-09-16) — acquired for Cosmic AC IV.4
+
+Motivated by Matthew's audit-precedent argument (outline IV.4: openness at
+the obligatory level is already statutory for public companies; the only
+legitimate barrier is cost; early-stage dishonest signaling is the
+illegitimate barrier; machine signaling enumerates the honesty-vs-
+attractiveness space and restores unraveling). These are the formal
+skeleton — cluster 5's *verifiable-disclosure* counterpart to the
+Crawford-Sobel cheap-talk line: cheap talk is what happens when the receiver
+cannot check; unraveling is what happens when it can.
+
+- **Grossman 1981**, *J. Law & Econ.* 24(3):461–483 — **FETCHED, VoR**
+  (JSTOR PDF, 24 pp incl. provenance sheet; stable 725273). The unraveling
+  theorem: with verifiable disclosure, silence reads as worst-case and full
+  disclosure is the equilibrium. Already in the Performance Commons
+  references (for warranties); now on disk.
+- **Milgrom 1981**, *Bell J. Econ.* 12(2):380–391 — **FETCHED, VoR** (AT&T
+  publisher offprint scan, 13 pp; **image-only, no text layer — OCR before
+  quoting or searching**). The representation theorems ("good news / bad
+  news") and the persuasion-game version of unraveling.
+- **Verrecchia 1983**, *J. Accounting & Econ.* 5:179–194 — **LOCATED-NEEDS-
+  HUMAN.** Elsevier-only; three independent attempts found no repository,
+  author-site, or Wayback copy, and ScienceDirect served a CAPTCHA to
+  automation (stop line). Verified IDs: DOI 10.1016/0165-4101(83)90011-3,
+  PII 0165410183900113. Routes for Matthew: (A) sciencedirect.com/science/
+  article/pii/0165410183900113 in a real browser — institutional login or
+  purchase — confirm "Discretionary disclosure, Robert E. Verrecchia, 5
+  (1983) 179–194" on screen, Download PDF; (B) ProQuest ABI/INFORM docview
+  213010316 via a library login (screen-verified record; note ProQuest
+  labels it iss. 3/Dec while Crossref says iss. 1/Apr — pages agree, do
+  not propagate the issue number unchecked). Save as
+  `verrecchia-1983-discretionary-disclosure.pdf`. Its role: the
+  disclosure-cost threshold that stops unraveling — the legitimate barrier,
+  formalized — so it is the one of the three IV.4 most needs verbatim.
+
+Ranked tier 2 (side-track anchors for this shelf; load-bearing for IV.4).
+
 ## Broken-handle entry resolved and fetched (2026-08-16) — ranked 2026-08-16
 
 The failed-fetch entry `ricardo-2008-optimal` is **Alonso & Matouschek,

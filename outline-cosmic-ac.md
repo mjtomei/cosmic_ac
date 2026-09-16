@@ -898,10 +898,14 @@ signaling.** ⟨/M⟩ Grounded:
   the paper's own evidence shows collapsing in cost.
 - **The illegitimate barrier has a formal name: broken unraveling.**
   Disclosure theory's core result (Grossman 1981 — already in the
-  Performance Commons references for warranties; Milgrom 1981) says that
-  with costless, *verifiable* disclosure, silence reads as bad news and full
-  openness unravels out as the equilibrium; Verrecchia 1983 adds the cost
-  threshold that stops it — the legitimate barrier, formalized. Early-stage
+  Performance Commons references for warranties; Milgrom 1981 — both now on
+  the trustworthy-firm shelf as VoRs, 2026-09-16; Milgrom is image-only,
+  OCR before quoting) says that with costless, *verifiable* disclosure,
+  silence reads as bad news and full openness unravels out as the
+  equilibrium; Verrecchia 1983 adds the cost threshold that stops it — the
+  legitimate barrier, formalized (Elsevier-only; LOCATED-NEEDS-HUMAN, routes
+  in the shelf README — the one of the three this argument most needs
+  verbatim). Early-stage
   culture breaks the theorem's *verifiability* premise instead: where
   fake-it-till-you-make-it overclaiming is normalized, signals decouple from
   facts and the unraveling stalls — a lemons equilibrium in signaling,
