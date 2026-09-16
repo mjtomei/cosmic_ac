@@ -922,6 +922,25 @@ signaling.** ⟨/M⟩ Grounded:
   cheap talk, on disk) pushed to its limit — when receivers can verify
   everything cheaply, cheap talk hardens into disclosure whether the sender
   likes it or not.
+- **The transition path (Matthew, 2026-09-16), wording preserved — how you
+  get from here to there, closed-for-signaling-reasons to open:** ⟨M⟩ The
+  answer is that **the open company can also do the signaling at low cost,
+  just like they can do the audit at low cost.** But the argument that **the
+  availability of cheap audits obligates it in the long term, which again
+  incentivizes openness, is also true.** ⟨/M⟩ Unpacked as the two forces:
+  (1) *nothing is forfeited by opening* — companies close because curated
+  presentation is a signaling advantage and honest signaling is
+  competence-intensive; machine intelligence makes maximally attractive
+  *honest* signaling as cheap as dishonest signaling, so the open company
+  competes in the same signaling game at the same cost while also being
+  verifiable. Opening is not unilateral disarmament; the reason for closing
+  evaporates before the obligation arrives. (2) *the obligation arrives
+  anyway* — cheap audits push the disclosure regime down-market (the
+  unraveling above), so openness becomes the expected default. The two
+  forces work independently: (1) removes the cost of moving first, (2)
+  raises the cost of staying behind — a pincer, not a leap of faith. No
+  company must ever choose honesty at a competitive price; the equilibrium
+  moves because the price difference disappears.
 - Tie back: this is also IV.4's scheduler argument run in reverse — the
   scheduler *demands* openness to optimize; the audit precedent shows the
   market already *sells* openness as credibility; machine intelligence
