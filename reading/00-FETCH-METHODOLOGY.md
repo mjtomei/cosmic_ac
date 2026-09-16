@@ -83,3 +83,10 @@ HUMAN (with the specific action and verified ID), CHECKED-AND-ABSENT (with
 which indexes said so), or UNRESOLVED-IDENTITY / CHECK-FAILED (retry queue —
 never silently dropped). Re-hunts read the prior ledger and skip exhausted
 angles by name.
+
+## Sibling: transcription
+
+Turning an acquired scan into a readable, citable markdown edition has its
+own canonical doc: `00-TRANSCRIPTION-METHODOLOGY.md` (script extraction →
+in-place LLM smoothing → optional translation glosses → invariants +
+ledgers). Workflow scripts in `.claude/workflows/transcription/`.
