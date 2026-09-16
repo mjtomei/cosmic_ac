@@ -98,7 +98,7 @@ against the published version before it enters the paper (the JSON's version-
 trap list has the mapping; gordon-2022 is an ECGI draft marked do-not-cite —
 cite the J. Corp. L. version).
 
-## The reading path — the argument in order
+## The reading path — the argument in order (20 steps; 18–19 added 2026-09-16)
 
 1. ★★★ **bernheim-taubinsky-2018-behavioral-public-economics.pdf**
    Opens leg 1 by defining what must be known: the internality as a per-person money-metric wedge, t*=γ̄ — and its own verdict that this wedge is essentially unmeasured, which is the cost the paper claims MI collapses.
@@ -134,8 +134,12 @@ cite the J. Corp. L. version).
    Not on disk, and the argument names it: markets equilibrium-select the extractive twin, exploitation surviving competition and cross-subsidized by sophisticates. The sharpest statement of what the paper must overturn.
 17. ★★★ **agarwal-2023-who-pays-for-rewards.pdf**
    The critique measured in the exact analogue: a bank that profits from how customers spend, steering purchases and moving $15.1B/yr from naive to sophisticated. The observed equilibrium is the extractive twin.
-18. (not on disk) **MI-MEASURES-THE-WEDGE EVIDENCE — MISSING FROM THE CLUSTER**
-   The what-changed resolution has no source on disk. Nothing here shows machine intelligence estimating a per-person wedge cheaply or demonstrating wisdom legibly; the closing move is currently asserted, not evidenced.
+18. ★★★ **grossman-1981-warranties-private-disclosure.pdf**
+   The critique's answer in theory — and the shelf's prediction of the paper's key claim: with verifiable, costless disclosure, silence reads as worst-case and full openness is the *unique* equilibrium (unraveling). Read straight after steps 15–17: shrouding survives when receivers are myopic, unraveling wins when they can verify, so the open-vs-closed question *is* this pair, decided by the sophisticated-receiver share. Proved 1981; the paper's contribution is the premise change — machine intelligence makes verification cheap.
+19. ★★★ **milgrom-1981-good-news-bad-news.pdf**
+   Grossman's independent contemporary: the representation theorems ("good news" = monotone likelihood ratio) and the persuasion-game form of unraveling — the formal notion of favorable evidence that the honesty-vs-attractiveness enumeration reasons over. Cite the pair together. Image-only offprint; OCR before quoting. (Verrecchia 1983's disclosure-cost threshold — the legitimate barrier formalized — is the third leg, LOCATED-NEEDS-HUMAN.)
+20. (not on disk) **MI-MEASURES-THE-WEDGE EVIDENCE — MISSING FROM THE CLUSTER**
+   *Narrowed 2026-09-16:* the what-changed resolution now has its **theoretical** source on disk — steps 18–19 say what changed (the sophisticated-receiver share, driven toward one by zero-cost verification, flips the equilibrium from shrouding to unraveling). What remains missing is the **empirical** half: nothing here shows machine intelligence estimating a per-person wedge cheaply or demonstrating wisdom legibly; that closing move is still asserted, not evidenced.
 
 ## Side tracks
 
