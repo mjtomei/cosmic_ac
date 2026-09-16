@@ -869,6 +869,64 @@ idealistic. §9's "whoever runs the loop owns the objective" governance bullet
 dissolves HERE, inline, as the design constraint on the scheduler (open,
 user-verifiable, or it recreates the moat). *(Existing + new bridge.)*
 
+**The audit precedent (Matthew, 2026-09-16), wording preserved:** ⟨M⟩ The
+argument is stronger if we say that **the market already requires that level
+of openness for the largest companies, which suggests that the only
+legitimate barrier is cost.** But the **culture of dishonest signaling in
+early stage companies will serve as an illegitimate barrier** still. Even so,
+**machine intelligence will be better at signaling and you would see the
+whole honesty versus attractiveness space enumerated instantaneously. So the
+open company would still outcompete the closed one engaging in dishonest
+signaling.** ⟨/M⟩ Grounded:
+
+- **The precedent is statutory, old, and priced.** Every public company
+  already opens its books to external auditors and the public — the 1933/34
+  Securities Acts' disclosure regime, the annual audited 10-K, and SOX
+  §404's internal-controls attestation (canonical-tier, VERIFY citations
+  before print). Openness at the required level is not utopian; it is the
+  *admission ticket to the public capital markets*, and the largest
+  companies pay it as a routine cost of capital. The claim "openness is
+  obligatory" therefore extends an existing obligation down-market rather
+  than inventing one.
+- **The legitimate barrier — cost — is measured.** The SOX-compliance
+  literature quantifies exactly this: §404 costs fall regressively on small
+  firms, and marginal firms measurably deregistered or stayed private to
+  avoid them (Iliev, *J. Finance* 2010; Leuz, Triantis & Wang, "going dark,"
+  JAE 2008 — canonical-tier, VERIFY). That is the honest form of the
+  objection, and it is precisely the form machine intelligence attacks:
+  audit/verification is competence-intensive white-collar work, the category
+  the paper's own evidence shows collapsing in cost.
+- **The illegitimate barrier has a formal name: broken unraveling.**
+  Disclosure theory's core result (Grossman 1981 — already in the
+  Performance Commons references for warranties; Milgrom 1981) says that
+  with costless, *verifiable* disclosure, silence reads as bad news and full
+  openness unravels out as the equilibrium; Verrecchia 1983 adds the cost
+  threshold that stops it — the legitimate barrier, formalized. Early-stage
+  culture breaks the theorem's *verifiability* premise instead: where
+  fake-it-till-you-make-it overclaiming is normalized, signals decouple from
+  facts and the unraveling stalls — a lemons equilibrium in signaling,
+  sustained by convention rather than economics (the Theranos pole;
+  entrepreneurial-hype literature, VERIFY a specific anchor before use).
+- **Machine intelligence restores the theorem's premises, and then some.**
+  ⟨M⟩'s enumeration point, unpacked: signaling under human cognition is a
+  sequential bluffing game played move by move; machine counsel on both
+  sides evaluates the *whole* honesty-versus-attractiveness frontier at
+  once — every feasible representation of the company, priced for both its
+  appeal and its verification survival. Instantaneous enumeration means
+  dishonest signals are chosen *knowing* they will be checked (verification
+  is now cheap, per the cost bullet), so their expected value collapses,
+  and the unraveling equilibrium resumes: **the open company outcompetes
+  the closed one because its signals survive enumeration and the closed
+  company's are discounted to their audited residue.** This is the
+  trustworthy-firm shelf's cheap-talk line (Ottaviani-Sørensen reputational
+  cheap talk, on disk) pushed to its limit — when receivers can verify
+  everything cheaply, cheap talk hardens into disclosure whether the sender
+  likes it or not.
+- Tie back: this is also IV.4's scheduler argument run in reverse — the
+  scheduler *demands* openness to optimize; the audit precedent shows the
+  market already *sells* openness as credibility; machine intelligence
+  collapses the price. Obligatory from both ends.
+
 ---
 
 ## Movement V — One shared computer  [MIXED→IMAGINED]
