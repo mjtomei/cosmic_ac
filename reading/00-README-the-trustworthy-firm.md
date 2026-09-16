@@ -252,7 +252,16 @@ cannot check; unraveling is what happens when it can.
   disclosure-cost threshold that stops unraveling — the legitimate barrier,
   formalized — so it is the one of the three IV.4 most needs verbatim.
 
-Ranked tier 2 (side-track anchors for this shelf; load-bearing for IV.4).
+**Ranked TIER 1** (9.0 / 8.7; promoted from an initial tier 2 on 2026-09-16
+at Matthew's push — the tier-2 call had calibrated them against this shelf's
+advice/internality main path, the wrong frame: they *predicted the key
+claim*. Under verifiable, cheap disclosure, full openness is the unique
+equilibrium — the theorem is forty-five years old, and the paper's
+contribution is the premise change, machine intelligence making verification
+cheap). Read as the thesis half of a pair with Gabaix-Laibson 2006 (tier 1,
+the antithesis: shrouding survives when receivers are myopic): the open-vs-
+closed question is exactly this pair, decided by the sophisticated-receiver
+share — the parameter machine counsel drives toward one.
 
 ## Broken-handle entry resolved and fetched (2026-08-16) — ranked 2026-08-16
 

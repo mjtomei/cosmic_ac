@@ -896,13 +896,21 @@ signaling.** ⟨/M⟩ Grounded:
   objection, and it is precisely the form machine intelligence attacks:
   audit/verification is competence-intensive white-collar work, the category
   the paper's own evidence shows collapsing in cost.
-- **The illegitimate barrier has a formal name: broken unraveling.**
-  Disclosure theory's core result (Grossman 1981 — already in the
-  Performance Commons references for warranties; Milgrom 1981 — both now on
-  the trustworthy-firm shelf as VoRs, 2026-09-16; Milgrom is image-only,
-  OCR before quoting) says that with costless, *verifiable* disclosure,
-  silence reads as bad news and full openness unravels out as the
-  equilibrium; Verrecchia 1983 adds the cost threshold that stops it — the
+- **The key claim was predicted in 1981; the paper changes one premise.**
+  Per the build-on-published-work convention, say this first: Grossman
+  (1981) and Milgrom (1981) — both on the trustworthy-firm shelf as VoRs,
+  tier 1; Milgrom image-only, OCR before quoting — proved that with
+  costless, *verifiable* disclosure, silence reads as bad news and full
+  openness unravels out as the *unique* equilibrium. "Openness becomes
+  obligatory" is that theorem; what this paper supplies is the premise —
+  machine intelligence makes verification cheap — and the theorem supplies
+  the conclusion. The shelf's own antithesis is Gabaix-Laibson 2006
+  (shrouding survives when receivers are myopic; the honest twin wins no
+  business even with free advertising), so the open-vs-closed question is
+  literally the Grossman-vs-Gabaix-Laibson question, decided by the
+  sophisticated-receiver share — the parameter machine counsel drives toward
+  one. **The illegitimate barrier then has a formal name: broken
+  unraveling.** Verrecchia 1983 adds the cost threshold that stops it — the
   legitimate barrier, formalized (Elsevier-only; LOCATED-NEEDS-HUMAN, routes
   in the shelf README — the one of the three this argument most needs
   verbatim). Early-stage
