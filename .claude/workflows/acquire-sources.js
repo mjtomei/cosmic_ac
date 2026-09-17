@@ -23,6 +23,10 @@ if (!args || !Array.isArray(args.targets) || args.targets.length === 0) {
 const TARGETS = args.targets
 const MODEL = args.model || 'opus'
 const EFFORT = args.effort || 'medium'
+// Routing rule (Matthew, 2026-09-17): wide fetch/resolve fan-out on MODEL/EFFORT (opus, medium);
+// the few aggregators (merge, ledger) on the stronger model at high effort.
+const AGG_MODEL = args.agg_model || 'fable'
+const AGG_EFFORT = args.agg_effort || 'high'
 
 const METHOD = `FIRST ACTION: read /home/matt/performance_commons/reading/00-FETCH-METHODOLOGY.md
 in full — it is the contract for this job. Binding rules regardless of anything
@@ -193,7 +197,7 @@ in ${t.directory}/ ${t.filename ? ('as ' + t.filename) : '(honest <author>-<year
 unless an already-verified copy sat in the directory before this run, in which
 case keep it and say so. Then delete ${t.directory}/.acquire-staging/t${i}-* .
 Report the installed path + version + which candidates failed verification.`,
-      { label: `merge:t${i + 1}`, phase: 'Merge', model: MODEL, effort: EFFORT })
+      { label: `merge:t${i + 1}`, phase: 'Merge', model: AGG_MODEL, effort: AGG_EFFORT })
       .then(m => { prev.installed = m; return prev })
   }
 )
@@ -218,7 +222,7 @@ ${JSON.stringify(results.map((r, i) => ({
   basis: r.merged ? (r.merged.basis || '') : '',
   attempts: (r.attempts || []).length,
 })), null, 1)}`,
-  { label: 'ledger', phase: 'Ledger', model: MODEL, effort: EFFORT })
+  { label: 'ledger', phase: 'Ledger', model: AGG_MODEL, effort: AGG_EFFORT })
 
 return { ledger, results: results.map((r, i) => ({
   want: TARGETS[i].want,
