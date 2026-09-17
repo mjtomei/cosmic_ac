@@ -572,3 +572,72 @@ power"; Altman: "not too concentrated with any person, company, or country"),
 and durable scarcity rent on a non-rival good is concentration by definition.
 The contradiction is between the charter and the cap table, not between profit
 and abundance.
+
+## Citation-graph sweep, S18 shelf (2026-09-17) — second confirmation, and the objections to engage
+
+Full report: `~/reading/the-socialized-buildout/00-CITATION-GRAPH.md` (120
+candidates from 12 seeds; 32 acquire-now). **Bridge verdict: no candidate makes
+the crash-versus-copy inversion, and none holds both halves at once** — the
+graph walk confirms the absence a second time. Three near-misses, each missing
+a different half: **Morck 2022** (ARFE; manias as a mechanism for financing
+infrastructure whose social returns exceed private — but socialization runs
+*through the loss*; no non-rivalry); **Gross & Sampat 2023** (AER; a financed
+buildout whose non-rival output socialized continuously with no crash — but
+publicly financed, so no private stock was ever exposed: "the project's
+conclusion with the interesting premise removed"); **Birch 2019** (STHV; the only
+work holding non-rivalry and capital markets in one frame — and it argues the
+opposite: enclosure runs through contract and access control). Build on all
+three and state the contrast.
+
+**Objections the sweep surfaced that the thread must engage (add to §6):**
+- *The attached value is justified:* **Nicholas 2008** (AER — 1920s runup
+  tracked measured innovation value, not mania: the strongest published form);
+  Goldfarb, Kirsch & Miller 2007 (JFE — dot-com entry/failure unexceptional);
+  Hogendorn 2011 (Telecomm. Policy — tests whether telecom entry was excessive;
+  the only work citing both of Odlyzko's literatures); Bloom, Jones, Van Reenen
+  & Webb 2020 (ideas getting harder to find); Paul David 1990 (electrification's
+  delayed payoff — rescues the lag, undercuts the urgency).
+- *Appropriability is tight / rivalry migrates to compute:* **Birch 2019**;
+  van der Vlist, Helmond & Ferrari 2024 (Big Data & Society — cloud dependence
+  mapped); Ahmed, Wahed & Thompson 2023 (Science — industry capture of
+  compute/data/talent); **Jiang & Rubinton 2024** (adopting a nonrival input
+  expands firm scope — *nonrivalry itself can drive concentration*, in our own
+  vocabulary); Petit & Teece 2021 (the seed author's own defence of concentrated
+  incumbents); Laursen & Salter (paradox of openness); Gans 2024 (NBER 32270 —
+  natural monopoly at the frontier, formally).
+- *Commons get enclosed / openness is theatre:* Widder, West & Whittaker 2023;
+  Jewitt et al. 2026 (KDD — permissive AI licences fail their own notice
+  conditions); **Graff et al. 2003** (Nature Biotech — the ag commons fenced
+  exactly where a right attached, measured: the quantitative replacement for
+  leaning on Kloppenburg); Wright & Pardey 2006; **Peukert et al. 2024**
+  (Unsplash — contributors withdrew once works became training data: the input
+  commons closes behaviourally *even where no right exists* — the sharpest
+  version of the Leg-2 problem).
+- *The precedent numbers do not hold:* **Hurley, Rao & Pardey 2014** (AJAE —
+  reported ag IRRs implausible; quote the modified figures or lose the leg) +
+  the Oehmke 2016 exchange; **Bryer 1991** (railway-mania losses as engineered
+  expropriation, not diffuse socialization — sharpens *and* complicates
+  "crash and dispossession"); Casson 2009 (a planned network would have been
+  far cheaper — decentralized buildout wastes capital rather than socializing
+  it); McCartney 2022.
+- *The political-layer story is overdrawn:* Woods 2024 (states hold the
+  leverage); Mannix & Dudley 2015 (against cascades as a regulatory rationale).
+
+**Supporting empirics worth acquiring (top of the acquire-now list):** Heidi
+Williams 2013 (JPE — a nonrival capability held by *contract not property* still
+cut follow-on innovation 20–30%: Leg 2's premise, tested); Teece 2018 (Research
+Policy — his own digital-era rewrite); Pástor & Veronesi 2009 (AER — the formal
+model of attached value exceeding deployed stock); Tripsas 1997 (the canonical
+complementary-assets test); Murray et al. 2016 (AEJ:EP — opening a nonrival
+input raised follow-on diversity); Goldfarb & Kirsch 2019 (*Bubbles and
+Crashes* — which bubbles leave legacies); Fransman 2004 (the telecom-bust
+academic anchor the leg lacks); Benzell & Brynjolfsson 2019 (abundant nonrival
+factor → rent to the scarce complement); Veldkamp 2023 (valuing a nonrival
+intangible); Jacobides et al. 2021 (rent relocation in AI, already published);
+Gambardella & Hall 2006 (when open provision needs a licensing device); Rub
+2017 (the copyright–contract preemption hinge); Griliches 1958 (hybrid corn —
+enclosure by technical exclusion rather than IP, in 1958); Anderson & Feder
+2007 (extension economics); Furman & Stern 2011 (commons *institutions* raise
+cumulative research); Bikhchandani-Hirshleifer-Welch 1992 (the cascade model
+under K&S, with the fragility result); Carpenter & Moss 2013 (*Preventing
+Regulatory Capture*, esp. Kwak on cultural capture).
