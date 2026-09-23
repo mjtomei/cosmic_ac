@@ -586,3 +586,38 @@ knowledge-problem canon, 44b to the drift/dynamics line.
     rebuttal that cheapens processors attacks the bandwidth/capacity leg and
     leaves the latency leg untouched. That asymmetry is the argument, and it
     should be stated that way.
+
+## Citation-graph acquisition (2026-09-23): 24 of 26 fetched, 129 agents
+
+From `00-CITATION-GRAPH-brynjolfsson-hitzig.md`'s acquire-now list. Version
+doctrine applies — cite the published version, never a working copy's
+pagination. **Working papers / preprints standing in for closed VoRs:**
+Kwon-Ma-Zimmermann (BFI WP 2023-20, not the AER pp. 2111–2140); Myerson 1977
+(Northwestern discussion paper 246, Sept 1976 — image-only — not the MOR
+pp. 225–229); Buterin-Hitzig-Weyl (arXiv v2, not Mgmt Sci pp. 5171–5187);
+Brynjolfsson-Jin-Petropoulos-Wang (NBER w31065 as revised Nov 2025);
+Shahidi et al. (NBER WP 34468) and Athey-Scott Morton (NBER WP 34444) for
+their volume chapters; Hadfield-Koh (arXiv 2509.01063) and
+Chatterji-Rock-Talamàs "TAI and Firms" (NBER pre-publication ch. PDF) for
+theirs; Jensen-Meckling is the JACF 1995 version (pp. 4–18), not the 1992
+Blackwell chapter; Cullen-Li-Li is the March 2026 "preliminary & incomplete"
+HBS draft (cite 2026, filename says 2025). **VoRs:** Lu 2025 (RAE, OA),
+Kurun 2026 (Phil & Tech 39:148), Cao & Cai 2026 (Minds & Machines 36(1) art.
+4 — the "36(4)" in the graph list was the article number), Bloom et al.
+2014 (Mgmt Sci pp. 2859–2885), Garicano 2000, Grossman-Hart 1986 and
+Hart-Moore 1990 (Harvard DASH scans), Bolton-Dewatripont 1994 (JSTOR scan,
+image-only), Cemri 2025 (NeurIPS D&B camera-ready), Allen-Weyl 2024 (Project
+MUSE), Acemoglu 2023 (2-page offprint, folios 48–49 — check before citing
+50–52). Preprints with no VoR: Catalini-Hui-Wu, Chatterji-Rock-Talamàs
+"Knowledge Spiral," Longpre et al.
+
+**LOCATED-NEEDS-HUMAN — Sunstein, "The AI Calculation Debate" (SSRN
+5054402, 17 pp, the only version that exists).** SSRN's Cloudflare check is
+the stop line. In a browser: papers.ssrn.com/sol3/papers.cfm?abstract_id=5054402
+→ confirm title/author on screen → "Download This Paper" (free; may want a
+free SSRN sign-in) → save as `sunstein-2024-ai-calculation-debate.pdf`.
+
+The four volume-chapter comments (Stuart c15328, Rothschild c15310, Bryan
+c15306, Tucker c15302) were not installed; they sit behind the same NBER
+Sept-2026 file restriction as Ludwig et al. below and need the same human
+route if wanted. Ranking pass over the arrivals in flight.

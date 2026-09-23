@@ -318,3 +318,21 @@ already listed.
    the human's misalignment is intrapersonal. The standard fix — principal as
    long-run self, agent as present self — is a modeling move to defend, not a
    free translation.
+
+## From the Brynjolfsson & Hitzig citation graph (2026-09-23)
+
+The volume's "Algorithms as a Vehicle to Reflective Equilibrium: Behavioral
+Economics 2.0" (Ludwig, Mullainathan, Pink & Rambachan, ch. 11) is this
+shelf's — algorithms eliciting preferences people cannot state is the
+elicitation leg of the Hayek criterion done empirically, and V.3b's advice
+line. **LOCATED-NEEDS-HUMAN:** NBER applies a file-level restriction to the
+Sept-2026 chapters (403 for c15320–c15327 while older chapters serve). From
+an account with NBER book-chapter access, open
+nber.org/books-and-chapters/economics-transformative-ai/algorithms-vehicle-reflective-equilibrium-behavioral-economics-20
+→ chapter PDF (c15325) → confirm p.1 → save as
+`ludwig-mullainathan-pink-rambachan-2025-algorithms-reflective-equilibrium-nber-c15325-prepub.pdf`;
+library fallback is the UCP e-book (ISBN 9780226854090), ch. 11 pp. 275–293.
+No preprint exists anywhere. **Installed as a companion:** Nagaraj's
+discussant comment (c15326, pre-publication ms, 9 pp) —
+`nagaraj-2025-comment-on-algorithms-as-a-vehicle-to-reflective-equilibrium-nber-c15326-prepub.pdf`
+(not the UCP pp. 293–298). Ranking pass in flight.
