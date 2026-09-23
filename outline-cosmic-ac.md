@@ -865,7 +865,14 @@ express-company financials, Hyperion terms, Cooke/NYSE detail).]*
 channel / incentive, Game Ready / Cloud Profiles fragments, commoditize-the-layer)
 — extended into the **dynamic socially-aware scheduler**: the optimal scheduler
 requires maximum openness, which is what makes openness obligatory rather than
-idealistic. §9's "whoever runs the loop owns the objective" governance bullet
+idealistic. The opposing camp concedes the frame: Brynjolfsson & Hitzig
+(Chicago/NBER 2026, ch. 12) argue AI makes exactly this kind of centralized
+coordination feasible and efficient and predict it lands in *firms* — and their
+§8 says the political question "will depend less on centralization itself than
+on how power is made accountable," which is this section's design constraint
+in their words; their discussant Goldfarb names open models and several
+competing models as the constraint that keeps the platform from becoming the
+moat. (Full carry in the Hayek-criterion section.) §9's "whoever runs the loop owns the objective" governance bullet
 dissolves HERE, inline, as the design constraint on the scheduler (open,
 user-verifiable, or it recreates the moat). *(Existing + new bridge.)*
 
@@ -2745,9 +2752,60 @@ no planner could?" into four measurable requirements:
   computation×drift, elicitation×drift) are evidence FOR the frame, not against
   it: five communities keep arriving at two-way versions of the same problem.
 
-  **Anchors to build on rather than beat:** Brynjolfsson & Hitzig (NBER 2025);
-  Gmeiner & Harper (AI & Society 2024, credited for naming the four concerns
-  first). **Live competition to read and engage:** "Hayek Displaced: Can AI Solve
+  **Anchors to build on rather than beat:** Brynjolfsson & Hitzig — now
+  PUBLISHED as ch. 12 of *The Economics of Transformative AI* (Agrawal,
+  Brynjolfsson & Korinek eds., Chicago/NBER 2026; we hold the Sept 2025
+  conference draft, NBER c15303 — cite the published chapter, never the
+  draft's pagination) — and Gmeiner & Harper (AI & Society 2024, credited for
+  naming the four concerns first). **B&H must be carried as BOTH anchor and
+  best opposing case (2026-09-23).** Same premise as ours, formalized in a
+  Grossman-Hart-Moore property-rights frame: AI (i) codifies local knowledge
+  that was tacit and inalienable and (ii) expands processing capacity, eroding
+  the informational advantage of on-the-spot decision-makers — the criterion's
+  requirement 1 falling, in their words. But their institutional prediction is
+  the opposite of ours: **larger firms, greater concentration, reduced local
+  managerial autonomy**, with early evidence they find "largely consistent"
+  (rising C4 across US sectors, superstar firms, documented removal of
+  discretion from local retail managers — Autor et al. 2020, Brynjolfsson et
+  al. 2023, Bessen). Carried whole. Where our position lives in their own
+  paper: §6 countervailing forces (limits to codifiability and the long tail;
+  latency and incomplete contracts *among AI agents*, which they concede
+  require residual control rights at the edge; legislative and preferential
+  requirements for human decision) and §8: "Whether this is politically
+  problematic will depend less on centralization itself than on how power is
+  made accountable" — which is IV.4's open/user-verifiable scheduler
+  constraint stated by the opposing side. Their §6.4 summary is the honest
+  form of the disagreement: *in the absence of active countermeasures*,
+  centralization intensifies. The commons IS the countermeasure; the paper's
+  claim is not that the technology decentralizes but that the open design
+  makes decentralization the efficient equilibrium rather than the legislated
+  exception.
+
+  **And the discussant took our side (Goldfarb, "Artificial intelligence and
+  decentralization," comment on B&H, same volume, on disk).** Three
+  decentralizing forces B&H's model omits: tacit knowledge often resides at
+  *headquarters* (franchise marketing, supply chains), so AI alienates it
+  *downward* and franchisees can operate without central coordination; AI
+  equips individuals with organization-scale capability ("one person with
+  transformative AI could perform work that previously required entire
+  departments" — Dell'Acqua et al. 2025's individuals-with-AI-match-teams
+  result); and diffusion is fast (40% of US adults on generative AI by late
+  2024). His platform argument is our aggregation point exactly: "the platform
+  provides coordination, but the actual business decisions remain distributed"
+  — coordination benefits coexisting with distributed decision rights. And his
+  governance sentence is ours: developers' "ability to centralize power through
+  their platforms will be constrained if there continues to be several
+  competing models... a regulatory environment that enables open models and
+  open-source frameworks could provide further competitive pressure." His
+  footnote-2 quibble — that B&H's leap from a two-party contracts model to
+  Hayek, command economies and socialism is unearned, and that the same leap
+  would license "a new era of entrepreneurial democratic capitalism" — is a
+  caution for our leap too. His risks-of-decentralization section (echo
+  chambers, malicious AI swarms — Schroeder et al. 2025) is carried as the
+  objection to our side. Net: the two sides of one NBER session now bracket
+  the paper's position, and the paper's contribution is naming the design
+  variable — openness and plurality of models — that decides which of them the
+  technology delivers. A citation-graph run around B&H is in flight. **Live competition to read and engage:** "Hayek Displaced: Can AI Solve
   the Socialist Calculation Problem?" (SSRN 2026, not peer-reviewed) and
   "Markets, agency, and trust: AI agents and the knowledge problem" (Review of
   Austrian Economics 2026) — someone is asking our question in print now.

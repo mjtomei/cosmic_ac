@@ -363,11 +363,32 @@ of which talks to the calculation debate. These are the papers to build on.)*
 
 ## B. ML-era instances and datafication
 
-38. ★★ **brynjolfsson-hitzig-2025-ai-use-of-knowledge.pdf** — NBER chapter c15303.
-    **The near-collision**: same premise (AI erodes Hayek via codified tacit
-    knowledge + processing capacity), near-same title, GHM property-rights
-    apparatus, *no criterion, no engagement with items 21–31*. The paper must
-    position against this explicitly and early.
+38. ★★★ **brynjolfsson-hitzig-2025-ai-use-of-knowledge.pdf** — NBER chapter c15303,
+    **now published as ch. 12 of *The Economics of Transformative AI* (Chicago/NBER,
+    Sept 2026)**; on disk is the Sept 2025 conference draft — cite the published
+    chapter, never the draft's pagination (promoted ★★→★★★ 2026-09-23).
+    **Anchor AND best opposing case**: same premise (AI erodes Hayek via codified
+    tacit knowledge + processing capacity), GHM property-rights apparatus, *no
+    criterion, no engagement with items 21–31* — but an explicit **centralization
+    prediction** (larger firms, concentration, less local autonomy; early
+    evidence "largely consistent") that cuts against the commons/federation
+    claims and must be carried whole. Their §6 countervailing forces and §8
+    ("how power is made accountable") are where our position lives. Carried in
+    the outline's Hayek-criterion section and IV.4.
+38a. ★★ **goldfarb-2025-comment-on-brynjolfsson-hitzig-ai-use-of-knowledge.pdf** —
+    NBER c15304, the discussant comment (published pp. 330–335; on disk = the
+    pre-publication ms, running title "Artificial intelligence and
+    decentralization"). **The published counter, from the same session**: three
+    decentralizing forces B&H omit (tacit knowledge often resides at
+    headquarters, so AI alienates it downward; individuals gain
+    organization-scale capability; fast diffusion), platforms as coordination
+    with distributed decision rights, and open/competing models named as the
+    constraint on platform centralization — our openness claim in his words.
+    His risks-of-decentralization section (echo chambers, malicious AI swarms)
+    is the objection to our side; his footnote 2 questions B&H's leap from a
+    two-party model to Hayek and socialism. Acquired 2026-09-23. A citation-graph
+    run around B&H (forward citers, own references, volume siblings, the 2026
+    AI-vs-Hayek debate) is in flight → `00-CITATION-GRAPH-brynjolfsson-hitzig.*`.
 39. ★ **autor-2014-polanyis-paradox.pdf** — NBER WP 20485. The bridge citation on
     ML vs. tacit knowledge ("we can know more than we can tell").
 40. ★ **hilbert-lopez-2011-worlds-technological-capacity.pdf** — Science 332:60–65.
