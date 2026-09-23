@@ -2805,7 +2805,50 @@ no planner could?" into four measurable requirements:
   objection to our side. Net: the two sides of one NBER session now bracket
   the paper's position, and the paper's contribution is naming the design
   variable — openness and plurality of models — that decides which of them the
-  technology delivers. A citation-graph run around B&H is in flight. **Live competition to read and engage:** "Hayek Displaced: Can AI Solve
+  technology delivers.
+
+  **Citation-graph run around B&H (2026-09-23; report and 63-entry JSON at
+  `~/reading/software-economies-and-the-knowledge-problem/00-CITATION-GRAPH-brynjolfsson-hitzig.*`;
+  26 acquisitions launched). Four findings change the structure, not just the
+  shelf:** (1) **The disagreement has a measurable form.** Bloom, Garicano,
+  Sadun & Van Reenen (Mgmt Sci 2014) showed *information* technology
+  decentralizes decisions to workers while *communication* technology
+  centralizes them to headquarters. B&H's prediction is the claim that
+  machine intelligence behaves as CT; ours is that it behaves as IT (or as
+  both, with openness deciding the split) — state IV.4's position as that
+  empirical question, not a stance. (2) **The codifier's curse.** Catalini,
+  Hui & Wu, "Some Simple Economics of AGI" (2026) — the only indexed citer,
+  building on B&H's alienability channel — argue automation cost falls while
+  *verification* cost stays human-bounded, so rents move to provenance and
+  underwriting (IV.4's user-verifiable and 8.2's builder-as-underwriter,
+  modeled), and that centralization destroys the distributed verification
+  capacity it depends on. That turns B&H's prediction against itself and adds
+  a fifth requirement, or a bound on the four, to the Hayek criterion. (3)
+  **The federated computer must answer Cemri.** Cemri et al. (NeurIPS 2025,
+  MAST: 14 failure modes over 1,600+ traces; multi-agent systems often lose to
+  a strong single agent — the result B&H use against decentralized AI) is
+  exactly the configuration V.1/V.2's federation proposes; an unanswered Cemri
+  reads as evasion. (4) **The technical hinge is a graph.** B&H's hub-and-spoke
+  optimality rests on Myerson 1977's star-network result; federation is the
+  non-star graph it disfavors, and whether the result survives non-cooperative
+  agents with latency (their own §6.2 concession) is the thing to check once
+  the paper is on disk. Also carried from the run: Cullen, Li & Li, "Labor as
+  Capital" (workers withhold tacit knowledge that would train their
+  replacement — a bargaining-side limit on requirement 1, and V.3b's
+  who-owns-the-elicited-knowledge constraint in economic form); the two
+  peer-reviewed citers testing codifiability (Lu 2025 RAE, Kurun 2026: embodied
+  knowledge and entrepreneurial discovery do not codify — the honest boundary
+  of "the tacit premise is eroding"); Longpre et al. 2025 vs Cao & Cai 2026
+  (measured diffusion vs measured concentration of AI capability — carry as a
+  pair); and Buterin, Hitzig & Weyl 2019 quadratic funding, by the hub's
+  coauthor — a financing mechanism for an under-provided public good with no
+  central owner, for 8.2/IV.3 to build on. Hub-bibliography errors recorded on
+  the shelf so we do not inherit them (Kwon-Ma-Zimmermann is AER 2024, not JFE
+  2022; the JAIR "Agarwal, Smith & Lee" is a phantom for Agarwal et al. AEA
+  P&P 2024). The hub has no indexed forward-citation graph yet (no chapter
+  DOIs; OpenAlex/S2 have no record) — the citer set was reconstructed by
+  full-text sweeps and is near-complete, not closed; re-run when the volume's
+  DOIs propagate. **Live competition to read and engage:** "Hayek Displaced: Can AI Solve
   the Socialist Calculation Problem?" (SSRN 2026, not peer-reviewed) and
   "Markets, agency, and trust: AI agents and the knowledge problem" (Review of
   Austrian Economics 2026) — someone is asking our question in print now.

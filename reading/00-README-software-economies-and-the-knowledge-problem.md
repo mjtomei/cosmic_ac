@@ -386,9 +386,20 @@ of which talks to the calculation debate. These are the papers to build on.)*
     constraint on platform centralization — our openness claim in his words.
     His risks-of-decentralization section (echo chambers, malicious AI swarms)
     is the objection to our side; his footnote 2 questions B&H's leap from a
-    two-party model to Hayek and socialism. Acquired 2026-09-23. A citation-graph
-    run around B&H (forward citers, own references, volume siblings, the 2026
-    AI-vs-Hayek debate) is in flight → `00-CITATION-GRAPH-brynjolfsson-hitzig.*`.
+    two-party model to Hayek and socialism. Acquired 2026-09-23. The citation-graph run
+    around B&H completed 2026-09-23 → `00-CITATION-GRAPH-brynjolfsson-hitzig.md`
+    (report: standouts, objection block, acquire list, coverage) and `.json`
+    (63 deduplicated entries; 29 objections; 26 acquire-now, launched). **Hub
+    bibliography cautions — do not inherit:** "Kwon, Ma & Zimmermann JFE 2022"
+    is *100 Years of Rising Corporate Concentration*, AER 114(7) 2024; "Agarwal,
+    Smith & Lee, JAIR 2025" is a phantom (real: Agarwal et al., AEA P&P 2024);
+    Decker et al. is AER 110(12) 2020, not AEJ:Macro; NBER w31065 has four
+    authors (Brynjolfsson, Jin, Petropoulos & Wang); "Bessen 2019, Research
+    Policy" is the held JLE 2020 paper miscited. Already-shelved works the run
+    confirmed and skipped: Rey 2026 *Hayek Displaced*, McDavid-Kiesling-Chassin
+    2026 (RAE), Autor 2020, Bessen 2020, Radner, Van Zandt, Autor 2014,
+    Brynjolfsson-McElheran 2016. The hub has no indexed forward-citation graph
+    yet (no chapter DOIs); re-run when they propagate.
 39. ★ **autor-2014-polanyis-paradox.pdf** — NBER WP 20485. The bridge citation on
     ML vs. tacit knowledge ("we can know more than we can tell").
 40. ★ **hilbert-lopez-2011-worlds-technological-capacity.pdf** — Science 332:60–65.
