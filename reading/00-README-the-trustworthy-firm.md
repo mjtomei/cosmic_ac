@@ -335,4 +335,53 @@ library fallback is the UCP e-book (ISBN 9780226854090), ch. 11 pp. 275–293.
 No preprint exists anywhere. **Installed as a companion:** Nagaraj's
 discussant comment (c15326, pre-publication ms, 9 pp) —
 `nagaraj-2025-comment-on-algorithms-as-a-vehicle-to-reflective-equilibrium-nber-c15326-prepub.pdf`
-(not the UCP pp. 293–298). Ranking pass in flight.
+(not the UCP pp. 293–298). Ranked below (2026-09-23).
+
+## Arrivals ranked 2026-09-23 - the Brynjolfsson & Hitzig citation graph
+
+One arrival on this shelf from the run (`~/reading/software-economies-and-the-
+knowledge-problem/00-CITATION-GRAPH-brynjolfsson-hitzig.md`, standout 13):
+the discussant comment on the volume's chapter 11. Ranked on this shelf's
+arithmetic (composite = 0.5×relevance + 0.3×standing + 0.2×quality; ★★★ ≥ 8.5,
+★★ ≥ 7.0); objections score up. The reader's 8.0 was trimmed to 7.8 for
+consistency with this shelf's other published critiques of the nudge frame's
+welfare anchor (Maier and Allcott-Sunstein at 7.8, below Chater-Loewenstein's
+7.9) - a nine-page comment does not outrank them on standing, and objection
+status keeps it above Sugden and Gigerenzer (7.3). Filed on the side track
+"Does the advice channel work at all, and who nudges the nudgers", to be read
+with sharma-2023. New shelf totals in the JSON: 22 ★★★ / 72 ★★ / 11 ★ over 105
+ranked entries.
+
+| | File | Obj. | What it is for us | Version caution |
+|---|---|---|---|---|
+| ★★ 7.8 | nagaraj-2025-comment-on-algorithms-as-a-vehicle-to-reflective-equilibrium-nber-c15326-prepub.pdf | ✗ | Agrees with the move from blanket nudges to personalised algorithmic choice architecture, then presses four objections: reflective endorsement may not survive time ("the seventy-year-old who realizes what passed his reflective test didn't survive time and experience"), so it is unclear which endorsement anchors welfare; consideration-set errors come first because transformative AI is a search technology; deployed AI is a proxy for humans, not an oracle, so the design needs contradictory prompts, dissenting explanations and uncertainty displays; and human-AI assistance opens an attributability gap in which ownership of the decision predicts adherence. Closes with a two-GPT-agent car-choice finger exercise. | NBER pre-publication ms c15326, 30 Sept 2025, 9 pp. Published as the comment on ch. 11 of The Economics of Transformative AI (Chicago 2026), pp. 293–298 - cite those pages, never this file's. Parent chapter not on disk; everything attributed to "the paper" here is Nagaraj's summary. |
+
+**What it changes.** V.3b's whole product is elicited, reflectively endorsed
+preference, and this is the published objection to treating that endorsement
+as the welfare anchor. Nagaraj's long-run-instability point is the drift leg
+of the Hayek criterion applied to preferences instead of prices - the same
+quantity "economic problems arise always and only in consequence of change"
+names, now on the elicitation side - and it is the sharpest statement of that
+we hold on this shelf. His other two points arrive as design constraints in a
+discussant's words: safeguards against sycophantic amplification (the
+extractive twin sharma-2023 shows is selected inside the technology), and
+authorship preserved through the advice channel, so that a balance sheet that
+moves with the user's well-being does not require the user to surrender the
+decision. On the other shelf, the same run's tier-1 arrivals bear on this one
+at two points: Cullen, Li & Li (HBS 26-063) find that people holding the tacit
+residue withhold it when told what it will train and that collective ownership
+of expertise attains the first best where individual ownership does not -
+V.3b's trust constraint in economic form; and Catalini, Hui & Wu's
+Measurability Gap makes human verification bandwidth the scarce factor, which
+bounds how much of the firm's elicited preference can ever be checked by the
+person it concerns.
+
+**Still missing.** The chapter Nagaraj comments on - **Ludwig, Mullainathan,
+Pink & Rambachan, "Algorithms as a Vehicle to Reflective Equilibrium:
+Behavioral Economics 2.0" (ch. 11, NBER c15325, pp. 275–293)** - is
+LOCATED-NEEDS-HUMAN on this shelf (route in the section above; no preprint
+exists anywhere). Until it is on disk the comment argues with an absent
+opponent, and nothing attributed to the chapter may be quoted as its own
+words. The run's other located-needs-human item, **Sunstein, "The AI
+Calculation Debate" (SSRN 5054402)**, belongs on
+software-economies-and-the-knowledge-problem and is recorded there.

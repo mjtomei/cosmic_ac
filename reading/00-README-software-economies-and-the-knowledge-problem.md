@@ -620,4 +620,92 @@ free SSRN sign-in) → save as `sunstein-2024-ai-calculation-debate.pdf`.
 The four volume-chapter comments (Stuart c15328, Rothschild c15310, Bryan
 c15306, Tucker c15302) were not installed; they sit behind the same NBER
 Sept-2026 file restriction as Ludwig et al. below and need the same human
-route if wanted. Ranking pass over the arrivals in flight.
+route if wanted. Ranked below (2026-09-23).
+
+## Arrivals ranked 2026-09-23 - the Brynjolfsson & Hitzig citation graph
+
+Twenty-four of the 26 acquire-now targets from
+`00-CITATION-GRAPH-brynjolfsson-hitzig.md`, ranked as pass 3 in
+`00-RANKINGS.json` on the shelf's usual arithmetic (composite = 0.5×relevance +
+0.3×standing + 0.2×quality; ★★★ ≥ 8.5, ★★ 7.2–8.4, ★ ≤ 7.0). Objections score up.
+Result: **14 ★★★ / 10 ★★ / 0 ★** - the strongest batch this shelf has taken,
+which is what a run aimed at the paper's named opponent should produce. Five
+composites were trimmed or raised within tier for consistency with the existing
+distribution (the 8.9–9.0 band stays with the calculation-debate primaries;
+Catalini to the ★★★ floor as an unrefereed preprint on the same promotion path
+B&H itself had; Cemri up to 8.7 as a measured objection; Acemoglu down to 7.7
+as a two-page op-ed); the JSON carries each reason. New shelf totals in the JSON: 41 ★★★ /
+40 ★★ / 18 ★ over 99 ranked entries (111 PDFs on disk; the difference is
+unranked duplicates and book chapters). The `Obj.` column marks works that cut
+against the commons/federation position; a work can be an objection and still
+be ours to build on.
+
+| | File | Obj. | What it is for us | Version caution |
+|---|---|---|---|---|
+| ★★★ 8.8 | grossman-hart-1986-costs-and-benefits-of-ownership.pdf | | The frame B&H argue inside: ownership = residual rights of control. IV.4's "whoever runs the loop owns the objective" is a residual-rights claim; without this it is a slogan. | DASH copy carrying the JPE page images, 94(4):691–719 - page-level cites are safe; OCR spacing artifacts, check quotes against the image. |
+| ★★ 8.4 | hart-moore-1990-property-rights-nature-of-the-firm.pdf | | GH generalized to human capital; cooperatives and partnerships as special cases of the control-structure mapping - the formal vocabulary for federation's governance, not an argument for it. Indispensability criterion is the counter-pressure. | JSTOR scan of JPE 98(6):1119–1158 with a dirty text layer (running heads interleave, digits break) - quote from the page image. |
+| ★★★ 8.7 | jensen-meckling-1992-specific-and-general-knowledge.pdf | ✗ | The syllogism under B&H §7: rights co-locate with specific knowledge; codified knowledge is general; so codification centralizes. Built on Hayek 1945, so their own criterion - put the right where the knowledge is - is what an open loop satisfies. | On disk is the JACF 8(2), Summer 1995, pp. 4–18 printing (rendered 2026-09-23 from HTML), a "slightly revised" version of the 1992 Blackwell chapter (pp. 251–274). Cite the edition you quote; never cross-attribute pages. Two-column extraction splices sentences. |
+| ★★★ 8.8 | garicano-2000-hierarchies-organization-of-knowledge.pdf | | The model the whole dispute runs in. Cheaper knowledge *acquisition* ("expert systems") widens discretion, cuts layers, cuts delay - our copyable-competence-to-the-edge claim in a mainstream 2000 comparative static. §V's outsourcing result is the long-tail commons in organizational form. | JSTOR VoR, JPE 108(5):874–904, text layer; OCR mangles the mathematics - transcribe formal statements from the image. |
+| ★★★ 8.6 | bolton-dewatripont-1994-firm-as-communication-network.pdf | ✗ | "Efficient networks involve centralization" in a pure processing-cost model with no property rights in it - B&H's prediction proved thirty years earlier, so IV.4 cannot dismiss the case as a GHM artefact. The wedge: the driver is returns to specialization in *human* processing time, the parameter machine intelligence moves. Sits with Radner (#44b) / Van Zandt. | VoR QJE 109(4):809–839 via JSTOR (doi 10.2307/2118349, not 2118350), image-only - OCR before quoting; quote against printed folios. |
+| ★★★ 8.7 | myerson-1977-graphs-and-cooperation-in-games.pdf | ✗ | The hinge under the hub-and-spoke claim. Myerson proves where value lands on a fixed graph, not that the star is optimal: Thm 3 makes the mesh stable under superadditivity, and the §5 example (7 vs 4 vs 1) is the hub premium - "whoever runs the loop owns the objective" in numbers. | CRITICAL: the file is Northwestern Discussion Paper 246 (Sept 1976), image-only, NOT MOR 2(3):225–229. Cite MOR by DOI 10.1287/moor.2.3.225; re-check theorem numbering and the §5 example against the published text. |
+| ★★★ 8.8 | bloom-garicano-sadun-vanreenen-2014-distinct-effects-it-ct.pdf | ✗ | IT decentralizes decision rights, communication technology centralizes them, on plant data with IVs. Converts "does machine intelligence centralize?" into the measurable IT-or-CT question; absent from B&H's bibliography. Two-sided, which is why it is the sharpest objection here. | VoR Management Science 60(12):2859–2885, clean text layer; NBER w14975 has different pagination - do not cross-attribute. |
+| ★★★ 8.8 | brynjolfsson-jin-petropoulos-wang-2023-it-firm-size-concentration.pdf | ✗ | The evidence under the concentration prediction (IT → sales and concentration without headcount; retail C4). HC/IV.4 argue with these numbers, not the claim. Its replication-at-near-zero-marginal-cost mechanism is our subject matter - the channel we say the commons socializes. | NBER w31065, revised Nov 2025 vintage (73 pp) on disk; B&H and the graph report cite March 2023 - never carry a number across vintages unchecked. Four authors; not peer-reviewed. |
+| ★★ 8.3 | kwon-ma-zimmermann-2024-100-years-rising-corporate-concentration.pdf | ✗ | Concentration has risen for a century and predates IT; the qualifier on any technology-causes-concentration story, B&H's included, and the fixed-cost reading the under-provision argument already runs on. One step removed from decision rights. Also the corrected identity for B&H's phantom JFE cite. | BFI WP 2023-20 (Feb 2023, 108 pp), NOT the AER 114(7):2111–2140 VoR - never attribute AER pages; re-check magnitudes against AER before print. |
+| ★★ 7.9 | lu-2025-tacit-knowledge-in-llms.pdf | ✗ | LLMs hold two of three tacit forms (costly-to-articulate; subtext and norms) and not embodied knowledge; "an LLM still cannot be a central planner." The honest boundary of the codifiability premise, stated by a peer-reviewed citer. | VoR, OA, Review of Austrian Economics, doi 10.1007/s11138-025-00710-5, online-first - cite by DOI and section, no page numbers yet. |
+| ★★ 7.9 | kurun-2026-ai-entrepreneurial-discovery-embodied-tacit-knowledge.pdf | ✗ | Five epistemic functions of markets; entrepreneurial discovery rests on embodied tacit knowledge that disembodied agents lack. The live form of the Hayek-2002 discovery objection; discovery is not one of our four requirements, and this is why that scoping is a concession. | VoR Philosophy & Technology 39:148 (article number, not a page) - cite by article number and section. |
+| ★★ 7.7 | acemoglu-2023-hayek-vs-ai-socialism.pdf | ✗ | The calculation question is misposed - control, not computability, is what matters - and LLM development is itself centralizing ("a large share of humanity gets its information from the same model"): the monoculture point in a published sentence. Author's standing, not the venue's. | Two pages, folios 48–49 of The International Economy, Spring 2023, a Project Syndicate op-ed - never cite past p. 49; attribute the book claims to Acemoglu & Johnson, Power and Progress (2023). |
+| ★★★ 8.5 | catalini-hui-wu-2026-simple-economics-of-agi.pdf | ✗ | The only indexed citer of B&H. Cost-to-automate falls exponentially, cost-to-verify is human-bounded, so the Measurability Gap fixes what can be deployed and rents move to provenance and liability underwriting. The codifier's curse - centralization destroys distributed verification capacity - turns B&H's prediction against itself; §6.1.6's Ω decomposition is our openness argument in their notation. Also the sharpest objection: a user-verifiable commons is bounded by the same cH. | Preprint, no VoR: arXiv 2602.20946v2 (25 Feb 2026), SSRN 6298838, 113 pp, unrefereed. Cite arXiv v2 and its section numbers; promote on publication. |
+| ★★★ 8.7 | cemri-2025-why-multi-agent-llm-systems-fail.pdf | ✗ | MAST: 14 failure modes, 1,600+ traces across 7 frameworks, 41–86.7% failure, multi-agent often losing to single-agent; interventions buy +9.4%. The must-answer for V.1/V.2's federated computer. 23.5% of failures are task *verification* - the same data says verification, not decentralization as such, is the binding constraint. | NeurIPS 2025 D&B camera-ready (54 pp), doi 10.52202/085713-4082; arXiv 2503.13657's earlier versions carry different counts - take every number from the camera-ready. |
+| ★★ 8.2 | cullen-li-li-2025-labor-as-capital.pdf | ✗ | Workers can and do withhold the tacit residue: told their records may train AI to do their work, refusal rises 25%→41%. Codification has an incentive ceiling independent of model capability, and the loop is contested before it exists. Then the gift: collective data ownership attains the first best where individual ownership does not - V.3b/IV.4 in labor-market form. | HBS WP 26-063, "PRELIMINARY & INCOMPLETE", draft of 30 Mar 2026 (filename's 2025 is the first-draft year); Prolific sample; every number provisional - re-verify against whatever version exists when cited. |
+| ★★ 7.8 | chatterji-rock-talamas-2026-human-machine-knowledge-spiral.pdf | | Tacit machine knowledge in Nonaka's spiral: like human tacit knowledge it resists articulation, unlike it, it "need not remain local." Their portability is our copyable competence; NotCo selling Giuseppe is the competence itself circulating. Build on it in §6/§7 rather than argue the point fresh. Friction: portable-yet-opaque vs user-verifiable. | Preprint, no VoR: arXiv 2606.29227v1 (28 Jun 2026). Chatterji is OpenAI's Chief Economist (disclosed, not representing OpenAI). |
+| ★★ 7.6 | chatterji-rock-talamas-2026-transformative-ai-and-firms.pdf | | A research agenda that states three of our framings as open questions - measurability decides what delegates; the scarce factor moves; upstream concentration raises downstream cost - and closes by conceding the intractability objection with Shalizi (#35). The computation leg in the opponents' words. | NBER pre-publication PDF of ch. 7 (c15327); its 1–16 folios are not the book's pages. Stuart's comment (c15328) not held. |
+| ★★★ 8.6 | shahidi-rusak-manning-fradkin-horton-2025-coasean-singularity.pdf | | "By collapsing the costs of eliciting preferences, enforcing commitments, and verifying identity, agents make mechanisms that were once only theoretically attractive now feasible at scale" - the elicitation leg by other authors, and the in-volume reading of falling transaction costs as disaggregation. Carry its congestion, obfuscation and vertical-integration counters with it. | NBER WP 34468 (Nov 2025) on disk; published as ch. 6 (c15309) - cite chapter and pages, never WP sections. Rothschild's comment (c15310) not held; Fradkin employed by Amazon (disclosed). |
+| ★★ 8.4 | hadfield-koh-2025-economy-of-ai-agents.pdf | ✗ | Markets presuppose legal infrastructure built by and for humans; an agent economy needs identity, records, licensing, liability - none of which the federated computer yet has. The institutional frame for V.3c; §2.1's specification-wedge argument (Ely-Szentes) is sharper than ours on how an agent-mediated commons degrades signal. Questions, not results. | arXiv 2509.01063v1 (3 Sept 2025) on disk; published as ch. 5 (c15305) - cite the chapter's pages. Bryan's comment (c15306) not held. |
+| ★★★ 8.7 | athey-scottmorton-2026-ai-competition-welfare.pdf | ✗ | Derives the aggregation point: a monopolist upstream AI input sets a two-part tariff on an adoption frontier, and capping one fee moves the rent to the other. The formal economics of "commoditize the layer" and of the toll-booth corollary - and an objection, since concentration gets a mechanism independent of property rights and open models are a one-line aside. | NBER WP 34444 (Nov 2025), not peer-reviewed; published as ch. 4 (c15301) - cite the chapter, never WP sections. Tucker's comment (c15302) not held. Disclosures on p. 1 (DOJ, Keystone; Microsoft, NVIDIA) matter if cited on policy. |
+| ★★★ 8.6 | longpre-2025-economies-of-open-intelligence.pdf | | The only quantitative counter to the centralization prediction we hold, on the exact object the commons is about: 851k models, 2.2B downloads, HHI/Gini/top-10 share falling after 2022 toward unaffiliated and Chinese developers. Its own caveat is ours: open-weights passing open-source in 2025 is competence that copies but is not user-verifiable. | arXiv 2512.03073v1 (27 Nov 2025), self-labelled preprint - cite the handle only; the dashboard updates, so dashboard figures need a retrieval date. |
+| ★★ 8.1 | cao-cai-2026-decreasing-disruption-increasing-concentration-ai.pdf | ✗ | Disruptive AI concentrates in well-resourced institutions, with government (military) support the largest single driver - the peer-reviewed half of the pair with Longpre, and a public-as-much-as-corporate concentration the outline has not addressed. Sample closes in 2020 on patents: pre-open-weights, cannot speak to 2023–25. | VoR, OA: Minds and Machines vol. 36, article 4 (2026), doi 10.1007/s11023-025-09755-8. The masthead's "36:4" is volume:article - never write 36(4), and never quote the PDF's "Page N of 24" as journal pages. |
+| ★★★ 8.5 | allen-weyl-2024-real-dangers-of-generative-ai.pdf | ✗ | The exemplar objection to the cure, from authors whose sympathies are ours: open release is the obvious antidote to concentration and they reject it as double-edged (Scylla and Charybdis). §9 and V.3c rest here rather than on our hedging; their "mobilization" is also the friendliest frame for the commons as democratic infrastructure. | VoR: Journal of Democracy 35(1):147–162, Jan 2024, doi 10.1353/jod.2024.a915355 (MUSE). An essay - trace its labor-share and training-run figures to primaries before use. |
+| ★★★ 8.5 | buterin-hitzig-weyl-2019-flexible-design-funding-public-goods.pdf | | Quadratic finance: the published financing mechanism for a commons with no central owner, by B&H's coauthor. Completes cluster A's free-rider line (Samuelson → Clarke → Groves-Ledyard) with the form that runs at scale; §5.2 names the real failure mode, Sybil collusion. Cluster A, the batch's one. | arXiv 1809.06421v2 (Aug 2020) on disk, dated after the Management Science 65(11):5171–5187 VoR - never attribute MS pages; check proposition numbering against the journal. |
+
+**What they change.** The disagreement with Brynjolfsson & Hitzig is no longer
+a stance against a stance. Garicano 2000 is the model both sides argue in, and
+Bloom, Garicano, Sadun & Van Reenen 2014 measured its two cost parameters
+separately: information technology pushed decision rights down, communication
+technology pulled them up. So the question IV.4 must now pose is whether
+machine intelligence is IT or CT - whether it cheapens knowledge acquisition at
+the edge or only communication to the centre - and the paper's copyable-
+competence claim is a bet on the first, stated in Garicano's own comparative
+statics. Jensen-Meckling 1992 gives the opposing syllogism at its source
+(codified knowledge is general; rights follow specific knowledge; therefore
+centralization), and Grossman-Hart 1986 supplies the frame in which "whoever
+runs the loop owns the objective" is a claim about residual rights rather than
+a slogan. Catalini, Hui & Wu answer the syllogism from inside the same channel:
+the codifier's curse is that experts' verification work trains their own
+automation while centralization fails to regenerate distributed verification
+capacity, so the scarce factor is verification bandwidth and the commons must
+say how it scales *that* - which is also the objection. Cemri et al. is the
+must-answer: 41–86.7% failure across seven multi-agent frameworks is measured
+against exactly the configuration V.1/V.2 propose, and the section cannot
+proceed without saying why the loop is not a MAST failure mode; the usable
+half is that a quarter of those failures are task verification, the same bound
+Catalini names. Myerson 1977 and Bolton-Dewatripont 1994 are the star-network
+hinge: Myerson locates rents at the hub without making the star optimal (the
+mesh is stable under superadditivity), and Bolton-Dewatripont derive
+centralization from human processing time alone, which is the parameter
+machine intelligence moves. Cullen, Li & Li put a ceiling under requirement 1
+that no model capability lifts - the holders of the tacit residue withhold it
+when told what it will train - and then hand over the closest thing to a
+formal efficiency case for collective over individual ownership of expertise.
+Brynjolfsson-Jin-Petropoulos-Wang and Longpre are the two series the outline
+should now argue with rather than around; Athey-Scott Morton derives the
+aggregation point's two-part tariff; Allen-Weyl is the objection to the cure
+itself; Buterin-Hitzig-Weyl is the financing mechanism §8.2 and IV.3 build on.
+
+**Still missing.** Two acquire-now targets are LOCATED-NEEDS-HUMAN and were not
+ranked: **Sunstein, "The AI Calculation Debate" (SSRN 5054402)** belongs on this
+shelf and sits behind SSRN's Cloudflare check (browser route above); **Ludwig,
+Mullainathan, Pink & Rambachan, "Behavioral Economics 2.0" (ch. 11, c15325)**
+belongs on the-trustworthy-firm and sits behind NBER's Sept-2026 file
+restriction - its discussant comment (Nagaraj, c15326) is installed and ranked
+there, arguing for now with an absent opponent. The four other volume comments
+(Tucker, Rothschild, Bryan, Stuart) are behind the same wall.
