@@ -497,7 +497,23 @@ carrying in §3(b):** Amodei's own "Intelligence may be very powerful, but it
 isn't magic fairy dust" and his "marginal returns to intelligence" frame — a
 lab leader stating the complementary-bottleneck (wanting/absorption) point.
 
-**Decision asked:** accept (a)–(c), (f), (g), (h), (j), (k) into §§1/3/4/6; route
+**(l) → §3(b) and §4: the copy channel, partly measured (2026-09-23).**
+Vercel's AI Gateway production index (September 2026, August traffic): open-
+weight models ran **56% of tokens and 14% of spend**; Anthropic took **64 cents
+of every dollar**; open share up from under 10% in December 2025; price per
+token down 23.2% in the month; a one-day record of 78.4% open on 2026-09-19
+(Rauch). This is the rent-location claim as a single instrument: volume moves
+to the copyable commons, money stays at the frontier — the two halves of §9
+in one chart. It measures usage, not distillation, and the sample is Vercel
+developers; the limits are in `NONRIVALRY-ANCHORS.md` ("Usage evidence").
+Alongside it, L3Harris at AIPCon 11 (2026-09-10): fine-tuned open models on
+own data "outperform the frontier models in less than 48 hours" at 95% lower
+cost on one named task — the enterprise form of (b)'s wanting-saturates
+point, and Karp's "why are [LLMs] charging for tokens if it's so valuable?" is
+(k)'s contradiction voiced by a competitor. Both are gauge readings (vendor
+venue, unaudited); the Vercel index is citable as data with its limits stated.
+
+**Decision asked:** accept (a)–(c), (f), (g), (h), (j), (k), (l) into §§1/3/4/6; route
 (d)–(e) to their threads now or hold everything until deal terms make (a)
 assertable.
 

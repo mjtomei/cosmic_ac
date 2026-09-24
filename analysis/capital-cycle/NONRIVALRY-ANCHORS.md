@@ -482,6 +482,63 @@ single factor in Byrnes's decomposition, then progress is substantially
 that the endogenous-pop argument says causes the break — a negative feedback the
 argument should acknowledge rather than a clean runaway.
 
+## Usage evidence — the copy channel, partly measured (2026-09-23)
+
+Two gauge readings Matthew flagged (X posts), traced to their primaries. The
+posts' own framing is excluded per the register rule (effects, not motives);
+the data survive.
+
+**Vercel AI Gateway production index, September 2026** (Amelia Charles & Eric
+Dodds, vercel.com/blog/ai-gateway-production-index-september-2026, published
+2026-09-17; anonymized aggregate traffic routed through the gateway through
+August 2026; spend "estimated using labs' published list prices; actual bills
+may differ"). Verbatim: **"In August, open-weight models ran 56% of all tokens
+on AI Gateway"** and **"accounted for 14% of spend"**; "In December 2025, they
+processed fewer than one in ten tokens"; April→August "13% to 56% of total
+volume"; **"Anthropic has taken at least 61 cents of every dollar spent through
+AI Gateway every month since December, and 64 cents in August"**; "Price per
+token fell 23.2% in August, the third straight monthly drop." Definition on the
+live leaderboard (vercel.com/ai-gateway/leaderboards/models, daily CSV/JSON):
+open weights = "models that publish their weights for download, versus
+everything else"; the blog notes the classification "is broader than the
+definition used in earlier reports."
+Daily snapshot: Guillermo Rauch (@rauchg, 2026-09-19 05:48 UTC, status
+2101186741042663579): "Looks like today may be a record day for token volume %
+of open models on Vercel AI Gateway: Open 78.4% / Closed 21.6%. While spend
+usually tells a different story, #3 and #4 today are Moonshot AI & DeepSeek.
+Adding Z.ai, their combined spend surpasses OpenAI (#2)." The 78.4% is a
+one-day record; the monthly 56% / 14% is the citable pair. (The @MelvinInvests
+repost, 2026-09-19, adds a motive claim about Amodei/OpenAI and regulation —
+not usable; the gauge is the Vercel number.)
+*What it evidences:* the token/spend split is the rent-location prediction in
+one instrument — volume migrates to the copyable commons while the money stays
+at the frontier (open weights: 56% of tokens, 14% of spend; Anthropic 64% of
+spend). It is a usage-side measure of socialization-by-copying, not of the
+distillation channel itself. *Limits:* a Vercel-developer sample (web/agent
+workloads, not enterprise or consumer chat); spend at list price; definition
+broadened between reports; volume is concentrated in a few cheap open models
+(reported by The New Stack as DeepSeek V4.1 Flash ≈59% of tokens — verify on
+the leaderboard CSV before printing). Falls in the shelf's "copy channel
+measured" gap as a partial fill.
+
+**L3Harris at Palantir AIPCon 11** (2026-09-10; Heidi Wood, VP and Chief
+Digital and Transformation Officer, L3Harris). Video clip posted by @jawwwn_
+(status 2098124665260736684, 2026-09-10), verbatim from the clip: **"When we
+fine-tuned open source models trained on our own data, we were able to
+outperform the frontier models in less than 48 hours."** The transcript
+summary (Investing.com, "Palantir at AIPCon 11") confirms 95% lower cost versus
+frontier models and names the task: country-of-origin monitoring. No
+benchmark, model, or baseline named. Quoted alongside Karp (@jawwwn_ clip,
+2026-07-01): enterprises want to "own the means of production" instead of
+"transferring their alpha" to OpenAI or Anthropic; "Why are [LLMs] charging for
+tokens if it's so valuable?"
+*What it evidences:* the fine-tune channel (open weights + own data) taking
+narrow enterprise tasks from the frontier — an enterprise datapoint for
+"wanting saturates below the frontier" (§3(b)), and Karp's line is the
+mission/capitalization contradiction stated by a competitor. *Limits:* a
+customer testimonial at the vendor's own conference; one task; the 48-hour and
+95% figures are unaudited. Gauge reading, cite lightly, never load-bearing.
+
 ## Flags
 
 - ⚠️ **Bears on Figure 2 (the embargo natural experiment):** Jin, Kunievsky, Lou,
