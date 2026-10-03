@@ -109,7 +109,7 @@ pp. 659–681" record — an ACM metadata artifact; cite TODAES 2006
    line's field verdict: barriers are "amenability, cost, and productivity").
 3. **Selection.** Nobody ever shipped the choosing step: SDSoC's docs tell
    the human to profile and mark functions in a dialog; automation shipped
-   only by domain collapse (NN inference: Vitis AI, Mipsology) or by manual
+   only by domain collapse (NN inference: a vendor NN-inference stack, Mipsology) or by manual
    hyperscale engineering (Catapult, ~1M FPGAs).
 4. **Economics.** The platforms retreated: SDSoC killed 2019 ("no 2019.2 or
    future releases"), Intel oneAPI-FPGA killed 2025, HARP terminated, Xeon
@@ -165,14 +165,14 @@ the 2026-08-06 citation sweep — see §3.5):
 - **The niche is empty.** An arXiv query "hardware/software partitioning" +
   "large language model" returns **zero results**. No published system
   combines autonomous whole-application profiling-driven kernel selection +
-  HLS/Vivado flow to bitstream + agent-driven error repair and timing
+  an HLS-to-bitstream vendor flow to bitstream + agent-driven error repair and timing
   closure validated on a real board + self-improvement of its own loop.
 - **The neighbors are close and 2026-fast.** Position against, explicitly:
   **HLSPilot** (Xiong, Liu, Li & Li, ICCAD 2024) — gprof→hot-kernel→GPT-4
-  C-to-Vitis-HLS→classical-autotuner DSE→Alveo U280; automates optimization
+  C-to-proprietary-HLS→classical-autotuner DSE→Alveo U280; automates optimization
   of designated kernels, not continuous selection, and no self-improvement.
   **ContractHIL-HLS** (arXiv:2607.25283, Jul 2026 preprint) — multi-agent
-  HLS→Vivado→PYNQ hardware-in-the-loop incl. power; works from per-task NL
+  HLS → vendor P&R → PYNQ hardware-in-the-loop incl. power; works from per-task NL
   specs, not from profiling whole applications. Also C2HLSC (TODAES 2025 —
   LLM rewrites C to synthesizable form: the amenability wall, solved in
   isolation) and IBM "Agent Factories" (arXiv:2603.25719, v2 read in full
@@ -197,8 +197,8 @@ that killed warp processing is a judgment/productivity bottleneck that LLMs
 directly address — amenability (LLM rewrites non-amenable constructs;
 C2HLSC), selection (compose AccelSeeker-class merit/cost + Accelerometer's
 interface-cost model into a closed loop), toolchain cost (minutes-to-hours
-of off-critical-path Vivado runs, amortized by choosing well; DFX hot-swap
-at deploy), economics (commodity Zynq + the plumbing SDSoC/XRT left
+of off-critical-path *open-flow* runs, amortized by choosing well; full
+bitstream reload at deploy), economics (commodity Zynq + the plumbing SDSoC/XRT left
 behind). What no prior system had is what Stitt named as binding:
 **productivity — an unbounded supply of engineering judgment.** S9 is the
 warp loop closed on commodity hardware with that supply. The pieces are all
@@ -351,37 +351,54 @@ not the kernel library, is under test.
 
 - **Board: Zybo Z7-20** (Matthew, 2026-08-05: "I think I have the Z7-20" —
   confirm on the silkscreen/part marking at bring-up). XC7Z020: 53.2K LUTs,
-  220 DSP, 4.9 Mb BRAM — fits several kernels + DFX slack, and shares its
+  220 DSP, 4.9 Mb BRAM — fits several kernels plus observer and swap slack, and shares its
   exact part (xc7z020clg400) with PYNQ-Z1/Z2, so that ecosystem retargets
   with a constraints-file change. (If it turns out to be a Z7-10: 17.6K
   LUTs, 80 DSP — one modest kernel at a time; tier-2 ambitions shrink.) Both: dual Cortex-A9 @667 MHz
   (NEON), 1 GiB DDR3L @ ~4.26 GB/s peak. Fit intuition: an XAPP1170-class
   FP32 32×32 HLS matmul ≈ 3.5K LUTs + 10 DSPs (~6.5% of a Z7-20).
-- **Toolchain, two tracks:**
-  - *Track A (primary QoR):* Vivado 2026.1 — Zynq-7000 fully supported (the
-    "7-series frozen" rumor is false), free Basic tier incl. Vitis HLS and
-    DFX. **x86_64-only, no ARM plans (UG973)** — the GB10 cannot run it
-    natively. Live workaround: **FEX-Emu**, which merged Vivado-specific
-    fixes in 2026 (PRs #5355, #5618); trial batch/Tcl-mode Vivado under FEX
-    on the GB10 in week 1. Pre-provision the fallback: any x86_64 box or
-    spot cloud instance driven over SSH (architecturally identical to the
-    agent's loop). Schedule risk, not feasibility risk.
-  - *Track B (native, parallel):* **openXC7 0.9.x** — aarch64-native (Nix),
-    covers xc7z010/020 via prjxray, and **post-route timing analysis landed
-    July–Aug 2026** (XDC clocks, per-clock Fmax, delays cross-validated
-    against Vivado; DSP timing still "phase 1"). PS7 side via regymm/GenZ.
-    F4PGA is dead; openXC7 is the successor. Usable with margin and a
-    measurement loop, not as signoff — keep Vivado as QoR reference. A
-    fully-native no-emulation flow for the agent is also a result axis.
+- **Toolchain: FULLY OPEN SOURCE, single track (Matthew, 2026-10-03: "we
+  won't be using [the proprietary tool] at all, only open source"). No vendor tool is in
+  the loop, the reference, or the fallback.**
+  - *RTL→bitstream:* **openXC7 0.9.x** (Yosys + nextpnr-xilinx) —
+    aarch64-native via Nix, so the entire flow runs on the GB10 with no
+    emulation and no x86 box; covers xc7z010/020 via prjxray;
+    **post-route timing analysis landed Jul–Aug 2026** (XDC clocks,
+    per-clock Fmax reporting), though P&R is still not timing-*driven*, so
+    the agent guard-bands clocks and iterates against reported Fmax. DSP
+    timing is "phase 1" (combinational, conservative). F4PGA is dead;
+    openXC7 is the successor. Its demo-projects repo already carries a
+    PS7+AXI design for xc7z020, a Zybo blinky, and vexriscv/vexriscv-SMP.
+  - *PS7 configuration:* regymm/GenZ — generates ps7_init/BSP from a text
+    config; "full Zynq 7000 PS/PL development with no proprietary tools."
+  - *What dropping the proprietary tools buys:* one toolchain instead of two, nothing to
+    emulate, no license tier to track, every build reproducible by anyone
+    who clones the repo — and the agent's whole environment is inspectable,
+    which matters because mode 3 edits that environment. The simplification
+    is also on-thesis: an all-open flow is the NRE-reduction claim made
+    concrete rather than asserted.
+  - *What it costs, stated plainly (see §6 and §7):* we lose the commercial
+    QoR yardstick, so absolute-efficiency claims are off the table and
+    every number is "best achieved by an open flow," with external anchors
+    (published hand-tuned Zynq-7020 results) and our own hand-written-RTL
+    ceiling standing in for the vendor comparison.
 - **Runtime:** community PYNQ 3.0.1 prebuilt images exist for both Zybo
   variants (nick-petrovsky/PYNQ-ZYBO; tools 2022.1) — Jupyter + overlay
   loading + MMIO/DMA from Python: the ideal agent substrate. Verify the
   dtb carries the A9 PMU node (`arm,cortex-a9-pmu`) or perf events read
   `<not supported>`; patch DT if needed. Fallback: mainline kernel (Zynq
   is first-class in torvalds/master) + Debian rootfs.
-- **DFX:** free since Vivado 2019.1, Zynq-7000 supported (UG909); 7-series
-  rules: pblocks aligned to clock regions; partials delivered via PCAP from
-  the PS — the agent swaps kernels without reboot.
+- **Partial reconfiguration — DEMOTED to a research question by the
+  open-only decision (2026-10-03).** The DFX flow we had planned
+  (clock-region-aligned pblocks, partials via PCAP) is a proprietary-tool feature;
+  prjxray/nextpnr-xilinx have the bitstream documentation to make partial
+  bitstreams conceivable, but there is no turnkey open DFX flow, and we
+  have NOT verified that anyone has done region-scoped partial
+  reconfiguration on 7-series through openXC7. **Assume full-bitstream
+  reload as the default swap mechanism** (a few hundred ms on a Zynq, done
+  from the PS — acceptable for a loop whose build step takes minutes), and
+  treat open partial reconfiguration as an optional later investigation,
+  not a dependency. VERIFY before relying on any of it.
 - **PS↔PL:** 4× AXI_HP (~600–1,200 MB/s per port measured, DDR caps ~4.26
   GB/s system); ACP single coherent 64-bit port (>1.6 GB/s full duplex
   measured) — HP for bulk streaming, ACP for small tightly-coupled working
@@ -395,25 +412,28 @@ not the kernel library, is under test.
 preferred, soft-core hooks endorsed as a novelty source. Facts marked (v)
 verified earlier today; (p) pending the toolchain-verification agent)
 
-**FPGA flow — open-first, commercial-as-reference (all verified
-2026-08-05):**
+**FPGA flow — FULLY OPEN SOURCE, no vendor tool anywhere (revised
+2026-10-03; underlying facts verified 2026-08-05):**
 - **HLS: Bambu (PandA) primary** — active (release 2024.10, dev benchmarks
   through Jul 2025), the only open HLS with real pointer/dynamic-memory C
   coverage (DAC 2021 paper), Verilog out with a documented Yosys backend.
   QoR honesty (Nane et al., IEEE TCAD 2016 — the only rigorous
   academic-vs-commercial head-to-head): Bambu *matched/beat* the
   commercial tool on geomean wall-clock (16.6 vs 19.9 µs) at ~1.3× LUTs;
-  no newer independent comparison vs Vitis exists — today's practical gap
-  is interfaces/pragmas/robustness, not raw QoR. **Week-1 action item:
+  no newer independent comparison vs the proprietary tool exists — today's practical gap
+  is interfaces/pragmas/robustness, not raw QoR. **Week-1 action item, now critical-path:
   Bambu has no advertised aarch64 build — test-build on the GB10 first
-  thing; fallback is running the HLS step on the x86 box.** Dynamatic
-  (EPFL, active, MLIR rewrite) as the *dataflow arm* — same kernel
-  through statically-scheduled Bambu vs dataflow Dynamatic is the S8
-  two-architectures comparison in miniature; NB its documented flow is
-  Vivado-only, so the dataflow arm may ride the reference track. XLScc
-  ruled out (no pointers — wrong tool for existing C); LegUp open version
-  dead (frozen 2015, now Microchip SmartHLS). Vitis HLS = QoR reference
-  only.
+  thing. With proprietary tools excluded there is no x86 fallback by design, so if the
+  aarch64 build genuinely fails the options are (a) fix the build, (b) run
+  Bambu in an x86 container/qemu-user *as an open-source tool*, or
+  (c) fall back to writing RTL directly (mode 2) for the first kernels.**
+  Dynamatic (EPFL, active, MLIR rewrite) as the *dataflow arm* — same
+  kernel through statically-scheduled Bambu vs dataflow Dynamatic is the
+  S8 two-architectures comparison in miniature; NB its documented
+  downstream flow is a proprietary simulator + vendor P&R, so the dataflow arm needs its
+  handshake RTL pushed through Yosys/openXC7 ourselves — unverified, treat
+  as an experiment. XLScc ruled out (no pointers — wrong tool for existing
+  C); LegUp open version dead (frozen 2015; the line went proprietary).
 - **RTL→bitstream: openXC7 (Yosys + nextpnr-xilinx) primary** —
   aarch64-native on the GB10; covers Zynq-7; **timing nuance reconciled:
   0.9.x added timing *analysis* (post-route Fmax reporting), but P&R is
@@ -421,21 +441,42 @@ verified earlier today; (p) pending the toolchain-verification agent)
   with guard-banded clocks.** GenZ for PS7 config; and the openXC7
   demo-projects repo already contains our exact ingredients: a PS7+AXI
   design for xc7z020, Zybo blinky, and vexriscv/vexriscv-SMP demos.
-  **Vivado-under-FEX as the reference track**: QoR comparison + signoff
-  sanity, not the loop's inner tool.
-- **Consequence, embraced (sharpened 2026-08-07):** open-flow QoR is below
-  Vivado's and Bambu's below Vitis — so the agent measures the delta
-  *continuously* on every design it builds. Two things follow, and both are
-  wanted. (a) Walter-style toolchain-gap evidence, generated by our own
-  loop, free. (b) **The honest hazard, accepted with a rule:** a weaker open
-  flow leaves headroom the agent can claim as "speedup." Matthew: happy with
-  that, because agent-recovers-open-flow-headroom *is* the NRE-lowering
-  result — intelligence substituting for license fees. The rule (see §7):
-  headline speedups anchor to the **commercial** reference; the
-  gap-closing number is reported alongside as the NRE finding. Never one
-  without the other.
-- **Deploy: PYNQ 3.0.1 (v)** on the Zybo, DFX partials via PCAP (v),
-  overlays + MMIO/DMA from Python.
+  **It is the only bitstream path; there is no vendor reference track.**
+- **Consequence of open-only, and the honesty rule it forces (revised
+  2026-10-03).** We no longer have a commercial yardstick, so the
+  2026-08-07 rule ("anchor headline speedups to the commercial reference")
+  is void and is replaced by three substitutes, all of which must appear
+  together wherever a speedup is reported:
+  1. **Scope every number as open-flow-achieved.** Say "best achieved by a
+     fully open flow on a Z7-20," never "on an FPGA" or "vs hand-tuned."
+     Absolute-efficiency claims were already off the table (FPGA is
+     ~20–35× off ASIC); this adds that our *tooling* is also not the
+     ceiling.
+  2. **External anchors instead of an internal one.** Published hand-tuned
+     Zynq-7020 results for the same kernel classes (VTA's rigorously
+     NEON-baselined 2.1–5.3× is the calibrated expectation) and, where
+     they exist, the open-vs-commercial QoR gaps *others* have measured
+     (Nane et al. TCAD 2016 for HLS; openXC7's own cross-validated against the vendor tool's
+     delay numbers) bound how much of our result is tooling headroom.
+  3. **Our own hand-written-RTL ceiling.** Mode 2 was already in the plan;
+     it now does double duty as the local upper bound — for at least one
+     kernel per tier, a human+agent hand-RTL implementation through the
+     same openXC7 flow, so the agent's HLS output is measured against the
+     best *we* can do on the same substrate rather than against a vendor
+     tool we don't run.
+  The NRE-reduction argument survives this intact and arguably gets
+  cleaner: the claim is no longer "intelligence recovers what a license fee
+  would have bought" (which needed the license to measure) but "a fully
+  open, reproducible, zero-license flow driven by intelligence produces
+  results worth having" — which is the §0 outcome-3 lever stated without
+  any vendor in the frame.
+- **Deploy: PYNQ 3.0.1 (v)** on the Zybo — overlays + MMIO/DMA from
+  Python. NB the PYNQ *image* is independent of how bitstreams are made:
+  its overlay loader takes a .bit, so openXC7 output substitutes for
+  vendor-tool output here. Swap mechanism = full bitstream reload (see above).
+  CHECK at bring-up that PYNQ's loader accepts an openXC7-produced
+  bitstream unmodified; if it is fussy, write to /dev/xdevcfg or the
+  fpga_manager sysfs interface directly instead.
 
 **Profiling setup — three instruments, one execution store:**
 1. **Always-on sampling (host + board):** system-wide perf on the GB10
@@ -567,8 +608,8 @@ loop — the board must be the watched machine):**
 - **The GB10 is the observer's machine** — the agent (Claude Code cannot
   run on rv32: no V8 backend — it SSHes in), toolchain (Bambu, openXC7,
   cross-compilers), QEMU twin, heavy analysis, execution store. SSH is
-  the loop's transport; bitstreams/DFX partials push over it,
-  measurements come back.
+  the loop's transport; full bitstreams push over it, measurements come
+  back.
 - **Speed honesty:** VexRiscv at 50–100 MHz in-order is ~100–300× a GB10
   core's deficit — subjects run scaled inputs, in kind not in scale;
   that is fine because workloads are subjects, not production. The A9 is
@@ -710,18 +751,19 @@ gaps is the first work item of the study, not a risk to route around.**
   execution store as a side effect; no control arm and no human-cost
   counterfactual — the study is not powered for that and the time goes into
   results. Report descriptively if the numbers turn out to say something.
-- **The open-vs-commercial QoR gap, reported both ways (Matthew,
-  2026-08-07).** The reviewers' catch — a weaker open flow leaves headroom
-  the agent then claims — is real, and it is also a *result we want*, because
-  closing that gap with intelligence instead of license fees is NRE
-  reduction, which is the §0 outcome-3 lever and the paper's §5.2 argument
-  ("ML breaches EDA") measured by our own loop. So report the pair, never
-  one alone: (a) **agent-on-open-flow vs open-flow-alone** = the agent's
-  value inside a free stack; (b) **agent-on-open-flow vs commercial-flow
-  QoR** = how much of the paid tool's advantage intelligence recovers. The
-  headline speedup number stays anchored to the commercial reference so we
-  never sell weak-baseline headroom as acceleration; the gap-closing number
-  is reported alongside as the NRE-relevant finding.
+- **QoR reporting without a commercial yardstick (revised 2026-10-03 for
+  open-only; supersedes the 2026-08-07 anchor-to-commercial rule).** Every
+  reported speedup carries three things: (a) **the agent's own delta** —
+  agent-produced design vs the same open flow run without the agent (the
+  measurement that actually isolates what the intelligence contributes, and
+  the one that needs no vendor tool at all); (b) **an external anchor** —
+  the published hand-tuned result for that kernel class on this part, VTA's
+  NEON-baselined 2.1–5.3× being the calibrated expectation; (c) **our
+  hand-RTL ceiling** for at least one kernel per tier, through the same
+  openXC7 flow, so the HLS output is scored against the best we can do on
+  the same substrate. Scope language is mandatory: "best achieved by a
+  fully open flow on a Z7-20." The reviewers' headroom catch is answered by
+  (a) and (c) rather than by a license.
 - End-to-end wall-clock and energy (IMON + bench meter), naive vs
   autonomous-flow, per workload; NEON dual-core baseline alongside.
 - **Zero-NRE counterfactual (§0 outcome 3):** for each accepted design,
@@ -827,14 +869,20 @@ visibility comes from the twin or PL-side AXI monitors.
 
 1. Confirm variant; flash PYNQ 3.0.1 community image; verify PMU dtb node;
    `perf stat` smoke test on the A9.
-2. Vivado 2026.1 under FEX-Emu on the GB10, batch/Tcl: synth a stock Zybo
-   base design end-to-end. If flaky → x86 fallback over SSH. In parallel:
-   openXC7 0.9.x Nix install, ps7-blinky-class demo.
-3. First accelerator smoke test: XAPP1170-class HLS matmul, AXI_HP data +
-   GP CSRs, driven from PYNQ Python — exercises the whole loop: profile →
-   HLS → bitstream → overlay load → verify → time → read IMON power.
-4. Add one DFX reconfigurable pblock (clock-region-aligned) + PCAP partial
-   delivery — kernel swap without reboot.
+2. **openXC7 0.9.x via Nix on the GB10** (aarch64-native, no emulation):
+   build its `ps7-blinky-digilent-pynqz1` demo for xc7z020 unmodified, then
+   retarget it to the Zybo's constraints — this is the whole bitstream path
+   proven end to end before anything of ours enters it. GenZ for the PS7
+   BSP. Confirm PYNQ's overlay loader accepts the resulting .bit (fallback:
+   fpga_manager / xdevcfg directly).
+3. **Bambu on aarch64** — test-build (critical path now that there is no
+   x86 fallback by design); smoke-test one small C kernel to Verilog and
+   push it through openXC7.
+4. First accelerator end to end: a small matmul or hash kernel, AXI_HP for
+   data + GP for CSRs, driven from PYNQ Python — exercises the whole loop:
+   profile → HLS → bitstream → load → verify → time → read IMON power.
+   Swap mechanism is full bitstream reload; measure how long a reload
+   actually takes, since that sets the loop's inner-iteration floor.
 5. Then the harness: profile → candidate ranking (Accelerometer-style
    model) → LLM HLS/RTL generation → build → deploy → measure, autonomous,
    interventions logged. Tier-1 control kernel first; tier-2 selection run
@@ -842,14 +890,24 @@ visibility comes from the twin or PL-side AXI monitors.
 
 ## 9. Risks, ranked
 
-1. **Vivado-under-FEX fragility** — weeks-old support; an autonomous loop
-   amplifies nondeterministic crashes. Mitigation: pre-provisioned x86
-   fallback over SSH; batch mode avoids the GUI shim pain.
+1. **openXC7 is now the only bitstream path, and it IS load-bearing
+   (promoted from risk 3 by the 2026-10-03 open-only decision).** Timing
+   analysis is recent, P&R is not timing-driven, DSP timing is
+   conservative, and the project moves fast enough that a regression is
+   plausible. Mitigations: pin the exact openXC7/Yosys/nextpnr revisions in
+   the repo and treat an upgrade as an experiment; guard-band clocks and
+   keep designs well inside Fmax; make the demo projects a regression suite
+   we re-run before trusting a new revision; keep every bitstream's toolhash
+   in the execution store so a QoR cliff is attributable. Accepted
+   consequence: if openXC7 cannot route something, that is a finding about
+   the open flow — which is on-thesis — not a reason to install a vendor
+   tool.
 2. **Baseline honesty** — NEON 4–8× and A9-vs-modern 30–40× are the two
-   numbers reviewers will check first; committed to in §6.
-3. **openXC7 instability if made load-bearing** — timing support is weeks
-   old, DSP timing conservative; fine as parallel native track with margin,
-   never the only flow.
+   numbers reviewers will check first; committed to in §6. Open-only adds a
+   third: our tooling is not the QoR ceiling either (§7's three-part rule).
+3. **Bambu's aarch64 build is unproven** and there is deliberately no x86
+   fallback; if it resists, the first kernels go through hand-written RTL
+   (mode 2) rather than through a vendor HLS.
 4. **Neighbor velocity** — HLSPilot/ContractHIL-class work is moving fast
    (three closest works are 2026 preprints); the empty niche (profiling-
    driven selection + on-board + self-improvement) is ours only if we move.
@@ -857,8 +915,8 @@ visibility comes from the twin or PL-side AXI monitors.
 ## 10. Open decisions (Matthew's)
 
 1. ~~Zybo variant~~ — Z7-20 per Matthew (confirm marking at bring-up).
-2. Track A host arrangement if FEX fails week-1: buy/repurpose an x86 box
-   vs spot cloud instance.
+2. ~~Track A host arrangement~~ — moot: open-only, everything runs
+   aarch64-native on the GB10.
 3. Tier-2 program slate: which 3–5 real applications the flow gets pointed
    at first.
 4. Mode-3 scope for the first paper: prompt/script self-improvement only,

@@ -290,7 +290,7 @@ frozen (tech files 90–32nm, last substantive commit 2017): extrapolate or use
 Accelergy-style plug-in tables, and say which.
 
 *Optimizer machinery:* SDC scheduling (Cong & Zhang, DAC 2006 — totally
-unimodular LP, optimal in polynomial time; the basis of Vitis/LegUp/XLS —
+unimodular LP, optimal in polynomial time; the basis of proprietary and open HLS tools alike —
 the formalism to relax: drop area, add power-budget and wire-latency terms);
 HLS DSE survey (Schafer & Wang, IEEE TCAD 2020). ML leg, all published:
 AutoDMP (Agnesina et al., ISPD 2023 — DREAMPlace + Bayesian opt, open
