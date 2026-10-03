@@ -521,8 +521,12 @@ verified earlier today; (p) pending the toolchain-verification agent)
    rv32-linux config is only 3.35K LUTs; rv64gc plausibly ~8–12K
    (extrapolation, flagged). Rocket RV64GC fits a 7020 (Zedboard
    precedent, ucb-bar/fpga-zynq) but at 25 MHz eating most of the
-   fabric; **CVA6 confirmed too big** (~55–60K LUTs on 7-series, over
-   even an A7-100T with FPU). Prerequisites verified: Debian trixie
+   fabric. **CVA6 correction (2026-10-03): the ~55–60K figure is the RV64+FPU
+   config; `cv32a6_imac_sv32` measures 20,019 LUT (37.6%) core-only with
+   per-push hardware Linux CI and proven Yosys/slang synthesis — a live
+   alternate at the cost of RV32.** BlackParrot is the RV64 alternate whose
+   official FPGA environment defaults to our exact part, utilisation
+   unpublished. Full table: `~/accel_loop/docs/SOFT-CORE-OPTIONS.md`. Prerequisites verified: Debian trixie
    riscv64 is official with **RV64GC baseline — FPU is mandatory** for
    stock userspace; 1 GiB headless is comfortable (512MB–1GB boards are
    supported Debian riscv64 hardware); **trixie ships Node 20.19 for
