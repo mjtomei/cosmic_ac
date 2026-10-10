@@ -382,12 +382,17 @@ not the kernel library, is under test.
     every number is "best achieved by an open flow," with external anchors
     (published hand-tuned Zynq-7020 results) and our own hand-written-RTL
     ceiling standing in for the vendor comparison.
-- **Runtime:** community PYNQ 3.0.1 prebuilt images exist for both Zybo
-  variants (nick-petrovsky/PYNQ-ZYBO; tools 2022.1) — Jupyter + overlay
-  loading + MMIO/DMA from Python: the ideal agent substrate. Verify the
-  dtb carries the A9 PMU node (`arm,cortex-a9-pmu`) or perf events read
-  `<not supported>`; patch DT if needed. Fallback: mainline kernel (Zynq
-  is first-class in torvalds/master) + Debian rootfs.
+- **Runtime: mainline Linux + Debian armhf — NOT PYNQ (corrected
+  2026-10-03).** PYNQ does not support this board: its `boards/` tree
+  carries only VCK190 and ZCU104, and `Overlay` wants a vendor-generated
+  `.hwh`. The community Zybo images (nick-petrovsky/PYNQ-ZYBO, tools
+  2022.1) are vendor-built artifacts and were the earlier plan; the open
+  path is mainline U-Boot + mainline Linux (Zynq is first-class in
+  torvalds/master, `zynq-zybo-z7.dts` is in-tree) + a Debian armhf rootfs
+  with SSH. Verify the dtb carries the A9 PMU node (`arm,cortex-a9-pmu`)
+  or perf events read `<not supported>`; patch the DT if needed. Bitstream
+  loading then goes through `fpga-region`/`fpga_manager` with a byte-swapped
+  `.bin`, or openFPGALoader over JTAG, not an overlay loader.
 - **Partial reconfiguration — DEMOTED to a research question by the
   open-only decision (2026-10-03).** The DFX flow we had planned
   (clock-region-aligned pblocks, partials via PCAP) is a proprietary-tool feature;
@@ -470,13 +475,14 @@ verified earlier today; (p) pending the toolchain-verification agent)
   open, reproducible, zero-license flow driven by intelligence produces
   results worth having" — which is the §0 outcome-3 lever stated without
   any vendor in the frame.
-- **Deploy: PYNQ 3.0.1 (v)** on the Zybo — overlays + MMIO/DMA from
-  Python. NB the PYNQ *image* is independent of how bitstreams are made:
-  its overlay loader takes a .bit, so openXC7 output substitutes for
-  vendor-tool output here. Swap mechanism = full bitstream reload (see above).
-  CHECK at bring-up that PYNQ's loader accepts an openXC7-produced
-  bitstream unmodified; if it is fussy, write to /dev/xdevcfg or the
-  fpga_manager sysfs interface directly instead.
+- **Deploy: mainline Linux + Debian armhf on the PS (corrected
+  2026-10-03 — PYNQ does not support this board).** MMIO from userspace via
+  `/dev/mem` or a UIO node; DMA through the AXI_HP ports. Swap mechanism =
+  full bitstream reload (see above). Two load paths, both open: during
+  development **openFPGALoader over JTAG** takes a `.bit` unmodified; from
+  Linux at runtime the kernel wants a **byte-swapped `.bin`** and mainline
+  exposes no writable sysfs, so use the `fpga-region` DT-overlay path plus
+  a ~20-line swap. `/dev/xdevcfg` is gone from mainline — do not plan on it.
 
 **Profiling setup — three instruments, one execution store:**
 1. **Always-on sampling (host + board):** system-wide perf on the GB10
@@ -871,26 +877,48 @@ weak (6 multiplexed counters with skid, 4KB trace windows). Not available
 on the A9: rr (no ARM32), SPE/PEBS-class precise memory sampling — memory
 visibility comes from the twin or PL-side AXI monitors.
 
-1. Confirm variant; flash PYNQ 3.0.1 community image; verify PMU dtb node;
-   `perf stat` smoke test on the A9.
-2. **openXC7 0.9.x via Nix on the GB10** (aarch64-native, no emulation):
-   build its `ps7-blinky-digilent-pynqz1` demo for xc7z020 unmodified, then
-   retarget it to the Zybo's constraints — this is the whole bitstream path
-   proven end to end before anything of ours enters it. GenZ for the PS7
-   BSP. Confirm PYNQ's overlay loader accepts the resulting .bit (fallback:
-   fpga_manager / xdevcfg directly).
-3. **Bambu on aarch64** — test-build (critical path now that there is no
-   x86 fallback by design); smoke-test one small C kernel to Verilog and
-   push it through openXC7.
-4. First accelerator end to end: a small matmul or hash kernel, AXI_HP for
-   data + GP for CSRs, driven from PYNQ Python — exercises the whole loop:
-   profile → HLS → bitstream → load → verify → time → read IMON power.
-   Swap mechanism is full bitstream reload; measure how long a reload
-   actually takes, since that sets the loop's inner-iteration floor.
-5. Then the harness: profile → candidate ranking (Accelerometer-style
-   model) → LLM HLS/RTL generation → build → deploy → measure, autonomous,
-   interventions logged. Tier-1 control kernel first; tier-2 selection run
-   on a real program after.
+**Phase 0 — prove the tooling (reordered 2026-10-10 on Matthew's
+priority: "let me know when we are ready to run Linux and ssh on the hard
+core since that is the first thing I want to smoke test").** No gate; the
+discipline is data completeness, enforced by `observer/run_record.py` in
+the build repo, which reports missing fields rather than blocking. Build
+logs and outcomes live in `~/accel_loop/bringup/`.
+
+1. **Linux + SSH on the A9s — milestone 1.** Mainline U-Boot
+   (`xilinx_zynq_virt_defconfig`, `CONFIG_DEFAULT_DEVICE_TREE="zynq-zybo-z7"`,
+   which pulls in the accepted GPL `ps7_init_gpl.c`) + mainline Linux
+   `zynq_defconfig` + a Debian armhf rootfs with `openssh-server`. **Not
+   PYNQ** — it does not support this board. Verify `arm,cortex-a9-pmu` in
+   the device tree (without it `perf` reads `<not supported>`, which the
+   whole observation tier depends on), then `perf stat` on a trivial loop,
+   then IMON via XADC. The board stops being an object we flash and starts
+   being a machine we log into — which is the precondition for daily use.
+2. **The bitstream path, proven before anything of ours enters it.**
+   `openXC7/nextpnr` from `main` with the xc7z020 chipdb; then
+   `regression/run.sh` from `demo-projects` against the pinned revision
+   (21 documented silent-wrong-bitstream bugs, 3 expected-red) — the
+   trust signal, and it needs no hardware. Then the PL-only blinky with
+   Digilent's K17 constraints, not the stock demo's L16 XDC. Then P&R of
+   the PULP `axi_xbar` netlist, whose synthesis is already proven clean
+   and whose timing closure nobody has published for this part.
+3. **The HLS path.** Bambu (pinned; x86 prebuilt if one exists) → one
+   small C kernel → Verilog, with differential testing *before* the
+   result is trusted: C→RTL is the measured weak link (13.7% failure on
+   6,700 Csmith programs, FCCM 2021), not P&R.
+4. **First accelerator end to end**, driven from Linux on the PS rather
+   than from PYNQ: AXI_HP for data, AXI_GP for CSRs, through `wb2axip`'s
+   `axi32axi` bridge (no published verification against a real PS7 port
+   exists — expect to produce it). Verify numerically against the CPU,
+   then measure wall-clock against a **NEON dual-core** baseline plus
+   board energy. Swap mechanism is full bitstream reload; time it, since
+   that sets the loop's inner-iteration floor.
+5. **Phase 0 ends in a parameterised build-load-measure script**, which
+   becomes the bottom layer of the agent harness. Everything past it —
+   kernel selection, the observer proper, the self-improvement arm — goes
+   through **project-manager**, which will refine these plans rather than
+   merely execute them (Matthew, 2026-10-10: loading the plans into pm and
+   discussing them is one of the things he is looking forward to). Tier-1
+   control kernel first; tier-2 selection on a real program after.
 
 ## 9. Risks, ranked
 
