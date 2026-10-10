@@ -357,6 +357,21 @@ not the kernel library, is under test.
   LUTs, 80 DSP — one modest kernel at a time; tier-2 ambitions shrink.) Both: dual Cortex-A9 @667 MHz
   (NEON), 1 GiB DDR3L @ ~4.26 GB/s peak. Fit intuition: an XAPP1170-class
   FP32 32×32 HLS matmul ≈ 3.5K LUTs + 10 DSPs (~6.5% of a Z7-20).
+- **On-chip memory as a data-movement resource (noted 2026-10-10).** The PS
+  carries **256 KB of OCM SRAM** — 192 KB mapped at `0x0000_0000` plus one
+  bank relocated to `0xFFFC_0000` (`OCM_CFG = 0x18`, measured on our board).
+  Its boot role is that it is the only RAM that exists before `ps7_init`, so
+  the first-stage loader lives there; but the part that matters for *this*
+  study is that it is reachable from the **PL as well as the PS** over the AXI
+  slave ports. That makes it a few hundred KB of low-latency SRAM shared
+  between the A9s and the fabric, with no DRAM round trip and no refresh — a
+  materially different movement cost from AXI_HP-to-DDR for a kernel with a
+  small working set, and exactly the distinction the matmul movement-energy
+  model (`analysis/s8/matmul_movement_boe.py`) prices. Worth an explicit
+  comparison once a kernel runs both ways; candidate accelerators whose
+  working set fits in OCM are a different profitability class from those that
+  do not, and the LogCA break-even granularity should be computed per path,
+  not per kernel.
 - **Toolchain: FULLY OPEN SOURCE, single track (Matthew, 2026-10-03: "we
   won't be using [the proprietary tool] at all, only open source"). No vendor tool is in
   the loop, the reference, or the fallback.**
