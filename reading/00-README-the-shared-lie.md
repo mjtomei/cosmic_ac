@@ -67,7 +67,15 @@ disindividualizes"; **if power inheres in the arrangement, universal watching
 universalises the mechanism**); Mann-Nolan-Wellman 2003 (sousveillance
 field-tested, arguing against its own proposal: asymmetry is *socially*
 enforced); Brin's Wired 4.12 essay (the priority date for
-the-powerful-become-the-most-watched, 1996).
+the-powerful-become-the-most-watched, 1996). **Added 2026-10-12, the cluster's first
+empirical records of the asymmetric panopticon in operation** (for V.3a(e)'s
+only-way-out-is-through stance): HRW 2018 *Dark Side* (parallel construction
+as a named, taught procedure — the first horn is the documented status quo);
+the Reuters 2013 DEA/SOD disclosure it builds on ("recreate the information
+provided by SOD"); and 404 Media's 2025 Flock Safety series (out-of-
+jurisdiction license-plate-reader searches found in police audit logs by
+records request — misuse discoverable *because* a partial open record
+existed).
 
 ## Traps (recorded before they bite)
 
@@ -146,6 +154,9 @@ The only work here that field-tests the symmetry answer, and it argues against i
 
 **21. `brin-1996-transparent-society-essay.pdf` ★★ *(skippable)***
 Close with the priority date. City Two contains the design point in one clause — cameras banned indoors "except Police Headquarters!", where any citizen may watch the control room — i.e. the powerful become the most-watched, published 1996. Skippable because the argument survives on Bentham + Foucault + Mann; its value is attribution, not soundness. Advocacy with no honest limit, and its 1996 press numbers are unsourced. Cite the 1998 book for the argument, this essay for the date and the wording, and say which.
+
+**21a. `hrw-2018-dark-side-secret-origins-of-evidence-parallel-construction.pdf` ★★★ *(added 2026-10-12)***
+Read after the symmetry answer, as the record of what the asymmetric arrangement actually does: parallel construction as a taught procedure — Section I for the DEA official's "bedrock concept… decades old," Section II.B for how it is carried out. This is V.3a(e)'s first horn (insist the surveillance does not exist, and it is used in hiding) as documented fact, and the exact negation of V.3c's shows-its-work principle. The Reuters 2013 piece is the originating disclosure; the 404 Media Flock series is the same arrangement in 2025, where the misuse surfaced only because audit logs existed and could be pulled — the stance's "everything open to everyone," seen in its partial, operator-held form.
 
 ## Side tracks
 
@@ -242,7 +253,7 @@ observability). The fourteen pre-split entries still carry the old 4/5 cluster
 ids inside the JSON; they are regrouped here by content and the JSON was left
 untouched.
 
-### (a) Star distribution over the merged 35
+### (a) Star distribution over the merged 35 (+3 on 2026-10-12 → 38: ★★★ 19, ★★ 18, ★ 1; objections unchanged at 20)
 
 | ★ | n | of which objections (⚠) |
 |---|---|---|
@@ -294,7 +305,7 @@ the corrections are the value. By cluster: 4 founding · 22 measured/corrections
 | ★★ ⚠ | `zuckerman-2009-atheism-secularity-wellbeing.pdf` | Reviews social-science evidence that secular individuals and secular societies fare as well or better on well-being, crime and equality measures — with suicide the exception. |
 | ★ | `marp-2022-many-analysts-religion.pdf` **new** | The organizers' reflection companion to the main MARP article — methodology lessons from 120 analysis teams on one religiosity/well-being dataset, not a result paper. |
 
-### Cluster 3 — panopticon and observability empirics (9)
+### Cluster 3 — panopticon and observability empirics (12)
 
 | ★ | Work | One line |
 |---|---|---|
@@ -307,6 +318,9 @@ the corrections are the value. By cluster: 4 founding · 22 measured/corrections
 | ★★ | `brin-1998-transparent-society-ch1.pdf` **new** | The founding statement of the symmetry answer: the cameras are coming either way, so the only question that matters is whether the watched can also watch — city one reports to Police Central, city two reports to everyone. |
 | ★★ | `okumura-2023-robot-watching-reputation.pdf` **new** | Japanese 5-year-olds shared more stickers in front of a robot they had just conversed with, but not in front of the same robot moving and talking non-interactively, nor a still robot, nor a flower. |
 | ★★ ⚠ | `yokum-2019-dc-bwc-rct.pdf` **new** | The largest, cleanest, preregistered BWC trial — 2,224 officers, individual-level randomization, seven district sub-experiments — finds nothing, and opens by naming the watching-eyes literature it fails to reproduce. |
+| ★★★ | `hrw-2018-dark-side-secret-origins-of-evidence-parallel-construction.pdf` **2026-10-12** | Parallel construction documented as institutional practice — DEA training to "recreate" the investigative trail, a "bedrock concept… decades old" employed daily. The asymmetric panopticon's laundering mechanism, primary-sourced. |
+| ★★ | `reuters-2013-shiffman-cooke-dea-sod-parallel-construction.pdf` **2026-10-12** | The originating disclosure: SOD documents instructing agents to omit the source and "recreate the information provided by SOD." Journalism, rendered from Wayback — cite by URL/date. |
+| ★★ | `404media-2025-flock-safety-audit-logs-records-requests.pdf` **2026-10-12** | Four records-request pieces: ICE and abortion-related searches across a private national LPR network, found in audit logs; Flock removes states from the lookup; CBP had access to 80,000+ cameras. The live case, and the half-measure (operator-held logs) the stance diagnoses. |
 
 ### (c) Revised reading path — 29 on the spine, 6 off it
 

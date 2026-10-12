@@ -1397,9 +1397,13 @@ load-bearing rather than a stance:
   closed access and out-of-jurisdiction queries (immigration-enforcement and
   abortion-related searches surfaced through records requests), cities
   cancelling contracts, and the resulting *un-auditability* of who searched
-  what and why. VERIFY from primary reporting (404 Media's 2025 records-request
-  series and the EFF/local-ordinance campaigns, as recalled) and from Flock's
-  own transparency-portal data, which is itself the half-measure the argument
+  what and why. Primary reporting now on the shared-lie shelf
+  (2026-10-12): 404 Media's 2025 records-request series — Koebler & Cox, ICE
+  searches of the network (27 May); Cox & Koebler, a Texas officer's
+  nationwide search for a woman who had an abortion (29 May); Flock removing
+  states from the national lookup after the reporting (25 Jun); CBP's access
+  to 80,000+ cameras (25 Aug). The activist/ordinance campaigns remain VERIFY.
+  Flock's own transparency-portal data is which is itself the half-measure the argument
   diagnoses: disclosure *of aggregate counts* by the operator, not an open
   record usable by anyone. Flock is the stance's two horns in one artifact —
   the surveillance exists and grows regardless, and the only live question is
@@ -1409,10 +1413,14 @@ load-bearing rather than a stance:
   the surveillance form of IV.4's dishonest-signaling culture — an
   institutional lie that exists *because* openness is denied — and the exact
   negation of V.3c's audit-not-explanation principle (the record is laundered
-  into a post-hoc narrative). Named in the literature: Human Rights Watch,
-  *Dark Side: Secret Origins of Evidence in US Criminal Cases* (2018 — VERIFY
-  handle) documents the practice; the DEA Special Operations Division
-  disclosures (Reuters, 2013) are the canonical primary. The stance's first
+  into a post-hoc narrative). Named in the literature, both now on the
+  shared-lie shelf (2026-10-12): Human Rights Watch, *Dark Side: Secret
+  Origins of Evidence in US Criminal Cases* (Jan 2018, 81 pp) documents the
+  practice from case files, interviews and DEA training material — a senior
+  DEA official calls it "a bedrock concept" that is "decades old" and used
+  daily; the Reuters disclosure (Shiffman & Cooke, 5 Aug 2013) is the
+  canonical primary, quoting the SOD instruction to use "normal investigative
+  techniques to recreate the information provided by SOD." The stance's first
   horn is therefore not hypothetical — it is the documented status quo.
 - **"Combination of all available perspectives" is the Hayek criterion run
   on the record.** Bandwidth and elicitation from many vantage points, with
