@@ -1388,7 +1388,23 @@ load-bearing rather than a stance:
   agree with every other perspective. Toka: VERIFY from primary reporting
   (Haaretz's 2022–23 coverage of its marketing of camera-feed interception and
   manipulation, as recalled) before anything specific enters the text; the
-  argument does not depend on the particular vendor.
+  argument does not depend on the particular vendor. **Flock Safety is the
+  live case for the first horn (Matthew, 2026-10-12: "there has been a lot of
+  media and activist activity around them recently").** A privately owned
+  national license-plate-reader network, deployed by thousands of local police
+  departments, searchable across jurisdictions, with the 2025 reporting and
+  activist campaigns centered on exactly the failure the stance predicts:
+  closed access and out-of-jurisdiction queries (immigration-enforcement and
+  abortion-related searches surfaced through records requests), cities
+  cancelling contracts, and the resulting *un-auditability* of who searched
+  what and why. VERIFY from primary reporting (404 Media's 2025 records-request
+  series and the EFF/local-ordinance campaigns, as recalled) and from Flock's
+  own transparency-portal data, which is itself the half-measure the argument
+  diagnoses: disclosure *of aggregate counts* by the operator, not an open
+  record usable by anyone. Flock is the stance's two horns in one artifact —
+  the surveillance exists and grows regardless, and the only live question is
+  whether its record is closed (and therefore misused and laundered) or open
+  (and therefore checkable from every perspective).
 - **Parallel construction is the system refusing to show its work.** It is
   the surveillance form of IV.4's dishonest-signaling culture — an
   institutional lie that exists *because* openness is denied — and the exact
