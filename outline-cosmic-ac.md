@@ -1356,7 +1356,72 @@ precisely when it is reciprocal ("watching the watchers"), and Mann's
 remains ours to keep honest: symmetry is a *design property that must be
 defended*, not a law of the technology — the same system with an owner and a
 one-way mirror is exactly Bentham's building, which is why V.3b's firm design
-(user control, balance-sheet coupling) is where the governance lives. (ii) The mechanism requires that the structure the lie compressed is
+(user control, balance-sheet coupling) is where the governance lives.
+
+**The stance that follows from the symmetry — the only way out is through
+(Matthew, 2026-10-12), wording preserved.** ⟨M⟩ There is a lot of talk about
+misuse of surveillance technology by law enforcement and now even companies
+saying they are capable of manufacturing false surveillance, like the company
+Toka. **Mass surveillance is here and being used and will only grow in use and
+capability with machine intelligence.** So one stance the public can take is to
+insist the government continues to pretend it doesn't exist and they aren't
+using it, in which case **they will continue to use it in hiding and perform
+parallel construction.** Alternatively, we can agree that **it is too dissonant
+to walk around with microphones and cameras in our pockets constantly and
+expect privacy.** The way to avoid misuse and dishonesty is to **have everything
+open to everyone** so, paired with newly unconstrained software development,
+**the truth is available through combination of all available perspectives.**
+⟨/M⟩ The outline's earlier panopticon response says the asymmetry is the
+problem; this is the public's *choice* once that is accepted, and it has an
+origin document — Horus (mtomei.com): "given the system exists implicitly now
+already, I would rather have more visibility." Four connections make it
+load-bearing rather than a stance:
+
+- **Fabricated surveillance is the decisive case for openness, not against
+  it.** Once surveillance output can be manufactured, a closed record is not
+  merely abusable but *unverifiable* — and the only defense against a
+  fabricated recording is plurality of independent recordings. That is IV.4's
+  unraveling logic (Grossman 1981 / Milgrom 1981, on the trustworthy-firm
+  shelf) run on surveillance instead of firms: the evidentiary value of a
+  single closed feed collapses the moment feeds can be faked, and the open
+  plural record is the configuration in which a fake fails because it must
+  agree with every other perspective. Toka: VERIFY from primary reporting
+  (Haaretz's 2022–23 coverage of its marketing of camera-feed interception and
+  manipulation, as recalled) before anything specific enters the text; the
+  argument does not depend on the particular vendor.
+- **Parallel construction is the system refusing to show its work.** It is
+  the surveillance form of IV.4's dishonest-signaling culture — an
+  institutional lie that exists *because* openness is denied — and the exact
+  negation of V.3c's audit-not-explanation principle (the record is laundered
+  into a post-hoc narrative). Named in the literature: Human Rights Watch,
+  *Dark Side: Secret Origins of Evidence in US Criminal Cases* (2018 — VERIFY
+  handle) documents the practice; the DEA Special Operations Division
+  disclosures (Reuters, 2013) are the canonical primary. The stance's first
+  horn is therefore not hypothetical — it is the documented status quo.
+- **"Combination of all available perspectives" is the Hayek criterion run
+  on the record.** Bandwidth and elicitation from many vantage points, with
+  machine intelligence doing the combining — the same mechanism as V.3d's
+  complete-understanding-of-origins: truth from aggregating sources rather
+  than quarantining them. The "newly unconstrained software development"
+  clause is load-bearing and should be stated as the *condition*: everything
+  open to everyone removes the power imbalance only if the capacity to *use*
+  the open record is as widely distributed as the record itself. Otherwise
+  openness is one-way legibility with extra steps — Bentham with public
+  blueprints. (This is also the Goldfarb/B&H bracket from the Hayek-criterion
+  section: closed surveillance is the centralizing configuration, one party
+  holds the record; open plural surveillance is the decentralizing one; which
+  the technology delivers is a design choice.)
+- **Carried counterweights.** The disclosure squeeze on the
+  metabolizing-interface shelf (Schilke & Reimann: disclosure erodes trust
+  under every moderator tried) — openness has costs that do not vanish by
+  fiat; Foucault's reading of Bentham (on the shared-lie shelf) — visibility
+  itself disciplines, symmetric or not; and the honest form of the second
+  horn: "everything open to everyone" is the equilibrium the argument claims
+  is *reachable*, not one that arrives by conceding the first. The transition
+  is the same pincer as IV.4's — the cost of opening falls (machine
+  intelligence makes the open record usable by anyone) while the cost of
+  staying closed rises (fabrication makes closed records worthless as
+  evidence). (ii) The mechanism requires that the structure the lie compressed is
 actually there to see — that goodness *does* pay off legibly on observable
 horizons. Where it does not (and Olson's coalitions, above, are a standing
 counterexample on some horizons), counsel that honestly reports the payoff
