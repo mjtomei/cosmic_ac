@@ -42,12 +42,23 @@ unbroken 12-hour "working" run that was agents emitting messages overnight.
 SOURCES
   * Claude Code  ~/.claude/projects/<slug>/*.jsonl
   * OMP          ~/.omp/agent/sessions/<slug>/*.jsonl
-Both are JSONL with timestamps and a recorded cwd, but they mark a human turn
-differently, so each gets its own reader (see is_human_*). Attribution uses the
-recorded cwd, never the directory slug: Claude Code's slug replaces both "/"
-and "_" with "-" and cannot be decoded back to a path, and the two tools slug
-the same project differently (-home-matt-performance-commons vs
--performance_commons).
+  * Codex        ~/.codex/sessions/<Y>/<M>/<D>/rollout-*.jsonl
+                 ~/.codex/archived_sessions/rollout-*.jsonl
+All three are JSONL with timestamps and a recorded cwd, but each marks a human
+turn differently, so each gets its own reader (see is_human_*). Codex also
+nests its cwd inside session_meta.payload rather than at the top level, and
+keeps live and archived rollouts in two trees.
+
+Attribution uses the recorded cwd, never the directory slug: Claude Code's slug
+replaces both "/" and "_" with "-" and cannot be decoded back to a path, and
+the tools slug the same project differently (-home-matt-performance-commons vs
+-performance_commons). A cwd inside a repository is credited to the repository
+(see project_root) — sessions frequently run in a working subdirectory, and
+Codex in particular runs inside per-run trees.
+
+pm's automated sessions are excluded by PROJECT PATH, not by source, so when pm
+begins driving Codex those sessions drop out on the same --include-pm switch
+with no further change here.
 
 VIEWS
   per-project breakdown (always), then one of: daily chart, --weekly, --tod;
@@ -83,6 +94,10 @@ UNATTENDED_RUN_H = 6     # a single run longer than this is flagged as suspect
 
 CLAUDE_GLOB = os.path.expanduser("~/.claude/projects/*/*.jsonl")
 OMP_GLOB = os.path.expanduser("~/.omp/agent/sessions/*/*.jsonl")
+# Codex keeps live and archived rollouts in two places, so this source needs
+# two globs; live ones are filed under a YYYY/MM/DD tree.
+CODEX_GLOBS = (os.path.expanduser("~/.codex/sessions/*/*/*/*.jsonl"),
+               os.path.expanduser("~/.codex/archived_sessions/*.jsonl"))
 TZ = datetime.datetime.now().astimezone().tzinfo
 
 # pm drives autonomous work from throwaway branch checkouts under .pm/workdirs.
@@ -168,6 +183,46 @@ def is_human_omp(entry):
     return bool(body) and not body.startswith(INJECTED_PREFIXES)
 
 
+def _codex_text(payload):
+    """Codex content blocks are input_text/output_text; voice is a bare field."""
+    c = payload.get("content")
+    if isinstance(c, str):
+        return c
+    if isinstance(c, list):
+        return "\n".join(b.get("text", "") for b in c if isinstance(b, dict)
+                          and b.get("type") in ("input_text", "output_text", "text"))
+    return payload.get("text") or ""          # realtime transcript_segment
+
+
+# Codex wraps every harness injection in a lower-snake XML tag:
+# <environment_context>, <realtime_delegation>, <recommended_plugins>,
+# <turn_aborted>, <codex_internal_context>, <user_action>,
+# <send_user_message_question_reply>, <user_instructions>. Measured across 263
+# rollouts, every non-human user entry started with one and no human message
+# did. The cost of the rule is that a person opening a message with such a tag
+# — pasting XML as the first thing they say — would not be counted.
+CODEX_INJECTED_RE = re.compile(r"^<[a-z][a-z0-9_]*[\s>]")
+
+
+def is_human_codex(entry):
+    """Codex: `response_item` carries typed turns, `realtime_item` spoken ones.
+
+    Both use role "user"; the developer role is the harness. Voice transcript
+    segments count — a person talking is a person working — which is why the
+    realtime items are included rather than only the typed ones.
+    """
+    if entry.get("type") not in ("response_item", "realtime_item"):
+        return False
+    payload = entry.get("payload") or {}
+    if not isinstance(payload, dict) or payload.get("role") != "user":
+        return False
+    body = _codex_text(payload).strip()
+    if not body:
+        return False
+    return not (CODEX_INJECTED_RE.match(body)
+                or body.startswith(INJECTED_PREFIXES))
+
+
 # Per source: (glob, quick line test, predicate). The line test runs before
 # json.loads and skips the big lines (assistant turns, tool output), which
 # takes a full 1.5GB sweep from minutes to about two seconds.
@@ -178,14 +233,52 @@ SOURCES = {
     "omp": (OMP_GLOB,
             lambda ln: '"role":"user"' in ln,
             is_human_omp),
+    "codex": (CODEX_GLOBS,
+              lambda ln: '"role": "user"' in ln or '"role":"user"' in ln,
+              is_human_codex),
 }
 
 
+_ROOT_CACHE = {}
+
+
+def project_root(path, limit=8):
+    """Nearest enclosing git repo, or the path itself.
+
+    A session's cwd is often a working subdirectory, not the project: Codex
+    runs inside per-run trees like voip/state/e2e/20260919-160155-65d547/
+    project, which produced 108 "projects" under three minutes each, all of
+    them really ~/voip. The repo is the honest unit — it is already what the
+    commit side attributes to — so a cwd inside one is credited to it.
+
+    Stops at $HOME so a loose file in the home directory is not swept into a
+    repo there, and only applies to paths that exist; a recorded cwd that has
+    since been deleted is left as it was recorded.
+    """
+    if path in _ROOT_CACHE:
+        return _ROOT_CACHE[path]
+    home, cur, out = os.path.expanduser("~"), path, path
+    if os.path.isdir(path):
+        for _ in range(limit):
+            if (os.path.isdir(os.path.join(cur, ".git"))
+                    or os.path.isfile(os.path.join(cur, ".git"))):
+                out = cur
+                break
+            nxt = os.path.dirname(cur)
+            if nxt in (cur, "/", home):
+                break
+            cur = nxt
+    _ROOT_CACHE[path] = out
+    return out
+
+
 def normalize(proj):
-    for marker in ("/scratchpad", "/.claude/projects", "/.omp/agent"):
+    for marker in ("/scratchpad", "/.claude/projects", "/.omp/agent",
+                   "/.codex/sessions"):
         if marker in proj:
             proj = proj.split(marker)[0]
-    return TMP_SESSION_RE.sub("", proj) or proj
+    proj = TMP_SESSION_RE.sub("", proj) or proj
+    return project_root(proj)
 
 
 def scan(sources, human_only=True):
@@ -193,8 +286,11 @@ def scan(sources, human_only=True):
     gap = datetime.timedelta(minutes=SESSION_GAP_MIN)
     per_project = defaultdict(dict)
     for name in sources:
-        pattern, quick, is_human = SOURCES[name]
-        for path in glob.glob(pattern):
+        patterns, quick, is_human = SOURCES[name]
+        if isinstance(patterns, str):
+            patterns = (patterns,)
+        paths = sorted({p for pat in patterns for p in glob.glob(pat)})
+        for path in paths:
             if "/subagents/" in path:
                 continue
             cwd, stamps = None, []
@@ -205,10 +301,16 @@ def scan(sources, human_only=True):
             with fh:
                 for raw in fh:
                     if cwd is None and '"cwd"' in raw:
+                        # Claude Code and OMP record cwd at the top level;
+                        # Codex nests it in session_meta.payload.
                         try:
-                            cwd = json.loads(raw).get("cwd")
+                            rec = json.loads(raw)
                         except ValueError:
-                            pass
+                            rec = None
+                        if isinstance(rec, dict):
+                            cwd = rec.get("cwd") or (
+                                (rec.get("payload") or {}).get("cwd")
+                                if isinstance(rec.get("payload"), dict) else None)
                     if human_only and not quick(raw):
                         continue
                     try:
@@ -234,7 +336,13 @@ def scan(sources, human_only=True):
             if not ivals:
                 continue
             proj = normalize(cwd or os.path.basename(os.path.dirname(path)))
-            key = f"{name}:{os.path.basename(path)[:8]}"
+            # Key on the id TAIL, not the head: Claude Code and OMP name files
+            # by uuid, but every Codex rollout is "rollout-<date>-<uuid>", so a
+            # leading slice is "rollout-" for all of them and would collapse
+            # every Codex session in a project into one, merging their
+            # intervals and undercounting the session count.
+            stem = os.path.splitext(os.path.basename(path))[0]
+            key = f"{name}:{stem[-12:]}"
             per_project[proj][key] = ivals
     return per_project
 
@@ -376,7 +484,11 @@ def add_commits(per_project, skip_agentic=True, scan_repos=True):
         if ivals:
             if proj not in per_project:
                 discovered += 1
-            per_project[proj]["<git commits>"] = ivals
+            # setdefault, not per_project[proj][...]: --project replaces the
+            # defaultdict from scan() with a plain comprehension, so a repo
+            # the filesystem scan finds outside the filter used to raise
+            # KeyError here and abort the whole run.
+            per_project.setdefault(proj, {})["<git commits>"] = ivals
     return seen, skipped_total, discovered
 
 
