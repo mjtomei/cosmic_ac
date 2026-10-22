@@ -131,6 +131,50 @@ AGENTIC_COMMIT_RE = re.compile(
     r"^(merge pull request|start work on|review-loop|qa\b|pm: |pm:qa"
     r"|plan-regression|watcher)", re.I)
 
+# pm grew new phases after the rule above was written from its May vocabulary,
+# and they slip past it. Measured on 2026-10-21: of 440 project-manager commits
+# that day, 394 matched the rule above and 46 did not, which charged up to
+# 11.5h of commit windows to a day whose real human time was about 4.7h. The
+# families that leaked:
+#
+#   signoff: / impl: / spec:        pm's sign-off, implementation, spec phases
+#   Merge master@ / Merge remote-   the rule above only knows "merge pull
+#     tracking branch 'origin/...'  request", not pm's other merge forms
+#   Record ... / Register ...       pm recording a QA failure or filing a bug
+#   Note on pr- / PR note: / Notes: pm's handoff notes
+#
+# These are SCOPED TO PM'S OWN REPOSITORY and deliberately not global: as
+# ordinary English they catch real work elsewhere. Measured before scoping --
+# applied globally they would have excluded 12 commits in performance_commons
+# ("register correction: analyse the pacing regime's effects...") and 14 in
+# journal ("Record 2026-10-22 morning review..."), all of them human.
+#
+# STILL UNDER-FILTERED, knowingly. 23 of that day's 46 match neither these
+# patterns nor a pr-<hex> marker -- "Popup picker: keep navigating past merged
+# PRs", "Add PR action history journal", "Increase review loop iteration limit
+# to 50". They read as ordinary feature work, and since pm implements
+# autonomously they are probably its impl phase, but a subject line cannot
+# settle it. So pm's commit hours are an UPPER BOUND on human time, and the
+# durable fix is branch reachability (a commit originating on a pm/pr-* branch
+# is pm's whatever it is called) rather than more vocabulary. Until then,
+# --no-commits is the accurate reading for recent work; it also zeroes
+# Dec-April, where transcripts were deleted and commits are the only signal.
+PM_AGENTIC_RE = re.compile(
+    r"^(signoff:|impl:|spec:|merge remote-tracking|merge master@"
+    r"|record |register |notes?:|pr note:|note on pr-)", re.I)
+
+PM_REPO_HINT = os.path.expanduser("~/claude-work/project-manager")
+_PM_IDENT = []          # lazily filled: [identity] or [None] if pm is absent
+
+
+def _is_pm_repo(path):
+    """Does this checkout share pm's history? Keyed on root commits, so it
+    follows clones and survives pm moving."""
+    if not _PM_IDENT:
+        _PM_IDENT.append(repo_identity(PM_REPO_HINT)
+                         if os.path.isdir(PM_REPO_HINT) else None)
+    return _PM_IDENT[0] is not None and repo_identity(path) == _PM_IDENT[0]
+
 # /tmp/claude-<uid>/<slug>/<uuid>[/scratchpad] -> strip back toward the slug
 TMP_SESSION_RE = re.compile(r"/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-"
                             r"[0-9a-f]{4}-[0-9a-f]{12}$")
@@ -421,6 +465,7 @@ def commit_intervals(repo, skip_agentic=True):
             return [], 0
     except (OSError, subprocess.SubprocessError):
         return [], 0
+    pm_repo = skip_agentic and _is_pm_repo(repo)
     ivals, skipped = [], 0
     for line in out.stdout.splitlines():
         parts = line.split("\0")
@@ -431,7 +476,8 @@ def commit_intervals(repo, skip_agentic=True):
             continue
         if not OUR_AUTHOR_RE.search(author):
             continue                      # someone else's commit in a clone
-        if skip_agentic and AGENTIC_COMMIT_RE.match(subject.strip()):
+        if skip_agentic and (AGENTIC_COMMIT_RE.match(subject.strip())
+                             or (pm_repo and PM_AGENTIC_RE.match(subject.strip()))):
             skipped += 1
             continue
         try:
