@@ -186,7 +186,110 @@ INJECTED_PREFIXES = (
     "<system-reminder>", "[SYSTEM NOTIFICATION", "<task-notification>",
     "<local-command-stdout>", "<local-command-caveat>", "Caveat:",
     "<system-notice>",
+    # The harness writes this when a person hits escape. It is a record OF a
+    # human action rather than anything typed, and it recurs -- 23 times in
+    # four days -- so it sustained intervals on its own.
+    "[Request interrupted by user",
 )
+
+# --- scheduled and templated prompts ---------------------------------------
+# pm and the schedulers send prompts through the same channel a person types
+# into, so they pass every test above: they are role "user", carry no
+# injection tag, and read as instructions. In the four days to 2026-10-26 they
+# were 787 of 1,649 "human" turns -- "Scheduled 15-minute PM check ...", "You
+# are reviewing PR pr-592e4bd ...", "Native PM review startup recovery ...",
+# each arriving dozens of times. Firing every fifteen minutes, they chain into
+# continuous "activity" under a 30-minute gap rule.
+#
+# They are caught by what makes them templates: a message that is largely the
+# same as another message is not something a person composed. Two guards keep
+# this off real work:
+#
+#   * a WORD FLOOR, because people legitimately repeat themselves in short
+#     form. "Yes" appears three times in four days, "ok", "go ahead" and
+#     "can you commit and push?" likewise; at 25 words the 280 short genuine
+#     messages in that window all survive. The cost is the ~36 short
+#     automated ones that also survive.
+#   * VOLATILE PARTS ARE STRIPPED BEFORE COMPARING (pr ids, uuids, hex, dates,
+#     numbers, paths), so two instances of one template read as near-identical
+#     rather than as 70%-similar cousins, and the threshold does the rest.
+DUP_SIMILARITY = 0.30        # Jaccard over word sets; >= this is a template
+DUP_MIN_WORDS = 25           # below this, repetition is human, not automated
+_SKETCH_K = 128              # k-min-values sketch; bounds memory per message
+
+_VOLATILE_RE = re.compile(
+    r"\bpr-[0-9a-f]{6,}\b"                    # pm PR ids
+    r"|\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b"
+    r"|\b[0-9a-f]{7,}\b"                      # bare hashes
+    r"|\d{4}-\d{2}-\d{2}|\d{1,2}:\d{2}"      # dates, times
+    r"|/[\w./-]+"                             # paths
+    r"|\d+", re.I)
+
+
+# A template's identity is settled in its opening; two messages sharing 4,000
+# characters verbatim are the same message whatever follows. Capping here keeps
+# the signature pass off the long tail — bodies run to 19,000 words, and
+# normalising all 109MB of them cost 8s per run.
+_SIG_CHARS = 4000
+
+
+def _tokens(body):
+    return _VOLATILE_RE.sub(" ", body[:_SIG_CHARS].lower()).split()
+
+
+def _sketch(toks):
+    """k smallest token hashes — a bounded stand-in for the full word set."""
+    hs = sorted({hash(t) & 0xFFFFFFFF for t in toks})
+    return frozenset(hs[:_SKETCH_K])
+
+
+def _jaccard(a, b):
+    if not a or not b:
+        return 0.0
+    return len(a & b) / len(a | b)
+
+
+def templated(records):
+    """Indices to drop: repeats of a message already seen.
+
+    records are (timestamp, tokens, sketch). Candidates are bucketed on their
+    first few normalised tokens, so this stays linear in practice rather than
+    pairwise over everything; a template shares its opening by construction,
+    and within a bucket the real similarity decides.
+
+    KEEPS THE EARLIEST of each cluster and drops the rest, which matters
+    because two things land in the same cluster. A scheduled prompt firing 76
+    times is not human time, and keeping one of 76 costs nothing: a lone
+    timestamp spans no interval unless a real message sits beside it. But some
+    clusters are one message recorded twice — a resumed session replays its
+    history, so a person's own words reappear verbatim (Jaccard 1.00). An
+    earlier version flagged every member of a pair and deleted both, which
+    silently discarded real messages. Keeping the first is right for both
+    cases.
+    """
+    buckets = defaultdict(list)
+    for i, (when, toks, sketch) in enumerate(records):
+        if len(toks) < DUP_MIN_WORDS:
+            continue
+        buckets[" ".join(toks[:8])].append(i)
+    drop = set()
+    for idxs in buckets.values():
+        if len(idxs) < 2:
+            continue
+        clusters = []                      # [[member indices], ...]
+        for i in idxs:
+            for c in clusters:
+                if _jaccard(records[i][2], records[c[0]][2]) >= DUP_SIMILARITY:
+                    c.append(i)
+                    break
+            else:
+                clusters.append([i])
+        for c in clusters:
+            if len(c) < 2:
+                continue
+            keep = min(c, key=lambda k: records[k][0])
+            drop.update(k for k in c if k != keep)
+    return drop
 
 
 # --- reading sessions -------------------------------------------------------
@@ -325,10 +428,15 @@ def normalize(proj):
     return project_root(proj)
 
 
-def scan(sources, human_only=True):
-    """{project: {session_key: [(start, end), ...]}} across the chosen sources."""
+def scan(sources, human_only=True, drop_templated=True):
+    """{project: {session_key: [(start, end), ...]}} across the chosen sources.
+
+    Two passes when drop_templated: collect every human turn first, flag the
+    templated ones globally (a scheduled prompt recurs ACROSS sessions, so it
+    cannot be spotted within one), then build intervals from what survives.
+    """
     gap = datetime.timedelta(minutes=SESSION_GAP_MIN)
-    per_project = defaultdict(dict)
+    files = []                      # (name, path, proj, key, [(ts, toks, sk)])
     for name in sources:
         patterns, quick, is_human = SOURCES[name]
         if isinstance(patterns, str):
@@ -337,7 +445,7 @@ def scan(sources, human_only=True):
         for path in paths:
             if "/subagents/" in path:
                 continue
-            cwd, stamps = None, []
+            cwd, msgs = None, []
             try:
                 fh = open(path, errors="replace")
             except OSError:
@@ -369,25 +477,47 @@ def scan(sources, human_only=True):
                     if not ts:
                         continue
                     try:
-                        stamps.append(datetime.datetime.fromisoformat(
-                            ts.replace("Z", "+00:00")).astimezone(TZ))
+                        when = datetime.datetime.fromisoformat(
+                            ts.replace("Z", "+00:00")).astimezone(TZ)
                     except ValueError:
                         continue
-            if not stamps:
+                    if drop_templated and human_only:
+                        body = (_text((entry.get("message") or {}).get("content"))
+                                or _codex_text(entry.get("payload") or {}))
+                        toks = _tokens(body)
+                        msgs.append((when, toks, _sketch(toks)))
+                    else:
+                        msgs.append((when, None, None))
+            if not msgs:
                 continue
-            stamps.sort()
-            ivals = [(a, b) for a, b in zip(stamps, stamps[1:]) if b - a <= gap]
-            if not ivals:
-                continue
-            proj = normalize(cwd or os.path.basename(os.path.dirname(path)))
-            # Key on the id TAIL, not the head: Claude Code and OMP name files
-            # by uuid, but every Codex rollout is "rollout-<date>-<uuid>", so a
-            # leading slice is "rollout-" for all of them and would collapse
-            # every Codex session in a project into one, merging their
-            # intervals and undercounting the session count.
             stem = os.path.splitext(os.path.basename(path))[0]
-            key = f"{name}:{stem[-12:]}"
-            per_project[proj][key] = ivals
+            files.append((name, path, normalize(
+                cwd or os.path.basename(os.path.dirname(path))),
+                f"{name}:{stem[-12:]}", msgs))
+
+    drop = set()
+    if drop_templated and human_only:
+        flat = [(m[0], m[1], m[2]) for f in files for m in f[4]]
+        drop = templated(flat)
+        scan.dropped = len(drop)
+    else:
+        scan.dropped = 0
+
+    per_project = defaultdict(dict)
+    pos = 0
+    for name, path, proj, key, msgs in files:
+        stamps = []
+        for m in msgs:
+            if pos not in drop:
+                stamps.append(m[0])
+            pos += 1
+        if not stamps:
+            continue
+        stamps.sort()
+        ivals = [(a, b) for a, b in zip(stamps, stamps[1:]) if b - a <= gap]
+        if not ivals:
+            continue
+        per_project[proj][key] = ivals
     return per_project
 
 
@@ -906,6 +1036,12 @@ def main():
                          "were deleted (omerta) still count")
     ap.add_argument("--no-commits", action="store_true",
                     help="human messages only; skip git commit windows")
+    ap.add_argument("--include-scheduled", action="store_true",
+                    help="count scheduled and templated prompts as human "
+                         "turns. Off by default: pm and the schedulers send "
+                         "them through the same channel a person types into, "
+                         "and firing every 15 min they chain into continuous "
+                         "activity")
     ap.add_argument("--include-agent", action="store_true",
                     help="count every message, not just human turns")
     ap.add_argument("--include-today", action="store_true",
@@ -917,7 +1053,9 @@ def main():
         ap.error(f"--bin {args.bin} does not divide 1440 evenly")
 
     sources = list(SOURCES) if args.source == "all" else [args.source]
-    per_project = fold_slug_dirs(scan(sources, human_only=not args.include_agent))
+    per_project = fold_slug_dirs(scan(
+        sources, human_only=not args.include_agent,
+        drop_templated=not args.include_scheduled))
 
     dropped = 0
     if not args.include_pm:
@@ -980,6 +1118,9 @@ def main():
     if discovered:
         notes.append(f"{discovered} repo(s) found on disk with no surviving "
                      f"transcript — counted from commits alone")
+    if getattr(scan, "dropped", 0):
+        notes.append(f"{scan.dropped} scheduled/templated prompt(s) excluded "
+                     f"(--include-scheduled to add)")
     if notes:
         print("note: " + "\n      ".join(notes) + "\n")
     print(render_breakdown(rows, wall, sess_union, sess_sum,
