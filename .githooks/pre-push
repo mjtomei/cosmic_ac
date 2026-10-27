@@ -96,7 +96,11 @@ check_range() {
         ;;
     esac
 
-    # Third-party documents. Acquired papers, vendor reports and scraped pages
+    # Third-party documents. The outline .docx files are Matthew's own drafting
+    # documents (the Cosmic AC outline, worked in parallel outside this repo),
+    # whitelisted 2026-10-27 after a full-history scan flagged them as the
+    # rule's only standing false positives.
+    # Acquired papers, vendor reports and scraped pages
     # are read here, quoted in notes, and never redistributed from a public
     # repo — most carry no licence permitting it. Our OWN renders are the only
     # documents that belong in git, so this is a whitelist, not a blacklist:
@@ -104,7 +108,8 @@ check_range() {
     case "$path" in
       the-performance-commons*.pdf|assets-rents-socialized-buildout*.pdf|\
       dataflow-vs-heterogeneous-architecture.pdf|build/*.pdf|\
-      analysis/*/REVIEW*.pdf|analysis/*/METHODOLOGY*.pdf|REVIEW-RESPONSES.pdf)
+      analysis/*/REVIEW*.pdf|analysis/*/METHODOLOGY*.pdf|REVIEW-RESPONSES.pdf|\
+      towards-the-cosmic-ac-outline*.docx)
         : ;;                                    # our own renders — allowed
       *.pdf|*.epub|*.mobi|*.docx|*.doc|*.pptx|*.djvu)
         say "BLOCKED: third-party document (not a known project deliverable): $path"
@@ -125,8 +130,25 @@ check_range() {
   done <<< "$paths"
 
   # --- 1b. Oversized blobs ---
-  objects=$(git rev-list --objects "$@" 2>/dev/null) || return 0
-  new_files=$(printf '%s\n' "$objects" | awk 'NF>1 {print $1, substr($0, index($0,$2))}')
+  # Enumerate (blob, path) pairs from `git log --raw`, NOT from
+  # `git rev-list --objects`. Same reason 1a above stopped using rev-list, and
+  # the fix was simply never carried down here: rev-list lists each unique
+  # CONTENT once, and omits a blob that is already reachable from the range's
+  # starting point. So committing a second copy of a corpus file -- or
+  # re-adding, renaming, or restoring one whose bytes exist anywhere in
+  # history -- produced a path that 1a checked but that NEVER reached the size
+  # gate or the content backstop below. Caught 2026-10-27 by a test that
+  # copied a 93KB verbatim-Hansard file to a new name: 1a passed it (the name
+  # matches no corpus pattern), and 1b never saw it at all.
+  # --raw gives one line per path per commit with the post-image blob, so
+  # duplicate content is listed under every path that carries it. -M0 disables
+  # rename detection, which would otherwise report a moved corpus file as R
+  # with no new blob to scan.
+  objects=$(git log --pretty=format: --raw --no-renames -M0 "$@" 2>/dev/null) || return 0
+  new_files=$(printf '%s\n' "$objects" | awk -F'\t' '
+      /^:/ { split($1, a, " ");
+             if (a[5] ~ /^[AMT]/ && a[4] !~ /^0+$/) print a[4], $2 }' \
+    | sort -u -k2)
 
   while IFS=' ' read -r sha path; do
     [ -n "$path" ] || continue
@@ -154,7 +176,41 @@ check_range() {
       analysis/s10/detector_bench_scored_input.jsonl|\
       analysis/s10/detector_bench_controls.jsonl|\
       analysis/s10/flagged_hits_pool.json|\
-      analysis/s10/market_anchors/occupation_titles.txt)
+      analysis/s10/market_anchors/occupation_titles.txt|\
+      analysis/s10/provinces/member_allsource.json|\
+      analysis/s10/pangram_gov_seeds.csv|\
+      analysis/s10/pangram_gov_all_b0.csv|\
+      analysis/s10/pangram_gov_all_b1.csv|\
+      analysis/s10/pangram_v3_b0.csv|\
+      analysis/s10/pangram_v3_b1.csv|\
+      analysis/s10/pangram_bypass.csv|\
+      analysis/s10/stage5_evasion_pairs.json|\
+      analysis/s10/stage5_grade_items.json|\
+      analysis/s10/se_segments.jsonl|\
+      analysis/s10/wp_extracts.json)
+        # 2026-10-27: eleven files the rewritten backstop newly flags, all
+        # already in the published tree and now itemised in DATA-NOTICE.md.
+        # Audited file by file before allowlisting:
+        #   pangram_gov_all_b0/b1, pangram_v3_b0/b1 — 329 rows, every one
+        #     matched against the known variant set: model rewrites, no
+        #     originals. CA-FED and NB.
+        #   pangram_bypass.csv — 40 NB variants; no row matches any segment in
+        #     the 112 local corpus files, consistent with the run's name.
+        #   pangram_gov_seeds.csv — 48 rows of VERBATIM CA-FED Hansard (one
+        #     traced to ca/xml/451_048.xml). Published under the Speaker's
+        #     Permission, same instrument as detector_bench_input's originals.
+        #   stage5_evasion_pairs/grade_items — 35 original+variant pairs and
+        #     the blinded 70-item grading subset drawn from them.
+        #   se_segments.jsonl — fully synthetic (speaker "SYNTHETIC",
+        #     Mistral-7B-Instruct-v0.3); no parliamentary text at all.
+        #   wp_extracts.json — 58 full Wikipedia articles, CC BY-SA; see the
+        #     Wikipedia row in SOURCE-LICENCES.md for the attribution and
+        #     share-alike terms this repo relies on.
+        #   provinces/member_allsource.json — false positive: 1,740 short
+        #     attributed evidence quotes at 9.5% density, caught only by the
+        #     sentence-count rule. Already allowlisted in 1a.
+        # No row in any of them comes from a restrictive chamber (BC, VIC,
+        # QLD, or the four that publish no terms) — checked by seg_id prefix.
         # 2026-09-13: the reproduction substrate allowlisted in 1a must clear
         # the size gate and the prose backstop as well, or the path rule alone
         # never takes effect. occupation_titles.txt is O*NET-SOC 30.3 (CC-BY
@@ -187,29 +243,56 @@ check_range() {
     # Content backstop. Extracted-speech pools (band_screen_pool.json,
     # quality_expansion/pool.json, align_ratio/items.json …) carry verbatim
     # Hansard under 10MB, and new ones keep appearing under new names — so
-    # sniff the content instead of chasing directory names. Bulk verbatim text
-    # shows up as many long prose runs; one long note in a results file does
-    # not. Threshold is deliberately high to leave ordinary artifacts alone.
-    # Size gate: 100KB for data files, but extraction scripts are small and a
-    # pasted transcript inside one would be too. Scan .py at any size.
-    scan_floor=102400
+    # sniff the content instead of chasing directory names.
+    #
+    # REWRITTEN 2026-10-27. The previous heuristic counted runs of 300+
+    # characters drawn from [A-Za-z,;'’ ()-] — a class that EXCLUDES the
+    # period, so a hit needed 300 characters of prose with no sentence end.
+    # Real prose almost never does, and the measured consequence was that the
+    # backstop was close to inert: ca/segments_ca_en.jsonl, 305MB of pure
+    # Hansard, scored 5 in its first 2MB against a threshold of 20, and seven
+    # text-bearing files already in the tree scored 2-13. Only the 10MB size
+    # gate was actually stopping corpus data; a 5MB pool would have walked
+    # through. It fired on band_screen_pool (220) and gov_screen_pool (142)
+    # purely because those two happen to be formatted differently.
+    #
+    # The replacement measures what bulk transcript actually looks like:
+    # sentence-shaped spans (60+ chars of prose ending in . ? !) and the share
+    # of the file they occupy. Calibrated over every tracked file plus the
+    # gitignored pools:
+    #   verbatim/variant pools   43-79% of bytes in sentences
+    #   derived results, worst   39% (element_audit_unanchored.json)
+    #   all 86 extraction .py    0 sentences
+    # Three ways to trip it, so neither density nor volume alone can be
+    # dodged: dense prose at any size, moderately dense at volume, or sheer
+    # sentence count (which is what catches segment-per-row corpus files like
+    # segments_ca_en, whose JSON keys dilute density to 25%).
+    # Scan floor drops 100KB -> 40KB: pangram_bypass.csv (57KB, 69%) and
+    # se_segments.jsonl (58KB) sat under the old floor entirely.
+    scan_floor=40960
     case "$path" in *.py) scan_floor=0 ;; esac
     if [ "$size" -gt "$scan_floor" ]; then
       case "$path" in
         *.json|*.jsonl|*.csv|*.tsv|*.txt|*.py)
-          local prose
-          prose=$(git cat-file -p "$sha" 2>/dev/null | head -c 2000000 \
-                  | grep -o -E '[A-Za-z][A-Za-z,;'"'"'’ ()-]{300,}' | wc -l)
-          # Threshold is 20 for data files, where ordinary results can carry
-          # a few long notes. For .py it is 1: measured across all 86
-          # extraction scripts in this repo, every one scores ZERO long prose
-          # runs, while a script with 61KB of real Hansard pasted into it
-          # scores 3. Code has no legitimate reason to contain a 300-character
-          # unpunctuated prose run, so any is treated as a paste.
-          local floor=20
-          case "$path" in *.py) floor=1 ;; esac
-          if [ "${prose:-0}" -ge "$floor" ]; then
-            say "BLOCKED: $path holds bulk verbatim prose ($prose long passages) — reads as extracted transcript text, not derived results"
+          local sents schars scanned density
+          read -r sents schars <<<"$(git cat-file -p "$sha" 2>/dev/null \
+                  | head -c 2000000 \
+                  | grep -o -E '[A-Za-z][A-Za-z,;:'"'"'’ ()-]{59,}[.?!]' \
+                  | awk '{n++; c+=length($0)} END {print n+0, c+0}')"
+          scanned=$size
+          [ "$scanned" -gt 2000000 ] && scanned=2000000
+          density=$(( schars * 100 / scanned ))
+          # .py: any code carrying five sentences at 25% density has a
+          # transcript pasted into it. Measured zero across all 86 scripts.
+          if [ "${path##*.}" = "py" ]; then
+            if [ "${sents:-0}" -ge 5 ] && [ "$density" -ge 25 ]; then
+              say "BLOCKED: $path holds $sents sentences of prose (${density}% of the file) — reads as transcript text pasted into code"
+              fail=1
+            fi
+          elif { [ "${sents:-0}" -ge 100 ] && [ "$density" -ge 55 ]; } \
+            || { [ "${sents:-0}" -ge 500 ] && [ "$density" -ge 40 ]; } \
+            || [ "${sents:-0}" -ge 1200 ]; then
+            say "BLOCKED: $path holds bulk verbatim prose ($sents sentences, ${density}% of the file) — reads as extracted transcript text, not derived results"
             fail=1
           fi
           ;;
